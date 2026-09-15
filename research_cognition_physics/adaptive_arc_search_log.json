@@ -1,0 +1,32 @@
+{
+  "round": 44,
+  "date": "2026-09-15",
+  "growth": "6/5",
+  "maximum_step": "1/25",
+  "attempts": [
+    {"contrast": "0.144739", "minimum": "1/8192", "target_labels": 248, "strictly_verified": true, "candidate": "adaptive_arc_candidate_0144739.json"},
+    {"contrast": "0.14473923", "minimum": "1/65536", "target_labels": 296, "strictly_verified": true, "candidate": "adaptive_arc_candidate_014473923.json"},
+    {
+      "contrast": "0.14473923209",
+      "minimum": "1/1048576",
+      "target_labels": 356,
+      "source_points": 712,
+      "variables": 63725,
+      "constraints": 624,
+      "solver_status": 0,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "solver_reserve": 3.733073781892427e-13,
+      "maximum_scaled_constraint_residual": 1.1511014363918548e-11,
+      "negative_Q_entries_clipped": 0,
+      "maximum_normalized_row_repair": 3.12059559705697e-15,
+      "maximum_relative_column_residual": 1.1510735141371674e-11,
+      "weighted_row_repair_bound": 5.814389295201332e-16,
+      "corrected_product_reserve_lower_bound_exact": "-7061529937643218533/633825300114114700748351602688",
+      "corrected_product_reserve_lower_bound_float": -1.114112979770901e-11,
+      "strictly_verified": false,
+      "candidate_archived": false,
+      "scope": "Historical search diagnostic only. A failed sufficient repair bound does not prove infeasibility. No failed candidate is retained for independent replay; rerunning the same LP may give different floating diagnostics."
+    },
+    {"contrast": "0.144739232", "minimum": "1/262144", "target_labels": 324, "strictly_verified": true, "candidate": "adaptive_arc_candidate_0144739232.json"}
+  ]
+}

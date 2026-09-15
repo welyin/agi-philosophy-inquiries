@@ -1,0 +1,58 @@
+{
+  "round": 71,
+  "exact_optimal_reference_correlation": "alignment_visibility * TV(W(.|+),W(.|-))",
+  "scope": "Fixed sources, alignment and outer instruments; any message-conditioned real CPTP map on Charlie's reference qubit",
+  "alignment_reads": 5,
+  "reads_per_target": 5,
+  "binary_error_threshold_interval": [
+    0.0007141577097896846,
+    0.0007141577097896846
+  ],
+  "binary_error_threshold_lower_exact": "452651224736255669530868485/633825300114114700748351602688",
+  "binary_error_threshold_upper_exact": "905302449472511339061736987/1267650600228229401496703205376",
+  "comparisons": [
+    {
+      "binary_flip_probability_exact": "0",
+      "score_interval": [
+        8.485194956672315,
+        8.485194956672315
+      ],
+      "strictly_above_round_68_bound": true,
+      "strictly_below_round_68_bound": false
+    },
+    {
+      "binary_flip_probability_exact": "1/2000",
+      "score_interval": [
+        8.482366560972125,
+        8.482366560972125
+      ],
+      "strictly_above_round_68_bound": true,
+      "strictly_below_round_68_bound": false
+    },
+    {
+      "binary_flip_probability_exact": "1/1000",
+      "score_interval": [
+        8.479538165271936,
+        8.479538165271936
+      ],
+      "strictly_above_round_68_bound": false,
+      "strictly_below_round_68_bound": true
+    },
+    {
+      "binary_flip_probability_exact": "1/2",
+      "score_interval": [
+        5.656799256483769,
+        5.656799256483769
+      ],
+      "strictly_above_round_68_bound": false,
+      "strictly_below_round_68_bound": true
+    }
+  ],
+  "threshold_refers_to_conservative_round_68_bound": true,
+  "quantum_theory_derived_from_cognition": false,
+  "automated_checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}

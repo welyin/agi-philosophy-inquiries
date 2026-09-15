@@ -1,0 +1,76 @@
+{
+  "round": 64,
+  "scope": "Two perfect independent real pair references; old middle flow; independent reset pointer cycles; optional one-bit physical feedforward",
+  "alignment_distance": "delta_m = binomial majority error for p=(1-alpha)/2",
+  "finite_protocol_has_no_postselection": true,
+  "direct_destructive_rereading_amplifies_alignment": false,
+  "certificates": [
+    {
+      "pointer_reads": 1,
+      "reference_trace_distance_upper_exact": "1645436304610474204199134101/316912650057057350374175801344",
+      "reference_trace_distance_diagnostic": 0.0051920814909541405,
+      "strictly_positive_finite_error": true,
+      "two_independent_pair_sources_per_run": 2,
+      "middle_initial_alignment_flows": 1,
+      "middle_copy_flows": 1,
+      "middle_reusable_extra_pointers": 1,
+      "maximum_remote_correction_flows": 1,
+      "maximum_feedforward_bits": 1,
+      "postselection_success_probability": 1,
+      "below_1e_minus_9": false,
+      "below_1e_minus_12": false
+    },
+    {
+      "pointer_reads": 3,
+      "reference_trace_distance_upper_exact": "102164015020011652450755937/1267650600228229401496703205376",
+      "reference_trace_distance_diagnostic": 8.059319736969943e-05,
+      "strictly_positive_finite_error": true,
+      "two_independent_pair_sources_per_run": 2,
+      "middle_initial_alignment_flows": 1,
+      "middle_copy_flows": 3,
+      "middle_reusable_extra_pointers": 1,
+      "maximum_remote_correction_flows": 1,
+      "maximum_feedforward_bits": 1,
+      "postselection_success_probability": 1,
+      "below_1e_minus_9": false,
+      "below_1e_minus_12": false
+    },
+    {
+      "pointer_reads": 9,
+      "reference_trace_distance_upper_exact": "592306370713041136399/1267650600228229401496703205376",
+      "reference_trace_distance_diagnostic": 4.672473397688618e-10,
+      "strictly_positive_finite_error": true,
+      "two_independent_pair_sources_per_run": 2,
+      "middle_initial_alignment_flows": 1,
+      "middle_copy_flows": 9,
+      "middle_reusable_extra_pointers": 1,
+      "maximum_remote_correction_flows": 1,
+      "maximum_feedforward_bits": 1,
+      "postselection_success_probability": 1,
+      "below_1e_minus_9": true,
+      "below_1e_minus_12": false
+    },
+    {
+      "pointer_reads": 15,
+      "reference_trace_distance_upper_exact": "4170802789592989/1267650600228229401496703205376",
+      "reference_trace_distance_diagnostic": 3.290183264096646e-15,
+      "strictly_positive_finite_error": true,
+      "two_independent_pair_sources_per_run": 2,
+      "middle_initial_alignment_flows": 1,
+      "middle_copy_flows": 15,
+      "middle_reusable_extra_pointers": 1,
+      "maximum_remote_correction_flows": 1,
+      "maximum_feedforward_bits": 1,
+      "postselection_success_probability": 1,
+      "below_1e_minus_9": true,
+      "below_1e_minus_12": true
+    }
+  ],
+  "global_optimal_resource_cost_claimed": false,
+  "quantum_theory_derived_from_cognition": false,
+  "automated_checks": {
+    "run": 9,
+    "failures": 0,
+    "errors": 0
+  }
+}

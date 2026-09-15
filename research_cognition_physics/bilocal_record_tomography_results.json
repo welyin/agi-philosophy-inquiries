@@ -1,0 +1,97 @@
+{
+  "scope": "Usual real tensor composition with the declared pair gates and original nonzero noisy readout; not derived from cognition",
+  "dimension_table": [
+    {
+      "systems": 1,
+      "real_homogeneous": 3,
+      "real_normalized": 2,
+      "single_block_homogeneous": 3,
+      "missing_from_single_blocks": 0,
+      "all_pair_marginals_homogeneous": 3
+    },
+    {
+      "systems": 2,
+      "real_homogeneous": 10,
+      "real_normalized": 9,
+      "single_block_homogeneous": 9,
+      "missing_from_single_blocks": 1,
+      "all_pair_marginals_homogeneous": 10
+    },
+    {
+      "systems": 3,
+      "real_homogeneous": 36,
+      "real_normalized": 35,
+      "single_block_homogeneous": 27,
+      "missing_from_single_blocks": 9,
+      "all_pair_marginals_homogeneous": 22
+    },
+    {
+      "systems": 4,
+      "real_homogeneous": 136,
+      "real_normalized": 135,
+      "single_block_homogeneous": 81,
+      "missing_from_single_blocks": 55,
+      "all_pair_marginals_homogeneous": 39
+    },
+    {
+      "systems": 5,
+      "real_homogeneous": 528,
+      "real_normalized": 527,
+      "single_block_homogeneous": 243,
+      "missing_from_single_blocks": 285,
+      "all_pair_marginals_homogeneous": 61
+    },
+    {
+      "systems": 6,
+      "real_homogeneous": 2080,
+      "real_normalized": 2079,
+      "single_block_homogeneous": 729,
+      "missing_from_single_blocks": 1351,
+      "all_pair_marginals_homogeneous": 88
+    },
+    {
+      "systems": 7,
+      "real_homogeneous": 8256,
+      "real_normalized": 8255,
+      "single_block_homogeneous": 2187,
+      "missing_from_single_blocks": 6069,
+      "all_pair_marginals_homogeneous": 120
+    },
+    {
+      "systems": 8,
+      "real_homogeneous": 32896,
+      "real_normalized": 32895,
+      "single_block_homogeneous": 6561,
+      "missing_from_single_blocks": 26335,
+      "all_pair_marginals_homogeneous": 157
+    }
+  ],
+  "three_system_hidden_words": [
+    "IYY",
+    "XYY",
+    "YIY",
+    "YXY",
+    "YYI",
+    "YYX",
+    "YYZ",
+    "YZY",
+    "ZYY"
+  ],
+  "three_system_pair_marginal_dimension": 22,
+  "three_system_single_records_plus_pair_marginals_dimension": 30,
+  "single_fixed_pair_partition_dimension": 30,
+  "three_pair_partitions_union_dimension": 36,
+  "finite_setting_bilocal_tomography": true,
+  "pair_marginals_are_sufficient": false,
+  "state_counterexample": "rho_+/- = (I_8 +/- YYX)/8",
+  "counterexample_block_joint_record_TV": 0.9793395048770184,
+  "word_record_mean": "(alpha*eta)^(number of X/Z factors + number of Y factors/2) * Tr(rho P)",
+  "exact_probabilities_are_not_finite_sample_estimates": true,
+  "known_theorem_source": "https://arxiv.org/pdf/1005.4870, Sections 1, 4.4",
+  "quantum_theory_derived_from_cognition": false,
+  "automated_checks": {
+    "run": 12,
+    "failures": 0,
+    "errors": 0
+  }
+}
