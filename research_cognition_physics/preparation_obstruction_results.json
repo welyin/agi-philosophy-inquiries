@@ -1,0 +1,39 @@
+{
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "automated_checks": {
+    "run": 12,
+    "failures": 0,
+    "errors": 0
+  },
+  "fixed_contrast_witness": {
+    "contrast": 0.5,
+    "input_half_width": 0.25,
+    "output_component_half_width": 0.14484030788793859,
+    "output_support_components": [
+      [
+        -0.14484030788793859,
+        0.14484030788793859
+      ],
+      [
+        2.9967523457018546,
+        3.2864329614777317
+      ]
+    ],
+    "branch_probability": 0.747403959254523,
+    "conditional_first_moment_summary": [
+      1.0,
+      -2.320998510239442e-18,
+      6.029156286364176e-17
+    ],
+    "conditional_second_cosine": 0.9861499114773036,
+    "analytic_second_cosine_lower_bound": 0.9859169331511382,
+    "allowed_preparation_second_harmonic_bound": 0.958851077208406,
+    "second_harmonic_violation": 0.027298834268897565,
+    "formal_tangent_gain": 0.8660254037844386,
+    "admissible": false
+  },
+  "scope": "This particular atomic kernel fails preparation closure despite positive first-moment maps and a valid pointwise classical kernel. It does not exclude other kernels realizing the same first-moment matrix. The general optimum remains unresolved."
+}

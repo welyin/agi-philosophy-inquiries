@@ -1,0 +1,102 @@
+{
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "automated_checks": {
+    "run": 14,
+    "failures": 0,
+    "errors": 0
+  },
+  "total_dimensionless_strength": 1.0,
+  "longitudinal_parameter": 1.0,
+  "loss_rates_parallel_tangent": [
+    0.07224389177156827,
+    0.14373759119653295
+  ],
+  "limiting_gains_parallel_tangent": [
+    0.9303039746557534,
+    0.8661149944415316
+  ],
+  "limit_rows": [
+    {
+      "read_count": 10,
+      "contrast_each": 0.1,
+      "parallel_gain": 0.9300600598257521,
+      "tangent_gain": 0.8652120800314262,
+      "fixed_probe_contrast": 0.5,
+      "fixed_probe_tangent_probability_change": 0.03334706505990692,
+      "revealed_first_active_record_tv": 0.14224402860815016,
+      "kl_upper_bound_nats": 0.19651108853121516,
+      "tv_upper_bound": 0.3134574042284016
+    },
+    {
+      "read_count": 100,
+      "contrast_each": 0.01,
+      "parallel_gain": 0.9302796861549741,
+      "tangent_gain": 0.8660254414195182,
+      "fixed_probe_contrast": 0.5,
+      "fixed_probe_tangent_probability_change": 0.03314583623218821,
+      "revealed_first_active_record_tv": 0.1421399576626699,
+      "kl_upper_bound_nats": 0.019587429539025147,
+      "tv_upper_bound": 0.09896319906668627
+    },
+    {
+      "read_count": 1000,
+      "contrast_each": 0.001,
+      "parallel_gain": 0.9303015468300883,
+      "tangent_gain": 0.8661060464479876,
+      "fixed_probe_contrast": 0.5,
+      "fixed_probe_tangent_probability_change": 0.03312589422900906,
+      "revealed_first_active_record_tv": 0.14211285552488528,
+      "kl_upper_bound_nats": 0.0019586796491583226,
+      "tv_upper_bound": 0.0312944056434878
+    },
+    {
+      "read_count": 10000,
+      "contrast_each": 0.0001,
+      "parallel_gain": 0.9303037318834257,
+      "tangent_gain": 0.8661140997151892,
+      "fixed_probe_contrast": 0.5,
+      "fixed_probe_tangent_probability_change": 0.03312390181881846,
+      "revealed_first_active_record_tv": 0.14210993073945571,
+      "kl_upper_bound_nats": 0.00019586790161480762,
+      "tv_upper_bound": 0.00989615838633375
+    },
+    {
+      "read_count": 1000000,
+      "contrast_each": 1e-06,
+      "parallel_gain": 0.9303039722280415,
+      "tangent_gain": 0.8661149854943486,
+      "fixed_probe_contrast": 0.5,
+      "fixed_probe_tangent_probability_change": 0.033123682673547386,
+      "revealed_first_active_record_tv": 0.14210960659824573,
+      "kl_upper_bound_nats": 1.9586790097546763e-06,
+      "tv_upper_bound": 0.0009896158370182534
+    }
+  ],
+  "exact_finite_transcript_trees": [
+    {
+      "read_count": 8,
+      "public_record_tv": 0.25978459198569925,
+      "public_record_kl_nats": 0.22963438300848776,
+      "kl_upper_bound_nats": 0.24609530476238228,
+      "tv_upper_bound": 0.35078148808224063
+    },
+    {
+      "read_count": 12,
+      "public_record_tv": 0.2146118342948602,
+      "public_record_kl_nats": 0.15253455784510916,
+      "kl_upper_bound_nats": 0.1635947935167443,
+      "tv_upper_bound": 0.2860024418748416
+    },
+    {
+      "read_count": 16,
+      "public_record_tv": 0.1870132690308659,
+      "public_record_kl_nats": 0.11424591241361806,
+      "kl_upper_bound_nats": 0.12257390187279264,
+      "tv_upper_bound": 0.2475620143244846
+    }
+  ],
+  "scope": "The uniform KL/TV bound concerns only the n public weak binary results, with hidden modes unavailable, and also allows adaptive settings. State disturbance uses fixed settings and a separate fixed-strength final probe. Revealing modes is an explicitly different interface. Gamma is not physical time."
+}

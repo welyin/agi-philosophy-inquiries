@@ -1,0 +1,100 @@
+{
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "automated_checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  },
+  "population_parameter_comparison": [
+    {
+      "noise": 0,
+      "signal": 1,
+      "adjacent_block_raw_moment": 1.0,
+      "one_unit_gap_raw_moment": 1.0,
+      "inferred_from_population_moments": {
+        "noise": -0.0,
+        "signal": 1.0,
+        "time_unit_invariant_noise_to_signal_squared": -0.0
+      }
+    },
+    {
+      "noise": 1,
+      "signal": 1,
+      "adjacent_block_raw_moment": 0.8484429885321997,
+      "one_unit_gap_raw_moment": 0.718191484404084,
+      "inferred_from_population_moments": {
+        "noise": 0.9999999999999988,
+        "signal": 0.9999999999999999,
+        "time_unit_invariant_noise_to_signal_squared": 0.999999999999999
+      }
+    },
+    {
+      "noise": 3,
+      "signal": 1,
+      "adjacent_block_raw_moment": 0.619272486984702,
+      "one_unit_gap_raw_moment": 0.3756077500727145,
+      "inferred_from_population_moments": {
+        "noise": 3.0,
+        "signal": 1.0,
+        "time_unit_invariant_noise_to_signal_squared": 3.0
+      }
+    },
+    {
+      "noise": 6,
+      "signal": 1,
+      "adjacent_block_raw_moment": 0.39957640089372803,
+      "one_unit_gap_raw_moment": 0.14699594306608088,
+      "inferred_from_population_moments": {
+        "noise": 6.0,
+        "signal": 1.0,
+        "time_unit_invariant_noise_to_signal_squared": 6.0
+      }
+    }
+  ],
+  "finite_step_bias": [
+    {
+      "count": 20,
+      "adjacent_raw_moment": 0.8482082349366591,
+      "separated_raw_moment": 0.7177927196795856,
+      "continuous_model_inference_from_discrete_moments": {
+        "noise": 1.001671977593739,
+        "signal": 0.9999970968034964,
+        "time_unit_invariant_noise_to_signal_squared": 1.0016777937202335
+      }
+    },
+    {
+      "count": 100,
+      "adjacent_raw_moment": 0.8483969373502327,
+      "separated_raw_moment": 0.7181125813178438,
+      "continuous_model_inference_from_discrete_moments": {
+        "noise": 1.0003335451323894,
+        "signal": 0.9999998841820467,
+        "time_unit_invariant_noise_to_signal_squared": 1.0003337768455973
+      }
+    },
+    {
+      "count": 1000,
+      "adjacent_raw_moment": 0.8484384035914395,
+      "separated_raw_moment": 0.7181836131620872,
+      "continuous_model_inference_from_discrete_moments": {
+        "noise": 1.0000333354502313,
+        "signal": 0.9999999988425152,
+        "time_unit_invariant_noise_to_signal_squared": 1.000033337765278
+      }
+    },
+    {
+      "count": 10000,
+      "adjacent_raw_moment": 0.8484425302396552,
+      "separated_raw_moment": 0.7181906974702372,
+      "continuous_model_inference_from_discrete_moments": {
+        "noise": 1.0000033333553917,
+        "signal": 0.9999999999884259,
+        "time_unit_invariant_noise_to_signal_squared": 1.0000033333785399
+      }
+    }
+  ],
+  "scope": "Fixed direction, normalized record noise and declared operation-time unit. Two population raw block moments identify nu and positive sigma. This is structural identification, not a finite-sample accuracy claim. A single fixed-axis record law is independent of initial transverse summary v."
+}

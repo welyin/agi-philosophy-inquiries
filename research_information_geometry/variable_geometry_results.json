@@ -1,0 +1,223 @@
+{
+  "scope": "Externally prescribed smooth variable-speed quantum walk; background kinematics, not self-consistent gravity.",
+  "environment": {
+    "python": "3.14.6",
+    "numpy": "2.5.1"
+  },
+  "units_and_inputs": {
+    "hbar": 1,
+    "base_speed": 1.0,
+    "interval_length": 20.0,
+    "spacing_rule": "a=base_speed*time_step/4",
+    "velocity_scale": 0.6,
+    "profile_amplitude": 0.25,
+    "profile": "v(x)=velocity_scale/(1+profile_amplitude*cos(2*pi*x/interval_length))"
+  },
+  "criteria_before_first_run": [
+    "Local rotations and shifts must be exactly unitary even for position-dependent angles.",
+    "The continuum generator must include A*d_x+(d_x A)/2, not just a variable multiplier of the derivative.",
+    "Characteristic speeds must equal eigenvalues plus/minus v(x), independent of an onsite mass term.",
+    "Massless packet evolution must converge to an independent characteristic solution, not only another matrix update.",
+    "A position-dependent coordinate speed will not be treated as proof of nonzero curvature or of a sourced gravity equation."
+  ],
+  "generator_convergence": {
+    "mass_frequency": "0",
+    "rows": [
+      {
+        "time_step": 0.4,
+        "generator_l2_error": 0.08535525142579738
+      },
+      {
+        "time_step": 0.2,
+        "generator_l2_error": 0.022409925564671727
+      },
+      {
+        "time_step": 0.1,
+        "generator_l2_error": 0.00567275021685937
+      },
+      {
+        "time_step": 0.05,
+        "generator_l2_error": 0.0014226334460585774
+      }
+    ],
+    "error_step_slope": 1.970254968621027
+  },
+  "prescribed_mass_generator_convergence": {
+    "mass_frequency": "0.7*v(x)",
+    "rows": [
+      {
+        "time_step": 0.4,
+        "generator_l2_error": 0.09281322744681773
+      },
+      {
+        "time_step": 0.2,
+        "generator_l2_error": 0.024441250731184316
+      },
+      {
+        "time_step": 0.1,
+        "generator_l2_error": 0.006191758008405545
+      },
+      {
+        "time_step": 0.05,
+        "generator_l2_error": 0.0015530962845576623
+      }
+    ],
+    "error_step_slope": 1.9684230872499464
+  },
+  "packet_convergence": {
+    "duration": 4.0,
+    "initial_state": "Periodic Fourier packet in y(x), width parameter 1.5, central wave number 0.8; chiral probabilities 0.7 and 0.3.",
+    "reference": "Exact massless characteristics in optical coordinate y with v^(-1/2) density weighting and local internal rotation.",
+    "rows": [
+      {
+        "time_step": 0.4,
+        "spacing": 0.1,
+        "sites": 200,
+        "macro_steps": 10,
+        "ordered": {
+          "state_l2_error": 0.2308083841576458,
+          "density_total_variation": 0.1286674499755579,
+          "norm_squared": 1.0000000000000004
+        },
+        "symmetric": {
+          "state_l2_error": 0.12480495769214851,
+          "density_total_variation": 0.06943764622173254,
+          "norm_squared": 1.0000000000000002
+        },
+        "reference_discrete_norm_squared": 1.0
+      },
+      {
+        "time_step": 0.2,
+        "spacing": 0.05,
+        "sites": 400,
+        "macro_steps": 20,
+        "ordered": {
+          "state_l2_error": 0.10472500737785616,
+          "density_total_variation": 0.05664303492338827,
+          "norm_squared": 1.0000000000000004
+        },
+        "symmetric": {
+          "state_l2_error": 0.030824602585482964,
+          "density_total_variation": 0.01708085533896763,
+          "norm_squared": 1.0000000000000007
+        },
+        "reference_discrete_norm_squared": 1.0000000000000004
+      },
+      {
+        "time_step": 0.1,
+        "spacing": 0.025,
+        "sites": 800,
+        "macro_steps": 40,
+        "ordered": {
+          "state_l2_error": 0.050849696786078,
+          "density_total_variation": 0.02771163638619935,
+          "norm_squared": 0.9999999999999999
+        },
+        "symmetric": {
+          "state_l2_error": 0.007663986172232176,
+          "density_total_variation": 0.004237661756622669,
+          "norm_squared": 0.9999999999999998
+        },
+        "reference_discrete_norm_squared": 1.0000000000000002
+      },
+      {
+        "time_step": 0.05,
+        "spacing": 0.0125,
+        "sites": 1600,
+        "macro_steps": 80,
+        "ordered": {
+          "state_l2_error": 0.025240706018963843,
+          "density_total_variation": 0.013736737264878172,
+          "norm_squared": 1.0000000000000002
+        },
+        "symmetric": {
+          "state_l2_error": 0.001913101820149595,
+          "density_total_variation": 0.001057268710441837,
+          "norm_squared": 1.0000000000000002
+        },
+        "reference_discrete_norm_squared": 1.0000000000000004
+      }
+    ],
+    "ordered_error_step_slope": 1.062090929185957,
+    "symmetric_error_step_slope": 2.009076875443059
+  },
+  "geometry_diagnostics": {
+    "metric_representatives": {
+      "optical_flat": "ds0^2=dt^2-dx^2/v(x)^2=dt^2-dy^2, dy=dx/v(x)",
+      "unit_spatial": "ds1^2=v(x)^2*dt^2-dx^2=v(x)^2*ds0^2",
+      "shared_characteristics": "dx/dt=+v(x) and -v(x)"
+    },
+    "curvature_convention": "R_mn=d_l Gamma^l_mn-d_n Gamma^l_ml+Gamma^l_ls Gamma^s_mn-Gamma^l_ns Gamma^s_ml, signature (+,-).",
+    "rows": [
+      {
+        "position": -5.0,
+        "coordinate_characteristic_speed": 0.6,
+        "flat_representative_curvature": 0.0,
+        "unit_spatial_representative_curvature": 0.024674010990477037,
+        "unit_spatial_analytic_curvature": 0.024674011002723397,
+        "proper_clock_rate_flat": 1.0,
+        "proper_clock_rate_unit_spatial": 0.6,
+        "mass_coefficient_flat_for_fixed_proper_mass_0_7": 0.7,
+        "mass_coefficient_unit_spatial_for_fixed_proper_mass_0_7": 0.42,
+        "two_dimensional_einstein_tensor_max_residual": {
+          "optical_flat": 0.0,
+          "unit_spatial": 2.3705898355430577e-12
+        }
+      },
+      {
+        "position": 0.0,
+        "coordinate_characteristic_speed": 0.48,
+        "flat_representative_curvature": 0.0,
+        "unit_spatial_representative_curvature": 0.03947841760565621,
+        "unit_spatial_analytic_curvature": 0.03947841760435743,
+        "proper_clock_rate_flat": 1.0,
+        "proper_clock_rate_unit_spatial": 0.48,
+        "mass_coefficient_flat_for_fixed_proper_mass_0_7": 0.7,
+        "mass_coefficient_unit_spatial_for_fixed_proper_mass_0_7": 0.33599999999999997,
+        "two_dimensional_einstein_tensor_max_residual": {
+          "optical_flat": 0.0,
+          "unit_spatial": 1.9481777302488013e-12
+        }
+      },
+      {
+        "position": 5.0,
+        "coordinate_characteristic_speed": 0.6,
+        "flat_representative_curvature": 0.0,
+        "unit_spatial_representative_curvature": 0.024674010990477037,
+        "unit_spatial_analytic_curvature": 0.024674011002723397,
+        "proper_clock_rate_flat": 1.0,
+        "proper_clock_rate_unit_spatial": 0.6,
+        "mass_coefficient_flat_for_fixed_proper_mass_0_7": 0.7,
+        "mass_coefficient_unit_spatial_for_fixed_proper_mass_0_7": 0.42,
+        "two_dimensional_einstein_tensor_max_residual": {
+          "optical_flat": 0.0,
+          "unit_spatial": 2.3705898355430577e-12
+        }
+      },
+      {
+        "position": 10.0,
+        "coordinate_characteristic_speed": 0.7999999999999999,
+        "flat_representative_curvature": 0.0,
+        "unit_spatial_representative_curvature": -0.06579736264119482,
+        "unit_spatial_analytic_curvature": -0.06579736267392905,
+        "proper_clock_rate_flat": 1.0,
+        "proper_clock_rate_unit_spatial": 0.7999999999999999,
+        "mass_coefficient_flat_for_fixed_proper_mass_0_7": 0.7,
+        "mass_coefficient_unit_spatial_for_fixed_proper_mass_0_7": 0.5599999999999999,
+        "two_dimensional_einstein_tensor_max_residual": {
+          "optical_flat": 0.0,
+          "unit_spatial": 5.411615600081632e-12
+        }
+      }
+    ],
+    "naive_generator_probability_rate": -0.015409252381588912,
+    "corrected_generator_probability_rate": 1.1102230246251565e-16,
+    "ray_travel_time_minus4_to_plus4": 15.856089095468858,
+    "interpretation": "Two externally chosen conformal representatives share the same massless densitized equation but have different curvature and proper-clock scales. A cone alone does not select a full metric."
+  },
+  "automated_checks": {
+    "run": 15,
+    "failures": 0,
+    "errors": 0
+  }
+}

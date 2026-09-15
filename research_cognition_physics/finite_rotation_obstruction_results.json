@@ -1,0 +1,51 @@
+{
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "automated_checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  },
+  "exact_symbolic_angle_radians": 1,
+  "finite_root_diagnostics": [
+    {
+      "state_budget": 4,
+      "nearest_root_order_candidate": 4,
+      "numerator": 1,
+      "complex_distance": 0.5630790622854014
+    },
+    {
+      "state_budget": 8,
+      "nearest_root_order_candidate": 6,
+      "numerator": 1,
+      "complex_distance": 0.04719317058181888
+    },
+    {
+      "state_budget": 16,
+      "nearest_root_order_candidate": 13,
+      "numerator": 2,
+      "complex_distance": 0.0333545602342727
+    },
+    {
+      "state_budget": 32,
+      "nearest_root_order_candidate": 25,
+      "numerator": 4,
+      "complex_distance": 0.005309642911585508
+    },
+    {
+      "state_budget": 64,
+      "nearest_root_order_candidate": 44,
+      "numerator": 7,
+      "complex_distance": 0.0004023374914430767
+    }
+  ],
+  "finite_prefix_control": {
+    "states": 25,
+    "exact_horizon": 24,
+    "max_error_through_horizon": 0.0,
+    "max_error_to_repeat_100": 0.35226030431261274
+  },
+  "scope": "No finite homogeneous Markov transition and fixed response can reproduce an undamped irrational rotation for every repeat count. The irrational angle is a mathematical exact input, not a claim of experimentally infinite precision. Finite prefixes and rational rotations admit finite classical realizations. No exclusion of continuous classical latent states is implied."
+}

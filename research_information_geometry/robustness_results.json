@@ -1,0 +1,856 @@
+{
+  "scope": "Finite quantum model calculations, not laboratory data or evidence for quantum gravity.",
+  "environment": {
+    "python": "3.14.6",
+    "numpy": "2.5.1"
+  },
+  "structural_identifiability": {
+    "parameters_for_local_rank_check": [
+      1.0,
+      0.25,
+      0.15,
+      0.8,
+      0.2,
+      1.1,
+      0.3,
+      -0.2,
+      0.1,
+      0.8
+    ],
+    "parameter_order": [
+      "J01",
+      "J02",
+      "J03",
+      "J12",
+      "J13",
+      "J23",
+      "v0",
+      "v1",
+      "v2",
+      "eta"
+    ],
+    "offset_gauge": "v3=-(v0+v1+v2); a uniform energy shift is not identifiable from populations.",
+    "probe_times": [
+      0.1,
+      0.25,
+      0.5,
+      0.9
+    ],
+    "first_slope_jacobian": {
+      "shape": [
+        6,
+        10
+      ],
+      "singular_values": [
+        1.901315334177309,
+        0.8000000000008,
+        0.8000000000007998,
+        0.8000000000007998,
+        0.8000000000007998,
+        0.7999999999964434
+      ],
+      "rank_relative_threshold_1e_minus7": 6,
+      "parameter_nullity": 4,
+      "coordinate_dependent_condition_number": null
+    },
+    "finite_time_probability_jacobian": {
+      "shape": [
+        128,
+        10
+      ],
+      "singular_values": [
+        1.8228539188018145,
+        1.2951134489512237,
+        1.1971048494598449,
+        1.050540400134801,
+        0.904929975509775,
+        0.8634221015001634,
+        0.7159185541549111,
+        0.5409478520313017,
+        0.44950993882735385,
+        0.33909804534240856
+      ],
+      "rank_relative_threshold_1e_minus7": 10,
+      "parameter_nullity": 0,
+      "coordinate_dependent_condition_number": 5.375595476998885
+    },
+    "finite_time_multinomial_information": {
+      "rank": 10,
+      "eigenvalues_per_one_shot_per_setting": [
+        0.5176202550731196,
+        0.7830555653170173,
+        1.411377873694977,
+        1.9890898635919947,
+        3.1690296310782027,
+        3.446337065389871,
+        4.996808112828018,
+        5.960956824242368,
+        8.254543933718216,
+        16.239172777627598
+      ],
+      "settings": 32,
+      "local_cramer_rao_standard_deviation_at_1000_shots_per_setting": [
+        0.02073486713511712,
+        0.018938990873513785,
+        0.017067859759203805,
+        0.020215830429975684,
+        0.0172940569028146,
+        0.020253086430923006,
+        0.03691131587228086,
+        0.03033447858357923,
+        0.03204579249283924,
+        0.008313999041877417
+      ],
+      "interpretation": "Coordinate-dependent local Cramer-Rao lower bounds under a correct model and regular unbiased estimation. Not achieved estimator errors or global uniqueness."
+    },
+    "equal_slope_example": {
+      "models": [
+        "unit chain with eta=1",
+        "double-strength chain with eta=0.5"
+      ],
+      "source": 0,
+      "first_slopes": [
+        [
+          1.0,
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "max_first_slope_difference": 0.0,
+      "time_0_4_responses": [
+        [
+          0.3501149033521586,
+          -0.31136682904781776,
+          -0.047311216401944134,
+          0.008563142097603227
+        ],
+        [
+          0.23592765453652975,
+          -0.12027529533477557,
+          -0.12961810542560076,
+          0.013965746223846831
+        ]
+      ],
+      "max_finite_time_difference": 0.1910915337130422
+    },
+    "invalid_old_finite_time_identity_with_offsets_max_residual": 0.11905421158970408,
+    "claim_scope": "Initial-slope non-identifiability is analytic; finite-time full rank is a local check at the stated generic parameters, not global uniqueness."
+  },
+  "finite_count_study": {
+    "evidence": "Synthetic multinomial counts from the specified quantum model, not measured laboratory data.",
+    "shots_per_setting": [
+      1000,
+      10000,
+      100000,
+      1000000
+    ],
+    "time_grid": [
+      0.001,
+      0.0011425577251634078,
+      0.0013054381553305827,
+      0.0014915384490960261,
+      0.001704168777392913,
+      0.0019471112015925526,
+      0.002224686945131779,
+      0.0025418332552304963,
+      0.0029041912218408556,
+      0.0033182061158660296,
+      0.0037912420313671977,
+      0.004331712870902803,
+      0.004949232003839766,
+      0.0056547832596130975,
+      0.006460916297395662,
+      0.0073819698272235825,
+      0.008434326653017491,
+      0.009636705073956763,
+      0.011010491827370716,
+      0.012580122495210984,
+      0.014373516140405277,
+      0.016422571903980988,
+      0.018763736395945023,
+      0.021438651972116786,
+      0.024494897427831775,
+      0.0279868342832545,
+      0.031976573713200535,
+      0.03653508132027444,
+      0.0417434394019529,
+      0.04769428916359188,
+      0.05449347853003934,
+      0.06226194486552275,
+      0.07113786608980123,
+      0.08127911845254247,
+      0.09286608468242409,
+      0.10610486245958292,
+      0.12123093028059732,
+      0.1385133359208431,
+      0.15825948199451345,
+      0.1808205937331906,
+      0.20659796623849103,
+      0.23605010232883708,
+      0.2697008679414257,
+      0.30814881014975204,
+      0.3520778035365119,
+      0.40226921428920626,
+      0.4596157983815469,
+      0.5251375810479844,
+      0.6
+    ],
+    "independent_repetitions": 2000,
+    "seed_construction": "SeedSequence([20260914, case_index, count_index])",
+    "sampling": "Independent source/phase settings; joint N-outcome multinomial counts preserve within-setting target correlations.",
+    "time_choice": "Oracle minimization of the exact mean squared error on a fixed grid, using known simulation truth. Not an experimental data-driven design algorithm.",
+    "edge_threshold": "0.5 for this zero-or-one edge family only; estimates are not clipped or rounded.",
+    "cases": {
+      "chain_pure": {
+        "actual_coherence": 1.0,
+        "assumed_coherence": 1.0,
+        "local_offsets": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actual_weights": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0,
+          -0.0,
+          1.0
+        ],
+        "initial_slope_bias_floor_rms": 0.0,
+        "fitted_log_rmse_log_shots_slope": -0.3300990368099995,
+        "rows": [
+          {
+            "shots_per_setting": 1000,
+            "total_shots_per_repetition": 6000,
+            "oracle_grid_time": 0.20659796623849103,
+            "oracle_choice_on_grid_boundary": false,
+            "mean_edge_estimates": [
+              0.9373271406440813,
+              0.03445963643685605,
+              -0.006724635261579479,
+              0.896142868945645,
+              0.03445963643685659,
+              0.9373271406440804
+            ],
+            "bias_rms": 0.05924839249107245,
+            "standard_deviation_rms": 0.09212213676326582,
+            "predicted_edge_rmse": 0.10953017892163795,
+            "sampled_edge_rmse": 0.10925060883077109,
+            "all_six_edges_classified_correct_fraction": 1.0,
+            "graph_fraction_monte_carlo_standard_error": 0.0,
+            "graph_fraction_95_percent_wilson_interval": [
+              0.9980829527187469,
+              0.9999999999999998
+            ],
+            "expected_rmse_at_time_0_001": 19.36490812442744
+          },
+          {
+            "shots_per_setting": 10000,
+            "total_shots_per_repetition": 60000,
+            "oracle_grid_time": 0.1385133359208431,
+            "oracle_choice_on_grid_boundary": false,
+            "mean_edge_estimates": [
+              0.9714957787547498,
+              0.015762582235586905,
+              -0.0031184106591623088,
+              0.9526147858600013,
+              0.015762582235586103,
+              0.9714957787547486
+            ],
+            "bias_rms": 0.027009202935284807,
+            "standard_deviation_rms": 0.04384979830291868,
+            "predicted_edge_rmse": 0.05150050343837473,
+            "sampled_edge_rmse": 0.051729479529163215,
+            "all_six_edges_classified_correct_fraction": 1.0,
+            "graph_fraction_monte_carlo_standard_error": 0.0,
+            "graph_fraction_95_percent_wilson_interval": [
+              0.9980829527187469,
+              0.9999999999999998
+            ],
+            "expected_rmse_at_time_0_001": 6.1237216353091535
+          },
+          {
+            "shots_per_setting": 100000,
+            "total_shots_per_repetition": 600000,
+            "oracle_grid_time": 0.09286608468242409,
+            "oracle_choice_on_grid_boundary": false,
+            "mean_edge_estimates": [
+              0.9871194913574184,
+              0.007141010747679337,
+              -0.001421283229134955,
+              0.9785571973806038,
+              0.007141010747679935,
+              0.9871194913574177
+            ],
+            "bias_rms": 0.012217589130511899,
+            "standard_deviation_rms": 0.02077417495716327,
+            "predicted_edge_rmse": 0.02410053587190194,
+            "sampled_edge_rmse": 0.02385186404862154,
+            "all_six_edges_classified_correct_fraction": 1.0,
+            "graph_fraction_monte_carlo_standard_error": 0.0,
+            "graph_fraction_95_percent_wilson_interval": [
+              0.9980829527187469,
+              0.9999999999999998
+            ],
+            "expected_rmse_at_time_0_001": 1.9364908124432623
+          },
+          {
+            "shots_per_setting": 1000000,
+            "total_shots_per_repetition": 6000000,
+            "oracle_grid_time": 0.07113786608980123,
+            "oracle_choice_on_grid_boundary": false,
+            "mean_edge_estimates": [
+              0.992428287850776,
+              0.004201394460337548,
+              -0.0008378932636396589,
+              0.9873890001267975,
+              0.004201394460337548,
+              0.9924282878507763
+            ],
+            "bias_rms": 0.007184525772882577,
+            "standard_deviation_rms": 0.008589113315468412,
+            "predicted_edge_rmse": 0.011197780053527163,
+            "sampled_edge_rmse": 0.01126097659491127,
+            "all_six_edges_classified_correct_fraction": 1.0,
+            "graph_fraction_monte_carlo_standard_error": 0.0,
+            "graph_fraction_95_percent_wilson_interval": [
+              0.9980829527187469,
+              0.9999999999999998
+            ],
+            "expected_rmse_at_time_0_001": 0.6123721635325544
+          }
+        ]
+      },
+      "star_pure": {
+        "actual_coherence": 1.0,
+        "assumed_coherence": 1.0,
+        "local_offsets": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actual_weights": [
+          1.0,
+          1.0,
+          1.0,
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        "initial_slope_bias_floor_rms": 0.0,
+        "fitted_log_rmse_log_shots_slope": -0.33161424833115716,
+        "rows": [
+          {
+            "shots_per_setting": 1000,
+            "total_shots_per_repetition": 6000,
+            "oracle_grid_time": 0.1808205937331906,
+            "oracle_choice_on_grid_boundary": false,
+            "mean_edge_estimates": [
+              0.9150628394398618,
+              0.9150628394398621,
+              0.915062839439862,
+              0.026498904797574784,
+              0.026498904797574784,
+              0.02649890479757448
+            ],
+            "bias_rms": 0.06291467714090884,
+            "standard_deviation_rms": 0.10550383930307565,
+            "predicted_edge_rmse": 0.12283857988203059,
+            "sampled_edge_rmse": 0.12249459382962562,
+            "all_six_edges_classified_correct_fraction": 1.0,
+            "graph_fraction_monte_carlo_standard_error": 0.0,
+            "graph_fraction_95_percent_wilson_interval": [
+              0.9980829527187469,
+              0.9999999999999998
+            ],
+            "expected_rmse_at_time_0_001": 19.364907048607332
+          },
+          {
+            "shots_per_setting": 10000,
+            "total_shots_per_repetition": 60000,
+            "oracle_grid_time": 0.1385133359208431,
+            "oracle_choice_on_grid_boundary": false,
+            "mean_edge_estimates": [
+              0.9496170478696766,
+              0.949617047869677,
+              0.9496170478696774,
+              0.015729453620638455,
+              0.015729453620638455,
+              0.015729453620638857
+            ],
+            "bias_rms": 0.037321961206307465,
+            "standard_deviation_rms": 0.043809489340567734,
+            "predicted_edge_rmse": 0.057551717129608194,
+            "sampled_edge_rmse": 0.057169160894200766,
+            "all_six_edges_classified_correct_fraction": 1.0,
+            "graph_fraction_monte_carlo_standard_error": 0.0,
+            "graph_fraction_95_percent_wilson_interval": [
+              0.9980829527187469,
+              0.9999999999999998
+            ],
+            "expected_rmse_at_time_0_001": 6.123721295105101
+          },
+          {
+            "shots_per_setting": 100000,
+            "total_shots_per_repetition": 600000,
+            "oracle_grid_time": 0.09286608468242409,
+            "oracle_choice_on_grid_boundary": false,
+            "mean_edge_estimates": [
+              0.9771605211297941,
+              0.9771605211297943,
+              0.9771605211297947,
+              0.007134248974270807,
+              0.007134248974271405,
+              0.007134248974271405
+            ],
+            "bias_rms": 0.016919505067960153,
+            "standard_deviation_rms": 0.020764852748360315,
+            "predicted_edge_rmse": 0.02678523401812678,
+            "sampled_edge_rmse": 0.026861553381779663,
+            "all_six_edges_classified_correct_fraction": 1.0,
+            "graph_fraction_monte_carlo_standard_error": 0.0,
+            "graph_fraction_95_percent_wilson_interval": [
+              0.9980829527187469,
+              0.9999999999999998
+            ],
+            "expected_rmse_at_time_0_001": 1.9364907048617306
+          },
+          {
+            "shots_per_setting": 1000000,
+            "total_shots_per_repetition": 6000000,
+            "oracle_grid_time": 0.06226194486552275,
+            "oracle_choice_on_grid_boundary": false,
+            "mean_edge_estimates": [
+              0.989694545582329,
+              0.9896945455823295,
+              0.9896945455823286,
+              0.003219829335563815,
+              0.003219829335563815,
+              0.0032198293355629234
+            ],
+            "bias_rms": 0.007634451247629033,
+            "standard_deviation_rms": 0.009816573447705272,
+            "predicted_edge_rmse": 0.01243583371176282,
+            "sampled_edge_rmse": 0.012301983702247091,
+            "all_six_edges_classified_correct_fraction": 1.0,
+            "graph_fraction_monte_carlo_standard_error": 0.0,
+            "graph_fraction_95_percent_wilson_interval": [
+              0.9980829527187469,
+              0.9999999999999998
+            ],
+            "expected_rmse_at_time_0_001": 0.6123721295136648
+          }
+        ]
+      },
+      "chain_mixed_known_coherence": {
+        "actual_coherence": 0.8,
+        "assumed_coherence": 0.8,
+        "local_offsets": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actual_weights": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0,
+          -0.0,
+          1.0
+        ],
+        "initial_slope_bias_floor_rms": 0.0,
+        "fitted_log_rmse_log_shots_slope": -0.33069410284063594,
+        "rows": [
+          {
+            "shots_per_setting": 1000,
+            "total_shots_per_repetition": 6000,
+            "oracle_grid_time": 0.23605010232883708,
+            "oracle_choice_on_grid_boundary": false,
+            "mean_edge_estimates": [
+              0.9187154192101087,
+              0.04454991424858129,
+              -0.008626303255932744,
+              0.865539201705594,
+              0.04454991424858129,
+              0.9187154192101069
+            ],
+            "bias_rms": 0.07674402827291209,
+            "standard_deviation_rms": 0.1010279284568871,
+            "predicted_edge_rmse": 0.12687114803549082,
+            "sampled_edge_rmse": 0.12789499184195485,
+            "all_six_edges_classified_correct_fraction": 1.0,
+            "graph_fraction_monte_carlo_standard_error": 0.0,
+            "graph_fraction_95_percent_wilson_interval": [
+              0.9980829527187469,
+              0.9999999999999998
+            ],
+            "expected_rmse_at_time_0_001": 24.206138598178082
+          },
+          {
+            "shots_per_setting": 10000,
+            "total_shots_per_repetition": 60000,
+            "oracle_grid_time": 0.15825948199451345,
+            "oracle_choice_on_grid_boundary": false,
+            "mean_edge_estimates": [
+              0.9628983157491713,
+              0.02048774996312159,
+              -0.004039557658808221,
+              0.9383710081272404,
+              0.02048774996312071,
+              0.9628983157491701
+            ],
+            "bias_rms": 0.03513549110451027,
+            "standard_deviation_rms": 0.04802220057869205,
+            "predicted_edge_rmse": 0.05950323086669539,
+            "sampled_edge_rmse": 0.05994262422448005,
+            "all_six_edges_classified_correct_fraction": 1.0,
+            "graph_fraction_monte_carlo_standard_error": 0.0,
+            "graph_fraction_95_percent_wilson_interval": [
+              0.9980829527187469,
+              0.9999999999999998
+            ],
+            "expected_rmse_at_time_0_001": 7.654653132795927
+          },
+          {
+            "shots_per_setting": 100000,
+            "total_shots_per_repetition": 600000,
+            "oracle_grid_time": 0.10610486245958292,
+            "oracle_choice_on_grid_boundary": false,
+            "mean_edge_estimates": [
+              0.9832074190196276,
+              0.009303968047769316,
+              -0.0018490144306760215,
+              0.972054436541181,
+              0.009303968047771278,
+              0.9832074190196273
+            ],
+            "bias_rms": 0.015924208856477676,
+            "standard_deviation_rms": 0.02273778766833451,
+            "predicted_edge_rmse": 0.02775945633032079,
+            "sampled_edge_rmse": 0.02786580315214707,
+            "all_six_edges_classified_correct_fraction": 1.0,
+            "graph_fraction_monte_carlo_standard_error": 0.0,
+            "graph_fraction_95_percent_wilson_interval": [
+              0.9980829527187469,
+              0.9999999999999998
+            ],
+            "expected_rmse_at_time_0_001": 2.4206138598182227
+          },
+          {
+            "shots_per_setting": 1000000,
+            "total_shots_per_repetition": 6000000,
+            "oracle_grid_time": 0.07113786608980123,
+            "oracle_choice_on_grid_boundary": false,
+            "mean_edge_estimates": [
+              0.992428287850778,
+              0.0042013944603387175,
+              -0.000837893263640439,
+              0.9873890001267983,
+              0.0042013944603387175,
+              0.9924282878507761
+            ],
+            "bias_rms": 0.0071845257728822805,
+            "standard_deviation_rms": 0.01074404487940092,
+            "predicted_edge_rmse": 0.012924856322288106,
+            "sampled_edge_rmse": 0.012832094168691958,
+            "all_six_edges_classified_correct_fraction": 1.0,
+            "graph_fraction_monte_carlo_standard_error": 0.0,
+            "graph_fraction_95_percent_wilson_interval": [
+              0.9980829527187469,
+              0.9999999999999998
+            ],
+            "expected_rmse_at_time_0_001": 0.765465313280904
+          }
+        ]
+      },
+      "chain_mixed_wrong_pure_assumption": {
+        "actual_coherence": 0.8,
+        "assumed_coherence": 1.0,
+        "local_offsets": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actual_weights": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0,
+          -0.0,
+          1.0
+        ],
+        "initial_slope_bias_floor_rms": 0.14142135623730948,
+        "fitted_log_rmse_log_shots_slope": -0.05034053834435206,
+        "rows": [
+          {
+            "shots_per_setting": 1000,
+            "total_shots_per_repetition": 6000,
+            "oracle_grid_time": 0.1808205937331906,
+            "oracle_choice_on_grid_boundary": false,
+            "mean_edge_estimates": [
+              0.7614006626736107,
+              0.021275100065908773,
+              -0.004176187288688268,
+              0.7359493753190125,
+              0.021275100065908464,
+              0.7614006626736096
+            ],
+            "bias_rms": 0.17535902231588749,
+            "standard_deviation_rms": 0.10611329748408693,
+            "predicted_edge_rmse": 0.2049654083266985,
+            "sampled_edge_rmse": 0.20498633098099792,
+            "all_six_edges_classified_correct_fraction": 0.9705,
+            "graph_fraction_monte_carlo_standard_error": 0.0037835003634200943,
+            "graph_fraction_95_percent_wilson_interval": [
+              0.9621349108960856,
+              0.9770611476122554
+            ],
+            "expected_rmse_at_time_0_001": 19.365427277166532
+          },
+          {
+            "shots_per_setting": 10000,
+            "total_shots_per_repetition": 60000,
+            "oracle_grid_time": 0.10610486245958292,
+            "oracle_choice_on_grid_boundary": false,
+            "mean_edge_estimates": [
+              0.7865659352157022,
+              0.007443174438215453,
+              -0.0014792115445408174,
+              0.7776435492329449,
+              0.007443174438217022,
+              0.786565935215702
+            ],
+            "bias_rms": 0.15311410830741373,
+            "standard_deviation_rms": 0.05752255838818104,
+            "predicted_edge_rmse": 0.16356275519291094,
+            "sampled_edge_rmse": 0.1634646282210364,
+            "all_six_edges_classified_correct_fraction": 1.0,
+            "graph_fraction_monte_carlo_standard_error": 0.0,
+            "graph_fraction_95_percent_wilson_interval": [
+              0.9980829527187469,
+              0.9999999999999998
+            ],
+            "expected_rmse_at_time_0_001": 6.125355306161723
+          },
+          {
+            "shots_per_setting": 100000,
+            "total_shots_per_repetition": 600000,
+            "oracle_grid_time": 0.06226194486552275,
+            "oracle_choice_on_grid_boundary": false,
+            "mean_edge_estimates": [
+              0.7953571477184725,
+              0.0025769614227626044,
+              -0.0005142718768068723,
+              0.7922659144189017,
+              0.0025769614227626044,
+              0.7953571477184717
+            ],
+            "bias_rms": 0.14544437093952545,
+            "standard_deviation_rms": 0.03106621781541071,
+            "predicted_edge_rmse": 0.14872516574994568,
+            "sampled_edge_rmse": 0.14852835251100066,
+            "all_six_edges_classified_correct_fraction": 1.0,
+            "graph_fraction_monte_carlo_standard_error": 0.0,
+            "graph_fraction_95_percent_wilson_interval": [
+              0.9980829527187469,
+              0.9999999999999998
+            ],
+            "expected_rmse_at_time_0_001": 1.9416482757372355
+          },
+          {
+            "shots_per_setting": 1000000,
+            "total_shots_per_repetition": 6000000,
+            "oracle_grid_time": 0.031976573713200535,
+            "oracle_choice_on_grid_boundary": false,
+            "mean_edge_estimates": [
+              0.7987736256179592,
+              0.0006811518833619377,
+              -0.00013615234241421139,
+              0.7979563213921779,
+              0.0006811518833602017,
+              0.7987736256179566
+            ],
+            "bias_rms": 0.14248198835437717,
+            "standard_deviation_rms": 0.019144754239087083,
+            "predicted_edge_rmse": 0.14376243814116368,
+            "sampled_edge_rmse": 0.14393611553703,
+            "all_six_edges_classified_correct_fraction": 1.0,
+            "graph_fraction_monte_carlo_standard_error": 0.0,
+            "graph_fraction_95_percent_wilson_interval": [
+              0.9980829527187469,
+              0.9999999999999998
+            ],
+            "expected_rmse_at_time_0_001": 0.6284903075373244
+          }
+        ]
+      },
+      "chain_mixed_with_offsets": {
+        "actual_coherence": 0.8,
+        "assumed_coherence": 0.8,
+        "local_offsets": [
+          0.3,
+          -0.2,
+          0.1,
+          -0.2
+        ],
+        "actual_weights": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0,
+          -0.0,
+          1.0
+        ],
+        "initial_slope_bias_floor_rms": 0.0,
+        "fitted_log_rmse_log_shots_slope": -0.33081562308327106,
+        "rows": [
+          {
+            "shots_per_setting": 1000,
+            "total_shots_per_repetition": 6000,
+            "oracle_grid_time": 0.23605010232883708,
+            "oracle_choice_on_grid_boundary": false,
+            "mean_edge_estimates": [
+              0.9199991810628857,
+              0.043543265131617555,
+              -0.008540772402180805,
+              0.8647825662229022,
+              0.04718059002330827,
+              0.9125871091244264
+            ],
+            "bias_rms": 0.07801695085641476,
+            "standard_deviation_rms": 0.10102993069882835,
+            "predicted_edge_rmse": 0.12764674503465528,
+            "sampled_edge_rmse": 0.12729901389706644,
+            "all_six_edges_classified_correct_fraction": 0.999,
+            "graph_fraction_monte_carlo_standard_error": 0.0007067531393633852,
+            "graph_fraction_95_percent_wilson_interval": [
+              0.9963610657309615,
+              0.9997257210823479
+            ],
+            "expected_rmse_at_time_0_001": 24.206138598178242
+          },
+          {
+            "shots_per_setting": 10000,
+            "total_shots_per_repetition": 60000,
+            "oracle_grid_time": 0.15825948199451345,
+            "oracle_choice_on_grid_boundary": false,
+            "mean_edge_estimates": [
+              0.9635021520327449,
+              0.020054321249973014,
+              -0.004022035125023872,
+              0.9380115361063582,
+              0.021708288936905653,
+              0.9600750403187696
+            ],
+            "bias_rms": 0.03572643126032951,
+            "standard_deviation_rms": 0.048022393746356556,
+            "predicted_edge_rmse": 0.059854224510297975,
+            "sampled_edge_rmse": 0.06004422589744979,
+            "all_six_edges_classified_correct_fraction": 1.0,
+            "graph_fraction_monte_carlo_standard_error": 0.0,
+            "graph_fraction_95_percent_wilson_interval": [
+              0.9980829527187469,
+              0.9999999999999998
+            ],
+            "expected_rmse_at_time_0_001": 7.654653132795982
+          },
+          {
+            "shots_per_setting": 100000,
+            "total_shots_per_repetition": 600000,
+            "oracle_grid_time": 0.10610486245958292,
+            "oracle_choice_on_grid_boundary": false,
+            "mean_edge_estimates": [
+              0.983484343762603,
+              0.009113077322591997,
+              -0.0018454519070822482,
+              0.9718888605720517,
+              0.00986042692568322,
+              0.9819242937104719
+            ],
+            "bias_rms": 0.016193703040278448,
+            "standard_deviation_rms": 0.022737806177972518,
+            "predicted_edge_rmse": 0.027914939511734013,
+            "sampled_edge_rmse": 0.028047897549327475,
+            "all_six_edges_classified_correct_fraction": 1.0,
+            "graph_fraction_monte_carlo_standard_error": 0.0,
+            "graph_fraction_95_percent_wilson_interval": [
+              0.9980829527187469,
+              0.9999999999999998
+            ],
+            "expected_rmse_at_time_0_001": 2.420613859818253
+          },
+          {
+            "shots_per_setting": 1000000,
+            "total_shots_per_repetition": 6000000,
+            "oracle_grid_time": 0.07113786608980123,
+            "oracle_choice_on_grid_boundary": false,
+            "mean_edge_estimates": [
+              0.9925538851465301,
+              0.004116391869933293,
+              -0.0008371714381078913,
+              0.9873137593625385,
+              0.004453117167806113,
+              0.9918486622151196
+            ],
+            "bias_rms": 0.007306451785462281,
+            "standard_deviation_rms": 0.010744046647688053,
+            "predicted_edge_rmse": 0.012993027978919382,
+            "sampled_edge_rmse": 0.012863863720390813,
+            "all_six_edges_classified_correct_fraction": 1.0,
+            "graph_fraction_monte_carlo_standard_error": 0.0,
+            "graph_fraction_95_percent_wilson_interval": [
+              0.9980829527187469,
+              0.9999999999999998
+            ],
+            "expected_rmse_at_time_0_001": 0.7654653132809545
+          }
+        ]
+      }
+    }
+  },
+  "independent_calibration_example": {
+    "evidence": "Synthetic counts with a trusted independent pair-mixing measurement. This is additional calibration information.",
+    "shots_per_setting": 10000,
+    "time": 0.08,
+    "independent_repetitions": 4000,
+    "actual_coherence": 0.8,
+    "seed": 20260915,
+    "settings_for_edges": 6,
+    "extra_settings_for_calibration": 1,
+    "total_shots_per_repetition": 70000,
+    "reference_probabilities": [
+      0.44999999999999996,
+      0.049999999999999975,
+      0.25,
+      0.25
+    ],
+    "coherence_sample_mean": 0.79993475,
+    "coherence_sample_standard_deviation": 0.011784824689435995,
+    "coherence_exact_standard_deviation": 0.0116619037896906,
+    "nonpositive_calibration_samples": 0,
+    "calibration_samples_above_one": 0,
+    "wrong_pure_assumption_edge_rmse": 0.1666697372112986,
+    "known_exact_coherence_edge_rmse": 0.09628507587673461,
+    "measured_coherence_edge_rmse": 0.09677754111272846,
+    "boundary_policy": "No clipping; nonpositive calibration estimates are counted and omitted from ratio statistics, whose usable sample count is reported.",
+    "usable_ratio_samples": 4000,
+    "limitations": "The preparation-error family and reference mixer are assumed correct; readout and control errors are not included."
+  },
+  "automated_checks": {
+    "run": 19,
+    "failures": 0,
+    "errors": 0
+  }
+}

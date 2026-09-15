@@ -1,0 +1,661 @@
+{
+  "scope": "A proposed finite Hamiltonian feedback toy model, not a derivation of gravity or new empirical evidence.",
+  "environment": {
+    "python": "3.14.6",
+    "numpy": "2.5.1",
+    "scipy": "1.18.1"
+  },
+  "algebra": {
+    "model": "Normalized one-particle spinor plus classical canonical scalar field with a shared autonomous energy functional.",
+    "feedback": "The scalar source is minus the derivative of the matter energy with respect to the field, divided by the lattice spacing.",
+    "energy_exchange_at_test_state": {
+      "matter_rate": 0.019125108017739516,
+      "background_rate": -0.01912510801773951,
+      "total_rate": 6.938893903907228e-18
+    },
+    "one_way_control_at_test_state": {
+      "matter_rate": 0.019125108017739516,
+      "background_rate": 0.0,
+      "total_rate": 0.019125108017739516
+    },
+    "quantum_norm_rate": -1.734723475976807e-17,
+    "not_established": [
+      "Quantum dynamics of geometry",
+      "A covariant gravity action",
+      "Universality of gravitational coupling",
+      "No-signalling of a fundamental hybrid theory",
+      "A stable continuum vacuum"
+    ]
+  },
+  "finite_time_evolution": {
+    "parameters": {
+      "sites": 128,
+      "length": 32.0,
+      "base_velocity": 0.7,
+      "velocity_amplitude": 0.2,
+      "coupling": 1.0,
+      "background_speed": 0.45,
+      "background_frequency": 0.6,
+      "matter_mass": 0.6
+    },
+    "initial_conditions": "q=pi=0; normalized Gaussian packet centered at -4, width 1.2, carrier k=1, positive free lattice mode spinor at that carrier.",
+    "coupled": {
+      "initial_energy": {
+        "matter": 0.9136145203749207,
+        "background": 0.0,
+        "total": 0.9136145203749207
+      },
+      "final_energy": {
+        "matter": 0.8866781978972297,
+        "background": 0.02693632247124498,
+        "total": 0.9136145203684747
+      },
+      "max_sampled_absolute_total_energy_drift": 2.517411834546124e-10,
+      "max_sampled_norm_squared_error": 2.0675727796515275e-10,
+      "field_max_abs_at_final": 0.1876311121116133,
+      "momentum_max_abs_at_final": 0.0764320200098817,
+      "velocity_max_change_at_final": 0.037091961090397585,
+      "velocity_range_at_final": [
+        0.6629080389096024,
+        0.7000408099505169
+      ],
+      "background_response_l2_at_final": 0.3081561738496383,
+      "matter_position_mean_at_final": -1.2723146574150808,
+      "rhs_evaluations": 332,
+      "energy_sample_times": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        4.5,
+        5.0,
+        5.5,
+        6.0
+      ],
+      "energy_samples": [
+        {
+          "matter": 0.9136145203749207,
+          "background": 0.0,
+          "total": 0.9136145203749207
+        },
+        {
+          "matter": 0.9129602919647767,
+          "background": 0.0006542282641694495,
+          "total": 0.9136145202289462
+        },
+        {
+          "matter": 0.910982574312297,
+          "background": 0.002631946078396486,
+          "total": 0.9136145203906935
+        },
+        {
+          "matter": 0.9079439290021798,
+          "background": 0.005670591483595075,
+          "total": 0.9136145204857749
+        },
+        {
+          "matter": 0.9045188622834255,
+          "background": 0.00909565809368772,
+          "total": 0.9136145203771132
+        },
+        {
+          "matter": 0.9012213395740345,
+          "background": 0.012393180571087011,
+          "total": 0.9136145201451215
+        },
+        {
+          "matter": 0.8981063682398231,
+          "background": 0.015508152244330256,
+          "total": 0.9136145204841534
+        },
+        {
+          "matter": 0.8951417385738927,
+          "background": 0.018472781811945855,
+          "total": 0.9136145203858386
+        },
+        {
+          "matter": 0.8924797984015906,
+          "background": 0.021134721967551492,
+          "total": 0.9136145203691421
+        },
+        {
+          "matter": 0.8903114820957592,
+          "background": 0.02330303818799901,
+          "total": 0.9136145202837582
+        },
+        {
+          "matter": 0.8886709436959952,
+          "background": 0.02494357677319927,
+          "total": 0.9136145204691944
+        },
+        {
+          "matter": 0.8874736545182669,
+          "background": 0.026140865851968585,
+          "total": 0.9136145203702355
+        },
+        {
+          "matter": 0.8866781978972297,
+          "background": 0.02693632247124498,
+          "total": 0.9136145203684747
+        }
+      ],
+      "sampling_caveat": "Errors are maxima at the specified observation times, not rigorous bounds at every internal solver step."
+    },
+    "zero_background_one_way_control": {
+      "initial_energy": {
+        "matter": 0.9136145203749207,
+        "background": 0.0,
+        "total": 0.9136145203749207
+      },
+      "final_energy": {
+        "matter": 0.9136145203608741,
+        "background": 0.0,
+        "total": 0.9136145203608741
+      },
+      "max_sampled_absolute_total_energy_drift": 2.94634094899493e-10,
+      "max_sampled_norm_squared_error": 2.4056956426932175e-10,
+      "field_max_abs_at_final": 0.0,
+      "momentum_max_abs_at_final": 0.0,
+      "velocity_max_change_at_final": 0.0,
+      "velocity_range_at_final": [
+        0.7,
+        0.7
+      ],
+      "background_response_l2_at_final": 0.0,
+      "matter_position_mean_at_final": -1.1743840062855821,
+      "rhs_evaluations": 332,
+      "energy_sample_times": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        4.5,
+        5.0,
+        5.5,
+        6.0
+      ],
+      "energy_samples": [
+        {
+          "matter": 0.9136145203749207,
+          "background": 0.0,
+          "total": 0.9136145203749207
+        },
+        {
+          "matter": 0.9136145203574777,
+          "background": 0.0,
+          "total": 0.9136145203574777
+        },
+        {
+          "matter": 0.9136145204852706,
+          "background": 0.0,
+          "total": 0.9136145204852706
+        },
+        {
+          "matter": 0.9136145203779144,
+          "background": 0.0,
+          "total": 0.9136145203779144
+        },
+        {
+          "matter": 0.9136145200802867,
+          "background": 0.0,
+          "total": 0.9136145200802867
+        },
+        {
+          "matter": 0.9136145205223692,
+          "background": 0.0,
+          "total": 0.9136145205223692
+        },
+        {
+          "matter": 0.9136145203848417,
+          "background": 0.0,
+          "total": 0.9136145203848417
+        },
+        {
+          "matter": 0.9136145203667692,
+          "background": 0.0,
+          "total": 0.9136145203667692
+        },
+        {
+          "matter": 0.9136145202002084,
+          "background": 0.0,
+          "total": 0.9136145202002084
+        },
+        {
+          "matter": 0.9136145205161748,
+          "background": 0.0,
+          "total": 0.9136145205161748
+        },
+        {
+          "matter": 0.9136145203605162,
+          "background": 0.0,
+          "total": 0.9136145203605162
+        },
+        {
+          "matter": 0.9136145202907312,
+          "background": 0.0,
+          "total": 0.9136145202907312
+        },
+        {
+          "matter": 0.9136145203608741,
+          "background": 0.0,
+          "total": 0.9136145203608741
+        }
+      ],
+      "sampling_caveat": "Errors are maxima at the specified observation times, not rigorous bounds at every internal solver step."
+    },
+    "coupled_vs_control_density_total_variation": 0.03864268492151028,
+    "coupled_vs_control_state_l2_difference": 0.09144684900786028,
+    "initially_excited_background_control": {
+      "duration": 3.0,
+      "field": "0.1*cos(2*pi*x/L)",
+      "momentum": "0.15+0.02*sin(2*pi*x/L)",
+      "reciprocal": {
+        "initial_energy": {
+          "matter": 0.9238262901884613,
+          "background": 0.3926244355032386,
+          "total": 1.3164507256917
+        },
+        "final_energy": {
+          "matter": 0.9275918971637043,
+          "background": 0.38885882851722375,
+          "total": 1.316450725680928
+        },
+        "max_sampled_absolute_total_energy_drift": 3.23805204871519e-10,
+        "max_sampled_norm_squared_error": 2.4846724677729526e-10,
+        "field_max_abs_at_final": 0.2837932456385118,
+        "momentum_max_abs_at_final": 0.14496403499587654,
+        "velocity_max_change_at_final": 0.05528243372154451,
+        "velocity_range_at_final": [
+          0.7125114922190405,
+          0.7552824337215445
+        ],
+        "background_response_l2_at_final": 1.3288792522457455,
+        "matter_position_mean_at_final": -2.54868755577972,
+        "rhs_evaluations": 182,
+        "energy_sample_times": [
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0,
+          1.25,
+          1.5,
+          1.75,
+          2.0,
+          2.25,
+          2.5,
+          2.75,
+          3.0
+        ],
+        "energy_samples": [
+          {
+            "matter": 0.9238262901884613,
+            "background": 0.3926244355032386,
+            "total": 1.3164507256917
+          },
+          {
+            "matter": 0.9285788119645274,
+            "background": 0.3878719135209643,
+            "total": 1.3164507254854918
+          },
+          {
+            "matter": 0.9327026592014789,
+            "background": 0.38374806631347164,
+            "total": 1.3164507255149505
+          },
+          {
+            "matter": 0.936100697334186,
+            "background": 0.38035002839239884,
+            "total": 1.3164507257265847
+          },
+          {
+            "matter": 0.9386587216378364,
+            "background": 0.3777920042162076,
+            "total": 1.316450725854044
+          },
+          {
+            "matter": 0.9402860935545208,
+            "background": 0.376164632308467,
+            "total": 1.3164507258629876
+          },
+          {
+            "matter": 0.9409526274932293,
+            "background": 0.375498098290471,
+            "total": 1.3164507257837004
+          },
+          {
+            "matter": 0.9406957353982858,
+            "background": 0.37575499030457593,
+            "total": 1.3164507257028617
+          },
+          {
+            "matter": 0.9395930017924913,
+            "background": 0.3768577238879979,
+            "total": 1.3164507256804892
+          },
+          {
+            "matter": 0.9377176492462529,
+            "background": 0.37873307644116727,
+            "total": 1.31645072568742
+          },
+          {
+            "matter": 0.9351035689315147,
+            "background": 0.3813471567540866,
+            "total": 1.3164507256856013
+          },
+          {
+            "matter": 0.9317391238607837,
+            "background": 0.38471160179459307,
+            "total": 1.3164507256553768
+          },
+          {
+            "matter": 0.9275918971637043,
+            "background": 0.38885882851722375,
+            "total": 1.316450725680928
+          }
+        ],
+        "sampling_caveat": "Errors are maxima at the specified observation times, not rigorous bounds at every internal solver step."
+      },
+      "one_way_without_force": {
+        "initial_energy": {
+          "matter": 0.9238262901884613,
+          "background": 0.3926244355032386,
+          "total": 1.3164507256917
+        },
+        "final_energy": {
+          "matter": 0.9427627342754537,
+          "background": 0.3926244355032359,
+          "total": 1.3353871697786897
+        },
+        "max_sampled_absolute_total_energy_drift": 0.02447561878472926,
+        "max_sampled_norm_squared_error": 2.4258950404032475e-10,
+        "field_max_abs_at_final": 0.28379324563851144,
+        "momentum_max_abs_at_final": 0.09306198014340392,
+        "velocity_max_change_at_final": 0.0552824337215444,
+        "velocity_range_at_final": [
+          0.7400764129365842,
+          0.7552824337215444
+        ],
+        "background_response_l2_at_final": 1.3866479890886096,
+        "matter_position_mean_at_final": -2.529391013726823,
+        "rhs_evaluations": 182,
+        "energy_sample_times": [
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0,
+          1.25,
+          1.5,
+          1.75,
+          2.0,
+          2.25,
+          2.5,
+          2.75,
+          3.0
+        ],
+        "energy_samples": [
+          {
+            "matter": 0.9238262901884613,
+            "background": 0.3926244355032386,
+            "total": 1.3164507256917
+          },
+          {
+            "matter": 0.9287381737899139,
+            "background": 0.39262443550277526,
+            "total": 1.3213626092926891
+          },
+          {
+            "matter": 0.9333398486880041,
+            "background": 0.3926244355029368,
+            "total": 1.325964284190941
+          },
+          {
+            "matter": 0.9375337278697985,
+            "background": 0.3926244355033861,
+            "total": 1.3301581633731847
+          },
+          {
+            "matter": 0.941189381840539,
+            "background": 0.39262443550357323,
+            "total": 1.3338138173441123
+          },
+          {
+            "matter": 0.9441694535544572,
+            "background": 0.3926244355035111,
+            "total": 1.3367938890579683
+          },
+          {
+            "matter": 0.9463683218634791,
+            "background": 0.3926244355033522,
+            "total": 1.3389927573668312
+          },
+          {
+            "matter": 0.9477383432884643,
+            "background": 0.3926244355032456,
+            "total": 1.3403627787917098
+          },
+          {
+            "matter": 0.9482875175028374,
+            "background": 0.39262443550323634,
+            "total": 1.3409119530060738
+          },
+          {
+            "matter": 0.9480512639665104,
+            "background": 0.39262443550324966,
+            "total": 1.34067569946976
+          },
+          {
+            "matter": 0.9470568701837583,
+            "background": 0.3926244355032368,
+            "total": 1.339681305686995
+          },
+          {
+            "matter": 0.9453025026232651,
+            "background": 0.3926244355030727,
+            "total": 1.337926938126338
+          },
+          {
+            "matter": 0.9427627342754537,
+            "background": 0.3926244355032359,
+            "total": 1.3353871697786897
+          }
+        ],
+        "sampling_caveat": "Errors are maxima at the specified observation times, not rigorous bounds at every internal solver step."
+      }
+    }
+  },
+  "time_integration_checks": {
+    "duration": 6.0,
+    "method": "SciPy solve_ivp DOP853, real coordinates for the complex spinor and classical fields.",
+    "reference_relative_tolerance": 1e-12,
+    "rows": [
+      {
+        "relative_tolerance": 0.0001,
+        "absolute_tolerance": 1.0000000000000002e-06,
+        "final_state_l2_difference_from_tight_reference": 8.648042894209975e-05,
+        "final_field_l2_difference_from_tight_reference": 3.5519605443176533e-05,
+        "final_momentum_l2_difference_from_tight_reference": 2.628554184963341e-05,
+        "max_sampled_absolute_total_energy_drift": 0.00014804821901504006,
+        "max_sampled_norm_squared_error": 0.00013170967361497699,
+        "rhs_evaluations": 77
+      },
+      {
+        "relative_tolerance": 1e-07,
+        "absolute_tolerance": 1e-09,
+        "final_state_l2_difference_from_tight_reference": 1.0924079126011469e-07,
+        "final_field_l2_difference_from_tight_reference": 4.919183600840732e-08,
+        "final_momentum_l2_difference_from_tight_reference": 3.4394949183799345e-08,
+        "max_sampled_absolute_total_energy_drift": 2.9366611031811374e-07,
+        "max_sampled_norm_squared_error": 2.457322083593283e-07,
+        "rhs_evaluations": 152
+      },
+      {
+        "relative_tolerance": 1e-10,
+        "absolute_tolerance": 1e-12,
+        "final_state_l2_difference_from_tight_reference": 9.635608576907257e-11,
+        "final_field_l2_difference_from_tight_reference": 4.350265664744491e-11,
+        "final_momentum_l2_difference_from_tight_reference": 3.2335102703926415e-11,
+        "max_sampled_absolute_total_energy_drift": 2.517411834546124e-10,
+        "max_sampled_norm_squared_error": 2.0675727796515275e-10,
+        "rhs_evaluations": 332
+      }
+    ],
+    "independent_RK45_state_l2_difference": 1.7487757808930043e-10,
+    "independent_RK45_field_l2_difference": 8.64650557370996e-11,
+    "interpretation": "Finite-time consistency and solver comparisons, not exact discrete conservation or infinite-time stability."
+  },
+  "spatial_self_convergence": {
+    "duration": 4.0,
+    "resolutions": [
+      64,
+      128,
+      256,
+      512
+    ],
+    "rows": [
+      {
+        "coarse_sites": 64,
+        "fine_sites": 128,
+        "coarse_spacing": 0.5,
+        "state_l2_difference": 0.15340010798843148,
+        "field_l2_difference": 0.02926359537320862,
+        "momentum_l2_difference": 0.016627368771632334
+      },
+      {
+        "coarse_sites": 128,
+        "fine_sites": 256,
+        "coarse_spacing": 0.25,
+        "state_l2_difference": 0.04030595996241127,
+        "field_l2_difference": 0.007753691213485716,
+        "momentum_l2_difference": 0.004713569645393439
+      },
+      {
+        "coarse_sites": 256,
+        "fine_sites": 512,
+        "coarse_spacing": 0.125,
+        "state_l2_difference": 0.010188080930628712,
+        "field_l2_difference": 0.001962179214396185,
+        "momentum_l2_difference": 0.001212335919564208
+      }
+    ],
+    "state_self_convergence_order": 1.9561726341452754,
+    "field_self_convergence_order": 1.949289155956777,
+    "interpretation": "Smooth-packet mesh self-convergence over fixed time; no proof of a full ultraviolet-complete field theory. sqrt(2) rescales the discrete spinor when restricting the finer mesh."
+  },
+  "source_and_cutoff_diagnostics": {
+    "rest_state_matter_energy": 0.6000000000000001,
+    "rest_state_max_field_source": 0.0,
+    "free_dispersion": "E_plus_minus(k)=+/-sqrt(v0^2*sin(k*a)^2/a^2+m^2), hbar=1.",
+    "cutoff_rows": [
+      {
+        "sites": 64,
+        "spacing": 0.5,
+        "minimum_free_matter_energy": -1.5231546211727816,
+        "energy_at_zero_momentum": 0.6,
+        "energy_at_brillouin_edge": 0.6
+      },
+      {
+        "sites": 128,
+        "spacing": 0.25,
+        "minimum_free_matter_energy": -2.8635642126552705,
+        "energy_at_zero_momentum": 0.6,
+        "energy_at_brillouin_edge": 0.6
+      },
+      {
+        "sites": 256,
+        "spacing": 0.125,
+        "minimum_free_matter_energy": -5.632051136131489,
+        "energy_at_zero_momentum": 0.6,
+        "energy_at_brillouin_edge": 0.6
+      },
+      {
+        "sites": 512,
+        "spacing": 0.0625,
+        "minimum_free_matter_energy": -11.21605991424796,
+        "energy_at_zero_momentum": 0.6,
+        "energy_at_brillouin_edge": 0.6
+      }
+    ],
+    "finite_grid_lower_bound": "At unit spinor norm, total energy >= -(v_max/a+abs(m)). This bound is not uniform as a tends to zero.",
+    "background_principal_speed": 0.45,
+    "matter_principal_speed_range": [
+      0.49999999999999994,
+      0.8999999999999999
+    ],
+    "source_interpretation": "The source differentiates the kinetic/velocity coupling. It is not T00 and cannot simply be called a universal Newtonian potential source. Stress-like couplings can legitimately omit rest energy; a full covariant set of gravitational constraints has not been supplied.",
+    "ultraviolet_interpretation": "The first-quantized Dirac branch is unbounded below as the cutoff is removed; this is not alone a proof of dynamical instability, but no second-quantized vacuum or regulator-independent completion has been built. The centered derivative also has an extra low-energy branch at the zone edge."
+  },
+  "ensemble_consistency_diagnostics": {
+    "setup": "The same mixed spinor density matrix and identical deterministic initial classical fields q=pi=0, represented by two equal-weight pure-state ensembles.",
+    "parameters": {
+      "sites": 32,
+      "length": 16,
+      "base_velocity": 0.7,
+      "velocity_amplitude": 0.2,
+      "coupling": 1.0,
+      "background_speed": 0.45,
+      "background_frequency": 0.6,
+      "matter_mass": 0.6
+    },
+    "wave_number": 0.39269908169872414,
+    "initial_quantum_density_matrix_frobenius_difference": 1.650110026826817e-16,
+    "rows": [
+      {
+        "ensemble": "traveling_wave_ensemble",
+        "weights": [
+          0.5,
+          0.5
+        ],
+        "initial_spatial_mean_field_accelerations": [
+          -0.0048772580504032065,
+          0.0048772580504032065
+        ],
+        "mean_initial_acceleration": 0.0,
+        "variance_coefficient_of_mean_field_at_order_t4": 5.946911522555722e-06,
+        "finite_duration": 0.02,
+        "final_spatial_mean_fields_by_branch": [
+          -9.75393084350146e-07,
+          9.753930843501468e-07
+        ],
+        "finite_time_field_variance_divided_by_t4": 5.946197931238073e-06
+      },
+      {
+        "ensemble": "standing_wave_ensemble",
+        "weights": [
+          0.5,
+          0.5
+        ],
+        "initial_spatial_mean_field_accelerations": [
+          0.0,
+          0.0
+        ],
+        "mean_initial_acceleration": 0.0,
+        "variance_coefficient_of_mean_field_at_order_t4": 0.0,
+        "finite_duration": 0.02,
+        "final_spatial_mean_fields_by_branch": [
+          0.0,
+          0.0
+        ],
+        "finite_time_field_variance_divided_by_t4": 0.0
+      }
+    ],
+    "interpretation_tested": "Each pure-state preparation branch generates its own deterministic mean-field trajectory, then classical outputs are statistically averaged after labels are discarded.",
+    "conclusion_scope": "This branchwise extension does not preserve preparation equivalence: classical field variance depends on the pure-state decomposition. It disqualifies that extension as a fundamental density-matrix-based hybrid law, not the use of mean-field trajectories as a preparation-specific approximation. No universal no-go theorem for all hybrid theories or explicit signalling protocol is claimed."
+  },
+  "automated_checks": {
+    "run": 21,
+    "failures": 0,
+    "errors": 0
+  }
+}

@@ -1,0 +1,230 @@
+{
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "automated_checks": {
+    "run": 25,
+    "failures": 0,
+    "errors": 0
+  },
+  "preparation_half_width": 0.25,
+  "window_attenuation": 0.9896158370180917,
+  "strict_improvement_contrast_threshold": 0.010438075465110932,
+  "comparison": [
+    {
+      "contrast": 0.0,
+      "baseline_tangent_gain": 1.0,
+      "fresh_window_tangent_gain": 0.9896158370180917,
+      "general_periodic_kernel_upper_bound": 1.0,
+      "baseline_next_read_gap": 0.0,
+      "fresh_window_next_read_gap": 0.0,
+      "general_next_read_upper_bound": 0.0,
+      "fresh_strictly_improves_baseline": false,
+      "scope": "Gains are coefficients; at contrast=0 the read-distance ratio is undefined."
+    },
+    {
+      "contrast": 0.005,
+      "baseline_tangent_gain": 0.995,
+      "fresh_window_tangent_gain": 0.9896034667428143,
+      "general_periodic_kernel_upper_bound": 0.999987499921874,
+      "baseline_next_read_gap": 0.004923338789165006,
+      "fresh_window_next_read_gap": 0.0048966363152834775,
+      "general_next_read_upper_bound": 0.004948017333714071,
+      "fresh_strictly_improves_baseline": false,
+      "scope": "Gains are coefficients; at contrast=0 the read-distance ratio is undefined."
+    },
+    {
+      "contrast": 0.02,
+      "baseline_tangent_gain": 0.98,
+      "fresh_window_tangent_gain": 0.9894178940544119,
+      "general_periodic_kernel_upper_bound": 0.999799979995999,
+      "baseline_next_read_gap": 0.0193964704055546,
+      "fresh_window_next_read_gap": 0.01958287234770669,
+      "general_next_read_upper_bound": 0.01978835788108824,
+      "fresh_strictly_improves_baseline": true,
+      "scope": "Gains are coefficients; at contrast=0 the read-distance ratio is undefined."
+    },
+    {
+      "contrast": 0.25,
+      "baseline_tangent_gain": 0.75,
+      "fresh_window_tangent_gain": 0.9581914139785457,
+      "general_periodic_kernel_upper_bound": 0.9682458365518543,
+      "baseline_next_read_gap": 0.1855529694408922,
+      "fresh_window_next_read_gap": 0.23706034954198185,
+      "general_next_read_upper_bound": 0.23954785349463642,
+      "fresh_strictly_improves_baseline": true,
+      "scope": "Gains are coefficients; at contrast=0 the read-distance ratio is undefined."
+    },
+    {
+      "contrast": 0.5,
+      "baseline_tangent_gain": 0.5,
+      "fresh_window_tangent_gain": 0.8570324548450681,
+      "general_periodic_kernel_upper_bound": 0.8660254037844386,
+      "baseline_next_read_gap": 0.24740395925452294,
+      "fresh_window_next_read_gap": 0.42406644507658603,
+      "general_next_read_upper_bound": 0.42851622742253404,
+      "fresh_strictly_improves_baseline": true,
+      "scope": "Gains are coefficients; at contrast=0 the read-distance ratio is undefined."
+    },
+    {
+      "contrast": 0.75,
+      "baseline_tangent_gain": 0.25,
+      "fresh_window_tangent_gain": 0.6545693495602246,
+      "general_periodic_kernel_upper_bound": 0.6614378277661477,
+      "baseline_next_read_gap": 0.1855529694408922,
+      "fresh_window_next_read_gap": 0.4858291460635722,
+      "general_next_read_upper_bound": 0.4909270121701685,
+      "fresh_strictly_improves_baseline": true,
+      "scope": "Gains are coefficients; at contrast=0 the read-distance ratio is undefined."
+    },
+    {
+      "contrast": 1.0,
+      "baseline_tangent_gain": 0.0,
+      "fresh_window_tangent_gain": 0.0,
+      "general_periodic_kernel_upper_bound": 0.0,
+      "baseline_next_read_gap": 0.0,
+      "fresh_window_next_read_gap": 0.0,
+      "general_next_read_upper_bound": 0.0,
+      "fresh_strictly_improves_baseline": false,
+      "scope": "Gains are coefficients; at contrast=0 the read-distance ratio is undefined."
+    }
+  ],
+  "equally_optimal_fresh_window_family": [
+    {
+      "longitudinal_parameter": 0.0,
+      "plus_branch_matrix": [
+        [
+          0.5,
+          0.25,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.42851622742253404
+        ]
+      ],
+      "branch_rank": 2,
+      "conditional_summary_after_one": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "same_setting_next_one_probability": 0.5,
+      "joint_probability_11": 0.25,
+      "tangent_gain": 0.8570324548450681
+    },
+    {
+      "longitudinal_parameter": 0.5,
+      "plus_branch_matrix": [
+        [
+          0.5,
+          0.25,
+          0.0
+        ],
+        [
+          0.12370197962726147,
+          0.24740395925452294,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.42851622742253404
+        ]
+      ],
+      "branch_rank": 3,
+      "conditional_summary_after_one": [
+        1.0,
+        0.24740395925452294,
+        0.0
+      ],
+      "same_setting_next_one_probability": 0.5618509898136307,
+      "joint_probability_11": 0.28092549490681534,
+      "tangent_gain": 0.8570324548450681
+    },
+    {
+      "longitudinal_parameter": 1.0,
+      "plus_branch_matrix": [
+        [
+          0.5,
+          0.25,
+          0.0
+        ],
+        [
+          0.24740395925452294,
+          0.4948079185090459,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.42851622742253404
+        ]
+      ],
+      "branch_rank": 3,
+      "conditional_summary_after_one": [
+        1.0,
+        0.4948079185090459,
+        0.0
+      ],
+      "same_setting_next_one_probability": 0.6237019796272615,
+      "joint_probability_11": 0.31185098981363074,
+      "tangent_gain": 0.8570324548450681
+    }
+  ],
+  "kernel_crosscheck": {
+    "three_record_protocol": [
+      [
+        0.3,
+        1
+      ],
+      [
+        -0.7,
+        0
+      ],
+      [
+        0.8,
+        1
+      ]
+    ],
+    "matrix_summary": [
+      0.18939456457343787,
+      0.050877288751028614,
+      0.10057003355428128
+    ],
+    "independent_kernel_quadrature": [
+      {
+        "quadrature_order": 12,
+        "maximum_summary_error": 2.914335439641036e-16
+      },
+      {
+        "quadrature_order": 20,
+        "maximum_summary_error": 2.498001805406602e-16
+      },
+      {
+        "quadrature_order": 28,
+        "maximum_summary_error": 1.6653345369377348e-16
+      }
+    ]
+  },
+  "joint_checks": {
+    "matrix_joint_probability": 0.25473544201957943,
+    "classical_component_probability": 0.25473544201957943,
+    "remote_marginal_error": 0.0,
+    "swap_composition_error": 1.3877787807814457e-17
+  },
+  "scope": {
+    "metric": "Supremum one-future-read TV at the original fixed contrast, for a pair with identical first-outcome probabilities.",
+    "proved_optimum": "Fresh-window kernels only: every pointwise conditional output is a mixture of the original half-width windows; periodic output moments and exact first-harmonic closure.",
+    "broader_class": "For general periodic classical kernels preserving preparations only after input averaging, a looser upper bound is proved; attainment is unresolved.",
+    "mixtures": "General probability mixtures of original windows. The lambda=0 witness also has an exactly finite two-window output for every input distribution.",
+    "not_established": "Global optimum for all kernels or all future adaptive protocols; a unique update; quantum statistics; gravity."
+  }
+}

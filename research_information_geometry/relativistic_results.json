@@ -1,0 +1,208 @@
+{
+  "scope": "A standard two-channel unitary quantum-walk construction and its 1+1 dimensional Dirac limit; not emergent gravity or a novelty claim.",
+  "environment": {
+    "python": "3.14.6",
+    "numpy": "2.5.1"
+  },
+  "units": "hbar=1, speed=spacing/time_step=1, mass_frequency=m*c^2/hbar=0.7.",
+  "fixed_inputs": [
+    "One-dimensional lattice and external clock",
+    "Two internal channels",
+    "Opposite conditional shifts",
+    "Reflection-compatible onsite mixing",
+    "Coin angle scaled as mass_frequency*time_step"
+  ],
+  "criteria_fixed_before_run": [
+    "Exact unitarity and one-cell support per update",
+    "Mode eigenphases agree with cos(phase)=cos(c*k*time_step)*cos(mass_frequency*time_step)",
+    "At fixed low momentum and total time, the walk approaches the independently computed Dirac propagator",
+    "Keeping the coin angle fixed is not a fixed-finite-mass continuum limit under spacing=c*time_step"
+  ],
+  "mode_convergence": {
+    "wave_numbers": [
+      -2.0,
+      -0.8,
+      0.0,
+      0.8,
+      2.0
+    ],
+    "final_time": 2.0,
+    "rows": [
+      {
+        "time_step": 0.2,
+        "spacing": 0.2,
+        "steps": 10,
+        "ordered_operator_error": 0.11914493561466942,
+        "symmetric_operator_error": 0.020189869816410907,
+        "max_positive_quasienergy_error": 0.006250369793328936
+      },
+      {
+        "time_step": 0.1,
+        "spacing": 0.1,
+        "steps": 20,
+        "ordered_operator_error": 0.058970919787759354,
+        "symmetric_operator_error": 0.005005017645068345,
+        "max_positive_quasienergy_error": 0.0015468266056344326
+      },
+      {
+        "time_step": 0.05,
+        "spacing": 0.05,
+        "steps": 40,
+        "ordered_operator_error": 0.029410758419933576,
+        "symmetric_operator_error": 0.0012486148636519593,
+        "max_positive_quasienergy_error": 0.00038573254070772833
+      },
+      {
+        "time_step": 0.025,
+        "spacing": 0.025,
+        "steps": 80,
+        "ordered_operator_error": 0.014696057055361469,
+        "symmetric_operator_error": 0.00031198896080777695,
+        "max_positive_quasienergy_error": 9.637242763016474e-05
+      }
+    ],
+    "ordered_fitted_log_error_log_step_slope": 1.0061309484071017,
+    "symmetric_fitted_log_error_log_step_slope": 2.005102505618928
+  },
+  "packet_convergence": {
+    "interval_length": 40.0,
+    "packet_center": -4.0,
+    "packet_width": 1.5,
+    "central_wave_number": 0.8,
+    "spinor": "Positive-energy eigenvector of the continuum Hamiltonian at the central wave number.",
+    "reference": "Independent Fourier propagation by the continuum Dirac generator on the same periodic interval and sampled initial state.",
+    "norm_convention": "Discrete sum of two-component absolute squares is one, corresponding to sqrt(spacing)-weighted continuum samples.",
+    "rows": [
+      {
+        "time_step": 0.2,
+        "sites": 200,
+        "steps": 10,
+        "ordered": {
+          "state_l2_error": 0.07432997990670566,
+          "density_total_variation": 0.013024492327799298,
+          "norm_squared": 1.000000000000001,
+          "position_mean_error": 0.06764086986632613
+        },
+        "symmetric": {
+          "state_l2_error": 0.00618091765142291,
+          "density_total_variation": 0.0012529198545003608,
+          "norm_squared": 1.0000000000000004,
+          "position_mean_error": 0.005918584100135724
+        }
+      },
+      {
+        "time_step": 0.1,
+        "sites": 400,
+        "steps": 20,
+        "ordered": {
+          "state_l2_error": 0.036982451678510116,
+          "density_total_variation": 0.005863016134979127,
+          "norm_squared": 1.0000000000000002,
+          "position_mean_error": 0.030375629978740354
+        },
+        "symmetric": {
+          "state_l2_error": 0.001538299277169666,
+          "density_total_variation": 0.0003109865835411937,
+          "norm_squared": 1.0000000000000013,
+          "position_mean_error": 0.001467838068055489
+        }
+      },
+      {
+        "time_step": 0.05,
+        "sites": 800,
+        "steps": 40,
+        "ordered": {
+          "state_l2_error": 0.01846848935364061,
+          "density_total_variation": 0.0027773583590232345,
+          "norm_squared": 1.0000000000000016,
+          "position_mean_error": 0.014357346362746038
+        },
+        "symmetric": {
+          "state_l2_error": 0.0003841430068477869,
+          "density_total_variation": 7.759759786703012e-05,
+          "norm_squared": 1.000000000000005,
+          "position_mean_error": 0.000366222699622403
+        }
+      },
+      {
+        "time_step": 0.025,
+        "sites": 1600,
+        "steps": 80,
+        "ordered": {
+          "state_l2_error": 0.009231405143553615,
+          "density_total_variation": 0.0013510945409666714,
+          "norm_squared": 1.000000000000006,
+          "position_mean_error": 0.006974588013980917
+        },
+        "symmetric": {
+          "state_l2_error": 9.600878421257462e-05,
+          "density_total_variation": 1.9390969213665084e-05,
+          "norm_squared": 0.9999999999999886,
+          "position_mean_error": 9.150964311132648e-05
+        }
+      }
+    ],
+    "ordered_fitted_log_error_log_step_slope": 1.0029741156308292,
+    "symmetric_fitted_log_error_log_step_slope": 2.0027153285376795,
+    "caveat": "A smooth low-momentum packet and finite duration, not a uniform-in-momentum or infinite-time convergence claim. Periodic boundary conditions and the spatial coordinate are inputs."
+  },
+  "finite_support": {
+    "sites": 101,
+    "steps": 12,
+    "time_step": 0.1,
+    "spacing": 0.1,
+    "total_probability": 1.0000000000000004,
+    "probability_outside_step_cone": 0.0,
+    "max_site_distance_with_nonzero_probability": 12,
+    "caveat": "Finite-step support is imposed by the nearest-neighbor shift; the simulation ends before periodic wraparound."
+  },
+  "fixed_coin_control": {
+    "angle": 0.3,
+    "time_steps": [
+      0.2,
+      0.1,
+      0.05,
+      0.025
+    ],
+    "positive_gaps": [
+      1.4999999999999998,
+      2.9999999999999996,
+      5.999999999999999,
+      11.999999999999998
+    ]
+  },
+  "zone_edge_control": {
+    "rows": [
+      {
+        "time_step": 0.2,
+        "wave_number_pi_over_spacing": 15.707963267948966,
+        "lattice_positive_quasienergy": 15.007963267948966,
+        "continuum_positive_energy": 15.723552716458006
+      },
+      {
+        "time_step": 0.1,
+        "wave_number_pi_over_spacing": 31.41592653589793,
+        "lattice_positive_quasienergy": 30.715926535897932,
+        "continuum_positive_energy": 31.423724160400464
+      },
+      {
+        "time_step": 0.05,
+        "wave_number_pi_over_spacing": 62.83185307179586,
+        "lattice_positive_quasienergy": 62.131853071795874,
+        "continuum_positive_energy": 62.835752246915476
+      },
+      {
+        "time_step": 0.025,
+        "wave_number_pi_over_spacing": 125.66370614359172,
+        "lattice_positive_quasienergy": 124.9637061435918,
+        "continuum_positive_energy": 125.66565577652062
+      }
+    ],
+    "meaning": "Keeping lattice phase k*spacing=pi does not keep physical momentum finite; the fixed-low-momentum continuum approximation is not uniform over the Brillouin zone."
+  },
+  "automated_checks": {
+    "run": 14,
+    "failures": 0,
+    "errors": 0
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "automated_checks": {
+    "run": 14,
+    "failures": 0,
+    "errors": 0
+  },
+  "original_preparation_radius": 0.9896158370180917,
+  "sufficient_labels_for_exact_fresh_reads": 22,
+  "sufficient_labels_for_100_rotations_tv_0_01": 158,
+  "rotation_diagnostics": [
+    {
+      "labels": 22,
+      "grid_inradius": 0.9898214418809327,
+      "rotation_one_radian_single_moment_error": 0.010178477272999274,
+      "single_moment_error_bound": 0.010195791377445355,
+      "one_roundtrip_moment_gain": 0.9797466475853873,
+      "hundred_roundtrips_moment_gain": 0.12923454318737443,
+      "all_record_tv_bound_for_100_rotations": 0.5097936157587478
+    },
+    {
+      "labels": 32,
+      "grid_inradius": 0.9951847266721969,
+      "rotation_one_radian_single_moment_error": 0.001623748571320969,
+      "single_moment_error_bound": 0.001625341795161824,
+      "one_roundtrip_moment_gain": 0.9967597466699228,
+      "hundred_roundtrips_moment_gain": 0.722851529095412,
+      "all_record_tv_bound_for_100_rotations": 0.24095713869847066
+    },
+    {
+      "labels": 64,
+      "grid_inradius": 0.9987954562051724,
+      "rotation_one_radian_single_moment_error": 0.0007292186150374992,
+      "single_moment_error_bound": 0.0007293843225154355,
+      "one_roundtrip_moment_gain": 0.9985424026476671,
+      "hundred_roundtrips_moment_gain": 0.8642734492402869,
+      "all_record_tv_bound_for_100_rotations": 0.060239284674617664
+    },
+    {
+      "labels": 128,
+      "grid_inradius": 0.9996988186962042,
+      "rotation_one_radian_single_moment_error": 0.0002813911506929161,
+      "single_moment_error_bound": 0.0002814055861922413,
+      "one_roundtrip_moment_gain": 0.9994373018296803,
+      "hundred_roundtrips_moment_gain": 0.9452690770164333,
+      "all_record_tv_bound_for_100_rotations": 0.015059821168654416
+    },
+    {
+      "labels": 256,
+      "grid_inradius": 0.9999247018391445,
+      "rotation_one_radian_single_moment_error": 5.7415440427210874e-05,
+      "single_moment_error_bound": 5.7416218030644205e-05,
+      "one_roundtrip_moment_gain": 0.9998851733283429,
+      "hundred_roundtrips_moment_gain": 0.9885823552636982,
+      "all_record_tv_bound_for_100_rotations": 0.003764955292163604
+    }
+  ],
+  "shrinking_preparation_read_resources": [
+    {
+      "weak_experiment_steps": 100,
+      "noise": 1,
+      "preparation_radius": 0.9983341664682815,
+      "sufficient_labels_for_exact_reads": 55,
+      "leading_sqrt_count_formula": 54.413980927026536
+    },
+    {
+      "weak_experiment_steps": 1000,
+      "noise": 1,
+      "preparation_radius": 0.9998333416664682,
+      "sufficient_labels_for_exact_reads": 173,
+      "leading_sqrt_count_formula": 172.0721162863643
+    },
+    {
+      "weak_experiment_steps": 10000,
+      "noise": 1,
+      "preparation_radius": 0.9999833334166665,
+      "sufficient_labels_for_exact_reads": 545,
+      "leading_sqrt_count_formula": 544.1398092702653
+    },
+    {
+      "weak_experiment_steps": 100000,
+      "noise": 1,
+      "preparation_radius": 0.9999983333341667,
+      "sufficient_labels_for_exact_reads": 1721,
+      "leading_sqrt_count_formula": 1720.721162863643
+    }
+  ],
+  "scope": "All directions and strengths of the lambda=1 fresh-read family are exact at the operational three-moment level. Actual preparation mixtures mix hidden distributions linearly, but operationally equivalent recipes need not have identical hidden distributions. Silent rotations are approximated with complete-record TV <= L*pi^2/(4*M^2), even with adaptive settings, for at most L rotations. This is a constructive grid bound, not the optimal hidden-label count over all classical models or finite-precision bits."
+}

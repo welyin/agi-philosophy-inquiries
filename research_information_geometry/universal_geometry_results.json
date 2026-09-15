@@ -1,0 +1,542 @@
+{
+  "scope": "Two prescribed Dirac-type probe species on one external static scalar background; a restricted common-metric compatibility test, not a derivation of universal coupling or gravity.",
+  "environment": {
+    "python": "3.14.6",
+    "numpy": "2.5.1",
+    "scipy": "1.18.1"
+  },
+  "units": "hbar=c_reference=1; common external coordinates and clocks; proper masses are independent fixed calibration inputs.",
+  "criteria_before_first_run": [
+    "A single static diagonal minimally coupled metric requires equal v_s and equal mu_s/m_s for all massive probes in the same calibration.",
+    "The same scalar background and Hermitian probe generators are allowed to fail this common-metric requirement.",
+    "Equal characteristic cones alone must not be called equal proper-clock or massive-probe geometry.",
+    "Ray equations are leading Hamilton-Jacobi diagnostics, not an exact quantum wave-packet/free-fall experiment."
+  ],
+  "coefficient_diagnostics": {
+    "background": {
+      "length": 20.0,
+      "amplitude": 0.2,
+      "formula": "q(x)=0.2*cos(2*pi*x/20)",
+      "external_and_static": true
+    },
+    "reference_calibration": "x=L/4, where q=0, normalized mass coefficient=1, and all coordinate speeds=0.7.",
+    "cases": {
+      "universal": {
+        "probe_A": {
+          "name": "A",
+          "proper_mass": 0.6,
+          "lapse_charge": 1.0,
+          "spatial_charge": 0.0
+        },
+        "probe_B": {
+          "name": "B",
+          "proper_mass": 1.1,
+          "lapse_charge": 1.0,
+          "spatial_charge": 0.0
+        },
+        "coefficient_residuals": {
+          "max_absolute_log_cone_ratio": 0.0,
+          "max_absolute_log_normalized_mass_ratio": 0.0,
+          "interpretation": "Coefficient agreement in a fixed static diagonal chart with constant calibrated proper masses and no additional forces. Not a test of all possible metric-plus-matter theories."
+        },
+        "positions": [
+          0.0,
+          5.0,
+          10.0
+        ],
+        "background_values": [
+          0.2,
+          1.2246467991473533e-17,
+          -0.2
+        ],
+        "speed_A": [
+          0.8549819307121189,
+          0.7,
+          0.5731115271545872
+        ],
+        "speed_B": [
+          0.8549819307121189,
+          0.7,
+          0.5731115271545872
+        ],
+        "normalized_mass_A": [
+          1.2214027581601699,
+          1.0,
+          0.8187307530779818
+        ],
+        "normalized_mass_B": [
+          1.2214027581601699,
+          1.0,
+          0.8187307530779818
+        ],
+        "clock_ratio_B_over_A": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "initial_rest_acceleration_A": 0.030787608005179972,
+        "initial_rest_acceleration_B": 0.030787608005179972,
+        "coordinate_acceleration_contrast_at_release": 0.0,
+        "probe_metric_A": [
+          [
+            [
+              1.4918246976412703,
+              0.0
+            ],
+            [
+              0.0,
+              -2.0408163265306123
+            ]
+          ],
+          [
+            [
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              -2.0408163265306123
+            ]
+          ],
+          [
+            [
+              0.6703200460356392,
+              0.0
+            ],
+            [
+              0.0,
+              -2.0408163265306123
+            ]
+          ]
+        ],
+        "probe_metric_B": [
+          [
+            [
+              1.4918246976412703,
+              0.0
+            ],
+            [
+              0.0,
+              -2.0408163265306123
+            ]
+          ],
+          [
+            [
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              -2.0408163265306123
+            ]
+          ],
+          [
+            [
+              0.6703200460356392,
+              0.0
+            ],
+            [
+              0.0,
+              -2.0408163265306123
+            ]
+          ]
+        ]
+      },
+      "same_cones_different_clocks": {
+        "probe_A": {
+          "name": "A",
+          "proper_mass": 0.6,
+          "lapse_charge": 1.0,
+          "spatial_charge": 0.0
+        },
+        "probe_B": {
+          "name": "B",
+          "proper_mass": 1.1,
+          "lapse_charge": 1.5,
+          "spatial_charge": 0.5
+        },
+        "coefficient_residuals": {
+          "max_absolute_log_cone_ratio": 2.2204460492503128e-16,
+          "max_absolute_log_normalized_mass_ratio": 0.10000000000000007,
+          "interpretation": "Coefficient agreement in a fixed static diagonal chart with constant calibrated proper masses and no additional forces. Not a test of all possible metric-plus-matter theories."
+        },
+        "positions": [
+          0.0,
+          5.0,
+          10.0
+        ],
+        "background_values": [
+          0.2,
+          1.2246467991473533e-17,
+          -0.2
+        ],
+        "speed_A": [
+          0.8549819307121189,
+          0.7,
+          0.5731115271545872
+        ],
+        "speed_B": [
+          0.8549819307121188,
+          0.7,
+          0.5731115271545874
+        ],
+        "normalized_mass_A": [
+          1.2214027581601699,
+          1.0,
+          0.8187307530779818
+        ],
+        "normalized_mass_B": [
+          1.3498588075760032,
+          1.0,
+          0.7408182206817179
+        ],
+        "clock_ratio_B_over_A": [
+          1.1051709180756477,
+          1.0,
+          0.9048374180359596
+        ],
+        "initial_rest_acceleration_A": 0.030787608005179972,
+        "initial_rest_acceleration_B": 0.046181412007769956,
+        "coordinate_acceleration_contrast_at_release": 0.39999999999999997,
+        "probe_metric_A": [
+          [
+            [
+              1.4918246976412703,
+              0.0
+            ],
+            [
+              0.0,
+              -2.0408163265306123
+            ]
+          ],
+          [
+            [
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              -2.0408163265306123
+            ]
+          ],
+          [
+            [
+              0.6703200460356392,
+              0.0
+            ],
+            [
+              0.0,
+              -2.0408163265306123
+            ]
+          ]
+        ],
+        "probe_metric_B": [
+          [
+            [
+              1.822118800390509,
+              0.0
+            ],
+            [
+              0.0,
+              -2.4926586901227963
+            ]
+          ],
+          [
+            [
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              -2.0408163265306123
+            ]
+          ],
+          [
+            [
+              0.5488116360940265,
+              0.0
+            ],
+            [
+              0.0,
+              -1.6708790879142486
+            ]
+          ]
+        ]
+      },
+      "same_clocks_different_cones": {
+        "probe_A": {
+          "name": "A",
+          "proper_mass": 0.6,
+          "lapse_charge": 1.0,
+          "spatial_charge": 0.0
+        },
+        "probe_B": {
+          "name": "B",
+          "proper_mass": 1.1,
+          "lapse_charge": 1.0,
+          "spatial_charge": 0.4
+        },
+        "coefficient_residuals": {
+          "max_absolute_log_cone_ratio": 0.08000000000000007,
+          "max_absolute_log_normalized_mass_ratio": 0.0,
+          "interpretation": "Coefficient agreement in a fixed static diagonal chart with constant calibrated proper masses and no additional forces. Not a test of all possible metric-plus-matter theories."
+        },
+        "positions": [
+          0.0,
+          5.0,
+          10.0
+        ],
+        "background_values": [
+          0.2,
+          1.2246467991473533e-17,
+          -0.2
+        ],
+        "speed_A": [
+          0.8549819307121189,
+          0.7,
+          0.5731115271545872
+        ],
+        "speed_B": [
+          0.789247796105563,
+          0.7,
+          0.6208443057020102
+        ],
+        "normalized_mass_A": [
+          1.2214027581601699,
+          1.0,
+          0.8187307530779818
+        ],
+        "normalized_mass_B": [
+          1.2214027581601699,
+          1.0,
+          0.8187307530779818
+        ],
+        "clock_ratio_B_over_A": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "initial_rest_acceleration_A": 0.030787608005179972,
+        "initial_rest_acceleration_B": 0.030787608005179972,
+        "coordinate_acceleration_contrast_at_release": 0.0,
+        "probe_metric_A": [
+          [
+            [
+              1.4918246976412703,
+              0.0
+            ],
+            [
+              0.0,
+              -2.0408163265306123
+            ]
+          ],
+          [
+            [
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              -2.0408163265306123
+            ]
+          ],
+          [
+            [
+              0.6703200460356392,
+              0.0
+            ],
+            [
+              0.0,
+              -2.0408163265306123
+            ]
+          ]
+        ],
+        "probe_metric_B": [
+          [
+            [
+              1.4918246976412703,
+              0.0
+            ],
+            [
+              0.0,
+              -2.3949201448812456
+            ]
+          ],
+          [
+            [
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              -2.0408163265306123
+            ]
+          ],
+          [
+            [
+              0.6703200460356392,
+              0.0
+            ],
+            [
+              0.0,
+              -1.7390689570739009
+            ]
+          ]
+        ]
+      }
+    }
+  },
+  "trajectory_diagnostics": {
+    "rows": [
+      {
+        "case": "universal",
+        "initial_position": 5.0,
+        "initial_coordinate_velocity": 0.0,
+        "duration": 4.0,
+        "final_position_A": 5.242520979710524,
+        "final_position_B": 5.242520979710512,
+        "final_position_difference_B_minus_A": -1.2434497875801753e-14,
+        "max_sampled_position_difference": 1.0685674567412207e-11,
+        "max_sampled_hamiltonian_ray_vs_geodesic_position_difference": 1.5933032671000547e-11,
+        "max_sampled_absolute_ray_energy_drift": 9.345857421294568e-13,
+        "null_travel_time_A_0_to_5": {
+          "duration": 6.3009591637518465,
+          "quadrature_error_estimate": 6.995469940820172e-14
+        },
+        "null_travel_time_B_0_to_5": {
+          "duration": 6.3009591637518465,
+          "quadrature_error_estimate": 6.995469940820172e-14
+        }
+      },
+      {
+        "case": "same_cones_different_clocks",
+        "initial_position": 5.0,
+        "initial_coordinate_velocity": 0.0,
+        "duration": 4.0,
+        "final_position_A": 5.242520979710524,
+        "final_position_B": 5.359655462582007,
+        "final_position_difference_B_minus_A": 0.11713448287148331,
+        "max_sampled_position_difference": 0.11713448287148331,
+        "max_sampled_hamiltonian_ray_vs_geodesic_position_difference": 9.521272659185342e-12,
+        "max_sampled_absolute_ray_energy_drift": 9.805489753489383e-13,
+        "null_travel_time_A_0_to_5": {
+          "duration": 6.3009591637518465,
+          "quadrature_error_estimate": 6.995469940820172e-14
+        },
+        "null_travel_time_B_0_to_5": {
+          "duration": 6.3009591637518465,
+          "quadrature_error_estimate": 6.995469940820172e-14
+        }
+      },
+      {
+        "case": "same_clocks_different_cones",
+        "initial_position": 5.0,
+        "initial_coordinate_velocity": 0.0,
+        "duration": 4.0,
+        "final_position_A": 5.242520979710524,
+        "final_position_B": 5.243501975690185,
+        "final_position_difference_B_minus_A": 0.000980995979660726,
+        "max_sampled_position_difference": 0.000980995979660726,
+        "max_sampled_hamiltonian_ray_vs_geodesic_position_difference": 1.5075052317570226e-11,
+        "max_sampled_absolute_ray_energy_drift": 1.0222933610748441e-12,
+        "null_travel_time_A_0_to_5": {
+          "duration": 6.3009591637518465,
+          "quadrature_error_estimate": 6.995469940820172e-14
+        },
+        "null_travel_time_B_0_to_5": {
+          "duration": 6.6220469085009945,
+          "quadrature_error_estimate": 7.351948947965642e-14
+        }
+      }
+    ],
+    "methods": "Positive local mass-shell Hamilton equations (DOP853), independently checked against static-metric coordinate-time geodesics (RK45).",
+    "scope": "Leading geometric-optics/point-particle diagnostics. No exact finite-width quantum-packet free-fall simulation or laboratory data."
+  },
+  "static_unitarity_diagnostics": {
+    "sites": 24,
+    "duration": 2.3,
+    "rows": [
+      {
+        "case": "reference_A",
+        "probe": {
+          "name": "A",
+          "proper_mass": 0.6,
+          "lapse_charge": 1.0,
+          "spatial_charge": 0.0
+        },
+        "hermiticity_residual": 0.0,
+        "norm_squared_drift": 1.1102230246251565e-16,
+        "static_energy_drift": 5.003707553108401e-17
+      },
+      {
+        "case": "universal",
+        "probe": {
+          "name": "B",
+          "proper_mass": 1.1,
+          "lapse_charge": 1.0,
+          "spatial_charge": 0.0
+        },
+        "hermiticity_residual": 0.0,
+        "norm_squared_drift": 5.551115123125783e-16,
+        "static_energy_drift": 4.17041378091335e-16
+      },
+      {
+        "case": "same_cones_different_clocks",
+        "probe": {
+          "name": "B",
+          "proper_mass": 1.1,
+          "lapse_charge": 1.5,
+          "spatial_charge": 0.5
+        },
+        "hermiticity_residual": 0.0,
+        "norm_squared_drift": 0.0,
+        "static_energy_drift": 1.944128986425528e-16
+      },
+      {
+        "case": "same_clocks_different_cones",
+        "probe": {
+          "name": "B",
+          "proper_mass": 1.1,
+          "lapse_charge": 1.0,
+          "spatial_charge": 0.4
+        },
+        "hermiticity_residual": 0.0,
+        "norm_squared_drift": 1.1102230246251565e-16,
+        "static_energy_drift": 4.441027621704298e-16
+      }
+    ],
+    "meaning": "Every probe has ordinary unitary, static-energy-conserving dynamics, including nonuniversal cases. Coarse finite matrices check algebra only, not a continuum error bound."
+  },
+  "sensitivity_diagnostics": {
+    "unknown_differences": [
+      "delta_alpha=alpha_B-alpha_A",
+      "delta_beta=beta_B-beta_A"
+    ],
+    "data": "log(v_B/v_A)=(delta_alpha-delta_beta)*q; log[(mu_B/m_B)/(mu_A/m_A)]=delta_alpha*q.",
+    "background_values": [
+      0.2,
+      1.2246467991473533e-17,
+      -0.2
+    ],
+    "cone_only_rank": 1,
+    "clock_only_rank": 1,
+    "combined_rank": 2,
+    "combined_singular_values": [
+      0.4576491222541475,
+      0.17480640977952844
+    ],
+    "illustration_not_experimental_limits": {
+      "assumed_absolute_log_ratio_bounds": 0.001,
+      "known_max_absolute_background": 0.2,
+      "absolute_delta_alpha_bound": 0.005,
+      "absolute_delta_alpha_minus_delta_beta_bound": 0.005,
+      "conservative_absolute_delta_beta_bound": 0.01
+    },
+    "calibration_caveat": "Charge bounds require an independently normalized and measured q. With q unknown, experiments constrain products and probe ratios, not alpha and beta separately. The numerical bound is illustrative and is not taken from MICROSCOPE or clock experiments."
+  },
+  "automated_checks": {
+    "run": 15,
+    "failures": 0,
+    "errors": 0
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "automated_checks": {
+    "run": 10,
+    "failures": 0,
+    "errors": 0
+  },
+  "original_radius": 0.9896158370180917,
+  "poisson_kernel_minimum": 0.0052191798983020595,
+  "sufficient_maximum_contrast_for_full_sequential_model": 0.0017498201943266574,
+  "selected_contrast": 0.001,
+  "uniform_kernel_density_lower_bounds": [
+    {
+      "contrast": 0,
+      "density_lower_bound": 0.0004153291398503142
+    },
+    {
+      "contrast": 0.001,
+      "density_lower_bound": 0.00017817066493511422
+    },
+    {
+      "contrast": 0.0017498201943266574,
+      "density_lower_bound": 2.411255820415803e-07
+    },
+    {
+      "contrast": 0.01,
+      "density_lower_bound": -0.0019633434073425228
+    },
+    {
+      "contrast": 0.5,
+      "density_lower_bound": -0.1392258333895285
+    }
+  ],
+  "single_read_threshold_from_round22": 0.6432999034108454,
+  "excluded_contrast_from_five_read_witness": 0.5,
+  "interpretation": "A negative lower bound is only failure of this sufficient certificate; it is not proof that this kernel or every other kernel is negative.",
+  "scope": "Continuous preparation-noncontextual model exactly intertwines every fresh branch for contrasts up to the sufficient bound, with arbitrary rotations and arbitrary finite adaptive protocols. The full conditional hidden density, not only first moments, equals the unique affine preparation encoding. No claim of optimal contrast or finite-label realization. The original fresh eta=0 read retains its alpha disturbance."
+}

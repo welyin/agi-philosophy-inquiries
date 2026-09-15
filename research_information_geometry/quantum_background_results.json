@@ -1,0 +1,434 @@
+{
+  "scope": "A standard longitudinal two-level system plus one quantum oscillator; not a quantization of the full earlier field model or a theory of spacetime.",
+  "environment": {
+    "python": "3.14.6",
+    "numpy": "2.5.1"
+  },
+  "parameters": {
+    "cutoff": 32,
+    "frequency": 1.0,
+    "splitting": 0.8,
+    "coupling": 0.7,
+    "transverse": 0.0
+  },
+  "units": "hbar=1; Q=(a+a_dagger)/sqrt(2), P=(a-a_dagger)/(i*sqrt(2)); oscillator energy=omega*(n+1/2).",
+  "criteria_before_first_run": [
+    "Joint linear unitary evolution must agree for different ensembles of the same initial joint density matrix.",
+    "Numerical vectors and oscillator moments must match an independently derived conditional-displacement solution.",
+    "The comparison retains the same initial oscillator vacuum uncertainty in exact and factorized models.",
+    "Entanglement claims refer only to initially pure joint states; separable correlated mixed outputs are distinguished."
+  ],
+  "preparation_comparison": {
+    "duration": 3.141592653589793,
+    "initial_preparation": "I_spin/2 tensor oscillator vacuum, decomposed into equal z eigenstates or equal x eigenstates.",
+    "exact_ensemble_joint_trace_distance": 2.6184617961684637e-16,
+    "direct_mixed_vs_ensemble_trace_distance": 6.197266244532484e-16,
+    "exact_mixed_output": {
+      "trace": 1.0000000000000004,
+      "joint_purity": 0.5000000000000003,
+      "matter_purity": 0.5000000000000006,
+      "background_purity": 0.5099205473721857,
+      "matter_entropy_nats": 0.6931471805599452,
+      "background_entropy_nats": 0.683193564271497,
+      "matter_visibility": 0.0,
+      "position_mean": -1.0714415615567024e-15,
+      "position_variance": 2.460000000000001,
+      "momentum_mean": 3.153719587579859e-16,
+      "momentum_variance": 0.5000000000000006,
+      "source_position_covariance": -1.4000000000000008,
+      "mean_oscillator_number": 0.9800000000000006,
+      "highest_level_population": 2.2752573045534356e-35,
+      "top_four_levels_population": 7.23577901993025e-31,
+      "energies": {
+        "matter": 1.7854155074205074e-16,
+        "background": 1.4800000000000009,
+        "interaction": -0.9800000000000004,
+        "total": 0.5000000000000007
+      }
+    },
+    "factorized_z_ensemble": {
+      "trace": 1.0,
+      "joint_purity": 0.49999999999999994,
+      "matter_purity": 0.5000000000000001,
+      "background_purity": 0.5099205473721855,
+      "matter_entropy_nats": 0.6931471805599452,
+      "background_entropy_nats": 0.6831935642714971,
+      "matter_visibility": 0.0,
+      "position_mean": -1.797707965972971e-18,
+      "position_variance": 2.459999999999999,
+      "momentum_mean": 8.869750778578801e-18,
+      "momentum_variance": 0.4999999999999999,
+      "source_position_covariance": -1.4,
+      "mean_oscillator_number": 0.9799999999999998,
+      "highest_level_population": 2.4399334751073746e-35,
+      "top_four_levels_population": 7.2358987660456544e-31,
+      "energies": {
+        "matter": -2.2472337680628467e-17,
+        "background": 1.4799999999999998,
+        "interaction": -0.9799999999999996,
+        "total": 0.5
+      }
+    },
+    "factorized_x_ensemble": {
+      "trace": 0.9999999999999998,
+      "joint_purity": 0.4999999999999998,
+      "matter_purity": 0.4999999999999998,
+      "background_purity": 0.9999999999999996,
+      "matter_entropy_nats": 0.6931471805599454,
+      "background_entropy_nats": 2.220446049250313e-16,
+      "matter_visibility": 0.0,
+      "position_mean": 3.131960043906032e-17,
+      "position_variance": 0.4999999999999998,
+      "momentum_mean": 1.549770163674844e-33,
+      "momentum_variance": 0.4999999999999998,
+      "source_position_covariance": 5.934729841099874e-67,
+      "mean_oscillator_number": 4.90458685831194e-34,
+      "highest_level_population": 0.0,
+      "top_four_levels_population": 0.0,
+      "energies": {
+        "matter": 4.118046071574423e-84,
+        "background": 0.4999999999999999,
+        "interaction": 1.5407439555097887e-33,
+        "total": 0.4999999999999999
+      }
+    },
+    "factorized_ensemble_joint_trace_distance": 0.7903726343621726,
+    "exact_vs_factorized_x_background_trace_distance": 0.7059583555641169,
+    "coherent_pure_input_exact": {
+      "trace": 1.0000000000000002,
+      "joint_purity": 1.0000000000000002,
+      "matter_purity": 0.5099205473721853,
+      "background_purity": 0.5099205473721854,
+      "matter_entropy_nats": 0.6831935642714972,
+      "background_entropy_nats": 0.6831935642714972,
+      "matter_visibility": 0.14085842092104497,
+      "position_mean": -1.1090812857700014e-15,
+      "position_variance": 2.46,
+      "momentum_mean": 2.8373034001925493e-16,
+      "momentum_variance": 0.5000000000000002,
+      "source_position_covariance": -1.4000000000000004,
+      "mean_oscillator_number": 0.9800000000000002,
+      "highest_level_population": 2.2752573045534348e-35,
+      "top_four_levels_population": 7.235779019930248e-31,
+      "energies": {
+        "matter": 1.8428351247255002e-16,
+        "background": 1.4800000000000004,
+        "interaction": -0.98,
+        "total": 0.5000000000000003
+      }
+    },
+    "coherent_pure_input_factorized": {
+      "trace": 0.9999999999999998,
+      "joint_purity": 0.9999999999999997,
+      "matter_purity": 0.9999999999999997,
+      "background_purity": 0.9999999999999996,
+      "matter_entropy_nats": 2.220446049250313e-16,
+      "background_entropy_nats": 2.220446049250313e-16,
+      "matter_visibility": 0.9999999999999998,
+      "position_mean": 3.131960043906032e-17,
+      "position_variance": 0.4999999999999998,
+      "momentum_mean": 1.549770163674844e-33,
+      "momentum_variance": 0.4999999999999998,
+      "source_position_covariance": 5.934729841099874e-67,
+      "mean_oscillator_number": 4.90458685831194e-34,
+      "highest_level_population": 0.0,
+      "top_four_levels_population": 0.0,
+      "energies": {
+        "matter": 4.118046071574423e-84,
+        "background": 0.4999999999999999,
+        "interaction": 1.5407439555097887e-33,
+        "total": 0.4999999999999999
+      }
+    },
+    "analytic_reference": {
+      "conditional_position_plus_z": -1.4,
+      "conditional_momentum_plus_z": -8.572527594031472e-17,
+      "balanced_source_position_variance": 2.46,
+      "balanced_source_momentum_variance": 0.5,
+      "coherent_spin_visibility": 0.14085842092104509,
+      "coherent_spin_purity": 0.5099205473721852,
+      "mean_oscillator_number": 0.9799999999999996,
+      "background_energy_gain": 0.9799999999999996,
+      "interaction_energy": -0.9799999999999999
+    },
+    "entanglement_caveat": "The mixed I/2 input evolves into a separable mixture with classical source-background correlations. Entanglement entropy is claimed only for the separate pure +x input.",
+    "factorization_definition": "A product-state mean field retaining oscillator vacuum variance 1/2, not an approximation that sets all background uncertainty to zero."
+  },
+  "joint_time_trace": {
+    "rows": [
+      {
+        "duration": 0,
+        "matter_visibility": 0.9999999999999997,
+        "matter_entropy_nats": 2.220446049250313e-16,
+        "position_variance": 0.49999999999999967,
+        "momentum_variance": 0.4999999999999999,
+        "source_position_covariance": 2.8584675351517267e-16,
+        "mean_oscillator_number": 1.4980109236038197e-31,
+        "energies": {
+          "matter": 2.2204460492503136e-16,
+          "background": 0.4999999999999999,
+          "interaction": 2.0009272746062094e-16,
+          "total": 0.5000000000000003
+        }
+      },
+      {
+        "duration": 1.5707963267948966,
+        "matter_visibility": 0.3753110988513996,
+        "matter_entropy_nats": 0.6209636741507383,
+        "position_variance": 0.9900000000000004,
+        "momentum_variance": 0.9900000000000004,
+        "source_position_covariance": -0.7000000000000003,
+        "mean_oscillator_number": 0.4900000000000004,
+        "energies": {
+          "matter": 1.5793298772284947e-16,
+          "background": 0.9900000000000004,
+          "interaction": -0.4900000000000001,
+          "total": 0.5000000000000006
+        }
+      },
+      {
+        "duration": 3.141592653589793,
+        "matter_visibility": 0.14085842092104497,
+        "matter_entropy_nats": 0.6831935642714972,
+        "position_variance": 2.46,
+        "momentum_variance": 0.5000000000000002,
+        "source_position_covariance": -1.4000000000000004,
+        "mean_oscillator_number": 0.9800000000000002,
+        "energies": {
+          "matter": 1.8428351247255002e-16,
+          "background": 1.4800000000000004,
+          "interaction": -0.98,
+          "total": 0.5000000000000003
+        }
+      },
+      {
+        "duration": 4.71238898038469,
+        "matter_visibility": 0.3753110988513991,
+        "matter_entropy_nats": 0.6209636741507384,
+        "position_variance": 0.9899999999999997,
+        "momentum_variance": 0.9900000000000005,
+        "source_position_covariance": -0.6999999999999996,
+        "mean_oscillator_number": 0.49,
+        "energies": {
+          "matter": 1.3038546321731183e-16,
+          "background": 0.9900000000000001,
+          "interaction": -0.48999999999999966,
+          "total": 0.5000000000000007
+        }
+      },
+      {
+        "duration": 6.283185307179586,
+        "matter_visibility": 1.0000000000000007,
+        "matter_entropy_nats": -6.661338147750941e-16,
+        "position_variance": 0.5000000000000001,
+        "momentum_variance": 0.5000000000000001,
+        "source_position_covariance": 2.5893965683533695e-16,
+        "mean_oscillator_number": 5.6334031739547836e-30,
+        "energies": {
+          "matter": 1.1102230246251642e-16,
+          "background": 0.5000000000000002,
+          "interaction": 1.8125775978473595e-16,
+          "total": 0.5000000000000007
+        }
+      }
+    ],
+    "initial_background_position_variance": 0.5,
+    "probability_interpretation": "Loss of reduced visibility is reversible correlation with one oscillator, not outcome selection or an irreversible collapse law."
+  },
+  "cutoff_study": {
+    "time_interval": [
+      0.0,
+      6.283185307179586
+    ],
+    "time_samples": 25,
+    "cases": [
+      {
+        "coupling": 0.7,
+        "rows": [
+          {
+            "cutoff": 6,
+            "max_sampled_vector_error_against_unnormalized_analytic_projection": 0.0218058107011887,
+            "max_sampled_position_variance_error": 0.044477594692043265,
+            "max_sampled_analytic_omitted_norm_squared": 0.0005352794316180187,
+            "max_sampled_highest_level_population": 0.0019050595847813715
+          },
+          {
+            "cutoff": 8,
+            "max_sampled_vector_error_against_unnormalized_analytic_projection": 0.0021891540123489097,
+            "max_sampled_position_variance_error": 0.0016773202718256552,
+            "max_sampled_analytic_omitted_norm_squared": 8.874175780104743e-06,
+            "max_sampled_highest_level_population": 4.469852195391624e-05
+          },
+          {
+            "cutoff": 12,
+            "max_sampled_vector_error_against_unnormalized_analytic_projection": 1.2566560407852576e-05,
+            "max_sampled_position_variance_error": 4.159368542921982e-07,
+            "max_sampled_analytic_omitted_norm_squared": 6.646677652710764e-10,
+            "max_sampled_highest_level_population": 5.902113543535222e-09
+          },
+          {
+            "cutoff": 20,
+            "max_sampled_vector_error_against_unnormalized_analytic_projection": 9.455466149185084e-11,
+            "max_sampled_position_variance_error": 1.1102230246251565e-15,
+            "max_sampled_analytic_omitted_norm_squared": 4.440892098500626e-16,
+            "max_sampled_highest_level_population": 1.853742724387227e-18
+          },
+          {
+            "cutoff": 32,
+            "max_sampled_vector_error_against_unnormalized_analytic_projection": 1.6786947127867334e-15,
+            "max_sampled_position_variance_error": 1.7763568394002505e-15,
+            "max_sampled_analytic_omitted_norm_squared": 5.551115123125783e-16,
+            "max_sampled_highest_level_population": 2.2752573045534348e-35
+          }
+        ]
+      },
+      {
+        "coupling": 1.4,
+        "rows": [
+          {
+            "cutoff": 6,
+            "max_sampled_vector_error_against_unnormalized_analytic_projection": 0.6773944243696343,
+            "max_sampled_position_variance_error": 3.9647746425771917,
+            "max_sampled_analytic_omitted_norm_squared": 0.20249448823277927,
+            "max_sampled_highest_level_population": 0.10164196296339159
+          },
+          {
+            "cutoff": 8,
+            "max_sampled_vector_error_against_unnormalized_analytic_projection": 0.312773876385705,
+            "max_sampled_position_variance_error": 1.5966497248558014,
+            "max_sampled_analytic_omitted_norm_squared": 0.046512613787184076,
+            "max_sampled_highest_level_population": 0.02712053681582177
+          },
+          {
+            "cutoff": 12,
+            "max_sampled_vector_error_against_unnormalized_analytic_projection": 0.032395598949577165,
+            "max_sampled_position_variance_error": 0.07689270047063879,
+            "max_sampled_analytic_omitted_norm_squared": 0.0007716604162651963,
+            "max_sampled_highest_level_population": 0.0007478532666737828
+          },
+          {
+            "cutoff": 20,
+            "max_sampled_vector_error_against_unnormalized_analytic_projection": 6.176468085534559e-05,
+            "max_sampled_position_variance_error": 3.597918157183244e-06,
+            "max_sampled_analytic_omitted_norm_squared": 7.343416430494187e-09,
+            "max_sampled_highest_level_population": 1.743063658403743e-08
+          },
+          {
+            "cutoff": 32,
+            "max_sampled_vector_error_against_unnormalized_analytic_projection": 3.990355053235768e-10,
+            "max_sampled_position_variance_error": 8.881784197001252e-15,
+            "max_sampled_analytic_omitted_norm_squared": 7.771561172376096e-16,
+            "max_sampled_highest_level_population": 4.3722060595088755e-18
+          }
+        ]
+      }
+    ],
+    "interpretation": "Spectral evolution with an oscillator cutoff is compared with the independently displaced infinite-oscillator state projected without renormalization. Small boundary occupation alone is not used as a proof of accuracy."
+  },
+  "approximation_study": {
+    "initial_state": "Pure +x source with oscillator vacuum; factorized comparison uses the same vacuum fluctuations.",
+    "duration": 3.141592653589793,
+    "rows": [
+      {
+        "coupling_over_frequency": 0.0,
+        "branch_displacement_squared": 0.0,
+        "matter_trace_distance": 6.206335383118183e-17,
+        "matter_trace_distance_analytic": 0.0,
+        "background_trace_distance": 0.0,
+        "joint_trace_distance": 6.206335383118183e-17,
+        "joint_trace_distance_analytic": 0.0,
+        "excess_position_variance_missed": 0.0
+      },
+      {
+        "coupling_over_frequency": 0.05,
+        "branch_displacement_squared": 0.005,
+        "matter_trace_distance": 0.004975083125415757,
+        "matter_trace_distance_analytic": 0.0049750831254159735,
+        "background_trace_distance": 0.006803273821307016,
+        "joint_trace_distance": 0.07062238177318661,
+        "joint_trace_distance_analytic": 0.07062238177318637,
+        "excess_position_variance_missed": 0.010000000000000009
+      },
+      {
+        "coupling_over_frequency": 0.1,
+        "branch_displacement_squared": 0.02,
+        "matter_trace_distance": 0.019605280423838436,
+        "matter_trace_distance_analytic": 0.019605280423838398,
+        "background_trace_distance": 0.026894685862766173,
+        "joint_trace_distance": 0.1407171869149067,
+        "joint_trace_distance_analytic": 0.14071718691490637,
+        "excess_position_variance_missed": 0.040000000000000036
+      },
+      {
+        "coupling_over_frequency": 0.2,
+        "branch_displacement_squared": 0.08,
+        "matter_trace_distance": 0.0739281055168942,
+        "matter_trace_distance_analytic": 0.07392810551689433,
+        "background_trace_distance": 0.10270513042529963,
+        "joint_trace_distance": 0.2772790176218976,
+        "joint_trace_distance_analytic": 0.2772790176218969,
+        "excess_position_variance_missed": 0.16000000000000003
+      },
+      {
+        "coupling_over_frequency": 0.4,
+        "branch_displacement_squared": 0.32,
+        "matter_trace_distance": 0.2363537879784758,
+        "matter_trace_distance_analytic": 0.23635378797847573,
+        "background_trace_distance": 0.34503136985598587,
+        "joint_trace_distance": 0.5233077134213779,
+        "joint_trace_distance_analytic": 0.523307713421376,
+        "excess_position_variance_missed": 0.6400000000000001
+      },
+      {
+        "coupling_over_frequency": 0.7,
+        "branch_displacement_squared": 0.9799999999999996,
+        "matter_trace_distance": 0.4295707895394774,
+        "matter_trace_distance_analytic": 0.42957078953947747,
+        "background_trace_distance": 0.7059583555641166,
+        "joint_trace_distance": 0.7903726343621755,
+        "joint_trace_distance_analytic": 0.7903726343621724,
+        "excess_position_variance_missed": 1.96
+      }
+    ],
+    "all_time_analytic_error_budget_for_this_state": {
+      "trace_distance_budget": 0.01,
+      "coupling_ratio_bound_for_matter_only": 0.0710681140131062,
+      "coupling_ratio_bound_for_joint_state": 0.007071244598136821
+    },
+    "caveat": "Bounds are specific to this longitudinal single-mode model, balanced pure source, and stated trace-distance observable. They do not establish a general mean-field criterion or classical-gravity limit."
+  },
+  "noncommuting_source_control": {
+    "parameters": {
+      "cutoff": 32,
+      "frequency": 1.0,
+      "splitting": 0.8,
+      "coupling": 0.7,
+      "transverse": 0.6
+    },
+    "duration": 4.0,
+    "exact_ensemble_joint_trace_distance": 2.4491276856929905e-16,
+    "source_commutator_norm": 0.6,
+    "initial_pure_state_energy": {
+      "matter": 0.29999999999999993,
+      "background": 0.4999999999999999,
+      "interaction": 0.0,
+      "total": 0.7999999999999998
+    },
+    "final_pure_state_energy": {
+      "matter": -0.15001771613958234,
+      "background": 1.6618014211173344,
+      "interaction": -0.7117837049777509,
+      "total": 0.8000000000000009
+    },
+    "final_pure_state_matter_purity": 0.6150813755093545,
+    "final_source_position_covariance": -1.0411601330272586,
+    "cutoff_32_vs_48_state_l2_difference": 2.4151683996212636e-15,
+    "higher_cutoff_omitted_norm_squared": 4.440892098500626e-16,
+    "scope": "This noncommuting control has no displaced-oscillator analytic solution used here. It tests exact finite-dimensional linear evolution and cutoff agreement, not a general interacting-field theorem; no mean-field performance is claimed for it."
+  },
+  "automated_checks": {
+    "run": 18,
+    "failures": 0,
+    "errors": 0
+  }
+}
