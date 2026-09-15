@@ -1,0 +1,81 @@
+{
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "automated_checks": {
+    "run": 10,
+    "failures": 0,
+    "errors": 0
+  },
+  "noise": 1,
+  "signal": 1,
+  "rows": [
+    {
+      "step_count": 10,
+      "half_width": 0.31622776601683794,
+      "alpha": 0.9834164685292911,
+      "contrast": 0.31622776601683794,
+      "mean_gains": [
+        0.846008581145211,
+        0.4995596070804356
+      ],
+      "scaled_record_mean_mu_zero": 0.9131812339336303,
+      "full_binary_record_tv_lower": 0.43889471895186716
+    },
+    {
+      "step_count": 100,
+      "half_width": 0.1,
+      "alpha": 0.9983341664682815,
+      "contrast": 0.1,
+      "mean_gains": [
+        0.8464346695553838,
+        0.5120981105165632
+      ],
+      "scaled_record_mean_mu_zero": 0.9203171460337937,
+      "full_binary_record_tv_lower": 0.4256199242632096
+    },
+    {
+      "step_count": 1000,
+      "half_width": 0.03162277660168379,
+      "alpha": 0.9998333416664682,
+      "contrast": 0.03162277660168379,
+      "mean_gains": [
+        0.8464770219287767,
+        0.5132858434064099
+      ],
+      "scaled_record_mean_mu_zero": 0.921030403548652,
+      "full_binary_record_tv_lower": 0.42436068247173214
+    },
+    {
+      "step_count": 10000,
+      "half_width": 0.01,
+      "alpha": 0.9999833334166665,
+      "contrast": 0.01,
+      "mean_gains": [
+        0.8464812546200078,
+        0.5134039976829099
+      ],
+      "scaled_record_mean_mu_zero": 0.9211017259790153,
+      "full_binary_record_tv_lower": 0.42423540657108905
+    },
+    {
+      "step_count": 100000,
+      "half_width": 0.0031622776601683794,
+      "alpha": 0.9999983333341667,
+      "contrast": 0.003162277660168379,
+      "mean_gains": [
+        0.8464816778629214,
+        0.5134158069591758
+      ],
+      "scaled_record_mean_mu_zero": 0.9211088581884508,
+      "full_binary_record_tv_lower": 0.4242228854310429
+    }
+  ],
+  "limiting_mean_gains": [
+    0.8464817248906141,
+    0.513417119032592
+  ],
+  "liminf_full_binary_record_tv_lower": 0.42422149426609984,
+  "scope": "Changed model sequence h_n=sqrt(nu/n), eta_n=sigma/sqrt(n), fixed within each experiment. Exact mean and record moment results with an analytic TV lower bound. One-step diffusion moment consistency is checked, but full path convergence is not proved. This does not remove the original fixed-width obstruction."
+}

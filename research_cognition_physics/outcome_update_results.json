@@ -1,0 +1,304 @@
+{
+  "environment": {
+    "python": "3.14.6",
+    "numpy": "2.5.1"
+  },
+  "automated_checks": {
+    "run": 19,
+    "failures": 0,
+    "errors": 0
+  },
+  "constant_retention_control": {
+    "rows": [
+      {
+        "old_score_retention_probability": 0.0,
+        "probability_11_first": 0.49740395925452296,
+        "probability_11_second": 0.49740395925452285,
+        "gap": 1.1102230246251565e-16,
+        "analytic_gap": 0.0
+      },
+      {
+        "old_score_retention_probability": 0.25,
+        "probability_11_first": 0.4967670656036549,
+        "probability_11_second": 0.4368388732781295,
+        "gap": 0.05992819232552543,
+        "analytic_gap": 0.059928192325525376
+      },
+      {
+        "old_score_retention_probability": 0.5,
+        "probability_11_first": 0.49613017195278686,
+        "probability_11_second": 0.37627378730173605,
+        "gap": 0.1198563846510508,
+        "analytic_gap": 0.11985638465105075
+      },
+      {
+        "old_score_retention_probability": 1.0,
+        "probability_11_first": 0.4948563846510508,
+        "probability_11_second": 0.25514361534894925,
+        "gap": 0.23971276930210156,
+        "analytic_gap": 0.2397127693021015
+      }
+    ],
+    "scope": "After the first sharp-response read, a hidden coin either retains the old score or performs the preceding study's reset. The two source preparations have the same first-harmonic summary. Any nonzero constant retention probability exposes their different second harmonics."
+  },
+  "summary_positive_vs_kernel_positive": {
+    "apparent_positive_branch_matrix": [
+      [
+        0.5,
+        0.5,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      [
+        0.0,
+        -0.0,
+        0.07186879559826648
+      ]
+    ],
+    "sampled_minimum_allowed_summary_slack": 1.885492033511238e-08,
+    "saturating_input_summary": [
+      1.0,
+      -0.9793395048770184,
+      0.14224499662292125
+    ],
+    "saturating_output_slack": 0.0,
+    "latent_score_witness": 3.1315926535897933,
+    "latent_branch_probability": 2.499979166736832e-05,
+    "required_conditional_first_harmonic_norm": 28.747278676246772,
+    "universal_conditional_first_harmonic_norm_bound": 1.0,
+    "allowed_preparation_summary_radius": 0.9896158370180917,
+    "scope": "This affine branch map is positive on the disk of permitted window summaries. It nevertheless violates the universal pointwise moment bound of any classical score kernel with periodic first-harmonic output moments realizing the same sharp effect and exact window-averaged closure. The bound on any latent conditional distribution is one, not the smaller radius of the allowed window preparation summaries. The implication from averaged closure to pointwise form uses the nonzero window Fourier multipliers and is proved in the research note."
+  },
+  "sharp_boundary_constraint": {
+    "constraints_on_each_output_moment_coefficients": [
+      [
+        1.0,
+        -1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -1.0
+      ]
+    ],
+    "constraint_rank": 2,
+    "surviving_coefficient_direction": [
+      1.0,
+      1.0,
+      0.0
+    ],
+    "residual": [
+      0.0,
+      0.0
+    ],
+    "scope": "For a periodic classical kernel, exact closure after averaging over every fixed-width h=.25 window forces the unnormalized output first harmonic into span(1,cos,sin). Its norm is bounded by the sharp branch probability, which has a quadratic zero at pi. Value and first derivative therefore vanish there: a=b and c=0. The surviving harmonic is proportional to the branch effect, so only the observable first harmonic resets. Hidden higher moments need not reset."
+  },
+  "closed_partial_retention": {
+    "rows": [
+      {
+        "readout_contrast": 0.0,
+        "unconditional_old_population_retention_weight": 1.0,
+        "first_record_one_probability_each": 0.5,
+        "first_conditional_summary": [
+          1.0,
+          6.059649335948674e-17,
+          0.9896158370180917
+        ],
+        "second_conditional_summary": [
+          1.0,
+          6.059649335948674e-17,
+          -0.9896158370180917
+        ],
+        "next_record_one_probability_first": 0.5,
+        "next_record_one_probability_second": 0.5,
+        "next_record_probability_gap": 0.0,
+        "analytic_gap": 0.0,
+        "maximum_same_setting_repeat_probability": 0.5
+      },
+      {
+        "readout_contrast": 0.25,
+        "unconditional_old_population_retention_weight": 0.75,
+        "first_record_one_probability_each": 0.5,
+        "first_conditional_summary": [
+          1.0,
+          0.247403959254523,
+          0.7422118777635688
+        ],
+        "second_conditional_summary": [
+          1.0,
+          0.247403959254523,
+          -0.7422118777635688
+        ],
+        "next_record_one_probability_first": 0.5927764847204461,
+        "next_record_one_probability_second": 0.4072235152795539,
+        "next_record_probability_gap": 0.18555296944089217,
+        "analytic_gap": 0.1855529694408922,
+        "maximum_same_setting_repeat_probability": 0.6237019796272615
+      },
+      {
+        "readout_contrast": 0.5,
+        "unconditional_old_population_retention_weight": 0.5,
+        "first_record_one_probability_each": 0.5,
+        "first_conditional_summary": [
+          1.0,
+          0.49480791850904593,
+          0.4948079185090459
+        ],
+        "second_conditional_summary": [
+          1.0,
+          0.49480791850904593,
+          -0.4948079185090459
+        ],
+        "next_record_one_probability_first": 0.6237019796272615,
+        "next_record_one_probability_second": 0.3762980203727385,
+        "next_record_probability_gap": 0.24740395925452296,
+        "analytic_gap": 0.24740395925452294,
+        "maximum_same_setting_repeat_probability": 0.747403959254523
+      },
+      {
+        "readout_contrast": 0.75,
+        "unconditional_old_population_retention_weight": 0.25,
+        "first_record_one_probability_each": 0.5,
+        "first_conditional_summary": [
+          1.0,
+          0.7422118777635689,
+          0.24740395925452294
+        ],
+        "second_conditional_summary": [
+          1.0,
+          0.7422118777635689,
+          -0.24740395925452294
+        ],
+        "next_record_one_probability_first": 0.5927764847204461,
+        "next_record_one_probability_second": 0.4072235152795539,
+        "next_record_probability_gap": 0.18555296944089217,
+        "analytic_gap": 0.1855529694408922,
+        "maximum_same_setting_repeat_probability": 0.8711059388817843
+      },
+      {
+        "readout_contrast": 1.0,
+        "unconditional_old_population_retention_weight": 0.0,
+        "first_record_one_probability_each": 0.5,
+        "first_conditional_summary": [
+          1.0,
+          0.9896158370180919,
+          0.0
+        ],
+        "second_conditional_summary": [
+          1.0,
+          0.9896158370180919,
+          0.0
+        ],
+        "next_record_one_probability_first": 0.5,
+        "next_record_one_probability_second": 0.5,
+        "next_record_probability_gap": 0.0,
+        "analytic_gap": 0.0,
+        "maximum_same_setting_repeat_probability": 0.9948079185090459
+      }
+    ],
+    "example_plus_branch_matrix_strength_0_5": [
+      [
+        0.5,
+        0.25,
+        0.0
+      ],
+      [
+        0.24740395925452294,
+        0.49740395925452296,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.25
+      ]
+    ],
+    "max_equivalent_preparation_branch_difference": 1.3877787807814457e-17,
+    "scope": "An explicitly changed readout f=(1+strength*cos(x-setting))/2. A hidden classical mode selects sharp read-and-reset with probability strength, or a fair recorded bit and unchanged old population with probability 1-strength. The outcome is never overwritten. Each resulting branch is a mixture of previously allowed window preparations and the reset reference. The tradeoff is a constructive example, not an optimal or uniquely derived cognitive update."
+  },
+  "joint_operation_checks": {
+    "readout_contrast": 0.5,
+    "rows": [
+      {
+        "joint_preparation": "aligned",
+        "joint_summary": [
+          [
+            1.0,
+            6.059649335948674e-17,
+            0.0
+          ],
+          [
+            6.059649335948674e-17,
+            3.671935007466321e-33,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.9793395048770184
+          ]
+        ],
+        "first_marginal_summary": [
+          1.0,
+          6.059649335948674e-17,
+          0.0
+        ],
+        "second_marginal_summary": [
+          1.0,
+          6.059649335948674e-17,
+          0.0
+        ],
+        "joint_record_11_probability": 0.3112087190548136,
+        "direct_classical_probability": 0.3112087190548137,
+        "analytic_probability": 0.3112087190548136,
+        "max_remote_marginal_change_after_unconditional_local_read": 0.0
+      },
+      {
+        "joint_preparation": "opposed",
+        "joint_summary": [
+          [
+            1.0,
+            6.059649335948674e-17,
+            0.0
+          ],
+          [
+            6.059649335948674e-17,
+            3.671935007466321e-33,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -0.9793395048770184
+          ]
+        ],
+        "first_marginal_summary": [
+          1.0,
+          6.059649335948674e-17,
+          0.0
+        ],
+        "second_marginal_summary": [
+          1.0,
+          6.059649335948674e-17,
+          0.0
+        ],
+        "joint_record_11_probability": 0.18879128094518635,
+        "direct_classical_probability": 0.18879128094518638,
+        "analytic_probability": 0.18879128094518635,
+        "max_remote_marginal_change_after_unconditional_local_read": 0.0
+      }
+    ],
+    "same_latent_score_copy_probabilities_11": [
+      0.3112140961627627,
+      0.2512859038372373
+    ],
+    "same_latent_score_copy_gap": 0.059928192325525376,
+    "analytic_copy_gap": 0.059928192325525376,
+    "scope": "Nine joint moments W=E[b(X)b(Y)^T] suffice for the declared local shifts, partial instruments and carrier swap (W transposes). Independent mixtures of window products are used for these joint tests. Local outcomes update as M_A W M_B^T and cannot be predicted from marginal summaries alone. A separately added exact pre-read latent-score copy still exposes source second harmonics and is not determined by a three-coordinate source summary. No arbitrary interacting composite theory, quantum tensor product or Bell violation is constructed."
+  }
+}

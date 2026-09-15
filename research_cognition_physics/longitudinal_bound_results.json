@@ -1,0 +1,67 @@
+{
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "automated_checks": {
+    "run": 10,
+    "failures": 0,
+    "errors": 0
+  },
+  "half_width": 0.25,
+  "alpha": 0.9896158370180917,
+  "sharp_longitudinal_loss_slope": 0.010384162981908251,
+  "comparison_rows": [
+    {
+      "contrast": 0,
+      "general_longitudinal_upper_attained": 1.0,
+      "baseline_longitudinal_gain": 1.0,
+      "baseline_tangent_gain": 1.0,
+      "round_9_longitudinal_gain": 1.0,
+      "round_9_tangent_gain": 1.0,
+      "fixed_half_contrast_probe_worst_input_error_floor": 0.0,
+      "disk_candidate_pointwise_slack": 0.0
+    },
+    {
+      "contrast": 0.005,
+      "general_longitudinal_upper_attained": 0.9999480791850904,
+      "baseline_longitudinal_gain": 0.9999480791850904,
+      "baseline_tangent_gain": 0.995,
+      "round_9_longitudinal_gain": 0.9996387805411422,
+      "round_9_tangent_gain": 0.9992813120440174,
+      "fixed_half_contrast_probe_worst_input_error_floor": 1.2845415176341772e-05,
+      "disk_candidate_pointwise_slack": -5.165123780748182e-05
+    },
+    {
+      "contrast": 0.1,
+      "general_longitudinal_upper_attained": 0.9989615837018092,
+      "baseline_longitudinal_gain": 0.9989615837018092,
+      "baseline_tangent_gain": 0.9,
+      "round_9_longitudinal_gain": 0.9927756108228432,
+      "round_9_tangent_gain": 0.9856262408803467,
+      "fixed_half_contrast_probe_worst_input_error_floor": 0.0002569083035268355,
+      "disk_candidate_pointwise_slack": -0.0010330247561490813
+    },
+    {
+      "contrast": 0.5,
+      "general_longitudinal_upper_attained": 0.9948079185090459,
+      "baseline_longitudinal_gain": 0.9948079185090459,
+      "baseline_tangent_gain": 0.5,
+      "round_9_longitudinal_gain": 0.9896158370180917,
+      "round_9_tangent_gain": 0.8570324548450681,
+      "fixed_half_contrast_probe_worst_input_error_floor": 0.0012845415176341772,
+      "disk_candidate_pointwise_slack": -0.0051651237807454065
+    },
+    {
+      "contrast": 1,
+      "general_longitudinal_upper_attained": 0.9896158370180917,
+      "baseline_longitudinal_gain": 0.9896158370180917,
+      "baseline_tangent_gain": 0.0,
+      "round_9_longitudinal_gain": 0.9896158370180917,
+      "round_9_tangent_gain": 0.0,
+      "fixed_half_contrast_probe_worst_input_error_floor": 0.0025690830352683544,
+      "disk_candidate_pointwise_slack": -0.010330247561490813
+    }
+  ],
+  "scope": "Analytic optimum of signed unconditional longitudinal gain, over periodic classical branch kernels with exact three-moment closure and full original-window preparation preservation. Not an optimum of conditional tangent retention. Numerical checks support the written proof; they are not an exhaustive kernel search."
+}

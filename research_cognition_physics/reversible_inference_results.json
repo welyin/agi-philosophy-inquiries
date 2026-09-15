@@ -1,0 +1,302 @@
+{
+  "environment": {
+    "python": "3.14.6",
+    "numpy": "2.5.1"
+  },
+  "automated_checks": {
+    "run": 18,
+    "failures": 0,
+    "errors": 0
+  },
+  "silent_updates": {
+    "initial_first": [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "initial_second": [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    "initial_total_variation": 1.0,
+    "rows": [
+      {
+        "operation": "hypothesis_flip",
+        "update": [
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ]
+        ],
+        "public_silent_outcome_probability_first": 1.0,
+        "public_silent_outcome_probability_second": 1.0,
+        "matrix_rank": 4,
+        "first_output_distribution": [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "second_output_distribution": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "total_variation_after_update": 1.0,
+        "future_observation_one_probability_first": 0.0,
+        "future_observation_one_probability_second": 1.0,
+        "minimum_algebraic_inverse_entry": 0.0,
+        "inverse_is_stochastic": true
+      },
+      {
+        "operation": "hypothesis_clear",
+        "update": [
+          [
+            1.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "public_silent_outcome_probability_first": 1.0,
+        "public_silent_outcome_probability_second": 1.0,
+        "matrix_rank": 2,
+        "first_output_distribution": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "second_output_distribution": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "total_variation_after_update": 0.0,
+        "future_observation_one_probability_first": 1.0,
+        "future_observation_one_probability_second": 1.0,
+        "minimum_algebraic_inverse_entry": null,
+        "inverse_is_stochastic": false
+      },
+      {
+        "operation": "unrecorded_random_flip",
+        "update": [
+          [
+            0.8,
+            0.2,
+            0.0,
+            0.0
+          ],
+          [
+            0.2,
+            0.8,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.8,
+            0.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.2,
+            0.8
+          ]
+        ],
+        "public_silent_outcome_probability_first": 1.0,
+        "public_silent_outcome_probability_second": 1.0,
+        "matrix_rank": 4,
+        "first_output_distribution": [
+          0.8,
+          0.2,
+          0.0,
+          0.0
+        ],
+        "second_output_distribution": [
+          0.2,
+          0.8,
+          0.0,
+          0.0
+        ],
+        "total_variation_after_update": 0.6000000000000001,
+        "future_observation_one_probability_first": 0.8,
+        "future_observation_one_probability_second": 0.2,
+        "minimum_algebraic_inverse_entry": -0.3333333333333333,
+        "inverse_is_stochastic": false
+      }
+    ],
+    "scope": "Silent means a single public result label, not absence of internal state change or hidden environmental records. The random flip seed and old audit state are inaccessible in this reduced model. No quantum evolution is assumed."
+  },
+  "retained_storage": {
+    "rows": [
+      {
+        "case": "clear_via_blank_buffer",
+        "auxiliary_preparation": [
+          1.0,
+          0.0
+        ],
+        "max_reduced_map_error": 0.0,
+        "retained_loop_total_variation": 0.0,
+        "joint_total_variation": 1.0,
+        "max_recovery_error": 0.0
+      },
+      {
+        "case": "flip_with_retained_seed",
+        "auxiliary_preparation": [
+          0.8,
+          0.2
+        ],
+        "max_reduced_map_error": 0.0,
+        "retained_loop_total_variation": 0.6000000000000001,
+        "joint_total_variation": 1.0,
+        "max_recovery_error": 0.0
+      }
+    ],
+    "scope": "The auxiliary bit is reversible scratch storage or a retained random seed, not an immutable SoCA audit log. The clear construction requires an initially blank buffer. Access to the full joint register permits recovery; tracing it out gives the original irreversible reduced maps. No heat or thermodynamic energy is modeled."
+  },
+  "continuous_updates": {
+    "rows": [
+      {
+        "parameter": 0.0,
+        "matrix_rank": 4,
+        "total_variation": 1.0,
+        "minimum_algebraic_inverse_entry": 0.0
+      },
+      {
+        "parameter": 0.25,
+        "matrix_rank": 4,
+        "total_variation": 0.6065306597126334,
+        "minimum_algebraic_inverse_entry": -0.3243606353500641
+      },
+      {
+        "parameter": 0.5,
+        "matrix_rank": 4,
+        "total_variation": 0.36787944117144233,
+        "minimum_algebraic_inverse_entry": -0.8591409142295228
+      },
+      {
+        "parameter": 1.0,
+        "matrix_rank": 4,
+        "total_variation": 0.13533528323661276,
+        "minimum_algebraic_inverse_entry": -3.1945280494653225
+      }
+    ],
+    "scope": "A continuous classical Markov semigroup with a dimensionless update parameter, not physical time. It is injective at finite parameter but contracts distinctions and has no positive inverse away from zero."
+  },
+  "invariant_relation_metric": {
+    "internal_configurations": [
+      "00",
+      "01",
+      "10",
+      "11"
+    ],
+    "number_of_reversible_operations": 24,
+    "coordinate_encoding": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        -1.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        -1.0
+      ]
+    ],
+    "invariant_metric": [
+      [
+        1.4999999999999998,
+        -0.5,
+        -0.5
+      ],
+      [
+        -0.5,
+        1.5,
+        -0.49999999999999994
+      ],
+      [
+        -0.5,
+        -0.49999999999999994,
+        1.5
+      ]
+    ],
+    "metric_eigenvalues": [
+      0.49999999999999956,
+      1.9999999999999998,
+      2.0
+    ],
+    "max_metric_invariance_error": 8.881784197001252e-16,
+    "max_whitened_orthogonality_error": 6.661338147750939e-16,
+    "minimum_nonidentity_whitened_frobenius_distance": 1.9999999999999998,
+    "noncommuting_control": {
+      "flip_then_controlled_parity_distribution": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "controlled_parity_then_flip_distribution": [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "output_total_variation": 1.0
+    },
+    "scope": "All 24 permutations of four configurations of two internal working bits are explicitly allowed in this control. These are not the four peer-hypothesis states of the earlier loop; the peer is an unchanged spectator. Averaging the finite group derives an invariant positive quadratic form, but the state region is still a classical tetrahedron and the group is discrete, not quantum dynamics or a spacetime metric."
+  }
+}

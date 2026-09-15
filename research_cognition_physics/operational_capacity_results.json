@@ -1,0 +1,443 @@
+{
+  "environment": {
+    "python": "3.14.6",
+    "numpy": "2.5.1"
+  },
+  "automated_checks": {
+    "run": 17,
+    "failures": 0,
+    "errors": 0
+  },
+  "finite_preparation_code": {
+    "code_centers": [
+      -7.0,
+      -5.0,
+      -3.0,
+      -1.0,
+      1.0,
+      3.0,
+      5.0,
+      7.0
+    ],
+    "preparation_half_width": 0.25,
+    "rows": [
+      {
+        "interface": "commit_and_clear",
+        "transcripts": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "conditional_channel": [
+          [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        ],
+        "maximum_query_count": 3,
+        "zero_error_code_size_for_this_protocol": 2,
+        "optimal_uniform_guess_success_for_this_protocol": 0.25,
+        "max_column_normalization_error": 0.0,
+        "max_first_result_factorization_error": 0.0
+      },
+      {
+        "interface": "read_without_clearing",
+        "transcripts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "conditional_channel": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "maximum_query_count": 3,
+        "zero_error_code_size_for_this_protocol": 8,
+        "optimal_uniform_guess_success_for_this_protocol": 1.0,
+        "max_column_normalization_error": 0.0,
+        "max_first_result_factorization_error": null
+      },
+      {
+        "interface": "commit_and_clear_bit_error_0_05",
+        "transcripts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "conditional_channel": [
+          [
+            0.002374999999999994,
+            0.002374999999999994,
+            0.002374999999999994,
+            0.002374999999999994,
+            0.00012499999999999951,
+            0.00012499999999999951,
+            0.00012499999999999951,
+            0.00012499999999999951
+          ],
+          [
+            0.045124999999999936,
+            0.045124999999999936,
+            0.045124999999999936,
+            0.045124999999999936,
+            0.002374999999999994,
+            0.002374999999999994,
+            0.002374999999999994,
+            0.002374999999999994
+          ],
+          [
+            0.8573749999999999,
+            0.8573749999999999,
+            0.8573749999999999,
+            0.8573749999999999,
+            0.045124999999999936,
+            0.045124999999999936,
+            0.045124999999999936,
+            0.045124999999999936
+          ],
+          [
+            0.045125000000000005,
+            0.045125000000000005,
+            0.045125000000000005,
+            0.045125000000000005,
+            0.0023749999999999973,
+            0.0023749999999999973,
+            0.0023749999999999973,
+            0.0023749999999999973
+          ],
+          [
+            0.002374999999999997,
+            0.002374999999999997,
+            0.002374999999999997,
+            0.002374999999999997,
+            0.045124999999999936,
+            0.045124999999999936,
+            0.045124999999999936,
+            0.045124999999999936
+          ],
+          [
+            0.045125,
+            0.045125,
+            0.045125,
+            0.045125,
+            0.857375,
+            0.857375,
+            0.857375,
+            0.857375
+          ],
+          [
+            0.0023750000000000004,
+            0.0023750000000000004,
+            0.0023750000000000004,
+            0.0023750000000000004,
+            0.045125000000000005,
+            0.045125000000000005,
+            0.045125000000000005,
+            0.045125000000000005
+          ],
+          [
+            0.00012500000000000003,
+            0.00012500000000000003,
+            0.00012500000000000003,
+            0.00012500000000000003,
+            0.002375000000000001,
+            0.002375000000000001,
+            0.002375000000000001,
+            0.002375000000000001
+          ]
+        ],
+        "maximum_query_count": 3,
+        "zero_error_code_size_for_this_protocol": 1,
+        "optimal_uniform_guess_success_for_this_protocol": 0.23749999999999996,
+        "max_column_normalization_error": 1.1102230246251565e-16,
+        "max_first_result_factorization_error": 0.0
+      }
+    ],
+    "scope": "One initially supplied continuous score, a fixed adaptive threshold tree, and fresh randomness independent of the preparation. Clear resets to a known result-dependent window and leaves no accessible backup. Finite table code sizes concern this tree; all-protocol bounds are proved separately in the research note."
+  },
+  "predictive_rank": {
+    "rows": [
+      {
+        "number_of_preparations": 2,
+        "test_rank_including_normalization": 2
+      },
+      {
+        "number_of_preparations": 4,
+        "test_rank_including_normalization": 4
+      },
+      {
+        "number_of_preparations": 8,
+        "test_rank_including_normalization": 8
+      },
+      {
+        "number_of_preparations": 16,
+        "test_rank_including_normalization": 16
+      }
+    ],
+    "scope": "Different thresholds are tested on separately prepared inputs, not all on the same consumed score. These exact step rows establish growing predictive rank, not growing single-score destructive-read capacity."
+  },
+  "continuous_reorganization": {
+    "preparation_width": 0.5,
+    "rows": [
+      {
+        "offset": 0.0,
+        "total_variation": 0.0,
+        "max_threshold_probability_change": 0.0,
+        "max_inverse_endpoint_error": 0.0
+      },
+      {
+        "offset": 0.025,
+        "total_variation": 0.050000000000000044,
+        "max_threshold_probability_change": 0.050000000000000044,
+        "max_inverse_endpoint_error": 0.0
+      },
+      {
+        "offset": 0.05,
+        "total_variation": 0.09999999999999998,
+        "max_threshold_probability_change": 0.09999999999999998,
+        "max_inverse_endpoint_error": 0.0
+      },
+      {
+        "offset": 0.1,
+        "total_variation": 0.19999999999999996,
+        "max_threshold_probability_change": 0.19999999999999996,
+        "max_inverse_endpoint_error": 2.7755575615628914e-17
+      },
+      {
+        "offset": 0.25,
+        "total_variation": 0.5,
+        "max_threshold_probability_change": 0.5,
+        "max_inverse_endpoint_error": 0.0
+      },
+      {
+        "offset": 0.5,
+        "total_variation": 1.0,
+        "max_threshold_probability_change": 1.0,
+        "max_inverse_endpoint_error": 0.0
+      }
+    ],
+    "scope": "Silent translations of finite-width classical score distributions are continuous in total variation. Data processing bounds any fixed finite readout protocol by this distance. The coordinate is a candidate priority margin, not physical position, phase, time, or a derived continuous ontic variable."
+  },
+  "communication": {
+    "unique_carrier_transfer_route": [
+      1,
+      2,
+      0,
+      2
+    ],
+    "occupied_slots_after_transfer": 1,
+    "max_channel_change_after_unique_carrier_transfer": 0.0,
+    "copy_before_read_rows": [
+      {
+        "carriers_with_same_initial_score": 1,
+        "maximum_consumed_carriers": 1,
+        "zero_error_code_size_for_this_protocol": 2,
+        "optimal_uniform_guess_success_for_this_protocol": 0.25
+      },
+      {
+        "carriers_with_same_initial_score": 2,
+        "maximum_consumed_carriers": 2,
+        "zero_error_code_size_for_this_protocol": 4,
+        "optimal_uniform_guess_success_for_this_protocol": 0.5
+      },
+      {
+        "carriers_with_same_initial_score": 3,
+        "maximum_consumed_carriers": 3,
+        "zero_error_code_size_for_this_protocol": 8,
+        "optimal_uniform_guess_success_for_this_protocol": 1.0
+      }
+    ],
+    "same_score_copy_correlation_control": [
+      {
+        "transcript": [
+          0,
+          0
+        ],
+        "probability": 0.5
+      },
+      {
+        "transcript": [
+          1,
+          1
+        ],
+        "probability": 0.5
+      }
+    ],
+    "scope": "Transfers move one uncommitted score without retaining a backup. The alternative copy operation duplicates the actual latent score before any read; copied registers are correlated, not independent re-preparations. Each queried copy is consumed and unused copies retain the old score. Allowing unlimited such copying removes the two-preparation bound on one original input. Neither prohibition nor physical availability of exact analog copying is derived from SoCA."
+  }
+}

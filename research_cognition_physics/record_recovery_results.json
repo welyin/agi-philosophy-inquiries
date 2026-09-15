@@ -1,0 +1,54 @@
+{
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "automated_checks": {
+    "run": 6,
+    "failures": 0,
+    "errors": 0
+  },
+  "inverse_witnesses": [
+    {
+      "outcome": 0,
+      "legal_output": [
+        1.0,
+        0.9896158370180917,
+        0.0
+      ],
+      "normalized_inverse": [
+        1.0,
+        0.9999999999999998,
+        0.0
+      ],
+      "excess_over_allowed_radius": 0.01038416298190803
+    },
+    {
+      "outcome": 1,
+      "legal_output": [
+        1.0,
+        -0.9896158370180917,
+        0.0
+      ],
+      "normalized_inverse": [
+        1.0,
+        -0.9999999999999998,
+        0.0
+      ],
+      "excess_over_allowed_radius": 0.01038416298190803
+    }
+  ],
+  "conditional_recovery_affinity_defects": [
+    [
+      0.0,
+      -0.14076790139462791,
+      0.0
+    ],
+    [
+      0.0,
+      0.14076790139462791,
+      0.0
+    ]
+  ],
+  "scope": "Inverting a known conditional summary is inference. Deterministic correction uses affine positive channels on the same disk, without an input-correlated backup. Boundary extremality proves even average identity recovery would force constant record effects. Tests illustrate but do not replace the proof."
+}

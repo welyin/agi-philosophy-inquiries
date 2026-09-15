@@ -1,0 +1,278 @@
+{
+  "environment": {
+    "python": "3.14.6",
+    "numpy": "2.5.1"
+  },
+  "automated_checks": {
+    "run": 18,
+    "failures": 0,
+    "errors": 0
+  },
+  "gauge_diagnostics": {
+    "hard_momenta": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.8
+      ],
+      [
+        1.3601470508735445,
+        -0.0,
+        -0.0,
+        -0.8
+      ],
+      [
+        1.0,
+        0.6566850695366983,
+        0.27764199424671426,
+        0.3628768971404619
+      ],
+      [
+        1.3601470508735445,
+        -0.6566850695366983,
+        -0.27764199424671426,
+        -0.3628768971404619
+      ]
+    ],
+    "species": [
+      "A",
+      "B",
+      "A",
+      "B"
+    ],
+    "incoming_outgoing_signs": [
+      -1.0,
+      -1.0,
+      1.0,
+      1.0
+    ],
+    "soft_momentum": [
+      0.02,
+      0.005366563145999494,
+      -0.007155417527999327,
+      0.01788854381999832
+    ],
+    "gauge_vector": [
+      0.0,
+      0.9633275663033837,
+      0.09965457582448795,
+      -0.2491364395612199
+    ],
+    "momentum_conservation_residual": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rows": [
+      {
+        "case": "universal",
+        "couplings": {
+          "A": 1.0,
+          "B": 1.0
+        },
+        "ward_residual": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coordinate_euclidean_residual_norm": 0.0,
+        "original_soft_factor": 20.366195354307308,
+        "gauge_shifted_soft_factor": 20.366195354307305,
+        "gauge_variation": -3.552713678800501e-15,
+        "predicted_gauge_variation": 0.0
+      },
+      {
+        "case": "nonuniversal",
+        "couplings": {
+          "A": 1.0,
+          "B": 1.25
+        },
+        "ward_residual": [
+          0.0,
+          -0.16417126738417454,
+          -0.06941049856167858,
+          0.10928077571488448
+        ],
+        "coordinate_euclidean_residual_norm": 0.20907489157226364,
+        "original_soft_factor": 21.42917587972437,
+        "gauge_shifted_soft_factor": 21.813763088988686,
+        "gauge_variation": 0.38458720926431766,
+        "predicted_gauge_variation": 0.3845872092643276
+      }
+    ],
+    "scope": "Leading soft factors with the nonzero hard amplitude divided out; hard momentum conservation is imposed at zero soft momentum. No finite-recoil scattering amplitude is computed."
+  },
+  "interaction_diagnostics": {
+    "single_pair": {
+      "species": [
+        "A",
+        "B"
+      ],
+      "assumed_nonzero_hard_channels": [
+        [
+          "A",
+          "B"
+        ]
+      ],
+      "rank": 1,
+      "nullity": 1,
+      "singular_values": [
+        1.1827061888527184,
+        7.039768651151562e-17
+      ],
+      "universal_direction_residual_max": 0.0
+    },
+    "connected": {
+      "species": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "assumed_nonzero_hard_channels": [
+        [
+          "A",
+          "B"
+        ],
+        [
+          "B",
+          "C"
+        ],
+        [
+          "C",
+          "D"
+        ]
+      ],
+      "rank": 3,
+      "nullity": 1,
+      "singular_values": [
+        1.3047987205140243,
+        1.1726953764217738,
+        0.46954278734325233,
+        1.1725486351177184e-16
+      ],
+      "universal_direction_residual_max": 0.0
+    },
+    "disconnected": {
+      "species": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "assumed_nonzero_hard_channels": [
+        [
+          "A",
+          "B"
+        ],
+        [
+          "C",
+          "D"
+        ]
+      ],
+      "rank": 2,
+      "nullity": 2,
+      "singular_values": [
+        1.1827061888527186,
+        1.1638337515475938,
+        9.142635591858127e-17,
+        7.03976865115156e-17
+      ],
+      "universal_direction_residual_max": 0.0
+    },
+    "forward_only": {
+      "species": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "assumed_nonzero_hard_channels": [
+        [
+          "A",
+          "B"
+        ]
+      ],
+      "rank": 0,
+      "nullity": 4,
+      "singular_values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "universal_direction_residual_max": 0.0
+    },
+    "separate_sector_couplings": [
+      1.0,
+      1.0,
+      1.4,
+      1.4
+    ],
+    "disconnected_residual_norm": 0.0,
+    "connected_residual_norm": 0.20878345637339046,
+    "scope": "Ranks describe this supplied list of assumed nonzero hard channels. No hard amplitudes or complete interacting theory are constructed. Omitted channels, including graviton-mediated interactions, can connect the apparent sectors."
+  },
+  "spin_one_diagnostics": {
+    "charges": {
+      "A": 1.0,
+      "B": -2.0
+    },
+    "signed_charge_sum": 0.0,
+    "photon_ward_contraction": 0.0,
+    "interpretation": "Spin-one gauge decoupling requires charge conservation. The elastic channel conserves each species count and therefore allows unequal charges; it does not require a common charge."
+  },
+  "lorentz_diagnostics": {
+    "boost_velocity": [
+      0.17,
+      -0.13,
+      0.21
+    ],
+    "max_ward_vector_covariance_error": 2.636779683484747e-16,
+    "original_gauge_variation": 0.3845872092643272,
+    "boosted_gauge_variation": 0.38458720926432743,
+    "gauge_scalar_difference": 2.220446049250313e-16,
+    "interpretation": "Component norms are coordinate diagnostics, not Lorentz scalars. This checks the weighted four-vector and its gauge contraction under one explicit boost."
+  },
+  "regular_term_diagnostics": {
+    "reference_soft_energy": 0.1,
+    "fixed_tensor_max_absolute_component": 0.9262086508300382,
+    "rows": [
+      {
+        "soft_energy": 0.1,
+        "leading_gauge_variation": 0.3845872092643281,
+        "regular_gauge_variation": -0.3845872092643281,
+        "combined_gauge_variation": 0.0
+      },
+      {
+        "soft_energy": 0.03,
+        "leading_gauge_variation": 0.3845872092643272,
+        "regular_gauge_variation": -0.11537616277929842,
+        "combined_gauge_variation": 0.2692110464850288
+      },
+      {
+        "soft_energy": 0.01,
+        "leading_gauge_variation": 0.38458720926432743,
+        "regular_gauge_variation": -0.03845872092643281,
+        "combined_gauge_variation": 0.3461284883378946
+      },
+      {
+        "soft_energy": 0.003,
+        "leading_gauge_variation": 0.38458720926432743,
+        "regular_gauge_variation": -0.011537616277929843,
+        "combined_gauge_variation": 0.3730495929863976
+      },
+      {
+        "soft_energy": 0.001,
+        "leading_gauge_variation": 0.3845872092643279,
+        "regular_gauge_variation": -0.003845872092643281,
+        "combined_gauge_variation": 0.3807413371716846
+      }
+    ],
+    "scope": "A deliberately tuned bounded tensor cancels one gauge scalar at one reference energy only; it is not a covariant scattering completion. For any tensor bounded as q tends to zero, contraction with q_mu xi_nu is O(q), unlike the nonuniversal O(1) leading residue."
+  },
+  "scope": "Conditional leading-soft spin-two consistency benchmark, not a derivation of spin two, spacetime, Einstein dynamics, or quantum gravity from cognition."
+}

@@ -1,0 +1,142 @@
+{
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "automated_checks": {
+    "run": 10,
+    "failures": 0,
+    "errors": 0
+  },
+  "joint_coordinate_order": [
+    "u",
+    "v",
+    "record",
+    "innovation"
+  ],
+  "characteristic_checks": [
+    {
+      "noise": 0,
+      "count": 64,
+      "sampled_max_drift_error": 0.001964649996758383,
+      "sampled_max_covariance_error": 0.015625
+    },
+    {
+      "noise": 0,
+      "count": 256,
+      "sampled_max_drift_error": 0.000488271861046774,
+      "sampled_max_covariance_error": 0.00390625
+    },
+    {
+      "noise": 0,
+      "count": 1024,
+      "sampled_max_drift_error": 0.00012188895802295319,
+      "sampled_max_covariance_error": 0.0009765625
+    },
+    {
+      "noise": 0,
+      "count": 4096,
+      "sampled_max_drift_error": 3.0461077013377302e-05,
+      "sampled_max_covariance_error": 0.000244140625
+    },
+    {
+      "noise": 1,
+      "count": 64,
+      "sampled_max_drift_error": 0.0005297534669883586,
+      "sampled_max_covariance_error": 0.015543789144677689
+    },
+    {
+      "noise": 1,
+      "count": 256,
+      "sampled_max_drift_error": 0.00013056911987008313,
+      "sampled_max_covariance_error": 0.0039011663853354417
+    },
+    {
+      "noise": 1,
+      "count": 1024,
+      "sampled_max_drift_error": 3.2526394692311555e-05,
+      "sampled_max_covariance_error": 0.0009762446499503863
+    },
+    {
+      "noise": 1,
+      "count": 4096,
+      "sampled_max_drift_error": 8.124369827777755e-06,
+      "sampled_max_covariance_error": 0.00024412075743174277
+    },
+    {
+      "noise": 6,
+      "count": 64,
+      "sampled_max_drift_error": 0.010331134721419222,
+      "sampled_max_covariance_error": 0.030861979924175387
+    },
+    {
+      "noise": 6,
+      "count": 256,
+      "sampled_max_drift_error": 0.002619271694275005,
+      "sampled_max_covariance_error": 0.0077881267667120335
+    },
+    {
+      "noise": 6,
+      "count": 1024,
+      "sampled_max_drift_error": 0.0006571127335945892,
+      "sampled_max_covariance_error": 0.0019515997595487278
+    },
+    {
+      "noise": 6,
+      "count": 4096,
+      "sampled_max_drift_error": 0.00016442183369935748,
+      "sampled_max_covariance_error": 0.00048818589254628897
+    }
+  ],
+  "exact_discrete_path_diagnostics": [
+    {
+      "count": 2048,
+      "noise": 0,
+      "seed": 1501,
+      "final_state": [
+        -0.8372191331008254,
+        0.1790044262730545
+      ],
+      "record": -1.635184431493889,
+      "innovation": -1.1390466104279453,
+      "record_minus_compensator_minus_innovation": 2.886579864025407e-15,
+      "max_exact_recursion_error": 2.220446049250313e-16,
+      "predictable_innovation_quadratic_variation": 0.9997987182765321,
+      "maximum_radius": 0.9492561540015303,
+      "allowed_radius": 1.0
+    },
+    {
+      "count": 2048,
+      "noise": 1,
+      "seed": 1501,
+      "final_state": [
+        -0.7399014916506392,
+        0.14964067429549838
+      ],
+      "record": -1.635184431493889,
+      "innovation": -1.157475853775336,
+      "record_minus_compensator_minus_innovation": 3.1086244689504383e-15,
+      "max_exact_recursion_error": 2.220446049250313e-16,
+      "predictable_innovation_quadratic_variation": 0.9998121949571559,
+      "maximum_radius": 0.9360480749691293,
+      "allowed_radius": 0.9999186217784651
+    },
+    {
+      "count": 2048,
+      "noise": 6,
+      "seed": 1501,
+      "final_state": [
+        -0.31562311120936687,
+        0.0640352556566054
+      ],
+      "record": -1.5467960838455708,
+      "innovation": -1.1497361896785743,
+      "record_minus_compensator_minus_innovation": 5.329070518200751e-15,
+      "max_exact_recursion_error": 1.1102230246251565e-16,
+      "predictable_innovation_quadratic_variation": 0.9998631110666393,
+      "maximum_radius": 0.8763194056335387,
+      "allowed_radius": 0.9995117902705848
+    }
+  ],
+  "scope": "Fixed setting, finite horizon, h_n=sqrt(nu/n), eta_n=sigma/sqrt(n), convergent legal initial summaries. Note 15 proves weak path convergence using tightness, limiting martingales and uniqueness. Sampled checks do not certify uniform bounds. No convergence in total variation or physical time is claimed."
+}

@@ -1,0 +1,242 @@
+{
+  "environment": {
+    "python": "3.14.6",
+    "numpy": "2.5.1"
+  },
+  "automated_checks": {
+    "run": 13,
+    "failures": 0,
+    "errors": 0
+  },
+  "baseline": {
+    "state_order": [
+      {
+        "peer_value": 0,
+        "hypothesis": 0
+      },
+      {
+        "peer_value": 0,
+        "hypothesis": 1
+      },
+      {
+        "peer_value": 1,
+        "hypothesis": 0
+      },
+      {
+        "peer_value": 1,
+        "hypothesis": 1
+      }
+    ],
+    "autonomous_trace": [
+      {
+        "state_before": {
+          "peer_value": 0,
+          "hypothesis": 1
+        },
+        "candidates": [
+          {
+            "action": 0,
+            "predicted_observation": 1,
+            "predicted_target_loss": 0
+          },
+          {
+            "action": 1,
+            "predicted_observation": 0,
+            "predicted_target_loss": 1
+          }
+        ],
+        "requested_action": 0,
+        "executed_action": 0,
+        "vetoed": false,
+        "prediction": 1,
+        "observation": 0,
+        "prediction_error": 1,
+        "state_after": {
+          "peer_value": 0,
+          "hypothesis": 0
+        }
+      },
+      {
+        "state_before": {
+          "peer_value": 0,
+          "hypothesis": 0
+        },
+        "candidates": [
+          {
+            "action": 0,
+            "predicted_observation": 0,
+            "predicted_target_loss": 1
+          },
+          {
+            "action": 1,
+            "predicted_observation": 1,
+            "predicted_target_loss": 0
+          }
+        ],
+        "requested_action": 1,
+        "executed_action": 1,
+        "vetoed": false,
+        "prediction": 1,
+        "observation": 1,
+        "prediction_error": 0,
+        "state_after": {
+          "peer_value": 1,
+          "hypothesis": 1
+        }
+      },
+      {
+        "state_before": {
+          "peer_value": 1,
+          "hypothesis": 1
+        },
+        "candidates": [
+          {
+            "action": 0,
+            "predicted_observation": 1,
+            "predicted_target_loss": 0
+          },
+          {
+            "action": 1,
+            "predicted_observation": 0,
+            "predicted_target_loss": 1
+          }
+        ],
+        "requested_action": 0,
+        "executed_action": 0,
+        "vetoed": false,
+        "prediction": 1,
+        "observation": 1,
+        "prediction_error": 0,
+        "state_after": {
+          "peer_value": 1,
+          "hypothesis": 1
+        }
+      }
+    ],
+    "veto_control": {
+      "state_before": {
+        "peer_value": 0,
+        "hypothesis": 0
+      },
+      "candidates": [
+        {
+          "action": 0,
+          "predicted_observation": 0,
+          "predicted_target_loss": 1
+        },
+        {
+          "action": 1,
+          "predicted_observation": 1,
+          "predicted_target_loss": 0
+        }
+      ],
+      "requested_action": 1,
+      "executed_action": 0,
+      "vetoed": true,
+      "prediction": 0,
+      "observation": 0,
+      "prediction_error": 0,
+      "state_after": {
+        "peer_value": 0,
+        "hypothesis": 0
+      }
+    },
+    "autonomous_kernel": [
+      [
+        0.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "autonomous_kernel_rank": 2,
+    "noisy_kernel": [
+      [
+        0.0,
+        0.8,
+        0.8,
+        0.0
+      ],
+      [
+        0.0,
+        0.2,
+        0.2,
+        0.0
+      ],
+      [
+        0.2,
+        0.0,
+        0.0,
+        0.2
+      ],
+      [
+        0.8,
+        0.0,
+        0.0,
+        0.8
+      ]
+    ],
+    "max_column_sum_error": 0.0,
+    "max_mixture_affinity_error": 0.0,
+    "memory_overwrite": {
+      "before_distribution": [
+        0.5,
+        0.5,
+        0.0,
+        0.0
+      ],
+      "after_distribution": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "before_retained_state_entropy_nats": 0.6931471805599453,
+      "after_retained_state_entropy_nats": -0.0,
+      "scope": "Entropy of the retained peer-memory state only; an external audit record is excluded. No thermodynamic bath, heat, or entropy production is modeled."
+    },
+    "finite_simplex_reversibility_control": {
+      "forward_stochastic_matrix": [
+        [
+          0.9,
+          0.1
+        ],
+        [
+          0.1,
+          0.9
+        ]
+      ],
+      "algebraic_inverse": [
+        [
+          1.125,
+          -0.125
+        ],
+        [
+          -0.125,
+          1.125
+        ]
+      ],
+      "minimum_inverse_entry": -0.125,
+      "scope": "This invertible forward stochastic matrix has no stochastic inverse. The finite-simplex permutation theorem is stated analytically in research_direction.md, not proved by this numerical example."
+    },
+    "scope": "A chosen classical realization of prediction, two-candidate arbitration, a deterministic veto, action-feedback and memory overwrite. Not a complete SoCA implementation, a quantum reconstruction, or a proof that every cognitive model is classical."
+  }
+}

@@ -1,0 +1,491 @@
+{
+  "environment": {
+    "python": "3.14.6",
+    "numpy": "2.5.1"
+  },
+  "automated_checks": {
+    "run": 16,
+    "failures": 0,
+    "errors": 0
+  },
+  "local_predictive_states": {
+    "interfaces": {
+      "forced_actions_observation_only": {
+        "linear_predictive_rank_including_normalization": 2,
+        "normalized_affine_dimension": 1,
+        "max_selected_test_length": 1,
+        "invariant_span_residual": 0.0,
+        "selected_effects": [
+          [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "selected_tests": [
+          [],
+          [
+            {
+              "protocol": "keep",
+              "outcome": [
+                0
+              ]
+            }
+          ]
+        ]
+      },
+      "with_autonomy_observation_only": {
+        "linear_predictive_rank_including_normalization": 3,
+        "normalized_affine_dimension": 2,
+        "max_selected_test_length": 1,
+        "invariant_span_residual": 0.0,
+        "selected_effects": [
+          [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "selected_tests": [
+          [],
+          [
+            {
+              "protocol": "keep",
+              "outcome": [
+                0
+              ]
+            }
+          ],
+          [
+            {
+              "protocol": "autonomous",
+              "outcome": [
+                1
+              ]
+            }
+          ]
+        ]
+      },
+      "with_autonomy_noise_0_2": {
+        "linear_predictive_rank_including_normalization": 3,
+        "normalized_affine_dimension": 2,
+        "max_selected_test_length": 1,
+        "invariant_span_residual": 0.0,
+        "selected_effects": [
+          [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          [
+            0.8,
+            0.8,
+            0.2,
+            0.2
+          ],
+          [
+            0.8,
+            0.2,
+            0.2,
+            0.8
+          ]
+        ],
+        "selected_tests": [
+          [],
+          [
+            {
+              "protocol": "keep",
+              "outcome": [
+                0
+              ]
+            }
+          ],
+          [
+            {
+              "protocol": "autonomous",
+              "outcome": [
+                1
+              ]
+            }
+          ]
+        ]
+      },
+      "with_autonomy_noise_0_5": {
+        "linear_predictive_rank_including_normalization": 1,
+        "normalized_affine_dimension": 0,
+        "max_selected_test_length": 0,
+        "invariant_span_residual": 0.0,
+        "selected_effects": [
+          [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        ],
+        "selected_tests": [
+          []
+        ]
+      }
+    },
+    "correlation_witness": {
+      "aligned_preparation": [
+        0.5,
+        0.0,
+        0.0,
+        0.5
+      ],
+      "opposed_preparation": [
+        0.0,
+        0.5,
+        0.5,
+        0.0
+      ],
+      "peer_one_probability_each": 0.5,
+      "hypothesis_one_probability_each": 0.5,
+      "forced_interface_witness": null,
+      "autonomous_interface_witness": {
+        "test": [
+          {
+            "protocol": "autonomous",
+            "outcome": [
+              1
+            ]
+          }
+        ],
+        "first_probability": 1.0,
+        "second_probability": 0.0
+      },
+      "noisy_autonomous_interface_witness": {
+        "test": [
+          {
+            "protocol": "autonomous",
+            "outcome": [
+              1
+            ]
+          }
+        ],
+        "first_probability": 0.8,
+        "second_probability": 0.2
+      }
+    },
+    "local_equivalence": {
+      "hypothesis_zero_preparation": [
+        0.5,
+        0.0,
+        0.5,
+        0.0
+      ],
+      "hypothesis_one_preparation": [
+        0.0,
+        0.5,
+        0.0,
+        0.5
+      ],
+      "first_coordinates": [
+        1.0,
+        0.5,
+        0.5
+      ],
+      "second_coordinates": [
+        1.0,
+        0.5,
+        0.5
+      ],
+      "max_basis_probability_difference": 0.0,
+      "distinguishing_test": null
+    },
+    "coordinate_map": [
+      [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "coordinate_names": [
+      "normalization",
+      "probability_peer_one",
+      "probability_peer_equals_hypothesis"
+    ],
+    "scope": "Prepared distributions over the existing four classical states; only feedback observations are exposed and executed actions are hidden. Future-test span closure covers arbitrary finite adaptive local protocols under the declared interface. This is not a quantum state reconstruction or a claim about all reachable post-feedback histories."
+  },
+  "reduced_local_dynamics": {
+    "normalized_state_space_vertices": [
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        1.0,
+        1.0
+      ]
+    ],
+    "keep_zero_unnormalized_coordinate_update": [
+      [
+        0.9999999999999997,
+        -1.0,
+        4.440892098500626e-16
+      ],
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.9999999999999997,
+        -1.0,
+        4.440892098500626e-16
+      ]
+    ],
+    "minimum_reduced_entry": -1.0,
+    "max_local_intertwining_error": 4.440892098500626e-16,
+    "interpretation": "The local predictive state space is a square, a projection of a classical simplex under restricted access. Negative entries in a compressed-coordinate update are not negative probabilities or evidence of quantum amplitudes."
+  },
+  "composition_consistency": {
+    "receiver_preparation": [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "operation": "Exchange the two retained hypotheses, leaving both peer values unchanged; then execute only the receiver's autonomous loop and read its feedback observation.",
+    "max_initial_product_coordinate_difference": 0.0,
+    "receiver_one_probability_first": 1.0,
+    "receiver_one_probability_second": 0.0,
+    "context_effect_on_source": [
+      1.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    "max_exchange_intertwining_error": 0.5000000000000004,
+    "composition_aware_basis": {
+      "linear_predictive_rank_including_normalization": 4,
+      "normalized_affine_dimension": 3,
+      "max_selected_test_length": 1,
+      "invariant_span_residual": 0.0,
+      "selected_effects": [
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "selected_tests": [
+        [],
+        [
+          {
+            "protocol": "keep",
+            "outcome": [
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "protocol": "autonomous",
+            "outcome": [
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "protocol": "share_then_query",
+            "outcome": [
+              1
+            ]
+          }
+        ]
+      ]
+    },
+    "context_distinguishing_test": {
+      "test": [
+        {
+          "protocol": "share_then_query",
+          "outcome": [
+            1
+          ]
+        }
+      ],
+      "first_probability": 1.0,
+      "second_probability": 0.0
+    },
+    "execution_audit_basis": {
+      "linear_predictive_rank_including_normalization": 4,
+      "normalized_affine_dimension": 3,
+      "max_selected_test_length": 1,
+      "invariant_span_residual": 1.1102230246251565e-16,
+      "selected_effects": [
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "selected_tests": [
+        [],
+        [
+          {
+            "protocol": "keep",
+            "outcome": [
+              0,
+              0
+            ]
+          }
+        ],
+        [
+          {
+            "protocol": "autonomous",
+            "outcome": [
+              1,
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "protocol": "autonomous",
+            "outcome": [
+              1,
+              0
+            ]
+          }
+        ]
+      ]
+    },
+    "complete_coordinate_map": [
+      [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "complete_coordinate_inverse": [
+      [
+        0.5,
+        -0.5,
+        0.5,
+        -0.5
+      ],
+      [
+        0.5,
+        -0.5,
+        -0.5,
+        0.5
+      ],
+      [
+        0.5,
+        0.5,
+        -0.5,
+        -0.5
+      ],
+      [
+        -0.5,
+        0.5,
+        0.5,
+        0.5
+      ]
+    ],
+    "scope": "An explicitly added classical memory-exchange operation motivated by SoCA's inter-agent sharing. Cartesian joint probabilities and independent prepared inputs are assumed for the witness. No Bell nonlocality, quantum tensor product, or general quantum composition theorem is derived."
+  }
+}

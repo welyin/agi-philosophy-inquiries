@@ -1,0 +1,48 @@
+{
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "automated_checks": {
+    "run": 10,
+    "failures": 0,
+    "errors": 0
+  },
+  "sharp_single_read_visibility_threshold": 0.6366197723675814,
+  "original_radius": 0.9896158370180917,
+  "original_contrast_threshold_for_all_disk_preparations": 0.6432999034108454,
+  "four_preparation_witness_visibility_threshold": 0.7071067811865475,
+  "four_label_sufficient_visibility": 0.5,
+  "example_missed_by_four_preparation_witness": {
+    "contrast": 0.68,
+    "visibility": 0.6729387691723024,
+    "four_preparation_success": 0.737919783502532
+  },
+  "finite_encoding_support_diagnostics_not_general_optima": [
+    {
+      "labels": 4,
+      "necessary_visibility_ceiling_for_this_encoding": 0.5,
+      "support_max": 0.7071067811865476,
+      "angular_mean": 0.636619770417024
+    },
+    {
+      "labels": 8,
+      "necessary_visibility_ceiling_for_this_encoding": 0.6035533905932737,
+      "support_max": 0.6532814824381883,
+      "angular_mean": 0.636619770417024
+    },
+    {
+      "labels": 16,
+      "necessary_visibility_ceiling_for_this_encoding": 0.628417436515731,
+      "support_max": 0.6407288619353766,
+      "angular_mean": 0.636619770417024
+    },
+    {
+      "labels": 32,
+      "necessary_visibility_ceiling_for_this_encoding": 0.6345731492255537,
+      "support_max": 0.6376435773361455,
+      "angular_mean": 0.6366197704170238
+    }
+  ],
+  "scope": "Sharp 2/pi visibility threshold for preparation-noncontextual affine encoding of the entire disk with arbitrary bounded, possibly measurement-contextual, single-read responses. Continuous circle model attains it; no finite-label affine preparation encoding attains the threshold. No fresh selective-update kernel is constructed here."
+}
