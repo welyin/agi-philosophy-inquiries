@@ -1,0 +1,52 @@
+{
+  "symmetric": {
+    "size": 64,
+    "contrast": 0.1,
+    "source_radius": 0.9909,
+    "target_arc_mean_radius": 0.9995984531496791,
+    "source_center_mass": 0.0004930327310616045,
+    "solver": "reflection-reduced HiGHS IPM; candidate only",
+    "variables": 1153,
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "uniform_reserve": 0.004187881989239261,
+    "minimum_entry": 3.226192022684903e-08,
+    "maximum_equality_residual": 2.42861286636753e-17
+  },
+  "full": {
+    "size": 64,
+    "contrast": 0.1,
+    "source_radius": 0.9909,
+    "target_arc_mean_radius": 0.9995984531496791,
+    "source_center_mass": 0.0004930327310616045,
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "uniform_reserve": 0.004187881989239181,
+    "minimum_entry": 3.2261920226848416e-08,
+    "maximum_equality_residual": 6.591949208711867e-17
+  },
+  "certificate": {
+    "verified": true,
+    "size": 64,
+    "contrast": "1/10",
+    "source_radius": "9909/10000",
+    "interval_denominator_bits": 100,
+    "polygon_containment_margin_interval": [
+      9.058053561360555e-05,
+      9.058053561360555e-05
+    ],
+    "source_center_mass_interval": [
+      0.000493032731061829,
+      0.000493032731061829
+    ],
+    "fourier_tail_weight_bound": 7.888609052210118e-31,
+    "maximum_row_mass_error_bound": 2.488660370062235e-16,
+    "maximum_row_mean_l1_error_bound": 1.0101967402506995e-17,
+    "maximum_original_column_error_bound": 4.5102810375396984e-17,
+    "maximum_entry_correction_bound": 5.145141278429346e-18,
+    "minimum_original_entry": 3.226192022646318e-08,
+    "repaired_entry_lower_bound": 3.226192022131804e-08,
+    "repaired_entry_lower_bound_exact": "40896842533069064621724/1267650600228229401496703205376"
+  },
+  "scope": "Small-grid cross-check of optional generator; archived high-strength certificates use the original full LP."
+}

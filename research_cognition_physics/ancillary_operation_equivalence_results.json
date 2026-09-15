@@ -1,0 +1,43 @@
+{
+  "scope": "Real 2x2 Kraus operations with usual real tensor composition and declared joint probes",
+  "local_operation_equivalence_implies_ancillary_equivalence": false,
+  "local_matrix_basis_order": [
+    "I",
+    "X",
+    "Z"
+  ],
+  "additional_operation_parameter": "kappa = sum det(K_j), equivalently Phi(Y)=kappa*Y",
+  "complete_real_operation_descriptor": "(3x3 real symmetric-sector map, kappa)",
+  "kappa_is_a_new_local_state_coordinate": false,
+  "probe_reports": {
+    "real_rotation": {
+      "total_mass": 1.0,
+      "positive_probability": 0.9948079185090462,
+      "signed_record_mean": 0.9896158370180921,
+      "inferred_kappa": 1.0000000000000004
+    },
+    "isotropic": {
+      "total_mass": 0.9999999999999999,
+      "positive_probability": 0.9896697524385092,
+      "signed_record_mean": 0.9793395048770186,
+      "inferred_kappa": 0.989615837018092
+    }
+  },
+  "readable_distinction_certificate": {
+    "TV_formula": "alpha*(1-alpha)/2",
+    "TV_interval": [
+      0.005138166070536724,
+      0.005138166070536724
+    ],
+    "strict_lower_exact": "6513399303388200635211373163/1267650600228229401496703205376",
+    "strictly_above_one_two_hundredth": true
+  },
+  "safe_replacement_criterion_within_this_framework": "Equal symmetric-sector map AND equal kappa",
+  "all_real_ancillas_covered_analytically": true,
+  "quantum_theory_derived_from_cognition": false,
+  "automated_checks": {
+    "run": 9,
+    "failures": 0,
+    "errors": 0
+  }
+}

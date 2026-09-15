@@ -1,0 +1,85 @@
+{
+  "constants_certificate": {
+    "verified": true,
+    "strict_margin_lower_bounds_exact": {
+      "endpoint_below_0.145": "47558547573968157048002493/1267650600228229401496703205376",
+      "alpha_below_one": "3290872609220948408398268169/316912650057057350374175801344",
+      "pi_above_three": "44872503077752289799560374345/316912650057057350374175801344",
+      "asin_endpoint_below_0.15": "703250161756306201167148029/158456325028528675187087900672",
+      "band_inside_source_support": "563861024884261333856719906015/633825300114114700748351602688",
+      "source_density_above_0.3115": "75329210072936346295908647/1267650600228229401496703205376",
+      "target_density_below_0.32": "109686528844177917580520835/1267650600228229401496703205376",
+      "twenty_one_labels_cannot_contain_source_circle": "995119402885404977471905199/1267650600228229401496703205376"
+    },
+    "strict_margin_diagnostics": {
+      "endpoint_below_0.145": 3.7517078890197076e-05,
+      "alpha_below_one": 0.010384162981908281,
+      "pi_above_three": 0.14159265358979323,
+      "asin_endpoint_below_0.15": 0.0044381324735992215,
+      "band_inside_source_support": 0.8896158370180918,
+      "source_density_above_0.3115": 5.942426884772033e-05,
+      "target_density_below_0.32": 8.652741443456881e-05,
+      "twenty_one_labels_cannot_contain_source_circle": 0.0007850107929631734
+    },
+    "source_density_lower": "623/2000",
+    "target_density_upper": "8/25",
+    "band_width": "1/10",
+    "segment_growth_upper": "7/5",
+    "density_ratio": "17/623",
+    "geometric_label_minimum": 22
+  },
+  "necessary_counts": [
+    {
+      "endpoint_gap_at_most": "1/1000000",
+      "necessary_labels_at_least": 22
+    },
+    {
+      "endpoint_gap_at_most": "1/1000000000",
+      "necessary_labels_at_least": 40
+    },
+    {
+      "endpoint_gap_at_most": "1/1000000000000",
+      "necessary_labels_at_least": 62
+    },
+    {
+      "endpoint_gap_at_most": "1/1000000000000000000",
+      "necessary_labels_at_least": 102
+    },
+    {
+      "endpoint_gap_at_most": "1/1000000000000000000000000",
+      "necessary_labels_at_least": 144
+    },
+    {
+      "endpoint_gap_at_most": "1/1000000000000000000000000000000000000000000000000000000000000",
+      "necessary_labels_at_least": 390
+    }
+  ],
+  "fixed_count_gap_bounds": [
+    {
+      "labels": 22,
+      "endpoint_gap_lower_bound_exact": "385284423828125/986039440049218793472",
+      "endpoint_gap_lower_bound_float": 3.907393641464212e-07
+    },
+    {
+      "labels": 32,
+      "endpoint_gap_lower_bound_exact": "11287629604339599609375/860201153925089145590073323584",
+      "endpoint_gap_lower_bound_float": 1.3122081449012548e-08
+    },
+    {
+      "labels": 64,
+      "endpoint_gap_lower_bound_exact": "262810606610486274803406558930873870849609375/956263422327434127276542421854232522938520249485609656384",
+      "endpoint_gap_lower_bound_float": 2.748307636517517e-13
+    },
+    {
+      "labels": 128,
+      "endpoint_gap_lower_bound_exact": "142469915319661245965810868311336176151622265480777007606860706800944171845912933349609375/1166447466662346066171453829239570056212206192452528098091916749859062981305870459587763100658791370709995601984",
+      "endpoint_gap_lower_bound_float": 1.2214001863909257e-22
+    }
+  ],
+  "automated_checks": {
+    "run": 6,
+    "failures": 0,
+    "errors": 0
+  },
+  "scope": "Necessary bounds for finite nonnegative product decompositions of the canonical circle coupling. Neither sufficient label counts nor a general nonendpoint encoding bound; the logarithmic lower bound is not claimed sharp."
+}

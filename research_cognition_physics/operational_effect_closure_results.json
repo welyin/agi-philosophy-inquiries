@@ -1,0 +1,106 @@
+{
+  "finite_single_input_effect_set": "E=e0*I+ez*Z+ex*X; |e| <= alpha*min(e0,1-e0)",
+  "local_protocol_optimal_antipodal_discrimination_success": 0.9948079185090459,
+  "local_protocol_closure_contains_sharp_effects": false,
+  "copy_gate_compiled_from_round_47_YX_and_local_rotations": true,
+  "minimal_extra_capability": "One independently resettable pure ancilla, repeated uses of the round-47 two-system gate, and classical record processing",
+  "reusable_pointer_selective_map": "R_s(rho)=sum_{b=0,1} [1+s*alpha*eta*(-1)^b]/2 * P_b*rho*P_b",
+  "many_pointer_alternative_extra_assumptions": [
+    "Arbitrarily many independently prepared pure real ancillas",
+    "The same joint gate on each fresh ancilla and original input",
+    "Consistent real tensor composition and independent local readout channels"
+  ],
+  "finite_ancilla_effect_set": "{0,I} union {real E: 0<E<I}; conditional on gate and reset capabilities",
+  "ancilla_effect_norm_closure": "All real 2x2 effects 0 <= E <= I; conditional on gate and reset capabilities",
+  "finite_majority_protocol_is_exactly_sharp": false,
+  "uniform_measurement_error_formula": "delta_m=sum_{k>m/2} binom(m,k)*epsilon^k*(1-epsilon)^(m-k), epsilon=(1-alpha*eta)/2",
+  "exponential_error_bound": "delta_m <= (1-(alpha*eta)^2)^(m/2), fixed eta>0, odd m",
+  "majority_certificates": [
+    {
+      "pointer_count": 1,
+      "contrast_exact": "1",
+      "error_lower_exact": "3290872609220948408398268169/633825300114114700748351602688",
+      "error_upper_exact": "1645436304610474204199134101/316912650057057350374175801344",
+      "error_diagnostic": 0.0051920814909541405,
+      "effective_visibility_diagnostic": 0.9896158370180917,
+      "strictly_positive_error": true,
+      "resource_interpretation": "m independent pointers, or m reset/read cycles of one reusable pointer",
+      "scope": "Requires the declared real two-system gate and independent pure ancilla reset; the many-pointer version additionally assumes scalable real composition."
+    },
+    {
+      "pointer_count": 3,
+      "contrast_exact": "1",
+      "error_lower_exact": "51082007510005826225377967/633825300114114700748351602688",
+      "error_upper_exact": "102164015020011652450755937/1267650600228229401496703205376",
+      "error_diagnostic": 8.059319736969943e-05,
+      "effective_visibility_diagnostic": 0.9998388136052606,
+      "strictly_positive_error": true,
+      "resource_interpretation": "m independent pointers, or m reset/read cycles of one reusable pointer",
+      "scope": "Requires the declared real two-system gate and independent pure ancilla reset; the many-pointer version additionally assumes scalable real composition."
+    },
+    {
+      "pointer_count": 5,
+      "contrast_exact": "1",
+      "error_lower_exact": "1760498130815197098757849/1267650600228229401496703205376",
+      "error_upper_exact": "880249065407598549378925/633825300114114700748351602688",
+      "error_diagnostic": 1.3887881491147756e-06,
+      "effective_visibility_diagnostic": 0.9999972224237018,
+      "strictly_positive_error": true,
+      "resource_interpretation": "m independent pointers, or m reset/read cycles of one reusable pointer",
+      "scope": "Requires the declared real two-system gate and independent pure ancilla reset; the many-pointer version additionally assumes scalable real composition."
+    },
+    {
+      "pointer_count": 7,
+      "contrast_exact": "1",
+      "error_lower_exact": "31842821632316250817113/1267650600228229401496703205376",
+      "error_upper_exact": "15921410816158125408557/633825300114114700748351602688",
+      "error_diagnostic": 2.5119557097660216e-08,
+      "effective_visibility_diagnostic": 0.9999999497608858,
+      "strictly_positive_error": true,
+      "resource_interpretation": "m independent pointers, or m reset/read cycles of one reusable pointer",
+      "scope": "Requires the declared real two-system gate and independent pure ancilla reset; the many-pointer version additionally assumes scalable real composition."
+    },
+    {
+      "pointer_count": 9,
+      "contrast_exact": "1",
+      "error_lower_exact": "296153185356520568199/633825300114114700748351602688",
+      "error_upper_exact": "592306370713041136399/1267650600228229401496703205376",
+      "error_diagnostic": 4.672473397688618e-10,
+      "effective_visibility_diagnostic": 0.9999999990655053,
+      "strictly_positive_error": true,
+      "resource_interpretation": "m independent pointers, or m reset/read cycles of one reusable pointer",
+      "scope": "Requires the declared real two-system gate and independent pure ancilla reset; the many-pointer version additionally assumes scalable real composition."
+    }
+  ],
+  "real_state_dimensions": [
+    {
+      "systems": 1,
+      "matrix_size": 2,
+      "homogeneous_state_dimension": 3,
+      "normalized_state_dimension": 2,
+      "local_product_statistic_dimension": 3
+    },
+    {
+      "systems": 2,
+      "matrix_size": 4,
+      "homogeneous_state_dimension": 10,
+      "normalized_state_dimension": 9,
+      "local_product_statistic_dimension": 9
+    },
+    {
+      "systems": 3,
+      "matrix_size": 8,
+      "homogeneous_state_dimension": 36,
+      "normalized_state_dimension": 35,
+      "local_product_statistic_dimension": 27
+    }
+  ],
+  "local_tomography_follows_from_sharpening": false,
+  "spacetime_dimension_or_string_theory_derived": false,
+  "quantum_theory_derived_from_cognition": false,
+  "automated_checks": {
+    "run": 15,
+    "failures": 0,
+    "errors": 0
+  }
+}

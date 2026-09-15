@@ -1,0 +1,214 @@
+{
+  "generator_order": [
+    "YI",
+    "IY",
+    "YX",
+    "YZ",
+    "XY",
+    "ZY"
+  ],
+  "generator_permutation_under_role_exchange": [
+    1,
+    0,
+    4,
+    5,
+    2,
+    3
+  ],
+  "role_covariance_condition": "S G S = G; availability symmetry within the same model, not merely passive renaming",
+  "nonlocal_role_covariant_connected_control_closure": "SO(4), within the real two-system framework",
+  "local_role_covariant_alternative": "SO(2) tensor SO(2)",
+  "single_family_example": {
+    "coefficients_exact": [
+      "0",
+      "0",
+      "1",
+      "0",
+      "0",
+      "0"
+    ],
+    "role_reversed_coefficients_exact": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "1",
+      "0"
+    ],
+    "rank_before_role_closure": 4,
+    "rank_after_role_closure": 6,
+    "analytic_role_closed_rank": 6
+  },
+  "bare_swap_determinant_exact": -1,
+  "bare_continuous_swap_on_two_real_systems": false,
+  "bare_uniform_channel_swap_error_worst_case_trace_distance": 1,
+  "bare_swap_distinction_with_aligned_original_readout_TV": 0.9896158370180917,
+  "assisted_swap_certificate": {
+    "verified": true,
+    "pulse_count": 16,
+    "two_system_pulse_count": 12,
+    "single_system_pulse_count": 4,
+    "pulse_angle_unit": "pi/2",
+    "chronological_pulses": [
+      [
+        "IIY",
+        1
+      ],
+      [
+        "YXI",
+        -1
+      ],
+      [
+        "XIY",
+        -1
+      ],
+      [
+        "YII",
+        -1
+      ],
+      [
+        "XIY",
+        1
+      ],
+      [
+        "YXI",
+        1
+      ],
+      [
+        "XYI",
+        -1
+      ],
+      [
+        "XIY",
+        -1
+      ],
+      [
+        "YII",
+        1
+      ],
+      [
+        "XIY",
+        1
+      ],
+      [
+        "XYI",
+        1
+      ],
+      [
+        "IXY",
+        -1
+      ],
+      [
+        "XYI",
+        -1
+      ],
+      [
+        "YII",
+        -1
+      ],
+      [
+        "XYI",
+        1
+      ],
+      [
+        "IXY",
+        1
+      ]
+    ],
+    "common_denominator": 256,
+    "integer_product": [
+      [
+        256,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        256,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        256,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        256,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        256,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        256,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        256,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        256
+      ]
+    ],
+    "target": "SWAP_AB tensor I_C",
+    "auxiliary_returned_for_all_joint_inputs": true,
+    "scope": "Exact relative to available real single/pair rotations on all three pairs; an arbitrary primitive H may only approximate those pair rotations."
+  },
+  "additional_assisted_scope": "Three-system real tensor composition; same full real pair controls on AB, AC, BC; no auxiliary reset needed for this circuit",
+  "role_covariance_or_assisted_swap_implies_local_tomography": false,
+  "joint_positive_cone_generated_in_real_framework": "All real symmetric 4x4 PSD matrices, using proper rotations and classical mixing",
+  "quantum_theory_derived_from_cognition": false,
+  "automated_checks": {
+    "run": 14,
+    "failures": 0,
+    "errors": 0
+  }
+}

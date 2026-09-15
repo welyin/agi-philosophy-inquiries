@@ -1,0 +1,121 @@
+{
+  "rows": [
+    {
+      "size": 128,
+      "contrast": 0.1425,
+      "source_radius": 0.98992,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "full_uniform_reserve_cap": 1.8186752328452904e-05,
+      "half_pole_mass_each": 9.206756158325335e-05,
+      "axis_radius_ratio": 0.9900373993380505,
+      "variables": 4096,
+      "half_uniform_reserve": 0.00017969443815150002,
+      "minimum_entry": 1.5128517124531224e-11,
+      "maximum_equality_residual": 1.1535911115245767e-16,
+      "reconstructed_full_certificate": {
+        "verified": true,
+        "size": 128,
+        "contrast": "57/400",
+        "source_radius": "6187/6250",
+        "interval_denominator_bits": 100,
+        "polygon_containment_margin_interval": [
+          6.01758565476319e-06,
+          6.01758565476319e-06
+        ],
+        "source_center_mass_interval": [
+          0.0001064758653424178,
+          0.0001064758653424178
+        ],
+        "fourier_tail_weight_bound": 1.5777218104420236e-30,
+        "maximum_row_mass_error_bound": 1.147315842804286e-16,
+        "maximum_row_mean_l1_error_bound": 5.574961525271656e-17,
+        "maximum_original_column_error_bound": 2.022977390605816e-17,
+        "maximum_entry_correction_bound": 1.3007144413398603e-18,
+        "minimum_original_entry": 1.512851712453051e-11,
+        "repaired_entry_lower_bound": 1.5128515823816068e-11,
+        "repaired_entry_lower_bound_exact": "19177672164622706062/1267650600228229401496703205376"
+      }
+    },
+    {
+      "size": 256,
+      "contrast": 0.144,
+      "source_radius": 0.9897,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "full_uniform_reserve_cap": 3.068894472790795e-05,
+      "half_pole_mass_each": 5.177791680519017e-05,
+      "axis_radius_ratio": 0.9897552161546016,
+      "variables": 16384,
+      "half_uniform_reserve": 0.00013650928487518555,
+      "minimum_entry": 4.176660303718501e-12,
+      "maximum_equality_residual": 7.966175462337244e-17,
+      "reconstructed_full_certificate": {
+        "verified": true,
+        "size": 256,
+        "contrast": "18/125",
+        "source_radius": "9897/10000",
+        "interval_denominator_bits": 100,
+        "polygon_containment_margin_interval": [
+          9.640392109633763e-06,
+          9.640392109633763e-06
+        ],
+        "source_center_mass_interval": [
+          3.484072349930742e-05,
+          3.484072349930742e-05
+        ],
+        "fourier_tail_weight_bound": 7.888609052210118e-31,
+        "maximum_row_mass_error_bound": 4.814757301092376e-17,
+        "maximum_row_mean_l1_error_bound": 7.994714612110522e-17,
+        "maximum_original_column_error_bound": 7.39769781974783e-17,
+        "maximum_entry_correction_bound": 9.440245515132844e-19,
+        "minimum_original_entry": 4.17666030371786e-12,
+        "repaired_entry_lower_bound": 4.176659359693309e-12,
+        "repaired_entry_lower_bound_exact": "5294544744264074868/1267650600228229401496703205376"
+      }
+    },
+    {
+      "size": 512,
+      "contrast": 0.1445,
+      "source_radius": 0.989635,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "full_uniform_reserve_cap": 1.5534446998088924e-05,
+      "half_pole_mass_each": 2.8727568194081288e-05,
+      "axis_radius_ratio": 0.9896565836809065,
+      "variables": 65536,
+      "half_uniform_reserve": 9.469685460880973e-05,
+      "minimum_entry": 2.0673829336360155e-13,
+      "maximum_equality_residual": 3.642919299551295e-16,
+      "reconstructed_full_certificate": {
+        "verified": true,
+        "size": 512,
+        "contrast": "289/2000",
+        "source_radius": "197927/200000",
+        "interval_denominator_bits": 100,
+        "polygon_containment_margin_interval": [
+          5.33382705263426e-07,
+          5.33382705263426e-07
+        ],
+        "source_center_mass_interval": [
+          6.8138895588212125e-06,
+          6.8138895588212125e-06
+        ],
+        "fourier_tail_weight_bound": 7.888609052210118e-31,
+        "maximum_row_mass_error_bound": 1.639107289672302e-16,
+        "maximum_row_mean_l1_error_bound": 3.6739822196771013e-16,
+        "maximum_original_column_error_bound": 2.581527732607155e-16,
+        "maximum_entry_correction_bound": 2.290021643847563e-18,
+        "minimum_original_entry": 2.0673829336333548e-13,
+        "repaired_entry_lower_bound": 2.0673600334169163e-13,
+        "repaired_entry_lower_bound_exact": "262069018724880641/1267650600228229401496703205376"
+      }
+    }
+  ],
+  "automated_checks": {
+    "run": 5,
+    "errors": 0,
+    "failures": 0
+  },
+  "scope": "Finite probes and independently checked full reconstructions support the equality-face reduction. They do not prove a feasible sequence reaching eta_B or a continuous endpoint coupling."
+}

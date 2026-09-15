@@ -1,0 +1,21 @@
+{
+  "round": 62,
+  "preparation": "tau_A_BL tensor tau_BR_C, independent sources",
+  "middle_operation": "Old YX(pi/2) on BL,BR; old fresh Z read on BR; discard BR",
+  "flag_probabilities": [
+    0.5,
+    0.5
+  ],
+  "conditional_state": "[III+YYI+r beta(IYY+YIY)]/8",
+  "feedforward": "Send r to C; apply a locally compiled real X when r=-1",
+  "postselection_required": false,
+  "one_read_reference_distance": 0.005192081490954126,
+  "ignored_flag_outer_state": "I_A/2 tensor I_C/2",
+  "source_independence_alone_forbids_alignment": false,
+  "quantum_theory_derived_from_cognition": false,
+  "automated_checks": {
+    "run": 10,
+    "failures": 0,
+    "errors": 0
+  }
+}

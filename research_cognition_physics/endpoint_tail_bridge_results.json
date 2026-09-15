@@ -1,0 +1,76 @@
+{
+  "certificate": {
+    "verified": true,
+    "endpoint_definition": "Unique positive root of alpha*(sqrt(1-eta^2)+eta*asin(eta))=1",
+    "endpoint_bracket_exact": [
+      "6674918929710967577/46116860184273879040",
+      "2669967571884387031/18446744073709551616"
+    ],
+    "constants": {
+      "verified": true,
+      "strict_margin_lower_bounds_exact": {
+        "alpha_positive": "156810888723918200982888766571/158456325028528675187087900672",
+        "alpha_below_one": "3290872609220948408398268169/316912650057057350374175801344",
+        "eta_positive": "45869693610495885561170178867/316912650057057350374175801344",
+        "eta_below_one": "15776776501825164585/18446744073709551616",
+        "source_density_smaller_at_zero": "26462011128401658587654078833/1267650600228229401496703205376",
+        "crossing_before_0.521": "33335101523041196449043449/633825300114114700748351602688",
+        "crossing_bound_below_alpha_over_sqrt_two": "226610379525665920979135489555/1267650600228229401496703205376",
+        "upper_tail_angle_below_0.1443": "11445467809356673383215311/1267650600228229401496703205376",
+        "upper_tail_mean_x_above_0.9965": "37503443007752166843279963/1267650600228229401496703205376",
+        "upper_tail_mean_x_bound_above_alpha": "8726713336084990728354611457/1267650600228229401496703205376",
+        "upper_tail_mean_y_above_0.0719": "39500897137473298913799309/633825300114114700748351602688",
+        "lower_tail_mean_y_above_0.8535": "61322597786040597297403017/633825300114114700748351602688",
+        "factor_below_one_beyond_quarter_angle": "176063472122300400127982637/633825300114114700748351602688"
+      },
+      "strict_margin_diagnostics": {
+        "alpha_positive": 0.9896158370180917,
+        "alpha_below_one": 0.010384162981908281,
+        "eta_positive": 0.14473923209514497,
+        "eta_below_one": 0.8552607679048551,
+        "source_density_smaller_at_zero": 0.02087484605271942,
+        "crossing_before_0.521": 5.259351672620122e-05,
+        "crossing_bound_below_alpha_over_sqrt_two": 0.17876406912509385,
+        "upper_tail_angle_below_0.1443": 9.028882096767056e-06,
+        "upper_tail_mean_x_above_0.9965": 2.9585e-05,
+        "upper_tail_mean_x_bound_above_alpha": 0.006884162981908281,
+        "upper_tail_mean_y_above_0.0719": 6.232142694581852e-05,
+        "lower_tail_mean_y_above_0.8535": 9.675e-05,
+        "factor_below_one_beyond_quarter_angle": 0.00027777917998950455
+      },
+      "crossing_upper": "521/1000",
+      "upper_tail_mean_x_lower": "1993/2000",
+      "upper_tail_mean_y_lower": "719/10000",
+      "lower_tail_mean_y_lower": "1707/2000"
+    },
+    "angular_cells": 4096,
+    "certified_angle_range": "[0, pi/4]",
+    "minimum_angle_margin_lower_bound_exact": "1400008562357258785485458337/633825300114114700748351602688",
+    "minimum_angle_margin_lower_bound_diagnostic": 0.002208824043636629,
+    "weakest_cell_index": 2659,
+    "rest_of_source": "At theta>=pi/4 the density factor is below one; the overlap region is automatic.",
+    "scope": "The coupling uses the exact endpoint root and its exact first-moment equality, not the entire bracket. The stationary scalar component is not a finite-label factorization."
+  },
+  "floating_diagnostics": {
+    "eta": 0.14473923209514497,
+    "crossing": 0.5202879903259523,
+    "lower_mass": 0.004865062786763016,
+    "upper_mass": 0.09182425250154014,
+    "lower_mean_x": 0.20094075237836387,
+    "lower_mean_y": 0.970594290285432,
+    "upper_mean_x": 0.9965362101550085,
+    "upper_mean_y": 0.07199365411288719,
+    "stationary_mass": 0.9033106847116968,
+    "minimum_height_margin_sampled": 0.004861274517314107,
+    "minimum_at_source_x_sampled": 0.8674169455748595
+  },
+  "endpoint_feasibility_proven": true,
+  "exact_family_threshold": "eta_* = eta_B, and the endpoint is attained",
+  "finite_bridge_at_endpoint": false,
+  "logarithmic_finite_label_sufficiency_proven": false,
+  "automated_checks": {
+    "run": 6,
+    "failures": 0,
+    "errors": 0
+  }
+}

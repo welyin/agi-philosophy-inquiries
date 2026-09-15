@@ -1,0 +1,99 @@
+{
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "automated_checks": {
+    "run": 9,
+    "failures": 0,
+    "errors": 0
+  },
+  "homogeneous_test_class_threshold_approximation": 0.14473923209514583,
+  "endpoint_direction_gaps": [
+    {
+      "direction": 0,
+      "gap": 0.0
+    },
+    {
+      "direction": 0.1,
+      "gap": 0.0001310923830325164
+    },
+    {
+      "direction": 0.5,
+      "gap": 0.003027849874950724
+    },
+    {
+      "direction": 1.0,
+      "gap": 0.009358989863588109
+    },
+    {
+      "direction": 1.5707963267948966,
+      "gap": 0.0132448621878047
+    }
+  ],
+  "endpoint_halfcircle_summary": {
+    "source_mass": 1.0,
+    "target_mass": 1.0,
+    "source_mean": [
+      0.6366197724260179,
+      0.0
+    ],
+    "target_mean": [
+      0.6366197724285363,
+      0.0
+    ]
+  },
+  "weighted_sign_crossing_budget": [
+    {
+      "contrast": 0.1182,
+      "budget": 0.0011023071866458384
+    },
+    {
+      "contrast": 0.14,
+      "budget": 0.00021326551101051895
+    },
+    {
+      "contrast": 0.14473923209514583,
+      "budget": 0.0
+    }
+  ],
+  "exploratory_shifted_projection_scans": [
+    {
+      "contrast": 0.1182,
+      "directions": 33,
+      "offsets": 50,
+      "quadrature_points": 8192,
+      "smallest_sampled_gap": 0.0011182268863680841,
+      "location": {
+        "direction": 0.0,
+        "offset": 0.98
+      },
+      "status": "finite scan only; near-zero quadrature values have no certified sign"
+    },
+    {
+      "contrast": 0.14,
+      "directions": 33,
+      "offsets": 50,
+      "quadrature_points": 8192,
+      "smallest_sampled_gap": 0.0004265316358355653,
+      "location": {
+        "direction": 0.0,
+        "offset": 0.0
+      },
+      "status": "finite scan only; near-zero quadrature values have no certified sign"
+    },
+    {
+      "contrast": 0.14473923209514583,
+      "directions": 33,
+      "offsets": 50,
+      "quadrature_points": 8192,
+      "smallest_sampled_gap": 6.447539527694142e-10,
+      "location": {
+        "direction": 0.0,
+        "offset": 0.0
+      },
+      "status": "finite scan only; near-zero quadrature values have no certified sign"
+    }
+  ],
+  "scope": "For the fixed circle encoding, every finite convex positively degree-one homogeneous function passes exactly when alpha*G(eta)<=1. The proof uses planar even support-function representation and an exact directional integral. This is not full convex order. At the upper endpoint, arbitrary preparation-noncontextual models must project to the canonical angle encoding, and existence for that strength reduces to convex order of the positive halfcircles. Finite shifted-hinge scans are not sufficiency certificates."
+}

@@ -1,0 +1,45 @@
+{
+  "round": 58,
+  "scope": "Finite calibrated hypothesis controller; fresh independent trials; candidate matrix rules assumed",
+  "both_models_support": [
+    "append_only_records",
+    "prediction_action_feedback",
+    "Bayesian_learning",
+    "fixed_policy_mixtures",
+    "positive_conditional_updates",
+    "role_covariance",
+    "nonsignaling",
+    "joint_calibration"
+  ],
+  "local_tomography_entailed_by_these_checks": false,
+  "controller_examples": {
+    "real": {
+      "first_path": [
+        "joint_parity",
+        "local_z",
+        "local_z"
+      ],
+      "first_posterior": [
+        0.005192081490954153,
+        0.9948079185090459
+      ]
+    },
+    "complex": {
+      "first_path": [
+        "joint_parity",
+        "separated_y",
+        "separated_y"
+      ],
+      "first_posterior": [
+        0.005192081490954153,
+        0.9948079185090459
+      ]
+    }
+  },
+  "quantum_theory_derived_from_cognition": false,
+  "automated_checks": {
+    "run": 10,
+    "failures": 0,
+    "errors": 0
+  }
+}

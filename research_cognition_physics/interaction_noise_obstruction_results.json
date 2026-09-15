@@ -1,0 +1,124 @@
+{
+  "coefficient_order": [
+    "YI",
+    "IY",
+    "YX",
+    "YZ",
+    "XY",
+    "ZY"
+  ],
+  "half_turn_parity_table": [
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1
+    ],
+    [
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  ],
+  "family_filter_signs_before_dividing_by_four": {
+    "B": [
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "A": [
+      1,
+      -1,
+      1,
+      -1
+    ]
+  },
+  "lie_dimensions": {
+    "no_active_family": 2,
+    "one_active_family": 4,
+    "two_active_families": 6
+  },
+  "every_nonzero_interaction_has_finite_noise_bound_violation": true,
+  "necessary_scope": [
+    "Real two-rebit composite",
+    "All local SO(2) controls",
+    "Signed flow exp(-itH/2) for arbitrary real t",
+    "Independent pure ancilla reset and original fresh readout",
+    "The active family determines which system serves as input"
+  ],
+  "universal_all_GPT_no_interaction_theorem": false,
+  "quantum_theory_derived_from_cognition": false,
+  "exact_finite_target_gate_synthesis_proven": false,
+  "finite_error_formula": "||C_n-C|| <= 3*pi^2*L^2/(128*r^2*n)",
+  "effect_norm_closure_on_an_active_input": "All real 2x2 effects, using finite protocols of increasing length",
+  "finite_example": {
+    "coefficients_exact": [
+      "1/3",
+      "-1/4",
+      "2/5",
+      "-1/7",
+      "1/6",
+      "1/8"
+    ],
+    "input_system": "B",
+    "classification": {
+      "active_input_families": [
+        "A",
+        "B"
+      ],
+      "generated_lie_dimension": 6,
+      "family_norm_squares_exact": {
+        "B": "221/1225",
+        "A": "25/576"
+      },
+      "both_original_interfaces_stable": false,
+      "scope": "At least one indicated input can be amplified. This does not assert amplification of the opposite input when only one family is active."
+    },
+    "l1_norm_exact": "397/280",
+    "selected_family_norm_squared_exact": "221/1225",
+    "ideal_three_cycle_gain_lower_exact": "3239790601710942582172890201/633825300114114700748351602688",
+    "trotter_constant_upper_exact": "816882084461800636601153534411/316912650057057350374175801344",
+    "steps_per_compiled_gate": 3026,
+    "joint_flow_pulses_per_gate": 12104,
+    "ancilla_cycles": 3,
+    "total_joint_flow_pulses": 36312,
+    "compiled_gate_error_upper_exact": "48051887321282390388303149083/56410451710156208366603292639232",
+    "full_event_probability_error_upper_exact": "144155661963847171164909447249/56410451710156208366603292639232",
+    "gain_over_original_success_bound_lower_exact": "4505803174638334957764930645/1762826615942381511456352894976",
+    "gain_over_original_success_bound_lower_diagnostic": 0.002556010406179168,
+    "strict_finite_violation": true,
+    "scope": "Ideal signed control and exact local rotations; analytic approximation bounds, not hardware or floating-point error certification."
+  },
+  "finite_example_floating_diagnostics": {
+    "gate_error": 7.362868541906842e-05,
+    "three_cycle_discrimination_success": 0.9999194059079061,
+    "original_success_upper_bound": 0.9948079185090459
+  },
+  "automated_checks": {
+    "run": 12,
+    "failures": 0,
+    "errors": 0
+  }
+}

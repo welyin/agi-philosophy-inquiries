@@ -1,0 +1,118 @@
+{
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "automated_checks": {
+    "run": 9,
+    "failures": 0,
+    "errors": 0
+  },
+  "certified_witnesses": [
+    {
+      "contrast": 0.17,
+      "boundary": 8,
+      "cap": 512,
+      "gain_lower": 0.6435946585988784,
+      "visibility_lower": 0.6369114667426549,
+      "visibility_lower_exact": "2953263509119095926023680597446932100731/4636850902093064442968446484401776230400",
+      "two_over_pi_rational_upper": "225556654326271834214309451711177825927734375/354303564099854024196658098912550472278615494",
+      "exceeds_entire_disk_bound_certified": true,
+      "exceeds_four_preparation_bound_certified": false,
+      "rounding_mass_bound": 1.876731647956996e-25,
+      "coupling_gain_error_bound": 2.152915564373898e-08,
+      "floating_score": 0.7251822163630683,
+      "timeout": 1.3349370471142665e-07
+    },
+    {
+      "contrast": 0.22,
+      "boundary": 7,
+      "cap": 512,
+      "gain_lower": 0.7288806576650422,
+      "visibility_lower": 0.7213118420908564,
+      "visibility_lower_exact": "1672307732844698891974441802603088072923/2318425451046532221484223242200888115200",
+      "two_over_pi_rational_upper": "225556654326271834214309451711177825927734375/354303564099854024196658098912550472278615494",
+      "exceeds_entire_disk_bound_certified": true,
+      "exceeds_four_preparation_bound_certified": true,
+      "rounding_mass_bound": 1.6100335531198763e-25,
+      "coupling_gain_error_bound": 2.152915564373898e-08,
+      "floating_score": 0.755022255202024,
+      "timeout": 6.41814737669617e-11
+    }
+  ],
+  "bounded_stopping_rule_scan_not_global_optimization": [
+    {
+      "contrast": 0.1,
+      "boundary": 9,
+      "cap": 512,
+      "gain": 0.4576419835871682,
+      "visibility": 0.45288975464223524,
+      "four_preparation_score": 0.6601207083187182,
+      "timeout": 6.607074075399842e-05
+    },
+    {
+      "contrast": 0.12,
+      "boundary": 9,
+      "cap": 512,
+      "gain": 0.5206125808313562,
+      "visibility": 0.5152064549415715,
+      "four_preparation_score": 0.6821529890001333,
+      "timeout": 2.7249708148044557e-05
+    },
+    {
+      "contrast": 0.14,
+      "boundary": 8,
+      "cap": 512,
+      "gain": 0.5757486181154737,
+      "visibility": 0.5697699506283542,
+      "four_preparation_score": 0.7014440979028168,
+      "timeout": 9.444040787818169e-07
+    },
+    {
+      "contrast": 0.16,
+      "boundary": 8,
+      "cap": 512,
+      "gain": 0.6229381466640347,
+      "visibility": 0.6164694554214275,
+      "four_preparation_score": 0.7179548661614348,
+      "timeout": 2.66831002858201e-07
+    },
+    {
+      "contrast": 0.18,
+      "boundary": 8,
+      "cap": 512,
+      "gain": 0.6624765660952878,
+      "visibility": 0.6555973014612594,
+      "four_preparation_score": 0.7317886487954288,
+      "timeout": 6.417488862624294e-08
+    },
+    {
+      "contrast": 0.2,
+      "boundary": 7,
+      "cap": 512,
+      "gain": 0.6983894497864512,
+      "visibility": 0.6911372599150235,
+      "four_preparation_score": 0.7443539216083013,
+      "timeout": 4.0942295327853964e-10
+    },
+    {
+      "contrast": 0.25,
+      "boundary": 7,
+      "cap": 512,
+      "gain": 0.7657324245576633,
+      "visibility": 0.7577809342605248,
+      "four_preparation_score": 0.7679160186347472,
+      "timeout": 2.8916028776774754e-12
+    },
+    {
+      "contrast": 0.3,
+      "boundary": 6,
+      "cap": 512,
+      "gain": 0.8162744213708936,
+      "visibility": 0.8077980947414154,
+      "four_preparation_score": 0.785599755310614,
+      "timeout": 1.772341133373299e-17
+    }
+  ],
+  "scope": "Finite stopping at absolute accumulated count boundary, at most 512 reads and a fair timeout output. Contrast 0.17 excludes preparation-noncontextual models of the entire disk by the 2/pi bound; contrast 0.22 also violates the finite four-preparation inequality. Integer downward rounding, a rational sinc interval and a coupling bound certify the exclusions. This is not optimal over all sequential strategies and does not exclude contextual classical models."
+}
