@@ -1,0 +1,45 @@
+{
+  "round": 94,
+  "compiler": "3 pair rotations + 3 local rotations per merge",
+  "extra_control_assumption": "Explicit XY role reversal of YX, as in round 50",
+  "compressor_pulses_a_b_four_fifths": [
+    [
+      "YI",
+      1.5707963267948966
+    ],
+    [
+      "XY",
+      0.6435011087932844
+    ],
+    [
+      "YI",
+      -1.5707963267948966
+    ],
+    [
+      "IY",
+      -0.6435011087932844
+    ],
+    [
+      "XY",
+      -0.6747409422235526
+    ],
+    [
+      "YX",
+      0.6747409422235526
+    ]
+  ],
+  "overlap_update": "a,b -> a*b",
+  "persistent_memory_qubits": 1,
+  "reusable_scratch_qubits": 1,
+  "scratch_returned_pure_and_uncorrelated_for_arbitrary_old_inputs": true,
+  "entire_stream_unitary_before_readout": true,
+  "n_write_pair_pulses": "6*n-3",
+  "n_write_local_pulses": "6*n-3",
+  "same_isometry_as_one_stronger_write": true,
+  "quantum_theory_derived_from_cognition": false,
+  "automated_checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "round": 115,
+  "counterexample": {
+    "single_copy_unconditional_source": "sigma_0 for every calibration and future copy",
+    "full_past_joint_source_and_all_past_instrument_records_identical": true,
+    "aligned_future_success": {
+      "lower_exact": "476985518396154375445156791705/633825300114114700748351602688",
+      "upper_exact": "953971036792308750890313588951/1267650600228229401496703205376",
+      "diagnostic": 0.7525504556386078
+    },
+    "opposite_future_success": {
+      "lower_exact": "915833376135766542380682480089/1267650600228229401496703205376",
+      "upper_exact": "457916688067883271190341242815/633825300114114700748351602688",
+      "diagnostic": 0.7224651461300762
+    },
+    "fallback_success": {
+      "lower_exact": "934902206464037646635498034503/1267650600228229401496703205376",
+      "upper_exact": "934902206464037646635498034537/1267650600228229401496703205376",
+      "diagnostic": 0.737507800884342
+    },
+    "sign_rule": "hidden fair label Z: calibration kappa=Z*R, future kappa=alignment*Z*R",
+    "shared_source_preparation_per_copy": {
+      "pair_rotations": 30,
+      "local_rotations": 17,
+      "pure_slots": 6
+    },
+    "shared_label_extra": {
+      "pure_slots": 1,
+      "local_rotations": 1,
+      "label_retained_and_inaccessible": true
+    },
+    "full_1024_sample_cap_plus_query_budget": {
+      "pair_rotations": 35879,
+      "local_rotations": 44081,
+      "fresh_pure_slots": 7177
+    },
+    "scope": "No access to source purifiers or label; future source initially independent of old AB and H label"
+  },
+  "robust_transfer_rule": "Expand the estimated conditional parameter interval by an assumed bridge radius, then choose the worst-case positive-gain policy.",
+  "examples": [
+    {
+      "samples": 256,
+      "positive_count": 194,
+      "look": 3,
+      "assumed_transfer_radius_exact": "1/25",
+      "calibration_interval": {
+        "lower_exact": "160413618607115939681379696091/633825300114114700748351602688",
+        "upper_exact": "649037107316853453566312041153/1267650600228229401496703205376",
+        "diagnostic": 0.38254403238418766
+      },
+      "future_interval": {
+        "lower_exact": "135060606602551351651445631983/633825300114114700748351602688",
+        "upper_exact": "649037107316853453566312041153/1267650600228229401496703205376",
+        "diagnostic": 0.36254403238418764
+      },
+      "action": 1,
+      "gain_floor_on_coverage_and_bridge": {
+        "lower_exact": "3968105627955971566591717039/633825300114114700748351602688",
+        "upper_exact": "7936211255911943133183434081/1267650600228229401496703205376",
+        "diagnostic": 0.0062605667953638785
+      },
+      "transfer_radius_is_an_assumption_not_inferred_from_past_data": true
+    },
+    {
+      "samples": 256,
+      "positive_count": 194,
+      "look": 3,
+      "assumed_transfer_radius_exact": "3/50",
+      "calibration_interval": {
+        "lower_exact": "160413618607115939681379696091/633825300114114700748351602688",
+        "upper_exact": "649037107316853453566312041153/1267650600228229401496703205376",
+        "diagnostic": 0.38254403238418766
+      },
+      "future_interval": {
+        "lower_exact": "244768201200538115272957199859/1267650600228229401496703205376",
+        "upper_exact": "649037107316853453566312041153/1267650600228229401496703205376",
+        "diagnostic": 0.35254403238418763
+      },
+      "action": 0,
+      "gain_floor_on_coverage_and_bridge": {
+        "lower_exact": "0",
+        "upper_exact": "0",
+        "diagnostic": 0.0
+      },
+      "transfer_radius_is_an_assumption_not_inferred_from_past_data": true
+    }
+  ],
+  "quantum_theory_derived_from_cognition": false,
+  "automated_checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}

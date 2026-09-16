@@ -1,0 +1,85 @@
+{
+  "round": 98,
+  "forward_effect": "F_rt=(I+r*gamma_m*sqrt(1-c^2)*G+t*gamma_n*c*sqrt(1-d^2)*H)/4",
+  "universal_joint_unbiased_marginal_condition": "x^2+y^2<=1 (necessary and sufficient)",
+  "ideal_sequential_disk_covered": true,
+  "original_joint_hidden_eigenvalues_assumed": false,
+  "examples": [
+    {
+      "c_exact": "4/5",
+      "d_exact": "4/5",
+      "G_read_count": 1,
+      "H_read_count": 1,
+      "G_calibration_success": {
+        "lower_exact": "505085716525759191553642321229/633825300114114700748351602688",
+        "upper_exact": "1010171433051518383107284642499/1267650600228229401496703205376",
+        "diagnostic": 0.7968847511054276
+      },
+      "H_calibration_success": {
+        "lower_exact": "934902206464037646635498034503/1267650600228229401496703205376",
+        "upper_exact": "934902206464037646635498034537/1267650600228229401496703205376",
+        "diagnostic": 0.737507800884342
+      },
+      "ideal_joint_sharpness_squared_sum_exact": "369/625",
+      "finite_joint_sharpness_squared_sum": {
+        "lower_exact": "183239541930842414893080658189/316912650057057350374175801344",
+        "upper_exact": "91619770965421207446540329115/158456325028528675187087900672",
+        "diagnostic": 0.5782020436793915
+      },
+      "interpretation": "Two separate eigenstate calibration ensembles; not simultaneous hidden G,H values"
+    },
+    {
+      "c_exact": "4/5",
+      "d_exact": "4/5",
+      "G_read_count": 3,
+      "H_read_count": 3,
+      "G_calibration_success": {
+        "lower_exact": "507029590886785757102946055369/633825300114114700748351602688",
+        "upper_exact": "507029590886785757102946055371/633825300114114700748351602688",
+        "diagnostic": 0.7999516440815782
+      },
+      "H_calibration_success": {
+        "lower_exact": "938012405441680151514384009127/1267650600228229401496703205376",
+        "upper_exact": "938012405441680151514384009131/1267650600228229401496703205376",
+        "diagnostic": 0.7399613152652625
+      },
+      "ideal_joint_sharpness_squared_sum_exact": "369/625",
+      "finite_joint_sharpness_squared_sum": {
+        "lower_exact": "187044915820409864319296823185/316912650057057350374175801344",
+        "upper_exact": "374089831640819728638593646379/633825300114114700748351602688",
+        "diagnostic": 0.5902096864443059
+      },
+      "interpretation": "Two separate eigenstate calibration ensembles; not simultaneous hidden G,H values"
+    },
+    {
+      "c_exact": "4/5",
+      "d_exact": "4/5",
+      "G_read_count": 5,
+      "H_read_count": 5,
+      "G_calibration_success": {
+        "lower_exact": "507059711941852516039551654795/633825300114114700748351602688",
+        "upper_exact": "1014119423883705032079103309593/1267650600228229401496703205376",
+        "diagnostic": 0.7999991667271106
+      },
+      "H_calibration_success": {
+        "lower_exact": "938060599129786965812952968209/1267650600228229401496703205376",
+        "upper_exact": "234515149782446741453238242053/316912650057057350374175801344",
+        "diagnostic": 0.7399993333816884
+      },
+      "ideal_joint_sharpness_squared_sum_exact": "369/625",
+      "finite_joint_sharpness_squared_sum": {
+        "lower_exact": "748416756788134920508341198679/1267650600228229401496703205376",
+        "upper_exact": "748416756788134920508341198689/1267650600228229401496703205376",
+        "diagnostic": 0.5903967202424619
+      },
+      "interpretation": "Two separate eigenstate calibration ensembles; not simultaneous hidden G,H values"
+    }
+  ],
+  "universal_equal_resource_optimality_claimed": false,
+  "quantum_theory_derived_from_cognition": false,
+  "automated_checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}

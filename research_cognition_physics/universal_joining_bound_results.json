@@ -1,0 +1,77 @@
+{
+  "round": 126,
+  "assumptions": {
+    "standard_encoding": "E(rho)=real_lift(rho)/2",
+    "independent_inputs": true,
+    "one_copy_per_unknown_state": true,
+    "all_complex_density_inputs_in_each_dimension_at_least_two": true,
+    "allowed_success_map": "Arbitrary real completely positive trace-nonincreasing map",
+    "fixed_input_independent_auxiliaries_and_finite_adaptation_included": true,
+    "success_target": "Exactly E(tensor_i rho_i), after allowed decoding and correction"
+  },
+  "sharp_probability_bound_exact": "2^(1-n)",
+  "one_new_subject_into_one_existing_unknown_cluster_exact": "1/2",
+  "deterministic_universal_exact_join_exists_under_these_assumptions": false,
+  "proof": "Every successful Kraus operator kills all mixed orientation sectors",
+  "finite_qubit_certificate": {
+    "product_preparations": 16,
+    "integer_equations": 2048,
+    "real_unknown_kraus_entries": 128,
+    "prime_modulus": 1009,
+    "rank_mod_prime": 126,
+    "exact_rational_rank": 126,
+    "exact_kernel_dimension": 2,
+    "kernel_basis": "C, J_out C; C=sqrt(2) K_plus is integer",
+    "kernel_gram_exact": [
+      [
+        16,
+        0
+      ],
+      [
+        0,
+        16
+      ]
+    ],
+    "probability_bound_exact": "1/2",
+    "rank_certificate_is_not_a_floating_svd": true
+  },
+  "rows": [
+    {
+      "independent_clusters": 1,
+      "success_upper_bound_exact": "1"
+    },
+    {
+      "independent_clusters": 2,
+      "success_upper_bound_exact": "1/2"
+    },
+    {
+      "independent_clusters": 3,
+      "success_upper_bound_exact": "1/4"
+    },
+    {
+      "independent_clusters": 4,
+      "success_upper_bound_exact": "1/8"
+    },
+    {
+      "independent_clusters": 8,
+      "success_upper_bound_exact": "1/128"
+    },
+    {
+      "independent_clusters": 16,
+      "success_upper_bound_exact": "1/32768"
+    }
+  ],
+  "arbitrary_protocol_retrying_the_same_input_is_covered": true,
+  "unknown_input_correlated_resource_or_extra_copies_covered": false,
+  "approximate_joining_optimum_solved": false,
+  "arbitrary_alternative_encodings_covered": false,
+  "gate_communication_or_time_lower_bound_claimed": false,
+  "attainment_uses_ideal_real_control_and_sector_readout": true,
+  "attainment_compiled_into_old_noisy_primitives": false,
+  "quantum_theory_derived_from_cognition": false,
+  "automated_checks": {
+    "run": 9,
+    "failures": 0,
+    "errors": 0
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "round": 80,
+  "real_block_dimensions": [
+    {
+      "d": 2,
+      "symmetric": 3,
+      "skew": 1
+    },
+    {
+      "d": 4,
+      "symmetric": 10,
+      "skew": 6
+    },
+    {
+      "d": 8,
+      "symmetric": 36,
+      "skew": 28
+    },
+    {
+      "d": 16,
+      "symmetric": 136,
+      "skew": 120
+    }
+  ],
+  "composition_rule": "(K,L)*(M,N)=(KM+LN,KN+LM)",
+  "same_rule_after_regrouping_forces_complex_structure": false,
+  "complete_real_operation_interface": "Symmetric-sector map plus antisymmetric-sector map",
+  "one_additional_rebit_suffices_to_probe_a_missing_skew_direction": true,
+  "four_dimensional_block_interface_sizes": {
+    "symmetric_map": [
+      10,
+      10
+    ],
+    "skew_map": [
+      6,
+      6
+    ]
+  },
+  "local_only_dimension_deficit": "L_A*L_B",
+  "local_tomography_alone_selects_complex_over_classical": false,
+  "scope": "Declared real Kraus framework and usual tensor products; no cognitive derivation of these inputs",
+  "quantum_theory_derived_from_cognition": false,
+  "automated_checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}

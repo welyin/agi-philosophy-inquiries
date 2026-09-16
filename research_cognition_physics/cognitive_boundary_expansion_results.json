@@ -1,0 +1,58 @@
+{
+  "round": 84,
+  "candidate_principle": "Faithful embedding of old protocols, plus a strict gain on at least one declared finite task",
+  "every_possible_combination_must_have_strict_gain": false,
+  "old_protocol_embedding": "rho -> rho tensor sigma; K -> K tensor I; effect -> effect tensor I",
+  "uniform_four_bell_input_ideal_separable_success_upper_exact": "1/2",
+  "finite_real_joint_decoder": [
+    {
+      "pointer_reads_per_bit": 1,
+      "old_readouts": 2,
+      "joint_inverse_bell_gates": 1,
+      "success_interval": [
+        0.9896427947283004,
+        0.9896427947283004
+      ],
+      "success_lower_exact": "1254521282748872455953902714155/1267650600228229401496703205376",
+      "gain_over_ideal_separable_bound_lower_exact": "620695982634757755205551111467/1267650600228229401496703205376",
+      "strictly_beats_one_half": true,
+      "scope": "One promised uniform Bell input; exact old control; independent old pointer resets when count>1"
+    },
+    {
+      "pointer_reads_per_bit": 3,
+      "old_readouts": 6,
+      "joint_inverse_bell_gates": 1,
+      "success_interval": [
+        0.999838820100524,
+        0.999838820100524
+      ],
+      "success_lower_exact": "1267446280431914004780538746987/1267650600228229401496703205376",
+      "gain_over_ideal_separable_bound_lower_exact": "633620980317799304032187144299/1267650600228229401496703205376",
+      "strictly_beats_one_half": true,
+      "scope": "One promised uniform Bell input; exact old control; independent old pointer resets when count>1"
+    },
+    {
+      "pointer_reads_per_bit": 5,
+      "old_readouts": 10,
+      "joint_inverse_bell_gates": 1,
+      "success_interval": [
+        0.9999972224256305,
+        0.9999972224256305
+      ],
+      "success_lower_exact": "1267647079234412730043120549417/1267650600228229401496703205376",
+      "gain_over_ideal_separable_bound_lower_exact": "633821779120298029294768946729/1267650600228229401496703205376",
+      "strictly_beats_one_half": true,
+      "scope": "One promised uniform Bell input; exact old control; independent old pointer resets when count>1"
+    }
+  ],
+  "strict_task_gain_requires_new_state_coordinates": false,
+  "preservation_plus_strict_gain_alone_selects_complex_structure": false,
+  "additional_shared_entanglement_for_separated_baseline": false,
+  "postselected_trial_outputs": false,
+  "quantum_theory_derived_from_cognition": false,
+  "automated_checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "round": 110,
+  "source_parameterization": "kappa=tau*product_i sqrt(1-r_i^2)",
+  "source_preparation": "Pure biased product, real sign gate, two coherent parity records, one coherent phase record",
+  "source_pair_rotations": 29,
+  "source_local_rotations": 15,
+  "source_pure_slots": 6,
+  "messages_after_actual_E0_M_inverse": "J_r(omega)=Lambda_(B-r*gamma*kappa*s1*s2)(omega)/2",
+  "finite_examples": [
+    {
+      "biases_exact": [
+        "3/5",
+        "3/5",
+        "3/5"
+      ],
+      "kappa_exact": "0",
+      "gate_cosines_exact": [
+        "9/10",
+        "9/10",
+        "9/10"
+      ],
+      "finite_H_success": {
+        "lower_exact": "938665667793411683459087364901/1267650600228229401496703205376",
+        "upper_exact": "117333208474176460432385920617/158456325028528675187087900672",
+        "diagnostic": 0.7404766483953963
+      },
+      "independent_source_same_recovery_success": {
+        "lower_exact": "938665667793411683459087364901/1267650600228229401496703205376",
+        "upper_exact": "117333208474176460432385920617/158456325028528675187087900672",
+        "diagnostic": 0.7404766483953963
+      },
+      "strict_success_gain": {
+        "lower_exact": "-1/1267650600228229401496703205376",
+        "upper_exact": "1/1267650600228229401496703205376",
+        "diagnostic": 0.0
+      },
+      "resource_budget": {
+        "scope": "Fixed compiler including source, old MN writes, three couplings, E0-M inverse, worst joint query branch",
+        "source_pair_rotations": 29,
+        "source_local_rotations": 15,
+        "pair_rotations": 38,
+        "extra_local_rotations": 46,
+        "global_extra_quantum_slots_peak": 8,
+        "initial_pure_preparations": 8,
+        "source_purifier_slots_retained": 3,
+        "environment_readouts": 1,
+        "final_H_readouts": 1,
+        "pointer_resets": 0,
+        "return_classical_message_bits": 1,
+        "coherent_return_E0_M_pair_gates": 1,
+        "postselection": false,
+        "source_uses_role_reversed_XY": true,
+        "transport_and_routing_included": false
+      },
+      "finite_same_resource_global_optimality_proved": false
+    },
+    {
+      "biases_exact": [
+        "3/5",
+        "3/5",
+        "3/5"
+      ],
+      "kappa_exact": "64/125",
+      "gate_cosines_exact": [
+        "9/10",
+        "9/10",
+        "9/10"
+      ],
+      "finite_H_success": {
+        "lower_exact": "119362415748691237363736649255/158456325028528675187087900672",
+        "upper_exact": "954899325989529898909893194079/1267650600228229401496703205376",
+        "diagnostic": 0.7532827466950346
+      },
+      "independent_source_same_recovery_success": {
+        "lower_exact": "938665667793411683459087364901/1267650600228229401496703205376",
+        "upper_exact": "117333208474176460432385920617/158456325028528675187087900672",
+        "diagnostic": 0.7404766483953963
+      },
+      "strict_success_gain": {
+        "lower_exact": "8116829098059107725402914569/633825300114114700748351602688",
+        "upper_exact": "2029207274514776931350728643/158456325028528675187087900672",
+        "diagnostic": 0.012806098299638313
+      },
+      "resource_budget": {
+        "scope": "Fixed compiler including source, old MN writes, three couplings, E0-M inverse, worst joint query branch",
+        "source_pair_rotations": 29,
+        "source_local_rotations": 15,
+        "pair_rotations": 38,
+        "extra_local_rotations": 46,
+        "global_extra_quantum_slots_peak": 8,
+        "initial_pure_preparations": 8,
+        "source_purifier_slots_retained": 3,
+        "environment_readouts": 1,
+        "final_H_readouts": 1,
+        "pointer_resets": 0,
+        "return_classical_message_bits": 1,
+        "coherent_return_E0_M_pair_gates": 1,
+        "postselection": false,
+        "source_uses_role_reversed_XY": true,
+        "transport_and_routing_included": false
+      },
+      "finite_same_resource_global_optimality_proved": false
+    },
+    {
+      "biases_exact": [
+        "3/5",
+        "3/5",
+        "3/5"
+      ],
+      "kappa_exact": "64/125",
+      "gate_cosines_exact": [
+        "9/10",
+        "9/10",
+        "9/10"
+      ],
+      "finite_H_success": {
+        "lower_exact": "238771615610283672736540518013/316912650057057350374175801344",
+        "upper_exact": "955086462441134690946162072089/1267650600228229401496703205376",
+        "diagnostic": 0.7534303713256474
+      },
+      "independent_source_same_recovery_success": {
+        "lower_exact": "938665667793411683459087364901/1267650600228229401496703205376",
+        "upper_exact": "117333208474176460432385920617/158456325028528675187087900672",
+        "diagnostic": 0.7404766483953963
+      },
+      "strict_success_gain": {
+        "lower_exact": "8210397323861503743537353575/633825300114114700748351602688",
+        "upper_exact": "8210397323861503743537353577/633825300114114700748351602688",
+        "diagnostic": 0.012953722930251117
+      },
+      "resource_budget": {
+        "scope": "Fixed compiler including source, old MN writes, three couplings, E0-M inverse, worst joint query branch",
+        "source_pair_rotations": 29,
+        "source_local_rotations": 15,
+        "pair_rotations": 41,
+        "extra_local_rotations": 56,
+        "global_extra_quantum_slots_peak": 9,
+        "initial_pure_preparations": 9,
+        "source_purifier_slots_retained": 3,
+        "environment_readouts": 3,
+        "final_H_readouts": 1,
+        "pointer_resets": 2,
+        "return_classical_message_bits": 1,
+        "coherent_return_E0_M_pair_gates": 1,
+        "postselection": false,
+        "source_uses_role_reversed_XY": true,
+        "transport_and_routing_included": false
+      },
+      "finite_same_resource_global_optimality_proved": false
+    },
+    {
+      "biases_exact": [
+        "3/5",
+        "3/5",
+        "3/5"
+      ],
+      "kappa_exact": "64/125",
+      "gate_cosines_exact": [
+        "9/10",
+        "9/10",
+        "9/10"
+      ],
+      "finite_H_success": {
+        "lower_exact": "958405169779865109972912763455/1267650600228229401496703205376",
+        "upper_exact": "958405169779865109972912763461/1267650600228229401496703205376",
+        "diagnostic": 0.756048369801042
+      },
+      "independent_source_same_recovery_success": {
+        "lower_exact": "14715855379035542494514990847/19807040628566084398385987584",
+        "upper_exact": "235453686064568679912239853553/316912650057057350374175801344",
+        "diagnostic": 0.7429608317060783
+      },
+      "strict_success_gain": {
+        "lower_exact": "8295212760795195161976674623/633825300114114700748351602688",
+        "upper_exact": "16590425521590390323953349249/1267650600228229401496703205376",
+        "diagnostic": 0.013087538094963573
+      },
+      "resource_budget": {
+        "scope": "Fixed compiler including source, old MN writes, three couplings, E0-M inverse, worst joint query branch",
+        "source_pair_rotations": 29,
+        "source_local_rotations": 15,
+        "pair_rotations": 44,
+        "extra_local_rotations": 65,
+        "global_extra_quantum_slots_peak": 10,
+        "initial_pure_preparations": 10,
+        "source_purifier_slots_retained": 3,
+        "environment_readouts": 3,
+        "final_H_readouts": 3,
+        "pointer_resets": 4,
+        "return_classical_message_bits": 1,
+        "coherent_return_E0_M_pair_gates": 1,
+        "postselection": false,
+        "source_uses_role_reversed_XY": true,
+        "transport_and_routing_included": false
+      },
+      "finite_same_resource_global_optimality_proved": false
+    }
+  ],
+  "quantum_theory_derived_from_cognition": false,
+  "automated_checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}

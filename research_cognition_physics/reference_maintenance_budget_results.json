@@ -1,0 +1,84 @@
+{
+  "round": 124,
+  "maintenance_certificate": {
+    "target_correlation_for_original_finite_score": {
+      "lower_exact": "1267580451768131740236753099121/1267650600228229401496703205376",
+      "upper_exact": "316895112942032935059188275767/316912650057057350374175801344",
+      "diagnostic": 0.9999446626222674
+    },
+    "storage_noise_rows": [
+      {
+        "local_Z_flip_probability_per_intertask_cycle": "0",
+        "largest_certified_age": null,
+        "task_span": null
+      },
+      {
+        "local_Z_flip_probability_per_intertask_cycle": "1/10000000",
+        "largest_certified_age": 131,
+        "task_span": 132,
+        "last_valid_correlation": {
+          "lower_exact": "1267580656258670817283833790289/1267650600228229401496703205376",
+          "upper_exact": "1267580656258670817283833790553/1267650600228229401496703205376",
+          "diagnostic": 0.9999448239368592
+        },
+        "first_invalid_correlation": {
+          "lower_exact": "316895037306614754260439305897/316912650057057350374175801344",
+          "upper_exact": "633790074613229508520878611927/633825300114114700748351602688",
+          "diagnostic": 0.9999444239589697
+        }
+      },
+      {
+        "local_Z_flip_probability_per_intertask_cycle": "1/1000000",
+        "largest_certified_age": 13,
+        "task_span": 14,
+        "last_valid_correlation": {
+          "lower_exact": "1267581163231762545023936949903/1267650600228229401496703205376",
+          "upper_exact": "1267581163231762545023936949931/1267650600228229401496703205376",
+          "diagnostic": 0.9999452238681114
+        },
+        "first_invalid_correlation": {
+          "lower_exact": "633788046456089971313341952167/633825300114114700748351602688",
+          "upper_exact": "316894023228044985656670976091/316912650057057350374175801344",
+          "diagnostic": 0.9999412240912157
+        }
+      },
+      {
+        "local_Z_flip_probability_per_intertask_cycle": "1/100000",
+        "largest_certified_age": 1,
+        "task_span": 2,
+        "last_valid_correlation": {
+          "lower_exact": "39612386682995541377639021809/39614081257132168796771975168",
+          "upper_exact": "316899093463964331021112174473/316912650057057350374175801344",
+          "diagnostic": 0.9999572229348037
+        },
+        "first_invalid_correlation": {
+          "lower_exact": "1267545670507941639333828249573/1267650600228229401496703205376",
+          "upper_exact": "1267545670507941639333828249579/1267650600228229401496703205376",
+          "diagnostic": 0.9999172250458692
+        }
+      }
+    ],
+    "example_1000_tasks": {
+      "task_trials": 1000,
+      "tasks_per_reference_block": 14,
+      "alignment_blocks": 72,
+      "fresh_target_Bell_pairs": 2000,
+      "reference_link_pairs": 144,
+      "reference_source_rebits_allocated_and_retained": 288,
+      "total_original_readouts": 20360,
+      "alignment_message_bits": 72,
+      "pair_rotations_after_source_preparation_upper": 23504,
+      "source_preparation_classical_audit_and_memory_maintenance_costs_separate": true
+    },
+    "noise_and_exact_resets_are_declared_assumptions": true,
+    "criterion": "each preplanned task's unconditional network score at least the round 69 value",
+    "same_initial_correlation_and_local_noise_give_same_real_complex_score_decay": true,
+    "does_not_certify_all_conditional_histories_or_iid_full_records": true
+  },
+  "automated_checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  },
+  "quantum_theory_derived_from_cognition": false
+}

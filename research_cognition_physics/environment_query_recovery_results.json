@@ -1,0 +1,222 @@
+{
+  "round": 102,
+  "environment_access_assumption": "Retain and control the pure initialized environment in the round 100 dilation",
+  "message_probability": "p_r=(1+r*lam*gamma)/2",
+  "signed_phase_weight": "a_r=(lam+r*gamma)/2",
+  "ideal_H_distinguishability_for_fixed_environment_message": "w*sum_r max(c*p_r,abs(a_r))",
+  "query_feedback": "Read N if c*p_r>=abs(a_r); otherwise read joint H axis and multiply by sign(a_r)",
+  "examples": [
+    {
+      "c_exact": "4/5",
+      "d_exact": "4/5",
+      "retained_coherence_exact": "0",
+      "environment_readouts": 1,
+      "final_H_readouts": 1,
+      "environment_classical_message_bits": 1,
+      "remaining_memory_ideal_recovery_factor": {
+        "lower_exact": "156810888723918200982888766571/158456325028528675187087900672",
+        "upper_exact": "313621777447836401965777533175/316912650057057350374175801344",
+        "diagnostic": 0.9896158370180917
+      },
+      "finite_H_success": {
+        "lower_exact": "125782924183685682840769727315/158456325028528675187087900672",
+        "upper_exact": "1006263393469485462726157818601/1267650600228229401496703205376",
+        "diagnostic": 0.7938018514631054
+      },
+      "without_environment_success": {
+        "lower_exact": "934902206464037646635498034503/1267650600228229401496703205376",
+        "upper_exact": "934902206464037646635498034537/1267650600228229401496703205376",
+        "diagnostic": 0.737507800884342
+      },
+      "strict_gain": {
+        "lower_exact": "4460074187840488505666236501/79228162514264337593543950336",
+        "upper_exact": "71361187005447816090659784065/1267650600228229401496703205376",
+        "diagnostic": 0.056294050578763466
+      },
+      "choices": [
+        {
+          "environment_sign": -1,
+          "strategy_certificate": "joint_negative",
+          "probability": {
+            "lower_exact": "1/2",
+            "upper_exact": "1/2",
+            "diagnostic": 0.5
+          }
+        },
+        {
+          "environment_sign": 1,
+          "strategy_certificate": "joint_positive",
+          "probability": {
+            "lower_exact": "1/2",
+            "upper_exact": "1/2",
+            "diagnostic": 0.5
+          }
+        }
+      ],
+      "all_environment_histories_optimized": false,
+      "optimality_scope": "Fixed two-valued environment message; ideal final memory discrimination",
+      "full_quantum_memory_state_restored_by_this_record_only_protocol": false
+    },
+    {
+      "c_exact": "4/5",
+      "d_exact": "4/5",
+      "retained_coherence_exact": "0",
+      "environment_readouts": 3,
+      "final_H_readouts": 1,
+      "environment_classical_message_bits": 1,
+      "remaining_memory_ideal_recovery_factor": {
+        "lower_exact": "633723136099094689095900846751/633825300114114700748351602688",
+        "upper_exact": "316861568049547344547950423377/316912650057057350374175801344",
+        "diagnostic": 0.9998388136052606
+      },
+      "finite_H_success": {
+        "lower_exact": "3945745199903031595593036395/4951760157141521099596496896",
+        "upper_exact": "1010110771175176088471817317163/1267650600228229401496703205376",
+        "diagnostic": 0.7968368973227438
+      },
+      "without_environment_success": {
+        "lower_exact": "934902206464037646635498034503/1267650600228229401496703205376",
+        "upper_exact": "934902206464037646635498034537/1267650600228229401496703205376",
+        "diagnostic": 0.737507800884342
+      },
+      "strict_gain": {
+        "lower_exact": "9401070588892305229539910327/158456325028528675187087900672",
+        "upper_exact": "75208564711138441836319282627/1267650600228229401496703205376",
+        "diagnostic": 0.059329096438401716
+      },
+      "choices": [
+        {
+          "environment_sign": -1,
+          "strategy_certificate": "joint_negative",
+          "probability": {
+            "lower_exact": "1/2",
+            "upper_exact": "1/2",
+            "diagnostic": 0.5
+          }
+        },
+        {
+          "environment_sign": 1,
+          "strategy_certificate": "joint_positive",
+          "probability": {
+            "lower_exact": "1/2",
+            "upper_exact": "1/2",
+            "diagnostic": 0.5
+          }
+        }
+      ],
+      "all_environment_histories_optimized": false,
+      "optimality_scope": "Fixed two-valued environment message; ideal final memory discrimination",
+      "full_quantum_memory_state_restored_by_this_record_only_protocol": false
+    },
+    {
+      "c_exact": "4/5",
+      "d_exact": "4/5",
+      "retained_coherence_exact": "0",
+      "environment_readouts": 3,
+      "final_H_readouts": 3,
+      "environment_classical_message_bits": 1,
+      "remaining_memory_ideal_recovery_factor": {
+        "lower_exact": "633723136099094689095900846751/633825300114114700748351602688",
+        "upper_exact": "316861568049547344547950423377/316912650057057350374175801344",
+        "diagnostic": 0.9998388136052606
+      },
+      "finite_H_success": {
+        "lower_exact": "506998946622514529560453060679/633825300114114700748351602688",
+        "upper_exact": "253499473311257264780226530341/316912650057057350374175801344",
+        "diagnostic": 0.7999032959574726
+      },
+      "without_environment_success": {
+        "lower_exact": "938012405441680151514384009127/1267650600228229401496703205376",
+        "upper_exact": "938012405441680151514384009131/1267650600228229401496703205376",
+        "diagnostic": 0.7399613152652625
+      },
+      "strict_gain": {
+        "lower_exact": "37992743901674453803261056115/633825300114114700748351602688",
+        "upper_exact": "37992743901674453803261056117/633825300114114700748351602688",
+        "diagnostic": 0.05994198069220997
+      },
+      "choices": [
+        {
+          "environment_sign": -1,
+          "strategy_certificate": "joint_negative",
+          "probability": {
+            "lower_exact": "1/2",
+            "upper_exact": "1/2",
+            "diagnostic": 0.5
+          }
+        },
+        {
+          "environment_sign": 1,
+          "strategy_certificate": "joint_positive",
+          "probability": {
+            "lower_exact": "1/2",
+            "upper_exact": "1/2",
+            "diagnostic": 0.5
+          }
+        }
+      ],
+      "all_environment_histories_optimized": false,
+      "optimality_scope": "Fixed two-valued environment message; ideal final memory discrimination",
+      "full_quantum_memory_state_restored_by_this_record_only_protocol": false
+    },
+    {
+      "c_exact": "4/5",
+      "d_exact": "4/5",
+      "retained_coherence_exact": "19/20",
+      "environment_readouts": 1,
+      "final_H_readouts": 1,
+      "environment_classical_message_bits": 1,
+      "remaining_memory_ideal_recovery_factor": {
+        "lower_exact": "78733295523416387453324282535/79228162514264337593543950336",
+        "upper_exact": "157466591046832774906648565085/158456325028528675187087900672",
+        "diagnostic": 0.993753900442171
+      },
+      "finite_H_success": {
+        "lower_exact": "1007820737636987414249754758371/1267650600228229401496703205376",
+        "upper_exact": "62988796102311713390609672403/79228162514264337593543950336",
+        "diagnostic": 0.7950303793928217
+      },
+      "without_environment_success": {
+        "lower_exact": "991354126404648198989337990469/1267650600228229401496703205376",
+        "upper_exact": "991354126404648198989337990509/1267650600228229401496703205376",
+        "diagnostic": 0.7820405135501561
+      },
+      "strict_gain": {
+        "lower_exact": "16466611232339215260416767901/1267650600228229401496703205376",
+        "upper_exact": "4116652808084803815104191985/316912650057057350374175801344",
+        "diagnostic": 0.012989865842665593
+      },
+      "choices": [
+        {
+          "environment_sign": -1,
+          "strategy_certificate": "second_only",
+          "probability": {
+            "lower_exact": "37943922963225537013374289655/1267650600228229401496703205376",
+            "upper_exact": "37943922963225537013374289719/1267650600228229401496703205376",
+            "diagnostic": 0.029932477416406433
+          }
+        },
+        {
+          "environment_sign": 1,
+          "strategy_certificate": "joint_positive",
+          "probability": {
+            "lower_exact": "1229706677265003864483328915657/1267650600228229401496703205376",
+            "upper_exact": "1229706677265003864483328915721/1267650600228229401496703205376",
+            "diagnostic": 0.9700675225835935
+          }
+        }
+      ],
+      "all_environment_histories_optimized": false,
+      "optimality_scope": "Fixed two-valued environment message; ideal final memory discrimination",
+      "full_quantum_memory_state_restored_by_this_record_only_protocol": false
+    }
+  ],
+  "arbitrary_environment_or_feedback_optimized": false,
+  "earlier_classical_G_record_can_be_changed_into_eraser_record_after_reading": false,
+  "quantum_theory_derived_from_cognition": false,
+  "automated_checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "round": 121,
+  "certificate": {
+    "private_complex_bias": {
+      "lower_exact": "158451940689117270691315295401/158456325028528675187087900672",
+      "upper_exact": "1267615525512938165530522365181/1267650600228229401496703205376",
+      "diagnostic": 0.999972330928345
+    },
+    "real_alignment_visibility": {
+      "lower_exact": "316911769807991942775626422419/316912650057057350374175801344",
+      "upper_exact": "633823539615983885551252844839/633825300114114700748351602688",
+      "diagnostic": 0.9999972224237018
+    },
+    "target_reference_correlation": {
+      "lower_exact": "1267580451768131740236753099121/1267650600228229401496703205376",
+      "upper_exact": "316895112942032935059188275767/316912650057057350374175801344",
+      "diagnostic": 0.9999446626222674
+    },
+    "required_message_distinguishability": {
+      "lower_exact": "158447996572416249030148902279/158456325028528675187087900672",
+      "upper_exact": "633791986289664996120595611091/633825300114114700748351602688",
+      "diagnostic": 0.9999474400525765
+    },
+    "max_symmetric_channel_error": {
+      "lower_exact": "33313824449704627755991597/1267650600228229401496703205376",
+      "upper_exact": "8328456112426156938998393/316912650057057350374175801344",
+      "diagnostic": 2.627997371176787e-05
+    },
+    "minimum_message_information_bits": {
+      "lower_exact": "633547823394952864838291624119/633825300114114700748351602688",
+      "upper_exact": "633547823394952864838291639255/633825300114114700748351602688",
+      "diagnostic": 0.9995622189282884
+    },
+    "independent_1000_trial_information_bits_lower": "79193477924369108104786453014875/79228162514264337593543950336",
+    "independent_1000_trial_fixed_length_bits_necessary": 1000,
+    "frontier_examples": [
+      {
+        "required_message_distinguishability": "0",
+        "minimum_information_bits": {
+          "lower_exact": "0",
+          "upper_exact": "0",
+          "diagnostic": 0.0
+        }
+      },
+      {
+        "required_message_distinguishability": "1/2",
+        "minimum_information_bits": {
+          "lower_exact": "239233398805577430289183201259/1267650600228229401496703205376",
+          "upper_exact": "119616699402788715144591600781/633825300114114700748351602688",
+          "diagnostic": 0.18872187554086714
+        }
+      },
+      {
+        "required_message_distinguishability": "9/10",
+        "minimum_information_bits": {
+          "lower_exact": "226149831409162284794787757691/316912650057057350374175801344",
+          "upper_exact": "3533591115768160699918558715/4951760157141521099596496896",
+          "diagnostic": 0.7136030428840439
+        }
+      },
+      {
+        "required_message_distinguishability": "99/100",
+        "minimum_information_bits": {
+          "lower_exact": "605040319116057470280410506665/633825300114114700748351602688",
+          "upper_exact": "1210080638232114940560821013567/1267650600228229401496703205376",
+          "diagnostic": 0.9545853076662059
+        }
+      },
+      {
+        "required_message_distinguishability": "1",
+        "minimum_information_bits": {
+          "lower_exact": "1",
+          "upper_exact": "1",
+          "diagnostic": 1.0
+        }
+      }
+    ],
+    "all_network_statistics_compared": 288,
+    "total_cost_real_greater_than_complex_proved": false,
+    "scope": "fixed sources, alignment, target effects; arbitrary classical channels and real reference CPTP corrections"
+  },
+  "quantum_theory_derived_from_cognition": false,
+  "automated_checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}

@@ -1,0 +1,638 @@
+{
+  "round": 114,
+  "controller": "At looks 64,128,256,512,1024 certify kappa>=1/5 or kappa<=-1/5, otherwise continue; timeout uses N only.",
+  "examples": [
+    {
+      "true_kappa_for_evaluation_only_exact": "64/125",
+      "calibration_response_strength_exact": "1",
+      "activation_margin_exact": "1/5",
+      "prespecified_sample_looks": [
+        64,
+        128,
+        256,
+        512,
+        1024
+      ],
+      "positive_policy_probability": {
+        "lower_exact": "1267650596803044189117926530921/1267650600228229401496703205376",
+        "upper_exact": "1267650596803044189117926827413/1267650600228229401496703205376",
+        "diagnostic": 0.9999999972980053
+      },
+      "negative_policy_probability": {
+        "lower_exact": "17901319/1267650600228229401496703205376",
+        "upper_exact": "17970481/1267650600228229401496703205376",
+        "diagnostic": 1.4148930309953546e-23
+      },
+      "timeout_fallback_probability": {
+        "lower_exact": "1712592606189379284259/633825300114114700748351602688",
+        "upper_exact": "1712592606189379466695/633825300114114700748351602688",
+        "diagnostic": 2.7019947071867312e-09
+      },
+      "wrong_sign_or_null_activation_probability": {
+        "lower_exact": "17901319/1267650600228229401496703205376",
+        "upper_exact": "17970481/1267650600228229401496703205376",
+        "diagnostic": 1.4148930309953546e-23
+      },
+      "expected_independent_samples": {
+        "lower_exact": "5389690144718618147521357574913/19807040628566084398385987584",
+        "upper_exact": "2694845072359309073760684162685/9903520314283042199192993792",
+        "diagnostic": 272.1098141711037
+      },
+      "learned_future_H_success": {
+        "lower_exact": "476985518396154375445156791705/633825300114114700748351602688",
+        "upper_exact": "953971036792308750890313588951/1267650600228229401496703205376",
+        "diagnostic": 0.7525504556386078
+      },
+      "fallback_H_success": {
+        "lower_exact": "934902206464037646635498034503/1267650600228229401496703205376",
+        "upper_exact": "934902206464037646635498034537/1267650600228229401496703205376",
+        "diagnostic": 0.737507800884342
+      },
+      "unconditional_H_success_gain": {
+        "lower_exact": "19068830328271104254815548907/1267650600228229401496703205376",
+        "upper_exact": "9534415164135552127407777207/633825300114114700748351602688",
+        "diagnostic": 0.015042654754265828
+      },
+      "stop_distribution": [
+        {
+          "samples": 64,
+          "positive": {
+            "lower_exact": "9140374392183875905827639509/158456325028528675187087900672",
+            "upper_exact": "73122995137471007246621116771/1267650600228229401496703205376",
+            "diagnostic": 0.05768387213661702
+          },
+          "negative": {
+            "lower_exact": "17901319/1267650600228229401496703205376",
+            "upper_exact": "17901443/1267650600228229401496703205376",
+            "diagnostic": 1.4121699620366222e-23
+          }
+        },
+        {
+          "samples": 128,
+          "positive": {
+            "lower_exact": "278269350782751936981753862555/1267650600228229401496703205376",
+            "upper_exact": "8695917211960998030679808341/39614081257132168796771975168",
+            "diagnostic": 0.21951581195374495
+          },
+          "negative": {
+            "lower_exact": "0",
+            "upper_exact": "253/633825300114114700748351602688",
+            "diagnostic": 1.9958180902091599e-28
+          }
+        },
+        {
+          "samples": 256,
+          "positive": {
+            "lower_exact": "648110273614668052401701662487/1267650600228229401496703205376",
+            "upper_exact": "648110273614668052401701683375/1267650600228229401496703205376",
+            "diagnostic": 0.5112688571267047
+          },
+          "negative": {
+            "lower_exact": "0",
+            "upper_exact": "2557/1267650600228229401496703205376",
+            "diagnostic": 1.0085586673250636e-27
+          }
+        },
+        {
+          "samples": 512,
+          "positive": {
+            "lower_exact": "132673771096027713822583196921/633825300114114700748351602688",
+            "upper_exact": "265347542192055427645166453767/1267650600228229401496703205376",
+            "diagnostic": 0.20932230233179547
+          },
+          "negative": {
+            "lower_exact": "0",
+            "upper_exact": "12099/1267650600228229401496703205376",
+            "diagnostic": 4.772214046134511e-27
+          }
+        },
+        {
+          "samples": 1024,
+          "positive": {
+            "lower_exact": "2800435076097764842683495965/1267650600228229401496703205376",
+            "upper_exact": "700108769024441210670926647/316912650057057350374175801344",
+            "diagnostic": 0.0022091537491431557
+          },
+          "negative": {
+            "lower_exact": "0",
+            "upper_exact": "13469/316912650057057350374175801344",
+            "diagnostic": 2.1250335064843616e-26
+          }
+        }
+      ],
+      "resources": {
+        "per_calibration_sample_pair_rotations": 34,
+        "per_calibration_sample_extra_local_rotations": 41,
+        "per_calibration_sample_pure_slots": 7,
+        "expected_total_pair_rotations_with_one_query": {
+          "lower_exact": "92001066232159264111432412537617/9903520314283042199192993792",
+          "upper_exact": "46000533116079632055716297647693/4951760157141521099596496896",
+          "diagnostic": 9289.733681817526
+        },
+        "expected_total_extra_local_rotations_with_one_query": {
+          "lower_exact": "221888419802377383930701416000297/19807040628566084398385987584",
+          "upper_exact": "110944209901188691965350928384517/9903520314283042199192993792",
+          "diagnostic": 11202.50238101525
+        },
+        "expected_total_fresh_pure_slots_allocated": {
+          "lower_exact": "37886287338058855707836590925063/19807040628566084398385987584",
+          "upper_exact": "18943143669029427853918333089131/9903520314283042199192993792",
+          "diagnostic": 1912.768699197726
+        },
+        "maximum_total_pair_rotations": 34854,
+        "maximum_total_extra_local_rotations": 42030,
+        "maximum_total_fresh_pure_slots_allocated_and_retained": 7176,
+        "maximum_actual_readouts": 1026,
+        "maximum_distributed_calibration_record_bits": 1024,
+        "controller_to_query_policy_bits": 2,
+        "per_query_environment_return_bits": 1,
+        "logical_classical_sufficient_statistic": "current count n, positive count k, look j, chosen sign",
+        "all_past_quantum_slots_retained_in_closed_whole": true,
+        "calibration_and_future_query_use_independent_source_copies": true,
+        "transport_and_source_refresh_physical_cost_modelled": false
+      },
+      "uniform_confidence_failure_bound": {
+        "lower_exact": "1828682368937147051106166337/633825300114114700748351602688",
+        "upper_exact": "1828682368937147051106166339/633825300114114700748351602688",
+        "diagnostic": 0.0028851520578429242
+      }
+    },
+    {
+      "true_kappa_for_evaluation_only_exact": "1/5",
+      "calibration_response_strength_exact": "1",
+      "activation_margin_exact": "1/5",
+      "prespecified_sample_looks": [
+        64,
+        128,
+        256,
+        512,
+        1024
+      ],
+      "positive_policy_probability": {
+        "lower_exact": "44948503853549201335065949/1267650600228229401496703205376",
+        "upper_exact": "44948503853549201335211125/1267650600228229401496703205376",
+        "diagnostic": 3.545811743824096e-05
+      },
+      "negative_policy_probability": {
+        "lower_exact": "483966371551779947/1267650600228229401496703205376",
+        "upper_exact": "241983185775933641/633825300114114700748351602688",
+        "diagnostic": 3.817821499589001e-13
+      },
+      "timeout_fallback_probability": {
+        "lower_exact": "1267605651723891885923816131925/1267650600228229401496703205376",
+        "upper_exact": "633802825861945942961908329383/633825300114114700748351602688",
+        "diagnostic": 0.99996454188218
+      },
+      "wrong_sign_or_null_activation_probability": {
+        "lower_exact": "483966371551779947/1267650600228229401496703205376",
+        "upper_exact": "241983185775933641/633825300114114700748351602688",
+        "diagnostic": 3.817821499589001e-13
+      },
+      "expected_independent_samples": {
+        "lower_exact": "5070445993804681152202647330699/4951760157141521099596496896",
+        "upper_exact": "2535222996902340576101325118341/2475880078570760549798248448",
+        "diagnostic": 1023.9684138360354
+      },
+      "learned_future_H_success": {
+        "lower_exact": "934902470583107856216913549453/1267650600228229401496703205376",
+        "upper_exact": "467451235291553928108456775427/633825300114114700748351602688",
+        "diagnostic": 0.7375080092375508
+      },
+      "fallback_H_success": {
+        "lower_exact": "934902206464037646635498034503/1267650600228229401496703205376",
+        "upper_exact": "934902206464037646635498034537/1267650600228229401496703205376",
+        "diagnostic": 0.737507800884342
+      },
+      "unconditional_H_success_gain": {
+        "lower_exact": "132059535104790707757475/633825300114114700748351602688",
+        "upper_exact": "264119070209581415516317/1267650600228229401496703205376",
+        "diagnostic": 2.0835320881166236e-07
+      },
+      "stop_distribution": [
+        {
+          "samples": 64,
+          "positive": {
+            "lower_exact": "26676436770059654122598749/1267650600228229401496703205376",
+            "upper_exact": "26676436770059654122599049/1267650600228229401496703205376",
+            "diagnostic": 2.1043998058500342e-05
+          },
+          "negative": {
+            "lower_exact": "483963996710816787/1267650600228229401496703205376",
+            "upper_exact": "483963996710816987/1267650600228229401496703205376",
+            "diagnostic": 3.817802765396738e-13
+          }
+        },
+        {
+          "samples": 128,
+          "positive": {
+            "lower_exact": "11135544647105857756009177/1267650600228229401496703205376",
+            "upper_exact": "11135544647105857756010989/1267650600228229401496703205376",
+            "diagnostic": 8.78439583044492e-06
+          },
+          "negative": {
+            "lower_exact": "2374840959619/1267650600228229401496703205376",
+            "upper_exact": "2374840960501/1267650600228229401496703205376",
+            "diagnostic": 1.8734191895088683e-18
+          }
+        },
+        {
+          "samples": 256,
+          "positive": {
+            "lower_exact": "2292180871789513119629823/633825300114114700748351602688",
+            "upper_exact": "4584361743579026239268015/1267650600228229401496703205376",
+            "diagnostic": 3.6164237549003268e-06
+          },
+          "negative": {
+            "lower_exact": "3541/1267650600228229401496703205376",
+            "upper_exact": "6849/1267650600228229401496703205376",
+            "diagnostic": 4.098132402623156e-27
+          }
+        },
+        {
+          "samples": 512,
+          "positive": {
+            "lower_exact": "1821488519124600366045989/1267650600228229401496703205376",
+            "upper_exact": "1821488519124600366073327/1267650600228229401496703205376",
+            "diagnostic": 1.4369010820463124e-06
+          },
+          "negative": {
+            "lower_exact": "0",
+            "upper_exact": "15207/1267650600228229401496703205376",
+            "diagnostic": 5.998103892847963e-27
+          }
+        },
+        {
+          "samples": 1024,
+          "positive": {
+            "lower_exact": "182668043420015712788097/316912650057057350374175801344",
+            "upper_exact": "730672173680062851259745/1267650600228229401496703205376",
+            "diagnostic": 5.763987123490588e-07
+          },
+          "negative": {
+            "lower_exact": "0",
+            "upper_exact": "33869/633825300114114700748351602688",
+            "diagnostic": 2.671792999893045e-26
+          }
+        }
+      ],
+      "resources": {
+        "per_calibration_sample_pair_rotations": 34,
+        "per_calibration_sample_extra_local_rotations": 41,
+        "per_calibration_sample_pure_slots": 7,
+        "expected_total_pair_rotations_with_one_query": {
+          "lower_exact": "86291665337665268488337338062907/2475880078570760549798248448",
+          "upper_exact": "43145832668832634244168693732309/1237940039285380274899124224",
+          "diagnostic": 34852.92607042521
+        },
+        "expected_total_extra_local_rotations_with_one_query": {
+          "lower_exact": "208116066713220437210889979415875/4951760157141521099596496896",
+          "upper_exact": "104058033356610218605445049280589/2475880078570760549798248448",
+          "diagnostic": 42028.70496727745
+        },
+        "expected_total_fresh_pure_slots_allocated": {
+          "lower_exact": "35532736037889900234215303290061/4951760157141521099596496896",
+          "upper_exact": "17766368018944950117107661815971/2475880078570760549798248448",
+          "diagnostic": 7175.778896852248
+        },
+        "maximum_total_pair_rotations": 34854,
+        "maximum_total_extra_local_rotations": 42030,
+        "maximum_total_fresh_pure_slots_allocated_and_retained": 7176,
+        "maximum_actual_readouts": 1026,
+        "maximum_distributed_calibration_record_bits": 1024,
+        "controller_to_query_policy_bits": 2,
+        "per_query_environment_return_bits": 1,
+        "logical_classical_sufficient_statistic": "current count n, positive count k, look j, chosen sign",
+        "all_past_quantum_slots_retained_in_closed_whole": true,
+        "calibration_and_future_query_use_independent_source_copies": true,
+        "transport_and_source_refresh_physical_cost_modelled": false
+      },
+      "uniform_confidence_failure_bound": {
+        "lower_exact": "1828682368937147051106166337/633825300114114700748351602688",
+        "upper_exact": "1828682368937147051106166339/633825300114114700748351602688",
+        "diagnostic": 0.0028851520578429242
+      }
+    },
+    {
+      "true_kappa_for_evaluation_only_exact": "0",
+      "calibration_response_strength_exact": "1",
+      "activation_margin_exact": "1/5",
+      "prespecified_sample_looks": [
+        64,
+        128,
+        256,
+        512,
+        1024
+      ],
+      "positive_policy_probability": {
+        "lower_exact": "12718263473910385790363/1267650600228229401496703205376",
+        "upper_exact": "12718263473910385834577/1267650600228229401496703205376",
+        "diagnostic": 1.0032940836868278e-08
+      },
+      "negative_policy_probability": {
+        "lower_exact": "12718263473910385790363/1267650600228229401496703205376",
+        "upper_exact": "12718263473910385834577/1267650600228229401496703205376",
+        "diagnostic": 1.0032940836868278e-08
+      },
+      "timeout_fallback_probability": {
+        "lower_exact": "633825287395851226837965756061/633825300114114700748351602688",
+        "upper_exact": "633825287395851226837965878537/633825300114114700748351602688",
+        "diagnostic": 0.9999999799341184
+      },
+      "wrong_sign_or_null_activation_probability": {
+        "lower_exact": "12718263473910385790363/633825300114114700748351602688",
+        "upper_exact": "12718263473910385834577/633825300114114700748351602688",
+        "diagnostic": 2.0065881673736555e-08
+      },
+      "expected_independent_samples": {
+        "lower_exact": "5070602305557937945479667958473/4951760157141521099596496896",
+        "upper_exact": "5070602305557937945479669237753/4951760157141521099596496896",
+        "diagnostic": 1023.9999807432152
+      },
+      "learned_future_H_success": {
+        "lower_exact": "934902206464037646635498034503/1267650600228229401496703205376",
+        "upper_exact": "934902206464037646635498034537/1267650600228229401496703205376",
+        "diagnostic": 0.737507800884342
+      },
+      "fallback_H_success": {
+        "lower_exact": "934902206464037646635498034503/1267650600228229401496703205376",
+        "upper_exact": "934902206464037646635498034537/1267650600228229401496703205376",
+        "diagnostic": 0.737507800884342
+      },
+      "unconditional_H_success_gain": {
+        "lower_exact": "0",
+        "upper_exact": "0",
+        "diagnostic": 0.0
+      },
+      "stop_distribution": [
+        {
+          "samples": 64,
+          "positive": {
+            "lower_exact": "23018057361/2305843009213693952",
+            "upper_exact": "23018057361/2305843009213693952",
+            "diagnostic": 9.982491118876863e-09
+          },
+          "negative": {
+            "lower_exact": "23018057361/2305843009213693952",
+            "upper_exact": "23018057361/2305843009213693952",
+            "diagnostic": 9.982491118876863e-09
+          }
+        },
+        {
+          "samples": 128,
+          "positive": {
+            "lower_exact": "63932529231034891133/1267650600228229401496703205376",
+            "upper_exact": "63932529231034891651/1267650600228229401496703205376",
+            "diagnostic": 5.043387288226298e-11
+          },
+          "negative": {
+            "lower_exact": "63932529231034891133/1267650600228229401496703205376",
+            "upper_exact": "63932529231034891651/1267650600228229401496703205376",
+            "diagnostic": 5.043387288226298e-11
+          }
+        },
+        {
+          "samples": 256,
+          "positive": {
+            "lower_exact": "5021501526384327/316912650057057350374175801344",
+            "upper_exact": "20086006105539687/1267650600228229401496703205376",
+            "diagnostic": 1.5845064958689868e-14
+          },
+          "negative": {
+            "lower_exact": "5021501526384327/316912650057057350374175801344",
+            "upper_exact": "20086006105539687/1267650600228229401496703205376",
+            "diagnostic": 1.5845064958689868e-14
+          }
+        },
+        {
+          "samples": 512,
+          "positive": {
+            "lower_exact": "56020932345/1267650600228229401496703205376",
+            "upper_exact": "28010470715/633825300114114700748351602688",
+            "diagnostic": 4.419272698440242e-20
+          },
+          "negative": {
+            "lower_exact": "56020932345/1267650600228229401496703205376",
+            "upper_exact": "28010470715/633825300114114700748351602688",
+            "diagnostic": 4.419272698440242e-20
+          }
+        },
+        {
+          "samples": 1024,
+          "positive": {
+            "lower_exact": "9/1267650600228229401496703205376",
+            "upper_exact": "32241/1267650600228229401496703205376",
+            "diagnostic": 1.2720382096688815e-26
+          },
+          "negative": {
+            "lower_exact": "9/1267650600228229401496703205376",
+            "upper_exact": "32241/1267650600228229401496703205376",
+            "diagnostic": 1.2720382096688815e-26
+          }
+        }
+      ],
+      "resources": {
+        "per_calibration_sample_pair_rotations": 34,
+        "per_calibration_sample_extra_local_rotations": 41,
+        "per_calibration_sample_pure_slots": 7,
+        "expected_total_pair_rotations_with_one_query": {
+          "lower_exact": "86294322637470633974046688735065/2475880078570760549798248448",
+          "upper_exact": "86294322637470633974046710482825/2475880078570760549798248448",
+          "diagnostic": 34853.999345269316
+        },
+        "expected_total_extra_local_rotations_with_one_query": {
+          "lower_exact": "208122475495103965735247825154609/4951760157141521099596496896",
+          "upper_exact": "208122475495103965735247877605089/4951760157141521099596496896",
+          "diagnostic": 42029.999210471826
+        },
+        "expected_total_fresh_pure_slots_allocated": {
+          "lower_exact": "35533830220162697787154447684479/4951760157141521099596496896",
+          "upper_exact": "35533830220162697787154456639439/4951760157141521099596496896",
+          "diagnostic": 7175.999865202506
+        },
+        "maximum_total_pair_rotations": 34854,
+        "maximum_total_extra_local_rotations": 42030,
+        "maximum_total_fresh_pure_slots_allocated_and_retained": 7176,
+        "maximum_actual_readouts": 1026,
+        "maximum_distributed_calibration_record_bits": 1024,
+        "controller_to_query_policy_bits": 2,
+        "per_query_environment_return_bits": 1,
+        "logical_classical_sufficient_statistic": "current count n, positive count k, look j, chosen sign",
+        "all_past_quantum_slots_retained_in_closed_whole": true,
+        "calibration_and_future_query_use_independent_source_copies": true,
+        "transport_and_source_refresh_physical_cost_modelled": false
+      },
+      "uniform_confidence_failure_bound": {
+        "lower_exact": "1828682368937147051106166337/633825300114114700748351602688",
+        "upper_exact": "1828682368937147051106166339/633825300114114700748351602688",
+        "diagnostic": 0.0028851520578429242
+      }
+    },
+    {
+      "true_kappa_for_evaluation_only_exact": "-64/125",
+      "calibration_response_strength_exact": "1",
+      "activation_margin_exact": "1/5",
+      "prespecified_sample_looks": [
+        64,
+        128,
+        256,
+        512,
+        1024
+      ],
+      "positive_policy_probability": {
+        "lower_exact": "17901319/1267650600228229401496703205376",
+        "upper_exact": "17970481/1267650600228229401496703205376",
+        "diagnostic": 1.4148930309953546e-23
+      },
+      "negative_policy_probability": {
+        "lower_exact": "1267650596803044189117926530921/1267650600228229401496703205376",
+        "upper_exact": "1267650596803044189117926827413/1267650600228229401496703205376",
+        "diagnostic": 0.9999999972980053
+      },
+      "timeout_fallback_probability": {
+        "lower_exact": "1712592606189379284259/633825300114114700748351602688",
+        "upper_exact": "1712592606189379466695/633825300114114700748351602688",
+        "diagnostic": 2.7019947071867312e-09
+      },
+      "wrong_sign_or_null_activation_probability": {
+        "lower_exact": "17901319/1267650600228229401496703205376",
+        "upper_exact": "17970481/1267650600228229401496703205376",
+        "diagnostic": 1.4148930309953546e-23
+      },
+      "expected_independent_samples": {
+        "lower_exact": "5389690144718618147521357574913/19807040628566084398385987584",
+        "upper_exact": "2694845072359309073760684162685/9903520314283042199192993792",
+        "diagnostic": 272.1098141711037
+      },
+      "learned_future_H_success": {
+        "lower_exact": "476985518396154375445156791705/633825300114114700748351602688",
+        "upper_exact": "953971036792308750890313588951/1267650600228229401496703205376",
+        "diagnostic": 0.7525504556386078
+      },
+      "fallback_H_success": {
+        "lower_exact": "934902206464037646635498034503/1267650600228229401496703205376",
+        "upper_exact": "934902206464037646635498034537/1267650600228229401496703205376",
+        "diagnostic": 0.737507800884342
+      },
+      "unconditional_H_success_gain": {
+        "lower_exact": "19068830328271104254815548907/1267650600228229401496703205376",
+        "upper_exact": "9534415164135552127407777207/633825300114114700748351602688",
+        "diagnostic": 0.015042654754265828
+      },
+      "stop_distribution": [
+        {
+          "samples": 64,
+          "positive": {
+            "lower_exact": "17901319/1267650600228229401496703205376",
+            "upper_exact": "17901443/1267650600228229401496703205376",
+            "diagnostic": 1.4121699620366222e-23
+          },
+          "negative": {
+            "lower_exact": "9140374392183875905827639509/158456325028528675187087900672",
+            "upper_exact": "73122995137471007246621116771/1267650600228229401496703205376",
+            "diagnostic": 0.05768387213661702
+          }
+        },
+        {
+          "samples": 128,
+          "positive": {
+            "lower_exact": "0",
+            "upper_exact": "253/633825300114114700748351602688",
+            "diagnostic": 1.9958180902091599e-28
+          },
+          "negative": {
+            "lower_exact": "278269350782751936981753862555/1267650600228229401496703205376",
+            "upper_exact": "8695917211960998030679808341/39614081257132168796771975168",
+            "diagnostic": 0.21951581195374495
+          }
+        },
+        {
+          "samples": 256,
+          "positive": {
+            "lower_exact": "0",
+            "upper_exact": "2557/1267650600228229401496703205376",
+            "diagnostic": 1.0085586673250636e-27
+          },
+          "negative": {
+            "lower_exact": "648110273614668052401701662487/1267650600228229401496703205376",
+            "upper_exact": "648110273614668052401701683375/1267650600228229401496703205376",
+            "diagnostic": 0.5112688571267047
+          }
+        },
+        {
+          "samples": 512,
+          "positive": {
+            "lower_exact": "0",
+            "upper_exact": "12099/1267650600228229401496703205376",
+            "diagnostic": 4.772214046134511e-27
+          },
+          "negative": {
+            "lower_exact": "132673771096027713822583196921/633825300114114700748351602688",
+            "upper_exact": "265347542192055427645166453767/1267650600228229401496703205376",
+            "diagnostic": 0.20932230233179547
+          }
+        },
+        {
+          "samples": 1024,
+          "positive": {
+            "lower_exact": "0",
+            "upper_exact": "13469/316912650057057350374175801344",
+            "diagnostic": 2.1250335064843616e-26
+          },
+          "negative": {
+            "lower_exact": "2800435076097764842683495965/1267650600228229401496703205376",
+            "upper_exact": "700108769024441210670926647/316912650057057350374175801344",
+            "diagnostic": 0.0022091537491431557
+          }
+        }
+      ],
+      "resources": {
+        "per_calibration_sample_pair_rotations": 34,
+        "per_calibration_sample_extra_local_rotations": 41,
+        "per_calibration_sample_pure_slots": 7,
+        "expected_total_pair_rotations_with_one_query": {
+          "lower_exact": "92001066232159264111432412537617/9903520314283042199192993792",
+          "upper_exact": "46000533116079632055716297647693/4951760157141521099596496896",
+          "diagnostic": 9289.733681817526
+        },
+        "expected_total_extra_local_rotations_with_one_query": {
+          "lower_exact": "221888419802377383930701416000297/19807040628566084398385987584",
+          "upper_exact": "110944209901188691965350928384517/9903520314283042199192993792",
+          "diagnostic": 11202.50238101525
+        },
+        "expected_total_fresh_pure_slots_allocated": {
+          "lower_exact": "37886287338058855707836590925063/19807040628566084398385987584",
+          "upper_exact": "18943143669029427853918333089131/9903520314283042199192993792",
+          "diagnostic": 1912.768699197726
+        },
+        "maximum_total_pair_rotations": 34854,
+        "maximum_total_extra_local_rotations": 42030,
+        "maximum_total_fresh_pure_slots_allocated_and_retained": 7176,
+        "maximum_actual_readouts": 1026,
+        "maximum_distributed_calibration_record_bits": 1024,
+        "controller_to_query_policy_bits": 2,
+        "per_query_environment_return_bits": 1,
+        "logical_classical_sufficient_statistic": "current count n, positive count k, look j, chosen sign",
+        "all_past_quantum_slots_retained_in_closed_whole": true,
+        "calibration_and_future_query_use_independent_source_copies": true,
+        "transport_and_source_refresh_physical_cost_modelled": false
+      },
+      "uniform_confidence_failure_bound": {
+        "lower_exact": "1828682368937147051106166337/633825300114114700748351602688",
+        "upper_exact": "1828682368937147051106166339/633825300114114700748351602688",
+        "diagnostic": 0.0028851520578429242
+      }
+    }
+  ],
+  "protected_three_read_variance": {
+    "lower_exact": "924749035717288228134325883631/1267650600228229401496703205376",
+    "upper_exact": "924749035717288228134325883917/1267650600228229401496703205376",
+    "diagnostic": 0.7294983614181978
+  },
+  "finite_cap_obstruction": "P_kappa(activate)<=P_0(activate)+N*abs(kappa)/2 for iid family copies and arbitrary source-independent processing",
+  "quantum_theory_derived_from_cognition": false,
+  "automated_checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}

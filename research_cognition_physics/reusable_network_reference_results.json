@@ -1,0 +1,83 @@
+{
+  "round": 122,
+  "reuse_certificate": {
+    "initial_correlation": {
+      "lower_exact": "316911769807991942775626422419/316912650057057350374175801344",
+      "upper_exact": "633823539615983885551252844839/633825300114114700748351602688",
+      "diagnostic": 0.9999972224237018
+    },
+    "whole_record_distance_to_perfect_shared_orientation_upper": {
+      "lower_exact": "1760498130815197098757849/1267650600228229401496703205376",
+      "upper_exact": "880249065407598549378925/633825300114114700748351602688",
+      "diagnostic": 1.3887881491147756e-06
+    },
+    "matched_reused_complex_private_resources_correlation": {
+      "lower_exact": "1267580451768131740236753099121/1267650600228229401496703205376",
+      "upper_exact": "316895112942032935059188275767/316912650057057350374175801344",
+      "diagnostic": 0.9999446626222674
+    },
+    "matched_reuse_whole_record_distance_upper": {
+      "lower_exact": "17537115024415314987525577/633825300114114700748351602688",
+      "upper_exact": "4384278756103828746881641/158456325028528675187087900672",
+      "diagnostic": 2.7668688866250545e-05
+    },
+    "bound_independent_of_finite_trial_count": true,
+    "conditional_reference_can_change": true,
+    "different_trials_are_not_iid_when_reference_is_imperfect": true,
+    "ideal_old_control_and_no_storage_noise": true,
+    "resources": [
+      {
+        "task_trials": 1,
+        "fresh_target_Bell_pairs": 2,
+        "reference_link_pairs_once": 2,
+        "retained_outer_reference_rebits": 2,
+        "alignment_reads_once": 5,
+        "target_reads": 20,
+        "total_old_reads": 25,
+        "premeasurement_alignment_message_bits": 1,
+        "pair_rotations_after_sources_prepared_upper": 30,
+        "fresh_reference_policy_total_old_reads": 25,
+        "fresh_reference_policy_alignment_message_bits": 1,
+        "fresh_reference_policy_reference_link_pairs": 2,
+        "preparation_storage_maintenance_and_final_record_exchange_are_separate": true
+      },
+      {
+        "task_trials": 10,
+        "fresh_target_Bell_pairs": 20,
+        "reference_link_pairs_once": 2,
+        "retained_outer_reference_rebits": 2,
+        "alignment_reads_once": 5,
+        "target_reads": 200,
+        "total_old_reads": 205,
+        "premeasurement_alignment_message_bits": 1,
+        "pair_rotations_after_sources_prepared_upper": 237,
+        "fresh_reference_policy_total_old_reads": 250,
+        "fresh_reference_policy_alignment_message_bits": 10,
+        "fresh_reference_policy_reference_link_pairs": 20,
+        "preparation_storage_maintenance_and_final_record_exchange_are_separate": true
+      },
+      {
+        "task_trials": 1000,
+        "fresh_target_Bell_pairs": 2000,
+        "reference_link_pairs_once": 2,
+        "retained_outer_reference_rebits": 2,
+        "alignment_reads_once": 5,
+        "target_reads": 20000,
+        "total_old_reads": 20005,
+        "premeasurement_alignment_message_bits": 1,
+        "pair_rotations_after_sources_prepared_upper": 23007,
+        "fresh_reference_policy_total_old_reads": 25000,
+        "fresh_reference_policy_alignment_message_bits": 1000,
+        "fresh_reference_policy_reference_link_pairs": 2000,
+        "preparation_storage_maintenance_and_final_record_exchange_are_separate": true
+      }
+    ],
+    "does_not_preserve_independence_of_entire_cross_trial_lab_resources": true
+  },
+  "automated_checks": {
+    "run": 9,
+    "failures": 0,
+    "errors": 0
+  },
+  "quantum_theory_derived_from_cognition": false
+}
