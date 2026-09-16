@@ -1,0 +1,239 @@
+{
+  "round": 104,
+  "formula": "T=sum_r max(c*(1+r*a*gamma)/2,b*abs(a+r*gamma)/2)",
+  "a": "product of accessible overlaps",
+  "b": "product of inaccessible overlaps",
+  "ideal_environment_reading_attains_universal_accessible_H_bound": true,
+  "finite_examples": [
+    {
+      "c_exact": "4/5",
+      "d_exact": "4/5",
+      "accessible_count": 95,
+      "accessible_overlap_exact": "30310429509584222780856900250378474987891816698326495749294706687455340394943035990422804485156374905111232085580759135899/3961408125713216879677197516800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "inaccessible_overlap_exact": "2476099/3200000",
+      "recovery_factor": {
+        "lower_exact": "507060240091291760598681282149/633825300114114700748351602688",
+        "upper_exact": "63382530011411470074835160269/79228162514264337593543950336",
+        "diagnostic": 0.8
+      },
+      "finite_H_success": {
+        "lower_exact": "934902206464037646635498034503/1267650600228229401496703205376",
+        "upper_exact": "467451103232018823317749017269/633825300114114700748351602688",
+        "diagnostic": 0.737507800884342
+      },
+      "without_environment_success": {
+        "lower_exact": "934902206464037646635498034503/1267650600228229401496703205376",
+        "upper_exact": "934902206464037646635498034537/1267650600228229401496703205376",
+        "diagnostic": 0.737507800884342
+      },
+      "accessible_ideal_H_distance": {
+        "lower_exact": "608472288109550112718417538579/1267650600228229401496703205376",
+        "upper_exact": "304236144054775056359208769291/633825300114114700748351602688",
+        "diagnostic": 0.48
+      },
+      "strategies": [
+        {
+          "sign": -1,
+          "certified_strategy": "second_only"
+        },
+        {
+          "sign": 1,
+          "certified_strategy": "second_only"
+        }
+      ],
+      "resource_budget": {
+        "scope": "Declared batch compiler, worst query branch, no angle simplification; original writes included",
+        "created_fragments": 100,
+        "accessed_fragments": 95,
+        "pair_rotations": 390,
+        "extra_local_rotations": 803,
+        "environment_readouts": 3,
+        "final_readouts": 1,
+        "total_readouts": 4,
+        "global_extra_quantum_slots_peak": 102,
+        "initial_pure_preparations": 102,
+        "pointer_resets": 2,
+        "environment_pointer_reuses_purified_compression_scratch": true,
+        "return_classical_message_bits": 1,
+        "requires_coherent_gates_between_accessible_fragments": true,
+        "requires_coherent_return_gate_between_environment_and_memory": false,
+        "fragment_transport_or_routing_cost_included": false
+      },
+      "finite_resource_global_optimality_proved": false
+    },
+    {
+      "c_exact": "4/5",
+      "d_exact": "4/5",
+      "accessible_count": 96,
+      "accessible_overlap_exact": "575898160682100232836281104757191024769944517268203419236599427061651467503917683818033285217971123197113409626034423582081/79228162514264337593543950336000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "inaccessible_overlap_exact": "130321/160000",
+      "recovery_factor": {
+        "lower_exact": "258085727561156621805209044529/316912650057057350374175801344",
+        "upper_exact": "258085727561156621805209044531/316912650057057350374175801344",
+        "diagnostic": 0.8143749626740698
+      },
+      "finite_H_success": {
+        "lower_exact": "940312168077543332682787698753/1267650600228229401496703205376",
+        "upper_exact": "940312168077543332682787698789/1267650600228229401496703205376",
+        "diagnostic": 0.741775508099983
+      },
+      "without_environment_success": {
+        "lower_exact": "934902206464037646635498034503/1267650600228229401496703205376",
+        "upper_exact": "934902206464037646635498034537/1267650600228229401496703205376",
+        "diagnostic": 0.737507800884342
+      },
+      "accessible_ideal_H_distance": {
+        "lower_exact": "619505602021286564371694469103/1267650600228229401496703205376",
+        "upper_exact": "309752801010643282185847234553/633825300114114700748351602688",
+        "diagnostic": 0.48870375
+      },
+      "strategies": [
+        {
+          "sign": -1,
+          "certified_strategy": "joint_negative"
+        },
+        {
+          "sign": 1,
+          "certified_strategy": "joint_positive"
+        }
+      ],
+      "resource_budget": {
+        "scope": "Declared batch compiler, worst query branch, no angle simplification; original writes included",
+        "created_fragments": 100,
+        "accessed_fragments": 96,
+        "pair_rotations": 393,
+        "extra_local_rotations": 806,
+        "environment_readouts": 3,
+        "final_readouts": 1,
+        "total_readouts": 4,
+        "global_extra_quantum_slots_peak": 102,
+        "initial_pure_preparations": 102,
+        "pointer_resets": 2,
+        "environment_pointer_reuses_purified_compression_scratch": true,
+        "return_classical_message_bits": 1,
+        "requires_coherent_gates_between_accessible_fragments": true,
+        "requires_coherent_return_gate_between_environment_and_memory": false,
+        "fragment_transport_or_routing_cost_included": false
+      },
+      "finite_resource_global_optimality_proved": false
+    },
+    {
+      "c_exact": "4/5",
+      "d_exact": "4/5",
+      "accessible_count": 99,
+      "accessible_overlap_exact": "3950085484118525497024052097529573238897049443942607252543835470215867415609371393307890303310063934009000876624970111349493579/633825300114114700748351602688000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "inaccessible_overlap_exact": "19/20",
+      "recovery_factor": {
+        "lower_exact": "1204073958588279909282211608825/1267650600228229401496703205376",
+        "upper_exact": "1204073958588279909282211608835/1267650600228229401496703205376",
+        "diagnostic": 0.9498468729249976
+      },
+      "finite_H_success": {
+        "lower_exact": "991296497622123019085644031397/1267650600228229401496703205376",
+        "upper_exact": "61956031101382688692852751965/79228162514264337593543950336",
+        "diagnostic": 0.7819950524566065
+      },
+      "without_environment_success": {
+        "lower_exact": "934902206464037646635498034503/1267650600228229401496703205376",
+        "upper_exact": "934902206464037646635498034537/1267650600228229401496703205376",
+        "diagnostic": 0.737507800884342
+      },
+      "accessible_ideal_H_distance": {
+        "lower_exact": "722560842130090758853120827063/1267650600228229401496703205376",
+        "upper_exact": "722560842130090758853120827067/1267650600228229401496703205376",
+        "diagnostic": 0.57
+      },
+      "strategies": [
+        {
+          "sign": -1,
+          "certified_strategy": "joint_negative"
+        },
+        {
+          "sign": 1,
+          "certified_strategy": "joint_positive"
+        }
+      ],
+      "resource_budget": {
+        "scope": "Declared batch compiler, worst query branch, no angle simplification; original writes included",
+        "created_fragments": 100,
+        "accessed_fragments": 99,
+        "pair_rotations": 402,
+        "extra_local_rotations": 815,
+        "environment_readouts": 3,
+        "final_readouts": 1,
+        "total_readouts": 4,
+        "global_extra_quantum_slots_peak": 102,
+        "initial_pure_preparations": 102,
+        "pointer_resets": 2,
+        "environment_pointer_reuses_purified_compression_scratch": true,
+        "return_classical_message_bits": 1,
+        "requires_coherent_gates_between_accessible_fragments": true,
+        "requires_coherent_return_gate_between_environment_and_memory": false,
+        "fragment_transport_or_routing_cost_included": false
+      },
+      "finite_resource_global_optimality_proved": false
+    },
+    {
+      "c_exact": "4/5",
+      "d_exact": "4/5",
+      "accessible_count": 100,
+      "accessible_overlap_exact": "75051624198251984443456989853061891539043939434909537798332873934101480896578056472849915762891214746171016655874432115640378001/12676506002282294014967032053760000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "inaccessible_overlap_exact": "1",
+      "recovery_factor": {
+        "lower_exact": "1267446272198189378191801693501/1267650600228229401496703205376",
+        "upper_exact": "1267446272198189378191801693509/1267650600228229401496703205376",
+        "diagnostic": 0.9998388136052606
+      },
+      "finite_H_success": {
+        "lower_exact": "1010110771175176088471817317119/1267650600228229401496703205376",
+        "upper_exact": "252527692793794022117954329291/316912650057057350374175801344",
+        "diagnostic": 0.7968368973227438
+      },
+      "without_environment_success": {
+        "lower_exact": "934902206464037646635498034503/1267650600228229401496703205376",
+        "upper_exact": "934902206464037646635498034537/1267650600228229401496703205376",
+        "diagnostic": 0.737507800884342
+      },
+      "accessible_ideal_H_distance": {
+        "lower_exact": "760590360136937640898021923225/1267650600228229401496703205376",
+        "upper_exact": "760590360136937640898021923227/1267650600228229401496703205376",
+        "diagnostic": 0.6
+      },
+      "strategies": [
+        {
+          "sign": -1,
+          "certified_strategy": "joint_negative"
+        },
+        {
+          "sign": 1,
+          "certified_strategy": "joint_positive"
+        }
+      ],
+      "resource_budget": {
+        "scope": "Declared batch compiler, worst query branch, no angle simplification; original writes included",
+        "created_fragments": 100,
+        "accessed_fragments": 100,
+        "pair_rotations": 405,
+        "extra_local_rotations": 818,
+        "environment_readouts": 3,
+        "final_readouts": 1,
+        "total_readouts": 4,
+        "global_extra_quantum_slots_peak": 102,
+        "initial_pure_preparations": 102,
+        "pointer_resets": 2,
+        "environment_pointer_reuses_purified_compression_scratch": true,
+        "return_classical_message_bits": 1,
+        "requires_coherent_gates_between_accessible_fragments": true,
+        "requires_coherent_return_gate_between_environment_and_memory": false,
+        "fragment_transport_or_routing_cost_included": false
+      },
+      "finite_resource_global_optimality_proved": false
+    }
+  ],
+  "quantum_theory_derived_from_cognition": false,
+  "automated_checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}

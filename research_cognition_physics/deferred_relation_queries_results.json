@@ -1,0 +1,159 @@
+{
+  "round": 99,
+  "G_query": "(c*X-sqrt(1-c^2)*Z)_M tensor I_N",
+  "H_query": "(c*Z+sqrt(1-c^2)*X)_M tensor (d*X-sqrt(1-d^2)*Z)_N",
+  "ideal_joint_memory_G_trace_distance": "sqrt(1-c^2)",
+  "ideal_joint_memory_H_trace_distance": "sqrt(1-d^2)",
+  "optimal_ideal_queries_anticommute": true,
+  "one_run_attains_both_individual_ideal_optima_for_nontrivial_writes": false,
+  "strong_write_memory_state": "(I-g*ZI-h*XZ+k*YZ)/4; g=<YY>,h=<IZ>,k=<YX>",
+  "arbitrary_old_four_dimensional_state_fully_copied_to_memories": false,
+  "examples": [
+    {
+      "c_exact": "4/5",
+      "d_exact": "4/5",
+      "old_reads_for_chosen_query": 1,
+      "G_chosen_success": {
+        "lower_exact": "505085716525759191553642321229/633825300114114700748351602688",
+        "upper_exact": "1010171433051518383107284642499/1267650600228229401496703205376",
+        "diagnostic": 0.7968847511054276
+      },
+      "H_chosen_success": {
+        "lower_exact": "505085716525759191553642321229/633825300114114700748351602688",
+        "upper_exact": "1010171433051518383107284642499/1267650600228229401496703205376",
+        "diagnostic": 0.7968847511054276
+      },
+      "H_from_second_memory_alone_success": {
+        "lower_exact": "934902206464037646635498034503/1267650600228229401496703205376",
+        "upper_exact": "934902206464037646635498034537/1267650600228229401496703205376",
+        "diagnostic": 0.737507800884342
+      },
+      "H_joint_improvement": {
+        "lower_exact": "75269226587480736471786607953/1267650600228229401496703205376",
+        "upper_exact": "75269226587480736471786607963/1267650600228229401496703205376",
+        "diagnostic": 0.0593769502210855
+      },
+      "H_local_product_success_with_count_reads_per_memory": {
+        "lower_exact": "125782924183685682840769727315/158456325028528675187087900672",
+        "upper_exact": "1006263393469485462726157818601/1267650600228229401496703205376",
+        "diagnostic": 0.7938018514631054
+      },
+      "local_product_total_old_reads": 2,
+      "local_product_message_bits": 1,
+      "H_decoder_pair_rotations": 1,
+      "H_decoder_local_rotations": 5,
+      "two_answers_produced_in_one_run": false
+    },
+    {
+      "c_exact": "4/5",
+      "d_exact": "4/5",
+      "old_reads_for_chosen_query": 3,
+      "G_chosen_success": {
+        "lower_exact": "507029590886785757102946055369/633825300114114700748351602688",
+        "upper_exact": "507029590886785757102946055371/633825300114114700748351602688",
+        "diagnostic": 0.7999516440815782
+      },
+      "H_chosen_success": {
+        "lower_exact": "507029590886785757102946055369/633825300114114700748351602688",
+        "upper_exact": "507029590886785757102946055371/633825300114114700748351602688",
+        "diagnostic": 0.7999516440815782
+      },
+      "H_from_second_memory_alone_success": {
+        "lower_exact": "938012405441680151514384009127/1267650600228229401496703205376",
+        "upper_exact": "938012405441680151514384009131/1267650600228229401496703205376",
+        "diagnostic": 0.7399613152652625
+      },
+      "H_joint_improvement": {
+        "lower_exact": "76046776331891362691508101609/1267650600228229401496703205376",
+        "upper_exact": "19011694082972840672877025403/316912650057057350374175801344",
+        "diagnostic": 0.059990328816315636
+      },
+      "H_local_product_success_with_count_reads_per_memory": {
+        "lower_exact": "506998946622514529560453060679/633825300114114700748351602688",
+        "upper_exact": "253499473311257264780226530341/316912650057057350374175801344",
+        "diagnostic": 0.7999032959574726
+      },
+      "local_product_total_old_reads": 6,
+      "local_product_message_bits": 1,
+      "H_decoder_pair_rotations": 1,
+      "H_decoder_local_rotations": 5,
+      "two_answers_produced_in_one_run": false
+    },
+    {
+      "c_exact": "4/5",
+      "d_exact": "4/5",
+      "old_reads_for_chosen_query": 5,
+      "G_chosen_success": {
+        "lower_exact": "507059711941852516039551654795/633825300114114700748351602688",
+        "upper_exact": "1014119423883705032079103309593/1267650600228229401496703205376",
+        "diagnostic": 0.7999991667271106
+      },
+      "H_chosen_success": {
+        "lower_exact": "507059711941852516039551654795/633825300114114700748351602688",
+        "upper_exact": "1014119423883705032079103309593/1267650600228229401496703205376",
+        "diagnostic": 0.7999991667271106
+      },
+      "H_from_second_memory_alone_success": {
+        "lower_exact": "938060599129786965812952968209/1267650600228229401496703205376",
+        "upper_exact": "234515149782446741453238242053/316912650057057350374175801344",
+        "diagnostic": 0.7399993333816884
+      },
+      "H_joint_improvement": {
+        "lower_exact": "19014706188479516566537585345/316912650057057350374175801344",
+        "upper_exact": "38029412376959033133075170691/633825300114114700748351602688",
+        "diagnostic": 0.0599998333454221
+      },
+      "H_local_product_success_with_count_reads_per_memory": {
+        "lower_exact": "507059183793880246844790943285/633825300114114700748351602688",
+        "upper_exact": "507059183793880246844790943287/633825300114114700748351602688",
+        "diagnostic": 0.7999983334565356
+      },
+      "local_product_total_old_reads": 10,
+      "local_product_message_bits": 1,
+      "H_decoder_pair_rotations": 1,
+      "H_decoder_local_rotations": 5,
+      "two_answers_produced_in_one_run": false
+    }
+  ],
+  "strong_write_chosen_query": {
+    "c_exact": "0",
+    "d_exact": "0",
+    "old_reads_for_chosen_query": 1,
+    "G_chosen_success": {
+      "lower_exact": "315267213752446876169976667243/316912650057057350374175801344",
+      "upper_exact": "1261068855009787504679906669039/1267650600228229401496703205376",
+      "diagnostic": 0.9948079185090458
+    },
+    "H_chosen_success": {
+      "lower_exact": "315267213752446876169976667243/316912650057057350374175801344",
+      "upper_exact": "1261068855009787504679906669039/1267650600228229401496703205376",
+      "diagnostic": 0.9948079185090458
+    },
+    "H_from_second_memory_alone_success": {
+      "lower_exact": "1/2",
+      "upper_exact": "1/2",
+      "diagnostic": 0.5
+    },
+    "H_joint_improvement": {
+      "lower_exact": "156810888723918200982888766571/316912650057057350374175801344",
+      "upper_exact": "627243554895672803931555066351/1267650600228229401496703205376",
+      "diagnostic": 0.4948079185090459
+    },
+    "H_local_product_success_with_count_reads_per_memory": {
+      "lower_exact": "1254555455706399304044695295743/1267650600228229401496703205376",
+      "upper_exact": "1254555455706399304044695295875/1267650600228229401496703205376",
+      "diagnostic": 0.9896697524385092
+    },
+    "local_product_total_old_reads": 2,
+    "local_product_message_bits": 1,
+    "H_decoder_pair_rotations": 1,
+    "H_decoder_local_rotations": 5,
+    "two_answers_produced_in_one_run": false
+  },
+  "quantum_theory_derived_from_cognition": false,
+  "automated_checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}

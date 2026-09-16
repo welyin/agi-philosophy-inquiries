@@ -1,0 +1,49 @@
+{
+  "round": 93,
+  "scope": "Finite complex CPTP instruments whose sum fixes every state inside either YY sector",
+  "complete_kraus_class": "K_rj=a_rj Pi_minus+b_rj Pi_plus",
+  "coherence": "C=sum_rj a_rj conjugate(b_rj)",
+  "worst_old_state_trace_distance_including_spectators": "|1-C|/2",
+  "record_coherence_bound": "TV(p_minus,p_plus)^2+|C|^2<=1",
+  "sharp_budget_success_for_0_le_Delta_le_half": "P<=1/2+sqrt(Delta(1-Delta))",
+  "sharp_budget_success_for_Delta_ge_half": "P<=1",
+  "ideal_bound_attained_by_real_two_outcome_instruments": true,
+  "old_finite_noisy_scheme_approaches_but_does_not_attain_ideal_for_nontrivial_strength": true,
+  "ninety_nine_percent_examples": [
+    {
+      "target_success_exact": "99/100",
+      "old_protected_readouts": 1,
+      "ideal_qnd_minimum_disturbance_lower_exact": "507695657927339257062479734637/1267650600228229401496703205376",
+      "ideal_qnd_minimum_disturbance_upper_exact": "507695657927339257062479734639/1267650600228229401496703205376",
+      "finite_family_required_disturbance_lower_exact": "545682418492944944441867026387/1267650600228229401496703205376",
+      "finite_family_required_disturbance_upper_exact": "68210302311618118055233378359/158456325028528675187087900672",
+      "finite_family_required_disturbance_diagnostic": 0.43046752661553556
+    },
+    {
+      "target_success_exact": "99/100",
+      "old_protected_readouts": 3,
+      "ideal_qnd_minimum_disturbance_lower_exact": "507695657927339257062479734637/1267650600228229401496703205376",
+      "ideal_qnd_minimum_disturbance_upper_exact": "507695657927339257062479734639/1267650600228229401496703205376",
+      "finite_family_required_disturbance_lower_exact": "254094904132952133263777418429/633825300114114700748351602688",
+      "finite_family_required_disturbance_upper_exact": "31761863016619016657972177305/79228162514264337593543950336",
+      "finite_family_required_disturbance_diagnostic": 0.4008910721727337
+    },
+    {
+      "target_success_exact": "99/100",
+      "old_protected_readouts": 5,
+      "ideal_qnd_minimum_disturbance_lower_exact": "507695657927339257062479734637/1267650600228229401496703205376",
+      "ideal_qnd_minimum_disturbance_upper_exact": "507695657927339257062479734639/1267650600228229401496703205376",
+      "finite_family_required_disturbance_lower_exact": "253852077375103833728209574753/633825300114114700748351602688",
+      "finite_family_required_disturbance_upper_exact": "253852077375103833728209574759/633825300114114700748351602688",
+      "finite_family_required_disturbance_diagnostic": 0.40050795910071746
+    }
+  ],
+  "optimality_for_all_non_qnd_instruments_claimed": false,
+  "optimality_for_all_finite_noisy_compilers_claimed": false,
+  "quantum_theory_derived_from_cognition": false,
+  "automated_checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}

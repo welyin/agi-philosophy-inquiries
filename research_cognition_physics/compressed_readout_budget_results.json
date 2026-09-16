@@ -1,0 +1,173 @@
+{
+  "round": 95,
+  "success": "(1+gamma_m*sqrt(1-C^2))/2; C=product(c_i)",
+  "same_original_whole_not_new_unknown_copies": true,
+  "single_write_dominates_this_compiler_if_strength_is_freely_tunable": true,
+  "all_finite_protocols_at_equal_resources_optimized": false,
+  "exact_gates_and_reset_preparations_assumed": true,
+  "separate_three_read_baseline": {
+    "write_count": 3,
+    "old_readouts": 3,
+    "reset_memory_preparations": 3,
+    "write_pair_interactions": 9,
+    "memory_overlap_after_writes_exact": "64/125",
+    "worst_old_state_trace_distance_exact": "61/250",
+    "independent_direct_read_success_lower_exact": "1132001785131426688657641903765/1267650600228229401496703205376",
+    "independent_direct_read_success_upper_exact": "1132001785131426688657641903805/1267650600228229401496703205376",
+    "independent_direct_read_success_diagnostic": 0.8929919529305785,
+    "ideal_joint_memory_success_upper_exact": "294568002383052151380230336903/316912650057057350374175801344",
+    "ideal_joint_memory_success_diagnostic": 0.9294927240361587
+  },
+  "compressed_examples": [
+    {
+      "write_overlaps_exact": [
+        "4/5",
+        "4/5",
+        "4/5"
+      ],
+      "total_overlap_exact": "64/125",
+      "worst_old_state_trace_distance_exact": "61/250",
+      "success_lower_exact": "146577298270830932476024054889/158456325028528675187087900672",
+      "success_upper_exact": "586309193083323729904096219585/633825300114114700748351602688",
+      "success_diagnostic": 0.9250328015902235,
+      "ideal_success_lower_exact": "1178272009532208605520921347611/1267650600228229401496703205376",
+      "ideal_success_upper_exact": "294568002383052151380230336903/316912650057057350374175801344",
+      "ideal_success_diagnostic": 0.9294927240361587,
+      "ideal_gap_upper_exact": "1413405841390286428182227125/316912650057057350374175801344",
+      "stream_cost": {
+        "original_system_writes": 3,
+        "compression_merges": 2,
+        "pair_rotations": 15,
+        "local_rotations_excluding_settings_internal_to_old_readout": 15,
+        "old_readouts": 1,
+        "peak_extra_quantum_slots": 2,
+        "persistent_accumulator_qubits": 1,
+        "initial_pure_memory_preparations": 2,
+        "read_pointer_resets_after_first_read": 0,
+        "compression_resets": 0,
+        "outcome_bits_produced": 1,
+        "classical_counter_bits": 1,
+        "adaptive_message_rounds": 0,
+        "communication_scope": "All quantum gates co-located; exporting final decision costs one bit"
+      },
+      "equivalent_single_write_cost": {
+        "original_system_writes": 1,
+        "compression_merges": 0,
+        "pair_rotations": 3,
+        "local_rotations_excluding_settings_internal_to_old_readout": 3,
+        "old_readouts": 1,
+        "peak_extra_quantum_slots": 1,
+        "persistent_accumulator_qubits": 1,
+        "initial_pure_memory_preparations": 1,
+        "read_pointer_resets_after_first_read": 0,
+        "compression_resets": 0,
+        "outcome_bits_produced": 1,
+        "classical_counter_bits": 1,
+        "adaptive_message_rounds": 0,
+        "communication_scope": "All quantum gates co-located; exporting final decision costs one bit"
+      }
+    },
+    {
+      "write_overlaps_exact": [
+        "4/5",
+        "4/5",
+        "4/5"
+      ],
+      "total_overlap_exact": "64/125",
+      "worst_old_state_trace_distance_exact": "61/250",
+      "success_lower_exact": "589092126064994886920170951001/633825300114114700748351602688",
+      "success_upper_exact": "589092126064994886920170951003/633825300114114700748351602688",
+      "success_diagnostic": 0.9294234956524046,
+      "ideal_success_lower_exact": "1178272009532208605520921347611/1267650600228229401496703205376",
+      "ideal_success_upper_exact": "294568002383052151380230336903/316912650057057350374175801344",
+      "ideal_success_diagnostic": 0.9294927240361587,
+      "ideal_gap_upper_exact": "43878701109415840289722805/633825300114114700748351602688",
+      "stream_cost": {
+        "original_system_writes": 3,
+        "compression_merges": 2,
+        "pair_rotations": 18,
+        "local_rotations_excluding_settings_internal_to_old_readout": 25,
+        "old_readouts": 3,
+        "peak_extra_quantum_slots": 2,
+        "persistent_accumulator_qubits": 1,
+        "initial_pure_memory_preparations": 2,
+        "read_pointer_resets_after_first_read": 2,
+        "compression_resets": 0,
+        "outcome_bits_produced": 3,
+        "classical_counter_bits": 2,
+        "adaptive_message_rounds": 0,
+        "communication_scope": "All quantum gates co-located; exporting final decision costs one bit"
+      },
+      "equivalent_single_write_cost": {
+        "original_system_writes": 1,
+        "compression_merges": 0,
+        "pair_rotations": 6,
+        "local_rotations_excluding_settings_internal_to_old_readout": 13,
+        "old_readouts": 3,
+        "peak_extra_quantum_slots": 2,
+        "persistent_accumulator_qubits": 1,
+        "initial_pure_memory_preparations": 2,
+        "read_pointer_resets_after_first_read": 2,
+        "compression_resets": 0,
+        "outcome_bits_produced": 3,
+        "classical_counter_bits": 2,
+        "adaptive_message_rounds": 0,
+        "communication_scope": "All quantum gates co-located; exporting final decision costs one bit"
+      }
+    },
+    {
+      "write_overlaps_exact": [
+        "4/5",
+        "4/5",
+        "4/5"
+      ],
+      "total_overlap_exact": "64/125",
+      "worst_old_state_trace_distance_exact": "61/250",
+      "success_lower_exact": "73641906080620804796967409713/79228162514264337593543950336",
+      "success_upper_exact": "1178270497289932876751478555411/1267650600228229401496703205376",
+      "success_diagnostic": 0.9294915310873482,
+      "ideal_success_lower_exact": "1178272009532208605520921347611/1267650600228229401496703205376",
+      "ideal_success_upper_exact": "294568002383052151380230336903/316912650057057350374175801344",
+      "ideal_success_diagnostic": 0.9294927240361587,
+      "ideal_gap_upper_exact": "378060568932192360698051/316912650057057350374175801344",
+      "stream_cost": {
+        "original_system_writes": 3,
+        "compression_merges": 2,
+        "pair_rotations": 20,
+        "local_rotations_excluding_settings_internal_to_old_readout": 31,
+        "old_readouts": 5,
+        "peak_extra_quantum_slots": 2,
+        "persistent_accumulator_qubits": 1,
+        "initial_pure_memory_preparations": 2,
+        "read_pointer_resets_after_first_read": 4,
+        "compression_resets": 0,
+        "outcome_bits_produced": 5,
+        "classical_counter_bits": 3,
+        "adaptive_message_rounds": 0,
+        "communication_scope": "All quantum gates co-located; exporting final decision costs one bit"
+      },
+      "equivalent_single_write_cost": {
+        "original_system_writes": 1,
+        "compression_merges": 0,
+        "pair_rotations": 8,
+        "local_rotations_excluding_settings_internal_to_old_readout": 19,
+        "old_readouts": 5,
+        "peak_extra_quantum_slots": 2,
+        "persistent_accumulator_qubits": 1,
+        "initial_pure_memory_preparations": 2,
+        "read_pointer_resets_after_first_read": 4,
+        "compression_resets": 0,
+        "outcome_bits_produced": 5,
+        "classical_counter_bits": 3,
+        "adaptive_message_rounds": 0,
+        "communication_scope": "All quantum gates co-located; exporting final decision costs one bit"
+      }
+    }
+  ],
+  "quantum_theory_derived_from_cognition": false,
+  "automated_checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}

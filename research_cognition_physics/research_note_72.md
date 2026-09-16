@@ -94,8 +94,7 @@ g=\operatorname{Tr}[\sigma_{AC}(K_A\otimes J_C)].
 把式 (5) 代入，残差系数为
 
 \[
-c=\left(2+\frac{\sqrt2}{2},\ 1+\frac{5\sqrt2}{2},\
-1+\sqrt2,\ 3+\sqrt2,\ 1+\frac{\sqrt2}{2},\ 1+\frac{\sqrt2}{2}\right),
+c=\left(2+\frac{\sqrt2}{2},\ 1+\frac{5\sqrt2}{2},\ 1+\sqrt2,\ 3+\sqrt2,\ 1+\frac{\sqrt2}{2},\ 1+\frac{\sqrt2}{2}\right),
 \quad\|c\|^2=35+17\sqrt2.
 \]
 

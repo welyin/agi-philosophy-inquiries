@@ -1,0 +1,72 @@
+{
+  "round": 113,
+  "control_choice": "Fresh calibration: lambda1=lambda2=0; deployment retains lambda1=lambda2=sqrt(c)",
+  "ideal_source_pair_distance_ceiling": "abs(delta_kappa)/2, attained by the accessible real probe",
+  "comparison": {
+    "source_trace_distance": {
+      "lower_exact": "10141204801825835211973625643/19807040628566084398385987584",
+      "upper_exact": "649037107316853453566312041153/1267650600228229401496703205376",
+      "diagnostic": 0.512
+    },
+    "accessible_trace_distance_at_lambda1_lambda2_zero": {
+      "lower_exact": "10141204801825835211973625643/19807040628566084398385987584",
+      "upper_exact": "649037107316853453566312041153/1267650600228229401496703205376",
+      "diagnostic": 0.512
+    },
+    "finite_majority_record_total_variation": {
+      "lower_exact": "321148700106584475612956193937/633825300114114700748351602688",
+      "upper_exact": "642297400213168951225912387943/1267650600228229401496703205376",
+      "diagnostic": 0.5066833085532629
+    },
+    "finite_readout_optimal_over_all_possible_protocols": false
+  },
+  "certified_sample_designs": [
+    {
+      "response_strength_exact": "19/100",
+      "single_original_read_mean": {
+        "lower_exact": "122036506040502100732923353695/1267650600228229401496703205376",
+        "upper_exact": "61018253020251050366461676855/633825300114114700748351602688",
+        "diagnostic": 0.09626982862511996
+      },
+      "first_scheduled_look_certifying_at_least_99_percent_correct_activation": {
+        "look": 10,
+        "independent_samples": 32768,
+        "failure_to_activate_correct_sign_upper": {
+          "lower_exact": "6494092493860417953012845/1267650600228229401496703205376",
+          "upper_exact": "6494092493860417953012847/1267650600228229401496703205376",
+          "diagnostic": 5.122935683295707e-06
+        },
+        "source_and_probe_pair_rotations": 1114112,
+        "source_and_probe_extra_local_rotations": 1343488,
+        "fresh_pure_slots_allocated_and_retained": 229376
+      }
+    },
+    {
+      "response_strength_exact": "1",
+      "single_original_read_mean": {
+        "lower_exact": "321148700106584475612956193937/633825300114114700748351602688",
+        "upper_exact": "642297400213168951225912387943/1267650600228229401496703205376",
+        "diagnostic": 0.5066833085532629
+      },
+      "first_scheduled_look_certifying_at_least_99_percent_correct_activation": {
+        "look": 5,
+        "independent_samples": 1024,
+        "failure_to_activate_correct_sign_upper": {
+          "lower_exact": "1536223735078738132084827/79228162514264337593543950336",
+          "upper_exact": "12289789880629905056678617/633825300114114700748351602688",
+          "diagnostic": 1.9389869540419476e-05
+        },
+        "source_and_probe_pair_rotations": 34816,
+        "source_and_probe_extra_local_rotations": 41984,
+        "fresh_pure_slots_allocated_and_retained": 7168
+      }
+    }
+  ],
+  "source_assumption": "Same unknown fixed kappa, independent new preparations; provider's purification controls are not revealed to controller",
+  "quantum_theory_derived_from_cognition": false,
+  "automated_checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}

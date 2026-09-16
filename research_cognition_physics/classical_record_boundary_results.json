@@ -1,0 +1,113 @@
+{
+  "round": 101,
+  "instrument": "B_history(omega)=sum_z likelihood(history|z) P_z omega P_z",
+  "one_protected_record_already_erases_G_axis_offdiagonal_blocks": true,
+  "ideal_H_distinguishability_with_all_classical_records_and_MN": "c*sqrt(1-d^2)",
+  "ideal_G_distinguishability_with_all_classical_records_and_MN": "sqrt(1-c^2)",
+  "direct_noisy_read_and_protected_read_have_same_first_effect_but_different_retained_state": true,
+  "examples": [
+    {
+      "c_exact": "4/5",
+      "d_exact": "4/5",
+      "G_classical_readouts": 1,
+      "G_record_alone_trace_distance": {
+        "lower_exact": "188173066468701841179466519885/316912650057057350374175801344",
+        "upper_exact": "376346132937403682358933039811/633825300114114700748351602688",
+        "diagnostic": 0.593769502210855
+      },
+      "G_record_plus_MN_trace_distance": {
+        "lower_exact": "760590360136937640898021923225/1267650600228229401496703205376",
+        "upper_exact": "760590360136937640898021923227/1267650600228229401496703205376",
+        "diagnostic": 0.6
+      },
+      "H_record_plus_MN_trace_distance": {
+        "lower_exact": "608472288109550112718417538579/1267650600228229401496703205376",
+        "upper_exact": "304236144054775056359208769291/633825300114114700748351602688",
+        "diagnostic": 0.48
+      },
+      "H_record_plus_N_trace_distance": {
+        "lower_exact": "608472288109550112718417538579/1267650600228229401496703205376",
+        "upper_exact": "304236144054775056359208769291/633825300114114700748351602688",
+        "diagnostic": 0.48
+      },
+      "H_record_alone_trace_distance_exact": "0",
+      "copy_pair_rotations": 1,
+      "copy_and_frame_local_rotations": 5,
+      "additional_pointer_slots": 1,
+      "pointer_resets_after_first": 0,
+      "all_raw_record_bits_kept": 1,
+      "record_bits_can_be_processed_jointly_with_remaining_memories": true
+    },
+    {
+      "c_exact": "4/5",
+      "d_exact": "4/5",
+      "G_classical_readouts": 3,
+      "G_record_alone_trace_distance": {
+        "lower_exact": "190116940829728406728770254025/316912650057057350374175801344",
+        "upper_exact": "760467763318913626915081016107/1267650600228229401496703205376",
+        "diagnostic": 0.5999032881631564
+      },
+      "G_record_plus_MN_trace_distance": {
+        "lower_exact": "760590360136937640898021923225/1267650600228229401496703205376",
+        "upper_exact": "760590360136937640898021923227/1267650600228229401496703205376",
+        "diagnostic": 0.6
+      },
+      "H_record_plus_MN_trace_distance": {
+        "lower_exact": "608472288109550112718417538579/1267650600228229401496703205376",
+        "upper_exact": "304236144054775056359208769291/633825300114114700748351602688",
+        "diagnostic": 0.48
+      },
+      "H_record_plus_N_trace_distance": {
+        "lower_exact": "608472288109550112718417538579/1267650600228229401496703205376",
+        "upper_exact": "304236144054775056359208769291/633825300114114700748351602688",
+        "diagnostic": 0.48
+      },
+      "H_record_alone_trace_distance_exact": "0",
+      "copy_pair_rotations": 3,
+      "copy_and_frame_local_rotations": 11,
+      "additional_pointer_slots": 1,
+      "pointer_resets_after_first": 2,
+      "all_raw_record_bits_kept": 3,
+      "record_bits_can_be_processed_jointly_with_remaining_memories": true
+    },
+    {
+      "c_exact": "4/5",
+      "d_exact": "4/5",
+      "G_classical_readouts": 5,
+      "G_record_alone_trace_distance": {
+        "lower_exact": "760588247539180662661503413805/1267650600228229401496703205376",
+        "upper_exact": "760588247539180662661503413809/1267650600228229401496703205376",
+        "diagnostic": 0.599998333454221
+      },
+      "G_record_plus_MN_trace_distance": {
+        "lower_exact": "760590360136937640898021923225/1267650600228229401496703205376",
+        "upper_exact": "760590360136937640898021923227/1267650600228229401496703205376",
+        "diagnostic": 0.6
+      },
+      "H_record_plus_MN_trace_distance": {
+        "lower_exact": "608472288109550112718417538579/1267650600228229401496703205376",
+        "upper_exact": "304236144054775056359208769291/633825300114114700748351602688",
+        "diagnostic": 0.48
+      },
+      "H_record_plus_N_trace_distance": {
+        "lower_exact": "608472288109550112718417538579/1267650600228229401496703205376",
+        "upper_exact": "304236144054775056359208769291/633825300114114700748351602688",
+        "diagnostic": 0.48
+      },
+      "H_record_alone_trace_distance_exact": "0",
+      "copy_pair_rotations": 5,
+      "copy_and_frame_local_rotations": 17,
+      "additional_pointer_slots": 1,
+      "pointer_resets_after_first": 4,
+      "all_raw_record_bits_kept": 5,
+      "record_bits_can_be_processed_jointly_with_remaining_memories": true
+    }
+  ],
+  "environment_quantum_access_included": false,
+  "quantum_theory_derived_from_cognition": false,
+  "automated_checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}

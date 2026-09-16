@@ -1,0 +1,110 @@
+{
+  "round": 116,
+  "estimand": "window average of kappa_i(history_before_i), where E[Y_i|history]=alpha*kappa_i",
+  "independence_required_for_confidence_theorem": false,
+  "future_bridge_is_still_required": true,
+  "per_source_rate_budget": "L*(gap+(window-1)/2)",
+  "window_bound": "sqrt(2*(6+j)/window)/alpha + L*(gap+(window-1)/2)",
+  "continuous_optimum_equation": "L^2*alpha^2*window^3=2*(6+j), for L>0",
+  "window_examples": [
+    {
+      "look": 1,
+      "rate_exact": "0",
+      "gap_in_source_steps": 1,
+      "maximum_window": 4096,
+      "certified_possible_minimizers": [
+        4096
+      ],
+      "selected_window": 4096,
+      "unclipped_worst_case_radius": {
+        "lower_exact": "74888817565124509369541464285/1267650600228229401496703205376",
+        "upper_exact": "74888817565124509369541464295/1267650600228229401496703205376",
+        "diagnostic": 0.05907686041535533
+      },
+      "radius_if_all_maximum_samples_used": {
+        "lower_exact": "74888817565124509369541464285/1267650600228229401496703205376",
+        "upper_exact": "74888817565124509369541464295/1267650600228229401496703205376",
+        "diagnostic": 0.05907686041535533
+      },
+      "optimization_scope": "This concentration-plus-drift bound, fixed look and source rate, integer window sizes only"
+    },
+    {
+      "look": 1,
+      "rate_exact": "1/4096",
+      "gap_in_source_steps": 1,
+      "maximum_window": 4096,
+      "certified_possible_minimizers": [
+        621
+      ],
+      "selected_window": 621,
+      "unclipped_worst_case_radius": {
+        "lower_exact": "288581660756562074031806795147/1267650600228229401496703205376",
+        "upper_exact": "72145415189140518507951698793/316912650057057350374175801344",
+        "diagnostic": 0.22765079013460449
+      },
+      "radius_if_all_maximum_samples_used": {
+        "lower_exact": "708868860184149882652255457501/1267650600228229401496703205376",
+        "upper_exact": "708868860184149882652255457511/1267650600228229401496703205376",
+        "diagnostic": 0.5591989307278553
+      },
+      "optimization_scope": "This concentration-plus-drift bound, fixed look and source rate, integer window sizes only"
+    },
+    {
+      "look": 1,
+      "rate_exact": "1/1000",
+      "gap_in_source_steps": 1,
+      "maximum_window": 4096,
+      "certified_possible_minimizers": [
+        243
+      ],
+      "selected_window": 243,
+      "unclipped_worst_case_radius": {
+        "lower_exact": "462117045978190012134389362917/1267650600228229401496703205376",
+        "upper_exact": "231058522989095006067194681477/633825300114114700748351602688",
+        "diagnostic": 0.3645460712084149
+      },
+      "radius_if_all_maximum_samples_used": {
+        "lower_exact": "2671671072132652438335537980497/1267650600228229401496703205376",
+        "upper_exact": "667917768033163109583884495127/316912650057057350374175801344",
+        "diagnostic": 2.1075768604153553
+      },
+      "optimization_scope": "This concentration-plus-drift bound, fixed look and source rate, integer window sizes only"
+    }
+  ],
+  "record_example": {
+    "window_samples": 512,
+    "positive_count": 385,
+    "look": 1,
+    "rate_exact": "1/4096",
+    "average_to_future_budget_exact": "513/8192",
+    "future_parameter_interval": {
+      "lower_exact": "88569840011567747977065005871/316912650057057350374175801344",
+      "upper_exact": "649037107316853453566312041153/1267650600228229401496703205376",
+      "diagnostic": 0.39573856833361104
+    },
+    "chosen_action": 1,
+    "gain_floor_on_coverage_and_drift_assumption": {
+      "lower_exact": "5204396595837928831327507393/633825300114114700748351602688",
+      "upper_exact": "10408793191675857662655014789/1267650600228229401496703205376",
+      "diagnostic": 0.008211090019443722
+    },
+    "uniform_probability_failure_bound": {
+      "lower_exact": "1828682368937147051106166337/633825300114114700748351602688",
+      "upper_exact": "1828682368937147051106166339/633825300114114700748351602688",
+      "diagnostic": 0.0028851520578429242
+    }
+  },
+  "expiry_example": {
+    "action": 1,
+    "certified_future_source_steps": 736,
+    "rate_exact": "1/4096",
+    "target_exact": "1/10",
+    "steps_are_preparation_indices_not_physical_time": true
+  },
+  "quantum_theory_derived_from_cognition": false,
+  "automated_checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}

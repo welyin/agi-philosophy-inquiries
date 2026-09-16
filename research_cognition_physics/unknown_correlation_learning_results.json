@@ -1,0 +1,108 @@
+{
+  "round": 112,
+  "observation_law": "P(Y=+1)=(1+gamma_l*a*kappa)/2; one fresh source per Y",
+  "confidence_radius_for_mean": "sqrt(2*(6+j)/n_j), at prespecified increasing looks",
+  "risk_bound_all_looks": {
+    "lower_exact": "1828682368937147051106166337/633825300114114700748351602688",
+    "upper_exact": "1828682368937147051106166339/633825300114114700748351602688",
+    "diagnostic": 0.0028851520578429242
+  },
+  "examples": [
+    {
+      "fresh_independent_source_samples": 256,
+      "positive_Y_count": 194,
+      "scheduled_look": 3,
+      "calibration_response_strength_exact": "1",
+      "kappa_confidence_hull": {
+        "lower_exact": "160413618607115939681379696091/633825300114114700748351602688",
+        "upper_exact": "649037107316853453566312041153/1267650600228229401496703205376",
+        "diagnostic": 0.38254403238418766
+      },
+      "confidence_domain_conflict": false,
+      "chosen_sign_zero_means_fallback": 1,
+      "activation_margin_exact": "1/5",
+      "simultaneous_miscoverage_upper": {
+        "lower_exact": "1828682368937147051106166337/633825300114114700748351602688",
+        "upper_exact": "1828682368937147051106166339/633825300114114700748351602688",
+        "diagnostic": 0.0028851520578429242
+      },
+      "matched_query_baseline": {
+        "lower_exact": "934902206464037646635498034503/1267650600228229401496703205376",
+        "upper_exact": "934902206464037646635498034537/1267650600228229401496703205376",
+        "diagnostic": 0.737507800884342
+      },
+      "conditional_success_gain_floor_on_coverage": {
+        "lower_exact": "1862190466776853809889031079/316912650057057350374175801344",
+        "upper_exact": "7448761867107415239556124319/1267650600228229401496703205376",
+        "diagnostic": 0.00587603702926211
+      },
+      "scope": "iid unknown-kappa source; specified look schedule, matched recovery, independent future task"
+    },
+    {
+      "fresh_independent_source_samples": 256,
+      "positive_Y_count": 128,
+      "scheduled_look": 3,
+      "calibration_response_strength_exact": "1",
+      "kappa_confidence_hull": {
+        "lower_exact": "-84915937395859333496226548045/316912650057057350374175801344",
+        "upper_exact": "84915937395859333496226548045/316912650057057350374175801344",
+        "diagnostic": 0.0
+      },
+      "confidence_domain_conflict": false,
+      "chosen_sign_zero_means_fallback": 0,
+      "activation_margin_exact": "1/5",
+      "simultaneous_miscoverage_upper": {
+        "lower_exact": "1828682368937147051106166337/633825300114114700748351602688",
+        "upper_exact": "1828682368937147051106166339/633825300114114700748351602688",
+        "diagnostic": 0.0028851520578429242
+      },
+      "matched_query_baseline": {
+        "lower_exact": "934902206464037646635498034503/1267650600228229401496703205376",
+        "upper_exact": "934902206464037646635498034537/1267650600228229401496703205376",
+        "diagnostic": 0.737507800884342
+      },
+      "conditional_success_gain_floor_on_coverage": {
+        "lower_exact": "0",
+        "upper_exact": "0",
+        "diagnostic": 0.0
+      },
+      "scope": "iid unknown-kappa source; specified look schedule, matched recovery, independent future task"
+    },
+    {
+      "fresh_independent_source_samples": 256,
+      "positive_Y_count": 62,
+      "scheduled_look": 3,
+      "calibration_response_strength_exact": "1",
+      "kappa_confidence_hull": {
+        "lower_exact": "-649037107316853453566312041153/1267650600228229401496703205376",
+        "upper_exact": "-160413618607115939681379696091/633825300114114700748351602688",
+        "diagnostic": -0.38254403238418766
+      },
+      "confidence_domain_conflict": false,
+      "chosen_sign_zero_means_fallback": -1,
+      "activation_margin_exact": "1/5",
+      "simultaneous_miscoverage_upper": {
+        "lower_exact": "1828682368937147051106166337/633825300114114700748351602688",
+        "upper_exact": "1828682368937147051106166339/633825300114114700748351602688",
+        "diagnostic": 0.0028851520578429242
+      },
+      "matched_query_baseline": {
+        "lower_exact": "934902206464037646635498034503/1267650600228229401496703205376",
+        "upper_exact": "934902206464037646635498034537/1267650600228229401496703205376",
+        "diagnostic": 0.737507800884342
+      },
+      "conditional_success_gain_floor_on_coverage": {
+        "lower_exact": "1862190466776853809889031079/316912650057057350374175801344",
+        "upper_exact": "7448761867107415239556124319/1267650600228229401496703205376",
+        "diagnostic": 0.00587603702926211
+      },
+      "scope": "iid unknown-kappa source; specified look schedule, matched recovery, independent future task"
+    }
+  ],
+  "quantum_theory_derived_from_cognition": false,
+  "automated_checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}

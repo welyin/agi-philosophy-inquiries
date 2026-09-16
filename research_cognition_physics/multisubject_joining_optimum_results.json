@@ -1,0 +1,121 @@
+{
+  "round": 135,
+  "model": "One independent standard real encoding of each arbitrary unknown qubit",
+  "optimized_channels": "All deterministic real CPTP channels, also bounded for complex CPTP on these inputs",
+  "optimal_support_formula": "2^(-n) sum_k binomial(n,k) (2/3)^min(k,n-k)",
+  "worst_joint_error_formula": "1 - optimal_support(n)",
+  "upper_bound_on_support": "2 (5/6)^n",
+  "proof": "Exact local second moments and tensor-product operator bounds give a Choi dual",
+  "local_certificate": {
+    "matched_moment_norm_exact": "1/2",
+    "mismatched_moment_norm_exact": "1/3",
+    "integer_projector_polynomials_verified": true,
+    "requires_float_eigenvalues_for_proof": false
+  },
+  "old_host_exact_preservation_imposed_on_global_optimum": false,
+  "all_environments_can_be_retained": true,
+  "general_n_native_gate_compilation_completed": false,
+  "rows": [
+    {
+      "subjects": 1,
+      "optimal_support_exact": "1",
+      "optimal_joint_trace_error_exact": "0",
+      "specified_sequential_error_exact": "0",
+      "error_improvement_exact": "0",
+      "joint_error_is_a_local_error": false
+    },
+    {
+      "subjects": 2,
+      "optimal_support_exact": "5/6",
+      "optimal_joint_trace_error_exact": "1/6",
+      "specified_sequential_error_exact": "1/6",
+      "error_improvement_exact": "0",
+      "joint_error_is_a_local_error": false
+    },
+    {
+      "subjects": 3,
+      "optimal_support_exact": "3/4",
+      "optimal_joint_trace_error_exact": "1/4",
+      "specified_sequential_error_exact": "11/36",
+      "error_improvement_exact": "1/18",
+      "joint_error_is_a_local_error": false
+    },
+    {
+      "subjects": 4,
+      "optimal_support_exact": "5/8",
+      "optimal_joint_trace_error_exact": "3/8",
+      "specified_sequential_error_exact": "91/216",
+      "error_improvement_exact": "5/108",
+      "joint_error_is_a_local_error": false
+    },
+    {
+      "subjects": 5,
+      "optimal_support_exact": "79/144",
+      "optimal_joint_trace_error_exact": "65/144",
+      "specified_sequential_error_exact": "671/1296",
+      "error_improvement_exact": "43/648",
+      "joint_error_is_a_local_error": false
+    },
+    {
+      "subjects": 6,
+      "optimal_support_exact": "395/864",
+      "optimal_joint_trace_error_exact": "469/864",
+      "specified_sequential_error_exact": "4651/7776",
+      "error_improvement_exact": "215/3888",
+      "joint_error_is_a_local_error": false
+    },
+    {
+      "subjects": 7,
+      "optimal_support_exact": "685/1728",
+      "optimal_joint_trace_error_exact": "1043/1728",
+      "specified_sequential_error_exact": "31031/46656",
+      "error_improvement_exact": "1435/23328",
+      "joint_error_is_a_local_error": false
+    },
+    {
+      "subjects": 8,
+      "optimal_support_exact": "3425/10368",
+      "optimal_joint_trace_error_exact": "6943/10368",
+      "specified_sequential_error_exact": "201811/279936",
+      "error_improvement_exact": "7175/139968",
+      "joint_error_is_a_local_error": false
+    },
+    {
+      "subjects": 9,
+      "optimal_support_exact": "655/2304",
+      "optimal_joint_trace_error_exact": "1649/2304",
+      "specified_sequential_error_exact": "1288991/1679616",
+      "error_improvement_exact": "43435/839808",
+      "joint_error_is_a_local_error": false
+    },
+    {
+      "subjects": 10,
+      "optimal_support_exact": "3275/13824",
+      "optimal_joint_trace_error_exact": "10549/13824",
+      "specified_sequential_error_exact": "8124571/10077696",
+      "error_improvement_exact": "217175/5038848",
+      "joint_error_is_a_local_error": false
+    },
+    {
+      "subjects": 11,
+      "optimal_support_exact": "16823/82944",
+      "optimal_joint_trace_error_exact": "66121/82944",
+      "specified_sequential_error_exact": "50700551/60466176",
+      "error_improvement_exact": "1249171/30233088",
+      "joint_error_is_a_local_error": false
+    },
+    {
+      "subjects": 12,
+      "optimal_support_exact": "84115/497664",
+      "optimal_joint_trace_error_exact": "413549/497664",
+      "specified_sequential_error_exact": "313968931/362797056",
+      "error_improvement_exact": "6245855/181398528",
+      "joint_error_is_a_local_error": false
+    }
+  ],
+  "automated_checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}

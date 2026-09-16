@@ -1,0 +1,167 @@
+{
+  "round": 111,
+  "exact_gain_condition": "kappa^2*s1^2*s2^2 > (1-r0^2)*(c-lambda1*lambda2)^2",
+  "equal_bias_example_threshold_squared_exact": "18/19",
+  "matched_setting": "lambda1=lambda2=sqrt(c), c>=1/2; T_ideal=c+abs(kappa)*(1-c)/2",
+  "threshold_examples": [
+    {
+      "c_exact": "4/5",
+      "biases_exact": [
+        "3/5",
+        "3/5",
+        "3/5"
+      ],
+      "unavailable_gate_cosines_exact": [
+        "9/10",
+        "9/10"
+      ],
+      "maximum_kappa_squared_exact": "4096/15625",
+      "maximum_gain_test_margin_exact": "91791/9765625",
+      "some_source_in_this_family_has_strict_H_gain": true,
+      "scope": "H task requires d<1; comparison with same biases, same gates and kappa=0"
+    },
+    {
+      "c_exact": "4/5",
+      "biases_exact": [
+        "97/100",
+        "97/100",
+        "97/100"
+      ],
+      "unavailable_gate_cosines_exact": [
+        "9/10",
+        "9/10"
+      ],
+      "maximum_kappa_squared_exact": "206425071/1000000000000",
+      "maximum_gain_test_margin_exact": "15419450631/10000000000000000",
+      "some_source_in_this_family_has_strict_H_gain": true,
+      "scope": "H task requires d<1; comparison with same biases, same gates and kappa=0"
+    },
+    {
+      "c_exact": "4/5",
+      "biases_exact": [
+        "49/50",
+        "49/50",
+        "49/50"
+      ],
+      "unavailable_gate_cosines_exact": [
+        "9/10",
+        "9/10"
+      ],
+      "maximum_kappa_squared_exact": "970299/15625000000",
+      "maximum_gain_test_margin_exact": "-268472061/156250000000000",
+      "some_source_in_this_family_has_strict_H_gain": false,
+      "scope": "H task requires d<1; comparison with same biases, same gates and kappa=0"
+    }
+  ],
+  "matched_examples": [
+    {
+      "c_exact": "4/5",
+      "d_exact": "4/5",
+      "uniform_bias_exact": "3/5",
+      "kappa_exact": "64/125",
+      "all_gate_cosines": "sqrt(c)",
+      "unavailable_cosine_product_exact": "4/5",
+      "environment_readouts": 1,
+      "final_H_readouts": 1,
+      "local_G_one_read_success": {
+        "lower_exact": "22962798889755611545274393177/39614081257132168796771975168",
+        "upper_exact": "367404782236089784724390290839/633825300114114700748351602688",
+        "diagnostic": 0.579662538194581
+      },
+      "ideal_accessible_H_distance": {
+        "lower_exact": "80926814318570164991549532631/158456325028528675187087900672",
+        "upper_exact": "161853628637140329983099065263/316912650057057350374175801344",
+        "diagnostic": 0.51072
+      },
+      "finite_H_success": {
+        "lower_exact": "476985518421916314824380856377/633825300114114700748351602688",
+        "upper_exact": "119246379605479078706095214099/158456325028528675187087900672",
+        "diagnostic": 0.752550455679253
+      },
+      "independent_source_same_recovery_success": {
+        "lower_exact": "934902206464037646635498034503/1267650600228229401496703205376",
+        "upper_exact": "934902206464037646635498034537/1267650600228229401496703205376",
+        "diagnostic": 0.737507800884342
+      },
+      "strict_success_gain": {
+        "lower_exact": "9534415189897491506631839125/633825300114114700748351602688",
+        "upper_exact": "19068830379794983013263678255/1267650600228229401496703205376",
+        "diagnostic": 0.015042654794911
+      },
+      "ideal_X_environment_query_attains_accessible_bound": true,
+      "angles_optimized_over_all_possible_protocols": false
+    },
+    {
+      "c_exact": "4/5",
+      "d_exact": "4/5",
+      "uniform_bias_exact": "3/5",
+      "kappa_exact": "64/125",
+      "all_gate_cosines": "sqrt(c)",
+      "unavailable_cosine_product_exact": "4/5",
+      "environment_readouts": 3,
+      "final_H_readouts": 1,
+      "local_G_one_read_success": {
+        "lower_exact": "22962798889755611545274393177/39614081257132168796771975168",
+        "upper_exact": "367404782236089784724390290839/633825300114114700748351602688",
+        "diagnostic": 0.579662538194581
+      },
+      "ideal_accessible_H_distance": {
+        "lower_exact": "80926814318570164991549532631/158456325028528675187087900672",
+        "upper_exact": "161853628637140329983099065263/316912650057057350374175801344",
+        "diagnostic": 0.51072
+      },
+      "finite_H_success": {
+        "lower_exact": "477084011291181994843469739541/633825300114114700748351602688",
+        "upper_exact": "954168022582363989686939479119/1267650600228229401496703205376",
+        "diagnostic": 0.7527058500272665
+      },
+      "independent_source_same_recovery_success": {
+        "lower_exact": "934902206464037646635498034503/1267650600228229401496703205376",
+        "upper_exact": "934902206464037646635498034537/1267650600228229401496703205376",
+        "diagnostic": 0.737507800884342
+      },
+      "strict_success_gain": {
+        "lower_exact": "9632908059163171525720722289/633825300114114700748351602688",
+        "upper_exact": "9632908059163171525720722291/633825300114114700748351602688",
+        "diagnostic": 0.01519804914292448
+      },
+      "ideal_X_environment_query_attains_accessible_bound": true,
+      "angles_optimized_over_all_possible_protocols": false
+    }
+  ],
+  "response_error_example": {
+    "biases_exact": [
+      "3/5",
+      "3/5",
+      "3/5"
+    ],
+    "kappa_1_exact": "-64/125",
+    "kappa_2_exact": "64/125",
+    "sharp_channel_trace_distance": {
+      "lower_exact": "123317050390202156177599287817/1267650600228229401496703205376",
+      "upper_exact": "123317050390202156177599287821/1267650600228229401496703205376",
+      "diagnostic": 0.09728
+    },
+    "finite_probe_total_variation": {
+      "lower_exact": "61018253020251050366461676847/633825300114114700748351602688",
+      "upper_exact": "7627281627531381295807709607/79228162514264337593543950336",
+      "diagnostic": 0.09626982862511996
+    },
+    "largest_channel_difference_allowed_by_fixed_biases": {
+      "lower_exact": "123317050390202156177599287817/1267650600228229401496703205376",
+      "upper_exact": "123317050390202156177599287821/1267650600228229401496703205376",
+      "diagnostic": 0.09728
+    },
+    "probe_total_pair_rotations": 34,
+    "probe_extra_local_rotations": 41,
+    "probe_pure_slots": 7,
+    "readouts": 1,
+    "scope": "Fixed biased-source family and known couplings; all closed fragments and purifiers remain in the whole"
+  },
+  "quantum_theory_derived_from_cognition": false,
+  "automated_checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}

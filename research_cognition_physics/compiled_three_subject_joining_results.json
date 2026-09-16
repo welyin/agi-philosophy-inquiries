@@ -1,0 +1,81 @@
+{
+  "round": 137,
+  "input_order": [
+    "RA",
+    "RB",
+    "RC",
+    "A",
+    "B",
+    "C",
+    "E1_zero",
+    "E2_zero"
+  ],
+  "output_order": [
+    "hB",
+    "hC",
+    "R",
+    "A",
+    "B",
+    "C",
+    "E1",
+    "E2"
+  ],
+  "native_primitives": [
+    "Ry",
+    "oriented YX"
+  ],
+  "worst_joint_error_exact": "1/4",
+  "same_balanced_old_ab_joint_marginal_preserved": true,
+  "all_history_coherent_and_global_inverse_available": true,
+  "source_purifications_or_preparation_labels_accessed": false,
+  "reopening_preserves_a_second_copy_of_old_common_interface": false,
+  "resources": {
+    "fresh_global_join": {
+      "new_pure_rebits": 2,
+      "total_rebits": 8,
+      "gates": {
+        "yx": 187,
+        "ry": 47,
+        "all": 234
+      }
+    },
+    "fixed_balanced_first_then_restricted_join": {
+      "new_pure_rebits_over_both_stages": 5,
+      "total_rebits_with_old_history_retained": 11,
+      "gates": {
+        "yx": 149,
+        "ry": 42,
+        "all": 191
+      }
+    },
+    "reopen_after_first_stage_already_complete": {
+      "additional_pure_rebits": 0,
+      "total_rebits": 9,
+      "clean_unused_rebits_after_finish": 1,
+      "additional_gates": {
+        "yx": 318,
+        "ry": 82,
+        "all": 400
+      }
+    },
+    "reopen_including_cost_of_original_first_stage": {
+      "new_pure_rebits": 3,
+      "gates": {
+        "yx": 449,
+        "ry": 117,
+        "all": 566
+      }
+    },
+    "joining_readouts_for_all_rows": 0,
+    "gate_count_optimality_claimed": false,
+    "fresh_global_auxiliary_minimum_for_this_specific_channel_and_pure_unitary_model": 2,
+    "transport_storage_and_calibration_costs_included": false
+  },
+  "per_gate_angle_error_sufficient_for_extra_trace_error_1_over_1000": "1/117000 radians for fresh batch",
+  "general_n_gate_compilation_or_noisy_history_optimum_claimed": false,
+  "automated_checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}

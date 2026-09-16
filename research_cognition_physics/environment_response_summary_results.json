@@ -1,0 +1,94 @@
+{
+  "round": 108,
+  "sufficient_and_necessary_summary": "(sigma_S,C_S) for fixed couplings and fixed permanently closed remainder",
+  "general_channel_error_bound": "0.5*(trace_norm(delta_sigma_S)+trace_norm(delta_C_S))",
+  "sharp_XYY_family_channel_error": "0.5*abs(delta_kappa)*sqrt((1-lambda1^2)*(1-lambda2^2))",
+  "same_H_optimum_does_not_identify_future_record_statistics": true,
+  "same_response_does_not_require_same_global_source": true,
+  "examples": [
+    {
+      "kappa_1_exact": "0",
+      "kappa_2_exact": "1",
+      "unavailable_overlaps_exact": [
+        "9/10",
+        "9/10"
+      ],
+      "maximum_accessible_channel_output_trace_distance": {
+        "lower_exact": "120426807021681793142186804509/1267650600228229401496703205376",
+        "upper_exact": "3763337719427556035693337641/39614081257132168796771975168",
+        "diagnostic": 0.095
+      },
+      "compiled_probe_record_total_variation": {
+        "lower_exact": "1862129303596528636671804103/19807040628566084398385987584",
+        "upper_exact": "7448517214386114546687216413/79228162514264337593543950336",
+        "diagnostic": 0.09401350451671871
+      },
+      "equal_prior_source_discrimination_success": {
+        "lower_exact": "21669169932162613035057791687/39614081257132168796771975168",
+        "upper_exact": "86676679728650452140231166749/158456325028528675187087900672",
+        "diagnostic": 0.5470067522583594
+      },
+      "probe_preparation": "New M in the +1 eigenspace of L, no original AB write needed",
+      "readouts": 1,
+      "scope": "Same fixed couplings, E0 and M jointly accessible, unavailable fragments and purifiers stay closed"
+    },
+    {
+      "kappa_1_exact": "-1",
+      "kappa_2_exact": "1",
+      "unavailable_overlaps_exact": [
+        "9/10",
+        "9/10"
+      ],
+      "maximum_accessible_channel_output_trace_distance": {
+        "lower_exact": "120426807021681793142186804509/633825300114114700748351602688",
+        "upper_exact": "3763337719427556035693337641/19807040628566084398385987584",
+        "diagnostic": 0.19
+      },
+      "compiled_probe_record_total_variation": {
+        "lower_exact": "240814791717655981856442321761/1267650600228229401496703205376",
+        "upper_exact": "120407395858827990928221160885/633825300114114700748351602688",
+        "diagnostic": 0.18996937458499952
+      },
+      "equal_prior_source_discrimination_success": {
+        "lower_exact": "47139543498308918229785797723/79228162514264337593543950336",
+        "upper_exact": "754232695972942691676572763573/1267650600228229401496703205376",
+        "diagnostic": 0.5949846872924998
+      },
+      "probe_preparation": "New M in the +1 eigenspace of L, no original AB write needed",
+      "readouts": 3,
+      "scope": "Same fixed couplings, E0 and M jointly accessible, unavailable fragments and purifiers stay closed"
+    },
+    {
+      "kappa_1_exact": "-1",
+      "kappa_2_exact": "1",
+      "unavailable_overlaps_exact": [
+        "0",
+        "0"
+      ],
+      "maximum_accessible_channel_output_trace_distance": {
+        "lower_exact": "1",
+        "upper_exact": "1267650600228229401496703205377/1267650600228229401496703205376",
+        "diagnostic": 1.0
+      },
+      "compiled_probe_record_total_variation": {
+        "lower_exact": "156810888723918200982888766571/158456325028528675187087900672",
+        "upper_exact": "1254487109791345607863110132701/1267650600228229401496703205376",
+        "diagnostic": 0.9896158370180917
+      },
+      "equal_prior_source_discrimination_success": {
+        "lower_exact": "315267213752446876169976667243/316912650057057350374175801344",
+        "upper_exact": "1261068855009787504679906669039/1267650600228229401496703205376",
+        "diagnostic": 0.9948079185090458
+      },
+      "probe_preparation": "New M in the +1 eigenspace of L, no original AB write needed",
+      "readouts": 1,
+      "scope": "Same fixed couplings, E0 and M jointly accessible, unavailable fragments and purifiers stay closed"
+    }
+  ],
+  "quantum_theory_derived_from_cognition": false,
+  "automated_checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}

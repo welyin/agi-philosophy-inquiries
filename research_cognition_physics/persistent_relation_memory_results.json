@@ -1,0 +1,54 @@
+{
+  "round": 90,
+  "write_isometry": "|0>_M tensor Pi_minus + |1>_M tensor Pi_plus",
+  "whole_within_one_yy_sector_is_preserved_and_memory_decouples": true,
+  "ignoring_memory_channel": "(rho + YY rho YY)/2, with identity on spectators",
+  "fixed_point_condition": "[rho, YY tensor I_spectator] = 0",
+  "noncommuting_example_old_whole_trace_distance_exact": "1/2",
+  "full_write_before_readout_is_reversible": true,
+  "all_finite_readout_branches_retained": true,
+  "post_split_memory_read_certificates": [
+    {
+      "old_readouts": 1,
+      "new_memory_rebits": 1,
+      "reusable_read_pointer_rebits": 1,
+      "old_pair_interactions_to_write": 3,
+      "old_local_rotations_to_write": 3,
+      "old_pair_interactions_per_pointer_read": 1,
+      "old_local_rotations_per_pointer_read": 3,
+      "success_lower_exact": "315267213752446876169976667243/316912650057057350374175801344",
+      "success_diagnostic": 0.9948079185090458
+    },
+    {
+      "old_readouts": 3,
+      "new_memory_rebits": 1,
+      "reusable_read_pointer_rebits": 1,
+      "old_pair_interactions_to_write": 3,
+      "old_local_rotations_to_write": 3,
+      "old_pair_interactions_per_pointer_read": 1,
+      "old_local_rotations_per_pointer_read": 3,
+      "success_lower_exact": "1267548436213209389844252449439/1267650600228229401496703205376",
+      "success_diagnostic": 0.9999194068026303
+    },
+    {
+      "old_readouts": 5,
+      "new_memory_rebits": 1,
+      "reusable_read_pointer_rebits": 1,
+      "old_pair_interactions_to_write": 3,
+      "old_local_rotations_to_write": 3,
+      "old_pair_interactions_per_pointer_read": 1,
+      "old_local_rotations_per_pointer_read": 3,
+      "success_lower_exact": "633824419865049293149802223763/633825300114114700748351602688",
+      "success_diagnostic": 0.9999986112118509
+    }
+  ],
+  "universal_preservation_of_old_real_local_statistics_allows_nontrivial_record": false,
+  "no_information_proof_scope": "Exact universal preservation; finite dimensional complex CPTP instrument",
+  "prepared_memory_and_control_resources_derived_from_cognition": false,
+  "quantum_theory_derived_from_cognition": false,
+  "automated_checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}

@@ -1,0 +1,366 @@
+{
+  "round": 117,
+  "finite_refresh_and_audit": {
+    "window": 512,
+    "blocks": 8,
+    "rate_per_source_exact": "1/4096",
+    "target_exact": "1/10",
+    "source_path": "clip(R-(source_index-1)*rate,-R,R); query preparations also advance the index",
+    "controller_uses_true_path_values": false,
+    "auditor": "Compare adjacent average-kappa intervals; conflict locks all later enhanced queries to fallback.",
+    "rows": [
+      {
+        "look": 1,
+        "calibration_first_source_index": 1,
+        "query_source_index": 513,
+        "true_query_kappa_for_evaluation_exact": "387/1000",
+        "positive_action_probability": {
+          "lower_exact": "1265647213246461544255553753619/1267650600228229401496703205376",
+          "upper_exact": "1265647213246461544255553861583/1267650600228229401496703205376",
+          "diagnostic": 0.9984196063320546
+        },
+        "negative_action_probability": {
+          "lower_exact": "0",
+          "upper_exact": "2033/158456325028528675187087900672",
+          "diagnostic": 6.415016881257268e-27
+        },
+        "fallback_probability_including_locked_audit": {
+          "lower_exact": "2003386981767857241149327529/1267650600228229401496703205376",
+          "upper_exact": "2003386981767857241149451757/1267650600228229401496703205376",
+          "diagnostic": 0.0015803936679453826
+        },
+        "cumulative_audit_lock_probability": {
+          "lower_exact": "85584835425545157551/158456325028528675187087900672",
+          "upper_exact": "684678683404361471245/1267650600228229401496703205376",
+          "diagnostic": 5.401162459758951e-10
+        },
+        "refreshed_H_success": {
+          "lower_exact": "474646390951579324289456665787/633825300114114700748351602688",
+          "upper_exact": "949292781903158648578913333027/1267650600228229401496703205376",
+          "diagnostic": 0.7488599632518983
+        },
+        "stale_first_policy_H_success": {
+          "lower_exact": "474646390951579324289456665787/633825300114114700748351602688",
+          "upper_exact": "949292781903158648578913333027/1267650600228229401496703205376",
+          "diagnostic": 0.7488599632518983
+        }
+      },
+      {
+        "look": 2,
+        "calibration_first_source_index": 514,
+        "query_source_index": 1026,
+        "true_query_kappa_for_evaluation_exact": "134019/512000",
+        "positive_action_probability": {
+          "lower_exact": "109274605397787284718244516485/316912650057057350374175801344",
+          "upper_exact": "218549210795574569436489098843/633825300114114700748351602688",
+          "diagnostic": 0.34480985652706936
+        },
+        "negative_action_probability": {
+          "lower_exact": "0",
+          "upper_exact": "11/158456325028528675187087900672",
+          "diagnostic": 3.470987982972452e-29
+        },
+        "fallback_probability_including_locked_audit": {
+          "lower_exact": "415276089318540131311862503801/633825300114114700748351602688",
+          "upper_exact": "207638044659270065655931284859/316912650057057350374175801344",
+          "diagnostic": 0.6551901434729306
+        },
+        "cumulative_audit_lock_probability": {
+          "lower_exact": "1030027594765887226751/633825300114114700748351602688",
+          "upper_exact": "2060055189531774801379/1267650600228229401496703205376",
+          "diagnostic": 1.6250970016192788e-09
+        },
+        "refreshed_H_success": {
+          "lower_exact": "938263683731202876047290521945/1267650600228229401496703205376",
+          "upper_exact": "938263683731202876047290522995/1267650600228229401496703205376",
+          "diagnostic": 0.7401595388841978
+        },
+        "stale_first_policy_H_success": {
+          "lower_exact": "472317792432235730111430821137/633825300114114700748351602688",
+          "upper_exact": "944635584864471460222861643267/1267650600228229401496703205376",
+          "diagnostic": 0.7451860825801668
+        }
+      },
+      {
+        "look": 3,
+        "calibration_first_source_index": 1027,
+        "query_source_index": 1539,
+        "true_query_kappa_for_evaluation_exact": "34947/256000",
+        "positive_action_probability": {
+          "lower_exact": "115405035201278830414296541/633825300114114700748351602688",
+          "upper_exact": "57702517600639415207159677/316912650057057350374175801344",
+          "diagnostic": 0.0001820770410718871
+        },
+        "negative_action_probability": {
+          "lower_exact": "0",
+          "upper_exact": "11/158456325028528675187087900672",
+          "diagnostic": 3.470987982972452e-29
+        },
+        "fallback_probability_including_locked_audit": {
+          "lower_exact": "316854947539456710958968641645/316912650057057350374175801344",
+          "upper_exact": "633709895078913421917937306147/633825300114114700748351602688",
+          "diagnostic": 0.9998179229589281
+        },
+        "cumulative_audit_lock_probability": {
+          "lower_exact": "2947703272089816411799/1267650600228229401496703205376",
+          "upper_exact": "1473851636044908466361/633825300114114700748351602688",
+          "diagnostic": 2.325327871543711e-09
+        },
+        "refreshed_H_success": {
+          "lower_exact": "934903132183120514584287266991/1267650600228229401496703205376",
+          "upper_exact": "467451566091560257292143633605/633825300114114700748351602688",
+          "diagnostic": 0.7375085311479357
+        },
+        "stale_first_policy_H_success": {
+          "lower_exact": "939978387825784271866809952973/1267650600228229401496703205376",
+          "upper_exact": "234994596956446067966702488377/316912650057057350374175801344",
+          "diagnostic": 0.7415122019084355
+        }
+      },
+      {
+        "look": 4,
+        "calibration_first_source_index": 1540,
+        "query_source_index": 2052,
+        "true_query_kappa_for_evaluation_exact": "5769/512000",
+        "positive_action_probability": {
+          "lower_exact": "9429765125954545301/316912650057057350374175801344",
+          "upper_exact": "9429765125954552937/316912650057057350374175801344",
+          "diagnostic": 2.975509221312814e-11
+        },
+        "negative_action_probability": {
+          "lower_exact": "7115473/1267650600228229401496703205376",
+          "upper_exact": "3557953/633825300114114700748351602688",
+          "diagnostic": 5.613289260241649e-24
+        },
+        "fallback_probability_including_locked_audit": {
+          "lower_exact": "633825300095255170496438938861/633825300114114700748351602688",
+          "upper_exact": "1267650600190510340992877908699/1267650600228229401496703205376",
+          "diagnostic": 0.9999999999702449
+        },
+        "cumulative_audit_lock_probability": {
+          "lower_exact": "6150188742758312883/2475880078570760549798248448",
+          "upper_exact": "3148896636292256888203/1267650600228229401496703205376",
+          "diagnostic": 2.484041450952909e-09
+        },
+        "refreshed_H_success": {
+          "lower_exact": "934902206464050133286490683385/1267650600228229401496703205376",
+          "upper_exact": "467451103232025066643245341715/633825300114114700748351602688",
+          "diagnostic": 0.7375078008843519
+        },
+        "stale_first_policy_H_success": {
+          "lower_exact": "935321190787097083510758263673/1267650600228229401496703205376",
+          "upper_exact": "467660595393548541755379131875/633825300114114700748351602688",
+          "diagnostic": 0.7378383212367041
+        }
+      },
+      {
+        "look": 5,
+        "calibration_first_source_index": 2053,
+        "query_source_index": 2565,
+        "true_query_kappa_for_evaluation_exact": "-14589/128000",
+        "positive_action_probability": {
+          "lower_exact": "523244191/1267650600228229401496703205376",
+          "upper_exact": "65407513/158456325028528675187087900672",
+          "diagnostic": 4.127731627356884e-22
+        },
+        "negative_action_probability": {
+          "lower_exact": "38020827261735609/316912650057057350374175801344",
+          "upper_exact": "152083309046954259/1267650600228229401496703205376",
+          "diagnostic": 1.1997257684378257e-13
+        },
+        "fallback_probability_including_locked_audit": {
+          "lower_exact": "1267650600228077318187132991013/1267650600228229401496703205376",
+          "upper_exact": "1267650600228077318187133018749/1267650600228229401496703205376",
+          "diagnostic": 0.99999999999988
+        },
+        "cumulative_audit_lock_probability": {
+          "lower_exact": "796197469221436975297/316912650057057350374175801344",
+          "upper_exact": "3184789876885748764541/1267650600228229401496703205376",
+          "diagnostic": 2.512356225218806e-09
+        },
+        "refreshed_H_success": {
+          "lower_exact": "233725551616009538977412659251/316912650057057350374175801344",
+          "upper_exact": "233725551616009538977412659283/316912650057057350374175801344",
+          "diagnostic": 0.7375078008843424
+        },
+        "stale_first_policy_H_success": {
+          "lower_exact": "930663993748409895154706573955/1267650600228229401496703205376",
+          "upper_exact": "116332999218551236894338321801/158456325028528675187087900672",
+          "diagnostic": 0.7341644405649727
+        }
+      },
+      {
+        "look": 6,
+        "calibration_first_source_index": 2566,
+        "query_source_index": 3078,
+        "true_query_kappa_for_evaluation_exact": "-122481/512000",
+        "positive_action_probability": {
+          "lower_exact": "0",
+          "upper_exact": "3687/633825300114114700748351602688",
+          "diagnostic": 2.9085301575498705e-27
+        },
+        "negative_action_probability": {
+          "lower_exact": "1478307776164399989264069/1267650600228229401496703205376",
+          "upper_exact": "1478307776164399989297105/1267650600228229401496703205376",
+          "diagnostic": 1.1661792105003095e-06
+        },
+        "fallback_probability_including_locked_audit": {
+          "lower_exact": "1267649121920453237096713900897/1267650600228229401496703205376",
+          "upper_exact": "1267649121920453237096713941307/1267650600228229401496703205376",
+          "diagnostic": 0.9999988338207895
+        },
+        "cumulative_audit_lock_probability": {
+          "lower_exact": "398468729352278819041/158456325028528675187087900672",
+          "upper_exact": "1593874917409115798705/633825300114114700748351602688",
+          "diagnostic": 2.5146912203128407e-09
+        },
+        "refreshed_H_success": {
+          "lower_exact": "934902216854099959688353134681/1267650600228229401496703205376",
+          "upper_exact": "116862777106762494961044141875/158456325028528675187087900672",
+          "diagnostic": 0.7375078090806559
+        },
+        "stale_first_policy_H_success": {
+          "lower_exact": "926006796709722706798654884197/1267650600228229401496703205376",
+          "upper_exact": "231501699177430676699663721277/316912650057057350374175801344",
+          "diagnostic": 0.7304905598932413
+        }
+      },
+      {
+        "look": 7,
+        "calibration_first_source_index": 3079,
+        "query_source_index": 3591,
+        "true_query_kappa_for_evaluation_exact": "-93303/256000",
+        "positive_action_probability": {
+          "lower_exact": "0",
+          "upper_exact": "1223/1267650600228229401496703205376",
+          "diagnostic": 4.823884435426487e-28
+        },
+        "negative_action_probability": {
+          "lower_exact": "25095203388896433369513670987/1267650600228229401496703205376",
+          "upper_exact": "12547601694448216684756872815/633825300114114700748351602688",
+          "diagnostic": 0.019796624862070244
+        },
+        "fallback_probability_including_locked_audit": {
+          "lower_exact": "1242555396839332968127189458523/1267650600228229401496703205376",
+          "upper_exact": "1242555396839332968127189534389/1267650600228229401496703205376",
+          "diagnostic": 0.9802033751379298
+        },
+        "cumulative_audit_lock_probability": {
+          "lower_exact": "3187892067848964996715/1267650600228229401496703205376",
+          "upper_exact": "1593946033924483115013/633825300114114700748351602688",
+          "diagnostic": 2.514803422390218e-09
+        },
+        "refreshed_H_success": {
+          "lower_exact": "116896365877611043530478363209/158456325028528675187087900672",
+          "upper_exact": "116896365877611043530478363315/158456325028528675187087900672",
+          "diagnostic": 0.7377197840260707
+        },
+        "stale_first_policy_H_success": {
+          "lower_exact": "460674799835517759221301597219/633825300114114700748351602688",
+          "upper_exact": "921349599671035518442603195807/1267650600228229401496703205376",
+          "diagnostic": 0.7268166792215099
+        }
+      },
+      {
+        "look": 8,
+        "calibration_first_source_index": 3592,
+        "query_source_index": 4104,
+        "true_query_kappa_for_evaluation_exact": "-250731/512000",
+        "positive_action_probability": {
+          "lower_exact": "0",
+          "upper_exact": "11/158456325028528675187087900672",
+          "diagnostic": 3.470987982972452e-29
+        },
+        "negative_action_probability": {
+          "lower_exact": "471969828474559529441868547957/633825300114114700748351602688",
+          "upper_exact": "471969828474559529441869045317/633825300114114700748351602688",
+          "diagnostic": 0.7446370922548934
+        },
+        "fallback_probability_including_locked_audit": {
+          "lower_exact": "161855471639555171306482557327/633825300114114700748351602688",
+          "upper_exact": "161855471639555171306483054731/633825300114114700748351602688",
+          "diagnostic": 0.2553629077451066
+        },
+        "cumulative_audit_lock_probability": {
+          "lower_exact": "1593946519043533052389/633825300114114700748351602688",
+          "upper_exact": "1593946519043533761903/633825300114114700748351602688",
+          "diagnostic": 2.514804187773125e-09
+        },
+        "refreshed_H_success": {
+          "lower_exact": "948483365417412068381922981385/1267650600228229401496703205376",
+          "upper_exact": "118560420677176508547740374467/158456325028528675187087900672",
+          "diagnostic": 0.7482214462302514
+        },
+        "stale_first_policy_H_success": {
+          "lower_exact": "916692402632348330086551504679/1267650600228229401496703205376",
+          "upper_exact": "916692402632348330086551506507/1267650600228229401496703205376",
+          "diagnostic": 0.7231427985497785
+        }
+      }
+    ],
+    "fallback_success": {
+      "lower_exact": "934902206464037646635498034503/1267650600228229401496703205376",
+      "upper_exact": "934902206464037646635498034537/1267650600228229401496703205376",
+      "diagnostic": 0.737507800884342
+    },
+    "mean_refreshed_H_success": {
+      "lower_exact": "938852565004746338090091932829/1267650600228229401496703205376",
+      "upper_exact": "234713141251186584522522983783/316912650057057350374175801344",
+      "diagnostic": 0.7406240842987131
+    },
+    "mean_stale_first_policy_H_success": {
+      "lower_exact": "466496296133876744666366209235/633825300114114700748351602688",
+      "upper_exact": "932992592267753489332732419423/1267650600228229401496703205376",
+      "diagnostic": 0.7360013809008384
+    },
+    "total_expected_extra_correct_H_answers": {
+      "lower_exact": "31602868325669531636751186613/1267650600228229401496703205376",
+      "upper_exact": "15801434162834765818375602377/633825300114114700748351602688",
+      "diagnostic": 0.02493026731496811
+    },
+    "uniform_confidence_failure_upper": {
+      "lower_exact": "1828682368937147051106166337/633825300114114700748351602688",
+      "upper_exact": "1828682368937147051106166339/633825300114114700748351602688",
+      "diagnostic": 0.0028851520578429242
+    },
+    "resources": {
+      "calibration_preparations": 4096,
+      "query_preparations": 8,
+      "pair_rotations_upper": 139568,
+      "extra_local_rotations_upper": 168304,
+      "fresh_pure_slots_allocated_and_retained": 28736,
+      "actual_readouts": 4112,
+      "calibration_result_bits": 4096,
+      "policy_bits": 16,
+      "query_return_bits": 8,
+      "classical_arithmetic_and_transport_cost_modelled": false,
+      "calibration_continues_on_fixed_schedule_after_audit_lock": true
+    },
+    "scope": "Independent but nonidentical source copies for this numerical path; conditional-mean theorem itself permits dependence."
+  },
+  "observed_violation_example": {
+    "window": 512,
+    "first_positive_count": 385,
+    "second_positive_count": 127,
+    "first_average_interval": {
+      "lower_exact": "108415566266361500509041591087/316912650057057350374175801344",
+      "upper_exact": "649037107316853453566312041153/1267650600228229401496703205376",
+      "diagnostic": 0.42704960348986104
+    },
+    "second_average_interval": {
+      "lower_exact": "-649037107316853453566312041153/1267650600228229401496703205376",
+      "upper_exact": "-419037328284521538872553905071/1267650600228229401496703205376",
+      "diagnostic": -0.421281083055961
+    },
+    "minimum_parameter_gap_lower_exact": "852699593349967540908720269419/1267650600228229401496703205376",
+    "permitted_gap_exact": "513/4096",
+    "reject_declared_rate_or_confidence_event": true,
+    "passing_this_test_does_not_prove_future_stability": true
+  },
+  "quantum_theory_derived_from_cognition": false,
+  "automated_checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}
