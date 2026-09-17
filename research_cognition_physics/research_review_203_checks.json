@@ -1,0 +1,46 @@
+{
+  "round": 203,
+  "date": "2026-09-17",
+  "test_scope": "Targeted new audit and four directly related old modules; not full historical regression",
+  "tests": {
+    "modules": {
+      "feedback_policy_audit": 8,
+      "classical_self_audit": 8,
+      "real_self_audit": 8,
+      "real_prediction_code": 7,
+      "joint_relation_records": 8
+    },
+    "total": 39,
+    "failures": 0,
+    "errors": 0,
+    "elapsed_seconds": 0.407,
+    "passed": true
+  },
+  "new_tests": 8,
+  "full_historical_regression_rerun_this_round": false,
+  "previous_full_regression": {
+    "rounds": [
+      200,
+      201,
+      202
+    ],
+    "tests": 1706,
+    "elapsed_seconds": 150.189
+  },
+  "test_invocation": "unittest.defaultTestLoader.loadTestsFromName for each module listed above; no old --write-results calls",
+  "local_markdown_links_checked": 1330,
+  "ledger_path_references_checked": 125,
+  "historical_catalog_entries_checked": 210,
+  "catalog_checks": "All paths, contiguous round ranges, and SHA256 values agree with files after the documented round-192 wording correction",
+  "protected_certificates_unchanged": {
+    "polygon_coupling_candidate.json": "15b0efd2836f6e4495154b2413c66320fb5f04c9e382d92af4c5cf099c1868c8",
+    "polygon_coupling_2048_014473_compressed.json": "d23a54f352128c76b1bd6470cc41c80ef573db942655e711f195419d0f3eea1b",
+    "half_face_candidate_512.json": "96d1a68edb538d0b74270fa93b45bcefaf3ca3871b7eaacb6c4a4c26409fb8b6",
+    "half_face_candidate_2048.json": "a5c6087afee1546fc69416fcf2c0172c7e668b3ad637536394e4a941977a34f0",
+    "global_history_cover.json": "361b10b87e9de79b7779fdb372e6cf2cae3c3489dc8e71ec450ead0a72213fa2",
+    "four_angle_global_cover.json": "63a0c6f5c801ec641f9de1319fead8580fea934fee66d82fdc6598174a2009e8",
+    "relational_history_cover.json": "bd700388941e8daf900a7eaf6b47de862271eedac5980746e1a624ef0b7e25fc"
+  },
+  "git_diff_check_passed": true,
+  "all_reported_checks_passed": true
+}

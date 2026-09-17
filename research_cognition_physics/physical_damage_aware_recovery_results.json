@@ -1,0 +1,608 @@
+{
+  "round": 157,
+  "three_read_protocol_identical_to_original_once_per_label_bit_protocol": true,
+  "three_read_bound_formula": "(4e-5e^2+4e^3)/6 + (sqrt(3)/2)*(4e-3e^2)/2",
+  "three_read_legal_maximally_mixed_input_purification_diagnostic": {
+    "overlap": 0.5984078333064196,
+    "trace_error": 0.4361668361397797
+  },
+  "diagnostic_is_not_a_worst_case_certificate": true,
+  "certificates": [
+    {
+      "labels": 6,
+      "reads": 3,
+      "contrast_exact": "1/2",
+      "old_label_risk_certificate": {
+        "lower_exact": "42423212596339341303728403433/79228162514264337593543950336",
+        "upper_exact": "84846425192678682607456806875/158456325028528675187087900672",
+        "diagnostic": 0.535456222258107
+      },
+      "old_policy_with_sharp_costs": {
+        "lower_exact": "154189790144947147210194140137/316912650057057350374175801344",
+        "upper_exact": "154189790144947147210194140271/316912650057057350374175801344",
+        "diagnostic": 0.4865371897183234
+      },
+      "new_policy_with_sharp_costs": {
+        "lower_exact": "152306838678589095274174847265/316912650057057350374175801344",
+        "upper_exact": "152306838678589095274174847401/316912650057057350374175801344",
+        "diagnostic": 0.4805956425253696
+      },
+      "loss_polynomial": [
+        24,
+        24,
+        32,
+        0,
+        12,
+        60,
+        48,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bellman_states": 70,
+      "certified_strict_comparisons": 245,
+      "reachable_policy_states": 15,
+      "new_native_gates_after_first_join": 413,
+      "fresh_pointer_initializations": 3,
+      "optimal_for_this_cost_matrix": true,
+      "optimal_actual_quantum_trace_distance_claimed": false,
+      "independent_encoded_source_promise_required": true,
+      "new_yx_after_first_join": 293,
+      "new_ry_after_first_join": 120,
+      "total_gates_including_166_gate_first_join": 579,
+      "reports": [
+        {
+          "report": 0,
+          "probability": {
+            "lower_exact": "98897371514164406473021831285/633825300114114700748351602688",
+            "upper_exact": "98897371514164406473021831305/633825300114114700748351602688",
+            "diagnostic": 0.15603254003328487
+          },
+          "conditional_promised_error_upper": {
+            "lower_exact": "633827766337217816063175353283/1267650600228229401496703205376",
+            "upper_exact": "633827766337217816063175353611/1267650600228229401496703205376",
+            "diagnostic": 0.5000019455069896
+          }
+        },
+        {
+          "report": 1,
+          "probability": {
+            "lower_exact": "98897371514164406473021831285/633825300114114700748351602688",
+            "upper_exact": "98897371514164406473021831305/633825300114114700748351602688",
+            "diagnostic": 0.15603254003328487
+          },
+          "conditional_promised_error_upper": {
+            "lower_exact": "642478721609961215000490454287/1267650600228229401496703205376",
+            "upper_exact": "642478721609961215000490454611/1267650600228229401496703205376",
+            "diagnostic": 0.5068263459144724
+          }
+        },
+        {
+          "report": 2,
+          "probability": {
+            "lower_exact": "66160588453937820844969886447/316912650057057350374175801344",
+            "upper_exact": "264642353815751283379879545845/1267650600228229401496703205376",
+            "diagnostic": 0.20876600679091284
+          },
+          "conditional_promised_error_upper": {
+            "lower_exact": "308440747249716515157596106441/633825300114114700748351602688",
+            "upper_exact": "154220373624858257578798053303/316912650057057350374175801344",
+            "diagnostic": 0.48663369416491337
+          }
+        },
+        {
+          "report": 3,
+          "probability": {
+            "lower_exact": "66160588453937820844969886447/316912650057057350374175801344",
+            "upper_exact": "264642353815751283379879545845/1267650600228229401496703205376",
+            "diagnostic": 0.20876600679091284
+          },
+          "conditional_promised_error_upper": {
+            "lower_exact": "308440747249716515157596106441/633825300114114700748351602688",
+            "upper_exact": "154220373624858257578798053303/316912650057057350374175801344",
+            "diagnostic": 0.48663369416491337
+          }
+        },
+        {
+          "report": 4,
+          "probability": {
+            "lower_exact": "171388203270034604422428394259/1267650600228229401496703205376",
+            "upper_exact": "171388203270034604422428394295/1267650600228229401496703205376",
+            "diagnostic": 0.13520145317580226
+          },
+          "conditional_promised_error_upper": {
+            "lower_exact": "565712979662550015666591940885/1267650600228229401496703205376",
+            "upper_exact": "565712979662550015666591941205/1267650600228229401496703205376",
+            "diagnostic": 0.44626885323187504
+          }
+        },
+        {
+          "report": 5,
+          "probability": {
+            "lower_exact": "171388203270034604422428394259/1267650600228229401496703205376",
+            "upper_exact": "171388203270034604422428394295/1267650600228229401496703205376",
+            "diagnostic": 0.13520145317580226
+          },
+          "conditional_promised_error_upper": {
+            "lower_exact": "281169396787593921074472278049/633825300114114700748351602688",
+            "upper_exact": "562338793575187842148944556417/1267650600228229401496703205376",
+            "diagnostic": 0.44360708974061436
+          }
+        }
+      ],
+      "accessible_coherent_history_rebits": 1,
+      "decoded_message_bits": 3,
+      "raw_readout_bits_retained": 3,
+      "all_results_accepted": true,
+      "source_purification_and_noise_baths_closed": true,
+      "all_environment_and_readout_systems_retained": true,
+      "ideal_gate_angles_and_coherent_storage_assumed": true,
+      "classical_compute_transport_calibration_and_source_costs_included": false,
+      "only_sum_of_sharp_conditional_costs_optimized": true
+    },
+    {
+      "labels": 6,
+      "reads": 5,
+      "contrast_exact": "1/2",
+      "old_label_risk_certificate": {
+        "lower_exact": "280534766251520514496139820277/633825300114114700748351602688",
+        "upper_exact": "140267383125760257248069910185/316912650057057350374175801344",
+        "diagnostic": 0.4426058193022788
+      },
+      "old_policy_with_sharp_costs": {
+        "lower_exact": "127394763979014401219672193805/316912650057057350374175801344",
+        "upper_exact": "3981086374344200038114756069/9903520314283042199192993792",
+        "diagnostic": 0.4019869953316098
+      },
+      "new_policy_with_sharp_costs": {
+        "lower_exact": "7828780030864992420509422065/19807040628566084398385987584",
+        "upper_exact": "125260480493839878728150753441/316912650057057350374175801344",
+        "diagnostic": 0.39525238412315766
+      },
+      "loss_polynomial": [
+        24,
+        112,
+        56,
+        128,
+        0,
+        0,
+        12,
+        64,
+        212,
+        168,
+        24,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bellman_states": 301,
+      "certified_strict_comparisons": 934,
+      "reachable_policy_states": 48,
+      "new_native_gates_after_first_join": 421,
+      "fresh_pointer_initializations": 5,
+      "optimal_for_this_cost_matrix": true,
+      "optimal_actual_quantum_trace_distance_claimed": false,
+      "independent_encoded_source_promise_required": true,
+      "new_yx_after_first_join": 295,
+      "new_ry_after_first_join": 126,
+      "total_gates_including_166_gate_first_join": 587,
+      "reports": [
+        {
+          "report": 0,
+          "probability": {
+            "lower_exact": "235136665928870978608999760961/1267650600228229401496703205376",
+            "upper_exact": "117568332964435489304499880519/633825300114114700748351602688",
+            "diagnostic": 0.1854901231352998
+          },
+          "conditional_promised_error_upper": {
+            "lower_exact": "574390765225621906029518523335/1267650600228229401496703205376",
+            "upper_exact": "574390765225621906029518523783/1267650600228229401496703205376",
+            "diagnostic": 0.45311441900647376
+          }
+        },
+        {
+          "report": 1,
+          "probability": {
+            "lower_exact": "2996173294369442056281504117/19807040628566084398385987584",
+            "upper_exact": "1498086647184721028140752059/9903520314283042199192993792",
+            "diagnostic": 0.15126809454049914
+          },
+          "conditional_promised_error_upper": {
+            "lower_exact": "277626680711730395770058670799/633825300114114700748351602688",
+            "upper_exact": "277626680711730395770058671021/633825300114114700748351602688",
+            "diagnostic": 0.4380176693195209
+          }
+        },
+        {
+          "report": 2,
+          "probability": {
+            "lower_exact": "14127572355824412163097177287/79228162514264337593543950336",
+            "upper_exact": "226041157693190594609554836671/1267650600228229401496703205376",
+            "diagnostic": 0.1783150322750558
+          },
+          "conditional_promised_error_upper": {
+            "lower_exact": "107694627222001026363877894045/316912650057057350374175801344",
+            "upper_exact": "215389254444002052727755788289/633825300114114700748351602688",
+            "diagnostic": 0.3398243244711486
+          }
+        },
+        {
+          "report": 3,
+          "probability": {
+            "lower_exact": "119162703785095997223885341769/633825300114114700748351602688",
+            "upper_exact": "238325407570191994447770683619/1267650600228229401496703205376",
+            "diagnostic": 0.18800559675298822
+          },
+          "conditional_promised_error_upper": {
+            "lower_exact": "116290096792416283084432327411/316912650057057350374175801344",
+            "upper_exact": "232580193584832566168864655021/633825300114114700748351602688",
+            "diagnostic": 0.36694684409561834
+          }
+        },
+        {
+          "report": 4,
+          "probability": {
+            "lower_exact": "172647476492053127529797005029/1267650600228229401496703205376",
+            "upper_exact": "86323738246026563764898502543/633825300114114700748351602688",
+            "diagnostic": 0.1361948445896444
+          },
+          "conditional_promised_error_upper": {
+            "lower_exact": "491070632426505984691952370923/1267650600228229401496703205376",
+            "upper_exact": "491070632426505984691952371321/1267650600228229401496703205376",
+            "diagnostic": 0.3873864236234283
+          }
+        },
+        {
+          "report": 5,
+          "probability": {
+            "lower_exact": "203744801704278414698564655555/1267650600228229401496703205376",
+            "upper_exact": "25468100213034801837320581953/158456325028528675187087900672",
+            "diagnostic": 0.1607263087065126
+          },
+          "conditional_promised_error_upper": {
+            "lower_exact": "493744070385753047213861053295/1267650600228229401496703205376",
+            "upper_exact": "246872035192876523606930526859/633825300114114700748351602688",
+            "diagnostic": 0.38949539431201213
+          }
+        }
+      ],
+      "accessible_coherent_history_rebits": 1,
+      "decoded_message_bits": 3,
+      "raw_readout_bits_retained": 5,
+      "all_results_accepted": true,
+      "source_purification_and_noise_baths_closed": true,
+      "all_environment_and_readout_systems_retained": true,
+      "ideal_gate_angles_and_coherent_storage_assumed": true,
+      "classical_compute_transport_calibration_and_source_costs_included": false,
+      "only_sum_of_sharp_conditional_costs_optimized": true
+    },
+    {
+      "labels": 4,
+      "reads": 4,
+      "contrast_exact": "1/2",
+      "old_label_risk_certificate": {
+        "lower_exact": "623398519587634400718366805765/1267650600228229401496703205376",
+        "upper_exact": "623398519587634400718366805905/1267650600228229401496703205376",
+        "diagnostic": 0.49177472047533993
+      },
+      "old_policy_with_sharp_costs": {
+        "lower_exact": "146331331238929290773960487453/316912650057057350374175801344",
+        "upper_exact": "146331331238929290773960487633/316912650057057350374175801344",
+        "diagnostic": 0.4617402656933499
+      },
+      "new_policy_with_sharp_costs": {
+        "lower_exact": "146331331238929290773960487453/316912650057057350374175801344",
+        "upper_exact": "146331331238929290773960487633/316912650057057350374175801344",
+        "diagnostic": 0.4617402656933499
+      },
+      "loss_polynomial": [
+        4,
+        16,
+        88,
+        32,
+        4,
+        8,
+        32,
+        16,
+        8,
+        0,
+        4,
+        12,
+        16,
+        0,
+        0,
+        0,
+        0,
+        0,
+        16,
+        4,
+        0,
+        4,
+        8,
+        0,
+        0
+      ],
+      "bellman_states": 55,
+      "certified_strict_comparisons": 89,
+      "reachable_policy_states": 22,
+      "new_native_gates_after_first_join": 421,
+      "fresh_pointer_initializations": 4,
+      "optimal_for_this_cost_matrix": true,
+      "optimal_actual_quantum_trace_distance_claimed": false,
+      "independent_encoded_source_promise_required": true,
+      "new_yx_after_first_join": 296,
+      "new_ry_after_first_join": 125,
+      "total_gates_including_166_gate_first_join": 587,
+      "reports": [
+        {
+          "report": 0,
+          "probability": {
+            "lower_exact": "219440733816574696653782208267/633825300114114700748351602688",
+            "upper_exact": "438881467633149393307564416641/1267650600228229401496703205376",
+            "diagnostic": 0.34621643184181244
+          },
+          "conditional_promised_error_upper": {
+            "lower_exact": "311242327954635711503681736591/633825300114114700748351602688",
+            "upper_exact": "622484655909271423007363473519/1267650600228229401496703205376",
+            "diagnostic": 0.49105380914677793
+          }
+        },
+        {
+          "report": 1,
+          "probability": {
+            "lower_exact": "219440733816574696653782208267/633825300114114700748351602688",
+            "upper_exact": "438881467633149393307564416641/1267650600228229401496703205376",
+            "diagnostic": 0.34621643184181244
+          },
+          "conditional_promised_error_upper": {
+            "lower_exact": "311242327954635711503681736591/633825300114114700748351602688",
+            "upper_exact": "622484655909271423007363473519/1267650600228229401496703205376",
+            "diagnostic": 0.49105380914677793
+          }
+        },
+        {
+          "report": 2,
+          "probability": {
+            "lower_exact": "194943832480965307440787186075/1267650600228229401496703205376",
+            "upper_exact": "12183989530060331715049199133/79228162514264337593543950336",
+            "diagnostic": 0.15378356815818758
+          },
+          "conditional_promised_error_upper": {
+            "lower_exact": "501667681122567387333544536279/1267650600228229401496703205376",
+            "upper_exact": "250833840561283693666772268309/633825300114114700748351602688",
+            "diagnostic": 0.3957460210504744
+          }
+        },
+        {
+          "report": 3,
+          "probability": {
+            "lower_exact": "194943832480965307440787186075/1267650600228229401496703205376",
+            "upper_exact": "12183989530060331715049199133/79228162514264337593543950336",
+            "diagnostic": 0.15378356815818758
+          },
+          "conditional_promised_error_upper": {
+            "lower_exact": "501667681122567387333544536279/1267650600228229401496703205376",
+            "upper_exact": "250833840561283693666772268309/633825300114114700748351602688",
+            "diagnostic": 0.3957460210504744
+          }
+        }
+      ],
+      "accessible_coherent_history_rebits": 1,
+      "decoded_message_bits": 2,
+      "raw_readout_bits_retained": 4,
+      "all_results_accepted": true,
+      "source_purification_and_noise_baths_closed": true,
+      "all_environment_and_readout_systems_retained": true,
+      "ideal_gate_angles_and_coherent_storage_assumed": true,
+      "classical_compute_transport_calibration_and_source_costs_included": false,
+      "only_sum_of_sharp_conditional_costs_optimized": true
+    },
+    {
+      "labels": 6,
+      "reads": 7,
+      "contrast_exact": "1/2",
+      "old_label_risk_certificate": {
+        "lower_exact": "116107686270220964338348213637/316912650057057350374175801344",
+        "upper_exact": "116107686270220964338348213731/316912650057057350374175801344",
+        "diagnostic": 0.366371257976975
+      },
+      "old_policy_with_sharp_costs": {
+        "lower_exact": "105460926902645790078867387971/316912650057057350374175801344",
+        "upper_exact": "52730463451322895039433695053/158456325028528675187087900672",
+        "diagnostic": 0.33277600904747245
+      },
+      "new_policy_with_sharp_costs": {
+        "lower_exact": "103312809921181672011890653013/316912650057057350374175801344",
+        "upper_exact": "103312809921181672011890655147/316912650057057350374175801344",
+        "diagnostic": 0.32599774702139883
+      },
+      "loss_polynomial": [
+        24,
+        160,
+        424,
+        208,
+        448,
+        16,
+        0,
+        0,
+        12,
+        88,
+        292,
+        736,
+        608,
+        184,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bellman_states": 876,
+      "certified_strict_comparisons": 2446,
+      "reachable_policy_states": 106,
+      "new_native_gates_after_first_join": 429,
+      "fresh_pointer_initializations": 7,
+      "optimal_for_this_cost_matrix": true,
+      "optimal_actual_quantum_trace_distance_claimed": false,
+      "independent_encoded_source_promise_required": true,
+      "new_yx_after_first_join": 297,
+      "new_ry_after_first_join": 132,
+      "total_gates_including_166_gate_first_join": 595,
+      "reports": [
+        {
+          "report": 0,
+          "probability": {
+            "lower_exact": "232161274699245580622775630353/1267650600228229401496703205376",
+            "upper_exact": "116080637349622790311387815243/633825300114114700748351602688",
+            "diagnostic": 0.18314295331651084
+          },
+          "conditional_promised_error_upper": {
+            "lower_exact": "61913889324857392578333028861/158456325028528675187087900672",
+            "upper_exact": "495311114598859140626664231583/1267650600228229401496703205376",
+            "diagnostic": 0.3907315742284843
+          }
+        },
+        {
+          "report": 1,
+          "probability": {
+            "lower_exact": "47802739761667778386169257767/316912650057057350374175801344",
+            "upper_exact": "191210959046671113544677031173/1267650600228229401496703205376",
+            "diagnostic": 0.1508388502417348
+          },
+          "conditional_promised_error_upper": {
+            "lower_exact": "229120899741623496943868956703/633825300114114700748351602688",
+            "upper_exact": "229120899741623496943868957025/633825300114114700748351602688",
+            "diagnostic": 0.3614890407504596
+          }
+        },
+        {
+          "report": 2,
+          "probability": {
+            "lower_exact": "54884345510981206590795501151/316912650057057350374175801344",
+            "upper_exact": "27442172755490603295397750593/158456325028528675187087900672",
+            "diagnostic": 0.17318445792902165
+          },
+          "conditional_promised_error_upper": {
+            "lower_exact": "348683851359015762273165566723/1267650600228229401496703205376",
+            "upper_exact": "87170962839753940568291391839/316912650057057350374175801344",
+            "diagnostic": 0.2750630586190219
+          }
+        },
+        {
+          "report": 3,
+          "probability": {
+            "lower_exact": "58671230745907311624676190923/316912650057057350374175801344",
+            "upper_exact": "117342461491814623249352381919/633825300114114700748351602688",
+            "diagnostic": 0.18513376078658922
+          },
+          "conditional_promised_error_upper": {
+            "lower_exact": "95546680903241525186301612187/316912650057057350374175801344",
+            "upper_exact": "382186723612966100745206449403/1267650600228229401496703205376",
+            "diagnostic": 0.30149216475277707
+          }
+        },
+        {
+          "report": 4,
+          "probability": {
+            "lower_exact": "182126643370944293762393967543/1267650600228229401496703205376",
+            "upper_exact": "91063321685472146881196983823/633825300114114700748351602688",
+            "diagnostic": 0.1436725887544675
+          },
+          "conditional_promised_error_upper": {
+            "lower_exact": "192825464380951950164215316843/633825300114114700748351602688",
+            "upper_exact": "192825464380951950164215317137/633825300114114700748351602688",
+            "diagnostic": 0.30422494076243944
+          }
+        },
+        {
+          "report": 5,
+          "probability": {
+            "lower_exact": "207929418083814340704969807743/1267650600228229401496703205376",
+            "upper_exact": "103964709041907170352484903933/633825300114114700748351602688",
+            "diagnostic": 0.164027388971676
+          },
+          "conditional_promised_error_upper": {
+            "lower_exact": "407664092301156342517081634449/1267650600228229401496703205376",
+            "upper_exact": "101916023075289085629270408775/316912650057057350374175801344",
+            "diagnostic": 0.3215902648787923
+          }
+        }
+      ],
+      "accessible_coherent_history_rebits": 1,
+      "decoded_message_bits": 3,
+      "raw_readout_bits_retained": 7,
+      "all_results_accepted": true,
+      "source_purification_and_noise_baths_closed": true,
+      "all_environment_and_readout_systems_retained": true,
+      "ideal_gate_angles_and_coherent_storage_assumed": true,
+      "classical_compute_transport_calibration_and_source_costs_included": false,
+      "only_sum_of_sharp_conditional_costs_optimized": true
+    }
+  ],
+  "strict_slack_example": {
+    "true_label": "A_Y",
+    "equal_reports": [
+      "A_X",
+      "A_Z"
+    ],
+    "sum_of_sharp_costs": 1,
+    "actual_sharp_mixture_cost": {
+      "lower_exact": "1252004937372652271084703272893/1267650600228229401496703205376",
+      "upper_exact": "626002468686326135542351636447/633825300114114700748351602688",
+      "diagnostic": 0.9876577482369666
+    }
+  },
+  "next_question": "optimize full averaged recovery error with one common unknown source state",
+  "automated_checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}

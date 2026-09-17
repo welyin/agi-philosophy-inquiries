@@ -1,0 +1,99 @@
+{
+  "round": 199,
+  "scope": "Two full four-state processes with same preparation and controls; only iid tick-noise probabilities differ",
+  "resource_budget": "At most k ticks, with finite noiseless read/swap/flip controls; no separate total-command optimum claimed",
+  "all_policy_sharp_tv": "0.5 sum_j binom(k,j)|eta^j(1-eta)^(k-j)-zeta^j(1-zeta)^(k-j)|",
+  "uniform_coupling_upper_bound": "1-(1-|eta-zeta|)^k <= min(1,k|eta-zeta|)",
+  "attaining_protocol_uniform_or_arbitrary_common_preparation": "read,swap,read; then (tick,swap,read)^k",
+  "total_commands_in_attaining_protocol": "3+3*k, or 3*k for known (0,0)",
+  "environment_noise_directly_readable": false,
+  "memory_erasure_equivalent_to_noise_rounding": false,
+  "geometry_changed": false,
+  "samples": [
+    {
+      "eta": "0",
+      "zeta": "1/2",
+      "tick_budget": 1,
+      "tv_exact": "1/2",
+      "tv_float": 0.5
+    },
+    {
+      "eta": "0",
+      "zeta": "1/2",
+      "tick_budget": 2,
+      "tv_exact": "3/4",
+      "tv_float": 0.75
+    },
+    {
+      "eta": "0",
+      "zeta": "1/2",
+      "tick_budget": 10,
+      "tv_exact": "1023/1024",
+      "tv_float": 0.9990234375
+    },
+    {
+      "eta": "0",
+      "zeta": "1/2",
+      "tick_budget": 100,
+      "tv_exact": "1267650600228229401496703205375/1267650600228229401496703205376",
+      "tv_float": 1.0
+    },
+    {
+      "eta": "1/5",
+      "zeta": "1/2",
+      "tick_budget": 1,
+      "tv_exact": "3/10",
+      "tv_float": 0.3
+    },
+    {
+      "eta": "1/5",
+      "zeta": "1/2",
+      "tick_budget": 2,
+      "tv_exact": "39/100",
+      "tv_float": 0.39
+    },
+    {
+      "eta": "1/5",
+      "zeta": "1/2",
+      "tick_budget": 10,
+      "tv_exact": "442031949/625000000",
+      "tv_float": 0.7072511184
+    },
+    {
+      "eta": "1/5",
+      "zeta": "1/2",
+      "tick_budget": 100,
+      "tv_exact": "9988262564799982125080193102467003865960651120794019104089326863657238531994093664236416115843735557/10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "tv_float": 0.9988262564799982
+    },
+    {
+      "eta": "49/100",
+      "zeta": "1/2",
+      "tick_budget": 1,
+      "tv_exact": "1/100",
+      "tv_float": 0.01
+    },
+    {
+      "eta": "49/100",
+      "zeta": "1/2",
+      "tick_budget": 2,
+      "tv_exact": "101/10000",
+      "tv_float": 0.0101
+    },
+    {
+      "eta": "49/100",
+      "zeta": "1/2",
+      "tick_budget": 10,
+      "tv_exact": "1242107583891716063/50000000000000000000",
+      "tv_float": 0.02484215167783432
+    },
+    {
+      "eta": "49/100",
+      "zeta": "1/2",
+      "tick_budget": 100,
+      "tv_exact": "1996509460654077427662334030815492926610169875447715196682033009438139480847533347684414251358625357872657779988728779503412230261691965363021468602063182303580225333114493298483657718204733988597843/25000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "tv_float": 0.0798603784261631
+    }
+  ],
+  "automated_tests": 7
+}

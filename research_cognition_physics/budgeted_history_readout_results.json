@@ -1,0 +1,1507 @@
+{
+  "round": 152,
+  "conditional_pair_error": "3 delta4 / 2",
+  "four_label_correct_gain_weights_in_sixths": [
+    "2-3delta4",
+    "2-3delta4",
+    "1",
+    "1"
+  ],
+  "gain_polynomial_basis": "sum_k (a_k+b_k*(2-3delta4))*p^k*(1-p)^(N-k)/6; concatenate a,b",
+  "certificate_not_exact_quantum_trace_error": true,
+  "frontier": [
+    {
+      "six": {
+        "labels": 6,
+        "contrast_exact": "1/2",
+        "reads": 0,
+        "allocation": [
+          0,
+          0,
+          0
+        ],
+        "external_error_upper": {
+          "lower_exact": "1056375500190191167913919337813/1267650600228229401496703205376",
+          "upper_exact": "528187750095095583956959668907/633825300114114700748351602688",
+          "diagnostic": 0.8333333333333334
+        },
+        "gain_polynomial": [
+          1,
+          0
+        ],
+        "certified_strict_comparisons": 0,
+        "fresh_pointer_initializations": 0,
+        "raw_readout_bits_retained": 0,
+        "new_yx_after_first_join": 290,
+        "new_ry_after_first_join": 111,
+        "new_native_gates_after_first_join": 401,
+        "optimal_fixed_allocation_for_this_certificate": true,
+        "optimal_quantum_recovery_claimed": false
+      },
+      "four": {
+        "labels": 4,
+        "contrast_exact": "1/2",
+        "reads": 0,
+        "allocation": [
+          0,
+          0
+        ],
+        "external_error_upper": {
+          "lower_exact": "979276944385407837875400982343/1267650600228229401496703205376",
+          "upper_exact": "489638472192703918937700491173/633825300114114700748351602688",
+          "diagnostic": 0.7725132968099393
+        },
+        "gain_polynomial": [
+          0,
+          1
+        ],
+        "certified_strict_comparisons": 2,
+        "fresh_pointer_initializations": 0,
+        "raw_readout_bits_retained": 0,
+        "new_yx_after_first_join": 292,
+        "new_ry_after_first_join": 113,
+        "new_native_gates_after_first_join": 405,
+        "optimal_fixed_allocation_for_this_certificate": true,
+        "optimal_quantum_recovery_claimed": false
+      }
+    },
+    {
+      "six": {
+        "labels": 6,
+        "contrast_exact": "1/2",
+        "reads": 1,
+        "allocation": [
+          0,
+          0,
+          1
+        ],
+        "external_error_upper": {
+          "lower_exact": "475917453853789516962663413377/633825300114114700748351602688",
+          "upper_exact": "475917453853789516962663413383/633825300114114700748351602688",
+          "diagnostic": 0.750865346915159
+        },
+        "gain_polynomial": [
+          0,
+          2,
+          0,
+          0
+        ],
+        "certified_strict_comparisons": 18,
+        "fresh_pointer_initializations": 1,
+        "raw_readout_bits_retained": 1,
+        "new_yx_after_first_join": 291,
+        "new_ry_after_first_join": 114,
+        "new_native_gates_after_first_join": 405,
+        "optimal_fixed_allocation_for_this_certificate": true,
+        "optimal_quantum_recovery_claimed": false
+      },
+      "four": {
+        "labels": 4,
+        "contrast_exact": "1/2",
+        "reads": 1,
+        "allocation": [
+          0,
+          1
+        ],
+        "external_error_upper": {
+          "lower_exact": "209146843996244337331775796727/316912650057057350374175801344",
+          "upper_exact": "418293687992488674663551593463/633825300114114700748351602688",
+          "diagnostic": 0.6599510747159801
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "certified_strict_comparisons": 11,
+        "fresh_pointer_initializations": 1,
+        "raw_readout_bits_retained": 1,
+        "new_yx_after_first_join": 293,
+        "new_ry_after_first_join": 116,
+        "new_native_gates_after_first_join": 409,
+        "optimal_fixed_allocation_for_this_certificate": true,
+        "optimal_quantum_recovery_claimed": false
+      }
+    },
+    {
+      "six": {
+        "labels": 6,
+        "contrast_exact": "1/2",
+        "reads": 2,
+        "allocation": [
+          0,
+          1,
+          1
+        ],
+        "external_error_upper": {
+          "lower_exact": "49722925141183948937210771329/79228162514264337593543950336",
+          "upper_exact": "198891700564735795748843085325/316912650057057350374175801344",
+          "diagnostic": 0.6275915477937756
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          4,
+          0,
+          0,
+          0
+        ],
+        "certified_strict_comparisons": 72,
+        "fresh_pointer_initializations": 2,
+        "raw_readout_bits_retained": 2,
+        "new_yx_after_first_join": 292,
+        "new_ry_after_first_join": 117,
+        "new_native_gates_after_first_join": 409,
+        "optimal_fixed_allocation_for_this_certificate": true,
+        "optimal_quantum_recovery_claimed": false
+      },
+      "four": {
+        "labels": 4,
+        "contrast_exact": "1/2",
+        "reads": 2,
+        "allocation": [
+          1,
+          1
+        ],
+        "external_error_upper": {
+          "lower_exact": "177357585188789863685937083041/316912650057057350374175801344",
+          "upper_exact": "44339396297197465921484270763/79228162514264337593543950336",
+          "diagnostic": 0.559641860799366
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          2,
+          0,
+          0,
+          2
+        ],
+        "certified_strict_comparisons": 28,
+        "fresh_pointer_initializations": 2,
+        "raw_readout_bits_retained": 2,
+        "new_yx_after_first_join": 294,
+        "new_ry_after_first_join": 119,
+        "new_native_gates_after_first_join": 413,
+        "optimal_fixed_allocation_for_this_certificate": true,
+        "optimal_quantum_recovery_claimed": false
+      }
+    },
+    {
+      "six": {
+        "labels": 6,
+        "contrast_exact": "1/2",
+        "reads": 3,
+        "allocation": [
+          1,
+          1,
+          1
+        ],
+        "external_error_upper": {
+          "lower_exact": "42423212596339341303728403433/79228162514264337593543950336",
+          "upper_exact": "84846425192678682607456806875/158456325028528675187087900672",
+          "diagnostic": 0.535456222258107
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          2,
+          6,
+          0,
+          0,
+          0,
+          0
+        ],
+        "certified_strict_comparisons": 223,
+        "fresh_pointer_initializations": 3,
+        "raw_readout_bits_retained": 3,
+        "new_yx_after_first_join": 293,
+        "new_ry_after_first_join": 120,
+        "new_native_gates_after_first_join": 413,
+        "optimal_fixed_allocation_for_this_certificate": true,
+        "optimal_quantum_recovery_claimed": false
+      },
+      "four": {
+        "labels": 4,
+        "contrast_exact": "1/2",
+        "reads": 3,
+        "allocation": [
+          2,
+          1
+        ],
+        "external_error_upper": {
+          "lower_exact": "343836305807739241497108735105/633825300114114700748351602688",
+          "upper_exact": "171918152903869620748554367573/316912650057057350374175801344",
+          "diagnostic": 0.5424780388946836
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          4,
+          2
+        ],
+        "certified_strict_comparisons": 57,
+        "fresh_pointer_initializations": 3,
+        "raw_readout_bits_retained": 3,
+        "new_yx_after_first_join": 295,
+        "new_ry_after_first_join": 122,
+        "new_native_gates_after_first_join": 417,
+        "optimal_fixed_allocation_for_this_certificate": true,
+        "optimal_quantum_recovery_claimed": false
+      }
+    },
+    {
+      "six": {
+        "labels": 6,
+        "contrast_exact": "1/2",
+        "reads": 4,
+        "allocation": [
+          1,
+          2,
+          1
+        ],
+        "external_error_upper": {
+          "lower_exact": "324634672871452021419528764967/633825300114114700748351602688",
+          "upper_exact": "324634672871452021419528765027/633825300114114700748351602688",
+          "diagnostic": 0.5121832038150014
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          10,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "certified_strict_comparisons": 507,
+        "fresh_pointer_initializations": 4,
+        "raw_readout_bits_retained": 4,
+        "new_yx_after_first_join": 294,
+        "new_ry_after_first_join": 123,
+        "new_native_gates_after_first_join": 417,
+        "optimal_fixed_allocation_for_this_certificate": true,
+        "optimal_quantum_recovery_claimed": false
+      },
+      "four": {
+        "labels": 4,
+        "contrast_exact": "1/2",
+        "reads": 4,
+        "allocation": [
+          1,
+          3
+        ],
+        "external_error_upper": {
+          "lower_exact": "639660332491019463962939651881/1267650600228229401496703205376",
+          "upper_exact": "39978770780688716497683728251/79228162514264337593543950336",
+          "diagnostic": 0.504603028922839
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          6,
+          2,
+          0,
+          0,
+          0,
+          6,
+          2
+        ],
+        "certified_strict_comparisons": 99,
+        "fresh_pointer_initializations": 4,
+        "raw_readout_bits_retained": 4,
+        "new_yx_after_first_join": 296,
+        "new_ry_after_first_join": 125,
+        "new_native_gates_after_first_join": 421,
+        "optimal_fixed_allocation_for_this_certificate": true,
+        "optimal_quantum_recovery_claimed": false
+      }
+    },
+    {
+      "six": {
+        "labels": 6,
+        "contrast_exact": "1/2",
+        "reads": 5,
+        "allocation": [
+          1,
+          1,
+          3
+        ],
+        "external_error_upper": {
+          "lower_exact": "302584719561486267957834292615/633825300114114700748351602688",
+          "upper_exact": "9455772486296445873682321647/19807040628566084398385987584",
+          "diagnostic": 0.4773945115586401
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          6,
+          20,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "certified_strict_comparisons": 1068,
+        "fresh_pointer_initializations": 5,
+        "raw_readout_bits_retained": 5,
+        "new_yx_after_first_join": 295,
+        "new_ry_after_first_join": 126,
+        "new_native_gates_after_first_join": 421,
+        "optimal_fixed_allocation_for_this_certificate": true,
+        "optimal_quantum_recovery_claimed": false
+      },
+      "four": {
+        "labels": 4,
+        "contrast_exact": "1/2",
+        "reads": 5,
+        "allocation": [
+          2,
+          3
+        ],
+        "external_error_upper": {
+          "lower_exact": "615183180478156844291590178969/1267650600228229401496703205376",
+          "upper_exact": "615183180478156844291590179167/1267650600228229401496703205376",
+          "diagnostic": 0.48529396062873986
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          6,
+          2,
+          0,
+          0,
+          0,
+          12,
+          10,
+          2
+        ],
+        "certified_strict_comparisons": 161,
+        "fresh_pointer_initializations": 5,
+        "raw_readout_bits_retained": 5,
+        "new_yx_after_first_join": 297,
+        "new_ry_after_first_join": 128,
+        "new_native_gates_after_first_join": 425,
+        "optimal_fixed_allocation_for_this_certificate": true,
+        "optimal_quantum_recovery_claimed": false
+      }
+    },
+    {
+      "six": {
+        "labels": 6,
+        "contrast_exact": "1/2",
+        "reads": 6,
+        "allocation": [
+          1,
+          2,
+          3
+        ],
+        "external_error_upper": {
+          "lower_exact": "285990012001783414770907202099/633825300114114700748351602688",
+          "upper_exact": "285990012001783414770907202241/633825300114114700748351602688",
+          "diagnostic": 0.4512126795037898
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          30,
+          28,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "certified_strict_comparisons": 1976,
+        "fresh_pointer_initializations": 6,
+        "raw_readout_bits_retained": 6,
+        "new_yx_after_first_join": 296,
+        "new_ry_after_first_join": 129,
+        "new_native_gates_after_first_join": 425,
+        "optimal_fixed_allocation_for_this_certificate": true,
+        "optimal_quantum_recovery_claimed": false
+      },
+      "four": {
+        "labels": 4,
+        "contrast_exact": "1/2",
+        "reads": 6,
+        "allocation": [
+          3,
+          3
+        ],
+        "external_error_upper": {
+          "lower_exact": "280585006806846998139311310337/633825300114114700748351602688",
+          "upper_exact": "561170013613693996278622620989/1267650600228229401496703205376",
+          "diagnostic": 0.44268508492218617
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          18,
+          12,
+          2,
+          0,
+          0,
+          0,
+          0,
+          18,
+          12,
+          2
+        ],
+        "certified_strict_comparisons": 242,
+        "fresh_pointer_initializations": 6,
+        "raw_readout_bits_retained": 6,
+        "new_yx_after_first_join": 298,
+        "new_ry_after_first_join": 131,
+        "new_native_gates_after_first_join": 429,
+        "optimal_fixed_allocation_for_this_certificate": true,
+        "optimal_quantum_recovery_claimed": false
+      }
+    },
+    {
+      "six": {
+        "labels": 6,
+        "contrast_exact": "1/2",
+        "reads": 7,
+        "allocation": [
+          1,
+          3,
+          3
+        ],
+        "external_error_upper": {
+          "lower_exact": "130592055868098832466049984273/316912650057057350374175801344",
+          "upper_exact": "130592055868098832466049984365/316912650057057350374175801344",
+          "diagnostic": 0.41207586962712556
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          18,
+          66,
+          38,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "certified_strict_comparisons": 3484,
+        "fresh_pointer_initializations": 7,
+        "raw_readout_bits_retained": 7,
+        "new_yx_after_first_join": 297,
+        "new_ry_after_first_join": 132,
+        "new_native_gates_after_first_join": 429,
+        "optimal_fixed_allocation_for_this_certificate": true,
+        "optimal_quantum_recovery_claimed": false
+      },
+      "four": {
+        "labels": 4,
+        "contrast_exact": "1/2",
+        "reads": 7,
+        "allocation": [
+          4,
+          3
+        ],
+        "external_error_upper": {
+          "lower_exact": "547306794966498854482881552761/1267650600228229401496703205376",
+          "upper_exact": "273653397483249427241440776591/633825300114114700748351602688",
+          "diagnostic": 0.431748933710883
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          24,
+          14,
+          2,
+          0,
+          0,
+          0,
+          0,
+          36,
+          36,
+          14,
+          2
+        ],
+        "certified_strict_comparisons": 347,
+        "fresh_pointer_initializations": 7,
+        "raw_readout_bits_retained": 7,
+        "new_yx_after_first_join": 299,
+        "new_ry_after_first_join": 134,
+        "new_native_gates_after_first_join": 433,
+        "optimal_fixed_allocation_for_this_certificate": true,
+        "optimal_quantum_recovery_claimed": false
+      }
+    },
+    {
+      "six": {
+        "labels": 6,
+        "contrast_exact": "1/2",
+        "reads": 8,
+        "allocation": [
+          1,
+          4,
+          3
+        ],
+        "external_error_upper": {
+          "lower_exact": "251785303444876457109477524057/633825300114114700748351602688",
+          "upper_exact": "62946325861219114277369381081/158456325028528675187087900672",
+          "diagnostic": 0.3972471647937448
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          96,
+          110,
+          44,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "certified_strict_comparisons": 5691,
+        "fresh_pointer_initializations": 8,
+        "raw_readout_bits_retained": 8,
+        "new_yx_after_first_join": 298,
+        "new_ry_after_first_join": 135,
+        "new_native_gates_after_first_join": 433,
+        "optimal_fixed_allocation_for_this_certificate": true,
+        "optimal_quantum_recovery_claimed": false
+      },
+      "four": {
+        "labels": 4,
+        "contrast_exact": "1/2",
+        "reads": 8,
+        "allocation": [
+          3,
+          5
+        ],
+        "external_error_upper": {
+          "lower_exact": "258357575042877373144507942635/633825300114114700748351602688",
+          "upper_exact": "258357575042877373144507942919/633825300114114700748351602688",
+          "diagnostic": 0.40761638103805947
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          60,
+          50,
+          16,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          60,
+          50,
+          16,
+          2
+        ],
+        "certified_strict_comparisons": 477,
+        "fresh_pointer_initializations": 8,
+        "raw_readout_bits_retained": 8,
+        "new_yx_after_first_join": 300,
+        "new_ry_after_first_join": 137,
+        "new_native_gates_after_first_join": 437,
+        "optimal_fixed_allocation_for_this_certificate": true,
+        "optimal_quantum_recovery_claimed": false
+      }
+    },
+    {
+      "six": {
+        "labels": 6,
+        "contrast_exact": "1/2",
+        "reads": 9,
+        "allocation": [
+          3,
+          3,
+          3
+        ],
+        "external_error_upper": {
+          "lower_exact": "223879000001227901434663906283/633825300114114700748351602688",
+          "upper_exact": "111939500000613950717331953349/316912650057057350374175801344",
+          "diagnostic": 0.3532187812018871
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          60,
+          218,
+          174,
+          54,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "certified_strict_comparisons": 9014,
+        "fresh_pointer_initializations": 9,
+        "raw_readout_bits_retained": 9,
+        "new_yx_after_first_join": 299,
+        "new_ry_after_first_join": 138,
+        "new_native_gates_after_first_join": 437,
+        "optimal_fixed_allocation_for_this_certificate": true,
+        "optimal_quantum_recovery_claimed": false
+      },
+      "four": {
+        "labels": 4,
+        "contrast_exact": "1/2",
+        "reads": 9,
+        "allocation": [
+          4,
+          5
+        ],
+        "external_error_upper": {
+          "lower_exact": "501979596791726206452582099283/1267650600228229401496703205376",
+          "upper_exact": "501979596791726206452582100201/1267650600228229401496703205376",
+          "diagnostic": 0.39599207912759965
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          80,
+          60,
+          18,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          120,
+          140,
+          72,
+          18,
+          2
+        ],
+        "certified_strict_comparisons": 639,
+        "fresh_pointer_initializations": 9,
+        "raw_readout_bits_retained": 9,
+        "new_yx_after_first_join": 301,
+        "new_ry_after_first_join": 140,
+        "new_native_gates_after_first_join": 441,
+        "optimal_fixed_allocation_for_this_certificate": true,
+        "optimal_quantum_recovery_claimed": false
+      }
+    },
+    {
+      "six": {
+        "labels": 6,
+        "contrast_exact": "1/2",
+        "reads": 10,
+        "allocation": [
+          3,
+          4,
+          3
+        ],
+        "external_error_upper": {
+          "lower_exact": "217964289812305337784865726721/633825300114114700748351602688",
+          "upper_exact": "54491072453076334446216431827/158456325028528675187087900672",
+          "diagnostic": 0.3438870139343803
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          318,
+          412,
+          228,
+          60,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "certified_strict_comparisons": 13574,
+        "fresh_pointer_initializations": 10,
+        "raw_readout_bits_retained": 10,
+        "new_yx_after_first_join": 300,
+        "new_ry_after_first_join": 141,
+        "new_native_gates_after_first_join": 441,
+        "optimal_fixed_allocation_for_this_certificate": true,
+        "optimal_quantum_recovery_claimed": false
+      },
+      "four": {
+        "labels": 4,
+        "contrast_exact": "1/2",
+        "reads": 10,
+        "allocation": [
+          5,
+          5
+        ],
+        "external_error_upper": {
+          "lower_exact": "469462991163248679029321419677/1267650600228229401496703205376",
+          "upper_exact": "469462991163248679029321421013/1267650600228229401496703205376",
+          "diagnostic": 0.3703410001768042
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          200,
+          200,
+          90,
+          20,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          200,
+          200,
+          90,
+          20,
+          2
+        ],
+        "certified_strict_comparisons": 832,
+        "fresh_pointer_initializations": 10,
+        "raw_readout_bits_retained": 10,
+        "new_yx_after_first_join": 302,
+        "new_ry_after_first_join": 143,
+        "new_native_gates_after_first_join": 445,
+        "optimal_fixed_allocation_for_this_certificate": true,
+        "optimal_quantum_recovery_claimed": false
+      }
+    },
+    {
+      "six": {
+        "labels": 6,
+        "contrast_exact": "1/2",
+        "reads": 11,
+        "allocation": [
+          3,
+          3,
+          5
+        ],
+        "external_error_upper": {
+          "lower_exact": "99041688531630650289757250465/316912650057057350374175801344",
+          "upper_exact": "198083377063261300579514502185/633825300114114700748351602688",
+          "diagnostic": 0.31252046427871866
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          200,
+          760,
+          710,
+          306,
+          66,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "certified_strict_comparisons": 19985,
+        "fresh_pointer_initializations": 11,
+        "raw_readout_bits_retained": 11,
+        "new_yx_after_first_join": 301,
+        "new_ry_after_first_join": 144,
+        "new_native_gates_after_first_join": 445,
+        "optimal_fixed_allocation_for_this_certificate": true,
+        "optimal_quantum_recovery_claimed": false
+      },
+      "four": {
+        "labels": 4,
+        "contrast_exact": "1/2",
+        "reads": 11,
+        "allocation": [
+          6,
+          5
+        ],
+        "external_error_upper": {
+          "lower_exact": "230094922278598158940984375469/633825300114114700748351602688",
+          "upper_exact": "460189844557196317881968753867/1267650600228229401496703205376",
+          "diagnostic": 0.3630257773509066
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          300,
+          270,
+          110,
+          22,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          400,
+          500,
+          310,
+          110,
+          22,
+          2
+        ],
+        "certified_strict_comparisons": 1061,
+        "fresh_pointer_initializations": 11,
+        "raw_readout_bits_retained": 11,
+        "new_yx_after_first_join": 303,
+        "new_ry_after_first_join": 146,
+        "new_native_gates_after_first_join": 449,
+        "optimal_fixed_allocation_for_this_certificate": true,
+        "optimal_quantum_recovery_claimed": false
+      }
+    },
+    {
+      "six": {
+        "labels": 6,
+        "contrast_exact": "1/2",
+        "reads": 12,
+        "allocation": [
+          3,
+          4,
+          5
+        ],
+        "external_error_upper": {
+          "lower_exact": "191796487313799267514407842415/633825300114114700748351602688",
+          "upper_exact": "47949121828449816878601961127/158456325028528675187087900672",
+          "diagnostic": 0.302601501201148
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1060,
+          1550,
+          1036,
+          372,
+          72,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "certified_strict_comparisons": 28397,
+        "fresh_pointer_initializations": 12,
+        "raw_readout_bits_retained": 12,
+        "new_yx_after_first_join": 302,
+        "new_ry_after_first_join": 147,
+        "new_native_gates_after_first_join": 449,
+        "optimal_fixed_allocation_for_this_certificate": true,
+        "optimal_quantum_recovery_claimed": false
+      },
+      "four": {
+        "labels": 4,
+        "contrast_exact": "1/2",
+        "reads": 12,
+        "allocation": [
+          5,
+          7
+        ],
+        "external_error_upper": {
+          "lower_exact": "219863502897615277434541038891/633825300114114700748351602688",
+          "upper_exact": "439727005795230554869082082703/1267650600228229401496703205376",
+          "diagnostic": 0.3468834438417507
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          700,
+          770,
+          420,
+          132,
+          24,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          700,
+          770,
+          420,
+          132,
+          24,
+          2
+        ],
+        "certified_strict_comparisons": 1327,
+        "fresh_pointer_initializations": 12,
+        "raw_readout_bits_retained": 12,
+        "new_yx_after_first_join": 304,
+        "new_ry_after_first_join": 149,
+        "new_native_gates_after_first_join": 453,
+        "optimal_fixed_allocation_for_this_certificate": true,
+        "optimal_quantum_recovery_claimed": false
+      }
+    },
+    {
+      "six": {
+        "labels": 6,
+        "contrast_exact": "1/2",
+        "reads": 13,
+        "allocation": [
+          3,
+          5,
+          5
+        ],
+        "external_error_upper": {
+          "lower_exact": "87498270869683127750606565437/316912650057057350374175801344",
+          "upper_exact": "174996541739366255501213135015/633825300114114700748351602688",
+          "diagnostic": 0.27609586065412606
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          700,
+          2670,
+          2790,
+          1492,
+          456,
+          78,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "certified_strict_comparisons": 39667,
+        "fresh_pointer_initializations": 13,
+        "raw_readout_bits_retained": 13,
+        "new_yx_after_first_join": 303,
+        "new_ry_after_first_join": 150,
+        "new_native_gates_after_first_join": 453,
+        "optimal_fixed_allocation_for_this_certificate": true,
+        "optimal_quantum_recovery_claimed": false
+      },
+      "four": {
+        "labels": 4,
+        "contrast_exact": "1/2",
+        "reads": 13,
+        "allocation": [
+          6,
+          7
+        ],
+        "external_error_upper": {
+          "lower_exact": "215054196925814598663854249863/633825300114114700748351602688",
+          "upper_exact": "430108393851629197327708509959/1267650600228229401496703205376",
+          "diagnostic": 0.33929569691695166
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1050,
+          1050,
+          532,
+          156,
+          26,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1400,
+          1890,
+          1330,
+          572,
+          156,
+          26,
+          2
+        ],
+        "certified_strict_comparisons": 1637,
+        "fresh_pointer_initializations": 13,
+        "raw_readout_bits_retained": 13,
+        "new_yx_after_first_join": 305,
+        "new_ry_after_first_join": 152,
+        "new_native_gates_after_first_join": 457,
+        "optimal_fixed_allocation_for_this_certificate": true,
+        "optimal_quantum_recovery_claimed": false
+      }
+    },
+    {
+      "six": {
+        "labels": 6,
+        "contrast_exact": "1/2",
+        "reads": 14,
+        "allocation": [
+          3,
+          6,
+          5
+        ],
+        "external_error_upper": {
+          "lower_exact": "85421178423999454571357515679/316912650057057350374175801344",
+          "upper_exact": "42710589211999727285678759889/158456325028528675187087900672",
+          "diagnostic": 0.2695417125464071
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3720,
+          5740,
+          4352,
+          1948,
+          534,
+          84,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "certified_strict_comparisons": 53960,
+        "fresh_pointer_initializations": 14,
+        "raw_readout_bits_retained": 14,
+        "new_yx_after_first_join": 304,
+        "new_ry_after_first_join": 153,
+        "new_native_gates_after_first_join": 457,
+        "optimal_fixed_allocation_for_this_certificate": true,
+        "optimal_quantum_recovery_claimed": false
+      },
+      "four": {
+        "labels": 4,
+        "contrast_exact": "1/2",
+        "reads": 14,
+        "allocation": [
+          7,
+          7
+        ],
+        "external_error_upper": {
+          "lower_exact": "408883224696277947349794543191/1267650600228229401496703205376",
+          "upper_exact": "408883224696277947349794562583/1267650600228229401496703205376",
+          "diagnostic": 0.3225519907635922
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2450,
+          2940,
+          1862,
+          728,
+          182,
+          28,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2450,
+          2940,
+          1862,
+          728,
+          182,
+          28,
+          2
+        ],
+        "certified_strict_comparisons": 1990,
+        "fresh_pointer_initializations": 14,
+        "raw_readout_bits_retained": 14,
+        "new_yx_after_first_join": 306,
+        "new_ry_after_first_join": 155,
+        "new_native_gates_after_first_join": 461,
+        "optimal_fixed_allocation_for_this_certificate": true,
+        "optimal_quantum_recovery_claimed": false
+      }
+    },
+    {
+      "six": {
+        "labels": 6,
+        "contrast_exact": "1/2",
+        "reads": 15,
+        "allocation": [
+          5,
+          5,
+          5
+        ],
+        "external_error_upper": {
+          "lower_exact": "152985284861406306787864309679/633825300114114700748351602688",
+          "upper_exact": "152985284861406306787864326381/633825300114114700748351602688",
+          "diagnostic": 0.24136822060252666
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2520,
+          9460,
+          10752,
+          6720,
+          2590,
+          630,
+          90,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "certified_strict_comparisons": 72435,
+        "fresh_pointer_initializations": 15,
+        "raw_readout_bits_retained": 15,
+        "new_yx_after_first_join": 305,
+        "new_ry_after_first_join": 156,
+        "new_native_gates_after_first_join": 461,
+        "optimal_fixed_allocation_for_this_certificate": true,
+        "optimal_quantum_recovery_claimed": false
+      },
+      "four": {
+        "labels": 4,
+        "contrast_exact": "1/2",
+        "reads": 15,
+        "allocation": [
+          8,
+          7
+        ],
+        "external_error_upper": {
+          "lower_exact": "100631884863040714056493042277/316912650057057350374175801344",
+          "upper_exact": "25157971215760178514123263125/79228162514264337593543950336",
+          "diagnostic": 0.3175382391486197
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3920,
+          4312,
+          2520,
+          910,
+          210,
+          30,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4900,
+          6860,
+          5292,
+          2660,
+          910,
+          210,
+          30,
+          2
+        ],
+        "certified_strict_comparisons": 2391,
+        "fresh_pointer_initializations": 15,
+        "raw_readout_bits_retained": 15,
+        "new_yx_after_first_join": 307,
+        "new_ry_after_first_join": 158,
+        "new_native_gates_after_first_join": 465,
+        "optimal_fixed_allocation_for_this_certificate": true,
+        "optimal_quantum_recovery_claimed": false
+      }
+    },
+    {
+      "six": {
+        "labels": 6,
+        "contrast_exact": "1/2",
+        "reads": 16,
+        "allocation": [
+          5,
+          6,
+          5
+        ],
+        "external_error_upper": {
+          "lower_exact": "150161898868478534621239241699/633825300114114700748351602688",
+          "upper_exact": "150161898868478534621239274473/633825300114114700748351602688",
+          "diagnostic": 0.236913702942188
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          13240,
+          21220,
+          17724,
+          9310,
+          3220,
+          720,
+          96,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "certified_strict_comparisons": 95251,
+        "fresh_pointer_initializations": 16,
+        "raw_readout_bits_retained": 16,
+        "new_yx_after_first_join": 306,
+        "new_ry_after_first_join": 159,
+        "new_native_gates_after_first_join": 465,
+        "optimal_fixed_allocation_for_this_certificate": true,
+        "optimal_quantum_recovery_claimed": false
+      },
+      "four": {
+        "labels": 4,
+        "contrast_exact": "1/2",
+        "reads": 16,
+        "allocation": [
+          7,
+          9
+        ],
+        "external_error_upper": {
+          "lower_exact": "97125648849063320098703855851/316912650057057350374175801344",
+          "upper_exact": "97125648849063320098703875229/316912650057057350374175801344",
+          "diagnostic": 0.30647450908500085
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8820,
+          11172,
+          7812,
+          3570,
+          1120,
+          240,
+          32,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8820,
+          11172,
+          7812,
+          3570,
+          1120,
+          240,
+          32,
+          2
+        ],
+        "certified_strict_comparisons": 2841,
+        "fresh_pointer_initializations": 16,
+        "raw_readout_bits_retained": 16,
+        "new_yx_after_first_join": 308,
+        "new_ry_after_first_join": 161,
+        "new_native_gates_after_first_join": 469,
+        "optimal_fixed_allocation_for_this_certificate": true,
+        "optimal_quantum_recovery_claimed": false
+      }
+    }
+  ],
+  "equal_gate_budget_comparison": {
+    "four_reads_range": [
+      0,
+      15
+    ],
+    "six_reads": "four_reads+1",
+    "six_has_strictly_smaller_certificate_throughout_checked_range": true
+  },
+  "classical_decision_computation_and_scheduling_time_in_native_gate_count": false,
+  "automated_checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}

@@ -1,0 +1,2533 @@
+{
+  "round": 156,
+  "objective": "sum of prior-weighted sharp conditional external recovery costs",
+  "radical_basis": [
+    "1",
+    "sqrt(3)",
+    "sqrt(33)",
+    "sqrt(25-16sqrt(2))",
+    "sqrt(25+16sqrt(2))"
+  ],
+  "polynomial_convention": "five blocks of N+1 integer coefficients; multiply radical*p^k*q^(N-k)/48",
+  "frontier": [
+    {
+      "six": {
+        "labels": 6,
+        "reads": 0,
+        "contrast_exact": "1/2",
+        "old_label_risk_certificate": {
+          "lower_exact": "1056375500190191167913919337813/1267650600228229401496703205376",
+          "upper_exact": "528187750095095583956959668907/633825300114114700748351602688",
+          "diagnostic": 0.8333333333333334
+        },
+        "old_policy_with_sharp_costs": {
+          "lower_exact": "117894189414774644266171724701/158456325028528675187087900672",
+          "upper_exact": "29473547353693661066542931177/39614081257132168796771975168",
+          "diagnostic": 0.7440169358562925
+        },
+        "new_policy_with_sharp_costs": {
+          "lower_exact": "117894189414774644266171724701/158456325028528675187087900672",
+          "upper_exact": "29473547353693661066542931177/39614081257132168796771975168",
+          "diagnostic": 0.7440169358562925
+        },
+        "loss_polynomial": [
+          8,
+          16,
+          0,
+          0,
+          0
+        ],
+        "bellman_states": 1,
+        "certified_strict_comparisons": 4,
+        "reachable_policy_states": 1,
+        "new_native_gates_after_first_join": 401,
+        "fresh_pointer_initializations": 0,
+        "optimal_for_this_cost_matrix": true,
+        "optimal_actual_quantum_trace_distance_claimed": false,
+        "independent_encoded_source_promise_required": true
+      },
+      "four": {
+        "labels": 4,
+        "reads": 0,
+        "contrast_exact": "1/2",
+        "old_label_risk_certificate": {
+          "lower_exact": "979276944385407837875400982343/1267650600228229401496703205376",
+          "upper_exact": "489638472192703918937700491173/633825300114114700748351602688",
+          "diagnostic": 0.7725132968099393
+        },
+        "old_policy_with_sharp_costs": {
+          "lower_exact": "221165196264091836083145240833/316912650057057350374175801344",
+          "upper_exact": "55291299066022959020786310211/79228162514264337593543950336",
+          "diagnostic": 0.6978743077130969
+        },
+        "new_policy_with_sharp_costs": {
+          "lower_exact": "221165196264091836083145240833/316912650057057350374175801344",
+          "upper_exact": "55291299066022959020786310211/79228162514264337593543950336",
+          "diagnostic": 0.6978743077130969
+        },
+        "loss_polynomial": [
+          12,
+          4,
+          2,
+          2,
+          0
+        ],
+        "bellman_states": 1,
+        "certified_strict_comparisons": 4,
+        "reachable_policy_states": 1,
+        "new_native_gates_after_first_join": 405,
+        "fresh_pointer_initializations": 0,
+        "optimal_for_this_cost_matrix": true,
+        "optimal_actual_quantum_trace_distance_claimed": false,
+        "independent_encoded_source_promise_required": true
+      }
+    },
+    {
+      "six": {
+        "labels": 6,
+        "reads": 1,
+        "contrast_exact": "1/2",
+        "old_label_risk_certificate": {
+          "lower_exact": "475917453853789516962663413377/633825300114114700748351602688",
+          "upper_exact": "475917453853789516962663413383/633825300114114700748351602688",
+          "diagnostic": 0.750865346915159
+        },
+        "old_policy_with_sharp_costs": {
+          "lower_exact": "218443586610893633938272458725/316912650057057350374175801344",
+          "upper_exact": "218443586610893633938272458759/316912650057057350374175801344",
+          "diagnostic": 0.6892864218943762
+        },
+        "new_policy_with_sharp_costs": {
+          "lower_exact": "52413307677224063758798830407/79228162514264337593543950336",
+          "upper_exact": "3275831729826503984924926901/4951760157141521099596496896",
+          "diagnostic": 0.6615489494381182
+        },
+        "loss_polynomial": [
+          16,
+          0,
+          16,
+          16,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bellman_states": 7,
+        "certified_strict_comparisons": 54,
+        "reachable_policy_states": 3,
+        "new_native_gates_after_first_join": 405,
+        "fresh_pointer_initializations": 1,
+        "optimal_for_this_cost_matrix": true,
+        "optimal_actual_quantum_trace_distance_claimed": false,
+        "independent_encoded_source_promise_required": true
+      },
+      "four": {
+        "labels": 4,
+        "reads": 1,
+        "contrast_exact": "1/2",
+        "old_label_risk_certificate": {
+          "lower_exact": "209146843996244337331775796727/316912650057057350374175801344",
+          "upper_exact": "418293687992488674663551593463/633825300114114700748351602688",
+          "diagnostic": 0.6599510747159801
+        },
+        "old_policy_with_sharp_costs": {
+          "lower_exact": "197197010377714905862789392993/316912650057057350374175801344",
+          "upper_exact": "1540601643575897702053042133/2475880078570760549798248448",
+          "diagnostic": 0.6222440484537658
+        },
+        "new_policy_with_sharp_costs": {
+          "lower_exact": "197197010377714905862789392993/316912650057057350374175801344",
+          "upper_exact": "1540601643575897702053042133/2475880078570760549798248448",
+          "diagnostic": 0.6222440484537658
+        },
+        "loss_polynomial": [
+          4,
+          20,
+          8,
+          0,
+          4,
+          0,
+          0,
+          4,
+          0,
+          0
+        ],
+        "bellman_states": 5,
+        "certified_strict_comparisons": 21,
+        "reachable_policy_states": 3,
+        "new_native_gates_after_first_join": 409,
+        "fresh_pointer_initializations": 1,
+        "optimal_for_this_cost_matrix": true,
+        "optimal_actual_quantum_trace_distance_claimed": false,
+        "independent_encoded_source_promise_required": true
+      }
+    },
+    {
+      "six": {
+        "labels": 6,
+        "reads": 2,
+        "contrast_exact": "1/2",
+        "old_label_risk_certificate": {
+          "lower_exact": "49722925141183948937210771329/79228162514264337593543950336",
+          "upper_exact": "198891700564735795748843085325/316912650057057350374175801344",
+          "diagnostic": 0.6275915477937756
+        },
+        "old_policy_with_sharp_costs": {
+          "lower_exact": "90328798533822436876869172401/158456325028528675187087900672",
+          "upper_exact": "45164399266911218438434586215/79228162514264337593543950336",
+          "diagnostic": 0.5700548622313406
+        },
+        "new_policy_with_sharp_costs": {
+          "lower_exact": "87910096714475115046057603247/158456325028528675187087900672",
+          "upper_exact": "21977524178618778761514400819/39614081257132168796771975168",
+          "diagnostic": 0.5547907077779802
+        },
+        "loss_polynomial": [
+          16,
+          16,
+          0,
+          16,
+          40,
+          8,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bellman_states": 26,
+        "certified_strict_comparisons": 190,
+        "reachable_policy_states": 7,
+        "new_native_gates_after_first_join": 409,
+        "fresh_pointer_initializations": 2,
+        "optimal_for_this_cost_matrix": true,
+        "optimal_actual_quantum_trace_distance_claimed": false,
+        "independent_encoded_source_promise_required": true
+      },
+      "four": {
+        "labels": 4,
+        "reads": 2,
+        "contrast_exact": "1/2",
+        "old_label_risk_certificate": {
+          "lower_exact": "177357585188789863685937083041/316912650057057350374175801344",
+          "upper_exact": "44339396297197465921484270763/79228162514264337593543950336",
+          "diagnostic": 0.559641860799366
+        },
+        "old_policy_with_sharp_costs": {
+          "lower_exact": "82457728724151805384885600175/158456325028528675187087900672",
+          "upper_exact": "164915457448303610769771200397/316912650057057350374175801344",
+          "diagnostic": 0.5203814281904242
+        },
+        "new_policy_with_sharp_costs": {
+          "lower_exact": "82457728724151805384885600175/158456325028528675187087900672",
+          "upper_exact": "164915457448303610769771200397/316912650057057350374175801344",
+          "diagnostic": 0.5203814281904242
+        },
+        "loss_polynomial": [
+          4,
+          24,
+          4,
+          8,
+          8,
+          0,
+          4,
+          4,
+          0,
+          0,
+          0,
+          4,
+          0,
+          4,
+          0
+        ],
+        "bellman_states": 14,
+        "certified_strict_comparisons": 54,
+        "reachable_policy_states": 7,
+        "new_native_gates_after_first_join": 413,
+        "fresh_pointer_initializations": 2,
+        "optimal_for_this_cost_matrix": true,
+        "optimal_actual_quantum_trace_distance_claimed": false,
+        "independent_encoded_source_promise_required": true
+      }
+    },
+    {
+      "six": {
+        "labels": 6,
+        "reads": 3,
+        "contrast_exact": "1/2",
+        "old_label_risk_certificate": {
+          "lower_exact": "42423212596339341303728403433/79228162514264337593543950336",
+          "upper_exact": "84846425192678682607456806875/158456325028528675187087900672",
+          "diagnostic": 0.535456222258107
+        },
+        "old_policy_with_sharp_costs": {
+          "lower_exact": "154189790144947147210194140137/316912650057057350374175801344",
+          "upper_exact": "154189790144947147210194140271/316912650057057350374175801344",
+          "diagnostic": 0.4865371897183234
+        },
+        "new_policy_with_sharp_costs": {
+          "lower_exact": "152306838678589095274174847265/316912650057057350374175801344",
+          "upper_exact": "152306838678589095274174847401/316912650057057350374175801344",
+          "diagnostic": 0.4805956425253696
+        },
+        "loss_polynomial": [
+          24,
+          24,
+          32,
+          0,
+          12,
+          60,
+          48,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bellman_states": 70,
+        "certified_strict_comparisons": 506,
+        "reachable_policy_states": 15,
+        "new_native_gates_after_first_join": 413,
+        "fresh_pointer_initializations": 3,
+        "optimal_for_this_cost_matrix": true,
+        "optimal_actual_quantum_trace_distance_claimed": false,
+        "independent_encoded_source_promise_required": true
+      },
+      "four": {
+        "labels": 4,
+        "reads": 3,
+        "contrast_exact": "1/2",
+        "old_label_risk_certificate": {
+          "lower_exact": "343836305807739241497108735105/633825300114114700748351602688",
+          "upper_exact": "171918152903869620748554367573/316912650057057350374175801344",
+          "diagnostic": 0.5424780388946836
+        },
+        "old_policy_with_sharp_costs": {
+          "lower_exact": "159843967739251625151210295299/316912650057057350374175801344",
+          "upper_exact": "19980495967406453143901286927/39614081257132168796771975168",
+          "diagnostic": 0.504378628339617
+        },
+        "new_policy_with_sharp_costs": {
+          "lower_exact": "159843967739251625151210295299/316912650057057350374175801344",
+          "upper_exact": "19980495967406453143901286927/39614081257132168796771975168",
+          "diagnostic": 0.504378628339617
+        },
+        "loss_polynomial": [
+          4,
+          28,
+          44,
+          4,
+          8,
+          16,
+          8,
+          0,
+          4,
+          8,
+          4,
+          0,
+          0,
+          0,
+          8,
+          4,
+          0,
+          4,
+          0,
+          0
+        ],
+        "bellman_states": 30,
+        "certified_strict_comparisons": 107,
+        "reachable_policy_states": 12,
+        "new_native_gates_after_first_join": 417,
+        "fresh_pointer_initializations": 3,
+        "optimal_for_this_cost_matrix": true,
+        "optimal_actual_quantum_trace_distance_claimed": false,
+        "independent_encoded_source_promise_required": true
+      }
+    },
+    {
+      "six": {
+        "labels": 6,
+        "reads": 4,
+        "contrast_exact": "1/2",
+        "old_label_risk_certificate": {
+          "lower_exact": "324634672871452021419528764967/633825300114114700748351602688",
+          "upper_exact": "324634672871452021419528765027/633825300114114700748351602688",
+          "diagnostic": 0.5121832038150014
+        },
+        "old_policy_with_sharp_costs": {
+          "lower_exact": "147884143945125787526159884193/316912650057057350374175801344",
+          "upper_exact": "36971035986281446881539971103/79228162514264337593543950336",
+          "diagnostic": 0.4666400786415454
+        },
+        "new_policy_with_sharp_costs": {
+          "lower_exact": "143271782178255576568224901563/316912650057057350374175801344",
+          "upper_exact": "143271782178255576568224901785/316912650057057350374175801344",
+          "diagnostic": 0.4520860311270653
+        },
+        "loss_polynomial": [
+          24,
+          56,
+          64,
+          0,
+          0,
+          12,
+          68,
+          112,
+          56,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bellman_states": 155,
+        "certified_strict_comparisons": 1103,
+        "reachable_policy_states": 25,
+        "new_native_gates_after_first_join": 417,
+        "fresh_pointer_initializations": 4,
+        "optimal_for_this_cost_matrix": true,
+        "optimal_actual_quantum_trace_distance_claimed": false,
+        "independent_encoded_source_promise_required": true
+      },
+      "four": {
+        "labels": 4,
+        "reads": 4,
+        "contrast_exact": "1/2",
+        "old_label_risk_certificate": {
+          "lower_exact": "623398519587634400718366805765/1267650600228229401496703205376",
+          "upper_exact": "623398519587634400718366805905/1267650600228229401496703205376",
+          "diagnostic": 0.49177472047533993
+        },
+        "old_policy_with_sharp_costs": {
+          "lower_exact": "146331331238929290773960487453/316912650057057350374175801344",
+          "upper_exact": "146331331238929290773960487633/316912650057057350374175801344",
+          "diagnostic": 0.4617402656933499
+        },
+        "new_policy_with_sharp_costs": {
+          "lower_exact": "146331331238929290773960487453/316912650057057350374175801344",
+          "upper_exact": "146331331238929290773960487633/316912650057057350374175801344",
+          "diagnostic": 0.4617402656933499
+        },
+        "loss_polynomial": [
+          4,
+          16,
+          88,
+          32,
+          4,
+          8,
+          32,
+          16,
+          8,
+          0,
+          4,
+          12,
+          16,
+          0,
+          0,
+          0,
+          0,
+          0,
+          16,
+          4,
+          0,
+          4,
+          8,
+          0,
+          0
+        ],
+        "bellman_states": 55,
+        "certified_strict_comparisons": 185,
+        "reachable_policy_states": 22,
+        "new_native_gates_after_first_join": 421,
+        "fresh_pointer_initializations": 4,
+        "optimal_for_this_cost_matrix": true,
+        "optimal_actual_quantum_trace_distance_claimed": false,
+        "independent_encoded_source_promise_required": true
+      }
+    },
+    {
+      "six": {
+        "labels": 6,
+        "reads": 5,
+        "contrast_exact": "1/2",
+        "old_label_risk_certificate": {
+          "lower_exact": "280534766251520514496139820277/633825300114114700748351602688",
+          "upper_exact": "140267383125760257248069910185/316912650057057350374175801344",
+          "diagnostic": 0.4426058193022788
+        },
+        "old_policy_with_sharp_costs": {
+          "lower_exact": "127394763979014401219672193805/316912650057057350374175801344",
+          "upper_exact": "3981086374344200038114756069/9903520314283042199192993792",
+          "diagnostic": 0.4019869953316098
+        },
+        "new_policy_with_sharp_costs": {
+          "lower_exact": "7828780030864992420509422065/19807040628566084398385987584",
+          "upper_exact": "125260480493839878728150753441/316912650057057350374175801344",
+          "diagnostic": 0.39525238412315766
+        },
+        "loss_polynomial": [
+          24,
+          112,
+          56,
+          128,
+          0,
+          0,
+          12,
+          64,
+          212,
+          168,
+          24,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bellman_states": 301,
+        "certified_strict_comparisons": 2139,
+        "reachable_policy_states": 48,
+        "new_native_gates_after_first_join": 421,
+        "fresh_pointer_initializations": 5,
+        "optimal_for_this_cost_matrix": true,
+        "optimal_actual_quantum_trace_distance_claimed": false,
+        "independent_encoded_source_promise_required": true
+      },
+      "four": {
+        "labels": 4,
+        "reads": 5,
+        "contrast_exact": "1/2",
+        "old_label_risk_certificate": {
+          "lower_exact": "144824653241925723448744465265/316912650057057350374175801344",
+          "upper_exact": "289649306483851446897488930631/633825300114114700748351602688",
+          "diagnostic": 0.45698602821897866
+        },
+        "old_policy_with_sharp_costs": {
+          "lower_exact": "16929828101589145524030847095/39614081257132168796771975168",
+          "upper_exact": "67719312406356582096123388561/158456325028528675187087900672",
+          "diagnostic": 0.4273689446865836
+        },
+        "new_policy_with_sharp_costs": {
+          "lower_exact": "16929828101589145524030847095/39614081257132168796771975168",
+          "upper_exact": "67719312406356582096123388561/158456325028528675187087900672",
+          "diagnostic": 0.4273689446865836
+        },
+        "loss_polynomial": [
+          4,
+          20,
+          120,
+          120,
+          20,
+          4,
+          8,
+          40,
+          40,
+          40,
+          0,
+          0,
+          4,
+          20,
+          20,
+          20,
+          0,
+          0,
+          0,
+          0,
+          0,
+          16,
+          20,
+          4,
+          0,
+          0,
+          20,
+          4,
+          0,
+          0
+        ],
+        "bellman_states": 91,
+        "certified_strict_comparisons": 293,
+        "reachable_policy_states": 33,
+        "new_native_gates_after_first_join": 425,
+        "fresh_pointer_initializations": 5,
+        "optimal_for_this_cost_matrix": true,
+        "optimal_actual_quantum_trace_distance_claimed": false,
+        "independent_encoded_source_promise_required": true
+      }
+    },
+    {
+      "six": {
+        "labels": 6,
+        "reads": 6,
+        "contrast_exact": "1/2",
+        "old_label_risk_certificate": {
+          "lower_exact": "65317419598478687315621318771/158456325028528675187087900672",
+          "upper_exact": "8164677449809835914452664851/19807040628566084398385987584",
+          "diagnostic": 0.41221087000925244
+        },
+        "old_policy_with_sharp_costs": {
+          "lower_exact": "3740597658887421276445445113/9903520314283042199192993792",
+          "upper_exact": "59849562542198740423127122189/158456325028528675187087900672",
+          "diagnostic": 0.3777038406729637
+        },
+        "new_policy_with_sharp_costs": {
+          "lower_exact": "14448476703367358804623431437/39614081257132168796771975168",
+          "upper_exact": "57793906813469435218493726137/158456325028528675187087900672",
+          "diagnostic": 0.3647308291610584
+        },
+        "loss_polynomial": [
+          24,
+          128,
+          184,
+          240,
+          32,
+          0,
+          0,
+          12,
+          80,
+          268,
+          360,
+          248,
+          8,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bellman_states": 532,
+        "certified_strict_comparisons": 3769,
+        "reachable_policy_states": 66,
+        "new_native_gates_after_first_join": 425,
+        "fresh_pointer_initializations": 6,
+        "optimal_for_this_cost_matrix": true,
+        "optimal_actual_quantum_trace_distance_claimed": false,
+        "independent_encoded_source_promise_required": true
+      },
+      "four": {
+        "labels": 4,
+        "reads": 6,
+        "contrast_exact": "1/2",
+        "old_label_risk_certificate": {
+          "lower_exact": "545819571171088865596636274965/1267650600228229401496703205376",
+          "upper_exact": "545819571171088865596636275291/1267650600228229401496703205376",
+          "diagnostic": 0.43057572100136965
+        },
+        "old_policy_with_sharp_costs": {
+          "lower_exact": "129121084323437295878649403743/316912650057057350374175801344",
+          "upper_exact": "129121084323437295878649404433/316912650057057350374175801344",
+          "diagnostic": 0.4074343018500214
+        },
+        "new_policy_with_sharp_costs": {
+          "lower_exact": "129121084323437295878649403743/316912650057057350374175801344",
+          "upper_exact": "129121084323437295878649404433/316912650057057350374175801344",
+          "diagnostic": 0.4074343018500214
+        },
+        "loss_polynomial": [
+          4,
+          24,
+          76,
+          304,
+          156,
+          24,
+          4,
+          8,
+          48,
+          112,
+          48,
+          40,
+          0,
+          0,
+          4,
+          24,
+          40,
+          56,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          56,
+          24,
+          4,
+          0,
+          0,
+          20,
+          24,
+          0,
+          0,
+          0
+        ],
+        "bellman_states": 140,
+        "certified_strict_comparisons": 432,
+        "reachable_policy_states": 49,
+        "new_native_gates_after_first_join": 429,
+        "fresh_pointer_initializations": 6,
+        "optimal_for_this_cost_matrix": true,
+        "optimal_actual_quantum_trace_distance_claimed": false,
+        "independent_encoded_source_promise_required": true
+      }
+    },
+    {
+      "six": {
+        "labels": 6,
+        "reads": 7,
+        "contrast_exact": "1/2",
+        "old_label_risk_certificate": {
+          "lower_exact": "116107686270220964338348213637/316912650057057350374175801344",
+          "upper_exact": "116107686270220964338348213731/316912650057057350374175801344",
+          "diagnostic": 0.366371257976975
+        },
+        "old_policy_with_sharp_costs": {
+          "lower_exact": "105460926902645790078867387971/316912650057057350374175801344",
+          "upper_exact": "52730463451322895039433695053/158456325028528675187087900672",
+          "diagnostic": 0.33277600904747245
+        },
+        "new_policy_with_sharp_costs": {
+          "lower_exact": "103312809921181672011890653013/316912650057057350374175801344",
+          "upper_exact": "103312809921181672011890655147/316912650057057350374175801344",
+          "diagnostic": 0.32599774702139883
+        },
+        "loss_polynomial": [
+          24,
+          160,
+          424,
+          208,
+          448,
+          16,
+          0,
+          0,
+          12,
+          88,
+          292,
+          736,
+          608,
+          184,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bellman_states": 876,
+        "certified_strict_comparisons": 2446,
+        "reachable_policy_states": 106,
+        "new_native_gates_after_first_join": 429,
+        "fresh_pointer_initializations": 7,
+        "optimal_for_this_cost_matrix": true,
+        "optimal_actual_quantum_trace_distance_claimed": false,
+        "independent_encoded_source_promise_required": true
+      },
+      "four": {
+        "labels": 4,
+        "reads": 7,
+        "contrast_exact": "1/2",
+        "old_label_risk_certificate": {
+          "lower_exact": "506549538759438715911916732001/1267650600228229401496703205376",
+          "upper_exact": "506549538759438715911916732411/1267650600228229401496703205376",
+          "diagnostic": 0.39959712768505684
+        },
+        "old_policy_with_sharp_costs": {
+          "lower_exact": "119680452781172898275513774089/316912650057057350374175801344",
+          "upper_exact": "467501768676456633888725687/1237940039285380274899124224",
+          "diagnostic": 0.3776449212728665
+        },
+        "new_policy_with_sharp_costs": {
+          "lower_exact": "119680452781172898275513774089/316912650057057350374175801344",
+          "upper_exact": "467501768676456633888725687/1237940039285380274899124224",
+          "diagnostic": 0.3776449212728665
+        },
+        "loss_polynomial": [
+          4,
+          28,
+          84,
+          460,
+          396,
+          100,
+          28,
+          4,
+          8,
+          56,
+          168,
+          120,
+          152,
+          8,
+          0,
+          0,
+          4,
+          28,
+          80,
+          64,
+          80,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          32,
+          84,
+          28,
+          4,
+          0,
+          0,
+          4,
+          76,
+          28,
+          0,
+          0,
+          0
+        ],
+        "bellman_states": 204,
+        "certified_strict_comparisons": 269,
+        "reachable_policy_states": 68,
+        "new_native_gates_after_first_join": 433,
+        "fresh_pointer_initializations": 7,
+        "optimal_for_this_cost_matrix": true,
+        "optimal_actual_quantum_trace_distance_claimed": false,
+        "independent_encoded_source_promise_required": true
+      }
+    },
+    {
+      "six": {
+        "labels": 6,
+        "reads": 8,
+        "contrast_exact": "1/2",
+        "old_label_risk_certificate": {
+          "lower_exact": "211466019286469473364276392397/633825300114114700748351602688",
+          "upper_exact": "13216626205404342085267274543/39614081257132168796771975168",
+          "diagnostic": 0.3336345507956165
+        },
+        "old_policy_with_sharp_costs": {
+          "lower_exact": "96954280506883838181082001277/316912650057057350374175801344",
+          "upper_exact": "96954280506883838181082004213/316912650057057350374175801344",
+          "diagnostic": 0.30593376594284916
+        },
+        "new_policy_with_sharp_costs": {
+          "lower_exact": "93752796579837303152661391933/316912650057057350374175801344",
+          "upper_exact": "23438199144959325788165348713/79228162514264337593543950336",
+          "diagnostic": 0.29583166390788734
+        },
+        "loss_polynomial": [
+          24,
+          184,
+          552,
+          608,
+          864,
+          272,
+          0,
+          0,
+          0,
+          12,
+          100,
+          396,
+          1040,
+          1248,
+          984,
+          88,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bellman_states": 1365,
+        "certified_strict_comparisons": 3638,
+        "reachable_policy_states": 160,
+        "new_native_gates_after_first_join": 433,
+        "fresh_pointer_initializations": 8,
+        "optimal_for_this_cost_matrix": true,
+        "optimal_actual_quantum_trace_distance_claimed": false,
+        "independent_encoded_source_promise_required": true
+      },
+      "four": {
+        "labels": 4,
+        "reads": 8,
+        "contrast_exact": "1/2",
+        "old_label_risk_certificate": {
+          "lower_exact": "241814275111700907408683925173/633825300114114700748351602688",
+          "upper_exact": "241814275111700907408683925471/633825300114114700748351602688",
+          "diagnostic": 0.38151565591995834
+        },
+        "old_policy_with_sharp_costs": {
+          "lower_exact": "57585177283785186801785763531/158456325028528675187087900672",
+          "upper_exact": "57585177283785186801785764833/158456325028528675187087900672",
+          "diagnostic": 0.3634135606351938
+        },
+        "new_policy_with_sharp_costs": {
+          "lower_exact": "57557714178513988271250020733/158456325028528675187087900672",
+          "upper_exact": "57557714178513988271250022039/158456325028528675187087900672",
+          "diagnostic": 0.3632402440745185
+        },
+        "loss_polynomial": [
+          4,
+          32,
+          112,
+          432,
+          1032,
+          528,
+          112,
+          32,
+          4,
+          8,
+          64,
+          224,
+          344,
+          184,
+          200,
+          0,
+          0,
+          0,
+          4,
+          32,
+          112,
+          124,
+          188,
+          52,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          168,
+          112,
+          32,
+          4,
+          0,
+          0,
+          0,
+          100,
+          92,
+          4,
+          0,
+          0,
+          0
+        ],
+        "bellman_states": 285,
+        "certified_strict_comparisons": 356,
+        "reachable_policy_states": 94,
+        "new_native_gates_after_first_join": 437,
+        "fresh_pointer_initializations": 8,
+        "optimal_for_this_cost_matrix": true,
+        "optimal_actual_quantum_trace_distance_claimed": false,
+        "independent_encoded_source_promise_required": true
+      }
+    },
+    {
+      "six": {
+        "labels": 6,
+        "reads": 9,
+        "contrast_exact": "1/2",
+        "old_label_risk_certificate": {
+          "lower_exact": "190391899698846348499328361221/633825300114114700748351602688",
+          "upper_exact": "190391899698846348499328361655/633825300114114700748351602688",
+          "diagnostic": 0.30038545268636
+        },
+        "old_policy_with_sharp_costs": {
+          "lower_exact": "86560980741365744476451466735/316912650057057350374175801344",
+          "upper_exact": "86560980741365744476451473551/316912650057057350374175801344",
+          "diagnostic": 0.2731382944978094
+        },
+        "new_policy_with_sharp_costs": {
+          "lower_exact": "42352216095888795424024684563/158456325028528675187087900672",
+          "upper_exact": "84704432191777590848049375907/316912650057057350374175801344",
+          "diagnostic": 0.26728006022014994
+        },
+        "loss_polynomial": [
+          24,
+          208,
+          680,
+          1424,
+          1128,
+          1600,
+          176,
+          0,
+          0,
+          0,
+          12,
+          112,
+          524,
+          1304,
+          2460,
+          2216,
+          976,
+          16,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bellman_states": 2035,
+        "certified_strict_comparisons": 5215,
+        "reachable_policy_states": 247,
+        "new_native_gates_after_first_join": 437,
+        "fresh_pointer_initializations": 9,
+        "optimal_for_this_cost_matrix": true,
+        "optimal_actual_quantum_trace_distance_claimed": false,
+        "independent_encoded_source_promise_required": true
+      },
+      "four": {
+        "labels": 4,
+        "reads": 9,
+        "contrast_exact": "1/2",
+        "old_label_risk_certificate": {
+          "lower_exact": "454257444850013473981522442351/1267650600228229401496703205376",
+          "upper_exact": "56782180606251684247690305407/158456325028528675187087900672",
+          "diagnostic": 0.35834593914776547
+        },
+        "old_policy_with_sharp_costs": {
+          "lower_exact": "1692963675733309404534923097/4951760157141521099596496896",
+          "upper_exact": "6771854702933237618139692739/19807040628566084398385987584",
+          "diagnostic": 0.3418912915827891
+        },
+        "new_policy_with_sharp_costs": {
+          "lower_exact": "1692963675733309404534923097/4951760157141521099596496896",
+          "upper_exact": "6771854702933237618139692739/19807040628566084398385987584",
+          "diagnostic": 0.3418912915827891
+        },
+        "loss_polynomial": [
+          4,
+          36,
+          144,
+          352,
+          1704,
+          1464,
+          480,
+          144,
+          36,
+          4,
+          8,
+          72,
+          288,
+          664,
+          408,
+          528,
+          80,
+          0,
+          0,
+          0,
+          4,
+          36,
+          144,
+          296,
+          240,
+          300,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          64,
+          332,
+          144,
+          36,
+          4,
+          0,
+          0,
+          0,
+          40,
+          264,
+          140,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bellman_states": 385,
+        "certified_strict_comparisons": 459,
+        "reachable_policy_states": 124,
+        "new_native_gates_after_first_join": 441,
+        "fresh_pointer_initializations": 9,
+        "optimal_for_this_cost_matrix": true,
+        "optimal_actual_quantum_trace_distance_claimed": false,
+        "independent_encoded_source_promise_required": true
+      }
+    },
+    {
+      "six": {
+        "labels": 6,
+        "reads": 10,
+        "contrast_exact": "1/2",
+        "old_label_risk_certificate": {
+          "lower_exact": "172682999192004105379503687391/633825300114114700748351602688",
+          "upper_exact": "86341499596002052689751843989/316912650057057350374175801344",
+          "diagnostic": 0.27244573411776724
+        },
+        "old_policy_with_sharp_costs": {
+          "lower_exact": "39553233339634074283115666323/158456325028528675187087900672",
+          "upper_exact": "39553233339634074283115673059/158456325028528675187087900672",
+          "diagnostic": 0.24961599565377313
+        },
+        "new_policy_with_sharp_costs": {
+          "lower_exact": "76631206160566750168779998517/316912650057057350374175801344",
+          "upper_exact": "19157801540141687542195003033/79228162514264337593543950336",
+          "diagnostic": 0.24180545064001066
+        },
+        "loss_polynomial": [
+          24,
+          232,
+          1000,
+          2240,
+          2072,
+          3072,
+          1536,
+          16,
+          0,
+          0,
+          0,
+          12,
+          124,
+          580,
+          1760,
+          4004,
+          4512,
+          3760,
+          624,
+          8,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bellman_states": 2926,
+        "certified_strict_comparisons": 7235,
+        "reachable_policy_states": 288,
+        "new_native_gates_after_first_join": 441,
+        "fresh_pointer_initializations": 10,
+        "optimal_for_this_cost_matrix": true,
+        "optimal_actual_quantum_trace_distance_claimed": false,
+        "independent_encoded_source_promise_required": true
+      },
+      "four": {
+        "labels": 4,
+        "reads": 10,
+        "contrast_exact": "1/2",
+        "old_label_risk_certificate": {
+          "lower_exact": "6806767462881309869524292077/19807040628566084398385987584",
+          "upper_exact": "435633117624403831649554694313/1267650600228229401496703205376",
+          "diagnostic": 0.3436539355134387
+        },
+        "old_policy_with_sharp_costs": {
+          "lower_exact": "52196423087287626820572299047/158456325028528675187087900672",
+          "upper_exact": "104392846174575253641144609021/316912650057057350374175801344",
+          "diagnostic": 0.3294057405274931
+        },
+        "new_policy_with_sharp_costs": {
+          "lower_exact": "52147500359004819125529800605/158456325028528675187087900672",
+          "upper_exact": "104295000718009638251059612141/316912650057057350374175801344",
+          "diagnostic": 0.32909699470574066
+        },
+        "loss_polynomial": [
+          4,
+          40,
+          180,
+          480,
+          2024,
+          3600,
+          1880,
+          496,
+          180,
+          40,
+          4,
+          8,
+          80,
+          360,
+          960,
+          1088,
+          720,
+          872,
+          8,
+          0,
+          0,
+          0,
+          4,
+          40,
+          180,
+          476,
+          404,
+          648,
+          296,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          504,
+          480,
+          180,
+          40,
+          4,
+          0,
+          0,
+          0,
+          4,
+          436,
+          360,
+          40,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bellman_states": 506,
+        "certified_strict_comparisons": 578,
+        "reachable_policy_states": 147,
+        "new_native_gates_after_first_join": 445,
+        "fresh_pointer_initializations": 10,
+        "optimal_for_this_cost_matrix": true,
+        "optimal_actual_quantum_trace_distance_claimed": false,
+        "independent_encoded_source_promise_required": true
+      }
+    },
+    {
+      "six": {
+        "labels": 6,
+        "reads": 11,
+        "contrast_exact": "1/2",
+        "old_label_risk_certificate": {
+          "lower_exact": "155286766713116957901009233713/633825300114114700748351602688",
+          "upper_exact": "38821691678279239475252308745/158456325028528675187087900672",
+          "diagnostic": 0.24499931871630706
+        },
+        "old_policy_with_sharp_costs": {
+          "lower_exact": "70642763571835448439587853497/316912650057057350374175801344",
+          "upper_exact": "35321381785917724219793937445/158456325028528675187087900672",
+          "diagnostic": 0.22290925767436812
+        },
+        "new_policy_with_sharp_costs": {
+          "lower_exact": "69198642800454510479501248381/316912650057057350374175801344",
+          "upper_exact": "69198642800454510479501269743/316912650057057350374175801344",
+          "diagnostic": 0.21835241599852798
+        },
+        "loss_polynomial": [
+          16,
+          232,
+          1176,
+          3056,
+          4800,
+          4512,
+          5832,
+          1408,
+          16,
+          0,
+          0,
+          0,
+          16,
+          148,
+          732,
+          2432,
+          5520,
+          8832,
+          8164,
+          4392,
+          200,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bellman_states": 4082,
+        "certified_strict_comparisons": 9787,
+        "reachable_policy_states": 458,
+        "new_native_gates_after_first_join": 445,
+        "fresh_pointer_initializations": 11,
+        "optimal_for_this_cost_matrix": true,
+        "optimal_actual_quantum_trace_distance_claimed": false,
+        "independent_encoded_source_promise_required": true
+      },
+      "four": {
+        "labels": 4,
+        "reads": 11,
+        "contrast_exact": "1/2",
+        "old_label_risk_certificate": {
+          "lower_exact": "414446636295459399470793903435/1267650600228229401496703205376",
+          "upper_exact": "207223318147729699735396953149/633825300114114700748351602688",
+          "diagnostic": 0.32694074867383954
+        },
+        "old_policy_with_sharp_costs": {
+          "lower_exact": "24905853332958649565689099807/79228162514264337593543950336",
+          "upper_exact": "99623413331834598262756420031/316912650057057350374175801344",
+          "diagnostic": 0.3143560640886322
+        },
+        "new_policy_with_sharp_costs": {
+          "lower_exact": "24905853332958649565689099807/79228162514264337593543950336",
+          "upper_exact": "99623413331834598262756420031/316912650057057350374175801344",
+          "diagnostic": 0.3143560640886322
+        },
+        "loss_polynomial": [
+          4,
+          44,
+          220,
+          660,
+          1512,
+          6280,
+          5640,
+          2200,
+          660,
+          220,
+          44,
+          4,
+          8,
+          88,
+          440,
+          1320,
+          2544,
+          1480,
+          1800,
+          512,
+          0,
+          0,
+          0,
+          0,
+          4,
+          44,
+          220,
+          660,
+          1064,
+          948,
+          1108,
+          48,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          128,
+          1268,
+          660,
+          220,
+          44,
+          4,
+          0,
+          0,
+          0,
+          0,
+          256,
+          900,
+          612,
+          4,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bellman_states": 650,
+        "certified_strict_comparisons": 715,
+        "reachable_policy_states": 217,
+        "new_native_gates_after_first_join": 449,
+        "fresh_pointer_initializations": 11,
+        "optimal_for_this_cost_matrix": true,
+        "optimal_actual_quantum_trace_distance_claimed": false,
+        "independent_encoded_source_promise_required": true
+      }
+    },
+    {
+      "six": {
+        "labels": 6,
+        "reads": 12,
+        "contrast_exact": "1/2",
+        "old_label_risk_certificate": {
+          "lower_exact": "141599945742748036055405291735/633825300114114700748351602688",
+          "upper_exact": "35399986435687009013851323457/158456325028528675187087900672",
+          "diagnostic": 0.22340532275574074
+        },
+        "old_policy_with_sharp_costs": {
+          "lower_exact": "32411593291054356449960011179/158456325028528675187087900672",
+          "upper_exact": "16205796645527178224980019571/79228162514264337593543950336",
+          "diagnostic": 0.2045459105858913
+        },
+        "new_policy_with_sharp_costs": {
+          "lower_exact": "31427835249685956290788163305/158456325028528675187087900672",
+          "upper_exact": "62855670499371912581576382859/316912650057057350374175801344",
+          "diagnostic": 0.1983375245136327
+        },
+        "loss_polynomial": [
+          24,
+          280,
+          1336,
+          4536,
+          8784,
+          7784,
+          11056,
+          7264,
+          240,
+          0,
+          0,
+          0,
+          0,
+          12,
+          148,
+          916,
+          3012,
+          7488,
+          15116,
+          16648,
+          14224,
+          3592,
+          112,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bellman_states": 5551,
+        "certified_strict_comparisons": 12917,
+        "reachable_policy_states": 545,
+        "new_native_gates_after_first_join": 449,
+        "fresh_pointer_initializations": 12,
+        "optimal_for_this_cost_matrix": true,
+        "optimal_actual_quantum_trace_distance_claimed": false,
+        "independent_encoded_source_promise_required": true
+      },
+      "four": {
+        "labels": 4,
+        "reads": 12,
+        "contrast_exact": "1/2",
+        "old_label_risk_certificate": {
+          "lower_exact": "398813318671097137423340018373/1267650600228229401496703205376",
+          "upper_exact": "398813318671097137423340023457/1267650600228229401496703205376",
+          "diagnostic": 0.31460823558107753
+        },
+        "old_policy_with_sharp_costs": {
+          "lower_exact": "12018280323466035798602875449/39614081257132168796771975168",
+          "upper_exact": "48073121293864143194411524439/158456325028528675187087900672",
+          "diagnostic": 0.30338404784541734
+        },
+        "new_policy_with_sharp_costs": {
+          "lower_exact": "12006032376745507321512035457/39614081257132168796771975168",
+          "upper_exact": "48024129506982029286048164457/158456325028528675187087900672",
+          "diagnostic": 0.3030748662026316
+        },
+        "loss_polynomial": [
+          4,
+          48,
+          264,
+          880,
+          1996,
+          8720,
+          12832,
+          7008,
+          2172,
+          880,
+          264,
+          48,
+          4,
+          8,
+          96,
+          528,
+          1760,
+          3952,
+          3560,
+          2824,
+          3552,
+          104,
+          0,
+          0,
+          0,
+          0,
+          4,
+          48,
+          264,
+          880,
+          1928,
+          1392,
+          2284,
+          1388,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1512,
+          1976,
+          880,
+          264,
+          48,
+          4,
+          0,
+          0,
+          0,
+          0,
+          52,
+          1776,
+          1412,
+          268,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bellman_states": 819,
+        "certified_strict_comparisons": 870,
+        "reachable_policy_states": 229,
+        "new_native_gates_after_first_join": 453,
+        "fresh_pointer_initializations": 12,
+        "optimal_for_this_cost_matrix": true,
+        "optimal_actual_quantum_trace_distance_claimed": false,
+        "independent_encoded_source_promise_required": true
+      }
+    }
+  ],
+  "policies": {
+    "six_3": [
+      {
+        "depth": 0,
+        "signed_counts": [
+          0,
+          0,
+          0
+        ],
+        "read_label_wire": 0,
+        "physical_wire": 4
+      },
+      {
+        "depth": 1,
+        "signed_counts": [
+          -1,
+          0,
+          0
+        ],
+        "read_label_wire": 1,
+        "physical_wire": 5
+      },
+      {
+        "depth": 1,
+        "signed_counts": [
+          1,
+          0,
+          0
+        ],
+        "read_label_wire": 1,
+        "physical_wire": 5
+      },
+      {
+        "depth": 2,
+        "signed_counts": [
+          -1,
+          -1,
+          0
+        ],
+        "read_label_wire": 2,
+        "physical_wire": 6
+      },
+      {
+        "depth": 2,
+        "signed_counts": [
+          -1,
+          1,
+          0
+        ],
+        "read_label_wire": 2,
+        "physical_wire": 6
+      },
+      {
+        "depth": 2,
+        "signed_counts": [
+          1,
+          -1,
+          0
+        ],
+        "read_label_wire": 2,
+        "physical_wire": 6
+      },
+      {
+        "depth": 2,
+        "signed_counts": [
+          1,
+          1,
+          0
+        ],
+        "read_label_wire": 2,
+        "physical_wire": 6
+      },
+      {
+        "depth": 3,
+        "signed_counts": [
+          -1,
+          -1,
+          -1
+        ],
+        "report": 0
+      },
+      {
+        "depth": 3,
+        "signed_counts": [
+          -1,
+          -1,
+          1
+        ],
+        "report": 1
+      },
+      {
+        "depth": 3,
+        "signed_counts": [
+          -1,
+          1,
+          -1
+        ],
+        "report": 2
+      },
+      {
+        "depth": 3,
+        "signed_counts": [
+          -1,
+          1,
+          1
+        ],
+        "report": 3
+      },
+      {
+        "depth": 3,
+        "signed_counts": [
+          1,
+          -1,
+          -1
+        ],
+        "report": 4
+      },
+      {
+        "depth": 3,
+        "signed_counts": [
+          1,
+          -1,
+          1
+        ],
+        "report": 5
+      },
+      {
+        "depth": 3,
+        "signed_counts": [
+          1,
+          1,
+          -1
+        ],
+        "report": 2
+      },
+      {
+        "depth": 3,
+        "signed_counts": [
+          1,
+          1,
+          1
+        ],
+        "report": 3
+      }
+    ],
+    "six_5": [
+      {
+        "depth": 0,
+        "signed_counts": [
+          0,
+          0,
+          0
+        ],
+        "read_label_wire": 1,
+        "physical_wire": 5
+      },
+      {
+        "depth": 1,
+        "signed_counts": [
+          0,
+          -1,
+          0
+        ],
+        "read_label_wire": 2,
+        "physical_wire": 6
+      },
+      {
+        "depth": 1,
+        "signed_counts": [
+          0,
+          1,
+          0
+        ],
+        "read_label_wire": 1,
+        "physical_wire": 5
+      },
+      {
+        "depth": 2,
+        "signed_counts": [
+          0,
+          -1,
+          -1
+        ],
+        "read_label_wire": 2,
+        "physical_wire": 6
+      },
+      {
+        "depth": 2,
+        "signed_counts": [
+          0,
+          -1,
+          1
+        ],
+        "read_label_wire": 0,
+        "physical_wire": 4
+      },
+      {
+        "depth": 2,
+        "signed_counts": [
+          0,
+          0,
+          0
+        ],
+        "read_label_wire": 0,
+        "physical_wire": 4
+      },
+      {
+        "depth": 2,
+        "signed_counts": [
+          0,
+          2,
+          0
+        ],
+        "read_label_wire": 2,
+        "physical_wire": 6
+      },
+      {
+        "depth": 3,
+        "signed_counts": [
+          -1,
+          -1,
+          1
+        ],
+        "read_label_wire": 2,
+        "physical_wire": 6
+      },
+      {
+        "depth": 3,
+        "signed_counts": [
+          -1,
+          0,
+          0
+        ],
+        "read_label_wire": 1,
+        "physical_wire": 5
+      },
+      {
+        "depth": 3,
+        "signed_counts": [
+          0,
+          -1,
+          -2
+        ],
+        "read_label_wire": 1,
+        "physical_wire": 5
+      },
+      {
+        "depth": 3,
+        "signed_counts": [
+          0,
+          -1,
+          0
+        ],
+        "read_label_wire": 0,
+        "physical_wire": 4
+      },
+      {
+        "depth": 3,
+        "signed_counts": [
+          0,
+          2,
+          -1
+        ],
+        "read_label_wire": 2,
+        "physical_wire": 6
+      },
+      {
+        "depth": 3,
+        "signed_counts": [
+          0,
+          2,
+          1
+        ],
+        "read_label_wire": 2,
+        "physical_wire": 6
+      },
+      {
+        "depth": 3,
+        "signed_counts": [
+          1,
+          -1,
+          1
+        ],
+        "read_label_wire": 2,
+        "physical_wire": 6
+      },
+      {
+        "depth": 3,
+        "signed_counts": [
+          1,
+          0,
+          0
+        ],
+        "read_label_wire": 1,
+        "physical_wire": 5
+      },
+      {
+        "depth": 4,
+        "signed_counts": [
+          -1,
+          -1,
+          0
+        ],
+        "read_label_wire": 2,
+        "physical_wire": 6
+      },
+      {
+        "depth": 4,
+        "signed_counts": [
+          -1,
+          -1,
+          2
+        ],
+        "read_label_wire": 1,
+        "physical_wire": 5
+      },
+      {
+        "depth": 4,
+        "signed_counts": [
+          -1,
+          1,
+          0
+        ],
+        "read_label_wire": 2,
+        "physical_wire": 6
+      },
+      {
+        "depth": 4,
+        "signed_counts": [
+          0,
+          -2,
+          -2
+        ],
+        "read_label_wire": 0,
+        "physical_wire": 4
+      },
+      {
+        "depth": 4,
+        "signed_counts": [
+          0,
+          0,
+          -2
+        ],
+        "read_label_wire": 1,
+        "physical_wire": 5
+      },
+      {
+        "depth": 4,
+        "signed_counts": [
+          0,
+          2,
+          -2
+        ],
+        "read_label_wire": 0,
+        "physical_wire": 4
+      },
+      {
+        "depth": 4,
+        "signed_counts": [
+          0,
+          2,
+          0
+        ],
+        "read_label_wire": 2,
+        "physical_wire": 6
+      },
+      {
+        "depth": 4,
+        "signed_counts": [
+          0,
+          2,
+          2
+        ],
+        "read_label_wire": 0,
+        "physical_wire": 4
+      },
+      {
+        "depth": 4,
+        "signed_counts": [
+          1,
+          -1,
+          0
+        ],
+        "read_label_wire": 2,
+        "physical_wire": 6
+      },
+      {
+        "depth": 4,
+        "signed_counts": [
+          1,
+          -1,
+          2
+        ],
+        "read_label_wire": 0,
+        "physical_wire": 4
+      },
+      {
+        "depth": 4,
+        "signed_counts": [
+          1,
+          1,
+          0
+        ],
+        "read_label_wire": 2,
+        "physical_wire": 6
+      },
+      {
+        "depth": 5,
+        "signed_counts": [
+          -1,
+          -2,
+          -2
+        ],
+        "report": 0
+      },
+      {
+        "depth": 5,
+        "signed_counts": [
+          -1,
+          -2,
+          2
+        ],
+        "report": 1
+      },
+      {
+        "depth": 5,
+        "signed_counts": [
+          -1,
+          -1,
+          -1
+        ],
+        "report": 0
+      },
+      {
+        "depth": 5,
+        "signed_counts": [
+          -1,
+          -1,
+          1
+        ],
+        "report": 1
+      },
+      {
+        "depth": 5,
+        "signed_counts": [
+          -1,
+          0,
+          2
+        ],
+        "report": 3
+      },
+      {
+        "depth": 5,
+        "signed_counts": [
+          -1,
+          1,
+          -1
+        ],
+        "report": 2
+      },
+      {
+        "depth": 5,
+        "signed_counts": [
+          -1,
+          1,
+          1
+        ],
+        "report": 3
+      },
+      {
+        "depth": 5,
+        "signed_counts": [
+          -1,
+          2,
+          -2
+        ],
+        "report": 2
+      },
+      {
+        "depth": 5,
+        "signed_counts": [
+          -1,
+          2,
+          2
+        ],
+        "report": 3
+      },
+      {
+        "depth": 5,
+        "signed_counts": [
+          0,
+          -1,
+          -2
+        ],
+        "report": 0
+      },
+      {
+        "depth": 5,
+        "signed_counts": [
+          0,
+          -1,
+          2
+        ],
+        "report": 5
+      },
+      {
+        "depth": 5,
+        "signed_counts": [
+          0,
+          1,
+          -2
+        ],
+        "report": 2
+      },
+      {
+        "depth": 5,
+        "signed_counts": [
+          0,
+          2,
+          -1
+        ],
+        "report": 2
+      },
+      {
+        "depth": 5,
+        "signed_counts": [
+          0,
+          2,
+          1
+        ],
+        "report": 3
+      },
+      {
+        "depth": 5,
+        "signed_counts": [
+          1,
+          -2,
+          -2
+        ],
+        "report": 4
+      },
+      {
+        "depth": 5,
+        "signed_counts": [
+          1,
+          -1,
+          -1
+        ],
+        "report": 4
+      },
+      {
+        "depth": 5,
+        "signed_counts": [
+          1,
+          -1,
+          1
+        ],
+        "report": 5
+      },
+      {
+        "depth": 5,
+        "signed_counts": [
+          1,
+          1,
+          -1
+        ],
+        "report": 2
+      },
+      {
+        "depth": 5,
+        "signed_counts": [
+          1,
+          1,
+          1
+        ],
+        "report": 3
+      },
+      {
+        "depth": 5,
+        "signed_counts": [
+          1,
+          2,
+          -2
+        ],
+        "report": 2
+      },
+      {
+        "depth": 5,
+        "signed_counts": [
+          1,
+          2,
+          2
+        ],
+        "report": 3
+      },
+      {
+        "depth": 5,
+        "signed_counts": [
+          2,
+          -1,
+          2
+        ],
+        "report": 5
+      }
+    ],
+    "four_4": [
+      {
+        "depth": 0,
+        "signed_counts": [
+          0,
+          0
+        ],
+        "read_label_wire": 0,
+        "physical_wire": 4
+      },
+      {
+        "depth": 1,
+        "signed_counts": [
+          -1,
+          0
+        ],
+        "read_label_wire": 1,
+        "physical_wire": 5
+      },
+      {
+        "depth": 1,
+        "signed_counts": [
+          1,
+          0
+        ],
+        "read_label_wire": 0,
+        "physical_wire": 4
+      },
+      {
+        "depth": 2,
+        "signed_counts": [
+          -1,
+          -1
+        ],
+        "read_label_wire": 1,
+        "physical_wire": 5
+      },
+      {
+        "depth": 2,
+        "signed_counts": [
+          -1,
+          1
+        ],
+        "read_label_wire": 1,
+        "physical_wire": 5
+      },
+      {
+        "depth": 2,
+        "signed_counts": [
+          0,
+          0
+        ],
+        "read_label_wire": 0,
+        "physical_wire": 4
+      },
+      {
+        "depth": 2,
+        "signed_counts": [
+          2,
+          0
+        ],
+        "read_label_wire": 0,
+        "physical_wire": 4
+      },
+      {
+        "depth": 3,
+        "signed_counts": [
+          -1,
+          -2
+        ],
+        "read_label_wire": 0,
+        "physical_wire": 4
+      },
+      {
+        "depth": 3,
+        "signed_counts": [
+          -1,
+          0
+        ],
+        "read_label_wire": 1,
+        "physical_wire": 5
+      },
+      {
+        "depth": 3,
+        "signed_counts": [
+          -1,
+          2
+        ],
+        "read_label_wire": 0,
+        "physical_wire": 4
+      },
+      {
+        "depth": 3,
+        "signed_counts": [
+          1,
+          0
+        ],
+        "read_label_wire": 1,
+        "physical_wire": 5
+      },
+      {
+        "depth": 3,
+        "signed_counts": [
+          3,
+          0
+        ],
+        "read_label_wire": 1,
+        "physical_wire": 5
+      },
+      {
+        "depth": 4,
+        "signed_counts": [
+          -2,
+          -2
+        ],
+        "report": 0
+      },
+      {
+        "depth": 4,
+        "signed_counts": [
+          -2,
+          2
+        ],
+        "report": 1
+      },
+      {
+        "depth": 4,
+        "signed_counts": [
+          -1,
+          -1
+        ],
+        "report": 0
+      },
+      {
+        "depth": 4,
+        "signed_counts": [
+          -1,
+          1
+        ],
+        "report": 1
+      },
+      {
+        "depth": 4,
+        "signed_counts": [
+          0,
+          -2
+        ],
+        "report": 0
+      },
+      {
+        "depth": 4,
+        "signed_counts": [
+          0,
+          2
+        ],
+        "report": 1
+      },
+      {
+        "depth": 4,
+        "signed_counts": [
+          1,
+          -1
+        ],
+        "report": 2
+      },
+      {
+        "depth": 4,
+        "signed_counts": [
+          1,
+          1
+        ],
+        "report": 3
+      },
+      {
+        "depth": 4,
+        "signed_counts": [
+          3,
+          -1
+        ],
+        "report": 2
+      },
+      {
+        "depth": 4,
+        "signed_counts": [
+          3,
+          1
+        ],
+        "report": 3
+      }
+    ]
+  },
+  "all_results_accepted": true,
+  "quantum_minimax_error_or_minimum_read_count_claimed": false,
+  "automated_checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}

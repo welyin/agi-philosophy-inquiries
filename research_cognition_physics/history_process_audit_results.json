@@ -1,0 +1,118 @@
+{
+  "rounds": [
+    194,
+    196
+  ],
+  "scope": "Chosen two-bit classical memory interface; not the full SoCA architecture",
+  "minimal_deterministic_labels": {
+    "read_and_flip_memory": 2,
+    "full_interface": 4
+  },
+  "noise_is_public": false,
+  "internal_undo_erases_external_history": false,
+  "stationary_process": "Uniform (x,m); tick=(m,x xor m xor e); e iid Bernoulli(eta)",
+  "memoryless_comparison": "Unique stationary first-order chain matching all adjacent pairs; passive read/tick task only",
+  "exact_tv": "0.5 sum_{k=0}^{n-2} binom(n-2,k) |eta^k(1-eta)^(n-2-k) - 2^(-(n-2))|, n>=2",
+  "fixed_finite_horizon_eta_to_half_error": "0",
+  "fixed_eta_not_half_infinite_horizon_error": "1 (analytic proof in note 196)",
+  "horizon_samples": [
+    {
+      "eta": "0",
+      "readings": 3,
+      "tv_exact": "1/2",
+      "tv_float": 0.5
+    },
+    {
+      "eta": "0",
+      "readings": 8,
+      "tv_exact": "63/64",
+      "tv_float": 0.984375
+    },
+    {
+      "eta": "0",
+      "readings": 32,
+      "tv_exact": "1073741823/1073741824",
+      "tv_float": 0.9999999990686774
+    },
+    {
+      "eta": "0",
+      "readings": 102,
+      "tv_exact": "1267650600228229401496703205375/1267650600228229401496703205376",
+      "tv_float": 1.0
+    },
+    {
+      "eta": "1/5",
+      "readings": 3,
+      "tv_exact": "3/10",
+      "tv_float": 0.3
+    },
+    {
+      "eta": "1/5",
+      "readings": 8,
+      "tv_exact": "55737/100000",
+      "tv_float": 0.55737
+    },
+    {
+      "eta": "1/5",
+      "readings": 32,
+      "tv_exact": "92501517131197894354839878349/100000000000000000000000000000",
+      "tv_float": 0.925015171311979
+    },
+    {
+      "eta": "1/5",
+      "readings": 102,
+      "tv_exact": "9988262564799982125080193102467003865960651120794019104089326863657238531994093664236416115843735557/10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "tv_float": 0.9988262564799982
+    },
+    {
+      "eta": "49/100",
+      "readings": 3,
+      "tv_exact": "1/100",
+      "tv_float": 0.01
+    },
+    {
+      "eta": "49/100",
+      "readings": 8,
+      "tv_exact": "1893242561/100000000000",
+      "tv_float": 0.01893242561
+    },
+    {
+      "eta": "49/100",
+      "readings": 32,
+      "tv_exact": "1092268558530225743438012043274504076296708742250829642969/25000000000000000000000000000000000000000000000000000000000",
+      "tv_float": 0.04369074234120903
+    },
+    {
+      "eta": "49/100",
+      "readings": 102,
+      "tv_exact": "1996509460654077427662334030815492926610169875447715196682033009438139480847533347684414251358625357872657779988728779503412230261691965363021468602063182303580225333114493298483657718204733988597843/25000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "tv_float": 0.0798603784261631
+    },
+    {
+      "eta": "1/2",
+      "readings": 3,
+      "tv_exact": "0",
+      "tv_float": 0.0
+    },
+    {
+      "eta": "1/2",
+      "readings": 8,
+      "tv_exact": "0",
+      "tv_float": 0.0
+    },
+    {
+      "eta": "1/2",
+      "readings": 32,
+      "tv_exact": "0",
+      "tv_float": 0.0
+    },
+    {
+      "eta": "1/2",
+      "readings": 102,
+      "tv_exact": "0",
+      "tv_float": 0.0
+    }
+  ],
+  "automated_tests": 8,
+  "quantum_structure_derived": false
+}

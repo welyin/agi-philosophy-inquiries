@@ -1,0 +1,90 @@
+{
+  "round": 170,
+  "correction_native_counts": {
+    "yx": 10,
+    "ry": 8,
+    "all": 18
+  },
+  "conditional_native_counts": [
+    {
+      "yx": 26,
+      "ry": 25,
+      "all": 51
+    },
+    {
+      "yx": 21,
+      "ry": 18,
+      "all": 39
+    },
+    {
+      "yx": 26,
+      "ry": 25,
+      "all": 51
+    },
+    {
+      "yx": 21,
+      "ry": 20,
+      "all": 41
+    },
+    {
+      "yx": 16,
+      "ry": 13,
+      "all": 29
+    },
+    {
+      "yx": 21,
+      "ry": 20,
+      "all": 41
+    }
+  ],
+  "new_native_gates_worst": 431,
+  "new_yx_worst": 303,
+  "new_ry_worst": 128,
+  "total_including_first_join_worst": 597,
+  "expected_new_native_gates": {
+    "lower_exact": "267926512869614153057205026743159/633825300114114700748351602688",
+    "upper_exact": "267926512869614153057205026747741/633825300114114700748351602688",
+    "diagnostic": 422.7135029500658
+  },
+  "expected_previous_native_gates": {
+    "lower_exact": "256517657467560088443734697895729/633825300114114700748351602688",
+    "upper_exact": "256517657467560088443734697898385/633825300114114700748351602688",
+    "diagnostic": 404.7135029500658
+  },
+  "additional_gates_on_every_report": 18,
+  "noisy_reads": 3,
+  "fresh_pointer_initializations": 3,
+  "coherent_history_rebits": 1,
+  "raw_record_bits": 3,
+  "decoded_message_bits": 3,
+  "new_pure_helpers": 0,
+  "source_purification_all_pointers_and_baths_retained": true,
+  "all_eight_raw_records_accepted": true,
+  "common_interface_before_recovery_unchanged": true,
+  "compilation_gate_minimality_proved": false,
+  "transport_classical_compute_and_physical_calibration_costs_included": false,
+  "limited_pulse_error_certificate": {
+    "per_variable_native_pulse_error_radians_exact": "1/20000",
+    "variable_pulses_affected": 4,
+    "variable_yx_pulses": 2,
+    "variable_ry_pulses": 2,
+    "external_error_upper": {
+      "lower_exact": "569504708658534340916408882047/1267650600228229401496703205376",
+      "upper_exact": "4449255536394799538409444391/9903520314283042199192993792",
+      "diagnostic": 0.44926
+    },
+    "remaining_improvement_over_ideal_four_angle_family": {
+      "lower_exact": "170802481284391492620024891/1267650600228229401496703205376",
+      "upper_exact": "170802481284391492620024893/1267650600228229401496703205376",
+      "diagnostic": 0.0001347394
+    },
+    "still_beats_every_ideal_four_angle_scheme": true,
+    "all_other_gates_readout_contrast_and_coherent_storage_ideal": true,
+    "all_native_gate_noise_covered": false
+  },
+  "automated_checks": {
+    "run": 7,
+    "failures": 0,
+    "errors": 0
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "round": 203,
+  "purpose": "Historical-result reuse and closure of the explicit round-119 different-policy gap",
+  "antecedent_rounds": [
+    20,
+    98,
+    99,
+    117,
+    118,
+    119,
+    198,
+    201,
+    202
+  ],
+  "quantum_or_cognitive_necessity_derived": false,
+  "task_record_fields": [
+    "executed_action",
+    "sensor_outcome"
+  ],
+  "exact_numeric_belief_reports_in_record_comparison": false,
+  "same_actual_world_and_sensor_for_both_controllers": true,
+  "counterexample": {
+    "world_prior": "4999/10000",
+    "approximate_belief": "1/2",
+    "belief_error": "1/10000",
+    "action_observation_tv": "1",
+    "observation_only_tv": "1/10000",
+    "immediate_goal_regret": "1/5000"
+  },
+  "conditional_feedback_bound": "1-(1-d0)*product_t((1-epsilon_policy_t)*(1-delta_kernel_t))",
+  "uniform_future_belief_error_derived_automatically": false,
+  "long_run_regret_bound_proved": false,
+  "fixed_square_code_joint_mean_bit_success": 0.75,
+  "fixed_square_code_joint_whole_pair_success": 0.5,
+  "square_joint_bound_scope": "Fixed round-201 encoding; all joint POVMs, including sequential readouts with only input-independent auxiliaries",
+  "new_tests": 8
+}

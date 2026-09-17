@@ -1,0 +1,26 @@
+{
+  "rounds": [
+    197,
+    198
+  ],
+  "scope": "Same two-bit classical interface, ideal swap/read, noise only on tick",
+  "passive_half_noise_uniform_source_error": "0 at all finite passive horizons",
+  "five_command_echo_error": "1/2 for all tick noise parameters; no tick used",
+  "uniform_echo_with_k_swaps_error": "1-2^(-(k-1)), k>=1",
+  "known_state_echo_with_k_swaps_error": "1-2^(-k), k>=0",
+  "exact_active_deterministic_labels": 4,
+  "exact_active_ensemble_affine_dimension": 3,
+  "hilbert_dimension_lower_bound_for_exact_four_label_task": 4,
+  "one_visible_bit_all_preparation_worst_error_lower_bound": "1/2",
+  "per_action_pointwise_defects": {
+    "read": "0",
+    "swap": "1/2",
+    "flip_memory": "0",
+    "tick": "1/2"
+  },
+  "adaptive_contract": "TV <= 1-(1-delta_initial)*product_j(1-delta_j), for uniform conditional projected outcome-successor defects",
+  "stationary_average_error_is_sufficient": false,
+  "erased_information_recreated": false,
+  "quantum_necessity_derived": false,
+  "automated_tests": 7
+}
