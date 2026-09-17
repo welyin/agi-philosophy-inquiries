@@ -1,0 +1,2024 @@
+{
+  "round": 153,
+  "state": "depth and signed counts of ones minus zeros per label wire",
+  "bellman": "V_t(x)=max_j [V_(t+1)(x-e_j)+V_(t+1)(x+e_j)]",
+  "fixed_number_of_native_reads_all_outcomes_accepted": true,
+  "certificate_frontier": [
+    {
+      "six": {
+        "labels": 6,
+        "reads": 0,
+        "contrast_exact": "1/2",
+        "external_error_upper": {
+          "lower_exact": "1056375500190191167913919337813/1267650600228229401496703205376",
+          "upper_exact": "528187750095095583956959668907/633825300114114700748351602688",
+          "diagnostic": 0.8333333333333334
+        },
+        "gain_polynomial": [
+          1,
+          0
+        ],
+        "bellman_states": 1,
+        "certified_strict_comparisons": 0,
+        "reachable_policy_states": 1,
+        "fresh_pointer_initializations": 0,
+        "raw_readout_bits_retained": 0,
+        "new_native_gates_after_first_join": 401,
+        "optimal_over_all_classical_adaptive_policies_for_this_certificate": true,
+        "optimal_quantum_recovery_or_minimum_read_count_claimed": false,
+        "all_results_accepted": true,
+        "classical_policy_computation_in_gate_count": false
+      },
+      "four": {
+        "labels": 4,
+        "reads": 0,
+        "contrast_exact": "1/2",
+        "external_error_upper": {
+          "lower_exact": "979276944385407837875400982343/1267650600228229401496703205376",
+          "upper_exact": "489638472192703918937700491173/633825300114114700748351602688",
+          "diagnostic": 0.7725132968099393
+        },
+        "gain_polynomial": [
+          0,
+          1
+        ],
+        "bellman_states": 1,
+        "certified_strict_comparisons": 2,
+        "reachable_policy_states": 1,
+        "fresh_pointer_initializations": 0,
+        "raw_readout_bits_retained": 0,
+        "new_native_gates_after_first_join": 405,
+        "optimal_over_all_classical_adaptive_policies_for_this_certificate": true,
+        "optimal_quantum_recovery_or_minimum_read_count_claimed": false,
+        "all_results_accepted": true,
+        "classical_policy_computation_in_gate_count": false
+      }
+    },
+    {
+      "six": {
+        "labels": 6,
+        "reads": 1,
+        "contrast_exact": "1/2",
+        "external_error_upper": {
+          "lower_exact": "475917453853789516962663413377/633825300114114700748351602688",
+          "upper_exact": "475917453853789516962663413383/633825300114114700748351602688",
+          "diagnostic": 0.750865346915159
+        },
+        "gain_polynomial": [
+          0,
+          2,
+          0,
+          0
+        ],
+        "bellman_states": 7,
+        "certified_strict_comparisons": 18,
+        "reachable_policy_states": 3,
+        "fresh_pointer_initializations": 1,
+        "raw_readout_bits_retained": 1,
+        "new_native_gates_after_first_join": 405,
+        "optimal_over_all_classical_adaptive_policies_for_this_certificate": true,
+        "optimal_quantum_recovery_or_minimum_read_count_claimed": false,
+        "all_results_accepted": true,
+        "classical_policy_computation_in_gate_count": false
+      },
+      "four": {
+        "labels": 4,
+        "reads": 1,
+        "contrast_exact": "1/2",
+        "external_error_upper": {
+          "lower_exact": "209146843996244337331775796727/316912650057057350374175801344",
+          "upper_exact": "418293687992488674663551593463/633825300114114700748351602688",
+          "diagnostic": 0.6599510747159801
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "bellman_states": 5,
+        "certified_strict_comparisons": 11,
+        "reachable_policy_states": 3,
+        "fresh_pointer_initializations": 1,
+        "raw_readout_bits_retained": 1,
+        "new_native_gates_after_first_join": 409,
+        "optimal_over_all_classical_adaptive_policies_for_this_certificate": true,
+        "optimal_quantum_recovery_or_minimum_read_count_claimed": false,
+        "all_results_accepted": true,
+        "classical_policy_computation_in_gate_count": false
+      }
+    },
+    {
+      "six": {
+        "labels": 6,
+        "reads": 2,
+        "contrast_exact": "1/2",
+        "external_error_upper": {
+          "lower_exact": "49722925141183948937210771329/79228162514264337593543950336",
+          "upper_exact": "198891700564735795748843085325/316912650057057350374175801344",
+          "diagnostic": 0.6275915477937756
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          4,
+          0,
+          0,
+          0
+        ],
+        "bellman_states": 26,
+        "certified_strict_comparisons": 76,
+        "reachable_policy_states": 7,
+        "fresh_pointer_initializations": 2,
+        "raw_readout_bits_retained": 2,
+        "new_native_gates_after_first_join": 409,
+        "optimal_over_all_classical_adaptive_policies_for_this_certificate": true,
+        "optimal_quantum_recovery_or_minimum_read_count_claimed": false,
+        "all_results_accepted": true,
+        "classical_policy_computation_in_gate_count": false
+      },
+      "four": {
+        "labels": 4,
+        "reads": 2,
+        "contrast_exact": "1/2",
+        "external_error_upper": {
+          "lower_exact": "177357585188789863685937083041/316912650057057350374175801344",
+          "upper_exact": "44339396297197465921484270763/79228162514264337593543950336",
+          "diagnostic": 0.559641860799366
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          2,
+          0,
+          0,
+          2
+        ],
+        "bellman_states": 14,
+        "certified_strict_comparisons": 28,
+        "reachable_policy_states": 7,
+        "fresh_pointer_initializations": 2,
+        "raw_readout_bits_retained": 2,
+        "new_native_gates_after_first_join": 413,
+        "optimal_over_all_classical_adaptive_policies_for_this_certificate": true,
+        "optimal_quantum_recovery_or_minimum_read_count_claimed": false,
+        "all_results_accepted": true,
+        "classical_policy_computation_in_gate_count": false
+      }
+    },
+    {
+      "six": {
+        "labels": 6,
+        "reads": 3,
+        "contrast_exact": "1/2",
+        "external_error_upper": {
+          "lower_exact": "42423212596339341303728403433/79228162514264337593543950336",
+          "upper_exact": "84846425192678682607456806875/158456325028528675187087900672",
+          "diagnostic": 0.535456222258107
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          2,
+          6,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bellman_states": 70,
+        "certified_strict_comparisons": 204,
+        "reachable_policy_states": 15,
+        "fresh_pointer_initializations": 3,
+        "raw_readout_bits_retained": 3,
+        "new_native_gates_after_first_join": 413,
+        "optimal_over_all_classical_adaptive_policies_for_this_certificate": true,
+        "optimal_quantum_recovery_or_minimum_read_count_claimed": false,
+        "all_results_accepted": true,
+        "classical_policy_computation_in_gate_count": false
+      },
+      "four": {
+        "labels": 4,
+        "reads": 3,
+        "contrast_exact": "1/2",
+        "external_error_upper": {
+          "lower_exact": "343836305807739241497108735105/633825300114114700748351602688",
+          "upper_exact": "171918152903869620748554367573/316912650057057350374175801344",
+          "diagnostic": 0.5424780388946836
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          4,
+          2
+        ],
+        "bellman_states": 30,
+        "certified_strict_comparisons": 51,
+        "reachable_policy_states": 12,
+        "fresh_pointer_initializations": 3,
+        "raw_readout_bits_retained": 3,
+        "new_native_gates_after_first_join": 417,
+        "optimal_over_all_classical_adaptive_policies_for_this_certificate": true,
+        "optimal_quantum_recovery_or_minimum_read_count_claimed": false,
+        "all_results_accepted": true,
+        "classical_policy_computation_in_gate_count": false
+      }
+    },
+    {
+      "six": {
+        "labels": 6,
+        "reads": 4,
+        "contrast_exact": "1/2",
+        "external_error_upper": {
+          "lower_exact": "324634672871452021419528764967/633825300114114700748351602688",
+          "upper_exact": "324634672871452021419528765027/633825300114114700748351602688",
+          "diagnostic": 0.5121832038150014
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          10,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bellman_states": 155,
+        "certified_strict_comparisons": 412,
+        "reachable_policy_states": 21,
+        "fresh_pointer_initializations": 4,
+        "raw_readout_bits_retained": 4,
+        "new_native_gates_after_first_join": 417,
+        "optimal_over_all_classical_adaptive_policies_for_this_certificate": true,
+        "optimal_quantum_recovery_or_minimum_read_count_claimed": false,
+        "all_results_accepted": true,
+        "classical_policy_computation_in_gate_count": false
+      },
+      "four": {
+        "labels": 4,
+        "reads": 4,
+        "contrast_exact": "1/2",
+        "external_error_upper": {
+          "lower_exact": "623398519587634400718366805765/1267650600228229401496703205376",
+          "upper_exact": "623398519587634400718366805905/1267650600228229401496703205376",
+          "diagnostic": 0.49177472047533993
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          4,
+          2,
+          0,
+          0,
+          0,
+          8,
+          2
+        ],
+        "bellman_states": 55,
+        "certified_strict_comparisons": 85,
+        "reachable_policy_states": 22,
+        "fresh_pointer_initializations": 4,
+        "raw_readout_bits_retained": 4,
+        "new_native_gates_after_first_join": 421,
+        "optimal_over_all_classical_adaptive_policies_for_this_certificate": true,
+        "optimal_quantum_recovery_or_minimum_read_count_claimed": false,
+        "all_results_accepted": true,
+        "classical_policy_computation_in_gate_count": false
+      }
+    },
+    {
+      "six": {
+        "labels": 6,
+        "reads": 5,
+        "contrast_exact": "1/2",
+        "external_error_upper": {
+          "lower_exact": "280534766251520514496139820277/633825300114114700748351602688",
+          "upper_exact": "140267383125760257248069910185/316912650057057350374175801344",
+          "diagnostic": 0.4426058193022788
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          2,
+          24,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bellman_states": 301,
+        "certified_strict_comparisons": 768,
+        "reachable_policy_states": 44,
+        "fresh_pointer_initializations": 5,
+        "raw_readout_bits_retained": 5,
+        "new_native_gates_after_first_join": 421,
+        "optimal_over_all_classical_adaptive_policies_for_this_certificate": true,
+        "optimal_quantum_recovery_or_minimum_read_count_claimed": false,
+        "all_results_accepted": true,
+        "classical_policy_computation_in_gate_count": false
+      },
+      "four": {
+        "labels": 4,
+        "reads": 5,
+        "contrast_exact": "1/2",
+        "external_error_upper": {
+          "lower_exact": "144824653241925723448744465265/316912650057057350374175801344",
+          "upper_exact": "289649306483851446897488930631/633825300114114700748351602688",
+          "diagnostic": 0.45698602821897866
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          10,
+          2,
+          0,
+          0,
+          0,
+          8,
+          10,
+          2
+        ],
+        "bellman_states": 91,
+        "certified_strict_comparisons": 129,
+        "reachable_policy_states": 33,
+        "fresh_pointer_initializations": 5,
+        "raw_readout_bits_retained": 5,
+        "new_native_gates_after_first_join": 425,
+        "optimal_over_all_classical_adaptive_policies_for_this_certificate": true,
+        "optimal_quantum_recovery_or_minimum_read_count_claimed": false,
+        "all_results_accepted": true,
+        "classical_policy_computation_in_gate_count": false
+      }
+    },
+    {
+      "six": {
+        "labels": 6,
+        "reads": 6,
+        "contrast_exact": "1/2",
+        "external_error_upper": {
+          "lower_exact": "65317419598478687315621318771/158456325028528675187087900672",
+          "upper_exact": "8164677449809835914452664851/19807040628566084398385987584",
+          "diagnostic": 0.41221087000925244
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          24,
+          34,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bellman_states": 532,
+        "certified_strict_comparisons": 1248,
+        "reachable_policy_states": 64,
+        "fresh_pointer_initializations": 6,
+        "raw_readout_bits_retained": 6,
+        "new_native_gates_after_first_join": 425,
+        "optimal_over_all_classical_adaptive_policies_for_this_certificate": true,
+        "optimal_quantum_recovery_or_minimum_read_count_claimed": false,
+        "all_results_accepted": true,
+        "classical_policy_computation_in_gate_count": false
+      },
+      "four": {
+        "labels": 4,
+        "reads": 6,
+        "contrast_exact": "1/2",
+        "external_error_upper": {
+          "lower_exact": "545819571171088865596636274965/1267650600228229401496703205376",
+          "upper_exact": "545819571171088865596636275291/1267650600228229401496703205376",
+          "diagnostic": 0.43057572100136965
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          8,
+          12,
+          2,
+          0,
+          0,
+          0,
+          0,
+          28,
+          12,
+          2
+        ],
+        "bellman_states": 140,
+        "certified_strict_comparisons": 184,
+        "reachable_policy_states": 49,
+        "fresh_pointer_initializations": 6,
+        "raw_readout_bits_retained": 6,
+        "new_native_gates_after_first_join": 429,
+        "optimal_over_all_classical_adaptive_policies_for_this_certificate": true,
+        "optimal_quantum_recovery_or_minimum_read_count_claimed": false,
+        "all_results_accepted": true,
+        "classical_policy_computation_in_gate_count": false
+      }
+    },
+    {
+      "six": {
+        "labels": 6,
+        "reads": 7,
+        "contrast_exact": "1/2",
+        "external_error_upper": {
+          "lower_exact": "116107686270220964338348213637/316912650057057350374175801344",
+          "upper_exact": "116107686270220964338348213731/316912650057057350374175801344",
+          "diagnostic": 0.366371257976975
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          78,
+          42,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bellman_states": 876,
+        "certified_strict_comparisons": 1986,
+        "reachable_policy_states": 107,
+        "fresh_pointer_initializations": 7,
+        "raw_readout_bits_retained": 7,
+        "new_native_gates_after_first_join": 429,
+        "optimal_over_all_classical_adaptive_policies_for_this_certificate": true,
+        "optimal_quantum_recovery_or_minimum_read_count_claimed": false,
+        "all_results_accepted": true,
+        "classical_policy_computation_in_gate_count": false
+      },
+      "four": {
+        "labels": 4,
+        "reads": 7,
+        "contrast_exact": "1/2",
+        "external_error_upper": {
+          "lower_exact": "506549538759438715911916732001/1267650600228229401496703205376",
+          "upper_exact": "506549538759438715911916732411/1267650600228229401496703205376",
+          "diagnostic": 0.39959712768505684
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          38,
+          14,
+          2,
+          0,
+          0,
+          0,
+          0,
+          16,
+          42,
+          14,
+          2
+        ],
+        "bellman_states": 204,
+        "certified_strict_comparisons": 253,
+        "reachable_policy_states": 68,
+        "fresh_pointer_initializations": 7,
+        "raw_readout_bits_retained": 7,
+        "new_native_gates_after_first_join": 433,
+        "optimal_over_all_classical_adaptive_policies_for_this_certificate": true,
+        "optimal_quantum_recovery_or_minimum_read_count_claimed": false,
+        "all_results_accepted": true,
+        "classical_policy_computation_in_gate_count": false
+      }
+    },
+    {
+      "six": {
+        "labels": 6,
+        "reads": 8,
+        "contrast_exact": "1/2",
+        "external_error_upper": {
+          "lower_exact": "211466019286469473364276392397/633825300114114700748351602688",
+          "upper_exact": "13216626205404342085267274543/39614081257132168796771975168",
+          "diagnostic": 0.3336345507956165
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          56,
+          146,
+          48,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bellman_states": 1365,
+        "certified_strict_comparisons": 2900,
+        "reachable_policy_states": 145,
+        "fresh_pointer_initializations": 8,
+        "raw_readout_bits_retained": 8,
+        "new_native_gates_after_first_join": 433,
+        "optimal_over_all_classical_adaptive_policies_for_this_certificate": true,
+        "optimal_quantum_recovery_or_minimum_read_count_claimed": false,
+        "all_results_accepted": true,
+        "classical_policy_computation_in_gate_count": false
+      },
+      "four": {
+        "labels": 4,
+        "reads": 8,
+        "contrast_exact": "1/2",
+        "external_error_upper": {
+          "lower_exact": "241814275111700907408683925173/633825300114114700748351602688",
+          "upper_exact": "241814275111700907408683925471/633825300114114700748351602688",
+          "diagnostic": 0.38151565591995834
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          16,
+          56,
+          16,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          92,
+          56,
+          16,
+          2
+        ],
+        "bellman_states": 285,
+        "certified_strict_comparisons": 335,
+        "reachable_policy_states": 101,
+        "fresh_pointer_initializations": 8,
+        "raw_readout_bits_retained": 8,
+        "new_native_gates_after_first_join": 437,
+        "optimal_over_all_classical_adaptive_policies_for_this_certificate": true,
+        "optimal_quantum_recovery_or_minimum_read_count_claimed": false,
+        "all_results_accepted": true,
+        "classical_policy_computation_in_gate_count": false
+      }
+    },
+    {
+      "six": {
+        "labels": 6,
+        "reads": 9,
+        "contrast_exact": "1/2",
+        "external_error_upper": {
+          "lower_exact": "190391899698846348499328361221/633825300114114700748351602688",
+          "upper_exact": "190391899698846348499328361655/633825300114114700748351602688",
+          "diagnostic": 0.30038545268636
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          238,
+          212,
+          54,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bellman_states": 2035,
+        "certified_strict_comparisons": 4188,
+        "reachable_policy_states": 212,
+        "fresh_pointer_initializations": 9,
+        "raw_readout_bits_retained": 9,
+        "new_native_gates_after_first_join": 437,
+        "optimal_over_all_classical_adaptive_policies_for_this_certificate": true,
+        "optimal_quantum_recovery_or_minimum_read_count_claimed": false,
+        "all_results_accepted": true,
+        "classical_policy_computation_in_gate_count": false
+      },
+      "four": {
+        "labels": 4,
+        "reads": 9,
+        "contrast_exact": "1/2",
+        "external_error_upper": {
+          "lower_exact": "454257444850013473981522442351/1267650600228229401496703205376",
+          "upper_exact": "56782180606251684247690305407/158456325028528675187087900672",
+          "diagnostic": 0.35834593914776547
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          130,
+          72,
+          18,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          32,
+          166,
+          72,
+          18,
+          2
+        ],
+        "bellman_states": 385,
+        "certified_strict_comparisons": 431,
+        "reachable_policy_states": 124,
+        "fresh_pointer_initializations": 9,
+        "raw_readout_bits_retained": 9,
+        "new_native_gates_after_first_join": 441,
+        "optimal_over_all_classical_adaptive_policies_for_this_certificate": true,
+        "optimal_quantum_recovery_or_minimum_read_count_claimed": false,
+        "all_results_accepted": true,
+        "classical_policy_computation_in_gate_count": false
+      }
+    },
+    {
+      "six": {
+        "labels": 6,
+        "reads": 10,
+        "contrast_exact": "1/2",
+        "external_error_upper": {
+          "lower_exact": "172682999192004105379503687391/633825300114114700748351602688",
+          "upper_exact": "86341499596002052689751843989/316912650057057350374175801344",
+          "diagnostic": 0.27244573411776724
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          128,
+          562,
+          268,
+          60,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bellman_states": 2926,
+        "certified_strict_comparisons": 5686,
+        "reachable_policy_states": 282,
+        "fresh_pointer_initializations": 10,
+        "raw_readout_bits_retained": 10,
+        "new_native_gates_after_first_join": 441,
+        "optimal_over_all_classical_adaptive_policies_for_this_certificate": true,
+        "optimal_quantum_recovery_or_minimum_read_count_claimed": false,
+        "all_results_accepted": true,
+        "classical_policy_computation_in_gate_count": false
+      },
+      "four": {
+        "labels": 4,
+        "reads": 10,
+        "contrast_exact": "1/2",
+        "external_error_upper": {
+          "lower_exact": "6806767462881309869524292077/19807040628566084398385987584",
+          "upper_exact": "435633117624403831649554694313/1267650600228229401496703205376",
+          "diagnostic": 0.3436539355134387
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          32,
+          236,
+          90,
+          20,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          292,
+          240,
+          90,
+          20,
+          2
+        ],
+        "bellman_states": 506,
+        "certified_strict_comparisons": 544,
+        "reachable_policy_states": 165,
+        "fresh_pointer_initializations": 10,
+        "raw_readout_bits_retained": 10,
+        "new_native_gates_after_first_join": 445,
+        "optimal_over_all_classical_adaptive_policies_for_this_certificate": true,
+        "optimal_quantum_recovery_or_minimum_read_count_claimed": false,
+        "all_results_accepted": true,
+        "classical_policy_computation_in_gate_count": false
+      }
+    },
+    {
+      "six": {
+        "labels": 6,
+        "reads": 11,
+        "contrast_exact": "1/2",
+        "external_error_upper": {
+          "lower_exact": "155286766713116957901009233713/633825300114114700748351602688",
+          "upper_exact": "38821691678279239475252308745/158456325028528675187087900672",
+          "diagnostic": 0.24499931871630706
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          706,
+          938,
+          330,
+          66,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bellman_states": 4082,
+        "certified_strict_comparisons": 7776,
+        "reachable_policy_states": 393,
+        "fresh_pointer_initializations": 11,
+        "raw_readout_bits_retained": 11,
+        "new_native_gates_after_first_join": 445,
+        "optimal_over_all_classical_adaptive_policies_for_this_certificate": true,
+        "optimal_quantum_recovery_or_minimum_read_count_claimed": false,
+        "all_results_accepted": true,
+        "classical_policy_computation_in_gate_count": false
+      },
+      "four": {
+        "labels": 4,
+        "reads": 11,
+        "contrast_exact": "1/2",
+        "external_error_upper": {
+          "lower_exact": "414446636295459399470793903435/1267650600228229401496703205376",
+          "upper_exact": "207223318147729699735396953149/633825300114114700748351602688",
+          "diagnostic": 0.32694074867383954
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          422,
+          330,
+          110,
+          22,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          64,
+          634,
+          330,
+          110,
+          22,
+          2
+        ],
+        "bellman_states": 650,
+        "certified_strict_comparisons": 673,
+        "reachable_policy_states": 217,
+        "fresh_pointer_initializations": 11,
+        "raw_readout_bits_retained": 11,
+        "new_native_gates_after_first_join": 449,
+        "optimal_over_all_classical_adaptive_policies_for_this_certificate": true,
+        "optimal_quantum_recovery_or_minimum_read_count_claimed": false,
+        "all_results_accepted": true,
+        "classical_policy_computation_in_gate_count": false
+      }
+    },
+    {
+      "six": {
+        "labels": 6,
+        "reads": 12,
+        "contrast_exact": "1/2",
+        "external_error_upper": {
+          "lower_exact": "141599945742748036055405291735/633825300114114700748351602688",
+          "upper_exact": "35399986435687009013851323457/158456325028528675187087900672",
+          "diagnostic": 0.22340532275574074
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          288,
+          2042,
+          1292,
+          396,
+          72,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bellman_states": 5551,
+        "certified_strict_comparisons": 10056,
+        "reachable_policy_states": 505,
+        "fresh_pointer_initializations": 12,
+        "raw_readout_bits_retained": 12,
+        "new_native_gates_after_first_join": 449,
+        "optimal_over_all_classical_adaptive_policies_for_this_certificate": true,
+        "optimal_quantum_recovery_or_minimum_read_count_claimed": false,
+        "all_results_accepted": true,
+        "classical_policy_computation_in_gate_count": false
+      },
+      "four": {
+        "labels": 4,
+        "reads": 12,
+        "contrast_exact": "1/2",
+        "external_error_upper": {
+          "lower_exact": "398813318671097137423340018373/1267650600228229401496703205376",
+          "upper_exact": "398813318671097137423340023457/1267650600228229401496703205376",
+          "diagnostic": 0.31460823558107753
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          64,
+          940,
+          440,
+          132,
+          24,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          908,
+          988,
+          440,
+          132,
+          24,
+          2
+        ],
+        "bellman_states": 819,
+        "certified_strict_comparisons": 819,
+        "reachable_policy_states": 258,
+        "fresh_pointer_initializations": 12,
+        "raw_readout_bits_retained": 12,
+        "new_native_gates_after_first_join": 453,
+        "optimal_over_all_classical_adaptive_policies_for_this_certificate": true,
+        "optimal_quantum_recovery_or_minimum_read_count_claimed": false,
+        "all_results_accepted": true,
+        "classical_policy_computation_in_gate_count": false
+      }
+    },
+    {
+      "six": {
+        "labels": 6,
+        "reads": 13,
+        "contrast_exact": "1/2",
+        "external_error_upper": {
+          "lower_exact": "63302488312390502342611326259/316912650057057350374175801344",
+          "upper_exact": "126604976624781004685222656659/633825300114114700748351602688",
+          "diagnostic": 0.19974743293141956
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          2060,
+          3866,
+          1712,
+          468,
+          78,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bellman_states": 7385,
+        "certified_strict_comparisons": 13138,
+        "reachable_policy_states": 659,
+        "fresh_pointer_initializations": 13,
+        "raw_readout_bits_retained": 13,
+        "new_native_gates_after_first_join": 453,
+        "optimal_over_all_classical_adaptive_policies_for_this_certificate": true,
+        "optimal_quantum_recovery_or_minimum_read_count_claimed": false,
+        "all_results_accepted": true,
+        "classical_policy_computation_in_gate_count": false
+      },
+      "four": {
+        "labels": 4,
+        "reads": 13,
+        "contrast_exact": "1/2",
+        "external_error_upper": {
+          "lower_exact": "95841072309875651285585968793/316912650057057350374175801344",
+          "upper_exact": "11980134038734456410698246411/39614081257132168796771975168",
+          "diagnostic": 0.3024211002388838
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1330,
+          1426,
+          572,
+          156,
+          26,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          128,
+          2366,
+          1430,
+          572,
+          156,
+          26,
+          2
+        ],
+        "bellman_states": 1015,
+        "certified_strict_comparisons": 985,
+        "reachable_policy_states": 318,
+        "fresh_pointer_initializations": 13,
+        "raw_readout_bits_retained": 13,
+        "new_native_gates_after_first_join": 457,
+        "optimal_over_all_classical_adaptive_policies_for_this_certificate": true,
+        "optimal_quantum_recovery_or_minimum_read_count_claimed": false,
+        "all_results_accepted": true,
+        "classical_policy_computation_in_gate_count": false
+      }
+    },
+    {
+      "six": {
+        "labels": 6,
+        "reads": 14,
+        "contrast_exact": "1/2",
+        "external_error_upper": {
+          "lower_exact": "116176094329606574230366594381/633825300114114700748351602688",
+          "upper_exact": "116176094329606574230366602579/633825300114114700748351602688",
+          "diagnostic": 0.1832935578757902
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          640,
+          7164,
+          5762,
+          2182,
+          546,
+          84,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bellman_states": 9640,
+        "certified_strict_comparisons": 16444,
+        "reachable_policy_states": 826,
+        "fresh_pointer_initializations": 14,
+        "raw_readout_bits_retained": 14,
+        "new_native_gates_after_first_join": 457,
+        "optimal_over_all_classical_adaptive_policies_for_this_certificate": true,
+        "optimal_quantum_recovery_or_minimum_read_count_claimed": false,
+        "all_results_accepted": true,
+        "classical_policy_computation_in_gate_count": false
+      },
+      "four": {
+        "labels": 4,
+        "reads": 14,
+        "contrast_exact": "1/2",
+        "external_error_upper": {
+          "lower_exact": "92609574823005058239978282319/316912650057057350374175801344",
+          "upper_exact": "92609574823005058239978287305/316912650057057350374175801344",
+          "diagnostic": 0.2922242921080352
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          128,
+          3612,
+          2002,
+          728,
+          182,
+          28,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2788,
+          3972,
+          2002,
+          728,
+          182,
+          28,
+          2
+        ],
+        "bellman_states": 1240,
+        "certified_strict_comparisons": 1170,
+        "reachable_policy_states": 404,
+        "fresh_pointer_initializations": 14,
+        "raw_readout_bits_retained": 14,
+        "new_native_gates_after_first_join": 461,
+        "optimal_over_all_classical_adaptive_policies_for_this_certificate": true,
+        "optimal_quantum_recovery_or_minimum_read_count_claimed": false,
+        "all_results_accepted": true,
+        "classical_policy_computation_in_gate_count": false
+      }
+    },
+    {
+      "six": {
+        "labels": 6,
+        "reads": 15,
+        "contrast_exact": "1/2",
+        "external_error_upper": {
+          "lower_exact": "51677312247751169137493539755/316912650057057350374175801344",
+          "upper_exact": "25838656123875584568746774053/158456325028528675187087900672",
+          "diagnostic": 0.16306484527659948
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          5942,
+          15242,
+          8126,
+          2730,
+          630,
+          90,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bellman_states": 12376,
+        "certified_strict_comparisons": 20814,
+        "reachable_policy_states": 1089,
+        "fresh_pointer_initializations": 15,
+        "raw_readout_bits_retained": 15,
+        "new_native_gates_after_first_join": 461,
+        "optimal_over_all_classical_adaptive_policies_for_this_certificate": true,
+        "optimal_quantum_recovery_or_minimum_read_count_claimed": false,
+        "all_results_accepted": true,
+        "classical_policy_computation_in_gate_count": false
+      },
+      "four": {
+        "labels": 4,
+        "reads": 15,
+        "contrast_exact": "1/2",
+        "external_error_upper": {
+          "lower_exact": "179452414026085487932409463085/633825300114114700748351602688",
+          "upper_exact": "179452414026085487932409483159/633825300114114700748351602688",
+          "diagnostic": 0.28312598754542717
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4118,
+          5944,
+          2730,
+          910,
+          210,
+          30,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          256,
+          8682,
+          6004,
+          2730,
+          910,
+          210,
+          30,
+          2
+        ],
+        "bellman_states": 1496,
+        "certified_strict_comparisons": 1375,
+        "reachable_policy_states": 458,
+        "fresh_pointer_initializations": 15,
+        "raw_readout_bits_retained": 15,
+        "new_native_gates_after_first_join": 465,
+        "optimal_over_all_classical_adaptive_policies_for_this_certificate": true,
+        "optimal_quantum_recovery_or_minimum_read_count_claimed": false,
+        "all_results_accepted": true,
+        "classical_policy_computation_in_gate_count": false
+      }
+    },
+    {
+      "six": {
+        "labels": 6,
+        "reads": 16,
+        "contrast_exact": "1/2",
+        "external_error_upper": {
+          "lower_exact": "47615099017995470389136234355/316912650057057350374175801344",
+          "upper_exact": "23807549508997735194568125371/158456325028528675187087900672",
+          "diagnostic": 0.15024676045409607
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1408,
+          24560,
+          24502,
+          10884,
+          3360,
+          720,
+          96,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bellman_states": 15657,
+        "certified_strict_comparisons": 25358,
+        "reachable_policy_states": 1274,
+        "fresh_pointer_initializations": 16,
+        "raw_readout_bits_retained": 16,
+        "new_native_gates_after_first_join": 465,
+        "optimal_over_all_classical_adaptive_policies_for_this_certificate": true,
+        "optimal_quantum_recovery_or_minimum_read_count_claimed": false,
+        "all_results_accepted": true,
+        "classical_policy_computation_in_gate_count": false
+      },
+      "four": {
+        "labels": 4,
+        "reads": 16,
+        "contrast_exact": "1/2",
+        "external_error_upper": {
+          "lower_exact": "10888603793341402864579094115/39614081257132168796771975168",
+          "upper_exact": "87108830346731222916632772773/316912650057057350374175801344",
+          "diagnostic": 0.27486700304026374
+        },
+        "gain_polynomial": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          256,
+          13540,
+          8732,
+          3640,
+          1120,
+          240,
+          32,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8492,
+          15712,
+          8736,
+          3640,
+          1120,
+          240,
+          32,
+          2
+        ],
+        "bellman_states": 1785,
+        "certified_strict_comparisons": 1603,
+        "reachable_policy_states": 548,
+        "fresh_pointer_initializations": 16,
+        "raw_readout_bits_retained": 16,
+        "new_native_gates_after_first_join": 469,
+        "optimal_over_all_classical_adaptive_policies_for_this_certificate": true,
+        "optimal_quantum_recovery_or_minimum_read_count_claimed": false,
+        "all_results_accepted": true,
+        "classical_policy_computation_in_gate_count": false
+      }
+    }
+  ],
+  "policies": {
+    "six_5": [
+      {
+        "depth": 0,
+        "signed_counts": [
+          0,
+          0,
+          0
+        ],
+        "read_label_wire": 0,
+        "physical_wire": 4
+      },
+      {
+        "depth": 1,
+        "signed_counts": [
+          -1,
+          0,
+          0
+        ],
+        "read_label_wire": 1,
+        "physical_wire": 5
+      },
+      {
+        "depth": 1,
+        "signed_counts": [
+          1,
+          0,
+          0
+        ],
+        "read_label_wire": 0,
+        "physical_wire": 4
+      },
+      {
+        "depth": 2,
+        "signed_counts": [
+          -1,
+          -1,
+          0
+        ],
+        "read_label_wire": 0,
+        "physical_wire": 4
+      },
+      {
+        "depth": 2,
+        "signed_counts": [
+          -1,
+          1,
+          0
+        ],
+        "read_label_wire": 1,
+        "physical_wire": 5
+      },
+      {
+        "depth": 2,
+        "signed_counts": [
+          0,
+          0,
+          0
+        ],
+        "read_label_wire": 0,
+        "physical_wire": 4
+      },
+      {
+        "depth": 2,
+        "signed_counts": [
+          2,
+          0,
+          0
+        ],
+        "read_label_wire": 2,
+        "physical_wire": 6
+      },
+      {
+        "depth": 3,
+        "signed_counts": [
+          -2,
+          -1,
+          0
+        ],
+        "read_label_wire": 0,
+        "physical_wire": 4
+      },
+      {
+        "depth": 3,
+        "signed_counts": [
+          -1,
+          0,
+          0
+        ],
+        "read_label_wire": 1,
+        "physical_wire": 5
+      },
+      {
+        "depth": 3,
+        "signed_counts": [
+          -1,
+          2,
+          0
+        ],
+        "read_label_wire": 0,
+        "physical_wire": 4
+      },
+      {
+        "depth": 3,
+        "signed_counts": [
+          0,
+          -1,
+          0
+        ],
+        "read_label_wire": 0,
+        "physical_wire": 4
+      },
+      {
+        "depth": 3,
+        "signed_counts": [
+          1,
+          0,
+          0
+        ],
+        "read_label_wire": 0,
+        "physical_wire": 4
+      },
+      {
+        "depth": 3,
+        "signed_counts": [
+          2,
+          0,
+          -1
+        ],
+        "read_label_wire": 2,
+        "physical_wire": 6
+      },
+      {
+        "depth": 3,
+        "signed_counts": [
+          2,
+          0,
+          1
+        ],
+        "read_label_wire": 2,
+        "physical_wire": 6
+      },
+      {
+        "depth": 4,
+        "signed_counts": [
+          -3,
+          -1,
+          0
+        ],
+        "read_label_wire": 2,
+        "physical_wire": 6
+      },
+      {
+        "depth": 4,
+        "signed_counts": [
+          -2,
+          2,
+          0
+        ],
+        "read_label_wire": 2,
+        "physical_wire": 6
+      },
+      {
+        "depth": 4,
+        "signed_counts": [
+          -1,
+          -1,
+          0
+        ],
+        "read_label_wire": 2,
+        "physical_wire": 6
+      },
+      {
+        "depth": 4,
+        "signed_counts": [
+          -1,
+          1,
+          0
+        ],
+        "read_label_wire": 2,
+        "physical_wire": 6
+      },
+      {
+        "depth": 4,
+        "signed_counts": [
+          0,
+          0,
+          0
+        ],
+        "read_label_wire": 0,
+        "physical_wire": 4
+      },
+      {
+        "depth": 4,
+        "signed_counts": [
+          0,
+          2,
+          0
+        ],
+        "read_label_wire": 2,
+        "physical_wire": 6
+      },
+      {
+        "depth": 4,
+        "signed_counts": [
+          1,
+          -1,
+          0
+        ],
+        "read_label_wire": 2,
+        "physical_wire": 6
+      },
+      {
+        "depth": 4,
+        "signed_counts": [
+          2,
+          0,
+          -2
+        ],
+        "read_label_wire": 0,
+        "physical_wire": 4
+      },
+      {
+        "depth": 4,
+        "signed_counts": [
+          2,
+          0,
+          0
+        ],
+        "read_label_wire": 2,
+        "physical_wire": 6
+      },
+      {
+        "depth": 4,
+        "signed_counts": [
+          2,
+          0,
+          2
+        ],
+        "read_label_wire": 0,
+        "physical_wire": 4
+      },
+      {
+        "depth": 5,
+        "signed_counts": [
+          -3,
+          -1,
+          -1
+        ],
+        "report": 0
+      },
+      {
+        "depth": 5,
+        "signed_counts": [
+          -3,
+          -1,
+          1
+        ],
+        "report": 1
+      },
+      {
+        "depth": 5,
+        "signed_counts": [
+          -2,
+          2,
+          -1
+        ],
+        "report": 2
+      },
+      {
+        "depth": 5,
+        "signed_counts": [
+          -2,
+          2,
+          1
+        ],
+        "report": 3
+      },
+      {
+        "depth": 5,
+        "signed_counts": [
+          -1,
+          -1,
+          -1
+        ],
+        "report": 0
+      },
+      {
+        "depth": 5,
+        "signed_counts": [
+          -1,
+          -1,
+          1
+        ],
+        "report": 1
+      },
+      {
+        "depth": 5,
+        "signed_counts": [
+          -1,
+          0,
+          0
+        ],
+        "report": 0
+      },
+      {
+        "depth": 5,
+        "signed_counts": [
+          -1,
+          1,
+          -1
+        ],
+        "report": 2
+      },
+      {
+        "depth": 5,
+        "signed_counts": [
+          -1,
+          1,
+          1
+        ],
+        "report": 3
+      },
+      {
+        "depth": 5,
+        "signed_counts": [
+          0,
+          2,
+          -1
+        ],
+        "report": 2
+      },
+      {
+        "depth": 5,
+        "signed_counts": [
+          0,
+          2,
+          1
+        ],
+        "report": 3
+      },
+      {
+        "depth": 5,
+        "signed_counts": [
+          1,
+          -1,
+          -1
+        ],
+        "report": 4
+      },
+      {
+        "depth": 5,
+        "signed_counts": [
+          1,
+          -1,
+          1
+        ],
+        "report": 5
+      },
+      {
+        "depth": 5,
+        "signed_counts": [
+          1,
+          0,
+          -2
+        ],
+        "report": 4
+      },
+      {
+        "depth": 5,
+        "signed_counts": [
+          1,
+          0,
+          0
+        ],
+        "report": 4
+      },
+      {
+        "depth": 5,
+        "signed_counts": [
+          1,
+          0,
+          2
+        ],
+        "report": 5
+      },
+      {
+        "depth": 5,
+        "signed_counts": [
+          2,
+          0,
+          -1
+        ],
+        "report": 4
+      },
+      {
+        "depth": 5,
+        "signed_counts": [
+          2,
+          0,
+          1
+        ],
+        "report": 5
+      },
+      {
+        "depth": 5,
+        "signed_counts": [
+          3,
+          0,
+          -2
+        ],
+        "report": 4
+      },
+      {
+        "depth": 5,
+        "signed_counts": [
+          3,
+          0,
+          2
+        ],
+        "report": 5
+      }
+    ],
+    "four_4": [
+      {
+        "depth": 0,
+        "signed_counts": [
+          0,
+          0
+        ],
+        "read_label_wire": 0,
+        "physical_wire": 4
+      },
+      {
+        "depth": 1,
+        "signed_counts": [
+          -1,
+          0
+        ],
+        "read_label_wire": 1,
+        "physical_wire": 5
+      },
+      {
+        "depth": 1,
+        "signed_counts": [
+          1,
+          0
+        ],
+        "read_label_wire": 0,
+        "physical_wire": 4
+      },
+      {
+        "depth": 2,
+        "signed_counts": [
+          -1,
+          -1
+        ],
+        "read_label_wire": 1,
+        "physical_wire": 5
+      },
+      {
+        "depth": 2,
+        "signed_counts": [
+          -1,
+          1
+        ],
+        "read_label_wire": 1,
+        "physical_wire": 5
+      },
+      {
+        "depth": 2,
+        "signed_counts": [
+          0,
+          0
+        ],
+        "read_label_wire": 0,
+        "physical_wire": 4
+      },
+      {
+        "depth": 2,
+        "signed_counts": [
+          2,
+          0
+        ],
+        "read_label_wire": 0,
+        "physical_wire": 4
+      },
+      {
+        "depth": 3,
+        "signed_counts": [
+          -1,
+          -2
+        ],
+        "read_label_wire": 0,
+        "physical_wire": 4
+      },
+      {
+        "depth": 3,
+        "signed_counts": [
+          -1,
+          0
+        ],
+        "read_label_wire": 1,
+        "physical_wire": 5
+      },
+      {
+        "depth": 3,
+        "signed_counts": [
+          -1,
+          2
+        ],
+        "read_label_wire": 0,
+        "physical_wire": 4
+      },
+      {
+        "depth": 3,
+        "signed_counts": [
+          1,
+          0
+        ],
+        "read_label_wire": 1,
+        "physical_wire": 5
+      },
+      {
+        "depth": 3,
+        "signed_counts": [
+          3,
+          0
+        ],
+        "read_label_wire": 1,
+        "physical_wire": 5
+      },
+      {
+        "depth": 4,
+        "signed_counts": [
+          -2,
+          -2
+        ],
+        "report": 0
+      },
+      {
+        "depth": 4,
+        "signed_counts": [
+          -2,
+          2
+        ],
+        "report": 1
+      },
+      {
+        "depth": 4,
+        "signed_counts": [
+          -1,
+          -1
+        ],
+        "report": 0
+      },
+      {
+        "depth": 4,
+        "signed_counts": [
+          -1,
+          1
+        ],
+        "report": 1
+      },
+      {
+        "depth": 4,
+        "signed_counts": [
+          0,
+          -2
+        ],
+        "report": 0
+      },
+      {
+        "depth": 4,
+        "signed_counts": [
+          0,
+          2
+        ],
+        "report": 1
+      },
+      {
+        "depth": 4,
+        "signed_counts": [
+          1,
+          -1
+        ],
+        "report": 2
+      },
+      {
+        "depth": 4,
+        "signed_counts": [
+          1,
+          1
+        ],
+        "report": 3
+      },
+      {
+        "depth": 4,
+        "signed_counts": [
+          3,
+          -1
+        ],
+        "report": 2
+      },
+      {
+        "depth": 4,
+        "signed_counts": [
+          3,
+          1
+        ],
+        "report": 3
+      }
+    ]
+  },
+  "polynomial_basis": "same as budgeted_history_readout_results.json",
+  "equal_gate_budget_six_strictly_better_certificate_four_reads_0_through_15": true,
+  "source_state_or_closed_quantum_history_used_by_controller": false,
+  "automated_checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}

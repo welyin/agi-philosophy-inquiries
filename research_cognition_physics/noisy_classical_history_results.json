@@ -1,0 +1,238 @@
+{
+  "round": 140,
+  "history_policy": "Read h first; if estimated h=1 read E1,E2,selector; invalid E1E2=11 returns none",
+  "all_reads_use_fresh_copied_pointers_and_original_noisy_z": true,
+  "ideal_projective_history_readout_assumed": false,
+  "history_classicalization_requires_arbitrary_purification_preservation": false,
+  "risk_polynomial_exact": "(5e-6e^2+3e^3-e^4)/2",
+  "uniform_joint_error_upper_formula": "1/4 + label_risk(e)",
+  "physical_history_registers_and_readout_environments_retained": true,
+  "bounds_apply_after_averaging_all_records_not_each_conditioned_record": true,
+  "rows": [
+    {
+      "reads_per_queried_history_bit": 1,
+      "contrast_exact": "1/2",
+      "majority_bit_error": {
+        "lower_exact": "320203522666278298782574069513/1267650600228229401496703205376",
+        "upper_exact": "160101761333139149391287034773/633825300114114700748351602688",
+        "diagnostic": 0.2525960407454771
+      },
+      "canonical_label_error": {
+        "lower_exact": "73240976368029924439754914703/158456325028528675187087900672",
+        "upper_exact": "585927810944239395518039317771/1267650600228229401496703205376",
+        "diagnostic": 0.4622155433356386
+      },
+      "uniform_final_joint_trace_error_upper": {
+        "lower_exact": "112855057625162093236526889871/158456325028528675187087900672",
+        "upper_exact": "902840461001296745892215119115/1267650600228229401496703205376",
+        "diagnostic": 0.7122155433356385
+      },
+      "uniform_old_ab_deviation_from_previous_interface_upper": {
+        "lower_exact": "73240976368029924439754914703/158456325028528675187087900672",
+        "upper_exact": "585927810944239395518039317771/1267650600228229401496703205376",
+        "diagnostic": 0.4622155433356386
+      },
+      "margin_below_no_history_optimum": {
+        "lower_exact": "-515502777598226650990444695251/1267650600228229401496703205376",
+        "upper_exact": "-515502777598226650990444695103/1267650600228229401496703205376",
+        "diagnostic": -0.406659987780083
+      },
+      "strict_improvement_certified": false,
+      "expected_original_reads_exact": "5/2",
+      "maximum_original_reads": 4,
+      "expected_fresh_pointer_initializations_exact": "5/2",
+      "maximum_fresh_pointer_initializations": 4,
+      "additional_fresh_rebits_for_recovery_and_batch_join": 3,
+      "maximum_new_pure_initializations_after_first_join": 7,
+      "maximum_yx_gates_after_first_join": 199,
+      "maximum_ry_gates_after_first_join": 71,
+      "decoded_message_bits_if_sent_to_a_separate_controller": 3,
+      "maximum_raw_outcome_bits_retained": 4,
+      "source_preparation_prior_first_join_storage_transport_and_readout_bath_costs_included": false,
+      "all_outcomes_accepted": true,
+      "old_ab_preserved_exactly_at_finite_count": false,
+      "bound_claimed_tight_or_read_count_globally_minimal": false
+    },
+    {
+      "reads_per_queried_history_bit": 13,
+      "contrast_exact": "1/2",
+      "majority_bit_error": {
+        "lower_exact": "508516000415076244613875583/19807040628566084398385987584",
+        "upper_exact": "16272512013282439827644019161/633825300114114700748351602688",
+        "diagnostic": 0.02567349711403555
+      },
+      "canonical_label_error": {
+        "lower_exact": "78887827986602885463218845769/1267650600228229401496703205376",
+        "upper_exact": "39443913993301442731609424229/633825300114114700748351602688",
+        "diagnostic": 0.062231523396431024
+      },
+      "uniform_final_joint_trace_error_upper": {
+        "lower_exact": "395800478043660235837394647113/1267650600228229401496703205376",
+        "upper_exact": "197900239021830117918697324901/633825300114114700748351602688",
+        "diagnostic": 0.312231523396431
+      },
+      "uniform_old_ab_deviation_from_previous_interface_upper": {
+        "lower_exact": "78887827986602885463218845769/1267650600228229401496703205376",
+        "upper_exact": "39443913993301442731609424229/633825300114114700748351602688",
+        "diagnostic": 0.062231523396431024
+      },
+      "margin_below_no_history_optimum": {
+        "lower_exact": "-4231397320295070467812112969/633825300114114700748351602688",
+        "upper_exact": "-528924665036883808476513953/79228162514264337593543950336",
+        "diagnostic": -0.006675967840875466
+      },
+      "strict_improvement_certified": false,
+      "expected_original_reads_exact": "65/2",
+      "maximum_original_reads": 52,
+      "expected_fresh_pointer_initializations_exact": "65/2",
+      "maximum_fresh_pointer_initializations": 52,
+      "additional_fresh_rebits_for_recovery_and_batch_join": 3,
+      "maximum_new_pure_initializations_after_first_join": 55,
+      "maximum_yx_gates_after_first_join": 247,
+      "maximum_ry_gates_after_first_join": 215,
+      "decoded_message_bits_if_sent_to_a_separate_controller": 3,
+      "maximum_raw_outcome_bits_retained": 52,
+      "source_preparation_prior_first_join_storage_transport_and_readout_bath_costs_included": false,
+      "all_outcomes_accepted": true,
+      "old_ab_preserved_exactly_at_finite_count": false,
+      "bound_claimed_tight_or_read_count_globally_minimal": false
+    },
+    {
+      "reads_per_queried_history_bit": 15,
+      "contrast_exact": "1/2",
+      "majority_bit_error": {
+        "lower_exact": "11672096837143028546896329695/633825300114114700748351602688",
+        "upper_exact": "23344193674286057093792662499/1267650600228229401496703205376",
+        "diagnostic": 0.018415321753551917
+      },
+      "canonical_label_error": {
+        "lower_exact": "891915838233137398090048079/19807040628566084398385987584",
+        "upper_exact": "14270653411730198369440771295/316912650057057350374175801344",
+        "diagnostic": 0.04503024227389122
+      },
+      "uniform_final_joint_trace_error_upper": {
+        "lower_exact": "5843675995374658497686544975/19807040628566084398385987584",
+        "upper_exact": "93498815925994535962984721631/316912650057057350374175801344",
+        "diagnostic": 0.29503024227389124
+      },
+      "uniform_old_ab_deviation_from_previous_interface_upper": {
+        "lower_exact": "891915838233137398090048079/19807040628566084398385987584",
+        "upper_exact": "14270653411730198369440771295/316912650057057350374175801344",
+        "diagnostic": 0.04503024227389122
+      },
+      "margin_below_no_history_optimum": {
+        "lower_exact": "3335604924772987762457884335/316912650057057350374175801344",
+        "upper_exact": "13342419699091951049831545465/1267650600228229401496703205376",
+        "diagnostic": 0.010525313281664336
+      },
+      "strict_improvement_certified": true,
+      "expected_original_reads_exact": "75/2",
+      "maximum_original_reads": 60,
+      "expected_fresh_pointer_initializations_exact": "75/2",
+      "maximum_fresh_pointer_initializations": 60,
+      "additional_fresh_rebits_for_recovery_and_batch_join": 3,
+      "maximum_new_pure_initializations_after_first_join": 63,
+      "maximum_yx_gates_after_first_join": 255,
+      "maximum_ry_gates_after_first_join": 239,
+      "decoded_message_bits_if_sent_to_a_separate_controller": 3,
+      "maximum_raw_outcome_bits_retained": 60,
+      "source_preparation_prior_first_join_storage_transport_and_readout_bath_costs_included": false,
+      "all_outcomes_accepted": true,
+      "old_ab_preserved_exactly_at_finite_count": false,
+      "bound_claimed_tight_or_read_count_globally_minimal": false
+    },
+    {
+      "reads_per_queried_history_bit": 25,
+      "contrast_exact": "1/2",
+      "majority_bit_error": {
+        "lower_exact": "2355215884788537462538965151/633825300114114700748351602688",
+        "upper_exact": "2355215884788537462539458823/633825300114114700748351602688",
+        "diagnostic": 0.003715875469730384
+      },
+      "canonical_label_error": {
+        "lower_exact": "11723666730067160325691888831/1267650600228229401496703205376",
+        "upper_exact": "1465458341258395040711797409/158456325028528675187087900672",
+        "diagnostic": 0.009248342349190239
+      },
+      "uniform_final_joint_trace_error_upper": {
+        "lower_exact": "328636316787124510699867690175/1267650600228229401496703205376",
+        "upper_exact": "41079539598390563837483772577/158456325028528675187087900672",
+        "diagnostic": 0.25924834234919025
+      },
+      "uniform_old_ab_deviation_from_previous_interface_upper": {
+        "lower_exact": "11723666730067160325691888831/1267650600228229401496703205376",
+        "upper_exact": "1465458341258395040711797409/158456325028528675187087900672",
+        "diagnostic": 0.009248342349190239
+      },
+      "margin_below_no_history_optimum": {
+        "lower_exact": "3668835413496599012618765203/79228162514264337593543950336",
+        "upper_exact": "29350683307972792100951366845/633825300114114700748351602688",
+        "diagnostic": 0.046307213206365314
+      },
+      "strict_improvement_certified": true,
+      "expected_original_reads_exact": "125/2",
+      "maximum_original_reads": 100,
+      "expected_fresh_pointer_initializations_exact": "125/2",
+      "maximum_fresh_pointer_initializations": 100,
+      "additional_fresh_rebits_for_recovery_and_batch_join": 3,
+      "maximum_new_pure_initializations_after_first_join": 103,
+      "maximum_yx_gates_after_first_join": 295,
+      "maximum_ry_gates_after_first_join": 359,
+      "decoded_message_bits_if_sent_to_a_separate_controller": 3,
+      "maximum_raw_outcome_bits_retained": 100,
+      "source_preparation_prior_first_join_storage_transport_and_readout_bath_costs_included": false,
+      "all_outcomes_accepted": true,
+      "old_ab_preserved_exactly_at_finite_count": false,
+      "bound_claimed_tight_or_read_count_globally_minimal": false
+    },
+    {
+      "reads_per_queried_history_bit": 1,
+      "contrast_exact": "1",
+      "majority_bit_error": {
+        "lower_exact": "3290872609220948408398268169/633825300114114700748351602688",
+        "upper_exact": "1645436304610474204199134101/316912650057057350374175801344",
+        "diagnostic": 0.0051920814909541405
+      },
+      "canonical_label_error": {
+        "lower_exact": "16352109856082254242920201937/1267650600228229401496703205376",
+        "upper_exact": "16352109856082254242920202107/1267650600228229401496703205376",
+        "diagnostic": 0.012899540183342476
+      },
+      "uniform_final_joint_trace_error_upper": {
+        "lower_exact": "333264759913139604617096003281/1267650600228229401496703205376",
+        "upper_exact": "333264759913139604617096003451/1267650600228229401496703205376",
+        "diagnostic": 0.2628995401833425
+      },
+      "uniform_old_ab_deviation_from_previous_interface_upper": {
+        "lower_exact": "16352109856082254242920201937/1267650600228229401496703205376",
+        "upper_exact": "16352109856082254242920202107/1267650600228229401496703205376",
+        "diagnostic": 0.012899540183342476
+      },
+      "margin_below_no_history_optimum": {
+        "lower_exact": "54072923489930490284674420413/1267650600228229401496703205376",
+        "upper_exact": "6759115436241311285584302573/158456325028528675187087900672",
+        "diagnostic": 0.04265601537221308
+      },
+      "strict_improvement_certified": true,
+      "expected_original_reads_exact": "5/2",
+      "maximum_original_reads": 4,
+      "expected_fresh_pointer_initializations_exact": "5/2",
+      "maximum_fresh_pointer_initializations": 4,
+      "additional_fresh_rebits_for_recovery_and_batch_join": 3,
+      "maximum_new_pure_initializations_after_first_join": 7,
+      "maximum_yx_gates_after_first_join": 199,
+      "maximum_ry_gates_after_first_join": 71,
+      "decoded_message_bits_if_sent_to_a_separate_controller": 3,
+      "maximum_raw_outcome_bits_retained": 4,
+      "source_preparation_prior_first_join_storage_transport_and_readout_bath_costs_included": false,
+      "all_outcomes_accepted": true,
+      "old_ab_preserved_exactly_at_finite_count": false,
+      "bound_claimed_tight_or_read_count_globally_minimal": false
+    }
+  ],
+  "automated_checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "round": 205,
+  "resource_accounting_requirement_accepted_by_user": true,
+  "physical_axiom_selecting_quantum_theory_adopted": false,
+  "record_interface": {
+    "setting": [
+      1,
+      4
+    ],
+    "outcomes_per_trial": 16,
+    "raw_readouts_are_not_all_archived_in_this_bound": true,
+    "fresh_targets_conditionally_independent_given_fixed_sector": true,
+    "gamma_diagnostic": 0.9999972224237018,
+    "visibility_diagnostic": 0.7071008890738062,
+    "smallest_single_record_probability_diagnostic": 0.018306194432887113,
+    "exact_full_archive_dimension_lower_bound": "16**N",
+    "entropy_identity_bits": "H(R^N)=N*(3+h2((1+v)/2))+I(S;R^N)",
+    "mutual_information_upper_bits": "h2((1+g)/2)",
+    "count_summary_is_round_123_result_reused": true
+  },
+  "examples": [
+    {
+      "trials": 1,
+      "sector_prior_bias": 0.9999972224237018,
+      "conditional_entropy_bits_per_trial": 3.6008835287781893,
+      "sector_information_bits": 2.4973256429024038e-06,
+      "sector_information_upper_bits": 2.9026277920930437e-05,
+      "record_entropy_bits": 3.600886026103832,
+      "count_distribution_mass_diagnostic": 1.0,
+      "fixed_capacity_exact_archive_bits": 4,
+      "classical_count_summary_bits_at_known_n": 1,
+      "count_summary_preserves_only_declared_future_predictions": true
+    },
+    {
+      "trials": 10,
+      "sector_prior_bias": 0.9999972224237018,
+      "conditional_entropy_bits_per_trial": 3.6008835287781893,
+      "sector_information_bits": 2.3200761686469297e-05,
+      "sector_information_upper_bits": 2.9026277920930437e-05,
+      "record_entropy_bits": 36.00885848854358,
+      "count_distribution_mass_diagnostic": 1.0000000000000002,
+      "fixed_capacity_exact_archive_bits": 40,
+      "classical_count_summary_bits_at_known_n": 4,
+      "count_summary_preserves_only_declared_future_predictions": true
+    },
+    {
+      "trials": 1000,
+      "sector_prior_bias": 0.9999972224237018,
+      "conditional_entropy_bits_per_trial": 3.6008835287781893,
+      "sector_information_bits": 2.9026277920930437e-05,
+      "sector_information_upper_bits": 2.9026277920930437e-05,
+      "record_entropy_bits": 3600.8835578044673,
+      "count_distribution_mass_diagnostic": 0.999999999999696,
+      "fixed_capacity_exact_archive_bits": 4000,
+      "classical_count_summary_bits_at_known_n": 10,
+      "count_summary_preserves_only_declared_future_predictions": true
+    }
+  ],
+  "legacy_protocol_budget_for_1000": {
+    "task_trials": 1000,
+    "fresh_target_Bell_pairs": 2000,
+    "reference_link_pairs_once": 2,
+    "retained_outer_reference_rebits": 2,
+    "alignment_reads_once": 5,
+    "target_reads": 20000,
+    "total_old_reads": 20005,
+    "premeasurement_alignment_message_bits": 1,
+    "pair_rotations_after_sources_prepared_upper": 23007,
+    "fresh_reference_policy_total_old_reads": 25000,
+    "fresh_reference_policy_alignment_message_bits": 1000,
+    "fresh_reference_policy_reference_link_pairs": 2000,
+    "preparation_storage_maintenance_and_final_record_exchange_are_separate": true
+  },
+  "resource_closure_status": {
+    "reference_reuse_proved": true,
+    "whole_apparatus_cyclic_return_proved": false,
+    "complete_autonomous_physical_implementation_supplied": false,
+    "missing_physical_accounts": [
+      "target source preparation and recovery",
+      "pointer preparation, readout dilation and reset",
+      "controller, setting program, clock and communication hardware",
+      "storage and noise environment",
+      "Hamiltonians, work store, heat reservoir and operating time"
+    ],
+    "resource_counts_may_share_physical_carriers_do_not_add_blindly": true,
+    "marginal_reference_return_does_not_imply_uncorrelated_return": true
+  },
+  "scope": {
+    "fixed_capacity_and_full_recoverable_history_required_for_4N_bound": true,
+    "all_cognition_requires_full_history_retention": false,
+    "entropy_equals_heat": false,
+    "closed_universe_assumed_finite_dimensional": false,
+    "real_complex_matched_record_laws_have_same_archive_bound": true,
+    "ordinary_real_quantum_excluded": false,
+    "complex_quantum_necessity_derived": false
+  },
+  "automated_checks": {
+    "run": 10,
+    "failures": 0,
+    "errors": 0
+  }
+}

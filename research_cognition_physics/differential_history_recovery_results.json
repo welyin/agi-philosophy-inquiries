@@ -1,0 +1,81 @@
+{
+  "round": 160,
+  "candidate": {
+    "point": [
+      -0.6517807093754476,
+      0.30813851311425466,
+      -0.6929881410397835,
+      -0.6838026821747517,
+      -0.27831217472279,
+      -0.674504429378849
+    ],
+    "error_diagnostic": 0.4529895423944608,
+    "radial_multipliers_diagnostic": [
+      0.00018693130494200165,
+      0.00022914458205510052
+    ],
+    "stationarity_residual_diagnostic": 2.1412992906588713e-18,
+    "constraint_residual_diagnostic": 2.220446049250313e-16,
+    "tangent_lagrangian_eigenvalues_diagnostic": [
+      -0.021279731216369675,
+      -0.019415733559050265,
+      -0.002053601993055646,
+      -0.0010559049611161585
+    ],
+    "full_hessian_eigenvalues_diagnostic": [
+      -0.031857861528212475,
+      -0.027094088064377034,
+      -0.01263866462812666,
+      -0.008312135111019294,
+      -0.00020698458350967193,
+      0.00019933491860533076
+    ],
+    "stationary_point_existence_or_uniqueness_interval_certified": false
+  },
+  "joint_nonconcavity_certificate": {
+    "midpoint_upper": {
+      "lower_exact": "574209758756094964710430800869/1267650600228229401496703205376",
+      "upper_exact": "574209758756094964710430800975/1267650600228229401496703205376",
+      "diagnostic": 0.4529716300790719
+    },
+    "equal_endpoint_lower": {
+      "lower_exact": "287116232656622082279042470157/633825300114114700748351602688",
+      "upper_exact": "574232465313244164558084940505/1267650600228229401496703205376",
+      "diagnostic": 0.45298954239429906
+    },
+    "strict_Jensen_gap": {
+      "lower_exact": "22706557149199847654139339/1267650600228229401496703205376",
+      "upper_exact": "5676639287299961913534909/316912650057057350374175801344",
+      "diagnostic": 1.791231522717043e-05
+    },
+    "midpoint_supporting_coefficient_numerators": [
+      510771285238,
+      -158286489,
+      14035806177,
+      8713908445,
+      19869529747,
+      7429917933,
+      514960878,
+      24005372170,
+      7574862422,
+      19953686735,
+      10642695692,
+      27998001443,
+      17329930864,
+      6209467127,
+      242304755,
+      3657859302,
+      -124564716,
+      13794292215
+    ],
+    "both_endpoints_and_midpoint_are_legal_independent_sources": true
+  },
+  "analytic_gradient": "z^T G_i z / d",
+  "analytic_hessian": "(z^T G_ij z - 2 q_i^T A^-1 q_j) / d",
+  "separate_concavity_follows_from_zero_same_subject_G_ij": true,
+  "automated_checks": {
+    "run": 7,
+    "failures": 0,
+    "errors": 0
+  }
+}

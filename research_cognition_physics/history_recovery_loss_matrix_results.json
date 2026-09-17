@@ -1,0 +1,134 @@
+{
+  "round": 155,
+  "matrix_orientation": "rows=true label, columns=chosen decoder",
+  "six_label_names": [
+    "A_X",
+    "A_Y",
+    "A_Z",
+    "B_X",
+    "B_Y",
+    "B_Z"
+  ],
+  "six_label_cost_symbols": [
+    [
+      "0",
+      "1",
+      "s",
+      "s",
+      "s",
+      "s"
+    ],
+    [
+      "1",
+      "0",
+      "1",
+      "s",
+      "s",
+      "s"
+    ],
+    [
+      "s",
+      "1",
+      "0",
+      "s",
+      "s",
+      "s"
+    ],
+    [
+      "s",
+      "s",
+      "s",
+      "0",
+      "1",
+      "s"
+    ],
+    [
+      "s",
+      "s",
+      "s",
+      "1",
+      "0",
+      "1"
+    ],
+    [
+      "s",
+      "s",
+      "s",
+      "s",
+      "1",
+      "0"
+    ]
+  ],
+  "four_label_cost_symbols": [
+    [
+      "d",
+      "g",
+      "b",
+      "g"
+    ],
+    [
+      "g",
+      "d",
+      "g",
+      "b"
+    ],
+    [
+      "1",
+      "s",
+      "0",
+      "s"
+    ],
+    [
+      "s",
+      "1",
+      "s",
+      "0"
+    ]
+  ],
+  "constants": {
+    "0": {
+      "lower_exact": "0",
+      "upper_exact": "0",
+      "diagnostic": 0.0
+    },
+    "1": {
+      "lower_exact": "1",
+      "upper_exact": "1",
+      "diagnostic": 1.0
+    },
+    "s": {
+      "lower_exact": "1097817622920238380819884895107/1267650600228229401496703205376",
+      "upper_exact": "274454405730059595204971223777/316912650057057350374175801344",
+      "diagnostic": 0.8660254037844386
+    },
+    "d": {
+      "lower_exact": "402529632699764710632796536279/1267650600228229401496703205376",
+      "upper_exact": "402529632699764710632796536281/1267650600228229401496703205376",
+      "diagnostic": 0.3175398904298178
+    },
+    "g": {
+      "lower_exact": "1068718610895103431206652303525/1267650600228229401496703205376",
+      "upper_exact": "534359305447551715603326151763/633825300114114700748351602688",
+      "diagnostic": 0.8430703308172536
+    },
+    "b": {
+      "lower_exact": "1252004937372652271084703272893/1267650600228229401496703205376",
+      "upper_exact": "626002468686326135542351636447/633825300114114700748351602688",
+      "diagnostic": 0.9876577482369666
+    }
+  },
+  "constant_formulas": {
+    "s": "sqrt(3)/2",
+    "d": "(1+sqrt(25-16sqrt(2)))/8",
+    "g": "(1+sqrt(33))/8",
+    "b": "(1+sqrt(25+16sqrt(2)))/8"
+  },
+  "every_matrix_entry_sharp_on_independent_encoded_sources_and_external_extensions": true,
+  "sum_of_separately_worst_costs_claimed_sharp": false,
+  "all_decoder_matrices_and_source_promise_unchanged": true,
+  "automated_checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}

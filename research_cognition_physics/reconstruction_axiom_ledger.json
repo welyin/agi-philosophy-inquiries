@@ -1,0 +1,694 @@
+{
+  "updated_through_round": 207,
+  "purpose": "Dependency ledger, not a machine proof of cognitive or physical necessity",
+  "model_order": [
+    "finite_classical_probability",
+    "ordinary_real_quantum",
+    "complex_quantum_or_operationally_equivalent_real_representation"
+  ],
+  "framework_inputs": [
+    "finite-dimensional operational state and effect spaces",
+    "declared allowed randomization and operational equivalence",
+    "declared sequential and parallel experiments",
+    "declared ancillary systems and access rights"
+  ],
+  "axioms": [
+    {
+      "id": "causality",
+      "meaning": "Later observation choice does not alter preparation outcome probabilities",
+      "cognitive_status": "Used by the original causal loop; universal necessity not derived",
+      "model_satisfaction": [
+        true,
+        true,
+        true
+      ],
+      "evidence": [
+        "cognitive_loop.py",
+        "research_note_175.md",
+        "research_note_178.md"
+      ]
+    },
+    {
+      "id": "perfect_distinguishability",
+      "meaning": "Every non-interior state is perfectly distinguishable from some other state",
+      "cognitive_status": "Additional candidate; finite-error audit does not imply an ideal zero-error effect",
+      "model_satisfaction": [
+        true,
+        true,
+        true
+      ],
+      "evidence": [
+        "research_note_178.md"
+      ]
+    },
+    {
+      "id": "ideal_compression",
+      "meaning": "Lossless maximally efficient encoding of each state's face",
+      "cognitive_status": "Additional candidate; previous constructions concern specified models and inputs",
+      "model_satisfaction": [
+        true,
+        true,
+        true
+      ],
+      "evidence": [
+        "research_note_94.md",
+        "research_note_178.md"
+      ]
+    },
+    {
+      "id": "local_tomography",
+      "meaning": "Joint probabilities of product effects separate all joint states",
+      "cognitive_status": "Additional candidate; known reference-assisted real tomography remains a viable weaker task, and unknown references call for uncertainty reporting rather than an automatic ban",
+      "model_satisfaction": [
+        true,
+        false,
+        true
+      ],
+      "evidence": [
+        "research_note_59.md",
+        "research_note_83.md",
+        "research_note_174.md",
+        "research_note_180.md",
+        "research_note_187.md",
+        "research_note_188.md",
+        "research_note_189.md"
+      ]
+    },
+    {
+      "id": "pure_conditioning",
+      "meaning": "A nonzero atomic effect on one part of a pure joint state gives a pure conditional state",
+      "cognitive_status": "Additional candidate; complete records do not imply conditional purity",
+      "model_satisfaction": [
+        true,
+        true,
+        true
+      ],
+      "evidence": [
+        "research_note_178.md",
+        "research_note_179.md"
+      ]
+    },
+    {
+      "id": "purification_with_essential_uniqueness",
+      "meaning": "Every state has a pure extension; purifications on a fixed environment differ by an environment reversible operation",
+      "cognitive_status": "Additional candidate; full history retention is weaker",
+      "model_satisfaction": [
+        false,
+        true,
+        true
+      ],
+      "evidence": [
+        "research_note_172.md",
+        "research_note_173.md",
+        "research_note_177.md",
+        "research_note_179.md"
+      ]
+    }
+  ],
+  "conditional_selection": {
+    "note": "research_note_180.md",
+    "additional_inputs": [
+      "Candidates restricted to classical diagonals and real, complex, quaternionic Hermitian matrix models",
+      "Same family for composites",
+      "Perfect distinguishability capacity multiplies",
+      "Independent product preparations and effects with factorized probabilities"
+    ],
+    "local_tomography_surviving_dimension_parameters": [
+      0,
+      2
+    ],
+    "purification_excludes_standard_classical_survivor": true,
+    "complete_theory_follows_from_dimension_equality_alone": false,
+    "all_inputs_are_derived_from_cognition": false
+  },
+  "external_routes": [
+    {
+      "name": "CDP finite-dimensional reconstruction",
+      "url": "https://arxiv.org/html/1011.6451",
+      "scope": "All listed axioms plus its operational framework; theorem not re-proved here"
+    },
+    {
+      "name": "Barnum-Wilce Proposition 1",
+      "url": "https://arxiv.org/html/1202.4513",
+      "scope": "Factorizably homogeneous self-dual systems, compatible locally tomographic composites and existence of a qubit; these are additional assumptions"
+    },
+    {
+      "name": "Barnum-Ududec-van de Wetering 2023, Theorems 2 and 7",
+      "url": "https://arxiv.org/html/2306.00362",
+      "scope": "Homogeneity and pure transitivity imply Jordan structure. In the stated GPT composite framework, all-system homogeneity and continuous pure transitivity plus local tomography select complex matrix state spaces; this is not a derivation from cognitive requirements or a certification of all physical instruments."
+    }
+  ],
+  "next_audit": "Add actual operation durations and finite local throughput to the round-207 joining circuit; test growth and maintenance while preserving the declared old reference/data/log interface. Distinguish fixed pairs, global accuracy, history-selected collaborators and unknown old correlations. Replacement of references alone does not preserve the last item. Apply the same timing and preparation constraints to complex phase control. A bottleneck in one star protocol is not a universal real-theory lower bound; do not assume global-state accuracy as a cognitive axiom.",
+  "geometric_candidates": [
+    {
+      "id": "inner_product_self_duality",
+      "meaning": "A positive definite symmetric form identifies C with its full mathematical dual cone",
+      "cognitive_status": "Additional candidate; prediction/test probability duality is weaker",
+      "model_satisfaction": [
+        true,
+        true,
+        true
+      ],
+      "counterexample": "Cube cone has eight state rays and six dual rays",
+      "evidence": [
+        "research_note_181.md",
+        "research_note_183.md"
+      ]
+    },
+    {
+      "id": "homogeneity",
+      "meaning": "Cone order automorphisms connect every pair of interior states",
+      "cognitive_status": "Additional candidate; physical probabilistic reversibility requires permitted filters and failure records",
+      "model_satisfaction": [
+        true,
+        true,
+        true
+      ],
+      "counterexample": "Self-dual pentagon is not homogeneous",
+      "evidence": [
+        "research_note_182.md",
+        "research_note_183.md"
+      ]
+    },
+    {
+      "id": "continuous_pure_transitivity",
+      "meaning": "Every pair of pure normalized states can be connected by a continuous reversible path",
+      "cognitive_status": "Additional candidate; finite label switching does not imply continuity",
+      "model_satisfaction": [
+        false,
+        true,
+        true
+      ],
+      "scope": "Nontrivial classical systems and ordinary real/complex matrix systems",
+      "counterexample": "Four-ball also satisfies this property, self-duality and homogeneity at the single-system level",
+      "evidence": [
+        "research_note_183.md",
+        "research_note_186.md"
+      ]
+    },
+    {
+      "id": "universal_same_operational_dimension_ensemble_steering",
+      "meaning": "One fixed auxiliary system type of matching real operational K per target; for each marginal a joint state that realizes every finite ensemble by one normalized measurement",
+      "cognitive_status": "Additional candidate; fixed joint input, measurement compatibility and access permissions have not been derived from self-audit",
+      "model_satisfaction": [
+        true,
+        true,
+        true
+      ],
+      "evidence": [
+        "research_note_179.md",
+        "research_note_184.md",
+        "research_note_185.md"
+      ]
+    }
+  ],
+  "candidate_bundle": {
+    "conditions": [
+      "universal_same_operational_dimension_ensemble_steering",
+      "continuous_pure_transitivity",
+      "local_tomography_at_every_composite_level"
+    ],
+    "cognitive_necessity_derived": false,
+    "no_additional_principles_planned_for_next_audit": true,
+    "finite_validation_scope": "Complete outcome compatibility, fixed input and auxiliary rights; continuous paths additionally require speed and precision promises",
+    "auxiliary_effect_completeness_is_explicit_in_round_184_self_contained_proof": true,
+    "evidence": [
+      "research_note_184.md",
+      "research_note_185.md",
+      "research_note_186.md",
+      "research_note_187.md",
+      "research_note_188.md",
+      "research_note_189.md"
+    ],
+    "operational_acceptance_ledger": "operational_acceptance_ledger.json"
+  },
+  "finite_witnesses": [
+    {
+      "note": "research_note_185.md",
+      "claim": "All binary splits can be exact while a ternary report has optimal success 2/3 and minimum joint TV 1/3",
+      "scope": "One fixed cube auxiliary correlated with a uniform classical trit; no target access or extra correlated copies"
+    },
+    {
+      "note": "research_note_186.md",
+      "claim": "Any continuous path between distinct finite-classical pure vertices has worst distance to the pure set at least 1/2",
+      "scope": "Complete finite simplex; finite sampling needs a TV speed bound, not arbitrary hidden-state models"
+    },
+    {
+      "note": "research_note_187.md",
+      "claim": "Known reference enables complete bipartite real tomography iff its skew-skew sector is nonzero",
+      "scope": "Both target dimensions >=2; fixed reference independent of target, complete enlarged local real effects"
+    },
+    {
+      "note": "research_note_188.md",
+      "claim": "Simultaneous (q,c) to (-q,-c) is invisible to all finite-copy finite-round real LOCC in the stated source family",
+      "scope": "No known signed cross-party resource or global quantum access; multi-copy magnitudes can still be identified"
+    }
+  ],
+  "reference_audit": {
+    "known_reference_can_support_accurate_relational_prediction": true,
+    "unknown_reference_requires_provenance_and_uncertainty": true,
+    "cognitive_ban_on_shared_reference_derived": false,
+    "evidence": [
+      "research_note_187.md",
+      "research_note_188.md",
+      "research_note_189.md"
+    ]
+  },
+  "user_projection_hypothesis": {
+    "note": "research_note_190.md",
+    "status": "Open functional/geometric complementarity hypothesis. A declared classical candidate competition has a genuine Fisher-compatible Kahler Hamiltonian description; metric preservation, operational readout algebra, randomization and composition are not thereby quantum. No cognitive necessity derived.",
+    "weak_form": "A task-specific state summary of a cognitive loop may admit a Kahler description under stated closure or approximation conditions",
+    "strong_form_proved": false,
+    "soca_cognitive_completeness_proved": false,
+    "larger_quantum_or_kahler_models_can_encode_memory": true,
+    "next_comparison": "Audit the distinction between a readable evaluation function, improvement of an internal model, and a legal reversible intervention on the target. Examine independent cognitive motivation for any observable-generator correspondence before treating it as a new axiom; retain round-204 classical competition and rounds-183-189 classical/real countermodels. No fitness or trajectory optimization by default.",
+    "evidence": [
+      "research_note_190.md",
+      "research_note_191.md",
+      "research_note_192.md",
+      "research_note_193.md",
+      "research_note_194.md",
+      "research_note_195.md",
+      "research_note_196.md",
+      "research_note_197.md",
+      "research_note_198.md",
+      "research_note_199.md",
+      "research_note_200.md",
+      "research_note_201.md",
+      "research_note_202.md",
+      "research_note_203.md",
+      "research_note_204.md"
+    ],
+    "finite_baseline": {
+      "exact_task_quotient_constructed": true,
+      "relative_uncalibrated_labels": 8,
+      "relative_all_state_labels": 24,
+      "anchored_all_state_labels": 32,
+      "counts_assume_noiseless_readout": true,
+      "outcome_lumping_also_holds_with_fixed_independent_readout_noise": true,
+      "belief_space": "classical simplex",
+      "square_root_pullback_symplectic_form": "zero",
+      "phase_operations_derived": false,
+      "finite_affine_projection_covers_full_quantum_state_space": false,
+      "broader_soca_hypothesis_refuted": false
+    },
+    "functional_geometric_complementarity": {
+      "bare_kahler_geometry_selects_unique_dynamics": false,
+      "geometric_quantum_formulation_includes_dynamics": true,
+      "selected_memory_process_has_exact_quantum_embedding": true,
+      "embedding_requires_equilibrium_or_memoryless_limit": false,
+      "all_soca_functions_implemented": false,
+      "same_geometry_can_support_different_processes": true,
+      "quantum_necessity_derived_from_memory_or_order": false
+    },
+    "stationary_memory_audit": {
+      "initial_distribution": "uniform over four classical labels",
+      "stationarity_implies_memoryless_readout": false,
+      "thermal_equilibrium_claimed": false,
+      "passive_comparator": "unique stationary first-order chain exactly matching all adjacent pairs",
+      "three_reading_total_variation": "abs(1/2 - eta)",
+      "fixed_horizon_eta_to_half_limit": 0,
+      "fixed_eta_less_than_half_infinite_horizon_limit": 1,
+      "passive_result_certifies_all_active_controls": false,
+      "global_optimum_over_all_memoryless_models_claimed": false
+    },
+    "active_memory_audit": {
+      "stationary_passive_exactness_certifies_active_interface": false,
+      "five_command_echo_error_for_specified_visible_bit_model": "1/2 at every eta; no tick used",
+      "exact_four_preparation_active_task_minimum_classical_labels": 4,
+      "standard_real_or_complex_hilbert_dimension_lower_bound": 4,
+      "dimension_bound_scope": "Exact four-label task, all input-dependent information in declared carrier; no side channel",
+      "uniform_outcome_successor_projection_defect": {
+        "read": "0",
+        "flip_memory": "0",
+        "swap": "1/2",
+        "tick": "1/2"
+      },
+      "adaptive_coupling_contract": "1-(1-delta_initial)*product_j(1-delta_j)",
+      "noise_only_full_process_sharp_distance": "TV(Bernoulli(eta)^k,Bernoulli(zeta)^k)",
+      "budget_scope": "At most k ticks; other ideal controls finite but no additional total-command cap",
+      "attainment": "read,swap,read followed by (tick,swap,read)^k",
+      "memory_erasure_equivalent_to_noise_rounding": false,
+      "quantum_structure_forced": false,
+      "evidence": [
+        "research_note_197.md",
+        "research_note_198.md",
+        "research_note_199.md"
+      ]
+    },
+    "internal_prediction_audit": {
+      "declared_conditions": [
+        "uniform two-bit classical input known at encoding",
+        "independent query chosen after encoding",
+        "one selected query per code copy",
+        "no later source or input-correlated audit-log access",
+        "specified memory alphabet or Hilbert dimension"
+      ],
+      "classical_label_success_curve": {
+        "1": "1/2",
+        "2": "3/4",
+        "3": "7/8",
+        "4": "1"
+      },
+      "classical_label_optimal_brier_curve": {
+        "1": "1/4",
+        "2": "1/8",
+        "3": "1/16",
+        "4": "0"
+      },
+      "rebit_and_qubit_dimension_two_success": "(1+1/sqrt(2))/2",
+      "weighted_dimension_two_success": "(1+sqrt(w^2+(1-w)^2))/2",
+      "all_complex_binary_povms_covered_by_upper_bound": true,
+      "quantum_rules_assumed_for_comparison": true,
+      "y_readout_derived_or_required": false,
+      "full_pair_success_classical_bit_or_dimension_two_quantum": "1/2",
+      "symmetric_accuracy_optimal_rebit_code_brier": "1/8",
+      "global_optimal_quantum_brier_proved": false,
+      "per_trial_certainty_follows_from_calibration": false,
+      "source_log_access_is_free_memory": false,
+      "one_bit_budget_cognitively_forced": false,
+      "complex_quantum_necessity_derived": false,
+      "evidence": [
+        "research_note_200.md",
+        "research_note_201.md",
+        "research_note_202.md"
+      ]
+    }
+  },
+  "historical_review": {
+    "round": 203,
+    "review": "research_note_203.md",
+    "current_entry": "RESEARCH_STATE.md",
+    "catalog": "research_history_catalog.json",
+    "prior_cognition_notes": 202,
+    "prior_information_geometry_notes": 8,
+    "coverage": "All titles and section inventories with focused body/proof cross-checks; not an independent re-proof of every historical result",
+    "round_202_sequential_query_next_task_superseded": true,
+    "fixed_square_joint_mean_bit_success": "3/4; direct reuse of round-98 positivity, not optimization over all encodings",
+    "different_policy_gap": "Round-119 limitation audited using original round-118 controller; uniform policy and outcome-successor bounds required",
+    "structural_necessity_status_changed": false,
+    "evidence": [
+      "research_note_20.md",
+      "research_note_21.md",
+      "research_note_98.md",
+      "research_note_99.md",
+      "research_note_118.md",
+      "research_note_119.md",
+      "research_note_171.md",
+      "research_note_189.md",
+      "research_note_203.md",
+      "feedback_policy_audit.py",
+      "feedback_policy_audit_results.json"
+    ]
+  },
+  "competition_geometry_audit": {
+    "round": 204,
+    "question": "Do candidate competition and a genuine compatible Kahler Hamiltonian description suffice to identify quantum operational structure?",
+    "answer": false,
+    "source_function": "SoCA L3 evaluation and selection of explicit candidate-weight registers; not all SoCA",
+    "old_results": [
+      "research_note_02.md",
+      "research_note_181.md",
+      "research_note_192.md",
+      "research_note_193.md",
+      "research_note_195.md",
+      "research_note_203.md"
+    ],
+    "declared_inputs": [
+      "interior continuous candidate weights",
+      "choice of fitness function",
+      "Fisher comparison metric",
+      "orientation"
+    ],
+    "cyclic_example": {
+      "state_manifold": "open three-category weight simplex, not the full convex space of randomized register preparations",
+      "metric": "sum_i dp_i^2/p_i",
+      "symplectic_form": "dx wedge dy / sqrt(x*y*z)",
+      "integrable_complex_chart": "(sqrt(x)+i*sqrt(y))/(1+sqrt(z))",
+      "hamiltonian": "2*sqrt(x*y*z)",
+      "fisher_isometric": false,
+      "original_affine_readouts_closed_under_geometric_poisson_bracket": false,
+      "mean_register_sufficient_for_randomized_preparation": false,
+      "old_projective_pullback_form_still_zero": true
+    },
+    "quantum_necessity_derived": false,
+    "full_soca_completeness_established_or_refuted": false,
+    "counterexample_to_U_C_L_reconstruction": false,
+    "next_candidate_is_adopted_axiom": false,
+    "evidence": [
+      "research_note_204.md",
+      "competition_geometry_audit.py",
+      "competition_geometry_audit_results.json"
+    ]
+  },
+  "resource_sustainability_hypothesis": {
+    "note": "resource_sustainability_hypothesis.md",
+    "date": "2026-09-17",
+    "status": "Internal resource accounting adopted by user; local sustainability and physical theory selection remain open",
+    "new_research_round": false,
+    "known_reusable_reference_counterexample_round": 122,
+    "matched_real_complex_noise_decay_round": 124,
+    "independent_unknown_joining_bound_round": 126,
+    "inherited_reference_equals_fresh_independent_input": false,
+    "closed_system_implies_thermodynamic_entropy_constant": false,
+    "information_bits_are_automatically_erasure_heat": false,
+    "cut_budget_condition": "N*(1-h2((1-d)/2)) <= B, only for the declared round-121 independent-direction classical-transcript interface",
+    "rate_condition_is_only_necessary": true,
+    "ordinary_real_quantum_excluded": false,
+    "complex_quantum_necessity_derived": false,
+    "evidence": [
+      "research_note_121.md",
+      "research_note_122.md",
+      "research_note_124.md",
+      "research_note_126.md",
+      "research_note_130.md",
+      "research_note_187.md",
+      "research_note_189.md",
+      "resource_sustainability_hypothesis.md"
+    ],
+    "followup_audit_round": 205
+  },
+  "resource_closure_audit": {
+    "round": 205,
+    "requirement": "All cognitive resources must have declared internal sources, post-use states and correlations, recovery conditions, permissions and units.",
+    "requirement_status": "User-adopted research accounting requirement; not a proved physical reconstruction axiom",
+    "old_results": [
+      2,
+      56,
+      94,
+      98,
+      113,
+      122,
+      123,
+      124,
+      172,
+      173,
+      174
+    ],
+    "interface": "Round-123 fixed x=1,z=4, round-122 reference reuse, fresh targets conditionally independent given the same sector",
+    "additional_archive_task_assumptions": [
+      "fixed finite distinguishable capacity",
+      "zero-error reconstruction of every complete formal record",
+      "all decoder side information counted"
+    ],
+    "full_archive_capacity_bits": "4*N",
+    "record_entropy_bits": "N*(3+h2((1+v)/2))+I(S;R^N), with I<=h2((1+g)/2)<=1",
+    "record_entropy_rate_diagnostic": 3.6008835287781893,
+    "old_task_specific_classical_summary_bits": "ceil(log2(N+1)); known N, fixed model, deterministic exact per-history predictions, nondegenerate prior",
+    "summary_is_complete_historical_archive": false,
+    "reference_reuse_implies_whole_machine_cyclic_return": false,
+    "complete_autonomous_physical_resource_closure_achieved": false,
+    "energy_cost_assigned": false,
+    "all_cognition_must_retain_every_record": false,
+    "universe_assumed_finite_dimensional": false,
+    "ordinary_real_quantum_excluded": false,
+    "complex_quantum_necessity_derived": false,
+    "evidence": [
+      "research_note_205.md",
+      "closed_resource_audit.py",
+      "closed_resource_audit_results.json",
+      "research_round_205_checks.json"
+    ]
+  },
+  "shared_history_consistency_hypothesis": {
+    "note": "shared_history_consistency_hypothesis.md",
+    "status": "User-proposed candidate; clarified using existing results, not an adopted universal physical axiom",
+    "new_research_round": false,
+    "old_results": [
+      81,
+      172,
+      175
+    ],
+    "weak_version": "Within the same actual protocol and identified events, retained local records admit a common feasible history; access and verification costs are explicit.",
+    "same_subjective_beliefs_required": false,
+    "identical_complete_copies_required": false,
+    "unperformed_measurements_given_context_independent_answers": false,
+    "overlap_marginal_agreement_alone_suffices": false,
+    "classical_or_ordinary_real_models_excluded": false,
+    "evidence": [
+      "research_note_81.md",
+      "research_note_172.md",
+      "research_note_175.md",
+      "research_note_205.md",
+      "shared_history_consistency_hypothesis.md"
+    ]
+  },
+  "dynamic_complex_emergence_hypothesis": {
+    "note": "dynamic_complex_emergence_hypothesis.md",
+    "date": "2026-09-17",
+    "status": "User-proposed dynamic emergence/selection hypothesis; not a proved cognitive or physical axiom",
+    "new_research_round": false,
+    "old_static_correspondence_round": 85,
+    "source": "https://arxiv.org/html/1210.4535",
+    "source_scope": "Targeted reading of introduction, environmental dynamics and limit discussion, and conclusion; no reproduction of random-environment experiments",
+    "distinct_questions": [
+      "existence of an effective transition",
+      "advantage under matched development/stability/resource constraints",
+      "generic or unique dynamical selection"
+    ],
+    "analytic_illustration": {
+      "J_is_declared_in_advance": true,
+      "projection": "P_J(rho)=(rho+J*rho*J^T)/2",
+      "channel": "T_t=P_J+exp(-2*kappa*t)*(Id-P_J)",
+      "squared_deviation": "V_J(T_t(rho))=exp(-4*kappa*t)*V_J(rho)",
+      "fixed_time_real_orthogonal_dilation": "O_theta=cos(theta)*I+sin(theta)*(J tensor X_E); cos(theta)^2=(1+exp(-2*kappa*t))/2",
+      "entire_autonomous_multitime_implementation_supplied": false,
+      "all_original_real_distinctions_preserved_locally": false,
+      "complete_joint_distinctions_preserved_by_fixed_time_dilation": true,
+      "full_complex_operational_structure_dynamically_derived": false
+    },
+    "parameter_limit_is_time_evolution": false,
+    "ordinary_real_quantum_intrinsically_unstable_proved": false,
+    "generic_selection_or_resource_advantage_proved": false,
+    "internal_resource_accounting_still_required": true,
+    "evidence": [
+      "research_note_85.md",
+      "research_note_87.md",
+      "research_note_122.md",
+      "research_note_124.md",
+      "research_note_126.md",
+      "research_note_173.md",
+      "research_note_175.md",
+      "research_note_204.md",
+      "research_note_205.md",
+      "dynamic_complex_emergence_hypothesis.md"
+    ],
+    "growth_requirement_adopted_for_research_object": true,
+    "permanent_stagnation_or_degradation_is_acceptable_stability_solution": false
+  },
+  "continued_cognitive_growth_requirement": {
+    "status": "User-adopted functional definition of the cognitive systems under study; not a derived universal physical law",
+    "source": "../认知联合体架构-AGI工程方案.md",
+    "source_section": "L6 intrinsic motivation: information gain and prediction-error reduction",
+    "clarification": "When sustained feasible and verifiable expansion opportunities exist, seek new cognitive capabilities beyond the current accessible interface; permanent repetition, shutdown or capability degradation do not satisfy the task.",
+    "old_capability_preservation_required": true,
+    "strict_verifiable_new_capability_required": true,
+    "every_step_guaranteed_to_learn_something_required": false,
+    "all_raw_history_must_be_retained": false,
+    "random_output_or_log_length_is_knowledge_growth": false,
+    "ordinary_real_recursive_composition_is_legal": true,
+    "arbitrary_finite_growth_family_proves_unbounded_growth_of_one_fixed_finite_whole": false,
+    "only_complex_structures_can_merge_proved": false,
+    "round_126_interface_is_not_assumed_necessary_for_all_growth": true,
+    "evidence": [
+      "research_note_84.md",
+      "research_note_126.md",
+      "research_note_130.md",
+      "research_note_205.md",
+      "dynamic_complex_emergence_hypothesis.md"
+    ]
+  },
+  "growth_maintenance_audit": {
+    "round": 206,
+    "question": "Does continued growth plus maintenance cost imply an unavoidable real-to-complex historical transition?",
+    "answer": "Not established; the budget consequences depend on relative cost/capacity growth and conversion permissions, and do not identify a quantum structure.",
+    "philosophical_lens": "Marx-inspired questions about material capacity, cooperation and historical change; social categories are not quantum axioms",
+    "marx_sources": [
+      "https://www.marxists.org/archive/marx/works/1859/critique-pol-economy/preface.htm",
+      "https://www.marxists.org/archive/marx/works/1877/11/russia.htm",
+      "https://www.marxists.org/archive/marx/works/1867-c1/ch09.htm",
+      "https://www.marxists.org/archive/marx/works/1894-c3/ch48.htm"
+    ],
+    "growth_demand_is_identical_to_productive_capacity": false,
+    "technical_maintenance_budget_is_marxian_necessary_labour": false,
+    "complex_quantum_has_no_reference_cost": false,
+    "class_hierarchy_follows_from_real_number_field": false,
+    "universal_classical_real_complex_historical_sequence_proved": false,
+    "analytic_condition": "d ln(M/B)/d ln n = d ln M/d ln n - d ln B/d ln n; positive power-law maintenance share rises iff alpha>beta",
+    "size_n_is_not_task_repetition_T_or_independent_source_count_G": true,
+    "old_round_124_read_count_ratio_limit": "1/56 for alignment/task reads at q=1e-6, fixed group and specified 14-task refresh; not total cost or scaling in n",
+    "simulation": {
+      "type": "Finite exact rational accounting sensitivity model; not quantum dynamics or empirical data",
+      "cost_laws_and_task_equivalence_are_inputs": true,
+      "quota": "4*n per epoch",
+      "default_internal_consumable_stock": 1000,
+      "default_internal_slot_limit": 16,
+      "growth_debit": 2,
+      "switch_debit": 6,
+      "fixed_maintenance_final_n": 16,
+      "linear_maintenance_final_n": 16,
+      "quadratic_maintenance_blocked_at_n": 4,
+      "quadratic_to_linear_switch_at_n": 4,
+      "matched_linear_labels_switch": false,
+      "whole_physical_resource_closure_achieved": false,
+      "quantum_capability_contracts_implemented": false,
+      "spontaneous_J_or_Y_emergence_simulated": false,
+      "physical_phase_transition_established": false,
+      "policy_is_globally_optimal": false
+    },
+    "continued_growth_requirement_preserved": true,
+    "ordinary_real_quantum_excluded": false,
+    "complex_quantum_necessity_derived": false,
+    "evidence": [
+      "research_note_206.md",
+      "growth_maintenance_audit.py",
+      "growth_maintenance_audit_results.json",
+      "research_round_206_checks.json",
+      "research_note_84.md",
+      "research_note_85.md",
+      "research_note_122.md",
+      "research_note_124.md",
+      "research_note_126.md",
+      "research_note_130.md",
+      "research_note_205.md"
+    ]
+  },
+  "tree_reference_growth_audit": {
+    "round": 207,
+    "question": "How does an implemented real-reference joining protocol scale with agent count, and which task contract changes the answer?",
+    "construction": "Independent known real link pairs; old YX alignment, m fresh noisy pointers, one majority bit and compiled real correction per added tree vertex",
+    "source_preparation_explicit": true,
+    "old_interface_preserved": "Each raw record preserves old joint states commuting with the parent-reference Y, including allowed data and logs",
+    "arbitrary_unknown_reference_or_full_purifying_interface_preserved": false,
+    "round_126_unknown_complex_group_obstruction_evaded": false,
+    "pair_correlation": "product of edge gamma_e on the tree path",
+    "whole_reference_trace_distance": "1-product_e((1+gamma_e)/2)",
+    "star_fixed_pair_build_reads_upper": "O(n), fixed quality, increasing root degree, ideal setup gates",
+    "global_precision_build_reads_in_uniform_independent_majority_family": "Theta(n log n), fixed nonzero error tolerance",
+    "universal_real_complexity_lower_bound": false,
+    "online_unknown_horizon_bounded_degree_growth_solved": false,
+    "internal_finite_stock_counted": "source purifiers, retired link halves, fresh pointers, correction helpers, raw records and messages",
+    "complex_baseline": "Declared local S phase gate; explicit finite private preparation and optional old-read dither; all subsequent real-protocol records match at equal initial reference quality",
+    "complex_phase_control_is_free": false,
+    "matched_storage_decay": "g_ij(age)=g_ij(0)*(1-2q)^(2*age), logical task gaps only",
+    "q_1e_minus6_m5_star_task_span": 13,
+    "refresh_preserves_arbitrary_old_data_correlations": false,
+    "continuous_setup_noise_or_autonomous_resource_cycle_closed": false,
+    "ordinary_real_quantum_excluded": false,
+    "complex_quantum_necessity_or_spontaneous_J_derived": false,
+    "evidence": [
+      "research_note_207.md",
+      "tree_reference_growth.py",
+      "tree_reference_growth_results.json",
+      "research_round_207_checks.json",
+      "research_note_62.md",
+      "research_note_64.md",
+      "research_note_82.md",
+      "research_note_122.md",
+      "research_note_124.md",
+      "research_note_126.md",
+      "research_note_205.md",
+      "research_note_206.md"
+    ]
+  }
+}

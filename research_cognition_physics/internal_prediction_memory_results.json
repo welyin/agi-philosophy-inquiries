@@ -1,0 +1,87 @@
+{
+  "rounds": [
+    200,
+    202
+  ],
+  "scope": "Uniform classical two-bit input, query selected independently after compression, one answer; no later source/log access",
+  "internal_memory_is_distinct_from_original_plant_registers": true,
+  "classical_curve": [
+    {
+      "memory_labels": 1,
+      "optimal_mean_success": "1/2",
+      "optimal_mean_brier": "1/4",
+      "success_encoder": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "brier_encoder": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "memory_labels": 2,
+      "optimal_mean_success": "3/4",
+      "optimal_mean_brier": "1/8",
+      "success_encoder": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "brier_encoder": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "memory_labels": 3,
+      "optimal_mean_success": "7/8",
+      "optimal_mean_brier": "1/16",
+      "success_encoder": [
+        0,
+        0,
+        1,
+        2
+      ],
+      "brier_encoder": [
+        0,
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "memory_labels": 4,
+      "optimal_mean_success": "1",
+      "optimal_mean_brier": "0",
+      "success_encoder": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "brier_encoder": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "weighted_one_bit_success": "1/2 + max(w,1-w)/2",
+  "weighted_one_bit_brier": "min(w,1-w)/4",
+  "exact_prediction_required_memory_labels": 4,
+  "one_bit_full_pair_retrieval_max_success": "1/2",
+  "early_choice_or_fresh_read_can_make_prediction_exact": true,
+  "audit_log_is_free_input_dependent_memory": false,
+  "calibration_implies_per_trial_certainty": false,
+  "quantum_structure_derived": false,
+  "automated_tests": 8
+}

@@ -1,0 +1,50 @@
+{
+  "recorded_on": "2026-09-16",
+  "data_type": "published_aggregate_results_not_event_level_raw_data",
+  "purpose": "记录可区分指定实量子网络模型与标准复量子预测的实验汇总；不区分操作等价的实Kähler表述与复表述。",
+  "experiments": [
+    {
+      "authors": "Ming-Cheng Chen et al.",
+      "title": "Ruling Out Real-Valued Standard Formalism of Quantum Theory",
+      "publication": "Physical Review Letters 128, 040403 (2022)",
+      "doi": "10.1103/PhysRevLett.128.040403",
+      "source": "https://arxiv.org/html/2103.08123v3",
+      "source_location": "Figure 3 and main text",
+      "platform": "superconducting qubits",
+      "correlation_score": 8.09,
+      "reported_one_standard_deviation": 0.01,
+      "real_theory_bound_as_printed": 7.66,
+      "ideal_complex_score": "6*sqrt(2)",
+      "reported_violation_in_standard_deviations": 43,
+      "scope": "通常实Hilbert空间、实张量组合和指定独立源网络模型；本条不宣称实验关闭所有相关漏洞。"
+    },
+    {
+      "authors": "Dian Wu et al.",
+      "title": "Experimental Refutation of Real-Valued Quantum Mechanics under Strict Locality Conditions",
+      "publication": "Physical Review Letters 129, 140401 (2022)",
+      "doi": "10.1103/PhysRevLett.129.140401",
+      "source": "https://arxiv.org/html/2201.04177v2",
+      "published_abstract": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.129.140401",
+      "source_location": "Figure 4 and main text; published abstract for loophole and fair-sampling statement",
+      "platform": "independent photonic sources and spatially separated stations",
+      "correlation_score": 7.83,
+      "reported_one_standard_deviation": 0.03,
+      "real_theory_bound_as_printed": 7.66,
+      "ideal_complex_score": "6*sqrt(2)",
+      "reported_violation_in_standard_deviations": 5.30,
+      "conditional_results": [
+        {"bob_bell_outcome": "Phi+", "score": 7.80, "one_standard_deviation": 0.06},
+        {"bob_bell_outcome": "Psi+", "score": 7.89, "one_standard_deviation": 0.06},
+        {"bob_bell_outcome": "Phi-", "score": 7.78, "one_standard_deviation": 0.06},
+        {"bob_bell_outcome": "Psi-", "score": 7.84, "one_standard_deviation": 0.06}
+      ],
+      "scope": "论文在公平抽样假设下报告同时关闭源独立性、局域性、测量独立性相关漏洞；不据此排除不同组合公理的实数表述。"
+    }
+  ],
+  "limitations": [
+    "数值与误差按论文公开精度摘录；7.66不是本项目重新计算或证明的精确最优界。",
+    "显著性为作者报告；不能用已四舍五入的数据替换未取得的完整统计分析。",
+    "本轮未取得逐事件原始数据、未独立复算实验；这不表示原始数据不存在或不能取得。",
+    "项目既有模拟和数学证书不属于这些实验的数据。"
+  ]
+}

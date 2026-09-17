@@ -1,0 +1,263 @@
+{
+  "round": 147,
+  "label_risk_formula": "(8e - 7e^2 + 2e^3)/3",
+  "hard_majority_invalid_label_decoding": {
+    "110": "010",
+    "111": "011"
+  },
+  "uniform_error_includes_arbitrary_unknown_external_correlations": true,
+  "combined_independent_flag_noise_upper": "q + (1-q) label_risk, q=(1-lambda)/2",
+  "noise_bath_and_source_purification_inaccessible": true,
+  "native_readout_fresh_pointers_and_all_records_retained": true,
+  "certificates": [
+    {
+      "reads_per_label_bit": 1,
+      "contrast_exact": "1/2",
+      "majority_bit_error": {
+        "lower_exact": "320203522666278298782574069513/1267650600228229401496703205376",
+        "upper_exact": "160101761333139149391287034773/633825300114114700748351602688",
+        "diagnostic": 0.2525960407454771
+      },
+      "uniform_external_recovery_error_upper": {
+        "lower_exact": "339385700770714730429827227449/633825300114114700748351602688",
+        "upper_exact": "678771401541429460859654455031/1267650600228229401496703205376",
+        "diagnostic": 0.535456222258107
+      },
+      "conditional_error_upper_by_report": [
+        {
+          "lower_exact": "702324131103760983308402038203/1267650600228229401496703205376",
+          "upper_exact": "702324131103760983308402038355/1267650600228229401496703205376",
+          "diagnostic": 0.5540360498210735
+        },
+        {
+          "lower_exact": "702324131103760983308402038203/1267650600228229401496703205376",
+          "upper_exact": "702324131103760983308402038355/1267650600228229401496703205376",
+          "diagnostic": 0.5540360498210735
+        },
+        {
+          "lower_exact": "43895258193985061456775127387/79228162514264337593543950336",
+          "upper_exact": "351162065551880491654201019183/633825300114114700748351602688",
+          "diagnostic": 0.5540360498210735
+        },
+        {
+          "lower_exact": "43895258193985061456775127387/79228162514264337593543950336",
+          "upper_exact": "351162065551880491654201019183/633825300114114700748351602688",
+          "diagnostic": 0.5540360498210735
+        },
+        {
+          "lower_exact": "615221777508101257511055122913/1267650600228229401496703205376",
+          "upper_exact": "38451361094256328594440945193/79228162514264337593543950336",
+          "diagnostic": 0.4853244083167207
+        },
+        {
+          "lower_exact": "615221777508101257511055122913/1267650600228229401496703205376",
+          "upper_exact": "38451361094256328594440945193/79228162514264337593543950336",
+          "diagnostic": 0.4853244083167207
+        }
+      ],
+      "strictly_beats_classical_only_half_error": false,
+      "original_noisy_reads": 3,
+      "fresh_pointer_initializations": 3,
+      "retained_accessible_coherent_history_rebits": 1,
+      "decoded_message_bits": 3,
+      "raw_readout_bits_retained": 3,
+      "new_yx_after_first_join": 434,
+      "new_ry_after_first_join": 361,
+      "new_total_native_gates_after_first_join": 795,
+      "old_common_marginal_preserved_until_recovery_starts": true,
+      "all_readout_results_accepted": true,
+      "quantum_history_read_in_computational_basis": false,
+      "gate_angles_and_quantum_history_storage_ideal_in_this_table": true,
+      "source_prior_join_transport_calibration_and_microscopic_bath_costs_included": false,
+      "quantum_error_bound_or_read_count_globally_optimal": false
+    },
+    {
+      "reads_per_label_bit": 3,
+      "contrast_exact": "1/2",
+      "majority_bit_error": {
+        "lower_exact": "100892704236455956199932136007/633825300114114700748351602688",
+        "upper_exact": "201785408472911912399864272067/1267650600228229401496703205376",
+        "diagnostic": 0.1591806199883329
+      },
+      "uniform_external_recovery_error_upper": {
+        "lower_exact": "466555616585098218514572701739/1267650600228229401496703205376",
+        "upper_exact": "466555616585098218514572701927/1267650600228229401496703205376",
+        "diagnostic": 0.3680474860352679
+      },
+      "conditional_error_upper_by_report": [
+        {
+          "lower_exact": "247259093668762421976652376773/633825300114114700748351602688",
+          "upper_exact": "494518187337524843953304753857/1267650600228229401496703205376",
+          "diagnostic": 0.39010606491133376
+        },
+        {
+          "lower_exact": "247259093668762421976652376773/633825300114114700748351602688",
+          "upper_exact": "494518187337524843953304753857/1267650600228229401496703205376",
+          "diagnostic": 0.39010606491133376
+        },
+        {
+          "lower_exact": "247259093668762421976652376759/633825300114114700748351602688",
+          "upper_exact": "494518187337524843953304753887/1267650600228229401496703205376",
+          "diagnostic": 0.39010606491133376
+        },
+        {
+          "lower_exact": "247259093668762421976652376759/633825300114114700748351602688",
+          "upper_exact": "494518187337524843953304753887/1267650600228229401496703205376",
+          "diagnostic": 0.39010606491133376
+        },
+        {
+          "lower_exact": "397667812688758937401968932459/1267650600228229401496703205376",
+          "upper_exact": "397667812688758937401968932799/1267650600228229401496703205376",
+          "diagnostic": 0.31370459069491413
+        },
+        {
+          "lower_exact": "397667812688758937401968932459/1267650600228229401496703205376",
+          "upper_exact": "397667812688758937401968932799/1267650600228229401496703205376",
+          "diagnostic": 0.31370459069491413
+        }
+      ],
+      "strictly_beats_classical_only_half_error": true,
+      "original_noisy_reads": 9,
+      "fresh_pointer_initializations": 9,
+      "retained_accessible_coherent_history_rebits": 1,
+      "decoded_message_bits": 3,
+      "raw_readout_bits_retained": 9,
+      "new_yx_after_first_join": 440,
+      "new_ry_after_first_join": 379,
+      "new_total_native_gates_after_first_join": 819,
+      "old_common_marginal_preserved_until_recovery_starts": true,
+      "all_readout_results_accepted": true,
+      "quantum_history_read_in_computational_basis": false,
+      "gate_angles_and_quantum_history_storage_ideal_in_this_table": true,
+      "source_prior_join_transport_calibration_and_microscopic_bath_costs_included": false,
+      "quantum_error_bound_or_read_count_globally_optimal": false
+    },
+    {
+      "reads_per_label_bit": 15,
+      "contrast_exact": "1/2",
+      "majority_bit_error": {
+        "lower_exact": "11672096837143028546896329695/633825300114114700748351602688",
+        "upper_exact": "23344193674286057093792662499/1267650600228229401496703205376",
+        "diagnostic": 0.018415321753551917
+      },
+      "uniform_external_recovery_error_upper": {
+        "lower_exact": "61253382229116737225143606071/1267650600228229401496703205376",
+        "upper_exact": "30626691114558368612571807317/633825300114114700748351602688",
+        "diagnostic": 0.04832039855310967
+      },
+      "conditional_error_upper_by_report": [
+        {
+          "lower_exact": "2135753480755278170236489211/39614081257132168796771975168",
+          "upper_exact": "34172055692084450723783840647/633825300114114700748351602688",
+          "diagnostic": 0.05391399757304114
+        },
+        {
+          "lower_exact": "2135753480755278170236489211/39614081257132168796771975168",
+          "upper_exact": "34172055692084450723783840647/633825300114114700748351602688",
+          "diagnostic": 0.05391399757304114
+        },
+        {
+          "lower_exact": "68344111384168901447567651863/1267650600228229401496703205376",
+          "upper_exact": "8543013923021112680945960523/158456325028528675187087900672",
+          "diagnostic": 0.05391399757304114
+        },
+        {
+          "lower_exact": "68344111384168901447567651863/1267650600228229401496703205376",
+          "upper_exact": "8543013923021112680945960523/158456325028528675187087900672",
+          "diagnostic": 0.05391399757304114
+        },
+        {
+          "lower_exact": "46680325034496021256920036219/1267650600228229401496703205376",
+          "upper_exact": "46680325034496021256920060519/1267650600228229401496703205376",
+          "diagnostic": 0.03682428346272359
+        },
+        {
+          "lower_exact": "46680325034496021256920036219/1267650600228229401496703205376",
+          "upper_exact": "46680325034496021256920060519/1267650600228229401496703205376",
+          "diagnostic": 0.03682428346272359
+        }
+      ],
+      "strictly_beats_classical_only_half_error": true,
+      "original_noisy_reads": 45,
+      "fresh_pointer_initializations": 45,
+      "retained_accessible_coherent_history_rebits": 1,
+      "decoded_message_bits": 3,
+      "raw_readout_bits_retained": 45,
+      "new_yx_after_first_join": 476,
+      "new_ry_after_first_join": 487,
+      "new_total_native_gates_after_first_join": 963,
+      "old_common_marginal_preserved_until_recovery_starts": true,
+      "all_readout_results_accepted": true,
+      "quantum_history_read_in_computational_basis": false,
+      "gate_angles_and_quantum_history_storage_ideal_in_this_table": true,
+      "source_prior_join_transport_calibration_and_microscopic_bath_costs_included": false,
+      "quantum_error_bound_or_read_count_globally_optimal": false
+    },
+    {
+      "reads_per_label_bit": 25,
+      "contrast_exact": "1/2",
+      "majority_bit_error": {
+        "lower_exact": "2355215884788537462538965151/633825300114114700748351602688",
+        "upper_exact": "2355215884788537462539458823/633825300114114700748351602688",
+        "diagnostic": 0.003715875469730384
+      },
+      "uniform_external_recovery_error_upper": {
+        "lower_exact": "3130088382692551334400245551/316912650057057350374175801344",
+        "upper_exact": "12520353530770205337603632275/1267650600228229401496703205376",
+        "diagnostic": 0.009876817419970475
+      },
+      "conditional_error_upper_by_report": [
+        {
+          "lower_exact": "14061540995614602179972632461/1267650600228229401496703205376",
+          "upper_exact": "3515385248903650544995355931/316912650057057350374175801344",
+          "diagnostic": 0.011092599958602904
+        },
+        {
+          "lower_exact": "14061540995614602179972632461/1267650600228229401496703205376",
+          "upper_exact": "3515385248903650544995355931/316912650057057350374175801344",
+          "diagnostic": 0.011092599958602904
+        },
+        {
+          "lower_exact": "1757692624451825272496457463/158456325028528675187087900672",
+          "upper_exact": "14061540995614602179982396481/1267650600228229401496703205376",
+          "diagnostic": 0.011092599958602904
+        },
+        {
+          "lower_exact": "1757692624451825272496457463/158456325028528675187087900672",
+          "upper_exact": "14061540995614602179982396481/1267650600228229401496703205376",
+          "diagnostic": 0.011092599958602904
+        },
+        {
+          "lower_exact": "588799891068945689976982887/79228162514264337593543950336",
+          "upper_exact": "4710399128551565519819794073/633825300114114700748351602688",
+          "diagnostic": 0.007431699441002906
+        },
+        {
+          "lower_exact": "588799891068945689976982887/79228162514264337593543950336",
+          "upper_exact": "4710399128551565519819794073/633825300114114700748351602688",
+          "diagnostic": 0.007431699441002906
+        }
+      ],
+      "strictly_beats_classical_only_half_error": true,
+      "original_noisy_reads": 75,
+      "fresh_pointer_initializations": 75,
+      "retained_accessible_coherent_history_rebits": 1,
+      "decoded_message_bits": 3,
+      "raw_readout_bits_retained": 75,
+      "new_yx_after_first_join": 506,
+      "new_ry_after_first_join": 577,
+      "new_total_native_gates_after_first_join": 1083,
+      "old_common_marginal_preserved_until_recovery_starts": true,
+      "all_readout_results_accepted": true,
+      "quantum_history_read_in_computational_basis": false,
+      "gate_angles_and_quantum_history_storage_ideal_in_this_table": true,
+      "source_prior_join_transport_calibration_and_microscopic_bath_costs_included": false,
+      "quantum_error_bound_or_read_count_globally_optimal": false
+    }
+  ],
+  "automated_checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}
