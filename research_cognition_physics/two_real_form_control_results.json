@@ -1,0 +1,66 @@
+{
+  "round": 208,
+  "antecedent_rounds": [
+    50,
+    54,
+    57,
+    80,
+    85,
+    87,
+    88,
+    171,
+    204,
+    207
+  ],
+  "scope": "Two active orthogonal-control frames on the same declared finite complex carrier",
+  "inputs": [
+    "complex positive matrices and trace probabilities",
+    "all real SO(d) flows",
+    "second frame D_phi=diag(exp(i phi),1,...,1)",
+    "both families executable on the same carrier with signed continuous parameters",
+    "finite-product closure for arbitrarily accurate control"
+  ],
+  "lie_algebra_if_sin_phi_nonzero": "su(d)",
+  "lie_algebra_if_sin_phi_zero": "so(d)",
+  "exact_certificate_phase": "pi/2",
+  "basis_gram_determinant": "d * 2**(d*(d-1))",
+  "dimension_rows": [
+    {
+      "d": 2,
+      "one_real_form": 1,
+      "two_active_forms": 3
+    },
+    {
+      "d": 3,
+      "one_real_form": 3,
+      "two_active_forms": 8
+    },
+    {
+      "d": 4,
+      "one_real_form": 6,
+      "two_active_forms": 15
+    },
+    {
+      "d": 5,
+      "one_real_form": 10,
+      "two_active_forms": 24
+    },
+    {
+      "d": 6,
+      "one_real_form": 15,
+      "two_active_forms": 35
+    }
+  ],
+  "passive_coordinate_change_adds_capability": false,
+  "first_real_cone_stable_under_all_cross_frame_controls": false,
+  "same_process_has_common_J_real_representation": true,
+  "finite_gate_cost_or_uniform_small_angle_budget_proved": false,
+  "all_general_instruments_or_composition_rules_derived": false,
+  "relative_frame_necessity_derived_from_cognition": false,
+  "quantum_necessity_or_incompleteness_proved": false,
+  "automated_checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}

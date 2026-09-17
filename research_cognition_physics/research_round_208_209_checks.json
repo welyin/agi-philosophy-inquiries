@@ -1,0 +1,74 @@
+{
+  "date": "2026-09-17",
+  "rounds": [208, 209],
+  "runtime": {
+    "python": "3.14.6",
+    "numpy": "2.5.1",
+    "new_dependencies_installed": false,
+    "pandoc_resolution": "existing pypandoc bundled binary; not on shell PATH"
+  },
+  "result_generation": [
+    {
+      "command": "python -B -X utf8 research_cognition_physics/two_real_form_control.py --write-results",
+      "tests": 8,
+      "failures": 0,
+      "errors": 0
+    },
+    {
+      "command": "python -B -X utf8 research_cognition_physics/real_interface_record_bound.py --write-results",
+      "tests": 13,
+      "failures": 0,
+      "errors": 0
+    }
+  ],
+  "focused_regression": {
+    "loader": "unittest.defaultTestLoader.loadTestsFromNames with research_cognition_physics on sys.path",
+    "modules": [
+      "partition_interface_closure",
+      "common_orientation_structure",
+      "complex_whole_real_interfaces",
+      "real_interface_stability",
+      "two_real_form_control",
+      "real_interface_record_bound"
+    ],
+    "tests": 53,
+    "failures": 0,
+    "errors": 0,
+    "seconds_reported": 0.145,
+    "full_historical_test_suite_run": false
+  },
+  "document_validation": {
+    "method": "pypandoc.convert_file to html5 with --mathml --fail-if-warnings",
+    "mathml_expression_counts": {
+      "research_note_208.md": 33,
+      "research_note_209.md": 84,
+      "README.md": 1,
+      "research_direction.md": 43,
+      "RESEARCH_STATE.md": 0
+    },
+    "local_file_links_checked": true,
+    "forbidden_control_characters_checked": true,
+    "editor_diagnostics_clear": true,
+    "recovered_validation_issues": [
+      "Shell pandoc executable unavailable; existing pypandoc resolved its bundled binary",
+      "One legacy TeX rm command replaced with mathrm; identical conversion rerun passed"
+    ]
+  },
+  "scope_audit": {
+    "tracked_changes_before_this_ledger": ["README.md", "research_direction.md", "RESEARCH_STATE.md"],
+    "new_python_files": ["two_real_form_control.py", "real_interface_record_bound.py"],
+    "new_result_files": ["two_real_form_control_results.json", "real_interface_record_bound_results.json"],
+    "new_notes": ["research_note_208.md", "research_note_209.md"],
+    "old_numbered_notes_or_results_modified": false,
+    "main_manuscripts_modified": false,
+    "new_scheduled_tasks_or_background_research_created": false,
+    "git_commit_or_push_performed": false
+  },
+  "evidence_limits": [
+    "General control closure and probability bounds are proved analytically in the notes; finite tests check implementations",
+    "No experimental samples were collected",
+    "No cognition-to-relative-frame necessity was established",
+    "No universal real-theory exclusion or quantum incompleteness was established",
+    "Native gate costs, autonomous resource recycling and general composite reconstruction remain open"
+  ]
+}

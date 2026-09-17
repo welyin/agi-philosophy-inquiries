@@ -1,0 +1,104 @@
+{
+  "round": 209,
+  "antecedent_rounds": [
+    85,
+    87,
+    171,
+    187,
+    188,
+    201,
+    203,
+    208
+  ],
+  "scope": "Six preparations, three binary measurements, real dimension 2, no shared side information",
+  "extra_shared_source_detector_randomness_or_schedule_allowed_in_bound": false,
+  "private_preparation_and_measurement_randomness_allowed": true,
+  "preparation_pair_equal_mixture_assumed_in_lower_bound": false,
+  "arbitrary_biased_binary_effects_allowed": true,
+  "ideal_probability_table_plus": [
+    [
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.5,
+        0.5
+      ],
+      [
+        0.5,
+        0.5
+      ]
+    ],
+    [
+      [
+        0.5,
+        0.5
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.5,
+        0.5
+      ]
+    ],
+    [
+      [
+        0.5,
+        0.5
+      ],
+      [
+        0.5,
+        0.5
+      ],
+      [
+        1.0,
+        0.0
+      ]
+    ]
+  ],
+  "contrast_real_rank_upper": 2,
+  "target_contrast": "visibility * I_3",
+  "minimum_maximum_probability_error_exact": "visibility/6 for 0<=visibility<=1",
+  "attaining_real_contrast": "visibility * (I_3 - ones(3,3)/3)",
+  "one_shared_random_bit_plus_rebit_matches_table": true,
+  "two_shared_random_bits_plus_one_classical_message_bit_matches_table": true,
+  "four_dimensional_real_carrier_matches_without_shared_classical_bits": true,
+  "prepare_X_plus_then_Z_X_fixed_shared_bit_luders_record_TV_exact": "1/4",
+  "refreshed_internal_bit_real_CP_instrument_matches_all_finite_Pauli_histories": true,
+  "refreshed_model_scope": "six axis preparations and mixtures; only three Pauli projective instruments",
+  "same_memory_encoding_is_positive_on_full_Bloch_ball": false,
+  "fresh_memory_randomness_and_reset_cost_quantified": false,
+  "all_possible_shared_memory_update_models_excluded": false,
+  "general_frame_lower_bound": "visibility*(1-abs(cos(phi)))/6; sharpness not asserted",
+  "sampling_assumptions": "fresh independent Bernoulli trials for each fixed preparation and setting",
+  "sample_budgets": [
+    {
+      "visibility": 1.0,
+      "risk": 0.01,
+      "probability_tolerance": 0.041666666666666664,
+      "repetitions_per_cell": 2359,
+      "total_fresh_preparations": 42462,
+      "union_bound": 0.009977195065073888
+    },
+    {
+      "visibility": 0.5,
+      "risk": 0.01,
+      "probability_tolerance": 0.020833333333333332,
+      "repetitions_per_cell": 9434,
+      "total_fresh_preparations": 169812,
+      "union_bound": 0.009994531629030254
+    }
+  ],
+  "samples_collected": 0,
+  "minimal_real_dimension_for_full_complex_theory_proved": false,
+  "dimension_constraint_or_relative_frame_derived_from_cognition": false,
+  "quantum_necessity_or_incompleteness_proved": false,
+  "automated_checks": {
+    "run": 13,
+    "failures": 0,
+    "errors": 0
+  }
+}
