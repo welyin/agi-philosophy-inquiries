@@ -1,0 +1,58 @@
+{
+  "round": 212,
+  "antecedent_rounds": [
+    1,
+    80,
+    85,
+    106,
+    175,
+    176,
+    209,
+    210,
+    211
+  ],
+  "scope": "SO(4)-covariant real question controls with an internal unit-vector reference",
+  "generator": "D_t(x)_ij = -kappa * sum_kl epsilon_ijkl x_k t_l",
+  "classification": "with unit t as the only extra directional datum, linear x and SO(4) covariance allow wedge plus dual wedge; own-question preservation leaves only dual wedge",
+  "joint_covariance": "D_(Rt)(Rx)=R D_t(x) R^T",
+  "reference_independent_SO4_covariance_holds": false,
+  "D_x_zero_and_D_t_zero": true,
+  "nonzero_for_every_nonzero_question_at_fixed_reference": false,
+  "squared_frequency": "kappa^2*(norm(x)^2*norm(t)^2-dot(x,t)^2)",
+  "real_spin_generator": "one_half * sum_(i<j) D_ij Q_i Q_j",
+  "real_target_dimension": 8,
+  "two_reference_value_control_dimension": 16,
+  "continuous_all_reference_model_is_finite_memory_hardware": false,
+  "equal_marginal_correlation_witness": {
+    "reference_values": [
+      "+e4",
+      "-e4"
+    ],
+    "reference_probabilities": [
+      "1/2",
+      "1/2"
+    ],
+    "target_marginal": "I_8/8 in both preparations",
+    "fixed_control_question": "e3",
+    "parameter": "pi/2",
+    "final_e2_positive_probabilities": [
+      "1",
+      "0"
+    ],
+    "minimum_same_marginal_predictor_worst_probability_error": "1/2"
+  },
+  "classical_reference_distribution_preserved_but_joint_correlations_may_change": true,
+  "arbitrary_coherent_reference_marginal_preserved": false,
+  "zero_mean_reference_can_have_nontrivial_average_finite_action": true,
+  "reference_internalization_implies_reference_independence": false,
+  "full_finite_control_extension_is_real_orthogonal": true,
+  "closed_autonomous_energy_and_clock_implementation_proved": false,
+  "cognitive_necessity_or_quantum_incompleteness_proved": false,
+  "round211_theorem_refuted": false,
+  "new_composite_axioms_derived": false,
+  "automated_checks": {
+    "run": 12,
+    "failures": 0,
+    "errors": 0
+  }
+}

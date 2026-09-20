@@ -1,0 +1,903 @@
+{
+  "model_version": "C1",
+  "route_round": "01",
+  "parent": "C0 baseline.py unchanged",
+  "research_scope": "sufficiency construction and consistency checks only; necessity questions recorded but not investigated",
+  "inputs": {
+    "Hamiltonian": "g/2*(XX_AB+YY_AB+XX_BC+YY_BC)",
+    "g": 1,
+    "default_classical_hop_delay": 0.5553603672697958,
+    "classical_path": [
+      "M",
+      "B",
+      "A"
+    ],
+    "control_and_projective_readout_durations": "ideal instantaneous interventions",
+    "time_units": "declared evolution parameter, not a reconstructed physical clock"
+  },
+  "transfer_formula": "P_C(1|A=1)=sin(g*t/sqrt(2))^4; vacuum input remains vacuum",
+  "leading_tail": "g^4*t^4/4; no strict positive waiting time in the continuous model",
+  "perfect_first_transfer_parameter": 2.221441469079183,
+  "threshold_arrivals": [
+    {
+      "threshold": 1e-08,
+      "first_arrival_parameter": 0.014142371336598581
+    },
+    {
+      "threshold": 0.0001,
+      "first_arrival_parameter": 0.14165812551461565
+    },
+    {
+      "threshold": 0.01,
+      "first_arrival_parameter": 0.45502399772879365
+    },
+    {
+      "threshold": 0.5,
+      "first_arrival_parameter": 1.412710899077276
+    },
+    {
+      "threshold": 1,
+      "first_arrival_parameter": 2.221441469079183
+    }
+  ],
+  "interference": [
+    {
+      "phase": 0.0,
+      "B_one_probability": 0.9999999999999978,
+      "elapsed_parameter": 2.221441469079183,
+      "resources": {
+        "logical_quantum_slots": 4,
+        "initial_blank_record_slots": 1,
+        "unitary_calls": 2,
+        "two_slot_calls": 0,
+        "pointer_reads": 0,
+        "formal_record_bits": 0,
+        "feedback_message_bits": 0,
+        "resets": 0,
+        "propagation_intervals": 2,
+        "evolution_parameter": 2.221441469079183,
+        "active_edge_parameter_time": 4.442882938158366,
+        "classical_bit_hops": 0,
+        "message_in_flight": 0
+      },
+      "events": [
+        {
+          "kind": "unitary",
+          "label": "known central excitation",
+          "slots": [
+            "B"
+          ],
+          "time": 0.0
+        },
+        {
+          "kind": "propagation",
+          "start": 0.0,
+          "end": 1.1107207345395915,
+          "active_edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ],
+          "coupling": 1.0,
+          "solver": "exact finite matrix reference"
+        },
+        {
+          "kind": "unitary",
+          "label": "local phase on C",
+          "slots": [
+            "C"
+          ],
+          "time": 1.1107207345395915
+        },
+        {
+          "kind": "propagation",
+          "start": 1.1107207345395915,
+          "end": 2.221441469079183,
+          "active_edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ],
+          "coupling": 1.0,
+          "solver": "exact finite matrix reference"
+        }
+      ]
+    },
+    {
+      "phase": 1.5707963267948966,
+      "B_one_probability": 0.49999999999999895,
+      "elapsed_parameter": 2.221441469079183,
+      "resources": {
+        "logical_quantum_slots": 4,
+        "initial_blank_record_slots": 1,
+        "unitary_calls": 2,
+        "two_slot_calls": 0,
+        "pointer_reads": 0,
+        "formal_record_bits": 0,
+        "feedback_message_bits": 0,
+        "resets": 0,
+        "propagation_intervals": 2,
+        "evolution_parameter": 2.221441469079183,
+        "active_edge_parameter_time": 4.442882938158366,
+        "classical_bit_hops": 0,
+        "message_in_flight": 0
+      },
+      "events": [
+        {
+          "kind": "unitary",
+          "label": "known central excitation",
+          "slots": [
+            "B"
+          ],
+          "time": 0.0
+        },
+        {
+          "kind": "propagation",
+          "start": 0.0,
+          "end": 1.1107207345395915,
+          "active_edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ],
+          "coupling": 1.0,
+          "solver": "exact finite matrix reference"
+        },
+        {
+          "kind": "unitary",
+          "label": "local phase on C",
+          "slots": [
+            "C"
+          ],
+          "time": 1.1107207345395915
+        },
+        {
+          "kind": "propagation",
+          "start": 1.1107207345395915,
+          "end": 2.221441469079183,
+          "active_edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ],
+          "coupling": 1.0,
+          "solver": "exact finite matrix reference"
+        }
+      ]
+    },
+    {
+      "phase": 3.141592653589793,
+      "B_one_probability": 0.0,
+      "elapsed_parameter": 2.221441469079183,
+      "resources": {
+        "logical_quantum_slots": 4,
+        "initial_blank_record_slots": 1,
+        "unitary_calls": 2,
+        "two_slot_calls": 0,
+        "pointer_reads": 0,
+        "formal_record_bits": 0,
+        "feedback_message_bits": 0,
+        "resets": 0,
+        "propagation_intervals": 2,
+        "evolution_parameter": 2.221441469079183,
+        "active_edge_parameter_time": 4.442882938158366,
+        "classical_bit_hops": 0,
+        "message_in_flight": 0
+      },
+      "events": [
+        {
+          "kind": "unitary",
+          "label": "known central excitation",
+          "slots": [
+            "B"
+          ],
+          "time": 0.0
+        },
+        {
+          "kind": "propagation",
+          "start": 0.0,
+          "end": 1.1107207345395915,
+          "active_edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ],
+          "coupling": 1.0,
+          "solver": "exact finite matrix reference"
+        },
+        {
+          "kind": "unitary",
+          "label": "local phase on C",
+          "slots": [
+            "C"
+          ],
+          "time": 1.1107207345395915
+        },
+        {
+          "kind": "propagation",
+          "start": 1.1107207345395915,
+          "end": 2.221441469079183,
+          "active_edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ],
+          "coupling": 1.0,
+          "solver": "exact finite matrix reference"
+        }
+      ]
+    }
+  ],
+  "interference_formula": "central excitation, propagation pi/(2sqrt(2)), local phase at C, same propagation again: P_B=(1+cos(phi))/2",
+  "split_comparison_parameter": 0.8,
+  "commutator_operator_norm": 1.0,
+  "split_role": "numerical prediction approximation; sequential physical pulses have different wall-time unless controls are rescaled",
+  "split_comparison": [
+    {
+      "steps": 4,
+      "lie_operator_error_diagnostic": 0.0758756506230066,
+      "lie_analytic_error_bound": 0.08000000000000002,
+      "symmetric_operator_error_diagnostic": 0.002844794631887393,
+      "lie_bond_pulses": 8,
+      "symmetric_bond_pulses_uncompressed": 12,
+      "sequential_active_bond_duration_at_same_coupling": 1.6
+    },
+    {
+      "steps": 8,
+      "lie_operator_error_diagnostic": 0.037909870298176995,
+      "lie_analytic_error_bound": 0.04000000000000001,
+      "symmetric_operator_error_diagnostic": 0.0007104828182266011,
+      "lie_bond_pulses": 16,
+      "symmetric_bond_pulses_uncompressed": 24,
+      "sequential_active_bond_duration_at_same_coupling": 1.6
+    },
+    {
+      "steps": 16,
+      "lie_operator_error_diagnostic": 0.018951436948755708,
+      "lie_analytic_error_bound": 0.020000000000000004,
+      "symmetric_operator_error_diagnostic": 0.00017757592334334364,
+      "lie_bond_pulses": 32,
+      "symmetric_bond_pulses_uncompressed": 48,
+      "sequential_active_bond_duration_at_same_coupling": 1.6
+    },
+    {
+      "steps": 32,
+      "lie_operator_error_diagnostic": 0.009475281080677031,
+      "lie_analytic_error_bound": 0.010000000000000002,
+      "symmetric_operator_error_diagnostic": 4.439118137157489e-05,
+      "lie_bond_pulses": 64,
+      "symmetric_bond_pulses_uncompressed": 96,
+      "sequential_active_bond_duration_at_same_coupling": 1.6
+    }
+  ],
+  "feedback_cases": [
+    {
+      "hop_delay": 0.5553603672697958,
+      "arrival_parameter": 1.1107207345395915,
+      "branches": [
+        {
+          "outcome": 0,
+          "weight": 0.4999999999999999,
+          "calibrated_success": 1.0,
+          "stale_success": 1.0,
+          "conditional_best_success": 1.0,
+          "events": [
+            {
+              "kind": "unitary",
+              "label": "known A plus preparation",
+              "slots": [
+                "A"
+              ],
+              "time": 0.0
+            },
+            {
+              "kind": "unitary",
+              "label": "known Bell preparation",
+              "slots": [
+                "A",
+                "B"
+              ],
+              "time": 0.0
+            },
+            {
+              "kind": "unitary",
+              "label": "write B into M",
+              "slots": [
+                "B",
+                "M"
+              ],
+              "time": 0.0
+            },
+            {
+              "kind": "record",
+              "slot": "M",
+              "outcome": 0,
+              "predicted_probability": 0.4999999999999999,
+              "branch_probability": 0.4999999999999999,
+              "time": 0.0,
+              "visibility": "local M record; not yet delivered to A"
+            },
+            {
+              "kind": "message_sent",
+              "time": 0.0,
+              "record_id": 0,
+              "path": [
+                "M",
+                "B",
+                "A"
+              ],
+              "earliest_delivery": 1.1107207345395915
+            },
+            {
+              "kind": "propagation",
+              "start": 0.0,
+              "end": 0.5553603672697958,
+              "active_edges": [
+                [
+                  "A",
+                  "B"
+                ],
+                [
+                  "B",
+                  "C"
+                ]
+              ],
+              "coupling": 1.0,
+              "solver": "exact finite matrix reference"
+            },
+            {
+              "kind": "message_hop",
+              "time": 0.5553603672697958,
+              "source": "M",
+              "target": "B",
+              "record_id": 0
+            },
+            {
+              "kind": "propagation",
+              "start": 0.5553603672697958,
+              "end": 1.1107207345395915,
+              "active_edges": [
+                [
+                  "A",
+                  "B"
+                ],
+                [
+                  "B",
+                  "C"
+                ]
+              ],
+              "coupling": 1.0,
+              "solver": "exact finite matrix reference"
+            },
+            {
+              "kind": "message_hop",
+              "time": 1.1107207345395915,
+              "source": "B",
+              "target": "A",
+              "record_id": 0
+            },
+            {
+              "kind": "decision",
+              "time": 1.1107207345395915,
+              "action": "keep",
+              "keep_prediction": 1.0,
+              "flip_prediction": 0.0,
+              "policy": "propagated conditional belief",
+              "record_id": 0
+            }
+          ],
+          "resources": {
+            "logical_quantum_slots": 4,
+            "initial_blank_record_slots": 1,
+            "unitary_calls": 3,
+            "two_slot_calls": 2,
+            "pointer_reads": 1,
+            "formal_record_bits": 1,
+            "feedback_message_bits": 1,
+            "resets": 0,
+            "propagation_intervals": 2,
+            "evolution_parameter": 1.1107207345395915,
+            "active_edge_parameter_time": 2.221441469079183,
+            "classical_bit_hops": 2,
+            "message_in_flight": 0
+          }
+        },
+        {
+          "outcome": 1,
+          "weight": 0.4999999999999999,
+          "calibrated_success": 0.749999999999998,
+          "stale_success": 0.749999999999998,
+          "conditional_best_success": 0.7500000000000009,
+          "events": [
+            {
+              "kind": "unitary",
+              "label": "known A plus preparation",
+              "slots": [
+                "A"
+              ],
+              "time": 0.0
+            },
+            {
+              "kind": "unitary",
+              "label": "known Bell preparation",
+              "slots": [
+                "A",
+                "B"
+              ],
+              "time": 0.0
+            },
+            {
+              "kind": "unitary",
+              "label": "write B into M",
+              "slots": [
+                "B",
+                "M"
+              ],
+              "time": 0.0
+            },
+            {
+              "kind": "record",
+              "slot": "M",
+              "outcome": 1,
+              "predicted_probability": 0.4999999999999999,
+              "branch_probability": 0.4999999999999999,
+              "time": 0.0,
+              "visibility": "local M record; not yet delivered to A"
+            },
+            {
+              "kind": "message_sent",
+              "time": 0.0,
+              "record_id": 0,
+              "path": [
+                "M",
+                "B",
+                "A"
+              ],
+              "earliest_delivery": 1.1107207345395915
+            },
+            {
+              "kind": "propagation",
+              "start": 0.0,
+              "end": 0.5553603672697958,
+              "active_edges": [
+                [
+                  "A",
+                  "B"
+                ],
+                [
+                  "B",
+                  "C"
+                ]
+              ],
+              "coupling": 1.0,
+              "solver": "exact finite matrix reference"
+            },
+            {
+              "kind": "message_hop",
+              "time": 0.5553603672697958,
+              "source": "M",
+              "target": "B",
+              "record_id": 0
+            },
+            {
+              "kind": "propagation",
+              "start": 0.5553603672697958,
+              "end": 1.1107207345395915,
+              "active_edges": [
+                [
+                  "A",
+                  "B"
+                ],
+                [
+                  "B",
+                  "C"
+                ]
+              ],
+              "coupling": 1.0,
+              "solver": "exact finite matrix reference"
+            },
+            {
+              "kind": "message_hop",
+              "time": 1.1107207345395915,
+              "source": "B",
+              "target": "A",
+              "record_id": 0
+            },
+            {
+              "kind": "decision",
+              "time": 1.1107207345395915,
+              "action": "flip",
+              "keep_prediction": 0.24999999999999917,
+              "flip_prediction": 0.7500000000000009,
+              "policy": "propagated conditional belief",
+              "record_id": 0
+            },
+            {
+              "kind": "unitary",
+              "label": "delivered-record feedback",
+              "slots": [
+                "A"
+              ],
+              "time": 1.1107207345395915
+            }
+          ],
+          "resources": {
+            "logical_quantum_slots": 4,
+            "initial_blank_record_slots": 1,
+            "unitary_calls": 4,
+            "two_slot_calls": 2,
+            "pointer_reads": 1,
+            "formal_record_bits": 1,
+            "feedback_message_bits": 1,
+            "resets": 0,
+            "propagation_intervals": 2,
+            "evolution_parameter": 1.1107207345395915,
+            "active_edge_parameter_time": 2.221441469079183,
+            "classical_bit_hops": 2,
+            "message_in_flight": 0
+          }
+        }
+      ],
+      "calibrated_average_success": 0.8749999999999989,
+      "stale_average_success": 0.8749999999999989,
+      "best_no_message_action_at_same_parameter": 0.625
+    },
+    {
+      "hop_delay": 0.7404804896930609,
+      "arrival_parameter": 1.4809609793861218,
+      "branches": [
+        {
+          "outcome": 0,
+          "weight": 0.4999999999999999,
+          "calibrated_success": 1.0,
+          "stale_success": 1.0,
+          "conditional_best_success": 1.0,
+          "events": [
+            {
+              "kind": "unitary",
+              "label": "known A plus preparation",
+              "slots": [
+                "A"
+              ],
+              "time": 0.0
+            },
+            {
+              "kind": "unitary",
+              "label": "known Bell preparation",
+              "slots": [
+                "A",
+                "B"
+              ],
+              "time": 0.0
+            },
+            {
+              "kind": "unitary",
+              "label": "write B into M",
+              "slots": [
+                "B",
+                "M"
+              ],
+              "time": 0.0
+            },
+            {
+              "kind": "record",
+              "slot": "M",
+              "outcome": 0,
+              "predicted_probability": 0.4999999999999999,
+              "branch_probability": 0.4999999999999999,
+              "time": 0.0,
+              "visibility": "local M record; not yet delivered to A"
+            },
+            {
+              "kind": "message_sent",
+              "time": 0.0,
+              "record_id": 0,
+              "path": [
+                "M",
+                "B",
+                "A"
+              ],
+              "earliest_delivery": 1.4809609793861218
+            },
+            {
+              "kind": "propagation",
+              "start": 0.0,
+              "end": 0.7404804896930609,
+              "active_edges": [
+                [
+                  "A",
+                  "B"
+                ],
+                [
+                  "B",
+                  "C"
+                ]
+              ],
+              "coupling": 1.0,
+              "solver": "exact finite matrix reference"
+            },
+            {
+              "kind": "message_hop",
+              "time": 0.7404804896930609,
+              "source": "M",
+              "target": "B",
+              "record_id": 0
+            },
+            {
+              "kind": "propagation",
+              "start": 0.7404804896930609,
+              "end": 1.4809609793861218,
+              "active_edges": [
+                [
+                  "A",
+                  "B"
+                ],
+                [
+                  "B",
+                  "C"
+                ]
+              ],
+              "coupling": 1.0,
+              "solver": "exact finite matrix reference"
+            },
+            {
+              "kind": "message_hop",
+              "time": 1.4809609793861218,
+              "source": "B",
+              "target": "A",
+              "record_id": 0
+            },
+            {
+              "kind": "decision",
+              "time": 1.4809609793861218,
+              "action": "keep",
+              "keep_prediction": 1.0,
+              "flip_prediction": 0.0,
+              "policy": "propagated conditional belief",
+              "record_id": 0
+            }
+          ],
+          "resources": {
+            "logical_quantum_slots": 4,
+            "initial_blank_record_slots": 1,
+            "unitary_calls": 3,
+            "two_slot_calls": 2,
+            "pointer_reads": 1,
+            "formal_record_bits": 1,
+            "feedback_message_bits": 1,
+            "resets": 0,
+            "propagation_intervals": 2,
+            "evolution_parameter": 1.4809609793861218,
+            "active_edge_parameter_time": 2.9619219587722436,
+            "classical_bit_hops": 2,
+            "message_in_flight": 0
+          }
+        },
+        {
+          "outcome": 1,
+          "weight": 0.4999999999999999,
+          "calibrated_success": 0.562499999999998,
+          "stale_success": 0.4374999999999991,
+          "conditional_best_success": 0.562499999999998,
+          "events": [
+            {
+              "kind": "unitary",
+              "label": "known A plus preparation",
+              "slots": [
+                "A"
+              ],
+              "time": 0.0
+            },
+            {
+              "kind": "unitary",
+              "label": "known Bell preparation",
+              "slots": [
+                "A",
+                "B"
+              ],
+              "time": 0.0
+            },
+            {
+              "kind": "unitary",
+              "label": "write B into M",
+              "slots": [
+                "B",
+                "M"
+              ],
+              "time": 0.0
+            },
+            {
+              "kind": "record",
+              "slot": "M",
+              "outcome": 1,
+              "predicted_probability": 0.4999999999999999,
+              "branch_probability": 0.4999999999999999,
+              "time": 0.0,
+              "visibility": "local M record; not yet delivered to A"
+            },
+            {
+              "kind": "message_sent",
+              "time": 0.0,
+              "record_id": 0,
+              "path": [
+                "M",
+                "B",
+                "A"
+              ],
+              "earliest_delivery": 1.4809609793861218
+            },
+            {
+              "kind": "propagation",
+              "start": 0.0,
+              "end": 0.7404804896930609,
+              "active_edges": [
+                [
+                  "A",
+                  "B"
+                ],
+                [
+                  "B",
+                  "C"
+                ]
+              ],
+              "coupling": 1.0,
+              "solver": "exact finite matrix reference"
+            },
+            {
+              "kind": "message_hop",
+              "time": 0.7404804896930609,
+              "source": "M",
+              "target": "B",
+              "record_id": 0
+            },
+            {
+              "kind": "propagation",
+              "start": 0.7404804896930609,
+              "end": 1.4809609793861218,
+              "active_edges": [
+                [
+                  "A",
+                  "B"
+                ],
+                [
+                  "B",
+                  "C"
+                ]
+              ],
+              "coupling": 1.0,
+              "solver": "exact finite matrix reference"
+            },
+            {
+              "kind": "message_hop",
+              "time": 1.4809609793861218,
+              "source": "B",
+              "target": "A",
+              "record_id": 0
+            },
+            {
+              "kind": "decision",
+              "time": 1.4809609793861218,
+              "action": "keep",
+              "keep_prediction": 0.562499999999998,
+              "flip_prediction": 0.437500000000002,
+              "policy": "propagated conditional belief",
+              "record_id": 0
+            }
+          ],
+          "resources": {
+            "logical_quantum_slots": 4,
+            "initial_blank_record_slots": 1,
+            "unitary_calls": 3,
+            "two_slot_calls": 2,
+            "pointer_reads": 1,
+            "formal_record_bits": 1,
+            "feedback_message_bits": 1,
+            "resets": 0,
+            "propagation_intervals": 2,
+            "evolution_parameter": 1.4809609793861218,
+            "active_edge_parameter_time": 2.9619219587722436,
+            "classical_bit_hops": 2,
+            "message_in_flight": 0
+          }
+        }
+      ],
+      "calibrated_average_success": 0.7812499999999989,
+      "stale_average_success": 0.7187499999999993,
+      "best_no_message_action_at_same_parameter": 0.7812499999999998
+    }
+  ],
+  "feedback_approximation": [
+    {
+      "arrival_parameter": 1.1107207345395915,
+      "steps": 32,
+      "bond_pulses": 64,
+      "analytic_operator_bound": 0.019276571095877652,
+      "branches": [
+        {
+          "outcome": 0,
+          "exact_keep_prediction": 1.0,
+          "approximate_keep_prediction": 1.0,
+          "decision_margin": 0.5,
+          "same_action": true,
+          "action_equality_certified_by_bound": true
+        },
+        {
+          "outcome": 1,
+          "exact_keep_prediction": 0.24999999999999917,
+          "approximate_keep_prediction": 0.2377857783537001,
+          "decision_margin": 0.25000000000000083,
+          "same_action": true,
+          "action_equality_certified_by_bound": true
+        }
+      ],
+      "scope": "fixed initial record instrument and no additional quantum intervention during delivery"
+    },
+    {
+      "arrival_parameter": 1.4809609793861218,
+      "steps": 32,
+      "bond_pulses": 64,
+      "analytic_operator_bound": 0.0342694597260047,
+      "branches": [
+        {
+          "outcome": 0,
+          "exact_keep_prediction": 1.0,
+          "approximate_keep_prediction": 1.0,
+          "decision_margin": 0.5,
+          "same_action": true,
+          "action_equality_certified_by_bound": true
+        },
+        {
+          "outcome": 1,
+          "exact_keep_prediction": 0.562499999999998,
+          "approximate_keep_prediction": 0.5410882620110525,
+          "decision_margin": 0.062499999999998,
+          "same_action": true,
+          "action_equality_certified_by_bound": true
+        }
+      ],
+      "scope": "fixed initial record instrument and no additional quantum intervention during delivery"
+    }
+  ],
+  "unreceived_record_not_used_by_A_controller": true,
+  "all_nonzero_measurement_branches_retained": true,
+  "classical_latency_derived_from_quantum_Hamiltonian": false,
+  "new_physical_light_cone_metric_or_gravity_derived": false,
+  "full_control_detector_clock_energy_costs_closed": false,
+  "measurements_or_feedback_conserve_drift_Hamiltonian_energy": "not assumed; only free drift conservation is checked",
+  "samples_collected": 0,
+  "automated_checks": {
+    "run": 14,
+    "failures": 0,
+    "errors": 0
+  }
+}

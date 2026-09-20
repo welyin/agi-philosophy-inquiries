@@ -1,0 +1,426 @@
+{
+  "model_version": "C2",
+  "route_round": "02",
+  "scope": "sufficiency only",
+  "simulation_parameters_not_given_to_estimator": {
+    "coupling": 1.0,
+    "hop_delay": 0.4,
+    "clock_rates": [
+      1.0,
+      1.2
+    ]
+  },
+  "declared_inversion_domain": {
+    "clock_phase_window": [
+      0.2,
+      1.3
+    ],
+    "transfer_phase_g_times_duration": [
+      0,
+      2.221441469079183
+    ]
+  },
+  "sampling": {
+    "probability_error": 0.01,
+    "risk": 0.01,
+    "per_group": 38005,
+    "groups": 4,
+    "total_fresh_trials": 152020,
+    "union_failure_bound": 0.009999024642989981
+  },
+  "simulated_count_seed": 20260917,
+  "outcome_order": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      1
+    ]
+  ],
+  "simulated_counts": {
+    "A_to_C": {
+      "X": [
+        23128,
+        2107,
+        6283,
+        597,
+        4243,
+        363,
+        1164,
+        120
+      ],
+      "Y": [
+        27270,
+        2523,
+        2690,
+        228,
+        4408,
+        421,
+        424,
+        41
+      ]
+    },
+    "C_to_A": {
+      "X": [
+        23383,
+        2158,
+        6202,
+        562,
+        4058,
+        394,
+        1156,
+        92
+      ],
+      "Y": [
+        27175,
+        2524,
+        2811,
+        255,
+        4388,
+        364,
+        445,
+        43
+      ]
+    }
+  },
+  "Born_probability_tables": {
+    "A_to_C": {
+      "X": [
+        0.6123620130980357,
+        0.055088466317213314,
+        0.16597193692252404,
+        0.01493093833580979,
+        0.10946222408394793,
+        0.00984728953703148,
+        0.029668165174301358,
+        0.0026689665311364886
+      ],
+      "Y": [
+        0.7165854580479958,
+        0.06446447203569775,
+        0.07122102757378847,
+        0.006407087792279243,
+        0.11793623706843191,
+        0.010609616998373598,
+        0.011721616588592658,
+        0.0010544838948404846
+      ]
+    },
+    "C_to_A": {
+      "X": [
+        0.6123620130980357,
+        0.05508846631721324,
+        0.16597193692252407,
+        0.014930938335809768,
+        0.10946222408394794,
+        0.009847289537031465,
+        0.029668165174301347,
+        0.002668966531136488
+      ],
+      "Y": [
+        0.716585458047996,
+        0.06446447203569765,
+        0.0712210275737885,
+        0.006407087792279234,
+        0.11793623706843194,
+        0.010609616998373584,
+        0.011721616588592632,
+        0.0010544838948404816
+      ]
+    }
+  },
+  "count_only_estimates": {
+    "A_to_C": {
+      "frequencies": [
+        0.8450203920536772,
+        0.8607025391395869,
+        0.7851861597158268,
+        0.9109853966583344,
+        0.08419944744112617
+      ],
+      "intervals": {
+        "phase_A": [
+          0.7792798996339233,
+          0.8359162715509547
+        ],
+        "phase_C": [
+          0.9362170742694376,
+          0.9918444087375038
+        ],
+        "transfer_probability": [
+          0.07419944744112618,
+          0.09419944744112617
+        ],
+        "g_times_arrival_duration": [
+          0.7765375747616433,
+          0.8303765216220641
+        ],
+        "g_over_omega_A": [
+          0.9289657363899132,
+          1.0655690234178299
+        ],
+        "g_over_omega_C": [
+          0.7829227728874132,
+          0.8869487049998906
+        ],
+        "omega_C_over_omega_A": [
+          1.1199890540859856,
+          1.2727704245976772
+        ],
+        "omega_A_times_hop_delay": [
+          0.38963994981696165,
+          0.41795813577547736
+        ]
+      },
+      "feedback_action_certificate": "flip_after_record_one"
+    },
+    "C_to_A": {
+      "frequencies": [
+        0.850019734245494,
+        0.8621234048151559,
+        0.7891856334692804,
+        0.9064859886856993,
+        0.08409419813182475
+      ],
+      "intervals": {
+        "phase_A": [
+          0.774310496589179,
+          0.8304480246470612
+        ],
+        "phase_C": [
+          0.924362041266877,
+          0.9802575803845796
+        ],
+        "transfer_probability": [
+          0.07409419813182476,
+          0.09409419813182475
+        ],
+        "g_times_arrival_duration": [
+          0.7762305817778854,
+          0.8301135546136212
+        ],
+        "g_over_omega_A": [
+          0.9347130208513433,
+          1.072068063483904
+        ],
+        "g_over_omega_C": [
+          0.791863890992152,
+          0.8980394234664977
+        ],
+        "omega_C_over_omega_A": [
+          1.1130883737844148,
+          1.2659748055884468
+        ],
+        "omega_A_times_hop_delay": [
+          0.3871552482945895,
+          0.4152240123235306
+        ]
+      },
+      "feedback_action_certificate": "flip_after_record_one"
+    }
+  },
+  "directional_interval_compatibility": {
+    "g_over_omega_A": true,
+    "omega_C_over_omega_A": true,
+    "omega_A_times_hop_delay": true
+  },
+  "resource_per_trial": {
+    "logical_quantum_slots": 6,
+    "new_clock_slots": 2,
+    "initial_pure_slot_preparations": 6,
+    "clock_plus_preparations": 2,
+    "start_record_slots": 1,
+    "start_record_reads": 1,
+    "endpoint_clock_reads": 2,
+    "endpoint_data_reads": 1,
+    "formal_outcome_bits": 4,
+    "marker_bit_hops": 3,
+    "audit_return_bit_hops": 3,
+    "total_classical_bit_hops": 6,
+    "classical_marker_fanouts": 1,
+    "readout_parameter": 0.8,
+    "latest_audit_receipt_parameter": 1.6,
+    "active_data_edge_parameter_time_until_archive": 3.2,
+    "active_clock_parameter_time_sum_until_archive": 3.2,
+    "resets": 0,
+    "whole_complex_dimension": 64,
+    "whole_real_encoding_dimension": 128
+  },
+  "batch_resource_counts": {
+    "fresh_trial_kits": 152020,
+    "pure_slot_initializations": 912120,
+    "clock_reads": 304040,
+    "formal_outcome_bits_if_fully_archived": 608080,
+    "classical_bit_hops": 912120,
+    "histogram_storage_bits_sufficient_excluding_metadata": 512,
+    "serial_parameter_duration_excluding_preparation": 243232.0
+  },
+  "timed_event_examples": {
+    "A_to_C": [
+      {
+        "kind": "synchronized_preparation",
+        "time": 0.0,
+        "scope": "declared common initial phase and data launch"
+      },
+      {
+        "kind": "marker_at_B_and_fanout",
+        "time": 0.4
+      },
+      {
+        "kind": "marker_at_A_and_C",
+        "time": 0.8
+      },
+      {
+        "kind": "local_clock_and_data_readouts",
+        "time": 0.8
+      },
+      {
+        "kind": "audit_record_at_B",
+        "source": "A",
+        "label": "clock_A",
+        "sent_at": 0.8,
+        "time": 1.2000000000000002
+      },
+      {
+        "kind": "audit_record_at_B",
+        "source": "C",
+        "label": "clock_C",
+        "sent_at": 0.8,
+        "time": 1.2000000000000002
+      },
+      {
+        "kind": "audit_record_at_B",
+        "source": "C",
+        "label": "receiver_data",
+        "sent_at": 1.2000000000000002,
+        "time": 1.6
+      }
+    ],
+    "C_to_A": [
+      {
+        "kind": "synchronized_preparation",
+        "time": 0.0,
+        "scope": "declared common initial phase and data launch"
+      },
+      {
+        "kind": "marker_at_B_and_fanout",
+        "time": 0.4
+      },
+      {
+        "kind": "marker_at_A_and_C",
+        "time": 0.8
+      },
+      {
+        "kind": "local_clock_and_data_readouts",
+        "time": 0.8
+      },
+      {
+        "kind": "audit_record_at_B",
+        "source": "A",
+        "label": "clock_A",
+        "sent_at": 0.8,
+        "time": 1.2000000000000002
+      },
+      {
+        "kind": "audit_record_at_B",
+        "source": "C",
+        "label": "clock_C",
+        "sent_at": 0.8,
+        "time": 1.2000000000000002
+      },
+      {
+        "kind": "audit_record_at_B",
+        "source": "A",
+        "label": "receiver_data",
+        "sent_at": 1.2000000000000002,
+        "time": 1.6
+      }
+    ]
+  },
+  "subsequent_feedback": {
+    "status": "flip_after_record_one",
+    "task_executed": true,
+    "branches": [
+      {
+        "outcome": 0,
+        "weight": 0.4999999999999999,
+        "action": "keep",
+        "decision_parameter": 0.8,
+        "success_probability": 1.0,
+        "global_decision_parameter": 243233.59999999998
+      },
+      {
+        "outcome": 1,
+        "weight": 0.4999999999999999,
+        "action": "flip",
+        "decision_parameter": 0.8,
+        "success_probability": 0.9174643392788063,
+        "global_decision_parameter": 243233.59999999998
+      }
+    ],
+    "average_success_probability": 0.9587321696394029,
+    "policy_inputs": "delivered two-bit validity/action code and delivered task record only; no continuous parameter estimate transmitted",
+    "stable_coupling_and_delay_between_calibration_and_task_assumed": true,
+    "additional_task_resources": {
+      "fresh_logical_slots": 4,
+      "M_readouts": 1,
+      "task_record_bit_hops": 2,
+      "calibration_action_code_bits": 2,
+      "action_code_bit_hops_B_to_A": 2,
+      "formal_record_bits": 1,
+      "feedback_message_bits": 1,
+      "resets": 0
+    },
+    "action_code_sent_at_B": 243232.0,
+    "action_code_received_at_A": 243232.8,
+    "new_task_epoch": 243232.8
+  },
+  "calibration_finished_before_the_fresh_feedback_source_is_prepared": true,
+  "clock_preparation_synchrony_rate_stability_and_ideal_readouts_are_inputs": true,
+  "clocks_generate_the_control_schedule_autonomously": false,
+  "all_nonzero_outcomes_in_probability_and_count_tables": true,
+  "saved_histograms_are_not_full_per_trial_raw_archives": true,
+  "experimental_samples_collected": 0,
+  "simulated_fresh_trials": 152020,
+  "physical_SI_clock_metric_or_gravity_derived": false,
+  "necessity_arguments_performed": false,
+  "automated_checks": {
+    "run": 13,
+    "failures": 0,
+    "errors": 0
+  }
+}

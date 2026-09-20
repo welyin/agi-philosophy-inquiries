@@ -1,0 +1,97 @@
+{
+  "date": "2026-09-17",
+  "route_round": "02",
+  "model_version": "C2",
+  "scope": "sufficiency construction and consistency checks only; no necessity argument",
+  "runtime": {
+    "python": "3.14.6",
+    "numpy": "2.5.1",
+    "document_converter": "existing pypandoc bundled Pandoc",
+    "new_dependencies_installed": false
+  },
+  "result_generation": {
+    "command": "python -B -X utf8 research_physics_construction/clock_calibration.py --write-results",
+    "tests": 13,
+    "failures": 0,
+    "errors": 0
+  },
+  "route_regression": {
+    "command": "python -B -X utf8 -m unittest discover -s research_physics_construction -p \"*.py\"",
+    "tests": 43,
+    "new_clock_tests": 13,
+    "previous_route_and_inheritance_tests": 30,
+    "failures": 0,
+    "errors": 0,
+    "seconds_reported": 1.300,
+    "legacy_necessity_test_suites_rerun": false
+  },
+  "inheritance": {
+    "command": "python -B -X utf8 research_physics_construction/inheritance.py --verify",
+    "numbered_notes": 224,
+    "source_artifacts": 705,
+    "tests": 5,
+    "failures": 0,
+    "errors": 0,
+    "scientific_truth_verified_by_hash": false
+  },
+  "document_validation": {
+    "method": "pypandoc.convert_file to html5 with --mathml --fail-if-warnings",
+    "mathml_counts": {
+      "C2_CONTRACT.md": 10,
+      "research_note_02.md": 29,
+      "README.md": 0,
+      "RESEARCH_STATE.md": 0,
+      "repository_README.md": 0
+    },
+    "local_links_checked": true,
+    "forbidden_control_characters_checked": true,
+    "editor_diagnostics_clear": true
+  },
+  "analytic_sufficiency_results": [
+    "six-slot joint generator factors into the unchanged C1 data process and two declared clocks",
+    "clock X/Y probabilities and first-lobe transfer give relative parameter inversion",
+    "ten empirical means have simultaneous failure bound 20*exp(-2*N*epsilon^2)",
+    "positive-quadrant monotonic interval propagation covers clock phases and parameter ratios on the common good event",
+    "a transfer interval strictly below one-half suffices to fix the subsequent Bell-task feedback action"
+  ],
+  "finite_implementation_checks": [
+    "64-dimensional complex process and 128-dimensional global-J real encoding",
+    "all eight final measurement outcomes and postmeasurement quantum branches",
+    "marker arrival at two hops and final audit collection after four hop intervals",
+    "count-only estimator with no simulator parameters as estimator inputs",
+    "all 32 probability-error-box corners for interval calculation",
+    "independent directional intervals and consistency with the declared simulation values",
+    "action-code delivery before fresh task preparation and task-record delivery before feedback",
+    "single-use clocks, explicit fresh preparation budget, and rejection outside the simulation contract"
+  ],
+  "reported_simulation": {
+    "seed": 20260917,
+    "coupling": 1.0,
+    "hop_delay": 0.4,
+    "clock_rates": [1.0, 1.2],
+    "clock_phase_window": [0.2, 1.3],
+    "probability_tolerance": 0.01,
+    "risk_budget": 0.01,
+    "trials_per_group": 38005,
+    "groups": 4,
+    "fresh_trials": 152020,
+    "failure_upper_bound": 0.009999024642989981,
+    "subsequent_task_success_probability": 0.9587321696394029,
+    "sample_storage": "aggregate multinomial counts, not a full per-trial raw archive",
+    "empirical_laboratory_samples": 0
+  },
+  "limits": {
+    "synchronized_preparation_and_stable_clock_dynamics_are_inputs": true,
+    "finite_confidence_is_not_a_per_history_posterior": true,
+    "interval_endpoints_are_float_evaluations_not_directed_rounding_certificates": true,
+    "sample_budget_claimed_minimal": false,
+    "clock_or_transfer_law_claimed_unique": false,
+    "autonomous_clock_trigger_and_energy_recycling_complete": false,
+    "physical_metric_or_gravity_derived": false,
+    "C0_C1_numerical_code_and_results_modified": false,
+    "legacy_numbered_notes_code_results_modified": false,
+    "git_operations_performed": false,
+    "new_background_tasks_created": false,
+    "necessity_proofs_started": false
+  }
+}

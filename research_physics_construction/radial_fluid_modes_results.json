@@ -1,0 +1,529 @@
+{
+  "model_version": "C11",
+  "route_round": "11",
+  "research_scope": "sufficiency only",
+  "equilibrium_inputs_unchanged_from_C10": {
+    "surface_density": 0.01,
+    "sound_speed_squared": 0.3333333333333333,
+    "central_pressure": 0.0005,
+    "G": 0.1
+  },
+  "radial_equation": "(P zeta')'+(Q+omega^2 W)zeta=0, zeta=r^2 exp(-nu) xi, center zeta~r^3, fluid-side surface zeta'=0",
+  "analytic_stability_bound": {
+    "radius_squared_upper": 23.8732414637843,
+    "compactness_upper": 0.22999999999999998,
+    "lapse_lower": 0.838397647578381,
+    "weighted_kinetic_lower": 0.04572693527184958,
+    "potential_over_inertia_upper": 0.029481905084455404,
+    "omega_squared_lower": 0.016245030187394177,
+    "scope": "analytic conditional bound for any regular equilibrium with the declared parameters; floating evaluation is not outward rounding"
+  },
+  "exact_parameter_stability_certificate": {
+    "exact_lower_fraction": "4897743463/324000000000",
+    "decimal_display_only": 0.015116492169753087,
+    "certified_omega_squared_strictly_greater_than": "3/200",
+    "method": "exact Fraction arithmetic, using 157/50 < pi < 22/7 and the derived parameter-only energy inequalities",
+    "scope": "any regular C10 equilibrium with exactly G=1/10, rho_s=1/100, p_c=1/2000, sound_squared=1/3; radial linear problem only"
+  },
+  "modes": [
+    {
+      "omega_squared": 0.1256416728223153,
+      "omega": 0.3544596913928512,
+      "node_count": 0,
+      "surface_pressure_residual": 1.6601845766184287e-19,
+      "bracket": [
+        0.0,
+        0.3438241690847423
+      ],
+      "relative_tolerance": 1e-10,
+      "start_fraction": 1e-05
+    },
+    {
+      "omega_squared": 0.562006665346694,
+      "omega": 0.7496710380871693,
+      "node_count": 1,
+      "surface_pressure_residual": -8.11118750290718e-18,
+      "bracket": [
+        0.3438241690847423,
+        0.925718355421085
+      ],
+      "relative_tolerance": 1e-10,
+      "start_fraction": 1e-05
+    },
+    {
+      "omega_squared": 1.2894300454946899,
+      "omega": 1.135530732959126,
+      "node_count": 2,
+      "surface_pressure_residual": -3.279711571768651e-18,
+      "bracket": [
+        0.925718355421085,
+        1.7986358712291852
+      ],
+      "relative_tolerance": 1e-10,
+      "start_fraction": 1e-05
+    }
+  ],
+  "ritz_refinement": [
+    {
+      "basis_size": 4,
+      "first_three_omega_squared": [
+        0.1256416746319597,
+        0.5629949330697287,
+        1.5211118067818243
+      ]
+    },
+    {
+      "basis_size": 6,
+      "first_three_omega_squared": [
+        0.1256416728223522,
+        0.5620066959660079,
+        1.290085448226844
+      ]
+    },
+    {
+      "basis_size": 8,
+      "first_three_omega_squared": [
+        0.12564167282235222,
+        0.5620066653471184,
+        1.2894301085437767
+      ]
+    },
+    {
+      "basis_size": 12,
+      "first_three_omega_squared": [
+        0.12564167282235772,
+        0.5620066653471268,
+        1.2894300454950431
+      ]
+    }
+  ],
+  "fundamental_refinement": {
+    "reference_omega_squared": 0.12564167279729344,
+    "absolute_omega_squared_difference": 2.502187346209439e-11,
+    "probe_record_TV_difference": 1.2148706086262395e-11
+  },
+  "fundamental_profile": [
+    {
+      "radius": 0.20674321553714245,
+      "radius_fraction": 0.05,
+      "delta_nu": 0.4193111558762836,
+      "fractional_displacement": 3.086675582730468,
+      "displacement": 0.63814923529368,
+      "lagrangian_pressure": -0.036963669316388156,
+      "eulerian_pressure": -0.03695505304299993,
+      "eulerian_density": -0.1108651591289998,
+      "delta_mass": -0.00411124862077108,
+      "delta_lambda": -0.0019893963246722882,
+      "delta_nu_first": -0.019231946974105543,
+      "zeta": 0.03098715350647591,
+      "zeta_first": 0.44892797695237807
+    },
+    {
+      "radius": 0.8269728621485698,
+      "radius_fraction": 0.2,
+      "delta_nu": 0.3901598889258388,
+      "fractional_displacement": 2.9821606962276097,
+      "displacement": 2.4661659663463182,
+      "lagrangian_pressure": -0.03460102697524748,
+      "eulerian_pressure": -0.034468966630844006,
+      "eulerian_density": -0.10340689989253202,
+      "delta_mass": -0.25244336047353017,
+      "delta_lambda": -0.030727947549367713,
+      "delta_nu_first": -0.0734904851688719,
+      "zeta": 1.9126885532814684,
+      "zeta_first": 6.759007523439103
+    },
+    {
+      "radius": 2.0674321553714243,
+      "radius_fraction": 0.5,
+      "delta_nu": 0.25018807028703316,
+      "fractional_displacement": 2.4381232627773874,
+      "displacement": 5.040654432225064,
+      "lagrangian_pressure": -0.023080929860136563,
+      "eulerian_pressure": -0.02243753225154329,
+      "eulerian_density": -0.06731259675462987,
+      "delta_mass": -3.101908720816468,
+      "delta_lambda": -0.15633671481111855,
+      "delta_nu_first": -0.13984292517356067,
+      "zeta": 24.19741682186111,
+      "zeta_first": 29.012619698145997
+    },
+    {
+      "radius": 3.307891448594279,
+      "radius_fraction": 0.8,
+      "delta_nu": 0.0792797517480593,
+      "fractional_displacement": 1.5994380024388892,
+      "displacement": 5.290767290824317,
+      "lagrangian_pressure": -0.008150124605161546,
+      "eulerian_pressure": -0.00716048771279765,
+      "eulerian_density": -0.021481463138392953,
+      "delta_mass": -7.761528838253627,
+      "delta_lambda": -0.260653822794475,
+      "delta_nu_first": -0.12100258850954432,
+      "zeta": 63.87079859942627,
+      "zeta_first": 27.66641817234174
+    },
+    {
+      "radius": 4.134864310742849,
+      "radius_fraction": 1.0,
+      "delta_nu": 0.0,
+      "fractional_displacement": 1.0,
+      "displacement": 4.134864310742849,
+      "lagrangian_pressure": 5.136154546440902e-19,
+      "eulerian_pressure": 0.0008921562260123966,
+      "eulerian_density": 0.0026764686780371898,
+      "delta_mass": -8.883695233547098,
+      "delta_lambda": -0.25318422200382823,
+      "delta_nu_first": -0.0666943796163329,
+      "zeta": 76.74249446857596,
+      "zeta_first": -2.859788971884153e-15
+    }
+  ],
+  "linear_conservation": {
+    "particle_number_bulk_variation": -9.64374627382951,
+    "particle_number_moving_surface_term": 9.643746273625341,
+    "particle_number_total_variation": -2.041691260501466e-10,
+    "mass_bulk_variation": -8.883695233764106,
+    "mass_moving_surface_term": 8.883695233547098,
+    "ADM_mass_total_variation": -2.170086332853316e-10,
+    "surface_mass_constraint_total": 0.0,
+    "modal_inertia": 7.958186030572986,
+    "modal_restoring_energy_coefficient": 0.9998798055125603,
+    "rayleigh_omega_squared": 0.12564167282233904,
+    "quadrature_order": 256,
+    "normalization": "surface displacement per unit mode amplitude equals R"
+  },
+  "reconstructed_constraint_diagnostics": {
+    "maximum_sampled_linear_Euler_residual": 1.7589402157014433e-13,
+    "maximum_sampled_linear_mass_constraint_residual": 1.0770762060019479e-09,
+    "method": "five-point differentiation of reconstructed shooting fields; numerical diagnostic, not a global error certificate"
+  },
+  "mode_amplitude_surface_fraction": 0.001,
+  "quadratic_mode_energy_in_declared_SL_normalization": 4.999399027561858e-07,
+  "probe_task": {
+    "duration": 2.0,
+    "proper_mass": 0.35,
+    "joint_record_probabilities": [
+      [
+        [
+          0.21877716534459218,
+          0.01716033494684008
+        ],
+        [
+          0.4377587902340599,
+          0.03433670719020346
+        ]
+      ],
+      [
+        [
+          0.09021572912561732,
+          0.007076296682199705
+        ],
+        [
+          0.1805157699155192,
+          0.01415920656096756
+        ]
+      ]
+    ],
+    "static_reference_joint_record_probabilities": [
+      [
+        [
+          0.21882519319916574,
+          0.017113937546943393
+        ],
+        [
+          0.4378548908279335,
+          0.034243869029434694
+        ]
+      ],
+      [
+        [
+          0.0902333983017159,
+          0.007056997051425087
+        ],
+        [
+          0.18055112478055368,
+          0.01412058926282973
+        ]
+      ]
+    ],
+    "record_TV_change_from_static": 0.0001971524895790582,
+    "clock_A_X_plus_probability": 0.33322952609924933,
+    "clock_C_Y_plus_probability": 0.9272674546197887,
+    "clock_lapse_fractional_derivatives": [
+      0.0,
+      0.39089599576207656
+    ],
+    "clock_phases": [
+      1.910853453221146,
+      2.116937923627517
+    ],
+    "data_energy_initial": 0.31869341472861223,
+    "data_energy_final": 0.3186829435044314,
+    "integrated_data_work": -1.0471224180872263e-05,
+    "unitarity_residual": 4.4562316601563825e-13
+  },
+  "resources": {
+    "chain_qubits": 32,
+    "clock_qubits": 2,
+    "raw_bits": 34,
+    "independent_fair_output_bits": 12,
+    "threshold_table_bits": 416,
+    "bit_hops": 272,
+    "independently_allocated_hop_interval": 1.0,
+    "all_records_ready_at": 274.0,
+    "transport_timing_is_declared_not_derived_from_the_dynamic_metric": true,
+    "resets": 0
+  },
+  "record_schedule": [
+    {
+      "kind": "position",
+      "source_site": 0,
+      "hops": 0,
+      "read_at": 2.0,
+      "received_at": 2.0
+    },
+    {
+      "kind": "position",
+      "source_site": 1,
+      "hops": 1,
+      "read_at": 2.0,
+      "received_at": 3.0
+    },
+    {
+      "kind": "position",
+      "source_site": 2,
+      "hops": 2,
+      "read_at": 2.0,
+      "received_at": 5.0
+    },
+    {
+      "kind": "position",
+      "source_site": 3,
+      "hops": 3,
+      "read_at": 2.0,
+      "received_at": 8.0
+    },
+    {
+      "kind": "position",
+      "source_site": 4,
+      "hops": 4,
+      "read_at": 2.0,
+      "received_at": 12.0
+    },
+    {
+      "kind": "position",
+      "source_site": 5,
+      "hops": 5,
+      "read_at": 2.0,
+      "received_at": 17.0
+    },
+    {
+      "kind": "position",
+      "source_site": 6,
+      "hops": 6,
+      "read_at": 2.0,
+      "received_at": 23.0
+    },
+    {
+      "kind": "position",
+      "source_site": 7,
+      "hops": 7,
+      "read_at": 2.0,
+      "received_at": 30.0
+    },
+    {
+      "kind": "position",
+      "source_site": 8,
+      "hops": 8,
+      "read_at": 2.0,
+      "received_at": 38.0
+    },
+    {
+      "kind": "position",
+      "source_site": 9,
+      "hops": 9,
+      "read_at": 2.0,
+      "received_at": 47.0
+    },
+    {
+      "kind": "position",
+      "source_site": 10,
+      "hops": 10,
+      "read_at": 2.0,
+      "received_at": 57.0
+    },
+    {
+      "kind": "position",
+      "source_site": 11,
+      "hops": 11,
+      "read_at": 2.0,
+      "received_at": 68.0
+    },
+    {
+      "kind": "position",
+      "source_site": 12,
+      "hops": 12,
+      "read_at": 2.0,
+      "received_at": 80.0
+    },
+    {
+      "kind": "position",
+      "source_site": 13,
+      "hops": 13,
+      "read_at": 2.0,
+      "received_at": 93.0
+    },
+    {
+      "kind": "position",
+      "source_site": 14,
+      "hops": 14,
+      "read_at": 2.0,
+      "received_at": 107.0
+    },
+    {
+      "kind": "position",
+      "source_site": 15,
+      "hops": 15,
+      "read_at": 2.0,
+      "received_at": 122.0
+    },
+    {
+      "kind": "position",
+      "source_site": 16,
+      "hops": 16,
+      "read_at": 2.0,
+      "received_at": 138.0
+    },
+    {
+      "kind": "position",
+      "source_site": 17,
+      "hops": 15,
+      "read_at": 2.0,
+      "received_at": 153.0
+    },
+    {
+      "kind": "position",
+      "source_site": 18,
+      "hops": 14,
+      "read_at": 2.0,
+      "received_at": 167.0
+    },
+    {
+      "kind": "position",
+      "source_site": 19,
+      "hops": 13,
+      "read_at": 2.0,
+      "received_at": 180.0
+    },
+    {
+      "kind": "position",
+      "source_site": 20,
+      "hops": 12,
+      "read_at": 2.0,
+      "received_at": 192.0
+    },
+    {
+      "kind": "position",
+      "source_site": 21,
+      "hops": 11,
+      "read_at": 2.0,
+      "received_at": 203.0
+    },
+    {
+      "kind": "position",
+      "source_site": 22,
+      "hops": 10,
+      "read_at": 2.0,
+      "received_at": 213.0
+    },
+    {
+      "kind": "position",
+      "source_site": 23,
+      "hops": 9,
+      "read_at": 2.0,
+      "received_at": 222.0
+    },
+    {
+      "kind": "position",
+      "source_site": 24,
+      "hops": 8,
+      "read_at": 2.0,
+      "received_at": 230.0
+    },
+    {
+      "kind": "position",
+      "source_site": 25,
+      "hops": 7,
+      "read_at": 2.0,
+      "received_at": 237.0
+    },
+    {
+      "kind": "position",
+      "source_site": 26,
+      "hops": 6,
+      "read_at": 2.0,
+      "received_at": 243.0
+    },
+    {
+      "kind": "position",
+      "source_site": 27,
+      "hops": 5,
+      "read_at": 2.0,
+      "received_at": 248.0
+    },
+    {
+      "kind": "position",
+      "source_site": 28,
+      "hops": 4,
+      "read_at": 2.0,
+      "received_at": 252.0
+    },
+    {
+      "kind": "position",
+      "source_site": 29,
+      "hops": 3,
+      "read_at": 2.0,
+      "received_at": 255.0
+    },
+    {
+      "kind": "position",
+      "source_site": 30,
+      "hops": 2,
+      "read_at": 2.0,
+      "received_at": 257.0
+    },
+    {
+      "kind": "position",
+      "source_site": 31,
+      "hops": 1,
+      "read_at": 2.0,
+      "received_at": 258.0
+    },
+    {
+      "kind": "clock",
+      "source_site": 0,
+      "hops": 0,
+      "read_at": 2.0,
+      "received_at": 258.0
+    },
+    {
+      "kind": "clock",
+      "source_site": 16,
+      "hops": 16,
+      "read_at": 2.0,
+      "received_at": 274.0
+    }
+  ],
+  "limits": [
+    "same adopted Einstein-fluid/EOS contract; perturbation is radial, adiabatic and linear only",
+    "parameter-only positive bound is a sufficient radial energy result conditional on a regular C10 equilibrium; no nonradial or nonlinear stability claim",
+    "Ritz positive eigenvalues alone are upper estimates, not the stability proof; shooting and node counts are numerical diagnostics",
+    "all moving-surface particle and ADM mass terms are retained; exterior first-order mass and lapse variation vanish",
+    "probe H(t)=H0+amplitude*cos(omega*t)*H1 defines a finite linearized metric-coefficient model; no bound on omitted amplitude-squared gravity effects",
+    "sampled sites and bonds must not be crossed by the moving fluid boundary during the protocol",
+    "probe energy changes through explicit work, but mode depletion and quantum-probe backreaction on the fluid are not included",
+    "one-unit classical transport slots are a supplied service, not a solved null-signal propagation model in the time-dependent spacetime",
+    "no interval-certified numerics, experimental samples, full quantum source, or derivation of the gravity action from cognition"
+  ]
+}

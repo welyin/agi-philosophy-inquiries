@@ -1,8 +1,18 @@
 # 从认知闭环到物理：研究索引
 
-更新：2026-09-17，已推进至第二百零九轮。
+更新：2026-09-17，已推进至第二百一十六轮。
 
-**当前主候选：整体复结构，局部允许实接口。** 用户确认不再要求每个局部最终复化；量子力学不完备另列为未证假设。[208轮](research_note_208.md)给出双主动实控制生成SU(d)的条件性闭包；[209轮](research_note_209.md)求出六态三读取表的二维实无共享资源最优概率误差v/6。一位共享随机变量可匹配该表，内部刷新可匹配全部有限Pauli读取历史；同一编码却不能覆盖完整态球。下一步须从认知功能独立确定完整准备、控制及组合范围，不再重复有限三方向任务。见[当前状态](RESEARCH_STATE.md)。207轮成本任务保留为支线。
+> **路线转接（2026-09-17）**：用户已决定以现有成果建立独立的[认知物理构造路线](../research_physics_construction/README.md)。本目录216轮及前序信息几何8轮已纳入[完整继承起点](../research_physics_construction/FOUNDATIONS.md)，原笔记、代码、结果和证书保留。此处以下内容作为旧路线历史入口，不再自动推进其公理追问；下一任务以[新路线当前状态](../research_physics_construction/RESEARCH_STATE.md)为准，不接着使用旧编号217。
+
+**最新第216轮**：[统一实辅助与归还合同](research_note_216.md)证明同一个实辅助可为全部实数据问题提供连续保持答案的联合动作，辅助边缘I/2恢复但关联保留。数据问题在这些导数下的最小闭包恰为共同J复等价接口；这仍是给定控制后的条件结论。任意有限辅助若对全部输入精确原态、无关联归还，数据通道只能实正交，普遍连续的自身问题保持族只能为恒等。14项检查通过；下一步审计认知对关系闭包的实际调用权限，不自动要求无关联归还。
+
+**保留的第214—215轮条件结论**：[214轮](research_note_214.md)给出Jordan—Lie相容与有序乘积结合律，经典对角模型仍通过；[215轮](research_note_215.md)给出同载体全实谱障碍。216轮已明确辅助例外与强归还限制，完整权限及认知来源仍待证明。
+
+**保留的第212—213轮范围结论**：[212轮](research_note_212.md)说明参考内部化不等于参考独立；[213轮](research_note_213.md)的两复量子位SO(15)负谱反例说明，211轮全SO(n)筛选只能条件性用于初级球接口，不能施加到所有复合整体。
+
+**保留的第210—211轮条件路线**：[210轮](research_note_210.md)从全实锐问题的全背景顺序无偏关系构造共同J；[211轮](research_note_211.md)证明非零线性、全SO(n)协变的问题—可逆生成元对应只允许n=3，并由该J实现。反射对称会消去非零解，额外参考允许四维反例。原认知为何要求这种对应、无背景对称及完整组合仍未证；其层级范围已由212—213轮进一步限定。
+
+**当前主候选：整体复结构，局部允许实接口。** 用户确认不再要求每个局部最终复化；量子力学不完备另列为未证假设。208轮双实控制闭包、209轮有限表v/6锐界及共享记忆对照均保留；有限Pauli任务已经有实实现，不能重复当作新的量子必要性证据。见[当前状态](RESEARCH_STATE.md)。207轮成本任务保留为支线。
 
 **当前实际规模成本研究（第207轮）**：用62/64轮实电路逐节点建立树形参考，证明旧任务关联的条件保护、路径相关乘积及全参考误差。星形的固定两方任务有线性建网操作上界；保持整体精度在该独立多数误差族内需要O(n log n)读取。复基线显式声明相位门，同初值和噪声下记录匹配；实际耗时、局部吞吐与完整回收仍待补。见[207](research_note_207.md)、[当前状态](RESEARCH_STATE.md)及[203轮全历史回顾](research_note_203.md)。[206轮历史成本假说](research_note_206.md)与[205轮资源闭合](research_note_205.md)继续约束后续研究。
 
@@ -247,10 +257,17 @@
 | **[207](research_note_207.md)** | 实电路递归建树，路径相关、全参考误差和实际操作规模 | 保护父参考Y对易接口；星形串行瓶颈、强共同任务及普遍下界未决 | [tree_reference_growth.py](tree_reference_growth.py) |
 | **[208](research_note_208.md)** | 两套主动实接口的非平凡相对取向生成SU(d)闭包，给精确交换子及Gram证书 | 同一复矩阵载体与取向为输入；被动换基底无增益，有限成本与认知来源未证 | [two_real_form_control.py](two_real_form_control.py) |
 | **[209](research_note_209.md)** | 三方向有限表的无共享二维实最优概率误差v/6；共享位、刷新仪器及完整态球反例 | 资源条件不能省略；有限Pauli过程不等于完整复结构，未排除较大实整体 | [real_interface_record_bound.py](real_interface_record_bound.py) |
+| **[210](research_note_210.md)** | 从全背景顺序无偏的三个实锐问题构造J、复二能级代数及全过程商接口 | 四方向及额外整体控制反例保留；问题数、权限完备性和认知来源未证 | [question_algebra_orientation.py](question_algebra_orientation.py) |
+| **[211](research_note_211.md)** | 非零线性SO(n)协变的问题—反对称生成元对应只允许n=3，唯一到叉乘比例，并由210轮J实现 | 反射与固定参考反例；对应的认知来源、全局权限和复合仍未证 | [question_action_covariance.py](question_action_covariance.py) |
+| **[212](research_note_212.md)** | 内部参考的SO(4)联合协变、保持问题的规则分类、实正交实现及关联反例 | 内部化不等于参考独立；连续参考资源、完整自主装置与整体必要性未证 | [internal_reference_covariance.py](internal_reference_covariance.py) |
+| **[213](research_note_213.md)** | 两复量子位的15维问题—动作对应及SO(15)负谱反例，区分真实酉对称与球对称 | 全SO(n)不能升级为各级整体公理；实际态锥、操作代数和认知来源仍待研究 | [composite_question_symmetry.py](composite_question_symmetry.py) |
+| **[214](research_note_214.md)** | Jordan—Lie相容与有序乘积结合律的等价、尺度和复合交叉项 | 经典零括号仍通过；形式乘法不等于物理过程，认知来源与完整重建未证 | [observable_action_compatibility.py](observable_action_compatibility.py) |
+| **[215](research_note_215.md)** | 完整实可观察量的连续保持答案对应只能为零；谱间隙界及实J、辅助例外 | 限同载体全域正交控制；全域对应的认知依据、完整组合及资源优势未证 | [real_spectral_action_bound.py](real_spectral_action_bound.py) |
+| **[216](research_note_216.md)** | 统一实辅助、基底协变分类、最小复等价闭包及任意有限辅助无关联归还定理 | 边缘恢复不等于乘积归还；控制与权限为前提，未证明整体必复或无关联归还必需 | [universal_real_helper_contract.py](universal_real_helper_contract.py) |
 
 ## 最新结论与下一步
 
-当前主线见[208](research_note_208.md)、[209](research_note_209.md)及[当前状态](RESEARCH_STATE.md)。下面保留此前各轮结论及当时缺口，不将旧实现优化自动恢复为下一任务。
+当前主线见[216](research_note_216.md)及[当前状态](RESEARCH_STATE.md)。下面保留此前各轮结论及当时缺口，不将旧实现优化自动恢复为下一任务。
 
 **连续端点已解决；独立实来源可高精度对齐，事后修正的能力与限制均已有明确证书：**
 

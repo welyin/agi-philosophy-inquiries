@@ -1,0 +1,181 @@
+{
+  "baseline": "C0",
+  "route_round": "00",
+  "kind": "conditional integration baseline, not a new physical derivation",
+  "slots": [
+    "A",
+    "B",
+    "C",
+    "M"
+  ],
+  "edges": [
+    [
+      "A",
+      "B"
+    ],
+    [
+      "B",
+      "C"
+    ],
+    [
+      "B",
+      "M"
+    ]
+  ],
+  "interference": [
+    {
+      "phase": 0.0,
+      "A_one_probability": 5.9779208748350985e-34
+    },
+    {
+      "phase": 1.5707963267948966,
+      "A_one_probability": 0.4999999999999999
+    },
+    {
+      "phase": 3.141592653589793,
+      "A_one_probability": 0.9999999999999997
+    }
+  ],
+  "bell_CHSH": 2.8284271247461894,
+  "feedback_branches": [
+    {
+      "weight": 0.4999999999999999,
+      "A_zero_probability": 1.0,
+      "history": [
+        {
+          "kind": "unitary",
+          "label": "prepare A plus",
+          "slots": [
+            "A"
+          ]
+        },
+        {
+          "kind": "unitary",
+          "label": "entangle A B",
+          "slots": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "kind": "unitary",
+          "label": "write B into M",
+          "slots": [
+            "B",
+            "M"
+          ]
+        },
+        {
+          "kind": "record",
+          "slot": "M",
+          "outcome": 0,
+          "predicted_probability": 0.4999999999999999,
+          "branch_probability": 0.4999999999999999
+        },
+        {
+          "kind": "decision",
+          "target": "A=0",
+          "keep_prediction": 1.0,
+          "flip_prediction": 0.0,
+          "action": "keep"
+        }
+      ],
+      "resources": {
+        "logical_quantum_slots": 4,
+        "initial_blank_record_slots": 1,
+        "unitary_calls": 3,
+        "two_slot_calls": 2,
+        "pointer_reads": 1,
+        "formal_record_bits": 1,
+        "feedback_message_bits": 1,
+        "resets": 0
+      }
+    },
+    {
+      "weight": 0.4999999999999999,
+      "A_zero_probability": 1.0,
+      "history": [
+        {
+          "kind": "unitary",
+          "label": "prepare A plus",
+          "slots": [
+            "A"
+          ]
+        },
+        {
+          "kind": "unitary",
+          "label": "entangle A B",
+          "slots": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "kind": "unitary",
+          "label": "write B into M",
+          "slots": [
+            "B",
+            "M"
+          ]
+        },
+        {
+          "kind": "record",
+          "slot": "M",
+          "outcome": 1,
+          "predicted_probability": 0.4999999999999999,
+          "branch_probability": 0.4999999999999999
+        },
+        {
+          "kind": "decision",
+          "target": "A=0",
+          "keep_prediction": 0.0,
+          "flip_prediction": 1.0,
+          "action": "flip"
+        },
+        {
+          "kind": "unitary",
+          "label": "feedback flip A",
+          "slots": [
+            "A"
+          ]
+        }
+      ],
+      "resources": {
+        "logical_quantum_slots": 4,
+        "initial_blank_record_slots": 1,
+        "unitary_calls": 4,
+        "two_slot_calls": 2,
+        "pointer_reads": 1,
+        "formal_record_bits": 1,
+        "feedback_message_bits": 1,
+        "resets": 0
+      }
+    }
+  ],
+  "all_feedback_branches_retained": true,
+  "signal": {
+    "input_zero_C_one": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "input_one_C_one": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "earliest_C_distinguishing_tick": 2,
+    "tick_interpretation": "declared gate-layer index, not derived physical time"
+  },
+  "real_equivalent_whole_dimension": 32,
+  "real_encoding_uses_one_global_reference_not_independent_local_encodings": true,
+  "classical_predictor_uses_known_preparation_model_not_unknown_state_self_readout": true,
+  "physical_energy_clock_calibration_and_reset_recycling_completed": false,
+  "full_SoCA_quantum_necessity_or_gravity_derived": false,
+  "samples_collected": 0,
+  "automated_checks": {
+    "run": 11,
+    "failures": 0,
+    "errors": 0
+  }
+}

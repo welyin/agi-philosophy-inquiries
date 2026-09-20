@@ -1,0 +1,79 @@
+{
+  "date": "2026-09-17",
+  "route_round": "01",
+  "model_version": "C1",
+  "research_scope": "sufficiency construction and validation only; necessity recorded without argument",
+  "runtime": {"python": "3.14.6", "numpy": "2.5.1", "new_dependencies_installed": false},
+  "result_generation": {
+    "command": "python -B -X utf8 research_physics_construction/propagation.py --write-results",
+    "tests": 14,
+    "failures": 0,
+    "errors": 0
+  },
+  "route_regression": {
+    "command": "python -B -X utf8 -m unittest discover -s research_physics_construction -p \"*.py\"",
+    "tests": 30,
+    "new_propagation_tests": 14,
+    "C0_and_inheritance_tests": 16,
+    "failures": 0,
+    "errors": 0,
+    "seconds_reported": 0.678,
+    "legacy_necessity_suites_rerun": false
+  },
+  "inheritance": {
+    "command": "python -B -X utf8 research_physics_construction/inheritance.py --verify",
+    "numbered_notes": 224,
+    "source_artifacts": 705,
+    "tests": 5,
+    "failures": 0,
+    "errors": 0,
+    "scientific_proofs_revalidated_by_hash": false
+  },
+  "document_validation": {
+    "method": "pypandoc.convert_file to html5 with --mathml --fail-if-warnings",
+    "mathml_counts": {
+      "research_note_01.md": 28,
+      "C1_CONTRACT.md": 4,
+      "MODEL_CONTRACT.md": 7,
+      "NECESSITY_BACKLOG.md": 0,
+      "FOUNDATIONS.md": 0,
+      "README.md": 0,
+      "RESEARCH_STATE.md": 0
+    },
+    "local_links_checked": true,
+    "forbidden_control_characters_checked": true,
+    "editor_diagnostics_clear": true
+  },
+  "analytic_results": [
+    "local chain transfer probability sin(g*t/sqrt(2))^4 and fourth-order short-time tail",
+    "same-generator central preparation, endpoint phase and return interference (1+cos(phi))/2",
+    "delayed Bell-record control success (1+max(r,1-r))/2 with r=sin(g*2*tau/sqrt(2))^4",
+    "Lie split error bound T^2*norm([h_AB,h_BC])/(2*n)",
+    "probability error below a decision margin suffices to keep both benchmark feedback policies unchanged"
+  ],
+  "finite_checks": [
+    "Hermiticity, number conservation and free-drift energy expectation",
+    "full complex state and inherited common-J real encoding",
+    "no action using an unreceived record and no early or duplicate delivery",
+    "two-hop path and bit-hop resource count",
+    "short-delay success 7/8 versus no-message 5/8",
+    "long-delay updated success 25/32 versus stale 23/32; no-message also 25/32",
+    "first-order and symmetric split convergence, including physical pulse-duration caveat",
+    "random preparation mixture and unchanged record-slot budget"
+  ],
+  "scope_limits": {
+    "quantum_rules_and_local_H_are_working_inputs": true,
+    "classical_delay_is_derived_from_H": false,
+    "time_is_an_internal_physical_clock": false,
+    "strict_light_cone_metric_or_gravity_derived": false,
+    "symmetric_split_has_a_new_global_optimality_proof": false,
+    "samples_collected": 0,
+    "physical_control_detector_clock_and_energy_costs_complete": false,
+    "C0_numerical_code_or_results_changed": false,
+    "C0_workflow_notes_updated_to_user_sufficiency_rule": true,
+    "legacy_numbered_notes_code_or_results_changed": false,
+    "git_operations_performed": false,
+    "new_background_tasks_created": false,
+    "necessity_proofs_started": false
+  }
+}

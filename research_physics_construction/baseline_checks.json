@@ -1,0 +1,91 @@
+{
+  "date": "2026-09-17",
+  "route": "research_physics_construction",
+  "baseline": "C0",
+  "route_round": "00",
+  "runtime": {
+    "python": "3.14.6",
+    "numpy": "2.5.1",
+    "document_converter": "existing pypandoc bundled Pandoc",
+    "new_dependencies_installed": false
+  },
+  "inheritance": {
+    "command": "python -B -X utf8 research_physics_construction/inheritance.py --verify",
+    "numbered_notes": 224,
+    "cognitive_rounds": 216,
+    "information_geometry_rounds": 8,
+    "hashed_source_artifacts": 705,
+    "python_files": 223,
+    "json_files": 252,
+    "tests": 5,
+    "failures": 0,
+    "errors": 0,
+    "verified_after_legacy_navigation_redirects": true,
+    "source_hashes_prove_scientific_correctness": false,
+    "all_historical_theorems_or_experiments_reproved_or_rerun": false,
+    "recovered_issue": "Initial parser treated only the first Markdown table as the index; Pandoc LineBlock continuation rows 187..216 are now parsed structurally and exact round coverage is enforced"
+  },
+  "baseline_run": {
+    "command": "python -B -X utf8 research_physics_construction/baseline.py --write-results",
+    "tests": 11,
+    "failures": 0,
+    "errors": 0,
+    "coverage": [
+      "interference fringe using the same joint-state engine",
+      "Bell correlations and partial-transpose diagnostic",
+      "prediction-observation-feedback for both public records",
+      "nonzero rare branch is retained",
+      "coherent record reversal versus public instrument update",
+      "declared graph signal latency and forbidden shortcut",
+      "no free record-slot reset",
+      "random preparation mixture consistency",
+      "restricted real-interface statistics without state erasure",
+      "shared-J real lift after operations and conditioning",
+      "state validity, resource and interpretation flags"
+    ]
+  },
+  "focused_regression": {
+    "modules": [
+      "inheritance",
+      "baseline",
+      "common_orientation_structure",
+      "complex_whole_real_interfaces",
+      "quantum_interface_audit",
+      "geometry_process_bridge"
+    ],
+    "loader": "unittest.defaultTestLoader.loadTestsFromNames with old and new research directories on sys.path",
+    "tests": 45,
+    "new_tests": 16,
+    "legacy_tests": 29,
+    "failures": 0,
+    "errors": 0,
+    "seconds_reported": 0.810,
+    "full_legacy_suite_run": false
+  },
+  "document_validation": {
+    "method": "pypandoc.convert_file to html5 with --mathml --fail-if-warnings",
+    "new_document_mathml_counts": {
+      "README.md": 0,
+      "FOUNDATIONS.md": 0,
+      "MODEL_CONTRACT.md": 7,
+      "RESEARCH_STATE.md": 0,
+      "research_note_00.md": 6,
+      "INHERITED_INDEX.md": 0
+    },
+    "local_file_links_checked": true,
+    "forbidden_control_characters_checked": true
+  },
+  "scope": {
+    "new_route_numbering_independent_of_old_216": true,
+    "legacy_numbered_notes_code_results_and_certificates_modified": false,
+    "legacy_navigation_and_repository_entry_updated": true,
+    "root_manuscripts_or_SoCA_document_modified": false,
+    "git_operations_performed": false,
+    "scheduled_or_background_research_tasks_created": false,
+    "empirical_samples_collected": 0,
+    "quantum_structure_is_a_declared_working_input": true,
+    "quantum_necessity_or_general_relativity_derived": false,
+    "autonomous_closed_detector_clock_and_energy_implementation_complete": false,
+    "next_milestone": "01: local propagation generator with the same state, record, predictor and resource contracts; gate-layer ticks are not physical time"
+  }
+}

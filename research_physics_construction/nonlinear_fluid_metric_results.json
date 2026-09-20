@@ -1,0 +1,470 @@
+{
+  "model_version": "C10",
+  "route_round": "10",
+  "research_scope": "sufficiency only",
+  "action_input": "Einstein-Hilbert with the C9 curvature/sign convention, plus isotropic perfect-fluid matter; G_munu=8piG T_munu is adopted nonlinear dynamics",
+  "EOS_input": {
+    "surface_density": 0.01,
+    "sound_speed_squared": 0.3333333333333333
+  },
+  "G": 0.1,
+  "central_pressure": 0.0005,
+  "solution": {
+    "radius": 4.134864310742849,
+    "mass": 3.130386226234055,
+    "compactness": 0.15141421778223557,
+    "central_density": 0.0115,
+    "central_lapse": 0.8801416314980067,
+    "surface_lapse": 0.9211871591689522,
+    "proper_fluid_energy": 3.2867129246888407,
+    "proper_energy_minus_ADM_mass": 0.15632669845478553,
+    "particle_mass_normalization": 1.0,
+    "baryon_rest_mass": 3.284418614092516,
+    "baryon_rest_mass_minus_ADM_mass": 0.15403238785846085,
+    "redshifted_chemical_potential_range": [
+      0.9211871591672705,
+      0.9211871591689557
+    ],
+    "solver": "SciPy solve_ivp DOP853 with zero-pressure event and dense output",
+    "rhs_evaluations": 122,
+    "stored_integration_points": 9,
+    "start_radius": 8.318521584049796e-06
+  },
+  "closure_diagnostics": {
+    "maximum_sampled_full_Einstein_residual": 4.43304893176527e-15,
+    "maximum_sampled_covariant_pressure_balance_residual": 2.710505431213761e-20,
+    "maximum_dense_output_five_point_ODE_residual": 1.0486389534491991e-10,
+    "scope": "curvature jets use TOV derivatives; independent dense-output derivative and refinement checks test the numerical solution, not a certified global error"
+  },
+  "refinement_diagnostics": [
+    {
+      "rtol": 1e-07,
+      "start_fraction": 1e-06,
+      "radius": 4.134864443758944,
+      "mass": 3.1303865311699743,
+      "radius_difference_from_refined": 1.3271954824034538e-07,
+      "mass_difference_from_refined": 3.0419068863807297e-07,
+      "probe_record_TV_from_refined": 5.010891329475242e-09
+    },
+    {
+      "rtol": 1e-09,
+      "start_fraction": 1e-06,
+      "radius": 4.134864311982703,
+      "mass": 3.1303862293510556,
+      "radius_difference_from_refined": 9.43307654210912e-10,
+      "mass_difference_from_refined": 2.3717698915959318e-09,
+      "probe_record_TV_from_refined": 4.533867205280817e-11
+    },
+    {
+      "rtol": 1e-10,
+      "start_fraction": 1e-06,
+      "radius": 4.134864310742849,
+      "mass": 3.130386226234055,
+      "radius_difference_from_refined": 2.965467871263172e-10,
+      "mass_difference_from_refined": 7.452305439414886e-10,
+      "probe_record_TV_from_refined": 1.2158670337908406e-11
+    },
+    {
+      "rtol": 1e-10,
+      "start_fraction": 5e-07,
+      "radius": 4.134864310742834,
+      "mass": 3.1303862262340205,
+      "radius_difference_from_refined": 2.965618861594521e-10,
+      "mass_difference_from_refined": 7.452651828998569e-10,
+      "probe_record_TV_from_refined": 1.2158731920591803e-11
+    }
+  ],
+  "benchmark": {
+    "uniform_density_solution": {
+      "mass": 1.0,
+      "radius": 3.0,
+      "gravitational_constant": 0.1
+    },
+    "causal_material_EOS": false
+  },
+  "probe_ring": {
+    "length": 20.0,
+    "center_offset": 4.0,
+    "chart": "areal-radius Cartesian reference coordinates",
+    "spatial_factor_rule": "b\u00b2=1+(B(r)-1)*(dr/dx)\u00b2, not the C9 isotropic spatial coefficient",
+    "clock_lapses": [
+      0.955426726610573,
+      0.8817409521999001
+    ],
+    "near_to_far_lapse_ratio": 0.9228765824124712,
+    "conservative_speed_floor": 0.8087133507712005
+  },
+  "probe_trials": [
+    {
+      "proper_mass": 0.35,
+      "joint_record_probabilities": [
+        [
+          [
+            0.21882519319916574,
+            0.017113937546943393
+          ],
+          [
+            0.4378548908279335,
+            0.034243869029434694
+          ]
+        ],
+        [
+          [
+            0.0902333983017159,
+            0.007056997051425087
+          ],
+          [
+            0.18055112478055368,
+            0.01412058926282973
+          ]
+        ]
+      ],
+      "smooth_data_probability": 0.7080378906034773,
+      "clock_A_X_plus_probability": 0.3332295260992501,
+      "clock_C_Y_plus_probability": 0.9274646071093687,
+      "data_probability_change_from_flat": 0.007490479291562435,
+      "full_record_TV_from_flat": 0.08973301683379231,
+      "initial_data_energy": 0.31865235759098043,
+      "final_data_energy": 0.3186523575909811,
+      "clock_rates": [
+        0.955426726610573,
+        1.0580891426398802
+      ]
+    },
+    {
+      "proper_mass": 0.55,
+      "joint_record_probabilities": [
+        [
+          [
+            0.22083246324351302,
+            0.017270922643936055
+          ],
+          [
+            0.4418713068231889,
+            0.03455798593480758
+          ]
+        ],
+        [
+          [
+            0.08822612825736803,
+            0.0069000119544323675
+          ],
+          [
+            0.17653470878529748,
+            0.013806472357456767
+          ]
+        ]
+      ],
+      "smooth_data_probability": 0.7145326786454456,
+      "clock_A_X_plus_probability": 0.3332295260992495,
+      "clock_C_Y_plus_probability": 0.9274646071093675,
+      "data_probability_change_from_flat": 0.005498294473760934,
+      "full_record_TV_from_flat": 0.08973301683379252,
+      "initial_data_energy": 0.5007394190715408,
+      "final_data_energy": 0.5007394190715407,
+      "clock_rates": [
+        0.955426726610573,
+        1.0580891426398802
+      ]
+    }
+  ],
+  "probe_schedule": [
+    {
+      "kind": "position",
+      "source_site": 0,
+      "read_at": 2.0,
+      "hops": 0,
+      "allocated_hop_interval": 0.7728325486453156,
+      "received_by_collector_at": 2.0
+    },
+    {
+      "kind": "position",
+      "source_site": 1,
+      "read_at": 2.0,
+      "hops": 1,
+      "allocated_hop_interval": 0.7728325486453156,
+      "received_by_collector_at": 2.7728325486453156
+    },
+    {
+      "kind": "position",
+      "source_site": 2,
+      "read_at": 2.0,
+      "hops": 2,
+      "allocated_hop_interval": 0.7728325486453156,
+      "received_by_collector_at": 4.318497645935947
+    },
+    {
+      "kind": "position",
+      "source_site": 3,
+      "read_at": 2.0,
+      "hops": 3,
+      "allocated_hop_interval": 0.7728325486453156,
+      "received_by_collector_at": 6.636995291871894
+    },
+    {
+      "kind": "position",
+      "source_site": 4,
+      "read_at": 2.0,
+      "hops": 4,
+      "allocated_hop_interval": 0.7728325486453156,
+      "received_by_collector_at": 9.728325486453157
+    },
+    {
+      "kind": "position",
+      "source_site": 5,
+      "read_at": 2.0,
+      "hops": 5,
+      "allocated_hop_interval": 0.7728325486453156,
+      "received_by_collector_at": 13.592488229679734
+    },
+    {
+      "kind": "position",
+      "source_site": 6,
+      "read_at": 2.0,
+      "hops": 6,
+      "allocated_hop_interval": 0.7728325486453156,
+      "received_by_collector_at": 18.22948352155163
+    },
+    {
+      "kind": "position",
+      "source_site": 7,
+      "read_at": 2.0,
+      "hops": 7,
+      "allocated_hop_interval": 0.7728325486453156,
+      "received_by_collector_at": 23.639311362068838
+    },
+    {
+      "kind": "position",
+      "source_site": 8,
+      "read_at": 2.0,
+      "hops": 8,
+      "allocated_hop_interval": 0.7728325486453156,
+      "received_by_collector_at": 29.821971751231363
+    },
+    {
+      "kind": "position",
+      "source_site": 9,
+      "read_at": 2.0,
+      "hops": 9,
+      "allocated_hop_interval": 0.7728325486453156,
+      "received_by_collector_at": 36.777464689039206
+    },
+    {
+      "kind": "position",
+      "source_site": 10,
+      "read_at": 2.0,
+      "hops": 10,
+      "allocated_hop_interval": 0.7728325486453156,
+      "received_by_collector_at": 44.505790175492365
+    },
+    {
+      "kind": "position",
+      "source_site": 11,
+      "read_at": 2.0,
+      "hops": 11,
+      "allocated_hop_interval": 0.7728325486453156,
+      "received_by_collector_at": 53.006948210590835
+    },
+    {
+      "kind": "position",
+      "source_site": 12,
+      "read_at": 2.0,
+      "hops": 12,
+      "allocated_hop_interval": 0.7728325486453156,
+      "received_by_collector_at": 62.280938794334624
+    },
+    {
+      "kind": "position",
+      "source_site": 13,
+      "read_at": 2.0,
+      "hops": 13,
+      "allocated_hop_interval": 0.7728325486453156,
+      "received_by_collector_at": 72.32776192672372
+    },
+    {
+      "kind": "position",
+      "source_site": 14,
+      "read_at": 2.0,
+      "hops": 14,
+      "allocated_hop_interval": 0.7728325486453156,
+      "received_by_collector_at": 83.14741760775814
+    },
+    {
+      "kind": "position",
+      "source_site": 15,
+      "read_at": 2.0,
+      "hops": 15,
+      "allocated_hop_interval": 0.7728325486453156,
+      "received_by_collector_at": 94.73990583743787
+    },
+    {
+      "kind": "position",
+      "source_site": 16,
+      "read_at": 2.0,
+      "hops": 16,
+      "allocated_hop_interval": 0.7728325486453156,
+      "received_by_collector_at": 107.10522661576292
+    },
+    {
+      "kind": "position",
+      "source_site": 17,
+      "read_at": 2.0,
+      "hops": 15,
+      "allocated_hop_interval": 0.7728325486453156,
+      "received_by_collector_at": 118.69771484544265
+    },
+    {
+      "kind": "position",
+      "source_site": 18,
+      "read_at": 2.0,
+      "hops": 14,
+      "allocated_hop_interval": 0.7728325486453156,
+      "received_by_collector_at": 129.51737052647707
+    },
+    {
+      "kind": "position",
+      "source_site": 19,
+      "read_at": 2.0,
+      "hops": 13,
+      "allocated_hop_interval": 0.7728325486453156,
+      "received_by_collector_at": 139.56419365886617
+    },
+    {
+      "kind": "position",
+      "source_site": 20,
+      "read_at": 2.0,
+      "hops": 12,
+      "allocated_hop_interval": 0.7728325486453156,
+      "received_by_collector_at": 148.83818424260997
+    },
+    {
+      "kind": "position",
+      "source_site": 21,
+      "read_at": 2.0,
+      "hops": 11,
+      "allocated_hop_interval": 0.7728325486453156,
+      "received_by_collector_at": 157.33934227770845
+    },
+    {
+      "kind": "position",
+      "source_site": 22,
+      "read_at": 2.0,
+      "hops": 10,
+      "allocated_hop_interval": 0.7728325486453156,
+      "received_by_collector_at": 165.0676677641616
+    },
+    {
+      "kind": "position",
+      "source_site": 23,
+      "read_at": 2.0,
+      "hops": 9,
+      "allocated_hop_interval": 0.7728325486453156,
+      "received_by_collector_at": 172.02316070196943
+    },
+    {
+      "kind": "position",
+      "source_site": 24,
+      "read_at": 2.0,
+      "hops": 8,
+      "allocated_hop_interval": 0.7728325486453156,
+      "received_by_collector_at": 178.20582109113195
+    },
+    {
+      "kind": "position",
+      "source_site": 25,
+      "read_at": 2.0,
+      "hops": 7,
+      "allocated_hop_interval": 0.7728325486453156,
+      "received_by_collector_at": 183.61564893164916
+    },
+    {
+      "kind": "position",
+      "source_site": 26,
+      "read_at": 2.0,
+      "hops": 6,
+      "allocated_hop_interval": 0.7728325486453156,
+      "received_by_collector_at": 188.25264422352106
+    },
+    {
+      "kind": "position",
+      "source_site": 27,
+      "read_at": 2.0,
+      "hops": 5,
+      "allocated_hop_interval": 0.7728325486453156,
+      "received_by_collector_at": 192.11680696674765
+    },
+    {
+      "kind": "position",
+      "source_site": 28,
+      "read_at": 2.0,
+      "hops": 4,
+      "allocated_hop_interval": 0.7728325486453156,
+      "received_by_collector_at": 195.20813716132892
+    },
+    {
+      "kind": "position",
+      "source_site": 29,
+      "read_at": 2.0,
+      "hops": 3,
+      "allocated_hop_interval": 0.7728325486453156,
+      "received_by_collector_at": 197.52663480726486
+    },
+    {
+      "kind": "position",
+      "source_site": 30,
+      "read_at": 2.0,
+      "hops": 2,
+      "allocated_hop_interval": 0.7728325486453156,
+      "received_by_collector_at": 199.07229990455548
+    },
+    {
+      "kind": "position",
+      "source_site": 31,
+      "read_at": 2.0,
+      "hops": 1,
+      "allocated_hop_interval": 0.7728325486453156,
+      "received_by_collector_at": 199.8451324532008
+    },
+    {
+      "kind": "clock",
+      "source_site": 0,
+      "read_at": 2.0,
+      "hops": 0,
+      "allocated_hop_interval": 0.7728325486453156,
+      "received_by_collector_at": 199.8451324532008
+    },
+    {
+      "kind": "clock",
+      "source_site": 16,
+      "read_at": 2.0,
+      "hops": 16,
+      "allocated_hop_interval": 0.7728325486453156,
+      "received_by_collector_at": 212.21045323152583
+    }
+  ],
+  "fresh_probe_trials": 2,
+  "cumulative_logical_qubit_initializations": 68,
+  "resources_per_trial": {
+    "chain_qubits": 32,
+    "clock_qubits": 2,
+    "raw_record_bits": 34,
+    "independent_fair_bits": 12,
+    "threshold_table_bits": 416,
+    "bit_hops": 272,
+    "read_parameter": 2.0,
+    "allocated_hop_interval": 0.7728325486453156,
+    "all_records_ready_by": 212.21045323152583,
+    "resets": 0
+  },
+  "limits": [
+    "nonlinear Einstein-Hilbert dynamics and EOS are inputs, not derived from cognition",
+    "causal equilibrium EOS does not prove dynamical radial stability or a microscopic matter realization",
+    "finite surface density jumps to vacuum with zero pressure; no thin shell, but not globally smooth matter",
+    "test probes and their confinement do not backreact on this classical fluid source",
+    "only metric coupling to the fluid is included for the ideal probes; material scattering and confining apparatus are omitted",
+    "areal-coordinate ring differs physically from an isotropic-coordinate circle, so this is not a same-source higher-order C9 comparison",
+    "curvature residual and tolerance comparisons are diagnostics, not interval-certified solution or probability bounds",
+    "C5 continuum bounds are not extended to the surface-crossing metric profile",
+    "no quantum source closure, lab data, sample counts, source preparation or detector energy closure"
+  ]
+}

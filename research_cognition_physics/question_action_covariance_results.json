@@ -1,0 +1,104 @@
+{
+  "round": 211,
+  "antecedent_rounds": [
+    183,
+    189,
+    204,
+    209,
+    210
+  ],
+  "scope": "Linear SO(n)-equivariant question-to-skew-generator map without extra directional data",
+  "candidate_conditions": [
+    "linear dependence on real question vector",
+    "reversible orthogonal answer-space action",
+    "full proper-rotation covariance",
+    "nonzero correspondence",
+    "own-question expectation conserved for all states"
+  ],
+  "nonzero_map_exists_iff": "n=3 for n>=1",
+  "solution": "D(x) r = kappa * (x cross r), kappa nonzero",
+  "scale_or_sign_fixed_by_axioms": false,
+  "integer_minor_certificate": {
+    "matrix": [
+      [
+        -1,
+        -1
+      ],
+      [
+        -1,
+        0
+      ]
+    ],
+    "determinant": -1
+  },
+  "three_survivor_null_vector": [
+    -1,
+    1,
+    -1
+  ],
+  "dimension_rows": [
+    {
+      "n": 1,
+      "linear_coefficients": 0,
+      "after_even_flips": 0,
+      "full_covariance_dimension": 0
+    },
+    {
+      "n": 2,
+      "linear_coefficients": 2,
+      "after_even_flips": 0,
+      "full_covariance_dimension": 0
+    },
+    {
+      "n": 3,
+      "linear_coefficients": 9,
+      "after_even_flips": 3,
+      "full_covariance_dimension": 1
+    },
+    {
+      "n": 4,
+      "linear_coefficients": 24,
+      "after_even_flips": 0,
+      "full_covariance_dimension": 0
+    },
+    {
+      "n": 5,
+      "linear_coefficients": 50,
+      "after_even_flips": 0,
+      "full_covariance_dimension": 0
+    },
+    {
+      "n": 6,
+      "linear_coefficients": 90,
+      "after_even_flips": 0,
+      "full_covariance_dimension": 0
+    },
+    {
+      "n": 7,
+      "linear_coefficients": 147,
+      "after_even_flips": 0,
+      "full_covariance_dimension": 0
+    },
+    {
+      "n": 8,
+      "linear_coefficients": 224,
+      "after_even_flips": 0,
+      "full_covariance_dimension": 0
+    }
+  ],
+  "including_reflections_allows_nonzero_correspondence": false,
+  "fixed_three_plane_in_four_dimensions_satisfies_conservation": true,
+  "fixed_three_plane_in_four_dimensions_satisfies_full_SO4_covariance": false,
+  "real_question_algebra_lift": "A_x = -(kappa/2) J Q(x), modulo a central phase generator",
+  "question_to_action_relation_derived_from_SoCA": false,
+  "all_conditions_claimed_logically_independent": false,
+  "state_dependent_or_reference_dependent_maps_excluded_by_theorem": false,
+  "all_cognitive_models_or_all_composite_theories_classified": false,
+  "physical_time_or_hbar_derived": false,
+  "quantum_necessity_or_incompleteness_proved": false,
+  "automated_checks": {
+    "run": 10,
+    "failures": 0,
+    "errors": 0
+  }
+}

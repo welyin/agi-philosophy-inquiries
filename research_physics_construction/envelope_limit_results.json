@@ -1,0 +1,1388 @@
+{
+  "model_version": "C4",
+  "route_round": "04",
+  "research_scope": "sufficiency only",
+  "parent_rule": "C3 nearest-neighbor midpoint exchange g=v/(2a), now on a periodic long-chain family",
+  "background_inputs": {
+    "length": 20.0,
+    "speed_scale": 0.6,
+    "modulation": 0.25,
+    "lapse_modulation": 0.15
+  },
+  "profile": "v=v0/(1+eta*cos(2*pi*x/L)); ell=1+0.15*cos(2*pi*x/L); b=ell/v",
+  "carrier_convention": "c_s(j)=exp(-i*s*pi*j/2), s=+1 right-moving, s=-1 left-moving",
+  "derived_envelope_equation": "partial_t chi_s=-s*(v partial_x+v_prime/2)chi_s",
+  "optical_solution": "chi_s(x,t)=f(y(x)-s*t)/sqrt(v(x)), y_prime=1/v",
+  "prepared_optical_fourier_modes": [
+    -2,
+    -1,
+    0,
+    1,
+    2
+  ],
+  "derivative_bounds": {
+    "envelope_derivative_upper_bounds": [
+      0.4996325634162604,
+      0.18269286905603552,
+      0.12098480940579581,
+      0.09896763436084235
+    ],
+    "speed_derivative_upper_bounds": [
+      0.8,
+      0.08377580409572782,
+      0.04386490844928603,
+      0.030317248309626496
+    ],
+    "shifted_flux_third_derivative_upper_bound": 0.10228129706837581
+  },
+  "vector_error_theorem": "||U_a(t)psi_a(0)-psi_a_cont(t)|| <= |t|sqrt(L)a^2*M3/(6*initial_sample_norm)",
+  "final_record_bound": "TV <= min(1,2*vector_bound) after normalizing sampled continuum reference",
+  "integrated_cell_record_bound": "TV <= min(1,2*vector_bound + L*a^2*sup_abs_density_second_derivative/24)",
+  "rows": [
+    {
+      "sites": 32,
+      "spacing": 0.625,
+      "direction": 1,
+      "duration": 2.0,
+      "sampled_initial_norm": 1.0,
+      "sampled_reference_norm": 1.0,
+      "exact_norm": 0.9999999999999998,
+      "vector_error_diagnostic": 0.0048620128171691975,
+      "analytic_vector_error_upper_bound": 0.05955935757076517,
+      "trace_distance_diagnostic": 0.004861998450361901,
+      "analytic_all_final_record_TV_upper_bound": 0.11911871514153034,
+      "position_record_TV_diagnostic": 0.0026362324807944542,
+      "window_probability_exact": 0.5623488443117794,
+      "window_probability_envelope": 0.5642947299742752,
+      "window_probability_error": 0.001945885662495761,
+      "continuum_cell_record_TV_diagnostic": 0.0025547281043400054,
+      "sample_to_integrated_cell_TV_upper_bound": 0.06108374665479895,
+      "analytic_integrated_cell_record_TV_upper_bound": 0.1802024617963293,
+      "unitary_energy_drift": 1.0704008505791656e-16
+    },
+    {
+      "sites": 64,
+      "spacing": 0.3125,
+      "direction": 1,
+      "duration": 2.0,
+      "sampled_initial_norm": 1.0000000000000002,
+      "sampled_reference_norm": 0.9999999999999999,
+      "exact_norm": 0.9999999999999997,
+      "vector_error_diagnostic": 0.0012269530996238812,
+      "analytic_vector_error_upper_bound": 0.01488983939269129,
+      "trace_distance_diagnostic": 0.001226952868734382,
+      "analytic_all_final_record_TV_upper_bound": 0.02977967878538258,
+      "position_record_TV_diagnostic": 0.0006641185956410412,
+      "window_probability_exact": 0.5450476933662927,
+      "window_probability_envelope": 0.5455341717342612,
+      "window_probability_error": 0.0004864783679685569,
+      "continuum_cell_record_TV_diagnostic": 0.0006418605432363762,
+      "sample_to_integrated_cell_TV_upper_bound": 0.015270936663699738,
+      "analytic_integrated_cell_record_TV_upper_bound": 0.045050615449082315,
+      "unitary_energy_drift": 1.7996628862194477e-16
+    },
+    {
+      "sites": 128,
+      "spacing": 0.15625,
+      "direction": 1,
+      "duration": 2.0,
+      "sampled_initial_norm": 1.0,
+      "sampled_reference_norm": 1.0000000000000002,
+      "exact_norm": 0.9999999999999999,
+      "vector_error_diagnostic": 0.0003074547777137841,
+      "analytic_vector_error_upper_bound": 0.0037224598481728232,
+      "trace_distance_diagnostic": 0.0003074547731325719,
+      "analytic_all_final_record_TV_upper_bound": 0.0074449196963456464,
+      "position_record_TV_diagnostic": 0.00016638804289030194,
+      "window_probability_exact": 0.5358782327430783,
+      "window_probability_envelope": 0.5359993985902027,
+      "window_probability_error": 0.00012116584712440481,
+      "continuum_cell_record_TV_diagnostic": 0.00016104177285459833,
+      "sample_to_integrated_cell_TV_upper_bound": 0.0038177341659249345,
+      "analytic_integrated_cell_record_TV_upper_bound": 0.01126265386227058,
+      "unitary_energy_drift": 2.4167865372853165e-16
+    },
+    {
+      "sites": 256,
+      "spacing": 0.078125,
+      "direction": 1,
+      "duration": 2.0,
+      "sampled_initial_norm": 1.0,
+      "sampled_reference_norm": 1.0000000000000002,
+      "exact_norm": 0.9999999999999993,
+      "vector_error_diagnostic": 7.690848454644576e-05,
+      "analytic_vector_error_upper_bound": 0.0009306149620432058,
+      "trace_distance_diagnostic": 7.690848459199022e-05,
+      "analytic_all_final_record_TV_upper_bound": 0.0018612299240864116,
+      "position_record_TV_diagnostic": 4.1612198704617275e-05,
+      "window_probability_exact": 0.5406908942658363,
+      "window_probability_envelope": 0.5407212911207109,
+      "window_probability_error": 3.039685487460364e-05,
+      "continuum_cell_record_TV_diagnostic": 4.0284801127698e-05,
+      "sample_to_integrated_cell_TV_upper_bound": 0.0009544335414812336,
+      "analytic_integrated_cell_record_TV_upper_bound": 0.002815663465567645,
+      "unitary_energy_drift": 2.1436420226234745e-16
+    },
+    {
+      "sites": 32,
+      "spacing": 0.625,
+      "direction": -1,
+      "duration": 2.0,
+      "sampled_initial_norm": 1.0,
+      "sampled_reference_norm": 1.0000000000000002,
+      "exact_norm": 0.9999999999999999,
+      "vector_error_diagnostic": 0.005282678734341731,
+      "analytic_vector_error_upper_bound": 0.05955935757076517,
+      "trace_distance_diagnostic": 0.005282660306524742,
+      "analytic_all_final_record_TV_upper_bound": 0.11911871514153034,
+      "position_record_TV_diagnostic": 0.0033851050631149345,
+      "window_probability_exact": 0.1710216506071308,
+      "window_probability_envelope": 0.17005895955720388,
+      "window_probability_error": 0.0009626910499269115,
+      "continuum_cell_record_TV_diagnostic": 0.004080456966099829,
+      "sample_to_integrated_cell_TV_upper_bound": 0.06108374665479895,
+      "analytic_integrated_cell_record_TV_upper_bound": 0.1802024617963293,
+      "unitary_energy_drift": 1.0451287836002907e-16
+    },
+    {
+      "sites": 64,
+      "spacing": 0.3125,
+      "direction": -1,
+      "duration": 2.0,
+      "sampled_initial_norm": 1.0000000000000002,
+      "sampled_reference_norm": 0.9999999999999999,
+      "exact_norm": 0.9999999999999996,
+      "vector_error_diagnostic": 0.0013326015436333069,
+      "analytic_vector_error_upper_bound": 0.01488983939269129,
+      "trace_distance_diagnostic": 0.001332601247878761,
+      "analytic_all_final_record_TV_upper_bound": 0.02977967878538258,
+      "position_record_TV_diagnostic": 0.0008413536980142163,
+      "window_probability_exact": 0.1548663799037882,
+      "window_probability_envelope": 0.1546475840986909,
+      "window_probability_error": 0.000218795805097316,
+      "continuum_cell_record_TV_diagnostic": 0.0010234168907276566,
+      "sample_to_integrated_cell_TV_upper_bound": 0.015270936663699738,
+      "analytic_integrated_cell_record_TV_upper_bound": 0.045050615449082315,
+      "unitary_energy_drift": 2.908453457797684e-17
+    },
+    {
+      "sites": 128,
+      "spacing": 0.15625,
+      "direction": -1,
+      "duration": 2.0,
+      "sampled_initial_norm": 1.0,
+      "sampled_reference_norm": 1.0000000000000002,
+      "exact_norm": 0.9999999999999997,
+      "vector_error_diagnostic": 0.000333897298777454,
+      "analytic_vector_error_upper_bound": 0.0037224598481728232,
+      "trace_distance_diagnostic": 0.00033389729388713435,
+      "analytic_all_final_record_TV_upper_bound": 0.0074449196963456464,
+      "position_record_TV_diagnostic": 0.00021057626844412253,
+      "window_probability_exact": 0.14725129360428857,
+      "window_probability_envelope": 0.14719912120398018,
+      "window_probability_error": 5.217240030838677e-05,
+      "continuum_cell_record_TV_diagnostic": 0.0002554778497403471,
+      "sample_to_integrated_cell_TV_upper_bound": 0.0038177341659249345,
+      "analytic_integrated_cell_record_TV_upper_bound": 0.01126265386227058,
+      "unitary_energy_drift": 1.1116512114176183e-16
+    },
+    {
+      "sites": 256,
+      "spacing": 0.078125,
+      "direction": -1,
+      "duration": 2.0,
+      "sampled_initial_norm": 1.0,
+      "sampled_reference_norm": 1.0,
+      "exact_norm": 0.9999999999999993,
+      "vector_error_diagnostic": 8.352102023648228e-05,
+      "analytic_vector_error_upper_bound": 0.0009306149620432058,
+      "trace_distance_diagnostic": 8.352101779643338e-05,
+      "analytic_all_final_record_TV_upper_bound": 0.0018612299240864116,
+      "position_record_TV_diagnostic": 5.26475377534834e-05,
+      "window_probability_exact": 0.151002125678463,
+      "window_probability_envelope": 0.15098876491261817,
+      "window_probability_error": 1.3360765844822042e-05,
+      "continuum_cell_record_TV_diagnostic": 6.391173283097293e-05,
+      "sample_to_integrated_cell_TV_upper_bound": 0.0009544335414812336,
+      "analytic_integrated_cell_record_TV_upper_bound": 0.002815663465567645,
+      "unitary_energy_drift": 1.0164152079236443e-16
+    }
+  ],
+  "resource_examples": [
+    {
+      "chain_qubit_slots": 32,
+      "occupied_excitation_sector_dimension": 32,
+      "retained_clock_slots": 2,
+      "total_quantum_slots_before_detectors": 34,
+      "local_destructive_position_readouts": 32,
+      "clock_reads": 2,
+      "classical_raw_outcome_bits": 34,
+      "minimum_fixed_label_bits_for_this_single_excitation_support": 5,
+      "classical_bit_hops_for_position_bits": 256,
+      "classical_bit_hops_including_clock_bits": 272,
+      "declared_serial_hop_parameter": 0.625,
+      "latest_record_collection_parameter": 172.0,
+      "record_transport_is_serial_no_queue_optimization": true,
+      "resets": 0,
+      "initial_smooth_carrier_preparation_is_a_declared_input": true,
+      "full_detector_memory_clock_energy_and_preparation_gate_costs_closed": false
+    },
+    {
+      "chain_qubit_slots": 64,
+      "occupied_excitation_sector_dimension": 64,
+      "retained_clock_slots": 2,
+      "total_quantum_slots_before_detectors": 66,
+      "local_destructive_position_readouts": 64,
+      "clock_reads": 2,
+      "classical_raw_outcome_bits": 66,
+      "minimum_fixed_label_bits_for_this_single_excitation_support": 6,
+      "classical_bit_hops_for_position_bits": 1024,
+      "classical_bit_hops_including_clock_bits": 1056,
+      "declared_serial_hop_parameter": 0.3125,
+      "latest_record_collection_parameter": 332.0,
+      "record_transport_is_serial_no_queue_optimization": true,
+      "resets": 0,
+      "initial_smooth_carrier_preparation_is_a_declared_input": true,
+      "full_detector_memory_clock_energy_and_preparation_gate_costs_closed": false
+    },
+    {
+      "chain_qubit_slots": 128,
+      "occupied_excitation_sector_dimension": 128,
+      "retained_clock_slots": 2,
+      "total_quantum_slots_before_detectors": 130,
+      "local_destructive_position_readouts": 128,
+      "clock_reads": 2,
+      "classical_raw_outcome_bits": 130,
+      "minimum_fixed_label_bits_for_this_single_excitation_support": 7,
+      "classical_bit_hops_for_position_bits": 4096,
+      "classical_bit_hops_including_clock_bits": 4160,
+      "declared_serial_hop_parameter": 0.15625,
+      "latest_record_collection_parameter": 652.0,
+      "record_transport_is_serial_no_queue_optimization": true,
+      "resets": 0,
+      "initial_smooth_carrier_preparation_is_a_declared_input": true,
+      "full_detector_memory_clock_energy_and_preparation_gate_costs_closed": false
+    },
+    {
+      "chain_qubit_slots": 256,
+      "occupied_excitation_sector_dimension": 256,
+      "retained_clock_slots": 2,
+      "total_quantum_slots_before_detectors": 258,
+      "local_destructive_position_readouts": 256,
+      "clock_reads": 2,
+      "classical_raw_outcome_bits": 258,
+      "minimum_fixed_label_bits_for_this_single_excitation_support": 8,
+      "classical_bit_hops_for_position_bits": 16384,
+      "classical_bit_hops_including_clock_bits": 16512,
+      "declared_serial_hop_parameter": 0.078125,
+      "latest_record_collection_parameter": 1292.0,
+      "record_transport_is_serial_no_queue_optimization": true,
+      "resets": 0,
+      "initial_smooth_carrier_preparation_is_a_declared_input": true,
+      "full_detector_memory_clock_energy_and_preparation_gate_costs_closed": false
+    }
+  ],
+  "finite_position_clock_and_decision_task": {
+    "sites": 128,
+    "duration": 2.0,
+    "task": "equal-prior classification of two declared directional preparations after terminal position readout",
+    "decision_table": [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "policy_source": "integrated continuum cell probabilities only",
+    "predicted_success": 0.7270046252727648,
+    "exact_lattice_success": 0.7269087685444343,
+    "success_error": 9.585672833045678e-05,
+    "success_error_upper_bound": 0.01126265386227058,
+    "position_and_two_clock_joint_record_TV": [
+      0.0001610417728545983,
+      0.0002554778497403471
+    ],
+    "clock_joint_probabilities": [
+      [
+        0.15784548921271424,
+        0.009016500147373766
+      ],
+      [
+        0.7881188362639755,
+        0.04501917437593644
+      ]
+    ],
+    "resources": {
+      "chain_qubit_slots": 128,
+      "occupied_excitation_sector_dimension": 128,
+      "retained_clock_slots": 2,
+      "total_quantum_slots_before_detectors": 130,
+      "local_destructive_position_readouts": 128,
+      "clock_reads": 2,
+      "classical_raw_outcome_bits": 130,
+      "minimum_fixed_label_bits_for_this_single_excitation_support": 7,
+      "classical_bit_hops_for_position_bits": 4096,
+      "classical_bit_hops_including_clock_bits": 4160,
+      "declared_serial_hop_parameter": 0.15625,
+      "latest_record_collection_parameter": 652.0,
+      "record_transport_is_serial_no_queue_optimization": true,
+      "resets": 0,
+      "initial_smooth_carrier_preparation_is_a_declared_input": true,
+      "full_detector_memory_clock_energy_and_preparation_gate_costs_closed": false
+    },
+    "record_collection_schedule": [
+      {
+        "kind": "position",
+        "source_site": 0,
+        "read_at": 2.0,
+        "hops": 0,
+        "received_at_site_zero": 2.0
+      },
+      {
+        "kind": "position",
+        "source_site": 1,
+        "read_at": 2.0,
+        "hops": 1,
+        "received_at_site_zero": 2.15625
+      },
+      {
+        "kind": "position",
+        "source_site": 2,
+        "read_at": 2.0,
+        "hops": 2,
+        "received_at_site_zero": 2.46875
+      },
+      {
+        "kind": "position",
+        "source_site": 3,
+        "read_at": 2.0,
+        "hops": 3,
+        "received_at_site_zero": 2.9375
+      },
+      {
+        "kind": "position",
+        "source_site": 4,
+        "read_at": 2.0,
+        "hops": 4,
+        "received_at_site_zero": 3.5625
+      },
+      {
+        "kind": "position",
+        "source_site": 5,
+        "read_at": 2.0,
+        "hops": 5,
+        "received_at_site_zero": 4.34375
+      },
+      {
+        "kind": "position",
+        "source_site": 6,
+        "read_at": 2.0,
+        "hops": 6,
+        "received_at_site_zero": 5.28125
+      },
+      {
+        "kind": "position",
+        "source_site": 7,
+        "read_at": 2.0,
+        "hops": 7,
+        "received_at_site_zero": 6.375
+      },
+      {
+        "kind": "position",
+        "source_site": 8,
+        "read_at": 2.0,
+        "hops": 8,
+        "received_at_site_zero": 7.625
+      },
+      {
+        "kind": "position",
+        "source_site": 9,
+        "read_at": 2.0,
+        "hops": 9,
+        "received_at_site_zero": 9.03125
+      },
+      {
+        "kind": "position",
+        "source_site": 10,
+        "read_at": 2.0,
+        "hops": 10,
+        "received_at_site_zero": 10.59375
+      },
+      {
+        "kind": "position",
+        "source_site": 11,
+        "read_at": 2.0,
+        "hops": 11,
+        "received_at_site_zero": 12.3125
+      },
+      {
+        "kind": "position",
+        "source_site": 12,
+        "read_at": 2.0,
+        "hops": 12,
+        "received_at_site_zero": 14.1875
+      },
+      {
+        "kind": "position",
+        "source_site": 13,
+        "read_at": 2.0,
+        "hops": 13,
+        "received_at_site_zero": 16.21875
+      },
+      {
+        "kind": "position",
+        "source_site": 14,
+        "read_at": 2.0,
+        "hops": 14,
+        "received_at_site_zero": 18.40625
+      },
+      {
+        "kind": "position",
+        "source_site": 15,
+        "read_at": 2.0,
+        "hops": 15,
+        "received_at_site_zero": 20.75
+      },
+      {
+        "kind": "position",
+        "source_site": 16,
+        "read_at": 2.0,
+        "hops": 16,
+        "received_at_site_zero": 23.25
+      },
+      {
+        "kind": "position",
+        "source_site": 17,
+        "read_at": 2.0,
+        "hops": 17,
+        "received_at_site_zero": 25.90625
+      },
+      {
+        "kind": "position",
+        "source_site": 18,
+        "read_at": 2.0,
+        "hops": 18,
+        "received_at_site_zero": 28.71875
+      },
+      {
+        "kind": "position",
+        "source_site": 19,
+        "read_at": 2.0,
+        "hops": 19,
+        "received_at_site_zero": 31.6875
+      },
+      {
+        "kind": "position",
+        "source_site": 20,
+        "read_at": 2.0,
+        "hops": 20,
+        "received_at_site_zero": 34.8125
+      },
+      {
+        "kind": "position",
+        "source_site": 21,
+        "read_at": 2.0,
+        "hops": 21,
+        "received_at_site_zero": 38.09375
+      },
+      {
+        "kind": "position",
+        "source_site": 22,
+        "read_at": 2.0,
+        "hops": 22,
+        "received_at_site_zero": 41.53125
+      },
+      {
+        "kind": "position",
+        "source_site": 23,
+        "read_at": 2.0,
+        "hops": 23,
+        "received_at_site_zero": 45.125
+      },
+      {
+        "kind": "position",
+        "source_site": 24,
+        "read_at": 2.0,
+        "hops": 24,
+        "received_at_site_zero": 48.875
+      },
+      {
+        "kind": "position",
+        "source_site": 25,
+        "read_at": 2.0,
+        "hops": 25,
+        "received_at_site_zero": 52.78125
+      },
+      {
+        "kind": "position",
+        "source_site": 26,
+        "read_at": 2.0,
+        "hops": 26,
+        "received_at_site_zero": 56.84375
+      },
+      {
+        "kind": "position",
+        "source_site": 27,
+        "read_at": 2.0,
+        "hops": 27,
+        "received_at_site_zero": 61.0625
+      },
+      {
+        "kind": "position",
+        "source_site": 28,
+        "read_at": 2.0,
+        "hops": 28,
+        "received_at_site_zero": 65.4375
+      },
+      {
+        "kind": "position",
+        "source_site": 29,
+        "read_at": 2.0,
+        "hops": 29,
+        "received_at_site_zero": 69.96875
+      },
+      {
+        "kind": "position",
+        "source_site": 30,
+        "read_at": 2.0,
+        "hops": 30,
+        "received_at_site_zero": 74.65625
+      },
+      {
+        "kind": "position",
+        "source_site": 31,
+        "read_at": 2.0,
+        "hops": 31,
+        "received_at_site_zero": 79.5
+      },
+      {
+        "kind": "position",
+        "source_site": 32,
+        "read_at": 2.0,
+        "hops": 32,
+        "received_at_site_zero": 84.5
+      },
+      {
+        "kind": "position",
+        "source_site": 33,
+        "read_at": 2.0,
+        "hops": 33,
+        "received_at_site_zero": 89.65625
+      },
+      {
+        "kind": "position",
+        "source_site": 34,
+        "read_at": 2.0,
+        "hops": 34,
+        "received_at_site_zero": 94.96875
+      },
+      {
+        "kind": "position",
+        "source_site": 35,
+        "read_at": 2.0,
+        "hops": 35,
+        "received_at_site_zero": 100.4375
+      },
+      {
+        "kind": "position",
+        "source_site": 36,
+        "read_at": 2.0,
+        "hops": 36,
+        "received_at_site_zero": 106.0625
+      },
+      {
+        "kind": "position",
+        "source_site": 37,
+        "read_at": 2.0,
+        "hops": 37,
+        "received_at_site_zero": 111.84375
+      },
+      {
+        "kind": "position",
+        "source_site": 38,
+        "read_at": 2.0,
+        "hops": 38,
+        "received_at_site_zero": 117.78125
+      },
+      {
+        "kind": "position",
+        "source_site": 39,
+        "read_at": 2.0,
+        "hops": 39,
+        "received_at_site_zero": 123.875
+      },
+      {
+        "kind": "position",
+        "source_site": 40,
+        "read_at": 2.0,
+        "hops": 40,
+        "received_at_site_zero": 130.125
+      },
+      {
+        "kind": "position",
+        "source_site": 41,
+        "read_at": 2.0,
+        "hops": 41,
+        "received_at_site_zero": 136.53125
+      },
+      {
+        "kind": "position",
+        "source_site": 42,
+        "read_at": 2.0,
+        "hops": 42,
+        "received_at_site_zero": 143.09375
+      },
+      {
+        "kind": "position",
+        "source_site": 43,
+        "read_at": 2.0,
+        "hops": 43,
+        "received_at_site_zero": 149.8125
+      },
+      {
+        "kind": "position",
+        "source_site": 44,
+        "read_at": 2.0,
+        "hops": 44,
+        "received_at_site_zero": 156.6875
+      },
+      {
+        "kind": "position",
+        "source_site": 45,
+        "read_at": 2.0,
+        "hops": 45,
+        "received_at_site_zero": 163.71875
+      },
+      {
+        "kind": "position",
+        "source_site": 46,
+        "read_at": 2.0,
+        "hops": 46,
+        "received_at_site_zero": 170.90625
+      },
+      {
+        "kind": "position",
+        "source_site": 47,
+        "read_at": 2.0,
+        "hops": 47,
+        "received_at_site_zero": 178.25
+      },
+      {
+        "kind": "position",
+        "source_site": 48,
+        "read_at": 2.0,
+        "hops": 48,
+        "received_at_site_zero": 185.75
+      },
+      {
+        "kind": "position",
+        "source_site": 49,
+        "read_at": 2.0,
+        "hops": 49,
+        "received_at_site_zero": 193.40625
+      },
+      {
+        "kind": "position",
+        "source_site": 50,
+        "read_at": 2.0,
+        "hops": 50,
+        "received_at_site_zero": 201.21875
+      },
+      {
+        "kind": "position",
+        "source_site": 51,
+        "read_at": 2.0,
+        "hops": 51,
+        "received_at_site_zero": 209.1875
+      },
+      {
+        "kind": "position",
+        "source_site": 52,
+        "read_at": 2.0,
+        "hops": 52,
+        "received_at_site_zero": 217.3125
+      },
+      {
+        "kind": "position",
+        "source_site": 53,
+        "read_at": 2.0,
+        "hops": 53,
+        "received_at_site_zero": 225.59375
+      },
+      {
+        "kind": "position",
+        "source_site": 54,
+        "read_at": 2.0,
+        "hops": 54,
+        "received_at_site_zero": 234.03125
+      },
+      {
+        "kind": "position",
+        "source_site": 55,
+        "read_at": 2.0,
+        "hops": 55,
+        "received_at_site_zero": 242.625
+      },
+      {
+        "kind": "position",
+        "source_site": 56,
+        "read_at": 2.0,
+        "hops": 56,
+        "received_at_site_zero": 251.375
+      },
+      {
+        "kind": "position",
+        "source_site": 57,
+        "read_at": 2.0,
+        "hops": 57,
+        "received_at_site_zero": 260.28125
+      },
+      {
+        "kind": "position",
+        "source_site": 58,
+        "read_at": 2.0,
+        "hops": 58,
+        "received_at_site_zero": 269.34375
+      },
+      {
+        "kind": "position",
+        "source_site": 59,
+        "read_at": 2.0,
+        "hops": 59,
+        "received_at_site_zero": 278.5625
+      },
+      {
+        "kind": "position",
+        "source_site": 60,
+        "read_at": 2.0,
+        "hops": 60,
+        "received_at_site_zero": 287.9375
+      },
+      {
+        "kind": "position",
+        "source_site": 61,
+        "read_at": 2.0,
+        "hops": 61,
+        "received_at_site_zero": 297.46875
+      },
+      {
+        "kind": "position",
+        "source_site": 62,
+        "read_at": 2.0,
+        "hops": 62,
+        "received_at_site_zero": 307.15625
+      },
+      {
+        "kind": "position",
+        "source_site": 63,
+        "read_at": 2.0,
+        "hops": 63,
+        "received_at_site_zero": 317.0
+      },
+      {
+        "kind": "position",
+        "source_site": 64,
+        "read_at": 2.0,
+        "hops": 64,
+        "received_at_site_zero": 327.0
+      },
+      {
+        "kind": "position",
+        "source_site": 65,
+        "read_at": 2.0,
+        "hops": 63,
+        "received_at_site_zero": 336.84375
+      },
+      {
+        "kind": "position",
+        "source_site": 66,
+        "read_at": 2.0,
+        "hops": 62,
+        "received_at_site_zero": 346.53125
+      },
+      {
+        "kind": "position",
+        "source_site": 67,
+        "read_at": 2.0,
+        "hops": 61,
+        "received_at_site_zero": 356.0625
+      },
+      {
+        "kind": "position",
+        "source_site": 68,
+        "read_at": 2.0,
+        "hops": 60,
+        "received_at_site_zero": 365.4375
+      },
+      {
+        "kind": "position",
+        "source_site": 69,
+        "read_at": 2.0,
+        "hops": 59,
+        "received_at_site_zero": 374.65625
+      },
+      {
+        "kind": "position",
+        "source_site": 70,
+        "read_at": 2.0,
+        "hops": 58,
+        "received_at_site_zero": 383.71875
+      },
+      {
+        "kind": "position",
+        "source_site": 71,
+        "read_at": 2.0,
+        "hops": 57,
+        "received_at_site_zero": 392.625
+      },
+      {
+        "kind": "position",
+        "source_site": 72,
+        "read_at": 2.0,
+        "hops": 56,
+        "received_at_site_zero": 401.375
+      },
+      {
+        "kind": "position",
+        "source_site": 73,
+        "read_at": 2.0,
+        "hops": 55,
+        "received_at_site_zero": 409.96875
+      },
+      {
+        "kind": "position",
+        "source_site": 74,
+        "read_at": 2.0,
+        "hops": 54,
+        "received_at_site_zero": 418.40625
+      },
+      {
+        "kind": "position",
+        "source_site": 75,
+        "read_at": 2.0,
+        "hops": 53,
+        "received_at_site_zero": 426.6875
+      },
+      {
+        "kind": "position",
+        "source_site": 76,
+        "read_at": 2.0,
+        "hops": 52,
+        "received_at_site_zero": 434.8125
+      },
+      {
+        "kind": "position",
+        "source_site": 77,
+        "read_at": 2.0,
+        "hops": 51,
+        "received_at_site_zero": 442.78125
+      },
+      {
+        "kind": "position",
+        "source_site": 78,
+        "read_at": 2.0,
+        "hops": 50,
+        "received_at_site_zero": 450.59375
+      },
+      {
+        "kind": "position",
+        "source_site": 79,
+        "read_at": 2.0,
+        "hops": 49,
+        "received_at_site_zero": 458.25
+      },
+      {
+        "kind": "position",
+        "source_site": 80,
+        "read_at": 2.0,
+        "hops": 48,
+        "received_at_site_zero": 465.75
+      },
+      {
+        "kind": "position",
+        "source_site": 81,
+        "read_at": 2.0,
+        "hops": 47,
+        "received_at_site_zero": 473.09375
+      },
+      {
+        "kind": "position",
+        "source_site": 82,
+        "read_at": 2.0,
+        "hops": 46,
+        "received_at_site_zero": 480.28125
+      },
+      {
+        "kind": "position",
+        "source_site": 83,
+        "read_at": 2.0,
+        "hops": 45,
+        "received_at_site_zero": 487.3125
+      },
+      {
+        "kind": "position",
+        "source_site": 84,
+        "read_at": 2.0,
+        "hops": 44,
+        "received_at_site_zero": 494.1875
+      },
+      {
+        "kind": "position",
+        "source_site": 85,
+        "read_at": 2.0,
+        "hops": 43,
+        "received_at_site_zero": 500.90625
+      },
+      {
+        "kind": "position",
+        "source_site": 86,
+        "read_at": 2.0,
+        "hops": 42,
+        "received_at_site_zero": 507.46875
+      },
+      {
+        "kind": "position",
+        "source_site": 87,
+        "read_at": 2.0,
+        "hops": 41,
+        "received_at_site_zero": 513.875
+      },
+      {
+        "kind": "position",
+        "source_site": 88,
+        "read_at": 2.0,
+        "hops": 40,
+        "received_at_site_zero": 520.125
+      },
+      {
+        "kind": "position",
+        "source_site": 89,
+        "read_at": 2.0,
+        "hops": 39,
+        "received_at_site_zero": 526.21875
+      },
+      {
+        "kind": "position",
+        "source_site": 90,
+        "read_at": 2.0,
+        "hops": 38,
+        "received_at_site_zero": 532.15625
+      },
+      {
+        "kind": "position",
+        "source_site": 91,
+        "read_at": 2.0,
+        "hops": 37,
+        "received_at_site_zero": 537.9375
+      },
+      {
+        "kind": "position",
+        "source_site": 92,
+        "read_at": 2.0,
+        "hops": 36,
+        "received_at_site_zero": 543.5625
+      },
+      {
+        "kind": "position",
+        "source_site": 93,
+        "read_at": 2.0,
+        "hops": 35,
+        "received_at_site_zero": 549.03125
+      },
+      {
+        "kind": "position",
+        "source_site": 94,
+        "read_at": 2.0,
+        "hops": 34,
+        "received_at_site_zero": 554.34375
+      },
+      {
+        "kind": "position",
+        "source_site": 95,
+        "read_at": 2.0,
+        "hops": 33,
+        "received_at_site_zero": 559.5
+      },
+      {
+        "kind": "position",
+        "source_site": 96,
+        "read_at": 2.0,
+        "hops": 32,
+        "received_at_site_zero": 564.5
+      },
+      {
+        "kind": "position",
+        "source_site": 97,
+        "read_at": 2.0,
+        "hops": 31,
+        "received_at_site_zero": 569.34375
+      },
+      {
+        "kind": "position",
+        "source_site": 98,
+        "read_at": 2.0,
+        "hops": 30,
+        "received_at_site_zero": 574.03125
+      },
+      {
+        "kind": "position",
+        "source_site": 99,
+        "read_at": 2.0,
+        "hops": 29,
+        "received_at_site_zero": 578.5625
+      },
+      {
+        "kind": "position",
+        "source_site": 100,
+        "read_at": 2.0,
+        "hops": 28,
+        "received_at_site_zero": 582.9375
+      },
+      {
+        "kind": "position",
+        "source_site": 101,
+        "read_at": 2.0,
+        "hops": 27,
+        "received_at_site_zero": 587.15625
+      },
+      {
+        "kind": "position",
+        "source_site": 102,
+        "read_at": 2.0,
+        "hops": 26,
+        "received_at_site_zero": 591.21875
+      },
+      {
+        "kind": "position",
+        "source_site": 103,
+        "read_at": 2.0,
+        "hops": 25,
+        "received_at_site_zero": 595.125
+      },
+      {
+        "kind": "position",
+        "source_site": 104,
+        "read_at": 2.0,
+        "hops": 24,
+        "received_at_site_zero": 598.875
+      },
+      {
+        "kind": "position",
+        "source_site": 105,
+        "read_at": 2.0,
+        "hops": 23,
+        "received_at_site_zero": 602.46875
+      },
+      {
+        "kind": "position",
+        "source_site": 106,
+        "read_at": 2.0,
+        "hops": 22,
+        "received_at_site_zero": 605.90625
+      },
+      {
+        "kind": "position",
+        "source_site": 107,
+        "read_at": 2.0,
+        "hops": 21,
+        "received_at_site_zero": 609.1875
+      },
+      {
+        "kind": "position",
+        "source_site": 108,
+        "read_at": 2.0,
+        "hops": 20,
+        "received_at_site_zero": 612.3125
+      },
+      {
+        "kind": "position",
+        "source_site": 109,
+        "read_at": 2.0,
+        "hops": 19,
+        "received_at_site_zero": 615.28125
+      },
+      {
+        "kind": "position",
+        "source_site": 110,
+        "read_at": 2.0,
+        "hops": 18,
+        "received_at_site_zero": 618.09375
+      },
+      {
+        "kind": "position",
+        "source_site": 111,
+        "read_at": 2.0,
+        "hops": 17,
+        "received_at_site_zero": 620.75
+      },
+      {
+        "kind": "position",
+        "source_site": 112,
+        "read_at": 2.0,
+        "hops": 16,
+        "received_at_site_zero": 623.25
+      },
+      {
+        "kind": "position",
+        "source_site": 113,
+        "read_at": 2.0,
+        "hops": 15,
+        "received_at_site_zero": 625.59375
+      },
+      {
+        "kind": "position",
+        "source_site": 114,
+        "read_at": 2.0,
+        "hops": 14,
+        "received_at_site_zero": 627.78125
+      },
+      {
+        "kind": "position",
+        "source_site": 115,
+        "read_at": 2.0,
+        "hops": 13,
+        "received_at_site_zero": 629.8125
+      },
+      {
+        "kind": "position",
+        "source_site": 116,
+        "read_at": 2.0,
+        "hops": 12,
+        "received_at_site_zero": 631.6875
+      },
+      {
+        "kind": "position",
+        "source_site": 117,
+        "read_at": 2.0,
+        "hops": 11,
+        "received_at_site_zero": 633.40625
+      },
+      {
+        "kind": "position",
+        "source_site": 118,
+        "read_at": 2.0,
+        "hops": 10,
+        "received_at_site_zero": 634.96875
+      },
+      {
+        "kind": "position",
+        "source_site": 119,
+        "read_at": 2.0,
+        "hops": 9,
+        "received_at_site_zero": 636.375
+      },
+      {
+        "kind": "position",
+        "source_site": 120,
+        "read_at": 2.0,
+        "hops": 8,
+        "received_at_site_zero": 637.625
+      },
+      {
+        "kind": "position",
+        "source_site": 121,
+        "read_at": 2.0,
+        "hops": 7,
+        "received_at_site_zero": 638.71875
+      },
+      {
+        "kind": "position",
+        "source_site": 122,
+        "read_at": 2.0,
+        "hops": 6,
+        "received_at_site_zero": 639.65625
+      },
+      {
+        "kind": "position",
+        "source_site": 123,
+        "read_at": 2.0,
+        "hops": 5,
+        "received_at_site_zero": 640.4375
+      },
+      {
+        "kind": "position",
+        "source_site": 124,
+        "read_at": 2.0,
+        "hops": 4,
+        "received_at_site_zero": 641.0625
+      },
+      {
+        "kind": "position",
+        "source_site": 125,
+        "read_at": 2.0,
+        "hops": 3,
+        "received_at_site_zero": 641.53125
+      },
+      {
+        "kind": "position",
+        "source_site": 126,
+        "read_at": 2.0,
+        "hops": 2,
+        "received_at_site_zero": 641.84375
+      },
+      {
+        "kind": "position",
+        "source_site": 127,
+        "read_at": 2.0,
+        "hops": 1,
+        "received_at_site_zero": 642.0
+      },
+      {
+        "kind": "clock",
+        "source_site": 0,
+        "read_at": 2.0,
+        "hops": 0,
+        "received_at_site_zero": 642.0
+      },
+      {
+        "kind": "clock",
+        "source_site": 64,
+        "read_at": 2.0,
+        "hops": 64,
+        "received_at_site_zero": 652.0
+      }
+    ],
+    "decision_not_allowed_before": 652.0,
+    "local_clock_preparation_and_synchronous_readout_are_inputs": true,
+    "approximation_used_only_before_terminal_measurement": true,
+    "sample_counts_generated": 0
+  },
+  "physical_slots_are_not_log2_sector_dimension": true,
+  "mass_coupling_added": false,
+  "all_lattice_states_or_times_uniformly_approximated": false,
+  "two_envelopes_are_two_disjoint_copies_of_the_full_lattice": false,
+  "fixed_finite_lattice_has_an_exact_relativistic_causal_cone": false,
+  "scope_of_geometry": "massless two-direction transport on a specified static 1+1 metric; no dynamical gravity",
+  "background_source_or_Einstein_equations_derived": false,
+  "detector_synchrony_and_clock_dynamics_are_working_inputs": true,
+  "no_new_count_samples_collected": true,
+  "necessity_arguments_performed": false,
+  "automated_checks": {
+    "run": 14,
+    "failures": 0,
+    "errors": 0
+  }
+}

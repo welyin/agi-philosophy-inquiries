@@ -1,0 +1,113 @@
+{
+  "date": "2026-09-17",
+  "route_round": "05",
+  "model_version": "C5",
+  "scope": "sufficiency construction and numerical consistency only; no necessity arguments",
+  "runtime": {
+    "python": "3.14.6",
+    "numpy": "2.5.1",
+    "document_converter": "existing pypandoc bundled Pandoc",
+    "new_dependencies_installed": false
+  },
+  "result_generation": {
+    "command": "python -B -X utf8 research_physics_construction/massive_envelope.py --write-results",
+    "tests": 14,
+    "failures": 0,
+    "errors": 0
+  },
+  "route_regression": {
+    "command": "python -B -X utf8 -m unittest discover -s research_physics_construction -p \"*.py\"",
+    "tests": 84,
+    "new_tests": 14,
+    "previous_route_and_inheritance_tests": 70,
+    "failures": 0,
+    "errors": 0,
+    "seconds_reported": 4.235,
+    "legacy_necessity_test_suites_rerun": false
+  },
+  "inheritance": {
+    "command": "python -B -X utf8 research_physics_construction/inheritance.py --verify",
+    "numbered_notes": 224,
+    "source_artifacts": 705,
+    "tests": 5,
+    "failures": 0,
+    "errors": 0,
+    "hash_check_is_not_scientific_reproof": true
+  },
+  "document_validation": {
+    "method": "pypandoc.convert_file to html5 with --mathml --fail-if-warnings",
+    "mathml_counts": {
+      "C5_CONTRACT.md": 22,
+      "research_note_05.md": 74,
+      "README.md": 0,
+      "RESEARCH_STATE.md": 0,
+      "repository_README.md": 0
+    },
+    "local_links_checked": true,
+    "forbidden_control_characters_checked": true,
+    "editor_diagnostics_clear": true
+  },
+  "analytic_sufficiency_results": [
+    "staggered onsite multiplication exactly swaps the two C4 carriers and gives a mass sigma_x term",
+    "finite optical Fourier projection has a boundary-only residual with a Dyson path-length bound",
+    "periodic L2 derivative inequalities and Sobolev estimates bound the massive reference regularity uniformly in the Fourier cutoff",
+    "Taylor spatial residual plus sampled reference residual gives finite-time lattice error by unitary Duhamel",
+    "smooth terminal effects suppress the alternating microscopic carrier term with an explicit second-derivative bound",
+    "finite fair-bit rounding adds at most one over twice the probability denominator",
+    "same independent clock records preserve the coarse-output error bound"
+  ],
+  "implementation_checks": [
+    "full eight-qubit XY-plus-staggered-mass Hamiltonian restricts to the implemented one-excitation matrix",
+    "constant-background plane-wave exact two-band dispersion",
+    "massless reference agrees with the inherited C4 optical propagation",
+    "Galerkin Hermiticity, normalization, derivative bounds and boundary leakage",
+    "combined spatial and Fourier reference residual checked directly",
+    "variable-mass finite-time convergence, energy conservation and quadrature refinement",
+    "finite random-bit rule enumerated for selected complete position records",
+    "records cannot be consumed before the final position and clock messages arrive",
+    "common-J real encoding matches the massive lattice unitary"
+  ],
+  "reported_numbers": {
+    "proper_mass_coefficient": 0.35,
+    "duration": 2.0,
+    "lapse_modulation": 0.15,
+    "reference_cutoff": 12,
+    "reference_complex_dimension": 50,
+    "reference_boundary_norm_bound": 4.98575436814677e-17,
+    "reference_continuum_truncation_bound": 2.617521043277054e-18,
+    "N512_vector_error_right": 1.803351086569455e-05,
+    "N512_vector_error_left": 1.9190067382966937e-05,
+    "N512_vector_error_upper_bound": 0.0009681319337648122,
+    "N512_terminal_predicted_classification_success": 0.5900216902474842,
+    "N512_terminal_lattice_expected_success": 0.590018299396435,
+    "N512_terminal_success_error_upper_bound": 0.023892031157387115,
+    "N512_terminal_success_lower_bound": 0.566129659090097,
+    "opposite_carrier_probabilities_reference": [0.33057380462802977, 0.3546839542929234],
+    "terminal_random_bits": 12,
+    "terminal_probability_quantization_bound": 0.0001220703125,
+    "logical_quantum_slots_before_detectors": 514,
+    "classical_bit_hops": 65792,
+    "final_collection_parameter": 2572.0,
+    "sample_counts_generated": 0,
+    "laboratory_samples": 0
+  },
+  "scope_limits": {
+    "lapse_changed_explicitly_to_an_optical_coordinate_cosine": true,
+    "C4_speed_and_midpoint_bonds_preserved": true,
+    "mass_and_lapse_coupling_are_working_inputs": true,
+    "C3_count_uncertainty_propagated": false,
+    "tiny_analytic_truncation_bound_is_a_floating_solver_accuracy_certificate": false,
+    "bounds_are_directed_rounding_machine_certificates": false,
+    "microscopic_position_record_TV_against_plain_spinor_density_is_controlled": false,
+    "bound_applies_to_the_declared_smooth_output_and_clock_bits": true,
+    "all_lattice_states_and_arbitrarily_long_times_covered": false,
+    "multi_excitation_QFT_or_Einstein_equations_derived": false,
+    "background_backreaction_implemented": false,
+    "initial_state_preparation_synchrony_and_detector_energy_costs_complete": false,
+    "C0_through_C4_numerical_files_modified": false,
+    "legacy_numbered_notes_code_results_modified": false,
+    "git_operations_performed": false,
+    "new_background_tasks_created": false,
+    "necessity_proofs_started": false
+  }
+}

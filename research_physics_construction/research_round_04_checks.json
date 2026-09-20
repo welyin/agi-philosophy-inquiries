@@ -1,0 +1,108 @@
+{
+  "date": "2026-09-17",
+  "route_round": "04",
+  "model_version": "C4",
+  "research_scope": "sufficiency construction and record-error validation only; no necessity arguments",
+  "runtime": {
+    "python": "3.14.6",
+    "numpy": "2.5.1",
+    "document_converter": "existing pypandoc bundled Pandoc",
+    "new_dependencies_installed": false
+  },
+  "result_generation": {
+    "command": "python -B -X utf8 research_physics_construction/envelope_limit.py --write-results",
+    "tests": 14,
+    "failures": 0,
+    "errors": 0
+  },
+  "route_regression": {
+    "command": "python -B -X utf8 -m unittest discover -s research_physics_construction -p \"*.py\"",
+    "tests": 70,
+    "new_tests": 14,
+    "previous_route_and_inheritance_tests": 56,
+    "failures": 0,
+    "errors": 0,
+    "seconds_reported": 2.798,
+    "legacy_necessity_test_suites_rerun": false
+  },
+  "inheritance": {
+    "command": "python -B -X utf8 research_physics_construction/inheritance.py --verify",
+    "numbered_notes": 224,
+    "source_artifacts": 705,
+    "tests": 5,
+    "failures": 0,
+    "errors": 0,
+    "source_integrity_is_not_a_reproof_of_theorems": true
+  },
+  "document_validation": {
+    "method": "pypandoc.convert_file to html5 with --mathml --fail-if-warnings",
+    "mathml_counts": {
+      "C4_CONTRACT.md": 21,
+      "research_note_04.md": 78,
+      "README.md": 0,
+      "RESEARCH_STATE.md": 0,
+      "repository_README.md": 0
+    },
+    "local_file_links_checked": true,
+    "forbidden_control_characters_checked": true,
+    "editor_diagnostics_clear": true
+  },
+  "analytic_sufficiency_results": [
+    "exact carrier demodulation of midpoint hopping gives the centered v-weighted difference",
+    "Taylor expansion gives v*partial_x+v_prime/2, with an explicit third-derivative residual bound",
+    "optical coordinate solution conserves the continuum norm for the fixed finite Fourier envelope",
+    "unitary Duhamel bound controls finite-time sampled-state error by a squared-spacing bound",
+    "normalization and midpoint quadrature control lattice versus integrated continuum cell records",
+    "same independent clock laws and subsequent fixed classical decisions do not amplify total-variation error",
+    "smooth alternating-sum bound controls global cross-carrier overlap without duplicating the full lattice space"
+  ],
+  "finite_checks": [
+    "eight physical qubits reproduce the one-excitation hopping restriction without leakage",
+    "both carrier signs, variable-speed optical characteristics and clock phase rules",
+    "residual and finite-time error inequalities at multiple mesh sizes",
+    "coherent two-carrier example with actual sampled normalization",
+    "exact finite Fourier cell integrals cross-checked by fine quadrature",
+    "position-plus-two-clock record law and continuum-derived decision rule",
+    "no early or incomplete record decision, finite serial message routes",
+    "norm and free Hamiltonian expectation conservation"
+  ],
+  "numerical_summary": {
+    "length": 20.0,
+    "duration": 2.0,
+    "site_counts": [32, 64, 128, 256],
+    "optical_fourier_modes": [-2, -1, 0, 1, 2],
+    "third_flux_derivative_upper_bound_diagnostic": 0.10228129706837581,
+    "N256_integrated_cell_record_TV_upper_bound": 0.002815663465567645,
+    "N256_right_cell_record_TV": 0.000040284801127698,
+    "N256_left_cell_record_TV": 0.0000639117328309729,
+    "N128_classification_predicted_success": 0.7270046252727648,
+    "N128_classification_exact_lattice_success": 0.7269087685444343,
+    "N128_classification_success_error_bound": 0.01126265386227058,
+    "N128_quantum_slots_before_detectors": 130,
+    "N128_raw_final_record_bits": 130,
+    "N128_total_classical_bit_hops": 4160,
+    "N128_all_records_ready_parameter": 652.0,
+    "sample_counts_generated": 0,
+    "laboratory_samples": 0
+  },
+  "scope_limits": {
+    "periodic_smooth_background_and_initial_envelope_are_declared_new_inputs": true,
+    "C3_finite_count_background_errors_propagated_into_C4": false,
+    "physical_chain_qubit_count_is_N_not_log2_N": true,
+    "mass_added": false,
+    "full_lattice_or_unbounded_time_uniform_approximation_claimed": false,
+    "two_carriers_are_two_arbitrary_disjoint_lattice_copies": false,
+    "coherent_carrier_microscopic_density_is_automatically_the_spinor_density_sum": false,
+    "postmeasurement_rough_states_are_automatically_covered_by_the_smooth_bound": false,
+    "float_bounds_are_directed_rounding_certificates": false,
+    "initial_carrier_preparation_and_local_readout_synchrony_implemented_autonomously": false,
+    "all_preparation_detector_energy_and_reset_costs_closed": false,
+    "massless_static_transport_is_full_relativistic_quantum_field_theory": false,
+    "background_backreaction_or_Einstein_equations_derived": false,
+    "C0_C1_C2_C3_numerical_code_and_results_modified": false,
+    "legacy_numbered_notes_code_and_results_modified": false,
+    "git_operations_performed": false,
+    "new_background_tasks_created": false,
+    "necessity_proofs_started": false
+  }
+}

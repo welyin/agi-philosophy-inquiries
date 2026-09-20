@@ -1,0 +1,714 @@
+{
+  "model_version": "C13",
+  "route_round": "13",
+  "research_scope": "sufficiency only",
+  "parameters": {
+    "cutoffs": [
+      20,
+      4,
+      4
+    ],
+    "scale": 1024.0,
+    "sites": 8,
+    "initial_mode_states": [
+      "C12 coherent amplitude 0.00025",
+      "vacuum",
+      "vacuum"
+    ]
+  },
+  "physical_mode_parameters": [
+    {
+      "index": 0,
+      "reference_frequency": 0.3544596913928512,
+      "physical_frequency": 0.00034615204237583127,
+      "physical_inertia": 107380104170.12172,
+      "sigma": 0.00011598174603518902,
+      "source_norm": 0.00036788772000709465,
+      "vacuum_coupling_norm": 4.266826011132758e-08,
+      "source_to_frequency_ratio": 0.00012326450486460202,
+      "source_sector_commutator_with_fundamental_max_norm": 0.0
+    },
+    {
+      "index": 1,
+      "reference_frequency": 0.7496710380871693,
+      "physical_frequency": 0.0007321006231320013,
+      "physical_inertia": 109690169620.29892,
+      "sigma": 7.890704139322165e-05,
+      "source_norm": 0.0001684948808491968,
+      "vacuum_coupling_norm": 1.3295432537713521e-08,
+      "source_to_frequency_ratio": 1.816066277998003e-05,
+      "source_sector_commutator_with_fundamental_max_norm": 8.819360084747337e-09
+    },
+    {
+      "index": 2,
+      "reference_frequency": 1.135530732959126,
+      "physical_frequency": 0.0011089167314053965,
+      "physical_inertia": 110142992563.2857,
+      "sigma": 6.398189489820835e-05,
+      "source_norm": 0.00018143054420458686,
+      "vacuum_coupling_norm": 1.1608270010622621e-08,
+      "source_to_frequency_ratio": 1.046811693057491e-05,
+      "source_sector_commutator_with_fundamental_max_norm": 5.811677200699559e-09
+    }
+  ],
+  "physical_reference_kinetic_gram": [
+    [
+      100.00551507819607,
+      -1.0596008445662441e-11,
+      -6.173964117728303e-12
+    ],
+    [
+      -1.0596008445662441e-11,
+      102.15693118078539,
+      -2.4374531906734553e-11
+    ],
+    [
+      -6.173964117728303e-12,
+      -2.4374531906734553e-11,
+      102.57865540989282
+    ]
+  ],
+  "normalized_kinetic_gram": [
+    [
+      1.0,
+      -1.0483261065577423e-13,
+      -6.095700554339963e-14
+    ],
+    [
+      -1.0483261065577423e-13,
+      1.0,
+      -2.3810793250994864e-13
+    ],
+    [
+      -6.095700554339963e-14,
+      -2.3810793250994864e-13,
+      1.0
+    ]
+  ],
+  "omission_budgets": [
+    {
+      "retained_modes": [
+        0
+      ],
+      "omitted_modes": [
+        1,
+        2
+      ],
+      "physical_duration": 2048.0,
+      "vacuum_coupling_squared_sum": 3.115204590044119e-16,
+      "full_state_vector_error_upper_bound": 3.6147081587370796e-05,
+      "same_full_record_TV_upper_bound": 3.6147081587370796e-05,
+      "retained_record_TV_upper_bound_after_omitted_trace": 1.306611507497445e-09,
+      "scope": "finite omitted set initially independent vacuum; only omitted interactions are removed, free vacuum phases retained; not an infinite-mode tail bound"
+    },
+    {
+      "retained_modes": [
+        0,
+        1
+      ],
+      "omitted_modes": [
+        2
+      ],
+      "physical_duration": 2048.0,
+      "vacuum_coupling_squared_sum": 1.347519326395205e-16,
+      "full_state_vector_error_upper_bound": 2.3773736981755127e-05,
+      "same_full_record_TV_upper_bound": 2.3773736981755127e-05,
+      "retained_record_TV_upper_bound_after_omitted_trace": 5.651905701176013e-10,
+      "scope": "finite omitted set initially independent vacuum; only omitted interactions are removed, free vacuum phases retained; not an infinite-mode tail bound"
+    },
+    {
+      "retained_modes": [
+        0,
+        1,
+        2
+      ],
+      "omitted_modes": [],
+      "physical_duration": 2048.0,
+      "vacuum_coupling_squared_sum": 0,
+      "full_state_vector_error_upper_bound": 0.0,
+      "same_full_record_TV_upper_bound": 0.0,
+      "retained_record_TV_upper_bound_after_omitted_trace": 0.0,
+      "scope": "finite omitted set initially independent vacuum; only omitted interactions are removed, free vacuum phases retained; not an infinite-mode tail bound"
+    }
+  ],
+  "current_Fock_budget": {
+    "sampled_residual_norm_trapezoid": 1.5445362126529293e-12,
+    "vector_interpolation_remainder_bound": 6.607742961401438e-10,
+    "residual_vector_second_derivative_bound": 6.495675640776069e-05,
+    "evolution_vector_error_upper_bound": 6.623188323527967e-10,
+    "coherent_initial_vector_error": 1.6498271815748364e-09,
+    "same_final_record_TV_upper_bound": 2.312146013927633e-09,
+    "quadrature_nodes": 257,
+    "scope": "finite three-mode linear completion; exact residual/interpolation inequalities evaluated with floating sparse exponential action, not a rounding certificate"
+  },
+  "C12_Fock_budget": {
+    "evolution": {
+      "boundary_residual_integral": 1.544536199657488e-12,
+      "midpoint_remainder_bound": 3.9026041432638677e-14,
+      "same_initial_embedded_vector_error_bound": 1.5835622410901267e-12,
+      "scope": "exact finite-spectrum Duhamel formula evaluated in floating point, not directed rounding"
+    },
+    "coherent_preparation": {
+      "discarded_coherent_number_probability": 2.7219297290631684e-18,
+      "initial_vector_error_bound": 1.6498271815748364e-09
+    },
+    "same_final_record_TV_upper_bound": 1.6514107438159266e-09,
+    "scope": "ideal unbounded linear-mode completion with the same final POVM; not the omitted nonlinear-fluid or other-mode error"
+  },
+  "preliminary_513_node_refined_budget": {
+    "sampled_residual_norm_trapezoid": 4.951949668840902e-15,
+    "vector_interpolation_remainder_bound": 1.8107826629179264e-10,
+    "residual_vector_second_derivative_bound": 7.120287155819354e-05,
+    "evolution_vector_error_upper_bound": 1.8108321824146148e-10,
+    "coherent_initial_vector_error": 4.387513012852075e-12,
+    "same_final_record_TV_upper_bound": 1.8547073125431355e-10,
+    "quadrature_nodes": 513,
+    "scope": "finite three-mode linear completion; exact residual/interpolation inequalities evaluated with floating sparse exponential action, not a rounding certificate"
+  },
+  "refined_three_mode_budget": {
+    "sampled_residual_norm_trapezoid": 4.951949665791116e-15,
+    "vector_interpolation_remainder_bound": 4.526956657294816e-11,
+    "residual_vector_second_derivative_bound": 7.120287155819354e-05,
+    "evolution_vector_error_upper_bound": 4.527451852261395e-11,
+    "coherent_initial_vector_error": 4.387513012852075e-12,
+    "same_final_record_TV_upper_bound": 4.966203153546603e-11,
+    "quadrature_nodes": 1025,
+    "scope": "finite three-mode linear completion; exact residual/interpolation inequalities evaluated with floating sparse exponential action, not a rounding certificate"
+  },
+  "refined_C12_budget": {
+    "evolution": {
+      "boundary_residual_integral": 4.9519469540593545e-15,
+      "midpoint_remainder_bound": 1.5359961324100864e-16,
+      "same_initial_embedded_vector_error_bound": 5.1055465673003635e-15,
+      "scope": "exact finite-spectrum Duhamel formula evaluated in floating point, not directed rounding"
+    },
+    "coherent_preparation": {
+      "discarded_coherent_number_probability": 1.9250270437946295e-23,
+      "initial_vector_error_bound": 4.387513012852075e-12
+    },
+    "same_final_record_TV_upper_bound": 4.392618559419375e-12,
+    "scope": "ideal unbounded linear-mode completion with the same final POVM; not the omitted nonlinear-fluid or other-mode error"
+  },
+  "cutoff_comparisons": [
+    {
+      "cutoffs": [
+        20,
+        2,
+        2
+      ],
+      "vector_difference_from_refined": 1.6647510114567964e-09,
+      "record_TV_difference_from_refined": 2.4378512936912082e-14,
+      "budget": {
+        "sampled_residual_norm_trapezoid": 2.677725363088349e-10,
+        "vector_interpolation_remainder_bound": 2.622367028453924e-09,
+        "residual_vector_second_derivative_bound": 6.444729209128363e-05,
+        "evolution_vector_error_upper_bound": 2.890139564762759e-09,
+        "coherent_initial_vector_error": 1.6498271815748364e-09,
+        "same_final_record_TV_upper_bound": 4.5399667463375956e-09,
+        "quadrature_nodes": 129,
+        "scope": "finite three-mode linear completion; exact residual/interpolation inequalities evaluated with floating sparse exponential action, not a rounding certificate"
+      }
+    },
+    {
+      "cutoffs": [
+        20,
+        3,
+        3
+      ],
+      "vector_difference_from_refined": 1.649926633775809e-09,
+      "record_TV_difference_from_refined": 2.350008209469408e-14,
+      "budget": {
+        "sampled_residual_norm_trapezoid": 1.544542150958802e-12,
+        "vector_interpolation_remainder_bound": 2.6327525101074643e-09,
+        "residual_vector_second_derivative_bound": 6.470252568840104e-05,
+        "evolution_vector_error_upper_bound": 2.634297052258423e-09,
+        "coherent_initial_vector_error": 1.6498271815748364e-09,
+        "same_final_record_TV_upper_bound": 4.284124233833259e-09,
+        "quadrature_nodes": 129,
+        "scope": "finite three-mode linear completion; exact residual/interpolation inequalities evaluated with floating sparse exponential action, not a rounding certificate"
+      }
+    },
+    {
+      "cutoffs": [
+        20,
+        4,
+        4
+      ],
+      "vector_difference_from_refined": 1.6499266337297658e-09,
+      "record_TV_difference_from_refined": 2.3288012149541294e-14,
+      "budget": {
+        "sampled_residual_norm_trapezoid": 1.5445362273869177e-12,
+        "vector_interpolation_remainder_bound": 2.643097184560575e-09,
+        "residual_vector_second_derivative_bound": 6.495675640776069e-05,
+        "evolution_vector_error_upper_bound": 2.644641720787962e-09,
+        "coherent_initial_vector_error": 1.6498271815748364e-09,
+        "same_final_record_TV_upper_bound": 4.2944689023627984e-09,
+        "quadrature_nodes": 129,
+        "scope": "finite three-mode linear completion; exact residual/interpolation inequalities evaluated with floating sparse exponential action, not a rounding certificate"
+      }
+    }
+  ],
+  "three_mode_records": [
+    [
+      [
+        [
+          [
+            [
+              0.06365950212680013,
+              0.00498052175206321
+            ],
+            [
+              0.1273784976326799,
+              0.009965698081349382
+            ]
+          ],
+          [
+            [
+              2.31091867504855e-12,
+              7.318218403782276e-12
+            ],
+            [
+              4.623997033351973e-12,
+              1.4643276093564814e-11
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              7.076417022864141e-12,
+              7.529811174009032e-12
+            ],
+            [
+              1.4159447354761515e-11,
+              1.506665937934289e-11
+            ]
+          ],
+          [
+            [
+              1.4171129719946921e-21,
+              1.121963086371184e-21
+            ],
+            [
+              2.8355503156295415e-21,
+              2.2449747102423928e-21
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            [
+              0.1397233683127072,
+              0.010937347818531392
+            ],
+            [
+              0.27957731595826363,
+              0.02188491720270789
+            ]
+          ],
+          [
+            [
+              5.073042157886623e-12,
+              1.6062894926479652e-11
+            ],
+            [
+              1.015082535850995e-11,
+              3.214080153016453e-11
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              1.5532901912906517e-11,
+              1.652754597268165e-11
+            ],
+            [
+              3.108032019478904e-11,
+              3.307053786506031e-11
+            ]
+          ],
+          [
+            [
+              3.1105795724998225e-21,
+              2.4628025149529522e-21
+            ],
+            [
+              6.2240661562624015e-21,
+              4.927906657137114e-21
+            ]
+          ]
+        ]
+      ]
+    ],
+    [
+      [
+        [
+          [
+            [
+              0.033071979851208154,
+              0.0025874490049976467
+            ],
+            [
+              0.06617486732450699,
+              0.0051773161263698195
+            ]
+          ],
+          [
+            [
+              4.448122200663001e-13,
+              3.651880630322055e-12
+            ],
+            [
+              8.900401421274611e-13,
+              7.307174148138125e-12
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              8.222694586101545e-13,
+              4.1633127734246365e-12
+            ],
+            [
+              1.6453073741980085e-12,
+              8.330516396396924e-12
+            ]
+          ],
+          [
+            [
+              3.9093435751771184e-22,
+              5.449704536977714e-23
+            ],
+            [
+              7.822340651426367e-22,
+              1.0904502128834383e-22
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            [
+              0.07258732395575684,
+              0.005682033170733643
+            ],
+            [
+              0.14524248484137078,
+              0.011369376520499342
+            ]
+          ],
+          [
+            [
+              9.766655919337428e-13,
+              8.01524002200595e-12
+            ],
+            [
+              1.9542439327008344e-12,
+              1.6037970735850798e-11
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              1.804872177598946e-12,
+              9.138017300063518e-12
+            ],
+            [
+              3.6114311095874627e-12,
+              1.8284574590373706e-11
+            ]
+          ],
+          [
+            [
+              8.580702638849993e-22,
+              1.1961839659094711e-22
+            ],
+            [
+              1.716942442610387e-21,
+              2.3934858328982188e-22
+            ]
+          ]
+        ]
+      ]
+    ]
+  ],
+  "retained_C12_record_marginal": [
+    [
+      [
+        [
+          0.06365950213618747,
+          0.004980521766911239
+        ],
+        [
+          0.12737849765146333,
+          0.009965698111059318
+        ]
+      ],
+      [
+        [
+          0.13972336833331317,
+          0.010937347851121833
+        ],
+        [
+          0.27957731599949476,
+          0.02188491726791923
+        ]
+      ]
+    ],
+    [
+      [
+        [
+          0.03307197985247524,
+          0.00258744901281284
+        ],
+        [
+          0.06617486732704234,
+          0.005177316142007509
+        ]
+      ],
+      [
+        [
+          0.07258732395853838,
+          0.005682033187886901
+        ],
+        [
+          0.14524248484693647,
+          0.011369376554821889
+        ]
+      ]
+    ]
+  ],
+  "single_mode_comparison": {
+    "current_retained_record_TV_difference": 1.7547400360008736e-10,
+    "refined_retained_record_TV_difference": 1.7547224307259968e-10,
+    "preliminary_513_node_numerical_allowance_sum": 1.8986334981373292e-10,
+    "refined_numerical_allowance_sum": 5.40546500948854e-11,
+    "ideal_retained_record_difference_lower_with_Fock_allowance": 1.2141759297771429e-10,
+    "ideal_retained_record_analytic_upper_bound": 1.306611507497445e-09,
+    "current_three_mode_vs_two_mode_record_TV_after_third_trace": 8.420069351308859e-11,
+    "not_a_laboratory_detection_or_rounding_certificate": true
+  },
+  "time_rows": [
+    {
+      "reference_time": 0.0,
+      "physical_time": 0.0,
+      "norm": 1.0,
+      "energies": {
+        "matter": 0.0003133018939189292,
+        "background": 0.0014956602250448335,
+        "interaction": 1.0775997288525004e-08,
+        "hamiltonian": 0.0018089728949610509
+      },
+      "individual_mode_energies": [
+        0.0005751515477761342,
+        0.00036605031156600084,
+        0.0005544583657026982
+      ],
+      "mode_mean_amplitudes": [
+        0.00025000000000000017,
+        0.0,
+        0.0
+      ],
+      "total_surface_fraction_second_moment": 8.627176946956804e-08,
+      "overtone_nonvacuum_probabilities": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "reference_time": 1.0,
+      "physical_time": 1024.0,
+      "norm": 0.9999999999999972,
+      "energies": {
+        "matter": 0.00031330164187441477,
+        "background": 0.0014956609034549233,
+        "interaction": 1.0349631701300187e-08,
+        "hamiltonian": 0.00180897289496104
+      },
+      "individual_mode_energies": [
+        0.0005751522260965512,
+        0.0003660503116047317,
+        0.0005544583657536403
+      ],
+      "mode_mean_amplitudes": [
+        0.0002344583303713293,
+        7.147914752488723e-11,
+        -9.220476725515404e-11
+      ],
+      "total_surface_fraction_second_moment": 7.874246843280788e-08,
+      "overtone_nonvacuum_probabilities": [
+        5.2907127578796147e-11,
+        4.594158136435344e-11
+      ]
+    },
+    {
+      "reference_time": 2.0,
+      "physical_time": 2048.0,
+      "norm": 0.9999999999999959,
+      "energies": {
+        "matter": 0.00031330110325628795,
+        "background": 0.001495662936211195,
+        "interaction": 8.855493552977564e-09,
+        "hamiltonian": 0.0018089728949610357
+      },
+      "individual_mode_energies": [
+        0.0005751542586590473,
+        0.0003660503117035182,
+        0.0005544583658486291
+      ],
+      "mode_mean_amplitudes": [
+        0.0001897656338872965,
+        2.525753474672968e-10,
+        -2.6314581290857726e-10
+      ],
+      "total_surface_fraction_second_moment": 5.978276127931853e-08,
+      "overtone_nonvacuum_probabilities": [
+        1.878439420852841e-10,
+        1.316020016305493e-10
+      ]
+    }
+  ],
+  "three_mode_linear_window_budget": {
+    "ideal_three_mode_total_energy": 0.0018089728949610506,
+    "sum_absolute_amplitudes_squared_expectation_upper_bound": 1.335340165783762e-06,
+    "pointwise_probability_sum_absolute_amplitudes_above_001": 0.013353401657837619,
+    "scope": "finite three-mode energy/Cauchy/Markov bound for ideal coherent fundamental and two independent vacua; not an infinite-mode or nonlinear error bound"
+  },
+  "resources": {
+    "data_qubits": 8,
+    "clock_qubits": 2,
+    "retained_collective_modes": 3,
+    "default_cutoffs": [
+      20,
+      4,
+      4
+    ],
+    "occupied_complex_sector_dimension": 10240,
+    "refined_cutoffs": [
+      24,
+      5,
+      5
+    ],
+    "refined_occupied_complex_sector_dimension": 19200,
+    "raw_bits": 13,
+    "coarse_joint_outcomes": 64,
+    "independent_fair_bits": 12,
+    "threshold_table_bits": 104,
+    "bit_hops": 20,
+    "supplied_hop_interval": 1024.0,
+    "all_records_ready_at": 22528.0,
+    "resets": 0
+  },
+  "terminal_schedule": [
+    {
+      "kind": "position",
+      "source_site": 0,
+      "hops": 0,
+      "read_at": 2048.0,
+      "received_at": 2048.0
+    },
+    {
+      "kind": "collective_mode_vacuum_bit",
+      "mode_index": 0,
+      "source_site": 0,
+      "hops": 0,
+      "read_at": 2048.0,
+      "received_at": 2048.0
+    },
+    {
+      "kind": "collective_mode_vacuum_bit",
+      "mode_index": 1,
+      "source_site": 0,
+      "hops": 0,
+      "read_at": 2048.0,
+      "received_at": 2048.0
+    },
+    {
+      "kind": "collective_mode_vacuum_bit",
+      "mode_index": 2,
+      "source_site": 0,
+      "hops": 0,
+      "read_at": 2048.0,
+      "received_at": 2048.0
+    },
+    {
+      "kind": "position",
+      "source_site": 1,
+      "hops": 1,
+      "read_at": 2048.0,
+      "received_at": 3072.0
+    },
+    {
+      "kind": "position",
+      "source_site": 2,
+      "hops": 2,
+      "read_at": 2048.0,
+      "received_at": 5120.0
+    },
+    {
+      "kind": "position",
+      "source_site": 3,
+      "hops": 3,
+      "read_at": 2048.0,
+      "received_at": 8192.0
+    },
+    {
+      "kind": "position",
+      "source_site": 4,
+      "hops": 4,
+      "read_at": 2048.0,
+      "received_at": 12288.0
+    },
+    {
+      "kind": "position",
+      "source_site": 5,
+      "hops": 3,
+      "read_at": 2048.0,
+      "received_at": 15360.0
+    },
+    {
+      "kind": "position",
+      "source_site": 6,
+      "hops": 2,
+      "read_at": 2048.0,
+      "received_at": 17408.0
+    },
+    {
+      "kind": "position",
+      "source_site": 7,
+      "hops": 1,
+      "read_at": 2048.0,
+      "received_at": 18432.0
+    },
+    {
+      "kind": "clock",
+      "source_site": 0,
+      "hops": 0,
+      "read_at": 2048.0,
+      "received_at": 18432.0
+    },
+    {
+      "kind": "clock",
+      "source_site": 4,
+      "hops": 4,
+      "read_at": 2048.0,
+      "received_at": 22528.0
+    }
+  ],
+  "limits": [
+    "only the first three inherited radial modes, not a bound on all higher radial or nonradial modes",
+    "independent vacuum preparation of the two added modes is a new explicit input needed by the reduced-record bound",
+    "higher frequency alone does not remove virtual or vacuum effects; no rotating-wave or adiabatic elimination is assumed",
+    "each finite-mode linear Hamiltonian has a lower-bounded oscillator completion; no infinite-mode source summability or renormalization proved",
+    "three collective vacuum readouts are supplied instruments, not derived local instantaneous detectors",
+    "energy closed only for the finite linear multimode model; nonlinear constraints, higher-amplitude terms and material interactions remain outside scope",
+    "kinetic off-diagonal numerical residuals, sparse exponential roundoff and background-mode errors are not interval certified",
+    "no experiments, samples, necessity proofs, or derivation of adopted gravity and quantum rules from cognition"
+  ]
+}

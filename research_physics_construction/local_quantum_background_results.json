@@ -1,0 +1,553 @@
+{
+  "model_version": "C7",
+  "route_round": "07",
+  "research_scope": "sufficiency only",
+  "parameters": {
+    "sites": 8,
+    "cutoff": 8,
+    "frequency": 1.0,
+    "coupling": 0.15,
+    "exchange": 0.3,
+    "mass": 0.35,
+    "hopping_scale": 1.0
+  },
+  "background_sites_and_clock_sites": [
+    0,
+    1
+  ],
+  "Hamiltonian": "H_C5(hopping_scale)+H_clocks+Omega*(n_A+n_C)+exchange*(a_A^dag a_C+a_A a_C^dag)+epsilon*(S_A F_A+S_C F_C)",
+  "coefficient_lower_bound": 0.925,
+  "time_rows": [
+    {
+      "duration": 0.0,
+      "norm": 1.0,
+      "energies": {
+        "matter": 0.3225546400790587,
+        "background_free": 0.0,
+        "background_link": 0.0,
+        "interaction": 0.0,
+        "hamiltonian": 0.3225546400790587
+      },
+      "mode_numbers": [
+        0.0,
+        0.0
+      ],
+      "mode_nonvacuum_probabilities": [
+        0.0,
+        0.0
+      ],
+      "number_current_A_to_C": -0.0,
+      "clock_A_X_plus_probability": 1.0,
+      "clock_C_Y_plus_probability": 0.5000000000000001,
+      "data_purity": 1.0000000000000004
+    },
+    {
+      "duration": 0.5,
+      "norm": 1.0000000000000007,
+      "energies": {
+        "matter": 0.3225548687279952,
+        "background_free": 0.0039021036119182588,
+        "background_link": -2.9676717871165173e-05,
+        "interaction": -0.0038726555429830735,
+        "hamiltonian": 0.32255464007905926
+      },
+      "mode_numbers": [
+        0.001707244421706875,
+        0.002194859190211385
+      ],
+      "mode_nonvacuum_probabilities": [
+        0.0008636790175614924,
+        0.0011067300853217317
+      ],
+      "number_current_A_to_C": -2.2105298642964897e-05,
+      "clock_A_X_plus_probability": 0.9189100371070379,
+      "clock_C_Y_plus_probability": 0.8024580339597414,
+      "data_purity": 0.9999901232937274
+    },
+    {
+      "duration": 1.0,
+      "norm": 1.0000000000000004,
+      "energies": {
+        "matter": 0.32255554005346504,
+        "background_free": 0.011997253024449582,
+        "background_link": -0.00037994957873319177,
+        "interaction": -0.011618203420122906,
+        "hamiltonian": 0.322554640079059
+      },
+      "mode_numbers": [
+        0.005276669661393051,
+        0.006720583363056529
+      ],
+      "mode_nonvacuum_probabilities": [
+        0.002771766900840485,
+        0.0034865398981914976
+      ],
+      "number_current_A_to_C": -0.00013373767367846507,
+      "clock_A_X_plus_probability": 0.7034333142041189,
+      "clock_C_Y_plus_probability": 0.9788856920930544,
+      "data_purity": 0.9999684786519407
+    },
+    {
+      "duration": 2.0,
+      "norm": 1.0000000000000007,
+      "energies": {
+        "matter": 0.3225583583936894,
+        "background_free": 0.016745107972405616,
+        "background_link": -0.0023709789421479206,
+        "interaction": -0.014377847344887828,
+        "hamiltonian": 0.322554640079059
+      },
+      "mode_numbers": [
+        0.007566736032208354,
+        0.009178371940197265
+      ],
+      "mode_nonvacuum_probabilities": [
+        0.004711492922067361,
+        0.00550207613892336
+      ],
+      "number_current_A_to_C": -0.00031534512166900465,
+      "clock_A_X_plus_probability": 0.1694320297008013,
+      "clock_C_Y_plus_probability": 0.7534497518589482,
+      "data_purity": 0.9999419229831568
+    }
+  ],
+  "default_cutoff_record_budget": {
+    "sampled_boundary_residual_integral": 0.0002471447496862631,
+    "lipschitz_midpoint_remainder_bound": 9.221860579388655e-06,
+    "norm_error_upper_bound": 0.0002563666102656517,
+    "same_final_record_TV_upper_bound": 0.0002563666102656517,
+    "quadrature_samples": 256,
+    "oscillator_stability_margin": 0.38646250047003883,
+    "scope": "two-mode rectangular Fock projection, exact spectral formula evaluated in floating point, not directed rounding"
+  },
+  "cutoff_comparisons": [
+    {
+      "cutoff": 4,
+      "vector_difference_from_D10": 0.006962112564679592,
+      "budget": {
+        "sampled_boundary_residual_integral": 0.020442176053966983,
+        "lipschitz_midpoint_remainder_bound": 0.00013869849535211152,
+        "norm_error_upper_bound": 0.020580874549319096,
+        "same_final_record_TV_upper_bound": 0.020580874549319096,
+        "quadrature_samples": 256,
+        "oscillator_stability_margin": 0.38646250047003883,
+        "scope": "two-mode rectangular Fock projection, exact spectral formula evaluated in floating point, not directed rounding"
+      }
+    },
+    {
+      "cutoff": 6,
+      "vector_difference_from_D10": 0.0005872496484377405,
+      "budget": {
+        "sampled_boundary_residual_integral": 0.0021863357359722694,
+        "lipschitz_midpoint_remainder_bound": 3.920673562044239e-05,
+        "norm_error_upper_bound": 0.002225542471592712,
+        "same_final_record_TV_upper_bound": 0.002225542471592712,
+        "quadrature_samples": 256,
+        "oscillator_stability_margin": 0.38646250047003883,
+        "scope": "two-mode rectangular Fock projection, exact spectral formula evaluated in floating point, not directed rounding"
+      }
+    },
+    {
+      "cutoff": 8,
+      "vector_difference_from_D10": 5.684960954463837e-05,
+      "budget": {
+        "sampled_boundary_residual_integral": 0.0002471447496862631,
+        "lipschitz_midpoint_remainder_bound": 9.221860579388655e-06,
+        "norm_error_upper_bound": 0.0002563666102656517,
+        "same_final_record_TV_upper_bound": 0.0002563666102656517,
+        "quadrature_samples": 256,
+        "oscillator_stability_margin": 0.38646250047003883,
+        "scope": "two-mode rectangular Fock projection, exact spectral formula evaluated in floating point, not directed rounding"
+      }
+    }
+  ],
+  "D10_reference_own_budget": {
+    "sampled_boundary_residual_integral": 3.1796424379472e-05,
+    "lipschitz_midpoint_remainder_bound": 1.8200919372280694e-06,
+    "norm_error_upper_bound": 3.3616516316700065e-05,
+    "same_final_record_TV_upper_bound": 3.3616516316700065e-05,
+    "quadrature_samples": 256,
+    "oscillator_stability_margin": 0.38646250047003883,
+    "scope": "two-mode rectangular Fock projection, exact spectral formula evaluated in floating point, not directed rounding"
+  },
+  "joint_terminal_probabilities_data_modeA_modeC_clockA_clockC": [
+    [
+      [
+        [
+          [
+            0.08397553149043994,
+            0.02709033444525049
+          ],
+          [
+            0.41886448870289755,
+            0.13594758620957378
+          ]
+        ],
+        [
+          [
+            0.00011056871777034558,
+            0.0002827948700975438
+          ],
+          [
+            0.0008558696818521828,
+            0.0011220861928777817
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            0.0011819915309138028,
+            0.00043745022981758796
+          ],
+          [
+            0.00014098792507031795,
+            0.00010494521753420303
+          ]
+        ],
+        [
+          [
+            0.0006335240921364226,
+            4.631710572043003e-05
+          ],
+          [
+            0.00016603399485048105,
+            0.00044540964988637265
+          ]
+        ]
+      ]
+    ],
+    [
+      [
+        [
+          [
+            0.04108328105635111,
+            0.01326620885439098
+          ],
+          [
+            0.2049181372322473,
+            0.06657319425805036
+          ]
+        ],
+        [
+          [
+            5.39713551961787e-05,
+            0.00014341530215811985
+          ],
+          [
+            0.0004259702713025922,
+            0.00057506843747818
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            0.0005789426612542208,
+            0.0002148336588767969
+          ],
+          [
+            6.829656113236454e-05,
+            5.171382727763157e-05
+          ]
+        ],
+        [
+          [
+            0.00030986368759247673,
+            2.30006428347549e-05
+          ],
+          [
+            8.22928979413138e-05,
+            0.0002258892392281856
+          ]
+        ]
+      ]
+    ]
+  ],
+  "default_reciprocal_diagnostics": {
+    "background_distance_for_changed_carrier_preparation": 0.002873459538118394,
+    "data_distance_for_changed_mode_A_preparation": 0.0019341279005127038,
+    "clock_distance_for_changed_mode_A_preparation": 0.15307275599571613,
+    "scope": "finite D8 state diagnostics, not individually cutoff-certified trace distances"
+  },
+  "coarser_source_response": {
+    "cutoff": 8,
+    "duration": 2.0,
+    "rows": [
+      {
+        "exchange": 0.0,
+        "hopping_scale": 0.0,
+        "source_occupied_sites": [
+          0,
+          2
+        ],
+        "clock_C_Y_plus_probabilities": [
+          0.7536455012534082,
+          0.753645501253408
+        ],
+        "absolute_remote_record_difference": 2.220446049250313e-16,
+        "cutoff_budgets": [
+          {
+            "sampled_boundary_residual_integral": 0.0005254491299842899,
+            "lipschitz_midpoint_remainder_bound": 8.020227077386028e-06,
+            "norm_error_upper_bound": 0.000533469357061676,
+            "same_final_record_TV_upper_bound": 0.000533469357061676,
+            "quadrature_samples": 256,
+            "oscillator_stability_margin": 0.6905582430278994,
+            "scope": "two-mode rectangular Fock projection, exact spectral formula evaluated in floating point, not directed rounding"
+          },
+          {
+            "sampled_boundary_residual_integral": 0.0002471122052644702,
+            "lipschitz_midpoint_remainder_bound": 3.8084941535866257e-06,
+            "norm_error_upper_bound": 0.00025092069941805685,
+            "same_final_record_TV_upper_bound": 0.00025092069941805685,
+            "quadrature_samples": 256,
+            "oscillator_stability_margin": 0.6905582430278994,
+            "scope": "two-mode rectangular Fock projection, exact spectral formula evaluated in floating point, not directed rounding"
+          }
+        ],
+        "difference_lower_bound_with_cutoff_allowance": 0.0,
+        "mode_C_trace_distance": 1.2646735541096966e-16
+      },
+      {
+        "exchange": 0.3,
+        "hopping_scale": 0.0,
+        "source_occupied_sites": [
+          0,
+          2
+        ],
+        "clock_C_Y_plus_probabilities": [
+          0.7531540790066322,
+          0.7534584040741172
+        ],
+        "absolute_remote_record_difference": 0.00030432506748501176,
+        "cutoff_budgets": [
+          {
+            "sampled_boundary_residual_integral": 0.0004836944956939891,
+            "lipschitz_midpoint_remainder_bound": 9.153664544673749e-06,
+            "norm_error_upper_bound": 0.0004928481602386629,
+            "same_final_record_TV_upper_bound": 0.0004928481602386629,
+            "quadrature_samples": 256,
+            "oscillator_stability_margin": 0.3905582430278993,
+            "scope": "two-mode rectangular Fock projection, exact spectral formula evaluated in floating point, not directed rounding"
+          },
+          {
+            "sampled_boundary_residual_integral": 0.00021569623852735447,
+            "lipschitz_midpoint_remainder_bound": 4.3515508633456235e-06,
+            "norm_error_upper_bound": 0.0002200477893907001,
+            "same_final_record_TV_upper_bound": 0.0002200477893907001,
+            "quadrature_samples": 256,
+            "oscillator_stability_margin": 0.3905582430278993,
+            "scope": "two-mode rectangular Fock projection, exact spectral formula evaluated in floating point, not directed rounding"
+          }
+        ],
+        "difference_lower_bound_with_cutoff_allowance": 0.0,
+        "mode_C_trace_distance": 0.006657821304578508
+      }
+    ],
+    "control_scope": "data hopping and its bond modulation are held at zero for the entire interval; this is a declared diagnostic, not the default chain"
+  },
+  "isolated_source_response": {
+    "cutoff": 10,
+    "duration": 2.0,
+    "rows": [
+      {
+        "exchange": 0.0,
+        "hopping_scale": 0.0,
+        "source_occupied_sites": [
+          0,
+          2
+        ],
+        "clock_C_Y_plus_probabilities": [
+          0.7536455021003339,
+          0.7536455021003332
+        ],
+        "absolute_remote_record_difference": 6.661338147750939e-16,
+        "cutoff_budgets": [
+          {
+            "sampled_boundary_residual_integral": 7.03750191890432e-05,
+            "lipschitz_midpoint_remainder_bound": 1.5220436742949344e-06,
+            "norm_error_upper_bound": 7.189706286333813e-05,
+            "same_final_record_TV_upper_bound": 7.189706286333813e-05,
+            "quadrature_samples": 256,
+            "oscillator_stability_margin": 0.6905582430278994,
+            "scope": "two-mode rectangular Fock projection, exact spectral formula evaluated in floating point, not directed rounding"
+          },
+          {
+            "sampled_boundary_residual_integral": 2.672109107511201e-05,
+            "lipschitz_midpoint_remainder_bound": 5.796756565032054e-07,
+            "norm_error_upper_bound": 2.7300766731615216e-05,
+            "same_final_record_TV_upper_bound": 2.7300766731615216e-05,
+            "quadrature_samples": 256,
+            "oscillator_stability_margin": 0.6905582430278994,
+            "scope": "two-mode rectangular Fock projection, exact spectral formula evaluated in floating point, not directed rounding"
+          }
+        ],
+        "difference_lower_bound_with_cutoff_allowance": 0.0,
+        "mode_C_trace_distance": 6.295692988409495e-16
+      },
+      {
+        "exchange": 0.3,
+        "hopping_scale": 0.0,
+        "source_occupied_sites": [
+          0,
+          2
+        ],
+        "clock_C_Y_plus_probabilities": [
+          0.7531540770979606,
+          0.7534584056792845
+        ],
+        "absolute_remote_record_difference": 0.0003043285813238983,
+        "cutoff_budgets": [
+          {
+            "sampled_boundary_residual_integral": 6.288632305833232e-05,
+            "lipschitz_midpoint_remainder_bound": 1.772335037597163e-06,
+            "norm_error_upper_bound": 6.465865809592948e-05,
+            "same_final_record_TV_upper_bound": 6.465865809592948e-05,
+            "quadrature_samples": 256,
+            "oscillator_stability_margin": 0.3905582430278993,
+            "scope": "two-mode rectangular Fock projection, exact spectral formula evaluated in floating point, not directed rounding"
+          },
+          {
+            "sampled_boundary_residual_integral": 2.2177821400245738e-05,
+            "lipschitz_midpoint_remainder_bound": 7.372401132423066e-07,
+            "norm_error_upper_bound": 2.2915061513488046e-05,
+            "same_final_record_TV_upper_bound": 2.2915061513488046e-05,
+            "quadrature_samples": 256,
+            "oscillator_stability_margin": 0.3905582430278993,
+            "scope": "two-mode rectangular Fock projection, exact spectral formula evaluated in floating point, not directed rounding"
+          }
+        ],
+        "difference_lower_bound_with_cutoff_allowance": 0.00021675486171448074,
+        "mode_C_trace_distance": 0.006657823636696444
+      }
+    ],
+    "control_scope": "data hopping and its bond modulation are held at zero for the entire interval; this is a declared diagnostic, not the default chain"
+  },
+  "resources": {
+    "chain_qubits": 8,
+    "clock_qubits": 2,
+    "background_modes": 2,
+    "levels_per_background_mode": 8,
+    "quantum_subsystems_before_detectors": 12,
+    "occupied_complex_sector_dimension": 2048,
+    "classical_raw_outcome_bits": 12,
+    "coarse_joint_outcomes": 32,
+    "classical_bit_hops": 18,
+    "final_collection_parameter": 47.0,
+    "independent_fair_output_bits": 12,
+    "fixed_threshold_table_bits": 104,
+    "resets": 0,
+    "preparation_synchrony_detector_and_switch_energy_costs_closed": false
+  },
+  "source_task_resources": {
+    "chain_qubits": 8,
+    "clock_qubits": 2,
+    "background_modes": 2,
+    "levels_per_background_mode": 10,
+    "quantum_subsystems_before_detectors": 12,
+    "occupied_complex_sector_dimension": 3200,
+    "classical_raw_outcome_bits": 12,
+    "coarse_joint_outcomes": 32,
+    "classical_bit_hops": 18,
+    "final_collection_parameter": 47.0,
+    "independent_fair_output_bits": 12,
+    "fixed_threshold_table_bits": 104,
+    "resets": 0,
+    "preparation_synchrony_detector_and_switch_energy_costs_closed": false
+  },
+  "terminal_schedule": [
+    {
+      "kind": "position",
+      "source_site": 0,
+      "read_at": 2.0,
+      "hops": 0,
+      "received_at_site_zero": 2.0
+    },
+    {
+      "kind": "position",
+      "source_site": 1,
+      "read_at": 2.0,
+      "hops": 1,
+      "received_at_site_zero": 4.5
+    },
+    {
+      "kind": "position",
+      "source_site": 2,
+      "read_at": 2.0,
+      "hops": 2,
+      "received_at_site_zero": 9.5
+    },
+    {
+      "kind": "position",
+      "source_site": 3,
+      "read_at": 2.0,
+      "hops": 3,
+      "received_at_site_zero": 17.0
+    },
+    {
+      "kind": "position",
+      "source_site": 4,
+      "read_at": 2.0,
+      "hops": 4,
+      "received_at_site_zero": 27.0
+    },
+    {
+      "kind": "position",
+      "source_site": 5,
+      "read_at": 2.0,
+      "hops": 3,
+      "received_at_site_zero": 34.5
+    },
+    {
+      "kind": "position",
+      "source_site": 6,
+      "read_at": 2.0,
+      "hops": 2,
+      "received_at_site_zero": 39.5
+    },
+    {
+      "kind": "position",
+      "source_site": 7,
+      "read_at": 2.0,
+      "hops": 1,
+      "received_at_site_zero": 42.0
+    },
+    {
+      "kind": "clock",
+      "source_site": 0,
+      "read_at": 2.0,
+      "hops": 0,
+      "received_at_site_zero": 42.0
+    },
+    {
+      "kind": "clock",
+      "source_site": 1,
+      "read_at": 2.0,
+      "hops": 1,
+      "received_at_site_zero": 44.5
+    },
+    {
+      "kind": "background_vacuum_bit",
+      "source_site": 0,
+      "read_at": 2.0,
+      "hops": 0,
+      "received_at_site_zero": 44.5
+    },
+    {
+      "kind": "background_vacuum_bit",
+      "source_site": 1,
+      "read_at": 2.0,
+      "hops": 1,
+      "received_at_site_zero": 47.0
+    }
+  ],
+  "limitations": [
+    "two-site background patch, not a spatial continuum or Einstein dynamics",
+    "clock C relocated from the opposite site to adjacent site 1 as an explicit C7 input",
+    "default chain still propagates; the held-hopping task separately isolates a background path",
+    "quantum rules, oscillator law, local coupling and clock synchrony remain inputs",
+    "C5 static continuum bound not extended; no uniform stability claim under refinement",
+    "no sample counts or laboratory evidence; mode budget is not floating-point rounding certification"
+  ]
+}

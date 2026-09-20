@@ -1,0 +1,71 @@
+{
+  "round": 213,
+  "antecedent_rounds": [
+    57,
+    80,
+    85,
+    171,
+    183,
+    189,
+    210,
+    211,
+    212
+  ],
+  "scope": "Scope audit inside the declared standard complex two-qubit theory, not a cognitive derivation",
+  "complex_carrier_dimension": 4,
+  "traceless_question_dimension": 15,
+  "question_labels": [
+    "IX",
+    "IY",
+    "IZ",
+    "XI",
+    "XX",
+    "XY",
+    "XZ",
+    "YI",
+    "YX",
+    "YY",
+    "YZ",
+    "ZI",
+    "ZX",
+    "ZY",
+    "ZZ"
+  ],
+  "generator_definition": "D(x)y = coefficients(-i[Q(x),Q(y)]/2)",
+  "linear_skew_and_own_question_preserving": true,
+  "injective_generator_gram_exact": "8 I_15",
+  "commutator_closure": "[D(x),D(y)]=D(D(x)y)",
+  "covariance_group_used": "unitary-induced adjoint SU(4) rotations (global phase invisible)",
+  "full_SO15_covariance": false,
+  "commuting_pair_witness": {
+    "fixed": "XI",
+    "before": "IX",
+    "after": "ZI",
+    "defect_on_rotated_input_norm": "1"
+  },
+  "cone_witness": {
+    "input": "(I+XI)/4",
+    "rotated": "(I+(XI+IX)/sqrt(2))/4",
+    "same_coordinate_norm": true,
+    "same_purity_trace_square": true,
+    "minimum_eigenvalue_exact": "(1-sqrt(2))/4",
+    "minimum_eigenvalue_diagnostic": -0.10355339059327379,
+    "negative_effect": "projector onto |-X> tensor |-X>",
+    "question_fourth_moments": [
+      4,
+      8
+    ]
+  },
+  "full_composite_state_space_is_a_ball": false,
+  "local_real_disk_and_complex_qubit_interfaces_retained": true,
+  "common_J_real_carrier_dimension": 8,
+  "round211_all_SO_n_condition_can_be_imposed_on_every_quantum_composite": false,
+  "round211_conditional_theorem_refuted": false,
+  "weaker_group_covariance_uniquely_selects_quantum_theory": false,
+  "cognitive_necessity_or_quantum_incompleteness_proved": false,
+  "automated_checks": {
+    "run": 10,
+    "failures": 0,
+    "errors": 0
+  }
+}

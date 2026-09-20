@@ -1,0 +1,417 @@
+{
+  "model_version": "C6",
+  "route_round": "06",
+  "research_scope": "sufficiency only",
+  "parameters": {
+    "sites": 16,
+    "cutoff": 10,
+    "frequency": 1.0,
+    "coupling": 0.2,
+    "mass": 0.35
+  },
+  "Hamiltonian": "H_C5 + sum_clock(omega_j Z_j/2) + Omega*n + epsilon*(B_data + sum_clock(omega_j f_j Z_j/2))*(q^2-1/2)",
+  "background_deformation": "ell_j=ell0_j*(I+epsilon*f_j*(q^2-1/2)); same factor on local hopping speed; b0 fixed",
+  "mode_profile": "f(x)=(1+cos(2*pi*(x-0.35L)/L))/2",
+  "projected_q_squared_is_not_square_of_truncated_q": true,
+  "coefficient_positivity_lower_bound": 0.9,
+  "sufficient_oscillator_stability_margin": 0.5596290743873209,
+  "time_rows": [
+    {
+      "duration": 0.0,
+      "norm": 0.9999999999999999,
+      "energies": {
+        "matter": 0.3176914594578757,
+        "background": 0.0,
+        "interaction": 0.0,
+        "hamiltonian": 0.3176914594578757
+      },
+      "background_number": 0.0,
+      "background_position_mean": 0.0,
+      "background_projected_position_square": 0.5000000000000001,
+      "background_nonvacuum_probability": 0.0,
+      "background_entropy_bits": 0.0,
+      "data_purity": 0.9999999999999998,
+      "highest_two_background_levels_probability": 0.0,
+      "smooth_data_probability": 0.7391719993310761,
+      "clock_A_X_plus_probability": 1.0,
+      "clock_C_Y_plus_probability": 0.5
+    },
+    {
+      "duration": 0.5,
+      "norm": 1.0,
+      "energies": {
+        "matter": 0.3176928132461579,
+        "background": 0.0024967114913662333,
+        "interaction": -0.0024980652796484752,
+        "hamiltonian": 0.31769145945787547
+      },
+      "background_number": 0.0024967114913662346,
+      "background_position_mean": 2.275816476843032e-17,
+      "background_projected_position_square": 0.4874511602011734,
+      "background_nonvacuum_probability": 0.001243567303302482,
+      "background_entropy_bits": 0.01030349241275543,
+      "data_purity": 0.9998175969749263,
+      "highest_two_background_levels_probability": 1.3170844795668809e-10,
+      "smooth_data_probability": 0.737952374086393,
+      "clock_A_X_plus_probability": 0.9195718158959669,
+      "clock_C_Y_plus_probability": 0.7435386115390926
+    },
+    {
+      "duration": 1.0,
+      "norm": 1.0000000000000002,
+      "energies": {
+        "matter": 0.31769434405509545,
+        "background": 0.007156919363322411,
+        "interaction": -0.007159803960542419,
+        "hamiltonian": 0.31769145945787547
+      },
+      "background_number": 0.007156919363322409,
+      "background_position_mean": 4.052313020607121e-17,
+      "background_projected_position_square": 0.46544357156308164,
+      "background_nonvacuum_probability": 0.0035400987238728655,
+      "background_entropy_bits": 0.025771371149924782,
+      "data_purity": 0.9994508148617586,
+      "highest_two_background_levels_probability": 7.946701691711416e-09,
+      "smooth_data_probability": 0.7344772483520847,
+      "clock_A_X_plus_probability": 0.7044814624629436,
+      "clock_C_Y_plus_probability": 0.9235108268141985
+    },
+    {
+      "duration": 2.0,
+      "norm": 1.0000000000000002,
+      "energies": {
+        "matter": 0.31768155488579086,
+        "background": 0.005580426590007683,
+        "interaction": -0.005570522017923347,
+        "hamiltonian": 0.31769145945787514
+      },
+      "background_number": 0.005580426590007684,
+      "background_position_mean": 1.1433752385352192e-16,
+      "background_projected_position_square": 0.48262803394091736,
+      "background_nonvacuum_probability": 0.002765324496768362,
+      "background_entropy_bits": 0.022339712236235057,
+      "data_purity": 0.999325433098172,
+      "highest_two_background_levels_probability": 1.1137020737736837e-08,
+      "smooth_data_probability": 0.7229286451033531,
+      "clock_A_X_plus_probability": 0.16785443813402157,
+      "clock_C_Y_plus_probability": 0.9465693735328871
+    }
+  ],
+  "reciprocal_effects": {
+    "background_trace_distance_for_two_data_preparations": 0.06933009839186915,
+    "data_trace_distance_vacuum_vs_level_one_background": 0.05529295168888526,
+    "clock_trace_distance_vacuum_vs_level_one_background": 0.156692665282759
+  },
+  "joint_terminal_probabilities_data_background_clockA_clockC": [
+    [
+      [
+        [
+          0.11477964341812345,
+          0.006225665812337127
+        ],
+        [
+          0.5687895215916279,
+          0.03116194216406517
+        ]
+      ],
+      [
+        [
+          0.00029295297643412244,
+          7.568353385331973e-05
+        ],
+        [
+          0.0005217657248458144,
+          0.001081469882065444
+        ]
+      ]
+    ],
+    [
+      [
+        [
+          0.043949290087877096,
+          0.0023931310382464353
+        ],
+        [
+          0.21794573635878647,
+          0.011989745032167501
+        ]
+      ],
+      [
+        [
+          0.00010436761200943895,
+          3.3703655140623553e-05
+        ],
+        [
+          0.00018609576318221133,
+          0.00046928534923739053
+        ]
+      ]
+    ]
+  ],
+  "default_cutoff_record_budget": {
+    "sampled_boundary_residual_integral": 0.00012110857786227484,
+    "lipschitz_midpoint_remainder_bound": 3.382894985219444e-06,
+    "norm_error_upper_bound": 0.0001244914728474943,
+    "same_final_record_TV_upper_bound": 0.0001244914728474943,
+    "quadrature_samples": 256,
+    "sufficient_oscillator_stability_margin": 0.5596290743873209,
+    "scope": "exact finite-cutoff spectral quantities; float evaluation is not directed-rounding certification"
+  },
+  "background_nonvacuum_probability_with_cutoff_allowance": [
+    0.002640833023920868,
+    0.0028898159696158564
+  ],
+  "frozen_C5_mean_background_comparison": {
+    "same_initial_data_clocks_and_mode": true,
+    "background_mean_initial_F": 0.0,
+    "full_record_TV_difference": 0.0036487687900552137,
+    "data_clock_record_TV_difference": 0.0012807648817303914,
+    "interpretation": "specified coupled versus uncoupled task, not a necessity or universal-optimality argument"
+  },
+  "cutoff_comparisons": [
+    {
+      "cutoff": 6,
+      "joint_complex_sector_dimension": 384,
+      "norm_difference_to_cutoff14_diagnostic": 0.0007826643087322459,
+      "boundary_budget": {
+        "sampled_boundary_residual_integral": 0.003981876612431813,
+        "lipschitz_midpoint_remainder_bound": 5.551764502669113e-05,
+        "norm_error_upper_bound": 0.004037394257458505,
+        "same_final_record_TV_upper_bound": 0.004037394257458505,
+        "quadrature_samples": 256,
+        "sufficient_oscillator_stability_margin": 0.5596290743873209,
+        "scope": "exact finite-cutoff spectral quantities; float evaluation is not directed-rounding certification"
+      }
+    },
+    {
+      "cutoff": 8,
+      "joint_complex_sector_dimension": 512,
+      "norm_difference_to_cutoff14_diagnostic": 0.00013510686232621956,
+      "boundary_budget": {
+        "sampled_boundary_residual_integral": 0.000668262223324325,
+        "lipschitz_midpoint_remainder_bound": 1.4310584806351326e-05,
+        "norm_error_upper_bound": 0.0006825728081306764,
+        "same_final_record_TV_upper_bound": 0.0006825728081306764,
+        "quadrature_samples": 256,
+        "sufficient_oscillator_stability_margin": 0.5596290743873209,
+        "scope": "exact finite-cutoff spectral quantities; float evaluation is not directed-rounding certification"
+      }
+    },
+    {
+      "cutoff": 10,
+      "joint_complex_sector_dimension": 640,
+      "norm_difference_to_cutoff14_diagnostic": 2.790584699730624e-05,
+      "boundary_budget": {
+        "sampled_boundary_residual_integral": 0.00012110857786227484,
+        "lipschitz_midpoint_remainder_bound": 3.382894985219444e-06,
+        "norm_error_upper_bound": 0.0001244914728474943,
+        "same_final_record_TV_upper_bound": 0.0001244914728474943,
+        "quadrature_samples": 256,
+        "sufficient_oscillator_stability_margin": 0.5596290743873209,
+        "scope": "exact finite-cutoff spectral quantities; float evaluation is not directed-rounding certification"
+      }
+    },
+    {
+      "cutoff": 12,
+      "joint_complex_sector_dimension": 768,
+      "norm_difference_to_cutoff14_diagnostic": 5.873092674836264e-06,
+      "boundary_budget": {
+        "sampled_boundary_residual_integral": 2.433746994096747e-05,
+        "lipschitz_midpoint_remainder_bound": 8.16663604551653e-07,
+        "norm_error_upper_bound": 2.5154133545519122e-05,
+        "same_final_record_TV_upper_bound": 2.5154133545519122e-05,
+        "quadrature_samples": 256,
+        "sufficient_oscillator_stability_margin": 0.5596290743873209,
+        "scope": "exact finite-cutoff spectral quantities; float evaluation is not directed-rounding certification"
+      }
+    }
+  ],
+  "cutoff14_reference_budget": {
+    "sampled_boundary_residual_integral": 5.46353503979282e-06,
+    "lipschitz_midpoint_remainder_bound": 2.083692247127407e-07,
+    "norm_error_upper_bound": 5.671904264505561e-06,
+    "same_final_record_TV_upper_bound": 5.671904264505561e-06,
+    "quadrature_samples": 256,
+    "sufficient_oscillator_stability_margin": 0.5596290743873209,
+    "scope": "exact finite-cutoff spectral quantities; float evaluation is not directed-rounding certification"
+  },
+  "resources": {
+    "chain_qubit_slots": 16,
+    "occupied_excitation_sector_dimension": 16,
+    "retained_clock_slots": 2,
+    "local_destructive_position_readouts": 16,
+    "clock_reads": 2,
+    "classical_raw_outcome_bits": 19,
+    "minimum_fixed_label_bits_for_this_single_excitation_support": 4,
+    "classical_bit_hops_for_position_bits": 64,
+    "classical_bit_hops_including_clock_bits": 72,
+    "declared_serial_hop_parameter": 1.25,
+    "latest_record_collection_parameter": 92.0,
+    "record_transport_is_serial_no_queue_optimization": true,
+    "resets": 0,
+    "initial_smooth_carrier_preparation_is_a_declared_input": true,
+    "full_detector_memory_clock_energy_and_preparation_gate_costs_closed": false,
+    "qubit_slots_before_detectors": 18,
+    "additional_quantum_background_modes": 1,
+    "mode_level_cutoff": 10,
+    "total_quantum_subsystems_including_one_background_mode": 19,
+    "data_clock_background_complex_sector_dimension": 640,
+    "background_binary_record_bits_at_collector": 1,
+    "background_binary_reads": 1,
+    "fresh_independent_fair_smooth_record_bits": 12,
+    "one_collective_mode_couples_multiple_sites_not_a_local_field": true
+  },
+  "record_delivery_schedule": [
+    {
+      "kind": "position",
+      "source_site": 0,
+      "read_at": 2.0,
+      "hops": 0,
+      "received_at_site_zero": 2.0
+    },
+    {
+      "kind": "background_vacuum_bit",
+      "source_site": 0,
+      "read_at": 2.0,
+      "hops": 0,
+      "received_at_site_zero": 2.0
+    },
+    {
+      "kind": "position",
+      "source_site": 1,
+      "read_at": 2.0,
+      "hops": 1,
+      "received_at_site_zero": 3.25
+    },
+    {
+      "kind": "position",
+      "source_site": 2,
+      "read_at": 2.0,
+      "hops": 2,
+      "received_at_site_zero": 5.75
+    },
+    {
+      "kind": "position",
+      "source_site": 3,
+      "read_at": 2.0,
+      "hops": 3,
+      "received_at_site_zero": 9.5
+    },
+    {
+      "kind": "position",
+      "source_site": 4,
+      "read_at": 2.0,
+      "hops": 4,
+      "received_at_site_zero": 14.5
+    },
+    {
+      "kind": "position",
+      "source_site": 5,
+      "read_at": 2.0,
+      "hops": 5,
+      "received_at_site_zero": 20.75
+    },
+    {
+      "kind": "position",
+      "source_site": 6,
+      "read_at": 2.0,
+      "hops": 6,
+      "received_at_site_zero": 28.25
+    },
+    {
+      "kind": "position",
+      "source_site": 7,
+      "read_at": 2.0,
+      "hops": 7,
+      "received_at_site_zero": 37.0
+    },
+    {
+      "kind": "position",
+      "source_site": 8,
+      "read_at": 2.0,
+      "hops": 8,
+      "received_at_site_zero": 47.0
+    },
+    {
+      "kind": "position",
+      "source_site": 9,
+      "read_at": 2.0,
+      "hops": 7,
+      "received_at_site_zero": 55.75
+    },
+    {
+      "kind": "position",
+      "source_site": 10,
+      "read_at": 2.0,
+      "hops": 6,
+      "received_at_site_zero": 63.25
+    },
+    {
+      "kind": "position",
+      "source_site": 11,
+      "read_at": 2.0,
+      "hops": 5,
+      "received_at_site_zero": 69.5
+    },
+    {
+      "kind": "position",
+      "source_site": 12,
+      "read_at": 2.0,
+      "hops": 4,
+      "received_at_site_zero": 74.5
+    },
+    {
+      "kind": "position",
+      "source_site": 13,
+      "read_at": 2.0,
+      "hops": 3,
+      "received_at_site_zero": 78.25
+    },
+    {
+      "kind": "position",
+      "source_site": 14,
+      "read_at": 2.0,
+      "hops": 2,
+      "received_at_site_zero": 80.75
+    },
+    {
+      "kind": "position",
+      "source_site": 15,
+      "read_at": 2.0,
+      "hops": 1,
+      "received_at_site_zero": 82.0
+    },
+    {
+      "kind": "clock",
+      "source_site": 0,
+      "read_at": 2.0,
+      "hops": 0,
+      "received_at_site_zero": 82.0
+    },
+    {
+      "kind": "clock",
+      "source_site": 8,
+      "read_at": 2.0,
+      "hops": 8,
+      "received_at_site_zero": 92.0
+    }
+  ],
+  "all_terminal_records_ready_at": 92.0,
+  "fine_position_records_retained_but_reported_data_bit_is_smoothed": true,
+  "background_binary_read_is_vacuum_vs_nonvacuum_at_collector": true,
+  "clock_interaction_is_in_joint_state_not_external_readout_only": true,
+  "C5_static_continuum_error_bound_is_automatically_valid_for_C6": false,
+  "finite_mode_is_a_spatially_local_gravitational_field": false,
+  "Hamiltonian_or_shared_deformation_derived_from_cognition": false,
+  "metric_field_equations_or_Einstein_dynamics_derived": false,
+  "roundoff_errors_are_rigorously_certified": false,
+  "preparation_clock_detector_and_mode_control_energy_resources_complete": false,
+  "count_samples_generated": 0,
+  "laboratory_samples": 0,
+  "necessity_arguments_performed": false,
+  "automated_checks": {
+    "run": 13,
+    "failures": 0,
+    "errors": 0
+  }
+}

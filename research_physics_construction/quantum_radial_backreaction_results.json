@@ -1,0 +1,406 @@
+{
+  "model_version": "C12",
+  "route_round": "12",
+  "research_scope": "sufficiency only",
+  "parameters": {
+    "scale": 1024.0,
+    "sites": 8,
+    "cutoff": 20,
+    "coherent_amplitude": 0.00025,
+    "validity_radius": 0.01,
+    "interaction_scale": 1.0
+  },
+  "canonical_normalization": {
+    "reference_SL_inertia": 7.958186030572986,
+    "reference_physical_inertia": 100.00551507819604,
+    "reference_half_inertia": 50.00275753909802,
+    "independent_ADM_kinetic_mass_variation": 50.00275753933447,
+    "action": "one-half physical_inertia*(amplitude_dot^2-frequency^2*amplitude^2); physical_inertia=4pi integral W zeta_mode^2 dr",
+    "Newtonian_limit": "physical_inertia -> 4pi integral rho r^2 xi_mode^2 dr"
+  },
+  "unscaled_linear_window_check": {
+    "physical_inertia": 100.00551507819604,
+    "frequency": 0.3544596913928512,
+    "vacuum_fractional_radius_standard_deviation": 0.11876530794003357,
+    "vacuum_probability_outside_declared_linear_radius": 0.9328976787927261,
+    "log_vacuum_probability_outside_declared_linear_radius": -0.06945975318132924,
+    "display_probability_underflow_is_not_zero_physical_tail": false,
+    "coherent_alpha": 0.0010524959027859754,
+    "scope": "canonical harmonic reduction at hbar=1; not a proof of full nonlinear quantum-fluid validity"
+  },
+  "scaled_normalization": {
+    "physical_inertia": 107380104170.12172,
+    "frequency": 0.00034615204237583127,
+    "vacuum_fractional_radius_standard_deviation": 0.00011598174603518903,
+    "vacuum_probability_outside_declared_linear_radius": 0.0,
+    "log_vacuum_probability_outside_declared_linear_radius": -3721.6670702818246,
+    "display_probability_underflow_is_not_zero_physical_tail": true,
+    "coherent_alpha": 1.0777558044528388,
+    "scope": "canonical harmonic reduction at hbar=1; not a proof of full nonlinear quantum-fluid validity"
+  },
+  "physical_homology_inputs": {
+    "scale": 1024.0,
+    "G_unchanged": 0.1,
+    "hbar_unchanged": 1.0,
+    "surface_density": 9.5367431640625e-09,
+    "central_pressure": 4.76837158203125e-10,
+    "sound_speed_squared_unchanged": 0.3333333333333333,
+    "source_radius": 4234.101054200677,
+    "source_ADM_mass": 3205.5154956636725,
+    "ring_length": 20480.0,
+    "ring_offset": 4096.0,
+    "probe_proper_mass": 0.000341796875,
+    "bare_clock_rates": [
+      0.0009765625,
+      0.001171875
+    ],
+    "read_parameter": 2048.0,
+    "note": "physical source and probe family changed at fixed G and hbar; not a mere coordinate-unit change"
+  },
+  "joint_Hamiltonian": "H_matter + P_amplitude^2/(2I) + I*omega^2*A^2/2 + A*B_matter",
+  "time_rows": [
+    {
+      "reference_time": 0.0,
+      "physical_time": 0.0,
+      "energies": {
+        "matter": 0.0003133018939189292,
+        "mode": 0.0005751515477761342,
+        "interaction": 1.0775997288525006e-08,
+        "hamiltonian": 0.0008884642176923516
+      },
+      "norm": 1.0,
+      "mode_mean_amplitude": 0.00025000000000000006,
+      "mode_second_moment": 7.59517654133711e-08,
+      "mode_number": 1.161557574031786,
+      "mode_purity": 1.0000000000000007,
+      "clock_A_X_plus_probability": 1.0,
+      "clock_C_Y_plus_probability": 0.5000000000000001
+    },
+    {
+      "reference_time": 0.5,
+      "physical_time": 512.0,
+      "energies": {
+        "matter": 0.00031330182694284535,
+        "mode": 0.0005751517171614131,
+        "interaction": 1.0673588093852473e-08,
+        "hamiltonian": 0.0008884642176923519
+      },
+      "norm": 1.0,
+      "mode_mean_amplitude": 0.00024608391167098536,
+      "mode_second_moment": 7.400905699673231e-08,
+      "mode_number": 1.161558063369585,
+      "mode_purity": 0.9999999996775959,
+      "clock_A_X_plus_probability": 0.9440242620746564,
+      "clock_C_Y_plus_probability": 0.7523765791251515
+    },
+    {
+      "reference_time": 1.0,
+      "physical_time": 1024.0,
+      "energies": {
+        "matter": 0.0003133016418819818,
+        "mode": 0.0005751522260965545,
+        "interaction": 1.0349713815465647e-08,
+        "hamiltonian": 0.0008884642176923518
+      },
+      "norm": 1.0000000000000002,
+      "mode_mean_amplitude": 0.0002344583303713306,
+      "mode_second_moment": 6.842247409495312e-08,
+      "mode_number": 1.1615595336343227,
+      "mode_purity": 0.9999999987211978,
+      "clock_A_X_plus_probability": 0.7886301812437717,
+      "clock_C_Y_plus_probability": 0.9357346932418884
+    },
+    {
+      "reference_time": 2.0,
+      "physical_time": 2048.0,
+      "energies": {
+        "matter": 0.00031330110328613435,
+        "mode": 0.0005751542586590529,
+        "interaction": 8.855747164565861e-09,
+        "hamiltonian": 0.0008884642176923517
+      },
+      "norm": 0.9999999999999999,
+      "mode_mean_amplitude": 0.00018976563388729844,
+      "mode_second_moment": 4.9462761234088346e-08,
+      "mode_number": 1.1615654055121383,
+      "mode_purity": 0.9999999950556746,
+      "clock_A_X_plus_probability": 0.3332295260992496,
+      "clock_C_Y_plus_probability": 0.9274153402809302
+    }
+  ],
+  "record_budget": {
+    "evolution": {
+      "boundary_residual_integral": 1.544536199657488e-12,
+      "midpoint_remainder_bound": 3.9026041432638677e-14,
+      "same_initial_embedded_vector_error_bound": 1.5835622410901267e-12,
+      "scope": "exact finite-spectrum Duhamel formula evaluated in floating point, not directed rounding"
+    },
+    "coherent_preparation": {
+      "discarded_coherent_number_probability": 2.7219297290631684e-18,
+      "initial_vector_error_bound": 1.6498271815748364e-09
+    },
+    "same_final_record_TV_upper_bound": 1.6514107438159266e-09,
+    "scope": "ideal unbounded linear-mode completion with the same final POVM; not the omitted nonlinear-fluid or other-mode error"
+  },
+  "D24_reference_own_budget": {
+    "evolution": {
+      "boundary_residual_integral": 4.9519469540593545e-15,
+      "midpoint_remainder_bound": 1.5359961324100864e-16,
+      "same_initial_embedded_vector_error_bound": 5.1055465673003635e-15,
+      "scope": "exact finite-spectrum Duhamel formula evaluated in floating point, not directed rounding"
+    },
+    "coherent_preparation": {
+      "discarded_coherent_number_probability": 1.9250270437946295e-23,
+      "initial_vector_error_bound": 4.387513012852075e-12
+    },
+    "same_final_record_TV_upper_bound": 4.392618559419375e-12,
+    "scope": "ideal unbounded linear-mode completion with the same final POVM; not the omitted nonlinear-fluid or other-mode error"
+  },
+  "cutoff_refinements": [
+    {
+      "cutoff": 12,
+      "vector_difference_from_D24": 6.57721459821624e-05,
+      "budget": {
+        "evolution": {
+          "boundary_residual_integral": 3.628009007442824e-08,
+          "midpoint_remainder_bound": 4.99913930254724e-10,
+          "same_initial_embedded_vector_error_bound": 3.6780004004682964e-08,
+          "scope": "exact finite-spectrum Duhamel formula evaluated in floating point, not directed rounding"
+        },
+        "coherent_preparation": {
+          "discarded_coherent_number_probability": 4.325655895189141e-09,
+          "initial_vector_error_bound": 6.57697187151273e-05
+        },
+        "same_final_record_TV_upper_bound": 6.580649871913199e-05,
+        "scope": "ideal unbounded linear-mode completion with the same final POVM; not the omitted nonlinear-fluid or other-mode error"
+      }
+    },
+    {
+      "cutoff": 16,
+      "vector_difference_from_D24": 4.198685379363532e-07,
+      "budget": {
+        "evolution": {
+          "boundary_residual_integral": 3.1228648112297254e-10,
+          "midpoint_remainder_bound": 6.0961020887685205e-12,
+          "same_initial_embedded_vector_error_bound": 3.1838258321174106e-10,
+          "scope": "exact finite-spectrum Duhamel formula evaluated in floating point, not directed rounding"
+        },
+        "coherent_preparation": {
+          "discarded_coherent_number_probability": 1.7627184174970695e-13,
+          "initial_vector_error_bound": 4.1984740293315464e-07
+        },
+        "same_final_record_TV_upper_bound": 4.2016578551636637e-07,
+        "scope": "ideal unbounded linear-mode completion with the same final POVM; not the omitted nonlinear-fluid or other-mode error"
+      }
+    },
+    {
+      "cutoff": 20,
+      "vector_difference_from_D24": 1.6499266215201929e-09,
+      "budget": {
+        "evolution": {
+          "boundary_residual_integral": 1.544536199657488e-12,
+          "midpoint_remainder_bound": 3.9026041432638677e-14,
+          "same_initial_embedded_vector_error_bound": 1.5835622410901267e-12,
+          "scope": "exact finite-spectrum Duhamel formula evaluated in floating point, not directed rounding"
+        },
+        "coherent_preparation": {
+          "discarded_coherent_number_probability": 2.7219297290631684e-18,
+          "initial_vector_error_bound": 1.6498271815748364e-09
+        },
+        "same_final_record_TV_upper_bound": 1.6514107438159266e-09,
+        "scope": "ideal unbounded linear-mode completion with the same final POVM; not the omitted nonlinear-fluid or other-mode error"
+      }
+    }
+  ],
+  "linear_window_budget": {
+    "ideal_initial_total_energy": 0.0008884642176923518,
+    "matter_energy_floor": -0.0014602531496847304,
+    "source_operator_norm": 0.00036788772000709465,
+    "all_time_amplitude_second_moment_upper_bound": 7.30185382652455e-07,
+    "pointwise_time_probability_outside_linear_window_upper_bound": 0.00730185382652455,
+    "scope": "energy/Markov bound in the unbounded linear oscillator completion for the ideal coherent initial state; not a probability of never exiting nor a bound on omitted nonlinear terms"
+  },
+  "source_displacement_operator_norm_bound": 2.8592864996719183e-08,
+  "reciprocal_diagnostics": {
+    "changed_data_mode_trace_distance": 2.0362987428703635e-05,
+    "changed_coherent_sign_data_trace_distance": 6.60949699166042e-05,
+    "changed_coherent_sign_clock_trace_distance": 0.00018990958495972694,
+    "scope": "finite-cutoff diagnostics for specified preparations; default error budget not automatically reused for interventions"
+  },
+  "joint_records_data_mode_clockA_clockC": [
+    [
+      [
+        [
+          0.06365950214595995,
+          0.004980521755907833
+        ],
+        [
+          0.12737849767101764,
+          0.009965698089041996
+        ]
+      ],
+      [
+        [
+          0.13972336835475765,
+          0.010937347826974477
+        ],
+        [
+          0.2795773160424057,
+          0.02188491721960152
+        ]
+      ]
+    ],
+    [
+      [
+        [
+          0.03307197986100717,
+          0.0025874490055127876
+        ],
+        [
+          0.06617486734411392,
+          0.005177316127400831
+        ]
+      ],
+      [
+        [
+          0.07258732397726378,
+          0.005682033171866023
+        ],
+        [
+          0.145242484884403,
+          0.011369376522764936
+        ]
+      ]
+    ]
+  ],
+  "classical_reference_data_clock_records": [
+    [
+      [
+        0.2033828708945567,
+        0.01591786919491976
+      ],
+      [
+        0.4069558145014692,
+        0.03185061453235582
+      ]
+    ],
+    [
+      [
+        0.10565930405317014,
+        0.008269481956602823
+      ],
+      [
+        0.21141735265851744,
+        0.016546692208407463
+      ]
+    ]
+  ],
+  "data_clock_record_TV_from_classical_mean_drive": 1.8267845985908693e-09,
+  "resources": {
+    "data_qubits": 8,
+    "clock_qubits": 2,
+    "retained_collective_radial_modes": 1,
+    "mode_cutoff": 20,
+    "occupied_complex_sector_dimension": 640,
+    "raw_bits": 11,
+    "coarse_joint_outcomes": 16,
+    "independent_fair_output_bits": 12,
+    "threshold_table_bits": 104,
+    "bit_hops": 20,
+    "supplied_hop_interval": 1024.0,
+    "all_records_ready_at": 22528.0,
+    "resets": 0,
+    "full_fluid_microphysical_resource_count_closed": false,
+    "collective_mode_detector_and_transport_realization_closed": false
+  },
+  "terminal_schedule": [
+    {
+      "kind": "position",
+      "source_site": 0,
+      "hops": 0,
+      "read_at": 2048.0,
+      "received_at": 2048.0
+    },
+    {
+      "kind": "collective_mode_vacuum_bit",
+      "source_site": 0,
+      "hops": 0,
+      "read_at": 2048.0,
+      "received_at": 2048.0
+    },
+    {
+      "kind": "position",
+      "source_site": 1,
+      "hops": 1,
+      "read_at": 2048.0,
+      "received_at": 3072.0
+    },
+    {
+      "kind": "position",
+      "source_site": 2,
+      "hops": 2,
+      "read_at": 2048.0,
+      "received_at": 5120.0
+    },
+    {
+      "kind": "position",
+      "source_site": 3,
+      "hops": 3,
+      "read_at": 2048.0,
+      "received_at": 8192.0
+    },
+    {
+      "kind": "position",
+      "source_site": 4,
+      "hops": 4,
+      "read_at": 2048.0,
+      "received_at": 12288.0
+    },
+    {
+      "kind": "position",
+      "source_site": 5,
+      "hops": 3,
+      "read_at": 2048.0,
+      "received_at": 15360.0
+    },
+    {
+      "kind": "position",
+      "source_site": 6,
+      "hops": 2,
+      "read_at": 2048.0,
+      "received_at": 17408.0
+    },
+    {
+      "kind": "position",
+      "source_site": 7,
+      "hops": 1,
+      "read_at": 2048.0,
+      "received_at": 18432.0
+    },
+    {
+      "kind": "clock",
+      "source_site": 0,
+      "hops": 0,
+      "read_at": 2048.0,
+      "received_at": 18432.0
+    },
+    {
+      "kind": "clock",
+      "source_site": 4,
+      "hops": 4,
+      "read_at": 2048.0,
+      "received_at": 22528.0
+    }
+  ],
+  "limits": [
+    "the unscaled C10 source fails the declared weak-amplitude vacuum check and is retained as an invalid direct quantization case",
+    "the macroscopic homology, probe rescaling, initial coherent state and single-mode reduction are explicit C12 inputs",
+    "canonical kinetic normalization is checked through fixed-baryon ADM constraint variation, but the full second-order background metric is not constructed",
+    "energy is closed only within the autonomous linear single-mode joint Hamiltonian, not all Einstein constraints or all fluid modes",
+    "escape bound holds at each time separately and does not assert the state never leaves the linear window",
+    "finite probability outside the window is retained; no state projection or postselection enforces validity",
+    "Fock error budget does not cover omitted nonlinear metric terms, other radial/nonradial modes, or material interactions",
+    "one collective radial observable is supplied at the collector, not derived as a spatially local instantaneous measurement",
+    "no laboratory samples, necessity arguments, or derivation of the adopted gravitational action from cognition"
+  ]
+}

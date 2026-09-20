@@ -1,0 +1,111 @@
+{
+  "date": "2026-09-17",
+  "route_round": "03",
+  "model_version": "C3",
+  "research_scope": "sufficiency construction and consistency only; no necessity argument",
+  "runtime": {
+    "python": "3.14.6",
+    "numpy": "2.5.1",
+    "document_converter": "existing pypandoc bundled Pandoc",
+    "new_dependencies_installed": false
+  },
+  "result_generation": {
+    "command": "python -B -X utf8 research_physics_construction/shared_background.py --write-results",
+    "tests": 13,
+    "failures": 0,
+    "errors": 0
+  },
+  "route_regression": {
+    "command": "python -B -X utf8 -m unittest discover -s research_physics_construction -p \"*.py\"",
+    "tests": 56,
+    "new_tests": 13,
+    "previous_route_and_inheritance_tests": 43,
+    "failures": 0,
+    "errors": 0,
+    "seconds_reported": 2.336,
+    "legacy_necessity_test_suites_rerun": false
+  },
+  "inheritance": {
+    "command": "python -B -X utf8 research_physics_construction/inheritance.py --verify",
+    "numbered_notes": 224,
+    "source_artifacts": 705,
+    "tests": 5,
+    "failures": 0,
+    "errors": 0,
+    "hashes_are_not_scientific_proof_verification": true
+  },
+  "document_validation": {
+    "method": "pypandoc.convert_file to html5 with --mathml --fail-if-warnings",
+    "mathml_counts": {
+      "C3_CONTRACT.md": 22,
+      "research_note_03.md": 52,
+      "README.md": 0,
+      "RESEARCH_STATE.md": 0,
+      "repository_README.md": 0
+    },
+    "local_links_checked": true,
+    "forbidden_control_characters_checked": true,
+    "editor_diagnostics_clear": true
+  },
+  "recovered_execution_issue": {
+    "failure": "IndentationError in the newly expanded estimate_probe input-validation condition",
+    "repair": "restore the condition to function-body indentation",
+    "same_focused_command_rerun_passed": true,
+    "mathematical_assumptions_or_test_tolerances_changed_for_repair": false
+  },
+  "analytic_sufficiency_results": [
+    "asymmetric three-node middle probabilities determine both bond-time products on the declared monotonic interval",
+    "known bare clock frequencies convert two-probe phase records to shared normalized clock and bond scales",
+    "twenty-four mean estimates have simultaneous failure bound at most 48*exp(-2*N*epsilon^2)",
+    "conservative positive interval arithmetic covers derived scales and endpoint prediction on the common good event",
+    "positive lapse and specified spatial interpolation give a candidate static metric consistent with the chosen midpoint speed convention",
+    "a predicted endpoint interval below one-half suffices to select the subsequent two-action feedback policy"
+  ],
+  "finite_implementation_checks": [
+    "nonuniform Hamiltonian and propagation logs use the same two bond strengths",
+    "all sixteen joint clock-middle-receiver outcomes, including dependent data measurements",
+    "postmeasurement branches and shared-J encoding retained through audit transport",
+    "all sixty-four probability error-box corners for derived intervals",
+    "count-only common parameter witness replayed in the original six-slot engine for both probe types",
+    "endpoint observable is not used to fit the common parameters",
+    "metric interpolation positivity and frozen uniform dispersion slope",
+    "calibration action code arrives before the fresh task, whose own record also has a delivery delay"
+  ],
+  "simulation_summary": {
+    "seed": 20260918,
+    "coordinate_sites": [0, 1, 2],
+    "declared_lapse": [1, 1.15, 1.3],
+    "declared_spatial_midpoints": [1.1, 1.3],
+    "bare_probe_clock_frequencies": [1, 1.2],
+    "hop_delay": 0.4,
+    "trials_per_group": 42382,
+    "groups": 8,
+    "simulated_fresh_trials": 339056,
+    "probability_error": 0.01,
+    "joint_failure_upper_bound": 0.009999711973107877,
+    "maximum_mean_residual_of_common_witness": 0.0038487919060370412,
+    "maximum_endpoint_observable_residual_not_used_in_fit": 0.0005822548318207017,
+    "common_lapse_ratio": 1.299609684357931,
+    "common_spatial_midpoints": [1.1090351005481853, 1.2941457629264232],
+    "subsequent_feedback_success_interval": [0.997080068135551, 0.9978416293655181],
+    "subsequent_feedback_simulation_success": 0.9974167281021374,
+    "laboratory_samples": 0
+  },
+  "scope_limits": {
+    "shared_background_couplings_and_bare_clock_calibrations_are_inputs": true,
+    "probe_types_are_not_claimed_to_be_distinct_relativistic_masses": true,
+    "middle_readout_synchrony_uses_a_declared_local_delay_element": true,
+    "endpoint_holdout_is_an_observable_not_independent_sample_split": true,
+    "interval_endpoints_are_float_evaluations_not_directed_rounding_certificates": true,
+    "metric_interpolation_and_velocity_convention_are_declared": true,
+    "continuous_Dirac_limit_or_equivalence_principle_derived": false,
+    "Einstein_dynamics_or_background_backreaction_derived": false,
+    "sample_budget_claimed_optimal": false,
+    "all_physical_clock_control_energy_costs_closed": false,
+    "C0_C1_C2_numerical_code_and_results_changed": false,
+    "legacy_numbered_notes_code_and_results_changed": false,
+    "git_operations_performed": false,
+    "new_background_tasks_created": false,
+    "necessity_proofs_started": false
+  }
+}

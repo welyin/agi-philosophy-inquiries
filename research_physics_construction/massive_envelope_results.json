@@ -1,0 +1,4005 @@
+{
+  "model_version": "C5",
+  "route_round": "05",
+  "scope": "sufficiency only",
+  "background_inputs": {
+    "length": 20.0,
+    "speed_scale": 0.6,
+    "modulation": 0.25,
+    "lapse_modulation": 0.15
+  },
+  "lapse_change_from_C4": "ell(x)=1+0.15*cos(2*pi*y(x)/Y); same C4 speed, b=ell/v",
+  "declared_proper_mass": 0.35,
+  "new_local_term": "sum_j (-1)^j*m*ell(x_j)*n_j",
+  "derived_effective_equation": "i partial_t chi = -i sigma_z(v partial_x+v_prime/2)chi + m ell(x) sigma_x chi",
+  "optical_reference": "i partial_t F=(-i sigma_z partial_y + m(1+0.15cos(2pi y/Y))*sigma_x)F",
+  "galerkin_cutoff": 12,
+  "initial_modes": [
+    -2,
+    -1,
+    0,
+    1,
+    2
+  ],
+  "regularity_bounds_T2": {
+    "optical_L2_derivative_bounds_0_to_4": [
+      1.0,
+      0.1780271733127327,
+      0.05253988643463099,
+      0.019148964540338875,
+      0.007925404332746366
+    ],
+    "optical_sup_derivative_bounds_0_to_3": [
+      0.7182247818189402,
+      0.131251883994642,
+      0.039541892402432506,
+      0.014654263488907816
+    ],
+    "spatial_spinor_sup_bounds_0_to_3": [
+      1.0366681778045634,
+      0.4367236677082522,
+      0.3199394384954639,
+      0.30307108384513787
+    ],
+    "flux_third_derivative_bound": 0.30095789125534284,
+    "maximum_inverse_speed": 2.0833333333333335
+  },
+  "reference_tail_T2": {
+    "boundary_mode_norm_upper_bound": 4.98575436814677e-17,
+    "continuum_L2_reference_error_upper_bound": 2.617521043277054e-18
+  },
+  "rows": [
+    {
+      "sites": 32,
+      "spacing": 0.625,
+      "duration": 2.0,
+      "proper_mass": 0.35,
+      "initial_direction": 1,
+      "cutoff": 12,
+      "smooth_window_center_fraction": 0.35,
+      "exact_norm": 0.9999999999999998,
+      "initial_sample_norm": 1.0000000000000002,
+      "sampled_reference_norm": 0.9999999999999998,
+      "vector_error_diagnostic": 0.004557539177248685,
+      "vector_error_upper_bound": 0.24784177504379037,
+      "continuum_reference_error_upper_bound": 2.617521043277054e-18,
+      "opposite_direction_probability_Galerkin": 0.33057380462802977,
+      "smooth_record_probability_lattice": 0.8417874615770642,
+      "smooth_record_probability_continuum_reference": 0.8412642926943059,
+      "smooth_record_error_diagnostic": 0.0005231688827582737,
+      "smooth_record_error_upper_bound": 1.0,
+      "record_sampling_budget": {
+        "unnormalized_sample_mass_error_bound": 2.380722771188925,
+        "unnormalized_smooth_record_error_bound": 3.149758348329988,
+        "normalized_smooth_record_error_bound": 1.0
+      },
+      "continuum_probability_quadrature_upper_bound": 2.746371327715182e-05,
+      "quadrature_halving_difference_diagnostic": 0.0,
+      "energy_drift": 8.378446929284838e-17
+    },
+    {
+      "sites": 64,
+      "spacing": 0.3125,
+      "duration": 2.0,
+      "proper_mass": 0.35,
+      "initial_direction": 1,
+      "cutoff": 12,
+      "smooth_window_center_fraction": 0.35,
+      "exact_norm": 0.9999999999999992,
+      "initial_sample_norm": 1.0,
+      "sampled_reference_norm": 0.9999999999999999,
+      "vector_error_diagnostic": 0.0011504880810571997,
+      "vector_error_upper_bound": 0.061960443760947614,
+      "continuum_reference_error_upper_bound": 2.617521043277054e-18,
+      "opposite_direction_probability_Galerkin": 0.33057380462802977,
+      "smooth_record_probability_lattice": 0.8413959025026485,
+      "smooth_record_probability_continuum_reference": 0.8412642926943059,
+      "smooth_record_error_diagnostic": 0.00013160980834259206,
+      "smooth_record_error_upper_bound": 1.0,
+      "record_sampling_budget": {
+        "unnormalized_sample_mass_error_bound": 0.5951806927972313,
+        "unnormalized_smooth_record_error_bound": 0.787439587082497,
+        "normalized_smooth_record_error_bound": 1.0
+      },
+      "continuum_probability_quadrature_upper_bound": 2.746371327715182e-05,
+      "quadrature_halving_difference_diagnostic": 0.0,
+      "energy_drift": 4.173412887159216e-17
+    },
+    {
+      "sites": 128,
+      "spacing": 0.15625,
+      "duration": 2.0,
+      "proper_mass": 0.35,
+      "initial_direction": 1,
+      "cutoff": 12,
+      "smooth_window_center_fraction": 0.35,
+      "exact_norm": 0.9999999999999998,
+      "initial_sample_norm": 1.0,
+      "sampled_reference_norm": 0.9999999999999999,
+      "vector_error_diagnostic": 0.0002883183833794598,
+      "vector_error_upper_bound": 0.015490110940236907,
+      "continuum_reference_error_upper_bound": 2.617521043277054e-18,
+      "opposite_direction_probability_Galerkin": 0.33057380462802977,
+      "smooth_record_probability_lattice": 0.841297246782525,
+      "smooth_record_probability_continuum_reference": 0.8412642926943059,
+      "smooth_record_error_diagnostic": 3.295408821912815e-05,
+      "smooth_record_error_upper_bound": 0.4370851173549156,
+      "record_sampling_budget": {
+        "unnormalized_sample_mass_error_bound": 0.14879517319930782,
+        "unnormalized_smooth_record_error_bound": 0.19685989677062424,
+        "normalized_smooth_record_error_bound": 0.4060774317611646
+      },
+      "continuum_probability_quadrature_upper_bound": 2.746371327715182e-05,
+      "quadrature_halving_difference_diagnostic": 0.0,
+      "energy_drift": 1.5370644394676248e-16
+    },
+    {
+      "sites": 256,
+      "spacing": 0.078125,
+      "duration": 2.0,
+      "proper_mass": 0.35,
+      "initial_direction": 1,
+      "cutoff": 12,
+      "smooth_window_center_fraction": 0.35,
+      "exact_norm": 1.0000000000000002,
+      "initial_sample_norm": 1.0,
+      "sampled_reference_norm": 0.9999999999999999,
+      "vector_error_diagnostic": 7.2123152299504e-05,
+      "vector_error_upper_bound": 0.003872527735059231,
+      "continuum_reference_error_upper_bound": 2.617521043277054e-18,
+      "opposite_direction_probability_Galerkin": 0.33057380462802977,
+      "smooth_record_probability_lattice": 0.8412725344526235,
+      "smooth_record_probability_continuum_reference": 0.8412642926943059,
+      "smooth_record_error_diagnostic": 8.241758317595327e-06,
+      "smooth_record_error_upper_bound": 0.09752496952426148,
+      "record_sampling_budget": {
+        "unnormalized_sample_mass_error_bound": 0.037198793299826956,
+        "unnormalized_smooth_record_error_bound": 0.04921497419265606,
+        "normalized_smooth_record_error_bound": 0.08975245034086587
+      },
+      "continuum_probability_quadrature_upper_bound": 2.746371327715182e-05,
+      "quadrature_halving_difference_diagnostic": 0.0,
+      "energy_drift": 2.2306033380839366e-16
+    },
+    {
+      "sites": 32,
+      "spacing": 0.625,
+      "duration": 2.0,
+      "proper_mass": 0.35,
+      "initial_direction": -1,
+      "cutoff": 12,
+      "smooth_window_center_fraction": 0.35,
+      "exact_norm": 0.9999999999999996,
+      "initial_sample_norm": 1.0000000000000002,
+      "sampled_reference_norm": 1.0,
+      "vector_error_diagnostic": 0.004854864944653105,
+      "vector_error_upper_bound": 0.24784177504379037,
+      "continuum_reference_error_upper_bound": 2.617521043277054e-18,
+      "opposite_direction_probability_Galerkin": 0.3546839542929234,
+      "smooth_record_probability_lattice": 0.8783510889678047,
+      "smooth_record_probability_continuum_reference": 0.8775870783466386,
+      "smooth_record_error_diagnostic": 0.0007640106211660447,
+      "smooth_record_error_upper_bound": 1.0,
+      "record_sampling_budget": {
+        "unnormalized_sample_mass_error_bound": 2.380722771188925,
+        "unnormalized_smooth_record_error_bound": 3.149758348329988,
+        "normalized_smooth_record_error_bound": 1.0
+      },
+      "continuum_probability_quadrature_upper_bound": 2.746371327715182e-05,
+      "quadrature_halving_difference_diagnostic": 0.0,
+      "energy_drift": 3.886904918279046e-16
+    },
+    {
+      "sites": 64,
+      "spacing": 0.3125,
+      "duration": 2.0,
+      "proper_mass": 0.35,
+      "initial_direction": -1,
+      "cutoff": 12,
+      "smooth_window_center_fraction": 0.35,
+      "exact_norm": 0.9999999999999998,
+      "initial_sample_norm": 1.0,
+      "sampled_reference_norm": 1.0,
+      "vector_error_diagnostic": 0.0012245875875290244,
+      "vector_error_upper_bound": 0.061960443760947614,
+      "continuum_reference_error_upper_bound": 2.617521043277054e-18,
+      "opposite_direction_probability_Galerkin": 0.3546839542929234,
+      "smooth_record_probability_lattice": 0.8777804840193428,
+      "smooth_record_probability_continuum_reference": 0.8775870783466386,
+      "smooth_record_error_diagnostic": 0.0001934056727042055,
+      "smooth_record_error_upper_bound": 1.0,
+      "record_sampling_budget": {
+        "unnormalized_sample_mass_error_bound": 0.5951806927972313,
+        "unnormalized_smooth_record_error_bound": 0.787439587082497,
+        "normalized_smooth_record_error_bound": 1.0
+      },
+      "continuum_probability_quadrature_upper_bound": 2.746371327715182e-05,
+      "quadrature_halving_difference_diagnostic": 0.0,
+      "energy_drift": 5.690460992214659e-16
+    },
+    {
+      "sites": 128,
+      "spacing": 0.15625,
+      "duration": 2.0,
+      "proper_mass": 0.35,
+      "initial_direction": -1,
+      "cutoff": 12,
+      "smooth_window_center_fraction": 0.35,
+      "exact_norm": 0.9999999999999994,
+      "initial_sample_norm": 1.0,
+      "sampled_reference_norm": 1.0000000000000002,
+      "vector_error_diagnostic": 0.0003068280847731667,
+      "vector_error_upper_bound": 0.015490110940236907,
+      "continuum_reference_error_upper_bound": 2.617521043277054e-18,
+      "opposite_direction_probability_Galerkin": 0.3546839542929234,
+      "smooth_record_probability_lattice": 0.8776355801030462,
+      "smooth_record_probability_continuum_reference": 0.8775870783466386,
+      "smooth_record_error_diagnostic": 4.850175640758181e-05,
+      "smooth_record_error_upper_bound": 0.4370851173549156,
+      "record_sampling_budget": {
+        "unnormalized_sample_mass_error_bound": 0.14879517319930782,
+        "unnormalized_smooth_record_error_bound": 0.19685989677062424,
+        "normalized_smooth_record_error_bound": 0.4060774317611646
+      },
+      "continuum_probability_quadrature_upper_bound": 2.746371327715182e-05,
+      "quadrature_halving_difference_diagnostic": 0.0,
+      "energy_drift": 3.05437025921025e-16
+    },
+    {
+      "sites": 256,
+      "spacing": 0.078125,
+      "duration": 2.0,
+      "proper_mass": 0.35,
+      "initial_direction": -1,
+      "cutoff": 12,
+      "smooth_window_center_fraction": 0.35,
+      "exact_norm": 1.0000000000000002,
+      "initial_sample_norm": 1.0,
+      "sampled_reference_norm": 1.0,
+      "vector_error_diagnostic": 7.67496187493851e-05,
+      "vector_error_upper_bound": 0.003872527735059231,
+      "continuum_reference_error_upper_bound": 2.617521043277054e-18,
+      "opposite_direction_probability_Galerkin": 0.3546839542929234,
+      "smooth_record_probability_lattice": 0.8775992131835556,
+      "smooth_record_probability_continuum_reference": 0.8775870783466386,
+      "smooth_record_error_diagnostic": 1.2134836916977143e-05,
+      "smooth_record_error_upper_bound": 0.09752496952426148,
+      "record_sampling_budget": {
+        "unnormalized_sample_mass_error_bound": 0.037198793299826956,
+        "unnormalized_smooth_record_error_bound": 0.04921497419265606,
+        "normalized_smooth_record_error_bound": 0.08975245034086587
+      },
+      "continuum_probability_quadrature_upper_bound": 2.746371327715182e-05,
+      "quadrature_halving_difference_diagnostic": 0.0,
+      "energy_drift": 3.651431942764902e-17
+    }
+  ],
+  "terminal_record_task": {
+    "sites": 512,
+    "duration": 2.0,
+    "rows": [
+      {
+        "sites": 512,
+        "spacing": 0.0390625,
+        "duration": 2.0,
+        "proper_mass": 0.35,
+        "initial_direction": 1,
+        "cutoff": 12,
+        "smooth_window_center_fraction": 0.5,
+        "exact_norm": 1.0000000000000004,
+        "initial_sample_norm": 1.0,
+        "sampled_reference_norm": 0.9999999999999999,
+        "vector_error_diagnostic": 1.803351086569455e-05,
+        "vector_error_upper_bound": 0.0009681319337648122,
+        "continuum_reference_error_upper_bound": 2.617521043277054e-18,
+        "opposite_direction_probability_Galerkin": 0.33057380462802977,
+        "smooth_record_probability_lattice": 0.8111809866565445,
+        "smooth_record_probability_continuum_reference": 0.8111839727865776,
+        "smooth_record_error_diagnostic": 2.986130033133527e-06,
+        "smooth_record_error_upper_bound": 0.023769960844887115,
+        "record_sampling_budget": {
+          "unnormalized_sample_mass_error_bound": 0.009299698324956739,
+          "unnormalized_smooth_record_error_bound": 0.012303743548164015,
+          "normalized_smooth_record_error_bound": 0.021806233264080335
+        },
+        "continuum_probability_quadrature_upper_bound": 2.746371327715182e-05,
+        "quadrature_halving_difference_diagnostic": 1.1102230246251565e-16,
+        "energy_drift": 2.2206420636086033e-16
+      },
+      {
+        "sites": 512,
+        "spacing": 0.0390625,
+        "duration": 2.0,
+        "proper_mass": 0.35,
+        "initial_direction": -1,
+        "cutoff": 12,
+        "smooth_window_center_fraction": 0.5,
+        "exact_norm": 1.0000000000000004,
+        "initial_sample_norm": 1.0,
+        "sampled_reference_norm": 1.0000000000000004,
+        "vector_error_diagnostic": 1.9190067382966937e-05,
+        "vector_error_upper_bound": 0.0009681319337648122,
+        "continuum_reference_error_upper_bound": 2.617521043277054e-18,
+        "opposite_direction_probability_Galerkin": 0.3546839542929234,
+        "smooth_record_probability_lattice": 0.6311462396483761,
+        "smooth_record_probability_continuum_reference": 0.6311405922916092,
+        "smooth_record_error_diagnostic": 5.6473567668913205e-06,
+        "smooth_record_error_upper_bound": 0.023769960844887115,
+        "record_sampling_budget": {
+          "unnormalized_sample_mass_error_bound": 0.009299698324956739,
+          "unnormalized_smooth_record_error_bound": 0.012303743548164015,
+          "normalized_smooth_record_error_bound": 0.021806233264080335
+        },
+        "continuum_probability_quadrature_upper_bound": 2.746371327715182e-05,
+        "quadrature_halving_difference_diagnostic": 0.0,
+        "energy_drift": 4.581510794244247e-16
+      }
+    ],
+    "coarse_record_plus_probabilities_lattice": [
+      0.8111841555583947,
+      0.6311475567655247
+    ],
+    "coarse_record_plus_probabilities_reference": [
+      0.8111839727865776,
+      0.6311405922916092
+    ],
+    "fair_bit_denominator": 4096,
+    "quantization_error_bound": 0.0001220703125,
+    "decision_rule": "plus output guesses initial + carrier, minus output guesses initial - carrier; priors 1/2",
+    "exact_expected_classification_success": 0.590018299396435,
+    "predicted_classification_success": 0.5900216902474842,
+    "classification_success_difference": 3.390851049167587e-06,
+    "classification_success_error_upper_bound": 0.023892031157387115,
+    "conservative_success_lower_bound": 0.566129659090097,
+    "clock_joint_probabilities": [
+      [
+        0.15784548921271424,
+        0.009016500147373766
+      ],
+      [
+        0.7881188362639755,
+        0.04501917437593644
+      ]
+    ],
+    "resources": {
+      "chain_qubit_slots": 512,
+      "occupied_excitation_sector_dimension": 512,
+      "retained_clock_slots": 2,
+      "total_quantum_slots_before_detectors": 514,
+      "local_destructive_position_readouts": 512,
+      "clock_reads": 2,
+      "classical_raw_outcome_bits": 514,
+      "minimum_fixed_label_bits_for_this_single_excitation_support": 9,
+      "classical_bit_hops_for_position_bits": 65536,
+      "classical_bit_hops_including_clock_bits": 65792,
+      "declared_serial_hop_parameter": 0.0390625,
+      "latest_record_collection_parameter": 2572.0,
+      "record_transport_is_serial_no_queue_optimization": true,
+      "resets": 0,
+      "initial_smooth_carrier_preparation_is_a_declared_input": true,
+      "full_detector_memory_clock_energy_and_preparation_gate_costs_closed": false,
+      "staggered_onsite_controls": 512,
+      "fresh_independent_fair_postprocessing_bits": 12,
+      "threshold_table_storage_bits_excluding_metadata": 6656,
+      "smooth_output_bits": 1,
+      "all_fine_record_TV_against_continuum_spinor_density_is_bounded": false
+    },
+    "record_collection_schedule": [
+      {
+        "kind": "position",
+        "source_site": 0,
+        "read_at": 2.0,
+        "hops": 0,
+        "received_at_site_zero": 2.0
+      },
+      {
+        "kind": "position",
+        "source_site": 1,
+        "read_at": 2.0,
+        "hops": 1,
+        "received_at_site_zero": 2.0390625
+      },
+      {
+        "kind": "position",
+        "source_site": 2,
+        "read_at": 2.0,
+        "hops": 2,
+        "received_at_site_zero": 2.1171875
+      },
+      {
+        "kind": "position",
+        "source_site": 3,
+        "read_at": 2.0,
+        "hops": 3,
+        "received_at_site_zero": 2.234375
+      },
+      {
+        "kind": "position",
+        "source_site": 4,
+        "read_at": 2.0,
+        "hops": 4,
+        "received_at_site_zero": 2.390625
+      },
+      {
+        "kind": "position",
+        "source_site": 5,
+        "read_at": 2.0,
+        "hops": 5,
+        "received_at_site_zero": 2.5859375
+      },
+      {
+        "kind": "position",
+        "source_site": 6,
+        "read_at": 2.0,
+        "hops": 6,
+        "received_at_site_zero": 2.8203125
+      },
+      {
+        "kind": "position",
+        "source_site": 7,
+        "read_at": 2.0,
+        "hops": 7,
+        "received_at_site_zero": 3.09375
+      },
+      {
+        "kind": "position",
+        "source_site": 8,
+        "read_at": 2.0,
+        "hops": 8,
+        "received_at_site_zero": 3.40625
+      },
+      {
+        "kind": "position",
+        "source_site": 9,
+        "read_at": 2.0,
+        "hops": 9,
+        "received_at_site_zero": 3.7578125
+      },
+      {
+        "kind": "position",
+        "source_site": 10,
+        "read_at": 2.0,
+        "hops": 10,
+        "received_at_site_zero": 4.1484375
+      },
+      {
+        "kind": "position",
+        "source_site": 11,
+        "read_at": 2.0,
+        "hops": 11,
+        "received_at_site_zero": 4.578125
+      },
+      {
+        "kind": "position",
+        "source_site": 12,
+        "read_at": 2.0,
+        "hops": 12,
+        "received_at_site_zero": 5.046875
+      },
+      {
+        "kind": "position",
+        "source_site": 13,
+        "read_at": 2.0,
+        "hops": 13,
+        "received_at_site_zero": 5.5546875
+      },
+      {
+        "kind": "position",
+        "source_site": 14,
+        "read_at": 2.0,
+        "hops": 14,
+        "received_at_site_zero": 6.1015625
+      },
+      {
+        "kind": "position",
+        "source_site": 15,
+        "read_at": 2.0,
+        "hops": 15,
+        "received_at_site_zero": 6.6875
+      },
+      {
+        "kind": "position",
+        "source_site": 16,
+        "read_at": 2.0,
+        "hops": 16,
+        "received_at_site_zero": 7.3125
+      },
+      {
+        "kind": "position",
+        "source_site": 17,
+        "read_at": 2.0,
+        "hops": 17,
+        "received_at_site_zero": 7.9765625
+      },
+      {
+        "kind": "position",
+        "source_site": 18,
+        "read_at": 2.0,
+        "hops": 18,
+        "received_at_site_zero": 8.6796875
+      },
+      {
+        "kind": "position",
+        "source_site": 19,
+        "read_at": 2.0,
+        "hops": 19,
+        "received_at_site_zero": 9.421875
+      },
+      {
+        "kind": "position",
+        "source_site": 20,
+        "read_at": 2.0,
+        "hops": 20,
+        "received_at_site_zero": 10.203125
+      },
+      {
+        "kind": "position",
+        "source_site": 21,
+        "read_at": 2.0,
+        "hops": 21,
+        "received_at_site_zero": 11.0234375
+      },
+      {
+        "kind": "position",
+        "source_site": 22,
+        "read_at": 2.0,
+        "hops": 22,
+        "received_at_site_zero": 11.8828125
+      },
+      {
+        "kind": "position",
+        "source_site": 23,
+        "read_at": 2.0,
+        "hops": 23,
+        "received_at_site_zero": 12.78125
+      },
+      {
+        "kind": "position",
+        "source_site": 24,
+        "read_at": 2.0,
+        "hops": 24,
+        "received_at_site_zero": 13.71875
+      },
+      {
+        "kind": "position",
+        "source_site": 25,
+        "read_at": 2.0,
+        "hops": 25,
+        "received_at_site_zero": 14.6953125
+      },
+      {
+        "kind": "position",
+        "source_site": 26,
+        "read_at": 2.0,
+        "hops": 26,
+        "received_at_site_zero": 15.7109375
+      },
+      {
+        "kind": "position",
+        "source_site": 27,
+        "read_at": 2.0,
+        "hops": 27,
+        "received_at_site_zero": 16.765625
+      },
+      {
+        "kind": "position",
+        "source_site": 28,
+        "read_at": 2.0,
+        "hops": 28,
+        "received_at_site_zero": 17.859375
+      },
+      {
+        "kind": "position",
+        "source_site": 29,
+        "read_at": 2.0,
+        "hops": 29,
+        "received_at_site_zero": 18.9921875
+      },
+      {
+        "kind": "position",
+        "source_site": 30,
+        "read_at": 2.0,
+        "hops": 30,
+        "received_at_site_zero": 20.1640625
+      },
+      {
+        "kind": "position",
+        "source_site": 31,
+        "read_at": 2.0,
+        "hops": 31,
+        "received_at_site_zero": 21.375
+      },
+      {
+        "kind": "position",
+        "source_site": 32,
+        "read_at": 2.0,
+        "hops": 32,
+        "received_at_site_zero": 22.625
+      },
+      {
+        "kind": "position",
+        "source_site": 33,
+        "read_at": 2.0,
+        "hops": 33,
+        "received_at_site_zero": 23.9140625
+      },
+      {
+        "kind": "position",
+        "source_site": 34,
+        "read_at": 2.0,
+        "hops": 34,
+        "received_at_site_zero": 25.2421875
+      },
+      {
+        "kind": "position",
+        "source_site": 35,
+        "read_at": 2.0,
+        "hops": 35,
+        "received_at_site_zero": 26.609375
+      },
+      {
+        "kind": "position",
+        "source_site": 36,
+        "read_at": 2.0,
+        "hops": 36,
+        "received_at_site_zero": 28.015625
+      },
+      {
+        "kind": "position",
+        "source_site": 37,
+        "read_at": 2.0,
+        "hops": 37,
+        "received_at_site_zero": 29.4609375
+      },
+      {
+        "kind": "position",
+        "source_site": 38,
+        "read_at": 2.0,
+        "hops": 38,
+        "received_at_site_zero": 30.9453125
+      },
+      {
+        "kind": "position",
+        "source_site": 39,
+        "read_at": 2.0,
+        "hops": 39,
+        "received_at_site_zero": 32.46875
+      },
+      {
+        "kind": "position",
+        "source_site": 40,
+        "read_at": 2.0,
+        "hops": 40,
+        "received_at_site_zero": 34.03125
+      },
+      {
+        "kind": "position",
+        "source_site": 41,
+        "read_at": 2.0,
+        "hops": 41,
+        "received_at_site_zero": 35.6328125
+      },
+      {
+        "kind": "position",
+        "source_site": 42,
+        "read_at": 2.0,
+        "hops": 42,
+        "received_at_site_zero": 37.2734375
+      },
+      {
+        "kind": "position",
+        "source_site": 43,
+        "read_at": 2.0,
+        "hops": 43,
+        "received_at_site_zero": 38.953125
+      },
+      {
+        "kind": "position",
+        "source_site": 44,
+        "read_at": 2.0,
+        "hops": 44,
+        "received_at_site_zero": 40.671875
+      },
+      {
+        "kind": "position",
+        "source_site": 45,
+        "read_at": 2.0,
+        "hops": 45,
+        "received_at_site_zero": 42.4296875
+      },
+      {
+        "kind": "position",
+        "source_site": 46,
+        "read_at": 2.0,
+        "hops": 46,
+        "received_at_site_zero": 44.2265625
+      },
+      {
+        "kind": "position",
+        "source_site": 47,
+        "read_at": 2.0,
+        "hops": 47,
+        "received_at_site_zero": 46.0625
+      },
+      {
+        "kind": "position",
+        "source_site": 48,
+        "read_at": 2.0,
+        "hops": 48,
+        "received_at_site_zero": 47.9375
+      },
+      {
+        "kind": "position",
+        "source_site": 49,
+        "read_at": 2.0,
+        "hops": 49,
+        "received_at_site_zero": 49.8515625
+      },
+      {
+        "kind": "position",
+        "source_site": 50,
+        "read_at": 2.0,
+        "hops": 50,
+        "received_at_site_zero": 51.8046875
+      },
+      {
+        "kind": "position",
+        "source_site": 51,
+        "read_at": 2.0,
+        "hops": 51,
+        "received_at_site_zero": 53.796875
+      },
+      {
+        "kind": "position",
+        "source_site": 52,
+        "read_at": 2.0,
+        "hops": 52,
+        "received_at_site_zero": 55.828125
+      },
+      {
+        "kind": "position",
+        "source_site": 53,
+        "read_at": 2.0,
+        "hops": 53,
+        "received_at_site_zero": 57.8984375
+      },
+      {
+        "kind": "position",
+        "source_site": 54,
+        "read_at": 2.0,
+        "hops": 54,
+        "received_at_site_zero": 60.0078125
+      },
+      {
+        "kind": "position",
+        "source_site": 55,
+        "read_at": 2.0,
+        "hops": 55,
+        "received_at_site_zero": 62.15625
+      },
+      {
+        "kind": "position",
+        "source_site": 56,
+        "read_at": 2.0,
+        "hops": 56,
+        "received_at_site_zero": 64.34375
+      },
+      {
+        "kind": "position",
+        "source_site": 57,
+        "read_at": 2.0,
+        "hops": 57,
+        "received_at_site_zero": 66.5703125
+      },
+      {
+        "kind": "position",
+        "source_site": 58,
+        "read_at": 2.0,
+        "hops": 58,
+        "received_at_site_zero": 68.8359375
+      },
+      {
+        "kind": "position",
+        "source_site": 59,
+        "read_at": 2.0,
+        "hops": 59,
+        "received_at_site_zero": 71.140625
+      },
+      {
+        "kind": "position",
+        "source_site": 60,
+        "read_at": 2.0,
+        "hops": 60,
+        "received_at_site_zero": 73.484375
+      },
+      {
+        "kind": "position",
+        "source_site": 61,
+        "read_at": 2.0,
+        "hops": 61,
+        "received_at_site_zero": 75.8671875
+      },
+      {
+        "kind": "position",
+        "source_site": 62,
+        "read_at": 2.0,
+        "hops": 62,
+        "received_at_site_zero": 78.2890625
+      },
+      {
+        "kind": "position",
+        "source_site": 63,
+        "read_at": 2.0,
+        "hops": 63,
+        "received_at_site_zero": 80.75
+      },
+      {
+        "kind": "position",
+        "source_site": 64,
+        "read_at": 2.0,
+        "hops": 64,
+        "received_at_site_zero": 83.25
+      },
+      {
+        "kind": "position",
+        "source_site": 65,
+        "read_at": 2.0,
+        "hops": 65,
+        "received_at_site_zero": 85.7890625
+      },
+      {
+        "kind": "position",
+        "source_site": 66,
+        "read_at": 2.0,
+        "hops": 66,
+        "received_at_site_zero": 88.3671875
+      },
+      {
+        "kind": "position",
+        "source_site": 67,
+        "read_at": 2.0,
+        "hops": 67,
+        "received_at_site_zero": 90.984375
+      },
+      {
+        "kind": "position",
+        "source_site": 68,
+        "read_at": 2.0,
+        "hops": 68,
+        "received_at_site_zero": 93.640625
+      },
+      {
+        "kind": "position",
+        "source_site": 69,
+        "read_at": 2.0,
+        "hops": 69,
+        "received_at_site_zero": 96.3359375
+      },
+      {
+        "kind": "position",
+        "source_site": 70,
+        "read_at": 2.0,
+        "hops": 70,
+        "received_at_site_zero": 99.0703125
+      },
+      {
+        "kind": "position",
+        "source_site": 71,
+        "read_at": 2.0,
+        "hops": 71,
+        "received_at_site_zero": 101.84375
+      },
+      {
+        "kind": "position",
+        "source_site": 72,
+        "read_at": 2.0,
+        "hops": 72,
+        "received_at_site_zero": 104.65625
+      },
+      {
+        "kind": "position",
+        "source_site": 73,
+        "read_at": 2.0,
+        "hops": 73,
+        "received_at_site_zero": 107.5078125
+      },
+      {
+        "kind": "position",
+        "source_site": 74,
+        "read_at": 2.0,
+        "hops": 74,
+        "received_at_site_zero": 110.3984375
+      },
+      {
+        "kind": "position",
+        "source_site": 75,
+        "read_at": 2.0,
+        "hops": 75,
+        "received_at_site_zero": 113.328125
+      },
+      {
+        "kind": "position",
+        "source_site": 76,
+        "read_at": 2.0,
+        "hops": 76,
+        "received_at_site_zero": 116.296875
+      },
+      {
+        "kind": "position",
+        "source_site": 77,
+        "read_at": 2.0,
+        "hops": 77,
+        "received_at_site_zero": 119.3046875
+      },
+      {
+        "kind": "position",
+        "source_site": 78,
+        "read_at": 2.0,
+        "hops": 78,
+        "received_at_site_zero": 122.3515625
+      },
+      {
+        "kind": "position",
+        "source_site": 79,
+        "read_at": 2.0,
+        "hops": 79,
+        "received_at_site_zero": 125.4375
+      },
+      {
+        "kind": "position",
+        "source_site": 80,
+        "read_at": 2.0,
+        "hops": 80,
+        "received_at_site_zero": 128.5625
+      },
+      {
+        "kind": "position",
+        "source_site": 81,
+        "read_at": 2.0,
+        "hops": 81,
+        "received_at_site_zero": 131.7265625
+      },
+      {
+        "kind": "position",
+        "source_site": 82,
+        "read_at": 2.0,
+        "hops": 82,
+        "received_at_site_zero": 134.9296875
+      },
+      {
+        "kind": "position",
+        "source_site": 83,
+        "read_at": 2.0,
+        "hops": 83,
+        "received_at_site_zero": 138.171875
+      },
+      {
+        "kind": "position",
+        "source_site": 84,
+        "read_at": 2.0,
+        "hops": 84,
+        "received_at_site_zero": 141.453125
+      },
+      {
+        "kind": "position",
+        "source_site": 85,
+        "read_at": 2.0,
+        "hops": 85,
+        "received_at_site_zero": 144.7734375
+      },
+      {
+        "kind": "position",
+        "source_site": 86,
+        "read_at": 2.0,
+        "hops": 86,
+        "received_at_site_zero": 148.1328125
+      },
+      {
+        "kind": "position",
+        "source_site": 87,
+        "read_at": 2.0,
+        "hops": 87,
+        "received_at_site_zero": 151.53125
+      },
+      {
+        "kind": "position",
+        "source_site": 88,
+        "read_at": 2.0,
+        "hops": 88,
+        "received_at_site_zero": 154.96875
+      },
+      {
+        "kind": "position",
+        "source_site": 89,
+        "read_at": 2.0,
+        "hops": 89,
+        "received_at_site_zero": 158.4453125
+      },
+      {
+        "kind": "position",
+        "source_site": 90,
+        "read_at": 2.0,
+        "hops": 90,
+        "received_at_site_zero": 161.9609375
+      },
+      {
+        "kind": "position",
+        "source_site": 91,
+        "read_at": 2.0,
+        "hops": 91,
+        "received_at_site_zero": 165.515625
+      },
+      {
+        "kind": "position",
+        "source_site": 92,
+        "read_at": 2.0,
+        "hops": 92,
+        "received_at_site_zero": 169.109375
+      },
+      {
+        "kind": "position",
+        "source_site": 93,
+        "read_at": 2.0,
+        "hops": 93,
+        "received_at_site_zero": 172.7421875
+      },
+      {
+        "kind": "position",
+        "source_site": 94,
+        "read_at": 2.0,
+        "hops": 94,
+        "received_at_site_zero": 176.4140625
+      },
+      {
+        "kind": "position",
+        "source_site": 95,
+        "read_at": 2.0,
+        "hops": 95,
+        "received_at_site_zero": 180.125
+      },
+      {
+        "kind": "position",
+        "source_site": 96,
+        "read_at": 2.0,
+        "hops": 96,
+        "received_at_site_zero": 183.875
+      },
+      {
+        "kind": "position",
+        "source_site": 97,
+        "read_at": 2.0,
+        "hops": 97,
+        "received_at_site_zero": 187.6640625
+      },
+      {
+        "kind": "position",
+        "source_site": 98,
+        "read_at": 2.0,
+        "hops": 98,
+        "received_at_site_zero": 191.4921875
+      },
+      {
+        "kind": "position",
+        "source_site": 99,
+        "read_at": 2.0,
+        "hops": 99,
+        "received_at_site_zero": 195.359375
+      },
+      {
+        "kind": "position",
+        "source_site": 100,
+        "read_at": 2.0,
+        "hops": 100,
+        "received_at_site_zero": 199.265625
+      },
+      {
+        "kind": "position",
+        "source_site": 101,
+        "read_at": 2.0,
+        "hops": 101,
+        "received_at_site_zero": 203.2109375
+      },
+      {
+        "kind": "position",
+        "source_site": 102,
+        "read_at": 2.0,
+        "hops": 102,
+        "received_at_site_zero": 207.1953125
+      },
+      {
+        "kind": "position",
+        "source_site": 103,
+        "read_at": 2.0,
+        "hops": 103,
+        "received_at_site_zero": 211.21875
+      },
+      {
+        "kind": "position",
+        "source_site": 104,
+        "read_at": 2.0,
+        "hops": 104,
+        "received_at_site_zero": 215.28125
+      },
+      {
+        "kind": "position",
+        "source_site": 105,
+        "read_at": 2.0,
+        "hops": 105,
+        "received_at_site_zero": 219.3828125
+      },
+      {
+        "kind": "position",
+        "source_site": 106,
+        "read_at": 2.0,
+        "hops": 106,
+        "received_at_site_zero": 223.5234375
+      },
+      {
+        "kind": "position",
+        "source_site": 107,
+        "read_at": 2.0,
+        "hops": 107,
+        "received_at_site_zero": 227.703125
+      },
+      {
+        "kind": "position",
+        "source_site": 108,
+        "read_at": 2.0,
+        "hops": 108,
+        "received_at_site_zero": 231.921875
+      },
+      {
+        "kind": "position",
+        "source_site": 109,
+        "read_at": 2.0,
+        "hops": 109,
+        "received_at_site_zero": 236.1796875
+      },
+      {
+        "kind": "position",
+        "source_site": 110,
+        "read_at": 2.0,
+        "hops": 110,
+        "received_at_site_zero": 240.4765625
+      },
+      {
+        "kind": "position",
+        "source_site": 111,
+        "read_at": 2.0,
+        "hops": 111,
+        "received_at_site_zero": 244.8125
+      },
+      {
+        "kind": "position",
+        "source_site": 112,
+        "read_at": 2.0,
+        "hops": 112,
+        "received_at_site_zero": 249.1875
+      },
+      {
+        "kind": "position",
+        "source_site": 113,
+        "read_at": 2.0,
+        "hops": 113,
+        "received_at_site_zero": 253.6015625
+      },
+      {
+        "kind": "position",
+        "source_site": 114,
+        "read_at": 2.0,
+        "hops": 114,
+        "received_at_site_zero": 258.0546875
+      },
+      {
+        "kind": "position",
+        "source_site": 115,
+        "read_at": 2.0,
+        "hops": 115,
+        "received_at_site_zero": 262.546875
+      },
+      {
+        "kind": "position",
+        "source_site": 116,
+        "read_at": 2.0,
+        "hops": 116,
+        "received_at_site_zero": 267.078125
+      },
+      {
+        "kind": "position",
+        "source_site": 117,
+        "read_at": 2.0,
+        "hops": 117,
+        "received_at_site_zero": 271.6484375
+      },
+      {
+        "kind": "position",
+        "source_site": 118,
+        "read_at": 2.0,
+        "hops": 118,
+        "received_at_site_zero": 276.2578125
+      },
+      {
+        "kind": "position",
+        "source_site": 119,
+        "read_at": 2.0,
+        "hops": 119,
+        "received_at_site_zero": 280.90625
+      },
+      {
+        "kind": "position",
+        "source_site": 120,
+        "read_at": 2.0,
+        "hops": 120,
+        "received_at_site_zero": 285.59375
+      },
+      {
+        "kind": "position",
+        "source_site": 121,
+        "read_at": 2.0,
+        "hops": 121,
+        "received_at_site_zero": 290.3203125
+      },
+      {
+        "kind": "position",
+        "source_site": 122,
+        "read_at": 2.0,
+        "hops": 122,
+        "received_at_site_zero": 295.0859375
+      },
+      {
+        "kind": "position",
+        "source_site": 123,
+        "read_at": 2.0,
+        "hops": 123,
+        "received_at_site_zero": 299.890625
+      },
+      {
+        "kind": "position",
+        "source_site": 124,
+        "read_at": 2.0,
+        "hops": 124,
+        "received_at_site_zero": 304.734375
+      },
+      {
+        "kind": "position",
+        "source_site": 125,
+        "read_at": 2.0,
+        "hops": 125,
+        "received_at_site_zero": 309.6171875
+      },
+      {
+        "kind": "position",
+        "source_site": 126,
+        "read_at": 2.0,
+        "hops": 126,
+        "received_at_site_zero": 314.5390625
+      },
+      {
+        "kind": "position",
+        "source_site": 127,
+        "read_at": 2.0,
+        "hops": 127,
+        "received_at_site_zero": 319.5
+      },
+      {
+        "kind": "position",
+        "source_site": 128,
+        "read_at": 2.0,
+        "hops": 128,
+        "received_at_site_zero": 324.5
+      },
+      {
+        "kind": "position",
+        "source_site": 129,
+        "read_at": 2.0,
+        "hops": 129,
+        "received_at_site_zero": 329.5390625
+      },
+      {
+        "kind": "position",
+        "source_site": 130,
+        "read_at": 2.0,
+        "hops": 130,
+        "received_at_site_zero": 334.6171875
+      },
+      {
+        "kind": "position",
+        "source_site": 131,
+        "read_at": 2.0,
+        "hops": 131,
+        "received_at_site_zero": 339.734375
+      },
+      {
+        "kind": "position",
+        "source_site": 132,
+        "read_at": 2.0,
+        "hops": 132,
+        "received_at_site_zero": 344.890625
+      },
+      {
+        "kind": "position",
+        "source_site": 133,
+        "read_at": 2.0,
+        "hops": 133,
+        "received_at_site_zero": 350.0859375
+      },
+      {
+        "kind": "position",
+        "source_site": 134,
+        "read_at": 2.0,
+        "hops": 134,
+        "received_at_site_zero": 355.3203125
+      },
+      {
+        "kind": "position",
+        "source_site": 135,
+        "read_at": 2.0,
+        "hops": 135,
+        "received_at_site_zero": 360.59375
+      },
+      {
+        "kind": "position",
+        "source_site": 136,
+        "read_at": 2.0,
+        "hops": 136,
+        "received_at_site_zero": 365.90625
+      },
+      {
+        "kind": "position",
+        "source_site": 137,
+        "read_at": 2.0,
+        "hops": 137,
+        "received_at_site_zero": 371.2578125
+      },
+      {
+        "kind": "position",
+        "source_site": 138,
+        "read_at": 2.0,
+        "hops": 138,
+        "received_at_site_zero": 376.6484375
+      },
+      {
+        "kind": "position",
+        "source_site": 139,
+        "read_at": 2.0,
+        "hops": 139,
+        "received_at_site_zero": 382.078125
+      },
+      {
+        "kind": "position",
+        "source_site": 140,
+        "read_at": 2.0,
+        "hops": 140,
+        "received_at_site_zero": 387.546875
+      },
+      {
+        "kind": "position",
+        "source_site": 141,
+        "read_at": 2.0,
+        "hops": 141,
+        "received_at_site_zero": 393.0546875
+      },
+      {
+        "kind": "position",
+        "source_site": 142,
+        "read_at": 2.0,
+        "hops": 142,
+        "received_at_site_zero": 398.6015625
+      },
+      {
+        "kind": "position",
+        "source_site": 143,
+        "read_at": 2.0,
+        "hops": 143,
+        "received_at_site_zero": 404.1875
+      },
+      {
+        "kind": "position",
+        "source_site": 144,
+        "read_at": 2.0,
+        "hops": 144,
+        "received_at_site_zero": 409.8125
+      },
+      {
+        "kind": "position",
+        "source_site": 145,
+        "read_at": 2.0,
+        "hops": 145,
+        "received_at_site_zero": 415.4765625
+      },
+      {
+        "kind": "position",
+        "source_site": 146,
+        "read_at": 2.0,
+        "hops": 146,
+        "received_at_site_zero": 421.1796875
+      },
+      {
+        "kind": "position",
+        "source_site": 147,
+        "read_at": 2.0,
+        "hops": 147,
+        "received_at_site_zero": 426.921875
+      },
+      {
+        "kind": "position",
+        "source_site": 148,
+        "read_at": 2.0,
+        "hops": 148,
+        "received_at_site_zero": 432.703125
+      },
+      {
+        "kind": "position",
+        "source_site": 149,
+        "read_at": 2.0,
+        "hops": 149,
+        "received_at_site_zero": 438.5234375
+      },
+      {
+        "kind": "position",
+        "source_site": 150,
+        "read_at": 2.0,
+        "hops": 150,
+        "received_at_site_zero": 444.3828125
+      },
+      {
+        "kind": "position",
+        "source_site": 151,
+        "read_at": 2.0,
+        "hops": 151,
+        "received_at_site_zero": 450.28125
+      },
+      {
+        "kind": "position",
+        "source_site": 152,
+        "read_at": 2.0,
+        "hops": 152,
+        "received_at_site_zero": 456.21875
+      },
+      {
+        "kind": "position",
+        "source_site": 153,
+        "read_at": 2.0,
+        "hops": 153,
+        "received_at_site_zero": 462.1953125
+      },
+      {
+        "kind": "position",
+        "source_site": 154,
+        "read_at": 2.0,
+        "hops": 154,
+        "received_at_site_zero": 468.2109375
+      },
+      {
+        "kind": "position",
+        "source_site": 155,
+        "read_at": 2.0,
+        "hops": 155,
+        "received_at_site_zero": 474.265625
+      },
+      {
+        "kind": "position",
+        "source_site": 156,
+        "read_at": 2.0,
+        "hops": 156,
+        "received_at_site_zero": 480.359375
+      },
+      {
+        "kind": "position",
+        "source_site": 157,
+        "read_at": 2.0,
+        "hops": 157,
+        "received_at_site_zero": 486.4921875
+      },
+      {
+        "kind": "position",
+        "source_site": 158,
+        "read_at": 2.0,
+        "hops": 158,
+        "received_at_site_zero": 492.6640625
+      },
+      {
+        "kind": "position",
+        "source_site": 159,
+        "read_at": 2.0,
+        "hops": 159,
+        "received_at_site_zero": 498.875
+      },
+      {
+        "kind": "position",
+        "source_site": 160,
+        "read_at": 2.0,
+        "hops": 160,
+        "received_at_site_zero": 505.125
+      },
+      {
+        "kind": "position",
+        "source_site": 161,
+        "read_at": 2.0,
+        "hops": 161,
+        "received_at_site_zero": 511.4140625
+      },
+      {
+        "kind": "position",
+        "source_site": 162,
+        "read_at": 2.0,
+        "hops": 162,
+        "received_at_site_zero": 517.7421875
+      },
+      {
+        "kind": "position",
+        "source_site": 163,
+        "read_at": 2.0,
+        "hops": 163,
+        "received_at_site_zero": 524.109375
+      },
+      {
+        "kind": "position",
+        "source_site": 164,
+        "read_at": 2.0,
+        "hops": 164,
+        "received_at_site_zero": 530.515625
+      },
+      {
+        "kind": "position",
+        "source_site": 165,
+        "read_at": 2.0,
+        "hops": 165,
+        "received_at_site_zero": 536.9609375
+      },
+      {
+        "kind": "position",
+        "source_site": 166,
+        "read_at": 2.0,
+        "hops": 166,
+        "received_at_site_zero": 543.4453125
+      },
+      {
+        "kind": "position",
+        "source_site": 167,
+        "read_at": 2.0,
+        "hops": 167,
+        "received_at_site_zero": 549.96875
+      },
+      {
+        "kind": "position",
+        "source_site": 168,
+        "read_at": 2.0,
+        "hops": 168,
+        "received_at_site_zero": 556.53125
+      },
+      {
+        "kind": "position",
+        "source_site": 169,
+        "read_at": 2.0,
+        "hops": 169,
+        "received_at_site_zero": 563.1328125
+      },
+      {
+        "kind": "position",
+        "source_site": 170,
+        "read_at": 2.0,
+        "hops": 170,
+        "received_at_site_zero": 569.7734375
+      },
+      {
+        "kind": "position",
+        "source_site": 171,
+        "read_at": 2.0,
+        "hops": 171,
+        "received_at_site_zero": 576.453125
+      },
+      {
+        "kind": "position",
+        "source_site": 172,
+        "read_at": 2.0,
+        "hops": 172,
+        "received_at_site_zero": 583.171875
+      },
+      {
+        "kind": "position",
+        "source_site": 173,
+        "read_at": 2.0,
+        "hops": 173,
+        "received_at_site_zero": 589.9296875
+      },
+      {
+        "kind": "position",
+        "source_site": 174,
+        "read_at": 2.0,
+        "hops": 174,
+        "received_at_site_zero": 596.7265625
+      },
+      {
+        "kind": "position",
+        "source_site": 175,
+        "read_at": 2.0,
+        "hops": 175,
+        "received_at_site_zero": 603.5625
+      },
+      {
+        "kind": "position",
+        "source_site": 176,
+        "read_at": 2.0,
+        "hops": 176,
+        "received_at_site_zero": 610.4375
+      },
+      {
+        "kind": "position",
+        "source_site": 177,
+        "read_at": 2.0,
+        "hops": 177,
+        "received_at_site_zero": 617.3515625
+      },
+      {
+        "kind": "position",
+        "source_site": 178,
+        "read_at": 2.0,
+        "hops": 178,
+        "received_at_site_zero": 624.3046875
+      },
+      {
+        "kind": "position",
+        "source_site": 179,
+        "read_at": 2.0,
+        "hops": 179,
+        "received_at_site_zero": 631.296875
+      },
+      {
+        "kind": "position",
+        "source_site": 180,
+        "read_at": 2.0,
+        "hops": 180,
+        "received_at_site_zero": 638.328125
+      },
+      {
+        "kind": "position",
+        "source_site": 181,
+        "read_at": 2.0,
+        "hops": 181,
+        "received_at_site_zero": 645.3984375
+      },
+      {
+        "kind": "position",
+        "source_site": 182,
+        "read_at": 2.0,
+        "hops": 182,
+        "received_at_site_zero": 652.5078125
+      },
+      {
+        "kind": "position",
+        "source_site": 183,
+        "read_at": 2.0,
+        "hops": 183,
+        "received_at_site_zero": 659.65625
+      },
+      {
+        "kind": "position",
+        "source_site": 184,
+        "read_at": 2.0,
+        "hops": 184,
+        "received_at_site_zero": 666.84375
+      },
+      {
+        "kind": "position",
+        "source_site": 185,
+        "read_at": 2.0,
+        "hops": 185,
+        "received_at_site_zero": 674.0703125
+      },
+      {
+        "kind": "position",
+        "source_site": 186,
+        "read_at": 2.0,
+        "hops": 186,
+        "received_at_site_zero": 681.3359375
+      },
+      {
+        "kind": "position",
+        "source_site": 187,
+        "read_at": 2.0,
+        "hops": 187,
+        "received_at_site_zero": 688.640625
+      },
+      {
+        "kind": "position",
+        "source_site": 188,
+        "read_at": 2.0,
+        "hops": 188,
+        "received_at_site_zero": 695.984375
+      },
+      {
+        "kind": "position",
+        "source_site": 189,
+        "read_at": 2.0,
+        "hops": 189,
+        "received_at_site_zero": 703.3671875
+      },
+      {
+        "kind": "position",
+        "source_site": 190,
+        "read_at": 2.0,
+        "hops": 190,
+        "received_at_site_zero": 710.7890625
+      },
+      {
+        "kind": "position",
+        "source_site": 191,
+        "read_at": 2.0,
+        "hops": 191,
+        "received_at_site_zero": 718.25
+      },
+      {
+        "kind": "position",
+        "source_site": 192,
+        "read_at": 2.0,
+        "hops": 192,
+        "received_at_site_zero": 725.75
+      },
+      {
+        "kind": "position",
+        "source_site": 193,
+        "read_at": 2.0,
+        "hops": 193,
+        "received_at_site_zero": 733.2890625
+      },
+      {
+        "kind": "position",
+        "source_site": 194,
+        "read_at": 2.0,
+        "hops": 194,
+        "received_at_site_zero": 740.8671875
+      },
+      {
+        "kind": "position",
+        "source_site": 195,
+        "read_at": 2.0,
+        "hops": 195,
+        "received_at_site_zero": 748.484375
+      },
+      {
+        "kind": "position",
+        "source_site": 196,
+        "read_at": 2.0,
+        "hops": 196,
+        "received_at_site_zero": 756.140625
+      },
+      {
+        "kind": "position",
+        "source_site": 197,
+        "read_at": 2.0,
+        "hops": 197,
+        "received_at_site_zero": 763.8359375
+      },
+      {
+        "kind": "position",
+        "source_site": 198,
+        "read_at": 2.0,
+        "hops": 198,
+        "received_at_site_zero": 771.5703125
+      },
+      {
+        "kind": "position",
+        "source_site": 199,
+        "read_at": 2.0,
+        "hops": 199,
+        "received_at_site_zero": 779.34375
+      },
+      {
+        "kind": "position",
+        "source_site": 200,
+        "read_at": 2.0,
+        "hops": 200,
+        "received_at_site_zero": 787.15625
+      },
+      {
+        "kind": "position",
+        "source_site": 201,
+        "read_at": 2.0,
+        "hops": 201,
+        "received_at_site_zero": 795.0078125
+      },
+      {
+        "kind": "position",
+        "source_site": 202,
+        "read_at": 2.0,
+        "hops": 202,
+        "received_at_site_zero": 802.8984375
+      },
+      {
+        "kind": "position",
+        "source_site": 203,
+        "read_at": 2.0,
+        "hops": 203,
+        "received_at_site_zero": 810.828125
+      },
+      {
+        "kind": "position",
+        "source_site": 204,
+        "read_at": 2.0,
+        "hops": 204,
+        "received_at_site_zero": 818.796875
+      },
+      {
+        "kind": "position",
+        "source_site": 205,
+        "read_at": 2.0,
+        "hops": 205,
+        "received_at_site_zero": 826.8046875
+      },
+      {
+        "kind": "position",
+        "source_site": 206,
+        "read_at": 2.0,
+        "hops": 206,
+        "received_at_site_zero": 834.8515625
+      },
+      {
+        "kind": "position",
+        "source_site": 207,
+        "read_at": 2.0,
+        "hops": 207,
+        "received_at_site_zero": 842.9375
+      },
+      {
+        "kind": "position",
+        "source_site": 208,
+        "read_at": 2.0,
+        "hops": 208,
+        "received_at_site_zero": 851.0625
+      },
+      {
+        "kind": "position",
+        "source_site": 209,
+        "read_at": 2.0,
+        "hops": 209,
+        "received_at_site_zero": 859.2265625
+      },
+      {
+        "kind": "position",
+        "source_site": 210,
+        "read_at": 2.0,
+        "hops": 210,
+        "received_at_site_zero": 867.4296875
+      },
+      {
+        "kind": "position",
+        "source_site": 211,
+        "read_at": 2.0,
+        "hops": 211,
+        "received_at_site_zero": 875.671875
+      },
+      {
+        "kind": "position",
+        "source_site": 212,
+        "read_at": 2.0,
+        "hops": 212,
+        "received_at_site_zero": 883.953125
+      },
+      {
+        "kind": "position",
+        "source_site": 213,
+        "read_at": 2.0,
+        "hops": 213,
+        "received_at_site_zero": 892.2734375
+      },
+      {
+        "kind": "position",
+        "source_site": 214,
+        "read_at": 2.0,
+        "hops": 214,
+        "received_at_site_zero": 900.6328125
+      },
+      {
+        "kind": "position",
+        "source_site": 215,
+        "read_at": 2.0,
+        "hops": 215,
+        "received_at_site_zero": 909.03125
+      },
+      {
+        "kind": "position",
+        "source_site": 216,
+        "read_at": 2.0,
+        "hops": 216,
+        "received_at_site_zero": 917.46875
+      },
+      {
+        "kind": "position",
+        "source_site": 217,
+        "read_at": 2.0,
+        "hops": 217,
+        "received_at_site_zero": 925.9453125
+      },
+      {
+        "kind": "position",
+        "source_site": 218,
+        "read_at": 2.0,
+        "hops": 218,
+        "received_at_site_zero": 934.4609375
+      },
+      {
+        "kind": "position",
+        "source_site": 219,
+        "read_at": 2.0,
+        "hops": 219,
+        "received_at_site_zero": 943.015625
+      },
+      {
+        "kind": "position",
+        "source_site": 220,
+        "read_at": 2.0,
+        "hops": 220,
+        "received_at_site_zero": 951.609375
+      },
+      {
+        "kind": "position",
+        "source_site": 221,
+        "read_at": 2.0,
+        "hops": 221,
+        "received_at_site_zero": 960.2421875
+      },
+      {
+        "kind": "position",
+        "source_site": 222,
+        "read_at": 2.0,
+        "hops": 222,
+        "received_at_site_zero": 968.9140625
+      },
+      {
+        "kind": "position",
+        "source_site": 223,
+        "read_at": 2.0,
+        "hops": 223,
+        "received_at_site_zero": 977.625
+      },
+      {
+        "kind": "position",
+        "source_site": 224,
+        "read_at": 2.0,
+        "hops": 224,
+        "received_at_site_zero": 986.375
+      },
+      {
+        "kind": "position",
+        "source_site": 225,
+        "read_at": 2.0,
+        "hops": 225,
+        "received_at_site_zero": 995.1640625
+      },
+      {
+        "kind": "position",
+        "source_site": 226,
+        "read_at": 2.0,
+        "hops": 226,
+        "received_at_site_zero": 1003.9921875
+      },
+      {
+        "kind": "position",
+        "source_site": 227,
+        "read_at": 2.0,
+        "hops": 227,
+        "received_at_site_zero": 1012.859375
+      },
+      {
+        "kind": "position",
+        "source_site": 228,
+        "read_at": 2.0,
+        "hops": 228,
+        "received_at_site_zero": 1021.765625
+      },
+      {
+        "kind": "position",
+        "source_site": 229,
+        "read_at": 2.0,
+        "hops": 229,
+        "received_at_site_zero": 1030.7109375
+      },
+      {
+        "kind": "position",
+        "source_site": 230,
+        "read_at": 2.0,
+        "hops": 230,
+        "received_at_site_zero": 1039.6953125
+      },
+      {
+        "kind": "position",
+        "source_site": 231,
+        "read_at": 2.0,
+        "hops": 231,
+        "received_at_site_zero": 1048.71875
+      },
+      {
+        "kind": "position",
+        "source_site": 232,
+        "read_at": 2.0,
+        "hops": 232,
+        "received_at_site_zero": 1057.78125
+      },
+      {
+        "kind": "position",
+        "source_site": 233,
+        "read_at": 2.0,
+        "hops": 233,
+        "received_at_site_zero": 1066.8828125
+      },
+      {
+        "kind": "position",
+        "source_site": 234,
+        "read_at": 2.0,
+        "hops": 234,
+        "received_at_site_zero": 1076.0234375
+      },
+      {
+        "kind": "position",
+        "source_site": 235,
+        "read_at": 2.0,
+        "hops": 235,
+        "received_at_site_zero": 1085.203125
+      },
+      {
+        "kind": "position",
+        "source_site": 236,
+        "read_at": 2.0,
+        "hops": 236,
+        "received_at_site_zero": 1094.421875
+      },
+      {
+        "kind": "position",
+        "source_site": 237,
+        "read_at": 2.0,
+        "hops": 237,
+        "received_at_site_zero": 1103.6796875
+      },
+      {
+        "kind": "position",
+        "source_site": 238,
+        "read_at": 2.0,
+        "hops": 238,
+        "received_at_site_zero": 1112.9765625
+      },
+      {
+        "kind": "position",
+        "source_site": 239,
+        "read_at": 2.0,
+        "hops": 239,
+        "received_at_site_zero": 1122.3125
+      },
+      {
+        "kind": "position",
+        "source_site": 240,
+        "read_at": 2.0,
+        "hops": 240,
+        "received_at_site_zero": 1131.6875
+      },
+      {
+        "kind": "position",
+        "source_site": 241,
+        "read_at": 2.0,
+        "hops": 241,
+        "received_at_site_zero": 1141.1015625
+      },
+      {
+        "kind": "position",
+        "source_site": 242,
+        "read_at": 2.0,
+        "hops": 242,
+        "received_at_site_zero": 1150.5546875
+      },
+      {
+        "kind": "position",
+        "source_site": 243,
+        "read_at": 2.0,
+        "hops": 243,
+        "received_at_site_zero": 1160.046875
+      },
+      {
+        "kind": "position",
+        "source_site": 244,
+        "read_at": 2.0,
+        "hops": 244,
+        "received_at_site_zero": 1169.578125
+      },
+      {
+        "kind": "position",
+        "source_site": 245,
+        "read_at": 2.0,
+        "hops": 245,
+        "received_at_site_zero": 1179.1484375
+      },
+      {
+        "kind": "position",
+        "source_site": 246,
+        "read_at": 2.0,
+        "hops": 246,
+        "received_at_site_zero": 1188.7578125
+      },
+      {
+        "kind": "position",
+        "source_site": 247,
+        "read_at": 2.0,
+        "hops": 247,
+        "received_at_site_zero": 1198.40625
+      },
+      {
+        "kind": "position",
+        "source_site": 248,
+        "read_at": 2.0,
+        "hops": 248,
+        "received_at_site_zero": 1208.09375
+      },
+      {
+        "kind": "position",
+        "source_site": 249,
+        "read_at": 2.0,
+        "hops": 249,
+        "received_at_site_zero": 1217.8203125
+      },
+      {
+        "kind": "position",
+        "source_site": 250,
+        "read_at": 2.0,
+        "hops": 250,
+        "received_at_site_zero": 1227.5859375
+      },
+      {
+        "kind": "position",
+        "source_site": 251,
+        "read_at": 2.0,
+        "hops": 251,
+        "received_at_site_zero": 1237.390625
+      },
+      {
+        "kind": "position",
+        "source_site": 252,
+        "read_at": 2.0,
+        "hops": 252,
+        "received_at_site_zero": 1247.234375
+      },
+      {
+        "kind": "position",
+        "source_site": 253,
+        "read_at": 2.0,
+        "hops": 253,
+        "received_at_site_zero": 1257.1171875
+      },
+      {
+        "kind": "position",
+        "source_site": 254,
+        "read_at": 2.0,
+        "hops": 254,
+        "received_at_site_zero": 1267.0390625
+      },
+      {
+        "kind": "position",
+        "source_site": 255,
+        "read_at": 2.0,
+        "hops": 255,
+        "received_at_site_zero": 1277.0
+      },
+      {
+        "kind": "position",
+        "source_site": 256,
+        "read_at": 2.0,
+        "hops": 256,
+        "received_at_site_zero": 1287.0
+      },
+      {
+        "kind": "position",
+        "source_site": 257,
+        "read_at": 2.0,
+        "hops": 255,
+        "received_at_site_zero": 1296.9609375
+      },
+      {
+        "kind": "position",
+        "source_site": 258,
+        "read_at": 2.0,
+        "hops": 254,
+        "received_at_site_zero": 1306.8828125
+      },
+      {
+        "kind": "position",
+        "source_site": 259,
+        "read_at": 2.0,
+        "hops": 253,
+        "received_at_site_zero": 1316.765625
+      },
+      {
+        "kind": "position",
+        "source_site": 260,
+        "read_at": 2.0,
+        "hops": 252,
+        "received_at_site_zero": 1326.609375
+      },
+      {
+        "kind": "position",
+        "source_site": 261,
+        "read_at": 2.0,
+        "hops": 251,
+        "received_at_site_zero": 1336.4140625
+      },
+      {
+        "kind": "position",
+        "source_site": 262,
+        "read_at": 2.0,
+        "hops": 250,
+        "received_at_site_zero": 1346.1796875
+      },
+      {
+        "kind": "position",
+        "source_site": 263,
+        "read_at": 2.0,
+        "hops": 249,
+        "received_at_site_zero": 1355.90625
+      },
+      {
+        "kind": "position",
+        "source_site": 264,
+        "read_at": 2.0,
+        "hops": 248,
+        "received_at_site_zero": 1365.59375
+      },
+      {
+        "kind": "position",
+        "source_site": 265,
+        "read_at": 2.0,
+        "hops": 247,
+        "received_at_site_zero": 1375.2421875
+      },
+      {
+        "kind": "position",
+        "source_site": 266,
+        "read_at": 2.0,
+        "hops": 246,
+        "received_at_site_zero": 1384.8515625
+      },
+      {
+        "kind": "position",
+        "source_site": 267,
+        "read_at": 2.0,
+        "hops": 245,
+        "received_at_site_zero": 1394.421875
+      },
+      {
+        "kind": "position",
+        "source_site": 268,
+        "read_at": 2.0,
+        "hops": 244,
+        "received_at_site_zero": 1403.953125
+      },
+      {
+        "kind": "position",
+        "source_site": 269,
+        "read_at": 2.0,
+        "hops": 243,
+        "received_at_site_zero": 1413.4453125
+      },
+      {
+        "kind": "position",
+        "source_site": 270,
+        "read_at": 2.0,
+        "hops": 242,
+        "received_at_site_zero": 1422.8984375
+      },
+      {
+        "kind": "position",
+        "source_site": 271,
+        "read_at": 2.0,
+        "hops": 241,
+        "received_at_site_zero": 1432.3125
+      },
+      {
+        "kind": "position",
+        "source_site": 272,
+        "read_at": 2.0,
+        "hops": 240,
+        "received_at_site_zero": 1441.6875
+      },
+      {
+        "kind": "position",
+        "source_site": 273,
+        "read_at": 2.0,
+        "hops": 239,
+        "received_at_site_zero": 1451.0234375
+      },
+      {
+        "kind": "position",
+        "source_site": 274,
+        "read_at": 2.0,
+        "hops": 238,
+        "received_at_site_zero": 1460.3203125
+      },
+      {
+        "kind": "position",
+        "source_site": 275,
+        "read_at": 2.0,
+        "hops": 237,
+        "received_at_site_zero": 1469.578125
+      },
+      {
+        "kind": "position",
+        "source_site": 276,
+        "read_at": 2.0,
+        "hops": 236,
+        "received_at_site_zero": 1478.796875
+      },
+      {
+        "kind": "position",
+        "source_site": 277,
+        "read_at": 2.0,
+        "hops": 235,
+        "received_at_site_zero": 1487.9765625
+      },
+      {
+        "kind": "position",
+        "source_site": 278,
+        "read_at": 2.0,
+        "hops": 234,
+        "received_at_site_zero": 1497.1171875
+      },
+      {
+        "kind": "position",
+        "source_site": 279,
+        "read_at": 2.0,
+        "hops": 233,
+        "received_at_site_zero": 1506.21875
+      },
+      {
+        "kind": "position",
+        "source_site": 280,
+        "read_at": 2.0,
+        "hops": 232,
+        "received_at_site_zero": 1515.28125
+      },
+      {
+        "kind": "position",
+        "source_site": 281,
+        "read_at": 2.0,
+        "hops": 231,
+        "received_at_site_zero": 1524.3046875
+      },
+      {
+        "kind": "position",
+        "source_site": 282,
+        "read_at": 2.0,
+        "hops": 230,
+        "received_at_site_zero": 1533.2890625
+      },
+      {
+        "kind": "position",
+        "source_site": 283,
+        "read_at": 2.0,
+        "hops": 229,
+        "received_at_site_zero": 1542.234375
+      },
+      {
+        "kind": "position",
+        "source_site": 284,
+        "read_at": 2.0,
+        "hops": 228,
+        "received_at_site_zero": 1551.140625
+      },
+      {
+        "kind": "position",
+        "source_site": 285,
+        "read_at": 2.0,
+        "hops": 227,
+        "received_at_site_zero": 1560.0078125
+      },
+      {
+        "kind": "position",
+        "source_site": 286,
+        "read_at": 2.0,
+        "hops": 226,
+        "received_at_site_zero": 1568.8359375
+      },
+      {
+        "kind": "position",
+        "source_site": 287,
+        "read_at": 2.0,
+        "hops": 225,
+        "received_at_site_zero": 1577.625
+      },
+      {
+        "kind": "position",
+        "source_site": 288,
+        "read_at": 2.0,
+        "hops": 224,
+        "received_at_site_zero": 1586.375
+      },
+      {
+        "kind": "position",
+        "source_site": 289,
+        "read_at": 2.0,
+        "hops": 223,
+        "received_at_site_zero": 1595.0859375
+      },
+      {
+        "kind": "position",
+        "source_site": 290,
+        "read_at": 2.0,
+        "hops": 222,
+        "received_at_site_zero": 1603.7578125
+      },
+      {
+        "kind": "position",
+        "source_site": 291,
+        "read_at": 2.0,
+        "hops": 221,
+        "received_at_site_zero": 1612.390625
+      },
+      {
+        "kind": "position",
+        "source_site": 292,
+        "read_at": 2.0,
+        "hops": 220,
+        "received_at_site_zero": 1620.984375
+      },
+      {
+        "kind": "position",
+        "source_site": 293,
+        "read_at": 2.0,
+        "hops": 219,
+        "received_at_site_zero": 1629.5390625
+      },
+      {
+        "kind": "position",
+        "source_site": 294,
+        "read_at": 2.0,
+        "hops": 218,
+        "received_at_site_zero": 1638.0546875
+      },
+      {
+        "kind": "position",
+        "source_site": 295,
+        "read_at": 2.0,
+        "hops": 217,
+        "received_at_site_zero": 1646.53125
+      },
+      {
+        "kind": "position",
+        "source_site": 296,
+        "read_at": 2.0,
+        "hops": 216,
+        "received_at_site_zero": 1654.96875
+      },
+      {
+        "kind": "position",
+        "source_site": 297,
+        "read_at": 2.0,
+        "hops": 215,
+        "received_at_site_zero": 1663.3671875
+      },
+      {
+        "kind": "position",
+        "source_site": 298,
+        "read_at": 2.0,
+        "hops": 214,
+        "received_at_site_zero": 1671.7265625
+      },
+      {
+        "kind": "position",
+        "source_site": 299,
+        "read_at": 2.0,
+        "hops": 213,
+        "received_at_site_zero": 1680.046875
+      },
+      {
+        "kind": "position",
+        "source_site": 300,
+        "read_at": 2.0,
+        "hops": 212,
+        "received_at_site_zero": 1688.328125
+      },
+      {
+        "kind": "position",
+        "source_site": 301,
+        "read_at": 2.0,
+        "hops": 211,
+        "received_at_site_zero": 1696.5703125
+      },
+      {
+        "kind": "position",
+        "source_site": 302,
+        "read_at": 2.0,
+        "hops": 210,
+        "received_at_site_zero": 1704.7734375
+      },
+      {
+        "kind": "position",
+        "source_site": 303,
+        "read_at": 2.0,
+        "hops": 209,
+        "received_at_site_zero": 1712.9375
+      },
+      {
+        "kind": "position",
+        "source_site": 304,
+        "read_at": 2.0,
+        "hops": 208,
+        "received_at_site_zero": 1721.0625
+      },
+      {
+        "kind": "position",
+        "source_site": 305,
+        "read_at": 2.0,
+        "hops": 207,
+        "received_at_site_zero": 1729.1484375
+      },
+      {
+        "kind": "position",
+        "source_site": 306,
+        "read_at": 2.0,
+        "hops": 206,
+        "received_at_site_zero": 1737.1953125
+      },
+      {
+        "kind": "position",
+        "source_site": 307,
+        "read_at": 2.0,
+        "hops": 205,
+        "received_at_site_zero": 1745.203125
+      },
+      {
+        "kind": "position",
+        "source_site": 308,
+        "read_at": 2.0,
+        "hops": 204,
+        "received_at_site_zero": 1753.171875
+      },
+      {
+        "kind": "position",
+        "source_site": 309,
+        "read_at": 2.0,
+        "hops": 203,
+        "received_at_site_zero": 1761.1015625
+      },
+      {
+        "kind": "position",
+        "source_site": 310,
+        "read_at": 2.0,
+        "hops": 202,
+        "received_at_site_zero": 1768.9921875
+      },
+      {
+        "kind": "position",
+        "source_site": 311,
+        "read_at": 2.0,
+        "hops": 201,
+        "received_at_site_zero": 1776.84375
+      },
+      {
+        "kind": "position",
+        "source_site": 312,
+        "read_at": 2.0,
+        "hops": 200,
+        "received_at_site_zero": 1784.65625
+      },
+      {
+        "kind": "position",
+        "source_site": 313,
+        "read_at": 2.0,
+        "hops": 199,
+        "received_at_site_zero": 1792.4296875
+      },
+      {
+        "kind": "position",
+        "source_site": 314,
+        "read_at": 2.0,
+        "hops": 198,
+        "received_at_site_zero": 1800.1640625
+      },
+      {
+        "kind": "position",
+        "source_site": 315,
+        "read_at": 2.0,
+        "hops": 197,
+        "received_at_site_zero": 1807.859375
+      },
+      {
+        "kind": "position",
+        "source_site": 316,
+        "read_at": 2.0,
+        "hops": 196,
+        "received_at_site_zero": 1815.515625
+      },
+      {
+        "kind": "position",
+        "source_site": 317,
+        "read_at": 2.0,
+        "hops": 195,
+        "received_at_site_zero": 1823.1328125
+      },
+      {
+        "kind": "position",
+        "source_site": 318,
+        "read_at": 2.0,
+        "hops": 194,
+        "received_at_site_zero": 1830.7109375
+      },
+      {
+        "kind": "position",
+        "source_site": 319,
+        "read_at": 2.0,
+        "hops": 193,
+        "received_at_site_zero": 1838.25
+      },
+      {
+        "kind": "position",
+        "source_site": 320,
+        "read_at": 2.0,
+        "hops": 192,
+        "received_at_site_zero": 1845.75
+      },
+      {
+        "kind": "position",
+        "source_site": 321,
+        "read_at": 2.0,
+        "hops": 191,
+        "received_at_site_zero": 1853.2109375
+      },
+      {
+        "kind": "position",
+        "source_site": 322,
+        "read_at": 2.0,
+        "hops": 190,
+        "received_at_site_zero": 1860.6328125
+      },
+      {
+        "kind": "position",
+        "source_site": 323,
+        "read_at": 2.0,
+        "hops": 189,
+        "received_at_site_zero": 1868.015625
+      },
+      {
+        "kind": "position",
+        "source_site": 324,
+        "read_at": 2.0,
+        "hops": 188,
+        "received_at_site_zero": 1875.359375
+      },
+      {
+        "kind": "position",
+        "source_site": 325,
+        "read_at": 2.0,
+        "hops": 187,
+        "received_at_site_zero": 1882.6640625
+      },
+      {
+        "kind": "position",
+        "source_site": 326,
+        "read_at": 2.0,
+        "hops": 186,
+        "received_at_site_zero": 1889.9296875
+      },
+      {
+        "kind": "position",
+        "source_site": 327,
+        "read_at": 2.0,
+        "hops": 185,
+        "received_at_site_zero": 1897.15625
+      },
+      {
+        "kind": "position",
+        "source_site": 328,
+        "read_at": 2.0,
+        "hops": 184,
+        "received_at_site_zero": 1904.34375
+      },
+      {
+        "kind": "position",
+        "source_site": 329,
+        "read_at": 2.0,
+        "hops": 183,
+        "received_at_site_zero": 1911.4921875
+      },
+      {
+        "kind": "position",
+        "source_site": 330,
+        "read_at": 2.0,
+        "hops": 182,
+        "received_at_site_zero": 1918.6015625
+      },
+      {
+        "kind": "position",
+        "source_site": 331,
+        "read_at": 2.0,
+        "hops": 181,
+        "received_at_site_zero": 1925.671875
+      },
+      {
+        "kind": "position",
+        "source_site": 332,
+        "read_at": 2.0,
+        "hops": 180,
+        "received_at_site_zero": 1932.703125
+      },
+      {
+        "kind": "position",
+        "source_site": 333,
+        "read_at": 2.0,
+        "hops": 179,
+        "received_at_site_zero": 1939.6953125
+      },
+      {
+        "kind": "position",
+        "source_site": 334,
+        "read_at": 2.0,
+        "hops": 178,
+        "received_at_site_zero": 1946.6484375
+      },
+      {
+        "kind": "position",
+        "source_site": 335,
+        "read_at": 2.0,
+        "hops": 177,
+        "received_at_site_zero": 1953.5625
+      },
+      {
+        "kind": "position",
+        "source_site": 336,
+        "read_at": 2.0,
+        "hops": 176,
+        "received_at_site_zero": 1960.4375
+      },
+      {
+        "kind": "position",
+        "source_site": 337,
+        "read_at": 2.0,
+        "hops": 175,
+        "received_at_site_zero": 1967.2734375
+      },
+      {
+        "kind": "position",
+        "source_site": 338,
+        "read_at": 2.0,
+        "hops": 174,
+        "received_at_site_zero": 1974.0703125
+      },
+      {
+        "kind": "position",
+        "source_site": 339,
+        "read_at": 2.0,
+        "hops": 173,
+        "received_at_site_zero": 1980.828125
+      },
+      {
+        "kind": "position",
+        "source_site": 340,
+        "read_at": 2.0,
+        "hops": 172,
+        "received_at_site_zero": 1987.546875
+      },
+      {
+        "kind": "position",
+        "source_site": 341,
+        "read_at": 2.0,
+        "hops": 171,
+        "received_at_site_zero": 1994.2265625
+      },
+      {
+        "kind": "position",
+        "source_site": 342,
+        "read_at": 2.0,
+        "hops": 170,
+        "received_at_site_zero": 2000.8671875
+      },
+      {
+        "kind": "position",
+        "source_site": 343,
+        "read_at": 2.0,
+        "hops": 169,
+        "received_at_site_zero": 2007.46875
+      },
+      {
+        "kind": "position",
+        "source_site": 344,
+        "read_at": 2.0,
+        "hops": 168,
+        "received_at_site_zero": 2014.03125
+      },
+      {
+        "kind": "position",
+        "source_site": 345,
+        "read_at": 2.0,
+        "hops": 167,
+        "received_at_site_zero": 2020.5546875
+      },
+      {
+        "kind": "position",
+        "source_site": 346,
+        "read_at": 2.0,
+        "hops": 166,
+        "received_at_site_zero": 2027.0390625
+      },
+      {
+        "kind": "position",
+        "source_site": 347,
+        "read_at": 2.0,
+        "hops": 165,
+        "received_at_site_zero": 2033.484375
+      },
+      {
+        "kind": "position",
+        "source_site": 348,
+        "read_at": 2.0,
+        "hops": 164,
+        "received_at_site_zero": 2039.890625
+      },
+      {
+        "kind": "position",
+        "source_site": 349,
+        "read_at": 2.0,
+        "hops": 163,
+        "received_at_site_zero": 2046.2578125
+      },
+      {
+        "kind": "position",
+        "source_site": 350,
+        "read_at": 2.0,
+        "hops": 162,
+        "received_at_site_zero": 2052.5859375
+      },
+      {
+        "kind": "position",
+        "source_site": 351,
+        "read_at": 2.0,
+        "hops": 161,
+        "received_at_site_zero": 2058.875
+      },
+      {
+        "kind": "position",
+        "source_site": 352,
+        "read_at": 2.0,
+        "hops": 160,
+        "received_at_site_zero": 2065.125
+      },
+      {
+        "kind": "position",
+        "source_site": 353,
+        "read_at": 2.0,
+        "hops": 159,
+        "received_at_site_zero": 2071.3359375
+      },
+      {
+        "kind": "position",
+        "source_site": 354,
+        "read_at": 2.0,
+        "hops": 158,
+        "received_at_site_zero": 2077.5078125
+      },
+      {
+        "kind": "position",
+        "source_site": 355,
+        "read_at": 2.0,
+        "hops": 157,
+        "received_at_site_zero": 2083.640625
+      },
+      {
+        "kind": "position",
+        "source_site": 356,
+        "read_at": 2.0,
+        "hops": 156,
+        "received_at_site_zero": 2089.734375
+      },
+      {
+        "kind": "position",
+        "source_site": 357,
+        "read_at": 2.0,
+        "hops": 155,
+        "received_at_site_zero": 2095.7890625
+      },
+      {
+        "kind": "position",
+        "source_site": 358,
+        "read_at": 2.0,
+        "hops": 154,
+        "received_at_site_zero": 2101.8046875
+      },
+      {
+        "kind": "position",
+        "source_site": 359,
+        "read_at": 2.0,
+        "hops": 153,
+        "received_at_site_zero": 2107.78125
+      },
+      {
+        "kind": "position",
+        "source_site": 360,
+        "read_at": 2.0,
+        "hops": 152,
+        "received_at_site_zero": 2113.71875
+      },
+      {
+        "kind": "position",
+        "source_site": 361,
+        "read_at": 2.0,
+        "hops": 151,
+        "received_at_site_zero": 2119.6171875
+      },
+      {
+        "kind": "position",
+        "source_site": 362,
+        "read_at": 2.0,
+        "hops": 150,
+        "received_at_site_zero": 2125.4765625
+      },
+      {
+        "kind": "position",
+        "source_site": 363,
+        "read_at": 2.0,
+        "hops": 149,
+        "received_at_site_zero": 2131.296875
+      },
+      {
+        "kind": "position",
+        "source_site": 364,
+        "read_at": 2.0,
+        "hops": 148,
+        "received_at_site_zero": 2137.078125
+      },
+      {
+        "kind": "position",
+        "source_site": 365,
+        "read_at": 2.0,
+        "hops": 147,
+        "received_at_site_zero": 2142.8203125
+      },
+      {
+        "kind": "position",
+        "source_site": 366,
+        "read_at": 2.0,
+        "hops": 146,
+        "received_at_site_zero": 2148.5234375
+      },
+      {
+        "kind": "position",
+        "source_site": 367,
+        "read_at": 2.0,
+        "hops": 145,
+        "received_at_site_zero": 2154.1875
+      },
+      {
+        "kind": "position",
+        "source_site": 368,
+        "read_at": 2.0,
+        "hops": 144,
+        "received_at_site_zero": 2159.8125
+      },
+      {
+        "kind": "position",
+        "source_site": 369,
+        "read_at": 2.0,
+        "hops": 143,
+        "received_at_site_zero": 2165.3984375
+      },
+      {
+        "kind": "position",
+        "source_site": 370,
+        "read_at": 2.0,
+        "hops": 142,
+        "received_at_site_zero": 2170.9453125
+      },
+      {
+        "kind": "position",
+        "source_site": 371,
+        "read_at": 2.0,
+        "hops": 141,
+        "received_at_site_zero": 2176.453125
+      },
+      {
+        "kind": "position",
+        "source_site": 372,
+        "read_at": 2.0,
+        "hops": 140,
+        "received_at_site_zero": 2181.921875
+      },
+      {
+        "kind": "position",
+        "source_site": 373,
+        "read_at": 2.0,
+        "hops": 139,
+        "received_at_site_zero": 2187.3515625
+      },
+      {
+        "kind": "position",
+        "source_site": 374,
+        "read_at": 2.0,
+        "hops": 138,
+        "received_at_site_zero": 2192.7421875
+      },
+      {
+        "kind": "position",
+        "source_site": 375,
+        "read_at": 2.0,
+        "hops": 137,
+        "received_at_site_zero": 2198.09375
+      },
+      {
+        "kind": "position",
+        "source_site": 376,
+        "read_at": 2.0,
+        "hops": 136,
+        "received_at_site_zero": 2203.40625
+      },
+      {
+        "kind": "position",
+        "source_site": 377,
+        "read_at": 2.0,
+        "hops": 135,
+        "received_at_site_zero": 2208.6796875
+      },
+      {
+        "kind": "position",
+        "source_site": 378,
+        "read_at": 2.0,
+        "hops": 134,
+        "received_at_site_zero": 2213.9140625
+      },
+      {
+        "kind": "position",
+        "source_site": 379,
+        "read_at": 2.0,
+        "hops": 133,
+        "received_at_site_zero": 2219.109375
+      },
+      {
+        "kind": "position",
+        "source_site": 380,
+        "read_at": 2.0,
+        "hops": 132,
+        "received_at_site_zero": 2224.265625
+      },
+      {
+        "kind": "position",
+        "source_site": 381,
+        "read_at": 2.0,
+        "hops": 131,
+        "received_at_site_zero": 2229.3828125
+      },
+      {
+        "kind": "position",
+        "source_site": 382,
+        "read_at": 2.0,
+        "hops": 130,
+        "received_at_site_zero": 2234.4609375
+      },
+      {
+        "kind": "position",
+        "source_site": 383,
+        "read_at": 2.0,
+        "hops": 129,
+        "received_at_site_zero": 2239.5
+      },
+      {
+        "kind": "position",
+        "source_site": 384,
+        "read_at": 2.0,
+        "hops": 128,
+        "received_at_site_zero": 2244.5
+      },
+      {
+        "kind": "position",
+        "source_site": 385,
+        "read_at": 2.0,
+        "hops": 127,
+        "received_at_site_zero": 2249.4609375
+      },
+      {
+        "kind": "position",
+        "source_site": 386,
+        "read_at": 2.0,
+        "hops": 126,
+        "received_at_site_zero": 2254.3828125
+      },
+      {
+        "kind": "position",
+        "source_site": 387,
+        "read_at": 2.0,
+        "hops": 125,
+        "received_at_site_zero": 2259.265625
+      },
+      {
+        "kind": "position",
+        "source_site": 388,
+        "read_at": 2.0,
+        "hops": 124,
+        "received_at_site_zero": 2264.109375
+      },
+      {
+        "kind": "position",
+        "source_site": 389,
+        "read_at": 2.0,
+        "hops": 123,
+        "received_at_site_zero": 2268.9140625
+      },
+      {
+        "kind": "position",
+        "source_site": 390,
+        "read_at": 2.0,
+        "hops": 122,
+        "received_at_site_zero": 2273.6796875
+      },
+      {
+        "kind": "position",
+        "source_site": 391,
+        "read_at": 2.0,
+        "hops": 121,
+        "received_at_site_zero": 2278.40625
+      },
+      {
+        "kind": "position",
+        "source_site": 392,
+        "read_at": 2.0,
+        "hops": 120,
+        "received_at_site_zero": 2283.09375
+      },
+      {
+        "kind": "position",
+        "source_site": 393,
+        "read_at": 2.0,
+        "hops": 119,
+        "received_at_site_zero": 2287.7421875
+      },
+      {
+        "kind": "position",
+        "source_site": 394,
+        "read_at": 2.0,
+        "hops": 118,
+        "received_at_site_zero": 2292.3515625
+      },
+      {
+        "kind": "position",
+        "source_site": 395,
+        "read_at": 2.0,
+        "hops": 117,
+        "received_at_site_zero": 2296.921875
+      },
+      {
+        "kind": "position",
+        "source_site": 396,
+        "read_at": 2.0,
+        "hops": 116,
+        "received_at_site_zero": 2301.453125
+      },
+      {
+        "kind": "position",
+        "source_site": 397,
+        "read_at": 2.0,
+        "hops": 115,
+        "received_at_site_zero": 2305.9453125
+      },
+      {
+        "kind": "position",
+        "source_site": 398,
+        "read_at": 2.0,
+        "hops": 114,
+        "received_at_site_zero": 2310.3984375
+      },
+      {
+        "kind": "position",
+        "source_site": 399,
+        "read_at": 2.0,
+        "hops": 113,
+        "received_at_site_zero": 2314.8125
+      },
+      {
+        "kind": "position",
+        "source_site": 400,
+        "read_at": 2.0,
+        "hops": 112,
+        "received_at_site_zero": 2319.1875
+      },
+      {
+        "kind": "position",
+        "source_site": 401,
+        "read_at": 2.0,
+        "hops": 111,
+        "received_at_site_zero": 2323.5234375
+      },
+      {
+        "kind": "position",
+        "source_site": 402,
+        "read_at": 2.0,
+        "hops": 110,
+        "received_at_site_zero": 2327.8203125
+      },
+      {
+        "kind": "position",
+        "source_site": 403,
+        "read_at": 2.0,
+        "hops": 109,
+        "received_at_site_zero": 2332.078125
+      },
+      {
+        "kind": "position",
+        "source_site": 404,
+        "read_at": 2.0,
+        "hops": 108,
+        "received_at_site_zero": 2336.296875
+      },
+      {
+        "kind": "position",
+        "source_site": 405,
+        "read_at": 2.0,
+        "hops": 107,
+        "received_at_site_zero": 2340.4765625
+      },
+      {
+        "kind": "position",
+        "source_site": 406,
+        "read_at": 2.0,
+        "hops": 106,
+        "received_at_site_zero": 2344.6171875
+      },
+      {
+        "kind": "position",
+        "source_site": 407,
+        "read_at": 2.0,
+        "hops": 105,
+        "received_at_site_zero": 2348.71875
+      },
+      {
+        "kind": "position",
+        "source_site": 408,
+        "read_at": 2.0,
+        "hops": 104,
+        "received_at_site_zero": 2352.78125
+      },
+      {
+        "kind": "position",
+        "source_site": 409,
+        "read_at": 2.0,
+        "hops": 103,
+        "received_at_site_zero": 2356.8046875
+      },
+      {
+        "kind": "position",
+        "source_site": 410,
+        "read_at": 2.0,
+        "hops": 102,
+        "received_at_site_zero": 2360.7890625
+      },
+      {
+        "kind": "position",
+        "source_site": 411,
+        "read_at": 2.0,
+        "hops": 101,
+        "received_at_site_zero": 2364.734375
+      },
+      {
+        "kind": "position",
+        "source_site": 412,
+        "read_at": 2.0,
+        "hops": 100,
+        "received_at_site_zero": 2368.640625
+      },
+      {
+        "kind": "position",
+        "source_site": 413,
+        "read_at": 2.0,
+        "hops": 99,
+        "received_at_site_zero": 2372.5078125
+      },
+      {
+        "kind": "position",
+        "source_site": 414,
+        "read_at": 2.0,
+        "hops": 98,
+        "received_at_site_zero": 2376.3359375
+      },
+      {
+        "kind": "position",
+        "source_site": 415,
+        "read_at": 2.0,
+        "hops": 97,
+        "received_at_site_zero": 2380.125
+      },
+      {
+        "kind": "position",
+        "source_site": 416,
+        "read_at": 2.0,
+        "hops": 96,
+        "received_at_site_zero": 2383.875
+      },
+      {
+        "kind": "position",
+        "source_site": 417,
+        "read_at": 2.0,
+        "hops": 95,
+        "received_at_site_zero": 2387.5859375
+      },
+      {
+        "kind": "position",
+        "source_site": 418,
+        "read_at": 2.0,
+        "hops": 94,
+        "received_at_site_zero": 2391.2578125
+      },
+      {
+        "kind": "position",
+        "source_site": 419,
+        "read_at": 2.0,
+        "hops": 93,
+        "received_at_site_zero": 2394.890625
+      },
+      {
+        "kind": "position",
+        "source_site": 420,
+        "read_at": 2.0,
+        "hops": 92,
+        "received_at_site_zero": 2398.484375
+      },
+      {
+        "kind": "position",
+        "source_site": 421,
+        "read_at": 2.0,
+        "hops": 91,
+        "received_at_site_zero": 2402.0390625
+      },
+      {
+        "kind": "position",
+        "source_site": 422,
+        "read_at": 2.0,
+        "hops": 90,
+        "received_at_site_zero": 2405.5546875
+      },
+      {
+        "kind": "position",
+        "source_site": 423,
+        "read_at": 2.0,
+        "hops": 89,
+        "received_at_site_zero": 2409.03125
+      },
+      {
+        "kind": "position",
+        "source_site": 424,
+        "read_at": 2.0,
+        "hops": 88,
+        "received_at_site_zero": 2412.46875
+      },
+      {
+        "kind": "position",
+        "source_site": 425,
+        "read_at": 2.0,
+        "hops": 87,
+        "received_at_site_zero": 2415.8671875
+      },
+      {
+        "kind": "position",
+        "source_site": 426,
+        "read_at": 2.0,
+        "hops": 86,
+        "received_at_site_zero": 2419.2265625
+      },
+      {
+        "kind": "position",
+        "source_site": 427,
+        "read_at": 2.0,
+        "hops": 85,
+        "received_at_site_zero": 2422.546875
+      },
+      {
+        "kind": "position",
+        "source_site": 428,
+        "read_at": 2.0,
+        "hops": 84,
+        "received_at_site_zero": 2425.828125
+      },
+      {
+        "kind": "position",
+        "source_site": 429,
+        "read_at": 2.0,
+        "hops": 83,
+        "received_at_site_zero": 2429.0703125
+      },
+      {
+        "kind": "position",
+        "source_site": 430,
+        "read_at": 2.0,
+        "hops": 82,
+        "received_at_site_zero": 2432.2734375
+      },
+      {
+        "kind": "position",
+        "source_site": 431,
+        "read_at": 2.0,
+        "hops": 81,
+        "received_at_site_zero": 2435.4375
+      },
+      {
+        "kind": "position",
+        "source_site": 432,
+        "read_at": 2.0,
+        "hops": 80,
+        "received_at_site_zero": 2438.5625
+      },
+      {
+        "kind": "position",
+        "source_site": 433,
+        "read_at": 2.0,
+        "hops": 79,
+        "received_at_site_zero": 2441.6484375
+      },
+      {
+        "kind": "position",
+        "source_site": 434,
+        "read_at": 2.0,
+        "hops": 78,
+        "received_at_site_zero": 2444.6953125
+      },
+      {
+        "kind": "position",
+        "source_site": 435,
+        "read_at": 2.0,
+        "hops": 77,
+        "received_at_site_zero": 2447.703125
+      },
+      {
+        "kind": "position",
+        "source_site": 436,
+        "read_at": 2.0,
+        "hops": 76,
+        "received_at_site_zero": 2450.671875
+      },
+      {
+        "kind": "position",
+        "source_site": 437,
+        "read_at": 2.0,
+        "hops": 75,
+        "received_at_site_zero": 2453.6015625
+      },
+      {
+        "kind": "position",
+        "source_site": 438,
+        "read_at": 2.0,
+        "hops": 74,
+        "received_at_site_zero": 2456.4921875
+      },
+      {
+        "kind": "position",
+        "source_site": 439,
+        "read_at": 2.0,
+        "hops": 73,
+        "received_at_site_zero": 2459.34375
+      },
+      {
+        "kind": "position",
+        "source_site": 440,
+        "read_at": 2.0,
+        "hops": 72,
+        "received_at_site_zero": 2462.15625
+      },
+      {
+        "kind": "position",
+        "source_site": 441,
+        "read_at": 2.0,
+        "hops": 71,
+        "received_at_site_zero": 2464.9296875
+      },
+      {
+        "kind": "position",
+        "source_site": 442,
+        "read_at": 2.0,
+        "hops": 70,
+        "received_at_site_zero": 2467.6640625
+      },
+      {
+        "kind": "position",
+        "source_site": 443,
+        "read_at": 2.0,
+        "hops": 69,
+        "received_at_site_zero": 2470.359375
+      },
+      {
+        "kind": "position",
+        "source_site": 444,
+        "read_at": 2.0,
+        "hops": 68,
+        "received_at_site_zero": 2473.015625
+      },
+      {
+        "kind": "position",
+        "source_site": 445,
+        "read_at": 2.0,
+        "hops": 67,
+        "received_at_site_zero": 2475.6328125
+      },
+      {
+        "kind": "position",
+        "source_site": 446,
+        "read_at": 2.0,
+        "hops": 66,
+        "received_at_site_zero": 2478.2109375
+      },
+      {
+        "kind": "position",
+        "source_site": 447,
+        "read_at": 2.0,
+        "hops": 65,
+        "received_at_site_zero": 2480.75
+      },
+      {
+        "kind": "position",
+        "source_site": 448,
+        "read_at": 2.0,
+        "hops": 64,
+        "received_at_site_zero": 2483.25
+      },
+      {
+        "kind": "position",
+        "source_site": 449,
+        "read_at": 2.0,
+        "hops": 63,
+        "received_at_site_zero": 2485.7109375
+      },
+      {
+        "kind": "position",
+        "source_site": 450,
+        "read_at": 2.0,
+        "hops": 62,
+        "received_at_site_zero": 2488.1328125
+      },
+      {
+        "kind": "position",
+        "source_site": 451,
+        "read_at": 2.0,
+        "hops": 61,
+        "received_at_site_zero": 2490.515625
+      },
+      {
+        "kind": "position",
+        "source_site": 452,
+        "read_at": 2.0,
+        "hops": 60,
+        "received_at_site_zero": 2492.859375
+      },
+      {
+        "kind": "position",
+        "source_site": 453,
+        "read_at": 2.0,
+        "hops": 59,
+        "received_at_site_zero": 2495.1640625
+      },
+      {
+        "kind": "position",
+        "source_site": 454,
+        "read_at": 2.0,
+        "hops": 58,
+        "received_at_site_zero": 2497.4296875
+      },
+      {
+        "kind": "position",
+        "source_site": 455,
+        "read_at": 2.0,
+        "hops": 57,
+        "received_at_site_zero": 2499.65625
+      },
+      {
+        "kind": "position",
+        "source_site": 456,
+        "read_at": 2.0,
+        "hops": 56,
+        "received_at_site_zero": 2501.84375
+      },
+      {
+        "kind": "position",
+        "source_site": 457,
+        "read_at": 2.0,
+        "hops": 55,
+        "received_at_site_zero": 2503.9921875
+      },
+      {
+        "kind": "position",
+        "source_site": 458,
+        "read_at": 2.0,
+        "hops": 54,
+        "received_at_site_zero": 2506.1015625
+      },
+      {
+        "kind": "position",
+        "source_site": 459,
+        "read_at": 2.0,
+        "hops": 53,
+        "received_at_site_zero": 2508.171875
+      },
+      {
+        "kind": "position",
+        "source_site": 460,
+        "read_at": 2.0,
+        "hops": 52,
+        "received_at_site_zero": 2510.203125
+      },
+      {
+        "kind": "position",
+        "source_site": 461,
+        "read_at": 2.0,
+        "hops": 51,
+        "received_at_site_zero": 2512.1953125
+      },
+      {
+        "kind": "position",
+        "source_site": 462,
+        "read_at": 2.0,
+        "hops": 50,
+        "received_at_site_zero": 2514.1484375
+      },
+      {
+        "kind": "position",
+        "source_site": 463,
+        "read_at": 2.0,
+        "hops": 49,
+        "received_at_site_zero": 2516.0625
+      },
+      {
+        "kind": "position",
+        "source_site": 464,
+        "read_at": 2.0,
+        "hops": 48,
+        "received_at_site_zero": 2517.9375
+      },
+      {
+        "kind": "position",
+        "source_site": 465,
+        "read_at": 2.0,
+        "hops": 47,
+        "received_at_site_zero": 2519.7734375
+      },
+      {
+        "kind": "position",
+        "source_site": 466,
+        "read_at": 2.0,
+        "hops": 46,
+        "received_at_site_zero": 2521.5703125
+      },
+      {
+        "kind": "position",
+        "source_site": 467,
+        "read_at": 2.0,
+        "hops": 45,
+        "received_at_site_zero": 2523.328125
+      },
+      {
+        "kind": "position",
+        "source_site": 468,
+        "read_at": 2.0,
+        "hops": 44,
+        "received_at_site_zero": 2525.046875
+      },
+      {
+        "kind": "position",
+        "source_site": 469,
+        "read_at": 2.0,
+        "hops": 43,
+        "received_at_site_zero": 2526.7265625
+      },
+      {
+        "kind": "position",
+        "source_site": 470,
+        "read_at": 2.0,
+        "hops": 42,
+        "received_at_site_zero": 2528.3671875
+      },
+      {
+        "kind": "position",
+        "source_site": 471,
+        "read_at": 2.0,
+        "hops": 41,
+        "received_at_site_zero": 2529.96875
+      },
+      {
+        "kind": "position",
+        "source_site": 472,
+        "read_at": 2.0,
+        "hops": 40,
+        "received_at_site_zero": 2531.53125
+      },
+      {
+        "kind": "position",
+        "source_site": 473,
+        "read_at": 2.0,
+        "hops": 39,
+        "received_at_site_zero": 2533.0546875
+      },
+      {
+        "kind": "position",
+        "source_site": 474,
+        "read_at": 2.0,
+        "hops": 38,
+        "received_at_site_zero": 2534.5390625
+      },
+      {
+        "kind": "position",
+        "source_site": 475,
+        "read_at": 2.0,
+        "hops": 37,
+        "received_at_site_zero": 2535.984375
+      },
+      {
+        "kind": "position",
+        "source_site": 476,
+        "read_at": 2.0,
+        "hops": 36,
+        "received_at_site_zero": 2537.390625
+      },
+      {
+        "kind": "position",
+        "source_site": 477,
+        "read_at": 2.0,
+        "hops": 35,
+        "received_at_site_zero": 2538.7578125
+      },
+      {
+        "kind": "position",
+        "source_site": 478,
+        "read_at": 2.0,
+        "hops": 34,
+        "received_at_site_zero": 2540.0859375
+      },
+      {
+        "kind": "position",
+        "source_site": 479,
+        "read_at": 2.0,
+        "hops": 33,
+        "received_at_site_zero": 2541.375
+      },
+      {
+        "kind": "position",
+        "source_site": 480,
+        "read_at": 2.0,
+        "hops": 32,
+        "received_at_site_zero": 2542.625
+      },
+      {
+        "kind": "position",
+        "source_site": 481,
+        "read_at": 2.0,
+        "hops": 31,
+        "received_at_site_zero": 2543.8359375
+      },
+      {
+        "kind": "position",
+        "source_site": 482,
+        "read_at": 2.0,
+        "hops": 30,
+        "received_at_site_zero": 2545.0078125
+      },
+      {
+        "kind": "position",
+        "source_site": 483,
+        "read_at": 2.0,
+        "hops": 29,
+        "received_at_site_zero": 2546.140625
+      },
+      {
+        "kind": "position",
+        "source_site": 484,
+        "read_at": 2.0,
+        "hops": 28,
+        "received_at_site_zero": 2547.234375
+      },
+      {
+        "kind": "position",
+        "source_site": 485,
+        "read_at": 2.0,
+        "hops": 27,
+        "received_at_site_zero": 2548.2890625
+      },
+      {
+        "kind": "position",
+        "source_site": 486,
+        "read_at": 2.0,
+        "hops": 26,
+        "received_at_site_zero": 2549.3046875
+      },
+      {
+        "kind": "position",
+        "source_site": 487,
+        "read_at": 2.0,
+        "hops": 25,
+        "received_at_site_zero": 2550.28125
+      },
+      {
+        "kind": "position",
+        "source_site": 488,
+        "read_at": 2.0,
+        "hops": 24,
+        "received_at_site_zero": 2551.21875
+      },
+      {
+        "kind": "position",
+        "source_site": 489,
+        "read_at": 2.0,
+        "hops": 23,
+        "received_at_site_zero": 2552.1171875
+      },
+      {
+        "kind": "position",
+        "source_site": 490,
+        "read_at": 2.0,
+        "hops": 22,
+        "received_at_site_zero": 2552.9765625
+      },
+      {
+        "kind": "position",
+        "source_site": 491,
+        "read_at": 2.0,
+        "hops": 21,
+        "received_at_site_zero": 2553.796875
+      },
+      {
+        "kind": "position",
+        "source_site": 492,
+        "read_at": 2.0,
+        "hops": 20,
+        "received_at_site_zero": 2554.578125
+      },
+      {
+        "kind": "position",
+        "source_site": 493,
+        "read_at": 2.0,
+        "hops": 19,
+        "received_at_site_zero": 2555.3203125
+      },
+      {
+        "kind": "position",
+        "source_site": 494,
+        "read_at": 2.0,
+        "hops": 18,
+        "received_at_site_zero": 2556.0234375
+      },
+      {
+        "kind": "position",
+        "source_site": 495,
+        "read_at": 2.0,
+        "hops": 17,
+        "received_at_site_zero": 2556.6875
+      },
+      {
+        "kind": "position",
+        "source_site": 496,
+        "read_at": 2.0,
+        "hops": 16,
+        "received_at_site_zero": 2557.3125
+      },
+      {
+        "kind": "position",
+        "source_site": 497,
+        "read_at": 2.0,
+        "hops": 15,
+        "received_at_site_zero": 2557.8984375
+      },
+      {
+        "kind": "position",
+        "source_site": 498,
+        "read_at": 2.0,
+        "hops": 14,
+        "received_at_site_zero": 2558.4453125
+      },
+      {
+        "kind": "position",
+        "source_site": 499,
+        "read_at": 2.0,
+        "hops": 13,
+        "received_at_site_zero": 2558.953125
+      },
+      {
+        "kind": "position",
+        "source_site": 500,
+        "read_at": 2.0,
+        "hops": 12,
+        "received_at_site_zero": 2559.421875
+      },
+      {
+        "kind": "position",
+        "source_site": 501,
+        "read_at": 2.0,
+        "hops": 11,
+        "received_at_site_zero": 2559.8515625
+      },
+      {
+        "kind": "position",
+        "source_site": 502,
+        "read_at": 2.0,
+        "hops": 10,
+        "received_at_site_zero": 2560.2421875
+      },
+      {
+        "kind": "position",
+        "source_site": 503,
+        "read_at": 2.0,
+        "hops": 9,
+        "received_at_site_zero": 2560.59375
+      },
+      {
+        "kind": "position",
+        "source_site": 504,
+        "read_at": 2.0,
+        "hops": 8,
+        "received_at_site_zero": 2560.90625
+      },
+      {
+        "kind": "position",
+        "source_site": 505,
+        "read_at": 2.0,
+        "hops": 7,
+        "received_at_site_zero": 2561.1796875
+      },
+      {
+        "kind": "position",
+        "source_site": 506,
+        "read_at": 2.0,
+        "hops": 6,
+        "received_at_site_zero": 2561.4140625
+      },
+      {
+        "kind": "position",
+        "source_site": 507,
+        "read_at": 2.0,
+        "hops": 5,
+        "received_at_site_zero": 2561.609375
+      },
+      {
+        "kind": "position",
+        "source_site": 508,
+        "read_at": 2.0,
+        "hops": 4,
+        "received_at_site_zero": 2561.765625
+      },
+      {
+        "kind": "position",
+        "source_site": 509,
+        "read_at": 2.0,
+        "hops": 3,
+        "received_at_site_zero": 2561.8828125
+      },
+      {
+        "kind": "position",
+        "source_site": 510,
+        "read_at": 2.0,
+        "hops": 2,
+        "received_at_site_zero": 2561.9609375
+      },
+      {
+        "kind": "position",
+        "source_site": 511,
+        "read_at": 2.0,
+        "hops": 1,
+        "received_at_site_zero": 2562.0
+      },
+      {
+        "kind": "clock",
+        "source_site": 0,
+        "read_at": 2.0,
+        "hops": 0,
+        "received_at_site_zero": 2562.0
+      },
+      {
+        "kind": "clock",
+        "source_site": 256,
+        "read_at": 2.0,
+        "hops": 256,
+        "received_at_site_zero": 2572.0
+      }
+    ],
+    "decision_not_allowed_before": 2572.0,
+    "raw_position_record_kept_but_bound_applies_to_released_smooth_bit_and_clock_bits_only": true,
+    "sample_counts_generated": 0
+  },
+  "smooth_record_interpretation": "terminal position read then declared bounded cosine-window random postprocessing; not a bound for raw microscopic position records versus spinor density",
+  "geometry_interpretation": "massive single-particle density-weighted Dirac transport on a declared static 1+1 metric",
+  "proper_mass_lapse_coupling_is_derived_from_cognition": false,
+  "C3_count_uncertainty_propagated_into_C5": false,
+  "full_quantum_field_or_background_Einstein_dynamics_derived": false,
+  "float_values_are_directed_rounding_certificates": false,
+  "all_grid_states_and_unbounded_times_covered": false,
+  "necessity_arguments_performed": false,
+  "sample_counts_generated": 0,
+  "automated_checks": {
+    "run": 14,
+    "failures": 0,
+    "errors": 0
+  }
+}

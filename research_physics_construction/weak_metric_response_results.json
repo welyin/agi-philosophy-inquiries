@@ -1,0 +1,516 @@
+{
+  "model_version": "C9",
+  "route_round": "09",
+  "research_scope": "sufficiency only",
+  "declared_spacetime_dimension": "3+1",
+  "signature": "+---",
+  "units": "hbar=c_reference=1, no SI calibration",
+  "action_input": "I2=(1/(32 pi G)) integral h^{mu nu} G1_{mu nu}[h] - (1/2) integral h^{mu nu} T_{mu nu}",
+  "derived_linear_equation": "G1[h]=8 pi G T; harmonic gauge gives box(trace_reverse(h))=-16 pi G T",
+  "source": {
+    "mass": 1.0,
+    "width": 1.5,
+    "gravitational_constant": 0.02
+  },
+  "peak_potential": 0.010638460810704872,
+  "isolated_boundary_condition": "Phi tends to zero at spatial infinity; positive Gaussian mass on R3, no periodic source subtraction",
+  "ring_probe": {
+    "length": 20.0,
+    "center_offset": 4.0,
+    "circle_radius": 3.183098861837907,
+    "metric_potential_at_clocks": [
+      -0.0027843089475854733,
+      -0.010135176654369242
+    ],
+    "clock_lapses": [
+      0.9972118040340422,
+      0.9898129352010214
+    ],
+    "lapse_ratio_near_to_far": 0.9925804439908453,
+    "first_order_lapse_ratio": 0.9926491322932163,
+    "chosen_metric_ratio_Taylor_remainder_bound": 9.534894931433243e-05,
+    "ratio_bound_scope": "square-root evaluation of the chosen eta+h metric only, not an error bound to nonlinear Einstein dynamics",
+    "lapse_min_max": [
+      0.9898129352010214,
+      0.9972118040340422
+    ],
+    "spatial_factor_min_max": [
+      1.002780443514517,
+      1.0100843298006055
+    ],
+    "speed_min_max": [
+      0.9799309879368333,
+      0.9944468008760144
+    ],
+    "conservative_speed_floor": 0.9789446912127314
+  },
+  "probe_trials": [
+    {
+      "proper_mass": 0.35,
+      "joint_record_probabilities": [
+        [
+          [
+            0.1748629243702112,
+            0.03167361540717909
+          ],
+          [
+            0.41896949416646173,
+            0.07588960709288874
+          ]
+        ],
+        [
+          [
+            0.07444419152766364,
+            0.013484371831466876
+          ],
+          [
+            0.17836740052421202,
+            0.03230839507991538
+          ]
+        ]
+      ],
+      "flat_reference_joint_record_probabilities": [
+        [
+          [
+            0.17132315647361743,
+            0.03318525464796856
+          ],
+          [
+            0.4155475404681509,
+            0.08049145972217794
+          ]
+        ],
+        [
+          [
+            0.07323296307977659,
+            0.014185207525066334
+          ],
+          [
+            0.1776279302540308,
+            0.03440648782921161
+          ]
+        ]
+      ],
+      "record_TV_from_flat_reference": 0.008912420312973613,
+      "data_only_probability_change_from_flat": 0.0008482297248258996,
+      "smooth_data_probability": 0.7013956410367408,
+      "clock_A_X_plus_probability": 0.2944651031365208,
+      "clock_C_Y_plus_probability": 0.8466440105885487,
+      "static_data_energy_initial": 0.3478002025114617,
+      "static_data_energy_final": 0.3478002025114607,
+      "clock_rates": [
+        0.9972118040340422,
+        1.1877755222412256
+      ]
+    },
+    {
+      "proper_mass": 0.55,
+      "joint_record_probabilities": [
+        [
+          [
+            0.17693053739798598,
+            0.03204813035989683
+          ],
+          [
+            0.4239234704738957,
+            0.07678694048052961
+          ]
+        ],
+        [
+          [
+            0.0723765784998898,
+            0.01310985687874924
+          ],
+          [
+            0.17341342421677935,
+            0.031411061692274644
+          ]
+        ]
+      ],
+      "flat_reference_joint_record_probabilities": [
+        [
+          [
+            0.17339869762295756,
+            0.03358728647478586
+          ],
+          [
+            0.420581804589251,
+            0.08146659548469024
+          ]
+        ],
+        [
+          [
+            0.07115742193043592,
+            0.013783175698248934
+          ],
+          [
+            0.17259366613292965,
+            0.03343135206669943
+          ]
+        ]
+      ],
+      "record_TV_from_flat_reference": 0.008912420312975431,
+      "data_only_probability_change_from_flat": 0.0006546945406235016,
+      "smooth_data_probability": 0.7096890787123081,
+      "clock_A_X_plus_probability": 0.29446510313652186,
+      "clock_C_Y_plus_probability": 0.8466440105885509,
+      "static_data_energy_initial": 0.5465431753751542,
+      "static_data_energy_final": 0.5465431753751546,
+      "clock_rates": [
+        0.9972118040340422,
+        1.1877755222412256
+      ]
+    }
+  ],
+  "nonlinear_residual": {
+    "sample_points": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.5,
+        0.3
+      ],
+      [
+        4.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "rows": [
+      {
+        "G": 0.02,
+        "peak_potential": 0.010638460810704872,
+        "maximum_sampled_nonlinear_residual": 0.0006274643564993497,
+        "maximum_sampled_linear_norm": 0.009456409609515444
+      },
+      {
+        "G": 0.01,
+        "peak_potential": 0.005319230405352436,
+        "maximum_sampled_nonlinear_residual": 0.00015923938429612269,
+        "maximum_sampled_linear_norm": 0.004728204804757722
+      },
+      {
+        "G": 0.005,
+        "peak_potential": 0.002659615202676218,
+        "maximum_sampled_nonlinear_residual": 4.01141346541165e-05,
+        "maximum_sampled_linear_norm": 0.002364102402378861
+      }
+    ],
+    "scope": "residual of the declared eta+h metric against the zeroth-order source; not an error bound to a solved nonlinear spacetime"
+  },
+  "free_tensor_benchmark": {
+    "polarizations": [
+      "plus",
+      "cross"
+    ],
+    "nonzero_wave_number": 0.7,
+    "polarization_norm_squared": 2,
+    "canonical_amplitude_scale": "h_polarization/sqrt(16 pi G) for one normalized real spatial mode",
+    "joint_two_oscillator_vacuum_energy": 0.7,
+    "scope": "two selected free TT polarizations only, not an interacting quantum metric or sourced quantum-gravity completion"
+  },
+  "resources_per_fresh_trial": {
+    "chain_qubits": 32,
+    "clock_qubits": 2,
+    "raw_outcome_bits": 34,
+    "coarse_joint_outcomes": 8,
+    "independent_fair_output_bits": 12,
+    "threshold_table_bits": 416,
+    "bit_hops": 272,
+    "read_parameter": 2.0,
+    "allocated_hop_interval": 0.6384426062168441,
+    "all_records_ready_by": 175.6563888909816,
+    "resets": 0
+  },
+  "fresh_probe_trials": 2,
+  "cumulative_logical_qubit_initializations": 68,
+  "probe_schedule": [
+    {
+      "kind": "position",
+      "source_site": 0,
+      "read_at": 2.0,
+      "hops": 0,
+      "allocated_hop_interval": 0.6384426062168441,
+      "received_by_collector_at": 2.0
+    },
+    {
+      "kind": "position",
+      "source_site": 1,
+      "read_at": 2.0,
+      "hops": 1,
+      "allocated_hop_interval": 0.6384426062168441,
+      "received_by_collector_at": 2.6384426062168442
+    },
+    {
+      "kind": "position",
+      "source_site": 2,
+      "read_at": 2.0,
+      "hops": 2,
+      "allocated_hop_interval": 0.6384426062168441,
+      "received_by_collector_at": 3.9153278186505327
+    },
+    {
+      "kind": "position",
+      "source_site": 3,
+      "read_at": 2.0,
+      "hops": 3,
+      "allocated_hop_interval": 0.6384426062168441,
+      "received_by_collector_at": 5.830655637301065
+    },
+    {
+      "kind": "position",
+      "source_site": 4,
+      "read_at": 2.0,
+      "hops": 4,
+      "allocated_hop_interval": 0.6384426062168441,
+      "received_by_collector_at": 8.384426062168442
+    },
+    {
+      "kind": "position",
+      "source_site": 5,
+      "read_at": 2.0,
+      "hops": 5,
+      "allocated_hop_interval": 0.6384426062168441,
+      "received_by_collector_at": 11.576639093252663
+    },
+    {
+      "kind": "position",
+      "source_site": 6,
+      "read_at": 2.0,
+      "hops": 6,
+      "allocated_hop_interval": 0.6384426062168441,
+      "received_by_collector_at": 15.407294730553726
+    },
+    {
+      "kind": "position",
+      "source_site": 7,
+      "read_at": 2.0,
+      "hops": 7,
+      "allocated_hop_interval": 0.6384426062168441,
+      "received_by_collector_at": 19.876392974071635
+    },
+    {
+      "kind": "position",
+      "source_site": 8,
+      "read_at": 2.0,
+      "hops": 8,
+      "allocated_hop_interval": 0.6384426062168441,
+      "received_by_collector_at": 24.98393382380639
+    },
+    {
+      "kind": "position",
+      "source_site": 9,
+      "read_at": 2.0,
+      "hops": 9,
+      "allocated_hop_interval": 0.6384426062168441,
+      "received_by_collector_at": 30.729917279757984
+    },
+    {
+      "kind": "position",
+      "source_site": 10,
+      "read_at": 2.0,
+      "hops": 10,
+      "allocated_hop_interval": 0.6384426062168441,
+      "received_by_collector_at": 37.11434334192643
+    },
+    {
+      "kind": "position",
+      "source_site": 11,
+      "read_at": 2.0,
+      "hops": 11,
+      "allocated_hop_interval": 0.6384426062168441,
+      "received_by_collector_at": 44.137212010311714
+    },
+    {
+      "kind": "position",
+      "source_site": 12,
+      "read_at": 2.0,
+      "hops": 12,
+      "allocated_hop_interval": 0.6384426062168441,
+      "received_by_collector_at": 51.79852328491384
+    },
+    {
+      "kind": "position",
+      "source_site": 13,
+      "read_at": 2.0,
+      "hops": 13,
+      "allocated_hop_interval": 0.6384426062168441,
+      "received_by_collector_at": 60.09827716573282
+    },
+    {
+      "kind": "position",
+      "source_site": 14,
+      "read_at": 2.0,
+      "hops": 14,
+      "allocated_hop_interval": 0.6384426062168441,
+      "received_by_collector_at": 69.03647365276863
+    },
+    {
+      "kind": "position",
+      "source_site": 15,
+      "read_at": 2.0,
+      "hops": 15,
+      "allocated_hop_interval": 0.6384426062168441,
+      "received_by_collector_at": 78.6131127460213
+    },
+    {
+      "kind": "position",
+      "source_site": 16,
+      "read_at": 2.0,
+      "hops": 16,
+      "allocated_hop_interval": 0.6384426062168441,
+      "received_by_collector_at": 88.82819444549081
+    },
+    {
+      "kind": "position",
+      "source_site": 17,
+      "read_at": 2.0,
+      "hops": 15,
+      "allocated_hop_interval": 0.6384426062168441,
+      "received_by_collector_at": 98.40483353874347
+    },
+    {
+      "kind": "position",
+      "source_site": 18,
+      "read_at": 2.0,
+      "hops": 14,
+      "allocated_hop_interval": 0.6384426062168441,
+      "received_by_collector_at": 107.34303002577929
+    },
+    {
+      "kind": "position",
+      "source_site": 19,
+      "read_at": 2.0,
+      "hops": 13,
+      "allocated_hop_interval": 0.6384426062168441,
+      "received_by_collector_at": 115.64278390659825
+    },
+    {
+      "kind": "position",
+      "source_site": 20,
+      "read_at": 2.0,
+      "hops": 12,
+      "allocated_hop_interval": 0.6384426062168441,
+      "received_by_collector_at": 123.30409518120038
+    },
+    {
+      "kind": "position",
+      "source_site": 21,
+      "read_at": 2.0,
+      "hops": 11,
+      "allocated_hop_interval": 0.6384426062168441,
+      "received_by_collector_at": 130.32696384958567
+    },
+    {
+      "kind": "position",
+      "source_site": 22,
+      "read_at": 2.0,
+      "hops": 10,
+      "allocated_hop_interval": 0.6384426062168441,
+      "received_by_collector_at": 136.7113899117541
+    },
+    {
+      "kind": "position",
+      "source_site": 23,
+      "read_at": 2.0,
+      "hops": 9,
+      "allocated_hop_interval": 0.6384426062168441,
+      "received_by_collector_at": 142.4573733677057
+    },
+    {
+      "kind": "position",
+      "source_site": 24,
+      "read_at": 2.0,
+      "hops": 8,
+      "allocated_hop_interval": 0.6384426062168441,
+      "received_by_collector_at": 147.56491421744047
+    },
+    {
+      "kind": "position",
+      "source_site": 25,
+      "read_at": 2.0,
+      "hops": 7,
+      "allocated_hop_interval": 0.6384426062168441,
+      "received_by_collector_at": 152.0340124609584
+    },
+    {
+      "kind": "position",
+      "source_site": 26,
+      "read_at": 2.0,
+      "hops": 6,
+      "allocated_hop_interval": 0.6384426062168441,
+      "received_by_collector_at": 155.86466809825947
+    },
+    {
+      "kind": "position",
+      "source_site": 27,
+      "read_at": 2.0,
+      "hops": 5,
+      "allocated_hop_interval": 0.6384426062168441,
+      "received_by_collector_at": 159.05688112934368
+    },
+    {
+      "kind": "position",
+      "source_site": 28,
+      "read_at": 2.0,
+      "hops": 4,
+      "allocated_hop_interval": 0.6384426062168441,
+      "received_by_collector_at": 161.61065155421105
+    },
+    {
+      "kind": "position",
+      "source_site": 29,
+      "read_at": 2.0,
+      "hops": 3,
+      "allocated_hop_interval": 0.6384426062168441,
+      "received_by_collector_at": 163.52597937286157
+    },
+    {
+      "kind": "position",
+      "source_site": 30,
+      "read_at": 2.0,
+      "hops": 2,
+      "allocated_hop_interval": 0.6384426062168441,
+      "received_by_collector_at": 164.80286458529525
+    },
+    {
+      "kind": "position",
+      "source_site": 31,
+      "read_at": 2.0,
+      "hops": 1,
+      "allocated_hop_interval": 0.6384426062168441,
+      "received_by_collector_at": 165.4413071915121
+    },
+    {
+      "kind": "clock",
+      "source_site": 0,
+      "read_at": 2.0,
+      "hops": 0,
+      "allocated_hop_interval": 0.6384426062168441,
+      "received_by_collector_at": 165.4413071915121
+    },
+    {
+      "kind": "clock",
+      "source_site": 16,
+      "read_at": 2.0,
+      "hops": 16,
+      "allocated_hop_interval": 0.6384426062168441,
+      "received_by_collector_at": 175.6563888909816
+    }
+  ],
+  "limits": [
+    "quadratic metric action, four dimensions, G, static source and universal minimal probe coupling are inputs",
+    "prescribed classical source is not computed from the unknown probe-state ensemble; no self-consistent quantum metric-matter backreaction here",
+    "source is conserved in the flat zeroth-order description, not a self-supported nonlinear static dust solution",
+    "a constrained one-dimensional ring uses the induced metric; no complete three-dimensional Dirac reduction or confining apparatus is modeled",
+    "sqrt lapse and spatial factors define exact finite probe dynamics on the chosen weak metric, not controlled higher-order GR predictions",
+    "C5 fixed-profile continuum error bounds do not automatically apply to this new source-generated profile",
+    "nonlinear residual is a diagnostic, not a distance bound to an exact Einstein solution",
+    "source preparation, support, confinement, synchronization, detectors and measurement energy remain unclosed",
+    "no lab data, sample counts, full nonlinear gravity or derivation of the adopted action from cognition"
+  ]
+}
