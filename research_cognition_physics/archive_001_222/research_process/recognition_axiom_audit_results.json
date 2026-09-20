@@ -1,0 +1,73 @@
+{
+  "round": 218,
+  "date": "2026-09-20",
+  "motivation": "Evaluate four user-proposed recognition axioms before adding further axioms.",
+  "assumptions": [
+    "finite affine state spaces for the dimension no-go",
+    "injective affine embeddings preserve operational distinctions",
+    "fixed subsystem identification and declared evolution class",
+    "squared overlap and normalized pure-state linear entropy are example scores only"
+  ],
+  "analytic_results": {
+    "all_pairs_fixed_host_embeddings_force_equal_finite_dimensions": true,
+    "strict_dimension_growth_then_contradicts_all_pairs_embedding": true,
+    "monotonicity_under_every_group_element_and_its_inverse_implies_invariance": true,
+    "scalar_continuity_implies_full_pure_state_reversible_transitivity": false,
+    "more_joint_coordinates_alone_implies_entanglement": false,
+    "original_axioms_proved_to_select_complex_quantum_theory": false
+  },
+  "illustrations": {
+    "qubit_affine_dimension": 3,
+    "qutrit_affine_dimension": 8,
+    "two_qubits_affine_dimension": 15,
+    "classical_two_bits_joint_affine_dimension": 3,
+    "classical_two_bits_sum_of_marginal_affine_dimensions": 2,
+    "incompatible_normalized_spectral_gaps": [
+      [
+        "1/3",
+        "2/3"
+      ],
+      [
+        "1/4",
+        "3/4"
+      ]
+    ],
+    "times": [
+      0,
+      0.7853981633974483,
+      1.5707963267948966
+    ],
+    "overlap_under_independent_real_rotation": [
+      1.0,
+      0.5,
+      0.0
+    ],
+    "pure_entanglement_under_joint_real_rotation": [
+      0.0,
+      1.0,
+      0.0
+    ]
+  },
+  "repaired_contract": {
+    "encoding": "E(rho_B)=I_A/d_A tensor rho_B; D=partial_trace_A",
+    "intertwining": "T_AB(t) E = E T_B(t) for product orthogonal dynamics",
+    "resource_cost": "A register of dimension d_A*d_B and the declared independent preparation",
+    "real_pure_entanglement_paths_and_local_stability_exist": true,
+    "unbounded_party_real_GHZ_family_exists": true,
+    "arbitrary_complex_collective_cognition_formalized_or_proved": false,
+    "user_has_accepted_revisions": false
+  },
+  "reconstruction_dependencies_remaining": [
+    "operational states, effects and transformations",
+    "Jordan/HSD and factorization or a justified alternative",
+    "non-signaling compatible associative composition",
+    "local tomography",
+    "complex-qubit premise for the 2014 route"
+  ],
+  "next": "Define recognition by declared prediction/control tasks and separate passive retention, active learning and noise recovery; then assess whether that task entails local tomography.",
+  "numerical_checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}

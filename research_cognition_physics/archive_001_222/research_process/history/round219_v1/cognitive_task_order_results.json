@@ -1,0 +1,59 @@
+{
+  "round": 219,
+  "date": "2026-09-20",
+  "starting_commitments": [
+    "testable prediction and feedback",
+    "preserve declared old task abilities during expansion",
+    "account for source identity and internal resources"
+  ],
+  "extra_model_inputs": [
+    "finite fixed experiments and classical public reports",
+    "shared experimental source labels, inaccessible to a decoder",
+    "randomized report processing independent of the source label",
+    "expected payoff and all finite terminal decision tasks for the equivalence theorem"
+  ],
+  "known_theorem": "Finite Blackwell equivalence: task dominance iff a source-independent stochastic decoder exists.",
+  "theorem_claimed_original": false,
+  "new_application": "Replace state-space self-containment and a universal recognition scalar by task-preserving translations and a partial order.",
+  "results": {
+    "complementary_A_task_scores": [
+      "1",
+      "1/2"
+    ],
+    "complementary_B_task_scores": [
+      "1/2",
+      "1"
+    ],
+    "joint_task_scores": [
+      "1",
+      "1"
+    ],
+    "A_to_B_and_B_to_A_deficiency": "1/2",
+    "binary_deficiency_formula": "max(0, source_error-target_error), errors in [0,1/2]",
+    "binary_example_source_1_4_target_1_8": "1/8",
+    "duplicated_report_correct_posterior": "3/4",
+    "independence_assumption_posterior": "9/10",
+    "early_and_late_full_report_experiments_equivalent": true,
+    "early_and_late_online_scores_at_error_1_4": [
+      "3/4",
+      "1/2"
+    ],
+    "late_to_early_causal_report_error_at_error_1_4": "1/4",
+    "perfect_consensus_after_erasure_guess_success": "1/2"
+  },
+  "not_derived": [
+    "continuous reversible pure-state transitivity",
+    "entanglement",
+    "local tomography",
+    "Jordan/HSD or complex-qubit existence",
+    "a complete physical theory of cognition",
+    "gravity"
+  ],
+  "dynamic_scope": "The new equivalence concerns fixed report experiments and terminal decisions. Sequential intervention requires causal process simulation; reuse rounds 01, 198 and 203 without treating terminal postprocessing as a dynamic simulator.",
+  "next": "Audit causal task-preserving translations for a specified active interface, and distinguish operational contextual completeness from the stronger demand of local tomography.",
+  "exact_checks": {
+    "run": 9,
+    "failures": 0,
+    "errors": 0
+  }
+}

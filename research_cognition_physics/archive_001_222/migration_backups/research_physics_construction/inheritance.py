@@ -2,8 +2,7 @@
 
 The old indexed claims retain their scope. Hash verification checks source
 integrity, not the correctness of every theorem or historical test run.
-Pandoc is only used when initially creating a snapshot. Once frozen, verify
-its exact source list; later rounds or archival moves do not redefine C0.
+Pandoc is only used to read the existing Markdown index structurally.
 """
 
 import argparse
@@ -14,13 +13,14 @@ import re
 import unittest
 from pathlib import Path
 
+import pypandoc
+
+
 ROOT = Path(__file__).resolve().parent.parent
 OUTPUT = Path(__file__).with_name("inherited_results.json")
 INDEX_OUTPUT = Path(__file__).with_name("INHERITED_INDEX.md")
 LIMITS = {"research_information_geometry": 8, "research_cognition_physics": 216}
 LIVE_NAVIGATION = {"README.md", "RESEARCH_STATE.md", "research_direction.md"}
-ARCHIVE_ROOT = "research_cognition_physics/archive_001_222/"
-ARCHIVED_PREFIX = ARCHIVE_ROOT + "research_process/"
 GEOMETRY = (
     ("Static correlations do not uniquely determine interactions; dynamic responses can identify a declared model.",
      "Quantum states, interaction family and measurement access are inputs; no spacetime reconstruction."),
@@ -136,45 +136,7 @@ def source_files(root):
     return sorted(files)
 
 
-def source_path(root, logical_path):
-    """Resolve original evidence bytes, validating any later link-only edit."""
-    if logical_path.startswith("research_cognition_physics/"):
-        relative = logical_path.removeprefix("research_cognition_physics/")
-        archived = root / ARCHIVED_PREFIX / relative
-        if archived.is_file():
-            backup = root / ARCHIVE_ROOT / "migration_backups/process_link_originals" / relative
-            if backup.is_file():
-                # Frozen C0 hashes refer to the original prose. Only these two
-                # Markdown target relocations may differ in the public copy.
-                expected = backup.read_bytes()
-                for series in ("research_physics_construction", "research_information_geometry"):
-                    expected = expected.replace(("](../" + series + "/").encode(),
-                                                ("](../../../" + series + "/").encode())
-                if archived.read_bytes() != expected:
-                    raise ValueError("Archived source differs beyond link relocation: " + logical_path)
-                return backup
-            return archived
-    return root / logical_path
-
-
-def public_source_link(logical_path):
-    if logical_path.startswith("research_cognition_physics/") and (ROOT / ARCHIVED_PREFIX).is_dir():
-        return ARCHIVED_PREFIX + logical_path.removeprefix("research_cognition_physics/")
-    return logical_path
-
-
 def build_snapshot(root=ROOT):
-    if OUTPUT.exists():
-        # C0 is frozen at 216 rounds. Validate its original sources rather
-        # than absorbing the later 217..222 notes or the new stage paper.
-        frozen = json.loads(OUTPUT.read_text(encoding="utf-8"))
-        for item in frozen["artifacts"]:
-            path = source_path(root, item["path"])
-            data = path.read_bytes()
-            if len(data) != item["bytes"] or hashlib.sha256(data).hexdigest() != item["sha256"]:
-                raise ValueError("Frozen C0 source changed: " + item["path"])
-        return frozen
-    import pypandoc  # Only initial snapshot creation needs the document parser.
     index = root / "research_cognition_physics" / "README.md"
     document = json.loads(pypandoc.convert_file(str(index), "json", format="markdown"))
     cognitive = cognition_entries(document)
@@ -239,12 +201,12 @@ def render_index(snapshot):
                 continue
             conclusion = entry["indexed_conclusion"].replace("|", "\\|").replace("\n", " ")
             scope = entry["indexed_scope"].replace("|", "\\|").replace("\n", " ")
-            artifacts = " / ".join("[" + Path(path).name + "](../" + public_source_link(path) + ")"
+            artifacts = " / ".join("[" + Path(path).name + "](../" + path + ")"
                                    for path in entry.get("indexed_artifacts", [])) or "见原笔记及冻结清单"
-            lines.append("| [" + str(entry["round"]) + "](../" + public_source_link(entry["note"]) + ") | "
+            lines.append("| [" + str(entry["round"]) + "](../" + entry["note"] + ") | "
                          + conclusion + " | " + scope + " | " + artifacts + " |")
         lines.append("")
-    lines.extend(["未编号的原经典闭环亦保留：[cognitive_loop.py](../" + public_source_link("research_cognition_physics/cognitive_loop.py") + ")。",
+    lines.extend(["未编号的原经典闭环亦保留：[cognitive_loop.py](../research_cognition_physics/cognitive_loop.py)。",
                   "", "本清单不复制或修改旧证明；当前C0工作假设以[MODEL_CONTRACT.md](MODEL_CONTRACT.md)为准。", ""])
     return "\n".join(lines)
 
@@ -283,7 +245,7 @@ class InheritanceTests(unittest.TestCase):
     def test_readable_index_links_every_numbered_note(self):
         rendered = render_index(self.snapshot)
         for entry in self.snapshot["entries"]:
-            self.assertIn("](../" + public_source_link(entry["note"]) + ")", rendered)
+            self.assertIn("](../" + entry["note"] + ")", rendered)
 
 
 def main():

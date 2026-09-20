@@ -1,0 +1,67 @@
+{
+  "round": 220,
+  "date": "2026-09-20",
+  "purpose": "Audit a proposed bridge from round219 report translation to round189 L without discarding established reconstruction constraints.",
+  "inputs": [
+    "standard complex quantum benchmark",
+    "one unknown bipartite input per simulation",
+    "local instruments and classical communication, no extra shared entanglement or quantum communication",
+    "independent repeated preparation only for the separate estimation task"
+  ],
+  "inherited_result": "Local tomography and implementability of all joint measurements differ (round83). Full framework+U+C+L reconstruction remains valid.",
+  "analytic_results": {
+    "uniform_single_copy_probability_error": "1/(d+2), d>=2",
+    "attaining_effect": "(I+d*P_Phi)/(d+2)",
+    "lower_bound": "Separable M implies <Phi|M|Phi> <= Tr(M)/d",
+    "finite_task_prior": "[1/(d+2), (d+1)/(d+2)] on [P_Phi,(I-P_Phi)/(d^2-1)]",
+    "finite_task_optimal_local_success": "(d+1)/(d+2)",
+    "finite_task_global_success": "1",
+    "qubit_estimator_values": [
+      "1",
+      "-1/2"
+    ],
+    "qubit_estimator_variance": "(1+p)/2-p^2 <= 9/16",
+    "iid_mean_squared_error_bound": "9/(16*N); not a single-copy measurement simulation"
+  },
+  "matrix_checks": {
+    "informationally_complete_product_povm_rank": 16,
+    "unique_dual_weights_rounded": [
+      2.5,
+      -0.5,
+      -0.5,
+      -0.5,
+      -0.5,
+      2.5,
+      -0.5,
+      -0.5,
+      -0.5,
+      -0.5,
+      2.5,
+      -0.5,
+      -0.5,
+      -0.5,
+      -0.5,
+      2.5
+    ],
+    "reconstruction_residual": 3.9472595572903507e-16,
+    "qubit_protocol_uniform_error": 0.25,
+    "ic_local_task_success": 0.75,
+    "global_task_success": 0.9999999999999999
+  },
+  "source": {
+    "url": "https://arxiv.org/html/1901.09772",
+    "locations": [
+      "section III.3, equations (35)-(37)",
+      "section IV.1"
+    ],
+    "used_for": "Known local verification operator (I+dP)/(d+1); balanced rescaling and task witness derived explicitly in the note."
+  },
+  "original_quantum_theorem_claimed": false,
+  "cognitive_derivation_of_L_complete": false,
+  "next": "Motivate distributed statistical predictive completeness L at the level of allowed experiments, without requiring stochastic realization of every global measurement or counting repeated preparations as free.",
+  "checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}

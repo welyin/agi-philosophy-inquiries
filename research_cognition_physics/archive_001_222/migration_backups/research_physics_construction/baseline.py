@@ -17,9 +17,7 @@ from pathlib import Path
 import numpy as np
 
 ROOT = Path(__file__).resolve().parent.parent
-INHERITED_LIBRARY = ROOT / "research_cognition_physics" / "archive_001_222" / "research_process"
-sys.path.insert(0, str(INHERITED_LIBRARY if INHERITED_LIBRARY.is_dir()
-                       else ROOT / "research_cognition_physics"))
+sys.path.insert(0, str(ROOT / "research_cognition_physics"))
 
 from common_orientation_structure import encode_state
 from complex_control_from_reference import real_lift
