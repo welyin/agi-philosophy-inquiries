@@ -1,0 +1,106 @@
+{
+  "round": 225,
+  "date": "2026-09-20",
+  "analytic_result": "Positive three-body marginals force even relative-orientation parity. A fixed nontrivial reference type gives one coherent orientation for all objects, including composites. All actual A-to-B events are CP in these charts.",
+  "framework_used": [
+    "associative parallel composition",
+    "discarding any factor including the middle one",
+    "compatibility of marginal probabilities and product effects",
+    "closure under required finite composites"
+  ],
+  "additional_physical_axioms": [],
+  "parity_enumeration": [
+    {
+      "objects": 2,
+      "all_edge_assignments": 2,
+      "consistent": 2,
+      "expected_consistent": 2,
+      "rejected": 0
+    },
+    {
+      "objects": 3,
+      "all_edge_assignments": 8,
+      "consistent": 4,
+      "expected_consistent": 4,
+      "rejected": 4
+    },
+    {
+      "objects": 4,
+      "all_edge_assignments": 64,
+      "consistent": 8,
+      "expected_consistent": 8,
+      "rejected": 56
+    },
+    {
+      "objects": 5,
+      "all_edge_assignments": 1024,
+      "consistent": 16,
+      "expected_consistent": 16,
+      "rejected": 1008
+    }
+  ],
+  "marginal_sign_witness": {
+    "dimensions": [
+      2,
+      3,
+      2
+    ],
+    "cases": 96,
+    "consistent_cases": 48,
+    "inconsistent_cases": 48,
+    "inconsistent_min_eigenvalue": -0.5,
+    "nonadjacent_pair_cases": 32,
+    "all_cases_match_analytic_parity": true
+  },
+  "cross_system_certificates": {
+    "cases": 96,
+    "max_extension_error": 1.573877788192253e-15,
+    "max_kraus_reconstruction_error": 7.374419558875438e-16,
+    "max_tp_error": 1.4439843948697573e-15,
+    "min_choi_eigenvalue": -1.2435877676598604e-16,
+    "min_output_eigenvalue": 0.013085309851591034,
+    "dimensions": [
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        2,
+        4
+      ]
+    ],
+    "chart_assignments_per_dimension": 32
+  },
+  "coherence": {
+    "four_factor_parenthesizations": 5,
+    "implementer_relative_phases": [
+      0.0,
+      -0.13,
+      -0.38999999999999996,
+      -0.2600000000000002,
+      -0.3900000000000001
+    ],
+    "max_noncentral_difference": 2.50224107308384e-14,
+    "meaning": "Constructed coherent model; scalar phase differences leave all density-operator maps identical."
+  },
+  "scope_limits": [
+    "no proof all CP maps are physically allowed",
+    "no requirement all integer Hilbert dimensions occur",
+    "operator-level coherence, not a chosen phase-coherent lift to pure vectors",
+    "no particular Hamiltonian or gravity derived"
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "next": "Use U in the coherent tensor representation to audit steering-state purity and measurement permissions.",
+  "checks": {
+    "run": 9,
+    "failures": 0,
+    "errors": 0
+  }
+}

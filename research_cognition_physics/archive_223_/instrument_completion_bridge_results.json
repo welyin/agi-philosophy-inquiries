@@ -1,0 +1,116 @@
+{
+  "round": 228,
+  "date": "2026-09-20",
+  "exact_result": "F+U+C+P with C_path (or closed reversible groups) yields every finite CP instrument between existing object types, hence all POVMs and CPTP channels. Actual events were already CP by round225.",
+  "baseline_result": "Without that extra regularity, every such instrument is arbitrarily approximable in diamond norm with its classical outcome retained.",
+  "construction_inputs": [
+    "round227 unitary access with exact/approximate scope",
+    "round226 full POVMs on designated steering auxiliaries",
+    "F finite composition, preparation, discard and conditioning"
+  ],
+  "instrument_certificates": [
+    {
+      "input_dim": 2,
+      "output_dim": 3,
+      "kraus_count": 5,
+      "environment_dim": 8,
+      "unitary_dim": 48,
+      "outcomes": 4,
+      "unitarity_error": 1.5678116452465096e-15,
+      "max_branch_choi_error": 0.0,
+      "tp_error": 9.563512991674482e-16,
+      "zero_outcome_choi_norm": 0.0,
+      "unused_environment_dimensions": 3
+    },
+    {
+      "input_dim": 3,
+      "output_dim": 2,
+      "kraus_count": 4,
+      "environment_dim": 9,
+      "unitary_dim": 54,
+      "outcomes": 4,
+      "unitarity_error": 1.973438383059346e-15,
+      "max_branch_choi_error": 0.0,
+      "tp_error": 1.833860890291432e-15,
+      "zero_outcome_choi_norm": 0.0,
+      "unused_environment_dimensions": 5
+    },
+    {
+      "input_dim": 3,
+      "output_dim": 4,
+      "kraus_count": 6,
+      "environment_dim": 9,
+      "unitary_dim": 108,
+      "outcomes": 4,
+      "unitarity_error": 2.2321059928410244e-15,
+      "max_branch_choi_error": 0.0,
+      "tp_error": 1.8129274691921474e-15,
+      "zero_outcome_choi_norm": 0.0,
+      "unused_environment_dimensions": 3
+    },
+    {
+      "input_dim": 2,
+      "output_dim": 2,
+      "kraus_count": 3,
+      "environment_dim": 4,
+      "unitary_dim": 16,
+      "outcomes": 4,
+      "unitarity_error": 7.073945184616341e-16,
+      "max_branch_choi_error": 0.0,
+      "tp_error": 4.1985203667506447e-16,
+      "zero_outcome_choi_norm": 0.0,
+      "unused_environment_dimensions": 1
+    },
+    {
+      "input_dim": 2,
+      "output_dim": 3,
+      "kraus_count": 1,
+      "environment_dim": 2,
+      "unitary_dim": 12,
+      "outcomes": 4,
+      "unitarity_error": 9.37069458535891e-16,
+      "max_branch_choi_error": 0.0,
+      "tp_error": 9.203414398728372e-16,
+      "zero_outcome_choi_norm": 0.0,
+      "unused_environment_dimensions": 1
+    }
+  ],
+  "approximation_certificates": [
+    {
+      "epsilon": 0.1,
+      "unitary_operator_norm_error": 0.09995833854135669,
+      "flagged_trace_norm_error_on_maximally_entangled_input": 0.06847561729026264,
+      "analytic_diamond_norm_upper_bound": 0.19991667708271338,
+      "scope": "Perturbed unitaries test the stability bound; no claim that these particular perturbations belong to an unknown allowed gate set."
+    },
+    {
+      "epsilon": 0.01,
+      "unitary_operator_norm_error": 0.009999958333385394,
+      "flagged_trace_norm_error_on_maximally_entangled_input": 0.006700867832076569,
+      "analytic_diamond_norm_upper_bound": 0.019999916666770787,
+      "scope": "Perturbed unitaries test the stability bound; no claim that these particular perturbations belong to an unknown allowed gate set."
+    },
+    {
+      "epsilon": 0.001,
+      "unitary_operator_norm_error": 0.0009999999583333373,
+      "flagged_trace_norm_error_on_maximally_entangled_input": 0.0006686228691254441,
+      "analytic_diamond_norm_upper_bound": 0.0019999999166666746,
+      "scope": "Perturbed unitaries test the stability bound; no claim that these particular perturbations belong to an unknown allowed gate set."
+    }
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "not_derived": [
+    "existence of every integer-dimensional elementary object",
+    "a finite control cost bound",
+    "a chosen Hamiltonian, time scale, spacetime or gravity"
+  ],
+  "next": "Audit whether the exact regularity condition can be weakened within the full composite theory; distinguish operational completeness from selection of local dynamics.",
+  "checks": {
+    "run": 9,
+    "failures": 0,
+    "errors": 0
+  }
+}

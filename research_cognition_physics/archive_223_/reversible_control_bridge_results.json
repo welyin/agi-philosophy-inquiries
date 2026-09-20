@@ -1,0 +1,160 @@
+{
+  "round": 227,
+  "date": "2026-09-20",
+  "baseline_result": "Under C on identity connected groups, closure of the actual reversible group on A tensor A is PU(d_A^2). Every unitary channel on A is therefore approximable with an auxiliary copy.",
+  "exact_result": "If the identity path component is pure-state transitive on every object (C_path), or the actual reversible groups are closed, every existing object admits all unitary channels exactly.",
+  "extra_condition_status": "C_path is explicit regularity for the exact branch; not silently identified with bare connectedness or a continuous state path.",
+  "orbit_certificates": [
+    {
+      "dimension": 2,
+      "group_dimension": 3,
+      "full_unitary_channel_group_dimension": 3,
+      "pure_state_orbit_tangent_ranks": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "expected_projective_dimension": 2
+    },
+    {
+      "dimension": 4,
+      "group_dimension": 10,
+      "full_unitary_channel_group_dimension": 15,
+      "pure_state_orbit_tangent_ranks": [
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "expected_projective_dimension": 6
+    },
+    {
+      "dimension": 6,
+      "group_dimension": 21,
+      "full_unitary_channel_group_dimension": 35,
+      "pure_state_orbit_tangent_ranks": [
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "expected_projective_dimension": 10
+    }
+  ],
+  "bilinear_certificates": [
+    {
+      "family": "sp",
+      "local_dimension": 2,
+      "copies": 1,
+      "representation_dimension": 2,
+      "generator_count": 3,
+      "invariant_bilinear_form_dimension": 1,
+      "symmetric_form_errors": [
+        1.9999999999999998
+      ],
+      "antisymmetric_form_errors": [
+        0.0
+      ],
+      "max_invariance_residual": 0.0,
+      "constraint_gram_smallest_positive_eigenvalue": 8.0
+    },
+    {
+      "family": "sp",
+      "local_dimension": 2,
+      "copies": 2,
+      "representation_dimension": 4,
+      "generator_count": 6,
+      "invariant_bilinear_form_dimension": 1,
+      "symmetric_form_errors": [
+        4.718447854656915e-16
+      ],
+      "antisymmetric_form_errors": [
+        1.9999999999999998
+      ],
+      "max_invariance_residual": 3.3422138886441676e-16,
+      "constraint_gram_smallest_positive_eigenvalue": 7.999999999999995
+    },
+    {
+      "family": "sp",
+      "local_dimension": 4,
+      "copies": 1,
+      "representation_dimension": 4,
+      "generator_count": 10,
+      "invariant_bilinear_form_dimension": 1,
+      "symmetric_form_errors": [
+        2.000000000000001
+      ],
+      "antisymmetric_form_errors": [
+        2.2887833992611187e-16
+      ],
+      "max_invariance_residual": 3.1646225226420963e-16,
+      "constraint_gram_smallest_positive_eigenvalue": 8.0
+    },
+    {
+      "family": "sp",
+      "local_dimension": 4,
+      "copies": 2,
+      "representation_dimension": 16,
+      "generator_count": 20,
+      "invariant_bilinear_form_dimension": 1,
+      "symmetric_form_errors": [
+        5.450829903885058e-16
+      ],
+      "antisymmetric_form_errors": [
+        2.0000000000000004
+      ],
+      "max_invariance_residual": 5.542611051689901e-16,
+      "constraint_gram_smallest_positive_eigenvalue": 7.999999999999998
+    },
+    {
+      "family": "su",
+      "local_dimension": 3,
+      "copies": 1,
+      "representation_dimension": 3,
+      "generator_count": 8,
+      "invariant_bilinear_form_dimension": 0,
+      "symmetric_form_errors": [],
+      "antisymmetric_form_errors": [],
+      "max_invariance_residual": 0.0,
+      "constraint_gram_smallest_positive_eigenvalue": 2.6666666666666665
+    },
+    {
+      "family": "su",
+      "local_dimension": 3,
+      "copies": 2,
+      "representation_dimension": 9,
+      "generator_count": 16,
+      "invariant_bilinear_form_dimension": 0,
+      "symmetric_form_errors": [],
+      "antisymmetric_form_errors": [],
+      "max_invariance_residual": 0.0,
+      "constraint_gram_smallest_positive_eigenvalue": 5.333333333333327
+    }
+  ],
+  "single_system_boundary": {
+    "dimension": 4,
+    "spectrum_error": 0.0,
+    "initial_symplectic_reality_error": 0.0,
+    "target_symplectic_reality_error": 1.0,
+    "scope": "A single-system Sp(2) boundary example, not a model satisfying the full composite contract."
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "not_derived": [
+    "a rate or cost for approximate control",
+    "all gates from pure-state transitivity alone on one system",
+    "a selected physical Hamiltonian"
+  ],
+  "next": "Use exact or approximate unitary access, with the corresponding qualification, to transfer POVMs and dilate finite CP instruments.",
+  "checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}
