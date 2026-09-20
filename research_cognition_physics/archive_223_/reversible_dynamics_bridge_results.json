@@ -1,0 +1,109 @@
+{
+  "round": 223,
+  "date": "2026-09-20",
+  "inherited": "F+U+C+P and the completed complex density-state-space reconstruction.",
+  "analytic_result": "Every allowed reversible affine state map is unitary or transpose-unitary; a continuous path from identity stays unitary. A continuous time-homogeneous one-parameter group has generator -i[K,.], K Hermitian and unique modulo scalar identity.",
+  "additional_clock_input": "A declared reversible continuous one-parameter group Phi_(s+t)=Phi_s Phi_t, not supplied by pure-state transitivity alone.",
+  "not_derived": [
+    "particular K",
+    "physical time or energy scale",
+    "hbar",
+    "availability of all mathematical unitaries",
+    "all CPTP instruments",
+    "standard tensor identification",
+    "spacetime or gravity"
+  ],
+  "dimensions": [
+    {
+      "dimension": 2,
+      "generator_rank_mod_identity": 3,
+      "inner_generator_recovery_error": 0.0,
+      "finite_difference_generator_error": 6.746986398102607e-10,
+      "finite_difference_commutator_fit_residual": 2.311347877261136e-12,
+      "finite_difference_state_derivative_error": 1.6111544562980302e-10,
+      "leibniz_defect": 0.0,
+      "depolarizing_generator_commutator_fit_residual": 1.732050807568877,
+      "depolarizing_generator_leibniz_defect": 1.5811388300841898,
+      "transpose_real_determinant": -1,
+      "transpose_expected_determinant": -1,
+      "transpose_multiplicativity_defect": 1.4142135623730951,
+      "transpose_antimultiplicativity_defect": 0.0
+    },
+    {
+      "dimension": 3,
+      "generator_rank_mod_identity": 8,
+      "inner_generator_recovery_error": 0.0,
+      "finite_difference_generator_error": 8.636477263216798e-10,
+      "finite_difference_commutator_fit_residual": 9.52803964497416e-10,
+      "finite_difference_state_derivative_error": 2.389128305564872e-10,
+      "leibniz_defect": 2.220446049250313e-16,
+      "depolarizing_generator_commutator_fit_residual": 2.82842712474619,
+      "depolarizing_generator_leibniz_defect": 1.4142135623730951,
+      "transpose_real_determinant": -1,
+      "transpose_expected_determinant": -1,
+      "transpose_multiplicativity_defect": 1.4142135623730951,
+      "transpose_antimultiplicativity_defect": 0.0
+    },
+    {
+      "dimension": 4,
+      "generator_rank_mod_identity": 15,
+      "inner_generator_recovery_error": 1.2412670766236366e-16,
+      "finite_difference_generator_error": 1.5423683572006325e-09,
+      "finite_difference_commutator_fit_residual": 2.366881721273314e-09,
+      "finite_difference_state_derivative_error": 9.472865326013095e-10,
+      "leibniz_defect": 4.440892098500626e-16,
+      "depolarizing_generator_commutator_fit_residual": 3.872983346207416,
+      "depolarizing_generator_leibniz_defect": 1.3228756555322954,
+      "transpose_real_determinant": 1,
+      "transpose_expected_determinant": 1,
+      "transpose_multiplicativity_defect": 1.4142135623730951,
+      "transpose_antimultiplicativity_defect": 0.0
+    }
+  ],
+  "counterexamples": {
+    "clock": {
+      "same_state_space_plus_probability_at_pi": {
+        "zero_generator": 1.0,
+        "z_over_two_generator": 0.0
+      },
+      "nonhomogeneous_path_t_squared_group_defect_at_s_t_1": 0.8414709848078965,
+      "exact_group_defect": "sin(1)",
+      "nonhomogeneous_path_derivative_at_zero": 0
+    },
+    "normalized_filter": {
+      "filter_diagonal": [
+        1,
+        0.5
+      ],
+      "success_probabilities_on_basis_states": [
+        1,
+        0.25
+      ],
+      "conditioned_mixture_diagonal": [
+        0.8,
+        0.2
+      ],
+      "mixture_of_conditioned_states_diagonal": [
+        0.5,
+        0.5
+      ],
+      "affinity_defect_trace_distance": 0.30000000000000004,
+      "exact_affinity_defect": "3/10"
+    }
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "evidence_scope": "Finite-dimensional numerical certificates and exact analytic witnesses; the all-dimension classification is cited, not inferred from sampling.",
+  "classification_source": {
+    "url": "https://arxiv.org/html/1911.06635",
+    "location": "Section 1, Proposition 1.2 and Theorem 1.1"
+  },
+  "next": "Audit compatibility of reconstructed composites with the standard complex tensor product, then link actual process extensions to complete positivity; separately audit process saturation/purification.",
+  "checks": {
+    "run": 10,
+    "failures": 0,
+    "errors": 0
+  }
+}
