@@ -1,0 +1,176 @@
+{
+  "round": 232,
+  "date": "2026-09-22",
+  "question": "Does compatible finite recording imply event order, and does single-use consistency survive independent composition with local regrouping?",
+  "source": "Baumeler and Wolf, NJP18 013036 (2016), arXiv:1507.01714 Eq.(98).",
+  "single_use": {
+    "deterministic_local_settings_checked": 64,
+    "fixed_point_count_histogram": {
+      "1": 64
+    },
+    "truth_table": [
+      {
+        "outputs": [
+          0,
+          0,
+          0
+        ],
+        "inputs": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "outputs": [
+          0,
+          0,
+          1
+        ],
+        "inputs": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "outputs": [
+          0,
+          1,
+          0
+        ],
+        "inputs": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "outputs": [
+          0,
+          1,
+          1
+        ],
+        "inputs": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "outputs": [
+          1,
+          0,
+          0
+        ],
+        "inputs": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "outputs": [
+          1,
+          0,
+          1
+        ],
+        "inputs": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "outputs": [
+          1,
+          1,
+          0
+        ],
+        "inputs": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "outputs": [
+          1,
+          1,
+          1
+        ],
+        "inputs": [
+          0,
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  "records": {
+    "random_stochastic_settings": 128,
+    "explicit_record_bits": 3,
+    "maximum_normalization_error": 2.220446049250313e-16,
+    "maximum_record_discard_error": 0.0,
+    "memory_scope": "Three local classical input records per use; no global time order or free infinite storage."
+  },
+  "quantum_diagonal_check": {
+    "random_local_CPTP_settings": 64,
+    "maximum_normalization_error": 1.1102230246251565e-15
+  },
+  "two_use_product_operations": {
+    "settings_checked": 4096,
+    "all_fixed_point_counts": 1
+  },
+  "two_use_regrouped_operations": {
+    "reversible_local_settings_checked": 512,
+    "fixed_point_count_histogram": {
+      "0": 66,
+      "1": 384,
+      "2": 60,
+      "4": 2
+    },
+    "zero_weight_witness": {
+      "local_truth_tables": [
+        [
+          1,
+          0,
+          3,
+          2
+        ],
+        [
+          0,
+          2,
+          1,
+          3
+        ],
+        [
+          0,
+          2,
+          1,
+          3
+        ]
+      ],
+      "fixed_points": [],
+      "normalization_weight": 0
+    }
+  },
+  "analytic_results": [
+    "Finite compatible records alone do not force a fixed global event order.",
+    "This single-use process fails independent two-copy composition with arbitrary local regrouping.",
+    "A local X on the first A port and SWAP at B and C give normalization zero.",
+    "Dense local permissions already exclude a normalization discontinuity escape."
+  ],
+  "scope": "Restricted classical/diagonal process diagnostic, not a complete F+U+C+P countermodel or a derivation of spacetime.",
+  "extra_input": "Treating a whole process as an independently repeatable resource with jointly accessible ports is an explicit higher-order interface contract.",
+  "next": "Specify physically legitimate port regrouping and test that it does not reject ordinary multi-event or adaptive circuits by misidentifying a laboratory with one event.",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "round": 230,
+  "date": "2026-09-21",
+  "analytic_result": "For a finite adaptive protocol, sum of instrument diamond errors E bounds final flagged trace norm by E and record total variation by min(1,E/2). No finite fixed protocol has a positive robust separation from the dense baseline theory.",
+  "quantifiers": "For every fixed finite quantum protocol and positive tolerance there exists an allowed approximating protocol. Not one universal approximation for all protocols, not exact equality, not equality of efficient resource costs.",
+  "hypotheses": [
+    "F+U+C+P",
+    "round228 density with classical records and external references",
+    "finite maximum protocol depth and finite outcomes",
+    "comparison with the same existing input/output system types"
+  ],
+  "adaptive_protocol_certificates": [
+    {
+      "depth": 1,
+      "histories": 2,
+      "perturbation": 0.04,
+      "per_stage_diamond_upper_bounds": [
+        0.07999466677333278
+      ],
+      "analytic_flagged_norm_upper_bound": 0.07999466677333278,
+      "observed_flagged_trace_norm_on_bell_input": 0.07993848098343861,
+      "observed_final_record_total_variation": 0.00023690748332824715,
+      "analytic_record_total_variation_upper_bound": 0.03999733338666639,
+      "normalization_error": 4.440892098500626e-16
+    },
+    {
+      "depth": 1,
+      "histories": 2,
+      "perturbation": 0.004,
+      "per_stage_diamond_upper_bounds": [
+        0.00799999466666794
+      ],
+      "analytic_flagged_norm_upper_bound": 0.00799999466666794,
+      "observed_flagged_trace_norm_on_bell_input": 0.00799595886655646,
+      "observed_final_record_total_variation": 2.370326102607484e-06,
+      "analytic_record_total_variation_upper_bound": 0.00399999733333397,
+      "normalization_error": 4.440892098500626e-16
+    },
+    {
+      "depth": 2,
+      "histories": 4,
+      "perturbation": 0.04,
+      "per_stage_diamond_upper_bounds": [
+        0.07999466677333278,
+        0.07999466677333245
+      ],
+      "analytic_flagged_norm_upper_bound": 0.15998933354666522,
+      "observed_flagged_trace_norm_on_bell_input": 0.06939269174036179,
+      "observed_final_record_total_variation": 0.0010294734420501698,
+      "analytic_record_total_variation_upper_bound": 0.07999466677333261,
+      "normalization_error": 6.661338147750939e-16
+    },
+    {
+      "depth": 2,
+      "histories": 4,
+      "perturbation": 0.004,
+      "per_stage_diamond_upper_bounds": [
+        0.00799999466666794,
+        0.00799999466666787
+      ],
+      "analytic_flagged_norm_upper_bound": 0.01599998933333581,
+      "observed_flagged_trace_norm_on_bell_input": 0.006937646328340377,
+      "observed_final_record_total_variation": 0.00013324245933753778,
+      "analytic_record_total_variation_upper_bound": 0.007999994666667905,
+      "normalization_error": 8.881784197001252e-16
+    },
+    {
+      "depth": 4,
+      "histories": 16,
+      "perturbation": 0.04,
+      "per_stage_diamond_upper_bounds": [
+        0.07999466677333278,
+        0.07999466677333245,
+        0.0799946667733327,
+        0.0799946667733329
+      ],
+      "analytic_flagged_norm_upper_bound": 0.31997866709333084,
+      "observed_flagged_trace_norm_on_bell_input": 0.12215561712808719,
+      "observed_final_record_total_variation": 0.006692114515308296,
+      "analytic_record_total_variation_upper_bound": 0.15998933354666542,
+      "normalization_error": 2.220446049250313e-16
+    },
+    {
+      "depth": 4,
+      "histories": 16,
+      "perturbation": 0.004,
+      "per_stage_diamond_upper_bounds": [
+        0.00799999466666794,
+        0.00799999466666787,
+        0.007999994666667962,
+        0.007999994666668031
+      ],
+      "analytic_flagged_norm_upper_bound": 0.0319999786666718,
+      "observed_flagged_trace_norm_on_bell_input": 0.012198388223401215,
+      "observed_final_record_total_variation": 0.0007810315038689246,
+      "analytic_record_total_variation_upper_bound": 0.0159999893333359,
+      "normalization_error": 6.661338147750939e-16
+    }
+  ],
+  "rare_event_certificates": [
+    {
+      "success_probability": 0.1,
+      "exact_replacement_instrument_diamond_distance": 0.2,
+      "conditional_trace_distance": 1.0,
+      "expected_independent_trials_until_success": 10.0
+    },
+    {
+      "success_probability": 0.001,
+      "exact_replacement_instrument_diamond_distance": 0.002,
+      "conditional_trace_distance": 1.0,
+      "expected_independent_trials_until_success": 1000.0
+    },
+    {
+      "success_probability": 1e-05,
+      "exact_replacement_instrument_diamond_distance": 2e-05,
+      "conditional_trace_distance": 1.0,
+      "expected_independent_trials_until_success": 99999.99999999999
+    }
+  ],
+  "discrimination_certificates": [
+    {
+      "observed_optimal_success": 0.5099993333466664,
+      "helstrom_value": 0.5099993333466666,
+      "trace_distance": 0.019998666693333077
+    },
+    {
+      "observed_optimal_success": 0.5993346653975306,
+      "helstrom_value": 0.5993346653975306,
+      "trace_distance": 0.1986693307950612
+    },
+    {
+      "observed_optimal_success": 0.8221088436188455,
+      "helstrom_value": 0.8221088436188455,
+      "trace_distance": 0.6442176872376909
+    }
+  ],
+  "numerical_scope": "Finite examples with an explicit Bell reference; the reported trace norms are not numerically computed diamond norms. The diamond bounds and all-reference statements are analytic.",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "unresolved_but_not_blocking_closure": [
+    "Does bare F+U+C+P imply a nonconstant reversible operation path?",
+    "Exact gate synthesis cost and natural Hamiltonian selection are not fixed."
+  ],
+  "next": "Stage closure complete; await the user direction conjectures before beginning Hamiltonians, fields or gravity.",
+  "checks": {
+    "run": 7,
+    "failures": 0,
+    "errors": 0
+  }
+}
