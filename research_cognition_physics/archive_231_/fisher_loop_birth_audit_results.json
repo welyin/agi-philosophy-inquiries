@@ -1,0 +1,43 @@
+{
+  "round": 260,
+  "topology": {
+    "five_vertex_graphs": 768,
+    "local_triangle_rewrites": 18080,
+    "single_decoration_distance_pairs": 172800,
+    "distance_bound": "d_G(collapse(x),collapse(y)) <= d_F(x,y) <= 2*d_G(collapse(x),collapse(y))+1"
+  },
+  "mixed_growth": {
+    "events": 24,
+    "triangle_events": 16,
+    "binary_events": 8,
+    "fresh_logical_qubits": 40,
+    "new_internal_channels": 56,
+    "final": {
+      "vertices": 41,
+      "edges": 56,
+      "components": 1,
+      "cycle_rank": 16,
+      "max_degree": 3
+    }
+  },
+  "eta": 0.6,
+  "one_event_cycle_birth_probabilities": {
+    "X_plus": 0.7999999999999998,
+    "X_minus": 0.19999999999999998,
+    "Z_plus": 0.5
+  },
+  "instrument_completeness_max_error": 1.1102230246251565e-16,
+  "expected_cycle_increment_X_plus": 0.7999999999999998,
+  "expected_new_logical_qubits_X_plus": 1.7999999999999998,
+  "expected_new_internal_channels_X_plus": 2.5999999999999996,
+  "scope": "Known Fisher-type triangle gadgets supply local cycle creation in bounded-degree channel graphs. Supplied weak instruments control binary versus triangle birth, with explicit ancillas and channel-creation capability. Finite decoration obeys a distance bound; no dimension, continuum spacetime, unitarity on all graph sectors, or gravity is derived.",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "checks": {
+    "run": 10,
+    "failures": 0,
+    "errors": 0
+  }
+}

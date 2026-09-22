@@ -1,0 +1,307 @@
+{
+  "round": 236,
+  "date": "2026-09-22",
+  "hypothesis": "Can a positive additive event-volume be extracted from boundary-channel equivalence alone?",
+  "unitary_factorizations": [
+    {
+      "dimension": 2,
+      "operation_vertices": 1,
+      "same_boundary_channel_error": 0.0
+    },
+    {
+      "dimension": 2,
+      "operation_vertices": 2,
+      "same_boundary_channel_error": 3.5767435370511885e-16
+    },
+    {
+      "dimension": 2,
+      "operation_vertices": 5,
+      "same_boundary_channel_error": 2.0359817559955315e-15
+    },
+    {
+      "dimension": 2,
+      "operation_vertices": 10,
+      "same_boundary_channel_error": 1.3387388006909064e-15
+    },
+    {
+      "dimension": 3,
+      "operation_vertices": 1,
+      "same_boundary_channel_error": 0.0
+    },
+    {
+      "dimension": 3,
+      "operation_vertices": 2,
+      "same_boundary_channel_error": 7.411298743010043e-16
+    },
+    {
+      "dimension": 3,
+      "operation_vertices": 5,
+      "same_boundary_channel_error": 9.376131959891078e-16
+    },
+    {
+      "dimension": 3,
+      "operation_vertices": 10,
+      "same_boundary_channel_error": 2.148491524105154e-15
+    },
+    {
+      "dimension": 4,
+      "operation_vertices": 1,
+      "same_boundary_channel_error": 0.0
+    },
+    {
+      "dimension": 4,
+      "operation_vertices": 2,
+      "same_boundary_channel_error": 8.476818166333862e-16
+    },
+    {
+      "dimension": 4,
+      "operation_vertices": 5,
+      "same_boundary_channel_error": 1.6773511249348617e-15
+    },
+    {
+      "dimension": 4,
+      "operation_vertices": 10,
+      "same_boundary_channel_error": 3.012439095642967e-15
+    }
+  ],
+  "identity_refinements": [
+    {
+      "identity_vertices": 1,
+      "boundary_reference_error": 0.0,
+      "naive_volume_at_assumed_density_10": 0.1
+    },
+    {
+      "identity_vertices": 2,
+      "boundary_reference_error": 0.0,
+      "naive_volume_at_assumed_density_10": 0.2
+    },
+    {
+      "identity_vertices": 5,
+      "boundary_reference_error": 0.0,
+      "naive_volume_at_assumed_density_10": 0.5
+    },
+    {
+      "identity_vertices": 10,
+      "boundary_reference_error": 0.0,
+      "naive_volume_at_assumed_density_10": 1.0
+    },
+    {
+      "identity_vertices": 50,
+      "boundary_reference_error": 0.0,
+      "naive_volume_at_assumed_density_10": 5.0
+    }
+  ],
+  "absorbing_reset": {
+    "random_CPTP_examples": 24,
+    "maximum_trace_preserving_error": 1.1577528665151638e-15,
+    "maximum_reset_after_channel_vs_reset_error": 3.8464166038442895e-16
+  },
+  "finite_monoid": {
+    "maps": [
+      "identity",
+      "flip",
+      "reset_0",
+      "reset_1"
+    ],
+    "composition_table_g_after_f": [
+      [
+        0,
+        1,
+        2,
+        3
+      ],
+      [
+        1,
+        0,
+        3,
+        2
+      ],
+      [
+        2,
+        2,
+        2,
+        2
+      ],
+      [
+        3,
+        3,
+        3,
+        3
+      ]
+    ],
+    "equations": [
+      [
+        -1,
+        0,
+        0,
+        0
+      ],
+      [
+        -1,
+        0,
+        0,
+        0
+      ],
+      [
+        -1,
+        0,
+        0,
+        0
+      ],
+      [
+        -1,
+        0,
+        0,
+        0
+      ],
+      [
+        -1,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        -2,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        -1,
+        1
+      ],
+      [
+        0,
+        -1,
+        1,
+        -1
+      ],
+      [
+        -1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        -1
+      ],
+      [
+        -1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        -1
+      ]
+    ],
+    "rank": 4,
+    "finite_real_additive_weight_nullity": 0,
+    "unit_event_count_max_additivity_defect": 1.0
+  },
+  "finite_vs_local_finiteness": {
+    "finite_stages": [
+      {
+        "interior_events": 1,
+        "total_events": 3,
+        "strict_partial_order": true,
+        "each_slice_system_dimension": 2
+      },
+      {
+        "interior_events": 2,
+        "total_events": 4,
+        "strict_partial_order": true,
+        "each_slice_system_dimension": 2
+      },
+      {
+        "interior_events": 4,
+        "total_events": 6,
+        "strict_partial_order": true,
+        "each_slice_system_dimension": 2
+      },
+      {
+        "interior_events": 8,
+        "total_events": 10,
+        "strict_partial_order": true,
+        "each_slice_system_dimension": 2
+      },
+      {
+        "interior_events": 16,
+        "total_events": 18,
+        "strict_partial_order": true,
+        "each_slice_system_dimension": 2
+      },
+      {
+        "interior_events": 32,
+        "total_events": 34,
+        "strict_partial_order": true,
+        "each_slice_system_dimension": 2
+      }
+    ],
+    "analytic_direct_limit": "a < z_1 < z_2 < ... < b; I(a,b) is countably infinite",
+    "finite_samples_do_not_prove_limit_locally_finite": true
+  },
+  "added_tag_positive_control": {
+    "two_flip_product_identity_error": 0.0,
+    "two_flip_added_duration": 2.0,
+    "empty_identity_duration": 0.0,
+    "tagged_processes_equal": false,
+    "identity_step_durations": [
+      1.0,
+      2.0,
+      5.0,
+      10.0,
+      50.0
+    ],
+    "assumption": "Duration/history is retained in the interface; boundary channel equality no longer identifies the processes."
+  },
+  "conclusion": "Boundary channels and finite-dimensionality do not fix an atomic event count, volume density or local finiteness of an infinite history.",
+  "not_claimed": [
+    "Physical idle time has zero volume or zero cost",
+    "Different microscopic histories are physically identical",
+    "Causal-set counting is inconsistent",
+    "Identity refinement is a gauge symmetry of nature"
+  ],
+  "next": "Choose a conditional history model with retained atomic events and test existing geometric estimators; independently track how event identity and counting could be motivated.",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "checks": {
+    "run": 6,
+    "failures": 0,
+    "errors": 0
+  }
+}

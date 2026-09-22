@@ -1,0 +1,63 @@
+{
+  "round": 248,
+  "date": "2026-09-22",
+  "instrument_necessary_condition": "For normalized input and exhaustive Kraus histories: sum_h D(h,h)=1",
+  "scope_of_obstruction": "Exact D_rec on the specified exhaustive finite prefix partition; not all generalized quantum measures or all coarse models",
+  "round246_completion_audit": [
+    {
+      "N": 3,
+      "trace_D_rec": 0.7500000000000001,
+      "exhaustive_instrument_trace_deficit": 0.2499999999999999,
+      "completed_instrument_trace": 1.0,
+      "orthogonal_failure_completion_total_bare_D": 1.25,
+      "expected_total_bare_D": 1.25
+    },
+    {
+      "N": 4,
+      "trace_D_rec": 0.36419753086419754,
+      "exhaustive_instrument_trace_deficit": 0.6358024691358024,
+      "completed_instrument_trace": 1.0,
+      "orthogonal_failure_completion_total_bare_D": 1.6358024691358024,
+      "expected_total_bare_D": 1.6358024691358024
+    },
+    {
+      "N": 5,
+      "trace_D_rec": 0.12249228395061727,
+      "exhaustive_instrument_trace_deficit": 0.8775077160493827,
+      "completed_instrument_trace": 0.9999999999999999,
+      "orthogonal_failure_completion_total_bare_D": 1.8775077160493825,
+      "expected_total_bare_D": 1.8775077160493827
+    }
+  ],
+  "cited_isometric_model": {
+    "source": "https://arxiv.org/abs/1409.3770",
+    "theta": "pi/4",
+    "binary_growth_steps": 3,
+    "sum_amplitudes": [
+      1.0000000000000007,
+      0.0
+    ],
+    "squared_norm": 1.0000000000000013,
+    "scalar_D_rank": 1,
+    "projector_history_D_rank": 8,
+    "six_middle_paths": {
+      "cardinality": 6,
+      "quantum_measure": 2.2500000000000027,
+      "diagonal_projector_probability": 0.7500000000000011,
+      "unnormalized_effect_norm": 5.999999999999999,
+      "normalized_coherent_projector_probability": 0.37500000000000044
+    },
+    "whole_event_coherent_projection_probability": 0.12500000000000017
+  },
+  "conclusion": "An isometry does not identify a scalar amplitude-sum event functional with a physical pointer-history functional.",
+  "next_interface": "Specify event effects, class operators, actual record algebra and complete interventions before selecting growth dynamics.",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}

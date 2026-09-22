@@ -1,0 +1,89 @@
+{
+  "round": 249,
+  "date": "2026-09-22",
+  "model": "Prescribed online geometry plus cover-graph qubits and geometry latch",
+  "finite_growth": [
+    {
+      "N": 2,
+      "supported_geometries": 1,
+      "geometry_probability_error": 0.0,
+      "record_R1_probability": 0.0,
+      "max_stabilizer_error": 0.0
+    },
+    {
+      "N": 3,
+      "supported_geometries": 2,
+      "geometry_probability_error": 1.1102230246251565e-16,
+      "record_R1_probability": 0.24999999999999994,
+      "max_stabilizer_error": 1.1102230246251565e-16
+    },
+    {
+      "N": 4,
+      "supported_geometries": 6,
+      "geometry_probability_error": 8.326672684688674e-17,
+      "record_R1_probability": 0.3333333333333331,
+      "max_stabilizer_error": 0.0
+    },
+    {
+      "N": 5,
+      "supported_geometries": 29,
+      "geometry_probability_error": 8.326672684688674e-17,
+      "record_R1_probability": 0.37499999999999967,
+      "max_stabilizer_error": 2.220446049250313e-16
+    }
+  ],
+  "star_geometry_probability": 0.75,
+  "conditional_fine_history_D": [
+    [
+      0.24999999999999997,
+      0.24999999999999997,
+      -1.3981964481723364e-18,
+      1.3981964481723364e-18
+    ],
+    [
+      0.24999999999999997,
+      0.24999999999999997,
+      -1.3981964481723364e-18,
+      1.3981964481723364e-18
+    ],
+    [
+      -1.3981964481723364e-18,
+      -1.3981964481723364e-18,
+      0.24999999999999997,
+      -0.24999999999999997
+    ],
+    [
+      1.3981964481723364e-18,
+      1.3981964481723364e-18,
+      -0.24999999999999997,
+      0.24999999999999997
+    ]
+  ],
+  "conditional_coherent_stabilizer_plus": 0.9999999999999999,
+  "conditional_plus_after_Z_record": 0.49999999999999994,
+  "frozen_N3_record_distribution_at_N5": [
+    0.7499999999999997,
+    0.2500000000000019
+  ],
+  "star_CHSH_newborn_vs_parents": 2.82842712474619,
+  "extra_inputs": [
+    "One qubit per event in |+>",
+    "CZ interaction on every cover relation",
+    "Round247 geometry probabilities and global controller",
+    "Specified record access and matter measurement"
+  ],
+  "limits": [
+    "Geometry remains the given classical pointer law",
+    "CZ preparation commutation does not prove full QCH axioms for arbitrary interventions",
+    "Only specified record marginals, not an infinite coherent history functional, are extended"
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "checks": {
+    "run": 10,
+    "failures": 0,
+    "errors": 0
+  }
+}

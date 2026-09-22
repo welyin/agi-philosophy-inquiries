@@ -1,0 +1,61 @@
+{
+  "round": 254,
+  "date": "2026-09-22",
+  "initial_roots": 2,
+  "local_depth_cut": 2,
+  "terminal_marked_forests": 36,
+  "legal_transcripts": 1624,
+  "normalization_operator_error": 1.1102230246251565e-16,
+  "scheduler_comparison": [
+    {
+      "policy": "uniform",
+      "positive_weight_transcripts": 1624,
+      "largest_effect_difference": 1.3877787807814457e-16,
+      "schedule_weight_sum_exact": "1"
+    },
+    {
+      "policy": "left_bias",
+      "positive_weight_transcripts": 1624,
+      "largest_effect_difference": 5.551115123125783e-17,
+      "schedule_weight_sum_exact": "1"
+    },
+    {
+      "policy": "adaptive",
+      "positive_weight_transcripts": 1624,
+      "largest_effect_difference": 9.71445146547012e-17,
+      "schedule_weight_sum_exact": "1"
+    },
+    {
+      "policy": "lexicographic",
+      "positive_weight_transcripts": 36,
+      "largest_effect_difference": 0.0,
+      "schedule_weight_sum_exact": "1"
+    }
+  ],
+  "event_count_distribution_for_logical_Bell_input": {
+    "4": 0.33999999999999997,
+    "5": 0.31999999999999995,
+    "6": 0.33999999999999986
+  },
+  "fixed_two_global_steps_counterexample": {
+    "uniform_both_roots_processed": 0.3666666666666667,
+    "roots_first_both_roots_processed": 1.0
+  },
+  "extension": "Consistent finite-depth Born record probabilities define a classical probability measure on infinite marked port forests",
+  "limits": [
+    "Scheduler only chooses enabled events using classical past; it does not alter settings or impose a stopping deadline",
+    "All events within the outcome-dependent depth cut are completed",
+    "No equal probabilities for different birth-number transcripts are assumed",
+    "Only classical pointer records are extended, not an infinite coherent history functional",
+    "Port types, fresh qubits, branch-only topology and local instruments remain additional inputs"
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "checks": {
+    "run": 10,
+    "failures": 0,
+    "errors": 0
+  }
+}

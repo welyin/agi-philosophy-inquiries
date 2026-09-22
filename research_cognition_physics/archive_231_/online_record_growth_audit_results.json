@@ -1,0 +1,66 @@
+{
+  "round": 247,
+  "date": "2026-09-22",
+  "prior_p": "1/2",
+  "model": "Current-prefix hazard and uniform existing-pair closure; no initial final-sector register",
+  "hazard_m2": "(1-p)/(n*(p*(n-1)+1-p))",
+  "hazard_m3": "0",
+  "p_half_hazard": "1/n^2",
+  "finite_enumeration": [
+    {
+      "N": 2,
+      "supported_prefixes": 1,
+      "normalization_exact": "1",
+      "difference_from_round246_classical_P": 0.0,
+      "record_R1_probability_exact": "0",
+      "record_R0_probability_exact": "1",
+      "final_sector_inference_error_exact": "1/2"
+    },
+    {
+      "N": 3,
+      "supported_prefixes": 2,
+      "normalization_exact": "1",
+      "difference_from_round246_classical_P": 0.0,
+      "record_R1_probability_exact": "1/4",
+      "record_R0_probability_exact": "3/4",
+      "final_sector_inference_error_exact": "1/4"
+    },
+    {
+      "N": 4,
+      "supported_prefixes": 6,
+      "normalization_exact": "1",
+      "difference_from_round246_classical_P": 0.0,
+      "record_R1_probability_exact": "1/3",
+      "record_R0_probability_exact": "2/3",
+      "final_sector_inference_error_exact": "1/6"
+    },
+    {
+      "N": 5,
+      "supported_prefixes": 29,
+      "normalization_exact": "1",
+      "difference_from_round246_classical_P": 2.7755575615628914e-17,
+      "record_R1_probability_exact": "3/8",
+      "record_R0_probability_exact": "5/8",
+      "final_sector_inference_error_exact": "1/8"
+    }
+  ],
+  "N4_to_N5_recorded_isometry_error": 1.1102230246251565e-16,
+  "terminal_no_third_minimum_probability": "p, by exact telescoping",
+  "record_meaning": "R=1 iff a third minimal event has already appeared; R=0 is not an exact E2 certificate",
+  "operational_history_D": "diag(P_N); differs from round246 rank-two D_rec",
+  "extra_inputs": [
+    "Chosen p and time-dependent hazard",
+    "Uniform pair selection from the whole finite prefix",
+    "Orthogonal geometry memory and blank record qubits",
+    "Finite isometric control; no physical clock or spatial locality supplied"
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "checks": {
+    "run": 10,
+    "failures": 0,
+    "errors": 0
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "round": 242,
+  "date": "2026-09-22",
+  "controlled_phase_rows": [
+    {
+      "phase": 0.0,
+      "ordinary_channel_max_difference": 0.0,
+      "controlled_plus_probability": 0.9999999999999996
+    },
+    {
+      "phase": 1.5707963267948966,
+      "ordinary_channel_max_difference": 0.0,
+      "controlled_plus_probability": 0.49999999999999983
+    },
+    {
+      "phase": 3.141592653589793,
+      "ordinary_channel_max_difference": 0.0,
+      "controlled_plus_probability": 0.0
+    }
+  ],
+  "pauli_order": {
+    "ordinary_composite_channel_difference": 0.0,
+    "switch_plus_probability": 0.0,
+    "commuting_comparison_plus_probability": 0.9999999999999996,
+    "switch_kraus_mixing_difference": 8.342572450987273e-17
+  },
+  "two_independent_chains": {
+    "natural_schedules": [
+      [
+        0,
+        1,
+        2,
+        3
+      ],
+      [
+        0,
+        2,
+        1,
+        3
+      ],
+      [
+        0,
+        2,
+        3,
+        1
+      ],
+      [
+        2,
+        0,
+        1,
+        3
+      ],
+      [
+        2,
+        0,
+        3,
+        1
+      ],
+      [
+        2,
+        3,
+        0,
+        1
+      ]
+    ],
+    "unitary_product_max_difference": 0.0,
+    "selective_product_max_difference": 2.7755575615628914e-17,
+    "coherent_schedule_factorization_error": 3.469446951953614e-18,
+    "uniform_control_readout_probability": 1.0000000000000002
+  },
+  "duplicate_label_counterexample": {
+    "physical_probabilities": [
+      0.5,
+      0.5
+    ],
+    "label_multiplicities": [
+      1,
+      2
+    ],
+    "renormalized_probability_counting": [
+      0.3333333333333333,
+      0.6666666666666666
+    ],
+    "renormalized_equal_phase_amplitude_counting": [
+      0.2,
+      0.8
+    ]
+  },
+  "extra_inputs": [
+    "Specified finite event poset and operators",
+    "Known coherent control implementation or supplied quantum switch",
+    "Exact operator interchange for incomparable events, including outcome operators"
+  ],
+  "conclusion": "Operator interchange makes finite natural schedules equivalent; ordinary channel equality alone does not identify histories in coherent contexts.",
+  "not_claimed": [
+    "A quantum switch has been derived from fixed-order black-box calls",
+    "Natural-label multiplicity is physical interference",
+    "The event order, amplitudes, or a causal-set quantum growth law has been selected"
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}

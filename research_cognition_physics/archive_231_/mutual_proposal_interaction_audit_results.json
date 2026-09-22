@@ -1,0 +1,100 @@
+{
+  "round": 255,
+  "eta": 0.6,
+  "theta": 0.7853981633974483,
+  "cycle": {
+    "proposal_records": 16,
+    "distinct_matchings": 7,
+    "legal_operator_orders": 688,
+    "completeness_max_error": 7.632783294297951e-17,
+    "order_max_error": 1.1102230246251565e-16,
+    "two_epoch_prefix_max_error": 5.551115123125783e-17,
+    "maximally_mixed_matching_distribution": [
+      {
+        "edges": [],
+        "proposal_count": 2,
+        "mixed_state_probability": 0.125
+      },
+      {
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "proposal_count": 3,
+        "mixed_state_probability": 0.1875
+      },
+      {
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "proposal_count": 1,
+        "mixed_state_probability": 0.0625
+      },
+      {
+        "edges": [
+          [
+            0,
+            3
+          ]
+        ],
+        "proposal_count": 3,
+        "mixed_state_probability": 0.1875
+      },
+      {
+        "edges": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "proposal_count": 1,
+        "mixed_state_probability": 0.0625
+      },
+      {
+        "edges": [
+          [
+            1,
+            2
+          ]
+        ],
+        "proposal_count": 3,
+        "mixed_state_probability": 0.1875
+      },
+      {
+        "edges": [
+          [
+            2,
+            3
+          ]
+        ],
+        "proposal_count": 3,
+        "mixed_state_probability": 0.1875
+      }
+    ]
+  },
+  "selected_pair_reduced_purity": 0.4999999999999999,
+  "overlapping_ZZ_XX_order_max_difference": 1.0000000000000002,
+  "scope": "Supplied degree-at-most-two encounter graph; local complete proposal instruments; reliable classical handshakes; two-input two-output gates; complete negotiation epochs. No physical geometry is derived.",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "checks": {
+    "run": 10,
+    "failures": 0,
+    "errors": 0
+  }
+}

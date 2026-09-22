@@ -1,0 +1,104 @@
+{
+  "round": 233,
+  "date": "2026-09-22",
+  "hypothesis": "When does replacing event blocks by arbitrary joint channels preserve universal normalization?",
+  "graph_grouping": {
+    "nodes": 5,
+    "fixed_topological_order_dags": 1024,
+    "partitions_per_graph": 52,
+    "graph_partition_pairs": 53248,
+    "acyclic_quotients": 33742,
+    "cyclic_quotients": 19506,
+    "independent_contiguous_schedule_disagreements": 0
+  },
+  "ordinary_channel_controls": {
+    "all_two_bit_permutation_pairs": 576,
+    "fixed_point_histograms": {
+      "same_order": {
+        "1": 576
+      },
+      "opposite_orders": {
+        "0": 128,
+        "1": 320,
+        "2": 128
+      }
+    },
+    "bad_regrouping_witness": {
+      "A": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "B": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "fixed_points": []
+    },
+    "wiring_edges": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "partition_labels": [
+      0,
+      1,
+      1,
+      0
+    ],
+    "original_event_graph_acyclic": true,
+    "quotient_edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ]
+  },
+  "quantum_memory_controls": {
+    "random_two_slot_memory_channels": 48,
+    "maximum_TP_residual": 1.6852586349326154e-15,
+    "maximum_comb_normalization_residual": 1.7651159995716187e-15,
+    "minimum_choi_eigenvalue": -9.079112734184599e-16,
+    "SWAP_channel": {
+      "TP_residual": 0.0,
+      "comb_residual": 2.449489742783178,
+      "later_input_to_earlier_output_TV": 1.0
+    }
+  },
+  "analytic_result": "For finite noiseless typed wiring with arbitrary block instruments, quotient acyclicity is equivalent to block-contiguous scheduling and universal normalization.",
+  "interpretation": "A persistent agent may require multiple ordered operation slots; coarse lab labels do not grant arbitrary cross-slot channels.",
+  "extra_inputs": [
+    "Given finite event graph and selected grouping",
+    "Two distinguishable states on relevant wires",
+    "Unrestricted or dense local replacement permissions",
+    "No unlisted communication or postselection"
+  ],
+  "not_derived": [
+    "Existence of a fundamental event graph",
+    "Metric time",
+    "Spacetime dimension or limiting speed",
+    "General characterization of indefinite-order processes"
+  ],
+  "next": "Check the literal identical-copy condition against a causally controlled order, retaining schedule records and event slots.",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "round": 243,
+  "date": "2026-09-22",
+  "literature": {
+    "family_and_extension": "https://arxiv.org/html/2003.11311",
+    "vector_measure_interface": "https://arxiv.org/html/1007.2725"
+  },
+  "family": "t0=1, t_k=i, all other t_j=0; ordinary labelled causal-set growth tree",
+  "finite_levels": [
+    {
+      "k": 1,
+      "N": 1,
+      "labelled_orders": 1,
+      "nonzero_cylinders": 1,
+      "amplitude_sum_error": 0.0,
+      "S_N_enumerated": 1.0,
+      "S_N_product": 1.0,
+      "diagonal_sum": 1.0
+    },
+    {
+      "k": 1,
+      "N": 2,
+      "labelled_orders": 2,
+      "nonzero_cylinders": 2,
+      "amplitude_sum_error": 0.0,
+      "S_N_enumerated": 1.4142135623730951,
+      "S_N_product": 1.414213562373095,
+      "diagonal_sum": 1.0
+    },
+    {
+      "k": 1,
+      "N": 3,
+      "labelled_orders": 7,
+      "nonzero_cylinders": 6,
+      "amplitude_sum_error": 2.482534153247273e-16,
+      "S_N_enumerated": 1.897366596101028,
+      "S_N_product": 1.8973665961010278,
+      "diagonal_sum": 0.6000000000000002
+    },
+    {
+      "k": 1,
+      "N": 4,
+      "labelled_orders": 40,
+      "nonzero_cylinders": 24,
+      "amplitude_sum_error": 1.3877787807814457e-17,
+      "S_N_enumerated": 2.4,
+      "S_N_product": 2.4,
+      "diagonal_sum": 0.24000000000000005
+    },
+    {
+      "k": 1,
+      "N": 5,
+      "labelled_orders": 357,
+      "nonzero_cylinders": 120,
+      "amplitude_sum_error": 1.1102230246251565e-16,
+      "S_N_enumerated": 2.9104275004359956,
+      "S_N_product": 2.9104275004359956,
+      "diagonal_sum": 0.07058823529411765
+    },
+    {
+      "k": 2,
+      "N": 1,
+      "labelled_orders": 1,
+      "nonzero_cylinders": 1,
+      "amplitude_sum_error": 0.0,
+      "S_N_enumerated": 1.0,
+      "S_N_product": 1.0,
+      "diagonal_sum": 1.0
+    },
+    {
+      "k": 2,
+      "N": 2,
+      "labelled_orders": 2,
+      "nonzero_cylinders": 1,
+      "amplitude_sum_error": 0.0,
+      "S_N_enumerated": 1.0,
+      "S_N_product": 1.0,
+      "diagonal_sum": 1.0
+    },
+    {
+      "k": 2,
+      "N": 3,
+      "labelled_orders": 7,
+      "nonzero_cylinders": 2,
+      "amplitude_sum_error": 0.0,
+      "S_N_enumerated": 1.4142135623730951,
+      "S_N_product": 1.414213562373095,
+      "diagonal_sum": 1.0
+    },
+    {
+      "k": 2,
+      "N": 4,
+      "labelled_orders": 40,
+      "nonzero_cylinders": 7,
+      "amplitude_sum_error": 5.551115123125783e-17,
+      "S_N_enumerated": 1.7888543819998317,
+      "S_N_product": 1.7888543819998317,
+      "diagonal_sum": 0.5
+    },
+    {
+      "k": 2,
+      "N": 5,
+      "labelled_orders": 357,
+      "nonzero_cylinders": 40,
+      "amplitude_sum_error": 2.220446049250313e-16,
+      "S_N_enumerated": 2.058600941862662,
+      "S_N_product": 2.058600941862662,
+      "diagonal_sum": 0.15405405405405403
+    }
+  ],
+  "finite_born_renormalization_counterexample": {
+    "N3_probabilities": [
+      0.5,
+      0.5
+    ],
+    "N4_marginal_on_N3": [
+      0.4,
+      0.6000000000000001
+    ],
+    "TV": 0.10000000000000003
+  },
+  "multiplicity_counterexample": {
+    "parent": "two-event antichain; k=1,t1=i",
+    "sum_all_labelled_children": [
+      1.0,
+      0.0
+    ],
+    "sum_one_child_per_isomorphism_class": [
+      0.6000000000000001,
+      -0.2
+    ]
+  },
+  "infinite_classification": {
+    "k1": "S_N=N/prod_{n=1}^{N-1}sqrt(1+1/n^2); N/e <= S_N <= N; no scalar countably additive extension.",
+    "k2": "Exact product has finite limit; cited bounded-variation theorem gives unique complex measure extension.",
+    "k2_certificate": {
+      "N": 10000,
+      "S_N": 3.325913201884076,
+      "S_infinity_lower": 3.325913201884076,
+      "S_infinity_upper": 3.326578517585375,
+      "log_tail_bound": 0.00020002000200020003,
+      "basis": "For k=2,tau=i: log q_n <= 1/binom(n,2); telescoping tail =2/(N-1)."
+    },
+    "numerically_proved_infinite_extension": false
+  },
+  "extra_inputs": [
+    "Specified complex CSG transition family and natural labelled event tree",
+    "Scalar rank-one decoherence functional",
+    "Full cylinder-generated sigma-algebra as the extension target"
+  ],
+  "not_claimed": [
+    "This scalar history model represents arbitrary quantum matter or generates spacetime",
+    "A quantum measure on every event is an ordinary outcome probability",
+    "Isomorphic labelled cylinder events may be deleted from the sum rule"
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "checks": {
+    "run": 9,
+    "failures": 0,
+    "errors": 0
+  }
+}

@@ -8,6 +8,34 @@
 
 > **第232轮完成（2026-09-22）**：[记录与组合一致性审计](research_cognition_physics/archive_231_/research_note_232.md)复算已知单次一致、无固定次序的过程，并给出两副本联合操作导致无解的具体反例。仅用局部翻转与交换，便出现“比特等于自身翻转”的矛盾。8项检查通过。下一步定义合法的端口合并，避免把主体的多个事件误当作一个事件；尚未推出时间。
 
+> **第233—234轮完成（2026-09-22）**：[事件类型](research_cognition_physics/archive_231_/research_note_233.md)与[相同副本调度](research_cognition_physics/archive_231_/research_note_234.md)表明：无条件合并还会误排除正常有序或随机调度协议。得到给定线路上的合并判据，并核验保留事件槽位和记忆即可正常独立重复。本次新增15项检查。下一步明确可操作的事件接口；“主体可融入”不能直接等同于“删除所有交付顺序后仍可任意联合控制”。
+
+> **第235—236轮完成（2026-09-22）**：按用户建议[优先对接因果集及QCH](research_cognition_physics/archive_231_/causal_set_bridge_review.md)。[235轮](research_cognition_physics/archive_231_/research_note_235.md)核对量子因果历史的联合扩张、可交换及合成条件；[236轮](research_cognition_physics/archive_231_/research_note_236.md)证明边界通道不足以决定基本事件计数与局部有限性。本次新增13项检查；下一步在明示事件与统计条件的分支中校准已有几何工具。
+
+> **第237—238轮完成（2026-09-22）**：[237轮](research_cognition_physics/archive_231_/research_note_237.md)复用Myrheim–Meyer与链计数，给出维数指标精确为2却不能嵌入目标二维因果序的反例；[238轮](research_cognition_physics/archive_231_/research_note_238.md)校准Glaser–Surya区间丰度、独立删减公式及有限辨识边界。本次新增14项检查。下一步核对现成事件生成模型及其概率律的选择条件；给定撒点只作工具校准，不称为时空生成。
+
+> **第239—240轮完成（2026-09-22）**：[239轮](research_cognition_physics/archive_231_/research_note_239.md)给出固定区域的二维随机取样与无偏出生增长之间的精确相容性障碍；[240轮](research_cognition_physics/archive_231_/research_note_240.md)应用CSG已有连续极限定理，得到整体均匀四点取样与平直二维基准的渐近概率差至少1／8。本次新增15项检查。停止重复调参该经典分支，下一步对接量子历史、记录与干涉；不将经典分支限制推广成全部时空生成的不可能性。
+
+> **第241—242轮完成（2026-09-22）**：[241轮](research_cognition_physics/archive_231_/research_note_241.md)接入已有强正量子历史框架，区分记录重置、后选择与恢复未知态的反馈；[242轮](research_cognition_physics/archive_231_/research_note_242.md)给出有限偏序的算子交换条件，使历史与自然编号无关，并排除按重复标签直接累加权重。本次新增16项检查。下一步复用已有复顺序增长模型，检验跨步相容与无限测度延拓；尚未选出自然时空动力学。
+
+> **第243—244轮完成（2026-09-22）**：[243轮](research_cognition_physics/archive_231_/research_note_243.md)复用已有复顺序增长，给出可延拓的t₂＝i分支及不可延拓对照；补充CSG不同编号柱事件必须保留求和重数。[244轮](research_cognition_physics/archive_231_/research_note_244.md)计算无限因果集最小元素总数的协变事件测度与尾界，其中μ(M＝3)约1.715779，说明可延拓仍不等于已有实验概率解释。本次新增18项最终检查；下一步研究稳定记录及高秩历史框架。
+
+> **第245—246轮完成（2026-09-22）**：[245轮](research_cognition_physics/archive_231_/research_note_245.md)应用已有记录条件，给出秩一历史不能保存两个不同精确投影记录的限制；[246轮](research_cognition_physics/archive_231_/research_note_246.md)构造可延拓的秩二记录对照，明示新增扇区与先验。对应经典模型的有限前缀误判率可解析求出；第三个最小元素几乎必然出现但平均等待发散。本次新增18项检查。下一步研究记录怎样在有限因果过程中实际生成和读取，尚未得到自然时空动力学。
+
+> **第247—248轮完成（2026-09-22）**：[247轮](research_cognition_physics/archive_231_/research_note_247.md)给出无需预装未来类别的当前前缀出生规则及可读取记录，精确实现既有经典对照；[248轮](research_cognition_physics/archive_231_/research_note_248.md)核验穷尽仪器条件并复算已有等距增长，说明等距算子仍不足以把相干历史测度直接解释为实验概率。本次新增18项检查；下一步从可操作粗粒化研究记录与未记录过程的干涉共存，未宣称得到自然时空动力学。
+
+> **第249—250轮完成（2026-09-22）**：[249轮](research_cognition_physics/archive_231_/research_note_249.md)复用图态工具，在同一指定增长接口中实现可读几何记录与未记录过程的量子干涉；[250轮](research_cognition_physics/archive_231_/research_note_250.md)证明共享奇偶关系记录仍能保留每个关系分支内的未知编码量子比特，并给出复用记录载体后需联合读取的反例。本次新增21项检查；下一步检验量子关系对后续出生的反馈，当前尚未让量子态改变几何概率。
+
+> **第251—252轮完成（2026-09-22）**：[251轮](research_cognition_physics/archive_231_/research_note_251.md)构造状态依赖的完整出生仪器，但证明该候选几何统计仍等价于经典混合；[252轮](research_cognition_physics/archive_231_/research_note_252.md)在共同未来实现保留旧关系的相位敏感链／叉反馈，精确计算内部扰动，并核验180种合法交错顺序。本次新增22项检查；下一步由预设图案推进到逐事件局域规则，尚未得到自主时空动力学。
+
+> **第253—254轮完成（2026-09-22）**：[253轮](research_cognition_physics/archive_231_/research_note_253.md)给出不预装完整图案的逐事件端口分支规则，区分局部算子菱形与全局调度权重；[254轮](research_cognition_physics/archive_231_/research_note_254.md)证明完整局部片段的记录概率与额外调度无关，并保持跨片段一致，核验36种森林、1624种合法排列。本次新增19项检查；下一步加入不同支系的共同交互，当前尚未得到物理时空或引力。
+
+> **第255—256轮完成（2026-09-22）**：[255轮](research_cognition_physics/archive_231_/research_note_255.md)复用双向选择匹配，构造无共享端口争用、完整且调度一致的共同量子事件；[256轮](research_cognition_physics/archive_231_/research_note_256.md)将已有Bell关联转入交互对象记录，η＝0.9时CHSH值2.2910，全部试次保留。本次新增20项检查；下一步研究候选相遇关系如何从可访问历史产生。候选通信图和量子源仍为输入，尚未推导时空。按用户要求，本轮起取消文章图像检验。
+
+> **第257—258轮完成（2026-09-22）**：[257轮](research_cognition_physics/archive_231_/research_note_257.md)证明并穷举核对：联系人介绍只扩展带证据的路由，不新建基本通道，也不降低实际转发距离；[258轮](research_cognition_physics/archive_231_/research_note_258.md)复用局部同步器，取消全网执行屏障，保持共同事件的量子仪器与完整记录概率。本次新增18项检查；下一步从连通种子的局部分裂检验基本邻接及环路约束，未宣称导出物理时间或空间。
+
+> **第259—260轮完成（2026-09-22）**：[259轮](research_cognition_physics/archive_231_/research_note_259.md)证明边界保持的局部二分从单点只产生树，得到环路和外部端口预算；[260轮](research_cognition_physics/archive_231_/research_note_260.md)复用Fisher三角替换构造有界度的量子环路出生，明示辅助比特、通道创建及扰动，一次全图修饰满足距离界d≤d′≤2d＋1。本次新增18项检查；下一步对接已有Fisher重复替换的尺度结果，尚未推导物理维数或引力。
+
 > **核心定理**：
 > - **定理1（222轮）**：完整动作的本地校准可迁移（P）⟺ 局部层析（L）
 > - **定理2**：F+U+C+P ⟹ 复矩阵状态锥（引用 Barnum–Ududec–van de Wetering 2023 主分类定理）

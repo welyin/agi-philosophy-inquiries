@@ -1,0 +1,36 @@
+{
+  "round": 258,
+  "eta": 0.6,
+  "path4": {
+    "two_epoch_histories": 16,
+    "sampled_message_schedules": 512,
+    "operator_schedule_max_error": 2.7755575615628914e-17,
+    "completeness_max_error": 2.220446049250313e-16,
+    "second_epoch_prefix_max_error": 1.1102230246251565e-16,
+    "joint_record_total_variation_gate_vs_identity": 0.25439999999999985,
+    "proposal_delivery_messages_per_epoch": 6,
+    "completion_delivery_messages_per_epoch": 6,
+    "both_epoch_message_deliveries": 24
+  },
+  "two_node_two_epoch_exact_schedule_count": {
+    "events": 22,
+    "linear_extensions": 19440,
+    "distinct_prefix_masks": 49
+  },
+  "no_global_barrier_witness": {
+    "path_vertices": 5,
+    "node0_epoch1_proposal_index": 20,
+    "node4_epoch0_proposal_index": 29,
+    "node0_can_advance_before_node4_starts": true
+  },
+  "scope": "A finite local synchronizer implementation preserves full quantum instruments on a fixed supplied graph. No global barrier or wall clock; logical epochs, reliable eventual delivery, storage and pair-gate capabilities remain. No autonomous adjacency or physical time is derived.",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "checks": {
+    "run": 10,
+    "failures": 0,
+    "errors": 0
+  }
+}

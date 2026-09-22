@@ -1,0 +1,75 @@
+{
+  "round": 251,
+  "date": "2026-09-22",
+  "sector_parameters": [
+    "1/5",
+    "4/5"
+  ],
+  "finite_growth": [
+    {
+      "N": 2,
+      "geometries": 1,
+      "instrument_completeness_error": 0.0,
+      "third_minimum_probabilities_by_parity": [
+        0.0,
+        0.0
+      ],
+      "decoded_cross_parity_coherence": 1.0,
+      "closed_coherence_formula": 1.0
+    },
+    {
+      "N": 3,
+      "geometries": 2,
+      "instrument_completeness_error": 3.3306690738754696e-16,
+      "third_minimum_probabilities_by_parity": [
+        0.4,
+        0.1
+      ],
+      "decoded_cross_parity_coherence": 0.9348469228349534,
+      "closed_coherence_formula": 0.9348469228349534
+    },
+    {
+      "N": 4,
+      "geometries": 6,
+      "instrument_completeness_error": 5.551115123125783e-16,
+      "third_minimum_probabilities_by_parity": [
+        0.5333333333333333,
+        0.13333333333333333
+      ],
+      "decoded_cross_parity_coherence": 0.9026261342779638,
+      "closed_coherence_formula": 0.9026261342779638
+    },
+    {
+      "N": 5,
+      "geometries": 29,
+      "instrument_completeness_error": 8.881784197001252e-16,
+      "third_minimum_probabilities_by_parity": [
+        0.6,
+        0.15
+      ],
+      "decoded_cross_parity_coherence": 0.88309518948453,
+      "closed_coherence_formula": 0.8830951894845301
+    }
+  ],
+  "N3_new_minimum_probabilities": [
+    0.4,
+    0.1
+  ],
+  "geometry_marginal": "P_rho(c)=w_plus P_(1/5)(c)+w_minus P_(4/5)(c)=P_p_eff(c)",
+  "infinite_decoded_coherence_limit": 0.8,
+  "limits": [
+    "Marked initial seed and global growth controller are inputs",
+    "Geometry statistics are exactly a classical mixture; no nonclassical geometry witness",
+    "State-dependent birth of a new minimum is not a local causal implementation",
+    "Preserved information within a parity sector requires access to the conditional graph decoder"
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "checks": {
+    "run": 10,
+    "failures": 0,
+    "errors": 0
+  }
+}

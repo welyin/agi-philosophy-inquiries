@@ -1,0 +1,125 @@
+{
+  "round": 246,
+  "date": "2026-09-22",
+  "model": "Changed rank-two direct sum of normalized restrictions of the t2=i complex measure to total minima M=2 and M=3",
+  "prior_p": 0.5,
+  "finite_enumeration": [
+    {
+      "N": 2,
+      "labelled_cylinders": 2,
+      "conditional_normalizations": [
+        1.0,
+        1.0
+      ],
+      "rank_D": 1,
+      "D_Omega_Omega": 1.0000000000000002,
+      "sum_diagonal_D": 1.0000000000000002,
+      "classical_D_rank": 1,
+      "classical_Bayes_error": 0.5,
+      "exact_Bayes_error": 0.5,
+      "P_M3_component_still_two_minima": 1.0
+    },
+    {
+      "N": 3,
+      "labelled_cylinders": 7,
+      "conditional_normalizations": [
+        1.0,
+        1.0
+      ],
+      "rank_D": 2,
+      "D_Omega_Omega": 1.0000000000000002,
+      "sum_diagonal_D": 0.7500000000000001,
+      "classical_D_rank": 2,
+      "classical_Bayes_error": 0.25,
+      "exact_Bayes_error": 0.25,
+      "P_M3_component_still_two_minima": 0.5
+    },
+    {
+      "N": 4,
+      "labelled_cylinders": 40,
+      "conditional_normalizations": [
+        1.0,
+        1.0
+      ],
+      "rank_D": 2,
+      "D_Omega_Omega": 1.0,
+      "sum_diagonal_D": 0.36419753086419754,
+      "classical_D_rank": 6,
+      "classical_Bayes_error": 0.16666666666666666,
+      "exact_Bayes_error": 0.16666666666666666,
+      "P_M3_component_still_two_minima": 0.3333333333333333
+    },
+    {
+      "N": 5,
+      "labelled_cylinders": 357,
+      "conditional_normalizations": [
+        0.9999999999999998,
+        0.9999999999999998
+      ],
+      "rank_D": 2,
+      "D_Omega_Omega": 1.0,
+      "sum_diagonal_D": 0.12249228395061727,
+      "classical_D_rank": 29,
+      "classical_Bayes_error": 0.12499999999999997,
+      "exact_Bayes_error": 0.125,
+      "P_M3_component_still_two_minima": 0.24999999999999997
+    }
+  ],
+  "reference_operator_N4": {
+    "reference_probability_sum": 1.0,
+    "normalization_on_constant_function": 1.0,
+    "trace_not_required_to_be_one": 11.456790123456791,
+    "kernel_reconstruction_error": 0.0
+  },
+  "exact_macro_records": {
+    "D_E2_E3": 0.0,
+    "mu_E2": 0.5,
+    "mu_E3": 0.5,
+    "record_subspaces": 2,
+    "sectors_persist_under_measure_refinement": true
+  },
+  "third_minimum_wait": {
+    "conditional_hazard_before_arrival": "1/n at transition n -> n+1",
+    "P_still_two_at_N_given_E3": "1/(N-1)",
+    "P_third_minimum_born_at_n_plus_1": "1/(n*(n-1)), n>=2",
+    "finite_prefix_classical_Bayes_error": "min(p,(1-p)/(N-1))",
+    "mean_birth_index": "infinite, even though arrival has probability one"
+  },
+  "N3_hazards": [
+    [
+      3,
+      3,
+      0.0
+    ],
+    [
+      2,
+      2,
+      0.0
+    ],
+    [
+      3,
+      2,
+      0.3333333333333333
+    ]
+  ],
+  "extra_inputs": [
+    "Choose E2 and E3; suppress other infinite histories",
+    "Choose arbitrary sector prior p and orthogonalize sectors",
+    "Generalized projector records, not a derived local readable register"
+  ],
+  "limits": [
+    "D differs from the original scalar functional",
+    "Positive conditional amplitudes do not make their rank-one kernels classical",
+    "Bayes error concerns the explicitly defined classical comparator, not a Born rule for coherent prefixes",
+    "Consistency is not by itself Kraus completeness, local records or quantum gravity"
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "checks": {
+    "run": 10,
+    "failures": 0,
+    "errors": 0
+  }
+}

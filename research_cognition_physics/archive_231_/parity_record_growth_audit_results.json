@@ -1,0 +1,87 @@
+{
+  "round": 250,
+  "date": "2026-09-22",
+  "model": "Two-root cover graph with k common children; specified CZ interaction",
+  "recorded_observable": "J=Z_0 Z_1 (parity)",
+  "record_isometry": "V_k=P_plus tensor |+>^k + P_minus tensor |->^k",
+  "parent_channel_after_children_ignored": "rho -> P_plus rho P_plus + P_minus rho P_minus",
+  "quantum_capacity_within_each_record_sector": "One arbitrary encoded qubit, including correlations with a reference",
+  "results": [
+    {
+      "children": 1,
+      "geometry_probability_exact": "3/4",
+      "parity_probabilities": [
+        0.5,
+        0.5
+      ],
+      "single_child_parity_trace_distance": 0.9999999999999996,
+      "all_children_individual_root_bit_trace_distance": 2.465190328815662e-32,
+      "logical_XX_expectation_after_ignoring_children": 0.9999999999999998,
+      "logical_XX_after_individual_Z_measurement": 0.0,
+      "normalization": 0.9999999999999999
+    },
+    {
+      "children": 2,
+      "geometry_probability_exact": "2/9",
+      "parity_probabilities": [
+        0.5,
+        0.5
+      ],
+      "single_child_parity_trace_distance": 0.9999999999999996,
+      "all_children_individual_root_bit_trace_distance": 2.3615800235104444e-17,
+      "logical_XX_expectation_after_ignoring_children": 0.9999999999999996,
+      "logical_XX_after_individual_Z_measurement": 0.0,
+      "normalization": 0.9999999999999996
+    },
+    {
+      "children": 3,
+      "geometry_probability_exact": "5/144",
+      "parity_probabilities": [
+        0.5,
+        0.5
+      ],
+      "single_child_parity_trace_distance": 0.9999999999999993,
+      "all_children_individual_root_bit_trace_distance": 5.546678239835239e-32,
+      "logical_XX_expectation_after_ignoring_children": 0.9999999999999993,
+      "logical_XX_after_individual_Z_measurement": 0.0,
+      "normalization": 0.9999999999999996
+    },
+    {
+      "children": 4,
+      "geometry_probability_exact": "1/300",
+      "parity_probabilities": [
+        0.5,
+        0.5
+      ],
+      "single_child_parity_trace_distance": 0.9999999999999996,
+      "all_children_individual_root_bit_trace_distance": 1.409159240970842e-17,
+      "logical_XX_expectation_after_ignoring_children": 0.9999999999999997,
+      "logical_XX_after_individual_Z_measurement": 0.0,
+      "normalization": 0.9999999999999993
+    }
+  ],
+  "record_reuse_counterexample": {
+    "geometry_conditional_probability": "16/27 after the three-event star",
+    "old_child_parity_trace_distance_after_new_CZ": 1.1807900117552222e-17,
+    "joint_Xold_Znew_expectations": [
+      0.9999999999999996,
+      -0.9999999999999996
+    ]
+  },
+  "limits": [
+    "Conditioned graph family is not assumed typical; its probability is reported",
+    "Blank children, gates and persistent access to root memories are additional resources",
+    "Fixed-fragment records persist only while future interactions protect that fragment or its readout",
+    "Geometry probabilities still do not respond to matter states",
+    "No thermodynamic cost, QCH locality or gravitational dynamics is derived"
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "checks": {
+    "run": 11,
+    "failures": 0,
+    "errors": 0
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "round": 240,
+  "date": "2026-09-22",
+  "family": "Regular CSG: t0=1, finite nonnegative t_k, lambda transition probabilities",
+  "question": "Can regular CSG retain exact two-order support while allowing events to join independent past branches?",
+  "conditional_theorem": "All finite outputs have order dimension <=2 with probability one iff t_k=0 for every k>=2.",
+  "padded_standard_example_witnesses": [
+    {
+      "positive_coupling_index": 2,
+      "events": 6,
+      "t_k": "2",
+      "labeled_history_probability": "1/5525",
+      "formula_probability": "1/5525",
+      "induced_S3_vertices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "positive_coupling_index": 3,
+      "events": 7,
+      "t_k": "2",
+      "labeled_history_probability": "1/71487",
+      "formula_probability": "1/71487",
+      "induced_S3_vertices": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "positive_coupling_index": 4,
+      "events": 8,
+      "t_k": "2",
+      "labeled_history_probability": "1/969696",
+      "formula_probability": "1/969696",
+      "induced_S3_vertices": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "positive_coupling_index": 5,
+      "events": 9,
+      "t_k": "2",
+      "labeled_history_probability": "1/13794000",
+      "formula_probability": "1/13794000",
+      "induced_S3_vertices": [
+        0,
+        1,
+        2,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "positive_coupling_index": 6,
+      "events": 10,
+      "t_k": "2",
+      "labeled_history_probability": "1/206177400",
+      "formula_probability": "1/206177400",
+      "induced_S3_vertices": [
+        0,
+        1,
+        2,
+        7,
+        8,
+        9
+      ]
+    }
+  ],
+  "forest_support_check": {
+    "all_naturally_labeled_N5_orders": 357,
+    "positive_weight_forest_orders": 120,
+    "all_positive_outputs_have_two_order_realizer": true
+  },
+  "forest_expectations_a1": [
+    {
+      "N": 16,
+      "expected_C2": 25.472392884892884,
+      "expected_r": 0.2122699407074407,
+      "target_flat_diamond_expected_r": 0.5
+    },
+    {
+      "N": 64,
+      "expected_C2": 180.352908740875,
+      "expected_r": 0.08946076822464037,
+      "target_flat_diamond_expected_r": 0.5
+    },
+    {
+      "N": 256,
+      "expected_C2": 1061.956655444041,
+      "expected_r": 0.03253543674767283,
+      "target_flat_diamond_expected_r": 0.5
+    },
+    {
+      "N": 1024,
+      "expected_C2": 5648.905064085087,
+      "expected_r": 0.010784963541829116,
+      "target_flat_diamond_expected_r": 0.5
+    }
+  ],
+  "existing_continuum_theorem_bridge": {
+    "external_theorem": "Brightwell-Georgiou (2010), Theorems 1.5-1.6: uniform finite-suborder sampling of CSG sequences",
+    "source": "https://nicholasgeorgiou.webspace.durham.ac.uk/wp-content/uploads/sites/199/2021/04/contlim.pdf",
+    "theorem_numerically_proved_here": false,
+    "target_2_plus_2_probability": "1/24",
+    "target_3_plus_1_probability": "1/12",
+    "target_forbidden_union_probability": "1/8",
+    "CSG_uniform_four_sample_forbidden_union_limit": "0",
+    "liminf_four_sample_TV_lower_bound": "1/8",
+    "scope": "Uniform induced four-subsets of the whole growing causet; selected rare intervals need separate analysis."
+  },
+  "small_join_probability": {
+    "t0": "1",
+    "t1": "1",
+    "t2": "1",
+    "CSG_three_event_join": "1/8",
+    "target_flat_diamond_join": "1/6"
+  },
+  "extra_inputs": [
+    "Classical sequential growth formula and its causality/covariance conditions",
+    "Exact two-order support at every finite stage, stronger than a continuum limit"
+  ],
+  "conclusion": "Exact two-order support leaves only rooted forests in this family; their relation fraction vanishes in probability for any fixed finite t1.",
+  "not_claimed": [
+    "CSG cannot have any continuum approximation",
+    "A nonzero finite forbidden-order probability rules out coarse-grained spacetime",
+    "Cognitive composability forces classical Bell causality"
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}

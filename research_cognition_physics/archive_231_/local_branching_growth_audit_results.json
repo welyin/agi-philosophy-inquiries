@@ -1,0 +1,70 @@
+{
+  "round": 253,
+  "date": "2026-09-22",
+  "rule": "+ consumes one port and emits carrier plus fresh blank; - emits carrier only",
+  "local_setting": "X on even local depth, Z on odd local depth; eta=0.6",
+  "diamonds": [
+    {
+      "outcomes": [
+        1,
+        1
+      ],
+      "output_ports": 4,
+      "raw_operator_diamond_error": 0.0,
+      "uniform_schedule_forward_factor": "1/6",
+      "uniform_schedule_reverse_factor": "1/6"
+    },
+    {
+      "outcomes": [
+        1,
+        -1
+      ],
+      "output_ports": 3,
+      "raw_operator_diamond_error": 0.0,
+      "uniform_schedule_forward_factor": "1/6",
+      "uniform_schedule_reverse_factor": "1/4"
+    },
+    {
+      "outcomes": [
+        -1,
+        1
+      ],
+      "output_ports": 3,
+      "raw_operator_diamond_error": 0.0,
+      "uniform_schedule_forward_factor": "1/4",
+      "uniform_schedule_reverse_factor": "1/6"
+    },
+    {
+      "outcomes": [
+        -1,
+        -1
+      ],
+      "output_ports": 2,
+      "raw_operator_diamond_error": 0.0,
+      "uniform_schedule_forward_factor": "1/4",
+      "uniform_schedule_reverse_factor": "1/4"
+    }
+  ],
+  "mixed_transcript_probabilities_for_X_plus_inputs": [
+    "2/75",
+    "1/25"
+  ],
+  "frontier_dependent_strength_raw_diamond_error": 0.02532758017531222,
+  "coupling_constraint": "For eta in [0,1), eta(m)=eta(m+1) is necessary for the mixed raw diamond in the shared strength ansatz",
+  "resources": "One fresh logical qubit for each split; classical record sector copied, unknown logical state not copied",
+  "limits": [
+    "Marked roots and directed port genealogy are inputs",
+    "Locality is disjoint tensor support, not emergent spatial distance",
+    "One-parent rule generates a forest; no merging, interactions between branches or spacetime limit",
+    "Uniform scheduling is an additional stochastic process, not passive relabelling"
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "checks": {
+    "run": 9,
+    "failures": 0,
+    "errors": 0
+  }
+}

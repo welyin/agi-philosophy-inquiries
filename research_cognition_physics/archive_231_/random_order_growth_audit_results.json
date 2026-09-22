@@ -1,0 +1,104 @@
+{
+  "round": 239,
+  "date": "2026-09-22",
+  "question": "Can fixed-N uniform 2-order laws be exact marginals of one internally temporal, order-invariant growth?",
+  "fixed_N_law": "Uniform permutation pushforward; not uniform unlabeled posets",
+  "N3_target_shapes": {
+    "chain": "1/6",
+    "split": "1/6",
+    "join": "1/6",
+    "chain_plus_isolate": "1/3",
+    "antichain": "1/6"
+  },
+  "insertion_covariance_witness": [
+    {
+      "edge": [
+        0,
+        1
+      ],
+      "probability": "1/6",
+      "symmetrized_probability": "1/9"
+    },
+    {
+      "edge": [
+        0,
+        2
+      ],
+      "probability": "0",
+      "symmetrized_probability": "1/9"
+    },
+    {
+      "edge": [
+        1,
+        2
+      ],
+      "probability": "1/6",
+      "symmetrized_probability": "1/9"
+    }
+  ],
+  "prefix_obstruction": {
+    "target_N2_chain_probability": "1/2",
+    "N3_covariant_prefix_chain_probability": "4/9",
+    "exact_gap": "1/18",
+    "sum_of_TV_errors_lower_bound": "1/18",
+    "max_of_TV_errors_lower_bound": "1/36"
+  },
+  "prefix_and_random_deletion_checks": [
+    {
+      "N": 3,
+      "prefix_TV": "1/18",
+      "random_deletion_TV": "0"
+    },
+    {
+      "N": 4,
+      "prefix_TV": "17/240",
+      "random_deletion_TV": "0"
+    },
+    {
+      "N": 5,
+      "prefix_TV": "270539/3326400",
+      "random_deletion_TV": "0"
+    }
+  ],
+  "quantum_sampler_certificates": [
+    {
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "completeness_error": 0.0,
+      "unknown_state_and_reference_error": 1.1102230246251565e-16,
+      "outcome_probability_error": 1.1102230246251565e-16
+    },
+    {
+      "weights": [
+        0.2,
+        0.3,
+        0.5
+      ],
+      "completeness_error": 0.0,
+      "unknown_state_and_reference_error": 0.0,
+      "outcome_probability_error": 1.1102230246251565e-16
+    }
+  ],
+  "extra_inputs": [
+    "Two independent total orders and their uniform measure",
+    "Order-invariance and internal temporality, if requiring physical sequential growth"
+  ],
+  "conclusion": "Exact target marginals, order-invariance and prefix consistency already conflict between N=2 and N=3.",
+  "not_claimed": [
+    "All two-dimensional spacetime growth is impossible",
+    "Quantum amplitudes or histories must obey this classical probability model",
+    "The old cognition contract forces order-invariance"
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "checks": {
+    "run": 7,
+    "failures": 0,
+    "errors": 0
+  }
+}

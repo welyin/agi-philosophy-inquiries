@@ -1,0 +1,125 @@
+{
+  "round": 244,
+  "date": "2026-09-22",
+  "model": "Extendible scalar complex sequential growth: t0=1,t2=i",
+  "observable": "Total number M of minimal elements in the infinite causet; invariant under natural relabelling",
+  "finite_enumeration": [
+    {
+      "N": 2,
+      "max_coefficient_difference": 0.0
+    },
+    {
+      "N": 3,
+      "max_coefficient_difference": 0.0
+    },
+    {
+      "N": 4,
+      "max_coefficient_difference": 0.0
+    },
+    {
+      "N": 5,
+      "max_coefficient_difference": 4.577566798522237e-16
+    }
+  ],
+  "N_cutoff": 50000,
+  "low_coefficients": [
+    {
+      "minimal_events": 2,
+      "amplitude_real": -0.1307349777415728,
+      "amplitude_imag": 0.6417579221602838,
+      "quantum_measure_estimate": 0.42894486506057444,
+      "amplitude_absolute_tail_bound": 0.00026613160410952994,
+      "quantum_measure_absolute_tail_bound": 0.0003486706664433105
+    },
+    {
+      "minimal_events": 3,
+      "amplitude_real": 1.28349017349026,
+      "amplitude_imag": 0.2614647259794523,
+      "quantum_measure_estimate": 1.7157108283775675,
+      "amplitude_absolute_tail_bound": 0.00026613160410952994,
+      "quantum_measure_absolute_tail_bound": 0.0006972565625834112
+    },
+    {
+      "minimal_events": 4,
+      "amplitude_real": 0.1856676885667463,
+      "amplitude_imag": -0.9114141608103569,
+      "quantum_measure_estimate": 0.8651482631033653,
+      "amplitude_absolute_tail_bound": 0.00026613160410952994,
+      "quantum_measure_absolute_tail_bound": 0.0004951466482952354
+    },
+    {
+      "minimal_events": 5,
+      "amplitude_real": -0.33469317614055066,
+      "amplitude_imag": -0.06818163581946711,
+      "quantum_measure_estimate": 0.11666825761806811,
+      "amplitude_absolute_tail_bound": 0.00026613160410952994,
+      "quantum_measure_absolute_tail_bound": 0.00018187456192700143
+    },
+    {
+      "minimal_events": 6,
+      "amplitude_real": -0.01534205239562902,
+      "amplitude_imag": 0.07531177835633135,
+      "quantum_measure_estimate": 0.005907242530903405,
+      "amplitude_absolute_tail_bound": 0.00026613160410952994,
+      "quantum_measure_absolute_tail_bound": 4.097982459488645e-05
+    },
+    {
+      "minimal_events": 7,
+      "amplitude_real": 0.011461446553261392,
+      "amplitude_imag": 0.0023348554155481404,
+      "quantum_measure_estimate": 0.00013681630690478192,
+      "amplitude_absolute_tail_bound": 0.00026613160410952994,
+      "quantum_measure_absolute_tail_bound": 6.296629096626807e-06
+    },
+    {
+      "minimal_events": 8,
+      "amplitude_real": 0.00025648354153172203,
+      "amplitude_imag": -0.0012590383042484676,
+      "quantum_measure_estimate": 1.6509612586415119e-06,
+      "amplitude_absolute_tail_bound": 0.00026613160410952994,
+      "quantum_measure_absolute_tail_bound": 7.547296285874087e-07
+    }
+  ],
+  "exactly_two_minima": {
+    "N": 1000,
+    "quantum_measure_lower": 0.4289448650586546,
+    "quantum_measure_upper": 0.4289448656340264,
+    "log_tail_bound": 1.3413654403208984e-09,
+    "ordinary_outcome_probability": false
+  },
+  "exactly_three_minima": {
+    "amplitude_ratio_to_M2": "-2i, exactly in the infinite extension",
+    "quantum_measure_lower": 1.7157794602346184,
+    "quantum_measure_upper": 1.7157794625361056,
+    "ordinary_outcome_probability": false
+  },
+  "covariant_nonadditivity": {
+    "mu_M2_union_M4_estimate": 0.07573208976150726,
+    "mu_M2_plus_mu_M4_estimate": 1.2940931281639398,
+    "interference_estimate": -1.2183610384024324,
+    "interference_tail_error_bound": 0.000843817314738546
+  },
+  "analytic_support": {
+    "M1_amplitude": "0: the N=2 chain has zero cylinder amplitude",
+    "M_infinite_total_variation": "0: bounded by 2*S_infinity/(N-1) for arbitrarily large N",
+    "M_ge_2_and_finite": "full complex measure; not an assertion of classical almost-sure sampling"
+  },
+  "extra_inputs": [
+    "The particular t2=i coupling branch selected as a worked example",
+    "The infinite scalar complex-measure extension established in round 243"
+  ],
+  "not_claimed": [
+    "Squared coefficients are mutually exclusive outcome probabilities",
+    "This toy model selects two physical observers, dimensions, or a realistic cosmology",
+    "Nonzero quantum measure supplies a complete interpretation or a measurement instrument"
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "checks": {
+    "run": 9,
+    "failures": 0,
+    "errors": 0
+  }
+}

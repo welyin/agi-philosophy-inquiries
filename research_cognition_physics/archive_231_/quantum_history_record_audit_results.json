@@ -1,0 +1,121 @@
+{
+  "round": 241,
+  "date": "2026-09-22",
+  "convention": "D[h,k]=Tr(C_h^dagger C_k rho); histories ordered as (path,final port)",
+  "histories": [
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "unrecorded_D_real": [
+    [
+      0.2499999999999999,
+      0.2499999999999999,
+      0.0,
+      0.0
+    ],
+    [
+      0.2499999999999999,
+      0.2499999999999999,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.2499999999999999,
+      -0.2499999999999999
+    ],
+    [
+      0.0,
+      0.0,
+      -0.2499999999999999,
+      0.2499999999999999
+    ]
+  ],
+  "recorded_D_real": [
+    [
+      0.2499999999999999,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.2499999999999999,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.2499999999999999,
+      -0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.2499999999999999
+    ]
+  ],
+  "history_hilbert_ranks": {
+    "unrecorded": 2,
+    "orthogonal_marker": 4
+  },
+  "normalization": {
+    "unrecorded": 0.9999999999999996,
+    "recorded": 0.9999999999999996,
+    "bare_Kraus_Gram_counterexample": 1.9999999999999991
+  },
+  "unrecorded_nonadditivity": {
+    "port0_union": 0.9999999999999996,
+    "port0_diagonal_sum": 0.4999999999999998,
+    "three_history_subset_measure": 1.2499999999999996,
+    "all_256_disjoint_triples_I3_error": 2.220446049250313e-16
+  },
+  "final_port0_probabilities": {
+    "no_marker": 0.9999999999999997,
+    "orthogonal_marker_ignored": 0.49999999999999983,
+    "marker_reset_only": 0.49999999999999983,
+    "eraser_conditioned_plus": 0.9999999999999999,
+    "eraser_plus_probability": 0.49999999999999983,
+    "eraser_with_feedback": 0.9999999999999996
+  },
+  "unknown_state_reference_recovery": {
+    "coherent_marker_feedback_trace_distance": 5.551115123125783e-17,
+    "unavailable_extra_record_trace_distance": 0.4999999999999999
+  },
+  "extra_inputs": [
+    "Given finite interferometer and projective history decomposition",
+    "Specified marker coupling, accessibility and feedback"
+  ],
+  "conclusion": "Strongly positive histories are available conditionally; CP instruments alone do not fix coherent history weights or record treatment.",
+  "not_claimed": [
+    "A natural event-growth measure has been selected",
+    "Ignoring or resetting a record locally restores interference",
+    "All coherent erasure requires postselection: feedback can be deterministic when records remain accessible"
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}

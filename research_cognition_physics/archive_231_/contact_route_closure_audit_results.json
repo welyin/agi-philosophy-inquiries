@@ -1,0 +1,65 @@
+{
+  "round": 257,
+  "exhaustive": {
+    "graphs": 1024,
+    "depths_per_graph": 4,
+    "graph_depth_cases": 4096,
+    "all_support_cost_and_component_checks_passed": true
+  },
+  "nine_vertex_path": [
+    {
+      "introduction_depth": 0,
+      "overlay_edges": 8,
+      "unweighted_overlay_diameter": 8,
+      "primitive_cost_endpoint_distance": 8,
+      "endpoint_contact_known": false,
+      "endpoint_route": []
+    },
+    {
+      "introduction_depth": 1,
+      "overlay_edges": 15,
+      "unweighted_overlay_diameter": 4,
+      "primitive_cost_endpoint_distance": 8,
+      "endpoint_contact_known": false,
+      "endpoint_route": []
+    },
+    {
+      "introduction_depth": 2,
+      "overlay_edges": 26,
+      "unweighted_overlay_diameter": 2,
+      "primitive_cost_endpoint_distance": 8,
+      "endpoint_contact_known": false,
+      "endpoint_route": []
+    },
+    {
+      "introduction_depth": 3,
+      "overlay_edges": 36,
+      "unweighted_overlay_diameter": 1,
+      "primitive_cost_endpoint_distance": 8,
+      "endpoint_contact_known": true,
+      "endpoint_route": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    }
+  ],
+  "primitive_communication_edges_created": 0,
+  "primitive_quantum_gates_created": 0,
+  "scope": "Classical introductions over supplied reliable primitive channels create certified overlay routes only. Connected components and primitive-hop distances are unchanged. Shared history or entanglement alone supplies neither signaling channels nor entangling gates.",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}

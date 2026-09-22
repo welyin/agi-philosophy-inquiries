@@ -1,0 +1,110 @@
+{
+  "round": 252,
+  "date": "2026-09-22",
+  "record_algebra": "S=Z_A Z_B; persistent memory at current boundary",
+  "feedback_observables": [
+    "X_L=X_A X_B",
+    "Z_L=Z_A"
+  ],
+  "instrument": "K_g(Q)=sqrt((I+g eta Q)/2), fixed eta and setting Q",
+  "motif_dictionary": {
+    "+1": "U precedes incomparable V,W",
+    "-1": "U precedes V precedes W"
+  },
+  "tradeoff_and_order_checks": [
+    {
+      "eta": 0.0,
+      "fork_probability_logical_X_plus": 0.5,
+      "fork_probability_logical_X_minus": 0.5,
+      "fork_probability_dephased_state": 0.5000000000000001,
+      "retained_logical_Z": 1.0000000000000002,
+      "predicted_retained_logical_Z": 1.0,
+      "encoded_reference_entanglement_fidelity": 1.0,
+      "maximum_order_TV": 0.0
+    },
+    {
+      "eta": 0.2,
+      "fork_probability_logical_X_plus": 0.6,
+      "fork_probability_logical_X_minus": 0.4,
+      "fork_probability_dephased_state": 0.5000000000000001,
+      "retained_logical_Z": 0.9797958971132714,
+      "predicted_retained_logical_Z": 0.9797958971132712,
+      "encoded_reference_entanglement_fidelity": 0.9898979485566356,
+      "maximum_order_TV": 0.0020204102886728637
+    },
+    {
+      "eta": 0.6,
+      "fork_probability_logical_X_plus": 0.7999999999999998,
+      "fork_probability_logical_X_minus": 0.19999999999999996,
+      "fork_probability_dephased_state": 0.5,
+      "retained_logical_Z": 0.8,
+      "predicted_retained_logical_Z": 0.8,
+      "encoded_reference_entanglement_fidelity": 0.9,
+      "maximum_order_TV": 0.059999999999999984
+    },
+    {
+      "eta": 1.0,
+      "fork_probability_logical_X_plus": 0.9999999999999998,
+      "fork_probability_logical_X_minus": 0.0,
+      "fork_probability_dephased_state": 0.5,
+      "retained_logical_Z": 0.0,
+      "predicted_retained_logical_Z": 0.0,
+      "encoded_reference_entanglement_fidelity": 0.5,
+      "maximum_order_TV": 0.5
+    }
+  ],
+  "two_disjoint_blocks": [
+    {
+      "outcomes": [
+        1,
+        1
+      ],
+      "legal_birth_orders": 80,
+      "branch_operator_order_error": 0.0,
+      "probability_for_encoded_Bell_input": 0.3399999999999999
+    },
+    {
+      "outcomes": [
+        1,
+        -1
+      ],
+      "legal_birth_orders": 40,
+      "branch_operator_order_error": 0.0,
+      "probability_for_encoded_Bell_input": 0.16000000000000003
+    },
+    {
+      "outcomes": [
+        -1,
+        1
+      ],
+      "legal_birth_orders": 40,
+      "branch_operator_order_error": 0.0,
+      "probability_for_encoded_Bell_input": 0.16000000000000003
+    },
+    {
+      "outcomes": [
+        -1,
+        -1
+      ],
+      "legal_birth_orders": 20,
+      "branch_operator_order_error": 0.0,
+      "probability_for_encoded_Bell_input": 0.3399999999999999
+    }
+  ],
+  "theorem_scope": "Exact identity channel within each record sector forbids informative outputs about its internal state",
+  "limits": [
+    "Controlled future motifs and interaction parameters are supplied",
+    "Order covariance is verified for the specified finite circuit and its legal interleavings",
+    "No general state-dependent CSG kernel, full QCH classification, continuum or gravity is derived",
+    "A single fixed output distribution is not a witness against all classical hidden-state models"
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "checks": {
+    "run": 12,
+    "failures": 0,
+    "errors": 0
+  }
+}

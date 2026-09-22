@@ -1,0 +1,74 @@
+{
+  "round": 234,
+  "date": "2026-09-22",
+  "hypothesis": "Does identical independent repeatability imply unrestricted joint control after erasing event slots?",
+  "single_use_deterministic_settings": 32,
+  "identical_independent_copies": {
+    "local_permutation_pairs": 576,
+    "fair_independent_weight_histogram": {
+      "0.5": 36,
+      "0.75": 112,
+      "1.0": 280,
+      "1.25": 112,
+      "1.5": 36
+    },
+    "SWAP_SWAP_branch_weights": [
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "SWAP_FLIP_branch_weights": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ]
+  },
+  "analytic_formula": {
+    "disagreement_probability": "q=P(s!=t)",
+    "double_swap_normalization": "1+q",
+    "swap_and_flip_normalization": "1-q",
+    "independent_identical_order_law": "q=2p(1-p)"
+  },
+  "fair_case": {
+    "independent_normalization_plus": 1.5,
+    "independent_normalization_minus": 0.5,
+    "shared_schedule_normalization": 1.0,
+    "prior_flag_filter_success_probability": 0.5,
+    "correlated_vs_independent_schedule_TV": 0.5
+  },
+  "event_typed_positive_control": {
+    "random_memory_protocols": 32,
+    "schedule_branches_per_protocol": 4,
+    "explicit_local_memory_bits": 2,
+    "schedule_record_bits": 2,
+    "maximum_normalization_error": 4.440892098500626e-16,
+    "maximum_early_record_change_after_late_intervention": 1.6653345369377348e-16
+  },
+  "conclusion": "A causally scheduled ordinary process may fail the untyped identical-copy contract. Keeping event slots permits normalized independent repetition; synchronizing schedules changes the resource.",
+  "not_claimed": [
+    "Independent copies of quantum channels are impossible",
+    "A shared physical clock is universally necessary",
+    "Time emerges from normalization alone",
+    "The model selects Lorentz symmetry or geometry"
+  ],
+  "next": "Define event interfaces by operational access and substitution tests, and determine which timing/type information those tests necessarily require.",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "checks": {
+    "run": 7,
+    "failures": 0,
+    "errors": 0
+  }
+}
