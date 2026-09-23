@@ -1,0 +1,112 @@
+{
+  "round": 368,
+  "scope": {
+    "proved": "Static finite-range unitary dictionaries, or invariant isometric codes with full local intertwining representatives, cannot turn onsite natural motion into propagation beyond a fixed 2R buffer. Quasi-local dictionaries give a time-uniform commutator tail.",
+    "state_quantifier": "Exact operator identities hold for every state and passive reference, including correlated inputs. Numerical states are witnesses.",
+    "extra_inputs": [
+      "specified site metric and tensor factors",
+      "onsite natural generator",
+      "static dictionary with declared range or approximation tails",
+      "code invariance and complete local representatives in the isometric case"
+    ],
+    "not_claimed": [
+      "all cognitive models have these dictionaries",
+      "all globally encoded dynamics have zero influence",
+      "generic interacting many-body localization has a time-independent cone",
+      "no controlled relay protocol can transmit information",
+      "GR or its full cognitive program is disproved"
+    ]
+  },
+  "cluster": {
+    "sites": 7,
+    "dictionary_range": 1,
+    "uniform_support_radius": 2,
+    "near_perfect_signal": {
+      "receiver_distance": 0.9999999999999989,
+      "receiver_Z": [
+        -0.9999999999999989,
+        0.9999999999999989
+      ]
+    },
+    "two_site_product_input_final_purity": 0.4999999999999991,
+    "commutators": [
+      {
+        "time": 0.2,
+        "distance_2_commutator": 0.3973386615901217,
+        "distance_2_analytic": 0.39733866159012243,
+        "distance_3_commutator": 4.415115647672362e-16
+      },
+      {
+        "time": 0.9,
+        "distance_2_commutator": 1.5666538192549628,
+        "distance_2_analytic": 1.5666538192549668,
+        "distance_3_commutator": 1.771968415752647e-15
+      },
+      {
+        "time": 1.5707963267948966,
+        "distance_2_commutator": 1.9999999999999998,
+        "distance_2_analytic": 2.0,
+        "distance_3_commutator": 6.850943329690379e-16
+      },
+      {
+        "time": 37.25,
+        "distance_2_commutator": 0.8683312486675048,
+        "distance_2_analytic": 0.8683312486675064,
+        "distance_3_commutator": 1.40668519316733e-15
+      }
+    ]
+  },
+  "quasi_local": {
+    "dictionary": "Hadamard times exp(-i sum theta*q^distance Zi Zj)",
+    "theta": 0.3,
+    "q": 0.5,
+    "single_site_tail": "4*theta*q^(r+1)/(1-q)",
+    "commutators": [
+      {
+        "time": 0.2,
+        "distance": 5,
+        "commutator": 0.02265050695220327,
+        "time_independent_upper": 1.2
+      },
+      {
+        "time": 0.9,
+        "distance": 5,
+        "commutator": 0.08921251517672311,
+        "time_independent_upper": 1.2
+      },
+      {
+        "time": 7.3,
+        "distance": 5,
+        "commutator": 0.09683578243947752,
+        "time_independent_upper": 1.2
+      },
+      {
+        "time": 41.0,
+        "distance": 5,
+        "commutator": 0.018085224599452457,
+        "time_independent_upper": 1.2
+      }
+    ]
+  },
+  "isometric_code": {
+    "logical_cells": 3,
+    "physical_qubits": 6,
+    "invariance_error": 5.907764949815714e-15,
+    "max_full_local_intertwiner_error": 0.0
+  },
+  "continuum_scope": "For fixed positive macroscopic separation, a_N R_N -> 0 gives exact zero response eventually, for every time rescaling. Quasi-local tails require epsilon_XN(rN)+epsilon_YN(sN)->0, including support-size prefactors.",
+  "sources": [
+    "https://arxiv.org/pdf/1409.1252",
+    "https://arxiv.org/pdf/quant-ph/0004051",
+    "https://arxiv.org/html/1701.05182"
+  ],
+  "checks": {
+    "run": 16,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

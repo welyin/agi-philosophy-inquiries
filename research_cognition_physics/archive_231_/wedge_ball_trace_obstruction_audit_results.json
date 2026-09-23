@@ -1,0 +1,81 @@
+{
+  "round": 312,
+  "scope": "Analytic Ward identity with supplied Minkowski geometry and conserved matter. Classical scalar solutions are counterexamples/calibrations, not a quantum vacuum or a derivation of gravity.",
+  "local_current_cases": [
+    {
+      "time": 0.0,
+      "stress_trace": -1.8432000000000004,
+      "wedge_current_divergence": 0.0,
+      "ball_current_divergence": -9.25185853854297e-14,
+      "ball_predicted_trace_source": 0.0,
+      "traceless_radiation_ball_divergence": 9.25185853854297e-14
+    },
+    {
+      "time": 0.2,
+      "stress_trace": -1.7730230419571664,
+      "wedge_current_divergence": -4.625929269271485e-14,
+      "ball_current_divergence": 0.17730230419567847,
+      "ball_predicted_trace_source": 0.17730230419571666,
+      "traceless_radiation_ball_divergence": -4.3440945285411203e-13
+    },
+    {
+      "time": 0.4,
+      "stress_trace": -1.5696171756992463,
+      "wedge_current_divergence": -4.625929269271485e-14,
+      "ball_current_divergence": 0.31392343513995846,
+      "ball_predicted_trace_source": 0.31392343513984927,
+      "traceless_radiation_ball_divergence": 1.488947853900413e-13
+    },
+    {
+      "time": 0.8,
+      "stress_trace": -0.8571551057952153,
+      "wedge_current_divergence": 3.4694469519536136e-14,
+      "ball_current_divergence": 0.34286204231728873,
+      "ball_predicted_trace_source": 0.34286204231808615,
+      "traceless_radiation_ball_divergence": -6.274147867912916e-13
+    }
+  ],
+  "finite_region_balance": [
+    {
+      "time": 0.2,
+      "charge_rate": -1.5441556210924554,
+      "outward_current_flux": 4.397301619716145,
+      "integrated_trace_source": 5.9414572408085995,
+      "balance_error": 8.881784197001252e-16
+    },
+    {
+      "time": 0.4,
+      "charge_rate": -3.088311242184911,
+      "outward_current_flux": 7.4313640391486615,
+      "integrated_trace_source": 10.519675281333573,
+      "balance_error": 0.0
+    },
+    {
+      "time": 0.8,
+      "charge_rate": -6.176622484369822,
+      "outward_current_flux": 5.312794831270626,
+      "integrated_trace_source": 11.489417315640447,
+      "balance_error": 1.7763568394002505e-15
+    }
+  ],
+  "theorem_interface": {
+    "wedge": "BW requires an appropriate local relativistic vacuum theory; massive models can satisfy it.",
+    "ball": "The simple conformal stress charge needs additional structure. Conserved T alone leaves a trace source away from t=0."
+  },
+  "research_decision": "Prioritize the conditional local-horizon route for general matter. Keep ball corrections as a separate branch; next audit the common origin of area entropy and gravitational coupling.",
+  "remaining_inputs": [
+    "Verified Wightman or other sufficient BW assumptions, beyond locality and covariance alone",
+    "geometric scaling limit",
+    "area entropy coefficient and renormalization",
+    "local equilibrium condition"
+  ],
+  "checks": {
+    "run": 9,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

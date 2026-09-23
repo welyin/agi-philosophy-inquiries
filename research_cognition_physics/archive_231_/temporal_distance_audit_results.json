@@ -1,0 +1,151 @@
+{
+  "round": 292,
+  "scope": "Conditional FIFO time-dependent propagation and approximate static time metrics; known arrival functions and calibrated rate units are extra inputs, not derived Lorentz geometry or gravity.",
+  "reciprocal_fifo_chain": {
+    "edge_delay": "1 + 0.1 * departure_time, for time >= 0",
+    "one_way_durations_at_zero": [
+      [
+        0.0,
+        1.0,
+        2.1
+      ],
+      [
+        1.0,
+        0.0,
+        1.0
+      ],
+      [
+        2.1,
+        1.0,
+        0.0
+      ]
+    ],
+    "actual_half_roundtrips_at_zero": [
+      [
+        0.0,
+        1.05,
+        2.3205000000000005
+      ],
+      [
+        1.05,
+        0.0,
+        1.05
+      ],
+      [
+        2.3205000000000005,
+        1.05,
+        0.0
+      ]
+    ],
+    "one_way_triangle_excess": 0.10000000000000009,
+    "echo_triangle_excess": 0.22050000000000036,
+    "snapshot_metric": [
+      [
+        0.0,
+        1.0,
+        2.0
+      ],
+      [
+        1.0,
+        0.0,
+        1.0
+      ],
+      [
+        2.0,
+        1.0,
+        0.0
+      ]
+    ]
+  },
+  "bounded_variation_example": {
+    "relative_delay_bound": 0.2,
+    "departure_time": 5.0,
+    "reference_static_metric": [
+      [
+        0.0,
+        1.6779352112576489,
+        2.1628908128872713,
+        2.5870597230175134
+      ],
+      [
+        1.6779352112576489,
+        0.0,
+        2.4199060149674523,
+        4.19311830025485
+      ],
+      [
+        2.1628908128872713,
+        2.4199060149674523,
+        0.0,
+        2.3594785455869554
+      ],
+      [
+        2.5870597230175134,
+        4.19311830025485,
+        2.3594785455869554,
+        0.0
+      ]
+    ],
+    "actual_half_roundtrips": [
+      [
+        0.0,
+        1.9449982491148994,
+        1.935506877665814,
+        3.062193844400456
+      ],
+      [
+        1.9065529287936638,
+        0.0,
+        2.228589021967043,
+        4.606869185141259
+      ],
+      [
+        1.9437062233311568,
+        2.2481952259717923,
+        0.0,
+        2.5541193223351506
+      ],
+      [
+        2.996100364864102,
+        4.441727939658387,
+        2.567265765892021,
+        0.0
+      ]
+    ],
+    "min_upper_triangle_ratio": 0.8948703587501399,
+    "max_upper_triangle_ratio": 1.1836579639641067,
+    "maximum_origin_asymmetry": 0.16514124548287246,
+    "approximate_triangle_factor": 1.4999999999999998
+  },
+  "finite_window_certificate": {
+    "nodes": 4,
+    "maximum_reference_edge_delay": 3.0,
+    "relative_bound": 0.2,
+    "conservative_roundtrip_horizon": 21.599999999999998,
+    "window": [
+      0.0,
+      30.0
+    ],
+    "static_optimal_route_stays_in_window": true
+  },
+  "counterexample_to_waiting_never_helping_without_fifo": {
+    "immediate_departure_arrival": 10.0,
+    "wait_one_then_depart_arrival": 2.0
+  },
+  "zero_point_covariance": "Local arrival maps transform by endpoint conjugation; closed-loop elapsed time is unaffected by constant display shifts.",
+  "limits": [
+    "Snapshot shortest paths still form a mathematical metric, but need not equal actual journey durations.",
+    "The FIFO algorithm assumes arrival functions are known; endpoint samples do not establish their entire future behavior.",
+    "Relative variation bounds must hold at every actual traversal, not only at the initial departure.",
+    "A rate-normalized common time coordinate remains a modeling input; clock drift and endogenous routing load require a joint model."
+  ],
+  "checks": {
+    "run": 9,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

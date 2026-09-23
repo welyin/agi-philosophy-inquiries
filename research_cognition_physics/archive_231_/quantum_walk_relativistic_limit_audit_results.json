@@ -1,0 +1,124 @@
+{
+  "round": 348,
+  "scope": "Specified one-dimensional single-particle unitary walk, dt=a and c=hbar=1; controlled Dirac limit on a fixed momentum band. Not a derivation of dimension, QFT or GR.",
+  "literature_scope": {
+    "classification_coin_dimension": 2,
+    "classification_dimensions_considered": [
+      1,
+      2,
+      3
+    ],
+    "selects_dimension_three": false
+  },
+  "band_comparisons": [
+    {
+      "spacing": 0.2,
+      "steps": 10,
+      "mass": 0.7,
+      "cutoff": 1.0,
+      "time": 2.0,
+      "sampled_band_operator_error": 0.09132511156125017,
+      "analytic_uniform_operator_error_bound": 0.27999999999999997,
+      "sampled_band_energy_error": 0.002689761135680202
+    },
+    {
+      "spacing": 0.1,
+      "steps": 20,
+      "mass": 0.7,
+      "cutoff": 1.0,
+      "time": 2.0,
+      "sampled_band_operator_error": 0.04551086067272466,
+      "analytic_uniform_operator_error_bound": 0.13999999999999999,
+      "sampled_band_energy_error": 0.0006698879052844386
+    },
+    {
+      "spacing": 0.05,
+      "steps": 40,
+      "mass": 0.7,
+      "cutoff": 1.0,
+      "time": 2.0,
+      "sampled_band_operator_error": 0.022736594116241727,
+      "analytic_uniform_operator_error_bound": 0.06999999999999999,
+      "sampled_band_energy_error": 0.0001673128549792846
+    },
+    {
+      "spacing": 0.025,
+      "steps": 80,
+      "mass": 0.7,
+      "cutoff": 1.0,
+      "time": 2.0,
+      "sampled_band_operator_error": 0.011365943352554638,
+      "analytic_uniform_operator_error_bound": 0.034999999999999996,
+      "sampled_band_energy_error": 4.181827497262702e-05
+    }
+  ],
+  "finite_measurement_witness": {
+    "momentum": 0.8,
+    "spacing": 0.2,
+    "mass": 0.7,
+    "time": 2.0,
+    "operator_error": 0.09002361488455553,
+    "analytic_trace_distance_upper_bound": 0.22399999999999998,
+    "chosen_state_trace_distance": 0.07687005647803943,
+    "same_effect_probabilities": [
+      0.5384350282390202,
+      0.46156497176098066
+    ],
+    "same_effect_probability_difference": 0.07687005647803957
+  },
+  "nonuniform_high_momentum_limit": [
+    {
+      "spacing": 0.1,
+      "momentum": 31.41592653589793,
+      "operator_error": 1.288185694730192
+    },
+    {
+      "spacing": 0.05,
+      "momentum": 62.83185307179586,
+      "operator_error": 1.2883729393146022
+    },
+    {
+      "spacing": 0.025,
+      "momentum": 125.66370614359172,
+      "operator_error": 1.288419764733321
+    }
+  ],
+  "continuous_log_counterexample": {
+    "sites": 31,
+    "spacing": 1.0,
+    "generator_distance_four_entry_magnitude": 0.2569803318218159,
+    "half_step_probability_outside_one_site": 0.14335634564596342,
+    "exact_integer_step_range": 1
+  },
+  "alternate_rules": {
+    "fixed_coin_pi_over_two": "U(k)^2=-I; flat quasienergy, no net spreading",
+    "two_species_integer_hops": [
+      1,
+      2
+    ],
+    "limiting_speed_ratio": 2
+  },
+  "added_inputs": [
+    "integer line and cell identities",
+    "two-dimensional coin and selected conditional shifts",
+    "homogeneous fixed update rule",
+    "physical lattice spacing and dt=a calibration",
+    "coin angle a*m with finite m",
+    "fixed low-momentum band and finite comparison time"
+  ],
+  "open_bridges": [
+    "all-site field algebra and many-particle structure",
+    "autonomous implementation of step updates",
+    "selection of dimension and common physical metric",
+    "curved geometry, its dynamics and Einstein equations"
+  ],
+  "checks": {
+    "run": 17,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

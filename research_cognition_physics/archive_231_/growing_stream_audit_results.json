@@ -1,0 +1,205 @@
+{
+  "round": 276,
+  "scope": "Specified expanding path, exact routing and finite resource accounting; no derived spacetime or stationary queue claim.",
+  "scenarios": [
+    {
+      "policy": "none",
+      "distance": 8,
+      "horizon": 256,
+      "arrival_policy": "every_slot",
+      "t": 256,
+      "growth": 0,
+      "nodes": 9,
+      "admitted": 256,
+      "delivered": 249,
+      "pending": 7,
+      "payload_edge_uses": 2020,
+      "control_bit_edge_uses": 0,
+      "end_slot_max_payload_occupancy": 1,
+      "transient_payload_buffers": 2,
+      "blocked_hops": 0,
+      "graph": {
+        "vertices": 9,
+        "edges": 8,
+        "components": 1,
+        "cycle_rank": 0,
+        "max_degree": 2
+      },
+      "pending_area": 1771,
+      "output_archive_qubits": 249,
+      "transport_payload_qubits": 7,
+      "local_transient_buffer_bound": 2
+    },
+    {
+      "policy": "every_slot",
+      "distance": 8,
+      "horizon": 256,
+      "arrival_policy": "every_slot",
+      "t": 256,
+      "growth": 256,
+      "nodes": 265,
+      "admitted": 256,
+      "delivered": 0,
+      "pending": 256,
+      "payload_edge_uses": 32896,
+      "control_bit_edge_uses": 256,
+      "end_slot_max_payload_occupancy": 1,
+      "transient_payload_buffers": 2,
+      "blocked_hops": 0,
+      "graph": {
+        "vertices": 265,
+        "edges": 264,
+        "components": 1,
+        "cycle_rank": 0,
+        "max_degree": 2
+      },
+      "pending_area": 32896,
+      "output_archive_qubits": 0,
+      "transport_payload_qubits": 256,
+      "local_transient_buffer_bound": 2
+    },
+    {
+      "policy": "pause_every_2",
+      "distance": 8,
+      "horizon": 256,
+      "arrival_policy": "every_slot",
+      "t": 256,
+      "growth": 128,
+      "nodes": 137,
+      "admitted": 256,
+      "delivered": 121,
+      "pending": 135,
+      "payload_edge_uses": 18376,
+      "control_bit_edge_uses": 128,
+      "end_slot_max_payload_occupancy": 1,
+      "transient_payload_buffers": 2,
+      "blocked_hops": 0,
+      "graph": {
+        "vertices": 137,
+        "edges": 136,
+        "components": 1,
+        "cycle_rank": 0,
+        "max_degree": 2
+      },
+      "pending_area": 18255,
+      "output_archive_qubits": 121,
+      "transport_payload_qubits": 135,
+      "local_transient_buffer_bound": 2
+    },
+    {
+      "policy": "pause_every_4",
+      "distance": 8,
+      "horizon": 256,
+      "arrival_policy": "every_slot",
+      "t": 256,
+      "growth": 192,
+      "nodes": 201,
+      "admitted": 256,
+      "delivered": 57,
+      "pending": 199,
+      "payload_edge_uses": 26512,
+      "control_bit_edge_uses": 192,
+      "end_slot_max_payload_occupancy": 1,
+      "transient_payload_buffers": 2,
+      "blocked_hops": 0,
+      "graph": {
+        "vertices": 201,
+        "edges": 200,
+        "components": 1,
+        "cycle_rank": 0,
+        "max_degree": 2
+      },
+      "pending_area": 26455,
+      "output_archive_qubits": 57,
+      "transport_payload_qubits": 199,
+      "local_transient_buffer_bound": 2
+    },
+    {
+      "policy": "pause_at_squares",
+      "distance": 8,
+      "horizon": 256,
+      "arrival_policy": "every_slot",
+      "t": 256,
+      "growth": 240,
+      "nodes": 249,
+      "admitted": 256,
+      "delivered": 9,
+      "pending": 247,
+      "payload_edge_uses": 31948,
+      "control_bit_edge_uses": 240,
+      "end_slot_max_payload_occupancy": 1,
+      "transient_payload_buffers": 2,
+      "blocked_hops": 0,
+      "graph": {
+        "vertices": 249,
+        "edges": 248,
+        "components": 1,
+        "cycle_rank": 0,
+        "max_degree": 2
+      },
+      "pending_area": 31939,
+      "output_archive_qubits": 9,
+      "transport_payload_qubits": 247,
+      "local_transient_buffer_bound": 2
+    },
+    {
+      "policy": "pause_every_2",
+      "distance": 8,
+      "horizon": 256,
+      "arrival_policy": "odd_slots",
+      "t": 256,
+      "growth": 128,
+      "nodes": 137,
+      "admitted": 128,
+      "delivered": 61,
+      "pending": 67,
+      "payload_edge_uses": 9192,
+      "control_bit_edge_uses": 128,
+      "end_slot_max_payload_occupancy": 1,
+      "transient_payload_buffers": 1,
+      "blocked_hops": 0,
+      "graph": {
+        "vertices": 137,
+        "edges": 136,
+        "components": 1,
+        "cycle_rank": 0,
+        "max_degree": 2
+      },
+      "pending_area": 9131,
+      "output_archive_qubits": 61,
+      "transport_payload_qubits": 67,
+      "local_transient_buffer_bound": 1
+    }
+  ],
+  "enumeration": {
+    "growth_bits": 6,
+    "arrival_bits": 6,
+    "distances": [
+      1,
+      2,
+      4
+    ],
+    "histories": 12288
+  },
+  "formulas": {
+    "delivered": "B(T)=A(max(0,T-G(T)-d+1))",
+    "full_stream_pending": "Q(T)=min(T,d+G(T)-1)",
+    "area": "sum_t Q(t)=sum_admitted_s [min(tau_s,T+1)-s]"
+  },
+  "added_inputs": [
+    "clock and atomic rewrite",
+    "one payload or control bit per edge per slot",
+    "up to two transient payload registers per relay",
+    "new nodes/channels and local port handoff",
+    "separate output archive and old receiver register"
+  ],
+  "checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

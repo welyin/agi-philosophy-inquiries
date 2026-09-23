@@ -1,0 +1,188 @@
+{
+  "round": 379,
+  "scope": {
+    "baseline": "Frozen through 377; independent of round 378.",
+    "claim": "Position identity need not be a complete state for autonomous trajectory prediction. A specified R3 position remains R3 when a hidden conserved launch label changes later position records.",
+    "model_inputs": [
+      "smooth R3_x times R3_z configuration and canonical cotangent phase space",
+      "autonomous H=|p_x+lambda cross x/2|^2/2, mass unit one",
+      "position readouts depend only on x; z is internal configuration",
+      "repeated preparations, supplied velocity directions, clock and error budgets"
+    ],
+    "not_proved": [
+      "a full FUCP countermodel or a cognition-derived Hamiltonian",
+      "all internal preparations must have the same free trajectory",
+      "trajectory nonclosure adds spatial dimensions",
+      "natural or unique physical interpretation of the x-position interface",
+      "a normalizable quantum state with exact continuous lambda",
+      "three-dimensional space, relativity or gravity from cognition"
+    ],
+    "new_interface": "Autonomous canonical flow, fixed-preparation prediction, uniform launch-error bounds and two-launch calibration; not a repetition of quotient closure or Landau spectra."
+  },
+  "same_location_different_dynamical_preparations": {
+    "time": 1.0,
+    "initial_position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "initial_velocity": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "cases": [
+      {
+        "lambda": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "energy": 0.5,
+        "initial_full_configuration_velocity": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "position_at_t": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "velocity_at_t": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "internal_coordinate_at_t": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "canonical_RK4_full_state_error": 0.0
+      },
+      {
+        "lambda": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "energy": 0.5,
+        "initial_full_configuration_velocity": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "position_at_t": [
+          0.8414709848078965,
+          0.4596976941318603,
+          0.0
+        ],
+        "velocity_at_t": [
+          0.5403023058681398,
+          0.8414709848078965,
+          0.0
+        ],
+        "internal_coordinate_at_t": [
+          0.0,
+          0.0,
+          0.07926450759605187
+        ],
+        "canonical_RK4_full_state_error": 4.6160663114352195e-11
+      }
+    ],
+    "position_separation": 0.4862647618817629,
+    "position_readout_sigma": 0.1,
+    "future_position_record_TV": 0.9849562369269697,
+    "initial_position_record_TV": 0.0,
+    "scope": "Different dynamical preparations at the same R3 position; future distinguishability does not change their initial location identity."
+  },
+  "independent_full_phase_space_ODE": {
+    "steps": [
+      8,
+      16,
+      32
+    ],
+    "full_state_errors": [
+      8.798765862855064e-06,
+      5.505383069564324e-07,
+      3.436578788545876e-08
+    ],
+    "refinement_ratios": [
+      15.982113781505427,
+      16.019953006501048
+    ],
+    "z_reference": "40-point Gauss integration of exact x,u; x,u,lambda have closed formulas"
+  },
+  "uniform_preparation_example": {
+    "time_window": [
+      0.0,
+      2.0
+    ],
+    "dx_bound": 0.001,
+    "du_bound": 0.002,
+    "dlambda_bound": 0.01,
+    "speed_bound": 1.0,
+    "sampled_maximum_position_error": 0.011923842330014294,
+    "sampled_maximum_velocity_error": 0.00910635950387733,
+    "analytic_uniform_bounds": {
+      "velocity": 0.022,
+      "position": 0.025
+    },
+    "scope": "General bounds follow from orthogonal Duhamel evolution; samples only cross-check."
+  },
+  "calibration_and_prediction": {
+    "true_lambda": [
+      0.4,
+      -0.3,
+      0.7
+    ],
+    "fitted_lambda": [
+      0.39178382246469035,
+      -0.310505823219836,
+      0.6982546492493348
+    ],
+    "known_lambda_norm_cap": 1.0,
+    "positive_readout_times": [
+      0.0,
+      0.04,
+      0.08
+    ],
+    "per_position_vector_error_bound": 2e-06,
+    "single_launch_acceleration_error_bound": 0.045,
+    "stacked_matrix_singular_values": [
+      1.4142135623730951,
+      1.0,
+      1.0
+    ],
+    "lambda_error": 0.013450804587868351,
+    "lambda_error_bound": 0.06363961030678927,
+    "prediction_time": 1.5,
+    "target_speed_bound": 1.0,
+    "position_prediction_error": 0.008357322506451128,
+    "position_prediction_error_bound": 0.07159456159513794,
+    "position_readout_sigma": 0.1,
+    "actual_prediction_TV": 0.03333119265640698,
+    "prediction_TV_bound": 0.28562097667105163,
+    "scope": "Repeated preparations share one conserved lambda; the two initial unit velocities, clock, position error and lambda cap are supplied. This is deterministic bounded-error calibration, not a finite-shot confidence proof."
+  },
+  "sources": [
+    "https://cvgmt.sns.it/media/doc/paper/3191/cut-free-v2.pdf"
+  ],
+  "source_location": "Rizzi-Serres, section 2, Example 2 and section 2.1 equations (13)-(14).",
+  "checks": {
+    "run": 14,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

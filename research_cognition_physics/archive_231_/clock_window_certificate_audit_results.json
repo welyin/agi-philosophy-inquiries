@@ -1,0 +1,149 @@
+{
+  "round": 296,
+  "scope": "Conditional finite-window approximate translation certificates from noisy samples plus supplied regularity bounds and candidate clocks; no exact all-time common clock, natural dimension or gravitational dynamics derived.",
+  "inputs": {
+    "domain": [
+      0.0,
+      20.0
+    ],
+    "directed_channels": 6,
+    "samples_per_channel": 17,
+    "launch_error": 0.0001,
+    "return_reading_error": 0.0001,
+    "residual_lipschitz_bound": 0.001,
+    "effective_sample_error": 0.00020009999999999998,
+    "covering_radius": 0.625,
+    "candidate_clocks_and_units_fixed_before_validation": true
+  },
+  "maximum_observed_residual": 0.004999912207049206,
+  "edge_certificates": [
+    {
+      "edge": [
+        0,
+        1
+      ],
+      "reference_shift": 0.6,
+      "uniform_residual_bound": 0.005821152482747592
+    },
+    {
+      "edge": [
+        1,
+        0
+      ],
+      "reference_shift": 0.4,
+      "uniform_residual_bound": 0.005824352739244064
+    },
+    {
+      "edge": [
+        1,
+        2
+      ],
+      "reference_shift": 0.8,
+      "uniform_residual_bound": 0.005815063307310274
+    },
+    {
+      "edge": [
+        2,
+        1
+      ],
+      "reference_shift": 0.7,
+      "uniform_residual_bound": 0.005822372817186315
+    },
+    {
+      "edge": [
+        0,
+        2
+      ],
+      "reference_shift": 1.5,
+      "uniform_residual_bound": 0.005825012207049206
+    },
+    {
+      "edge": [
+        2,
+        0
+      ],
+      "reference_shift": 1.2,
+      "uniform_residual_bound": 0.005789745667683287
+    }
+  ],
+  "relative_delay_bound": 0.01456088184811016,
+  "verified_metric_example": {
+    "departure": 10.0,
+    "reference_metric": [
+      [
+        0.0,
+        0.5,
+        1.25
+      ],
+      [
+        0.5,
+        0.0,
+        0.75
+      ],
+      [
+        1.25,
+        0.75,
+        0.0
+      ]
+    ],
+    "actual_half_roundtrips": [
+      [
+        0.0,
+        0.4977477945999693,
+        1.2506856544743679
+      ],
+      [
+        0.4981852708248642,
+        0.0,
+        0.7538554553749215
+      ],
+      [
+        1.2516952992809989,
+        0.7538449324237462,
+        0.0
+      ]
+    ],
+    "conservative_roundtrip_horizon": 6.087365291088661
+  },
+  "six_hop_path": {
+    "path": [
+      0,
+      1,
+      2,
+      0,
+      1,
+      2,
+      0
+    ],
+    "start": 2.0,
+    "predicted_arrival": 7.2,
+    "certified_arrival_interval": [
+      7.165148077084518,
+      7.234851922915483
+    ],
+    "actual_arrival": 7.202353587761104
+  },
+  "probe_ledger": {
+    "one_way_samples": 102,
+    "endpoint_timestamp_samples": 204,
+    "maximum_sample_launch": 20.0,
+    "all_returns_may_arrive_after_last_launch": true,
+    "data_exchange_storage_and_clock_energy_not_included": true
+  },
+  "limits": [
+    "Regularity and absolute error bounds must be justified independently; consistency with samples is not proof that they hold.",
+    "The certificate concerns a prescribed candidate clock, not optimality or uniqueness among all monotone clocks.",
+    "Window coverage is retrospective unless stationarity or a predictive bound extends it to future measurements.",
+    "Path errors add per edge; long paths can exceed tolerance or exit the verified domain.",
+    "Uniform rescaling changes absolute errors and reference shifts together, leaving the relative certificate unchanged."
+  ],
+  "checks": {
+    "run": 9,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

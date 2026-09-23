@@ -1,0 +1,97 @@
+{
+  "round": 294,
+  "scope": "Smooth iff criterion for constant-delay coordinates via positive complete interval densities; causal order or commutation alone is insufficient, and no physical time standard or spacetime law is derived.",
+  "density_transport_positive_example": {
+    "maximum_transport_residual": 8.881784197001252e-16,
+    "edges": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "known_input_delay": 0.6,
+        "recovered_shift_min": 0.5999999999999993,
+        "recovered_shift_max": 0.600000000000001
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "known_input_delay": 0.4,
+        "recovered_shift_min": 0.39999999999999947,
+        "recovered_shift_max": 0.4000000000000008
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "known_input_delay": 0.8,
+        "recovered_shift_min": 0.7999999999999985,
+        "recovered_shift_max": 0.8000000000000009
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "known_input_delay": 0.6142135623730951,
+        "recovered_shift_min": 0.6142135623730944,
+        "recovered_shift_max": 0.6142135623730958
+      }
+    ],
+    "root_loop_shifts": [
+      1.0,
+      1.4142135623730951
+    ],
+    "clock_functions_are_supplied_for_this_constructive_example": true
+  },
+  "commuting_but_not_simultaneously_translatable": {
+    "maps": "F(x)=x+1; G(x)=x+1+0.1*sin(2*pi*x)",
+    "sampled_commutation_residual": 8.881784197001252e-16,
+    "values_at_zero": [
+      1.0,
+      1.0
+    ],
+    "values_at_quarter": [
+      1.25,
+      1.35
+    ],
+    "values_at_three_quarters": [
+      1.75,
+      1.65
+    ],
+    "return_order_reverses_between_quarter_and_three_quarters": true,
+    "G_derivative_at_zero": 1.6283185307179586,
+    "positive_density_ratio_required_by_F": 1.0,
+    "positive_density_ratio_required_by_G": 0.6141304549049624,
+    "translation_obstruction": "Maps coincide at one point but differ elsewhere; distinct translations cannot do that.",
+    "minimum_G_derivative": 0.3716814692820414,
+    "minimum_G_forward_increment": 0.9
+  },
+  "clock_uniqueness_boundary": {
+    "nonlinear_clock": "v(u)=u+0.05*sin(2*pi*u)",
+    "unit_shift_error": 4.440892098500626e-16,
+    "double_shift_error": 4.440892098500626e-16,
+    "sqrt2_shift_error": 0.09639025319749472,
+    "sqrt2_analytic_max_error": 0.09639025328498774,
+    "near_unit_shift_1_001_error": 0.0003141587485879782,
+    "interpretation": "Commensurate periods leave periodic clock freedom; two exact incommensurate periods remove it under continuity."
+  },
+  "resource_and_inference_limits": [
+    "Density transport is a condition to establish, not an automatic consequence of cognition or a fitted derivative.",
+    "Finite samples cannot certify an identity for all times, exact irrationality, or global completeness.",
+    "Edge constants depend on endpoint zero choices; their closed-loop sums do not.",
+    "Formal inverse coordinate maps are not backward physical transmissions."
+  ],
+  "checks": {
+    "run": 9,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "round": 311,
+  "scope": "Reuse exact CTM half-chain result in an integrable 1D model; verify local state convergence and a separate low-momentum continuum expansion. Not a derivation of universal Lorentz symmetry.",
+  "boundary_state_checks": [
+    {
+      "delta": 0.1,
+      "halfchain_truncation": 16,
+      "observed_prefix_sites": 8,
+      "prefix_covariance_error_fro": 0.13125091944467643
+    },
+    {
+      "delta": 0.1,
+      "halfchain_truncation": 32,
+      "observed_prefix_sites": 8,
+      "prefix_covariance_error_fro": 0.011216189479604175
+    },
+    {
+      "delta": 0.1,
+      "halfchain_truncation": 64,
+      "observed_prefix_sites": 8,
+      "prefix_covariance_error_fro": 3.8954395570005266e-05
+    },
+    {
+      "delta": 0.1,
+      "halfchain_truncation": 128,
+      "observed_prefix_sites": 8,
+      "prefix_covariance_error_fro": 2.1036087770949576e-10
+    },
+    {
+      "delta": 0.3,
+      "halfchain_truncation": 16,
+      "observed_prefix_sites": 8,
+      "prefix_covariance_error_fro": 0.0037830548236848114
+    },
+    {
+      "delta": 0.3,
+      "halfchain_truncation": 32,
+      "observed_prefix_sites": 8,
+      "prefix_covariance_error_fro": 3.686921415012875e-07
+    },
+    {
+      "delta": 0.3,
+      "halfchain_truncation": 64,
+      "observed_prefix_sites": 8,
+      "prefix_covariance_error_fro": 2.0581312218491676e-15
+    },
+    {
+      "delta": 0.3,
+      "halfchain_truncation": 128,
+      "observed_prefix_sites": 8,
+      "prefix_covariance_error_fro": 1.7293057093877738e-15
+    },
+    {
+      "delta": -0.3,
+      "halfchain_truncation": 16,
+      "observed_prefix_sites": 8,
+      "prefix_covariance_error_fro": 2.9056089946560526e-05
+    },
+    {
+      "delta": -0.3,
+      "halfchain_truncation": 32,
+      "observed_prefix_sites": 8,
+      "prefix_covariance_error_fro": 5.315536587709792e-10
+    },
+    {
+      "delta": -0.3,
+      "halfchain_truncation": 64,
+      "observed_prefix_sites": 8,
+      "prefix_covariance_error_fro": 1.2219928500969532e-15
+    },
+    {
+      "delta": -0.3,
+      "halfchain_truncation": 128,
+      "observed_prefix_sites": 8,
+      "prefix_covariance_error_fro": 1.5370995789785245e-15
+    }
+  ],
+  "normalization_control_delta_0_3_N128": [
+    {
+      "scale": 0.5,
+      "error": 0.028702285146798137
+    },
+    {
+      "scale": 1.0,
+      "error": 1.7293057093877738e-15
+    },
+    {
+      "scale": 2.0,
+      "error": 0.0006402734173607921
+    }
+  ],
+  "massive_continuum_scaling": [
+    {
+      "spacing": 0.2,
+      "mass": 0.8,
+      "momentum": 0.7,
+      "lattice_dimerization": 0.16000000000000003,
+      "energy_squared": 1.1143447613748099,
+      "relativistic_target": 1.1300000000000001,
+      "energy_squared_error": 0.01565523862519025,
+      "analytic_error_upper": 0.01574533333333334,
+      "halfspace_coefficient_relative_error": 0.006493831193175259,
+      "physical_correlation_length": 1.2392595225879441
+    },
+    {
+      "spacing": 0.1,
+      "mass": 0.8,
+      "momentum": 0.7,
+      "lattice_dimerization": 0.08000000000000002,
+      "energy_squared": 1.1260693081561852,
+      "relativistic_target": 1.1300000000000001,
+      "energy_squared_error": 0.003930691843814893,
+      "analytic_error_upper": 0.003936333333333335,
+      "halfspace_coefficient_relative_error": 0.0016057857260938224,
+      "physical_correlation_length": 1.247328766901548
+    },
+    {
+      "spacing": 0.05,
+      "mass": 0.8,
+      "momentum": 0.7,
+      "lattice_dimerization": 0.04000000000000001,
+      "energy_squared": 1.1290162694251347,
+      "relativistic_target": 1.1300000000000001,
+      "energy_squared_error": 0.000983730574865449,
+      "analytic_error_upper": 0.0009840833333333338,
+      "halfspace_coefficient_relative_error": 0.00040036040049051813,
+      "physical_correlation_length": 1.2493330486502476
+    },
+    {
+      "spacing": 0.025,
+      "mass": 0.8,
+      "momentum": 0.7,
+      "lattice_dimerization": 0.020000000000000004,
+      "energy_squared": 1.1297540012166558,
+      "relativistic_target": 1.1300000000000001,
+      "energy_squared_error": 0.00024599878334430336,
+      "analytic_error_upper": 0.00024602083333333344,
+      "halfspace_coefficient_relative_error": 0.00010002250625196218,
+      "physical_correlation_length": 1.2498333155518284
+    }
+  ],
+  "known_ctm_identity": "gamma(delta)=4 K(|delta|)=4 K(sqrt(1-r^2))/(1+|delta|), r=(1-|delta|)/(1+|delta|).",
+  "limits_kept_separate": [
+    "Fixed lattice gap, half-chain truncation to infinity, fixed observed prefix.",
+    "Spacing to zero with delta=m*a and fixed physical momentum; neither alone proves the full QFT scaling limit."
+  ],
+  "checks": {
+    "run": 9,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "round": 391,
+  "scientific_base_through_round": 390,
+  "hypothesis": "Actual record channels determine a maximal common sharp input algebra without a preselected pointer.",
+  "scope": {
+    "ontology": "All output fragments and memory carriers belong to the cognitive whole.",
+    "established_theorem": "Beny-Kempf-Kribs correctable algebra, applied with full input code P=I.",
+    "new_project_interface": "Compute the maximal common sharp algebra from existing interaction channels.",
+    "additional_inputs": [
+      "Actual channel on all admitted unknown inputs",
+      "Fixed complete input domain",
+      "Specified disjoint accessible output fragments"
+    ],
+    "assumptions_removed": [
+      "A preselected sharp pointer algebra within the specified channel"
+    ],
+    "not_derived": [
+      "Choice of natural channel",
+      "Fragment accessibility",
+      "Actual location or motion",
+      "Spatial topology or dimension",
+      "Future record stability",
+      "Finite-data certification of exact algebra"
+    ]
+  },
+  "existing_cz_interaction": {
+    "input_dimension": 4,
+    "output_dimensions": [
+      4,
+      2,
+      2
+    ],
+    "blank_reader_qubits": 2,
+    "parent_reader_CZ_gates": 4,
+    "recoverable_complex_dimensions": [
+      8,
+      2,
+      2
+    ],
+    "common_sharp_complex_dimension": 2,
+    "full_joint_complex_dimension": 16,
+    "inferred_common_generator": "Z tensor Z, derived after solving the channel constraints",
+    "maximal_common_commutator": 1.1102230246251564e-16,
+    "parent_to_reader_commutator": 1.1102230246251565e-16,
+    "expected_span_projector_error": 4.1540741810552243e-16
+  },
+  "input_basis_covariance": {
+    "expected_generator": "W^dagger (Z tensor Z) W",
+    "inferred_dimension": 2,
+    "span_error": 1.1230389661214559e-15
+  },
+  "noisy_reader_cases": [
+    {
+      "p": 0.0,
+      "first_reader_exact_dimension": 2,
+      "common_exact_dimension": 2,
+      "diamond_distance_first_reader_from_ideal": 0.0,
+      "promised_parity_minimax_error": 0.0
+    },
+    {
+      "p": 1e-06,
+      "first_reader_exact_dimension": 1,
+      "common_exact_dimension": 1,
+      "diamond_distance_first_reader_from_ideal": 2e-06,
+      "promised_parity_minimax_error": 1e-06
+    },
+    {
+      "p": 0.03,
+      "first_reader_exact_dimension": 1,
+      "common_exact_dimension": 1,
+      "diamond_distance_first_reader_from_ideal": 0.06,
+      "promised_parity_minimax_error": 0.03
+    },
+    {
+      "p": 0.2,
+      "first_reader_exact_dimension": 1,
+      "common_exact_dimension": 1,
+      "diamond_distance_first_reader_from_ideal": 0.4,
+      "promised_parity_minimax_error": 0.2
+    },
+    {
+      "p": 0.5,
+      "first_reader_exact_dimension": 1,
+      "common_exact_dimension": 1,
+      "diamond_distance_first_reader_from_ideal": 1.0,
+      "promised_parity_minimax_error": 0.5
+    },
+    {
+      "p": 1.0,
+      "first_reader_exact_dimension": 2,
+      "common_exact_dimension": 2,
+      "diamond_distance_first_reader_from_ideal": 2.0,
+      "promised_parity_minimax_error": 0.0
+    }
+  ],
+  "unsharp_consensus": {
+    "outcomes": 4,
+    "reader_dimensions": [
+      4,
+      4
+    ],
+    "same_outcome_with_probability": 1.0,
+    "input_effect_span_rank": 4,
+    "effect_max_commutator_frobenius": 0.1666666666666667,
+    "reader_recoverable_dimensions": [
+      1,
+      1
+    ],
+    "common_sharp_dimension": 1
+  },
+  "numerical_policy": {
+    "svd_absolute_tolerance": 1e-09,
+    "smallest_nonzero_noise_test": 1e-06,
+    "arbitrary_small_noise_proved_analytically": true,
+    "numerical_rank_not_exact_experimental_certificate": true
+  },
+  "sources": [
+    "https://arxiv.org/pdf/0705.1574",
+    "https://arxiv.org/pdf/0802.0685"
+  ],
+  "checks": {
+    "run": 9,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

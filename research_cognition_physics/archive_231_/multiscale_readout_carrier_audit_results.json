@@ -1,0 +1,114 @@
+{
+  "round": 395,
+  "scope": "Conditional finite multiscale probability table on one query-independent carrier. Fourier phases and full contrast are modelling inputs; no spatial dimension or physical contact is derived.",
+  "exact_cases": [
+    {
+      "scales": 1,
+      "promised_settings": 2,
+      "detector_settings": 2,
+      "tested_pairs": 1,
+      "pair_witness_error": 0.0,
+      "exact_minimum_carrier_dimension": 2,
+      "qubits": 1,
+      "fourier_unitarity_error": 3.2727258999107884e-16,
+      "independent_product_code_error": 0.0,
+      "off_grid_probability_error": 2.220446049250313e-16,
+      "effect_spectrum_error": 0.0
+    },
+    {
+      "scales": 2,
+      "promised_settings": 4,
+      "detector_settings": 6,
+      "tested_pairs": 6,
+      "pair_witness_error": 0.0,
+      "exact_minimum_carrier_dimension": 4,
+      "qubits": 2,
+      "fourier_unitarity_error": 2.541105595495913e-16,
+      "independent_product_code_error": 2.0253964504621835e-16,
+      "off_grid_probability_error": 1.6653345369377348e-16,
+      "effect_spectrum_error": 0.0
+    },
+    {
+      "scales": 3,
+      "promised_settings": 8,
+      "detector_settings": 14,
+      "tested_pairs": 28,
+      "pair_witness_error": 0.0,
+      "exact_minimum_carrier_dimension": 8,
+      "qubits": 3,
+      "fourier_unitarity_error": 2.67390800841044e-15,
+      "independent_product_code_error": 1.7785780651003303e-16,
+      "off_grid_probability_error": 3.3306690738754696e-16,
+      "effect_spectrum_error": 1.1102230246251565e-16
+    },
+    {
+      "scales": 4,
+      "promised_settings": 16,
+      "detector_settings": 30,
+      "tested_pairs": 120,
+      "pair_witness_error": 0.0,
+      "exact_minimum_carrier_dimension": 16,
+      "qubits": 4,
+      "fourier_unitarity_error": 1.0652351331675276e-14,
+      "independent_product_code_error": 3.712146111360741e-16,
+      "off_grid_probability_error": 2.7755575615628914e-16,
+      "effect_spectrum_error": 1.1102230246251565e-16
+    },
+    {
+      "scales": 5,
+      "promised_settings": 32,
+      "detector_settings": 62,
+      "tested_pairs": 496,
+      "pair_witness_error": 0.0,
+      "exact_minimum_carrier_dimension": 32,
+      "qubits": 5,
+      "fourier_unitarity_error": 2.8559134226363705e-14,
+      "independent_product_code_error": 4.0512386062567306e-16,
+      "off_grid_probability_error": 1.3322676295501878e-15,
+      "effect_spectrum_error": 4.440892098500626e-16
+    }
+  ],
+  "coherent_label_encoding": {
+    "label_dimension": 8,
+    "reference_dimension": 2,
+    "full_vector_return_error": 1.1192765525480138e-15,
+    "reference_state_error": 1.3636389252342974e-16,
+    "input_label_was_already_dimension_m": true,
+    "unknown_one_qubit_phase_amplification_claimed": false
+  },
+  "noisy_case": {
+    "scales": 4,
+    "settings": 16,
+    "mixing": 0.02,
+    "observed_uniform_probability_error": 0.010000000000000044,
+    "certified_uniform_probability_error": 0.01,
+    "max_pair_hilbert_schmidt_overlap": 0.00247500000000005,
+    "overlap_upper_bound": 0.0396,
+    "average_purity": 0.0625,
+    "carrier_dimension_lower_bound": 10.037641154328732,
+    "minimum_integer_dimension": 11,
+    "actual_carrier_dimension": 16,
+    "noisy_bound_claimed_sharp": false
+  },
+  "query_dependence": {
+    "scales": 3,
+    "one_qubit_if_preparation_can_depend_on_query": true,
+    "probability_error": 2.220446049250313e-16,
+    "preparation_trace_distance": 0.7071067811865475,
+    "satisfies_query_independent_carrier_contract": false,
+    "revisit_to_source_or_scale_record_is_additional_access": true
+  },
+  "preparation_and_measurement_independence_required": true,
+  "memory_dimension_identified_with_spatial_dimension": false,
+  "full_position_generation_completed": false,
+  "global_affine_no_go_recounted_as_new": false,
+  "checks": {
+    "run": 5,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

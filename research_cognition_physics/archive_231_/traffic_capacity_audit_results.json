@@ -1,0 +1,192 @@
+{
+  "round": 272,
+  "edge_total_service_per_slot": 1,
+  "demand": "Every node originates rate lambda; each other destination has rate lambda/(N-1).",
+  "cycle_rows": [
+    {
+      "family": "cycle",
+      "linear_size": 16,
+      "dimension_input": 1,
+      "vertices": 16,
+      "edges": 16,
+      "half_cut": 2,
+      "mean_distance_excluding_self": 4.266666666666667,
+      "cut_per_node_rate_upper_bound": 0.234375,
+      "path_work_per_node_rate_upper_bound": 0.234375
+    },
+    {
+      "family": "cycle",
+      "linear_size": 64,
+      "dimension_input": 1,
+      "vertices": 64,
+      "edges": 64,
+      "half_cut": 2,
+      "mean_distance_excluding_self": 16.253968253968253,
+      "cut_per_node_rate_upper_bound": 0.0615234375,
+      "path_work_per_node_rate_upper_bound": 0.0615234375
+    },
+    {
+      "family": "cycle",
+      "linear_size": 256,
+      "dimension_input": 1,
+      "vertices": 256,
+      "edges": 256,
+      "half_cut": 2,
+      "mean_distance_excluding_self": 64.25098039215686,
+      "cut_per_node_rate_upper_bound": 0.01556396484375,
+      "path_work_per_node_rate_upper_bound": 0.01556396484375
+    }
+  ],
+  "grid_rows": [
+    {
+      "family": "grid",
+      "linear_size": 4,
+      "dimension_input": 1,
+      "vertices": 4,
+      "edges": 3,
+      "half_cut": 1,
+      "mean_distance_excluding_self": 1.6666666666666667,
+      "cut_per_node_rate_upper_bound": 0.375,
+      "path_work_per_node_rate_upper_bound": 0.45
+    },
+    {
+      "family": "grid",
+      "linear_size": 8,
+      "dimension_input": 1,
+      "vertices": 8,
+      "edges": 7,
+      "half_cut": 1,
+      "mean_distance_excluding_self": 3.0,
+      "cut_per_node_rate_upper_bound": 0.21875,
+      "path_work_per_node_rate_upper_bound": 0.2916666666666667
+    },
+    {
+      "family": "grid",
+      "linear_size": 16,
+      "dimension_input": 1,
+      "vertices": 16,
+      "edges": 15,
+      "half_cut": 1,
+      "mean_distance_excluding_self": 5.666666666666667,
+      "cut_per_node_rate_upper_bound": 0.1171875,
+      "path_work_per_node_rate_upper_bound": 0.16544117647058823
+    },
+    {
+      "family": "grid",
+      "linear_size": 4,
+      "dimension_input": 2,
+      "vertices": 16,
+      "edges": 24,
+      "half_cut": 4,
+      "mean_distance_excluding_self": 2.6666666666666665,
+      "cut_per_node_rate_upper_bound": 0.46875,
+      "path_work_per_node_rate_upper_bound": 0.5625
+    },
+    {
+      "family": "grid",
+      "linear_size": 8,
+      "dimension_input": 2,
+      "vertices": 64,
+      "edges": 112,
+      "half_cut": 8,
+      "mean_distance_excluding_self": 5.333333333333333,
+      "cut_per_node_rate_upper_bound": 0.24609375,
+      "path_work_per_node_rate_upper_bound": 0.328125
+    },
+    {
+      "family": "grid",
+      "linear_size": 16,
+      "dimension_input": 2,
+      "vertices": 256,
+      "edges": 480,
+      "half_cut": 16,
+      "mean_distance_excluding_self": 10.666666666666666,
+      "cut_per_node_rate_upper_bound": 0.12451171875,
+      "path_work_per_node_rate_upper_bound": 0.17578125
+    },
+    {
+      "family": "grid",
+      "linear_size": 4,
+      "dimension_input": 3,
+      "vertices": 64,
+      "edges": 144,
+      "half_cut": 16,
+      "mean_distance_excluding_self": 3.8095238095238093,
+      "cut_per_node_rate_upper_bound": 0.4921875,
+      "path_work_per_node_rate_upper_bound": 0.590625
+    },
+    {
+      "family": "grid",
+      "linear_size": 8,
+      "dimension_input": 3,
+      "vertices": 512,
+      "edges": 1344,
+      "half_cut": 64,
+      "mean_distance_excluding_self": 7.890410958904109,
+      "cut_per_node_rate_upper_bound": 0.24951171875,
+      "path_work_per_node_rate_upper_bound": 0.3326822916666667
+    },
+    {
+      "family": "grid",
+      "linear_size": 16,
+      "dimension_input": 3,
+      "vertices": 4096,
+      "edges": 11520,
+      "half_cut": 256,
+      "mean_distance_excluding_self": 15.941391941391942,
+      "cut_per_node_rate_upper_bound": 0.124969482421875,
+      "path_work_per_node_rate_upper_bound": 0.17642750459558823
+    }
+  ],
+  "cycle_fractional_capacity_certificates": [
+    {
+      "vertices": 4,
+      "rate": 0.75,
+      "min_edge_load": 1.0,
+      "max_edge_load": 1.0
+    },
+    {
+      "vertices": 8,
+      "rate": 0.4375,
+      "min_edge_load": 1.0,
+      "max_edge_load": 1.0
+    },
+    {
+      "vertices": 16,
+      "rate": 0.234375,
+      "min_edge_load": 1.0,
+      "max_edge_load": 1.0
+    },
+    {
+      "vertices": 32,
+      "rate": 0.12109375,
+      "min_edge_load": 1.0,
+      "max_edge_load": 1.0
+    }
+  ],
+  "three_dimensional_grid_lambda_one_cut_deficit_per_slot": [
+    {
+      "length": 4,
+      "deficit": 16.50793650793651
+    },
+    {
+      "length": 8,
+      "deficit": 192.50097847358123
+    },
+    {
+      "length": 16,
+      "deficit": 1792.500122100122
+    }
+  ],
+  "local_load_counterexample": "Independent adjacent-edge work at rate 1/2 per edge is served immediately at capacity 1; every supplied graph family supports it.",
+  "scope": "Necessary cut and path-work inequalities for supplied classical unicast tasks and fixed service graphs; explicit fractional-flow certificates, not quantum communication, a topology generator, or a derivation of spatial dimension.",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}

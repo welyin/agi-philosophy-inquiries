@@ -1,0 +1,118 @@
+{
+  "round": 362,
+  "scope": {
+    "claim": "Exact reversible endpoint encodings with explicit compensating charge or retained memory; complete dressed logical algebras and resource bounds.",
+    "quantifiers": "Every finite AB (or N-vertex) input state, including every finite reference and all instruments represented on the code; graph fixed.",
+    "extra_inputs": [
+      "complex qubits",
+      "specified connected finite graph",
+      "specified Z2 matching constraints",
+      "blank charge/memory registers",
+      "access to incident charge qubits",
+      "ideal CNOT and dressed controls"
+    ],
+    "not_claimed": [
+      "fixed-Gauss-preserving admission from every bare input",
+      "preservation of each bare local marginal or bare local access",
+      "edge count is a universal minimal memory cost",
+      "zero physical time/energy/communication cost",
+      "derivation of gauge laws, space, or Einstein dynamics"
+    ],
+    "prior_overlap": "Pair parity isometry is round 250 up to Hadamard on its record; new audit concerns constrained logical factors and retained resources."
+  },
+  "pair": {
+    "isometry_error": 0.0,
+    "constraint_error": 0.0,
+    "reference_decoding_trace_distance": 0.0,
+    "bare_channel_formula_error": 0.0,
+    "plus_zero_bare_A_distance_from_input": 0.4999999999999999,
+    "plus_zero_bare_X_A_expectation": 0.0,
+    "plus_zero_dressed_X_A_expectation": 0.9999999999999998,
+    "encoder_fixed_G_commutator_operator_norm": 2.0,
+    "constraint_intertwiner_error": 0.0
+  },
+  "graphs": [
+    {
+      "vertices": 2,
+      "edges": 1,
+      "kinematic_qubits": 3,
+      "physical_dimension": 4,
+      "independent_constraints": 1,
+      "incidence_rank_GF2": 1,
+      "distinct_relative_parities": 2,
+      "charge_entropy_uniform_input_bits": 1.0000000000000002,
+      "CNOT_count": 2,
+      "dressed_X_support_sizes": [
+        2,
+        2
+      ],
+      "bare_matched_dimension": 2,
+      "minimum_retained_memory_dimension_for_bare_matching": 2
+    },
+    {
+      "vertices": 3,
+      "edges": 2,
+      "kinematic_qubits": 5,
+      "physical_dimension": 8,
+      "independent_constraints": 2,
+      "incidence_rank_GF2": 2,
+      "distinct_relative_parities": 4,
+      "charge_entropy_uniform_input_bits": 1.9999999999999996,
+      "CNOT_count": 4,
+      "dressed_X_support_sizes": [
+        2,
+        3,
+        2
+      ],
+      "bare_matched_dimension": 2,
+      "minimum_retained_memory_dimension_for_bare_matching": 4
+    },
+    {
+      "vertices": 3,
+      "edges": 3,
+      "kinematic_qubits": 6,
+      "physical_dimension": 8,
+      "independent_constraints": 3,
+      "incidence_rank_GF2": 2,
+      "distinct_relative_parities": 4,
+      "charge_entropy_uniform_input_bits": 1.9999999999999996,
+      "CNOT_count": 6,
+      "dressed_X_support_sizes": [
+        3,
+        3,
+        3
+      ],
+      "bare_matched_dimension": 2,
+      "minimum_retained_memory_dimension_for_bare_matching": 4
+    },
+    {
+      "vertices": 4,
+      "edges": 4,
+      "kinematic_qubits": 8,
+      "physical_dimension": 16,
+      "independent_constraints": 4,
+      "incidence_rank_GF2": 3,
+      "distinct_relative_parities": 8,
+      "charge_entropy_uniform_input_bits": 2.9999999999999987,
+      "CNOT_count": 8,
+      "dressed_X_support_sizes": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "bare_matched_dimension": 2,
+      "minimum_retained_memory_dimension_for_bare_matching": 8
+    }
+  ],
+  "next_interface": "A physical admission process needs a specified incoming charge sector, a fixed total constraint, local access and a schedule; endpoint isometries alone do not supply those dynamical resources.",
+  "checks": {
+    "run": 18,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

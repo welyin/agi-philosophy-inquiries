@@ -1,0 +1,146 @@
+{
+  "round": 386,
+  "scope": {
+    "analytic_geometric_input": "Complete locally compact separable position metric space; full nondegenerate strong dilatation axioms A0-A4 with scale group (0,infinity). These are extra inputs, not consequences of FUCP.",
+    "topology": "On a compact physical neighborhood, continuity and nondegeneracy of the tangent metric give the same topology by compact-to-Hausdorff. Buliga yields a local positively graded Lie group. A small shell is a full boundary in the real position neighborhood, not automatically an equal-distance physical sphere.",
+    "finite_scale_theorem": "A continuous traceless qubit readout on a full tangent shell transfers approximate-reversal separation to exact inverse separation when the former gap exceeds the readout modulus at the calibrated reversal error. One scale suffices; no readout limit or nonvanishing absolute visibility is required.",
+    "full_dimension_three_requires": "The separate exact lower-bound contract of round 384 at that scale; approximate covariance or sampled full rank alone is insufficient.",
+    "numerical_model": "The explicit base-dependent shear charts on a supplied R^3 are a nontrivial finite-operation calibration, not a derivation of its dimension or a demonstration on a presupposed curved manifold.",
+    "resources": "Normalization, six calibrated probe preparations, complete shell coverage and finite error moduli are explicit. The numerical perturbations are synthetic bounded calibration errors. Shot counts are analytic sufficient budgets for a stated independent Bernoulli protocol; those shots were not simulated or executed, and the counts are not universal lower bounds.",
+    "not_claimed": [
+      "All positive graduations are Carnot stratifications",
+      "The actual metric is Euclidean or shares tangent physical volume exponents",
+      "A global displacement group or a smooth compatible atlas has been obtained",
+      "Qualitative convergence supplies a usable finite convergence rate",
+      "Small physical or angular endpoint error alone makes readout error small",
+      "Derivation of SR or GR"
+    ]
+  },
+  "nonlinear_finite_operation": {
+    "base": [
+      0.7,
+      -0.2,
+      0.1
+    ],
+    "kappa": 0.4,
+    "difference_convergence": [
+      {
+        "epsilon": 0.2,
+        "finite_difference_error": 0.14773764448966076,
+        "analytic_error_bound": 0.25607951071558055
+      },
+      {
+        "epsilon": 0.1,
+        "finite_difference_error": 0.07397230761696243,
+        "analytic_error_bound": 0.12766948737794948
+      },
+      {
+        "epsilon": 0.05,
+        "finite_difference_error": 0.0370147076648555,
+        "analytic_error_bound": 0.06374390960495775
+      }
+    ],
+    "raw_inverse_norm_lower": "(1-epsilon)*(1-kappa*epsilon)",
+    "normalized_reversal_chord_bound": "2*kappa*epsilon + 2*raw_error/((1-epsilon)*(1-kappa*epsilon))"
+  },
+  "relative_precision_certificates": [
+    {
+      "epsilon": 0.25,
+      "visibility": 0.0625,
+      "probability_error": 0.000625,
+      "ports": 114,
+      "reversal_chord_bound": 0.2,
+      "sample_observed_gap": 0.06151342895492243,
+      "sample_true_approximate_reversal_gap": 0.06244552910327739,
+      "certified_exact_inverse_gap": 0.028554672839291077,
+      "certificate_over_visibility": 0.45687476542865724,
+      "true_exact_inverse_gap": 0.0625,
+      "sufficient_independent_shots_per_setting": 16024861,
+      "sufficient_total_shots": 21922009848
+    },
+    {
+      "epsilon": 0.125,
+      "visibility": 0.015625,
+      "probability_error": 0.00015625,
+      "ports": 114,
+      "reversal_chord_bound": 0.1,
+      "sample_observed_gap": 0.015410825726185127,
+      "sample_true_approximate_reversal_gap": 0.015621854509194651,
+      "certified_exact_inverse_gap": 0.007952386697277287,
+      "certificate_over_visibility": 0.5089527486257464,
+      "true_exact_inverse_gap": 0.015625,
+      "sufficient_independent_shots_per_setting": 256397773,
+      "sufficient_total_shots": 350752153464
+    },
+    {
+      "epsilon": 0.0625,
+      "visibility": 0.00390625,
+      "probability_error": 3.90625e-05,
+      "ports": 114,
+      "reversal_chord_bound": 0.05,
+      "sample_observed_gap": 0.003855419309539056,
+      "sample_true_approximate_reversal_gap": 0.0039060622467463257,
+      "certified_exact_inverse_gap": 0.002088465802312096,
+      "certificate_over_visibility": 0.5346472453918966,
+      "true_exact_inverse_gap": 0.00390625,
+      "sufficient_independent_shots_per_setting": 4102364354,
+      "sufficient_total_shots": 5612034436272
+    }
+  ],
+  "fixed_precision_failure": {
+    "epsilon": 0.001,
+    "visibility": 1e-06,
+    "probability_error": 1e-05,
+    "ports": 114,
+    "reversal_chord_bound": 0.0008,
+    "sample_observed_gap": 2.402166388019402e-06,
+    "sample_true_approximate_reversal_gap": 9.999999882904765e-07,
+    "certified_exact_inverse_gap": -3.263194884505687e-05,
+    "certificate_over_visibility": -32.631948845056876,
+    "true_exact_inverse_gap": 1e-06,
+    "sufficient_independent_shots_per_setting": 62597112324,
+    "sufficient_total_shots": 85632849659232
+  },
+  "high_frequency_counterexample": [
+    {
+      "even_k": 20,
+      "reversal_angular_error": 0.15707963267948966,
+      "actual_readout_gap": 1.0,
+      "exact_inverse_readout_gap": 1.2246467991473533e-15,
+      "readout_modulus_at_reversal_error": 1.0
+    },
+    {
+      "even_k": 200,
+      "reversal_angular_error": 0.015707963267948967,
+      "actual_readout_gap": 1.0,
+      "exact_inverse_readout_gap": 1.964386723728472e-15,
+      "readout_modulus_at_reversal_error": 1.0
+    },
+    {
+      "even_k": 2000,
+      "reversal_angular_error": 0.0015707963267948967,
+      "actual_readout_gap": 1.0,
+      "exact_inverse_readout_gap": 3.2141664592756335e-13,
+      "readout_modulus_at_reversal_error": 1.0
+    }
+  ],
+  "finite_sampling": {
+    "net_reused_from_round": 382,
+    "sphere_positive_calibration_ports": 114,
+    "known_chord_cover_radius_upper": 0.39269908169872414,
+    "unknown_dimension_coverage_warning": "This supplied S^2 net does not certify that an unknown physical boundary has no hidden directions."
+  },
+  "primary_sources": [
+    "https://imar.ro/~mbuliga/buliga10.pdf",
+    "https://pi.math.cornell.edu/~hatcher/AT/ATch2.pdf"
+  ],
+  "checks": {
+    "run": 12,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "round": 380,
+  "scope": "A conditional bridge from a complete qubit effect interface to the dimension of an already supplied local topological position boundary. Continuous injective labelling, transitive physically implemented redirection covariance and contrast tomography are additional inputs. Finite calibration certifies selected qubit contrasts subject to error budgets; it cannot establish the global boundary or absence of hidden directions.",
+  "latitude_counterexample": {
+    "boundary": "S^1 (local position dimension d=2)",
+    "a": 0.6,
+    "b": 0.8,
+    "normalized_state_tomography_rank": 3,
+    "effects_plus_normalization_rank": 4,
+    "contrast_rank": 2,
+    "haar_mean_effect_bloch_vector": [
+      0.0,
+      0.0,
+      0.8
+    ],
+    "reconstruction_error": 1.2412670766236366e-16,
+    "same_contrast_state_bloch_vectors": [
+      [
+        0.4,
+        0.0,
+        0.5
+      ],
+      [
+        0.4,
+        0.0,
+        -0.5
+      ]
+    ],
+    "contrast_disagreement": 5.551115123125783e-17,
+    "orientation_mean_probability_gap": 0.4000000000000001
+  },
+  "conditional_theorem": {
+    "covariance_scope": "The same group action maps the entire effect family by E_(g.x)=U_g E_x U_g^dagger; pairwise unitary equivalence is insufficient.",
+    "contrast_condition": "span_R{E_x-E_y}=Herm_0(2)",
+    "equivalent_condition_within_one_unitary_orbit": "ordinary normalized-state tomography AND scalar Haar-mean effect",
+    "topological_conclusion": "X homeomorphic to S^2; if X=S^(d-1), d=3",
+    "d1_audit": "Two settings have contrast dimension at most one.",
+    "without_sphere_topology": "The 12-element tetrahedral rotation group has a four-point, contrast-complete orbit with scalar mean."
+  },
+  "four_setting_certificate": {
+    "tetrahedral_vectors": [
+      [
+        0.5773502691896258,
+        0.5773502691896258,
+        0.5773502691896258
+      ],
+      [
+        0.5773502691896258,
+        -0.5773502691896258,
+        -0.5773502691896258
+      ],
+      [
+        -0.5773502691896258,
+        0.5773502691896258,
+        -0.5773502691896258
+      ],
+      [
+        -0.5773502691896258,
+        -0.5773502691896258,
+        0.5773502691896258
+      ]
+    ],
+    "contrast_matrix": [
+      [
+        0.0,
+        -0.5773502691896258,
+        -0.5773502691896258
+      ],
+      [
+        -0.5773502691896258,
+        0.0,
+        -0.5773502691896258
+      ],
+      [
+        -0.5773502691896258,
+        -0.5773502691896258,
+        0.0
+      ]
+    ],
+    "singular_values": [
+      1.154700538379252,
+      0.577350269189626,
+      0.5773502691896258
+    ],
+    "minimum_settings": 4,
+    "exact_mean_effect": "I/2"
+  },
+  "finite_calibration": {
+    "eta": 0.75,
+    "preparation_bloch_error_bound": 0.003,
+    "each_probability_error_bound": 0.0005,
+    "estimated_contrast_matrix": [
+      [
+        0.0033577061066103475,
+        -0.5760201541850439,
+        -0.5749089859624403
+      ],
+      [
+        -0.5742327132896534,
+        0.0014652981009213306,
+        -0.5748066667227058
+      ],
+      [
+        -0.5763223925639318,
+        -0.5783450784724328,
+        0.0017278293666230422
+      ]
+    ],
+    "actual_matrix_error": 0.006289520611047032,
+    "matrix_error_bound": 0.032,
+    "measured_sigma_min": 0.5775363425813448,
+    "certified_sigma_min_lower": 0.5455363425813448,
+    "true_sigma_min": 0.5773502691896258,
+    "new_state_bloch_error": 0.0031542344083610764,
+    "new_state_bloch_error_bound": 0.059606415375925474,
+    "calibration_setting_preparation_pairs": 16,
+    "new_state_measurement_settings": 4
+  },
+  "resource_scope": [
+    "Complete qubit carrier and independently calibrated preparations are inputs.",
+    "Repeated preparation is required; there is no single-copy state or direction readout.",
+    "16 calibration probabilities and 4 new-state probabilities are not 20 shots.",
+    "Error budgets must be justified by separate preparation and statistical evidence.",
+    "Carrier tomography does not require all degrees of freedom of every particle to be directional.",
+    "No derived spatial dynamics, metric scale, manifold existence or autonomous controller."
+  ],
+  "sources": [
+    "https://arxiv.org/html/1206.0630v4"
+  ],
+  "checks": {
+    "run": 15,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

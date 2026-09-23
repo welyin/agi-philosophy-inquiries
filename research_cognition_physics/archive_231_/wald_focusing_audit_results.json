@@ -1,0 +1,52 @@
+{
+  "round": 319,
+  "scope": "Classical scalar-tensor action F(phi)R/(2*kappa)-1/2(grad phi)^2, kappa=8*pi*G>0, F=1-kappa*xi*phi^2>0. Exact plane-wave reduction; future equilibrium and a regular null patch are supplied. No quantum entropy or derivation of the field equations.",
+  "parameters": {
+    "xi": 0.8,
+    "amplitude": 0.6,
+    "shear": 0.03,
+    "kappa": 1.0
+  },
+  "minimum_F": 0.712,
+  "minimum_transverse_radius": 0.30535641150116,
+  "initial_W": 0.09324253804486576,
+  "final_W": 1.0,
+  "minimum_W_rate": 6.647141241283223e-48,
+  "area_decrease_control": {
+    "lambda": 0.705078125,
+    "area_rate": -0.5472884460746585,
+    "W_rate": 0.6987738775813334,
+    "F_rate": 1.1110042829497067
+  },
+  "integrated_focusing_error": 9.145143309297055e-09,
+  "independent_entropy_ODE_error": 6.83951784097303e-11,
+  "RK4_convergence": [
+    {
+      "steps": 32,
+      "initial_r_error": 2.5778059625780614e-06
+    },
+    {
+      "steps": 64,
+      "initial_r_error": 1.6519184925511965e-07
+    },
+    {
+      "steps": 128,
+      "initial_r_error": 1.0409533068855836e-08
+    }
+  ],
+  "wrong_future_boundary_control": {
+    "terminal_Theta": -0.4,
+    "initial_W": 1.4400000000001092,
+    "final_W": 1.0
+  },
+  "next_interface": "Conformal Einstein-frame area and affine generator must be checked together, including the induced scalar kinetic term.",
+  "checks": {
+    "run": 10,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

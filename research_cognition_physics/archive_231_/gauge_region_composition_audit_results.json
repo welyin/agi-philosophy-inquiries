@@ -1,0 +1,85 @@
+{
+  "scope": "Specified finite Z2 gauge constraint and fixed regional electric algebras; not a derivation of gauge symmetry, gravity, general gravitational factorization, or failure of complex-quantum local tomography for independent systems.",
+  "hypothesis_tested": "Do adjacent constrained regions automatically form two independently preparable full quantum types?",
+  "cycle": {
+    "links": 4,
+    "kinematic_dimension": 16,
+    "physical_dimension": 2,
+    "gauge_invariant_pauli_count": 32,
+    "physical_full_algebra_rank": 4,
+    "region_A_algebra_rank": 2,
+    "region_B_algebra_rank": 2,
+    "shared_algebra_rank": 2,
+    "product_regional_observable_rank": 2
+  },
+  "phase_witness": {
+    "physical_trace_distance": 0.9999999999999998,
+    "max_regional_product_expectation_difference": 2.773339119917618e-32,
+    "wilson_loop_expectations": [
+      0.9999999999999994,
+      -0.9999999999999994
+    ]
+  },
+  "boundary_extension": {
+    "extended_dimension": 4,
+    "sewn_dimension": 2,
+    "physical_projector": "(I+Z_A Z_B)/2",
+    "independent_maximally_mixed_probability_in_physical_sector": 0.5,
+    "postselection_success": [
+      1.0,
+      0.4999999999999998,
+      0.75
+    ],
+    "normalized_branch_nonaffinity_witness": 0.11785113019775798,
+    "normalized_branch_nonaffinity_exact": 0.1178511301977579
+  },
+  "energy_account": {
+    "penalty": "Delta/2 sum_v (I-G_v), Delta>0",
+    "smallest_positive_energy_over_Delta": 2,
+    "open_string_endpoint_cost_over_Delta": 2,
+    "closed_loop_endpoint_cost_over_Delta": 0
+  },
+  "entropy_bits": [
+    {
+      "p": 0.2,
+      "regional": 0.7219280948873623,
+      "pure_global": 0.0,
+      "dephased_global": 0.7219280948873623
+    },
+    {
+      "p": 0.5,
+      "regional": 1.0,
+      "pure_global": 0.0,
+      "dephased_global": 1.0
+    },
+    {
+      "p": 0.8,
+      "regional": 0.7219280948873623,
+      "pure_global": 0.0,
+      "dephased_global": 0.7219280948873623
+    }
+  ],
+  "proved": [
+    "All gauge-invariant observables strictly supported on a proper part of a connected cycle reduce to the shared span of I and logical Z.",
+    "The complete physical algebra is M2(C), including the nonlocal Wilson loop and complex phase.",
+    "Independent regional preparation cannot give arbitrary flux pairs under the gluing constraint.",
+    "An isometric boundary encoding preserves every unknown logical state with its reference; neither reduced region is a copy.",
+    "Projecting independently prepared boundary states has a success cost and its normalized branch is not an affine channel.",
+    "A full tensor-product ultraviolet space and a constrained nonfactorizing low-energy sector can coexist."
+  ],
+  "not_proved": [
+    "Cognitive origin of Gauss constraints",
+    "A preferred regional algebra",
+    "Gravitational boundary algebra or Einstein dynamics",
+    "Universal absence of all tensor decompositions"
+  ],
+  "sources": [
+    "https://arxiv.org/pdf/1312.1183",
+    "https://arxiv.org/html/1601.04744v2"
+  ],
+  "checks": {
+    "run": 13,
+    "failures": 0,
+    "errors": 0
+  }
+}

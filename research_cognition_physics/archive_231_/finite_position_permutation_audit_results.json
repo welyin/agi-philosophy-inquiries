@@ -1,0 +1,183 @@
+{
+  "round": 388,
+  "scope": {
+    "theorem": "A homeomorphism of one full shell S^(n-1), four distinct positions, and four pairwise disjoint connected sets pairing sigma=(123)(4) imply n>=3.",
+    "required_inputs": [
+      "A complete actual position shell and its sphere identity",
+      "One actual global position homeomorphism",
+      "Connected regions or actual continuous connecting paths",
+      "Calibrated error bounds and, for path sampling, a known common position-readout continuity modulus"
+    ],
+    "metric_certificate": "s_hat-eta_s-2*(e_hat+eta_e)>0 is sufficient only with separately certified connected balls, for example a geodesic metric.",
+    "path_certificate": "The same position-only readout is used on all paths, with matched internal/controller preparation. Finite samples need a uniform parameter coverage modulus.",
+    "reused": "Round-380 tetrahedral_group and TETRA supply the seed rotation and points; their old group closure is not counted as new science.",
+    "not_claimed": [
+      "The whole map has order three",
+      "The whole A4 presentation holds",
+      "The map sends entire connected regions into each other",
+      "Arbitrary compatible metric balls are connected",
+      "Finite calibration alone proves actual position identity or a global homeomorphism",
+      "FUCP alone supplies the geometry or redirection",
+      "This lower bound alone selects exactly three dimensions"
+    ]
+  },
+  "circle_order_obstruction": {
+    "sigma_zero_based": [
+      1,
+      2,
+      0,
+      3
+    ],
+    "all_label_orders_checked": 24,
+    "compatible_dihedral_orders_for_sigma": 0,
+    "dimension_one": "Four disjoint nonempty sets cannot fit in S^0."
+  },
+  "perturbed_actual_rotation": {
+    "angle": 0.14,
+    "axis": [
+      0.31360072921443005,
+      -0.5044881296058222,
+      0.8044540445065814
+    ],
+    "seed": [
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      [
+        -1.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "actual": [
+      [
+        0.0679295621140031,
+        0.9911782081485946,
+        0.11380392911644616
+      ],
+      [
+        0.0477315383054953,
+        0.11070811680075707,
+        -0.9927061061187349
+      ],
+      [
+        -0.9965476781579449,
+        0.07286612769848029,
+        -0.03979010671307545
+      ]
+    ],
+    "a_cubed_operator_defect": 0.23485985482037158,
+    "s_min": 1.9106332362490186,
+    "e_max": 0.1399956549768341,
+    "eta_s": 0.01,
+    "eta_e": 0.005,
+    "s_lower": 1.8926332362490186,
+    "e_upper": 0.14899565497683412,
+    "certified_margin": 1.5946419262953504,
+    "connected_ball_radius": 0.5476561365506717
+  },
+  "continuous_path_readout_certificate": {
+    "paths": 4,
+    "samples_per_path": 9,
+    "binary_settings_per_sample": 3,
+    "mean_probabilities_to_estimate": 108,
+    "position_effect_visibility": 0.7,
+    "vector_readout_error_bound": 0.002,
+    "parameter_cover_radius": 0.0625,
+    "readout_modulus_at_cover_radius": 0.0030625,
+    "certified_all_times_cross_path_readout_separation": 0.533330942334765,
+    "samples_are_not_measurement_shot_count": true
+  },
+  "sharpness_from_circle_homeomorphisms": [
+    {
+      "kappa": 0.025,
+      "s_min": 0.25,
+      "e_max": 0.15000000000000002,
+      "margin": -0.050000000000000044,
+      "slopes": [
+        -0.2,
+        -1.4,
+        -1.0,
+        -1.4
+      ],
+      "Lipschitz": 1.4,
+      "inverse_Lipschitz": 5.0
+    },
+    {
+      "kappa": 0.005,
+      "s_min": 0.25,
+      "e_max": 0.13,
+      "margin": -0.010000000000000009,
+      "slopes": [
+        -0.04,
+        -1.48,
+        -1.0,
+        -1.48
+      ],
+      "Lipschitz": 1.48,
+      "inverse_Lipschitz": 25.0
+    },
+    {
+      "kappa": 0.001,
+      "s_min": 0.25,
+      "e_max": 0.126,
+      "margin": -0.0020000000000000018,
+      "slopes": [
+        -0.008,
+        -1.496,
+        -1.0,
+        -1.496
+      ],
+      "Lipschitz": 1.496,
+      "inverse_Lipschitz": 125.0
+    }
+  ],
+  "insufficient_contracts": {
+    "only_three_positions": "A circle rotation by 1/3 realizes an exact three-cycle.",
+    "continuous_but_not_homeomorphism": "t -> 2t mod 1 cycles 1/7,2/7,4/7 and fixes 0.",
+    "compatible_metric_without_connected_balls": {
+      "centers": [
+        0.0,
+        0.25,
+        0.5,
+        0.75
+      ],
+      "images": [
+        0.07,
+        0.32,
+        0.5700000000000001,
+        0.8200000000000001
+      ],
+      "s_min": 1.439213562373095,
+      "e_max": 0.043,
+      "naive_margin": 1.353213562373095,
+      "radius": 0.1,
+      "included_pair_distances_from_zero": [
+        0.0,
+        0.04300000000000236
+      ],
+      "excluded_separators_distances_from_zero": [
+        1.421213562373095,
+        1.439213562373095
+      ]
+    },
+    "uncontrolled_path_sampling": "At times 0 and 1, path 0 is read as zero; its triangular excursion reaches the constant path 1 at time 1/2. The certified modulus rejects the false endpoint-only certificate."
+  },
+  "source": "https://arxiv.org/pdf/math/0607481v3",
+  "checks": {
+    "run": 11,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

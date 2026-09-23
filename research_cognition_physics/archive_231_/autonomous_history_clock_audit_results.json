@@ -1,0 +1,177 @@
+{
+  "round": 346,
+  "scope": "Engineered finite autonomous processor with internal orthogonal program and exact arrival; no derived spatial locality or GR and no autonomous preparation/readout.",
+  "full_demonstrator_dimension": 108,
+  "catalogue": [
+    "H_on_first_qubit",
+    "T_on_first_qubit",
+    "CNOT"
+  ],
+  "program_count": 9,
+  "arrival_time_omega_one": 3.141592653589793,
+  "program_transfers": [
+    {
+      "program": [
+        0,
+        0
+      ],
+      "reference_vector_error": 1.851223649388999e-15
+    },
+    {
+      "program": [
+        0,
+        1
+      ],
+      "reference_vector_error": 2.210645611823581e-15
+    },
+    {
+      "program": [
+        0,
+        2
+      ],
+      "reference_vector_error": 2.1504692930650817e-15
+    },
+    {
+      "program": [
+        1,
+        0
+      ],
+      "reference_vector_error": 2.1367691773993744e-15
+    },
+    {
+      "program": [
+        1,
+        1
+      ],
+      "reference_vector_error": 2.1597660778764988e-15
+    },
+    {
+      "program": [
+        1,
+        2
+      ],
+      "reference_vector_error": 2.222930805464374e-15
+    },
+    {
+      "program": [
+        2,
+        0
+      ],
+      "reference_vector_error": 2.3053034510791167e-15
+    },
+    {
+      "program": [
+        2,
+        1
+      ],
+      "reference_vector_error": 2.4559406065217885e-15
+    },
+    {
+      "program": [
+        2,
+        2
+      ],
+      "reference_vector_error": 2.286166501773181e-15
+    }
+  ],
+  "resource_budgets": [
+    {
+      "gates": 1,
+      "max_hop_norm": 1.0,
+      "omega": 2.0,
+      "exact_arrival_time": 1.5707963267948966,
+      "all_path_pointer_lower_bound": 0.5,
+      "hamiltonian_norm": 1.0,
+      "spectral_width": 2.0,
+      "dimension_for_three_symbols_and_four_data_states": 24,
+      "readout_delta_for_failure_bound_0.01": 0.1
+    },
+    {
+      "gates": 2,
+      "max_hop_norm": 1.0,
+      "omega": 1.414213562373095,
+      "exact_arrival_time": 2.221441469079183,
+      "all_path_pointer_lower_bound": 1.0,
+      "hamiltonian_norm": 1.414213562373095,
+      "spectral_width": 2.82842712474619,
+      "dimension_for_three_symbols_and_four_data_states": 108,
+      "readout_delta_for_failure_bound_0.01": 0.1
+    },
+    {
+      "gates": 4,
+      "max_hop_norm": 1.0,
+      "omega": 0.8164965809277261,
+      "exact_arrival_time": 3.847649490485592,
+      "all_path_pointer_lower_bound": 2.0,
+      "hamiltonian_norm": 1.6329931618554523,
+      "spectral_width": 3.2659863237109046,
+      "dimension_for_three_symbols_and_four_data_states": 1620,
+      "readout_delta_for_failure_bound_0.01": 0.1224744871391589
+    },
+    {
+      "gates": 8,
+      "max_hop_norm": 1.0,
+      "omega": 0.4472135954999579,
+      "exact_arrival_time": 7.024814731040727,
+      "all_path_pointer_lower_bound": 4.0,
+      "hamiltonian_norm": 1.7888543819998317,
+      "spectral_width": 3.5777087639996634,
+      "dimension_for_three_symbols_and_four_data_states": 236196,
+      "readout_delta_for_failure_bound_0.01": 0.15811388300841897
+    },
+    {
+      "gates": 16,
+      "max_hop_norm": 1.0,
+      "omega": 0.23570226039551587,
+      "exact_arrival_time": 13.328648814475097,
+      "all_path_pointer_lower_bound": 8.0,
+      "hamiltonian_norm": 1.885618083164127,
+      "spectral_width": 3.771236166328254,
+      "dimension_for_three_symbols_and_four_data_states": 2927177028,
+      "readout_delta_for_failure_bound_0.01": 0.21213203435596426
+    },
+    {
+      "gates": 32,
+      "max_hop_norm": 1.0,
+      "omega": 0.12126781251816648,
+      "exact_arrival_time": 25.906236686830383,
+      "all_path_pointer_lower_bound": 16.0,
+      "hamiltonian_norm": 1.9402850002906638,
+      "spectral_width": 3.8805700005813275,
+      "dimension_for_three_symbols_and_four_data_states": 244598664928443012,
+      "readout_delta_for_failure_bound_0.01": 0.29154759474226505
+    },
+    {
+      "gates": 64,
+      "max_hop_norm": 1.0,
+      "omega": 0.06154574548966636,
+      "exact_arrival_time": 51.04483873897136,
+      "all_path_pointer_lower_bound": 32.0,
+      "hamiltonian_norm": 1.9694638556693236,
+      "spectral_width": 3.938927711338647,
+      "dimension_for_three_symbols_and_four_data_states": 892757793276053246011040763213060,
+      "readout_delta_for_failure_bound_0.01": 0.4062019202317981
+    }
+  ],
+  "clock_return_time_omega_one": 6.283185307179586,
+  "classical_program_label_preserved": true,
+  "arbitrary_coherent_program_state_preserved": false,
+  "added_inputs": [
+    "chosen unitary catalogue",
+    "orthogonal length-L program memory",
+    "L+1 clock levels initially localized at zero",
+    "engineered square-root hopping couplings",
+    "prepared unknown data and any external reference",
+    "calibrated readout time and access",
+    "no claim of bounded geometric interaction range"
+  ],
+  "checks": {
+    "run": 17,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

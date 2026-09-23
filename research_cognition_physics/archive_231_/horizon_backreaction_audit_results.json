@@ -1,0 +1,95 @@
+{
+  "round": 304,
+  "scope": "Known Jacobson argument under supplied area entropy, Unruh temperature, all-horizon equilibrium and conserved matter; classical scalar backreaction calibration, not first-principles cognition-to-gravity derivation.",
+  "inputs": {
+    "dimension": 4,
+    "entropy_density_sigma": 6.283185307179586,
+    "hbar": 1.0,
+    "beta_8piG": 1.0,
+    "scalar_xi": 0.0,
+    "scalar_mass": 0.0,
+    "spatial_curvature": 0.0,
+    "homogeneous_scalar": true
+  },
+  "null_tensor_interface": {
+    "directions": 9,
+    "rank": 9,
+    "axis_only_rank": 6,
+    "metric_kernel_error": 2.220446049250313e-16,
+    "trace_free_reconstruction_error": 1.1102230246251565e-15
+  },
+  "stiff_scalar_background": {
+    "time_interval": [
+      1.0,
+      4.0
+    ],
+    "steps": [
+      32,
+      64,
+      128
+    ],
+    "endpoint_errors": [
+      8.698168010301544e-07,
+      5.0160938069865324e-08,
+      3.0092788261271153e-09
+    ],
+    "error_ratios": [
+      17.34052102093173,
+      16.668757190047923
+    ],
+    "constraint_drifts": [
+      4.163336342344337e-17,
+      2.7755575615628914e-17,
+      4.5102810375396984e-17
+    ],
+    "momentum_drifts": [
+      8.986795335674813e-07,
+      5.1126889166752676e-08,
+      3.04667335804254e-09
+    ],
+    "exact_final_state": [
+      1.5874010519681994,
+      1.131904606013777,
+      0.2041241452319315,
+      0.08333333333333333
+    ],
+    "initial_R": -0.6666666666666666,
+    "final_R": -0.041666666666666664
+  },
+  "integration_constant_branches": [
+    {
+      "initial_H": 0.3333333333333333,
+      "Lambda": 0.0,
+      "final_a": 1.5874010518136243,
+      "max_constant_drift": 8.326672684688674e-17
+    },
+    {
+      "initial_H": 0.5,
+      "Lambda": 0.4166666666666667,
+      "final_a": 3.2237421420559946,
+      "max_constant_drift": 1.2486300882130763e-10
+    }
+  ],
+  "conserved_test_field_on_fixed_de_sitter": {
+    "t": 0.0,
+    "rho": 0.5,
+    "p": 0.5,
+    "continuity_residual": 0.0,
+    "null_closure_residual": -1.0
+  },
+  "remaining_inputs": [
+    "area entropy law and coefficient",
+    "physical Unruh/KMS response",
+    "local equilibrium for all null directions",
+    "state and cosmological constant selection"
+  ],
+  "checks": {
+    "run": 10,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "round": 340,
+  "scope": "Classical Einstein plus a canonical phi and a disformal massless chi, zero potentials, expanding spatially flat homogeneous backgrounds with positive phi velocity. For positive C2 coupling D(phi) on phi>=phi0, a global logarithmic-slope band extends the round-338 bootstrap to a function class. No uniform bound on beta_phi is required for homogeneous attraction or principal hyperbolicity; lower-derivative perturbations, actual EFT frequency windows, nonlinear stability and derivation from cognition remain unproved.",
+  "literature_interface": {
+    "source": "https://arxiv.org/html/1510.01650",
+    "location": "General coupling action and section 3.1, equations 43-46; only the principal part is imported, with conformal factor one and zero potentials."
+  },
+  "analytic_class": {
+    "initial_fraction_interval": [
+      0.09,
+      0.1
+    ],
+    "initial_q_interval": "(0,0.4]",
+    "global_beta_sqrt6_minus6_bound": 0.01,
+    "temporary_fraction_lower": 0.02,
+    "proved_fraction_lower": 0.022193726754744583,
+    "q_bound": "q(N) <= q0 exp(-0.0225 N)",
+    "phi_prime_interval": [
+      2.32379000772445,
+      2.449489742783178
+    ],
+    "uniform_beta_phi_bound_required": false,
+    "low_frequency_stability_claimed": false
+  },
+  "nonexponential_trajectories": [
+    {
+      "initial_fraction": 0.09,
+      "slope_band_amplitude": 0.01,
+      "field_frequency": 1.0,
+      "end_log_scale_factor": 100.0,
+      "end_fraction": 0.04152579363835655,
+      "end_q": 1.140200571670546e-06,
+      "end_phi": 239.5026342973795,
+      "end_phi_mode_speed_squared": 0.9999999506009037,
+      "end_theta_mode_speed_squared": 0.9999988597994284,
+      "maximum_sampled_slope_offset": 0.00999999999999801,
+      "fraction_lower_bound": 0.022193726754744583
+    },
+    {
+      "initial_fraction": 0.1,
+      "slope_band_amplitude": -0.01,
+      "field_frequency": 1.0,
+      "end_log_scale_factor": 100.0,
+      "end_fraction": 0.046126775823662786,
+      "end_q": 2.7796347641767734e-07,
+      "end_phi": 238.9251407774959,
+      "end_phi_mode_speed_squared": 0.9999999865584227,
+      "end_theta_mode_speed_squared": 0.9999997220365235,
+      "maximum_sampled_slope_offset": 0.010000000000000675,
+      "fraction_lower_bound": 0.02465969639416065
+    },
+    {
+      "initial_fraction": 0.1,
+      "slope_band_amplitude": 0.01,
+      "field_frequency": 7.0,
+      "end_log_scale_factor": 100.0,
+      "end_fraction": 0.046111192741298095,
+      "end_q": 2.7965521789972556e-07,
+      "end_phi": 238.92698260593096,
+      "end_phi_mode_speed_squared": 0.9999999864814041,
+      "end_theta_mode_speed_squared": 0.9999997203447821,
+      "maximum_sampled_slope_offset": 0.00999999999999801,
+      "fraction_lower_bound": 0.02465969639416065
+    }
+  ],
+  "independent_routh_charge_einstein_checks": {
+    "frequency_one": {
+      "maximum_fraction_difference": 3.9150627184625364e-13,
+      "maximum_q_difference": 6.510347816401918e-12,
+      "maximum_phi_difference": 7.847944516470307e-12,
+      "maximum_log_H_difference": 1.9888979352344904e-11,
+      "maximum_friedmann_residual": 4.086444724271665e-14,
+      "maximum_pressure_work_residual": 8.326672684688674e-16
+    },
+    "frequency_seven": {
+      "maximum_fraction_difference": 3.9065972678997696e-13,
+      "maximum_q_difference": 6.5144001304418e-12,
+      "maximum_phi_difference": 7.881695296418911e-12,
+      "maximum_log_H_difference": 1.9984014443252818e-11,
+      "maximum_friedmann_residual": 4.1039220632921314e-14,
+      "maximum_pressure_work_residual": 8.881784197001252e-16
+    }
+  },
+  "phase_step_refinement_error_f_q": 1.7920013806183022e-09,
+  "zero_occupation_nonattracting_control": {
+    "amplitude": 0.01,
+    "frequency": 1.0,
+    "exact_solution": "f=0; phi=sqrt(6) N; q=0.4 exp[0.01 sin(sqrt(6) N)/sqrt(6)]",
+    "all_future_q_bounds": [
+      0.3983703356400117,
+      0.40163633103591434
+    ]
+  },
+  "unbounded_curvature_family_at_identical_local_state": [
+    {
+      "field_frequency": 1.0,
+      "D_at_phi_zero": 0.6,
+      "beta_at_phi_zero": 2.449489742783178,
+      "beta_phi_at_phi_zero": -0.004082482904638631,
+      "global_slope_offset_bound": 0.01
+    },
+    {
+      "field_frequency": 1000.0,
+      "D_at_phi_zero": 0.6,
+      "beta_at_phi_zero": 2.449489742783178,
+      "beta_phi_at_phi_zero": -4.08248290463863,
+      "global_slope_offset_bound": 0.01
+    },
+    {
+      "field_frequency": 1000000.0,
+      "D_at_phi_zero": 0.6,
+      "beta_at_phi_zero": 2.449489742783178,
+      "beta_phi_at_phi_zero": -4082.4829046386303,
+      "global_slope_offset_bound": 0.01
+    }
+  ],
+  "next_interface": "Separate global functional selection from finite-window evidence; examine lower-derivative perturbations or an EFT validity window without treating a slope-band theorem as universal physical coupling.",
+  "checks": {
+    "run": 11,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

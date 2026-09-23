@@ -1,0 +1,127 @@
+{
+  "round": 275,
+  "receiver_update": "Terminal K2 refinement: old incident edge goes to child one, old data remain at child zero; each growth creates one node and one edge.",
+  "distance_identity_before_delivery": "D(t)=d+G(t)-t.",
+  "delivery_criterion": "First t with t-G(t)>=d; infinite pause count is necessary and sufficient to serve every finite d for schedules with growth in {0,1}.",
+  "eight_hop_cases": [
+    {
+      "policy": "none",
+      "initial_distance": 8,
+      "delivered_at": 8,
+      "observed_until": 8,
+      "remaining_distance": 0,
+      "new_nodes_and_channels": 0,
+      "message_edge_uses": 8,
+      "final_graph": {
+        "vertices": 9,
+        "edges": 8,
+        "components": 1,
+        "cycle_rank": 0,
+        "max_degree": 2
+      }
+    },
+    {
+      "policy": "every_slot",
+      "initial_distance": 8,
+      "delivered_at": null,
+      "observed_until": 256,
+      "remaining_distance": 8,
+      "new_nodes_and_channels": 256,
+      "message_edge_uses": 256,
+      "final_graph": {
+        "vertices": 265,
+        "edges": 264,
+        "components": 1,
+        "cycle_rank": 0,
+        "max_degree": 2
+      }
+    },
+    {
+      "policy": "pause_every_2",
+      "initial_distance": 8,
+      "delivered_at": 16,
+      "observed_until": 16,
+      "remaining_distance": 0,
+      "new_nodes_and_channels": 8,
+      "message_edge_uses": 16,
+      "final_graph": {
+        "vertices": 17,
+        "edges": 16,
+        "components": 1,
+        "cycle_rank": 0,
+        "max_degree": 2
+      }
+    },
+    {
+      "policy": "pause_every_4",
+      "initial_distance": 8,
+      "delivered_at": 32,
+      "observed_until": 32,
+      "remaining_distance": 0,
+      "new_nodes_and_channels": 24,
+      "message_edge_uses": 32,
+      "final_graph": {
+        "vertices": 33,
+        "edges": 32,
+        "components": 1,
+        "cycle_rank": 0,
+        "max_degree": 2
+      }
+    },
+    {
+      "policy": "pause_at_squares",
+      "initial_distance": 8,
+      "delivered_at": 64,
+      "observed_until": 64,
+      "remaining_distance": 0,
+      "new_nodes_and_channels": 56,
+      "message_edge_uses": 64,
+      "final_graph": {
+        "vertices": 65,
+        "edges": 64,
+        "components": 1,
+        "cycle_rank": 0,
+        "max_degree": 2
+      }
+    }
+  ],
+  "square_pause_delivery_times": [
+    {
+      "distance": 1,
+      "delivered_at": 1
+    },
+    {
+      "distance": 2,
+      "delivered_at": 4
+    },
+    {
+      "distance": 4,
+      "delivered_at": 16
+    },
+    {
+      "distance": 8,
+      "delivered_at": 64
+    },
+    {
+      "distance": 12,
+      "delivered_at": 144
+    }
+  ],
+  "quantum_preservation_example": {
+    "joint_reference_fidelity": 1.0,
+    "logical_slots": 4,
+    "qubit_transmissions": 4,
+    "new_blank_node_registers": 2,
+    "separate_inbox_registers": 1
+  },
+  "scope": "A conditional causal graph-rewrite/routing counterexample and an explicit scheduling remedy. Static connectivity and state-preserving refinement do not guarantee delivery to a growing logical endpoint. The infinite failure follows analytically; finite simulations audit the rewrite and distance identity. No physical speed, natural growth law or spatial dimension is derived.",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "checks": {
+    "run": 9,
+    "failures": 0,
+    "errors": 0
+  }
+}

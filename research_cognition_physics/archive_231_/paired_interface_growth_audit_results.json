@@ -1,0 +1,139 @@
+{
+  "round": 268,
+  "exhaustive": {
+    "five_vertex_graphs": 768,
+    "paired_rewrites": 13640,
+    "ancestral_cut_increment_checks": 204600
+  },
+  "paired_growth_ladder": [
+    {
+      "depth": 1,
+      "vertices": 4,
+      "edges": 4,
+      "components": 1,
+      "cycle_rank": 1,
+      "max_degree": 2,
+      "vertices_per_root": 2,
+      "root_interface_edges": 2,
+      "longitudinal_half_vertices": 2,
+      "longitudinal_half_cut": 2,
+      "diameter": 2
+    },
+    {
+      "depth": 2,
+      "vertices": 8,
+      "edges": 10,
+      "components": 1,
+      "cycle_rank": 3,
+      "max_degree": 3,
+      "vertices_per_root": 4,
+      "root_interface_edges": 4,
+      "longitudinal_half_vertices": 4,
+      "longitudinal_half_cut": 2,
+      "diameter": 4
+    },
+    {
+      "depth": 3,
+      "vertices": 16,
+      "edges": 22,
+      "components": 1,
+      "cycle_rank": 7,
+      "max_degree": 3,
+      "vertices_per_root": 8,
+      "root_interface_edges": 8,
+      "longitudinal_half_vertices": 8,
+      "longitudinal_half_cut": 2,
+      "diameter": 8
+    },
+    {
+      "depth": 4,
+      "vertices": 32,
+      "edges": 46,
+      "components": 1,
+      "cycle_rank": 15,
+      "max_degree": 3,
+      "vertices_per_root": 16,
+      "root_interface_edges": 16,
+      "longitudinal_half_vertices": 16,
+      "longitudinal_half_cut": 2,
+      "diameter": 16
+    },
+    {
+      "depth": 5,
+      "vertices": 64,
+      "edges": 94,
+      "components": 1,
+      "cycle_rank": 31,
+      "max_degree": 3,
+      "vertices_per_root": 32,
+      "root_interface_edges": 32,
+      "longitudinal_half_vertices": 32,
+      "longitudinal_half_cut": 2,
+      "diameter": 32
+    },
+    {
+      "depth": 6,
+      "vertices": 128,
+      "edges": 190,
+      "components": 1,
+      "cycle_rank": 63,
+      "max_degree": 3,
+      "vertices_per_root": 64,
+      "root_interface_edges": 64,
+      "longitudinal_half_vertices": 64,
+      "longitudinal_half_cut": 2,
+      "diameter": 64
+    },
+    {
+      "depth": 7,
+      "vertices": 256,
+      "edges": 382,
+      "components": 1,
+      "cycle_rank": 127,
+      "max_degree": 3,
+      "vertices_per_root": 128,
+      "root_interface_edges": 128,
+      "longitudinal_half_vertices": 128,
+      "longitudinal_half_cut": 2,
+      "diameter": 128
+    },
+    {
+      "depth": 8,
+      "vertices": 512,
+      "edges": 766,
+      "components": 1,
+      "cycle_rank": 255,
+      "max_degree": 3,
+      "vertices_per_root": 256,
+      "root_interface_edges": 256,
+      "longitudinal_half_vertices": 256,
+      "longitudinal_half_cut": 2,
+      "diameter": 256
+    },
+    {
+      "depth": 9,
+      "vertices": 1024,
+      "edges": 1534,
+      "components": 1,
+      "cycle_rank": 511,
+      "max_degree": 3,
+      "vertices_per_root": 512,
+      "root_interface_edges": 512,
+      "longitudinal_half_vertices": 512,
+      "longitudinal_half_cut": 2,
+      "diameter": 512
+    }
+  ],
+  "new_primitive_channels_per_rewrite_net": 3,
+  "new_cross_ancestry_channels_per_selected_cross_edge": 1,
+  "scope": "A supplied two-endpoint channel-creation primitive increases selected ancestral cuts while preserving degree at most three. Persistent ports make disjoint marked pair rewrites commute abstractly. Repeated aligned refinement is exactly a ladder, hence does not select three-dimensional geometry; data isometry does not certify new channel capacity.",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "checks": {
+    "run": 9,
+    "failures": 0,
+    "errors": 0
+  }
+}

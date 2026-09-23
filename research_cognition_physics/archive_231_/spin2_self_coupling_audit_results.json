@@ -1,0 +1,81 @@
+{
+  "round": 358,
+  "scope": "Conditional local two-derivative single massless spin-two bootstrap. It supplies the nonlinear Einstein action after the free Pauli-Fierz field and self-coupling requirements are given; it does not derive this field, Lorentz geometry, or the derivative restriction from cognitive principles. Numerics sample smooth one-phase fields with all four derivative components nonzero; analytic identities provide the general quantifiers. No unrestricted uniqueness claim.",
+  "sources": [
+    "https://arxiv.org/abs/gr-qc/0411023",
+    "https://arxiv.org/abs/0910.2975",
+    "https://arxiv.org/abs/hep-th/0007220"
+  ],
+  "phase_covector": [
+    0.4,
+    1.0,
+    -0.35,
+    0.2
+  ],
+  "grid_points": 96,
+  "kappa": 0.7,
+  "compatibility_matrix_condition": 2.618033988749897,
+  "pointwise_action_identity_residual": 3.885780586188048e-16,
+  "boundary_density_maximum": 0.21019838920703132,
+  "boundary_integral": -5.276450572762788e-18,
+  "auxiliary_stress": {
+    "analytic_directional_variation": 0.0013418104174261654,
+    "naive_quadratic_Q_only": 0.0011065640631807395,
+    "missing_derivative_term": 0.0002352463542454259,
+    "finite_difference_sequence": [
+      {
+        "step": 0.01,
+        "observed": 0.0013418103467714715,
+        "error": 7.065469390110657e-11
+      },
+      {
+        "step": 0.005,
+        "observed": 0.0013418103997631103,
+        "error": 1.7663055046357456e-11
+      },
+      {
+        "step": 0.0025,
+        "observed": 0.0013418104130136221,
+        "error": 4.412543247456213e-12
+      }
+    ],
+    "richardson_error": 8.246441723924747e-16
+  },
+  "connection_elimination": {
+    "metricity_residual": 1.6736612096224235e-14,
+    "implicit_source_relation_residual": 1.1281990966449662e-14,
+    "nonlinear_minus_linear_connection": 0.015517910667561571,
+    "palatini_connection_variation_at_levi_civita": -1.3010426069826053e-14,
+    "variation_at_wrong_connection": -0.06659133905015553,
+    "linear_ricci_plus_source_equals_full_ricci": 7.281918124046882e-13,
+    "chosen_metric_is_not_a_vacuum_solution": 0.21369826767488745
+  },
+  "higher_derivative_boundary": {
+    "algebraic_ricci_residual": 0.0,
+    "curvature_cubic": 96.0,
+    "cubic_at_amplitudes": [
+      {
+        "amplitude": 0.1,
+        "value": 0.09600000000000002
+      },
+      {
+        "amplitude": 0.2,
+        "value": 0.7680000000000001
+      },
+      {
+        "amplitude": 0.4,
+        "value": 6.144000000000001
+      }
+    ],
+    "interpretation": "An independent six-derivative cubic curvature operator has no quadratic flat-space term. This is outside the two-derivative theorem, not a claim of a healthy ultraviolet completion."
+  },
+  "checks": {
+    "run": 15,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

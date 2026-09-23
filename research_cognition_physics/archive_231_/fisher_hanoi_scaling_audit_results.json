@@ -1,0 +1,162 @@
+{
+  "round": 261,
+  "levels": [
+    {
+      "generation": 1,
+      "vertices": 3,
+      "edges": 3,
+      "components": 1,
+      "cycle_rank": 1,
+      "max_degree": 2,
+      "diameter_all_pairs": 1,
+      "explicit_edge_isomorphism": true,
+      "mapped_edges": 3
+    },
+    {
+      "generation": 2,
+      "vertices": 9,
+      "edges": 12,
+      "components": 1,
+      "cycle_rank": 4,
+      "max_degree": 3,
+      "diameter_all_pairs": 3,
+      "explicit_edge_isomorphism": true,
+      "mapped_edges": 12
+    },
+    {
+      "generation": 3,
+      "vertices": 27,
+      "edges": 39,
+      "components": 1,
+      "cycle_rank": 13,
+      "max_degree": 3,
+      "diameter_all_pairs": 7,
+      "explicit_edge_isomorphism": true,
+      "mapped_edges": 39
+    },
+    {
+      "generation": 4,
+      "vertices": 81,
+      "edges": 120,
+      "components": 1,
+      "cycle_rank": 40,
+      "max_degree": 3,
+      "diameter_all_pairs": 15,
+      "explicit_edge_isomorphism": true,
+      "mapped_edges": 120
+    },
+    {
+      "generation": 5,
+      "vertices": 243,
+      "edges": 363,
+      "components": 1,
+      "cycle_rank": 121,
+      "max_degree": 3,
+      "diameter_all_pairs": 31,
+      "explicit_edge_isomorphism": true,
+      "mapped_edges": 363
+    },
+    {
+      "generation": 6,
+      "vertices": 729,
+      "edges": 1092,
+      "components": 1,
+      "cycle_rank": 364,
+      "max_degree": 3,
+      "diameter_all_pairs": 63,
+      "explicit_edge_isomorphism": true,
+      "mapped_edges": 1092
+    }
+  ],
+  "rooted_growth": {
+    "finite_level_for_root_balls": 8,
+    "dyadic_balls": [
+      {
+        "n": 0,
+        "radius": 0,
+        "ball_vertices": 1
+      },
+      {
+        "n": 1,
+        "radius": 1,
+        "ball_vertices": 3
+      },
+      {
+        "n": 2,
+        "radius": 3,
+        "ball_vertices": 9
+      },
+      {
+        "n": 3,
+        "radius": 7,
+        "ball_vertices": 27
+      },
+      {
+        "n": 4,
+        "radius": 15,
+        "ball_vertices": 81
+      },
+      {
+        "n": 5,
+        "radius": 31,
+        "ball_vertices": 243
+      },
+      {
+        "n": 6,
+        "radius": 63,
+        "ball_vertices": 729
+      },
+      {
+        "n": 7,
+        "radius": 127,
+        "ball_vertices": 2187
+      },
+      {
+        "n": 8,
+        "radius": 255,
+        "ball_vertices": 6561
+      }
+    ],
+    "first_exits_from_nested_copies": [
+      {
+        "n": 0,
+        "first_exit_distance": 1
+      },
+      {
+        "n": 1,
+        "first_exit_distance": 2
+      },
+      {
+        "n": 2,
+        "first_exit_distance": 4
+      },
+      {
+        "n": 3,
+        "first_exit_distance": 8
+      },
+      {
+        "n": 4,
+        "first_exit_distance": 16
+      },
+      {
+        "n": 5,
+        "first_exit_distance": 32
+      },
+      {
+        "n": 6,
+        "first_exit_distance": 64
+      }
+    ]
+  },
+  "volume_exponent_log3_over_log2": 1.5849625007211563,
+  "scope": "A single seed, uniform pure triangle generations, unit graph distances and a corner-rooted nested limit identify exactly with simple three-peg Hanoi graphs. This does not establish the dimension of mixed quantum growth, a continuum manifold, or physical space.",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "checks": {
+    "run": 9,
+    "failures": 0,
+    "errors": 0
+  }
+}

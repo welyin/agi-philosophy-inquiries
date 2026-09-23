@@ -1,0 +1,160 @@
+{
+  "round": 299,
+  "scope": "Identifiability of aligned classical clock comparisons under explicit covariance and link models; no identification of microscopic time fluctuations.",
+  "three_cornered_hat": {
+    "independent_true_variances": [
+      1.0,
+      4.0,
+      9.0
+    ],
+    "pair_variances": [
+      [
+        0.0,
+        5.0,
+        10.0
+      ],
+      [
+        5.0,
+        0.0,
+        13.0
+      ],
+      [
+        10.0,
+        13.0,
+        0.0
+      ]
+    ],
+    "same_observed_pairs_with_true_variances": [
+      3.0,
+      6.0,
+      11.0
+    ],
+    "hat_for_both_models": [
+      1.0,
+      4.0,
+      9.0
+    ],
+    "hidden_common_variance": 2.0
+  },
+  "correlated_counterexample": {
+    "true_covariance": [
+      [
+        1.0,
+        2.0,
+        -1.0
+      ],
+      [
+        2.0,
+        4.0,
+        -2.0
+      ],
+      [
+        -1.0,
+        -2.0,
+        1.0
+      ]
+    ],
+    "true_variances": [
+      1.0,
+      4.0,
+      1.0
+    ],
+    "incorrect_uncorrelated_hat": [
+      -2.0,
+      3.0,
+      6.0
+    ]
+  },
+  "observable_covariance": {
+    "incidence": [
+      [
+        -1.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        -1.0,
+        1.0
+      ],
+      [
+        -1.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "edge_covariance": [
+      [
+        5.0,
+        -4.0,
+        1.0
+      ],
+      [
+        -4.0,
+        13.0,
+        9.0
+      ],
+      [
+        1.0,
+        9.0,
+        10.0
+      ]
+    ],
+    "recoverable_centered_covariance": [
+      [
+        1.8888888888888895,
+        -0.11111111111111026,
+        -1.7777777777777783
+      ],
+      [
+        -0.11111111111111033,
+        2.8888888888888897,
+        -2.77777777777778
+      ],
+      [
+        -1.7777777777777783,
+        -2.7777777777777803,
+        4.555555555555559
+      ]
+    ],
+    "matches_centered_truth": true
+  },
+  "link_cycle_example": {
+    "link_residuals": [
+      0.1,
+      0.2,
+      0.8
+    ],
+    "cycle_coefficients": [
+      1.0,
+      1.0,
+      -1.0
+    ],
+    "cycle_value": -0.5,
+    "per_reading_bound": 0.01,
+    "certified_interval": [
+      -0.53,
+      -0.47
+    ],
+    "cycle_component": [
+      -0.1666666666666667,
+      -0.1666666666666667,
+      0.1666666666666666
+    ]
+  },
+  "limits": [
+    "Simultaneous or correctly aligned scalar data are a supplied interface; transport and alignment costs are not removed.",
+    "Positive three-cornered-hat outputs do not establish independence or identify a common mode.",
+    "Unknown link terms in the incidence image can be exchanged with clock terms without changing any record.",
+    "Cycle residuals reject a node-only model but can arise from links, alignment or measurement errors."
+  ],
+  "checks": {
+    "run": 9,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

@@ -1,0 +1,223 @@
+{
+  "round": 290,
+  "scope": "Two operational time metrics and loop-delay invariants on a supplied stationary classical network; no derived meter scale, light speed, Lorentz symmetry or gravity.",
+  "triangle_comparison": {
+    "both_models_pair_roundtrips": [
+      4.0,
+      4.0,
+      4.0
+    ],
+    "biased_clockwise_loop": 2.9999999999999982,
+    "biased_counterclockwise_loop": 9.0,
+    "reciprocal_clockwise_loop": 6.0,
+    "reciprocal_counterclockwise_loop": 5.999999999999998,
+    "biased_antisymmetric_loop_sum": -3.0000000000000004,
+    "processing_corrected_biased_loop": 3.0000000000000036,
+    "extra_closed_loop_probe_transmissions": 6,
+    "interpretation": "Identical immediate edge echoes do not determine multi-edge directed circulation."
+  },
+  "cases": [
+    {
+      "name": "biased_triangle",
+      "nodes": 3,
+      "undirected_edges": 3,
+      "independent_cycles": 1,
+      "maximum_symmetric_gauge_residual": 3.0,
+      "all_edges_can_be_symmetric_in_one_zero_point_choice": false,
+      "same_reversed_path_metric": [
+        [
+          0.0,
+          2.0,
+          1.9999999999999996
+        ],
+        [
+          2.0,
+          0.0,
+          1.9999999999999996
+        ],
+        [
+          1.9999999999999996,
+          1.9999999999999996,
+          0.0
+        ]
+      ],
+      "independently_optimized_roundtrip_metric": [
+        [
+          0.0,
+          1.5,
+          1.4999999999999996
+        ],
+        [
+          1.5,
+          0.0,
+          1.4999999999999991
+        ],
+        [
+          1.4999999999999996,
+          1.4999999999999991,
+          0.0
+        ]
+      ]
+    },
+    {
+      "name": "reciprocal_triangle",
+      "nodes": 3,
+      "undirected_edges": 3,
+      "independent_cycles": 1,
+      "maximum_symmetric_gauge_residual": 0.0,
+      "all_edges_can_be_symmetric_in_one_zero_point_choice": true,
+      "same_reversed_path_metric": [
+        [
+          0.0,
+          2.0000000000000004,
+          2.0
+        ],
+        [
+          2.0000000000000004,
+          0.0,
+          1.9999999999999991
+        ],
+        [
+          2.0,
+          1.9999999999999991,
+          0.0
+        ]
+      ],
+      "independently_optimized_roundtrip_metric": [
+        [
+          0.0,
+          2.0000000000000004,
+          2.0
+        ],
+        [
+          2.0000000000000004,
+          0.0,
+          1.9999999999999991
+        ],
+        [
+          2.0,
+          1.9999999999999991,
+          0.0
+        ]
+      ]
+    },
+    {
+      "name": "weakly_biased_triangle",
+      "nodes": 3,
+      "undirected_edges": 3,
+      "independent_cycles": 1,
+      "maximum_symmetric_gauge_residual": 0.5999999999999979,
+      "all_edges_can_be_symmetric_in_one_zero_point_choice": false,
+      "same_reversed_path_metric": [
+        [
+          0.0,
+          2.0,
+          2.0000000000000004
+        ],
+        [
+          2.0,
+          0.0,
+          2.000000000000001
+        ],
+        [
+          2.0000000000000004,
+          2.000000000000001,
+          0.0
+        ]
+      ],
+      "independently_optimized_roundtrip_metric": [
+        [
+          0.0,
+          2.0,
+          2.0000000000000004
+        ],
+        [
+          2.0,
+          0.0,
+          2.000000000000001
+        ],
+        [
+          2.0000000000000004,
+          2.000000000000001,
+          0.0
+        ]
+      ]
+    },
+    {
+      "name": "five_edge_network",
+      "nodes": 4,
+      "undirected_edges": 5,
+      "independent_cycles": 2,
+      "maximum_symmetric_gauge_residual": 1.5937500000000004,
+      "all_edges_can_be_symmetric_in_one_zero_point_choice": false,
+      "same_reversed_path_metric": [
+        [
+          0.0,
+          1.8749999999999996,
+          2.75,
+          2.53125
+        ],
+        [
+          1.8749999999999996,
+          0.0,
+          2.0937499999999996,
+          4.40625
+        ],
+        [
+          2.75,
+          2.0937499999999996,
+          0.0,
+          2.3125
+        ],
+        [
+          2.53125,
+          4.40625,
+          2.3125,
+          0.0
+        ]
+      ],
+      "independently_optimized_roundtrip_metric": [
+        [
+          0.0,
+          1.8749999999999996,
+          2.75,
+          2.53125
+        ],
+        [
+          1.8749999999999996,
+          0.0,
+          2.0937499999999996,
+          3.2499999999999996
+        ],
+        [
+          2.75,
+          2.0937499999999996,
+          0.0,
+          2.3125
+        ],
+        [
+          2.53125,
+          3.2499999999999996,
+          2.3125,
+          0.0
+        ]
+      ]
+    }
+  ],
+  "negative_local_intercept_example": -7.6730769230769225,
+  "resource_scope": "Local endpoint timestamps and stable additive relay rules are assumed. Loop probes cost their actual hops and wait corrections; message encoding, clock energy and bandwidth remain unmodeled.",
+  "logical_limits": [
+    "Zero circulation suffices for the two metrics to agree; equality of the metrics alone does not imply zero circulation.",
+    "A nonzero loop-delay asymmetry is compatible with a classical asymmetric network; it is not a proof of rotation, curvature or Sagnac physics.",
+    "Choosing the reference clock rescales both metrics; multiplying by a speed to obtain lengths requires extra physical input."
+  ],
+  "checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

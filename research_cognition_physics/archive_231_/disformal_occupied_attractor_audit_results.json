@@ -1,0 +1,82 @@
+{
+  "round": 336,
+  "scope": "A new stipulated field-dependent coupling D(phi)=0.6*exp(sqrt(6)*phi) in the generally covariant classical Einstein+canonical phi+disformal massless chi action. The zero-chi branch retains q=D*phidot^2=0.4 forever. Nonzero homogeneous chi shift charge is included together with phi exchange and Einstein backreaction. Analytic attraction is restricted to expanding, positive-phidot data 0<f<=1/2, 0<q<=0.4; this is not a proof of full spatial/quantum stability or universal coupling for all matter.",
+  "critical_vacuum_branch": {
+    "beta": 2.449489742783178,
+    "q": 0.4,
+    "relative_speed": 0.7745966692414834
+  },
+  "cone_ratio_caveat": "sqrt(1-q) compares the two prescribed metrics. With nonzero chi background the coupled phi-chi perturbation eigenmodes must be analyzed separately.",
+  "finite_occupation_phase_evolution": [
+    {
+      "initial_matter_fraction": 0.0,
+      "final_log_scale_factor": 100.0,
+      "final_matter_fraction": 0.0,
+      "final_q": 0.4,
+      "final_matter_metric_cone_ratio": 0.7745966692414834,
+      "minimum_matter_fraction": 0.0,
+      "minimum_probe_lapse_squared": 0.6,
+      "final_log_H_over_initial_H": -300.0
+    },
+    {
+      "initial_matter_fraction": 0.01,
+      "final_log_scale_factor": 100.0,
+      "final_matter_fraction": 0.005296715418058572,
+      "final_q": 0.08392939803016773,
+      "final_matter_metric_cone_ratio": 0.9571157725008153,
+      "minimum_matter_fraction": 0.005296715418058572,
+      "minimum_probe_lapse_squared": 0.6,
+      "final_log_H_over_initial_H": -299.78804184722264
+    },
+    {
+      "initial_matter_fraction": 0.1,
+      "final_log_scale_factor": 100.0,
+      "final_matter_fraction": 0.046111527079886,
+      "final_q": 2.7947644444019093e-07,
+      "final_matter_metric_cone_ratio": 0.999999860261768,
+      "minimum_matter_fraction": 0.046111527079886,
+      "minimum_probe_lapse_squared": 0.6,
+      "final_log_H_over_initial_H": -299.74065272501565
+    },
+    {
+      "initial_matter_fraction": 0.5,
+      "final_log_scale_factor": 100.0,
+      "final_matter_fraction": 0.21119769842278324,
+      "final_q": 2.9954309926376867e-30,
+      "final_matter_metric_cone_ratio": 1.0,
+      "minimum_matter_fraction": 0.21119769842278324,
+      "minimum_probe_lapse_squared": 0.6,
+      "final_log_H_over_initial_H": -299.69679968445985
+    }
+  ],
+  "full_canonical_charge_and_gravity_check": {
+    "constraint_max": 4.1032498579451904e-14,
+    "pressure_work_residual_max": 6.106226635438361e-16,
+    "final_fraction": 0.08598385339423327,
+    "final_q": 0.3387293855881042,
+    "final_proper_time": 18.432687182033117
+  },
+  "missing_reciprocal_phi_source_counterexample": {
+    "constraint_max": 0.006313058389505228,
+    "pressure_work_residual_max": 0.010653335521810803,
+    "final_fraction": 0.0802586067414079,
+    "final_q": 0.09433311059076671,
+    "final_proper_time": 12.353245127641575
+  },
+  "analytic_bounds": {
+    "uniform_q_upper": 0.4,
+    "uniform_fraction_upper": 0.5,
+    "fraction_lower_factor": 0.004827949993831441,
+    "q_log_derivative_upper_coefficient": -0.45
+  },
+  "next_interface": "Test whether the finite-occupation attraction survives nonzero spatial gradients and multiple species, and establish an independently motivated condition on coupling functions. The zero-occupation and late-time limits do not commute in this restricted branch.",
+  "checks": {
+    "run": 12,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

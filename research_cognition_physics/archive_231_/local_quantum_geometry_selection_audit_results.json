@@ -1,0 +1,205 @@
+{
+  "round": 343,
+  "scope": "All finite tensor-qubit quantum objects, all density matrices and finite CP instruments, with a separately specified nonconstant natural exchange Hamiltonian on arbitrarily large d-dimensional graphs. Full-spin Lieb-Robinson locality is proved; a preparable invariant excitation response diagnoses the selected locality. This is not a no-go theorem for every encoded or emergent GR sector.",
+  "full_contract_witness": {
+    "F": "Ordinary finite quantum states, effects, instruments, tensor products, discard.",
+    "U": "Same-size purifying partner; E_i=(rho^(-1/2) tau_i rho^(-1/2))^T on the support, completed on the kernel.",
+    "C": "Full projective unitary groups, including every finite composite.",
+    "P": "Local extensions of the same CP map coincide on all joint states.",
+    "Time": "exp(-itH) is a nonconstant continuous one-parameter unitary group."
+  },
+  "uniform_resource_class": {
+    "choice": "J_d=J_star/d, J_star=1",
+    "per_site_incident_interaction_norm": 4.0,
+    "per_site_total_H_norm_upper": 2.0,
+    "LR_speed_bound_at_mu_1": 43.49250925534472,
+    "note": "The bounds do not depend on volume or dimension. Site degree itself is 2d and is not fixed by the operation contract."
+  },
+  "finite_volume_spectral_witnesses": [
+    {
+      "dimension": 1,
+      "side": 64,
+      "qubits": 64,
+      "degree": 2,
+      "bond_coupling": 1.0,
+      "incident_bond_norm_budget": 4.0,
+      "total_norm_upper_per_site": 2.0,
+      "excitation_gap": 0.009630546655605985,
+      "gap_formula": 0.009630546655606228,
+      "gap_multiplicity": 2,
+      "volume_growth_exponent": 1,
+      "gapless_response_dynamical_exponent": 2,
+      "max_l1_group_velocity_bound": 2.0,
+      "LR_mu_one_speed_upper": 43.49250925534472
+    },
+    {
+      "dimension": 2,
+      "side": 8,
+      "qubits": 64,
+      "degree": 4,
+      "bond_coupling": 0.5,
+      "incident_bond_norm_budget": 4.0,
+      "total_norm_upper_per_site": 2.0,
+      "excitation_gap": 0.2928932188134521,
+      "gap_formula": 0.2928932188134525,
+      "gap_multiplicity": 4,
+      "volume_growth_exponent": 2,
+      "gapless_response_dynamical_exponent": 2,
+      "max_l1_group_velocity_bound": 2.0,
+      "LR_mu_one_speed_upper": 43.49250925534472
+    },
+    {
+      "dimension": 3,
+      "side": 4,
+      "qubits": 64,
+      "degree": 6,
+      "bond_coupling": 0.3333333333333333,
+      "incident_bond_norm_budget": 4.0,
+      "total_norm_upper_per_site": 2.0,
+      "excitation_gap": 0.6666666666666653,
+      "gap_formula": 0.6666666666666667,
+      "gap_multiplicity": 6,
+      "volume_growth_exponent": 3,
+      "gapless_response_dynamical_exponent": 2,
+      "max_l1_group_velocity_bound": 2.0,
+      "LR_mu_one_speed_upper": 43.49250925534472
+    },
+    {
+      "dimension": 4,
+      "side": 4,
+      "qubits": 256,
+      "degree": 8,
+      "bond_coupling": 0.25,
+      "incident_bond_norm_budget": 4.0,
+      "total_norm_upper_per_site": 2.0,
+      "excitation_gap": 0.4999999999999968,
+      "gap_formula": 0.5000000000000001,
+      "gap_multiplicity": 8,
+      "volume_growth_exponent": 4,
+      "gapless_response_dynamical_exponent": 2,
+      "max_l1_group_velocity_bound": 2.0,
+      "LR_mu_one_speed_upper": 43.49250925534472
+    }
+  ],
+  "lattice_ball_counts": [
+    {
+      "radius": 4,
+      "ball_counts": {
+        "1": 9,
+        "2": 41,
+        "3": 129,
+        "4": 321
+      }
+    },
+    {
+      "radius": 16,
+      "ball_counts": {
+        "1": 33,
+        "2": 545,
+        "3": 6017,
+        "4": 50049
+      }
+    },
+    {
+      "radius": 64,
+      "ball_counts": {
+        "1": 129,
+        "2": 8321,
+        "3": 357889,
+        "4": 11548161
+      }
+    }
+  ],
+  "low_momentum_response": [
+    {
+      "k": 0.2,
+      "energy": 0.013288948105838912,
+      "energy_over_abs_k": 0.06644474052919455,
+      "energy_over_k_squared": 0.33222370264597273
+    },
+    {
+      "k": 0.1,
+      "energy": 0.003330556481316156,
+      "energy_over_abs_k": 0.033305564813161555,
+      "energy_over_k_squared": 0.33305564813161553
+    },
+    {
+      "k": 0.05,
+      "energy": 0.000833159736689169,
+      "energy_over_abs_k": 0.016663194733783377,
+      "energy_over_k_squared": 0.3332638946756675
+    }
+  ],
+  "full_algebra_commutator_checks": [
+    {
+      "distance": 1,
+      "time": 0.002,
+      "full_operator_commutator_norm": 0.004003995987550144,
+      "path_series_bound": 0.06503501061023682
+    },
+    {
+      "distance": 1,
+      "time": 0.02,
+      "full_operator_commutator_norm": 0.04039587492802154,
+      "path_series_bound": 0.7542555286719143
+    },
+    {
+      "distance": 2,
+      "time": 0.002,
+      "full_operator_commutator_norm": 9.658718386101502e-06,
+      "path_series_bound": 0.0010350106102368392
+    },
+    {
+      "distance": 2,
+      "time": 0.02,
+      "full_operator_commutator_norm": 0.0009673561985508126,
+      "path_series_bound": 0.11425552867191419
+    },
+    {
+      "distance": 3,
+      "time": 0.002,
+      "full_operator_commutator_norm": 9.3184177424616e-09,
+      "path_series_bound": 1.101061023683906e-05
+    },
+    {
+      "distance": 3,
+      "time": 0.02,
+      "full_operator_commutator_norm": 9.327966720019438e-06,
+      "path_series_bound": 0.011855528671914172
+    },
+    {
+      "distance": 5,
+      "time": 0.002,
+      "full_operator_commutator_norm": 6.45495236795851e-15,
+      "path_series_bound": 5.622368390617308e-10
+    },
+    {
+      "distance": 5,
+      "time": 0.02,
+      "full_operator_commutator_norm": 4.851626978554152e-10,
+      "path_series_bound": 5.904867191416907e-05
+    }
+  ],
+  "logical_conclusion": {
+    "disproved": "F+U+C+P+nontrivial Time plus finite-range bounded local drift with a volume-uniform LR estimate uniquely selects d=3 or linear gapless dispersion in its directly measured spatial response.",
+    "not_disproved": "There exists a further operationally justified sector, state, coarse-graining and scaling prescription yielding GR; an enlarged cognitive contract may select it.",
+    "strict_causality": "Lieb-Robinson exponential suppression is not exact vanishing outside a Lorentz light cone."
+  },
+  "added_inputs": [
+    "tensor-site identification and graph family",
+    "natural Hamiltonian and coupling normalization",
+    "polarized reference and local excitation readout",
+    "the identification of physical distance with the recovered natural-interaction locality",
+    "thermodynamic and low-momentum limiting prescriptions"
+  ],
+  "primary_source": "Nachtergaele, Ogata and Sims (2006), https://arxiv.org/html/math-ph/0603064, Theorems 2.1/2.2 and recurrence (2.9)-(2.12).",
+  "checks": {
+    "run": 14,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

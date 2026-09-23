@@ -1,0 +1,205 @@
+{
+  "round": 287,
+  "scope": "Conditional finite classical chart overlap from physically verified bridges; no coordinates, dimension selection or spacetime generation.",
+  "identical_map_counterexample": {
+    "graph": "C12",
+    "radius": 1,
+    "roots": [
+      0,
+      2,
+      5
+    ],
+    "rooted_port_maps_identical": true,
+    "overlaps_with_first": [
+      1,
+      0
+    ],
+    "naive_root_to_root_identity_correct": false
+  },
+  "cases": [
+    {
+      "name": "C12_overlap",
+      "radii": [
+        1,
+        1
+      ],
+      "chart_sizes": [
+        3,
+        3
+      ],
+      "overlap_size": 1,
+      "bridge_length": 2,
+      "map_setup_steps": 136,
+      "map_setup_marker_reads": 22,
+      "additional_survey_steps": 220,
+      "bridge_search_steps": 8,
+      "bridge_search_reads": 4,
+      "bridge_search_steps_upper": 20,
+      "match_comparisons": 9,
+      "match_steps": 60,
+      "match_marker_reads": 9,
+      "match_comparisons_upper": 9,
+      "match_steps_upper": 72,
+      "unique_marker_tokens": 2,
+      "common_local_port_dialect": true,
+      "map_packet_payload_bits": 29,
+      "payload_bit_edge_uses": 58,
+      "packet_header_and_control_traffic_included": false,
+      "truth_check_passed": true
+    },
+    {
+      "name": "C12_disjoint",
+      "radii": [
+        1,
+        1
+      ],
+      "chart_sizes": [
+        3,
+        3
+      ],
+      "overlap_size": 0,
+      "bridge_length": 5,
+      "map_setup_steps": 136,
+      "map_setup_marker_reads": 22,
+      "additional_survey_steps": 1732,
+      "bridge_search_steps": 50,
+      "bridge_search_reads": 10,
+      "bridge_search_steps_upper": 110,
+      "match_comparisons": 9,
+      "match_steps": 114,
+      "match_marker_reads": 9,
+      "match_comparisons_upper": 9,
+      "match_steps_upper": 126,
+      "unique_marker_tokens": 2,
+      "common_local_port_dialect": true,
+      "map_packet_payload_bits": 29,
+      "payload_bit_edge_uses": 145,
+      "packet_header_and_control_traffic_included": false,
+      "truth_check_passed": true
+    },
+    {
+      "name": "cube_partial",
+      "radii": [
+        1,
+        1
+      ],
+      "chart_sizes": [
+        4,
+        4
+      ],
+      "overlap_size": 2,
+      "bridge_length": 1,
+      "map_setup_steps": 408,
+      "map_setup_marker_reads": 66,
+      "additional_survey_steps": 0,
+      "bridge_search_steps": 2,
+      "bridge_search_reads": 2,
+      "bridge_search_steps_upper": 8,
+      "match_comparisons": 11,
+      "match_steps": 54,
+      "match_marker_reads": 11,
+      "match_comparisons_upper": 16,
+      "match_steps_upper": 96,
+      "unique_marker_tokens": 2,
+      "common_local_port_dialect": true,
+      "map_packet_payload_bits": 60,
+      "payload_bit_edge_uses": 60,
+      "packet_header_and_control_traffic_included": false,
+      "truth_check_passed": true
+    },
+    {
+      "name": "cube_larger_overlap",
+      "radii": [
+        2,
+        2
+      ],
+      "chart_sizes": [
+        7,
+        7
+      ],
+      "overlap_size": 6,
+      "bridge_length": 2,
+      "map_setup_steps": 1284,
+      "map_setup_marker_reads": 162,
+      "additional_survey_steps": 0,
+      "bridge_search_steps": 10,
+      "bridge_search_reads": 5,
+      "bridge_search_steps_upper": 28,
+      "match_comparisons": 31,
+      "match_steps": 270,
+      "match_marker_reads": 31,
+      "match_comparisons_upper": 49,
+      "match_steps_upper": 588,
+      "unique_marker_tokens": 2,
+      "common_local_port_dialect": true,
+      "map_packet_payload_bits": 127,
+      "payload_bit_edge_uses": 254,
+      "packet_header_and_control_traffic_included": false,
+      "truth_check_passed": true
+    },
+    {
+      "name": "cube_shuffled_ports",
+      "radii": [
+        2,
+        2
+      ],
+      "chart_sizes": [
+        7,
+        7
+      ],
+      "overlap_size": 6,
+      "bridge_length": 2,
+      "map_setup_steps": 1238,
+      "map_setup_marker_reads": 93,
+      "additional_survey_steps": 0,
+      "bridge_search_steps": 10,
+      "bridge_search_reads": 5,
+      "bridge_search_steps_upper": 28,
+      "match_comparisons": 33,
+      "match_steps": 204,
+      "match_marker_reads": 8,
+      "match_comparisons_upper": 49,
+      "match_steps_upper": 588,
+      "unique_marker_tokens": 2,
+      "common_local_port_dialect": true,
+      "map_packet_payload_bits": 127,
+      "payload_bit_edge_uses": 254,
+      "packet_header_and_control_traffic_included": false,
+      "truth_check_passed": true
+    }
+  ],
+  "duplicate_marker_counterexample": {
+    "graph": "C6",
+    "indistinguishable_markers_at": [
+      0,
+      3
+    ],
+    "physical_nodes_in_requested_ball": 6,
+    "reported_nodes": 3,
+    "reported_adjacency": [
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "reason": "A duplicated marker violates the uniqueness input and yields a quotient map."
+  },
+  "resource_scope": "Packet payload counted separately from marker identity, framing, control traffic, bandwidth and energy; no free global broadcast assumed.",
+  "checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

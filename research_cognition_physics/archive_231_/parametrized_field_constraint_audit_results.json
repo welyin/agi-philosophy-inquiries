@@ -1,0 +1,150 @@
+{
+  "round": 366,
+  "scope": "Specified classical scalar on a fixed Minkowski cylinder; continuum analytic HDA, sampled Fourier checks and full canonical slice evolution. No independent metric dynamics, no quantum constraint/anomaly result and no cognition-to-GR derivation.",
+  "grid_size": 128,
+  "closure_off_shell": {
+    "DD": {
+      "poisson": 0.08991690171217027,
+      "expected": 0.08991690171217029,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    "DH": {
+      "poisson": 0.039983980277373196,
+      "expected": 0.039983980277373224,
+      "absolute_error": 2.7755575615628914e-17
+    },
+    "HH": {
+      "poisson": 0.08458491244474886,
+      "expected": 0.08458491244474885,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    "plus": {
+      "poisson": 0.08881647838193868,
+      "expected": 0.0888164783819387,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    "minus": {
+      "poisson": 0.001100423330231587,
+      "expected": 0.0011004233302315768,
+      "absolute_error": 1.0191500421363742e-17
+    },
+    "cross": {
+      "poisson": -8.515303950216386e-19,
+      "expected": 0.0,
+      "absolute_error": 8.515303950216386e-19
+    }
+  },
+  "functional_variation": [
+    {
+      "step": 0.01,
+      "directional_difference": 0.08458565240423432,
+      "poisson": 0.08458491244474886,
+      "absolute_error": 7.399594854629044e-07
+    },
+    {
+      "step": 0.005,
+      "directional_difference": 0.08458509743323184,
+      "poisson": 0.08458491244474886,
+      "absolute_error": 1.8498848297632264e-07
+    },
+    {
+      "step": 0.0025,
+      "directional_difference": 0.08458495869176907,
+      "poisson": 0.08458491244474886,
+      "absolute_error": 4.624702021338578e-08
+    }
+  ],
+  "slice_evolution": [
+    {
+      "path": "A",
+      "steps": 40,
+      "grid_size": 128,
+      "six_field_max_error": 1.287659478488301e-07,
+      "normal_constraint_max": 5.773891873961203e-08,
+      "tangent_constraint_max": 3.2068920713390625e-08,
+      "killing_energy": 1.785681264300438
+    },
+    {
+      "path": "A",
+      "steps": 80,
+      "grid_size": 128,
+      "six_field_max_error": 8.053778977057391e-09,
+      "normal_constraint_max": 3.6363787025700256e-09,
+      "tangent_constraint_max": 2.0009910672857956e-09,
+      "killing_energy": 1.7856812643004385
+    },
+    {
+      "path": "A",
+      "steps": 160,
+      "grid_size": 128,
+      "six_field_max_error": 5.050947438078879e-10,
+      "normal_constraint_max": 2.2823639002395663e-10,
+      "tangent_constraint_max": 1.2491324641317192e-10,
+      "killing_energy": 1.7856812643004385
+    },
+    {
+      "path": "B",
+      "steps": 40,
+      "grid_size": 128,
+      "six_field_max_error": 1.5341220699349734e-07,
+      "normal_constraint_max": 5.448304666040858e-08,
+      "tangent_constraint_max": 2.9718357358321512e-08,
+      "killing_energy": 1.7856812643004385
+    },
+    {
+      "path": "B",
+      "steps": 80,
+      "grid_size": 128,
+      "six_field_max_error": 9.623004948444702e-09,
+      "normal_constraint_max": 3.4371194225963286e-09,
+      "tangent_constraint_max": 1.8459754003163908e-09,
+      "killing_energy": 1.785681264300438
+    },
+    {
+      "path": "B",
+      "steps": 160,
+      "grid_size": 128,
+      "six_field_max_error": 6.022071730171774e-10,
+      "normal_constraint_max": 2.1563009810110598e-10,
+      "tangent_constraint_max": 1.1501030683369606e-10,
+      "killing_energy": 1.785681264300438
+    }
+  ],
+  "two_path_endpoint_difference": 1.7887780839886958e-10,
+  "exact_slices": {
+    "minimum_q": 0.705599999999999,
+    "minimum_lapse": 0.1714601836602552,
+    "maximum_constraint_error": 4.418687638008123e-14,
+    "killing_energy": 1.7856812643004385,
+    "analytic_killing_energy": 1.7856812643004385,
+    "maximum_energy_error": 6.661338147750939e-16,
+    "maximum_ambient_energy_density": 1.0404
+  },
+  "flat_pullback_geometry": {
+    "metric_connection_agreement": 9.504064202303653e-13,
+    "connection_nonzero": 0.40702234466240966,
+    "riemann_max": 1.9563864417371235e-13,
+    "metric_determinant": -0.29028891680581853
+  },
+  "added_inputs": [
+    "fixed smooth 1+1 Minkowski cylinder and massless scalar action",
+    "oriented invertible spacelike embeddings",
+    "canonical Poisson fields and periodic boundary conditions",
+    "prescribed two lapse/shift histories and smooth initial solution",
+    "FFT collocation and finite-step RK4 for numerical checks"
+  ],
+  "not_selected": [
+    "independent metric phase space or gravitational degrees of freedom",
+    "Einstein field equations or metric backreaction",
+    "dimension, matter action, quantum constraint representation"
+  ],
+  "checks": {
+    "run": 15,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

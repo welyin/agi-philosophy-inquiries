@@ -1,0 +1,17 @@
+{
+  "date": "2026-09-23",
+  "round": 399,
+  "original": "research_note_399.md",
+  "corrected": "research_note_399_text_v2.md",
+  "original_sha256": "c517d18b8038239547141f0c2ea976d88f43b905ded7fb7d8ab3574b7b06e56a",
+  "corrected_sha256": "298ddc4452a0781f4f4722ef8dc106b251023951d92aa7f0979959cac38124e8",
+  "banner": "> 公式文字勘误（2026-09-23）：式(6)中点求积项与Lipschitz余量之间补回漏印的加号。原代码一直使用二者之和，证明及数值不变。[399轮原稿](research_note_399.md)、代码、结果与原核验保留，不新增科学轮次。\n\n",
+  "old_phrase": "\\frac{L_AT^2}{4M}+2\\delta T\\|A\\|.",
+  "new_phrase": "+\\frac{L_AT^2}{4M}+2\\delta T\\|A\\|.",
+  "occurrences": 1,
+  "only_banner_and_one_missing_plus_changed": true,
+  "originals_preserved": true,
+  "numerical_results_changed": false,
+  "visual_rendering_performed": false,
+  "code_evidence": "operational_region_certificate_audit.py:80 uses midpoint+remainder+2*delta*t*opnorm(obs)"
+}

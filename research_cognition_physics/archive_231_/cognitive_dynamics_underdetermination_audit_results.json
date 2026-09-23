@@ -1,0 +1,87 @@
+{
+  "round": 342,
+  "scope": "All finite complex quantum types and instruments; two composition-compatible nontrivial Time expansions. Controls are primitives, not autonomously compiled.",
+  "contract": [
+    "F",
+    "U_all_states_all_finite_ensembles_same_resource",
+    "C_on_every_composite",
+    "P",
+    "R_seed",
+    "nontrivial_Time",
+    "independent_finite_composition"
+  ],
+  "steering_checks": [
+    {
+      "dimension": 2,
+      "rank": 2,
+      "outcomes": 4,
+      "conditional_state_error": 1.1310848174995798e-16,
+      "POVM_completeness_error": 3.6085589145040436e-16,
+      "resource_purity": 1.0000000000000009
+    },
+    {
+      "dimension": 3,
+      "rank": 2,
+      "outcomes": 5,
+      "conditional_state_error": 1.586403060227401e-16,
+      "POVM_completeness_error": 3.4772814098154267e-16,
+      "resource_purity": 1.0000000000000007
+    },
+    {
+      "dimension": 5,
+      "rank": 1,
+      "outcomes": 7,
+      "conditional_state_error": 2.851003258697039e-16,
+      "POVM_completeness_error": 3.1819652957437104e-16,
+      "resource_purity": 0.9999999999999998
+    },
+    {
+      "dimension": 5,
+      "rank": 5,
+      "outcomes": 8,
+      "conditional_state_error": 2.730481427333888e-16,
+      "POVM_completeness_error": 1.4532361049680476e-15,
+      "resource_purity": 1.0000000000000009
+    }
+  ],
+  "pair_time": 3.141592653589793,
+  "product_natural_time": {
+    "receiver_trace_distance": 0.0,
+    "receiver_optimal_equal_prior_success": 0.5,
+    "product_input_final_local_purity": 0.9999999999999991,
+    "energy_spectrum": [
+      0.0,
+      1.0,
+      1.0,
+      2.0
+    ]
+  },
+  "interacting_natural_time": {
+    "receiver_trace_distance": 0.9999999999999998,
+    "receiver_optimal_equal_prior_success": 0.9999999999999999,
+    "product_input_final_local_purity": 0.49999999999999956,
+    "energy_spectrum": [
+      0.0,
+      1.0,
+      1.0,
+      3.0
+    ]
+  },
+  "analytic_claim": "The inherited formal contract does not entail nonzero natural influence across independent microscopic factors, even after fixed block-local coarse graining.",
+  "not_proved": [
+    "No-go for all SoCA semantics",
+    "No-go for controlled GR simulations",
+    "Autonomous realization of all controls by one closed Hamiltonian and internal programs",
+    "No-go for every nonlocal or state-dependent emergent encoding",
+    "Impossibility of deriving GR from strengthened cognitive principles"
+  ],
+  "checks": {
+    "run": 15,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

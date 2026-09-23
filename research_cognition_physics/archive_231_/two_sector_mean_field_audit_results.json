@@ -1,0 +1,89 @@
+{
+  "round": 356,
+  "scope": "Specified all-to-all two-sector mean interaction, fixed finite observed blocks and initially independent product environments; finite two-way classical mean feedback and concentration, not spatial geometry, HDA, global-state convergence or GR.",
+  "parameters": {
+    "mu_G": 0.3,
+    "mu_M": -0.4,
+    "theta": 0.6
+  },
+  "fixed_time_rows": [
+    {
+      "N": 10,
+      "two_spin_trace_distance": 0.08088999585957683,
+      "arbitrary_reference_upper": 0.2367,
+      "geometry_average_Y": -0.416172969721376,
+      "matter_average_Y": 0.3036229869947568,
+      "geometry_average_Y_variance": 0.15630026786514684,
+      "variance_upper": 0.2100736
+    },
+    {
+      "N": 100,
+      "two_spin_trace_distance": 0.008735803613461287,
+      "arbitrary_reference_upper": 0.024236999999999998,
+      "geometry_average_Y": -0.4378693429568796,
+      "matter_average_Y": 0.32076953742098546,
+      "geometry_average_Y_variance": 0.016609264812007446,
+      "variance_upper": 0.02100736
+    },
+    {
+      "N": 1000,
+      "two_spin_trace_distance": 0.0008806943641106677,
+      "arbitrary_reference_upper": 0.0024293699999999997,
+      "geometry_average_Y": -0.4402430821232138,
+      "matter_average_Y": 0.3226533309847102,
+      "geometry_average_Y_variance": 0.0016708625816981293,
+      "variance_upper": 0.0021007359999999997
+    },
+    {
+      "N": 10000,
+      "two_spin_trace_distance": 8.814128239487054e-05,
+      "arbitrary_reference_upper": 0.00024299369999999996,
+      "geometry_average_Y": -0.44048261838996966,
+      "matter_average_Y": 0.32284351582161186,
+      "geometry_average_Y_variance": 0.00016718562378398305,
+      "variance_upper": 0.00021007359999999998
+    }
+  ],
+  "finite_mean_response": {
+    "geometry_Y": -0.44050925794701773,
+    "matter_Y": 0.3228646678731262,
+    "interaction_energy_per_N_in_units_g": -0.12
+  },
+  "correlated_matter_counterexample": [
+    {
+      "N": 10,
+      "cat_single_G_error": 0.3188211227616632,
+      "product_single_G_error": 0.03481525304786931
+    },
+    {
+      "N": 100,
+      "cat_single_G_error": 0.3188211227616632,
+      "product_single_G_error": 0.0035871568315365976
+    },
+    {
+      "N": 1000,
+      "cat_single_G_error": 0.3188211227616632,
+      "product_single_G_error": 0.00035987051742564224
+    }
+  ],
+  "resource_account": {
+    "sector_qubits": "N and N",
+    "pairs": "N^2",
+    "coupling_per_pair": "g/N",
+    "operator_norm": "abs(g)*N",
+    "norm_per_total_qubit": "abs(g)/2",
+    "sum_of_incident_absolute_couplings_per_spin": "abs(g)",
+    "spatial_locality_proved": false,
+    "global_state_approximated": false
+  },
+  "source": "https://arxiv.org/abs/1804.00455 (related mean-interaction literature; bounds here derived directly)",
+  "checks": {
+    "run": 12,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

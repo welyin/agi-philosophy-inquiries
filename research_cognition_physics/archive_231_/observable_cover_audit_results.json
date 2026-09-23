@@ -1,0 +1,96 @@
+{
+  "round": 284,
+  "scope": "Explicitly restricted classical label readout on graph covers; memory marking expands the interface. No equivalence of full quantum theories and no derivation or uniqueness of spatial dimension.",
+  "finite_cover": {
+    "base_nodes": 4,
+    "cover_nodes": 8,
+    "degree_in_both": 3,
+    "fibers": [
+      [
+        0,
+        7
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        4
+      ]
+    ]
+  },
+  "continuous_time_cases": [
+    {
+      "time": 0.1,
+      "base_true_return": 0.7527400345267296,
+      "cover_true_return": 0.7519955041793613,
+      "cover_visible_return": 0.7527400345267292,
+      "maximum_full_visible_kernel_error": 1.1102230246251565e-15
+    },
+    {
+      "time": 0.5,
+      "base_true_return": 0.35150146242745955,
+      "cover_true_return": 0.3199289051990035,
+      "cover_visible_return": 0.3515014624274591,
+      "maximum_full_visible_kernel_error": 6.106226635438361e-16
+    },
+    {
+      "time": 1.0,
+      "base_true_return": 0.2637367291665506,
+      "cover_true_return": 0.18292893981908825,
+      "cover_visible_return": 0.2637367291665502,
+      "maximum_full_visible_kernel_error": 4.996003610813204e-16
+    },
+    {
+      "time": 2.0,
+      "base_true_return": 0.2502515969709268,
+      "cover_true_return": 0.13199493109528282,
+      "cover_visible_return": 0.2502515969709265,
+      "maximum_full_visible_kernel_error": 4.718447854656915e-16
+    }
+  ],
+  "marker_witness": {
+    "visible_route": [
+      0,
+      1,
+      3,
+      0
+    ],
+    "actual_cover_route": [
+      0,
+      1,
+      3,
+      7
+    ],
+    "base_marker_result": 1,
+    "cover_marker_result": 0,
+    "traversed_edges": 3,
+    "base_initialized_flag_bits": 4,
+    "cover_initialized_flag_bits": 8,
+    "uncontrolled_three_step_marked_return_base": 0.2222222222222222,
+    "uncontrolled_three_step_marked_return_cover": 0
+  },
+  "truncated_universal_cover_example": {
+    "base_nodes": 2058,
+    "depth": 8,
+    "tree_nodes": 766,
+    "distinct_visible_labels": 348,
+    "underlying_tree_ball_formula": 766,
+    "boundary_nodes_are_truncated": true
+  },
+  "conclusion": "Visible transition statistics can define a unique effective network without identifying the full underlying graph; persistent local identity can distinguish the cover.",
+  "checks": {
+    "run": 9,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

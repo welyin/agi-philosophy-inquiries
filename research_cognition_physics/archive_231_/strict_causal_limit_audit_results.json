@@ -1,0 +1,176 @@
+{
+  "round": 347,
+  "scope": "Fixed finite-dimensional autonomous Hamiltonian and fixed local algebras: exact commutator silence on any open time interval implies silence at every time. Separately, a specified one-dimensional tight-binding single-particle response admits an exponentially controlled continuum tail limit. The latter is not a full-algebra quantum-field microcausality proof or a derivation of GR.",
+  "analytic_finite_delay_result": {
+    "conditions": [
+      "finite Hilbert dimension",
+      "fixed time-independent H",
+      "fixed local A and B",
+      "positive interval of exact zero commutator"
+    ],
+    "conclusion": "[exp(itH) A exp(-itH),B] is identically zero if it vanishes on an open real interval.",
+    "all_pair_consequence": "If every pair of distinct tensor sites has a strictly positive exact delay for all local observables, H is a sum of on-site terms plus a scalar.",
+    "finite_derivative_certificate": "For Hilbert dimension D, derivatives n=0,...,D^2-1 suffice for exact symbolic zero certification by Cayley-Hamilton; floating thresholds are not that certificate."
+  },
+  "finite_matrix_examples": {
+    "interacting_first_nonzero_derivative": 1,
+    "interaction_part_norm": 1.0,
+    "onsite_max_first_cross_derivative": 0.0,
+    "interacting_commutator_at_0_001": 0.003999997273333964
+  },
+  "continuum_scaling": {
+    "H": "H_a=c(2I-S-S_dagger)/(2a), J_a=c/(2a), hbar=1.",
+    "kernel": "K_n(t)=exp(-iz) i^n J_n(z), z=ct/a.",
+    "single_endpoint_bound": "|K_n| <= exp[-I(x,ct)/a], x=na>ct.",
+    "I": "x*acosh(x/(ct))-sqrt(x*x-c*c*t*t).",
+    "total_probability_bound": "P(|n|>=N) <= 2 exp[-2I(Na,ct)/a]/(1-exp[-2acosh(Na/(ct))]).",
+    "per_bond_full_spin_norm_if_realized_by_exchange": "2J_a=c/a, not bounded uniformly as a->0.",
+    "fixed_physical_low_momentum_energy": "c*(1-cos(a*k))/a -> 0; tail concentration alone is not a nontrivial Lorentz dispersion limit."
+  },
+  "outside_cone_rows": [
+    {
+      "spacing": 0.25,
+      "first_outside_site": 6,
+      "z": 4.0,
+      "coupling_J": 2.0,
+      "physical_threshold": 1.5,
+      "localized_preparation_mean_energy": 4.0,
+      "single_endpoint_probability": 0.0024095900347338,
+      "two_sided_tail_probability_partial_sum": 0.00531410735276492,
+      "log_omitted_probability_upper": -357.1690958438216,
+      "two_sided_tail_probability_upper": 0.17308715642720646,
+      "rate_I": 0.3256014864289156,
+      "minus_spacing_log_tail": 1.3093475574933375,
+      "FFT_endpoint_absolute_discrepancy": 2.7755575615628914e-17,
+      "log_periodic_image_error_upper": -27088.0038808852,
+      "FFT_is_relative_tail_measurement": true,
+      "warning": "Contour quadrature is numerical, not interval arithmetic; analytic inequalities provide the rigorous bounds."
+    },
+    {
+      "spacing": 0.125,
+      "first_outside_site": 12,
+      "z": 8.0,
+      "coupling_J": 4.0,
+      "physical_threshold": 1.5,
+      "localized_preparation_mean_energy": 8.0,
+      "single_endpoint_probability": 9.261794627262265e-05,
+      "two_sided_tail_probability_partial_sum": 0.00020894640126666578,
+      "log_omitted_probability_upper": -295.28042620112944,
+      "two_sided_tail_probability_upper": 0.012794090320248126,
+      "rate_I": 0.3256014864289156,
+      "minus_spacing_log_tail": 1.059179099019846,
+      "FFT_endpoint_absolute_discrepancy": 8.420559318810146e-18,
+      "log_periodic_image_error_upper": -24211.45921993353,
+      "FFT_is_relative_tail_measurement": true,
+      "warning": "Contour quadrature is numerical, not interval arithmetic; analytic inequalities provide the rigorous bounds."
+    },
+    {
+      "spacing": 0.0625,
+      "first_outside_site": 24,
+      "z": 16.0,
+      "coupling_J": 8.0,
+      "physical_threshold": 1.5,
+      "localized_preparation_mean_energy": 16.0,
+      "single_endpoint_probability": 2.588214978013318e-07,
+      "two_sided_tail_probability_partial_sum": 5.932243138458339e-07,
+      "log_omitted_probability_upper": -246.7886046150557,
+      "two_sided_tail_probability_upper": 6.990344038520847e-05,
+      "rate_I": 0.3256014864289156,
+      "minus_spacing_log_tail": 0.8961058274950032,
+      "FFT_endpoint_absolute_discrepancy": 2.8684115022960515e-17,
+      "log_periodic_image_error_upper": -21305.85089333584,
+      "FFT_is_relative_tail_measurement": true,
+      "warning": "Contour quadrature is numerical, not interval arithmetic; analytic inequalities provide the rigorous bounds."
+    },
+    {
+      "spacing": 0.03125,
+      "first_outside_site": 48,
+      "z": 32.0,
+      "coupling_J": 16.0,
+      "physical_threshold": 1.5,
+      "localized_preparation_mean_energy": 32.0,
+      "single_endpoint_probability": 3.911559661146999e-12,
+      "two_sided_tail_probability_partial_sum": 9.053524501965813e-12,
+      "log_omitted_probability_upper": -215.7886061775117,
+      "two_sided_tail_probability_upper": 2.0867807760525012e-09,
+      "rate_I": 0.3256014864289156,
+      "minus_spacing_log_tail": 0.794620843321899,
+      "FFT_endpoint_absolute_discrepancy": 1.5296694811138953e-17,
+      "log_periodic_image_error_upper": -18350.530744789176,
+      "FFT_is_relative_tail_measurement": true,
+      "warning": "Contour quadrature is numerical, not interval arithmetic; analytic inequalities provide the rigorous bounds."
+    },
+    {
+      "spacing": 0.015625,
+      "first_outside_site": 96,
+      "z": 64.0,
+      "coupling_J": 32.0,
+      "physical_threshold": 1.5,
+      "localized_preparation_mean_energy": 64.0,
+      "single_endpoint_probability": 1.754398441699419e-21,
+      "two_sided_tail_probability_partial_sum": 4.083221408988747e-21,
+      "log_omitted_probability_upper": -207.3532261553271,
+      "two_sided_tail_probability_upper": 1.859659274986974e-18,
+      "rate_I": 0.3256014864289156,
+      "minus_spacing_log_tail": 0.7335531361714307,
+      "FFT_endpoint_absolute_discrepancy": 9.509204621789556e-17,
+      "log_periodic_image_error_upper": -15312.817810221346,
+      "FFT_is_relative_tail_measurement": true,
+      "warning": "Contour quadrature is numerical, not interval arithmetic; analytic inequalities provide the rigorous bounds."
+    },
+    {
+      "spacing": 0.0078125,
+      "first_outside_site": 192,
+      "z": 128.0,
+      "coupling_J": 64.0,
+      "physical_threshold": 1.5,
+      "localized_preparation_mean_energy": 128.0,
+      "single_endpoint_probability": 6.9900545057185254e-40,
+      "two_sided_tail_probability_partial_sum": 1.6317182071097772e-39,
+      "log_omitted_probability_upper": -230.10978473528277,
+      "two_sided_tail_probability_upper": 1.4768843449359224e-36,
+      "rate_I": 0.3256014864289156,
+      "minus_spacing_log_tail": 0.6977436332214587,
+      "FFT_endpoint_absolute_discrepancy": 1.6509480830282987e-16,
+      "log_periodic_image_error_upper": -12145.207739911422,
+      "FFT_is_relative_tail_measurement": false,
+      "warning": "Contour quadrature is numerical, not interval arithmetic; analytic inequalities provide the rigorous bounds."
+    }
+  ],
+  "nontrivial_spreading_check": {
+    "spacing": 0.03125,
+    "time": 1.0,
+    "speed": 1.0,
+    "physical_second_moment": 0.5,
+    "exact_second_moment": 0.5,
+    "interpretation": "An initially site-localized state changes with the cutoff and has a broad momentum distribution; this spreading does not contradict freezing of fixed low physical momentum."
+  },
+  "added_inputs": [
+    "one-dimensional lattice and local tensor identification",
+    "speed scale c",
+    "coupling cutoff dependence J_a=c/(2a)",
+    "localized reference preparation and single-particle readout",
+    "infinite-volume then small-spacing limiting prescription"
+  ],
+  "limitations": [
+    "No finite numerical sampling can establish exact silence on an interval.",
+    "The positive tail-limit result is a specified propagation kernel, not all quantum observables or arbitrary many-body states.",
+    "The site-localized initial state has mean energy c/a; this is not a fixed finite-energy continuum preparation.",
+    "No unique spatial dimension, reference vacuum, Lorentz field equation, universal coupling or Einstein dynamics is derived.",
+    "Hegerfeldt positive-observable results are not interchangeable with operational signal differences or commutator conditions."
+  ],
+  "sources": [
+    "https://arxiv.org/html/quant-ph/9809030",
+    "https://arxiv.org/abs/2408.02108",
+    "https://www-fourier.univ-grenoble-alpes.fr/~joye/extail.pdf"
+  ],
+  "checks": {
+    "run": 14,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

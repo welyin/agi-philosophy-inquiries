@@ -1,0 +1,175 @@
+{
+  "round": 291,
+  "scope": "Conditional baseline-delay inference with finite samples, endogenous probe queues and drift budgets; no spacetime curvature, quantum backaction or energy closure derived.",
+  "same_observations": [
+    9.0,
+    7.0,
+    8.0,
+    7.0
+  ],
+  "indistinguishable_decompositions": [
+    {
+      "baseline": 3.0,
+      "unseen_queue": [
+        6.0,
+        4.0,
+        5.0,
+        4.0
+      ]
+    },
+    {
+      "baseline": 6.0,
+      "unseen_queue": [
+        3.0,
+        1.0,
+        2.0,
+        1.0
+      ]
+    },
+    {
+      "baseline": 7.0,
+      "unseen_queue": [
+        2.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "self_loaded_probe_streams": [
+    {
+      "admission_gap": 0.5,
+      "delays": [
+        3.0,
+        3.5,
+        4.0,
+        4.5,
+        5.0,
+        5.5,
+        6.0,
+        6.5
+      ],
+      "total_service_work": 8.0,
+      "observation_end": 10.0
+    },
+    {
+      "admission_gap": 1.0,
+      "delays": [
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0
+      ],
+      "total_service_work": 8.0,
+      "observation_end": 10.0
+    },
+    {
+      "admission_gap": 2.0,
+      "delays": [
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0
+      ],
+      "total_service_work": 8.0,
+      "observation_end": 17.0
+    }
+  ],
+  "held_echoes": [
+    {
+      "hold": 0.0,
+      "raw_roundtrip": 12.0,
+      "corrected_roundtrip": 12.0,
+      "unobserved_reverse_queue_wait": 9.0
+    },
+    {
+      "hold": 4.0,
+      "raw_roundtrip": 12.0,
+      "corrected_roundtrip": 8.0,
+      "unobserved_reverse_queue_wait": 5.0
+    },
+    {
+      "hold": 9.0,
+      "raw_roundtrip": 12.0,
+      "corrected_roundtrip": 3.0,
+      "unobserved_reverse_queue_wait": 0.0
+    },
+    {
+      "hold": 20.0,
+      "raw_roundtrip": 23.0,
+      "corrected_roundtrip": 3.0,
+      "unobserved_reverse_queue_wait": 0.0
+    }
+  ],
+  "bounded_noise_example": {
+    "true_baseline": 6.0,
+    "observed": [
+      7.95,
+      6.07,
+      6.46
+    ],
+    "queue_threshold": 0.1,
+    "absolute_error_bound": 0.05,
+    "conditional_baseline_interval": [
+      5.920000000000001,
+      6.12
+    ]
+  },
+  "conditional_probability_example": {
+    "samples": 8,
+    "per_history_near_empty_lower_bound": 0.25,
+    "enumerated_total_probability": 1.0,
+    "all_bad_probability": 0.1001129150390625,
+    "product_bound": 0.1001129150390625,
+    "common_mode_all_bad_probability_without_conditional_assumption": 0.75
+  },
+  "window_certificates": [
+    {
+      "links": 6,
+      "samples_per_link": 23,
+      "total_echoes": 138,
+      "service_work": 276.0,
+      "measurement_fraction": 0.1,
+      "minimum_window_from_work": 2760.0,
+      "maximum_window_from_drift": 749.9999999999999,
+      "certificate_intervals_overlap": false,
+      "union_failure_bound": 0.00802713022042667,
+      "error_bound_at_minimum_window": 0.30100000000000005
+    },
+    {
+      "links": 6,
+      "samples_per_link": 23,
+      "total_echoes": 138,
+      "service_work": 276.0,
+      "measurement_fraction": 0.5,
+      "minimum_window_from_work": 552.0,
+      "maximum_window_from_drift": 749.9999999999999,
+      "certificate_intervals_overlap": true,
+      "union_failure_bound": 0.00802713022042667,
+      "error_bound_at_minimum_window": 0.08020000000000001
+    }
+  ],
+  "resource_limits": [
+    "The work bound is necessary for this certificate, not a sufficient scheduling theorem.",
+    "The near-empty probability must hold under the actual probing policy; changing probe load can change it.",
+    "Unobserved queue wait cannot be subtracted from endpoint timestamps alone.",
+    "The baseline includes fixed transmission/processing for a specified probe type; it is not pure spatial flight time."
+  ],
+  "checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

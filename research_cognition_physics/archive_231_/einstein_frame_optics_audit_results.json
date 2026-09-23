@@ -1,0 +1,52 @@
+{
+  "round": 320,
+  "scope": "Positive-F classical field redefinition g_E=F*g_J in the same supplied scalar-tensor plane-wave solution. Area, affine generators and scalar kinetic coefficient checked jointly; no quantum frame equivalence or full global horizon is established.",
+  "checks_at_512_steps": {
+    "area_identity_error": 3.3306690738754696e-16,
+    "affine_acceleration_error": 4.440892098500626e-16,
+    "wrong_affine_acceleration": 1.419955800370092,
+    "curvature_equation_error": 1.1210512806387844e-06,
+    "focusing_equation_error": 1.1891715914202905e-06,
+    "canonical_scalar_derivative_error": 1.796282278476724e-08,
+    "missing_kinetic_correction": 4.626003923052733,
+    "minimum_kinetic_coefficient": 1.0,
+    "maximum_kinetic_coefficient": 4.131422800151496,
+    "minimum_Einstein_expansion": 6.647141241283223e-48
+  },
+  "independent_connection_convergence": [
+    {
+      "steps": 128,
+      "Rkk_equation_error": 0.00020805061288135807
+    },
+    {
+      "steps": 256,
+      "Rkk_equation_error": 1.6073283854936213e-05
+    },
+    {
+      "steps": 512,
+      "Rkk_equation_error": 1.1210512806387844e-06
+    }
+  ],
+  "minimal_coupling_control": {
+    "area_identity_error": 1.1102230246251565e-16,
+    "affine_acceleration_error": 0.0,
+    "wrong_affine_acceleration": 0.0,
+    "curvature_equation_error": 3.5160311555749307e-07,
+    "focusing_equation_error": 3.516030966377315e-07,
+    "canonical_scalar_derivative_error": 2.2798614107699677e-08,
+    "missing_kinetic_correction": 0.0,
+    "minimum_kinetic_coefficient": 1.0,
+    "maximum_kinetic_coefficient": 1.0,
+    "minimum_Einstein_expansion": 0.0
+  },
+  "next_interface": "Audit the F=0 boundary without confusing failure of this field redefinition with a mandatory curvature singularity.",
+  "checks": {
+    "run": 9,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

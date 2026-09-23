@@ -1,0 +1,81 @@
+{
+  "round": 393,
+  "scope": "Conditional audit of a specified 1D infinite-chain QCA; no dimension selection, no autonomous time-independent Hamiltonian construction, no full physically-universal compiler claim.",
+  "original_supports": [
+    {
+      "width": 1,
+      "cell_dimension": 12,
+      "left_matrix_size": 18,
+      "right_matrix_size": 8,
+      "index": "3/2"
+    },
+    {
+      "width": 2,
+      "cell_dimension": 144,
+      "left_matrix_size": 216,
+      "right_matrix_size": 96,
+      "index": "3/2"
+    },
+    {
+      "width": 3,
+      "cell_dimension": 1728,
+      "left_matrix_size": 2592,
+      "right_matrix_size": 1152,
+      "index": "3/2"
+    },
+    {
+      "width": 5,
+      "cell_dimension": 248832,
+      "left_matrix_size": 373248,
+      "right_matrix_size": 165888,
+      "index": "3/2"
+    }
+  ],
+  "boundary_choi": {
+    "right_mutual_information": 2.197224577336219,
+    "left_mutual_information": 1.3862943611198906,
+    "log_index": 0.4054651081081643
+  },
+  "counterflow": {
+    "index": "2/3",
+    "original_index": "3/2",
+    "combined_index": "1",
+    "minimum_uniform_auxiliary_cell_dimension_for_product_completion": 6,
+    "original_cell_dimension": 12,
+    "enlarged_cell_dimension": 72
+  },
+  "wire_identity_rings": [
+    {
+      "cells": 2,
+      "exact": true
+    },
+    {
+      "cells": 3,
+      "exact": true
+    },
+    {
+      "cells": 4,
+      "exact": true
+    },
+    {
+      "cells": 7,
+      "exact": true
+    }
+  ],
+  "pulse_reference_vector_error": 1.4104494794167484e-15,
+  "maximally_entangled_reference_vector_error": 0.0,
+  "blank_auxiliary_return_probability": 0.9999999999999976,
+  "pulse_stages": 4,
+  "largest_single_swap_generator_norm": 3.141592653589793,
+  "constant_autonomous_hamiltonian_derived": false,
+  "finite_ring_used_to_prove_infinite_chain_obstruction": false,
+  "checks": {
+    "run": 10,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

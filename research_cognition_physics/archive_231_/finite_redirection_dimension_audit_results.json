@@ -1,0 +1,106 @@
+{
+  "round": 387,
+  "scope": {
+    "lower_bound_theorem": "A full L homeomorphic to S^(n-1), n>=1, carrying continuous endpoint maps a,b with a^3=b^2=(ab)^3=id and b not identity has n>=3. Finite order already makes the maps homeomorphisms. No qubit covariance, contrast tomography, minimality, or continuous SO3 control is needed.",
+    "contract_change": "This is an alternative sufficient contract, not automatically weaker than round 384: it adds exact global finite-word relations on actual position identities. Dense approximate rotations need not supply them.",
+    "upper_bound": "Dimension exactly three still needs the separately certified inverse separation of round 383 or 386 on the same full shell.",
+    "position_witness": "A single probability difference can witness b nonidentity only for the same specified position readout under matched internal/controller preparation. Reading a program label is not a position witness.",
+    "finite_program": "The known round-383 conjugation construction can use 12 finite labels and a two-dimensional payload. This is only recalled analytically, not rerun or counted as a new program construction. It does not establish a continuous position-shell action, a cost in physical time, or an autonomous natural Hamiltonian.",
+    "historical_reuse": "The 12 integer tetrahedral matrices come from round 380. Their old closure and four-point-orbit results are not new results of this round.",
+    "not_claimed": [
+      "Exact global endpoint identities follow from finitely many noisy samples",
+      "Internal qubit gate availability implies actual spatial redirection",
+      "An SU2 channel identity is automatically an identity of a phase-sensitive source",
+      "The finite group chooses three-dimensional geometry without an upper bound",
+      "All extra contracts have been derived from FUCP"
+    ]
+  },
+  "finite_presentation": {
+    "relations": "a^3=b^2=(ab)^3=e",
+    "normal_form": "v*a^j, v in {e,b,aba^-1,a^2ba^-2}, j=0,1,2",
+    "normal_form_count": 12,
+    "tested_cyclic_targets": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "all_tested_cyclic_images_kill_b": true
+  },
+  "single_position_probe": {
+    "visibility": 0.6,
+    "port": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "before": 0.8,
+    "after_b": 0.2,
+    "probability_error_per_reading": 0.01,
+    "guaranteed_nonzero_gap_from_exact_centers": 0.5800000000000001
+  },
+  "circle_counterexamples": {
+    "A4_to_C3_a_motion_chord": 1.7320508075688772,
+    "A4_to_C3_b_motion_chord": 0.0,
+    "dihedral_a3_b2_hold_but_ab3_endpoint_defect": 1.7320508075688772
+  },
+  "sample_relations_are_not_global_relations": {
+    "circle_samples": [
+      1.0471975511965976,
+      4.1887902047863905
+    ],
+    "all_three_relations_hold_at_samples": true,
+    "b_readable_probability_gap_at_first_sample": 0.5196152422706631,
+    "mixed_relation_defect_at_zero": 1.7320508075688772
+  },
+  "approximate_relations_need_a_relative_margin": [
+    {
+      "b_rotation_angle": 0.01,
+      "a3_defect": 0.0,
+      "b2_defect": 0.019999666668333332,
+      "ab3_defect": 0.02999887501265618,
+      "b_motion": 0.009999958333385416,
+      "one_probe_probability_gap": 0.002999950000249999
+    },
+    {
+      "b_rotation_angle": 0.001,
+      "a3_defect": 0.0,
+      "b2_defect": 0.0019999996666666834,
+      "ab3_defect": 0.002999998875000127,
+      "b_motion": 0.0009999999583333338,
+      "one_probe_probability_gap": 0.0002999999500000025
+    }
+  ],
+  "qubit_lift_audit": {
+    "A_cubed": "-I",
+    "B_squared": "-I",
+    "AB_cubed": "+I",
+    "negative_lift_product_signs_in_144_pairs": 66,
+    "controlled_B_squared_changes_plus_to_minus": true
+  },
+  "program_only_false_witness": {
+    "real_position_action": "identity for every group label",
+    "memory_readout_probability_change": 1.0,
+    "position_readout_probability_change": 0.0
+  },
+  "primary_source": "https://www.math.uchicago.edu/~farb/papers/mcgbook.pdf",
+  "checks": {
+    "run": 9,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

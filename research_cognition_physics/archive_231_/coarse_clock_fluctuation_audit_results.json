@@ -1,0 +1,167 @@
+{
+  "round": 298,
+  "scope": "Conditional statistical coarse graining of operational clock comparisons; neither fundamental time fluctuations nor a shared physical time have been derived.",
+  "inputs": {
+    "mean_interval": 1.0,
+    "fluctuation_amplitude": 0.2,
+    "all_tick_intervals_positive": true,
+    "covariance_law_and_reference_readout_are_supplied": true
+  },
+  "block_statistics": [
+    {
+      "events_per_block": 1,
+      "iid_rate_sd": 0.2,
+      "markov_rho_0_9_rate_sd": 0.2,
+      "common_offset_ensemble_rate_sd": 0.2,
+      "iid_accumulated_time_sd": 0.2,
+      "two_independent_clocks_rate_difference_sd": 0.28284271247461906
+    },
+    {
+      "events_per_block": 16,
+      "iid_rate_sd": 0.05,
+      "markov_rho_0_9_rate_sd": 0.15680120943776488,
+      "common_offset_ensemble_rate_sd": 0.2,
+      "iid_accumulated_time_sd": 0.8,
+      "two_independent_clocks_rate_difference_sd": 0.07071067811865477
+    },
+    {
+      "events_per_block": 256,
+      "iid_rate_sd": 0.0125,
+      "markov_rho_0_9_rate_sd": 0.0534685582258416,
+      "common_offset_ensemble_rate_sd": 0.2,
+      "iid_accumulated_time_sd": 3.2,
+      "two_independent_clocks_rate_difference_sd": 0.01767766952966369
+    },
+    {
+      "events_per_block": 4096,
+      "iid_rate_sd": 0.003125,
+      "markov_rho_0_9_rate_sd": 0.013605797351041844,
+      "common_offset_ensemble_rate_sd": 0.2,
+      "iid_accumulated_time_sd": 12.8,
+      "two_independent_clocks_rate_difference_sd": 0.004419417382415923
+    }
+  ],
+  "monte_carlo_cross_checks": [
+    {
+      "rho": 0.0,
+      "events_per_block": 256,
+      "paths": 4096,
+      "seed": 298,
+      "empirical_variance": 0.00015337367294705474,
+      "analytic_variance": 0.00015625000000000003
+    },
+    {
+      "rho": 0.9,
+      "events_per_block": 256,
+      "paths": 4096,
+      "seed": 298,
+      "empirical_variance": 0.00276008440516307,
+      "analytic_variance": 0.0028588867187502136
+    }
+  ],
+  "bounded_nonstationary_counterexample": [
+    {
+      "block": 1,
+      "events": 1,
+      "block_interval": 1.2,
+      "cumulative_mean": 1.2
+    },
+    {
+      "block": 2,
+      "events": 11,
+      "block_interval": 0.8,
+      "cumulative_mean": 0.8363636363636364
+    },
+    {
+      "block": 3,
+      "events": 121,
+      "block_interval": 1.2,
+      "cumulative_mean": 1.1669421487603306
+    },
+    {
+      "block": 4,
+      "events": 1331,
+      "block_interval": 0.8,
+      "cumulative_mean": 0.83335837716003
+    },
+    {
+      "block": 5,
+      "events": 14641,
+      "block_interval": 1.2,
+      "cumulative_mean": 1.1666689433781845
+    },
+    {
+      "block": 6,
+      "events": 161051,
+      "block_interval": 0.8,
+      "cumulative_mean": 0.8333335403071076
+    },
+    {
+      "block": 7,
+      "events": 1771561,
+      "block_interval": 1.2,
+      "cumulative_mean": 1.1666666854824643
+    },
+    {
+      "block": 8,
+      "events": 19487171,
+      "block_interval": 0.8,
+      "cumulative_mean": 0.8333333350438603
+    },
+    {
+      "block": 9,
+      "events": 214358881,
+      "block_interval": 1.2,
+      "cumulative_mean": 1.1666666668221692
+    },
+    {
+      "block": 10,
+      "events": 2357947691,
+      "block_interval": 0.8,
+      "cumulative_mean": 0.83333333334747
+    },
+    {
+      "block": 11,
+      "events": 25937424601,
+      "block_interval": 1.2,
+      "cumulative_mean": 1.1666666666679517
+    },
+    {
+      "block": 12,
+      "events": 285311670611,
+      "block_interval": 0.8,
+      "cumulative_mean": 0.8333333333334502
+    }
+  ],
+  "stationary_common_offset": {
+    "possible_single_history_rates": [
+      0.8,
+      1.2
+    ],
+    "ensemble_variance_about_prescribed_rate": 0.04,
+    "allan_variance_within_each_history": 0.0,
+    "removable_by_run_specific_rate_calibration": true
+  },
+  "iid_next_tick": {
+    "conditional_variance_even_after_arbitrarily_long_past": 0.04,
+    "possible_intervals": [
+      0.8,
+      1.2
+    ]
+  },
+  "limits": [
+    "Averaging a rate is different from bounding absolute accumulated time error or predicting the next event.",
+    "A common offset is a calibration ambiguity, not proof that a single history lacks a uniform rate.",
+    "The growing alternating-block example has no asymptotic constant rate despite bounded positive intervals.",
+    "These are classical statistical comparisons; clock noise cannot by itself identify microscopic spacetime ontology."
+  ],
+  "checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

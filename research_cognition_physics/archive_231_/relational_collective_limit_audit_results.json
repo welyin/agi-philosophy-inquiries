@@ -1,0 +1,709 @@
+{
+  "round": 361,
+  "scope": {
+    "proved": [
+      "Specified graph collective-spin dynamics has sitewise mean-square comparison D<=exp(Bt)D0.",
+      "Bounded incident absolute weights give site-uniform O(1/N) concentration and mean bias independent of M at fixed times.",
+      "Classical initial-data dependence has a weighted graph-path factorial tail; this is not a strict causal cone.",
+      "Single-site convergence does not imply vanishing probability of any failure as M also grows."
+    ],
+    "inputs": [
+      "Undirected weighted relation graph J with zero diagonal",
+      "N qubits per graph site and uniform incident absolute-weight bound",
+      "Fixed transverse on-site fields, scaled all-to-all couplings between adjacent cells",
+      "Specified identical pure qubits inside each site and product across sites"
+    ],
+    "not_proved": [
+      "Arbitrary-input diamond convergence",
+      "Full many-body product-state convergence",
+      "Selection of graph or physical dimension",
+      "Lorentz symmetry, metric, HDA or Einstein dynamics",
+      "General existence or uniqueness of an infinite-volume quantum limit"
+    ]
+  },
+  "quantum_scaling": [
+    {
+      "N_per_site": 2,
+      "M_sites": 3,
+      "graph": "path",
+      "time": 0.8,
+      "incident_absolute_weight_max": 0.5,
+      "quantum_means": [
+        [
+          0.9348359431504474,
+          -0.21532770338929624,
+          0.15399160839319342
+        ],
+        [
+          0.9132216214757843,
+          -0.05439613285382667,
+          0.21111648190068746
+        ],
+        [
+          0.9533083856323212,
+          0.13104894591432334,
+          0.08354492522266917
+        ]
+      ],
+      "classical_means": [
+        [
+          0.9640105898490885,
+          -0.21720535021849546,
+          0.15331476933184104
+        ],
+        [
+          0.976001612259091,
+          -0.048907062072922454,
+          0.21220026424830418
+        ],
+        [
+          0.9871505544020944,
+          0.1359278031760224,
+          0.08400842378819776
+        ]
+      ],
+      "mean_bias_each_site": [
+        0.02924283978550485,
+        0.06302881662356394,
+        0.03419518191415412
+      ],
+      "mean_square_each_site": [
+        1.0568574677703044,
+        1.1224697935945331,
+        1.0682188515935247
+      ],
+      "local_mean_square_bounds": [
+        2.546744615157697,
+        4.093489230315395,
+        2.5467446151576976
+      ],
+      "uniform_mean_square_bound": 4.953032424395115,
+      "uniform_mean_bias_bound": 2.727491495902648,
+      "energy_per_N_error": 0.0,
+      "numerical_action": {
+        "substeps": 6,
+        "norm_upper": 3.4064627063249873,
+        "exact_arithmetic_truncation_upper": 2.3873503294970608e-23,
+        "norm_error": 6.661338147750939e-16
+      }
+    },
+    {
+      "N_per_site": 4,
+      "M_sites": 3,
+      "graph": "path",
+      "time": 0.8,
+      "incident_absolute_weight_max": 0.5,
+      "quantum_means": [
+        [
+          0.9493299746887687,
+          -0.216491972845273,
+          0.1536000968554811
+        ],
+        [
+          0.9441514645257587,
+          -0.05199753528330163,
+          0.2115924539516872
+        ],
+        [
+          0.970162464584637,
+          0.1332131672656435,
+          0.0837543932865296
+        ]
+      ],
+      "classical_means": [
+        [
+          0.9640105898490885,
+          -0.21720535021849546,
+          0.15331476933184104
+        ],
+        [
+          0.976001612259091,
+          -0.048907062072922454,
+          0.21220026424830418
+        ],
+        [
+          0.9871505544020944,
+          0.1359278031760224,
+          0.08400842378819776
+        ]
+      ],
+      "mean_bias_each_site": [
+        0.014700706804701076,
+        0.032005505286682105,
+        0.017205492590091652
+      ],
+      "mean_square_each_site": [
+        0.5285269458775286,
+        0.5621272541576859,
+        0.5343202749585921
+      ],
+      "local_mean_square_bounds": [
+        1.2733723075788486,
+        2.0467446151576976,
+        1.2733723075788488
+      ],
+      "uniform_mean_square_bound": 2.4765162121975575,
+      "uniform_mean_bias_bound": 1.363745747951324,
+      "energy_per_N_error": 4.440892098500626e-16,
+      "numerical_action": {
+        "substeps": 11,
+        "norm_upper": 6.8129254126499745,
+        "exact_arithmetic_truncation_upper": 2.38271699862115e-22,
+        "norm_error": 2.220446049250313e-16
+      }
+    },
+    {
+      "N_per_site": 8,
+      "M_sites": 3,
+      "graph": "path",
+      "time": 0.8,
+      "incident_absolute_weight_max": 0.5,
+      "quantum_means": [
+        [
+          0.9566384324551961,
+          -0.2169076156820649,
+          0.15344378978197315
+        ],
+        [
+          0.9599414687413589,
+          -0.05054732709568402,
+          0.21187880884329438
+        ],
+        [
+          0.9786305134746149,
+          0.13449833277201956,
+          0.08387565955930072
+        ]
+      ],
+      "classical_means": [
+        [
+          0.9640105898490885,
+          -0.21720535021849546,
+          0.15331476933184104
+        ],
+        [
+          0.976001612259091,
+          -0.048907062072922454,
+          0.21220026424830418
+        ],
+        [
+          0.9871505544020944,
+          0.1359278031760224,
+          0.08400842378819776
+        ]
+      ],
+      "mean_bias_each_site": [
+        0.0073792951405305856,
+        0.016146888639377483,
+        0.008640145217663892
+      ],
+      "mean_square_each_site": [
+        0.2643034531829037,
+        0.2813254366900441,
+        0.2672320424208335
+      ],
+      "local_mean_square_bounds": [
+        0.6366861537894243,
+        1.0233723075788488,
+        0.6366861537894244
+      ],
+      "uniform_mean_square_bound": 1.2382581060987787,
+      "uniform_mean_bias_bound": 0.681872873975662,
+      "energy_per_N_error": 2.220446049250313e-16,
+      "numerical_action": {
+        "substeps": 22,
+        "norm_upper": 13.625850825299949,
+        "exact_arithmetic_truncation_upper": 4.7654339972423e-22,
+        "norm_error": 2.220446049250313e-16
+      }
+    },
+    {
+      "N_per_site": 16,
+      "M_sites": 3,
+      "graph": "path",
+      "time": 0.8,
+      "incident_absolute_weight_max": 0.5,
+      "quantum_means": [
+        [
+          0.9603154475039423,
+          -0.21707163816878372,
+          0.15337580914726862
+        ],
+        [
+          0.9679351308385475,
+          -0.04975218043857813,
+          0.21203499703806167
+        ],
+        [
+          0.9828828466728514,
+          0.13519450649442014,
+          0.08394057682867098
+        ]
+      ],
+      "classical_means": [
+        [
+          0.9640105898490885,
+          -0.21720535021849546,
+          0.15331476933184104
+        ],
+        [
+          0.976001612259091,
+          -0.048907062072922454,
+          0.21220026424830418
+        ],
+        [
+          0.9871505544020944,
+          0.1359278031760224,
+          0.08400842378819776
+        ]
+      ],
+      "mean_bias_each_site": [
+        0.0036980645914043097,
+        0.008112315379145618,
+        0.004330780125497766
+      ],
+      "mean_square_each_site": [
+        0.13216368203816733,
+        0.14073327272205177,
+        0.13363649034816852
+      ],
+      "local_mean_square_bounds": [
+        0.31834307689471214,
+        0.5116861537894244,
+        0.3183430768947122
+      ],
+      "uniform_mean_square_bound": 0.6191290530493894,
+      "uniform_mean_bias_bound": 0.340936436987831,
+      "energy_per_N_error": 2.220446049250313e-16,
+      "numerical_action": {
+        "substeps": 44,
+        "norm_upper": 27.251701650599898,
+        "exact_arithmetic_truncation_upper": 9.5308679944846e-22,
+        "norm_error": 1.3322676295501878e-15
+      }
+    }
+  ],
+  "same_incident_budget_different_graphs": [
+    {
+      "N_per_site": 4,
+      "M_sites": 4,
+      "graph": "path",
+      "time": 0.5,
+      "incident_absolute_weight_max": 0.5,
+      "quantum_means": [
+        [
+          0.950847247830078,
+          -0.18620712445276733,
+          0.22061609528624773
+        ],
+        [
+          0.9608098496531818,
+          -0.02937613462372491,
+          0.22245633006339124
+        ],
+        [
+          0.9805433704312078,
+          0.0726434693681085,
+          0.06518923648727896
+        ],
+        [
+          0.9745649609855379,
+          0.09204492773538456,
+          -0.16333365404146394
+        ]
+      ],
+      "classical_means": [
+        [
+          0.9573584521500559,
+          -0.1866381234110397,
+          0.22052438637587557
+        ],
+        [
+          0.9745028041265765,
+          -0.028506037414740833,
+          0.22255716250066487
+        ],
+        [
+          0.995129160859964,
+          0.07387829469819127,
+          0.06526829841991497
+        ],
+        [
+          0.982194223607197,
+          0.0927718666249272,
+          -0.16336427968066342
+        ]
+      ],
+      "mean_bias_each_site": [
+        0.006526097786792043,
+        0.01372094160558772,
+        0.014638180447603509,
+        0.007663878015022831
+      ],
+      "mean_square_each_site": [
+        0.5125875465499697,
+        0.5266829209772705,
+        0.5292222648345943,
+        0.5151317205811374
+      ],
+      "local_mean_square_bounds": [
+        0.8764221094012621,
+        1.2972433463477746,
+        1.2972433463477744,
+        0.8764221094012619
+      ],
+      "uniform_mean_square_bound": 1.3591409142295225,
+      "uniform_mean_bias_bound": 0.5347802788794586,
+      "energy_per_N_error": 4.440892098500626e-16,
+      "numerical_action": {
+        "substeps": 9,
+        "norm_upper": 8.312770020974765,
+        "exact_arithmetic_truncation_upper": 4.9511485507799804e-23,
+        "norm_error": 2.220446049250313e-16
+      }
+    },
+    {
+      "N_per_site": 4,
+      "M_sites": 4,
+      "graph": "cycle",
+      "time": 0.5,
+      "incident_absolute_weight_max": 0.5,
+      "quantum_means": [
+        [
+          0.938331149504482,
+          -0.22100638595554406,
+          0.21085076345556994
+        ],
+        [
+          0.9607882623686851,
+          -0.030156442407885644,
+          0.2223668420650092
+        ],
+        [
+          0.9805746763766576,
+          0.0722880885163775,
+          0.06517121446230717
+        ],
+        [
+          0.9588524889640162,
+          0.15430818297538745,
+          -0.1675022218720222
+        ]
+      ],
+      "classical_means": [
+        [
+          0.9518770896627905,
+          -0.22270823701655648,
+          0.21054939406247525
+        ],
+        [
+          0.9744998428728111,
+          -0.029308979230258325,
+          0.22246581754809977
+        ],
+        [
+          0.9951572531571543,
+          0.0735151591137363,
+          0.06525000282902041
+        ],
+        [
+          0.9733665384831355,
+          0.15643786303245852,
+          -0.1675851329062174
+        ]
+      ],
+      "mean_bias_each_site": [
+        0.013655753927097437,
+        0.013738101393744914,
+        0.014634324563050827,
+        0.014669698184643202
+      ],
+      "mean_square_each_site": [
+        0.5264192664019874,
+        0.5267182268558028,
+        0.5292146125683863,
+        0.52894909478711
+      ],
+      "local_mean_square_bounds": [
+        1.3591409142295232,
+        1.3591409142295223,
+        1.3591409142295232,
+        1.3591409142295228
+      ],
+      "uniform_mean_square_bound": 1.3591409142295225,
+      "uniform_mean_bias_bound": 0.5347802788794586,
+      "energy_per_N_error": 4.440892098500626e-16,
+      "numerical_action": {
+        "substeps": 10,
+        "norm_upper": 9.312770020974765,
+        "exact_arithmetic_truncation_upper": 6.457410240670084e-23,
+        "norm_error": 2.220446049250313e-16
+      }
+    },
+    {
+      "N_per_site": 4,
+      "M_sites": 4,
+      "graph": "star",
+      "time": 0.5,
+      "incident_absolute_weight_max": 0.5,
+      "quantum_means": [
+        [
+          0.9433360091366955,
+          -0.2180859649148937,
+          0.21156735638452678
+        ],
+        [
+          0.9717907363573404,
+          -0.06346307663057317,
+          0.21443963310718364
+        ],
+        [
+          0.9896327833034977,
+          0.0993896121676355,
+          0.06800289607295087
+        ],
+        [
+          0.975639724094292,
+          0.120870427244944,
+          -0.16531880843342114
+        ]
+      ],
+      "classical_means": [
+        [
+          0.9525113035925782,
+          -0.21919189229083355,
+          0.2113696545919772
+        ],
+        [
+          0.9746776310849586,
+          -0.0633533072878839,
+          0.2144524980463001
+        ],
+        [
+          0.992686597093841,
+          0.0997300536182288,
+          0.0680237925696033
+        ],
+        [
+          0.9787655691125156,
+          0.12117494737611752,
+          -0.16533176599869095
+        ]
+      ],
+      "mean_bias_each_site": [
+        0.009243819000379806,
+        0.002889009516011168,
+        0.0030728025824880724,
+        0.003140669910503274
+      ],
+      "mean_square_each_site": [
+        0.5178803876753674,
+        0.5056191927634809,
+        0.5061337074455425,
+        0.5061970239724795
+      ],
+      "local_mean_square_bounds": [
+        1.2108005307910061,
+        0.7369335102636683,
+        0.7369335102636684,
+        0.7369335102636683
+      ],
+      "uniform_mean_square_bound": 1.3591409142295225,
+      "uniform_mean_bias_bound": 0.5347802788794586,
+      "energy_per_N_error": 0.0,
+      "numerical_action": {
+        "substeps": 8,
+        "norm_upper": 7.3127700209747655,
+        "exact_arithmetic_truncation_upper": 3.595551963068173e-23,
+        "norm_error": 4.440892098500626e-16
+      }
+    },
+    {
+      "N_per_site": 4,
+      "M_sites": 4,
+      "graph": "complete",
+      "time": 0.5,
+      "incident_absolute_weight_max": 0.5,
+      "quantum_means": [
+        [
+          0.9431023461798813,
+          -0.21833182296238401,
+          0.21153234693545778
+        ],
+        [
+          0.9647485648891445,
+          -0.07898965863156228,
+          0.21083245990203292
+        ],
+        [
+          0.9816843201640635,
+          0.10901618845240663,
+          0.06909927966175033
+        ],
+        [
+          0.9614788839227045,
+          0.1653566672099443,
+          -0.16814452627057339
+        ]
+      ],
+      "classical_means": [
+        [
+          0.9524558053291619,
+          -0.2194698269459838,
+          0.21133133689796263
+        ],
+        [
+          0.974325267272203,
+          -0.07899238127747842,
+          0.21083281825907535
+        ],
+        [
+          0.9914984592076347,
+          0.11020975589807169,
+          0.06917091219412719
+        ],
+        [
+          0.9715130139467786,
+          0.1669423678114289,
+          -0.16820436843779452
+        ]
+      ],
+      "mean_bias_each_site": [
+        0.009424577240339358,
+        0.00957670277678593,
+        0.009886711264803621,
+        0.010158828319375748
+      ],
+      "mean_square_each_site": [
+        0.5182320685680618,
+        0.5186622274613384,
+        0.5197344028091909,
+        0.5200461484580374
+      ],
+      "local_mean_square_bounds": [
+        1.3591409142295228,
+        1.3591409142295232,
+        1.359140914229523,
+        1.3591409142295228
+      ],
+      "uniform_mean_square_bound": 1.3591409142295225,
+      "uniform_mean_bias_bound": 0.5347802788794586,
+      "energy_per_N_error": 4.440892098500626e-16,
+      "numerical_action": {
+        "substeps": 10,
+        "norm_upper": 9.312770020974765,
+        "exact_arithmetic_truncation_upper": 6.457410240670084e-23,
+        "norm_error": 2.220446049250313e-16
+      }
+    }
+  ],
+  "classical_graph_propagation": {
+    "M_sites": 7,
+    "time": 0.8,
+    "initial_difference_at_source": 0.7752967294482884,
+    "actual_classical_response": [
+      0.7651470072728311,
+      0.24893380011808075,
+      0.017128168582531494,
+      0.0003399025601936451,
+      3.0858079970255476e-06,
+      1.5972161674112307e-08,
+      5.465165115525627e-11
+    ],
+    "response_vector_refinement_difference": [
+      2.475489462917207e-13,
+      2.150412654553907e-13,
+      6.60454787855298e-14,
+      9.066604229716534e-15,
+      2.7186299407202254e-15,
+      1.64976489155517e-15,
+      8.562314621180678e-17
+    ],
+    "weighted_path_bound": [
+      0.8389966644126521,
+      0.32699270070464015,
+      0.06454473795312696,
+      0.008538021876915403,
+      0.0008492897608033832,
+      6.768549573244956e-05,
+      4.4867720407339585e-06
+    ],
+    "row_sum_factorial_bound": [
+      1.7254546031135174,
+      0.9501578736652285,
+      0.3299204901065982,
+      0.08182553668314584,
+      0.01566688243689187,
+      0.0024351515876410773,
+      0.00031807465176095066
+    ]
+  },
+  "two_limits_exact_initial_measurement": [
+    {
+      "N_per_site": 16,
+      "single_site_failure": 0.021270751953125,
+      "M_sites_ceil_inverse_probability": 48,
+      "probability_any_site_fails": 0.6437103486642292
+    },
+    {
+      "N_per_site": 32,
+      "single_site_failure": 0.0021024015732109547,
+      "M_sites_ceil_inverse_probability": 476,
+      "probability_any_site_fails": 0.6327809004713516
+    },
+    {
+      "N_per_site": 64,
+      "single_site_failure": 2.436457216293327e-05,
+      "M_sites_ceil_inverse_probability": 41044,
+      "probability_any_site_fails": 0.6321322140126275
+    }
+  ],
+  "fixed_N16_increasing_M": [
+    {
+      "M_sites": 1,
+      "any_site_failure": 0.021270751953124997
+    },
+    {
+      "M_sites": 10,
+      "any_site_failure": 0.19346045042042478
+    },
+    {
+      "M_sites": 100,
+      "any_site_failure": 0.8835185726796803
+    },
+    {
+      "M_sites": 1000,
+      "any_site_failure": 0.9999999995402022
+    }
+  ],
+  "formulae": {
+    "A": "|J|",
+    "B": "2*(diag(A*1)+A)",
+    "mean_square_uniform": "2*exp(4*kappa*t)/N",
+    "mean_bias_uniform": "2*(exp(4*kappa*t)-exp(2*kappa*t))/N",
+    "classical_dependence": "r(t)<=exp(2*A*t)*r(0)",
+    "all_sites_Chebyshev_sufficient": "min(1,2*M*exp(4*kappa*t)/(N*epsilon^2))"
+  },
+  "resource_account": {
+    "physical_qubits": "M*N",
+    "full_dimension": "2^(M*N)",
+    "symmetric_dimension": "(N+1)^M",
+    "microscopic_cross_pairs": "|E|*N^2",
+    "pair_coupling": "J_vw/N",
+    "norm_upper_per_qubit": "Omega_max+kappa/2"
+  },
+  "source": [
+    "https://arxiv.org/html/2403.17163",
+    "https://arxiv.org/html/0902.0025"
+  ],
+  "numerical_scope": "Symmetric-sector evolution is exact within the invariant sector except Taylor truncation and floating-point error. Taylor bounds certify exact arithmetic only; full small tensors, RK4 refinement, energy and norm checks provide independent numerical cross-checks.",
+  "checks": {
+    "run": 15,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

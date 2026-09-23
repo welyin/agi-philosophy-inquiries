@@ -1,0 +1,104 @@
+{
+  "round": 266,
+  "ancestral_blocks": [
+    {
+      "extra_depth": 0,
+      "graph_vertices": 9,
+      "block_vertices": 1,
+      "outgoing_edges": 3,
+      "boundary_over_volume_power_two_thirds": 3.0
+    },
+    {
+      "extra_depth": 1,
+      "graph_vertices": 27,
+      "block_vertices": 3,
+      "outgoing_edges": 3,
+      "boundary_over_volume_power_two_thirds": 1.4422495703074083
+    },
+    {
+      "extra_depth": 2,
+      "graph_vertices": 81,
+      "block_vertices": 9,
+      "outgoing_edges": 3,
+      "boundary_over_volume_power_two_thirds": 0.6933612743506348
+    },
+    {
+      "extra_depth": 3,
+      "graph_vertices": 243,
+      "block_vertices": 27,
+      "outgoing_edges": 3,
+      "boundary_over_volume_power_two_thirds": 0.3333333333333334
+    },
+    {
+      "extra_depth": 4,
+      "graph_vertices": 729,
+      "block_vertices": 81,
+      "outgoing_edges": 3,
+      "boundary_over_volume_power_two_thirds": 0.16024995225637875
+    },
+    {
+      "extra_depth": 5,
+      "graph_vertices": 2187,
+      "block_vertices": 243,
+      "outgoing_edges": 3,
+      "boundary_over_volume_power_two_thirds": 0.07704014159451499
+    },
+    {
+      "extra_depth": 6,
+      "graph_vertices": 6561,
+      "block_vertices": 729,
+      "outgoing_edges": 3,
+      "boundary_over_volume_power_two_thirds": 0.03703703703703704
+    }
+  ],
+  "mixed_gadget_boundary_invariance": {
+    "runs": 16,
+    "mixed_internal_and_external_rewrites": 640,
+    "final_block_sizes": [
+      1,
+      39,
+      39,
+      6,
+      25,
+      21,
+      41,
+      12,
+      12,
+      1,
+      19,
+      4,
+      23,
+      1,
+      40,
+      9
+    ]
+  },
+  "lattice_benchmark": {
+    "nonempty_subsets_of_two_cube": 255,
+    "boundary_measured_in_infinite_lattice": true
+  },
+  "equal_volume_comparison": [
+    {
+      "vertices_each": 27,
+      "fisher_outgoing_edges": 3,
+      "lattice_cube_side": 3,
+      "lattice_outgoing_edges": 54
+    },
+    {
+      "vertices_each": 729,
+      "fisher_outgoing_edges": 3,
+      "lattice_cube_side": 9,
+      "lattice_outgoing_edges": 486
+    }
+  ],
+  "scope": "Rewrites that only reattach old boundary edges preserve every ancestral cut size. Unbounded descendant blocks therefore fail any uniform positive |boundary| >= c |block|^(2/3) condition. This is a regular 3D bulk benchmark, not a proof against every volume-growth-three graph or every possible emergent spacetime.",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}

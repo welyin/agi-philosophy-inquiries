@@ -1,0 +1,50 @@
+{
+  "round": 301,
+  "scope": "Given 3+1 Lorentz manifold, conformal class and exact physical volume; no derivation of dimension, volume law, emergent manifold or Einstein dynamics.",
+  "inputs": {
+    "spacetime_dimension": 4,
+    "H": 0.5,
+    "eta_interval": [
+      -2,
+      -1
+    ],
+    "comoving_spatial_volume": 1,
+    "physical_density_known_for_count_to_volume": true
+  },
+  "causal_order": {
+    "points": 256,
+    "timelike_ordered_pairs": 8124,
+    "disagreements": 0
+  },
+  "geometry": {
+    "flat_R": 0.0,
+    "de_sitter_R": 3.0,
+    "max_connection_scalar_error": 8.881784197001252e-16,
+    "max_metric_reconstruction_error": 4.440892098500626e-16,
+    "max_coordinate_covariance_error": 8.881784197001252e-16,
+    "flat_proper_time": 1.0,
+    "de_sitter_proper_time": 1.3862943611198912,
+    "flat_slab_volume": 1.0,
+    "de_sitter_slab_volume": 4.666666666666682,
+    "slab_volume_in_z": 4.666666666666673
+  },
+  "count_degeneracy": {
+    "same_poisson_intensity": "rho_curved=1, rho_flat=a^4",
+    "max_intensity_difference": 0.0,
+    "meaning": "Identical intensity measure and order imply identical finite Poisson order laws; unknown density can hide curvature."
+  },
+  "scale_ambiguity": {
+    "metric_multiplier": 9.0,
+    "compensating_density_multiplier": 0.012345679012345678,
+    "curvature_after_rescaling": 0.3333333333333333
+  },
+  "checks": {
+    "run": 9,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

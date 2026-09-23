@@ -1,0 +1,166 @@
+{
+  "round": 375,
+  "scope": {
+    "baseline": "Frozen through 373; independent of 374.",
+    "claim": "A fixed metric connection and irreducible rank-two Clifford symbol determine a Hermitian spin connection up to an imaginary scalar one-form. Connection coefficients and full propagation operators have different identifiability once additional potentials or torsion are permitted.",
+    "inputs": [
+      "oriented smooth three-dimensional spatial patch",
+      "positive spatial metric, its volume and nondegenerate rank-two Clifford symbol",
+      "Levi-Civita connection fixed for the main classification",
+      "compatibility of spinor and vector parallel transport",
+      "extra choices of domain, spin structure, source fields and measurements for witnesses"
+    ],
+    "not_proved": [
+      "dimension three from FUCP",
+      "Levi-Civita or torsionlessness from probability conservation",
+      "an operationally unique geometry from an unspecified notion of transport",
+      "Maxwell equations, standard-model group or field sources",
+      "spacetime or Einstein dynamics from cognition"
+    ],
+    "novelty": "Goes beyond round349's arbitrary Hermitian potential: classifies the fixed-connection center, removes duplicate a/V parameterizations, and exhibits a five-dimensional torsionful connection kernel invisible to the entire Dirac propagation operator.",
+    "no_double_counting": "D_a+V=D_(a+E^-1 b)+phi I. An overall spatially constant scalar energy changes a propagator phase but not its quantum channel."
+  },
+  "fixed_metric_connection": {
+    "point": [
+      0.2,
+      -0.3,
+      0.4
+    ],
+    "conformal_f": 0.0658,
+    "gradient_f": [
+      0.019000000000000003,
+      -0.106,
+      0.24
+    ],
+    "rank_per_direction_anti_Hermitian_4dim": 3,
+    "nullity_per_direction": 1,
+    "recovered_spin_connection_max_error": 5.551115123125783e-17,
+    "compatibility_max_error": 8.326672684688674e-17,
+    "spin_vector_curvature_compatibility_max_error": 0.0,
+    "scalar_curvature_direct": -4.329448545162364,
+    "scalar_curvature_conformal_formula": -4.329448545162365
+  },
+  "central_contraction": {
+    "singular_values": [
+      1.635857320176384,
+      1.0040114834164078,
+      0.7816212440775432
+    ],
+    "a_original": [
+      0.1,
+      -0.2,
+      0.05
+    ],
+    "a_effective": [
+      0.36368062317429406,
+      -0.45472249269717624,
+      0.1255598831548199
+    ],
+    "scalar_phi": 0.3,
+    "potential_reallocation_operator_error": 0.0
+  },
+  "unfixed_metric_connection": {
+    "real_domain_dimension": 9,
+    "Dirac_contraction_rank": 4,
+    "kernel_dimension": 5,
+    "kernel": "symmetric trace-free b; all five basis elements checked",
+    "explicit_case": {
+      "b": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -3.0
+        ]
+      ],
+      "contraction_norm": 0.0,
+      "compatibility_residual": 0.0,
+      "torsion_max_component": 6.0,
+      "spin_curvature_xy_yz_zx_operator_norms": [
+        4.0,
+        12.0,
+        6.0
+      ],
+      "tangent_curvature_max_component": 24.0,
+      "spin_vector_curvature_compatibility_residual": 0.0,
+      "Levi_Civita_Riemann_curvature": 0.0,
+      "full_mode_H_difference": 0.0,
+      "propagator_difference": 0.0,
+      "maximally_entangled_reference_output_difference": 0.0,
+      "interpretation": "These are different torsionful connections, but the same Weyl operator and every propagation channel; without an independently supplied transport readout they are not different observable propagation geometries."
+    }
+  },
+  "physical_central_curvature": [
+    {
+      "B": 0.4,
+      "kz": 0.4,
+      "landau_index": 2,
+      "oscillator_cutoff": 9,
+      "metric": "flat Euclidean spatial metric; fixed Weyl principal symbol sigma.k",
+      "central_connection_a": "(0,-B*x,0)",
+      "central_curvature_f_xy": -0.4,
+      "block_eigenvalues": [
+        -1.32664991614216,
+        1.32664991614216
+      ],
+      "analytic_eigenvalues": [
+        -1.32664991614216,
+        1.32664991614216
+      ],
+      "complete_block_leakage": 0.0,
+      "time": 0.6,
+      "fixed_readout_transition_probability": 0.46417363103573683,
+      "analytic_transition_probability": 0.46417363103573667,
+      "upper_zero_mode_energy": 0.4,
+      "cutoff_boundary_warning": "The truncated CCR fails on the highest oscillator state. The artificial unpaired lower top state is excluded; only the exact reducing blocks n<size and physical upper n=0 mode are certified.",
+      "physical_scope": "A supplied nonzero central curvature can change the spectrum without changing the principal metric. No field equation, charge value, laboratory field source, global degeneracy or chiral anomaly is derived."
+    },
+    {
+      "B": 0.7,
+      "kz": 0.4,
+      "landau_index": 2,
+      "oscillator_cutoff": 9,
+      "metric": "flat Euclidean spatial metric; fixed Weyl principal symbol sigma.k",
+      "central_connection_a": "(0,-B*x,0)",
+      "central_curvature_f_xy": -0.7,
+      "block_eigenvalues": [
+        -1.7204650534085253,
+        1.7204650534085253
+      ],
+      "analytic_eigenvalues": [
+        -1.7204650534085253,
+        1.7204650534085253
+      ],
+      "complete_block_leakage": 0.0,
+      "time": 0.6,
+      "fixed_readout_transition_probability": 0.6971345665223996,
+      "analytic_transition_probability": 0.6971345665223995,
+      "upper_zero_mode_energy": 0.4,
+      "cutoff_boundary_warning": "The truncated CCR fails on the highest oscillator state. The artificial unpaired lower top state is excluded; only the exact reducing blocks n<size and physical upper n=0 mode are certified.",
+      "physical_scope": "A supplied nonzero central curvature can change the spectrum without changing the principal metric. No field equation, charge value, laboratory field source, global degeneracy or chiral anomaly is derived."
+    }
+  ],
+  "sources": [
+    "https://arxiv.org/pdf/math/0101155",
+    "https://arxiv.org/html/1401.3160",
+    "https://arxiv.org/pdf/1608.06632"
+  ],
+  "checks": {
+    "run": 16,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "round": 383,
+  "scope": {
+    "positive_interface": "On a complete sphere boundary a continuous fixed-point-free involution suffices for the fixed-trace qubit d<=3 upper bound; no chosen conjugacy to the standard antipodal map or smooth/cellular action is added.",
+    "sharp_new_result": "Every continuous R:S^3->S^3 with P_(Rz)=I-P_z satisfies sup_z ||R(Rz)-z||=2, even without assuming R is bijective. Nevertheless P_(R(Rz))=P_z everywhere.",
+    "dual_sharp_result": "Every continuous involution on S^3 has worst-case operator-norm error 1 relative to exact projector complementation, whether or not it is free.",
+    "source_application": "For the already specified round-381 coherent source of visibility v, the worst two-step source trace distance is exactly v. This is not a new recovery optimum v/2.",
+    "inputs": [
+      "A complete sphere boundary or the explicit S^3 source-label model",
+      "Actual endpoint identity stronger than one family of effect readings",
+      "Continuity on the entire label space",
+      "Calibrated source reference for operationally reading fibre phase"
+    ],
+    "not_proved": [
+      "Sphere boundaries or endpoint reversal from FUCP",
+      "Extra spatial dimensions from an observable source phase",
+      "A CPTP spin flip of an arbitrary unknown qubit",
+      "Uniform behaviour of all reversers from finite sampling",
+      "GR or a complete physical three-dimensionality theorem"
+    ]
+  },
+  "general_continuous_phase_witness": {
+    "linear_phase_coefficients": [
+      0.8,
+      -0.3,
+      0.6,
+      0.2
+    ],
+    "phase_difference_at_extrema": [
+      1.063014581273465,
+      -1.063014581273465
+    ],
+    "bisected_phase_difference": -1.942890293094024e-16,
+    "two_step_label_error": 1.9999999999999998,
+    "two_step_effect_error": 3.830925810145005e-17,
+    "source_errors_by_visibility": {
+      "0.0": 1.3877787807814457e-17,
+      "0.25": 0.24999999999999997,
+      "0.6": 0.5999999999999998,
+      "1.0": 0.9999999999999999
+    }
+  },
+  "reversible_nonlinear_phase_family": {
+    "phase": "kappa*n_z+nu*n_x*n_y",
+    "kappa": 1.5707963267948966,
+    "nu": 0.4,
+    "square_factor": "-exp(-2i*kappa*n_z)",
+    "north_pole_two_step_error": 1.2246467991473532e-16,
+    "equator_two_step_error": 1.9999999999999998,
+    "analytic_global_worst_error": 2.0,
+    "inverse_is_explicit": true
+  },
+  "finite_legal_program": {
+    "orthogonal_program_labels": 4,
+    "program_C_Q_dimension": 16,
+    "twice_returns_effect_not_program": true,
+    "square_distance_from_identity": 2.0,
+    "fourth_power_residual": 9.776629923831546e-16,
+    "reference_scope": "U^dagger T^k U=S^k x I, tensored with identity on any reference; logical payload is unchanged after decoding while the program shifts."
+  },
+  "nonstandard_free_involution": {
+    "construction": "Chord endpoint exchange through -b with ||b||<1; a continuous free involution usually different from the coordinate antipode.",
+    "b": [
+      0.2,
+      -0.1,
+      0.15,
+      0.05
+    ],
+    "complement_error_at_a_label_parallel_to_b": 1.0,
+    "scope": "An explicit S^3 label model, not an inferred physical position space."
+  },
+  "perturbed_reversal_stability": {
+    "implemented_map": "z -> exp(-i*angle*Z/2) Jz",
+    "angle": 0.12,
+    "uniform_one_step_label_error": 0.05999100040499132,
+    "lower_bound_at_sharp_witness_2_minus_2epsilon": 1.8800179991900174,
+    "exact_two_step_error": 1.9964010798704084,
+    "scope": "This perturbation need not exactly reverse the effect. The bound is conditional on a uniform implementation error relative to an exact lift."
+  },
+  "primary_sources": [
+    "https://arxiv.org/pdf/1008.1134",
+    "https://pi.math.cornell.edu/~hatcher/AT/ATch1.pdf",
+    "https://arxiv.org/pdf/quant-ph/0108137",
+    "https://arxiv.org/pdf/quant-ph/9901053"
+  ],
+  "checks": {
+    "run": 13,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

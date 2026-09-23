@@ -1,0 +1,250 @@
+{
+  "round": 370,
+  "scope": {
+    "baseline": "Frozen through 367; no dependence on 368 or 369.",
+    "claim": "Three named record fields do not select spatial dimension. Directional response rank, not the number of labels, controls local spatial identifiability.",
+    "inputs": [
+      "flat space of specified dimension d",
+      "known inertial observer and calibrated clock",
+      "isotropic signal speed c",
+      "immediate identifiable echoes",
+      "specified port response and, where used, independent readout noise",
+      "known extra observer baselines"
+    ],
+    "not_proved": [
+      "emergence of dimension three",
+      "a physical identification of Bloch directions with propagation directions",
+      "all geometrical facts are produced by consensus",
+      "general relativity from F+U+C+P",
+      "global identifiability from a local full-rank Fisher matrix"
+    ]
+  },
+  "dimensions": [
+    {
+      "spatial_dimension": 1,
+      "field_count": 3,
+      "record": {
+        "send": 2.0,
+        "receive": 6.0,
+        "port": [
+          1.0
+        ]
+      },
+      "direction_local_dimension": 0,
+      "event_jacobian_rank": 2,
+      "time_only_event_rank": 2,
+      "controlled_send_spatial_rank": 1,
+      "event_fisher_eigenvalues": [
+        49.99999999999999,
+        49.99999999999999
+      ],
+      "profiled_spatial_fisher_eigenvalues": [
+        50.0
+      ]
+    },
+    {
+      "spatial_dimension": 2,
+      "field_count": 3,
+      "record": {
+        "send": 2.0,
+        "receive": 6.0,
+        "port": [
+          0.447213595499958,
+          0.894427190999916
+        ]
+      },
+      "direction_local_dimension": 1,
+      "event_jacobian_rank": 3,
+      "time_only_event_rank": 2,
+      "controlled_send_spatial_rank": 2,
+      "event_fisher_eigenvalues": [
+        25.000000000000004,
+        49.99999999999999,
+        50.00000000000002
+      ],
+      "profiled_spatial_fisher_eigenvalues": [
+        25.0,
+        50.0
+      ]
+    },
+    {
+      "spatial_dimension": 3,
+      "field_count": 3,
+      "record": {
+        "send": 2.0,
+        "receive": 6.0,
+        "port": [
+          0.2672612419124244,
+          0.5345224838248488,
+          0.8017837257372732
+        ]
+      },
+      "direction_local_dimension": 2,
+      "event_jacobian_rank": 4,
+      "time_only_event_rank": 2,
+      "controlled_send_spatial_rank": 3,
+      "event_fisher_eigenvalues": [
+        24.999999999999993,
+        25.00000000000001,
+        49.99999999999999,
+        50.0
+      ],
+      "profiled_spatial_fisher_eigenvalues": [
+        24.999999999999982,
+        24.999999999999993,
+        49.99999999999997
+      ]
+    },
+    {
+      "spatial_dimension": 4,
+      "field_count": 3,
+      "record": {
+        "send": 2.0,
+        "receive": 6.0,
+        "port": [
+          0.18257418583505539,
+          0.36514837167011077,
+          0.5477225575051662,
+          0.7302967433402215
+        ]
+      },
+      "direction_local_dimension": 3,
+      "event_jacobian_rank": 5,
+      "time_only_event_rank": 2,
+      "controlled_send_spatial_rank": 4,
+      "event_fisher_eigenvalues": [
+        24.999999999999996,
+        25.0,
+        25.000000000000007,
+        49.99999999999999,
+        49.99999999999999
+      ],
+      "profiled_spatial_fisher_eigenvalues": [
+        24.999999999999993,
+        25.0,
+        25.000000000000007,
+        49.999999999999986
+      ]
+    }
+  ],
+  "general_rank": {
+    "event": "2 + rank(D port on tangent sphere)",
+    "static_target_controlled_emission": "1 + rank(D port on tangent sphere)",
+    "full_direction": "d+1 event; d spatial"
+  },
+  "coarse_port_pair": {
+    "point_p": [
+      0.8,
+      0.36,
+      0.48
+    ],
+    "point_q": [
+      0.8,
+      0.48,
+      0.36
+    ],
+    "first_record_p": {
+      "send": 4.0,
+      "receive": 6.0,
+      "port": 0
+    },
+    "first_record_q": {
+      "send": 4.0,
+      "receive": 6.0,
+      "port": 0
+    },
+    "first_record_local_spatial_rank": 1,
+    "second_anchor": [
+      0.0,
+      0.5,
+      0.0
+    ],
+    "second_record_p": {
+      "send": 4.0,
+      "receive": 5.88679622641132,
+      "port": 0
+    },
+    "second_record_q": {
+      "send": 4.0,
+      "receive": 5.754992877478425,
+      "port": 0
+    },
+    "second_roundtrip_gap": 0.13180334893289558,
+    "two_anchor_local_rank": 2,
+    "three_anchor_local_rank": 3,
+    "three_anchor_global_mirror_ambiguity": "p and (-p_x,p_y,p_z) have the same three ranges"
+  },
+  "finite_label_encoding": {
+    "bits_per_coordinate": 3,
+    "one_integer_codes_per_dimension": {
+      "1": 8,
+      "2": 64,
+      "3": 512,
+      "4": 4096
+    },
+    "interpretation": "Exact reversible finite-grid storage; no continuous scalar spatial coordinate is inferred."
+  },
+  "extra_categorical_detector": {
+    "direction_chart": [
+      0.2,
+      0.3
+    ],
+    "probabilities": [
+      0.35333333333333333,
+      0.3633333333333333,
+      0.2833333333333333
+    ],
+    "three_outcome_angular_fisher_rank": 2,
+    "merged_two_outcome_angular_fisher_rank": 1,
+    "single_sample_estimator_covariance": [
+      [
+        22.84888888888889,
+        -12.837777777777776
+      ],
+      [
+        -12.837777777777776,
+        23.13222222222222
+      ]
+    ],
+    "10000_sample_estimator_covariance": [
+      [
+        0.0022848888888888893,
+        -0.0012837777777777776
+      ],
+      [
+        -0.0012837777777777776,
+        0.002313222222222222
+      ]
+    ],
+    "controlled_port_label_fisher_rank": 0,
+    "extra_resources": "Repeated probes of one fixed target, known directional likelihood, calibration and stored outcome counts; a chosen launch label alone has no target-dependent likelihood."
+  },
+  "direction_precision": {
+    "sigma_time": 0.2,
+    "sigma_direction": 0.1,
+    "range_1_spatial_fisher_eigenvalues": [
+      50.0,
+      99.99999999999999,
+      100.0
+    ],
+    "range_10_spatial_fisher_eigenvalues": [
+      0.9999999999999964,
+      1.0000000000000036,
+      50.0
+    ],
+    "interpretation": "Transverse Fisher information falls as r^-2; full rank alone supplies no range-independent accuracy."
+  },
+  "sources": [
+    "https://arxiv.org/html/0708.0170",
+    "https://arxiv.org/html/gr-qc/0104077"
+  ],
+  "checks": {
+    "run": 14,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

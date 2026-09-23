@@ -1,0 +1,159 @@
+{
+  "round": 285,
+  "scope": "Conditional classical mapping of a static reversible port graph; no dimension selection or quantum/spacetime derivation.",
+  "cases": [
+    {
+      "name": "K4",
+      "radius": 1,
+      "nodes_in_ball": 4,
+      "induced_edges": 6,
+      "edge_probes": 12,
+      "comparisons": 27,
+      "steps": 168,
+      "marker_reads": 18,
+      "stored_port_pairs": 3,
+      "physical_anchor_tokens": 1,
+      "correct_against_hidden_oracle": true,
+      "comparisons_upper": 48,
+      "steps_upper": 336,
+      "representative_pairs_upper": 4,
+      "adjacency_entries_upper": 12
+    },
+    {
+      "name": "cube",
+      "radius": 1,
+      "nodes_in_ball": 4,
+      "induced_edges": 3,
+      "edge_probes": 12,
+      "comparisons": 33,
+      "steps": 204,
+      "marker_reads": 33,
+      "stored_port_pairs": 3,
+      "physical_anchor_tokens": 1,
+      "correct_against_hidden_oracle": true,
+      "comparisons_upper": 48,
+      "steps_upper": 336,
+      "representative_pairs_upper": 4,
+      "adjacency_entries_upper": 12
+    },
+    {
+      "name": "cube",
+      "radius": 2,
+      "nodes_in_ball": 7,
+      "induced_edges": 9,
+      "edge_probes": 21,
+      "comparisons": 81,
+      "steps": 642,
+      "marker_reads": 81,
+      "stored_port_pairs": 9,
+      "physical_anchor_tokens": 1,
+      "correct_against_hidden_oracle": true,
+      "comparisons_upper": 147,
+      "steps_upper": 1596,
+      "representative_pairs_upper": 14,
+      "adjacency_entries_upper": 21
+    },
+    {
+      "name": "cube",
+      "radius": 3,
+      "nodes_in_ball": 8,
+      "induced_edges": 12,
+      "edge_probes": 24,
+      "comparisons": 101,
+      "steps": 876,
+      "marker_reads": 101,
+      "stored_port_pairs": 12,
+      "physical_anchor_tokens": 1,
+      "correct_against_hidden_oracle": true,
+      "comparisons_upper": 192,
+      "steps_upper": 2880,
+      "representative_pairs_upper": 24,
+      "adjacency_entries_upper": 24
+    },
+    {
+      "name": "Hanoi_27",
+      "radius": 3,
+      "nodes_in_ball": 9,
+      "induced_edges": 12,
+      "edge_probes": 26,
+      "comparisons": 128,
+      "steps": 1316,
+      "marker_reads": 52,
+      "stored_port_pairs": 18,
+      "physical_anchor_tokens": 1,
+      "correct_against_hidden_oracle": true,
+      "comparisons_upper": 243,
+      "steps_upper": 3618,
+      "representative_pairs_upper": 27,
+      "adjacency_entries_upper": 27
+    },
+    {
+      "name": "decorated_2D_torus_36",
+      "radius": 3,
+      "nodes_in_ball": 16,
+      "induced_edges": 18,
+      "edge_probes": 48,
+      "comparisons": 432,
+      "steps": 4828,
+      "marker_reads": 432,
+      "stored_port_pairs": 34,
+      "physical_anchor_tokens": 1,
+      "correct_against_hidden_oracle": true,
+      "comparisons_upper": 768,
+      "steps_upper": 11136,
+      "representative_pairs_upper": 48,
+      "adjacency_entries_upper": 48
+    }
+  ],
+  "exit_only_false_positive": {
+    "graph": [
+      [
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1
+      ]
+    ],
+    "root": 1,
+    "alpha": [
+      [
+        0,
+        0
+      ]
+    ],
+    "beta": [
+      [
+        1,
+        0
+      ]
+    ],
+    "distinct_endpoints": [
+      0,
+      2
+    ],
+    "root_detector_after_exit_only_inverse": true,
+    "expected_arrival_port": 1,
+    "actual_arrival_port": 0,
+    "paired_port_protocol_correctly_rejects": true
+  },
+  "conditions": [
+    "Static undirected simple graph, degree at most 3",
+    "Locally numbered exit and readable arrival ports, reversible traversal",
+    "One unique persistent root token with local contact detection",
+    "Reliable route memory, chosen finite radius, no unknown-data disturbance claim"
+  ],
+  "resource_claim": "Upper bounds for this explicit BFS protocol; no optimality or physical energy bound.",
+  "checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

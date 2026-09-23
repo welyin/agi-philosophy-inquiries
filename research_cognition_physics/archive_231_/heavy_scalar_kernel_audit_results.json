@@ -1,0 +1,81 @@
+{
+  "round": 328,
+  "scope": "Classical/tree-level elimination of the quadratic heavy scalar with prescribed small source J. Static positive operator and band-limited error bounds are exact in this linear sector. No loop determinant, generic real-time Green-function choice or all-amplitude exponential-mass elimination is included.",
+  "periodic_static_solution": {
+    "direct_solve_error": 1.0408340855860843e-17,
+    "stationary_equation_error": 1.9984014443252818e-15,
+    "full_minus_reduced_energy": 4.336808689942018e-19,
+    "reduced_energy": -0.0038957532696956548,
+    "expansion": [
+      {
+        "order": 0,
+        "relative_field_error": 0.031165454736635744,
+        "spectral_bound": 0.140625
+      },
+      {
+        "order": 1,
+        "relative_field_error": 0.0036664491950352597,
+        "spectral_bound": 0.019775390625
+      },
+      {
+        "order": 2,
+        "relative_field_error": 0.0004960519330468071,
+        "spectral_bound": 0.002780914306640625
+      },
+      {
+        "order": 3,
+        "relative_field_error": 6.920639718915632e-05,
+        "spectral_bound": 0.0003910660743713379
+      }
+    ]
+  },
+  "disjoint_compact_sources": [
+    {
+      "mass": 4.0,
+      "exact_cross_energy": -1.9960523827438666e-05,
+      "absolute_tail_bound": 8.94163814441416e-05,
+      "finite_local_expansion_cross_energy": 0.0
+    },
+    {
+      "mass": 8.0,
+      "exact_cross_energy": -2.4502290936679054e-07,
+      "absolute_tail_bound": 4.055835557578964e-06,
+      "finite_local_expansion_cross_energy": 0.0
+    },
+    {
+      "mass": 12.0,
+      "exact_cross_energy": -4.7568376490347244e-09,
+      "absolute_tail_bound": 2.452914004413247e-07,
+      "finite_local_expansion_cross_energy": 0.0
+    }
+  ],
+  "outside_expansion_window": [
+    {
+      "order": 0,
+      "relative_error": 4.0
+    },
+    {
+      "order": 1,
+      "relative_error": 16.0
+    },
+    {
+      "order": 2,
+      "relative_error": 64.0
+    },
+    {
+      "order": 3,
+      "relative_error": 256.0
+    }
+  ],
+  "near_timelike_pole_order_2_error": 0.9414801494009999,
+  "next_interface": "Restore the exponential mass functions and test amplitude control, positivity and the apparent negative-quartic instability.",
+  "checks": {
+    "run": 10,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

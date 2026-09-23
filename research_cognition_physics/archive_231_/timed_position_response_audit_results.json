@@ -1,0 +1,159 @@
+{
+  "round": 396,
+  "scope": "A known BB84 position-verification attack with explicit channel, internal-reference, noise, and timing checks. Given effective line geometry, propagation speed, clocks and Bell resources; no dimension or universal cognition countermodel is derived.",
+  "exact_instrument": {
+    "channel_basis_error": 4.440892098500626e-16,
+    "branch_effect_error": 1.1102230246251565e-16,
+    "trace_preservation_error": 6.280369834735101e-16,
+    "classical_outputs": "identical x at both verifiers",
+    "input_qubit_is_measured_not_preserved": true
+  },
+  "reference": {
+    "reference_dimensions": [
+      2,
+      3,
+      5
+    ],
+    "full_classical_reference_error": 3.2387878317115085e-16,
+    "arbitrary_reference_equality_proved_by_row_identity": true
+  },
+  "before_classical_messages": {
+    "right_outcome_and_reference_product_error": 1.819480321357227e-16,
+    "right_uninformed_bb84_success": 0.5,
+    "superluminal_message_required": false
+  },
+  "noisy_resources": [
+    {
+      "resource_white_noise": 0.0,
+      "channel_mixture_error": 4.440892098500626e-16,
+      "proved_half_diamond_error": 0.0,
+      "extremal_trace_distance": 2.220446049250313e-16,
+      "bb84_wrong_bit_probability": 0.0
+    },
+    {
+      "resource_white_noise": 0.02,
+      "channel_mixture_error": 4.44092597968927e-16,
+      "proved_half_diamond_error": 0.01,
+      "extremal_trace_distance": 0.010000000000000226,
+      "bb84_wrong_bit_probability": 0.01
+    },
+    {
+      "resource_white_noise": 0.1,
+      "channel_mixture_error": 6.661699538672011e-16,
+      "proved_half_diamond_error": 0.05,
+      "extremal_trace_distance": 0.050000000000000294,
+      "bb84_wrong_bit_probability": 0.05
+    },
+    {
+      "resource_white_noise": 0.5,
+      "channel_mixture_error": 1.1102230246251565e-16,
+      "proved_half_diamond_error": 0.25,
+      "extremal_trace_distance": 0.25000000000000006,
+      "bb84_wrong_bit_probability": 0.25
+    },
+    {
+      "resource_white_noise": 1.0,
+      "channel_mixture_error": 1.5700924586837752e-16,
+      "proved_half_diamond_error": 0.5,
+      "extremal_trace_distance": 0.5,
+      "bb84_wrong_bit_probability": 0.5
+    }
+  ],
+  "timing": {
+    "checked_schedules": 108,
+    "formula_error": 3.666338066476982e-15,
+    "exact_deadline_case": {
+      "return_times": [
+        8.0,
+        10.0
+      ],
+      "honest_deadlines": [
+        8.0,
+        10.0
+      ],
+      "lateness": [
+        0.0,
+        0.0
+      ],
+      "formula_error": 0.0,
+      "both_on_time": true,
+      "interceptor_positions": [
+        -1.0,
+        2.0
+      ],
+      "signal_distance": 3.0
+    },
+    "positive_processing_case": {
+      "return_times": [
+        8.001999999999999,
+        10.003
+      ],
+      "honest_deadlines": [
+        8.003,
+        10.003
+      ],
+      "lateness": [
+        -0.0010000000000012221,
+        0.0
+      ],
+      "formula_error": 1.2221126888256606e-15,
+      "both_on_time": true,
+      "interceptor_positions": [
+        -1.0,
+        2.0
+      ],
+      "signal_distance": 3.0
+    },
+    "zero_slack_rejects_positive_delay": {
+      "return_times": [
+        8.001999999999999,
+        10.003
+      ],
+      "honest_deadlines": [
+        8.0,
+        10.0
+      ],
+      "lateness": [
+        0.0019999999999988916,
+        0.0030000000000001137
+      ],
+      "formula_error": 1.1084883011491797e-15,
+      "both_on_time": false,
+      "interceptor_positions": [
+        -1.0,
+        2.0
+      ],
+      "signal_distance": 3.0
+    }
+  },
+  "non_pauli_negative_control": {
+    "tilted_axis": [
+      "X/sqrt(2)",
+      "Z/sqrt(2)"
+    ],
+    "mean_eigenstate_success": 0.7499999999999996,
+    "exact_one_bell_strategy_generalized_to_all_measurements": false
+  },
+  "resource_ledger": {
+    "bell_pairs_consumed_per_trial": 1,
+    "cross_interceptor_bits_each_direction": 2,
+    "final_reply_bits_total": 2,
+    "challenge_qubits": 1,
+    "basis_challenge_bits": 1,
+    "bell_resource_returned": false,
+    "replenishment_for_repetition_required": true
+  },
+  "trusted_unique_local_marker_disproved": false,
+  "quantum_identity_authentication_disproved": false,
+  "response_and_timing_suffice_for_presence": false,
+  "full_position_generation_completed": false,
+  "checks": {
+    "run": 6,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

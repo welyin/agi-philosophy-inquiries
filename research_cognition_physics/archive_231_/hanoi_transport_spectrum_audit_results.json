@@ -1,0 +1,149 @@
+{
+  "round": 262,
+  "direct_spectra": [
+    {
+      "n": 1,
+      "vertices": 3,
+      "gap_direct": 3.0,
+      "gap_formula": 3.0,
+      "full_spectrum_max_abs_error": 1.1102230246251565e-16
+    },
+    {
+      "n": 2,
+      "vertices": 9,
+      "gap_direct": 0.6972243622680044,
+      "gap_formula": 0.6972243622680053,
+      "full_spectrum_max_abs_error": 4.440892098500626e-15
+    },
+    {
+      "n": 3,
+      "vertices": 27,
+      "gap_direct": 0.14356717945705103,
+      "gap_formula": 0.14356717945705172,
+      "full_spectrum_max_abs_error": 4.884981308350689e-15
+    },
+    {
+      "n": 4,
+      "vertices": 81,
+      "gap_direct": 0.028880249655441746,
+      "gap_formula": 0.02888024965544248,
+      "full_spectrum_max_abs_error": 1.2878587085651816e-14
+    },
+    {
+      "n": 5,
+      "vertices": 243,
+      "gap_direct": 0.005782737942709917,
+      "gap_formula": 0.0057827379427113105,
+      "full_spectrum_max_abs_error": 1.509903313490213e-14
+    },
+    {
+      "n": 6,
+      "vertices": 729,
+      "gap_direct": 0.001156815232837682,
+      "gap_formula": 0.0011568152328388479,
+      "full_spectrum_max_abs_error": 2.6645352591003757e-14
+    }
+  ],
+  "direct_transport": [
+    {
+      "n": 1,
+      "corner_resistance_direct": 0.6666666666666666,
+      "corner_resistance_formula": 0.6666666666666667,
+      "discrete_corner_hitting_direct": 2.0,
+      "discrete_corner_hitting_formula": 2.0
+    },
+    {
+      "n": 2,
+      "corner_resistance_direct": 1.7777777777777781,
+      "corner_resistance_formula": 1.7777777777777781,
+      "discrete_corner_hitting_direct": 21.333333333333343,
+      "discrete_corner_hitting_formula": 21.333333333333336
+    },
+    {
+      "n": 3,
+      "corner_resistance_direct": 3.6296296296296324,
+      "corner_resistance_formula": 3.6296296296296306,
+      "discrete_corner_hitting_direct": 141.55555555555566,
+      "discrete_corner_hitting_formula": 141.5555555555556
+    },
+    {
+      "n": 4,
+      "corner_resistance_direct": 6.716049382716017,
+      "corner_resistance_formula": 6.716049382716051,
+      "discrete_corner_hitting_direct": 805.9259259259192,
+      "discrete_corner_hitting_formula": 805.9259259259261
+    },
+    {
+      "n": 5,
+      "corner_resistance_direct": 11.860082304526406,
+      "corner_resistance_formula": 11.860082304526752,
+      "discrete_corner_hitting_direct": 4305.209876543008,
+      "discrete_corner_hitting_formula": 4305.209876543211
+    }
+  ],
+  "dos_level": 12,
+  "dos_thresholds": [
+    {
+      "k": 0,
+      "threshold": 2.0,
+      "positive_eigenvalues_below": 177146,
+      "finite_fraction": 0.3333314516569102,
+      "limiting_fraction": 0.3333333333333333
+    },
+    {
+      "k": 1,
+      "threshold": 0.4384471871911697,
+      "positive_eigenvalues_below": 59048,
+      "finite_fraction": 0.11110922943468796,
+      "limiting_fraction": 0.1111111111111111
+    },
+    {
+      "k": 2,
+      "threshold": 0.0892837552277476,
+      "positive_eigenvalues_below": 19682,
+      "finite_fraction": 0.03703515536061388,
+      "limiting_fraction": 0.037037037037037035
+    },
+    {
+      "k": 3,
+      "threshold": 0.017920983374571854,
+      "positive_eigenvalues_below": 6560,
+      "finite_fraction": 0.01234379733592252,
+      "limiting_fraction": 0.012345679012345678
+    },
+    {
+      "k": 4,
+      "threshold": 0.0035867696582306116,
+      "positive_eigenvalues_below": 2186,
+      "finite_fraction": 0.004113344661025401,
+      "limiting_fraction": 0.00411522633744856
+    },
+    {
+      "k": 5,
+      "threshold": 0.0007174568805212037,
+      "positive_eigenvalues_below": 728,
+      "finite_fraction": 0.0013698604360596943,
+      "limiting_fraction": 0.0013717421124828531
+    },
+    {
+      "k": 6,
+      "threshold": 0.00014349549429561737,
+      "positive_eigenvalues_below": 242,
+      "finite_fraction": 0.0004553656944044588,
+      "limiting_fraction": 0.0004572473708276177
+    }
+  ],
+  "gap_ratio_at_level_20": 4.99999999999981,
+  "relaxation_exponent_log5_over_log2": 2.321928094887362,
+  "dos_spectral_exponent_2log3_over_log5": 1.3652123889719707,
+  "scope": "Exact published Hanoi graph spectral and resistance formulae are checked on the round-261 graph family. Unit conductances, diffusion generator -L and the discrete uniform-neighbor walk are explicit distinct clock conventions. These exponents do not derive physical time, light speed, a quantum Hamiltonian or mixed-growth universality.",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "checks": {
+    "run": 10,
+    "failures": 0,
+    "errors": 0
+  }
+}

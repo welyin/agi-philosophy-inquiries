@@ -1,0 +1,133 @@
+{
+  "round": 314,
+  "scope": "One-loop nonminimal real scalar, linear conical response in the local area/EH sector. Contact is a geometric/Wald contribution, not a nonnegative von Neumann entropy.",
+  "mass": 1.0,
+  "cutoff": 0.2,
+  "entropy_and_coupling_terms": [
+    {
+      "xi": -0.1,
+      "regulated_phi_squared": 0.13512745434503534,
+      "ordinary_entropy_per_area": 0.14150513928955105,
+      "contact_entropy_per_area": 0.08490308357373064,
+      "geometric_entropy_per_area": 0.2264082228632817,
+      "inverse_G_shift_over_four": 0.2264082228632817
+    },
+    {
+      "xi": 0.0,
+      "regulated_phi_squared": 0.13512745434503534,
+      "ordinary_entropy_per_area": 0.14150513928955105,
+      "contact_entropy_per_area": -0.0,
+      "geometric_entropy_per_area": 0.14150513928955105,
+      "inverse_G_shift_over_four": 0.14150513928955105
+    },
+    {
+      "xi": 0.08333333333333333,
+      "regulated_phi_squared": 0.13512745434503534,
+      "ordinary_entropy_per_area": 0.14150513928955105,
+      "contact_entropy_per_area": -0.07075256964477553,
+      "geometric_entropy_per_area": 0.07075256964477553,
+      "inverse_G_shift_over_four": 0.07075256964477553
+    },
+    {
+      "xi": 0.16666666666666666,
+      "regulated_phi_squared": 0.13512745434503534,
+      "ordinary_entropy_per_area": 0.14150513928955105,
+      "contact_entropy_per_area": -0.14150513928955105,
+      "geometric_entropy_per_area": 0.0,
+      "inverse_G_shift_over_four": 0.0
+    },
+    {
+      "xi": 0.3333333333333333,
+      "regulated_phi_squared": 0.13512745434503534,
+      "ordinary_entropy_per_area": 0.14150513928955105,
+      "contact_entropy_per_area": -0.2830102785791021,
+      "geometric_entropy_per_area": -0.14150513928955105,
+      "inverse_G_shift_over_four": -0.14150513928955105
+    }
+  ],
+  "sphere_coefficient_checks": [
+    {
+      "xi": -0.1,
+      "spectral_R_coefficient": 0.26666661344783016,
+      "expected": 0.26666666666666666
+    },
+    {
+      "xi": 0.0,
+      "spectral_R_coefficient": 0.1666666468067568,
+      "expected": 0.16666666666666666
+    },
+    {
+      "xi": 0.16666666666666666,
+      "spectral_R_coefficient": -4.415623422460158e-09,
+      "expected": 0.0
+    },
+    {
+      "xi": 0.3333333333333333,
+      "spectral_R_coefficient": -0.16666665565141514,
+      "expected": -0.16666666666666666
+    }
+  ],
+  "determinant_contact_convergence": [
+    {
+      "xi": 0.2,
+      "step": 0.01,
+      "surface_position": 2,
+      "spectral_determinant_derivative": -0.45848106244124054,
+      "local_contact_prediction": -0.45846382386317663,
+      "derivative_error": 1.7238578063905052e-05
+    },
+    {
+      "xi": 0.2,
+      "step": 0.005,
+      "surface_position": 2,
+      "spectral_determinant_derivative": -0.4584681333092533,
+      "local_contact_prediction": -0.45846382386317663,
+      "derivative_error": 4.309446076655732e-06
+    },
+    {
+      "xi": 0.2,
+      "step": 0.0025,
+      "surface_position": 2,
+      "spectral_determinant_derivative": -0.45846490121235206,
+      "local_contact_prediction": -0.45846382386317663,
+      "derivative_error": 1.0773491754267894e-06
+    },
+    {
+      "xi": 0.2,
+      "step": 0.00125,
+      "surface_position": 2,
+      "spectral_determinant_derivative": -0.45846409319914017,
+      "local_contact_prediction": -0.45846382386317663,
+      "derivative_error": 2.693359635319581e-07
+    }
+  ],
+  "local_contact_controls": [
+    {
+      "xi": 0.2,
+      "step": 0.0001,
+      "surface_position": 0,
+      "spectral_determinant_derivative": -0.542350150736226,
+      "local_contact_prediction": -0.542350148001577,
+      "derivative_error": 2.7346490627522257e-09
+    },
+    {
+      "xi": 0.2,
+      "step": 0.0001,
+      "surface_position": 4,
+      "spectral_determinant_derivative": -0.3766877409860925,
+      "local_contact_prediction": -0.3766877399785622,
+      "derivative_error": 1.0075302814271936e-09
+    }
+  ],
+  "flat_state_observation": "At fixed flat metric R=0 and the same canonical algebra, mass, and state prescription, xi does not change the free scalar ground state. Curvature differentiation can still depend on xi.",
+  "replica_scope": "Only the first variation about a smooth cone is used. Singular conical potentials at finite deficit require a separate definition.",
+  "checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

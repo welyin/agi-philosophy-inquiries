@@ -1,0 +1,147 @@
+{
+  "round": 345,
+  "scope": "Specified fixed finite-dimensional deterministic processor at one common time; the exact no-programming theorem is applied conditionally. Finite catalogue and approximate phase-grid constructions keep all registers and the fixed H, but assume initial preparation and time/readout. No cognitive derivation of spacetime, autonomous clock or thermodynamic cost is claimed.",
+  "baseline": "Frozen round 280 and phase-II operation results, with research through 341.",
+  "question": "Does resource closure permit a single fixed finite-dimensional autonomous processor that exactly and deterministically implements every unitary at one fixed time?",
+  "answer": "No under those added quantifiers. Resource closure itself does not impose fixed finite hardware, exactness, deterministic success, or a universal common completion time.",
+  "primary_source": "https://harvest.aps.org/v2/journals/articles/10.1103/PhysRevLett.79.321/fulltext",
+  "no_programming": {
+    "program_independent_of_unknown_data": true,
+    "hardware_and_completion_time_fixed": true,
+    "unitaries_compared_modulo_global_phase": true,
+    "orthogonal_programs_needed_for_distinct_exact_unitaries": true,
+    "exact_catalogue_dimension_lower_bound": "dim(P) >= number of distinct unitary channels",
+    "program_return_required_for_the_no_go": false,
+    "I_vs_Z_attempt_input_overlap": 0.7071067811865475,
+    "least_possible_inner_product_identity_Frobenius_residual": 0.9999999999999999,
+    "best_output_overlap_real": 0.0,
+    "best_output_overlap_imag": 0.0
+  },
+  "autonomous_finite_catalogue": {
+    "gates": [
+      "I",
+      "X",
+      "Hadamard",
+      "phase S"
+    ],
+    "fixed_time": 1.0,
+    "program_dimension": 4,
+    "data_dimension": 2,
+    "idle_reference_dimension": 2,
+    "processor_dimension": 8,
+    "whole_P_D_R_dimension": 16,
+    "fresh_environment_registers_for_this_unitary_catalogue": 0,
+    "H_spectrum": [
+      0.0,
+      1.5707963267948966,
+      1.5707963267948966,
+      1.5707963267948966,
+      1.5707963267948966,
+      1.5707963267948966,
+      4.71238898038469,
+      4.71238898038469
+    ],
+    "fixed_H_evolution_vs_controlled_gate_max_error": 2.303328157969851e-16,
+    "correlated_reference_output_max_trace_error": 2.498001805406602e-16,
+    "returned_program_max_trace_error": 3.3306690738754696e-16,
+    "closed_total_H_energy_max_drift": 7.216449660063518e-16
+  },
+  "phase_grid_resources": [
+    {
+      "catalogue_size": 2,
+      "program_dimension": 2,
+      "qubit_embedding_size": 1,
+      "processor_dimension_P_times_D": 4,
+      "including_idle_qubit_reference_dimension": 8,
+      "nearest_single_gate_worst_half_diamond": 0.7071067811865476,
+      "midpoint_adjacent_mixture_half_diamond": 0.5000000000000001,
+      "fixed_H_spectral_lower_bound": 0.0,
+      "fixed_H_spectral_upper_bound": 6.283185307179586
+    },
+    {
+      "catalogue_size": 4,
+      "program_dimension": 4,
+      "qubit_embedding_size": 2,
+      "processor_dimension_P_times_D": 8,
+      "including_idle_qubit_reference_dimension": 16,
+      "nearest_single_gate_worst_half_diamond": 0.3826834323650898,
+      "midpoint_adjacent_mixture_half_diamond": 0.14644660940672624,
+      "fixed_H_spectral_lower_bound": 0.0,
+      "fixed_H_spectral_upper_bound": 6.283185307179586
+    },
+    {
+      "catalogue_size": 8,
+      "program_dimension": 8,
+      "qubit_embedding_size": 3,
+      "processor_dimension_P_times_D": 16,
+      "including_idle_qubit_reference_dimension": 32,
+      "nearest_single_gate_worst_half_diamond": 0.19509032201612825,
+      "midpoint_adjacent_mixture_half_diamond": 0.03806023374435662,
+      "fixed_H_spectral_lower_bound": 0.0,
+      "fixed_H_spectral_upper_bound": 6.283185307179586
+    },
+    {
+      "catalogue_size": 16,
+      "program_dimension": 16,
+      "qubit_embedding_size": 4,
+      "processor_dimension_P_times_D": 32,
+      "including_idle_qubit_reference_dimension": 64,
+      "nearest_single_gate_worst_half_diamond": 0.0980171403295606,
+      "midpoint_adjacent_mixture_half_diamond": 0.009607359798384776,
+      "fixed_H_spectral_lower_bound": 0.0,
+      "fixed_H_spectral_upper_bound": 6.283185307179586
+    },
+    {
+      "catalogue_size": 64,
+      "program_dimension": 64,
+      "qubit_embedding_size": 6,
+      "processor_dimension_P_times_D": 128,
+      "including_idle_qubit_reference_dimension": 256,
+      "nearest_single_gate_worst_half_diamond": 0.024541228522912288,
+      "midpoint_adjacent_mixture_half_diamond": 0.0006022718974138037,
+      "fixed_H_spectral_lower_bound": 0.0,
+      "fixed_H_spectral_upper_bound": 6.283185307179586
+    }
+  ],
+  "accuracy_examples": [
+    {
+      "requested_half_diamond": 0.1,
+      "sufficient_K_for_this_scheme": 16,
+      "achieved_worst_half_diamond": 0.0980171403295606,
+      "program_qubit_embedding": 4
+    },
+    {
+      "requested_half_diamond": 0.01,
+      "sufficient_K_for_this_scheme": 158,
+      "achieved_worst_half_diamond": 0.009941585133529647,
+      "program_qubit_embedding": 8
+    },
+    {
+      "requested_half_diamond": 0.001,
+      "sufficient_K_for_this_scheme": 1571,
+      "achieved_worst_half_diamond": 0.0009998701878188414,
+      "program_qubit_embedding": 11
+    }
+  ],
+  "exact_error_convention": "epsilon=one-half diamond norm; nearest grid angle error <= pi/K, hence epsilon_K=sin(pi/(2K)). The ordinary diamond norm is twice this.",
+  "not_an_optimality_claim": "At a cell midpoint, an equal mixture of its two endpoint channels already has half-diamond error sin(pi/(2K))**2. Approximate quantum program lower bounds are not proved here.",
+  "closed_resource_account": [
+    "P, D, any correlated idle R, and the full fixed H are explicit.",
+    "Basis programs return and may repeat the same catalogue gate at integer sampling times. Classical mixtures retain their program marginal, but can become correlated with data; coherent programs need not return.",
+    "Preparing/selecting a program, compiling H, specifying time units and realizing a clock/readout remain inputs.",
+    "No switching apparatus or replacement of H occurs during the modeled evolution.",
+    "Changing target programs or performing measurement/reset requires its own resources; it is not supplied by this reusable-gate example.",
+    "Hilbert dimension and formal H conservation do not determine thermodynamic preparation or maintenance costs."
+  ],
+  "scope_for_GR": "The result blocks an over-strong finite-universe control interpretation; it neither derives spacetime/Einstein dynamics nor falsifies the original abstract operation contract.",
+  "next_interface": "Specify whether cognitive closure requires finite growing controllers, bounded errors and explicit clocks, before using implementability as a selector of spacetime or gravity.",
+  "checks": {
+    "run": 12,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "round": 354,
+  "scope": {
+    "kind": "specified coherent-state collective-observable classical limit",
+    "proved": [
+      "sphere Poisson brackets with effective hbar=2/N",
+      "exact one-axis-twisting first moment for every N",
+      "uniform fixed-time O(1/N) mean error and variance bound",
+      "order-one mean/concentration failure at time~sqrt(N)",
+      "local Darboux pair (phi,z), not a global plane",
+      "fixed-time collective convergence does not imply full-state convergence to a coherent product"
+    ],
+    "added_inputs": [
+      "N labeled two-level systems and collective Pauli algebra",
+      "symmetric maximum-spin sector",
+      "identical pure coherent product initial states",
+      "specific H=chi*Jz^2/N and time normalization",
+      "restriction to fixed times and collective observations"
+    ],
+    "not_proved": [
+      "FUCP selects the state family or the Hamiltonian",
+      "all quantum states approach a classical point",
+      "channel or full-state quantum-to-classical convergence",
+      "spatial graph, three spatial dimensions, or a metric",
+      "ADM canonical metric fields or hypersurface constraints",
+      "gravitational dynamics or general-relativistic emergence"
+    ]
+  },
+  "fixed_time_rows": [
+    {
+      "N": 16,
+      "z": 0.4,
+      "phi": 0.3,
+      "time": 1.2,
+      "chi": 0.8,
+      "collective_mean_error": 0.029688811758205123,
+      "analytic_uniform_error_bound": 0.04278292668810772,
+      "total_collective_variance": 0.16226251736787142,
+      "variance_upper": 0.16564256
+    },
+    {
+      "N": 64,
+      "z": 0.4,
+      "phi": 0.3,
+      "time": 1.2,
+      "chi": 0.8,
+      "collective_mean_error": 0.007708427390531529,
+      "analytic_uniform_error_bound": 0.010955563713930926,
+      "total_collective_variance": 0.04119276217233738,
+      "variance_upper": 0.04141064
+    },
+    {
+      "N": 256,
+      "z": 0.4,
+      "phi": 0.3,
+      "time": 1.2,
+      "chi": 0.8,
+      "collective_mean_error": 0.0019457369850816055,
+      "analytic_uniform_error_bound": 0.0027551304311017313,
+      "total_collective_variance": 0.010338933622943757,
+      "variance_upper": 0.01035266
+    },
+    {
+      "N": 1024,
+      "z": 0.4,
+      "phi": 0.3,
+      "time": 1.2,
+      "chi": 0.8,
+      "collective_mean_error": 0.00048761050062095255,
+      "analytic_uniform_error_bound": 0.0006897975766891203,
+      "total_collective_variance": 0.002587305375830601,
+      "variance_upper": 0.002588165
+    }
+  ],
+  "sqrt_N_collapse_rows": [
+    {
+      "N": 64,
+      "time": 8.0,
+      "time_over_sqrt_N": 1.0,
+      "equatorial_contrast": 0.6105014536712066,
+      "contrast_limit": 0.6065306597126334,
+      "mean_error": 0.38949854632879344,
+      "total_variance": 0.6585379750653415,
+      "variance_limit": 0.6321205588285577
+    },
+    {
+      "N": 256,
+      "time": 16.0,
+      "time_over_sqrt_N": 1.0,
+      "equatorial_contrast": 0.6075192224176503,
+      "contrast_limit": 0.6065306597126334,
+      "mean_error": 0.39248077758234967,
+      "total_variance": 0.6387328943930473,
+      "variance_limit": 0.6321205588285577
+    },
+    {
+      "N": 1024,
+      "time": 32.0,
+      "time_over_sqrt_N": 1.0,
+      "equatorial_contrast": 0.6067775432596798,
+      "contrast_limit": 0.6065306597126334,
+      "mean_error": 0.3932224567403202,
+      "total_variance": 0.6337741379957732,
+      "variance_limit": 0.6321205588285577
+    },
+    {
+      "N": 4096,
+      "time": 64.0,
+      "time_over_sqrt_N": 1.0,
+      "equatorial_contrast": 0.6065923645498212,
+      "contrast_limit": 0.6065306597126334,
+      "mean_error": 0.39340763545017876,
+      "total_variance": 0.63253398451976,
+      "variance_limit": 0.6321205588285577
+    }
+  ],
+  "fixed_time_global_fidelity_rows": [
+    {
+      "N": 32,
+      "fixed_time": 2.0,
+      "chi": 1.0,
+      "equatorial_global_fidelity": 0.7071052450597346,
+      "fidelity_limit": 0.7071067811865475,
+      "pure_state_trace_distance": 0.541197519340458,
+      "collective_mean_error": 0.05878749373999592
+    },
+    {
+      "N": 128,
+      "fixed_time": 2.0,
+      "chi": 1.0,
+      "equatorial_global_fidelity": 0.7071067594434617,
+      "fidelity_limit": 0.7071067811865475,
+      "pure_state_trace_distance": 0.5411961202341886,
+      "collective_mean_error": 0.015383999023496409
+    },
+    {
+      "N": 512,
+      "fixed_time": 2.0,
+      "chi": 1.0,
+      "equatorial_global_fidelity": 0.7071067808547108,
+      "fidelity_limit": 0.7071067811865475,
+      "pure_state_trace_distance": 0.5411961004527741,
+      "collective_mean_error": 0.003891040726734185
+    },
+    {
+      "N": 2048,
+      "fixed_time": 2.0,
+      "chi": 1.0,
+      "equatorial_global_fidelity": 0.7071067811813482,
+      "fidelity_limit": 0.7071067811865475,
+      "pure_state_trace_distance": 0.5411961001510005,
+      "collective_mean_error": 0.0009756096012555338
+    }
+  ],
+  "GHZ_boundary": {
+    "N_at_least": 2,
+    "normalized_sz_variance": 1.0,
+    "normalized_collective_mean": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "global_X_product_expectation_pure_GHZ": 1.0,
+    "global_X_product_expectation_incoherent_mixture": 0.0,
+    "trace_distance_GHZ_to_mixture": 0.5,
+    "interpretation": "No point concentration; classical mixtures of sphere points are not excluded by this example."
+  },
+  "resources": {
+    "physical_register": "N qubits, full Hilbert dimension 2^N",
+    "symmetric_dimension": "N+1, used for exact computational compression",
+    "Hamiltonian_norm": "abs(chi)*N/4",
+    "interaction": "chi/4*I + chi/(2N)*sum_{a<b} Z_a Z_b",
+    "no_free_geometry": "Permutation-symmetric all-to-all coupling in labels supplies no spatial metric or local graph."
+  },
+  "sources": [
+    "https://harvest.aps.org/v2/journals/articles/10.1103/PhysRevA.47.5138/fulltext",
+    "https://arxiv.org/pdf/2007.03390",
+    "https://collaborate.princeton.edu/en/publications/the-classical-limit-of-quantum-spin-systems/"
+  ],
+  "checks": {
+    "run": 14,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

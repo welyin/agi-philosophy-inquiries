@@ -1,0 +1,123 @@
+{
+  "round": 349,
+  "scope": "A specified static positive-lapse 1+1 curved-Dirac subclass. A uniform optical-coordinate conditional shift and position-dependent mass coin are exactly local and unitary; a supplied nonuniform physical sampling map gives B=-v sigma_z and its half-derivative connection. State-specific H1 and finite-time convergence is proved. This is not the general four-component paired walk construction and not dynamical geometry or GR.",
+  "background": {
+    "v0": 0.7,
+    "epsilon": 0.3,
+    "mass": 0.8,
+    "time": 0.5,
+    "x_of_y": "v0*(y+epsilon*sin(2*pi*y)/(2*pi))",
+    "v_of_y": "v0*(1+epsilon*cos(2*pi*y))",
+    "metric": "ds^2=-v(x)^2 dt^2+dx^2=v(y)^2*(-dt^2+dy^2)",
+    "scalar_curvature_min": -140.93562540973682,
+    "scalar_curvature_max": 22.552425550716592,
+    "curvature_convention": "R_mu_nu=partial_lam Gamma^lam_mu_nu-partial_nu Gamma^lam_mu_lam+Gamma^lam_mu_nu Gamma^sig_lam_sig-Gamma^sig_mu_lam Gamma^lam_nu_sig"
+  },
+  "exact_connections": {
+    "field_map": "chi(y)=sqrt(v(x(y)))*psi(x(y)); L2(dy) and L2(dx) are unitarily related.",
+    "physical_PDE": "partial_t psi=-v sigma_z partial_x psi-(v_x/2) sigma_z psi-i*m*v sigma_x psi.",
+    "continuity": "partial_t(psi^dagger psi)+partial_x(v psi^dagger sigma_z psi)=0.",
+    "optical_PDE": "partial_t chi=-sigma_z partial_y chi-i*m*v(y) sigma_x chi."
+  },
+  "error_constants": {
+    "derivative_bound_M1": 2.7467972427257723,
+    "continuum_L2_coefficient_C1": 1.2637279792537237,
+    "sampled_L2_coefficient": 3.934695225989792,
+    "vmax": 0.9099999999999999,
+    "v_y_sup": 1.319468914507713
+  },
+  "galerkin_reference": {
+    "cutoff_mode": 18,
+    "dimension": 74,
+    "L2_tail_upper": 1.3603179228149693e-35,
+    "derivative_tail_upper": 1.6243342611300202e-33,
+    "note": "Analytic truncation bound is separate from finite eigensolver floating-point error; no infinite-dimensional operator-norm claim."
+  },
+  "refinement": [
+    {
+      "sites": 32,
+      "optical_spacing_and_step": 0.03125,
+      "steps": 16,
+      "physical_circumference": 0.7,
+      "state_L2_error": 0.0037941654112139296,
+      "sampled_analytic_error_upper": 0.122959225812181,
+      "weighted_physical_norm": 1.0,
+      "unweighted_physical_samples_sum": 1.4999476935746487,
+      "step_physical_distance_upper": 0.028437499999999998
+    },
+    {
+      "sites": 64,
+      "optical_spacing_and_step": 0.015625,
+      "steps": 32,
+      "physical_circumference": 0.7,
+      "state_L2_error": 0.001888851046244738,
+      "sampled_analytic_error_upper": 0.0614796129060905,
+      "weighted_physical_norm": 0.9999999999999998,
+      "unweighted_physical_samples_sum": 1.499839753914011,
+      "step_physical_distance_upper": 0.014218749999999999
+    },
+    {
+      "sites": 128,
+      "optical_spacing_and_step": 0.0078125,
+      "steps": 64,
+      "physical_circumference": 0.7,
+      "state_L2_error": 0.0009424918489265665,
+      "sampled_analytic_error_upper": 0.03073980645304525,
+      "weighted_physical_norm": 0.9999999999999996,
+      "unweighted_physical_samples_sum": 1.4997836663351554,
+      "step_physical_distance_upper": 0.007109374999999999
+    },
+    {
+      "sites": 256,
+      "optical_spacing_and_step": 0.00390625,
+      "steps": 128,
+      "physical_circumference": 0.7,
+      "state_L2_error": 0.00047077759706645056,
+      "sampled_analytic_error_upper": 0.015369903226522624,
+      "weighted_physical_norm": 0.9999999999999994,
+      "unweighted_physical_samples_sum": 1.4997550684432948,
+      "step_physical_distance_upper": 0.0035546874999999997
+    }
+  ],
+  "connection_negative_control": {
+    "correct_initial_norm_rate": -9.71445146547012e-17,
+    "omitted_connection_initial_norm_rate": -0.337748834887242,
+    "independent_integral_rate": -0.33774883488724183
+  },
+  "massless_exact_shift_error": 0.0,
+  "geometry_interpretation_degeneracy": {
+    "curved": "Specified static conformal metric with constant rest mass m and densitized spinor chi.",
+    "flat": "Flat metric in (t,y) with specified external mass profile M(y)=m*v(y).",
+    "same_propagation_equation": true,
+    "missing_discriminator": "Independent physical rods, clock standards and universal matter coupling, or geometry dynamics."
+  },
+  "added_inputs": [
+    "static positive bounded lapse v",
+    "optical and physical coordinate identification",
+    "single-particle two-component state and mass parameter",
+    "periodic boundary and smooth initial data",
+    "dt=optical spacing and position-dependent unitary coins",
+    "flat dx probability density convention"
+  ],
+  "limitations": [
+    "No position-dependent geometry is selected by FUCP.",
+    "The target lapse is prescribed and has no matter backreaction equation.",
+    "The local norm connection is fixed by the chosen measure, not a proof of the full spin connection in every dimension.",
+    "Variable coefficients do not preserve a fixed Fourier band; estimates use H1 control instead.",
+    "The flat variable-mass description has the same selected propagation data.",
+    "No three-dimensional space, Einstein equation, cosmological constant, universal metric or autonomous infinite controller is derived."
+  ],
+  "sources": [
+    "https://arxiv.org/html/1505.07023",
+    "https://arxiv.org/html/1609.00305"
+  ],
+  "checks": {
+    "run": 14,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

@@ -1,0 +1,307 @@
+{
+  "round": 401,
+  "scope": "Fixed half-line Feynman clock, frozen finite output prefixes, declared infinite internal workspace; not a physical dimension derivation.",
+  "kernel_comparisons": [
+    {
+      "time": 0.25,
+      "sine_error": 5.584773021824261e-17,
+      "recurrence_error": 1.3386494146490386e-15,
+      "scalar_integral_error": 2.7268947905032838e-17
+    },
+    {
+      "time": 2.0,
+      "sine_error": 2.2663777145554636e-16,
+      "recurrence_error": 2.878525080381462e-16,
+      "scalar_integral_error": 6.784942819851384e-17
+    },
+    {
+      "time": 7.0,
+      "sine_error": 7.395116957368639e-16,
+      "recurrence_error": 2.306623491643868e-16,
+      "scalar_integral_error": 1.3916194731863365e-16
+    },
+    {
+      "time": 19.0,
+      "sine_error": 1.718773050018035e-15,
+      "recurrence_error": 1.6297500583874253e-16,
+      "scalar_integral_error": 3.823364189310927e-17
+    }
+  ],
+  "norm_and_equation": [
+    {
+      "time": 0.0,
+      "norm": 1.0,
+      "schrodinger_error": 3.7267721994603106e-11
+    },
+    {
+      "time": 0.7,
+      "norm": 0.9999999999999999,
+      "schrodinger_error": 4.600179564094463e-11
+    },
+    {
+      "time": 4.0,
+      "norm": 1.0,
+      "schrodinger_error": 5.124101488254938e-11
+    },
+    {
+      "time": 13.0,
+      "norm": 1.0,
+      "schrodinger_error": 7.434364836350722e-11
+    }
+  ],
+  "prefix_bounds": [
+    {
+      "prefix": 1,
+      "time": 5.0,
+      "unfinished_probability": 7.559518637848812e-05,
+      "all_later_bound": 0.04
+    },
+    {
+      "prefix": 1,
+      "time": 20.0,
+      "unfinished_probability": 3.971414403435818e-05,
+      "all_later_bound": 0.0025
+    },
+    {
+      "prefix": 1,
+      "time": 100.0,
+      "unfinished_probability": 2.948982867202875e-07,
+      "all_later_bound": 0.0001
+    },
+    {
+      "prefix": 4,
+      "time": 5.0,
+      "unfinished_probability": 0.04254060277972006,
+      "all_later_bound": 1.0
+    },
+    {
+      "prefix": 4,
+      "time": 20.0,
+      "unfinished_probability": 0.00041051159897871706,
+      "all_later_bound": 0.075
+    },
+    {
+      "prefix": 4,
+      "time": 100.0,
+      "unfinished_probability": 3.3480860289408337e-06,
+      "all_later_bound": 0.003
+    },
+    {
+      "prefix": 8,
+      "time": 5.0,
+      "unfinished_probability": 0.4483151338919561,
+      "all_later_bound": 1.0
+    },
+    {
+      "prefix": 8,
+      "time": 20.0,
+      "unfinished_probability": 0.004182551121370073,
+      "all_later_bound": 0.51
+    },
+    {
+      "prefix": 8,
+      "time": 100.0,
+      "unfinished_probability": 2.6858888737219336e-05,
+      "all_later_bound": 0.0204
+    }
+  ],
+  "one_percent_thresholds": [
+    {
+      "prefix": 1,
+      "epsilon": 0.01,
+      "time": 10.0,
+      "bound_at_threshold": 0.01
+    },
+    {
+      "prefix": 4,
+      "epsilon": 0.01,
+      "time": 54.772255750516614,
+      "bound_at_threshold": 0.01
+    },
+    {
+      "prefix": 8,
+      "epsilon": 0.01,
+      "time": 142.828568570857,
+      "bound_at_threshold": 0.010000000000000002
+    },
+    {
+      "prefix": 16,
+      "epsilon": 0.01,
+      "time": 386.78159211627434,
+      "bound_at_threshold": 0.01
+    }
+  ],
+  "finite_cutoff_checks": [
+    {
+      "length": 32,
+      "time": 2.0,
+      "sampled_norm_difference": 2.4138750640396756e-15,
+      "full_norm_bound": 1.5954893627252616e-16
+    },
+    {
+      "length": 48,
+      "time": 6.0,
+      "sampled_norm_difference": 4.043992467667442e-15,
+      "full_norm_bound": 1.348389536705733e-09
+    },
+    {
+      "length": 96,
+      "time": 15.0,
+      "sampled_norm_difference": 1.1104730319957862e-14,
+      "full_norm_bound": 1.8577904675662553e-08
+    }
+  ],
+  "gauge_check": {
+    "conjugacy_error": 6.883345246956658e-15,
+    "unitary_error": 2.398430232348125e-15,
+    "min_eigenvalue": 0.0810140527710006,
+    "max_eigenvalue": 3.918985947229
+  },
+  "direct_unknown_reference_cases": [
+    {
+      "reference_size": 3,
+      "time": 0.6,
+      "history_error": 2.7316571274730486e-15,
+      "partial_trace_mixture_error": 4.538586492223013e-16,
+      "persistence_error": 2.4808690433123325e-15,
+      "output_trace_distance": 0.9115682743355908,
+      "unfinished_probability": 0.9988525603861171
+    },
+    {
+      "reference_size": 3,
+      "time": 2.3,
+      "history_error": 6.169180323300393e-15,
+      "partial_trace_mixture_error": 1.0443787111792146e-15,
+      "persistence_error": 2.4808690433123325e-15,
+      "output_trace_distance": 0.27864130297584777,
+      "unfinished_probability": 0.33414624114567376
+    },
+    {
+      "reference_size": 4,
+      "time": 0.6,
+      "history_error": 2.5705485443310927e-15,
+      "partial_trace_mixture_error": 4.516714259691641e-16,
+      "persistence_error": 2.533278413754884e-15,
+      "output_trace_distance": 0.8956757712070134,
+      "unfinished_probability": 0.9988525603861171
+    },
+    {
+      "reference_size": 4,
+      "time": 2.3,
+      "history_error": 5.716140202205822e-15,
+      "partial_trace_mixture_error": 9.187448357296848e-16,
+      "persistence_error": 2.533278413754884e-15,
+      "output_trace_distance": 0.2716338039357257,
+      "unfinished_probability": 0.33414624114567376
+    }
+  ],
+  "fresh_archive_stream": [
+    {
+      "prefix": 1,
+      "time": 3.0,
+      "bell_reference_trace_distance": 0.006881494720163784,
+      "unfinished_probability": 0.008505995260928344,
+      "all_later_bound": 0.1111111111111111
+    },
+    {
+      "prefix": 1,
+      "time": 10.0,
+      "bell_reference_trace_distance": 3.613609096271084e-05,
+      "unfinished_probability": 4.4666664871044995e-05,
+      "all_later_bound": 0.01
+    },
+    {
+      "prefix": 1,
+      "time": 30.0,
+      "bell_reference_trace_distance": 1.9518967568721733e-06,
+      "unfinished_probability": 2.4126770765256827e-06,
+      "all_later_bound": 0.0011111111111111111
+    },
+    {
+      "prefix": 2,
+      "time": 3.0,
+      "bell_reference_trace_distance": 0.029038839130305347,
+      "unfinished_probability": 0.03472261575709033,
+      "all_later_bound": 0.5555555555555556
+    },
+    {
+      "prefix": 2,
+      "time": 10.0,
+      "bell_reference_trace_distance": 0.0008727947652879677,
+      "unfinished_probability": 0.0010730406303308406,
+      "all_later_bound": 0.05
+    },
+    {
+      "prefix": 2,
+      "time": 30.0,
+      "bell_reference_trace_distance": 3.332173936173811e-05,
+      "unfinished_probability": 4.087341560563914e-05,
+      "all_later_bound": 0.005555555555555556
+    },
+    {
+      "prefix": 3,
+      "time": 3.0,
+      "bell_reference_trace_distance": 0.04346698944600659,
+      "unfinished_probability": 0.04789439791145986,
+      "all_later_bound": 1.0
+    },
+    {
+      "prefix": 3,
+      "time": 10.0,
+      "bell_reference_trace_distance": 0.0017123763828394904,
+      "unfinished_probability": 0.001953374356471005,
+      "all_later_bound": 0.14
+    },
+    {
+      "prefix": 3,
+      "time": 30.0,
+      "bell_reference_trace_distance": 5.157029574284061e-05,
+      "unfinished_probability": 5.7192358623278145e-05,
+      "all_later_bound": 0.015555555555555555
+    }
+  ],
+  "unfrozen_archive_counterexample": [
+    {
+      "time": 5.0,
+      "wrong_archive_probability": 0.5033416562087926,
+      "parity_formula": 0.5033416562087925,
+      "distance_from_half": 0.003341656208792565,
+      "half_limit_envelope": 0.05,
+      "unfinished_probability": 7.559518637848812e-05
+    },
+    {
+      "time": 20.0,
+      "wrong_archive_probability": 0.49929928379155364,
+      "parity_formula": 0.4992992837915536,
+      "distance_from_half": 0.0007007162084463614,
+      "half_limit_envelope": 0.0125,
+      "unfinished_probability": 3.971414403435818e-05
+    },
+    {
+      "time": 80.0,
+      "wrong_archive_probability": 0.4998687867816607,
+      "parity_formula": 0.49986878678166047,
+      "distance_from_half": 0.00013121321833931,
+      "half_limit_envelope": 0.003125,
+      "unfinished_probability": 4.426296518295045e-07
+    }
+  ],
+  "same_fixed_hamiltonian_for_all_finite_prefixes": true,
+  "infinite_internal_workspace_assumed": true,
+  "frozen_output_contract_required": true,
+  "postselection_used": false,
+  "finite_time_exact_completion_claimed": false,
+  "arbitrary_repeated_readout_guaranteed": false,
+  "whole_state_convergence_claimed": false,
+  "full_sustained_cognition_model_constructed": false,
+  "spatial_dimension_generated": false,
+  "checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

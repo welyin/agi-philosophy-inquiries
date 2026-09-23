@@ -1,0 +1,394 @@
+{
+  "round": 392,
+  "scope": "Given laboratory slots, port factors, complete process and calibration; infer minimal tensor-Markov mechanisms. No spatial contact, 3D, autonomous tomography or GR derivation.",
+  "assumptions": [
+    "fixed finite input/output slots and port factorization",
+    "valid normalized complete intervention process",
+    "ideal tensor-Markov DAG for the recovery guarantee",
+    "trace-norm calibration and active-port margin for robustness"
+  ],
+  "normalized_process_dimension": 32,
+  "process_trace": 8,
+  "models": {
+    "chain": {
+      "edges": [
+        [
+          "A",
+          "B"
+        ],
+        [
+          "B",
+          "C"
+        ]
+      ],
+      "open_ports": [
+        "b"
+      ],
+      "parents": {
+        "B": [
+          "a"
+        ],
+        "C": [
+          "c"
+        ]
+      },
+      "diagnostics": {
+        "a": {
+          "gamma": 1.4999999999999996,
+          "after_input_trace": {
+            "B": 0.0,
+            "C": 1.4999999999999996
+          },
+          "recipient": "B"
+        },
+        "b": {
+          "gamma": 0.0,
+          "after_input_trace": {
+            "B": 0.0,
+            "C": 0.0
+          },
+          "recipient": null
+        },
+        "c": {
+          "gamma": 1.4999999999999993,
+          "after_input_trace": {
+            "B": 1.4999999999999996,
+            "C": 0.0
+          },
+          "recipient": "C"
+        }
+      },
+      "blocks": [
+        [
+          0,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          1
+        ]
+      ],
+      "factorization_residual": 8.881784197001252e-16,
+      "channel_trace_errors": {
+        "B": 4.440892098500626e-16,
+        "C": 4.440892098500626e-16
+      },
+      "numeric_exact_model_pass": true
+    },
+    "shortcut": {
+      "edges": [
+        [
+          "A",
+          "B"
+        ],
+        [
+          "A",
+          "C"
+        ],
+        [
+          "B",
+          "C"
+        ]
+      ],
+      "open_ports": [],
+      "parents": {
+        "B": [
+          "a"
+        ],
+        "C": [
+          "b",
+          "c"
+        ]
+      },
+      "diagnostics": {
+        "a": {
+          "gamma": 1.4999999999999996,
+          "after_input_trace": {
+            "B": 0.0,
+            "C": 1.4999999999999996
+          },
+          "recipient": "B"
+        },
+        "b": {
+          "gamma": 0.9999999999999999,
+          "after_input_trace": {
+            "B": 0.9999999999999998,
+            "C": 0.0
+          },
+          "recipient": "C"
+        },
+        "c": {
+          "gamma": 0.9999999999999999,
+          "after_input_trace": {
+            "B": 0.9999999999999998,
+            "C": 0.0
+          },
+          "recipient": "C"
+        }
+      },
+      "blocks": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3,
+          4
+        ]
+      ],
+      "factorization_residual": 2.220446049250313e-16,
+      "channel_trace_errors": {
+        "B": 2.220446049250313e-16,
+        "C": 2.220446049250313e-16
+      },
+      "numeric_exact_model_pass": true
+    },
+    "memory": {
+      "edges": [
+        [
+          "A",
+          "B"
+        ],
+        [
+          "B",
+          "C"
+        ]
+      ],
+      "open_ports": [
+        "b"
+      ],
+      "parents": {
+        "B": [
+          "a"
+        ],
+        "C": [
+          "c"
+        ]
+      },
+      "diagnostics": {
+        "a": {
+          "gamma": 1.4999999999999996,
+          "after_input_trace": {
+            "B": 0.0,
+            "C": 0.9999999999999996
+          },
+          "recipient": "B"
+        },
+        "b": {
+          "gamma": 0.0,
+          "after_input_trace": {
+            "B": 0.0,
+            "C": 0.0
+          },
+          "recipient": null
+        },
+        "c": {
+          "gamma": 1.4999999999999996,
+          "after_input_trace": {
+            "B": 0.9999999999999996,
+            "C": 0.0
+          },
+          "recipient": "C"
+        }
+      },
+      "blocks": [
+        [
+          0,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          1
+        ]
+      ],
+      "factorization_residual": 0.9999999999999996,
+      "channel_trace_errors": {
+        "B": 4.440892098500626e-16,
+        "C": 4.440892098500626e-16
+      },
+      "numeric_exact_model_pass": false
+    }
+  },
+  "equal_transitive_closure": true,
+  "calibration": {
+    "chain": {
+      "eta": 0.018749999999999985,
+      "threshold": 0.03749999999999997,
+      "gap": 1.4999999999999993,
+      "gap_exceeds_4eta": true,
+      "inferred": {
+        "edges": [
+          [
+            "A",
+            "B"
+          ],
+          [
+            "B",
+            "C"
+          ]
+        ],
+        "open_ports": [
+          "b"
+        ],
+        "parents": {
+          "B": [
+            "a"
+          ],
+          "C": [
+            "c"
+          ]
+        },
+        "diagnostics": {
+          "a": {
+            "gamma": 1.4849999999999994,
+            "after_input_trace": {
+              "B": 5.551115123125783e-17,
+              "C": 1.484999999999999
+            },
+            "recipient": "B"
+          },
+          "b": {
+            "gamma": 0.0,
+            "after_input_trace": {
+              "B": 0.0,
+              "C": 0.0
+            },
+            "recipient": null
+          },
+          "c": {
+            "gamma": 1.4849999999999994,
+            "after_input_trace": {
+              "B": 1.484999999999999,
+              "C": 5.551115123125783e-17
+            },
+            "recipient": "C"
+          }
+        },
+        "blocks": [
+          [
+            0,
+            2
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            1
+          ]
+        ],
+        "factorization_residual": 0.022275000000001113,
+        "channel_trace_errors": {
+          "B": 5.551115123125783e-16,
+          "C": 5.551115123125783e-16
+        },
+        "numeric_exact_model_pass": false
+      }
+    },
+    "shortcut": {
+      "eta": 0.01750000000000001,
+      "threshold": 0.03500000000000002,
+      "gap": 0.9999999999999999,
+      "gap_exceeds_4eta": true,
+      "inferred": {
+        "edges": [
+          [
+            "A",
+            "B"
+          ],
+          [
+            "A",
+            "C"
+          ],
+          [
+            "B",
+            "C"
+          ]
+        ],
+        "open_ports": [],
+        "parents": {
+          "B": [
+            "a"
+          ],
+          "C": [
+            "b",
+            "c"
+          ]
+        },
+        "diagnostics": {
+          "a": {
+            "gamma": 1.4849999999999997,
+            "after_input_trace": {
+              "B": 5.551115123125783e-17,
+              "C": 1.4849999999999994
+            },
+            "recipient": "B"
+          },
+          "b": {
+            "gamma": 0.9899999999999998,
+            "after_input_trace": {
+              "B": 0.9899999999999998,
+              "C": 5.551115123125783e-17
+            },
+            "recipient": "C"
+          },
+          "c": {
+            "gamma": 0.9899999999999998,
+            "after_input_trace": {
+              "B": 0.9899999999999998,
+              "C": 5.551115123125783e-17
+            },
+            "recipient": "C"
+          }
+        },
+        "blocks": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3,
+            4
+          ]
+        ],
+        "factorization_residual": 0.01485000000000034,
+        "channel_trace_errors": {
+          "B": 3.3306690738754696e-16,
+          "C": 3.3306690738754696e-16
+        },
+        "numeric_exact_model_pass": false
+      }
+    }
+  },
+  "memory_rejection": {
+    "eta": 0.01750000000000001,
+    "residual": 0.9974249999999993,
+    "m": 3,
+    "exclusion_threshold": 0.07000000000000003,
+    "rejected": true
+  },
+  "weak_edge": {
+    "strength": 0.01,
+    "distance_to_absent": 0.015,
+    "active_residual": 0.015
+  },
+  "independent_probability_error": 2.220446049250313e-16,
+  "source": "https://arxiv.org/html/1704.00800",
+  "checks": {
+    "run": 10,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

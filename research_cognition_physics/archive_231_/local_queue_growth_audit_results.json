@@ -1,0 +1,284 @@
+{
+  "round": 273,
+  "logical_slots": 256,
+  "local_rule": "After arrivals and service, refine a designated rung if its local queue exceeds H; split classical queue and future fluid arrival equally between its children.",
+  "unlimited_construction": [
+    {
+      "total_arrival_per_slot": 1.0,
+      "threshold": 1.0,
+      "construction_credits": null,
+      "growth_times": [],
+      "rewrites": 0,
+      "new_registers": 0,
+      "new_primitive_channels_net": 0,
+      "final_queue": 0.0,
+      "largest_local_queue_seen": 0.0,
+      "last_slot_delivery": 1.0,
+      "geometry": {
+        "vertices": 2,
+        "edges": 1,
+        "components": 1,
+        "cycle_rank": 0,
+        "max_degree": 1,
+        "rungs": 1,
+        "diameter": 1,
+        "longitudinal_half_cut": 0,
+        "original_register_vertex_degree": 1
+      }
+    },
+    {
+      "total_arrival_per_slot": 3.0,
+      "threshold": 3.0,
+      "construction_credits": null,
+      "growth_times": [
+        2,
+        5
+      ],
+      "rewrites": 3,
+      "new_registers": 6,
+      "new_primitive_channels_net": 9,
+      "final_queue": 0.0,
+      "largest_local_queue_seen": 3.0,
+      "last_slot_delivery": 3.0,
+      "geometry": {
+        "vertices": 8,
+        "edges": 10,
+        "components": 1,
+        "cycle_rank": 3,
+        "max_degree": 3,
+        "rungs": 4,
+        "diameter": 4,
+        "longitudinal_half_cut": 2,
+        "original_register_vertex_degree": 3
+      }
+    },
+    {
+      "total_arrival_per_slot": 8.0,
+      "threshold": 8.0,
+      "construction_credits": null,
+      "growth_times": [
+        2,
+        3,
+        7
+      ],
+      "rewrites": 7,
+      "new_registers": 14,
+      "new_primitive_channels_net": 21,
+      "final_queue": 36.0,
+      "largest_local_queue_seen": 8.0,
+      "last_slot_delivery": 8.0,
+      "geometry": {
+        "vertices": 16,
+        "edges": 22,
+        "components": 1,
+        "cycle_rank": 7,
+        "max_degree": 3,
+        "rungs": 8,
+        "diameter": 8,
+        "longitudinal_half_cut": 2,
+        "original_register_vertex_degree": 3
+      }
+    },
+    {
+      "total_arrival_per_slot": 12.0,
+      "threshold": 12.0,
+      "construction_credits": null,
+      "growth_times": [
+        2,
+        3,
+        6,
+        17
+      ],
+      "rewrites": 15,
+      "new_registers": 30,
+      "new_primitive_channels_net": 45,
+      "final_queue": 0.0,
+      "largest_local_queue_seen": 12.0,
+      "last_slot_delivery": 12.0,
+      "geometry": {
+        "vertices": 32,
+        "edges": 46,
+        "components": 1,
+        "cycle_rank": 15,
+        "max_degree": 3,
+        "rungs": 16,
+        "diameter": 16,
+        "longitudinal_half_cut": 2,
+        "original_register_vertex_degree": 3
+      }
+    }
+  ],
+  "threshold_controls_delay_not_final_channel_count": [
+    {
+      "total_arrival_per_slot": 12.0,
+      "threshold": 12.0,
+      "construction_credits": null,
+      "growth_times": [
+        2,
+        3,
+        6,
+        17
+      ],
+      "rewrites": 15,
+      "new_registers": 30,
+      "new_primitive_channels_net": 45,
+      "final_queue": 0.0,
+      "largest_local_queue_seen": 12.0,
+      "last_slot_delivery": 12.0,
+      "geometry": {
+        "vertices": 32,
+        "edges": 46,
+        "components": 1,
+        "cycle_rank": 15,
+        "max_degree": 3,
+        "rungs": 16,
+        "diameter": 16,
+        "longitudinal_half_cut": 2,
+        "original_register_vertex_degree": 3
+      }
+    },
+    {
+      "total_arrival_per_slot": 12.0,
+      "threshold": 24.0,
+      "construction_credits": null,
+      "growth_times": [
+        3,
+        5,
+        11,
+        34
+      ],
+      "rewrites": 15,
+      "new_registers": 30,
+      "new_primitive_channels_net": 45,
+      "final_queue": 0.0,
+      "largest_local_queue_seen": 23.625,
+      "last_slot_delivery": 12.0,
+      "geometry": {
+        "vertices": 32,
+        "edges": 46,
+        "components": 1,
+        "cycle_rank": 15,
+        "max_degree": 3,
+        "rungs": 16,
+        "diameter": 16,
+        "longitudinal_half_cut": 2,
+        "original_register_vertex_degree": 3
+      }
+    },
+    {
+      "total_arrival_per_slot": 12.0,
+      "threshold": 48.0,
+      "construction_credits": null,
+      "growth_times": [
+        5,
+        10,
+        21,
+        69
+      ],
+      "rewrites": 15,
+      "new_registers": 30,
+      "new_primitive_channels_net": 45,
+      "final_queue": 0.0,
+      "largest_local_queue_seen": 47.625,
+      "last_slot_delivery": 12.0,
+      "geometry": {
+        "vertices": 32,
+        "edges": 46,
+        "components": 1,
+        "cycle_rank": 15,
+        "max_degree": 3,
+        "rungs": 16,
+        "diameter": 16,
+        "longitudinal_half_cut": 2,
+        "original_register_vertex_degree": 3
+      }
+    }
+  ],
+  "finite_construction": [
+    {
+      "total_arrival_per_slot": 12.0,
+      "threshold": 12.0,
+      "construction_credits": 0,
+      "growth_times": [],
+      "rewrites": 0,
+      "new_registers": 0,
+      "new_primitive_channels_net": 0,
+      "final_queue": 2816.0,
+      "largest_local_queue_seen": 2816.0,
+      "last_slot_delivery": 1.0,
+      "geometry": {
+        "vertices": 2,
+        "edges": 1,
+        "components": 1,
+        "cycle_rank": 0,
+        "max_degree": 1,
+        "rungs": 1,
+        "diameter": 1,
+        "longitudinal_half_cut": 0,
+        "original_register_vertex_degree": 1
+      }
+    },
+    {
+      "total_arrival_per_slot": 12.0,
+      "threshold": 12.0,
+      "construction_credits": 1,
+      "growth_times": [
+        2
+      ],
+      "rewrites": 1,
+      "new_registers": 2,
+      "new_primitive_channels_net": 3,
+      "final_queue": 2562.0,
+      "largest_local_queue_seen": 1281.0,
+      "last_slot_delivery": 2.0,
+      "geometry": {
+        "vertices": 4,
+        "edges": 4,
+        "components": 1,
+        "cycle_rank": 1,
+        "max_degree": 2,
+        "rungs": 2,
+        "diameter": 2,
+        "longitudinal_half_cut": 2,
+        "original_register_vertex_degree": 2
+      }
+    },
+    {
+      "total_arrival_per_slot": 12.0,
+      "threshold": 12.0,
+      "construction_credits": 3,
+      "growth_times": [
+        2,
+        3
+      ],
+      "rewrites": 3,
+      "new_registers": 6,
+      "new_primitive_channels_net": 9,
+      "final_queue": 2056.0,
+      "largest_local_queue_seen": 514.0,
+      "last_slot_delivery": 4.0,
+      "geometry": {
+        "vertices": 8,
+        "edges": 10,
+        "components": 1,
+        "cycle_rank": 3,
+        "max_degree": 3,
+        "rungs": 4,
+        "diameter": 4,
+        "longitudinal_half_cut": 2,
+        "original_register_vertex_degree": 3
+      }
+    }
+  ],
+  "fixed_endpoint_warning": "At 16 rungs aggregate rung capacity is 16 but the child-zero original data vertex has only 3 incident edges. The divided local workload cannot be reinterpreted as rate-12 transfer from that one fixed source.",
+  "scope": "A conditional classical fluid-work growth controller with exact conservation, bounded queues and explicit construction costs; its aligned output remains a ladder. No spontaneous resources, physical time, quantum task migration, throughput-optimal general routing or selected spatial dimension is claimed.",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "checks": {
+    "run": 9,
+    "failures": 0,
+    "errors": 0
+  }
+}

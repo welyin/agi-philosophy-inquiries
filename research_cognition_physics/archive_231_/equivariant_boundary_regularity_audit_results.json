@@ -1,0 +1,186 @@
+{
+  "round": 384,
+  "scope": "Conditional dimension lower bound for minimal reversible full-boundary actions and complete covariant qubit effects; no assumed compact/Lie source group, Lipschitz interface, or derived physical space. Finite certification still needs a known modulus and cover.",
+  "scientific_baseline_through": 382,
+  "analytic_results": {
+    "lower_bound": "minimal continuous G-action on X homeomorphic to S^(d-1), whole-family unitary covariance and C_Delta=Herm_0(2) imply d>=3",
+    "with_antipodal_separation": "adding all E_x != E_-x in the declared antipodal sphere identification gives d=3 by round 382",
+    "external_theorem": "Hauser-Jager 1711.05672 Theorem 2.4 (MEF existence) and Theorem 2.12 (connected fibers); arbitrary topological group, no abelian/minimal premise for the external theorem",
+    "circle_argument": "minimal circle action with a nontrivial equicontinuous factor is equicontinuous, has compact closure conjugate into O(2), and cannot have a rotational S^2 factor",
+    "non_lipschitz": "effect_ratio(epsilon) ~ (1/2)*epsilon^(alpha-1), 0<alpha<1",
+    "holder_modulus": "omega(r)=min(1,2^(-alpha)*3^((1-alpha)/2)*r^alpha)",
+    "no_uniform_modulus_family": "alpha=1/n, epsilon=exp(-n): input separation ->0 but effect gap ->sqrt((1-1/sqrt(1+exp(-2)))/2)>0",
+    "minimal_not_transitive": "two irrational-angle rotations about nonparallel axes generate a countable group with SO(3) closure; each orbit is dense and countable, not all S^2"
+  },
+  "axis_ratio_sequence": [
+    {
+      "epsilon": 0.01,
+      "chord_distance": 0.010000125005469073,
+      "effect_gap": 0.04981493804436269,
+      "ratio": 4.981431533817715,
+      "scaled_asymptotic": 0.4981431533817715
+    },
+    {
+      "epsilon": 0.0001,
+      "chord_distance": 0.000100000000125,
+      "effect_gap": 0.004999812524607057,
+      "ratio": 49.99812518357291,
+      "scaled_asymptotic": 0.4999812518357291
+    },
+    {
+      "epsilon": 1e-06,
+      "chord_distance": 1.0000000000001249e-06,
+      "effect_gap": 0.0004999998125002462,
+      "ratio": 499.9998125001838,
+      "scaled_asymptotic": 0.4999998125001838
+    },
+    {
+      "epsilon": 1e-08,
+      "chord_distance": 1.0000000000000002e-08,
+      "effect_gap": 4.9999999812527765e-05,
+      "ratio": 4999.999981252776,
+      "scaled_asymptotic": 0.4999999981252776
+    },
+    {
+      "epsilon": 1e-10,
+      "chord_distance": 1e-10,
+      "effect_gap": 4.999999999812501e-06,
+      "ratio": 49999.99999812501,
+      "scaled_asymptotic": 0.4999999999812501
+    },
+    {
+      "epsilon": 1e-12,
+      "chord_distance": 1e-12,
+      "effect_gap": 4.999999999998126e-07,
+      "ratio": 499999.9999998126,
+      "scaled_asymptotic": 0.49999999999981254
+    }
+  ],
+  "certificate_cases": [
+    {
+      "m": 8,
+      "n": 16,
+      "sample_count": 114,
+      "alpha": 0.5,
+      "readout_error_each": 0.002,
+      "cover_radius_upper": 0.39269908169872414,
+      "holder_constant_effect_opnorm": 0.9306048591020996,
+      "minimum_exact_gap": 0.9999999999999997,
+      "minimum_observed_gap": 0.996,
+      "modulus_at_cover_radius": 0.5831701130835802,
+      "certified_gap_lower": -0.1743402261671605
+    },
+    {
+      "m": 16,
+      "n": 32,
+      "sample_count": 482,
+      "alpha": 0.5,
+      "readout_error_each": 0.002,
+      "cover_radius_upper": 0.19634954084936207,
+      "holder_constant_effect_opnorm": 0.9306048591020996,
+      "minimum_exact_gap": 0.9999999999999997,
+      "minimum_observed_gap": 0.996,
+      "modulus_at_cover_radius": 0.41236354154672533,
+      "certified_gap_lower": 0.16727291690654933
+    },
+    {
+      "m": 32,
+      "n": 64,
+      "sample_count": 1986,
+      "alpha": 0.5,
+      "readout_error_each": 0.002,
+      "cover_radius_upper": 0.09817477042468103,
+      "holder_constant_effect_opnorm": 0.9306048591020996,
+      "minimum_exact_gap": 0.9999999999999996,
+      "minimum_observed_gap": 0.996,
+      "modulus_at_cover_radius": 0.2915850565417901,
+      "certified_gap_lower": 0.40882988691641975
+    }
+  ],
+  "metric_comparison": {
+    "raw_chord_before": 1.566437768643747,
+    "raw_chord_after": 1.4699060998145321,
+    "pullback_distance_before": 1.5963289582163853,
+    "pullback_distance_after": 1.596328958216385
+  },
+  "countable_control_word": {
+    "action_word_error": 2.7336071744532853e-16,
+    "spinor_covariance_error": 1.5328980255139898e-16,
+    "rotation_angles_over_2pi": [
+      1.4142135623730951,
+      1.7320508075688772
+    ],
+    "word_length": 6
+  },
+  "no_uniform_modulus_family": [
+    {
+      "alpha": 0.25,
+      "epsilon": 0.01831563888873418,
+      "chord_distance": 0.01831640702801997,
+      "effect_gap": 0.17535220600258117,
+      "ratio": 9.57350454891791,
+      "scaled_asymptotic": 0.4766367254970324
+    },
+    {
+      "alpha": 0.125,
+      "epsilon": 0.00033546262790251185,
+      "chord_distance": 0.00033546263262143025,
+      "effect_gap": 0.17534551746724714,
+      "ratio": 522.6976134332215,
+      "scaled_asymptotic": 0.4766385271281407
+    },
+    {
+      "alpha": 0.0625,
+      "epsilon": 1.1253517471925912e-07,
+      "chord_distance": 1.1253517471925929e-07,
+      "effect_gap": 0.1753455163453876,
+      "ratio": 1558139.6375206313,
+      "scaled_asymptotic": 0.4766385307834348
+    },
+    {
+      "alpha": 0.03125,
+      "epsilon": 1.2664165549094176e-14,
+      "chord_distance": 1.2664165549094176e-14,
+      "effect_gap": 0.1753455163453875,
+      "ratio": 13845801025392.42,
+      "scaled_asymptotic": 0.47663853078343527
+    },
+    {
+      "alpha": 0.015625,
+      "epsilon": 1.603810890548638e-28,
+      "chord_distance": 1.603810890548638e-28,
+      "effect_gap": 0.1753455163453875,
+      "ratio": 1.0933054350653811e+27,
+      "scaled_asymptotic": 0.47663853078343527
+    }
+  ],
+  "limiting_effect_gap": 0.1753455163453876,
+  "new_inputs_for_example": [
+    "specified S^2 labels and antipodes",
+    "odd-power interface alpha",
+    "actual conjugated reversible controls",
+    "qubit effects and per-pair preparations",
+    "declared chord-metric cover and known Holder modulus",
+    "readout error bounds"
+  ],
+  "not_established": [
+    "sphere boundary and physical opposite directions from FUCP",
+    "implementation or cost of all redirections",
+    "known modulus from abstract minimality",
+    "density or the MEF theorem from finite sampling",
+    "a physical spatial metric, time, Lorentz geometry or gravity"
+  ],
+  "primary_sources": [
+    "https://arxiv.org/pdf/1711.05672",
+    "https://arxiv.org/pdf/1904.12203"
+  ],
+  "checks": {
+    "run": 11,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

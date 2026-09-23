@@ -1,0 +1,120 @@
+{
+  "round": 364,
+  "scope": "Specified interacting two-spin family: ordinary common-time consistency does not make local energy densities first-class constraints or yield the gravitational hypersurface-deformation algebra.",
+  "hypothesis_tested": "Do a shared history, local clocks, and interaction automatically turn ordinary evolution into gravitational gauge constraints?",
+  "classical_constraint_witnesses": [
+    {
+      "spins": [
+        [
+          -0.125,
+          0.8569568250501305,
+          0.5
+        ],
+        [
+          -0.125,
+          -0.8569568250501305,
+          0.5
+        ]
+      ],
+      "h1_h2": [
+        0.0,
+        0.0
+      ],
+      "D_equals_bracket_h1_h2": -0.8569568250501305,
+      "bracket_h1_D": 0.96875
+    },
+    {
+      "spins": [
+        [
+          -0.41421356237309515,
+          0.0,
+          0.9101797211244548
+        ],
+        [
+          -0.41421356237309515,
+          0.0,
+          0.9101797211244548
+        ]
+      ],
+      "h1_h2": [
+        0.0,
+        0.0
+      ],
+      "D_equals_bracket_h1_h2": 0.0,
+      "bracket_h1_D": -1.6568542494923806
+    }
+  ],
+  "quantum_fixed_clock_curvature_norm": 0.4025000000000001,
+  "fixed_clock_order_witnesses": [
+    {
+      "step": 0.2,
+      "unknown_reference_witness_distance": 0.011591697585607259,
+      "order_difference_norm": 0.016019254037252614
+    },
+    {
+      "step": 0.1,
+      "unknown_reference_witness_distance": 0.0029089202363165667,
+      "order_difference_norm": 0.004019946041545733
+    },
+    {
+      "step": 0.05,
+      "unknown_reference_witness_distance": 0.0007279164150941477,
+      "order_difference_norm": 0.0010059340128636145
+    },
+    {
+      "step": 0.025,
+      "unknown_reference_witness_distance": 0.00018202198776305208,
+      "order_difference_norm": 0.0002515427490108375
+    }
+  ],
+  "maximally_entangled_small_step_coefficient": 0.2912580470991316,
+  "added_flat_connection": {
+    "endpoint": [
+      0.6,
+      0.4
+    ],
+    "curvature_norm": 7.111674236350674e-17,
+    "sum_generator_error": 5.551115123125783e-17,
+    "local_generator_change": 0.19970228135487542,
+    "diagonal_original_dynamics_error": 5.140369424074174e-16,
+    "independent_midpoint_path_integration": [
+      {
+        "steps_per_axis": 200,
+        "path_difference_norm": 7.00496991187105e-08,
+        "first_vs_exact_endpoint_norm": 1.4074988151978736e-07,
+        "second_vs_exact_endpoint_norm": 1.407498829793141e-07
+      },
+      {
+        "steps_per_axis": 400,
+        "path_difference_norm": 1.751242722590081e-08,
+        "first_vs_exact_endpoint_norm": 3.518747008047891e-08,
+        "second_vs_exact_endpoint_norm": 3.5187467664252564e-08
+      }
+    ]
+  },
+  "explicit_inputs": [
+    "Two unit classical spins with the inherited Pauli Poisson bracket",
+    "Transverse terms and ZZ coupling; symmetric assignment of interaction energy",
+    "For the constraint test only: proposed local clock momenta or h_v=0",
+    "For the positive extension only: an explicitly chosen nonlocal clock-dependent connection"
+  ],
+  "not_proved": [
+    "All possible constraint completions are inconsistent",
+    "Local clock readings are unphysical",
+    "Einstein dynamics or an emergent spacetime",
+    "Physical construction of ideal canonical clocks or their resource-free use"
+  ],
+  "sources": [
+    "https://arxiv.org/html/1309.1103",
+    "https://doi.org/10.1016/0003-4916(73)90096-1"
+  ],
+  "checks": {
+    "run": 12,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

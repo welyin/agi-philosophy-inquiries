@@ -1,0 +1,206 @@
+{
+  "round": 353,
+  "scope": {
+    "proved": [
+      "For independent product geometry and arbitrary MR reference, exact half-diamond error is |Gamma_N-exp(-2i theta mu)|/2 <= min(1,theta^2(1-mu^2)/N).",
+      "Fixed-theta convergence is not uniform: theta=c sqrt(N) leaves finite Gaussian dephasing in the mean rotating frame.",
+      "Same-mean correlated cat geometry keeps Var(Q_N)=1-mu^2 and can prevent the mean-unitary limit.",
+      "The same closed joint unitary changes noncommuting geometry observables and creates geometry-matter entanglement.",
+      "One probe with fixed total coupling gives average geometry response O(theta/N); finite fixed-time macroscopic feedback is not obtained."
+    ],
+    "inputs": [
+      "N geometry qubits and one matter qubit",
+      "Q_N=N^-1 sum_j Z_j and H=g Q_N tensor Z_M",
+      "Initially fixed geometry independent of arbitrary MR",
+      "Product geometry or separately specified correlated geometry",
+      "No geometry or matter self-Hamiltonian"
+    ],
+    "not_proved": [
+      "Metric or Einstein dynamics",
+      "Spatial dimension or locality",
+      "A finite classical backreaction limit for macroscopic matter",
+      "Universal validity of nonlinear semiclassical equations",
+      "Preparation, reset or repeated-use resource closure"
+    ]
+  },
+  "fixed_time": [
+    {
+      "N": 10,
+      "theta": 0.7,
+      "mean": 0.3,
+      "half_diamond": 0.042773955075825924,
+      "variance_bound": 0.04459,
+      "N_times_error": 0.42773955075825926
+    },
+    {
+      "N": 100,
+      "theta": 0.7,
+      "mean": 0.3,
+      "half_diamond": 0.004439299086538754,
+      "variance_bound": 0.004458999999999999,
+      "N_times_error": 0.44392990865387544
+    },
+    {
+      "N": 1000,
+      "theta": 0.7,
+      "mean": 0.3,
+      "half_diamond": 0.0004457013559963707,
+      "variance_bound": 0.00044589999999999994,
+      "N_times_error": 0.4457013559963707
+    },
+    {
+      "N": 10000,
+      "theta": 0.7,
+      "mean": 0.3,
+      "half_diamond": 4.458801216332889e-05,
+      "variance_bound": 4.459e-05,
+      "N_times_error": 0.4458801216332889
+    }
+  ],
+  "sqrt_N_time": [
+    {
+      "N": 100,
+      "theta": 6.0,
+      "centered_coherence_real": 0.5186763876505299,
+      "centered_coherence_imag": -0.008197595353781312,
+      "half_diamond": 0.24069670769182078,
+      "limiting_half_diamond": 0.24033090771866028
+    },
+    {
+      "N": 1000,
+      "theta": 18.973665961010276,
+      "centered_coherence_real": 0.5192721340461315,
+      "centered_coherence_imag": -0.0025834506071765813,
+      "half_diamond": 0.24036740384336658,
+      "limiting_half_diamond": 0.24033090771866028
+    },
+    {
+      "N": 10000,
+      "theta": 60.0,
+      "centered_coherence_real": 0.5193315808001163,
+      "centered_coherence_imag": -0.0008166798875065113,
+      "half_diamond": 0.24033455649477134,
+      "limiting_half_diamond": 0.24033090771866028
+    },
+    {
+      "N": 100000,
+      "theta": 189.73665961010278,
+      "centered_coherence_real": 0.5193375241991727,
+      "centered_coherence_imag": -0.0002582480395613763,
+      "half_diamond": 0.2403312725879795,
+      "limiting_half_diamond": 0.24033090771866028
+    }
+  ],
+  "backreaction_scaling": [
+    {
+      "N": 100,
+      "scaling": "fixed",
+      "theta": 0.7,
+      "average_Y_response": 0.008399725602689105,
+      "sum_Y_response": 0.8399725602689107,
+      "matter_half_diamond_mean0": 0.0048762267548159155
+    },
+    {
+      "N": 100,
+      "scaling": "sqrt_N",
+      "theta": 6.0,
+      "average_Y_response": 0.07182732437335161,
+      "sum_Y_response": 7.1827324373351615,
+      "matter_half_diamond_mean0": 0.2570456820337501
+    },
+    {
+      "N": 100,
+      "scaling": "linear_N",
+      "theta": 30.0,
+      "average_Y_response": 0.3387854840370212,
+      "sum_Y_response": 33.87854840370212,
+      "matter_half_diamond_mean0": 0.4999999976984065
+    },
+    {
+      "N": 1000,
+      "scaling": "fixed",
+      "theta": 0.7,
+      "average_Y_response": 0.0008399997256000269,
+      "sum_Y_response": 0.8399997256000269,
+      "matter_half_diamond_mean0": 0.0004897601383292982
+    },
+    {
+      "N": 1000,
+      "scaling": "sqrt_N",
+      "theta": 18.973665961010276,
+      "average_Y_response": 0.022762935130840007,
+      "sum_Y_response": 22.76293513084001,
+      "matter_half_diamond_mean0": 0.25666593993510545
+    },
+    {
+      "N": 1000,
+      "scaling": "linear_N",
+      "theta": 300.0,
+      "average_Y_response": 0.3387854840370212,
+      "sum_Y_response": 338.7854840370212,
+      "matter_half_diamond_mean0": 0.5
+    },
+    {
+      "N": 10000,
+      "scaling": "fixed",
+      "theta": 0.7,
+      "average_Y_response": 8.399999972559999e-05,
+      "sum_Y_response": 0.8399999972559999,
+      "matter_half_diamond_mean0": 4.899759948701066e-05
+    },
+    {
+      "N": 10000,
+      "scaling": "sqrt_N",
+      "theta": 60.0,
+      "average_Y_response": 0.007199827201244156,
+      "sum_Y_response": 71.99827201244156,
+      "matter_half_diamond_mean0": 0.2566280776847887
+    },
+    {
+      "N": 10000,
+      "scaling": "linear_N",
+      "theta": 3000.0,
+      "average_Y_response": 0.3387854840370212,
+      "sum_Y_response": 3387.854840370212,
+      "matter_half_diamond_mean0": 0.5
+    }
+  ],
+  "cat_versus_mixture": {
+    "N": 4,
+    "theta": 0.7853981633974483,
+    "mean": 0.0,
+    "variance": 1.0,
+    "cat_matter_error": 0.4999999999999999,
+    "mixture_matter_error": 0.4999999999999999,
+    "same_reduced_channel_distance": 0.0,
+    "cat_joint_negativity": 0.5000000000000002,
+    "mixture_joint_negativity": 1.1102230246251565e-16
+  },
+  "joint_account_example": {
+    "N": 4,
+    "theta": 0.7,
+    "global_trace_distance_from_mean_product_mu0": 0.3403698736134692,
+    "matter_trace_distance_mu0": 0.11066650674761291,
+    "joint_negativity_mu0": 0.3137187132319228,
+    "sum_Y_Z_covariance_mu0": 1.3715912298218054,
+    "average_Y_Z_covariance_mu0": 0.34289780745545134
+  },
+  "resource_account": {
+    "geometry_qubits": "N",
+    "GM_Hilbert_dimension": "2^(N+1)",
+    "interaction_operator_norm": "abs(g)",
+    "individual_pair_coupling": "g/N",
+    "time": "theta/g",
+    "recurrence_at_theta": "pi*N gives (-1)^N I on GM"
+  },
+  "primary_source": "Cucchietti, Paz, Zurek, Phys. Rev. A 72, 052113 (2005), https://arxiv.org/html/quant-ph/0508184, section II equations (1), (8), (12)-(16), (22). The product coherence and Gaussian mechanism are known; this round adds a scoped internal interface audit, not an originality claim.",
+  "checks": {
+    "run": 17,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

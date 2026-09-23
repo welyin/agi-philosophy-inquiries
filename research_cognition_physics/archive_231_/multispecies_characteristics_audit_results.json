@@ -1,0 +1,491 @@
+{
+  "round": 339,
+  "scope": "Finite independent massless matter scalars, each disformally coupled to the same canonical phi by a possibly different nonnegative D_i(phi), on homogeneous timelike states of a stipulated classical Einstein theory. Only the local principal action is derived; neither multi-species background attraction nor nonlinear, low-frequency or quantum stability is assumed or proved.",
+  "literature_interface": {
+    "source": "https://arxiv.org/html/1510.01650",
+    "location": "Sections 2.1 and 3.1, equations 1-4 and 39-45. Their single-sector action is summed over independent matter fields; their conformal C is set to one. The multi-sector proof and counterexample are independently checked here."
+  },
+  "analytic_summary": {
+    "strict_gradient_stability": "R=sum_i D_i rho_i < 1, with C_i=1-D_i phi_dot^2>0 and D_i>=0",
+    "phi_speed_squared": "(1-R)/(1+S), S=sum_i r_i/C_i",
+    "matter_speeds_squared": "C_i",
+    "common_gravity_cone_iff": "max_i q_i -> 0 and R -> 0, for fixed finite species on the positive branch",
+    "sufficient_uniform_certificate": "If total matter energy fraction F<=1/2 and Q=max_i q_i<1, all scalar speed squares lie in [1-Q,1], R<=Q/2 and norm(A)<=Q/(1-Q)^(1/4).",
+    "attraction_not_assumed": true
+  },
+  "full_action_hessian": [
+    {
+      "step": 0.0004,
+      "all_components_max_error": 1.5350717913475975e-07,
+      "kinetic_max_error": 1.5350717913475975e-07,
+      "gradient_max_error": 1.4442408408088525e-08,
+      "time_space_cross_max": 0.0
+    },
+    {
+      "step": 0.0002,
+      "all_components_max_error": 3.814806798230208e-08,
+      "kinetic_max_error": 3.814806798230208e-08,
+      "gradient_max_error": 4.0340675522276825e-09,
+      "time_space_cross_max": 0.0
+    }
+  ],
+  "separately_stable_but_jointly_unstable": {
+    "each_alone": [
+      {
+        "species_count": 1,
+        "D_i": [
+          0.2
+        ],
+        "q_i": [
+          0.2
+        ],
+        "r_i": [
+          0.5999999999999999
+        ],
+        "total_R": 0.5999999999999999,
+        "total_S": 0.7499999999999998,
+        "matter_fractions": [
+          0.8571428571428571
+        ],
+        "total_matter_fraction": 0.8571428571428571,
+        "phi_mode_speed_squared": 0.22857142857142868,
+        "matter_mode_speeds_squared": [
+          0.8
+        ],
+        "maximum_squared_speed_deficit": 0.7714285714285714,
+        "mixing_norm": 0.5180040128222703,
+        "smallest_kinetic_eigenvalue": 0.840679683219153,
+        "smallest_gradient_eigenvalue": 0.28674941918708585,
+        "generalized_spectrum_error": 2.7755575615628914e-17
+      },
+      {
+        "species_count": 1,
+        "D_i": [
+          0.4
+        ],
+        "q_i": [
+          0.4
+        ],
+        "r_i": [
+          0.6
+        ],
+        "total_R": 0.6,
+        "total_S": 1.0,
+        "matter_fractions": [
+          0.75
+        ],
+        "total_matter_fraction": 0.75,
+        "phi_mode_speed_squared": 0.2,
+        "matter_mode_speeds_squared": [
+          0.6
+        ],
+        "maximum_squared_speed_deficit": 0.8,
+        "mixing_norm": 0.7871958685061722,
+        "smallest_kinetic_eigenvalue": 0.7797681864513419,
+        "smallest_gradient_eigenvalue": 0.215265764597169,
+        "generalized_spectrum_error": 1.1102230246251565e-16
+      }
+    ],
+    "combined": {
+      "species_count": 2,
+      "D_i": [
+        0.2,
+        0.4
+      ],
+      "q_i": [
+        0.2,
+        0.4
+      ],
+      "r_i": [
+        0.5999999999999999,
+        0.6
+      ],
+      "total_R": 1.1999999999999997,
+      "total_S": 1.7499999999999998,
+      "matter_fractions": [
+        0.6,
+        0.3
+      ],
+      "total_matter_fraction": 0.8999999999999999,
+      "phi_mode_speed_squared": -0.07272727272727263,
+      "matter_mode_speeds_squared": [
+        0.8,
+        0.6
+      ],
+      "maximum_squared_speed_deficit": 1.0727272727272725,
+      "mixing_norm": 0.9423404335446726,
+      "smallest_kinetic_eigenvalue": 0.7870689077600943,
+      "smallest_gradient_eigenvalue": -0.11238898053230101,
+      "generalized_spectrum_error": 2.220446049250313e-16
+    },
+    "comparison": "Same local phi velocity, couplings and corresponding matter velocities. Each separate theory adjusts its own Friedmann H; no common full background is claimed."
+  },
+  "aggregate_stability_boundary": {
+    "species_count": 2,
+    "D_i": [
+      0.2,
+      0.4
+    ],
+    "q_i": [
+      0.2,
+      0.4
+    ],
+    "r_i": [
+      0.4,
+      0.6
+    ],
+    "total_R": 1.0,
+    "total_S": 1.5,
+    "matter_fractions": [
+      0.5,
+      0.37499999999999994
+    ],
+    "total_matter_fraction": 0.875,
+    "phi_mode_speed_squared": 0.0,
+    "matter_mode_speeds_squared": [
+      0.8,
+      0.6
+    ],
+    "maximum_squared_speed_deficit": 1.0,
+    "mixing_norm": 0.8936233958403115,
+    "smallest_kinetic_eigenvalue": 0.7853481734415874,
+    "smallest_gradient_eigenvalue": -1.7198687523433456e-16,
+    "generalized_spectrum_error": 1.1102230246251565e-16
+  },
+  "controlled_distinct_coupling_limit": [
+    {
+      "species_count": 3,
+      "D_i": [
+        0.12,
+        0.27,
+        0.4
+      ],
+      "q_i": [
+        0.12,
+        0.27,
+        0.4
+      ],
+      "r_i": [
+        0.014400000000000001,
+        0.048600000000000004,
+        0.08
+      ],
+      "total_R": 0.14300000000000002,
+      "total_S": 0.21627231216272313,
+      "matter_fractions": [
+        0.12000000000000001,
+        0.18000000000000002,
+        0.2
+      ],
+      "total_matter_fraction": 0.5,
+      "phi_mode_speed_squared": 0.7046119453924914,
+      "matter_mode_speeds_squared": [
+        0.88,
+        0.73,
+        0.6
+      ],
+      "maximum_squared_speed_deficit": 0.4,
+      "mixing_norm": 0.3420877544839468,
+      "smallest_kinetic_eigenvalue": 0.8718206607951263,
+      "smallest_gradient_eigenvalue": 0.5892937690803677,
+      "generalized_spectrum_error": 4.440892098500626e-16,
+      "coefficient_operator_error": 0.7452916827042573
+    },
+    {
+      "species_count": 3,
+      "D_i": [
+        0.012,
+        0.027000000000000003,
+        0.04000000000000001
+      ],
+      "q_i": [
+        0.012,
+        0.027000000000000003,
+        0.04000000000000001
+      ],
+      "r_i": [
+        0.0014399999999999999,
+        0.0048600000000000015,
+        0.008000000000000004
+      ],
+      "total_R": 0.014300000000000005,
+      "total_S": 0.014785684465729908,
+      "matter_fractions": [
+        0.11999999999999997,
+        0.18000000000000002,
+        0.20000000000000007
+      ],
+      "total_matter_fraction": 0.5,
+      "phi_mode_speed_squared": 0.971338101324278,
+      "matter_mode_speeds_squared": [
+        0.988,
+        0.973,
+        0.96
+      ],
+      "maximum_squared_speed_deficit": 0.040000000000000036,
+      "mixing_norm": 0.030887260281816296,
+      "smallest_kinetic_eigenvalue": 0.985247198763653,
+      "smallest_gradient_eigenvalue": 0.9537640363425232,
+      "generalized_spectrum_error": 1.1102230246251565e-16,
+      "coefficient_operator_error": 0.04867367908255477
+    },
+    {
+      "species_count": 3,
+      "D_i": [
+        0.0012,
+        0.0027,
+        0.004
+      ],
+      "q_i": [
+        0.0012,
+        0.0027,
+        0.004
+      ],
+      "r_i": [
+        0.00014399999999999998,
+        0.00048599999999999994,
+        0.0008
+      ],
+      "total_R": 0.0014299999999999998,
+      "total_S": 0.0014347016115465894,
+      "matter_fractions": [
+        0.12000000000000001,
+        0.18,
+        0.2
+      ],
+      "total_matter_fraction": 0.5,
+      "phi_mode_speed_squared": 0.9971394024923077,
+      "matter_mode_speeds_squared": [
+        0.9988,
+        0.9973,
+        0.996
+      ],
+      "maximum_squared_speed_deficit": 0.0040000000000000036,
+      "mixing_norm": 0.0030637552457555557,
+      "smallest_kinetic_eigenvalue": 0.9985099239572064,
+      "smallest_gradient_eigenvalue": 0.9953211124104223,
+      "generalized_spectrum_error": 2.220446049250313e-16,
+      "coefficient_operator_error": 0.004702700403252889
+    },
+    {
+      "species_count": 3,
+      "D_i": [
+        0.00012,
+        0.00027,
+        0.0004
+      ],
+      "q_i": [
+        0.00012,
+        0.00027,
+        0.0004
+      ],
+      "r_i": [
+        1.4399999999999998e-05,
+        4.86e-05,
+        8.000000000000002e-05
+      ],
+      "total_R": 0.000143,
+      "total_S": 0.0001430468665564038,
+      "matter_fractions": [
+        0.11999999999999998,
+        0.18000000000000002,
+        0.2
+      ],
+      "total_matter_fraction": 0.5,
+      "phi_mode_speed_squared": 0.9997139940456992,
+      "matter_mode_speeds_squared": [
+        0.99988,
+        0.99973,
+        0.9996
+      ],
+      "maximum_squared_speed_deficit": 0.00039999999999995595,
+      "mixing_norm": 0.00030613159731976625,
+      "smallest_kinetic_eigenvalue": 0.9998508474137933,
+      "smallest_gradient_eigenvalue": 0.9995315552204423,
+      "generalized_spectrum_error": 3.3306690738754696e-16,
+      "coefficient_operator_error": 0.0004686823646372579
+    }
+  ],
+  "metric_limit_without_aggregate_occupation_control": [
+    {
+      "species_count": 2,
+      "D_i": [
+        0.01,
+        0.02
+      ],
+      "q_i": [
+        0.01,
+        0.02
+      ],
+      "r_i": [
+        0.19999999999999996,
+        0.3
+      ],
+      "total_R": 0.49999999999999994,
+      "total_S": 0.5081426509997938,
+      "matter_fractions": [
+        0.5633802816901408,
+        0.4225352112676056
+      ],
+      "total_matter_fraction": 0.9859154929577464,
+      "phi_mode_speed_squared": 0.3315336249316566,
+      "matter_mode_speeds_squared": [
+        0.99,
+        0.98
+      ],
+      "maximum_squared_speed_deficit": 0.6684663750683434,
+      "mixing_norm": 0.12705109915173257,
+      "smallest_kinetic_eigenvalue": 0.9786110065329806,
+      "smallest_gradient_eigenvalue": 0.4846892979922543,
+      "generalized_spectrum_error": 4.440892098500626e-16
+    },
+    {
+      "species_count": 2,
+      "D_i": [
+        0.001,
+        0.002
+      ],
+      "q_i": [
+        0.001,
+        0.002
+      ],
+      "r_i": [
+        0.2,
+        0.30000000000000004
+      ],
+      "total_R": 0.5,
+      "total_S": 0.5008014026050098,
+      "matter_fractions": [
+        0.5706134094151213,
+        0.42796005706134094
+      ],
+      "total_matter_fraction": 0.9985734664764623,
+      "phi_mode_speed_squared": 0.3331553389623218,
+      "matter_mode_speeds_squared": [
+        0.999,
+        0.998
+      ],
+      "maximum_squared_speed_deficit": 0.6668446610376781,
+      "mixing_norm": 0.04001752057699688,
+      "smallest_kinetic_eigenvalue": 0.9976819759916338,
+      "smallest_gradient_eigenvalue": 0.49840738057767475,
+      "generalized_spectrum_error": 2.220446049250313e-16
+    },
+    {
+      "species_count": 2,
+      "D_i": [
+        0.0001,
+        0.0002
+      ],
+      "q_i": [
+        0.0001,
+        0.0002
+      ],
+      "r_i": [
+        0.19999999999999998,
+        0.3
+      ],
+      "total_R": 0.5,
+      "total_S": 0.5000800140026005,
+      "matter_fractions": [
+        0.571346950435652,
+        0.428510212826739
+      ],
+      "total_matter_fraction": 0.9998571632623909,
+      "phi_mode_speed_squared": 0.33331555339229607,
+      "matter_mode_speeds_squared": [
+        0.9999,
+        0.9998
+      ],
+      "maximum_squared_speed_deficit": 0.666684446607704,
+      "mixing_norm": 0.012649664104248483,
+      "smallest_kinetic_eigenvalue": 0.9997661503475308,
+      "smallest_gradient_eigenvalue": 0.4998400743400548,
+      "generalized_spectrum_error": 7.771561172376096e-16
+    }
+  ],
+  "zero_occupation_with_distinct_matter_cones": {
+    "species_count": 2,
+    "D_i": [
+      0.2,
+      0.4
+    ],
+    "q_i": [
+      0.2,
+      0.4
+    ],
+    "r_i": [
+      0.0,
+      0.0
+    ],
+    "total_R": 0.0,
+    "total_S": 0.0,
+    "matter_fractions": [
+      0.0,
+      0.0
+    ],
+    "total_matter_fraction": 0.0,
+    "phi_mode_speed_squared": 1.0,
+    "matter_mode_speeds_squared": [
+      0.8,
+      0.6
+    ],
+    "maximum_squared_speed_deficit": 0.4,
+    "mixing_norm": 0.0,
+    "smallest_kinetic_eigenvalue": 1.0,
+    "smallest_gradient_eigenvalue": 0.7745966692414834,
+    "generalized_spectrum_error": 1.1102230246251565e-16
+  },
+  "shared_scalar_cone_is_not_gravity_cone": {
+    "species_count": 4,
+    "D_i": [
+      0.3,
+      0.3,
+      0.3,
+      0.3
+    ],
+    "q_i": [
+      0.3,
+      0.3,
+      0.3,
+      0.3
+    ],
+    "r_i": [
+      0.0375,
+      0.0375,
+      0.0375,
+      0.0375
+    ],
+    "total_R": 0.15,
+    "total_S": 0.2142857142857143,
+    "matter_fractions": [
+      0.125,
+      0.125,
+      0.125,
+      0.125
+    ],
+    "total_matter_fraction": 0.5,
+    "phi_mode_speed_squared": 0.7,
+    "matter_mode_speeds_squared": [
+      0.7,
+      0.7,
+      0.7,
+      0.7
+    ],
+    "maximum_squared_speed_deficit": 0.30000000000000004,
+    "mixing_norm": 0.327979534178728,
+    "smallest_kinetic_eigenvalue": 0.8701433953376654,
+    "smallest_gradient_eigenvalue": 0.6091003767363655,
+    "generalized_spectrum_error": 6.661338147750939e-16
+  },
+  "next_interface": "Derive closed multi-species background equations and prove or refute an invariant region controlling both Q and the total occupation F, without requiring all D_i to be identical. This report itself supplies only local principal conditions.",
+  "checks": {
+    "run": 14,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

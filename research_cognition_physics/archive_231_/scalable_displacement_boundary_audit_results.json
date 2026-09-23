@@ -1,0 +1,101 @@
+{
+  "round": 385,
+  "scope": {
+    "conditional_theorem": "A Hausdorff topological displacement group with a proper continuous positive homogeneous budget and a jointly continuous positive-real automorphism scaling has finite-dimensional simply connected nilpotent Lie structure. The max of forward and inverse budgets has a complete spherical unit boundary with inverse as a free involution.",
+    "redundancies_removed": "Proper budget implies local compactness; homogeneity and properness imply contraction, hence the scaling paths imply connectedness. These are not separate axioms.",
+    "extra_central_result": "If actual budget-preserving redirections are also displacement-group automorphisms and every unit-boundary orbit is dense, the nilpotent group is abelian. With the separately required qubit interfaces of rounds 383-384 this gives an R^3 displacement group conditionally.",
+    "inputs": [
+      "Positions are identified homeomorphically with a free transitive displacement torsor",
+      "Exact group composition and common replay at each basepoint",
+      "Exact positive-real scaling by group automorphisms",
+      "Continuous proper budget with its declared operational meaning",
+      "Direction/readout contracts are still separate from these assumptions"
+    ],
+    "not_claimed": [
+      "Derivation of those inputs from FUCP",
+      "A finite sample proof of a structure theorem",
+      "Every positive homogeneous budget is a metric or travel time",
+      "Finite displacements in a curved spacetime obey this exact homogeneous contract",
+      "A derivation of GR or a unique natural Hamiltonian"
+    ]
+  },
+  "actual_horizontal_protocol": {
+    "model": "Heisenberg law with central increment (x*y'-y*x')/2",
+    "running_cost": "sqrt(u_x^2+u_y^2)+beta*u_x, beta=0.3",
+    "endpoint": [
+      0.8,
+      -0.3,
+      0.2
+    ],
+    "cc_distance": 1.141773849610335,
+    "optimal_forward_cost": 1.381773849610335,
+    "optimal_inverse_cost": 0.9017738496103349,
+    "two_way_max_budget": 1.381773849610335,
+    "pulse_crosschecks": [
+      {
+        "pulses": 160,
+        "endpoint_error": 1.1255711721791782e-05,
+        "cost": 1.3817764111847792,
+        "cost_minus_optimal_to_actual_endpoint": 1.2186015944326556e-05
+      },
+      {
+        "pulses": 320,
+        "endpoint_error": 2.8139133928477535e-06,
+        "cost": 1.381774490000358,
+        "cost_minus_optimal_to_actual_endpoint": 3.0465610458829673e-06
+      }
+    ],
+    "vertical_unit_budget_coordinate": 0.07957747154594767,
+    "sphere_topology_does_not_determine_metric_volume_exponent": 4
+  },
+  "given_scaling_need_not_be_a_pure_grading": {
+    "generator": [
+      [
+        1.0,
+        4.0
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ],
+    "lyapunov_P": [
+      [
+        0.5,
+        -1.0
+      ],
+      [
+        -1.0,
+        4.5
+      ]
+    ],
+    "lyapunov_equation_residual": 0.0,
+    "euclidean_squared_norm_initial_derivative": -2.0,
+    "second_euclidean_unit_sphere_crossing_t": 0.31442499470220875,
+    "scope": "A separate additive R^2 Jordan-flow calibration, not the CC scaling of the Heisenberg protocol."
+  },
+  "budget_preservation_is_not_composition_preservation": {
+    "radial_SO3_redirection_product_defect": 1.8208391543936255,
+    "moves_central_direction_to_noncentral_direction": true,
+    "scope": "The exact radial conjugacy is a homeomorphism action preserving budgets. Calling it a displacement automorphism would add a false property."
+  },
+  "circle_control_counterexample": {
+    "unscaled_0_and_2pi_have_same_endpoint": true,
+    "halved_control_endpoint_chord_difference": 2.0,
+    "scope": "Small continuous pulse amplitudes do not by themselves define a well-defined scaling on endpoint equivalence classes."
+  },
+  "primary_sources": [
+    "https://arxiv.org/pdf/0909.4565",
+    "https://arxiv.org/pdf/1512.04936",
+    "https://arxiv.org/pdf/1412.1797"
+  ],
+  "checks": {
+    "run": 12,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

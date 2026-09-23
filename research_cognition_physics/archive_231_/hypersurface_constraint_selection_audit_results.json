@@ -1,0 +1,278 @@
+{
+  "round": 351,
+  "scope": {
+    "kind": "conditional pure-metric classical constraint theorem",
+    "selection": "Strong off-shell arbitrary-local-lapse Lorentzian HDA selects canonical lambda=1/(d-1) in the specified quadratic-momentum, scalar-R ansatz.",
+    "added_inputs": [
+      "smooth positive spatial metric in given d>=2",
+      "sole canonical variables q_ij and pi^ij",
+      "local quadratic ultralocal kinetic ansatz",
+      "scalar-curvature potential and spatial constant Lambda",
+      "given Lorentzian deformation algebra, arbitrary lapse",
+      "closed slice or vanishing boundary terms"
+    ],
+    "not_proved": [
+      "FUCP implies those inputs",
+      "all alternatives inconsistent",
+      "selection of d=3 or Lambda or Newton constant",
+      "general full HKT uniqueness theorem",
+      "quantum constraint closure",
+      "IR emergence of GR"
+    ],
+    "exceptions": [
+      "added CMC/trace constraints and lapse fixing",
+      "projectable lapse",
+      "ultralocal/zero-product branch",
+      "opposite-sign Euclidean algebra",
+      "singular Legendre maps and d=1",
+      "extra canonical fields such as the f(R) scalar"
+    ]
+  },
+  "normalization": "mean over a 2*pi periodic coordinate; transverse torus volume divided out in every functional",
+  "witness_is_off_shell": true,
+  "witness_rows": [
+    {
+      "d": 2,
+      "canonical_lambda": 0.0,
+      "expected_trace_anomaly": 1.0,
+      "momentum_term": -0.0,
+      "anomaly": 0.9999999999999999,
+      "bracket": 0.9999999999999999,
+      "scale_product": 1.0,
+      "full_gradient_bracket": 1.0
+    },
+    {
+      "d": 2,
+      "canonical_lambda": 0.5,
+      "expected_trace_anomaly": 0.5,
+      "momentum_term": -0.0,
+      "anomaly": 0.49999999999999994,
+      "bracket": 0.49999999999999994,
+      "scale_product": 1.0,
+      "full_gradient_bracket": 0.5
+    },
+    {
+      "d": 2,
+      "canonical_lambda": 1.0,
+      "expected_trace_anomaly": 0.0,
+      "momentum_term": -0.0,
+      "anomaly": 0.0,
+      "bracket": 0.0,
+      "scale_product": 1.0,
+      "full_gradient_bracket": 0.0
+    },
+    {
+      "d": 2,
+      "canonical_lambda": 1.0,
+      "expected_trace_anomaly": 0.0,
+      "momentum_term": -0.0,
+      "anomaly": 0.0,
+      "bracket": 0.0,
+      "scale_product": 1.0,
+      "full_gradient_bracket": 0.0
+    },
+    {
+      "d": 3,
+      "canonical_lambda": 0.0,
+      "expected_trace_anomaly": 1.0,
+      "momentum_term": -0.0,
+      "anomaly": 0.9999999999999999,
+      "bracket": 0.9999999999999999,
+      "scale_product": 1.0,
+      "full_gradient_bracket": 1.0
+    },
+    {
+      "d": 3,
+      "canonical_lambda": 0.3333333333333333,
+      "expected_trace_anomaly": 0.33333333333333337,
+      "momentum_term": -0.0,
+      "anomaly": 0.3333333333333333,
+      "bracket": 0.3333333333333333,
+      "scale_product": 1.0,
+      "full_gradient_bracket": 0.3333333333333333
+    },
+    {
+      "d": 3,
+      "canonical_lambda": 0.5,
+      "expected_trace_anomaly": 0.0,
+      "momentum_term": -0.0,
+      "anomaly": 0.0,
+      "bracket": 0.0,
+      "scale_product": 1.0,
+      "full_gradient_bracket": -2.1721312899389278e-17
+    },
+    {
+      "d": 3,
+      "canonical_lambda": 1.0,
+      "expected_trace_anomaly": -1.0,
+      "momentum_term": -0.0,
+      "anomaly": -0.9999999999999999,
+      "bracket": -0.9999999999999999,
+      "scale_product": 1.0,
+      "full_gradient_bracket": -1.0
+    },
+    {
+      "d": 4,
+      "canonical_lambda": 0.0,
+      "expected_trace_anomaly": 1.0,
+      "momentum_term": -0.0,
+      "anomaly": 0.9999999999999999,
+      "bracket": 0.9999999999999999,
+      "scale_product": 1.0,
+      "full_gradient_bracket": 1.0
+    },
+    {
+      "d": 4,
+      "canonical_lambda": 0.25,
+      "expected_trace_anomaly": 0.25,
+      "momentum_term": -0.0,
+      "anomaly": 0.24999999999999997,
+      "bracket": 0.24999999999999997,
+      "scale_product": 1.0,
+      "full_gradient_bracket": 0.24999999999999997
+    },
+    {
+      "d": 4,
+      "canonical_lambda": 0.3333333333333333,
+      "expected_trace_anomaly": 0.0,
+      "momentum_term": -0.0,
+      "anomaly": 0.0,
+      "bracket": 0.0,
+      "scale_product": 1.0,
+      "full_gradient_bracket": 6.200958800259282e-17
+    },
+    {
+      "d": 4,
+      "canonical_lambda": 1.0,
+      "expected_trace_anomaly": -2.0,
+      "momentum_term": -0.0,
+      "anomaly": -1.9999999999999998,
+      "bracket": -1.9999999999999998,
+      "scale_product": 1.0,
+      "full_gradient_bracket": -2.0
+    }
+  ],
+  "nonlinear_action_directional_difference": [
+    {
+      "step": 0.002,
+      "action_bracket": -0.18404901287966471,
+      "analytic_bracket": -0.1840489,
+      "absolute_error": 1.1287966472650623e-07,
+      "richardson_bracket": -0.184048899999973,
+      "richardson_error": 2.6978419498391304e-14
+    },
+    {
+      "step": 0.001,
+      "action_bracket": -0.18404892821989594,
+      "analytic_bracket": -0.1840489,
+      "absolute_error": 2.8219895947811935e-08,
+      "richardson_bracket": -0.18404889999998805,
+      "richardson_error": 1.1934897514720433e-14
+    },
+    {
+      "step": 0.0005,
+      "action_bracket": -0.18404890705496502,
+      "analytic_bracket": -0.1840489,
+      "absolute_error": 7.054965028840954e-09,
+      "richardson_bracket": -0.1840488999999603,
+      "richardson_error": 3.9690473130349346e-14
+    }
+  ],
+  "coefficient_sign_and_ultralocal_rows": [
+    {
+      "kinetic_scale": 1.0,
+      "curvature_scale": 1.0,
+      "momentum_term": -0.06695499999999999,
+      "anomaly": -0.0,
+      "bracket": -0.06695499999999999,
+      "scale_product": 1.0,
+      "full_gradient_bracket": -0.06695499999999997
+    },
+    {
+      "kinetic_scale": 2.0,
+      "curvature_scale": 0.5,
+      "momentum_term": -0.06695499999999999,
+      "anomaly": -0.0,
+      "bracket": -0.06695499999999999,
+      "scale_product": 1.0,
+      "full_gradient_bracket": -0.06695499999999997
+    },
+    {
+      "kinetic_scale": 1.0,
+      "curvature_scale": -1.0,
+      "momentum_term": -0.06695499999999999,
+      "anomaly": -0.0,
+      "bracket": 0.06695499999999999,
+      "scale_product": -1.0,
+      "full_gradient_bracket": 0.06695499999999997
+    },
+    {
+      "kinetic_scale": 1.0,
+      "curvature_scale": 0.0,
+      "momentum_term": -0.06695499999999999,
+      "anomaly": -0.0,
+      "bracket": -0.0,
+      "scale_product": 0.0,
+      "full_gradient_bracket": -1.0119220276531375e-18
+    },
+    {
+      "kinetic_scale": 0.0,
+      "curvature_scale": 1.0,
+      "momentum_term": -0.06695499999999999,
+      "anomaly": -0.0,
+      "bracket": -0.0,
+      "scale_product": 0.0,
+      "full_gradient_bracket": 0.0
+    }
+  ],
+  "cosmological_constant_rows": [
+    {
+      "Lambda": -3.0,
+      "bracket": -0.066955
+    },
+    {
+      "Lambda": 0.0,
+      "bracket": -0.06695499999999997
+    },
+    {
+      "Lambda": 0.7,
+      "bracket": -0.06695499999999997
+    },
+    {
+      "Lambda": 12.0,
+      "bracket": -0.066955
+    }
+  ],
+  "lambda_convention": [
+    {
+      "d": 2,
+      "Lagrangian_lambda": 1.0,
+      "canonical_lambda": 1.0
+    },
+    {
+      "d": 3,
+      "Lagrangian_lambda": 1.0,
+      "canonical_lambda": 0.5
+    },
+    {
+      "d": 4,
+      "Lagrangian_lambda": 1.0,
+      "canonical_lambda": 0.3333333333333333
+    }
+  ],
+  "sources": [
+    "https://doi.org/10.1016/0003-4916(73)90096-1",
+    "https://doi.org/10.1016/0003-4916(76)90112-3",
+    "https://arxiv.org/html/1407.1259",
+    "https://arxiv.org/html/1004.0055"
+  ],
+  "checks": {
+    "run": 13,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

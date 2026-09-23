@@ -1,0 +1,165 @@
+{
+  "round": 352,
+  "scope": "Conditional continuum scalar ansatz, arbitrary lapse and off-shell common deformation algebra; not a quantum reconstruction, lattice constraint proof, or derivation of GR from FUCP.",
+  "inputs": {
+    "constant_positive_momentum_matrix": [
+      [
+        2.0,
+        0.3
+      ],
+      [
+        0.3,
+        1.0
+      ]
+    ],
+    "common_gradient_matrix": [
+      [
+        0.5235602094240838,
+        -0.15706806282722513
+      ],
+      [
+        -0.15706806282722513,
+        1.0471204188481675
+      ]
+    ],
+    "unequal_gradient_matrix": [
+      [
+        1.0,
+        0.2
+      ],
+      [
+        0.2,
+        1.3
+      ]
+    ],
+    "gravity_structure_coefficient": 1.0,
+    "spatial_dimension_selected": false,
+    "potential_selected": false
+  },
+  "cases": [
+    {
+      "case": "common",
+      "bracket": 1.5041945625387927,
+      "matrix_rhs": 1.5041945625387927,
+      "common_rhs": 1.5041945625387927,
+      "identity_error": 0.0,
+      "common_closure_residual": 0.0,
+      "squared_speeds": [
+        0.9999999999999994,
+        0.9999999999999999
+      ]
+    },
+    {
+      "case": "different",
+      "bracket": 2.8934869445688656,
+      "matrix_rhs": 2.8934869445688656,
+      "common_rhs": 1.5041945625387927,
+      "identity_error": 0.0,
+      "common_closure_residual": 1.3892923820300729,
+      "squared_speeds": [
+        0.9906252715030915,
+        2.4293747284969074
+      ]
+    }
+  ],
+  "entrywise_necessity_witness": {
+    "pi_times_defect": [
+      [
+        3.330088212805181,
+        2.4818581963359367
+      ],
+      [
+        1.5707963267948966,
+        1.1309733552923258
+      ]
+    ],
+    "quadrature": [
+      [
+        3.3300882128051814,
+        2.481858196335937
+      ],
+      [
+        1.570796326794897,
+        1.130973355292326
+      ]
+    ]
+  },
+  "arbitrary_nonderivative_potentials": [
+    {
+      "masses_squared": [
+        0.1,
+        0.9
+      ],
+      "quartic": -3.0,
+      "bracket": 1.5041945625387927
+    },
+    {
+      "masses_squared": [
+        0.1,
+        0.9
+      ],
+      "quartic": 0.0,
+      "bracket": 1.5041945625387927
+    },
+    {
+      "masses_squared": [
+        0.1,
+        0.9
+      ],
+      "quartic": 2.0,
+      "bracket": 1.5041945625387927
+    },
+    {
+      "masses_squared": [
+        4.0,
+        7.0
+      ],
+      "quartic": -3.0,
+      "bracket": 1.5041945625387927
+    },
+    {
+      "masses_squared": [
+        4.0,
+        7.0
+      ],
+      "quartic": 0.0,
+      "bracket": 1.5041945625387934
+    },
+    {
+      "masses_squared": [
+        4.0,
+        7.0
+      ],
+      "quartic": 2.0,
+      "bracket": 1.5041945625387934
+    }
+  ],
+  "homogeneous_probe": {
+    "gradient": 0,
+    "bracket": 0,
+    "distinguishes_speeds": false
+  },
+  "outside_quadratic_ansatz": {
+    "lagrangian": "P(X)=X+alpha X^2",
+    "alpha": 0.5,
+    "timelike_X": 0.4,
+    "time_kinetic_coefficient": 2.2,
+    "spatial_kinetic_coefficient": 1.4,
+    "sound_speed_squared": 0.6363636363636362,
+    "deformation_bracket_coefficient": 1.0,
+    "closure_alone_implies_common_characteristics": false
+  },
+  "sources": [
+    "https://arxiv.org/html/gr-qc/0012089",
+    "https://arxiv.org/html/hep-th/9904176"
+  ],
+  "checks": {
+    "run": 16,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

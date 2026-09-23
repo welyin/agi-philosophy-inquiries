@@ -1,0 +1,129 @@
+{
+  "round": 394,
+  "scope": "Exact full-algebra transport W from round 393 on an infinite chain; uniformly bounded finite-range time-independent generators only. Not the full computing update, a finite-window approximation, or a prepared-clock code space.",
+  "squared_content_map": {
+    "t": [
+      "t",
+      2
+    ],
+    "a": [
+      "a",
+      -1
+    ],
+    "b": [
+      "b",
+      -1
+    ],
+    "s": [
+      "s",
+      -2
+    ],
+    "e": [
+      "e",
+      2
+    ]
+  },
+  "velocity_group_dimensions": {
+    "right": 6,
+    "fast_left": 3,
+    "slow_left": 4
+  },
+  "squared_indices": {
+    "right": "36",
+    "fast_left": "1/9",
+    "slow_left": "1/4"
+  },
+  "total_squared_index": "1",
+  "support_orbits": [
+    {
+      "stationary_clock_included": false,
+      "total": 511,
+      "pure_group": 21,
+      "mixed_group": 490,
+      "latest_exit": 5,
+      "initial_shrink_example": [
+        [
+          "right",
+          -1
+        ],
+        [
+          "slow_left",
+          1
+        ]
+      ]
+    },
+    {
+      "stationary_clock_included": true,
+      "total": 4095,
+      "pure_group": 28,
+      "mixed_group": 4067,
+      "latest_exit": 5,
+      "initial_shrink_example": [
+        [
+          "right",
+          -1
+        ],
+        [
+          "slow_left",
+          1
+        ],
+        [
+          "clock",
+          0
+        ],
+        [
+          "clock",
+          1
+        ]
+      ]
+    }
+  ],
+  "finite_ring_local_commutants": [
+    {
+      "cells": 5,
+      "nonidentity_local_words": 1200,
+      "invariant_local_dimension": 24,
+      "surviving_words": 120,
+      "rejected_local_words": 1080,
+      "mixed_surviving_words": 0
+    },
+    {
+      "cells": 7,
+      "nonidentity_local_words": 1680,
+      "invariant_local_dimension": 24,
+      "surviving_words": 168,
+      "rejected_local_words": 1512,
+      "mixed_surviving_words": 0
+    }
+  ],
+  "finite_log": {
+    "cells": 3,
+    "hilbert_dimension": 64,
+    "hermiticity_error": 1.4289036705781437e-14,
+    "exponential_error": 1.3771185755222097e-14,
+    "commutator_error": 0.0,
+    "full_three_cell_coefficient": 0.15114994701951814,
+    "full_three_cell_witness": [
+      0,
+      1,
+      0,
+      2,
+      0,
+      3
+    ],
+    "finite_log_does_not_prove_infinite_local_generator": true
+  },
+  "static_finite_range_transport_generator_excluded_analytically": true,
+  "prepared_returning_clock_excluded": false,
+  "full_computing_rule_static_generator_excluded": false,
+  "spatial_dimension_selected": false,
+  "checks": {
+    "run": 5,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

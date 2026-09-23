@@ -1,0 +1,115 @@
+{
+  "round": 277,
+  "scope": "Constructive fixed-ingress protocol with explicit role split, channels, control and memory; not autonomous dimension selection.",
+  "comparisons": [
+    {
+      "policy": "none",
+      "nodes": 9,
+      "growth": 0,
+      "retreat_delivered": 249,
+      "anchor_delivered": 249,
+      "retreat_pending": 7,
+      "anchor_pending": 7,
+      "retreat_owner_distance": 8,
+      "anchor_owner_distance": 8,
+      "anchor_frontier_distance": 8,
+      "anchor_payload_edge_uses": 2020,
+      "control_bit_edge_uses": 0,
+      "anchor_output_archive_qubits": 249
+    },
+    {
+      "policy": "every_slot",
+      "nodes": 265,
+      "growth": 256,
+      "retreat_delivered": 0,
+      "anchor_delivered": 249,
+      "retreat_pending": 256,
+      "anchor_pending": 7,
+      "retreat_owner_distance": 264,
+      "anchor_owner_distance": 8,
+      "anchor_frontier_distance": 264,
+      "anchor_payload_edge_uses": 2020,
+      "control_bit_edge_uses": 256,
+      "anchor_output_archive_qubits": 249
+    },
+    {
+      "policy": "pause_every_2",
+      "nodes": 137,
+      "growth": 128,
+      "retreat_delivered": 121,
+      "anchor_delivered": 249,
+      "retreat_pending": 135,
+      "anchor_pending": 7,
+      "retreat_owner_distance": 136,
+      "anchor_owner_distance": 8,
+      "anchor_frontier_distance": 136,
+      "anchor_payload_edge_uses": 2020,
+      "control_bit_edge_uses": 128,
+      "anchor_output_archive_qubits": 249
+    },
+    {
+      "policy": "pause_every_4",
+      "nodes": 201,
+      "growth": 192,
+      "retreat_delivered": 57,
+      "anchor_delivered": 249,
+      "retreat_pending": 199,
+      "anchor_pending": 7,
+      "retreat_owner_distance": 200,
+      "anchor_owner_distance": 8,
+      "anchor_frontier_distance": 200,
+      "anchor_payload_edge_uses": 2020,
+      "control_bit_edge_uses": 192,
+      "anchor_output_archive_qubits": 249
+    },
+    {
+      "policy": "pause_at_squares",
+      "nodes": 249,
+      "growth": 240,
+      "retreat_delivered": 9,
+      "anchor_delivered": 249,
+      "retreat_pending": 247,
+      "anchor_pending": 7,
+      "retreat_owner_distance": 248,
+      "anchor_owner_distance": 8,
+      "anchor_frontier_distance": 248,
+      "anchor_payload_edge_uses": 2020,
+      "control_bit_edge_uses": 240,
+      "anchor_output_archive_qubits": 249
+    }
+  ],
+  "quantum_check": {
+    "joint_reference_fidelity": 0.9999999999999996,
+    "independent_input_qubits": 2,
+    "preserved_old_receiver_qubits": 1,
+    "relay_payload_buffers": 2,
+    "output_archive_qubits": 2,
+    "new_blank_tip_registers": 3,
+    "payload_edge_uses": 4,
+    "control_bit_edge_uses": 3,
+    "last_delivery_slot": 3,
+    "external_reference_qubits": 3,
+    "simulated_registers": 13
+  },
+  "enumeration": {
+    "growth_bits": 6,
+    "arrival_bits": 6,
+    "distances": [
+      1,
+      2,
+      4
+    ],
+    "histories": 12288
+  },
+  "formula": "B(T)=A(max(0,T-d+1)); tau_s=s+d-1; Q(T)<=d-1",
+  "limitation": "Delivery is to the retained logical inbox, not every new cell or the growing frontier.",
+  "checks": {
+    "run": 9,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

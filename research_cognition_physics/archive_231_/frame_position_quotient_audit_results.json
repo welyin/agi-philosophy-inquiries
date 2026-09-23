@@ -1,0 +1,117 @@
+{
+  "round": 378,
+  "scope": "Given SO(4) oriented frames over a unit S^3 with the specified Levi-Civita horizontal control, calibrated position effects and frame-dependent relabelling. Horizontal nonintegrability is compatible with a three-dimensional position quotient. Neither physical dimension nor an autonomous quantum dynamics is derived.",
+  "dimensions": {
+    "configuration": 6,
+    "vertical_fiber": 3,
+    "horizontal_rank": 3,
+    "position": 3,
+    "bracket_rank": 6
+  },
+  "triangle": {
+    "vertices": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        -1.1102230246251564e-16,
+        1.1102230246251565e-16,
+        0.0,
+        1.0
+      ]
+    ],
+    "position_return_error": 1.570092458683775e-16,
+    "final_frame": [
+      [
+        1.1102230246251565e-16,
+        -1.0,
+        0.0,
+        -1.1102230246251564e-16
+      ],
+      [
+        1.0,
+        1.1102230246251565e-16,
+        0.0,
+        1.1102230246251565e-16
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        -1.1102230246251564e-16,
+        -1.1102230246251565e-16,
+        0.0,
+        1.0
+      ]
+    ],
+    "frame_rotation_radians": 1.5707963267948966,
+    "length": 4.71238898038469,
+    "all_four_position_effect_error": 5.551115123125783e-17,
+    "orientation_effect_initial": 1.0,
+    "orientation_effect_final": 0.5,
+    "rk4_full_frame_error": 1.16375640398874e-08
+  },
+  "control_label_audit": {
+    "subsequent_pulse_length": 0.4,
+    "uncorrected_endpoint_chord_gap": 0.5507207011297421,
+    "uncorrected_marker_probability_gap": 0.19470917115432534,
+    "compensated_endpoint_error": 1.5093943842109822e-16,
+    "relabelling": "Q -> Q diag(R,1), u -> R^T u",
+    "same_untranslated_body_label_is_projectable": false
+  },
+  "full_configuration_synthesis": {
+    "pulses": 10,
+    "length": 13.903726302898313,
+    "endpoint_residual": 4.670499334398404e-16,
+    "general_bound": "At most 10 prescribed segments; length <= 7*pi."
+  },
+  "projectable_lift": {
+    "bracket_projection_error": 4.679511028695506e-16,
+    "criterion": "D intersect V = 0 and d pi(D) = TM; D need not be involutive."
+  },
+  "resource_scope": {
+    "inputs": [
+      "unit sphere geometry",
+      "frame and marker calibration",
+      "signed horizontal control",
+      "pulse clock and scheduling",
+      "reliable orientation-dependent label conversion"
+    ],
+    "not_provided": [
+      "autonomous controller",
+      "energy budget",
+      "finite-noise position certification",
+      "dimension selection"
+    ]
+  },
+  "sources": [
+    "https://arxiv.org/pdf/1610.07359"
+  ],
+  "checks": {
+    "run": 14,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

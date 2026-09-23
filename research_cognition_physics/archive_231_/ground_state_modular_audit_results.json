@@ -1,0 +1,69 @@
+{
+  "round": 307,
+  "scope": "Explicit 1D free-fermion branch; ground-state partial trace, not a derived spacetime or physical vacuum selection principle.",
+  "inputs": [
+    "canonical anticommutation",
+    "nearest-neighbour hopping -1/2",
+    "half-filled ground state",
+    "specified one-dimensional region and boundary"
+  ],
+  "small_fock_calibration": {
+    "chain_sites": 8,
+    "prefix_sites": 3,
+    "ground_energy": -2.379385241571817,
+    "norm_error": 1.3322676295501878e-15,
+    "ground_equation_error": 8.172407307875155e-16,
+    "partial_trace_vs_gaussian_fro": 2.0394214982759974e-15,
+    "modular_scalar": 6.505343331238706,
+    "centered_modular_error_fro": 1.1717905656174304e-11,
+    "entropy_fock": 0.7339913295487465,
+    "entropy_correlation": 0.7339913295487457
+  },
+  "infinite_interval_counterexample": {
+    "sites": 8,
+    "long_range_k_1_4": -0.03714083851349411,
+    "uniform_best_beta": 9.744336159552054,
+    "uniform_generator_residual_fro": 5.48992725935887
+  },
+  "finite_environment_convergence": [
+    {
+      "ring_sites": 32,
+      "interval_sites": 8,
+      "correlation_error_fro": 0.009893235465939985,
+      "modular_error_op": 0.4962735761386621
+    },
+    {
+      "ring_sites": 64,
+      "interval_sites": 8,
+      "correlation_error_fro": 0.0024164836556178335,
+      "modular_error_op": 0.1165567949055862
+    },
+    {
+      "ring_sites": 128,
+      "interval_sites": 8,
+      "correlation_error_fro": 0.0006007093123576855,
+      "modular_error_op": 0.02871753312169374
+    },
+    {
+      "ring_sites": 256,
+      "interval_sites": 8,
+      "correlation_error_fro": 0.00014996618928971446,
+      "modular_error_op": 0.007153681662320283
+    }
+  ],
+  "correlation_error_halving_ratios": [
+    4.094062644678031,
+    4.0227171543812625,
+    4.005631637389919
+  ],
+  "full_log_endpoint_policy": "Reject endpoints within 1e-12; no clipping or claimed full matrix beyond resolvable sizes.",
+  "checks": {
+    "run": 10,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

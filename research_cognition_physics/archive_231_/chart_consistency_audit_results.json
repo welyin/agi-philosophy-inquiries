@@ -1,0 +1,114 @@
+{
+  "round": 288,
+  "scope": "Classical map identity and permutation consistency; no Lorentzian geometry, curvature or gauge dynamics derived.",
+  "grounded_partial_triple": {
+    "correct": true,
+    "bridge_not_found": false,
+    "chart_sizes": [
+      7,
+      7,
+      7
+    ],
+    "pair_overlap_sizes": [
+      6,
+      6,
+      6
+    ],
+    "bridge_lengths": [
+      1,
+      1,
+      2
+    ],
+    "triple_positions_checked": 5,
+    "triple_failures": 0,
+    "physical_pair_errors": 0,
+    "physical_map_errors": 0,
+    "edge_traversals": 2596,
+    "marker_read_blocks": 341,
+    "raw_marker_reads": 341,
+    "wrong_read_blocks": 0,
+    "markers": 3,
+    "p": 0.0,
+    "repetitions": 1,
+    "scope": "Map construction, bridge search and pair matching; communication overhead is separate."
+  },
+  "coherent_wrong_matching": {
+    "graph": "C6",
+    "origins": [
+      0,
+      1,
+      2
+    ],
+    "all_rooted_maps_identical": true,
+    "all_cycle_tests_pass": true,
+    "wrong_physical_matches_per_pair": [
+      6,
+      6,
+      6
+    ],
+    "block_eigenvalues_rounded": [
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      3.0,
+      3.0,
+      3.0,
+      3.0,
+      3.0,
+      3.0
+    ],
+    "block_psd": true,
+    "block_rank": 6
+  },
+  "sparse_cycle_counterexample": {
+    "comparison_graph": "C4",
+    "triangle_checks_available": 0,
+    "all_edge_inverse_checks_pass": true,
+    "whole_cycle_permutation": [
+      1,
+      2,
+      0
+    ],
+    "independent_cycle_count": 1,
+    "global_consistency": false
+  },
+  "whole_protocol_confidence": {
+    "radius": 2,
+    "degree_upper": 3,
+    "ball_size_upper": 10,
+    "all_phases_queries_before_first_error_upper": 1230,
+    "p": 0.1,
+    "target_delta": 0.01,
+    "repetitions": 23,
+    "failure_upper_exact_union": 0.0005751194963238281,
+    "failure_upper_exponential": 0.009713681743559355,
+    "good_event_raw_reads_upper": 28290,
+    "conditions": "All three true origins lie in each relevant search ball; fresh independent marker read flips, unique tags, exact ports, stable graph and memories."
+  },
+  "independent_noise_runs": {
+    "trials": 60,
+    "correct_maps_and_matches": 60,
+    "seed_start": 0,
+    "repetitions": 23,
+    "purpose": "Implementation regression; confidence comes from the analytic bound."
+  },
+  "scope_limit": "Full permutation synchronization assumes equal identified domains. Partial charts use only actual common points; missing overlap is not an identity or zero map.",
+  "checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

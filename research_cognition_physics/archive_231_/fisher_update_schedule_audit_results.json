@@ -1,0 +1,124 @@
+{
+  "round": 263,
+  "equal_budget_comparisons": [
+    {
+      "uniform_generation": 1,
+      "triangle_events_each": 1,
+      "shared_counts": {
+        "vertices": 3,
+        "edges": 3,
+        "components": 1,
+        "cycle_rank": 1,
+        "max_degree": 2
+      },
+      "uniform_diameter": 1,
+      "focused_diameter_all_pairs": 1
+    },
+    {
+      "uniform_generation": 2,
+      "triangle_events_each": 4,
+      "shared_counts": {
+        "vertices": 9,
+        "edges": 12,
+        "components": 1,
+        "cycle_rank": 4,
+        "max_degree": 3
+      },
+      "uniform_diameter": 3,
+      "focused_diameter_all_pairs": 4
+    },
+    {
+      "uniform_generation": 3,
+      "triangle_events_each": 13,
+      "shared_counts": {
+        "vertices": 27,
+        "edges": 39,
+        "components": 1,
+        "cycle_rank": 13,
+        "max_degree": 3
+      },
+      "uniform_diameter": 7,
+      "focused_diameter_all_pairs": 13
+    },
+    {
+      "uniform_generation": 4,
+      "triangle_events_each": 40,
+      "shared_counts": {
+        "vertices": 81,
+        "edges": 120,
+        "components": 1,
+        "cycle_rank": 40,
+        "max_degree": 3
+      },
+      "uniform_diameter": 15,
+      "focused_diameter_all_pairs": 40
+    },
+    {
+      "uniform_generation": 5,
+      "triangle_events_each": 121,
+      "shared_counts": {
+        "vertices": 243,
+        "edges": 363,
+        "components": 1,
+        "cycle_rank": 121,
+        "max_degree": 3
+      },
+      "uniform_diameter": 31,
+      "focused_diameter_all_pairs": 121
+    },
+    {
+      "uniform_generation": 6,
+      "triangle_events_each": 364,
+      "shared_counts": {
+        "vertices": 729,
+        "edges": 1092,
+        "components": 1,
+        "cycle_rank": 364,
+        "max_degree": 3
+      },
+      "uniform_diameter": 63,
+      "focused_diameter_all_pairs": 364
+    }
+  ],
+  "focused_root_balls": [
+    {
+      "radius": 1,
+      "vertices": 3
+    },
+    {
+      "radius": 2,
+      "vertices": 5
+    },
+    {
+      "radius": 4,
+      "vertices": 9
+    },
+    {
+      "radius": 8,
+      "vertices": 17
+    },
+    {
+      "radius": 16,
+      "vertices": 33
+    },
+    {
+      "radius": 32,
+      "vertices": 65
+    },
+    {
+      "radius": 64,
+      "vertices": 129
+    }
+  ],
+  "focused_infinite_volume_exponent": 1,
+  "scope": "Pure Fisher triangles, the same single seed and identical vertex/edge/cycle counts yield different large-scale growth under complete generations versus persistent tip selection. The tip schedule is intentionally unfair to older vertices. This refutes schedule-independent dimension from local rule and loop density alone, not universality under a specified fair or quantum stochastic law.",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}

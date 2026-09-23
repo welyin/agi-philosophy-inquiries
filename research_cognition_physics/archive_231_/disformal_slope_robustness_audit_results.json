@@ -1,0 +1,90 @@
+{
+  "round": 338,
+  "scope": "Classical homogeneous zero-potential two-scalar disformal model with D(phi)=0.6 exp(beta phi). A bootstrap proof gives an open interval of slopes and initial matter fractions with stable principal cones approaching the Einstein cone. A beta=10 branch is proved to cross the gradient-stability boundary in finite N while the matter metric remains Lorentzian, with independently verified background evolution. This does not select the coupling from cognition or establish nonlinear, quantum or all-species universality.",
+  "analytic_bootstrap": {
+    "initial_fraction_interval": [
+      0.09,
+      0.1
+    ],
+    "initial_q_upper": 0.4,
+    "slope_offset_interval": [
+      -0.01,
+      0.01
+    ],
+    "beta_interval": [
+      2.44540725987854,
+      2.4535722256878167
+    ],
+    "temporary_fraction_lower": 0.02,
+    "proved_fraction_lower": 0.022193726754744583,
+    "q_log_derivative_bound": "q_prime/q <= -(9/8)*f",
+    "log_fraction_by_q_upper": 3.5,
+    "uniform_q_decay_rate_in_N": 0.0225
+  },
+  "open_interval_trajectories": [
+    {
+      "slope_offset_beta_sqrt6_minus6": -0.01,
+      "beta": 2.44540725987854,
+      "initial_fraction": 0.09,
+      "end_log_scale_factor": 100.0,
+      "end_fraction": 0.042917419905853835,
+      "end_q": 2.9040615639798796e-07,
+      "minimum_fraction": 0.042917419905853835
+    },
+    {
+      "slope_offset_beta_sqrt6_minus6": 0.0,
+      "beta": 2.4494897427831783,
+      "initial_fraction": 0.1,
+      "end_log_scale_factor": 100.0,
+      "end_fraction": 0.04611152707988595,
+      "end_q": 2.7947644444021057e-07,
+      "minimum_fraction": 0.04611152707988595
+    },
+    {
+      "slope_offset_beta_sqrt6_minus6": 0.01,
+      "beta": 2.4535722256878167,
+      "initial_fraction": 0.09,
+      "end_log_scale_factor": 100.0,
+      "end_fraction": 0.03995316755757396,
+      "end_q": 4.650926038903702e-06,
+      "minimum_fraction": 0.03995316755757396
+    },
+    {
+      "slope_offset_beta_sqrt6_minus6": 0.01,
+      "beta": 2.4535722256878167,
+      "initial_fraction": 0.1,
+      "end_log_scale_factor": 100.0,
+      "end_fraction": 0.044541692599914216,
+      "end_q": 1.147652889812446e-06,
+      "minimum_fraction": 0.044541692599914216
+    }
+  ],
+  "supercritical_crossing": {
+    "log_scale_factor_at_r_one": 0.1298990245646187,
+    "fraction": 0.6690195871972328,
+    "q": 0.9894490764388858,
+    "matter_metric_lapse_squared": 0.0105509235611142,
+    "end_log_scale_factor": 0.15,
+    "end_fraction": 0.725987258084366,
+    "end_q": 0.9917578281415595,
+    "end_phi_speed_squared": -0.0019564288553279006
+  },
+  "analytic_instability_deadline_in_N": 8.481054144800364,
+  "crossing_step_refinement_error": 2.5578243689761138e-09,
+  "independent_canonical_and_einstein_check": {
+    "maximum_fraction_difference": 7.688294445529209e-14,
+    "maximum_q_difference": 1.1546319456101628e-13,
+    "maximum_friedmann_residual": 4.496403249731884e-15,
+    "maximum_pressure_work_residual": 7.216449660063518e-15
+  },
+  "next_interface": "Extend the simultaneous attraction and hyperbolicity criterion to finitely many independently occupied matter species; retain the action, initial-data and EFT applicability gaps.",
+  "checks": {
+    "run": 11,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

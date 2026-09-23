@@ -1,0 +1,58 @@
+{
+  "round": 322,
+  "scope": "Supplied four-dimensional classical scalar-tensor stealth solution, u=t-x>0, F=1-(1+u)^(-2). Massive structureless test probes are an added input; backreaction is neglected. The correct change of variables transforms both metric and mass. No universal matter coupling or quantum frame equivalence is derived.",
+  "correct_mass_at_128_steps": {
+    "endpoint_error": 1.4711343254703024e-11,
+    "straight_line_residual": 3.211653165635653e-12,
+    "normalization_error": 1.544420147325809e-11,
+    "Jordan_elapsed_error": 2.467359649926948e-12,
+    "phase_error_against_Jordan": 4.934719299853896e-12,
+    "Einstein_proper_duration": 1.0906209550660741,
+    "final_coordinate_velocity": 0.2999999999972525,
+    "final_position": [
+      2.2579418040515904,
+      0.37738254121226544
+    ]
+  },
+  "incorrect_constant_mass_control": {
+    "endpoint_error": 0.060162767406358675,
+    "straight_line_residual": 0.05395131403912817,
+    "normalization_error": 1.6435519611945892e-11,
+    "Jordan_elapsed_error": 0.001166944640037082,
+    "phase_error_against_Jordan": 0.002333889280074164,
+    "Einstein_proper_duration": 1.0906209550660741,
+    "final_coordinate_velocity": 0.36897013335935763,
+    "final_position": [
+      2.2786466486237367,
+      0.4375453086262492
+    ]
+  },
+  "convergence": [
+    {
+      "steps": 16,
+      "endpoint_error": 5.977475314722369e-08
+    },
+    {
+      "steps": 32,
+      "endpoint_error": 3.7566016963808124e-09
+    },
+    {
+      "steps": 64,
+      "endpoint_error": 2.352336103683683e-10
+    },
+    {
+      "steps": 128,
+      "endpoint_error": 1.4711343254703024e-11
+    }
+  ],
+  "next_interface": "Compare actual dimensionless phase, radar and photon readouts with consistently transformed units.",
+  "checks": {
+    "run": 10,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

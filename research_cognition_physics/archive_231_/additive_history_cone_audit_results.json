@@ -1,0 +1,170 @@
+{
+  "round": 389,
+  "scientific_base_through_round": 388,
+  "hypothesis": "A fixed additive PSD summary reflects all independent finite history extensions.",
+  "scope": {
+    "object": "Global record configurations / consistent cuts of independent chains, not individual spacetime events.",
+    "additional_inputs": [
+      "Independent repeatable recorded updates",
+      "Fixed PSD increment per update type",
+      "Additive unnormalized summary",
+      "Order tested by PSD differences"
+    ],
+    "conclusion": "Private kernel directions are necessary and sufficient; k <= matrix size D.",
+    "excludes": "The stated cumulative-history-to-cone identification.",
+    "does_not_exclude": [
+      "A local event displacement cone",
+      "Physical 3+1 spacetime",
+      "Nonlinear or history-dependent encodings",
+      "The full cognitive programme"
+    ]
+  },
+  "finite_table": {
+    "pairs": 729,
+    "true_comparisons": 216,
+    "psd_comparisons": 235,
+    "false_comparisons": 19,
+    "lost_comparisons": 0
+  },
+  "strict_witness": {
+    "n": [
+      0,
+      0,
+      1
+    ],
+    "m": [
+      2,
+      2,
+      0
+    ],
+    "difference": [
+      [
+        1.5,
+        -0.5
+      ],
+      [
+        -0.5,
+        1.5
+      ]
+    ],
+    "eigenvalues": [
+      1.0,
+      2.0
+    ],
+    "summary_real_rank": 3,
+    "summaries_injective": true,
+    "per_generator_error": 0.1,
+    "certified_margin": 0.5
+  },
+  "constructive_witnesses": [
+    {
+      "index": 0,
+      "earlier_candidate": [
+        1,
+        0,
+        0
+      ],
+      "later_candidate": [
+        0,
+        4,
+        4
+      ],
+      "positive_multiplier": 4,
+      "eigenvalues": [
+        0.2984378812835756,
+        6.701562118716424
+      ]
+    },
+    {
+      "index": 1,
+      "earlier_candidate": [
+        0,
+        1,
+        0
+      ],
+      "later_candidate": [
+        4,
+        0,
+        4
+      ],
+      "positive_multiplier": 4,
+      "eigenvalues": [
+        0.2984378812835756,
+        6.701562118716424
+      ]
+    },
+    {
+      "index": 2,
+      "earlier_candidate": [
+        0,
+        0,
+        1
+      ],
+      "later_candidate": [
+        2,
+        2,
+        0
+      ],
+      "positive_multiplier": 2,
+      "eigenvalues": [
+        1.0,
+        2.0
+      ]
+    }
+  ],
+  "positive_cases": {
+    "noncommuting_saturated_dimensions": [
+      2,
+      3,
+      4
+    ],
+    "higher_rank_case": {
+      "matrix_size": 4,
+      "independent_histories": 3,
+      "generator_ranks": [
+        2,
+        2,
+        2
+      ]
+    }
+  },
+  "ledger": {
+    "branches": 3,
+    "maximum_local_count": 2,
+    "register_dimensions": [
+      4,
+      4,
+      4
+    ],
+    "record_qubits": 6,
+    "configurations_used": 27,
+    "log_dimension": 64,
+    "test_payload_reference_dimension": 4,
+    "complete_test_dimension": 256,
+    "updates_across_two_witness_preparations": 5,
+    "pointer_readout": "Existing log basis; output copying would require additional blank memory.",
+    "global_schedule_autonomously_derived": false
+  },
+  "leakage": {
+    "epsilon": 0.0625,
+    "all_integer_differences_through": 16,
+    "first_false_ratio": 17,
+    "strict_witness_ratio": 18,
+    "strict_eigenvalues": [
+      0.0625,
+      19.0625
+    ]
+  },
+  "sources": [
+    "https://arxiv.org/pdf/1407.4095"
+  ],
+  "checks": {
+    "run": 10,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "round": 305,
+  "scope": "Finite full-rank quantum reference and specified perturbations; entropy identity and generator calibration, without a derived physical boost, local QFT, area entropy or Unruh temperature.",
+  "reference_min_eigenvalue": 0.033708603746193534,
+  "noncommuting_tangent_norm": 0.004117472548185794,
+  "relative_entropy_rows": [
+    {
+      "epsilon": 0.8,
+      "delta_S": -0.0068897601951609655,
+      "delta_K": -0.006455381596226571,
+      "relative_entropy": 0.00043437859893424857,
+      "identity_error": 1.457167719820518e-16,
+      "D_over_epsilon_squared": 0.0006787165608347633,
+      "rigorous_upper_bound": 0.004543385383403401
+    },
+    {
+      "epsilon": 0.4,
+      "delta_S": -0.003335884291449709,
+      "delta_K": -0.003227690798113382,
+      "relative_entropy": 0.0001081934933362394,
+      "identity_error": 8.760353553682876e-17,
+      "D_over_epsilon_squared": 0.0006762093333514961,
+      "rigorous_upper_bound": 0.0009194946609268786
+    },
+    {
+      "epsilon": 0.2,
+      "delta_S": -0.0016408459875834058,
+      "delta_K": -0.0016138453990567026,
+      "relative_entropy": 2.700058852678211e-05,
+      "identity_error": 7.892991815694472e-17,
+      "D_over_epsilon_squared": 0.0006750147131695526,
+      "rigorous_upper_bound": 0.00020988465086374403
+    },
+    {
+      "epsilon": 0.1,
+      "delta_S": -0.0008136670173977123,
+      "delta_K": -0.0008069226995282711,
+      "relative_entropy": 6.744317869289418e-06,
+      "identity_error": 1.5178830414797062e-16,
+      "D_over_epsilon_squared": 0.0006744317869289417,
+      "rigorous_upper_bound": 5.028486426943867e-05
+    }
+  ],
+  "quadratic_limit_coefficient": 0.0006738583187000603,
+  "halving_D_ratios": [
+    4.014831072921402,
+    4.007079076403144,
+    4.003457288057346
+  ],
+  "physical_generator_fit": {
+    "thermal_beta": 0.7,
+    "thermal_residual": 3.188872858294072e-16,
+    "stationary_nongibbs_best_beta": 0.5534158882262231,
+    "stationary_nongibbs_residual": 0.23822338828704703
+  },
+  "restricted_tangent_counterexample": {
+    "diagonal_residual_norm": 0.0,
+    "full_residual_norm": 0.42426406871192857,
+    "offdiagonal_witness": 0.6000000000000001
+  },
+  "checks": {
+    "run": 9,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

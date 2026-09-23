@@ -1,0 +1,200 @@
+{
+  "round": 295,
+  "scope": "Finite robust rejection witnesses and non-identifiability of exact global constant-delay structure; bounded input/output errors and map regularity are explicit assumptions.",
+  "noncommutation_witness": {
+    "launch_uncertainty": 0.01,
+    "output_uncertainty": 0.005,
+    "word_lipschitz_bounds": [
+      1.2,
+      1.2
+    ],
+    "observed_gap": 0.15231883119115297,
+    "certified_gap_interval": [
+      0.11831883119115297,
+      0.18631883119115297
+    ],
+    "sign": 1,
+    "actual_edge_transmissions": 8
+  },
+  "crossing_witness": [
+    {
+      "launch": 0.25,
+      "observed_gap": 0.10000000000000009,
+      "certified_gap_interval": [
+        0.07685840734641029,
+        0.12314159265358988
+      ],
+      "sign": 1
+    },
+    {
+      "launch": 0.75,
+      "observed_gap": -0.10000000000000009,
+      "certified_gap_interval": [
+        -0.12314159265358988,
+        -0.07685840734641029
+      ],
+      "sign": -1
+    }
+  ],
+  "finite_query_countermodel": {
+    "query_count": 18,
+    "transcript": [
+      {
+        "step": 0,
+        "map": "F",
+        "input": 0.0,
+        "output": 1.0
+      },
+      {
+        "step": 1,
+        "map": "G",
+        "input": 0.37,
+        "output": 1.37
+      },
+      {
+        "step": 2,
+        "map": "G",
+        "input": 0.6169,
+        "output": 1.6169
+      },
+      {
+        "step": 3,
+        "map": "F",
+        "input": 0.818253,
+        "output": 1.818253
+      },
+      {
+        "step": 4,
+        "map": "G",
+        "input": 0.002753610000000073,
+        "output": 1.00275361
+      },
+      {
+        "step": 5,
+        "map": "G",
+        "input": 0.37101883570000005,
+        "output": 1.3710188357000002
+      },
+      {
+        "step": 6,
+        "map": "F",
+        "input": 0.617276969209,
+        "output": 1.617276969209
+      },
+      {
+        "step": 7,
+        "map": "G",
+        "input": 0.81839247860733,
+        "output": 1.81839247860733
+      },
+      {
+        "step": 8,
+        "map": "G",
+        "input": 0.0028052170847121527,
+        "output": 1.0028052170847122
+      },
+      {
+        "step": 9,
+        "map": "F",
+        "input": 0.37103793032134347,
+        "output": 1.3710379303213434
+      },
+      {
+        "step": 10,
+        "map": "G",
+        "input": 0.617284034218897,
+        "output": 1.617284034218897
+      },
+      {
+        "step": 11,
+        "map": "G",
+        "input": 0.8183950926609919,
+        "output": 1.818395092660992
+      },
+      {
+        "step": 12,
+        "map": "F",
+        "input": 0.002806184284567026,
+        "output": 1.002806184284567
+      },
+      {
+        "step": 13,
+        "map": "G",
+        "input": 0.3710382881852898,
+        "output": 1.3710382881852898
+      },
+      {
+        "step": 14,
+        "map": "G",
+        "input": 0.6172841666285572,
+        "output": 1.6172841666285573
+      },
+      {
+        "step": 15,
+        "map": "F",
+        "input": 0.8183951416525662,
+        "output": 1.8183951416525663
+      },
+      {
+        "step": 16,
+        "map": "G",
+        "input": 0.0028062024114494655,
+        "output": 1.0028062024114495
+      },
+      {
+        "step": 17,
+        "map": "G",
+        "input": 0.3710382948922363,
+        "output": 1.3710382948922364
+      }
+    ],
+    "same_adaptive_transcript": true,
+    "hidden_support": [
+      0.06400516867620788,
+      0.3088010337352416
+    ],
+    "center": 0.18640310120572473,
+    "amplitude": 0.01019982771079307,
+    "global_derivative_conservative_bounds": [
+      0.5,
+      1.5
+    ],
+    "hidden_commutator_gap": -0.010199827710792864,
+    "first_derivatives_at_sample_inputs": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "perturbation_is_C2_and_strictly_future_directed": true
+  },
+  "limits": [
+    "A finite obstruction disproves simultaneous constant-delay clocks for the tested reproducible model, not time coordinates in general.",
+    "A finite data fit does not prove an all-time functional identity; even bounded first derivatives leave unsampled countermodels.",
+    "Repeated reads do not reduce an adversarial deterministic error bound without a new statistical assumption.",
+    "Both compared experiments must share a specified nominal local launch event; launch jitter and probe interference must be accounted for."
+  ],
+  "checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

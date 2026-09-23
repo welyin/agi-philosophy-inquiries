@@ -1,0 +1,84 @@
+{
+  "round": 282,
+  "scope": "Operational dimension countermodels under supplied topology, clock ticks and counting measure; no selection or derivation of physical three-dimensional space.",
+  "degree_three_examples": [
+    {
+      "supplied_macro_dimension": 2,
+      "periodic_side": 9,
+      "micro_nodes": 324,
+      "degree": 3,
+      "micro_edges": 486,
+      "cell_size": 4,
+      "maximum_cell_internal_distance": 2,
+      "actual_radius_counts": {
+        "2": 9,
+        "4": 30,
+        "8": 122
+      },
+      "source_eccentricity": 18,
+      "distance_lower_bound_passed": true,
+      "distance_upper_bound_passed": true,
+      "infinite_volume_exponent_proved_by_bounds": 2,
+      "coarse_lattice_ball_radius_100": 20201
+    },
+    {
+      "supplied_macro_dimension": 3,
+      "periodic_side": 7,
+      "micro_nodes": 2058,
+      "degree": 3,
+      "micro_edges": 3087,
+      "cell_size": 6,
+      "maximum_cell_internal_distance": 3,
+      "actual_radius_counts": {
+        "2": 10,
+        "4": 41,
+        "8": 348
+      },
+      "source_eccentricity": 21,
+      "distance_lower_bound_passed": true,
+      "distance_upper_bound_passed": true,
+      "infinite_volume_exponent_proved_by_bounds": 3,
+      "coarse_lattice_ball_radius_100": 1353601
+    },
+    {
+      "supplied_macro_dimension": 4,
+      "periodic_side": 5,
+      "micro_nodes": 5000,
+      "degree": 3,
+      "micro_edges": 7500,
+      "cell_size": 8,
+      "maximum_cell_internal_distance": 4,
+      "actual_radius_counts": {
+        "2": 10,
+        "4": 45,
+        "8": 498
+      },
+      "source_eccentricity": 20,
+      "distance_lower_bound_passed": true,
+      "distance_upper_bound_passed": true,
+      "infinite_volume_exponent_proved_by_bounds": 4,
+      "coarse_lattice_ball_radius_100": 68033601
+    }
+  ],
+  "old_model_dimension": {
+    "volume_exponent": 1.5849625007211563,
+    "spectral_dimension_from_round262": 1.3652123889719707
+  },
+  "nonlinear_metric_relabeling": {
+    "alpha_chosen_to_force_three": 0.5283208335737187,
+    "resulting_volume_exponent": 3.0,
+    "two_unit_edges_additive_delay": 2.0,
+    "relabeled_two_step_distance": 1.4422495703074083,
+    "has_unit_edge_travel_time_realization_on_original_graph": false
+  },
+  "conclusion": "Degree bounds do not select operational dimension; bounded local grouping preserves volume exponent, while nonlinear relabeling needs a new measurement mechanism.",
+  "checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

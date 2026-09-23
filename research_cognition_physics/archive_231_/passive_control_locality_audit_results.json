@@ -1,0 +1,359 @@
+{
+  "round": 403,
+  "scope": "Fixed finite closed drift, full input/reference domain and declared outside controls. Exact passive locality equals intervention immunity; uniformly small passive influence alone gives no control-independent error-only guarantee.",
+  "controlled_cases": [
+    {
+      "g": 0.08,
+      "omega": 0.996794863550169,
+      "drift_operator_norm": 1.0,
+      "h_squared_error": 5.604491367380798e-19,
+      "control_operator_norm": 0.996794863550169,
+      "controlled_generator_error": 0.0,
+      "control_commutators_on_receiver": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passive_all_time_half_diamond_upper_bound": 0.08006417987878228,
+      "passive_canonical_dependency_upper_bound": 0.16012835975756456,
+      "duration": 9.817477042468104,
+      "integrated_control_norm": 9.78601068895391,
+      "controlled_unitary_error": 0.0,
+      "controlled_signal": 0.9999999999999996,
+      "uncontrolled_signal_same_time": 0.05656854249492359,
+      "all_time_uncontrolled_signal_upper_bound": 0.08,
+      "control_vs_bare_channel_lower_bound": 0.471715728752538,
+      "uniform_channel_gap_lower_bound": 0.46,
+      "control_vs_bare_choi_distance": 0.6868156439340458,
+      "continuous_control_resource_bound": 0.9698407371389196,
+      "generator_residual_paulis": [
+        0.0,
+        0.16,
+        0.16
+      ],
+      "round399_uncapped_receiver_bound": 1.5707963267948966
+    },
+    {
+      "g": 0.035,
+      "omega": 0.9993873123068954,
+      "drift_operator_norm": 1.0,
+      "h_squared_error": 1.6632938769863671e-18,
+      "control_operator_norm": 0.9993873123068954,
+      "controlled_generator_error": 0.0,
+      "control_commutators_on_receiver": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passive_all_time_half_diamond_upper_bound": 0.03500536224936488,
+      "passive_canonical_dependency_upper_bound": 0.07001072449872976,
+      "duration": 22.439947525641376,
+      "integrated_control_norm": 22.426198845958503,
+      "controlled_unitary_error": 0.0,
+      "controlled_signal": 0.9999999999999996,
+      "uncontrolled_signal_same_time": 0.02736410188638084,
+      "all_time_uncontrolled_signal_upper_bound": 0.035,
+      "control_vs_bare_channel_lower_bound": 0.48631794905680936,
+      "uniform_channel_gap_lower_bound": 0.4825,
+      "control_vs_bare_choi_distance": 0.6973650041813179,
+      "continuous_control_resource_bound": 0.9864786104466761,
+      "generator_residual_paulis": [
+        0.0,
+        0.07,
+        0.07
+      ],
+      "round399_uncapped_receiver_bound": 1.5707963267948966
+    },
+    {
+      "g": 0.015,
+      "omega": 0.9998874936711629,
+      "drift_operator_norm": 0.9999999999999999,
+      "h_squared_error": 1.1136930961126936e-16,
+      "control_operator_norm": 0.9998874936711629,
+      "controlled_generator_error": 0.0,
+      "control_commutators_on_receiver": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passive_all_time_half_diamond_upper_bound": 0.015000421916538274,
+      "passive_canonical_dependency_upper_bound": 0.030000843833076548,
+      "duration": 52.35987755982989,
+      "integrated_control_norm": 52.35398674222728,
+      "controlled_unitary_error": 0.0,
+      "controlled_signal": 0.9999999999999996,
+      "uncontrolled_signal_same_time": 0.01299038105676651,
+      "all_time_uncontrolled_signal_upper_bound": 0.015,
+      "control_vs_bare_channel_lower_bound": 0.4935048094716165,
+      "uniform_channel_gap_lower_bound": 0.4925,
+      "control_vs_bare_choi_distance": 0.7116847550203553,
+      "continuous_control_resource_bound": 1.0,
+      "generator_residual_paulis": [
+        0.0,
+        0.03,
+        0.03
+      ],
+      "round399_uncapped_receiver_bound": 1.5707963267948966
+    }
+  ],
+  "passive_all_input_checks": [
+    {
+      "g": 0.08,
+      "time": 0.0,
+      "analytic_propagator_error": 2.220452456297805e-16,
+      "unitary_local_comparator_error": 2.220452456297805e-16,
+      "unitary_error_formula": 0.0,
+      "mixed_reference_output_distance": 1.8735013540549522e-16,
+      "complete_channel_choi_distance": 1.6653369395918103e-16,
+      "uniform_channel_upper_bound": 0.08006417987878228,
+      "signal": 5.334151364663584e-19,
+      "signal_formula": 0.0
+    },
+    {
+      "g": 0.08,
+      "time": 0.7853981633974483,
+      "analytic_propagator_error": 3.331571526012503e-16,
+      "unitary_local_comparator_error": 0.05661392452242663,
+      "unitary_error_formula": 0.05661392452242649,
+      "mixed_reference_output_distance": 0.029597437603679194,
+      "complete_channel_choi_distance": 0.056568542494923796,
+      "uniform_channel_upper_bound": 0.08006417987878228,
+      "signal": 0.07999999999999999,
+      "signal_formula": 0.08
+    },
+    {
+      "g": 0.08,
+      "time": 1.5707963267948966,
+      "analytic_propagator_error": 3.1401849173675503e-16,
+      "unitary_local_comparator_error": 0.08006417987878248,
+      "unitary_error_formula": 0.08006417987878228,
+      "mixed_reference_output_distance": 0.042591145155733694,
+      "complete_channel_choi_distance": 0.08000000000000002,
+      "uniform_channel_upper_bound": 0.08006417987878228,
+      "signal": 4.532431118118382e-17,
+      "signal_formula": 9.797174393178826e-18
+    },
+    {
+      "g": 0.08,
+      "time": 3.0,
+      "analytic_propagator_error": 4.072727319859918e-16,
+      "unitary_local_comparator_error": 0.011298657709800462,
+      "unitary_error_formula": 0.011298657709800415,
+      "mixed_reference_output_distance": 0.006172197724010504,
+      "complete_channel_choi_distance": 0.01128960064478941,
+      "uniform_channel_upper_bound": 0.08006417987878228,
+      "signal": 0.022353239855914128,
+      "signal_formula": 0.02235323985591407
+    },
+    {
+      "g": 0.08,
+      "time": 9.817477042468104,
+      "analytic_propagator_error": 1.866615249649528e-15,
+      "unitary_local_comparator_error": 0.03063923516550838,
+      "unitary_error_formula": 0.030639235165508365,
+      "mixed_reference_output_distance": 0.016296757375693454,
+      "complete_channel_choi_distance": 0.03061467458920706,
+      "uniform_channel_upper_bound": 0.08006417987878228,
+      "signal": 0.05656854249492359,
+      "signal_formula": 0.05656854249492381
+    },
+    {
+      "g": 0.035,
+      "time": 0.0,
+      "analytic_propagator_error": 1.1124249181781126e-16,
+      "unitary_local_comparator_error": 1.1124249181781126e-16,
+      "unitary_error_formula": 0.0,
+      "mixed_reference_output_distance": 1.873501354054952e-16,
+      "complete_channel_choi_distance": 1.1102252081190781e-16,
+      "uniform_channel_upper_bound": 0.03500536224936488,
+      "signal": 4.403787105912103e-19,
+      "signal_formula": 0.0
+    },
+    {
+      "g": 0.035,
+      "time": 0.7853981633974483,
+      "analytic_propagator_error": 1.572903012765887e-16,
+      "unitary_local_comparator_error": 0.024752529024417703,
+      "unitary_error_formula": 0.024752529024417484,
+      "mixed_reference_output_distance": 0.013028079001116591,
+      "complete_channel_choi_distance": 0.024748737341529166,
+      "uniform_channel_upper_bound": 0.03500536224936488,
+      "signal": 0.03499999999999999,
+      "signal_formula": 0.035
+    },
+    {
+      "g": 0.035,
+      "time": 1.5707963267948966,
+      "analytic_propagator_error": 2.221891025259203e-16,
+      "unitary_local_comparator_error": 0.0350053622493652,
+      "unitary_error_formula": 0.03500536224936488,
+      "mixed_reference_output_distance": 0.018703295855928816,
+      "complete_channel_choi_distance": 0.034999999999999996,
+      "uniform_channel_upper_bound": 0.03500536224936488,
+      "signal": 4.2862637970157344e-18,
+      "signal_formula": 4.286263797015737e-18
+    },
+    {
+      "g": 0.035,
+      "time": 3.0,
+      "analytic_propagator_error": 2.2918956939545113e-16,
+      "unitary_local_comparator_error": 0.004939957002768987,
+      "unitary_error_formula": 0.004939957002768943,
+      "mixed_reference_output_distance": 0.0026955685085143528,
+      "complete_channel_choi_distance": 0.0049392002820953535,
+      "uniform_channel_upper_bound": 0.03500536224936488,
+      "signal": 0.009779542436962399,
+      "signal_formula": 0.009779542436962406
+    },
+    {
+      "g": 0.035,
+      "time": 22.439947525641376,
+      "analytic_propagator_error": 1.2505578957174233e-16,
+      "unitary_local_comparator_error": 0.015188257461919043,
+      "unitary_error_formula": 0.01518825746191891,
+      "mixed_reference_output_distance": 0.00810384276356569,
+      "complete_channel_choi_distance": 0.015185930869114399,
+      "uniform_channel_upper_bound": 0.03500536224936488,
+      "signal": 0.02736410188638084,
+      "signal_formula": 0.027364101886380852
+    },
+    {
+      "g": 0.015,
+      "time": 0.0,
+      "analytic_propagator_error": 6.145398573866762e-20,
+      "unitary_local_comparator_error": 6.145398573866762e-20,
+      "unitary_error_formula": 0.0,
+      "mixed_reference_output_distance": 0.0,
+      "complete_channel_choi_distance": 6.145398573866765e-20,
+      "uniform_channel_upper_bound": 0.015000421916538274,
+      "signal": 1.2290797147733522e-19,
+      "signal_formula": 0.0
+    },
+    {
+      "g": 0.015,
+      "time": 0.7853981633974483,
+      "analytic_propagator_error": 2.2205504822207324e-16,
+      "unitary_local_comparator_error": 0.010606900057840377,
+      "unitary_error_formula": 0.010606900057843522,
+      "mixed_reference_output_distance": 0.005597242862319325,
+      "complete_channel_choi_distance": 0.010606601717798213,
+      "uniform_channel_upper_bound": 0.015000421916538274,
+      "signal": 0.015000000000000001,
+      "signal_formula": 0.015
+    },
+    {
+      "g": 0.015,
+      "time": 1.5707963267948966,
+      "analytic_propagator_error": 2.482594761251414e-16,
+      "unitary_local_comparator_error": 0.015000421916533828,
+      "unitary_error_formula": 0.015000421916538274,
+      "mixed_reference_output_distance": 0.008025336142073205,
+      "complete_channel_choi_distance": 0.015,
+      "uniform_channel_upper_bound": 0.015000421916538274,
+      "signal": 8.49830834647197e-18,
+      "signal_formula": 1.8369701987210296e-18
+    },
+    {
+      "g": 0.015,
+      "time": 3.0,
+      "analytic_propagator_error": 4.720113409171342e-16,
+      "unitary_local_comparator_error": 0.0021168596617626664,
+      "unitary_error_formula": 0.00211685966176329,
+      "mixed_reference_output_distance": 0.0011543157532976748,
+      "complete_channel_choi_distance": 0.002116800120898015,
+      "uniform_channel_upper_bound": 0.015000421916538274,
+      "signal": 0.004191232472983901,
+      "signal_formula": 0.004191232472983888
+    },
+    {
+      "g": 0.015,
+      "time": 52.35987755982989,
+      "analytic_propagator_error": 7.179005570018533e-15,
+      "unitary_local_comparator_error": 0.012990746447203163,
+      "unitary_error_formula": 0.01299074644720698,
+      "mixed_reference_output_distance": 0.007334366460756551,
+      "complete_channel_choi_distance": 0.012990381056766614,
+      "uniform_channel_upper_bound": 0.015000421916538274,
+      "signal": 0.01299038105676651,
+      "signal_formula": 0.01299038105676662
+    }
+  ],
+  "finite_protocol_hybrid_checks": [
+    {
+      "g": 0.08,
+      "steps": 4,
+      "half_diamond_upper_bound": 0.381026678012656,
+      "full_choi_distance": 0.07682769673536231,
+      "choi_min_eigenvalue": -2.23983326824833e-17,
+      "choi_trace_error": 2.7758697942264678e-15
+    },
+    {
+      "g": 0.035,
+      "steps": 4,
+      "half_diamond_upper_bound": 0.16659106370288093,
+      "full_choi_distance": 0.03368983465725345,
+      "choi_min_eigenvalue": -8.745265359483161e-17,
+      "choi_trace_error": 2.109469396911628e-15
+    },
+    {
+      "g": 0.015,
+      "steps": 4,
+      "half_diamond_upper_bound": 0.07138724133938817,
+      "full_choi_distance": 0.014444932545407194,
+      "choi_min_eigenvalue": -8.758132561120963e-17,
+      "choi_trace_error": 2.220446049250313e-16
+    }
+  ],
+  "exact_protection": {
+    "invariant_algebra_residual": 0.0,
+    "cross_interaction_norm": 0.7,
+    "cross_commutator_on_invariant_algebra": 0.0,
+    "receiver_dependence_beyond_A": 0.7133848216564991,
+    "protocols": [
+      {
+        "time": 0.2,
+        "full_channel_difference": 6.680160189702298e-16,
+        "largest_adjoint_difference": 5.4624876601423466e-15,
+        "controlled_choi_min_eigenvalue": -7.129891123964595e-17,
+        "controlled_choi_trace_error": 2.2226369308437407e-16
+      },
+      {
+        "time": 1.0,
+        "full_channel_difference": 6.926077773173079e-16,
+        "largest_adjoint_difference": 5.416898277355426e-15,
+        "controlled_choi_min_eigenvalue": -1.0526580751952677e-16,
+        "controlled_choi_trace_error": 3.469446951953614e-18
+      },
+      {
+        "time": 3.7,
+        "full_channel_difference": 6.189267218705806e-16,
+        "largest_adjoint_difference": 4.132418305312265e-15,
+        "controlled_choi_min_eigenvalue": -6.0928555780545e-17,
+        "controlled_choi_trace_error": 1.734723475976807e-18
+      }
+    ]
+  },
+  "exact_zero_equivalence_proved": true,
+  "uniform_passive_smallness_sufficient_for_unrestricted_control": false,
+  "drift_norm_uniformly_bounded": true,
+  "propagation_time_uniform_in_small_coupling": false,
+  "control_amplitude_uniform_in_small_coupling": true,
+  "integrated_control_action_uniform_in_small_coupling": false,
+  "constant_control_exactly_solved": true,
+  "outside_control_cost_ignored": false,
+  "full_autonomous_controller_derived": false,
+  "spatial_dimension_generated": false,
+  "full_cognition_to_gr_refuted": false,
+  "checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

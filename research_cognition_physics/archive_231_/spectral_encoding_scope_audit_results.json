@@ -1,0 +1,151 @@
+{
+  "round": 367,
+  "scope": "Invariant-code dynamics only, with a target-dependent global encoding and scale-dependent time identification. Not a local low-energy Hamiltonian simulation, thermodynamic equivalence, autonomous controller, or generation of GR.",
+  "hypothesis_tested": "Can unrestricted static encodings and freely calibrated clocks make a noninteracting source reproduce every prescribed finite Hermitian dynamics?",
+  "compiled_target_dimension": 4,
+  "comparison_time": 1.3,
+  "spectral_compilation": [
+    {
+      "M_bins": 8,
+      "physical_qubits_N": 12,
+      "spectral_spacing_delta": 0.19625,
+      "excitation_weights": [
+        2,
+        4,
+        7,
+        10
+      ],
+      "distinct_codewords": 4,
+      "generator_error": 0.0512500000000003,
+      "generator_error_bound": 0.098125,
+      "reference_witness_distance_at_t": 0.02736584185521208,
+      "half_diamond_upper_at_t": 0.12756250000000002,
+      "physical_elapsed_time": 0.25512500000000005,
+      "minimum_bucket_capacity": "66"
+    },
+    {
+      "M_bins": 16,
+      "physical_qubits_N": 20,
+      "spectral_spacing_delta": 0.098125,
+      "excitation_weights": [
+        2,
+        6,
+        11,
+        18
+      ],
+      "distinct_codewords": 4,
+      "generator_error": 0.04687499999999975,
+      "generator_error_bound": 0.0490625,
+      "reference_witness_distance_at_t": 0.032847884588587006,
+      "half_diamond_upper_at_t": 0.06378125000000001,
+      "physical_elapsed_time": 0.12756250000000002,
+      "minimum_bucket_capacity": "190"
+    },
+    {
+      "M_bins": 32,
+      "physical_qubits_N": 36,
+      "spectral_spacing_delta": 0.0490625,
+      "excitation_weights": [
+        2,
+        10,
+        21,
+        34
+      ],
+      "distinct_codewords": 4,
+      "generator_error": 0.02249999999999962,
+      "generator_error_bound": 0.02453125,
+      "reference_witness_distance_at_t": 0.012309616020301247,
+      "half_diamond_upper_at_t": 0.031890625000000006,
+      "physical_elapsed_time": 0.06378125000000001,
+      "minimum_bucket_capacity": "630"
+    },
+    {
+      "M_bins": 64,
+      "physical_qubits_N": 68,
+      "spectral_spacing_delta": 0.02453125,
+      "excitation_weights": [
+        2,
+        17,
+        40,
+        66
+      ],
+      "distinct_codewords": 4,
+      "generator_error": 0.0021875000000002877,
+      "generator_error_bound": 0.012265625,
+      "reference_witness_distance_at_t": 0.001939682700406204,
+      "half_diamond_upper_at_t": 0.015945312500000003,
+      "physical_elapsed_time": 0.031890625000000006,
+      "minimum_bucket_capacity": "2278"
+    },
+    {
+      "M_bins": 128,
+      "physical_qubits_N": 132,
+      "spectral_spacing_delta": 0.012265625,
+      "excitation_weights": [
+        2,
+        32,
+        78,
+        130
+      ],
+      "distinct_codewords": 4,
+      "generator_error": 0.0021875000000002877,
+      "generator_error_bound": 0.0061328125,
+      "reference_witness_distance_at_t": 0.001939682700406204,
+      "half_diamond_upper_at_t": 0.007972656250000001,
+      "physical_elapsed_time": 0.015945312500000003,
+      "minimum_bucket_capacity": "8646"
+    }
+  ],
+  "encoded_entangling_gate": {
+    "N": 8,
+    "weights": [
+      2,
+      2,
+      6,
+      6
+    ],
+    "physical_time": 0.39269908169872414,
+    "logical_purity_initial": 1.0,
+    "logical_purity_final": 0.5000000000000002,
+    "physical_one_qubit_purity_max_change": 4.440892098500626e-16,
+    "target_vector_error": 0.0,
+    "minimum_excitation_gap_for_logical_A_flip": 4
+  },
+  "fixed_clock_periodic_obstruction": {
+    "fixed_source_period": 6.283185307179586,
+    "target_gap": 1.4142135623730951,
+    "target_plus_distance_at_period": 0.9639025328498774,
+    "epsilon_0_plus_epsilon_period_lower": 0.9639025328498773
+  },
+  "proved": [
+    "Every finite Hermitian target admits an invariant spectral code with reference-uniform finite-time error.",
+    "The code dimension is supported by bulk binomial degeneracy, including rounded eigenvalue collisions.",
+    "For an exact two-level target, nonzero logical transitions across excitation gap M require support at least M.",
+    "Any fixed CPTP encoding and decoding preserves the source's common physical-time period."
+  ],
+  "resource_account": {
+    "source": "H0_N=sum_i |1><1|_i; no physical intersite interactions",
+    "qubits": "N=M+2*max(1,ceil(log2 D))",
+    "source_norm": "N",
+    "logical_time_identification": "tau=(W/M)*t for W>0",
+    "unpaid_physical_interfaces": [
+      "target eigensystem computation",
+      "global state encoding and observable decoding",
+      "selection and protection of the middle-spectrum code",
+      "clock calibration and composition across targets"
+    ]
+  },
+  "sources": [
+    "https://arxiv.org/html/1701.05182",
+    "https://link.aps.org/accepted/10.1103/PhysRevLett.114.031104"
+  ],
+  "checks": {
+    "run": 12,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

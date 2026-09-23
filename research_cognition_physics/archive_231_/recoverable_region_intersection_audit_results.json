@@ -1,0 +1,398 @@
+{
+  "round": 402,
+  "scope": "Recovery regions of an encoded object need not form a point-neighborhood filter. Dependency regions of one fixed channel on the full tensor input do obey an additive intersection bound. Given interfaces are not derived space or a complete GR countermodel.",
+  "encoding": {
+    "isometry_error": 2.220446049250313e-16,
+    "full_unitary_error": 5.104283554630052e-16,
+    "circuit_error": 0.0
+  },
+  "coalitions": [
+    {
+      "physical_mask": 0,
+      "keep": [],
+      "correctable_algebra_complex_dimension": 1,
+      "single_share_channel_privacy_error": null
+    },
+    {
+      "physical_mask": 1,
+      "keep": [
+        0
+      ],
+      "correctable_algebra_complex_dimension": 1,
+      "single_share_channel_privacy_error": 1.1102230246251565e-16
+    },
+    {
+      "physical_mask": 2,
+      "keep": [
+        1
+      ],
+      "correctable_algebra_complex_dimension": 1,
+      "single_share_channel_privacy_error": 1.1102230246251565e-16
+    },
+    {
+      "physical_mask": 3,
+      "keep": [
+        0,
+        1
+      ],
+      "correctable_algebra_complex_dimension": 9,
+      "single_share_channel_privacy_error": null
+    },
+    {
+      "physical_mask": 4,
+      "keep": [
+        2
+      ],
+      "correctable_algebra_complex_dimension": 1,
+      "single_share_channel_privacy_error": 1.1102230246251565e-16
+    },
+    {
+      "physical_mask": 5,
+      "keep": [
+        0,
+        2
+      ],
+      "correctable_algebra_complex_dimension": 9,
+      "single_share_channel_privacy_error": null
+    },
+    {
+      "physical_mask": 6,
+      "keep": [
+        1,
+        2
+      ],
+      "correctable_algebra_complex_dimension": 9,
+      "single_share_channel_privacy_error": null
+    },
+    {
+      "physical_mask": 7,
+      "keep": [
+        0,
+        1,
+        2
+      ],
+      "correctable_algebra_complex_dimension": 9,
+      "single_share_channel_privacy_error": null
+    }
+  ],
+  "pair_decoder_checks": [
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "unitary_error": 0.0,
+      "factorization_error": 0.0,
+      "full_channel_choi_error": 3.330669073875469e-16
+    },
+    {
+      "pair": [
+        0,
+        2
+      ],
+      "unitary_error": 0.0,
+      "factorization_error": 0.0,
+      "full_channel_choi_error": 3.330669073875469e-16
+    },
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "unitary_error": 0.0,
+      "factorization_error": 0.0,
+      "full_channel_choi_error": 3.330669073875469e-16
+    }
+  ],
+  "logical_instrument_checks": [
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "intertwining_error": 0.0,
+      "mixed_reference_branch_error": 1.3835835380569646e-17,
+      "branch_probability": 0.4129634546936124
+    },
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "intertwining_error": 0.0,
+      "mixed_reference_branch_error": 3.5128280056207947e-17,
+      "branch_probability": 0.587036545306388
+    },
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "instrument_completeness_error": 3.716818910833265e-16
+    },
+    {
+      "pair": [
+        0,
+        2
+      ],
+      "intertwining_error": 0.0,
+      "mixed_reference_branch_error": 1.3835835380569646e-17,
+      "branch_probability": 0.4129634546936124
+    },
+    {
+      "pair": [
+        0,
+        2
+      ],
+      "intertwining_error": 0.0,
+      "mixed_reference_branch_error": 3.6172155994730254e-17,
+      "branch_probability": 0.587036545306388
+    },
+    {
+      "pair": [
+        0,
+        2
+      ],
+      "instrument_completeness_error": 3.152828197513034e-16
+    },
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "intertwining_error": 0.0,
+      "mixed_reference_branch_error": 1.3835835380569646e-17,
+      "branch_probability": 0.4129634546936124
+    },
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "intertwining_error": 0.0,
+      "mixed_reference_branch_error": 3.747338066116638e-17,
+      "branch_probability": 0.587036545306388
+    },
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "instrument_completeness_error": 3.716818910833263e-16
+    }
+  ],
+  "region_intersections": {
+    "authorized_sets": [
+      3,
+      5,
+      6,
+      7
+    ],
+    "intersection_violations": [
+      {
+        "left": 3,
+        "right": 5,
+        "intersection": 1
+      },
+      {
+        "left": 3,
+        "right": 6,
+        "intersection": 2
+      },
+      {
+        "left": 5,
+        "right": 6,
+        "intersection": 4
+      }
+    ],
+    "physical_pair_algebra_dimensions": [
+      81,
+      81
+    ],
+    "physical_pair_intersection_dimension": 9,
+    "compressed_intersection_dimension": 1,
+    "logical_common_pair_dimension": 9
+  },
+  "constant_channel_recovery": [
+    {
+      "output_rank": 3,
+      "bell_witness_distance": 0.888888888888889,
+      "bell_overlap": 0.11111111111111113,
+      "recovery_error_lower_bound": 0.8888888888888888
+    },
+    {
+      "output_rank": 1,
+      "bell_witness_distance": 0.9106836025229591,
+      "bell_overlap": 0.1111111111111111,
+      "recovery_error_lower_bound": 0.8888888888888888
+    },
+    {
+      "output_rank": 2,
+      "bell_witness_distance": 0.9052320597111969,
+      "bell_overlap": 0.11111111111111113,
+      "recovery_error_lower_bound": 0.8888888888888888
+    },
+    {
+      "output_rank": 3,
+      "bell_witness_distance": 0.9019097655702742,
+      "bell_overlap": 0.11111111111111115,
+      "recovery_error_lower_bound": 0.8888888888888888
+    },
+    {
+      "output_rank": 3,
+      "bell_witness_distance": 0.8940202816183357,
+      "bell_overlap": 0.11111111111111113,
+      "recovery_error_lower_bound": 0.8888888888888888
+    }
+  ],
+  "noisy_encoding_checks": [
+    {
+      "noise_weight": 0.001,
+      "pair": [
+        0,
+        1
+      ],
+      "decoded_choi_distance": 0.0008888888888887536,
+      "exact_decoded_half_diamond": 0.0008888888888888889,
+      "general_pair_error_upper_bound": 0.001,
+      "general_single_error_lower_bound": 0.8878888888888888,
+      "actual_single_error": 0.8888888888888888
+    },
+    {
+      "noise_weight": 0.001,
+      "pair": [
+        0,
+        2
+      ],
+      "decoded_choi_distance": 0.0008888888888887536,
+      "exact_decoded_half_diamond": 0.0008888888888888889,
+      "general_pair_error_upper_bound": 0.001,
+      "general_single_error_lower_bound": 0.8878888888888888,
+      "actual_single_error": 0.8888888888888888
+    },
+    {
+      "noise_weight": 0.001,
+      "pair": [
+        1,
+        2
+      ],
+      "decoded_choi_distance": 0.0008888888888887536,
+      "exact_decoded_half_diamond": 0.0008888888888888889,
+      "general_pair_error_upper_bound": 0.001,
+      "general_single_error_lower_bound": 0.8878888888888888,
+      "actual_single_error": 0.8888888888888888
+    },
+    {
+      "noise_weight": 0.01,
+      "pair": [
+        0,
+        1
+      ],
+      "decoded_choi_distance": 0.008888888888888759,
+      "exact_decoded_half_diamond": 0.008888888888888889,
+      "general_pair_error_upper_bound": 0.01,
+      "general_single_error_lower_bound": 0.8788888888888888,
+      "actual_single_error": 0.8888888888888888
+    },
+    {
+      "noise_weight": 0.01,
+      "pair": [
+        0,
+        2
+      ],
+      "decoded_choi_distance": 0.008888888888888759,
+      "exact_decoded_half_diamond": 0.008888888888888889,
+      "general_pair_error_upper_bound": 0.01,
+      "general_single_error_lower_bound": 0.8788888888888888,
+      "actual_single_error": 0.8888888888888888
+    },
+    {
+      "noise_weight": 0.01,
+      "pair": [
+        1,
+        2
+      ],
+      "decoded_choi_distance": 0.008888888888888759,
+      "exact_decoded_half_diamond": 0.008888888888888889,
+      "general_pair_error_upper_bound": 0.01,
+      "general_single_error_lower_bound": 0.8788888888888888,
+      "actual_single_error": 0.8888888888888888
+    },
+    {
+      "noise_weight": 0.1,
+      "pair": [
+        0,
+        1
+      ],
+      "decoded_choi_distance": 0.08888888888888871,
+      "exact_decoded_half_diamond": 0.08888888888888889,
+      "general_pair_error_upper_bound": 0.1,
+      "general_single_error_lower_bound": 0.7888888888888889,
+      "actual_single_error": 0.8888888888888888
+    },
+    {
+      "noise_weight": 0.1,
+      "pair": [
+        0,
+        2
+      ],
+      "decoded_choi_distance": 0.08888888888888871,
+      "exact_decoded_half_diamond": 0.08888888888888889,
+      "general_pair_error_upper_bound": 0.1,
+      "general_single_error_lower_bound": 0.7888888888888889,
+      "actual_single_error": 0.8888888888888888
+    },
+    {
+      "noise_weight": 0.1,
+      "pair": [
+        1,
+        2
+      ],
+      "decoded_choi_distance": 0.08888888888888871,
+      "exact_decoded_half_diamond": 0.08888888888888889,
+      "general_pair_error_upper_bound": 0.1,
+      "general_single_error_lower_bound": 0.7888888888888889,
+      "actual_single_error": 0.8888888888888888
+    }
+  ],
+  "finite_filter_enumeration": {
+    "proper_nonempty_upward_families": 18,
+    "intersection_closed": 7,
+    "quantum_no_cloning_families": 11,
+    "principal_equivalence_all_passed": true
+  },
+  "fixed_full_domain_channel_intersection": {
+    "conditional_expectation_composition_error": 4.820079502836932e-16,
+    "fixed_identity_receiver_intersection_error": 0.0,
+    "full_channel_choi_min_eigenvalue": -2.037104624352186e-17,
+    "full_channel_choi_trace_error": 0.0,
+    "choi_distance_after_resets": {
+      "AB": 0.0975,
+      "BC": 0.05999999999999999,
+      "B": 0.10928908345800276
+    },
+    "exact_half_diamond_AB": 0.0975,
+    "exact_half_diamond_BC": 0.06,
+    "half_diamond_intersection_upper_bound": 0.15750000000000003,
+    "normalized_tensor_resets_used": true,
+    "same_fixed_channel_used": true
+  },
+  "full_unknown_reference_preserved_by_authorized_recovery": true,
+  "alternative_overlapping_coalitions_not_independent_receivers": true,
+  "fixed_full_domain_dependency_intersection_proved": true,
+  "intervening_control_permissions_automatically_enlarged": false,
+  "unique_least_recovery_region_exists": false,
+  "recovery_regions_identified_as_point_neighborhoods": false,
+  "autonomous_geometric_local_implementation_derived": false,
+  "spatial_dimension_generated": false,
+  "full_cognition_to_gr_refuted": false,
+  "checks": {
+    "run": 10,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

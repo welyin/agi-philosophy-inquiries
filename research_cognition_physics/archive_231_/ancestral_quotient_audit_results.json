@@ -1,0 +1,88 @@
+{
+  "round": 264,
+  "exhaustive_lag_one": {
+    "snapshots": 512,
+    "ordered_distance_pairs": 170496
+  },
+  "unbounded_burst_counterexamples": [
+    {
+      "extra_depth": 1,
+      "vertices": 5,
+      "same_coarse_K3": true,
+      "coarse_distance": 1,
+      "fine_distance": 2,
+      "predicted_fine_distance": 2
+    },
+    {
+      "extra_depth": 2,
+      "vertices": 11,
+      "same_coarse_K3": true,
+      "coarse_distance": 1,
+      "fine_distance": 4,
+      "predicted_fine_distance": 4
+    },
+    {
+      "extra_depth": 3,
+      "vertices": 29,
+      "same_coarse_K3": true,
+      "coarse_distance": 1,
+      "fine_distance": 8,
+      "predicted_fine_distance": 8
+    },
+    {
+      "extra_depth": 4,
+      "vertices": 83,
+      "same_coarse_K3": true,
+      "coarse_distance": 1,
+      "fine_distance": 16,
+      "predicted_fine_distance": 16
+    },
+    {
+      "extra_depth": 5,
+      "vertices": 245,
+      "same_coarse_K3": true,
+      "coarse_distance": 1,
+      "fine_distance": 32,
+      "predicted_fine_distance": 32
+    },
+    {
+      "extra_depth": 6,
+      "vertices": 731,
+      "same_coarse_K3": true,
+      "coarse_distance": 1,
+      "fine_distance": 64,
+      "predicted_fine_distance": 64
+    }
+  ],
+  "fair_finite_prefix": [
+    {
+      "start_depth": 1,
+      "extra_depth": 1,
+      "burst_vertices": 5,
+      "catchup_depth": 3,
+      "catchup_vertices": 27,
+      "all_old_leaves_processed": true
+    },
+    {
+      "start_depth": 3,
+      "extra_depth": 2,
+      "burst_vertices": 35,
+      "catchup_depth": 6,
+      "catchup_vertices": 729,
+      "all_old_leaves_processed": true
+    }
+  ],
+  "metric_bound": "d_Q <= d_G <= 2^b d_Q + (2^b-1)",
+  "fiber_size_bound": "3^b",
+  "fiber_intrinsic_diameter_bound": "2^b-1",
+  "scope": "Pure Fisher growth with persistent local port identities has exact ancestral quotients at complete cuts. Bounded depth overshoot gives uniform metric and volume bounds. Eventual fairness alone allows unbounded finite bursts; neither physical spacetime nor quantum dynamics is derived.",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "checks": {
+    "run": 10,
+    "failures": 0,
+    "errors": 0
+  }
+}

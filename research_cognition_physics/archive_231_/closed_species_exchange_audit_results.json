@@ -1,0 +1,87 @@
+{
+  "round": 325,
+  "scope": "An added classical covariant Einstein plus three canonical scalar action with masses m_i(phi)=m_i0 exp(alpha_i phi), alpha=(.3,.8). The conserved total stress includes reciprocal scalar sources. A homogeneous finite-time solution includes metric backreaction; no global conserved cosmological energy, full nonlinear stability, microscopic origin or uniqueness of this action is claimed.",
+  "off_shell_Ward_error": 9.948708523666028e-13,
+  "on_shell_total_divergence": 1.199692561656777e-12,
+  "sector_exchange_errors": [
+    4.303501999203263e-14,
+    3.9454431475377527e-13,
+    4.064613229326497e-13
+  ],
+  "flat_closed_system": {
+    "energy_density_initial": 0.27219968583217585,
+    "energy_density_final": 0.27219968582606996,
+    "flat_energy_drift": 6.1058935685309734e-12,
+    "Einstein_constraint_drift": null,
+    "pressure_work_budget_error": 6.1058935685309734e-12,
+    "mass_ratio_min": 0.6900977306223912,
+    "mass_ratio_max": 1.4505019794119969,
+    "sector_energy_changes": [
+      0.14619347033649685,
+      -0.03670100591997767,
+      -0.10949246442262511
+    ],
+    "scale_factor_final": 1.0,
+    "H_final": 0.0
+  },
+  "joint_Einstein_matter_solution": {
+    "energy_density_initial": 0.27219968583217585,
+    "energy_density_final": 0.018361178732289228,
+    "flat_energy_drift": null,
+    "Einstein_constraint_drift": 2.5327819702658516e-11,
+    "pressure_work_budget_error": 7.736417062531586e-11,
+    "mass_ratio_min": 0.6911528617241385,
+    "mass_ratio_max": 0.8410526904690879,
+    "sector_energy_changes": [
+      -0.0053721007380309535,
+      -0.1013895791414833,
+      -0.14707682722037235
+    ],
+    "scale_factor_final": 2.4951466509660896,
+    "H_final": 0.0782329400081608
+  },
+  "omitted_reciprocal_source_control": {
+    "energy_density_initial": 0.27219968583217585,
+    "energy_density_final": 0.02044271440769236,
+    "flat_energy_drift": null,
+    "Einstein_constraint_drift": 0.010222861449230708,
+    "pressure_work_budget_error": 0.017990525037433036,
+    "mass_ratio_min": 0.6766809942192528,
+    "mass_ratio_max": 0.7531308186230634,
+    "sector_energy_changes": [
+      -0.006318616366384113,
+      -0.09987669986811394,
+      -0.14556165518998543
+    ],
+    "scale_factor_final": 2.4423121846426254,
+    "H_final": 0.06908829791896304
+  },
+  "constraint_convergence": [
+    {
+      "steps": 128,
+      "error": 9.693466090227032e-08
+    },
+    {
+      "steps": 256,
+      "error": 6.301822615822905e-09
+    },
+    {
+      "steps": 512,
+      "error": 4.014488706738373e-10
+    },
+    {
+      "steps": 1024,
+      "error": 2.5327819702658516e-11
+    }
+  ],
+  "next_interface": "Total conservation does not set equal scalar charges. Audit the distinct spin-2 soft consistency condition and its assumptions.",
+  "checks": {
+    "run": 10,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

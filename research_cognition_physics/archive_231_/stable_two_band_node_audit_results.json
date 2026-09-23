@@ -1,0 +1,115 @@
+{
+  "round": 374,
+  "scope": "Conditional smooth two-band crossing interface: codimension three, degree protection, C2 linearization with arbitrary-reference band error. Does not select physical space, node existence, filling, common metric, or GR.",
+  "codimension": {
+    "regular_zero_set_dimension": "d-3 when rank Dh=3",
+    "d2_mass_gap_at_m_0_3": 0.6,
+    "d4_model": "h=(q1,q2,q3), arbitrary q4: a nodal line",
+    "chemical_potential": "Crossing energy equals Fermi level only with an extra filling condition."
+  },
+  "topology": {
+    "lattice_nodes": [
+      {
+        "node": [
+          0.0,
+          0.0,
+          1.5707963267948966
+        ],
+        "determinant_Dh": -1.0,
+        "chirality": -1,
+        "degree_quadrature": -1.0,
+        "upper_band_chern_for_A_i_u_du": 1.0
+      },
+      {
+        "node": [
+          0.0,
+          0.0,
+          -1.5707963267948966
+        ],
+        "determinant_Dh": 1.0,
+        "chirality": 1,
+        "degree_quadrature": 1.0,
+        "upper_band_chern_for_A_i_u_du": -1.0
+      }
+    ],
+    "net_charge": 0,
+    "sphere_radius": 0.3,
+    "analytic_unperturbed_boundary_gap_in_h": 0.23636038969321072,
+    "constant_vector_perturbation_norm": 0.053851648071345036,
+    "perturbed_degree": -1.0000000000000002,
+    "nontransverse_double_node_degree": 2.0000000000000067,
+    "double_node_Dh_rank_at_origin": 1
+  },
+  "controlled_linearization": {
+    "taylor_constant": 0.8071067811865476,
+    "rows": [
+      {
+        "a": 0.4,
+        "K": 1.0,
+        "time": 1.5,
+        "sample_hamiltonian_error": 0.2044035191009269,
+        "uniform_hamiltonian_bound": 0.32284271247461904,
+        "sample_unitary_error": 0.20853775686907058,
+        "uniform_half_diamond_bound": 0.48426406871192856
+      },
+      {
+        "a": 0.2,
+        "K": 1.0,
+        "time": 1.5,
+        "sample_hamiltonian_error": 0.1012196074679231,
+        "uniform_hamiltonian_bound": 0.16142135623730952,
+        "sample_unitary_error": 0.1018956145166516,
+        "uniform_half_diamond_bound": 0.24213203435596428
+      },
+      {
+        "a": 0.1,
+        "K": 1.0,
+        "time": 1.5,
+        "sample_hamiltonian_error": 0.05031927936059789,
+        "uniform_hamiltonian_bound": 0.08071067811865476,
+        "sample_unitary_error": 0.05040402046120345,
+        "uniform_half_diamond_bound": 0.12106601717798214
+      },
+      {
+        "a": 0.05,
+        "K": 1.0,
+        "time": 1.5,
+        "sample_hamiltonian_error": 0.02508158685439961,
+        "uniform_hamiltonian_bound": 0.04035533905932738,
+        "sample_unitary_error": 0.025064451009861242,
+        "uniform_half_diamond_bound": 0.06053300858899107
+      }
+    ],
+    "reference_dimension": 3,
+    "coherent_momentum_reference_distance": 0.09112238175235154,
+    "reference_case_half_diamond_bound": 0.24213203435596428,
+    "scope": "Every input and inactive reference on the fixed rescaled momentum band; sample maxima do not replace the analytic supremum bound."
+  },
+  "periodic_mass_deformation": {
+    "nodes_at_m_0": 2,
+    "nodes_at_m_0_3": 2,
+    "nodes_at_m_1_2": 0,
+    "uniform_band_gap_lower_bound_m_1_2": 0.4
+  },
+  "extra_inputs": [
+    "translation/momentum parameters and their dimension",
+    "C2 autonomous isolated two-band block",
+    "existence of a crossing and transverse rank-three Jacobian",
+    "near-node preparation and optional continuum clock/momentum scaling",
+    "chemical potential, tilt and anisotropic velocity matrix"
+  ],
+  "sources": [
+    "https://arxiv.org/html/1007.0016",
+    "https://arxiv.org/html/1105.5138",
+    "https://arxiv.org/pdf/1111.7309"
+  ],
+  "checks": {
+    "run": 13,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

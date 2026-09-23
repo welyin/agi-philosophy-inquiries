@@ -1,0 +1,102 @@
+{
+  "round": 269,
+  "block_measurement_protocols": [
+    {
+      "independent_input_qubits": 1,
+      "quantum_transmissions": 0,
+      "classical_flag_bits": 1,
+      "initial_shared_ebits": 0,
+      "entanglement_fidelity": 0.49999999999999983,
+      "proved_upper_bound": 0.5,
+      "classical_basis_inputs_preserved": true
+    },
+    {
+      "independent_input_qubits": 1,
+      "quantum_transmissions": 1,
+      "classical_flag_bits": 0,
+      "initial_shared_ebits": 0,
+      "entanglement_fidelity": 0.9999999999999997,
+      "proved_upper_bound": 1,
+      "classical_basis_inputs_preserved": true
+    },
+    {
+      "independent_input_qubits": 2,
+      "quantum_transmissions": 0,
+      "classical_flag_bits": 2,
+      "initial_shared_ebits": 0,
+      "entanglement_fidelity": 0.25,
+      "proved_upper_bound": 0.25,
+      "classical_basis_inputs_preserved": true
+    },
+    {
+      "independent_input_qubits": 2,
+      "quantum_transmissions": 1,
+      "classical_flag_bits": 1,
+      "initial_shared_ebits": 0,
+      "entanglement_fidelity": 0.5,
+      "proved_upper_bound": 0.5,
+      "classical_basis_inputs_preserved": true
+    },
+    {
+      "independent_input_qubits": 2,
+      "quantum_transmissions": 2,
+      "classical_flag_bits": 0,
+      "initial_shared_ebits": 0,
+      "entanglement_fidelity": 1.0,
+      "proved_upper_bound": 1,
+      "classical_basis_inputs_preserved": true
+    },
+    {
+      "independent_input_qubits": 3,
+      "quantum_transmissions": 0,
+      "classical_flag_bits": 3,
+      "initial_shared_ebits": 0,
+      "entanglement_fidelity": 0.12499999999999996,
+      "proved_upper_bound": 0.125,
+      "classical_basis_inputs_preserved": true
+    },
+    {
+      "independent_input_qubits": 3,
+      "quantum_transmissions": 1,
+      "classical_flag_bits": 2,
+      "initial_shared_ebits": 0,
+      "entanglement_fidelity": 0.24999999999999992,
+      "proved_upper_bound": 0.25,
+      "classical_basis_inputs_preserved": true
+    },
+    {
+      "independent_input_qubits": 3,
+      "quantum_transmissions": 2,
+      "classical_flag_bits": 1,
+      "initial_shared_ebits": 0,
+      "entanglement_fidelity": 0.49999999999999983,
+      "proved_upper_bound": 0.5,
+      "classical_basis_inputs_preserved": true
+    },
+    {
+      "independent_input_qubits": 3,
+      "quantum_transmissions": 3,
+      "classical_flag_bits": 0,
+      "initial_shared_ebits": 0,
+      "entanglement_fidelity": 0.9999999999999996,
+      "proved_upper_bound": 1,
+      "classical_basis_inputs_preserved": true
+    }
+  ],
+  "two_inputs_one_quantum_transmission": {
+    "best_entanglement_fidelity_with_free_classical_flag": 0.5,
+    "two_quantum_transmissions_fidelity": 1.0,
+    "one_transmission_plus_one_consumed_ebit_fidelity": 0.9999999999999996
+  },
+  "resource_bound": "Schmidt_number(output) <= R0 * product(d_j); F_e <= min(1, R0*product(d_j)/D). For q qubits, e initial Bell pairs, r target qubits: r <= q+e for exact transfer. Returning the Bell resource unchanged and uncorrelated restores r <= q.",
+  "scope": "A conditional communication-cut budget for a fixed bipartition with local ancillas, LOCC and counted noiseless quantum transmissions. It distinguishes additional primitive channels, serial reuse and consumed entanglement; it does not derive spacetime, an energy cost, a physical rate or the necessity of dimension three.",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "checks": {
+    "run": 10,
+    "failures": 0,
+    "errors": 0
+  }
+}

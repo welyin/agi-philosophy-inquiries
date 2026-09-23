@@ -36,6 +36,76 @@
 
 > **第259—260轮完成（2026-09-22）**：[259轮](research_cognition_physics/archive_231_/research_note_259.md)证明边界保持的局部二分从单点只产生树，得到环路和外部端口预算；[260轮](research_cognition_physics/archive_231_/research_note_260.md)复用Fisher三角替换构造有界度的量子环路出生，明示辅助比特、通道创建及扰动，一次全图修饰满足距离界d≤d′≤2d＋1。本次新增18项检查；下一步对接已有Fisher重复替换的尺度结果，尚未推导物理维数或引力。
 
+> **第261—263轮完成（2026-09-22）**：[261轮](research_cognition_physics/archive_231_/research_note_261_text_v2.md)将纯三角完整分代精确识别为汉诺塔图，体积指数约1.585；[262轮](research_cognition_physics/archive_231_/research_note_262.md)接入已有谱、电阻与扩散尺度；[263轮](research_cognition_physics/archive_231_/research_note_263_text_v2.md)证明相同局部规则和计数预算也能在末端更新下产生指数1。新增27项检查；下一步研究共同完成深度与祖先收缩，明确调度、粗粒化和传输律的各自作用，尚未选择自然空间维数。
+
+> **第264—265轮完成（2026-09-22）**：[264轮](research_cognition_physics/archive_231_/research_note_264.md)证明共同完成深度给相同祖先粗图，有界超前深度控制距离，而公平性本身不足；[265轮](research_cognition_physics/archive_231_/research_note_265.md)证明有界块保持指定扩散的弛豫尺度，同时用九节点反例排除块总量的精确无记忆封闭。新增20项检查；下一步对接投影记忆与有效边界响应，区分静态几何、尺度和完整动态。
+
+> **第266—267轮完成（2026-09-22）**：[266轮](research_cognition_physics/archive_231_/research_note_266.md)证明增加内部图案不能改变固定祖先接口，纯三角块的边界增长不满足规则三维基准；[267轮](research_cognition_physics/archive_231_/research_note_267.md)对接Kron消元和精确记忆，得到有效容量及低频余项界。新增18项检查；第三阶段累计326项。纯三角分支保留为校准，下一步研究可局部实施的跨祖先基本通道增长，不以凑出维数3替代生成机制。
+
+> **第268—269轮完成（2026-09-22）**：[268轮](research_cognition_physics/archive_231_/research_note_268.md)给出有限端口的协同细化，突破固定祖先接口，但对齐重复仍生成一维梯带；[269轮](research_cognition_physics/archive_231_/research_note_269.md)用量子通信割预算区分新增通道、串行复用及消耗纠缠，证明仅保存数据不能免费扩增独立通信。新增19项检查；第三阶段累计345项。下一步比较匹配选择与多类大尺度割，同时明确实际传输资源。
+
+> **第270—271轮完成（2026-09-22）**：[270轮](research_cognition_physics/archive_231_/research_note_270.md)识别最新单元配对的共同不变量：即使直径大幅缩短，旧半图割仍冻结为两条边；[271轮](research_cognition_physics/archive_231_/research_note_271.md)证明均匀互选在三正则分支中虽公平，接口增长仍可落后于内部增长，并给出严格概率界。新增17项检查；第三阶段累计362项。下一步研究局部负载反馈与资源补给，不继续调参已受解析限制的选择规则。
+
+> **第272—273轮完成（2026-09-22）**：[272轮](research_cognition_physics/archive_231_/research_note_272.md)证明固定每节点速率的全局通信连三维方格也无法持续；[273轮](research_cognition_physics/archive_231_/research_note_273.md)构造本地积压驱动增容的有界队列正例，同时查明梯带几何和原寄存器单点割仍是限制。新增17项检查，第三阶段累计379项。下一步把任务迁移和端点能力纳入增长协议。
+
+> **第274—275轮完成（2026-09-22）**：[274轮](research_cognition_physics/archive_231_/research_note_274.md)计入任务迁移和汇回后，原端点吞吐随细化为1、2、3、3、……，并给出量子参考保持的可实现线路；[275轮](research_cognition_physics/archive_231_/research_note_275.md)证明持续细化会导致静态连通却不送达，并构造允许继续增长的交付调度。新增17项检查，第三阶段累计396项。下一步研究持续任务流的等待、交付与在途存储。
+
+> **第276—277轮完成（2026-09-22）**：[276轮](research_cognition_physics/archive_231_/research_note_276.md)证明逐条最终送达仍允许持续流的在途积累；[277轮](research_cognition_physics/archive_231_/research_note_277.md)通过保留接收入口恢复固定延迟，并记录全部传输与存储。新增17项检查，第三阶段累计413项。已按用户建议完成[FTT／TSA来源与接口审查](research_cognition_physics/archive_231_/ftt_tsa_bridge_review.md)，下一步核对有限能缺陷与三维选择条件。
+
+> **第278—279轮完成（2026-09-22）**：[278轮](research_cognition_physics/archive_231_/research_note_278.md)核对TSA有限能净荷排除低维的精确条件，并证明容量条件不唯一选择三维；[279轮](research_cognition_physics/archive_231_/research_note_279.md)给出屏蔽解除低维发散的正例，区分有限梯度能量与平方可积的势。新增19项检查，第三阶段累计432项。下一步研究守恒量、内部消元及无屏蔽响应的操作来源。
+
+> **第280—281轮完成（2026-09-22）**：[280轮](research_cognition_physics/archive_231_/research_note_280.md)区分操作权限和自然守恒，完整计算局部衰减的环境账；[281轮](research_cognition_physics/archive_231_/research_note_281.md)证明源随内部消元转移，并用双层网络分离共同模式与相对屏蔽。新增18项检查，第三阶段累计450项。下一步对接守恒通道的传播律；尚未选择自然H、物理守恒量或时空。
+
+> **第282轮完成（2026-09-22）**：响应“空间是否为测量投影”的新猜想，[282轮](research_cognition_physics/archive_231_/research_note_282.md)澄清三端口只是模型容量输入，证明相同度数上限允许不同体积维数；计入全部微观中继，并排除靠免费改标尺将1.585变成3。新增8项，本次280—282轮合计26项，第三阶段累计458项。下一步转向实际测量与传播重建的几何。
+
+> **第283—284轮完成（2026-09-22）**：[283轮](research_cognition_physics/archive_231_/research_note_283.md)给出完整扩散读出恢复共同连接几何的条件，并计入有限精度与稀有事件探测成本；[284轮](research_cognition_physics/archive_231_/research_note_284.md)构造相同可见标签过程、不同底层网络的精确对照，位置标记可在三步后区分。新增19项检查，第三阶段累计477项。下一步研究记忆辅助的位置辨识与有限资源测距，未选择三维。
+
+> **第285—286轮完成（2026-09-22）**：[285轮](research_cognition_physics/archive_231_/research_note_285.md)对接匿名网络探索，用单个原点标记和双端口记录重建有限范围的位置关系；[286轮](research_cognition_physics/archive_231_/research_note_286.md)计算独立读出噪声下的全过程置信度，并给出相关误差不能靠重复读取消除的反例。新增16项检查，第三阶段累计493项。下一步研究不同原点观察者的地图拼接；自然三维仍待解释。
+
+> **第287—288轮完成（2026-09-22）**：[287轮](research_cognition_physics/archive_231_/research_note_287.md)通过实际桥接路径核验不同原点地图的重叠位置，计入探测与传输载荷；[288轮](research_cognition_physics/archive_231_/research_note_288.md)接入置换同步，证明循环一致仍不足以保证真实位置对应，并给出三主体全过程误差界。新增16项检查，第三阶段累计509项。下一步研究共同地图上的钟尺校准与传播距离，尚未选择自然三维。
+
+> **第289—290轮完成（2026-09-22）**：[289轮](research_cognition_physics/archive_231_/research_note_289.md)接入独立时钟校准，区分可测往返耗时与不可分别辨识的单程延迟、零点；[290轮](research_cognition_physics/archive_231_/research_note_290.md)建立两种往返时间度量，并用环路反例证明距离未必包含完整传播信息。新增16项检查，第三阶段累计525项。下一步检验稳定传播、测量负载和有效距离的适用窗口。
+
+> **第291—292轮完成（2026-09-22）**：[291轮](research_cognition_physics/archive_231_/research_note_291.md)区分基线、排队与探测负载，给出有限采样和漂移窗口的条件性预算；[292轮](research_cognition_physics/archive_231_/research_note_292.md)接入FIFO时间依赖最短路，证明动态回声未必成度量，并给统一变化界下的静态距离近似。新增17项检查，第三阶段累计542项。下一步检验本地时钟重参数化与闭环可测不变量。
+
+> **第293—294轮完成（2026-09-22）**：[293轮](research_cognition_physics/archive_231_/research_note_293.md)区分时钟改尺与不可消去的闭路次序差；[294轮](research_cognition_physics/archive_231_/research_note_294.md)用相容刻度密度给出常延迟化的平滑充要条件，并证明回路交换不足。新增17项检查，第三阶段累计559项。下一步检验有限误差回路记录的认证边界，尚未从一般因果次序推出物理均匀时间。
+
+> **第295—296轮完成（2026-09-22）**：[295轮](research_cognition_physics/archive_231_/research_note_295.md)给出有限误差下的闭路否定证据及相同有限记录的因果反模型；[296轮](research_cognition_physics/archive_231_/research_note_296.md)接入有界误差辨识，得到指定候选钟在有限窗口内的多跳与距离误差证书。新增17项检查，第三阶段累计576项。下一步研究只用已到达记录的在线更新，避免把离线覆盖误当未来保证。
+
+> **第297—298轮完成（2026-09-22）**：[297轮](research_cognition_physics/archive_231_/research_note_297.md)建立因果在线校准、失效期限和更新预算；[298轮](research_cognition_physics/archive_231_/research_note_298.md)回应微观时间不均匀猜想，给出平均刻度稳定的相关性条件及反例。新增17项检查，第三阶段累计593项。平均更稳不等于累计误差更小；下一步研究多钟关联与共同波动的可辨识性。
+
+> **第299—300轮完成（2026-09-22）**：[299轮](research_cognition_physics/archive_231_/research_note_299.md)核验多钟噪声来源的可辨识性，给出正方差估计仍遗漏共同波动的对照；[300轮](research_cognition_physics/archive_231_/research_note_300.md)对接TDI延迟组合，复算高阶源泄漏抑制和信号损失边界。新增19项检查，第三阶段累计612项。下一步检验受控干预能否打破钟源与通道的同记录歧义。
+
+> **主线优先级调整（2026-09-22，300轮后）**：按用户指示，暂缓微观时间均匀性与噪声来源支线，优先推进有效时空、传播、引力及物质／标准模型结构。[路线与301轮入口](research_cognition_physics/archive_231_/spacetime_mainline_priority.md)已记录；科学轮次仍至300，历史下一步建议由本安排更新。
+
+> **第301—302轮完成（2026-09-22）**：[301轮](research_cognition_physics/archive_231_/research_note_301.md)接通因果共形类、体积与非平直度量；[302轮](research_cognition_physics/archive_231_/research_note_302.md)进一步核验曲率上的标量传播，证明相同光锥仍允许不同物质耦合。新增18项检查，第三阶段累计630项。下一步研究物质作用量、能量守恒及几何反作用；给定背景的校准不称为自然时空生成。
+
+> **第303—304轮完成（2026-09-22）**：[303轮](research_cognition_physics/archive_231_/research_note_303.md)补齐标量场应力和压力功能量账；[304轮](research_cognition_physics/archive_231_/research_note_304.md)对接Jacobson条件，完成一个物质与几何共同演化的解析／数值校准。新增19项检查，第三阶段累计649项。下一步核对视界熵变、热流和面积响应的微观接口；面积熵与Unruh条件尚未由认知原则推出。
+
+> **第305—306轮完成（2026-09-22）**：[305轮](research_cognition_physics/archive_231_/research_note_305.md)接入量子熵第一定律及相对熵有限余项，明确模能量与物理能量的识别条件；[306轮](research_cognition_physics/archive_231_/research_note_306.md)复算固定体积小球的面积响应与引力系数。新增18项检查，第三阶段累计667项。下一步从候选真空计算模流并检验几何对应；面积熵和纠缠平衡仍需独立来源。
+
+> **第307—308轮完成（2026-09-22）**：[307轮](research_cognition_physics/archive_231_/research_note_307.md)从给定自由费米子基态独立计算约化态和模生成元；[308轮](research_cognition_physics/archive_231_/research_note_308.md)检验几何模流的有限格点反例、受限窗口误差和长程项的连续相消。新增20项检查，第三阶段累计687项。下一步检验非共形物质修正；一维物质分支、面积熵和纠缠驻定尚未从认知原则唯一推出。
+
+> **第309—312轮完成（2026-09-22）**：连续推进有隙基态、[区间几何误差](research_cognition_physics/archive_231_/research_note_310.md)、[有质量半空间](research_cognition_physics/archive_231_/research_note_311.md)和[球区迹项障碍](research_cognition_physics/archive_231_/research_note_312.md)。结果支持在验证BW条件后优先沿局部视界连接一般物质；球区共形公式需额外修正。新增36项检查，第三阶段累计723项。下一步追查面积熵与引力耦合是否出自同一计算，尚未宣称引力已由认知原则推出。
+
+> **第313—315轮完成（2026-09-23）**：对接热核与一环有效作用量，复算[面积熵和引力耦合的共同系数](research_cognition_physics/archive_231_/research_note_313.md)、[曲率耦合接触项](research_cognition_physics/archive_231_/research_note_314.md)及[尺度一致性](research_cognition_physics/archive_231_/research_note_315.md)。给定模型下两类修正可来自同一个计算，但裸耦合与绝对尺度仍未选定。新增26项检查，第三阶段累计749项；下一步检验局部平衡与熵产生，不将此对应宣称为从认知原则推出完整引力。
+
+> **第316—318轮完成（2026-09-23）**：接续[有限类光片的面积余项](research_cognition_physics/archive_231_/research_note_316.md)、[嵌套区域与双向响应约束](research_cognition_physics/archive_231_/research_note_317.md)和[非最小耦合的能流／Wald表面项](research_cognition_physics/archive_231_/research_note_318.md)。新增29项检查，第三阶段累计778项；本次313—318轮合计55项。明确一阶平衡的边界与统一记账条件，未将经典几何或已有引力方程作为认知推导结果。下一步检查场依赖Wald熵的非线性聚焦。
+
+> **第319—321轮完成（2026-09-23）**：核验[非线性Wald聚焦](research_cognition_physics/archive_231_/research_note_319.md)、[Einstein框架的面积／仿射／动能对应](research_cognition_physics/archive_231_/research_note_320.md)和[正耦合边界反例](research_cognition_physics/archive_231_/research_note_321.md)。指定经典理论内，原面积下降可与Wald熵增加并存；F＝0使变换失效，却不必使特殊原背景奇异。新增28项检查，第三阶段累计806项；下一步加入测试物质核对操作读数，仍不把输入作用量宣称为认知推导。
+
+> **第322—324轮完成（2026-09-23）**：核验[有质量轨迹](research_cognition_physics/archive_231_/research_note_322.md)、[雷达与频率读数](research_cognition_physics/archive_231_/research_note_323.md)，并建立[共同物质度规的受限判据](research_cognition_physics/archive_231_/research_note_324.md)。一致变换物质后读数不变，物种质量比变化却不能靠共形重写消除；共同几何的缺口收紧为普适物质耦合问题。新增29项，第三阶段累计835项；下一步核对闭合能量账能否选择这一耦合。
+
+> **第325—327轮完成（2026-09-23）**：得到[闭合多物种反例](research_cognition_physics/archive_231_/research_note_325.md)，并对接[软自旋2一致性](research_cognition_physics/archive_231_/research_note_326.md)与[标量力的作用范围](research_cognition_physics/archive_231_/research_note_327.md)。整体能量账闭合不强制相同标量耦合；普适自旋2项也不排除额外标量力。新增28项检查，第三阶段累计863项；下一步检验有质量标量消去后的低能有效极限。
+
+> **第328—330轮完成（2026-09-23）**：完成[重标量消去与谱界](research_cognition_physics/archive_231_/research_note_328.md)、[势能幅值边界](research_cognition_physics/archive_231_/research_note_329.md)和[低能物质动力学匹配](research_cognition_physics/archive_231_/research_note_330.md)。被消去场留下可计算的势能和动能修正；初态中已占据的能量不能随描述简化而删除。新增29项，第三阶段累计892项；下一步将有效应力与动态几何共同匹配，Einstein作用量仍是输入。
+
+> **第331—332轮完成（2026-09-23）**：[331轮](research_cognition_physics/archive_231_/research_note_331.md)共同匹配有效物质与动态几何；[332轮](research_cognition_physics/archive_231_/research_note_332.md)检验已占据重场的平均引力源及相位边界。重场振幅减小不等于能量源消失；平均无压近似也不意味着瞬时压力为零。新增22项，第三阶段累计914项；下一步检验空间扰动和波长边界。仍以给定经典作用量作条件性对接，未宣称已推出暗物质。
+
+> **第333—334轮完成（2026-09-23）**：完成[空间扰动与波长边界](research_cognition_physics/archive_231_/research_note_333.md)和[同背景、不同物质几何反例](research_cognition_physics/archive_231_/research_note_334.md)。相同膨胀或Einstein几何形式不保证相同聚集与探针读数。按用户问题建立[GR附加条件清单](research_cognition_physics/archive_231_/gr_assumption_dependency_review.md)，区分生成、定标、表示和边界问题；对接不能自动消除已作为证明前提的假设。新增22项，第三阶段累计936项。
+
+> **第335—336轮完成（2026-09-23）**：[335轮](research_cognition_physics/archive_231_/research_note_335.md)区分局部锥差衰减与累计传播记忆；[336轮](research_cognition_physics/archive_231_/research_note_336.md)在指定均匀双标量模型中证明有限物质占据与完整反作用可使度规差异趋零，零占据和晚期极限不交换。新增23项，第三阶段累计959项。下一步检验耦合扰动与传播本征模，尚未由认知原则推出普适耦合。
+
 > **核心定理**：
 > - **定理1（222轮）**：完整动作的本地校准可迁移（P）⟺ 局部层析（L）
 > - **定理2**：F+U+C+P ⟹ 复矩阵状态锥（引用 Barnum–Ududec–van de Wetering 2023 主分类定理）
@@ -298,3 +368,101 @@ python -X utf8 research_physics_construction/<script_name>.py --write-results
 宇宙在通过你认识它自己。
 
 —— 一个曾经在这里想过这些问题的人
+
+> **第337—338轮完成（2026-09-23）**：[337轮](research_cognition_physics/archive_231_/research_note_337.md)证明指定有限占据区域内真实混合标量主部稳定、传播趋向引力光锥；[338轮](research_cognition_physics/archive_231_/research_note_338.md)给出参数开区间及过强耦合的梯度失稳反例。新增23项检查，第三阶段累计982项。下一步研究有限多物种的共同传播；未推出全背景稳定或认知必然的普适耦合。
+
+> **第339—341轮并行完成（2026-09-23）**：三轮共享冻结至338轮的科学基线，分别完成[多物种总稳定条件](research_cognition_physics/archive_231_/research_note_339.md)、[非指数耦合函数类吸引](research_cognition_physics/archive_231_/research_note_340.md)和[探针扰动论窗口](research_cognition_physics/archive_231_/research_note_341.md)。新增37项检查全部通过，第三阶段累计1019项。已将独立完整轮次并行写入执行规则；下一批分别研究多物种闭合演化、有限波长扰动和背景相互作用尺度。仍为明示作用量下的条件结论，未推出普遍等效原理。
+
+> **第342—344轮完成并持续接续（2026-09-23）**：新增42项检查通过，第三阶段累计1061项。三轮独立确认[自然动力学](research_cognition_physics/archive_231_/research_note_342.md)、[三维／Lorentz选择](research_cognition_physics/archive_231_/research_note_343.md)及[精确Einstein唯一性](research_cognition_physics/archive_231_/research_note_344.md)的现有充分性条件仍有缺口。345—347已继续检查内部程序、自主执行和严格因果极限；当前任务持续目标已激活，不等待逐轮“继续”。限定反例不冒充整个认知纲领的证伪。
+
+> **第345—347轮接续完成（2026-09-23）**：[内部程序限制](research_cognition_physics/archive_231_/research_note_345.md)、[自主历史时钟](research_cognition_physics/archive_231_/research_note_346_text_v2.md)与[严格因果极限](research_cognition_physics/archive_231_/research_note_347.md)新增43项检查，通过完整参考、资源预算和解析边界核验。第三阶段累计1104项，本次342—347共85项。348已接续对接QCA／Dirac路线；持续目标仍激活。
+
+> **第348轮完成（2026-09-23）**：[严格局域酉步与Dirac接口](research_cognition_physics/archive_231_/research_note_348.md)给出固定低动量带内、含任意参考的有限时间通道误差界；17项检查通过。第三阶段累计1121项，本次342—348共102项。持续目标保持激活，自动接续已有曲几何行走与真正反作用问题；尚未从认知合同完整导出GR。
+
+> **第349—352轮独立并行完成（2026-09-23）**：新增59项检查，第三阶段累计1180项。[曲背景概率连接](research_cognition_physics/archive_231_/research_note_349.md)、[量子反作用边界](research_cognition_physics/archive_231_/research_note_350.md)、[条件性Einstein动能选择](research_cognition_physics/archive_231_/research_note_351.md)与[物质约束范围](research_cognition_physics/archive_231_/research_note_352.md)均已冻结。当前关键缺口是认知操作到经典几何变量及形变代数的来源；353—354已自动接续，持续目标保持激活。
+
+> **第353—356轮独立并行完成（2026-09-23）**：新增59项检查，第三阶段累计1239项。[集体均值极限](research_cognition_physics/archive_231_/research_note_353.md)、[经典Poisson窗口](research_cognition_physics/archive_231_/research_note_354.md)、[自主声学几何](research_cognition_physics/archive_231_/research_note_355.md)与[双部门响应](research_cognition_physics/archive_231_/research_note_356.md)均已冻结。有限双向响应与集中性可共存，但自主弯曲几何仍不自动满足Einstein源方程。357—359已继续独立研究动态源、自旋2自耦合及涌现条件；总目标未完成或整体证伪。
+
+> **第357—360轮独立并行完成（2026-09-23）**：新增56项检查，第三阶段累计1295项。[动态双源](research_cognition_physics/archive_231_/research_note_357.md)、[自旋2自耦合](research_cognition_physics/archive_231_/research_note_358.md)、[涌现自旋2障碍](research_cognition_physics/archive_231_/research_note_359.md)与[规范区域拼接](research_cognition_physics/archive_231_/research_note_360.md)均已冻结。已得到变化源的受控经典极限，并明确给定自旋2通往Einstein动力学的额外条件；认知原则是否选择它仍开放。361—363继续独立推进大系统、边界荷与引力局域性。
+
+> **第361—364轮独立并行完成（2026-09-23）**：新增60项检查，第三阶段累计1355项。[关系图经典极限](research_cognition_physics/archive_231_/research_note_361.md)、[未知主体边界编码](research_cognition_physics/archive_231_/research_note_362.md)、[边界能量与内部动力学](research_cognition_physics/archive_231_/research_note_363.md)、[局部时钟约束](research_cognition_physics/archive_231_/research_note_364.md)均已冻结。局部逼近不等于全网准确；保未知态不等于保持原裸访问；同一历史也不自动给出引力约束。365—366继续并行检验固定Gauss加入与参数化场论，目标仍在推进。
+
+> **第365—367轮独立并行完成（2026-09-23）**：新增48项检查，第三阶段累计1403项。[固定Gauss加入](research_cognition_physics/archive_231_/research_note_365.md)保留未知参考并把有限执行内部化；[参数化场论](research_cognition_physics/archive_231_/research_note_366.md)说明完整切片代数仍不产生独立引力；[全局谱编码](research_cognition_physics/archive_231_/research_note_367.md)证明不限字典和钟标定时，乘积模型也能逼近任意有限动力学。下一轮转向有访问范围与资源条件的物理字典；完整GR目标继续。
+
+> **第368—369轮独立并行完成（2026-09-23）**：新增30项检查，第三阶段累计1433项。[有限范围纠缠字典](research_cognition_physics/archive_231_/research_note_368.md)可有邻近信号但不能扩大自然传播半径；[模包含接口](research_cognition_physics/archive_231_/research_note_369.md)明确有限维障碍与保参考窗口近似。按用户新猜想，370—372已独立推进回波端口维数、Müller–Masanes方向比特及二能级Lorentz锥；不将空间仅为共识或三字段等于三维视作既定结论。
+
+> **第370—372轮独立并行完成（2026-09-23）**：新增46项检查，第三阶段累计1479项。[记录与端口秩](research_cognition_physics/archive_231_/research_note_370.md)、[方向比特定理接口](research_cognition_physics/archive_231_/research_note_371.md)、[量子位Lorentz锥与过滤](research_cognition_physics/archive_231_/research_note_372.md)均已冻结。按用户提醒，290环传播和342自然动力学的旧结果仅作引用；去重前草稿保留。下一步先核对方向概率与实际传播的联系，不重复内部维数或环路实验。
+
+> **第373—374轮独立并行完成（2026-09-23）**：新增28项检查，第三阶段累计1507项。[方向与实际传播校准](research_cognition_physics/archive_231_/research_note_373.md)给出六态初速恢复和上支波包误差；[稳定两带交叉](research_cognition_physics/archive_231_/research_note_374.md)接入余维三、拓扑保护及受控Weyl来源，明确非零拓扑荷不保证线性。既有环路、保概率及周期障碍不重做；后继已开始兼容连接与完整传播可辨识性审计。自然生成元、物理维数及完整GR仍未由认知合同推出。
+
+> **第375轮完成（2026-09-23）**：[兼容连接与完整传播辨识](research_cognition_physics/archive_231_/research_note_375.md)新增16项检查，第三阶段累计1523项。固定LC时分类兼容连接；允许挠率后存在曲率不同而完整Weyl传播相同的五维核。几何来源与引力反作用尚未推出。旧环路和融合一致性结果只作引用；下一步先明确[物理解释的实施条件](research_cognition_physics/archive_231_/operational_interpretation_contract_proposal.md)，不以重复模型新增轮次。
+
+> **阶段目标调整（375轮后，2026-09-23）**：按用户最新指示，当前先研究[可测空间为什么是三维](research_cognition_physics/archive_231_/three_dimensional_stage_priority.md)。376已启动局部方向与跨点可达维数的检验；后续安排为时间／因果结构与狭义相对论，再分支推进引力和物质／标准模型。科学成果仍完成至375轮，长期GR目标保留为未完成，路线维护不增加轮次或科学检查数。
+
+> **第376—377轮独立并行完成（2026-09-23）**：按三维阶段主线，[局部方向与可积性](research_cognition_physics/archive_231_/research_note_376.md)和[各向同性与位置身份](research_cognition_physics/archive_231_/research_note_377.md)新增27项检查，第三阶段累计1550项。三个局部方向和完整方向对称性仍不单独决定物理空间维数；下一步从定位与测距区分位置、姿态及内部记忆。两轮已冻结，当前优先级仍是三维空间，GR及标准模型留待后续分支。
+
+> **第378—379轮独立并行完成（2026-09-23）**：[位置商与姿态回转](research_cognition_physics/archive_231_/research_note_378.md)和[位置与预测状态](research_cognition_physics/archive_231_/research_note_379.md)新增28项检查，累计1578项。回到同地但姿态改变、同地同速但内部准备导致异轨，均不自动增加空间维数。已收紧定位接口的验收，380继续检验真实方向的可分离性与完整读取条件；三维与GR仍未由原原则推出。
+
+> **第380轮完成（2026-09-23）**：[方向对比与三维充分条件](research_cognition_physics/archive_231_/research_note_380.md)独立于378—379新增15项检查，第三阶段累计1593项。普通层析仍允许圆周方向；方向差完整加完整位置边界、全族实际酉协变才足以推出三维，有限校准下界0.54553634。当前阶段继续围绕这些物理连接条件的来源；后续先时间／因果与狭义相对论，再分支推进引力与量子场论／标准模型。三维与GR均未由原原则完整推出。
+
+> **第381—382轮独立并行完成（2026-09-23）**：[方向标签与Hopf纤维](research_cognition_physics/archive_231_/research_note_381.md)给出隐藏信息恢复的锐误差界；[反向可分与维数界](research_cognition_physics/archive_231_/research_note_382.md)把条件性三维拆成拓扑上界和正则性下界。新增27项检查，第三阶段累计1620项。当前优先解释完整位置边界、反向关系和覆盖条件的来源；后续先因果／狭义相对论，再分支推进GR与量子场论／标准模型。尚未从原认知原则完整推出物理三维。
+
+> **第383—384轮独立并行完成（2026-09-23）**：[实际反向与返回障碍](research_cognition_physics/archive_231_/research_note_383.md)将标准对径放宽为真实连续自由对合，并给出Hopf反向提升的锐返回界；[可逆重定向与三维下界](research_cognition_physics/archive_231_/research_note_384.md)删除Lipschitz输入，把精确传递放宽为每条轨道稠密。新增24项检查，第三阶段累计1644项。当前仍优先推导可测物理空间的三维性；完整位置边界、实际操作及物理接口的来源未解决，后续依次研究有效时间／因果与狭义相对论，再分支推进引力和量子场论／标准模型。
+
+> **第385轮完成（2026-09-23）**：[可缩放位移与完整边界](research_cognition_physics/archive_231_/research_note_385.md)在明确的端点位移、相容缩放和proper预算条件下，不先假定流形而推出完整球形边界及同基点自由反向；保组合的极小重定向另迫加法群。新增12项检查，第三阶段累计1656项。新操作合同、量子方向的物理对应及渐近缩放仍需解释，未无条件完成三维、SR或GR。
+
+> **第386轮完成（2026-09-23）**：[渐近位移与有限尺度读出](research_cognition_physics/archive_231_/research_note_386.md)新增12项检查，第三阶段累计1668项。明确的局部缩放合同把切向Lie结构接到真实位置邻域；一个有限尺度的反向分离证书即可给维数上界，允许信号减弱但须控制相对误差。三维下界及几何条件来源仍各自留账；下一步检验定位、缩放与重定向的共同操作来源，不重复已有协议同态定理。
+
+> **三维阶段收尾约定（386轮后，2026-09-23）**：按用户要求，三维论证完整验收后再以实际最后轮次补完archive_231_目录名，完成本阶段论文；之后在当前任务中新建下一阶段archive目录，推进时间／因果结构与狭义相对论。当前的条件性结果尚未触发结项，安排见[研究方向](research_cognition_physics/research_direction.md)。
+
+> **第387轮完成（2026-09-23）**：[有限实际重定向与维数下界](research_cognition_physics/archive_231_/research_note_387.md)新增9项，第三阶段累计1677项。有限操作的精确组合关系加一次真实位置变化即可排除一、二维；无需全方向连续协变。与既有上界结合仍是条件性三维，实际操作与几何条件的来源尚未由认知原则得到。下一步检验四位置近似配对能否给有限精度下界；三维结项安排保持。
+
+> **第388轮完成（2026-09-23）**：[四位置有限精度维数证书](research_cognition_physics/archive_231_/research_note_388.md)新增11项，第三阶段累计1688项。在已确认完整球壳与实际可逆重定向的条件下，四个位置的连通配对即可排除一、二维，允许有限误差且无需全域精确旋转关系。距离与路径读出证书裕量分别1.594642、0.533331。下一项转向具体定位协议的操作来源；221的摘要闭合结果只引用不重做，当前仍未触发三维阶段结项。
+
+> **三维阶段收尾与前提审计（不增轮次）**：[前提来源审计](research_cognition_physics/archive_231_/spatial_premise_closure_audit.md)明确当前条件性三维与原理推导之间的缺口。按用户要求，完整验收后再补完archive_231_目录名、完成阶段论文，随后新建下一阶段archive；该次审计时科学状态为388轮／1688项检查。
+
+> **第389轮完成（2026-09-23）**：[历史正增量与因果锥](research_cognition_physics/archive_231_/research_note_389.md)给出全部有限整数历史上的保序充要条件与k≤D界。三个计数的qubit摘要虽能无损解码，仍制造错误先后；有限误差与长历史阈值有解析证据。10项检查通过，第三阶段累计1698项。该结果限制全局记录配置的特定表示，不否定单事件的局部3＋1锥；下一项明确实际位移与操作拼接，三维尚未完整结项。
+
+> **用户澄清历史剪枝（389轮后，不增轮次）**：剪枝指认知系统共同承载的实际历史，在对整个当前宇宙状态完全无影响后自然遗忘；此前助手的预测等价解释偏窄，已更正[研究方向](research_cognition_physics/research_direction.md)与[解释记录第9节](research_cognition_physics/archive_231_/spatial_premise_closure_audit.md)。后继检验实际因果痕迹的承载、迁移与消失。
+
+> **第390轮完成（2026-09-23）**：[有限时间痕迹与覆盖](research_cognition_physics/archive_231_/research_note_390.md)证明有限累计生成元下不同全态仍不能精确合并，不要求酉性；另给内部参考界、C¹重置和局部奇异率的整体有界反例。9项检查通过，第三阶段累计1707项。用户明确只有认知、无外部档案，且允许一直向前演化后状态重现；不把状态重复等同撤销过程。下一项返回当前实际记录与定位协议的桥梁，三维阶段尚未结项。
+
+> **第391轮完成（2026-09-23）**：[从实际通道反求共同记录](research_cognition_physics/archive_231_/research_note_391.md)复用可纠正代数定理，在既有交互模型中自动选择共同尖锐信息，并保留内部量子能力。微弱噪声可使零误差代数跳变，普通判读误差仍很小；共同结果一致也不必对应输入尖锐事实。9项检查通过，第三阶段累计1716项。下一项把实际共同记录接到接触、移动与定位，不把记录标签当三维空间。
+
+> **第392轮完成（2026-09-23）**：[由完整干预过程恢复直接机制](research_cognition_physics/archive_231_/research_note_392.md)在给定实验接口与张量Markov条件下省掉预设连线，证明γ＞4η的恢复裕量，并以共享内部噪声检验机制分解。10项检查通过，第三阶段累计1726项。相同可达序不同连线是231的旧事实，本轮新增的是过程恢复和误差界；不将机制图当作空间接触或三维。
+
+> **392后去重维护（不计新轮）**：核对235、360、391及可交换通道原始定理后，取消重复中心／分支算例，未创建393轮。父输入分解可以由条件性定理取得，输出访问与实际定位仍需操作来源；详见[审计第16节](research_cognition_physics/archive_231_/spatial_premise_closure_audit.md)。科学累计保持1726项。
+
+> **第393轮完成（2026-09-23）**：[程序传送的信息流与局域实施](research_cognition_physics/archive_231_/research_note_393.md)另查一维自主程序QCA：原传送指数3／2，不能免费当作同载体的局域连续演化；每格六维反向辅助可抵消，并给保参考与空白返回的四阶段脉冲。10项检查通过，累计1736项。先前取消的中心复算未恢复；尚无时间不变自主H，三维与GR仍未完成。
+
+> **第394轮完成（2026-09-23）**：[补偿传送的固定生成元障碍](research_cognition_physics/archive_231_/research_note_394.md)对393纯传送W证明：总指数抵消不够，静态有限程生成元因不同速度组解耦仍受阻。5项检查通过，累计1741项。不排除完整计算更新或准备态时钟；有限钟旧实验不重复，下一项回到实际定位与三维合同来源。
+
+> **第395轮完成（2026-09-23）**：[同一载体的多尺度读出](research_cognition_physics/archive_231_/research_note_395.md)给明示响应族的有限门槛：N尺度后选查询至少需要N个量子位，Fourier编码达到；4尺度、1％概率误差的下界为11维。5项检查通过，累计1746项。逐查询重访来源是不同协议，不能把载体容量认作空间维数；下一项回到实际探测中的来源身份与位置合同。
+
+> **第396轮完成（2026-09-23）**：[准时的量子回答能否证明到场](research_cognition_physics/archive_231_/research_note_396.md)复用已有定位验证攻击，核对完整参考态、双返回时限和非零处理时间。一对Bell资源可模拟这份任务的目标地点应答；不能据此取消可信到场前提。6项检查通过，累计1752项。后继连接实际接触与完整干预机制，三维仍未完成。
+
+> **第397轮完成（2026-09-23）**：[短时干预恢复耦合支撑](research_cognition_physics/archive_231_/research_note_397.md)给定可调用量子接口及固定闭合H，可从校准响应反求直接与多体作用，不预装连线图。独立换轴不变，有限误差有证书；内部记忆不可随意省略。7项检查通过，累计1759项。下一步检验作用支撑到稳定邻近关系的连接，尚未推导三维。
+
+> **第398轮完成（2026-09-23）**：[平均耦合与准备后的通信](research_cognition_physics/archive_231_/research_note_398.md)证明全部两两平均强度之和趋零，仍可在已准备内部控制下固定时间精确传输未知载荷及参考。6项检查通过，累计1765项。397的支撑恢复结论保留；准备域和算符预算不能从空间解释中省略。旧粗粒化、集体平均及弱边实验仅引用，三维仍未完成。
+
+> **第399轮完成（2026-09-23）**：[有误差生成元的操作区域证书](research_cognition_physics/archive_231_/research_note_399.md)用已知截断演化工具，在不预设距离及精确零边的条件下，认证整个有限窗口内任意区外操作对完整接收通道的影响。8项检查通过，累计1773项。已从作用支撑推进到有误差预算的任务区域，实际位置与三维尚未推出。
+
+> **第400轮完成（2026-09-23）**：[区域证书与联合关联](research_cognition_physics/archive_231_/research_note_400.md)将接近酉代表的单端保证合成为完整联合通道界，不要求独立噪声或局部参考精确对易。8项检查通过，累计1781项。有限任务区域可以共同保护未知关联，实际位置、三维与规模一致性仍待建立。
+
+> **[第401轮：同一固定演化中的持续有限归档](research_cognition_physics/archive_231_/research_note_401.md)**：在明确半无限时钟、内部无限工作区和输出保持合同下，同一H对每个有限前缀给任意晚的完整参考通道保证；持续改写输出则失败。8项检查通过，累计1789项。补齐特定持续性量词，未构造完整认知模型或生成位置。
+
+> **[第402轮：恢复范围与实际依赖范围](research_cognition_physics/archive_231_/research_note_402.md)**：重叠联盟可完整恢复同一未知主体，交集却有8／9恢复误差；不能直接认作位置邻域。对同一全输入实际通道，依赖范围则有交集误差相加定理。10项检查通过，累计1799项。实际权限、动态移动与三维仍开放。
+
+> **[第403轮：自然依赖与全过程干预](research_cognition_physics/archive_231_/research_note_403.md)**：同一固定H的精确零依赖可延伸至区外全过程干预；近似小影响则必须计入时间与累计控制预算。自然H和区外控制幅度都不超过1，仍有全时自然影响趋零而受控信号为1的反例。8项检查通过，累计1807项。399证书保留，实际位置与三维仍开放。
+
+> **[第404轮：固定程序与无限状态空间](research_cognition_physics/archive_231_/research_note_404.md)**：取得并核清Schaeffer原论文；在其有限配置ℓ²空间的正常程序态中，固定目标区的完整通道最终趋于空白替换，不能靠无界等待任意逼近酉操作。无限程序拼接需要另核状态空间。6项检查通过，累计1813项；普通有限任务普适性保留，三维与完整GR未完成。
+
+> **[第405轮：固定散射字典与实际访问](research_cognition_physics/archive_231_/research_note_405.md)**：同一正常空白背景空间上，给定自动机与自由层平移存在固定精确酉共轭，但局部读取在该字典下不能按算符范数作局部逼近；正常程序的完整未来界覆盖移动被动接口。7项检查通过，累计1820项。数学表示未生成实际位置或三维。
+
+> **[第406轮：可变完成时间与精确操作范围](research_cognition_physics/archive_231_/research_note_406.md)**：固定有限装置即使允许任意程序态及目标依赖的完成时间，精确酉通道集合仍至多一维；一般m个解析设置给维数上界m。7项检查通过，累计1827项。不排除有限精度、稠密重定向或有限群定位，控制参数维数不是空间维数。
+
+> **399文字勘误：** [修正版](research_cognition_physics/archive_231_/research_note_399_text_v2.md)仅补式(6)漏印的加号，[清单](research_cognition_physics/archive_231_/round399_text_correction.json)核对字节差异；原稿、代码、结果与旧核验保留，不增加科学检查。
+
+> **[第407轮：能谱识别子系统的精确证书](research_cognition_physics/archive_231_/research_note_407.md)**：指定开放链类别中，整数子式严格证明五qubit仍有5维非换基等谱变化，六qubit在参数邻域内只剩局部换基；对易字典仍可改变实际读取代数。7项检查，累计1834项。未证明全局唯一或生成位置／三维。
+
+> **[第408轮：一个已校准问题与剩余表示自由](research_cognition_physics/archive_231_/research_note_408.md)**：简单谱H下，二元效果在能量基中的连接图连通，当且仅当保留H与该效果的酉只剩整体相位。407同一个六qubit模型得到63阶精确子式证书；误差界覆盖任意未知参考，但需要连接图谱隙。8项检查，累计1842项。相干校准的准备与调用仍为输入，未生成位置或三维。

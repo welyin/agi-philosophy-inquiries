@@ -1,0 +1,174 @@
+{
+  "round": 278,
+  "scope": "Classical capacity criterion under specified unscreened quadratic response; lattice calibration, not derived physical space or charge.",
+  "grounded_monopoles": [
+    {
+      "dimension": 1,
+      "radius": 4,
+      "interior_nodes": 9,
+      "unit_charge_energy": 2.5000000000000004,
+      "nash_williams_lower_bound": 2.5
+    },
+    {
+      "dimension": 1,
+      "radius": 8,
+      "interior_nodes": 17,
+      "unit_charge_energy": 4.5,
+      "nash_williams_lower_bound": 4.5
+    },
+    {
+      "dimension": 1,
+      "radius": 16,
+      "interior_nodes": 33,
+      "unit_charge_energy": 8.499999999999998,
+      "nash_williams_lower_bound": 8.5
+    },
+    {
+      "dimension": 1,
+      "radius": 32,
+      "interior_nodes": 65,
+      "unit_charge_energy": 16.499999999999993,
+      "nash_williams_lower_bound": 16.5
+    },
+    {
+      "dimension": 2,
+      "radius": 4,
+      "interior_nodes": 81,
+      "unit_charge_energy": 0.5248755538537279,
+      "nash_williams_lower_bound": 0.4468253968253968
+    },
+    {
+      "dimension": 2,
+      "radius": 8,
+      "interior_nodes": 289,
+      "unit_charge_energy": 0.618894131739414,
+      "nash_williams_lower_bound": 0.5201559878030466
+    },
+    {
+      "dimension": 2,
+      "radius": 16,
+      "interior_nodes": 1089,
+      "unit_charge_energy": 0.7202635268622445,
+      "nash_williams_lower_bound": 0.5996084322812635
+    },
+    {
+      "dimension": 2,
+      "radius": 32,
+      "interior_nodes": 4225,
+      "unit_charge_energy": 0.8258724197677682,
+      "nash_williams_lower_bound": 0.682506980343031
+    },
+    {
+      "dimension": 3,
+      "radius": 4,
+      "interior_nodes": 729,
+      "unit_charge_energy": 0.23870294456591773,
+      "nash_williams_lower_bound": 0.19731082556479382
+    },
+    {
+      "dimension": 3,
+      "radius": 8,
+      "interior_nodes": 4913,
+      "unit_charge_energy": 0.24498463360447797,
+      "nash_williams_lower_bound": 0.2009918713364825
+    },
+    {
+      "dimension": 3,
+      "radius": 16,
+      "interior_nodes": 35937,
+      "unit_charge_energy": 0.2486377931435537,
+      "nash_williams_lower_bound": 0.2031664838520373
+    },
+    {
+      "dimension": 3,
+      "radius": 32,
+      "interior_nodes": 274625,
+      "unit_charge_energy": 0.2506235256371925,
+      "nash_williams_lower_bound": 0.20435422868207315
+    },
+    {
+      "dimension": 4,
+      "radius": 4,
+      "interior_nodes": 6561,
+      "unit_charge_energy": 0.15421197396139374,
+      "nash_williams_lower_bound": 0.13116552888057045
+    },
+    {
+      "dimension": 4,
+      "radius": 8,
+      "interior_nodes": 83521,
+      "unit_charge_energy": 0.15471486059545414,
+      "nash_williams_lower_bound": 0.1313788187377079
+    },
+    {
+      "dimension": 4,
+      "radius": 16,
+      "interior_nodes": 1185921,
+      "unit_charge_energy": 0.15487249941777637,
+      "nash_williams_lower_bound": 0.1314479642489241
+    },
+    {
+      "dimension": 4,
+      "radius": 32,
+      "interior_nodes": 17850625,
+      "unit_charge_energy": 0.15491725784677585,
+      "nash_williams_lower_bound": 0.13146780141627024
+    }
+  ],
+  "neutral_dipoles": [
+    {
+      "dimension": 1,
+      "radius": 3,
+      "energy": 0.875,
+      "net_source": 0.0,
+      "single_edge_feasible_energy": 1.0
+    },
+    {
+      "dimension": 2,
+      "radius": 3,
+      "energy": 0.49090682912723516,
+      "net_source": 0.0,
+      "single_edge_feasible_energy": 1.0
+    },
+    {
+      "dimension": 3,
+      "radius": 3,
+      "energy": 0.33236855445529007,
+      "net_source": 0.0,
+      "single_edge_feasible_energy": 1.0
+    },
+    {
+      "dimension": 4,
+      "radius": 3,
+      "energy": 0.24987514302082442,
+      "net_source": 0.0,
+      "single_edge_feasible_energy": 1.0
+    }
+  ],
+  "orthant_flow_energy_upper_bounds": {
+    "3": 2.0,
+    "4": 1.5,
+    "5": 1.3333333333333333
+  },
+  "weighted_ray": {
+    "edge_conductance": "c(n,n+1)=(n+1)^2",
+    "first_64_edges_energy": 1.6294305014088875,
+    "infinite_energy_upper_bound": 2.0,
+    "uniform_conductance_upper_bound": false
+  },
+  "analytic_conclusions": [
+    "Unit-conductance Z^d supports finite-energy net flux to infinity iff d>=3.",
+    "Any finite neutral source on a connected positive-conductance network has a finite-support feasible flow.",
+    "A closed finite graph cannot support nonzero total divergence without a declared return path.",
+    "The criterion does not single out dimension three."
+  ],
+  "checks": {
+    "run": 10,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

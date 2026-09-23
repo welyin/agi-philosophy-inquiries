@@ -1,0 +1,121 @@
+{
+  "round": 306,
+  "scope": "Known Jacobson small-ball/CFT interface with supplied smooth 3+1 geometry, conformal vacuum kernel, area entropy and fixed-volume stationarity; no microscopic area-law derivation or extension to generic matter.",
+  "geometry_rows": [
+    {
+      "ell": 0.4,
+      "curvature_K": 0.3,
+      "fixed_volume_radius": 0.4012906462918371,
+      "relative_volume_error": 0.0,
+      "fixed_volume_area_change": -0.01938201515457294,
+      "fixed_radius_area_change": -0.03196472575259435,
+      "fixed_volume_response_ratio": 1.0041482809024442,
+      "fixed_radius_response_ratio": 1.6560364935228495,
+      "fixed_volume_G00_estimate": 0.9037334528121999,
+      "true_G00": 0.8999999999999999
+    },
+    {
+      "ell": 0.2,
+      "curvature_K": 0.3,
+      "fixed_volume_radius": 0.20016033002322675,
+      "relative_volume_error": 2.220446049250313e-16,
+      "fixed_volume_area_change": -0.0012076149616746523,
+      "fixed_radius_area_change": -0.0020074050633708262,
+      "fixed_volume_response_ratio": 1.001030679699222,
+      "fixed_radius_response_ratio": 1.6640022844956581,
+      "fixed_volume_G00_estimate": 0.9009276117292998,
+      "true_G00": 0.8999999999999999
+    },
+    {
+      "ell": 0.1,
+      "curvature_K": 0.3,
+      "fixed_volume_radius": 0.10002001029257654,
+      "relative_volume_error": 0.0,
+      "fixed_volume_area_change": -7.541762171681121e-05,
+      "fixed_radius_area_change": -0.00012561345143086156,
+      "fixed_volume_response_ratio": 1.000257274372098,
+      "fixed_radius_response_ratio": 1.6660001428379438,
+      "fixed_volume_G00_estimate": 0.9002315469348883,
+      "true_G00": 0.8999999999999999
+    },
+    {
+      "ell": 0.05,
+      "curvature_K": 0.3,
+      "fixed_volume_radius": 0.050002500321482124,
+      "relative_volume_error": 0.0,
+      "fixed_volume_area_change": -4.7126919584319915e-06,
+      "fixed_radius_area_change": -7.853196277884944e-06,
+      "fixed_volume_response_ratio": 1.0000642939385018,
+      "fixed_radius_response_ratio": 1.66650000892835,
+      "fixed_volume_G00_estimate": 0.9000578645446515,
+      "true_G00": 0.8999999999999999
+    }
+  ],
+  "geometry_error_halving_ratios": [
+    4.024801211836338,
+    4.006149896768901,
+    4.0015338629597546
+  ],
+  "fixed_volume_flat_derivative": [
+    {
+      "curvature_step": 0.02,
+      "area_derivative": -0.004021238634177582,
+      "linear_closure_relative_error": 9.346037277424557e-09
+    },
+    {
+      "curvature_step": 0.01,
+      "area_derivative": -0.004021238605972366,
+      "linear_closure_relative_error": 2.3319755015904775e-09
+    },
+    {
+      "curvature_step": 0.005,
+      "area_derivative": -0.004021238598939103,
+      "linear_closure_relative_error": 5.829465798967703e-10
+    }
+  ],
+  "inhomogeneous_matter_rows": [
+    {
+      "ell": 0.4,
+      "uniform_delta_K": 0.1347529987562062,
+      "relative_gradient_correction": 0.04799999999999985
+    },
+    {
+      "ell": 0.2,
+      "uniform_delta_K": 0.008422062422262887,
+      "relative_gradient_correction": 0.012000000000000064
+    },
+    {
+      "ell": 0.1,
+      "uniform_delta_K": 0.0005263789013914304,
+      "relative_gradient_correction": 0.002999999999999965
+    },
+    {
+      "ell": 0.05,
+      "uniform_delta_K": 3.28986813369644e-05,
+      "relative_gradient_correction": 0.0007499999999999912
+    }
+  ],
+  "conditional_coupling": {
+    "entropy_density_s": 6.283185307179586,
+    "hbar": 1.0,
+    "expected_beta_8piG": 1.0,
+    "fixed_radius_wrong_beta": 0.6,
+    "fixed_radius_area_coefficient_factor": 1.6666666666666667
+  },
+  "distinguished_assumptions": [
+    "CFT vacuum modular Hamiltonian is geometric",
+    "UV entropy variation equals s times area variation",
+    "total entropy stationary at fixed volume",
+    "small curvature and slowly varying matter",
+    "first-order variations around a specified reference vacuum"
+  ],
+  "checks": {
+    "run": 9,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "round": 300,
+  "scope": "Exact delay-operator identities and affine-delay tests of known TDI-style cancellation; no derived gravity, universal clock or separation of arbitrary physical signals from clock noise.",
+  "constant_delay_example": {
+    "delays": [
+      1.0,
+      2.0
+    ],
+    "maximum_source_only_residual": 3.552713678800501e-15,
+    "maximum_surviving_signal_response": 0.08336469861450016,
+    "maximum_noise_plus_signal_identity_error": 4.760081218080359e-15
+  },
+  "varying_delay_examples": [
+    {
+      "rate_scale": 1.0,
+      "first_word_time_gap": 0.009999999999999787,
+      "lifted_word_time_gap": -0.0004939999999997724,
+      "first_source_residual": 0.09999999999999432,
+      "lifted_source_residual": -0.004939999999997724,
+      "predicted_suppression_factor": 0.0494
+    },
+    {
+      "rate_scale": 0.5,
+      "first_word_time_gap": 0.004999999999999005,
+      "lifted_word_time_gap": -0.00012425000000071407,
+      "first_source_residual": 0.04999999999999716,
+      "lifted_source_residual": -0.0012425000000106934,
+      "predicted_suppression_factor": 0.02485
+    },
+    {
+      "rate_scale": 0.25,
+      "first_word_time_gap": 0.002500000000000391,
+      "lifted_word_time_gap": -3.115625000038591e-05,
+      "first_source_residual": 0.025000000000005684,
+      "lifted_source_residual": -0.00031156250000918817,
+      "predicted_suppression_factor": 0.012462500000000001
+    },
+    {
+      "rate_scale": 0.125,
+      "first_word_time_gap": 0.0012499999999988631,
+      "lifted_word_time_gap": -7.800781251177114e-06,
+      "first_source_residual": 0.012499999999988631,
+      "lifted_source_residual": -7.800781251177114e-05,
+      "predicted_suppression_factor": 0.0062406250000000005
+    }
+  ],
+  "record_ledger": {
+    "raw_measurement_terms_first": 4,
+    "raw_measurement_terms_lifted": 8,
+    "maximum_raw_stream_shift_depth_first": 1,
+    "maximum_raw_stream_shift_depth_lifted": 3,
+    "maximum_source_history_depth_lifted": 4,
+    "minimum_source_time_on_test_grid": 1.4453468800000002,
+    "per_term_error_example": 0.0001,
+    "first_readout_error_bound": 0.0004,
+    "lifted_readout_error_bound": 0.0008,
+    "acquisition_transmission_interpolation_and_buffer_costs_are_extra": true
+  },
+  "limits": [
+    "Delay maps, aligned records and an additive two-stream response model are supplied inputs.",
+    "The lifted combination is exact algebraically, but first-order source cancellation is not exact for general varying delays.",
+    "Signals with the same response pattern as the removable source may be canceled as well.",
+    "A nonzero residual can be source leakage, interpolation error or channel response; it does not uniquely identify time fluctuations."
+  ],
+  "checks": {
+    "run": 10,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

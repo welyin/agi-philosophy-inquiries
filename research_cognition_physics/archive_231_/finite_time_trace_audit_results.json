@@ -1,0 +1,105 @@
+{
+  "round": 390,
+  "scientific_base_through_round": 389,
+  "hypothesis": "Dissipation alone allows distinct complete states to merge exactly in finite time.",
+  "scope": {
+    "ontology": "Only cognition; reference and environment here are parts inside the declared whole.",
+    "additional_inputs": [
+      "Fixed finite-dimensional complete state space",
+      "Same state-independent linear time-local generator for both preparations",
+      "Measurable generator with finite integrated norm including the endpoint",
+      "Chosen continuous parameter and physical CPTP propagation"
+    ],
+    "conclusion": "These inputs forbid coalescence of distinct states even without unitarity.",
+    "actual_event_trace_definition_derived": false,
+    "same_trajectory_recurrence_excluded": false,
+    "recurrence_assumed_allowed_by_cognitive_principles": false,
+    "overwrite_without_rollback_is_new_candidate": true,
+    "forward_recurrence_accepted_in_user_clarification": true,
+    "no_recurrence_axiom_imposed": false,
+    "global_dynamics_derived_from_ontology": false,
+    "three_dimensional_space_derived": false,
+    "budget_is_thermodynamic_or_energy_cost": false
+  },
+  "time_ordered_case": {
+    "jump_rates": [
+      0.7,
+      1.1,
+      0.8
+    ],
+    "durations": [
+      0.4,
+      0.3,
+      0.5
+    ],
+    "reference_uniform_majorant": 2.02,
+    "certified_ratio_lower_bound": 0.13265546508012172,
+    "generator_commutator_frobenius": 0.169024642580154,
+    "wrong_order_frobenius": 0.053378033158667154,
+    "rk4_vs_exact_max_error": 3.4550117699551513e-13,
+    "superoperator_smallest_singular_value": 0.3472373486569276,
+    "sampled_contractions": [
+      {
+        "reference_dimension": 1,
+        "pairs": 32,
+        "min_ratio": 0.4096019642374504,
+        "max_ratio": 0.5893335712191038
+      },
+      {
+        "reference_dimension": 2,
+        "pairs": 32,
+        "min_ratio": 0.4717438837003148,
+        "max_ratio": 0.8523010953309804
+      },
+      {
+        "reference_dimension": 3,
+        "pairs": 32,
+        "min_ratio": 0.5574612311101191,
+        "max_ratio": 0.7976165631278902
+      }
+    ]
+  },
+  "sharp_qubit_example": {
+    "rate": 1.0,
+    "target_pair_ratio": 1e-06,
+    "required_duration": 13.815510557964274,
+    "inverse_at_lambda_point_two_eigenvalues": [
+      -2.0,
+      3.0
+    ],
+    "unamplified_generator_norm": 1.0,
+    "bell_input_amplified_norm": 1.5,
+    "arbitrary_reference_safe_majorant": 1.5
+  },
+  "finite_endpoint_example": {
+    "T": 1.0,
+    "lambda_rule": "max(1-t/T,0)^2",
+    "differentiability": "C1 at T",
+    "channel_rank_at_T": 1,
+    "generator_rate_before_T": "2/(T-t)",
+    "cumulative_rate_at_endpoint": "infinite"
+  },
+  "bounded_internal_swap": {
+    "g": 1.0,
+    "global_hamiltonian_norm": 1.0,
+    "reset_time": 1.5707963267948966,
+    "reduced_lambda": "cos(g*t)^2",
+    "reduced_rate_before_T": "2*g*tan(g*t)",
+    "complete_state_distance_at_T": 1.0,
+    "local_state_distance_at_T": 0.0,
+    "information_transferred_to_internal_partner": true
+  },
+  "sources": [
+    "https://arxiv.org/pdf/0801.4100",
+    "https://arxiv.org/pdf/1710.06771"
+  ],
+  "checks": {
+    "run": 9,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

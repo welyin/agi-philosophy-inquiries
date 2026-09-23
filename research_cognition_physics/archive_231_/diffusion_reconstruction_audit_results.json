@@ -1,0 +1,67 @@
+{
+  "round": 283,
+  "scope": "Exact identification within supplied finite symmetric diffusion models with fully resolved endpoints; not a derivation of a natural generator, physical clock, three dimensions or a strict light cone.",
+  "reconstruction_cases": [
+    {
+      "name": "weighted_path",
+      "endpoints": 6,
+      "observation_time": 0.4,
+      "maximum_generator_error": 2.886579864025407e-15,
+      "minimum_centered_nonconstant_eigenvalue": 0.03422882044876281,
+      "exact_diffusion_coordinate_rank": 5,
+      "pair_distance_mean": 0.6631130577394884
+    },
+    {
+      "name": "hanoi_9",
+      "endpoints": 9,
+      "observation_time": 0.4,
+      "maximum_generator_error": 4.884981308350689e-15,
+      "minimum_centered_nonconstant_eigenvalue": 0.018315638888734245,
+      "exact_diffusion_coordinate_rank": 8,
+      "pair_distance_mean": 0.5282364528506044
+    },
+    {
+      "name": "three_port_torus_36",
+      "endpoints": 36,
+      "observation_time": 0.4,
+      "maximum_generator_error": 7.105427357601002e-15,
+      "minimum_centered_nonconstant_eigenvalue": 0.008229747049020023,
+      "exact_diffusion_coordinate_rank": 35,
+      "pair_distance_mean": 0.5884335137967014
+    }
+  ],
+  "rare_event_costs": [
+    {
+      "hop_distance": 4,
+      "time": 0.1,
+      "endpoint_probability": 3.55602804720295e-06,
+      "measured_two_time_log_slope": 3.775748114860549,
+      "independent_probes_for_95_percent_one_or_more_detections": 842437
+    },
+    {
+      "hop_distance": 4,
+      "time": 0.01,
+      "endpoint_probability": 4.100593353581035e-10,
+      "measured_two_time_log_slope": 3.976983189127467,
+      "independent_probes_for_95_percent_one_or_more_detections": 7305606811
+    },
+    {
+      "hop_distance": 4,
+      "time": 0.001,
+      "endpoint_probability": 4.160005968335367e-14,
+      "measured_two_time_log_slope": 3.997692351520403,
+      "independent_probes_for_95_percent_one_or_more_detections": 72012691721034
+    }
+  ],
+  "calibration": "Changing clock units by a multiplies numerical time by a and divides the reconstructed generator by a.",
+  "next_gap": "Fully resolved endpoint identity is essential; a hidden covering network can have the same entire visible Markov process.",
+  "checks": {
+    "run": 10,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

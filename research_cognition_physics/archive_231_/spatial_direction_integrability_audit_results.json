@@ -1,0 +1,227 @@
+{
+  "round": 376,
+  "scope": {
+    "baseline": "Frozen through 375; no dependence on other new rounds.",
+    "claim": "Rank-three local transport directions do not force rank-three controlled reachability. Involutivity gives three-dimensional leaves; an explicit nonintegrable family gives exact fourth-direction loops.",
+    "inputs": [
+      "smooth R4 position manifold and Lebesgue measure",
+      "X1=partial_x+lambda*y*partial_w, X2=partial_y+x*partial_w, X3=partial_z",
+      "positive-duration access to both signs of three supplied channels",
+      "signed pulse amplitudes, scheduling, position readout and control cost",
+      "optional L2 pullback implementation with an unchanged payload"
+    ],
+    "not_proved": [
+      "spatial dimension is or is not three from cognition",
+      "FUCP selects a manifold, distribution or control fields",
+      "the formal Pauli symbol supplies the independent pulse controls",
+      "a single natural Hamiltonian generates the controlled orbit",
+      "finite-dimensional bounded-energy quantum realization",
+      "Lorentz propagation, metric dynamics or gravity"
+    ],
+    "new_interface": "Cross-position integrability and full finite control orbits, beyond graph degree, local Bloch rank and a prescribed R3 Weyl model."
+  },
+  "local_and_endpoint_ranks": [
+    {
+      "lambda": 0.0,
+      "instantaneous_rank": 3,
+      "bracket_X1_X2": [
+        0.0,
+        0.0,
+        0.0,
+        1.000000000001
+      ],
+      "rank_with_bracket": 4,
+      "finite_protocol_endpoint_rank": 4,
+      "finite_protocol_endpoint_determinant": 0.20000000000045307
+    },
+    {
+      "lambda": 0.8,
+      "instantaneous_rank": 3,
+      "bracket_X1_X2": [
+        0.0,
+        0.0,
+        0.0,
+        0.20000000000020013
+      ],
+      "rank_with_bracket": 4,
+      "finite_protocol_endpoint_rank": 4,
+      "finite_protocol_endpoint_determinant": 0.03999999999988246
+    },
+    {
+      "lambda": 1.0,
+      "instantaneous_rank": 3,
+      "bracket_X1_X2": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rank_with_bracket": 3,
+      "finite_protocol_endpoint_rank": 3,
+      "finite_protocol_endpoint_determinant": 0.0
+    }
+  ],
+  "finite_loops": [
+    {
+      "lambda": 0.0,
+      "a": 0.2,
+      "b": 0.3,
+      "axis_time_cost": 1.0,
+      "w_displacement": 0.06000000000000005,
+      "predicted_w_displacement": 0.06,
+      "independent_RK_endpoint_error": 2.220446049250313e-16
+    },
+    {
+      "lambda": 0.0,
+      "a": 0.1,
+      "b": 0.15,
+      "axis_time_cost": 0.5,
+      "w_displacement": 0.015000000000000013,
+      "predicted_w_displacement": 0.015,
+      "independent_RK_endpoint_error": 5.551115123125783e-17
+    },
+    {
+      "lambda": 0.0,
+      "a": 0.05,
+      "b": 0.075,
+      "axis_time_cost": 0.25,
+      "w_displacement": 0.0037499999999999756,
+      "predicted_w_displacement": 0.00375,
+      "independent_RK_endpoint_error": 1.1102230246251565e-16
+    },
+    {
+      "lambda": 0.99,
+      "a": 0.2,
+      "b": 0.3,
+      "axis_time_cost": 1.0,
+      "w_displacement": 0.0005999999999999339,
+      "predicted_w_displacement": 0.0006000000000000005,
+      "independent_RK_endpoint_error": 5.551115123125783e-17
+    },
+    {
+      "lambda": 0.99,
+      "a": 0.1,
+      "b": 0.15,
+      "axis_time_cost": 0.5,
+      "w_displacement": 0.000150000000000039,
+      "predicted_w_displacement": 0.00015000000000000012,
+      "independent_RK_endpoint_error": 1.7554167342883506e-16
+    },
+    {
+      "lambda": 0.99,
+      "a": 0.05,
+      "b": 0.075,
+      "axis_time_cost": 0.25,
+      "w_displacement": 3.7499999999968114e-05,
+      "predicted_w_displacement": 3.750000000000003e-05,
+      "independent_RK_endpoint_error": 0.0
+    },
+    {
+      "lambda": 1.0,
+      "a": 0.2,
+      "b": 0.3,
+      "axis_time_cost": 1.0,
+      "w_displacement": 0.0,
+      "predicted_w_displacement": 0.0,
+      "independent_RK_endpoint_error": 2.220446049250313e-16
+    },
+    {
+      "lambda": 1.0,
+      "a": 0.1,
+      "b": 0.15,
+      "axis_time_cost": 0.5,
+      "w_displacement": 0.0,
+      "predicted_w_displacement": 0.0,
+      "independent_RK_endpoint_error": 5.551115123125783e-17
+    },
+    {
+      "lambda": 1.0,
+      "a": 0.05,
+      "b": 0.075,
+      "axis_time_cost": 0.25,
+      "w_displacement": -5.551115123125783e-17,
+      "predicted_w_displacement": 0.0,
+      "independent_RK_endpoint_error": 2.220446049250313e-16
+    }
+  ],
+  "smooth_ODE_refinement": {
+    "steps": [
+      8,
+      16,
+      32
+    ],
+    "errors": [
+      6.65335125923859e-06,
+      4.196754703342326e-07,
+      2.637653482316321e-08
+    ],
+    "successive_error_ratios": [
+      15.853562406065363,
+      15.910940278845278
+    ]
+  },
+  "near_integrable_resource": {
+    "fixed_w_resolution": 0.0001,
+    "eta_values": [
+      1.0,
+      0.01,
+      0.0001
+    ],
+    "minimum_axis_time_for_that_vertical_displacement": [
+      0.04,
+      0.4,
+      4.0
+    ],
+    "formula": "closed xy loop: |delta_w| <= |1-lambda| L^2/16, attained by a square"
+  },
+  "dimensions_and_measure": {
+    "instantaneous_direction_rank": 3,
+    "lambda_zero_control_orbit_topological_dimension": 4,
+    "lambda_zero_control_ball_volume_exponent": 5,
+    "integrable_leaf_dimension": 3,
+    "volume_bounds_lambda_zero": "R^5/6250 <= Lebesgue_volume(B_L1(R)) <= 16 R^5",
+    "volume_scope": "Specified L1 control length and Lebesgue volume; not a universal physical or spectral dimension."
+  },
+  "unknown_quantum_payload": {
+    "loop_parameters": [
+      0.3,
+      -0.4
+    ],
+    "positive_elapsed_time_at_unit_axis_rate": 1.4,
+    "net_spatial_translation": [
+      0.0,
+      0.0,
+      0.0,
+      -0.12
+    ],
+    "initial_norm": 0.9999999999999987,
+    "final_norm": 0.9999999999999987,
+    "payload_reference_reduced_state_error": 3.503978806376667e-16,
+    "centroid_displacement": [
+      1.2030516663980463e-16,
+      5.844697179615484e-17,
+      -2.3211582049050518e-17,
+      -0.1200000000000003
+    ],
+    "quadrature_orders": [
+      12,
+      18
+    ],
+    "quadrature_reduced_state_difference": 4.346503555038604e-16,
+    "complete_wavefunction_sequence_translation_error": 2.3273757686693185e-17,
+    "scope": "The proof covers all L2 spatial states with arbitrary payload/reference; quadrature only checks one spatially entangled six-amplitude example."
+  },
+  "sources": [
+    "https://doi.org/10.1090/S0002-9947-1973-0321133-2",
+    "https://scispace.com/pdf/orbits-of-families-of-vector-fields-and-integrability-of-1eeq49bauq.pdf"
+  ],
+  "checks": {
+    "run": 14,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "round": 302,
+  "scope": "Classical linear test-field equations on a supplied 3+1 de Sitter metric; no quantum vacuum selection, backreaction, discrete convergence or gravity derivation.",
+  "inputs": {
+    "H": 0.5,
+    "k": 2.0,
+    "m": 0.0,
+    "eta_interval": [
+      -4,
+      -1
+    ],
+    "rk4_steps": [
+      64,
+      128,
+      256
+    ],
+    "same_finite_time_Cauchy_data": true
+  },
+  "conformal_identity_max_error": 1.139086659085919e-13,
+  "branches": [
+    {
+      "xi": 0.0,
+      "end_phi_abs": 0.2790861466376175,
+      "end_chi": [
+        -0.3906386390786694,
+        0.3986950747612767
+      ],
+      "rk4_endpoint_errors": [
+        2.5420033979008707e-06,
+        1.5883389600693728e-07,
+        9.925404416731036e-09
+      ],
+      "error_ratios": [
+        16.00416196924267,
+        16.002763145771116
+      ],
+      "max_wronskian_drifts": [
+        4.348143503030144e-07,
+        1.3599318449131204e-08,
+        4.2506786979146227e-10
+      ]
+    },
+    {
+      "xi": 0.16666666666666666,
+      "end_phi_abs": 0.25,
+      "end_chi": [
+        -0.2080734182735712,
+        0.45464871341284085
+      ],
+      "rk4_endpoint_errors": [
+        3.862043656494199e-06,
+        2.4139354841476374e-07,
+        1.508734386087312e-08
+      ],
+      "error_ratios": [
+        15.998951429548624,
+        15.999737968509061
+      ],
+      "max_wronskian_drifts": [
+        6.02833828078353e-07,
+        1.885410283453126e-08,
+        5.893132648537858e-10
+      ]
+    }
+  ],
+  "end_amplitude_ratio_minimal_to_conformal": 1.11634458655047,
+  "same_characteristic_cone": true,
+  "BD_continuum": {
+    "raw_xi": 0.5,
+    "conformal_xi": 0.16666666666666666,
+    "constant_field_B1": -1.5,
+    "conformal_plane_residual_B_over_phi": -1.0,
+    "R_coefficient_added_for_minimal": 0.5,
+    "R_coefficient_added_for_conformal": 0.3333333333333333,
+    "finite_causal_set_operator_simulated": false
+  },
+  "checks": {
+    "run": 9,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

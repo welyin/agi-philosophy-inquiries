@@ -1,0 +1,138 @@
+{
+  "round": 289,
+  "scope": "Conditional calibration of affine clocks on a known static network; no absolute time, one-way delay, light speed or spacetime derived.",
+  "relative_rates": [
+    1.0,
+    0.6,
+    1.2,
+    1.6
+  ],
+  "rate_cycle_residual": 3.3306690738754696e-16,
+  "roundtrips": [
+    {
+      "edge": [
+        0,
+        1
+      ],
+      "roundtrip_reference_ticks": 3.7499999999999964,
+      "intercept_sum": 3.749999999999999,
+      "half_roundtrip": 1.8749999999999982
+    },
+    {
+      "edge": [
+        0,
+        2
+      ],
+      "roundtrip_reference_ticks": 5.500000000000001,
+      "intercept_sum": 5.5,
+      "half_roundtrip": 2.7500000000000004
+    },
+    {
+      "edge": [
+        0,
+        3
+      ],
+      "roundtrip_reference_ticks": 5.0625,
+      "intercept_sum": 5.0625,
+      "half_roundtrip": 2.53125
+    },
+    {
+      "edge": [
+        1,
+        2
+      ],
+      "roundtrip_reference_ticks": 4.187499999999993,
+      "intercept_sum": 4.187499999999999,
+      "half_roundtrip": 2.0937499999999964
+    },
+    {
+      "edge": [
+        2,
+        3
+      ],
+      "roundtrip_reference_ticks": 4.624999999999998,
+      "intercept_sum": 4.625,
+      "half_roundtrip": 2.312499999999999
+    }
+  ],
+  "gauge_equivalent_timestamp_max_error": 7.105427357601002e-15,
+  "shifted_minimum_delay": 0.6999999999999998,
+  "offset_delay_linear_system": {
+    "observations": 10,
+    "unknowns": 13,
+    "rank": 10,
+    "nullity": 3
+  },
+  "two_model_counterexample": {
+    "first_offsets": [
+      0.0,
+      4.0
+    ],
+    "first_directional_delays": [
+      1.0,
+      5.0
+    ],
+    "second_offsets": [
+      0.0,
+      2.0
+    ],
+    "second_directional_delays": [
+      3.0,
+      3.0
+    ],
+    "shared_four_timestamps": [
+      10.0,
+      15.0,
+      18.0,
+      19.0
+    ],
+    "maximum_timestamp_difference": 0.0,
+    "roundtrip": 6.0,
+    "midpoint_estimate": 2.0,
+    "first_true_offset_difference": 4.0,
+    "first_midpoint_bias": -2.0
+  },
+  "nonstationary_counterexample": {
+    "true_clock_rate_ratio": 1.0,
+    "delay_law": "2 + 0.03 * send_time",
+    "apparent_ratio_from_two_sends": 1.03,
+    "conclusion": "Delay drift can mimic clock-rate drift when stationarity is removed."
+  },
+  "precision_example": {
+    "true_ratio": 1.2,
+    "send_error_bound": 0.01,
+    "receive_error_bound": 0.02,
+    "slope_bounds_by_span": [
+      {
+        "span": 1.0,
+        "absolute_ratio_error_upper": 0.0653061224489796
+      },
+      {
+        "span": 10.0,
+        "absolute_ratio_error_upper": 0.006412825651302605
+      },
+      {
+        "span": 100.0,
+        "absolute_ratio_error_upper": 0.000640128025605121
+      }
+    ]
+  },
+  "resource_ledger": {
+    "directed_links": 10,
+    "calibration_one_way_probes": 20,
+    "local_timestamp_samples": 40,
+    "per_link_send_span_local_ticks": 20.0,
+    "extra_echo_transmissions": 10,
+    "extra_echo_timestamp_samples": 20,
+    "scope": "Counts probe transmissions and raw timestamp samples; encoding, delivery of records, channel occupancy and clock stability over the span remain explicit resources."
+  },
+  "checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "round": 327,
+  "scope": "Leading weak-field static limit of Einstein gravity plus a canonically normalized scalar with quadratic mass and species-dependent m_i(phi). The spin-2 Newton term is universal; scalar charges are independent inputs. Point-source exterior and structureless targets only, no binding-energy composition model, nonlinear screening, radiative stability or experimental fit.",
+  "normalization": {
+    "kappa_g": 1.0,
+    "G": 0.039788735772973836,
+    "source_mass": 0.05,
+    "source_alpha": 0.6,
+    "target_alphas": [
+      0.3,
+      0.8
+    ]
+  },
+  "range_scan_at_r_1": [
+    {
+      "mu_r": 0.0,
+      "Eotvos_parameter": 0.3614457831325303
+    },
+    {
+      "mu_r": 1.0,
+      "Eotvos_parameter": 0.2971560804754195
+    },
+    {
+      "mu_r": 5.0,
+      "Eotvos_parameter": 0.02362620832437084
+    },
+    {
+      "mu_r": 10.0,
+      "Eotvos_parameter": 0.0002995408067370166
+    },
+    {
+      "mu_r": 20.0,
+      "Eotvos_parameter": 2.5970534683286657e-08
+    }
+  ],
+  "massless_accelerations_at_r_1": [
+    -0.0027056340325622204,
+    -0.003899296105751436
+  ],
+  "equal_scalar_charge_control": 0.0,
+  "radial_Yukawa_equation_error": 5.315886077682241e-13,
+  "maximum_Newton_potential_in_test_domain": 0.0019894367886486917,
+  "maximum_target_log_mass_shift_in_test_domain": 0.001909859317102744,
+  "next_interface": "Test the long-distance Einstein limit by integrating out the massive scalar with explicit error bounds; record the scalar mass gap and coupling alignment as selection inputs, not conclusions of conservation.",
+  "checks": {
+    "run": 9,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

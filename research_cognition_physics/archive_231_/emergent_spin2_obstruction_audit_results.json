@@ -1,0 +1,157 @@
+{
+  "round": 359,
+  "scope": "Exact finite rotation-weight lemma underlying the Weinberg-Witten obstruction, discrete-rotation and nonuniform-boost kinematic counterexamples to weakened arguments, and TT gauge restoration. No finite calculation proves all QFT assumptions, constructs a stress operator, or excludes all emergent/curved-spacetime gravity.",
+  "selection_table": [
+    {
+      "helicity": 0.0,
+      "required_rotation_weight": 0.0,
+      "current_rank1_kernel": 2,
+      "symmetric_rank2_kernel": 4,
+      "full_rank2_kernel": 6
+    },
+    {
+      "helicity": 0.5,
+      "required_rotation_weight": 1.0,
+      "current_rank1_kernel": 1,
+      "symmetric_rank2_kernel": 2,
+      "full_rank2_kernel": 4
+    },
+    {
+      "helicity": 1.0,
+      "required_rotation_weight": 2.0,
+      "current_rank1_kernel": 0,
+      "symmetric_rank2_kernel": 1,
+      "full_rank2_kernel": 1
+    },
+    {
+      "helicity": 1.5,
+      "required_rotation_weight": 3.0,
+      "current_rank1_kernel": 0,
+      "symmetric_rank2_kernel": 0,
+      "full_rank2_kernel": 0
+    },
+    {
+      "helicity": 2.0,
+      "required_rotation_weight": 4.0,
+      "current_rank1_kernel": 0,
+      "symmetric_rank2_kernel": 0,
+      "full_rank2_kernel": 0
+    },
+    {
+      "helicity": -2.0,
+      "required_rotation_weight": -4.0,
+      "current_rank1_kernel": 0,
+      "symmetric_rank2_kernel": 0,
+      "full_rank2_kernel": 0
+    }
+  ],
+  "symmetric_rank2_generator_spectrum": [
+    -1.9999999999999998,
+    -0.9999999999999998,
+    -0.9999999999999998,
+    0.0,
+    0.0,
+    0.0,
+    2.237793284010081e-16,
+    0.9999999999999998,
+    0.9999999999999998,
+    1.9999999999999998
+  ],
+  "h2_generator_smallest_singular_value": 2.0000000000000004,
+  "h2_continuous_projector_norm": 5.43066900546116e-16,
+  "C4_aliasing": {
+    "candidate": "F^(00)=1; all other components zero",
+    "four_rotation_defects": [
+      0.0,
+      2.4492935982947064e-16,
+      4.898587196589413e-16,
+      7.347880794884119e-16
+    ],
+    "pi_over_4_defect": 2.0,
+    "continuous_rotation_RMS_defect": 1.4142135623730951,
+    "predicted_RMS": 1.4142135623730951
+  },
+  "nonuniform_boost_sequence": [
+    {
+      "alpha": 0.4,
+      "gamma": 2.567932455547783,
+      "rank2_boost_amplification": 24.336017026526736,
+      "laboratory_Frobenius_norm": 0.9999999999999998,
+      "brick_Frobenius_norm": 0.041091358495927315,
+      "predicted_brick_norm": 0.041091358495927266,
+      "brick_rotation_RMS_defect": 0.05811195648127532,
+      "back_transformed_norm": 1.0
+    },
+    {
+      "alpha": 0.2,
+      "gamma": 5.033489547672344,
+      "rank2_boost_amplification": 99.33400105968445,
+      "laboratory_Frobenius_norm": 0.9999999999999998,
+      "brick_Frobenius_norm": 0.010067046422494893,
+      "predicted_brick_norm": 0.01006704642249489,
+      "brick_rotation_RMS_defect": 0.014236953583731825,
+      "back_transformed_norm": 1.0000000000000082
+    },
+    {
+      "alpha": 0.1,
+      "gamma": 10.016686131634776,
+      "rank2_boost_amplification": 399.3335000661607,
+      "laboratory_Frobenius_norm": 0.9999999999999998,
+      "brick_Frobenius_norm": 0.002504172577142417,
+      "predicted_brick_norm": 0.002504172577142469,
+      "brick_rotation_RMS_defect": 0.0035414348211175923,
+      "back_transformed_norm": 1.0000000000000273
+    },
+    {
+      "alpha": 0.05,
+      "gamma": 20.00833576452976,
+      "rank2_boost_amplification": 1599.3333750041338,
+      "laboratory_Frobenius_norm": 0.9999999999999998,
+      "brick_Frobenius_norm": 0.0006252605089276781,
+      "predicted_brick_norm": 0.000625260508927612,
+      "brick_rotation_RMS_defect": 0.0008842518917418261,
+      "back_transformed_norm": 1.0000000000001226
+    }
+  ],
+  "TT_gauge_example": {
+    "boost_beta": 0.6,
+    "boosted_momentum": [
+      1.25,
+      -0.75,
+      0.0,
+      1.0
+    ],
+    "raw_time_row_norm": 0.6629126073623881,
+    "restored_time_row_norm": 0.0,
+    "gauge_change_norm": 1.2005857945186589,
+    "curvature_change_norm": 3.3422138886441676e-16,
+    "curvature_norm": 3.125,
+    "p_dot_gauge_parameter_abs": 4.163336342344337e-17
+  },
+  "theorem_inputs": [
+    "Exact appropriate 3+1 Poincare covariance on physical finite-helicity states",
+    "An exactly massless one-particle helicity |h|>1 sector",
+    "A conserved rank2 stress operator with Lorentz-covariant physical matrix elements",
+    "Its space integral generates that particle's nonzero four-momentum",
+    "The near-forward operational charge limit used in original footnote 3"
+  ],
+  "not_sufficient_inputs": [
+    "A tensor-shaped response coefficient or curved acoustic metric",
+    "Only C4 rotational symmetry or only low-energy approximate Lorentz dispersion",
+    "Posthoc G/kappa definition of stress",
+    "Finite CP instruments and Time alone"
+  ],
+  "sources": [
+    "https://doi.org/10.1016/0370-2693(80)90212-9",
+    "https://hep.physics.uoc.gr/Erasmus-IP-2013/files/lectures/chiral-symmetry/Weinberg-Witten.pdf"
+  ],
+  "checks": {
+    "run": 15,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

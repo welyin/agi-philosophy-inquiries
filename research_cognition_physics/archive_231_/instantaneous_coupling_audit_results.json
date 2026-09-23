@@ -1,0 +1,167 @@
+{
+  "round": 397,
+  "scope": "Conditional recovery of intrinsic Hamiltonian supports from a known finite tensor interface and calibrated short-time data; no input interaction graph or disjoint-channel tensor-Markov assumption. Interface access, closed fixed H, repeatable preparation and timing remain inputs; no spatial dimension or autonomous cognitive completion is derived.",
+  "canonical_cases": [
+    {
+      "qubits": 2,
+      "nonempty_supports": 3,
+      "support_reconstruction_error": 1.3357370765021415e-16,
+      "commutator_identity_error": 5.551115123125783e-17
+    },
+    {
+      "qubits": 3,
+      "nonempty_supports": 7,
+      "support_reconstruction_error": 1.1102230246251565e-16,
+      "commutator_identity_error": 1.1102230246251565e-16
+    },
+    {
+      "qubits": 4,
+      "nonempty_supports": 15,
+      "support_reconstruction_error": 2.0469737016526324e-16,
+      "commutator_identity_error": 2.220446049250313e-16
+    }
+  ],
+  "local_frames": {
+    "independent_local_frame_error": 1.3322676295501878e-15,
+    "common_spatial_axis_assumed": false
+  },
+  "finite_pulses": [
+    {
+      "time": 0.01,
+      "measured_slope": 2.7999085342297008,
+      "exact_derivative": 2.8,
+      "finite_pulse_identity_error": 8.881784197001252e-16,
+      "truncation_error": 9.146577029905956e-05,
+      "proven_bias_bound": 0.040804
+    },
+    {
+      "time": 0.005,
+      "measured_slope": 2.7999771333893544,
+      "exact_derivative": 2.8,
+      "finite_pulse_identity_error": 8.881784197001252e-16,
+      "truncation_error": 2.2866610645433383e-05,
+      "proven_bias_bound": 0.020402
+    },
+    {
+      "time": 0.0025,
+      "measured_slope": 2.799994283336833,
+      "exact_derivative": 2.8,
+      "finite_pulse_identity_error": 4.440892098500626e-16,
+      "truncation_error": 5.716663166843716e-06,
+      "proven_bias_bound": 0.010201
+    }
+  ],
+  "hyperedge": {
+    "pair_weights_triple": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "pair_weights_triangle": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "triple_support_weight_triple": 0.35999999999999993,
+    "triple_support_weight_triangle": 0.0,
+    "exact_pair_support_in_triple": 5.551115123125783e-17
+  },
+  "coherent_relay": {
+    "pair_strengths": {
+      "0,1": 0.7,
+      "0,2": 0.0,
+      "1,2": 0.8999999999999999
+    },
+    "first_order_ac": 0.0,
+    "second_order_coefficient_error": 0.0,
+    "expected_quadratic_limit": 2.52,
+    "cases": [
+      {
+        "time": 0.04,
+        "measured_commutator": 0.004029205255175879,
+        "exact_formula": 0.0040292052551757045,
+        "quadratic_coefficient": 2.518253284484924
+      },
+      {
+        "time": 0.02,
+        "measured_commutator": 0.001007825292113441,
+        "exact_formula": 0.0010078252921134699,
+        "quadratic_coefficient": 2.5195632302836026
+      },
+      {
+        "time": 0.01,
+        "measured_commutator": 0.00025198908018925074,
+        "exact_formula": 0.00025198908018927817,
+        "quadratic_coefficient": 2.5198908018925072
+      }
+    ]
+  },
+  "hidden_memory": {
+    "full_ac_strength": 0.6,
+    "frozen_mixed_memory_strength": 0.0,
+    "prepared_memory_strength": 0.6,
+    "unobserved_internal_memory_can_hide_first_order_signal": true
+  },
+  "finite_error": {
+    "norm_bound": 1.6,
+    "single_expectation_error": 1e-07,
+    "chosen_time": 0.00039528470752104737,
+    "pair_strength_error_radius": 0.0030357865537616446,
+    "tomography": {
+      "unique_product_preparations": 216,
+      "local_expectation_settings": 1944,
+      "maximum_heisenberg_hs_error": 1.7283350660321703e-07,
+      "proven_heisenberg_hs_error": 8e-07,
+      "quantum_shot_sampling_performed": false
+    },
+    "pairs": [
+      {
+        "sites": [
+          0,
+          1
+        ],
+        "measured_strength": 0.6999980091718696,
+        "true_strength": 0.7,
+        "absolute_error": 1.9908281303493425e-06,
+        "certified_present": true
+      },
+      {
+        "sites": [
+          0,
+          2
+        ],
+        "measured_strength": 0.0003171479075098076,
+        "true_strength": 0.0,
+        "absolute_error": 0.0003171479075098076,
+        "certified_present": false
+      },
+      {
+        "sites": [
+          1,
+          2
+        ],
+        "measured_strength": 0.8999533683041272,
+        "true_strength": 0.8999999999999999,
+        "absolute_error": 4.663169587271199e-05,
+        "certified_present": true
+      }
+    ],
+    "recovery_uses_nonzero_gap_promise": true,
+    "small_signal_certifies_exact_absence_without_gap": false
+  },
+  "input_interaction_graph_required": false,
+  "disjoint_channel_tensor_markov_required": false,
+  "closed_hamiltonian_time_evolution_assumed": true,
+  "tensor_interface_and_repeatable_calibration_assumed": true,
+  "recovered_couplings_identified_with_spatial_contact": false,
+  "full_position_generation_completed": false,
+  "checks": {
+    "run": 7,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

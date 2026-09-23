@@ -1,0 +1,72 @@
+{
+  "round": 382,
+  "scope": {
+    "analytic_result": "Continuous fixed-trace qubit effects on a complete antipodal S^(d-1), with every antipodal pair distinct, imply d<=3 by Borsuk-Ulam. Full-family transitive covariance and contrast completeness, plus a locally Lipschitz map on a metric boundary of Hausdorff dimension d-1, additionally imply d>=3.",
+    "inputs": [
+      "Complete physical position boundary and its standard antipodal identification",
+      "Selected complete qubit interface",
+      "Fixed trace for the upper bound",
+      "Actual whole-family covariant redirections and contrast completeness for the lower bound",
+      "Metric regularity, certified coverage and Lipschitz constants for the finite certificate"
+    ],
+    "not_proved": [
+      "A physical boundary, its dimension or complete coverage from finite samples",
+      "Any of these extra inputs from FUCP alone",
+      "A new proof or numerical verification of Borsuk-Ulam",
+      "An instrument-preserving or diamond-norm reconstruction of unknown states",
+      "Lorentz structure, GR or the standard model"
+    ],
+    "reference_scope": "Effect difference tensored with an arbitrary identity has the same operator norm. This bounds probabilities with a reference; it does not establish a complete quantum channel."
+  },
+  "fixed_trace_hidden_fourth_coordinate": {
+    "sample_count": 4,
+    "sample_antipodal_gap_min": 0.8000000000000004,
+    "sample_contrast_rank": 3,
+    "true_pole_antipodal_gap": 0.0,
+    "distance_of_missing_pole_to_sample_or_antipodes": 1.4142135623730951,
+    "sample_gap_minus_cover_correction_at_necessary_radius": -0.33137084989847587
+  },
+  "variable_trace_four_dimensional_counterexample": {
+    "alpha": 0.3,
+    "legal_alpha_ceiling": 0.35355339059327373,
+    "global_antipodal_gap_lower": 0.6,
+    "global_antipodal_gap_upper": 0.848528137423857,
+    "assumption_absent": "Trace and spectrum vary; this is not a whole-family unitary orbit."
+  },
+  "finite_cover_certificate": {
+    "m": 8,
+    "n": 16,
+    "sample_count": 114,
+    "probability_settings": 228,
+    "probability_settings_are_not_shot_counts": true,
+    "analytic_chord_coverage_upper": 0.39269908169872414,
+    "random_rounding_max_distance_for_crosscheck_only": 0.26950616305939534,
+    "effect_operator_lipschitz": 0.4,
+    "readout_error_each": 0.002,
+    "minimum_observed_probe_gap": 0.7960197887770757,
+    "certified_global_gap_lower": 0.4778605234180964,
+    "exact_global_gap_of_this_known_calibration_model": 0.8,
+    "coarse_net_certificate": -0.4626370614359172
+  },
+  "strictly_weaker_than_injectivity": {
+    "map": "S^1 angle phi -> 0.8*(cos(3phi),sin(3phi),0)",
+    "covering_multiplicity": 3,
+    "antipodal_gap": 0.8,
+    "contrast_rank": 2,
+    "scope": "This witnesses only the weakened upper-bound premise, not the full d=3 theorem."
+  },
+  "primary_sources": [
+    "https://arxiv.org/pdf/1008.1134",
+    "https://arxiv.org/html/1203.0686",
+    "https://arxiv.org/html/1206.0630v4"
+  ],
+  "checks": {
+    "run": 13,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

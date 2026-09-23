@@ -1,0 +1,106 @@
+{
+  "round": 317,
+  "scope": "Finite full-rank three-qubit reference and nested partial traces. Data processing yields a conditional generalized-entropy balance after explicitly assigning the area-response candidate. No physical horizon, Einstein equation or Newton constant is derived.",
+  "reference_min_eigenvalue": 0.020759962229264524,
+  "tangent_noncommutativity": 0.0003007614710821669,
+  "contrast_norm": 2.172610311165402,
+  "nested_algebra_rows": [
+    {
+      "algebra": "ABC",
+      "delta_S": 0.028837023033513765,
+      "delta_K": 0.030459569938873655,
+      "relative_entropy": 0.0016225469053603447,
+      "identity_error": 4.544975507059235e-16,
+      "matched_entropy_potential": -0.0016225469053598902
+    },
+    {
+      "algebra": "BC",
+      "delta_S": 6.209842784321573e-05,
+      "delta_K": 6.214376356204532e-05,
+      "relative_entropy": 4.5335719622841e-08,
+      "identity_error": 7.932565194990193e-16,
+      "matched_entropy_potential": -4.533571882958448e-08
+    },
+    {
+      "algebra": "C",
+      "delta_S": 5.720932395369971e-06,
+      "delta_K": 5.72136036332564e-06,
+      "relative_entropy": 4.2796788335408564e-10,
+      "identity_error": 7.231543787183589e-17,
+      "matched_entropy_potential": -4.279679556695235e-10
+    }
+  ],
+  "matched_finite_increment": {
+    "alpha": 1.0,
+    "entropy_difference_change": -0.02877492460567055,
+    "modular_contrast": 0.03039742617531161,
+    "relative_entropy_loss": 0.001622501569640722,
+    "candidate_generalized_increment": 0.001622501569641062,
+    "decomposition_error": 3.400058012914542e-16
+  },
+  "wrong_coefficient_counterexamples": [
+    {
+      "alpha": 0.8,
+      "entropy_difference_change": -0.003773393658982549,
+      "modular_contrast": 0.0037996782719139223,
+      "relative_entropy_loss": 2.6284612930860263e-05,
+      "candidate_generalized_increment": -0.000733651041451411,
+      "decomposition_error": 5.130444680201407e-16,
+      "epsilon": 0.1
+    },
+    {
+      "alpha": 1.2,
+      "entropy_difference_change": 0.0038262603634613424,
+      "modular_contrast": -0.0037996782719138915,
+      "relative_entropy_loss": 2.658209154704494e-05,
+      "candidate_generalized_increment": -0.0007333535628353269,
+      "decomposition_error": 4.062505540303185e-16,
+      "epsilon": -0.1
+    }
+  ],
+  "two_sided_coefficient_intervals": [
+    {
+      "epsilon": 0.8,
+      "minimum_alpha": 0.9466237187226563,
+      "maximum_alpha": 1.0584527721269852,
+      "positive_loss": 0.001622501569640722,
+      "negative_loss": 0.0017768138254723453,
+      "modular_contrast": 0.03039742617531161
+    },
+    {
+      "epsilon": 0.4,
+      "minimum_alpha": 0.9727707227390244,
+      "maximum_alpha": 1.0284857755431474,
+      "positive_loss": 0.00041384997267379653,
+      "negative_loss": 0.00043294712955965764,
+      "modular_contrast": 0.015198713087655778
+    },
+    {
+      "epsilon": 0.2,
+      "minimum_alpha": 0.9862401599562094,
+      "maximum_alpha": 1.0140731936046254,
+      "positive_loss": 0.00010456593047880602,
+      "negative_loss": 0.00010694721591186784,
+      "modular_contrast": 0.007599356543827932
+    },
+    {
+      "epsilon": 0.1,
+      "minimum_alpha": 0.9930824109174853,
+      "maximum_alpha": 1.0069958795573646,
+      "positive_loss": 2.6284612930860263e-05,
+      "negative_loss": 2.658209154704494e-05,
+      "modular_contrast": 0.0037996782719139223
+    }
+  ],
+  "logical_boundary": "Wall 1105.3445 assumes semiclassical Einstein gravity. Its GSL is a forward consistency result here, not an independent derivation of the same field equation. Two-sided near-reference monotonicity only constrains a response contrast.",
+  "next_interface": "Compare canonical boost energy with improved Hilbert stress and the nonminimal Wald surface term on the same null cut.",
+  "checks": {
+    "run": 10,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "round": 344,
+  "baseline": "Frozen research through round 341.",
+  "scope": "Specified smooth four-dimensional metric R+alpha R^2 theory near flat vacuum, with identical minimally coupled matter. Tests exact geometric uniqueness, not the full cognitive contract or low-energy GR universality.",
+  "hypothesis": "A common matter metric, covariance and positive linear energy near flat space may suffice to force the Einstein equation.",
+  "result": "This sufficiency claim is false for the declared geometric conditions: metric R+alpha R^2 with alpha>0 retains one healthy extra gravitational scalar.",
+  "added_inputs": [
+    "Smooth 3+1 Lorentz geometry, Levi-Civita metric connection and a local classical action.",
+    "Identical specified matter action S_m[g,psi], minimally and universally coupled to the physical Jordan metric in both comparisons.",
+    "alpha>0, kappa>0, F=1+2alpha R>0 near the flat vacuum; linearized health only."
+  ],
+  "lovelock_interface": {
+    "primary_proof": "https://arxiv.org/html/1005.2386",
+    "precise_input": "Second-order natural, symmetric, identically divergence-free two-tensor constructed solely from the metric.",
+    "dimension": 4,
+    "basis": [
+      "metric",
+      "Einstein tensor"
+    ],
+    "missing_selection": "Second order in the pure-metric field equations is not supplied by covariance or linearized positivity.",
+    "constants_not_fixed": [
+      "Newton coupling",
+      "cosmological constant"
+    ]
+  },
+  "linear_wave_interface": "https://arxiv.org/html/1104.0819",
+  "sign_convention": "(-+++), R^rho_sigma_mu_nu = d_mu Gamma^rho_nu_sigma - d_nu Gamma^rho_mu_sigma + ...",
+  "wave_witness": {
+    "alpha": 0.25,
+    "ricci_amplitude": 0.002,
+    "frequency": 1.1430952132988164,
+    "spatial_wavevector": [
+      0.0,
+      0.0,
+      0.8
+    ],
+    "mass_squared": 0.6666666666666666,
+    "group_speed": 0.6998542122237653,
+    "reconstructed_R": 0.001999999999999999,
+    "f_R_min_over_phase_to_linear_order": 0.999,
+    "f_R_max_over_phase_to_linear_order": 1.001,
+    "f_R_equation_max_residual": 9.75781955236954e-19,
+    "Einstein_vacuum_equation_max_residual": 0.0013066666666666663,
+    "tidal_amplitude_matrix": [
+      [
+        -0.0006533333333333332,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -0.0006533333333333332,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -0.0003333333333333332
+      ]
+    ],
+    "longitudinal_over_transverse_tidal_amplitude": 0.5102040816326532,
+    "canonical_scalar_energy_per_volume_phase_average": 9.799999999999997e-07,
+    "f_R_modes_at_scalar_shell": {
+      "fourier_kernel_dimension": 5,
+      "pure_gauge_dimension": 4,
+      "physical_polarizations_on_this_shell": 1
+    },
+    "Einstein_modes_at_same_timelike_shell": {
+      "fourier_kernel_dimension": 4,
+      "pure_gauge_dimension": 4,
+      "physical_polarizations_on_this_shell": 0
+    }
+  },
+  "null_shell_mode_count": {
+    "f_R": {
+      "fourier_kernel_dimension": 6,
+      "pure_gauge_dimension": 4,
+      "physical_polarizations_on_this_shell": 2
+    },
+    "Einstein": {
+      "fourier_kernel_dimension": 6,
+      "pure_gauge_dimension": 4,
+      "physical_polarizations_on_this_shell": 2
+    }
+  },
+  "generic_off_shell_mode_count": {
+    "f_R": {
+      "fourier_kernel_dimension": 4,
+      "pure_gauge_dimension": 4,
+      "physical_polarizations_on_this_shell": 0
+    },
+    "Einstein": {
+      "fourier_kernel_dimension": 4,
+      "pure_gauge_dimension": 4,
+      "physical_polarizations_on_this_shell": 0
+    }
+  },
+  "independent_connection_vs_direct_Ricci_max_error": 3.552713678800501e-15,
+  "off_shell_linear_Bianchi_max_residual": 2.1027513612114347e-14,
+  "derivative_orders": {
+    "Einstein_symbol_scaling_degree": 2,
+    "R_squared_correction_symbol_scaling_degree": 4
+  },
+  "scalar_tensor_interface": {
+    "F": "1+2alpha R",
+    "canonical_field": "sqrt(3/(2kappa))*log F",
+    "potential": "(1-exp(-sqrt(2kappa/3)*varphi))^2/(8kappa alpha)",
+    "mass_squared_at_flat_vacuum": 0.6666666666666666,
+    "transformed_matter": "S_m[F^(-1)g_E,psi]; the scalar cannot be discarded while claiming unchanged measurements."
+  },
+  "limits": [
+    "The displayed metric wave solves the complete linearized equations, not the full nonlinear equations at finite amplitude.",
+    "An infinite monochromatic wave is a Fourier diagnostic; quoted energy is a phase average per unit volume, not a finite total energy.",
+    "No global nonlinear stability, quantum completion or empirical fit is claimed.",
+    "No proof is supplied that this counter-family realizes the full cognitive F+U+C+P operation contract.",
+    "This falsifies only the listed geometric sufficiency claim, not the possibility of a future cognitive derivation of GR."
+  ],
+  "next_interface": "Either derive the Lovelock pure-metric second-order restriction independently from the cognitive contract, or derive a controlled low-energy elimination of the scalar with state and error bounds.",
+  "checks": {
+    "run": 13,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

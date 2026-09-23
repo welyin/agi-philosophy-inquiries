@@ -1,0 +1,101 @@
+{
+  "round": 372,
+  "scope": "Established Herm_2(C) future-cone/spinor correspondence with a complete CP filter instrument and arbitrary-reference accounting; not a derivation of event coordinates, physical 3+1 dimension, deterministic quantum boosts, spacetime dynamics or Einstein equations.",
+  "prior_difference": "Round 183 checked generic spin-factor homogeneity; this round audits the complex-qubit determinant, SL(2,C) action and physical filtering versus passive coordinates.",
+  "cone_identity": {
+    "determinant_max_error": 9.107138583543916e-16,
+    "eigenvalue_max_error": 1.1102230246251565e-15,
+    "spinor_vector_action_max_error": 4.440892098500626e-16
+  },
+  "Lorentz_example": {
+    "metric_residual": 7.771561172376096e-16,
+    "determinant": 0.9999999999999987,
+    "future_time_component": 1.3374349463048443,
+    "double_cover_residual": 0.0
+  },
+  "boost_filter": {
+    "rapidity": 0.6931471805599453,
+    "maximal_filter_scale": 0.7071067811865476,
+    "success_K_diagonal": [
+      1.0,
+      0.5
+    ],
+    "failure_K_diagonal": [
+      0.0,
+      0.8660254037844386
+    ],
+    "success_probabilities": {
+      "north": 1.0,
+      "south": 0.25,
+      "maximally_mixed": 0.625,
+      "equator_plus": 0.625,
+      "interior": 0.7749999999999999
+    },
+    "uniform_success_minimum": 0.25,
+    "normalized_map_nonaffinity_trace_distance": 0.3,
+    "bell_success_probability": 0.6249999999999999,
+    "bell_conditional_reference_eigenvalues": [
+      0.19999999999999998,
+      0.7999999999999999
+    ],
+    "bell_conditional_reference_change": 0.3,
+    "bell_average_reference_change": 1.6653345369377348e-16,
+    "recorded_instrument_trace": 0.9999999999999997,
+    "recorded_instrument_min_eigenvalue": 0.0,
+    "averaged_plus_state_bloch": [
+      0.5,
+      0.0,
+      5.551115123125783e-17
+    ],
+    "unitary_dilation_error": 1.1102230246251565e-16
+  },
+  "passive_coordinate_pairing": {
+    "pairing_error": 2.7755575615628914e-17,
+    "transformed_unit_distance_from_identity": 1.0137527074704769,
+    "new_unit_state_pairing": 0.9999999999999998,
+    "unchanged_trace_state_value": 1.5519438169640394
+  },
+  "deterministic_channel_counterexample": {
+    "amplitude_damping_gamma": 0.4,
+    "input_determinant": 0.25,
+    "output_determinant": 0.21,
+    "analytic_output_determinant": 0.21,
+    "output_bloch": [
+      0.0,
+      0.0,
+      0.3999999999999999
+    ]
+  },
+  "higher_matrix_cone_obstruction": {
+    "Herm_3_nonproportional_rank_one_sum_rank": 2,
+    "Herm_3_sum_is_boundary": true,
+    "Lorentz_nonproportional_extreme_ray_sum_is_interior": true
+  },
+  "normalized_state_order_obstruction": {
+    "claim": "For normalized rho,sigma, sigma-rho >= 0 implies sigma=rho.",
+    "distinct_state_difference_eigenvalues": [
+      -0.316227766016838,
+      0.3162277660168379
+    ]
+  },
+  "added_inputs": [
+    "specified operational qubit and Pauli frame",
+    "chosen rapidity, filter coupling and one blank two-level flag",
+    "success/failure readout retained with state-dependent weights",
+    "event-displacement identification remains unprovided",
+    "two nonnegative spectral weights and a unit effect direction do not by themselves define physical echo coordinates"
+  ],
+  "sources": [
+    "https://arxiv.org/html/quant-ph/0212135",
+    "https://arxiv.org/pdf/quant-ph/0011111"
+  ],
+  "checks": {
+    "run": 18,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

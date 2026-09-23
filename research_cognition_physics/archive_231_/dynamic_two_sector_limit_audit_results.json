@@ -1,0 +1,237 @@
+{
+  "round": 357,
+  "scope": {
+    "proved": [
+      "For specified pure iid sectors, total collective mean-square deviation E(t)<=4 exp(4|g|t)/N on finite time intervals.",
+      "Sum of the two mean-vector biases <=4[exp(4|g|t)-exp(2|g|t)]/N.",
+      "Both Z sources change under the noncommuting autonomous self dynamics, and each source acceleration depends on the other sector.",
+      "The same joint unitary supports finite bidirectional response and O(1/N) collective variance."
+    ],
+    "inputs": [
+      "Two N-qubit sectors, pure identical product state in each sector",
+      "Constant Omega_G, Omega_M, g",
+      "H=Omega_G S_Gx+Omega_M S_Mx+(g/N)S_Gz S_Mz",
+      "Fixed times and collective observations"
+    ],
+    "not_proved": [
+      "An arbitrary-input or arbitrary-reference channel limit",
+      "Full joint state convergence to a product",
+      "Uniform infinite-time accuracy or an optimal validity time",
+      "Space, dimension, local light cones, metric, HDA or Einstein equation",
+      "FUCP selects these states or this Hamiltonian"
+    ]
+  },
+  "parameters": {
+    "Omega_G": 0.7,
+    "Omega_M": -0.45,
+    "g": 0.35,
+    "initial_zG_phiG_zM_phiM": [
+      0.3,
+      0.25,
+      -0.4,
+      -0.3
+    ]
+  },
+  "fixed_time_rows": [
+    {
+      "N_per_sector": 8,
+      "time": 0.9,
+      "quantum_mean_G": [
+        0.8995033482070034,
+        -0.32504860303048366,
+        0.21498517896197888
+      ],
+      "quantum_mean_M": [
+        0.917486028687647,
+        -0.30876144668671845,
+        -0.1534898783349294
+      ],
+      "classical_mean_G": [
+        0.9199956104475505,
+        -0.32804767763083964,
+        0.21445931539163932
+      ],
+      "classical_mean_M": [
+        0.9369212805200221,
+        -0.3148523544443971,
+        -0.15181076710699665
+      ],
+      "bias_sum": 0.041153662102395544,
+      "bias_sum_upper": 0.8239054540505195,
+      "total_variance": 0.5783451185106305,
+      "mean_square": 0.5791919698889352,
+      "mean_square_upper": 1.7627107436826912,
+      "N_times_bias_sum": 0.32922929681916435,
+      "energy_per_N_error": 2.7755575615628914e-17,
+      "numerical_action": {
+        "substeps": 22,
+        "Taylor_order": 18,
+        "scaled_step_norm_upper": 0.4909090909090909,
+        "exact_arithmetic_truncation_upper": 3.9769267100403317e-22,
+        "norm_error": 2.220446049250313e-16
+      }
+    },
+    {
+      "N_per_sector": 16,
+      "time": 0.9,
+      "quantum_mean_G": [
+        0.9097040708624451,
+        -0.3264833221725447,
+        0.21474480737397572
+      ],
+      "quantum_mean_M": [
+        0.9271252178563918,
+        -0.31185117905964566,
+        -0.15263840059627182
+      ],
+      "classical_mean_G": [
+        0.9199956104475505,
+        -0.32804767763083964,
+        0.21445931539163932
+      ],
+      "classical_mean_M": [
+        0.9369212805200221,
+        -0.3148523544443971,
+        -0.15181076710699665
+      ],
+      "bias_sum": 0.020692524640187088,
+      "bias_sum_upper": 0.41195272702525976,
+      "total_variance": 0.289621002702647,
+      "mean_square": 0.28983510207794305,
+      "mean_square_upper": 0.8813553718413456,
+      "N_times_bias_sum": 0.3310803942429934,
+      "energy_per_N_error": 2.7755575615628914e-17,
+      "numerical_action": {
+        "substeps": 44,
+        "Taylor_order": 18,
+        "scaled_step_norm_upper": 0.4909090909090909,
+        "exact_arithmetic_truncation_upper": 7.953853420080663e-22,
+        "norm_error": 2.220446049250313e-16
+      }
+    },
+    {
+      "N_per_sector": 32,
+      "time": 0.9,
+      "quantum_mean_G": [
+        0.9148376761276066,
+        -0.32724880240374105,
+        0.21460780547042593
+      ],
+      "quantum_mean_M": [
+        0.9320027821101946,
+        -0.3133625462213896,
+        -0.1522216448862564
+      ],
+      "classical_mean_G": [
+        0.9199956104475505,
+        -0.32804767763083964,
+        0.21445931539163932
+      ],
+      "classical_mean_M": [
+        0.9369212805200221,
+        -0.3148523544443971,
+        -0.15181076710699665
+      ],
+      "bias_sum": 0.01037712264236839,
+      "bias_sum_upper": 0.20597636351262988,
+      "total_variance": 0.14492703708655605,
+      "mean_square": 0.14498088159963518,
+      "mean_square_upper": 0.4406776859206728,
+      "N_times_bias_sum": 0.3320679245557885,
+      "energy_per_N_error": 3.0531133177191805e-16,
+      "numerical_action": {
+        "substeps": 87,
+        "Taylor_order": 18,
+        "scaled_step_norm_upper": 0.496551724137931,
+        "exact_arithmetic_truncation_upper": 1.965168050961281e-21,
+        "norm_error": 1.7763568394002505e-15
+      }
+    },
+    {
+      "N_per_sector": 64,
+      "time": 0.9,
+      "quantum_mean_G": [
+        0.9174134996726349,
+        -0.32764400069007027,
+        0.2145350101767544
+      ],
+      "quantum_mean_M": [
+        0.9344568027741775,
+        -0.3141101099961688,
+        -0.15201547621585504
+      ],
+      "classical_mean_G": [
+        0.9199956104475505,
+        -0.32804767763083964,
+        0.21445931539163932
+      ],
+      "classical_mean_M": [
+        0.9369212805200221,
+        -0.3148523544443971,
+        -0.15181076710699665
+      ],
+      "bias_sum": 0.005196524237649236,
+      "bias_sum_upper": 0.10298818175631494,
+      "total_variance": 0.07249322637679931,
+      "mean_square": 0.07250672884082618,
+      "mean_square_upper": 0.2203388429603364,
+      "N_times_bias_sum": 0.3325775512095511,
+      "energy_per_N_error": 2.7755575615628914e-16,
+      "numerical_action": {
+        "substeps": 173,
+        "Taylor_order": 18,
+        "scaled_step_norm_upper": 0.49942196531791905,
+        "exact_arithmetic_truncation_upper": 4.372530356243165e-21,
+        "norm_error": 1.3322676295501878e-15
+      }
+    }
+  ],
+  "changing_sources": {
+    "initial_Z": [
+      0.3,
+      -0.4
+    ],
+    "final_classical_Z": [
+      0.21445931539163932,
+      -0.15181076710699665
+    ],
+    "uncoupled_final_Z": [
+      0.3164463291053672,
+      -0.07962710222664514
+    ],
+    "coupling_effect_on_Z": [
+      -0.10198701371372787,
+      -0.07218366488035151
+    ],
+    "initial_source_velocity": [
+      0.3304116694461102,
+      0.24376386895462468
+    ],
+    "interaction_part_of_initial_Z_acceleration": [
+      -0.36231914838936763,
+      -0.16548468711660066
+    ]
+  },
+  "resource_account": {
+    "physical_qubits": "2N",
+    "full_Hilbert_dimension": "4^N",
+    "symmetric_dimension": "(N+1)^2",
+    "cross_pairs": "N^2",
+    "coupling_per_pair": "g/N",
+    "Hamiltonian_norm_upper": "N*(|Omega_G|+|Omega_M|+|g|)",
+    "incident_cross_coupling_per_spin": "|g|",
+    "energy_per_particle_finite": true,
+    "spatial_locality": false
+  },
+  "primary_source": "Carollo and Lesanovsky, Phys. Rev. Lett. 133, 150401 (2024), https://arxiv.org/html/2403.17163, Eq.(1), Eq.(4), Theorem 1. N four-level cells embed this model; specific constants and bias bound are derived directly here.",
+  "numerics_scope": "Matrix-free degree-18 Taylor action uses substeps with ||H dt||<=0.5 and an exact-arithmetic truncation bound. Floating-point error is checked by norm/energy and small-N full tensor diagonalization, not certified by that truncation bound. Classical ODE uses RK4 with refinement checks.",
+  "checks": {
+    "run": 13,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

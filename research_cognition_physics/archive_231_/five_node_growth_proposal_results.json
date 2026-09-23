@@ -1,0 +1,143 @@
+{
+  "date": "2026-09-22",
+  "kind": "Unnumbered user-proposal review; main research remains through round 273.",
+  "user_clarification": "+5 means additional nodes, not numeric relabeling.",
+  "fixed_increment_extension_if_repeated": [
+    5,
+    10,
+    15,
+    20,
+    25,
+    30
+  ],
+  "independent_groups_if_all_five_are_retained": [
+    {
+      "generation": 0,
+      "group_sizes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "total": 15
+    },
+    {
+      "generation": 1,
+      "group_sizes": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "total": 40
+    },
+    {
+      "generation": 2,
+      "group_sizes": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "total": 65
+    },
+    {
+      "generation": 3,
+      "group_sizes": [
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "total": 90
+    }
+  ],
+  "seed": {
+    "nodes": 5,
+    "edges": 5,
+    "degree_counts": {
+      "2": 5
+    },
+    "diameter": 2,
+    "unordered_pair_distance_counts": {
+      "1": 5,
+      "2": 5
+    },
+    "mean_distance": 1.5
+  },
+  "same_budget_extensions": [
+    {
+      "inner_step": 1,
+      "nodes": 10,
+      "edges": 15,
+      "degree_counts": {
+        "3": 10
+      },
+      "diameter": 3,
+      "unordered_pair_distance_counts": {
+        "1": 15,
+        "2": 20,
+        "3": 10
+      },
+      "mean_distance": 1.8888888888888888
+    },
+    {
+      "inner_step": 2,
+      "nodes": 10,
+      "edges": 15,
+      "degree_counts": {
+        "3": 10
+      },
+      "diameter": 2,
+      "unordered_pair_distance_counts": {
+        "1": 15,
+        "2": 30
+      },
+      "mean_distance": 1.6666666666666667
+    }
+  ],
+  "copy_and_link_is_a_different_rule": [
+    {
+      "generation": 0,
+      "nodes": 5,
+      "degree": 2
+    },
+    {
+      "generation": 1,
+      "nodes": 10,
+      "degree": 3
+    },
+    {
+      "generation": 2,
+      "nodes": 20,
+      "degree": 4
+    },
+    {
+      "generation": 3,
+      "nodes": 40,
+      "degree": 5
+    },
+    {
+      "generation": 4,
+      "nodes": 80,
+      "degree": 6
+    }
+  ],
+  "checks": {
+    "original_seed_preserved_in_both": true,
+    "equal_new_nodes_and_edges": true,
+    "equal_cubic_degree": true,
+    "different_distance_distributions": true,
+    "copy_and_link_degree_growth_verified": true
+  },
+  "scope": "Arithmetic recursion allows population growth but does not specify adjacency. Two explicit five-to-ten extensions have equal node, edge and degree budgets and different graph distances. A supplied copy-and-link completion doubles population but is not closed under a fixed degree-three cap. No unique spatial geometry, node identities, quantum channels or physical resource source is derived.",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "code_sha256": "284cc5ef40e9f2f7138ed42358f2cfcb3c8f9a1b09046cf9acdf57586b0f80e6"
+}

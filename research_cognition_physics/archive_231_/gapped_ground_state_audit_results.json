@@ -1,0 +1,72 @@
+{
+  "round": 309,
+  "scope": "Explicit 1D dimerized free-fermion branch; mass/gap and cell geometry are inputs.",
+  "gapped_cases": [
+    {
+      "delta": 0.02,
+      "band_gap": 0.04,
+      "correlation_length_in_sites": 49.99333262207313,
+      "correlation_length_in_two_site_cells": 24.996666311036567,
+      "entropy_N32": 1.7760726930133215,
+      "quadrature_2048_4096_error_fro": 1.1742585257850858e-15
+    },
+    {
+      "delta": 0.1,
+      "band_gap": 0.2,
+      "correlation_length_in_sites": 9.966577309127942,
+      "correlation_length_in_two_site_cells": 4.983288654563971,
+      "entropy_N32": 1.5067598832739366,
+      "quadrature_2048_4096_error_fro": 9.3044244444099e-16
+    },
+    {
+      "delta": 0.3,
+      "band_gap": 0.6,
+      "correlation_length_in_sites": 3.230813125955614,
+      "correlation_length_in_two_site_cells": 1.615406562977807,
+      "entropy_N32": 1.4022009885878115,
+      "quadrature_2048_4096_error_fro": 8.904467043149324e-16
+    },
+    {
+      "delta": -0.3,
+      "band_gap": 0.6,
+      "correlation_length_in_sites": 3.230813125955614,
+      "correlation_length_in_two_site_cells": 1.615406562977807,
+      "entropy_N32": 0.4071847495496665,
+      "quadrature_2048_4096_error_fro": 1.614790317156544e-15
+    }
+  ],
+  "quadrature_convergence": [
+    {
+      "momentum_points": 128,
+      "error_fro": 0.004053128120100564
+    },
+    {
+      "momentum_points": 256,
+      "error_fro": 0.0002362670012019675
+    },
+    {
+      "momentum_points": 512,
+      "error_fro": 1.0113753062085698e-06
+    },
+    {
+      "momentum_points": 1024,
+      "error_fro": 2.565551347856632e-11
+    }
+  ],
+  "independent_fock_partial_trace_error": 1.1091634811957296e-15,
+  "fully_dimerized_entropy": {
+    "cut_strong_bonds_delta_plus_1": 1.3862943611199094,
+    "cut_weak_bonds_delta_minus_1": 1.6142867579807968e-14
+  },
+  "cut_convention": "Site 1--2 bond is (1-delta)/2. Even interval cuts strong bonds for positive delta.",
+  "endpoint_policy": "Entropy uses its continuous endpoint value; unresolved full modular logarithms remain forbidden.",
+  "checks": {
+    "run": 9,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "round": 377,
+  "scope": "A specified smooth free step-two rank-three Carnot control model. Full O(3) horizontal isotropy coexists with six-dimensional reachability and homogeneous volume exponent nine. Not a derivation of physical space, a counterexample to the Muller-Masanes theorem, or autonomous quantum dynamics.",
+  "dimensions": {
+    "horizontal_rank": 3,
+    "bracket_span_rank": 6,
+    "manifold_dimension": 6,
+    "homogeneous_volume_exponent": 9
+  },
+  "opposite_loops": {
+    "positive_endpoint": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "negative_endpoint": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "same_horizontal_endpoint": true,
+    "pulse_cost_each": 4.0,
+    "central_effect_positive": 0.8807970779778824,
+    "central_effect_negative": 0.11920292202211757,
+    "probability_gap": 0.7615941559557649
+  },
+  "constructive_reachability": {
+    "target": [
+      0.4,
+      -0.2,
+      0.6,
+      0.3,
+      -0.5,
+      0.8
+    ],
+    "endpoint": [
+      0.3999999999999999,
+      -0.19999999999999996,
+      0.6000000000000001,
+      0.3000000000000001,
+      -0.5,
+      0.8000000000000003
+    ],
+    "endpoint_residual": 2.9893669801409083e-16,
+    "pulses": 5,
+    "cost": 4.728179702925541,
+    "analytic_cost_upper_bound": 4.728179702925541
+  },
+  "isotropy": {
+    "group": "O(3): (x,z) -> (R x, det(R) R z)",
+    "reflection_endpoint_residual": 6.526987848146008e-16,
+    "proper_rotations_on_qubit": "Inherited SU(2)/SO(3) interface from round 371; no new qubit test.",
+    "reflection_is_not_assumed_a_qubit_unitary": true
+  },
+  "dilation": [
+    {
+      "scale": 0.25,
+      "volume_factor": 3.814697265625001e-06,
+      "expected_r_to_9": 3.814697265625e-06
+    },
+    {
+      "scale": 0.5,
+      "volume_factor": 0.001953125,
+      "expected_r_to_9": 0.001953125
+    },
+    {
+      "scale": 1.0,
+      "volume_factor": 1.0,
+      "expected_r_to_9": 1.0
+    },
+    {
+      "scale": 2.0,
+      "volume_factor": 511.99999999999994,
+      "expected_r_to_9": 512.0
+    },
+    {
+      "scale": 3.0,
+      "volume_factor": 19683.000000000036,
+      "expected_r_to_9": 19683.0
+    }
+  ],
+  "coordinate_readout_input": "The full endpoint is an observable configuration. With x-only effects and the listed controls, z can instead be quotiented out.",
+  "quantum_interface": "Each prescribed pulse is a unit-Jacobian diffeomorphism, hence its pullback is unitary on L2(G) and extends by identity to any reference. This is an added infinite-dimensional representation, not FUCP's finite reconstruction.",
+  "sources": [
+    "https://arxiv.org/pdf/1610.07359",
+    "https://cvgmt.sns.it/media/doc/paper/3191/cut-free-v2.pdf"
+  ],
+  "checks": {
+    "run": 13,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

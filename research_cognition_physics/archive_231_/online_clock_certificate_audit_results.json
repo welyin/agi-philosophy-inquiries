@@ -1,0 +1,109 @@
+{
+  "round": 297,
+  "scope": "Causal prediction for a prescribed clock under supplied drift, error, delivery and service bounds; not a derivation of physical time or a universal impossibility test.",
+  "inputs": {
+    "lipschitz": 0.001,
+    "sample_error": 0.0002,
+    "domain": [
+      0.0,
+      30.0
+    ],
+    "reference_shift": 1.0,
+    "tolerance": 0.02,
+    "decision_time": 10.0,
+    "prediction_horizon": 2.0,
+    "period": 4.0,
+    "delivery_bound": 1.1
+  },
+  "records": [
+    [
+      0.0,
+      0.0,
+      1.1
+    ],
+    [
+      4.0,
+      0.003586780454497614,
+      5.1
+    ],
+    [
+      8.0,
+      0.004997868015207525,
+      9.1
+    ],
+    [
+      12.0,
+      0.003377315902755753,
+      13.1
+    ],
+    [
+      16.0,
+      -0.00029187071713790045,
+      17.1
+    ],
+    [
+      20.0,
+      -0.0037840124765396413,
+      21.1
+    ]
+  ],
+  "received_at_decision": [
+    [
+      0.0,
+      0.0,
+      1.1
+    ],
+    [
+      4.0,
+      0.003586780454497614,
+      5.1
+    ],
+    [
+      8.0,
+      0.004997868015207525,
+      9.1
+    ]
+  ],
+  "latest_received_launch": 8.0,
+  "age_at_decision": 2.0,
+  "future_residual_interval": [
+    0.0007978680152075255,
+    0.009197868015207524
+  ],
+  "actual_future_residual": 0.003377315902755753,
+  "expiry_without_new_data": 22.802131984792474,
+  "period_budget": {
+    "minimum_period_by_work": 4.0,
+    "maximum_period_by_certificate": 11.7,
+    "this_sufficient_policy_has_feasible_period": true
+  },
+  "uniform_policy_bound": 0.012299999999999998,
+  "seven_unit_window_policy_bound": 0.0173,
+  "six_hop_certificate": [
+    15.896199999999997,
+    16.103800000000003
+  ],
+  "resource_ledger": {
+    "channels": 6,
+    "work_per_update": 2,
+    "service_per_unit": 12,
+    "reserved_fraction": 0.25,
+    "update_work_rate": 3.0,
+    "delivery_bound_must_be_established_separately": true
+  },
+  "limits": [
+    "Receipt filtering uses fixed candidate coordinates and conservative availability times, not a newly derived absolute time.",
+    "The Lipschitz bound must extend over the future certification domain and the actual probe policy.",
+    "An empty sufficient period interval rejects this certificate/policy combination, not all synchronization schemes.",
+    "More past data cannot remove future drift uncertainty without stronger assumptions."
+  ],
+  "checks": {
+    "run": 9,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

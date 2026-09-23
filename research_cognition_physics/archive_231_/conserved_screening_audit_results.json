@@ -1,0 +1,91 @@
+{
+  "round": 281,
+  "scope": "Static positive-conductance networks with supplied topology and scalar quadratic energy; no physical mass, field, dimension or natural dynamics derived.",
+  "coupling": 0.25,
+  "two_layer_cases": [
+    {
+      "cycle_sites_per_layer": 8,
+      "joint_nodes": 16,
+      "cycle_first_positive_eigenvalue": 0.585786437626905,
+      "eliminated_layer_first_positive_eigenvalue": 0.761006569007046,
+      "clamped_layer_smallest_eigenvalue": 0.25,
+      "relative_mode_smallest_eigenvalue": 0.5,
+      "neutral_cross_layer_point_source_energy": 1.3437908496732027,
+      "normalized_complete_graph_positive_gap": 1.0
+    },
+    {
+      "cycle_sites_per_layer": 16,
+      "joint_nodes": 32,
+      "cycle_first_positive_eigenvalue": 0.15224093497742647,
+      "eliminated_layer_first_positive_eigenvalue": 0.2468614234329153,
+      "clamped_layer_smallest_eigenvalue": 0.25,
+      "relative_mode_smallest_eigenvalue": 0.5,
+      "neutral_cross_layer_point_source_energy": 1.3333740240583911,
+      "normalized_complete_graph_positive_gap": 1.0
+    },
+    {
+      "cycle_sites_per_layer": 32,
+      "joint_nodes": 64,
+      "cycle_first_positive_eigenvalue": 0.038429439193539104,
+      "eliminated_layer_first_positive_eigenvalue": 0.0717386597268084,
+      "clamped_layer_smallest_eigenvalue": 0.25,
+      "relative_mode_smallest_eigenvalue": 0.5,
+      "neutral_cross_layer_point_source_energy": 1.333333333954215,
+      "normalized_complete_graph_positive_gap": 1.0
+    },
+    {
+      "cycle_sites_per_layer": 64,
+      "joint_nodes": 128,
+      "cycle_first_positive_eigenvalue": 0.009630546655606228,
+      "eliminated_layer_first_positive_eigenvalue": 0.018903864818338556,
+      "clamped_layer_smallest_eigenvalue": 0.25,
+      "relative_mode_smallest_eigenvalue": 0.5,
+      "neutral_cross_layer_point_source_energy": 1.3333333333333333,
+      "normalized_complete_graph_positive_gap": 1.0
+    }
+  ],
+  "source_transfer_example": {
+    "retained": [
+      0,
+      4,
+      8
+    ],
+    "internal": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7
+    ],
+    "original_total": 0.0,
+    "effective_source": [
+      0.2058544807389608,
+      0.19409917244645158,
+      -0.3999536531854123
+    ],
+    "effective_total": 5.551115123125783e-17,
+    "maximum_reduced_row_sum_error": 6.661338147750939e-16
+  },
+  "infinite_chain_relative_channel": {
+    "gap": 0.5,
+    "geometric_decay_ratio": 0.5,
+    "one_layer_center_potential": 0.6666666666666666,
+    "full_quadratic_energy": 1.3333333333333333
+  },
+  "conclusions": [
+    "Passive elimination preserves constant shifts and total source.",
+    "Pinning an internal layer is a different boundary condition.",
+    "A closed network can screen a neutral relative channel while its total channel stays ungapped.",
+    "A single constant zero mode does not imply a vanishing sequence of positive eigenvalues."
+  ],
+  "checks": {
+    "run": 10,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

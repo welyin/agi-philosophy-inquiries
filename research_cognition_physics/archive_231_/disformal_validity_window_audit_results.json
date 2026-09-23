@@ -1,0 +1,113 @@
+{
+  "round": 341,
+  "scope": "Frozen round-336 classical homogeneous positive-occupation branch; local dimension-eight scalar contact amplitude is evaluated on a constant-field Minkowski reference. M_D=D^(-1/4) is a Wilson-coefficient power-counting scale, not a proved cutoff. Applying this count to late-time local probes assumes weak background gradients, slow variation, small probe energy/backreaction, and no lower omitted-operator scale.",
+  "analytic_bounds": {
+    "fixed_mode_log_ratio_growth_lower": 0.06066017177982119,
+    "H_over_M_D_log_rate_upper": -1.2,
+    "physical_coefficient_drift_rate_over_H_upper": 6.0,
+    "proper_time_curvature_scale_order": "H; |dot H|/H^2 <= 3",
+    "fixed_mode_result": "Any fixed nonzero comoving k eventually leaves k/a << M_D.",
+    "reselected_window_result": "For every sufficiently late N, E=sqrt(H*M_D) obeys H/E=E/M_D -> 0, with a different comoving k(N)."
+  },
+  "contact_amplitude": {
+    "convention": "S=1+i(2pi)^4 delta^4(sum p) M; signature (-+++), all incoming phi1 chi2 phi3 chi4. Disformal contact only; gravitational exchange is excluded.",
+    "formula": "M=D*(s*s+u*u-t*t)/4=-D*s*u/2; generic-angle M scales as D*E^4.",
+    "rows": [
+      {
+        "cos_theta": -0.8,
+        "energy": 0.2,
+        "direct_quartic_coefficient": 0.0007680000000000009,
+        "mandelstam_amplitude": 0.0007679999999999998,
+        "s_plus_t_plus_u": 2.0816681711721685e-17
+      },
+      {
+        "cos_theta": 0.0,
+        "energy": 0.2,
+        "direct_quartic_coefficient": 0.003840000000000001,
+        "mandelstam_amplitude": 0.0038400000000000014,
+        "s_plus_t_plus_u": 0.0
+      },
+      {
+        "cos_theta": 0.7,
+        "energy": 0.2,
+        "direct_quartic_coefficient": 0.006528000000000001,
+        "mandelstam_amplitude": 0.006528,
+        "s_plus_t_plus_u": 5.551115123125783e-17
+      }
+    ]
+  },
+  "scale_history": [
+    {
+      "N": 0.0,
+      "fraction": 0.1,
+      "q": 0.4,
+      "log_H": -1.0459320308391964,
+      "log_M_D": 0.12770640594149768,
+      "log_H_over_M_D": -1.173638436780694,
+      "d_log_fixed_k_phys_over_M_D_dN": 0.42302494707577054,
+      "reselected_H_over_E_equals_E_over_M_D": 0.5560932859106106
+    },
+    {
+      "N": 9.99755859375,
+      "fraction": 0.05271696067870198,
+      "q": 0.08590063614158874,
+      "log_H": -30.823743744116115,
+      "log_M_D": -14.363830331270906,
+      "log_H_over_M_D": -16.45991341284521,
+      "d_log_fixed_k_phys_over_M_D_dN": 0.45992699765191025,
+      "reselected_H_over_E_equals_E_over_M_D": 0.0002665478698136531
+    },
+    {
+      "N": 50.0,
+      "fraction": 0.0461325180295324,
+      "q": 0.0003060209311789251,
+      "log_H": -150.78673586763986,
+      "log_M_D": -72.93427143380413,
+      "log_H_over_M_D": -77.85246443383573,
+      "d_log_fixed_k_phys_over_M_D_dN": 0.4649920936419938,
+      "reselected_H_over_E_equals_E_over_M_D": 1.2432319050856953e-17
+    },
+    {
+      "N": 100.0,
+      "fraction": 0.04611152708058721,
+      "q": 2.794764443729263e-07,
+      "log_H": -300.7865847558574,
+      "log_M_D": -146.18456768397772,
+      "log_H_over_M_D": -154.6020170718797,
+      "d_log_fixed_k_phys_over_M_D_dN": 0.46500821296970174,
+      "reselected_H_over_E_equals_E_over_M_D": 2.6828633164751013e-34
+    }
+  ],
+  "log_D_two_reconstructions_max_difference": 2.8421709430404007e-12,
+  "fixed_vs_reselected_protocol": {
+    "start_N": 50.0,
+    "end_N": 150.0,
+    "log_fixed_comoving_k": -27.539441619792218,
+    "q_at_start": 0.0003060209311789251,
+    "initial_E_over_M_D": 0.010000000000000049,
+    "initial_H_over_E": 1.5456255698229998e-32,
+    "fixed_mode_reaches_E_over_M_D_0_1_at_N": 54.95183220491551,
+    "fixed_mode_reaches_E_over_M_D_1_at_N": 59.90360243971001,
+    "end_log_E_fixed_over_M_D": 41.89553734397714,
+    "end_log_E_fixed_over_H": 273.24714299808403,
+    "end_reselected_H_over_E_equals_E_over_M_D": 5.789447799629443e-51,
+    "end_q": 2.5526920789391646e-10
+  },
+  "limitations": [
+    "No exact strong-coupling threshold or UV completion is established.",
+    "No Minkowski S-matrix is asserted for the full time-dependent occupied background.",
+    "The contact calculation alone neither computes loop corrections nor ensures absence of all lower scales.",
+    "The existence of a scale interval does not construct its preparation or detector resource budget.",
+    "No quantum instability, universal equivalence principle, or cognitive origin of the action is inferred."
+  ],
+  "next_interface": "Audit background-canonically-normalized interaction vertices and omitted operator scales before a quantum radiative-stability claim; preserve the distinction between a fixed comoving mode and separately prepared late-time probes.",
+  "checks": {
+    "run": 12,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

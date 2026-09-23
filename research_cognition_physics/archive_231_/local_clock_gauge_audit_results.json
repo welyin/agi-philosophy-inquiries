@@ -1,0 +1,93 @@
+{
+  "round": 293,
+  "scope": "Order and conjugacy invariants of supplied deterministic local arrival maps; no physical clock law, absolute time, Lorentz symmetry or quantum noncommutativity derived.",
+  "round292_chain_reclocking": {
+    "new_coordinate": "u(t)=log(1+0.1*t)/log(1.1), t > -10",
+    "original_half_roundtrips": [
+      [
+        0.0,
+        1.05,
+        2.3205000000000005
+      ],
+      [
+        1.05,
+        0.0,
+        1.05
+      ],
+      [
+        2.3205000000000005,
+        1.05,
+        0.0
+      ]
+    ],
+    "reclocked_half_roundtrips": [
+      [
+        0.0,
+        1.0000000000000002,
+        2.0000000000000004
+      ],
+      [
+        1.0000000000000002,
+        0.0,
+        1.0000000000000002
+      ],
+      [
+        2.0000000000000004,
+        1.0000000000000002,
+        0.0
+      ]
+    ],
+    "each_edge_is_unit_translation_in_new_coordinate": true
+  },
+  "closed_loop_order_witness": {
+    "start_reading": 0.0,
+    "first_F_then_G": 3.152318831191153,
+    "first_G_then_F": 3.0,
+    "difference": 0.15231883119115297,
+    "after_nonlinear_clock_change": [
+      3.311716698200982,
+      3.2318200708498095
+    ],
+    "comparison_preserved": true,
+    "edge_transmissions_for_two_words": 8,
+    "comparison_with_per_output_error_0_01": 1,
+    "comparison_with_per_output_error_0_1": 0
+  },
+  "single_loop_straightening": {
+    "input_readings": [
+      -2.0,
+      0.0,
+      2.0
+    ],
+    "raw_elapsed": [
+      1.8071944839848366,
+      2.0,
+      2.192805516015163
+    ],
+    "new_elapsed": [
+      1.0,
+      0.9999999999999999,
+      0.9999999999999994
+    ],
+    "fundamental_interval": [
+      0.0,
+      2.0
+    ],
+    "choice_inside_fundamental_interval_is_not_unique": true
+  },
+  "boundaries": [
+    "Only order-preserving relabeling is treated as gauge; a calibrated physical clock can carry extra interval structure.",
+    "Changing the actual hardware, triggering rule or probe load is not merely changing its displayed coordinate.",
+    "Noncommuting loop maps rule out simultaneous constant-delay coordinates, not time coordinates in general.",
+    "The ideal two-word comparison assumes the same initial event and noninteracting reproducible channels; precision and launch error require separate budgets."
+  ],
+  "checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}
