@@ -1,0 +1,184 @@
+{
+  "round": 443,
+  "baseline_round": 442,
+  "date": "2026-09-24",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "observations": {
+    "known_2017_trace_failure": {
+      "attributed_to_2024_correction": true,
+      "radius": 1,
+      "fixed_port_assignment_verified": true,
+      "output_eigenvalues": [
+        "-1/2",
+        "1/2",
+        "1/2",
+        "1/2"
+      ],
+      "new_discovery_claimed": false
+    },
+    "finite_neighborhood_channel": {
+      "input_dimension": 384,
+      "injective_basis_pairs": 384,
+      "local_basis_dimension": 24,
+      "environment_basis_dimension": 96,
+      "exact_readout_matrix_units_checked": 147456,
+      "nonzero_subject_matrix_units": 768,
+      "data_qubits": 6,
+      "potential_edge_qubits": 15,
+      "implicit_global_routing_cost_claimed_zero": false,
+      "arbitrary_reference_covered_by_isometry_proof": true
+    },
+    "unchanged_autonomous_model": {
+      "full_dimension": 384,
+      "exact_invariant_one_excitation_dimension": 36,
+      "graph_dimension": 6,
+      "far_graph_indices": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "J": 1,
+      "kappa": 1,
+      "omitted_scalar_mu_edge_phase": 5,
+      "norm_bound": 9,
+      "receiver_label": 5,
+      "sender_label": 0,
+      "preparation": "all six data qubits zero; sender optionally applies X"
+    },
+    "coherence_changes_actual_signal": {
+      "first_three_blocks_zero": true,
+      "cubic_block": [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ]
+      ],
+      "cubic_gram_character_eigenvalues": [
+        22,
+        4,
+        2,
+        0
+      ],
+      "mixed_far_leading_probability": "7*t^6/36",
+      "uniform_coherent_far_leading_probability": "11*t^6/18",
+      "dark_coherent_far_leading_probability": "t^10/3600",
+      "first_nonzero_dark_amplitude_order": 5,
+      "general_cubic_form": "J^3*E + J^2*kappa*B; E=far inclusion, B=M3-E",
+      "general_cubic_gram_eigenvalues": [
+        "J^4*(J^2+2*J*kappa+19*kappa^2)",
+        "J^4*(J+kappa)^2",
+        "J^4*(J^2-2*J*kappa+3*kappa^2)",
+        "J^4*(J-kappa)^2"
+      ],
+      "dark_cubic_cancellation_requires_J_equal_kappa_except_trivial_J_zero": true
+    },
+    "all_far_graph_signal_certificate": {
+      "time": "1",
+      "taylor_degree": 40,
+      "norm_bound": 9,
+      "exact_polynomial_gram_diagonal": true,
+      "polynomial_gram_diagonal": [
+        0.05316068238886437,
+        0.030816091343398664,
+        0.021355843014261043,
+        0.00010511069374185041
+      ],
+      "exact_minimum_polynomial_gram": "4373378404977417112546312290613803275279089549757419914265688613619627384832122022762137169/41607359339843574325548110273418478026650094900416491377011603858731642650624000000000000000000",
+      "exact_operator_remainder_bound": "3433683820292512484657849089281/67843928753081859220975105605632000000000",
+      "remainder_upper_bound": "1/10000000000",
+      "certified_receiver_excitation_probability_lower_bound": "1/10000",
+      "certified_receiver_trace_distance_lower_bound": "1/10000",
+      "unknown_graph_reference_dimension_independent": true,
+      "unknown_other_subject_data_covered": false,
+      "arbitrary_large_graphs_covered": false
+    },
+    "numerical_readout": {
+      "table": [
+        {
+          "time": 0.1,
+          "probability_character_states": [
+            5.963655015242192e-07,
+            1.0973042632624083e-07,
+            5.5002942751416196e-08,
+            2.7492786211311888e-14
+          ],
+          "probability_uniform_mixture": 1.9027472452366558e-07,
+          "minimum_over_all_graph_inputs": 2.7492786188148013e-14
+        },
+        {
+          "time": 1.0,
+          "probability_character_states": [
+            0.05316068238733482,
+            0.030816091343398768,
+            0.021355843014261078,
+            0.00010511069374184853
+          ],
+          "probability_uniform_mixture": 0.02635943185968413,
+          "minimum_over_all_graph_inputs": 0.00010511069374184202
+        }
+      ],
+      "internal_reference_dimension": 4,
+      "full_data_graph_H_used": true,
+      "initial_graph_reference_maximally_entangled": true,
+      "receiver_reference_trace_distance": 0.02635943185968361,
+      "receiver_excitation_probability": 0.0263594318596841,
+      "no_graph_postselection": true
+    }
+  },
+  "scope": {
+    "unchanged_440_442_autonomous_H": true,
+    "physical_receiver_data_signal_certified": true,
+    "all_coherent_far_graph_inputs_and_reference_covered": true,
+    "finite_channel_and_actual_subject_readout_compatible": true,
+    "obsolete_trace_failure_attributed_to_2024": true,
+    "exact_rational_operator_certificate": true,
+    "universal_branching_graph_propagation_bound": false,
+    "unknown_other_subject_data_preserved": false,
+    "graph_neighborhood_routing_autonomously_implemented": false,
+    "nested_dynamic_ball_channels_assumed": false,
+    "new_internal_measurement_or_encoding_device_constructed": false,
+    "initial_geometry_selected": false,
+    "three_dimensional_space_generated": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

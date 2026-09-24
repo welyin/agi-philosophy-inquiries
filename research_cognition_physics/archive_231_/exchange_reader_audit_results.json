@@ -1,0 +1,121 @@
+{
+  "round": 431,
+  "baseline_round": 430,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "observations": {
+    "setup": {
+      "subject_qubits": 3,
+      "reader_qubits": 2,
+      "constant_exchange_pairs": [
+        "12",
+        "23",
+        "34",
+        "45"
+      ],
+      "coupling_strengths": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "reader_initial_state": "singlet_45",
+      "all_couplings_permanently_on": true,
+      "coupling_pattern_and_singlet_preparation_are_inputs": true
+    },
+    "exact_transfer_certificate": {
+      "order": 80,
+      "model_time": "3/2",
+      "low_order_integer_traces": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        720,
+        0,
+        19488
+      ],
+      "signed_series_before_dividing_sqrt3": "-1965037027822983074246269978836409600923470951384256885638400740734174513335361564278276736347413078740459659134486148867/1628760019805898586703771993234302065365225558778317529880735629063087540155508650017484776092618194944000000000000000000",
+      "analytic_tail_upper": "749852996978936901488784187116239290689187989159936/1577694424653422965733766545462634021864164575772480592249573885364532470703125",
+      "analytic_tail_upper_float": 4.752840507398379e-28,
+      "contrast_lower_rational": "55270664285589072675485600665031952622723171934833583386702385393543642528138532981748069756359244468742786927518850616248214458346729/79349039435084621697651415662072953771449085487131593181806089444439402400643110217491065356007000566078653983621120000000000000000000",
+      "contrast_upper_rational": "165811992856767218026456802221375855178302414758945934529430211140037665345645360583375281261933617364005611283942194439094759480788667/238047118305253727656386413633264996692473437710015057412585320883123806560022154155981236534896694497753604282122240000000000000000000",
+      "contrast_interval_float": [
+        0.6965511451566588,
+        0.6965511451566592
+      ],
+      "contrast_exceeds_two_thirds_by_exact_arithmetic": true
+    },
+    "reader_transfer": {
+      "time": 1.5,
+      "singlet_probabilities": [
+        0.16979086687359496,
+        0.8663420120302543
+      ],
+      "reader_trace_distance": 0.6965511451566593,
+      "complete_system_trace_distance": 1.0,
+      "equal_prior_single_read_success_probability": 0.8482755725783296,
+      "no_postselection": true
+    },
+    "finite_read_window": {
+      "interval": [
+        "17/12",
+        "19/12"
+      ],
+      "effect_derivative_norm": 0.8660254037844388,
+      "contrast_strict_lower_bound": "1/2",
+      "equal_prior_success_strict_lower_bound": "3/4",
+      "checks_at_three_times": [
+        {
+          "time": 1.4166666666666667,
+          "contrast": 0.6265941343699447
+        },
+        {
+          "time": 1.5,
+          "contrast": 0.6965511451566594
+        },
+        {
+          "time": 1.5833333333333333,
+          "contrast": 0.7512853717404211
+        }
+      ],
+      "exact_stop_or_exact_read_instant_required": false,
+      "permanent_stable_record_claimed": false
+    },
+    "reference_and_disturbance": {
+      "arbitrary_input_dimension": 8,
+      "reference_dimension": 2,
+      "inverse_recovery_error": 1.0789706966794809e-15,
+      "sample_subject_trace_distance_change": 0.47418655030827167,
+      "local_subject_state_preservation_claimed": false,
+      "full_joint_unknown_information_preserved": true
+    },
+    "axis_and_reader_size": {
+      "no_absolute_spin_axis_in_state_rule_or_effect": true,
+      "every_single_qubit_marginal_remains_maximally_mixed": true,
+      "two_qubit_joint_reader_carries_distinguishable_relation": true,
+      "minimality_limited_to_collective_invariant_qubit_readers": true,
+      "common_identification_derived": false
+    }
+  },
+  "scope": {
+    "internal_pair_record_transfer_constructed": true,
+    "exact_integer_and_rational_signal_certificate": true,
+    "finite_read_window_proved": true,
+    "same_continuous_exchange_rule_only": true,
+    "unknown_full_joint_reference_information_preserved": true,
+    "singlet_source_and_coupling_pattern_are_inputs": true,
+    "exact_programmable_processor_required": false,
+    "permanent_record_proved": false,
+    "complete_readout_amplifier_constructed": false,
+    "physical_clock_derived": false,
+    "full_cognitive_implementation_completed": false,
+    "three_dimensional_space_unconditionally_derived": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

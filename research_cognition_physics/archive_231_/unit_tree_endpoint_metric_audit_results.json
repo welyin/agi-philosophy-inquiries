@@ -1,0 +1,151 @@
+{
+  "round": 469,
+  "baseline_round": 467,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "observations": {
+    "cut_representation": {
+      "cube_points": 8,
+      "target_distances": [
+        "1",
+        "sqrt(2)",
+        "sqrt(3)"
+      ],
+      "parity_cuts": 7,
+      "all_coefficients_certified_positive": true,
+      "coefficients_by_mask_size": {
+        "1": {
+          "one": "-1/4",
+          "sqrt2": "1/4",
+          "sqrt3": "1/4"
+        },
+        "2": {
+          "one": "1/4",
+          "sqrt2": "1/4",
+          "sqrt3": "-1/4"
+        },
+        "3": {
+          "one": "3/4",
+          "sqrt2": "-3/4",
+          "sqrt3": "1/4"
+        }
+      },
+      "total_weight": {
+        "one": "3/4",
+        "sqrt2": "3/4",
+        "sqrt3": "1/4"
+      },
+      "total_weight_approx": 2.24367287367,
+      "all_28_pair_distances_exact": true,
+      "Euclidean_L1_cut_representation_is_mature_mathematics": true
+    },
+    "unit_same_budget_construction": {
+      "exact_constructed_trees": 114,
+      "observed_endpoint_counts": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "central_path_lengths": [
+        1,
+        7
+      ],
+      "total_vertices": "N=2*n+2*L-4",
+      "added_unobserved_leaf_labels": "L-1",
+      "added_internal_labels": "L-1",
+      "same_per_label_degrees_for_every_cut": true,
+      "degree_two_vertices": 0,
+      "every_edge_unit": true,
+      "exact_distance_identity": "d_T(i,j)=L*delta_S(i,j)+r_S(i,j)",
+      "residual_range": "0 <= r_S(i,j) <= 2*n-4"
+    },
+    "cube_unit_sector": {
+      "N": 8204,
+      "observed_leaves": 8,
+      "unobserved_leaves": 4095,
+      "internal_degree_three": 4101,
+      "central_length": 4096,
+      "graph_support_count": 7,
+      "common_scale": "W/4096",
+      "common_scale_approx": 0.000547771697674,
+      "prepared_probabilities": [
+        0.239146311738,
+        0.239146311738,
+        0.0760096049216,
+        0.239146311738,
+        0.0760096049216,
+        0.0760096049216,
+        0.054532250021
+      ],
+      "maximum_absolute_distance_error": 0.0027386064897,
+      "maximum_error_exact": {
+        "one": "1/4096",
+        "sqrt2": "3/2048",
+        "sqrt3": "1/4096"
+      },
+      "theorem_upper_bound": 0.00657326037209,
+      "theorem_upper_bound_exact": {
+        "one": "9/4096",
+        "sqrt2": "9/4096",
+        "sqrt3": "3/4096"
+      },
+      "theorem_upper_bound_less_than": "1/100",
+      "common_N_common_labels_common_degrees": true,
+      "no_weighted_edge_or_degree_two_shortcut": true,
+      "Hamiltonian_state_preparation_not_implemented": true
+    },
+    "fixed_degree_NNI_interface": {
+      "active_NNI_moves_checked": 224,
+      "two_NNI_internal_label_transpositions_checked": 56,
+      "all_other_labels_fixed": true,
+      "entire_fixed_degree_tree_sector_closed": true,
+      "leaf_labeled_NNI_connectivity_attributed_to_existing_theory": true,
+      "connectivity_not_autonomous_distribution_preparation": true
+    },
+    "finite_budget_limit": {
+      "universal_leaf_triangle_slack": "mean(a,b)+mean(b,c)-mean(a,c)>=2*s",
+      "universal_diameter_upper": "mean(a,c)<=s*N/2",
+      "collinear_target_distances": [
+        "ell",
+        "ell",
+        "2*ell"
+      ],
+      "universal_max_error_lower": "epsilon>=8*ell/(3*N+4)",
+      "no_claim_of_sharp_lower_bound": true,
+      "example_N": 130,
+      "example_max_error": "3/64",
+      "example_certified_lower": "4/197",
+      "exact_finite_collinear_representation_impossible": true
+    },
+    "coherent_reference_interface": {
+      "graph_support_dimension": 7,
+      "reference_dimension": 3,
+      "graph_off_diagonal_Frobenius_norm": 0.480269206042,
+      "maximum_diagonal_mean_residual": 6.66133814775e-16,
+      "graph_reference_state_not_dephased": true,
+      "general_guarantee_uses_graph_diagonal_operator_identity": true,
+      "arbitrary_data_and_reference_allowed_at_fixed_graph_populations": true,
+      "actual_distance_measurement_device_or_time_average_not_derived": true
+    }
+  },
+  "scope": {
+    "selected_endpoint_mean_representation": true,
+    "arbitrary_finite_Euclidean_dimension": true,
+    "same_unit_edge_fixed_per_label_degree_sector": true,
+    "auxiliary_labels_explicitly_counted": true,
+    "arbitrary_dimension_not_selected_as_three": true,
+    "source_of_endpoint_selection_not_derived": true,
+    "graph_distribution_and_scale_prepared_inputs": true,
+    "same_H_autonomous_preparation_not_proved": true,
+    "stable_geometry_or_ergodic_time_average_not_proved": true,
+    "actual_distance_readout_not_implemented": true,
+    "physical_spatial_dimension_derived": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

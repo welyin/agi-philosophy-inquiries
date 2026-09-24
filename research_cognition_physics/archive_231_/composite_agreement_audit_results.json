@@ -1,0 +1,185 @@
+{
+  "round": 450,
+  "baseline_round": 449,
+  "date": "2026-09-24",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "observations": {
+    "weak_contract_classification": {
+      "exact_finite_certificates": [
+        {
+          "d": 2,
+          "Hermitian_unknowns": 16,
+          "independent_derivative_rank_mod1009": 6,
+          "swap_commutator_rank_mod1009": 6,
+          "combined_rank_mod1009": 6,
+          "weak_contract_real_dimension": 10,
+          "strong_429_real_dimension": 2,
+          "nonzero_pivots": [
+            1008,
+            1007,
+            1008,
+            1005,
+            2,
+            1008
+          ]
+        },
+        {
+          "d": 3,
+          "Hermitian_unknowns": 81,
+          "independent_derivative_rank_mod1009": 36,
+          "swap_commutator_rank_mod1009": 36,
+          "combined_rank_mod1009": 36,
+          "weak_contract_real_dimension": 45,
+          "strong_429_real_dimension": 2,
+          "nonzero_pivots": [
+            1008,
+            1008,
+            1008,
+            1007,
+            1007,
+            1,
+            1008,
+            1,
+            1008,
+            1007,
+            1008,
+            1005,
+            2,
+            1008,
+            1008,
+            1008,
+            1007,
+            2,
+            1008,
+            1,
+            1008,
+            1,
+            1007,
+            1007,
+            2,
+            1,
+            1005,
+            1007,
+            1007,
+            1008,
+            1007,
+            1008,
+            1007,
+            1005,
+            1,
+            1008
+          ]
+        }
+      ],
+      "all_dimensions_proof_analytic": true,
+      "condition": "all identical independent inputs retain equal marginals iff [H,SWAP]=0",
+      "time_zero_derivative_equality_already_sufficient": true,
+      "closure_and_time_independence_required": true
+    },
+    "necessity_identity": [
+      {
+        "d": 2,
+        "integer_derivative_and_skew_pairings_exact": true
+      },
+      {
+        "d": 3,
+        "integer_derivative_and_skew_pairings_exact": true
+      }
+    ],
+    "weak_example": {
+      "symmetric_diagonal_pair_reward_admitted": true,
+      "each_original_marginal_trace_distance": 0.5,
+      "marginal_equality_error": 8.64010717855e-16,
+      "unique_partial_SWAP_rule_selected": false,
+      "weak_condition_adopted_as_cognitive_axiom": false
+    },
+    "composition": {
+      "subjects": 2,
+      "micro_qubits_per_subject": 2,
+      "primitive_terms_each_429_partial_SWAP": true,
+      "complete_subject_initial_state_independent_Bell_copies": true,
+      "reduced_formula": "cos^2(2*t)*Bell + sin^2(2*t)*I4/4",
+      "exact_t_pi_over_4_old_state_trace_distance": "3/4",
+      "complete_subjects_remain_equal": true,
+      "all_single_micro_qubit_marginals_unchanged": true,
+      "initial_cross_subject_correlations_used": false,
+      "full_state_not_recovered_from_single_component_marginals": true,
+      "numerical_formula_error": 4.0081942653e-16,
+      "general_component_exchange_weak_contract_closed": true,
+      "arbitrary_initial_shared_reference_assumed_independent_copies": false
+    },
+    "strong_support_boundary": {
+      "exact_tensor_witnesses": [
+        {
+          "local_dimensions": [
+            2,
+            2
+          ],
+          "total_micro_factors": 4,
+          "trace_witness_full_SWAP": 4,
+          "trace_witness_identity_and_each_primitive_SWAP": 0
+        },
+        {
+          "local_dimensions": [
+            2,
+            3
+          ],
+          "total_micro_factors": 4,
+          "trace_witness_full_SWAP": 4,
+          "trace_witness_identity_and_each_primitive_SWAP": 0
+        },
+        {
+          "local_dimensions": [
+            2,
+            2,
+            2
+          ],
+          "total_micro_factors": 6,
+          "trace_witness_full_SWAP": 8,
+          "trace_witness_identity_and_each_primitive_SWAP": 0
+        }
+      ],
+      "conclusion": "r<2*k raw microscopic terms plus exact strong full-composite contract imply scalar H",
+      "all_time_static_raw_generator_scope": true,
+      "endpoint_SWAP_or_encoded_auxiliary_simulation_excluded": false,
+      "finite_precision_effective_interactions_excluded": false
+    },
+    "record_interface": {
+      "raw_local_dimension": 9,
+      "raw_pair_dimension": 81,
+      "existing_fixed_numeric_dictionary_weak_contract_satisfied": false,
+      "h_R_energy_before_packet_SWAP": 0,
+      "h_R_energy_after_packet_SWAP": 2,
+      "same_input_numeric_marginal_difference_at_pi_over_4": "1/2",
+      "changed_identification_F_swaps_0_and_1": true,
+      "same_raw_model_commutes_with_twisted_SWAP": true,
+      "changed_comparison_marginals_equal": true,
+      "global_multi_subject_identification_consistency_proved": false,
+      "passive_relabeling_confused_with_physical_SWAP": false,
+      "comparison_dictionary_origin_still_input": true
+    }
+  },
+  "scope": {
+    "weak_agreement_Hamiltonian_iff_classification_proved": true,
+    "microscopic_exchange_weak_contract_closed_under_composition": true,
+    "strong_contract_failure_for_independent_composite_Bell_inputs_proved": true,
+    "exact_all_time_raw_support_boundary_explicit": true,
+    "raw_record_comparison_dictionary_obstruction_and_two_subject_alternative_verified": true,
+    "internal_and_cross_subject_correlations_distinguished": true,
+    "fixed_identification_source_not_erased": true,
+    "weak_agreement_adopted_as_new_cognitive_axiom": false,
+    "strong_429_theorem_invalidated": false,
+    "new_record_potentials_derived_from_429": false,
+    "all_encodings_or_effective_low_body_implementations_excluded": false,
+    "multi_subject_reference_composition_selected": false,
+    "full_spatial_dimension_or_GR_generated": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

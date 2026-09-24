@@ -1,0 +1,283 @@
+{
+  "date": "2026-09-23",
+  "round": 409,
+  "scientific_base_through_round": 408,
+  "scope": "One fixed autonomous self-adjoint generator, finite data, separable normal independent programs, exact deterministic unitary output; no intermediate outside control.",
+  "old_test_suites_executed": false,
+  "factorization": {
+    "nonorthogonal": [
+      {
+        "name": "short_separable_evolution",
+        "time_difference": 0.004999999999999977,
+        "program_overlap": 0.999377697235771,
+        "factorization_error": 1.4241646578548448e-16,
+        "overlap_equation_residual": 0.005823437872696794,
+        "elapsed_isometry_difference": 0.007518025966209347,
+        "phase_operator_distance": 0.0058270868100192275,
+        "phase_bound": 0.01504541473559763,
+        "choi_trace_distance": 0.004999979166782248,
+        "bounded_generator_upper": 0.009999999999999953
+      },
+      {
+        "name": "interacting_recurrence",
+        "time_difference": 1.5707963267948966,
+        "program_overlap": 0.999377697235771,
+        "factorization_error": 1.2246467991473532e-16,
+        "overlap_equation_residual": 1.012958410670265,
+        "elapsed_isometry_difference": 1.414213562373095,
+        "phase_operator_distance": 1.4142135623730951,
+        "phase_bound": 2.8301883587851506,
+        "choi_trace_distance": 1.0,
+        "bounded_generator_upper": 1.5707963267948966
+      }
+    ],
+    "same_time_orthogonal": {
+      "overlap": 0.0,
+      "factorization_error": 0.0,
+      "distinct_channel_choi_distance": 0.3181921300987894
+    }
+  },
+  "scalar_phase_lemma": {
+    "cases": 48,
+    "minimum_bound_margin": 0.006886737843858182,
+    "zero_final_program_overlap_included": true
+  },
+  "spectral_holder": [
+    {
+      "alpha": 0.5,
+      "time_difference": 1e-05,
+      "basis_moment": 20.811581723603357,
+      "isometry_difference": 0.006250605302386425,
+      "spectral_theorem_bound": 0.0930722229065387,
+      "ratio": 0.06715865493685651
+    },
+    {
+      "alpha": 0.5,
+      "time_difference": 0.003,
+      "basis_moment": 20.811581723603357,
+      "isometry_difference": 1.2539966012566877,
+      "spectral_theorem_bound": 1.6120581884750091,
+      "ratio": 0.7778854449683084
+    },
+    {
+      "alpha": 0.5,
+      "time_difference": 0.1,
+      "basis_moment": 20.811581723603357,
+      "isometry_difference": 1.2798736800538981,
+      "spectral_theorem_bound": 9.30722229065387,
+      "ratio": 0.13751403373476123
+    },
+    {
+      "alpha": 1.0,
+      "time_difference": 1e-05,
+      "basis_moment": 625.6027492701418,
+      "isometry_difference": 0.006250605302386425,
+      "spectral_theorem_bound": 0.006256027492701418,
+      "ratio": 0.9991332854081414
+    },
+    {
+      "alpha": 1.0,
+      "time_difference": 0.003,
+      "basis_moment": 625.6027492701418,
+      "isometry_difference": 1.2539966012566877,
+      "spectral_theorem_bound": 1.8768082478104253,
+      "ratio": 0.668153820572592
+    },
+    {
+      "alpha": 1.0,
+      "time_difference": 0.1,
+      "basis_moment": 625.6027492701418,
+      "isometry_difference": 1.2798736800538981,
+      "spectral_theorem_bound": 62.56027492701418,
+      "ratio": 0.02045824896944683
+    }
+  ],
+  "arbitrary_reference": [
+    {
+      "reference_dimension": 1,
+      "pure_joint_trace_distance": 0.003132241080982033,
+      "overlap_channel_bound": 0.007399553565904277
+    },
+    {
+      "reference_dimension": 3,
+      "pure_joint_trace_distance": 0.0024599032773643323,
+      "overlap_channel_bound": 0.007399553565904277
+    },
+    {
+      "reference_dimension": 7,
+      "pure_joint_trace_distance": 0.002602881708780938,
+      "overlap_channel_bound": 0.007399553565904277
+    }
+  ],
+  "countable_dense_catalogue": {
+    "samples": [
+      {
+        "denominator": 16,
+        "integer_angles": [
+          0,
+          7,
+          0
+        ],
+        "positive_generator_min": 0.0,
+        "generator_norm": 5.497787143782138,
+        "exact_program_choi_error": 4.2030397315776437e-16,
+        "unitary_grid_error": 0.2402381461769397,
+        "approximation_bound": 0.5890486225480862
+      },
+      {
+        "denominator": 16,
+        "integer_angles": [
+          0,
+          8,
+          6
+        ],
+        "positive_generator_min": -1.177908578839979e-32,
+        "generator_norm": 1.570796326794897,
+        "exact_program_choi_error": 1.368624551625947e-16,
+        "unitary_grid_error": 0.29453141427854984,
+        "approximation_bound": 0.5890486225480862
+      },
+      {
+        "denominator": 16,
+        "integer_angles": [
+          10,
+          5,
+          2
+        ],
+        "positive_generator_min": -1.1102230246251565e-16,
+        "generator_norm": 3.141592653589793,
+        "exact_program_choi_error": 1.1185862951652469e-16,
+        "unitary_grid_error": 0.09321111422556781,
+        "approximation_bound": 0.5890486225480862
+      },
+      {
+        "denominator": 16,
+        "integer_angles": [
+          5,
+          7,
+          5
+        ],
+        "positive_generator_min": 1.3877787807814457e-16,
+        "generator_norm": 1.7177715174584014,
+        "exact_program_choi_error": 1.4958694604576826e-16,
+        "unitary_grid_error": 0.13202329076873492,
+        "approximation_bound": 0.5890486225480862
+      },
+      {
+        "denominator": 64,
+        "integer_angles": [
+          63,
+          26,
+          63
+        ],
+        "positive_generator_min": -1.5543122344752192e-15,
+        "generator_norm": 5.048754186403893,
+        "exact_program_choi_error": 2.13527080374965e-15,
+        "unitary_grid_error": 0.03196625738298776,
+        "approximation_bound": 0.14726215563702155
+      },
+      {
+        "denominator": 64,
+        "integer_angles": [
+          62,
+          34,
+          23
+        ],
+        "positive_generator_min": 1.7694179454963432e-16,
+        "generator_norm": 2.1803301949478513,
+        "exact_program_choi_error": 6.473746371038557e-16,
+        "unitary_grid_error": 0.0568704171306266,
+        "approximation_bound": 0.14726215563702155
+      },
+      {
+        "denominator": 64,
+        "integer_angles": [
+          41,
+          20,
+          9
+        ],
+        "positive_generator_min": 1.1102230246251565e-16,
+        "generator_norm": 3.291047379844169,
+        "exact_program_choi_error": 4.225501888640576e-16,
+        "unitary_grid_error": 0.04102472258273889,
+        "approximation_bound": 0.14726215563702155
+      },
+      {
+        "denominator": 64,
+        "integer_angles": [
+          20,
+          27,
+          19
+        ],
+        "positive_generator_min": 0.0,
+        "generator_norm": 1.6413313343771865,
+        "exact_program_choi_error": 1.9932402047491455e-16,
+        "unitary_grid_error": 0.02351201986148405,
+        "approximation_bound": 0.14726215563702155
+      }
+    ],
+    "finite_direct_sum_wiring_error": 1.2721112165668318e-15,
+    "infinite_construction": "countable direct sum over all rational Euler triples",
+    "global_generator_norm_upper": 6.283185307179586,
+    "arbitrary_accuracy_from_dense_catalogue_proved_analytically": true,
+    "exact_universal_unitary_catalogue_claimed": false
+  },
+  "unbounded_finite_mean_energy": {
+    "prefix_terms": 4096,
+    "normalization_interval": [
+      1.202056903152323,
+      1.2020569031668695
+    ],
+    "mean_energy_interval": [
+      1.3684327528292377,
+      1.3684328024192383
+    ],
+    "second_moment_partial_sums": [
+      3.9464778174874993,
+      7.39990251171288
+    ],
+    "second_moment_diverges_by_harmonic_series": true,
+    "inequalities": [
+      {
+        "time_difference": 0.001,
+        "squared_isometry_difference_lower": 6.9525208022016385e-06,
+        "squared_isometry_difference_upper": 7.051691889143777e-06,
+        "holder_squared_bound_using_energy_lower": 0.0027368655056584754
+      },
+      {
+        "time_difference": 0.01,
+        "squared_isometry_difference_lower": 0.0005078442173053051,
+        "squared_isometry_difference_upper": 0.0005079433883983087,
+        "holder_squared_bound_using_energy_lower": 0.027368655056584756
+      },
+      {
+        "time_difference": 0.2,
+        "squared_isometry_difference_lower": 0.10347976795724123,
+        "squared_isometry_difference_upper": 0.10347986712958034,
+        "holder_squared_bound_using_energy_lower": 0.5473731011316951
+      }
+    ],
+    "floating_endpoints_are_interval_certificates": false
+  },
+  "bounded_generator_exact_channel_hausdorff_dimension_upper": 1,
+  "finite_mean_energy_exact_channel_hausdorff_dimension_upper": 2,
+  "uniform_program_energy_cap_required": false,
+  "finite_program_dimension_required": false,
+  "program_selection_continuity_required": false,
+  "approximation_excluded": false,
+  "spatial_dimension_generated": false,
+  "full_cognition_to_gr_refuted": false,
+  "strengthened_exact_autonomous_control_adopted_as_axiom": false,
+  "initial_resource_amount_choice_required": false,
+  "infinite_dimension_theorem_established_by_finite_numerics": false,
+  "analytic_proof_in_note": true,
+  "checks": {
+    "run": 6,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

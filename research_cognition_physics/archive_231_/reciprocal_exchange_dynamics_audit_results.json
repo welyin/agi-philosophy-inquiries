@@ -1,0 +1,240 @@
+{
+  "round": 445,
+  "baseline_round": 444,
+  "date": "2026-09-24",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "observations": {
+    "raw_model": {
+      "raw_dimension": 256,
+      "invariant_permutation_dimension": 24,
+      "zero_energy_matching_dimension": 3,
+      "dimensionless_gap": 2,
+      "defect_histogram": {
+        "0": 3,
+        "2": 90,
+        "4": 163
+      },
+      "full_tensor_extension_checked": true,
+      "first_order_code_action_zero": true,
+      "permutation_sector_is_exact_not_postselected": true,
+      "consistency_energy_is_additional_input": true
+    },
+    "second_order": {
+      "exact_integer_scaled_path_checks": [
+        {
+          "subjects": 2,
+          "matchings": 1,
+          "ordered_two_swap_returns": 1,
+          "matching_flip_degree": 0,
+          "diagonal_magnitude": {
+            "numerator": 1,
+            "denominator": 2,
+            "decimal": 0.5
+          },
+          "off_diagonal_magnitude": {
+            "numerator": 1,
+            "denominator": 2,
+            "decimal": 0.5
+          }
+        },
+        {
+          "subjects": 4,
+          "matchings": 3,
+          "ordered_two_swap_returns": 30,
+          "matching_flip_degree": 2,
+          "diagonal_magnitude": {
+            "numerator": 2,
+            "denominator": 1,
+            "decimal": 2.0
+          },
+          "off_diagonal_magnitude": {
+            "numerator": 1,
+            "denominator": 2,
+            "decimal": 0.5
+          }
+        },
+        {
+          "subjects": 6,
+          "matchings": 15,
+          "ordered_two_swap_returns": 405,
+          "matching_flip_degree": 6,
+          "diagonal_magnitude": {
+            "numerator": 9,
+            "denominator": 2,
+            "decimal": 4.5
+          },
+          "off_diagonal_magnitude": {
+            "numerator": 1,
+            "denominator": 2,
+            "decimal": 0.5
+          }
+        },
+        {
+          "subjects": 8,
+          "matchings": 105,
+          "ordered_two_swap_returns": 5460,
+          "matching_flip_degree": 12,
+          "diagonal_magnitude": {
+            "numerator": 8,
+            "denominator": 1,
+            "decimal": 8.0
+          },
+          "off_diagonal_magnitude": {
+            "numerator": 1,
+            "denominator": 2,
+            "decimal": 0.5
+          }
+        }
+      ],
+      "formula": "K = -(N^2/8) I - A_matching/2",
+      "independent_edge_pair_neighbor_construction": true
+    },
+    "duhamel_certificate": {
+      "exact_fraction_grams": [
+        {
+          "matrix": "W1",
+          "gram_diagonal": "3/4",
+          "gram_off_diagonal": "1/8",
+          "exact_norm_squared": "1"
+        },
+        {
+          "matrix": "W2",
+          "gram_diagonal": "9/16",
+          "gram_off_diagonal": "9/16",
+          "exact_norm_squared": "27/16"
+        },
+        {
+          "matrix": "A3",
+          "gram_diagonal": "93/16",
+          "gram_off_diagonal": "141/32",
+          "exact_norm_squared": "117/8"
+        },
+        {
+          "matrix": "A4",
+          "gram_diagonal": "81/16",
+          "gram_off_diagonal": "81/16",
+          "exact_norm_squared": "243/16"
+        }
+      ],
+      "exact_residual_identity_verified": true,
+      "bare_code_input_no_dressed_state_preparation": true,
+      "bound": "(2+4|tau|)|epsilon|+(13/5+4|tau|)epsilon^2",
+      "arbitrary_code_coherence_and_reference_covered_by_operator_bound": true
+    },
+    "window": {
+      "epsilon": "1/128",
+      "slow_time_interval": [
+        "19/10",
+        "21/10"
+      ],
+      "uniform_operator_error_upper": {
+        "numerator": 6711,
+        "denominator": 81920,
+        "decimal": 0.0819213867188
+      },
+      "sine_lower": {
+        "numerator": 90770962393023,
+        "denominator": 91750400000000,
+        "decimal": 0.989324977254
+      },
+      "actual_other_matching_probability_lower": {
+        "numerator": 829282119601288416746564281,
+        "denominator": 1052266987520000000000000000,
+        "decimal": 0.788090978275
+      },
+      "strict_simple_probability_lower": "39/50",
+      "proof": "sin concavity on the interval; alternating sine polynomial lower bounds at both endpoints",
+      "witness_scope": "each initial matching basis state, with matching-dependent output effect",
+      "all_unknown_superpositions_have_positive_change_probability": false,
+      "no_postselection_or_perfect_timing_required": true
+    },
+    "full_evolution": {
+      "spectral_checks": [
+        {
+          "tau": "19/10",
+          "all_input_operator_error": 0.0114188883572,
+          "operator_error_bound": 0.0756225585938,
+          "maximum_code_leakage_probability": 0.000130199376471,
+          "minimum_other_matching_probability": 0.870082413129,
+          "three_dimensional_reference_trace_distance": 0.0113713913943
+        },
+        {
+          "tau": "2",
+          "all_input_operator_error": 0.00828269976628,
+          "operator_error_bound": 0.0787719726562,
+          "maximum_code_leakage_probability": 6.83624012102e-05,
+          "minimum_other_matching_probability": 0.884424027576,
+          "three_dimensional_reference_trace_distance": 0.00793888530435
+        },
+        {
+          "tau": "21/10",
+          "all_input_operator_error": 0.00996458730224,
+          "operator_error_bound": 0.0819213867188,
+          "maximum_code_leakage_probability": 9.90945865571e-05,
+          "minimum_other_matching_probability": 0.888783652808,
+          "three_dimensional_reference_trace_distance": 0.00991151063712
+        }
+      ],
+      "raw_256_dimension_embedding_error": 9.86236351432e-11,
+      "all_time_leakage_probability_upper_for_N4": {
+        "numerator": 9,
+        "denominator": 4096,
+        "decimal": 0.002197265625
+      },
+      "floating_point_checks_not_used_as_analytic_probability_certificate": true
+    },
+    "scope_and_budget": {
+      "endpoint_checks": [
+        {
+          "subjects": 4,
+          "potential_exchange_terms": 6,
+          "endpoint_effective_adjacency_norm": 2,
+          "occupied_degree": 1
+        },
+        {
+          "subjects": 6,
+          "potential_exchange_terms": 15,
+          "endpoint_effective_adjacency_norm": 4,
+          "occupied_degree": 1
+        },
+        {
+          "subjects": 8,
+          "potential_exchange_terms": 28,
+          "endpoint_effective_adjacency_norm": 6,
+          "occupied_degree": 1
+        }
+      ],
+      "relabeling_checks": 72,
+      "old_three_path_flip_identically_zero_in_C1_matching_sector": true,
+      "new_effective_rematching_crosses_old_components": true,
+      "effective_endpoint_off_diagonal_norm": "g^2*(N-2)/(2*Delta)",
+      "fixed_occupied_degree_does_not_bound_potential_interaction_budget": true,
+      "uniform_matching_state_is_effective_eigenstate": true,
+      "data_factors_are_spectators_in_this_round": true
+    }
+  },
+  "scope": {
+    "explicit_two_subject_continuous_address_model": true,
+    "all_even_N_second_order_matching_flip_formula_proved": true,
+    "finite_window_bare_code_error_and_probability_certificate": true,
+    "arbitrary_unknown_matching_coherence_reference_error_covered": true,
+    "all_time_initial_code_leakage_bound_proved": true,
+    "known_perfect_matching_flip_graph_identified": true,
+    "direct_two_body_virtual_process_evades_exact_code_support_obstruction": true,
+    "consistency_energy_and_address_access_derived_from_429": false,
+    "existing_path_locality_selected_by_this_consistency_model": false,
+    "arbitrary_unknown_matching_state_has_uniform_change_probability": false,
+    "data_conditional_transport_implemented_in_this_model": false,
+    "arbitrary_inconsistent_input_autonomously_repaired": false,
+    "bounded_capacity_implies_uniform_interaction_budget": false,
+    "three_dimensional_space_generated": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

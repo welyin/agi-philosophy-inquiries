@@ -1,0 +1,186 @@
+{
+  "round": 457,
+  "scientific_baseline_round": 455,
+  "test_count": 6,
+  "checks": [
+    {
+      "name": "exact_sector_multiplicity_and_target_capacity",
+      "passed": true,
+      "pairs_checked": 8
+    },
+    {
+      "name": "first_charge_penalty_and_three_pair_improvement",
+      "passed": true,
+      "p": "7/10",
+      "three_pair_optimum": "413/500",
+      "four_pair_optimum": "4361/5000",
+      "four_pair_unrestricted": "1127/1250",
+      "charge_penalty": "147/5000",
+      "five_triplet_only_pairs_invariant_optimum": "184/243",
+      "five_triplet_only_pairs_unrestricted_optimum": "1",
+      "four_pair_sectors": [
+        {
+          "j": 0,
+          "capacity": 5,
+          "selected": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              4
+            ]
+          ]
+        },
+        {
+          "j": 1,
+          "capacity": 9,
+          "selected": [
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              5
+            ]
+          ]
+        },
+        {
+          "j": 2,
+          "capacity": 5,
+          "selected": [
+            [
+              2,
+              5
+            ]
+          ]
+        },
+        {
+          "j": 3,
+          "capacity": 1,
+          "selected": [
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        {
+          "j": 4,
+          "capacity": 0,
+          "selected": []
+        }
+      ]
+    },
+    {
+      "name": "explicit_invariant_optimizer_attains_sector_bound",
+      "passed": true,
+      "attained_probability": 0.872200000000001,
+      "matrix_errors": {
+        "unitarity": 1.0400884387875373e-13,
+        "Jplus_commutator": 1.992683156637803e-13,
+        "Jz_commutator": 0.0
+      }
+    },
+    {
+      "name": "static_two_body_supply_integer_certificate_and_window",
+      "passed": true,
+      "edges_strong": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          4,
+          5,
+          1
+        ]
+      ],
+      "edges_one_fifth": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "time": 93,
+      "probability": 0.809166581346074,
+      "certified_probability_greater_than": "809/1000",
+      "dyadic_bits": 100,
+      "taylor_degree": 14,
+      "squarings": 12,
+      "small_step_norm_bound": "1209/10240",
+      "unitary_error_bound": "3804268642109/50000000000000000000000000000000000",
+      "probability_error_bound": 1.5217074568436e-22,
+      "window": [
+        "18599/200",
+        "18601/200"
+      ],
+      "window_probability_greater_than": "4/5"
+    },
+    {
+      "name": "closed_entropy_ledger_and_finite_charge_obstruction",
+      "passed": true,
+      "input_pair_entropy_bits": 1.3567796494470397,
+      "target_entropy_bits": 1.0056754675852142,
+      "remainder_entropy_bits": 3.1743691403696612,
+      "remainder_entropy_increase_bits": 0.4608098414755819,
+      "minimum_required_increase_bits": 0.35110418186182657,
+      "target_remainder_mutual_information_bits": 0.10970565961375467,
+      "constant_total_energy": "-1",
+      "constant_energy_second_moment": "7649/1250",
+      "constant_energy_variance": "6399/1250",
+      "total_entropy_error": 1.7763568394002505e-15
+    },
+    {
+      "name": "unknown_subject_independent_delivery_and_retained_remainder",
+      "passed": true,
+      "reduced_supply_half_diamond_error": 0.190833418653926,
+      "closed_supply_half_trace_error": 0.21552986064060548,
+      "closed_supply_upper_bound": 0.4368448450582037,
+      "old_unknown_subject_action": "identity during supply; whole GLR arbitrary",
+      "automatic_supply_to_conversion_handoff_implemented": false
+    }
+  ],
+  "all_passed": true,
+  "scope": {
+    "exact_any_n_SU2_invariant_unitary_capacity": true,
+    "strict_nonabelian_charge_cost_at_four_pairs": true,
+    "one_static_positive_pair_exchange_supply_witness": true,
+    "unknown_subject_and_internal_remainder_preserved": true,
+    "static_exchange_reaches_global_optimum_claimed": false,
+    "perfect_singlet_from_finite_full_rank_supply": false,
+    "all_resources_regenerated": false,
+    "joint_autonomous_handoff_completed": false,
+    "new_cognitive_axiom_derived": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

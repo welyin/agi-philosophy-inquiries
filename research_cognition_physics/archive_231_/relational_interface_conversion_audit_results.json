@@ -1,0 +1,140 @@
+{
+  "round": 455,
+  "baseline_round": 453,
+  "date": "2026-09-24",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "observations": {
+    "exact_collective_identity": {
+      "raw_dimension": 32,
+      "original_code_plus_aux_dimension": 16,
+      "input_logical_gauge_dimension": 4,
+      "physical_edges": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "all_weights": 1,
+      "original_code_preserved_all_times": true,
+      "compressed_generator": "I + SWAP_(G,carrier4)",
+      "four_spin_basis_identical_to_round_434": true,
+      "common_SU2_invariance": true
+    },
+    "endpoint": {
+      "time": "pi/2",
+      "isometry": "U_T V_in = V_out",
+      "original_gauge_retained_in_physical_spin": 4,
+      "unknown_G_L_reference_correlations_preserved": true,
+      "mixed_reference_check_dimension": 3,
+      "postselection": false,
+      "unknown_input_tomography": false,
+      "intermediate_pulses": false,
+      "output_joint_error": 1.30564674275e-15
+    },
+    "logic_effects": {
+      "unchanged_physical_effects_for_all_three_components": true,
+      "logic_channel_exact_identity_for_every_time": true,
+      "max_commutator_residual": 5.08768104863e-16,
+      "effect_permissions_input": true,
+      "internal_pointer_or_full_tomography_implemented": false
+    },
+    "finite_window": {
+      "center": "pi/2",
+      "half_width": "1/8",
+      "code_probability": "1 - (3/4)*cos(t)^2",
+      "code_probability_window_lower": "253/256",
+      "half_diamond_error": "sqrt(3)/2 * abs(sin(delta))",
+      "half_diamond_window_upper": "sqrt(3)/16",
+      "maximum_numeric_distance_error": 2.50242343075e-15,
+      "exact_permanent_handoff": false,
+      "code_probability_at_pi": 0.25
+    },
+    "resources": {
+      "minimum_total_physical_spins": 5,
+      "minimum_added_spins_for_closed_full_G_L_retention": 2,
+      "minimum_complementary_carrier_dimension": 2,
+      "invariant_two_spin_pure_resource_unique": "singlet",
+      "deterministic_five_spin_conversion_requires_pure_aux": true,
+      "no_additional_sink_measurement_postselection_in_bound": true,
+      "maximally_mixed_full_state_code_probability": "1/8",
+      "mixed_invariant_resource_cases": [
+        {
+          "singlet_fraction": 0.0,
+          "input_rank": 12,
+          "fixed_conversion_success": 6.27391657145e-17,
+          "any_unitary_rank4_capture_upper": 0.333333333333
+        },
+        {
+          "singlet_fraction": 0.1,
+          "input_rank": 16,
+          "fixed_conversion_success": 0.1,
+          "any_unitary_rank4_capture_upper": 0.3
+        },
+        {
+          "singlet_fraction": 0.25,
+          "input_rank": 16,
+          "fixed_conversion_success": 0.25,
+          "any_unitary_rank4_capture_upper": 0.25
+        },
+        {
+          "singlet_fraction": 0.7,
+          "input_rank": 16,
+          "fixed_conversion_success": 0.7,
+          "any_unitary_rank4_capture_upper": 0.7
+        },
+        {
+          "singlet_fraction": 1.0,
+          "input_rank": 4,
+          "fixed_conversion_success": 1.0,
+          "any_unitary_rank4_capture_upper": 1.0
+        }
+      ],
+      "source_of_supplied_singlet_derived": false,
+      "noisy_resource_endpoint_half_diamond_error": "1-p",
+      "thermodynamic_work_minimum_claimed": false
+    },
+    "internal_ledger": {
+      "raw_spins": 5,
+      "supplied_singlet_pairs": 1,
+      "old_gauge_reference_Bell_pair_moved_exactly": true,
+      "former_aux_pair_singlet_probability_after_this_input": 0.25,
+      "singlet_resource_returned_unchanged": false,
+      "global_information_erased": false,
+      "initial_and_final_mean_H": "3/2",
+      "variance_H": "3/4",
+      "relative_energy_unit": "unit coefficient of each SWAP",
+      "equal_coupling_layout_and_access_are_inputs": true,
+      "automatic_handoff_to_round_434_implemented": false
+    }
+  },
+  "scope": {
+    "existing_three_spin_unknown_G_L_input": true,
+    "invariant_singlet_aux_resource_explicit": true,
+    "exact_three_constant_exchange_conversion": true,
+    "every_internal_reference_preserved": true,
+    "finite_window_full_channel_error_proved": true,
+    "minimum_carrier_and_closed_five_spin_purity_conditions_proved": true,
+    "no_new_abstract_encoding_universality_claimed": true,
+    "depends_on_round_454": false,
+    "singlet_preparation_source_derived": false,
+    "permanent_autonomous_handoff": false,
+    "macro_subject_entangling_network_implemented": false,
+    "full_soca_or_spatial_dimension_or_GR_generated": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

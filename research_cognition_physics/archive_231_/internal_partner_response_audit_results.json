@@ -1,0 +1,255 @@
+{
+  "round": 447,
+  "baseline_round": 446,
+  "date": "2026-09-24",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "tests_run": 8,
+  "failures": 0,
+  "errors": 0,
+  "observations": {
+    "invariant_model": {
+      "exact_raw_swap_checks": [
+        {
+          "subjects": 2,
+          "matching_sectors": 1,
+          "complete_invariant_dimension": 9,
+          "unknown_logical_code_dimension": 4
+        },
+        {
+          "subjects": 4,
+          "matching_sectors": 3,
+          "complete_invariant_dimension": 243,
+          "unknown_logical_code_dimension": 48
+        }
+      ],
+      "matching_recoverable_from_both_registers_at_all_times": true,
+      "marker_and_logical_state_not_identified": true,
+      "tag_carried_data_conservation_of_446_broken": true,
+      "conditional_logical_encoding_is_explicit_input": true
+    },
+    "spectrum": {
+      "epsilon": "1/16",
+      "dimensionless_logical_energies": [
+        0.125,
+        0.0605487786324,
+        0.0605487786324,
+        -0.00390623515699
+      ],
+      "dimensionless_connected_shift": -3.79242181429e-06,
+      "exact_connected_shift_series": "-epsilon^4/4 + 3*epsilon^6/8 + O(epsilon^8)",
+      "strict_negative_shift_for_all_nonzero_lambda_proved_by_variation": true,
+      "fourth_order_truncation_used_for_long_time_propagation": false
+    },
+    "all_time_bound": {
+      "maximum_double_ground_sine": 0.0441937546557,
+      "analytic_per_pair_operator_bound": "2*abs(epsilon)",
+      "analytic_N_subject_operator_bound": "N*abs(epsilon)",
+      "tensor_reference_uniform": true,
+      "exact_eigenvalue_phases_used": true,
+      "no_adiabatic_preparation_or_dressed_code_required": true,
+      "long_time_numerical_cross_checks": [
+        {
+          "phase_offset": "-1/4",
+          "dimensionless_time": 762465.99012,
+          "all_input_operator_error": 0.0833136358254,
+          "maximum_outside_code_probability": 0.00692910356134
+        },
+        {
+          "phase_offset": "0",
+          "dimensionless_time": 828386.927253,
+          "all_input_operator_error": 0.0646641236864,
+          "maximum_outside_code_probability": 0.00417702400331
+        },
+        {
+          "phase_offset": "1/4",
+          "dimensionless_time": 894307.864386,
+          "all_input_operator_error": 0.086119739189,
+          "maximum_outside_code_probability": 0.00740279999313
+        }
+      ]
+    },
+    "unknown_interface": {
+      "coherent_matching_sectors": 3,
+      "logical_qubits": 4,
+      "reference_dimension": 3,
+      "all_input_operator_error": 0.116758603882,
+      "sampled_complete_reference_trace_distance": 0.0694088075355,
+      "exact_local_readout_intertwiners": 4,
+      "general_unknown_raw_N_plus_1_data_claimed": false,
+      "logical_encoding_is_isometry_without_cloning_unknown_states": true
+    },
+    "physical_signal": {
+      "epsilon": "1/16",
+      "exact_window": "abs(chi)*t in [pi-1/4, pi+1/4]",
+      "strict_signal_lower": {
+        "numerator": 95,
+        "denominator": 128,
+        "decimal": 0.7421875
+      },
+      "all_time_per_pair_outside_code_upper": {
+        "numerator": 1,
+        "denominator": 64,
+        "decimal": 0.015625
+      },
+      "actual_receiver_includes_excited_record_state": true,
+      "no_postselection": true,
+      "window_samples": [
+        {
+          "phase_offset": "-1/4",
+          "actual_receiver_trace_distance": 0.991430216681,
+          "conserved_sector_readout_trace_distance": 0.027617919256
+        },
+        {
+          "phase_offset": "0",
+          "actual_receiver_trace_distance": 0.999791145579,
+          "conserved_sector_readout_trace_distance": 0.0138547697766
+        },
+        {
+          "phase_offset": "1/4",
+          "actual_receiver_trace_distance": 0.992207968317,
+          "conserved_sector_readout_trace_distance": 0.0041126886662
+        }
+      ],
+      "fixed_matching_cross_pair_no_signalling_from_exact_tensor_factorization": true,
+      "interventions_must_preserve_marker_three_state_interface": true,
+      "matching_reconfiguration_and_this_processor_combined": false,
+      "large_phase_signal_needs_cross_sector_preparation_and_readout": true,
+      "uniform_trace_distance_does_not_supply_fixed_phase_clock": true
+    },
+    "raw_data_boundary": {
+      "initial_address": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "initial_raw_data": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "final_address": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "final_raw_data": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "fourth_order_path_denominators": {
+        "(2, 2, 2)": 16,
+        "(2, 4, 2)": 8
+      },
+      "leading_off_diagonal_coefficient_in_lambda4_over_Delta3": "-5/2",
+      "unrestricted_data_would_reconfigure_matching_at_same_order_as_phase": true,
+      "blank_marker_code_needed_for_the_claimed_fixed_partner_interface": true
+    },
+    "single_marker_exact_code": {
+      "subjects": 4,
+      "coherent_matching_sectors": 3,
+      "physical_invariant_dimension": 48,
+      "logical_code_dimension": 48,
+      "two_states": [
+        "|partner,blank>",
+        "|blank,partner>"
+      ],
+      "exact_unknown_joint_graph_logic_reference_intertwining": true,
+      "graph_identity_recoverable_from_both_registers": true,
+      "instantaneous_address_registers_always_reciprocal": false,
+      "address_blank_readout_intertwiners": 4,
+      "finite_time_full_operator_error": 8.00457454813e-15,
+      "per_pair_exact_H": "2*Delta*(I-|00><00|)+lambda*(X_i+X_j)",
+      "no_low_energy_or_weak_coupling_approximation": true,
+      "internal_swap_is_logical_X": true
+    },
+    "fixed_readout_certificate": {
+      "Delta": 1,
+      "lambda_value": 1,
+      "initial_messages": [
+        "|00>",
+        "|10>"
+      ],
+      "same_receiver_effect": "address register is blank",
+      "rational_taylor_degree": 32,
+      "exponential_operator_tail": {
+        "numerator": 34359738368,
+        "denominator": 49919566178739706120546875,
+        "decimal": 6.88302022597e-16
+      },
+      "strict_at_t1_lower": {
+        "numerator": 21758462620211421525867234091798234047578519475026229094331,
+        "denominator": 190488624839339259742089554315932892272728397440000000000000,
+        "decimal": 0.114224472136
+      },
+      "interval": [
+        "199/200",
+        "201/200"
+      ],
+      "derivative_absolute_bound": 2,
+      "strict_window_lower": {
+        "numerator": 19853576371818028928446338548638905124851235500626229094331,
+        "denominator": 190488624839339259742089554315932892272728397440000000000000,
+        "decimal": 0.104224472136
+      },
+      "simple_lower": "1/10",
+      "time_dependent_optimal_measurement_used": false,
+      "postselection_used": false,
+      "small_epsilon_assumption_used": false,
+      "preparation_and_actual_readout_apparatus_still_inputs": true,
+      "numerical_cross_checks": [
+        {
+          "time": "199/200",
+          "probabilities": [
+            0.544834471284,
+            0.658080127878
+          ],
+          "signed_fixed_effect_gap": 0.113245656594
+        },
+        {
+          "time": "1",
+          "probabilities": [
+            0.547338447845,
+            0.661562919981
+          ],
+          "signed_fixed_effect_gap": 0.114224472136
+        },
+        {
+          "time": "201/200",
+          "probabilities": [
+            0.549816805962,
+            0.665008534369
+          ],
+          "signed_fixed_effect_gap": 0.115191728406
+        }
+      ]
+    }
+  },
+  "scope": {
+    "internal_substructure_swap_breaks_446_tagged_data_conservation": true,
+    "exact_matching_marker_code_and_pair_factorization": true,
+    "arbitrary_encoded_matching_logic_reference_covered": true,
+    "no_separate_cross_subject_data_exchange_added": true,
+    "strict_conditional_phase_for_all_nonzero_lambda": true,
+    "all_time_bare_code_bound_uses_exact_eigenvalue_phases": true,
+    "actual_recorded_partner_signal_and_fixed_sector_no_cross_signal": true,
+    "unrestricted_raw_data_fourth_order_scope_counterexample": true,
+    "single_marker_exact_qubit_code_and_record_selected_pair_H": true,
+    "same_fixed_population_effect_signal_above_one_tenth_on_window": true,
+    "low_energy_phase_readout_limitation_explicit": true,
+    "reciprocal_consistency_penalty_derived_from_429": false,
+    "initial_matching_dependent_encoding_generated_autonomously": false,
+    "arbitrary_raw_data_preserves_fixed_matching": false,
+    "dynamic_partner_reassignment_combined_with_this_processor": false,
+    "potential_contact_or_spatial_dimension_generated": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

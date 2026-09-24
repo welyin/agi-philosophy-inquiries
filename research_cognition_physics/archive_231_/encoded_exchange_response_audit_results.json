@@ -1,0 +1,135 @@
+{
+  "round": 434,
+  "baseline_round": 433,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "observations": {
+    "code": {
+      "physical_qubits": 8,
+      "logical_qubits": 2,
+      "one_block_spectrum_and_multiplicity": [
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          6,
+          5
+        ]
+      ],
+      "one_block_gap": 2,
+      "zero_total_spin_excitation_gap": 4,
+      "code_dimension": 4,
+      "physical_three_dimensional_space_assumed": false
+    },
+    "second_order": {
+      "k2": "-5 I/12 - (Z_D+Z_R)/12 - Z_D Z_R/6",
+      "conditional_ZZ_coefficient": -0.16666666666666666,
+      "first_order_logical_interaction": 0,
+      "one_cross_link_gives_only_scalar": -0.1875,
+      "two_cross_link_paths_needed_in_this_construction": true,
+      "k2_operator_formula_error": 4.3460233773591095e-16
+    },
+    "primitive_implementation": {
+      "total_nonzero_pair_couplings": 14,
+      "all_physical_pair_weights_positive_at_witness": true,
+      "time_independent": true,
+      "pulse_schedule_used": false,
+      "new_fundamental_flip_or_controlled_swap_used": false,
+      "effective_hamiltonian": "-5 I/12 + (X_R + Z_R - Z_D Z_R)/6",
+      "weak_couplings_and_block_partition_are_prescribed": true
+    },
+    "uniform_error": {
+      "proof": "polynomial intertwiner plus Duhamel; no normalized dressing or adiabatic switch required",
+      "bound": "sqrt(3)*[(1/2+|tau|)*|epsilon| + (3/8+21|tau|/64)*epsilon^2]",
+      "covers_arbitrary_encoded_state_and_internal_reference": true,
+      "finite_tau_with_physical_time_proportional_to_epsilon_inverse_squared": true,
+      "numerical_scan_is_validation_not_proof": true,
+      "rows": [
+        {
+          "epsilon_denominator": 64,
+          "tau": 9.42477796076938,
+          "physical_time": 38603.89052731138,
+          "operator_error": 0.046223922696075795,
+          "analytic_operator_error_bound": 0.2700634655618789,
+          "maximum_code_leakage_probability": 0.00012453296669608929
+        },
+        {
+          "epsilon_denominator": 128,
+          "tau": 9.42477796076938,
+          "physical_time": 154415.5621092455,
+          "operator_error": 0.023026749953061417,
+          "analytic_operator_error_bound": 0.13466516202286188,
+          "maximum_code_leakage_probability": 3.082814472328637e-05
+        },
+        {
+          "epsilon_denominator": 256,
+          "tau": 9.42477796076938,
+          "physical_time": 617662.248436982,
+          "operator_error": 0.011491881119145297,
+          "analytic_operator_error_bound": 0.06724093832191157,
+          "maximum_code_leakage_probability": 7.6683684519317e-06
+        },
+        {
+          "epsilon_denominator": 512,
+          "tau": 9.42477796076938,
+          "physical_time": 2470648.993747928,
+          "operator_error": 0.005740536292086092,
+          "analytic_operator_error_bound": 0.033597558488575936,
+          "maximum_code_leakage_probability": 1.9122294032391484e-06
+        }
+      ]
+    },
+    "activation": {
+      "initial_relation_state": "logical |0>",
+      "data_inputs": "logical Z_D eigenvalues +1 and -1",
+      "ideal_probabilities_at_tau_3pi": [
+        1.0,
+        0.026263112192168037
+      ],
+      "actual_probabilities_at_epsilon_inverse_512": [
+        0.999994926283158,
+        0.026387085495091472
+      ],
+      "actual_contrast": 0.9736078407880665,
+      "guaranteed_tau_window": [
+        9.17477796076938,
+        9.67477796076938
+      ],
+      "analytic_window_contrast_lower_bound": 0.7293772365044935,
+      "analytic_window_equal_prior_success_lower_bound": 0.8646886182522467,
+      "ideal_output_concurrence_for_product_input": 0.9867810739003005,
+      "exact_stopping_time_required": false,
+      "persistent_record_or_spatial_neighbor_generated": false
+    },
+    "quantum_consistency": {
+      "affinity_error": 6.366398040331084e-17,
+      "reference_marginal_error": 4.467708226160557e-16,
+      "whole_inverse_recovery_error": 1.194482441419765e-15,
+      "naive_PHP_activation_contrast": 1.942890293094024e-16,
+      "virtual_excursions_are_essential": true,
+      "unknown_state_preserved_globally_not_unchanged_data_marginal": true
+    }
+  },
+  "scope": {
+    "continuous_exchange_only_conditional_response_constructed": true,
+    "uniform_finite_time_error_and_reference_contract_proved": true,
+    "known_singlet_code_and_effective_interaction_tools_attributed": true,
+    "new_fundamental_flip_or_controlled_exchange_required_in_this_example": false,
+    "exact_raw_433_hamiltonian_implemented": false,
+    "complete_433_three_edge_model_implemented": false,
+    "partition_couplings_gap_and_code_preparation_are_inputs": true,
+    "derived_from_429_exchange_alone": false,
+    "full_cognitive_implementation_completed": false,
+    "three_dimensional_space_unconditionally_derived": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

@@ -1,0 +1,249 @@
+{
+  "round": 440,
+  "baseline_round": 439,
+  "tests_run": 7,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "observations": {
+    "source_operator_and_conservation": {
+      "full_four_vertex_operator_dimension": 64,
+      "ordered_source_sum_normalization_exact": true,
+      "degree_and_component_partition_preserved": [
+        {
+          "vertices": 4,
+          "graphs": 64,
+          "directed_configuration_moves": 18,
+          "path_weighted_moves": 24
+        },
+        {
+          "vertices": 5,
+          "graphs": 1024,
+          "directed_configuration_moves": 1440,
+          "path_weighted_moves": 1920
+        },
+        {
+          "vertices": 6,
+          "graphs": 32768,
+          "directed_configuration_moves": 138240,
+          "path_weighted_moves": 184320
+        }
+      ],
+      "resources_f_i_and_charges_Q_i_unchanged_by_flip": true,
+      "temporary_extra_endpoint_slots_required": false
+    },
+    "reconfiguration": {
+      "path_and_cycle_counts": [
+        {
+          "vertices": 3,
+          "paths_fixed_endpoint_labels": 1,
+          "cycles_fixed_vertex_labels": 1
+        },
+        {
+          "vertices": 4,
+          "paths_fixed_endpoint_labels": 2,
+          "cycles_fixed_vertex_labels": 3
+        },
+        {
+          "vertices": 5,
+          "paths_fixed_endpoint_labels": 6,
+          "cycles_fixed_vertex_labels": 12
+        },
+        {
+          "vertices": 6,
+          "paths_fixed_endpoint_labels": 24,
+          "cycles_fixed_vertex_labels": 60
+        },
+        {
+          "vertices": 7,
+          "paths_fixed_endpoint_labels": 120,
+          "cycles_fixed_vertex_labels": 360
+        }
+      ],
+      "all_s_adjacent_internal_permutation_proof": true,
+      "six_vertex_cubic_graphs": 70,
+      "cubic_configuration_graph_connected": true,
+      "explicit_non_isomorphic_pair": {
+        "before": "K_3,3",
+        "before_mask": 4060,
+        "after_mask": 7100,
+        "before_triangles": 0,
+        "after_triangles": 2
+      },
+      "general_regular_graph_reachability_attributed_to_flip_literature": true
+    },
+    "quantum_interface": {
+      "full_unknown_data_dimension": 16,
+      "exact_first_order_transfer_block": "I_16",
+      "all_input_and_reference_positive_transfer": {
+        "time": "1/100",
+        "singular_value_lower": "137/18600",
+        "probability_lower": "18769/345960000",
+        "numerical_smallest_singular_value": 0.009999333346666462
+      },
+      "full_joint_unitary_and_reference_preserved": true,
+      "symmetric_data_dimension": 5,
+      "exact_probability": "sin(t)^2",
+      "times": [
+        "0",
+        "pi/4",
+        "pi/2",
+        "pi"
+      ],
+      "quantum_probabilities": [
+        5.004680467665246e-34,
+        0.4999999999999999,
+        0.9999999999999996,
+        1.5498065873385093e-32
+      ],
+      "comparison_continuous_markov_probabilities": [
+        0.0,
+        0.39606021182461904,
+        0.47839304086811385,
+        0.499066278634146
+      ],
+      "irreversible_selection_or_stationary_mixing_of_quantum_model_claimed": false
+    },
+    "relational_path_frame": {
+      "vertices": 5,
+      "path_orders": 6,
+      "full_dimension": 192,
+      "controlled_data_relabeling_exact_integer_unitary": true,
+      "exact_frame_hamiltonian": "H_path tensor I + kappa sum_r SWAP_(r,r+1) tensor T_r",
+      "all_unknown_joint_data_graph_and_reference_covered": true,
+      "fixed_label_readout_transformation_verified": true,
+      "controlled_frame_transform_physically_implemented": false,
+      "graph_rewiring_without_corresponding_data_readout_transform_not_pure_gauge": true,
+      "frame_is_an_existing_path_order_not_a_derived_three_dimensional_coordinate": true
+    },
+    "primitive_support_boundary": {
+      "finite_exact_checks": [
+        {
+          "vertices": 4,
+          "degree_sector_pairs_by_Hamming_distance": {
+            "4": 12
+          }
+        },
+        {
+          "vertices": 5,
+          "degree_sector_pairs_by_Hamming_distance": {
+            "4": 960,
+            "6": 240,
+            "10": 6
+          }
+        }
+      ],
+      "all_N_degree_preserving_nontrivial_graph_transition_needs_at_least_four_edge_flips": true,
+      "at_most_three_edge_qubit_local_degree_commuting_H_is_graph_diagonal": true,
+      "new_flip_derived_from_raw_two_body_SWAP": false,
+      "encoded_exchange_simulation_excluded": false,
+      "charge_violating_virtual_excursions_or_auxiliaries_excluded": false,
+      "general_joint_dynamics_may_still_act_on_data": true
+    },
+    "endpoint_flip_strength": {
+      "all_N_bound": "2*abs(kappa)*C*(C-1)^2",
+      "proof": "four positions of endpoint in oriented three-path; identify reversal",
+      "finite_rows": [
+        {
+          "vertices": 4,
+          "max_row_sum_by_capacity": {
+            "0": 0,
+            "1": 0,
+            "2": 4,
+            "3": 0
+          }
+        },
+        {
+          "vertices": 5,
+          "max_row_sum_by_capacity": {
+            "0": 0,
+            "1": 0,
+            "2": 4,
+            "3": 12
+          }
+        },
+        {
+          "vertices": 6,
+          "max_row_sum_by_capacity": {
+            "0": 0,
+            "1": 0,
+            "2": 4,
+            "3": 24
+          }
+        }
+      ],
+      "combined_with_439_bound": "abs(Omega)*C*(C-1)+2*abs(kappa)*C*(C-1)^2",
+      "physical_metric_light_cone_not_yet_derived": true
+    },
+    "combined_C2_complete_classification": {
+      "formula": "4^r times product_paths((s-2)!) times product_cycles((s-1)!/2), s>=4",
+      "nonzero_Omega_and_kappa_required": true,
+      "finite_exhaustive_checks": [
+        {
+          "vertices": 3,
+          "graphs": 8,
+          "combined_components_by_size": {
+            "1": 4,
+            "4": 1
+          }
+        },
+        {
+          "vertices": 4,
+          "graphs": 41,
+          "combined_components_by_size": {
+            "1": 10,
+            "2": 6,
+            "3": 1,
+            "4": 4
+          }
+        },
+        {
+          "vertices": 5,
+          "graphs": 253,
+          "combined_components_by_size": {
+            "1": 26,
+            "2": 30,
+            "3": 5,
+            "4": 20,
+            "6": 10,
+            "12": 1
+          }
+        },
+        {
+          "vertices": 6,
+          "graphs": 1858,
+          "combined_components_by_size": {
+            "1": 76,
+            "2": 180,
+            "3": 30,
+            "4": 80,
+            "6": 60,
+            "12": 6,
+            "16": 10,
+            "24": 15,
+            "60": 1
+          }
+        }
+      ],
+      "initial_component_membership_and_long_component_degree_labels_remain_fixed": true,
+      "three_dimensional_space_or_growth_of_N_generated": false
+    }
+  },
+  "scope": {
+    "existing_quantum_graphity_flip_explicitly_attributed": true,
+    "simultaneous_rewiring_without_extra_slots_proved": true,
+    "endpoint_degree_charge_and_partition_invariants_proved": true,
+    "unknown_data_reference_and_relational_frame_verified": true,
+    "combined_C2_all_N_configuration_classification_proved": true,
+    "size_independent_endpoint_flip_norm_bound_proved": true,
+    "minimum_four_edge_transition_support_proved": true,
+    "graph_flip_generator_selected_by_429": false,
+    "individual_degrees_conserved_by_combined_model": false,
+    "classical_mixing_claimed_for_closed_unitary": false,
+    "physical_dimension_or_new_subject_growth_derived": false,
+    "final_Heisenberg_hardware_compiled": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

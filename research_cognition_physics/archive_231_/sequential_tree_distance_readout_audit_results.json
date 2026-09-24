@@ -1,0 +1,343 @@
+{
+  "round": 472,
+  "baseline_round": 470,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "observations": {
+    "exact_first_map": {
+      "all_15_data_edge_coefficients": [
+        {
+          "edge": [
+            0,
+            1
+          ],
+          "left_trace_over_64": [
+            0.0,
+            -0.5
+          ]
+        },
+        {
+          "edge": [
+            0,
+            2
+          ],
+          "left_trace_over_64": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "edge": [
+            0,
+            3
+          ],
+          "left_trace_over_64": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "edge": [
+            0,
+            4
+          ],
+          "left_trace_over_64": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "edge": [
+            0,
+            5
+          ],
+          "left_trace_over_64": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "edge": [
+            1,
+            2
+          ],
+          "left_trace_over_64": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "edge": [
+            1,
+            3
+          ],
+          "left_trace_over_64": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "edge": [
+            1,
+            4
+          ],
+          "left_trace_over_64": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "edge": [
+            1,
+            5
+          ],
+          "left_trace_over_64": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "edge": [
+            2,
+            3
+          ],
+          "left_trace_over_64": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "edge": [
+            2,
+            4
+          ],
+          "left_trace_over_64": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "edge": [
+            2,
+            5
+          ],
+          "left_trace_over_64": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "edge": [
+            3,
+            4
+          ],
+          "left_trace_over_64": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "edge": [
+            3,
+            5
+          ],
+          "left_trace_over_64": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "edge": [
+            4,
+            5
+          ],
+          "left_trace_over_64": [
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "graph_matrix_units_checked": 36,
+      "full_H_dimension": 384,
+      "instrument_record": "w=-sgn(J)*z, data preparation +X_u,+Y_v,I/2 elsewhere",
+      "signed_derivative": "abs(J)*{n_uv,rho}/2",
+      "graph_F_first_signed_term_zero": true,
+      "every_SWAP_preparation_mean": "1/2",
+      "mean_data_H": "J*(N-1)*I_G/2"
+    },
+    "actual_instrument": {
+      "time": "1/1024",
+      "Kraus_count_per_probe": 1024,
+      "Choi_minimum_eigenvalues": [
+        -6.64352695844e-16,
+        -1.33901180828e-15
+      ],
+      "trace_preservation_residual": 7.69825502839e-16,
+      "normalized_signed_superoperator_Frobenius_error": 0.00977171322112,
+      "finite_time_instrument_from_full_original_U": true,
+      "no_graph_projector_measurement_or_postselection": true,
+      "off_diagonal_Jordan_matrix_unit_factor": "1/2",
+      "corresponding_Lueders_factor": "0",
+      "Jordan_sequence_not_a_Lueders_projection_channel": true
+    },
+    "sequential_distance_readout": {
+      "time": "1/65536",
+      "full_H_J": 1,
+      "full_H_kappa": 1,
+      "finite_N_H_bound": 25,
+      "arbitrary_reference_sample_dimension": 3,
+      "path_records": [
+        {
+          "path": [
+            0,
+            1,
+            5
+          ],
+          "length": 2,
+          "true_probability": 0.162162162162,
+          "normalized_actual_record_mean": 0.162158450614,
+          "reference_trace_norm_error": 1.61338554948e-05,
+          "proven_bound": 0.0385206587604
+        },
+        {
+          "path": [
+            0,
+            2,
+            5
+          ],
+          "length": 2,
+          "true_probability": 0.162162162162,
+          "normalized_actual_record_mean": 0.162155564095,
+          "reference_trace_norm_error": 1.50989673391e-05,
+          "proven_bound": 0.0385206587604
+        },
+        {
+          "path": [
+            0,
+            1,
+            2,
+            5
+          ],
+          "length": 3,
+          "true_probability": 0.351351351351,
+          "normalized_actual_record_mean": 0.351357536392,
+          "reference_trace_norm_error": 2.48981849536e-05,
+          "proven_bound": 0.0583339067959
+        },
+        {
+          "path": [
+            0,
+            2,
+            1,
+            5
+          ],
+          "length": 3,
+          "true_probability": 0.324324324324,
+          "normalized_actual_record_mean": 0.324334220278,
+          "reference_trace_norm_error": 2.26972396357e-05,
+          "proven_bound": 0.0583339067959
+        }
+      ],
+      "mean_distance_target": 2.67567567568,
+      "mean_distance_actual_estimator": 2.67570329943,
+      "complete_reference_distance_moment_error": 6.92069395997e-05,
+      "weighted_proven_bound": 0.504086075817,
+      "no_use_of_six_tree_shortcut_3_minus_Q": true,
+      "graph_coherence_retained": true
+    },
+    "path_polynomial_scope": {
+      "larger_N": 8,
+      "fixed_degree_trees": 90,
+      "paths_per_tree": 1957,
+      "path_event_checks": 176130,
+      "exactly_one_simple_path_event_for_every_tree": true,
+      "all_adjacency_marginals_equal_but_mean_distance_different": [
+        2,
+        3
+      ],
+      "close_distribution": [
+        0.0,
+        0.0,
+        0.5,
+        0.5,
+        0.0,
+        0.0
+      ],
+      "far_distribution": [
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.5
+      ],
+      "statistical_mean_distance_not_a_single_graph_eigenvalue": true,
+      "no_spatial_dimension_inferred": true
+    },
+    "backaction": {
+      "time_per_probe": "1/128",
+      "probes": 3,
+      "classical_record_branches": 8,
+      "centered_interaction_bound": "15/2",
+      "graph_reference_trace_distance": 0.000274445889708,
+      "nonselective_bound": 0.0107140827671,
+      "record_graph_reference_trace_distance": 0.00527509066407,
+      "retained_record_bound": 0.17578125,
+      "comparison": "free exp(-i*kappa*F*m*t) graph evolution",
+      "original_reference_marginal_preserved": true,
+      "graph_reference_state_not_preserved": true,
+      "conditional_state_not_claimed_undisturbed": true
+    },
+    "finite_resource_certificate": {
+      "N": 6,
+      "C": 3,
+      "J": "1",
+      "kappa": 1,
+      "H_bound": "25",
+      "catalog_paths": 65,
+      "sum_path_lengths": 261,
+      "maximum_probes_per_trial": 5,
+      "target_distance_error": "1/10",
+      "failure_probability": "1/100",
+      "per_path_total_error": "1/2610",
+      "time_per_probe": "1/391500000",
+      "complete_instrument_diamond_error_budget": "1/40872600000000",
+      "actual_stage_instruments_fixed_independently_of_previous_random_records": true,
+      "intrinsic_control_error_budget": "1/81745200000000",
+      "total_control_duration_budget": "1/4087260000000000",
+      "per_path_bias_bound": "5664177112099906633859397827487715296511746992329262477999/88698746989545735318895576428485644993831317634037760000000000",
+      "independent_copies_per_path": "46098698652701115730490366813986945312500000000000000000000000000000000000000000000000000000000",
+      "total_independent_graph_inputs": "2996415412425572522481873842909151445312500000000000000000000000000000000000000000000000000000000",
+      "maximum_probe_stages": "14982077062127862612409369214545757226562500000000000000000000000000000000000000000000000000000000",
+      "maximum_local_data_replacements": "89892462372767175674456215287274543359375000000000000000000000000000000000000000000000000000000000",
+      "exp10_greater_than_13000_exactly_certified": true,
+      "finite_source_required_not_cloned_or_reused_without_proof": true,
+      "fresh_probe_storage_per_trial_at_most_n_times_m": 30,
+      "repeated_readout_of_one_unknown_graph_not_independent_samples": true,
+      "fixed_nonzero_hardware_error_cannot_be_removed_by_t_to_zero": true,
+      "actual_readout_bit_flip_signed_factor": "499/500",
+      "statistics_and_timing_numbers_not_experimental_runs": true
+    }
+  },
+  "scope": {
+    "original_graph_F_always_on_during_waits": true,
+    "actual_intermediate_data_instruments_are_new_permissions": true,
+    "ideal_instantaneous_control_not_autonomously_realized": true,
+    "complete_instrument_error_includes_control_duration": true,
+    "actual_instrument_no_feedback_from_previous_records": true,
+    "fixed_step_channels_trivial_on_prior_records_and_R": true,
+    "noninteracting_retired_apparatus_required": true,
+    "arbitrary_initial_graph_coherence_and_reference": true,
+    "finite_N_tree_mean_distance_accessible_under_stated_permissions": true,
+    "signed_Jordan_sequence_only_yields_projector_reference_marginal_after_trace_G": true,
+    "no_graph_measurement_no_postselection_no_free_cloning": true,
+    "unknown_original_data_not_preserved_by_a_bare_reset": true,
+    "original_single_wait_observability_problem_solved": false,
+    "physical_spatial_dimension_derived": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

@@ -1,0 +1,311 @@
+{
+  "round": 438,
+  "baseline_round": 437,
+  "tests_run": 7,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "observations": {
+    "exact_capacity": {
+      "general_formula": "Q_i=f_i+sum_j n_ij; [H,Q_i]=0",
+      "initial_sector": "Q_i=C for every i",
+      "all_times_degree_bound": "degree(i)<=C",
+      "degree_bound_applies_to_each_measured_configuration_and_occupation_operator": true,
+      "support_of_positive_mean_edges_need_not_be_a_matching": true,
+      "full_generator_dimension": 512,
+      "checked_full_columns": 32,
+      "exact_integer_full_intertwining": true,
+      "finite_capacity_checks": [
+        {
+          "capacity": 1,
+          "resource_dimension": 64,
+          "legal_relation_dimension": 4,
+          "all_local_charge_commutators_exactly_zero": true
+        },
+        {
+          "capacity": 2,
+          "resource_dimension": 216,
+          "legal_relation_dimension": 8,
+          "all_local_charge_commutators_exactly_zero": true
+        }
+      ],
+      "arbitrary_data_and_reference_allowed_within_prepared_resource_sector": true,
+      "sector_and_conversion_law_are_explicit_model_inputs": true
+    },
+    "data_and_reference": {
+      "integer_response_certificates": [
+        {
+          "edge": [
+            0,
+            1
+          ],
+          "order_two": "2I",
+          "order_four": "-28I-4SWAP_ij"
+        },
+        {
+          "edge": [
+            0,
+            2
+          ],
+          "order_two": "2I",
+          "order_four": "-28I-4SWAP_ij"
+        },
+        {
+          "edge": [
+            1,
+            2
+          ],
+          "order_two": "2I",
+          "order_four": "-28I-4SWAP_ij"
+        }
+      ],
+      "small_time_probability": "t^2-(7/6+<SWAP_e>/6)t^4+O(t^5)",
+      "measured_time": 0.5,
+      "relation_occupation_probabilities": [
+        0.19476287825916314,
+        0.1819530983796568,
+        0.18195309837965684
+      ],
+      "data_marginal_trace_distance_change": 0.019533357182374894,
+      "complete_unknown_joint_information_preserved": true,
+      "reference_marginal_residual": 2.607955543320555e-16,
+      "arbitrary_data_marginal_unchanged_claimed": false
+    },
+    "identical_input_condition": {
+      "collective_spin_commutator_residuals": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "joint_permutation_residuals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_identical_mixed_state_errors": [
+        1.211484227950281e-16,
+        2.308111352111469e-16,
+        2.3432415864491946e-16
+      ],
+      "all_N_proof_uses_permutation_covariance_and_collective_spin_conservation": true,
+      "arbitrary_correlated_equal_marginals_not_claimed_stationary": true,
+      "full_extended_law_not_derived_from_429_pair_contract": true
+    },
+    "autonomous_reassignment": {
+      "all_pair_parameters": {
+        "Omega": 1,
+        "mu": 1,
+        "J": 1
+      },
+      "graph_order": [
+        "empty",
+        "01",
+        "02",
+        "12"
+      ],
+      "initial_graph": "01",
+      "time": "pi/2",
+      "exact_probabilities": [
+        "0",
+        "5/9",
+        "2/9",
+        "2/9"
+      ],
+      "spectral_probabilities": [
+        1.6710530645928255e-32,
+        0.5555555555555554,
+        0.22222222222222215,
+        0.2222222222222222
+      ],
+      "blank_at_pi_over_four_exact_probabilities": [
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/4"
+      ],
+      "complete_symmetric_unknown_data_and_reference_unchanged": true,
+      "no_measurement_reset_or_external_switch": true,
+      "requested_partner_can_be_selected_deterministically": false,
+      "permanent_record_or_stationary_geometry_claimed": false
+    },
+    "reconfiguration_connectivity": {
+      "finite_graph_checks": [
+        {
+          "nodes": 2,
+          "legal_graph_count": 2,
+          "maximum_distance": 1
+        },
+        {
+          "nodes": 3,
+          "legal_graph_count": 4,
+          "maximum_distance": 2
+        },
+        {
+          "nodes": 4,
+          "legal_graph_count": 10,
+          "maximum_distance": 4
+        },
+        {
+          "nodes": 5,
+          "legal_graph_count": 26,
+          "maximum_distance": 4
+        },
+        {
+          "nodes": 6,
+          "legal_graph_count": 76,
+          "maximum_distance": 6
+        }
+      ],
+      "exact_full_data_leading_order_pairs_checked": 90,
+      "analytic_distance": "|M symmetric_difference M_prime|",
+      "leading_block": "(-i Omega t)^r * number_of_shortest_paths/r! * I_D",
+      "all_finite_N_analytic_path_argument": true,
+      "graph_connectivity_not_claimed_as_ergodicity_or_control_universality": true
+    },
+    "resource_scope": {
+      "finite_counts_and_norms": [
+        {
+          "nodes": 2,
+          "graph_sector_dimension": 2,
+          "explicit_hardware_qubits": 5,
+          "lossless_graph_qubits_at_least": 1,
+          "largest_incident_star_leaves": 1,
+          "incident_conversion_norm": 1.0,
+          "perfect_matching_lower_bound": 1
+        },
+        {
+          "nodes": 3,
+          "graph_sector_dimension": 4,
+          "explicit_hardware_qubits": 9,
+          "lossless_graph_qubits_at_least": 2,
+          "largest_incident_star_leaves": 2,
+          "incident_conversion_norm": 1.4142135623730951
+        },
+        {
+          "nodes": 4,
+          "graph_sector_dimension": 10,
+          "explicit_hardware_qubits": 14,
+          "lossless_graph_qubits_at_least": 4,
+          "largest_incident_star_leaves": 3,
+          "incident_conversion_norm": 1.7320508075688772,
+          "perfect_matching_lower_bound": 3
+        },
+        {
+          "nodes": 5,
+          "graph_sector_dimension": 26,
+          "explicit_hardware_qubits": 20,
+          "lossless_graph_qubits_at_least": 5,
+          "largest_incident_star_leaves": 4,
+          "incident_conversion_norm": 2.0
+        },
+        {
+          "nodes": 6,
+          "graph_sector_dimension": 76,
+          "explicit_hardware_qubits": 27,
+          "lossless_graph_qubits_at_least": 7,
+          "largest_incident_star_leaves": 5,
+          "incident_conversion_norm": 2.23606797749979,
+          "perfect_matching_lower_bound": 15
+        },
+        {
+          "nodes": 7,
+          "graph_sector_dimension": 232,
+          "explicit_hardware_qubits": 35,
+          "lossless_graph_qubits_at_least": 8,
+          "largest_incident_star_leaves": 6,
+          "incident_conversion_norm": 2.449489742783178
+        },
+        {
+          "nodes": 8,
+          "graph_sector_dimension": 764,
+          "explicit_hardware_qubits": 44,
+          "lossless_graph_qubits_at_least": 10,
+          "largest_incident_star_leaves": 7,
+          "incident_conversion_norm": null,
+          "perfect_matching_lower_bound": 105
+        }
+      ],
+      "exact_endpoint_conversion_norm": "|Omega| sqrt(N-1) in Q_i=1 sector",
+      "fixed_operator_rate_budget_requires_Omega_at_most_order_inverse_sqrt_N": true,
+      "matching_count_recurrence": "a_N=a_(N-1)+(N-1)a_(N-2)",
+      "even_N_count_lower": "N!/[2^(N/2)(N/2)!]",
+      "complete_matching_record_capacity": "Theta(N log N) qubits globally for faithful full labeled matching sector",
+      "capacity_bound_not_applied_to_one_restricted_symmetric_trajectory": true,
+      "sparse_active_degree_not_constant_total_hardware_or_rate": true,
+      "resource_charge_not_identified_with_physical_energy": true,
+      "optional_exchange_simulator_preserves_capacity_only_up_to_trace_error": true,
+      "restricted_symmetric_trajectory": {
+        "nodes": 8,
+        "full_matching_dimension": 764,
+        "symmetric_dimension": 5,
+        "off_diagonal_rule": "sqrt((k+1)*binomial(N-2k,2))",
+        "exact_generator_intertwining": true,
+        "arbitrary_labeled_interventions_not_preserved_by_this_restriction": true
+      }
+    },
+    "capacity_vs_propagation": {
+      "reduced_data_channel": "rho-i Omega^2 J t^3/3 [sum_ij SWAP_ij,rho]+O(t^4)",
+      "exact_receiver_third_derivative_gap": 4.0,
+      "all_N_fixed_finite_model_Kraus_expansion_proved": true,
+      "initial_active_graph": "empty",
+      "full_legal_configuration_degree_at_most_one": true,
+      "finite_receiver_checks": [
+        {
+          "time": 0.1,
+          "receiver_y_expectation_gap": 0.000660031105794835,
+          "leading_cubic_prediction": 0.0006666666666666669
+        },
+        {
+          "time": 0.2,
+          "receiver_y_expectation_gap": 0.0051239492551525415,
+          "leading_cubic_prediction": 0.005333333333333335
+        },
+        {
+          "time": 0.5,
+          "receiver_y_expectation_gap": 0.06477823010382094,
+          "leading_cubic_prediction": 0.08333333333333333
+        }
+      ],
+      "current_edge_snapshot_is_not_full_Hamiltonian_causal_support": true,
+      "physical_faster_than_light_or_metric_claimed": false,
+      "rational_signal_certificate": {
+        "time": "1/100",
+        "Hamiltonian_norm_upper": 5,
+        "odd_signal_remainder_upper": "1/5400000",
+        "receiver_Y_gap_lower": "13/27000000",
+        "applies_to_fixed_N_three_not_a_size_uniform_remainder": true
+      },
+      "internal_relational_witness": {
+        "invariant_initial_states": "(I +/- chi_ABR/6)/16 with C maximally mixed",
+        "internal_reference_qubits": 1,
+        "readout": "SWAP_BR",
+        "time": 0.5,
+        "relational_expectation_gap": 0.03238911505191057,
+        "same_initial_B_R_marginals": true,
+        "no_external_absolute_axis_required": true,
+        "known_430_chirality_method_reused": true,
+        "reference_preparation_isolation_and_readout_remain_inputs": true,
+        "invariant_state_pair_not_claimed_related_by_a_local_A_only_gate": true
+      }
+    }
+  },
+  "scope": {
+    "existing_matter_link_conversion_explicitly_attributed": true,
+    "local_resource_charge_conservation_and_hard_degree_bound_proved": true,
+    "autonomous_reassignment_and_data_response_verified": true,
+    "all_unknown_joint_data_reference_preserved": true,
+    "all_matching_configurations_have_nonzero_short_time_path_amplitudes": true,
+    "relationship_memory_and_rate_costs_explicit": true,
+    "cubic_complete_pair_data_response_from_empty_graph_proved": true,
+    "conversion_rule_charge_preparation_and_capacity_derived_from_429": false,
+    "arbitrary_data_marginal_unchanged_claimed": false,
+    "stable_connected_geometry_or_dimension_generated": false,
+    "final_Heisenberg_hardware_compiled": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

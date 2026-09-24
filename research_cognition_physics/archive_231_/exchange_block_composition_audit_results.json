@@ -1,0 +1,124 @@
+{
+  "round": 435,
+  "baseline_round": 434,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "observations": {
+    "local_identity": {
+      "vector_projection_zero": true,
+      "two_vector_identities_checked": 144,
+      "maximum_operator_error": 2.482534153247273e-16,
+      "projected_pair_scalar": "M_ii=3I; M_ij=2 S_ij(logical)-I for i != j"
+    },
+    "second_order_composition": {
+      "shared_block_cross_terms_checked": 6,
+      "maximum_cross_term_norm": 7.58743553883389e-19,
+      "total_operator_formula_error": 2.572465810372281e-15,
+      "two_contributions_commutator_norm": 0.10825317547305482,
+      "additive_does_not_mean_commuting": true,
+      "arbitrary_finite_block_graph_proof_in_note": true
+    },
+    "second_order_scope": {
+      "pair_formula_error": 2.548502097984193e-16,
+      "maximum_coefficient_with_a_logical_Y": 0.0,
+      "logical_swap_YY_coefficient": 0.5,
+      "arbitrary_logical_SWAP_not_obtained_by_this_second_order_formula": true,
+      "fully_uniform_cross_block_coupling_annihilates_singlet_codes": true
+    },
+    "triangle": {
+      "ordered_words": {
+        "single_edge_cubes": 3,
+        "triangle_words": 6,
+        "vanishing_other_words": 18
+      },
+      "k3": "-9 I/64 + (-I-2 Z_A)(-I-2 Z_B)(-I-2 Z_C)/192",
+      "k2": "-9 I/16",
+      "genuine_ZZZ_coefficient": -0.041666666666666685,
+      "formula_error": 1.399196219558849e-16,
+      "three_block_interaction_present_at_order": 3
+    },
+    "exact_certificate": {
+      "integer_arithmetic": true,
+      "code_norm_squares": [
+        64,
+        192,
+        192,
+        576,
+        192,
+        576,
+        576,
+        1728
+      ],
+      "k3_diagonal": [
+        "-9/32",
+        "-3/32",
+        "-3/32",
+        "-5/32",
+        "-3/32",
+        "-5/32",
+        "-5/32",
+        "-13/96"
+      ],
+      "exact_ZZZ_coefficient": "-1/24",
+      "maximum_integer_magnitude": 29952,
+      "floating_fit_used": false
+    },
+    "third_order_dynamics": {
+      "scalar_energy_shift_removed": "-9 epsilon^2 I/16",
+      "uniform_error_bound": "(3/4+2781|tau|/1024)|epsilon| + (27/32+1701|tau|/4096)epsilon^2 + (135/128+1215|tau|/8192)|epsilon|^3",
+      "effective_time": "tau=epsilon^3*t for epsilon>0",
+      "bound_at_epsilon_inverse_512_tau_3pi": 0.051475205408183566,
+      "constants": [
+        {
+          "name": "w1",
+          "numerical_norm": 0.37500000000000044,
+          "analytic_upper_bound": 0.375
+        },
+        {
+          "name": "w2",
+          "numerical_norm": 0.242061459137964,
+          "analytic_upper_bound": 0.421875
+        },
+        {
+          "name": "w3",
+          "numerical_norm": 0.17704622964536912,
+          "analytic_upper_bound": 0.52734375
+        },
+        {
+          "name": "a4",
+          "numerical_norm": 0.574106633665602,
+          "analytic_upper_bound": 2.7158203125
+        },
+        {
+          "name": "a5",
+          "numerical_norm": 0.1676594303536938,
+          "analytic_upper_bound": 0.415283203125
+        },
+        {
+          "name": "a6",
+          "numerical_norm": 0.049794252087760074,
+          "analytic_upper_bound": 0.1483154296875
+        }
+      ],
+      "arbitrary_unknown_code_input_and_reference_covered": true,
+      "exact_polynomial_identity_error": 9.130039013189815e-16,
+      "full_long_time_spectral_exponentiation_claimed": false
+    }
+  },
+  "scope": {
+    "second_order_cross_edge_terms_vanish_for_singlet_blocks": true,
+    "simultaneous_noncommuting_pair_terms_allowed": true,
+    "third_order_triangle_generates_genuine_three_block_interaction": true,
+    "third_order_uniform_unknown_input_dynamical_bound_proved": true,
+    "integer_coefficient_certificate_verified": true,
+    "exact_433_network_implemented": false,
+    "selected_block_graph_and_port_weights_are_inputs": true,
+    "gap_initial_code_and_timescale_are_free": false,
+    "three_dimensional_space_unconditionally_derived": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

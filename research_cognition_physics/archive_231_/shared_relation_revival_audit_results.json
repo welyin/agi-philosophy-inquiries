@@ -1,0 +1,161 @@
+{
+  "round": 454,
+  "baseline_round": 453,
+  "date": "2026-09-24",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "observations": {
+    "enlarged_interface": {
+      "raw_dimension": 64,
+      "original_logic_dimension": 4,
+      "common_invariant_dimension": 5,
+      "additional_joint_mode": 1,
+      "all_time_original_code_invariance": false,
+      "seven_raw_positive_equal_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "common_gauge_singlet_prepared": true,
+      "restricted_hamiltonian_diagonal": [
+        "-1",
+        "1",
+        "1",
+        "1/3",
+        "17/3"
+      ],
+      "restricted_hamiltonian_off_diagonal": "H[3,4]=H[4,3]=2*sqrt(2)/3",
+      "total_SU2_invariance_checked": true,
+      "exact_integer_intertwiner_certificate": true,
+      "integer_logic_column_norms_squared": [
+        8,
+        24,
+        24,
+        72
+      ],
+      "integer_bridge_norm_squared": 576
+    },
+    "exact_endpoint": {
+      "time": "pi/(2*sqrt(2))",
+      "time_numeric": 1.11072073454,
+      "diagonal_gate": [
+        "exp(i*T)",
+        "exp(-i*T)",
+        "exp(-i*T)",
+        "-exp(-3i*T)"
+      ],
+      "arbitrary_logic_and_reference_operator_identity": true,
+      "analytic_evolution_max_numeric_error": 5.10110597841e-15,
+      "reference_dimension_checked": 3,
+      "input_dependent_control_or_postselection": false
+    },
+    "genuine_joint_interaction": {
+      "conditional_phase_ratio": "-1",
+      "plus_plus_output_concurrence": 1.0,
+      "maximum_joint_mode_probability": "1/9",
+      "joint_mode_probability_at_half_period": 0.111111111111,
+      "deleting_joint_mode_changes_the_dynamics": true,
+      "noninteraction_restriction_of_round453_not_violated": true
+    },
+    "physical_readout": {
+      "effect": "(I+X_L_on_B)/2 on all 64 states",
+      "center_probabilities": [
+        0.197150066461,
+        0.802849933539
+      ],
+      "center_gap": 0.605699867079,
+      "single_probability_derivative_bound": "1",
+      "gap_derivative_bound": "2",
+      "time_window": "abs(t-pi/(2*sqrt(2)))<=1/32",
+      "rigorous_gap_lower": "10101/20000 > 1/2",
+      "equal_prior_success_lower": "30101/40000 > 3/4",
+      "raw_three_time_spot_checks": [
+        0.588356212629,
+        0.605699867079,
+        0.621466947978
+      ],
+      "postselection": false,
+      "physical_effect_hardware_autonomously_built": false
+    },
+    "finite_precision": {
+      "operator_error_up_to_global_phase": "<=4*abs(t-T)",
+      "reference_uniform_trace_distance_bound_at_window_edge": "1/8",
+      "maximum_old_code_leakage_at_window_edge": "<=1/1152",
+      "perturbation_Hermitian_norm_budget": "eta",
+      "added_operator_error_bound": "eta*abs(t)",
+      "seven_coupling_errors_individually_bounded_by_e": "eta<=7e",
+      "endpoint_spot_checks": [
+        {
+          "operator_error": 0.124918635685,
+          "leakage": 0.000865797347651
+        },
+        {
+          "operator_error": 0.124918635685,
+          "leakage": 0.000865797347651
+        }
+      ],
+      "perturbation_spot_check_error": 0.00433874946613,
+      "uniform_readout_gap_with_eta_1_over_1024": ">1/2",
+      "exact_gate_claim_requires_exact_coefficients_and_time": true
+    },
+    "resource_boundary": {
+      "shared_gauge_singlet_entanglement_ebits": 1,
+      "unspecified_independent_gauge_endpoint_max_leakage": 0.391485730619,
+      "full_unknown_gauge_joining_not_implemented": true,
+      "closed_six_spin_exchange_cannot_prepare_singlet_from_spin_one": true,
+      "joint_mode_carries_temporary_state_and_energy": true,
+      "resources": [
+        "six qubits",
+        "prepared common gauge singlet",
+        "unknown logical input",
+        "seven fixed specified exchange edges",
+        "local logical effect access",
+        "specified finite reading window"
+      ],
+      "network_topology_or_resource_origin_derived": false
+    }
+  },
+  "scope": {
+    "enlarged_common_interface_positive_construction": true,
+    "fixed_equal_positive_pair_exchanges_only": true,
+    "exact_unknown_logic_endpoint_entangling_map": true,
+    "finite_window_raw_physical_readout_certified": true,
+    "shared_gauge_preparation_input_explicit": true,
+    "arbitrary_unknown_gauge_joining_implemented": false,
+    "autonomous_resource_preparation_or_permanent_halting": false,
+    "complete_SoCA_or_quantum_necessity_derived": false,
+    "physical_spatial_dimension_or_GR_generated": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

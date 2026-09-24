@@ -1,0 +1,147 @@
+{
+  "round": 460,
+  "baseline_round": 459,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "observations": {
+    "complete_basis": {
+      "dimension": 11,
+      "exact_gram_rank": 11,
+      "weight_dimensions": [
+        1,
+        0,
+        6,
+        4
+      ],
+      "completeness_source": "SU(2) invariant tensors of 0,1,2,3 Pauli vectors",
+      "locality_is_raw_Pauli_support": true,
+      "auxiliary_carriers_allowed": false
+    },
+    "preservation_classification": {
+      "pair_integer_gram": [
+        [
+          48,
+          -24,
+          -24
+        ],
+        [
+          -24,
+          48,
+          -24
+        ],
+        [
+          -24,
+          -24,
+          48
+        ]
+      ],
+      "chiral_integer_gram": [
+        [
+          144,
+          72,
+          -72
+        ],
+        [
+          72,
+          144,
+          72
+        ],
+        [
+          -72,
+          72,
+          144
+        ]
+      ],
+      "projector_scale": 3,
+      "cross_pair_kernel": [
+        1,
+        1,
+        1
+      ],
+      "cross_chiral_kernel": [
+        1,
+        -1,
+        1
+      ],
+      "exact_ranks": [
+        2,
+        2
+      ],
+      "arbitrary_real_coefficients_covered": true,
+      "raw_two_body_memory_control_excluded_under_fixed_code": true
+    },
+    "chiral_actuator": {
+      "raw_qubits": 4,
+      "code_dimension": 8,
+      "generator": "K + (chi013 - chi023 + chi123)/(2 sqrt(3))",
+      "effective_generator": "I - Y_L/2 + (I+Y_L) S_GB",
+      "exact_all_time_code_and_Y_population_preservation": true,
+      "unknown_G_L_B_reference_scope": true,
+      "numerical_reference_dimension": 3,
+      "raw_three_body_chirality_is_additional_input": true
+    },
+    "actual_response": {
+      "rows": [
+        {
+          "generator": "H3",
+          "center": "pi/4",
+          "inactive_probability": 1,
+          "active_probability": 0.25,
+          "contrast": 0.75
+        },
+        {
+          "generator": "H4",
+          "center": "pi/2",
+          "inactive_probability": 1,
+          "active_probability": 0.25,
+          "contrast": 0.75
+        }
+      ],
+      "full_unknown_GL_reference_effect_identity": true,
+      "effect": "singlet of actual B and internal reference C",
+      "independent_pure_BC_resource_is_input": true,
+      "single_B_output_claimed_gauge_independent": false
+    },
+    "locality_and_time_reversal": {
+      "minimum_raw_locality_without_T_restriction": 3,
+      "minimum_raw_locality_with_T_even_restriction": 4,
+      "H4": "(I-S01)(I+S23)/2",
+      "H4_ZZZZ_coefficient": "-1/8",
+      "H3_chiral_component_T_odd": true,
+      "H4_T_even": true,
+      "T_even_is_additional_comparison_not_cognitive_axiom": true,
+      "auxiliary_or_effective_or_time_dependent_implementations_not_excluded": true
+    },
+    "finite_window_and_memory_scope": {
+      "H3_window_center": "pi/4",
+      "H3_window_half_width": "1/8",
+      "H4_window_center": "pi/2",
+      "H4_window_half_width": "1/4",
+      "analytic_gap_lower": "45/64",
+      "equal_prior_success_lower": "109/128",
+      "proof": "sin(x)^2 <= x^2, so cos(rate*delta)^2 >= 15/16",
+      "inactive_branch_record_population_preserved": true,
+      "all_quantum_memory_marginals_preserved": false,
+      "coherent_record_output_eigenvalues": [
+        0.25,
+        0.75
+      ],
+      "coherent_record_output_purity": "5/8",
+      "full_unknown_information_preserved_in_global_isometry": true
+    }
+  },
+  "scope": {
+    "complete_three_local_invariant_classification": true,
+    "protected_private_memory_actuation_exact": true,
+    "reference_complete_actual_response": true,
+    "higher_body_input_derived_from_429": false,
+    "arbitrary_quantum_memory_undisturbed": false,
+    "full_recursive_cognitive_functional_closure_proved": false,
+    "spatial_dimension_derived": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

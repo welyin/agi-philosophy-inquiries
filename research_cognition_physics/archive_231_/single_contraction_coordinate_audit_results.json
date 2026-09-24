@@ -1,0 +1,101 @@
+{
+  "round": 424,
+  "baseline_round": 423,
+  "status": "verified_conditional_premise_reduction",
+  "tests_run": 9,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "observations": {
+    "metric_triangle_max_defect": -0.023932367990465442,
+    "metric_inverse_symmetry_error": 0.0,
+    "exact_contraction_certificates": [
+      {
+        "linear_norm": "1/4",
+        "sharp_ratio": "2/5",
+        "attained_radius": "4"
+      },
+      {
+        "linear_norm": "1/2",
+        "sharp_ratio": "2/3",
+        "attained_radius": "2"
+      },
+      {
+        "linear_norm": "3/4",
+        "sharp_ratio": "6/7",
+        "attained_radius": "4/3"
+      }
+    ],
+    "endpoint_addition_error": 8.899114524108741e-16,
+    "sampled_contraction_ratio": 0.5652137728620072,
+    "alpha_metric_singular_values": [
+      0.5,
+      0.25,
+      0.12499999999999999
+    ],
+    "alpha_determinant": -0.015625000000000007,
+    "homogeneity_obstruction_certificates": [
+      {
+        "candidate_factor": "1/2",
+        "exact_large_radius_mismatch": "1/2"
+      },
+      {
+        "candidate_factor": "2",
+        "exact_large_radius_mismatch": "-1"
+      },
+      {
+        "candidate_factor": "3",
+        "exact_large_radius_mismatch": "-2"
+      }
+    ],
+    "old_power_calibration_counterexample": {
+      "unit_budget": 1,
+      "double_budget": 2,
+      "quadruple_budget": 3,
+      "power_prediction_from_first_two": 4
+    },
+    "finite_quadratic_average_error": 5.453105385130469e-16,
+    "averaged_form_invariance_error": 1.021597492588663e-15,
+    "shell_budget_error": 2.220446049250313e-16,
+    "qubit_covariance_error": 4.564740669537172e-16,
+    "antipodal_operator_gap": 0.8,
+    "old_decoder_on_new_contract_error": 2.384396191036867e-15,
+    "new_contract_coordinate_queries": 21,
+    "coordinate_budget_queries": 0,
+    "distance_of_four_unit_separation": 5.0,
+    "refined_straight_path_costs": [
+      5.0,
+      6.0,
+      8.0,
+      8.0,
+      8.0
+    ],
+    "multiple_shell_radii_without_minimality": [
+      1.0,
+      1.5410259874424717,
+      1.7781265943398301
+    ],
+    "log_periodic_discrete_scaling_error": 5.3290705182007514e-14
+  },
+  "scope": {
+    "single_contracting_endpoint_automorphism_suffices": true,
+    "full_positive_scale_action_required": false,
+    "exact_budget_homogeneity_required": false,
+    "actual_endpoint_torsor_still_input": true,
+    "connected_position_sector_still_input": true,
+    "proper_continuous_budget_still_input": true,
+    "composition_preserving_minimal_reorientation_still_input": true,
+    "full_qubit_direction_interface_still_input": true,
+    "complete_displacement_effect_queries_still_input": true,
+    "old_budget_power_conclusion_retained": false,
+    "old_direction_decoder_reused": true,
+    "contraction_alone_makes_spherical_shell": false,
+    "budget_identified_as_path_length": false,
+    "all_contractions_claimed_physically_implemented": false,
+    "three_dimensional_space_unconditionally_derived": false,
+    "full_cognitive_countermodel_completed": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "round": 444,
+  "baseline_round": 443,
+  "date": "2026-09-24",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "observations": {
+    "carrier_and_complete_fibers": {
+      "subjects": 4,
+      "capacity": 2,
+      "graphs": 41,
+      "valid_port_basis_states": 441,
+      "reciprocal_matchings_including_invalid": 764,
+      "uniform_lift_isometry_exact": true,
+      "binary_storage_examples": [
+        {
+          "subjects": 6,
+          "capacity": 3,
+          "port_qudits": 18,
+          "dimension_per_port": 19,
+          "binary_address_budget": 90,
+          "old_potential_edge_qubits": 15
+        },
+        {
+          "subjects": 32,
+          "capacity": 3,
+          "port_qudits": 96,
+          "dimension_per_port": 97,
+          "binary_address_budget": 672,
+          "old_potential_edge_qubits": 496
+        },
+        {
+          "subjects": 128,
+          "capacity": 3,
+          "port_qudits": 384,
+          "dimension_per_port": 385,
+          "binary_address_budget": 3456,
+          "old_potential_edge_qubits": 8128
+        },
+        {
+          "subjects": 1024,
+          "capacity": 3,
+          "port_qudits": 3072,
+          "dimension_per_port": 3073,
+          "binary_address_budget": 36864,
+          "old_potential_edge_qubits": 523776
+        }
+      ],
+      "fixed_local_dimension_claimed": false
+    },
+    "four_subject_raw_tensor_extension": {
+      "reciprocal_matching_directed_rewrites_checked": 768,
+      "global_validity_equivalent_before_and_after": true,
+      "external_unreciprocated_pointer_examples": 8,
+      "naive_kernel_invalid_to_valid_example": [
+        3,
+        4,
+        -1,
+        0,
+        1,
+        6,
+        5,
+        9,
+        -1,
+        7,
+        -1,
+        -1
+      ],
+      "naive_kernel_valid_targets": 2,
+      "strict_local_gate_blocks_adjoint_leakage": true,
+      "global_validity_projector_used_to_claim_locality": false
+    },
+    "exact_graph_intertwining": [
+      {
+        "name": "all_four_subject_C2_graphs",
+        "subjects": 4,
+        "capacity": 2,
+        "graph_basis_states": 41,
+        "port_basis_states": 441,
+        "directed_port_transitions": 288,
+        "path_weighted_transitions": 384,
+        "maximum_parallel_path_weight": 2
+      },
+      {
+        "name": "six_branching_trees",
+        "subjects": 6,
+        "capacity": 3,
+        "graph_basis_states": 6,
+        "port_basis_states": 17496,
+        "directed_port_transitions": 69984,
+        "path_weighted_transitions": 69984,
+        "maximum_parallel_path_weight": 1
+      }
+    ],
+    "complete_data_and_readout": {
+      "old_graph_data_dimension": 32,
+      "port_data_dimension": 512,
+      "exact_integer_H_intertwiner": true,
+      "every_subject_readout_intertwiner": true,
+      "finite_time_operator_error": 4.042021449564687e-15,
+      "all_encoded_joint_data_graph_reference_inputs_covered": true,
+      "arbitrary_nonuniform_port_fiber_inputs_equated_to_old_graph": false
+    },
+    "support_boundary": {
+      "fixed_degree_vector": [
+        1,
+        3,
+        3,
+        1,
+        1,
+        1
+      ],
+      "three_subject_subsets": 20,
+      "outside_record_checks": 349920,
+      "distinct_graphs_never_share_outside_records": true,
+      "changing_graph_witness_subjects": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "arbitrary_sum_of_at_most_three_subject_terms_has_no_cross_graph_code_block": true,
+      "approximate_virtual_processes_or_extra_auxiliaries_excluded": false
+    },
+    "address_symmetry": {
+      "joint_vertex_and_port_renamings_checked": 384,
+      "numerical_address_order_not_used_as_distance": true,
+      "address_renaming_not_identified_with_generated_space": true
+    }
+  },
+  "scope": {
+    "existing_quantum_address_register_idea_reused": true,
+    "explicit_subject_tensor_factorization_supplied": true,
+    "no_independent_qubit_per_potential_edge_required_by_this_realization": true,
+    "exact_440_graph_data_H_and_subject_readout_intertwining": true,
+    "unknown_encoded_joint_data_graph_reference_preserved": true,
+    "four_subject_extension_without_global_code_projector_proved": true,
+    "exact_three_subject_support_obstruction_in_fixed_degree_code": true,
+    "universal_fixed_dimension_subject_hardware_constructed": false,
+    "four_subject_interaction_derived_from_429_two_body_rule": false,
+    "address_access_and_interaction_architecture_generated": false,
+    "general_nonuniform_port_states_equivalent_to_old_graph": false,
+    "all_old_relation_operations_locally_preserved": false,
+    "three_dimensional_space_generated": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

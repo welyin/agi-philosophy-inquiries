@@ -1,0 +1,178 @@
+{
+  "round": 423,
+  "baseline_round": 422,
+  "status": "verified_conditional_result",
+  "tests_run": 9,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "observations": {
+    "instrument_completeness_error": 2.220446049250313e-16,
+    "whole_record_probability_error": 5.551115123125783e-17,
+    "exact_achieving_resources": [
+      {
+        "reads": 1,
+        "source_dimension": 2,
+        "output_words": 2
+      },
+      {
+        "reads": 2,
+        "source_dimension": 3,
+        "output_words": 4
+      },
+      {
+        "reads": 3,
+        "source_dimension": 4,
+        "output_words": 8
+      },
+      {
+        "reads": 5,
+        "source_dimension": 6,
+        "output_words": 32
+      },
+      {
+        "reads": 6,
+        "source_dimension": 7,
+        "output_words": 64
+      }
+    ],
+    "exact_rational_full_words_checked": 516,
+    "dicke_isometry_and_decoder_error": 6.661338147750939e-16,
+    "arbitrary_input_reference_error": 5.984302151465236e-16,
+    "exact_endpoint_filter_identities_checked": 36,
+    "nonprojective_filter_error": 1.1102230246251565e-16,
+    "restricted_bias_probability_error": 1.3877787807814457e-16,
+    "restricted_bias_max_bloch_norm_squared": 0.7656250000000004,
+    "same_encoding_at_zero_minimum_eigenvalue": -0.5,
+    "source_preparation_must_be_supplied": [
+      {
+        "reads": 2,
+        "preparation_affinity_defect": 0.5
+      },
+      {
+        "reads": 3,
+        "preparation_affinity_defect": 0.75
+      },
+      {
+        "reads": 6,
+        "preparation_affinity_defect": 0.96875
+      }
+    ],
+    "small_bias_window_constructions": [
+      {
+        "reads": 1,
+        "source_dimension": 2,
+        "certified_half_width": 0.08838834764831845,
+        "minimum_source_eigenvalue": 0.323223304703363,
+        "probability_error": 1.1102230246251565e-16,
+        "exact_probability_table_rank": 2
+      },
+      {
+        "reads": 2,
+        "source_dimension": 2,
+        "certified_half_width": 0.011048543456039804,
+        "minimum_source_eigenvalue": 0.43679437579185443,
+        "probability_error": 1.1102230246251565e-16,
+        "exact_probability_table_rank": 3
+      },
+      {
+        "reads": 3,
+        "source_dimension": 2,
+        "certified_half_width": 0.0024552318791199574,
+        "minimum_source_eigenvalue": 0.45573360583436234,
+        "probability_error": 2.498001805406602e-16,
+        "exact_probability_table_rank": 4
+      },
+      {
+        "reads": 4,
+        "source_dimension": 3,
+        "certified_half_width": 0.00046035597733499193,
+        "minimum_source_eigenvalue": 0.31123285869739786,
+        "probability_error": 2.914335439641036e-16,
+        "exact_probability_table_rank": 5
+      },
+      {
+        "reads": 7,
+        "source_dimension": 3,
+        "certified_half_width": 1.7171655828087914e-05,
+        "minimum_source_eigenvalue": 0.32078787525416574,
+        "probability_error": 4.180683577104105e-16,
+        "exact_probability_table_rank": 8
+      },
+      {
+        "reads": 8,
+        "source_dimension": 3,
+        "certified_half_width": 6.585587308956001e-06,
+        "minimum_source_eigenvalue": 0.3230668659939277,
+        "probability_error": 5.386316392907986e-16,
+        "exact_probability_table_rank": 9
+      }
+    ],
+    "finite_positive_table_certificates": [
+      {
+        "reads": 1,
+        "exact_psd_rank": 2,
+        "rational_witness": "4/3",
+        "diagonal_witness": 1.3333333333333333,
+        "certified_lower": 1.3333333333333333,
+        "parameter_count": 2,
+        "output_count": 2
+      },
+      {
+        "reads": 2,
+        "exact_psd_rank": 3,
+        "rational_witness": "12505/5257",
+        "diagonal_witness": 2.378733117747765,
+        "certified_lower": 2.142857142857143,
+        "parameter_count": 3,
+        "output_count": 3
+      },
+      {
+        "reads": 3,
+        "exact_psd_rank": 4,
+        "rational_witness": "4182181820000/1200209101091",
+        "diagonal_witness": 3.4845443316488454,
+        "certified_lower": 3.076923076923077,
+        "parameter_count": 4,
+        "output_count": 4
+      },
+      {
+        "reads": 4,
+        "exact_psd_rank": 5,
+        "rational_witness": "2915247987902923317375436190758543453/637485823138405953626127430923039517",
+        "diagonal_witness": 4.573039716476938,
+        "certified_lower": 4.0476190476190474,
+        "parameter_count": 5,
+        "output_count": 5
+      },
+      {
+        "reads": 6,
+        "exact_psd_rank": 7,
+        "rational_witness": "1180424218144987898292417082256426258337038274458222408714966628115794292921502053151250185236814025383874250634276598423972361797579053/176420931859875643195358553930809405531886094039329570986670474702638392990160918520072307701034984933255025217687254749068208478118605",
+        "diagonal_witness": 6.690953310928849,
+        "certified_lower": 6.023255813953488,
+        "parameter_count": 7,
+        "output_count": 7
+      }
+    ]
+  },
+  "scope": {
+    "exact_all_bias_iid_records_are_extra_task": true,
+    "arbitrary_consumption_of_source_allowed": true,
+    "encoding_continuity_required": false,
+    "full_parameter_dependent_resources_counted": true,
+    "sharp_source_dimension_for_N_reads": "N+1",
+    "sufficiently_small_bias_window_dimension": "ceil(sqrt(N+1))",
+    "finite_rational_full_bias_witness": true,
+    "blank_record_storage_counted_separately": true,
+    "noisy_optimal_dimension_proved": false,
+    "restricted_bias_same_bound_claimed": false,
+    "source_preparation_autonomously_generated": false,
+    "original_round413_algorithm_invalidated": false,
+    "three_dimensional_space_derived": false,
+    "full_cognitive_countermodel_completed": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

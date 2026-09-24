@@ -1,0 +1,79 @@
+{
+  "round": 423,
+  "baseline_round": 422,
+  "status": "verified_conditional_result",
+  "tests_run": 7,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "observations": {
+    "instrument_completeness_error": 2.220446049250313e-16,
+    "whole_record_probability_error": 5.551115123125783e-17,
+    "exact_achieving_resources": [
+      {
+        "reads": 1,
+        "source_dimension": 2,
+        "output_words": 2
+      },
+      {
+        "reads": 2,
+        "source_dimension": 3,
+        "output_words": 4
+      },
+      {
+        "reads": 3,
+        "source_dimension": 4,
+        "output_words": 8
+      },
+      {
+        "reads": 5,
+        "source_dimension": 6,
+        "output_words": 32
+      },
+      {
+        "reads": 6,
+        "source_dimension": 7,
+        "output_words": 64
+      }
+    ],
+    "exact_rational_full_words_checked": 516,
+    "dicke_isometry_and_decoder_error": 6.661338147750939e-16,
+    "arbitrary_input_reference_error": 5.984302151465236e-16,
+    "exact_endpoint_filter_identities_checked": 36,
+    "nonprojective_filter_error": 1.1102230246251565e-16,
+    "restricted_bias_probability_error": 1.3877787807814457e-16,
+    "restricted_bias_max_bloch_norm_squared": 0.7656250000000004,
+    "same_encoding_at_zero_minimum_eigenvalue": -0.5,
+    "source_preparation_must_be_supplied": [
+      {
+        "reads": 2,
+        "preparation_affinity_defect": 0.5
+      },
+      {
+        "reads": 3,
+        "preparation_affinity_defect": 0.75
+      },
+      {
+        "reads": 6,
+        "preparation_affinity_defect": 0.96875
+      }
+    ]
+  },
+  "scope": {
+    "exact_all_bias_iid_records_are_extra_task": true,
+    "arbitrary_consumption_of_source_allowed": true,
+    "encoding_continuity_required": false,
+    "full_parameter_dependent_resources_counted": true,
+    "sharp_source_dimension_for_N_reads": "N+1",
+    "blank_record_storage_counted_separately": true,
+    "noisy_optimal_dimension_proved": false,
+    "restricted_bias_same_bound_claimed": false,
+    "source_preparation_autonomously_generated": false,
+    "original_round413_algorithm_invalidated": false,
+    "three_dimensional_space_derived": false,
+    "full_cognitive_countermodel_completed": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

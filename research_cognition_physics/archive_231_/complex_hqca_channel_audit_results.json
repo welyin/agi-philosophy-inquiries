@@ -1,0 +1,150 @@
+{
+  "round": 418,
+  "scientific_baseline": 417,
+  "scope": "Fixed nearest-neighbor 12-state rule: all-input complex circuit channel and finite random-time completion; not a complete cognitive countermodel",
+  "local_rule": {
+    "dimension": 12,
+    "matrix_dimension": 144,
+    "norm": 1.0000000000000002,
+    "hermitian_error": 0.0,
+    "r_square_error": 0.0,
+    "adjacent_response_witness": 1.0000000000000002,
+    "vacuum_errors": {
+      "I": 0.0,
+      "W": 0.0,
+      "S": 0.0,
+      "T": 0.0
+    },
+    "invalid_hadamard_vacuum_leakage": 0.4999999999999999
+  },
+  "compilation": {
+    "hadamard_error": 4.786941307996611e-16,
+    "cnot_error": 5.518072740585754e-16,
+    "one_seed_return_error": 0.0,
+    "one_seed_is_extra_resource": true
+  },
+  "history": {
+    "configurations": 70,
+    "directed_forward_edges": 140,
+    "maximum_loop_error": 3.1560822113208575e-16,
+    "maximum_physical_rule_error": 0.0,
+    "maximum_done_prefix_error": 0.0,
+    "common_program_graph_error": 0.0,
+    "distinct_catalog_target_distance": 2.141444941535249,
+    "fermion_amplitude_error": 1.661026983635565e-15
+  },
+  "channels": [
+    {
+      "time": 0.0,
+      "joint_reference_error": 2.1821965256591143e-15,
+      "mixture_error": 3.8914206085632786e-16,
+      "done_probability": 8.978446333947659e-33,
+      "choi_trace_error": 0.886911299032593,
+      "general_half_diamond_upper": 1.0
+    },
+    {
+      "time": 0.7,
+      "joint_reference_error": 2.809731778576267e-15,
+      "mixture_error": 4.433850921987937e-16,
+      "done_probability": 1.1708624236494056e-23,
+      "choi_trace_error": 0.8526888000217274,
+      "general_half_diamond_upper": 1.0
+    },
+    {
+      "time": 2.3,
+      "joint_reference_error": 5.04386859729732e-15,
+      "mixture_error": 9.29615116071715e-16,
+      "done_probability": 4.610539180316124e-08,
+      "choi_trace_error": 0.40749065052310546,
+      "general_half_diamond_upper": 0.9999999538946082
+    },
+    {
+      "time": 4.8,
+      "joint_reference_error": 7.947619636440894e-15,
+      "mixture_error": 1.8434878789214164e-15,
+      "done_probability": 0.18706995972726917,
+      "choi_trace_error": 0.1978562768953807,
+      "general_half_diamond_upper": 0.8129300402727309
+    }
+  ],
+  "waiting": [
+    {
+      "M": 2,
+      "f": 4,
+      "length": 12,
+      "particles": 4,
+      "local_dimension": 12,
+      "gap": 0.1709715835456842,
+      "gap_formula_error": 5.551115123125783e-17,
+      "gap_lower_bound": 0.07100591715976332,
+      "horizon": 5147.054158066337,
+      "delta": 0.025000000000000005,
+      "finite_mean_left": 2.6151837996435487,
+      "infinite_mean_left": 2.615384615384615,
+      "infinite_mean_formula": 2.6153846153846154,
+      "max_sample_l1": 0.00026541750922022544,
+      "mean_error": 0.00020081574106622924,
+      "rigorous_average_success_lower": 0.2576923076923077
+    },
+    {
+      "M": 3,
+      "f": 8,
+      "length": 30,
+      "particles": 6,
+      "local_dimension": 12,
+      "gap": 0.03067876427880112,
+      "gap_formula_error": 1.8735013540549517e-16,
+      "gap_lower_bound": 0.012486992715920915,
+      "horizon": 75622.3418556369,
+      "delta": 0.025,
+      "finite_mean_left": 4.741936965218079,
+      "infinite_mean_left": 4.741935483870967,
+      "infinite_mean_formula": 4.741935483870968,
+      "max_sample_l1": 3.345005616277319e-05,
+      "mean_error": 1.4813471116426058e-06,
+      "rigorous_average_success_lower": 0.5306451612903226
+    },
+    {
+      "M": 4,
+      "f": 16,
+      "length": 72,
+      "particles": 8,
+      "local_dimension": 12,
+      "gap": 0.005551880335244341,
+      "gap_formula_error": 7.37257477290143e-17,
+      "gap_lower_bound": 0.002251829611559392,
+      "horizon": 1023076.8058782413,
+      "delta": 0.025,
+      "finite_mean_left": 7.068495069914532,
+      "infinite_mean_left": 7.068493150684925,
+      "infinite_mean_formula": 7.068493150684931,
+      "max_sample_l1": 7.787905530170364e-06,
+      "mean_error": 1.9192296072390036e-06,
+      "rigorous_average_success_lower": 0.7171232876712328
+    }
+  ],
+  "instrument": {
+    "isometry_error": 0.0,
+    "kraus_error": 0.0,
+    "classical_record_offdiagonal": 0.0,
+    "joint_reference_norm": 0.9999999999999999,
+    "all_environment_retained_before_reduction": true
+  },
+  "same_fixed_finite_total_H_for_all_tasks": false,
+  "fixed_local_rule_for_all_chain_sizes": true,
+  "timing_and_final_access_internally_implemented": false,
+  "all_late_time_guarantee": false,
+  "no_postselection_in_output_error_bound": true,
+  "physical_dimension_derived": false,
+  "full_cognitive_countermodel_completed": false,
+  "phase_closure_triggered": false,
+  "checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

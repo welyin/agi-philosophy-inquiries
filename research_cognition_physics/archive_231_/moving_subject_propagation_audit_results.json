@@ -1,0 +1,127 @@
+{
+  "round": 441,
+  "baseline_round": 440,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "observations": {
+    "local_tensor_completion": {
+      "rows": [
+        {
+          "subjects": 4,
+          "slot_dimension": 8,
+          "formal_full_slot_dimension": 4096,
+          "exact_code_dimension": 32,
+          "sparse_intertwining_all_columns": 32
+        },
+        {
+          "subjects": 5,
+          "slot_dimension": 10,
+          "formal_full_slot_dimension": 100000,
+          "exact_code_dimension": 192,
+          "sparse_intertwining_all_columns": 192
+        }
+      ],
+      "exact_all_unknown_data_graph_reference_embedding": true,
+      "composite_SWAP_identity": "SWAP_(data+label)=SWAP_data*SWAP_label",
+      "fixed_slot_chain_and_unique_label_sector_are_inputs": true,
+      "controlled_encoding_physically_prepared_for_free": false,
+      "slot_local_dimension_uniform_in_N": false
+    },
+    "tag_motion": {
+      "unique_label_right_shift_partial_isometry_exact": true,
+      "tilted_H_identity_exact_binary_rational": true,
+      "tag_tail_bound": "min(1,2 exp[-2 lambda(R+1)+4 abs(kappa) sinh(lambda) abs(t)])",
+      "proof_uniform_over_data_J_and_reference": true,
+      "norm_not_claimed_on_duplicate_label_sectors": true,
+      "finite_operator_witness": {
+        "subjects": 5,
+        "J": 3,
+        "kappa": 1,
+        "time": 0.1,
+        "radius": 1,
+        "lambda_value": 1.3862943611198906,
+        "all_input_escape_probability_operator_norm": 2.490294774070437e-05,
+        "upper_bound": 0.016539062629786525
+      }
+    },
+    "bounded_receiver_extension": {
+      "local_two_slot_plus_reference_dimension": 200,
+      "reference_dimension": 2,
+      "extended_norm": 1,
+      "naive_duplicate_label_norm": 2,
+      "exact_agreement_on_zero_or_one_receiver_label": true,
+      "LR_constant_independent_of_receiver_window_and_reference_dimension": true,
+      "source": "Nachtergaele-Sims 1004.2086 Eq.2.30-2.32; edge-chain counting",
+      "commutator_bound": "2 ||A|| ||B|| sum_(n>=ell) (6g abs(t))^n/n!"
+    },
+    "receiver_reference_channel": {
+      "subjects": 5,
+      "coherent_initial_graph_orders": 2,
+      "unknown_input_dimension": 64,
+      "reference_dimension": 64,
+      "initial_sender_slot": 0,
+      "initial_receiver_slot": 3,
+      "J": 0.5,
+      "kappa": 1.0,
+      "time": 0.02,
+      "witnesses": [
+        {
+          "encoding": "unitary_X",
+          "entangled_reference_trace_distance": 8.806731263770913e-07
+        },
+        {
+          "encoding": "amplitude_damping",
+          "entangled_reference_trace_distance": 1.5208357061110007e-07
+        }
+      ],
+      "proven_all_input_TP_encoding_upper_bound": 0.07467702116576075,
+      "local_signal_contribution": 0.03443472624362033,
+      "receiver_motion_contribution": 0.04024229492214042,
+      "witnesses_are_not_claimed_to_compute_the_diamond_norm": true
+    },
+    "identity_vs_slot": {
+      "J": 0,
+      "kappa": 1,
+      "time": "pi/2",
+      "true_receiver_Z_gap": 0.0,
+      "old_slot_Z_gap": 1.9999999999999991,
+      "all_time_no_label_data_signal_at_J_zero_proved_from_original_frame": true,
+      "tagged_motion_is_not_itself_communication_between_subject_data": true
+    },
+    "all_size_certificate": {
+      "initial_distance": 12,
+      "receiver_radius": 6,
+      "time": "1/100",
+      "g": "3/2",
+      "kappa": "1",
+      "lambda_choice": "log(4)",
+      "local_series_tail_upper": "413343/552800000000000",
+      "receiver_motion_upper": "5/620756992",
+      "final_trace_distance_upper": "200022651043/20944486400000000000",
+      "decimal_upper": 9.550133969530044e-09,
+      "strictly_below": "1/100000000",
+      "arbitrary_finite_path_size_supporting_initial_separation": true,
+      "large_Hilbert_space_numerically_simulated": false,
+      "simple_bound": "min(1,4 exp[6 e (abs(J)+abs(kappa)) abs(t)-d/2])",
+      "physical_speed_or_three_dimensional_space_derived": false
+    }
+  },
+  "scope": {
+    "exact_local_composite_exchange_completion_verified": true,
+    "moving_unique_label_tail_uniform_over_unknown_data_proved": true,
+    "all_input_reference_TP_encoding_signal_bound_proved": true,
+    "dynamic_identity_readout_distinguished_from_fixed_slot": true,
+    "finite_rational_all_size_certificate_proved": true,
+    "existing_LR_and_prior_fixed_chain_results_explicitly_reused": true,
+    "new_dynamical_term_added_beyond_440": false,
+    "arbitrary_initial_label_delocalization_covered": false,
+    "initial_path_or_three_dimensional_geometry_generated": false,
+    "label_preparation_and_encoding_free": false,
+    "strict_relativistic_light_cone_proved": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

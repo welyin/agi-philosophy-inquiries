@@ -1,0 +1,210 @@
+{
+  "round": 467,
+  "baseline_round": 465,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "observations": {
+    "four_point": {
+      "exact_quartets_checked": 216,
+      "root2_bracket": [
+        "282842712474619/200000000000000",
+        "176776695296637/125000000000000"
+      ],
+      "mature_source": "Buneman 1974, A Note on the Metric Properties of Trees",
+      "finite_checks_not_the_general_proof": true
+    },
+    "sharp_square_approximation": {
+      "side_length": 1,
+      "additive_error_minimum": {
+        "rational": "-1/2",
+        "sqrt2_coefficient": "1/2",
+        "approx": 0.2071067811865
+      },
+      "pairwise_relative_error_minimum": {
+        "rational": "3",
+        "sqrt2_coefficient": "-2",
+        "approx": 0.1715728752538
+      },
+      "both_attained_by_strict_positive_degree_three_tree": true,
+      "subdivision_rescaling_and_arbitrary_tree_size_do_not_remove_four_point_condition": true,
+      "excludes_near_isometric_riemannian_length_dimension_at_least_two": true,
+      "does_not_identify_Hausdorff_or_spectral_dimension": true
+    },
+    "sharp_fluctuation_cost": {
+      "leaf_length": {
+        "rational": "1",
+        "sqrt2_coefficient": "-1/2",
+        "approx": 0.2928932188135
+      },
+      "central_length": {
+        "rational": "-2",
+        "sqrt2_coefficient": "2",
+        "approx": 0.8284271247462
+      },
+      "mean_is_exact_Euclidean_square": true,
+      "side_variance_sum_minimum": {
+        "rational": "12",
+        "sqrt2_coefficient": "-8",
+        "approx": 0.6862915010152
+      },
+      "side_rms_standard_deviation_minimum": {
+        "rational": "-1",
+        "sqrt2_coefficient": "1",
+        "approx": 0.4142135623731
+      },
+      "opposite_side_sum_difference_rms_minimum": {
+        "rational": "-4",
+        "sqrt2_coefficient": "4",
+        "approx": 1.656854249492
+      },
+      "attained_by_equal_mixture_of_two_trees": true,
+      "mean_metric_not_identified_with_communication_metric": true
+    },
+    "unit_edge_mean_limit": {
+      "cases": [
+        {
+          "m": 1,
+          "central_unit_edges": 3,
+          "vertices": 8,
+          "mean_error": {
+            "rational": "3",
+            "sqrt2_coefficient": "-2",
+            "approx": 0.1715728752538
+          },
+          "error_upper": "1/2",
+          "robust_side_rms_lower": {
+            "rational": "-9",
+            "sqrt2_coefficient": "7",
+            "approx": 0.8994949366117
+          }
+        },
+        {
+          "m": 2,
+          "central_unit_edges": 6,
+          "vertices": 15,
+          "mean_error": {
+            "rational": "3",
+            "sqrt2_coefficient": "-2",
+            "approx": 0.1715728752538
+          },
+          "error_upper": "1/4",
+          "robust_side_rms_lower": {
+            "rational": "-9",
+            "sqrt2_coefficient": "7",
+            "approx": 0.8994949366117
+          }
+        },
+        {
+          "m": 7,
+          "central_unit_edges": 20,
+          "vertices": 49,
+          "mean_error": {
+            "rational": "20/7",
+            "sqrt2_coefficient": "-2",
+            "approx": 0.02871573239667
+          },
+          "error_upper": "1/14",
+          "robust_side_rms_lower": {
+            "rational": "-60/7",
+            "sqrt2_coefficient": "7",
+            "approx": 1.328066365183
+          }
+        },
+        {
+          "m": 31,
+          "central_unit_edges": 88,
+          "vertices": 213,
+          "mean_error": {
+            "rational": "88/31",
+            "sqrt2_coefficient": "-2",
+            "approx": 0.01028255267316
+          },
+          "error_upper": "1/62",
+          "robust_side_rms_lower": {
+            "rational": "-264/31",
+            "sqrt2_coefficient": "7",
+            "approx": 1.383365904354
+          }
+        },
+        {
+          "m": 64,
+          "central_unit_edges": 181,
+          "vertices": 438,
+          "mean_error": {
+            "rational": "-181/64",
+            "sqrt2_coefficient": "2",
+            "approx": 0.0003021247461903
+          },
+          "error_upper": "1/128",
+          "robust_side_rms_lower": {
+            "rational": "543/64",
+            "sqrt2_coefficient": "-5",
+            "approx": 1.413307188135
+          }
+        }
+      ],
+      "scaling_factor": "1/m",
+      "target_square_side": "2+sqrt(2)",
+      "only_four_selected_leaf_distances_claimed": true,
+      "distribution_prepared_by_current_H_claimed": false,
+      "whole_network_three_dimensional_limit_claimed": false
+    },
+    "quantum_interface": {
+      "graph_reference_joint_dimension": 4,
+      "nonzero_graph_offdiagonal": 0.3535533905933,
+      "maximum_float_residual": 1.7763568394e-15,
+      "exact_operator_slack_on_three_splits": [
+        {
+          "rational": "0",
+          "sqrt2_coefficient": "0",
+          "approx": 0.0
+        },
+        {
+          "rational": "0",
+          "sqrt2_coefficient": "0",
+          "approx": 0.0
+        },
+        {
+          "rational": "0",
+          "sqrt2_coefficient": "2",
+          "approx": 2.828427124746
+        }
+      ],
+      "arbitrary_joint_state_extension_from_commuting_diagonal_operators": true,
+      "graph_measurement_dephasing_or_postselection_required": false,
+      "actual_reader_or_preparation_device_built": false
+    },
+    "existing_propagation_interface_boundary": {
+      "unit_edge_distances": [
+        "2",
+        "5"
+      ],
+      "mean_distance": "7/2",
+      "mean_inverse_square_weight": "5/72",
+      "inverse_square_weight_of_mean": "4/81",
+      "exact_gap": "13/648",
+      "Jensen_inequality_is_mature_boundary_not_new_dynamics": true,
+      "mean_distance_alone_not_substituted_into_round465_bound": true
+    }
+  },
+  "scope": {
+    "independent_of_round466": true,
+    "tree_four_point_theorem_is_mature": true,
+    "tree_path_metric_equals_physical_length_is_tested_extra_hypothesis": true,
+    "exact_and_near_isometric_length_limits_only": true,
+    "excludes_dimension_three_under_that_hypothesis": true,
+    "all_relational_or_averaged_geometries_excluded": false,
+    "Euclidean_square_mean_requires_nonvanishing_instantaneous_fluctuations": true,
+    "quantum_coherence_does_not_remove_commuting_distance_inequality": true,
+    "temporal_averaging_ergodicity_or_self_averaging_derived": false,
+    "mean_metric_generated_by_existing_H": false,
+    "spatial_dimension_derived": false,
+    "full_GR_goal_completed": false,
+    "new_physics_axiom_adopted": false,
+    "historical_files_changed": false,
+    "phase_closure_triggered": false
+  }
+}

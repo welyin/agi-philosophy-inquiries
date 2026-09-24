@@ -1,0 +1,187 @@
+{
+  "round": 422,
+  "status": "draft",
+  "scientific_base": 420,
+  "checks": 9,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scope": "Normal L2(R) translation-clock scattering; finite original data Hamiltonian; complete outgoing channels and unknown references. Infinite clock, its translation law and bounded compact interaction are modelling inputs. No original finite-object hardware closure, physical space or GR is derived.",
+  "numerics": "Gaussian quadrature and independent trapezoid integration of exact characteristic solutions; no finite-matrix discretization of P and no plots.",
+  "observations": {
+    "characteristics": {
+      "maximum_factorization_and_cocycle_error": 1.7468088578907917e-15,
+      "local_derivative_error": 1.0018569464515008e-10
+    },
+    "commuting_release": {
+      "dimension": 3,
+      "all_ray_operator_error": 9.550499576785472e-16,
+      "future_noncommuting_operation_checked": true
+    },
+    "zero_drift": {
+      "operator_error": 1.1388414532485727e-15,
+      "non_diagonal_logarithm": true
+    },
+    "clock_moments": [
+      {
+        "width": 0.1,
+        "normalization": 0.9999999999999937,
+        "mean_P_abs": 1.7763568394002505e-15,
+        "P_second_moment": 986.9604401089418,
+        "chi4": 0.9973889190083268,
+        "independent_trapezoid_difference": 6.328271240363392e-15
+      },
+      {
+        "width": 0.4,
+        "normalization": 0.9999999999999937,
+        "mean_P_abs": 4.440892098500626e-16,
+        "P_second_moment": 61.68502750680888,
+        "chi4": 0.9588738211594552,
+        "independent_trapezoid_difference": 6.328332107561058e-15
+      },
+      {
+        "width": 1.0,
+        "normalization": 0.9999999999999937,
+        "mean_P_abs": 0.0,
+        "P_second_moment": 9.869604401089422,
+        "chi4": 0.7644813238207613,
+        "independent_trapezoid_difference": 5.218048215738236e-15
+      },
+      {
+        "width": 2.0,
+        "normalization": 0.9999999999999937,
+        "mean_P_abs": 0.0,
+        "P_second_moment": 2.467401100272355,
+        "chi4": 0.3046027421041871,
+        "independent_trapezoid_difference": 1.6107801901806727e-15
+      }
+    ],
+    "noncommuting_pulse": {
+      "M_minus_X": 2.974098409413995e-16,
+      "rows": [
+        {
+          "width": 0.2,
+          "complete_channel_choi_error": 3.1141280234196347e-15,
+          "future_free_channel_error": 1.516750447263084e-16,
+          "quadrature_refinement_error": 1.4464231163279217e-14,
+          "choi_nonzero_eigenvalues": [
+            0.0052057701903934755,
+            0.9947942298096091
+          ]
+        },
+        {
+          "width": 0.5,
+          "complete_channel_choi_error": 3.079006529345029e-15,
+          "future_free_channel_error": 1.5179762384289193e-16,
+          "quadrature_refinement_error": 1.417052352832488e-14,
+          "choi_nonzero_eigenvalues": [
+            0.031828852816197954,
+            0.9681711471838046
+          ]
+        },
+        {
+          "width": 1.0,
+          "complete_channel_choi_error": 2.661698724965514e-15,
+          "future_free_channel_error": 3.4822666009395856e-16,
+          "quadrature_refinement_error": 1.3090438766445824e-14,
+          "choi_nonzero_eigenvalues": [
+            0.11775933808961717,
+            0.8822406619103853
+          ]
+        },
+        {
+          "width": 2.0,
+          "complete_channel_choi_error": 1.6235923248763068e-15,
+          "future_free_channel_error": 5.103546271834335e-17,
+          "quadrature_refinement_error": 9.571158751648185e-15,
+          "choi_nonzero_eigenvalues": [
+            0.34769862894790654,
+            0.652301371052096
+          ]
+        }
+      ]
+    },
+    "reference_error": [
+      {
+        "width": 0.2,
+        "half_diamond_analytic": 0.005205770190393533,
+        "plus_witness": 0.005205770190392133,
+        "bell_witness": 0.005205770190392152,
+        "maximum_random_reference_distance": 0.003557957518719127
+      },
+      {
+        "width": 0.5,
+        "half_diamond_analytic": 0.03182885281619774,
+        "plus_witness": 0.03182885281619631,
+        "bell_witness": 0.031828852816196324,
+        "maximum_random_reference_distance": 0.019459258638179752
+      },
+      {
+        "width": 1.0,
+        "half_diamond_analytic": 0.11775933808961686,
+        "plus_witness": 0.1177593380896158,
+        "bell_witness": 0.11775933808961574,
+        "maximum_random_reference_distance": 0.080381872926051
+      },
+      {
+        "width": 2.0,
+        "half_diamond_analytic": 0.34769862894790543,
+        "plus_witness": 0.34769862894790504,
+        "bell_witness": 0.34769862894790515,
+        "maximum_random_reference_distance": 0.2337426672993083
+      }
+    ],
+    "normal_mixed_clock": {
+      "choi_second_eigenvalue": 0.12001341636090396,
+      "coherent_clock_phase_independence_error": 1.1175720942337717e-16
+    },
+    "finite_trace_phase_check": {
+      "dimension": 7,
+      "trace_of_energy_difference": 0.0,
+      "interior_phase_error": 1.3877787807814457e-16,
+      "full_cyclic_shift_phase_error": 1.1210175089974883,
+      "boundary_energy_change": -6.0
+    },
+    "packet_family_tradeoff": {
+      "coefficient_limit": 0.13069096604865776,
+      "product_limit": 1.2898681336964528,
+      "rows": [
+        {
+          "width": 0.5,
+          "half_diamond_error": 0.03182885281619774,
+          "P_second_moment": 39.47841760435743,
+          "epsilon_over_width_squared": 0.12731541126479096,
+          "epsilon_times_P_second": 1.2565527433454824
+        },
+        {
+          "width": 0.25,
+          "half_diamond_error": 0.00811486538190287,
+          "P_second_moment": 157.91367041742973,
+          "epsilon_over_width_squared": 0.1298378461104459,
+          "epsilon_times_P_second": 1.2814481773996198
+        },
+        {
+          "width": 0.125,
+          "half_diamond_error": 0.002038704750783993,
+          "P_second_moment": 631.6546816697189,
+          "epsilon_over_width_squared": 0.13047710405017554,
+          "epsilon_times_P_second": 1.2877574003750065
+        },
+        {
+          "width": 0.0625,
+          "half_diamond_error": 0.0005103025941154971,
+          "P_second_moment": 2526.6187266788756,
+          "epsilon_over_width_squared": 0.13063746409356725,
+          "epsilon_times_P_second": 1.2893400905650243
+        },
+        {
+          "width": 0.03125,
+          "half_diamond_error": 0.00012761483230483428,
+          "P_second_moment": 10106.474906715503,
+          "epsilon_over_width_squared": 0.1306775882801503,
+          "epsilon_times_P_second": 1.2897361004135146
+        }
+      ],
+      "not_a_universal_optimality_bound": true
+    }
+  }
+}

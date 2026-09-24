@@ -1,0 +1,166 @@
+{
+  "round": 462,
+  "baseline_round": 461,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "observations": {
+    "rule_and_inputs": {
+      "raw_qubits_per_node": 3,
+      "internal_pairs_per_node": 2,
+      "raw_pairs_per_potential_node_pair": 4,
+      "node_pair_specific_weights": false,
+      "independent_edge_registers": 0,
+      "full_potential_contact_count": "4 binomial(N,2)",
+      "total_raw_pairs": "2N + 4 binomial(N,2)",
+      "node_permutation_covariant": true,
+      "grouping_roles_contacts_preparation_and_readout_are_inputs": true,
+      "full_raw_permutation_invariance_claimed": false
+    },
+    "bilateral_activation": {
+      "centered_cross_generator": "2 J_port_A dot J_port_B",
+      "eligibility": "T_A T_B",
+      "both_triplets_required": true,
+      "cross_terms_do_not_flip_local_triplet_population": true,
+      "same_internal_exchange_updates_population": true,
+      "compressed_initial_record_derivative": "-sqrt(3) Y_L / 2",
+      "feedback_backaction_at_higher_derivative": true,
+      "expectation_value_substituted_into_H": false
+    },
+    "actual_response_current": {
+      "local_effect": "total j=3/2 projector of the three actual node qubits",
+      "exact_integer_polynomial": "D2 (D2-8I) (D2-20I)=0, D2=-D^2",
+      "exact_trace_D2": 192,
+      "exact_trace_D2_squared": 3456,
+      "largest_eigenvalue_present_integer_witness": 1920,
+      "exact_current_norm": "2 sqrt(5)/3",
+      "gate_support": "T_A T_B",
+      "arbitrary_joint_state_speed_bound": "|d<E_A>/dt| <= (2 sqrt(5)/3) sum_(B!=A) |g_AB| <T_A T_B>",
+      "local_internal_terms_commute_with_response": true,
+      "bound_is_necessary_not_sufficient_for_response": true,
+      "no_external_axis_needed_for_effect": true
+    },
+    "integer_response_certificate": {
+      "raw_qubits": 9,
+      "time": "1/2",
+      "series_degree": 40,
+      "hamiltonian_norm_upper": 18,
+      "norm_tail_bound": "67585198634817523235520443624317923/86346818413013275372150134407168000000000",
+      "contrast_error_bound": "11671538315615117301483626349150684310346926128115399110330909516774979033929/3727886525024944205432912741147031563866500424836603843404890112000000000000000000",
+      "rows": [
+        {
+          "node": 1,
+          "polynomial_numerator": "51473314335963322485706585198859679589237331921914208741861884239961245564058926715903883920164835811486478485676167270400",
+          "polynomial_denominator": "231783372250770997353148332144940180388191543742418717236762643770179548404955365242133957460586232020992000000000000000000",
+          "derivative_numerators_k_1_3_5_7": [
+            0,
+            4608,
+            -138240,
+            1741824
+          ],
+          "certified_lower": 0.1282119848163914,
+          "certified_upper": 0.12821824656188033
+        },
+        {
+          "node": 2,
+          "polynomial_numerator": "1586294320239116928940134135647912413019850221657279348928038297066374281798344806381765368556118527237331508336452935680",
+          "polynomial_denominator": "231783372250770997353148332144940180388191543742418717236762643770179548404955365242133957460586232020992000000000000000000",
+          "derivative_numerators_k_1_3_5_7": [
+            0,
+            0,
+            23040,
+            -4161024
+          ],
+          "certified_lower": 0.003948176953656291,
+          "certified_upper": 0.003954438699145198
+        }
+      ],
+      "source": "Y+ versus Y- in original A private L",
+      "receiver_B": "L1 (triplet port initially)",
+      "receiver_C": "L0 (singlet port initially)",
+      "all_three_G_inputs_in_this_witness": "independent I/2",
+      "initial_full_states_have_no_inter_node_correlations": true,
+      "short_time_B": "8 t^3/(3 sqrt(3)) + O(t^5)",
+      "short_time_C": "2 t^5/(3 sqrt(3)) + O(t^7)",
+      "window_half_width": "1/2048",
+      "B_contrast_lower_on_window": "3/25",
+      "absolute_C_contrast_upper_on_window": "1/100",
+      "old_three_spin_codes_claimed_preserved": false
+    },
+    "raw_reproduction": {
+      "receiver_probabilities_Y_plus": [
+        0.111868555026,
+        0.017843411782
+      ],
+      "receiver_probabilities_Y_minus": [
+        0.240083670715,
+        0.0217947196084
+      ],
+      "arbitrary_64_dimensional_old_input_and_reference_preserved_globally": true,
+      "numerical_reference_dimension": 3,
+      "source_or_receiver_reduced_quantum_states_unchanged": false,
+      "response_witness_not_general_gauge_independent_channel": true,
+      "effective_interface_forced_to_single_total_j": false
+    },
+    "configuration_and_resource_boundaries": {
+      "every_joint_record_configuration_is_one_active_clique": true,
+      "arbitrary_correlated_marginal_support_claimed_clique": false,
+      "correlated_path_gate_probabilities": [
+        "1/2",
+        "1/2",
+        "0"
+      ],
+      "exact_all_state_inequality": "p_AB+p_BC-p_B <= p_AC",
+      "deterministic_two_edge_path_without_third_edge_not_supported": true,
+      "independent_partner_choices_implemented": false,
+      "no_edge_register_does_not_remove_quadratic_contacts": true,
+      "finite_local_absolute_coefficient_budget_is_extra_input": true,
+      "example_sizes": [
+        {
+          "nodes": 2,
+          "raw_qubits": 6,
+          "raw_exchange_contacts": 8,
+          "maximum_unit_coefficient_load": 4,
+          "maximum_common_strength_at_kappa_one": "1/4"
+        },
+        {
+          "nodes": 3,
+          "raw_qubits": 9,
+          "raw_exchange_contacts": 18,
+          "maximum_unit_coefficient_load": 6,
+          "maximum_common_strength_at_kappa_one": "1/6"
+        },
+        {
+          "nodes": 4,
+          "raw_qubits": 12,
+          "raw_exchange_contacts": 32,
+          "maximum_unit_coefficient_load": 8,
+          "maximum_common_strength_at_kappa_one": "1/8"
+        },
+        {
+          "nodes": 8,
+          "raw_qubits": 24,
+          "raw_exchange_contacts": 128,
+          "maximum_unit_coefficient_load": 16,
+          "maximum_common_strength_at_kappa_one": "1/16"
+        }
+      ],
+      "coupling_budget_identified_with_thermodynamic_work": false,
+      "cognitive_axioms_or_physical_space_derived": false
+    }
+  },
+  "scope": {
+    "raw_two_body_bilateral_activation_with_node_roles": true,
+    "common_rule_without_edge_registers": true,
+    "actual_preferential_response_certified": true,
+    "arbitrary_unknown_joint_information_retained": true,
+    "pair_specific_partner_choice_or_contacts_generated": false,
+    "node_role_partition_derived_from_cognitive_principles": false,
+    "full_recursive_cognition_proved": false,
+    "physical_space_dimension_derived": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

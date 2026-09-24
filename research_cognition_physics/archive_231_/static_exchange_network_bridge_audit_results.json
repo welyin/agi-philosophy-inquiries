@@ -1,0 +1,214 @@
+{
+  "round": 436,
+  "baseline_round": 435,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "observations": {
+    "target_contract": {
+      "original_system_qubits": 6,
+      "dimension": 64,
+      "pauli_terms": 25,
+      "terms_with_two_Y": 6,
+      "maximum_term_locality": 3,
+      "real_symmetric": true,
+      "operator_norm": 7.242640687119285,
+      "analytic_norm_upper": 9,
+      "full_shared_data_and_three_relation_registers_included": true,
+      "all_complex_input_states_still_allowed": true,
+      "exact_Pauli_manifest": {
+        "IIIIII": "9/4",
+        "IIIXII": "1",
+        "IIIZII": "-3/4",
+        "XXIIII": "1/4",
+        "XXIZII": "-1/4",
+        "YYIIII": "1/4",
+        "YYIZII": "-1/4",
+        "ZZIIII": "1/4",
+        "ZZIZII": "-1/4",
+        "IIIIXI": "1",
+        "IIIIZI": "-3/4",
+        "XIXIII": "1/4",
+        "XIXIZI": "-1/4",
+        "YIYIII": "1/4",
+        "YIYIZI": "-1/4",
+        "ZIZIII": "1/4",
+        "ZIZIZI": "-1/4",
+        "IIIIIX": "1",
+        "IIIIIZ": "-3/4",
+        "IXXIII": "1/4",
+        "IXXIIZ": "-1/4",
+        "IYYIII": "1/4",
+        "IYYIIZ": "-1/4",
+        "IZZIII": "1/4",
+        "IZZIIZ": "-1/4"
+      },
+      "Heisenberg_equals_twice_SWAP_minus_identity": true
+    },
+    "explicit_first_layer": {
+      "original_qubits": 6,
+      "mediator_qubits": 6,
+      "intermediate_qubits": 12,
+      "first_layer_only_not_final_Heisenberg_size": true,
+      "intermediate_dimension": 4096,
+      "largest_Pauli_support": 4,
+      "mediator_ground_state": "|000000>",
+      "scalar_counterterm": 1.5,
+      "maximum_single_term_error": 1.110223024625157e-16,
+      "whole_effective_error": 3.3306690738754706e-16,
+      "maximum_shared_data_K_commutator": 0.5000000000000003,
+      "intermediate_A_terms": {
+        "XXIIIIXIIIII": 0.3535533905932738,
+        "ZZIIIIXIIIII": 0.3535533905932738,
+        "XXIIIIIXIIII": 0.3535533905932738,
+        "ZZIZIIIXIIII": -0.3535533905932738,
+        "XIXIIIIIXIII": 0.3535533905932738,
+        "ZIZIIIIIXIII": 0.3535533905932738,
+        "XIXIIIIIIXII": 0.3535533905932738,
+        "ZIZIZIIIIXII": -0.3535533905932738,
+        "IXXIIIIIIIXI": 0.3535533905932738,
+        "IZZIIIIIIIXI": 0.3535533905932738,
+        "IXXIIIIIIIIX": 0.3535533905932738,
+        "IZZIIZIIIIIX": -0.3535533905932738
+      },
+      "intermediate_B_terms": {
+        "IIIIIIIIIIII": 3.75,
+        "IIIXIIIIIIII": 1.0,
+        "IIIZIIIIIIII": -0.75,
+        "XXIIIIIIIIII": 0.25,
+        "XXIZIIIIIIII": -0.25,
+        "ZZIIIIIIIIII": 0.25,
+        "ZZIZIIIIIIII": -0.25,
+        "IIIIXIIIIIII": 1.0,
+        "IIIIZIIIIIII": -0.75,
+        "XIXIIIIIIIII": 0.25,
+        "XIXIZIIIIIII": -0.25,
+        "ZIZIIIIIIIII": 0.25,
+        "ZIZIZIIIIIII": -0.25,
+        "IIIIIXIIIIII": 1.0,
+        "IIIIIZIIIIII": -0.75,
+        "IXXIIIIIIIII": 0.25,
+        "IXXIIZIIIIII": -0.25,
+        "IZZIIIIIIIII": 0.25,
+        "IZZIIZIIIIII": -0.25
+      },
+      "noncommuting_data_terms_run_simultaneously": true,
+      "full_final_Heisenberg_coupling_list_generated": false
+    },
+    "first_layer_uniform_bound": {
+      "Hamiltonian": "Delta*H0 + sqrt(Delta)*A + B; mu=1/sqrt(Delta)",
+      "operator_error_bound": "sqrt(3)*(2+39|t|)*mu + sqrt(6)*(6+63|t|)*mu^2",
+      "constants": [
+        {
+          "name": "w1",
+          "numerical_norm": 1.5811388300841906,
+          "analytic_upper": 1.7320508075688772
+        },
+        {
+          "name": "w2",
+          "numerical_norm": 1.0000000000000007,
+          "analytic_upper": 7.348469228349534
+        },
+        {
+          "name": "a3",
+          "numerical_norm": 4.121933705968932,
+          "analytic_upper": 67.54998149518622
+        },
+        {
+          "name": "a4",
+          "numerical_norm": 3.208680679199611,
+          "analytic_upper": 154.3178537953402
+        }
+      ],
+      "full_code_columns_checked": 64,
+      "exact_residual_identity_error": 1.5489328933560852e-17,
+      "witness_mu": "1/100000",
+      "witness_Delta": 10000000000,
+      "bound_at_time_501_over_1000": 0.00037307562446058134,
+      "all_inputs_and_arbitrary_reference_included": true,
+      "large_energy_scale_recorded_as_cost": true,
+      "full_spectral_simulator_run_claimed": false
+    },
+    "whole_network_signal": {
+      "certificate": {
+        "order": 60,
+        "time": "1/2",
+        "scaled_low_order_traces": [
+          0,
+          0,
+          0,
+          0,
+          24,
+          0,
+          288
+        ],
+        "contrast_interval": [
+          0.014042348519119735,
+          0.014042348519119735
+        ],
+        "lower_rational": "2739194791323471352259003857959294850483569646416960142739759702690533223234762414498262562150966577/195066714630665068082802778935942884432043962166370594559403248637650673041605840286515200000000000000",
+        "upper_rational": "109567791652938854100147227605302137281566216049191199342519512777082567079313098134790653515059417/7802668585226602723312111157437715377281758486654823782376129945506026921664233611460608000000000000",
+        "tail_upper_rational": "13915193059764305937984450503671774362956903094027/22187560379215326218495704313944065970862450068107663769600000000000000",
+        "tail_upper_float": 6.271619241563693e-22,
+        "certified_greater_than": "7/500"
+      },
+      "spectral_cross_check": 0.014042348519119952,
+      "response_observable": "n_12 - n_13",
+      "derivative_norm": 2,
+      "window": [
+        "499/1000",
+        "501/1000"
+      ],
+      "target_window_lower": "3/250",
+      "static_simulation_contract": {
+        "eta": "1/10000",
+        "epsilon": "1/10000",
+        "horizon": "501/1000"
+      },
+      "reference_complete_trace_distance_upper": "2501/10000000",
+      "simulator_window_gap_lower": "57499/5000000",
+      "simulator_window_gap_lower_float": 0.0114998,
+      "applies_to_any_simulator_meeting_the_full_contract": true,
+      "final_Heisenberg_hardware_numerically_simulated": false
+    },
+    "reference_contract_check": {
+      "test_type": "abstract 4D contract example, not Heisenberg construction",
+      "eta": 0.029998875012656183,
+      "epsilon": 0.02,
+      "time": 0.7,
+      "operator_error": 0.033485220193484905,
+      "entangled_complex_input_trace_distance": 0.02674775659893909,
+      "analytic_upper": 0.07399775002531236,
+      "encoding_is_complex_linear_isometry": true,
+      "anti_linear_state_conjugation_or_input_estimation_used": false
+    },
+    "readout_contract": {
+      "test_type": "same abstract contract example",
+      "complete_outcome_probabilities": [
+        0.7561981426700076,
+        0.24327320661742285,
+        0.000528650712569899
+      ],
+      "leakage_retained_as_outcome": true,
+      "probability_renormalization_or_postselection": false,
+      "induced_effects_and_initial_encoded_preparation_are_resources": true,
+      "arbitrary_future_interventions_automatically_implemented": false
+    }
+  },
+  "scope": {
+    "full_finite_network_static_exchange_simulation_exists_by_cited_theorems": true,
+    "explicit_first_no_Y_layer_checked_on_all_64_input_columns": true,
+    "complete_unknown_reference_dynamical_contract_proved": true,
+    "target_signal_and_simulation_budget_certified": true,
+    "known_universal_Hamiltonian_theorems_not_claimed_as_new": true,
+    "final_Heisenberg_coupling_list_or_hardware_run_completed": false,
+    "target_dependent_resources_and_nonuniform_weights_still_inputs": true,
+    "exact_finite_resource_universal_implementation_claimed": false,
+    "natural_architecture_or_actual_positions_generated": false,
+    "three_dimensional_space_unconditionally_derived": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

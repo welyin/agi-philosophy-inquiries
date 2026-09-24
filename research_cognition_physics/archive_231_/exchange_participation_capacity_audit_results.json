@@ -1,0 +1,314 @@
+{
+  "round": 437,
+  "baseline_round": 436,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "observations": {
+    "known_star_bound": {
+      "inequality": "sum_j SWAP_0j >= -I",
+      "singlet_sum_bound": "(k+1)/2",
+      "finite_spectra": [
+        {
+          "partners": 1,
+          "minimum_star_swap_eigenvalue": -1.0,
+          "ground_dimension": 1,
+          "equal_singlet_probabilities": [
+            0.9999999999999998
+          ],
+          "exact_probability": "1"
+        },
+        {
+          "partners": 2,
+          "minimum_star_swap_eigenvalue": -1.0000000000000002,
+          "ground_dimension": 2,
+          "equal_singlet_probabilities": [
+            0.7499999999999998,
+            0.7499999999999998
+          ],
+          "exact_probability": "3/4"
+        },
+        {
+          "partners": 3,
+          "minimum_star_swap_eigenvalue": -1.0000000000000007,
+          "ground_dimension": 3,
+          "equal_singlet_probabilities": [
+            0.6666666666666667,
+            0.6666666666666667,
+            0.6666666666666667
+          ],
+          "exact_probability": "2/3"
+        },
+        {
+          "partners": 4,
+          "minimum_star_swap_eigenvalue": -1.000000000000002,
+          "ground_dimension": 4,
+          "equal_singlet_probabilities": [
+            0.6249999999999998,
+            0.6249999999999997,
+            0.6249999999999997,
+            0.6249999999999996
+          ],
+          "exact_probability": "5/8"
+        },
+        {
+          "partners": 5,
+          "minimum_star_swap_eigenvalue": -1.000000000000001,
+          "ground_dimension": 5,
+          "equal_singlet_probabilities": [
+            0.6000000000000003,
+            0.6000000000000003,
+            0.6000000000000003,
+            0.6000000000000003,
+            0.6000000000000003
+          ],
+          "exact_probability": "3/5"
+        },
+        {
+          "partners": 6,
+          "minimum_star_swap_eigenvalue": -1.0000000000000024,
+          "ground_dimension": 6,
+          "equal_singlet_probabilities": [
+            0.5833333333333335,
+            0.5833333333333334,
+            0.5833333333333335,
+            0.5833333333333335,
+            0.5833333333333334,
+            0.5833333333333334
+          ],
+          "exact_probability": "7/12"
+        }
+      ],
+      "provenance": "standard spin addition / singlet monogamy, not a new theorem",
+      "analytic_all_k_saturation": true
+    },
+    "correlation_capacity_scope": {
+      "positive_part_budget": "sum_j max(0, 2 p_singlet(0,j)-1) <= 1",
+      "fixed_threshold_partner_bound": "floor(1/(2 delta))",
+      "threshold_needed_for_three": "1/6",
+      "threshold_not_selected_by_exchange": true,
+      "arbitrary_weak_partner_family": [
+        {
+          "partners": 1,
+          "singlet_probability": "1",
+          "excess": "1/2",
+          "positive_excess_budget": 1
+        },
+        {
+          "partners": 2,
+          "singlet_probability": "3/4",
+          "excess": "1/4",
+          "positive_excess_budget": 1
+        },
+        {
+          "partners": 3,
+          "singlet_probability": "2/3",
+          "excess": "1/6",
+          "positive_excess_budget": 1
+        },
+        {
+          "partners": 4,
+          "singlet_probability": "5/8",
+          "excess": "1/8",
+          "positive_excess_budget": 1
+        },
+        {
+          "partners": 6,
+          "singlet_probability": "7/12",
+          "excess": "1/12",
+          "positive_excess_budget": 1
+        },
+        {
+          "partners": 100,
+          "singlet_probability": "101/200",
+          "excess": "1/200",
+          "positive_excess_budget": 1
+        }
+      ],
+      "random_mixed_state_budgets": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Hamiltonian_support_or_edge_register_occupancy_not_bounded_by_this_theorem": true
+    },
+    "all_N_all_data_activation": {
+      "exact_certificate_at_half": "121/2304",
+      "formula": "[max(0,sin(t)-2(1-cos(t)))]^2, 0 <= t <= pi",
+      "arbitrary_reference_included": true,
+      "independent_of_environment_norm_and_N": true,
+      "expected_degree_lower_at_half": "(N-1)*121/2304",
+      "explicit_operator_tests": [
+        {
+          "time": 0.1,
+          "analytic_uniform_lower": 0.008071539540466159,
+          "full_unknown_data_operator_minima": [
+            0.009933510857368452,
+            0.009933510857368455,
+            0.00993351085736845
+          ]
+        },
+        {
+          "time": 0.5,
+          "analytic_uniform_lower": 0.0550327788782089,
+          "full_unknown_data_operator_minima": [
+            0.21101407630865615,
+            0.21101407630865615,
+            0.21101407630865618
+          ]
+        },
+        {
+          "time": 0.8,
+          "analytic_uniform_lower": 0.012269884255662817,
+          "full_unknown_data_operator_minima": [
+            0.4095090844929091,
+            0.4095090844929091,
+            0.40950908449290907
+          ]
+        }
+      ],
+      "unrelated_large_environment_tests": [
+        {
+          "dimension": 3,
+          "drift_norm": 2.548435610120346,
+          "occupation_minimum": 0.2113974420702853
+        },
+        {
+          "dimension": 5,
+          "drift_norm": 346.0128786844332,
+          "occupation_minimum": 0.22259325184664724
+        }
+      ]
+    },
+    "symmetric_sector": {
+      "generator_checks": [
+        {
+          "nodes": 2,
+          "data_dimension": 4,
+          "relation_qubits": 1,
+          "whole_dimension": 8,
+          "checked_isometry_columns": 6,
+          "residual": 0.0
+        },
+        {
+          "nodes": 3,
+          "data_dimension": 8,
+          "relation_qubits": 3,
+          "whole_dimension": 64,
+          "checked_isometry_columns": 32,
+          "residual": 8.881784197001252e-16
+        },
+        {
+          "nodes": 4,
+          "data_dimension": 16,
+          "relation_qubits": 6,
+          "whole_dimension": 1024,
+          "checked_isometry_columns": 320,
+          "residual": 1.472877282518059e-15
+        }
+      ],
+      "full_complex_unknown_symmetric_data_and_reference_retained": true,
+      "exact_intertwining_not_only_chosen_known_input": true,
+      "single_edge_H": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "edge_probability": "sin(sqrt(2)*t)^2/2",
+      "edge_probability_at_half": 0.2110140763086564,
+      "complete_generator_identity_verified": true
+    },
+    "dense_graph_witness": {
+      "measurement_time": "pi/(2 sqrt(2))",
+      "probability_per_possible_edge": "1/2",
+      "whole_graph_law": "G(N,1/2), a measurement distribution, not an assumed classical graph",
+      "direct_three_node_joint_probabilities": [
+        0.12500000000000008,
+        0.12499999999999994,
+        0.12500000000000008,
+        0.12499999999999997,
+        0.12500000000000003,
+        0.1249999999999999,
+        0.12499999999999997,
+        0.12500000000000003
+      ],
+      "witness_nodes": 32,
+      "possible_edges": 496,
+      "sparse_edge_cap": 48,
+      "probability_maximum_degree_at_most_three_upper_fraction": "5191718416004229014783147541251538132220996940832881768551242163135/51146728248377216718956089012931236753385031969422887335676427626502090568823039920051095192592252455482604439493126109519019633529459266458258243584",
+      "probability_maximum_degree_at_most_three_upper": 1.0150636401985208e-82,
+      "exact_expected_degree": "31/2",
+      "fixed_degree_sparse_probability_tends_to_zero": true,
+      "no_asymptotic_monte_carlo_or_graph_sampling_used": true
+    },
+    "resource_and_simulation_scope": {
+      "blank_state_energy_identities": [
+        {
+          "nodes": 2,
+          "relation_qubits": 1,
+          "blank_mean_energy": 0,
+          "blank_energy_variance": 1,
+          "total_qubits": 3
+        },
+        {
+          "nodes": 3,
+          "relation_qubits": 3,
+          "blank_mean_energy": 0,
+          "blank_energy_variance": 3,
+          "total_qubits": 6
+        },
+        {
+          "nodes": 4,
+          "relation_qubits": 6,
+          "blank_mean_energy": 0,
+          "blank_energy_variance": 6,
+          "total_qubits": 10
+        }
+      ],
+      "all_possible_edge_carriers_already_allocated": true,
+      "no_constant_total_hardware_per_actor_claimed": true,
+      "occupation_per_edge_at_witness_time": 0.4999999999999999,
+      "off_diagonal_energy_per_edge_at_witness_time": -1.0,
+      "conserved_total_mean_energy_per_edge": -2.220446049250313e-16,
+      "initial_energy_above_sector_ground": "(sqrt(2)-1)*M",
+      "initial_energy_above_full_ground_at_least_sector_value": true,
+      "final_static_simulator_trace_distance_upper": "1/2500",
+      "simulated_nonsparse_event_probability_lower": 0.9996,
+      "cited_436_contract_applied_not_final_Heisenberg_hardware_run": true,
+      "only_finite_N_finite_time_positive_error_simulation_claimed": true
+    }
+  },
+  "scope": {
+    "known_singlet_monogamy_reused_not_claimed_as_new": true,
+    "exchange_correlation_budget_distinguished_from_participation_capacity": true,
+    "all_N_all_unknown_data_activation_lower_bound_proved": true,
+    "exact_joint_dense_graph_counterexample_with_reference_proved": true,
+    "additional_relation_hardware_and_initial_energy_accounted": true,
+    "naive_433_automatic_sparse_limit_refuted": true,
+    "all_exchange_based_sparse_mechanisms_refuted": false,
+    "degree_three_or_physical_space_generated": false,
+    "final_Heisenberg_coupling_list_or_hardware_run_completed": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

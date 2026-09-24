@@ -1,0 +1,433 @@
+{
+  "round": 439,
+  "baseline_round": 438,
+  "tests_run": 7,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "observations": {
+    "exact_resource_compression": {
+      "raw_resource_graph_dimension": 216,
+      "legal_graph_dimension": 8,
+      "all_local_charge_commutators_zero": true,
+      "weighted_conversion_and_all_occupancy_intertwiners_exact": true,
+      "hence_full_data_and_arbitrary_reference_intertwining": true,
+      "common_neighbor_gate_is_a_count_not_generally_a_projector": true
+    },
+    "partition_conservation": {
+      "exhaustive_checks": [
+        {
+          "vertices": 2,
+          "graphs": 2,
+          "directed_legal_moves": 0,
+          "distinct_partitions": 2
+        },
+        {
+          "vertices": 3,
+          "graphs": 8,
+          "directed_legal_moves": 6,
+          "distinct_partitions": 5
+        },
+        {
+          "vertices": 4,
+          "graphs": 64,
+          "directed_legal_moves": 168,
+          "distinct_partitions": 15
+        },
+        {
+          "vertices": 5,
+          "graphs": 1024,
+          "directed_legal_moves": 5920,
+          "distinct_partitions": 52
+        },
+        {
+          "vertices": 6,
+          "graphs": 32768,
+          "directed_legal_moves": 336000,
+          "distinct_partitions": 203
+        }
+      ],
+      "all_N_all_C_proof": "every addition has an existing two-path; every deletion retains a two-path",
+      "quantum_partition_projectors_commute_with_full_H": true,
+      "coherent_partition_superpositions_not_collapsed": true
+    },
+    "capacity_classification": {
+      "capacity_two": [
+        {
+          "vertices": 2,
+          "legal_graphs": 2,
+          "frozen_graphs": 2,
+          "configuration_components_by_size": {
+            "1": 2
+          }
+        },
+        {
+          "vertices": 3,
+          "legal_graphs": 8,
+          "frozen_graphs": 4,
+          "configuration_components_by_size": {
+            "1": 4,
+            "4": 1
+          }
+        },
+        {
+          "vertices": 4,
+          "legal_graphs": 41,
+          "frozen_graphs": 25,
+          "configuration_components_by_size": {
+            "1": 25,
+            "4": 4
+          }
+        },
+        {
+          "vertices": 5,
+          "legal_graphs": 253,
+          "frozen_graphs": 173,
+          "configuration_components_by_size": {
+            "1": 173,
+            "4": 20
+          }
+        },
+        {
+          "vertices": 6,
+          "legal_graphs": 1858,
+          "frozen_graphs": 1378,
+          "configuration_components_by_size": {
+            "1": 1378,
+            "4": 80,
+            "16": 10
+          }
+        }
+      ],
+      "capacity_one": [
+        {
+          "vertices": 2,
+          "frozen_matchings": 2
+        },
+        {
+          "vertices": 3,
+          "frozen_matchings": 4
+        },
+        {
+          "vertices": 4,
+          "frozen_matchings": 10
+        },
+        {
+          "vertices": 5,
+          "frozen_matchings": 26
+        },
+        {
+          "vertices": 6,
+          "frozen_matchings": 76
+        },
+        {
+          "vertices": 7,
+          "frozen_matchings": 232
+        },
+        {
+          "vertices": 8,
+          "frozen_matchings": 764
+        }
+      ],
+      "all_N_C2_reachable_configuration_count": "4^r, r = number of three-vertex connected components",
+      "nonzero_Omega_required_for_exact_reachable_set": true,
+      "full_configuration_count_not_single_trajectory_span": true,
+      "longer_paths_and_cycles_structurally_frozen": true
+    },
+    "nontrivial_surviving_components": {
+      "exact_integer_leading_transition_blocks": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          3,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          3,
+          2
+        ],
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          2,
+          1,
+          2
+        ],
+        [
+          2,
+          2,
+          0
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          3,
+          0,
+          1
+        ],
+        [
+          3,
+          1,
+          2
+        ],
+        [
+          3,
+          2,
+          2
+        ],
+        [
+          3,
+          3,
+          0
+        ]
+      ],
+      "arbitrary_unknown_data_has_nonzero_sufficiently_short_time_transition": true,
+      "symmetric_data_dimension": 4,
+      "graph_spectrum": [
+        3,
+        4,
+        4,
+        7
+      ],
+      "time": "pi/2",
+      "probabilities_triangle_same_path_other_paths": [
+        "0",
+        "5/9",
+        "2/9",
+        "2/9"
+      ],
+      "numerical_probabilities": [
+        6.498363708665012e-33,
+        0.5555555555555554,
+        0.2222222222222222,
+        0.22222222222222232
+      ],
+      "general_data_may_correlate_with_graph": true,
+      "permanently_recorded_classical_graph_not_claimed": true
+    },
+    "fixed_partition_operational_result": {
+      "witness_partition": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "full_block_dimension": 128,
+      "exact_integer_tensor_sum_verified": true,
+      "entangled_input_reference_dimension": 2,
+      "local_operation_cannot_change_other_component_plus_reference_marginal": true,
+      "all_C_proof": "fixed-partition legal space factorizes; H is a sum of component Hamiltonians",
+      "arbitrary_local_trace_preserving_maps_not_only_unitaries_covered_analytically": true,
+      "initial_partition_is_an_input_not_an_emergent_spatial_dimension": true
+    },
+    "larger_capacity_boundary": {
+      "saturated_triangle_free_examples": [
+        {
+          "graph": "K_1,1",
+          "capacity": 1,
+          "vertices": 2,
+          "frozen": true
+        },
+        {
+          "graph": "K_2,2",
+          "capacity": 2,
+          "vertices": 4,
+          "frozen": true
+        },
+        {
+          "graph": "K_3,3",
+          "capacity": 3,
+          "vertices": 6,
+          "frozen": true
+        },
+        {
+          "graph": "K_4,4",
+          "capacity": 4,
+          "vertices": 8,
+          "frozen": true
+        },
+        {
+          "graph": "K_5,5",
+          "capacity": 5,
+          "vertices": 10,
+          "frozen": true
+        }
+      ],
+      "all_C_regular_triangle_free_graphs_frozen_proved": true,
+      "four_vertex_path_data_commutator_nonzero_entries": 8,
+      "frozen_graph_does_not_imply_frozen_data": true,
+      "increasing_capacity_does_not_by_itself_guarantee_reorganization": true,
+      "original_Hamma_resource_hopping_not_included": true,
+      "all_local_models_or_all_cognition_refuted": false,
+      "known_ample_capacity_interface": [
+        {
+          "vertices": 2,
+          "sufficient_capacity": 1,
+          "all_connected_graphs_reachable": 1
+        },
+        {
+          "vertices": 3,
+          "sufficient_capacity": 2,
+          "all_connected_graphs_reachable": 4
+        },
+        {
+          "vertices": 4,
+          "sufficient_capacity": 3,
+          "all_connected_graphs_reachable": 38
+        },
+        {
+          "vertices": 5,
+          "sufficient_capacity": 4,
+          "all_connected_graphs_reachable": 728
+        }
+      ]
+    },
+    "endpoint_rate_bound": {
+      "all_N_operator_norm_bound": "abs(Omega)*C*(C-1)",
+      "proof": "symmetric matrix row sum <= sum over neighbors k of deg(k)-1",
+      "finite_row_checks": [
+        {
+          "vertices": 2,
+          "capacity": 1,
+          "maximum_endpoint_absolute_row_sum": 0,
+          "proven_upper": 0
+        },
+        {
+          "vertices": 3,
+          "capacity": 1,
+          "maximum_endpoint_absolute_row_sum": 0,
+          "proven_upper": 0
+        },
+        {
+          "vertices": 3,
+          "capacity": 2,
+          "maximum_endpoint_absolute_row_sum": 2,
+          "proven_upper": 2
+        },
+        {
+          "vertices": 4,
+          "capacity": 1,
+          "maximum_endpoint_absolute_row_sum": 0,
+          "proven_upper": 0
+        },
+        {
+          "vertices": 4,
+          "capacity": 2,
+          "maximum_endpoint_absolute_row_sum": 2,
+          "proven_upper": 2
+        },
+        {
+          "vertices": 4,
+          "capacity": 3,
+          "maximum_endpoint_absolute_row_sum": 6,
+          "proven_upper": 6
+        },
+        {
+          "vertices": 5,
+          "capacity": 1,
+          "maximum_endpoint_absolute_row_sum": 0,
+          "proven_upper": 0
+        },
+        {
+          "vertices": 5,
+          "capacity": 2,
+          "maximum_endpoint_absolute_row_sum": 2,
+          "proven_upper": 2
+        },
+        {
+          "vertices": 5,
+          "capacity": 3,
+          "maximum_endpoint_absolute_row_sum": 6,
+          "proven_upper": 6
+        },
+        {
+          "vertices": 5,
+          "capacity": 4,
+          "maximum_endpoint_absolute_row_sum": 12,
+          "proven_upper": 12
+        }
+      ],
+      "capacity_two_exact_norms": [
+        {
+          "vertices": 3,
+          "endpoint_norm": 1.4142135623730954
+        },
+        {
+          "vertices": 4,
+          "endpoint_norm": 1.4142135623730954
+        },
+        {
+          "vertices": 5,
+          "endpoint_norm": 1.4142135623730954
+        },
+        {
+          "vertices": 6,
+          "endpoint_norm": 1.4142135623730954
+        }
+      ],
+      "C2_N_at_least_three_exact_norm": "sqrt(2)*abs(Omega)",
+      "fixed_capacity_removes_438_sqrt_N_endpoint_norm_growth": true,
+      "physical_light_cone_or_metric_speed_claimed": false
+    }
+  },
+  "scope": {
+    "existing_short_path_gate_explicitly_attributed": true,
+    "resource_charge_and_full_unknown_reference_intertwining_proved": true,
+    "partition_conservation_and_component_no_signalling_proved": true,
+    "capacity_two_all_N_configuration_classification_proved": true,
+    "nonzero_autonomous_three_vertex_reconfiguration_retained": true,
+    "saturated_triangle_free_obstruction_proved": true,
+    "size_independent_endpoint_conversion_norm_bound_proved": true,
+    "old_routing_closure_and_shortest_power_results_reused": true,
+    "short_path_rule_or_capacity_derived_from_429": false,
+    "whole_data_dynamics_frozen_claimed": false,
+    "single_trajectory_dimension_equal_to_configuration_count_claimed": false,
+    "original_full_hopping_model_refuted": false,
+    "stable_connected_geometry_or_dimension_generated": false,
+    "final_Heisenberg_hardware_compiled": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "round": 463,
+  "baseline_round": 461,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "observations": {
+    "bilinear_and_positive_factorizations": {
+      "local_dimension": 2,
+      "nonorthogonal_continuous_quantum_states_used": true,
+      "linear_descriptor_span_dimension": 4,
+      "exact_probability_matrix_rank": 4,
+      "three_times_matrix": [
+        [
+          3,
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          3,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          3,
+          2
+        ],
+        [
+          2,
+          2,
+          2,
+          3
+        ]
+      ],
+      "diagonal_defined_by_same_product_formula": true,
+      "unknown_state_cloning_operation_not_assumed": true,
+      "rank_bound": "rank M <= dim span_R{rho_i} <= d^2",
+      "positive_factorization": "M_ij = Tr(rho_i F_j), F_j >= 0"
+    },
+    "positive_cover": {
+      "local_dimension": 3,
+      "local_support_span_dimension": 3,
+      "vertices": 6,
+      "maximum_degree": 2,
+      "selected_support_spanning_rows": [
+        0,
+        1,
+        3
+      ],
+      "every_nonzero_column_covered": true,
+      "selected_rows_not_assumed_linear_basis_or_orthogonal_states": true,
+      "general_bound": "N_nonisolated <= s*(Delta+1) <= d*(Delta+1)",
+      "rank_only_weaker_bound": "N_nonisolated <= r*(Delta+1)"
+    },
+    "sharpness_and_boundary": {
+      "attaining_example": {
+        "d": 3,
+        "vertices": 12,
+        "degree": 3,
+        "components": 3,
+        "graph": "three disjoint K4",
+        "exact_bound_saturated": true
+      },
+      "connected_sharpness_claimed": false,
+      "dimension_growth_example": {
+        "d": 7,
+        "vertices": 7,
+        "degree": 2,
+        "graph": "C7",
+        "graph_is_input_in_effect": true
+      },
+      "arbitrary_isolated_nodes_are_not_bounded": true,
+      "no_programming_theorem_used": false
+    },
+    "full_rank_noise": {
+      "epsilon": "1/10",
+      "d": 3,
+      "same_label_probability": "131/150",
+      "different_label_probability": "19/300",
+      "general_positive_floor": "epsilon^2 Tr(E)/d^2",
+      "example_floor": "1/300",
+      "formerly_three_K4_now_exact_K12": true,
+      "exact_zero_sparsity_not_robust_under_arbitrarily_small_depolarization": true,
+      "threshold_graph_not_claimed_destroyed": true
+    },
+    "threshold_counterfamily": {
+      "fixed_effect": "(I+SWAP)/2",
+      "fixed_dimension": 2,
+      "fixed_threshold": "9/10",
+      "analytic_range": "all integers N >= 12",
+      "examples": [
+        {
+          "vertices": 12,
+          "local_dimension": 2,
+          "threshold": "9/10",
+          "radius_squared": 0.878460969083,
+          "probability_margin": 0.0401923788647,
+          "exact_support_graph": "K12",
+          "threshold_support_graph": "C12",
+          "probability_matrix_rank": 3,
+          "threshold_adjacency_rank": 10
+        },
+        {
+          "vertices": 24,
+          "local_dimension": 2,
+          "threshold": "9/10",
+          "radius_squared": 0.655039271953,
+          "probability_margin": 0.00817983750315,
+          "exact_support_graph": "K24",
+          "threshold_support_graph": "C24",
+          "probability_matrix_rank": 3,
+          "threshold_adjacency_rank": 22
+        }
+      ],
+      "threshold_not_changed_with_N": true,
+      "local_preparation_radius_and_angles_depend_on_N": true,
+      "gap_asymptotic": "delta_N ~ 9 pi^2/(20 N^2)",
+      "gap_upper": "delta_N <= 3 pi^2/(4 N^2)",
+      "nonzero_support_theorem_not_violated": true,
+      "state_dependent_Hamiltonian_weights_not_implemented": true,
+      "spatial_dimension_not_inferred": true
+    },
+    "correlated_support_boundary": {
+      "vertices": 8,
+      "local_dimension": 2,
+      "fixed_effect": "|11><11|",
+      "global_state": "uniform classical mixture of one active endpoint-pair per graph edge",
+      "off_diagonal_edge_probability": "1/8",
+      "nonedge_probability": "0",
+      "all_local_states_identical": "diag(3/4,1/4)",
+      "product_description_prediction_for_every_distinct_pair": "1/16",
+      "actual_mean_support": "C8",
+      "independent_prediction_support": "K8",
+      "each_configuration_active_graph": "one K2 and isolated nodes",
+      "graph_is_stored_in_global_correlations_not_generated": true,
+      "arbitrary_graph_extension_analytic": true,
+      "mixture_support_not_same_as_simultaneous_active_configuration": true,
+      "support_graph_not_identified_with_causal_propagation": true
+    }
+  },
+  "scope": {
+    "exact_bound": "N_nonisolated <= d*(Delta+1)",
+    "nonorthogonal_continuous_descriptions_allowed": true,
+    "local_product_description_contract_is_an_additional_assumption": true,
+    "arbitrary_correlated_global_states_excluded_from_bound": true,
+    "finite_threshold_graphs_excluded_from_exact_zero_bound": true,
+    "fixed_E_measurement_hardware_or_natural_Hamiltonian_derived": false,
+    "independent_from_round_462": true,
+    "all_cognitive_networks_have_finite_size_claimed": false,
+    "spatial_dimension_derived": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

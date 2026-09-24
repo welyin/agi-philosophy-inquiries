@@ -1,0 +1,187 @@
+{
+  "round": 464,
+  "baseline_round": 463,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "observations": {
+    "sector_projectors": [
+      {
+        "n": 4,
+        "sector_dimension": 2,
+        "projector_denominator": 12
+      },
+      {
+        "n": 6,
+        "sector_dimension": 5,
+        "projector_denominator": 144
+      },
+      {
+        "n": 8,
+        "sector_dimension": 14,
+        "projector_denominator": 2880
+      }
+    ],
+    "complete_weight_kernel": {
+      "criterion": "Jprime_ij-J_ij = a_i+a_j",
+      "scope": "all even N>=4; scalar equality on the whole total-j=0 sector",
+      "certificates": [
+        {
+          "n": 4,
+          "edges": 6,
+          "sector_dimension": 2,
+          "diagonal": "1",
+          "shared_endpoint": "-1/2",
+          "disjoint": "1",
+          "positive_eigenvalue": "3",
+          "rank": 2,
+          "kernel_dimension": 4,
+          "exact_integer_gram_scale": 2
+        },
+        {
+          "n": 6,
+          "edges": 15,
+          "sector_dimension": 5,
+          "diagonal": "24/25",
+          "shared_endpoint": "-6/25",
+          "disjoint": "4/25",
+          "positive_eigenvalue": "8/5",
+          "rank": 9,
+          "kernel_dimension": 6,
+          "exact_integer_gram_scale": 25
+        },
+        {
+          "n": 8,
+          "edges": 28,
+          "sector_dimension": 14,
+          "diagonal": "45/49",
+          "shared_endpoint": "-15/98",
+          "disjoint": "3/49",
+          "positive_eigenvalue": "9/7",
+          "rank": 20,
+          "kernel_dimension": 8,
+          "exact_integer_gram_scale": 98
+        }
+      ],
+      "not_just_one_stationary_state": true
+    },
+    "star_identity": {
+      "local_identity": "sum_(j!=i) P0 Sij P0 = (N-4) P0/2",
+      "total_scalar_shift": "(N-4) sum_i a_i / 2",
+      "independent_raw_star_directions": true,
+      "uniform_all_pair_shift_is_only_one_special_case": true
+    },
+    "internal_process_equivalence": {
+      "n": 6,
+      "old_contacts": 5,
+      "new_contacts": 15,
+      "old_support": "P6",
+      "new_support": "K6",
+      "all_present_weights_positive": true,
+      "scalar_shift": 21,
+      "retained_instrument_probabilities": [
+        0.558382740759,
+        0.441617259241
+      ],
+      "arbitrary_unknown_sector_state_and_reference_covered_analytically": true,
+      "arbitrary_sector_preserving_adaptive_instruments_covered_analytically": true,
+      "old_and_new_physical_universes_claimed_distinct": false
+    },
+    "internal_extension": {
+      "old_subjects": "0,1,2,3 with all total-j=0 inputs",
+      "old_H0": "0",
+      "old_H1": "S01+S02+S03",
+      "added_common_contact": "S04",
+      "new_internal_pair": "singlet 45",
+      "initial": "singlet 01 tensor singlet 23 tensor singlet 45",
+      "effect": "singlet 04 projector",
+      "p_H0": "1/4",
+      "p_H1": "1/4 + (3/4) sin(t)^2",
+      "center_difference": "3/4",
+      "center": "pi/2",
+      "window_half_width": "1/4",
+      "difference_on_window_lower": "45/64",
+      "entire_six_body_total_j_zero_preserved": true,
+      "old_four_body_total_j_zero_not_preserved": true,
+      "external_axis_or_reference": false,
+      "numerical_reproduction": [
+        {
+          "time": 0.0,
+          "p0": 0.25,
+          "p1": 0.25
+        },
+        {
+          "time": 0.31,
+          "p0": 0.25,
+          "p1": 0.319795578752
+        },
+        {
+          "time": 1.57079632679,
+          "p0": 0.25,
+          "p1": 1.0
+        },
+        {
+          "time": 1.8,
+          "p0": 0.25,
+          "p1": 0.961284406125
+        }
+      ]
+    },
+    "complete_internal_reference_repair": {
+      "internal_qubits_added": 2,
+      "new_total_j_zero_interface": true,
+      "newly_added_contact_weights_equal_between_candidates": true,
+      "complete_old_weight_kernel_removed": true,
+      "minimum_gram_eigenvalue": "3(N+4)/(2(N+1)^2(N-1))",
+      "inverse_bound": "Euclidean norm(delta J) <= sector RMS error / sqrt(lambda_min)",
+      "full_new_sector_access_is_extra_contract": true,
+      "spontaneous_preparation_or_control_not_derived": true,
+      "certificates": [
+        {
+          "old_n": 4,
+          "new_n": 6,
+          "old_weight_count": 6,
+          "restricted_gram_rank": 6,
+          "smallest_eigenvalue": "4/25",
+          "other_eigenvalues": [
+            "4/5",
+            "8/5"
+          ]
+        },
+        {
+          "old_n": 6,
+          "new_n": 8,
+          "old_weight_count": 15,
+          "restricted_gram_rank": 15,
+          "smallest_eigenvalue": "3/49",
+          "other_eigenvalues": [
+            "3/7",
+            "9/7"
+          ]
+        }
+      ]
+    },
+    "quotient_is_not_space": {
+      "unique_zero_row_sum_representative": true,
+      "minimum_Euclidean_weight_norm_only": true,
+      "canonical_positive_or_sparse_not_guaranteed": true,
+      "example_canonical_min": -0.5,
+      "example_canonical_max": 0.75,
+      "sign_or_minimum_support_not_derived_cognitive_axioms": true,
+      "quotient_weight_dimension_not_spatial_dimension": true,
+      "actual_preparations_and_access_permissions_remain_inputs": true
+    }
+  },
+  "scope": {
+    "complete_shared_singlet_process_weight_kernel_classified": true,
+    "singlet_only_interface_is_extra_assumption": true,
+    "global_correlations_derive_contact_graph": false,
+    "internal_extension_distinguishes_previous_equivalence": true,
+    "full_cognitive_principles_refuted": false,
+    "spatial_dimension_derived": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

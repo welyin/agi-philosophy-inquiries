@@ -1,0 +1,157 @@
+{
+  "round": 452,
+  "baseline_round": 451,
+  "date": "2026-09-24",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "observations": {
+    "physical_interface": {
+      "code_dimension": 48,
+      "local_blank_effects": 4,
+      "controlled_frame_not_confused_with_receiver_frame": true,
+      "double_transposition_coefficient_rank": 3,
+      "modular_pivots": [
+        1,
+        1,
+        1
+      ],
+      "active_potential_on_one_excitation": "2 I_12",
+      "internal_flip_connects_all_16_logic_labels": true
+    },
+    "minimal_quantum_algebra": {
+      "matching_commutator_rank": 8,
+      "modulus": 1009,
+      "pivots": [
+        1008,
+        1008,
+        1,
+        1008,
+        1008,
+        1,
+        1008,
+        1008
+      ],
+      "scalar_kernel_dimension": 1,
+      "finite_Cstar_invariant_algebra_lemma_used": true,
+      "minimal_algebra": "M_48(C)",
+      "complex_vector_dimension": 2304,
+      "iff_condition": "kappa != 0 and ell != 0; j arbitrary real",
+      "classification_is_analytic_not_parameter_scan": true,
+      "arbitrary_affine_or_non_subalgebra_compression_excluded": false
+    },
+    "boundary": {
+      "kappa_zero_has_matching_sector_projector": true,
+      "ell_zero_has_nonconstant_Hamming_weight_conservation": true,
+      "uniform_all_subject_readout_scope_fixed": true,
+      "arbitrary_small_coupling_finite_time_effect_not_inferred_from_exact_algebra": true
+    },
+    "relation_phase_witness": {
+      "indices": [
+        1,
+        24
+      ],
+      "physical_bits": [
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "relative_phases": [
+        "+i",
+        "-i"
+      ],
+      "full_matching_marginal_equal": true,
+      "full_data_marginal_equal": true,
+      "complete_matching_dephased_quantum_data_equal": true,
+      "tau_center": "1/8",
+      "tau_window": [
+        "31/250",
+        "63/500"
+      ],
+      "taylor_order": 20,
+      "uniform_remainder": {
+        "numerator": 1628413597910449,
+        "denominator": 457950211237229602127817348218880000,
+        "decimal": 3.55587476095e-21
+      },
+      "central_probability_numeric": [
+        0.558326436842,
+        0.437899312623
+      ],
+      "effective_gap_strict_lower": "3/25",
+      "actual_gap_lower": {
+        "numerator": 70856101,
+        "denominator": 655360000,
+        "decimal": 0.108117829895
+      },
+      "actual_gap_strict_lower": "1/10",
+      "effect": "physical subject 0 A-register blank",
+      "derivative_gap_Lipschitz_upper": 6,
+      "no_postselection": true
+    },
+    "raw_transfer": {
+      "raw_single_marker_dimension": 384,
+      "Delta": 1024,
+      "g": 1,
+      "J_A_and_lambda": "1/1024",
+      "physical_center_time": 128,
+      "numerical_probabilities": [
+        0.558326056478,
+        0.437898613969
+      ],
+      "numerical_gap": 0.120427442509,
+      "numerical_vector_errors": [
+        0.0014899893293,
+        0.0014899893293
+      ],
+      "all_unknown_input_reference_bound_reused_from_round_449": true,
+      "actual_measurement_or_input_preparation_device_derived": false
+    },
+    "access_boundary": {
+      "stationary_polynomial_coefficients": [
+        -24,
+        -2,
+        1,
+        0,
+        0,
+        0
+      ],
+      "polynomial_constraint_rank": 2,
+      "integer_operator_row_norm_upper": 168,
+      "normalization_denominator": 8064,
+      "difference_Hilbert_Schmidt_squared_numerator": 174720,
+      "difference_Hilbert_Schmidt_squared_denominator": 65028096,
+      "positivity_by_integer_row_sum_bound": true,
+      "all_four_single_wait_output_histories_identical": true,
+      "full_state_tomography_from_these_histories": false,
+      "nontrivial_stationary_invisible_direction_dimension_at_least": 43
+    }
+  },
+  "scope": {
+    "existing_physical_readout_interface_used": true,
+    "exact_minimal_invariant_Cstar_algebra_classified": true,
+    "matching_coherence_future_physical_signal_certified": true,
+    "actual_raw_finite_window_gap_transferred": true,
+    "linear_statistics_and_quantum_algebra_distinguished": true,
+    "all_arbitrary_quantum_compressions_excluded": false,
+    "complete_macroscopic_agent_or_SoCA_implemented": false,
+    "macro_full_tomography_or_control_derived": false,
+    "new_rule_derived_from_cognitive_principles": false,
+    "full_spatial_dimension_or_GR_generated": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

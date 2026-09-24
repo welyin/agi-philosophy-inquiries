@@ -1,0 +1,264 @@
+{
+  "round": 442,
+  "baseline_round": 441,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "observations": {
+    "tree_combinatorics": {
+      "rows": [
+        {
+          "vertices": 3,
+          "all_fixed_leaf_pair_trees": 1,
+          "distance_change_counts": {
+            "-1": 0,
+            "0": 0,
+            "1": 0
+          },
+          "largest_exact_weighted_row": "0",
+          "cross_checked_with_440_generator": true
+        },
+        {
+          "vertices": 4,
+          "all_fixed_leaf_pair_trees": 4,
+          "distance_change_counts": {
+            "-1": 0,
+            "0": 2,
+            "1": 0
+          },
+          "largest_exact_weighted_row": "0",
+          "cross_checked_with_440_generator": true
+        },
+        {
+          "vertices": 5,
+          "all_fixed_leaf_pair_trees": 27,
+          "distance_change_counts": {
+            "-1": 12,
+            "0": 24,
+            "1": 12
+          },
+          "largest_exact_weighted_row": "3/2",
+          "cross_checked_with_440_generator": true
+        },
+        {
+          "vertices": 6,
+          "all_fixed_leaf_pair_trees": 256,
+          "distance_change_counts": {
+            "-1": 240,
+            "0": 384,
+            "1": 240
+          },
+          "largest_exact_weighted_row": "3",
+          "cross_checked_with_440_generator": true
+        },
+        {
+          "vertices": 7,
+          "all_fixed_leaf_pair_trees": 3125,
+          "distance_change_counts": {
+            "-1": 4440,
+            "0": 7120,
+            "1": 4440
+          },
+          "largest_exact_weighted_row": "9/2",
+          "cross_checked_with_440_generator": false
+        }
+      ],
+      "existing_NNI_single_step_leaf_distance_fact_reused": true,
+      "all_vertices_remain_distinguished": true,
+      "unlabelled_internal_vertex_NNI_counts_not_substituted": true,
+      "full_tree_degree_sector_and_distance_counts_exact": true,
+      "schur_constant": "2 C(C-2) abs(kappa)"
+    },
+    "complete_operator_bound": {
+      "full_data_graph_dimension": 384,
+      "graph_dimension": 6,
+      "coherent_initial_subspace_dimension": 256,
+      "final_near_subspace_dimension": 128,
+      "anti_Hermitian_data_block_cancellation_exact": true,
+      "graph_anti_Hermitian_norm": 2.121320343559643,
+      "time": 0.02,
+      "initial_distance_at_least": 3,
+      "final_distance_at_most": 2,
+      "all_input_contraction_probability_operator_norm": 0.003196161842726126,
+      "analytical_upper_bound": 0.3178122875803512,
+      "inverse_distance_moment_operator_inequality_min_eigenvalue": 0.05713791148266466,
+      "arbitrary_initial_tree_superposition_moment_bound_proved": true,
+      "arbitrary_untouched_reference_preserved_by_operator_bound": true,
+      "fixed_slot_chain_used": false
+    },
+    "autonomous_distance_oscillation": {
+      "symmetric_unknown_data_dimension": 7,
+      "exact_integer_intertwining": true,
+      "arbitrary_symmetric_data_and_reference_factorize": true,
+      "time": "pi/6",
+      "definite_far_tree_near_probability": 0.222222222222222,
+      "coherent_uniform_far_trees_near_probability": 0.8888888888888876,
+      "exact_probabilities": [
+        "2/9",
+        "8/9"
+      ],
+      "graph_coherence_not_replaced_by_classical_distribution": true,
+      "no_claim_of_monotonic_contraction_or_irreversible_selection": true
+    },
+    "unknown_input_nonzero_contraction": {
+      "initial_data_dimension": 64,
+      "time": "1/1000",
+      "J": 1,
+      "kappa": 1,
+      "minimum_singular_value_squared": 1.9999905323732513e-06,
+      "exact_taylor_remainder_upper": "81/1982000",
+      "exact_uniform_probability_lower": "181413961/98208100000000",
+      "probability_lower_decimal": 1.8472403090987404e-06,
+      "proof_covers_all_unknown_data_and_reference": true,
+      "reused_439_short_time_block_certificate_method": true
+    },
+    "all_size_certificate": {
+      "C": 3,
+      "kappa": 1,
+      "initial_distance_at_least": 101,
+      "final_distance_at_most": 2,
+      "time": "1/100",
+      "exact_probability_upper": "1/8800",
+      "minimum_time_for_probability_at_least_one_percent": "log(100)/12",
+      "minimum_time_decimal": 0.3837641821656743,
+      "large_Hilbert_space_numerically_simulated": false,
+      "general_tail": "min(1,((r-1)/(d0-1))^2 exp[4 C(C-2) abs(kappa*t)])",
+      "distance_deformation_bound_not_a_data_signal_bound": true
+    },
+    "branching_shape_and_schedule_scope": {
+      "rows": [
+        {
+          "spine_vertices": 2,
+          "vertices": 6,
+          "initial_leaf_distance": 3,
+          "final_leaf_distance": 2,
+          "required_and_constructed_sequential_flips": 1,
+          "prescribed_parallel_layers": 1,
+          "distances": [
+            3,
+            2
+          ]
+        },
+        {
+          "spine_vertices": 4,
+          "vertices": 10,
+          "initial_leaf_distance": 5,
+          "final_leaf_distance": 2,
+          "required_and_constructed_sequential_flips": 3,
+          "prescribed_parallel_layers": 2,
+          "distances": [
+            5,
+            3,
+            2
+          ]
+        },
+        {
+          "spine_vertices": 8,
+          "vertices": 18,
+          "initial_leaf_distance": 9,
+          "final_leaf_distance": 2,
+          "required_and_constructed_sequential_flips": 7,
+          "prescribed_parallel_layers": 3,
+          "distances": [
+            9,
+            5,
+            3,
+            2
+          ]
+        },
+        {
+          "spine_vertices": 16,
+          "vertices": 34,
+          "initial_leaf_distance": 17,
+          "final_leaf_distance": 2,
+          "required_and_constructed_sequential_flips": 15,
+          "prescribed_parallel_layers": 4,
+          "distances": [
+            17,
+            9,
+            5,
+            3,
+            2
+          ]
+        },
+        {
+          "spine_vertices": 32,
+          "vertices": 66,
+          "initial_leaf_distance": 33,
+          "final_leaf_distance": 2,
+          "required_and_constructed_sequential_flips": 31,
+          "prescribed_parallel_layers": 5,
+          "distances": [
+            33,
+            17,
+            9,
+            5,
+            3,
+            2
+          ]
+        },
+        {
+          "spine_vertices": 64,
+          "vertices": 130,
+          "initial_leaf_distance": 65,
+          "final_leaf_distance": 2,
+          "required_and_constructed_sequential_flips": 63,
+          "prescribed_parallel_layers": 6,
+          "distances": [
+            65,
+            33,
+            17,
+            9,
+            5,
+            3,
+            2
+          ]
+        },
+        {
+          "spine_vertices": 128,
+          "vertices": 258,
+          "initial_leaf_distance": 129,
+          "final_leaf_distance": 2,
+          "required_and_constructed_sequential_flips": 127,
+          "prescribed_parallel_layers": 7,
+          "distances": [
+            129,
+            65,
+            33,
+            17,
+            9,
+            5,
+            3,
+            2
+          ]
+        }
+      ],
+      "nonisomorphic_example_vertices": 18,
+      "initial_diameter": 9,
+      "final_diameter": 6,
+      "schedule_uses_existing_flip_terms_only": true,
+      "layer_selection_and_timing_are_extra_controls": true,
+      "uniform_autonomous_F_follows_this_schedule_proved": false,
+      "instantaneous_distance_is_not_a_data_channel": true,
+      "J_zero_preserves_each_subject_data_algebra_reused_from_441": true
+    }
+  },
+  "scope": {
+    "unchanged_440_autonomous_H_used_for_main_theorem": true,
+    "coherent_branching_trees_with_unknown_data_reference_covered": true,
+    "size_independent_quantum_distance_deformation_bound_proved": true,
+    "existing_NNI_and_441_weighted_method_explicitly_reused": true,
+    "tree_combinatorics_checked_against_440_generator": true,
+    "graph_shape_change_without_common_path_template_verified": true,
+    "actual_internal_distance_measurement_protocol_constructed": false,
+    "general_cyclic_graphs_or_nonleaf_pairs_covered": false,
+    "combined_439_440_model_covered": false,
+    "complete_data_signal_bound_on_branching_graphs_proved": false,
+    "programmed_flip_schedule_attributed_to_uniform_autonomous_F": false,
+    "initial_tree_or_three_dimensional_geometry_generated": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

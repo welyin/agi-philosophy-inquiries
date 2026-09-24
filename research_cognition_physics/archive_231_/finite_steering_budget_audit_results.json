@@ -1,0 +1,330 @@
+{
+  "round": 416,
+  "scientific_baseline": 414,
+  "scope": "Paid finite steering with dense axis orbit has Euclidean large-scale position budget; the input geometry and microscopic cost topology remain distinct",
+  "model": {
+    "dimension": 3,
+    "rotation_cosine": "3/5",
+    "rotation_sine": "4/5",
+    "rotation_cost": "1/1",
+    "body_axis": "e1",
+    "translation_cost": "abs(t)",
+    "final_posture": "identity"
+  },
+  "alphabet": {
+    "exact_orthogonality": true,
+    "exact_inverse_pairs": true,
+    "rotations_noncommute": true,
+    "irrationality_and_density_proved_analytically": true
+  },
+  "finite_net": {
+    "maximum_each_axis_exponent": 8,
+    "distinct_directions": 273,
+    "maximum_word_length": 16,
+    "exact_direction_norms": true,
+    "exact_words_match_directions": true,
+    "interval_order_verified": true,
+    "exact_circle_representatives": true,
+    "certified_gap_upper": 0.7194139991699131,
+    "chosen_delta": "18/25",
+    "gap_strictly_below_delta": true,
+    "cosine_lower": 0.7518057291408949,
+    "certified_inner_ball_radius": "3/4",
+    "cosine_strictly_above_inner_radius": true
+  },
+  "exact_decomposition": {
+    "all_targets_exact": true,
+    "all_translation_bounds": true,
+    "maximum_directions": 3
+  },
+  "actual_routes": {
+    "samples": [
+      {
+        "target": [
+          1,
+          0,
+          0
+        ],
+        "directions": 1,
+        "translation_cost": 1.0,
+        "rotation_calls": 0,
+        "total_cost": 1.0,
+        "normalized_translation_ratio": 1.0
+      },
+      {
+        "target": [
+          0,
+          1,
+          0
+        ],
+        "directions": 2,
+        "translation_cost": 1.0169516596651085,
+        "rotation_calls": 26,
+        "total_cost": 27.016951659665107,
+        "normalized_translation_ratio": 1.0169516596651085
+      },
+      {
+        "target": [
+          0,
+          0,
+          1
+        ],
+        "directions": 3,
+        "translation_cost": 1.0198889398117665,
+        "rotation_calls": 66,
+        "total_cost": 67.01988893981176,
+        "normalized_translation_ratio": 1.0198889398117665
+      },
+      {
+        "target": [
+          1,
+          1,
+          1
+        ],
+        "directions": 3,
+        "translation_cost": 1.7421691423839345,
+        "rotation_calls": 36,
+        "total_cost": 37.742169142383936,
+        "normalized_translation_ratio": 1.0058418233292241
+      },
+      {
+        "target": [
+          2,
+          -1,
+          3
+        ],
+        "directions": 3,
+        "translation_cost": 3.7667506303044855,
+        "rotation_calls": 44,
+        "total_cost": 47.766750630304486,
+        "normalized_translation_ratio": 1.0067064514295843
+      },
+      {
+        "target": [
+          -3,
+          2,
+          1
+        ],
+        "directions": 3,
+        "translation_cost": 3.844616614400787,
+        "rotation_calls": 42,
+        "total_cost": 45.844616614400785,
+        "normalized_translation_ratio": 1.0275170110418947
+      },
+      {
+        "target": [
+          -2,
+          -3,
+          -1
+        ],
+        "directions": 3,
+        "translation_cost": 3.990706911117694,
+        "rotation_calls": 46,
+        "total_cost": 49.99070691111769,
+        "normalized_translation_ratio": 1.06656128517381
+      },
+      {
+        "target": [
+          3,
+          1,
+          -2
+        ],
+        "directions": 3,
+        "translation_cost": 3.809744346999177,
+        "rotation_calls": 72,
+        "total_cost": 75.80974434699918,
+        "normalized_translation_ratio": 1.0181970055478384
+      },
+      {
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "directions": 0,
+        "translation_cost": 0.0,
+        "rotation_calls": 0,
+        "total_cost": 0.0,
+        "normalized_translation_ratio": 1.0
+      }
+    ],
+    "maximum_endpoint_error": 1.9860273225978185e-15,
+    "maximum_posture_error": 1.7613470276538735e-15,
+    "one_full_rational_se3_route_exact": true,
+    "example_target": [
+      1,
+      1,
+      1
+    ],
+    "example_chunks": [
+      {
+        "outward_rotation_symbols": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        "body_translation": "78125/64496",
+        "return_rotation_symbols": [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "outward_rotation_symbols": [
+          0,
+          2
+        ],
+        "body_translation": "427211/1545680",
+        "return_rotation_symbols": [
+          3,
+          1
+        ]
+      },
+      {
+        "outward_rotation_symbols": [
+          0,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "body_translation": "1140625/4482472",
+        "return_rotation_symbols": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          1
+        ]
+      }
+    ],
+    "route_cost_is_upper_bound_not_computed_optimum": true
+  },
+  "composition": {
+    "inverse_costs_match": true,
+    "inverse_endpoint_error": 3.204296758965566e-15,
+    "concatenation_identity_error": 7.774477567965562e-15,
+    "two_endpoint_sum_error": 2.8267115440514558e-15
+  },
+  "rescaled_route_bounds": [
+    {
+      "scale": 1,
+      "maximum_route_upper_surplus": 72.06808696022524,
+      "theorem_upper_for_this_window": 129.24721912892466,
+      "maximum_normalized_endpoint_error": 1.9860273225978185e-15,
+      "exact_budget_components_within_bounds": true
+    },
+    {
+      "scale": 16,
+      "maximum_route_upper_surplus": 4.568086960225235,
+      "theorem_upper_for_this_window": 9.247219128924646,
+      "maximum_normalized_endpoint_error": 1.9860273225978185e-15,
+      "exact_budget_components_within_bounds": true
+    },
+    {
+      "scale": 256,
+      "maximum_route_upper_surplus": 0.42873702434375316,
+      "theorem_upper_for_this_window": 1.7472191289246468,
+      "maximum_normalized_endpoint_error": 1.9860273225978185e-15,
+      "exact_budget_components_within_bounds": true
+    },
+    {
+      "scale": 4096,
+      "maximum_route_upper_surplus": 0.26027999309375316,
+      "theorem_upper_for_this_window": 1.2784691289246468,
+      "maximum_normalized_endpoint_error": 1.9860273225978185e-15,
+      "exact_budget_components_within_bounds": true
+    }
+  ],
+  "microscopic_boundary": {
+    "short_returning_rotation_words": [
+      [],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        2
+      ]
+    ],
+    "transverse_samples": [
+      {
+        "epsilon": "1/2",
+        "cost": "3/1",
+        "proven_optimum": "3/1",
+        "exact_endpoint_and_posture": true
+      },
+      {
+        "epsilon": "1/8",
+        "cost": "9/4",
+        "proven_optimum": "9/4",
+        "exact_endpoint_and_posture": true
+      },
+      {
+        "epsilon": "1/32",
+        "cost": "33/16",
+        "proven_optimum": "33/16",
+        "exact_endpoint_and_posture": true
+      },
+      {
+        "epsilon": "1/128",
+        "cost": "129/64",
+        "proven_optimum": "129/64",
+        "exact_endpoint_and_posture": true
+      }
+    ],
+    "origin_cost": 0,
+    "transverse_limit_cost": 2.0,
+    "euclidean_continuity": false,
+    "separated_sample_count": 12,
+    "maximum_sample_origin_cost": "5/2",
+    "minimum_sample_pair_cost": "529/264",
+    "infinite_separated_sequence_proved_analytically": true,
+    "cost_metric_is_proper": false
+  },
+  "input_position_dimension_is_derived": false,
+  "euclidean_rotation_action_is_input": true,
+  "arbitrary_rotation_is_a_free_primitive": false,
+  "steering_cost_omitted": false,
+  "euclidean_sublevel_compactness_proved": true,
+  "uniform_limit_is_on_declared_euclidean_windows": true,
+  "universal_rate_from_density_alone": false,
+  "all_round385_conditions_satisfied": false,
+  "proper_pointed_gh_convergence_claimed": false,
+  "cognition_to_space_completed": false,
+  "checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

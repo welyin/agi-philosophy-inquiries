@@ -1,0 +1,141 @@
+{
+  "round": 414,
+  "scientific_baseline": 412,
+  "scope": "A fixed finite lattice translation alphabet yields a proper word budget with a polyhedral continuum limit; this budget cannot supply the minimal continuous budget-preserving redirection required by rounds 385 and 412",
+  "model": {
+    "group": "Z^3",
+    "steps": [
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        -2,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        -3,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        -1
+      ]
+    ],
+    "step_cost": 1,
+    "limit_norm": "abs(x)/3+abs(y)+abs(z)",
+    "sharp_uniform_gap": "5/3"
+  },
+  "independent_bfs": {
+    "one_dimensional_radius": 20,
+    "one_dimensional_points": 121,
+    "one_dimensional_mismatches": 0,
+    "three_dimensional_radius": 12,
+    "three_dimensional_points": 7161,
+    "three_dimensional_mismatches": 0
+  },
+  "polytope": {
+    "exact_vertex_enumeration_correct": true,
+    "generators_contained": true,
+    "vertices_are_generators": true,
+    "dual_norm_mismatches": 0,
+    "vertex_count": 6
+  },
+  "bounded_difference": {
+    "minimum": "0/1",
+    "maximum": "5/3",
+    "maximizing_point": [
+      1,
+      0,
+      0
+    ],
+    "analytic_bound_all_integer_points": true
+  },
+  "scaled_lattice_comparison": [
+    {
+      "scale": 4,
+      "placement_error": "7/60",
+      "placement_bound": "7/24",
+      "pair_distance_error": "1/6",
+      "pair_distance_bound": "1/1"
+    },
+    {
+      "scale": 8,
+      "placement_error": "7/60",
+      "placement_bound": "7/48",
+      "pair_distance_error": "1/12",
+      "pair_distance_bound": "1/2"
+    },
+    {
+      "scale": 16,
+      "placement_error": "7/240",
+      "placement_bound": "7/96",
+      "pair_distance_error": "1/24",
+      "pair_distance_bound": "1/4"
+    },
+    {
+      "scale": 32,
+      "placement_error": "7/240",
+      "placement_bound": "7/192",
+      "pair_distance_error": "1/48",
+      "pair_distance_bound": "1/8"
+    }
+  ],
+  "limit_symmetry": {
+    "linear_isometry_count": 48,
+    "multiplication_closed": true,
+    "exact_vertex_set_preserved": true,
+    "generic_orbit_size": 48,
+    "original_discrete_alphabet_isometry_count_claimed": false
+  },
+  "direction_rotation": {
+    "angle": 0.7853981633974483,
+    "unit_direction_budget": 1.0,
+    "rotated_direction_budget": 1.4142135623730951,
+    "budget_ratio": 1.4142135623730951,
+    "qubit_covariance_error": 7.998132516919286e-17
+  },
+  "fixed_finite_translation_alphabet_is_model_input": true,
+  "endpoint_group_identity_is_model_input": true,
+  "polynomial_growth_is_cognitive_axiom": false,
+  "schreier_quotient_automatically_a_group": false,
+  "arbitrary_finite_control_alphabet_ruled_out": false,
+  "random_walk_limit_identified_with_word_budget": false,
+  "finite_symmetry_count_selects_spatial_dimension": false,
+  "three_dimensional_topology_ruled_out": false,
+  "cognition_to_gr_refuted": false,
+  "new_cognitive_axiom_adopted": false,
+  "checks": {
+    "run": 7,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

@@ -1,0 +1,285 @@
+{
+  "round": 446,
+  "baseline_round": 445,
+  "date": "2026-09-24",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "tests_run": 5,
+  "failures": 0,
+  "errors": 0,
+  "observations": {
+    "conjugacy": {
+      "exact_basis_checks": [
+        {
+          "subjects": 2,
+          "data_dimension": 3,
+          "basis_action_checks": 18
+        },
+        {
+          "subjects": 4,
+          "data_dimension": 2,
+          "basis_action_checks": 2304
+        },
+        {
+          "subjects": 4,
+          "data_dimension": 3,
+          "basis_action_checks": 11664
+        }
+      ],
+      "full_joint_dimension": 384,
+      "relation_code_data_dimension": 48,
+      "exact_joint_H_equals_C_address_H_C_dagger": true,
+      "arbitrary_joint_address_data_reference_preserved": true,
+      "control_frame_is_mathematics_not_a_preparation_protocol": true
+    },
+    "effective_joint_model": {
+      "exact_second_order_blocks": [
+        {
+          "initial": [
+            1,
+            0,
+            3,
+            2
+          ],
+          "final": [
+            2,
+            3,
+            0,
+            1
+          ],
+          "physical_source_to_destination": [
+            3,
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "initial": [
+            1,
+            0,
+            3,
+            2
+          ],
+          "final": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "physical_source_to_destination": [
+            2,
+            3,
+            0,
+            1
+          ]
+        },
+        {
+          "initial": [
+            2,
+            3,
+            0,
+            1
+          ],
+          "final": [
+            1,
+            0,
+            3,
+            2
+          ],
+          "physical_source_to_destination": [
+            3,
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "initial": [
+            2,
+            3,
+            0,
+            1
+          ],
+          "final": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "physical_source_to_destination": [
+            1,
+            0,
+            3,
+            2
+          ]
+        },
+        {
+          "initial": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "final": [
+            1,
+            0,
+            3,
+            2
+          ],
+          "physical_source_to_destination": [
+            2,
+            3,
+            0,
+            1
+          ]
+        },
+        {
+          "initial": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "final": [
+            2,
+            3,
+            0,
+            1
+          ],
+          "physical_source_to_destination": [
+            1,
+            0,
+            3,
+            2
+          ]
+        }
+      ],
+      "direct_384_dimension_exponential_error": 1.83128837319e-10,
+      "joint_all_input_error": 0.00828269976628,
+      "inherited_445_error_bound": 0.0787719726562,
+      "no_new_perturbation_fit_or_parameter_optimization": true,
+      "arbitrary_joint_code_data_reference_error_bound_inherited_exactly": true
+    },
+    "readouts": {
+      "exact_X_Z_generator_checks": 16,
+      "physical_subject_readout_moves_to_current_address_label": true,
+      "complete_tagged_data_algebra_commutes_with_H": true,
+      "physical_subject_data_not_frozen": true,
+      "changing_representation_without_readout_would_be_wrong": true,
+      "independent_internal_tagged_data_processing_generated": false
+    },
+    "channel": {
+      "initial_matching": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "known_matching_arbitrary_correlated_data_and_reference": true,
+      "exact_receiver_channel": "rho_bR(t) = sum_a q_ba(t) rho_aR(0)",
+      "probability_matrix": [
+        [
+          0.115530205574,
+          2.02196828273e-05,
+          0.442224787371,
+          0.442224787371
+        ],
+        [
+          2.02196828273e-05,
+          0.115530205574,
+          0.442224787371,
+          0.442224787371
+        ],
+        [
+          0.442224787371,
+          0.442224787371,
+          0.115530205574,
+          2.02196828274e-05
+        ],
+        [
+          0.442224787371,
+          0.442224787371,
+          2.02196828274e-05,
+          0.115530205574
+        ]
+      ],
+      "receiver_reference_residuals": [
+        7.63393299643e-17,
+        3.88340827466e-17,
+        6.45494980378e-17,
+        6.20692214858e-17
+      ],
+      "classical_mixture_claim_for_unknown_initial_graph_coherence": false
+    },
+    "signal": {
+      "sender": 0,
+      "receiver": 3,
+      "old_partner": 1,
+      "initial_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "strict_cross_component_signal_window_lower": {
+        "numerator": 743078948785288416746564281,
+        "denominator": 2104533975040000000000000000,
+        "decimal": 0.353084795778
+      },
+      "simple_signal_lower": "7/20",
+      "all_time_old_partner_signal_upper": {
+        "numerator": 9,
+        "denominator": 4096,
+        "decimal": 0.002197265625
+      },
+      "numerical_cross_checks": [
+        {
+          "tau": "19/10",
+          "actual_cross_component_receiver_signal": 0.435071200285,
+          "actual_old_partner_signal": 5.21983748216e-05,
+          "actual_initial_matching_leakage": 0.000129246548783
+        },
+        {
+          "tau": "2",
+          "actual_cross_component_receiver_signal": 0.442224787371,
+          "actual_old_partner_signal": 2.02196828273e-05,
+          "actual_initial_matching_leakage": 6.29360923274e-05
+        },
+        {
+          "tau": "21/10",
+          "actual_cross_component_receiver_signal": 0.444413765868,
+          "actual_old_partner_signal": 3.35665591142e-05,
+          "actual_initial_matching_leakage": 9.81746196747e-05
+        }
+      ],
+      "actual_physical_qubit_readout_used": true,
+      "actual_signal_distinguished_from_graph_change": true,
+      "universal_message_channel_is_identity": false,
+      "known_initial_matching_preparation_and_blank_data_explicit": true
+    }
+  },
+  "scope": {
+    "whole_subject_swap_includes_address_and_data": true,
+    "exact_all_N_equal_data_dimension_controlled_permutation_conjugacy": true,
+    "unknown_joint_code_data_reference_error_inherited_from_445": true,
+    "fixed_subject_readout_transformed_explicitly": true,
+    "complete_address_tagged_data_algebra_conserved": true,
+    "actual_cross_component_data_signal_strictly_certified": true,
+    "old_partner_legal_code_transport_forbidden_in_this_model": true,
+    "separate_edge_conditioned_data_swap_added": false,
+    "actual_data_signal_identified_with_address_motion_only": false,
+    "arbitrary_unknown_graph_has_simple_classical_routing_channel": false,
+    "full_unknown_message_perfectly_transferred": false,
+    "consistency_energy_and_all_pair_access_derived_from_429": false,
+    "old_relation_locality_or_three_dimensional_space_generated": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

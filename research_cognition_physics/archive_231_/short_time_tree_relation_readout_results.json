@@ -1,0 +1,226 @@
+{
+  "round": 470,
+  "baseline_round": 469,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "observations": {
+    "exact_local_coefficient": {
+      "sign_convention": "g = mean(Z_a | +X_b) - mean(Z_a | -X_b)",
+      "rational_cases": [
+        {
+          "ab": 1,
+          "av": 0,
+          "bv": 0,
+          "plus_second": "0",
+          "minus_second": "0",
+          "difference": "0"
+        },
+        {
+          "ab": 0,
+          "av": 1,
+          "bv": 0,
+          "plus_second": "2",
+          "minus_second": "2",
+          "difference": "0"
+        },
+        {
+          "ab": 0,
+          "av": 0,
+          "bv": 1,
+          "plus_second": "0",
+          "minus_second": "0",
+          "difference": "0"
+        },
+        {
+          "ab": 1,
+          "av": 1,
+          "bv": 0,
+          "plus_second": "3",
+          "minus_second": "1",
+          "difference": "2"
+        },
+        {
+          "ab": 1,
+          "av": 0,
+          "bv": 1,
+          "plus_second": "-1",
+          "minus_second": "1",
+          "difference": "-2"
+        },
+        {
+          "ab": 0,
+          "av": 1,
+          "bv": 1,
+          "plus_second": "3",
+          "minus_second": "1",
+          "difference": "2"
+        },
+        {
+          "ab": 1,
+          "av": 1,
+          "bv": 1,
+          "plus_second": "3",
+          "minus_second": "1",
+          "difference": "2"
+        }
+      ],
+      "general_graph_identity": "g_second(0)=2*J^2*E[sum_v n_av*n_bv+n_ab*(D_a-D_b)]",
+      "fixed_leaves_N_ge_3_remove_direct_edge_term": true,
+      "fixed_equal_degrees_also_sufficient_for_correction_to_vanish": true
+    },
+    "operator_certificate": {
+      "full_dimension": 384,
+      "graph_dimension": 6,
+      "distance_two_projector_diagonal": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "exact_zero_orders": [
+        0,
+        1
+      ],
+      "exact_second_derivative": "2*J^2*Q_ab",
+      "mixed_kappa_J_coefficient_zero_in_each_preparation": true,
+      "arbitrary_real_J_and_kappa_covered_symbolically": true,
+      "reference_extension_is_operator_identity": true,
+      "probe_mean_interaction": "Tr_D(eta_pm * V) = -J*I_G",
+      "at_most_two_excitation_sector_dimension": 132,
+      "exact_interaction_absolute_row_bound_at_J1": 8,
+      "universal_interaction_bound": "v=4*C*abs(J)"
+    },
+    "reference_valued_readout": {
+      "matrix_time": "1/64",
+      "unknown_graph_reference_dimensions": [
+        6,
+        3
+      ],
+      "graph_population_distance_two_exact": "12/37",
+      "graph_off_diagonal_Frobenius_norm": 0.492455869143,
+      "signed_reference_moment_trace": 7.81919070954e-05,
+      "raw_finite_time_q_estimate": 0.320274051463,
+      "signed_reference_operator_error": 2.85172804823e-06,
+      "finite_example_remainder_bound": "243/30464",
+      "finite_example_bound_uses_H_norm_9_not_all_size_K": true,
+      "QR_positive_and_bounded_by_reference_marginal": true,
+      "Delta_A_R_is_a_signed_operator_on_R_not_a_joint_state": true,
+      "graph_coherence_and_reference_not_measured": true
+    },
+    "disturbance": {
+      "matrix_time": "1/64",
+      "comparison": "unprobed vacuum data: graph evolution exp(-i*kappa*F*t)",
+      "observed": [
+        {
+          "preparation": "+X_b",
+          "graph_reference_trace_distance": 0.000107644177395,
+          "record_graph_reference_trace_distance": 0.000175985304981
+        },
+        {
+          "preparation": "-X_b",
+          "graph_reference_trace_distance": 0.000149264341477,
+          "record_graph_reference_trace_distance": 0.000155122076346
+        }
+      ],
+      "reference_marginal_exactly_preserved": true,
+      "nonselective_graph_reference_bound": "min(1,(exp(2*v*t)-1-2*v*t)/2)",
+      "nonselective_bound_at_example": 0.0399957073091,
+      "coarse_classical_record_joint_bound": "min(1,v*t)",
+      "record_joint_bound_at_example": 0.1875,
+      "coarse_bound_not_claimed_optimal": true,
+      "unknown_graph_reference_not_assumed_undisturbed": true,
+      "conditioning_on_outcome_not_claimed_nondisturbing": true
+    },
+    "finite_resource_certificate": {
+      "C": 3,
+      "J": 1,
+      "kappa": 1,
+      "K": 1889568,
+      "time_exact": "1/674664061647745843200",
+      "time_approx": 1.48221916187e-21,
+      "reference_remainder_exact": "1/22758579803951606436715775408753077125120000",
+      "q_bias_exact": "7140934453248/357046722662399",
+      "q_bias_approx": 0.02,
+      "statistical_q_tolerance": "1/20",
+      "failure_probability_at_most": "1/100",
+      "per_preparation_independent_copies": "3977878692040986948015416427379075804675760674474922786129188255798466099281920000000000",
+      "per_preparation_copies_scientific": "3.977879e+87",
+      "exp6_greater_than_400_exactly_certified": true,
+      "total_q_error_less_than": "1/10",
+      "general_copies_formula": "M >= 8*log(4/delta)/(eta^2*J^4*t^4) per preparation",
+      "all_N_data_probes_prepared_for_every_copy": true,
+      "copies_are_an_extra_source_contract_not_cloned": true,
+      "no_actual_huge_sampling_run_performed": true,
+      "inherited_K_is_deliberately_loose_not_practical_protocol_optimization": true
+    },
+    "scope_boundary": {
+      "six_tree_only_mean_distance": "E[D_ab]=3-q",
+      "same_unit_edge_fixed_degree_department_examples": [
+        {
+          "N": 12,
+          "degree_vector": [
+            1,
+            1,
+            1,
+            1,
+            3,
+            3,
+            3,
+            3,
+            3,
+            1,
+            1,
+            1
+          ],
+          "distance": 3,
+          "common_neighbors": 0
+        },
+        {
+          "N": 12,
+          "degree_vector": [
+            1,
+            1,
+            1,
+            1,
+            3,
+            3,
+            3,
+            3,
+            3,
+            1,
+            1,
+            1
+          ],
+          "distance": 5,
+          "common_neighbors": 0
+        }
+      ],
+      "same_q_does_not_determine_general_mean_distance": true,
+      "not_claiming_all_time_data_channels_of_examples_equal": true,
+      "original_data_unknown_states_not_preserved_by_probe_preparation": true,
+      "operational_three_dimensional_geometry_not_derived": true
+    }
+  },
+  "scope": {
+    "same_continuous_H_graph_F_plus_controlled_SWAP": true,
+    "all_size_fixed_leaf_distance_two_population": true,
+    "one_data_port_Z_measurement_only": true,
+    "graph_reference_arbitrary_under_independent_probe_preparation": true,
+    "complete_reference_signed_moment_bound": true,
+    "nonzero_graph_backaction_explicitly_allowed": true,
+    "all_probe_preparations_shared_X_Z_reference_and_clock_are_inputs": true,
+    "repeated_identical_graph_source_is_an_input": true,
+    "no_graph_measurement_or_distance_oracle_used": true,
+    "autonomous_device_derived": false,
+    "arbitrary_original_data_preserved": false,
+    "general_full_path_distance_reconstructed": false,
+    "physical_spatial_dimension_derived": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

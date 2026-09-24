@@ -1,0 +1,233 @@
+{
+  "round": 459,
+  "baseline_round": 457,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "observations": {
+    "odd_sector_intertwining": {
+      "full_sectors": [
+        {
+          "raw_qubits": 1,
+          "private_dimension": 1,
+          "code_dimension": 2
+        },
+        {
+          "raw_qubits": 3,
+          "private_dimension": 2,
+          "code_dimension": 4
+        },
+        {
+          "raw_qubits": 5,
+          "private_dimension": 5,
+          "code_dimension": 10
+        },
+        {
+          "raw_qubits": 7,
+          "private_dimension": 14,
+          "code_dimension": 28
+        }
+      ],
+      "independently_checked_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "unknown_reference_dimension": 3,
+      "arbitrary_G_private_reference_correlations_allowed": true,
+      "formula": "K_AB = ((n_A*n_B-1)/2) I + S_GA_GB, tensored with I_private",
+      "previous_three_by_three_formula_is_reused_not_new": true
+    },
+    "network_and_actual_effect": {
+      "raw_block_sizes": [
+        3,
+        3,
+        3,
+        1,
+        1
+      ],
+      "microscopic_constant_edges": 22,
+      "discarded_global_phase_generator": 9,
+      "original_effective_dimension": 32,
+      "private_dimension": 8,
+      "full_raw_dimension": 2048,
+      "full_encoded_columns_checked": 256,
+      "compression_without_leakage_check_used": false,
+      "two_composite_reader_effect": "total-j=0 projection on six actual qubits",
+      "six_qubit_effect_rank": 5,
+      "both_exposed_qubits_and_actual_effect_lift": true
+    },
+    "inherited_readout": {
+      "model_time": "3/2",
+      "actual_raw_probabilities": [
+        0.169790866874,
+        0.86634201203
+      ],
+      "raw_contrast": 0.696551145156,
+      "all_old_private_qubits_retained": 3,
+      "numerical_reference_dimension": 2,
+      "generalized_unknown_reference_covered_by_operator_intertwining": true,
+      "gauge_independent_source_readout": true,
+      "source_readout_certificate_round": 431,
+      "source_results_sha256": "a9334849dd50dbb8609a2efa37ee14333c6a2ab9bf92bbf86b84927cbf6c487b",
+      "inherited_contrast_strict_lower": "2/3",
+      "inherited_window": [
+        "17/12",
+        "19/12"
+      ],
+      "inherited_window_contrast_strict_lower": "1/2",
+      "raw_evolution_steps": 32,
+      "raw_evolution_series_degree": 24,
+      "raw_series_vector_error_upper": 2.11992830323e-19,
+      "round431_numeric_signal_is_reused_not_new": true,
+      "initial_source_and_singlet_resources_are_inputs": true,
+      "complete_readout_instrument_or_singlet_supply_constructed": false
+    },
+    "recursive_two_level_interface": {
+      "raw_qubits": 9,
+      "root_exposed_dimension": 2,
+      "root_private_dimension": 16,
+      "full_code_dimension": 32,
+      "new_parent_private_qubits": 1,
+      "inherited_child_private_qubits": 3,
+      "arbitrary_private_states_and_references_preserved_by_external_rule": true,
+      "private_tree_node_dynamics_factorize_under_this_hierarchy": true,
+      "private_memory_drives_exposed_exchange_under_this_hierarchy": false,
+      "current_L_communication_requires_access_to_constituent_G_interfaces": true,
+      "all_ancestor_codes_claimed_preserved_during_readout": false
+    },
+    "unprepared_sector_boundary": {
+      "raw_cross_generator_spectrum": [
+        -1,
+        0,
+        2,
+        3
+      ],
+      "degeneracies": [
+        3,
+        2,
+        6,
+        5
+      ],
+      "time": "pi/2",
+      "partner_one_probability_in_prepared_half_sector": 0,
+      "partner_one_probability_in_highest_weight_three_halves_sector": 1,
+      "whole_three_halves_sector_evolution": "i I",
+      "all_odd_block_states_claimed_to_define_qubit_port": false,
+      "collective_J_squared_sector_is_required_input": true
+    },
+    "scale_and_resource_contract": {
+      "rows": [
+        {
+          "depth": 0,
+          "raw_qubits_per_block": 1,
+          "private_qubits_per_block": 0,
+          "total_code_dimension": "2",
+          "hierarchical_code_fraction_of_raw_space": "1",
+          "raw_pairs_per_isolated_contact": 1,
+          "five_block_chain_raw_pairs": 4,
+          "max_uniform_coefficient_for_kappa_one": "1/2",
+          "model_read_time_for_kappa_one": "3"
+        },
+        {
+          "depth": 1,
+          "raw_qubits_per_block": 3,
+          "private_qubits_per_block": 1,
+          "total_code_dimension": "4",
+          "hierarchical_code_fraction_of_raw_space": "1/2",
+          "raw_pairs_per_isolated_contact": 9,
+          "five_block_chain_raw_pairs": 36,
+          "max_uniform_coefficient_for_kappa_one": "1/6",
+          "model_read_time_for_kappa_one": "9"
+        },
+        {
+          "depth": 2,
+          "raw_qubits_per_block": 9,
+          "private_qubits_per_block": 4,
+          "total_code_dimension": "32",
+          "hierarchical_code_fraction_of_raw_space": "1/16",
+          "raw_pairs_per_isolated_contact": 81,
+          "five_block_chain_raw_pairs": 324,
+          "max_uniform_coefficient_for_kappa_one": "1/18",
+          "model_read_time_for_kappa_one": "27"
+        },
+        {
+          "depth": 3,
+          "raw_qubits_per_block": 27,
+          "private_qubits_per_block": 13,
+          "total_code_dimension": "16384",
+          "hierarchical_code_fraction_of_raw_space": "1/8192",
+          "raw_pairs_per_isolated_contact": 729,
+          "five_block_chain_raw_pairs": 2916,
+          "max_uniform_coefficient_for_kappa_one": "1/54",
+          "model_read_time_for_kappa_one": "81"
+        },
+        {
+          "depth": 4,
+          "raw_qubits_per_block": 81,
+          "private_qubits_per_block": 40,
+          "total_code_dimension": "2199023255552",
+          "hierarchical_code_fraction_of_raw_space": "1/1099511627776",
+          "raw_pairs_per_isolated_contact": 6561,
+          "five_block_chain_raw_pairs": 26244,
+          "max_uniform_coefficient_for_kappa_one": "1/162",
+          "model_read_time_for_kappa_one": "243"
+        },
+        {
+          "depth": 5,
+          "raw_qubits_per_block": 243,
+          "private_qubits_per_block": 121,
+          "total_code_dimension": "5316911983139663491615228241121378304",
+          "hierarchical_code_fraction_of_raw_space": "1/2658455991569831745807614120560689152",
+          "raw_pairs_per_isolated_contact": 59049,
+          "five_block_chain_raw_pairs": 236196,
+          "max_uniform_coefficient_for_kappa_one": "1/486",
+          "model_read_time_for_kappa_one": "729"
+        }
+      ],
+      "recursion": "q_(l+1)=1+3*q_l; n_l=3^l; q_l=(n_l-1)/2",
+      "general_raw_site_coefficient_load": "sum_b n_b*abs(J_ab)",
+      "isolated_pair_exchange_time_lower": "abs(theta)*max(n_A,n_B)/kappa",
+      "equal_scale_reader_time_at_max_allowed_strength": "3*n/kappa",
+      "budget_is_explicit_additional_model_input": true,
+      "coefficient_budget_identified_with_thermodynamic_work": false,
+      "finite_depth_only": true,
+      "autonomous_code_preparation_claimed": false,
+      "physical_fractal_dimension_inferred_from_branching": false
+    }
+  },
+  "scope": {
+    "exact_recursive_exchange_port_intertwining": true,
+    "actual_existing_continuous_reader_lifted": true,
+    "private_multiplicities_and_unknown_references_retained": true,
+    "collective_spin_and_noiseless_subsystem_theory_are_prior_tools": true,
+    "new_signal_value_or_new_exchange_encoding_discovery_claimed": false,
+    "G_and_old_L_roles_identified": false,
+    "full_recursive_cognitive_functional_closure_proved": false,
+    "arbitrary_unprepared_raw_states_accepted": false,
+    "internal_preparation_and_contact_pattern_derived": false,
+    "independent_from_round_458": true,
+    "physical_space_dimension_derived": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

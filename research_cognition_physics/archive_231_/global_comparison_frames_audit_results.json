@@ -1,0 +1,357 @@
+{
+  "round": 451,
+  "baseline_round": 450,
+  "date": "2026-09-24",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "observations": {
+    "permutation_branch": {
+      "exhaustive_small_cases": [
+        {
+          "subjects": 2,
+          "candidate_counts": [
+            1
+          ],
+          "compatible_families": 1
+        },
+        {
+          "subjects": 3,
+          "candidate_counts": [
+            1,
+            1
+          ],
+          "compatible_families": 0
+        },
+        {
+          "subjects": 4,
+          "candidate_counts": [
+            2,
+            2,
+            2
+          ],
+          "compatible_families": 1
+        },
+        {
+          "subjects": 6,
+          "candidate_counts": [
+            10,
+            10,
+            10,
+            10,
+            10
+          ],
+          "compatible_families": 0
+        }
+      ],
+      "arbitrary_N_power_of_two_requirement_is_analytic": true,
+      "binary_address_length_is_not_spatial_dimension": true
+    },
+    "coherent_branch": {
+      "exact_integer_certificates": [
+        {
+          "order": 2,
+          "ordered_pair_identities": 4,
+          "ordered_triple_identities": 8,
+          "uniform_joint_eigenbasis_weight": "1/2"
+        },
+        {
+          "order": 4,
+          "ordered_pair_identities": 16,
+          "ordered_triple_identities": 64,
+          "uniform_joint_eigenbasis_weight": "1/4"
+        },
+        {
+          "order": 8,
+          "ordered_pair_identities": 64,
+          "ordered_triple_identities": 512,
+          "uniform_joint_eigenbasis_weight": "1/8"
+        },
+        {
+          "order": 12,
+          "ordered_pair_identities": 144,
+          "ordered_triple_identities": 1728,
+          "uniform_joint_eigenbasis_weight": "1/12"
+        }
+      ],
+      "necessity_uses_square_N_by_N_matrix": true,
+      "existence_iff_real_Hadamard_proved": true
+    },
+    "raw_operator_scope": {
+      "rows": [
+        {
+          "subjects": 4,
+          "local_raw_dimension": 25,
+          "all_unordered_pairs": 6,
+          "tensor_factor_certificates_exact": true
+        },
+        {
+          "subjects": 12,
+          "local_raw_dimension": 169,
+          "all_unordered_pairs": 66,
+          "tensor_factor_certificates_exact": true
+        }
+      ],
+      "packet_commutator_reduced_by_exact_tensor_identity": true,
+      "full_unknown_states_and_references_covered": true,
+      "huge_pair_matrix_or_random_state_sampling_used": false
+    },
+    "paley_twelve": {
+      "character_modulus": 11,
+      "hadamard": [
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          -1,
+          1,
+          -1,
+          1,
+          1,
+          1,
+          -1,
+          -1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -1,
+          1,
+          -1,
+          1,
+          1,
+          1,
+          -1,
+          -1,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          -1,
+          -1,
+          1,
+          -1,
+          1,
+          1,
+          1,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1,
+          -1,
+          -1,
+          1,
+          -1,
+          1,
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -1,
+          1,
+          -1,
+          -1,
+          1,
+          -1,
+          1,
+          1,
+          1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -1,
+          -1,
+          1,
+          -1,
+          -1,
+          1,
+          -1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          -1,
+          -1,
+          -1,
+          1,
+          -1,
+          -1,
+          1,
+          -1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          -1,
+          -1,
+          -1,
+          1,
+          -1,
+          -1,
+          1,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          -1,
+          -1,
+          -1,
+          1,
+          -1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1,
+          1,
+          1,
+          -1,
+          -1,
+          -1,
+          1,
+          -1,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          -1,
+          1,
+          1,
+          1,
+          -1,
+          -1,
+          -1,
+          1,
+          -1,
+          -1
+        ]
+      ],
+      "coherent_column_witness": {
+        "frame": 1,
+        "input_marker": 2,
+        "denominator": 12,
+        "output_numerators": [
+          0,
+          0,
+          0,
+          4,
+          4,
+          4,
+          -4,
+          4,
+          4,
+          -4,
+          -4,
+          4
+        ],
+        "support": 9
+      },
+      "permutation_dictionary_possible": false,
+      "coherent_dictionary_possible": true,
+      "all_multiples_of_four_existence_claimed": false
+    },
+    "padding": {
+      "subjects": 6,
+      "old_marker_dimension": 6,
+      "padded_marker_dimension": 8,
+      "old_raw_subject_dimension": 49,
+      "new_raw_subject_dimension": 81,
+      "extra_marker_levels": 2,
+      "all_ordered_triple_identities": 216,
+      "old_unknown_input_embedding_isometric": true,
+      "reference_dimension_checked": 3,
+      "arbitrary_reference_extension_is_analytic": true,
+      "old_subspace_closed_under_all_new_comparisons": false,
+      "witness": {
+        "frame": 3,
+        "marker": 5,
+        "becomes_reserve_marker": 6
+      },
+      "autonomous_joining_or_free_preparation_proved": false
+    },
+    "spectator_boundary": {
+      "subjects": 4,
+      "all_D_registers_blank": true,
+      "exact_basis_counterexample": {
+        "markers_before": [
+          0,
+          2,
+          0,
+          0
+        ],
+        "markers_after": [
+          3,
+          1,
+          0,
+          0
+        ],
+        "h_R_before": 4,
+        "h_R_after": 2
+      },
+      "pairwise_compatible_frames_imply_full_network_Tij_symmetry": false
+    }
+  },
+  "scope": {
+    "consistent_pair_frame_contract_classified": true,
+    "permutation_and_coherent_dictionaries_distinguished": true,
+    "minimal_marker_dimension_requirement_explicit": true,
+    "full_local_record_and_exchange_tensor_identities_verified": true,
+    "explicit_paley_twelve_and_padded_six_certificates": true,
+    "pair_contract_not_full_network_symmetry_verified": true,
+    "soca_functional_interface_motivation_distinguished_from_full_state_identification": true,
+    "comparison_frames_dynamically_generated": false,
+    "new_record_potentials_derived_from_429": false,
+    "full_soca_architecture_implemented": false,
+    "all_Hadamard_orders_classified": false,
+    "exact_global_identification_adopted_as_cognitive_axiom": false,
+    "full_spatial_dimension_or_GR_generated": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

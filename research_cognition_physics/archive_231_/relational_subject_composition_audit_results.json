@@ -1,0 +1,311 @@
+{
+  "round": 453,
+  "baseline_round": 451,
+  "date": "2026-09-24",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "observations": {
+    "fixed_interface": {
+      "raw_dimension": 64,
+      "original_joint_code_dimension": 16,
+      "retained_logic_dimension": 4,
+      "discarded_gauge_dimension": 4,
+      "integer_code_columns": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          1,
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          -1,
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          -2
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "code_column_norms_squared": [
+        2,
+        6,
+        2,
+        6
+      ],
+      "vector_projection_max_error": 3.54490216726e-16,
+      "spin_not_assumed_to_be_physical_space_direction": true
+    },
+    "exact_code_retention": {
+      "integer_projection_scale": 9,
+      "all_cross_weight_commutator_gram": [
+        [
+          1344,
+          -528,
+          -528,
+          -528,
+          192,
+          192,
+          -528,
+          192,
+          192
+        ],
+        [
+          -528,
+          1344,
+          -528,
+          192,
+          -528,
+          192,
+          192,
+          -528,
+          192
+        ],
+        [
+          -528,
+          -528,
+          1344,
+          192,
+          192,
+          -528,
+          192,
+          192,
+          -528
+        ],
+        [
+          -528,
+          192,
+          192,
+          1344,
+          -528,
+          -528,
+          -528,
+          192,
+          192
+        ],
+        [
+          192,
+          -528,
+          192,
+          -528,
+          1344,
+          -528,
+          192,
+          -528,
+          192
+        ],
+        [
+          192,
+          192,
+          -528,
+          -528,
+          -528,
+          1344,
+          192,
+          192,
+          -528
+        ],
+        [
+          -528,
+          192,
+          192,
+          -528,
+          192,
+          192,
+          1344,
+          -528,
+          -528
+        ],
+        [
+          192,
+          -528,
+          192,
+          192,
+          -528,
+          192,
+          -528,
+          1344,
+          -528
+        ],
+        [
+          192,
+          192,
+          -528,
+          192,
+          192,
+          -528,
+          -528,
+          -528,
+          1344
+        ]
+      ],
+      "constraint_rank_mod1009": 8,
+      "kernel": "all nine J_ab equal",
+      "nonzero_gram_eigenvalues": [
+        432,
+        2592
+      ],
+      "multiplicities": [
+        4,
+        4
+      ],
+      "physical_commutator_norm_squared": "16*(||u||^2+||v||^2)+32*||D||_F^2",
+      "mean_initial_leakage_t2_coefficient": "(||u||^2+||v||^2)/2+||D||_F^2",
+      "arbitrary_real_weights_classified_not_sampled": true
+    },
+    "autonomous_logic": {
+      "cross_projection_max_error": 1.19776442526e-15,
+      "gauge_eigenvalues": [
+        -3,
+        1
+      ],
+      "A_coefficient_matrix": [
+        [
+          1,
+          -3,
+          -1
+        ],
+        [
+          1,
+          3,
+          -1
+        ],
+        [
+          1,
+          0,
+          2
+        ]
+      ],
+      "non_scalar_K_constraint_rank_mod1009": 8,
+      "gauge_independent_reduced_flow_iff_K_scalar": true,
+      "K_scalar_iff_all_cross_weights_equal": true,
+      "compressed_H_automatically_equal_to_true_restricted_dynamics": false,
+      "product_gauge_inputs_already_detect_failure": true
+    },
+    "sufficient_branch": {
+      "uniform_cross_weight": 2,
+      "nontrivial_gauge_interaction_allowed": true,
+      "logical_generator_is_sum_of_two_local_generators": true,
+      "full_input_intertwining_error": 6.67057098549e-15,
+      "reference_dimension": 3,
+      "correlated_mixed_reference_error": 6.33484857356e-17,
+      "exact_operator_proof_covers_any_reference": true
+    },
+    "physical_gauge_witness": {
+      "cross_edge": [
+        0,
+        5
+      ],
+      "time": "pi/4",
+      "same_initial_logic": "|0_L 0_L>",
+      "gauge_inputs": [
+        "|0_G 0_G>",
+        "|0_G 1_G>"
+      ],
+      "initial_complete_subjects_independent": true,
+      "fixed_local_A_effect": "(I + Y_relation,A/sqrt(3))/2",
+      "probabilities": [
+        {
+          "numerator": 7,
+          "denominator": 12,
+          "decimal": 0.583333333333
+        },
+        {
+          "numerator": 5,
+          "denominator": 12,
+          "decimal": 0.416666666667
+        }
+      ],
+      "exact_probability_difference": {
+        "numerator": 1,
+        "denominator": 6,
+        "decimal": 0.166666666667
+      },
+      "original_joint_code_leakage": [
+        {
+          "numerator": 1,
+          "denominator": 3,
+          "decimal": 0.333333333333
+        },
+        {
+          "numerator": 1,
+          "denominator": 6,
+          "decimal": 0.166666666667
+        }
+      ],
+      "all_time_probability_difference": "sin(2*t)/6",
+      "window": "[pi/4-1/8,pi/4+1/8]",
+      "window_lower": {
+        "numerator": 31,
+        "denominator": 192,
+        "decimal": 0.161458333333
+      },
+      "physical_effect_defined_on_all_raw_states": true,
+      "postselection_or_physical_PHP_projection_used": false,
+      "preparation_and_readout_still_inputs": true
+    },
+    "boundary": {
+      "aligned_three_pair_H_leaks_during_evolution": true,
+      "endpoint_time": "pi/2",
+      "endpoint": "i * SWAP_gauge * SWAP_logic",
+      "endpoint_covers_full_unknown_code_and_reference": true,
+      "exact_endpoint_exchange_excluded_by_theorem": false,
+      "pulsed_encoded_entangling_gates_excluded": false,
+      "enlarged_interface_or_prepared_gauge_excluded": false,
+      "low_energy_434_436_results_preserved": true
+    }
+  },
+  "scope": {
+    "two_fixed_three_qubit_relational_interfaces_only": true,
+    "arbitrary_static_real_pair_exchange_weights": true,
+    "exact_all_time_code_retention_classified": true,
+    "unknown_gauge_independent_compressed_logic_classified": true,
+    "exact_code_retention_already_forces_no_cross_logical_interaction": true,
+    "nontrivial_macro_interaction_obtained": false,
+    "all_possible_relational_organizations_ruled_out": false,
+    "original_logic_interface_preservation_imposed_as_cognitive_axiom": false,
+    "new_subsystem_or_exchange_gate_theory_claimed": false,
+    "depends_on_round_452": false,
+    "full_soca_or_spatial_dimension_or_GR_generated": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

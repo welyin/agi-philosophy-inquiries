@@ -1,0 +1,155 @@
+{
+  "round": 465,
+  "baseline_round": 463,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "observations": {
+    "all_vertex_flip_count": {
+      "vertices_range": [
+        2,
+        6
+      ],
+      "labeled_trees": 1441,
+      "ordered_vertex_pairs": 50068,
+      "directed_flips": 4572,
+      "no_leaf_condition": true,
+      "change_per_flip_at_most_one": true,
+      "changed_distance_requires_removed_path_edge": true,
+      "flip_count_bound": "2*d_G(v,b)*(C-1)^2",
+      "graph_weighted_row_bound": "2*(C-1)^2",
+      "maximum_observed_weighted_row": "5/4",
+      "arbitrary_size_claim_from_analytic_proof": true
+    },
+    "exact_sector_and_generators": {
+      "full_dimension": 384,
+      "vacuum_plus_excitation_dimension": 42,
+      "full_intertwining_error": 0.0,
+      "data_positions_can_be_internal_vertices": true,
+      "D": "d_G(v,b)+1",
+      "generator_bound": "B=2*|kappa|*(C-1)^2+3*C*|J|/4",
+      "weighted_hopping_norm_bound": "2*C*|J|",
+      "cases": [
+        {
+          "J": "1",
+          "kappa": "1",
+          "B": "41/4",
+          "antihermitian_norm": 1.64264794443
+        },
+        {
+          "J": "1/2",
+          "kappa": "-1",
+          "B": "73/8",
+          "antihermitian_norm": 1.14264462164
+        },
+        {
+          "J": "-2",
+          "kappa": "1/3",
+          "B": "43/6",
+          "antihermitian_norm": 2.09871953736
+        }
+      ]
+    },
+    "actual_reception": {
+      "t": "1/50",
+      "C": 3,
+      "J": 1,
+      "kappa": 1,
+      "initial_distance_minimum": 3,
+      "unknown_far_graph_dimension": 4,
+      "largest_reception_probability": 3.9072942079e-11,
+      "probability_bound": 0.0013561360066,
+      "arbitrary_graph_input_weighted_inequality_min_eigenvalue": 0.00135613596753,
+      "bound_formula": "p_b <= exp(2*B*abs(t))*min(1,2*C*abs(J*t))^2*Tr[rho_G/(d_G(a,b)+1)^2]",
+      "J_zero_exact_no_reception": true,
+      "graph_not_measured": true
+    },
+    "unknown_source_graph_reference": {
+      "initial_source_graph_reference_dimensions": [
+        2,
+        4,
+        3
+      ],
+      "source_graph_reference_product_not_assumed": true,
+      "all_other_data_initially_zero": true,
+      "receiver_reads_its_own_fixed_subject_factor": true,
+      "no_graph_localization_channel_or_postselection": true,
+      "encoding_channels": [
+        "identity",
+        "phase",
+        "amplitude_damping_half"
+      ],
+      "channel_bound": 0.281773768628,
+      "values": [
+        {
+          "channel": "identity",
+          "probability": 1.46538886952e-09,
+          "receiver_reference_replacer_distance": 1.05707191607e-05,
+          "actual_p_block_bound": 3.8281863341e-05
+        },
+        {
+          "channel": "phase",
+          "probability": 1.46538886952e-09,
+          "receiver_reference_replacer_distance": 1.05707191607e-05,
+          "actual_p_block_bound": 3.8281863341e-05
+        },
+        {
+          "channel": "amplitude_damping_half",
+          "probability": 7.32694434762e-10,
+          "receiver_reference_replacer_distance": 7.47462695595e-06,
+          "actual_p_block_bound": 2.70690616828e-05
+        },
+        {
+          "comparison": "identity versus phase",
+          "trace_distance": 2.11414369377e-05
+        },
+        {
+          "comparison": "identity versus amplitude_damping_half",
+          "trace_distance": 3.09609234798e-06
+        }
+      ]
+    },
+    "coherent_message_boundary": {
+      "model": "two-subject tree with same data SWAP, F=0",
+      "t": "1/5",
+      "excited_input_reception_probability": 0.0394695029986,
+      "plus_minus_message_trace_distance": 0.198669330795,
+      "exact_formula": "D_plus_minus=|sin(J*t)|=sqrt(p_one)",
+      "reception_probability_not_general_trace_distance": true
+    },
+    "arbitrary_size_certificate": {
+      "C": 3,
+      "J": "1",
+      "kappa": "1",
+      "minimum_initial_distance": 100,
+      "t": "1/100",
+      "B": "41/4",
+      "amplitude_upper": "24/36259",
+      "probability_upper": "576/1314715081",
+      "two_encoding_trace_distance_upper": "1741584/1314715081",
+      "probability_less_than": "1/2000000",
+      "two_encoding_distance_less_than": "7/5000",
+      "no_large_Hilbert_matrix_built": true,
+      "continuous_time_exact_zero_cone_claimed": false,
+      "logarithmic_distance_time_bound_not_a_linear_light_cone": true
+    }
+  },
+  "scope": {
+    "same_autonomous_H_as_rounds_440_to_443": true,
+    "initial_bounded_degree_tree_family_is_input": true,
+    "all_non_source_data_zero_is_additional_contract": true,
+    "arbitrary_source_graph_reference_state_allowed": true,
+    "arbitrary_local_source_CPTP_encodings_allowed": true,
+    "arbitrary_unknown_background_data_bound_proved": false,
+    "predetermined_common_chain_used": false,
+    "threshold_used": false,
+    "graph_distance_measured_or_postselected": false,
+    "internal_preparation_or_readout_device_derived": false,
+    "spatial_dimension_derived": false,
+    "full_GR_goal_completed": false,
+    "independent_from_round_464": true,
+    "phase_closure_triggered": false
+  }
+}

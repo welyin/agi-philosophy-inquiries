@@ -1,0 +1,186 @@
+{
+  "round": 461,
+  "baseline_round": 459,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "observations": {
+    "general_effect": {
+      "numerical_auxiliaries": [
+        {
+          "auxiliary_qubits": 1,
+          "spin_half_weight": 1.0,
+          "spin_three_halves_weight": 0.0,
+          "cross_sector_coherence_norm": 0.0
+        },
+        {
+          "auxiliary_qubits": 3,
+          "spin_half_weight": 0.55643513599,
+          "spin_three_halves_weight": 0.44356486401,
+          "cross_sector_coherence_norm": 0.253472856705
+        },
+        {
+          "auxiliary_qubits": 5,
+          "spin_half_weight": 0.289535233414,
+          "spin_three_halves_weight": 0.507959066353,
+          "cross_sector_coherence_norm": 0.13483883163
+        }
+      ],
+      "moment_formula_covers_arbitrary_finite_SU2_representations": true,
+      "arbitrary_cross_j_and_multiplicity_coherences_allowed": true,
+      "acceptance_effect_insensitive_to_cross_auxiliary_j_coherence": true,
+      "parity_mismatch_gives_zero": true,
+      "raw_helper_preparation_not_assumed_invariant": true
+    },
+    "minimax": {
+      "value": "1/3",
+      "fixed_auxiliary_may_have_arbitrary_finite_size": true,
+      "witness_inputs_are_independent_and_parallel": true,
+      "finite_six_direction_design_is_exact": true,
+      "sampled_auxiliary_checks": [
+        {
+          "auxiliary_qubits": 1,
+          "exact_design_average": 0.333333333333,
+          "one_of_six_independent_aligned_inputs_probability": 0.257442634046
+        },
+        {
+          "auxiliary_qubits": 3,
+          "exact_design_average": 0.248031002403,
+          "one_of_six_independent_aligned_inputs_probability": 0.20780518367
+        },
+        {
+          "auxiliary_qubits": 5,
+          "exact_design_average": 0.187635561219,
+          "one_of_six_independent_aligned_inputs_probability": 0.168647308467
+        }
+      ],
+      "attaining_auxiliary": "one qubit I/2",
+      "pure_attaining_auxiliary": "three qubits V3 (|G0,L0>+|G1,L1>)/sqrt(2)",
+      "pure_attainment_retains_its_purification_inside_helper": true,
+      "attainment_is_sector_weight_not_unknown_state_preserving_success": true,
+      "attaining_effect": "P_s + P_t/3",
+      "independent_input_probability": "1/2 - dot(r_A,r_B)/6",
+      "independent_probability_range": [
+        "1/3",
+        "2/3"
+      ],
+      "arbitrary_joint_input_probability_range": [
+        "1/3",
+        "1"
+      ],
+      "auxiliary_qubit_bloch_radius_worst_case": "(1-r)/3",
+      "upper_bound_is_general_analytic_not_a_state_scan": true
+    },
+    "conservation_and_error": {
+      "raw_qubits": 7,
+      "exact_projector_denominator": -23040,
+      "spin_half_rank": 28,
+      "every_pair_exchange_commutes_by_integer_certificate": true,
+      "permanently_present_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          2,
+          6
+        ]
+      ],
+      "independent_input_spin_half_weight": "1/3",
+      "weight_at_all_times": "1/3",
+      "worst_input_trace_distance_to_every_target_supported_state_at_least": "2/3",
+      "half_diamond_distance_to_every_target_supported_channel_at_least": "2/3",
+      "at_least_one_input_assertion_not_every_input": true,
+      "all_helper_degrees_in_target_subject": true
+    },
+    "postselection": {
+      "reference_initial_state": [
+        "1/2",
+        "1/2"
+      ],
+      "success_probability": "1/2",
+      "reference_success_numerator": [
+        6,
+        12
+      ],
+      "reference_success_denominator": 18,
+      "reference_success_state": [
+        "1/3",
+        "2/3"
+      ],
+      "reference_trace_distance_change": "1/6",
+      "unknown_state_isometry_on_success_proved": false,
+      "failed_branch_cannot_reenter_half_sector_under_same_closed_exchange": true,
+      "measurement_implementation_not_assumed_free": true
+    },
+    "alternative_interface": {
+      "physical_qubits": 7,
+      "initial_full_code_columns": 32,
+      "spin_sectors": [
+        "1/2",
+        "3/2"
+      ],
+      "multiplicities": [
+        14,
+        14
+      ],
+      "coherent_total_dimension": 84,
+      "arbitrary_unknown_reference_dimension_checked": 3,
+      "old_private_L_and_G_information_not_discarded": true,
+      "all_fixed_pair_exchange_Hamiltonians_preserve_interface": true,
+      "old_three_qubit_codes_not_required_preserved": true,
+      "all_j_coherences_are_kept_as_quantum_state": true,
+      "actual_private_record_function_reused_from_round": 431,
+      "arbitrary_control_and_full_tomography_not_derived": true,
+      "special_preparation_into_global_half_sector_not_required": true
+    },
+    "coherence_and_new_partner": {
+      "old_input": "A=V3|G0,L0>, B=V3|G0,L0>, helper=I/2",
+      "new_partner": "one independently prepared |0> qubit",
+      "alignment_is_an_explicit_preparation_relation": true,
+      "unknown_qubit_cloning_not_used": true,
+      "actual_effect": "total singlet of old A three spins and new qubit",
+      "probability_without_sector_dephasing": "0",
+      "probability_after_sector_dephasing": "1/18",
+      "exact_integer_numerator": 2,
+      "exact_integer_denominator": 36,
+      "arbitrary_unreachable_84_dimensional_input_used": false,
+      "not_just_classical_j_weights_in_alternative_interface": true
+    }
+  },
+  "scope": {
+    "arbitrary_finite_fixed_independent_auxiliary_covered": true,
+    "exact_minimax_for_global_spin_half_target": "1/3",
+    "all_helpers_retained_inside_specified_target_subject": true,
+    "unknown_subjects_cannot_compose_claimed": false,
+    "larger_coherent_continuously_usable_interface_constructed": true,
+    "initial_contacts_and_preparations_are_inputs": true,
+    "independent_of_round_460": true,
+    "complete_recursive_cognitive_architecture_proved": false,
+    "three_dimensional_space_derived": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

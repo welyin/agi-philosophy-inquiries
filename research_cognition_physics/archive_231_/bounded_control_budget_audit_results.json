@@ -1,0 +1,162 @@
+{
+  "round": 415,
+  "scientific_baseline": 414,
+  "scope": "Finite bounded control generators give compact budget sublevels under an explicit measurable convex-control contract; compactness does not make exact endpoint cost or scaling continuous in process distinguishability",
+  "dyson": {
+    "protocol_count": 18,
+    "horizon": 1.7,
+    "order": 8,
+    "maximum_error": 2.7245629543259693e-05,
+    "analytic_tail_bound": 0.000393730598641258,
+    "maximum_unitarity_error": 1.6145107406093165e-15,
+    "largest_grade_to_majorant_ratio": 0.7040160122528072
+  },
+  "finite_word_cover": {
+    "order": 6,
+    "nonempty_word_count": 126,
+    "mesh": 0.0001,
+    "coefficient_degree_bounds_passed": true,
+    "independent_polynomial_error": 2.255140518769849e-16,
+    "quantized_endpoint_error": 0.00016331595340223173,
+    "analytic_cover_error": 0.006406929778672032
+  },
+  "inverse_protocol": {
+    "endpoint_error": 1.3373672240339706e-15,
+    "cost_forward": 0.8999999999999999,
+    "cost_inverse": 0.8999999999999999
+  },
+  "measurable_control_limit": [
+    {
+      "cycles": 4,
+      "error": 0.09166904068936294,
+      "analytic_bound": 0.10562500000000001,
+      "integrated_l1_cost": 1.3
+    },
+    {
+      "cycles": 16,
+      "error": 0.02284611416416101,
+      "analytic_bound": 0.026406250000000003,
+      "integrated_l1_cost": 1.3
+    },
+    {
+      "cycles": 64,
+      "error": 0.005710416193657986,
+      "analytic_bound": 0.006601562500000001,
+      "integrated_l1_cost": 1.3
+    }
+  ],
+  "recurrent_injective_example": {
+    "generator_count": 2,
+    "hilbert_dimension": 4,
+    "parameter_cost": "abs(s)+abs(t)",
+    "channel_endpoint_injectivity_proved_analytically": true,
+    "sequence": [
+      {
+        "p": 1,
+        "q": 1,
+        "pell_residual": -1,
+        "exact_minimum_cost": 6.283185307179586,
+        "phase_remainder": 2.602580569137146,
+        "full_process_half_diamond": 0.9639025328498774,
+        "choi_trace_distance": 0.8347640802201582,
+        "half_scaled_witness_distance": 0.9999999999999998
+      },
+      {
+        "p": 7,
+        "q": 5,
+        "pell_residual": -1,
+        "exact_minimum_cost": 31.41592653589793,
+        "phase_remainder": 0.4465322313265571,
+        "full_process_half_diamond": 0.22141584737648265,
+        "choi_trace_distance": 0.19175174862849204,
+        "half_scaled_witness_distance": 0.9999999999999998
+      },
+      {
+        "p": 41,
+        "q": 29,
+        "pell_residual": -1,
+        "exact_minimum_cost": 182.212373908208,
+        "phase_remainder": 0.07661281882219677,
+        "full_process_half_diamond": 0.03829704174885069,
+        "choi_trace_distance": 0.03316621104429793,
+        "half_scaled_witness_distance": 0.9999999999999998
+      },
+      {
+        "p": 239,
+        "q": 169,
+        "pell_residual": -1,
+        "exact_minimum_cost": 1061.85831691335,
+        "phase_remainder": 0.013144681606623505,
+        "full_process_half_diamond": 0.006572293487310173,
+        "choi_trace_distance": 0.00569177312113763,
+        "half_scaled_witness_distance": 0.9999999999999998
+      },
+      {
+        "p": 1393,
+        "q": 985,
+        "pell_residual": -1,
+        "exact_minimum_cost": 6188.937527571892,
+        "phase_remainder": 0.0022552708175442642,
+        "full_process_half_diamond": 0.0011276351697958305,
+        "choi_trace_distance": 0.0009765607032439682,
+        "half_scaled_witness_distance": 0.9999999999999998
+      },
+      {
+        "p": 8119,
+        "q": 5741,
+        "pell_residual": -1,
+        "exact_minimum_cost": 36071.766848518004,
+        "phase_remainder": 0.0003869432986420799,
+        "full_process_half_diamond": 0.00019347164811405807,
+        "choi_trace_distance": 0.00016755136217881796,
+        "half_scaled_witness_distance": 0.9999999999999998
+      },
+      {
+        "p": 47321,
+        "q": 33461,
+        "pell_residual": -1,
+        "exact_minimum_cost": 210241.66356353613,
+        "phase_remainder": 6.638897430821529e-05,
+        "full_process_half_diamond": 3.319448714801162e-05,
+        "choi_trace_distance": 2.874726913577413e-05,
+        "half_scaled_witness_distance": 0.9999999999999998
+      },
+      {
+        "p": 275807,
+        "q": 195025,
+        "pell_residual": -1,
+        "exact_minimum_cost": 1225378.2145326987,
+        "phase_remainder": 1.1390547207211814e-05,
+        "full_process_half_diamond": 5.695273603575118e-06,
+        "choi_trace_distance": 4.932251622198996e-06,
+        "half_scaled_witness_distance": 0.9999999999999998
+      }
+    ],
+    "choi_formula_error": 1.1102230246251565e-16,
+    "witness_formula_error": 2.220446049250313e-16,
+    "independent_direct_exponential_count": 5,
+    "independent_direct_exponential_error": 5.467887958088717e-13,
+    "composition_error": 3.1401849173675503e-16
+  },
+  "finite_bounded_generators_are_extra_input": true,
+  "measurable_convex_control_access_is_extra_input": true,
+  "compactness_requires_finite_hilbert_dimension": false,
+  "optimal_cost_attained_in_declared_measurable_control_class": true,
+  "finite_program_exact_optimality_claimed": false,
+  "endpoint_resource_cost_inferred_continuous": false,
+  "scaling_continuity_inferred_from_amplitude_adjustment": false,
+  "single_device_autonomous_implementation_proved": false,
+  "budget_identified_with_total_internal_resource_cost": false,
+  "actual_position_or_dimension_generated": false,
+  "new_cognitive_axiom_adopted": false,
+  "phase_closure_triggered": false,
+  "checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

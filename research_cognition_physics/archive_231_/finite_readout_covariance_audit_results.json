@@ -1,0 +1,204 @@
+{
+  "round": 417,
+  "scientific_baseline": 416,
+  "scope": "Global finite bounded readout closure under translations and dense rotations is trivial; this is an extra cache contract, not a cognitive axiom",
+  "tetrahedral_group": {
+    "order": 12,
+    "closed": true,
+    "rotations_exactly_orthogonal": true,
+    "carrier_permutations_exact": true,
+    "state_covariance_error": 1.3070762232663795e-16,
+    "channel_covariance_error": 1.7826341206873999e-16
+  },
+  "translation": {
+    "maximum_composition_error": 1.9229626863835638e-16,
+    "retained_reference_error": 1.4227258991147696e-16,
+    "nontrivial_sample_distance": 0.36339737550470297
+  },
+  "finite_readout_space": {
+    "frequencies": [
+      [
+        -2,
+        -2,
+        0
+      ],
+      [
+        -2,
+        0,
+        -2
+      ],
+      [
+        -2,
+        0,
+        2
+      ],
+      [
+        -2,
+        2,
+        0
+      ],
+      [
+        0,
+        -2,
+        -2
+      ],
+      [
+        0,
+        -2,
+        2
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        -2
+      ],
+      [
+        0,
+        2,
+        2
+      ],
+      [
+        2,
+        -2,
+        0
+      ],
+      [
+        2,
+        0,
+        -2
+      ],
+      [
+        2,
+        0,
+        2
+      ],
+      [
+        2,
+        2,
+        0
+      ]
+    ],
+    "complex_dimension": 13,
+    "all_tetrahedral_frequency_permutations": true,
+    "fourier_grid_gram_error": 1.480649438948381e-15,
+    "matrix_entry_character_error": 9.00743777580242e-16,
+    "rotated_frequency_outside_set": true
+  },
+  "local_chart": {
+    "phase_difference_determinant": -16,
+    "derivative_real_rank": 3,
+    "maximum_reconstruction_error": 9.614813431917819e-17,
+    "sample_count": 7,
+    "all_samples_in_declared_window": true
+  },
+  "rotation_collision": {
+    "offset": [
+      3.141592653589793,
+      0.0,
+      0.0
+    ],
+    "rotation_angle": 1.0471975511965976,
+    "input_trace_distance": 1.2246467991473535e-16,
+    "unitary_phase_identity_error": 2.4492935982947064e-16,
+    "target_overlap_absolute": 2.498001805406602e-16,
+    "target_trace_distance": 1.0,
+    "target_binary_probabilities": [
+      1.0,
+      0.0
+    ],
+    "all_decoders_proven_worst_error_at_least": 0.5,
+    "same_auxiliary_input_distance": 1.2246467991473535e-16,
+    "two_copy_input_distance": 1.731912112470988e-16
+  },
+  "decoder_checks": {
+    "random_cptp": [
+      {
+        "seed": 41701,
+        "identical_input_output_error": 9.753330140298816e-17,
+        "worst_target_error": 0.9142725220093584
+      },
+      {
+        "seed": 41702,
+        "identical_input_output_error": 1.0938131436579237e-16,
+        "worst_target_error": 0.8320118989052832
+      },
+      {
+        "seed": 41703,
+        "identical_input_output_error": 1.3770770157725021e-16,
+        "worst_target_error": 0.9194296635740036
+      }
+    ],
+    "kraus_completeness_error": 5.845992376248151e-16,
+    "midpoint_replacement_completeness_error": 0.0,
+    "midpoint_replacement_error": 2.9947902291645403e-16,
+    "midpoint_worst_target_error": 0.5,
+    "midpoint_binary_probability": 0.4999999999999999
+  },
+  "robustness": [
+    {
+      "delta": 0,
+      "input_distance": 0.0,
+      "worst_identity_error": 0.5,
+      "lower_bound": 0.5
+    },
+    {
+      "delta": 0.05,
+      "input_distance": 0.05000000000000002,
+      "worst_identity_error": 0.4750000000000001,
+      "lower_bound": 0.475
+    },
+    {
+      "delta": 0.2,
+      "input_distance": 0.20000000000000004,
+      "worst_identity_error": 0.40000000000000036,
+      "lower_bound": 0.4
+    },
+    {
+      "delta": 0.7,
+      "input_distance": 0.6999999999999998,
+      "worst_identity_error": 0.15000000000000008,
+      "lower_bound": 0.15000000000000002
+    },
+    {
+      "delta": 1,
+      "input_distance": 1.0,
+      "worst_identity_error": 0.0,
+      "lower_bound": 0.0
+    }
+  ],
+  "local_statistical_boundary": {
+    "shift": [
+      0.12,
+      -0.08,
+      0.04
+    ],
+    "local_minimum_state_eigenvalue": 0.27505556241596013,
+    "local_affine_update_error": 9.577181923793768e-17,
+    "global_positive_extension_exists": false,
+    "boundary_output_minimum_eigenvalue": -0.07483314773547878,
+    "exact_boundary_eigenvalue": -0.07483314773547883
+  },
+  "finite_summary_autonomous_closure_is_extra_input": true,
+  "global_readout_closure_theorem_proved": true,
+  "finite_direction_group_ruled_out": false,
+  "finite_window_readout_ruled_out": false,
+  "repeated_access_to_source_ruled_out": false,
+  "quantum_direction_interface_disproved": false,
+  "all_cognitive_principles_countermodel": false,
+  "physical_positions_or_dimension_generated": false,
+  "phase_closure_triggered": false,
+  "checks": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

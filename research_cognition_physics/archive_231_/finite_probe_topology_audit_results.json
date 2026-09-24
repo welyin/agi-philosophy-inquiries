@@ -1,0 +1,77 @@
+{
+  "round": 427,
+  "baseline_round": 426,
+  "status": "finite_probability_to_uniform_operation_certificate",
+  "tests_run": 5,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "observations": {
+    "actual_effect_born_formula_error": 4.440892098500626e-16,
+    "su2_first_column_reconstruction_error": 1.1565237046131221e-15,
+    "quaternion_operator_norm_identity_error": 2.220446049250313e-16,
+    "reference_detects_block_phase_probability_gap": 0.9999999999999998,
+    "actual_protocol_certificate": {
+      "common_action_bound": 4.0,
+      "measured_blocks": 4,
+      "binary_settings": 16,
+      "maximum_probability_difference": 0.0025363944552383444,
+      "analytic_infinite_tail_bound": 0.0078125,
+      "full_half_diamond_upper_bound": 0.010145577820953378,
+      "finite_truncation_operator_difference": 0.006937110277073851,
+      "sampled_entangled_input_lower_witness": 0.0023191167136419636,
+      "truncation_blocks": 18,
+      "beyond_truncation_bound": 2.9103830456733704e-11
+    },
+    "finite_shot_certificate": {
+      "error_per_probability": 0.003,
+      "requested_failure_probability": 0.01,
+      "shots_per_probability": 486892,
+      "distinct_probability_estimates": 32,
+      "total_channel_uses": 15580544,
+      "analytic_union_failure_bound": 0.009999972693514913,
+      "adverse_observed_probability_gap": 0.00599996948507675,
+      "certified_half_diamond_error": 0.047999877940307,
+      "independent_repreparations_required": true
+    },
+    "unbounded_budget_blind_family": [
+      {
+        "tested_blocks": 1,
+        "hidden_block": 2,
+        "action_over_pi": "16",
+        "all_tested_probability_differences": 0,
+        "exact_full_half_diamond_distance": 1
+      },
+      {
+        "tested_blocks": 4,
+        "hidden_block": 5,
+        "action_over_pi": "1024",
+        "all_tested_probability_differences": 0,
+        "exact_full_half_diamond_distance": 1
+      },
+      {
+        "tested_blocks": 12,
+        "hidden_block": 13,
+        "action_over_pi": "67108864",
+        "all_tested_probability_differences": 0,
+        "exact_full_half_diamond_distance": 1
+      }
+    ]
+  },
+  "scope": {
+    "compact_budget_finite_test_certificate_proved": true,
+    "test_Baire_topology_recovers_uniform_topology": true,
+    "Baire_derived_from_cognitive_principles": false,
+    "source_model_budget_promise_required": true,
+    "stationary_coherent_reference_explicit_input": true,
+    "preparation_and_readout_autonomously_generated": false,
+    "finite_test_list_is_exact_global_tomography": false,
+    "sampled_inputs_used_to_prove_diamond_bound": false,
+    "actual_position_interface_still_required": true,
+    "three_dimensional_space_unconditionally_derived": false,
+    "full_cognitive_countermodel_completed": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

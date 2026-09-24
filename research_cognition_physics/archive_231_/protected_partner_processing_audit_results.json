@@ -1,0 +1,199 @@
+{
+  "round": 449,
+  "baseline_round": 448,
+  "date": "2026-09-24",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "tests_run": 7,
+  "failures": 0,
+  "errors": 0,
+  "observations": {
+    "reward_classification": {
+      "tables_checked": 216,
+      "common_flip_condition": "a=c",
+      "independent_flip_condition": "a=b=c",
+      "ZZ_reward_coefficient": "(a-2*b+c)/4",
+      "all_matching_logic_degenerate_condition": "a=b=c",
+      "positive_entangling_example": {
+        "a": 2,
+        "b": 1,
+        "c": 2,
+        "ZZ": "1/2"
+      },
+      "positivity_alone_is_full_band_separation": false,
+      "N4_equal_energy_example": "two weight-1 reciprocal edges versus one weight-2 edge",
+      "degeneracy_imposed_as_cognitive_axiom": false
+    },
+    "intertwiner": {
+      "full_carrier_dimension": 384,
+      "code_dimension": 48,
+      "exact_integer_polynomial_identity": true,
+      "arbitrary_unknown_marker_logic_reference_covered": true,
+      "uniform_local_field_cancels_from_residual": true,
+      "full_reference_error_not_fitted_to_selected_inputs": true
+    },
+    "bounds": {
+      "j": 1,
+      "ell": 1,
+      "epsilon": "1/1024",
+      "tau_window": [
+        "999/1000",
+        "1001/1000"
+      ],
+      "all_input_window_operator_error": {
+        "numerator": 25650003,
+        "denominator": 2621440000,
+        "decimal": 0.00978469963074
+      },
+      "all_time_code_leakage_upper": {
+        "numerator": 9455625,
+        "denominator": 274877906944,
+        "decimal": 3.43993633578e-05
+      },
+      "general_all_time_amplitude": "m*abs(epsilon)+N*(abs(j)/2+abs(ell))*epsilon^2",
+      "exact_residual_norm_numerical_cross_checks": [
+        1.0,
+        1.29903810568,
+        3.82426463519,
+        9.09326673974
+      ],
+      "analytic_residual_upper": [
+        "8",
+        "46/5"
+      ],
+      "finite_N_scope": true,
+      "unlimited_scale_budget_claimed": false
+    },
+    "window_certificate": {
+      "taylor_order": 40,
+      "effective_H_norm_upper": 7,
+      "exp7_upper": 2187,
+      "Taylor_vector_remainder": {
+        "numerator": 2651730845859653471779023381601,
+        "denominator": 910101733885289622916063536611328000000000,
+        "decimal": 2.91366420602e-12
+      },
+      "probability_error": {
+        "numerator": 4826689681234984276581968746328738801121416186502896205729975313265323201,
+        "denominator": 828285166021010529829389592859023089411271855184885875045337923584000000000000000000,
+        "decimal": 5.82732841205e-12
+      },
+      "effective_t1_population_difference_lower": "9/100",
+      "effective_t1_each_message_rematching_lower": "39/100",
+      "physical_population_difference_lower": {
+        "numerator": 84450477,
+        "denominator": 1310720000,
+        "decimal": 0.0644306007385
+      },
+      "physical_each_message_rematching_lower": {
+        "numerator": 991468717,
+        "denominator": 2621440000,
+        "decimal": 0.378215300369
+      },
+      "simple_signal_strict_lower": "1/16",
+      "simple_rematching_strict_lower": "3/8",
+      "same_fixed_subject1_blank_effect": true,
+      "no_postselection": true,
+      "specified_matching_basis_and_two_message_preparations": true,
+      "all_unknown_inputs_claimed_to_send_same_signal": false
+    },
+    "full_dynamics": {
+      "Delta": 1024,
+      "g": 1,
+      "J_A": "1/1024",
+      "lambda_value": "1/1024",
+      "physical_time": 1024,
+      "operator_error": 0.00182231064129,
+      "analytic_operator_error": {
+        "numerator": 51259,
+        "denominator": 5242880,
+        "decimal": 0.00977687835693
+      },
+      "all_input_leakage": 3.32081212079e-06,
+      "physical_populations": [
+        0.547790641197,
+        0.641234706311
+      ],
+      "effective_populations": [
+        0.547790418424,
+        0.641234894286
+      ],
+      "physical_signal": 0.0934440651144,
+      "physical_rematching": [
+        0.401785305459,
+        0.393318804216
+      ],
+      "reference_dimension": 3,
+      "correlated_reference_error": 0.00138733072078,
+      "floating_point_results_only_cross_check": true
+    },
+    "coupling_and_source": {
+      "tagged_marker_logic_generator_not_tensor_sum": true,
+      "marker_rematching_and_conditional_potential_noncommute": true,
+      "pure_transport_uniform_rotation_old_partner_ideal_signal_identically_zero": true,
+      "zero_conditional_term_t1_populations": [
+        0.708073418274,
+        0.708073418274
+      ],
+      "pure_transport_full_model_signal_upper": "36*epsilon^2, every time",
+      "raw_H_contains_only_given_internal_swaps_packet_swaps_and_two_given_potentials": true,
+      "nonconstant_pair_reward_satisfies_full_429_condition": false,
+      "pair_phase_same_input_marginal_change": 0.5,
+      "parameters_or_potentials_selected_by_cognitive_principles": false,
+      "generic_static_exchange_simulation_not_repeated": true
+    },
+    "resources": {
+      "local_register_dimensions": [
+        5,
+        5
+      ],
+      "subjects": 4,
+      "full_raw_dimension": 390625,
+      "invariant_carrier_dimension": 384,
+      "prepared_unknown_code_dimension": 48,
+      "packet_contacts": 6,
+      "record_interaction_pairs": 6,
+      "active_interaction_pairs": 6,
+      "total_generator_norm_upper": {
+        "numerator": 525057,
+        "denominator": 128,
+        "decimal": 4102.0078125
+      },
+      "physical_read_window": [
+        {
+          "numerator": 127872,
+          "denominator": 125,
+          "decimal": 1022.976
+        },
+        {
+          "numerator": 128128,
+          "denominator": 125,
+          "decimal": 1025.024
+        }
+      ],
+      "scaling": "J_A=lambda=g^2/Delta; nontrivial rematching time t~Delta/g^2",
+      "operation_preparation_and_readout_still_inputs": true,
+      "automatic_cooling_or_generic_repair_proved": false,
+      "infinite_scale_stability_proved": false
+    }
+  },
+  "scope": {
+    "diagonal_reward_degeneracy_and_symmetry_conditions_proved": true,
+    "record_and_conditional_processing_compatible_with_explicit_scale_hierarchy": true,
+    "full_unknown_marker_logic_reference_error_certified": true,
+    "uniform_internal_field_residual_cancellation_proved": true,
+    "all_time_finite_N_record_leakage_bound_proved": true,
+    "same_fixed_physical_effect_and_rematching_on_common_window_certified": true,
+    "internal_resource_and_time_cost_explicit": true,
+    "protected_logical_states_required_to_be_degenerate": false,
+    "new_diagonal_interactions_derived_from_429": false,
+    "every_composite_full_state_satisfies_429_condition": false,
+    "unlimited_scale_uniform_stability_proved": false,
+    "initial_code_preparation_or_actual_clock_generated": false,
+    "full_spatial_dimension_or_GR_generated": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

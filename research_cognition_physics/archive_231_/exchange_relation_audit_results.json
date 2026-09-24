@@ -1,0 +1,107 @@
+{
+  "round": 430,
+  "baseline_round": 429,
+  "status": "exchange_selected_relational_qubit_and_continuous_readout",
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "observations": {
+    "minimal_relation_algebra": {
+      "two_qubit_algebra": "C direct_sum C",
+      "three_qubit_algebra": "C direct_sum M_2",
+      "dimensions": [
+        2,
+        5
+      ],
+      "minimality_uses_analytic_representation_decomposition": true
+    },
+    "intrinsic_qubit": {
+      "support_rank": 4,
+      "gauge_dimension": 2,
+      "logical_dimension": 2,
+      "maximum_pauli_error": 4.710277376051325e-16
+    },
+    "static_pair_equality": {
+      "maximum_pair_difference": 0.0,
+      "complete_joint_trace_distance": 1.0,
+      "pair_marginal": "I_4/3 - SWAP/6",
+      "all_pair_swap_expectations": 0.0,
+      "logical_chiral_expectations": [
+        1.0,
+        -1.0
+      ]
+    },
+    "continuous_pair_readout": {
+      "hamiltonian": "SWAP_12 + SWAP_23",
+      "maximum_formula_error": 7.771561172376096e-16,
+      "records": [
+        {
+          "time": 0.0,
+          "pair_singlet_probabilities": [
+            0.49999999999999956,
+            0.49999999999999956
+          ]
+        },
+        {
+          "time": 0.13,
+          "pair_singlet_probabilities": [
+            0.3886808556212347,
+            0.6113191443787644
+          ]
+        },
+        {
+          "time": 0.37,
+          "pair_singlet_probabilities": [
+            0.20802476953263477,
+            0.7919752304673645
+          ]
+        },
+        {
+          "time": 0.7853981633974483,
+          "pair_singlet_probabilities": [
+            0.06698729810778062,
+            0.9330127018922185
+          ]
+        },
+        {
+          "time": 1.12,
+          "pair_singlet_probabilities": [
+            0.16038124214209964,
+            0.8396187578578995
+          ]
+        }
+      ],
+      "contrast_at_pi_over_four": 0.8660254037844379,
+      "target_dependent_switching_used": false,
+      "pair_effect_apparatus_and_time_calibration_derived": false
+    },
+    "closed_relational_dynamics": {
+      "maximum_generator_error": 4.585973723508303e-16,
+      "all_equal_couplings_freeze_relational_qubit": true,
+      "unequal_couplings_are_explicit_model_input": true,
+      "bloch_components_are_position_coordinates": false
+    },
+    "reference_and_frame": {
+      "arbitrary_reference_dimension": 3,
+      "full_reference_intertwining_error": 5.695746880732876e-16,
+      "collective_rotation_acts_only_on_gauge": true,
+      "independent_local_identifications_removed": false,
+      "unknown_physical_input_automatically_encoded": false
+    }
+  },
+  "scope": {
+    "known_exchange_encoding_explicitly_attributed": true,
+    "three_is_minimum_for_noncommuting_qubit_relations": true,
+    "identical_complete_pair_marginals_can_evolve_differently": true,
+    "fixed_continuous_hamiltonian_used": true,
+    "exact_programmable_processor_required": false,
+    "common_identification_and_couplings_derived": false,
+    "internal_readout_apparatus_completed": false,
+    "full_cognitive_implementation_completed": false,
+    "three_dimensional_space_unconditionally_derived": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

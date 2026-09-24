@@ -1,0 +1,202 @@
+{
+  "round": 458,
+  "baseline_round": 457,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "observations": {
+    "conditional_exchange": {
+      "memory_qubits": 2,
+      "actuator_qubits": 1,
+      "generator": "S_35 + S_45",
+      "singlet_sector_generator": "I",
+      "triplet_sector_eigenvalues": [
+        -1,
+        2
+      ],
+      "record_projector_commutes_with_generator": true,
+      "depolarizing_parameter": "1-(32/27)*(1-p)*sin(3t/2)^2",
+      "singlet_Choi_probability": "1-(8/9)*(1-p)*sin(3t/2)^2",
+      "arbitrary_input_reference_superoperator_residual": 8.88611994742e-16,
+      "formula_requires_independent_tau_p_memory": true,
+      "no_abstract_controlled_gate_added": true
+    },
+    "joint_model": {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "weights": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "all_couplings_always_on": true,
+      "initial_singlets": [
+        [
+          3,
+          4
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "unknown_source_input_order": "G,L",
+      "reference_spin_6_is_internal": true,
+      "source_and_actuator_have_no_direct_edge": true,
+      "each_pulled_back_effect": "I_G tensor F_L(t) for all t",
+      "arbitrary_GL_R_source_inputs_allowed": true,
+      "complete_target_channel_independent_of_source_G_claimed": false
+    },
+    "exact_integer_certificates": {
+      "order": 100,
+      "time": "3/2",
+      "analytic_gap_tail": "371540182512989567879480458323380273740831221593758008713313535107244077880971988512/745753366510382314099556591525566968753639443587733746376458981211222414911086298821545177519321441650390625",
+      "analytic_gap_tail_float": 4.982078515468787e-25,
+      "effects": {
+        "em": {
+          "low_order_integer_traces": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1440,
+            0,
+            60480,
+            0,
+            2051424,
+            0,
+            67366464
+          ],
+          "signed_series_before_dividing_sqrt3": "-7728858593511114663399879655722484605643329687038126033397129735036379210988767588223640855341906454138415787457827304080685730635483968676014826740883187497/15678043249844992613377389571798071057459559553152832894977430004934759481402804321202609122486821825473731751721849308418579361456130621440000000000000000000",
+          "contrast_lower": "690442929712569443973095846130983728040170904016313219118857793798839871189595377515170343932813748865748927404722401172261549699710636223401584328967080148268102979328272279/2425855404048920744124071446006800382434431843973108540617032727602820923822310539333705265694221274770375648732571868625513696790937739366845105831936000000000000000000000000",
+          "contrast_upper": "35212589415341041642628011427861489619022827302020546065727597104339944075128441624913509899180279439056378691230488486767551194685357171832926633494597933630481843209833882389/123718625606494886521345846065984869690500932422254940522989728833478015926586814237484813176243484932775622722837221555567266135833997509605020688973824000000000000000000000000",
+          "contrast_interval_float": [
+            0.2846183365093288,
+            0.28461833650932894
+          ]
+        },
+        "ea": {
+          "low_order_integer_traces": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -13440,
+            0,
+            -732672,
+            0,
+            -28890048
+          ],
+          "signed_series_before_dividing_sqrt3": "-16068438099975186320607546822387413926926897181356751705376667068965232580427036374703132046225906959464971517329618785171644767636553804516898668183691989185619/33707792987166734118761387579365852773538053039278590724201474510609732885016029290585609613346666924768523266201976013099945627130680836096000000000000000000000",
+          "contrast_lower": "22700036022278381350447276056700751058818594081514838500079087113420156189250815529257628208817466193287494584721360895779041542280602629724305301075504674944621028793499148111/82479083737663305300218429164231213002770682695085690380979112738495911409958558337345979033603523342192772056907443533267465690891883138472733598285824000000000000000000000000",
+          "contrast_upper": "68100108066835144051342074720464892154404004638921659281568960581458689856670601331052529343665955073668850541343374741301548946842037338051807568661067716971480268908681436653/247437251212989773042691692131969739381001864844509881045979457666956031853173628474969626352486969865551245445674443111134532271667995019210041377947648000000000000000000000000",
+          "contrast_interval_float": [
+            0.2752217288746701,
+            0.2752217288746702
+          ]
+        }
+      }
+    },
+    "record_and_action": {
+      "centre": 1.5,
+      "probabilities": {
+        "em": [
+          0.381012119667,
+          0.665630456176
+        ],
+        "ea": [
+          0.478796980539,
+          0.754018709414
+        ]
+      },
+      "record_contrast": 0.284618336509,
+      "response_contrast": 0.275221728875,
+      "leading_record_contrast": "3*t^5/(4*sqrt(3)) + O(t^7)",
+      "leading_response_contrast": "t^7/(6*sqrt(3)) + O(t^9)",
+      "intermediate_readout_or_postselection": false
+    },
+    "activation_and_window": {
+      "actuator_current_supported_only_on_memory_triplet": true,
+      "all_joint_states_bound": "abs(d p_action/dt) <= sqrt(2)*(1-p_memory)",
+      "exact_current_polynomial": "J_action^4=2*J_action^2",
+      "interval": [
+        "95/64",
+        "97/64"
+      ],
+      "record_contrast_strict_lower": "7/32",
+      "response_contrast_strict_lower": "3/16",
+      "response_equal_prior_success_strict_lower": "19/32",
+      "exact_stopping_time_needed": false,
+      "permanent_record_claimed": false
+    },
+    "back_action": {
+      "exact_squared_Frobenius_double_commutator": 96.0,
+      "operator": "[K,[H_record,E_memory]]",
+      "old_receiver_contrast_lower_from_frozen_431": "2/3",
+      "joint_receiver_contrast_upper": "3/10",
+      "record_contrast_reduction_strict_lower": "11/30",
+      "additional_gate_schedule_used": false,
+      "one_way_channel_concatenation_validated": false,
+      "learned_goal_or_error_correction_claimed": false
+    },
+    "internal_ledger": {
+      "source_raw_qubits": 3,
+      "memory_raw_qubits": 2,
+      "actuator_raw_qubits": 1,
+      "retained_internal_reference_qubits": 1,
+      "pure_singlet_pairs_initially_supplied": 2,
+      "complete_joint_information_and_unknown_reference_preserved": true,
+      "source_old_local_state_preserved_claimed": false,
+      "auxiliaries_restored_claimed": false,
+      "sample_fixed_H_initial_energy": 0.5,
+      "preparations_effect_access_contacts_and_time_units_remain_inputs": true
+    }
+  },
+  "scope": {
+    "physical_record_sector_controls_response": true,
+    "same_static_pair_exchange_receives_records_and_responds": true,
+    "exact_joint_activation_bound_and_time_window": true,
+    "arbitrary_source_gauge_and_reference_effect_identity": true,
+    "response_back_action_accounted": true,
+    "two_pure_singlets_are_explicit_inputs": true,
+    "complete_cognitive_feedback_learning_loop": false,
+    "recursively_complete_subject_constructed": false,
+    "exact_455_handoff_implemented": false,
+    "spatial_dimension_generated": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "round": 428,
+  "baseline_round": 427,
+  "status": "internal_termination_programming_scope_audit",
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "observations": {
+    "single_gate_matrix_error": 1.5743978205601404e-17,
+    "feedback_circuit": {
+      "cases": 24,
+      "maximum_first_stop_instrument_error": 5.920470838232176e-16,
+      "target_independent_gates": true,
+      "full_reference_choi_checked": true
+    },
+    "trace_defect_completion": {
+      "input_dimension": 16,
+      "defect_rank": 2,
+      "completeness_error": 0.0,
+      "tested_on_entangled_data_program_input": true,
+      "completion_returns_fixed_failure_state": true
+    },
+    "cutoff_channel": {
+      "maximum_saturating_witness_error": 2.8449465006019636e-16,
+      "examples": [
+        {
+          "program_qubits": 1,
+          "failure_probability": 0.5,
+          "full_half_diamond_error": 0.33343481750184895,
+          "saturating_plus_input_error": 0.3334348175018489
+        },
+        {
+          "program_qubits": 2,
+          "failure_probability": 0.25,
+          "full_half_diamond_error": 0.24846709085291122,
+          "saturating_plus_input_error": 0.24846709085291124
+        },
+        {
+          "program_qubits": 4,
+          "failure_probability": 0.0625,
+          "full_half_diamond_error": 0.026801200708337244,
+          "saturating_plus_input_error": 0.026801200708337462
+        },
+        {
+          "program_qubits": 6,
+          "failure_probability": 0.015625,
+          "full_half_diamond_error": 0.01530747393907185,
+          "saturating_plus_input_error": 0.015307473939072067
+        }
+      ],
+      "arbitrary_reference_bound_proved_in_note": true,
+      "random_inputs_not_used_as_diamond_proof": true
+    },
+    "program_sources": {
+      "overlap_identity_error": 2.7755575615628914e-16,
+      "prefix_overlaps": [
+        {
+          "program_qubits": 1,
+          "absolute_overlap": 0.9393727128473788,
+          "analytic_upper_bound": 1.4581603881061826
+        },
+        {
+          "program_qubits": 2,
+          "absolute_overlap": 0.7184718803695528,
+          "analytic_upper_bound": 0.7290801940530913
+        },
+        {
+          "program_qubits": 4,
+          "absolute_overlap": 0.11506100070979863,
+          "analytic_upper_bound": 0.18227004851327283
+        },
+        {
+          "program_qubits": 8,
+          "absolute_overlap": 0.011368109339212795,
+          "analytic_upper_bound": 0.011391878032079552
+        },
+        {
+          "program_qubits": 10,
+          "absolute_overlap": 0.0007278562661049237,
+          "analytic_upper_bound": 0.002847969508019888
+        }
+      ],
+      "single_token_trace_distance": 0.7071067811865476,
+      "two_token_prefix_trace_distance": 1.0,
+      "exact_generation_would_violate_trace_distance_contractivity": true,
+      "pairwise_orthogonal_limit_is_analytic_not_a_finite_sample_inference": true
+    },
+    "resource_accounting": {
+      "examples": [
+        {
+          "prepared_program_qubits": 1,
+          "program_dimension": 2,
+          "mean_consumed_program_qubits": 0.9999999999999999,
+          "heralded_success_probability": 0.49999999999999994
+        },
+        {
+          "prepared_program_qubits": 2,
+          "program_dimension": 4,
+          "mean_consumed_program_qubits": 1.4999999999999996,
+          "heralded_success_probability": 0.7499999999999998
+        },
+        {
+          "prepared_program_qubits": 4,
+          "program_dimension": 16,
+          "mean_consumed_program_qubits": 1.8749999999999984,
+          "heralded_success_probability": 0.9374999999999996
+        },
+        {
+          "prepared_program_qubits": 8,
+          "program_dimension": 256,
+          "mean_consumed_program_qubits": 1.9921874999999998,
+          "heralded_success_probability": 0.9960937499999999
+        }
+      ],
+      "asymptotic_mean_consumed_qubits": 2,
+      "source_preparation_cost_derived": false,
+      "mean_consumption_not_a_capacity_bound": true,
+      "unused_program_registers_and_retry_records_remain_inside_whole": true
+    }
+  },
+  "scope": {
+    "internal_generation_is_user_authorized_candidate": true,
+    "countable_first_termination_reduction_proved": true,
+    "separable_normal_program_contract_explicit": true,
+    "all_target_information_accounted_at_initial_interface": true,
+    "growing_memory_and_random_retries_allowed": true,
+    "common_deadline_or_fixed_hamiltonian_required": false,
+    "exact_universal_almost_sure_processor_under_contract": false,
+    "candidate_principle_itself_refuted": false,
+    "known_phase_processor_claimed_as_new_discovery": false,
+    "full_cognitive_implementation_completed": false,
+    "actual_position_interface_still_required": true,
+    "three_dimensional_space_unconditionally_derived": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

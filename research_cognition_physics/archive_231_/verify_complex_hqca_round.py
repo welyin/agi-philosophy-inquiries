@@ -1,0 +1,71 @@
+"""Verify round 418 and the frozen evidence through round 417."""
+import argparse
+import ast
+import importlib.util
+import io
+import json
+from pathlib import Path
+import unittest
+
+import verify_round417_integration as previous
+import verify_interaction_rounds as core
+
+HERE = Path(__file__).resolve().parent
+TARGET = HERE / 'research_round_418_checks.json'
+NAMES = ['complex_hqca_channel_audit.py', 'complex_hqca_channel_audit_results.json',
+         'research_note_418.md']
+
+
+def verify(pending=False):
+    old_target = previous.TARGET
+    previous.TARGET = TARGET
+    try:
+        frozen = previous.verify(pending)
+    finally:
+        previous.TARGET = old_target
+    assert frozen['science_hashes_verified_231_417'] == 562
+    assert frozen['total_protected_evidence_hashes'] == 587
+    if TARGET.exists():
+        for name, sha in core.read(TARGET)['new_file_hashes'].items():
+            assert core.digest(HERE / name) == sha, name
+    source = HERE / NAMES[0]
+    ast.parse(source.read_text(encoding='utf-8'))
+    spec = importlib.util.spec_from_file_location('complex_hqca_checked', source)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    saved = core.read(HERE / NAMES[1])
+    assert {k: v for k, v in saved.items() if k not in ('checks', 'runtime')} == json.loads(json.dumps(module.report()))
+    output = io.StringIO()
+    tests = unittest.TextTestRunner(stream=output).run(unittest.defaultTestLoader.loadTestsFromModule(module))
+    assert tests.wasSuccessful() and tests.testsRun == 8, output.getvalue()
+    assert saved['checks'] == dict(run=8, failures=0, errors=0)
+    checked = core.text_checks(HERE / NAMES[2])
+    assert checked['display_formulas'] == 12
+    links = 0
+    for link in core.link_parser()((HERE / NAMES[2]).read_text(encoding='utf-8')):
+        dest = (HERE / link).resolve()
+        assert dest.exists() or (pending and dest == TARGET), link
+        links += 1
+    return dict(date='2026-09-24', round=418, scientific_base_through_round=417,
+        additional_frozen_dependency_rounds=[228, 229, 230, 343, 346, 393, 394, 401, 404, 405],
+        fresh_tests=dict(run=8, failures=0, errors=0), saved_results_reproduced=True,
+        scientific_results_rewritten=False, previous_scientific_file_hashes_verified=562,
+        previous_protected_evidence_hashes_verified=587, text_checks=checked,
+        local_links_checked=links, broken_links=0,
+        new_file_hashes={name: core.digest(HERE / name) for name in NAMES},
+        visual_rendering_performed=False, legacy_science_tests_rerun=False,
+        independent_review='bearing_coordinate_review and transport_bridge_audit reviewed the actual note and code and ran the eight checks',
+        fixed_local_rule_with_unknown_complex_channel_guarantee=True,
+        final_readout_timing_internalized=False, full_cognitive_countermodel_completed=False,
+        phase_closure_triggered=False, scope=saved['scope'], all_reported_checks_passed=True)
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--write-checks', action='store_true')
+    args = parser.parse_args()
+    result = verify(args.write_checks)
+    if args.write_checks:
+        with TARGET.open('x', encoding='utf-8', newline='\n') as stream:
+            stream.write(json.dumps(result, ensure_ascii=False, indent=2) + '\n')
+    print(json.dumps(result, ensure_ascii=False, indent=2))
