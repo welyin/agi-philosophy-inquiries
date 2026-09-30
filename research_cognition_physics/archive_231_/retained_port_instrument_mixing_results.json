@@ -1,0 +1,218 @@
+{
+  "round": 492,
+  "scientific_baseline_round": 490,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "baseline_results_sha256": "fda461087672db2a4280a5fcd34b12f8c7e63e4efed26a5a4cb9236c9fff147f",
+  "scope": {
+    "retained_graph_and_data_instrument_process": true,
+    "primitive_channel_is_one_excitation_and_extra_measurement_contract": true,
+    "no_fresh_network_per_step_required": true,
+    "arbitrary_initial_isolated_reference_supported": true,
+    "no_full_history_erasure_or_scalar_record_Markov_claim": true,
+    "no_spatial_dimension_or_endpoint_group_derived": true,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  },
+  "observations": {
+    "instrument": {
+      "dimension": 36,
+      "full_dimension": 384,
+      "port_outcomes": 6,
+      "two_round_histories": 36,
+      "overlap_residual": 4.37590658859e-16,
+      "initial_reference_marginal_residual": 7.44964786991e-16,
+      "data_replaced": false,
+      "graph_replaced": false,
+      "passive_old_records_and_new_blank_readers_required": true,
+      "unknown_reference_statement": "all initial DG-R states supported in the one-excitation sector"
+    },
+    "exact_algebra": {
+      "block_operator_dimension": 216,
+      "integer_commutator_rank_mod_1009": 215,
+      "kernel_dimension": 1,
+      "leaf_signatures": [
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ]
+      ],
+      "graph_F_connected": true,
+      "sufficient_general_condition": "kappa*J != 0; 0<delta<pi/(2*(4*abs(kappa)+5*abs(J)))",
+      "proof": "HS equality, unmixed energy differences, complementary leaf edges, F connectivity",
+      "fixed_algebra": "C I_36",
+      "unit_circle_eigenvalues": [
+        1
+      ],
+      "no_floating_spectrum_used_for_theorem": true
+    },
+    "coupling_boundary": {
+      "kappa_zero_keeps_nonconstant_graph_projector": true,
+      "J_zero_keeps_each_port_population": true,
+      "no_claim_for_resonant_delta_or_full_64_dimensional_data": true
+    },
+    "population_scope": {
+      "initial_port_population": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "different_graph_basis_states": [
+        2,
+        0
+      ],
+      "delta": "1/1024",
+      "probability_difference": 9.53671663716e-07,
+      "strict_difference_lower_bound": "99/104857600",
+      "per_probability_remainder": "10935/2739115393024",
+      "no_scalar_transition_on_all_CQ_inputs": true,
+      "generic_lumpability_is_old_not_claimed_new": true
+    },
+    "finite_certificate": {
+      "delta": "1/16",
+      "taylor_order": 24,
+      "fixed_point_bits": 64,
+      "taylor_operator_tail": "12157665459056928801/325787019602434503479367818111205329267064832000000",
+      "unitary_operator_error": "37/18446744073709551616",
+      "initial_superoperator_error": "6013638568029313828185/340282366920938463463374607431768211456",
+      "initial_error_units": 327,
+      "repeated_square_levels": 16,
+      "block_power": 65536,
+      "instrument_steps": 65537,
+      "error_units": 35651367,
+      "weighted_frobenius_sum": 0,
+      "frobenius_units": 0,
+      "hs_operator_bound": "35651367/18446744073709551616",
+      "ordinary_diamond_bound": "320862303/4611686018427387904",
+      "ordinary_diamond_bound_decimal": 6.95759211963e-11,
+      "asserted_diamond_bound": "1/4000",
+      "error_recurrence": [
+        {
+          "power": 2,
+          "error_units": 871
+        },
+        {
+          "power": 4,
+          "error_units": 1959
+        },
+        {
+          "power": 8,
+          "error_units": 4135
+        },
+        {
+          "power": 16,
+          "error_units": 8487
+        },
+        {
+          "power": 32,
+          "error_units": 17191
+        },
+        {
+          "power": 64,
+          "error_units": 34599
+        },
+        {
+          "power": 128,
+          "error_units": 69415
+        },
+        {
+          "power": 256,
+          "error_units": 139047
+        },
+        {
+          "power": 512,
+          "error_units": 278311
+        },
+        {
+          "power": 1024,
+          "error_units": 556839
+        },
+        {
+          "power": 2048,
+          "error_units": 1113895
+        },
+        {
+          "power": 4096,
+          "error_units": 2228007
+        },
+        {
+          "power": 8192,
+          "error_units": 4456231
+        },
+        {
+          "power": 16384,
+          "error_units": 8912679
+        },
+        {
+          "power": 32768,
+          "error_units": 17825575
+        },
+        {
+          "power": 65536,
+          "error_units": 35651367
+        }
+      ],
+      "arithmetic": "Python integers; Gaussian polynomial; weighted Hermitian coordinates",
+      "matrix_sha256": "53492594140ebd854f39849cadc3541c8307d65487b933869bf3b1196bf8ff54",
+      "coordinate_map_diagnostic_error": 1.7763568394e-15
+    },
+    "resource_and_reference_scope": {
+      "finite_instrument_steps": 65537,
+      "total_ideal_wait_time": "65537/16",
+      "retained_active_networks": 1,
+      "data_qubits": 6,
+      "graph_dimension": 6,
+      "extra_fresh_graph_sources": 0,
+      "extra_fresh_data_batches": 0,
+      "separate_six_state_readers": 65537,
+      "three_qubit_record_encoding_capacity": 196611,
+      "maximum_whole_instrument_diamond_error_per_step": "1/262148000",
+      "cumulative_control_error": "1/4000",
+      "actual_active_initial_reference_diamond_bound": "1/2000",
+      "last_record_stationary_nonproduct_half_trace_distance": "5/6",
+      "initial_passive_R_not_all_newly_generated_records": true,
+      "all_old_records_and_detector_environments_isolated_and_counted": true,
+      "whole_history_information_not_erased": true,
+      "finite_control_precision_not_derived_from_original_H": true,
+      "no_statistical_independent_network_cloning_or_closed_H_dissipation": true
+    }
+  }
+}

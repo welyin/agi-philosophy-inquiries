@@ -1,0 +1,234 @@
+{
+  "round": 481,
+  "baseline_round": 480,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "observations": {
+    "current_center_cover": {
+      "frozen_baseline_round": 480,
+      "original_parameter_cube_radius": "1/246240000",
+      "inverse_Jacobian_sup_norm_upper": 30000,
+      "Jacobian_Lipschitz_sup_norm_upper": 2052,
+      "admitted_basepoint_distance_from_old_center": "1/984960000",
+      "local_parameter_search_radius": "1/492480000",
+      "remaining_old_domain_margin": "1/984960000",
+      "actual_current_Q_target_ball_sup_radius": "1/59097600000000",
+      "recurrence_operator_error_budget": "1/236390400000000",
+      "Brouwer_self_map_radius_ratio": "5/8",
+      "basepoint_may_be_any_point_in_inner_quarter_cube": true,
+      "current_state_may_be_any_known_positive_word_P_of_same_seed": true,
+      "current_Q_must_equal_f_of_admitted_basepoint": true,
+      "no_assumption_that_three_Q_predict_future_state": true
+    },
+    "finite_recurrence_bound": {
+      "Hilbert_dimension": 384,
+      "Dirichlet_integer_mesh": 2904765235200000000,
+      "maximum_positive_repetition_count": "2904765235200000000**384",
+      "maximum_counter_bit_length": 23552,
+      "exact_integer_bound_computed_not_executed": true,
+      "recurrence_search_can_depend_on_entire_current_word_P": true,
+      "no_negative_H_or_compact_generated_subgroup_assumed": true,
+      "each_atomic_rational_exponential_error": "eps/(64*d*n*m_P)",
+      "rational_products_may_be_evaluated_exactly_after_atomic_approximation": true,
+      "full_Frobenius_matrix_error_upper": "eps/32 < eps/8"
+    },
+    "exact_small_return_certificate": {
+      "word": "[[3,-4],[4,3]]/5",
+      "dimension": 2,
+      "positive_repetitions": 393,
+      "Frobenius_residual_squared": 1.0331764507e-05,
+      "residual_operator_norm": 0.0022728577284,
+      "exact_nonzero_residual_proves_no_exact_rollback_in_this_example": true,
+      "real_numerator_bits": 913,
+      "imaginary_numerator_bits": 904,
+      "denominator_bits": 913,
+      "all_powers_exact_gaussian_integers": true,
+      "universal_Dirichlet_bound": 40960000,
+      "certificate_search": "rational matrix error <= eps/8; accept squared Frobenius residual < (eps/2)^2",
+      "existence_margin_for_some_candidate_within_Dirichlet_bound": "true Frobenius residual < eps/4",
+      "diagnostic_393rd_candidate_only_claims_the_stated_acceptance_test": true,
+      "certified_operator_error_less_than": "5*eps/8",
+      "example_not_a_model_of_spatial_dimension": true
+    },
+    "covering_lemma_finite_crosscheck": {
+      "map": "g_j(v)=v_j+v_(j+1)^2/16+offset_j",
+      "offset": [
+        "1/8",
+        "-1/8",
+        "1/16"
+      ],
+      "cube_radius": 1,
+      "derivative_remainder_sup_norm_bound": "1/8",
+      "tested_targets": 9,
+      "fixed_point_iterations": 16,
+      "self_map_radius_bound": "7/16",
+      "maximum_endpoint_residual": 5.5511151231e-17,
+      "parameter_adjustment_for_original_current_center": [
+        -0.12597262974,
+        0.12474804931,
+        -0.063491818965
+      ],
+      "original_current_center_not_assumed_equal_shifted_map_center": true,
+      "generic_quantitative_lemma_crosscheck_not_a_second_spatial_model": true
+    },
+    "actual_six_tree_word_check": {
+      "finite_H_on_pulse_duration": "1/10000000000",
+      "repeated_word_parameters": [
+        "1/5",
+        "2/5",
+        "pi/2"
+      ],
+      "positive_word_counts": [
+        1,
+        2,
+        3
+      ],
+      "Q_readouts": [
+        [
+          0.0036477992966,
+          0.0044149624681,
+          -0.0044681551119
+        ],
+        [
+          0.034221758598,
+          0.003853694391,
+          -0.0031210731632
+        ],
+        [
+          -0.022727345856,
+          -0.013351486785,
+          0.01140863664
+        ]
+      ],
+      "same_initial_columns_evolved_without_any_repreparation": true,
+      "branch_record_probabilities": [
+        [
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5
+        ]
+      ],
+      "maximum_conditional_branch_leaf_mean_error": 4.8849813084e-15,
+      "unknown_data_graph_reference_inverse_identity_residual": 1.4573275102e-14,
+      "inverse_used_only_to_check_unitarity_not_executed_as_control": true,
+      "three_short_words_not_claimed_to_meet_the_tiny_recurrence_budget": true,
+      "full_finite_Dirichlet_repetition_protocol_not_numerically_executed": true
+    },
+    "finite_control_cost_ledger": {
+      "requested_final_Q_sup_error": "1/945561600000000",
+      "whole_old_process_error_budget": "zeta/12",
+      "per_repeated_P_word_diamond_budget": "zeta/(12*max(1,n-1))",
+      "last_W_word_diamond_budget": "zeta/12",
+      "accumulated_control_process_diamond_budget": "zeta/4",
+      "three_parameter_Q_Lipschitz_sup_norm_upper": 38,
+      "finite_parameter_grid_mesh": "1/574901452800000000",
+      "rigorous_Q_minus_target_evaluation_error": "1/15128985600000000",
+      "finite_grid_points_upper": "12726366071522800442204160001",
+      "endpoint_inclusive_grid": "z_i-r+2*r*j/k, j=0..k, k=ceil(2*r/h)",
+      "certified_grid_acceptance_target": "zeta/4",
+      "elapsed_time": "(n-1)*T_P + t + u + tau",
+      "complete_new_history_time": "n*T_P + t + u + tau",
+      "primitive_segments": "(n-1)*m_P + 3",
+      "peak_exchange_strength": "maximum of past |theta_j|/tau_j and |theta|/tau",
+      "rectangular_pulse_unitary_error_upper": "9*|delta_tau|+|delta_theta|",
+      "drift_model_error_adds_full_channel_bound": "2*T_total*||delta_H||",
+      "counter_program_storage_time_calibration_and_isolation_are_resources": true,
+      "complete_history_word_P_must_remain_known_and_repeatable": true,
+      "known_computable_controls_required_for_terminating_numerical_search": true,
+      "no_claim_of_autonomous_finite_controller_for_all_real_requests": true,
+      "previous_unknown_noise_cannot_be_reduced_by_recurrence": true,
+      "finite_precision_guarantee_is_for_each_preassigned_finite_protocol": true,
+      "arbitrary_R_error_quantifier_is_complete_process_diamond": true,
+      "isolated_gate_calibration_not_substituted_for_memoryful_step_contract": true,
+      "old_control_ancillas_must_be_isolated_or_included_in_complete_step_map": true
+    },
+    "actual_readout_and_statistics": {
+      "actual_CP_instrument_round": 472,
+      "ordered_edges": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "diagnostic_probe_wait": "1/65536",
+      "two_outcome_probabilities": [
+        [
+          0.49999611863,
+          0.50000388137
+        ],
+        [
+          0.49999637972,
+          0.50000362028
+        ],
+        [
+          0.49999614803,
+          0.50000385197
+        ],
+        [
+          0.49999609482,
+          0.50000390518
+        ]
+      ],
+      "true_Q": [
+        0.034221758598,
+        0.003853694391,
+        -0.0031210731632
+      ],
+      "measured_diagnostic_Q": [
+        0.034221386795,
+        0.0038533879488,
+        -0.0031207388856
+      ],
+      "diagnostic_Q_bias_bound": "162/32765",
+      "certified_Q_error_tolerance": "1/945561600000000",
+      "each_adjacency_mean_error": "1/7564492800000000",
+      "certified_probe_wait": "1/9803582668800000000",
+      "whole_storage_handoff_plus_instrument_diamond_budget": "1/296636522049369538560000000000000000",
+      "independent_copies_per_edge": "439966131067730502124019639888136634368000000000000000000000000000000000",
+      "total_repeated_histories": "1759864524270922008496078559552546537472000000000000000000000000000000000",
+      "simultaneous_failure_probability_less_than": "1/100",
+      "final_Q_error_upper": "3*zeta/4 < zeta",
+      "old_data_graph_reference_correlations_saved_not_physically_discarded": true,
+      "final_readout_requires_fresh_independent_probe_and_storage_contract": true,
+      "tomography_or_mean_estimation_not_free_nondisturbing_readout_of_one_system": true,
+      "copies_replay_known_preparation_and_whole_history_not_clone_unknown_R": true,
+      "declared_tiny_error_resource_protocol_not_actually_sampled": true
+    }
+  },
+  "scope": {
+    "positive_time_local_current_Q_reaccess_in_fixed_model": true,
+    "exact_covering_is_a_mathematical_continuous_control_statement": true,
+    "finite_precision_full_process_and_measurement_costs_explicit": true,
+    "current_Q_does_not_have_to_predict_all_future_internal_states": true,
+    "no_exact_full_state_rollback_or_free_negative_H_claim": true,
+    "no_generated_control_group_closedness_assumption": true,
+    "no_source_or_controller_generation_from_cognitive_principles": true,
+    "no_spatial_displacement_composition_or_dimension_selection": true,
+    "endpoint_cover_does_not_keep_intermediate_trajectory_in_local_chart": true,
+    "no_small_time_local_controllability_or_vanishing_cost_claim": true,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

@@ -1,0 +1,299 @@
+{
+  "date": "2026-09-30",
+  "diagnostic_tests": 6,
+  "failures": 0,
+  "errors": 0,
+  "numbered_round_created": false,
+  "numbered_test_increment": 0,
+  "dependency_sha256": {
+    "material_reference_geometry.py": "5672ddf244688345b2cabd57e38139597fe028cdcf723a456e875bae4a405940"
+  },
+  "inputs": {
+    "d": 3,
+    "q": 0.6,
+    "b": 0.4,
+    "a_initial": 1.0,
+    "a_final": 2.0,
+    "clock_final": 0.6963287077399665,
+    "proper_time_final": 3.2256061965928087,
+    "window": [
+      0.12,
+      0.55
+    ],
+    "coupling": 1.0225092217926712,
+    "coupling_lipschitz": 7.306029426953007,
+    "gate_area": 0.7681086357543866
+  },
+  "diagnostics": {
+    "background_and_gate": {
+      "area_quadrature_difference": 5.10702591327572e-15,
+      "target_angle": 0.7853981633974482
+    },
+    "joint_propagation": [
+      {
+        "volume": 1024,
+        "grid": 1024,
+        "steps": 2048,
+        "box": 1.0,
+        "joint_isometry_error": 0.07604037658156636,
+        "momentum_changes": [
+          2.173250737793296,
+          -2.158480874486486
+        ],
+        "Q_displacements_from_free": [
+          -0.00012752658171535404,
+          0.00011916231123510965
+        ],
+        "clock_density_changes_from_free": [
+          1.9848410484602733e-05,
+          -1.9642389920488963e-05
+        ],
+        "energy_work_residual": 8.439974408247508e-08,
+        "energy_work_residual_per_volume": 8.242162508054207e-11,
+        "norm_residual": 6.850076061937216e-13,
+        "max_edge_probability": 1.6239246522604868e-14,
+        "free_variance_error": 0.0,
+        "probe_instrument": {
+          "normalized_choi_trace_distance": 0.008178387837259642,
+          "wrong_outcome_probabilities": [
+            0.005672895002866446,
+            0.005672895002866446
+          ],
+          "completeness_residual": 6.759037773917953e-13,
+          "choi_min_eigenvalue": 0.0
+        },
+        "analytic_bounds": {
+          "initial_Q_variance": 0.0005666737530435925,
+          "duhamel_integral_evaluated": 0.702410698599952,
+          "elementary_duhamel_upper": 2.3869888287713485,
+          "impulse_upper": 24.096834526603704,
+          "displacement_upper": 0.02731008731532188,
+          "initial_clock_kinetic_energy": 184.53541550467858,
+          "free_variance_density_at_end": 3.2869797466826904e-06,
+          "recoil_density_upper_at_end": 0.00022506822213947541,
+          "interaction_density_upper_at_end": 0.0001248180202383632
+        }
+      },
+      {
+        "volume": 4096,
+        "grid": 1024,
+        "steps": 2048,
+        "box": 1.0,
+        "joint_isometry_error": 0.03697129261677505,
+        "momentum_changes": [
+          2.137234108149187,
+          -2.1336531594474764
+        ],
+        "Q_displacements_from_free": [
+          -2.926218991479608e-05,
+          2.8758222458114685e-05
+        ],
+        "clock_density_changes_from_free": [
+          4.888776792238807e-06,
+          -4.876321257741775e-06
+        ],
+        "energy_work_residual": 8.458118827547878e-08,
+        "energy_work_residual_per_volume": 2.064970416881806e-11,
+        "norm_residual": 7.824851877558103e-13,
+        "max_edge_probability": 6.099477470372011e-20,
+        "free_variance_error": 0.0,
+        "probe_instrument": {
+          "normalized_choi_trace_distance": 0.0020176611464730286,
+          "wrong_outcome_probabilities": [
+            0.0013607293972158273,
+            0.0013607293972158273
+          ],
+          "completeness_residual": 7.8026474170656e-13,
+          "choi_min_eigenvalue": 0.0
+        },
+        "analytic_bounds": {
+          "initial_Q_variance": 0.00014166843826089813,
+          "duhamel_integral_evaluated": 0.351205349299976,
+          "elementary_duhamel_upper": 1.1934944143856743,
+          "impulse_upper": 24.096834526603704,
+          "displacement_upper": 0.00682752182883047,
+          "initial_clock_kinetic_energy": 737.4954155046786,
+          "free_variance_density_at_end": 8.217449366706726e-07,
+          "recoil_density_upper_at_end": 5.543172359850959e-05,
+          "interaction_density_upper_at_end": 3.12045050595908e-05
+        }
+      },
+      {
+        "volume": 16384,
+        "grid": 1024,
+        "steps": 2048,
+        "box": 1.0,
+        "joint_isometry_error": 0.018358922575117755,
+        "momentum_changes": [
+          2.1285148803108314,
+          -2.127626324656376
+        ],
+        "Q_displacements_from_free": [
+          -7.158657749095805e-06,
+          7.1274398206404126e-06
+        ],
+        "clock_density_changes_from_free": [
+          1.2177615843845038e-06,
+          -1.2169893599204423e-06
+        ],
+        "energy_work_residual": 8.675579010741785e-08,
+        "energy_work_residual_per_volume": 5.295153204798453e-12,
+        "norm_residual": 7.878142582740111e-13,
+        "max_edge_probability": 2.8317688534710657e-25,
+        "free_variance_error": 0.0,
+        "probe_instrument": {
+          "normalized_choi_trace_distance": 0.0005027031071518731,
+          "wrong_outcome_probabilities": [
+            0.00033667536606360525,
+            0.00033667536606360525
+          ],
+          "completeness_residual": 7.855938122247608e-13,
+          "choi_min_eigenvalue": 0.0
+        },
+        "analytic_bounds": {
+          "initial_Q_variance": 3.541710956522453e-05,
+          "duhamel_integral_evaluated": 0.175602674649988,
+          "elementary_duhamel_upper": 0.5967472071928371,
+          "impulse_upper": 24.096834526603704,
+          "displacement_upper": 0.0017068804572076175,
+          "initial_clock_kinetic_energy": 2949.3354155046786,
+          "free_variance_density_at_end": 2.0543623416766815e-07,
+          "recoil_density_upper_at_end": 1.3805722240110257e-05,
+          "interaction_density_upper_at_end": 7.8011262648977e-06
+        }
+      }
+    ],
+    "finite_instrument": [
+      {
+        "normalized_choi_trace_distance": 0.008178387837259642,
+        "wrong_outcome_probabilities": [
+          0.005672895002866446,
+          0.005672895002866446
+        ],
+        "completeness_residual": 6.759037773917953e-13,
+        "choi_min_eigenvalue": 0.0
+      },
+      {
+        "normalized_choi_trace_distance": 0.0020176611464730286,
+        "wrong_outcome_probabilities": [
+          0.0013607293972158273,
+          0.0013607293972158273
+        ],
+        "completeness_residual": 7.8026474170656e-13,
+        "choi_min_eigenvalue": 0.0
+      },
+      {
+        "normalized_choi_trace_distance": 0.0005027031071518731,
+        "wrong_outcome_probabilities": [
+          0.00033667536606360525,
+          0.00033667536606360525
+        ],
+        "completeness_residual": 7.855938122247608e-13,
+        "choi_min_eigenvalue": 0.0
+      }
+    ],
+    "momentum_displacement_energy": [
+      {
+        "volume": 1024,
+        "momentum": [
+          2.173250737793296,
+          -2.158480874486486
+        ],
+        "displacement": [
+          -0.00012752658171535404,
+          0.00011916231123510965
+        ],
+        "energy_work_residual": 8.439974408247508e-08
+      },
+      {
+        "volume": 4096,
+        "momentum": [
+          2.137234108149187,
+          -2.1336531594474764
+        ],
+        "displacement": [
+          -2.926218991479608e-05,
+          2.8758222458114685e-05
+        ],
+        "energy_work_residual": 8.458118827547878e-08
+      },
+      {
+        "volume": 16384,
+        "momentum": [
+          2.1285148803108314,
+          -2.127626324656376
+        ],
+        "displacement": [
+          -7.158657749095805e-06,
+          7.1274398206404126e-06
+        ],
+        "energy_work_residual": 8.675579010741785e-08
+      }
+    ],
+    "discretization": {
+      "time_step_state_difference": 1.3976033518652453e-08,
+      "larger_box_same_spacing_state_difference": 2.3318121950582237e-10,
+      "refined_instrument": {
+        "normalized_choi_trace_distance": 0.002017661233375118,
+        "wrong_outcome_probabilities": [
+          0.001360729447358216,
+          0.001360729447358216
+        ],
+        "completeness_residual": 1.567634910770721e-12,
+        "choi_min_eigenvalue": 0.0
+      }
+    },
+    "resource_scaling": {
+      "bounds": [
+        {
+          "volume": 1024,
+          "initial_Q_variance": 0.0005666737530435925,
+          "duhamel_integral_evaluated": 0.702410698599952,
+          "elementary_duhamel_upper": 2.3869888287713485,
+          "impulse_upper": 24.096834526603704,
+          "displacement_upper": 0.02731008731532188,
+          "initial_clock_kinetic_energy": 184.53541550467858,
+          "free_variance_density_at_end": 3.2869797466826904e-06,
+          "recoil_density_upper_at_end": 0.00022506822213947541,
+          "interaction_density_upper_at_end": 0.0001248180202383632
+        },
+        {
+          "volume": 4096,
+          "initial_Q_variance": 0.00014166843826089813,
+          "duhamel_integral_evaluated": 0.351205349299976,
+          "elementary_duhamel_upper": 1.1934944143856743,
+          "impulse_upper": 24.096834526603704,
+          "displacement_upper": 0.00682752182883047,
+          "initial_clock_kinetic_energy": 737.4954155046786,
+          "free_variance_density_at_end": 8.217449366706726e-07,
+          "recoil_density_upper_at_end": 5.543172359850959e-05,
+          "interaction_density_upper_at_end": 3.12045050595908e-05
+        },
+        {
+          "volume": 16384,
+          "initial_Q_variance": 3.541710956522453e-05,
+          "duhamel_integral_evaluated": 0.175602674649988,
+          "elementary_duhamel_upper": 0.5967472071928371,
+          "impulse_upper": 24.096834526603704,
+          "displacement_upper": 0.0017068804572076175,
+          "initial_clock_kinetic_energy": 2949.3354155046786,
+          "free_variance_density_at_end": 2.0543623416766815e-07,
+          "recoil_density_upper_at_end": 1.3805722240110257e-05,
+          "interaction_density_upper_at_end": 7.8011262648977e-06
+        }
+      ],
+      "duhamel_ratio_1024_to_16384": 4.0
+    }
+  },
+  "scope": {
+    "supplied_background": true,
+    "homogeneous_mode_truncation": true,
+    "complete_reference_target_probe_unitary": true,
+    "arbitrary_target_and_passive_reference_bound": true,
+    "fully_autonomous_total_model": false,
+    "quantum_reference_stress_equals_classical_exactly": false,
+    "self_consistent_einstein_backreaction": false,
+    "field_localization_or_spatial_dimension_derived": false,
+    "full_unification_complete": false
+  }
+}

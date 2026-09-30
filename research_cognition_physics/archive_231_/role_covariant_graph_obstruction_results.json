@@ -1,0 +1,214 @@
+{
+  "round": 495,
+  "scientific_baseline_round": 494,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "baseline_results_sha256": "9b34abdb4f490430326d7f552a4f124a66f5ff2b9f80ee7fdb47a098be5d45d2",
+  "scope": {
+    "all_labelled_degree_three_internal_tree_graph_states": true,
+    "arbitrary_role_covariant_Hermitian_fast_graph_update": true,
+    "unchanged_unit_strength_edge_controlled_exchange": true,
+    "exact_all_source_population_elimination_obstructed": true,
+    "no_uniform_positive_large_I_error_floor_claim": true,
+    "no_general_spatial_or_cognitive_no_go_claim": true,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  },
+  "observations": {
+    "fixed_tree_enumeration": [
+      {
+        "i": 3,
+        "trees": 90,
+        "fixed_trees": 4,
+        "trace_Q": 30,
+        "trace_QR": 2,
+        "fixed_tree_deletion_is_injective": true
+      },
+      {
+        "i": 4,
+        "trees": 2520,
+        "fixed_trees": 8,
+        "trace_Q": 630,
+        "trace_QR": 4,
+        "fixed_tree_deletion_is_injective": true
+      }
+    ],
+    "arbitrary_graph_H_obstruction": {
+      "sources": [
+        {
+          "i": 3,
+          "dimension": 90,
+          "fixed": 4,
+          "source_ranks": [
+            47,
+            43
+          ],
+          "parity_source_weights": [
+            "47/90",
+            "43/90"
+          ],
+          "edge_expectations": [
+            "16/47",
+            "14/43"
+          ],
+          "gap": "30/2021",
+          "scalar_average_distance_lower_bound": "15/2021"
+        },
+        {
+          "i": 4,
+          "dimension": 2520,
+          "fixed": 8,
+          "source_ranks": [
+            1264,
+            1256
+          ],
+          "parity_source_weights": [
+            "158/315",
+            "157/315"
+          ],
+          "edge_expectations": [
+            "317/1264",
+            "313/1256"
+          ],
+          "gap": "315/198448",
+          "scalar_average_distance_lower_bound": "315/396896"
+        }
+      ],
+      "only_commutation_with_selected_R_needed": true,
+      "real_entries_connectivity_or_non_degeneracy_not_needed": true,
+      "every_finite_F_time_average_preserves_gap": true,
+      "maximal_initial_graph_state_space_is_an_explicit_contract": true,
+      "original_NNI_covariance_generators_checked": 6
+    },
+    "scope_controls": {
+      "I2_fixed_count": 4,
+      "I2_both_edge_rates": "1/2",
+      "I2_formula_not_extended_from_I_ge_3": true,
+      "I2_frozen494_average_rechecked": true,
+      "Fourier_escape_exact_reason": "all eigenvector entries have squared modulus 1/D",
+      "Fourier_escape_graph_ordering_and_H_are_new_inputs": true,
+      "Fourier_escape_average_error_diagnostic": 2.9628195227e-15,
+      "Fourier_escape_R_commutator_norm_diagnostic": 78.1342951555,
+      "restricted_sources_or_extra_graph_memory_not_excluded": true
+    },
+    "actual_port_separation_certificate": {
+      "inputs_have_same_pure_port_and_different_stationary_graph_sources": true,
+      "ordinary_initial_state_difference_trace_norm": 2,
+      "centered_final_port_effect_norm": "1/2",
+      "generic_remainder": "(2*K*t)^3/[6*(1-(2*K*t)/4)]",
+      "time_choice": "g_I/(4*K^3)",
+      "remainder_over_leading_at_most": "8/21",
+      "sign_strictly_positive_for_each_fixed_I": true,
+      "examples": [
+        {
+          "i": 3,
+          "H_norm_bound": "15",
+          "edge_gap": "30/2021",
+          "time": "1/909450",
+          "leading_difference": "1/55718923011750",
+          "third_order_remainder": "2/334310781072825",
+          "strict_actual_event_probability_gap": "1/111437846023500",
+          "common_population_predictor_worst_error": "1/222875692047000"
+        },
+        {
+          "i": 4,
+          "H_norm_bound": "21",
+          "edge_gap": "315/198448",
+          "time": "5/116687424",
+          "leading_difference": "125/42889825744693559296",
+          "third_order_remainder": "125/128669419343115883008",
+          "strict_actual_event_probability_gap": "125/85779651489387118592",
+          "common_population_predictor_worst_error": "125/171559302978774237184"
+        }
+      ]
+    },
+    "actual_original_instrument_diagnostic": {
+      "physical_one_excitation_dimension": 720,
+      "graph_dimension": 90,
+      "input_port": 3,
+      "measured_port": 0,
+      "p_plus": 4.11589673556e-13,
+      "p_minus": 3.93642449418e-13,
+      "difference": 1.79472241376e-14,
+      "ratio_to_exact_second_order": 0.999999999997,
+      "Taylor_order": 8,
+      "Taylor_operator_tail": "1/4017449540435999425902943263883550769235200000000",
+      "no_dense_full_H_spectrum_used": true,
+      "final_reading_is_actual_Lueders_port_instrument": true,
+      "floating_probabilities_do_not_replace_strict_Fraction_certificate": true
+    },
+    "finite_resource_and_scope_ledger": {
+      "ideal_known_graph_source": "I_G/D with an internal purifier",
+      "parity_measurement_projectors": "(I+R)/2 and (I-R)/2",
+      "new_controlled_label_permutation_and_flag_reading_are_extra_inputs": true,
+      "parity_protocol_not_claimed_generated_by_original_F": true,
+      "worst_parity_success_I_ge_3": "43/90",
+      "graph_purifier_and_every_failed_attempt_retained_in_internal_storage": true,
+      "samples_per_setting": "2384331557060600594410032000000",
+      "maximum_attempts_per_sample": 116,
+      "total_graph_source_capacity_upper_bound": "553164921238059337903127424000000",
+      "complete_capped_preparation_bank_diamond_error": "1/190746524564848047552802560000000",
+      "per_attempt_full_source_and_flag_error_budget": "1/22126596849522373516125096960000000",
+      "conditional_success_source_trace_error_bound": "1/47686631141212011888200640000000",
+      "subsequent_data_preparation_wait_and_read_diamond_error": "1/594335178792000",
+      "ideal_bank_cap_failure_per_sample": "91907620126140201292949939420007892668206479207223422052696498988631724735954866214560550323463224580073434100761057915838755421182171487979165233615817329604781715819752678949146949882563373121/49218808382846425964261924043794572697795656942952322131069235966734388442210954711892129083095780971052885584100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "independent_same_actual_protocol_replicates_are_an_extra_input": true,
+      "complete_source_wait_and_read_diamond_error_per_setting": "1/445751384094000",
+      "empirical_mean_accuracy_each": "1/891502768188000",
+      "statistical_failure_bound": "1/40",
+      "all_preparation_cap_failures_union_bound": "1/40",
+      "total_failure_bound": "1/20",
+      "surviving_estimated_event_probability_gap": "1/222875692047000",
+      "actual_huge_sampling_not_executed": true,
+      "asymptotic_gap": "g_I ~ 1/(2 I^5)",
+      "selected_exact_gaps": [
+        {
+          "i": 3,
+          "gap": "30/2021"
+        },
+        {
+          "i": 4,
+          "gap": "315/198448"
+        },
+        {
+          "i": 5,
+          "gap": "945/2480624"
+        },
+        {
+          "i": 6,
+          "gap": "13860/108056021"
+        },
+        {
+          "i": 7,
+          "gap": "7722/146091745"
+        },
+        {
+          "i": 8,
+          "gap": "45045/1803601798"
+        },
+        {
+          "i": 9,
+          "gap": "46410/3560508899"
+        },
+        {
+          "i": 10,
+          "gap": "348840/47534900621"
+        },
+        {
+          "i": 11,
+          "gap": "610470/139177494221"
+        },
+        {
+          "i": 12,
+          "gap": "100947/36685068512"
+        }
+      ],
+      "exact_population_closure_not_a_cognitive_axiom": true,
+      "geometry_may_legitimately_depend_on_graph_state": true,
+      "position_not_required_to_predict_all_internal_futures": true
+    }
+  }
+}

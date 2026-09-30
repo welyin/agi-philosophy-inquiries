@@ -1,0 +1,264 @@
+{
+  "round": 491,
+  "scientific_baseline_round": 490,
+  "reused_frozen_rounds": [
+    265,
+    267,
+    280,
+    283,
+    442,
+    443,
+    465,
+    472,
+    475,
+    490
+  ],
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "observations": {
+    "actual_record_chain": {
+      "transition": "M_delta(b,a)=sum_hg abs(U_(b,h),(a,g))^2/6",
+      "ideal_history_probability": "product of M_delta(a_(k+1),a_k)",
+      "record_instrument": "K_b=(|b><b| tensor I_G) U_delta; sum K_b^dag K_b=I",
+      "complete_history_isometry_retains_old_networks_purifiers_and_records": true,
+      "Markov_claim_only_for_classical_record_marginal": true,
+      "fresh_graph_must_be_independent_of_all_earlier_history": true,
+      "fresh_graph_marginal_I_over_6_alone_is_insufficient": true,
+      "correlated_two_step_path_delta4_coefficient": "1/6",
+      "independent_two_step_path_delta4_coefficient": "1/4",
+      "correlated_minus_independent_delta4": "-1/12",
+      "correlated_minus_independent_at_delta_point1": -7.86089870373e-06,
+      "old_networks_may_continue_own_H_while_isolated": true,
+      "no_closed_H_dissipation_or_free_graph_reset_claim": true
+    },
+    "short_step_origin": {
+      "exact_generator_times_six": [
+        [
+          -6,
+          3,
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          -18,
+          6,
+          3,
+          3,
+          3
+        ],
+        [
+          3,
+          6,
+          -18,
+          3,
+          3,
+          3
+        ],
+        [
+          0,
+          3,
+          3,
+          -6,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          3,
+          0,
+          -6,
+          0
+        ],
+        [
+          0,
+          3,
+          3,
+          0,
+          0,
+          -6
+        ]
+      ],
+      "expansion": "M_delta=I-J^2 delta^2 L_average+O(delta^4)",
+      "odd_orders_zero_from_real_symmetric_H": true,
+      "exact_S4_times_S2_covariance_order": 48,
+      "kappa_F_on_during_every_quantum_interval": true,
+      "graph_F_does_not_enter_second_order_port_population_generator": true,
+      "no_classical_Laplacian_added_to_H": true,
+      "remainder_bound_at_unit_couplings": "norm_2(R)<=26244 delta^4"
+    },
+    "finite_slow_mode_certificate": {
+      "delta": "1/1024",
+      "steps": 8388608,
+      "quantum_waiting_time": "8192",
+      "full_elapsed_time_also_includes_preparation_reading_routing_and_handoff": true,
+      "processing_parameter_n_delta_squared": "8",
+      "operator_remainder_bound": "6561/274877906944",
+      "operator_remainder_relative_bound": "<=delta^2/32",
+      "slow_eigenvalue_interval": [
+        "33554399/33554432",
+        "33554401/33554432"
+      ],
+      "middle_eigenvalue_interval": [
+        "33554335/33554432",
+        "33554337/33554432"
+      ],
+      "fast_eigenvalue_interval": [
+        "33554303/33554432",
+        "33554305/33554432"
+      ],
+      "exact_operator": "lambda_L^(-n) (M_delta^n-P0)",
+      "distance_to_leaf_difference_projector_bound": "less than 1/2000",
+      "normalization_gain_upper_bound": 19683,
+      "diagnostic_eigenvalues": [
+        0.999999046327,
+        0.999997138981,
+        0.999996185308
+      ],
+      "diagnostic_gain": 2980.94471944,
+      "diagnostic_operator_error": 1.12534459731e-07,
+      "exponential_lower_bound_via_finite_rational_series": "27663029411862709/9280784638125",
+      "no_arbitrary_spectral_cutoff_or_changed_H": true,
+      "no_identification_of_n_delta_squared_with_physical_time": true
+    },
+    "endpoint_quotient": {
+      "leaf_projector_times_four": [
+        [
+          3,
+          0,
+          0,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          0,
+          3,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          0,
+          0,
+          -1,
+          3,
+          -1
+        ],
+        [
+          -1,
+          0,
+          0,
+          -1,
+          -1,
+          3
+        ]
+      ],
+      "limiting_leaf_leaf_squared_distance": "2",
+      "limiting_leaf_to_common_internal_center_squared_distance": "3/4",
+      "both_internal_labels_have_same_limit": true,
+      "five_statistical_points_four_tetrahedron_vertices_and_center": true,
+      "affine_dimension_of_these_statistical_points": 3,
+      "finite_n_centered_record_map_still_rank_five": true,
+      "no_continuous_position_neighborhood_translation_or_dimension_selection": true,
+      "normalization_is_data_processing_not_unit_success_physical_amplification": true,
+      "old_quantum_correlations_and_future_process_not_encoded_by_three_statistics": true
+    },
+    "general_tree_boundary": {
+      "proven_family": "I>=2 internal degree3, L=I+2 degree1 leaves, full maximally mixed source on all labelled trees of these degrees",
+      "leaf_internal_edge_probability": "1/I",
+      "internal_internal_edge_probability": "2/I",
+      "spectrum": "0; 1 multiplicity I+1; 2+2/I multiplicity1; 3+2/I multiplicity I-1",
+      "exact_small_family_checks": [
+        {
+          "internal": 2,
+          "leaves": 4,
+          "source_trees": 6,
+          "slow_multiplicity": 3,
+          "nonzero_spectrum": [
+            "1 repeated 3",
+            "3",
+            "4 repeated 1"
+          ]
+        },
+        {
+          "internal": 3,
+          "leaves": 5,
+          "source_trees": 90,
+          "slow_multiplicity": 4,
+          "nonzero_spectrum": [
+            "1 repeated 4",
+            "8/3",
+            "11/3 repeated 2"
+          ]
+        }
+      ],
+      "each_fixed_I_requires_own_sufficiently_small_delta": true,
+      "no_six_point_delta_claim_uniform_in_size": true,
+      "three_slow_components_come_from_I_equals_two_not_cognitive_principles": true,
+      "no_minimal_reconfigurable_tree_selection_axiom_added": true
+    },
+    "resource_contract": {
+      "normalized_endpoint_vector_error_target": "1/100",
+      "normalized_truncation_error": "less than 1/2000",
+      "calibrated_lambda_identity": "lambda_L=M_delta(0,0)-M_delta(3,0)",
+      "calibrated_lambda_absolute_error": "1/396271131033600",
+      "each_calibration_probability_source_plus_instrument_error": "1/1585084524134400",
+      "each_calibration_probability_statistical_error": "1/1585084524134400",
+      "perturbed_normalization_gain_at_most": 59049,
+      "gain_calibration_error_bound": "6 n A delta_lambda <= epsilon/4",
+      "complete_each_step_channel_error": "1/198135565516800",
+      "each_step_control_source_error_budget": "1/396271131033600",
+      "two_active_network_handoff_window": "1/14265760717209600",
+      "all_history_source_error_bound": "n epsilon_step; amplified <=epsilon/4",
+      "terminal_each_probability_statistical_error": "1/70858800",
+      "six_inputs_times_six_terminal_effects": 36,
+      "each_input_six_terminal_effects_share_one_actual_history_channel": true,
+      "final_classical_effect_choice_does_not_change_prior_source_or_process": true,
+      "terminal_histories_per_effect": 40167756299520000,
+      "total_terminal_histories": 1446039226782720000,
+      "fresh_network_uses_for_terminal_histories": 12130256226103339253760000,
+      "two_calibration_effects": 2,
+      "calibration_trials_per_effect": 10049971794601509184277053440000,
+      "combined_statistical_failure_below": "1/100",
+      "no_experimental_trials_actually_run": true,
+      "every_network_graph_purifier_port_record_clock_route_and_isolation_counted": true,
+      "no_free_erasure_and_no_reuse_as_independent_source_of_same_unknown_network": true,
+      "old_hidden_records_never_used_as_extra_feedback": true
+    }
+  },
+  "scope": {
+    "actual_quantum_instruments_supply_this_specific_record_chain": true,
+    "diffusion_map_mathematics_reused_not_claimed_new": true,
+    "fresh_independent_network_sources_and_control_are_extra_inputs": true,
+    "no_closed_autonomous_H_dissipation_or_finite_resource_infinite_limit": true,
+    "no_physical_time_identification_of_delta_squared_steps": true,
+    "slow_quotient_does_not_derive_continuous_three_dimensional_space": true,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

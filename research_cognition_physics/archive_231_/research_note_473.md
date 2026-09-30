@@ -233,7 +233,7 @@ $$
 
 六树中只有四条a＝0到b＝5的非恒零路径；由已知部门排除其余路径，不使用未知人口。它们长度为2、2、3、3，所以L＝4、W＝10、\(m_*=3\)。直接复用472全部路径程序。
 
-对两种源分别估计自然等待后的距离，各给误差预算 \(\varepsilon_{m read}=g/4\)，总失败概率预算1／100。记 \(a=\varepsilon_{m read}/W\)，选h＝25并取
+对两种源分别估计自然等待后的距离，各给误差预算 \(\varepsilon_{\mathrm{read}}=g/4\)，总失败概率预算1／100。记 \(a=\varepsilon_{\mathrm{read}}/W\)，选h＝25并取
 
 $$
 \tau=\frac{a}{48m_*h^2},\qquad
@@ -247,7 +247,7 @@ $$
 于是除至多1／100的统计失败概率外，测得的距离差保持正确符号，且
 
 $$
-|\widehat d_s-\widehat d_t|\ge g-2\varepsilon_{m read}=g/2>0.
+|\widehat d_s-\widehat d_t|\ge g-2\varepsilon_{\mathrm{read}}=g/2>0.
 \tag{15}
 $$
 

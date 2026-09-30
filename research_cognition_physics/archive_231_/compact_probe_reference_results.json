@@ -1,0 +1,172 @@
+{
+  "date": "2026-09-30",
+  "round": 524,
+  "scientific_base_through_round": 523,
+  "tests_run": 8,
+  "failures": 0,
+  "errors": 0,
+  "hypotheses": {
+    "background": "given 3+1 Minkowski, c=1",
+    "temperature": 1.0,
+    "massive_squared": 1.25,
+    "ratio": 0.5,
+    "coupling": 0.05,
+    "coupling_region": "0<t<.25, |x|<1",
+    "terminal_probe_test": ".5<t<.55, radial plateau 1 to 1.6, support radius 2",
+    "positive_local_potential": "lambda*rho*(c_R*R+c_M*M-chi)^2/2",
+    "independent_probe_vacua": true,
+    "terminal_probe_reading_is_input": true
+  },
+  "analytic_gain_certificate": {
+    "matrix_row_norm": 2.341640786499874,
+    "volterra_contraction": 0.2067711584479053,
+    "advanced_solution_sup_error_bound": 0.01227862835558314,
+    "relative_source_error_bound": 0.11500854783882944,
+    "pointwise_q_over_lambda_rho_lower": 0.22124786304029265,
+    "mass_matrix_eigenvalues": [
+      -2.835855154282398e-17,
+      0.05805186603734657,
+      1.2919481339626528
+    ]
+  },
+  "diagnostics": {
+    "radial_solutions": [
+      {
+        "dr": 0.025,
+        "dt": 0.0025,
+        "gain": 0.0023007553245133353,
+        "born_gain": 0.002300991904392936,
+        "relative_gain_correction": 0.00010281647629839519,
+        "pointwise_relative_source_correction": 0.000791518660248693,
+        "free_advanced_interior_error": 1.8132551793392793e-07,
+        "forward_probe_mean": -0.0010289290610412843,
+        "forward_advanced_reciprocity_residual": 3.0357660829594124e-18
+      },
+      {
+        "dr": 0.0125,
+        "dt": 0.00125,
+        "gain": 0.0023007553809186836,
+        "born_gain": 0.0023009919955602844,
+        "relative_gain_correction": 0.00010283157962187595,
+        "pointwise_relative_source_correction": 0.0007989566713153088,
+        "free_advanced_interior_error": 4.146925025594328e-10,
+        "forward_probe_mean": -0.001028929086266526,
+        "forward_advanced_reciprocity_residual": 6.288372600415926e-18
+      }
+    ],
+    "relative_gain_grid_change": 2.4516012759051072e-08,
+    "finite_spectral_diagnostics": [
+      {
+        "quadrature_endpoint": 30.0,
+        "quadrature_order": 360,
+        "finite_k_is_diagnostic_not_physical_cutoff": true,
+        "normalized_low_frequency_filter_real": [
+          1.0000000000000004,
+          0.9999999993611396,
+          0.9999999361139335
+        ],
+        "normalized_low_frequency_filter_imag": [
+          0.0,
+          1.2201470804373757e-05,
+          0.00012201470092580095
+        ],
+        "probe_vacuum_variance_truncated": 10.443029802140131,
+        "coordinate_variance_majorant_integral_truncated": 301.03008615400154,
+        "same_source_difference_examples": [
+          {
+            "length": 8.0,
+            "coordinate_variance_truncated": 301.03006842759584,
+            "qubit_antipodal_gap_from_truncated_variance": 0.1921328869100119
+          },
+          {
+            "length": 16.0,
+            "coordinate_variance_truncated": 301.0300685795598,
+            "qubit_antipodal_gap_from_truncated_variance": 0.36186689340211875
+          },
+          {
+            "length": 32.0,
+            "coordinate_variance_truncated": 301.0300686554508,
+            "qubit_antipodal_gap_from_truncated_variance": 0.5912049971335315
+          }
+        ],
+        "six_outgoing_probe_read_energy_truncated": 172354.4928648327,
+        "reference_mean_gradient_energy_density": 98304.0,
+        "b": 256.0,
+        "terminal_readout_noise": 0.01,
+        "no_certified_continuum_tail_error": true
+      },
+      {
+        "quadrature_endpoint": 40.0,
+        "quadrature_order": 480,
+        "finite_k_is_diagnostic_not_physical_cutoff": true,
+        "normalized_low_frequency_filter_real": [
+          1.0000000000000004,
+          0.9999999993611396,
+          0.9999999361139335
+        ],
+        "normalized_low_frequency_filter_imag": [
+          0.0,
+          1.2201470804373757e-05,
+          0.00012201470092580095
+        ],
+        "probe_vacuum_variance_truncated": 10.443035455516089,
+        "coordinate_variance_majorant_integral_truncated": 301.0302491162764,
+        "same_source_difference_examples": [
+          {
+            "length": 8.0,
+            "coordinate_variance_truncated": 301.0302313898643,
+            "qubit_antipodal_gap_from_truncated_variance": 0.1921328370629116
+          },
+          {
+            "length": 16.0,
+            "coordinate_variance_truncated": 301.03023154182824,
+            "qubit_antipodal_gap_from_truncated_variance": 0.3618668105840235
+          },
+          {
+            "length": 32.0,
+            "coordinate_variance_truncated": 301.03023161771927,
+            "qubit_antipodal_gap_from_truncated_variance": 0.5912049123095353
+          }
+        ],
+        "six_outgoing_probe_read_energy_truncated": 172357.58795937675,
+        "reference_mean_gradient_energy_density": 98304.0,
+        "b": 256.0,
+        "terminal_readout_noise": 0.01,
+        "no_certified_continuum_tail_error": true
+      }
+    ],
+    "majorant_integral_endpoint_change": 0.0001629622748851034,
+    "majorant_integral_grid_change": 2.6208375459191302e-05,
+    "spacelike_support_margin": 3.45,
+    "causal_collection_time_lower_bound": 6.55,
+    "qubit_instrument_reuse_check": {
+      "snr": 3.0,
+      "normalization_residual": 4.1300296516055823e-14,
+      "mean_direction": 0.8894436357739923,
+      "second_axial_moment": 0.8069012503087011,
+      "choi_minimum": 0.002635323519768501,
+      "tp_residual": 3.3306690738754696e-16,
+      "actual_vs_averaged_luders_choi_frobenius": 0.05949935129836346
+    }
+  },
+  "dependency_hashes": {
+    "thermal_direction_bridge_model.py": "1adeab319ab6237e33566d941344f2877446cc2bf728fb15f378e2e7b58524f3",
+    "research_note_523.md": "140508aa0c2e903eb83cecf8ccd8693b06e4c56f78994156bc6bddb22afc64d8"
+  },
+  "scope": {
+    "positive_compact_interaction": true,
+    "nonzero_infrared_gain_at_declared_nonzero_coupling_proved": true,
+    "continuum_reference_uv_cutoff_removed": true,
+    "exact_induced_observable_and_gaussian_record": true,
+    "finite_smearing_noise_and_terminal_read_recoil_proved": true,
+    "terminal_probe_spectral_instrument_is_additional_input": true,
+    "causal_composition_uses_local_hyperbolic_model": true,
+    "thermal_absolute_precision_lower_threshold_retained": "d > 2",
+    "finite_menu_qubit_contrast_retained_conditionally": true,
+    "numerical_integrals_are_not_interval_certificates": true,
+    "exact_switching_work_or_autonomous_control_budget_solved": false,
+    "spacetime_or_lorentz_symmetry_derived": false,
+    "quantum_einstein_backreaction_solved": false,
+    "stage_complete": false
+  }
+}

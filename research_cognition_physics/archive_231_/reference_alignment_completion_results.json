@@ -1,0 +1,99 @@
+{
+  "date": "2026-09-30",
+  "diagnostic_tests": 6,
+  "failures": 0,
+  "errors": 0,
+  "numbered_round_created": false,
+  "numbered_test_increment": 0,
+  "dependency_sha256": {
+    "material_reference_geometry.py": "5672ddf244688345b2cabd57e38139597fe028cdcf723a456e875bae4a405940"
+  },
+  "inputs": {
+    "m": 1.0,
+    "r": 0.25,
+    "lam": 0.25,
+    "massive_mode_mass_squared": 1.0625,
+    "readout_sigma": 0.4
+  },
+  "diagnostics": {
+    "stability": [
+      {
+        "d": 3,
+        "n": 3,
+        "laplacian_min": 1.7573593128807148,
+        "bare_min_eigenvalue": 1.6983423185057673,
+        "completed_min_eigenvalue": 1.7573593128807148
+      },
+      {
+        "d": 3,
+        "n": 127,
+        "laplacian_min": 0.001807087822774679,
+        "bare_min_eigenvalue": -0.05720990655217274,
+        "completed_min_eigenvalue": 0.0018070878227746806
+      }
+    ],
+    "canonical_energy_residual": 3.552713678800501e-15,
+    "classical_geometry": [
+      {
+        "d": 2,
+        "stress_residual": 2.7755575615628914e-17,
+        "friedmann_residual": 1.3877787807814457e-17
+      },
+      {
+        "d": 3,
+        "stress_residual": 2.7755575615628914e-17,
+        "friedmann_residual": 4.163336342344337e-17
+      },
+      {
+        "d": 4,
+        "stress_residual": 2.7755575615628914e-17,
+        "friedmann_residual": 1.3877787807814457e-17
+      }
+    ],
+    "quantum_record": {
+      "covariance_identity_residual": 1.4210854715202004e-14,
+      "reference_variance": 0.5260994206616217,
+      "massive_mode_calibration_noise": 5.0535651172262055,
+      "readout_calibration_noise": 2.7200000000000006,
+      "total_calibrated_variance": 8.299664537887828
+    },
+    "readout_recoil": {
+      "normal_momentum_covariance_increment": [
+        [
+          0.09191176470588233,
+          -0.3676470588235293
+        ],
+        [
+          -0.3676470588235293,
+          1.4705882352941173
+        ]
+      ],
+      "kinetic_energy_increment_per_read": 0.7812499999999998
+    },
+    "source_and_heavy_limit": {
+      "aligned_probe_mean_norm": 1.7986923354612536,
+      "fixed_lambda_examples": [
+        {
+          "bare_mass": 1.0,
+          "fixed_lambda": 0.25,
+          "calibrated_massive_mode_variance_at_laplacian_one": 5.570484990582331
+        },
+        {
+          "bare_mass": 4.0,
+          "fixed_lambda": 0.25,
+          "calibrated_massive_mode_variance_at_laplacian_one": 496.655902701288
+        }
+      ]
+    }
+  },
+  "scope": {
+    "positive_potential_is_added_model_choice": true,
+    "exact_classical_reference_geometry_embedding": true,
+    "same_blank_probe_protocol_inherited": false,
+    "finite_patch_quantum_record_covariance": true,
+    "quantum_vacuum_stress_solved_with_einstein": false,
+    "quantum_clock_control_included": false,
+    "spatial_dimension_selected": false,
+    "complete_unification": false
+  }
+}

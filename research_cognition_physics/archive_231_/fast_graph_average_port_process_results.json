@@ -1,0 +1,255 @@
+{
+  "round": 494,
+  "scientific_baseline_round": 492,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "baseline_results_sha256": "c38a0886b13ee3c8d341007665bed3cb184962af3280fb9588881bab73df7b74",
+  "scope": {
+    "retained_same_D_and_G": true,
+    "real_initial_port_pinch_and_timed_Lueders_are_extra_inputs": true,
+    "arbitrary_initial_graph_and_passive_reference": true,
+    "exact_classical_microstep_history_not_claimed": true,
+    "graph_averaging_is_special_six_graph_identity": true,
+    "no_stationary_information_erasure_claim": true,
+    "no_closed_H_natural_dissipation_claim": true,
+    "no_spatial_dimension_or_complete_position_contract_derived": true,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  },
+  "observations": {
+    "exact_instrument_expansion": {
+      "full_H_dimension": 384,
+      "active_dimension": 36,
+      "complex_matrix_unit_checks": 216,
+      "Kraus_out_rate_diagonal": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "graph_A": "minus_i_commutator_F",
+      "B_is_GKSL": true,
+      "original_instrument_requires_external_to_H_measurement_contract": true
+    },
+    "exact_fast_average": {
+      "energies": [
+        4,
+        0,
+        -2
+      ],
+      "energy_ranks": [
+        1,
+        3,
+        2
+      ],
+      "fast_period": "pi",
+      "complement_signs": [
+        1,
+        -1,
+        1
+      ],
+      "averaged_leaf_center_effect": "I/2",
+      "scalar_effect_closure_verified_for_all_six_ports": true,
+      "independent_graph_source_not_required": true,
+      "arbitrary_passive_reference_supported": true,
+      "twice_classical_laplacian": [
+        [
+          2,
+          -1,
+          -1,
+          0,
+          0,
+          0
+        ],
+        [
+          -1,
+          6,
+          -2,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -2,
+          6,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          0,
+          -1,
+          -1,
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          -1,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          -1,
+          -1,
+          0,
+          0,
+          2
+        ]
+      ],
+      "finite_role_eigenvalues": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "finite_role_multiplicities": [
+        1,
+        3,
+        1,
+        1
+      ],
+      "role_multiplicity_not_spatial_dimension": true
+    },
+    "uniform_error_certificate": {
+      "delta_max": "1/64",
+      "original_third_order_coefficient": "124416/119",
+      "surrogate_third_order_coefficient": "106265371/761568",
+      "total_third_order_coefficient": "107396823437/90626592",
+      "adopted_coefficient": 1500,
+      "generator_A_norm_bound": 8,
+      "generator_B_norm_bound": 6,
+      "periodic_primitive_bound": 48,
+      "averaging_bound": "48*delta*(1+12*tau)",
+      "final_ordinary_diamond_bound": "delta*(48+2076*tau)",
+      "finite_two_coarse_interval_contract": {
+        "delta": "1/4194304",
+        "microsteps_per_interval": 4398046511104,
+        "tau_per_interval": "1/4",
+        "coarse_intervals": 2,
+        "analytic_error_per_interval": "567/4194304",
+        "analytic_error_sum": "567/2097152",
+        "instrument_steps_and_six_state_records": 8796093022209,
+        "record_qubit_encoding_capacity": 26388279066627,
+        "ideal_wait_total": "2097152",
+        "whole_instrument_diamond_error_per_step": "1/35184372088836000",
+        "optional_source_trace_error": "1/4000",
+        "total_ordinary_trace_or_diamond_error": "201947/262144000",
+        "certified_upper_bound": "1/1000",
+        "actually_run_microstep_count": 0,
+        "active_networks": 1,
+        "new_graph_sources": 0,
+        "new_data_batches": 0,
+        "detection_hardware_clocks_and_isolation_not_derived": true
+      }
+    },
+    "fixed_point_numerical_diagnostic": {
+      "delta": "1/1024",
+      "actual_microsteps_per_interval": 262144,
+      "tau": "1/4",
+      "source_has_initial_port_coherence": true,
+      "real_initial_pinch": true,
+      "source_graph_reference_entanglement": true,
+      "one_step_full_instrument_matrix_error": 2.71053774276e-20,
+      "endpoint_joint_port_R_trace_error": 3.43136620804e-05,
+      "analytic_ordinary_bound": "567/1024",
+      "fast_generator_reverse_used_only_in_proof": true,
+      "floating_power_is_diagnostic_not_general_certificate": true
+    },
+    "coarse_history_diagnostic": {
+      "recorded_coarse_times": [
+        "1/4",
+        "1/2"
+      ],
+      "joint_two_records_and_initial_R_trace_error": 0.000109655695139,
+      "analytic_uniform_error_sum": "567/512",
+      "conditional_graph_retained_between_intervals": true,
+      "graph_traced_only_for_reported_records": true,
+      "full_microstep_record_history_not_claimed_Markov": true,
+      "full_DG_plus_records_not_claimed_classical": true,
+      "no_feedback_from_ignored_records": true,
+      "per_normalized_rare_history_error_not_claimed": true
+    },
+    "recursive_size_boundary": {
+      "internal_vertices": [
+        0,
+        1,
+        2
+      ],
+      "leaves": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "tree_count": 90,
+      "NNI_graph_degree": 8,
+      "permutation": [
+        1,
+        0,
+        2,
+        4,
+        3,
+        6,
+        5,
+        7
+      ],
+      "trace_Q": 30,
+      "trace_R": 4,
+      "trace_QR": 2,
+      "stationary_graph_sources": [
+        "(I+R)/94",
+        "(I-R)/86"
+      ],
+      "edge_03_expectations": [
+        "16/47",
+        "14/43"
+      ],
+      "difference": "30/2021",
+      "averaged_edge_effect_cannot_be_I_over_3": true,
+      "graph_independent_closed_port_semigroup_not_universal": true,
+      "no_claim_all_larger_models_or_geometries_fail": true
+    }
+  }
+}

@@ -1,0 +1,333 @@
+{
+  "round": 487,
+  "baseline_round": 485,
+  "scientific_baselines": [
+    474,
+    479,
+    480,
+    485
+  ],
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "observations": {
+    "exact_operator_identities": {
+      "active_dimension": 384,
+      "H_norm_bound": 9,
+      "Q_order": [
+        "D13-D10",
+        "D14-D10",
+        "D15-D10"
+      ],
+      "K_commutes_with_Q_and_first_Heisenberg_derivative": true,
+      "second_derivative_operator": "B_j=-[H,[H,Q_j]]",
+      "second_derivative_norm_bound": 324,
+      "K_second_derivative_commutator_max_entries": [
+        8,
+        8,
+        8
+      ],
+      "control_not_claimed_invisible_at_all_orders": true,
+      "Gaussian_integer_trace_safety_example_upper": 382205952,
+      "no_float_used_for_integer_certificates": true
+    },
+    "preparation_family": {
+      "state": "w eta(r) tensor |s><s| + (1-w) eta(s) tensor I6/6",
+      "domain": "0<=w<=1, |r|<=1, |s|<=1",
+      "initial_Q_and_velocity_zero_for_entire_family": true,
+      "acceleration": "-(4*w/3)*r",
+      "exact_affine_branch_records": [
+        {
+          "graph": "uniform_pure",
+          "source_affine_basis": [
+            "I",
+            "X",
+            "Y",
+            "Z"
+          ],
+          "acceleration_coefficients": [
+            [
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "-4/3",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "-4/3",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "-4/3"
+            ]
+          ]
+        },
+        {
+          "graph": "maximally_mixed",
+          "source_affine_basis": [
+            "I",
+            "X",
+            "Y",
+            "Z"
+          ],
+          "acceleration_coefficients": [
+            [
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0"
+            ]
+          ]
+        }
+      ],
+      "seed_weight": "1/2",
+      "seed_r": [
+        1,
+        0,
+        0
+      ],
+      "seed_s": [
+        0,
+        1,
+        0
+      ],
+      "seed_acceleration": [
+        "-2/3",
+        "0",
+        "0"
+      ],
+      "seed_is_frozen_480_original_preparation_not_its_post_pulse_center": true,
+      "density_identity_with_frozen_480_columns_exact": true,
+      "full_arbitrary_source_family_not_proved_by_sampling": true
+    },
+    "all_control_acceleration_cone": {
+      "controls": "positive time, real L1 u, Hamiltonian H+u(t)K; fixed initial family member",
+      "declared_action": "A=9*T+integral |u|",
+      "prefix_trace_distance_upper": "2*A",
+      "exact_acceleration": "q_j_double_dot(t)=Tr rho(t) B_j almost everywhere",
+      "aligned_coordinate": "sign(r_j)*Q_j",
+      "family_if_w_abs_rj_positive": "A<=w*abs(r_j)/972 implies signed_Delta_Q_j<=-w*abs(r_j)*T^2/3",
+      "family_exact_rational_examples": [
+        {
+          "w": "1/2",
+          "r_j": "1",
+          "alpha": "2/3",
+          "cutoff": "1/1944",
+          "negative_quadratic_coefficient": "1/6"
+        },
+        {
+          "w": "3/4",
+          "r_j": "-1/2",
+          "alpha": "1/2",
+          "cutoff": "1/2592",
+          "negative_quadratic_coefficient": "1/8"
+        },
+        {
+          "w": "1/7",
+          "r_j": "2/3",
+          "alpha": "8/63",
+          "cutoff": "1/10206",
+          "negative_quadratic_coefficient": "2/63"
+        }
+      ],
+      "seed_cutoff": "1/1944",
+      "seed_bound": "Delta_Qx<=-T^2/6<0",
+      "allowed_control_strength_not_bounded_pointwise": true,
+      "finite_words_and_L1_controls_covered_analytically": true,
+      "state_error_eta_bound": "signed_Delta_Q_j <= 18*eta*T+(-alpha+324*eta+648*A)*T^2/2",
+      "fixed_nonzero_eta_does_not_give_uniform_sign_for_arbitrarily_small_T": true,
+      "robust_finite_example_eta": "1/10000000000000000",
+      "robust_finite_example_upper": "-4319599997299757/150000000000000000000000000",
+      "no_arbitrary_generator_noise_theorem": true,
+      "changing_r_between_runs_is_changing_the_initial_source_not_continuation": true
+    },
+    "finite_control_diagnostic": {
+      "schedule": [
+        {
+          "time": "1/200000",
+          "area": "1/40000"
+        },
+        {
+          "time": "1/400000",
+          "area": "-1/80000"
+        },
+        {
+          "time": "1/400000",
+          "area": "1/80000"
+        }
+      ],
+      "time": "1/100000",
+      "action": "7/50000",
+      "strict_negative_gap": "1/60000000000",
+      "stronger_negative_gap": "10799/375000000000000",
+      "actual_delta_Qx": -3.333305853559e-11,
+      "Q_at_segment_endpoints": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          -8.333167489383e-12,
+          3.295974604356e-17,
+          4.423530672091e-17
+        ],
+        [
+          -1.874989052908e-11,
+          3.209238430557e-17,
+          5.637827271133e-17
+        ],
+        [
+          -3.333305853559e-11,
+          6.071532165919e-17,
+          1.248994098356e-16
+        ]
+      ],
+      "max_conditional_leaf_mean_error": 2.22044604925e-15,
+      "reference_matching_protection_follows_475_477_symmetry_not_round486": true,
+      "unknown_R_recovery_residual": 7.599913879151e-15,
+      "mathematical_inverse_not_claimed_as_allowed_negative_time": true,
+      "arbitrary_R_information_preservation_not_arbitrary_R_leaf_moment_protection": true,
+      "original_data_graph_correlations_retained": true
+    },
+    "scope_boundary": {
+      "family_degenerate_case": "w=0 or r=0 has zero initial acceleration",
+      "zero_acceleration_example": "w=0, s=e_x",
+      "exact_nonstationary_H_commutator_max": [
+        8,
+        10
+      ],
+      "frozen_round479_two_coefficient_classification_reused": true,
+      "degenerate_family_all_control_outputs": "(1-w)*(a*s+b*K_skew*s)",
+      "degenerate_family_fixed_plane": "span{s,K_skew*s}, dimension at most 2",
+      "degenerate_s_parallel_ones_at_most_one_dimension": true,
+      "degenerate_s_zero_or_w_one_gives_zero_output": true,
+      "exact_full_plane_reachability_not_claimed": true,
+      "mixed_graph_finite_control_Q": [
+        6.544933200991e-05,
+        -9.277848562924e-06,
+        9.277848562782e-06
+      ],
+      "entire_family_dichotomy": "w*r nonzero: low-action halfspace; w*r=0: all-action fixed plane",
+      "all_fixed_two_source_family_members_fail_continuous_low_action_3D_neighborhood_under_declared_contract": true,
+      "no_claim_all_instantaneously_stationary_states_fail": true,
+      "no_claim_all_control_classes_fail": true,
+      "no_claim_no_future_information_without_position_summary": true,
+      "later_endpoint_access_from_seed_not_proved_by_481_current_chart_theorem": true,
+      "remaining_open_case": "zero acceleration states outside this family or broader sourced relational controls"
+    },
+    "actual_readout_and_resources": {
+      "actual_CP_instrument_round": 472,
+      "diagnostic_probe_wait": "1/65536",
+      "diagnostic_records": [
+        [
+          {
+            "ordered_edge": [
+              1,
+              0
+            ],
+            "measured_port": 1,
+            "probabilities": [
+              0.4999961853027,
+              0.5000038146973
+            ]
+          },
+          {
+            "ordered_edge": [
+              1,
+              3
+            ],
+            "measured_port": 1,
+            "probabilities": [
+              0.4999961853027,
+              0.5000038146973
+            ]
+          }
+        ],
+        [
+          {
+            "ordered_edge": [
+              1,
+              0
+            ],
+            "measured_port": 1,
+            "probabilities": [
+              0.4999961853027,
+              0.5000038146973
+            ]
+          },
+          {
+            "ordered_edge": [
+              1,
+              3
+            ],
+            "measured_port": 1,
+            "probabilities": [
+              0.4999961853027,
+              0.5000038146973
+            ]
+          }
+        ]
+      ],
+      "true_Qx_before_after": [
+        0.0,
+        -3.333322506904e-11
+      ],
+      "instrument_Qx_before_after": [
+        3.637978807092e-12,
+        -9.094947017729e-11
+      ],
+      "diagnostic_each_Qx_bias_upper": "162/32765",
+      "diagnostic_probe_not_claimed_to_certify_tiny_quadratic_gap": true,
+      "rigorous_negative_gap": "1/60000000000",
+      "each_setting_complete_source_diamond_error": "1/480000000000",
+      "same_actual_prepared_state_for_both_edge_readouts_in_each_setting": true,
+      "edge_selected_after_common_source_preparation_and_without_old_record_feedback": true,
+      "differing_edge_specific_sources_need_separate_error_accounting": true,
+      "each_adjacency_mean_error": "1/960000000000",
+      "certified_probe_wait": "1/1244160000000000",
+      "complete_storage_handoff_and_probe_instrument_diamond_error": "1/4777574400000000000000000000",
+      "independent_means": 4,
+      "copies_per_mean": "114126085737676800000000000000000000000000000000000000000",
+      "total_known_history_preparations": "456504342950707200000000000000000000000000000000000000000",
+      "simultaneous_failure_probability_less_than": "1/100",
+      "negative_measured_difference_magnitude_lower": "1/120000000000",
+      "old_complete_data_moved_to_isolated_internal_storage_and_G_remains_active": true,
+      "old_storage_graph_record_reference_correlations_retained": true,
+      "final_CP_readout_can_disturb_G": true,
+      "no_clone_of_unknown_state_or_enormous_sampling_run": true,
+      "source_control_clock_storage_and_repetition_are_explicit_extra_inputs": true,
+      "selected_action_not_identified_with_unique_cognitive_cost_or_dissipation": true
+    }
+  },
+  "scope": {
+    "zero_initial_velocity_not_sufficient_for_low_action_two_sided_motion": true,
+    "explicit_two_source_family_only": true,
+    "no_complete_cognitive_or_spatial_no_go": true,
+    "independent_of_parallel_round486": true,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "round": 536,
+  "tests_run": 8,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "exact_common_canonical_normalization_and_raw_scale_cancellation",
+    "unweighted_literature_limit_and_lambda_h4_over_24_conversion",
+    "constructive_necessary_sufficient_neutrino_completion_including_rank_boundaries",
+    "negative_budget_outside_fourth_moment_interval_and_zero_residual_controls",
+    "flavour_unitaries_preserve_the_two_boundary_moments_not_the_full_Majorana_spectrum",
+    "sharp_top_plus_three_neutrino_envelope_and_exact_square_remainder",
+    "frozen_gauge_benchmark_fixes_same_weight_and_matter_budget_without_refitting",
+    "simultaneous_gauge_and_matter_witness_and_strictly_excluded_diagnostic_target"
+  ],
+  "rational_normalization_cases": [
+    {
+      "N": 3,
+      "ng": 1,
+      "r": "1",
+      "T": "4/9",
+      "lambda_exact": "257/3600"
+    },
+    {
+      "N": 3,
+      "ng": 1,
+      "r": "7/3",
+      "T": "16/27",
+      "lambda_exact": "3152/38025"
+    },
+    {
+      "N": 3,
+      "ng": 3,
+      "r": "1",
+      "T": "4/3",
+      "lambda_exact": "2791/30576"
+    },
+    {
+      "N": 3,
+      "ng": 3,
+      "r": "7/3",
+      "T": "16/9",
+      "lambda_exact": "39184/413751"
+    },
+    {
+      "N": 5,
+      "ng": 1,
+      "r": "1",
+      "T": "2/3",
+      "lambda_exact": "851/12675"
+    },
+    {
+      "N": 5,
+      "ng": 1,
+      "r": "7/3",
+      "T": "22/27",
+      "lambda_exact": "28457/378225"
+    },
+    {
+      "N": 5,
+      "ng": 3,
+      "r": "1",
+      "T": "2",
+      "lambda_exact": "981/10933"
+    },
+    {
+      "N": 5,
+      "ng": 3,
+      "r": "7/3",
+      "T": "22/9",
+      "lambda_exact": "322663/3486639"
+    }
+  ],
+  "constructive_moment_cases": 48,
+  "max_completion_residual": 0.0,
+  "max_flavour_matrix_residual": 0.0,
+  "exact_top_envelopes": [
+    {
+      "r": "1/2",
+      "minimum": "10/27",
+      "maximum": "10/3"
+    },
+    {
+      "r": "1",
+      "minimum": "5/18",
+      "maximum": "5/3"
+    },
+    {
+      "r": "7/3",
+      "minimum": "1/6",
+      "maximum": "5/7"
+    },
+    {
+      "r": "5",
+      "minimum": "5/54",
+      "maximum": "5/9"
+    }
+  ],
+  "historical_boundary": {
+    "source": "frozen round 531 historical gauge-only one-loop diagnostic; not a current fit",
+    "matching_scale_GeV": 12476331729.144415,
+    "r": 2.32321410578,
+    "gw_squared": 0.322118666767,
+    "T": 1.714706630671,
+    "all_top_values_lambda_min": 0.171992793331,
+    "all_top_values_lambda_max": 0.738075163372,
+    "maximum_top_Yukawa": 0.756021743662,
+    "allowed_intervals": [
+      {
+        "top_Yukawa_input": 0.0,
+        "lambda_min": 0.246025054457,
+        "lambda_max": 0.738075163372
+      },
+      {
+        "top_Yukawa_input": 0.3,
+        "lambda_min": 0.188817669581,
+        "lambda_max": 0.538109967938
+      },
+      {
+        "top_Yukawa_input": 0.5,
+        "lambda_min": 0.187221743568,
+        "lambda_max": 0.342968928203
+      },
+      {
+        "top_Yukawa_input": 0.7,
+        "lambda_min": 0.425082474256,
+        "lambda_max": 0.435103707085
+      }
+    ]
+  },
+  "joint_witness": {
+    "top_Yukawa": 0.5,
+    "lambda_input": 0.2,
+    "neutrino_Yukawas": [
+      0.466593549489,
+      0.314274565113,
+      0.314274565113
+    ],
+    "reconstructed_second_moment": 1.714706630671,
+    "reconstructed_lambda": 0.2,
+    "diagnostic_lambda_013_excluded_in_top_only_family": true,
+    "any_low_energy_or_current_experimental_interpretation": false
+  },
+  "dependency_hashes": {
+    "research_note_535.md": "6c889aa14294ede58a803f8653f945308ef9e6845ac04a0e67d415832eba0b56",
+    "fixed_volume_scalar_stability_results.json": "4f2fce80ba1c36a3346051bf823b5ff37d2e446345b5dfc62261574ce395e1d6",
+    "joint_gauge_matter_constraints_results.json": "c2ede9a75cc2e0e13ebce2b65b9a2eaf8276518c7d6147943a21fd232f4e29c3",
+    "research_note_532.md": "d4619416433081582ec2b177be355cc8326148d28768d2ab495b5b74ac96e224",
+    "research_note_533.md": "cfc98f3792ffc7b13cc6a869d2c212ac3c267f5c2dbde69c324e90c0377ce6f3",
+    "unified_physics_condition_ledger_535.md": "2f0c683b46c2f61ba4a100c94ca48491212effb570fa0aa2183457433416723d"
+  },
+  "scope": {
+    "ordinary_group_selection_and_weighted_action_branch": true,
+    "all_ng_right_handed_neutrinos_active_at_matching": true,
+    "canonical_fermion_action_supplied": true,
+    "exact_tree_level_dimension_four_boundary_feasibility": true,
+    "general_flavour_mixing_only_for_second_and_fourth_Yukawa_moments": true,
+    "sharp_top_envelope_assumes_other_charged_Yukawas_zero": true,
+    "RG_evolution_or_thresholds_or_seesaw_observations_checked": false,
+    "complete_stable_gravitating_vacuum_or_SM_or_cognition_derived": false
+  }
+}

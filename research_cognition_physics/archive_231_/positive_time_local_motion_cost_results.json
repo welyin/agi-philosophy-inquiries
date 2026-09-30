@@ -1,0 +1,247 @@
+{
+  "round": 485,
+  "baseline_round": 481,
+  "scientific_baselines": [
+    480,
+    481
+  ],
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "observations": {
+    "exact_control_and_observables": {
+      "active_dimension": 384,
+      "H_norm_bound": 9,
+      "K": "SWAP_12 tensor I_G",
+      "K_norm": 1,
+      "Q_order": [
+        "D13-D10",
+        "D14-D10",
+        "D15-D10"
+      ],
+      "Q_norm_bound": 1,
+      "K_commutes_with_each_Q_exactly": true,
+      "commutator_row_norms": [
+        4,
+        4,
+        4
+      ],
+      "general_velocity_operator_bound": 18,
+      "original_H_remains_on_and_negative_u_is_allowed": true,
+      "no_negative_H_or_reset_or_instantaneous_pulse_permission": true,
+      "integer_matrix_equalities_not_floating_tolerance_tests": true
+    },
+    "actual_center_velocity_certificate": {
+      "preparation_and_correlated_branch_record_round": 480,
+      "W_center": "exp(-i*(2/5)*H) exp(-i*(tau*H+(pi/2)*K)) exp(-i*(1/5)*H)",
+      "tau": "1/10000000000",
+      "center_is_actual_finite_H_on_output": true,
+      "rational_ideal_velocity": "42410581353392466792152834314539633550276429014989324408133090152007048247260202986988466717718363087486440383171754765021931336868508893193409371/299687860830335254212633334060143965351865421695837230482479068124035686926697499531549385894095229231343385387655035797963005665211675389403856896",
+      "finite_pulse_and_integer_entry_error_upper": "3240001/100000000000000",
+      "rational_certified_lower": "258853586691301141422621426224838157154976502532325090385680323165163673326554603302735686770769925689343703218711882148101165359552891298086393051520645331/1829149541200776698075154626831933382274569224217756533706537281030491253214706418039241857263764826851461092453949193102801548249582979671654400000000000000",
+      "rational_certified_upper": "258853705220227994223775477028819478956796312592056311080788062479453614848008421440775869842003061218449758489927702385857957404955273902028467434319198419/1829149541200776698075154626831933382274569224217756533706537281030491253214706418039241857263764826851461092453949193102801548249582979671654400000000000000",
+      "strict_simple_velocity_interval": [
+        "1/8",
+        "3/20"
+      ],
+      "actual_center_numerical_velocity": 0.141515846648,
+      "exact_frozen_480_Python_integer_certificate_recomputed": true,
+      "numerical_velocity_not_used_as_strict_proof": true
+    },
+    "uniform_action_cone": {
+      "admitted_controls": "real L1 control u on [0,T], T>0; in particular every finite piecewise-constant word",
+      "declared_budget": "A=9*T+integral_0^T |u(t)| dt",
+      "all_prefix_trace_norm_distance_upper": "2*A",
+      "all_prefix_velocity_change_upper": "36*A",
+      "cutoff": "1/576",
+      "uniform_positive_velocity_lower": "1/16",
+      "endpoint_inequality": "Qx(T)-Qx(0) >= T/16 > 0 whenever A <= 1/576",
+      "derivation_uses_unitary_integral_and_commutator_norm_not_time_grid": true,
+      "arbitrary_large_finite_strength_is_covered_by_integrated_budget": true,
+      "initial_trace_error_eta_velocity_lower": "1/8-18*eta-36*A",
+      "robust_example": "eta<=1/576 and A<=1/1152 still give velocity>=1/16",
+      "diagnostic_schedule": [
+        {
+          "duration": "1/200000",
+          "signed_area": "1/40000",
+          "strength": "5"
+        },
+        {
+          "duration": "1/400000",
+          "signed_area": "-1/80000",
+          "strength": "-5"
+        },
+        {
+          "duration": "1/400000",
+          "signed_area": "1/80000",
+          "strength": "5"
+        }
+      ],
+      "diagnostic_elapsed_time": "1/100000",
+      "diagnostic_action": "7/50000",
+      "diagnostic_stronger_lower_gap": "2999/2500000000",
+      "diagnostic_simple_lower_gap": "1/1600000",
+      "diagnostic_Q_at_segment_endpoints": [
+        [
+          0.00364779929655,
+          0.00441496246806,
+          -0.00446815511188
+        ],
+        [
+          0.00364850687665,
+          0.00441510067201,
+          -0.00446829474496
+        ],
+        [
+          0.00364886066735,
+          0.00441516977427,
+          -0.0044683645618
+        ],
+        [
+          0.00364921445849,
+          0.00441523887672,
+          -0.00446843437882
+        ]
+      ],
+      "diagnostic_actual_delta_Qx": 1.41516193131e-06
+    },
+    "endpoint_reaccess_versus_cost": {
+      "frozen_positive_time_reaccess_round": 481,
+      "current_word_P": "the finite H-on center W_tau(1/5,2/5,pi/2)",
+      "actual_current_Q_target_sup_radius": "1/59097600000000",
+      "backward_target_family": "y_n=Q_current-(delta/2**n)*e_x, n>=1",
+      "example_negative_Qx_offsets": [
+        "1/118195200000000",
+        "1/236390400000000",
+        "1/945561600000000",
+        "1/15128985600000000"
+      ],
+      "all_these_exact_endpoints_have_finite_positive_time_implementations_by_481": true,
+      "every_exact_implementation_in_current_H_plus_uK_class_has_action_greater_than": "1/576",
+      "infimum_reverse_action_is_at_least": "1/576",
+      "approximate_reverse_endpoint_with_Qx_error_less_than_epsilon_also_obstructed": true,
+      "no_reverse_action_sequence_tends_to_zero_as_target_tends_to_current_Q": true,
+      "no_uniform_positive_lower_bound_on_elapsed_time_claimed": true,
+      "not_a_repeat_of_415_torus_exact_cost_or_416_charged_turn_counterexample": true,
+      "no_condition_that_Q_determine_all_future_states": true
+    },
+    "reference_and_information": {
+      "all_admitted_H_plus_uK_controls_share_475_leaf_S4_and_collective_SU2_symmetries": true,
+      "correlated_seed_each_branch_has_zero_22_sector": true,
+      "full_time_leaf_matching_probabilities_one_third_preserved": true,
+      "conditional_on_retained_classical_branch_record_also_preserved": true,
+      "diagnostic_maximum_leaf_mean_error": 1.7763568394e-15,
+      "diagnostic_branch_weights": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "arbitrary_unknown_reference_information_kept_by_full_control_unitarity": true,
+      "diagnostic_inverse_identity_residual": 7.6040243481e-15,
+      "mathematical_inverse_not_admitted_as_physical_negative_time": true,
+      "no_arbitrary_R_conditional_leaf_moment_invariance_from_unitarity_alone": true,
+      "original_data_graph_correlations_never_reset_during_continuation": true,
+      "classical_control_history_may_be_retained_in_internal_storage": true,
+      "autonomous_generation_of_controllers_not_proved": true
+    },
+    "actual_readout_and_cost_ledger": {
+      "actual_CP_instrument_round": 472,
+      "diagnostic_probe_wait": "1/65536",
+      "diagnostic_records": [
+        [
+          {
+            "ordered_edge": [
+              1,
+              0
+            ],
+            "measured_port": 1,
+            "probabilities": [
+              0.499996178445,
+              0.500003821555
+            ]
+          },
+          {
+            "ordered_edge": [
+              1,
+              3
+            ],
+            "measured_port": 1,
+            "probabilities": [
+              0.499996206283,
+              0.500003793717
+            ]
+          }
+        ],
+        [
+          {
+            "ordered_edge": [
+              1,
+              0
+            ],
+            "measured_port": 1,
+            "probabilities": [
+              0.499996178442,
+              0.500003821558
+            ]
+          },
+          {
+            "ordered_edge": [
+              1,
+              3
+            ],
+            "measured_port": 1,
+            "probabilities": [
+              0.499996206291,
+              0.500003793709
+            ]
+          }
+        ]
+      ],
+      "true_Qx_before_after": [
+        0.00364779929655,
+        0.00364921445849
+      ],
+      "instrument_Qx_before_after": [
+        0.00364887897376,
+        0.00365029414024
+      ],
+      "diagnostic_each_Qx_bias_upper": "162/32765",
+      "diagnostic_probe_not_claimed_to_certify_the_tiny_gap": true,
+      "rigorous_ideal_forward_gap": "1/1600000",
+      "each_setting_complete_preparation_and_control_diamond_budget": "1/12800000",
+      "same_actual_prepared_state_for_both_edge_readouts_in_each_setting": true,
+      "edge_choice_only_after_common_source_preparation_no_prior_record_feedback": true,
+      "independent_edge_specific_source_errors_would_need_a_different_budget": true,
+      "each_adjacency_mean_error": "1/25600000",
+      "certified_probe_wait": "1/33177600000",
+      "complete_storage_handoff_plus_instrument_diamond_budget": "1/3397386240000000000",
+      "separate_settings": 2,
+      "independently_estimated_means": 4,
+      "independent_repeated_known_histories_per_mean": "57711166318706688000000000000000000000",
+      "total_history_preparations": "230844665274826752000000000000000000000",
+      "simultaneous_failure_probability_less_than": "1/100",
+      "retained_positive_measured_difference_lower": "1/3200000",
+      "all_finite_preparation_clock_control_probe_and_storage_resources_counted": true,
+      "no_enormous_sampling_run_or_cloning_of_unknown_input": true,
+      "old_D_moved_to_internal_isolated_S_and_G_remains_active": true,
+      "old_S_G_C_R_correlations_retained_at_handoff": true,
+      "final_CP_readout_can_disturb_G_and_is_not_claimed_reversible": true,
+      "theorem_concerns_pre_readout_endpoint_and_probe_wait_not_added_to_motion": true,
+      "action_budget_not_identified_with_dissipation_or_unique_cognitive_resource": true
+    }
+  },
+  "scope": {
+    "actual_finite_pulse_center_has_strict_small_action_one_sided_motion": true,
+    "exact_finite_backward_Q_reaccess_still_holds": true,
+    "chosen_action_cannot_supply_continuous_two_sided_displacement_cost": true,
+    "result_limited_to_declared_H_plus_uK_class_and_budget": true,
+    "no_physical_space_or_other_control_implementation_no_go": true,
+    "no_qubit_or_three_control_parameter_dimension_selection": true,
+    "no_complete_cognitive_axiom_countermodel_claim": true,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

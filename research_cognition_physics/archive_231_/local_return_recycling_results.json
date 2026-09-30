@@ -1,0 +1,118 @@
+{
+  "round": 502,
+  "scientific_baseline_round": 501,
+  "reused_frozen_rounds": [
+    493,
+    500,
+    501
+  ],
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "dependency_results_sha256": {
+    "local_neighbor_receipt_results.json": "379c476037d9e14054401bd453d91e1eb2e52b1549607901499e07d76b696f88"
+  },
+  "primary_source": {
+    "url": "https://arxiv.org/abs/1302.7286",
+    "version": "1302.7286v1",
+    "consulted": "Sections 2 and 3, Theorem 3.2, Appendix A; finite monitored subspace recurrence",
+    "tool_theory_claimed_original": false
+  },
+  "scope": {
+    "same_unknown_graph_and_packet_recycled": true,
+    "root_only_instrument": true,
+    "first_step_fresh_replies_only": true,
+    "late_replies_recorded_and_locally_reset": true,
+    "finite_fixed_U_and_known_dimension_bound_required": true,
+    "unknown_reference_dimension_not_charged_to_return_bound": true,
+    "new_local_feedback_and_finer_failure_readout_are_inputs": true,
+    "autonomous_complete_controller_generated": false,
+    "natural_H_suspended": false,
+    "common_deadline_graph_freeze": false,
+    "three_dimensional_positions_generated": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  },
+  "observations": {
+    "exact_recurrence": {
+      "dimension": 5,
+      "observed_subspace_rank": 2,
+      "partial_sum_trace": 5,
+      "test_state_mean_return": 2,
+      "exact_telescoping": true,
+      "unknown_reference_not_in_dimension_bound": true
+    },
+    "actual_cycle_diagnostics": {
+      "active_dimension": 216,
+      "cycles": 2,
+      "maximum_measurements_per_cycle": 8,
+      "natural_step": "1/64",
+      "fresh_success_branches": 5,
+      "local_reset_branches": 43,
+      "accepted": 8.080288554536967e-13,
+      "timeout": 0.00048725618305129963,
+      "final_cycle_exhaustion": 0.9995127438161409,
+      "current_joint_error_given_acceptance": 2.6825479774959742e-05,
+      "one_cycle_completeness_residual": 2.545042546844511e-15,
+      "full_reference_residual": 9.46403156784991e-16,
+      "graph_copies": 1,
+      "packet_copies": 1,
+      "high_success_protocol_actually_run": false
+    },
+    "local_reset": {
+      "colours": 6,
+      "isometry_exact": true,
+      "packet_restored_to_query": true,
+      "colour_reference_state_retained_in_record": true,
+      "root_only_feedback_is_extra_input": true,
+      "no_unrecorded_erasure": true
+    },
+    "late_reply_counterexample": {
+      "N": 3,
+      "graph": "0-1-2",
+      "kappa": 0,
+      "step_time": "1/8",
+      "last_return_step": 64,
+      "accepted_steps_in_counterexample": "2..64",
+      "norm_bound": 5,
+      "Taylor_degree": 12,
+      "exact_unitary_tail": "48828125/130820526791486078976",
+      "late_nonedge_mass_lower": "1152063/1000000000",
+      "late_reply_mass_upper": "719883/200000000",
+      "conditional_nonedge_error_strict_lower": "1/4",
+      "proof_arithmetic": "integer repeated products, rational tail and outward rounding",
+      "actual_protocol_accepts_these_late_replies": false
+    },
+    "fixed_step_scope": {
+      "same_H": "Pauli X",
+      "first_interval": "pi/2",
+      "subsequent_interval": "pi",
+      "nonreturn_probability_exact": 1,
+      "arbitrary_changed_sampling_schedule_supported": false,
+      "theorem_requires_initial_state_in_entire_observed_root_subspace": true
+    },
+    "finite_resource_certificate": {
+      "s0": "1/10000000000000",
+      "fresh_error_upper": "1/10000",
+      "active_dimension": 216,
+      "maximum_cycles": 40000000000000,
+      "measurements_per_cycle": 432000000000000000,
+      "complete_slots": 17280000000000000000000000000000,
+      "ideal_failure_strict_upper": "1/25",
+      "delay": "1/4096",
+      "actual_success_strict_lower": "9599/10000",
+      "actual_joint_error_upper": "57593/157270016",
+      "actual_joint_error_strict_upper": "1/1000",
+      "source_half_trace_error": "1/20000",
+      "per_complete_slot_half_diamond_error": "1/345600000000000000000000000000000000",
+      "root_raw_record_bits": 51840000000000000000000000000000,
+      "natural_waiting_sum_upper": "270000000000000000000000000000",
+      "graph_copies": 1,
+      "packet_register_sets": 1,
+      "controller_clock_isolation_extra": true,
+      "massive_protocol_executed": false
+    }
+  }
+}

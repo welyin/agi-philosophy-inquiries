@@ -1,0 +1,194 @@
+{
+  "round": 474,
+  "baseline_round": 472,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "observations": {
+    "exact_response": {
+      "graph_count": 6,
+      "total_dimension": 384,
+      "covariance_diagonal": "1/4",
+      "covariance_off_diagonal": "-1/12",
+      "graph_F_uniform_eigenvalue": 4,
+      "second_derivative_raw_numerators": [
+        [
+          0,
+          -512,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -512,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          -512
+        ]
+      ],
+      "raw_denominator": 384,
+      "Q_definition": [
+        "D_13-D_10",
+        "D_14-D_10",
+        "D_15-D_10"
+      ],
+      "second_derivative": "-(4/3)*kappa*J*r",
+      "all_time_zero_offset_has_exact_permutation_symmetry": true,
+      "second_order_rank_equals_affine_span_of_reference_Bloch_vectors": true,
+      "second_order_rank_not_claimed_as_all_time_rank": true
+    },
+    "uniform_injective_window": {
+      "window": "0 < t <= 1/10000; J=kappa=1",
+      "Hamiltonian_norm_upper_bound": 9,
+      "entry_tail": "(18t)^3 / (6*(1-18t/4))",
+      "matrix_remainder_over_t_squared_at_endpoint": "5832/19991",
+      "singular_value_lower_bound": "t^2/3",
+      "endpoint_response_matrix": [
+        [
+          -6.6666665344e-09,
+          1.1109152622e-13,
+          -1.1106314733e-13
+        ],
+        [
+          -1.1109520389e-13,
+          -6.6666665477e-09,
+          1.1118324556e-13
+        ],
+        [
+          1.1108509053e-13,
+          -1.1112570616e-13,
+          -6.6666664532e-09
+        ]
+      ],
+      "endpoint_smallest_singular_value": 6.6666664451e-09,
+      "input_r": [
+        0.2,
+        -0.3,
+        0.4
+      ],
+      "recovered_r": [
+        0.20000000041,
+        -0.30000000009,
+        0.39999999913
+      ],
+      "exact_affine_response_not_a_truncated_inverse": true,
+      "all_t_window_certified_by_rational_bound_not_numerical_sampling": true
+    },
+    "internal_relational_preparation": {
+      "twirl_is_Haar_projection_on_four_active_qubit_family": true,
+      "Casimir_factors": [
+        2,
+        6,
+        12,
+        20
+      ],
+      "not_a_projection_formula_for_arbitrary_six_qubit_operators": true,
+      "all_single_qubit_marginals_maximally_mixed": true,
+      "twirled_state_smallest_eigenvalue": 0.0049964087575,
+      "largest_collective_commutator_norm": 9.436048866e-17,
+      "entire_graph_density_matrix_difference_norm": 3.2469851275e-16,
+      "all_graph_measurements_preserved_analytically_for_all_t": true,
+      "absolute_direction_removed_but_relational_reference_resource_input": true,
+      "orthogonal_source_twirl_overlap": 0.010416666667,
+      "orthogonal_source_twirl_trace_distance": 0.59039415105,
+      "rank_three_classical_response_not_reversible_unknown_quantum_encoding": true
+    },
+    "actual_distance_readout": {
+      "inherited_instrument_round": 472,
+      "natural_wait": "1/5",
+      "probe_wait": "1/65536",
+      "exact_adjacency_means": [
+        0.4981785912,
+        0.50361995374,
+        0.49072602101,
+        0.50747543405
+      ],
+      "U_generated_record_estimates": [
+        0.49817846497,
+        0.50362022739,
+        0.49072537276,
+        0.50747593371
+      ],
+      "largest_adjacency_bias": 6.4825561097e-07,
+      "certified_single_edge_bias_bound": 0.019078337892,
+      "true_Q": [
+        -0.0054413625403,
+        0.0074525701826,
+        -0.0092968428535
+      ],
+      "measured_Q": [
+        -0.0054417624197,
+        0.0074530922143,
+        -0.0092974687343
+      ],
+      "complete_four_CP_instruments_checked": true,
+      "direct_graph_observable_measurement_not_assumed": true,
+      "old_data_correlations_transferred_to_isolated_storage_before_probes": true,
+      "handoff_and_all_controls_are_additional_explicit_permissions": true
+    },
+    "finite_readout_resources": {
+      "natural_wait": "1/10000",
+      "desired_r_Euclidean_error": "1/10",
+      "per_edge_total_error": "1/12000000000",
+      "probe_wait": "1/120000000000000",
+      "complete_instrument_error_budget": "1/11520000000000000000000000",
+      "total_control_duration_budget": "1/1152000000000000000000000000",
+      "control_only_error_budget": "1/23040000000000000000000000",
+      "exact_bias_upper_bound": "14399999999999/691199999999904000000000",
+      "copies_per_edge": "116121600000000000000000000000000000000000000000000",
+      "total_independent_source_trials": "464486400000000000000000000000000000000000000000000",
+      "joint_failure_probability_at_most": "1/100",
+      "exact_A_reconstructed_r_error_bound": "sqrt(3)*epsilon/2 < epsilon",
+      "finite_A_calibration_error_budget": "1/100000000000",
+      "third_order_A_polynomial_remainder_bound": "6561/4998200000000000",
+      "finite_A_robust_r_error_bound": "181*epsilon/194 < epsilon",
+      "finite_model_computation_not_autonomous_physical_calibration": true,
+      "whole_handoff_plus_probe_error_contract_on_arbitrary_old_data_graph_reference": true,
+      "initial_data_not_reset_or_cloned": true,
+      "no_huge_sampling_experiment_actually_run": true,
+      "clocks_fresh_probes_internal_storage_and_repeated_source_remain_inputs": true
+    },
+    "geometry_and_scope": {
+      "initial_source_to_four_leaves": [
+        "3/2",
+        "3/2",
+        "3/2",
+        "3/2"
+      ],
+      "initial_all_leaf_pair_means": [
+        "8/3",
+        "8/3",
+        "8/3",
+        "8/3",
+        "8/3",
+        "8/3"
+      ],
+      "squared_circumradius": "8/3",
+      "required_squared_height": "-5/12",
+      "these_uncalibrated_means_not_lengths_in_any_flat_Euclidean_space": true,
+      "curved_space_and_independently_justified_calibration_not_excluded": true,
+      "selected_reference_affine_rank": 3,
+      "physical_anchors_not_proved_rigid": true,
+      "rank_three_response_is_only_chosen_preparation_family": true,
+      "all_location_directions_and_endpoint_identity_not_characterized": true,
+      "composition_of_displacements_and_cross_basepoint_atlas_not_proved": true
+    }
+  },
+  "scope": {
+    "three_internal_relational_components_change_actual_graph_distance_means": true,
+    "same_fixed_H_during_natural_wait": true,
+    "internal_reference_preparation_and_readout_hardware_still_inputs": true,
+    "finite_six_tree_theorem_not_arbitrary_network_theorem": true,
+    "complete_unknown_quantum_input_not_claimed_recoverable_after_twirl": true,
+    "spatial_dimension_three_derived": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

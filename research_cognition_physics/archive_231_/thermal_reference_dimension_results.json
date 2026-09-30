@@ -1,0 +1,783 @@
+{
+  "date": "2026-09-30",
+  "diagnostic_tests": 6,
+  "failures": 0,
+  "errors": 0,
+  "numbered_round_created": false,
+  "numbered_test_increment": 0,
+  "inputs": {
+    "hbar": 1.0,
+    "boltzmann": 1.0,
+    "ratio": 0.5,
+    "massive_squared": 1.25,
+    "readout_sigma": 0.25,
+    "zero_mode": "finite Gaussian kept; no massless full Gibbs state asserted",
+    "geometry": "unit nearest-neighbor periodic fluctuations; affine twist supplied for coordinate mean"
+  },
+  "diagnostics": {
+    "oscillator_covariance_residual": 2.220446049250313e-16,
+    "dense_joint_checks": [
+      {
+        "n": 5,
+        "d": 1,
+        "temperature": 0.0,
+        "zero_mode_variance": 0.2,
+        "actual_difference_variance": 3.6710427753124177,
+        "formula_residual": 3.1086244689504383e-15,
+        "common_uncertainty_minimum": -6.993886936973425e-16,
+        "two_read_field_energy_increment": 3.9999999999999996
+      },
+      {
+        "n": 5,
+        "d": 1,
+        "temperature": 0.0,
+        "zero_mode_variance": 17.0,
+        "actual_difference_variance": 3.6710427753124186,
+        "formula_residual": 2.220446049250313e-15,
+        "common_uncertainty_minimum": -7.848669418664725e-16,
+        "two_read_field_energy_increment": 3.9999999999999996
+      },
+      {
+        "n": 5,
+        "d": 1,
+        "temperature": 1.0,
+        "zero_mode_variance": 0.2,
+        "actual_difference_variance": 5.273422251288775,
+        "formula_residual": 5.329070518200751e-15,
+        "common_uncertainty_minimum": -1.30739734899981e-16,
+        "two_read_field_energy_increment": 3.9999999999999996
+      },
+      {
+        "n": 5,
+        "d": 1,
+        "temperature": 1.0,
+        "zero_mode_variance": 17.0,
+        "actual_difference_variance": 5.273422251288774,
+        "formula_residual": 6.217248937900877e-15,
+        "common_uncertainty_minimum": -1.3877787807814457e-16,
+        "two_read_field_energy_increment": 3.9999999999999996
+      },
+      {
+        "n": 5,
+        "d": 2,
+        "temperature": 0.0,
+        "zero_mode_variance": 0.2,
+        "actual_difference_variance": 2.997981250736877,
+        "formula_residual": 1.3322676295501878e-15,
+        "common_uncertainty_minimum": -8.016509054646647e-16,
+        "two_read_field_energy_increment": 3.9999999999999996
+      },
+      {
+        "n": 5,
+        "d": 2,
+        "temperature": 0.0,
+        "zero_mode_variance": 17.0,
+        "actual_difference_variance": 2.997981250736877,
+        "formula_residual": 1.3322676295501878e-15,
+        "common_uncertainty_minimum": -2.456127741180849e-15,
+        "two_read_field_energy_increment": 3.9999999999999996
+      },
+      {
+        "n": 5,
+        "d": 2,
+        "temperature": 1.0,
+        "zero_mode_variance": 0.2,
+        "actual_difference_variance": 3.7608252441413548,
+        "formula_residual": 8.881784197001252e-16,
+        "common_uncertainty_minimum": 1.0966027348333074e-16,
+        "two_read_field_energy_increment": 3.9999999999999996
+      },
+      {
+        "n": 5,
+        "d": 2,
+        "temperature": 1.0,
+        "zero_mode_variance": 17.0,
+        "actual_difference_variance": 3.7608252441413557,
+        "formula_residual": 1.7763568394002505e-15,
+        "common_uncertainty_minimum": -1.0879968800892037e-15,
+        "two_read_field_energy_increment": 3.9999999999999996
+      }
+    ],
+    "cycle_identity_residual": 3.8191672047105385e-14,
+    "pair_average_residual": 2.6645352591003757e-15,
+    "finite_size_rows": [
+      {
+        "n": 64,
+        "d": 1,
+        "temperature": 0.0,
+        "nonzero_common_site_covariance": 0.6818965808230149,
+        "common_fluctuation_energy_density": 0.6364919355013017,
+        "relative_fluctuation_energy_density": 0.8777576131624677,
+        "pairs": [
+          {
+            "separation": 1,
+            "common_variance": 0.6364919355013017,
+            "relative_variance": 1.9978889575628411,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 3.259380893064143,
+            "common_classical_variance": 0.0
+          },
+          {
+            "separation": 32,
+            "common_variance": 1.584460715242089,
+            "relative_variance": 2.4210263921392468,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 4.630487107381336,
+            "common_classical_variance": 0.0
+          }
+        ]
+      },
+      {
+        "n": 256,
+        "d": 1,
+        "temperature": 0.0,
+        "nonzero_common_site_covariance": 0.9025371742535808,
+        "common_fluctuation_energy_density": 0.6366117828642577,
+        "relative_fluctuation_energy_density": 0.8777576131624677,
+        "pairs": [
+          {
+            "separation": 1,
+            "common_variance": 0.6366117828642577,
+            "relative_variance": 1.9978889575628411,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 3.259500740427099,
+            "common_classical_variance": 0.0
+          },
+          {
+            "separation": 128,
+            "common_variance": 2.025711946013084,
+            "relative_variance": 2.4210263921392476,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 5.071738338152332,
+            "common_classical_variance": 0.0
+          }
+        ]
+      },
+      {
+        "n": 1024,
+        "d": 1,
+        "temperature": 0.0,
+        "nonzero_common_site_covariance": 1.1231730864948375,
+        "common_fluctuation_energy_density": 0.6366192730247986,
+        "relative_fluctuation_energy_density": 0.8777576131624677,
+        "pairs": [
+          {
+            "separation": 1,
+            "common_variance": 0.6366192730247986,
+            "relative_variance": 1.9978889575628411,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 3.25950823058764,
+            "common_classical_variance": 0.0
+          },
+          {
+            "separation": 512,
+            "common_variance": 2.466981897977938,
+            "relative_variance": 2.4210263921392476,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 5.5130082901171855,
+            "common_classical_variance": 0.0
+          }
+        ]
+      },
+      {
+        "n": 64,
+        "d": 1,
+        "temperature": 1.0,
+        "nonzero_common_site_covariance": 5.411467940043481,
+        "common_fluctuation_energy_density": 1.1433166532550922,
+        "relative_fluctuation_energy_density": 1.2549848183633487,
+        "pairs": [
+          {
+            "separation": 1,
+            "common_variance": 1.143316653255092,
+            "relative_variance": 2.672164475644713,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 4.440481128899805,
+            "common_classical_variance": 0.9843749999999998
+          },
+          {
+            "separation": 32,
+            "common_variance": 16.16147754675364,
+            "relative_variance": 3.7564396764938826,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 20.542917223247525,
+            "common_classical_variance": 16.00000000000001
+          }
+        ]
+      },
+      {
+        "n": 256,
+        "d": 1,
+        "temperature": 1.0,
+        "nonzero_common_site_covariance": 21.413421065043387,
+        "common_fluctuation_energy_density": 1.1550354032550922,
+        "relative_fluctuation_energy_density": 1.254984818363349,
+        "pairs": [
+          {
+            "separation": 1,
+            "common_variance": 1.1550354032550914,
+            "relative_variance": 2.6721644756447125,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 4.452199878899804,
+            "common_classical_variance": 0.9960937499999991
+          },
+          {
+            "separation": 128,
+            "common_variance": 64.16147754675328,
+            "relative_variance": 3.7564396764938923,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 68.54291722324717,
+            "common_classical_variance": 63.99999999999966
+          }
+        ]
+      },
+      {
+        "n": 1024,
+        "d": 1,
+        "temperature": 1.0,
+        "nonzero_common_site_covariance": 85.4139093462926,
+        "common_fluctuation_energy_density": 1.1579650907550925,
+        "relative_fluctuation_energy_density": 1.254984818363349,
+        "pairs": [
+          {
+            "separation": 1,
+            "common_variance": 1.1579650907550967,
+            "relative_variance": 2.6721644756447125,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 4.455129566399809,
+            "common_classical_variance": 0.9990234375000044
+          },
+          {
+            "separation": 512,
+            "common_variance": 256.1614775467531,
+            "relative_variance": 3.7564396764938923,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 260.54291722324695,
+            "common_classical_variance": 255.99999999999943
+          }
+        ]
+      },
+      {
+        "n": 16,
+        "d": 2,
+        "temperature": 0.0,
+        "nonzero_common_site_covariance": 0.30204612842079936,
+        "common_fluctuation_energy_density": 0.9579154987397147,
+        "relative_fluctuation_energy_density": 1.1220955812641313,
+        "pairs": [
+          {
+            "separation": 1,
+            "common_variance": 0.47895774936985736,
+            "relative_variance": 1.6579176389503543,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 2.7618753883202114,
+            "common_classical_variance": 0.0
+          },
+          {
+            "separation": 8,
+            "common_variance": 0.6153860648247994,
+            "relative_variance": 1.8760430956740732,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 3.1164291604988725,
+            "common_classical_variance": 0.0
+          }
+        ]
+      },
+      {
+        "n": 64,
+        "d": 2,
+        "temperature": 0.0,
+        "nonzero_common_site_covariance": 0.3165915928736752,
+        "common_fluctuation_energy_density": 0.9580886560209538,
+        "relative_fluctuation_energy_density": 1.1220955813317481,
+        "pairs": [
+          {
+            "separation": 1,
+            "common_variance": 0.4790443280104769,
+            "relative_variance": 1.6579176410325065,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 2.7619619690429835,
+            "common_classical_variance": 0.0
+          },
+          {
+            "separation": 32,
+            "common_variance": 0.6360229735120159,
+            "relative_variance": 1.8760752692191676,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 3.1370982427311835,
+            "common_classical_variance": 0.0
+          }
+        ]
+      },
+      {
+        "n": 256,
+        "d": 2,
+        "temperature": 0.0,
+        "nonzero_common_site_covariance": 0.32022872953817083,
+        "common_fluctuation_energy_density": 0.9580913558343231,
+        "relative_fluctuation_energy_density": 1.1220955813317481,
+        "pairs": [
+          {
+            "separation": 1,
+            "common_variance": 0.4790456779171616,
+            "relative_variance": 1.657917641032506,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 2.7619633189496677,
+            "common_classical_variance": 0.0
+          },
+          {
+            "separation": 128,
+            "common_variance": 0.6411676477859358,
+            "relative_variance": 1.8760752692191676,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 3.1422429170051034,
+            "common_classical_variance": 0.0
+          }
+        ]
+      },
+      {
+        "n": 16,
+        "d": 2,
+        "temperature": 1.0,
+        "nonzero_common_site_covariance": 0.5679576983449124,
+        "common_fluctuation_energy_density": 1.3048711528931534,
+        "relative_fluctuation_energy_density": 1.3995147427564534,
+        "pairs": [
+          {
+            "separation": 1,
+            "common_variance": 0.6524355764465768,
+            "relative_variance": 2.0218888772075942,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 3.299324453654171,
+            "common_classical_variance": 0.49804687499999994
+          },
+          {
+            "separation": 8,
+            "common_variance": 1.1914043891617982,
+            "relative_variance": 2.4866527279341764,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 4.303057117095975,
+            "common_classical_variance": 1.0346869399976193
+          }
+        ]
+      },
+      {
+        "n": 64,
+        "d": 2,
+        "temperature": 1.0,
+        "nonzero_common_site_covariance": 0.7890036814165236,
+        "common_fluctuation_energy_density": 1.3085332622681534,
+        "relative_fluctuation_energy_density": 1.3995147427564534,
+        "pairs": [
+          {
+            "separation": 1,
+            "common_variance": 0.6542666311340768,
+            "relative_variance": 2.0218888942811004,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 3.301155525415177,
+            "common_classical_variance": 0.4998779296875
+          },
+          {
+            "separation": 32,
+            "common_variance": 1.633188646541178,
+            "relative_variance": 2.4868498919417794,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 4.745038538482957,
+            "common_classical_variance": 1.4764711973769837
+          }
+        ]
+      },
+      {
+        "n": 256,
+        "d": 2,
+        "temperature": 1.0,
+        "nonzero_common_site_covariance": 1.0096650406400431,
+        "common_fluctuation_energy_density": 1.3087621441040906,
+        "relative_fluctuation_energy_density": 1.3995147427564534,
+        "pairs": [
+          {
+            "separation": 1,
+            "common_variance": 0.6543810720520455,
+            "relative_variance": 2.0218888942811004,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 3.301269966333146,
+            "common_classical_variance": 0.49999237060546875
+          },
+          {
+            "separation": 128,
+            "common_variance": 2.074490386455518,
+            "relative_variance": 2.4868498919417803,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 5.1863402783972985,
+            "common_classical_variance": 1.917772937291324
+          }
+        ]
+      },
+      {
+        "n": 8,
+        "d": 3,
+        "temperature": 0.0,
+        "nonzero_common_site_covariance": 0.2241660144005335,
+        "common_fluctuation_energy_density": 1.1935923070868295,
+        "relative_fluctuation_energy_density": 1.3248477583483127,
+        "pairs": [
+          {
+            "separation": 1,
+            "common_variance": 0.39786410236227654,
+            "relative_variance": 1.4393904549892924,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 2.462254557351569,
+            "common_classical_variance": 0.0
+          },
+          {
+            "separation": 4,
+            "common_variance": 0.44986733642530574,
+            "relative_variance": 1.5686017131538117,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 2.6434690495791173,
+            "common_classical_variance": 0.0
+          }
+        ]
+      },
+      {
+        "n": 32,
+        "d": 3,
+        "temperature": 0.0,
+        "nonzero_common_site_covariance": 0.22745161072758388,
+        "common_fluctuation_energy_density": 1.1938003217331132,
+        "relative_fluctuation_energy_density": 1.3248482067072502,
+        "pairs": [
+          {
+            "separation": 1,
+            "common_variance": 0.3979334405777044,
+            "relative_variance": 1.4393946535192375,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 2.462328094096942,
+            "common_classical_variance": 0.0
+          },
+          {
+            "separation": 16,
+            "common_variance": 0.4550224128553876,
+            "relative_variance": 1.56993418566736,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 2.649956598522748,
+            "common_classical_variance": 0.0
+          }
+        ]
+      },
+      {
+        "n": 64,
+        "d": 3,
+        "temperature": 0.0,
+        "nonzero_common_site_covariance": 0.22761690739797824,
+        "common_fluctuation_energy_density": 1.1938010714937808,
+        "relative_fluctuation_energy_density": 1.3248482067072502,
+        "pairs": [
+          {
+            "separation": 1,
+            "common_variance": 0.39793369049792693,
+            "relative_variance": 1.4393946535192375,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 2.4623283440171644,
+            "common_classical_variance": 0.0
+          },
+          {
+            "separation": 32,
+            "common_variance": 0.4552638322841557,
+            "relative_variance": 1.5699341860340619,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 2.6501980183182177,
+            "common_classical_variance": 0.0
+          }
+        ]
+      },
+      {
+        "n": 8,
+        "d": 3,
+        "temperature": 1.0,
+        "nonzero_common_site_covariance": 0.3006098151921356,
+        "common_fluctuation_energy_density": 1.448608577316264,
+        "relative_fluctuation_energy_density": 1.536592625348335,
+        "pairs": [
+          {
+            "separation": 1,
+            "common_variance": 0.48286952577208797,
+            "relative_variance": 1.6546135159394262,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 2.7624830417115143,
+            "common_classical_variance": 0.33268229166666663
+          },
+          {
+            "separation": 4,
+            "common_variance": 0.6020175620299592,
+            "relative_variance": 1.886862859801549,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 3.1138804218315084,
+            "common_classical_variance": 0.44968370412681197
+          }
+        ]
+      },
+      {
+        "n": 32,
+        "d": 3,
+        "temperature": 1.0,
+        "nonzero_common_site_covariance": 0.3218409582735074,
+        "common_fluctuation_energy_density": 1.4505311847387632,
+        "relative_fluctuation_energy_density": 1.5365926253488218,
+        "pairs": [
+          {
+            "separation": 1,
+            "common_variance": 0.4835103949129211,
+            "relative_variance": 1.654634748618778,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 2.763145143531699,
+            "common_classical_variance": 0.33332316080729163
+          },
+          {
+            "separation": 16,
+            "common_variance": 0.6441467098781648,
+            "relative_variance": 1.8919460057123438,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 3.1610927155905086,
+            "common_classical_variance": 0.49181280944114597
+          }
+        ]
+      },
+      {
+        "n": 64,
+        "d": 3,
+        "temperature": 1.0,
+        "nonzero_common_site_covariance": 0.3253699162208755,
+        "common_fluctuation_energy_density": 1.4505578876196228,
+        "relative_fluctuation_energy_density": 1.5365926253488218,
+        "pairs": [
+          {
+            "separation": 1,
+            "common_variance": 0.4835192958732076,
+            "relative_variance": 1.6546347486187778,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 2.7631540444919853,
+            "common_classical_variance": 0.3333320617675781
+          },
+          {
+            "separation": 32,
+            "common_variance": 0.6509768758897467,
+            "relative_variance": 1.8919460088623237,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 3.1679228847520706,
+            "common_classical_variance": 0.49864297545272795
+          }
+        ]
+      },
+      {
+        "n": 8,
+        "d": 4,
+        "temperature": 0.0,
+        "nonzero_common_site_covariance": 0.1887705384163307,
+        "common_fluctuation_energy_density": 1.3887942538405236,
+        "relative_fluctuation_energy_density": 1.5011864142635112,
+        "pairs": [
+          {
+            "separation": 1,
+            "common_variance": 0.3471985634601309,
+            "relative_variance": 1.286541759826869,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 2.258740323287,
+            "common_classical_variance": 0.0
+          },
+          {
+            "separation": 4,
+            "common_variance": 0.3774395049872563,
+            "relative_variance": 1.3732987738096514,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 2.3757382787969075,
+            "common_classical_variance": 0.0
+          }
+        ]
+      },
+      {
+        "n": 16,
+        "d": 4,
+        "temperature": 0.0,
+        "nonzero_common_site_covariance": 0.18909454322166364,
+        "common_fluctuation_energy_density": 1.3888229726564503,
+        "relative_fluctuation_energy_density": 1.501186537418378,
+        "pairs": [
+          {
+            "separation": 1,
+            "common_variance": 0.34720574316411257,
+            "relative_variance": 1.2865425499558492,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 2.258748293119962,
+            "common_classical_variance": 0.0
+          },
+          {
+            "separation": 8,
+            "common_variance": 0.378192590552488,
+            "relative_variance": 1.3737204775138108,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 2.376913068066299,
+            "common_classical_variance": 0.0
+          }
+        ]
+      },
+      {
+        "n": 32,
+        "d": 4,
+        "temperature": 0.0,
+        "nonzero_common_site_covariance": 0.18913565079558725,
+        "common_fluctuation_energy_density": 1.3888238417716856,
+        "relative_fluctuation_energy_density": 1.5011865374204698,
+        "pairs": [
+          {
+            "separation": 1,
+            "common_variance": 0.3472059604429214,
+            "relative_variance": 1.286542549985538,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 2.2587485104284593,
+            "common_classical_variance": 0.0
+          },
+          {
+            "separation": 16,
+            "common_variance": 0.378272091902922,
+            "relative_variance": 1.3737215195394303,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 2.3769936114423524,
+            "common_classical_variance": 0.0
+          }
+        ]
+      },
+      {
+        "n": 8,
+        "d": 4,
+        "temperature": 1.0,
+        "nonzero_common_site_covariance": 0.22689865398690512,
+        "common_fluctuation_energy_density": 1.5849430304349594,
+        "relative_fluctuation_energy_density": 1.6670209758039367,
+        "pairs": [
+          {
+            "separation": 1,
+            "common_variance": 0.3962357576087399,
+            "relative_variance": 1.422873799505926,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 2.4441095571146656,
+            "common_classical_variance": 0.24993896484375
+          },
+          {
+            "separation": 4,
+            "common_variance": 0.45258380066692283,
+            "relative_variance": 1.5610683446118467,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 2.6386521452787695,
+            "common_classical_variance": 0.3043012509472509
+          }
+        ]
+      },
+      {
+        "n": 16,
+        "d": 4,
+        "temperature": 1.0,
+        "nonzero_common_site_covariance": 0.22852696049643662,
+        "common_fluctuation_energy_density": 1.5851719122714818,
+        "relative_fluctuation_energy_density": 1.6670209758043966,
+        "pairs": [
+          {
+            "separation": 1,
+            "common_variance": 0.39629297806787045,
+            "relative_variance": 1.4228775535302438,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 2.444170531598114,
+            "common_classical_variance": 0.24999618530273438
+          },
+          {
+            "separation": 8,
+            "common_variance": 0.45685581795066954,
+            "relative_variance": 1.562512079508663,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 2.6443678974593325,
+            "common_classical_variance": 0.30857323354469646
+          }
+        ]
+      },
+      {
+        "n": 32,
+        "d": 4,
+        "temperature": 1.0,
+        "nonzero_common_site_covariance": 0.22893757026358785,
+        "common_fluctuation_energy_density": 1.585186217386228,
+        "relative_fluctuation_energy_density": 1.6670209758043966,
+        "pairs": [
+          {
+            "separation": 1,
+            "common_variance": 0.3962965543465569,
+            "relative_variance": 1.4228775537623597,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 2.4441741081089168,
+            "common_classical_variance": 0.24999976158142084
+          },
+          {
+            "separation": 16,
+            "common_variance": 0.45783028554347693,
+            "relative_variance": 1.5625179006979129,
+            "readout_variance": 0.625,
+            "actual_difference_variance": 2.6453481862413897,
+            "common_classical_variance": 0.3095477011374965
+          }
+        ]
+      }
+    ],
+    "infinite_joint_obstruction": {
+      "tolerance": 1.0,
+      "meter_only_pair_success_cap": 0.7940967892679317,
+      "finite_disjoint_pair_bounds": [
+        {
+          "disjoint_pairs": 1,
+          "success_upper_bound": 0.7940967892679317
+        },
+        {
+          "disjoint_pairs": 10,
+          "success_upper_bound": 0.0997090091777411
+        },
+        {
+          "disjoint_pairs": 100,
+          "success_upper_bound": 9.712790164617229e-11
+        }
+      ]
+    },
+    "relative_accuracy_counterexample": [
+      {
+        "n": 64,
+        "separation": 32,
+        "mean_square_fractional_error": 0.02006144260082766,
+        "absolute_variance": 20.542917223247525
+      },
+      {
+        "n": 256,
+        "separation": 128,
+        "mean_square_fractional_error": 0.004183527662551707,
+        "absolute_variance": 68.54291722324717
+      },
+      {
+        "n": 1024,
+        "separation": 512,
+        "mean_square_fractional_error": 0.0009938923539094808,
+        "absolute_variance": 260.54291722324695
+      }
+    ]
+  },
+  "provenance_sha256": {
+    "reference_alignment_completion.py": "87b4f1765d886a943f41a4ac230efa8c2a3ce4cded4a0c773b66c68e91ae1e3a",
+    "reference_alignment_completion_results.json": "0e895b2a8bcbbe642daba5247cab16ddaee7951bfe3f0bda02aaf3bcb12bae81"
+  },
+  "scope": {
+    "fixed_positive_temperature_threshold": "d > 2",
+    "vacuum_threshold": "d > 1",
+    "proof_not_numerical_fit": true,
+    "uniform_bound_is_per_pair": true,
+    "infinite_simultaneous_fixed_tolerance": false,
+    "spatial_dimension_three_selected": false,
+    "thermalization_derived": false,
+    "quantum_einstein_backreaction_solved": false,
+    "arbitrary_unknown_quantum_input_bound": false
+  }
+}

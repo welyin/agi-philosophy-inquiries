@@ -1,0 +1,287 @@
+{
+  "round": 480,
+  "baseline_round": 479,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "observations": {
+    "preparation_contract": {
+      "state": "one half eta(ex) x |s><s| plus one half eta(ey) x I_G/6",
+      "internal_branch_record_dimension": 2,
+      "branch_probabilities": [
+        "1/2",
+        "1/2"
+      ],
+      "pure_Gaussian_column_count": 28,
+      "density_denominator": 384,
+      "source_marginal_Bloch": [
+        "1/2",
+        "1/2",
+        "0"
+      ],
+      "graph_marginal": "(|s><s|+I_G/6)/2",
+      "same_control_applies_to_both_branches_no_flag_feedback": true,
+      "graph_mixed_source_entropy_and_triad_preparation_are_resources": true,
+      "source_graph_correlations_not_assumed_generated_from_old_product_seed": true,
+      "conserved_excitation_blocks_used_only_for_computation": true,
+      "no_physical_dephasing_or_discarding_interblock_coherences": true
+    },
+    "strict_Jacobian_certificate": {
+      "point": [
+        "1/5",
+        "2/5",
+        "pi/2"
+      ],
+      "parameter_order": [
+        "first_wait_t",
+        "second_wait_u",
+        "exchange_area_theta"
+      ],
+      "observable_order": [
+        "D13-D10",
+        "D14-D10",
+        "D15-D10"
+      ],
+      "rational_Jacobian": [
+        [
+          "-15501276401523670902184798988740820117309935657914226803116360082885906359070397640326302884750901951718387545668933328495128368529941865929957187/99895953610111751404211111353381321783955140565279076827493022708011895642232499843849795298031743077114461795885011932654335221737225129801285632",
+          "42410581353392466792152834314539633550276429014989324408133090152007048247260202986988466717718363087486440383171754765021931336868508893193409371/299687860830335254212633334060143965351865421695837230482479068124035686926697499531549385894095229231343385387655035797963005665211675389403856896",
+          "-6435711354889363858513420685698921693518971896821003377081462745920876477494150883259718856261593418579181926440206027668270090528033882997828559/299687860830335254212633334060143965351865421695837230482479068124035686926697499531549385894095229231343385387655035797963005665211675389403856896"
+        ],
+        [
+          "-192457747516677169633743997211644111110481032930436019285852860322507116751380263128583532649008066764591862703388421046644924297143417629403619/74921965207583813553158333515035991337966355423959307620619767031008921731674374882887346473523807307835846346913758949490751416302918847350964224",
+          "2761195510785711861887577255954398702211428130906779487358637303373005546268873688637437361735769283862025758373849829520533197715568209570436151/99895953610111751404211111353381321783955140565279076827493022708011895642232499843849795298031743077114461795885011932654335221737225129801285632",
+          "-80459723530224058212062476297978103908916025974070347558311086753025621138298902793579167406691679089365880929728494422159468077396610901943485/24973988402527937851052777838345330445988785141319769206873255677002973910558124960962448824507935769278615448971252983163583805434306282450321408"
+        ],
+        [
+          "195261634685038676366385493004170119631964673230462276475403280008567566491175534948376475188796266368499700632619862948432212288579017762738569/99895953610111751404211111353381321783955140565279076827493022708011895642232499843849795298031743077114461795885011932654335221737225129801285632",
+          "-2092311186963705800987137852108809395909066947874824834799113813647308408485709824336347801983732541822869962462161400577622037258679076092817433/74921965207583813553158333515035991337966355423959307620619767031008921731674374882887346473523807307835846346913758949490751416302918847350964224",
+          "925334491644706040368912773041982289788118536266203189152504283127865439790121434894825811752078318532508579576731729246740370227053451245295621/299687860830335254212633334060143965351865421695837230482479068124035686926697499531549385894095229231343385387655035797963005665211675389403856896"
+        ]
+      ],
+      "decimal_Jacobian": [
+        [
+          -0.1551742171863,
+          0.1415158466409,
+          -0.0214747148485
+        ],
+        [
+          -0.002568776018934,
+          0.0276407142732,
+          -0.003221741046459
+        ],
+        [
+          0.001954650089704,
+          -0.02792653904855,
+          0.003087660905186
+        ]
+      ],
+      "exact_rational_determinant_interval": [
+        "1/2000000",
+        "3/5000000"
+      ],
+      "determinant_decimal": 5.689371947068e-07,
+      "rational_inverse_inf_norm_less_than": 15000,
+      "unitary_error": "240252823004782559/6250000000000000000000000000000000",
+      "entry_error_upper": "1/100000000000000",
+      "exact_computed_entry_error": "123726391241629213645769592038873452210415963186179126173032560747747991587270208507828944388720973968373278861531227524685683882220914394731628617234231231620902853354328296999751306797769/29802322387695312500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "ideal_Neumann_upper": "9/20000000000",
+      "blocks": [
+        {
+          "excitation": 0,
+          "dimension": 6,
+          "unitary_norm_error": "3843957722648569003/100000000000000000000000000000000000",
+          "scaled_generator_norm": "9/20"
+        },
+        {
+          "excitation": 1,
+          "dimension": 36,
+          "unitary_norm_error": "1921990367301646599/50000000000000000000000000000000000",
+          "scaled_generator_norm": "9/20"
+        },
+        {
+          "excitation": 2,
+          "dimension": 90,
+          "unitary_norm_error": "3844022156121796749/100000000000000000000000000000000000",
+          "scaled_generator_norm": "9/20"
+        },
+        {
+          "excitation": 3,
+          "dimension": 120,
+          "unitary_norm_error": "240252823004782559/6250000000000000000000000000000000",
+          "scaled_generator_norm": "9/20"
+        },
+        {
+          "excitation": 4,
+          "dimension": 90,
+          "unitary_norm_error": "3844022156121796749/100000000000000000000000000000000000",
+          "scaled_generator_norm": "9/20"
+        },
+        {
+          "excitation": 5,
+          "dimension": 36,
+          "unitary_norm_error": "1921990367301646599/50000000000000000000000000000000000",
+          "scaled_generator_norm": "9/20"
+        },
+        {
+          "excitation": 6,
+          "dimension": 6,
+          "unitary_norm_error": "3843957722648569003/100000000000000000000000000000000000",
+          "scaled_generator_norm": "9/20"
+        }
+      ],
+      "fixed_point_bits": 80,
+      "Taylor_degree": 14,
+      "squarings": 2,
+      "all_object_arithmetic_inputs_checked_as_Python_integers": true,
+      "no_floating_SVD_or_determinant_used_for_nonzero_proof": true
+    },
+    "finite_control_and_local_chart": {
+      "pulse_duration": "1/10000000000",
+      "peak_exchange_strength_near_point": "pi/(2*tau)",
+      "original_H_remains_on": true,
+      "pulse_unitary_and_theta_derivative_error_upper": "9*tau",
+      "extra_Jacobian_entry_error_upper": "324*tau",
+      "finite_pulse_Neumann_upper": "29160009/20000000000",
+      "true_inverse_inf_norm_upper": 30000,
+      "Jacobian_local_Lipschitz_inf_bound": 2052,
+      "parameter_cube_sup_radius": "1/246240000",
+      "normalized_Jacobian_variation_upper": "1/4",
+      "readout_lower_Lipschitz_in_sup_norm": "1/40000",
+      "four_settings": "p0 and p0+step*e_j for j=1,2,3",
+      "step": "1/492480000",
+      "any_two_settings_readout_separation_lower": "1/19699200000000",
+      "inverse_function_theorem_gives_open_three_readout_neighborhood": true,
+      "chart_is_local_readout_access_not_a_spatial_displacement_group": true
+    },
+    "numerical_and_reference_checks": {
+      "finite_pulse_Jacobian": [
+        [
+          -0.155174217158,
+          0.1415158466478,
+          -0.02147471484907
+        ],
+        [
+          -0.002568776021714,
+          0.02764071427526,
+          -0.003221741047933
+        ],
+        [
+          0.001954650092661,
+          -0.02792653905041,
+          0.003087660906509
+        ]
+      ],
+      "finite_pulse_determinant": 5.689371952471e-07,
+      "source_leaf_readouts": [
+        0.003647799296555,
+        0.004414962468062,
+        -0.004468155111879
+      ],
+      "fixed_product_marginals_would_require_Qz_zero": true,
+      "maximum_branch_leaf_mean_errors": [
+        1.33226762955e-15,
+        0.0
+      ],
+      "untouched_classical_branch_flag_retains_matching_probabilities_one_third": true,
+      "unknown_full_data_graph_reference_inverse_error": 5.878579701445e-15,
+      "mathematical_inverse_not_claimed_as_available_time_reversal": true,
+      "arbitrary_R_information_preserved_by_unitarity": true,
+      "conditional_reference_moment_protection_requires_each_branch_contract_475": true,
+      "no_arbitrary_purification_decorrelation_claim": true
+    },
+    "actual_data_instruments": {
+      "protocol_round": 472,
+      "actual_U_CP_instruments": true,
+      "probe_wait": "1/65536",
+      "records": [
+        {
+          "ordered_edge": [
+            1,
+            0
+          ],
+          "measured_port": 1,
+          "record_probabilities": [
+            0.4999961784445,
+            0.5000038215555
+          ]
+        },
+        {
+          "ordered_edge": [
+            1,
+            3
+          ],
+          "measured_port": 1,
+          "record_probabilities": [
+            0.4999962062833,
+            0.5000037937167
+          ]
+        },
+        {
+          "ordered_edge": [
+            1,
+            4
+          ],
+          "measured_port": 1,
+          "record_probabilities": [
+            0.4999962121296,
+            0.5000037878704
+          ]
+        },
+        {
+          "ordered_edge": [
+            1,
+            5
+          ],
+          "measured_port": 1,
+          "record_probabilities": [
+            0.4999961443536,
+            0.5000038556464
+          ]
+        }
+      ],
+      "true_Q": [
+        0.003647799296555,
+        0.004414962468062,
+        -0.004468155111879
+      ],
+      "instrument_Q": [
+        0.003648878973763,
+        0.004415173345478,
+        -0.004468368173548
+      ],
+      "each_Q_diagnostic_bias_bound": "162/32765",
+      "old_correlations_kept_in_internal_isolated_storage_for_final_readout": true,
+      "diagnostic_not_the_tiny_certified_16_mean_statistics_run": true
+    },
+    "resource_ledger": {
+      "each_setting_complete_source_and_control_process_diamond_budget": "1/157593600000000",
+      "each_distance_mean_estimation_error": "1/315187200000000",
+      "probe_wait": "1/408482611200000000",
+      "complete_first_instrument_diamond_budget": "1/514993961891266560000000000000000",
+      "settings": 4,
+      "separately_estimated_means": 16,
+      "independent_copies_per_mean": "1326093903922316569384222004871168000000000000000000000000000000000",
+      "total_independent_seed_copies": "21217502462757065110147552077938688000000000000000000000000000000000",
+      "joint_failure_probability_at_most": "1/100",
+      "retained_pairwise_three_readout_separation": "1/39398400000000",
+      "full_correlated_seed_and_branch_record_preparation_counted": true,
+      "preparation_timing_control_precision_storage_and_handoff_errors_counted": true,
+      "fixed_instruments_no_old_record_feedback": true,
+      "no_cloning_of_single_unknown_input_or_actual_enormous_sampling_run": true,
+      "finite_point_experiment_does_not_certify_an_arbitrary_noisy_calibration_derivative": true
+    }
+  },
+  "scope": {
+    "strict_local_three_readout_access_from_one_fixed_correlated_seed": true,
+    "full_global_unitary_and_classical_branch_record_retained": true,
+    "old_product_preparation_two_coefficient_theorem_not_contradicted": true,
+    "correlated_seed_not_derived_from_old_product_state_or_cognitive_axioms": true,
+    "extra_reference_control_and_measurement_contracts_counted": true,
+    "displacement_group_or_physical_space_not_derived": true,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

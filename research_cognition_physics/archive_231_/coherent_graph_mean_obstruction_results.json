@@ -1,0 +1,147 @@
+{
+  "round": 504,
+  "scientific_baseline_round": 503,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "dependency_sha256": {
+    "branching_tree_distance_audit.py": "3b69018a14093d1d8e335682745a072551e91541114b0b70cf5e468aa80465c1",
+    "role_covariant_graph_obstruction.py": "95ae9978e96a409fe6a0e5714cff96b73913bf07782ceae5516bd4154295728a",
+    "research_note_496.md": "d0039ea3cd2cc877510781d874c100a627fe4fbd8cfadd85be7b21480c5c96e2"
+  },
+  "scope": {
+    "original_440_generator": true,
+    "graph_operator_replacement_by_mean_only": true,
+    "fixed_time_uniform_size_probability_gap": true,
+    "arbitrary_actual_graph_reference": true,
+    "symmetric_source_preparation_derived": false,
+    "other_effective_geometries_excluded": false,
+    "dimension_three_generated": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  },
+  "observations": {
+    "full_tensor": {
+      "dimension": 384,
+      "excitation_dimension": 36,
+      "exact_intertwining": true,
+      "graph_and_data_kept": true,
+      "identity_tag_added": false
+    },
+    "finite_combinatorial_crosschecks": [
+      {
+        "I": 2,
+        "trees": 6,
+        "F_row_sum": 4,
+        "commutator_absolute_row_sum_max": 8,
+        "leaf_parent_marginals_uniform": true
+      },
+      {
+        "I": 3,
+        "trees": 90,
+        "F_row_sum": 8,
+        "commutator_absolute_row_sum_max": 16,
+        "leaf_parent_marginals_uniform": true
+      },
+      {
+        "I": 4,
+        "trees": 2520,
+        "F_row_sum": 12,
+        "commutator_absolute_row_sum_max": 24,
+        "leaf_parent_marginals_uniform": true
+      }
+    ],
+    "uniform_source_crosscheck": [
+      {
+        "I": 2,
+        "uniform_source_second_moment_norm": 22.045407685,
+        "graph_departure_t2_coefficient": "1/2",
+        "compression_exact": true
+      },
+      {
+        "I": 3,
+        "uniform_source_second_moment_norm": 21.5329205327,
+        "graph_departure_t2_coefficient": "2/3",
+        "compression_exact": true
+      }
+    ],
+    "uniform_certificate": {
+      "time_max": "1/1024",
+      "rigorous_factor": "83695/262144",
+      "conservative_probability_gap": "1/4194304",
+      "ordinary_diamond_gap_lower": "1/2097152",
+      "all_I_at_least_2": true,
+      "graph_source_can_be_unknown_and_entangled": true,
+      "full_graph_H_norm_used_as_uniform_constant": false,
+      "general_parent_collision_cases": [
+        {
+          "s": "1/4",
+          "time_max": "1/256",
+          "gap_coefficient_lower": "3/16"
+        },
+        {
+          "s": "1/2",
+          "time_max": "1/264",
+          "gap_coefficient_lower": "1/8"
+        },
+        {
+          "s": "3/4",
+          "time_max": "1/528",
+          "gap_coefficient_lower": "1/16"
+        },
+        {
+          "s": "99/100",
+          "time_max": "1/13200",
+          "gap_coefficient_lower": "1/400"
+        }
+      ]
+    },
+    "actual_port_diagnostics": [
+      {
+        "I": 2,
+        "time": "1/1024",
+        "actual_uniform_source_probability": 9.536718153e-07,
+        "coherent_mean_probability": 4.76836817143e-07,
+        "unknown_graph_minimum_probability": 9.536718153e-07,
+        "probability_gap_lower": "1/4194304",
+        "numerical_evolution_tail_bound": "152587890625/2911399191778857956539284202339808806637943436936309051819170988032"
+      },
+      {
+        "I": 2,
+        "time": "1/2048",
+        "actual_uniform_source_probability": 2.38418422782e-07,
+        "coherent_mean_probability": 1.19209268235e-07,
+        "unknown_graph_minimum_probability": 2.38418422782e-07,
+        "probability_gap_lower": "1/16777216",
+        "numerical_evolution_tail_bound": "30517578125/305356900121448663405104515188743840645909271767512381175178025412591616"
+      },
+      {
+        "I": 3,
+        "time": "1/1024",
+        "actual_uniform_source_probability": 9.53671436348e-07,
+        "coherent_mean_probability": 3.17891259149e-07,
+        "unknown_graph_minimum_probability": 9.53671351402e-07,
+        "probability_gap_lower": "1/4194304",
+        "numerical_evolution_tail_bound": "232630513987207/7425587452387529153980064216061150593283868675455681915612089548800"
+      },
+      {
+        "I": 3,
+        "time": "1/2048",
+        "actual_uniform_source_probability": 2.38418399098e-07,
+        "coherent_mean_probability": 7.94728484722e-08,
+        "unknown_graph_minimum_probability": 2.38418393788e-07,
+        "probability_gap_lower": "1/16777216",
+        "numerical_evolution_tail_bound": "232630513987207/3894477969765529444751379693665216820876442476449802509157147662824243200"
+      }
+    ],
+    "instrument": {
+      "completeness_residual": 2.22390632771e-16,
+      "passive_reference_residual": 7.85046340034e-17,
+      "all_port_outcomes_retained": true,
+      "internal_event_is_record_postprocessing": true,
+      "graph_not_measured": true
+    }
+  }
+}

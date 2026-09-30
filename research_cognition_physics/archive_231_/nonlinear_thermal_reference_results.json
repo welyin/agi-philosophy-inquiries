@@ -1,0 +1,650 @@
+{
+  "date": "2026-09-30",
+  "round": 529,
+  "scientific_base_through_round": 528,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "convexity_and_imaginary_time": {
+    "Kc": [
+      [
+        0.29999999999999993,
+        0.2449489742783178
+      ],
+      [
+        0.2449489742783178,
+        1.45
+      ]
+    ],
+    "Kc_eigenvalues": [
+      0.24999999999999994,
+      1.5
+    ],
+    "sampled_hessian_range": [
+      0.5,
+      0.8896090850058205
+    ],
+    "analytic_curvature_lower": 0.25,
+    "analytic_curvature_upper": 1.5,
+    "sampled_graph_hessian_lower_margins": [
+      -3.3306690738754696e-16,
+      -2.498001805406602e-16,
+      -8.326672684688674e-17
+    ],
+    "independent_path_inverse_error": 1.5543122344752192e-15,
+    "path_limit": [
+      {
+        "slices": 4,
+        "error": 0.045900700295592456
+      },
+      {
+        "slices": 16,
+        "error": 0.0038474293799600767
+      },
+      {
+        "slices": 64,
+        "error": 0.0002460930509461945
+      },
+      {
+        "slices": 256,
+        "error": 1.5403476992525977e-05
+      },
+      {
+        "slices": 1024,
+        "error": 9.628060048116893e-07
+      }
+    ],
+    "exact_loop_equal_time_error": 2.220446049250313e-16,
+    "sampled_loop_inverse_hessian_domination_margin": -2.7697073115527053e-16,
+    "low_temperature_quantum_variance_bound": 1.0373147207275482,
+    "incorrect_classical_only_bound": 0.5
+  },
+  "full_quantum_thermal_diagnostics": [
+    {
+      "b": 1.0,
+      "beta": 1.0,
+      "grid_size": 32,
+      "halfwidth": 8.0,
+      "trace_normalization_error": 3.3306690738754696e-16,
+      "mean": [
+        -4.156505910843106e-08,
+        1.651217173763374e-08
+      ],
+      "covariance": [
+        [
+          1.7291953393732293,
+          -0.6541531955304776
+        ],
+        [
+          -0.6541531955304776,
+          0.880889160267381
+        ]
+      ],
+      "comparison_covariance": [
+        [
+          3.949588173793564,
+          -0.6535238206556157
+        ],
+        [
+          -0.6535238206556157,
+          0.8813883743527899
+        ]
+      ],
+      "comparison_min_eigenvalue": 0.0004990356477137537,
+      "moment_generating_checks": [
+        {
+          "tilt": -0.4,
+          "log_mgf": 0.17603504316640042,
+          "analytic_upper": 0.3536821935902948
+        },
+        {
+          "tilt": -0.2,
+          "log_mgf": 0.044016638319481355,
+          "analytic_upper": 0.0884205483975737
+        },
+        {
+          "tilt": 0.2,
+          "log_mgf": 0.04401662966018899,
+          "analytic_upper": 0.0884205483975737
+        },
+        {
+          "tilt": 0.4,
+          "log_mgf": 0.17603494880300036,
+          "analytic_upper": 0.3536821935902948
+        }
+      ],
+      "calibrated_readout_mgf_checks": [
+        {
+          "tilt": -0.4,
+          "readout_log_mgf": 0.8007398134420608,
+          "analytic_upper": 1.689835269517426
+        },
+        {
+          "tilt": -0.2,
+          "readout_log_mgf": 0.20035372471202542,
+          "analytic_upper": 0.4224588173793565
+        },
+        {
+          "tilt": 0.2,
+          "readout_log_mgf": 0.20035363057363423,
+          "analytic_upper": 0.4224588173793565
+        },
+        {
+          "tilt": 0.4,
+          "readout_log_mgf": 0.8007376369798594,
+          "analytic_upper": 1.689835269517426
+        }
+      ],
+      "actual_calibrated_readout_variance": 10.020976696866146,
+      "relative_fourth_cumulant": -0.04109205994312504,
+      "outer_grid_probability": 2.2859945087563765e-08,
+      "high_energy_state_weight": 4.2703691106197343e-67,
+      "mean_relative_energy": 2.191563158776285
+    },
+    {
+      "b": 1.0,
+      "beta": 4.0,
+      "grid_size": 32,
+      "halfwidth": 8.0,
+      "trace_normalization_error": 8.881784197001252e-16,
+      "mean": [
+        -4.607811586814517e-14,
+        9.270895434497914e-15
+      ],
+      "covariance": [
+        [
+          0.69761444455258,
+          -0.1931058660131435
+        ],
+        [
+          -0.1931058660131435,
+          0.4406136346737157
+        ]
+      ],
+      "comparison_covariance": [
+        [
+          1.2770890867736968,
+          -0.17609969014097443
+        ],
+        [
+          -0.17609969014097443,
+          0.4503265160841058
+        ]
+      ],
+      "comparison_min_eigenvalue": 0.009205734669676238,
+      "moment_generating_checks": [
+        {
+          "tilt": -0.4,
+          "log_mgf": 0.0682451989846647,
+          "analytic_upper": 0.11386226298446811
+        },
+        {
+          "tilt": -0.2,
+          "log_mgf": 0.017062321431334633,
+          "analytic_upper": 0.028465565746117028
+        },
+        {
+          "tilt": 0.2,
+          "log_mgf": 0.017062321431329394,
+          "analytic_upper": 0.028465565746117028
+        },
+        {
+          "tilt": 0.4,
+          "log_mgf": 0.06824519898460787,
+          "analytic_upper": 0.11386226298446811
+        }
+      ],
+      "calibrated_readout_mgf_checks": [
+        {
+          "tilt": -0.4,
+          "readout_log_mgf": 0.38888520219523026,
+          "analytic_upper": 0.6208356347094789
+        },
+        {
+          "tilt": -0.2,
+          "readout_log_mgf": 0.09725116431821226,
+          "analytic_upper": 0.15520890867736972
+        },
+        {
+          "tilt": 0.2,
+          "readout_log_mgf": 0.09725116431812197,
+          "analytic_upper": 0.15520890867736972
+        },
+        {
+          "tilt": 0.4,
+          "readout_log_mgf": 0.38888520219190414,
+          "analytic_upper": 0.6208356347094789
+        }
+      ],
+      "actual_calibrated_readout_variance": 4.8630722227629,
+      "relative_fourth_cumulant": -0.006218212473333873,
+      "outer_grid_probability": 1.3181538757465953e-14,
+      "high_energy_state_weight": 1.310839062703695e-264,
+      "mean_relative_energy": 1.1234242876059657
+    },
+    {
+      "b": 4.0,
+      "beta": 1.0,
+      "grid_size": 32,
+      "halfwidth": 8.0,
+      "trace_normalization_error": 0.0,
+      "mean": [
+        -8.424537107402583e-08,
+        3.370937660783435e-08
+      ],
+      "covariance": [
+        [
+          1.9908862629763904,
+          -0.6539806172054521
+        ],
+        [
+          -0.6539806172054521,
+          0.8810257410877422
+        ]
+      ],
+      "comparison_covariance": [
+        [
+          3.949588173793564,
+          -0.6535238206556157
+        ],
+        [
+          -0.6535238206556157,
+          0.8813883743527899
+        ]
+      ],
+      "comparison_min_eigenvalue": 0.00036252671401286793,
+      "moment_generating_checks": [
+        {
+          "tilt": -0.4,
+          "log_mgf": 0.19664972821163493,
+          "analytic_upper": 0.3536821935902948
+        },
+        {
+          "tilt": -0.2,
+          "log_mgf": 0.04922885084475947,
+          "analytic_upper": 0.0884205483975737
+        },
+        {
+          "tilt": 0.2,
+          "log_mgf": 0.049228833548144356,
+          "analytic_upper": 0.0884205483975737
+        },
+        {
+          "tilt": 0.4,
+          "log_mgf": 0.19664954197486248,
+          "analytic_upper": 0.3536821935902948
+        }
+      ],
+      "calibrated_readout_mgf_checks": [
+        {
+          "tilt": -0.4,
+          "readout_log_mgf": 0.8979682263045301,
+          "analytic_upper": 1.689835269517426
+        },
+        {
+          "tilt": -0.2,
+          "readout_log_mgf": 0.22603403807390493,
+          "analytic_upper": 0.4224588173793565
+        },
+        {
+          "tilt": 0.2,
+          "readout_log_mgf": 0.22603385420467287,
+          "analytic_upper": 0.4224588173793565
+        },
+        {
+          "tilt": 0.4,
+          "readout_log_mgf": 0.8979642448423927,
+          "analytic_upper": 1.689835269517426
+        }
+      ],
+      "actual_calibrated_readout_variance": 11.329431314881951,
+      "relative_fourth_cumulant": -0.3394503952133121,
+      "outer_grid_probability": 4.651206080388316e-08,
+      "high_energy_state_weight": 3.9545513409447035e-67,
+      "mean_relative_energy": 2.1586733043018684
+    },
+    {
+      "b": 4.0,
+      "beta": 4.0,
+      "grid_size": 32,
+      "halfwidth": 8.0,
+      "trace_normalization_error": 0.0,
+      "mean": [
+        3.8625539223760645e-15,
+        -1.8477626037768942e-15
+      ],
+      "covariance": [
+        [
+          0.7898994780668147,
+          -0.18809108212617892
+        ],
+        [
+          -0.18809108212617892,
+          0.4434943594396007
+        ]
+      ],
+      "comparison_covariance": [
+        [
+          1.2770890867736968,
+          -0.17609969014097443
+        ],
+        [
+          -0.17609969014097443,
+          0.4503265160841058
+        ]
+      ],
+      "comparison_min_eigenvalue": 0.006532996125375769,
+      "moment_generating_checks": [
+        {
+          "tilt": -0.4,
+          "log_mgf": 0.07539723483496809,
+          "analytic_upper": 0.11386226298446811
+        },
+        {
+          "tilt": -0.2,
+          "log_mgf": 0.018852354507276545,
+          "analytic_upper": 0.028465565746117028
+        },
+        {
+          "tilt": 0.2,
+          "log_mgf": 0.018852354507276545,
+          "analytic_upper": 0.028465565746117028
+        },
+        {
+          "tilt": 0.4,
+          "log_mgf": 0.07539723483496828,
+          "analytic_upper": 0.11386226298446811
+        }
+      ],
+      "calibrated_readout_mgf_checks": [
+        {
+          "tilt": -0.4,
+          "readout_log_mgf": 0.42549487821943144,
+          "analytic_upper": 0.6208356347094789
+        },
+        {
+          "tilt": -0.2,
+          "readout_log_mgf": 0.1064605792210161,
+          "analytic_upper": 0.15520890867736972
+        },
+        {
+          "tilt": 0.2,
+          "readout_log_mgf": 0.1064605792210161,
+          "analytic_upper": 0.15520890867736972
+        },
+        {
+          "tilt": 0.4,
+          "readout_log_mgf": 0.4254948782194319,
+          "analytic_upper": 0.6208356347094789
+        }
+      ],
+      "actual_calibrated_readout_variance": 5.3244973903340735,
+      "relative_fourth_cumulant": -0.01768454903651584,
+      "outer_grid_probability": 8.928537753824769e-18,
+      "high_energy_state_weight": 1.239997411279179e-264,
+      "mean_relative_energy": 1.0698428305721468
+    }
+  ],
+  "refined_quantum_diagnostics": [
+    {
+      "b": 1.0,
+      "beta": 1.0,
+      "grid_size": 48,
+      "halfwidth": 9.0,
+      "trace_normalization_error": 6.661338147750939e-16,
+      "mean": [
+        -3.381121042866919e-10,
+        1.3430882100928798e-10
+      ],
+      "covariance": [
+        [
+          1.7291956918148101,
+          -0.6541533253924822
+        ],
+        [
+          -0.6541533253924822,
+          0.880889160817252
+        ]
+      ],
+      "comparison_covariance": [
+        [
+          3.949588173793564,
+          -0.6535238206556157
+        ],
+        [
+          -0.6535238206556157,
+          0.8813883743527899
+        ]
+      ],
+      "comparison_min_eigenvalue": 0.0004990350241709786,
+      "moment_generating_checks": [
+        {
+          "tilt": -0.4,
+          "log_mgf": 0.17603506984727788,
+          "analytic_upper": 0.3536821935902948
+        },
+        {
+          "tilt": -0.2,
+          "log_mgf": 0.044016644626349036,
+          "analytic_upper": 0.0884205483975737
+        },
+        {
+          "tilt": 0.2,
+          "log_mgf": 0.04401664453121087,
+          "analytic_upper": 0.0884205483975737
+        },
+        {
+          "tilt": 0.4,
+          "log_mgf": 0.17603506869447266,
+          "analytic_upper": 0.3536821935902948
+        }
+      ],
+      "calibrated_readout_mgf_checks": [
+        {
+          "tilt": -0.4,
+          "readout_log_mgf": 0.8007401871551596,
+          "analytic_upper": 1.689835269517426
+        },
+        {
+          "tilt": -0.2,
+          "readout_log_mgf": 0.20035375168495453,
+          "analytic_upper": 0.4224588173793565
+        },
+        {
+          "tilt": 0.2,
+          "readout_log_mgf": 0.20035375053540977,
+          "analytic_upper": 0.4224588173793565
+        },
+        {
+          "tilt": 0.4,
+          "readout_log_mgf": 0.8007401496010221,
+          "analytic_upper": 1.689835269517426
+        }
+      ],
+      "actual_calibrated_readout_variance": 10.020978459074051,
+      "relative_fourth_cumulant": -0.04107460131166896,
+      "outer_grid_probability": 6.791595252293143e-10,
+      "high_energy_state_weight": 1.8886966172358165e-91,
+      "mean_relative_energy": 2.1915630178088183
+    },
+    {
+      "b": 1.0,
+      "beta": 4.0,
+      "grid_size": 48,
+      "halfwidth": 9.0,
+      "trace_normalization_error": 1.5543122344752192e-15,
+      "mean": [
+        2.7434651772573204e-15,
+        -2.3991225672759242e-15
+      ],
+      "covariance": [
+        [
+          0.6976143725120844,
+          -0.19310589906172643
+        ],
+        [
+          -0.19310589906172643,
+          0.4406134715798412
+        ]
+      ],
+      "comparison_covariance": [
+        [
+          1.2770890867736968,
+          -0.17609969014097443
+        ],
+        [
+          -0.17609969014097443,
+          0.4503265160841058
+        ]
+      ],
+      "comparison_min_eigenvalue": 0.009205895713291785,
+      "moment_generating_checks": [
+        {
+          "tilt": -0.4,
+          "log_mgf": 0.06824519366556374,
+          "analytic_upper": 0.11386226298446811
+        },
+        {
+          "tilt": -0.2,
+          "log_mgf": 0.017062320095552842,
+          "analytic_upper": 0.028465565746117028
+        },
+        {
+          "tilt": 0.2,
+          "log_mgf": 0.017062320095552624,
+          "analytic_upper": 0.028465565746117028
+        },
+        {
+          "tilt": 0.4,
+          "log_mgf": 0.06824519366556374,
+          "analytic_upper": 0.11386226298446811
+        }
+      ],
+      "calibrated_readout_mgf_checks": [
+        {
+          "tilt": -0.4,
+          "readout_log_mgf": 0.3888851746284534,
+          "analytic_upper": 0.6208356347094789
+        },
+        {
+          "tilt": -0.2,
+          "readout_log_mgf": 0.09725115719502672,
+          "analytic_upper": 0.15520890867736972
+        },
+        {
+          "tilt": 0.2,
+          "readout_log_mgf": 0.09725115719502672,
+          "analytic_upper": 0.15520890867736972
+        },
+        {
+          "tilt": 0.4,
+          "readout_log_mgf": 0.38888517462844874,
+          "analytic_upper": 0.6208356347094789
+        }
+      ],
+      "actual_calibrated_readout_variance": 4.863071862560422,
+      "relative_fourth_cumulant": -0.006218163399305698,
+      "outer_grid_probability": 1.1291969090849847e-17,
+      "high_energy_state_weight": 0.0,
+      "mean_relative_energy": 1.1234241341989202
+    }
+  ],
+  "refinement_errors": [
+    {
+      "beta": 1.0,
+      "covariance_error": 3.5244158080871557e-07,
+      "fourth_cumulant_error": 1.7458631456079843e-05,
+      "actual_readout_variance_error": 1.7622079049317563e-06
+    },
+    {
+      "beta": 4.0,
+      "covariance_error": 1.6309387451673985e-07,
+      "fourth_cumulant_error": 4.907402817444506e-08,
+      "actual_readout_variance_error": 3.6020247851098475e-07
+    }
+  ],
+  "harmonic_exact_covariance_error": 1.7852386235972517e-13,
+  "bounded_energy_density_counterfamily": [
+    {
+      "sites": 4,
+      "one_site_W_variance": 4.5,
+      "difference_W_variance": 5,
+      "readout_relative_difference_variance": 25,
+      "relative_energy_upper": 18.55,
+      "energy_density_upper": 4.6375,
+      "energy_contributions": {
+        "kinetic": 2.0,
+        "massive": 1.25,
+        "gate_upper": 3.3,
+        "graph_vacuum_upper": 6.0,
+        "graph_mean_upper": 6.0
+      }
+    },
+    {
+      "sites": 16,
+      "one_site_W_variance": 16.5,
+      "difference_W_variance": 17,
+      "readout_relative_difference_variance": 85,
+      "relative_energy_upper": 74.2,
+      "energy_density_upper": 4.6375,
+      "energy_contributions": {
+        "kinetic": 8.0,
+        "massive": 5.0,
+        "gate_upper": 13.2,
+        "graph_vacuum_upper": 24.0,
+        "graph_mean_upper": 24.0
+      }
+    },
+    {
+      "sites": 64,
+      "one_site_W_variance": 64.5,
+      "difference_W_variance": 65,
+      "readout_relative_difference_variance": 325,
+      "relative_energy_upper": 296.8,
+      "energy_density_upper": 4.6375,
+      "energy_contributions": {
+        "kinetic": 32.0,
+        "massive": 20.0,
+        "gate_upper": 52.8,
+        "graph_vacuum_upper": 96.0,
+        "graph_mean_upper": 96.0
+      }
+    },
+    {
+      "sites": 256,
+      "one_site_W_variance": 256.5,
+      "difference_W_variance": 257,
+      "readout_relative_difference_variance": 1285,
+      "relative_energy_upper": 1187.2,
+      "energy_density_upper": 4.6375,
+      "energy_contributions": {
+        "kinetic": 128.0,
+        "massive": 80.0,
+        "gate_upper": 211.2,
+        "graph_vacuum_upper": 384.0,
+        "graph_mean_upper": 384.0
+      }
+    }
+  ],
+  "dependency_hashes": {
+    "research_note_528.md": "8fcf1a2e72b0f9d94d86467d8b1f31c3222b711cf87156da5d5ccb51c15b39db",
+    "quantum_common_reference.py": "e7fb4caece4ba17ceb7c92f7acd36cb50f5ed8dc4ba46daf073910c5f860719b",
+    "research_note_522.md": "c704d1c14506067f967fa9d8f00e0f27385113fceab028100576c8e51c5ada70",
+    "thermal_reference_dimension_model.py": "26b97950a63b096b450096aed0d07a554cfb28f4e30e4ae6ee4cd55159234cfd",
+    "research_note_523.md": "140508aa0c2e903eb83cecf8ccd8693b06e4c56f78994156bc6bddb22afc64d8"
+  },
+  "scope": {
+    "same_nonlinear_relative_gate_as_round528": true,
+    "all_finite_graphs_and_all_b_analytic_concentration": true,
+    "equal_time_quantum_covariance_not_classical_susceptibility": true,
+    "actual_readout_relative_noise_preserved": true,
+    "thermal_state_preparation_assumed": true,
+    "total_common_gibbs_zero_mode_not_asserted": true,
+    "old_infrared_dimension_theorem_reused_not_reproved": true,
+    "original_dynamic_graph_to_lattice_map_proved": false,
+    "spatially_separating_source_generated": false,
+    "continuum_quantum_field_limit_proved": false,
+    "three_dimensions_uniquely_derived": false,
+    "stage_complete": false
+  }
+}

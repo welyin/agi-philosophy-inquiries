@@ -1,0 +1,130 @@
+{
+  "round": 531,
+  "tests_run": 9,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "symbolic_anomaly_identities_all_N",
+    "explicit_chiral_multiplicities_yukawa_and_local_anomalies",
+    "usual_SU2_global_anomaly_and_even_generation_control",
+    "independent_representation_generator_traces",
+    "positive_weight_cone_necessity_sufficiency_and_boundary",
+    "additional_equal_coupling_selects_N3_within_ansatz",
+    "exact_center_kernel_with_even_N_negative_control",
+    "odd_color_competitors_survive_without_extra_matching_equality",
+    "historical_RG_positive_trace_intersection_and_unweighted_mismatch"
+  ],
+  "symbolic": {
+    "without_singlet": "A_grav=h-Nq; A_Y3=(h-Nq)^3",
+    "with_Dirac_singlet": "both identically zero for n=Nq-h",
+    "bare_Majorana": "n=0 gives h=Nq",
+    "symbolic_all_N": true
+  },
+  "known_color_family_reused": [
+    {
+      "N": 3,
+      "charges": {
+        "Q": "1/6",
+        "uc": "-2/3",
+        "dc": "1/3",
+        "L": "-1/2",
+        "ec": "1",
+        "nuc": "0"
+      },
+      "indices_color_weak_Y": [
+        "2",
+        "2",
+        "10/3"
+      ],
+      "gc_squared_over_gw_squared": "1",
+      "gY_squared_over_gw_squared": "3/5",
+      "sine_squared_weak_angle_at_matching": "3/8"
+    },
+    {
+      "N": 5,
+      "charges": {
+        "Q": "1/10",
+        "uc": "-3/5",
+        "dc": "2/5",
+        "L": "-1/2",
+        "ec": "1",
+        "nuc": "0"
+      },
+      "indices_color_weak_Y": [
+        "2",
+        "3",
+        "21/5"
+      ],
+      "gc_squared_over_gw_squared": "3/2",
+      "gY_squared_over_gw_squared": "5/7",
+      "sine_squared_weak_angle_at_matching": "5/12"
+    },
+    {
+      "N": 7,
+      "charges": {
+        "Q": "1/14",
+        "uc": "-4/7",
+        "dc": "3/7",
+        "L": "-1/2",
+        "ec": "1",
+        "nuc": "0"
+      },
+      "indices_color_weak_Y": [
+        "2",
+        "4",
+        "36/7"
+      ],
+      "gc_squared_over_gw_squared": "2",
+      "gY_squared_over_gw_squared": "7/9",
+      "sine_squared_weak_angle_at_matching": "7/16"
+    }
+  ],
+  "center_kernel_sizes": {
+    "3": 6,
+    "5": 10,
+    "7": 14,
+    "9": 18
+  },
+  "historical_running": {
+    "source": "1204.0328 section 8.2, fixed historical 2012 central values",
+    "input_g_Y_weak_color": [
+      0.3575,
+      0.6519,
+      1.22
+    ],
+    "MZ_GeV": 91.1876,
+    "beta_minus_sign_convention": [
+      -6.833333333333333,
+      3.1666666666666665,
+      7.0
+    ],
+    "weighted_trace_log_scale_ratio": 18.7341803018,
+    "weighted_trace_scale_GeV": 12476331729.144415,
+    "positive_weight_ratio_lepton_over_quark": 2.3232141058,
+    "matched_inverse_couplings": [
+      6.2029905255,
+      3.1044459796,
+      2.33276056
+    ],
+    "color_weak_equal_scale_GeV": 9.978953425705306e+16,
+    "hypercharge_mismatch_at_color_weak_equality": -1.4091646793,
+    "current_empirical_fit": false,
+    "complete_spectral_action_realization": false
+  },
+  "dependency_hashes": {
+    "unified_physics_condition_ledger.md": "eafa723fb8dbb08af74c8c1bfbcb7a6d68d704872390ce97ede5b546ba6e0214",
+    "unified_physics_condition_audit_results.json": "1ba97ac957a9b3f96d73b83ba6a903595943d6ea13c59c2d8b4b7bf7837f9cb6",
+    "research_note_339.md": "84085b0800756d3b2037d94928f113a81d182310fa2cc25d2c7fdf0c8c01ebc0",
+    "research_note_344.md": "b9e82e31400594d3aa13f66c145d3835cf29809abc9bc57336f4cc9bd10a3ba3",
+    "research_note_360.md": "cfe1d4f239e898bdd3080bbd742d334161cff9ed07d2e39177b5b7bdfeab3a44",
+    "research_note_490.md": "326105cb7f04b849d9f679c219b75a8d90775d5001748928553d4b112504bcda"
+  },
+  "scope": {
+    "common_four_dimensional_EFT_ansatz_supplied": true,
+    "joint_positive_trace_compatibility_proved": true,
+    "complete_anomaly_classification": false,
+    "spacetime_dimension_or_GR_generated": false,
+    "complete_SM_selected_from_cognition": false,
+    "full_NCG_spectral_triple_or_new_empirical_fit": false
+  }
+}

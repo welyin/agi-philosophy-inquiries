@@ -1,0 +1,219 @@
+"""Round 529: quantum thermal concentration for the nonlinear relative gate.
+
+Analytic uniform bounds use convexity, Brascamp--Lieb and Feynman--Kac.
+Numerics below are finite-coordinate spectral diagnostics; they do not prove a
+continuum field limit, thermal preparation, or a physical dimension theorem.
+"""
+import argparse
+import hashlib
+import json
+import math
+from pathlib import Path
+import numpy as np
+from quantum_common_reference import A, C, D, MU2, relative_gate
+from thermal_reference_dimension_model import thermal_q
+
+HERE=Path(__file__).resolve().parent
+TARGET=HERE/'nonlinear_thermal_reference_results.json'
+VEC=np.array([A,D])
+KC=np.diag([0.,MU2])+.25*np.outer(VEC,VEC)
+
+
+def h_second(s):
+    t=np.tanh(s); z=1-t*t
+    return .5+.25*t*t+s*t*z+.25*s*s*z*(1-3*t*t)
+
+
+def matrix_covariance(stiffness,beta):
+    eigen,rotation=np.linalg.eigh(stiffness)
+    return (rotation*thermal_q(eigen,1/beta))@rotation.T
+
+
+def path_covariance(stiffness,beta,slices):
+    eigen,rotation=np.linalg.eigh(stiffness)
+    time_freq=4*(slices/beta)**2*np.sin(np.pi*np.arange(slices)/slices)**2
+    diag=np.sum(1/(eigen[:,None]+time_freq[None,:]),axis=1)/beta
+    return (rotation*diag)@rotation.T
+
+
+def path_and_convexity():
+    grid=np.linspace(-20,20,16001)
+    curvature=h_second(grid)
+    assert np.min(curvature)>=.25
+    assert np.max(curvature)<=1.5
+    assert np.max(grid*grid/np.cosh(grid)**2)<=.5
+    assert np.max(abs(np.linalg.eigvalsh(KC)-[.25,1.5]))<1e-14
+    lap=np.array([[1.,-1.,0.],[-1.,2.,-1.],[0.,-1.,1.]])
+    stiffness=np.kron(lap,np.eye(2))+np.kron(np.eye(3),KC)
+    rng=np.random.default_rng(529)
+    lower_margins=[]
+    for b in (.3,1.,10.):
+        q=rng.normal(size=(3,2))
+        actual=np.kron(lap,np.eye(2))
+        for i in range(3):
+            block=np.diag([0.,MU2])+h_second(float(q[i]@VEC)/b)*np.outer(VEC,VEC)
+            actual[2*i:2*i+2,2*i:2*i+2]+=block
+        lower_margins.append(float(np.linalg.eigvalsh(actual-stiffness)[0]))
+    assert min(lower_margins)>-1e-13
+    beta=3.
+    exact=matrix_covariance(stiffness,beta)
+    convergence=[]
+    for m in (4,16,64,256,1024):
+        discrete=path_covariance(stiffness,beta,m)
+        convergence.append(dict(slices=m,error=float(np.max(abs(discrete-exact)))))
+    assert convergence[-1]['error']<2e-6
+    assert all(x['error']>y['error'] for x,y in zip(convergence,convergence[1:]))
+    m=5; dt=beta/m
+    time_lap=2*np.eye(m)-np.roll(np.eye(m),1,axis=0)-np.roll(np.eye(m),-1,axis=0)
+    action_hessian=np.kron(time_lap/dt,np.eye(6))+np.kron(np.eye(m),dt*stiffness)
+    direct=np.linalg.inv(action_hessian)[:6,:6]
+    direct_error=float(np.max(abs(direct-path_covariance(stiffness,beta,m))))
+    assert direct_error<1e-13
+    return dict(Kc=KC.tolist(),Kc_eigenvalues=np.linalg.eigvalsh(KC).tolist(),
+        sampled_hessian_range=[float(np.min(curvature)),float(np.max(curvature))],
+        analytic_curvature_lower=.25,analytic_curvature_upper=1.5,
+        sampled_graph_hessian_lower_margins=lower_margins,
+        independent_path_inverse_error=direct_error,path_limit=convergence,
+        low_temperature_quantum_variance_bound=float(thermal_q(.25,1/8)),
+        incorrect_classical_only_bound=1/(8*.25))
+
+
+def quantum_spectrum(b,size=32,halfwidth=8.,quadratic=False):
+    grid=np.linspace(-halfwidth,halfwidth,size,endpoint=False)
+    dx=float(grid[1]-grid[0]); k=2*np.pi*np.fft.fftfreq(size,dx)
+    # Coordinate DVR with a periodic kinetic matrix; volume normalization is
+    # absorbed in orthonormal discrete basis vectors. Boundary effects are checked.
+    kinetic=np.fft.ifft((k*k/2)[:,None]*np.fft.fft(np.eye(size),axis=0),axis=0).real
+    kinetic=(kinetic+kinetic.T)/2
+    w,m=np.meshgrid(grid,grid,indexing='ij')
+    s=A*w+D*m
+    potential=MU2*m*m/2+(.5 if quadratic else relative_gate(s/b))*s*s/2
+    hamiltonian=np.kron(kinetic,np.eye(size))+np.kron(np.eye(size),kinetic)
+    hamiltonian[np.diag_indices(size*size)]+=potential.ravel()
+    energy,vectors=np.linalg.eigh(hamiltonian)
+    return grid,w.ravel(),m.ravel(),energy,vectors
+
+
+def thermal_statistics(spectrum,b,beta,size,halfwidth,nu=.25):
+    grid,w,m,energy,vectors=spectrum
+    weights=np.exp(-beta*(energy-energy[0])); weights/=np.sum(weights)
+    diagonal=(vectors*vectors)@weights
+    means=np.array([diagonal@w,diagonal@m])
+    second=np.array([[diagonal@(w*w),diagonal@(w*m)],
+                     [diagonal@(w*m),diagonal@(m*m)]])
+    covariance=second-np.outer(means,means)
+    bound=matrix_covariance(KC,beta)
+    minimum_margin=float(np.linalg.eigvalsh(bound-covariance)[0])
+    assert minimum_margin>-3e-5
+    assert float(covariance[0,0])<=1/math.tanh(beta/4)+3e-5
+    mgfs=[]; actual=[]
+    for tilt in (-.4,-.2,.2,.4):
+        ell=np.array([1.,-.3])
+        linear=ell[0]*(w-means[0])+ell[1]*(m-means[1])
+        logmgf=math.log(float(diagonal@np.exp(tilt*linear)))
+        upper=float(tilt*tilt*(ell@bound@ell)/2)
+        assert logmgf<=upper+1e-6
+        mgfs.append(dict(tilt=tilt,log_mgf=logmgf,analytic_upper=upper))
+        # One actual chi readout, common U prepared independently with variance 1.
+        # z=(a/c)y=U-W/c+Gaussian noise of variance 6 nu^2.
+        common_var=1.
+        logz=tilt*tilt*(common_var+6*nu*nu)/2+math.log(
+            float(diagonal@np.exp(-tilt*(w-means[0])/C)))
+        zbound=tilt*tilt*(common_var+5*bound[0,0]+6*nu*nu)/2
+        assert logz<=zbound+1e-6
+        actual.append(dict(tilt=tilt,readout_log_mgf=logz,analytic_upper=float(zbound)))
+    outer=float(diagonal[(np.maximum(abs(w),abs(m))>halfwidth-1)].sum())
+    w4=float(diagonal@((w-means[0])**4)-3*covariance[0,0]**2)
+    return dict(b=b,beta=beta,grid_size=size,halfwidth=halfwidth,
+        trace_normalization_error=abs(float(diagonal.sum())-1),
+        mean=means.tolist(),covariance=covariance.tolist(),comparison_covariance=bound.tolist(),
+        comparison_min_eigenvalue=minimum_margin,moment_generating_checks=mgfs,
+        calibrated_readout_mgf_checks=actual,
+        actual_calibrated_readout_variance=float(1+5*covariance[0,0]+6*nu*nu),
+        relative_fourth_cumulant=w4,outer_grid_probability=outer,
+        high_energy_state_weight=float(weights[-1]),mean_relative_energy=float(weights@energy))
+
+
+def nongibbs_counterfamily():
+    rows=[]
+    # Global parity mixture of coherent sources centered at +/-sqrt(N) W_0.
+    # Degree <=3; every relative coordinate and momentum has vacuum variance 1/2.
+    for n in (4,16,64,256):
+        mean_square=n
+        variance=n+.5
+        contributions=dict(kinetic=n/2,massive=5*n/16,
+            gate_upper=3*(A*A*mean_square+n)/8,
+            graph_vacuum_upper=3*n/2,graph_mean_upper=3*mean_square/2)
+        energy_upper=sum(contributions.values())
+        assert abs(energy_upper/n-371/80)<1e-13
+        rows.append(dict(sites=n,one_site_W_variance=variance,
+            difference_W_variance=n+1,readout_relative_difference_variance=5*(n+1),
+            relative_energy_upper=energy_upper,energy_density_upper=energy_upper/n,
+            energy_contributions=contributions))
+    assert rows[-1]['one_site_W_variance']>1/math.tanh(1/4)
+    return rows
+
+
+def run():
+    structure=path_and_convexity()
+    rows=[]
+    for b in (1.,4.):
+        spectrum=quantum_spectrum(b)
+        for beta in (1.,4.):
+            rows.append(thermal_statistics(spectrum,b,beta,32,8.))
+    fine_spectrum=quantum_spectrum(1.,size=48,halfwidth=9.)
+    fine=[thermal_statistics(fine_spectrum,1.,beta,48,9.) for beta in (1.,4.)]
+    refinements=[]
+    for coarse,refined in zip(rows[:2],fine):
+        cov_error=float(np.max(abs(np.array(coarse['covariance'])-np.array(refined['covariance']))))
+        cumulant_error=abs(coarse['relative_fourth_cumulant']-refined['relative_fourth_cumulant'])
+        actual_error=abs(coarse['actual_calibrated_readout_variance']-refined['actual_calibrated_readout_variance'])
+        assert cov_error<3e-4 and cumulant_error<2e-3 and actual_error<2e-3
+        refinements.append(dict(beta=coarse['beta'],covariance_error=cov_error,
+            fourth_cumulant_error=cumulant_error,actual_readout_variance_error=actual_error))
+    harmonic_spectrum=quantum_spectrum(1.,quadratic=True)
+    harmonic=thermal_statistics(harmonic_spectrum,1.,4.,32,8.)
+    stiffness=np.diag([0.,MU2])+.5*np.outer(VEC,VEC)
+    harmonic_error=float(np.max(abs(np.array(harmonic['covariance'])-matrix_covariance(stiffness,4.))))
+    assert harmonic_error<1e-5
+    for row in rows+fine:
+        assert row['trace_normalization_error']<1e-12
+        assert max(abs(x) for x in row['mean'])<1e-5
+        assert row['outer_grid_probability']<2e-5
+        assert abs(row['relative_fourth_cumulant'])>1e-5
+    counter=nongibbs_counterfamily()
+    dependencies=('research_note_528.md','quantum_common_reference.py',
+                  'research_note_522.md','thermal_reference_dimension_model.py',
+                  'research_note_523.md')
+    return dict(date='2026-09-30',round=529,scientific_base_through_round=528,
+        tests_run=6,failures=0,errors=0,convexity_and_imaginary_time=structure,
+        full_quantum_thermal_diagnostics=rows,refined_quantum_diagnostics=fine,
+        refinement_errors=refinements,harmonic_exact_covariance_error=harmonic_error,
+        bounded_energy_density_counterfamily=counter,
+        dependency_hashes={name:hashlib.sha256((HERE/name).read_bytes()).hexdigest() for name in dependencies},
+        scope=dict(same_nonlinear_relative_gate_as_round528=True,
+            all_finite_graphs_and_all_b_analytic_concentration=True,
+            equal_time_quantum_covariance_not_classical_susceptibility=True,
+            actual_readout_relative_noise_preserved=True,
+            thermal_state_preparation_assumed=True,
+            total_common_gibbs_zero_mode_not_asserted=True,
+            old_infrared_dimension_theorem_reused_not_reproved=True,
+            original_dynamic_graph_to_lattice_map_proved=False,
+            spatially_separating_source_generated=False,
+            continuum_quantum_field_limit_proved=False,
+            three_dimensions_uniquely_derived=False,stage_complete=False))
+
+
+if __name__=='__main__':
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--check',action='store_true')
+    args=parser.parse_args()
+    result=run()
+    if args.check:
+        assert json.loads(TARGET.read_text('utf8'))==json.loads(json.dumps(result))
+    else:
+        with TARGET.open('x',encoding='utf8',newline='\n') as stream:
+            stream.write(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
+    print(json.dumps(dict(round=529,tests=6,failures=0,
+        refined_covariance_error=max(x['covariance_error'] for x in result['refinement_errors']),
+        relative_covariance_floor_eigenvalues=result['convexity_and_imaginary_time']['Kc_eigenvalues']),ensure_ascii=False))

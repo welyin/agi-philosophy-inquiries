@@ -1,0 +1,180 @@
+{
+  "date": "2026-09-30",
+  "diagnostic_groups": 6,
+  "failures": 0,
+  "errors": 0,
+  "numbered_round_created": false,
+  "numbered_test_increment": 0,
+  "inputs": {
+    "temperature": 1.0,
+    "uv_cutoff": 2.0,
+    "massive_squared": 1.25,
+    "ratio": 0.5,
+    "readout_sigma": 0.25,
+    "reference_gradient": 1.0,
+    "qubit_sharpness": 0.8,
+    "effective_continuum_geometry_is_input": true
+  },
+  "diagnostics": {
+    "three_dimensional_readout": [
+      {
+        "d": 3,
+        "length": 1.0,
+        "common": 0.0474486631101228,
+        "massive": 0.12707829267971493,
+        "meter": 0.625,
+        "coordinate_variance": 0.7995269557898377,
+        "snr": 1.1183646851047089,
+        "ideal_antipodal_gap": 0.4235209404618395
+      },
+      {
+        "d": 3,
+        "length": 8.0,
+        "common": 0.20342007459602063,
+        "massive": 0.41157220286668866,
+        "meter": 0.625,
+        "coordinate_variance": 1.2399922774627092,
+        "snr": 7.1842344522826265,
+        "ideal_antipodal_gap": 0.7845000965317368
+      },
+      {
+        "d": 3,
+        "length": 32.0,
+        "common": 0.2193667862620193,
+        "massive": 0.41491577753229797,
+        "meter": 0.625,
+        "coordinate_variance": 1.2592825637943172,
+        "snr": 28.51598537280075,
+        "ideal_antipodal_gap": 0.7990161854970358
+      }
+    ],
+    "field_quadrature_difference": 8.881784197001252e-16,
+    "projected_normal": [
+      {
+        "snr": 0.1,
+        "laplace_integral": 0.05313916868849684,
+        "closed_form": 0.05313916868849855,
+        "polar_integral": 0.053139168688497156
+      },
+      {
+        "snr": 1.0,
+        "laplace_integral": 0.48394144903828573,
+        "closed_form": 0.48394144903828673,
+        "polar_integral": 0.4839414490382902
+      },
+      {
+        "snr": 3.0,
+        "laplace_integral": 0.889443635773953,
+        "closed_form": 0.8894436357739496,
+        "polar_integral": 0.8894436357739923
+      },
+      {
+        "snr": 8.0,
+        "laplace_integral": 0.9843750000000241,
+        "closed_form": 0.984375,
+        "polar_integral": 0.9843750000003707
+      }
+    ],
+    "uniform_finite_menu": {
+      "minimum_length": 8.0,
+      "coordinate_variance_upper": 3.138624183839989,
+      "response_lower": 0.705753982765001,
+      "cover_radius_upper": 0.19634954084936207,
+      "antipodal_gap_lower": 0.4075235535325112,
+      "angular_symbols": 482,
+      "angular_bits": 9,
+      "random_rounding_crosscheck_max": 0.13790130997280678
+    },
+    "qubit_instruments": [
+      {
+        "snr": 1.0,
+        "normalization_residual": 1.7763568394002505e-15,
+        "mean_direction": 0.4839414490382902,
+        "second_axial_moment": 0.4495569180141569,
+        "choi_minimum": 0.04056930113059187,
+        "tp_residual": 2.220446049250313e-16,
+        "actual_vs_averaged_luders_choi_frobenius": 0.1859461968146944
+      },
+      {
+        "snr": 3.0,
+        "normalization_residual": 4.1300296516055823e-14,
+        "mean_direction": 0.8894436357739923,
+        "second_axial_moment": 0.8069012503087011,
+        "choi_minimum": 0.002635323519768501,
+        "tp_residual": 3.3306690738754696e-16,
+        "actual_vs_averaged_luders_choi_frobenius": 0.05949935129836346
+      }
+    ],
+    "lower_dimensional_counterexample": {
+      "examples": [
+        {
+          "d": 2,
+          "length": 8.0,
+          "common": 0.8942622143654159,
+          "massive": 1.106465473453345,
+          "meter": 0.625,
+          "coordinate_variance": 2.625727687818761,
+          "snr": 4.937022939261715,
+          "direction_gap": 0.7830191375933528
+        },
+        {
+          "d": 2,
+          "length": 32.0,
+          "common": 1.3380672102515194,
+          "massive": 1.1144575792268476,
+          "meter": 0.625,
+          "coordinate_variance": 3.077524789478367,
+          "snr": 18.241023312703547,
+          "direction_gap": 0.7987951115264199
+        },
+        {
+          "d": 2,
+          "length": 128.0,
+          "common": 1.7796253541141591,
+          "massive": 1.115406241255884,
+          "meter": 0.625,
+          "coordinate_variance": 3.5200315953700434,
+          "snr": 68.22392304696899,
+          "direction_gap": 0.7999140478732671
+        }
+      ],
+      "uniform_direction_gap_lower": 0.4303031887990882,
+      "absolute_difference_variance_is_unbounded": true
+    },
+    "larger_carrier": {
+      "dimension": 4,
+      "higher_dimensional_direction": 4,
+      "clifford_residual": 0.0,
+      "antipodal_gaps": [
+        0.6793637345296804,
+        0.6793637345296804,
+        0.6793637345296804,
+        0.6793637345296804,
+        0.6793637345296804
+      ]
+    },
+    "resources": {
+      "cutoff_mode_density": 0.13509491152311703,
+      "six_field_read_energy_increment": 1.6211389382774044,
+      "reference_mean_gradient_energy_density": 1.5,
+      "autonomous_qubit_control_energy_derived": false
+    }
+  },
+  "provenance_sha256": {
+    "thermal_reference_dimension_model.py": "26b97950a63b096b450096aed0d07a554cfb28f4e30e4ae6ee4cd55159234cfd",
+    "thermal_reference_dimension_results.json": "6977aaa7f6c51c95e11ff2684141eb04257e855d3a6534c14e058fa3a41b49de"
+  },
+  "scope": {
+    "conditional_three_dimensional_joint_model": true,
+    "fu_cp_unique_derivation": false,
+    "same_lattice_continuum_limit_proved": false,
+    "absolute_precision_separate_requirement": true,
+    "all_directions_continuum_is_input": true,
+    "finite_quantized_menu": true,
+    "exact_finite_record_budget_includes_all_hardware": false,
+    "field_source_independent_of_unknown_qubit": true,
+    "infinite_joint_confidence": false,
+    "finite_total_infinite_volume_energy": false,
+    "einstein_backreaction_solved": false
+  }
+}

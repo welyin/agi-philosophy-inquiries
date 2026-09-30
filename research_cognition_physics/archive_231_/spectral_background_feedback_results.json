@@ -1,0 +1,217 @@
+{
+  "round": 534,
+  "tests_run": 8,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "exact_coupled_elimination_and_positive_K_endpoint_identity",
+    "zero_Majorana_branch_has_no_nonzero_constant_radial_solution",
+    "linear_stationarity_classification_including_zero_P0_control",
+    "round533_flat_minimum_fails_same_model_scalar_gravity_equations",
+    "Majorana_branch_and_independent_sphere_variation_control",
+    "cutoff_width_invariant_curvature_diagnostic_not_remainder_theorem",
+    "exact_round_sphere_spectrum_with_explicit_positive_tail_bounds",
+    "truncated_symmetric_vacuum_is_not_full_spectral_stationary_point"
+  ],
+  "exact_polynomial_cases": 18,
+  "zero_Majorana_examples": [
+    {
+      "N": 3,
+      "Yukawas": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "P0": "3200",
+      "P1": "0",
+      "R_over_cutoff_squared": "24"
+    },
+    {
+      "N": 3,
+      "Yukawas": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "P0": "27200",
+      "P1": "103200",
+      "R_over_cutoff_squared": "24"
+    },
+    {
+      "N": 5,
+      "Yukawas": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "P0": "6272",
+      "P1": "0",
+      "R_over_cutoff_squared": "24"
+    },
+    {
+      "N": 5,
+      "Yukawas": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "P0": "60480",
+      "P1": "186912",
+      "R_over_cutoff_squared": "24"
+    }
+  ],
+  "algebraic_classification_controls": [
+    {
+      "P0": "-5/2",
+      "P1": "3",
+      "interior_stationary_point": true
+    },
+    {
+      "P0": "-2",
+      "P1": "3",
+      "interior_stationary_point": true
+    },
+    {
+      "P0": "-3/2",
+      "P1": "3",
+      "interior_stationary_point": true
+    },
+    {
+      "P0": "0",
+      "P1": "3",
+      "interior_stationary_point": false
+    },
+    {
+      "P0": "2",
+      "P1": "3",
+      "interior_stationary_point": false
+    }
+  ],
+  "old_flat_minimum_control": {
+    "s": "17/209",
+    "R_from_metric_equation": "2188/43",
+    "scaled_scalar_equation_residual": "743920/43"
+  },
+  "smooth_cutoff_Majorana_stationary_example": {
+    "p": 16,
+    "f2": 0.4837900338,
+    "f4": 0.235435674962,
+    "M_squared": 0.4837900338,
+    "s": 0.005052706014,
+    "K": 0.074070302385,
+    "P0": -471.995562857588,
+    "P1": 93414.41230830585,
+    "R": 10.847821926529,
+    "R_over_moment_scale_squared": 22.422582460677,
+    "reduced_U_second_derivative_in_s": 2.162014412526
+  },
+  "moment_scale_examples": [
+    {
+      "p": 1,
+      "R_over_moment_scale_squared": 48.0
+    },
+    {
+      "p": 2,
+      "R_over_moment_scale_squared": 30.557749073644
+    },
+    {
+      "p": 8,
+      "R_over_moment_scale_squared": 24.528319848401
+    },
+    {
+      "p": 16,
+      "R_over_moment_scale_squared": 24.141801662941
+    }
+  ],
+  "exact_Gaussian_sphere_examples": [
+    {
+      "radius_times_cutoff": 0.5,
+      "terms_through_m": 20,
+      "exact_action_partial": 9.00281e-07,
+      "exact_derivative_partial": 5.7618011e-05,
+      "positive_first_mode_derivative": 5.7618009e-05,
+      "log_upper_bound_positive_action_tail": -1595.799670117351,
+      "log_upper_bound_positive_derivative_tail": -1587.034991653097,
+      "truncated_action": -0.002777777778,
+      "truncated_derivative": -0.333333333333
+    },
+    {
+      "radius_times_cutoff": 0.707106781187,
+      "terms_through_m": 20,
+      "exact_action_partial": 0.002684188384,
+      "exact_derivative_partial": 0.060750034529,
+      "positive_first_mode_derivative": 0.06072522215,
+      "log_upper_bound_positive_action_tail": -795.10589852216,
+      "log_upper_bound_positive_derivative_tail": -787.380315245651,
+      "truncated_action": -0.044444444444,
+      "truncated_derivative": 0.0
+    },
+    {
+      "radius_times_cutoff": 1.0,
+      "terms_through_m": 20,
+      "exact_action_partial": 0.150483229877,
+      "exact_derivative_partial": 1.243573137188,
+      "positive_first_mode_derivative": 1.172200888879,
+      "log_upper_bound_positive_action_tail": -394.411503680802,
+      "log_upper_bound_positive_derivative_tail": -387.724388854088,
+      "truncated_action": 0.122222222222,
+      "truncated_derivative": 1.333333333333
+    },
+    {
+      "radius_times_cutoff": 2.0,
+      "terms_through_m": 20,
+      "exact_action_partial": 8.1267101491,
+      "exact_derivative_partial": 18.661733355028,
+      "positive_first_mode_derivative": 2.943035529372,
+      "log_upper_bound_positive_action_tail": -93.017755869027,
+      "log_upper_bound_positive_derivative_tail": -88.402537327386,
+      "truncated_action": 8.122222222222,
+      "truncated_derivative": 18.666666666667
+    },
+    {
+      "radius_times_cutoff": 5.0,
+      "terms_through_m": 50,
+      "exact_action_partial": 400.122887155331,
+      "exact_derivative_partial": 326.66639708383,
+      "positive_first_mode_derivative": 0.436297619951,
+      "log_upper_bound_positive_action_tail": -89.352592941531,
+      "log_upper_bound_positive_derivative_tail": -85.653665131763,
+      "truncated_action": 400.122222222222,
+      "truncated_derivative": 326.666666666667
+    },
+    {
+      "radius_times_cutoff": 10.0,
+      "terms_through_m": 100,
+      "exact_action_partial": 6600.122386788339,
+      "exact_derivative_partial": 2653.333300310591,
+      "positive_first_mode_derivative": 0.061490524106,
+      "log_upper_bound_positive_action_tail": -86.580004219291,
+      "log_upper_bound_positive_derivative_tail": -83.574223590083,
+      "truncated_action": 6600.122222222222,
+      "truncated_derivative": 2653.333333333333
+    }
+  ],
+  "dependency_hashes": {
+    "research_note_533.md": "cfc98f3792ffc7b13cc6a869d2c212ac3c267f5c2dbde69c324e90c0377ce6f3",
+    "shared_spectral_budget.py": "653729937d131d4722c8d82d6ea3e444dbd639de08a03a81925fdd4986efd54f",
+    "shared_spectral_budget_results.json": "86237aab4b4d62d686b7c81c03837cf76641ff2e43871bec96214d0f25ed657f",
+    "unified_physics_condition_ledger_533.md": "86693c28b580f0321d528256b96954342e4f9a840187c12914831a1b1ae10135",
+    "research_note_303.md": "712a7daf4de5d0dd21f67ae7241b07183d46eb24804ec344d8c60a645f0203e6",
+    "research_note_313.md": "772b8bb908acf88516c549c64ab6563be53e4c0915691750911f2ce6b839e954"
+  },
+  "scope": {
+    "common_four_dimensional_Euclidean_model_supplied": true,
+    "stationary_constant_radial_truncation_classified": true,
+    "positive_K_and_strict_cutoff_moment_gap_required": true,
+    "full_round_sphere_scale_obstruction_for_strictly_decreasing_cutoff": true,
+    "fixed_cutoff_weights_and_constant_internal_Phi": true,
+    "no_gauge_flux_fermion_source_volume_constraint_or_extra_action": true,
+    "full_gravitational_stability_proved": false,
+    "Lorentzian_or_nonconstant_backgrounds_excluded": false,
+    "observed_vacuum_or_GR_or_cognition_ruled_out": false
+  }
+}

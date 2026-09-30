@@ -1,0 +1,699 @@
+{
+  "round": 486,
+  "scientific_baseline_round": 485,
+  "reused_frozen_rounds": [
+    475,
+    480,
+    472
+  ],
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "observations": {
+    "exact_symmetries": {
+      "full_dimension": 384,
+      "faithful_SU2_scalar_block_dimension": 120,
+      "nonzero_joint_sectors": 27,
+      "all_integer_products_have_prior_overflow_bounds": true,
+      "Casimir_eigenvalues": [
+        0,
+        2,
+        6,
+        12
+      ],
+      "all_projectors_exact_complete_orthogonal": true,
+      "representation_reduction_is_not_physical_state_truncation": true
+    },
+    "exact_spectral_certificate": {
+      "sectors": [
+        {
+          "name": "j0_4_minus",
+          "dimension_on_m0": 2,
+          "S4_irrep_dimension": 1,
+          "polynomial_descending_coefficients": [
+            1,
+            0,
+            -9
+          ],
+          "HK_commutes_on_sector": false
+        },
+        {
+          "name": "j0_31_minus",
+          "dimension_on_m0": 3,
+          "S4_irrep_dimension": 3,
+          "polynomial_descending_coefficients": [
+            1,
+            -1
+          ],
+          "HK_commutes_on_sector": true
+        },
+        {
+          "name": "j0_31_plus",
+          "dimension_on_m0": 9,
+          "S4_irrep_dimension": 3,
+          "polynomial_descending_coefficients": [
+            1,
+            -5,
+            -9,
+            29
+          ],
+          "HK_commutes_on_sector": false
+        },
+        {
+          "name": "j0_22_minus",
+          "dimension_on_m0": 6,
+          "S4_irrep_dimension": 2,
+          "polynomial_descending_coefficients": [
+            1,
+            -5,
+            -9,
+            21
+          ],
+          "HK_commutes_on_sector": false
+        },
+        {
+          "name": "j0_211_minus",
+          "dimension_on_m0": 3,
+          "S4_irrep_dimension": 3,
+          "polynomial_descending_coefficients": [
+            1,
+            -1
+          ],
+          "HK_commutes_on_sector": true
+        },
+        {
+          "name": "j0_211_plus",
+          "dimension_on_m0": 6,
+          "S4_irrep_dimension": 3,
+          "polynomial_descending_coefficients": [
+            1,
+            0,
+            -1
+          ],
+          "HK_commutes_on_sector": true
+        },
+        {
+          "name": "j0_1111_minus",
+          "dimension_on_m0": 1,
+          "S4_irrep_dimension": 1,
+          "polynomial_descending_coefficients": [
+            1,
+            1
+          ],
+          "HK_commutes_on_sector": true
+        },
+        {
+          "name": "j1_4_minus",
+          "dimension_on_m0": 1,
+          "S4_irrep_dimension": 1,
+          "polynomial_descending_coefficients": [
+            1,
+            -2
+          ],
+          "HK_commutes_on_sector": true
+        },
+        {
+          "name": "j1_4_plus",
+          "dimension_on_m0": 3,
+          "S4_irrep_dimension": 1,
+          "polynomial_descending_coefficients": [
+            1,
+            -6,
+            3,
+            10
+          ],
+          "HK_commutes_on_sector": false
+        },
+        {
+          "name": "j1_31_minus",
+          "dimension_on_m0": 15,
+          "S4_irrep_dimension": 3,
+          "polynomial_descending_coefficients": [
+            1,
+            -9,
+            13,
+            49,
+            -110,
+            40
+          ],
+          "HK_commutes_on_sector": false
+        },
+        {
+          "name": "j1_31_plus",
+          "dimension_on_m0": 9,
+          "S4_irrep_dimension": 3,
+          "polynomial_descending_coefficients": [
+            1,
+            -7,
+            4,
+            4
+          ],
+          "HK_commutes_on_sector": false
+        },
+        {
+          "name": "j1_22_minus",
+          "dimension_on_m0": 2,
+          "S4_irrep_dimension": 2,
+          "polynomial_descending_coefficients": [
+            1,
+            -2
+          ],
+          "HK_commutes_on_sector": true
+        },
+        {
+          "name": "j1_22_plus",
+          "dimension_on_m0": 8,
+          "S4_irrep_dimension": 2,
+          "polynomial_descending_coefficients": [
+            1,
+            -7,
+            -9,
+            55,
+            -16
+          ],
+          "HK_commutes_on_sector": false
+        },
+        {
+          "name": "j1_211_minus",
+          "dimension_on_m0": 9,
+          "S4_irrep_dimension": 3,
+          "polynomial_descending_coefficients": [
+            1,
+            -4,
+            -1,
+            12
+          ],
+          "HK_commutes_on_sector": false
+        },
+        {
+          "name": "j1_211_plus",
+          "dimension_on_m0": 6,
+          "S4_irrep_dimension": 3,
+          "polynomial_descending_coefficients": [
+            1,
+            -1,
+            -2
+          ],
+          "HK_commutes_on_sector": false
+        },
+        {
+          "name": "j1_1111_plus",
+          "dimension_on_m0": 1,
+          "S4_irrep_dimension": 1,
+          "polynomial_descending_coefficients": [
+            1,
+            -1
+          ],
+          "HK_commutes_on_sector": true
+        },
+        {
+          "name": "j2_4_minus",
+          "dimension_on_m0": 2,
+          "S4_irrep_dimension": 1,
+          "polynomial_descending_coefficients": [
+            1,
+            -9,
+            18
+          ],
+          "HK_commutes_on_sector": false
+        },
+        {
+          "name": "j2_4_plus",
+          "dimension_on_m0": 1,
+          "S4_irrep_dimension": 1,
+          "polynomial_descending_coefficients": [
+            1,
+            -6
+          ],
+          "HK_commutes_on_sector": true
+        },
+        {
+          "name": "j2_31_minus",
+          "dimension_on_m0": 6,
+          "S4_irrep_dimension": 3,
+          "polynomial_descending_coefficients": [
+            1,
+            -6,
+            8
+          ],
+          "HK_commutes_on_sector": true
+        },
+        {
+          "name": "j2_31_plus",
+          "dimension_on_m0": 9,
+          "S4_irrep_dimension": 3,
+          "polynomial_descending_coefficients": [
+            1,
+            -11,
+            24,
+            -4
+          ],
+          "HK_commutes_on_sector": false
+        },
+        {
+          "name": "j2_22_minus",
+          "dimension_on_m0": 4,
+          "S4_irrep_dimension": 2,
+          "polynomial_descending_coefficients": [
+            1,
+            -3,
+            -6
+          ],
+          "HK_commutes_on_sector": false
+        },
+        {
+          "name": "j2_22_plus",
+          "dimension_on_m0": 2,
+          "S4_irrep_dimension": 2,
+          "polynomial_descending_coefficients": [
+            1,
+            0
+          ],
+          "HK_commutes_on_sector": true
+        },
+        {
+          "name": "j2_211_minus",
+          "dimension_on_m0": 3,
+          "S4_irrep_dimension": 3,
+          "polynomial_descending_coefficients": [
+            1,
+            -4
+          ],
+          "HK_commutes_on_sector": true
+        },
+        {
+          "name": "j2_211_plus",
+          "dimension_on_m0": 3,
+          "S4_irrep_dimension": 3,
+          "polynomial_descending_coefficients": [
+            1,
+            -2
+          ],
+          "HK_commutes_on_sector": true
+        },
+        {
+          "name": "j3_4_plus",
+          "dimension_on_m0": 1,
+          "S4_irrep_dimension": 1,
+          "polynomial_descending_coefficients": [
+            1,
+            -9
+          ],
+          "HK_commutes_on_sector": true
+        },
+        {
+          "name": "j3_31_minus",
+          "dimension_on_m0": 3,
+          "S4_irrep_dimension": 3,
+          "polynomial_descending_coefficients": [
+            1,
+            -5
+          ],
+          "HK_commutes_on_sector": true
+        },
+        {
+          "name": "j3_22_plus",
+          "dimension_on_m0": 2,
+          "S4_irrep_dimension": 2,
+          "polynomial_descending_coefficients": [
+            1,
+            -3
+          ],
+          "HK_commutes_on_sector": true
+        }
+      ],
+      "polynomials_from_exact_Newton_traces_and_checked_as_full_annihilators": true,
+      "all_three_Q_full_blocks_checked": true,
+      "visible_unordered_pairs": 28,
+      "same_spin_zero_pairs_including_diagonal": 87,
+      "visible_pairs": [
+        {
+          "left": "j0_4_minus",
+          "right": "j0_31_plus",
+          "gcd": [
+            "1"
+          ]
+        },
+        {
+          "left": "j0_31_minus",
+          "right": "j0_31_plus",
+          "gcd": [
+            "1"
+          ]
+        },
+        {
+          "left": "j0_31_minus",
+          "right": "j0_211_plus",
+          "gcd": [
+            "1",
+            "-1"
+          ]
+        },
+        {
+          "left": "j0_31_plus",
+          "right": "j0_22_minus",
+          "gcd": [
+            "1"
+          ]
+        },
+        {
+          "left": "j0_31_plus",
+          "right": "j0_211_minus",
+          "gcd": [
+            "1"
+          ]
+        },
+        {
+          "left": "j0_22_minus",
+          "right": "j0_211_plus",
+          "gcd": [
+            "1"
+          ]
+        },
+        {
+          "left": "j0_211_minus",
+          "right": "j0_211_plus",
+          "gcd": [
+            "1",
+            "-1"
+          ]
+        },
+        {
+          "left": "j0_211_plus",
+          "right": "j0_1111_minus",
+          "gcd": [
+            "1",
+            "1"
+          ]
+        },
+        {
+          "left": "j1_4_minus",
+          "right": "j1_31_plus",
+          "gcd": [
+            "1"
+          ]
+        },
+        {
+          "left": "j1_4_plus",
+          "right": "j1_31_minus",
+          "gcd": [
+            "1"
+          ]
+        },
+        {
+          "left": "j1_31_minus",
+          "right": "j1_31_plus",
+          "gcd": [
+            "1"
+          ]
+        },
+        {
+          "left": "j1_31_minus",
+          "right": "j1_22_plus",
+          "gcd": [
+            "1"
+          ]
+        },
+        {
+          "left": "j1_31_minus",
+          "right": "j1_211_plus",
+          "gcd": [
+            "1"
+          ]
+        },
+        {
+          "left": "j1_31_plus",
+          "right": "j1_22_minus",
+          "gcd": [
+            "1"
+          ]
+        },
+        {
+          "left": "j1_31_plus",
+          "right": "j1_211_minus",
+          "gcd": [
+            "1"
+          ]
+        },
+        {
+          "left": "j1_22_plus",
+          "right": "j1_211_minus",
+          "gcd": [
+            "1"
+          ]
+        },
+        {
+          "left": "j1_211_minus",
+          "right": "j1_211_plus",
+          "gcd": [
+            "1"
+          ]
+        },
+        {
+          "left": "j1_211_minus",
+          "right": "j1_1111_plus",
+          "gcd": [
+            "1"
+          ]
+        },
+        {
+          "left": "j2_4_minus",
+          "right": "j2_31_plus",
+          "gcd": [
+            "1"
+          ]
+        },
+        {
+          "left": "j2_4_plus",
+          "right": "j2_31_minus",
+          "gcd": [
+            "1"
+          ]
+        },
+        {
+          "left": "j2_31_minus",
+          "right": "j2_31_plus",
+          "gcd": [
+            "1"
+          ]
+        },
+        {
+          "left": "j2_31_minus",
+          "right": "j2_22_plus",
+          "gcd": [
+            "1"
+          ]
+        },
+        {
+          "left": "j2_31_minus",
+          "right": "j2_211_plus",
+          "gcd": [
+            "1",
+            "-2"
+          ]
+        },
+        {
+          "left": "j2_31_plus",
+          "right": "j2_22_minus",
+          "gcd": [
+            "1"
+          ]
+        },
+        {
+          "left": "j2_31_plus",
+          "right": "j2_211_minus",
+          "gcd": [
+            "1"
+          ]
+        },
+        {
+          "left": "j2_211_minus",
+          "right": "j2_211_plus",
+          "gcd": [
+            "1"
+          ]
+        },
+        {
+          "left": "j3_4_plus",
+          "right": "j3_31_minus",
+          "gcd": [
+            "1"
+          ]
+        },
+        {
+          "left": "j3_31_minus",
+          "right": "j3_22_plus",
+          "gcd": [
+            "1"
+          ]
+        }
+      ],
+      "coprime_pairs": 24,
+      "different_spin_Q_blocks_zero_by_exact_Casimir_commutation": true
+    },
+    "resonance_resolution": {
+      "exceptions": [
+        {
+          "left": "j0_31_minus",
+          "right": "j0_211_plus",
+          "common_energy": 1,
+          "whole_degenerate_energy_Q_blocks_exactly_zero": true
+        },
+        {
+          "left": "j0_211_minus",
+          "right": "j0_211_plus",
+          "common_energy": 1,
+          "whole_degenerate_energy_Q_blocks_exactly_zero": true
+        },
+        {
+          "left": "j0_211_plus",
+          "right": "j0_1111_minus",
+          "common_energy": -1,
+          "whole_degenerate_energy_Q_blocks_exactly_zero": true
+        },
+        {
+          "left": "j2_31_minus",
+          "right": "j2_211_plus",
+          "common_energy": 2,
+          "whole_degenerate_energy_Q_blocks_exactly_zero": true
+        }
+      ],
+      "complete_degenerate_energy_spaces_used": true,
+      "all_piecewise_integrable_real_control_amplitudes_covered": true,
+      "operator_identity": "Pinch_H(W^* Q_j W)=0",
+      "arbitrary_joint_H_stationary_external_reference_conditioned_Q_moments_zero": true,
+      "DG_marginal_stationarity_alone_not_sufficient_for_conditional_claim": true
+    },
+    "full_matrix_diagnostic": {
+      "records": [
+        {
+          "preparation": "480_seed",
+          "H_commutator_norm": 1.28361329929e-15,
+          "K_commutator_norm": 0.0767948925625,
+          "controlled_Q": [
+            -5.55111512313e-17,
+            -6.33174068732e-17,
+            -7.06899816461e-17
+          ],
+          "largest_leaf_reference_error": 0.0
+        },
+        {
+          "preparation": "480_finite_pulse_center",
+          "H_commutator_norm": 1.21468210109e-15,
+          "K_commutator_norm": 0.0653786860263,
+          "controlled_Q": [
+            -5.55111512313e-17,
+            -5.50774703623e-17,
+            -5.713745449e-17
+          ],
+          "largest_leaf_reference_error": 1.7763568394e-15
+        }
+      ],
+      "complete_energy_groups": 35,
+      "retained_degeneracies": [
+        1,
+        6,
+        3,
+        9,
+        2,
+        9,
+        10,
+        16,
+        9,
+        10,
+        15,
+        6,
+        9,
+        12,
+        9,
+        2,
+        9,
+        3,
+        51,
+        6,
+        9,
+        15,
+        29,
+        9,
+        30,
+        10,
+        24,
+        3,
+        9,
+        2,
+        10,
+        9,
+        6,
+        15,
+        7
+      ],
+      "grouping_tolerance_is_diagnostic_only_not_proof": true,
+      "minimum_distinct_energy_gap": 0.042277184728,
+      "Q_frozen_does_not_mean_full_state_frozen": true
+    },
+    "memory_and_reference_scope": {
+      "exact_energy_pair": [
+        9,
+        5
+      ],
+      "marginal_stationary_but_reference_Q_offdiagonal_squared": "1/6",
+      "full_local_pinch_tensor_identity_makes_joint_state_stationary": true,
+      "isometry": "V=sum_E P_E tensor |E>_M",
+      "isometry_preserves_all_unknown_input_information": true,
+      "coherent_energy_pointer_not_part_of_the_joint_stationary_reference_quantifier": true,
+      "energy_pointer_retained_inside_total_system": true,
+      "reading_or_reversing_pointer_coherence_is_additional_control_permission": true,
+      "current_H_plus_uK_does_not_touch_the_pointer": true,
+      "exact_pinch_preparation_and_pointer_cost_not_derived_from_original_H": true
+    },
+    "actual_readout_and_resources": {
+      "actual_single_edge_CP_instruments_from_round": 472,
+      "actual_probe_wait": "1/65536",
+      "estimated_adjacencies": [
+        0.499999999727,
+        0.499999999726,
+        0.499999999727,
+        0.499999999728
+      ],
+      "estimated_Q": [
+        1.24578125593e-12,
+        -2.04836148043e-14,
+        -1.21930243679e-12
+      ],
+      "CP_instrument_completeness_error": 6.66133814775e-16,
+      "target_Q_infinity_error": "1/1000",
+      "joint_failure_probability_at_most": "1/100",
+      "per_edge_total_estimation_error": "1/4000",
+      "certified_probe_wait": "1/5184000",
+      "whole_handoff_plus_probe_channel_error": "1/165888000000",
+      "instrument_bias_bound": "1727999/27647968000",
+      "control_only_error_budget": "1/331776000000",
+      "total_control_window_duration_budget": "1/5971968000000",
+      "copies_per_edge": "24078974976000000000000",
+      "total_independent_source_trials": "96315899904000000000000",
+      "source_pinch_and_all_pre_readout_control_total_error_budget": "1/4000",
+      "same_actual_preparation_and_control_channel_shared_before_choice_of_four_edges": true,
+      "total_Q_error_bound": "3/4000",
+      "old_D_moved_to_internal_isolated_S_G_stays_active_S_G_R_C_M_correlations_retained": true,
+      "new_independent_probes_and_clocks_storage_record_and_source_costs_explicit": true,
+      "final_readout_can_disturb_G": true,
+      "huge_statistical_sample_not_actually_executed": true
+    }
+  },
+  "scope": {
+    "theorem_is_specific_to_declared_unit_coupling_H_K_Q": true,
+    "all_H_stationary_active_inputs_and_all_allowed_controls_have_Q_zero": true,
+    "stationarity_of_joint_state_required_for_arbitrary_external_reference_conditionals": true,
+    "coherent_energy_pointer_is_retained_but_not_controlled_or_in_joint_stationary_quantifier": true,
+    "deleting_unknown_information_not_assumed": true,
+    "pinching_is_an_extra_preparation_not_free_H_plus_uK": true,
+    "no_rank_three_linear_response_from_any_stationary_input_under_this_contract": true,
+    "all_nonstationary_zero_drift_preparations_not_excluded": true,
+    "alternate_controls_or_costs_not_excluded": true,
+    "no_physical_space_or_cognitive_axiom_impossibility_claim": true,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

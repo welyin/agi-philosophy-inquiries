@@ -1,0 +1,461 @@
+{
+  "round": 477,
+  "baseline_round": 475,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "observations": {
+    "exact_symmetry": {
+      "control_is_existing_always_present_edge_S12": true,
+      "separate_S4_and_collective_SU2_covariance": true,
+      "pulse_alone_does_not_change_any_graph_observable": true,
+      "control_does_not_commute_with_full_H": true,
+      "all_finite_products_and_integrable_real_schedules_protected": true,
+      "preservation_applies_to_full_correlated_joint_state": true,
+      "source_and_jointly_invariant_graph_reference_extensions_from_475": true,
+      "no_data_reset_or_new_triad_between_segments": true
+    },
+    "exact_response": {
+      "affine_source_order": [
+        "constant",
+        "x",
+        "y",
+        "z"
+      ],
+      "observable_order": [
+        "D13-D10",
+        "D14-D10",
+        "D15-D10"
+      ],
+      "Taylor_coefficients": {
+        "continuous": [
+          [
+            [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "-8/3",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "-8/3",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "-8/3"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0",
+              "8/9",
+              "-8/9"
+            ],
+            [
+              "0",
+              "-8/9",
+              "0",
+              "8/9"
+            ],
+            [
+              "0",
+              "8/9",
+              "-8/9",
+              "0"
+            ]
+          ]
+        ],
+        "swap": [
+          [
+            [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "-4/3",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "-4/3",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "-4/3"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          ]
+        ],
+        "difference": [
+          [
+            [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "4/3",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "4/3",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "4/3"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0",
+              "-8/9",
+              "8/9"
+            ],
+            [
+              "0",
+              "8/9",
+              "0",
+              "-8/9"
+            ],
+            [
+              "0",
+              "-8/9",
+              "8/9",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "Gaussian_integer_prior_bound": 110075314176,
+      "specific_Qx_source_x_cubic_zero": true,
+      "no_general_time_evenness_claim": true
+    },
+    "rational_certificate": {
+      "free_leg_window": [
+        "1/1024",
+        "1/512"
+      ],
+      "normalized_fourth_order_tail_upper": "10935/20192",
+      "ideal_response_bounds": [
+        "2*t^2/3",
+        "2*t^2"
+      ],
+      "uniform_ideal_gap": "1/1572864",
+      "finite_pulse_duration_upper": "1/452984832",
+      "pulse_exchange_area_error_upper": "1/25165824",
+      "pulse_area_target": "pi/2",
+      "constant_pulse_amplitude": "(pi/2+delta_theta)/tau",
+      "original_H_remains_on_during_pulse": true,
+      "matched_total_time_reference": "U(2*t+tau)",
+      "finite_pulse_and_matched_time_error": "1/6291456",
+      "finite_pulse_response_lower": "1/2097152",
+      "finite_control_not_derived_autonomously": true
+    },
+    "full_unitary_witness": {
+      "samples": [
+        {
+          "free_leg_time": "1/1024",
+          "ideal_distance_difference": 1.2715544372102967e-06,
+          "finite_pulse_distance_difference": 1.2715573133060545e-06,
+          "leaf_mean_error": 2.6645352591003757e-15
+        },
+        {
+          "free_leg_time": "1/512",
+          "ideal_distance_difference": 5.0860819340114944e-06,
+          "finite_pulse_distance_difference": 5.086087689187642e-06,
+          "leaf_mean_error": 2.220446049250313e-15
+        }
+      ],
+      "actual_384_dimensional_distance_observable": true,
+      "numerical_check_not_replacement_for_rational_window": true
+    },
+    "complete_information": {
+      "schedule_duration_and_exchange_area": [
+        [
+          0.13,
+          0.27
+        ],
+        [
+          0.21,
+          -0.19
+        ],
+        [
+          0.08,
+          0.35
+        ]
+      ],
+      "fully_unknown_data_graph_reference_dimension": 1152,
+      "inverse_reconstruction_error": 5.839132346764922e-15,
+      "Bell_source_reference_matching_moment_error": 3.608226956081186e-16,
+      "mathematical_inverse_not_claimed_to_be_physically_available": true,
+      "no_subsystem_discarded_between_controls": true,
+      "no_claim_six_graph_populations_or_graph_coherences_constant": true
+    },
+    "data_only_readout": {
+      "protocol_round": 472,
+      "actual_CP_diagnostic_probe": "1/65536",
+      "actual_CP_diagnostic_each_distance_bias_bound": "81/32765",
+      "actual_CP_instrument_diagnostics": [
+        {
+          "protocol": "finite_pulse",
+          "edge_readings": [
+            {
+              "ordered_probe_edge": [
+                1,
+                3
+              ],
+              "measured_port": 1,
+              "record_probabilities_minus_plus": [
+                0.49999618529546136,
+                0.5000038147045399
+              ],
+              "actual_instrument_distance": 1.4999990466276358,
+              "graph_mean_distance": 1.499999046332019,
+              "absolute_bias": 2.956168643208912e-10
+            },
+            {
+              "ordered_probe_edge": [
+                1,
+                0
+              ],
+              "measured_port": 1,
+              "record_probabilities_minus_plus": [
+                0.4999961853051626,
+                0.5000038146948387
+              ],
+              "actual_instrument_distance": 1.5000003181885404,
+              "graph_mean_distance": 1.5000003178893286,
+              "absolute_bias": 2.9921176647462744e-10
+            }
+          ],
+          "Qx_from_actual_data_instruments": -1.2715609045699239e-06,
+          "true_Qx": -1.2715573096677701e-06
+        },
+        {
+          "protocol": "matched_time_continuous",
+          "edge_readings": [
+            {
+              "ordered_probe_edge": [
+                1,
+                3
+              ],
+              "measured_port": 1,
+              "record_probabilities_minus_plus": [
+                0.4999961852880713,
+                0.5000038147119291
+              ],
+              "actual_instrument_distance": 1.4999980780557962,
+              "graph_mean_distance": 1.4999980926640328,
+              "absolute_bias": 1.4608236620361481e-08
+            },
+            {
+              "ordered_probe_edge": [
+                1,
+                0
+              ],
+              "measured_port": 1,
+              "record_probabilities_minus_plus": [
+                0.4999961853076253,
+                0.5000038146923751
+              ],
+              "actual_instrument_distance": 1.5000006410373317,
+              "graph_mean_distance": 1.500000635778656,
+              "absolute_bias": 5.258675717101369e-09
+            }
+          ],
+          "Qx_from_actual_data_instruments": -2.5629815354477614e-06,
+          "true_Qx": -2.5431146231102986e-06
+        }
+      ],
+      "endpoint_identity": "fixed internal label1 and fixed leaf labels0,3",
+      "graph_identity": "D1j=2I-n1j",
+      "measured_edges": [
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "source_preparation_and_remaining_timing_process_diamond_budget": "1/25165824",
+      "per_mean_total_estimation_error": "1/50331648",
+      "probe_wait": "1/65229815808",
+      "complete_instrument_diamond_budget": "1/13132496513412366336",
+      "copies_per_mean": "689849858699151832433468874924264259584",
+      "total_independent_source_trials": "2759399434796607329733875499697057038336",
+      "union_failure_probability_upper": "1/100",
+      "finite_pulse_then_source_process_then_readout_gap": "1/3145728",
+      "complete_source_process_error_includes_preparation_natural_clock_and_unlisted_controls": true,
+      "old_full_data_graph_correlations_stored_before_final_readout": true,
+      "handoff_duration_and_error_in_complete_first_instrument_budget": true,
+      "fresh_probe_clock_isolation_and_fixed_instruments_counted": true,
+      "no_actual_enormous_sampling_run": true
+    }
+  },
+  "scope": {
+    "retained_correlations_support_arbitrary_finite_symmetric_control_sequences": true,
+    "same_original_interaction_type_but_added_control_contract": true,
+    "no_autonomous_controller_generation_claim": true,
+    "actual_source_leaf_distance_response": true,
+    "source_label_is_not_relabelled_when_internal_data_are_swapped": true,
+    "conditional_finite_time_data_only_readout_with_resource_budget": true,
+    "reference_shape_is_equal_time_distribution_not_classical_rigid_frame": true,
+    "no_replayable_endpoint_displacement_group_derived": true,
+    "three_dimensional_space_derived": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

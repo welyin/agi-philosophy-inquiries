@@ -1,0 +1,256 @@
+{
+  "round": 482,
+  "scientific_baseline_round": 475,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "observations": {
+    "model_contract": {
+      "local_dimension": 4,
+      "full_data_dimension": 4096,
+      "graph_dimension": 6,
+      "total_dimension": 24576,
+      "H_norm_bound": 9,
+      "generator": "F + sum full_SWAP4_ab tensor n_ab",
+      "full_SWAP4_is_product_of_two_layer_swaps": true,
+      "not_sum_of_micro_exchange_generators": true,
+      "same_existing_G_not_merger_of_two_independent_graphs": true,
+      "no_unknown_private_factor_compression": true,
+      "collective_U4_and_leaf_S4_covariance": true,
+      "macro_product_Hamiltonian_is_explicit_model_input": true,
+      "symmetric_B_sector_dimension": 7,
+      "symmetric_B_unknown_reference_retained_as_identity": true,
+      "symmetric_B_sector_is_extra_preparation_not_all_private_states": true,
+      "probe_V": "|a> maps to |a>_A |0>_B",
+      "exact_probe_intertwiner": true
+    },
+    "integer_certificate": {
+      "group": "S6",
+      "permutations": 720,
+      "graph_block_shape": [
+        6,
+        6
+      ],
+      "local_trace_checks": 2880,
+      "cycle_order": "reverse each cycle of old-to-new permutation",
+      "exact_Gaussian_arithmetic": "pairs of Python integers",
+      "graph_recursion_int64_prior_bound": "257073640316928",
+      "signed_int64_limit": "9223372036854775808",
+      "maximum_block_entries": [
+        2,
+        3,
+        24,
+        120,
+        1248,
+        5880,
+        69120,
+        318864,
+        4059216,
+        18478296,
+        250047936
+      ],
+      "expectation_denominator_before_factorial": 73728,
+      "exact_rotated_trace_numerators": [
+        0,
+        0,
+        0,
+        0,
+        132096,
+        0,
+        -11982336,
+        0,
+        875912448,
+        0,
+        -60594993408
+      ],
+      "full_SWAP4_expectation_is_product_of_layer_cycle_traces": true
+    },
+    "reference_counterexample": {
+      "source": "|+X>_A tensor |+X>_B at vertex 1",
+      "leaves": {
+        "0": "I4/4",
+        "3": "|+X,+X>",
+        "4": "|+Y,+Y>",
+        "5": "|0,0>"
+      },
+      "internal_vertex_2": "I4/4",
+      "graph": "uniform coherent |s_G>",
+      "target": "mean(D03)-8/3",
+      "coefficients": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "43/576",
+        "0",
+        "-7801/34560",
+        "0",
+        "1140511/3870720",
+        "0",
+        "-78899731/348364800"
+      ],
+      "first_nonzero_order": 4,
+      "fourth_derivative": "43/24",
+      "other_two_leaf_distances": {
+        "4": {
+          "4": "-43/1152",
+          "5": "17/960",
+          "6": "7801/69120",
+          "7": "-1511/34560",
+          "8": "-1140511/7741440",
+          "9": "218213/4354560",
+          "10": "78899731/696729600"
+        },
+        "5": {
+          "4": "-43/1152",
+          "5": "-17/960",
+          "6": "7801/69120",
+          "7": "1511/34560",
+          "8": "-1140511/7741440",
+          "9": "-218213/4354560",
+          "10": "78899731/696729600"
+        }
+      },
+      "d2_control_zero_through_order_10": true,
+      "d2_all_time_protection_reused_from_475": true,
+      "no_generic_time_evenness_claim": true,
+      "witness_changes_whole_network_path_distance": true
+    },
+    "finite_window": {
+      "entire_punctured_interval": [
+        "0",
+        "1/32"
+      ],
+      "drift_lower": "7*t^4/100",
+      "drift_upper": "2*t^4/25",
+      "certificate_lower_ratio": "18675614612197636147/250990137221264179200",
+      "certificate_upper_ratio": "1016891885537701/13617086437785600",
+      "uniform_window": [
+        "1/64",
+        "1/32"
+      ],
+      "uniform_drift_gap": "7/1677721600",
+      "centered_distance_norm": "1/2",
+      "H_norm_bound": 9,
+      "remainder": "(18*t)^11/(2*11!*(1-18*t/12))",
+      "graph_reference_distribution_does_not_remain_fixed": true,
+      "whole_DG_and_untouched_R_information_preserved_by_unitarity": true,
+      "reference_constancy_not_claimed_for_arbitrary_initial_R_correlations": true
+    },
+    "independent_numerics_and_CP_readout": {
+      "full_24576_dimensional_H_action": true,
+      "mixed_pure_columns": 16,
+      "independent_integer_coefficients_through_order4": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "43/576"
+      ],
+      "full_integer_density_denominator": 6144,
+      "full_integer_double_sided_bound": "10319560704",
+      "U_polynomial_degree": 18,
+      "observations": [
+        {
+          "time": "1/64",
+          "distance_drift": 4.446368162547287e-09,
+          "exact_polynomial": 4.446368640068906e-09,
+          "absolute_difference": 4.775216184761633e-16,
+          "exponent_tail": "205891132094649/382366354125253705843208609751364139363178905600",
+          "state_norm_error": 0.0
+        },
+        {
+          "time": "1/32",
+          "distance_drift": 7.098448717712813e-08,
+          "exact_polynomial": 7.09844833182239e-08,
+          "absolute_difference": 3.858904230771669e-15,
+          "exponent_tail": "205891132094649/724141699277081218353513490309548762726400",
+          "state_norm_error": 1.3322676295501878e-15
+        }
+      ],
+      "actual_472_instrument_lifted_by_exact_V": true,
+      "ordered_probe_edge": [
+        1,
+        0
+      ],
+      "measured_port": 1,
+      "probe_wait": "1/65536",
+      "probabilities": [
+        0.4999961871620483,
+        0.5000038128379534
+      ],
+      "true_n01": 0.4997564150763367,
+      "estimated_n01": 0.4997562961143558,
+      "diagnostic_bias_bound": "81/32765",
+      "actual_two_stage_path_records": [
+        {
+          "ordered_edges": [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "product_estimate": 0.16691069327818167
+        },
+        {
+          "ordered_edges": [
+            [
+              2,
+              0
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "product_estimate": 0.16642256912135686
+        }
+      ],
+      "estimated_whole_graph_D03": 2.6666667376004614,
+      "true_whole_graph_D03": 2.6666667376511537,
+      "two_path_distance_bias_bound": "10628982/1073545225",
+      "graph_coherence_not_dephased": true,
+      "old_full_C4_data_relocated_to_internal_storage": true,
+      "G_stays_active_and_final_CP_measurement_may_disturb_G": true
+    },
+    "resource_ledger": {
+      "distance_identity": "D03=3-n01*n13-n02*n23",
+      "settings": [
+        "prepared initial reference",
+        "after t=1/32"
+      ],
+      "each_setting_complete_source_and_control_diamond_budget": "7/6710886400",
+      "each_product_mean_total_error": "7/26843545600",
+      "probe_wait": "7/27487790694400",
+      "each_full_stage_instrument_diamond_budget": "343/649037107316853453566312041152512000000",
+      "stages_per_trial": 2,
+      "product_means_per_setting": 2,
+      "independent_copies_per_product_mean": "223784927344382839416225441108021386324777718893805113631035915171399672",
+      "total_copies": "895139709377531357664901764432085545299110875575220454524143660685598688",
+      "joint_failure_probability_less_than": "1/100",
+      "retained_observed_drift": "7/3355443200",
+      "initial_and_final_reference_compared_with_same_whole_G_readout": true,
+      "signed_records_not_free_joint_graph_measurement": true,
+      "source_waiting_preparation_swap_storage_and_instrument_errors_counted": true,
+      "old_record_feedback_excluded": true,
+      "same_actual_prepared_state_per_setting_used_for_both_product_means": true,
+      "unknown_single_seed_not_cloned": true,
+      "huge_sampling_not_executed": true
+    }
+  },
+  "scope": {
+    "specified_macro_full_SWAP_reference_lift_falsified": true,
+    "not_a_refutation_of_all_composite_reference_architectures": true,
+    "no_universal_reference_statistics_protection_for_unknown_private_states": true,
+    "not_two_independently_positioned_sources": true,
+    "no_spatial_dimension_or_cognitive_axiom_no_go": true,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

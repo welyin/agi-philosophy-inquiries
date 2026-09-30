@@ -1,0 +1,134 @@
+{
+  "date": "2026-09-30",
+  "diagnostic_tests": 6,
+  "failures": 0,
+  "errors": 0,
+  "numbered_round_created": false,
+  "numbered_test_increment": 0,
+  "scope": {
+    "classical_effective_model": true,
+    "einstein_action_input": true,
+    "spacetime_dimension_input": true,
+    "reference_stress_retained": true,
+    "actual_detector_implementation": false,
+    "original_graph_continuum_map": false,
+    "spatial_dimension_or_GR_derived": false,
+    "unified_framework_complete": false
+  },
+  "diagnostics": {
+    "action_stress_and_equations": {
+      "dimensions_tested": [
+        2,
+        3,
+        4,
+        7
+      ],
+      "stress_component_max_residual": 5.329070518200751e-15
+    },
+    "independent_coupled_evolution": [
+      {
+        "d": 2,
+        "end_time": 10.0,
+        "end_a": 5.353681322092976,
+        "end_clock": 1.0278204415404173,
+        "errors": {
+          "constraint": 5.86488626760917e-11,
+          "clock_charge": 6.620837211812614e-11,
+          "pressure_work": 2.5922680668699627e-11,
+          "exact_clock": 8.471641166352128e-10,
+          "step_comparison": 1.2855899722552522e-07,
+          "independent_time_quadrature": 2.0879390660866193e-08,
+          "independent_null_quadrature": 5.64205038244836e-09
+        }
+      },
+      {
+        "d": 3,
+        "end_time": 10.0,
+        "end_a": 3.929424992699707,
+        "end_clock": 0.8908067187558517,
+        "errors": {
+          "constraint": 4.072842584024183e-11,
+          "clock_charge": 1.5808576669940066e-11,
+          "pressure_work": 9.433499120747868e-12,
+          "exact_clock": 1.532809434934279e-10,
+          "step_comparison": 2.526187703466576e-08,
+          "independent_time_quadrature": 5.886606757599111e-09,
+          "independent_null_quadrature": 2.158810907815223e-09
+        }
+      },
+      {
+        "d": 4,
+        "end_time": 10.0,
+        "end_a": 3.3571502929574737,
+        "end_clock": 0.7774903713281323,
+        "errors": {
+          "constraint": 4.454871541104133e-11,
+          "clock_charge": 1.5798806707323365e-11,
+          "pressure_work": 3.475893184390344e-12,
+          "exact_clock": 6.421008169610332e-11,
+          "step_comparison": 2.7929822898897783e-08,
+          "independent_time_quadrature": 3.717314456253007e-09,
+          "independent_null_quadrature": 1.575696906286339e-09
+        }
+      }
+    ],
+    "simultaneous_coordinate_changes": {
+      "cases": 9,
+      "metric_residual": 3.637978807091713e-12,
+      "stress_covariance_residual": 2.220446049250313e-16,
+      "reporting_chart_interval_residual": 5.684341886080802e-14
+    },
+    "finite_clock_range": [
+      {
+        "d": 2,
+        "finite_clock_limit": 1.306200233728561,
+        "inverse_error": 4.440892098500626e-16,
+        "tail_ratio_20_to_10": 0.5007000125049667,
+        "asymptotic_ratio": 0.5
+      },
+      {
+        "d": 3,
+        "finite_clock_limit": 0.9594646649911075,
+        "inverse_error": 1.7763568394002505e-15,
+        "tail_ratio_20_to_10": 0.2500029296190669,
+        "asymptotic_ratio": 0.25
+      },
+      {
+        "d": 4,
+        "finite_clock_limit": 0.8003774225686289,
+        "inverse_error": 9.769962616701378e-15,
+        "tail_ratio_20_to_10": 0.12500001153564264,
+        "asymptotic_ratio": 0.125
+      },
+      {
+        "d": 7,
+        "finite_clock_limit": 0.5835649223975581,
+        "inverse_error": 9.041656312547275e-13,
+        "tail_ratio_20_to_10": 0.01562500000000084,
+        "asymptotic_ratio": 0.015625
+      }
+    ],
+    "finite_readout_contract": {
+      "a": 2.0,
+      "clock_error_radius": 0.01,
+      "rod_vector_error_radius": 0.02,
+      "exact_future_time_ambiguity": 0.13731799073759954,
+      "local_linear_time_ambiguity": 0.13333333333333333,
+      "exact_same_slice_distance_ambiguity": 0.09999999999999999,
+      "stipulated_time_tolerance": 0.2,
+      "stipulated_distance_tolerance": 0.12,
+      "conditional_necessary_reference_density": 0.04291666666666667,
+      "actual_reference_density": 0.06281250000000001,
+      "near_clock_endpoint_full_error_interval_invalid": true,
+      "bound_is_a_quantum_measurement_lower_bound": false
+    },
+    "null_propagation_and_failure_controls": {
+      "null_in_spacetime_chart": 7.183796041692189e-18,
+      "null_in_reference_chart": 1.0408340855860843e-16,
+      "reference_coordinate_null_speed": 1.9266666666666665,
+      "rank_when_clock_stops": 3,
+      "rank_when_rods_vanish": 1,
+      "deleting_reference_backreaction_residual": 0.42000000000000004
+    }
+  }
+}

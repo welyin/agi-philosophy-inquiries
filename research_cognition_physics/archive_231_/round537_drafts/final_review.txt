@@ -1,0 +1,27 @@
+第537轮独立终审
+日期：2026-09-30
+结论：通过，无数学或范围阻断；仅审查本轮，不修改科学正文、代码、结果或导航。
+
+一、独立复算
+使用现有 Python，-B -X utf8，独立导入 seesaw_boundary_compatibility.py 并执行 run()。8组检查、0失败、0错误；返回字典与已保存 JSON 完整相等，不仅比较摘要。保留极小非零量的13位有效数字序列化没有改变小预算例的含义。未重跑旧全历史。
+
+二、解析核对
+式(3)的二维子空间证明成立：E与W^{-1}E在C^3有非零交，Sigma只需在E上可逆，因此覆盖s2>0、s3=0的秩二情形；s2=0平凡。另一项由A=(AA^T)A^{-T}及次乘性得到，奇异情形右侧为零。AA†的Loewner下界正确传给各个奇异值。式(4)同时保持指定奇异值并达到max(z2,sqrt(z1 z3))/Mmax，因此式(2)、(5)确为所声明优化量词下的锐结果；范数是算符2范数。优化允许全部同奇异值复矩阵及重质量，不能缩写成固定矩阵元绝对值后仅调相位。
+
+式(7)明确限于N=ng=3、仅top带电Yukawa近似族。Q>=S^2-4S epsilon及rS/T<=1给出的有限预算下界正确但非锐；式(8)在零预算下为精确rank-one包络，零Y情形也由“秩至多一”覆盖。没有将此下界扩大到任意带电Yukawa部门。
+
+三、见证与范围
+旧536见证的锐最小C5范数为1.175333327405e-11 GeV^-1，以说明中v换算355.6323582061 eV；239.54 eV仅是z2项的较弱界。人工同尺度eta、Mmax=旧匹配尺度的新增假设，以及没有RG/阈值观测排除，均已明确。
+rank-one幸存矩阵的YY^T解析为零；相同奇异值实对角控制不抵消。可逆重块的Schur消元确使所给完整6×6零质量例秩为3，但这不把一般领先seesaw公式变成精确轻谱。小非零例保持S与top二次矩，给C5范数eta/4、lambda约0.3221096693451；只构成预算可行例，没有两组质量差、PMNS或辐射稳定性结论。正文和条件总账均未将已知rank-one抵消、历史规范输入重新包装成标准模型、三维或引力推导。
+
+四、最终被审文件 SHA256
+research_note_537.md
+f1125f80fef2dc1367738c6ae6cbfa5c799d51f8401850d240ad470e3b95ecd6
+seesaw_boundary_compatibility.py
+7ff6f3cba7ed749e39905be2dc59c6f8d9dc72e2ad0cecc11928ab507da861c4
+seesaw_boundary_compatibility_results.json
+4db322211103560cd6a6461016e14dc4dd2f136f8332b07faecd39b6ac6b0bbb
+unified_physics_condition_ledger_537.md
+b92cca264a98fbf428d2e724d532dcc9aa497567af59480a9ce84567a2df59e6
+
+已核正文包含“eta=0时秩至多一”的最终修正。原始文献与历史去重审查见同目录 independent_review.txt；本终审没有扩大后继研究范围。

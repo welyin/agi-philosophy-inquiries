@@ -1,0 +1,341 @@
+{
+  "round": 533,
+  "tests_run": 9,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "exact_square_and_weighted_variance_identity",
+    "positive_layer_cake_moments_and_single_step_equality",
+    "smooth_monotone_cutoffs_approach_moment_equality",
+    "actual_weak_generator_and_shared_gauge_gravity_normalization",
+    "full_Higgs_Majorana_matrices_obey_joint_vacuum_bound",
+    "canonical_radial_Higgs_quartic_lower_bound_and_equality",
+    "flat_radial_minimum_can_have_positive_effective_EH_coefficient",
+    "positive_nonmonotone_cutoff_disproves_unconditional_version",
+    "saved_historical_gauge_benchmark_only_no_new_RG_fit"
+  ],
+  "exact_rational_cases": 32,
+  "layer_cake_examples": [
+    [
+      "1",
+      "1/2",
+      "1/4",
+      "0"
+    ],
+    [
+      "5",
+      "7",
+      "25/2",
+      "27/10"
+    ],
+    [
+      "64/21",
+      "659/21",
+      "15101/42",
+      "2331/64"
+    ]
+  ],
+  "smooth_cutoff_examples": [
+    {
+      "p": 1,
+      "f2": 0.5,
+      "f4": 0.5,
+      "f2_squared_over_f0_f4": 0.5
+    },
+    {
+      "p": 2,
+      "f2": 0.443113462726,
+      "f4": 0.25,
+      "f2_squared_over_f0_f4": 0.785398163397
+    },
+    {
+      "p": 4,
+      "f2": 0.453201238528,
+      "f4": 0.221556731363,
+      "f2_squared_over_f0_f4": 0.927037338651
+    },
+    {
+      "p": 8,
+      "f2": 0.470871349925,
+      "f4": 0.226600619264,
+      "f2_squared_over_f0_f4": 0.978460821953
+    },
+    {
+      "p": 16,
+      "f2": 0.4837900338,
+      "f4": 0.235435674962,
+      "f2_squared_over_f0_f4": 0.994126301553
+    },
+    {
+      "p": 32,
+      "f2": 0.491450549642,
+      "f4": 0.2418950169,
+      "f2_squared_over_f0_f4": 0.998464730025
+    }
+  ],
+  "weak_generator_examples": [
+    {
+      "N": 3,
+      "wq": 1.0,
+      "wl": 1.0,
+      "TrZ": 32.0,
+      "full_weak_index": 4.0
+    },
+    {
+      "N": 3,
+      "wq": 1.0,
+      "wl": 2.0,
+      "TrZ": 40.0,
+      "full_weak_index": 5.0
+    },
+    {
+      "N": 3,
+      "wq": 0.5,
+      "wl": 3.0,
+      "TrZ": 36.0,
+      "full_weak_index": 4.5
+    },
+    {
+      "N": 5,
+      "wq": 1.0,
+      "wl": 1.0,
+      "TrZ": 48.0,
+      "full_weak_index": 6.0
+    },
+    {
+      "N": 5,
+      "wq": 1.0,
+      "wl": 2.0,
+      "TrZ": 56.0,
+      "full_weak_index": 7.0
+    },
+    {
+      "N": 5,
+      "wq": 0.5,
+      "wl": 3.0,
+      "TrZ": 44.0,
+      "full_weak_index": 5.5
+    }
+  ],
+  "full_matrix_examples": [
+    {
+      "N": 3,
+      "wq": 1.0,
+      "wl": 1.0,
+      "t": 0.0,
+      "K": 26.50815467,
+      "V_over_Meff4": 45.401033231,
+      "joint_lower_bound": 22.206609902
+    },
+    {
+      "N": 3,
+      "wq": 1.0,
+      "wl": 1.0,
+      "t": 0.1,
+      "K": 26.488312605,
+      "V_over_Meff4": 45.435332787,
+      "joint_lower_bound": 22.206609902
+    },
+    {
+      "N": 3,
+      "wq": 1.0,
+      "wl": 1.0,
+      "t": 0.3,
+      "K": 26.329576084,
+      "V_over_Meff4": 45.712813028,
+      "joint_lower_bound": 22.206609902
+    },
+    {
+      "N": 3,
+      "wq": 1.0,
+      "wl": 2.0,
+      "t": 0.0,
+      "K": 32.752072612,
+      "V_over_Meff4": 36.811766201,
+      "joint_lower_bound": 17.765287922
+    },
+    {
+      "N": 3,
+      "wq": 1.0,
+      "wl": 2.0,
+      "t": 0.1,
+      "K": 32.731132901,
+      "V_over_Meff4": 36.835666987,
+      "joint_lower_bound": 17.765287922
+    },
+    {
+      "N": 3,
+      "wq": 1.0,
+      "wl": 2.0,
+      "t": 0.3,
+      "K": 32.563615211,
+      "V_over_Meff4": 37.028793523,
+      "joint_lower_bound": 17.765287922
+    },
+    {
+      "N": 5,
+      "wq": 1.0,
+      "wl": 1.0,
+      "t": 0.0,
+      "K": 40.017645823,
+      "V_over_Meff4": 30.044667386,
+      "joint_lower_bound": 14.804406602
+    },
+    {
+      "N": 5,
+      "wq": 1.0,
+      "wl": 1.0,
+      "t": 0.1,
+      "K": 39.985307478,
+      "V_over_Meff4": 30.069101786,
+      "joint_lower_bound": 14.804406602
+    },
+    {
+      "N": 5,
+      "wq": 1.0,
+      "wl": 1.0,
+      "t": 0.3,
+      "K": 39.726600723,
+      "V_over_Meff4": 30.266896892,
+      "joint_lower_bound": 14.804406602
+    },
+    {
+      "N": 5,
+      "wq": 1.0,
+      "wl": 2.0,
+      "t": 0.0,
+      "K": 46.261563765,
+      "V_over_Meff4": 26.02610475,
+      "joint_lower_bound": 12.689491373
+    },
+    {
+      "N": 5,
+      "wq": 1.0,
+      "wl": 2.0,
+      "t": 0.1,
+      "K": 46.228127774,
+      "V_over_Meff4": 26.045115505,
+      "joint_lower_bound": 12.689491373
+    },
+    {
+      "N": 5,
+      "wq": 1.0,
+      "wl": 2.0,
+      "t": 0.3,
+      "K": 45.960639849,
+      "V_over_Meff4": 26.198868668,
+      "joint_lower_bound": 12.689491373
+    }
+  ],
+  "radial_Higgs_examples": [
+    {
+      "N": 3,
+      "wq": "1",
+      "wl": "1",
+      "Yukawas": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "lambda_over_gw_squared": "1/6"
+    },
+    {
+      "N": 3,
+      "wq": "1",
+      "wl": "1",
+      "Yukawas": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "lambda_over_gw_squared": "257/1200"
+    },
+    {
+      "N": 3,
+      "wq": "1",
+      "wl": "2",
+      "Yukawas": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "lambda_over_gw_squared": "1/6"
+    },
+    {
+      "N": 3,
+      "wq": "1",
+      "wl": "2",
+      "Yukawas": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "lambda_over_gw_squared": "209/867"
+    },
+    {
+      "N": 5,
+      "wq": "2",
+      "wl": "3",
+      "Yukawas": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "lambda_over_gw_squared": "1/6"
+    },
+    {
+      "N": 5,
+      "wq": "2",
+      "wl": "3",
+      "Yukawas": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "lambda_over_gw_squared": "44473/210675"
+    }
+  ],
+  "flat_radial_minimum_example": {
+    "t_squared": "17/209",
+    "48_pi_squared_K": "2580/209",
+    "8_pi_squared_V": "10940/209",
+    "coupled_gravity_solution_claimed": false
+  },
+  "nonmonotone_counterexample": {
+    "f0": "1",
+    "f2": "11/2",
+    "f4": "21/2",
+    "f4_minus_f2_squared_over_f0": "-79/4",
+    "ratio_of_V_to_claimed_monotone_bound": "42/121",
+    "field_stationarity_or_observed_vacuum_claimed": false
+  },
+  "historical_benchmark": {
+    "inverse_gw_squared": 3.1044459796,
+    "bare_V_over_Meff4_lower_bound": 0.483178000151,
+    "current_measurement_or_fit": false
+  },
+  "dependency_hashes": {
+    "research_note_532.md": "d4619416433081582ec2b177be355cc8326148d28768d2ab495b5b74ac96e224",
+    "shared_trace_unimodularity.py": "0fd1a679e8e5647e7cf9e0fab76c7557106d67bad5141b38f59ffc7cdbc4045e",
+    "shared_trace_unimodularity_results.json": "5be30b29942af9df7ca6e68805d42511033d30edc5d0be0e52772de14332cacd",
+    "joint_gauge_matter_constraints_results.json": "c2ede9a75cc2e0e13ebce2b65b9a2eaf8276518c7d6147943a21fd232f4e29c3",
+    "unified_physics_condition_ledger_532.md": "c67dfeeba0e315a0c45e98e334292975a36fad376cce32099a95d919f2e67bf0"
+  },
+  "scope": {
+    "supplied_four_dimensional_Euclidean_geometry": true,
+    "positive_nonincreasing_cutoff_is_extra_assumption": true,
+    "same_weighted_action_truncated_through_a4": true,
+    "no_independent_vacuum_or_EH_or_YM_counterterm": true,
+    "known_moment_inequality_reused": true,
+    "coupled_metric_scalar_vacuum_solved": false,
+    "observed_cosmological_constant_excluded": false,
+    "full_spectral_action_or_cognition_ruled_out": false,
+    "spacetime_dimension_or_GR_derived": false
+  }
+}

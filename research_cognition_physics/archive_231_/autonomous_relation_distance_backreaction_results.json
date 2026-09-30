@@ -1,0 +1,176 @@
+{
+  "round": 473,
+  "baseline_round": 472,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "observations": {
+    "sources": {
+      "singlet": "(I-S_05)/32",
+      "triplet": "(I+S_05)/96",
+      "graph": "I_6/6",
+      "initial_mean_distance": "8/3",
+      "every_single_data_marginal": "I_2/2",
+      "collective_SU2_invariant": true,
+      "weighted_source_mixture_is_maximally_mixed": true,
+      "graph_commutes_with_F_and_every_edge_projector": true,
+      "both_sources_have_same_graph_and_no_external_axis": true,
+      "singlet_and_triplet_preparation_not_generated_by_this_round": true
+    },
+    "operator_certificate": {
+      "low_orders_zero": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "exact_low_order_coupling_grades_checked": 20,
+      "full_data_dimension": 64,
+      "full_joint_dimension": 384,
+      "sixth_nonzero_grades": [
+        "kappa^2*J^4",
+        "kappa^3*J^3"
+      ],
+      "coefficient_matrix_entry_maxima": [
+        320,
+        960
+      ],
+      "trace_S05_coefficients": [
+        3840,
+        -15360
+      ],
+      "singlet_sixth_derivative": "20*kappa^2*J^3*(J-4*kappa)",
+      "triplet_sixth_derivative": "-20*kappa^2*J^3*(J-4*kappa)/3",
+      "sixth_J1_kappa1": [
+        -60,
+        20
+      ],
+      "seventh_operator_nonzero": true,
+      "J4kappa_cancels_these_source_coefficients_not_entire_A6": true,
+      "independent_graph_block_recursion_equal": true,
+      "integer_arithmetic_bound": "1332669751402954752",
+      "signed_int64_limit": "9223372036854775808"
+    },
+    "strict_window": {
+      "contrast": "mean_D_singlet - mean_D_triplet",
+      "Taylor_coefficients": {
+        "2": "0",
+        "4": "0",
+        "6": "-1/9",
+        "8": "37/180",
+        "10": "-561/2800",
+        "12": "551539/4082400"
+      },
+      "scalar_source_contrast_even_in_time": true,
+      "full_operator_or_arbitrary_reference_not_claimed_even": true,
+      "remainder": "(18*t)^14/[14!*(1-(18*t)^2/240)]",
+      "closed_window": [
+        "1/32",
+        "1/16"
+      ],
+      "whole_window_contrast_bounds": [
+        "-t^6/8",
+        "-t^6/10"
+      ],
+      "uniform_positive_gap": "1/10737418240",
+      "scaled_upper_bound": "-38165466923051873033/349175050730156851200",
+      "scaled_lower_bound": "-944002770340387/8419537295769600",
+      "no_time_peak_search": true
+    },
+    "actual_backreaction": {
+      "time": "1/16",
+      "J": 1,
+      "kappa": 1,
+      "output": [
+        {
+          "source": "singlet",
+          "graph_population": [
+            0.166666665434,
+            0.166666665434,
+            0.166666669132,
+            0.166666669132,
+            0.166666665434,
+            0.166666665434
+          ],
+          "mean_distance": 2.66666666174,
+          "graph_change_trace_distance": 5.98084317608e-06
+        },
+        {
+          "source": "triplet",
+          "graph_population": [
+            0.166666667078,
+            0.166666667078,
+            0.166666665845,
+            0.166666665845,
+            0.166666667078,
+            0.166666667078
+          ],
+          "mean_distance": 2.66666666831,
+          "graph_change_trace_distance": 1.99361439205e-06
+        }
+      ],
+      "actual_distance_contrast": -6.57506049606e-09,
+      "rational_Taylor_value": -6.57506041985e-09,
+      "rational_remainder_bound": "94143178827/1569515509235360727040",
+      "initially_maximally_mixed_graph_is_not_invariant_for_all_data": true,
+      "graph_population_changes_not_only_graph_phase": true,
+      "weighted_maximally_mixed_data_mixture_remains_stationary": true,
+      "no_graph_phase_preparation_or_external_axis_rotation": true
+    },
+    "unknown_reference": {
+      "time": "1/16",
+      "reference_dimension": 3,
+      "effective_data_observable": "M_D(t)=Tr_G[U^dagger*(I_D tensor D)*U]/6",
+      "sixth_approximation": "(8/3)*I_D - t^6*A6/4320",
+      "general_remainder_starts_at_order": 7,
+      "uniform_operator_remainder_bound": "531441/2018508800",
+      "operator_error": 2.53843489789e-10,
+      "reference_distance_moment_error": 9.74398460306e-12,
+      "direct_full_U_and_effect_reference_moments_equal": true,
+      "reference_initially_may_be_entangled_with_unknown_data": true,
+      "graph_initially_independent_and_maximally_mixed": true
+    },
+    "readout_connection": {
+      "inherited_protocol_round": 472,
+      "natural_wait_window": [
+        "1/32",
+        "1/16"
+      ],
+      "uniform_distance_gap": "1/10737418240",
+      "per_source_distance_estimation_error": "1/42949672960",
+      "probability_of_either_estimation_failure_at_most": "1/100",
+      "known_department_path_count": 4,
+      "sum_path_lengths": 10,
+      "probe_wait": "1/38654705664000000",
+      "complete_instrument_diamond_budget": "1/398449671992126314905600000000",
+      "copies_per_path_per_source": "39383464765675875975742712220161350679967778509243319675963761857759591378545425776640000000000000000000000000000000000000000",
+      "total_source_trials": "315067718125407007805941697761290805439742228073946557407710094862076731028363406213120000000000000000000000000000000000000000",
+      "retained_distinguishing_gap": "1/21474836480",
+      "exact_local_storage_relabeling_verified": true,
+      "old_data_and_all_graph_correlations_move_to_internal_storage": true,
+      "local_swap_preparation_readout_clock_storage_are_explicit_inputs": true,
+      "actual_instruments_fixed_without_history_feedback": true,
+      "storage_duration_and_error_in_complete_instrument_budget": true,
+      "no_cloning_of_one_unknown_graph_no_free_reset": true,
+      "no_actual_huge_sampling_experiment": true
+    }
+  },
+  "scope": {
+    "original_H_no_intermediate_control_during_natural_wait": true,
+    "initial_graph_maximally_mixed_no_graph_phase_engineered": true,
+    "internal_SU2_invariant_data_relation_changes_actual_distance_population": true,
+    "finite_six_tree_operator_certificate_not_all_tree_low_order_theorem": true,
+    "arbitrary_reference_effect_certificate": true,
+    "source_preparations_and_followup_readout_remain_inputs": true,
+    "independent_source_copies_and_internal_storage_counted": true,
+    "no_universal_attraction_claim": true,
+    "strong_marginal_stability_not_imposed_as_cognitive_axiom": true,
+    "four_leaf_department_has_only_two_independent_shape_probabilities": true,
+    "displacement_or_three_dimensional_space_derived": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

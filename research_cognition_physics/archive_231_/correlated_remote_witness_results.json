@@ -1,0 +1,87 @@
+{
+  "date": "2026-09-30",
+  "scientific_baseline_round": 520,
+  "numbered_round_created": false,
+  "numbered_scientific_test_increment": 0,
+  "diagnostic_tests": 4,
+  "failures": 0,
+  "errors": 0,
+  "dependency_sha256": {
+    "uniform_identity_receipt.py": "bcc36bfed0e6463a953a04f0a6e09bb0dea8053d968cd44dc474c987f4a07908",
+    "uniform_identity_receipt_results.json": "cb1d812f5636c4069de77e542b32e7d76e01a3e3f3b00be97d437903f708a306",
+    "research_note_503.md": "cc798a812ea63b5c626b4a31fa755302221a48b91f1cb92189403bf544edaabe",
+    "research_note_502.md": "93887d3df95d8058c8d8a3724a96d0e0d432a4d791f688b194b5718ceb03d5ae",
+    "research_note_514.md": "6a81b2e793ac33572828cdd0acc19f1d4a285dfa62cb4ee1a20b5faf26a11aec",
+    "internal_implementation_scope_review.md": "dc77adb93003bb023148389b96a7e3d386f84700465e81fc9439e1cf45c75f36",
+    "joint_event_conjecture_review.md": "f61c8e7891307295764e06f512d87b9ea87fbfc6746ba4972d148a988ae2e586"
+  },
+  "scope": {
+    "explicit_added_local_coupling": true,
+    "original_510_H_unchanged_claim": false,
+    "all_finite_size_encoding_proof": true,
+    "root_history_tracks_memory_sector": true,
+    "remote_event_identifier_or_autonomous_read_trigger_generated": false,
+    "spatial_dimension_or_GR_derived": false
+  },
+  "observations": {
+    "integer_full_sector_certificates": [
+      {
+        "vertices": 4,
+        "graphs": 1,
+        "sectors": 16,
+        "physical_columns_checked": 320,
+        "physical_active_dimension": 320
+      },
+      {
+        "vertices": 6,
+        "graphs": 6,
+        "sectors": 64,
+        "physical_columns_checked": 16128,
+        "physical_active_dimension": 16128
+      }
+    ],
+    "complete_physical_history": {
+      "static_graph_diagnostic": true,
+      "no_postselection": true,
+      "histories": [
+        {
+          "depth": 1,
+          "all_histories": 5,
+          "total_mass": 1.0000000000000004,
+          "reference_residual": 2.838998743973318e-16
+        },
+        {
+          "depth": 2,
+          "all_histories": 25,
+          "total_mass": 1.0000000000000007,
+          "reference_residual": 7.243506951465739e-16
+        },
+        {
+          "depth": 3,
+          "all_histories": 125,
+          "total_mass": 1.0000000000000009,
+          "reference_residual": 9.365195178938995e-16
+        }
+      ],
+      "full_encoded_state_max_error": 2.135566839634802e-15,
+      "arbitrary_reference_checked": true,
+      "not_a_claim_of_unchanged_unencoded_activity_marginal": true
+    },
+    "inherited_bounds": {
+      "source_step": "1/76040",
+      "all_size_source_lower": "1/27836532852562818014183424000000",
+      "conditional_current_nonedge_upper": "1/64",
+      "remote_value_window": "1/8",
+      "value_loss_upper": "9/16384",
+      "six_graph_all_roots_targets": 30,
+      "numerical_max_value_loss": 6.024427856880293e-05,
+      "no_new_source_rate_or_preservation_theorem_claim": true
+    },
+    "scope_witnesses": {
+      "same_reply_opposite_flag_for_unknown_sector": true,
+      "local_reset_leaves_zero_sector_but_enters_known_xor_sector": true,
+      "remote_flag_alone_does_not_announce_root_receipt": true,
+      "unmonitored_remote_reader_not_free": true
+    }
+  }
+}

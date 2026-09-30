@@ -1,0 +1,152 @@
+{
+  "round": 501,
+  "scientific_baseline_round": 500,
+  "reused_frozen_rounds": [
+    429,
+    440,
+    459,
+    472,
+    500
+  ],
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "dependency_results_sha256": {
+    "current_neighbor_detection_results.json": "f3b73ff6d6f94a4522632f9002f167bd35659640cecdf09051f5cdff8d358741"
+  },
+  "scope": {
+    "local_root_readout_only": true,
+    "single_unknown_graph_and_passive_reference": true,
+    "root_degree_may_be_unknown": true,
+    "random_label_joint_error_bound": true,
+    "per_label_posterior_bound": false,
+    "new_multilevel_data_and_local_identity_interaction": true,
+    "original_qubit_H_implemented": false,
+    "autonomous_identity_source": false,
+    "automatic_failure_reset": false,
+    "high_success_retry_proved": false,
+    "physical_positions_or_dimension_generated": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  },
+  "observations": {
+    "full_tensor": {
+      "N": 3,
+      "local_dimension": 5,
+      "full_dimension": 375,
+      "active_dimension": 27,
+      "excluded_root_reply_exactly_dark": true,
+      "scalar_removed": 2,
+      "restriction_exact": true,
+      "original_qubit_model_unchanged": false
+    },
+    "operator_crosschecks": [
+      {
+        "N": 6,
+        "graph_states": 6,
+        "root": 0,
+        "root_degrees": [
+          1
+        ],
+        "commutator_row_bound": 8,
+        "third_order_map_exact": true,
+        "fourth_order_bad_nonzero": true
+      },
+      {
+        "N": 6,
+        "graph_states": 6,
+        "root": 1,
+        "root_degrees": [
+          3
+        ],
+        "commutator_row_bound": 8,
+        "third_order_map_exact": true,
+        "fourth_order_bad_nonzero": true
+      },
+      {
+        "N": 4,
+        "graph_states": 16,
+        "root": 0,
+        "root_degrees": [
+          1,
+          2,
+          3
+        ],
+        "commutator_row_bound": 2,
+        "third_order_map_exact": true,
+        "fourth_order_bad_nonzero": true
+      }
+    ],
+    "rational_receipt_certificate": {
+      "time": "1/64",
+      "Taylor_degree": 12,
+      "h_norm_bound": 11,
+      "unitary_column_tail": "3138428376721/168990602389195650158183841792000",
+      "success_lower": "136777563428679727293335577534556605073465710213592129747/338638673385546045963131372095680737387978278937538968275648512000000",
+      "success_upper": "136881141455275816843984317539881047874542267936562806503/338638673385546045963131372095680737387978278937538968275648512000000",
+      "bad_mass_upper": "8366051882631399760127681032624538476389734908343903/338638673385546045963131372095680737387978278937538968275648512000000",
+      "joint_bad_ratio_upper": "8366051882631399760127681032624538476389734908343903/136777563428679727293335577534556605073465710213592129747",
+      "readable_success_lower": 4.039041437920945e-13,
+      "readable_joint_bad_ratio_upper": 6.116538175498156e-05,
+      "arithmetic": "unbounded integer columns, Fraction, complex Gershgorin",
+      "all_six_graph_inputs_and_passive_reference": true,
+      "finite_model_time_outside_conservative_uniform_window": true
+    },
+    "local_instrument_diagnostics": {
+      "success": 4.040636543557204e-13,
+      "abort": 0.999999999999596,
+      "joint_wrong_given_success": 2.6825479532781564e-05,
+      "delayed_joint_wrong_given_success": 3.0282417715682633e-05,
+      "root_only_outcomes": 6,
+      "completeness_residual": 2.675528900386353e-15,
+      "nonselective_reference_residual": 6.741806206823893e-16,
+      "graph_measured": false,
+      "other_ports_read": false,
+      "selected_reference_unchanged_claim": false
+    },
+    "no_automatic_retry": {
+      "N": 2,
+      "time": "1/8",
+      "graph_H_zero": true,
+      "full_scalar_removed": "-1",
+      "outside_lower": "33588953967041357293780010698431149412269/2163743290849326723391561608122597376000000",
+      "fail_lower": "184639408012224661204736983909137612937948963/184639427485809213729413257226461642752000000",
+      "conditional_outside_given_failure_strict_lower": "1/100",
+      "same_graph_state_not_reset": true,
+      "general_retry_impossibility_claim": false
+    },
+    "uniform_and_resource_budget": {
+      "C": 3,
+      "f": 24,
+      "speed_norm": 7,
+      "lipschitz": 48,
+      "R": "9457/12",
+      "c": "1/6",
+      "time": "1/131072",
+      "success_lower": "1/730166745731460135262101046296576",
+      "joint_error_upper": "90345025/17179869184",
+      "delay": "1/1048576",
+      "delayed_joint_error_upper": "5650129/1073741824",
+      "total_complete_output_half_trace_budget": "1/730166745731460135262101046296576000",
+      "actual_success_lower": "111/81129638414606681695789005144064000",
+      "actual_joint_error_upper": "840483853/134083510272",
+      "actual_joint_error_strict_upper": "1/100",
+      "finite_six_model_success_lower": "1/10000000000000",
+      "finite_six_model_complete_error_budget": "1/10000000000000000",
+      "finite_six_model_delay": "1/4096",
+      "finite_six_model_actual_joint_error_upper": "205049/163676160",
+      "local_packet_dimension": 8,
+      "packet_qubits": 18,
+      "old_data_memory_qubits": 18,
+      "trusted_identity_qubits": 18,
+      "root_role_qubits": 6,
+      "root_reader_qubits": 3,
+      "relation_qubits": 15,
+      "listed_qubits": 78,
+      "preparation_clock_phase_reference_and_coupling_hardware_not_generated": true,
+      "no_high_success_retry_or_experimental_sampling_claim": true
+    }
+  }
+}

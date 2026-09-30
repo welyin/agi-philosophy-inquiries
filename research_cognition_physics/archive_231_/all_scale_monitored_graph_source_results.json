@@ -1,0 +1,141 @@
+{
+  "date": "2026-09-28",
+  "round": 517,
+  "scientific_base_through_round": 516,
+  "tests_run": 5,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "dependency_sha256": {
+    "branching_tree_distance_audit.py": "3b69018a14093d1d8e335682745a072551e91541114b0b70cf5e468aa80465c1",
+    "simultaneous_edge_exchange_audit.py": "04ffdfef233c33865f04ae1cc37db7afdbc0bec9e8f71ea0fcd9ea42b7ec550c",
+    "research_note_492.md": "f687750a70d3603719c922a751431cfacc630b542434e354c016fab6128d4204",
+    "research_note_493.md": "771ad4f4bf06d8bb16e822f44304804eb14a93968ef222647b34e1e452661602"
+  },
+  "scope": {
+    "all_finite_distinct_connected_graph_families_theorem": true,
+    "unchanged_model_with_declared_port_instrument": true,
+    "arbitrary_initial_active_state_and_passive_reference": true,
+    "all_binary_tree_sizes_configuration_connected": true,
+    "no_data_or_graph_reset_between_monitoring_steps": true,
+    "uniform_in_size_mixing_budget_proved": false,
+    "full_record_environment_decoupled": false,
+    "coherent_uniform_graph_state_generated": false,
+    "autonomous_measurement_and_clock_generated": false,
+    "stable_macroscopic_position_generated": false,
+    "dimension_three_generated": false,
+    "full_GR_goal_completed": false
+  },
+  "observations": {
+    "finite_configuration_certificates": [
+      {
+        "internal": 1,
+        "vertices": 4,
+        "graphs": 1,
+        "directed_flips": 0,
+        "flip_degree": 0,
+        "configuration_connected": true
+      },
+      {
+        "internal": 2,
+        "vertices": 6,
+        "graphs": 6,
+        "directed_flips": 24,
+        "flip_degree": 4,
+        "configuration_connected": true
+      },
+      {
+        "internal": 3,
+        "vertices": 8,
+        "graphs": 90,
+        "directed_flips": 720,
+        "flip_degree": 8,
+        "configuration_connected": true
+      },
+      {
+        "internal": 4,
+        "vertices": 10,
+        "graphs": 2520,
+        "directed_flips": 30240,
+        "flip_degree": 12,
+        "configuration_connected": true
+      }
+    ],
+    "exact_pair_constraints": {
+      "vertices": 8,
+      "graphs": 90,
+      "unordered_distinct_pairs": 4005,
+      "common_to_all_edges": 0,
+      "each_diagonal_pair_free_coefficients": 1,
+      "each_offdiagonal_pair_free_coefficients": 0
+    },
+    "larger_actual_reference_diagnostic": {
+      "vertices": 8,
+      "graphs": 90,
+      "active_dimension": 720,
+      "passive_reference_dimension": 2,
+      "sparse_integer_H_equal_to_original_SWAPS": true,
+      "h_norm_upper": 15,
+      "time": "1/120",
+      "taylor_order": 18,
+      "analytic_operator_remainder_upper": "1/8765453261962597853227753930752000",
+      "source_port_probabilities": [
+        0.9997916904,
+        3.471920819e-05,
+        6.943238935e-05,
+        3.471679772e-05,
+        1.808125839e-09,
+        1.808125839e-09,
+        3.471880647e-05,
+        3.471880647e-05
+      ],
+      "reference_unchanged_to_tolerance": true,
+      "numerical_mixing_time_or_diamond_certificate_claimed": false
+    },
+    "boundary_counterexamples": {
+      "duplicate_graph_labels_have_nontrivial_peripheral_operator": true,
+      "no_data_coupling_preserves_port_information": true,
+      "disconnected_physical_graph_preserves_component_information": true,
+      "_aliased_sampling_preserves_nontrivial_diagonal_information": true
+    },
+    "source_contract_examples": [
+      {
+        "vertices": 6,
+        "hypothetical_half_diamond_eta": "1/600",
+        "success_probability_lower": "33/200",
+        "conditional_reference_error_upper": "1/99",
+        "attempts": 600,
+        "abort_bound_below_one_per_thousand": true,
+        "mixing_block_length_not_numerically_claimed": true
+      },
+      {
+        "vertices": 8,
+        "hypothetical_half_diamond_eta": "1/800",
+        "success_probability_lower": "99/800",
+        "conditional_reference_error_upper": "1/99",
+        "attempts": 800,
+        "abort_bound_below_one_per_thousand": true,
+        "mixing_block_length_not_numerically_claimed": true
+      },
+      {
+        "vertices": 10,
+        "hypothetical_half_diamond_eta": "1/1000",
+        "success_probability_lower": "99/1000",
+        "conditional_reference_error_upper": "1/99",
+        "attempts": 1000,
+        "abort_bound_below_one_per_thousand": true,
+        "mixing_block_length_not_numerically_claimed": true
+      },
+      {
+        "vertices": 100,
+        "hypothetical_half_diamond_eta": "1/10000",
+        "success_probability_lower": "99/10000",
+        "conditional_reference_error_upper": "1/99",
+        "attempts": 10000,
+        "abort_bound_below_one_per_thousand": true,
+        "mixing_block_length_not_numerically_claimed": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "round": 535,
+  "tests_run": 8,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "finite_matrix_spectrum_including_Majorana_and_weighted_Gaussian_trace",
+    "negative_origin_curvature_from_independent_matrix_differences",
+    "strict_scalar_descent_and_differentiated_positive_mode_sums",
+    "fixed_volume_multiplier_absorbs_constant_but_not_scalar_dependent_terms",
+    "large_radius_truncated_scalar_minimum_is_not_a_full_spectral_stationary_point",
+    "zero_Yukawa_residuals_and_excluded_all_zero_countercondition",
+    "full_Gaussian_factorization_and_inherited_positive_tail_bound",
+    "fixed_geometry_scalar_variation_remains_admissible_under_volume_constraint"
+  ],
+  "max_matrix_spectrum_error": 0.0,
+  "max_weighted_trace_error": 0.0,
+  "origin_curvature": [
+    {
+      "M": 0.0,
+      "analytic": -680.0,
+      "independent_matrix_difference": -679.999956787469
+    },
+    {
+      "M": 0.7,
+      "analytic": -673.802022306951,
+      "independent_matrix_difference": -673.801980610733
+    },
+    {
+      "M": 2.0,
+      "analytic": -664.29305022222,
+      "independent_matrix_difference": -664.293007446304
+    }
+  ],
+  "strict_descent": [
+    {
+      "p": 1,
+      "M": 0.0,
+      "t": 0.7,
+      "partial": 5720.801594633912,
+      "derivative": -1826.539660360489
+    },
+    {
+      "p": 1,
+      "M": 0.7,
+      "t": 0.7,
+      "partial": 5493.883787857181,
+      "derivative": -1767.927414478963
+    },
+    {
+      "p": 1,
+      "M": 2.0,
+      "t": 0.7,
+      "partial": 5146.013617063812,
+      "derivative": -1676.499589791324
+    },
+    {
+      "p": 2,
+      "M": 0.0,
+      "t": 0.7,
+      "partial": 2450.239585842671,
+      "derivative": -1538.415426030932
+    },
+    {
+      "p": 2,
+      "M": 0.7,
+      "t": 0.7,
+      "partial": 2277.748366792241,
+      "derivative": -1466.175166286773
+    },
+    {
+      "p": 2,
+      "M": 2.0,
+      "t": 0.7,
+      "partial": 2194.236298120377,
+      "derivative": -1405.771409164656
+    },
+    {
+      "p": 16,
+      "M": 0.0,
+      "t": 0.7,
+      "partial": 1707.087264671154,
+      "derivative": -680.876008023326
+    },
+    {
+      "p": 16,
+      "M": 0.7,
+      "t": 0.7,
+      "partial": 1602.06055952623,
+      "derivative": -386.558063938632
+    },
+    {
+      "p": 16,
+      "M": 2.0,
+      "t": 0.7,
+      "partial": 1576.909287414415,
+      "derivative": -350.285767244779
+    }
+  ],
+  "multiplier_algebra": [
+    {
+      "K": "2",
+      "V": "7",
+      "R": "3",
+      "multiplier": "-4",
+      "shift": "11"
+    },
+    {
+      "K": "1/2",
+      "V": "99",
+      "R": "1/10",
+      "multiplier": "-3959/40",
+      "shift": "-101"
+    }
+  ],
+  "large_radius_control": {
+    "radius": 10.0,
+    "R": 0.12,
+    "s_exact": "153/1900",
+    "t": 0.283771590878,
+    "truncated_scalar_gradient_exact": "0",
+    "full_logarithmic_scalar_gradient": -3.456816379569,
+    "max_Dirac_mass_over_cutoff": 1.135086363512,
+    "geometry_relative_truncation_error": 2.4934e-08
+  },
+  "zero_Yukawa_controls": [
+    {
+      "Y": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "limit": 0,
+      "finite_t30": 0.0
+    },
+    {
+      "Y": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "limit": 6.450505576738,
+      "finite_t30": 6.450505576738
+    },
+    {
+      "Y": [
+        1,
+        0,
+        3,
+        0
+      ],
+      "limit": 20,
+      "finite_t30": 20.0
+    },
+    {
+      "Y": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "limit": 38.450505576738,
+      "finite_t30": 38.450505576738
+    }
+  ],
+  "full_Gaussian_factorization": [
+    {
+      "r": 1.0,
+      "partial_action": 2.977472884368,
+      "partial_scalar_derivative": -10.8760694281,
+      "log_action_tail_bound": -391.426525135049,
+      "log_absolute_scalar_derivative_tail_bound": -390.131035140053
+    },
+    {
+      "r": 4.0,
+      "partial_action": 3168.211451833473,
+      "partial_scalar_derivative": -11572.796479173141,
+      "log_action_tail_bound": -87.260188601035,
+      "log_absolute_scalar_derivative_tail_bound": -85.964698606039
+    },
+    {
+      "r": 10.0,
+      "partial_action": 130590.53461481568,
+      "partial_scalar_derivative": -477019.1959028099,
+      "log_action_tail_bound": -83.595025673538,
+      "log_absolute_scalar_derivative_tail_bound": -82.299535678542
+    }
+  ],
+  "dependency_hashes": {
+    "research_note_534.md": "f3e4a6b619b4886aa865209019944ad56f0aa050d25c63fa5e2fc9e22c828dc5",
+    "spectral_background_feedback.py": "ec32f56ae971c0bb4fb618e69d596a30c050a47088c0bec87214814a244d39d8",
+    "spectral_background_feedback_results.json": "f726915edef3fe06c5c3dcfccd20dec8108cf472a539c4464c87e002cef847ce",
+    "shared_trace_unimodularity.py": "0fd1a679e8e5647e7cf9e0fab76c7557106d67bad5141b38f59ffc7cdbc4045e",
+    "research_note_306.md": "b7cef7f9baf926e00eb2ee8610a2c5311c3ffbde169a4d87758a5e45a16918db",
+    "unified_physics_condition_ledger_534.md": "baf53f44fa21c6ca47072be7e789dd83549431b10f692ddefc0749cb285259b9"
+  },
+  "scope": {
+    "fixed_four_volume_new_input": true,
+    "one_generation_constant_scalar_round_Euclidean_S4": true,
+    "strictly_decreasing_cutoff_fixed_weights_cutoff_and_Majorana": true,
+    "no_other_effective_action_or_field_constraint": true,
+    "no_finite_scalar_local_minimum_for_full_bare_action": true,
+    "arbitrary_generation_mixing_covered": false,
+    "Lorentz_stability_proved": false,
+    "Wilsonian_matching_or_entire_spectral_geometry_excluded": false,
+    "physical_volume_or_observed_cosmological_constant_derived": false
+  }
+}

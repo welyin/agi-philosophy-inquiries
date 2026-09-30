@@ -1,0 +1,245 @@
+{
+  "date": "2026-09-30",
+  "round": 525,
+  "scientific_base_through_round": 524,
+  "tests_run": 8,
+  "failures": 0,
+  "errors": 0,
+  "model": {
+    "r": 0.5,
+    "massive_squared": 1.25,
+    "gate": "(1+tanh(X-1))/2",
+    "calibration_b_is_part_of_hamiltonian_family": true,
+    "initial_normalized_position": [
+      1,
+      0,
+      0
+    ],
+    "initial_momentum": [
+      0,
+      0,
+      0
+    ],
+    "initial_fluctuation_covariance": "I_6/2",
+    "effective_hbar": "1/b^2",
+    "detector_extra_variance": 0.01,
+    "quantum_window": 0.5,
+    "quantum_coupling": 1.0
+  },
+  "diagnostics": {
+    "gradient_hessian_difference": 1.881633737710331e-12,
+    "classical_taylor": [
+      {
+        "coupling": 0.05,
+        "fourth_derivative_difference": 0.00011180339887498941,
+        "taylor_coefficient": 4.658474953124563e-06,
+        "small_time_diagnostics": [
+          {
+            "time": 0.2,
+            "probe_difference": 7.4498984944102505e-09,
+            "ratio_to_taylor": 0.9995087675384792
+          },
+          {
+            "time": 0.1,
+            "probe_difference": 4.657902475725152e-10,
+            "ratio_to_taylor": 0.9998771105554561
+          },
+          {
+            "time": 0.05,
+            "probe_difference": 2.9114573810978665e-11,
+            "ratio_to_taylor": 0.9999692724830729
+          }
+        ]
+      },
+      {
+        "coupling": 1.0,
+        "fourth_derivative_difference": 0.04472135954999579,
+        "taylor_coefficient": 0.0018633899812498247,
+        "small_time_diagnostics": [
+          {
+            "time": 0.2,
+            "probe_difference": 2.952253539687151e-06,
+            "ratio_to_taylor": 0.9902159402332263
+          },
+          {
+            "time": 0.1,
+            "probe_difference": 1.8588149017684415e-07,
+            "ratio_to_taylor": 0.9975447547065189
+          },
+          {
+            "time": 0.05,
+            "probe_difference": 1.1639032079704265e-08,
+            "ratio_to_taylor": 0.9993856098247481
+          }
+        ]
+      }
+    ],
+    "classical_step_refinement_error": 2.721256553428475e-11,
+    "classical_energy_drift": 3.4555691641457997e-15,
+    "symplectic_error": 4.035190086731767e-13,
+    "covariance_uncertainty_min_eigenvalue": -1.1345100679794406e-13,
+    "self_classical_endpoint": [
+      0.981818947084043,
+      0.02374977057507034,
+      -0.02726623837931665,
+      -0.07051475812403048,
+      0.0900998689817857,
+      -0.1063820626583282
+    ],
+    "frozen_classical_endpoint": [
+      0.9877571867614515,
+      0.023846687928930545,
+      -0.027375762637226585,
+      -0.04795532482826514,
+      0.09084714023779095,
+      -0.1072313661990843
+    ],
+    "initial_self_hessian_eigenvalues": [
+      -0.05906296641318395,
+      0.5364391906405833,
+      1.9726237757726004
+    ],
+    "actual_quantum_initial_forces": [
+      {
+        "b": 1.0,
+        "normalized_initial_acceleration": [
+          -0.017304877116120925,
+          0.013631618460316313,
+          -0.015240612760304147
+        ],
+        "stein_identity_residual": 2.4424906541753444e-15
+      },
+      {
+        "b": 2.0,
+        "normalized_initial_acceleration": [
+          -0.010563364365934379,
+          0.0111231168399682,
+          -0.012436022687920772
+        ],
+        "stein_identity_residual": 0.0
+      },
+      {
+        "b": 4.0,
+        "normalized_initial_acceleration": [
+          -0.00833191415545663,
+          0.010303296105218936,
+          -0.011519435241789182
+        ],
+        "stein_identity_residual": 0.0
+      },
+      {
+        "b": 16.0,
+        "normalized_initial_acceleration": [
+          -0.0075535969841423085,
+          0.01001949325122017,
+          -0.01120213400491434
+        ],
+        "stein_identity_residual": 0.0
+      },
+      {
+        "b": 64.0,
+        "normalized_initial_acceleration": [
+          -0.00750335648667862,
+          0.010001220554149759,
+          -0.01118170450852349
+        ],
+        "stein_identity_residual": 2.220446049250313e-16
+      }
+    ],
+    "actual_quantum_propagation": [
+      {
+        "b": 1.0,
+        "grid_size": 40,
+        "time_steps": 80,
+        "normalized_probe_mean": -0.036676509769725155,
+        "binary_readout_probability": 0.4860211163239459,
+        "exact_frozen_model_probability": 0.4897202323965625,
+        "readout_probability_difference": -0.0036991160726165817,
+        "classical_readout_difference": 5.474169195738947e-05,
+        "full_state_half_trace_distance_to_hessian_gaussian": 0.11231514895855924,
+        "norm_error": 5.040412531798211e-14,
+        "outer_grid_probability": 1.6563323978750856e-07,
+        "hessian_probe_variance": 0.5640570079808375
+      },
+      {
+        "b": 4.0,
+        "grid_size": 40,
+        "time_steps": 80,
+        "normalized_probe_mean": -0.02804710283467818,
+        "binary_readout_probability": 0.48622589158576185,
+        "exact_frozen_model_probability": 0.48655647014628767,
+        "readout_probability_difference": -0.00033057856052581824,
+        "classical_readout_difference": 5.474169195738947e-05,
+        "full_state_half_trace_distance_to_hessian_gaussian": 0.03798535545636831,
+        "norm_error": 4.973799150320701e-14,
+        "outer_grid_probability": 1.2206465308602304e-07,
+        "hessian_probe_variance": 0.5640570079808375
+      },
+      {
+        "b": 16.0,
+        "grid_size": 40,
+        "time_steps": 80,
+        "normalized_probe_mean": -0.027316367126730277,
+        "binary_readout_probability": 0.48635881108826695,
+        "exact_frozen_model_probability": 0.486329120913629,
+        "readout_probability_difference": 2.969017463794188e-05,
+        "classical_readout_difference": 5.474169195738947e-05,
+        "full_state_half_trace_distance_to_hessian_gaussian": 0.009787588777336348,
+        "norm_error": 4.9960036108132044e-14,
+        "outer_grid_probability": 1.0461065542246905e-07,
+        "hessian_probe_variance": 0.5640570079808375
+      },
+      {
+        "b": 64.0,
+        "grid_size": 40,
+        "time_steps": 80,
+        "normalized_probe_mean": -0.027269376892261603,
+        "binary_readout_probability": 0.48636795660299315,
+        "exact_frozen_model_probability": 0.48631478459642213,
+        "readout_probability_difference": 5.317200657101173e-05,
+        "classical_readout_difference": 5.474169195738947e-05,
+        "full_state_half_trace_distance_to_hessian_gaussian": 0.0024517436066208505,
+        "norm_error": 4.9960036108132044e-14,
+        "outer_grid_probability": 1.0316713823252615e-07,
+        "hessian_probe_variance": 0.5640570079808375
+      }
+    ],
+    "refined_quantum_run": {
+      "b": 16.0,
+      "grid_size": 48,
+      "time_steps": 160,
+      "normalized_probe_mean": -0.027316366612985296,
+      "binary_readout_probability": 0.48635881133396286,
+      "exact_frozen_model_probability": 0.4863291209136002,
+      "readout_probability_difference": 2.969042036266023e-05,
+      "classical_readout_difference": 5.474169194880432e-05,
+      "full_state_half_trace_distance_to_hessian_gaussian": 0.009787707526712075,
+      "norm_error": 1.7208456881689926e-14,
+      "outer_grid_probability": 1.7201069986567885e-07,
+      "hessian_probe_variance": 0.5640570079807604
+    },
+    "quantum_readout_refinement_difference": 2.4569590806322594e-10,
+    "gaussian_distance_refinement_difference": 1.1874937572674271e-07
+  },
+  "dependency_hashes": {
+    "research_note_524.md": "60996c7a56e37c892f68bbdb71ee966fbe36b7b8fc996cf03be6c75a3f6767b3",
+    "quantum_reference_readout_review.md": "cd371cd4c0b1f7fec180d714ba4bfeb03dba0d89f79a12d2ae81733b0e8aa914",
+    "research_note_325.md": "777fa7cb7425e8fd2d06ce695274070c925745e311876a4752845b598d2e1b60"
+  },
+  "scope": {
+    "finite_three_coordinate_same_reference_model": true,
+    "full_quantum_evolution_linear_and_state_independent": true,
+    "positive_joint_potential": true,
+    "large_amplitude_does_not_freeze_self_gate_proved": true,
+    "actual_probe_readout_limit_differs": true,
+    "correct_self_consistent_classical_and_hessian_limit": true,
+    "hepp_finite_degrees_theorem_used_with_conditions": true,
+    "quantum_numerics_are_moving_frame_schrodinger_not_classical_sampling": true,
+    "universal_reference_control_no_go": false,
+    "continuum_nonlinear_field_quantization_completed": false,
+    "reference_background_alignment_derived": false,
+    "spacetime_or_dimension_derived": false,
+    "einstein_backreaction_solved": false,
+    "stage_complete": false
+  }
+}

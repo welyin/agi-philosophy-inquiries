@@ -1,0 +1,241 @@
+{
+  "round": 479,
+  "baseline_round": 475,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "observations": {
+    "finite_intertwiner_certificate": {
+      "permutation_count": 24,
+      "input_modules": [
+        "trivial",
+        "V",
+        "wedge2(V)",
+        "wedge3(V)"
+      ],
+      "linear_equation_ranks": [
+        3,
+        11,
+        17,
+        12
+      ],
+      "solution_dimensions": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "rational_elimination_not_floating_rank": true,
+      "explicit_nonzero_maps": [
+        "ROOT",
+        "ROOT times incidence"
+      ],
+      "output_is_Q_difference_representation": true,
+      "all_intertwiners_classified_not_only_selected_Hamiltonians": true
+    },
+    "exact_response_restriction": {
+      "channel_form": "Q(r)=a*r+b*K*r",
+      "K": [
+        [
+          0,
+          1,
+          -1
+        ],
+        [
+          -1,
+          0,
+          1
+        ],
+        [
+          1,
+          -1,
+          0
+        ]
+      ],
+      "constant_offset_zero": true,
+      "free_H_a_leading": "-2*t^2/3",
+      "free_H_b_leading": "t^3/9",
+      "no_hidden_third_intertwiner": true,
+      "fixed_source_ex_identity": "Q_y+Q_z=0",
+      "fixed_nonzero_source_plane": "span(r,K*r)",
+      "source_parallel_111_at_most_one_dimension": true,
+      "zero_source_always_zero": true,
+      "full_input_response_may_still_have_rank_three": true,
+      "plane_dimension_bound_not_reachability_of_the_whole_plane": true
+    },
+    "actual_control_witnesses": {
+      "samples": [
+        {
+          "schedule": [
+            [
+              0.17,
+              0.0
+            ]
+          ],
+          "a": -0.018008407264,
+          "b": 0.00052161788138,
+          "matrix_residual": 3.6877698943e-17,
+          "fixed_source_Q": [
+            -0.018008407264,
+            -0.00052161788138,
+            0.00052161788138
+          ]
+        },
+        {
+          "schedule": [
+            [
+              0.13,
+              0.27
+            ],
+            [
+              0.21,
+              -0.19
+            ],
+            [
+              0.08,
+              0.35
+            ]
+          ],
+          "a": -0.068083831681,
+          "b": 0.0055841791631,
+          "matrix_residual": 1.3555562582e-16,
+          "fixed_source_Q": [
+            -0.068083831681,
+            -0.0055841791631,
+            0.0055841791631
+          ]
+        },
+        {
+          "schedule": [
+            [
+              0.31,
+              -0.4
+            ]
+          ],
+          "a": -0.050539228038,
+          "b": 0.0027004955895,
+          "matrix_residual": 1.1362356004e-16,
+          "fixed_source_Q": [
+            -0.050539228038,
+            -0.0027004955895,
+            0.0027004955895
+          ]
+        },
+        {
+          "schedule": [
+            [
+              0.07,
+              0.6
+            ],
+            [
+              0.22,
+              0.1
+            ]
+          ],
+          "a": -0.018103704071,
+          "b": 0.00064346636664,
+          "matrix_residual": 1.1100716072e-16,
+          "fixed_source_Q": [
+            -0.018103704071,
+            -0.00064346636664,
+            0.00064346636664
+          ]
+        }
+      ],
+      "derivative_parameters": [
+        "first_wait",
+        "second_wait",
+        "middle_exchange_area"
+      ],
+      "analytic_unitary_derivatives_not_finite_differences": true,
+      "Jacobian_singular_values": [
+        0.32002510795,
+        0.0025125131485,
+        3.0306840448e-17
+      ],
+      "numerical_rank_two_example_not_global_controllability_proof": true,
+      "internally_selected_pulses_are_extra_control_permissions": true
+    },
+    "scope_of_covariance": {
+      "asymmetric_graph_generator": "F+n_10, an extra graph potential",
+      "exact_Q_second_derivative": [
+        "8/3",
+        "8/3",
+        "8/3"
+      ],
+      "asymmetric_Q": [
+        0.050378789237,
+        0.050378789237,
+        0.050378789237
+      ],
+      "fixed_ex_plane_violated_when_joint_leaf_covariance_dropped": true,
+      "collective_SU2_still_present_in_asymmetric_counterexample": true,
+      "S4_averaged_CPTP_example_Q": [
+        -2.8912057933e-19,
+        -8.8181776695e-18,
+        2.168404345e-18
+      ],
+      "no_assertion_that_this_new_graph_control_is_available": true,
+      "no_no_go_for_all_reference_preserving_controls": true
+    },
+    "unknown_reference_contracts": {
+      "independent_graph_arbitrary_source_R_formula": "Q_R=a*s_R+b*K*s_R; s_mu=Tr_source(sigma_mu rho_source_R)",
+      "Bell_source_R_largest_error": 3.8720219441e-17,
+      "graph_R_joint_invariance_required": true,
+      "independent_source_joint_graph_R_formula": "Q_R(r)=A_R*r+B_R*K*r",
+      "graph_R_branch_coefficients": [
+        [
+          -0.068083831681,
+          0.0055841791631
+        ],
+        [
+          6.544933201e-05,
+          9.2778485629e-06
+        ]
+      ],
+      "graph_R_coefficients_are_reference_operators_not_one_universal_scalar_pair": true,
+      "arbitrary_initial_source_graph_reference_correlations_not_included": true,
+      "correlated_source_with_zero_marginal_Q": [
+        -0.034074640507,
+        -0.0027874506573,
+        0.0027874506573
+      ],
+      "product_input_condition_cannot_be_replaced_by_its_two_marginals": true,
+      "CPTP_bound_does_not_claim_every_channel_preserves_unknown_quantum_information": true
+    },
+    "actual_readout_and_goal_scope": {
+      "true_Q": [
+        -0.068083831681,
+        -0.0055841791631,
+        0.0055841791631
+      ],
+      "actual_instrument_Q": [
+        -0.068085101376,
+        -0.0055844153021,
+        0.005584415301
+      ],
+      "probe_wait": "1/65536",
+      "single_edge_bias_bound": 0.019078337892,
+      "fixed_source_plane_record_error_bound": "4 times single-edge error for Q_y+Q_z",
+      "actual_CP_instruments_from_round472": true,
+      "fixed_preparation_and_readout_endpoint": 1,
+      "old_correlations_isolated_before_fresh_independent_probes": true,
+      "repeats_controls_clocks_storage_and_joint_instrument_errors_remain_inputs": true,
+      "no_new_copy_budget_optimization_or_single_shot_exact_coordinate_claim": true,
+      "legal_three_coordinate_quotient_not_disproved": true,
+      "only_fixed_preparation_and_covariant_control_family_restricted": true
+    }
+  },
+  "scope": {
+    "exact_two_coefficient_covariant_response_classification": true,
+    "fixed_source_control_readouts_lie_in_at_most_a_plane": true,
+    "whole_plane_reachability_not_proved": true,
+    "source_preparation_and_joint_leaf_covariance_are_restrictive_inputs": true,
+    "asymmetric_controls_changed_preparations_or_correlations_not_excluded": true,
+    "arbitrary_controls_or_cognitive_axioms_not_refuted": true,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

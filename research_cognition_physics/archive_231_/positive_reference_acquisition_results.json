@@ -1,0 +1,270 @@
+{
+  "date": "2026-09-30",
+  "diagnostic_groups": 6,
+  "failures": 0,
+  "errors": 0,
+  "numbered_round_created": false,
+  "numbered_test_increment": 0,
+  "dependencies": {
+    "local_reference_probe_model.py": "2081ce721b20bdfe6e48d24c33d962bd48f02f04131495d5889e94896d11bedd",
+    "reference_alignment_completion.py": "87b4f1765d886a943f41a4ac230efa8c2a3ce4cded4a0c773b66c68e91ae1e3a"
+  },
+  "diagnostics": {
+    "blank_probe_examples": [
+      {
+        "n": 3,
+        "d": 1,
+        "sites": 3,
+        "inputs": {
+          "b": 8192.0,
+          "mass2": 1.0,
+          "r": 0.5,
+          "coupling": 0.5,
+          "nu": 0.25,
+          "alpha": 0.01,
+          "time": 0.2519763153394848
+        },
+        "checks": {
+          "normal_mode_mean_error": 4.092726157978177e-12,
+          "independent_series_error": 4.440892098500626e-16,
+          "independent_mean_error": 2.2737367544323206e-12,
+          "symplectic_residual": 9.992007221626409e-16,
+          "mean_energy_absolute_residual": 1.862645149230957e-09,
+          "mean_energy_scaled_residual": 1.010411002999354e-16,
+          "fluctuation_energy_residual": 3.552713678800501e-15
+        },
+        "coordinates": {
+          "max_bias": 0.040752183599685576,
+          "bias_upper": 0.08426479118757446,
+          "sufficient_b": 1683.4269858578036,
+          "record_variance_max": 0.38015446760811694,
+          "variance_upper": 0.7867677674381816,
+          "all_coordinate_failure_upper": 0.005,
+          "local_axis_symbols": 28,
+          "total_bits": 15,
+          "exact_marginal_failure_union_diagnostic": 0.0
+        },
+        "source_and_backreaction": {
+          "common_mean_displacement": 2.796326470217728e-13,
+          "reference_mean_displacement_max": 192.39808025358224,
+          "probe_mean_magnitude_max": 384.7961605071646,
+          "old_force_probe_error": 0.5117397329921118,
+          "relative_initial_norm": 13707.837874734294,
+          "relative_stationary_norm": 5344.509270962734,
+          "relative_at_read_norm": 13169.911312591246,
+          "relative_oscillation_excess_energy": 73806562.24592924,
+          "excess_energy_relative_residual": 0.0,
+          "one_axis_meter_energy_increment": 6.0,
+          "conditional_reference_uncertainty_min_eigenvalue": 0.000161310568986579,
+          "reference_record_cross_covariance_norm": 0.0655329778333873
+        },
+        "resources": {
+          "gradient_energy": 134217728.0,
+          "counterterm_mean_energy": 117440512.0,
+          "counterterm_fluctuation_energy": 0.15967911538807003,
+          "total_initial_energy": 251658244.71951583,
+          "final_read_energy_increment": 6.0,
+          "source_preparations": 1,
+          "read_rounds": 1
+        }
+      },
+      {
+        "n": 3,
+        "d": 2,
+        "sites": 9,
+        "inputs": {
+          "b": 8192.0,
+          "mass2": 1.0,
+          "r": 0.5,
+          "coupling": 0.5,
+          "nu": 0.25,
+          "alpha": 0.01,
+          "time": 0.1898315991504998
+        },
+        "checks": {
+          "normal_mode_mean_error": 3.183231456205249e-12,
+          "independent_series_error": 7.207776042683633e-16,
+          "independent_mean_error": 2.9558577807620168e-12,
+          "symplectic_residual": 1.5004674455737912e-15,
+          "mean_energy_absolute_residual": 1.1175870895385742e-08,
+          "mean_energy_scaled_residual": 3.5504611198663267e-16,
+          "fluctuation_energy_residual": 0.0
+        },
+        "coordinates": {
+          "max_bias": 0.03212336854255682,
+          "bias_upper": 0.08426479118757646,
+          "sufficient_b": 2846.614832718473,
+          "record_variance_max": 0.3038327670891447,
+          "variance_upper": 0.5784938203096974,
+          "all_coordinate_failure_upper": 0.005,
+          "local_axis_symbols": 28,
+          "total_bits": 90,
+          "exact_marginal_failure_union_diagnostic": 0.0
+        },
+        "source_and_backreaction": {
+          "common_mean_displacement": 2.033691978340166e-13,
+          "reference_mean_displacement_max": 109.84611885049372,
+          "probe_mean_magnitude_max": 219.69223770098722,
+          "old_force_probe_error": 0.1654393582921898,
+          "relative_initial_norm": 33577.208269896415,
+          "relative_stationary_norm": 17869.374977180152,
+          "relative_at_read_norm": 32827.24155435529,
+          "relative_oscillation_excess_energy": 334666316.62506133,
+          "excess_energy_relative_residual": 0.0,
+          "one_axis_meter_energy_increment": 18.0,
+          "conditional_reference_uncertainty_min_eigenvalue": 4.828609945236468e-05,
+          "reference_record_cross_covariance_norm": 0.06304758256594935
+        },
+        "resources": {
+          "gradient_energy": 805306368.0,
+          "counterterm_mean_energy": 704643072.0,
+          "counterterm_fluctuation_energy": 0.6137308895191917,
+          "total_initial_energy": 1509949478.011274,
+          "final_read_energy_increment": 36.0,
+          "source_preparations": 1,
+          "read_rounds": 1
+        }
+      },
+      {
+        "n": 3,
+        "d": 3,
+        "sites": 27,
+        "inputs": {
+          "b": 8192.0,
+          "mass2": 1.0,
+          "r": 0.5,
+          "coupling": 0.5,
+          "nu": 0.25,
+          "alpha": 0.01,
+          "time": 0.15861031714362883
+        },
+        "checks": {
+          "normal_mode_mean_error": 5.229594535194337e-12,
+          "independent_series_error": 1.2212453270876722e-15,
+          "independent_mean_error": 2.7284841053187847e-12,
+          "symplectic_residual": 3.1086244689504383e-15,
+          "mean_energy_absolute_residual": 1.4901161193847656e-08,
+          "mean_energy_scaled_residual": 2.2578280000746556e-16,
+          "fluctuation_energy_residual": 0.0
+        },
+        "coordinates": {
+          "max_bias": 0.028700300773085274,
+          "bias_upper": 0.08426479118757646,
+          "sufficient_b": 4037.444492571914,
+          "record_variance_max": 0.2627625169223433,
+          "variance_upper": 0.4850250859745372,
+          "all_coordinate_failure_upper": 0.0050000000000000435,
+          "local_axis_symbols": 28,
+          "total_bits": 405,
+          "exact_marginal_failure_union_diagnostic": 4.1803047472933513e-271
+        },
+        "source_and_backreaction": {
+          "common_mean_displacement": 2.2879034756326867e-13,
+          "reference_mean_displacement_max": 76.86495538815403,
+          "probe_mean_magnitude_max": 153.72991077630832,
+          "old_force_probe_error": 0.0807434640161091,
+          "relative_initial_norm": 71228.01498287033,
+          "relative_stationary_norm": 44340.798187598986,
+          "relative_at_read_norm": 70116.13054979261,
+          "relative_oscillation_excess_energy": 1208817897.7760763,
+          "excess_energy_relative_residual": 0.0,
+          "one_axis_meter_energy_increment": 54.0,
+          "conditional_reference_uncertainty_min_eigenvalue": 2.233608406416778e-05,
+          "reference_record_cross_covariance_norm": 0.07497695550944122
+        },
+        "resources": {
+          "gradient_energy": 3623878656.0,
+          "counterterm_mean_energy": 3170893824.0,
+          "counterterm_fluctuation_energy": 2.179525819217516,
+          "total_initial_energy": 6794772685.828839,
+          "final_read_energy_increment": 162.0,
+          "source_preparations": 1,
+          "read_rounds": 1
+        }
+      },
+      {
+        "n": 6,
+        "d": 1,
+        "sites": 6,
+        "inputs": {
+          "b": 8192.0,
+          "mass2": 1.0,
+          "r": 0.5,
+          "coupling": 0.5,
+          "nu": 0.25,
+          "alpha": 0.01,
+          "time": 0.1781741612749496
+        },
+        "checks": {
+          "normal_mode_mean_error": 5.002220859751105e-12,
+          "independent_series_error": 9.188827148111727e-16,
+          "independent_mean_error": 3.637978807091713e-12,
+          "symplectic_residual": 1.9984014443252818e-15,
+          "mean_energy_absolute_residual": 1.4901161193847656e-08,
+          "mean_energy_scaled_residual": 2.4707357176074926e-16,
+          "fluctuation_energy_residual": 7.105427357601002e-15
+        },
+        "coordinates": {
+          "max_bias": 0.03824556914150179,
+          "bias_upper": 0.08379767671709004,
+          "sufficient_b": 4395.406021543813,
+          "record_variance_max": 0.38359695034536634,
+          "variance_upper": 1.2214829443587303,
+          "all_coordinate_failure_upper": 0.005000000021758209,
+          "local_axis_symbols": 52,
+          "total_bits": 36,
+          "exact_marginal_failure_union_diagnostic": 1.5681818884036e-311
+        },
+        "source_and_backreaction": {
+          "common_mean_displacement": 2.5421149729252077e-13,
+          "reference_mean_displacement_max": 193.80433451425696,
+          "probe_mean_magnitude_max": 387.6086690285144,
+          "old_force_probe_error": 0.2570231907406537,
+          "relative_initial_norm": 34948.26640621821,
+          "relative_stationary_norm": 9399.200733077072,
+          "relative_at_read_norm": 34257.98184055695,
+          "relative_oscillation_excess_energy": 594667653.0635512,
+          "excess_energy_relative_residual": 0.0,
+          "one_axis_meter_energy_increment": 12.0,
+          "conditional_reference_uncertainty_min_eigenvalue": 7.686614749289479e-05,
+          "reference_record_cross_covariance_norm": 0.06975902230643236
+        },
+        "resources": {
+          "gradient_energy": 234881024.0,
+          "counterterm_mean_energy": 763363328.0,
+          "counterterm_fluctuation_energy": 0.3692900214107603,
+          "total_initial_energy": 998244361.3695306,
+          "final_read_energy_increment": 12.0,
+          "source_preparations": 1,
+          "read_rounds": 1
+        }
+      }
+    ],
+    "fixed_rule_large_box_spectrum": [
+      {
+        "n": 6,
+        "d": 1,
+        "min_eigenvalue": 0.19806226419516174,
+        "coupling": 0.5
+      },
+      {
+        "n": 127,
+        "d": 1,
+        "min_eigenvalue": 0.0006023626075915556,
+        "coupling": 0.5
+      }
+    ]
+  },
+  "scope": {
+    "fixed_positive_rule_all_finite_box_stability": true,
+    "same_rule_blank_probe_coordinate_readout": true,
+    "known_gaussian_source_family": true,
+    "all_unknown_input_diamond_guarantee": false,
+    "permanent_relative_alignment_formed": false,
+    "size_independent_reading_budget": false,
+    "quantum_clock_control": false,
+    "dynamic_einstein_source_solved": false,
+    "dimension_selected": false,
+    "complete_unification": false
+  }
+}

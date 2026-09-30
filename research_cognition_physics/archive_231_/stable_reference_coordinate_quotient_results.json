@@ -1,0 +1,229 @@
+{
+  "round": 478,
+  "baseline_round": 475,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "observations": {
+    "complete_current_mean_classification": {
+      "plus_graph_indices": [
+        5,
+        4,
+        2
+      ],
+      "minus_graph_indices": [
+        0,
+        1,
+        3
+      ],
+      "all_15_distance_matrix_exact_rank": 6,
+      "independent_fixed_leaf_class_constraints": 2,
+      "quotient_dimension": 3,
+      "Q_from_x_matrix": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      "determinant": 2,
+      "inverse": "x_b=(sum(Q)-2 Q_b)/2",
+      "population": "p_b_plus/minus=1/6 +/- (sum(Q)-2 Q_b)/4",
+      "exact_rational_points_checked": 29,
+      "all_15_means_determined_by_Q_on_fixed_leaf_distribution": true,
+      "current_mean_equivalence_iff_graph_populations_equal": true
+    },
+    "exact_domain": {
+      "x_domain": "[-1/3,1/3]^3",
+      "Q_inequalities": "abs(sum(Q)-2 Q_b) <= 2/3 for b=3,4,5",
+      "Q_vertices": [
+        [
+          "-2/3",
+          "-2/3",
+          "-2/3"
+        ],
+        [
+          "0",
+          "0",
+          "-2/3"
+        ],
+        [
+          "0",
+          "-2/3",
+          "0"
+        ],
+        [
+          "2/3",
+          "0",
+          "0"
+        ],
+        [
+          "-2/3",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "2/3",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "2/3"
+        ],
+        [
+          "2/3",
+          "2/3",
+          "2/3"
+        ]
+      ],
+      "vertices": 8,
+      "edges": 12,
+      "faces": 6,
+      "representative_ranks": [
+        {
+          "saturated_coordinate_count": 0,
+          "positive_graph_population_count": 6,
+          "section_joint_state_rank": 384
+        },
+        {
+          "saturated_coordinate_count": 1,
+          "positive_graph_population_count": 5,
+          "section_joint_state_rank": 320
+        },
+        {
+          "saturated_coordinate_count": 2,
+          "positive_graph_population_count": 4,
+          "section_joint_state_rank": 256
+        },
+        {
+          "saturated_coordinate_count": 3,
+          "positive_graph_population_count": 3,
+          "section_joint_state_rank": 192
+        }
+      ],
+      "canonical_diagonal_vertex_representatives_are_mixed": true,
+      "pure_graph_states_with_same_vertex_populations_checked": true,
+      "current_coordinates_do_not_determine_original_quantum_purity": true,
+      "necessity_from_positive_populations_sufficiency_from_explicit_state": true,
+      "topology_is_the_finite_current_mean_readout_topology": true
+    },
+    "protected_section": {
+      "section": "rho_x=I_D/64 tensor diag(p(x))",
+      "four_exact_graph_E22_basis_numerators_zero": true,
+      "data_identity_invariant_under_leaf_permutations": true,
+      "full_joint_E22_zero_for_every_legal_x": true,
+      "arbitrary_real_kappa_J_and_all_times_follow_from_475_commutation": true,
+      "protected_state_subset_surjects_onto_entire_current_mean_cube": true,
+      "full_U_examples": [
+        {
+          "initial_x": [
+            "1/6",
+            "-1/12",
+            "1/4"
+          ],
+          "evolved_x": [
+            0.089627035351,
+            -0.044813517676,
+            0.13444055303
+          ],
+          "largest_leaf_class_error": 5.5511151231e-17
+        },
+        {
+          "initial_x": [
+            "1/3",
+            "1/3",
+            "1/3"
+          ],
+          "evolved_x": [
+            0.1792540707,
+            0.1792540707,
+            0.1792540707
+          ],
+          "largest_leaf_class_error": 1.1102230246e-16
+        }
+      ],
+      "section_is_not_a_lossless_channel_resetting_arbitrary_unknown_input": true,
+      "dynamic_reachability_from_475_eta_not_proved": true
+    },
+    "metric_and_quantum_scope": {
+      "exact_rational_pairs_checked": 729,
+      "operational_metric": "max_15 abs(delta mean distance)=||delta x||_1/2",
+      "graph_population_total_variation_equals_operational_metric": true,
+      "canonical_diagonal_section_trace_distance_equals_operational_metric": true,
+      "general_joint_quantum_trace_distance_not_determined_by_current_means": true,
+      "same_center_means_graph_trace_distance_witness": 0.83333333333,
+      "current_mean_identity_not_full_future_process_equivalence": true,
+      "scalar_coordinates_do_not_determine_R_conditioned_statistics": true,
+      "protected_classical_reference_D10_moment_difference": [
+        "-1/12",
+        "1/12"
+      ],
+      "operational_distinguishability_norm_not_physical_spatial_length": true
+    },
+    "affine_symmetry_only": {
+      "affine_global_automorphism_count": 48,
+      "all_signed_permutations_verified": true,
+      "completeness_requires_center_and_opposite_facet_proof": true,
+      "no_nontrivial_continuous_SO3_global_affine_action": true,
+      "local_or_nonlinear_continuous_SO3_actions_not_excluded": true,
+      "affine_automorphisms_not_claimed_as_implemented_controls": true
+    },
+    "actual_readout_and_error_transfer": {
+      "diagnostic_probe_time": "1/65536",
+      "coherent_graph_input": true,
+      "true_x": [
+        0.16666666667,
+        -0.083333333333,
+        0.25
+      ],
+      "reconstructed_clipped_x": [
+        0.16665357005,
+        -0.083340962831,
+        0.25000287917
+      ],
+      "largest_actual_edge_bias": 1.1802361436e-05,
+      "actual_population_TV_error": 1.1802641091e-05,
+      "edge_error_a_implies_x_infinity_error_at_most": "2a",
+      "component_clipping_never_increases_coordinate_error": true,
+      "all_15_mean_errors_and_population_TV_at_most": "3a",
+      "target_total_mean_and_population_error": "1/100",
+      "per_edge_error": "1/300",
+      "probe_wait": "1/3000000",
+      "complete_instrument_diamond_budget": "1/7200000000",
+      "control_only_budget": "1/14400000000",
+      "total_control_duration_budget": "1/720000000000",
+      "copies_per_edge": "45360000000000000000",
+      "total_independent_trials": "181440000000000000000",
+      "joint_failure_probability_at_most": "1/100",
+      "exact_fixed_leaf_distribution_is_a_promise_not_inferred_from_four_edges": true,
+      "old_data_reference_storage_and_first_handoff_in_full_instrument_contract": true,
+      "independent_sources_clocks_and_controls_remain_inputs": true,
+      "no_cloning_single_shot_graph_readout_or_autonomous_preparation_claim": true
+    }
+  },
+  "scope": {
+    "complete_current_15_distance_mean_quotient_classified": true,
+    "selected_six_tree_department_and_fixed_leaf_statistics_are_inputs": true,
+    "every_legal_coordinate_has_an_E22_zero_positive_representative": true,
+    "representative_existence_not_dynamic_controllability": true,
+    "current_readout_topological_dimension_three_not_universe_dimension": true,
+    "no_requirement_that_position_predict_all_future_internal_information": true,
+    "displacement_composition_or_cross_basepoint_atlas_not_derived": true,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

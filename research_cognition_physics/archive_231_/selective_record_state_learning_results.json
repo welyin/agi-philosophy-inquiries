@@ -1,0 +1,174 @@
+{
+  "date": "2026-09-28",
+  "round": 520,
+  "scientific_base_through_round": 519,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "dependency_sha256": {
+    "all_scale_monitored_graph_source.py": "1676690bb960707f543a83551b644cddd873d68eb488818863747994c39fb694",
+    "research_note_517.md": "d60a182c3910d57933d9574db07c2ffe4cd7b2056dde784d5e7d49557780b28c",
+    "research_note_518.md": "b3adfa04ef91a1e0d417e807b7585b7d81c823f86e0e07d06f7098a9fc0d19b3",
+    "research_note_519.md": "e03452bb51fe455cfd8898289b6653496c4f08976d0b10805de4a93822beee7c",
+    "uniform_tree_continuum_review.md": "151ea7dfcacc9a0d2727d9a5ace2ac2fd6360e3651d58b57b4410982408d0eed"
+  },
+  "scope": {
+    "same_retained_DG_and_original_H": true,
+    "fixed_finite_size_common_step_no_dark_subspace": true,
+    "all_unknown_initial_states_and_passive_references": true,
+    "retained_complete_classical_history_estimator": true,
+    "uniform_mean_full_reference_report_bound": true,
+    "graph_resets_or_new_target_dependent_measurements": false,
+    "exact_autonomous_reader_or_computer_generated": false,
+    "uniform_in_size_or_explicit_mixing_rate": false,
+    "permanently_fixed_classical_graph": false,
+    "macroscopic_positions_or_three_dimensions_derived": false,
+    "full_GR_goal_completed": false
+  },
+  "observations": {
+    "integer_word_certificates": [
+      {
+        "internal": 1,
+        "vertices": 4,
+        "graphs": 1,
+        "words": 4,
+        "length": 6,
+        "all_edges_twice": true,
+        "explicit_all_graph_product": true
+      },
+      {
+        "internal": 2,
+        "vertices": 6,
+        "graphs": 6,
+        "words": 36,
+        "length": 10,
+        "all_edges_twice": true,
+        "explicit_all_graph_product": true
+      },
+      {
+        "internal": 3,
+        "vertices": 8,
+        "graphs": 90,
+        "words": 720,
+        "length": 14,
+        "all_edges_twice": true,
+        "explicit_all_graph_product": true
+      },
+      {
+        "internal": 4,
+        "vertices": 10,
+        "graphs": 2520,
+        "words": 25200,
+        "length": 18,
+        "all_edges_twice": true,
+        "explicit_all_graph_product": false
+      }
+    ],
+    "exact_common_step_budgets": [
+      {
+        "internal": 1,
+        "dimension": 4,
+        "step": "1/13824",
+        "word_length": 7,
+        "effect_bound_upper": "3/32",
+        "dark_projection_lower": "1/4"
+      },
+      {
+        "internal": 2,
+        "dimension": 36,
+        "step": "1/576000",
+        "word_length": 11,
+        "effect_bound_upper": "1/96",
+        "dark_projection_lower": "1/36"
+      },
+      {
+        "internal": 3,
+        "dimension": 720,
+        "step": "1/31610880",
+        "word_length": 15,
+        "effect_bound_upper": "1/1920",
+        "dark_projection_lower": "1/720"
+      },
+      {
+        "internal": 4,
+        "dimension": 25200,
+        "step": "1/2351462400",
+        "word_length": 19,
+        "effect_bound_upper": "1/67200",
+        "dark_projection_lower": "1/25200"
+      }
+    ],
+    "budget_cases_checked": 36,
+    "actual_word_effects": {
+      "words": 36,
+      "step": "1/576000",
+      "max_effect_error": 9.349390135760033e-06,
+      "analytic_effect_bound": 0.0034779549473976444,
+      "basis_completeness_error": 7.529898907923672e-16,
+      "taylor_order": 32,
+      "b_step": 1.736111111111111e-05
+    },
+    "finite_history_full_reference_checks": [
+      {
+        "depth": 1,
+        "histories": 6,
+        "m_n": 0.8333333333333335,
+        "total_actual_probability": 1.0000000000000002,
+        "total_estimator_probability": 1.0000000000000002,
+        "full_reference_half_trace_error": 0.8940359758326244,
+        "analytic_bound_unclipped": 40.95445115010333,
+        "diagnostic_time": "1/8"
+      },
+      {
+        "depth": 2,
+        "histories": 36,
+        "m_n": 0.829889036140659,
+        "total_actual_probability": 1.0,
+        "total_estimator_probability": 0.9999999999999998,
+        "full_reference_half_trace_error": 0.8912607057082358,
+        "analytic_bound_unclipped": 40.80779477965573,
+        "diagnostic_time": "1/8"
+      },
+      {
+        "depth": 3,
+        "histories": 216,
+        "m_n": 0.8264189014029911,
+        "total_actual_probability": 1.0,
+        "total_estimator_probability": 1.0000000000000009,
+        "full_reference_half_trace_error": 0.8885721769248396,
+        "analytic_bound_unclipped": 40.65999065281619,
+        "diagnostic_time": "1/8"
+      },
+      {
+        "depth": 4,
+        "histories": 1296,
+        "m_n": 0.8229211554170319,
+        "total_actual_probability": 1.0000000000000002,
+        "total_estimator_probability": 0.9999999999999954,
+        "full_reference_half_trace_error": 0.8859745101885215,
+        "analytic_bound_unclipped": 40.510961812730386,
+        "diagnostic_time": "1/8"
+      }
+    ],
+    "scope_counterexamples": {
+      "primitive_pauli_channel_posterior_purity": 0.68,
+      "primitive_channel_alone_does_not_imply_purification": true,
+      "actual_pure_graph_no_jump_probability": 0.95420831278029,
+      "largest_graph_basis_probability": 0.46190685383853436,
+      "pure_posterior_does_not_mean_classical_graph": true
+    },
+    "rare_word_reference_diagnostic": {
+      "words": 36,
+      "step": "1/576000",
+      "max_conditioned_error": 5.04339937462065e-12,
+      "max_conditioned_bound": 0.09117045198496372,
+      "analytic_purity_defect_upper": 1.5146564195436916e-05,
+      "log10_actual_probability_min": -117.34563944849577,
+      "log10_actual_probability_max": -116.42713040864157,
+      "all_probabilities_retained": true,
+      "not_a_typical_purification_rate": true
+    }
+  }
+}

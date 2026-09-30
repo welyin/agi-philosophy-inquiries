@@ -1,0 +1,299 @@
+"""Round 527: finite joint decoding with real couplings between reference cells.
+
+Quantum guarantees are analytic Duhamel bounds; the numerical coupled evolution
+is the classical centre plus its full correlated Hessian Gaussian. No claim of
+a direct multi-cell Schrodinger grid simulation or emergent physical dimension.
+"""
+import argparse
+from fractions import Fraction as F
+import hashlib
+import json
+import math
+from pathlib import Path
+import numpy as np
+import self_gated_reference_limit as old
+import self_gated_reference_calibration as single
+
+HERE=Path(__file__).resolve().parent
+TARGET=HERE/'coupled_reference_calibration_results.json'
+I=single.Interval
+SCALE=single.SCALE
+T=F(1,32)
+DELTA=F(1,16)
+ELL=F(4,25)*T*T
+RHO=F(19625,98304)
+GAIN=F(3,25)*T*T
+LIMIT=21*T*T/2
+RECORD_STEP=GAIN*DELTA/2
+EVAL_ERROR=F(1,50000000)
+
+
+def laplacian(n,edges):
+    matrix=np.zeros((n,n))
+    degrees=[F(0) for _ in range(n)]
+    seen=set()
+    for i,j,w in edges:
+        assert 0<=i<j<n and (i,j) not in seen and w>0
+        seen.add((i,j)); degrees[i]+=w; degrees[j]+=w
+        matrix[i,i]+=float(w); matrix[j,j]+=float(w)
+        matrix[i,j]-=float(w); matrix[j,i]-=float(w)
+    assert max(degrees,default=F(0))<=3
+    return matrix,max(degrees,default=F(0))
+
+
+def classical_gradient(q,L):
+    return np.array([old.gradient(row) for row in q])+L@q
+
+
+def classical_hessian(q,L):
+    n=len(q)
+    k=np.kron(L,np.eye(3))
+    for i in range(n):
+        k[3*i:3*i+3,3*i:3*i+3]+=old.hessian(q[i])
+    return k
+
+
+def classical_potential(q,L):
+    return sum(old.potential(row) for row in q)+float(np.sum(q*(L@q)))/2
+
+
+def orbit(xs,edges,steps=32,end=float(T)):
+    n=len(xs); m=3*n
+    L,_=laplacian(n,edges)
+    q=np.zeros((n,3));q[:,0]=xs
+    state=np.r_[q.ravel(),np.zeros(m),np.eye(2*m).ravel()]
+    dt=end/steps
+    def rhs(st):
+        q=st[:m].reshape(n,3); p=st[m:2*m]
+        s=st[2*m:].reshape(2*m,2*m)
+        ds=np.vstack([s[m:],-classical_hessian(q,L)@s[:m]])
+        return np.r_[p,-classical_gradient(q,L).ravel(),ds.ravel()]
+    initial=classical_potential(q,L)
+    for _ in range(steps):
+        a=rhs(state); b=rhs(state+dt*a/2)
+        c=rhs(state+dt*b/2); d=rhs(state+dt*c)
+        state+=dt*(a+2*b+2*c+d)/6
+    q=state[:m].reshape(n,3);p=state[m:2*m]
+    s=state[2*m:].reshape(2*m,2*m)
+    return q,p,s,abs(classical_potential(q,L)+float(p@p)/2-initial)
+
+
+def interval_gradient(q,edges):
+    out=[single.gradient_interval(row) for row in q]
+    for i,j,w in edges:
+        for a in range(3):
+            change=(q[i][a]-q[j][a])*w
+            out[i][a]=out[i][a]+change
+            out[j][a]=out[j][a]-change
+    return out
+
+
+def leading_interval(x):
+    q=[I.of(x),I.of(0),I.of(0)]
+    return -single.gradient_interval(q)[2]*T*T/2
+
+
+def dyadic_center(interval,bits=40):
+    value=F(round(F(interval.lo+interval.hi,2*SCALE)*(1<<bits)),1<<bits)
+    error=max(abs(value-F(interval.lo,SCALE)),abs(value-F(interval.hi,SCALE)))
+    return value,error
+
+
+def forward_bounds(degree=F(3),panels=64):
+    g=9+4*degree; h=10+2*degree; d=F(13)
+    r=h*T*T
+    tail=(g/h)*r**3/(720*(1-r/56))
+    midpoint=(3*h*g*T+d*g*g*T**3)*T**3/(24*panels*panels)
+    return tail,midpoint
+
+
+def forward_interval(xs,edges,panels=64):
+    n=len(xs)
+    q0=[[I.of(x),I.of(0),I.of(0)] for x in xs]
+    a0=interval_gradient(q0,edges)
+    z=[I.of(0) for _ in xs]
+    for k in range(panels):
+        t=T*F(2*k+1,2*panels)
+        q1=[[q0[i][a]-a0[i][a]*t*t/2 for a in range(3)] for i in range(n)]
+        gradients=interval_gradient(q1,edges)
+        for i in range(n):
+            z[i]=z[i]-gradients[i][2]*(T-t)*(T/panels)
+    return z
+
+
+def leading_table():
+    xs=[F(3,4)+F(j,512) for j in range(257)]
+    rows=[dyadic_center(leading_interval(x)) for x in xs]
+    ticks=[int(row[0]*(1<<40)) for row in rows]
+    error=max(row[1] for row in rows)
+    assert all(ticks[i]>ticks[i+1] for i in range(256))
+    return xs,ticks,error
+
+
+def inverse_leading(value,table):
+    xs,ticks,_=table
+    if value>=F(ticks[0],1<<40):return xs[0]
+    if value<=F(ticks[-1],1<<40):return xs[-1]
+    left,right=0,256
+    while right-left>1:
+        mid=(left+right)//2
+        if value>F(ticks[mid],1<<40):right=mid
+        else:left=mid
+    high,low=F(ticks[left],1<<40),F(ticks[right],1<<40)
+    return xs[left]+(high-value)/(high-low)/512
+
+
+def record_symbols(values):
+    largest=int(2*LIMIT/RECORD_STEP)
+    return [min(largest,max(0,round((F(float(value))+LIMIT)/RECORD_STEP))) for value in values]
+
+
+def decode(symbols,edges,table,steps=3):
+    n=len(symbols)
+    laplacian(n,edges)
+    assert all(0<=j<=5600 and int(j)==j for j in symbols)
+    w=[-LIMIT+j*RECORD_STEP for j in symbols]
+    x=[F(1) for _ in w]
+    tail,quad=forward_bounds()
+    logs=[]
+    for _ in range(steps):
+        z=forward_interval(x,edges)
+        e=[dyadic_center(z[i]-leading_interval(x[i])) for i in range(n)]
+        eval_error=tail+quad+max(row[1] for row in e)
+        assert eval_error<EVAL_ERROR
+        x=[F(round(inverse_leading(w[i]-e[i][0],table)*4096),4096) for i in range(n)]
+        assert all(F(3,4)<=xi<=F(5,4) for xi in x)
+        logs.append(dict(estimates=[float(v) for v in x],evaluation_error_upper=float(eval_error)))
+    return x,logs
+
+
+def certificate(table):
+    error=table[2]
+    beta=EVAL_ERROR/ELL+F(1,512)+error/ELL+F(1,8192)
+    three_steps=F(1,2)*RHO**3+beta/(1-RHO)
+    assert RHO<F(1,5)
+    assert ELL*(1-RHO)>GAIN
+    assert three_steps<DELTA/4
+    assert 1+2*LIMIT/RECORD_STEP==5601
+    assert F(1815,192)<10
+    fail_worst=F(10,1<<23)+4*F(201,100)/((1<<23)**2*GAIN**2*DELTA**2)
+    assert fail_worst<F(1,200)
+    def number(x):return dict(fraction=str(x),decimal=float(x))
+    tail,quad=forward_bounds()
+    return dict(time=number(T),joint_gain=number(GAIN),leading_gain=number(ELL),
+        contraction=number(RHO),source_interval=[.75,1.25],max_weighted_degree=3,
+        block_force_upper=21,block_hessian_upper=16,block_third_derivative_upper=13,
+        fixed_iterations=3,picard_tail=number(tail),midpoint_error=number(quad),
+        fixed_evaluation_budget=number(EVAL_ERROR),leading_table_error=number(error),
+        per_iteration_implementation_error=number(beta),iteration_error_upper=number(three_steps),
+        final_amplitude_error=number(DELTA),record_limit=number(LIMIT),record_step=number(RECORD_STEP),
+        symbols_per_site=5601,bits_per_site=13,amplitude_choice='b=2^23*N',
+        worst_failure_for_all_N_at_least_one=number(fail_worst),
+        leading_table_ticks_2_power_minus_40=table[1])
+
+
+def run():
+    table=leading_table(); cert=certificate(table)
+    cases=[('edge',[F(3,4),F(5,4)],[(0,1,F(1))]),
+           ('chain',[F(3,4),F(1),F(5,4)],[(0,1,F(1)),(1,2,F(1))]),
+           ('cycle',[F(3,4),F(7,8),F(9,8),F(5,4)],[(0,1,F(1)),(1,2,F(1)),(2,3,F(1)),(0,3,F(1))]),
+           ('weighted_star',[F(4,5),F(9,10),F(11,10),F(6,5)],[(0,1,F(1,2)),(0,2,F(1)),(0,3,F(3,2))])]
+    diagnostics=[]
+    for name,xs,edges in cases:
+        q,p,s,energy=orbit([float(x) for x in xs],edges)
+        n=len(xs);m=3*n;L,degree=laplacian(n,edges)
+        rows=np.arange(n)*3+2;cols=np.arange(n)*3
+        jac=s[np.ix_(rows,cols)]
+        xarr=np.array([float(x) for x in xs])
+        f,fp,_=old.gate(xarr)
+        dh=old.C*(f+xarr*fp)*float(T*T)/2
+        jac_error=float(np.linalg.norm(jac-np.diag(dh),np.inf))
+        assert jac_error<=float(F(785,24)*T**4)
+        cov=s@s.T/2
+        probe_cov=cov[np.ix_(rows,rows)]
+        assert np.linalg.eigvalsh(cov[:m,:m])[-1]<2
+        symplectic=np.block([[np.zeros((m,m)),np.eye(m)],[-np.eye(m),np.zeros((m,m))]])
+        sym_error=float(np.max(abs(s.T@symplectic@s-symplectic)))
+        intervals=forward_interval(xs,edges)
+        tail,quad=forward_bounds(degree)
+        forward_residual=[]
+        for i in range(n):
+            value,rounding=dyadic_center(intervals[i])
+            residual=abs(q[i,2]-float(value))
+            assert residual<float(tail+quad+rounding)
+            forward_residual.append(residual)
+        trials=[]
+        for sign in (0,1,-1):
+            perturbation=sign*float(GAIN*DELTA/2)*np.array([(-1)**i for i in range(n)])
+            symbols=record_symbols(q[:,2]+perturbation)
+            decoded,log=decode(symbols,edges,table)
+            error=max(abs(float(a-b)) for a,b in zip(decoded,xs))
+            assert error<float(DELTA)
+            trials.append(dict(noise_sign=sign,symbols=symbols,estimates=[float(a) for a in decoded],
+                               maximum_error=error,iteration_details=log))
+        diagnostics.append(dict(name=name,unknown_source=xarr.tolist(),
+            edges=[[i,j,str(w)] for i,j,w in edges],classical_readout=q[:,2].tolist(),
+            joint_jacobian=jac.tolist(),diagonal_leading_jacobian=dh.tolist(),
+            jacobian_remainder_norm=jac_error,symplectic_error=sym_error,
+            energy_drift=float(energy),joint_probe_covariance=probe_cov.tolist(),
+            forward_certificate_diagnostics=forward_residual,finite_decoder_trials=trials))
+        assert energy<1e-10 and sym_error<1e-9
+    # Certified cross-site bias at exactly the declared time, not a fitted curve.
+    xs=cases[0][1];edges=cases[0][2]
+    coupled=forward_interval(xs,edges,256)[0]
+    isolated=forward_interval([xs[0]],[],256)[0]
+    difference=coupled-isolated
+    err=sum(forward_bounds(F(1),256))+sum(forward_bounds(F(0),256))
+    lower=F(difference.lo,SCALE)-err;upper=F(difference.hi,SCALE)+err
+    assert upper<0
+    # Independent fourth-order coefficient and step-refinement checks.
+    xx=np.array([float(x) for x in xs]);L,_=laplacian(2,edges)
+    q0=np.c_[xx,np.zeros((2,2))]
+    a=-classical_gradient(q0,L).ravel()
+    fourth=(-classical_hessian(q0,L)@a).reshape(2,3)[:,2]
+    isolated_fourth=np.array([(-old.hessian(row)@(-old.gradient(row)))[2] for row in q0])
+    f,fp,_=old.gate(xx); response=old.C*xx*f; derivative=old.C*(f+xx*fp)
+    formula=-(derivative*(L@xx)+L@response)
+    assert np.max(abs(fourth-isolated_fourth-formula))<1e-14
+    fine=orbit(xx,edges,64)
+    coarse=orbit(xx,edges,32)
+    step_error=max(float(np.max(abs(fine[i]-coarse[i]))) for i in range(3))
+    assert step_error<1e-10
+    # Full-rank configuration response with a spatially constant source.
+    cycle=cases[2][2]; uniform=orbit(np.ones(4),cycle)
+    uq,_,us,_=uniform;urows=np.arange(4)*3+2;ucols=np.arange(4)*3
+    uj=us[np.ix_(urows,ucols)]
+    uniform_difference=float(np.ptp(uq[:,2]))
+    assert uniform_difference<1e-15 and np.linalg.matrix_rank(uj)==4
+    return dict(date='2026-09-30',round=527,scientific_base_through_round=526,
+        tests_run=8,failures=0,errors=0,certificates=cert,
+        diagnostics=dict(coupled_examples=diagnostics,
+            certified_coupled_minus_isolated_interval=[float(lower),float(upper)],
+            certified_interval_exact=[str(lower),str(upper)],fourth_order_cross_term=formula.tolist(),
+            classical_step_refinement=step_error,uniform_cycle_readouts=uq[:,2].tolist(),
+            uniform_cycle_configuration_rank=int(np.linalg.matrix_rank(uj)),
+            uniform_cycle_jacobian=uj.tolist(),uniform_cycle_spatial_mean_separation=uniform_difference),
+        dependency_hashes={name:hashlib.sha256((HERE/name).read_bytes()).hexdigest() for name in (
+            'self_gated_reference_limit.py','self_gated_reference_calibration.py','research_note_526.md',
+            'research_note_521.md','local_reference_probe_review.md','material_reference_geometry_review.md')},
+        scope=dict(given_finite_graph_with_nonzero_coupling=True,unknown_full_reference_configuration=True,
+            same_hamiltonian_and_decoder_for_all_unknown_sources=True,
+            all_finite_N_analytic_gain_and_quantum_bounds=True,finite_computable_contraction_decoder=True,
+            full_correlated_gaussian_noise_retained=True,direct_multicell_quantum_grid_simulation=False,
+            joint_configuration_inverse_does_not_imply_spatial_chart=True,
+            autonomous_record_collection_derived=False,reference_gradient_source_derived=False,
+            physical_dimension_selected=False,continuum_limit_completed=False,
+            einstein_feedback_completed=False,stage_complete=False))
+
+
+if __name__=='__main__':
+    p=argparse.ArgumentParser(description=__doc__)
+    p.add_argument('--write-results',action='store_true');p.add_argument('--check',action='store_true')
+    args=p.parse_args();r=run()
+    if args.write_results:
+        with TARGET.open('x',encoding='utf8',newline='\n') as out:
+            out.write(json.dumps(r,ensure_ascii=False,indent=2)+'\n')
+    if args.check:assert json.loads(TARGET.read_text('utf8'))==json.loads(json.dumps(r))
+    print(json.dumps(dict(round=527,tests=r['tests_run'],failure_bound=r['certificates']['worst_failure_for_all_N_at_least_one']['decimal'],
+        certified_cross_bias=r['diagnostics']['certified_coupled_minus_isolated_interval'],
+        decoder_error=r['certificates']['iteration_error_upper']['decimal']),ensure_ascii=False))

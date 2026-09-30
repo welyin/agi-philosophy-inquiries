@@ -1,0 +1,312 @@
+{
+  "round": 539,
+  "tests_run": 8,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "rank_two_complex_construction_and_exact_common_moment_identity",
+    "arbitrary_two_column_degenerate_basis_necessity_without_real_vector_assumption",
+    "piecewise_sharp_Higgs_minimum_and_empty_domain",
+    "Majorana_only_rank_one_obstruction_and_broken_pair_RG_not_kept_degenerate",
+    "two_nonzero_mass_targets_shot_through_full_matrix_RG_and_dim5_running",
+    "same_parameters_step_halving_and_common_running_mass_threshold",
+    "wrong_Weinberg_quartic_coefficient_changes_nonzero_masses",
+    "small_breaking_preserves_large_common_Higgs_boundary_numerically_not_exactly"
+  ],
+  "construction_max_matrix_error": 4.246530788431e-17,
+  "sharp_minimum_examples": [
+    {
+      "M": 1,
+      "sharp_minimum": 0.3175076581576,
+      "trace_floor": 0.08
+    },
+    {
+      "M": 4,
+      "sharp_minimum": 0.2688017758047,
+      "trace_floor": 0.32
+    },
+    {
+      "M": 8,
+      "sharp_minimum": 0.3565458823529,
+      "trace_floor": 0.64
+    }
+  ],
+  "target_mass_input": {
+    "source": "NuFIT 6.0 (2024), Table 1, IC24 with SK, NO; declared m1=0",
+    "source_url": "https://arxiv.org/html/2410.05380",
+    "delta_m31_eV2": 0.002513,
+    "delta_m21_eV2": 7.49e-05,
+    "m3_m2_eV": [
+      0.05012983143798,
+      0.008654478609368
+    ],
+    "tree_vev_conversion_GeV": 246.0,
+    "not_current_global_fit": true
+  },
+  "solver": [
+    {
+      "threshold": 1000000.0,
+      "iterations": 3,
+      "low_mass_relative_residual": 5.817568649036e-14,
+      "threshold_relative_residual": 1.554312234475e-15
+    },
+    {
+      "threshold": 1000000000.0,
+      "iterations": 3,
+      "low_mass_relative_residual": 5.724309914967e-13,
+      "threshold_relative_residual": 3.330669073875e-16
+    }
+  ],
+  "step_halving": [
+    {
+      "threshold": 1000000.0,
+      "mass_step_halving_relative_change": 5.884182030513e-14,
+      "quartic_step_halving_change": 4.726774527342e-14
+    },
+    {
+      "threshold": 1000000000.0,
+      "mass_step_halving_relative_change": 5.743183706386e-13,
+      "quartic_step_halving_change": 4.949929355291e-13
+    }
+  ],
+  "trajectories": [
+    {
+      "high_C5_singular_values_GeV_inverse": [
+        2.236707866045e-15,
+        3.812248487015e-16
+      ],
+      "high_Majorana_GeV": 1018311.096663,
+      "high_S": 0.3221186667673,
+      "high_Q": 0.10376043548,
+      "high_lambda": 0.3221186667673,
+      "high_yukawa_small_to_large_norm": 4.138024598975e-09,
+      "analytic_decrease_of_high_quartic_bound": 2.395966948673e-18,
+      "threshold_GeV": 1000000.0,
+      "heavy_masses_at_threshold_GeV": [
+        1000000.000106,
+        999999.9998936
+      ],
+      "relative_heavy_splitting": 2.12884391658e-10,
+      "relative_generated_Majorana_diagonal": 1.064465109803e-10,
+      "high_to_threshold_C5_matrix": {
+        "real": [
+          [
+            2.05537572224e-15,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            3.548324506511e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "imaginary": [
+          [
+            0.0,
+            -5.466812917339e-18,
+            0.0
+          ],
+          [
+            -5.466812917339e-18,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "low_C5_matrix": {
+        "real": [
+          [
+            1.656736367755e-15,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            2.860128292323e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "imaginary": [
+          [
+            0.0,
+            -4.406526591642e-18,
+            0.0
+          ],
+          [
+            -4.406526591642e-18,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "low_masses_eV": [
+        0.05012983143797,
+        0.008654478609367,
+        0.0
+      ],
+      "C5_EFT_running_factor": 0.8060503730914,
+      "top_at_MZ": 0.9724538105256,
+      "lambda_at_MZ": 0.2496170372785,
+      "active_heavy_mixing_trace_at_threshold": 8.614416433186e-09
+    },
+    {
+      "high_C5_singular_values_GeV_inverse": [
+        2.346935534899e-15,
+        4.037297800217e-16
+      ],
+      "high_Majorana_GeV": 1005084567.847,
+      "high_S": 0.3221186667673,
+      "high_Q": 0.1037604354781,
+      "high_lambda": 0.3221186667648,
+      "high_yukawa_small_to_large_norm": 4.291355243604e-06,
+      "analytic_decrease_of_high_quartic_bound": 2.5937407176e-12,
+      "threshold_GeV": 1000000000.0,
+      "heavy_masses_at_threshold_GeV": [
+        1000000030.751,
+        999999969.249
+      ],
+      "relative_heavy_splitting": 6.150205600262e-08,
+      "relative_generated_Majorana_diagonal": 3.075112700947e-08,
+      "high_to_threshold_C5_matrix": {
+        "real": [
+          [
+            2.301898069052e-15,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            3.974017472905e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "imaginary": [
+          [
+            0.0,
+            -1.711241921008e-18,
+            0.0
+          ],
+          [
+            -1.711241921008e-18,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "low_C5_matrix": {
+        "real": [
+          [
+            1.656745581744e-15,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            2.860220432229e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "imaginary": [
+          [
+            0.0,
+            -1.23163250799e-18,
+            0.0
+          ],
+          [
+            -1.23163250799e-18,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "low_masses_eV": [
+        0.05012983143795,
+        0.008654478609363,
+        0.0
+      ],
+      "C5_EFT_running_factor": 0.7197302104808,
+      "top_at_MZ": 0.9807221149141,
+      "lambda_at_MZ": 0.2544605937135,
+      "active_heavy_mixing_trace_at_threshold": 9.456104260975e-15
+    }
+  ],
+  "controls": [
+    {
+      "threshold": 1000000.0,
+      "wrong_quartic_coefficient_mass_ratio": [
+        1.04165023988,
+        1.04165023988
+      ],
+      "quartic_change_from_protected_538": 1.219857548307e-13,
+      "generated_mass_diagonal": 1.064465109803e-10
+    },
+    {
+      "threshold": 1000000000.0,
+      "wrong_quartic_coefficient_mass_ratio": [
+        1.078682902758,
+        1.078682902758
+      ],
+      "quartic_change_from_protected_538": -3.311240170945e-13,
+      "generated_mass_diagonal": 3.075112700947e-08
+    }
+  ],
+  "dependency_hashes": {
+    "research_note_538.md": "2110e2564a2bf60e86c8b43b62646f834e0d30bec24a5973bc072e59f6a3c570",
+    "protected_pair_rg.py": "f78969e549ab47dfd12dde1fb2ec58340c1888f725684ff322e1bb9c6538de82",
+    "protected_pair_rg_results.json": "e3cf7b430164d7e09e01476255280013dcd6c24b25e1bc18e3d5d0f92114ad6d",
+    "joint_gauge_matter_constraints_results.json": "c2ede9a75cc2e0e13ebce2b65b9a2eaf8276518c7d6147943a21fd232f4e29c3",
+    "joint_yukawa_higgs_matching_results.json": "4703023582d4c4dfddbe630e7bd5992eb351073753ddb050fc2dda854971c7fa",
+    "unified_physics_condition_ledger_538.md": "956e98af3d3c0d62ae02300a59d8f48bb0b93359df3592be9e76d37fac8cddb8"
+  },
+  "scope": {
+    "common_spectral_boundary_exact_at_high_scale": true,
+    "degenerate_heavy_boundary_not_reimposed_during_RG": true,
+    "dimension_four_full_matrix_one_loop_and_dim5_EFT_running": true,
+    "common_scale_tree_matching_near_degenerate_pair": true,
+    "mass_splittings_used_as_targets_not_predictions": true,
+    "nonzero_charged_flavor_PMNS_or_pole_fit_completed": false,
+    "dimension_six_running_and_finite_one_loop_matching_included": false,
+    "spacetime_GR_or_full_unification_derived": false
+  }
+}

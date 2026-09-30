@@ -1,0 +1,202 @@
+{
+  "round": 483,
+  "baseline_round": 475,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "observations": {
+    "leaf_representation": {
+      "conjugacy_class_sizes": [
+        1,
+        6,
+        3,
+        8,
+        6
+      ],
+      "four_leaf_Hilbert_character": [
+        16,
+        8,
+        4,
+        4,
+        2
+      ],
+      "four_leaf_irrep_multiplicities": {
+        "[4]": 5,
+        "[31]": 3,
+        "[22]": 1,
+        "[211]": 0,
+        "[1111]": 0
+      },
+      "full_B_multiplicities": {
+        "[4]": 20,
+        "[31]": 12,
+        "[22]": 4
+      },
+      "full_B_sector_dimensions": {
+        "[4]": 20,
+        "[31]": 36,
+        "[22]": 8
+      },
+      "full_B_dimension": 64,
+      "sign_isotypic_projector_exactly_zero": true,
+      "pure_isometric_invariant_code_maximum_dimension": 20,
+      "maximum_statement_not_extended_to_general_mixed_encoding": true
+    },
+    "safe_private_input_contract": {
+      "isometry": "C^2_(B1) x C^2_(B2) x Sym^4(C^2)_leaves -> (C^2)^6",
+      "input_dimension": 20,
+      "entire_unknown_private_input_and_R_preserved_by_isometry": true,
+      "source_A_and_graph_must_still_be_independent_of_BR": true,
+      "joint_BR_leaf_conjugation_invariance_required": true,
+      "B_I64_over64_without_R_is_allowed_and_not_restricted_to_pure_code": true,
+      "maximally_entangled_64_by64_BR_has_same_marginal_but_transposition_fidelity": "1/4",
+      "invariant_B_marginal_does_not_imply_joint_BR_hypothesis": true,
+      "no_claim_that_every_noninvariant_BR_has_failed_reference": true,
+      "internal_one_excitation_codeword_full_Sym6_weight": "1/6",
+      "arbitrary_unknown_64_dimensional_input_not_compressed_to_20": true,
+      "code_is_initial_reference_safe_support_not_a_dynamically_noiseless_subsystem": true
+    },
+    "all_time_reference_selection_rule": {
+      "actual_ABG_dimension": 24576,
+      "nonzero_H_row_terms_with_multiplicity": 9,
+      "full_basis_diagonal_leaf_S4_covariance_verified_for_24_elements": true,
+      "independent_collective_A_SU2_commutator_verified_locally": true,
+      "H4_norm_upper_at_unit_couplings": 9,
+      "general_H4_norm_upper": "4*abs(kappa)+5*abs(J)",
+      "initial_state": "eta_A(r) x sigma_BR x gamma_G",
+      "sigma_BR_joint_leaf_invariant": true,
+      "gamma_G_independent_leaf_invariant": true,
+      "E22_of_A_twirl_initial_state_exactly_zero": true,
+      "all_time_conditional_leaf_distance_moment": "(8/3)*rho_R",
+      "all_time_matching_class_reference_moment": "rho_R/3",
+      "arbitrary_real_kappa_J_time_covered_by_proof": true,
+      "no_requirement_that_BR_remain_independent_during_evolution": true
+    },
+    "nontrivial_private_dynamics": {
+      "witness_A_source": "eta(0)",
+      "witness_B": "one excitation at internal site 1; all other B=0",
+      "graph": "uniform pure six-tree state",
+      "leave_original_B_vector_t_squared_coefficient": "3",
+      "leave_initial_20_dimensional_code_t_squared_coefficient": "11/8",
+      "remainder_upper": "(18*t)^3/(6*(1-18*t/4))",
+      "strictly_positive_interval": "0 < t <= 1/2000",
+      "leave_B_probability_lower": "(5/2)*t^2",
+      "code_leakage_probability_lower": "(7/8)*t^2",
+      "interval_tail_over_t_squared_upper": "1944/3991",
+      "numerical_time": "1/20",
+      "numerical_leave_B_probability": 0.0074698756429,
+      "numerical_code_leakage_probability": 0.0034285381247,
+      "no_B_freezing_or_factorisation_of_H4_claim": true
+    },
+    "conditional_reference_crosscheck": {
+      "B_R_input": "(|B excitation 1>|0_R> + |B excitation 2>|1_R>)/sqrt(2)",
+      "independent_A_mixed_source_rank": 8,
+      "full_active_vector_dimension": 24576,
+      "reference_dimension": 2,
+      "time": "1/20",
+      "vector_Taylor_degree": 18,
+      "operator_Taylor_tail_bound": "205891132094649/95019177578227302400000000000000000000",
+      "finite_Taylor_bound_does_not_include_floating_roundoff": true,
+      "maximum_leaf_reference_matrix_residual": 2.2204460493e-16,
+      "maximum_matching_reference_matrix_residual": 5.5511151231e-17,
+      "unknown_global_information_preserved_by_unitarity_not_by_private_marginal_freezing": true,
+      "inverse_only_used_as_a_numerical_unitarity_check": true
+    },
+    "physical_d4_readout": {
+      "local_embedding": "|a> -> |a>_A |0>_B",
+      "fresh_B_probe_vacuum_dimension": 1,
+      "true_ququart_SWAP_and_binary_port_effect_intertwining": true,
+      "exact_full_384_column_generator_intertwining": true,
+      "frozen_instrument_round": 472,
+      "actual_CP_outcome_records": [
+        {
+          "edge": [
+            1,
+            0
+          ],
+          "probabilities": [
+            0.4999961853,
+            0.5000038147
+          ]
+        },
+        {
+          "edge": [
+            1,
+            3
+          ],
+          "probabilities": [
+            0.4999961853,
+            0.5000038147
+          ]
+        },
+        {
+          "edge": [
+            1,
+            4
+          ],
+          "probabilities": [
+            0.4999961853,
+            0.5000038147
+          ]
+        },
+        {
+          "edge": [
+            1,
+            5
+          ],
+          "probabilities": [
+            0.4999961853,
+            0.5000038147
+          ]
+        }
+      ],
+      "two_actual_signed_paths": [
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          2,
+          3
+        ]
+      ],
+      "two_path_signed_estimates": [
+        0.16666666672,
+        0.16666666672
+      ],
+      "actual_leaf_D03_estimate": 2.6666666666,
+      "actual_current_leaf_mean_estimation_error": "1/1000",
+      "leaf_path_probe_time": "1/5184000",
+      "ideal_8_over3_comparison_error_bound": "a + delta_source/2",
+      "source_preparation_and_natural_evolution_error_is_a_separate_complete_process_budget": true,
+      "whole_two_step_path_diamond_budget": "1/429981696000000000",
+      "independent_copies_per_path": "231105323618795520000000000000000000",
+      "joint_two_path_failure_bound": "4*exp(-10) < 1/100",
+      "all_old_AB_saved_in_internal_noninteracting_S_graph_G_stays_active": true,
+      "S_G_R_correlations_retained_final_probe_can_disturb_G": true,
+      "fresh_independent_A_probe_and_B_vacuum_are_resources": true,
+      "operator_valued_instrument_identity_valid_for_arbitrary_stored_reference": true,
+      "illustrative_each_adjacency_mean_error": "1/1000",
+      "probe_time": "1/1296000",
+      "complete_storage_handoff_and_probe_diamond_budget": "1/5184000000",
+      "independent_copies_per_edge": "134369280000000000000",
+      "joint_four_edge_failure_bound": "8*exp(-10) < 1/100",
+      "no_free_state_reset_or_cloning_or_autonomous_reader_generation": true
+    }
+  },
+  "scope": {
+    "all_time_reference_safe_joint_leaf_invariant_private_states": true,
+    "twenty_dimensional_pure_isometric_code_is_maximal_for_this_invariance_contract": true,
+    "arbitrary_mixed_encodings_not_classified": true,
+    "private_subsystem_may_evolve_entangle_and_leave_initial_code": true,
+    "invariant_private_marginal_not_substitute_for_joint_unknown_reference_condition": true,
+    "source_and_graph_independence_preparation_and_probe_permissions_remain_inputs": true,
+    "no_full_d4_state_quotient_or_physical_dimension_selection": true,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

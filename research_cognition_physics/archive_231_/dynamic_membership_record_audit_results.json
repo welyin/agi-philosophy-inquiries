@@ -1,0 +1,289 @@
+{
+  "round": 509,
+  "scientific_baseline_round": 508,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "dependency_sha256": {
+    "coherent_graph_mean_obstruction.py": "b0fa8674b172c8dc1b949c4386bc132af209708b32a7b0269406e0241f6431cc",
+    "branching_tree_distance_audit.py": "3b69018a14093d1d8e335682745a072551e91541114b0b70cf5e468aa80465c1",
+    "distributed_role_reader.py": "1fb7e5cda1e0105ce317dca301543607f0ce6608441cb519f84ea52bfc8338ba",
+    "role_covariant_graph_obstruction.py": "95ae9978e96a409fe6a0e5714cff96b73913bf07782ceae5516bd4154295728a",
+    "research_note_444.md": "00762d9d04c3004693acc16d621d787376e3104f3a2afbf767955c06a8e52361",
+    "research_note_508.md": "238e1b524ec4fbb555a997336da2776c2b2270a1f39c059a14f037ae9db82ef5"
+  },
+  "scope": {
+    "unchanged_original_NNI_witness": true,
+    "exact_current_local_membership_has_extensive_support_obstruction": true,
+    "approximate_record_generator_budget_tradeoff": true,
+    "arbitrary_reference_at_isometric_interface": true,
+    "selected_interface_is_declared_input": true,
+    "edge_present_sector_claimed_invariant": false,
+    "hamming_distance_used_as_time_lower_bound": false,
+    "internal_membership_source_generated": false,
+    "all_macroscopic_membership_or_geometry_excluded": false,
+    "dimension_three_generated": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  },
+  "observations": {
+    "extensive_membership_witnesses": [
+      {
+        "I": 2,
+        "N": 6,
+        "central_edge": [
+          0,
+          1
+        ],
+        "address_owners_changed": 4,
+        "member_records_changed": 2,
+        "changed_edges": 4,
+        "unchanged_record_owners": [
+          0,
+          1,
+          4,
+          5
+        ],
+        "original_flip_matrix_element": 1
+      },
+      {
+        "I": 3,
+        "N": 8,
+        "central_edge": [
+          0,
+          1
+        ],
+        "address_owners_changed": 4,
+        "member_records_changed": 4,
+        "changed_edges": 4,
+        "unchanged_record_owners": [
+          0,
+          1,
+          5,
+          6
+        ],
+        "original_flip_matrix_element": 1
+      },
+      {
+        "I": 4,
+        "N": 10,
+        "central_edge": [
+          1,
+          2
+        ],
+        "address_owners_changed": 4,
+        "member_records_changed": 6,
+        "changed_edges": 4,
+        "unchanged_record_owners": [
+          1,
+          2,
+          7,
+          8
+        ],
+        "original_flip_matrix_element": 1
+      },
+      {
+        "I": 8,
+        "N": 18,
+        "central_edge": [
+          3,
+          4
+        ],
+        "address_owners_changed": 4,
+        "member_records_changed": 14,
+        "changed_edges": 4,
+        "unchanged_record_owners": [
+          3,
+          4,
+          13,
+          14
+        ],
+        "original_flip_matrix_element": 1
+      },
+      {
+        "I": 16,
+        "N": 34,
+        "central_edge": [
+          7,
+          8
+        ],
+        "address_owners_changed": 4,
+        "member_records_changed": 30,
+        "changed_edges": 4,
+        "unchanged_record_owners": [
+          7,
+          8,
+          25,
+          26
+        ],
+        "original_flip_matrix_element": 1
+      },
+      {
+        "I": 64,
+        "N": 130,
+        "central_edge": [
+          31,
+          32
+        ],
+        "address_owners_changed": 4,
+        "member_records_changed": 126,
+        "changed_edges": 4,
+        "unchanged_record_owners": [
+          31,
+          32,
+          97,
+          98
+        ],
+        "original_flip_matrix_element": 1
+      }
+    ],
+    "exhaustive_tree_certificate": [
+      {
+        "I": 2,
+        "N": 6,
+        "all_trees": 6,
+        "interface_present_trees": 6,
+        "central_directed_flips": 24,
+        "possible_record_changes": [
+          2
+        ],
+        "maximum_record_changes": 2,
+        "other_flips_removing_selected_edge": 0
+      },
+      {
+        "I": 3,
+        "N": 8,
+        "all_trees": 90,
+        "interface_present_trees": 60,
+        "central_directed_flips": 240,
+        "possible_record_changes": [
+          2,
+          4
+        ],
+        "maximum_record_changes": 4,
+        "other_flips_removing_selected_edge": 120
+      },
+      {
+        "I": 4,
+        "N": 10,
+        "all_trees": 2520,
+        "interface_present_trees": 1260,
+        "central_directed_flips": 5040,
+        "possible_record_changes": [
+          2,
+          4,
+          6
+        ],
+        "maximum_record_changes": 6,
+        "other_flips_removing_selected_edge": 3600
+      }
+    ],
+    "exact_support": {
+      "changed_records": 6,
+      "maximum_records_per_term": 4,
+      "tested_integer_terms": 57,
+      "maximum_offdiagonal_encoded_element": 0,
+      "required_target_element": 1,
+      "low_body_generator_error": 2.82842712475,
+      "high_body_single_witness_intertwining_exact": true,
+      "arbitrary_auxiliary_factors_covered_by_orthogonality_proof": true
+    },
+    "approximate_records": {
+      "correlated_cases": [
+        {
+          "per_record_error": "1/10000",
+          "total_term_norm_budget": 1,
+          "encoded_flip_element": 0.019998999975,
+          "generator_error": 1.4000007143,
+          "selection_upper": 0.02,
+          "compressed_matching_requires_norm": 50.0025001875,
+          "compressed_match_still_has_leakage": 49.9924996875
+        },
+        {
+          "per_record_error": "1/100",
+          "total_term_norm_budget": 1,
+          "encoded_flip_element": 0.198997487421,
+          "generator_error": 1.26570337171,
+          "selection_upper": 0.2,
+          "compressed_matching_requires_norm": 5.0251890763,
+          "compressed_match_still_has_leakage": 4.92468529477
+        },
+        {
+          "per_record_error": "1/4",
+          "total_term_norm_budget": 1,
+          "encoded_flip_element": 0.866025403784,
+          "generator_error": 0.517638090205,
+          "selection_upper": 1.0,
+          "compressed_matching_requires_norm": 1.15470053838,
+          "compressed_match_still_has_leakage": 0.57735026919
+        }
+      ],
+      "rational_certificates": [
+        {
+          "total_term_norm_budget": 1,
+          "generator_error_upper": "0",
+          "necessary_record_error_floor": "1/4"
+        },
+        {
+          "total_term_norm_budget": 10,
+          "generator_error_upper": "1/10",
+          "necessary_record_error_floor": "81/40000"
+        },
+        {
+          "total_term_norm_budget": 100,
+          "generator_error_upper": "1/2",
+          "necessary_record_error_floor": "1/160000"
+        }
+      ],
+      "bound": "abs(kappa) <= delta + 2 sqrt(epsilon) J",
+      "J_is_declared_sum_of_term_norms": true,
+      "generator_error_is_not_channel_error": true
+    },
+    "finite_time": {
+      "duration": "1/128",
+      "low_body_norm_bound": 7,
+      "target_norm_bound": 1,
+      "vector_coordinate_error": 0.00781242052738,
+      "certified_amplitude_difference_lower": "103/16384",
+      "scale_uniform_time_claimed": false,
+      "arbitrary_macro_approximation_excluded": false
+    },
+    "finite_delay_boundary": {
+      "cases": [
+        {
+          "changed_records": 2,
+          "per_term_record_support": 1,
+          "total_term_norm_budget": 2,
+          "first_nonzero_power": 2,
+          "complete_parallel_flip_time_over_pi": "1/2"
+        },
+        {
+          "changed_records": 4,
+          "per_term_record_support": 1,
+          "total_term_norm_budget": 4,
+          "first_nonzero_power": 4,
+          "complete_parallel_flip_time_over_pi": "1/2"
+        },
+        {
+          "changed_records": 6,
+          "per_term_record_support": 1,
+          "total_term_norm_budget": 6,
+          "first_nonzero_power": 6,
+          "complete_parallel_flip_time_over_pi": "1/2"
+        },
+        {
+          "changed_records": 8,
+          "per_term_record_support": 1,
+          "total_term_norm_budget": 8,
+          "first_nonzero_power": 8,
+          "complete_parallel_flip_time_over_pi": "1/2"
+        }
+      ],
+      "endpoint_update_not_full_tree_intertwining": true,
+      "graph_conditional_routing_or_spatial_locality_not_derived": true,
+      "hamming_distance_alone_is_not_physical_latency": true
+    }
+  }
+}

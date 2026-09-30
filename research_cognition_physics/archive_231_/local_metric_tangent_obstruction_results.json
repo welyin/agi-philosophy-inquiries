@@ -1,0 +1,313 @@
+{
+  "round": 489,
+  "baseline_round": 487,
+  "scientific_baselines": [
+    467,
+    468,
+    469,
+    472,
+    478,
+    487
+  ],
+  "tests_run": 5,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "observations": {
+    "frozen_witness_bridge": {
+      "source_round": 468,
+      "original_to_current_labels": [
+        0,
+        3,
+        4,
+        5,
+        1,
+        2
+      ],
+      "witness": [
+        1,
+        -2,
+        -2,
+        1,
+        1,
+        1
+      ],
+      "exact_population_quadratic_matrix": [
+        [
+          16,
+          20,
+          20,
+          20,
+          20,
+          32
+        ],
+        [
+          20,
+          16,
+          20,
+          20,
+          32,
+          20
+        ],
+        [
+          20,
+          20,
+          16,
+          32,
+          20,
+          20
+        ],
+        [
+          20,
+          20,
+          32,
+          16,
+          20,
+          20
+        ],
+        [
+          20,
+          32,
+          20,
+          20,
+          16,
+          20
+        ],
+        [
+          32,
+          20,
+          20,
+          20,
+          20,
+          16
+        ]
+      ],
+      "exact_formula": "28+4 sum matching_probability^2-8 sum source_leaf_adjacency^2",
+      "all_population_quantifier_from_frozen_analytic_bounds_not_samples": true,
+      "lower": "40/3",
+      "l1_squared": 64,
+      "squared_tangent_error_lower": "5/24",
+      "lower_bound_not_claimed_optimal": true,
+      "original_mean_path_lengths_not_mean_squared_lengths": true
+    },
+    "finite_error_certificate": {
+      "generic_necessary_inequality": "epsilon*(6+epsilon)+eta >= 5/24",
+      "epsilon_is_max_length_error_divided_by_scale": true,
+      "eta_is_max_tangent_squared_distance_error_divided_by_scale_squared": true,
+      "metric_matrix_comparison": "(1-omega)I <= g <= (1+omega)I on normal ball of radius 3*R*a",
+      "sufficient_tangent_eta": "4*R^2*omega",
+      "example_R": "2",
+      "example_omega": "1/1000",
+      "example_length_epsilon": "1/100",
+      "example_tangent_eta": "2/125",
+      "strict_rejection_slack": "3967/30000",
+      "nonconvergent_population_examples": [
+        {
+          "n": 4,
+          "a": "1/16",
+          "p": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "15/16",
+            "1/16"
+          ],
+          "normalized_witness": "527/32",
+          "scaled_witness": "527/8192"
+        },
+        {
+          "n": 5,
+          "a": "1/32",
+          "p": [
+            "1/32",
+            "0",
+            "0",
+            "0",
+            "0",
+            "31/32"
+          ],
+          "normalized_witness": "543/32",
+          "scaled_witness": "543/32768"
+        },
+        {
+          "n": 8,
+          "a": "1/256",
+          "p": [
+            "0",
+            "0",
+            "255/256",
+            "1/256",
+            "0",
+            "0"
+          ],
+          "normalized_witness": "33023/2048",
+          "scaled_witness": "33023/134217728"
+        },
+        {
+          "n": 9,
+          "a": "1/512",
+          "p": [
+            "0",
+            "0",
+            "0",
+            "511/512",
+            "1/512",
+            "0"
+          ],
+          "normalized_witness": "524799/32768",
+          "scaled_witness": "524799/8589934592"
+        }
+      ],
+      "measurement_error_per_unscaled_distance": "1/1000",
+      "observed_witness_lower": "606997/46875",
+      "source_and_reader_error_cannot_be_omitted": true
+    },
+    "smooth_positive_control": {
+      "manifold": "fixed unit two-sphere at north pole",
+      "tangent_vectors": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "max_normal_coordinate_norm_bound_R": 2,
+      "records": [
+        {
+          "a": 0.125,
+          "maximum_squared_tangent_error": 8.197773143846e-05,
+          "normalized_error": 0.005246574812062
+        },
+        {
+          "a": 0.0625,
+          "maximum_squared_tangent_error": 5.095550894525e-06,
+          "normalized_error": 0.001304461028998
+        },
+        {
+          "a": 0.03125,
+          "maximum_squared_tangent_error": 3.180363737868e-07,
+          "normalized_error": 0.0003256692467577
+        },
+        {
+          "a": 0.015625,
+          "maximum_squared_tangent_error": 1.987047880099e-08,
+          "normalized_error": 8.138948116887e-05
+        }
+      ],
+      "numerical_decay_not_used_to_prove_uniform_limit": true,
+      "general_proof_is_normal_neighborhood_metric_comparison": true,
+      "applies_to_any_fixed_finite_Riemannian_dimension": true,
+      "does_not_identify_these_sphere_distances_with_the_six_tree_means": true
+    },
+    "scope_boundaries": {
+      "frozen_boundaries_reused": [
+        467,
+        468,
+        469,
+        478
+      ],
+      "short_edge_examples": [
+        {
+          "a": "1/16",
+          "relative_short_edge": "1/16",
+          "absolute_short_edge": "1/256",
+          "max_length_error_upper": "1/256",
+          "relative_error_upper": "1/16"
+        },
+        {
+          "a": "1/256",
+          "relative_short_edge": "1/256",
+          "absolute_short_edge": "1/65536",
+          "max_length_error_upper": "1/65536",
+          "relative_error_upper": "1/256"
+        },
+        {
+          "a": "1/4096",
+          "relative_short_edge": "1/4096",
+          "absolute_short_edge": "1/16777216",
+          "max_length_error_upper": "1/16777216",
+          "relative_error_upper": "1/4096"
+        }
+      ],
+      "short_edge_changes_dimensionless_shape_so_not_fixed_unit_six_tree_contract": true,
+      "fixed_six_label_uniform_leaves_alone_have_regular_tetrahedron_Gram": true,
+      "excluding_two_internal_labels_changes_the_observation_contract": true,
+      "round469_increasing_N_selected_leaf_approximation_not_excluded": true,
+      "same_all_label_obstruction_not_transferred_to_endpoint_projection": true,
+      "round478_statistics_TV_metric_not_a_two_subject_length": true,
+      "moving_basepoint_requires_uniform_tangent_approximation": true,
+      "bounded_curvature_alone_not_substitute_for_normal_neighborhood_control": true,
+      "no_curvature_divergence_claim": true,
+      "no_exclusion_of_finite_curved_six_point_realization": true
+    },
+    "actual_reader_and_resource_contract": {
+      "source_instrument_round": 472,
+      "all_pairs": 15,
+      "nonzero_path_programs": 41,
+      "maximum_path_weight_sum": 10,
+      "maximum_path_length": 3,
+      "exact_path_diagonal_decomposition_in_original_six_graphs": true,
+      "diagnostic_path": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "diagnostic_probe_wait": "1/512",
+      "diagnostic_reference_matrix_error": 0.003746403331602,
+      "diagnostic_error_upper": "21065427/16194277",
+      "diagnostic_role_only_not_tangent_limit_measurement": true,
+      "unscaled_distance_error": "1/1000",
+      "scaled_distance_error": "a/1000",
+      "common_source_diamond_error": "1/6000",
+      "each_path_product_error": "1/20000",
+      "certified_probe_wait": "1/233280000",
+      "complete_each_stage_instrument_diamond_error": "1/111974400000000",
+      "independent_copies_per_path": "5157212399245267773085974528000000000000000000000000000000000",
+      "total_known_history_preparations": "211445708369055978696524955648000000000000000000000000000000000",
+      "joint_failure_probability_less_than": "1/100",
+      "common_actual_source_for_all_path_settings_required": true,
+      "old_complete_data_moved_to_internal_storage_and_graph_remains_active": true,
+      "old_storage_graph_reference_correlations_retained": true,
+      "every_stage_uses_fresh_probe_and_preserves_old_probe_information_in_storage": true,
+      "no_old_random_record_feedback_or_unknown_state_cloning": true,
+      "no_sampling_experiment_executed": true,
+      "graph_readout_disturbance_allowed_not_reversible_measurement_claim": true,
+      "preparation_clock_storage_control_and_repetition_are_extra_inputs": true
+    }
+  },
+  "scope": {
+    "all_six_original_mean_path_distance_readouts_and_uniform_scale_required": true,
+    "populations_may_vary_arbitrarily_with_scale": true,
+    "fixed_smooth_Riemannian_point_and_O_scale_normal_neighborhood_required": true,
+    "additive_length_error_little_o_scale_cannot_remove_obstruction": true,
+    "moving_centers_only_under_explicit_uniform_tangent_approximation": true,
+    "no_claim_curvature_must_diverge": true,
+    "no_exclusion_of_topological_space_curved_global_geometry_or_different_readout": true,
+    "no_general_cognitive_three_dimensional_no_go": true,
+    "independent_of_parallel_round488": true,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

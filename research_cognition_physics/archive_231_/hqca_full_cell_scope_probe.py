@@ -1,0 +1,221 @@
+"""Unnumbered scope audit: round 418 work-register universality vs whole cells.
+
+Uses the unchanged physical 144-dimensional two-cell Hamiltonian. Universal
+length/time statements are proved in the accompanying note, not by sampling.
+"""
+import argparse
+from functools import lru_cache
+import hashlib
+import io
+import json
+from pathlib import Path
+import platform
+import unittest
+
+import numpy as np
+import complex_hqca_channel_audit as old
+
+HERE = Path(__file__).resolve().parent
+TARGET = HERE / 'hqca_full_cell_scope_probe_results.json'
+OBS = {}
+I_INDEX = old.SYMBOLS.index('I')
+T_INDEX = old.SYMBOLS.index('T')
+
+
+def ket(n, i):
+    return np.eye(n, dtype=complex)[:, i]
+
+
+def td(a, b):
+    x = a-b
+    return float(np.abs(np.linalg.eigvalsh((x+x.conj().T)/2)).sum()/2)
+
+
+@lru_cache(None)
+def spectral():
+    h, _ = old.local_hamiltonian()
+    return np.linalg.eigh(h)
+
+
+def evolve(t):
+    values, vectors = spectral()
+    return (vectors*np.exp(-1j*t*values)) @ vectors.conj().T
+
+
+def kraus(t, ancilla):
+    u = evolve(t).reshape(12, 12, 12, 12)
+    return np.einsum('abij,j->bai', u, ancilla)
+
+
+def choi(ks):
+    # Normalized maximally entangled input; output-major vectorization.
+    vecs = ks.reshape(len(ks), -1)/np.sqrt(12)
+    return vecs.T @ vecs.conj()
+
+
+def apply(ks, rho):
+    return sum(k @ rho @ k.conj().T for k in ks)
+
+
+def charge(symbol):
+    return np.repeat(np.arange(6) == symbol, 2).astype(int)
+
+
+def phase_covariance_residual(j, theta=.713):
+    v = np.exp(1j*theta*charge(T_INDEX))
+    phases = np.kron(v, v.conj())
+    return float(np.linalg.norm(phases[:, None]*j*phases.conj()[None, :]-j))
+
+
+def program_zero_data_h3():
+    """Restrict the actual local rule to all-zero data, proven invariant below."""
+    pair, _ = old.local_hamiltonian()
+    ids = np.array([(2*p)*12+2*q for p in range(6) for q in range(6)])
+    outside = np.setdiff1d(np.arange(144), ids)
+    assert np.count_nonzero(pair[np.ix_(outside, ids)]) == 0
+    hp = pair[np.ix_(ids, ids)]
+    return np.kron(hp, np.eye(6)) + np.kron(np.eye(6), hp)
+
+
+def middle_program(state):
+    a = state.reshape(6, 6, 6)
+    return np.einsum('abc,adc->bd', a, a.conj())
+
+
+class Audit(unittest.TestCase):
+    def test_01_actual_rule_conserves_all_six_counts(self):
+        h, _ = old.local_hamiltonian()
+        row, col = np.nonzero(h)
+        certificates = []
+        for symbol in range(6):
+            q = charge(symbol)
+            total = np.repeat(q, 12) + np.tile(q, 12)
+            # Exact integer comparison on every physical nonzero matrix entry.
+            self.assertTrue(np.array_equal(total[row], total[col]))
+            self.assertEqual(np.count_nonzero((total[:, None]-total[None, :])*h), 0)
+            certificates.append(old.SYMBOLS[symbol])
+        OBS['local_count_certificate'] = dict(
+            physical_dimension=144, nonzero_entries=len(row),
+            exact_preserved_symbol_counts=certificates,
+            all_chain_lengths_follow_by_sum_of_local_terms=True)
+
+    def test_02_fixed_cell_full_channel_and_witness(self):
+        v = np.eye(12, dtype=complex)
+        for data in range(2):
+            a, b = 2*I_INDEX+data, 2*T_INDEX+data
+            v[np.ix_([a, b], [a, b])] = old.HAD
+        j_target = choi(v[None, :, :])
+        x = np.zeros((12, 12), complex)
+        for data in range(2):
+            a, b = 2*I_INDEX+data, 2*T_INDEX+data
+            x[a, b] = x[b, a] = 1
+        seed = ket(12, 2*I_INDEX)
+        rho = np.outer(seed, seed.conj())
+        target = v @ rho @ v.conj().T
+        self.assertAlmostEqual(float(np.trace(x @ target).real), 1.)
+        rows = []
+        max_cov = max_witness = max_tp = 0.
+        data = np.array([np.sqrt(.3), 1j*np.sqrt(.7)])
+        for symbol in range(6):
+            anc = np.kron(ket(6, symbol), data)
+            for t in (0., .37, 1.1, np.pi/2):
+                ks = kraus(t, anc)
+                tp = float(np.linalg.norm(sum(k.conj().T @ k for k in ks)-np.eye(12)))
+                j = choi(ks)
+                cov = phase_covariance_residual(j)
+                output = apply(ks, rho)
+                witness = float(np.trace(x @ output).real)
+                err = td(output, target)
+                self.assertLess(tp, 2e-13)
+                self.assertLess(cov, 2e-13)
+                self.assertLess(abs(witness), 2e-13)
+                self.assertGreaterEqual(err, .5-2e-13)
+                max_tp=max(max_tp,tp);max_cov=max(max_cov,cov)
+                max_witness=max(max_witness,abs(witness))
+                rows.append(dict(symbol=old.SYMBOLS[symbol],time=float(t),
+                    witness_state_distance=err,normalized_choi_distance=td(j,j_target)))
+        OBS['fixed_cell_channels'] = dict(cases=rows,
+            max_trace_preservation_residual=max_tp,
+            max_complete_choi_covariance_residual=max_cov,
+            max_forbidden_witness_expectation=max_witness,
+            exact_all_resource_sizes_half_diamond_lower_bound='1/2',
+            finite_choi_distances_are_diagnostics_not_diamond_upper_bounds=True)
+
+    def test_03_coherent_auxiliary_is_a_real_scope_boundary(self):
+        h = program_zero_data_h3()
+        e, w = np.linalg.eigh(h)
+        t = np.pi/np.sqrt(2)
+        def state(a):
+            return np.kron(np.kron(ket(6, 0), ket(6, I_INDEX)), a)
+        def run(a):
+            x=state(a)
+            return w @ (np.exp(-1j*t*e)*(w.conj().T @ x))
+        plus=(ket(6,I_INDEX)+ket(6,T_INDEX))/np.sqrt(2)
+        target=np.outer(plus,plus.conj())
+        coherent=middle_program(run(plus))
+        classical=sum(middle_program(run(ket(6,s))) for s in (I_INDEX,T_INDEX))/2
+        full_target=np.kron(np.kron(ket(6,I_INDEX),plus),ket(6,0))
+        full_residual=float(np.linalg.norm(run(plus)+full_target))
+        self.assertLess(full_residual, 3e-13)
+        # An unknown old I/T program, including its reference, goes left.
+        # The middle cell receives the auxiliary plus state: this is not V.
+        input_columns=np.column_stack([
+            np.kron(np.kron(ket(6,0),ket(6,s)),plus)/np.sqrt(2)
+            for s in (I_INDEX,T_INDEX)])
+        expected_columns=np.column_stack([
+            np.kron(np.kron(ket(6,s),plus),ket(6,0))/np.sqrt(2)
+            for s in (I_INDEX,T_INDEX)])
+        actual_columns=w @ (np.exp(-1j*t*e)[:,None]*(w.conj().T @ input_columns))
+        reference_residual=float(np.linalg.norm(actual_columns+expected_columns))
+        self.assertLess(reference_residual,3e-13)
+        self.assertLess(td(coherent,target),3e-13)
+        self.assertAlmostEqual(td(classical,target),.5,places=12)
+        twirled=(np.outer(ket(6,I_INDEX),ket(6,I_INDEX))+
+                  np.outer(ket(6,T_INDEX),ket(6,T_INDEX)))/2
+        asym=td(target,twirled)
+        self.assertAlmostEqual(asym,.5,places=12)
+        OBS['same_rule_coherent_source_boundary']=dict(
+            physical_cells=3, all_zero_data_invariant_subspace_dimension=216,
+            time=float(t),full_state_residual=full_residual,
+            unknown_program_reference_transfer_residual=reference_residual,
+            coherent_preparation_error=td(coherent,target),
+            classical_mixture_preparation_error=td(classical,target),
+            auxiliary_twirl_distance=asym,
+            known_input_preparation_only=True,
+            old_unknown_program_moves_to_left_cell=True,
+            arbitrary_unknown_input_unitary_repair_proved=False,
+            coherent_source_generated_from_classical_programs=False)
+
+
+def run():
+    OBS.clear()
+    stream=io.StringIO()
+    result=unittest.TextTestRunner(stream=stream,verbosity=0).run(
+        unittest.defaultTestLoader.loadTestsFromTestCase(Audit))
+    if not result.wasSuccessful():
+        raise AssertionError(stream.getvalue())
+    return dict(date='2026-09-28',scientific_baseline_round=516,
+        numbered_round_created=False,numbered_scientific_test_increment=0,
+        diagnostic_tests=result.testsRun,failures=len(result.failures),errors=len(result.errors),
+        python=platform.python_version(),numpy=np.__version__,
+        dependency_sha256={name:hashlib.sha256((HERE/name).read_bytes()).hexdigest()
+            for name in ('complex_hqca_channel_audit.py','research_note_418.md',
+                         'research_note_420.md','research_note_421.md','research_note_422.md')},
+        scope=dict(full_cell_interface_explicitly_assumed=True,
+            arbitrary_length_time_symmetric_auxiliary_obstruction=True,
+            general_symmetry_tool_reused=True,mechanical_release_required=False,
+            all_cognitive_models_refuted=False,coherent_programs_ruled_out=False,
+            macro_three_dimensional_space_refuted=False,full_GR_goal_completed=False),
+        observations=OBS)
+
+
+if __name__=='__main__':
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--write-results',action='store_true')
+    args=parser.parse_args()
+    result=run()
+    if args.write_results:
+        with TARGET.open('x',encoding='utf8',newline='\n') as f:
+            f.write(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
+    print(json.dumps({k:result[k] for k in ('scientific_baseline_round',
+        'numbered_round_created','diagnostic_tests','failures','errors')}))

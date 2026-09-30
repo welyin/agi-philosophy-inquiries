@@ -1,0 +1,308 @@
+{
+  "round": 476,
+  "baseline_round": 474,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "observations": {
+    "complete_handoff_contract": {
+      "natural_channel": "E_s(u) E_r(t)",
+      "actual_U_Kraus_completeness_checked": true,
+      "arbitrary_graph_reference_channel_extension_checked": true,
+      "arbitrary_old_D_G_R_preserved_by_register_swap": true,
+      "old_data_are_isolated_internal_storage_not_physically_traced_away": true,
+      "fresh_eta_independent_of_old_data_graph_reference": true,
+      "same_port_labels_but_new_reference_carriers": true,
+      "storage_swap_source_preparation_clock_and_isolation_are_extra_inputs": true
+    },
+    "exact_mixed_coefficients": {
+      "distance": "D_03",
+      "centered_observable": "O=2*D_03-5*I, norm=1",
+      "data_state_raw_denominator": 64,
+      "graph_state_raw_denominator": 6,
+      "mixed_contraction_denominator_before_factorials": 49152,
+      "all_nonzero_mixed": [
+        {
+          "first_degree": 0,
+          "second_degree": 0,
+          "coefficient": "1/6"
+        },
+        {
+          "first_degree": 1,
+          "second_degree": 3,
+          "coefficient": "5/18"
+        },
+        {
+          "first_degree": 2,
+          "second_degree": 2,
+          "coefficient": "1/6"
+        },
+        {
+          "first_degree": 1,
+          "second_degree": 4,
+          "coefficient": "25/576"
+        },
+        {
+          "first_degree": 2,
+          "second_degree": 3,
+          "coefficient": "7/48"
+        },
+        {
+          "first_degree": 3,
+          "second_degree": 2,
+          "coefficient": "5/144"
+        },
+        {
+          "first_degree": 1,
+          "second_degree": 5,
+          "coefficient": "-781/720"
+        },
+        {
+          "first_degree": 2,
+          "second_degree": 4,
+          "coefficient": "-1427/1152"
+        },
+        {
+          "first_degree": 3,
+          "second_degree": 3,
+          "coefficient": "-14/9"
+        },
+        {
+          "first_degree": 4,
+          "second_degree": 2,
+          "coefficient": "-157/288"
+        },
+        {
+          "first_degree": 1,
+          "second_degree": 6,
+          "coefficient": "-2549/17280"
+        },
+        {
+          "first_degree": 2,
+          "second_degree": 5,
+          "coefficient": "-79/120"
+        },
+        {
+          "first_degree": 3,
+          "second_degree": 4,
+          "coefficient": "-901/1728"
+        },
+        {
+          "first_degree": 4,
+          "second_degree": 3,
+          "coefficient": "-575/1728"
+        },
+        {
+          "first_degree": 5,
+          "second_degree": 2,
+          "coefficient": "-107/2880"
+        },
+        {
+          "first_degree": 1,
+          "second_degree": 7,
+          "coefficient": "106979/60480"
+        },
+        {
+          "first_degree": 2,
+          "second_degree": 6,
+          "coefficient": "24947/8640"
+        },
+        {
+          "first_degree": 3,
+          "second_degree": 5,
+          "coefficient": "547/90"
+        },
+        {
+          "first_degree": 4,
+          "second_degree": 4,
+          "coefficient": "54073/13824"
+        },
+        {
+          "first_degree": 5,
+          "second_degree": 3,
+          "coefficient": "257/80"
+        },
+        {
+          "first_degree": 6,
+          "second_degree": 2,
+          "coefficient": "7559/8640"
+        }
+      ],
+      "equal_wait_coefficients": [
+        "1/6",
+        "0",
+        "0",
+        "0",
+        "4/9",
+        "43/192",
+        "-25483/5760",
+        "-29327/17280",
+        "9063731/483840"
+      ],
+      "continuous_2tau_coefficients": [
+        "1/6",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "constants_in_lists_are_D_minus_5_over_2": true,
+      "rigorous_Gaussian_integer_intermediate_bound": 11284439629824,
+      "below_exact_double_integer_limit": true,
+      "final_mixed_products_use_unbounded_Python_integers": true,
+      "time_even_symmetry_not_assumed": true
+    },
+    "strict_window": {
+      "equal_wait_window": [
+        "1/256",
+        "1/128"
+      ],
+      "repeated_distance_minus_initial_lower": "(2/5)*tau^4",
+      "repeated_distance_minus_initial_upper": "tau^4/2",
+      "whole_two_stage_Taylor_tail": "(36*tau)^9/[2*9!*(1-36*tau/10)]",
+      "normalized_high_order_polynomial_bound": "87477564689/43293270343680",
+      "normalized_tail_bound": "4782969/1141374976",
+      "continuous_without_handoff_distance_deviation_at_most_same_tail": true,
+      "repeated_minus_continuous_lower": "(3/8)*tau^4",
+      "uniform_repeated_initial_gap": "1/10737418240",
+      "uniform_protocol_comparison_gap": "3/34359738368",
+      "no_all_time_single_wait_theorem_imported": true
+    },
+    "actual_population_witnesses": {
+      "leaf_pair_order": [
+        "03",
+        "04",
+        "05",
+        "34",
+        "35",
+        "45"
+      ],
+      "rows": [
+        {
+          "wait": "1/128",
+          "first_leaf_means": [
+            2.6666666667,
+            2.6666666667,
+            2.6666666667,
+            2.6666666667,
+            2.6666666667,
+            2.6666666667
+          ],
+          "repeated_leaf_means": [
+            2.6666666683,
+            2.6666666683,
+            2.6666666634,
+            2.6666666634,
+            2.6666666683,
+            2.6666666683
+          ],
+          "uninterrupted_leaf_means": [
+            2.6666666667,
+            2.6666666667,
+            2.6666666667,
+            2.6666666667,
+            2.6666666667,
+            2.6666666667
+          ],
+          "repeated_minus_uninterrupted_D03": 1.6611938491e-09,
+          "three_split_class_probabilities": [
+            0.33333333167,
+            0.33333333168,
+            0.33333333664
+          ]
+        },
+        {
+          "wait": "1/5",
+          "first_leaf_means": [
+            2.6666666667,
+            2.6666666667,
+            2.6666666667,
+            2.6666666667,
+            2.6666666667,
+            2.6666666667
+          ],
+          "repeated_leaf_means": [
+            2.6671906582,
+            2.6670915314,
+            2.6657178104,
+            2.6657178104,
+            2.6670915314,
+            2.6671906582
+          ],
+          "uninterrupted_leaf_means": [
+            2.6666666667,
+            2.6666666667,
+            2.6666666667,
+            2.6666666667,
+            2.6666666667,
+            2.6666666667
+          ],
+          "repeated_minus_uninterrupted_D03": 0.00052399153421,
+          "three_split_class_probabilities": [
+            0.3328093418,
+            0.33290846861,
+            0.33428218959
+          ]
+        }
+      ],
+      "changed_shape_is_graph_population_not_only_phase": true,
+      "large_time_example_not_used_for_short_window_proof": true
+    },
+    "no_external_absolute_axis": {
+      "full_graph_channel_twirl_difference_norms": [
+        2.3087288374e-15,
+        3.4680954417e-15
+      ],
+      "each_batch_collective_SU2_twirl_preserves_E_analytically": true,
+      "independent_twirl_of_fresh_batches_keeps_composed_channel": true,
+      "relative_source_reference_preparations_and_label_identification_still_inputs": true,
+      "twirl_not_claimed_lossless_for_arbitrary_unknown_quantum_source": true
+    },
+    "actual_record_and_resource_budget": {
+      "actual_D03_at_two_waits_one_fifth": 2.6671906582,
+      "actual_two_path_instrument_estimate": 2.6671906755,
+      "diagnostic_probe_wait": "1/65536",
+      "exact_distance_identity": "D03=3-P013-P023",
+      "uniform_protocol_gap": "3/34359738368",
+      "per_protocol_error": "3/137438953472",
+      "source_first_handoff_and_natural_wait_full_process_budget": "3/137438953472",
+      "source_process_distance_error_at_most": "3/274877906944",
+      "per_protocol_readout_error": "3/274877906944",
+      "per_path_total_error": "3/549755813888",
+      "probe_wait": "1/10995116277760000",
+      "full_fixed_instrument_diamond_budget": "3/96714065569170333976494080000",
+      "control_only_budget": "3/193428131138340667952988160000",
+      "total_control_duration_budget": "3/9671406556917033397649408000000",
+      "copies_per_path_per_protocol": "27484287674330422904629072233778732468427527284731850459669429797885196515555555555555556",
+      "total_trials": "109937150697321691618516288935114929873710109138927401838677719191540786062222222222222224",
+      "remaining_protocol_gap": "3/68719476736",
+      "joint_failure_probability_at_most": "1/100",
+      "max_data_carriers_per_repeat_trial_before_other_ancillas": 24,
+      "handoff_and_readout_errors_are_full_reference_contracts": true,
+      "no_feedback_from_past_random_records_or_residual_controller_memory": true,
+      "old_carriers_records_and_controllers_remain_inside_total_system": true,
+      "natural_preparation_first_handoff_and_wait_errors_require_complete_process_contract": true,
+      "no_specific_autonomous_handoff_hardware_simulated": true,
+      "no_huge_repetition_experiment_or_autonomous_readout_implementation_claim": true
+    }
+  },
+  "scope": {
+    "specific_repeated_fresh_reference_protocol_changes_leaf_shape": true,
+    "original_fixed_H_during_each_natural_wait": true,
+    "ideal_storage_handoff_and_independent_fresh_batch_are_added_contracts": true,
+    "complete_old_quantum_information_retained_in_isolated_internal_memory": true,
+    "graph_partial_trace_is_only_reduced_description": true,
+    "not_a_counterexample_to_all_possible_reference_protocols": true,
+    "not_an_axiomatic_refutation_of_cognition_or_three_dimensional_space": true,
+    "position_not_required_to_predict_all_future_internal_information": true,
+    "physical_three_space_or_GR_derived": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

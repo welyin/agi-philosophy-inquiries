@@ -1,0 +1,201 @@
+{
+  "round": 490,
+  "scientific_baseline_round": 489,
+  "reused_frozen_rounds": [
+    442,
+    443,
+    465,
+    466,
+    472,
+    475,
+    478,
+    489
+  ],
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "observations": {
+    "algebra_audit": {
+      "graph_diagonal_distance_span_rank": 6,
+      "exact_nonzero_minor_rows": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        7
+      ],
+      "exact_minor_determinant": "12",
+      "graph_diagonal_commutator": "[H,I tensor f]=kappa I tensor [F,f]",
+      "graph_diagonal_points_are_whole_graph_configurations_not_subject_ports": true,
+      "graph_diagonal_ruler_ignores_J_and_data_transport": true,
+      "full_matrix_algebra_has_nontrivial_commutator_kernel": true,
+      "exact_two_energy_witnesses": [
+        9,
+        5
+      ],
+      "full_algebra_distance_between_these_states": "infinity",
+      "H_is_not_declared_to_be_a_geometric_Dirac_operator": true
+    },
+    "actual_port_interface": {
+      "full_dimension": 384,
+      "one_excitation_dimension": 36,
+      "exact_full_H_intertwining": true,
+      "identity_offset": "5J I",
+      "endpoint_algebra": "C^6, f mapped to diag(f) tensor I_G",
+      "effect_Ni_is_actual_local_excitation_readout": true,
+      "commutator_seminorm": "abs(J) max_g norm([A_g,diag(f)])",
+      "all_real_kappa_and_nonzero_J_covered": true,
+      "kappa_drops_out_exactly": true,
+      "zero_J_distinct_port_distance": "infinity",
+      "preparation_and_port_algebra_selection_are_explicit_inputs": true,
+      "old_data_saved_in_isolated_S_before_new_single_excitation_probe": true,
+      "G_S_R_correlations_retained_and_graph_not_reprepared_by_this_handoff": true
+    },
+    "three_exact_distances": {
+      "internal_leaf": "1/abs(J)",
+      "leaf_leaf": "sqrt(2)/abs(J)",
+      "internal_internal": "(sqrt(3)-1)/abs(J)",
+      "endpoint_swap_antisymmetrization_preserves_difference_and_never_increases_L": true,
+      "all_48_port_symmetries_preserve_six_graph_department": true,
+      "leaf_leaf_commutator_squared_norm_patterns": [
+        [
+          2,
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          1,
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          1,
+          2,
+          2,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          2,
+          2,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1,
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      ],
+      "internal_CstarC_annihilator": "m(m^2-8m+4I)=0; trace(m)=16",
+      "internal_commutator_norm_numeric": 2.73205080757,
+      "time_unit_not_length_without_additional_rate_calibration": true,
+      "no_optimization_scan_used": true
+    },
+    "finite_Euclidean_classification": {
+      "Gram_eigenvalues_at_J1": [
+        "0",
+        "1",
+        "1",
+        "1",
+        "2-sqrt(3)",
+        "(2sqrt(3)-3)/3"
+      ],
+      "exact_rational_plus_sqrt3_matrix_certificate": true,
+      "strict_positive_rank": 5,
+      "orthogonal_projector_ranks": [
+        3,
+        1,
+        1
+      ],
+      "explicit_R5_embedding_residual": 1.11022302463e-16,
+      "minimal_Euclidean_embedding_dimension_of_this_finite_ruler": 5,
+      "no_conclusion_universe_or_continuum_dimension_is_five": true,
+      "not_a_cognitive_or_three_dimensional_space_no_go": true,
+      "same_six_port_ruler_cannot_be_isometric_in_R3": true,
+      "any_R3_squared_distance_uniform_error_at_least": "(2-sqrt(3))/(3 J^2)",
+      "scaled_error_at_least": "a^2 (2-sqrt(3))/(3 J^2)",
+      "rank_three_Gram_obstruction_uses_fourth_largest_eigenvalue": true,
+      "fixed_smooth_three_dimensional_point_with_o_scale_length_error_excluded": true,
+      "finite_error_example_rational_margin": "1567/30000",
+      "five_dimensional_Euclidean_realization_not_excluded": true
+    },
+    "operational_speed_and_readout": {
+      "natural_evolution_bound": "T >= d(a,b)-diam(d)*epsilon for final port success >=1-epsilon",
+      "arbitrary_unknown_graph_and_old_reference_inputs_covered": true,
+      "controlled_bound": "T + integral(abs(u))/abs(J) >= d(a,b)-diam(d)*epsilon",
+      "graph_population_or_coherence_not_fixed_or_measured_by_bound": true,
+      "example_unknown_graph_reference_dimension": 3,
+      "time": "1/5",
+      "actual_local_excitation_populations": [
+        0.961573372193,
+        0.0200217280248,
+        0.0180159994945,
+        0.000161617799557,
+        0.000138495073497,
+        8.87874150474e-05
+      ],
+      "exact_internal_leaf_time_bound_at_epsilon_01": "at least 197/200 at abs(J)=1",
+      "per_port_probability_error": "1/1000",
+      "common_source_error": "1/4000",
+      "population_target_is_declared_exact_port_source_and_evolution": true,
+      "actual_source_error_counted_by_channel_contraction": true,
+      "complete_local_readout_channel_error": "1/4000",
+      "local_readout_control_only_error": "1/8000",
+      "local_readout_control_window": "1/144000",
+      "per_port_statistical_error": "1/2000",
+      "copies_per_port": "16000000",
+      "total_known_history_replays": "96000000",
+      "all_six_failure_probability_below": "1/100",
+      "local_readout_can_disturb_data_and_unknown_correlations": true,
+      "prior_information_saved_in_S_not_deleted": true,
+      "calibration_clock_fresh_probes_and_replay_sources_remain_inputs": true
+    },
+    "scope_and_scale_boundaries": {
+      "N2_exchange_spectral_ruler": "1/abs(J)",
+      "N2_first_perfect_transfer_time": "pi/(2abs(J))",
+      "N2_success_at_the_ruler_time": 0.708073418274,
+      "N2_is_only_same_family_boundary_not_six_tree_counterexample": true,
+      "no_six_tree_perfect_transfer_or_bound_saturation_claim": true,
+      "scalar_J_rescaling_changes_all_times_inversely": true,
+      "J_zero_all_distinct_ports_infinite_even_if_graph_F_evolves": true,
+      "current_graph_state_and_kappa_do_not_change_this_worst_state_port_ruler": true,
+      "no_direct_identification_with_488_state_dependent_Q_chart": true,
+      "converting_time_units_to_length_requires_additional_rate_standard": true
+    }
+  },
+  "scope": {
+    "port_algebra_and_one_excitation_preparation_are_extra_inputs": true,
+    "three_exact_spectral_port_distances_classified": true,
+    "finite_ruler_has_minimal_Euclidean_embedding_dimension_five": true,
+    "no_five_dimensional_physical_space_claim": true,
+    "spectral_speed_bound_is_not_minimal_transfer_time_or_free_length_measurement": true,
+    "no_Dirac_operator_or_Riemannian_reconstruction_from_H_claim": true,
+    "no_position_group_scale_limit_or_three_dimensional_necessity": true,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

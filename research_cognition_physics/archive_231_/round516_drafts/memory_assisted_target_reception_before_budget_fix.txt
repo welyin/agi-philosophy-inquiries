@@ -1,0 +1,236 @@
+"""Round 516: full local memory readout restores target reception under the same H.
+
+The finite contraction certificate uses integer Taylor coefficients and guarded
+fixed-point complex products. No floating eigenvalue is used as a proof bound.
+"""
+import argparse
+from fractions import Fraction as Q
+from functools import lru_cache
+import hashlib
+import io
+import json
+import math
+from pathlib import Path
+import platform
+import unittest
+import numpy as np
+import historical_membership_interface as old
+import written_target_dark_obstruction as source
+from distributed_role_reader import exponential, opnorm
+
+HERE=Path(__file__).resolve().parent
+TARGET=HERE/'memory_assisted_target_reception_results.json'
+S=2**24
+GRID=2**50
+STEPS=1024
+OBS={}
+LIMIT=np.iinfo(np.int64).max
+
+
+def upward(x):
+    return Q((x.numerator*GRID+x.denominator-1)//x.denominator,GRID)
+
+
+def maxabs(a):
+    return int(np.abs(a).max())
+
+
+def rounded(a, denominator):
+    assert maxabs(a)+denominator//2<LIMIT
+    return (a+denominator//2)//denominator
+
+
+def product(ar,ai,br,bi):
+    # Uniform entry bounds also apply to batched products and broadcasting.
+    bound=36*(maxabs(ar)*maxabs(br)+maxabs(ai)*maxabs(bi))
+    bound=max(bound,36*(maxabs(ar)*maxabs(bi)+maxabs(ai)*maxabs(br)))
+    assert bound+S//2<LIMIT
+    return rounded(ar@br-ai@bi,S),rounded(ar@bi+ai@br,S),bound
+
+
+@lru_cache(None)
+def fixed_unitaries():
+    a=old.model();den=8**24*math.factorial(24)
+    rr=[];ii=[]
+    for sign in a['signs']:
+        h=(a['h']+np.diag(np.repeat(sign,6))).astype(np.int64)
+        assert int(np.abs(h).sum(axis=1).max())<=11
+        power=np.eye(36,dtype=object)
+        real=np.zeros((36,36),dtype=object);imag=real.copy()
+        for k in range(25):
+            coef=den//(8**k*math.factorial(k))
+            if k%4==0:real+=coef*power
+            elif k%4==1:imag-=coef*power
+            elif k%4==2:real-=coef*power
+            else:imag+=coef*power
+            if k<24:power=power@h.astype(object)
+        rr.append(np.array((real*S+den//2)//den,dtype=np.int64))
+        ii.append(np.array((imag*S+den//2)//den,dtype=np.int64))
+    return np.array(rr),np.array(ii),den
+
+
+def error_certificate():
+    r=(Q(11,8)**25)/(math.factorial(25)*(1-Q(11,8*26)))
+    c=Q(36,S);delta=r+c;e=Q(0)
+    for _ in range(STEPS):
+        e=upward((1+delta)**2*e+delta*(2+delta)+c*(3+delta))
+    return r,c,delta,e
+
+
+@lru_cache(None)
+def contraction(target):
+    ur,ui,_=fixed_unitaries()
+    dr=ur.transpose(0,2,1);di=-ui.transpose(0,2,1)
+    er=np.eye(36,dtype=np.int64)*S;ei=np.zeros_like(er)
+    worst=0
+    for _ in range(STEPS):
+        er[target*6:(target+1)*6,:]=0;er[:,target*6:(target+1)*6]=0
+        ei[target*6:(target+1)*6,:]=0;ei[:,target*6:(target+1)*6]=0
+        br,bi,bound=product(dr,di,er,ei);worst=max(worst,bound)
+        cr,ci,bound=product(br,bi,ur,ui);worst=max(worst,bound)
+        assert 64*max(maxabs(cr),maxabs(ci))+32<LIMIT
+        er=rounded(cr.sum(axis=0),64);ei=rounded(ci.sum(axis=0),64)
+    absolute=np.abs(er)+np.abs(ei)
+    row=int(absolute.sum(axis=1).max());col=int(absolute.sum(axis=0).max())
+    return dict(target=target,steps=STEPS,max_integer_row_sum=row,
+        max_integer_column_sum=col,integer_row_column_limit=3*S//8,
+        max_guarded_dot_product_bound=worst,
+        final_real_sha256=hashlib.sha256(er.astype('<i8').tobytes()).hexdigest(),
+        final_imag_sha256=hashlib.sha256(ei.astype('<i8').tobytes()).hexdigest())
+
+
+class Audit(unittest.TestCase):
+    def test_01_same_H_role_covariance_and_connected_graphs(self):
+        a=old.model();lookup={tuple(sorted(t)):j for j,t in enumerate(a['trees'])}
+        for left,right in ((0,1),(2,3),(3,4),(4,5)):
+            p=list(range(6));p[left],p[right]=p[right],p[left]
+            gp=[lookup[tuple(sorted(tuple(sorted((p[x],p[y]))) for x,y in t))] for t in a['trees']]
+            action=np.array([p[v]*6+gp[j] for v in range(6) for j in range(6)])
+            self.assertTrue(np.array_equal(a['h'][action][:,action],a['h']))
+            self.assertEqual({tuple(s[p]) for s in a['signs']},{tuple(s) for s in a['signs']})
+        for tree in a['trees']:
+            seen={0}
+            while True:
+                grown=seen|{y for x,y in tree if x in seen}|{x for x,y in tree if y in seen}
+                if grown==seen:break
+                seen=grown
+            self.assertEqual(seen,set(range(6)))
+        self.assertLess(Q(22,8),Q(6))  # 6<2pi: elementary nonaliasing bound.
+        OBS['model']=dict(DG_dimension=36,memory_qubits=6,sign_sectors=64,
+            role_permutation_generators_checked=4,all_six_graphs_connected=True,
+            sampling_interval='1/8',spectral_width_times_interval_upper='11/4',
+            position_projection_from_sign_difference=True)
+
+    def test_02_complete_memory_instrument_and_reduced_failure_map(self):
+        a=old.model();blocks=old.history(Q(1,8))
+        us=np.array([exponential((a['h']+np.diag(np.repeat(s,6)))/8) for s in a['signs']])
+        rng=np.random.default_rng(516)
+        psi=rng.normal(size=(36,2))+1j*rng.normal(size=(36,2))
+        psi/=np.linalg.norm(psi)
+        # Preserve a two-dimensional passive reference in this one-step check.
+        left=sum(np.outer((k@psi).ravel(),(k@psi).ravel().conj()) for k in blocks)
+        right=sum(np.outer((u@psi).ravel(),(u@psi).ravel().conj()) for u in us)/64
+        self.assertLess(opnorm(left-right),1e-13)
+        self.assertLess(opnorm(sum(k.conj().T@k for k in blocks)-np.eye(36)),1e-13)
+        # A nonzero old memory string relabels outputs; it is not reset.
+        self.assertTrue(np.array_equal(np.sort(np.arange(64)^1),np.arange(64)))
+        OBS['instrument_identity']=dict(full_reference_dimension=2,
+            one_step_record_marginal_error=old.old.short(opnorm(left-right)),
+            record_increment_is_new_xor_old=True,complete_fine_records_retained=True,
+            random_signs_are_mathematical_representation_not_physical_preparation=True)
+
+    def test_03_integer_unitaries_and_rational_error_propagation(self):
+        ur,ui,den=fixed_unitaries();r,c,delta,e=error_certificate()
+        self.assertLess(e,Q(1,8))
+        self.assertEqual(e,Q(6198354385143,562949953421312))
+        a=old.model();error=0.
+        for s in (0,1,13,63):
+            exact=exponential((a['h']+np.diag(np.repeat(a['signs'][s],6)))/8)
+            error=max(error,opnorm((ur[s]+1j*ui[s])/S-exact))
+        self.assertLess(error,float(delta))
+        OBS['fixed_point_error']=dict(scale=S,error_grid=GRID,Taylor_degree=24,
+            exact_common_denominator=str(den),Taylor_tail=str(r),matrix_rounding_bound=str(c),
+            unitary_error_bound=str(delta),steps=STEPS,final_error=str(e),
+            independent_unitary_numeric_error=old.old.short(error),
+            recurrence='up[(1+delta)^2 e + delta(2+delta) + c(3+delta)]',
+            integer_real_sha256=hashlib.sha256(ur.astype('<i8').tobytes()).hexdigest(),
+            integer_imag_sha256=hashlib.sha256(ui.astype('<i8').tobytes()).hexdigest())
+
+    def test_04_both_role_targets_finite_contraction_certificates(self):
+        cases=[]
+        for target in (0,2):
+            cert=contraction(target)
+            self.assertLessEqual(cert['max_integer_row_sum'],cert['integer_row_column_limit'])
+            self.assertLessEqual(cert['max_integer_column_sum'],cert['integer_row_column_limit'])
+            self.assertLess(cert['max_guarded_dot_product_bound'],LIMIT)
+            cases.append(cert)
+        self.assertLess(Q(3,8)+error_certificate()[-1],Q(1,2))
+        OBS['finite_contraction']=dict(cases=cases,all_six_targets_by_role_covariance=True,
+            block_survival_operator_upper='1/2',arbitrary_DG_reference_input=True,
+            numerical_eigenvalues_not_used_as_certificates=True)
+
+    def test_05_actual_515_source_and_full_finite_first_arrival_history(self):
+        a=old.model();_,psi,_=source.actual_source()
+        rho=np.outer(psi,psi.conj())
+        us=np.array([exponential((a['h']+np.diag(np.repeat(s,6)))/8) for s in a['signs']])
+        arrivals=[]
+        for _ in range(STEPS):
+            advanced=(us@rho@us.conj().transpose(0,2,1)).mean(axis=0)
+            arrivals.append(float(np.trace(advanced[:6,:6]).real))
+            advanced[:6,:]=0;advanced[:,:6]=0;rho=advanced
+        remaining=float(np.trace(rho).real)
+        self.assertLess(remaining,0.5)
+        self.assertLess(remaining,1/9)
+        self.assertAlmostEqual(sum(arrivals)+remaining,1,places=11)
+        OBS['actual_source_reception']=dict(source_round=515,target=0,cycles=STEPS,
+            all_first_arrival_probabilities=[old.old.short(v) for v in arrivals],
+            timeout=old.old.short(remaining),
+            actual_record_source_used=True,source_reset_between_cycles=False,
+            fine_memory_records_summed_only_for_this_probability_diagnostic=True)
+
+    def test_06_finite_resources_and_complete_error_budget(self):
+        blocks=20;cycles=blocks*STEPS;eta=Q(1,2**30)
+        self.assertLess(Q(1,2**blocks)+cycles*eta/2,Q(1,100000))
+        source_lower=source.T**6/144
+        joint=source_lower*(1-Q(1,2**blocks))
+        self.assertGreater(joint,0)
+        OBS['resource_contract']=dict(blocks=blocks,cycles=cycles,
+            waiting_time_upper=str(Q(cycles,8)),memory_Z_record_bits=6*cycles,
+            target_outcome_record_bits=cycles,
+            initial_memory_reading_additionally_required_for_arbitrary_coherent_memory=True,
+            per_cycle_diamond_eta_example=str(eta),
+            timeout_upper_with_errors=str(Q(1,2**blocks)+cycles*eta/2),
+            source_and_arrival_joint_lower=str(joint),
+            mean_ideal_detection_cycles_upper=2*STEPS,
+            ideal_detector_resources_are_declared_inputs=True,
+            instrument_error_example_not_claimed_implemented=True)
+
+
+def run():
+    OBS.clear();stream=io.StringIO()
+    result=unittest.TextTestRunner(stream=stream,verbosity=0).run(
+        unittest.defaultTestLoader.loadTestsFromTestCase(Audit))
+    if not result.wasSuccessful():raise AssertionError(stream.getvalue())
+    return dict(date='2026-09-28',round=516,scientific_base_through_round=515,
+        tests_run=result.testsRun,failures=len(result.failures),errors=len(result.errors),
+        python=platform.python_version(),numpy=np.__version__,
+        dependency_sha256={name:hashlib.sha256((HERE/name).read_bytes()).hexdigest() for name in (
+            'historical_membership_interface.py','written_target_dark_obstruction.py',
+            'distributed_role_reader.py','research_note_493.md','research_note_514.md','research_note_515.md')},
+        scope=dict(same_H_source_and_reception=True,finite_all_input_target_bound_proved=True,
+            complete_memory_monitoring_and_target_detection_required=True,
+            no_graph_or_memory_reset_between_cycles=True,
+            full_quantum_environment_same_reduced_channel_claimed=False,
+            all_network_sizes_numerically_certified=False,
+            autonomous_readout_and_clock_generated=False,stable_macroscopic_position_generated=False,
+            dimension_three_generated=False,full_GR_goal_completed=False),observations=OBS)
+
+
+if __name__=='__main__':
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--write-results',action='store_true')
+    args=parser.parse_args();result=run()
+    if args.write_results:
+        with TARGET.open('x',encoding='utf8',newline='\n') as f:
+            f.write(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
+    print(json.dumps({key:result[key] for key in ('round','tests_run','failures','errors')},ensure_ascii=False))

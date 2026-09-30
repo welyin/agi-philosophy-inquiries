@@ -1,0 +1,144 @@
+{
+  "round": 505,
+  "scientific_baseline_round": 504,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "dependency_sha256": {
+    "coherent_graph_mean_obstruction.py": "b0fa8674b172c8dc1b949c4386bc132af209708b32a7b0269406e0241f6431cc",
+    "role_covariant_graph_obstruction.py": "95ae9978e96a409fe6a0e5714cff96b73913bf07782ceae5516bd4154295728a",
+    "branching_tree_distance_audit.py": "3b69018a14093d1d8e335682745a072551e91541114b0b70cf5e468aa80465c1",
+    "research_note_496.md": "d0039ea3cd2cc877510781d874c100a627fe4fbd8cfadd85be7b21480c5c96e2"
+  },
+  "scope": {
+    "common_graph_independent_subspaces_classified": true,
+    "all_graphs_retained_in_exact_contract": true,
+    "I2_exception_retained": true,
+    "two_role_fixed_time_uniform_size_gap": true,
+    "uniform_population_source_can_have_graph_reference_correlations": true,
+    "collective_source_preparation_derived": false,
+    "all_approximate_codes_excluded": false,
+    "dimension_three_generated": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  },
+  "observations": {
+    "nni_witnesses": {
+      "exact_integer_identities": 16,
+      "I_values": [
+        2,
+        3,
+        4,
+        7
+      ]
+    },
+    "finite_common_commutants": [
+      {
+        "I": 2,
+        "trees": 6,
+        "prime": 1000003,
+        "modular_constraint_rank": 33,
+        "exact_characteristic_zero_commutant_dimension": 3,
+        "rational_kernel_witnesses": [
+          "identity",
+          "all_ones",
+          "role_outer_product"
+        ]
+      },
+      {
+        "I": 3,
+        "trees": 90,
+        "prime": 1000003,
+        "modular_constraint_rank": 62,
+        "exact_characteristic_zero_commutant_dimension": 2,
+        "rational_kernel_witnesses": [
+          "identity",
+          "all_ones"
+        ]
+      }
+    ],
+    "algebra_generators": [
+      {
+        "I": 2,
+        "cross_matrix_units_exact": true,
+        "role_couples_to_zero_sum_space": false
+      },
+      {
+        "I": 3,
+        "cross_matrix_units_exact": true,
+        "role_couples_to_zero_sum_space": true
+      },
+      {
+        "I": 4,
+        "cross_matrix_units_exact": true,
+        "role_couples_to_zero_sum_space": true
+      }
+    ],
+    "ensemble_moments": [
+      {
+        "I": 2,
+        "trees": 6,
+        "first_order_internal_norm_squared": "2",
+        "compressed_coefficient": "2",
+        "leakage_coefficient": "0",
+        "specified_double_parent_probability": "1/6",
+        "all_graph_compressions_equal": true
+      },
+      {
+        "I": 3,
+        "trees": 90,
+        "first_order_internal_norm_squared": "9/5",
+        "compressed_coefficient": "5/3",
+        "leakage_coefficient": "2/15",
+        "specified_double_parent_probability": "1/15",
+        "all_graph_compressions_equal": true
+      },
+      {
+        "I": 4,
+        "trees": 2520,
+        "first_order_internal_norm_squared": "12/7",
+        "compressed_coefficient": "3/2",
+        "leakage_coefficient": "3/14",
+        "specified_double_parent_probability": "1/28",
+        "all_graph_compressions_equal": true
+      }
+    ],
+    "probability_certificate": {
+      "time_max": "1/4096",
+      "rigorous_factor": "83/960",
+      "conservative_gap_at_time_max": "1/268435456",
+      "all_I_at_least_3": true,
+      "diagnostics": [
+        {
+          "I": 3,
+          "time": "1/4096",
+          "actual_internal_probability": 1.07288351477e-07,
+          "two_role_probability": 9.93410711168e-08,
+          "probability_gap": 7.94728036027e-09,
+          "rigorous_gap_floor": "1/268435456",
+          "numerical_tail_bound": "232630513987207/2042177130347688217587807465841723163378375587065259351683632144871974554828800"
+        },
+        {
+          "I": 3,
+          "time": "1/8192",
+          "actual_internal_probability": 2.6822089579e-08,
+          "two_role_probability": 2.48352684371e-08,
+          "probability_gap": 1.9868211419e-09,
+          "rigorous_gap_floor": "1/1073741824",
+          "numerical_tail_bound": "232630513987207/1070780468489259516227383732651378683032753533905237179663624123388821987824710451200"
+        }
+      ]
+    },
+    "interface": {
+      "I2_full_unknown_graph_intertwining_exact": true,
+      "graph_reference_retained": true,
+      "passive_reference_residual": 1.06682035121e-16,
+      "all_port_outcomes_retained": true,
+      "actual_internal_probability": 1.07288354793e-07,
+      "reference_dimension": 90,
+      "graph_measured_or_reset": false
+    }
+  }
+}

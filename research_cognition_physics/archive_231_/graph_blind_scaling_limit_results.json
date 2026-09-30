@@ -1,0 +1,226 @@
+{
+  "round": 496,
+  "scientific_baseline_round": 494,
+  "reused_frozen_rounds": [
+    442,
+    465,
+    490,
+    491,
+    492
+  ],
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "dependency_results_sha256": {
+    "fast_graph_average_port_process_results.json": "9b34abdb4f490430326d7f552a4f124a66f5ff2b9f80ee7fdb47a098be5d45d2",
+    "relational_propagation_bound_audit_results.json": "8520a6e3d2c4b64136110eadd4aa8e8c689d21952f5474d2d0412fc4ac8fdf9f",
+    "repeated_port_record_slow_modes_results.json": "55be67b353f18e36f5dd7e2f184e6cf5ec7a31b614ce3383289e1c59b470018e"
+  },
+  "observations": {
+    "weighted_complete_reader_bridge": {
+      "exact_commutations_checked": 36,
+      "isometry_identity": "sum_c (P_c W U W^-1)^dagger(P_c W U W^-1)=(W U W^-1)^dagger(W U W^-1)",
+      "all_reader_histories_retained_in_proof": true,
+      "tail_uses_initial_fixed_graph_distance": true,
+      "repeat_bound": "exp(B*n*delta), B=41/4",
+      "diagnostic_steps": 4,
+      "diagnostic_delta": "1/256",
+      "diagnostic_passive_reference_error": 6.10664590235e-16,
+      "diagnostic_populations": [
+        0.999938969669,
+        4.76196146871e-05,
+        1.34090866451e-05,
+        6.78176482128e-10,
+        5.16369080644e-10,
+        4.35472117379e-10
+      ],
+      "reduced_state_computation_is_not_physical_record_erasure": true
+    },
+    "uniform_step_certificate": {
+      "general_active_NNI_count_per_vertex": 24,
+      "changed_adjacency_entries_per_flip": 2,
+      "general_commutator_operator_bound": 48,
+      "small_exhaustive_checks": [
+        {
+          "vertices": 6,
+          "graphs": 6,
+          "maximum_touched_flips": 4,
+          "maximum_commutator_row_sum": 8
+        },
+        {
+          "vertices": 8,
+          "graphs": 90,
+          "maximum_touched_flips": 8,
+          "maximum_commutator_row_sum": 16
+        }
+      ],
+      "interaction_generator_norm_at_most": 6,
+      "maximal_delta": "1/256",
+      "second_order_remainder_coefficient": "5352/127",
+      "adopted_remainder_coefficient": 48,
+      "leaf_to_internal_probability_coefficient_at_least": "169/256",
+      "internal_to_leaf_probability_coefficient_at_most": "729/256",
+      "internal_to_leaf_first_order_amplitude": "sqrt(2), not sqrt(3)",
+      "diagnostic_interaction_picture_remainder": 0.000169634379418,
+      "no_full_F_norm_used_in_uniform_short_step_bound": true
+    },
+    "population_lower_bound": {
+      "actual_graph_and_passive_reference_arbitrary": true,
+      "old_readers_may_be_conditionally_correlated_with_graph": true,
+      "bound_is_for_unconditional_population_after_summing_new_outcomes": true,
+      "lower_recursion": "p_(k+1)>=(1-7*delta^2/2)*p_k+delta^2/2",
+      "lower_after_n": "(1-exp(-7*n*delta^2/2))/7",
+      "fixed_tau": "1/4",
+      "fixed_lower_bound": "strictly greater than 1/14",
+      "exp_7_over_8_rational_lower": "289/128",
+      "finite_operator_diagnostic": [
+        {
+          "port": 0,
+          "minimum": 1.52581487953e-05,
+          "maximum": 1.52586144411e-05
+        },
+        {
+          "port": 1,
+          "minimum": 3.05167632293e-05,
+          "maximum": 3.05172288806e-05
+        },
+        {
+          "port": 2,
+          "minimum": 3.05167632293e-05,
+          "maximum": 3.05172288806e-05
+        },
+        {
+          "port": 3,
+          "minimum": 1.52581487953e-05,
+          "maximum": 1.52586144411e-05
+        },
+        {
+          "port": 4,
+          "minimum": 1.52581487953e-05,
+          "maximum": 1.52586144411e-05
+        },
+        {
+          "port": 5,
+          "minimum": 1.52581487953e-05,
+          "maximum": 1.52586144411e-05
+        }
+      ]
+    },
+    "initial_comb_tail_and_target": {
+      "examples": [
+        {
+          "internal_nodes": 2,
+          "total_vertices": 6,
+          "internal_distances": [
+            1,
+            2
+          ]
+        },
+        {
+          "internal_nodes": 3,
+          "total_vertices": 8,
+          "internal_distances": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "internal_nodes": 17,
+          "total_vertices": 36,
+          "internal_distances": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        }
+      ],
+      "initial_internal_vertex_j_distance_from_source_leaf": "j",
+      "internal_outside_first_R_probability_at_most": "exp(2*B*T)/(R+1)",
+      "no_exponential_sphere_count_used": true,
+      "mean_generator_internal_mass": "(1-exp(-(2+2/I)*tau))/(2+2/I)",
+      "mean_target_lower_I_at_least_3": "3*(1-exp(-2*tau))/8",
+      "mean_target_lower_at_tau_quarter": "strictly greater than 1/8",
+      "arbitrary_graph_blind_target_need_not_be_covariant": true,
+      "target_minimum_mass_R_internal_labels_at_most": "R/I",
+      "relabeling_source_and_detector_preserves_original_H_and_readout": true
+    },
+    "finite_worst_case_witness": {
+      "delta": "1/256",
+      "port_instrument_calls": 16384,
+      "coarse_parameter": "1/4",
+      "original_H_waiting_time": "64",
+      "B": "41/4",
+      "twice_B_T": 1312,
+      "proof_only_near_set_cardinality": "5386097604032095472920534920280527605109221859400610022651596364577705324923084702524959265947319802873399703203763779776178852199928771848182527637961184354761509895691356624656673406542808153366555973277323584803931709930220211269824701195700045499032604555497501836705562550976050334540923893338172766152891945426929970347563624570347939274590732217183413023171662616894561248879768572053498042242756529680496462254588986579694145079358607113642374704001738502295918155056394036312185869342992985707029288615780952168587165818901466022111256685309869830436071382669814964796915899145935548382962091990941413754627103640816696",
+      "internal_nodes": "301621465825797346483549955535709545886116424126434161268489396416351498195692743341397718893049908960910383379410771667466015723196011223498221547725826323866644554158715970980773710766397256588527134503530120749020175756092331831110183266959202547945825855107860102855511502854658818734291738026937674904561948943908078339463562975939484599377081004162271129297613106546095429937267040034995890365594365662107801886256983248462872124444081998363972983424097356128571416683158066033482408683207607199593640162483733321440881285858482097238230374377352710504419997429509638028627290352172390709445877151492719170259117803885734976",
+      "total_vertices": "603242931651594692967099911071419091772232848252868322536978792832702996391385486682795437786099817921820766758821543334932031446392022446996443095451652647733289108317431941961547421532794513177054269007060241498040351512184663662220366533918405095891651710215720205711023005709317637468583476053875349809123897887816156678927125951878969198754162008324542258595226213092190859874534080069991780731188731324215603772513966496925744248888163996727945966848194712257142833366316132066964817366415214399187280324967466642881762571716964194476460748754705421008839994859019276057254580704344781418891754302985438340518235607771469954",
+      "exact_definitions": {
+        "R": "56*3^1312",
+        "I": "56*R"
+      },
+      "far_probability_strictly_less_than": "1/56",
+      "any_graph_blind_target_worst_TV_strictly_greater_than": "1/28",
+      "uniform_mean_semigroup_TV_strictly_greater_than": "47/448",
+      "two_actual_relabelled_comb_source_event_gap_strictly_greater_than": "1/28",
+      "R_is_only_a_proof_event_not_a_physical_threshold": true,
+      "huge_graph_or_Hilbert_space_not_constructed": true,
+      "time_cost_bound": "TV>=q0-exp(2BT)/(R+1)-R/I; choose R=floor(I*q0/4)",
+      "no_claim_bound_or_schedule_is_optimal": true
+    },
+    "actual_readout_and_resources": {
+      "event": "reported endpoint label belongs to S",
+      "two_real_source_preparations": "same leaf port; two role-relabelled comb graph basis states",
+      "each_trial_source_trace_error": "1/448",
+      "each_complete_instrument_ordinary_diamond_error": "1/7340032",
+      "total_ordinary_process_error_per_trial": "1/224",
+      "event_probability_error_per_trial": "1/448",
+      "independent_repetitions_per_source": 401408,
+      "statistics_each_event_accuracy": "1/224",
+      "joint_failure_probability_below": "1/100",
+      "certified_empirical_event_gap_above": "5/224",
+      "independent_full_trial_sources_are_explicit_inputs": true,
+      "port_reader_alphabet_size": "603242931651594692967099911071419091772232848252868322536978792832702996391385486682795437786099817921820766758821543334932031446392022446996443095451652647733289108317431941961547421532794513177054269007060241498040351512184663662220366533918405095891651710215720205711023005709317637468583476053875349809123897887816156678927125951878969198754162008324542258595226213092190859874534080069991780731188731324215603772513966496925744248888163996727945966848194712257142833366316132066964817366415214399187280324967466642881762571716964194476460748754705421008839994859019276057254580704344781418891754302985438340518235607771469954",
+      "record_qubits_per_reader": 2093,
+      "record_encoding_capacity_qubits_per_trial": 34291712,
+      "total_record_encoding_capacity_qubits_two_batches": 27529935060992,
+      "encoding_capacity_is_not_full_detector_clock_control_or_network_cost": true,
+      "natural_wait_per_trial": "64",
+      "reading_control_routing_and_preparation_times_are_additional": true,
+      "finite_reading_duration_is_included_in_complete_instrument_error": true,
+      "diagonal_occupation_reader_H_commutes_with_W_b_but_duration_adds_to_T": true,
+      "total_physical_time_and_all_hardware_cost_not_claimed_fixed": true,
+      "all_unknown_information_kept_in_the_reader_isometry": true,
+      "no_hidden_reader_feedback_or_postselection": true,
+      "no_actual_massive_network_preparation_or_statistical_run": true
+    }
+  },
+  "scope": {
+    "fixed_original_H_waiting_and_port_instrument_call_count": true,
+    "arbitrary_graph_blind_target_worst_error_nonvanishing_across_scale": true,
+    "only_one_excitation_sector_and_declared_port_Luders_interface": true,
+    "pure_graph_sources_already_suffice_for_lower_bound": true,
+    "large_size_and_fast_measurement_limits_not_interchanged": true,
+    "size_dependent_waiting_or_new_controls_not_excluded": true,
+    "graph_dependent_geometry_not_refuted": true,
+    "no_spatial_dimension_or_cognitive_principle_no_go": true,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  }
+}

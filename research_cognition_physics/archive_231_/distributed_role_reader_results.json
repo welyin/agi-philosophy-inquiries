@@ -1,0 +1,178 @@
+{
+  "round": 507,
+  "scientific_baseline_round": 506,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "dependency_sha256": {
+    "coherent_graph_mean_obstruction.py": "b0fa8674b172c8dc1b949c4386bc132af209708b32a7b0269406e0241f6431cc",
+    "joint_orbit_port_interface.py": "9fb1e0b14a98aad2a8afe5e846c1728a872c4cef313d94c5bbc6acf70c2488f7",
+    "role_covariant_graph_obstruction.py": "95ae9978e96a409fe6a0e5714cff96b73913bf07782ceae5516bd4154295728a",
+    "branching_tree_distance_audit.py": "3b69018a14093d1d8e335682745a072551e91541114b0b70cf5e468aa80465c1",
+    "research_note_506.md": "33524fe212e207cea500bbc70625d2f066d272add12372199ebe38b6c891addd"
+  },
+  "scope": {
+    "original_h_continues_during_read": true,
+    "local_occupation_reader_model_explicit": true,
+    "exact_joint_code_preservation_at_finite_duration": true,
+    "size_uniform_full_instrument_error": true,
+    "arbitrary_reference_in_single_excitation_sector": true,
+    "finite_history_error_control": true,
+    "global_cat_source_derived": false,
+    "autonomous_timing_derived": false,
+    "pure_original_swap_only_implementation": false,
+    "exact_ideal_read_claimed_at_finite_duration": false,
+    "dimension_three_generated": false,
+    "full_GR_goal_completed": false,
+    "phase_closure_triggered": false
+  },
+  "observations": {
+    "local_tensor": {
+      "DG_dimension": 36,
+      "meter_qubits": 6,
+      "expanded_dimension": 2304,
+      "cat_sector_dimension": 72,
+      "integer_intertwining_exact": true,
+      "original_h_left_on": true,
+      "interaction_two_body_given_local_role": true
+    },
+    "uniform_commutator": [
+      {
+        "I": 2,
+        "trees": 6,
+        "incidence_gram_diagonal": true,
+        "commutator_norm_squared_exact": 2
+      },
+      {
+        "I": 3,
+        "trees": 90,
+        "incidence_gram_diagonal": true,
+        "commutator_norm_squared_exact": 2
+      },
+      {
+        "I": 4,
+        "trees": 2520,
+        "incidence_gram_diagonal": true,
+        "commutator_norm_squared_exact": 2
+      }
+    ],
+    "complete_meter_instrument": {
+      "meter_strings": 256,
+      "all_fine_results_proportional_to_parity_branch": true,
+      "full_unknown_code_columns_checked": true,
+      "full_code_intertwining_residual": 1.42036821477e-15,
+      "graph_measured": false,
+      "postselected": false
+    },
+    "error_and_histories": {
+      "cases": [
+        {
+          "I": 2,
+          "tau": "1/8",
+          "dilation_error": 0.14930940482,
+          "ordinary_diamond_upper": 0.392699081699,
+          "normalized_choi_trace_distance": 0.297616201051
+        },
+        {
+          "I": 2,
+          "tau": "1/32",
+          "dilation_error": 0.0371426069363,
+          "ordinary_diamond_upper": 0.0981747704247,
+          "normalized_choi_trace_distance": 0.0742697836548
+        },
+        {
+          "I": 2,
+          "tau": "1/128",
+          "dilation_error": 0.00926780865766,
+          "ordinary_diamond_upper": 0.0245436926062,
+          "normalized_choi_trace_distance": 0.0185353775079
+        },
+        {
+          "I": 3,
+          "tau": "1/8",
+          "dilation_error": 0.150162811347,
+          "ordinary_diamond_upper": 0.392699081699,
+          "normalized_choi_trace_distance": 0.256618977018
+        },
+        {
+          "I": 3,
+          "tau": "1/32",
+          "dilation_error": 0.0372365232068,
+          "ordinary_diamond_upper": 0.0981747704247,
+          "normalized_choi_trace_distance": 0.064256705793
+        },
+        {
+          "I": 3,
+          "tau": "1/128",
+          "dilation_error": 0.00927426228075,
+          "ordinary_diamond_upper": 0.0245436926062,
+          "normalized_choi_trace_distance": 0.0160482542995
+        },
+        {
+          "I": 4,
+          "tau": "1/8",
+          "dilation_error": 0.15072666072,
+          "ordinary_diamond_upper": 0.392699081699,
+          "normalized_choi_trace_distance": 0.25160076856
+        },
+        {
+          "I": 4,
+          "tau": "1/32",
+          "dilation_error": 0.0372447299846,
+          "ordinary_diamond_upper": 0.0981747704247,
+          "normalized_choi_trace_distance": 0.0626742649517
+        },
+        {
+          "I": 4,
+          "tau": "1/128",
+          "dilation_error": 0.00927438701218,
+          "ordinary_diamond_upper": 0.0245436926062,
+          "normalized_choi_trace_distance": 0.0156294295176
+        }
+      ],
+      "adaptive_history_count": 8,
+      "full_history_choi_trace_distance": 0.0578338072414,
+      "full_history_diamond_upper": 0.294524311274,
+      "unknown_reference_covered_by_dilation_proof": true
+    },
+    "source_boundary": {
+      "same_meter_computational_populations": true,
+      "classical_cat_parity_probability_all_inputs": "1/2",
+      "classical_cat_role_information": false,
+      "full_meter_string_probability_all_inputs": "2^-N",
+      "no_fault_tolerance_claim": true
+    },
+    "resources_and_noise": {
+      "noisy_full_DG_choi_trace_distance": 0.0705637899665,
+      "complete_noise_diamond_upper": 0.125987270425,
+      "global_cat_trace_error": "1/50",
+      "maximum_local_coupling_error": "1/8",
+      "budgets": [
+        {
+          "I": 2,
+          "reads": 1,
+          "target_error": "1/100",
+          "duration_per_read": "1/400",
+          "coupling_g_over_pi": "400",
+          "fresh_meter_qubits": 6,
+          "record_bits": 6,
+          "parity_xor_count": 5
+        },
+        {
+          "I": 20,
+          "reads": 10,
+          "target_error": "1/1000",
+          "duration_per_read": "1/40000",
+          "coupling_g_over_pi": "40000",
+          "fresh_meter_qubits": 420,
+          "record_bits": 420,
+          "parity_xor_count": 410
+        }
+      ],
+      "source_preparation_and_timing_still_inputs": true,
+      "energy_dissipation_lower_bound_claimed": false
+    }
+  }
+}
