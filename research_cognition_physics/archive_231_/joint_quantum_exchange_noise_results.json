@@ -1,0 +1,272 @@
+{
+  "round": 620,
+  "tests_run": 3,
+  "failures": 0,
+  "errors": 0,
+  "frame_sources": {
+    "rows": [
+      {
+        "s": 0.545863690226873,
+        "F": 1.8765364152074429,
+        "same_state_BdG_dimension": 64,
+        "Einstein_source_covariance": [
+          [
+            0.8057734005929975,
+            0.0707869180493251
+          ],
+          [
+            0.0707869180493251,
+            0.056513700267848126
+          ]
+        ],
+        "Jordan_source_covariance": [
+          [
+            1.5120631286182944,
+            0.023661610534094123
+          ],
+          [
+            0.023661610534094116,
+            0.05066536382403947
+          ]
+        ],
+        "source_jacobian": [
+          [
+            1.3698672983933309,
+            0.0
+          ],
+          [
+            -0.06641320791523593,
+            1.0
+          ]
+        ],
+        "covariance_pullback_error": 3.469446951953614e-17,
+        "direct_mass_derivative_error": 5.7219513457046735e-12,
+        "omitted_mixed_contribution": -0.00940237261217719,
+        "independent_source_prediction": 0.06006773643621665,
+        "correct_Jordan_scalar_variance": 0.05066536382403947,
+        "spurious_charged_source_norm": 7.152448122690996e-18
+      },
+      {
+        "s": 0.9,
+        "F": 1.7911976099254594,
+        "same_state_BdG_dimension": 64,
+        "Einstein_source_covariance": [
+          [
+            0.8537628187901226,
+            0.12341969951500499
+          ],
+          [
+            0.12341969951500498,
+            0.06526475928733727
+          ]
+        ],
+        "Jordan_source_covariance": [
+          [
+            1.5292579204600911,
+            0.03711511068620839
+          ],
+          [
+            0.037115110686208395,
+            0.04832402842632239
+          ]
+        ],
+        "source_jacobian": [
+          [
+            1.3383563090318884,
+            0.0
+          ],
+          [
+            -0.11207777703719557,
+            1.0
+          ]
+        ],
+        "covariance_pullback_error": 4.440892098500626e-16,
+        "direct_mass_derivative_error": 5.721958498152796e-12,
+        "omitted_mixed_contribution": -0.027665211128480808,
+        "independent_source_prediction": 0.07598923955480322,
+        "correct_Jordan_scalar_variance": 0.04832402842632239,
+        "spurious_charged_source_norm": 1.788112030672749e-18
+      },
+      {
+        "s": 1.55,
+        "F": 1.5257809432587928,
+        "same_state_BdG_dimension": 64,
+        "Einstein_source_covariance": [
+          [
+            1.0303759499747547,
+            0.26002504136372134
+          ],
+          [
+            0.2600250413637214,
+            0.10561984171763464
+          ]
+        ],
+        "Jordan_source_covariance": [
+          [
+            1.572127988863656,
+            0.055008992987818375
+          ],
+          [
+            0.055008992987818375,
+            0.04192485499177523
+          ]
+        ],
+        "source_jacobian": [
+          [
+            1.2352250577359547,
+            0.0
+          ],
+          [
+            -0.20913867615900925,
+            1.0
+          ]
+        ],
+        "covariance_pullback_error": 2.220446049250313e-16,
+        "direct_mass_derivative_error": 5.721958498152796e-12,
+        "omitted_mixed_contribution": -0.10876258583800061,
+        "independent_source_prediction": 0.1506874408297758,
+        "correct_Jordan_scalar_variance": 0.04192485499177523,
+        "spurious_charged_source_norm": 1.734723475976807e-18
+      }
+    ],
+    "all_32_original_modes_retained": true,
+    "state_held_identical_under_parameter_pullback": true
+  },
+  "driven_exchange": {
+    "path": {
+      "s_initial": 0.545863690226873,
+      "amplitude": 0.28,
+      "frequency": 0.7,
+      "duration": 2.3
+    },
+    "initial_beta": 2.0,
+    "rows": [
+      {
+        "steps": 64,
+        "operator_balance_error": 1.844211758912807e-06,
+        "energy_change": -0.050676476954413956,
+        "integrated_scalar_work": -0.050678567121279286,
+        "exchange_noise": [
+          [
+            0.0026031679097439724,
+            0.0026032614107853774
+          ],
+          [
+            0.002603261410785378,
+            0.0026033549175945845
+          ]
+        ],
+        "joint_constraint_variance": 5.767801639860607e-12,
+        "independent_noise_constraint_variance": 0.005206522827338557,
+        "noncommuting_mass_source_norm": 0.04780363720006384,
+        "full_joint_covariance_min_eigenvalue": 2.343878985778053e-13
+      },
+      {
+        "steps": 128,
+        "operator_balance_error": 4.610354741667652e-07,
+        "energy_change": -0.050676455794395954,
+        "integrated_scalar_work": -0.050676978318179675,
+        "exchange_noise": [
+          [
+            0.00260319054595973,
+            0.0026032139208425242
+          ],
+          [
+            0.0026032139208425247,
+            0.0026032372960857818
+          ]
+        ],
+        "joint_constraint_variance": 3.604637018911652e-13,
+        "independent_noise_constraint_variance": 0.005206427842045512,
+        "noncommuting_mass_source_norm": 0.04780363720006384,
+        "full_joint_covariance_min_eigenvalue": 1.464915035779182e-14
+      },
+      {
+        "steps": 256,
+        "operator_balance_error": 1.1525777673215877e-07,
+        "energy_change": -0.05067645050446343,
+        "integrated_scalar_work": -0.05067658113443509,
+        "exchange_noise": [
+          [
+            0.0026031962048968663,
+            0.0026032020485950184
+          ],
+          [
+            0.0026032020485950184,
+            0.002603207892315698
+          ]
+        ],
+        "joint_constraint_variance": 2.2528613625261658e-14,
+        "independent_noise_constraint_variance": 0.005206404097212564,
+        "noncommuting_mass_source_norm": 0.04780363720006384,
+        "full_joint_covariance_min_eigenvalue": 9.155915060351323e-16
+      }
+    ],
+    "second_order_convergence_ratios": [
+      4.000151533341056,
+      4.000037891049558
+    ],
+    "numerical_errors_are_not_rigorous_interval_bounds": true,
+    "integrated_work_is_a_Heisenberg_operator_not_a_TPM_distribution": true
+  },
+  "independent_Fock": {
+    "CAR_indices": [
+      24,
+      25,
+      30,
+      31
+    ],
+    "Fock_dimension": 16,
+    "steps": 128,
+    "mean_error": 4.747938153748521e-15,
+    "symmetrized_covariance_error": 2.2065682614424986e-15,
+    "exact_Fock_covariance": [
+      [
+        0.04638252058524015,
+        0.0047458990153164266,
+        0.004745935368112495,
+        0.01860014572849194
+      ],
+      [
+        0.004745899015316427,
+        0.0023114867903468563,
+        0.0023115069639822513,
+        0.007871222165845713
+      ],
+      [
+        0.004745935368112494,
+        0.0023115069639822513,
+        0.002311527137942978,
+        0.007871315484497146
+      ],
+      [
+        0.01860014572849194,
+        0.007871222165845713,
+        0.007871315484497146,
+        0.03193451312340763
+      ]
+    ],
+    "work_identity_matrix_error": 4.6103547443981196e-07,
+    "residual_constraint_variance": 3.253322197064709e-13,
+    "full_original_Gauss_state_not_used": true
+  },
+  "dependency_hashes": {
+    "joint_quantum_response_matching.py": "bf47024bcb481e9883bb1f1518bf1a61f267aabe5b1ff72971e61523c1689d96",
+    "joint_fermion_gauss_completion.py": "1de7d9f62d4ea8a5363cbcf2ecfb3149cf06e4e309f820f91dd856e11bc03a3b",
+    "research_note_590.md": "fe7192aa49d28accd53481278845c2dd783095373d060d3bfc88999f374420e8",
+    "research_note_600.md": "27d905d1aa0f3421e469d812da14db160797bb4387640515dcc1bb09a46e7cc9",
+    "research_note_602.md": "f3fb4939de75c594186627f1cb581d481b195dada8dd3c30a24380154e40aa2d",
+    "research_note_603.md": "cc0b578680b1cd0dae279a2d7533fc4853772e4821358f17b3f57b4ac47b3fe5",
+    "research_note_618.md": "ca1f235278e7aefaff85475bf72a75abf641bc6fce8d95ea95ecfaaa2ad82fcf",
+    "research_note_619.md": "48fd092121bc7893ed0742b70bed8152e709f154950afc7ef55ad3b8fa708027"
+  },
+  "scope": {
+    "original_quadratic_mass_sector": true,
+    "same_initial_state_and_source_retained": true,
+    "prescribed_background_not_a_closed_universe_solution": true,
+    "no_Gauss_continuum_matching_or_GR_completion": true,
+    "covariance_not_a_complete_quantum_process": true,
+    "covariant_Ward_extension_requires_renormalized_anomaly_free_source_identity": true,
+    "established_Ward_and_Wick_methods_not_claimed_as_new_fundamental_theorems": true
+  }
+}

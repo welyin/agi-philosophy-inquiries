@@ -1,0 +1,179 @@
+{
+  "date": "2026-10-02",
+  "round": 655,
+  "tests_run": 4,
+  "failures": 0,
+  "errors": 0,
+  "spatial_and_sources": {
+    "rows": [
+      {
+        "time_sites": 2,
+        "time_step": 0.5,
+        "positive_step_minimum": 0.686115658448119,
+        "full64_mode_covariance_error": 0.02260559323130533,
+        "lapse_first_source": 3.2932826249634424,
+        "lapse_second_source": 3.054608401813603,
+        "source_errors": [
+          0.01881507632104551,
+          0.054812143260768664
+        ]
+      },
+      {
+        "time_sites": 4,
+        "time_step": 0.25,
+        "positive_step_minimum": 0.8291826303267525,
+        "full64_mode_covariance_error": 0.011308541379339484,
+        "lapse_first_source": 3.3073716622884186,
+        "lapse_second_source": 3.0956038163658253,
+        "source_errors": [
+          0.004726038996069271,
+          0.013816728708546222
+        ]
+      },
+      {
+        "time_sites": 8,
+        "time_step": 0.125,
+        "positive_step_minimum": 0.9108677538043625,
+        "full64_mode_covariance_error": 0.005654139283748184,
+        "lapse_first_source": 3.310914832526752,
+        "lapse_second_source": 3.105959472876703,
+        "source_errors": [
+          0.0011828687577359887,
+          0.0034610721976684466
+        ]
+      },
+      {
+        "time_sites": 16,
+        "time_step": 0.0625,
+        "positive_step_minimum": 0.9544698208909727,
+        "full64_mode_covariance_error": 0.0028270226041850733,
+        "lapse_first_source": 3.311801899701221,
+        "lapse_second_source": 3.1085548500390123,
+        "source_errors": [
+          0.00029580158326680817,
+          0.0008656950353591597
+        ]
+      }
+    ],
+    "original_full64_mode_target_sources": [
+      3.312097701284488,
+      3.1094205450743715
+    ],
+    "independent_source_difference_errors": [
+      3.96524146850652e-09,
+      6.674945449702818e-07
+    ],
+    "local_gauge_covariance_error": 5.649572841330652e-15,
+    "actual_hopping_mass_commutator_norm": 0.2006819990636572,
+    "hopping_strength_is_allowed_diagnostic_input": 0.23,
+    "bosonic_path_integral_or_full_Gauss_partition_not_numerically_computed": true
+  },
+  "neutral_fock": {
+    "actual_decoupled_original_neutral_modes": 4,
+    "independent_Fock_log_trace_error": 1.3322676295501878e-15,
+    "original_state_weighted_rows": [
+      {
+        "time_sites": 2,
+        "original_state_weighted_effect_error": 0.00030070180633723353
+      },
+      {
+        "time_sites": 4,
+        "original_state_weighted_effect_error": 0.0001541956384834009
+      },
+      {
+        "time_sites": 8,
+        "original_state_weighted_effect_error": 7.8036555371086e-05
+      },
+      {
+        "time_sites": 16,
+        "original_state_weighted_effect_error": 3.925007875393849e-05
+      }
+    ],
+    "not_a_full_bosonic_record_simulation": true
+  },
+  "stability_and_auxiliary_scope": {
+    "complex_time_stability_rows": [
+      {
+        "complex_lapse": [
+          1.0,
+          0.0
+        ],
+        "analytic_global_bound": 754.434553033525,
+        "maximum_sampled_log_norm_bound": 86.87629270279231
+      },
+      {
+        "complex_lapse": [
+          0.3,
+          0.8
+        ],
+        "analytic_global_bound": 853.7771735584867,
+        "maximum_sampled_log_norm_bound": 148.08005637648387
+      },
+      {
+        "complex_lapse": [
+          1.2,
+          -0.4
+        ],
+        "analytic_global_bound": 967.4344800463796,
+        "maximum_sampled_log_norm_bound": 115.36091262141645
+      }
+    ],
+    "full_configuration_bound_is_analytic": true,
+    "original_pair_creation_bound_coefficient": 81.3449220289341,
+    "excited_auxiliary_realtime_subsequence_trace_distance": 0.9999999999999998,
+    "Euclidean_projection_does_not_imply_realtime_forgetting": true
+  },
+  "normalization_geometry": {
+    "actual_vacuum_coefficient": 25.967356040159668,
+    "matched_reference_volume": 0.9070392320000007,
+    "rows": [
+      {
+        "psi": 0.9,
+        "original_node_volume": 0.2720977920000001,
+        "count_energy": 103.86942416063867,
+        "volume_energy": 31.159226606001123,
+        "count_spatial_derivative": 0.0,
+        "volume_spatial_derivative": 207.72817737334083,
+        "derivative_difference_check": 8.434804499302118e-08
+      },
+      {
+        "psi": 1.1,
+        "original_node_volume": 0.9070392320000007,
+        "count_energy": 103.86942416063867,
+        "volume_energy": 103.86942416063867,
+        "count_spatial_derivative": 0.0,
+        "volume_spatial_derivative": 566.5604954216653,
+        "derivative_difference_check": 1.5990417523426004e-07
+      },
+      {
+        "psi": 1.3,
+        "original_node_volume": 2.471326208000001,
+        "count_energy": 103.86942416063867,
+        "volume_energy": 283.0034480118878,
+        "count_spatial_derivative": 0.0,
+        "volume_spatial_derivative": 1306.1697600548669,
+        "derivative_difference_check": 2.657188815646805e-07
+      }
+    ],
+    "volume_additive_scalar_gluing_error": 0.0,
+    "bare_log_normalization_change_on_bisecting_one_cell": -25.967356040159668,
+    "cosmological_coefficient_not_determined_by_flat_transfer": true,
+    "assumed_sitewise_extension_is_not_actual_spatial_overlap_measure": true
+  },
+  "dependency_hashes": {
+    "research_note_585.md": "7e4c19eadff43a16e8e62c9be944b32c4b1680d9c32aac44b5c4d2e6f4dd5bdb",
+    "research_note_598.md": "3cfd675bceca95c6fcca2a72181a52cccb44cc4d5421b61fea0159002d80b8c5",
+    "research_note_623.md": "2ef362e618a11588e5edcf20c0090dd88e29165b2ab0405b1c6a5be1a9b0d804",
+    "research_note_640.md": "fe4ca670c4b1d4f027ff475e4762bb580150c76b57b9d70a6d5cdef3849f69e3",
+    "research_note_643.md": "802e0a296b0e1f23360905ef22846c1e6414f7e3a5e0d955f2e2271cc9bb26f5",
+    "research_note_645.md": "692913200563f5bed6383954ae621777982c019e9ba4a848412552c98bd81957",
+    "research_note_646.md": "526763e66b18198cb9cf58af304ae7b80521af87e3e9a7213516ce15bdc4c4ac",
+    "research_note_654.md": "f1671f773da4c31e5e72de04b11c22efe6285b238d4ec393f1e372af7ac21f62",
+    "joint_mass_state_time_limit.py": "bfbce53d1513eceddb232436882dfc7973793614fe82ed68e8142bf308bf4fac",
+    "joint_fermion_gauss_completion.py": "1de7d9f62d4ea8a5363cbcf2ecfb3149cf06e4e309f820f91dd856e11bc03a3b",
+    "joint_spinor_subgroup_mass.py": "712913dd7ff8bc44c0f0da9754daa290b645530d54fbf6da6d609148b4894c53",
+    "joint_gauss_fermion_influence.py": "15142bef8c560c21c61756098b7942e2937f66b2dd6defc74b3b937f0e634cde",
+    "joint_chiral_character_state_results.json": "3d995cdd0af48ef27238d4884fff44f8a8ff30bfefb3b4a7d4479741a4102518"
+  },
+  "scope": "Same original finite-graph confining quantum H admits the declared mass splitting, positive-time lapse derivatives and fixed-state records. Spatial conditional numerics retain64 modes. No actual multidimensional overlap-measure identity, full spatial continuum, arbitrary auxiliary real-time limit or quantum GR."
+}

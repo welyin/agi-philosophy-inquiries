@@ -1,0 +1,134 @@
+{
+  "date": "2026-10-02",
+  "status": "657 entry; incomplete",
+  "rows": [
+    {
+      "configuration_family": "plane",
+      "width": 0.1,
+      "samples": 10,
+      "Hermiticity_residual": 8.364577684877386e-15,
+      "minimum_diagonal": 0.9558988028193843,
+      "normalized_Gram_eigenvalues": [
+        1.8084356570116458e-06,
+        2.9022755948999878e-05,
+        5.422431321692627e-05,
+        0.0002452745975380337,
+        0.0005775481647493329,
+        0.0008969870757074023,
+        0.03050949345807424,
+        0.08679097587329838,
+        0.10917789278937214,
+        9.771716772536436
+      ],
+      "maximum_offdiagonal": 0.9976808091740555
+    },
+    {
+      "configuration_family": "plane",
+      "width": 0.7,
+      "samples": 10,
+      "Hermiticity_residual": 2.4452967800146782e-15,
+      "minimum_diagonal": 0.07687197595909025,
+      "normalized_Gram_eigenvalues": [
+        0.061165105469613276,
+        0.17024239803823812,
+        0.3740467205186149,
+        0.43272198514928395,
+        0.6036089415186126,
+        0.7394271945425716,
+        0.9114511972968735,
+        1.3416832466943718,
+        2.12374751034709,
+        3.241905700424729
+      ],
+      "maximum_offdiagonal": 0.8223184516501453
+    },
+    {
+      "configuration_family": "plane",
+      "width": 2.0,
+      "samples": 10,
+      "Hermiticity_residual": 8.69961354428299e-16,
+      "minimum_diagonal": 4.216238672874949e-06,
+      "normalized_Gram_eigenvalues": [
+        0.6985311680000353,
+        0.9686463763381676,
+        0.99552519827176,
+        0.9990536794470382,
+        0.9991647660404672,
+        0.999999999801138,
+        1.0003442629987735,
+        1.0044746615962674,
+        1.0321905849667878,
+        1.3020693025395649
+      ],
+      "maximum_offdiagonal": 0.30119146359254556
+    },
+    {
+      "configuration_family": "S9",
+      "width": 0.1,
+      "samples": 10,
+      "Hermiticity_residual": 1.9912854178020167e-15,
+      "minimum_diagonal": 0.3928414888445535,
+      "normalized_Gram_eigenvalues": [
+        0.2863923774837481,
+        0.2953962215153795,
+        0.4275123791788051,
+        0.49113290403262133,
+        0.5138519696262324,
+        0.5910381768922807,
+        0.6589439794786353,
+        0.8933041413328205,
+        0.9876199350102628,
+        4.854807915449213
+      ],
+      "maximum_offdiagonal": 0.6471648962691497
+    },
+    {
+      "configuration_family": "S9",
+      "width": 0.5,
+      "samples": 10,
+      "Hermiticity_residual": 1.1756234519301336e-16,
+      "minimum_diagonal": 0.0008709922586571708,
+      "normalized_Gram_eigenvalues": [
+        0.9986686121503011,
+        0.9988680220024039,
+        0.9992485481090909,
+        0.9998967413583095,
+        0.9999746600471563,
+        0.9999958529819528,
+        1.0000656813938822,
+        1.0001205363989034,
+        1.0010884432967717,
+        1.0020729022612265
+      ],
+      "maximum_offdiagonal": 0.001031161267182966
+    },
+    {
+      "configuration_family": "S9",
+      "width": 1.0,
+      "samples": 10,
+      "Hermiticity_residual": 3.306440958553501e-18,
+      "minimum_diagonal": 9.572399425107694e-05,
+      "normalized_Gram_eigenvalues": [
+        0.9999633147206388,
+        0.9999885315818996,
+        0.9999944878205097,
+        0.9999967518009536,
+        0.9999999825801273,
+        1.0000002105939336,
+        1.000003759815489,
+        1.0000039784506254,
+        1.0000055133214782,
+        1.000043469314346
+      ],
+      "maximum_offdiagonal": 3.2752251235046704e-05
+    }
+  ],
+  "reflection": "swap t=0 and t=1; E transforms as scalar; no internal twist",
+  "original_background": "nx=3, nt=2 antiperiodic, other two spatial directions length1, m0=1, kappa=1, identity gauge",
+  "dependency_hashes": {
+    "joint_spatial_auxiliary_geometry.py": "02aea913e6693b662a8a9e85217c64ac6a3a91976217649662ede7d18e207bc8",
+    "joint_subgroup_measure_source.py": "cc1245f860509bb9b913cb0c28b340396f47a0b5d208f5af1364770b16acff7e",
+    "research_note_656.md": "0f8d9ea534f0e1f5f81f5f30d7d2bf955b92af4b09ad82a0ec86aaf0d97bb499"
+  },
+  "scope": "Only six finite Gram tests using actual signed Pfaffian. No proof of full-kernel positivity, arbitrary time extent, original S9 integration or common physical state."
+}

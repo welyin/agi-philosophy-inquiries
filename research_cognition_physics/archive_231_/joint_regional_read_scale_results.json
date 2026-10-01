@@ -1,0 +1,139 @@
+{
+  "round": 639,
+  "tests_run": 3,
+  "failures": 0,
+  "errors": 0,
+  "original_curved_read": {
+    "original_three_node_Dirichlet_error": 7.572176392856012e-15,
+    "original_target_origin_saturation": [
+      {
+        "field_scale": 1.0,
+        "injection": 0.015662699452186235,
+        "exact_operator_norm": 0.016118421052631577,
+        "ratio": 0.9717266598907379
+      },
+      {
+        "field_scale": 0.3,
+        "injection": 0.016077175487221082,
+        "exact_operator_norm": 0.016118421052631577,
+        "ratio": 0.9974410914520836
+      },
+      {
+        "field_scale": 0.1,
+        "injection": 0.016113835959207307,
+        "exact_operator_norm": 0.016118421052631577,
+        "ratio": 0.9997155370610249
+      },
+      {
+        "field_scale": 0.03,
+        "injection": 0.01611800837116001,
+        "exact_operator_norm": 0.016118421052631577,
+        "ratio": 0.9999743969046211
+      },
+      {
+        "field_scale": 0.0,
+        "injection": 0.016118421052631577,
+        "exact_operator_norm": 0.016118421052631577,
+        "ratio": 1.0
+      }
+    ],
+    "saturation_is_operator_norm_not_Gibbs_expectation": true
+  },
+  "physical_support_and_scale": {
+    "rows": [
+      {
+        "N": 8,
+        "nodes": 512,
+        "total_physical_volume": 447.35261693845575,
+        "support_volume": 205.0134560470297,
+        "effective_volume": 159.2964140368552,
+        "regional_read_operator_norm": 0.0001922516598076999,
+        "maximum_point_read_operator_norm": 0.052939898589722895,
+        "original_configuration_injection": 0.0001371234744185251,
+        "original_configuration_read_value": 0.5491351259646234
+      },
+      {
+        "N": 16,
+        "nodes": 4096,
+        "total_physical_volume": 447.3526169384557,
+        "support_volume": 234.03779487060206,
+        "effective_volume": 148.60611534319273,
+        "regional_read_operator_norm": 0.00020608169407614388,
+        "maximum_point_read_operator_norm": 0.42351918871778316,
+        "original_configuration_injection": 0.00014698799553200344,
+        "original_configuration_read_value": 0.5491351327962108
+      },
+      {
+        "N": 24,
+        "nodes": 13824,
+        "total_physical_volume": 447.3526169384555,
+        "support_volume": 243.4891989244369,
+        "effective_volume": 148.01006993293947,
+        "regional_read_operator_norm": 0.00020691159739249902,
+        "maximum_point_read_operator_norm": 1.4293772619225185,
+        "original_configuration_injection": 0.0001475799091609143,
+        "original_configuration_read_value": 0.5491351327948734
+      },
+      {
+        "N": 32,
+        "nodes": 32768,
+        "total_physical_volume": 447.35261693845575,
+        "support_volume": 248.17365655320197,
+        "effective_volume": 148.0993322609396,
+        "regional_read_operator_norm": 0.00020678688777638177,
+        "maximum_point_read_operator_norm": 3.3881535097422653,
+        "original_configuration_injection": 0.00014749095885306055,
+        "original_configuration_read_value": 0.5491351327829848
+      }
+    ],
+    "analytic_uniform_effective_volume_lower": 0.12957453982802578,
+    "analytic_uniform_injection_norm_upper": 0.2363504438498966,
+    "fixed_beta_2_unconditional_relative_entropy_upper": 0.4727008876997932,
+    "chosen_fixed_support_profile_is_extra_input": true,
+    "no_thermal_averages_or_cross_graph_state_convergence_computed": true
+  },
+  "shared_geometry": {
+    "rows": [
+      {
+        "geometry_direction": "nonuniform",
+        "read_value_derivative": -0.0004520746264355946,
+        "total_geometry_derivative": -0.00020189862456581882,
+        "original_source_change_at_fixed_instrument": -0.00020299976023754383,
+        "extra_instrument_variation": 1.1011356717250022e-06,
+        "finite_difference_error": 9.506935169656394e-15
+      },
+      {
+        "geometry_direction": "uniform",
+        "read_value_derivative": 3.657974762858163e-16,
+        "total_geometry_derivative": -0.0008227408465111503,
+        "original_source_change_at_fixed_instrument": -0.0008227408465111508,
+        "extra_instrument_variation": 1.3328028676373585e-19,
+        "finite_difference_error": 1.1023191907877372e-14
+      }
+    ],
+    "actual_original_field_metric_volume_and_profile": true,
+    "original_uniform_conformal_identity_recovered": true,
+    "varying_instrument_not_confused_with_fixed_source": true
+  },
+  "dependency_hashes": {
+    "research_note_593.md": "2d3a1986243a07a31e69abe495d3a3044234718f1648a7313c0ebaf7134bf91b",
+    "research_note_598.md": "3cfd675bceca95c6fcca2a72181a52cccb44cc4d5421b61fea0159002d80b8c5",
+    "research_note_603.md": "cc0b578680b1cd0dae279a2d7533fc4853772e4821358f17b3f57b4ac47b3fe5",
+    "research_note_625.md": "dc19916b0c780a6527797fa3f61c992c35f3f6e565cd104f9412f60f4dfb521c",
+    "research_note_633.md": "0c9b29f4095de54210140072552348e2d078374052d40d8d871171ed1d22ea9c",
+    "research_note_638.md": "3471a68fc5d78f7a30bb7d21d0c2b25e9fd6cd171eedb80fc42b554d443ae96c",
+    "joint_record_relative_entropy.py": "a6b64961cae7aff1c06a83a3472d62b971c44837c8d8522c7f20eb44fa5f91b1",
+    "joint_curved_quantum_source.py": "cf6aec9461174f41985b706c1bae776787b198ab77d9e42dfe8057764795775c",
+    "joint_full_spatial_metric.py": "b9bbe239b920ccef4efa37110b53f0d8acd87f4053fe5444fadc5ffc05103720",
+    "joint_geometry_work_noise.py": "d4fbcdc46fb208b4cc63d02e34e7aac9ffab4304c6bdcc4dd98ba7ce805afff6"
+  },
+  "scope": {
+    "original_full_model_record_injection_proved_analytically": true,
+    "original_H_not_replaced_by_free_scalar": true,
+    "collective_singlet_read_is_an_additional_operation_family": true,
+    "fixed_physical_support_controls_uniform_information_upper_bound": true,
+    "source_response_and_operation_variation_separated": true,
+    "no_instantaneous_causal_implementation_or_nontrivial_signal_lower_bound": true,
+    "no_continuum_state_map_area_entropy_or_GR_claim": true
+  }
+}

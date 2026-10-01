@@ -1,0 +1,157 @@
+{
+  "round": 649,
+  "tests_run": 3,
+  "failures": 0,
+  "errors": 0,
+  "local_physical_inner_product": {
+    "rows": [
+      {
+        "order": 256,
+        "reference_coarea_norm": 0.039848036166126255,
+        "min_area_derivative": 0.09852199716427429,
+        "cases": [
+          {
+            "epsilon": 0.002,
+            "regularized_inner_product": 0.03955123635018554,
+            "coarea_error": 0.00029679981594071814,
+            "Q_squared_physical_norm_squared": 1.8428052483092856e-12
+          },
+          {
+            "epsilon": 0.001,
+            "regularized_inner_product": 0.039773017730028386,
+            "coarea_error": 7.501843609786923e-05,
+            "Q_squared_physical_norm_squared": 1.1842444927758886e-13
+          },
+          {
+            "epsilon": 0.0005,
+            "regularized_inner_product": 0.03982922812814124,
+            "coarea_error": 1.880803798501307e-05,
+            "Q_squared_physical_norm_squared": 7.453896695141855e-15
+          }
+        ]
+      },
+      {
+        "order": 384,
+        "reference_coarea_norm": 0.03984803616612677,
+        "min_area_derivative": 0.09852170529368016,
+        "cases": [
+          {
+            "epsilon": 0.002,
+            "regularized_inner_product": 0.03955123635018665,
+            "coarea_error": 0.0002967998159401214,
+            "Q_squared_physical_norm_squared": 1.842805248309337e-12
+          },
+          {
+            "epsilon": 0.001,
+            "regularized_inner_product": 0.03977301773002949,
+            "coarea_error": 7.501843609727943e-05,
+            "Q_squared_physical_norm_squared": 1.1842444927759214e-13
+          },
+          {
+            "epsilon": 0.0005,
+            "regularized_inner_product": 0.03982922812814209,
+            "coarea_error": 1.8808037984680004e-05,
+            "Q_squared_physical_norm_squared": 7.45389669507735e-15
+          }
+        ]
+      }
+    ],
+    "only_two_coordinate_section_numerically_integrated": true,
+    "full_domain_positivity_and_quotient_proved_locally": true,
+    "Gaussian_delta_is_numerical_regularization_not_physical_cutoff": true
+  },
+  "original_process_descent": {
+    "original_probe_reproduced": true,
+    "area": 1.0624598630931725,
+    "area_gradient": [
+      0.10622059801052276,
+      4.0241288767328256e-05,
+      0.1062311333193445,
+      0.0027941961899315727,
+      -2.746344944949028e-05,
+      0.0021505740413476555
+    ],
+    "independent_geometry_H_on_null_class": -0.0130168811309584,
+    "original_probe_differences": [
+      {
+        "step": 0.004,
+        "finite_difference_H_Q_squared": -0.01301681338348138,
+        "error": 6.774747701894512e-08,
+        "gradient_error": 2.804500565944945e-07
+      },
+      {
+        "step": 0.002,
+        "finite_difference_H_Q_squared": -0.0130168641940879,
+        "error": 1.6936870499834056e-08,
+        "gradient_error": 7.011255917510617e-08
+      },
+      {
+        "step": 0.001,
+        "finite_difference_H_Q_squared": -0.013016876896670748,
+        "error": 4.2342876514084304e-09,
+        "gradient_error": 1.752812237021395e-08
+      }
+    ],
+    "full_matter_terms_retained_in_analytic_product_rule": true,
+    "records_restrict_but_this_does_not_supply_full_waiting_process": true,
+    "no_inference_against_actual_ADM_constraints": true
+  },
+  "explicitly_modified_tangent_candidate": {
+    "tangent_principal_eigenvalues": [
+      1.1102230246251565e-16,
+      0.5882352941176466,
+      0.5882352941176467,
+      0.5882352941176467,
+      0.5882352941176471,
+      0.5882352941176471,
+      0.5882352941176472,
+      0.5882352941176472,
+      0.5882352941176472,
+      0.5882352941176472,
+      0.5882352941176474,
+      0.5882352941176476
+    ],
+    "normal_annihilation": 5.734217744178879e-18,
+    "necessary_cross_replica_block_in_this_projection": 0.2941176470588235,
+    "rows": [
+      {
+        "step": 0.004,
+        "original_H_Q_squared": -0.01301681338348138,
+        "modified_tangent_H_Q_squared": 1.8933218221082317e-10,
+        "hessian_error": 1.1916995210081716e-07
+      },
+      {
+        "step": 0.002,
+        "original_H_Q_squared": -0.013016864194087902,
+        "modified_tangent_H_Q_squared": 4.733231661214337e-11,
+        "hessian_error": 2.9792536652972768e-08
+      },
+      {
+        "step": 0.001,
+        "original_H_Q_squared": -0.01301687689667075,
+        "modified_tangent_H_Q_squared": 1.1857593943190302e-11,
+        "hessian_error": 7.448128603454451e-09
+      }
+    ],
+    "projected_geometry_principal_part_changes_original_dynamics": true,
+    "full_selfadjoint_realization_requires_local_domain_and_boundary_choice": true,
+    "projected_choice_not_unique_or_derived_from_cognition": true
+  },
+  "dependency_hashes": {
+    "research_note_590.md": "fe7192aa49d28accd53481278845c2dd783095373d060d3bfc88999f374420e8",
+    "research_note_593.md": "2d3a1986243a07a31e69abe495d3a3044234718f1648a7313c0ebaf7134bf91b",
+    "research_note_606.md": "6bc9c41e467fc695cb26940a1edbf4c5e957f10e5a6a82f58d1ba9cea95824a5",
+    "research_note_617.md": "68d930ea7de4a53b5fd098a05b499094328868010008f398178d7c26b6c4c2e9",
+    "research_note_648.md": "1a3a65d5beb302f887bf212abd6d31f8d874b50c7b7c989bde12e397911889fd",
+    "joint_full_spatial_metric.py": "b9bbe239b920ccef4efa37110b53f0d8acd87f4053fe5444fadc5ffc05103720",
+    "round649_drafts/area_constraint_descent_probe.py": "9916c8fc78967e20c0561deff545788bf95185d1aaecaf8a39f72a7b495e161d",
+    "round649_drafts/area_constraint_descent_probe_results.json": "1f9723a8210402619061643bb3c9a3522e57c49db571f8a87ce3d9e93bb1c214"
+  },
+  "scope": {
+    "local_regular_area_matching_constraint_on_original590_replicas": true,
+    "conditional_record_and_matter_restriction_only": true,
+    "old_geometry_evolution_cannot_descend_unchanged": true,
+    "alternative_tangent_form_is_new_dynamics_not_an_equivalence": true,
+    "no_ADM_quantization_or_unified_GR_completion": true
+  }
+}

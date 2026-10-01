@@ -1,0 +1,138 @@
+{
+  "round": 644,
+  "tests_run": 3,
+  "failures": 0,
+  "errors": 0,
+  "full_original_conditional_matter": {
+    "full_CAR_modes": 64,
+    "original_hopping": 0.17,
+    "beta": 1.7,
+    "blocks": [
+      {
+        "name": "up",
+        "multiplicity": 6,
+        "modes_per_node": 2,
+        "Fock_dimension": 16,
+        "regional_S2": 0.9674637279913029,
+        "lapse_derivative": -0.6100443958052731
+      },
+      {
+        "name": "down",
+        "multiplicity": 6,
+        "modes_per_node": 2,
+        "Fock_dimension": 16,
+        "regional_S2": 1.2970815578830024,
+        "lapse_derivative": -0.1629002299817408
+      },
+      {
+        "name": "electron",
+        "multiplicity": 2,
+        "modes_per_node": 2,
+        "Fock_dimension": 16,
+        "regional_S2": 1.3701978390965788,
+        "lapse_derivative": -0.03070248843869758
+      },
+      {
+        "name": "neutral",
+        "multiplicity": 1,
+        "modes_per_node": 4,
+        "Fock_dimension": 256,
+        "regional_S2": 2.6374762185362424,
+        "lapse_derivative": -0.2479752838426748
+      }
+    ],
+    "exact_block_Fock_S2": 18.965143611975233,
+    "reduced_Nambu_covariance_S2": 18.965143611975236,
+    "signed_replica_determinant_S2": 18.965143611975236,
+    "log_partition": 48.0251552879604,
+    "determinant_phase_error": 5.174477327998286e-17,
+    "regional_purity": 5.801533185636312e-09,
+    "original_block_purity": 0.38004571609248133,
+    "signed_exchange_trace": [
+      0.3800457160924813,
+      -4.341650801521536e-18
+    ],
+    "unsigned_exchange_trace": [
+      -0.2329569596583352,
+      1.0151318786082607e-18
+    ],
+    "parity_weighted_purity": [
+      -0.23295695965833518,
+      3.540910966473784e-18
+    ],
+    "all_original_modes_and_pairing_present": true,
+    "bosons_frozen_and_no_Gauss_average_in_this_numerical_fixture": true
+  },
+  "common_entropy_source": {
+    "S2": 18.965143611975233,
+    "analytic_conditional_lapse_derivative": -4.947048015442154,
+    "rows": [
+      {
+        "step": 0.0004,
+        "finite_difference": -4.947048010972566,
+        "error": 4.4695882550627175e-09
+      },
+      {
+        "step": 0.0002,
+        "finite_difference": -4.947048014303235,
+        "error": 1.1389191811872479e-09
+      }
+    ],
+    "independently_thermalized_onsite_S2": 18.870098007864392,
+    "onsite_replacement_entropy_difference": 0.09504560411084029,
+    "full_Gauss_geometric_Duhamel_identity_is_analytic_not_this_fixture": true
+  },
+  "legal_Gauss_sign_witnesses": {
+    "rows": [
+      {
+        "original_module": "nu",
+        "Schmidt_rank": 1,
+        "region_fermion_parity": -1,
+        "signed_replica_purity": 1.0,
+        "unsigned_mode_exchange_weight": -1.0,
+        "regional_S2": 0.0
+      },
+      {
+        "original_module": "L",
+        "Schmidt_rank": 2,
+        "region_fermion_parity": -1,
+        "signed_replica_purity": 0.5,
+        "unsigned_mode_exchange_weight": -0.5,
+        "regional_S2": 0.6931471805599453
+      },
+      {
+        "original_module": "u",
+        "Schmidt_rank": 3,
+        "region_fermion_parity": -1,
+        "signed_replica_purity": 0.3333333333333333,
+        "unsigned_mode_exchange_weight": -0.3333333333333333,
+        "regional_S2": 1.0986122886681098
+      },
+      {
+        "original_module": "Q",
+        "Schmidt_rank": 6,
+        "region_fermion_parity": -1,
+        "signed_replica_purity": 0.16666666666666669,
+        "unsigned_mode_exchange_weight": -0.16666666666666669,
+        "regional_S2": 1.791759469228055
+      }
+    ],
+    "original_legal_full_Gauss_states": true,
+    "these_states_are_not_Gibbs_eigenstates": true,
+    "boundary_dimension_and_odd_matter_parity_both_retained": true
+  },
+  "dependency_hashes": {
+    "research_note_617.md": "68d930ea7de4a53b5fd098a05b499094328868010008f398178d7c26b6c4c2e9",
+    "research_note_637.md": "97818586a1415b82ae30209d8bd856f42278b9e8e34b813231b1172ada02530c",
+    "research_note_642.md": "8fefb96c5e63430f1c0be629ab4cf3a87623f9f40d18753f8b4c4f83f214881f",
+    "research_note_643.md": "802e0a296b0e1f23360905ef22846c1e6414f7e3a5e0d955f2e2271cc9bb26f5",
+    "joint_fermion_gauss_completion.py": "1de7d9f62d4ea8a5363cbcf2ecfb3149cf06e4e309f820f91dd856e11bc03a3b",
+    "joint_gauss_fermion_influence.py": "15142bef8c560c21c61756098b7942e2937f66b2dd6defc74b3b937f0e634cde"
+  },
+  "scope": {
+    "full_fixed_graph_Gauss_replica_and_source_identity_proved_in_note": true,
+    "numerical_thermal_state_is_conditional64_CAR_not_full_physical_Gibbs": true,
+    "separate_exact_Gauss_witnesses_from642": true,
+    "no_area_law_Newton_continuum_or_GR_claim": true
+  }
+}

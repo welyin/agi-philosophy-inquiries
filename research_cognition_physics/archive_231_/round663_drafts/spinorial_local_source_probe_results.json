@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-02",
+  "status": "663 actual probe, not completed round",
+  "inherited_model": "604 original32CAR/64Nambu masses and continuum principal symbol",
+  "periodic_grid": [
+    24,
+    24
+  ],
+  "third_spatial_derivative_zero": true,
+  "positive_lapses": "N=1+0.2sin(x), M=1+0.3sin(y)",
+  "complete_formula": "[h[N],h[M]]/i = i(v.derivative+div(v)/2)+i[Gamma.gradN,Gamma.gradM]/4",
+  "vector_field": "v=N grad(M)-M grad(N)",
+  "spin_term_norm": 0.015000000000000003,
+  "spin_generator_commutator_with_Clifford_norm": 1.0,
+  "rows": [
+    {
+      "mass_scale": 0.0,
+      "complete_local_bracket_error": 3.9812440785709935e-15,
+      "scalar_shift_only_error": 0.014999999999999996
+    },
+    {
+      "mass_scale": 1.0,
+      "complete_local_bracket_error": 4.0472793099466555e-15,
+      "scalar_shift_only_error": 0.015
+    },
+    {
+      "mass_scale": 1.7,
+      "complete_local_bracket_error": 4.183887569805428e-15,
+      "scalar_shift_only_error": 0.015
+    }
+  ],
+  "Nambu_coefficient_not_many_body_state": true,
+  "no_naive_lattice_regulator_restoration": true,
+  "no_ADM_or_Kosmann_equivalence_yet": true,
+  "dependencies": {
+    "joint_chiral_source_matching.py": "9dbfb2faba423e614c16f2d80d8497652828b4487dbc788e86dcb635fb54a96c",
+    "research_note_375.md": "1cfb783b6f0f9da2c32a0cad655d1717068f5378ee6440afee94ea1e1b21418f",
+    "research_note_604.md": "398c3a49208c8eea7c1c017777b5c030ec56d85a1eeb49f7452d883e37e945a5",
+    "research_note_612.md": "3e2645a4c528c4b8d1650c9614b975e898ad8f8b51652db3a7307a4a4c8a3de6",
+    "research_note_662.md": "f0fa9140ad4c3cb17e75ecff216aab809057cd440f6f00a2fec67736421f6eba"
+  }
+}

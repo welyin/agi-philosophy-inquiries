@@ -1,0 +1,133 @@
+{
+  "round": 631,
+  "tests_run": 3,
+  "failures": 0,
+  "errors": 0,
+  "tensor_cut": {
+    "original_Weyl_components": 16,
+    "angular_nodes": 72,
+    "rows": [
+      {
+        "frequency": 0.07691344739654718,
+        "rho_mass": 0.0,
+        "rho_spin2": 0.0,
+        "angular_error": 0.0,
+        "spectral_eigenvalues": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "predicted_rank": 0
+      },
+      {
+        "frequency": 0.10767882635516604,
+        "rho_mass": 6.876868196594168e-08,
+        "rho_spin2": 2.4332651968949048e-08,
+        "angular_error": 1.5881867761018131e-22,
+        "spectral_eigenvalues": [
+          8.602678370551488e-23,
+          2.433265196894902e-08,
+          2.4332651968949025e-08,
+          2.4332651968949048e-08,
+          2.4332651968949064e-08,
+          2.4332651968949068e-08,
+          9.169157595458902e-08
+        ],
+        "predicted_rank": 6
+      },
+      {
+        "frequency": 1.1972740092309988,
+        "rho_mass": 0.026279555241834524,
+        "rho_spin2": 0.05830606903994376,
+        "angular_error": 2.7755577929962906e-16,
+        "spectral_eigenvalues": [
+          1.1102230246251564e-16,
+          0.0350394069891128,
+          0.058306069039943474,
+          0.058306069039943544,
+          0.05830606903994391,
+          0.05830606903994392,
+          0.05830606903994392
+        ],
+        "predicted_rank": 6
+      }
+    ],
+    "max_covariant_projector_Ward_error": 1.3600232051658168e-13,
+    "tensor_cut_structure": "rho2 P2 + (rho_mass/3) P0",
+    "five_TT_channels_in_addition_to_trace": true,
+    "timelike_off_shell_channels_not_five_on_shell_graviton_polarizations": true,
+    "contact_terms_not_covered_by_cut_Ward_test": true
+  },
+  "common_curvature_coefficient": {
+    "Dirac_heat_kernel_Riem2_Ric2_R2": [
+      "-7/360",
+      "-1/45",
+      "1/72"
+    ],
+    "Dirac_heat_kernel_Weyl2_Euler_R2": [
+      "-1/20",
+      "11/360",
+      "0"
+    ],
+    "original_one_generation_c": 0.4,
+    "beta_bW_fermion_one_generation": 0.0025330295910584444,
+    "shear_source_Weyl2_Hessian_multiplier": 4,
+    "spin2_z4_log_from_cut": 0.010132056529813811,
+    "spin2_z4_log_from_heat_kernel": 0.010132118364233778,
+    "zero_mass_one_generation_rho2_at_unit_frequency": 0.031830988618379075,
+    "zero_mass_trace_cut": 0.0,
+    "no_new_massless_graviton_pole": true,
+    "no_Newton_constant_prediction": true,
+    "no_full_553_three_generation_scalar_vector_count_substitution": true
+  },
+  "tensor_effective_window": {
+    "common_pair_threshold": 0.10255126319539623,
+    "spin2_sixth_moment": 0.053986193628736745,
+    "below_threshold_rows": [
+      {
+        "frequency": 0.020510252639079248,
+        "sixth_order_remainder": 4.050760086959898e-12,
+        "bound": 4.186369276013246e-12,
+        "quadrature_change": 2.4737062400597038e-23
+      },
+      {
+        "frequency": 0.061530757917237736,
+        "sixth_order_remainder": 3.173746558111027e-09,
+        "bound": 4.577794803320481e-09,
+        "quadrature_change": 2.3476212964867478e-20
+      },
+      {
+        "frequency": 0.09229613687585661,
+        "sixth_order_remainder": 4.214365403903307e-08,
+        "bound": 1.7564275850634912e-07,
+        "quadrature_change": 6.717699190665648e-19
+      }
+    ],
+    "reference_frequency": 1.1972740092309988,
+    "shear_noise_per_unit_normalized_source": 0.02915303451997188,
+    "mass_metric_and_five_shear_covariance_rank": 6,
+    "three_subtractions_required_for_spin2": true,
+    "independent_finite_coefficients": [
+      "constant",
+      "frequency_squared",
+      "frequency_fourth"
+    ],
+    "only_second_moments_not_full_Gaussian_quantum_process": true,
+    "fixed_background_not_self_consistent_Einstein_solution": true
+  },
+  "dependency_hashes": {
+    "research_note_553.md": "bf352b5705e660cff91565a6da440eeb0ba1d405a2de4285ea821234faffbfdf",
+    "research_note_599.md": "ba5d7071d95480f4d9ce2cf08f99eb5584585e089f0370f468c4389bd59a7e77",
+    "research_note_601.md": "2464a6dddd68e4b5cf242b93255dff3a42df9f6accb5c5a976faed42cca5c362",
+    "research_note_620.md": "aac5a2cced79624dabadacd86fbc0d2ae30ead3ec8f36e659a9bcb3dbe698021",
+    "research_note_628.md": "d1773cea96d67012abc260beea0dc66cd1604969d17aafae0d1ea4a7c7adf7cf",
+    "research_note_630.md": "455eb46ac40df7b2183801d74ab1a9b6205ece0838cd26f81b94471662a18128",
+    "joint_continuum_source_spectrum.py": "8c9d0ea35fc751533a41741a395b6105966d12a00263ffd3c58e5b1e1fe75893",
+    "joint_fermion_gauss_completion.py": "1de7d9f62d4ea8a5363cbcf2ecfb3149cf06e4e309f820f91dd856e11bc03a3b"
+  },
+  "scope": "Same original one-generation continuum free-fermion vacuum branch as 630. Complete parity-even stress two-point cut on flat space and its timelike Lorentz tensor reconstruction, with the shared mass source and one-loop Weyl-squared logarithm. This is off-shell matter response, not a graviton state, gravitational dynamics, full interacting theory, general curved-background Ward construction or graph-continuum matching."
+}

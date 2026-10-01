@@ -1,0 +1,172 @@
+{
+  "round": 645,
+  "tests_run": 3,
+  "failures": 0,
+  "errors": 0,
+  "same_spectrum_thermal_stress": {
+    "original_squared_background": [
+      0.44281434044724316,
+      0.29796716830809955
+    ],
+    "F": 1.8765364152074429,
+    "original_masses": [
+      0.6008665886435811,
+      0.24769601191905535,
+      0.10293320860925669,
+      0.1485005386720885,
+      0.27712973851797906
+    ],
+    "excitation_degeneracy": [
+      12.0,
+      12.0,
+      4.0,
+      2.0,
+      2.0
+    ],
+    "original_BdG_mass_error": 6.38378239159465e-16,
+    "rows": [
+      {
+        "T": 0.08,
+        "f": -3.111438543679896e-05,
+        "rho": 0.00013661080384875143,
+        "p": 3.111438543679897e-05,
+        "theta": 4.32676475383545e-05,
+        "F1": 4.32676475383545e-05,
+        "F2": -6.850574916452425e-05,
+        "enthalpy": 0.0001677251892855504,
+        "quadrature_error": 1.4094628242311558e-18,
+        "stress_identity_error": 2.710505431213761e-20,
+        "temperature_derivative_error": 1.3809811042105047e-13
+      },
+      {
+        "T": 0.2,
+        "f": -0.003002782784177508,
+        "rho": 0.010988327313442727,
+        "p": 0.0030027827841775097,
+        "theta": 0.0019799789609102,
+        "F1": 0.0019799789609102,
+        "F2": -0.0014014460819107943,
+        "enthalpy": 0.013991110097620238,
+        "quadrature_error": 1.1449174941446927e-16,
+        "stress_identity_error": 1.734723475976807e-18,
+        "temperature_derivative_error": 7.768636428595599e-12
+      },
+      {
+        "T": 0.5,
+        "f": -0.17048941542354235,
+        "rho": 0.5465205193950676,
+        "p": 0.1704894154235424,
+        "theta": 0.035052273124440446,
+        "F1": 0.035052273124440446,
+        "F2": 0.012413272101514904,
+        "enthalpy": 0.7170099348186101,
+        "quadrature_error": 5.995204332975845e-15,
+        "stress_identity_error": 1.1102230246251565e-16,
+        "temperature_derivative_error": 3.064135611907659e-10
+      }
+    ],
+    "massless_finite_temperature_limit_error": 5.0306980803327406e-17,
+    "no_extra_Nambu_or_spin_multiplicity": true,
+    "independent_infinite_domain_orders": [
+      192,
+      256
+    ]
+  },
+  "shared_thermal_geometry_sources": {
+    "T": 0.2,
+    "original_canonical_radius": 0.6216059728877024,
+    "original_radial_b": 1.643122457020403,
+    "shared_q_sigma_hessian": [
+      [
+        -0.003453699685069687,
+        0.0009506003656085906
+      ],
+      [
+        0.0009506003656085906,
+        0.0005785328789994055
+      ]
+    ],
+    "contact_matrix": [
+      [
+        0.00032999649348503326,
+        0.003253347895099472
+      ],
+      [
+        0.003253347895099472,
+        0.0019799789609102
+      ]
+    ],
+    "finite_Weyl_identity_error": 1.3010426069826053e-18,
+    "hessian_difference_error": 2.1451636083788528e-10,
+    "lapse_response": 0.01098832733099431,
+    "volume_response": -0.009008348357943206,
+    "Weyl_response": 0.0019799789607887787,
+    "wrong_fixed_local_temperature_response": -0.012011131136710032,
+    "fixed_temperature_Weyl_error": 0.013991110097620232,
+    "hydrostatic_Ward_error": 7.125376677574735e-15,
+    "slowly_varying_static_background_zero_derivative_only": true
+  },
+  "common_background_obstruction": {
+    "rows": [
+      {
+        "T": 0.08,
+        "thermal_x_force": [
+          5.0886249226237975e-05,
+          1.7586643830927138e-06
+        ],
+        "radial_Euler_force": 4.61143702703701e-05,
+        "trace_link_error": 6.776263578034403e-21,
+        "scalar_gradient_difference_error": 4.215308928735145e-14,
+        "vacuum_adjustment_cancelling_rho": -0.00013661080384875143,
+        "remaining_pressure": 0.0001677251892855504,
+        "original_vacuum_no_longer_stationary_in_this_branch": true
+      },
+      {
+        "T": 0.2,
+        "thermal_x_force": [
+          0.0022980496642598935,
+          0.00012590260056287775
+        ],
+        "radial_Euler_force": 0.0021102483755331995,
+        "trace_link_error": 0.0,
+        "scalar_gradient_difference_error": 8.957452835023361e-13,
+        "vacuum_adjustment_cancelling_rho": -0.010988327313442727,
+        "remaining_pressure": 0.013991110097620238,
+        "original_vacuum_no_longer_stationary_in_this_branch": true
+      },
+      {
+        "T": 0.5,
+        "thermal_x_force": [
+          0.040822087884735486,
+          0.0020224831414503716
+        ],
+        "radial_Euler_force": 0.037358478993934754,
+        "trace_link_error": 6.938893903907228e-18,
+        "scalar_gradient_difference_error": 3.0685731733370858e-12,
+        "vacuum_adjustment_cancelling_rho": -0.5465205193950676,
+        "remaining_pressure": 0.7170099348186101,
+        "original_vacuum_no_longer_stationary_in_this_branch": true
+      }
+    ],
+    "vacuum_matching_from632_held_fixed": true,
+    "scalar_minimum_shift_formula_not_claimed_new": true,
+    "obstruction_is_flat_static_constant_field_vacuum_compensation_only": true,
+    "no_obstruction_to_curved_or_time_dependent_GR": true
+  },
+  "dependency_hashes": {
+    "research_note_602.md": "f3fb4939de75c594186627f1cb581d481b195dada8dd3c30a24380154e40aa2d",
+    "research_note_632.md": "1c5fbf535b5d106af8c4404f3c55faa656dc1b37b971a76a349adb665bfbef16",
+    "research_note_635.md": "0898992b445a42e566e665340be90d3d12bfc3b59ed7d4ebe462ef5ac346b9df",
+    "research_note_644.md": "7e5227d70cb5d6d85d72e7ce600c51148f60cd88ed6a3327d1307ff5f4544ac3",
+    "joint_background_contact_matching.py": "f725329f179f5a0c787fae8292857c22c9c61273a19caa70ac54578b1030ee3e",
+    "joint_fermion_gauss_completion.py": "1de7d9f62d4ea8a5363cbcf2ecfb3149cf06e4e309f820f91dd856e11bc03a3b"
+  },
+  "scope": {
+    "original_full_generation_free_continuum_fermion_branch": true,
+    "specified_3plus1_fixed_background_and_thermal_state_are_inputs": true,
+    "same_zero_temperature_renormalization_thermal_difference_UV_finite": true,
+    "no_gauge_or_scalar_thermal_loops_or_resummation": true,
+    "no_full_graph_Gauss_thermal_or_continuum_mapping_claim": true,
+    "no_full_area_law_dynamic_geometry_GR_or_SM_derivation_claim": true
+  }
+}

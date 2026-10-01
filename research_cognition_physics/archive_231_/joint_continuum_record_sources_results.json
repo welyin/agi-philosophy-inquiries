@@ -1,0 +1,173 @@
+{
+  "round": 633,
+  "tests_run": 4,
+  "failures": 0,
+  "errors": 0,
+  "mapping": {
+    "original_phi": [
+      0.0,
+      0.6654429655855137,
+      0.0,
+      0.0,
+      0.545863690226873
+    ],
+    "neutral_CAR_indices": [
+      24,
+      25,
+      30,
+      31
+    ],
+    "neutral_masses": [
+      0.1485005386720885,
+      0.27712973851797906
+    ],
+    "sterile_weights": [
+      0.3488956181699799,
+      0.6511043818300202
+    ],
+    "Dirac_mass": 0.2028642784030124,
+    "Majorana_mass": 0.12862919984589055,
+    "radial_source_factor": 1.643122457020403,
+    "max_mapping_error": 2.6645352591003757e-15,
+    "shell_rows": [
+      {
+        "k": 0.0,
+        "p": 0.4999999999999999,
+        "energy": 0.23225157432303717,
+        "mass_source": 0.23225157432303706,
+        "pressure_trace": 0.0
+      },
+      {
+        "k": 0.3,
+        "p": 0.49999999999999994,
+        "energy": 0.3827093884735891,
+        "mass_source": 0.14542322754135154,
+        "pressure_trace": 0.23728616093223767
+      },
+      {
+        "k": 1.1,
+        "p": 0.4999999999999998,
+        "energy": 1.125861540181855,
+        "mass_source": 0.051013647078023396,
+        "pressure_trace": 1.074847893103831
+      },
+      {
+        "k": 3.0,
+        "p": 0.5,
+        "energy": 3.009598075420762,
+        "mass_source": 0.01915932488648396,
+        "pressure_trace": 2.9904387505342793
+      }
+    ],
+    "charged_spectators_retained": true,
+    "no_new_independent_massless_probe": true
+  },
+  "exact_Fock": {
+    "Fock_dimension": 16,
+    "p": 0.5000000000000002,
+    "conditional_energy": [
+      0.2322515743230372,
+      0.23225157432303717
+    ],
+    "average_energy": 0.2322515743230372,
+    "predicted_energy": 0.23225157432303717,
+    "original_s_source_increment": 0.08247341624472684,
+    "covariance_source_error": 5.881301029635769e-16,
+    "nonselective_covariance_change_rank": 4,
+    "full_continuum_source_not_inferred_from_zero_mode_only": true
+  },
+  "compact_continuum": {
+    "packet": "N exp[-1/(1-r^2)] for r<1, zero otherwise",
+    "normalization": 3.2257609703105348,
+    "gradient_norm_squared": 12.301735373670487,
+    "laplacian_norm_squared": 543.3388564415012,
+    "momentum_cutoff_for_quadrature_only": 180.0,
+    "truncated_Fourier_norm": 0.9999999999994429,
+    "norm_tail_upper_coefficient_evaluated_numerically": 5.175838824507518e-07,
+    "rows": [
+      {
+        "support_radius": 1.0,
+        "record_probability": 0.5,
+        "conditional_and_average_energy": 3.1412111487646834,
+        "mass_source_increment": 0.023200355096454656,
+        "radial_source_increment": 0.038121024469832406,
+        "mean_integrated_pressure": 1.039336931222743,
+        "energy_trace_error": 8.326672684688674e-17,
+        "lower_energy_bound": 0.23225157432303722,
+        "upper_energy_bound": 3.5155987769049326,
+        "tail_bound_coefficient_evaluated_numerically": 9.316520926024723e-05,
+        "quadrature_change": 8.43769498715119e-14
+      },
+      {
+        "support_radius": 2.0,
+        "record_probability": 0.5,
+        "conditional_and_average_energy": 1.5876545634282115,
+        "mass_source_increment": 0.04464891262452696,
+        "radial_source_increment": 0.07336363101490202,
+        "mean_integrated_pressure": 0.5143352169345616,
+        "energy_trace_error": 3.191891195797325e-16,
+        "lower_energy_bound": 0.23225157432303722,
+        "upper_energy_bound": 1.770065882932777,
+        "tail_bound_coefficient_evaluated_numerically": 4.658277025839887e-05,
+        "quadrature_change": 4.463096558993129e-14
+      },
+      {
+        "support_radius": 4.0,
+        "record_probability": 0.5,
+        "conditional_and_average_energy": 0.8256094864245884,
+        "mass_source_increment": 0.08103349331947893,
+        "radial_source_increment": 0.13314795264404863,
+        "mean_integrated_pressure": 0.24819199770170317,
+        "energy_trace_error": 2.7755575615628914e-17,
+        "lower_energy_bound": 0.23225157432303722,
+        "upper_energy_bound": 0.9091522685223716,
+        "tail_bound_coefficient_evaluated_numerically": 2.3291716382805464e-05,
+        "quadrature_change": 2.6645352591003757e-14
+      }
+    ],
+    "Hadamard_and_all_energy_moments_proved_analytically": true,
+    "quadrature_not_interval_certified": true
+  },
+  "causal_completion": {
+    "disjoint_smooth_sterile_modes": true,
+    "theta": 0.5235987755982988,
+    "remote_initial_occupation": [
+      0.4999999999999999,
+      0.4999999999999999
+    ],
+    "remote_after_instantaneous_readout": [
+      0.28349364905389024,
+      0.7165063509461095
+    ],
+    "signal_difference": 0.43301270189221924,
+    "local_phase_relation_error": 0.0,
+    "record_probabilities": [
+      0.9330127018922192,
+      0.0669872981077807
+    ],
+    "excluded": "instantaneous distributed implementation of this whole-mode Lüders map",
+    "no_exclusion_of_finite_duration_causal_implementations": true,
+    "witness_state_differs_from_continuum_vacuum": true
+  },
+  "dependency_hashes": {
+    "joint_fermion_gauss_completion.py": "1de7d9f62d4ea8a5363cbcf2ecfb3149cf06e4e309f820f91dd856e11bc03a3b",
+    "joint_quantum_response_matching.py": "bf47024bcb481e9883bb1f1518bf1a61f267aabe5b1ff72971e61523c1689d96",
+    "joint_background_contact_matching.py": "f725329f179f5a0c787fae8292857c22c9c61273a19caa70ac54578b1030ee3e",
+    "joint_continuum_source_spectrum.py": "8c9d0ea35fc751533a41741a395b6105966d12a00263ffd3c58e5b1e1fe75893",
+    "research_note_524.md": "60996c7a56e37c892f68bbdb71ee966fbe36b7b8fc996cf03be6c75a3f6767b3",
+    "research_note_592.md": "f927bcc892f809473f20c88df42b5ab1c0159552d61c0ff803bec03a7f16842c",
+    "research_note_624.md": "764cc0bd20ac7d36a1e99f91e5507c2ce568af940b832f9a72a99638f8b1bc63",
+    "research_note_632.md": "1c5fbf535b5d106af8c4404f3c55faa656dc1b37b971a76a349adb665bfbef16"
+  },
+  "scope": {
+    "original_mass_mixing_retained": true,
+    "free_constant_background_continuum_branch": true,
+    "conditional_Hadamard_and_finite_energy_proved": true,
+    "same_state_energy_mass_and_stress_sources": true,
+    "local_counterterms_held_fixed_after_record": true,
+    "finite_graph_to_continuum_mapping_open": true,
+    "physical_record_device_and_internal_work_supply_open": true,
+    "instantaneous_extended_instrument_rejected": true,
+    "no_GR_or_dimension_or_SM_derivation_claim": true
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "round": 650,
+  "tests_run": 3,
+  "failures": 0,
+  "errors": 0,
+  "original_modes_and_frame_flux": {
+    "original_probe_reproduced": true,
+    "original_radial_mass_squared": [
+      0.04683851043525822,
+      0.13805672648598158
+    ],
+    "independent_potential_differences": [
+      {
+        "step": 0.004,
+        "original_potential_Hessian_error": 1.0700461656465432e-06
+      },
+      {
+        "step": 0.002,
+        "original_potential_Hessian_error": 2.675107865085513e-07
+      },
+      {
+        "step": 0.001,
+        "original_potential_Hessian_error": 6.687764979307342e-08
+      }
+    ],
+    "frame_flux_rows": [
+      {
+        "mode": 0,
+        "mass_squared": 0.04683851043525822,
+        "time": 0.0,
+        "complete_boundary_symplectic_flux": 0.7,
+        "einstein_pairing": 0.7,
+        "frozen_Jordan_extrinsic_curvature_flux": 0.6999420710732223,
+        "omitted_term": 5.792892677769501e-05,
+        "first_order_Einstein_area_variation": 0.0
+      },
+      {
+        "mode": 0,
+        "mass_squared": 0.04683851043525822,
+        "time": 0.35,
+        "complete_boundary_symplectic_flux": 0.6549663958122839,
+        "einstein_pairing": 0.6549663958122839,
+        "frozen_Jordan_extrinsic_curvature_flux": 0.654912193668877,
+        "omitted_term": 5.420214340690066e-05,
+        "first_order_Einstein_area_variation": 0.0
+      },
+      {
+        "mode": 0,
+        "mass_squared": 0.04683851043525822,
+        "time": 0.9,
+        "complete_boundary_symplectic_flux": 0.43725235690915143,
+        "einstein_pairing": 0.43725235690915143,
+        "frozen_Jordan_extrinsic_curvature_flux": 0.43721617182377037,
+        "omitted_term": 3.618508538105747e-05,
+        "first_order_Einstein_area_variation": 0.0
+      },
+      {
+        "mode": 1,
+        "mass_squared": 0.13805672648598158,
+        "time": 0.0,
+        "complete_boundary_symplectic_flux": 0.6999999999999998,
+        "einstein_pairing": 0.7,
+        "frozen_Jordan_extrinsic_curvature_flux": 0.6568456742493826,
+        "omitted_term": 0.043154325750617284,
+        "first_order_Einstein_area_variation": 0.0
+      },
+      {
+        "mode": 1,
+        "mass_squared": 0.13805672648598158,
+        "time": 0.35,
+        "complete_boundary_symplectic_flux": 0.6475112135419511,
+        "einstein_pairing": 0.6475112135419513,
+        "frozen_Jordan_extrinsic_curvature_flux": 0.6075927709185699,
+        "omitted_term": 0.03991844262338118,
+        "first_order_Einstein_area_variation": 0.0
+      },
+      {
+        "mode": 1,
+        "mass_squared": 0.13805672648598158,
+        "time": 0.9,
+        "complete_boundary_symplectic_flux": 0.4003284493973168,
+        "einstein_pairing": 0.4003284493973169,
+        "frozen_Jordan_extrinsic_curvature_flux": 0.3756485860937006,
+        "omitted_term": 0.024679863303616212,
+        "first_order_Einstein_area_variation": 0.0
+      }
+    ],
+    "plane_wave_time_dependence_not_assigned_to_cutoff_AF_solution": true
+  },
+  "AF_completion": {
+    "parameter_diamond_abs_eps_plus_abs_delta": 0.01,
+    "support_radius": 1.0,
+    "F_lower_bound": {
+      "numerator": 148837,
+      "denominator": 80000,
+      "decimal": 1.8604625
+    },
+    "B_upper_bound": {
+      "numerator": 39427200,
+      "denominator": 22152452569,
+      "decimal": 0.0017798119588426145
+    },
+    "U_upper_bound": {
+      "numerator": 1185921,
+      "denominator": 22152452569,
+      "decimal": 5.3534523832343976e-05
+    },
+    "Newton_image_bound": {
+      "numerator": 1234431603,
+      "denominator": 5671027857664,
+      "decimal": 0.00021767334493547787
+    },
+    "Newton_Lipschitz_bound": {
+      "numerator": 795715605,
+      "denominator": 2835513928832,
+      "decimal": 0.00028062482674093926
+    },
+    "interval_for_conformal_factor": [
+      1.0,
+      1.5
+    ],
+    "sample_B_max": 0.00024145061134422534,
+    "sample_U_max": 2.604866334787805e-06,
+    "sample_count": 101,
+    "sample_not_used_as_proof_of_uniform_bound": true,
+    "nonlinear_AF_constraint_solution_existence_analytic": true,
+    "numerical_solution_of_full_PDE_not_claimed": true,
+    "compact_torus_linearization_stability_not_assumed": true
+  },
+  "boundary_flux": {
+    "compact_interface_integrals": [
+      {
+        "order": 64,
+        "left_outward_flux": 0.6099085978259348,
+        "right_outward_flux": -0.6099085978259348,
+        "two_sided_sum": 0.0,
+        "nonintegrability_curl_magnitude": 0.6099085978259348
+      },
+      {
+        "order": 128,
+        "left_outward_flux": 0.6099085978259301,
+        "right_outward_flux": -0.6099085978259301,
+        "two_sided_sum": 0.0,
+        "nonintegrability_curl_magnitude": 0.6099085978259301
+      },
+      {
+        "order": 192,
+        "left_outward_flux": 0.6099085978259271,
+        "right_outward_flux": -0.6099085978259271,
+        "two_sided_sum": 0.0,
+        "nonintegrability_curl_magnitude": 0.6099085978259271
+      }
+    ],
+    "full_boundary_pairing": [
+      {
+        "step": 0.002,
+        "Jordan_curl": -0.048142334010623775,
+        "Einstein_curl": -0.04814233401062465,
+        "frame_difference": 8.743006318923108e-16,
+        "matched_two_sided_curl": 0.0
+      },
+      {
+        "step": 0.001,
+        "Jordan_curl": -0.04814233330121273,
+        "Einstein_curl": -0.0481423333012136,
+        "frame_difference": 8.673617379884035e-16,
+        "matched_two_sided_curl": 0.0
+      },
+      {
+        "step": 0.0005,
+        "Jordan_curl": -0.04814233312386111,
+        "Einstein_curl": -0.048142333123860244,
+        "frame_difference": 8.673617379884035e-16,
+        "matched_two_sided_curl": 0.0
+      }
+    ],
+    "general_boundary_jet_check_is_kinematic_only": true,
+    "AF_family_supplies_separate_on_shell_witness": true,
+    "two_sided_flux_cancellation_not_single_region_autonomy": true,
+    "no_assertion_against_boundary_edge_extensions_or_flux_charges": true
+  },
+  "dependency_hashes": {
+    "research_note_573.md": "0c3205d1137739062c7e00efeb188f61cc0cee2f77db363f5ba6d4ed525c79c5",
+    "research_note_600.md": "27d905d1aa0f3421e469d812da14db160797bb4387640515dcc1bb09a46e7cc9",
+    "research_note_618.md": "ca1f235278e7aefaff85475bf72a75abf641bc6fce8d95ea95ecfaaa2ad82fcf",
+    "research_note_619.md": "48fd092121bc7893ed0742b70bed8152e709f154950afc7ef55ad3b8fa708027",
+    "research_note_647.md": "093760ac55b2f9fb947c8ba1c067b442e31b36bc8a1107e3946254b77d48e099",
+    "research_note_648.md": "1a3a65d5beb302f887bf212abd6d31f8d874b50c7b7c989bde12e397911889fd",
+    "research_note_649.md": "ae1cc45b9838a306db96cbf25c6ae42974531bc70badeff0deb1afe35eaf104e",
+    "joint_curved_quantum_source.py": "cf6aec9461174f41985b706c1bae776787b198ab77d9e42dfe8057764795775c",
+    "joint_geometric_boundary_matching.py": "ef89f81906e16cf5e76503ed68bf6b0c4746ac54116cb37ad6bcd79119c6341c",
+    "round650_drafts/original_boundary_flux_probe.py": "3e247b0b71c3174f9535bb9612f907abf7a6c480978a723fd175aa0e9b986395",
+    "round650_drafts/original_boundary_flux_probe_results.json": "687550048b2f62a0d28cdd5e941b2822142ff210b87be5dc88bf1e11764a9c89"
+  },
+  "scope": {
+    "given_3plus1_leading_Einstein_five_scalar_action": true,
+    "exact_small_AF_initial_data_family_and_short_time_classical_development": true,
+    "fixed_timelike_interface_only": true,
+    "first_variation_area_zero_not_exact_fixed_area_family": true,
+    "matching_between_two_sides_exact_for_restrictions_of_same_global_solution": true,
+    "no_full_quantum_gravity_or_relational_instrument_completion": true
+  }
+}

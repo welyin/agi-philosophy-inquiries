@@ -1,0 +1,278 @@
+{
+  "date": "2026-10-02",
+  "round": 654,
+  "tests_run": 4,
+  "failures": 0,
+  "errors": 0,
+  "full_mass_pfaffian": {
+    "actual_all32_mode_rows": [
+      {
+        "time_sites": 1,
+        "normalized_Pfaffian": [
+          1.0845714885757807,
+          1.5311961621167472e-18
+        ],
+        "normalized_CAR_trace": [
+          1.0845714885757793,
+          0.0
+        ],
+        "relative_error": 1.228382382809374e-15
+      },
+      {
+        "time_sites": 2,
+        "normalized_Pfaffian": [
+          1.2096998196790454,
+          2.4782702464443863e-18
+        ],
+        "normalized_CAR_trace": [
+          1.2096998196790438,
+          1.2082437986644753e-18
+        ],
+        "relative_error": 1.2848747499656377e-15
+      },
+      {
+        "time_sites": 3,
+        "normalized_Pfaffian": [
+          1.232699383306021,
+          0.0022853381158738236
+        ],
+        "normalized_CAR_trace": [
+          1.232699383306019,
+          0.0022853381158738106
+        ],
+        "relative_error": 1.6211903633728933e-15
+      }
+    ],
+    "block_reconstruction_error": 0.0,
+    "original_group_covariance_error": 1.959146482488703e-15,
+    "original_complex_Y_preserved": true,
+    "time_dependent_conditional_trace_need_not_be_real": true,
+    "nonzero_scalar_mass_insertion_is_declared_candidate": true
+  },
+  "state_and_sources": {
+    "all32_state_rows": [
+      {
+        "time_step": 1.0,
+        "quasiparticle_energy_error": 0.007391866762993415,
+        "covariance_operator_error": 0.0706691790329753,
+        "corrected_BdG_remainder": 0.02991852319847908,
+        "spectrum_identity_error": 1.5543122344752192e-15
+      },
+      {
+        "time_step": 0.5,
+        "quasiparticle_energy_error": 0.0018972121082714288,
+        "covariance_operator_error": 0.03623430051905327,
+        "corrected_BdG_remainder": 0.007611724595303921,
+        "spectrum_identity_error": 2.248201624865942e-15
+      },
+      {
+        "time_step": 0.25,
+        "quasiparticle_energy_error": 0.00047751803966467055,
+        "covariance_operator_error": 0.018235221877458838,
+        "corrected_BdG_remainder": 0.0019115173319961224,
+        "spectrum_identity_error": 8.326672684688674e-15
+      },
+      {
+        "time_step": 0.125,
+        "quasiparticle_energy_error": 0.000119582706813115,
+        "covariance_operator_error": 0.009132555688458584,
+        "corrected_BdG_remainder": 0.0004784213947470869,
+        "spectrum_identity_error": 1.3836154444391013e-14
+      }
+    ],
+    "all5_original_scalar_sources": [
+      {
+        "component": 0,
+        "transfer_insertion": 5.0626892027158,
+        "spectral_derivative": 5.062689202706139,
+        "insertion_error": 9.661604849497962e-12,
+        "original_mass_derivative_error": 1.9666338048924257e-11
+      },
+      {
+        "component": 1,
+        "transfer_insertion": 3.487630339648661,
+        "spectral_derivative": 3.487630339549241,
+        "insertion_error": 9.942002776597292e-11,
+        "original_mass_derivative_error": 1.7233821826182742e-11
+      },
+      {
+        "component": 2,
+        "transfer_insertion": -1.9125714765815245,
+        "spectral_derivative": -1.9125714764811617,
+        "insertion_error": 1.003628291584846e-10,
+        "original_mass_derivative_error": 1.5883138855782725e-11
+      },
+      {
+        "component": 3,
+        "transfer_insertion": 2.9251093171246847,
+        "spectral_derivative": 2.92510931707568,
+        "insertion_error": 4.900480021774456e-11,
+        "original_mass_derivative_error": 1.796074112422478e-11
+      },
+      {
+        "component": 4,
+        "transfer_insertion": 0.3061764661907833,
+        "spectral_derivative": 0.30617646613606553,
+        "insertion_error": 5.471778585786069e-11,
+        "original_mass_derivative_error": 5.5078586040759086e-12
+      }
+    ],
+    "independent_four_mode_density_covariance_error": 5.171391825481106e-16,
+    "eigenvalue_convergence_does_not_imply_equal_finite_step_state": true,
+    "common_limit_proved_on_compact_scalar_sets_not_full_configuration_domain": true
+  },
+  "neutral_state": {
+    "original_neutral_rows": [
+      {
+        "time_step": 1.0,
+        "original_mass": 0.29198381026102366,
+        "effective_energy": 0.2909564277158123,
+        "exact_energy_only_refit_state_trace_distance": 0.020496058133060685,
+        "original_state_trace_distance": 0.02066959784505573,
+        "first_order_H_remainder": 0.004122595318206371,
+        "vacuum_probability_shift": -0.02044223944754936
+      },
+      {
+        "time_step": 0.5,
+        "original_mass": 0.29198381026102366,
+        "effective_energy": 0.29172512851375054,
+        "exact_energy_only_refit_state_trace_distance": 0.010334652732454413,
+        "original_state_trace_distance": 0.010373421906941786,
+        "first_order_H_remainder": 0.0010355528449093913,
+        "vacuum_probability_shift": -0.010327794436230164
+      },
+      {
+        "time_step": 0.25,
+        "original_mass": 0.29198381026102366,
+        "effective_energy": 0.29191902370668255,
+        "exact_energy_only_refit_state_trace_distance": 0.005178304167991768,
+        "original_state_trace_distance": 0.005187388948240659,
+        "first_order_H_remainder": 0.00025919798053708097,
+        "vacuum_probability_shift": -0.00517744270299364
+      }
+    ],
+    "finite_step_Bogoliubov_rotation_would_change_sources": true,
+    "no_state_match_inferred_from_only_partition_spectrum": true
+  },
+  "common_auxiliary_limit": {
+    "lambda0": "7429/327680",
+    "largest_excited_ratio": "8/17",
+    "rows": [
+      {
+        "time_sites": 2,
+        "time_step": 1.0,
+        "auxiliary_excited_trace": 4.876318337940717,
+        "auxiliary_state_trace_distance": 0.8298254208688024,
+        "uniform_tail_bound": 7916.733564013841,
+        "first_auxiliary_gap": 0.7537718023763802,
+        "holonomy_weight": [
+          4.736998906446502,
+          -1.2129095854621713e-17
+        ],
+        "holonomy_derivative": [
+          -9.651281512719951,
+          -2.942583558500883e-17
+        ]
+      },
+      {
+        "time_sites": 4,
+        "time_step": 0.5,
+        "auxiliary_excited_trace": 0.5533572877026824,
+        "auxiliary_state_trace_distance": 0.3562331036673881,
+        "uniform_tail_bound": 1753.1866716155218,
+        "first_auxiliary_gap": 1.5075436047527604,
+        "holonomy_weight": [
+          1.4729485362221106,
+          -9.368965583364604e-19
+        ],
+        "holonomy_derivative": [
+          -0.7340192714262544,
+          -9.96243619768422e-19
+        ]
+      },
+      {
+        "time_sites": 8,
+        "time_step": 0.25,
+        "auxiliary_excited_trace": 0.024118710803949422,
+        "auxiliary_state_trace_distance": 0.02355069832189264,
+        "uniform_tail_bound": 85.97900656047194,
+        "first_auxiliary_gap": 3.015087209505521,
+        "holonomy_weight": [
+          1.02099952402631,
+          -1.1167995872260109e-21
+        ],
+        "holonomy_derivative": [
+          -0.02892838046102452,
+          -1.1174626623049132e-21
+        ]
+      },
+      {
+        "time_sites": 16,
+        "time_step": 0.125,
+        "auxiliary_excited_trace": 5.78439166432264e-05,
+        "auxiliary_state_trace_distance": 5.7840570918063613e-05,
+        "uniform_tail_bound": 0.20678591202902677,
+        "first_auxiliary_gap": 6.030174419011042,
+        "holonomy_weight": [
+          1.0000503857628158,
+          -1.4059368035405295e-27
+        ],
+        "holonomy_derivative": [
+          -6.919797723383507e-05,
+          -1.4059368860453771e-27
+        ]
+      },
+      {
+        "time_sites": 32,
+        "time_step": 0.0625,
+        "auxiliary_excited_trace": 3.345908803757977e-10,
+        "auxiliary_state_trace_distance": 3.345908802638466e-10,
+        "uniform_tail_bound": 1.1961289382549555e-06,
+        "first_auxiliary_gap": 12.060348838022083,
+        "holonomy_weight": [
+          1.0000000002914502,
+          -2.2255196520203085e-39
+        ],
+        "holonomy_derivative": [
+          -4.0026647064054126e-10,
+          -2.22551965202031e-39
+        ]
+      },
+      {
+        "time_sites": 64,
+        "time_step": 0.03125,
+        "auxiliary_excited_trace": 1.119510572305608e-20,
+        "auxiliary_state_trace_distance": 1.119510572305608e-20,
+        "uniform_tail_bound": 4.002138344935318e-17,
+        "first_auxiliary_gap": 24.120697676044166,
+        "holonomy_weight": [
+          1.0,
+          -5.576512119266371e-63
+        ],
+        "holonomy_derivative": [
+          -1.3392551079637349e-20,
+          -5.576512119266371e-63
+        ]
+      }
+    ],
+    "exact_singlet_low_energy_projection": true,
+    "finite_gap_nontrivial_auxiliary_dynamics_not_preserved_by_fixed_kernel_refinement": true,
+    "discarded_vacuum_energy_per_step": 25.967356040159668,
+    "vacuum_subtraction_not_a_solution_of_gravitational_energy": true
+  },
+  "dependency_hashes": {
+    "research_note_598.md": "3cfd675bceca95c6fcca2a72181a52cccb44cc4d5421b61fea0159002d80b8c5",
+    "research_note_612.md": "3e2645a4c528c4b8d1650c9614b975e898ad8f8b51652db3a7307a4a4c8a3de6",
+    "research_note_614.md": "ac3db5a54d1f31939f92bfc762f6835bc1485d69052d5b775e7df54108cd0caf",
+    "research_note_615.md": "4077102c707a541188dc2556187bf299ac76d655fbab5e8476491f162173d969",
+    "research_note_643.md": "802e0a296b0e1f23360905ef22846c1e6414f7e3a5e0d955f2e2271cc9bb26f5",
+    "research_note_646.md": "526763e66b18198cb9cf58af304ae7b80521af87e3e9a7213516ce15bdc4c4ac",
+    "research_note_653.md": "8c24f44505866167353b1addd8e38930e9410b178f1d124c7c180689d9c434dc",
+    "joint_fermion_gauss_completion.py": "1de7d9f62d4ea8a5363cbcf2ecfb3149cf06e4e309f820f91dd856e11bc03a3b",
+    "joint_spinor_subgroup_mass.py": "712913dd7ff8bc44c0f0da9754daa290b645530d54fbf6da6d609148b4894c53",
+    "joint_gauss_fermion_influence.py": "15142bef8c560c21c61756098b7942e2937f66b2dd6defc74b3b937f0e634cde",
+    "joint_subgroup_measure_source.py": "cc1245f860509bb9b913cb0c28b340396f47a0b5d208f5af1364770b16acff7e",
+    "joint_chiral_character_state_results.json": "3d995cdd0af48ef27238d4884fff44f8a8ff30bfefb3b4a7d4479741a4102518"
+  },
+  "scope": "Declared spatially trivial physical mass insertion: all original 32 modes and complex masses, positive temporal transfer, common state/source limit on compact scalar backgrounds. Original auxiliary kernel projects to its singlet in that limit. Not full spatial/chiral/GR equivalence."
+}

@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-02",
+  "round": 665,
+  "tests_run": 3,
+  "failures": 0,
+  "errors": 0,
+  "full_CAR_auxiliary_lift": {
+    "original_modes": 32,
+    "auxiliary_real_fields": [
+      0.31,
+      -0.27,
+      0.43,
+      0.18,
+      -0.36,
+      0.22
+    ],
+    "time_step": 0.19,
+    "a": 0.035,
+    "normalized_trace": [
+      1.9476363328014965,
+      -0.000865464748391026
+    ],
+    "lifted_trace_square_relative_error": 1.9245043693747336e-14,
+    "missing_lift_trace_factor": 3.0648542032930024,
+    "full_source_error": 9.973658505831941e-08,
+    "omitted_lift_source_error": 6.720000099736557,
+    "required_lift_geometric_derivative": -6.720000000000001,
+    "conditional_field_not_integrated_full_Gauss_process": true
+  },
+  "normalized_auxiliary_measure": {
+    "conditional_lepton_modes": 8,
+    "Gaussian_points_per_factor": 24,
+    "independent_auxiliary_fields": 6,
+    "mean_factor_error": 5.974501499666866e-14,
+    "max_physical_score_error": 7.532157970824262e-15,
+    "positive_mean_step_minimum": 0.7137734981526437,
+    "source": [
+      -0.6287319916196946,
+      -1.5315996053255546e-18
+    ],
+    "dropped_normalization_source_shift": [
+      -18.000000000000004,
+      4.6883166645655464e-18
+    ],
+    "mean_spin_Stranger_error": 0.001412221696808049,
+    "finite_spin_splitting_not_exact_rotation_invariant": true,
+    "positive_average_does_not_imply_positive_path_integrands": true
+  },
+  "original_spatial_current": {
+    "actual_original_neutral_modes": 4,
+    "original_node_singlets": [
+      0.62,
+      -0.41
+    ],
+    "hopping": 0.23,
+    "geometry_independent_hopping_is_allowed_diagnostic_input": true,
+    "contact_energy_current_norm": 0.9209174852727025,
+    "complete_current_identity_error": 1.1102230246251565e-16,
+    "local_spin_hopping_commutator": 0.46,
+    "global_spin_commutator": 0.0,
+    "joint_thermal_logZ": 3.9313149920599733,
+    "first_node_contact_geometry_source": -1.2665160898435612,
+    "independent_source_difference_error": 6.455236345459525e-09,
+    "stationary_current_mean": 9.439079081127949e-18,
+    "stationary_current_second_moment": 0.07542254653165131,
+    "no_full_bosonic_path_integral_claim": true
+  },
+  "dependency_hashes": {
+    "joint_connection_matter_matching.py": "d53734e962b99072159a37cd3aec511337496ed8170c0c4cdd78a66e605dcdbe",
+    "joint_gauss_fermion_influence.py": "15142bef8c560c21c61756098b7942e2937f66b2dd6defc74b3b937f0e634cde",
+    "joint_fermion_gauss_completion.py": "1de7d9f62d4ea8a5363cbcf2ecfb3149cf06e4e309f820f91dd856e11bc03a3b",
+    "research_note_603.md": "cc0b578680b1cd0dae279a2d7533fc4853772e4821358f17b3f57b4ac47b3fe5",
+    "research_note_623.md": "2ef362e618a11588e5edcf20c0090dd88e29165b2ab0405b1c6a5be1a9b0d804",
+    "research_note_624.md": "764cc0bd20ac7d36a1e99f91e5507c2ce568af940b832f9a72a99638f8b1bc63",
+    "research_note_643.md": "802e0a296b0e1f23360905ef22846c1e6414f7e3a5e0d955f2e2271cc9bb26f5",
+    "research_note_655.md": "a500b85edb04ac84d69f1778db85ac3d47f2c1a567b81832f5c350dd79251282",
+    "research_note_664.md": "de17fc110266d152fb56d9316710ed518cafcf49756b419d8ff18bf675f6f528",
+    "round665_drafts/spin_charge_auxiliary_probe.py": "05d65e2b0708dc915c839f536b6d25af7927f0df93b7d26d0520c4924896704e",
+    "round665_drafts/spin_charge_auxiliary_probe_results.json": "aca15e95d376109cd9e177c474d45e3d4d88584da9f03cad83f8fb45deb783f5"
+  },
+  "scope": "Declared contact extension on the original positive-geometry finite graph. Whole-graph common domain, Gauss heat state, original scalar records and ordered auxiliary representation proved in note; numerics use actual32 conditional lift, eight-lepton auxiliary mean and invariant two-node neutral spatial sector. No sign-free integrand, unique torsion measure, continuum limit or quantum GR.",
+  "all_checks_passed": true
+}

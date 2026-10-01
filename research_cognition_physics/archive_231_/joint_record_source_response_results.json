@@ -1,0 +1,161 @@
+{
+  "round": 624,
+  "tests_run": 3,
+  "failures": 0,
+  "errors": 0,
+  "conditional_response": {
+    "quadrature": [
+      {
+        "nodes": 64,
+        "rows": [
+          {
+            "sign": 1,
+            "probability": 0.5972287740575535,
+            "probability_derivative": 1.147392075826252,
+            "mean": 0.40099602466584555,
+            "conditional_mean_derivative": 4.983242533216489,
+            "post_state_only": 4.987933888822654,
+            "selection_correction": -0.004691355606164925
+          },
+          {
+            "sign": -1,
+            "probability": 0.4027712259424463,
+            "probability_derivative": -1.147392075826252,
+            "mean": 0.398523095614087,
+            "conditional_mean_derivative": 4.9895311179987365,
+            "post_state_only": 4.989619522131002,
+            "selection_correction": -8.840413226408406e-05
+          }
+        ],
+        "unconditional_mean_derivative": 4.988612813416745,
+        "weighted_conditional_derivative": 4.9857753942186775,
+        "probability_weight_term": 0.0028374191980682917,
+        "classical_record_fisher": 5.4729884542657885
+      },
+      {
+        "nodes": 96,
+        "rows": [
+          {
+            "sign": 1,
+            "probability": 0.5972287740575536,
+            "probability_derivative": 1.1473920758262521,
+            "mean": 0.40099602466584544,
+            "conditional_mean_derivative": 4.983242533216489,
+            "post_state_only": 4.987933888822654,
+            "selection_correction": -0.004691355606164435
+          },
+          {
+            "sign": -1,
+            "probability": 0.4027712259424464,
+            "probability_derivative": -1.1473920758262521,
+            "mean": 0.398523095614087,
+            "conditional_mean_derivative": 4.989531117998735,
+            "post_state_only": 4.989619522131001,
+            "selection_correction": -8.840413226449732e-05
+          }
+        ],
+        "unconditional_mean_derivative": 4.988612813416745,
+        "weighted_conditional_derivative": 4.9857753942186775,
+        "probability_weight_term": 0.0028374191980681807,
+        "classical_record_fisher": 5.472988454265789
+      },
+      {
+        "nodes": 128,
+        "rows": [
+          {
+            "sign": 1,
+            "probability": 0.5972287740575537,
+            "probability_derivative": 1.1473920758262524,
+            "mean": 0.4009960246658454,
+            "conditional_mean_derivative": 4.9832425332164885,
+            "post_state_only": 4.987933888822653,
+            "selection_correction": -0.004691355606164329
+          },
+          {
+            "sign": -1,
+            "probability": 0.40277122594244635,
+            "probability_derivative": -1.1473920758262524,
+            "mean": 0.39852309561408705,
+            "conditional_mean_derivative": 4.989531117998738,
+            "post_state_only": 4.989619522131001,
+            "selection_correction": -8.840413226433543e-05
+          }
+        ],
+        "unconditional_mean_derivative": 4.988612813416747,
+        "weighted_conditional_derivative": 4.985775394218678,
+        "probability_weight_term": 0.002837419198068014,
+        "classical_record_fisher": 5.472988454265791
+      }
+    ],
+    "convergence_error": 1.7763568394002505e-15,
+    "original_compact_Gauss_packet_with_singlet_phase": true,
+    "original_full_H_instantaneous_generator_not_time_propagation": true
+  },
+  "original_generator": {
+    "expected_current": 1.1357480867901009,
+    "rows": [
+      {
+        "step": 0.0005,
+        "current": 1.1357342746055936,
+        "error": 1.3812184507244751e-05
+      },
+      {
+        "step": 0.00025,
+        "current": 1.135744633539632,
+        "error": 3.4532504689099852e-06
+      },
+      {
+        "step": 0.000125,
+        "current": 1.1357472215785227,
+        "error": 8.652115781604408e-07
+      }
+    ],
+    "target_metric_and_measure_drift_retained": true,
+    "all_other_full_H_terms_commute_with_original_effect": true
+  },
+  "coarse_record_response": {
+    "rows": [
+      {
+        "reads": 1,
+        "full_record_fisher": 5.472988454265791,
+        "parity_fisher": 5.472988454265791,
+        "lost_score_variance": 0.0,
+        "min_history_probability": 0.40277122594244635
+      },
+      {
+        "reads": 2,
+        "full_record_fisher": 10.939757122694692,
+        "parity_fisher": 0.7922434177397806,
+        "lost_score_variance": 10.147513704954909,
+        "min_history_probability": 0.1623615213902236
+      },
+      {
+        "reads": 3,
+        "full_record_fisher": 16.400316593289574,
+        "parity_fisher": 0.0688093202536524,
+        "lost_score_variance": 16.33150727303592,
+        "min_history_probability": 0.06550486131311009
+      },
+      {
+        "reads": 4,
+        "full_record_fisher": 21.85467743005019,
+        "parity_fisher": 0.004860776907695451,
+        "lost_score_variance": 21.849816653142497,
+        "min_history_probability": 0.02645020080463023
+      }
+    ],
+    "all_reads_after_same_infinitesimal_original_H_flow": true,
+    "zero_wait_between_reads": true,
+    "coarse_reporting_not_a_new_direct_instrument": true,
+    "score_variance_identity_is_analytic": true
+  },
+  "dependency_hashes": {
+    "joint_geometry_work_noise.py": "d4fbcdc46fb208b4cc63d02e34e7aac9ffab4304c6bdcc4dd98ba7ce805afff6",
+    "research_note_586.md": "29b914c6fcc56eed14d6b53d97ec09cea03db9841f09e4d78c00ff43716a57b2",
+    "research_note_592.md": "f927bcc892f809473f20c88df42b5ab1c0159552d61c0ff803bec03a7f16842c",
+    "research_note_593.md": "2d3a1986243a07a31e69abe495d3a3044234718f1648a7313c0ebaf7134bf91b",
+    "research_note_598.md": "3cfd675bceca95c6fcca2a72181a52cccb44cc4d5421b61fea0159002d80b8c5",
+    "research_note_623.md": "2ef362e618a11588e5edcf20c0090dd88e29165b2ab0405b1c6a5be1a9b0d804"
+  },
+  "scope": "Same original fixed graph Hamiltonian and primitive singlet instrument. Full finite-history source expansion is analytic under common-domain and A2 conditions; numerics test original instantaneous generator on a normal Gauss packet. No full graph evolution simulation, new hardware, continuum or gravity completion."
+}

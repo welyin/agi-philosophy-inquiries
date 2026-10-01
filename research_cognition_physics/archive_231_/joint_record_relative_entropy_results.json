@@ -1,0 +1,126 @@
+{
+  "round": 638,
+  "tests_run": 3,
+  "failures": 0,
+  "errors": 0,
+  "record_energy": {
+    "original_full_inverse_metric_Dirichlet_error": 5.773159728050814e-15,
+    "original_random_unitary_kernel_error": 2.220446049250313e-16,
+    "packet_rows": [
+      {
+        "quadrature_order": 96,
+        "actual_Gauss_packet_injected_energy": 0.03201943093400049,
+        "probabilities": [
+          0.5972287740575511,
+          0.4027712259424467
+        ]
+      },
+      {
+        "quadrature_order": 160,
+        "actual_Gauss_packet_injected_energy": 0.03201943093400049,
+        "probabilities": [
+          0.5972287740575531,
+          0.40277122594244574
+        ]
+      }
+    ],
+    "full_model_universal_injection_bound": 0.038281249999999996,
+    "chosen_beta": 2.0,
+    "full_Gibbs_unconditional_relative_entropy_upper": 0.07656249999999999,
+    "full_Gibbs_record_retained_relative_entropy_upper": 0.7697096805599453,
+    "actual_full_Gibbs_energy_and_relative_entropy_not_numerically_evaluated": true
+  },
+  "reference_support": {
+    "rows": [
+      {
+        "quadrature_order": 96,
+        "Gram_eigenvalues": [
+          0.35594650275927925,
+          1.0552807074224533,
+          1.5887727898182675
+        ],
+        "density_trace_after_record": 1.0000000000000002,
+        "strictly_positive_support_leakage": 8.883236161347861e-05
+      },
+      {
+        "quadrature_order": 160,
+        "Gram_eigenvalues": [
+          0.3559465027592798,
+          1.0552807074224528,
+          1.5887727898182673
+        ],
+        "density_trace_after_record": 0.9999999999999998,
+        "strictly_positive_support_leakage": 8.88323616134785e-05
+      }
+    ],
+    "quadrature_change": 1.0842021724855044e-19,
+    "reference_uniform_on_three_original_Gauss_phase_packets": true,
+    "relative_entropy_after_untruncated_record_is_infinite_by_support": true,
+    "phase_packet_span_is_not_claimed_to_be_an_H_spectral_band": true,
+    "all_nonzero_finite_H_band_obstruction_proved_analytically": true
+  },
+  "common_reference": {
+    "rows": [
+      {
+        "quadrature_order": 96,
+        "reference_minimum_eigenvalue": 1.5275659786439164e-09,
+        "noncommutativity_norm": 4.514330362856806e-05,
+        "full_relative_entropy": 1.5790559415778792e-05,
+        "average_conditional_relative_entropy": 0.0014182129838456832,
+        "Holevo_record_information": 0.0014024224244299044,
+        "classical_record_entropy": 0.6741193152914938,
+        "common_reset_relative_entropies": [
+          3.33066907387547e-16,
+          1.5767316460062663e-05,
+          1.5790559415778792e-05
+        ],
+        "reset_composition_error": 0.0,
+        "actual_original_H_spectral_matrices_not_computed": true
+      },
+      {
+        "quadrature_order": 160,
+        "reference_minimum_eigenvalue": 1.5275659786439164e-09,
+        "noncommutativity_norm": 4.5143303628571136e-05,
+        "full_relative_entropy": 1.5790559415779443e-05,
+        "average_conditional_relative_entropy": 0.0014182129838452406,
+        "Holevo_record_information": 0.0014024224244294614,
+        "classical_record_entropy": 0.6741193152914936,
+        "common_reset_relative_entropies": [
+          2.2204460492503136e-16,
+          1.576731646006288e-05,
+          1.5790559415779443e-05
+        ],
+        "reset_composition_error": 0.0,
+        "actual_original_H_spectral_matrices_not_computed": true
+      }
+    ],
+    "quadrature_change": 4.430050076775771e-16,
+    "all_fixture_vectors_are_original_compact_Gauss_states": true,
+    "non_Gibbs_reference_declared": true,
+    "original_full_Gibbs_convergence_is_analytic": true
+  },
+  "dependency_hashes": {
+    "research_note_305.md": "7f92841ddf0941f16864e3f8a33ea396dd753e11fbfb038b1ae213384808e4c9",
+    "research_note_317.md": "74bf6b70c99357ffbeaf0ac54296d2cd55f7365ab1463f174383ebf6abecc0b6",
+    "research_note_578.md": "14d90954a269b357a0e8b40f7eed2e03ea778c6ef28dd4eb25803e4f5cd8a402",
+    "research_note_579.md": "8444240ebb9252a8cdbbb02b1f1fd35e098cce2dd2a8857ee01b81a0ea3faf99",
+    "research_note_592.md": "f927bcc892f809473f20c88df42b5ab1c0159552d61c0ff803bec03a7f16842c",
+    "research_note_598.md": "3cfd675bceca95c6fcca2a72181a52cccb44cc4d5421b61fea0159002d80b8c5",
+    "research_note_603.md": "cc0b578680b1cd0dae279a2d7533fc4853772e4821358f17b3f57b4ac47b3fe5",
+    "research_note_617.md": "68d930ea7de4a53b5fd098a05b499094328868010008f398178d7c26b6c4c2e9",
+    "research_note_637.md": "97818586a1415b82ae30209d8bd856f42278b9e8e34b813231b1172ada02530c",
+    "joint_record_band_control.py": "2f76d920c14894ef836677d8d06de575660a5b8e9a9a67f15a1dca2725e3ecac",
+    "joint_geometry_work_noise.py": "d4fbcdc46fb208b4cc63d02e34e7aac9ffab4304c6bdcc4dd98ba7ce805afff6",
+    "round592_drafts/record_band_entry.py": "ae60af0675c6b0349c0e349bc92cf4c40ab2a40f0d44b9577dcdcce575e62030",
+    "round638_drafts/relative_entropy_entry.md": "056c2512ac072a55b0ff006f5420e62d88aa58a2149157a6dc5641ac500779da"
+  },
+  "scope": {
+    "full_original_Gauss_Gibbs_reference_and_record_used_analytically": true,
+    "finite_record_retained_relative_entropy_bound": true,
+    "naive_finite_reference_untruncated_record_rejected": true,
+    "common_Gauss_spectral_reset_transports_relative_entropy": true,
+    "fixed_region_relative_entropy_limit_retained": true,
+    "numerical_witnesses_are_original_Gauss_packets_not_arbitrary_matrices": true,
+    "no_spatial_continuum_or_area_law_or_GR_or_autonomous_instrument_claim": true
+  }
+}

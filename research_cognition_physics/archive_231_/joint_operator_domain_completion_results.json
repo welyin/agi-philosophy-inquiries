@@ -1,0 +1,130 @@
+{
+  "round": 623,
+  "tests_run": 3,
+  "failures": 0,
+  "errors": 0,
+  "target_laplacian": {
+    "points": 25,
+    "original_potential_relative_error": 5.777640969424014e-14,
+    "sampled_bound_ratio": 0.01164292848733057,
+    "constants": {
+      "lambda_lower": 0.09245786682717515,
+      "eta": 0.9382682076037214,
+      "b0": 0.3703907543776713,
+      "t_threshold": 0.7895199930596097,
+      "kappa": 0.002543594590547768,
+      "polynomial_constant": 1.5344709212229124,
+      "coercive_control": 393.14441213080585,
+      "laplacian_control": 603.268668255998
+    },
+    "geodesic_steps": [
+      {
+        "step": 0.01,
+        "relative_error": 6.080692947417867e-05
+      },
+      {
+        "step": 0.005,
+        "relative_error": 1.520160531666486e-05
+      },
+      {
+        "step": 0.0025,
+        "relative_error": 3.800392139688019e-06
+      }
+    ],
+    "bound_proof_is_global_polynomial_not_sampling": true
+  },
+  "graph_norm_identity": {
+    "rows": [
+      {
+        "radial_points": 48,
+        "radius": 3.7,
+        "norm": 1.1920374866720889,
+        "h_norm_squared": 17.98069521365999,
+        "t_norm_squared": 2.7082672452548833,
+        "w_norm_squared": 12.193844290396498,
+        "positive_cross": 9.236612878108877,
+        "laplacian_term": -6.680765045480344,
+        "finite_radius_boundary": 0.5227358453800847,
+        "relative_residual": 5.615253243585658e-16,
+        "residual_if_boundary_omitted": 0.5227358453800726
+      },
+      {
+        "radial_points": 96,
+        "radius": 3.7,
+        "norm": 1.1920374866720977,
+        "h_norm_squared": 17.98069521366003,
+        "t_norm_squared": 2.708267245254903,
+        "w_norm_squared": 12.193844290396498,
+        "positive_cross": 9.236612878108929,
+        "laplacian_term": -6.680765045480392,
+        "finite_radius_boundary": 0.5227358453800847,
+        "relative_residual": 5.615253243585646e-16,
+        "residual_if_boundary_omitted": 0.5227358453800939
+      }
+    ],
+    "quadrature_relative_difference": 2.2461012974342584e-15,
+    "full_original_angular_potential_retained": true,
+    "target_factor_identity_not_full_graph_spectral_test": true
+  },
+  "subordinate_terms": {
+    "rows": [
+      {
+        "rho": 2.0,
+        "onsite": 1.8139221343618988,
+        "edge_distance_squared": 16.000000000000004,
+        "geodesic_error": 2.0898315757650005e-16,
+        "full_CAR_mass_upper_bound": 126.24913895679347,
+        "edge_to_onsite": 8.820665284857158,
+        "mass_to_onsite": 69.60008732745597
+      },
+      {
+        "rho": 4.0,
+        "onsite": 111.35110599032937,
+        "edge_distance_squared": 64.00000000000006,
+        "geodesic_error": 8.745141363201234e-16,
+        "full_CAR_mass_upper_bound": 341.445419561711,
+        "edge_to_onsite": 0.5747585480251838,
+        "mass_to_onsite": 3.0663855246427896
+      },
+      {
+        "rho": 6.0,
+        "onsite": 3366.0719615371504,
+        "edge_distance_squared": 143.99999999999966,
+        "geodesic_error": 2.3521414701024006e-15,
+        "full_CAR_mass_upper_bound": 797.2025020050631,
+        "edge_to_onsite": 0.04277983407527646,
+        "mass_to_onsite": 0.23683465805674953
+      },
+      {
+        "rho": 8.0,
+        "onsite": 90642.47596825079,
+        "edge_distance_squared": 255.99999999999883,
+        "geodesic_error": 4.5342026717765145e-15,
+        "full_CAR_mass_upper_bound": 1814.6179407271813,
+        "edge_to_onsite": 0.0028242829563665892,
+        "mass_to_onsite": 0.02001950985278453
+      },
+      {
+        "rho": 10.0,
+        "onsite": 2387959.774804624,
+        "edge_distance_squared": 399.99999999999704,
+        "geodesic_error": 7.371216410877847e-15,
+        "full_CAR_mass_upper_bound": 4110.498170138461,
+        "edge_to_onsite": 0.00016750700921363884,
+        "mass_to_onsite": 0.0017213431371450847
+      }
+    ],
+    "original_32_mode_complex_Dirac_Majorana_retained": true,
+    "numeric_branch": "opposite two-node rays, identity gauge link",
+    "full_graph_and_all_links_bound_proved_analytically": true
+  },
+  "dependency_hashes": {
+    "joint_curved_quantum_source.py": "cf6aec9461174f41985b706c1bae776787b198ab77d9e42dfe8057764795775c",
+    "joint_fermion_gauss_completion.py": "1de7d9f62d4ea8a5363cbcf2ecfb3149cf06e4e309f820f91dd856e11bc03a3b",
+    "research_note_589.md": "b1efa5d01e9d5caf80f9fbcff3261ed3fe1a0190a514af1a10624a555e30ce97",
+    "research_note_598.md": "3cfd675bceca95c6fcca2a72181a52cccb44cc4d5421b61fea0159002d80b8c5",
+    "research_note_603.md": "cc0b578680b1cd0dae279a2d7533fc4853772e4821358f17b3f57b4ac47b3fe5",
+    "research_note_622.md": "975e64306b1a6bfece9b24b87a283d5630b38a3d03180f22b7e520f74cb3e48e"
+  },
+  "scope": "Original full fixed finite graph at positive external geometry; fixed target and onsite parameters. Common operator domain and thermal weak second variations proved in note. No continuum, dynamic gravity, source essential self-adjointness, or strong second derivative claimed."
+}

@@ -1,0 +1,152 @@
+{
+  "round": 643,
+  "tests_run": 3,
+  "failures": 0,
+  "errors": 0,
+  "conditional_full_matter": {
+    "rows": [
+      {
+        "contour": "Euclidean",
+        "z": [
+          [
+            0.4,
+            0.0
+          ],
+          [
+            0.3,
+            0.0
+          ],
+          [
+            0.5,
+            0.0
+          ],
+          [
+            0.25,
+            0.0
+          ]
+        ],
+        "full32_normalized_trace": [
+          0.7546832098675538,
+          3.8163916471489756e-16
+        ],
+        "trace_square_determinant_error": 1.2106459988934468e-14,
+        "conditional_lapse_insertion": [
+          0.5273045051299667,
+          2.255682619856092e-16
+        ],
+        "insertion_error": 5.566633577147779e-16
+      },
+      {
+        "contour": "mixed_contour",
+        "z": [
+          [
+            0.7,
+            0.0
+          ],
+          [
+            0.0,
+            0.4
+          ],
+          [
+            -0.0,
+            -0.6
+          ],
+          [
+            0.0,
+            0.25
+          ]
+        ],
+        "full32_normalized_trace": [
+          0.37792086269649805,
+          0.11261783430299753
+        ],
+        "trace_square_determinant_error": 4.503251263522816e-15,
+        "conditional_lapse_insertion": [
+          -0.2979139481782005,
+          0.14806474574935133
+        ],
+        "insertion_error": 1.6883057536160649e-16
+      }
+    ],
+    "independent_4_mode_Fock_error": 1.7053618778096302e-13,
+    "original_BdG_path_noncommutativity": 0.6830920396160209,
+    "normalized_by_Fock_dimension": 4294967296,
+    "explicit_paired_Fock_dimension": 256,
+    "all_original32_modes_retained": true,
+    "no_full_bosonic_path_integration_or_Gauss_average_performed": true
+  },
+  "gauge_order_and_pairing": {
+    "original_simultaneous_gauge_covariance_error": 5.467815649973092e-15,
+    "quotient_lift_error": 1.047382306668854e-15,
+    "full32_gauge_determinant_error": 5.329359630937609e-15,
+    "original_weight": [
+      0.7546832098675538,
+      3.8163916471489756e-16
+    ],
+    "omitting_Gauss_closure_weight": [
+      1.377037153934932,
+      -2.2390183033861904e-17
+    ],
+    "replacing_ordered_history_by_average_weight": [
+      0.7311547647433534,
+      5.152128723651117e-16
+    ],
+    "deleting_original_Majorana_weight": [
+      0.7522503090027677,
+      3.8510861166685117e-16
+    ],
+    "closure_omission_difference": 0.6223539440673782,
+    "ordering_omission_difference": 0.02352844512420038,
+    "Majorana_omission_difference": 0.0024329008647860917,
+    "these_are_conditional_factors_not_physical_partition_functions": true
+  },
+  "common_source": {
+    "conditional_weight": [
+      0.7546832098675538,
+      3.8163916471489756e-16
+    ],
+    "original_mass_lapse_insertion": [
+      0.5273045051299667,
+      2.255682619856092e-16
+    ],
+    "logarithmic_conditional_derivative": [
+      0.6987097344096316,
+      -5.444236322663284e-17
+    ],
+    "rows": [
+      {
+        "step": 0.0002,
+        "finite_difference": [
+          0.5273045362078066,
+          3.686287386450715e-13
+        ],
+        "error": 3.1077839859302326e-08
+      },
+      {
+        "step": 0.0001,
+        "finite_difference": [
+          0.5273045129061682,
+          -1.8214596497756474e-12
+        ],
+        "error": 7.776201673907585e-09
+      }
+    ],
+    "original_full_H_source_also_requires_bosonic_kinetic_and_potential_terms": true,
+    "differentiation_of_the_full_source_is_operator_Duhamel_not_a_Brownian_score": true
+  },
+  "dependency_hashes": {
+    "research_note_598.md": "3cfd675bceca95c6fcca2a72181a52cccb44cc4d5421b61fea0159002d80b8c5",
+    "research_note_603.md": "cc0b578680b1cd0dae279a2d7533fc4853772e4821358f17b3f57b4ac47b3fe5",
+    "research_note_623.md": "2ef362e618a11588e5edcf20c0090dd88e29165b2ab0405b1c6a5be1a9b0d804",
+    "research_note_642.md": "8fefb96c5e63430f1c0be629ab4cf3a87623f9f40d18753f8b4c4f83f214881f",
+    "joint_fermion_gauss_completion.py": "1de7d9f62d4ea8a5363cbcf2ecfb3149cf06e4e309f820f91dd856e11bc03a3b",
+    "joint_region_energy_gluing.py": "3680874356ce8a2a5c217dd50b7800635e90406f0d3ab48e61ae26e14b9654e0"
+  },
+  "scope": {
+    "full_original_nonlinear_Gauss_heat_representation_proved_in_note": true,
+    "finite_graph_and_given_positive_geometry": true,
+    "fermion_elimination_keeps_order_and_Gauss_closure": true,
+    "numerical_results_are_original32_mode_conditional_factors": true,
+    "no_continuum_chiral_GR_or_autonomous_design_claim": true
+  }
+}

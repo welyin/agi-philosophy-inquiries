@@ -1,0 +1,186 @@
+{
+  "date": "2026-10-02",
+  "round": 664,
+  "tests_run": 3,
+  "failures": 0,
+  "errors": 0,
+  "scalar_connection": {
+    "original_M": 2.0,
+    "minimal_Jordan_connection_branch_is_extra_input": true,
+    "algebraic_elimination_error": 1.1102230246251565e-15,
+    "stationarity_error": 6.661338147750939e-11,
+    "target_curvature_rows": [
+      {
+        "phi": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "F": 2.0,
+        "analytic_curvatures": [
+          -3.3333333333333335,
+          -6.666666666666667
+        ],
+        "checks": [
+          {
+            "step": 0.0002,
+            "curvatures": [
+              -3.333333344444444,
+              -6.666666688888889
+            ],
+            "max_error": 2.2222222284540294e-08
+          },
+          {
+            "step": 0.0001,
+            "curvatures": [
+              -3.333333336111111,
+              -6.666666672222221
+            ],
+            "max_error": 5.555554238867444e-09
+          }
+        ]
+      },
+      {
+        "phi": [
+          0.6,
+          0.2,
+          -0.4,
+          0.3,
+          0.8
+        ],
+        "F": 1.785,
+        "analytic_curvatures": [
+          -3.3333333333333335,
+          -7.228758169934641
+        ],
+        "checks": [
+          {
+            "step": 0.0002,
+            "curvatures": [
+              -3.333333347830138,
+              -7.228758199831798
+            ],
+            "max_error": 2.9897157638458793e-08
+          },
+          {
+            "step": 0.0001,
+            "curvatures": [
+              -3.3333333369578377,
+              -7.228758177407948
+            ],
+            "max_error": 7.473307306327115e-09
+          }
+        ]
+      },
+      {
+        "phi": [
+          1.08,
+          0.36,
+          -0.72,
+          0.54,
+          1.44
+        ],
+        "F": 1.3034,
+        "analytic_curvatures": [
+          -3.3333333333333335,
+          -9.160759040458288
+        ],
+        "checks": [
+          {
+            "step": 0.0002,
+            "curvatures": [
+              -3.333333362111513,
+              -9.16075910909466
+            ],
+            "max_error": 6.863637125320565e-08
+          },
+          {
+            "step": 0.0001,
+            "curvatures": [
+              -3.333333340528303,
+              -9.160759057617863
+            ],
+            "max_error": 1.715957509418331e-08
+          }
+        ]
+      }
+    ],
+    "radial_distances": [
+      {
+        "radius_fraction": 0.5,
+        "metric_distance": 1.3455197661940432,
+        "Cartan_distance": 1.282549830161864
+      },
+      {
+        "radius_fraction": 0.9,
+        "metric_distance": 3.6061865388595837,
+        "Cartan_distance": 2.7428639412704485
+      },
+      {
+        "radius_fraction": 0.99,
+        "metric_distance": 6.482947936793675,
+        "Cartan_distance": 3.5009500023784743
+      },
+      {
+        "radius_fraction": 0.9999,
+        "metric_distance": 12.129184350084644,
+        "Cartan_distance": 3.8130081856525866
+      }
+    ],
+    "Cartan_F_zero_distance": 3.847649490485592,
+    "original_hyperbolic_metric_is_not_preserved_by_minimal_connection_replacement": true
+  },
+  "original_currents": {
+    "original_modes": 32,
+    "conditional_lepton_modes": 8,
+    "original_gauge_commutator_error": 0.0,
+    "normal_order_contraction_per_number": 2,
+    "normal_order_identity_error": 0.0,
+    "e_nu_spin_singlet_total_contact": -7.999999999999998,
+    "separate_module_contact": 0.0,
+    "neutral_diagonal_connected_quartic": -8.0,
+    "conditional_sector_is_not_a_full_Gauss_thermal_state": true
+  },
+  "conditional_thermal_source": {
+    "phi": [
+      0.45,
+      0.31,
+      -0.17,
+      0.26,
+      0.62
+    ],
+    "F": 1.8700833333333333,
+    "theta": 0.13,
+    "beta": 0.7,
+    "cell_volume": 2.181472265498201,
+    "original_Dirac_block_norm": 0.4304991977795101,
+    "original_Majorana_block_norm": 0.20697127114841238,
+    "logZ_original_quadratic": 5.559136407732426,
+    "logZ_shared_normal_ordered_contact": 5.8851243371218365,
+    "logZ_unordered_product": 5.388980254269585,
+    "logZ_separate_module_contacts": 6.305643884585457,
+    "geometric_logZ_source": -2.4437199171955433,
+    "finite_difference_source": -2.4437199298121826,
+    "source_error": 1.2616639288864917e-08,
+    "frozen_contact_source_error": 2.4437199171955433,
+    "counterterm_operator_error": 0.0,
+    "no_quantum_continuum_coefficient_or_torsion_measure_claim": true
+  },
+  "dependency_hashes": {
+    "joint_curved_quantum_source.py": "cf6aec9461174f41985b706c1bae776787b198ab77d9e42dfe8057764795775c",
+    "joint_fermion_gauss_completion.py": "1de7d9f62d4ea8a5363cbcf2ecfb3149cf06e4e309f820f91dd856e11bc03a3b",
+    "joint_gauss_fermion_influence.py": "15142bef8c560c21c61756098b7942e2937f66b2dd6defc74b3b937f0e634cde",
+    "research_note_358.md": "3f56c8aea5c509a33e0f05f948a998d275de7789a3356390da8dc75b7fe6b385",
+    "research_note_375.md": "1cfb783b6f0f9da2c32a0cad655d1717068f5378ee6440afee94ea1e1b21418f",
+    "research_note_580.md": "6682439ad2ed97c2cb16c34fdfde08b8741f6f9e9a268e8115f2f6fc69fef920",
+    "research_note_598.md": "3cfd675bceca95c6fcca2a72181a52cccb44cc4d5421b61fea0159002d80b8c5",
+    "research_note_599.md": "ba5d7071d95480f4d9ce2cf08f99eb5584585e089f0370f468c4389bd59a7e77",
+    "research_note_600.md": "27d905d1aa0f3421e469d812da14db160797bb4387640515dcc1bb09a46e7cc9",
+    "research_note_619.md": "48fd092121bc7893ed0742b70bed8152e709f154950afc7ef55ad3b8fa708027",
+    "research_note_663.md": "8d00d7994de7ee7d3aa42efd38c2526d759c0a561f16852d0219b14a818e856b"
+  },
+  "scope": "Original metric scalar/CAR branch compared to a declared minimal Jordan independent-spin-connection branch. Tree-level bulk elimination, target-metric invariant mismatch, original universal axial current, finite-cell normal ordering and conditional eight-lepton-mode geometry source. Matching counterterms restore shared classical metric/matter action, not the quantum measure. No Einstein selection, full Gauss thermal integral, continuum matching or quantum GR.",
+  "all_checks_passed": true
+}

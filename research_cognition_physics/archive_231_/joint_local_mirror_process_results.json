@@ -1,0 +1,124 @@
+{
+  "date": "2026-10-02",
+  "round": 660,
+  "tests_run": 4,
+  "failures": 0,
+  "errors": 0,
+  "exact_completion": {
+    "rows": [
+      {
+        "branch": "spatial",
+        "parameter": 1.0,
+        "Nambu_dimension": 512,
+        "exact_congruence_and_chiral_error": 6.679023307106314e-16,
+        "full_signed_Pfaffian": [
+          2.1779723451152723e-11,
+          8.077935669463161e-28
+        ],
+        "original_factorized_Pfaffian": [
+          2.1779723451155883e-11,
+          -2.1366096358205384e-27
+        ],
+        "relative_Pfaffian_error": 1.4509320160562178e-13
+      },
+      {
+        "branch": "holonomy",
+        "parameter": 0.17,
+        "Nambu_dimension": 128,
+        "exact_congruence_and_chiral_error": 3.3306690738754696e-16,
+        "full_signed_Pfaffian": [
+          0.28823941084806665,
+          3.5268358861353726e-19
+        ],
+        "original_factorized_Pfaffian": [
+          0.2882394108480658,
+          -5.710816703918612e-17
+        ],
+        "relative_Pfaffian_error": 2.895674625185503e-15
+      },
+      {
+        "branch": "holonomy",
+        "parameter": 0.31,
+        "Nambu_dimension": 128,
+        "exact_congruence_and_chiral_error": 2.8708788193577156e-16,
+        "full_signed_Pfaffian": [
+          0.012917718120722232,
+          1.8856024683754373e-18
+        ],
+        "original_factorized_Pfaffian": [
+          0.012917718120722196,
+          5.939102077777725e-19
+        ],
+        "relative_Pfaffian_error": 2.8218672697721954e-15
+      }
+    ],
+    "phase_not_replaced_by_absolute_value": true,
+    "pairing_convention": "exp(+xi.T N xi / 2), kinetic coefficient 1, each pair coefficient 1/2",
+    "no_fifth_direction_limit_required": true
+  },
+  "observation_map": {
+    "all_transformed_Wick_kernel_error": 1.780545101513831e-15,
+    "b_kernel_error": 1.3331527672885619e-15,
+    "bare_left_bar_pair_norm": 8.630168542191486,
+    "dressed_left_bar_pair_norm": 5.377587830720228e-15,
+    "transported_source_two_point_error": 6.395848284496853e-14,
+    "transported_source_four_point_error": 1.5234142305482005e-12,
+    "bare_left_bar_observables_not_identified": true,
+    "physical_time_support_of_dressed_observables_not_established": true,
+    "original_independent_bar_auxiliary_observables_not_identified": true
+  },
+  "free_reflection_interface": {
+    "rows": [
+      {
+        "nx": 2,
+        "nt": 2,
+        "reflection_error": 5.551115123125783e-16,
+        "interaction_cross_half_error": 0.0,
+        "onsite_theta_split_error": 0.0
+      },
+      {
+        "nx": 2,
+        "nt": 4,
+        "reflection_error": 5.551115123125783e-16,
+        "interaction_cross_half_error": 0.0,
+        "onsite_theta_split_error": 0.0
+      }
+    ],
+    "numerical_symmetry_not_used_as_a_proof_of_reflection_positivity": true,
+    "analytic_RP_input": "Free overlap link-reflection theorem, m0=1, unit gauge links, even AP time; onsite V_plus+theta(V_plus), positive product S9 measure.",
+    "general_gauge_RP_not_claimed": true,
+    "common_Hamiltonian_and_all_time_limits_not_claimed": true
+  },
+  "common_source": {
+    "theta": 0.23,
+    "full_original_S9_integral": [
+      0.10066273573612891,
+      0.0
+    ],
+    "exact_radial_quadrature_nodes": 6,
+    "pointwise_factorization_error": 3.1940223061650674e-16,
+    "full_source_log_derivative": [
+      -20.680469027740585,
+      0.0
+    ],
+    "inherited_analytic_source": -20.68046901282396,
+    "source_error": 1.4916626156491475e-08,
+    "discarded_frame_Jacobian_spurious_response": [
+      1.418207773440372e-10,
+      17.999999999994422
+    ],
+    "arbitrary_frame_phase_is_not_a_physical_response": true,
+    "gauge_holonomy_checked_algebraically_not_as_interacting_RP": true
+  },
+  "dependency_hashes": {
+    "joint_spatial_auxiliary_geometry.py": "02aea913e6693b662a8a9e85217c64ac6a3a91976217649662ede7d18e207bc8",
+    "joint_subgroup_measure_source.py": "cc1245f860509bb9b913cb0c28b340396f47a0b5d208f5af1364770b16acff7e",
+    "research_note_612.md": "3e2645a4c528c4b8d1650c9614b975e898ad8f8b51652db3a7307a4a4c8a3de6",
+    "research_note_658.md": "c0d9441fc4ffb114606f8882e2de70ade8dafa99e5705ab75995bab29fd0f694",
+    "research_note_659.md": "5c07b093c8a4bdab6b19759afe506688b7265d0da59c364abf4297e1b7fb0c8a",
+    "round660_drafts/mirror_schur_probe_results.json": "8efb6dc42f864b439e23149b66a40f6a9263a6fec23f4b44d4ca6e58b6a08209",
+    "round660_drafts/source_receipt.json": "b2e07c08ce3853d60f101a217fdd5d535c3a33c96c630cfde57b490023724956"
+  },
+  "scope": "Exact finite original chiral weight and dressed surviving observations through onsite mirror completion; free finite-box RP uses the mature overlap theorem plus an explicit onsite extension. General gauge RP, original fixed-graph CAR/H, common infinite time process, continuum GR/SM are open.",
+  "all_checks_passed": true
+}

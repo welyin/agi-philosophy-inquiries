@@ -1,0 +1,219 @@
+{
+  "round": 626,
+  "tests_run": 3,
+  "failures": 0,
+  "errors": 0,
+  "spectrum_and_actual_process": {
+    "CAR_modes": 32,
+    "BdG_dimension": 64,
+    "beta": 2.0,
+    "mean_energy": -2.4170656878212506,
+    "energy_variance": 1.0000879247634256,
+    "third_energy_cumulant": 0.26219084187571207,
+    "previous_source_identity_error": 4.440892098500626e-16,
+    "independent_neutral_Fock": [
+      {
+        "tau": 0.0,
+        "Fock_trace": [
+          1.0,
+          -4.3910187985662945e-18
+        ],
+        "quasiparticle_product": [
+          1.0,
+          0.0
+        ],
+        "error": 4.3910187985662945e-18
+      },
+      {
+        "tau": 0.08,
+        "Fock_trace": [
+          0.999821612099407,
+          0.007741826685440422
+        ],
+        "quasiparticle_product": [
+          0.9998216120994069,
+          0.007741826685440413
+        ],
+        "error": 1.113606002252634e-16
+      },
+      {
+        "tau": 0.4,
+        "Fock_trace": [
+          0.9955473073732368,
+          0.03859180828746801
+        ],
+        "quasiparticle_product": [
+          0.9955473073732367,
+          0.03859180828746803
+        ],
+        "error": 1.1188630228279524e-16
+      },
+      {
+        "tau": 1.1,
+        "Fock_trace": [
+          0.9666864103590974,
+          0.10394192998555242
+        ],
+        "quasiparticle_product": [
+          0.9666864103590973,
+          0.1039419299855524
+        ],
+        "error": 1.1188630228279524e-16
+      }
+    ],
+    "two_unit_area_pulses_log_quadratic": [
+      -2.000175865241504,
+      0.0
+    ],
+    "exact_log_quadratic": -2.000175849526851,
+    "finite_difference_error": 1.5714652690235198e-08
+  },
+  "source_only_locality": {
+    "unit_area": 1.0,
+    "bump_square_integral": 1.9625411218154531,
+    "quadrature_normalization_difference": 5.0306980803327406e-17,
+    "endpoint_preserving_derivative_area": 4.172009959724221e-16,
+    "true_plus_variance": 4.000351699053702,
+    "true_compensated_variance": 0.0,
+    "one_pulse_calibrated_local_variance_for_both": 2.000175849526851,
+    "any_local_quadratic_kernel_minimax_variance_error": 2.000175849526851,
+    "any_local_log_quadratic_minimax_error": 1.0000879247634256,
+    "calibrated_white_example_saturates_two_probe_bound": true,
+    "slow_rows": [
+      {
+        "width_scale": 1.0,
+        "exact_plus_variance": 4.000351699053702,
+        "exact_compensated_variance": 0.0,
+        "fixed_white_plus_and_minus_variance": 2.000175849526851,
+        "plus_error": 2.000175849526851
+      },
+      {
+        "width_scale": 4.0,
+        "exact_plus_variance": 4.000351699053702,
+        "exact_compensated_variance": 0.0,
+        "fixed_white_plus_and_minus_variance": 0.5000439623817128,
+        "plus_error": 3.5003077366719895
+      },
+      {
+        "width_scale": 16.0,
+        "exact_plus_variance": 4.000351699053702,
+        "exact_compensated_variance": 0.0,
+        "fixed_white_plus_and_minus_variance": 0.1250109905954282,
+        "plus_error": 3.875340708458274
+      }
+    ],
+    "local_model_coefficients_not_refitted_across_scales": true
+  },
+  "retained_common_initial_data": {
+    "shared_energy_sample_is_a_spectral_representation_not_an_added_bath": true,
+    "rows": [
+      {
+        "epsilon": 0.05,
+        "shared_plus": [
+          0.9660774346756852,
+          0.23820821798557684
+        ],
+        "shared_compensated": [
+          1.0,
+          0.0
+        ],
+        "independently_redrawn_plus": [
+          0.9685037754914486,
+          0.23877280768338802
+        ],
+        "independently_redrawn_compensated": [
+          0.9975028906375151,
+          0.0
+        ],
+        "compensated_coherence_error": 0.0024971093624849283
+      },
+      {
+        "epsilon": 0.1,
+        "shared_plus": [
+          0.8677189142752052,
+          0.4559022626330782
+        ],
+        "shared_compensated": [
+          1.0,
+          0.0
+        ],
+        "independently_redrawn_plus": [
+          0.8765624546736887,
+          0.46025516830034496
+        ],
+        "independently_redrawn_compensated": [
+          0.9900487649054169,
+          0.0
+        ],
+        "compensated_coherence_error": 0.009951235094583066
+      },
+      {
+        "epsilon": 0.2,
+        "shared_plus": [
+          0.5221006573250296,
+          0.7612486424423207
+        ],
+        "shared_compensated": [
+          1.0,
+          0.0
+        ],
+        "independently_redrawn_plus": [
+          0.5450892411169806,
+          0.7911900326951682
+        ],
+        "independently_redrawn_compensated": [
+          0.9607829872649011,
+          0.0
+        ],
+        "compensated_coherence_error": 0.03921701273509892
+      }
+    ],
+    "Gaussian_constant_source_matches_only_up_to_order_two": [
+      {
+        "tau": 0.2,
+        "characteristic_error": 0.0003429382835948882,
+        "error_over_tau_cubed": 0.04286728544936101
+      },
+      {
+        "tau": 0.1,
+        "characteristic_error": 4.3489184188175525e-05,
+        "error_over_tau_cubed": 0.04348918418817552
+      },
+      {
+        "tau": 0.05,
+        "characteristic_error": 5.455757181150248e-06,
+        "error_over_tau_cubed": 0.043646057449201976
+      }
+    ],
+    "third_cumulant_over_six": 0.04369847364595201,
+    "inherited_joint_conserved_matrix": [
+      [
+        1.0000879247634256,
+        0.062221060045311756
+      ],
+      [
+        0.062221060045311756,
+        0.017899218510820783
+      ]
+    ],
+    "mixed_source_area": [
+      1.0,
+      0.7
+    ],
+    "joint_conserved_variance": 1.0959680258971642,
+    "deleting_mixed_covariance_variance": 1.0088585418337277
+  },
+  "dependency_hashes": {
+    "research_note_600.md": "27d905d1aa0f3421e469d812da14db160797bb4387640515dcc1bb09a46e7cc9",
+    "research_note_601.md": "2464a6dddd68e4b5cf242b93255dff3a42df9f6accb5c5a976faed42cca5c362",
+    "research_note_602.md": "f3fb4939de75c594186627f1cb581d481b195dada8dd3c30a24380154e40aa2d",
+    "research_note_603.md": "cc0b578680b1cd0dae279a2d7533fc4853772e4821358f17b3f57b4ac47b3fe5",
+    "research_note_620.md": "aac5a2cced79624dabadacd86fbc0d2ae30ead3ec8f36e659a9bcb3dbe698021",
+    "research_note_622.md": "975e64306b1a6bfece9b24b87a283d5630b38a3d03180f22b7e520f74cb3e48e",
+    "research_note_623.md": "2ef362e618a11588e5edcf20c0090dd88e29165b2ab0405b1c6a5be1a9b0d804",
+    "research_note_625.md": "dc19916b0c780a6527797fa3f61c992c35f3f6e565cd104f9412f60f4dfb521c",
+    "joint_quantum_response_matching.py": "bf47024bcb481e9883bb1f1518bf1a61f267aabe5b1ff72971e61523c1689d96",
+    "joint_fermion_gauss_completion.py": "1de7d9f62d4ea8a5363cbcf2ecfb3149cf06e4e309f820f91dd856e11bc03a3b"
+  },
+  "scope": "Analytic full fixed-graph Gauss Gibbs uniform-lapse sector, with no intermediate instruments: nonzero conserved variance obstructs source-only temporally local quadratic influence matching; shared energy spectral data restores this sector exactly. Numerics use unchanged frozen 32-mode CAR masses and neutral Fock factor, not the full Gauss spectrum. Does not rule out local microscopic or Wilsonian EFT with retained fields, nonlocal influence terms, different declared states or windows, and does not generate gravity."
+}

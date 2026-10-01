@@ -1,0 +1,138 @@
+{
+  "round": 622,
+  "tests_run": 3,
+  "failures": 0,
+  "errors": 0,
+  "same_source_coefficients": {
+    "original_neutral_Fock_dimension": 16,
+    "beta": 2.0,
+    "duration": 2.4,
+    "coefficients": {
+      "linear": [
+        0.0,
+        0.05934839411174351
+      ],
+      "quadratic": [
+        -0.014494752685680585,
+        0.01267113211343382
+      ],
+      "noise": 0.02898950537136117,
+      "mixed_noise": 0.008286106066359808,
+      "contact": -0.011901783121105326,
+      "retarded": 0.0007693489923284935
+    },
+    "quadrature_difference": 3.0184188481996443e-16,
+    "second_source_derivative_error": 5.489756840807191e-09,
+    "original_complex_Yukawa_Majorana_and_lapse_retained": true
+  },
+  "original_process": {
+    "rows": [
+      {
+        "epsilon": 0.04,
+        "time_steps": 768,
+        "quadratic_log_coefficient": [
+          -0.014498737389089838,
+          0.012672531978422498
+        ],
+        "quadratic_error": 4.223444476695719e-06,
+        "linear_error": 1.298712617833014e-05,
+        "equal_history_normalization_error": 2.0872193227897987e-14
+      },
+      {
+        "epsilon": 0.02,
+        "time_steps": 768,
+        "quadratic_log_coefficient": [
+          -0.01449574837059865,
+          0.012671482978151086
+        ],
+        "quadratic_error": 1.055696218737783e-06,
+        "linear_error": 3.2463862080590046e-06,
+        "equal_history_normalization_error": 2.331468368754325e-14
+      },
+      {
+        "epsilon": 0.01,
+        "time_steps": 768,
+        "quadratic_log_coefficient": [
+          -0.01449500151383069,
+          0.012671220767622188
+        ],
+        "quadratic_error": 2.6414960437878476e-07,
+        "linear_error": 8.115721500196801e-07,
+        "equal_history_normalization_error": 2.63122924464765e-14
+      },
+      {
+        "epsilon": 0.01,
+        "time_steps": 1536,
+        "quadratic_log_coefficient": [
+          -0.014495002906056119,
+          0.012671219823523873
+        ],
+        "quadratic_error": 2.651476877575977e-07,
+        "linear_error": 8.11570414253692e-07,
+        "equal_history_normalization_error": 2.1205260835783737e-14
+      }
+    ],
+    "branch_exchange_conjugation_error": 1.110309842237e-16,
+    "one_fixed_initial_state_used": true,
+    "finite_amplitude_original_neutral_factor_verified": true,
+    "full_Gauss_limit_and_source_differentiation_not_interchanged": true
+  },
+  "high_transition": {
+    "beta": 0.7,
+    "pulse": "sin(t/2)^2 on [0,2*pi]",
+    "rows": [
+      {
+        "high_level": 2,
+        "form_norm": 1.0,
+        "pulse_noise": 9.665242342276567e-32,
+        "retarded_response": 2.9788122909649037,
+        "formula_error": 1.7763568394002505e-15,
+        "instantaneous_second_moment": 1.8826656956916452
+      },
+      {
+        "high_level": 4,
+        "form_norm": 1.0,
+        "pulse_noise": 2.632958242374432e-31,
+        "retarded_response": 2.846923407852739,
+        "formula_error": 1.7763568394002505e-15,
+        "instantaneous_second_moment": 2.6701368770574496
+      },
+      {
+        "high_level": 16,
+        "form_norm": 1.0,
+        "pulse_noise": 7.746973801793232e-30,
+        "retarded_response": 2.523814063544792,
+        "formula_error": 1.3322676295501878e-15,
+        "instantaneous_second_moment": 8.55816685999743
+      },
+      {
+        "high_level": 64,
+        "form_norm": 1.0,
+        "pulse_noise": 3.286822128758479e-28,
+        "retarded_response": 2.409548955165366,
+        "formula_error": 8.881784197001252e-16,
+        "instantaneous_second_moment": 32.72195525355838
+      }
+    ],
+    "asymptotic_response": 2.372285866977068,
+    "noise_exactly_zero_by_Fourier_orthogonality_for_integer_levels_ge_2": true,
+    "abstract_uniform_class_counterexample_not_original_Gauss_source": true,
+    "fixed_H_and_fixed_thermal_state_but_different_sources": true
+  },
+  "dependency_hashes": {
+    "research_note_591.md": "5cf5a7698f191bb9f76a1ead396dd585784fe9e518aa88e96565905781655518",
+    "research_note_602.md": "f3fb4939de75c594186627f1cb581d481b195dada8dd3c30a24380154e40aa2d",
+    "research_note_603.md": "cc0b578680b1cd0dae279a2d7533fc4853772e4821358f17b3f57b4ac47b3fe5",
+    "research_note_620.md": "aac5a2cced79624dabadacd86fbc0d2ae30ead3ec8f36e659a9bcb3dbe698021",
+    "research_note_621.md": "f50cf69dc2ae86343872697f880580b8b04beb407d332f323bcf580b2ce2d110",
+    "joint_quantum_response_matching.py": "bf47024bcb481e9883bb1f1518bf1a61f267aabe5b1ff72971e61523c1689d96",
+    "joint_smeared_gauss_noise.py": "708e039049f6e7e19ea28845d1e0184b2a4346409c08b03f0cca189a45f98186"
+  },
+  "scope": {
+    "full_fixed_Gauss_regulated_second_order_coefficients_converge": true,
+    "arbitrary_full_process_differentiation_not_proved": true,
+    "same_state_contact_noise_and_retardation_required": true,
+    "no_continuum_or_GR_completion": true,
+    "mature_CTP_formula_applied_not_new_fundamental_theory": true
+  }
+}

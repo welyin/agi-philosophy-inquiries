@@ -1,0 +1,212 @@
+{
+  "round": 651,
+  "tests_run": 3,
+  "failures": 0,
+  "errors": 0,
+  "original_wall": {
+    "probe_reproduced": true,
+    "source_lower_ratio_exact": "4149369/75625",
+    "source_lower_ratio": 54.86768925619835,
+    "psi_eighth_upper_exact": "6561/256",
+    "shape_choice_lambda": -30.681526820985155,
+    "lambda_independent_of_psi": true,
+    "normal_squared_from_original_spatial_metric": 0.0009977473105951121,
+    "rows": [
+      {
+        "N": 16,
+        "point": [
+          0.0,
+          1.5707963267948966,
+          0.7853981633974483
+        ],
+        "h_gradient_norm": -6.0515181480426247e-05,
+        "s_gradient_norm": -0.05596858717029919,
+        "mixed_gradient": 0.0018566981636684856,
+        "constant_s_wall_is_spacelike": true,
+        "clock_relative_slope": -30.681526820985216,
+        "clock_relative_wall_normal_squared": 0.000997747336769439,
+        "timelike_wall_allowed_slope_interval": [
+          -34.74201376667996,
+          -26.621039875290464
+        ],
+        "direct_tensor_check": 0.0009977473367694483
+      },
+      {
+        "N": 24,
+        "point": [
+          0.0,
+          1.5707963267948966,
+          0.7853981633974483
+        ],
+        "h_gradient_norm": -6.051517671775821e-05,
+        "s_gradient_norm": -0.05596858271310756,
+        "mixed_gradient": 0.0018566980175425587,
+        "constant_s_wall_is_spacelike": true,
+        "clock_relative_slope": -30.68152682098522,
+        "clock_relative_wall_normal_squared": 0.0009977473105945364,
+        "timelike_wall_allowed_slope_interval": [
+          -34.742013873202865,
+          -26.621039768767574
+        ],
+        "direct_tensor_check": 0.0009977473105945314
+      },
+      {
+        "N": 32,
+        "point": [
+          0.0,
+          1.5707963267948966,
+          0.7853981633974483
+        ],
+        "h_gradient_norm": -6.051517671786317e-05,
+        "s_gradient_norm": -0.0559685827132058,
+        "mixed_gradient": 0.0018566980175457792,
+        "constant_s_wall_is_spacelike": true,
+        "clock_relative_slope": -30.681526820985223,
+        "clock_relative_wall_normal_squared": 0.0009977473105951123,
+        "timelike_wall_allowed_slope_interval": [
+          -34.74201387320051,
+          -26.621039768769933
+        ],
+        "direct_tensor_check": 0.0009977473105951084
+      }
+    ],
+    "local_strict_signature_proved_by_inherited_continuous_bounds": true,
+    "no_claim_of_global_or_long_time_wall": true
+  },
+  "same_reference_metric": {
+    "rows": [
+      {
+        "parameter": -5e-05,
+        "reference_A": -6.051517671786317e-05,
+        "reference_B": -0.055968582713205796,
+        "wall_normal_squared": 0.0009057027301319145,
+        "F_at_fixed_material_label": 1.8689716702248023
+      },
+      {
+        "parameter": 0.0,
+        "reference_A": -6.051517671786317e-05,
+        "reference_B": -0.055968582713205796,
+        "wall_normal_squared": 0.0009977473105948695,
+        "F_at_fixed_material_label": 1.8689716702248023
+      },
+      {
+        "parameter": 4e-05,
+        "reference_A": -6.051517671786317e-05,
+        "reference_B": -0.055968582713205796,
+        "wall_normal_squared": 0.0010713829749652362,
+        "F_at_fixed_material_label": 1.8689716702248023
+      }
+    ],
+    "reference_chart_reconstructed_exactly": true,
+    "fixed_label_F_variation": 0.0,
+    "two_inverse_metric_components_constrained": true,
+    "illustrative_full_chart_family_is_off_shell": true,
+    "other_original573_reference_derivatives_not_fabricated": true
+  },
+  "boundary_transport": {
+    "rows": [
+      {
+        "frame": "E",
+        "cases": [
+          {
+            "step": 2e-06,
+            "relative_errors": {
+              "n": 1.7021105283622625e-06,
+              "K": 2.5472343194429445e-05,
+              "v": 9.919927378465587e-05
+            }
+          },
+          {
+            "step": 1e-06,
+            "relative_errors": {
+              "n": 4.255271421275954e-07,
+              "K": 6.368000905901481e-06,
+              "v": 2.4799554760202014e-05
+            }
+          },
+          {
+            "step": 5e-07,
+            "relative_errors": {
+              "n": 1.0638267959621027e-07,
+              "K": 1.591994920526278e-06,
+              "v": 6.199846181331736e-06
+            }
+          }
+        ],
+        "scalar_values_variation_at_fixed_labels": 0.0,
+        "normal_scalar_derivative_variation": [
+          0.0,
+          0.9497536511774062,
+          0.0,
+          0.0,
+          -1.0658141036401503e-14
+        ],
+        "omitted_if_normal_is_frozen_norm": 0.9497536511774062
+      },
+      {
+        "frame": "J",
+        "cases": [
+          {
+            "step": 2e-06,
+            "relative_errors": {
+              "n": 1.7021105900537265e-06,
+              "K": 2.5472343194376996e-05,
+              "v": 0.0001044473699716046
+            }
+          },
+          {
+            "step": 1e-06,
+            "relative_errors": {
+              "n": 4.255271813212876e-07,
+              "K": 6.368000905874336e-06,
+              "v": 2.6111564267659464e-05
+            }
+          },
+          {
+            "step": 5e-07,
+            "relative_errors": {
+              "n": 1.0638278795617723e-07,
+              "K": 1.591994920450717e-06,
+              "v": 6.527841637713996e-06
+            }
+          }
+        ],
+        "scalar_values_variation_at_fixed_labels": 0.0,
+        "normal_scalar_derivative_variation": [
+          0.0,
+          1.2984114331589025,
+          0.0,
+          0.0,
+          7.105427357601002e-15
+        ],
+        "omitted_if_normal_is_frozen_norm": 1.2984114331589025
+      }
+    ],
+    "max_final_relative_error": 6.527841637713996e-06,
+    "original_boundary_work_Jordan": 0.024362922313288796,
+    "original_boundary_work_Einstein": 0.02436292231328881,
+    "frame_work_difference": 1.3877787807814457e-17,
+    "geometry_and_normal_derivative_variations_retained": true,
+    "numerical_check_is_local_off_shell_not_evolution_or_quantization": true,
+    "full_moving_action_and_transmission_connection_analytic_only": true
+  },
+  "dependency_hashes": {
+    "research_note_573.md": "0c3205d1137739062c7e00efeb188f61cc0cee2f77db363f5ba6d4ed525c79c5",
+    "research_note_618.md": "ca1f235278e7aefaff85475bf72a75abf641bc6fce8d95ea95ecfaaa2ad82fcf",
+    "research_note_619.md": "48fd092121bc7893ed0742b70bed8152e709f154950afc7ef55ad3b8fa708027",
+    "research_note_647.md": "093760ac55b2f9fb947c8ba1c067b442e31b36bc8a1107e3946254b77d48e099",
+    "research_note_648.md": "1a3a65d5beb302f887bf212abd6d31f8d874b50c7b7c989bde12e397911889fd",
+    "research_note_650.md": "e0c39621fe6dafb4f75cc18a7cc38a080ecaf2234f8c9f4d21e9fd42fc6dd17d",
+    "joint_gravity_material_coordinates.py": "492cc66a332db08ede6fa046cd69528d146216d87e357a8219dcad863ddc7baa",
+    "joint_geometric_boundary_matching.py": "ef89f81906e16cf5e76503ed68bf6b0c4746ac54116cb37ad6bcd79119c6341c",
+    "round651_drafts/material_wall_signature_probe.py": "262e770854464ae5c9062e8f4b555515866ed0ad38e135b6759f5b15a3e96086",
+    "round651_drafts/material_wall_signature_probe_results.json": "f5eeb52db4331ce8cb9280a2e88ab3b1e3cebca234b7d640430cd354b8b140b7"
+  },
+  "scope": {
+    "original573_on_shell_local_causal_wall": true,
+    "full_classical_action_pullback_requires_same_embedding_on_both_sides": true,
+    "self_consistent_off_shell_chart_used_only_for_tensor_differences": true,
+    "not_all_boundary_symplectic_potentials_identified": true,
+    "no_full_quantum_GR_or_fixed_graph_instrument_equivalence": true
+  }
+}
