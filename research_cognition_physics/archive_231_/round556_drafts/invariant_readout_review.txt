@@ -1,0 +1,65 @@
+556 独立预审：同一完整物质 H 的不变读取与仪器后态
+日期：2026-09-30；审查者：macro_next_gap_audit。
+只写本审查，不修改主代码、正文、结果、导航或先前审查。此处为正式候选的解析入口复核，尚未进行最终四件套验收。
+
+一、可签收的正面概率接口
+取单胞元 X 属于 R^4、s 属于 R，r^2=X^T X，P_X=-i hbar grad_X，p_s=-i hbar partial_s。H=(P_X^2+p_s^2)/(2v)+W，其中
+ W=v/4 (r^2-u_h,s^2-u_s)L(r^2-u_h,s^2-u_s)^T>=0。
+L>0、u=L^-1 C>0、v>0 均继承并声明。SU(2) 通过双重态的四实分量实正交矩阵 O(g) 作用于 X、P_X，对 s,p_s 不作用。这里把全局 singlet 部门作为模型选择，不等于已经实现局域规范场/Gauss 区域理论。
+选中心为零且独立于源的五模 Gaussian 种子，T_tau=diag(t_q I5,t_p I5)，t_q t_p>=hbar^2/4。种子的特征函数在上述正交作用下不变，故种子密度算符与 SU(2) 对易。标准 Cartesian Weyl 协变 POVM E(dz) 满足 U(g)E(B)U(g)^dagger=E(O(g)B)。推前到
+ f(z)=(|X_out|^2,s_out,|P_X,out|^2,p_s,out^2)
+ 后，f 对该群不变，故每个粗粒化 effect E_f(B) 都与 U(g) 对易。令 P_0 为 Haar 平均的 singlet 投影；P_0 E_f(B)P_0 在 P_0 Hilbert 空间上正且归一为 P_0，构成真正的概率 POVM。该结论允许 singlet 源与旧参考纠缠，对旧参考使用恒等操作。它不需要虚构半直线 Weyl 平移。
+
+二、精确矩公式
+去除已知种子偏置，定义
+ Y_r=|X_out|^2-4t_q，Y_s=s_out，
+ Y_P=|P_X,out|^2-4t_p，Y_p=p_s,out^2-t_p。
+对任意源（先在 Schwartz 核，再按实际菜单图界延拓）有
+ E Y_r=<r^2>，E Y_r^2=<r^4>+4t_q<r^2>+8t_q^2；
+ E Y_s=<s>，E Y_s^2=<s^2>+t_q；
+ E Y_P=<P_X^2>，E Y_P^2=<(P_X^2)^2>+4t_p<P_X^2>+8t_p^2；
+ E Y_p=<p_s^2>，E Y_p^2=<p_s^4>+4t_p<p_s^2>+2t_p^2。
+本组矩阵分别只含 q 或只含 p，因此 Moyal 自乘常数为零；它们不是555中同时含梯度正项与动量负项的同一矩阵。各向同性 Gaussian 种子给维数4的 8t^2 和维数1的 2t^2，因子正确。源仍可任意非Gaussian；不能将本组二次矩推断为输出是联合 Gaussian。
+所有读口对应完整 Cartesian 的不变量。尤其 P_X^2 在 singlet 上的径向像包含 3hbar^2/(4r^2)，并非原半直线平直 p_r^2；其经典/量子对象差别不能省去。r^2 改成 r 的非线性解码亦须另算偏差，不免费继承548原坐标菜单。
+
+三、同一 H 的来源预算
+完整五变量势 Laplacian 为
+ Delta W=v[(6lambda_h+p)r^2+(4p+3lambda_s)s^2-4C_h-C_s]。
+令 ell=lambda_min(L)、alpha=max(0,6lambda_h+p,4p+3lambda_s)，任选证明参数 eta>0，则
+ A=2alpha/(ell eta)，
+ B=v[alpha(u_h+u_s+eta)+4|C_h|+|C_s|]
+ 满足 Delta W<=A W+B。555的全空间自伴/图估计可直接在本五变量光滑势上重新应用（不是在奇异径向拆分上应用）。记 G=E2+aAE1+aB，a=hbar^2/(2v)，则
+ <(P_X^2)^2><=4v^2 G，<p_s^4><=4v^2 G，
+ <P_X^2>,<p_s^2><=2v E1。
+正四次势还给更直接的 <r^4><=8E1/(v ell)+2u_h^2；
+ <r^2><=u_h+eta/2+2E1/(v ell eta)，
+ <s^2><=u_s+eta/2+2E1/(v ell eta)。
+故四个实际输出的二阶矩都有相同 E1/E2 及种子参数的有限上界；E1可由 sqrt(E2) 控制。该结果属于固定有限单胞元、固定真空常数的同 H 来源族。未测量静态演化保持预算，但不会自动保持已给参考均值、径向片或反复测量后的资源。这些源矩证明可在压缩 POVM 中沿用，因为对 singlet 支持源其记录概率与完整空间相同。
+
+四、具体完整仪器的泄漏反例
+取允许的纯各向同性种子（t_q=hbar/(2omega)、t_p=hbar omega/2）和同频五模 Gaussian 真空源。它是参考振子真空、SU(2) singlet、同一 quartic H 的 Schwartz 来源，完整 E2 有限；不要称为相互作用 H 的基态。
+在标准 coherent 坐标 alpha 中，用实际 rank-one heterodyne measure/prepare 仪器
+ I(dalpha)(rho)=<alpha|rho|alpha> |alpha><alpha| d^(10)alpha/pi^5。
+其 effect 正是上述纯种子的 Cartesian POVM。真空输入输出分布为 pi^-5 exp(-||alpha||^2)。对结果仅保留四个不变量即得到同一粗粒化 POVM，却仍是这条完整仪器的粗粒化后态。
+SU(2) 的中心 -I 将四个 Higgs 模的 alpha_X 同时反号，所以 singlet 必在 Higgs 总 Fock 数偶子空间。给定 alpha_X非零，coherent后态的奇总数概率为 [1-exp(-2||alpha_X||^2)]/2>0。因此条件后态一般离开 singlet。平均该概率得到 (1-3^-4)/2=40/81，已是无需完整表示分解的严格泄漏下界。
+
+五、精确的11/12非选择泄漏
+同一仪器丢弃全部记录后，每个 Higgs 振子的输出恰为 nbar=1 的热态：
+ integral d^2alpha/pi exp(-|alpha|^2)|alpha><alpha|
+ =sum_(n>=0) 2^(-n-1)|n><n|。
+该等式可逐 Fock 矩积分直接证明，并不采用相互作用热化假设。四模产品输出为 2^(-N_tot-4)；singlet s 因子取迹为1。
+四实维双重态表示的复化是两个自旋1/2基本表示。对总 Fock 激发数 n，
+ Sym^n(2直和2)=直和_(m=0)^n Sym^m(2)张量Sym^(n-m)(2)。
+两因子自旋分别 m/2、(n-m)/2，只有 n偶且m=n/2 时含一个 singlet。也可由 SU(2) 在 S^3 上传递、四维同频振子的每个偶数能级仅一个径向 Laguerre 态得到相同结论。因此
+ Tr(P_0 rho_out)=sum_(k>=0)2^(-4-2k)=1/12，
+ Tr((I-P_0)rho_out)=11/12。
+这是给定完整仪器、给定正规源的精确反例，不是所有实现同一 POVM 的仪器的普遍下界。若用 n<=8 的独立 Fock Casimir 检查，预期 singlet 重数为1,0,1,0,1,0,1,0,1；余下 singlet 概率尾为1/12288。这个尾仅指 singlet 权重，不是整热态截断的总误差，全级数结论仍依赖上述表示证明。
+输出热密度算符与 SU(2) 对易，但不支持在 singlet 子空间。必须区分“群不变密度矩阵”和“每条物理态属于 singlet”，否则会把11/12错误理解为协变仪器破坏了协变性。
+
+六、有限分箱 Lüders 仪器与物质实现边界
+将不变结果空间作有限可测分区，含溢出箱，得到有限 effects E_b>=0、sum E_b=I。因 E_b 与 P_0 对易，取 K_b=sqrt(E_b) 后 K_b 也与 P_0 对易；抽象 CP 仪器 rho->K_b rho K_b 保 singlet，且给相同各箱概率。对未知旧参考使用 I_R张量K_b，仍为合法仪器。亦可先在 singlet 子空间压缩后开平方，结果相容。
+因此概率 POVM 正面接口与具体 measure/prepare 泄漏可以同时成立；有限箱 Lüders 提供数学上可保部门的替代，不能将泄漏升级成规范不变读取 no-go。反过来，抽象平方根/记录等距并未给出由本 H、探针物质、局部交互和资源预算实现的装置；它仍是新增仪器权限。对局域 Gauss 约束与区域边界更不能仅由本单胞元全局 SU(2) 结果签收。
+
+七、来源与审查强度
+相空间 POVM 构造沿已核原始来源 Werner, quant-ph/0405184 §3.1, https://arxiv.org/pdf/quant-ph/0405184；对称后处理、种子矩和上述热输出用本审查中的显式计算给出。径向域反例及成熟径向理论定位见同目录 radial_domain_review.txt，此处不重报径向量子化、一般 Gauss 拼接或 WAY 原理为新发现。
+结论：计划的同 H 不变概率读口、矩上界与具体11/12后态泄漏均数学成立。正式报告须同时保留全局 singlet 新选择、仪器非唯一、原 Cartesian 读取和半直线径向读口并非同一对象、抽象 Lüders 尚未物质生成四项边界。未发现该候选的解析阻断。

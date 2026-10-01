@@ -1,0 +1,118 @@
+{
+  "round": 605,
+  "tests_run": 4,
+  "failures": 0,
+  "errors": 0,
+  "quotient_domain": {
+    "epsilon_input": 0.02,
+    "inside_norm": 0.002999998875000126,
+    "outside_norm": 1.414213562373095,
+    "original_magnetic_potential_at_bad_point": 7.854813082154243,
+    "max_quotient_and_conjugation_error": 1.1102230246251565e-15,
+    "sample_count": 12,
+    "full_Gauss_support_is_analytic_not_inferred_from_sampling": true
+  },
+  "penalty": {
+    "N": 120,
+    "beta": 0.8,
+    "rows": [
+      {
+        "penalty": 0.0,
+        "bad_probability": 0.5972318459441476,
+        "free_energy": -0.4831045156345828,
+        "free_energy_gap_to_restricted": 2.75417519573106,
+        "variational_probability_bound": null
+      },
+      {
+        "penalty": 5.0,
+        "bad_probability": 0.1122288192592841,
+        "free_energy": 1.0362699518215288,
+        "free_energy_gap_to_restricted": 1.234800728274948,
+        "variational_probability_bound": 0.550835039146212
+      },
+      {
+        "penalty": 50.0,
+        "bad_probability": 0.004491037253604191,
+        "free_energy": 1.8337396207520642,
+        "free_energy_gap_to_restricted": 0.43733105934441263,
+        "variational_probability_bound": 0.0550835039146212
+      },
+      {
+        "penalty": 500.0,
+        "bad_probability": 0.00015493836776499698,
+        "free_energy": 2.164613497122239,
+        "free_energy_gap_to_restricted": 0.10645718297423779,
+        "variational_probability_bound": 0.00550835039146212
+      },
+      {
+        "penalty": 5000.0,
+        "bad_probability": 2.858847342457613e-06,
+        "free_energy": 2.255790350139878,
+        "free_energy_gap_to_restricted": 0.01528032995659867,
+        "variational_probability_bound": 0.0005508350391462119
+      }
+    ],
+    "restricted_free_energy": 2.271070680096477,
+    "restricted_mean_energy": 2.306714164073619,
+    "derivative_residual": 2.8617458125435036e-09,
+    "postselected_vs_restricted_trace_distance": 0.3782185167108329,
+    "full_model_penalty_limit_proved_in_note": true
+  },
+  "projection": {
+    "rows": [
+      {
+        "N": 96,
+        "step": 0.06544984694978735,
+        "allowed_probability": 0.3229166666666478,
+        "postselected_kinetic_energy": 15.752647146929236,
+        "restricted_thermal_energy": 2.308492717850112,
+        "step_times_postselected_energy": 1.031008344820523
+      },
+      {
+        "N": 192,
+        "step": 0.032724923474893676,
+        "allowed_probability": 0.32812499999993766,
+        "postselected_kinetic_energy": 30.346735516449435,
+        "restricted_thermal_energy": 2.309180234601737,
+        "step_times_postselected_energy": 0.9930945974886458
+      },
+      {
+        "N": 384,
+        "step": 0.016362461737446838,
+        "allowed_probability": 0.3307291666666965,
+        "postselected_kinetic_energy": 59.52920232588123,
+        "restricted_thermal_energy": 2.3093530938196896,
+        "step_times_postselected_energy": 0.9740442953179629
+      }
+    ],
+    "continuum_sharp_projection_not_in_form_domain": true,
+    "infinite_energy_is_proved_by_H1_jump_not_numerical_extrapolation": true
+  },
+  "temporal_weight": {
+    "theta0": 0.4,
+    "kappa": 1.5,
+    "quadrature_error": 4.163336342344337e-16,
+    "first_negative_mode": 9,
+    "first_negative_coefficient": -0.012136742065113993,
+    "zero_mode": 0.12244650849206946,
+    "minimum_mode": 11,
+    "minimum_coefficient": -0.024239654756953315,
+    "scope": "specific temporal one-plaquette weight, not all admissible Hamiltonians"
+  },
+  "dependency_hashes": {
+    "research_note_569.md": "ac49350c12a9d1a340dfa36a02a5dfb4177953b1aa321639f858d7862f84c0b6",
+    "research_note_598.md": "3cfd675bceca95c6fcca2a72181a52cccb44cc4d5421b61fea0159002d80b8c5",
+    "research_note_603.md": "cc0b578680b1cd0dae279a2d7533fc4853772e4821358f17b3f57b4ac47b3fe5",
+    "research_note_604.md": "398c3a49208c8eea7c1c017777b5c030ec56d85a1eeb49f7452d883e37e945a5",
+    "joint_fermion_gauss_completion.py": "1de7d9f62d4ea8a5363cbcf2ecfb3149cf06e4e309f820f91dd856e11bc03a3b",
+    "joint_quotient_gauge_completion.py": "ad79d467500513738d718478a24e2176d88e7225316badfb7f1d62129c4b9494"
+  },
+  "scope": {
+    "original_Gauss_Gibbs_cannot_have_hard_admissibility": true,
+    "spatial_restricted_form_preserves_finite_graph_thermal_existence": true,
+    "penalty_and_readout_source_bounds_are_analytic": true,
+    "rotor_is_diagnostic_not_full_model": true,
+    "no_Euclidean_chiral_measure_or_SM_completion": true,
+    "spatial_constraint_not_full_four_dimensional_admissibility": true
+  }
+}

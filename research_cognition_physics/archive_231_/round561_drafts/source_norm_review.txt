@@ -1,0 +1,49 @@
+561全源范数探针独立审查
+日期：2026-09-30；审阅者：macro_next_gap_audit。
+对象：short_time_source_probe.py及其保存结果；仅该预备数值入口，不替代正式561整轮终审。
+
+结论：当前入口无实质阻断。用既有Python -B -X utf8只读导入并执行run()，完整JSON与保存结果相等。未改源码或结果，也没有动力学截断或旧全链重跑。
+
+1. 群坐标与完整H
+
+将第二端改记Y=R(U)X2后，源波函数、F及H所生函数仍规范不变。固定U的此旋转保10维Gaussian测度；两个端点物质Laplace算符保持Euclidean形式。群左导数成为G_j=(J_jY) dot grad_Y，J_j为四维实表示的1/2四元数生成元，-sum J_j^2=3I/4。phi对Y的半径只依赖，故G_j phi=0；它不是删除群电动能。代码仍显式保留-b sum G_j^2 P。
+
+因此对psi=phi P/sqrt(N_eta)，代码使用的完整H多项式作用为
+H(phi P)/phi = hlocal P-a Delta P+2a omega q dot grad P-b sum G_j^2 P，
+hlocal=10a omega-a omega^2|q|^2+W+F。
+10个实坐标包含两套四实Higgs变量及两个singlet；两个端点W的v/4系数正确，数例v=1。Hpsi、H^2psi均是该完整微分算符的作用，不是投影后的矩阵乘法。
+
+2. J和Gamma独立核
+
+代码J为i[Delta_w F+2a grad_qF dot(grad_q-omega q)+2b sum(G_jF)G_j]，其中Delta_w=aDelta_q+bDelta_G。它与i(FH-HF)独立路径的系数差最大5.551115123125783e-16。
+本审查另用几何闭式独立构造
+Gamma=4akF+(bk^2/4)(r1^2r2^2-c^2)，
+Delta_G F=3kc/4，k=kappa v，c=X1 dot Y。
+与代码多项式逐系数比较，两项残差均为0。因此群Casimir、两端物质因子和Gamma的正号均正确。a=.5,b=omega=v=1,k=.8是当前数例，并非对其它v暗中沿用a=.5。
+
+3. 范数界性质
+
+对多项式P=sum c_alpha q^alpha，代码用
+||phi P/sqrt(N_eta)|| <= sum |c_alpha| sqrt(product E[q_i^(2alpha_i)])/sqrt(N_eta)。
+这是单项式Gaussian L2范数的三角不等式；各偶矩为(2alpha_i-1)!! t^alpha_i，t=.5。没有把不正的Wigner分布当概率，也未把高次多项式投到低阶动力学基。通过规范旋转后的全Gaussian积分等于原完整Haar群与物质积分，故这些上界包含群自由度。
+
+复算上界：Hpsi 28.50181218320936；H^2psi 476.96749900031904；Jpsi 34.96927092564724；JHpsi 485.7539264818304；Gamma psi 23.350866149213243；Gamma Hpsi 301.9910803668497。源E1=5.116696581721409，归一化0.9999999999999998，与560相同来源相符。
+Kpsi=59.46807650309216，K_(Hpsi)=894.1990937839007；导数差系数2C=5178.294082343518，C=K_(Hpsi)+||Hpsi||上界*Kpsi。未归一Hpsi可直接进入线性向量Duhamel界，代码没有错误地再次按其范数归一。
+
+4. 有限正响应和资源数字
+
+取g=1、sigma_Q=.5、mu2=1、mu4=3；theta=.8，阈值y0=2theta。解析正斜率下界为0.05728923509034968；独立普通求积给0.5012488703988078。该求积在[0,16theta]完成，仅作普通积分诊断；严格正性和选窗依赖前述解析下界而非数值尾是否忽略。
+按tau=d_lower/(8C)，tau约2.765835339754523e-6，有限时斜率下界=d_lower-2tau C=3d_lower/4，约0.04296692631776226。c_mass=1/B1使M=tau^2/B1，559半有界充分条件保留严格因子2余量。M约9.17071432062937e-14，初始指针动能约5.452137996221933e12。代码所列tau*Kpsi约1.6447890757947787e-4为该单一来源态距上界，不被误当成四坐标定位精度。
+
+5. 发布所需范围
+
+这些近似数字来自有限精度系数运算和普通sqrt/exp，代码已明示不是机器区间证书。正式数学选值宜写成精确多项式范数三角表达式和tau=d_lower/(8C)，显示小数只作该表达式的数值评估；勿把截断显示的小数自动当带方向保证的端点。
+该来源具有高阶范数，不是仅E1有限即可得到此统一短时窗口。补偿单一quadrature Q-tau P/M仍为实际读口输入；M正比tau^2时自由剪切发散，不能省略此补偿。巨大指针动能和耦合速率仅给极保守充分构造，不是物理单位预测或最优资源界。准备、开关、指针物质实现和共同几何仍未签收。
+
+被审文件SHA256：
+short_time_source_probe.py
+0d90381cb001bfca3fe8b389f3bb3fad311edcaa23a8abc8f8762c155550e9bd
+short_time_source_probe_results.json
+8e1ea3499902372fb46741e67ef0ce6033509a8d6b82f441584c3ac10d3b3210
+
+可接续正式561材料；本审查保留原short_time_review.txt，不替代后续正式代码/正文的最终摘要核验。

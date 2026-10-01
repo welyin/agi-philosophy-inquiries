@@ -1,0 +1,139 @@
+{
+  "round": 586,
+  "tests_run": 5,
+  "failures": 0,
+  "errors": 0,
+  "evidence": {
+    "original_parity_instruments": {
+      "pointwise_energy_coefficient_error": 2.7755575615628914e-17,
+      "parity_probability_error": 1.1102230246251565e-16,
+      "even_kernel_gap": 0.00456777021009247,
+      "odd_kernel_gap": -5.551115123125783e-17,
+      "original_readout": "E_r=1/2+r*sin(s)/4",
+      "zero_wait_composition": true
+    },
+    "multivariable_fisher_chain_rule": {
+      "matrix_chain_rule_error": 5.551115123125783e-16,
+      "minimum_loss_eigenvalue": 0.0007642407170143362,
+      "constant_conditional_kernel_error": 5.551115123125783e-17
+    },
+    "original_compact_Gauss_packet": {
+      "rows": [
+        {
+          "nodes": 48,
+          "phase": 0.23,
+          "kinetic_before": 263.50257377120835,
+          "kinetic_after_fine": 263.5666126330764,
+          "kinetic_after_direct_parity": 263.5072522928557,
+          "energy_increase_fine": 0.06403886186800703,
+          "energy_increase_direct_parity": 0.0046785216473806965,
+          "energy_gap": 0.05936034022062634,
+          "energy_direct_form_error": 5.1812720780475274e-14,
+          "mean_b_acceleration_gap": -0.1262406945866923,
+          "future_original_probability_t2_coefficient": -0.015780086823336537,
+          "immediate_even_probability": 0.519180590895547,
+          "immediate_original_plus_probability": 0.5972287740575577
+        },
+        {
+          "nodes": 80,
+          "phase": 0.23,
+          "kinetic_before": 263.5025718868413,
+          "kinetic_after_fine": 263.56661074870937,
+          "kinetic_after_direct_parity": 263.50725040848874,
+          "energy_increase_fine": 0.06403886186800098,
+          "energy_increase_direct_parity": 0.004678521647380269,
+          "energy_gap": 0.0593603402206207,
+          "energy_direct_form_error": 6.106226635438361e-16,
+          "mean_b_acceleration_gap": -0.12624069458663864,
+          "future_original_probability_t2_coefficient": -0.01578008682332983,
+          "immediate_even_probability": 0.5191805908955546,
+          "immediate_original_plus_probability": 0.5972287740575536
+        },
+        {
+          "nodes": 128,
+          "phase": 0.23,
+          "kinetic_before": 263.5025718877524,
+          "kinetic_after_fine": 263.5666107496204,
+          "kinetic_after_direct_parity": 263.50725040939983,
+          "energy_increase_fine": 0.06403886186800098,
+          "energy_increase_direct_parity": 0.0046785216473802715,
+          "energy_gap": 0.05936034022062072,
+          "energy_direct_form_error": 5.62536128789759e-14,
+          "mean_b_acceleration_gap": -0.12624069458663864,
+          "future_original_probability_t2_coefficient": -0.01578008682332983,
+          "immediate_even_probability": 0.5191805908955546,
+          "immediate_original_plus_probability": 0.5972287740575537
+        }
+      ],
+      "real_source_energy_gap": 0.0593603402206207,
+      "full_Gauss_packet_with_Haar_constant_links": true,
+      "other_full_H_terms_unchanged_by_pointwise_completeness": true,
+      "energy_not_a_discretized_spectrum": true
+    },
+    "original_local_nested_commutator": {
+      "expected_acceleration_gap": -0.1287723136843428,
+      "rows": [
+        {
+          "step": 0.024,
+          "direct_nested_commutator_real": -0.12837131784005643,
+          "imaginary_part": 2.963485140824335e-06,
+          "error": 0.00040100679467949807
+        },
+        {
+          "step": 0.012,
+          "direct_nested_commutator_real": -0.1286720411731904,
+          "imaginary_part": 7.463338518570552e-07,
+          "error": 0.00010027528861603303
+        },
+        {
+          "step": 0.006,
+          "direct_nested_commutator_real": -0.12874582619802816,
+          "imaginary_part": 1.1196952692459438e-07,
+          "error": 2.6487722975815942e-05
+        }
+      ],
+      "full_five_coordinate_local_operator": true,
+      "full_graph_propagation": false
+    },
+    "same_source_geometry_response": {
+      "node_energy_gap": 0.04454979875421679,
+      "node_volume": 1.0659592973358076,
+      "spatial_weight_partial_derivative": -0.23654760400469096,
+      "derivatives": [
+        {
+          "step": 0.004,
+          "derivative": -0.23657526978439203,
+          "error": 2.7665779701063764e-05
+        },
+        {
+          "step": 0.002,
+          "derivative": -0.23655452015712042,
+          "error": 6.916152429453648e-06
+        },
+        {
+          "step": 0.001,
+          "derivative": -0.23654933302449596,
+          "error": 1.7290198049968453e-06
+        }
+      ],
+      "smeared_lapse_energy_gap": 0.05263887440257535,
+      "lapse_duality_error": 0.0,
+      "local_source_sum_error": 0.0,
+      "fixed_state_partial_response_not_a_dynamical_Einstein_solution": true
+    }
+  },
+  "dependency_hashes": {
+    "joint_curved_quantum_source.py": "cf6aec9461174f41985b706c1bae776787b198ab77d9e42dfe8057764795775c",
+    "joint_quantum_measure_records.py": "adb52e0b65e459da3162716c2c9e28f8be0831020798fdd2dbb1ac2afff57993",
+    "joint_local_lapse_source.py": "dec60d59a31e39f150b64000ef5141e9eddf12c36b17c1997216dff98b12fbb6",
+    "research_note_506.md": "33524fe212e207cea500bbc70625d2f066d272add12372199ebe38b6c891addd",
+    "research_note_557.md": "9f8eb8b6bf1adb230f97ad2cb8e85a0fd1f0efe20479f3d5e282d1c0535d49ed",
+    "research_note_574.md": "23d72d666f593f845577712e761ab00dec1d10a56955b7da5fbb22a5ca68ef19",
+    "research_note_577.md": "c4a8abb53b794856fd1abc86a8fc084e8d950e2231a080a6ffd26944eb583d7e",
+    "research_note_584.md": "ee5402ee7efca3231e618787825e5b5a2b29aeab4b9c5519b44457eae5c87a80",
+    "research_note_585.md": "7e4c19eadff43a16e8e62c9be944b32c4b1680d9c32aac44b5c4d2e6f4dd5bdb",
+    "research_round_585_checks.json": "c3c572df33a3c47cbf39f29d5198ddeb3a6e7c91d33361adcead826389646e55",
+    "cognition_forward_bridge_review_585.md": "c3c79ea29a84cb6d9519918d2f40d3927c4de45746939d787f698dc382d54af4"
+  },
+  "scope": "Original fixed finite curved-target Gauss matter. Coarse-record instrument criterion, source energy and same-H subsequent-record witness; ideal instruments and preparation remain inputs. No new autonomous detector, quantum Einstein solution or continuum limit."
+}

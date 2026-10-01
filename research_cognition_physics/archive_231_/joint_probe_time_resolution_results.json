@@ -1,0 +1,149 @@
+{
+  "round": 560,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "normalized_full_Gauss_clock_source_and_exact_probability_current",
+    "independent_polynomial_and_conditional_Gamma_energy_forms",
+    "same_H_compressed_probe_joint_evolution_and_commutator",
+    "actual_pointer_density_response_and_independent_momentum_quadrature",
+    "finite_energy_time_response_bound_without_ground_state_or_gap",
+    "binary_error_required_source_budget_and_stable_pointer_duration"
+  ],
+  "dependency_hashes": {
+    "joint_finite_time_gauge_probe.py": "acd1a47553fb49fc00d59e707f57af103acce1f6c31433ae70263f5e4e4316b6",
+    "joint_finite_time_gauge_probe_results.json": "ec55423636a78ca395d3e46d7e795519d9a219d596da2132bd7cd1a8d32c4280",
+    "joint_gauge_link_reference.py": "4faf796ea9bb5adb6d02e17035ec6e9966a5a7e7bfdc39a5a1f0fbcfd49b3e88",
+    "joint_matter_energy_moment_control.py": "604aba32b42c466a044eb91c207a889486f2fa18294f254953ab05ddf25725d4",
+    "joint_singlet_common_mass_rg_results.json": "4bd60fde58c288d047275f8441c8e622819cd58a2fe55a5ea2717a5fc3a48d66"
+  },
+  "full_source_clock_witness": {
+    "full_source_E1": 5.116696581721428,
+    "full_source_initial_F_velocity": 1.6355810616929698,
+    "analytic_velocity": 1.6355810616929702,
+    "base_F_mean": 1.6,
+    "base_F_variance": 1.2800000000000002,
+    "base_gradient_expectation": 3.0400000000000005,
+    "normalization": 1.1152,
+    "eta": 0.3,
+    "polynomial_vs_Galerkin_energy_residual": 7.105427357601002e-15,
+    "all_source_coordinates_and_group_gradients_included": true,
+    "witness_is_normalized_Gauss_physical_and_nonstationary": true
+  },
+  "conditional_form_quadrature_difference": 3.0127011996228248e-12,
+  "compressed_probe_rows": [
+    {
+      "duration": 10.0,
+      "basis_degree": 8,
+      "pointer_quadrature": 48,
+      "source_time_shift": 0.4,
+      "initial_source_F_difference": 0.10026439193661041,
+      "source_E1": 5.1166965817214205,
+      "pointer_state_half_trace_distance_quadrature": 0.020048384275096864,
+      "aligned_joint_state_norm": 0.0529911626210316,
+      "full_model_response_upper_bound": 2.162469171524881,
+      "any_pointer_readout_binary_error_lower_bound": 0.0,
+      "actual_compensated_pointer_means": [
+        1.3470678095488198,
+        1.3173460317618046
+      ],
+      "source_energy_changes": [
+        0.02816356000384084,
+        0.0052777404606445975
+      ],
+      "commutator_identity_residual": 7.986306686935505e-14
+    },
+    {
+      "duration": 100.0,
+      "basis_degree": 8,
+      "pointer_quadrature": 48,
+      "source_time_shift": 0.4,
+      "initial_source_F_difference": 0.10026439193661041,
+      "source_E1": 5.1166965817214205,
+      "pointer_state_half_trace_distance_quadrature": 0.0019229468284321844,
+      "aligned_joint_state_norm": 0.0058249765718687615,
+      "full_model_response_upper_bound": 0.20079844819985648,
+      "any_pointer_readout_binary_error_lower_bound": 0.39960077590007176,
+      "actual_compensated_pointer_means": [
+        1.325541776652113,
+        1.3240166002662141
+      ],
+      "source_energy_changes": [
+        -0.0018776595345993436,
+        0.0010733317001576379
+      ],
+      "commutator_identity_residual": 7.999226292721977e-14
+    },
+    {
+      "duration": 1000.0,
+      "basis_degree": 8,
+      "pointer_quadrature": 48,
+      "source_time_shift": 0.4,
+      "initial_source_F_difference": 0.10026439193661041,
+      "source_E1": 5.1166965817214205,
+      "pointer_state_half_trace_distance_quadrature": 0.00019688656187271829,
+      "aligned_joint_state_norm": 0.0005378751879171309,
+      "full_model_response_upper_bound": 0.019977827115361755,
+      "any_pointer_readout_binary_error_lower_bound": 0.4900110864423191,
+      "actual_compensated_pointer_means": [
+        1.3249002550531044,
+        1.3245768496857664
+      ],
+      "source_energy_changes": [
+        0.0003107315541594145,
+        4.502004933410404e-06
+      ],
+      "commutator_identity_residual": 8.455963572449698e-14
+    }
+  ],
+  "independent_pointer_quadrature_max_difference": 3.967817081840241e-09,
+  "changed_Galerkin_degree_diagnostic": {
+    "duration": 100.0,
+    "basis_degree": 12,
+    "pointer_quadrature": 64,
+    "source_time_shift": 0.4,
+    "initial_source_F_difference": 0.10027248691377877,
+    "source_E1": 5.1166965817214205,
+    "pointer_state_half_trace_distance_quadrature": 0.0019200515638830174,
+    "aligned_joint_state_norm": 0.005846908115660311,
+    "full_model_response_upper_bound": 0.20079844819985648,
+    "any_pointer_readout_binary_error_lower_bound": 0.39960077590007176,
+    "actual_compensated_pointer_means": [
+      1.3253831502133577,
+      1.323843403283422
+    ],
+    "source_energy_changes": [
+      -0.0018770398840596827,
+      0.0010211353476100287
+    ],
+    "commutator_identity_residual": 2.0611076164545044e-13
+  },
+  "necessary_source_budget": [
+    {
+      "duration": 100.0,
+      "necessary_E1_at_binary_error_point_one": 79.05988965133186,
+      "bound_at_fixed_E1_18": 0.37613009824009574
+    },
+    {
+      "duration": 1000.0,
+      "necessary_E1_at_binary_error_point_one": 7983.567597006207,
+      "bound_at_fixed_E1_18": 0.037446437051473054
+    },
+    {
+      "duration": 10000.0,
+      "necessary_E1_at_binary_error_point_one": 799121.9479467314,
+      "bound_at_fixed_E1_18": 0.0037430049496196337
+    }
+  ],
+  "scope": {
+    "full_source_theorem_analytic_and_energy_uniform": true,
+    "time_shift_fixed_or_in_fixed_bounded_interval": true,
+    "source_may_be_nonstationary_and_correlated_with_old_reference": true,
+    "only_pointer_and_old_reference_readout_not_direct_source": true,
+    "fixed_single_probe_family_gain_and_pointer_moments": true,
+    "Galerkin_subspace_not_invariant_or_full_dynamics_convergence": true,
+    "budget_lower_bound_necessary_not_sufficient_or_universal_clock_bound": true,
+    "no_spacetime_gravity_or_unified_completion": true
+  }
+}

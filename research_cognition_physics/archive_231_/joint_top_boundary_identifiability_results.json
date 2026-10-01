@@ -1,0 +1,294 @@
+{
+  "round": 546,
+  "tests_run": 5,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "independent_variational_Jacobian_cooperative_signs_and_original_equation_agreement",
+    "coupled_sensitivity_flow_step_doubling_and_independent_parameter_differences",
+    "zero_endpoint_and_independent_Bernoulli_reachable_upper_endpoint",
+    "unique_boundary_inverse_numerical_brackets_and_refined_target_residuals",
+    "same_unique_boundary_joint_spectra_and_noncoexistence_counterexample"
+  ],
+  "gauge_path_input_fixed": true,
+  "endpoint_log_scale": 18.091844241015448,
+  "endpoint_scale_GeV": 173.34,
+  "q0_interval": [
+    0,
+    0.5715688768903333
+  ],
+  "reachable_upper_top_squared": 1.2149099660050615,
+  "Jacobian_difference_max": 1.1576739566976357e-11,
+  "original_rhs_difference_max": 0.0,
+  "parameter_difference_max": 4.675566600553793e-10,
+  "sensitivity_step_doubling_max": 2.7489122089718876e-13,
+  "sensitivity_examples": [
+    {
+      "q0": 0.15,
+      "endpoint": [
+        0.49240286920514503,
+        0.414601779596086,
+        0.2362685708860494
+      ],
+      "derivative": [
+        2.6276813847301987,
+        -1.1465649652420298,
+        0.05492761590207731
+      ]
+    },
+    {
+      "q0": 0.3,
+      "endpoint": [
+        0.8223839217104014,
+        0.2546722915628381,
+        0.24445891227191577
+      ],
+      "derivative": [
+        1.846442194541471,
+        -1.001294639610757,
+        0.05445410719472951
+      ]
+    },
+    {
+      "q0": 0.5,
+      "endpoint": [
+        1.1285773200672398,
+        0.06476751295439909,
+        0.2554027918866741
+      ],
+      "derivative": [
+        1.2754666751777193,
+        -0.9123949762755794,
+        0.05521376958341715
+      ]
+    }
+  ],
+  "inverse_examples": [
+    {
+      "synthetic_target_q": 0.4,
+      "q0": 0.11639155216570522,
+      "q0_bracket": [
+        0.11639155209916585,
+        0.1163915522322446
+      ],
+      "endpoint_q": 0.39999999991435964,
+      "target_residual": -8.564038367353533e-11,
+      "derivative_of_endpoint_top": 2.8771088015643778,
+      "step_doubling_error": 6.689093723366568e-14,
+      "vacuum": {
+        "state": {
+          "q": 0.39999999991435964,
+          "S": 0.45391539283806276,
+          "z": 0.23441825633849198,
+          "lambda_H": 0.22214093211967456,
+          "p": 0.2184835882815661,
+          "lambda_s": 0.2340123008524321,
+          "x": 0.5773695487096115,
+          "y": 0.46881997590451685
+        },
+        "determinant": 0.004248632290440084,
+        "H_numerator": 0.03268210594197038,
+        "singlet_numerator": -0.022001664322831654,
+        "strict_double_vev": false
+      }
+    },
+    {
+      "synthetic_target_q": 0.8,
+      "q0": 0.2880303864759264,
+      "q0_bracket": [
+        0.288030386409387,
+        0.2880303865424657
+      ],
+      "endpoint_q": 0.7999999998992032,
+      "target_residual": -1.0079681533881057e-10,
+      "derivative_of_endpoint_top": 1.8940157457219486,
+      "step_doubling_error": 7.061018436615996e-14,
+      "vacuum": {
+        "state": {
+          "q": 0.7999999998992032,
+          "S": 0.26670763512479023,
+          "z": 0.24380711990881823,
+          "lambda_H": 0.223003341874606,
+          "p": 0.14248321913408288,
+          "lambda_s": 0.259631443868146,
+          "x": 0.5731042805561777,
+          "y": 0.5217327862196104
+        },
+        "determinant": 0.03759721190351466,
+        "H_numerator": 0.07445772493945108,
+        "singlet_numerator": 0.03469041209935572,
+        "strict_double_vev": true,
+        "h_squared_over_common_scale": 1.9804054920490162,
+        "s_squared_over_common_scale": 0.9226857616033172,
+        "squared_vev_ratio": 0.46590749485786626,
+        "Majorana_squared_over_h_squared": 0.11359156446522892,
+        "radial_squared_over_h_squared": [
+          0.12431693871601344,
+          0.5636182162310758
+        ],
+        "formal_Schur_lambda": 0.14480993266211786,
+        "tadpole_residual": 0.0
+      },
+      "joint_spectrum": {
+        "q": 0.7999999998992032,
+        "S": 0.26670763512479023,
+        "ratio": 0.46590749485786626,
+        "scalar": {
+          "squared_mass_over_h_squared": [
+            0.12431693871601344,
+            0.5636182162310758
+          ],
+          "Higgs_weights": [
+            0.26772408481746623,
+            0.7322759151825338
+          ],
+          "static_Schur_mass_squared_over_h_squared": 0.2896198653242358,
+          "static_inverse_response": 3.452801826561442,
+          "low_momentum_kinetic_coefficient": 1.6464175863661161
+        },
+        "neutral_heavy_squared_over_h_squared": 0.24694538202762403,
+        "active_weight_in_heavy_pair": 0.5400134089062567,
+        "top_squared_over_h_squared": 0.3999999999496016,
+        "neutral_over_top_squared_ratio": 0.6173634551468454,
+        "maximum_scalar_over_four_top_squared_ratio": 0.3522613851888059
+      }
+    },
+    {
+      "synthetic_target_q": 0.9,
+      "q0": 0.34397401588621607,
+      "q0_bracket": [
+        0.3439740158196767,
+        0.34397401595275545
+      ],
+      "endpoint_q": 0.8999999999543132,
+      "target_residual": -4.568678768634982e-11,
+      "derivative_of_endpoint_top": 1.687614641870942,
+      "step_doubling_error": 7.09432512735475e-14,
+      "vacuum": {
+        "state": {
+          "q": 0.8999999999543132,
+          "S": 0.21126629991710805,
+          "z": 0.24685421982248615,
+          "lambda_H": 0.24130112516357463,
+          "p": 0.11355647194724372,
+          "lambda_s": 0.266491891766205,
+          "x": 0.553878115200842,
+          "y": 0.5454917633545399
+        },
+        "determinant": 0.05140972100904967,
+        "H_numerator": 0.08565990660495011,
+        "singlet_numerator": 0.0687313316139162,
+        "strict_double_vev": true,
+        "h_squared_over_common_scale": 1.666220024611131,
+        "s_squared_over_common_scale": 1.3369325929976823,
+        "squared_vev_ratio": 0.8023745803377325,
+        "Majorana_squared_over_h_squared": 0.19806955103466567,
+        "radial_squared_over_h_squared": [
+          0.2498433055639132,
+          0.6604115844018704
+        ],
+        "formal_Schur_lambda": 0.19291289002575635,
+        "tadpole_residual": 1.1102230246251565e-16
+      },
+      "joint_spectrum": {
+        "q": 0.8999999999543132,
+        "S": 0.21126629991710805,
+        "ratio": 0.8023745803377325,
+        "scalar": {
+          "squared_mass_over_h_squared": [
+            0.2498433055639132,
+            0.6604115844018704
+          ],
+          "Higgs_weights": [
+            0.43308103241190443,
+            0.5669189675880956
+          ],
+          "static_Schur_mass_squared_over_h_squared": 0.3858257800515127,
+          "static_inverse_response": 2.5918433959143092,
+          "low_momentum_kinetic_coefficient": 1.2262969085316824
+        },
+        "neutral_heavy_squared_over_h_squared": 0.3037027009932197,
+        "active_weight_in_heavy_pair": 0.3478176177330485,
+        "top_squared_over_h_squared": 0.4499999999771566,
+        "neutral_over_top_squared_ratio": 0.6748948911303035,
+        "maximum_scalar_over_four_top_squared_ratio": 0.3668953246863305
+      }
+    },
+    {
+      "synthetic_target_q": 1.0,
+      "q0": 0.4069023062204213,
+      "q0_bracket": [
+        0.4069023061538819,
+        0.40690230628696067
+      ],
+      "endpoint_q": 1.0000000000008575,
+      "target_residual": 8.575362642204709e-13,
+      "derivative_of_endpoint_top": 1.4970571654876037,
+      "step_doubling_error": 8.365530490550555e-14,
+      "vacuum": {
+        "state": {
+          "q": 1.0000000000008575,
+          "S": 0.15100676721114897,
+          "z": 0.2502890602057181,
+          "lambda_H": 0.2681071054046434,
+          "p": 0.08043313362437154,
+          "lambda_s": 0.2726016854896988,
+          "x": 0.5239178425242623,
+          "y": 0.5738040106639454
+        },
+        "determinant": 0.06661695984043411,
+        "H_numerator": 0.09666803226630707,
+        "singlet_numerator": 0.11170057853273907,
+        "strict_double_vev": true,
+        "h_squared_over_common_scale": 1.4511024294391925,
+        "s_squared_over_common_scale": 1.676758873420411,
+        "squared_vev_ratio": 1.1555069024785714,
+        "Majorana_squared_over_h_squared": 0.289210736682582,
+        "radial_squared_over_h_squared": [
+          0.40393423355101743,
+          0.7622662356795485
+        ],
+        "formal_Schur_lambda": 0.2443747173491026,
+        "tadpole_residual": 0.0
+      },
+      "joint_spectrum": {
+        "q": 1.0000000000008575,
+        "S": 0.15100676721114897,
+        "ratio": 1.1555069024785714,
+        "scalar": {
+          "squared_mass_over_h_squared": [
+            0.40393423355101743,
+            0.7622662356795485
+          ],
+          "Higgs_weights": [
+            0.6308452036867713,
+            0.3691547963132287
+          ],
+          "static_Schur_mass_squared_over_h_squared": 0.48874943469820525,
+          "static_inverse_response": 2.0460381721310505,
+          "low_momentum_kinetic_coefficient": 1.0753425578361446
+        },
+        "neutral_heavy_squared_over_h_squared": 0.36471412028815653,
+        "active_weight_in_heavy_pair": 0.20702073049960368,
+        "top_squared_over_h_squared": 0.5000000000004288,
+        "neutral_over_top_squared_ratio": 0.7294282405756876,
+        "maximum_scalar_over_four_top_squared_ratio": 0.3811331178394474
+      }
+    }
+  ],
+  "dependency_hashes": {
+    "research_note_544.md": "de00614fcda09221c489b5e6f9b016adfac9126b5f074141960b7f221c96dbc5",
+    "research_note_545.md": "297db145a9b650071356f7585c4320467ce69ed0e90cc22c6ac736d2b8586078",
+    "joint_singlet_common_mass_rg.py": "a98101522c25f9709f3994a69b06b4ef5cba081a6827a68354646b13b01dc185",
+    "joint_singlet_spectrum_and_weights.py": "d96c32797b9a72a0f76caa217324aa066419583f4dc7b2f15203f5c9832d62c7",
+    "research_round_545_checks.json": "3e66d1b7834f1e61e2e4e5bd3b65ff241c8f3583bdccc7ddb38123b1a455843b"
+  },
+  "scope": {
+    "strict_top_monotonicity_proved_for_the_declared_one_loop_family": true,
+    "other_spectral_quantities_monotonicity_proved": false,
+    "all_scalar_trajectories_exist_or_stable_proved": false,
+    "targets_are_synthetic_MS_parameters_not_experimental_fits": true,
+    "shooting_is_not_validated_interval_arithmetic": true,
+    "thresholds_pole_extraction_and_unification_completed": false
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "round": 585,
+  "tests_run": 5,
+  "failures": 0,
+  "errors": 0,
+  "evidence": {
+    "full_original_allocation_check": {
+      "rows": [
+        {
+          "n": 4,
+          "total_original": 100.97405868168829,
+          "component_error": 1.4210854715202004e-14,
+          "total_error": 0.0,
+          "lapse_duality_error": 1.4210854715202004e-14,
+          "spatial_weight_derivative_gap": 0.0,
+          "max_local_source_difference": 0.26570982562241807,
+          "nonconstant_lapse_energy_difference": -0.0449000255010337
+        },
+        {
+          "n": 6,
+          "total_original": 118.07434431717076,
+          "component_error": 1.4210854715202004e-14,
+          "total_error": 1.4210854715202004e-14,
+          "lapse_duality_error": 0.0,
+          "spatial_weight_derivative_gap": 7.105427357601002e-11,
+          "max_local_source_difference": 0.09306145458130222,
+          "nonconstant_lapse_energy_difference": -0.05059036514814079
+        }
+      ],
+      "original_572_574_classical_source_used": true,
+      "full_quantum_form_identity_proved_analytically": true
+    },
+    "same_gauss_state_local_source_check": {
+      "quadrature": [
+        {
+          "nodes": 48,
+          "theta": 0.3,
+          "hbar": 0.7,
+          "node_volume": 0.5120000000000001,
+          "direct_kinetic_increment": 0.046010436894906574,
+          "analytic_kinetic_increment": 0.04601043689490769,
+          "error": 1.1171619185290638e-15
+        },
+        {
+          "nodes": 80,
+          "theta": 0.3,
+          "hbar": 0.7,
+          "node_volume": 0.5120000000000001,
+          "direct_kinetic_increment": 0.0460104368949477,
+          "analytic_kinetic_increment": 0.04601043689494812,
+          "error": 4.163336342344337e-16
+        },
+        {
+          "nodes": 128,
+          "theta": 0.3,
+          "hbar": 0.7,
+          "node_volume": 0.5120000000000001,
+          "direct_kinetic_increment": 0.04601043689494814,
+          "analytic_kinetic_increment": 0.04601043689494812,
+          "error": 2.0816681711721685e-17
+        }
+      ],
+      "source_increment_at_A": 0.02760626213696887,
+      "increment_at_each_of_six_neighbors": 0.003067362459663208,
+      "total_increment": 0.04601043689494812,
+      "nonconstant_lapse_increment_difference": -0.0008477981326878159,
+      "predicted_difference": -0.0008477981326878151,
+      "phase_is_original_577_gauge_invariant_preparation": true,
+      "no_full_graph_propagation_simulated": true
+    },
+    "smooth_sampling_check": {
+      "rows": [
+        {
+          "n": 8,
+          "epsilon": 0.7853981633974483,
+          "lapse_energy_difference": -0.38747853569337387,
+          "exact_fourier_prediction": -0.3874785356933761,
+          "gap_over_eps_squared": -0.6281565419592395
+        },
+        {
+          "n": 16,
+          "epsilon": 0.39269908169872414,
+          "lapse_energy_difference": -0.10070239044218679,
+          "exact_fourier_prediction": -0.10070239044218925,
+          "gap_over_eps_squared": -0.6530102652937734
+        },
+        {
+          "n": 32,
+          "epsilon": 0.19634954084936207,
+          "lapse_energy_difference": -0.025419814918479902,
+          "exact_fourier_prediction": -0.02541981491847749,
+          "gap_over_eps_squared": -0.6593448282904422
+        }
+      ],
+      "limit_gap_over_eps_squared": -0.6614672358463961,
+      "only_fixed_smooth_classical_sampling_not_a_quantum_continuum_limit": true
+    },
+    "quantum_refinement_resource_check": {
+      "rows": [
+        {
+          "n": 8,
+          "epsilon": 0.7853981633974483,
+          "phase_preparation_energy": 0.04862467079549656,
+          "lapse_source_increment_gap": -0.00037978230248100113,
+          "gap_times_epsilon": -0.00029828032285943244
+        },
+        {
+          "n": 16,
+          "epsilon": 0.39269908169872414,
+          "phase_preparation_energy": 0.3889973663639725,
+          "lapse_source_increment_gap": -0.0007896176367867859,
+          "gap_times_epsilon": -0.0003100821208592875
+        },
+        {
+          "n": 32,
+          "epsilon": 0.19634954084936207,
+          "phase_preparation_energy": 3.11197893091178,
+          "lapse_source_increment_gap": -0.0015945547346274958,
+          "gap_times_epsilon": -0.0003130900900032852
+        }
+      ],
+      "limit_gap_times_epsilon": -0.0003140979158695126,
+      "phase_preparation_cost_diverges_like_eps_to_minus_three": true,
+      "not_a_bounded_energy_or_bounded_resource_quantum_continuum_counterexample": true
+    },
+    "normal_bracket_check": {
+      "unsmeared_canonical_bracket": 0.009424777960769385,
+      "target_momentum_bracket": 0.009424777960769385,
+      "unsmeared_error": 0.0,
+      "rows": [
+        {
+          "averaging_radius": 0.8,
+          "fourier_multiplier": 0.959560894579622,
+          "canonical_bracket": 0.00904364837125017,
+          "defect": -0.00038112958951921384,
+          "predicted_defect": -0.0003811295895192082
+        },
+        {
+          "averaging_radius": 0.4,
+          "fourier_multiplier": 0.9894747992003847,
+          "canonical_bracket": 0.009325580280240496,
+          "defect": -9.919768052888897e-05,
+          "predicted_defect": -9.919768052888636e-05
+        },
+        {
+          "averaging_radius": 0.2,
+          "fourier_multiplier": 0.9973422103788322,
+          "canonical_bracket": 0.009399728883723438,
+          "defect": -2.5049077045946957e-05,
+          "predicted_defect": -2.5049077045943945e-05
+        }
+      ],
+      "original_singlet_geodesic_sector_with_full_potential": true,
+      "transverse_volume_normalized_to_one": true,
+      "diagnostic_not_a_quantum_graph_constraint_algebra": true
+    }
+  },
+  "dependency_hashes": {
+    "joint_curved_quantum_source.py": "cf6aec9461174f41985b706c1bae776787b198ab77d9e42dfe8057764795775c",
+    "joint_quantum_measure_records.py": "adb52e0b65e459da3162716c2c9e28f8be0831020798fdd2dbb1ac2afff57993",
+    "research_note_350.md": "3bfd40bd6bbaaa9bce7029254ff460fcca49411892188ac7a98619373d33025a",
+    "research_note_351.md": "288bb5e2883658e7ae35db93a0f4457675cca90bdb6eba460dc37063a15ea66a",
+    "research_note_352.md": "ee27e9fbba893e7d2f954872b0467bf45df1f2b2af35c66179f86182cb6a7d3d",
+    "research_note_366.md": "6c617046c4d1854b6e193c0634f8d7b64f91a9a7d5104af0b17db0cab40a86b9",
+    "research_note_572.md": "d5be547e62219cec351e11973af34324e1ed2bae9743247276b3b5fcfc99009e",
+    "research_note_574.md": "23d72d666f593f845577712e761ab00dec1d10a56955b7da5fbb22a5ca68ef19",
+    "research_note_577.md": "c4a8abb53b794856fd1abc86a8fc084e8d950e2231a080a6ffd26944eb583d7e",
+    "research_note_584.md": "ee5402ee7efca3231e618787825e5b5a2b29aeab4b9c5519b44457eae5c87a80",
+    "research_round_584_checks.json": "08aa0b370fc7fa4a60d79b6b54feafcebd86dc00ea063c7667d833949e9d8647"
+  },
+  "scope": "positive local-lapse completions of the same original unit-lapse finite-graph Hamiltonian; original Gauss source gives different local constraint energies while all unit-lapse dynamics and spatial-weight responses agree; classical smooth leading limit is shared; restricted continuum normal-bracket test rejects naive smearing at fixed lapse calibration, not a quantum Einstein solution or no-go for cognition/GR"
+}

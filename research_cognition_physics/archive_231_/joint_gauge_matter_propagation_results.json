@@ -1,0 +1,296 @@
+{
+  "round": 568,
+  "tests_run": 8,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "nonlinear_hessian_check",
+    "symplectic_check",
+    "hodge_check",
+    "dispersion_check",
+    "nonlinear_gauge_check",
+    "scales_check",
+    "joint_boson_check",
+    "smooth_energy_check"
+  ],
+  "evidence": {
+    "nonlinear_hessian_check": {
+      "Cartesian_and_exact_SU2_full_potential_variables": 32,
+      "Hessian_refinement_errors": [
+        1.319776277153295e-07,
+        3.299401218903597e-08
+      ],
+      "radial_angle_cross_block_max": 0.0,
+      "convention": "half-angle Lie basis, beta*(1-ReTr(U_face)/2)"
+    },
+    "symplectic_check": {
+      "energy_residual": 3.552713678800501e-15,
+      "canonical_one_form_residual": 0.0,
+      "Gauss_derivative_residual": 1.1102230246251565e-16,
+      "reduced_Hamilton_equation_residual": 1.7763568394002505e-15
+    },
+    "hodge_check": {
+      "tori": [
+        {
+          "dimension": 2,
+          "sites": 9,
+          "links": 18,
+          "faces": 9,
+          "rank_gradient": 8,
+          "rank_curl": 8,
+          "harmonic_modes": 2,
+          "one_form_Hodge_identity_residual": 0.0
+        },
+        {
+          "dimension": 3,
+          "sites": 27,
+          "links": 81,
+          "faces": 81,
+          "rank_gradient": 26,
+          "rank_curl": 52,
+          "harmonic_modes": 3,
+          "one_form_Hodge_identity_residual": 0.0
+        }
+      ],
+      "dimension_not_selected": true
+    },
+    "dispersion_check": {
+      "one_colour_modes": 81,
+      "three_colours_have_same_quadratic_operator": true,
+      "branches": [
+        {
+          "beta": 0.0,
+          "mass_squared": 0.17712573617889726,
+          "longitudinal_lattice_slope": 0.8,
+          "transverse_lattice_slope": 0.0,
+          "dynamic_matrix_residual": 0.0,
+          "spectral_residual": 3.552713678800501e-15,
+          "number_at_mass_gap": 55
+        },
+        {
+          "beta": 0.8,
+          "mass_squared": 0.17712573617889726,
+          "longitudinal_lattice_slope": 0.8,
+          "transverse_lattice_slope": 0.4,
+          "dynamic_matrix_residual": 2.6645352591003757e-15,
+          "spectral_residual": 1.687538997430238e-14,
+          "number_at_mass_gap": 3
+        },
+        {
+          "beta": 1.6,
+          "mass_squared": 0.17712573617889726,
+          "longitudinal_lattice_slope": 0.8,
+          "transverse_lattice_slope": 0.8,
+          "dynamic_matrix_residual": 5.329070518200751e-15,
+          "spectral_residual": 1.7763568394002505e-14,
+          "number_at_mass_gap": 3
+        }
+      ]
+    },
+    "nonlinear_gauge_check": {
+      "full_noncommuting_SU2_gauge_residual": 7.105427357601002e-15,
+      "minimum_sampled_positive_potential": 17.504808045775313,
+      "positivity_and_invariance_proved_algebraically": true
+    },
+    "scales_check": {
+      "rows": [
+        {
+          "d": 2,
+          "epsilon": 1.0,
+          "volume": 1.0,
+          "k_h": 0.8,
+          "b": 1.0,
+          "beta": 1.6,
+          "common_speed_squared": 0.8,
+          "vector_frequency_gap_squared": 0.17712573617889726
+        },
+        {
+          "d": 2,
+          "epsilon": 0.5,
+          "volume": 0.25,
+          "k_h": 0.8,
+          "b": 1.0,
+          "beta": 6.4,
+          "common_speed_squared": 0.8,
+          "vector_frequency_gap_squared": 0.17712573617889726
+        },
+        {
+          "d": 2,
+          "epsilon": 0.25,
+          "volume": 0.0625,
+          "k_h": 0.8,
+          "b": 1.0,
+          "beta": 25.6,
+          "common_speed_squared": 0.8,
+          "vector_frequency_gap_squared": 0.17712573617889726
+        },
+        {
+          "d": 3,
+          "epsilon": 1.0,
+          "volume": 1.0,
+          "k_h": 0.8,
+          "b": 1.0,
+          "beta": 1.6,
+          "common_speed_squared": 0.8,
+          "vector_frequency_gap_squared": 0.17712573617889726
+        },
+        {
+          "d": 3,
+          "epsilon": 0.5,
+          "volume": 0.125,
+          "k_h": 0.4,
+          "b": 2.0,
+          "beta": 3.2,
+          "common_speed_squared": 0.8,
+          "vector_frequency_gap_squared": 0.17712573617889726
+        },
+        {
+          "d": 3,
+          "epsilon": 0.25,
+          "volume": 0.015625,
+          "k_h": 0.2,
+          "b": 4.0,
+          "beta": 6.4,
+          "common_speed_squared": 0.8,
+          "vector_frequency_gap_squared": 0.17712573617889726
+        },
+        {
+          "d": 4,
+          "epsilon": 1.0,
+          "volume": 1.0,
+          "k_h": 0.8,
+          "b": 1.0,
+          "beta": 1.6,
+          "common_speed_squared": 0.8,
+          "vector_frequency_gap_squared": 0.17712573617889726
+        },
+        {
+          "d": 4,
+          "epsilon": 0.5,
+          "volume": 0.0625,
+          "k_h": 0.2,
+          "b": 4.0,
+          "beta": 1.6,
+          "common_speed_squared": 0.8,
+          "vector_frequency_gap_squared": 0.17712573617889726
+        },
+        {
+          "d": 4,
+          "epsilon": 0.25,
+          "volume": 0.00390625,
+          "k_h": 0.05,
+          "b": 16.0,
+          "beta": 1.6,
+          "common_speed_squared": 0.8,
+          "vector_frequency_gap_squared": 0.17712573617889726
+        }
+      ],
+      "coupling_is_normalization_input_not_measured_weak_coupling": true,
+      "fixed_b_fast_link_limit_is_not_this_scale_family": true
+    },
+    "joint_boson_check": {
+      "rows": [
+        {
+          "dimensionless_momentum": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "lattice_Laplacian": 0.0,
+          "radial_omega_squared": [
+            0.08790122155293806,
+            0.2760913042466942
+          ],
+          "each_colour_vector_omega_squared": [
+            0.17712573617889726,
+            0.17712573617889726,
+            0.17712573617889726
+          ]
+        },
+        {
+          "dimensionless_momentum": [
+            0.3,
+            0.7,
+            1.1
+          ],
+          "lattice_Laplacian": 1.6524504043286563,
+          "radial_omega_squared": [
+            1.4098615450158631,
+            1.5980516277096193
+          ],
+          "each_colour_vector_omega_squared": [
+            1.4990860596418223,
+            1.4990860596418225,
+            1.499086059641824
+          ]
+        },
+        {
+          "dimensionless_momentum": [
+            1.0,
+            0.5,
+            0.2
+          ],
+          "lattice_Laplacian": 1.2040971088004917,
+          "radial_omega_squared": [
+            1.0511789085933316,
+            1.2393689912870876
+          ],
+          "each_colour_vector_omega_squared": [
+            1.1404034232192906,
+            1.1404034232192908,
+            1.1404034232192917
+          ]
+        }
+      ],
+      "common_slope": 0.8,
+      "total_modes_per_momentum_in_d3": 11,
+      "scalar_and_three_massive_SU2_vectors_only": true,
+      "no_photon_hypercharge_fermions_or_gravity_added": true
+    },
+    "smooth_energy_check": {
+      "rows": [
+        {
+          "points_per_axis": 8,
+          "epsilon": 0.7853981633974483,
+          "full_nonlinear_lattice_energy": 1.3707739967665429,
+          "continuum_density_integral": 1.402522867866992,
+          "absolute_difference": 0.031748871100449216,
+          "magnetic_energy": 0.08040741726558827
+        },
+        {
+          "points_per_axis": 16,
+          "epsilon": 0.39269908169872414,
+          "full_nonlinear_lattice_energy": 1.3944579930137508,
+          "continuum_density_integral": 1.402522867866992,
+          "absolute_difference": 0.008064874853241255,
+          "magnetic_energy": 0.08196556304573914
+        },
+        {
+          "points_per_axis": 32,
+          "epsilon": 0.19634954084936207,
+          "full_nonlinear_lattice_energy": 1.400498582615299,
+          "continuum_density_integral": 1.402522867866992,
+          "absolute_difference": 0.002024285251693181,
+          "magnetic_energy": 0.08236344411858844
+        }
+      ],
+      "noncommuting_gauge_directions": true,
+      "scope": "smooth classical energy consistency, not evolution or quantum convergence"
+    }
+  },
+  "dependency_hashes": {
+    "joint_scalar_propagation_matching.py": "3ef2f256906884ae1ef2b1ecb36fe0a2b6f1d60a931852511f0a7f11d88d42b5",
+    "joint_finite_time_gauge_probe.py": "acd1a47553fb49fc00d59e707f57af103acce1f6c31433ae70263f5e4e4316b6",
+    "joint_singlet_common_mass_rg_results.json": "4bd60fde58c288d047275f8441c8e622819cd58a2fe55a5ea2717a5fc3a48d66",
+    "research_note_566.md": "c17b8ccae3b65e708c12d59edd07cdb32f3845ce50229d54a9171c7653f0bbc6",
+    "research_note_567.md": "20c11f89adfd8c77a0824ed18eac5236536928f7c27bc7fdde813b8866f6251f"
+  },
+  "scope": {
+    "classical_quadratic_Gauss_reduction": true,
+    "original_longitudinal_matter_mediated_propagation_preserved": true,
+    "magnetic_plaquettes_and_common_speed_are_added_inputs": true,
+    "same_radial_potential_vacuum_and_mass_matrix": true,
+    "no_quantum_phase_or_continuum_limit_or_full_Lorentz_proof": true,
+    "no_dimension_GR_or_standard_model_completion": true
+  }
+}

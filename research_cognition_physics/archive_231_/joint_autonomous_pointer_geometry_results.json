@@ -1,0 +1,165 @@
+{
+  "round": 575,
+  "tests_run": 7,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "metric_and_canonical_check",
+    "edge_connection_check",
+    "resource_obstruction_check",
+    "constraints_and_reference_check",
+    "graph_limit_check",
+    "quantum_record_check",
+    "stress_exchange_check"
+  ],
+  "evidence": {
+    "metric_and_canonical_check": {
+      "inverse_error": 4.440892098500626e-16,
+      "volume_relative_error": 8.881784197001252e-16,
+      "Legendre_error": 2.220446049250313e-15,
+      "canonical_flux_error": 8.881784197001252e-16,
+      "target_dimension": 6
+    },
+    "edge_connection_check": {
+      "line_integral_error": 3.469446951953614e-17,
+      "reversal_error": 0.0,
+      "gauge_error": 6.245004513516506e-17,
+      "target_loop_integral": -0.03,
+      "connection_not_an_exact_relabeling": true
+    },
+    "resource_obstruction_check": {
+      "flat_transverse_norm_squared": 1.9568060179855087e-05,
+      "analytic_Fourier_norm_squared": 1.9568060179855114e-05,
+      "harmonic_max": 6.412039410715054e-19,
+      "all_smooth_circle_configs_gradient_energy_lower": 1.7545217578789334e-06,
+      "_chi_zero_initial_gradient_energy": 0.01636694344374321,
+      "winding_harmonics_cannot_cancel_transverse_part": true
+    },
+    "constraints_and_reference_check": {
+      "extra_B_rational_upper": "3020472665215929/8000000000000000000",
+      "total_B_rational_upper": "54768514894327011798944569205049/638267715210248000000000000000000",
+      "rows": [
+        {
+          "N": 16,
+          "max_psi_change": 1.322691312533042e-05,
+          "min_psi_change": 6.591690296264829e-06,
+          "constraint_residual": 4.872102721265037e-12,
+          "psi_at_reference": 1.0182757397722402,
+          "h_velocity": 0.0077788481627815926,
+          "pointer_velocity": -0.002966877663055401,
+          "clock_norm": -6.051047873961056e-05,
+          "reference_determinant": 2.0910719127506752e-10,
+          "independent_minor_relative_error": 0.002160420460738882
+        },
+        {
+          "N": 24,
+          "max_psi_change": 1.3226914708952542e-05,
+          "min_psi_change": 6.578798874334879e-06,
+          "constraint_residual": 5.512701406473752e-12,
+          "psi_at_reference": 1.0182757464487124,
+          "h_velocity": 0.0077788478567627365,
+          "pointer_velocity": -0.002966877546338829,
+          "clock_norm": -6.051047397866222e-05,
+          "reference_determinant": 2.091071330763685e-10,
+          "independent_minor_relative_error": 3.7671088727160616e-06
+        },
+        {
+          "N": 32,
+          "max_psi_change": 1.3226914708175386e-05,
+          "min_psi_change": 6.561360299972563e-06,
+          "constraint_residual": 5.805800284974794e-12,
+          "psi_at_reference": 1.0182757464485652,
+          "h_velocity": 0.007778847856769484,
+          "pointer_velocity": -0.0029668775463414015,
+          "clock_norm": -6.051047397876719e-05,
+          "reference_determinant": 2.091071330752762e-10,
+          "independent_minor_relative_error": 3.4076724180228606e-08
+        }
+      ],
+      "same_canonical_source_momentum": true,
+      "new_geometry_includes_pointer_gradient": true
+    },
+    "graph_limit_check": {
+      "rows": [
+        {
+          "N": 8,
+          "probe_edge_energy": 0.01553036067711382,
+          "continuum_quadrature": 0.016366980851203,
+          "error": 0.0008366201740891803
+        },
+        {
+          "N": 12,
+          "probe_edge_energy": 0.015990526054490018,
+          "continuum_quadrature": 0.01636694334948475,
+          "error": 0.00037641729499473045
+        },
+        {
+          "N": 20,
+          "probe_edge_energy": 0.01623057700732497,
+          "continuum_quadrature": 0.01636694344415006,
+          "error": 0.00013636643682508887
+        }
+      ],
+      "new_circle_edge_potential_nonnegative": true,
+      "no_quantum_continuum_limit_claim": true
+    },
+    "quantum_record_check": {
+      "rows": [
+        {
+          "hbar": 0.002,
+          "cos_mean": 0.998999498996862,
+          "probe_momentum_variance": 0.000499499749498432,
+          "quantum_sin_response": -0.0033569630321792047,
+          "classical_unit_cell_response": -0.003307440349503166,
+          "response_error": 4.9522682676038723e-05,
+          "extra_node_kinetic_energy": 0.00031587338686731796,
+          "full_Hamiltonian_commutator_error": 6.5052130349130266e-18,
+          "binary_effect_response": -0.0008392407580448012
+        },
+        {
+          "hbar": 0.0005,
+          "cos_mean": 0.9997499687343627,
+          "probe_momentum_variance": 0.00012496874609179418,
+          "quantum_sin_response": -0.003321299493686402,
+          "classical_unit_cell_response": -0.003307440349503166,
+          "response_error": 1.3859144183235843e-05,
+          "extra_node_kinetic_energy": 7.8849738793875e-05,
+          "full_Hamiltonian_commutator_error": 3.122502256758253e-17,
+          "binary_effect_response": -0.0008303248734216005
+        },
+        {
+          "hbar": 0.000125,
+          "cos_mean": 0.9999374980466307,
+          "probe_momentum_variance": 3.124804681395739e-05,
+          "quantum_sin_response": -0.003310994084036552,
+          "classical_unit_cell_response": -0.003307440349503166,
+          "response_error": 3.553734533385828e-06,
+          "extra_node_kinetic_energy": 1.97033939472189e-05,
+          "full_Hamiltonian_commutator_error": 2.0383000842727483e-17,
+          "binary_effect_response": -0.000827748521009138
+        }
+      ],
+      "independent_quadrature_error": 6.288372600415926e-17,
+      "unit_cell_diagnostic_not_full_graph_evolution": true,
+      "full_graph_short_time_record_from_bounded_effect_derivative": true,
+      "uniform_circle_state_has_no_absolute_sin_response": true
+    },
+    "stress_exchange_check": {
+      "off_shell_stress_identity_error": 1.8876566976189224e-13,
+      "nonzero_exchange": [
+        6.857892941839291e-05,
+        6.857892941839291e-05,
+        0.0,
+        0.0
+      ],
+      "source_and_pointer_stress_must_be_combined": true
+    }
+  },
+  "dependency_hashes": {
+    "joint_curved_quantum_source.py": "cf6aec9461174f41985b706c1bae776787b198ab77d9e42dfe8057764795775c",
+    "joint_gauss_einstein_initial_data.py": "8c600a6f4d6cdee75aa2240c8ad650402c69ab791aaed4380770c8ab119c6cb5",
+    "joint_gravity_material_coordinates.py": "492cc66a332db08ede6fa046cd69528d146216d87e357a8219dcad863ddc7baa",
+    "research_round_574_checks.json": "fb2ecc2cfb79f12c2c1e5cd3eee33b0ea7a69767fd862a8c7e17e5946636a740"
+  },
+  "scope": "one explicitly added neutral pointer and autonomous target connection; same matter canonical initial source, joint classical Einstein constraints and finite-graph bounded quantum record; no finite-hbar self-consistent quantum geometry, full apparatus preparation or dimension/GR/SM derivation"
+}

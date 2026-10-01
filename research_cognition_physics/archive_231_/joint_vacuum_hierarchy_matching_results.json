@@ -1,0 +1,266 @@
+{
+  "round": 551,
+  "tests_run": 8,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "exact_full_constant_scalar_and_Einstein_equations_and_inverse_vacuum_matching",
+    "exact_rank_one_positive_Hessian_certificate_and_same_scale_gauge_identities",
+    "independent_potential_Hessian_differences_and_canonical_radial_mass_positivity",
+    "weak_curvature_hierarchy_bound_with_exact_saturating_examples",
+    "large_hierarchy_vacuum_only_escape_leaves_weak_curvature_regime",
+    "one_extra_common_mass_matching_allows_flat_large_hierarchy_with_radial_stability",
+    "inherited_nonuniform_reference_can_use_matched_field_values_but_constant_vacuum_has_no_reference_rank",
+    "endpoint_and_unmatched_flat_minimum_counterchecks_prevent_false_full_solution"
+  ],
+  "exact_constant_backgrounds": [
+    {
+      "t": "11/10",
+      "R": "-3/20",
+      "h2": "11/10",
+      "s2": "11/30",
+      "F": "49/45",
+      "V0": "1/24",
+      "R_over_mu2": "-12/5",
+      "F_over_h2": "98/99"
+    },
+    {
+      "t": "1",
+      "R": "0",
+      "h2": "1",
+      "s2": "1/3",
+      "F": "10/9",
+      "V0": "1/12",
+      "R_over_mu2": "0",
+      "F_over_h2": "10/9"
+    },
+    {
+      "t": "9/10",
+      "R": "3/20",
+      "h2": "9/10",
+      "s2": "3/10",
+      "F": "17/15",
+      "V0": "1/8",
+      "R_over_mu2": "12/5",
+      "F_over_h2": "34/27"
+    },
+    {
+      "t": "1/10",
+      "R": "27/20",
+      "h2": "1/10",
+      "s2": "1/30",
+      "F": "59/45",
+      "V0": "11/24",
+      "R_over_mu2": "108/5",
+      "F_over_h2": "118/9"
+    },
+    {
+      "t": "1/100",
+      "R": "297/200",
+      "h2": "1/100",
+      "s2": "1/300",
+      "F": "599/450",
+      "V0": "119/240",
+      "R_over_mu2": "594/25",
+      "F_over_h2": "1198/9"
+    }
+  ],
+  "rank_one_certificates": 162,
+  "radial_stability_examples": [
+    {
+      "t": "1/100",
+      "R": "297/200",
+      "canonical_radial_masses_squared": [
+        0.001609825900310048,
+        0.003130217028380664
+      ]
+    },
+    {
+      "t": "1/5",
+      "R": "6/5",
+      "canonical_radial_masses_squared": [
+        0.0332512315270936,
+        0.06465517241379311
+      ]
+    },
+    {
+      "t": "1",
+      "R": "0",
+      "canonical_radial_masses_squared": [
+        0.19285714285714284,
+        0.3749999999999999
+      ]
+    },
+    {
+      "t": "2",
+      "R": "-3/2",
+      "canonical_radial_masses_squared": [
+        0.4821428571428573,
+        0.9375000000000004
+      ]
+    },
+    {
+      "t": "5",
+      "R": "-6",
+      "canonical_radial_masses_squared": [
+        4.821428571428591,
+        9.374999999999975
+      ]
+    }
+  ],
+  "maximum_Hessian_relative_difference": 7.641930118984022e-09,
+  "maximum_analytic_Hessian_relative_residual": 3.909892153468368e-15,
+  "maximum_stationarity_residual": 7.815970093361102e-14,
+  "weak_curvature_certificates": 108,
+  "weak_curvature_bounds": [
+    {
+      "eta": "0",
+      "uniform_F_over_h2_upper_bound": "40/27"
+    },
+    {
+      "eta": "1",
+      "uniform_F_over_h2_upper_bound": "968/621"
+    },
+    {
+      "eta": "12",
+      "uniform_F_over_h2_upper_bound": "88/27"
+    }
+  ],
+  "near_critical_vacuum_only_sequence": [
+    {
+      "t": "1/10",
+      "F_over_h2": "118/9",
+      "R_over_mu2": "108/5"
+    },
+    {
+      "t": "1/100",
+      "F_over_h2": "1198/9",
+      "R_over_mu2": "594/25"
+    },
+    {
+      "t": "1/10000",
+      "F_over_h2": "119998/9",
+      "R_over_mu2": "29997/1250"
+    },
+    {
+      "t": "1/1000000",
+      "F_over_h2": "11999998/9",
+      "R_over_mu2": "2999997/125000"
+    }
+  ],
+  "independent_common_mass_sequence": [
+    {
+      "kappa": "1",
+      "F_over_h2": "10/9",
+      "R": "0",
+      "V0": "1/12",
+      "s2_over_h2": "1/3",
+      "canonical_radial_masses_squared": [
+        0.19285714285714284,
+        0.3749999999999999
+      ]
+    },
+    {
+      "kappa": "1/100",
+      "F_over_h2": "1198/9",
+      "R": "0",
+      "V0": "1/120000",
+      "s2_over_h2": "1/3",
+      "canonical_radial_masses_squared": [
+        0.0016098259003100412,
+        0.0037500000000000007
+      ]
+    },
+    {
+      "kappa": "1/10000",
+      "F_over_h2": "119998/9",
+      "R": "0",
+      "V0": "1/1200000000",
+      "s2_over_h2": "1/3",
+      "canonical_radial_masses_squared": [
+        1.607169643303579e-05,
+        3.750000000000001e-05
+      ]
+    },
+    {
+      "kappa": "1/1000000",
+      "F_over_h2": "11999998/9",
+      "R": "0",
+      "V0": "1/12000000000000",
+      "s2_over_h2": "1/3",
+      "canonical_radial_masses_squared": [
+        1.6071431250000443e-07,
+        3.7499999999999996e-07
+      ]
+    }
+  ],
+  "inherited_reference_examples": [
+    {
+      "kappa": "1",
+      "field_values": [
+        1.0,
+        0.5773502691896257
+      ],
+      "nonuniform_reference_determinant_J": -1.8838011188271597e-05,
+      "inherited_local_development_not_constant_vacuum": true
+    },
+    {
+      "kappa": "1/100",
+      "field_values": [
+        0.1,
+        0.05773502691896258
+      ],
+      "nonuniform_reference_determinant_J": -2.703638900945216e-05,
+      "inherited_local_development_not_constant_vacuum": true
+    },
+    {
+      "kappa": "1/10000",
+      "field_values": [
+        0.01,
+        0.005773502691896258
+      ],
+      "nonuniform_reference_determinant_J": -2.7125831894109285e-05,
+      "inherited_local_development_not_constant_vacuum": true
+    }
+  ],
+  "endpoint_checks": [
+    {
+      "t": "0",
+      "h2": "0",
+      "F": "4/3"
+    },
+    {
+      "t": "6",
+      "h2": "6",
+      "F": "0"
+    }
+  ],
+  "inconsistent_bare_flat_minimum_metric_R": "33/10",
+  "dependency_hashes": {
+    "research_note_531.md": "ece8423ed4531280af8f829ea84b51c2614da00151155ce61c6ddbd65c15e9d0",
+    "research_note_543.md": "9a93e3035d6e890237e3ef7fcc837d6991eb2aea234a5e1577c22f076459dcd1",
+    "research_note_544.md": "de00614fcda09221c489b5e6f9b016adfac9126b5f074141960b7f221c96dbc5",
+    "research_note_549.md": "33b27324128d04f98f6e795148004fef7c9111d3aea4d3c8fbbfca8670c55797",
+    "research_note_550.md": "5bb203a04c8a69c07c52ef882c86992e427f52d60368528fcfebe99cdbc30271",
+    "joint_reference_gravity_constraints.py": "f7c6046683c5b60283b76ee4960c7243e46b7f820aa17558375e1f3669bfa29e",
+    "joint_reference_gravity_constraints_results.json": "f24f41672df35a40dc02658501d46018bc5cb9bd68e91d903a753edf752aeb3f",
+    "research_round_550_checks.json": "b9dd807d5b8cb8ec0259037fe6c3f9a91d3fc18cdf84737ef5d347b5b00626b8"
+  },
+  "scope": {
+    "classical_four_dimensional_two_derivative_model": true,
+    "constant_scalar_Einstein_branch_only_for_hierarchy_theorem": true,
+    "fixed_r_and_generation_number_for_uniform_bound": true,
+    "positive_F_and_two_nonzero_condensates": true,
+    "independent_V0_is_new_matching_input": true,
+    "additional_common_mass_matching_is_new_input": true,
+    "scalar_radial_linear_stability_only": true,
+    "constant_vacuum_is_not_full_rank_reference": true,
+    "nonuniform_reference_existence_inherited_from_549": true,
+    "F_over_h2_is_action_coefficient_ratio_not_measured_Newton_over_pole_mass": true,
+    "matter_internal_mass_ratios_not_released": true,
+    "quantum_or_radiative_stability_not_proved": true,
+    "higher_derivative_and_full_spectral_validity_not_proved": true,
+    "uniqueness_or_minimal_input_count_not_proved": true,
+    "completed_unification": false
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "round": 615,
+  "tests_run": 3,
+  "failures": 0,
+  "errors": 0,
+  "matrix": {
+    "max_pair_projection_GW_residual": 2.70641769956035e-15,
+    "max_physical_determinant_residual": 3.885780586188048e-16,
+    "frame_Jacobian_variation": 1.7763568394002505e-15,
+    "Wilson_gap_min": 0.9999999999999997,
+    "individual_auxiliary_singular_norm": 5.551115123125783e-16,
+    "periodic_spatial_one_site_AP_temporal": true,
+    "original_internal_dimension": 16,
+    "original_four_Euclidean_directions_and_m0_are_inputs": true
+  },
+  "integrated_source": {
+    "exact_coefficients": [
+      "1/55",
+      "8/165",
+      "14/165",
+      "4/33",
+      "5/33",
+      "28/165",
+      "28/165",
+      "8/55",
+      "1/11"
+    ],
+    "integration_crosscheck_error": 8.881784197001252e-16,
+    "rows": [
+      {
+        "theta": 0.07,
+        "auxiliary_factor": 0.94288976650337,
+        "auxiliary_log_derivative": -1.680334202413202,
+        "physical_determinant": 0.8627975131536879,
+        "full_factor": 0.8135229457171691,
+        "bare_log_derivative": -4.2330160515699635,
+        "full_log_derivative": -5.9133502539831655,
+        "finite_difference_error": 3.6641534251202756e-10,
+        "omitted_source_if_auxiliary_discarded": 1.680334202413202
+      },
+      {
+        "theta": 0.17,
+        "auxiliary_factor": 0.7068138270431705,
+        "auxiliary_log_derivative": -4.084181658901727,
+        "physical_determinant": 0.4115077116759854,
+        "full_factor": 0.2908593405474808,
+        "bare_log_derivative": -10.706216203292938,
+        "full_log_derivative": -14.790397862194665,
+        "finite_difference_error": 2.572893009755717e-10,
+        "omitted_source_if_auxiliary_discarded": 4.084181658901727
+      },
+      {
+        "theta": 0.31,
+        "auxiliary_factor": 0.31512860350359784,
+        "auxiliary_log_derivative": -7.455908079197488,
+        "physical_determinant": 0.04279574064703223,
+        "full_factor": 0.013486161986001426,
+        "bare_log_derivative": -22.481785911511427,
+        "full_log_derivative": -29.937693990708915,
+        "finite_difference_error": 1.0854890319933475e-09,
+        "omitted_source_if_auxiliary_discarded": 7.455908079197488
+      },
+      {
+        "theta": 1.0471975511965976,
+        "auxiliary_factor": 1.3871626420454595e-06,
+        "auxiliary_log_derivative": -27.712812921102024
+      },
+      {
+        "theta": 1.5707963267948966,
+        "auxiliary_factor": 7.102272727272715e-05,
+        "auxiliary_log_derivative": 24.000000000000004
+      },
+      {
+        "theta": 2.14,
+        "auxiliary_factor": 0.04254167433454391,
+        "auxiliary_log_derivative": 1.7262119026570395
+      }
+    ],
+    "auxiliary_strictly_positive_for_all_real_theta_analytic": true,
+    "full_factor_nonzero_guaranteed_window": "abs(theta)<pi/6",
+    "individual_zero_not_integrated_zero": true,
+    "source_convention": "log derivative; induced action -log Z has opposite sign"
+  },
+  "conditions": {
+    "original_subgroup_no_fixed_vector_rank": 10,
+    "flat_holonomy_smallest_distance_from_fixed_vector": 0.33836469813399195,
+    "cannot_inherit_Spin9_sufficient_proof_by_group_inclusion": true,
+    "invariant_measures_same_second_moment": "1/10",
+    "sphere_split_variance": "1/25",
+    "fixed_split_variance": "0",
+    "leading_partition_difference_theta4": "7/4",
+    "rows": [
+      {
+        "theta": 0.03,
+        "S9_factor": 0.9892579109196711,
+        "fixed_split_factor": 0.9892565077764752,
+        "log_source_difference": 0.00018917609123769719,
+        "quartic_difference_ratio": 1.732275550438265
+      },
+      {
+        "theta": 0.06,
+        "S9_factor": 0.9577167629733342,
+        "fixed_split_factor": 0.9576949882899581,
+        "log_source_difference": 0.0015176267837841984,
+        "quartic_difference_ratio": 1.6801453222262637
+      },
+      {
+        "theta": 0.17,
+        "S9_factor": 0.7068138270431705,
+        "fixed_split_factor": 0.7057611584248367,
+        "log_source_difference": 0.0354032336907828,
+        "quartic_difference_ratio": 1.2603640022675286
+      },
+      {
+        "theta": 0.31,
+        "S9_factor": 0.31512860350359784,
+        "fixed_split_factor": 0.309760028276453,
+        "log_source_difference": 0.22790737772207947,
+        "quartic_difference_ratio": 0.5813159881740475
+      }
+    ],
+    "alternative_is_measure_choice_not_proved_full_chiral_theory": true,
+    "uniform_S9_choice_is_fixed_in_main_candidate": true
+  },
+  "dependency_hashes": {
+    "research_note_606.md": "6bc9c41e467fc695cb26940a1edbf4c5e957f10e5a6a82f58d1ba9cea95824a5",
+    "research_note_610.md": "5c74e5848482dc6bc5ddb4edd6e74080c8262a4ca4037cc310793c455bf948ff",
+    "research_note_612.md": "3e2645a4c528c4b8d1650c9614b975e898ad8f8b51652db3a7307a4a4c8a3de6",
+    "research_note_613.md": "5c9c658d1ad14c90b9cac3698908fc1e26188c3cd0e02c9aaf36796819598890",
+    "research_note_614.md": "ac3db5a54d1f31939f92bfc762f6835bc1485d69052d5b775e7df54108cd0caf",
+    "joint_spinor_subgroup_mass.py": "712913dd7ff8bc44c0f0da9754daa290b645530d54fbf6da6d609148b4894c53",
+    "joint_chiral_fibre_source.py": "3f25148ddd0b5ad1dd6b67556ee5af3b1a93e7f6410fb5539278e6fd8eb40513"
+  },
+  "scope": {
+    "original_subgroup_and_mature_auxiliary_measure_used": true,
+    "exact_finite_slice_integral_and_common_source": true,
+    "one_site_zero_mass_background_no_scalar_integration": true,
+    "no_full_locality_reconstruction_or_GR_claim": true,
+    "quantum_measure_selection_remains_declared_input": true
+  }
+}

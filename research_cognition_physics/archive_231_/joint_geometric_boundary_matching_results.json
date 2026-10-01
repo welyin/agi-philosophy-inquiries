@@ -1,0 +1,131 @@
+{
+  "round": 618,
+  "tests_run": 3,
+  "failures": 0,
+  "errors": 0,
+  "momenta": {
+    "rows": [
+      {
+        "radial_fraction": 0.05,
+        "F": 1.995,
+        "Schur": 2.0,
+        "normal_trace_scalar_Hessian_determinant": -12.000000000000005,
+        "max_error": 5.551115123125783e-16,
+        "omitted_scalar_cotangent_term_norm": 0.058661443928937636
+      },
+      {
+        "radial_fraction": 0.35,
+        "F": 1.7550000000000001,
+        "Schur": 2.0,
+        "normal_trace_scalar_Hessian_determinant": -11.999999999999995,
+        "max_error": 1.7763568394002505e-15,
+        "omitted_scalar_cotangent_term_norm": 0.11312156747011112
+      },
+      {
+        "radial_fraction": 0.7,
+        "F": 1.0200000000000005,
+        "Schur": 2.0,
+        "normal_trace_scalar_Hessian_determinant": -11.999999999999995,
+        "max_error": 4.440892098500626e-16,
+        "omitted_scalar_cotangent_term_norm": 0.9979123303468775
+      },
+      {
+        "radial_fraction": 0.95,
+        "F": 0.1950000000000005,
+        "Schur": 1.9999999999999998,
+        "normal_trace_scalar_Hessian_determinant": -11.99999999999999,
+        "max_error": 7.105427357601002e-15,
+        "omitted_scalar_cotangent_term_norm": 3.8267663858991843
+      }
+    ],
+    "max_error": 7.105427357601002e-15,
+    "full_five_scalar_inverse": true,
+    "Hessian_is_not_claimed_positive": true,
+    "common_boundary_work_preserved": true
+  },
+  "action": {
+    "original_nonperiodic_action": {
+      "J": -0.000517877225631791,
+      "E": -0.000517877225631902,
+      "reduced": -0.0005178772256319434,
+      "bulkJ": 0.8857180562138598,
+      "bulkE": 0.9510870962706229,
+      "boundaryJ": -0.8862359334394916,
+      "boundaryE": -0.9516049734962548,
+      "min_F": 1.8430314288103036
+    },
+    "action_equality_error": 1.5243882545146192e-16,
+    "variation_bulk": 0.03543429475816892,
+    "variation_boundary": -0.1336798234616077,
+    "derivative_rows": [
+      {
+        "step": 0.002,
+        "action_derivative": -0.09824546738890216,
+        "variation_identity_error": 6.131453661462061e-08
+      },
+      {
+        "step": 0.001,
+        "action_derivative": -0.09824551337467291,
+        "variation_identity_error": 1.5328765867739236e-08
+      },
+      {
+        "step": 0.0005,
+        "action_derivative": -0.09824552487125437,
+        "variation_identity_error": 3.832184403140815e-09
+      }
+    ],
+    "omitted_GHY_frame_defect": 0.06536904005676314,
+    "actual_old_potential_retained": true,
+    "off_shell_action_identity_not_global_solution": true
+  },
+  "interface": {
+    "original_vacuum_phi": [
+      0.0,
+      0.6654429655855137,
+      0.0,
+      0.0,
+      0.545863690226873
+    ],
+    "original_F": 1.8765364152074429,
+    "diagnostic_surface_tension": 0.07,
+    "outward_extrinsic_trace_sum": 0.052500000000000005,
+    "outward_scalar_derivative_sum": [
+      -0.0,
+      -0.011645251897746492,
+      -0.0,
+      -0.0,
+      -0.009552614578970277
+    ],
+    "transformed_scalar_surface_source": [
+      -0.0,
+      -0.004828212670964214,
+      -0.0,
+      -0.0,
+      -0.003960588843934496
+    ],
+    "omitted_transformed_scalar_source_norm": 0.006244829988619208,
+    "source_matching_error": 6.938893903907228e-18,
+    "continuous_fields_only_metric_momentum_defect": 0.26002051307139656,
+    "continuous_fields_only_scalar_momentum_defect": 0.03442746598296988,
+    "no_source_matching_is_C1_in_adapted_coordinates": true,
+    "shell_is_new_diagnostic_not_a_postulated_constituent": true,
+    "global_shell_solution_not_constructed": true
+  },
+  "dependency_hashes": {
+    "research_note_358.md": "3f56c8aea5c509a33e0f05f948a998d275de7789a3356390da8dc75b7fe6b385",
+    "research_note_574.md": "23d72d666f593f845577712e761ab00dec1d10a56955b7da5fbb22a5ca68ef19",
+    "research_note_583.md": "4d17aa9406971cf89cbdc6bf2bc89cf79e9719fa4a4ba2301711d71b7da636c5",
+    "research_note_600.md": "27d905d1aa0f3421e469d812da14db160797bb4387640515dcc1bb09a46e7cc9",
+    "research_note_601.md": "2464a6dddd68e4b5cf242b93255dff3a42df9f6accb5c5a976faed42cca5c362",
+    "research_note_617.md": "68d930ea7de4a53b5fd098a05b499094328868010008f398178d7c26b6c4c2e9",
+    "joint_curved_quantum_source.py": "cf6aec9461174f41985b706c1bae776787b198ab77d9e42dfe8057764795775c",
+    "joint_frame_hessian_matching.py": "2a0ba2011b76a5b592c5a5b4ee1ef767441ab38b8a1daf775acd63b7d1f1b488"
+  },
+  "scope": {
+    "original_F_target_and_boundary_Schur_jointly_fixed": true,
+    "nonminimal_metric_and_scalar_momenta_cannot_be_chosen_independently": true,
+    "classical_timelike_two_derivative_scalar_gravity_branch": true,
+    "gauge_fermion_surface_terms_null_corners_and_higher_orders_not_completed": true,
+    "Einstein_action_is_input_and_quantum_GR_still_open": true
+  }
+}

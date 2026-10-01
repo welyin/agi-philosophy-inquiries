@@ -1,0 +1,53 @@
+{
+  "status": "584 entry; not completed round",
+  "checks_passed": 2,
+  "operators": {
+    "rows": [
+      {
+        "step": 0.004,
+        "full_operator_error": 9.376711755810014e-06,
+        "q_from_density_error": 3.333333340460598e-06,
+        "nonzero_error_without_q": 2.499990650971963
+      },
+      {
+        "step": 0.002,
+        "full_operator_error": 2.344041948526463e-06,
+        "q_from_density_error": 8.33333333449815e-07,
+        "nonzero_error_without_q": 2.4999976628794025
+      },
+      {
+        "step": 0.001,
+        "full_operator_error": 5.850931699469583e-07,
+        "q_from_density_error": 2.083333723312819e-07,
+        "nonzero_error_without_q": 2.49999941663989
+      }
+    ],
+    "local_test_functions_only": true
+  },
+  "record_difference": {
+    "expected_local_acceleration": 0.0896388397486291,
+    "rows": [
+      {
+        "step": 0.004,
+        "actual_double_commutator": 0.08963753264643443,
+        "imaginary_error": 0.0,
+        "error": 1.3071021946753358e-06
+      },
+      {
+        "step": 0.002,
+        "actual_double_commutator": 0.08963851293589452,
+        "imaginary_error": 0.0,
+        "error": 3.2681273458290416e-07
+      },
+      {
+        "step": 0.001,
+        "actual_double_commutator": 0.08963875785949593,
+        "imaginary_error": 0.0,
+        "error": 8.188913316886648e-08
+      }
+    ],
+    "observable": "b=sin(s); (D_correct^2-D_bare^2)b",
+    "not_a_full_wavepacket_or_time_evolution_simulation": true
+  },
+  "scope": "pointwise full five-dimensional operator diagnostics on interior patches; finite graph domain, Gauss states, actual finite-time record theorem and geometric source still require formal completion"
+}

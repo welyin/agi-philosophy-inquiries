@@ -1,0 +1,23 @@
+第585轮主代理代码、推导及来源核验
+日期：2026-10-01。此记录由 /root 编写，本轮未取得独立代理审查，不冒称独立终审。
+
+范围核对：
+1. h_i由原节点动能／势、边梯度／电能、面磁势组成，端点与面顶点分配系数总和为1。P为固定对称随机平均，正lapse下的闭形式范数与原模型等价，只主张同一形式域，不主张闭算符域相同。
+2. P不依赖psi，故单位lapse下的整个H[psi]族相同，原空间权响应也相同。局部N导数是不同的h_i；若连同N和钟重新定义，则应另核完整字典，本轮不排除它。
+3. Gauss包采用584的正规紧支撑源；577的相位只改节点动能，实幅度消除交叉项。与572原经典来源的全图分配诊断分开，不声称数值模拟574全图半经典波包。
+4. 光滑lapse差界乘总能源。细化相位族每图有限能，准备成本却按epsilon^-3增长；其epsilon^-1差不是有界资源连续极限的反证。
+5. 法向括号仅是原连续singlet测地子部门的必要接口诊断，保留原势；未计算引力交叉括号、量子约束代数，也未证明alpha=0的图离散化闭合。旧351、352、366的范围完整保留。
+
+文献实际核读：
+Gourgoulhon gr-qc/0703035，§4.1.2给法向能源与应力分解；§10.2关联约束传播、Bianchi与物质守恒。https://arxiv.org/pdf/gr-qc/0703035
+Teitelboim 1973，式(6)、(28)及§4给切片形变的几何条件；它在参数化背景场论也适用，不能只凭此声称动态GR。https://www.fis.uc.cl/~mbanados/Cursos/TopicosRelatividadAvanzada/Teitelboim.pdf
+未进行图像检验。正文十四式按本轮符号推导；成熟括号只用于新扩展的筛选。
+
+实际执行：joint_local_lapse_source.py五组断言通过；默认入口及最终冻结器还须重新计算并逐项比较保存JSON。初版四组代码和结果保留，不另计轮次。没有重跑全套历史实验；冻结基线逐项核对，复用584的低内存方式。
+
+最终文件SHA256（主代理取得）：
+joint_local_lapse_source.py: dec60d59a31e39f150b64000ef5141e9eddf12c36b17c1997216dff98b12fbb6
+joint_local_lapse_source_results.json: c332f8c184948d928d2de2502db55d5288c14964737b426b5a89b85f00567839
+research_note_585.md: 7e4c19eadff43a16e8e62c9be944b32c4b1680d9c32aac44b5c4d2e6f4dd5bdb
+round585_drafts/research_note_585_draft.md: 7e4c19eadff43a16e8e62c9be944b32c4b1680d9c32aac44b5c4d2e6f4dd5bdb
+unified_physics_condition_ledger_585.md: 6cc2b1227ab8dffb64bac472bcdfad69f8b8917ffddaf54d2f0e606bbdd07c52

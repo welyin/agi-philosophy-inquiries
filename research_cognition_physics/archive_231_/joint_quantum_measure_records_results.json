@@ -1,0 +1,177 @@
+{
+  "round": 584,
+  "tests_run": 4,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "full_five_coordinate_operator",
+    "local_record_double_commutator",
+    "compact_Gauss_source",
+    "geometric_response"
+  ],
+  "evidence": {
+    "full_five_coordinate_operator": {
+      "rows": [
+        {
+          "step": 0.004,
+          "full_operator_error": 9.376711755810014e-06,
+          "q_from_density_error": 3.333333340460598e-06,
+          "nonzero_error_without_q": 2.499990650971963
+        },
+        {
+          "step": 0.002,
+          "full_operator_error": 2.344041948526463e-06,
+          "q_from_density_error": 8.33333333449815e-07,
+          "nonzero_error_without_q": 2.4999976628794025
+        },
+        {
+          "step": 0.001,
+          "full_operator_error": 5.850931699469583e-07,
+          "q_from_density_error": 2.083333723312819e-07,
+          "nonzero_error_without_q": 2.49999941663989
+        }
+      ],
+      "local_test_functions_only": true
+    },
+    "local_record_double_commutator": {
+      "expected_local_acceleration": 0.0896388397486291,
+      "rows": [
+        {
+          "step": 0.004,
+          "actual_double_commutator": 0.08963753264643443,
+          "imaginary_error": 0.0,
+          "error": 1.3071021946753358e-06
+        },
+        {
+          "step": 0.002,
+          "actual_double_commutator": 0.08963851293589452,
+          "imaginary_error": 0.0,
+          "error": 3.2681273458290416e-07
+        },
+        {
+          "step": 0.001,
+          "actual_double_commutator": 0.08963875785949593,
+          "imaginary_error": 0.0,
+          "error": 8.188913316886648e-08
+        }
+      ],
+      "observable": "b=sin(s); (D_correct^2-D_bare^2)b",
+      "not_a_full_wavepacket_or_time_evolution_simulation": true
+    },
+    "compact_Gauss_source": {
+      "rows": [
+        {
+          "nodes": 48,
+          "normalizer_without_common_S3_area": 3.783288146057407e-05,
+          "norm_curved": 0.9999999999999998,
+          "kinetic_bare": 857.9466844458557,
+          "kinetic_curved": 860.3731871170182,
+          "q_mean": 2.4265026680036463,
+          "quadratic_form_identity_error": 3.158906025646502e-09,
+          "mean_acceleration": 0.08682785726117023,
+          "probability_t_squared_coefficient": 0.010853482157646279,
+          "initial_probability": 0.5972287740575577,
+          "potential_mean": 0.0011710039658543283
+        },
+        {
+          "nodes": 80,
+          "normalizer_without_common_S3_area": 3.7832881460963674e-05,
+          "norm_curved": 0.9999999999999998,
+          "kinetic_bare": 857.9466782959793,
+          "kinetic_curved": 860.373180963983,
+          "q_mean": 2.4265026680035877,
+          "quadratic_form_identity_error": 1.758593271006248e-13,
+          "mean_acceleration": 0.08682785726115128,
+          "probability_t_squared_coefficient": 0.01085348215764391,
+          "initial_probability": 0.5972287740575536,
+          "potential_mean": 0.0011710039658533581
+        },
+        {
+          "nodes": 128,
+          "normalizer_without_common_S3_area": 3.783288146096318e-05,
+          "norm_curved": 1.0,
+          "kinetic_bare": 857.9466782989543,
+          "kinetic_curved": 860.373180966958,
+          "q_mean": 2.426502668003588,
+          "quadratic_form_identity_error": 6.17284001691587e-14,
+          "mean_acceleration": 0.08682785726115129,
+          "probability_t_squared_coefficient": 0.010853482157643911,
+          "initial_probability": 0.5972287740575537,
+          "potential_mean": 0.0011710039658533581
+        }
+      ],
+      "support": {
+        "h": [
+          0.42000000000000004,
+          0.62
+        ],
+        "s": [
+          0.25,
+          0.55
+        ],
+        "F_lower": 1.8855166666666667
+      },
+      "analytic_acceleration_lower": 0.04834399093733822,
+      "probability_coefficient_lower": 0.006042998867167277,
+      "gauge_invariant_source_error": 2.7755575615628914e-16,
+      "original_577_effect": "E=1/2+sin(s)/4; probability difference coefficient is <A>/8",
+      "finite_time_result_is_analytic_not_a_propagation_simulation": true
+    },
+    "geometric_response": {
+      "epsilon": 0.8,
+      "spatial_conformal_factor": 1.13,
+      "node_volume": 1.0659592973358076,
+      "energy_curved": 197.74935163051168,
+      "energy_correct_flat": 197.74935163051165,
+      "energy_bare_flat": 197.19164445055958,
+      "exact_missing_q_energy": 0.5577071799521035,
+      "exact_missing_q_background_response": -2.9612770616925848,
+      "exact_correct_background_response": -1049.983301656898,
+      "rows": [
+        {
+          "step": 0.004,
+          "curved_response": -1050.1061045266056,
+          "correct_flat_response": -1050.1061045266056,
+          "bare_flat_response": -1047.1444811243132,
+          "response_dictionary_error": 0.0,
+          "missing_q_response": -2.961623402292389,
+          "missing_q_response_error": 0.00034634059980431786,
+          "correct_response_error": 0.12280286970758425
+        },
+        {
+          "step": 0.002,
+          "curved_response": -1050.0140010760006,
+          "correct_flat_response": -1050.0140010759935,
+          "bare_flat_response": -1047.052637432813,
+          "response_dictionary_error": 7.048583938740194e-12,
+          "missing_q_response": -2.9613636431874966,
+          "missing_q_response_error": 8.658149491180822e-05,
+          "correct_response_error": 0.03069941910257512
+        },
+        {
+          "step": 0.001,
+          "curved_response": -1049.990976430422,
+          "correct_flat_response": -1049.990976430422,
+          "bare_flat_response": -1047.0296777235858,
+          "response_dictionary_error": 0.0,
+          "missing_q_response": -2.96129870683626,
+          "missing_q_response_error": 2.164514367519743e-05,
+          "correct_response_error": 0.0076747735240587645
+        }
+      ],
+      "fixed_corresponding_state_partial_derivative": true,
+      "node_kinetic_and_original_onsite_potential_diagnostic_not_complete_graph_stress": true
+    }
+  },
+  "dependency_hashes": {
+    "joint_curved_quantum_source.py": "cf6aec9461174f41985b706c1bae776787b198ab77d9e42dfe8057764795775c",
+    "research_note_574.md": "23d72d666f593f845577712e761ab00dec1d10a56955b7da5fbb22a5ca68ef19",
+    "research_note_577.md": "c4a8abb53b794856fd1abc86a8fc084e8d950e2231a080a6ffd26944eb583d7e",
+    "research_note_578.md": "14d90954a269b357a0e8b40f7eed2e03ea778c6ef28dd4eb25803e4f5cd8a402",
+    "research_note_583.md": "4d17aa9406971cf89cbdc6bf2bc89cf79e9719fa4a4ba2301711d71b7da636c5",
+    "research_round_583_checks.json": "4934b2ea366e1f9ffc03f52a9d81a49f52c74183eb23ba1dc5f6a3a4e40bbc1a",
+    "round584_drafts/half_density_entry_probe.py": "c7f3cbb0084012848d468cfc8134055c654708d46bb005991efb816c54fef502",
+    "round584_drafts/half_density_entry_results.json": "7c4692ba3d09be29a0978b58ce4d8b8d22a8bfc03640b32b8baf213368e84197"
+  },
+  "scope": "same fixed finite graph and original Laplace-Beltrami matter; unitary coordinate-measure dictionary with inherited closed domain, Gauss and source/effect mapping; bounded omitted-q competitor has a same-source short-time record difference and changed background-weight response; not a full Jordan-gravity measure, continuum quantum stress, dynamical geometry or dimensional selection"
+}

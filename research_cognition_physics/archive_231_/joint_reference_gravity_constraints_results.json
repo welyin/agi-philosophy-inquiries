@@ -1,0 +1,275 @@
+{
+  "round": 549,
+  "tests_run": 8,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "exact_same_scale_coefficients_include_all_generations_and_vacuum_constant",
+    "positive_mixed_target_metric_and_independent_derivative_differences",
+    "covariant_momentum_solves_constraint_naive_zero_s_velocity_does_not",
+    "exact_full_rank_certificate_with_arbitrary_front_columns",
+    "complete_sigma_equation_jets_and_Ricci_definition_match_initial_constraints",
+    "independent_reference_menu_differences_and_Jordan_frame_factor",
+    "vacuum_constant_changes_curvature_and_acceleration_not_rank",
+    "zero_reference_amplitude_and_nonpositive_F_are_outside_positive_conclusion"
+  ],
+  "bare_parameters": {
+    "r": "7/3",
+    "q": "1/4",
+    "S": "3/28",
+    "T": "1",
+    "C0": "1/4",
+    "ng": "3",
+    "n": "128",
+    "M02": "4/3",
+    "a": "1/4",
+    "b": "1/4",
+    "lh": "3/14",
+    "p": "3/28",
+    "ls": "3/7",
+    "V0": "1",
+    "cutoff_squared": "1/8"
+  },
+  "exact_stationary_values": {
+    "h_squared": "1",
+    "s_squared": "1/3",
+    "F": "10/9",
+    "V": "11/12",
+    "U": "297/400"
+  },
+  "exact_determinant_certificates": [
+    {
+      "epsilon": "1/4",
+      "mixed_ratio": "-2/7",
+      "determinant": "-1/1024"
+    },
+    {
+      "epsilon": "1/8",
+      "mixed_ratio": "5/2",
+      "determinant": "-1/65536"
+    },
+    {
+      "epsilon": "1/3",
+      "mixed_ratio": "0",
+      "determinant": "-4/729"
+    }
+  ],
+  "mixed_target_metric": [
+    [
+      1.035,
+      0.07794228634059946
+    ],
+    [
+      0.07794228634059946,
+      0.9449999999999998
+    ]
+  ],
+  "metric_derivative_error": 9.971024006460993e-11,
+  "inverse_metric_derivative_error": 2.0169588221818913e-11,
+  "momentum_residual": 5.590714431945022e-19,
+  "naive_momentum_jx": -0.0048713928962874666,
+  "Hamiltonian_algebra_error": 2.220446049250313e-16,
+  "wave_equation_residual": 0.0,
+  "determinant_relative_error": 1.4432899320127035e-15,
+  "Ricci_definition_error": 0.0,
+  "menu_difference_error": 4.413386323065538e-12,
+  "Jordan_menu_difference_error": 1.0321965504545005e-11,
+  "retained_constant_curvature_shift": 0.6479999999999995,
+  "coupled_origin_examples": [
+    {
+      "fields": [
+        1.0,
+        0.5773502691896257
+      ],
+      "epsilon": 0.5,
+      "F": 1.1111111111111112,
+      "V": 0.9166666666666667,
+      "U": 0.7424999999999999,
+      "s_velocity": -0.04123930494211612,
+      "field_accelerations": [
+        -0.48392857142857143,
+        -0.18896438657405357
+      ],
+      "determinant_E": -0.06249999999999998,
+      "determinant_J": -0.07716049382716048,
+      "psi_zz": -0.2472991071428571,
+      "initial_spatial_scalar_curvature": 1.9783928571428568
+    },
+    {
+      "fields": [
+        1.0,
+        0.5773502691896257
+      ],
+      "epsilon": 0.25,
+      "F": 1.1111111111111112,
+      "V": 0.9166666666666667,
+      "U": 0.7424999999999999,
+      "s_velocity": -0.02061965247105806,
+      "field_accelerations": [
+        -0.4303571428571429,
+        -0.2258588361740539
+      ],
+      "determinant_E": -0.0009765624999999991,
+      "determinant_J": -0.0012056327160493829,
+      "psi_zz": -0.20104352678571427,
+      "initial_spatial_scalar_curvature": 1.6083482142857142
+    },
+    {
+      "fields": [
+        1.0,
+        0.5773502691896257
+      ],
+      "epsilon": 0.125,
+      "F": 1.1111111111111112,
+      "V": 0.9166666666666667,
+      "U": 0.7424999999999999,
+      "s_velocity": -0.01030982623552903,
+      "field_accelerations": [
+        -0.41696428571428573,
+        -0.23508244857405397
+      ],
+      "determinant_E": -1.5258789062499978e-05,
+      "determinant_J": -1.8838011188271597e-05,
+      "psi_zz": -0.18947963169642856,
+      "initial_spatial_scalar_curvature": 1.5158370535714285
+    },
+    {
+      "fields": [
+        0.7,
+        0.4
+      ],
+      "epsilon": 0.5,
+      "F": 1.2249999999999999,
+      "V": 0.9385553571428571,
+      "U": 0.6254429701909919,
+      "s_velocity": -0.018641810918774968,
+      "field_accelerations": [
+        -0.2476504456642844,
+        -0.08558505777139472
+      ],
+      "determinant_E": -0.0625,
+      "determinant_J": -0.09378906249999999,
+      "psi_zz": -0.20960092228495986,
+      "initial_spatial_scalar_curvature": 1.6768073782796789
+    },
+    {
+      "fields": [
+        0.7,
+        0.4
+      ],
+      "epsilon": 0.25,
+      "F": 1.2249999999999999,
+      "V": 0.9385553571428571,
+      "U": 0.6254429701909919,
+      "s_velocity": -0.009320905459387484,
+      "field_accelerations": [
+        -0.21269705019158133,
+        -0.10729641021544344
+      ],
+      "determinant_E": -0.0009765625000000009,
+      "determinant_J": -0.0014654541015624997,
+      "psi_zz": -0.16967078748205094,
+      "initial_spatial_scalar_curvature": 1.3573662998564076
+    },
+    {
+      "fields": [
+        0.7,
+        0.4
+      ],
+      "epsilon": 0.125,
+      "F": 1.2249999999999999,
+      "V": 0.9385553571428571,
+      "U": 0.6254429701909919,
+      "s_velocity": -0.004660452729693742,
+      "field_accelerations": [
+        -0.20395870132340557,
+        -0.11272424832645561
+      ],
+      "determinant_E": -1.5258789062500007e-05,
+      "determinant_J": -2.2897720336914067e-05,
+      "psi_zz": -0.15968825378132373,
+      "initial_spatial_scalar_curvature": 1.2775060302505898
+    },
+    {
+      "fields": [
+        1.2,
+        -0.2
+      ],
+      "epsilon": 0.5,
+      "F": 1.0866666666666667,
+      "V": 0.929342857142857,
+      "U": 0.7870154799094541,
+      "s_velocity": 0.018292682926829267,
+      "field_accelerations": [
+        -0.6619498300592118,
+        0.05036762501557596
+      ],
+      "determinant_E": -0.06249999999999998,
+      "determinant_J": -0.07380277777777779,
+      "psi_zz": -0.2607582938015709,
+      "initial_spatial_scalar_curvature": 2.086066350412567
+    },
+    {
+      "fields": [
+        1.2,
+        -0.2
+      ],
+      "epsilon": 0.25,
+      "F": 1.0866666666666667,
+      "V": 0.929342857142857,
+      "U": 0.7870154799094541,
+      "s_velocity": 0.009146341463414634,
+      "field_accelerations": [
+        -0.5933522690836021,
+        0.06438035936519987
+      ],
+      "determinant_E": -0.0009765625000000009,
+      "determinant_J": -0.0011531684027777783,
+      "psi_zz": -0.21275497593341536,
+      "initial_spatial_scalar_curvature": 1.7020398074673229
+    },
+    {
+      "fields": [
+        1.2,
+        -0.2
+      ],
+      "epsilon": 0.125,
+      "F": 1.0866666666666667,
+      "V": 0.929342857142857,
+      "U": 0.7870154799094541,
+      "s_velocity": 0.004573170731707317,
+      "field_accelerations": [
+        -0.5762028788396997,
+        0.06788354295260585
+      ],
+      "determinant_E": -1.5258789062499978e-05,
+      "determinant_J": -1.8018256293402793e-05,
+      "psi_zz": -0.2007541464663765,
+      "initial_spatial_scalar_curvature": 1.606033171731012
+    }
+  ],
+  "dependency_hashes": {
+    "research_note_533.md": "cfc98f3792ffc7b13cc6a869d2c212ac3c267f5c2dbde69c324e90c0377ce6f3",
+    "research_note_536.md": "c062cb37b855a7b27517bfbbbfbf25aa52ea5c460a8bbeccc8f0a18e3996fe49",
+    "research_note_543.md": "9a93e3035d6e890237e3ef7fcc837d6991eb2aea234a5e1577c22f076459dcd1",
+    "research_note_548.md": "b7eee7f8080b9892422d5444480603cc088b8b1a1393d37f3e0a98994543eaa2",
+    "research_round_548_checks.json": "7d2ceef185364e58539dc1924f031b5800e9c0b30e8f5717c0578e90fe56e865",
+    "joint_condition_compression_table.md": "82b3ac145f0605fa2e3b8b40096f0f44253ae6eb824fc0af8ba3d8f567ba7a28"
+  },
+  "scope": {
+    "local_analytic_constraint_solution_proved_in_note": true,
+    "local_coupled_development_uses_harmonic_reduction": true,
+    "numerics_validate_jets_not_full_PDE": true,
+    "same_nonminimal_Higgs_and_explicit_singlet": true,
+    "declared_two_derivative_classical_branch": true,
+    "full_spectral_action_solution": false,
+    "controlled_spectral_derivative_expansion": false,
+    "constant_potential_retained": true,
+    "prescribed_four_dimensions_and_action": true,
+    "no_extra_four_reference_fields": true,
+    "global_extension_or_finite_total_energy_proved": false,
+    "actual_quantum_instrument": false,
+    "unique_dimension_selected": false,
+    "completed_unification": false
+  }
+}

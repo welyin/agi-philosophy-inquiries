@@ -1,0 +1,146 @@
+{
+  "round": 573,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "coefficient_bounds_check",
+    "source_structure_check",
+    "monotonic_geometry_check",
+    "reference_minor_check",
+    "determinant_algebra_check",
+    "chart_boundary_and_frame_check"
+  ],
+  "evidence": {
+    "coefficient_bounds_check": {
+      "hstar": 0.6654429655855137,
+      "sstar": 0.545863690226873,
+      "gw_squared": 0.4203713621215515,
+      "gY_squared": 0.12872079691707322,
+      "rational_bounds": {
+        "F_lower": {
+          "exact": "8932159/4800000",
+          "decimal": 1.8608664583333334
+        },
+        "A_upper": {
+          "exact": "3255073381812701117050741083401/2707053222656250000000000000000",
+          "decimal": 1.2024415902021741
+        },
+        "B_upper": {
+          "exact": "1703985347530209824493/19945866100320250000000",
+          "decimal": 0.08543050168690597
+        },
+        "Y_upper": {
+          "exact": "66215702796976365071027/37500000000000000000000",
+          "decimal": 1.7657520745860364
+        },
+        "momentum_Wiener_bound": {
+          "exact": "10940841777/62500000000",
+          "decimal": 0.175053468432
+        },
+        "shear_bound": {
+          "exact": "864326500383/1562500000000",
+          "decimal": 0.55316896024512
+        },
+        "supersolution_reaction_lower": {
+          "exact": "433385/34992",
+          "decimal": 12.385259487882944
+        },
+        "R_lower": {
+          "exact": "2309958/15125",
+          "decimal": 152.72449586776858
+        },
+        "psi_eighth_upper": {
+          "exact": "6561/256",
+          "decimal": 25.62890625
+        }
+      }
+    },
+    "source_structure_check": {
+      "radial_formula_error": 2.498001805406602e-16,
+      "z_structure_error": 2.220446049250313e-16,
+      "Mz_max": 2.6020852139652106e-18,
+      "b_min": 0.0007614152492890782,
+      "y_min": 0.002028634404818034
+    },
+    "monotonic_geometry_check": {
+      "rows": [
+        {
+          "N": 16,
+          "symmetry_error": 2.220446049250313e-16,
+          "interior_max_dpsi_z": -8.074893813051898e-05,
+          "psi_max": 1.0184153044735698,
+          "weighted_zero_order_min": 9.80592671747417
+        },
+        {
+          "N": 24,
+          "symmetry_error": 2.220446049250313e-16,
+          "interior_max_dpsi_z": -5.709734800017921e-05,
+          "psi_max": 1.0184153111409697,
+          "weighted_zero_order_min": 9.653707024139054
+        }
+      ],
+      "strict_continuum_sign_from_maximum_principle_not_sampling": true
+    },
+    "reference_minor_check": {
+      "point": [
+        0.0,
+        1.5707963267948966,
+        0.7853981633974483
+      ],
+      "rows": [
+        {
+          "N": 16,
+          "psi": 1.0182691452046488,
+          "dpsi_z": -0.00029235919406273123,
+          "normal_h": 0.007779150434361499,
+          "clock_norm": -6.05151814804267e-05,
+          "exact_formula_on_collocation": 2.0915335819925797e-10,
+          "independent_spatial_minor": 2.0960549843528055e-10,
+          "relative_derivative_discrepancy": 0.0021617641711103993,
+          "R": 197.76544032684785
+        },
+        {
+          "N": 24,
+          "psi": 1.0182691518829705,
+          "dpsi_z": -0.00029235917220079275,
+          "normal_h": 0.0077791501282439965,
+          "clock_norm": -6.051517671775859e-05,
+          "exact_formula_on_collocation": 2.0915329997102775e-10,
+          "independent_spatial_minor": 2.091540892923294e-10,
+          "relative_derivative_discrepancy": 3.7738888258276833e-06,
+          "R": 197.76544032684785
+        },
+        {
+          "N": 32,
+          "psi": 1.0182691518828233,
+          "dpsi_z": -0.0002923591721983039,
+          "normal_h": 0.0077791501282507445,
+          "clock_norm": -6.0515176717863574e-05,
+          "exact_formula_on_collocation": 2.0915329997018607e-10,
+          "independent_spatial_minor": 2.0915329283561647e-10,
+          "relative_derivative_discrepancy": 3.411167600573389e-08,
+          "R": 197.76544032684785
+        }
+      ],
+      "last_two_time_derivatives_cancel_exactly": true
+    },
+    "determinant_algebra_check": {
+      "exact_determinant": "23/392",
+      "arbitrary_last_time_entries": 3
+    },
+    "chart_boundary_and_frame_check": {
+      "wall_dpsi_max": 2.5639514421735405e-15,
+      "mirror_menu_error": 0.0,
+      "Jordan_menu_determinant_factor": 3.493055104102888,
+      "same_menu_not_a_global_chart": true
+    }
+  },
+  "dependency_hashes": {
+    "joint_gauss_einstein_initial_data.py": "8c600a6f4d6cdee75aa2240c8ad650402c69ab791aaed4380770c8ab119c6cb5",
+    "joint_gauss_einstein_initial_data_results.json": "b5193aa2aaf18cf0cff51985c71756d168066916fe36fe6a8b3e2b338d076228",
+    "joint_gauss_continuum_sampling.py": "962ad261027a69689127ba6473fcc9dac2931a005c5d630ce8de1b373feca6d3",
+    "research_round_572_checks.json": "d5c35a4f3078e792b06b4206c55ff80e47a16f792f80f2daeee24f8f3a535311"
+  },
+  "scope": "same changed source and prescribed Einstein-Yang-Mills-sigma model; analytic local material chart, no added source or field; not global chart, actual apparatus, dimension or GR generation"
+}

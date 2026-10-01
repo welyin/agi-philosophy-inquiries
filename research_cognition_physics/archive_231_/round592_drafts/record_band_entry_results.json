@@ -1,0 +1,123 @@
+{
+  "status": "592 entry, not yet a completed numbered round",
+  "checks_passed": true,
+  "evidence": {
+    "commutator_check": {
+      "constants": {
+        "A1": 0.0625,
+        "A2": 0.28125,
+        "laplacian_s_bound": 1.1547005383792515,
+        "laplacian_L_square_bound": 2.4166666666666665,
+        "commutator_energy_coefficient": 0.30624999999999997,
+        "commutator_norm_coefficient": 0.4533138020833331,
+        "single_read_energy_gain_bound": 0.038281249999999996
+      },
+      "original_five_coordinate_commutator_errors": [
+        9.487398112784867e-06,
+        2.3719319421753034e-06,
+        5.929847852288145e-07
+      ],
+      "pointwise_commutator_square": 0.009744341976217945,
+      "pointwise_certified_upper": 0.38124985470061146,
+      "original_potential_included_and_cancels": true,
+      "full_other_graph_terms_commute_analytically": true
+    },
+    "source_tail_check": {
+      "original_compact_Gauss_phase_family": true,
+      "rows": [
+        {
+          "n": 10,
+          "phase_mixture_weight": 0.004,
+          "trace_distance_upper": 0.0019231174745611356,
+          "unchanged_energy_increment": 0.2328019312927815,
+          "unchanged_conformal_source_increment": -1.3968115877566893
+        },
+        {
+          "n": 30,
+          "phase_mixture_weight": 0.00044444444444444447,
+          "trace_distance_upper": 0.00043121437419369146,
+          "unchanged_energy_increment": 0.2328019312927815,
+          "unchanged_conformal_source_increment": -1.3968115877566893
+        },
+        {
+          "n": 100,
+          "phase_mixture_weight": 4e-05,
+          "trace_distance_upper": 3.99996043197219e-05,
+          "unchanged_energy_increment": 0.2328019312927815,
+          "unchanged_conformal_source_increment": -1.3968115877566893
+        },
+        {
+          "n": 300,
+          "phase_mixture_weight": 4.444444444444445e-06,
+          "trace_distance_upper": 4.444444433978981e-06,
+          "unchanged_energy_increment": 0.2328019312927815,
+          "unchanged_conformal_source_increment": -1.3968115877566893
+        }
+      ],
+      "trace_bound_uses_convexity_and_pure_state_overlap": true,
+      "arbitrary_future_fixed_channel_cannot_increase_trace_distance": true,
+      "finite_mean_energy_does_not_control_source_continuity": true
+    },
+    "budget_check": {
+      "input_budgets_are_assumptions": true,
+      "no_nonempty_budget_claim": true,
+      "finite_history_moment_rows": [
+        {
+          "reads": 0,
+          "mean_energy_bound": 1000.0,
+          "second_moment_bound": 2000000.0
+        },
+        {
+          "reads": 1,
+          "mean_energy_bound": 1000.03828125,
+          "second_moment_bound": 4000613.4066276043
+        },
+        {
+          "reads": 2,
+          "mean_energy_bound": 1000.0765624999999,
+          "second_moment_bound": 8001840.243330078
+        },
+        {
+          "reads": 3,
+          "mean_energy_bound": 1000.1148437499999,
+          "second_moment_bound": 16004293.940182291
+        },
+        {
+          "reads": 4,
+          "mean_energy_bound": 1000.1531249999998,
+          "second_moment_bound": 32009201.357333984
+        }
+      ],
+      "conservative_approximation_bounds": [
+        {
+          "spectral_regulator": 1000000.0,
+          "source_regulator": 9999.999999999995,
+          "full_history_trace_distance_bound": 0.015932331491123518,
+          "mean_conformal_source_difference_bound": 83264.8859568618
+        },
+        {
+          "spectral_regulator": 10000000.0,
+          "source_regulator": 46415.88833612776,
+          "full_history_trace_distance_bound": 0.0015904424314097157,
+          "mean_conformal_source_difference_bound": 29093.163950612947
+        },
+        {
+          "spectral_regulator": 100000000.0,
+          "source_regulator": 215443.46900318822,
+          "full_history_trace_distance_bound": 0.0001590163359639452,
+          "mean_conformal_source_difference_bound": 11445.55679997144
+        }
+      ],
+      "source_bounds_not_optimized": true,
+      "actual_spectral_truncation_not_computed": true
+    }
+  },
+  "dependency_hashes": {
+    "research_note_555.md": "a82b4a3ef733ad8a19c780d084336eb535ba90d00d4cc9c2779c7cc61b6cf8f7",
+    "research_note_590.md": "fe7192aa49d28accd53481278845c2dd783095373d060d3bfc88999f374420e8",
+    "research_note_591.md": "5cf5a7698f191bb9f76a1ead396dd585784fe9e518aa88e96565905781655518",
+    "joint_geometry_work_noise.py": "d4fbcdc46fb208b4cc63d02e34e7aac9ffab4304c6bdcc4dd98ba7ce805afff6",
+    "joint_full_spatial_metric.py": "b9bbe239b920ccef4efa37110b53f0d8acd87f4053fe5444fadc5ffc05103720"
+  },
+  "scope": "Original static finite graph and primitive binary read. Analytic finite-band obstruction and moment propagation; numerical local diagnostics only. No Einstein dynamics, autonomous reset, moving geometry, or fixed-hbar continuum."
+}

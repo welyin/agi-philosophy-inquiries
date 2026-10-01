@@ -1,0 +1,148 @@
+{
+  "round": 581,
+  "tests_run": 5,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "metric_factorization",
+    "scalar_chain",
+    "RS_block",
+    "actual_joint_redefinition",
+    "length_pullback"
+  ],
+  "evidence": {
+    "metric_factorization": [
+      {
+        "case": 0,
+        "full": 0.29293018998266923,
+        "reduced": 0.4295188731976752,
+        "E_contraction": -0.13658868321500592,
+        "metric_euler_contraction": -0.13658868321500595,
+        "residual": -2.7755575615628914e-17,
+        "leading_metric_equation": false
+      },
+      {
+        "case": 1,
+        "full": 0.3208508968925672,
+        "reduced": 0.2536163832645677,
+        "E_contraction": 0.06723451362799945,
+        "metric_euler_contraction": 0.06723451362799947,
+        "residual": 2.7755575615628914e-17,
+        "leading_metric_equation": false
+      },
+      {
+        "case": 2,
+        "full": 0.3933445363474203,
+        "reduced": 0.5765600672586695,
+        "E_contraction": -0.1832155309112493,
+        "metric_euler_contraction": -0.18321553091124934,
+        "residual": 1.1102230246251565e-16,
+        "leading_metric_equation": false
+      },
+      {
+        "case": 3,
+        "full": 0.46700204502361464,
+        "reduced": 0.46700204502361464,
+        "E_contraction": 0.0,
+        "metric_euler_contraction": 0.0,
+        "residual": 0.0,
+        "leading_metric_equation": true
+      }
+    ],
+    "scalar_chain": {
+      "original_U_negative_Hessian_gradient_integral": -0.003530469763629609,
+      "integration_by_parts": -0.003530469788257024,
+      "full_target_Ephi_identity": -0.0035304697412708442,
+      "error": 2.2358764579372137e-11,
+      "geodesic_profile_not_an_on_shell_solution": true
+    },
+    "RS_block": {
+      "old_RS_coefficient": -0.1111111111111111,
+      "inverse_metric_shift_coefficient": 0.2222222222222222,
+      "shifted_S_squared_coefficient": -0.07407407407407407,
+      "shifted_U_S_coefficient": -0.4444444444444444,
+      "max_polynomial_error": 2.220446049250313e-16,
+      "exact_variable_change_and_second_order_remainder_not_yet_tested": true
+    },
+    "actual_joint_redefinition": {
+      "initial_action": 0.0619495956565496,
+      "first_action_variation": -0.009183711592967695,
+      "rows": [
+        {
+          "parameter": 0.04,
+          "action": 0.06152619693922297,
+          "linear_prediction": 0.0615822471928309,
+          "action_remainder": -5.605025360792625e-05,
+          "action_remainder_over_parameter_squared": -0.035031408504953905
+        },
+        {
+          "parameter": 0.02,
+          "action": 0.061751772621476735,
+          "linear_prediction": 0.06176592142469025,
+          "action_remainder": -1.414880321351408e-05,
+          "action_remainder_over_parameter_squared": -0.03537200803378519
+        },
+        {
+          "parameter": 0.01,
+          "action": 0.06185420412128696,
+          "linear_prediction": 0.06185775854061992,
+          "action_remainder": -3.5544193329630473e-06,
+          "action_remainder_over_parameter_squared": -0.03554419332963047
+        },
+        {
+          "parameter": 0.005,
+          "action": 0.0619027863295121,
+          "linear_prediction": 0.06190367709858476,
+          "action_remainder": -8.907690726645952e-07,
+          "action_remainder_over_parameter_squared": -0.035630762906583804
+        }
+      ],
+      "successive_action_remainder_ratios": [
+        3.9614837214210774,
+        3.980622962040696,
+        3.990281479273368
+      ],
+      "potential_gradient_error": 1.0794379279310817e-11
+    },
+    "length_pullback": {
+      "untransformed_length": 6.283185307179586,
+      "rows": [
+        {
+          "parameter": 0.04,
+          "pulled_back_length": 6.264795860382335,
+          "length_linear_coefficient": -0.46251516063215237,
+          "length_remainder": 0.00011115962803446428
+        },
+        {
+          "parameter": 0.02,
+          "pulled_back_length": 6.273962899693906,
+          "length_linear_coefficient": -0.46251516063215237,
+          "length_remainder": 2.7895726962896134e-05
+        },
+        {
+          "parameter": 0.01,
+          "pulled_back_length": 6.278567142816784,
+          "length_linear_coefficient": -0.46251516063215237,
+          "length_remainder": 6.987243519255074e-06
+        },
+        {
+          "parameter": 0.005,
+          "pulled_back_length": 6.280874479856587,
+          "length_linear_coefficient": -0.46251516063215237,
+          "length_remainder": 1.748480161730022e-06
+        }
+      ]
+    }
+  },
+  "dependency_hashes": {
+    "joint_curved_quantum_source.py": "cf6aec9461174f41985b706c1bae776787b198ab77d9e42dfe8057764795775c",
+    "joint_scalar_effective_geometry.py": "ab4a38632bbc3e0212141284277cc6fe37a68c3ef7622e824794fffb0f82a07a",
+    "research_note_580.md": "6682439ad2ed97c2cb16c34fdfde08b8741f6f9e9a268e8115f2f6fc69fef920",
+    "research_round_580_checks.json": "4bcb6ea44a3eb4c603f0428989782201f9d6b4e8cdd9e2b59a8e1de61b4cb910",
+    "round581_drafts/operator_reduction_entry_probe.py": "0ad1e2199f991c9097c62cb26f1ead32d85057aa623f82ec2884217223b528c0",
+    "round581_drafts/operator_reduction_entry_results.json": "4ecaeae7453faabce52cbb18388e4f5232a4b02b09ce5a9b1a35d992b81d0611",
+    "round581_drafts/field_redefinition_probe.py": "01e4e6dafdd13a682afc26835c0453ff8fcbddc08a3cc88bef08fdbf2a5f8ce3",
+    "round581_drafts/field_redefinition_results.json": "e145c15a331bef7affd76891c13114d8ca4975e54163a63edfabcc322a6f9c26"
+  },
+  "scope": "same original K and U, four-dimensional Euclidean Einstein-scalar leading action at kappa=1, scalar-loop local coefficient with zero gauge curvature; explicit first-order metric and scalar redefinition plus total derivative; controlled on bounded smooth profiles and finite perturbative coefficients, not a complete independent operator basis, full quantum-frame equivalence, full nonzero-gauge matter source or graph continuum"
+}

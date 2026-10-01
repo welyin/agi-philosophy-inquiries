@@ -1,0 +1,85 @@
+{
+  "round": 594,
+  "tests_run": 4,
+  "failures": 0,
+  "errors": 0,
+  "evidence": {
+    "rotation_derivative_identity": [
+      1.924231153144218e-05,
+      4.810963747992059e-06,
+      1.2027655633128909e-06
+    ],
+    "original_joint_packet_energy": [
+      {
+        "nodes": 32,
+        "original_node_kinetic_before": 214.07731615830403,
+        "ideal_pointer_rotated_node_kinetic": 214.10332817380862,
+        "ideal_source_energy_increment": 0.02601201550459109,
+        "original_instrument_energy_increment": 0.02601201550455948,
+        "initial_total_variance_kappa_squared_coefficient": 0.47276833668324436
+      },
+      {
+        "nodes": 48,
+        "original_node_kinetic_before": 214.0764682599646,
+        "ideal_pointer_rotated_node_kinetic": 214.10248027546896,
+        "ideal_source_energy_increment": 0.026012015504363717,
+        "original_instrument_energy_increment": 0.02601201550438082,
+        "initial_total_variance_kappa_squared_coefficient": 0.47276833668252527
+      },
+      {
+        "nodes": 64,
+        "original_node_kinetic_before": 214.0764667400939,
+        "ideal_pointer_rotated_node_kinetic": 214.1024787555983,
+        "ideal_source_energy_increment": 0.02601201550439214,
+        "original_instrument_energy_increment": 0.026012015504382598,
+        "initial_total_variance_kappa_squared_coefficient": 0.47276833668253293
+      }
+    ],
+    "graph_norm_budget": {
+      "angle_derivative_bound": 0.25,
+      "angle_second_derivative_bound": 0.2886751345948129,
+      "commutator_sqrt_energy_coefficient": 0.560878850893707,
+      "rotation_commutator_constant": 0.6235236225262465,
+      "assumed_input_E": 1000.0,
+      "assumed_input_H2": 2000000.0,
+      "duhamel_error_prefactor": 1432.573632598042,
+      "actual_H0_graph_norm_uniform_bound": 1872.9632172832544,
+      "input_budget_nonemptiness_not_numerically_certified": true
+    },
+    "terminal_copy_and_stability": {
+      "rows": [
+        {
+          "kappa": 0.4,
+          "pointer_copy_energy_change": -0.16499473271508086,
+          "analytic_copy_energy_change": -0.16499473271508078
+        },
+        {
+          "kappa": 3.0,
+          "pointer_copy_energy_change": -1.2374604953631057,
+          "analytic_copy_energy_change": -1.2374604953631057
+        },
+        {
+          "kappa": 20.0,
+          "pointer_copy_energy_change": -8.24973663575404,
+          "analytic_copy_energy_change": -8.24973663575404
+        }
+      ],
+      "mean_A": 0.6874780529795033,
+      "original_packet_A2": 0.47276833668252527,
+      "record_commutator_identity_error": 0.0,
+      "copying_erases_pointer_sigma_y_in_old_marginal": true,
+      "test_pointer_state_is_algebraic_not_actual_propagated_output": true,
+      "zero_memory_bare_energy_does_not_cancel_interaction_cost": true
+    }
+  },
+  "dependency_hashes": {
+    "research_note_593.md": "2d3a1986243a07a31e69abe495d3a3044234718f1648a7313c0ebaf7134bf91b",
+    "joint_record_constraint_balance.py": "b8419e8ee5b722b8b2b2705e60ae2f582184649f2f7b1c60964d09d6bbadeb7a",
+    "joint_geometry_work_noise.py": "d4fbcdc46fb208b4cc63d02e34e7aac9ffab4304c6bdcc4dd98ba7ce805afff6",
+    "round594_drafts/premeasurement_energy_entry.md": "1571fd5791c1e67e6db8dc4872f15afb990a6d1c72722f227c42f8937ea2c8b8",
+    "round594_drafts/premeasurement_energy_entry.py": "8664b8c3ce3bff9f178b26893c6934d272175d8a59a9f461a87d2e5fdad2719a",
+    "round594_drafts/premeasurement_energy_entry_results.json": "f4d05ceb977ea2901cd1e3a6ab4e993ddfbf1c041381b4bcafc9ff3a6c18dc25",
+    "round594_drafts/premeasurement_energy_entry_checks.json": "af313e9bf89f9e71f5c57b61c41ced48b97bdeaa5f702a9a71f2fa8ba0a13d28"
+  },
+  "scope": "Original joint H0 with a declared neutral zero-bare-energy pointer and bounded time-independent coupling. Controlled premeasurement, uniform output H0-square budget, and interaction-coherence energy balance. Terminal copy and persistent record are not autonomous implementations. No full-H numerical propagation, GR constraints, continuum, or new matter species derived."
+}

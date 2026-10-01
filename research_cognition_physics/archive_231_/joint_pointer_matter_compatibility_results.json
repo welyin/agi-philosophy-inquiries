@@ -1,0 +1,220 @@
+{
+  "round": 576,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "vacuum_spectrum_check",
+    "cubic_amplitude_check",
+    "coordinate_invariance_check",
+    "decay_width_check",
+    "zero_flow_check",
+    "massive_completion_check"
+  ],
+  "evidence": {
+    "vacuum_spectrum_check": {
+      "vacuum": [
+        0.6654429655855137,
+        0.545863690226873
+      ],
+      "F": 1.8765364152074429,
+      "radial_metric": [
+        [
+          0.5538549847573943,
+          0.017192134568199045
+        ],
+        [
+          0.017192134568199045,
+          0.5469993956925601
+        ]
+      ],
+      "old_mass_squared": [
+        0.04683851043525822,
+        0.13805672648598155
+      ],
+      "full_six_scalar_unreduced_eigenvalues": [
+        -2.786724595669045e-18,
+        0.0,
+        3.781943714144826e-18,
+        8.308887168163846e-18,
+        0.04683851043525824,
+        0.1380567264859816
+      ],
+      "radial_plus_pointer_mass_squared": [
+        0.04683851043525822,
+        0.13805672648598155,
+        0.0
+      ],
+      "numerical_Hessian_errors": [
+        2.675091162473997e-09,
+        6.687621498246976e-10,
+        1.671554214488502e-10
+      ],
+      "extra_neutral_scalar_modes": 1,
+      "three_Higgs_angular_zeros_not_extra_physical_scalars": true,
+      "flat_vacuum_not_inhomogeneous_CMC_source": true
+    },
+    "cubic_amplitude_check": {
+      "curvature_coupling": 1.2095709153285228,
+      "mass_gap_squared": 0.09121821605072333,
+      "predicted_signed_amplitude": -0.05516745054155418,
+      "raw_metric_vertex": -0.055167450541554176,
+      "covariant_potential_vertex": -0.055167450541554176,
+      "independent_amplitude_errors": [
+        6.938893903907228e-18,
+        6.938893903907228e-18
+      ],
+      "normal_connection_cubic_coefficients": [
+        0.6047854576642613,
+        -0.6047854576642613
+      ]
+    },
+    "coordinate_invariance_check": {
+      "cases": [
+        {
+          "g": 0.0,
+          "fibre_coordinates": "none",
+          "amplitude": -0.0,
+          "covariant_amplitude": -0.0
+        },
+        {
+          "g": 0.0,
+          "fibre_coordinates": "normal",
+          "amplitude": -0.0,
+          "covariant_amplitude": -0.0
+        },
+        {
+          "g": 0.0,
+          "fibre_coordinates": "polynomial",
+          "amplitude": 6.938893903907228e-18,
+          "covariant_amplitude": -0.0
+        },
+        {
+          "g": 1.0,
+          "fibre_coordinates": "none",
+          "amplitude": -0.055167450541554176,
+          "covariant_amplitude": -0.055167450541554176
+        },
+        {
+          "g": 1.0,
+          "fibre_coordinates": "normal",
+          "amplitude": -0.055167450541554176,
+          "covariant_amplitude": -0.055167450541554176
+        },
+        {
+          "g": 1.0,
+          "fibre_coordinates": "polynomial",
+          "amplitude": -0.05516745054155417,
+          "covariant_amplitude": -0.05516745054155417
+        },
+        {
+          "g": -0.7,
+          "fibre_coordinates": "none",
+          "amplitude": 0.03861721537908791,
+          "covariant_amplitude": 0.038617215379087924
+        },
+        {
+          "g": -0.7,
+          "fibre_coordinates": "normal",
+          "amplitude": 0.03861721537908792,
+          "covariant_amplitude": 0.038617215379087924
+        },
+        {
+          "g": -0.7,
+          "fibre_coordinates": "polynomial",
+          "amplitude": 0.038617215379087924,
+          "covariant_amplitude": 0.038617215379087924
+        }
+      ],
+      "maximum_error": 1.3877787807814457e-17,
+      "degeneracy_closes_only_this_channel": true
+    },
+    "decay_width_check": {
+      "light_mass": 0.21642206549993515,
+      "heavy_mass": 0.37155985585902784,
+      "pointer_mass": 0.0,
+      "tree_partial_width": 0.00010766912672966428,
+      "direct_phase_space_width": 0.00010766912672966424,
+      "width_to_heavy_mass": 0.00028977599445111914,
+      "raw_vertex_angular_spread": 1.3877787807814457e-17,
+      "model_units_only_no_pole_mass_or_experimental_matching": true
+    },
+    "zero_flow_check": {
+      "max_local_pointer_momentum_derivative": 0.02632391098894543,
+      "total_pointer_charge_derivative": 6.723414507493539e-17,
+      "rms_pointer_momentum_derivative": 0.015511734523207291,
+      "flat_divergence_independent_error": 7.979727989493313e-17,
+      "max_pulled_back_connection_curvature": 0.0007251488098857332,
+      "initial_Pchi_zero_not_invariant_local_constraint": true
+    },
+    "massive_completion_check": {
+      "cases": [
+        {
+          "mu": 1.0,
+          "bare_chi_pin_mass_squared": [
+            0.042500504259828285,
+            0.12074149139894717,
+            1.2601145544274013
+          ],
+          "correlated_pin_mass_squared": [
+            0.046838510435258315,
+            0.13805672648598144,
+            1.0000000000000002
+          ],
+          "correlated_pin_error": 2.220446049250313e-16
+        },
+        {
+          "mu": 4.0,
+          "bare_chi_pin_mass_squared": [
+            0.042667926491147444,
+            0.12224721664386146,
+            19.835361104425218
+          ],
+          "correlated_pin_mass_squared": [
+            0.04683851043525942,
+            0.13805672648598108,
+            16.0
+          ],
+          "correlated_pin_error": 1.2004286453759505e-15
+        },
+        {
+          "mu": 16.0,
+          "bare_chi_pin_mass_squared": [
+            0.042678007940566316,
+            0.12233390143892327,
+            317.0659794977657
+          ],
+          "correlated_pin_mass_squared": [
+            0.04683851043522241,
+            0.138056726485965,
+            256.00000000000006
+          ],
+          "correlated_pin_error": 5.684341886080802e-14
+        }
+      ],
+      "bare_pin_heavy_limit_radial_masses_squared": [
+        0.042678678488371945,
+        0.12233965135068693
+      ],
+      "heavy_limit_errors": [
+        0.0015981599517397582,
+        9.24347068254755e-05,
+        5.749911763663906e-06
+      ],
+      "original_radial_masses_squared": [
+        0.04683851043525822,
+        0.13805672648598155
+      ],
+      "bare_pin_changes_original_radial_physics": true,
+      "correlated_pin_is_an_explicit_alternative_with_additional_potential": true,
+      "record_and_inhomogeneous_geometry_not_revalidated_for_pinned_models": true
+    }
+  },
+  "dependency_hashes": {
+    "joint_autonomous_pointer_geometry.py": "958f008c950554bc21e8b256025a05297cb175002b9ebe95330c3f6e54a59867",
+    "joint_curved_quantum_source.py": "cf6aec9461174f41985b706c1bae776787b198ab77d9e42dfe8057764795775c",
+    "joint_scalar_propagation_matching.py": "3ef2f256906884ae1ef2b1ecb36fe0a2b6f1d60a931852511f0a7f11d88d42b5",
+    "research_round_575_checks.json": "a6296379daed8cc6c1196321b884b9e995d4e4e6cb1cf678f000693dcb0a15c5"
+  },
+  "scope": "same explicitly extended two-derivative effective matter action, constant flat classical vacuum and tree amplitudes; extra neutral massless mode, nonzero heavy-to-light pointer channel, current-source truncation failure and qualified massive alternatives; not a quantum continuum proof, realistic decay fit, full apparatus or quantum gravity"
+}

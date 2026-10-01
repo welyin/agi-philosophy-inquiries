@@ -1,0 +1,130 @@
+{
+  "round": 566,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "full_shared_vertex_H_and_orientation_reversal",
+    "exact_angular_sector_central_Casimir_and_identical_link_marginals",
+    "positive_Haar_cubature_and_complete_equal_energy_sources",
+    "actual_collective_pointer_second_moment_and_bounded_record",
+    "shared_Cartesian_gradient_and_collective_backreaction",
+    "finite_duration_apparatus_semiboundedness_and_refinement"
+  ],
+  "dependency_hashes": {
+    "joint_radial_prediction_closure.py": "927ff8e95625a268a92a1e1eaf9f7933ffc4823befc8ea287e08f4b4341897ee",
+    "joint_gauge_link_reference.py": "4faf796ea9bb5adb6d02e17035ec6e9966a5a7e7bfdc39a5a1f0fbcfd49b3e88",
+    "joint_finite_time_gauge_probe.py": "acd1a47553fb49fc00d59e707f57af103acce1f6c31433ae70263f5e4e4316b6"
+  },
+  "exact_angular": {
+    "link_Casimir": 3,
+    "central_singlet_Casimir": 0,
+    "central_triplet_Casimir": 8,
+    "every_single_link_reduced_density_equal": true,
+    "reverse_residual": 0.0
+  },
+  "full_H": {
+    "gauge_residual": 3.3306690738754696e-16,
+    "steps": [
+      0.008,
+      0.004,
+      0.002
+    ],
+    "full_fifteen_matter_six_group_direction_errors": [
+      3.036580896002466e-08,
+      1.8877633521176505e-09,
+      1.1349639294509068e-10
+    ],
+    "missed_cross_term_maximum_pointwise_residual": 0.00855898754241708
+  },
+  "positive_angular_moments": [
+    {
+      "norm": 0.9999999999999999,
+      "S": 0.4,
+      "z1": 0.0,
+      "z2": 1.3877787807814457e-17,
+      "z1z2": 0.09999999999999998,
+      "z1_squared": 0.24999999999999994
+    },
+    {
+      "norm": 1.0,
+      "S": -0.4,
+      "z1": 0.0,
+      "z2": 0.0,
+      "z1z2": -0.09999999999999999,
+      "z1_squared": 0.25
+    }
+  ],
+  "source_and_injection": {
+    "radial_moments": {
+      "mean": 1.053005310883508,
+      "second": 1.1256105732136925,
+      "fourth": 1.3393211640792098,
+      "inverse_second": 0.9477190070485575,
+      "radial_kinetic": 11.124548782174768
+    },
+    "cell_mean_W": 0.07572964185137684,
+    "source_rows": [
+      {
+        "source_mean_H": 37.02044359344948,
+        "mean_actual_Y": 1.800976917141908,
+        "second_actual_Y": 4.12814347421402,
+        "shared_pointer_source_injection": 4.189891600586838,
+        "independent_pointer_source_injection": 3.1856428664343635
+      },
+      {
+        "source_mean_H": 37.02044359344948,
+        "mean_actual_Y": 1.800976917141908,
+        "second_actual_Y": 3.8086299449350203,
+        "shared_pointer_source_injection": 3.622175665995415,
+        "independent_pointer_source_injection": 3.1856428664343635
+      }
+    ],
+    "singlet_vs_triplet_source_energy_difference": 3.79087602819423,
+    "second_record_difference": 0.31951352927899945,
+    "collective_injection_difference": 0.5677159345914231,
+    "finite_pulse_existence_budget": {
+      "D0": 4.51778780403595,
+      "D1": 250.2480676808398,
+      "tau": 0.2,
+      "M": 0.00015984139406428912,
+      "theta": 0.5,
+      "lower_bound": -0.00902661875854687,
+      "pointer_initial_energy": 3128.1008460104968,
+      "no_uniform_distinguishing_tau_certificate_claim": true
+    }
+  },
+  "bounded_record": {
+    "radial_nodes": 144,
+    "angular_nodes": 160,
+    "frequency": 0.7,
+    "shift": 1.8009769171419086,
+    "bounded_compensated_record_expectations": [
+      0.9016933233327817,
+      0.9353515360538409
+    ],
+    "difference": -0.03365821272105918,
+    "analytic_small_frequency_witness": {
+      "B_upper": 6.271999999999999,
+      "frequency": 0.024888180866101076,
+      "sufficient_effect_gap_lower": 2.4737280142445835e-05,
+      "formula_is_analytic_numerical_value_is_not_interval_certificate": true
+    }
+  },
+  "refinement_difference": 3.552713678800501e-14,
+  "gradients": {
+    "shared_gradient_identity_residual": 1.7763568394002505e-15,
+    "Cartesian_gradient_difference_residual": 2.6544899611735673e-10,
+    "electric_cross_terms_between_distinct_links_zero": true
+  },
+  "scope": {
+    "exact_finite_graph_Gauss_form_reduction": true,
+    "same_local_marginals_not_same_joint_state": true,
+    "not_a_failure_of_local_tomography": true,
+    "independent_readers_can_use_joint_statistics": true,
+    "source_injection_identity_is_nonselective_instantaneous_only": true,
+    "finite_positive_duration_distinguishability_is_per_source_existence": true,
+    "graph_SU2_source_pointer_control_inputs_remain": true,
+    "no_dimension_continuum_gravity_or_unified_completion": true
+  }
+}

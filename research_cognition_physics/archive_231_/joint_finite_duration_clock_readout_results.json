@@ -1,0 +1,281 @@
+{
+  "round": 561,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "full_source_polynomial_domain_and_inherited_nonstationary_witness",
+    "full_differential_H_and_terminating_gauge_phase_conjugation",
+    "Gaussian_source_norms_and_conservative_monomial_upper_bounds",
+    "bounded_threshold_probability_current_and_independent_Schrodinger_derivative",
+    "finite_duration_positive_response_and_complete_declared_energy_budget",
+    "actual_compressed_joint_binary_record_and_independent_pointer_quadrature"
+  ],
+  "dependency_hashes": {
+    "joint_probe_time_resolution.py": "516aaeca261657881c973bbea86ff38a3da09943b270ed73151b4c2dfc755779",
+    "joint_probe_time_resolution_results.json": "29e82e14b891396fdebc349ed31ac326a02b2010af624459797994d84d713907",
+    "joint_finite_time_gauge_probe.py": "acd1a47553fb49fc00d59e707f57af103acce1f6c31433ae70263f5e4e4316b6",
+    "joint_matter_energy_moment_control.py": "604aba32b42c466a044eb91c207a889486f2fa18294f254953ab05ddf25725d4",
+    "joint_gauge_link_reference.py": "4faf796ea9bb5adb6d02e17035ec6e9966a5a7e7bfdc39a5a1f0fbcfd49b3e88",
+    "joint_singlet_common_mass_rg_results.json": "4bd60fde58c288d047275f8441c8e622819cd58a2fe55a5ea2717a5fc3a48d66",
+    "round561_drafts/short_time_source_probe.py": "0d90381cb001bfca3fe8b389f3bb3fad311edcaa23a8abc8f8762c155550e9bd",
+    "round561_drafts/short_time_source_probe_results.json": "8e1ea3499902372fb46741e67ef0ce6033509a8d6b82f441584c3ac10d3b3210"
+  },
+  "full_source_certificate": {
+    "status": "preliminary_561_not_frozen",
+    "source_E1": 5.116696581721409,
+    "normalization": 0.9999999999999998,
+    "polynomial_terms": {
+      "Hpsi": 423,
+      "H2psi": 5683,
+      "Jpsi": 87,
+      "JHpsi": 2137,
+      "Gamma_psi": 270,
+      "Gamma_Hpsi": 5637
+    },
+    "norm_upper_bounds": {
+      "Hpsi": 28.50181218320936,
+      "H2psi": 476.96749900031904,
+      "Jpsi": 34.96927092564724,
+      "JHpsi": 485.7539264818304,
+      "Gamma_psi": 23.350866149213243,
+      "Gamma_Hpsi": 301.9910803668497
+    },
+    "commutator_coefficient_residual": 5.551115123125783e-16,
+    "Kpsi_upper": 59.46807650309216,
+    "KHpsi_upper": 894.1990937839007,
+    "time_derivative_error_coefficient": 5178.294082343518,
+    "instantaneous_threshold_slope_positive_bound": 0.05728923509034968,
+    "instantaneous_threshold_slope_quadrature_diagnostic": 0.5012488703988078,
+    "sufficient_chosen_duration": 2.765835339754523e-06,
+    "finite_duration_slope_lower_bound": 0.04296692631776226,
+    "sufficient_mass": 9.17071432062937e-14,
+    "initial_pointer_energy": 5452137996221.933,
+    "pointer_mass_coefficient": 0.011988104554821683,
+    "source_state_norm_error_upper": 0.00016447890757947787,
+    "scope": {
+      "full_source_polynomial_norm_bounds_not_Galerkin": true,
+      "positive_event_slope_not_four_coordinates": true,
+      "extremely_conservative_sufficient_budget_not_optimal": true,
+      "actual_final_compensated_quadrature_is_input": true,
+      "floating_evaluations_not_machine_interval_proofs": true
+    }
+  },
+  "differential_conjugation": {
+    "complete_10_coordinate_and_3_group_stencil_residual": 2.6980701344880664e-08,
+    "stencil_steps": [
+      0.0004,
+      0.0002
+    ],
+    "each_residual": [
+      [
+        2.9457256111317056e-08,
+        3.743382198077189e-09
+      ],
+      [
+        4.045322456840614e-08,
+        2.6980701344880664e-08
+      ],
+      [
+        2.8873257314165472e-08,
+        7.1402615536151296e-09
+      ],
+      [
+        2.5557615942660084e-08,
+        1.646477166458678e-08
+      ],
+      [
+        2.921054248799401e-08,
+        1.2533792326044278e-08
+      ],
+      [
+        2.7256172191724552e-08,
+        1.244043726978553e-08
+      ],
+      [
+        3.619187737854912e-08,
+        1.4907368039087888e-08
+      ],
+      [
+        3.239368083515028e-08,
+        1.5788622482412e-08
+      ]
+    ],
+    "double_commutator_coefficient_residual": 6.280369834735101e-16
+  },
+  "Gaussian_norm_cross_checks": {
+    "Hpsi": {
+      "exact_Gaussian_moment_norm_floating": 5.368727369182059,
+      "monomial_triangle_upper": 28.50181218320936
+    },
+    "Jpsi": {
+      "exact_Gaussian_moment_norm_floating": 3.1223450702070337,
+      "monomial_triangle_upper": 34.96927092564724
+    },
+    "Gamma_psi": {
+      "exact_Gaussian_moment_norm_floating": 4.296527976661184,
+      "monomial_triangle_upper": 23.350866149213243
+    }
+  },
+  "actual_bounded_threshold": {
+    "initial_threshold_probability": 0.4554593546920502,
+    "slope_from_probability_current": 0.5012488703988048,
+    "slope_from_full_H_density_derivative": 0.5012488703988104,
+    "independent_quadrature_difference": 1.8540724511240114e-14,
+    "analytic_positive_lower_bound": 0.05728923509034968,
+    "integration_cutoff_F": 38.400000000000006,
+    "quadrature_is_diagnostic_positive_lower_bound_is_analytic": true
+  },
+  "energy_budget": {
+    "duration": 2.765835339754523e-06,
+    "mass": 9.17071432062937e-14,
+    "initial_source_energy": 5.116696581721409,
+    "initial_pointer_energy": 5452137996221.933,
+    "sufficient_source_energy_change_upper": 3.145652797299945e+18,
+    "total_H_lower_bound": -0.006017745839031246,
+    "remaining_W_coercivity": 0.5,
+    "switch_on_mean_work": 0.0,
+    "switch_off_mean_work_equals_source_energy_change": true,
+    "unmodeled_controller_and_final_reader_resources_remain": true
+  },
+  "compressed_binary_record_diagnostics": [
+    {
+      "duration": 2.765835339754523e-06,
+      "binary_effect": "(1+sin(0.6*(Q_compensated-1.6)))/2",
+      "probability": 0.49036561124149264,
+      "initial_time_derivative": 0.3188544998918111,
+      "maximum_sampled_impulse_state_difference": 3.472158921358446e-05,
+      "finite_matrix_Duhamel_operator_bound": 0.00015775860187529293
+    },
+    {
+      "duration": 0.001,
+      "binary_effect": "(1+sin(0.6*(Q_compensated-1.6)))/2",
+      "probability": 0.49052323093514083,
+      "initial_time_derivative": 0.3185235160124002,
+      "maximum_sampled_impulse_state_difference": 0.012555033088556225,
+      "finite_matrix_Duhamel_operator_bound": 0.05703832025275031
+    },
+    {
+      "duration": 0.01,
+      "binary_effect": "(1+sin(0.6*(Q_compensated-1.6)))/2",
+      "probability": 0.49193678351350767,
+      "initial_time_derivative": 0.3155098623793026,
+      "maximum_sampled_impulse_state_difference": 0.1255765773980888,
+      "finite_matrix_Duhamel_operator_bound": 0.5703832025275031
+    }
+  ],
+  "pointer_quadrature_convergence": [
+    {
+      "duration": 2.765835339754523e-06,
+      "orders": {
+        "48": {
+          "probability": 0.49036561123447964,
+          "initial_time_derivative": 0.31885449995698034
+        },
+        "64": {
+          "probability": 0.49036561124269457,
+          "initial_time_derivative": 0.31885449992803105
+        },
+        "96": {
+          "probability": 0.4903656112414995,
+          "initial_time_derivative": 0.31885449988213865
+        },
+        "128": {
+          "probability": 0.4903656112415118,
+          "initial_time_derivative": 0.3188544998925317
+        },
+        "192": {
+          "probability": 0.4903656112414927,
+          "initial_time_derivative": 0.31885449989181097
+        },
+        "256": {
+          "probability": 0.49036561124149264,
+          "initial_time_derivative": 0.3188544998918111
+        },
+        "320": {
+          "probability": 0.4903656112414926,
+          "initial_time_derivative": 0.3188544998918109
+        }
+      }
+    },
+    {
+      "duration": 0.001,
+      "orders": {
+        "48": {
+          "probability": 0.4905232284119908,
+          "initial_time_derivative": 0.31852354095371727
+        },
+        "64": {
+          "probability": 0.49052323138449105,
+          "initial_time_derivative": 0.3185235289237196
+        },
+        "96": {
+          "probability": 0.49052323093365496,
+          "initial_time_derivative": 0.3185235124988481
+        },
+        "128": {
+          "probability": 0.4905232309423575,
+          "initial_time_derivative": 0.31852351626240893
+        },
+        "192": {
+          "probability": 0.4905232309351407,
+          "initial_time_derivative": 0.31852351601240025
+        },
+        "256": {
+          "probability": 0.49052323093514083,
+          "initial_time_derivative": 0.3185235160124002
+        },
+        "320": {
+          "probability": 0.49052323093514094,
+          "initial_time_derivative": 0.31852351601240037
+        }
+      }
+    },
+    {
+      "duration": 0.01,
+      "orders": {
+        "48": {
+          "probability": 0.491936760001091,
+          "initial_time_derivative": 0.31551023198150263
+        },
+        "64": {
+          "probability": 0.4919367892821736,
+          "initial_time_derivative": 0.31550996908568923
+        },
+        "96": {
+          "probability": 0.4919367831234681,
+          "initial_time_derivative": 0.31550982826724727
+        },
+        "128": {
+          "probability": 0.491936783606127,
+          "initial_time_derivative": 0.31550986376012663
+        },
+        "192": {
+          "probability": 0.4919367835135077,
+          "initial_time_derivative": 0.31550986237930223
+        },
+        "256": {
+          "probability": 0.49193678351350767,
+          "initial_time_derivative": 0.3155098623793026
+        },
+        "320": {
+          "probability": 0.4919367835135078,
+          "initial_time_derivative": 0.31550986237930245
+        }
+      }
+    }
+  ],
+  "initial_48_vs_64_quadrature_failed_tolerance": 1e-11,
+  "compressed_impulse_slope": 0.3188554170584167,
+  "pointer_quadrature_difference": 1.6653345369377348e-16,
+  "scope": {
+    "full_H_finite_duration_positive_slope_proved_analytically": true,
+    "high_source_norms_and_final_compensated_quadrature_required": true,
+    "mass_family_and_high_pointer_energy_are_explicit_inputs": true,
+    "no_optimal_cost_or_autonomous_complete_apparatus_claim": true,
+    "secondary_Galerkin_sine_bit_is_different_from_full_source_threshold": true,
+    "local_time_response_not_four_coordinates_or_spacetime": true,
+    "floating_evaluations_not_machine_interval_certificates": true,
+    "no_spacetime_gravity_or_unified_completion": true
+  }
+}

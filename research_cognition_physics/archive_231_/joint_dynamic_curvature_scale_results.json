@@ -1,0 +1,314 @@
+{
+  "round": 550,
+  "tests_run": 8,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "exact_full_nonminimal_tensor_trace_cancels_different_gradient_contractions",
+    "independent_Einstein_to_Jordan_curvature_and_both_Jordan_field_equations",
+    "exact_joint_moment_and_gauge_curvature_bounds_including_near_F_boundary",
+    "flat_potential_minimum_field_values_fix_delta_without_claiming_constant_GR_vacuum",
+    "cutoff_argument_reparametrization_and_common_mass_rescaling_do_not_change_bounds",
+    "smooth_sharp_cutoff_and_relative_F_limit_keeps_nonzero_fixed_gauge_bound",
+    "dropping_monotone_cutoff_allows_zero_scalar_curvature_with_positive_F_and_reference_rank",
+    "independent_vacuum_matching_evades_bound_and_is_an_explicit_changed_input"
+  ],
+  "exact_tensor_trace_examples": [
+    {
+      "phi": [
+        "1/2",
+        "2/3"
+      ],
+      "kinetic": "-866/225",
+      "R": "1127/216",
+      "full_source_trace": "-336973/46656",
+      "minus_F_R": "-336973/46656"
+    },
+    {
+      "phi": [
+        "1/2",
+        "2/3"
+      ],
+      "kinetic": "734/49",
+      "R": "1127/216",
+      "full_source_trace": "-336973/46656",
+      "minus_F_R": "-336973/46656"
+    }
+  ],
+  "coupled_examples": [
+    {
+      "R_J": 2.75,
+      "trace_R": 2.7500000000000004,
+      "F": 1.1111111111111112,
+      "R_J_over_F": 2.475,
+      "scalar_residual": 1.1102230246251565e-16,
+      "metric_trace_residual": 2.220446049250313e-16,
+      "reference_determinant": -0.06249999999999998,
+      "fields": [
+        1.0,
+        0.5773502691896257
+      ],
+      "epsilon": 0.5
+    },
+    {
+      "R_J": 2.75,
+      "trace_R": 2.7500000000000004,
+      "F": 1.1111111111111112,
+      "R_J_over_F": 2.475,
+      "scalar_residual": 1.1102230246251565e-16,
+      "metric_trace_residual": 1.1102230246251565e-16,
+      "reference_determinant": -1.5258789062499978e-05,
+      "fields": [
+        1.0,
+        0.5773502691896257
+      ],
+      "epsilon": 0.125
+    },
+    {
+      "R_J": 2.7499999999999996,
+      "trace_R": 2.7500000000000004,
+      "F": 1.1111111111111112,
+      "R_J_over_F": 2.4749999999999996,
+      "scalar_residual": 1.1102230246251565e-16,
+      "metric_trace_residual": 3.3306690738754696e-16,
+      "reference_determinant": -3.725290298461918e-09,
+      "fields": [
+        1.0,
+        0.5773502691896257
+      ],
+      "epsilon": 0.03125
+    },
+    {
+      "R_J": 2.8781250000000003,
+      "trace_R": 2.8781250000000003,
+      "F": 1.2249999999999999,
+      "R_J_over_F": 2.349489795918368,
+      "scalar_residual": 5.551115123125783e-17,
+      "metric_trace_residual": 2.7755575615628914e-16,
+      "reference_determinant": -0.0625,
+      "fields": [
+        0.7,
+        0.4
+      ],
+      "epsilon": 0.5
+    },
+    {
+      "R_J": 2.8781250000000003,
+      "trace_R": 2.8781250000000003,
+      "F": 1.2249999999999999,
+      "R_J_over_F": 2.349489795918368,
+      "scalar_residual": 5.551115123125783e-17,
+      "metric_trace_residual": 5.551115123125783e-16,
+      "reference_determinant": -1.5258789062500007e-05,
+      "fields": [
+        0.7,
+        0.4
+      ],
+      "epsilon": 0.125
+    },
+    {
+      "R_J": 2.878125,
+      "trace_R": 2.8781250000000003,
+      "F": 1.2249999999999999,
+      "R_J_over_F": 2.3494897959183674,
+      "scalar_residual": 5.551115123125783e-17,
+      "metric_trace_residual": 4.996003610813204e-16,
+      "reference_determinant": -3.725290298461918e-09,
+      "fields": [
+        0.7,
+        0.4
+      ],
+      "epsilon": 0.03125
+    },
+    {
+      "R_J": 2.7225,
+      "trace_R": 2.7224999999999997,
+      "F": 1.0866666666666667,
+      "R_J_over_F": 2.5053680981595092,
+      "scalar_residual": 2.220446049250313e-16,
+      "metric_trace_residual": 0.0,
+      "reference_determinant": -0.06249999999999998,
+      "fields": [
+        1.2,
+        -0.2
+      ],
+      "epsilon": 0.5
+    },
+    {
+      "R_J": 2.7225000000000006,
+      "trace_R": 2.7224999999999997,
+      "F": 1.0866666666666667,
+      "R_J_over_F": 2.5053680981595097,
+      "scalar_residual": 3.3306690738754696e-16,
+      "metric_trace_residual": 6.661338147750939e-16,
+      "reference_determinant": -1.5258789062499978e-05,
+      "fields": [
+        1.2,
+        -0.2
+      ],
+      "epsilon": 0.125
+    },
+    {
+      "R_J": 2.7225,
+      "trace_R": 2.7224999999999997,
+      "F": 1.0866666666666667,
+      "R_J_over_F": 2.5053680981595092,
+      "scalar_residual": 2.220446049250313e-16,
+      "metric_trace_residual": 3.3306690738754696e-16,
+      "reference_determinant": -3.725290298461918e-09,
+      "fields": [
+        1.2,
+        -0.2
+      ],
+      "epsilon": 0.03125
+    }
+  ],
+  "maximum_frame_and_equation_residual": 8.881784197001252e-16,
+  "exact_joint_bound_certificates": [
+    {
+      "chi": "2",
+      "delta": "5/6",
+      "gw_squared": "3/16",
+      "R_over_mu_squared": "44",
+      "R_over_F": "99/40"
+    },
+    {
+      "chi": "1",
+      "delta": "1/50",
+      "gw_squared": "2/5",
+      "R_over_mu_squared": "12/25",
+      "R_over_F": "12/5"
+    },
+    {
+      "chi": "7/6",
+      "delta": "3/4",
+      "gw_squared": "1/3",
+      "R_over_mu_squared": "22",
+      "R_over_F": "22/9"
+    }
+  ],
+  "bare_minimum_field_value_certificates": [
+    {
+      "generations": 1,
+      "delta": "1/2",
+      "sharp_moment_ratio_infimum": "12"
+    },
+    {
+      "generations": 3,
+      "delta": "5/6",
+      "sharp_moment_ratio_infimum": "20"
+    },
+    {
+      "generations": 5,
+      "delta": "9/10",
+      "sharp_moment_ratio_infimum": "108/5"
+    }
+  ],
+  "equivalent_cutoff_parameterizations": [
+    {
+      "argument_scale": "1/3",
+      "cutoff_squared": "1/72",
+      "moment_scale_squared": "1/16",
+      "chi": "2"
+    },
+    {
+      "argument_scale": "2",
+      "cutoff_squared": "1/2",
+      "moment_scale_squared": "1/16",
+      "chi": "2"
+    },
+    {
+      "argument_scale": "10",
+      "cutoff_squared": "25/2",
+      "moment_scale_squared": "1/16",
+      "chi": "2"
+    }
+  ],
+  "smooth_boundary_sequence": [
+    {
+      "smooth_cutoff_power": 2,
+      "chi": 1.273239544735163,
+      "relative_F": 0.5,
+      "R_over_moment_scale_squared": 18.55774907364391,
+      "R_over_F": 2.319718634205489
+    },
+    {
+      "smooth_cutoff_power": 8,
+      "chi": 1.0220133270167187,
+      "relative_F": 0.125,
+      "R_over_moment_scale_squared": 3.5283198484012477,
+      "R_over_F": 1.7641599242006238
+    },
+    {
+      "smooth_cutoff_power": 32,
+      "chi": 1.001537630653557,
+      "relative_F": 0.03125,
+      "R_over_moment_scale_squared": 0.7869031356853693,
+      "R_over_F": 1.5738062713707386
+    },
+    {
+      "smooth_cutoff_power": 128,
+      "chi": 1.0000992712972405,
+      "relative_F": 0.0078125,
+      "R_over_moment_scale_squared": 0.18988251113377252,
+      "R_over_F": 1.5190600890701802
+    },
+    {
+      "smooth_cutoff_power": 512,
+      "chi": 1.0000062570879669,
+      "relative_F": 0.001953125,
+      "R_over_moment_scale_squared": 0.04702517011120477,
+      "R_over_F": 1.5048054435585527
+    }
+  ],
+  "nonmonotone_scope_counterexample": {
+    "R_J": 2.896357993701118e-17,
+    "trace_R": -8.326672684688674e-17,
+    "F": 0.8705234159779613,
+    "R_J_over_F": 3.3271454168148923e-17,
+    "scalar_residual": 6.174209122076843e-17,
+    "metric_trace_residual": 1.1102230246251565e-16,
+    "reference_determinant": -1.5258789062500007e-05,
+    "cutoff": "(1+10u^2)exp(-u^2)",
+    "chi": "42/121",
+    "field_values": [
+      1.2907810435853708,
+      1.0539183088137773
+    ]
+  },
+  "independent_vacuum_scope_counterexample": {
+    "R_J": 2.072030818527853e-17,
+    "trace_R": 2.1621769678739902e-17,
+    "F": 1.1111111111111112,
+    "R_J_over_F": 1.8648277366750676e-17,
+    "scalar_residual": 6.927699777611555e-19,
+    "metric_trace_residual": 1.5856456772600502e-18,
+    "reference_determinant": -1.5258789062499978e-05,
+    "delta_V0": "-11/12",
+    "new_V0": "1/12"
+  },
+  "dependency_hashes": {
+    "research_note_533.md": "cfc98f3792ffc7b13cc6a869d2c212ac3c267f5c2dbde69c324e90c0377ce6f3",
+    "research_note_543.md": "9a93e3035d6e890237e3ef7fcc837d6991eb2aea234a5e1577c22f076459dcd1",
+    "research_note_549.md": "33b27324128d04f98f6e795148004fef7c9111d3aea4d3c8fbbfca8670c55797",
+    "joint_reference_gravity_constraints.py": "f7c6046683c5b60283b76ee4960c7243e46b7f820aa17558375e1f3669bfa29e",
+    "joint_reference_gravity_constraints_results.json": "f24f41672df35a40dc02658501d46018bc5cb9bd68e91d903a753edf752aeb3f",
+    "research_round_549_checks.json": "fcea57d999340673cc7895bd0c046cf90cf75da9d3733fb62bed26059f70aa9b"
+  },
+  "scope": {
+    "fixed_four_dimensional_classical_nonminimal_branch": true,
+    "trace_identity_and_cutoff_moment_inequality_inherited": true,
+    "new_on_shell_pointwise_joint_bounds": true,
+    "same_scale_bare_gauge_normalization": true,
+    "fixed_nonzero_gauge_strength_needed": true,
+    "constant_vacuum_not_silently_subtracted": true,
+    "R_over_F_is_Jordan_coefficient_ratio_not_measured_Newton_constant": true,
+    "moment_scale_not_arbitrary_sharp_spectral_threshold": true,
+    "weak_curvature_only_a_necessary_diagnostic_not_full_error_control": true,
+    "extra_Weyl_squared_preserves_necessary_trace_not_549_full_solutions": true,
+    "generic_higher_order_and_quantum_corrections_not_excluded": true,
+    "zero_scalar_curvature_not_zero_Riemann_tensor": true,
+    "no_general_spectral_action_no_go": true,
+    "completed_unification": false
+  }
+}

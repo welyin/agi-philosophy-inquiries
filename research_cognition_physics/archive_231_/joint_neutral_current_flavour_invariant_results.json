@@ -1,0 +1,99 @@
+{
+  "round": 547,
+  "tests_run": 5,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "complex_flavour_independent_full_current_partition_and_massless_open_channel_control",
+    "charged_width_and_asymmetry_eliminate_common_normalization_with_branch_counterexample",
+    "exact_deficit_inverse_and_common_bare_Higgs_current_relation",
+    "offdiagonal_light_channels_are_required_for_basis_independent_width",
+    "same_unique_top_solutions_have_closed_Z_channels_and_flavour_independent_deficits"
+  ],
+  "current_partition_max_error": 4.884981308350689e-15,
+  "asymmetry_reconstruction_max_error": 1.3322676295501878e-15,
+  "current_partition_examples": [
+    {
+      "alpha": 0.34883720930232565,
+      "light_current": 2.424012979989187,
+      "mixed_current": 0.4542996214169823,
+      "heavy_current": 0.12168739859383436,
+      "massless_all_channels_control": 3.000000000000004
+    },
+    {
+      "alpha": 0.14285714285714285,
+      "light_current": 2.734693877551022,
+      "mixed_current": 0.2448979591836738,
+      "heavy_current": 0.02040816326530617,
+      "massless_all_channels_control": 3.000000000000002
+    },
+    {
+      "alpha": 0.9375,
+      "light_current": 2.0039062499999987,
+      "mixed_current": 0.1171874999999999,
+      "heavy_current": 0.8789062499999996,
+      "massless_all_channels_control": 2.9999999999999982
+    }
+  ],
+  "diagonal_only_counterexample": {
+    "correct_inclusive_count": 2.16,
+    "incorrect_diagonal_only_count": 1.9200000000000008
+  },
+  "frozen_endpoint_weak_sine_squared": 0.2344247587553306,
+  "unique_boundary_examples": [
+    {
+      "synthetic_top_target": 0.8,
+      "q0": 0.2880303864759264,
+      "active_weight": 0.5400134089062567,
+      "heavy_over_Z_mass_squared": 1.798935773987282,
+      "heavy_Z_channels_closed": true,
+      "light_neutral_effective_count": 2.211587663986043,
+      "deficit_from_three": 0.7884123360139572,
+      "charged_lepton_width_ratio": 4.406073548992841,
+      "charged_lepton_asymmetry": 0.12412016866405044,
+      "reconstructed_count": 2.211587663986043
+    },
+    {
+      "synthetic_top_target": 0.9,
+      "q0": 0.34397401588621607,
+      "active_weight": 0.3478176177330485,
+      "heavy_over_Z_mass_squared": 2.2123987457767096,
+      "heavy_Z_channels_closed": true,
+      "light_neutral_effective_count": 2.425341859739396,
+      "deficit_from_three": 0.5746581402606039,
+      "charged_lepton_width_ratio": 4.831929020712018,
+      "charged_lepton_asymmetry": 0.12412016866405044,
+      "reconstructed_count": 2.4253418597393965
+    },
+    {
+      "synthetic_top_target": 1.0,
+      "q0": 0.4069023062204213,
+      "active_weight": 0.20702073049960368,
+      "heavy_over_Z_mass_squared": 2.656851781870019,
+      "heavy_Z_channels_closed": true,
+      "light_neutral_effective_count": 2.6288161218573824,
+      "deficit_from_three": 0.37118387814261755,
+      "charged_lepton_width_ratio": 5.237304117895845,
+      "charged_lepton_asymmetry": 0.12412016866405044,
+      "reconstructed_count": 2.628816121857383
+    }
+  ],
+  "dependency_hashes": {
+    "research_note_545.md": "297db145a9b650071356f7585c4320467ce69ed0e90cc22c6ac736d2b8586078",
+    "research_note_546.md": "a7bf5dc7840d349f952304a65ae864fdd3a30ac9ca002b818b97b1e85540f41a",
+    "joint_singlet_spectrum_and_weights.py": "d96c32797b9a72a0f76caa217324aa066419583f4dc7b2f15203f5c9832d62c7",
+    "joint_top_boundary_identifiability_results.json": "2167bed51704e891987ead836b4a611bc7da392f1c6b88e9a5f7740e03f9e5cc",
+    "research_round_546_checks.json": "585df74c4b1caf170e7a3e747fa136220fe7be84b905b14727a404931f0c91d2"
+  },
+  "scope": {
+    "tree_level_rank_one_protected_model": true,
+    "heavy_channels_must_be_closed_for_invisible_formula": true,
+    "no_other_invisible_decay_channels_assumed": true,
+    "charged_lepton_masses_neglected_at_Z": true,
+    "overall_Gmu_normalization_not_assumed": true,
+    "asymmetry_weak_angle_branch_required": true,
+    "open_heavy_event_selection_included": false,
+    "current_experimental_fit": false,
+    "all_top_targets_or_the_full_unification_excluded": false
+  }
+}

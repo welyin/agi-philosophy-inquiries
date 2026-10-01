@@ -1,0 +1,33 @@
+第549轮独立解析与来源审查
+审查者：macro_next_gap_audit；日期：2026-09-30。
+权限：只读本轮科学正文、代码、结果、条件账；本文件不新增科学轮次。
+
+结论：在正文明确的四维、解析、F>0、二导数经典有效分支内，局部约束构造与关系坐标满秩证明成立，未发现阻断。其增量是把548给定平直背景上的物质参考构造接入同一非最小耦合模型的真实局部在壳几何，而非从有限jet本身断言完整解。
+
+一、共同作用量与场方程
+g_E=F g_J、G_IJ=delta_IJ/F+3F_I F_J/(2F^2)、U=V/F^2 的归一化正确，F>0保证目标度规正定。混合G_hs不能忽略；正文与代码均保留。实径向H、实s、零规范场及零费米子给经典一致子部门，未把该子部门提升为量子完整SM来源。V的驻点通常不是U的驻点；代码dU=dV/F^2-2VdF/F^3保留真空常数产生的力。
+
+二、约束与CK的量词
+以gamma=psi^4 delta、K_ij=0以及p_I=psi^6 G_IJ pi^J=P delta_Ih准备数据。于是pi^I=psi^-6 G^Ih P，pi^s一般非零，但j_i=-psi^-6 P partial_i h在整个局部初始片精确为零。Hamiltonian约束由R_gamma=-8psi^-5 Delta psi给出正文psi^-7动量项、psi梯度项和2U psi^5项，符号与系数正确。
+psi(x,y,0)=1、psi_z(x,y,0)=0使psi_zz可显式解出；右端在psi=1、F>0附近解析，z=0为非特征面。Cauchy–Kowalevski给实际局部解析psi，再缩小邻域保证正性。这是椭圆方程的解析局部Cauchy存在，不是光滑数据稳定性、全局边界值求解、任意cutoff延拓或有限总能量定理。正文没有越过这些限制。
+谐和规约后的Einstein—正定sigma模型为局部解析双曲系统；与约束相容的规约初值、标量方程所给应力守恒及Bianchi恒等式保证规约解满足完整二导数Einstein方程。由此使用Gaussian时坐标有依据。原点psi=1、空间一阶导数为零、K=0，故该坐标中时空Christoffel在原点全部为零。
+
+三、参考菜单的完整微分
+c=G^sh/G^hh=-G_hs/G_ss，dh=(epsilon,0,0,0)、ds=(c epsilon,epsilon,0,0)。h_0y=epsilon、s_0y=c epsilon、h_0z=s_0z=0、s_xz=epsilon成立。dG逆造成的0x项及完整sigma连接、U梯度造成的00项只进入Jacobian前两列，不破坏下块行列式。四菜单(h,s,(partial h)_E^2,(partial s)_E^2)的行列式为-4epsilon^6；这不要求U驻点。
+Jordan菜单由(A_E,B_E)变为(F A_E,F B_E)，其中dF项进入前两列；菜单变换自身行列式为F^2，因此det J_J=F^2 det J_E。h在两框架均类时。结论是局部可逆关系图，未提供量子读取、全球身份、全局图册、维数选择或从无背景产生几何。
+
+四、同一谱归一化与常数项
+使用完整三代Hilbert维数n=8 n_g(N+r)，本例为128，不能只算非零Yukawa子块。由K与T2关系得F=M0^2-(h^2+s^2)/6、M0^2=n C0/(24T)。V0=n f4 Lambda^4/(2pi^2)保留。
+有理见证N=3,n_g=3,r=7/3,T=1,q=1/4,S=3/28,C0=1/4给M0^2=4/3；Gaussian截止给Lambda^2=1/8，V0=1；h_*^2=1、s_*^2=1/3、F_*=10/9、V_*=11/12、U_*=297/400均可独立重算。它是声明的同尺度裸参数见证，非546运行终点，也没有证明曲率展开或完整谱截断受控。
+
+五、数值与证明的分工
+独立执行本轮默认只读入口；该入口实际调用run()并与已保存完整JSON逐项相等比较。8组全部通过。G/dG逆差分、协变动量与错误pi^s=0对照、任意前两列的有理行列式、完整sigma加速度、由度规二阶导数构造Ricci、两框架菜单差分、常数项改变与排除边界均与正文一致。程序没有数值求解整个约束PDE或Einstein发展；存在性依靠上述解析论证，小jet数值只诊断推导实现。
+实际输出：动量残差5.590714431945022e-19；波方程残差0；Einstein菜单差分误差4.413386323065538e-12；Jordan菜单误差1.0321965504545005e-11。
+
+六、核对的来源及继承范围
+Kaiser等 arXiv:1210.7487 式(6)—(9)：非最小耦合到Einstein框架的目标度规及sigma方程，本项目记号f=F/2；不继承其特殊宇宙学背景。
+Choquet-Bruhat、Isenberg、Pollack arXiv:gr-qc/0610045 §2式(4)—(8)：Einstein—标量约束、共形标度及Cauchy发展背景；本文自行保留多标量G混合项，不把其单标量全局分类直接当成本例证明。
+Zheng-Chao Han, Lecture Notes of an Introductory Graduate PDE Course (2025-12-09), §9.4—9.5：一般非特征解析初值与CK正常形式。https://sites.math.rutgers.edu/~zchan/current-preprint/PDEIntro25.pdf
+本轮继承548参考菜单、533谱归一化、543—547已声明物质候选；一般共形变换、CK及局部Einstein发展均为成熟工具。未把这些工具本身计为新发现。
+
+审查结项：未发现需要修改正式科学文件的实质错误。本文件与final_review.txt可随本轮冻结。更高导数/完整谱分支、曲率参数运行、操作可读性、全局延拓及维数来源仍未签收。

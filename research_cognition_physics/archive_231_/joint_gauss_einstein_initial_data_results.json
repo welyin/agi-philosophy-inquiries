@@ -1,0 +1,152 @@
+{
+  "round": 572,
+  "tests_run": 8,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "inherited_probe_check",
+    "original_source_obstruction_check",
+    "counterflow_and_Gauss_check",
+    "frame_and_positive_coefficients_check",
+    "vector_constraint_check",
+    "coupled_constraint_check",
+    "uniqueness_and_bounds_check",
+    "maximal_slice_obstruction_check"
+  ],
+  "evidence": {
+    "inherited_probe_check": {
+      "saved_probe_reproduced": true,
+      "covariant_vs_canonical_error": 6.0748628349927e-12
+    },
+    "original_source_obstruction_check": {
+      "total_momentum": [
+        0.8596038672859482,
+        0.1650632696472278,
+        1.8053613029380796e-18
+      ],
+      "expected": [
+        0.8596038672859453,
+        0.16506326964722937,
+        0.0
+      ],
+      "impossible_for_same_densities_flat_conformal_periodic_CMC": true
+    },
+    "counterflow_and_Gauss_check": {
+      "counterflow": [
+        11.481320393806387,
+        -5.22056025295747,
+        0.0
+      ],
+      "flat_norm": 3.001277172691888,
+      "total_momentum_after": [
+        2.3497088626929265e-15,
+        1.0378959876752987e-14,
+        1.8053613029380796e-18
+      ],
+      "Gauss_change": 0.0,
+      "Gram_rank": 2,
+      "z_target_outside_range": true
+    },
+    "frame_and_positive_coefficients_check": {
+      "M0_squared": 2.0,
+      "inverse_error": 6.417589812240311e-18,
+      "gauge_tangent_error": 0.0,
+      "F_analytic_lower": 1.8628335465576555,
+      "U_analytic_upper": 9.219694406147093e-05,
+      "Y_analytic_lower": 0.004136794473590154,
+      "tau_squared": 3.0002765908321845,
+      "C_min": 2.0000033277595897
+    },
+    "vector_constraint_check": {
+      "momentum_residual": 1.3877787807814457e-17,
+      "trace_residual": 3.903127820947816e-18,
+      "centered_difference_residual": 0.0028954300198521174
+    },
+    "coupled_constraint_check": {
+      "rows": [
+        {
+          "N": 12,
+          "momentum_residual": 2.7755575615628914e-17,
+          "trace_residual": 3.469446951953614e-18,
+          "Newton_iterations": 3,
+          "elliptic_residual": 3.0531133177191805e-12,
+          "original_Hamiltonian_residual": 4.5639048096290935e-12,
+          "psi_min": 0.9120514824071033,
+          "psi_max": 1.0184154682403235,
+          "lower_barrier": 0.4234678942267244,
+          "grid_upper_barrier": 1.3143670243982122,
+          "min_curvature": -1.2202363309979682,
+          "max_curvature": 1.2138062284810927,
+          "tau": 1.7321306506243068,
+          "density_min": 0.38890008202167414,
+          "density_max": 1.605319608468922
+        },
+        {
+          "N": 16,
+          "momentum_residual": 1.3877787807814457e-17,
+          "trace_residual": 3.903127820947816e-18,
+          "Newton_iterations": 3,
+          "elliptic_residual": 3.071765064532883e-12,
+          "original_Hamiltonian_residual": 4.7761794519374234e-12,
+          "psi_min": 0.9112710891707728,
+          "psi_max": 1.0184153044735698,
+          "lower_barrier": 0.4234678942267244,
+          "grid_upper_barrier": 1.3150765471362889,
+          "min_curvature": -1.2202366451750333,
+          "max_curvature": 1.2138067751866894,
+          "tau": 1.7321306506243068,
+          "density_min": 0.3888999253972546,
+          "density_max": 1.605319881397184
+        },
+        {
+          "N": 24,
+          "momentum_residual": 3.469446951953614e-17,
+          "trace_residual": 3.754050022231059e-18,
+          "Newton_iterations": 3,
+          "elliptic_residual": 3.200717468843095e-12,
+          "original_Hamiltonian_residual": 4.955813537321774e-12,
+          "psi_min": 0.9112710827691146,
+          "psi_max": 1.0184153111409697,
+          "lower_barrier": 0.4234678942267244,
+          "grid_upper_barrier": 1.3149712446494988,
+          "min_curvature": -1.2202366359086212,
+          "max_curvature": 1.2138067449122547,
+          "tau": 1.7321306506243068,
+          "density_min": 0.3888999300168303,
+          "density_max": 1.605319866283377
+        }
+      ],
+      "analytic_existence_is_separate_from_collocation": true
+    },
+    "uniqueness_and_bounds_check": {
+      "two_initial_guesses_max_difference": 6.661338147750939e-16,
+      "positive_ratio_term_min": 1.696413047129123
+    },
+    "maximal_slice_obstruction_check": {
+      "rows": [
+        {
+          "constant_probe": 0.4,
+          "integrated_reaction": -38239.29679133785
+        },
+        {
+          "constant_probe": 1.0,
+          "integrated_reaction": -327.5378270049459
+        },
+        {
+          "constant_probe": 2.0,
+          "integrated_reaction": -46.384974502866505
+        }
+      ],
+      "proof_covers_every_positive_nonconstant_psi_by_periodic_Laplacian_integral": true,
+      "restriction": "same flat conformal CMC branch and nonnegative matched potential; not all GR"
+    }
+  },
+  "dependency_hashes": {
+    "joint_gauss_continuum_sampling.py": "962ad261027a69689127ba6473fcc9dac2931a005c5d630ce8de1b373feca6d3",
+    "joint_gauss_continuum_sampling_results.json": "728e56fe83975f42e18d13ca7a8264433f236a2bbb705584c886217a678b6493",
+    "joint_quotient_gauge_completion.py": "ad79d467500513738d718478a24e2176d88e7225316badfb7f1d62129c4b9494",
+    "round572_drafts/momentum_entry_probe.py": "e5319b43c9ded3862d2d942d3b5c0d4909c73046dfca04c1612286deaddd22a2",
+    "round572_drafts/momentum_entry_probe_results.json": "004562355561eaeca3c2a410f619c2b68de1d531d8d5c2cb843a7e8f7ff61c98"
+  },
+  "scope": "Einstein-frame canonical matching, prescribed four-dimensional two-derivative gravity, flat conformal periodic seed, CMC; original source obstructed, finite changed source admits unique positive conformal factor; no time/quantum/GR-generation theorem"
+}

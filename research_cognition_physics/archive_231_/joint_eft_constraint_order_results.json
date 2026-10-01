@@ -1,0 +1,310 @@
+{
+  "round": 601,
+  "tests_run": 3,
+  "failures": 0,
+  "errors": 0,
+  "coefficients": {
+    "rows": [
+      {
+        "chi": 0.4,
+        "U": 0.00290102083193881,
+        "V1": 0.006856468600208722,
+        "hessian_error": 5.342189884904869e-11,
+        "hessian_raw_errors": [
+          2.2017186199208005e-09,
+          5.103632308434136e-10
+        ],
+        "coefficient_derivative_error": 3.8454407193244666e-10,
+        "derivative_step_halving_errors": [
+          6.15254299764223e-09,
+          1.5381178362222636e-09,
+          3.8454407193244666e-10
+        ]
+      },
+      {
+        "chi": 0.8,
+        "U": 0.01222264694068061,
+        "V1": 0.11087657451188335,
+        "hessian_error": 5.324537243403538e-10,
+        "hessian_raw_errors": [
+          8.537970275224183e-09,
+          2.032757240311156e-09
+        ],
+        "coefficient_derivative_error": 1.727972320786364e-09,
+        "derivative_step_halving_errors": [
+          2.7552592540835974e-08,
+          6.8891216065125604e-09,
+          1.727972320786364e-09
+        ]
+      },
+      {
+        "chi": 1.1,
+        "U": 0.06718112889489684,
+        "V1": 0.6066578761558035,
+        "hessian_error": 5.2100399550170096e-09,
+        "hessian_raw_errors": [
+          2.4691825473155404e-08,
+          9.426258884559502e-09
+        ],
+        "coefficient_derivative_error": 4.926172803010331e-09,
+        "derivative_step_halving_errors": [
+          7.888145914236588e-08,
+          1.972988661336217e-08,
+          4.926172803010331e-09
+        ]
+      }
+    ],
+    "full_five_field_hessian_retained": true,
+    "pure_singlet_background_not_one_field_loop_replacement": true
+  },
+  "hamiltonian": {
+    "rows": [
+      {
+        "eft_parameter": 0.1,
+        "bracket": 0.0022242459292847556,
+        "momentum_constraint": 0.002224247598741573,
+        "algebra_defect": -1.6694568175795732e-09,
+        "expected_order_two_defect": -1.6694568173378535e-09
+      },
+      {
+        "eft_parameter": 0.05,
+        "bracket": 0.0022242471813773675,
+        "momentum_constraint": 0.002224247598741573,
+        "algebra_defect": -4.173642056959359e-10,
+        "expected_order_two_defect": -4.1736420433446336e-10
+      },
+      {
+        "eft_parameter": 0.025,
+        "bracket": 0.002224247494400522,
+        "momentum_constraint": 0.002224247598741573,
+        "algebra_defect": -1.0434105099030311e-10,
+        "expected_order_two_defect": -1.0434105108361584e-10
+      }
+    ],
+    "cubic_branches": [
+      {
+        "velocity": -8.584280096246035,
+        "legendre_derivative": -2.0702390890804256,
+        "quartic_expansion_size": 1.02347034403897
+      },
+      {
+        "velocity": 0.2000768374037034,
+        "legendre_derivative": 0.9985039955004231,
+        "quartic_expansion_size": 0.0005559825120203885
+      },
+      {
+        "velocity": 8.384203258842334,
+        "legendre_derivative": -1.92878073552945,
+        "quartic_expansion_size": 0.976317559521978
+      }
+    ],
+    "continuum_functional_bracket_only": true,
+    "exact_graph_or_full_fermionic_HDA_not_claimed": true
+  },
+  "evolution": {
+    "rows": [
+      {
+        "eft_parameter": 0.04,
+        "mixed": {
+          "final_state": [
+            0.8805115586205062,
+            0.12075870453214602,
+            0.1039106812834733
+          ],
+          "final_constraint": -0.002935380863329458,
+          "minimum_legendre_derivative": 0.9987209895419585,
+          "steps": 160
+        },
+        "reduced": {
+          "final_state": [
+            0.8764595596215535,
+            0.10398951574603109,
+            0.10448485805877898
+          ],
+          "final_constraint": -2.0750989927140195e-06,
+          "minimum_legendre_derivative": 0.9987209895419585,
+          "steps": 160
+        },
+        "resummed": {
+          "final_state": [
+            0.8764560489631492,
+            0.10397821431234593,
+            0.10448534911683934
+          ],
+          "final_constraint": 3.4555691641457997e-15,
+          "minimum_legendre_derivative": 0.9987209895419585,
+          "steps": 160
+        }
+      },
+      {
+        "eft_parameter": 0.02,
+        "mixed": {
+          "final_state": [
+            0.8807192538434362,
+            0.12149432565454955,
+            0.10049213062325828
+          ],
+          "final_constraint": -0.0014722862230629533,
+          "minimum_legendre_derivative": 0.9993604947709793,
+          "steps": 160
+        },
+        "reduced": {
+          "final_state": [
+            0.8786853964966305,
+            0.11305211245506476,
+            0.1007869993274627
+          ],
+          "final_constraint": -5.606065234392554e-07,
+          "minimum_legendre_derivative": 0.9993604947709793,
+          "steps": 160
+        },
+        "resummed": {
+          "final_state": [
+            0.8786844811655791,
+            0.1130490673521231,
+            0.10078713221023872
+          ],
+          "final_constraint": 2.2412627309620348e-15,
+          "minimum_legendre_derivative": 0.9993604947709793,
+          "steps": 160
+        }
+      },
+      {
+        "eft_parameter": 0.01,
+        "mixed": {
+          "final_state": [
+            0.8808258792618898,
+            0.12187253690010685,
+            0.09874159548637787
+          ],
+          "final_constraint": -0.0007373236699486467,
+          "minimum_legendre_derivative": 0.9996802473854897,
+          "steps": 160
+        },
+        "reduced": {
+          "final_state": [
+            0.8798069526549427,
+            0.11763676022730593,
+            0.09889100927786146
+          ],
+          "final_constraint": -1.4579802507658224e-07,
+          "minimum_legendre_derivative": 0.9996802473854897,
+          "steps": 160
+        },
+        "resummed": {
+          "final_state": [
+            0.8798067189506567,
+            0.11763597007263282,
+            0.09889104383883497
+          ],
+          "final_constraint": 1.7555401576885288e-15,
+          "minimum_legendre_derivative": 0.9996802473854897,
+          "steps": 160
+        }
+      },
+      {
+        "eft_parameter": 0.005,
+        "mixed": {
+          "final_state": [
+            0.8808799266730356,
+            0.12206439402907301,
+            0.09785541744703811
+          ],
+          "final_constraint": -0.0003689611555747485,
+          "minimum_legendre_derivative": 0.9998401236927448,
+          "steps": 160
+        },
+        "reduced": {
+          "final_state": [
+            0.8803699595100511,
+            0.11994280358564187,
+            0.09793062366368199
+          ],
+          "final_constraint": -3.7182878359631744e-08,
+          "minimum_legendre_derivative": 0.9998401236927448,
+          "steps": 160
+        },
+        "resummed": {
+          "final_state": [
+            0.8803699004645644,
+            0.11994260234605393,
+            0.09793063247639511
+          ],
+          "final_constraint": 1.582067810090848e-15,
+          "minimum_legendre_derivative": 0.9998401236927448,
+          "steps": 160
+        }
+      },
+      {
+        "eft_parameter": 0.0025,
+        "mixed": {
+          "final_state": [
+            0.8809071394805387,
+            0.12216103087427298,
+            0.09740952052802704
+          ],
+          "final_constraint": -0.00018455594604461709,
+          "minimum_legendre_derivative": 0.9999200618463724,
+          "steps": 160
+        },
+        "reduced": {
+          "final_state": [
+            0.8806520293742548,
+            0.1210993057074066,
+            0.09744724903525356
+          ],
+          "final_constraint": -9.38916208323426e-09,
+          "minimum_legendre_derivative": 0.9999200618463724,
+          "steps": 160
+        },
+        "resummed": {
+          "final_state": [
+            0.8806520145347922,
+            0.12109925492911054,
+            0.09744725126030604
+          ],
+          "final_constraint": 1.4849232954361469e-15,
+          "minimum_legendre_derivative": 0.9999200618463724,
+          "steps": 160
+        }
+      }
+    ],
+    "parameter_halving_ratios": {
+      "mixed": [
+        1.9937569321423612,
+        1.9967977200101217,
+        1.9983774953221898,
+        1.9991832475858067
+      ],
+      "reduced": [
+        3.7015248769913165,
+        3.8450899670608694,
+        3.9211064745022663,
+        3.9601913386954184
+      ]
+    },
+    "step_refinement_error": 3.191891195797325e-15,
+    "time_interval": 0.5,
+    "initial_constraint_satisfied": true,
+    "resummed_first_gradient_action_is_comparison_not_all_orders_physics": true
+  },
+  "dependency_hashes": {
+    "research_note_344.md": "b9e82e31400594d3aa13f66c145d3835cf29809abc9bc57336f4cc9bd10a3ba3",
+    "research_note_351.md": "288bb5e2883658e7ae35db93a0f4457675cca90bdb6eba460dc37063a15ea66a",
+    "research_note_352.md": "ee27e9fbba893e7d2f954872b0467bf45df1f2b2af35c66179f86182cb6a7d3d",
+    "research_note_581.md": "bab0918415f2a5aac088865f78df8283d2d4476862a70d6ef45c17c81d0c5773",
+    "research_note_585.md": "7e4c19eadff43a16e8e62c9be944b32c4b1680d9c32aac44b5c4d2e6f4dd5bdb",
+    "research_note_588.md": "a3e0f46d8f183ab38def9befa79e81eee742e6d5ab9e728e45cef2a6191df924",
+    "research_note_600.md": "27d905d1aa0f3421e469d812da14db160797bb4387640515dcc1bb09a46e7cc9",
+    "joint_curved_quantum_source.py": "cf6aec9461174f41985b706c1bae776787b198ab77d9e42dfe8057764795775c"
+  },
+  "scope": {
+    "original_known_scalar_EFT_sector": true,
+    "Lorentz_continuation_declared": true,
+    "one_common_perturbative_order": true,
+    "full_five_field_scalar_loop_potential_used": true,
+    "finite_window_classical_constraint_checks": true,
+    "general_Noether_compatibility_not_global_existence": true,
+    "no_full_quantum_HDA_or_unified_GR_completion_claim": true
+  }
+}

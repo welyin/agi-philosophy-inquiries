@@ -1,0 +1,118 @@
+{
+  "round": 542,
+  "tests_run": 7,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "nonzero_tree_current_operator_and_trace_equation_from_full_flavor_matrix",
+    "signed_mass_times_negative_trace_gives_nonnegative_downward_quartic_source",
+    "negative_semidefinite_cone_is_not_preserved_in_downward_running",
+    "stable_quartic_difference_identity_and_inherited_positive_comparison_floor",
+    "three_joint_mass_matched_thresholds_with_nonzero_positive_feedback",
+    "opposite_mass_sign_control_reverses_feedback_but_cannot_match_negative_mass",
+    "step_halving_and_exact_trace_factor_crosscheck"
+  ],
+  "trace_matrix_max_error": 2.168404344971009e-19,
+  "trajectories": [
+    {
+      "threshold_GeV": 10000.0,
+      "S_at_threshold": 0.2633173709696563,
+      "mass_ratio_before": "-0.00343640115019256431855197590276105652730877184385494493242259",
+      "mass_ratio_after": -9.858919184713822e-05,
+      "low_mass_squared_GeV2": -8652.701250000002,
+      "low_quartic_without_continuous_feedback_same_threshold": 0.23944345513754467,
+      "low_quartic_with_continuous_feedback": 0.23944358879995029,
+      "positive_quartic_difference_via_stable_ODE": 1.3366240561765103e-07,
+      "low_top": 0.9333923686056732,
+      "scaled_trace_C3_low": -0.06113641457305058,
+      "scaled_C3_eigenvalues": [
+        -0.06199652745259793,
+        0.00043005643977362643,
+        0.00043005643977362643
+      ],
+      "trace_factor": 0.928710693835627,
+      "traceless_factor": 0.9483093904893248,
+      "opposite_mass_sign_control_quartic_difference": -1.3366241551360506e-07,
+      "iterations": 3
+    },
+    {
+      "threshold_GeV": 1000000.0,
+      "S_at_threshold": 0.28469880471895204,
+      "mass_ratio_before": "-0.00360900908208622272516843236136235427057971533149795975006896",
+      "mass_ratio_after": -1.1126715371083732e-08,
+      "low_mass_squared_GeV2": -8652.701250000006,
+      "low_quartic_without_continuous_feedback_same_threshold": 0.24266407361871734,
+      "low_quartic_with_continuous_feedback": 0.24266407364411627,
+      "positive_quartic_difference_via_stable_ODE": 2.539892106235848e-11,
+      "low_top": 0.9392832764890638,
+      "scaled_trace_C3_low": -0.0625258267715832,
+      "scaled_C3_eigenvalues": [
+        -0.06435894870922347,
+        0.0009165609688202167,
+        0.0009165609688202167
+      ],
+      "trace_factor": 0.8784838676552515,
+      "traceless_factor": 0.9171167366506107,
+      "opposite_mass_sign_control_quartic_difference": -2.5398921063181504e-11,
+      "iterations": 2
+    },
+    {
+      "threshold_GeV": 1000000000.0,
+      "S_at_threshold": 0.3125158391489557,
+      "mass_ratio_before": "-0.00396196941364292692754740495477013978837450133856072963409435",
+      "mass_ratio_after": -1.322603972150005e-14,
+      "low_mass_squared_GeV2": -8652.70125,
+      "low_quartic_without_continuous_feedback_same_threshold": 0.24739602650026007,
+      "low_quartic_with_continuous_feedback": 0.2473960265002601,
+      "positive_quartic_difference_via_stable_ODE": 3.868746124982172e-17,
+      "low_top": 0.947567307205503,
+      "scaled_trace_C3_low": -0.06489546538987717,
+      "scaled_C3_eigenvalues": [
+        -0.06819982184704584,
+        0.0016521782285847566,
+        0.0016521782285847566
+      ],
+      "trace_factor": 0.8306198567931776,
+      "traceless_factor": 0.8940602852751633,
+      "opposite_mass_sign_control_quartic_difference": -3.868746124982172e-17,
+      "iterations": 2
+    }
+  ],
+  "step_halving": [
+    {
+      "M": 10000.0,
+      "relative_feedback_step_change": 2.7533531010703882e-14,
+      "absolute_quartic_step_change": 2.8282931552325863e-14
+    },
+    {
+      "M": 1000000.0,
+      "relative_feedback_step_change": 8.970602038971265e-14,
+      "absolute_quartic_step_change": 1.9095836023552692e-14
+    },
+    {
+      "M": 1000000000.0,
+      "relative_feedback_step_change": 1.6904255772942633e-12,
+      "absolute_quartic_step_change": 2.5329738306822946e-13
+    }
+  ],
+  "inherited_lower_bound": 0.16259,
+  "source_negative_budget": 0.0,
+  "dependency_hashes": {
+    "research_note_541.md": "bd833905e8eb8e600d58ae11b3aea5a1fe73118bf5629909d7b2af17339a8898",
+    "protected_pair_finite_matching.py": "8a5b1a16b06426730af36a220bd5577abb14ca9ad1f6f4253f2e75b9195097d2",
+    "protected_pair_finite_matching_results.json": "5f5b4016a749e1a7259aa56e3aba4dc6cb44b7cfb7596cd25eaee2bd01bfbff2",
+    "joint_higgs_flow_obstruction_results.json": "994228fc56436a4de05c98b285c9cd4b14e471e2aa6ae64802a29975cb0db308",
+    "unified_physics_condition_ledger_541.md": "70e8184bcb7d8002415c9292019fa6e24a61f28b1d061c79757f4b6361d33b24"
+  },
+  "scope": {
+    "exact_protected_pair": true,
+    "negative_EFT_mass_target_required": true,
+    "tree_generated_dim6_single_insertion_feedback_included": true,
+    "trace_sign_not_matrix_semidefiniteness_used": true,
+    "partial_resummation_of_displayed_subsystem": true,
+    "full_SMEFT_running": false,
+    "full_dimension_six_observable_extraction": false,
+    "broken_nondegenerate_pair_excluded": false,
+    "full_unification_completed": false
+  }
+}

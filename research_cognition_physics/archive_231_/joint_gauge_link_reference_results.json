@@ -1,0 +1,223 @@
+{
+  "round": 557,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "local_SU2_covariance_Casimir_and_independent_group_gradients",
+    "positive_link_kernel_normalization_attenuation_and_unbiased_edge_probability",
+    "constant_link_physical_source_and_exact_square_root_instrument_leakage",
+    "same_quartic_E1_bounds_for_edge_reading_and_source_backreaction",
+    "neutral_pointer_probability_state_update_and_energy_integrals",
+    "full_post_pulse_derivative_energy_including_matter_and_dynamic_link"
+  ],
+  "dependency_hashes": {
+    "joint_matter_energy_moment_control.py": "604aba32b42c466a044eb91c207a889486f2fa18294f254953ab05ddf25725d4",
+    "joint_singlet_common_mass_rg_results.json": "4bd60fde58c288d047275f8441c8e622819cd58a2fe55a5ea2717a5fc3a48d66",
+    "round557_drafts/link_heat_kernel_probe.py": "51acbf6839a983203d9d9dd4ae805f2dd35c8dc209f515274c4e51d5291e6296",
+    "round557_drafts/link_heat_kernel_probe_results.json": "567246caaf9a8b7c234ee8b63d950e4d264243faa3cfe8eee023891f981de926"
+  },
+  "geometry": {
+    "invariance": 7.105427357601002e-15,
+    "gradient_identity": 7.105427357601002e-15,
+    "finite_difference": 2.0863244465374464e-10
+  },
+  "link_heat_kernel": {
+    "status": "preliminary_557_not_a_completed_round",
+    "rows": [
+      {
+        "t": 0.5,
+        "normalization": 0.9999999999999969,
+        "fundamental_attenuation": 0.68728927879097,
+        "predicted_attenuation": 0.6872892787909722,
+        "link_D": 0.5682053903670031,
+        "minimum_sampled_kernel": 2.3391339728273337e-06,
+        "singlet_survival_for_constant_link_input": 0.44144936236508947,
+        "independent_quadrature_difference": 1.0769163338864018e-14
+      },
+      {
+        "t": 0.75,
+        "normalization": 0.9999999999999972,
+        "fundamental_attenuation": 0.5697828247309212,
+        "predicted_attenuation": 0.569782824730923,
+        "link_D": 0.32154881036225996,
+        "minimum_sampled_kernel": 0.0006424400840742159,
+        "singlet_survival_for_constant_link_input": 0.619919207923668,
+        "independent_quadrature_difference": 6.106226635438361e-15
+      },
+      {
+        "t": 1.0,
+        "normalization": 0.9999999999999972,
+        "fundamental_attenuation": 0.47236655274101325,
+        "predicted_attenuation": 0.4723665527410147,
+        "link_D": 0.20050582655385535,
+        "minimum_sampled_kernel": 0.008823585761279746,
+        "singlet_survival_for_constant_link_input": 0.7445661502468703,
+        "independent_quadrature_difference": 3.7192471324942744e-15
+      },
+      {
+        "t": 2.0,
+        "normalization": 0.9999999999999972,
+        "fundamental_attenuation": 0.22313016014842912,
+        "predicted_attenuation": 0.22313016014842982,
+        "link_D": 0.03932503488873149,
+        "minimum_sampled_kernel": 0.2636234675000025,
+        "singlet_survival_for_constant_link_input": 0.9475723975407637,
+        "independent_quadrature_difference": 7.355227538141662e-16
+      },
+      {
+        "t": 4.0,
+        "normalization": 0.9999999999999973,
+        "fundamental_attenuation": 0.049787068367863806,
+        "predicted_attenuation": 0.049787068367863944,
+        "link_D": 0.0018675991708034358,
+        "minimum_sampled_kernel": 0.8038659985435517,
+        "singlet_survival_for_constant_link_input": 0.9975107966839808,
+        "independent_quadrature_difference": 3.426078865054194e-17
+      }
+    ],
+    "model_input": "single_dynamic_SU2_link_with_Casimir_j_jplus1",
+    "scope": {
+      "instrument_t_is_not_dynamical_time": true,
+      "moments_for_probabilities_only": true,
+      "square_root_group_reading_not_Gauss_preserving": true,
+      "D_excludes_matter_instrument_energy": true,
+      "no_small_t_asymptotic_claim_verified_numerically": true,
+      "no_unified_model_completion": true
+    }
+  },
+  "pointer_kernel": {
+    "maximum_moment_residual": 4.440892098500626e-16,
+    "cases": [
+      {
+        "F": 0.0,
+        "noise_variance": 0.09,
+        "moments": [
+          3.414689820000297e-32,
+          0.09000000000000001,
+          -4.163336342344318e-17,
+          2.777777777777778
+        ],
+        "off_diagonal_factor": 0.3246524673583497
+      },
+      {
+        "F": 0.8,
+        "noise_variance": 0.36,
+        "moments": [
+          0.8,
+          1.0000000000000002,
+          -2.081668171172159e-17,
+          0.6944444444444445
+        ],
+        "off_diagonal_factor": 0.7548396019890073
+      },
+      {
+        "F": 3.2,
+        "noise_variance": 1.2100000000000002,
+        "moments": [
+          3.2,
+          11.450000000000003,
+          3.469446951953666e-18,
+          0.2066115702479339
+        ],
+        "off_diagonal_factor": 0.9197276494699018
+      }
+    ]
+  },
+  "witness_sources": [
+    {
+      "radial_excitation": 0,
+      "excited_endpoint": 0,
+      "omega": 1.3,
+      "v": 1.0,
+      "kappa": 0.8,
+      "electric_coefficient": 0.3,
+      "noise_variance": 0.36,
+      "E1": 4.8108523077116745,
+      "edge_mean": 1.2307692307692308,
+      "edge_second_moment": 2.272189349112426,
+      "gradient_budget": 2.054437869822487,
+      "source_energy_increase": 1.426692965154504,
+      "post_read_source_energy": 6.237545272866178,
+      "matter_energy_increase": 1.367521367521368,
+      "electric_energy_increase": 0.05917159763313609,
+      "independent_energy_identity_residual": 8.881784197001252e-16,
+      "polynomial_gradient_residual": 0.0,
+      "gaussian_closed_form_residual": 1.3322676295501878e-15,
+      "bounds": {
+        "edge_second": 402.3061174795931,
+        "gradient": 15.240603395081049,
+        "source_energy_increase": 10.583752357695174
+      },
+      "actual_record_second_moment": 2.632189349112426,
+      "record_radius_at_failure_0_05": 89.74030504512375,
+      "witnessed_Markov_bound": 0.0003268451497220676
+    },
+    {
+      "radial_excitation": 1,
+      "excited_endpoint": 0,
+      "omega": 1.3,
+      "v": 0.7,
+      "kappa": 1.1,
+      "electric_coefficient": 0.4,
+      "noise_variance": 0.09,
+      "E1": 8.893172143850283,
+      "edge_mean": 1.7769230769230782,
+      "edge_second_moment": 4.736183431952662,
+      "gradient_budget": 4.11972781065089,
+      "source_energy_increase": 11.44368836291912,
+      "post_read_source_energy": 20.336860506769405,
+      "matter_energy_increase": 10.858974358974349,
+      "electric_energy_increase": 0.5847140039447728,
+      "independent_energy_identity_residual": 1.7763568394002505e-14,
+      "polynomial_gradient_residual": 0.0,
+      "gaussian_closed_form_residual": null,
+      "bounds": {
+        "edge_second": 982.6997428964676,
+        "gradient": 44.13247228888231,
+        "source_energy_increase": 122.59020080245087
+      },
+      "actual_record_second_moment": 4.8261834319526615,
+      "record_radius_at_failure_0_05": 140.19912573881962,
+      "witnessed_Markov_bound": 0.0002455348901856151
+    },
+    {
+      "radial_excitation": 1,
+      "excited_endpoint": 1,
+      "omega": 1.3,
+      "v": 1.5,
+      "kappa": 0.5,
+      "electric_coefficient": 0.7,
+      "noise_variance": 0.81,
+      "E1": 6.084636278946569,
+      "edge_mean": 1.730769230769232,
+      "edge_second_moment": 4.493343195266288,
+      "gradient_budget": 2.080251479289944,
+      "source_energy_increase": 0.6420529257067717,
+      "post_read_source_energy": 6.72668920465334,
+      "matter_energy_increase": 0.5341880341880341,
+      "electric_energy_increase": 0.10786489151873756,
+      "independent_energy_identity_residual": 9.992007221626409e-16,
+      "polynomial_gradient_residual": 0.0,
+      "gaussian_closed_form_residual": null,
+      "bounds": {
+        "edge_second": 298.278566240459,
+        "gradient": 19.134323551966645,
+        "source_energy_increase": 5.905655417273655
+      },
+      "actual_record_second_moment": 5.303343195266288,
+      "record_radius_at_failure_0_05": 77.34191182540796,
+      "witnessed_Markov_bound": 0.000886584074732323
+    }
+  ],
+  "scope": {
+    "given_two_vertex_graph_and_SU2_are_inputs": true,
+    "quartic_matter_inherited_from_round544": true,
+    "local_Gauss_physical_sector_preserved_by_direct_invariant_pointer": true,
+    "only_edge_configuration_record_uses_E1_not_full_momentum_menu": true,
+    "pointer_and_ideal_pulse_are_additional_model_inputs": true,
+    "source_energy_increase_is_not_total_apparatus_dissipation": true,
+    "no_autonomous_detector_under_original_source_H_proved": true,
+    "no_continuum_spacetime_or_gravity_generation": true
+  }
+}

@@ -1,0 +1,63 @@
+571连续Gauss来源到精确离散初值：独立入口预审
+2026-10-01；/root/macro_next_gap_audit。
+地位：候选审计，非完整轮次或已完成连续极限定理。仅新增本文件，不改主代码、结果、历史或导航。
+
+一、去重与价值
+复核568—570及前轮scope_audit：568只保证给定光滑场的经典能量一致性；569给真空线性谱、残余Gauss和商群磁函数；570给不相容切向及固定图精确双环补全，但明确没有否定某个真正连续Gauss源的采样。360/365的Z2编码、557—566的量子Gauss保持及549的Einstein局部约束存在均不替代本接口。
+因此候选有独立价值，前提是实际构造“给定连续约束源→保留其动量的精确离散约束源”，证明正确加权范数的误差，而不止重复伪逆投影。无需开始量子或连续动力学专项。
+
+二、连续约定与源条件
+沿569/570的Hermitian t_a=sigma_a/2、正号W=exp(i epsilon a·t)及左平凡化电动量，源贡献pi，靶贡献−Ad(W)^T pi。若pi=epsilon^(d−1)E(mid)，则
+ epsilon^(-d)(B_W pi)_i → sum_j[partial_j E_j−a_j×E_j] =:r_cont。
+这里是减号；不要套用采用另一反Hermitian Lie基时的加号。
+若a,E吸收耦合，应明说其与568正则场密度的换算。按本Hermitian约定，电能由b_w=g_w^2/(2 epsilon^(d−2))给(g_w^2/2)∫|E|^2；因此正规物理电密度为Pi_w=g_w E。圆群Q=6Y给b_0=g_Y^2/(72 epsilon^(d−2))，若pi0=epsilon^(d−1)E0，则Pi_Y=(g_Y/6)E0。不同Lie基符号可改，但整个连接、伴随散度和物质荷须一致，不能混用两个连续表示。
+固定紧周期盒、固定非零h、X=h n、n=(0,1)，以及光滑全局平凡化是来源输入。该单位规范片并不涵盖Higgs零点、非平凡束或任意幅度场。对给定真实连续初值，必须要求
+ j_w+r_cont=0，quad div E0+j0=0，quad j0=−6j_w^3。
+故div E0=−6r_cont^3，特别∫r_cont^3=0。这是连续源本身的总荷相容性，不能在采样后才悄悄添加。
+
+三、精确去掉离散弱总三荷
+记c_e=e3−Ad(W_e)e3，S_epsilon=sum_e c_e·pi_e=sum_i(B_W pi)_i^3。若sum|c|^2>0，可用同一弱电动量修正
+ delta pi_e=−S_epsilon c_e/(sum_f|c_f|^2)。
+它精确使总三荷为零。对规则格同一弱系数，这也是只针对该线性总荷条件的最小电能范数改变量；不是全Gauss最小投影，亦不是制备程序。
+定义归一取向强度
+ Gamma_epsilon=epsilon^(d−2)sum_e|c_e|^2 → Gamma=∫sum_j|a_j×e3|^2。
+固定连续背景Gamma>0给足够小格距上的Gamma_epsilon>=Gamma/2。这是由指定源取向推出的离散稳定常数，不是声称全部Higgs非零源有统一伪逆谱隙。
+在适当统一光滑界下，c_e/epsilon=a_j×e3+O(epsilon)，连续总荷相容使S_epsilon=O(epsilon)（给定的朴素中点配置至多先签此阶）。于是
+ 2b_w sum|delta pi|^2=g_w^2 S_epsilon^2/Gamma_epsilon=O(epsilon^2)。
+修正后的电密度距离为O(epsilon)。由于delta pi/epsilon^(d−1)是小系数乘平滑c_e/epsilon，而非任意高频格点误差，其离散协变散度相对于胞元体积的改变量也为O(epsilon)。后者必须明确证明；仅有一个L2小动量误差不自动控制其散度。
+Gamma=0时a_j×e3处处为零，所列指数链路严格对易e3，所以c_e=S_epsilon=0，无需全局弱修正。此中性部门不应被判成失败。若背景本身随格距变且Gamma→0，现有固定源证明不提供一致常数；但不能直接套570反例否定特殊连续源，也不能排除S_epsilon与Gamma的更强相容抵消。
+
+四、必须保留给定源的径向动量与圆电场
+弱修正完成后，记r=B_W(pi+delta pi)。取PX的三角向分量为−4 sum_a r_a i t_a X/h^2，使节点弱荷精确为−r；其圆荷随即是+6r3。若目标连续源有Higgs径向动量，必须另加原采样径向分量epsilon^d Pi_rad n，它不产生弱／圆荷。将PX整个重置为补偿式只能处理明示的零径向动量子族。
+圆场同理：先保留给定连续E0的采样pi0^sam，计算d=D^T pi0^sam+6r3。由总三荷已归零及闭图散度总和为零，sum d=0。再取
+ delta pi0=−D(D^T D)^dagger d，quad pi0=pi0^sam+delta pi0。
+这样精确Gauss成立，并保留原圆场无散度与谐和分量。从零直接求D^T pi0=−6r3会丢失这些真实光子电场，不能称逼近原给定源。
+固定物理盒中，lambda2(D^TD)约为epsilon^2，不能把它当与网格无关的裸矩阵谱隙。若每节点残差d=O(epsilon^(d+1))，则||d||_l2=O(epsilon^(d/2+1))，而
+ ||delta pi0||_l2<=||d||_l2/sqrt(lambda2)=O(epsilon^(d/2))。
+乘电能权2b0=O(epsilon^(2−d))后，动能范数距离仍为O(epsilon)。Higgs动量的权为epsilon^(-d)，其归一密度误差O(epsilon)也给相同范数阶。各势保持配置，因此能量差可由这些动量距离与原统一有限动能直接控制；有限原动量下通常先给O(epsilon)能量差，不把改变量平方误写成所有交叉项已消失。
+
+五、一个可实际检验修正的来源例子
+在周期盒令a_1=A cos x1 e1，a_2=B e2，其余连接分量零；E_1=E sin x1 e2+Z e3，其余弱电分量零。则r_cont^3=−AE cos x1 sin x1，总积分零；可取E0,1=3AE sin^2 x1加任意常数通量，并保留其它无散度圆电场。Higgs角动量按连续r_cont给出，径向动量可另选平滑函数。连接有非Abelian曲率项，不是纯磁零动量捷径。
+按本候选未作半链路输运的中点E采样，常数Z与c_e第三分量的二阶项产生非零O(epsilon)离散总荷，能真正检验全局修正；连续总荷仍精确为零。此例只是建议，不是已写代码或已完成证据。若改用规范协变半链路输运，应重新推导更高阶误差，不能混用本例的系数。
+
+六、最终范围与成轮门槛
+必须分别签收来源已满足连续约束、离散修正精确、物理加权误差趋零以及能量一致性；初值应力的点态收敛还需要比L2更强的控制，不能由能量积分收敛直接宣布。以上都是给定经典背景、图尺度族和准备的数学映射，不是内部制备或未知输入操作。
+若完成这些估计及真实非零电荷例，可作为570之后的正面接口；无需同时宣称全Hamilton流、Einstein约束、量子连续极限或维数生成。全局补偿的非局域计算与源取向下界也应入条件账，不把它们包装成自动认知机制。
+
+七、后续采用的对称半链路采样：二阶方案预审
+父代理随后选用W=exp(i epsilon a(mid)·t)、V=exp(i epsilon a(mid)·t/2)，pi_w^0=epsilon^(d−1)Ad(V)E(mid)。此处Ad(exp(i theta a·t))=exp(−theta a×)。节点同方向的两项恰为
+ epsilon^(d−1)[exp(−epsilon a_+×/2)E_+−exp(+epsilon a_-×/2)E_-]。
+下标±是相对节点的±epsilon/2中点。该表达在epsilon变号时为奇函数；光滑Taylor给r=epsilon^d(div E−sum a×E)+O(epsilon^(d+2))。C3级一致控制足以支撑所列局部余项，周期求积另要相应光滑性。与上文朴素中点方案不同，本方案可取得二阶，不应混用两个采样的误差系数。
+全局修正仍用c=e3−Ad(W)e3。一个节点上
+ (B_W c)_i=sum_j[2e3−Ad(W_out)e3−Ad(W_in)^T e3]=O(epsilon^2)。
+相邻a_mid的差为O(epsilon)，一阶项因两侧符号抵消；这是不损失一阶导数的关键直接估计。固定Gamma>0时，S=O(epsilon^2)、sum|c|^2约为epsilon^(2−d)Gamma，因此delta r=−S B_W c/sum|c|^2=O(epsilon^(d+2))。
+保留原PX^0=epsilon^d PiX(node)，只用
+ delta PX=−4 sum_a[j_w(PX^0)+r_hat]_a i t_a X/h_i^2
+ 改变角向分量，便同时保留给定径向动量。若h>=h_min>0且平滑，此改变量每节点O(epsilon^(d+2))。圆源rho=−6r_hat3−D^T pi0^0同阶且严格零总和；delta pi0=D(D^TD)^dagger rho的符号正确。原圆场无散度和谐和分量得以保留。
+于是三项动能范数均为O(epsilon^2)。圆部分：||rho||_l2=O(epsilon^(d/2+2))，除sqrt(lambda2)=O(epsilon)后，再乘sqrt(2b0)=O(epsilon^(1−d/2))，得到O(epsilon^2)。势配置不改，在原动能统一有限时完整能量差也至多O(epsilon^2)；尚不由此保证点态应力误差。
+
+八、新非平凡来源例的系数核对
+父代理新例设f(x)=1+u cos x，a_x=A f e1，a_y=B(1+.2 sin y)e2；E_x=E[f^2−(1+1.5u^2)]e2，E_y=.11 cos x e2。y方向的协变散度为零，r3=−A f E_x^2（此处上标2指Lie分量，不是平方）。
+ f E_x^2/E=(2u−.75u^3)cos x+1.5u^2 cos 2x+.25u^3 cos 3x。
+因此E0x=6AE[(2u−.75u^3)sin x+.75u^2 sin 2x+u^3 sin 3x/12]+.13，以及E0y=.07 cos x，精确给div E0=−6r3；常数与横向项不能被Poisson步骤删除。两方向连接有非零非Abelian磁曲率。
+在x方向，对称采样的总荷单边项为−2 epsilon^(d−1)sin(epsilon A f/2)E_x^2。其 leading 总积分为零，下项为+epsilon^2 A^3∫f^3 E_x^2/24。周期平均f^3 E_x^2为E(2u^2−3u^4/8)，一般非零，故这个例子确实会检验全局修正，而非因奇偶对称使修正永远为零。它保留真实连续源及非零规范应力，但未签收该应力与Einstein约束的共同数据。

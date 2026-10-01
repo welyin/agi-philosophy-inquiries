@@ -1,0 +1,335 @@
+{
+  "round": 554,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "exact_finite_cell_composite_menu_commutator_including_all_spatial_modes",
+    "same_frozen_matter_parameters_and_four_reference_calibration_directions",
+    "positive_Gaussian_joint_POVM_full_quadratic_moments_and_independent_quadrature",
+    "source_bias_intrinsic_vs_record_uncertainty_and_finite_record_resource_accounting",
+    "omitted_momentum_modes_exact_energy_defect_not_a_smearing_identity",
+    "fixed_energy_same_retained_state_unbounded_omitted_quadratic_readout_variance"
+  ],
+  "N": 8,
+  "v": 1.0,
+  "finite_cutoff_coordinates": [
+    [
+      -0.5,
+      -0.5,
+      -0.5
+    ],
+    [
+      -0.5,
+      -0.5,
+      0.5
+    ],
+    [
+      -0.5,
+      0.5,
+      -0.5
+    ],
+    [
+      -0.5,
+      0.5,
+      0.5
+    ],
+    [
+      0.5,
+      -0.5,
+      -0.5
+    ],
+    [
+      0.5,
+      -0.5,
+      0.5
+    ],
+    [
+      0.5,
+      0.5,
+      -0.5
+    ],
+    [
+      0.5,
+      0.5,
+      0.5
+    ]
+  ],
+  "commutator_coefficient_of_total_P": -0.03125,
+  "calibration_residual": 7.105427357601002e-15,
+  "independent_quadrature_covariance_residual": 1.8189894035458565e-12,
+  "same_matter_parameters": {
+    "L": [
+      [
+        0.23338508713830064,
+        0.12498076998911703
+      ],
+      [
+        0.12498076998911703,
+        0.26395525357720834
+      ]
+    ],
+    "C": [
+      0.14058642955799208,
+      0.1339932766997666
+    ],
+    "V0": 0.025544821077777044,
+    "vevs": [
+      0.6654429655855137,
+      0.545863690226873
+    ]
+  },
+  "examples": [
+    {
+      "epsilon": 0.25,
+      "V": 8.0,
+      "source_covariance_q": 0.015625,
+      "source_covariance_p": 16.0,
+      "classical_menu": [
+        0.6654429655855137,
+        0.545863690226873,
+        -0.07812500000000008,
+        0.09375000000000004
+      ],
+      "source_bias_after_meter_debiasing": [
+        0.0,
+        0.0,
+        127.25,
+        -127.25
+      ],
+      "decoded_record_variances": [
+        0.0625,
+        0.0625,
+        16464.75,
+        16385.25
+      ],
+      "decoded_MSE": [
+        0.0625,
+        0.0625,
+        32657.3125,
+        32577.8125
+      ],
+      "intrinsic_std_product": 11.434852835738639,
+      "intrinsic_Robertson_lower_bound": 1.0,
+      "record_std_product": 32.07876049662767,
+      "Gaussian_record_lower_bound": 2.0,
+      "source_energy": {
+        "kinetic": 128.3125,
+        "gradient": 1.125,
+        "potential": 0.03733863640550499,
+        "total": 129.4748386364055
+      },
+      "ancilla_seed_oscillator_energy": 256.0,
+      "h_negative_event_union_bound": 4.0705990867400193e-07,
+      "finite_record": {
+        "confidence_at_anchor_at_least": 0.95,
+        "radius": 1142.2368405895513,
+        "quantization_step": 35.69490126842348,
+        "decoded_error_at_most": 1160.084291223763,
+        "bins_per_channel_including_overflow": 68,
+        "total_bits": 28
+      }
+    },
+    {
+      "epsilon": 1.0,
+      "V": 8.0,
+      "source_covariance_q": 0.015625,
+      "source_covariance_p": 16.0,
+      "classical_menu": [
+        0.6654429655855137,
+        0.545863690226873,
+        -1.25,
+        1.5
+      ],
+      "source_bias_after_meter_debiasing": [
+        0.0,
+        0.0,
+        7.953125,
+        -7.953125
+      ],
+      "decoded_record_variances": [
+        0.00390625,
+        0.00390625,
+        69.0029296875,
+        64.0341796875
+      ],
+      "decoded_MSE": [
+        0.00390625,
+        0.00390625,
+        132.255126953125,
+        127.286376953125
+      ],
+      "intrinsic_std_product": 0.19105091978049885,
+      "intrinsic_Robertson_lower_bound": 0.0625,
+      "record_std_product": 0.5191750129694195,
+      "Gaussian_record_lower_bound": 0.125,
+      "source_energy": {
+        "kinetic": 133.0,
+        "gradient": 6.750000000000001,
+        "potential": 0.3226804349210963,
+        "total": 140.0726804349211
+      },
+      "ancilla_seed_oscillator_energy": 256.0,
+      "h_negative_event_union_bound": 4.0705990867400193e-07,
+      "finite_record": {
+        "confidence_at_anchor_at_least": 0.95,
+        "radius": 72.04849983257806,
+        "quantization_step": 2.2515156197680644,
+        "decoded_error_at_most": 73.1742576424621,
+        "bins_per_channel_including_overflow": 68,
+        "total_bits": 28
+      }
+    },
+    {
+      "epsilon": 4.0,
+      "V": 8.0,
+      "source_covariance_q": 0.015625,
+      "source_covariance_p": 16.0,
+      "classical_menu": [
+        0.6654429655855137,
+        0.5458636902268729,
+        -20.0,
+        24.0
+      ],
+      "source_bias_after_meter_debiasing": [
+        0.0,
+        0.0,
+        0.4970703125,
+        -0.4970703125
+      ],
+      "decoded_record_variances": [
+        0.000244140625,
+        0.000244140625,
+        0.5625114440917969,
+        0.2519645690917969
+      ],
+      "decoded_MSE": [
+        0.000244140625,
+        0.000244140625,
+        0.8095903396606445,
+        0.49904346466064453
+      ],
+      "intrinsic_std_product": 0.005176160456603289,
+      "intrinsic_Robertson_lower_bound": 0.00390625,
+      "record_std_product": 0.011718869208683227,
+      "Gaussian_record_lower_bound": 0.0078125,
+      "source_energy": {
+        "kinetic": 208.0,
+        "gradient": 96.75000000000001,
+        "potential": 25.10044542320459,
+        "total": 329.8504454232046
+      },
+      "ancilla_seed_oscillator_energy": 256.0,
+      "h_negative_event_union_bound": 4.0705990867400193e-07,
+      "finite_record": {
+        "confidence_at_anchor_at_least": 0.95,
+        "radius": 5.116878121611436,
+        "quantization_step": 0.15990244130035738,
+        "decoded_error_at_most": 5.196829342261615,
+        "bins_per_channel_including_overflow": 68,
+        "total_bits": 28
+      }
+    },
+    {
+      "epsilon": 16.0,
+      "V": 8.0,
+      "source_covariance_q": 0.015625,
+      "source_covariance_p": 16.0,
+      "classical_menu": [
+        0.6654429655855137,
+        0.5458636902268732,
+        -320.0,
+        384.0
+      ],
+      "source_bias_after_meter_debiasing": [
+        0.0,
+        0.0,
+        0.03106689453125,
+        -0.03106689453125
+      ],
+      "decoded_record_variances": [
+        1.52587890625e-05,
+        1.52587890625e-05,
+        0.02050785720348358,
+        0.0010986775159835815
+      ],
+      "decoded_MSE": [
+        1.52587890625e-05,
+        1.52587890625e-05,
+        0.021473009139299393,
+        0.0020638294517993927
+      ],
+      "intrinsic_std_product": 0.0002763880682237207,
+      "intrinsic_Robertson_lower_bound": 0.000244140625,
+      "record_std_product": 0.0005593970568315738,
+      "Gaussian_record_lower_bound": 0.00048828125,
+      "source_energy": {
+        "kinetic": 1408.0,
+        "gradient": 1536.7500000000002,
+        "potential": 5595.8925155164525,
+        "total": 8540.642515516452
+      },
+      "ancilla_seed_oscillator_energy": 256.0,
+      "h_negative_event_union_bound": 4.0705990867400193e-07,
+      "finite_record": {
+        "confidence_at_anchor_at_least": 0.95,
+        "radius": 0.6865472477437192,
+        "quantization_step": 0.021454601491991226,
+        "decoded_error_at_most": 0.6972745484897148,
+        "bins_per_channel_including_overflow": 68,
+        "total_bits": 28
+      }
+    }
+  ],
+  "fixed_energy_omitted_mode_counterfamily": [
+    {
+      "momentum_displacement": 2.0,
+      "mixture_weight": 0.25,
+      "orthogonal_mode_p_second": 1.5,
+      "p_fourth": 7.75,
+      "mean_kinetic_energy": 0.75,
+      "variance_of_missing_A": 0.0859375
+    },
+    {
+      "momentum_displacement": 4.0,
+      "mixture_weight": 0.0625,
+      "orthogonal_mode_p_second": 1.5,
+      "p_fourth": 19.75,
+      "mean_kinetic_energy": 0.75,
+      "variance_of_missing_A": 0.2734375
+    },
+    {
+      "momentum_displacement": 16.0,
+      "mixture_weight": 0.00390625,
+      "orthogonal_mode_p_second": 1.5,
+      "p_fourth": 259.75,
+      "mean_kinetic_energy": 0.75,
+      "variance_of_missing_A": 4.0234375
+    },
+    {
+      "momentum_displacement": 64.0,
+      "mixture_weight": 0.000244140625,
+      "orthogonal_mode_p_second": 1.5,
+      "p_fourth": 4099.75,
+      "mean_kinetic_energy": 0.75,
+      "variance_of_missing_A": 64.0234375
+    }
+  ],
+  "dependency_hashes": {
+    "research_note_548.md": "b7eee7f8080b9892422d5444480603cc088b8b1a1393d37f3e0a98994543eaa2",
+    "research_note_549.md": "33b27324128d04f98f6e795148004fef7c9111d3aea4d3c8fbbfca8670c55797",
+    "research_note_553.md": "bf352b5705e660cff91565a6da440eeb0ba1d405a2de4285ea821234faffbfdf",
+    "joint_singlet_common_mass_rg_results.json": "4bd60fde58c288d047275f8441c8e622819cd58a2fe55a5ea2717a5fc3a48d66"
+  },
+  "scope": {
+    "finite_canonical_cutoff_of_reduced_two_scalar_sector": true,
+    "full_Higgs_gauge_quantization_not_proved": true,
+    "Gaussian_POVM_is_extra_instrument_input": true,
+    "source_and_meter_initially_independent": true,
+    "no_autonomous_control_claim": true,
+    "calibration_parameters_not_proved_spacetime_coordinates": true,
+    "no_controlled_continuum_or_truncation_error": true,
+    "no_quantum_gravity_or_dimension_generation": true,
+    "entire_unification_completed": false
+  }
+}

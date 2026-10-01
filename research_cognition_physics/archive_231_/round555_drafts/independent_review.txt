@@ -1,0 +1,64 @@
+555 独立解析与来源审查
+日期：2026-09-30；审查者：macro_next_gap_audit。
+本文件是预审，不代替正式正文/代码终审；未修改任何科学文件或导航。
+
+一、判断与继承边界
+候选有成立的共同模型接口：554 的固定平均能量反例说明 E1 不够；555 增加同一自主 H 的有限谱二阶矩 E2 后，能够同时控制两场的平方菜单、场值菜单以及给定 Gaussian 种子的实际读口。源本身不必 Gaussian。新增输入是有限格点、既有正四次势与读出仪器，以及 E2 资源条件；不是热化/准备来源证明，也不保证均值标定保持、持续测量后能量不变、固定精度坐标、连续极限或引力生成。核心分部积分、协变 POVM 和本质自伴性均为成熟工具；本项目增量是它们在 554 同一个有相互作用 H 和菜单上闭合。
+
+二、显式势常数
+记 N 为胞元数，v>0，V=Nv，配置维数为 2N，K=sum D_r^T D_r>=0。令 L=[[lambda_h,p],[p,lambda_s]]>0，u=L^-1 C 的两分量为正。继承的势为
+ W=v/2(q_h^T K q_h+q_s^T K q_s)+v/4 sum_j (q_j^2-u)^T L(q_j^2-u)>=0。
+令 ell=lambda_min(L)>0，alpha=max(0,3lambda_h+p,3lambda_s+p)，任选 r>0。逐点不等式 q_i^2<=u_i+(q_i^2-u_i)^2/(2r)+r/2 给出
+ Delta W<=A_W W+B_W，
+ A_W=2alpha/(ell r)，
+ B_W=2v tr K+vN[alpha(u_h+u_s+r)+|C_h|+|C_s|]。
+这里是配置空间 Laplacian，不是空间图 Laplacian。相同估计还给
+ sum_i <q_i^2><=N(u_h+u_s+r)+2E1/(v ell r)，sum_i <p_i^2><=2vE1。
+它们只在已给固定单位、固定有限网格中使用，常数没有声称对网格细化一致。
+
+三、本质自伴、核与图范数延拓
+令 T=-a Delta，a=hbar^2/(2v)>0，先在 C_c^infty 上定义 H0=T+W。W 是光滑非负多项式，故 H0 是非负对称算符。可引用 Faris–Lavine, Commun. Math. Phys. 35 (1974), 39–48, Corollary 5.1；其非负光滑势特例足够，不需要把 quartic 当相对于自由 T 的小扰动。
+也可直接证明本例：若 psi 属于 ker(H0*+1)，局部椭圆正则性给 psi 属于 H^2_loc。取实截断 chi_R 趋向 1、|grad chi_R|<=c/R，对弱方程测试 chi_R^2 psi，得到
+ integral [a|grad(chi_R psi)|^2+(W+1)|chi_R psi|^2]
+ =a integral |grad chi_R|^2 |psi|^2 ->0。
+因而 psi=0。非负对称算符的稠密值域判据给 H0 本质自伴。闭包 H 以 C_c^infty 为图核；Schwartz 包含该核并在 H 的定义域中，故也是图核。
+对核上任意向量（不先归一化），分部积分严格给
+ ||Hpsi||^2=||Tpsi||^2+||Wpsi||^2+2a integral W|grad psi|^2-a<psi,Delta W psi>。
+所以
+ ||Tpsi||^2+||Wpsi||^2<=||Hpsi||^2+a A_W<psi,Hpsi>+a B_W||psi||^2。
+取 H 图核逼近 psi_n->psi 属于 D(H)，将此不等式用于差向量，Tpsi_n 与 Wpsi_n 都为 Cauchy。自由 T 与乘法 W 是闭算符，故 D(H) 包含于 D(T)交D(W)，且界延拓。反向包含由分布意义 H0* 的定义成立，故 D(H)=D(T)交D(W)。此证明没有使用一般错误的 H>=T 推出 H^2>=T^2。
+E2 应解释为谱二阶矩（纯态为 ||Hpsi||^2）；不要求 psi 属于 D(H^2)。对密度算符 rho、Tr rho H^2<infinity，谱分解逐项求和即得混态界；亦允许源与未读取参考纠缠，因为概率和本界只用相应边缘态。
+
+四、两个平方菜单
+T=T_h+T_s，两个动能由不同动量组成且强对易，故 ||T_h psi||<=||Tpsi||。U_grad,h=v q_h^T K q_h/2 是乘法，0<=U_grad,h<=W，所以 ||U_grad,h psi||<=||Wpsi||。这一步平方比较合法，因为两者共同为乘法。
+ Abar=(2/V)(U_grad,h-T_h)，故
+ <Abar^2>=||Abar psi||^2<=8/V^2 [E2+a A_W E1+a B_W]。
+Bbar 同理。左端是闭包/二次型意义的平方范数，不误要求 Abar^2 psi 是 Hilbert 向量。该图界也保证菜单在 D(H) 上有唯一相容闭延拓。
+
+五、任意源的真实协变读口矩与 Moyal 符号
+使用独立于源、中心为零的 Gaussian 种子 tau，协方差记 T_m，T_m+i hbar Omega/2>=0。T_m 不要与动能 T 混用。给定标准 Weyl 协变 POVM，以 f(z)=z^T A z（A 实对称）、F=Op_W(f)，记录 Y=f(Z)-tr(A T_m)，核上有
+ E Y=<F>，
+ E Y^2=<F^2>+<Op_W(4z^T A T_m A z)>+2tr(A T_m A T_m)-hbar^2 tr(A Omega A Omega)/2。
+理由：对 Weyl 特征函数施加 Gaussian 卷积可计算矩，不需要源 Wigner 函数非负。其 Gaussian 种子部分给 f^2+4z^T A T_m A z+2tr(A T_m A T_m)；Moyal 乘积给 symbol(F^2)=f^2+hbar^2 tr(A Omega A Omega)/2，因此上式末项为减号。
+一般 A 的核上恒等式成立；对任意非 Gaussian 源的域延拓，需要对相应菜单另证 F 及剩余二次项由 H 图范数控制。本轮的 block-diagonal 菜单已满足，不应无说明地把该延拓扩成任意未受控多项式。
+具体 K 菜单 A=diag(K/N,-I/(Nv^2))，故 tr(A Omega A Omega)=+2tr K/(N^2v^2)，不是负数。若 T_m=diag(t_q I,t_p I)，则实际新增常数是
+ C_m=2/N^2[t_q^2 tr K^2+t_p^2 N/v^4]-hbar^2 tr K/(N^2v^2)。
+对每个 k>=0，2(t_q^2 k^2+t_p^2/v^4)-hbar^2 k/v^2
+ =2(t_q k-t_p/v^2)^2+(4t_q t_p-hbar^2)k/v^2>=0；种子物理性 t_q t_p>=hbar^2/4 使 C_m>=0。
+源依赖的二次新增项满足
+ <Op_W(4z^T A T_m A z)><=8E1/(N^2v) [t_q||K||+t_p/v^2]。
+这里使用 K^2<=||K||K、q_h^T Kq_h<=2W/v、p_h^2<=2vT。它与图界合并便控制真实记录 E Y^2。场平均 Qbar 的实际二阶矩由上述 sum q_i^2 控制，并加 t_q/N。一般固定 Gaussian 种子还可用 4||T_m||||A||^2 sum<q_i^2+p_i^2> 控制新增二次项。
+域延拓可用 POVM 的 Naimark 等距 V_M：在图核上，(f-tr A T_m)V_M 的 L2 范数平方正是记录二阶矩，且被 H 图范数控制。对图核逼近的差向量应用同界，乘法 f 的闭性使等式与界延拓到 D(H)；再对密度算符求和。这样不偷用不存在的正 Wigner 概率，也不把有界测试函数公式直接无证用于四次无界矩。
+
+六、时间、风险与来源范围
+静态 H 的未测量演化保留 E1、E2，所以上述有限常数对每个选定读取时刻一致。它不是所有时刻联合成功事件，也不包括反复读取后未重新交代的注能。Gaussian 不保持、均值不保持、554 锚点标定不保持均不影响此原始矩界，但也不能从矩界推断这些性质。
+界控制原始菜单或相对声明常数的风险，例如 E(Y-c)^2<=2 E Y^2+2c^2。把它称为固定时空定位误差还缺跟踪实际均值/响应的接口。若撤去正四次束缚，位置平移可以保留所有动能矩而使场值记录二阶矩无界，所以场值界确实用了同一束缚势。若只给 E1，554 的稀有高动量尾反例仍有效；555 不是说该反例不存在，而是 E2 会随尾部增长。
+
+七、已执行检查与文献定位
+只读执行 round555_drafts/energy_graph_norm_probe.py 的 run() 并与已保存 JSON 全字段比较，完全一致；4 个源的最大恒等式相对残差为 2.632664927730211e-16。此初步有限数例不替代以上任意有限 N 的证明，也不应另加到正式轮次检查计数。
+已阅读主代码新稿，具体菜单 Moyal 常数已采用正确负号；正式稿尚需独立终审核查。
+原始来源：
+1. W. G. Faris and R. B. Lavine, Commutators and Self-Adjointness of Hamiltonian Operators, Commun. Math. Phys. 35 (1974), 39–48, Cor. 5.1, https://doi.org/10.1007/BF01646453 。核读作者上传的原文全文（https://www.researchgate.net/publication/38328190_Commutators_and_Self-Adjointness_of_Hamiltonian_Operators），不是只依据摘要。本文非负光滑多项式满足其 C_c^infty 本质自伴条件；域等式再由本轮图估计证明，不能全归因该定理。
+2. R. F. Werner, The Uncertainty Relation for Joint Measurement of Position and Momentum, quant-ph/0405184, §3.1 Lemma 3、式(23)–(26), https://arxiv.org/pdf/quant-ph/0405184 。该原文给协变 POVM 的密度构造及边缘卷积；本轮无界二次菜单的矩恒等式/图域延拓在上文另行推导，不把其称为 Werner 直接证明的本模型结论。
+
+结论：在上述有限配置、正束缚势、谱二阶矩及独立中心 Gaussian 种子的条件内，无解析阻断。具体菜单 Moyal 迹符号必须保留这里核准的正迹与负常数修正。正式结果仍须区分任意源定理与有限 Hermite/Fock 数例，且不扩大到生成仪器、连续 QFT 或真实坐标稳定性。

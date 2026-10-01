@@ -1,0 +1,220 @@
+{
+  "round": 610,
+  "tests_run": 3,
+  "failures": 0,
+  "errors": 0,
+  "actual": {
+    "inherited_kernel_error": 0.0,
+    "gauge_covariance_error": 7.039177510291003e-16,
+    "rows": [
+      {
+        "L": 2,
+        "sites": 16,
+        "dimension": 64,
+        "gap": 0.996945416153628,
+        "row_block_norm_bound": 7.0,
+        "derivative_difference_error": 1.01924972948746e-09,
+        "derivative_operator_norm": 0.12309015468208859,
+        "derivative_trace_norm": 0.9928446173732652,
+        "positive_trace": 0.10576696183955489,
+        "constants": {
+          "D_trace_norm": 4.000000000000003,
+          "projection_bound": 20.3718327157626,
+          "derivative_bound": 407.4366543152523,
+          "connection_bound": 16600.46272796063,
+          "positive_bound": 166004.62727960641,
+          "remote_derivative_constant": 24446.199258915134,
+          "remote_connection_constant": 1044920.162195468,
+          "remote_positive_constant": 19920555.273552768
+        }
+      },
+      {
+        "L": 3,
+        "sites": 81,
+        "dimension": 324,
+        "gap": 0.9988872403814423,
+        "row_block_norm_bound": 11.0,
+        "derivative_difference_error": 1.4111338707539569e-09,
+        "derivative_operator_norm": 0.09758122960491161,
+        "derivative_trace_norm": 0.7570623074514531,
+        "positive_trace": 0.06292552883381007,
+        "constants": {
+          "D_trace_norm": 4.000000000000003,
+          "projection_bound": 20.3718327157626,
+          "derivative_bound": 407.4366543152523,
+          "connection_bound": 16600.46272796063,
+          "positive_bound": 166004.62727960641,
+          "remote_derivative_constant": 24446.199258915134,
+          "remote_connection_constant": 1044920.162195468,
+          "remote_positive_constant": 19920555.273552768
+        }
+      }
+    ]
+  },
+  "locality": {
+    "rows": [
+      {
+        "L": 2,
+        "weighted_projection_norm": 1.000487085587862,
+        "weighted_trace_norms": {
+          "b": 1.0147145560409387,
+          "c": 1.0145983269256695,
+          "s": 0.10787791057595211
+        },
+        "tails": [
+          {
+            "radius": 0,
+            "tail_trace_norms": {
+              "b": 0.7624262867964076,
+              "c": 0.79336698286397,
+              "s": 0.08823950809345338
+            }
+          },
+          {
+            "radius": 1,
+            "tail_trace_norms": {
+              "b": 0.5751059565101441,
+              "c": 0.6394531792350134,
+              "s": 0.06645866598503443
+            }
+          },
+          {
+            "radius": 2,
+            "tail_trace_norms": {
+              "b": 0.34841768008441637,
+              "c": 0.36294565777986304,
+              "s": 0.04150815181723659
+            }
+          },
+          {
+            "radius": 3,
+            "tail_trace_norms": {
+              "b": 0.0,
+              "c": 0.0,
+              "s": 0.0
+            }
+          }
+        ]
+      },
+      {
+        "L": 3,
+        "weighted_projection_norm": 1.0005032495956137,
+        "weighted_trace_norms": {
+          "b": 0.769019957779161,
+          "c": 0.7689716857803943,
+          "s": 0.06373030123943668
+        },
+        "tails": [
+          {
+            "radius": 0,
+            "tail_trace_norms": {
+              "b": 0.5416232396237071,
+              "c": 0.5657513774948575,
+              "s": 0.047884558672930656
+            }
+          },
+          {
+            "radius": 1,
+            "tail_trace_norms": {
+              "b": 0.3293332745706008,
+              "c": 0.3498828107453982,
+              "s": 0.028280170945417255
+            }
+          },
+          {
+            "radius": 2,
+            "tail_trace_norms": {
+              "b": 0.18814637514454832,
+              "c": 0.19154418855966482,
+              "s": 0.015631336747887702
+            }
+          },
+          {
+            "radius": 3,
+            "tail_trace_norms": {
+              "b": 0.06727545473438351,
+              "c": 0.06730284265206868,
+              "s": 0.0056155259657099926
+            }
+          },
+          {
+            "radius": 4,
+            "tail_trace_norms": {
+              "b": 0.0,
+              "c": 0.0,
+              "s": 0.0
+            }
+          }
+        ]
+      }
+    ],
+    "mu": 0.018018505502678316,
+    "volume_independence_proved_not_fitted": true,
+    "dGamma_error_bounded_by_trace_norm_not_particle_number": true,
+    "fermion_index_support_alone_not_full_gauge_locality": true
+  },
+  "gauge_dependence": {
+    "rows": [
+      {
+        "L": 2,
+        "remote_link": [
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          1
+        ],
+        "distance_to_changed_kernel": 2.0,
+        "second_gap": 0.9948550554342168,
+        "changes_trace_norm": {
+          "b": 0.003583756899938255,
+          "c": 0.0035800779756685703,
+          "s": 0.0005061249522950279
+        },
+        "same_local_derivative_error": 0.0
+      },
+      {
+        "L": 3,
+        "remote_link": [
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          1
+        ],
+        "distance_to_changed_kernel": 3.0,
+        "second_gap": 0.9980785962937336,
+        "changes_trace_norm": {
+          "b": 0.0002588796710747325,
+          "c": 0.00025891453610087686,
+          "s": 2.2162309308482238e-05
+        },
+        "same_local_derivative_error": 0.0
+      }
+    ],
+    "both_configurations_must_satisfy_same_gap": true,
+    "coefficient_depends_on_remote_gauge_field_but_has_conditional_tail_bound": true,
+    "no_claim_of_cylinder_extension_preserving_gap": true
+  },
+  "dependency_hashes": {
+    "research_note_603.md": "cc0b578680b1cd0dae279a2d7533fc4853772e4821358f17b3f57b4ac47b3fe5",
+    "research_note_605.md": "343ce7eb258a66fe4d202b565e7f9c5d4d05a19bf555a57c72f0057459b4adff",
+    "research_note_606.md": "6bc9c41e467fc695cb26940a1edbf4c5e957f10e5a6a82f58d1ba9cea95824a5",
+    "research_note_608.md": "b5104f1379db0d639ca2bb7b69f4dd8ed7508573dfe0de1d9d3568c27d720da3",
+    "research_note_609.md": "90c690f40fe7ec6ee36a3d66192206dd4fc36f2c7154347ece8b76494de1ca42",
+    "joint_chiral_fibre_source.py": "3f25148ddd0b5ad1dd6b67556ee5af3b1a93e7f6410fb5539278e6fd8eb40513",
+    "joint_fock_covariant_completion.py": "d65310baf6cd61de6e7d127854f620f1766c9c38c09fb50bd3b0c72a67befb41"
+  },
+  "scope": {
+    "uniform_gap_finite_range_local_derivative_contract": true,
+    "shared_projector_connection_positive_Fock_bounds": true,
+    "same_gap_remote_configuration_stability": true,
+    "actual_Euclidean_Wilson_link_not_global_holonomy": true,
+    "full_original_thermal_support_not_replaced_by_hard_domain": true,
+    "no_unbounded_gauge_LR_no_SM_mass_dictionary_no_GR": true
+  }
+}

@@ -1,0 +1,369 @@
+{
+  "round": 559,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "unbounded_source_potential_and_Young_bounds",
+    "common_total_H_coercivity_and_gauge_invariance",
+    "exact_fiber_records_source_energy_and_switching_work",
+    "whole_group_gap_bound_joint_state_error_and_Gaussian_tail",
+    "finite_pointer_kinetic_and_single_compensated_quadrature",
+    "one_full_source_energy_budget_all_b_and_finite_duration"
+  ],
+  "dependency_hashes": {
+    "joint_matter_energy_moment_control.py": "604aba32b42c466a044eb91c207a889486f2fa18294f254953ab05ddf25725d4",
+    "joint_singlet_common_mass_rg_results.json": "4bd60fde58c288d047275f8441c8e622819cd58a2fe55a5ea2717a5fc3a48d66",
+    "joint_gauge_link_reference.py": "4faf796ea9bb5adb6d02e17035ec6e9966a5a7e7bfdc39a5a1f0fbcfd49b3e88",
+    "joint_gauge_link_scale_matching_results.json": "5fec45ae486f63033bb76e7aeb1ebb4e0b283b76e8930f398ce9bf26760e64ad",
+    "round559_drafts/finite_duration_probe.py": "069d0db000e083e51cfea83c4c37cbe200daf289edebeb2f591e450386f56e6e",
+    "round559_drafts/finite_duration_probe_results.json": "aa97d9331118ab40ca522bd8b0df531a2f19dbd6f6dd1c8a403dea4b1addbdfd"
+  },
+  "potential_and_stability": {
+    "constants": {
+      "kappa": 0.8,
+      "v": 1.0,
+      "ell": 0.12275819064137404,
+      "uh": 0.44281434044724316,
+      "A": 0.7085029447155891,
+      "B_squared": 41.708011280139964,
+      "B0": 1.0039528453413222,
+      "B1": 83.41602256027993
+    },
+    "pointwise_samples": 150,
+    "relative_invariance_error": 9.227299020419835e-16,
+    "completing_square_residual": 3.583643529025179e-16,
+    "minimum_sampled_lower_bound_margin": 0.027192877915027173,
+    "sufficient_duration_threshold": 6.458173989615019,
+    "note": "Samples check coefficients; the all-source form bounds are proved in the report."
+  },
+  "fiber_dynamics": {
+    "actual_record_rows": [
+      {
+        "alpha": 0.3,
+        "b": 1.0,
+        "duration": 0.01,
+        "noise_variance": 0.25,
+        "actual_mean": 0.24276315274607152,
+        "actual_variance": 0.2706868870671089,
+        "matched_ground_mean": 0.24276315061817794,
+        "source_electric_plus_edge_energy_increase": 0.016509139488202436,
+        "probability_outside_initial_fast_ground": 0.020141097623049387,
+        "pointer_derivative_finite_difference_residual": 3.76316447406504e-11,
+        "independent_cutoff_quadrature_difference": 2.7755575615628914e-16
+      },
+      {
+        "alpha": 0.3,
+        "b": 1.0,
+        "duration": 0.2,
+        "noise_variance": 0.25,
+        "actual_mean": 0.2427640019367701,
+        "actual_variance": 0.2706432441315245,
+        "matched_ground_mean": 0.24276315061817794,
+        "source_electric_plus_edge_energy_increase": 0.016470434522545343,
+        "probability_outside_initial_fast_ground": 0.02009874621607406,
+        "pointer_derivative_finite_difference_residual": 6.867149971300804e-12,
+        "independent_cutoff_quadrature_difference": 1.1102230246251565e-16
+      },
+      {
+        "alpha": 0.3,
+        "b": 1.0,
+        "duration": 1.0,
+        "noise_variance": 0.25,
+        "actual_mean": 0.24278448713367629,
+        "actual_variance": 0.26961826376487635,
+        "matched_ground_mean": 0.24276315061817794,
+        "source_electric_plus_edge_energy_increase": 0.015570610773915023,
+        "probability_outside_initial_fast_ground": 0.019103277789594246,
+        "pointer_derivative_finite_difference_residual": 2.7178819980913826e-11,
+        "independent_cutoff_quadrature_difference": 5.551115123125783e-17
+      },
+      {
+        "alpha": 0.3,
+        "b": 1.0,
+        "duration": 5.0,
+        "noise_variance": 0.25,
+        "actual_mean": 0.24309955693842494,
+        "actual_variance": 0.2545548193804945,
+        "matched_ground_mean": 0.24276315061817794,
+        "source_electric_plus_edge_energy_increase": 0.003463602245087964,
+        "probability_outside_initial_fast_ground": 0.004371520730124519,
+        "pointer_derivative_finite_difference_residual": 1.404549212366658e-11,
+        "independent_cutoff_quadrature_difference": 3.3306690738754696e-16
+      },
+      {
+        "alpha": 0.3,
+        "b": 1.0,
+        "duration": 20.0,
+        "noise_variance": 0.25,
+        "actual_mean": 0.2427741782065352,
+        "actual_variance": 0.25033420367158216,
+        "matched_ground_mean": 0.24276315061817794,
+        "source_electric_plus_edge_energy_increase": 0.0002586540722709423,
+        "probability_outside_initial_fast_ground": 0.00032668902810593486,
+        "pointer_derivative_finite_difference_residual": 1.724083724111082e-11,
+        "independent_cutoff_quadrature_difference": 1.1102230246251565e-16
+      },
+      {
+        "alpha": 0.3,
+        "b": 1.0,
+        "duration": 100.0,
+        "noise_variance": 0.25,
+        "actual_mean": 0.24276365615408932,
+        "actual_variance": 0.2500125507407321,
+        "matched_ground_mean": 0.24276315061817794,
+        "source_electric_plus_edge_energy_increase": 9.701126074529637e-06,
+        "probability_outside_initial_fast_ground": 1.2254796054362443e-05,
+        "pointer_derivative_finite_difference_residual": 1.2177358170722906e-10,
+        "independent_cutoff_quadrature_difference": 5.551115123125783e-17
+      },
+      {
+        "alpha": 0.3,
+        "b": 10.0,
+        "duration": 0.01,
+        "noise_variance": 0.25,
+        "actual_mean": 0.29400301988982375,
+        "actual_variance": 0.27246940514723494,
+        "matched_ground_mean": 0.29400299740156427,
+        "source_electric_plus_edge_energy_increase": 0.16862751992641134,
+        "probability_outside_initial_fast_ground": 0.021853968047864613,
+        "pointer_derivative_finite_difference_residual": 1.7064988596295276e-11,
+        "independent_cutoff_quadrature_difference": 2.220446049250313e-16
+      },
+      {
+        "alpha": 0.3,
+        "b": 10.0,
+        "duration": 0.2,
+        "noise_variance": 0.25,
+        "actual_mean": 0.2940120005339765,
+        "actual_variance": 0.2686174359885465,
+        "matched_ground_mean": 0.29400299740156427,
+        "source_electric_plus_edge_energy_increase": 0.1382519437584776,
+        "probability_outside_initial_fast_ground": 0.018119519559985905,
+        "pointer_derivative_finite_difference_residual": 8.275480198721196e-13,
+        "independent_cutoff_quadrature_difference": 1.1102230246251565e-16
+      },
+      {
+        "alpha": 0.3,
+        "b": 10.0,
+        "duration": 1.0,
+        "noise_variance": 0.25,
+        "actual_mean": 0.29401511667752467,
+        "actual_variance": 0.25055986890278553,
+        "matched_ground_mean": 0.29400299740156427,
+        "source_electric_plus_edge_energy_increase": 0.003994949243296118,
+        "probability_outside_initial_fast_ground": 0.0005321934403014803,
+        "pointer_derivative_finite_difference_residual": 7.98769130905128e-12,
+        "independent_cutoff_quadrature_difference": 1.6653345369377348e-16
+      },
+      {
+        "alpha": 0.3,
+        "b": 10.0,
+        "duration": 5.0,
+        "noise_variance": 0.25,
+        "actual_mean": 0.29400375763799924,
+        "actual_variance": 0.25000194451823776,
+        "matched_ground_mean": 0.29400299740156427,
+        "source_electric_plus_edge_energy_increase": 3.7114503071620986e-06,
+        "probability_outside_initial_fast_ground": 4.945244793721823e-07,
+        "pointer_derivative_finite_difference_residual": 3.605639860238908e-12,
+        "independent_cutoff_quadrature_difference": 2.7755575615628914e-16
+      },
+      {
+        "alpha": 0.3,
+        "b": 10.0,
+        "duration": 20.0,
+        "noise_variance": 0.25,
+        "actual_mean": 0.2940030411027662,
+        "actual_variance": 0.250000575447962,
+        "matched_ground_mean": 0.29400299740156427,
+        "source_electric_plus_edge_energy_increase": 3.6388483884090136e-06,
+        "probability_outside_initial_fast_ground": 4.848643283838692e-07,
+        "pointer_derivative_finite_difference_residual": 1.0262556960493784e-12,
+        "independent_cutoff_quadrature_difference": 5.551115123125783e-17
+      },
+      {
+        "alpha": 0.3,
+        "b": 10.0,
+        "duration": 100.0,
+        "noise_variance": 0.25,
+        "actual_mean": 0.2940029980213501,
+        "actual_variance": 0.25000015628847394,
+        "matched_ground_mean": 0.29400299740156427,
+        "source_electric_plus_edge_energy_increase": 1.1459085266886726e-06,
+        "probability_outside_initial_fast_ground": 1.5270032231495913e-07,
+        "pointer_derivative_finite_difference_residual": 3.84669527253445e-12,
+        "independent_cutoff_quadrature_difference": 5.551115123125783e-17
+      }
+    ],
+    "energy_work_rows": [
+      {
+        "b": 1.0,
+        "duration": 5.0,
+        "source_energy_change": 0.0034636022450879865,
+        "switch_off_mean_work": 0.0034636022450879717,
+        "fixed_fiber_energy_bound": 0.09574614729634384
+      },
+      {
+        "b": 1.0,
+        "duration": 100.0,
+        "source_energy_change": 9.701126074559618e-06,
+        "switch_off_mean_work": 9.701126074540299e-06,
+        "fixed_fiber_energy_bound": 0.004787307364817192
+      },
+      {
+        "b": 10.0,
+        "duration": 5.0,
+        "source_energy_change": 3.7114503071611482e-06,
+        "switch_off_mean_work": 3.711450307155075e-06,
+        "fixed_fiber_energy_bound": 0.09574614729634384
+      },
+      {
+        "b": 10.0,
+        "duration": 100.0,
+        "source_energy_change": 1.1459085266873877e-06,
+        "switch_off_mean_work": 1.145908526689559e-06,
+        "fixed_fiber_energy_bound": 0.004787307364817192
+      }
+    ],
+    "maximum_conditional_conservation_residual": 7.216449660063518e-16
+  },
+  "finite_gap_record_bounds": [
+    {
+      "b": 1.0,
+      "duration": 5.0,
+      "whole_group_gap_lower_bound": 0.45,
+      "numerical_joint_state_norm_error_squared": 0.004498822040965182,
+      "analytic_joint_state_norm_error_squared_bound": 2.5571264496776465,
+      "bounded_record_event_error_bound": 1.0,
+      "Gaussian_tail_formula_floating": 0.060792723530522785,
+      "window_quadrature_points": 10,
+      "largest_sampled_projection_distance": 0.058755289923583774,
+      "largest_sampled_eigenvalue_remainder": 0.002664346872433252
+    },
+    {
+      "b": 1.0,
+      "duration": 20.0,
+      "whole_group_gap_lower_bound": 0.45,
+      "numerical_joint_state_norm_error_squared": 0.0003319294659024801,
+      "analytic_joint_state_norm_error_squared_bound": 0.14462222222247748,
+      "bounded_record_event_error_bound": 0.3802922852523799,
+      "Gaussian_tail_formula_floating": 6.38178334582184e-14,
+      "window_quadrature_points": 42,
+      "largest_sampled_projection_distance": 0.06908921173007102,
+      "largest_sampled_eigenvalue_remainder": 0.0036714292349490536
+    },
+    {
+      "b": 1.0,
+      "duration": 100.0,
+      "whole_group_gap_lower_bound": 0.45,
+      "numerical_joint_state_norm_error_squared": 1.2461324549358242e-05,
+      "analytic_joint_state_norm_error_squared_bound": 0.005784888888888889,
+      "bounded_record_event_error_bound": 0.07605845705040885,
+      "Gaussian_tail_formula_floating": 9.210706019165167e-308,
+      "window_quadrature_points": 80,
+      "largest_sampled_projection_distance": 0.030954174422365477,
+      "largest_sampled_eigenvalue_remainder": 0.0007474974082365225
+    },
+    {
+      "b": 10.0,
+      "duration": 5.0,
+      "whole_group_gap_lower_bound": 7.2,
+      "numerical_joint_state_norm_error_squared": 1.581135928455141e-06,
+      "analytic_joint_state_norm_error_squared_bound": 0.009038888888888888,
+      "bounded_record_event_error_bound": 0.09507307131301107,
+      "Gaussian_tail_formula_floating": 9.813427854297527e-198,
+      "window_quadrature_points": 80,
+      "largest_sampled_projection_distance": 0.06709261894036503,
+      "largest_sampled_eigenvalue_remainder": 0.033884498227544135
+    },
+    {
+      "b": 10.0,
+      "duration": 20.0,
+      "whole_group_gap_lower_bound": 7.2,
+      "numerical_joint_state_norm_error_squared": 5.527486451442817e-07,
+      "analytic_joint_state_norm_error_squared_bound": 0.0005649305555555555,
+      "bounded_record_event_error_bound": 0.023768267828252768,
+      "Gaussian_tail_formula_floating": 0.0,
+      "window_quadrature_points": 80,
+      "largest_sampled_projection_distance": 0.016804191892579503,
+      "largest_sampled_eigenvalue_remainder": 0.00211804897067233
+    },
+    {
+      "b": 10.0,
+      "duration": 100.0,
+      "whole_group_gap_lower_bound": 7.2,
+      "numerical_joint_state_norm_error_squared": 1.5538932801589872e-07,
+      "analytic_joint_state_norm_error_squared_bound": 2.2597222222222222e-05,
+      "bounded_record_event_error_bound": 0.004753653565650553,
+      "Gaussian_tail_formula_floating": 0.0,
+      "window_quadrature_points": 80,
+      "largest_sampled_projection_distance": 0.0033594564823525514,
+      "largest_sampled_eigenvalue_remainder": 8.467939430297487e-05
+    }
+  ],
+  "independent_gap_cutoff_and_quadrature_max_difference": 3.469446951953614e-18,
+  "pointer_free_evolution": {
+    "mass": 1.0,
+    "duration": 100.0,
+    "pointer_initial_and_final_energy": 0.5,
+    "record_means": [
+      0.29400299802135005,
+      0.2940029980213446,
+      0.2940029980213457
+    ],
+    "record_variances": [
+      0.25000015628847394,
+      10000.238024653885,
+      0.25000015628847394
+    ],
+    "order": [
+      "free_phase_removed",
+      "uncompensated_Q",
+      "single_Q_minus_tau_P_over_M"
+    ],
+    "compensation_residual": 3.377537516667486e-13,
+    "final_single_quadrature_is_input_not_joint_sharp_Q_P_measurement": true
+  },
+  "full_source_energy_budget": {
+    "assumed_full_source_E1_upper_bound": 18.0,
+    "pointer_absolute_moments": [
+      0.7978845608028654,
+      1.0,
+      1.5957691216057308
+    ],
+    "rows": [
+      {
+        "duration": 10.0,
+        "absolute_mean_source_energy_change_bound": 4.749303043754216,
+        "whole_H_lower_bound": -0.005019764226706611,
+        "W_coercivity_coefficient": 0.5829198871986003
+      },
+      {
+        "duration": 100.0,
+        "absolute_mean_source_energy_change_bound": 0.43466591977901486,
+        "whole_H_lower_bound": -5.019764226706611e-05,
+        "W_coercivity_coefficient": 0.995829198871986
+      },
+      {
+        "duration": 1000.0,
+        "absolute_mean_source_energy_change_bound": 0.04312324984560068,
+        "whole_H_lower_bound": -5.019764226706611e-07,
+        "W_coercivity_coefficient": 0.9999582919887199
+      }
+    ],
+    "all_b_positive_at_fixed_E1": true,
+    "budget_is_conditional_input_not_a_simulated_full_matter_record": true
+  },
+  "scope": {
+    "hbar_and_numerical_gain_one": true,
+    "full_unbounded_source_energy_theorem_analytic": true,
+    "full_source_Gauss_preserved_each_pointer_branch": true,
+    "accurate_record_theorem_only_fixed_matter_fast_ground": true,
+    "finite_energy_not_sufficient_for_full_dynamic_reference_coordinates": true,
+    "graph_group_source_preparation_pulse_and_final_quadrature_are_inputs": true,
+    "controller_energy_bookkept_but_no_autonomous_controller_constructed": true,
+    "slow_probe_changes_original_instantaneous_instrument": true,
+    "no_spacetime_gravity_or_unified_completion": true
+  }
+}

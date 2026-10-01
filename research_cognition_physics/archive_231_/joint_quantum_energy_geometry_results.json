@@ -1,0 +1,173 @@
+{
+  "round": 578,
+  "tests_run": 4,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "radial_form_check",
+    "sharp_kinetic_gap_check",
+    "graph_volume_bound_check",
+    "metric_subtraction_check"
+  ],
+  "evidence": {
+    "radial_form_check": {
+      "rows": [
+        {
+          "ell": 0,
+          "interval": [
+            0.2,
+            2.6
+          ],
+          "phase": 0.0,
+          "direct_rayleigh": 4.111029216818824,
+          "transformed_rayleigh": 4.111029216818823,
+          "identity_error": 8.881784197001252e-16
+        },
+        {
+          "ell": 1,
+          "interval": [
+            0.7,
+            4.2
+          ],
+          "phase": 0.37,
+          "direct_rayleigh": 2.761524482849433,
+          "transformed_rayleigh": 2.761524482849433,
+          "identity_error": 0.0
+        },
+        {
+          "ell": 2,
+          "interval": [
+            2.0,
+            8.0
+          ],
+          "phase": -0.23,
+          "direct_rayleigh": 1.2660660567065616,
+          "transformed_rayleigh": 1.2660660567065616,
+          "identity_error": 0.0
+        }
+      ],
+      "original_target_polar_metric_error": 5.115907697472721e-12,
+      "scalar_curvature": -3.3333333333333335,
+      "kinetic_gap": 0.6666666666666666
+    },
+    "sharp_kinetic_gap_check": {
+      "rows": [
+        {
+          "length": 4.0,
+          "rayleigh": 1.2956056578247717,
+          "excess_over_gap": 0.628938991158105,
+          "analytic_upper": 1.3385131286152012
+        },
+        {
+          "length": 8.0,
+          "rayleigh": 0.8210219563669169,
+          "excess_over_gap": 0.15435528970025025,
+          "analytic_upper": 0.8228264094276481
+        },
+        {
+          "length": 16.0,
+          "rayleigh": 0.7052198495125712,
+          "excess_over_gap": 0.03855318284590459,
+          "analytic_upper": 0.7052226359587751
+        },
+        {
+          "length": 32.0,
+          "rayleigh": 0.676304952214618,
+          "excess_over_gap": 0.00963828554795132,
+          "analytic_upper": 0.6763049522205997
+        }
+      ],
+      "trial_is_compact_H1_radial_function_approximable_by_smooth_ones": true,
+      "sharpness_only_for_free_target_laplacian_not_full_matter_H": true
+    },
+    "graph_volume_bound_check": {
+      "hbar": 0.07,
+      "rows": [
+        {
+          "side": 2,
+          "nodes": 8,
+          "volume": 2.3,
+          "exact_weight_bound": 0.0466840561995954,
+          "volume_only_bound": 0.04544927536231885,
+          "scaled_volume_bound": 0.0007101449275362321
+        },
+        {
+          "side": 4,
+          "nodes": 64,
+          "volume": 2.3,
+          "exact_weight_bound": 2.9886710651073445,
+          "volume_only_bound": 2.9087536231884066,
+          "scaled_volume_bound": 0.0007101449275362321
+        },
+        {
+          "side": 8,
+          "nodes": 512,
+          "volume": 2.3,
+          "exact_weight_bound": 191.27494816687002,
+          "volume_only_bound": 186.16023188405802,
+          "scaled_volume_bound": 0.0007101449275362321
+        },
+        {
+          "side": 16,
+          "nodes": 4096,
+          "volume": 2.3,
+          "exact_weight_bound": 12241.596682679683,
+          "volume_only_bound": 11914.254840579713,
+          "scaled_volume_bound": 0.0007101449275362321
+        }
+      ],
+      "curvature_trace_cap": 3.0,
+      "gravitational_coefficient": 1.0,
+      "necessary_node_bound": 69.70052557410253,
+      "passes_necessary_bound": [
+        true,
+        true,
+        false,
+        false
+      ],
+      "source_energy_identification_is_an_additional_matching_condition": true,
+      "bound_applies_to_all_states_not_just_product_sources": true
+    },
+    "metric_subtraction_check": {
+      "rows": [
+        {
+          "volume": 1.2,
+          "gap_energy": 0.9922500000000003,
+          "subtraction_functional_pressure": 0.8268749999995297,
+          "density": 0.8268750000000002,
+          "pressure_over_density": 0.999999999999431
+        },
+        {
+          "volume": 2.3,
+          "gap_energy": 0.5176956521739132,
+          "subtraction_functional_pressure": 0.22508506616264226,
+          "density": 0.22508506616257098,
+          "pressure_over_density": 1.0000000000003166
+        },
+        {
+          "volume": 4.7,
+          "gap_energy": 0.25334042553191494,
+          "subtraction_functional_pressure": 0.05390221819833496,
+          "density": 0.05390221819827977,
+          "pressure_over_density": 1.0000000000010238
+        }
+      ],
+      "constant_density_matched_at_volume": 2.3,
+      "matched_energy_residual": 0.0,
+      "residual_pressure_of_gap_minus_constant_density": 0.45017013232514197,
+      "target_curvature_ordering_xi": 0.2,
+      "shifted_free_kinetic_gap": -1.1102230246251565e-16,
+      "varying_fixed_node_count": true,
+      "not_total_state_pressure_or_actual_vacuum_energy": true,
+      "cancelling_this_lower_bound_does_not_prove_continuum_limit": true
+    }
+  },
+  "dependency_hashes": {
+    "joint_curved_quantum_source.py": "cf6aec9461174f41985b706c1bae776787b198ab77d9e42dfe8057764795775c",
+    "research_note_574.md": "23d72d666f593f845577712e761ab00dec1d10a56955b7da5fbb22a5ca68ef19",
+    "research_note_572.md": "d5be547e62219cec351e11973af34324e1ed2bae9743247276b3b5fcfc99009e",
+    "research_note_577.md": "c4a8abb53b794856fd1abc86a8fc084e8d950e2231a080a6ffd26944eb583d7e",
+    "research_round_577_checks.json": "f72845ac7ede60913aeeb1cefc9d5eb2fecf53e88de197fa7db6273412775a50"
+  },
+  "scope": "original positive Laplace-Beltrami fixed-graph Hamiltonian: all-state kinetic lower bound; conditional obstruction to unrenormalized fixed-hbar bounded-volume regular Einstein matching; fixed-geometry energy shifts are not automatically the same metric source; no full ground-state energy, continuum limit, spacetime dimension or general unification no-go"
+}

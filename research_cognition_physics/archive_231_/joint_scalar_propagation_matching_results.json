@@ -1,0 +1,256 @@
+{
+  "round": 567,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "sector_check",
+    "graph_check",
+    "scales_check",
+    "principal_check",
+    "repair_check",
+    "single_mode_check"
+  ],
+  "evidence": {
+    "sector_check": {
+      "Cartesian_force_finite_difference_residual": 1.9095558467796536e-11,
+      "transverse_force_charge_link_torque_max": 8.326672684688674e-17,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "scope": "classical invariant sector; not a normalizable sharp-link quantum state"
+    },
+    "graph_check": {
+      "sites": 5,
+      "full_potential_Hessian_errors": [
+        1.3197501425032954e-09,
+        1.3194789705295307e-09
+      ],
+      "full_matrix_Fourier_errors": [
+        6.661338147750939e-16,
+        4.440892098500626e-16
+      ],
+      "original_and_repaired_common_vacuum": [
+        0.6654429655855137,
+        0.545863690226873
+      ]
+    },
+    "scales_check": {
+      "rows": [
+        {
+          "epsilon": 1.0,
+          "lattice_q_squared": 1.6524504043286565,
+          "continuum_q_squared": 1.7900000000000003,
+          "symbol_error": 0.13754959567134373,
+          "symbol_error_bound": 0.1426916666666667,
+          "dispersion_error": 0.109598504503861,
+          "fixed_kappa_speed_squared": 0.8,
+          "fixed_speed_required_k": 0.8
+        },
+        {
+          "epsilon": 0.5,
+          "lattice_q_squared": 1.7546534972565846,
+          "continuum_q_squared": 1.7900000000000003,
+          "symbol_error": 0.035346502743415664,
+          "symbol_error_bound": 0.03567291666666667,
+          "dispersion_error": 0.028170137298050957,
+          "fixed_kappa_speed_squared": 0.2,
+          "fixed_speed_required_k": 0.4
+        },
+        {
+          "epsilon": 0.25,
+          "lattice_q_squared": 1.781102251347876,
+          "continuum_q_squared": 1.7900000000000003,
+          "symbol_error": 0.008897748652124227,
+          "symbol_error_bound": 0.008918229166666668,
+          "dispersion_error": 0.007091630010446659,
+          "fixed_kappa_speed_squared": 0.05,
+          "fixed_speed_required_k": 0.2
+        },
+        {
+          "epsilon": 0.125,
+          "lattice_q_squared": 1.7877717239887998,
+          "continuum_q_squared": 1.7900000000000003,
+          "symbol_error": 0.0022282760112004585,
+          "symbol_error_bound": 0.002229557291666667,
+          "dispersion_error": 0.0017759908443464312,
+          "fixed_kappa_speed_squared": 0.0125,
+          "fixed_speed_required_k": 0.1
+        }
+      ],
+      "dimension_three_is_input": true,
+      "statement": "bounded physical momentum symbol convergence only; no quantum limit"
+    },
+    "principal_check": {
+      "mass_squared_matrix": [
+        [
+          0.20669252686273798,
+          0.09079631794486152
+        ],
+        [
+          0.09079631794486152,
+          0.15729999893689428
+        ]
+      ],
+      "mass_squared_eigenvalues": [
+        0.08790122155293806,
+        0.2760913042466942
+      ],
+      "d_omega_squared_d_q_squared_at_zero": [
+        0.29501566242208255,
+        0.5049843375779174
+      ],
+      "generalized_speed_congruence_errors": [
+        1.1102230246251565e-16,
+        0.0
+      ],
+      "equal_diagonal_mass_slopes": [
+        0.3999999999999999,
+        0.3999999999999999
+      ],
+      "equal_slope_example_departure_at_q_squared_one": [
+        -0.1403124237432849,
+        0.14031242374328468
+      ],
+      "rows": [
+        {
+          "q_squared": 0.0,
+          "omega_squared": [
+            0.08790122155293806,
+            0.2760913042466942
+          ]
+        },
+        {
+          "q_squared": 0.1,
+          "omega_squared": [
+            0.11050824595133667,
+            0.3334842798482956
+          ]
+        },
+        {
+          "q_squared": 1.0,
+          "omega_squared": [
+            0.14770271243376537,
+            1.0162898133658669
+          ]
+        },
+        {
+          "q_squared": 100.0,
+          "omega_squared": [
+            0.15719701301175604,
+            80.20679551278788
+          ]
+        }
+      ],
+      "massive_group_velocity_at_zero": 0.0
+    },
+    "repair_check": {
+      "exact_repaired_spectral_translation_residual": 2.220446049250313e-16,
+      "branches": [
+        {
+          "s_speed_squared": 0.0,
+          "spatial_rank": 1,
+          "shared_nonzero_principal_speed": false,
+          "speeds_squared": [
+            0.0,
+            0.8
+          ]
+        },
+        {
+          "s_speed_squared": 0.4,
+          "spatial_rank": 2,
+          "shared_nonzero_principal_speed": false,
+          "speeds_squared": [
+            0.4,
+            0.8
+          ]
+        },
+        {
+          "s_speed_squared": 0.8,
+          "spatial_rank": 2,
+          "shared_nonzero_principal_speed": true,
+          "speeds_squared": [
+            0.8,
+            0.8
+          ]
+        }
+      ],
+      "singlet_edge_rule_and_speed_matching_are_added_inputs": true,
+      "preserved_on_site_mass_and_vacuum": true
+    },
+    "single_mode_check": {
+      "rows": [
+        {
+          "q_squared": 0.0,
+          "omega_squared": 0.02,
+          "exact_inverse": 0.09314198420068795,
+          "derivative_approximation": 0.09355543133122163,
+          "remainder": -0.00041344713053368103,
+          "remainder_bound": 0.0004979214984696599
+        },
+        {
+          "q_squared": 0.02,
+          "omega_squared": 0.0,
+          "exact_inverse": 0.12028047489410609,
+          "derivative_approximation": 0.12050230538833494,
+          "remainder": -0.00022183049422882907,
+          "remainder_bound": 0.00031866975902058233
+        },
+        {
+          "q_squared": 0.04,
+          "omega_squared": 0.01,
+          "exact_inverse": 0.11125172282819379,
+          "derivative_approximation": 0.11166011773118716,
+          "remainder": -0.0004083949029933512,
+          "remainder_bound": 0.0006024850131482884
+        },
+        {
+          "q_squared": 0.01,
+          "omega_squared": 0.04,
+          "exact_inverse": 0.07010867655810724,
+          "derivative_approximation": 0.07123980664551718,
+          "remainder": -0.0011311300874099386,
+          "remainder_bound": 0.0012746790360823293
+        }
+      ],
+      "Schur_determinant_residual": 6.938893903907228e-18,
+      "induced_spatial_coefficient": 0.15437497904696237,
+      "time_coefficient": 1.192968723808703,
+      "effective_single_mode_speed_squared": 0.12940404552610632,
+      "light_mass_squared_over_eliminated_diagonal": 0.42527527669789533,
+      "common_mass_scaling_ratios": [
+        0.42527527669789533,
+        0.42527527669789533,
+        0.42527527669789517
+      ],
+      "elimination_requires_homogeneous_source_or_explicit_initial_data": true,
+      "not_a_two_independent_field_completion": true
+    }
+  },
+  "dependency_hashes": {
+    "joint_finite_time_gauge_probe.py": "acd1a47553fb49fc00d59e707f57af103acce1f6c31433ae70263f5e4e4316b6",
+    "joint_matter_energy_moment_control.py": "604aba32b42c466a044eb91c207a889486f2fa18294f254953ab05ddf25725d4",
+    "research_note_548.md": "b7eee7f8080b9892422d5444480603cc088b8b1a1393d37f3e0a98994543eaa2",
+    "research_note_549.md": "33b27324128d04f98f6e795148004fef7c9111d3aea4d3c8fbbfca8670c55797",
+    "research_note_566.md": "c17b8ccae3b65e708c12d59edd07cdb32f3845ce50229d54a9171c7653f0bbc6"
+  },
+  "scope": {
+    "classical_fixed_background_quadratic_interface": true,
+    "not_a_quantum_Gauss_source_or_continuum_limit": true,
+    "extra_s_gradient_and_lattice_scaling_are_explicit_inputs": true,
+    "single_low_energy_induced_propagation_not_excluded": true,
+    "loops_nonminimal_gravity_and_other_backgrounds_not_excluded": true,
+    "no_dimension_GR_or_unified_completion": true
+  }
+}

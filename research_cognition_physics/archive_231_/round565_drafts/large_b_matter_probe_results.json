@@ -1,0 +1,128 @@
+{
+  "status": "preliminary_565_not_completed",
+  "Galerkin_dimension": 144,
+  "radial_modes": 2,
+  "singlet_modes": 3,
+  "class_modes": 4,
+  "initial_source_energy": 4.727039396185159,
+  "radial_fourth_moment_endpoint_correction": 6.000000000000007,
+  "radial_coordinate_square_compression_difference": 0.44918942538307877,
+  "source_dynamics": [
+    {
+      "b": 8.0,
+      "rows": [
+        {
+          "time": 0.2,
+          "state_distance": 0.14032472454452297,
+          "angular_leakage": 0.01936790013486996,
+          "full_H_energy": 4.727039396185155
+        },
+        {
+          "time": 0.6,
+          "state_distance": 0.12760499644476725,
+          "angular_leakage": 0.009327096331239269,
+          "full_H_energy": 4.727039396185158
+        }
+      ],
+      "all_time_leakage_bound": 0.7878398993641932,
+      "smallest_compressed_eigenvalue": 4.567802610857146
+    },
+    {
+      "b": 32.0,
+      "rows": [
+        {
+          "time": 0.2,
+          "state_distance": 0.030816171970507598,
+          "angular_leakage": 0.000867053991253552,
+          "full_H_energy": 4.727039396185155
+        },
+        {
+          "time": 0.6,
+          "state_distance": 0.0587646995324581,
+          "angular_leakage": 0.003095116499084997,
+          "full_H_energy": 4.727039396185155
+        }
+      ],
+      "all_time_leakage_bound": 0.1969599748410483,
+      "smallest_compressed_eigenvalue": 4.6042216449096935
+    },
+    {
+      "b": 128.0,
+      "rows": [
+        {
+          "time": 0.2,
+          "state_distance": 0.006523244744527256,
+          "angular_leakage": 3.8858313316514145e-05,
+          "full_H_energy": 4.7270393961851624
+        },
+        {
+          "time": 0.6,
+          "state_distance": 0.014980527409801934,
+          "angular_leakage": 0.00019989555499815253,
+          "full_H_energy": 4.727039396185163
+        }
+      ],
+      "all_time_leakage_bound": 0.049239993710262074,
+      "smallest_compressed_eigenvalue": 4.6167438885617225
+    },
+    {
+      "b": 512.0,
+      "rows": [
+        {
+          "time": 0.2,
+          "state_distance": 0.0032893659929110197,
+          "angular_leakage": 1.057653246415418e-05,
+          "full_H_energy": 4.727039396185158
+        },
+        {
+          "time": 0.6,
+          "state_distance": 0.001784209230272037,
+          "angular_leakage": 1.5635792566145142e-06,
+          "full_H_energy": 4.727039396185155
+        }
+      ],
+      "all_time_leakage_bound": 0.012309998427565519,
+      "smallest_compressed_eigenvalue": 4.620176274343506
+    }
+  ],
+  "finite_duration_apparatus": [
+    {
+      "b": 16.0,
+      "source_time": 0.25,
+      "tau": 0.2,
+      "g": 1.0,
+      "sigmaQ": 0.5,
+      "pointer_momentum_quadrature_nodes": 20,
+      "joint_state_distance": 0.03473228848187556,
+      "any_compensated_pointer_event_difference_upper": 0.03473228848187556
+    },
+    {
+      "b": 64.0,
+      "source_time": 0.25,
+      "tau": 0.2,
+      "g": 1.0,
+      "sigmaQ": 0.5,
+      "pointer_momentum_quadrature_nodes": 20,
+      "joint_state_distance": 0.029787927512734427,
+      "any_compensated_pointer_event_difference_upper": 0.029787927512734427
+    },
+    {
+      "b": 256.0,
+      "source_time": 0.25,
+      "tau": 0.2,
+      "g": 1.0,
+      "sigmaQ": 0.5,
+      "pointer_momentum_quadrature_nodes": 20,
+      "joint_state_distance": 0.0029698692349567576,
+      "any_compensated_pointer_event_difference_upper": 0.0029698692349567576
+    }
+  ],
+  "pointer_integral_refinement_difference": 2.47198095326695e-16,
+  "angular_cutoff_refinement_difference": 1.1579279202145187e-16,
+  "scope": {
+    "finite_form_compression_only": true,
+    "not_untruncated_dynamical_error_certificate": true,
+    "no_b_dependent_rescaling_of_k_or_W": true,
+    "no_spacetime_or_unification_claim": true
+  }
+}

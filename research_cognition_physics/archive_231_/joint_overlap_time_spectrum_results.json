@@ -1,0 +1,196 @@
+{
+  "round": 612,
+  "tests_run": 3,
+  "failures": 0,
+  "errors": 0,
+  "kernel": {
+    "spatial_momentum": [
+      1.5707963267948966,
+      0.0,
+      0.0
+    ],
+    "pole_energy": 0.881373587019543,
+    "cut_energy": 0.962423650119207,
+    "pole_weight": 0.1464466094067263,
+    "kernel_block_error": 2.2208941604597053e-16,
+    "inverse_scalar_error": 2.7755575615628914e-17,
+    "specified_free_Weyl_block_error": 5.551115123125783e-17,
+    "Fourier_spectral_error": 1.3877787807814457e-17,
+    "times": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "correlation": [
+      0.10270683066964242,
+      0.03452483215951943,
+      0.012931535853544665,
+      0.005050848952388817,
+      0.0020140034975192306,
+      0.000812547473986556,
+      0.00033021454278026285,
+      0.00013484351884688532,
+      5.52468248937534e-05,
+      2.2689198426919778e-05,
+      9.334555698912527e-06,
+      3.845415534270203e-06
+    ],
+    "pole_only_error": [
+      0.04204665888982111,
+      0.009398566312435755,
+      0.002523895767890704,
+      0.0007398632766130661,
+      0.00022833476341677181,
+      7.289926641572159e-05,
+      2.3842223819473094e-05,
+      7.939949197630482e-06,
+      2.6816452314733704e-06,
+      9.159881022249877e-07,
+      3.1579668602205383e-07,
+      1.0972323535637904e-07
+    ]
+  },
+  "positivity": {
+    "rows": [
+      {
+        "k": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "E0": 0.881373587019543,
+        "E1": 0.962423650119207,
+        "hankel": [
+          {
+            "size": 2,
+            "minimum_eigenvalue": 0.001189995332820406,
+            "determinant": 0.0001361930275654337,
+            "spectral_Gram_error": 6.938893903907228e-17
+          },
+          {
+            "size": 3,
+            "minimum_eigenvalue": 9.446364374858894e-06,
+            "determinant": 1.6554008210647804e-09,
+            "spectral_Gram_error": 2.7755575615628914e-17
+          },
+          {
+            "size": 4,
+            "minimum_eigenvalue": 7.17003326972721e-08,
+            "determinant": 1.8349006473744346e-16,
+            "spectral_Gram_error": 2.7755575615628914e-17
+          }
+        ],
+        "continuum_fraction_first_time": 0.40938522409541217
+      },
+      {
+        "k": [
+          0.4,
+          0,
+          0
+        ],
+        "E0": 0.3801926662703689,
+        "E1": 2.6809881773499433,
+        "hankel": [
+          {
+            "size": 2,
+            "minimum_eigenvalue": 0.00018112438188921942,
+            "determinant": 8.426434550614846e-05,
+            "spectral_Gram_error": 2.7755575615628914e-16
+          },
+          {
+            "size": 3,
+            "minimum_eigenvalue": 5.1420173938408875e-08,
+            "determinant": 6.5636794657405134e-12,
+            "spectral_Gram_error": 5.551115123125783e-17
+          },
+          {
+            "size": 4,
+            "minimum_eigenvalue": 1.4577381443958543e-11,
+            "determinant": 1.4991817844007933e-22,
+            "spectral_Gram_error": 5.551115123125783e-17
+          }
+        ],
+        "continuum_fraction_first_time": 0.0019862255466440814
+      }
+    ],
+    "all_finite_Hankel_ranks_proved_analytically": true,
+    "infinite_rank_not_inferred_from_four_by_four_test": true,
+    "zero_momentum_exception_has_no_cut_at_m0_one": true
+  },
+  "resources": {
+    "energy_derivative_error": 3.1035451986127782e-12,
+    "spectral_quadrature_difference": 1.582067810090848e-15,
+    "beta": 0.7,
+    "finite_energy_interval": [
+      1.1624236501192071,
+      1.4624236501192072
+    ],
+    "trace_lower_bounds": [
+      {
+        "orthonormal_vectors": 4,
+        "heat_partial_trace_lower_bound": 1.4370577670372235
+      },
+      {
+        "orthonormal_vectors": 16,
+        "heat_partial_trace_lower_bound": 5.748231068148894
+      },
+      {
+        "orthonormal_vectors": 64,
+        "heat_partial_trace_lower_bound": 22.992924272595577
+      },
+      {
+        "orthonormal_vectors": 256,
+        "heat_partial_trace_lower_bound": 91.9716970903823
+      }
+    ],
+    "finite_positive_approximations": [
+      {
+        "order": 12,
+        "moment_error": 5.182017378344006e-05,
+        "one_particle_heat_trace": 2.055083285739304,
+        "weighted_field_thermal_integral": 0.15012503340803546
+      },
+      {
+        "order": 24,
+        "moment_error": 4.5532783252144604e-08,
+        "one_particle_heat_trace": 3.634831954287215,
+        "weighted_field_thermal_integral": 0.15004815241662703
+      },
+      {
+        "order": 48,
+        "moment_error": 9.423017921506016e-15,
+        "one_particle_heat_trace": 6.793098805392196,
+        "weighted_field_thermal_integral": 0.15004809310845102
+      }
+    ],
+    "spectral_field_weight_not_density_of_states": true,
+    "exact_continuous_cyclic_sector_not_trace_class": true,
+    "no_total_interacting_thermal_state_reconstruction_claim": true
+  },
+  "dependency_hashes": {
+    "research_note_363.md": "033c0be46da62bb4359dd38837a3a83e741619fbaecdef77f0939d8825d98880",
+    "research_note_596.md": "f4dd23d8fde5e49729db5fc14bb54a35eacc1c0818833c85986e314285d6c4d0",
+    "research_note_603.md": "cc0b578680b1cd0dae279a2d7533fc4853772e4821358f17b3f57b4ac47b3fe5",
+    "research_note_605.md": "343ce7eb258a66fe4d202b565e7f9c5d4d05a19bf555a57c72f0057459b4adff",
+    "research_note_611.md": "d3d667baaccf230ae327ea623331ca9085eb29678fa5e90009b544cce75434e0",
+    "joint_chiral_fibre_source.py": "3f25148ddd0b5ad1dd6b67556ee5af3b1a93e7f6410fb5539278e6fd8eb40513",
+    "joint_gapped_link_locality.py": "250e28309f9748f52c74f173982301aa8f7f11e7556fe361bc5e9e7242fecb7a"
+  },
+  "scope": {
+    "free_frozen_massless_same_overlap_kernel": true,
+    "exact_all_time_fixed_cutoff_contract": true,
+    "positive_cyclic_spectral_reconstruction": true,
+    "finite_or_compact_resolvent_ground_state_matching_obstructed": true,
+    "trace_class_heat_conflicts_with_exact_continuous_cyclic_sector": true,
+    "interacting_gauge_SM_and_GR_not_completed": true
+  }
+}

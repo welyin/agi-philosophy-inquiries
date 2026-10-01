@@ -1,0 +1,40 @@
+572入口审计：Gauss密度动量与549非最小几何的共同对象
+2026-10-01。工作推导，未独立终审，不计完成轮次。
+
+一、去重基线
+已重新核读549全文：原构造在无规范场、K_ij=0、j_i=0子部门，以一个共形因子解局部解析Hamiltonian约束；混合径向场空间度量不可省。550—553已处理裸曲率、真空匹配和运行，不能将569势减常数的约定直接搬入。
+571（待冻结）解决同一平直源到精确Gauss图初值，仍没有Einstein约束或时间收敛。
+
+二、可直接合并的成熟几何事实
+以五实分量phi^A=(X的四实分量,s)书写Jordan动能，F=F(|X|^2,s)，Einstein框架目标度量为
+ K_AB=delta_AB/F+3 F_A F_B/(2F^2)。
+任意Higgs规范生成向量k^A满足F_A k^A=0，因此K_AB k^B=k_A/F。
+设p_A=sqrt(gamma) K_AB v^B是密度动量。规范荷密度始终为p_A k^A；规范场电位的规范变换不变，Gauss仍写“荷密度＋协变散度”。
+这意味着571的代数补荷可以用相同密度动量表达，并不因Einstein框架混合径向度量而凭空增加新荷或新物质。此为标准动量映射与框架变换的直接应用，不单独成轮。
+
+三、不能随Gauss一起直接沿用的内容
+物质的物理动能密度是p_A K^{AB}p_B/(2 sqrt(gamma))。
+在Higgs纯角向，K逆为F，系数是F/(2 sqrt(gamma))；原平直图的1/(2v)不能在改变F与几何后原封照搬。
+四维Yang–Mills作用的Weyl变换无额外F因子，但空间电能仍含gamma_ij/sqrt(gamma)。例如gamma=psi^4 delta时电能权按psi^-2、物质密度动能按psi^-6并带K逆变化。
+若已给定固定正F、正度规，且它们与逆在所研究紧域一致有界，则相应动能范数与571范数等价，初值修正的二阶量级可以继承。这不产生该几何，也不自动解Einstein约束，更不保证退化F或几何极限的一致常数。
+
+四、需要产生实际新证据的下一问题
+同一带非零规范电磁应力的来源通常有非零动量流j_i；549的K=0、j=0捷径不适用。须在同尺度势和F下共同解Hamiltonian与动量约束，或找到明确不相容性。
+可审计成熟共形约束方法对非Abelian/Higgs密度源的适用条件，优先辨认：既有任意源存在定理是否直接覆盖本模型，还是非最小标量、绝对真空项或拓扑使前提缺失。不得将它与571的周期初值无说明地改成另一个局部或开放边界来源。
+另一并列缺口是格点Hamilton流的受控时间连接；若某成熟定理可直接承接应优先映射，不能把“初始约束精确＋能量接近”冒充此定理。
+
+五、框架审查补充（工作命题的准确范围）
+上述“相同密度动量”必须明确为一次指定的模型匹配：在Einstein框架中选定p_A和规范电密度，再解空间几何；不能把它误写为Jordan与Einstein的完整标量canonical动量天然不变。框架变换一般会把标量动量与引力迹动量混合；由于F_A k^A=0，规范荷对这个径向混合不敏感，并不意味着所有参考动量也不变。
+若采用平坦共形种子gamma=psi^4 delta、Einstein框架常平均曲率tau，令无迹外曲率A_ij=psi^-2 Atilde_ij，则动量约束要求
+ partial^j Atilde_ij = -M_i，
+ M_i=Re<p_X,D_iX>+p_s partial_i s+sum_j E^j·F_ij+sum_j E0^j f0_ij。
+这里所有p、E都是固定coordinate密度；M没有psi显式依赖。平坦周期边界的平移共形Killing给必要条件∫M_i=0。
+使用连续Gauss积分分部，可把该总量写成canonical空间平移动量∫[Re<p_X,partial_iX>+p_s partial_i s+sum_j E^j·partial_i a_j+sum_j E0^j partial_i a0_j]。
+571实际来源的值为|Omega|(.001 h_star+.0028,.001 h_star,0)，因此不能原样放入这一平坦种子／CMC分支。独立差分与协变/普通两式的入口复算见momentum_entry_probe.py及同名_results.json，尚未作为完成轮次。
+可用原h、s的径向反流去抵消总动量且不改Gauss；但这会有限改变来源，不能称为571保真映射。改变种子几何或放开CMC则是不同待核路线；该障碍不否定一般Einstein几何，不签收Hamiltonian约束已解。
+
+六、已定位的成熟主接口
+Isenberg–Maxwell，A Phase Space Approach to the Conformal Construction of Non-Vacuum Initial Data Sets in General Relativity，2106.15027v2：
+https://arxiv.org/html/2106.15027v2
+已核读Theorem 4.4、§5.2（特别是Gauss前提）、§6.3。作者以物质canonical相空间统一缩放；CMC的紧致动量方程对共形Killing方向另有正交条件。该接口及其一般障碍直接继承，不作为项目原创定理。
+进一步映射应在Einstein框架核物质Lagrangian微分同胚不变、无度规导数、全物质约束成立等前提；Jordan F R不能不经变换直接塞进这个物质类别。文献应力与canonical动量的归一和本项目不完全相同，具体模型仍用本项目独立变分／积分分部式确定系数。此处不声称其存在定理已覆盖原周期来源或完成Hamiltonian约束。

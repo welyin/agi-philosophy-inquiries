@@ -1,0 +1,226 @@
+{
+  "round": 548,
+  "tests_run": 7,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "same_Higgs_gauge_orbit_and_raw_component_coordinate_counterexample",
+    "exact_zero_derivative_invariant_chain_rule_has_rank_at_most_two",
+    "exact_on_shell_Cauchy_two_jets_yield_nonzero_determinant_for_same_potential_class",
+    "three_frozen_vacua_and_consistent_zero_gauge_current_radial_subsector",
+    "independent_menu_differences_and_affine_coordinate_covariance_with_metric",
+    "same_matter_stress_and_fixed_calibration_precision_cost_not_Einstein_solution",
+    "vacuum_homogeneity_and_absent_singlet_are_distinct_scope_counterexamples"
+  ],
+  "exact_cauchy_jet_certificates": [
+    {
+      "epsilon": "1/2",
+      "determinant": "-1/16",
+      "excess_energy": "1/4"
+    },
+    {
+      "epsilon": "1/4",
+      "determinant": "-1/1024",
+      "excess_energy": "1/16"
+    },
+    {
+      "epsilon": "1/8",
+      "determinant": "-1/65536",
+      "excess_energy": "1/64"
+    },
+    {
+      "epsilon": "1/16",
+      "determinant": "-1/4194304",
+      "excess_energy": "1/256"
+    }
+  ],
+  "gauge_orbit_max_error": 9.00185159822572e-16,
+  "same_parameter_examples": [
+    {
+      "synthetic_top_target": 0.8,
+      "scalar_parameters": {
+        "top_target": 0.8,
+        "h0": 1.0,
+        "s0": 0.6825741680270843,
+        "a": 0.289387341560651,
+        "b": 0.2634474547330215,
+        "lh": 0.223003341874606,
+        "p": 0.14248321913408288,
+        "ls": 0.259631443868146
+      },
+      "stationary_residual": [
+        -5.551115123125783e-17,
+        9.472619466975366e-18
+      ],
+      "reference_jacobian": [
+        [
+          0.25,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.25,
+          0.0,
+          0.0
+        ],
+        [
+          -2.7755575615628914e-17,
+          0.0,
+          -0.125,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.125
+        ]
+      ],
+      "determinant": -0.0009765625000000009
+    },
+    {
+      "synthetic_top_target": 0.9,
+      "scalar_parameters": {
+        "top_target": 0.9,
+        "h0": 1.0,
+        "s0": 0.8957536381939692,
+        "a": 0.3324159516868777,
+        "b": 0.3273827917665609,
+        "lh": 0.24130112516357463,
+        "p": 0.11355647194724372,
+        "ls": 0.266491891766205
+      },
+      "stationary_residual": [
+        8.326672684688674e-17,
+        0.0
+      ],
+      "reference_jacobian": [
+        [
+          0.25,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.25,
+          0.0,
+          0.0
+        ],
+        [
+          4.163336342344337e-17,
+          0.0,
+          -0.125,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.125
+        ]
+      ],
+      "determinant": -0.0009765625000000009
+    },
+    {
+      "synthetic_top_target": 1.0,
+      "scalar_parameters": {
+        "top_target": 1.0,
+        "h0": 1.0,
+        "s0": 1.0749450695168434,
+        "a": 0.361048146495586,
+        "b": 0.39542626283501114,
+        "lh": 0.2681071054046434,
+        "p": 0.08043313362437154,
+        "ls": 0.2726016854896988
+      },
+      "stationary_residual": [
+        0.0,
+        0.0
+      ],
+      "reference_jacobian": [
+        [
+          0.25,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.25,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -0.125,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.125
+        ]
+      ],
+      "determinant": -0.0009765625000000009
+    }
+  ],
+  "stationary_max_error": 8.326672684688674e-17,
+  "gauge_current_max_error": 0.0,
+  "finite_difference_error": 3.913341872774367e-12,
+  "affine_covariance_error": 5.551115123125783e-17,
+  "fixed_calibration_resource_examples": [
+    {
+      "epsilon": 0.5,
+      "excess_energy_density": 0.25,
+      "minimum_singular_value": 0.5,
+      "inverse_gain": 2.0
+    },
+    {
+      "epsilon": 0.25,
+      "excess_energy_density": 0.0625,
+      "minimum_singular_value": 0.125,
+      "inverse_gain": 8.0
+    },
+    {
+      "epsilon": 0.125,
+      "excess_energy_density": 0.015625,
+      "minimum_singular_value": 0.03125,
+      "inverse_gain": 32.0
+    },
+    {
+      "epsilon": 0.0625,
+      "excess_energy_density": 0.00390625,
+      "minimum_singular_value": 0.0078125,
+      "inverse_gain": 128.0
+    }
+  ],
+  "dependency_hashes": {
+    "research_note_543.md": "9a93e3035d6e890237e3ef7fcc837d6991eb2aea234a5e1577c22f076459dcd1",
+    "research_note_544.md": "de00614fcda09221c489b5e6f9b016adfac9126b5f074141960b7f221c96dbc5",
+    "research_note_546.md": "a7bf5dc7840d349f952304a65ae864fdd3a30ac9ca002b818b97b1e85540f41a",
+    "joint_top_boundary_identifiability_results.json": "2167bed51704e891987ead836b4a611bc7da392f1c6b88e9a5f7740e03f9e5cc",
+    "research_round_547_checks.json": "062ea8dc8fdc0562fe181a223f8d452adb760890cfb044ba27210c8d8bd23ba6",
+    "material_reference_geometry_review.md": "595a6260cd3c2340bac3ace5e97bf603d50a0fa43ee68505211bc4d4fab165c9",
+    "joint_condition_compression_table.md": "82b3ac145f0605fa2e3b8b40096f0f44253ae6eb824fc0af8ba3d8f567ba7a28"
+  },
+  "scope": {
+    "classical_matter_on_given_four_dimensional_Minkowski": true,
+    "same_Higgs_and_explicit_singlet_content": true,
+    "local_on_shell_existence_uses_standard_PDE_theorem": true,
+    "numerics_check_jets_not_full_PDE_solution": true,
+    "zero_derivative_obstruction_is_menu_specific": true,
+    "derivative_menu_uses_given_metric": true,
+    "local_reference_fields_not_actual_quantum_instruments": true,
+    "initial_state_preparation_is_input": true,
+    "finite_excess_energy_not_total_vacuum_energy": true,
+    "gain_uses_fixed_dimensionless_calibration": true,
+    "coupled_Einstein_solution": false,
+    "unique_dimension_selected": false,
+    "completed_unification": false
+  }
+}

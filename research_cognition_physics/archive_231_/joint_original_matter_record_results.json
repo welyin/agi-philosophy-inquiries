@@ -1,0 +1,125 @@
+{
+  "round": 577,
+  "tests_run": 3,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "endpoint_and_gauge_check",
+    "radial_quantum_comparison_check",
+    "inherited_operator_check"
+  ],
+  "evidence": {
+    "endpoint_and_gauge_check": {
+      "vacuum_response_coefficient": -0.032306118291183905,
+      "formula": -0.0323061182911839,
+      "mixed_diagonal_Hessian_error": 1.1102230246251565e-16,
+      "off_diagonal_finite_difference_errors": [
+        3.742763488023826e-08,
+        3.3700739976438854e-09
+      ],
+      "gauge_covariance_error": 5.204170427930421e-17,
+      "nearby_sample_range": [
+        -0.03295566738190864,
+        -0.031588475211802206
+      ],
+      "preparation_gradient_norm": 0.8002939200280178,
+      "strict_sign_neighbourhood_proved_by_continuity_not_sampling": true
+    },
+    "radial_quantum_comparison_check": {
+      "rows": [
+        {
+          "theta": 0.0,
+          "norm": 1.0000000000000002,
+          "probability_zero": 0.6297788518868823,
+          "first": -0.0,
+          "second": -0.5150107641704417,
+          "third": 0.0,
+          "energy": 1.1857123866835928
+        },
+        {
+          "theta": 0.2,
+          "norm": 1.0000000000000002,
+          "probability_zero": 0.6297788518868823,
+          "first": 1.3381278590118682e-16,
+          "second": -0.5150107641704417,
+          "third": -0.005810610622428114,
+          "energy": 1.2000411437940048
+        },
+        {
+          "theta": -0.2,
+          "norm": 1.0000000000000002,
+          "probability_zero": 0.6297788518868823,
+          "first": -1.3381278590118682e-16,
+          "second": -0.5150107641704417,
+          "third": 0.005810610622428114,
+          "energy": 1.2000411437940048
+        }
+      ],
+      "first_two_derivative_difference": 1.3381278590118682e-16,
+      "initial_reader_probability_difference": 0.0,
+      "opposite_phase_energy_difference": 0.0,
+      "common_extra_energy": 0.014328757110412038,
+      "third_derivative_of_probability_difference": -0.002905305311214057,
+      "continuum_prediction_for_same_radial_quadrature": -0.003412942575778519,
+      "sampled_support_coefficient_range": [
+        -0.06008372143188637,
+        -0.012665201920156239
+      ],
+      "effect": "E_plus=1/2+sin(s_B)/4",
+      "radial_diagnostic_not_full_gauge_state_or_time_simulation": true
+    },
+    "inherited_operator_check": {
+      "original_entry_results_reproduced": true,
+      "rows": [
+        {
+          "n": 13,
+          "hbar": 0.07,
+          "theta": 0.2,
+          "first_derivative": -1.5264360554102245e-16,
+          "second_derivative": -0.39953403277641036,
+          "third_derivative": -0.004778525442895911,
+          "predicted_third_derivative": -0.006825753324926066,
+          "relative_third_derivative_error": 0.2999270241065046,
+          "phase_preparation_energy": 0.011878833462244165,
+          "continuum_preparation_energy": 0.016924889631470125,
+          "Hermiticity_error": 2.6712630969678932e-17
+        },
+        {
+          "n": 19,
+          "hbar": 0.07,
+          "theta": 0.2,
+          "first_derivative": 1.3381278590118682e-16,
+          "second_derivative": -0.5150107641704417,
+          "third_derivative": -0.005810610622428114,
+          "predicted_third_derivative": -0.006825885151557038,
+          "relative_third_derivative_error": 0.14873888244330213,
+          "phase_preparation_energy": 0.014328757110412038,
+          "continuum_preparation_energy": 0.016925209501834675,
+          "Hermiticity_error": 2.2209399194228505e-16
+        },
+        {
+          "n": 27,
+          "hbar": 0.07,
+          "theta": 0.2,
+          "first_derivative": -0.0,
+          "second_derivative": -0.5848910853506585,
+          "third_derivative": -0.006309027476008471,
+          "predicted_third_derivative": -0.006825903655446246,
+          "relative_third_derivative_error": 0.07572274756989429,
+          "phase_preparation_energy": 0.015575594315182517,
+          "continuum_preparation_energy": 0.01692525648211138,
+          "Hermiticity_error": 0.0
+        }
+      ],
+      "coarse_grid_not_exact_continuum_or_full_Gauss_proof": true
+    }
+  },
+  "dependency_hashes": {
+    "joint_curved_quantum_source.py": "cf6aec9461174f41985b706c1bae776787b198ab77d9e42dfe8057764795775c",
+    "joint_pointer_matter_compatibility.py": "e679fad365ce106cbd2f3fcdb905220d2ba64c163a52fd799f13600cddf11606",
+    "round577_drafts/radial_operator_entry_probe.py": "40bbe2bc4c22028719fc8662b5bfc2ed3c8bcf107dcda18cca8620aa3588a7c8",
+    "round577_drafts/radial_operator_entry_probe_results.json": "7cec859e6bb2b3fe34bd408cb23d1c2a12bdb15f81f17bd6932c5a149e9d6bbe",
+    "research_round_576_checks.json": "1e55418a900ca5d9828b82f7e8d91110251dc8b8f4f4daeb9bee4def67c99592"
+  },
+  "scope": "fixed finite graph and fixed geometry, original 574 matter Hamiltonian; analytic exact Gauss compact sources, equal initial reader statistics and equal preparation energy, different bounded short-time record probabilities at any fixed hbar; numerical radial diagnostic only; no added pointer interaction, no autonomous preparation/terminal readout or quantum geometry"
+}

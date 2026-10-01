@@ -1,0 +1,43 @@
+第554轮独立终审
+日期：2026-09-30
+审查者：/root/macro_next_gap_audit
+
+结论：通过，无剩余数学或范围阻断。已核当前正式正文12式、代码、完整保存JSON、条件账及未编号真空入口。三处终审修订已确认，可按下列SHA冻结。只新增此审查，不编辑科学文件或导航。
+
+一、实际复算及修订闭合
+使用既有Python -B -X utf8执行 joint_matter_reference_quantum_readout.py 默认只读入口，run()与保存的完整JSON严格相等；6组通过，0 failures、0 errors。标定残差7.105427357601002e-15，独立Hermite积分协方差差1.8189894035458565e-12。没有跑递归历史或覆盖结果。
+另独立运行已存在结果的 vacuum_matching_probe.py，只读比较完整JSON通过；其3项仍是未编号接口诊断，不并入554科学检查数。独立梯度差最大4.622101312801163e-13。
+终审发现并由主代理修正：式(6)种子须零均值；§8径向正片概率只属于所选读取时刻，不是沿H所有时刻；式(8)C_rec的LaTeX换行损坏。当前正文已明确零均值种子、读取时刻且使用保守上界4.08e-7，并修复两个C_rec记号。代码及JSON未变，无需重复数值。
+
+二、解析与代码核查
+1. 有限格点的canonical结构明确；差分梯度只含q，与平均q对易，直接得[Qbar,Abar]=-2i hbar Ptot/V^2。准备均值条件给Robertson标定下界hbar/(2V epsilon^2)。该界限于共同算符域及有限所需矩，没有将有限平均H错误等同A平方矩有限。两场菜单、任意实差分矩阵与所有动量模式均纳入。
+2. 非均匀动能遗漏式(5)是正交分解恒等式。实际平方平均与均匀模平方不相同；没有用单模式计算假称局域复合场的抹平。八点立方格差分对所给线性/多线性Cauchy初值型精确。四参数响应矩阵为J，但正文正确限定为Cauchy准备参数，不把它们签收为有限网格的物理时空坐标。
+3. 零均值Gaussian相空间协变POVM正且归一，源与仪器初态独立。Gaussian输出的Sigma=Gamma+T、二次后处理的均值和完整协方差公式正确；只减Tr(A T)后保留源Tr(A Gamma)偏差。MSE为方差加偏差平方，未免费扣除未知来源资料。
+4. 原算符对称协方差的Moyal修正+hbar^2 Tr(A Omega B Omega)/2符号正确，例如q^2和p^2交叉项给负修正。记录协方差来自真实经典输出，不含该项，代码和正文清楚区分。Sigma+i hbar Omega>=0与正二次方差项给Gaussian记录乘积下界hbar/(V epsilon^2)；此常数不是所有测量算法的普遍误差界。
+5. 同544索引2的L、C和V0使完整quartic势非负。数例的源能量包含两个场的动能、离散梯度与quartic势；其Gaussian源不是相互作用真空，也不假设时间演化保持Gaussian。数例能量函数只用于已给无跨场位置协方差的对角源，所采用的四阶矩分解适用。辅助能量256是明示振子种子的预算，并未冒称全部装置能源。径向正片只作局部解释，没有把Gaussian严格限制在半轴。
+
+三、尾反例及有限记录量词
+正交模式上权重c/M^2的正负动量位移混合保持均匀模整个约化态、全部位置分布、完整二阶协方差及全H平均能量；任何仅依位置的梯度和quartic势均不受位移改变。第四矩含cM^2，方差公式(11)正确。真实相空间记录的位移分支均值差M^2/(Nv^2)，全方差下界随M^2发散。因此仅二阶资源不能保证该未裁剪平方后处理的统一MSE，即使恒定源偏差另被校准。这不否定有偏剪裁、加强来源条件或其它测量，并未声称高动量尾仍在完整548/549受控部门内。
+有限记录证书是给定Gaussian来源、指定锚点的一次末读：Markov加并集界使用完整MSE，不需四通道独立。66个宽eta区间加两个溢出符号=68种/通道，按每通道7位共28位；并不声称存储最优。epsilon=16时r=0.6865472477437192，量化后界0.6972745484897148、成功率至少0.95正确。其它epsilon维持位数靠扩大箱宽，不是固定精度下的免费压缩。epsilon>1/2仅属此有限模型，不扩充548小扰动定理。
+
+四、前置真空审查与来源
+未编号入口使用完整离壳径向Hessian的本征值梯度，加同一规范/费米子谱；形式delta_x=-2L^-1 grad W、delta_V0=-W正确。树Goldstone处势值和一阶导数的零极限可用，二阶项3 ln|G|/(32 pi^2)乘(lambda_h,p)外积确为秩一红外发散；实部差分不构成稳定判据。固定mu的小kappa修正须容许kappa^2(1+|ln kappa|)，相对梯度界是额外条件。该审查没有消除真空匹配自由度，也未把18%形式修正冒称严格扰动误差包络。
+核读Werner quant-ph/0405184 §1及§3的准备/测量区别与协变POVM；Bullock–Busch 1405.5840的联合探针框架与这里的独立源输入相容。没有挪用其不同误差定义的常数。项目增量是同物质导数菜单的具体接口和四阶来源障碍，非重新发现Robertson或Gaussian矩公式。
+
+五、最终四件科学文件SHA256
+research_note_554.md
+bf27815318345365c621a99b9ed5e6264c7eb2c1960021c13e14bc4bcbff88ef
+joint_matter_reference_quantum_readout.py
+81ad0bfb69e097a0a0ec7bf597ccd34c1c0cabd7bce9e6cdfbcf6fdba934734e
+joint_matter_reference_quantum_readout_results.json
+4ca7a0f6477f8d269a5cb09239ef9af5408b80b42a960b2f6d855dd2abaab69e
+unified_physics_condition_ledger_554.md
+8d5339e104c1e6131569634382467556c37b50a1ccdde9709642c821cdff72de
+
+未编号入口证据SHA256：
+vacuum_matching_scope_review.md
+7fc51b84bc222279cf781881e131f708d30c934e058f86a9b7dc98e46082a02b
+vacuum_matching_probe.py
+cdcef2fddc4036e872e9fbb1bab21ef2bb40e3d531f85a2d28ac83fb4e94240c
+vacuum_matching_probe_results.json
+9243f6e6ba526773ab6a68e4a031870c19f250565cabe3ffe176f483a042ae4a

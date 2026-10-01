@@ -1,0 +1,253 @@
+{
+  "round": 591,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "evidence": {
+    "inherited_confinement_check": {
+      "entry_exactly_reproduced": true,
+      "inherited_entry": {
+        "status": "591 gapped-source entry; not a completed numbered round",
+        "checks_passed": true,
+        "inherited_potential_constants": {
+          "a": 0.0057230878287324784,
+          "beta": 1.6329931618554523,
+          "rho0": 2.2676109428557756
+        },
+        "declared_geometry_family": {
+          "N": 8,
+          "log_matrix_amplitude": 0.2,
+          "uniform_node_volume_lower": 0.42855310668807917
+        },
+        "illustrative_energy_budget": 1000.0,
+        "nonempty_budget_sector_not_numerically_certified": true,
+        "confinement_rows": [
+          {
+            "requested_escape_bound": 0.1,
+            "target_geodesic_radius": 9.3208766141386,
+            "certified_escape_bound": 0.10000000000000026,
+            "F_boundary_threshold": 0.003958015229756419
+          },
+          {
+            "requested_escape_bound": 0.01,
+            "target_geodesic_radius": 10.730916255932192,
+            "certified_escape_bound": 0.010000000000000016,
+            "F_boundary_threshold": 0.0012524820135182164
+          },
+          {
+            "requested_escape_bound": 0.001,
+            "target_geodesic_radius": 12.140955897725783,
+            "certified_escape_bound": 0.0010000000000000005,
+            "F_boundary_threshold": 0.00039615441574394737
+          }
+        ],
+        "scalar_inverse_gap_inequality": [
+          {
+            "power": 1,
+            "max_scalar_ratio": 1.0
+          },
+          {
+            "power": 2,
+            "max_scalar_ratio": 0.9999999999999999
+          },
+          {
+            "power": 3,
+            "max_scalar_ratio": 0.9999999999999999
+          },
+          {
+            "power": 5,
+            "max_scalar_ratio": 1.0
+          }
+        ],
+        "actual_ground_energy_not_computed": true,
+        "actual_gap_not_computed": true,
+        "adiabatic_process_error_not_yet_proved": true,
+        "dependency_hashes": {
+          "research_note_579.md": "8444240ebb9252a8cdbbb02b1f1fd35e098cce2dd2a8857ee01b81a0ea3faf99",
+          "round579_drafts/residual_energy_entry_results.json": "2465d18d136a290233277ebf01a4fd5c85313032db612ea4e1d84271d866e597",
+          "research_note_589.md": "b1efa5d01e9d5caf80f9fbcff3261ed3fe1a0190a514af1a10624a555e30ce97",
+          "research_note_590.md": "fe7192aa49d28accd53481278845c2dd783095373d060d3bfc88999f374420e8",
+          "joint_full_spatial_metric.py": "b9bbe239b920ccef4efa37110b53f0d8acd87f4053fe5444fadc5ffc05103720"
+        }
+      },
+      "full_gap_is_analytic_not_numerically_estimated": true
+    },
+    "original_contact_check": {
+      "original_full_classical_Gauss_source": true,
+      "contact_coefficient": 951.4606708348517,
+      "finite_difference_rows": [
+        {
+          "step": 0.02,
+          "relative_contact_error": 0.0007102748000708327
+        },
+        {
+          "step": 0.01,
+          "relative_contact_error": 0.00017750968540326635
+        },
+        {
+          "step": 0.005,
+          "relative_contact_error": 4.437373511792378e-05
+        }
+      ],
+      "ground_E0_hessian_not_computed": true,
+      "contact_is_not_ground_energy_hessian": true
+    },
+    "resolvent_remainder_check": {
+      "exact_rational_kernel_rows": [
+        {
+          "x": "1/10",
+          "exact_remainder": "1/9900",
+          "uniform_bound": "1/6400"
+        },
+        {
+          "x": "1/5",
+          "exact_remainder": "1/600",
+          "uniform_bound": "1/400"
+        },
+        {
+          "x": "2/5",
+          "exact_remainder": "16/525",
+          "uniform_bound": "1/25"
+        },
+        {
+          "x": "3/5",
+          "exact_remainder": "81/400",
+          "uniform_bound": "81/400"
+        }
+      ],
+      "inverse_gap_scalar_bounds": [
+        {
+          "power": 1,
+          "exact_bound": "9"
+        },
+        {
+          "power": 2,
+          "exact_bound": "30"
+        },
+        {
+          "power": 3,
+          "exact_bound": "100"
+        },
+        {
+          "power": 5,
+          "exact_bound": "10000/9"
+        }
+      ],
+      "low_frequency_error_is_linear_response_only": true,
+      "numerical_ground_spectrum_used": false
+    },
+    "record_escape_check": {
+      "rows": [
+        {
+          "nodes": 48,
+          "packet_results": {
+            "fine": {
+              "survival": 0.9997155082397742,
+              "escape": 0.00028449176022582456,
+              "sum_kraus_variances": 0.00028449176022532496
+            },
+            "direct_parity": {
+              "survival": 0.999979272930755,
+              "escape": 2.07270692450523e-05,
+              "sum_kraus_variances": 2.0727069243942076e-05
+            }
+          }
+        },
+        {
+          "nodes": 80,
+          "packet_results": {
+            "fine": {
+              "survival": 0.9997155082397636,
+              "escape": 0.0002844917602363717,
+              "sum_kraus_variances": 0.00028449176023839784
+            },
+            "direct_parity": {
+              "survival": 0.9999792729307563,
+              "escape": 2.072706924372003e-05,
+              "sum_kraus_variances": 2.072706924460821e-05
+            }
+          }
+        },
+        {
+          "nodes": 128,
+          "packet_results": {
+            "fine": {
+              "survival": 0.9997155082397644,
+              "escape": 0.0002844917602355945,
+              "sum_kraus_variances": 0.0002844917602362329
+            },
+            "direct_parity": {
+              "survival": 0.999979272930757,
+              "escape": 2.0727069243053897e-05,
+              "sum_kraus_variances": 2.0727069242387763e-05
+            }
+          }
+        }
+      ],
+      "wavefunction_is_original_compact_Gauss_packet": true,
+      "packet_not_claimed_to_be_ground_state": true,
+      "strict_ground_escape_is_proved_using_ground_positivity": true
+    },
+    "actual_record_force_check": {
+      "rows": [
+        {
+          "instrument": "fine",
+          "original_injection": 0.06403886186800099,
+          "conformal_source_jump": -0.38423317120800593,
+          "derivative_errors": [
+            0.00023058140346426947,
+            5.763756931170816e-05,
+            1.4408906019003354e-05
+          ]
+        },
+        {
+          "instrument": "direct_parity",
+          "original_injection": 0.004678521647380272,
+          "conformal_source_jump": -0.028071129884281634,
+          "derivative_errors": [
+            1.6845709872429643e-05,
+            4.21085896688822e-06,
+            1.0526792132356522e-06
+          ]
+        }
+      ],
+      "original_packet_not_ground": true,
+      "exact_identity_holds_on_any_finite_form_energy_state": true,
+      "postmeasurement_source_not_replaced_by_vacuum_source": true
+    },
+    "adm_signature_check": {
+      "ADM_metric_velocity_form_eigenvalues": [
+        -1.8536362535906916,
+        0.7623256954102431,
+        0.770721657303648,
+        0.9534911090564069,
+        1.0492264352206269,
+        1.0913105581804485
+      ],
+      "conformal_value": -6.0,
+      "actual_coordinate_pullback_eigenvalues": [
+        -2.000000000021089,
+        0.999999999976965,
+        1.000000000073441,
+        1.0007630949480588,
+        1.0037794540045595,
+        1.0079552487839083
+      ],
+      "ground_induced_inertia_PSD_is_analytic": true,
+      "excludes_only_unconstrained_six_component_direct_identification": true,
+      "constrained_GR_not_excluded": true
+    }
+  },
+  "dependency_hashes": {
+    "research_note_579.md": "8444240ebb9252a8cdbbb02b1f1fd35e098cce2dd2a8857ee01b81a0ea3faf99",
+    "research_note_588.md": "a3e0f46d8f183ab38def9befa79e81eee742e6d5ab9e728e45cef2a6191df924",
+    "research_note_589.md": "b1efa5d01e9d5caf80f9fbcff3261ed3fe1a0190a514af1a10624a555e30ce97",
+    "research_note_590.md": "fe7192aa49d28accd53481278845c2dd783095373d060d3bfc88999f374420e8",
+    "joint_full_spatial_metric.py": "b9bbe239b920ccef4efa37110b53f0d8acd87f4053fe5444fadc5ffc05103720",
+    "joint_geometry_work_noise.py": "d4fbcdc46fb208b4cc63d02e34e7aac9ffab4304c6bdcc4dd98ba7ce805afff6",
+    "joint_record_source_compression.py": "ac4f9e5720d3d11c0200c6c76a0bf9e95579ce401b5f6824b3ee737a9eb70f3c",
+    "round591_drafts/gapped_source_entry.py": "6b063e5ed85410964326ead42e8c528d37c1d78ad3d0d97bc33b03c04b565289",
+    "round591_drafts/gapped_source_entry_results.json": "8c47abe719b3c58f4d8eb37edb70cc63a240dcb889688101179aba4cd518c0f7"
+  },
+  "scope": "Original full finite-graph model. Analytic compact resolvent, unique positive Gauss ground, and convergent subgap linear geometric response. Actual read instruments excite the ground. Positive induced parameter inertia is not unreduced ADM inertia. No numerical full spectrum, nonlinear adiabatic error, fixed-hbar continuum, or Einstein derivation."
+}

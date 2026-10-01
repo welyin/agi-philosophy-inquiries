@@ -1,0 +1,146 @@
+{
+  "round": 580,
+  "tests_run": 7,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "inherited_potential",
+    "covariant_trace",
+    "derivative_structures",
+    "frozen_frame_check",
+    "periodic_nonclosure",
+    "four_gradient_variation",
+    "curvature_gradient_variation"
+  ],
+  "evidence": {
+    "inherited_potential": {
+      "vacuum": [
+        0.0,
+        0.6654429655855137,
+        0.0,
+        0.0,
+        0.545863690226873
+      ],
+      "full_five_field_hessian_eigenvalues": [
+        6.218506819450019e-10,
+        6.218506819450019e-10,
+        6.218506840327843e-10,
+        0.0468385114491407,
+        0.13805672781333583
+      ],
+      "finite_step_change": 3.608161616708294e-09,
+      "angular_modes_not_claimed_physical_particles": true
+    },
+    "covariant_trace": {
+      "direct": 0.09731158725496344,
+      "invariant": 0.09731158725496339,
+      "error": 5.551115123125783e-17,
+      "basis_change_error": 0.0
+    },
+    "derivative_structures": {
+      "S": 1.5189134438060174,
+      "Q": 1.3550443795867426,
+      "four_gradient_coefficient": 0.11054149035437137,
+      "rank_one_coefficient": 0.013338888888888885,
+      "scaled_gradient_fit": 0.11054149035437148,
+      "constant_mass_shift_fit": 0.110541490354372,
+      "R_gradient_cross": -0.16876816042289083,
+      "expected_R_gradient_cross": -0.16876816042289083,
+      "heat_kernel_a4_density_without_overall_factor_not_Gamma_pole_or_finite_matching": true
+    },
+    "frozen_frame_check": {
+      "deltaF": -0.004487999444656686,
+      "fixed_J_delta_E": -0.0023916399427615464,
+      "fixed_E_delta_J": 0.0012744969526728642,
+      "error": 2.769457840140488e-12
+    },
+    "periodic_nonclosure": {
+      "amplitude": 0.24,
+      "rows": [
+        {
+          "n": 1,
+          "four_gradient_integral": 0.000434293768432253,
+          "analytic_integral": 0.000434293768432253,
+          "example_potential_integral": 6.374364647367051,
+          "example_kinetic_integral": 0.18356149945736558
+        },
+        {
+          "n": 2,
+          "four_gradient_integral": 0.006948700294916048,
+          "analytic_integral": 0.006948700294916048,
+          "example_potential_integral": 6.374364647367051,
+          "example_kinetic_integral": 0.7342459978294624
+        },
+        {
+          "n": 3,
+          "four_gradient_integral": 0.03517779524301248,
+          "analytic_integral": 0.03517779524301249,
+          "example_potential_integral": 6.374364647367051,
+          "example_kinetic_integral": 1.6520534951162906
+        },
+        {
+          "n": 5,
+          "four_gradient_integral": 0.2714336052701581,
+          "analytic_integral": 0.2714336052701581,
+          "example_potential_integral": 6.374364647367051,
+          "example_kinetic_integral": 4.5890374864341394
+        }
+      ],
+      "third_frequency_residual_after_two_parameter_fit": 0.01737175073729011,
+      "analytic_no_absorption_holds_for_arbitrary_fixed_U_and_K": true,
+      "off_shell_test_family_not_high_frequency_physical_prediction": true
+    },
+    "four_gradient_variation": {
+      "rows": [
+        {
+          "case": 0,
+          "analytic": -0.007718808986498063,
+          "finite_difference": -0.0077188090001709805,
+          "error": 1.3672917832663334e-11,
+          "four_dimensional_trace": -3.469446951953614e-18
+        },
+        {
+          "case": 1,
+          "analytic": 0.05082215110896789,
+          "finite_difference": 0.050822151206365844,
+          "error": 9.73979508156475e-11,
+          "four_dimensional_trace": -1.3877787807814457e-17
+        },
+        {
+          "case": 2,
+          "analytic": 0.015921141742269253,
+          "finite_difference": 0.015921141759741436,
+          "error": 1.747218342229573e-11,
+          "four_dimensional_trace": -3.9898639947466563e-17
+        }
+      ],
+      "definition": "V_mn=2/sqrt(g) delta I4/delta g^mn; Euclidean"
+    },
+    "curvature_gradient_variation": {
+      "conformal_metric_variation": {
+        "direct": 11.400211421346638,
+        "finite_difference": 11.400211421347047,
+        "from_tensor_trace": 11.400211421346638,
+        "error": 4.085620730620576e-13,
+        "incorrect_value_if_metric_dependence_of_S_is_omitted": 11.392312703433277
+      },
+      "flat_background": {
+        "action_value": 0.0,
+        "nonzero_variation": 54.28672105403163,
+        "exact_variation": 54.286721054031624,
+        "heat_kernel_mixed_coefficient": -0.1111111111111111
+      },
+      "not_a_Lorentz_pressure_or_solved_Einstein_system": true
+    }
+  },
+  "dependency_hashes": {
+    "joint_curved_quantum_source.py": "cf6aec9461174f41985b706c1bae776787b198ab77d9e42dfe8057764795775c",
+    "research_note_553.md": "bf352b5705e660cff91565a6da440eeb0ba1d405a2de4285ea821234faffbfdf",
+    "research_note_574.md": "23d72d666f593f845577712e761ab00dec1d10a56955b7da5fbb22a5ca68ef19",
+    "research_note_579.md": "8444240ebb9252a8cdbbb02b1f1fd35e098cce2dd2a8857ee01b81a0ea3faf99",
+    "research_round_579_checks.json": "62f17ce9d6b95d119013d9e477afa9ba70b3b28f3d8e81914cc106174133eb29",
+    "round580_drafts/scalar_effective_action_entry_probe.py": "d4fdcd596f3c0fbfa93f705490b85fc51a35f801a7ad51b5ce833d11ac2bdcfb",
+    "round580_drafts/scalar_effective_action_entry_results.json": "0bcfcf281ec9bdb53b120111843f24054a43c7ff46c6775122cf833cf331447b"
+  },
+  "scope": "fixed four-dimensional Euclidean Einstein metric, original H5 target and U, scalar determinant only, zero gauge curvature, local one-loop terms and their metric variation; off-shell closure obstruction in fixed field variables, not full-model net divergence, independent physical operator count, Lorentz observables, or graph-continuum renormalization"
+}

@@ -1,0 +1,213 @@
+{
+  "round": 588,
+  "tests_run": 5,
+  "failures": 0,
+  "errors": 0,
+  "evidence": {
+    "dual_source_coefficients": {
+      "dual_source_incidence_identity_error": 9.71445146547012e-17,
+      "inherited_current_support_and_gauge_derivatives_reused": true
+    },
+    "paired_lapse_same_source": {
+      "rows": [
+        {
+          "N": 8,
+          "scalar_and_magnetic": [
+            0.004788745216021756,
+            -0.006646173997700442
+          ],
+          "continuum": [
+            0.0064719575215325415,
+            -0.007999733923297649
+          ],
+          "max_sector_error": 0.0016832123055107858,
+          "total_error": 0.0003296523799135795,
+          "antisymmetry_error": 0.0,
+          "equal_lapse_bracket_error": 0.0,
+          "Gauss_density_residual": 8.59353506573499e-17
+        },
+        {
+          "N": 12,
+          "scalar_and_magnetic": [
+            0.0056949984722168,
+            -0.007387479743578662
+          ],
+          "continuum": [
+            0.006471957335165684,
+            -0.007999721820370504
+          ],
+          "max_sector_error": 0.0007769588629488837,
+          "total_error": 0.0001647167861570419,
+          "antisymmetry_error": 0.0,
+          "equal_lapse_bracket_error": 0.0,
+          "Gauss_density_residual": 9.667726948951867e-17
+        },
+        {
+          "N": 20,
+          "scalar_and_magnetic": [
+            0.006186751084620425,
+            -0.007777809076831756
+          ],
+          "continuum": [
+            0.006471957335165456,
+            -0.007999721820357807
+          ],
+          "max_sector_error": 0.00028520625054503056,
+          "total_error": 6.329350701897961e-05,
+          "antisymmetry_error": 0.0,
+          "equal_lapse_bracket_error": 0.0,
+          "Gauss_density_residual": 1.9581622871140928e-16
+        },
+        {
+          "N": 32,
+          "scalar_and_magnetic": [
+            0.006359800797678088,
+            -0.007912866731321255
+          ],
+          "continuum": [
+            0.006471957335165421,
+            -0.007999721820357814
+          ],
+          "max_sector_error": 0.00011215653748733283,
+          "total_error": 2.5301448450773187e-05,
+          "antisymmetry_error": 0.0,
+          "equal_lapse_bracket_error": 0.0,
+          "Gauss_density_residual": 2.291609350862664e-16
+        }
+      ],
+      "positive_independent_lapses": true,
+      "same_EW_Gauss_source": true,
+      "continuum_scope": "classical smooth-source symbol; not a fixed-hbar limit"
+    },
+    "exact_finite_family_obstruction": {
+      "status": "588 analytic entry only; not a completed round",
+      "checks_passed": true,
+      "original_target_inverse_ss": 1.885897043333333,
+      "cases": [
+        {
+          "lapse": [
+            0.7,
+            1.3
+          ],
+          "analytic_mixed_coefficient": 0.79561281515625,
+          "rows": [
+            {
+              "step": 0.02,
+              "mixed_coefficient": 0.7956226201145592,
+              "error": 9.804958309156397e-06
+            },
+            {
+              "step": 0.01,
+              "mixed_coefficient": 0.7956152663528243,
+              "error": 2.451196574271286e-06
+            },
+            {
+              "step": 0.005,
+              "mixed_coefficient": 0.7956134279527047,
+              "error": 6.127964546909226e-07
+            },
+            {
+              "step": 0.0025,
+              "mixed_coefficient": 0.7956129683551936,
+              "error": 1.5319894353105212e-07
+            }
+          ]
+        },
+        {
+          "lapse": [
+            1.0,
+            1.0
+          ],
+          "analytic_mixed_coefficient": 0.0,
+          "rows": [
+            {
+              "step": 0.02,
+              "mixed_coefficient": 0.0,
+              "error": 0.0
+            },
+            {
+              "step": 0.01,
+              "mixed_coefficient": 0.0,
+              "error": 0.0
+            },
+            {
+              "step": 0.005,
+              "mixed_coefficient": 0.0,
+              "error": 0.0
+            },
+            {
+              "step": 0.0025,
+              "mixed_coefficient": 0.0,
+              "error": 0.0
+            }
+          ]
+        }
+      ],
+      "original_lapse_H_mixed_coefficient": 0.0,
+      "scope": "fixed-geometry original finite-generator family; not a general GR or cognition no-go"
+    },
+    "unitary_representation_enlargement": {
+      "rows": [
+        {
+          "flow_parameter": -0.4,
+          "min_kinetic_eigenvalue": 1.8603830786892355,
+          "cross_node_block_norm": 0.17903336037268736,
+          "energy_pullback_error": 2.220446049250313e-16,
+          "Jacobian": 1.0000000000000004
+        },
+        {
+          "flow_parameter": -0.2,
+          "min_kinetic_eigenvalue": 1.9960741281882575,
+          "cross_node_block_norm": 0.22379170046585903,
+          "energy_pullback_error": 0.0,
+          "Jacobian": 1.0
+        },
+        {
+          "flow_parameter": 0.2,
+          "min_kinetic_eigenvalue": 1.2814814490719844,
+          "cross_node_block_norm": 0.4923417410248901,
+          "energy_pullback_error": 2.220446049250313e-16,
+          "Jacobian": 1.0
+        },
+        {
+          "flow_parameter": 0.4,
+          "min_kinetic_eigenvalue": 1.030184010704715,
+          "cross_node_block_norm": 1.253233522608811,
+          "energy_pullback_error": 2.220446049250313e-16,
+          "Jacobian": 1.0000000000000009
+        }
+      ],
+      "infinitesimal_mixed_coefficient": 0.79561281515625,
+      "transported_record_error": 0.0,
+      "untransported_record_difference": 0.009582470077167227,
+      "transformed_energy_error": 2.4868995751603507e-14,
+      "linear_tangent_diagnostic_only": true,
+      "full_nonlinear_unitary_and_Gauss_statement_proved_analytically": true
+    },
+    "conformal_obstruction_and_full_metric": {
+      "conformal_metric_missing_shear_mean_square": 1.3333333333333335,
+      "all_colour_weak_circle_field_components_nonzero": true,
+      "full_metric_density_components": [
+        2.9911710590852056,
+        4.767709817775764,
+        0.0007221677289844886,
+        13.01226563187321,
+        441.3185463321052
+      ],
+      "coordinate_Jacobian": 1.026341,
+      "full_metric_density_covariance_error": 2.2737367544323206e-13,
+      "completion_scope": "classical spatial covariance only; no gravitational Hamiltonian specified"
+    }
+  },
+  "dependency_hashes": {
+    "joint_matter_energy_current.py": "8bed4fbc7a9e57275ebd6d698734509418b686f7b0e0a12fd5c33dc8acce2dcd",
+    "joint_matter_energy_current_results.json": "37957c9353bc881147f1adcd20c5e8507a5b4209680ba62d046fcdc96d995dcd",
+    "joint_curved_quantum_source.py": "cf6aec9461174f41985b706c1bae776787b198ab77d9e42dfe8057764795775c",
+    "joint_quotient_gauge_completion.py": "ad79d467500513738d718478a24e2176d88e7225316badfb7f1d62129c4b9494",
+    "round588_drafts/STATUS.md": "06fd709137533bb82b81f298b7e5859d82a80ff06df2eb06becc6d3a0247f338",
+    "round588_drafts/mixed_current_symbol_entry.md": "bd547d0ec8c3e016774f8613d95b28e08da621bf6e7bb8929f70a7b621bd237d",
+    "round588_drafts/mixed_current_symbol_entry.py": "f65dbbde34b84720860e8ddeb87d68ffd77b927359556cb400b6ab6403d56a1b",
+    "round588_drafts/mixed_current_symbol_entry_results.json": "bee8be41e7122b3c5fc25da170723a06974a9cdcc3076d06f1fca08e1e95423f"
+  },
+  "scope": "same-model paired-source symbol; original fixed-geometry family nonclosure; unitary representation enlargement and classical full-metric spatial covariance, not quantum GR"
+}

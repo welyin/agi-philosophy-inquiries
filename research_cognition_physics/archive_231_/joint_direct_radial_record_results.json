@@ -1,0 +1,148 @@
+{
+  "round": 563,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "same_full_source_independent_radial_Haar_representation",
+    "inverse_radius_L2_norms_and_independent_exact_moments",
+    "full_H_phase_conjugation_including_near_axis_points",
+    "actual_impulse_record_and_nonselective_energy_identity",
+    "bounded_radial_threshold_current_and_full_H_density_response",
+    "finite_time_positive_record_and_common_source_pointer_budget"
+  ],
+  "dependency_hashes": {
+    "round563_drafts/radial_pointer_source_probe.py": "1c4e16a66516eaf380fc2be320d117d2019cff4edd4aa5823108b0ed4832204c",
+    "round563_drafts/radial_pointer_source_probe_results.json": "cdcbb783da1197fc13711ffd5d929fb5741d9321d010178869f313c3367f58ee",
+    "round561_drafts/short_time_source_probe.py": "0d90381cb001bfca3fe8b389f3bb3fad311edcaa23a8abc8f8762c155550e9bd",
+    "joint_gauge_link_reference.py": "4faf796ea9bb5adb6d02e17035ec6e9966a5a7e7bfdc39a5a1f0fbcfd49b3e88",
+    "joint_matter_energy_moment_control.py": "604aba32b42c466a044eb91c207a889486f2fa18294f254953ab05ddf25725d4",
+    "joint_singlet_common_mass_rg_results.json": "4bd60fde58c288d047275f8441c8e622819cd58a2fe55a5ea2717a5fc3a48d66"
+  },
+  "finite_time_certificate": {
+    "status": "preliminary_563_not_frozen",
+    "same_source_normalization": 1.1152,
+    "same_source_E1": 5.116696581721409,
+    "source_radial_mean": 0.23917647175689846,
+    "instantaneous_nonselective_matter_energy_increase": 0.4783529435137969,
+    "instantaneous_nonselective_electric_energy_increase": 0.0,
+    "full_source_norm_upper": {
+      "Hpsi": 28.50181218320936,
+      "H2psi": 476.96749900031904,
+      "J_R_psi": 51.63397821291533,
+      "J_R_Hpsi": 753.3845276011002,
+      "Gamma_R_psi": 29.88305149443245,
+      "Gamma_R_Hpsi": 440.37528786018936
+    },
+    "Kpsi": 71.57178911418504,
+    "KHpsi": 1107.9105537914083,
+    "response_error_coefficient": 6295.672489480357,
+    "actual_threshold_derivative_positive_lower": 2.0584561202340345e-05,
+    "sufficient_duration": 8.17409150362243e-10,
+    "finite_duration_slope_lower": 1.543842090175526e-05,
+    "R_squared_constants": {
+      "D0": 0.3921690802114539,
+      "D1": 32.584383812609346
+    },
+    "pointer_mass": 2.0505458164820765e-20,
+    "initial_pointer_energy": 2.438375168118905e+19,
+    "total_H_lower": -0.006017745839031245,
+    "scope": {
+      "RP_coupling_and_compensated_reader_are_new_instrument_inputs": true,
+      "inverse_radial_factors_kept_in_full_Cartesian_norms": true,
+      "no_new_R_phase_source_or_frozen_angles": true,
+      "finite_time_electric_energy_not_claimed_unchanged": true,
+      "no_spacetime_or_unified_completion": true
+    }
+  },
+  "independent_source_norms": {
+    "polynomial_H_change_of_variables_residual": 1.8730147415014314e-15,
+    "norms": {
+      "Hpsi": {
+        "independent_Laurent_Haar_Gaussian_norm": 5.3687273691819355,
+        "Cartesian_triangle_upper": 28.50181218320936
+      },
+      "J_R_psi": {
+        "independent_Laurent_Haar_Gaussian_norm": 1.560996073758942,
+        "Cartesian_triangle_upper": 51.63397821291533
+      },
+      "J_R_Hpsi": {
+        "independent_Laurent_Haar_Gaussian_norm": 8.496495260440623,
+        "Cartesian_triangle_upper": 753.3845276011002
+      },
+      "Gamma_R_psi": {
+        "independent_Laurent_Haar_Gaussian_norm": 0.8423504649532039,
+        "Cartesian_triangle_upper": 29.88305149443245
+      },
+      "Gamma_R_Hpsi": {
+        "independent_Laurent_Haar_Gaussian_norm": 5.963659668028204,
+        "Cartesian_triangle_upper": 440.37528786018936
+      }
+    }
+  },
+  "full_H_radial_conjugation": {
+    "full_ten_coordinate_and_three_group_phase_stencil_residual": 2.653462461434011e-09,
+    "radii_tested": [
+      0.025,
+      0.1,
+      0.7,
+      1.3
+    ],
+    "cross_gradient_residual": 2.220446049250313e-16,
+    "fourth_order_step_ratios": [
+      0.04,
+      0.02,
+      0.01
+    ],
+    "step_maximum_residuals": [
+      5.856697237911401e-07,
+      3.6673489868219307e-08,
+      2.653462461434011e-09
+    ]
+  },
+  "impulse_record": {
+    "closed_radial_mean": 0.23917647175689935,
+    "kernel_moment_residual": 1.7763568394002505e-15,
+    "weak_gradient_energy_identity": "Delta E_matter = a <R> / nu^2",
+    "nonselective_impulse_electric_energy_change": 0.0,
+    "conditional_or_finite_time_zero_electric_change_not_claimed": true
+  },
+  "actual_radial_threshold": {
+    "instantaneous_event_probability": 0.36734843138444545,
+    "slope_current": 0.05697112452793405,
+    "slope_full_H_density": 0.05697112452793481,
+    "source_R_mean": 0.23917647175689682,
+    "radial_integration_cutoff": 8.0
+  },
+  "threshold_quadrature_difference": 1.659783421814609e-14,
+  "common_budget": {
+    "R_bound_constants": {
+      "Ar": 0.44281434044724316,
+      "Br_squared": 16.292191906304673,
+      "D0": 0.3921690802114539,
+      "D1": 32.584383812609346
+    },
+    "sampled_square_bound_minimum_margin": 3.827531177017124,
+    "source_R_mean_upper": 6.3958707271517605,
+    "impulse_source_energy_increase_upper": 12.791741454303521,
+    "impulse_second_record_moment_upper": 167.36657435168812,
+    "finite_time_energy_change_sufficient_upper": 5.9503306883144395e+28,
+    "whole_apparatus_remaining_W_coercivity": 0.5,
+    "total_H_lower": -0.006017745839031245,
+    "pointer_initial_energy": 2.438375168118905e+19,
+    "fixed_derivative_readout_noise_cost": "nu_R=epsilon^2*sigma_D; Delta E=a<R>/(epsilon^4*sigma_D^2)",
+    "switch_on_mean_work": 0.0,
+    "switch_off_work_equals_source_energy_change": true
+  },
+  "scope": {
+    "no_angular_alignment_or_new_source_H_required": true,
+    "same_560_regular_nonstationary_Gauss_source_used": true,
+    "new_RP_instrument_and_compensated_terminal_reader_are_inputs": true,
+    "only_impulse_nonselective_electric_energy_is_unchanged": true,
+    "weak_Cartesian_derivatives_not_flat_half_line_momentum": true,
+    "finite_duration_is_conservative_existence_not_optimal_cost": true,
+    "radial_edge_response_not_four_coordinates_or_continuum": true,
+    "no_three_dimensions_GR_or_unified_completion": true,
+    "floating_evaluations_not_machine_interval_certificates": true
+  }
+}

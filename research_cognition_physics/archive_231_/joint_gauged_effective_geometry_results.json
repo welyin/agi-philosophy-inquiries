@@ -1,0 +1,174 @@
+{
+  "round": 582,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "original_Abelian_connection",
+    "same_stress_sign_witness",
+    "mass_connection_gram",
+    "gauge_covariance",
+    "full_gauge_stress_reduction",
+    "local_connection_realization"
+  ],
+  "evidence": {
+    "original_Abelian_connection": {
+      "K_skew_error": 2.220446049250313e-16,
+      "trace_J_squared": -36.795260520060886,
+      "original_Higgs_charge": 3
+    },
+    "same_stress_sign_witness": {
+      "coefficient": {
+        "zero": -0.007047862952309292,
+        "positive_field_strength": -0.6818269306911745,
+        "reversed_field_strength": -0.7182236081357373,
+        "pure_gauge_quadratic": -0.6929774064611468,
+        "mixed": 0.018198338722281382
+      },
+      "stress": {
+        "sign_reversal_difference": 0.0,
+        "trace": -6.938893903907228e-18
+      }
+    },
+    "mass_connection_gram": {
+      "rows": [
+        {
+          "phi": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "trace_gram_error": 0.0,
+          "gram_eigenvalues": [
+            1.0,
+            1.0,
+            1.0,
+            36.0
+          ]
+        },
+        {
+          "phi": [
+            0.11,
+            0.68,
+            -0.07,
+            0.13,
+            0.52
+          ],
+          "trace_gram_error": 2.3592239273284576e-15,
+          "gram_eigenvalues": [
+            1.0215994891986158,
+            1.0220905700016876,
+            1.0220905700016911,
+            36.79575160086397
+          ]
+        },
+        {
+          "phi": [
+            0.0,
+            0.6654429655855137,
+            0.0,
+            0.0,
+            0.545863690226873
+          ],
+          "trace_gram_error": 1.3877787807814457e-17,
+          "gram_eigenvalues": [
+            1.0192744567680379,
+            1.0196645238207067,
+            1.0196645238207067,
+            36.70831292459811
+          ]
+        }
+      ],
+      "canonical_vacuum_mass_squared": [
+        1.734723475976807e-18,
+        0.024799207991946487,
+        0.024799207991946487,
+        0.03239290752353488
+      ],
+      "expected_from_same_Higgs_and_F": [
+        0.0,
+        0.02479920799194648,
+        0.02479920799194648,
+        0.032392907523534874
+      ],
+      "old_connection_normalization_preserved": true
+    },
+    "gauge_covariance": {
+      "before": {
+        "correction": -2.5549521015668772,
+        "pure": -2.617869485478238,
+        "mixed": 0.0629173839113601
+      },
+      "after": {
+        "correction": -2.5549521015668732,
+        "pure": -2.6178694854782325,
+        "mixed": 0.06291738391135991
+      },
+      "max_gauge_error": 5.329070518200751e-15,
+      "transformation_in_original_SU2_not_arbitrary_target_rotation": true
+    },
+    "full_gauge_stress_reduction": {
+      "gauge_weights": [
+        2.3788490132942197,
+        2.3788490132942197,
+        2.3788490132942197,
+        279.67508640575426
+      ],
+      "rows": [
+        {
+          "case": 0,
+          "metric_identity_error": 5.551115123125783e-17,
+          "source_cross_terms": 0.032863785106543086,
+          "norm_gauge_stress": 0.7507263383351664,
+          "on_leading_metric_relation": false
+        },
+        {
+          "case": 1,
+          "metric_identity_error": -1.0408340855860843e-17,
+          "source_cross_terms": 0.015909634652424377,
+          "norm_gauge_stress": 0.4308294980765511,
+          "on_leading_metric_relation": false
+        },
+        {
+          "case": 2,
+          "metric_identity_error": -2.8697332630308706e-17,
+          "source_cross_terms": 0.0017299879446584531,
+          "norm_gauge_stress": 0.10478752319492814,
+          "on_leading_metric_relation": true
+        }
+      ],
+      "scalar_Euler_elimination_uses_gauge_invariance_of_original_U": true
+    },
+    "local_connection_realization": {
+      "rows": [
+        {
+          "step": 0.0002,
+          "max_connection_commutator_error": 1.8680545998961406e-10
+        },
+        {
+          "step": 0.0001,
+          "max_connection_commutator_error": 4.670375197690646e-11
+        },
+        {
+          "step": 5e-05,
+          "max_connection_commutator_error": 1.1675882483075384e-11
+        }
+      ],
+      "explicit_connection": "a_mu(x)=-f_mu_nu*x_nu/2; phi(x)=phi0+V_mu*x_mu",
+      "only_a_local_off_shell_realization": true
+    }
+  },
+  "dependency_hashes": {
+    "joint_curved_quantum_source.py": "cf6aec9461174f41985b706c1bae776787b198ab77d9e42dfe8057764795775c",
+    "joint_scalar_effective_geometry.py": "ab4a38632bbc3e0212141284277cc6fe37a68c3ef7622e824794fffb0f82a07a",
+    "research_note_569.md": "ac49350c12a9d1a340dfa36a02a5dfb4177953b1aa321639f858d7862f84c0b6",
+    "research_note_572.md": "d5be547e62219cec351e11973af34324e1ed2bae9743247276b3b5fcfc99009e",
+    "research_note_581.md": "bab0918415f2a5aac088865f78df8283d2d4476862a70d6ef45c17c81d0c5773",
+    "research_round_581_checks.json": "6ea568b6496f24a712af07036fcabbe57f36712c8e5bf9d7dfeeddf334b764be",
+    "round582_drafts/gauged_target_entry_probe.py": "e782aac634e5a7e0de520b8e7eb9cc8d203c4fc27700d0d999893693805159ef",
+    "round582_drafts/gauged_target_entry_results.json": "bf018bca285054a54f1245539a183a330923176d9ade23d5d3b9a6416ea3520c"
+  },
+  "scope": "same five-component H5 matter with original SU2 and charge-3 integer U1 connection; fixed-background scalar-loop local coefficient and first-order reduction using leading Einstein-scalar-YM action; explicit off-shell local jets and same-coupling gauge stress, not complete gauge/fermion/gravity loops, an independent operator basis, on-shell quantum source or graph-continuum matching"
+}

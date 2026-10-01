@@ -1,0 +1,292 @@
+{
+  "round": 590,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "evidence": {
+    "time_entry_check": {
+      "frozen_entry_reproduced": true,
+      "entry_evidence": {
+        "status": "590 time-dependent form entry; complete round pending",
+        "checks_passed": true,
+        "explicit_path_rows": [
+          {
+            "time": 0.0,
+            "energy": {
+              "scalar_kinetic": 14.274796886625282,
+              "onsite": 0.012642331097564071,
+              "gradient": 3.7561200729622124,
+              "electric": 0.8582443993771873,
+              "magnetic": 103.27977173317461,
+              "total": 122.18157542323686
+            },
+            "geometric_work_rate": {
+              "scalar_kinetic": -5.657218035438773,
+              "onsite": 0.005267030904121232,
+              "gradient": 0.5277595951932014,
+              "electric": -0.07547995189794927,
+              "magnetic": -13.129759206425529,
+              "total": -18.32943056766493
+            },
+            "relative_form_rate_bound": 0.5850000000000002,
+            "base_form_comparison": [
+              0.9999999999999971,
+              1.0000000000000029
+            ],
+            "centered_difference_errors": [
+              7.872984600965083e-05,
+              1.9682471020132652e-05,
+              4.9206188350581215e-06
+            ]
+          },
+          {
+            "time": 0.23,
+            "energy": {
+              "scalar_kinetic": 13.053387054613577,
+              "onsite": 0.01390048915877852,
+              "gradient": 3.8781375408578316,
+              "electric": 0.8414696276517415,
+              "magnetic": 100.35529983138657,
+              "total": 118.1421945436685
+            },
+            "geometric_work_rate": {
+              "scalar_kinetic": -4.9049886094990445,
+              "onsite": 0.0055895495524694375,
+              "gradient": 0.5250339170924471,
+              "electric": -0.06912036344335613,
+              "magnetic": -12.123178690066307,
+              "total": -16.566664196363792
+            },
+            "relative_form_rate_bound": 0.5590444459946635,
+            "base_form_comparison": [
+              0.8758555270052552,
+              1.1417408113176182
+            ],
+            "centered_difference_errors": [
+              5.948994277460429e-05,
+              1.4872482825722955e-05,
+              3.718130717089707e-06
+            ]
+          },
+          {
+            "time": 0.71,
+            "energy": {
+              "scalar_kinetic": 11.223119909391729,
+              "onsite": 0.016379730553239016,
+              "gradient": 4.098399532493041,
+              "electric": 0.8154633968033052,
+              "magnetic": 95.5909403767004,
+              "total": 111.74430294594171
+            },
+            "geometric_work_rate": {
+              "scalar_kinetic": -2.627055317429077,
+              "onsite": 0.004228236973917493,
+              "gradient": 0.3567783017812962,
+              "electric": -0.03541638882784691,
+              "magnetic": -7.208359153731252,
+              "total": -9.509824321232962
+            },
+            "relative_form_rate_bound": 0.35300691806731616,
+            "base_form_comparison": [
+              0.6984882138731742,
+              1.4316633840604387
+            ],
+            "centered_difference_errors": [
+              2.3807926218921693e-05,
+              5.9519730584156605e-06,
+              1.4879812155754735e-06
+            ]
+          },
+          {
+            "time": 1.25,
+            "energy": {
+              "scalar_kinetic": 10.571155200781728,
+              "onsite": 0.01750416191067123,
+              "gradient": 4.19266105846422,
+              "electric": 0.8108796625756838,
+              "magnetic": 93.77709567571074,
+              "total": 109.36929575944305
+            },
+            "geometric_work_rate": {
+              "scalar_kinetic": 0.22094465787631123,
+              "onsite": -0.00040829671865635545,
+              "gradient": -0.027472509055095903,
+              "electric": 0.019746349513117545,
+              "magnetic": 0.6809467032815216,
+              "total": 0.8937569048971982
+            },
+            "relative_form_rate_bound": 0.05952404131007709,
+            "base_form_comparison": [
+              0.6380496972831365,
+              1.5672760354845006
+            ],
+            "centered_difference_errors": [
+              2.1516419376199636e-06,
+              5.379176722941637e-07,
+              1.3446795421589997e-07
+            ]
+          }
+        ],
+        "frozen_source_endpoint_energy_change": -12.812279663793817,
+        "work_quadrature": [
+          {
+            "nodes": 8,
+            "integrated_fixed_source_work": -12.812279663793978,
+            "endpoint_error": 1.616484723854228e-13
+          },
+          {
+            "nodes": 16,
+            "integrated_fixed_source_work": -12.812279663793797,
+            "endpoint_error": 1.9539925233402755e-14
+          }
+        ],
+        "propagated_quantum_state": false,
+        "Einstein_geometry_not_solved": true,
+        "sources": {
+          "joint_full_spatial_metric.py": "b9bbe239b920ccef4efa37110b53f0d8acd87f4053fe5444fadc5ffc05103720",
+          "research_note_589.md": "b1efa5d01e9d5caf80f9fbcff3261ed3fe1a0190a514af1a10624a555e30ce97"
+        }
+      }
+    },
+    "conformal_force_check": {
+      "full_original_Gauss_source": true,
+      "scaling_rows": [
+        {
+          "log_scale": -0.09,
+          "exact_full_source_scaling_error": 1.4210854715202004e-14
+        },
+        {
+          "log_scale": 0.04,
+          "exact_full_source_scaling_error": 1.4210854715202004e-14
+        },
+        {
+          "log_scale": 0.12,
+          "exact_full_source_scaling_error": 2.842170943040401e-14
+        }
+      ],
+      "conformal_force_classical_value": -288.7821403494428,
+      "relative_form_bound": 6,
+      "derivative_errors": [
+        0.0649005508847722,
+        0.016223353880207014,
+        0.004055726984120156
+      ]
+    },
+    "curved_phase_check": {
+      "rows": [
+        {
+          "phase_frequency": 3,
+          "relative_second_difference_errors": [
+            4.813362533342151e-05,
+            1.203335206516997e-05,
+            3.0085104574414293e-06
+          ]
+        },
+        {
+          "phase_frequency": 9,
+          "relative_second_difference_errors": [
+            5.4133286187779195e-05,
+            1.3533184966572785e-05,
+            3.38328285982489e-06
+          ]
+        }
+      ],
+      "original_H5_radial_laplacian": true,
+      "target_source_leading_coefficient": -3.4812345024592544,
+      "full_potential_cancels_analytically": true
+    },
+    "noise_tail_check": {
+      "packet_quadrature": [
+        {
+          "nodes": 48,
+          "phase_energy_n2_coefficient": 0.5820048282319756,
+          "force_norm_n4_coefficient": 12.194971798200134
+        },
+        {
+          "nodes": 80,
+          "phase_energy_n2_coefficient": 0.5820048282319538,
+          "force_norm_n4_coefficient": 12.194971798199246
+        },
+        {
+          "nodes": 128,
+          "phase_energy_n2_coefficient": 0.5820048282319538,
+          "force_norm_n4_coefficient": 12.194971798199246
+        }
+      ],
+      "tail_rows": [
+        {
+          "N": 10,
+          "excited_mixture_mass": 0.9997351528559556,
+          "remainder_on_unphased_packet": 0.0002648471440444,
+          "energy_increment": 0.8333668483529342,
+          "leading_force_second_moment_term": 112.67402766902048
+        },
+        {
+          "N": 100,
+          "excited_mixture_mass": 0.9999996966094282,
+          "remainder_on_unphased_packet": 3.033905717764185e-07,
+          "energy_increment": 0.8791907023249613,
+          "leading_force_second_moment_term": 1126.7402766902048
+        },
+        {
+          "N": 1000,
+          "excited_mixture_mass": 0.9999999996924828,
+          "remainder_on_unphased_packet": 3.0751723389954577e-10,
+          "energy_increment": 0.8840038033974497,
+          "leading_force_second_moment_term": 11267.402766902045
+        },
+        {
+          "N": 10000,
+          "excited_mixture_mass": 0.9999999999996925,
+          "remainder_on_unphased_packet": 3.0753177782116836e-13,
+          "energy_increment": 0.8844875002577003,
+          "leading_force_second_moment_term": 112674.02766902048
+        }
+      ],
+      "finite_energy_increment_limit": 0.8845412712302558,
+      "force_second_moment_asymptotic_slope": 11.267402766902046,
+      "displayed_noise_is_leading_term_not_full_moment": true,
+      "infinite_noise_is_analytic_tail_theorem": true,
+      "phases_are_Gauss_invariant": true
+    },
+    "record_noise_check": {
+      "original_n4_coefficient": 12.194971798199248,
+      "after_fine_n4": 12.194971798199246,
+      "after_direct_parity_n4": 12.194971798199246,
+      "leading_noise_coefficient_preserved": true,
+      "joint_correlated_source_energy_gap": 0.05585075156338707,
+      "injection_formula_error": 0.0,
+      "geometry_matter_joint_probability_not_factorized": true,
+      "instantaneous_record_only": true
+    },
+    "internal_exchange_check": {
+      "actual_geometry_coefficient_commutator_errors": [
+        3.866303186163245e-07,
+        9.665749112793532e-08,
+        2.4163004576190083e-08
+      ],
+      "local_six_metric_direction_singular_values": [
+        0.22266942253317026,
+        0.21378695712205656,
+        0.20514391167455068,
+        0.19795144031971332,
+        0.18974365398774373,
+        0.17513412299208592
+      ],
+      "sampled_min_metric_eigenvalue": 0.6235125374851919,
+      "compactness_proof_not_replaced_by_sampling": true,
+      "controller_inertia_and_potential_are_extra_inputs": true,
+      "Einstein_dynamics_not_claimed": true
+    }
+  },
+  "dependency_hashes": {
+    "joint_full_spatial_metric.py": "b9bbe239b920ccef4efa37110b53f0d8acd87f4053fe5444fadc5ffc05103720",
+    "joint_curved_quantum_source.py": "cf6aec9461174f41985b706c1bae776787b198ab77d9e42dfe8057764795775c",
+    "joint_record_source_compression.py": "ac4f9e5720d3d11c0200c6c76a0bf9e95579ce401b5f6824b3ee737a9eb70f3c",
+    "joint_quantum_measure_records.py": "adb52e0b65e459da3162716c2c9e28f8be0831020798fdd2dbb1ac2afff57993",
+    "round590_drafts/time_dependent_form_entry.py": "64ce9251810fb4f3839791ef98e281a1b36e6c5997e47aaa26c770e48a89f9e0",
+    "round590_drafts/time_dependent_form_entry_results.json": "0be78c25ea3178384a70bc59452e77019e82a9673c3df306d37b15472c09be28",
+    "round590_drafts/time_dependent_form_entry.md": "efc3bb4166b8468153427d11e696586ee1d58aa6408c3d5298c06c3c356835ed"
+  },
+  "scope": "Same finite curved matter and quotient gauge theory. Time-dependent background and explicitly added compact quantum geometry controller; not Einstein gravity. Finite mean energy does not ensure force-noise domain. No full lattice quantum propagation or fixed-hbar continuum claim."
+}

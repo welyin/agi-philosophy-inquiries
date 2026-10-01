@@ -1,0 +1,141 @@
+{
+  "round": 541,
+  "tests_run": 7,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "protected_transpose_invariant_zero_but_Hermitian_trace_nonzero",
+    "source_finite_quartic_reduction_in_same_normalization",
+    "analytic_S_top_and_quartic_barriers_before_the_real_threshold",
+    "strict_finite_jump_bound_is_insufficient_for_round540_repair_budget",
+    "stable_mass_inverse_and_extraneous_large_root_exclusion",
+    "joint_top_Higgs_finite_matching_and_declared_mass_boundary_solutions",
+    "fixed_parameters_step_halving_and_zero_UV_mass_counterexample"
+  ],
+  "transpose_invariant_max_error": 4.163336342344334e-18,
+  "analytic_global_bounds": {
+    "S_max": "739/1000",
+    "top_squared_max": 3,
+    "quartic_before_max": 1,
+    "abs_mass_ratio_max": "1/100",
+    "exact_negative_jump_upper": "1359336553/282600000000",
+    "negative_jump_upper": 0.004810108113941967,
+    "safe_jump_upper": 0.005,
+    "low_quartic_floor": 0.16259,
+    "required_round540_budget": 0.029366666666666666
+  },
+  "mass_input": {
+    "source": "Buttazzo 1307.3536 Eq(56), historical MS m_B=131.55 GeV",
+    "conversion": "V=-(m_B^2/2) HdagH + lambda(HdagH)^2; project m^2=-m_B^2/2",
+    "low_scale_GeV": 173.34,
+    "mass_squared_GeV2": -8652.701250000002,
+    "spectral_high_scale_mass_boundary_imposed": false
+  },
+  "trajectories": [
+    {
+      "threshold_GeV": 10000.0,
+      "Majorana_at_high_GeV": 10264.89549547552,
+      "S_at_threshold": 0.26331737096965663,
+      "lambda_before": 0.22288099486074744,
+      "lambda_after": 0.2225089137066242,
+      "delta_lambda": -0.0003720811541232383,
+      "delta_top": -0.0003258490181580198,
+      "low_top": 0.9333923686056768,
+      "low_lambda": 0.23944345513754817,
+      "low_mass_squared_target_GeV2": -8652.701250000002,
+      "low_mass_running_factor": 0.877652132506749,
+      "mass_ratio_UV_at_threshold": "-0.00343640114794977620076186911966189839514836925558638780709736",
+      "mass_ratio_EFT_at_threshold": "-0.00009858918960620725000000000000000000000000000000000000000000",
+      "large_other_root_outside_hierarchy": "1797.62899164938382252214528572661750501214051660704772124178",
+      "inverse_mass_equation_decimal_precision": 60,
+      "mass_counterterm_input_GeV2": -343640.1147949776,
+      "leading_heavy_mass_shift_GeV2": 333495.34625292703,
+      "retained_light_over_leading_heavy_mass_ratio": 0.029562388415290203,
+      "zero_UV_mass_control_low_GeV2": 292692.9991818537,
+      "tree_matching_control_low_lambda": 0.23976456310153388,
+      "low_quartic_change_from_tree_matching": -0.00032110796398571173,
+      "iterations": 3
+    },
+    {
+      "threshold_GeV": 1000000.0,
+      "Majorana_at_high_GeV": 1018311.0966634501,
+      "S_at_threshold": 0.2846988047189516,
+      "lambda_before": 0.23430875597250606,
+      "lambda_after": 0.2338858436248878,
+      "delta_lambda": -0.000422912347618265,
+      "delta_top": -0.00030799379203005905,
+      "low_top": 0.9392832764890727,
+      "low_lambda": 0.24266407361871523,
+      "low_mass_squared_target_GeV2": -8652.701250000002,
+      "low_mass_running_factor": 0.7776509923651923,
+      "mass_ratio_UV_at_threshold": "-0.00360900908208621702882929150606555114875856125331113363421032",
+      "mass_ratio_EFT_at_threshold": "-1.112671537097018399999999999999999999999999999999999998E-8",
+      "large_other_root_outside_hierarchy": "1662.51133717624421950738756508543417185600741082012189487607",
+      "inverse_mass_equation_decimal_precision": 60,
+      "mass_counterterm_input_GeV2": -3609009082.086217,
+      "leading_heavy_mass_shift_GeV2": 3605752484.4603696,
+      "retained_light_over_leading_heavy_mass_ratio": 3.0858233944017898e-06,
+      "zero_UV_mass_control_low_GeV2": 2804018927.6560125,
+      "tree_matching_control_low_lambda": 0.24295022748997674,
+      "low_quartic_change_from_tree_matching": -0.0002861538712615186,
+      "iterations": 3
+    },
+    {
+      "threshold_GeV": 1000000000.0,
+      "Majorana_at_high_GeV": 1005084567.8469645,
+      "S_at_threshold": 0.3125158391489549,
+      "lambda_before": 0.2887024514449306,
+      "lambda_after": 0.28813094334261574,
+      "delta_lambda": -0.0005715081023148771,
+      "delta_top": -0.00029180099533421266,
+      "low_top": 0.9475673072055786,
+      "low_lambda": 0.24739602650022424,
+      "low_mass_squared_target_GeV2": -8652.701250000002,
+      "low_mass_running_factor": 0.6542170923571836,
+      "mass_ratio_UV_at_threshold": "-0.00396196941364291677542715597446111239152710017309431905221507",
+      "mass_ratio_EFT_at_threshold": "-1.322603972149947700000000000000000000000000000000E-14",
+      "large_other_root_outside_hierarchy": "1514.39836444956854753909370331052496185429646977106160392496",
+      "inverse_mass_equation_decimal_precision": 60,
+      "mass_counterterm_input_GeV2": -3961969413642917.0,
+      "leading_heavy_mass_shift_GeV2": 3958059341193819.5,
+      "retained_light_over_leading_heavy_mass_ratio": 3.341546596800207e-12,
+      "zero_UV_mass_control_low_GeV2": 2589433849557512.0,
+      "tree_matching_control_low_lambda": 0.24763668792517674,
+      "low_quartic_change_from_tree_matching": -0.00024066142495249299,
+      "iterations": 2
+    }
+  ],
+  "step_halving": [
+    {
+      "M": 10000.0,
+      "max_step_halving_change": 1.8451906669270102e-13
+    },
+    {
+      "M": 1000000.0,
+      "max_step_halving_change": 1.5432100042289676e-13
+    },
+    {
+      "M": 1000000000.0,
+      "max_step_halving_change": 1.63069557856943e-12
+    }
+  ],
+  "dependency_hashes": {
+    "research_note_540.md": "45ae1ca7791e5a01a9b025becc93c097447616448c1ae7588d4b46b07d947ae5",
+    "joint_higgs_flow_obstruction.py": "ab46aaad812abbbbcfae85c5524a5db81955b6f17221f17ef3497502b2f79025",
+    "joint_higgs_flow_obstruction_results.json": "994228fc56436a4de05c98b285c9cd4b14e471e2aa6ae64802a29975cb0db308",
+    "protected_pair_rg.py": "f78969e549ab47dfd12dde1fb2ec58340c1888f725684ff322e1bb9c6538de82",
+    "protected_pair_rg_results.json": "e3cf7b430164d7e09e01476255280013dcd6c24b25e1bc18e3d5d0f92114ad6d",
+    "joint_yukawa_higgs_matching_results.json": "4703023582d4c4dfddbe630e7bd5992eb351073753ddb050fc2dda854971c7fa",
+    "unified_physics_condition_ledger_540.md": "326320701978d50c32410ad8f13a9ce610facbdccd8831f4f37b8c9fe24b71c7"
+  },
+  "scope": {
+    "exact_lepton_number_pair_only": true,
+    "small_broken_nondegenerate_extension_proved": false,
+    "finite_one_loop_matching_for_displayed_couplings_included": true,
+    "truncated_inverse_heavy_mass_expansion": true,
+    "full_dimension_six_running_included": false,
+    "mass_boundary_is_reverse_input_not_prediction": true,
+    "all_top_threshold_choices_under_declared_bounds": true,
+    "physical_global_fit_or_full_unification_completed": false
+  }
+}

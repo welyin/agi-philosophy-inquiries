@@ -1,0 +1,209 @@
+{
+  "round": 569,
+  "tests_run": 8,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "units_check",
+    "neutral_symplectic_check",
+    "complete_graph_spectrum_check",
+    "nonlinear_Higgs_hessian_check",
+    "centre_obstruction_and_zeros_check",
+    "Lie_hessian_check",
+    "nonlinear_gauge_and_lifts_check",
+    "remaining_freedom_check"
+  ],
+  "evidence": {
+    "units_check": {
+      "same_frozen_scale_GeV": 173.3399999999998,
+      "same_rg_u": 18.091844241015448,
+      "couplings_squared_colour_weak_Y": [
+        1.3721009077905366,
+        0.4203713621215515,
+        0.12872079691707322
+      ],
+      "electric_coefficients_colour_weak_integer_circle": [
+        0.6860504538952683,
+        0.21018568106077576,
+        0.0017877888460704613
+      ],
+      "target_magnetic_Hessian": [
+        0.7288093713240651,
+        2.3788490132942197,
+        279.67508640575426
+      ],
+      "Higgs_integer_charge": 3,
+      "h_squared": 0.44281434044724316,
+      "W_gap_squared": 0.04653661686519101,
+      "Z_gap_squared": 0.06078647056236034,
+      "photon_direction": [
+        0.4841743061701339,
+        0.8749715659635285
+      ],
+      "positive_weight_ratio": 2.32321410578,
+      "indices": [
+        2.0,
+        2.66160705289,
+        191.45356171212
+      ],
+      "delta": 0.18220234283101627,
+      "residual_positive_coefficients": [
+        0.12146822855401085,
+        0.9469489862810525,
+        6.79977219217954
+      ],
+      "old_single_trace_relation_defect_at_this_scale": 1.6039511887092681,
+      "MS_to_classical_matching_is_an_input": true,
+      "not_a_new_mass_prediction": true
+    },
+    "neutral_symplectic_check": {
+      "energy_one_form_Gauss_and_flow_residuals": [
+        0.0,
+        1.3322676295501878e-15,
+        4.440892098500626e-16,
+        2.4868995751603507e-14,
+        1.7763568394002505e-15
+      ],
+      "residual_constraint": "D.T @ e = 0",
+      "residual_gauge": "alpha ~ alpha + D gamma"
+    },
+    "complete_graph_spectrum_check": {
+      "rows": [
+        {
+          "d": 2,
+          "sites": 9,
+          "neutral_physical_linear_coordinates": 28,
+          "harmonic_photon_zero_frequencies": 2,
+          "nonzero_momentum_bosonic_modes_excluding_colour": 9,
+          "spectrum_error": 1.9337420553711127e-11,
+          "minimum_kinetic_eigenvalue": 0.0027331806086224515
+        },
+        {
+          "d": 3,
+          "sites": 27,
+          "neutral_physical_linear_coordinates": 136,
+          "harmonic_photon_zero_frequencies": 3,
+          "nonzero_momentum_bosonic_modes_excluding_colour": 13,
+          "spectrum_error": 3.83089115985058e-11,
+          "minimum_kinetic_eigenvalue": 0.00273318060862472
+        }
+      ],
+      "no_extra_photon_longitudinal_mode": true,
+      "scope": "linear tangent phase space; global nonlinear total-charge constraint not counted"
+    },
+    "nonlinear_Higgs_hessian_check": {
+      "variables": 12,
+      "finite_difference_step": 0.0002,
+      "full_potential_Hessian_max_error": 0.00012771854085258383
+    },
+    "centre_obstruction_and_zeros_check": {
+      "cover_fundamental_magnetic_energy_for_identity_lift": 0.0,
+      "cover_energy_for_equivalent_central_lift": 158.86833530923087,
+      "blind_zero_points": 36,
+      "blind_zero_classes_in_quotient": 6,
+      "faithful_completion_zero_lifts": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          1,
+          0,
+          4
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          0,
+          2
+        ],
+        [
+          2,
+          1,
+          5
+        ]
+      ],
+      "faithful_completion_zero_classes": 1,
+      "identity_face_does_not_fix_global_flat_holonomy": true
+    },
+    "Lie_hessian_check": {
+      "generators": 12,
+      "step": 0.0003,
+      "expected_diagonal": [
+        0.7288093713240651,
+        0.7288093713240651,
+        0.7288093713240651,
+        0.7288093713240651,
+        0.7288093713240651,
+        0.7288093713240651,
+        0.7288093713240651,
+        0.7288093713240651,
+        2.3788490132942197,
+        2.3788490132942197,
+        2.3788490132942197,
+        279.67508640575426
+      ],
+      "finite_difference_max_error": 7.184773664903332e-05,
+      "cross_block_max": 0.0
+    },
+    "nonlinear_gauge_and_lifts_check": {
+      "node_gauge_invariance_error": 7.105427357601002e-15,
+      "independent_link_lift_error": 2.842170943040401e-14,
+      "minimum_sampled_face_potential": 4.357093021309853,
+      "samples": 12,
+      "positivity_and_zero_set_proven_analytically_not_from_sampling": true
+    },
+    "remaining_freedom_check": {
+      "rows": [
+        {
+          "delta": 0.09110117141550814,
+          "magnetic_Hessian_residual": 0.0,
+          "finite_holonomy_potential": 13.897528401154814
+        },
+        {
+          "delta": 0.18220234283101627,
+          "magnetic_Hessian_residual": 0.0,
+          "finite_holonomy_potential": 13.99385871036374
+        },
+        {
+          "delta": 0.27330351424652444,
+          "magnetic_Hessian_residual": 0.0,
+          "finite_holonomy_potential": 14.090189019572668
+        }
+      ],
+      "finite_holonomy_difference": 0.19266061841785387,
+      "equal_quadratic_limit_does_not_imply_same_full_quantum_theory": true
+    }
+  },
+  "dependency_hashes": {
+    "joint_scalar_propagation_matching.py": "3ef2f256906884ae1ef2b1ecb36fe0a2b6f1d60a931852511f0a7f11d88d42b5",
+    "joint_gauge_matter_propagation.py": "df013f78bf2f881d522b5879fd2adeb18746ce0886175f9d271545cd83964291",
+    "protected_pair_rg.py": "f78969e549ab47dfd12dde1fb2ec58340c1888f725684ff322e1bb9c6538de82",
+    "joint_singlet_common_mass_rg_results.json": "4bd60fde58c288d047275f8441c8e622819cd58a2fe55a5ea2717a5fc3a48d66",
+    "joint_gauge_matter_constraints_results.json": "c2ede9a75cc2e0e13ebce2b65b9a2eaf8276518c7d6147943a21fd232f4e29c3",
+    "joint_yukawa_higgs_matching_results.json": "4703023582d4c4dfddbe630e7bd5992eb351073753ddb050fc2dda854971c7fa",
+    "research_note_531.md": "ece8423ed4531280af8f829ea84b51c2614da00151155ce61c6ddbd65c15e9d0",
+    "research_note_547.md": "5b7c808104df8ef9c1783966dc5b815d45c57b492b66b853781514a8e14b6cc4",
+    "research_note_553.md": "bf352b5705e660cff91565a6da440eeb0ba1d405a2de4285ea821234faffbfdf",
+    "research_note_568.md": "1ef0d222af42a290ea1c5185050a937a22f1a46748549e7f5613fb3e8678f241"
+  },
+  "scope": {
+    "same_Higgs_vacuum_and_radial_potential": true,
+    "residual_photon_Gauss_preserved": true,
+    "faithful_quotient_magnetic_completion": true,
+    "extra_magnetic_function_and_matching_inputs": true,
+    "no_new_Z_mass_or_hypercharge_theorem": true,
+    "no_chiral_fermion_dynamics_implemented": true,
+    "no_quantum_continuum_dimension_GR_or_unification_completion": true
+  }
+}

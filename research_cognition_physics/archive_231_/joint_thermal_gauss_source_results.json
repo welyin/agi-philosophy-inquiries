@@ -1,0 +1,139 @@
+{
+  "round": 603,
+  "tests_run": 2,
+  "failures": 0,
+  "errors": 0,
+  "thermal_tail": {
+    "a": 0.005723087828732479,
+    "b": 1.6329931618554523,
+    "R0": 2.2676109428557756,
+    "rows": [
+      {
+        "alpha": 0.01,
+        "core_volume": 473.7110671030117,
+        "rigorous_tail_upper_bound": 632161.2706434537,
+        "envelope_quadrature": 601176.4421198115,
+        "envelope_omitted_upper_bound": 5.548394143252393e-21,
+        "quadrature_change": 8.847564458847046e-09,
+        "original_potential_ray_integrals": [
+          23814.24697031851,
+          27671.50081482093,
+          35932.601077269734
+        ],
+        "full_angular_integral_upper_bound": 632634.9817105567
+      },
+      {
+        "alpha": 0.2,
+        "core_volume": 473.7110671030117,
+        "rigorous_tail_upper_bound": 30244.022471277145,
+        "envelope_quadrature": 24987.13672047622,
+        "envelope_omitted_upper_bound": 2.774197071626353e-22,
+        "quadrature_change": 3.346940502524376e-10,
+        "original_potential_ray_integrals": [
+          647.3281200439839,
+          811.6855965946663,
+          1173.1477115033788
+        ],
+        "full_angular_integral_upper_bound": 30717.73353838016
+      },
+      {
+        "alpha": 2.0,
+        "core_volume": 473.7110671030117,
+        "rigorous_tail_upper_bound": 1991.3129233485217,
+        "envelope_quadrature": 1307.6545001968232,
+        "envelope_omitted_upper_bound": 2.774197071626571e-23,
+        "quadrature_change": 2.5011104298755527e-12,
+        "original_potential_ray_integrals": [
+          0.5801960809546035,
+          1.4299456867229603,
+          5.3012810159820445
+        ],
+        "full_angular_integral_upper_bound": 2465.0239904515333
+      }
+    ],
+    "heat_kernel_scaling": [
+      {
+        "t": 0.2,
+        "diagonal_kernel": 0.0893387224565714,
+        "radial_relative_errors": [
+          0.0020870935475157467,
+          0.0005221824060178807,
+          0.0001305711816801609
+        ]
+      },
+      {
+        "t": 1.0,
+        "diagonal_kernel": 0.001019068026949951,
+        "radial_relative_errors": [
+          0.0004905454760510321,
+          0.00012265909197583621,
+          3.0666192358606685e-05
+        ]
+      },
+      {
+        "t": 3.0,
+        "diagonal_kernel": 2.067864016270129e-05,
+        "radial_relative_errors": [
+          0.00022664008645795352,
+          5.666500696651024e-05,
+          1.4166560746172063e-05
+        ]
+      }
+    ],
+    "no_full_graph_partition_function_evaluated": true,
+    "ray_integrals_are_diagnostics_not_angular_proof": true
+  },
+  "response_bound": {
+    "exact_inherited_Fock_dimension": 16,
+    "beta": 2.0,
+    "form_constant": 0.2007227640794397,
+    "first_shifted_energy_moment": 1.3288452074259662,
+    "second_shifted_energy_moment": 1.8122121058841993,
+    "conserved_variance": 0.015657576983912406,
+    "variance_bound": 0.0730133516388542,
+    "static_susceptibility": 0.05607126475677224,
+    "isolated_zero_susceptibility": 0.024756110788947426,
+    "universal_form_susceptibility_bound": 0.9442882328003042,
+    "Abel_rows": [
+      {
+        "Abel_parameter": 0.2,
+        "retarded_susceptibility_imaginary_axis": 0.020278631320704954,
+        "difference_from_zero": 0.004477479468242472
+      },
+      {
+        "Abel_parameter": 0.1,
+        "retarded_susceptibility_imaginary_axis": 0.02346107186453583,
+        "difference_from_zero": 0.0012950389244115977
+      },
+      {
+        "Abel_parameter": 0.05,
+        "retarded_susceptibility_imaginary_axis": 0.02441912998082378,
+        "difference_from_zero": 0.000336980808123645
+      },
+      {
+        "Abel_parameter": 0.025,
+        "retarded_susceptibility_imaginary_axis": 0.024670996655104603,
+        "difference_from_zero": 8.511413384282296e-05
+      }
+    ],
+    "full_graph_extension_is_analytic_not_a_matrix_substitution": true
+  },
+  "dependency_hashes": {
+    "research_note_579.md": "8444240ebb9252a8cdbbb02b1f1fd35e098cce2dd2a8857ee01b81a0ea3faf99",
+    "research_note_589.md": "b1efa5d01e9d5caf80f9fbcff3261ed3fe1a0190a514af1a10624a555e30ce97",
+    "research_note_590.md": "fe7192aa49d28accd53481278845c2dd783095373d060d3bfc88999f374420e8",
+    "research_note_591.md": "5cf5a7698f191bb9f76a1ead396dd585784fe9e518aa88e96565905781655518",
+    "research_note_598.md": "3cfd675bceca95c6fcca2a72181a52cccb44cc4d5421b61fea0159002d80b8c5",
+    "research_note_602.md": "f3fb4939de75c594186627f1cb581d481b195dada8dd3c30a24380154e40aa2d",
+    "joint_curved_quantum_source.py": "cf6aec9461174f41985b706c1bae776787b198ab77d9e42dfe8057764795775c",
+    "joint_quantum_response_matching.py": "bf47024bcb481e9883bb1f1518bf1a61f267aabe5b1ff72971e61523c1689d96"
+  },
+  "scope": {
+    "full_nonlinear_fixed_graph_Gibbs_existence_proved": true,
+    "finite_CAR_and_Gauss_restriction_retained": true,
+    "source_zero_frequency_form_bounds_proved": true,
+    "instantaneous_noise_not_claimed": true,
+    "equilibrium_preparation_and_temperature_are_inputs": true,
+    "no_cutoff_uniform_or_quantum_GR_or_continuum_completion": true
+  }
+}

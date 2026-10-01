@@ -1,0 +1,196 @@
+{
+  "round": 565,
+  "tests_run": 5,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "correct_full_radial_singlet_form_moments_by_independent_integrals",
+    "Haar_projected_full_potential_and_missing_cross_cell_source_interaction",
+    "full_matter_compression_dynamics_energy_and_angular_leakage",
+    "finite_duration_continuous_pointer_joint_state_comparison",
+    "b_independent_whole_apparatus_coercivity_and_source_budget"
+  ],
+  "dependency_hashes": {
+    "round565_drafts/large_b_matter_probe.py": "dca71ce39fdc91e494b302242eb245b64a3a4b78c3d21d092bffa48c801ea57f",
+    "round565_drafts/large_b_matter_probe_results.json": "fc3a4202a9200da225074981c498e8525b1873af5e9ef2189666df52effe5dd5",
+    "joint_finite_time_gauge_probe.py": "acd1a47553fb49fc00d59e707f57af103acce1f6c31433ae70263f5e4e4316b6",
+    "joint_radial_prediction_closure.py": "927ff8e95625a268a92a1e1eaf9f7933ffc4823befc8ea287e08f4b4341897ee",
+    "joint_radial_prediction_closure_results.json": "e6ea07615c00cc4a72b00669d0f2553313ca0ceb4aa75ed55e301a22362eb185",
+    "joint_direct_radial_record.py": "94e09cc096d79c62fda7d03569849bc3ee6b3be605f9092aa1b93114d77daeb5"
+  },
+  "independent_form_moments": {
+    "radial_power_matrix_residuals": {
+      "-1.0": 1.2878587085651816e-14,
+      "0.0": 1.7319479184152442e-14,
+      "0.5": 2.708944180085382e-14,
+      "1.0": 7.72715225139109e-14,
+      "2.0": 7.389644451905042e-13
+    },
+    "combined_maximum_residual": 7.389644451905042e-13,
+    "exact_moments_not_squared_truncated_coordinates": true
+  },
+  "projected_source": {
+    "Haar_averaged_potential_mixed_difference": 3.885780586188048e-16,
+    "wrongly_retained_k_R_mixed_difference": -0.44799999999999995,
+    "constant_sector_full_form_equals_sum_of_two_cell_forms": true,
+    "R_instrument_commutes_with_angular_projection": true,
+    "source_factorization_not_claimed_for_external_RP_instrument": true
+  },
+  "finite_form_diagnostics": {
+    "status": "preliminary_565_not_completed",
+    "Galerkin_dimension": 144,
+    "radial_modes": 2,
+    "singlet_modes": 3,
+    "class_modes": 4,
+    "initial_source_energy": 4.727039396185159,
+    "radial_fourth_moment_endpoint_correction": 6.000000000000007,
+    "radial_coordinate_square_compression_difference": 0.44918942538307877,
+    "source_dynamics": [
+      {
+        "b": 8.0,
+        "rows": [
+          {
+            "time": 0.2,
+            "state_distance": 0.14032472454452297,
+            "angular_leakage": 0.01936790013486996,
+            "full_H_energy": 4.727039396185155
+          },
+          {
+            "time": 0.6,
+            "state_distance": 0.12760499644476725,
+            "angular_leakage": 0.009327096331239269,
+            "full_H_energy": 4.727039396185158
+          }
+        ],
+        "all_time_leakage_bound": 0.7878398993641932,
+        "smallest_compressed_eigenvalue": 4.567802610857146
+      },
+      {
+        "b": 32.0,
+        "rows": [
+          {
+            "time": 0.2,
+            "state_distance": 0.030816171970507598,
+            "angular_leakage": 0.000867053991253552,
+            "full_H_energy": 4.727039396185155
+          },
+          {
+            "time": 0.6,
+            "state_distance": 0.0587646995324581,
+            "angular_leakage": 0.003095116499084997,
+            "full_H_energy": 4.727039396185155
+          }
+        ],
+        "all_time_leakage_bound": 0.1969599748410483,
+        "smallest_compressed_eigenvalue": 4.6042216449096935
+      },
+      {
+        "b": 128.0,
+        "rows": [
+          {
+            "time": 0.2,
+            "state_distance": 0.006523244744527256,
+            "angular_leakage": 3.8858313316514145e-05,
+            "full_H_energy": 4.7270393961851624
+          },
+          {
+            "time": 0.6,
+            "state_distance": 0.014980527409801934,
+            "angular_leakage": 0.00019989555499815253,
+            "full_H_energy": 4.727039396185163
+          }
+        ],
+        "all_time_leakage_bound": 0.049239993710262074,
+        "smallest_compressed_eigenvalue": 4.6167438885617225
+      },
+      {
+        "b": 512.0,
+        "rows": [
+          {
+            "time": 0.2,
+            "state_distance": 0.0032893659929110197,
+            "angular_leakage": 1.057653246415418e-05,
+            "full_H_energy": 4.727039396185158
+          },
+          {
+            "time": 0.6,
+            "state_distance": 0.001784209230272037,
+            "angular_leakage": 1.5635792566145142e-06,
+            "full_H_energy": 4.727039396185155
+          }
+        ],
+        "all_time_leakage_bound": 0.012309998427565519,
+        "smallest_compressed_eigenvalue": 4.620176274343506
+      }
+    ],
+    "finite_duration_apparatus": [
+      {
+        "b": 16.0,
+        "source_time": 0.25,
+        "tau": 0.2,
+        "g": 1.0,
+        "sigmaQ": 0.5,
+        "pointer_momentum_quadrature_nodes": 20,
+        "joint_state_distance": 0.03473228848187556,
+        "any_compensated_pointer_event_difference_upper": 0.03473228848187556
+      },
+      {
+        "b": 64.0,
+        "source_time": 0.25,
+        "tau": 0.2,
+        "g": 1.0,
+        "sigmaQ": 0.5,
+        "pointer_momentum_quadrature_nodes": 20,
+        "joint_state_distance": 0.029787927512734427,
+        "any_compensated_pointer_event_difference_upper": 0.029787927512734427
+      },
+      {
+        "b": 256.0,
+        "source_time": 0.25,
+        "tau": 0.2,
+        "g": 1.0,
+        "sigmaQ": 0.5,
+        "pointer_momentum_quadrature_nodes": 20,
+        "joint_state_distance": 0.0029698692349567576,
+        "any_compensated_pointer_event_difference_upper": 0.0029698692349567576
+      }
+    ],
+    "pointer_integral_refinement_difference": 2.47198095326695e-16,
+    "angular_cutoff_refinement_difference": 1.1579279202145187e-16,
+    "scope": {
+      "finite_form_compression_only": true,
+      "not_untruncated_dynamical_error_certificate": true,
+      "no_b_dependent_rescaling_of_k_or_W": true,
+      "no_spacetime_or_unification_claim": true
+    }
+  },
+  "common_apparatus_budget": {
+    "tau": 0.2,
+    "g": 1.0,
+    "sigmaQ": 0.5,
+    "M": 0.0012275819064137404,
+    "relative_form_bound": 0.7071067811865476,
+    "retained_W_fraction": 0.5,
+    "uniform_lower_bound": -0.006017745839031245,
+    "fixed_initial_pointer_energy": 407.30479765761675,
+    "whole_initial_energy": 412.0318370538019,
+    "same_b_independent_source_energy": 4.727039396185159,
+    "finite_pulse_source_change_sufficient_upper": 4529.971564364068,
+    "pulse_angular_leakage_upper": "min(1, 1098.7676127990424/b)",
+    "source_R_mean": 0.23285413235574137,
+    "impulse_matter_energy_increase": 0.46570826471148274,
+    "instantaneous_nonselective_electric_increase": 0.0,
+    "fixed_tau_M_g_as_b_changes": true,
+    "no_time_or_coupling_rescaling_hidden": true
+  },
+  "scope": {
+    "full_unbounded_convergence_is_analytic_not_from_Galerkin": true,
+    "generalized_resolvent_limit_lives_only_on_P0": true,
+    "real_time_strong_limit_for_fixed_P0_input_compact_time_intervals": true,
+    "no_full_space_unitary_limit_or_uniform_all_source_rate_claim": true,
+    "fixed_a_k_W_and_fixed_tau_M_g": true,
+    "unmeasured_limit_matter_factorizes_but_RP_reader_can_connect_cells": true,
+    "no_spacetime_dimension_gravity_or_unified_completion": true,
+    "floating_diagnostics_not_machine_interval_certificates": true
+  }
+}

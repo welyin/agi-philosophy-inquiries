@@ -1,0 +1,298 @@
+{
+  "round": 589,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "evidence": {
+    "magnetic_check": {
+      "frozen_entry_reproduced": true,
+      "status": "589 magnetic interface entry; not a completed round",
+      "checks_passed": true,
+      "exact_old_face_potential_error": 2.886579864025407e-15,
+      "exact_conformal_branch_error": 3.552713678800501e-15,
+      "eigenvalues_of_metric_Gram": [
+        0.5806618872807822,
+        1.0426001411889902,
+        1.290607283547258
+      ],
+      "positive_full_metric_energy": 11.374085561452807,
+      "comparison_bounds": [
+        6.03826767360238,
+        13.420946699384157
+      ],
+      "independent_quotient_lift_error": 0.0,
+      "common_node_gauge_error": 1.7763568394002505e-15,
+      "orientation_covariance_error": 0.0,
+      "naive_full_embedding_orientation_defect": 0.4510875367679521,
+      "original_curvature_Hessian_prediction": 285.6562224209966,
+      "small_holonomy": [
+        {
+          "angle_scale": 0.04,
+          "energy_over_eta_squared": 284.54331732331025,
+          "error": 1.1129050976863368,
+          "even_channel_norm": 0.007787771515625208
+        },
+        {
+          "angle_scale": 0.02,
+          "energy_over_eta_squared": 285.37815560988565,
+          "error": 0.2780668111109321,
+          "even_channel_norm": 0.0004915771989173939
+        },
+        {
+          "angle_scale": 0.01,
+          "energy_over_eta_squared": 285.58671586234533,
+          "error": 0.06950655865125555,
+          "even_channel_norm": 3.079967089196303e-05
+        },
+        {
+          "angle_scale": 0.005,
+          "energy_over_eta_squared": 285.6388464181264,
+          "error": 0.017376002870207685,
+          "even_channel_norm": 1.9261701861676557e-06
+        }
+      ],
+      "full_quantum_electric_scalar_and_domain_interface_pending": true
+    },
+    "scalar_electric_check": {
+      "log_squared_distance_error": 5.551115123125783e-17,
+      "log_equivariance_error": 1.1102230246251565e-16,
+      "scalar_gauge_error": 3.3306690738754696e-16,
+      "all_group_electric_gauge_error": 3.197442310920451e-14,
+      "positive_scalar_value": 0.5955984480851712,
+      "positive_electric_value": 27.463010752993426,
+      "shape_eigenvalues": [
+        0.7524551034248746,
+        1.0094677405820205,
+        1.3165184903525016
+      ]
+    },
+    "common_source_check": {
+      "rows": [
+        {
+          "N": 8,
+          "exact_conformal_error": 6.252776074688882e-13,
+          "Gauss_density_error": 8.59353506573499e-17,
+          "new_energy": {
+            "scalar_kinetic": 14.274796886625282,
+            "onsite": 0.012642331097564071,
+            "gradient": 3.8368041205345467,
+            "electric": 0.9910234962679269,
+            "magnetic": 104.45038713240486,
+            "total": 123.56565396693017
+          },
+          "form_comparison_constants": [
+            0.6641477507918185,
+            1.5056890560989888
+          ],
+          "conformal_total": 122.18157542323746,
+          "determinant_shape_error": 2.220446049250313e-15
+        },
+        {
+          "N": 12,
+          "exact_conformal_error": 2.8563817977556027e-12,
+          "Gauss_density_error": 9.667726948951867e-17,
+          "new_energy": {
+            "scalar_kinetic": 14.827618444660317,
+            "onsite": 0.01264233109748101,
+            "gradient": 3.8419710292774236,
+            "electric": 0.9955848640705851,
+            "magnetic": 108.09703987732857,
+            "total": 127.77485654643438
+          },
+          "form_comparison_constants": [
+            0.6641477507918185,
+            1.5056890560989888
+          ],
+          "conformal_total": 126.29724510040052,
+          "determinant_shape_error": 3.219646771412954e-15
+        }
+      ],
+      "same_original_physical_source": true,
+      "new_background_not_asserted_Einstein_initial_data": true
+    },
+    "continuum_check": {
+      "rows": [
+        {
+          "N": 8,
+          "discrete": {
+            "scalar_kinetic": 14.274796886625282,
+            "onsite": 0.012642331097564071,
+            "gradient": 3.8368041205345467,
+            "electric": 0.9910234962679269,
+            "magnetic": 104.45038713240486,
+            "total": 123.56565396693017
+          },
+          "continuum_quadrature": {
+            "scalar_kinetic": 15.295425921772917,
+            "onsite": 0.012642331097564071,
+            "gradient": 3.8320478245168936,
+            "electric": 0.9959907516389722,
+            "magnetic": 110.87084173360854,
+            "total": 131.0069485626349
+          },
+          "errors": {
+            "scalar_kinetic": 1.0206290351476355,
+            "onsite": 0.0,
+            "gradient": 0.004756296017653039,
+            "electric": 0.004967255371045365,
+            "magnetic": 6.420454601203687,
+            "total": 7.441294595704733
+          },
+          "max_local_density_errors": {
+            "gradient": 0.004477810920890737,
+            "electric": 0.0014465335264030425,
+            "magnetic": 0.6344820228607588
+          }
+        },
+        {
+          "N": 12,
+          "discrete": {
+            "scalar_kinetic": 14.827618444660317,
+            "onsite": 0.01264233109748101,
+            "gradient": 3.8419710292774236,
+            "electric": 0.9955848640705851,
+            "magnetic": 108.09703987732857,
+            "total": 127.77485654643438
+          },
+          "continuum_quadrature": {
+            "scalar_kinetic": 15.295432648900881,
+            "onsite": 0.01264233109748101,
+            "gradient": 3.832047824436532,
+            "electric": 0.9959907565600926,
+            "magnetic": 110.87084184210188,
+            "total": 131.00695540309687
+          },
+          "errors": {
+            "scalar_kinetic": 0.46781420424056464,
+            "onsite": 0.0,
+            "gradient": 0.009923204840891486,
+            "electric": 0.0004058924895075089,
+            "magnetic": 2.7738019647733125,
+            "total": 3.232098856662489
+          },
+          "max_local_density_errors": {
+            "gradient": 0.003183378301970654,
+            "electric": 0.0010865438967149537,
+            "magnetic": 0.4384663671886434
+          }
+        },
+        {
+          "N": 20,
+          "discrete": {
+            "scalar_kinetic": 15.12428370216912,
+            "onsite": 0.012642331097481033,
+            "gradient": 3.8411551064367857,
+            "electric": 0.9971613585128947,
+            "magnetic": 109.86376542727828,
+            "total": 129.83900792549457
+          },
+          "continuum_quadrature": {
+            "scalar_kinetic": 15.295432648913437,
+            "onsite": 0.012642331097481033,
+            "gradient": 3.832047824436534,
+            "electric": 0.995990756560094,
+            "magnetic": 110.87084184210202,
+            "total": 131.00695540310957
+          },
+          "errors": {
+            "scalar_kinetic": 0.17114894674431724,
+            "onsite": 0.0,
+            "gradient": 0.009107282000251793,
+            "electric": 0.0011706019528007205,
+            "magnetic": 1.007076414823743,
+            "total": 1.1679474776150016
+          },
+          "max_local_density_errors": {
+            "gradient": 0.0019845294043502743,
+            "electric": 0.0006510331974612406,
+            "magnetic": 0.2643130959169814
+          }
+        },
+        {
+          "N": 32,
+          "discrete": {
+            "scalar_kinetic": 15.228203738180492,
+            "onsite": 0.012642331097481023,
+            "gradient": 3.8388264215819414,
+            "electric": 0.9972207530702809,
+            "magnetic": 110.46084206602077,
+            "total": 130.53773530995096
+          },
+          "continuum_quadrature": {
+            "scalar_kinetic": 15.295432648913419,
+            "onsite": 0.012642331097481023,
+            "gradient": 3.832047824436534,
+            "electric": 0.9959907565600938,
+            "magnetic": 110.87084184210201,
+            "total": 131.00695540310954
+          },
+          "errors": {
+            "scalar_kinetic": 0.06722891073292736,
+            "onsite": 0.0,
+            "gradient": 0.006778597145407517,
+            "electric": 0.0012299965101870702,
+            "magnetic": 0.4099997760812357,
+            "total": 0.46922009315858304
+          },
+          "max_local_density_errors": {
+            "gradient": 0.0012587634505456975,
+            "electric": 0.0004197861284938034,
+            "magnetic": 0.16638905135706517
+          }
+        }
+      ],
+      "classical_smooth_symbol_only": true,
+      "colour_source_zero": true,
+      "no_fixed_hbar_quantum_limit": true,
+      "no_second_order_rate_claim": true
+    },
+    "shear_response_check": {
+      "first_variations": {
+        "scalar_kinetic": 0.0,
+        "onsite": 0.0,
+        "gradient": -0.03166942336246821,
+        "electric": 0.17726172180111086,
+        "magnetic": -0.00282928701918971,
+        "total": 0.14276301141945294
+      },
+      "centered_difference": [
+        {
+          "step": 0.02,
+          "max_derivative_error": 8.711211722035395e-05
+        },
+        {
+          "step": 0.01,
+          "max_derivative_error": 2.1777969173140347e-05
+        },
+        {
+          "step": 0.005,
+          "max_derivative_error": 5.444487406034652e-06
+        }
+      ],
+      "determinant_preserving": true,
+      "frozen_conformal_only_response": 0.0,
+      "full_covariant_stress_not_claimed": true
+    },
+    "instrument_check": {
+      "pointwise_full_form_instrument_gap_error": 5.079270337660091e-15,
+      "minimum_positive_gap": 0.05667843560411115,
+      "single_read_A_max": 0.0625,
+      "energy_injection_bound_coefficient": 0.0625,
+      "numerical_check_is_local_differential_identity": true,
+      "full_Hilbert_statement_proved_in_note": true,
+      "off_conformal_histories_not_asserted_equal": true
+    }
+  },
+  "dependency_hashes": {
+    "joint_curved_quantum_source.py": "cf6aec9461174f41985b706c1bae776787b198ab77d9e42dfe8057764795775c",
+    "joint_matter_energy_current.py": "8bed4fbc7a9e57275ebd6d698734509418b686f7b0e0a12fd5c33dc8acce2dcd",
+    "joint_record_source_compression.py": "ac4f9e5720d3d11c0200c6c76a0bf9e95579ce401b5f6824b3ee737a9eb70f3c",
+    "joint_quotient_gauge_completion.py": "ad79d467500513738d718478a24e2176d88e7225316badfb7f1d62129c4b9494",
+    "joint_gauss_einstein_initial_data.py": "8c600a6f4d6cdee75aa2240c8ad650402c69ab791aaed4380770c8ab119c6cb5",
+    "joint_gauss_continuum_sampling.py": "962ad261027a69689127ba6473fcc9dac2931a005c5d630ce8de1b373feca6d3",
+    "round589_drafts/STATUS.md": "5a1e2302c6119389aa10a92e4c3a0c34f81192da459d59a0577dafeb4fa39bfc",
+    "round589_drafts/full_metric_magnetic_entry.py": "2cda3918a1bcd1dd1407df24df820d9a65bff4b0fbce42f3d1a3530be2e6d900",
+    "round589_drafts/full_metric_magnetic_entry_results.json": "ee87915a53285a5f073200e2a8826785a0ca0909cdab24e2957dd0f8973c0902"
+  },
+  "scope": "Fixed finite graph and arbitrary fixed positive spatial metric; same quotient matter and instruments. Classical smooth-symbol consistency only; geometry dynamics and quantum refinement remain open."
+}

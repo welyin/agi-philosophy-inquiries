@@ -1,0 +1,165 @@
+{
+  "status": "interface_diagnostic_not_completed_research_round",
+  "tests_run": 3,
+  "failures": 0,
+  "checks": [
+    "off_shell_mass_gradient_and_independent_finite_difference",
+    "formal_tadpole_shift_additive_vacuum_matching_is_not_parameter_reduction",
+    "Goldstone_second_derivative_diverges_in_a_rank_one_direction"
+  ],
+  "assumptions": {
+    "flat_classical_metric": true,
+    "one_loop_Landau_MS": true,
+    "fixed_dimensionless_mu_squared": 1,
+    "real_part_for_finite_difference_only": true,
+    "no_pole_mass_or_full_stability_claim": true,
+    "no_finite_curvature_matching_claim": true
+  },
+  "examples": [
+    {
+      "source_index": 2,
+      "q0": 0.32211866676734907,
+      "tree_x": [
+        0.44281434044724316,
+        0.29796716830809955
+      ],
+      "one_loop_value_at_mu2_one": 0.0020097231776601463,
+      "finite_vacuum_constant_shift": -0.0020097231776601463,
+      "one_loop_x_gradient": [
+        0.006907516196495955,
+        -0.00022063977650098413
+      ],
+      "formal_first_order_dx": [
+        -0.0805014823755913,
+        0.039788625773635865
+      ],
+      "relative_first_order_dx": [
+        -0.18179511145525384,
+        0.13353359029305614
+      ],
+      "formal_tree_F_change": 0.006785476100325905,
+      "tadpole_linear_equation_residual": 2.439454888092385e-19,
+      "independent_gradient_difference": 1.8239056098767747e-13,
+      "Goldstone_Hessian_probe": [
+        {
+          "log10_abs_G_over_mu2": -2,
+          "normal_Hessian": -0.0030659550882241766
+        },
+        {
+          "log10_abs_G_over_mu2": -4,
+          "normal_Hessian": -0.006131910176448353
+        },
+        {
+          "log10_abs_G_over_mu2": -8,
+          "normal_Hessian": -0.012263820352896707
+        },
+        {
+          "log10_abs_G_over_mu2": -16,
+          "normal_Hessian": -0.024527640705793413
+        },
+        {
+          "log10_abs_G_over_mu2": -32,
+          "normal_Hessian": -0.049055281411586826
+        }
+      ]
+    },
+    {
+      "source_index": 4,
+      "q0": 0.5,
+      "tree_x": [
+        0.321124453596076,
+        0.5147605364241173
+      ],
+      "one_loop_value_at_mu2_one": 0.0018002514674186245,
+      "finite_vacuum_constant_shift": -0.0018002514674186245,
+      "one_loop_x_gradient": [
+        0.008613504946892081,
+        -0.0004043995113456751
+      ],
+      "formal_first_order_dx": [
+        -0.05603716475338724,
+        0.009595893135183758
+      ],
+      "relative_first_order_dx": [
+        -0.17450295088356357,
+        0.01864147007430575
+      ],
+      "formal_tree_F_change": 0.007740211936367247,
+      "tadpole_linear_equation_residual": 1.6263032587282567e-19,
+      "independent_gradient_difference": 4.417802929035375e-13,
+      "Goldstone_Hessian_probe": [
+        {
+          "log10_abs_G_over_mu2": -2,
+          "normal_Hessian": -0.004336561477653141
+        },
+        {
+          "log10_abs_G_over_mu2": -4,
+          "normal_Hessian": -0.008673122955306282
+        },
+        {
+          "log10_abs_G_over_mu2": -8,
+          "normal_Hessian": -0.017346245910612564
+        },
+        {
+          "log10_abs_G_over_mu2": -16,
+          "normal_Hessian": -0.03469249182122513
+        },
+        {
+          "log10_abs_G_over_mu2": -32,
+          "normal_Hessian": -0.06938498364245026
+        }
+      ]
+    },
+    {
+      "source_index": 5,
+      "q0": 0.5715688768903333,
+      "tree_x": [
+        0.30757492542950243,
+        0.5764013664450461
+      ],
+      "one_loop_value_at_mu2_one": 0.0018593275196619058,
+      "finite_vacuum_constant_shift": -0.0018593275196619058,
+      "one_loop_x_gradient": [
+        0.009314212411620167,
+        -0.0003996512421102937
+      ],
+      "formal_first_order_dx": [
+        -0.05356572144189011,
+        0.0028599207525746005
+      ],
+      "relative_first_order_dx": [
+        -0.17415503349985406,
+        0.004961682811776027
+      ],
+      "formal_tree_F_change": 0.008450966781552586,
+      "tadpole_linear_equation_residual": 0.0,
+      "independent_gradient_difference": 4.622101312801163e-13,
+      "Goldstone_Hessian_probe": [
+        {
+          "log10_abs_G_over_mu2": -2,
+          "normal_Hessian": -0.005290485949843482
+        },
+        {
+          "log10_abs_G_over_mu2": -4,
+          "normal_Hessian": -0.010580971899686964
+        },
+        {
+          "log10_abs_G_over_mu2": -8,
+          "normal_Hessian": -0.021161943799373927
+        },
+        {
+          "log10_abs_G_over_mu2": -16,
+          "normal_Hessian": -0.042323887598747854
+        },
+        {
+          "log10_abs_G_over_mu2": -32,
+          "normal_Hessian": -0.08464777519749571
+        }
+      ]
+    }
+  ],
+  "dependency_hashes": {
+    "joint_singlet_common_mass_rg_results.json": "4bd60fde58c288d047275f8441c8e622819cd58a2fe55a5ea2717a5fc3a48d66",
+    "joint_singlet_common_mass_rg.py": "a98101522c25f9709f3994a69b06b4ef5cba081a6827a68354646b13b01dc185"
+  }
+}

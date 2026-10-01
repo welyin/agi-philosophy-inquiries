@@ -1,0 +1,271 @@
+{
+  "round": 570,
+  "tests_run": 8,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "generator_and_momentum_check",
+    "weighted_projection_check",
+    "quadratic_obstruction_check",
+    "small_residual_distance_check",
+    "exact_paired_completion_check",
+    "gauge_covariance_check",
+    "stabilizer_gap_check",
+    "commuting_positive_control_check"
+  ],
+  "evidence": {
+    "generator_and_momentum_check": {
+      "moment_map_independent_error": 1.1102230246251565e-16,
+      "finite_gauge_derivative_error": 5.005873493502122e-11
+    },
+    "weighted_projection_check": {
+      "rows": [
+        {
+          "eta": 0.0,
+          "rank": 15,
+          "constraint_residual": 3.774758283725532e-15,
+          "energy_drop": 2.979221401273351,
+          "orthogonal_energy_identity_error": 1.3322676295501878e-15
+        },
+        {
+          "eta": 0.17,
+          "rank": 16,
+          "constraint_residual": 1.2878587085651816e-14,
+          "energy_drop": 4.022305931780528,
+          "orthogonal_energy_identity_error": 1.7763568394002505e-15
+        }
+      ],
+      "scope": "fixed-configuration mathematical projection, not a preparation protocol"
+    },
+    "quadratic_obstruction_check": {
+      "first_order_Gauss_residual": 0.0,
+      "quadratic_compatibility_coefficient": -23.99999999959999,
+      "exact_coefficient": -24,
+      "rows": [
+        {
+          "eta": 0.2,
+          "Gauss_norm": 0.07986673331746251,
+          "stabilizer_charge": -0.9536127878162937,
+          "charge_over_eta_squared": -23.840319695407338
+        },
+        {
+          "eta": 0.1,
+          "Gauss_norm": 0.01999166770827133,
+          "stabilizer_charge": -0.23960019995238752,
+          "charge_over_eta_squared": -23.960019995238746
+        },
+        {
+          "eta": 0.03,
+          "Gauss_norm": 0.0017999325007593703,
+          "stabilizer_charge": -0.021596760145796864,
+          "charge_over_eta_squared": -23.996400161996515
+        },
+        {
+          "eta": 0.01,
+          "Gauss_norm": 0.0001999991666677083,
+          "stabilizer_charge": -0.0023999600001999985,
+          "charge_over_eta_squared": -23.999600001999983
+        }
+      ],
+      "nonzero_coefficient_precludes_exact_C1_curve_with_this_tangent": true
+    },
+    "small_residual_distance_check": {
+      "rows": [
+        {
+          "eta": 0.2,
+          "amplitude": 0.2,
+          "Gauss_norm": 0.07986673331746251,
+          "minimum_correction_norm": 0.25864718607689835,
+          "relative_correction": 0.9973123695994899,
+          "proven_relative_lower_bound": 0.9950041652780258,
+          "full_trial_energy": 0.7700113787090381
+        },
+        {
+          "eta": 0.2,
+          "amplitude": 1.0,
+          "Gauss_norm": 0.39933366658731256,
+          "minimum_correction_norm": 1.2932359303844916,
+          "relative_correction": 0.9973123695994897,
+          "proven_relative_lower_bound": 0.9950041652780258,
+          "full_trial_energy": 1.5771243939824169
+        },
+        {
+          "eta": 0.05,
+          "amplitude": 0.05,
+          "Gauss_norm": 0.004999479182942466,
+          "minimum_correction_norm": 0.0648168245136298,
+          "relative_correction": 0.9997034466307095,
+          "proven_relative_lower_bound": 0.9996875162757026,
+          "full_trial_energy": 0.05009815471139646
+        },
+        {
+          "eta": 0.05,
+          "amplitude": 1.0,
+          "Gauss_norm": 0.0999895836588493,
+          "minimum_correction_norm": 1.2963364902725958,
+          "relative_correction": 0.9997034466307093,
+          "proven_relative_lower_bound": 0.9996875162757026,
+          "full_trial_energy": 0.8887390221438918
+        },
+        {
+          "eta": 0.01,
+          "amplitude": 0.01,
+          "Gauss_norm": 0.0001999991666677083,
+          "minimum_correction_norm": 0.012967048630418641,
+          "relative_correction": 0.999987526828903,
+          "proven_relative_lower_bound": 0.9999875000260416,
+          "full_trial_energy": 0.002009079217098728
+        },
+        {
+          "eta": 0.01,
+          "amplitude": 1.0,
+          "Gauss_norm": 0.01999991666677083,
+          "minimum_correction_norm": 1.2967048630418638,
+          "relative_correction": 0.9999875268289028,
+          "proven_relative_lower_bound": 0.9999875000260416,
+          "full_trial_energy": 0.8426677291877774
+        },
+        {
+          "eta": 0.003,
+          "amplitude": 0.003,
+          "Gauss_norm": 1.7999993250000752e-05,
+          "minimum_correction_norm": 0.003890158736209226,
+          "relative_correction": 0.9999988752177404,
+          "proven_relative_lower_bound": 0.9999988750002109,
+          "full_trial_energy": 0.0001808347365704109
+        },
+        {
+          "eta": 0.003,
+          "amplitude": 1.0,
+          "Gauss_norm": 0.005999997750000251,
+          "minimum_correction_norm": 1.2967195787364088,
+          "relative_correction": 0.9999988752177406,
+          "proven_relative_lower_bound": 0.9999988750002109,
+          "full_trial_energy": 0.8409159922951552
+        }
+      ],
+      "no_uniform_residual_to_distance_bound_across_stabilizer_change": true,
+      "not_a_counterexample_to_a_specific_constraint_preserving_continuum_sampling": true
+    },
+    "exact_paired_completion_check": {
+      "rows": [
+        {
+          "eta": 0.2,
+          "full_Gauss_residual": 5.551115123125783e-17,
+          "extra_kinetic_energy": 0.06026147300057265,
+          "extra_energy_over_eta_fourth": 37.6634206253579,
+          "correction_norm_over_eta_squared": 8.679103712406933,
+          "internal_bridge_circle_momentum": 0.9536127878162939,
+          "total_energy": 1.6002842304186489
+        },
+        {
+          "eta": 0.1,
+          "full_Gauss_residual": 3.469446951953614e-18,
+          "extra_kinetic_energy": 0.003777022397690475,
+          "extra_energy_over_eta_fourth": 37.77022397690474,
+          "correction_norm_over_eta_squared": 8.69140080503767,
+          "internal_bridge_circle_momentum": 0.23960019995238757,
+          "total_energy": 0.4013578152319848
+        },
+        {
+          "eta": 0.05,
+          "full_Gauss_residual": 6.938893903907228e-18,
+          "extra_kinetic_energy": 0.00023623108659820432,
+          "extra_energy_over_eta_fourth": 37.796973855712686,
+          "correction_norm_over_eta_squared": 8.694478001089276,
+          "internal_bridge_circle_momentum": 0.059975003124814005,
+          "total_energy": 0.10043254050939113
+        },
+        {
+          "eta": 0.01,
+          "full_Gauss_residual": 2.168404344971009e-19,
+          "extra_kinetic_energy": 3.780553796663082e-07,
+          "extra_energy_over_eta_fourth": 37.80553796663082,
+          "correction_norm_over_eta_squared": 8.695462951060263,
+          "internal_bridge_circle_momentum": 0.0023999600001999993,
+          "total_energy": 0.0040185364895771215
+        }
+      ],
+      "exact_circle_flow_coefficients": [
+        -9,
+        -3,
+        3,
+        9,
+        9,
+        3,
+        -3,
+        -9,
+        24
+      ],
+      "same_first_order_tangent_preserved": true,
+      "all_countercharge_and_flux_internal": true,
+      "extra_energy_is_initial_data_energy_not_a_protocol_cost": true
+    },
+    "gauge_covariance_check": {
+      "full_Gauss_after_arbitrary_node_gauge_error": 1.942890293094024e-16,
+      "full_H_energy_invariance_error": 2.098321516541546e-14
+    },
+    "stabilizer_gap_check": {
+      "vacuum_rank": 15,
+      "perturbed_rank": 16,
+      "rows": [
+        {
+          "eta": 0.2,
+          "least_singular_value": 0.3036692301301186,
+          "explicit_upper_bound": 0.3037664162016439,
+          "sigma_over_eta": 1.5183461506505929
+        },
+        {
+          "eta": 0.05,
+          "least_singular_value": 0.07605890357058707,
+          "explicit_upper_bound": 0.07606039767474021,
+          "sigma_over_eta": 1.5211780714117413
+        },
+        {
+          "eta": 0.01,
+          "least_singular_value": 0.01521358891138278,
+          "explicit_upper_bound": 0.015213600851928582,
+          "sigma_over_eta": 1.521358891138278
+        },
+        {
+          "eta": 0.003,
+          "least_singular_value": 0.004564097238715827,
+          "explicit_upper_bound": 0.004564097561098071,
+          "sigma_over_eta": 1.521365746238609
+        }
+      ],
+      "condition_is_a_model_error_bound_not_a_new_cognitive_axiom": true
+    },
+    "commuting_positive_control_check": {
+      "rows": [
+        {
+          "eta": 0.07,
+          "exact_Gauss_residual": 1.3877787807814457e-17,
+          "total_energy": 0.09794050144008695
+        },
+        {
+          "eta": 0.2,
+          "exact_Gauss_residual": 5.551115123125783e-17,
+          "total_energy": 0.7700113787090381
+        }
+      ],
+      "single_loop_is_not_generically_forbidden": true
+    }
+  },
+  "dependency_hashes": {
+    "joint_quotient_gauge_completion.py": "ad79d467500513738d718478a24e2176d88e7225316badfb7f1d62129c4b9494",
+    "joint_quotient_gauge_completion_results.json": "8f716f7ddc239f6f0be949772bedfa0972abf608855b417dcc206c1464b5fc70",
+    "research_note_549.md": "33b27324128d04f98f6e795148004fef7c9111d3aea4d3c8fbbfca8670c55797",
+    "research_note_550.md": "5bb203a04c8a69c07c52ef882c86992e427f52d60368528fcfebe99cdbc30271",
+    "research_note_568.md": "1ef0d222af42a290ea1c5185050a937a22f1a46748549e7f5613fb3e8678f241",
+    "research_note_569.md": "ac49350c12a9d1a340dfa36a02a5dfb4177953b1aa321639f858d7862f84c0b6"
+  },
+  "scope": {
+    "same_finite_Higgs_hypercharge_Hamiltonian": true,
+    "quadratic_Gauss_compatibility_is_needed_beyond_linear_modes": true,
+    "exact_internal_paired_completion": true,
+    "known_linearization_instability_tools_not_claimed_new": true,
+    "no_specific_continuum_sampling_failure_proven": true,
+    "no_spacetime_dimension_GR_chiral_matter_or_quantum_continuum_completion": true
+  }
+}

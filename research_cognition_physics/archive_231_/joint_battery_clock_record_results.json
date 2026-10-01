@@ -1,0 +1,212 @@
+{
+  "round": 595,
+  "tests_run": 4,
+  "failures": 0,
+  "errors": 0,
+  "evidence": {
+    "positive_energy_profile": {
+      "rows": [
+        {
+          "shift": 0.0,
+          "overlap": 0.9999999999999991,
+          "analytic_overlap": 1.0,
+          "vector_translation_error": 0.0,
+          "derivative_bound": 0.0
+        },
+        {
+          "shift": 0.4,
+          "overlap": 0.9880985603275578,
+          "analytic_overlap": 0.9880985603275589,
+          "vector_translation_error": 0.15428181793355378,
+          "derivative_bound": 0.15707963267948966
+        },
+        {
+          "shift": 1.7,
+          "overlap": 0.8155008076104726,
+          "analytic_overlap": 0.8155008076104733,
+          "vector_translation_error": 0.6074523724367644,
+          "derivative_bound": 0.667588438887831
+        },
+        {
+          "shift": 3.0,
+          "overlap": 0.5332571340693821,
+          "analytic_overlap": 0.5332571340693826,
+          "vector_translation_error": 0.9661706535914013,
+          "derivative_bound": 1.1780972450961724
+        }
+      ],
+      "mean": 6.999999999999995,
+      "variance": 2.0910554567785233,
+      "positive_energy_support": [
+        3.0,
+        11.0
+      ]
+    },
+    "energy_conserving_reference_dilation": {
+      "diagnostic_energies": [
+        0.2,
+        0.9,
+        2.1
+      ],
+      "rows": [
+        {
+          "width": 4.0,
+          "norm": 0.9999999999999997,
+          "system_energy_gain": 0.002382186909980155,
+          "ideal_system_energy_gain": 0.0023821869099799886,
+          "battery_energy_change": -0.0023821869099815984,
+          "total_energy_error": -1.7763568394002505e-15,
+          "total_energy_square_error": -7.105427357601002e-15,
+          "vector_error": 0.03806262946761154,
+          "reference_retaining_trace_distance": 0.013455200629119944,
+          "uniform_battery_error_bound": 2.356194490192345
+        },
+        {
+          "width": 8.0,
+          "norm": 0.9999999999999983,
+          "system_energy_gain": 0.0023821869099796555,
+          "ideal_system_energy_gain": 0.0023821869099799886,
+          "battery_energy_change": -0.0023821869099904802,
+          "total_energy_error": -1.1546319456101628e-14,
+          "total_energy_square_error": -8.526512829121202e-14,
+          "vector_error": 0.020405061723342943,
+          "reference_retaining_trace_distance": 0.004209887669937512,
+          "uniform_battery_error_bound": 1.1780972450961724
+        },
+        {
+          "width": 16.0,
+          "norm": 0.9999999999999969,
+          "system_energy_gain": 0.002382186909978934,
+          "ideal_system_energy_gain": 0.0023821869099799886,
+          "battery_energy_change": -0.002382186910015349,
+          "total_energy_error": -3.730349362740526e-14,
+          "total_energy_square_error": -3.979039320256561e-13,
+          "vector_error": 0.010500893752644446,
+          "reference_retaining_trace_distance": 0.0011532204594162446,
+          "uniform_battery_error_bound": 0.5890486225480862
+        },
+        {
+          "width": 32.0,
+          "norm": 0.9999999999999962,
+          "system_energy_gain": 0.002382186909978712,
+          "ideal_system_energy_gain": 0.0023821869099799886,
+          "battery_energy_change": -0.002382186910054429,
+          "total_energy_error": -7.460698725481052e-14,
+          "total_energy_square_error": -1.5347723092418164e-12,
+          "vector_error": 0.005317325161367433,
+          "reference_retaining_trace_distance": 0.0002997798372690039,
+          "uniform_battery_error_bound": 0.2945243112740431
+        }
+      ],
+      "spectrum_not_claimed_to_be_original_H0": true,
+      "half_line_boundary_completed_fibrewise": true
+    },
+    "joint_clock_energy_and_record": {
+      "dictionary_error": 3.6108142321054616e-14,
+      "free_energy_commutator": 0.0,
+      "minimum_finite_fixture_eigenvalue": 0.009547087618093992,
+      "rows": [
+        {
+          "time": 0.5,
+          "history_error": 4.4070841207150455e-15,
+          "record_mixture_error": 9.367286525695205e-16,
+          "p_unfinished": 0.9391040893465951,
+          "reference_retaining_record_distance": 0.3735946508327541,
+          "system_energy_gain": -0.00032110965261389346,
+          "completed_weight_energy_residual": 8.575497083274097e-16,
+          "free_total_energy_error": 1.3322676295501878e-15,
+          "full_autonomous_energy_error": 1.7763568394002505e-15,
+          "clock_truncation_bound": 1.22385770396934e-21
+        },
+        {
+          "time": 1.5,
+          "history_error": 9.782924557085229e-15,
+          "record_mixture_error": 2.609118368125145e-15,
+          "p_unfinished": 0.5534100388602966,
+          "reference_retaining_record_distance": 0.22015773606012756,
+          "system_energy_gain": -0.002354909315650855,
+          "completed_weight_energy_residual": 9.835882108788496e-16,
+          "free_total_energy_error": 2.220446049250313e-15,
+          "full_autonomous_energy_error": 2.220446049250313e-15,
+          "clock_truncation_bound": 5.012416958604013e-13
+        },
+        {
+          "time": 3.0,
+          "history_error": 1.665230928606871e-14,
+          "record_mixture_error": 3.0475590549550786e-15,
+          "p_unfinished": 0.05109376771408573,
+          "reference_retaining_record_distance": 0.020326136927117357,
+          "system_energy_gain": -0.005003668511461834,
+          "completed_weight_energy_residual": 1.0946105133413653e-15,
+          "free_total_energy_error": 3.1086244689504383e-15,
+          "full_autonomous_energy_error": 3.9968028886505635e-15,
+          "clock_truncation_bound": 1.437160190370941e-07
+        }
+      ],
+      "original_full_H0_not_numerically_propagated": true
+    },
+    "apparatus_force": {
+      "rows": [
+        {
+          "time": 0.5,
+          "apparatus_force": -0.001719896169719206,
+          "completion_current_force": -0.0017198961697192199,
+          "completion_probability_derivative": 0.23726046598338257,
+          "momentum_change_in_completed_branch": -0.007248979144463449,
+          "identity_error": 1.3877787807814457e-17
+        },
+        {
+          "time": 1.5,
+          "apparatus_force": 0.004313767179185821,
+          "completion_current_force": 0.004313767179185809,
+          "completion_probability_derivative": 0.4604095478226748,
+          "momentum_change_in_completed_branch": 0.009369412948940933,
+          "identity_error": 1.214306433183765e-17
+        },
+        {
+          "time": 3.0,
+          "apparatus_force": 0.00032417046434191955,
+          "completion_current_force": 0.00032417046434195137,
+          "completion_probability_derivative": 0.14650097472249954,
+          "momentum_change_in_completed_branch": 0.002212752952367664,
+          "identity_error": 3.1821333762449555e-17
+        }
+      ],
+      "late_bounds": [
+        {
+          "scaled_time": 2.0,
+          "force_norm_expectation_bound": 0.0032774706651483645,
+          "late_envelope": 0.13628737088229728
+        },
+        {
+          "scaled_time": 5.0,
+          "force_norm_expectation_bound": 0.00024138083025477893,
+          "late_envelope": 0.021805979341167566
+        },
+        {
+          "scaled_time": 10.0,
+          "force_norm_expectation_bound": 5.8418837310210826e-05,
+          "late_envelope": 0.0054514948352918915
+        },
+        {
+          "scaled_time": 20.0,
+          "force_norm_expectation_bound": 1.8293529118459118e-07,
+          "late_envelope": 0.0013628737088229729
+        }
+      ],
+      "nonzero_force_despite_total_energy_conservation": true,
+      "fixture_observable_is_not_original_geometry_momentum": true
+    }
+  },
+  "dependency_hashes": {
+    "research_note_594.md": "d8b6e5da3c7b1092f59900015320b9f0af722ac7d0428ab6ee4b6f6190b5cea7",
+    "research_note_592.md": "f927bcc892f809473f20c88df42b5ab1c0159552d61c0ff803bec03a7f16842c",
+    "research_note_401.md": "f022d917b9836fddfc7c509f62c1ef7b686eac7bc0530a82f75c7d53dbf8c9fc",
+    "persistent_prefix_history_audit.py": "f84a1f8b1a9ab098534bfe00723a73dceb2d91788954b0017096e0f212abe341",
+    "round595_drafts/positive_battery_entry.md": "7789cc3165084f714a6b12f3ce2a43a26ae1d07cede4e6e7919a99ce95341a4d",
+    "round595_drafts/positive_battery_entry.py": "5ac5083518d693724b10ba76c09f080fc4b908ea4966328431f5368c1bb58ade",
+    "round595_drafts/positive_battery_entry_results.json": "b9243134efbf0be76ee1086ede1757d8ed7e9d2a3795276720e707a37addcb44",
+    "round595_drafts/positive_battery_entry_checks.json": "b981d3f25c526ef4b0e008ed0b63454809a402e7251d9bf0486c7ab523ebd717"
+  },
+  "scope": "Conditional original-H0 dilation with a positive continuous battery, explicit coherence resources, neutral record registers and a half-infinite history clock. One fixed positive autonomous H per accuracy gives late record/old-source approximation and exact total energy conservation. Gate geometry force is included and bounded, not a total gravitational stress tensor. Spectral/global couplings, extra hardware and preparation are inputs. Matrix fixtures are not original H0 spectra. No local matter realization, GR constraints or continuum completion."
+}

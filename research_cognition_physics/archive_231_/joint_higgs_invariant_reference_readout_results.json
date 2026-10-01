@@ -1,0 +1,320 @@
+{
+  "round": 556,
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "same_potential_radial_domain_counterexample_with_independent_log_integral",
+    "full_five_component_interacting_energy_and_correct_laplacian_majorant",
+    "positive_invariant_POVM_moments_independent_Bargmann_output_integration",
+    "SU2_real_representation_and_full_quadratic_output_invariance",
+    "finite_Fock_Casimirs_and_exact_thermal_singlet_leakage_with_analytic_tail",
+    "one_energy_budget_for_all_invariant_records_and_instrument_scope_comparison"
+  ],
+  "dependency_hashes": {
+    "joint_matter_energy_moment_control.py": "604aba32b42c466a044eb91c207a889486f2fa18294f254953ab05ddf25725d4",
+    "joint_singlet_common_mass_rg_results.json": "4bd60fde58c288d047275f8441c8e622819cd58a2fe55a5ea2717a5fc3a48d66",
+    "round556_drafts/radial_domain_probe.py": "3505ed56e8dfc0e119dbc2a111f4ace4b4f8c2f3b70efc279649e4ec88caca66",
+    "round556_drafts/radial_domain_probe_results.json": "c6d9e6c77c567f9bcf631d97ba288e1b3cc4ff830d63dcc4ab87fd601cae7a3b"
+  },
+  "radial_counterexample": {
+    "status": "preliminary_556_not_a_completed_round",
+    "omega": 1.3,
+    "a": 0.5,
+    "inherited_L": [
+      [
+        0.23338508713830064,
+        0.12498076998911703
+      ],
+      [
+        0.12498076998911703,
+        0.26395525357720834
+      ]
+    ],
+    "C": [
+      0.14058642955799208,
+      0.1339932766997666
+    ],
+    "u": [
+      0.44281434044724316,
+      0.29796716830809955
+    ],
+    "full_Cartesian_E1": 1.7900415384712216,
+    "full_Cartesian_E2": 3.81028584427322,
+    "radial_operator_extra_coefficient": 0.375,
+    "predicted_log_divergence_coefficient": 0.4753125000000001,
+    "measured_last_decade_slope": 0.47531249867165076,
+    "exact_finite_full_radial_kinetic_second_moment": 2.535,
+    "cutoff_diagnostics": [
+      {
+        "radial_cutoff": 0.1,
+        "centrifugal_piece_norm_squared": 0.8979955786347701,
+        "flat_radial_piece_norm_squared": 1.5638703611596907,
+        "cross_term": 0.07257021502038305,
+        "full_radial_kinetic_norm_squared": 2.5344361548148444
+      },
+      {
+        "radial_cutoff": 0.01,
+        "centrifugal_piece_norm_squared": 1.989394430746789,
+        "flat_radial_piece_norm_squared": 2.623473896857669,
+        "cross_term": -2.077868384719033,
+        "full_radial_kinetic_norm_squared": 2.534999942885426
+      },
+      {
+        "radial_cutoff": 0.001,
+        "centrifugal_piece_norm_squared": 3.083811322405115,
+        "flat_radial_piece_norm_squared": 3.717564617896727,
+        "cross_term": -4.266375940307553,
+        "full_radial_kinetic_norm_squared": 2.53499999999429
+      },
+      {
+        "radial_cutoff": 0.0001,
+        "centrifugal_piece_norm_squared": 4.178258493555354,
+        "flat_radial_piece_norm_squared": 4.812008526510354,
+        "cross_term": -6.455267020065708,
+        "full_radial_kinetic_norm_squared": 2.5349999999999997
+      },
+      {
+        "radial_cutoff": 1e-05,
+        "centrifugal_piece_norm_squared": 5.27270596751045,
+        "flat_radial_piece_norm_squared": 5.906455967840001,
+        "cross_term": -8.64416193535045,
+        "full_radial_kinetic_norm_squared": 2.535000000000001
+      }
+    ],
+    "independent_log_quadrature_residual": 6.217248937900877e-15,
+    "SU2_norm_invariance_residual": 1.7763568394002505e-15,
+    "frozen_dependency_hashes": {
+      "joint_matter_energy_moment_control.py": "604aba32b42c466a044eb91c207a889486f2fa18294f254953ab05ddf25725d4",
+      "joint_singlet_common_mass_rg_results.json": "4bd60fde58c288d047275f8441c8e622819cd58a2fe55a5ea2717a5fc3a48d66"
+    },
+    "scope": {
+      "single_cell_global_SU2_singlet_only": true,
+      "cutoff_only_diagnoses_norm_divergence_not_new_boundary_dynamics": true,
+      "no_contradiction_to_round555_smooth_full_space_theorem": true,
+      "complete_local_gauge_model_and_actual_radial_POVM_not_yet_constructed": true
+    }
+  },
+  "witness_sources": [
+    {
+      "radial_excitation": 0,
+      "singlet_oscillator_excitation": 0,
+      "omega": 1.3,
+      "v": 1.0,
+      "E1": 1.7900415384712216,
+      "E2": 3.81028584427322,
+      "laplacian_polynomial_residual": 2.220446049250313e-16,
+      "graph_identity_relative_residual": 1.2820511394683718e-15,
+      "source_menu_means": [
+        1.5384615384615383,
+        0.0,
+        2.6,
+        0.65
+      ],
+      "source_menu_second_moments": [
+        3.5502958579881647,
+        0.3846153846153846,
+        10.14,
+        1.2675
+      ],
+      "actual_record_second_moments": [
+        7.100591715976329,
+        0.7692307692307692,
+        20.28,
+        3.8025000000000007
+      ],
+      "record_bounds": [
+        165.77575866804852,
+        31.289097158400725,
+        123.59871128427834,
+        121.06371128427834
+      ],
+      "potential_majorant": {
+        "A": 24.85033845562141,
+        "B": 3.3515378729364427
+      },
+      "graph_budget": 27.727623821056998
+    },
+    {
+      "radial_excitation": 1,
+      "singlet_oscillator_excitation": 1,
+      "omega": 1.3,
+      "v": 1.0,
+      "E1": 4.503824537878219,
+      "E2": 21.532716717554052,
+      "laplacian_polynomial_residual": 2.220446049250313e-16,
+      "graph_identity_relative_residual": 2.639862847146813e-15,
+      "source_menu_means": [
+        3.076923076923074,
+        0.0,
+        5.200000000000001,
+        1.9499999999999988
+      ],
+      "source_menu_second_moments": [
+        14.201183431952657,
+        1.1538461538461526,
+        40.560000000000045,
+        6.337500000000004
+      ],
+      "actual_record_second_moments": [
+        20.118343195266263,
+        1.5384615384615372,
+        57.46000000000005,
+        12.252500000000001
+      ],
+      "record_bounds": [
+        410.6503806776812,
+        75.50257057680663,
+        343.4769584350687,
+        340.9419584350687
+      ],
+      "potential_majorant": {
+        "A": 24.85033845562141,
+        "B": 3.3515378729364427
+      },
+      "graph_budget": 79.16926770952549
+    },
+    {
+      "radial_excitation": 2,
+      "singlet_oscillator_excitation": 0,
+      "omega": 1.3,
+      "v": 0.7,
+      "E1": 7.211630326643254,
+      "E2": 60.007264560734995,
+      "laplacian_polynomial_residual": 2.220446049250313e-16,
+      "graph_identity_relative_residual": 2.3089843286054705e-14,
+      "source_menu_means": [
+        4.615384615384631,
+        0.0,
+        7.7999999999999545,
+        0.6500000000000004
+      ],
+      "source_menu_second_moments": [
+        31.95266272189344,
+        0.384615384615385,
+        91.26000000000319,
+        1.2674999999999903
+      ],
+      "actual_record_second_moments": [
+        40.23668639053252,
+        0.7692307692307696,
+        114.92000000000307,
+        3.8024999999999918
+      ],
+      "record_bounds": [
+        933.8707700801787,
+        169.97291866336866,
+        401.4251162509716,
+        398.89011625097163
+      ],
+      "potential_majorant": {
+        "A": 24.85033845562141,
+        "B": 2.34607651105551
+      },
+      "graph_budget": 189.69121523570928
+    }
+  ],
+  "independent_record_moment_errors": [
+    3.552713678800501e-15,
+    1.0658141036401503e-13,
+    2.9274360713316128e-12
+  ],
+  "SU2_menu_invariance_residual": 3.552713678800501e-15,
+  "fock_sector_diagnostics": [
+    {
+      "excitation": 0,
+      "dimension": 1,
+      "singlet_multiplicity": 1,
+      "smallest_Casimir_eigenvalue": 0.0
+    },
+    {
+      "excitation": 1,
+      "dimension": 4,
+      "singlet_multiplicity": 0,
+      "smallest_Casimir_eigenvalue": 0.75
+    },
+    {
+      "excitation": 2,
+      "dimension": 10,
+      "singlet_multiplicity": 1,
+      "smallest_Casimir_eigenvalue": 2.7755575615628914e-16
+    },
+    {
+      "excitation": 3,
+      "dimension": 20,
+      "singlet_multiplicity": 0,
+      "smallest_Casimir_eigenvalue": 0.7499999999999989
+    },
+    {
+      "excitation": 4,
+      "dimension": 35,
+      "singlet_multiplicity": 1,
+      "smallest_Casimir_eigenvalue": -4.163336342344337e-16
+    },
+    {
+      "excitation": 5,
+      "dimension": 56,
+      "singlet_multiplicity": 0,
+      "smallest_Casimir_eigenvalue": 0.7499999999999964
+    },
+    {
+      "excitation": 6,
+      "dimension": 84,
+      "singlet_multiplicity": 1,
+      "smallest_Casimir_eigenvalue": -1.1272844014655377e-15
+    },
+    {
+      "excitation": 7,
+      "dimension": 120,
+      "singlet_multiplicity": 0,
+      "smallest_Casimir_eigenvalue": 0.7499999999999958
+    },
+    {
+      "excitation": 8,
+      "dimension": 165,
+      "singlet_multiplicity": 1,
+      "smallest_Casimir_eigenvalue": 1.1578992914935183e-15
+    }
+  ],
+  "Casimir_commutator_residual": 8.881784197001252e-16,
+  "heterodyne_instrument": {
+    "input": "invariant_reference_oscillator_vacuum_not_interacting_ground_state",
+    "output": "four_mode_thermal_mean_occupation_one_not_interacting_Gibbs_state",
+    "singlet_probability": "1/12",
+    "leakage_probability": "11/12",
+    "checked_singlet_weight_through_n8": "341/4096",
+    "exact_singlet_tail": "1/12288",
+    "independent_center_parity_leakage_lower_bound": "40/81",
+    "covariant_output_density_is_not_singlet_support": true
+  },
+  "finite_record_certificates": [
+    {
+      "radial_excitation": 0,
+      "raw_invariant_record_radius": 93.99226334066076,
+      "failure_bound": 0.05,
+      "witness_Markov_bound": 0.0036167477138048013
+    },
+    {
+      "radial_excitation": 1,
+      "raw_invariant_record_radius": 153.0079650295778,
+      "failure_bound": 0.05,
+      "witness_Markov_bound": 0.0039027635646203744
+    },
+    {
+      "radial_excitation": 2,
+      "raw_invariant_record_radius": 195.14911843231525,
+      "failure_bound": 0.05,
+      "witness_Markov_bound": 0.004194198692598875
+    }
+  ],
+  "scope": {
+    "single_cell_global_SU2_only": true,
+    "radial_quantization_is_inherited_math": true,
+    "invariant_POVM_exists": true,
+    "finite_bin_square_root_instrument_is_abstract_input": true,
+    "no_same_matter_autonomous_detector_proved": true,
+    "no_post_measurement_energy_moment_bound_claimed": true,
+    "no_local_Gauss_constraints_or_spatial_derivatives_included": true,
+    "no_spacetime_coordinates_or_gravity_generation_claimed": true
+  }
+}

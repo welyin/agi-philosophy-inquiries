@@ -1,0 +1,269 @@
+{
+  "round": 540,
+  "tests_run": 7,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "exact_completed_square_identity_for_top_and_two_neutrino_columns",
+    "conservative_frozen_gauge_and_high_boundary_enclosures",
+    "full_matrix_determinant_growth_and_rational_small_breaking_budget",
+    "one_hundred_exact_downward_rounded_Euler_subsolution_steps",
+    "independent_closed_Riccati_expression_and_numerical_crosscheck",
+    "diagnostic_trajectories_cover_varied_top_and_threshold_without_serving_as_proof",
+    "conditional_negative_correction_budget_with_positive_first_crossing"
+  ],
+  "assumptions": {
+    "high_determinant_at_most": "1/1000000",
+    "top_only_charged_Yukawa": true,
+    "at_most_two_active_neutrino_columns": true,
+    "tree_continuous_quartic_thresholds": true,
+    "one_loop_dimension_four_running": true,
+    "frozen_round531_gauge_input": true
+  },
+  "constants": {
+    "B_min": 3.2824867509060827,
+    "B_max": 4.308400178580026,
+    "C_max": 0.2643072628667644,
+    "initial_lambda_lower": 0.3221159570162299,
+    "det_growth_upper": 1.6847081712829555,
+    "reduced_time_upper": "19/157",
+    "comparison_A": "82/25",
+    "comparison_C": "53/200"
+  },
+  "determinant_identity_max_error": 2.842170943040401e-14,
+  "exact_certificate": {
+    "scale": 1000000000000,
+    "steps": 100,
+    "terminal_fraction": "170094682669/1000000000000",
+    "all_step_integer_numerators": [
+      322000000000,
+      318942176305,
+      315948113657,
+      313015780819,
+      310143232093,
+      307328602856,
+      304570105371,
+      301866024856,
+      299214715793,
+      296614598457,
+      294064155654,
+      291561929652,
+      289106519288,
+      286696577246,
+      284330807490,
+      282007962840,
+      279726842690,
+      277486290847,
+      275285193493,
+      273122477257,
+      270997107392,
+      268908086050,
+      266854450649,
+      264835272323,
+      262849654458,
+      260896731300,
+      258975666638,
+      257085652550,
+      255225908216,
+      253395678786,
+      251594234309,
+      249820868714,
+      248074898837,
+      246355663498,
+      244662522624,
+      242994856408,
+      241352064516,
+      239733565323,
+      238138795190,
+      236567207773,
+      235018273362,
+      233491478253,
+      231986324145,
+      230502327567,
+      229039019328,
+      227595943995,
+      226172659389,
+      224768736105,
+      223383757055,
+      222017317027,
+      220669022265,
+      219338490067,
+      218025348396,
+      216729235514,
+      215449799625,
+      214186698535,
+      212939599326,
+      211708178043,
+      210492119396,
+      209291116467,
+      208104870438,
+      206933090321,
+      205775492705,
+      204631801510,
+      203501747749,
+      202385069304,
+      201281510706,
+      200190822925,
+      199112763167,
+      198047094682,
+      196993586573,
+      195952013620,
+      194922156102,
+      193903799632,
+      192896734996,
+      191900757995,
+      190915669299,
+      189941274298,
+      188977382967,
+      188023809727,
+      187080373318,
+      186146896673,
+      185223206799,
+      184309134655,
+      183404515046,
+      182509186508,
+      181622991207,
+      180745774835,
+      179877386512,
+      179017678692,
+      178166507069,
+      177323730492,
+      176489210874,
+      175662813113,
+      174844405009,
+      174033857188,
+      173231043025,
+      172435838571,
+      171648122485,
+      170867775962,
+      170094682669
+    ],
+    "strict_reported_floor": 0.17009,
+    "comparison_exact_solution": 0.17062861637982019,
+    "comparison_RK4_error": 4.440892098500626e-16
+  },
+  "historical_low_benchmark": {
+    "scale_GeV": 173.34,
+    "lambda_MS": 0.12604,
+    "source": "Buttazzo et al 1307.3536 Eq(55), same quartic convention; historical benchmark, not current fit",
+    "source_url": "https://arxiv.org/html/1307.3536",
+    "required_gap": 0.04405
+  },
+  "conditional_revision_budget": {
+    "negative_initial_shift_plus_negative_jumps_plus_negative_source_integral": true,
+    "source_integrated_in_reduced_time": true,
+    "amplification_upper": 1.4872706700532379,
+    "safe_amplification": 1.5,
+    "necessary_budget_exact": "881/30000",
+    "necessary_budget_float": 0.029366666666666666,
+    "not_a_sufficient_repair": true
+  },
+  "numerical_samples_not_used_as_proof": [
+    {
+      "x": 0.0,
+      "threshold": 1000.0,
+      "lambda_MZ": 0.29621609617957606
+    },
+    {
+      "x": 0.0,
+      "threshold": 1000000.0,
+      "lambda_MZ": 0.298104114771099
+    },
+    {
+      "x": 0.0,
+      "threshold": 1000000000.0,
+      "lambda_MZ": 0.30300450702287646
+    },
+    {
+      "x": 0.1,
+      "threshold": 1000.0,
+      "lambda_MZ": 0.23602761760799854
+    },
+    {
+      "x": 0.1,
+      "threshold": 1000000.0,
+      "lambda_MZ": 0.23723766314613318
+    },
+    {
+      "x": 0.1,
+      "threshold": 1000000000.0,
+      "lambda_MZ": 0.24010031972225493
+    },
+    {
+      "x": 0.2,
+      "threshold": 1000.0,
+      "lambda_MZ": 0.22061932377812563
+    },
+    {
+      "x": 0.2,
+      "threshold": 1000000.0,
+      "lambda_MZ": 0.2237661241542199
+    },
+    {
+      "x": 0.2,
+      "threshold": 1000000000.0,
+      "lambda_MZ": 0.22769134620663134
+    },
+    {
+      "x": 0.322118666767,
+      "threshold": 1000.0,
+      "lambda_MZ": 0.24463377074996287
+    },
+    {
+      "x": 0.322118666767,
+      "threshold": 1000000.0,
+      "lambda_MZ": 0.2496170372782514
+    },
+    {
+      "x": 0.322118666767,
+      "threshold": 1000000000.0,
+      "lambda_MZ": 0.2544605937121657
+    },
+    {
+      "x": 0.5,
+      "threshold": 1000.0,
+      "lambda_MZ": 0.3234752774217519
+    },
+    {
+      "x": 0.5,
+      "threshold": 1000000.0,
+      "lambda_MZ": 0.32611651385707613
+    },
+    {
+      "x": 0.5,
+      "threshold": 1000000000.0,
+      "lambda_MZ": 0.3282236916599304
+    },
+    {
+      "x": 0.5715688768903332,
+      "threshold": 1000.0,
+      "lambda_MZ": 0.35725743028200413
+    },
+    {
+      "x": 0.5715688768903332,
+      "threshold": 1000000.0,
+      "lambda_MZ": 0.35725743028116036
+    },
+    {
+      "x": 0.5715688768903332,
+      "threshold": 1000000000.0,
+      "lambda_MZ": 0.35725743027622514
+    }
+  ],
+  "dependency_hashes": {
+    "research_note_539.md": "b018039bef1ed3450685904dcfee2d40b5a89b3c9c8f1d174ae2233806c08fe8",
+    "rank_two_breaking_bridge_results.json": "c84471ae20f6ea2a75c465a7d2f760534a9fae33b218a6b40c91289b78466a92",
+    "protected_pair_rg.py": "f78969e549ab47dfd12dde1fb2ec58340c1888f725684ff322e1bb9c6538de82",
+    "joint_gauge_matter_constraints_results.json": "c2ede9a75cc2e0e13ebce2b65b9a2eaf8276518c7d6147943a21fd232f4e29c3",
+    "joint_yukawa_higgs_matching_results.json": "4703023582d4c4dfddbe630e7bd5992eb351073753ddb050fc2dda854971c7fa",
+    "unified_physics_condition_ledger_539.md": "08d3a3635fd6dbf0d91fed4698537788898d06a4a4a879b3eebb232d507397e3"
+  },
+  "scope": {
+    "all_top_and_threshold_choices_in_declared_branch": true,
+    "covers_round539_examples": true,
+    "finite_matching_or_higher_loops_excluded_from_theorem": true,
+    "full_physical_model_or_cognitive_axioms_disproved": false,
+    "current_global_experimental_fit_performed": false,
+    "full_unification_or_GR_derived": false
+  }
+}

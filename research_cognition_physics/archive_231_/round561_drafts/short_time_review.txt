@@ -1,0 +1,65 @@
+561候选独立预审：同一完整H的有限时动态读口
+日期：2026-09-30
+审阅者：macro_next_gap_audit
+性质：解析/范围预审，不替代尚未生成的正式正文、代码及结果终审；不改560冻结文件。
+
+一、结论
+
+候选可以给真实完整源上的正面接口：同一H/F、同一正规非平稳Gauss来源、同一个有界阈值记录，在严格正但足够短的有限作用时间内具有非零源时间响应。父级后来提出的“直接控制初始响应导数”路线比先传播psi_s再估计K更短，系数正确，建议采用为主证明。
+这不只是557瞬时仪器的重述，也不更换为525的其它Hamiltonian；新增是保留完整源H、有限作用时间、实际有界记录及总Hamiltonian半有界条件的同模型连接。一般Duhamel/短时连续性属于成熟工具，不称新发现。结论只签一个局部时间参数的响应，不签四坐标、宏观几何或自治物质装置。
+
+二、共轭恒等式及Duhamel界
+
+沿用hbar=1，H=T+V，其中T=-a Delta_q-b Delta_G，V=W+F>=0；F为实规范不变乘法。取J=i[F,H]，Gamma=a|grad_q F|^2+b|grad_G F|^2。二阶微分算符直接展开给
+exp(i theta F) H exp(-i theta F)=H+theta J+theta^2 Gamma。
+特别是二阶项正号；[F,[F,H]]=-2Gamma。没有高阶BCH余项。
+
+固定指针动量p，用区间[0,1]上的Duhamel比较
+U_tau(p)=exp[-i(tau H+gpF)]，U_0(p)=exp(-igpF)。
+对正规chi（允许未归一），H exp(-itg pF)chi的范数不超过
+||Hchi||+t g|p| ||Jchi||+t^2 g^2 p^2 ||Gamma chi||。
+先对指针积分，再用Minkowski及积分t、t^2，故
+||(U_tau-U_0)(chi tensor phi_P)|| <= tau K_chi，
+K_chi=||Hchi||+(g sqrt(mu2)/2)||Jchi||+(g^2 sqrt(mu4)/3)||Gamma chi||。
+1/2和1/3系数正确。此向量界控制对应归一输入的半迹距及任何同一有界末端效果的概率差，没有额外因子2。
+
+域方面：F^2<=B0+B1H使每个固定p的H+(gp/tau)F自伴于D(H)。Gaussian乘有限多项式、再乘紧群光滑函数的chi，对H、J、Gamma及本证明中的相位乘法均有足够正则性；exp(-itg pF)只引入多项式增长的导数，仍可在共同域上逐p应用Duhamel。积分所需p^4由mu4有限保证。直接积分定义U_tau，不需要把形式上的全源/指针生成元差直接对所有有限E1态使用。
+
+三、推荐的有界事件导数证书
+
+取560的psi=phi(1+i eta f)/sqrt(N_eta)，f=F-<F>phi，N_eta=1+eta^2Varphi F，eta>0。令末端阈值效果E满足0<=E<=I，r_tau(s)=<U_tau exp(-isH)psi,E U_tau exp(-isH)psi>（含独立归一指针）。psi在D(H)保证对s初始可微。
+分别对chi=psi及chi=Hpsi使用上节界，直接比较导数中的两个向量，得
+|r_tau'(0)-r_0'(0)| <= 2tau[K_(Hpsi)+||Hpsi||K_psi]。
+因此若D0=K_(Hpsi)+||Hpsi||K_psi且
+0<tau<=r_0'(0)/(4D0)，则r_tau'(0)>=r_0'(0)/2>0。
+这已经证明存在非零小s的有限时实际事件概率差，不需要借用Galerkin有限s轨道，更不用证明整个演化始终Schwartz。psi及Hpsi均为同一完整模型的Gaussian乘多项式/紧群光滑函数，H^2psi、JHpsi、Gamma Hpsi有限。
+应说明这是特定正规来源的高阶范数证书：尤其||H^2psi||涉及四阶能量矩；并非对560全部仅有E1预算来源给同一个短时窗口。
+
+四、瞬时事件的严格正响应
+
+记指针初始Q方差sigma_Q^2>0。若读Q_out>y0，瞬时源效果是
+G(F)=Phi((gF-y0)/sigma_Q)，G'(F)>0。
+psi的精确概率流给
+r_0'(0)=2eta <Gamma G'(F)>phi/N_eta>0。
+Gamma不恒零，phi为处处正Gaussian，故这是真正有界记录的严格正响应，不是只证明无界F均值变化。
+
+可进一步给不依浮点正性判断的粗显式下界。令theta=2kappa vt、t=1/(2omega)，D=kappa v(4a+3bt/4)。phi下F服从Gamma(2,theta)，且E[Gamma|F]=D F。取y0=2gtheta，只在F in [theta,2theta]积分，得到
+r_0'(0) >= [2eta Dg/(N_eta sigma_Q sqrt(2pi))] (7theta/3)
+ exp[-2-g^2theta^2/(2sigma_Q^2)] >0。
+全积分可用于更紧诊断；此粗正下界已足够形成有限正tau存在证书。
+
+记号必须一致：若沿旧笔记把Y=Q/g、nu^2=sigma_Q^2/g^2，则事件Y>y0的效果为Phi((F-y0)/nu)，不能仍把nu与sigma_Q混用。g=1数例恰好掩盖这一差别。
+
+五、总能量和实际补偿末读
+
+为保持559整体半有界充分条件tau^2>M g^2B1/2，可选M(tau)=c tau^2，0<c<2/(g^2B1)。每个固定tau>0给有限正质量和半有界全Hamiltonian，但指针初始动能mu2/(2c tau^2)随短时极限发散；耦合速率g/tau也增长。不能称固定硬件/固定能源的任意短时实现。
+自由指针传播与相互作用对易，可在比较中共同移去；然而M=c tau^2时自由剪切tau/M=1/(c tau)发散。实际正面证书必须使用单一补偿quadrature Q-tau P/M（或等价去剪切后的Q阈值）。它依已知tau、不依未知源s，是同一实验两输入使用的同一末读。不能把补偿态距界不加说明地转称为未补偿原Q阈值的同等灵敏度。补偿末读/装置本身仍是操作输入。
+H、F及中性指针耦合与局域Gauss生成元对易，故完整有限时传播及指针条件记录保持源物理部门；但这不产生自主FP相互作用或开关来源。
+
+六、备选K_(psi_s)连续性（主证明无需使用）
+
+若后续确需在固定小s区间统一比较两个输入，可以沿555图范数方法证明，而不直接假定任意四次势的Schwartz不变性。对当前正势存在有限常数，使Gamma_F<=c0+c1V，|Delta_w F|^2<=c2+c3V，Delta_w V<=c4V+c5，其中Delta_w=aDelta_q+bDelta_G。分部积分恒等式
+||Hchi||^2=||Tchi||^2+||Vchi||^2+2int V|grad_w chi|^2-<Delta_w V>
+控制V乘法及带权梯度。J=i(2grad_w F dot grad+Delta_w F)因此连同Gamma均为H图范数有界。e^(-isH)在D(H)的图范数中连续，故K_(psi_s)有限连续。若发布此备选需逐项给这些常数存在的当前势论证；目前更短的初始导数方案无需扩大该分支。
+
+签收范围：允许继续发展561。完整H有限时有界记录的非零局部时间增益、指针能量/补偿成本是有效新连接；不意味着可靠覆盖某个预设有限时间区间，更不意味着同时具有四个独立可读坐标。最终可复算代码和正文仍需独立終审。

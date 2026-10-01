@@ -1,0 +1,257 @@
+{
+  "round": 571,
+  "tests_run": 8,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "continuum_source_check",
+    "half_transport_check",
+    "exact_sampling_check",
+    "source_degrees_check",
+    "neutral_branch_check",
+    "global_balance_check",
+    "full_energy_check",
+    "discarded_source_counterexample"
+  ],
+  "evidence": {
+    "continuum_source_check": {
+      "rows": [
+        {
+          "mode": "charged",
+          "independent_finite_difference_Gauss_error": 4.812211740201633e-11
+        },
+        {
+          "mode": "neutral",
+          "independent_finite_difference_Gauss_error": 1.593986054260199e-11
+        }
+      ]
+    },
+    "half_transport_check": {
+      "adjoint_matrix_vs_rotation_error": 1.3322676295501878e-15,
+      "rows": [
+        {
+          "N": 8,
+          "error": 0.006185497381342023,
+          "error_over_eps_squared": 0.010027550657506473
+        },
+        {
+          "N": 12,
+          "error": 0.0028069262544199187,
+          "error_over_eps_squared": 0.010238439257804878
+        },
+        {
+          "N": 18,
+          "error": 0.0012592396857342672,
+          "error_over_eps_squared": 0.010334600091288114
+        },
+        {
+          "N": 26,
+          "error": 0.0006059067290795152,
+          "error_over_eps_squared": 0.010375110597455748
+        }
+      ]
+    },
+    "exact_sampling_check": {
+      "rows": [
+        {
+          "d": 2,
+          "N": 8,
+          "initial_Gauss_density_error": 0.017934740110666026,
+          "final_Gauss_density_error": 8.999128876959774e-17,
+          "sample_total_weak3": 0.0033303881181426798,
+          "correction_kinetic_norm": 0.11655146884026057,
+          "correction_norm_over_eps_squared": 0.188946124450372
+        },
+        {
+          "d": 2,
+          "N": 12,
+          "initial_Gauss_density_error": 0.008076734363570827,
+          "final_Gauss_density_error": 1.0124019986579747e-16,
+          "sample_total_weak3": 0.0014826562143880895,
+          "correction_kinetic_norm": 0.052880814941396966,
+          "correction_norm_over_eps_squared": 0.19288608342601543
+        },
+        {
+          "d": 2,
+          "N": 18,
+          "initial_Gauss_density_error": 0.0036108331088491796,
+          "final_Gauss_density_error": 2.5626425591029985e-16,
+          "sample_total_weak3": 0.0006594493977305493,
+          "correction_kinetic_norm": 0.023721506448913108,
+          "correction_norm_over_eps_squared": 0.19468278000584122
+        },
+        {
+          "d": 2,
+          "N": 26,
+          "initial_Gauss_density_error": 0.0017348886408374547,
+          "final_Gauss_density_error": 1.782249351804143e-16,
+          "sample_total_weak3": 0.0003161655512342598,
+          "correction_kinetic_norm": 0.011413684503137284,
+          "correction_norm_over_eps_squared": 0.19543971598469514
+        },
+        {
+          "d": 3,
+          "N": 8,
+          "initial_Gauss_density_error": 0.017934740110665995,
+          "final_Gauss_density_error": 8.59353506573499e-17,
+          "sample_total_weak3": 0.02092544569111965,
+          "correction_kinetic_norm": 0.2921512072447713,
+          "correction_norm_over_eps_squared": 0.47361769792925046
+        },
+        {
+          "d": 3,
+          "N": 12,
+          "initial_Gauss_density_error": 0.00807673436357071,
+          "final_Gauss_density_error": 9.667726948951867e-17,
+          "sample_total_weak3": 0.00931580374184171,
+          "correction_kinetic_norm": 0.13255254591763496,
+          "correction_norm_over_eps_squared": 0.4834937104984838
+        },
+        {
+          "d": 3,
+          "N": 16,
+          "initial_Gauss_density_error": 0.004564247305024349,
+          "final_Gauss_density_error": 1.718707013146998e-16,
+          "sample_total_weak3": 0.005243214715557221,
+          "correction_kinetic_norm": 0.07510681408681162,
+          "correction_norm_over_eps_squared": 0.4870343233843688
+        }
+      ]
+    },
+    "source_degrees_check": {
+      "radial_momentum_change": 0.0,
+      "transverse_probe_pairing": 3.469446951953614e-18,
+      "harmonic_momentum_change": 6.692606002996941e-19,
+      "normalized_gap": 10.482520269733849,
+      "continuum_gap": 10.50200206657839,
+      "min_Higgs_amplitude": 0.6326762960007112
+    },
+    "neutral_branch_check": {
+      "rows": [
+        {
+          "N": 8,
+          "gap": 0.0,
+          "Gauss_density_error": 8.999128876959774e-17,
+          "correction_norm_over_eps_squared": 0.022125790861371352
+        },
+        {
+          "N": 16,
+          "gap": 0.0,
+          "Gauss_density_error": 1.5748475534679605e-16,
+          "correction_norm_over_eps_squared": 0.022254143790142566
+        },
+        {
+          "N": 24,
+          "gap": 0.0,
+          "Gauss_density_error": 1.771703497651456e-16,
+          "correction_norm_over_eps_squared": 0.022277990557522685
+        }
+      ],
+      "zero_gap_branch_is_supported_without_division": true
+    },
+    "global_balance_check": {
+      "rows": [
+        {
+          "N": 8,
+          "total_charge_identity_error": 1.1102230246251565e-16,
+          "total_charge_after": 5.551115123125783e-17,
+          "normalized_gap": 10.403750358801279,
+          "continuum_gap": 10.50200206657839,
+          "S_over_eps_squared": 0.005399021857897507,
+          "circle_correction_norm": 0.08748627092193141,
+          "Poisson_bound": 0.11219031536313673
+        },
+        {
+          "N": 12,
+          "total_charge_identity_error": 5.551115123125783e-17,
+          "total_charge_after": -5.551115123125783e-17,
+          "normalized_gap": 10.45821937295014,
+          "continuum_gap": 10.50200206657839,
+          "S_over_eps_squared": 0.005408081372752883,
+          "circle_correction_norm": 0.03861458996222694,
+          "Poisson_bound": 0.050580286365595806
+        },
+        {
+          "N": 18,
+          "total_charge_identity_error": 1.1102230246251565e-16,
+          "total_charge_after": -1.6653345369377348e-16,
+          "normalized_gap": 10.482520269733849,
+          "continuum_gap": 10.50200206657839,
+          "S_over_eps_squared": 0.005412111675953169,
+          "circle_correction_norm": 0.01711146709251908,
+          "Poisson_bound": 0.022626086128145335
+        },
+        {
+          "N": 26,
+          "total_charge_identity_error": 1.3877787807814457e-16,
+          "total_charge_after": 5.551115123125783e-17,
+          "normalized_gap": 10.49266007615917,
+          "continuum_gap": 10.50200206657839,
+          "S_over_eps_squared": 0.00541379127137987,
+          "circle_correction_norm": 0.008191453322502923,
+          "Poisson_bound": 0.01087396342793488
+        }
+      ]
+    },
+    "full_energy_check": {
+      "rows": [
+        {
+          "N": 8,
+          "full_trial_H": 22.562211243635446,
+          "full_physical_H": 22.390527287817605,
+          "energy_change": -0.17168395581784068,
+          "proven_change_bound": 0.23627486119037208
+        },
+        {
+          "N": 12,
+          "full_trial_H": 23.234721679015454,
+          "full_physical_H": 23.15581164151222,
+          "energy_change": -0.07891003750323478,
+          "proven_change_bound": 0.10551729201494907
+        },
+        {
+          "N": 18,
+          "full_trial_H": 23.513561565650146,
+          "full_physical_H": 23.47795317081495,
+          "energy_change": -0.03560839483519729,
+          "proven_change_bound": 0.046987555389889836
+        },
+        {
+          "N": 26,
+          "full_trial_H": 23.625607140678223,
+          "full_physical_H": 23.6084310846772,
+          "energy_change": -0.017176056001023454,
+          "proven_change_bound": 0.0225379852598456
+        }
+      ],
+      "full_569_positive_magnetic_function_used": true
+    },
+    "discarded_source_counterexample": {
+      "rows": [
+        {
+          "N": 8,
+          "photon_information_discarded_norm": 0.052262894955155535,
+          "radial_information_discarded_norm": 0.17771531752633463
+        },
+        {
+          "N": 16,
+          "photon_information_discarded_norm": 0.05226289495515554,
+          "radial_information_discarded_norm": 0.17771531752633465
+        },
+        {
+          "N": 24,
+          "photon_information_discarded_norm": 0.05226289495515553,
+          "radial_information_discarded_norm": 0.17771531752633463
+        }
+      ],
+      "Gauss_alone_does_not_authorize_discarding_transverse_harmonic_or_radial_source": true
+    }
+  },
+  "dependency_hashes": {
+    "joint_gauss_nonlinear_compatibility.py": "77f5bea2a6a82d54da8b0f54d65e1236ac5e37baa3e115121837d98701c1c1eb",
+    "joint_quotient_gauge_completion.py": "ad79d467500513738d718478a24e2176d88e7225316badfb7f1d62129c4b9494",
+    "joint_scalar_propagation_matching.py": "3ef2f256906884ae1ef2b1ecb36fe0a2b6f1d60a931852511f0a7f11d88d42b5",
+    "joint_singlet_common_mass_rg_results.json": "4bd60fde58c288d047275f8441c8e622819cd58a2fe55a5ea2717a5fc3a48d66"
+  },
+  "scope": "fixed smooth periodic classical initial data; nonzero Higgs in a global unitary gauge; fixed positive charged-background gap or exactly neutral branch; no time/quantum/gravity convergence"
+}

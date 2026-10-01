@@ -1,0 +1,386 @@
+{
+  "round": 583,
+  "tests_run": 5,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "vacuum_hessian",
+    "joint_blocks",
+    "normalized_scalar",
+    "frozen_action",
+    "joint_action"
+  ],
+  "evidence": {
+    "vacuum_hessian": {
+      "phi": [
+        0.0,
+        0.6654429655855137,
+        0.0,
+        0.0,
+        0.545863690226873
+      ],
+      "F": 1.8765364152074429,
+      "M": 2.0,
+      "K": [
+        [
+          0.5328966663774838,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.5538549847573941,
+          0.0,
+          0.0,
+          0.01719213456819904
+        ],
+        [
+          0.0,
+          0.0,
+          0.5328966663774838,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.5328966663774838,
+          0.0
+        ],
+        [
+          0.0,
+          0.01719213456819904,
+          0.0,
+          0.0,
+          0.5469993956925601
+        ]
+      ],
+      "potential_hessian": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.05869630753641167,
+          0.0,
+          0.0,
+          0.025784234593080387
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.025784234593080387,
+          0.0,
+          0.0,
+          0.044669873909900244
+        ]
+      ],
+      "c": [
+        -0.0,
+        -0.059102056337477823,
+        -0.0,
+        -0.0,
+        -0.04848149013640202
+      ],
+      "Jordan_background_scale": 0.5328966663774838,
+      "finite_difference": [
+        {
+          "step": 0.002,
+          "hessian_error": 1.070046165653482e-06
+        },
+        {
+          "step": 0.001,
+          "hessian_error": 2.675107865154902e-07
+        },
+        {
+          "step": 0.0005,
+          "hessian_error": 6.687763511731282e-08
+        }
+      ],
+      "potential_value": 5.10575046847678e-35,
+      "Hessian_rank": 2
+    },
+    "joint_blocks": {
+      "rows": [
+        {
+          "p_squared": 0.001,
+          "congruence_error": 1.0842021724855044e-19,
+          "Schur_error": 1.0842021724855044e-19,
+          "determinant_relative_error": 0.0,
+          "scalar_inverse_block_error": 4.547473508864641e-13,
+          "scalar_inverse_error_if_mixing_omitted": 0.005681401334752054,
+          "negative_positive_inertia": [
+            1,
+            5
+          ]
+        },
+        {
+          "p_squared": 0.01,
+          "congruence_error": 1.3877787807814457e-17,
+          "Schur_error": 1.3877787807814457e-17,
+          "determinant_relative_error": 0.0,
+          "scalar_inverse_block_error": 2.842170943040401e-14,
+          "scalar_inverse_error_if_mixing_omitted": 0.05018894417521358,
+          "negative_positive_inertia": [
+            1,
+            5
+          ]
+        },
+        {
+          "p_squared": 0.1,
+          "congruence_error": 1.3877787807814457e-17,
+          "Schur_error": 1.3877787807814457e-17,
+          "determinant_relative_error": 1.7763568394002505e-15,
+          "scalar_inverse_block_error": 1.7763568394002505e-15,
+          "scalar_inverse_error_if_mixing_omitted": 0.19733941477211825,
+          "negative_positive_inertia": [
+            1,
+            5
+          ]
+        },
+        {
+          "p_squared": 1.0,
+          "congruence_error": 3.469446951953614e-18,
+          "Schur_error": 1.1102230246251565e-16,
+          "determinant_relative_error": 0.0,
+          "scalar_inverse_block_error": 2.220446049250313e-16,
+          "scalar_inverse_error_if_mixing_omitted": 0.08875537088954091,
+          "negative_positive_inertia": [
+            1,
+            5
+          ]
+        },
+        {
+          "p_squared": 10.0,
+          "congruence_error": 8.881784197001252e-16,
+          "Schur_error": 8.881784197001252e-16,
+          "determinant_relative_error": 1.887379141862766e-15,
+          "scalar_inverse_block_error": 2.7755575615628914e-17,
+          "scalar_inverse_error_if_mixing_omitted": 0.011261039518470885,
+          "negative_positive_inertia": [
+            1,
+            5
+          ]
+        }
+      ],
+      "zero_momentum_excluded": true,
+      "no_gravity_path_integral_claim": true
+    },
+    "normalized_scalar": {
+      "Einstein_partial_mass_squared": [
+        -2.4824436882447083e-18,
+        -1.5407439555097887e-33,
+        0.0,
+        0.04683851043525822,
+        0.1380567264859815
+      ],
+      "Jordan_partial_mass_squared": [
+        0.0,
+        0.0,
+        0.0,
+        0.0468422679360693,
+        0.14712813564887495
+      ],
+      "raw_high_momentum_limit": 1.0657933327549676,
+      "normalized_high_momentum_limit": 1,
+      "normalized_low_momentum_limit": 0.9382682076037214,
+      "rows": [
+        {
+          "p_squared": 1e-05,
+          "raw_scalar_determinant_ratio": 1.00000448284709,
+          "lemma_error": 5.773159728050814e-15,
+          "kinetically_normalized_ratio": 0.9382724137166241
+        },
+        {
+          "p_squared": 0.001,
+          "raw_scalar_determinant_ratio": 1.000445265390663,
+          "lemma_error": 6.661338147750939e-16,
+          "kinetically_normalized_ratio": 0.9386859859637253
+        },
+        {
+          "p_squared": 0.01,
+          "raw_scalar_determinant_ratio": 1.004195971889182,
+          "lemma_error": 3.9968028886505635e-15,
+          "kinetically_normalized_ratio": 0.9422051546273452
+        },
+        {
+          "p_squared": 0.1,
+          "raw_scalar_determinant_ratio": 1.0266446549967725,
+          "lemma_error": 1.1102230246251565e-15,
+          "kinetically_normalized_ratio": 0.9632680402897612
+        },
+        {
+          "p_squared": 1.0,
+          "raw_scalar_determinant_ratio": 1.0573613182604693,
+          "lemma_error": 4.440892098500626e-16,
+          "kinetically_normalized_ratio": 0.9920885088737589
+        },
+        {
+          "p_squared": 100.0,
+          "raw_scalar_determinant_ratio": 1.0656967522942515,
+          "lemma_error": 2.6645352591003757e-15,
+          "kinetically_normalized_ratio": 0.9999093816242366
+        },
+        {
+          "p_squared": 100000.0,
+          "raw_scalar_determinant_ratio": 1.0657932360325932,
+          "lemma_error": 4.6629367034256575e-15,
+          "kinetically_normalized_ratio": 0.9999999092484698
+        }
+      ],
+      "partial_scalar_loop_trace_M_squared_E": 0.021253505787818892,
+      "partial_scalar_loop_trace_M_squared_J": 0.023840886364908255,
+      "spectra_are_not_full_physical_poles": true
+    },
+    "frozen_action": {
+      "direction": [
+        0.13,
+        0.8,
+        -0.11,
+        0.07,
+        0.6
+      ],
+      "mode": 2,
+      "expected_second_E": 7.609647821998619,
+      "expected_second_J": 7.169890754801084,
+      "expected_difference": -0.4397570671975346,
+      "rows": [
+        {
+          "amplitude": 0.04,
+          "second_E": 7.610686423964587,
+          "second_J": 7.169998261979611,
+          "error_E": 0.0010386019659680557,
+          "error_J": 0.00010750717852658909,
+          "gap_error": 0.0009310947874416886,
+          "nonlinear_frame_action_error": 6.071532165918825e-18,
+          "pullback_freeze_error": 8.673617379884035e-18
+        },
+        {
+          "amplitude": 0.02,
+          "second_E": 7.609907429189169,
+          "second_J": 7.169917631595717,
+          "error_E": 0.00025960719055007075,
+          "error_J": 2.687679463253545e-05,
+          "gap_error": 0.00023273039591775735,
+          "nonlinear_frame_action_error": 5.854691731421724e-18,
+          "pullback_freeze_error": 4.7704895589362195e-18
+        },
+        {
+          "amplitude": 0.01,
+          "second_E": 7.609712721090569,
+          "second_J": 7.169897473999745,
+          "error_E": 6.489909194939969e-05,
+          "error_J": 6.719198660576353e-06,
+          "gap_error": 5.817989328904538e-05,
+          "nonlinear_frame_action_error": 2.2768245622195593e-18,
+          "pullback_freeze_error": 2.0599841277224584e-18
+        },
+        {
+          "amplitude": 0.005,
+          "second_E": 7.609664046602512,
+          "second_J": 7.16989243460075,
+          "error_E": 1.6224603892389666e-05,
+          "error_J": 1.6797996655881775e-06,
+          "gap_error": 1.4544804227023533e-05,
+          "nonlinear_frame_action_error": 1.5449880957918438e-18,
+          "pullback_freeze_error": 1.6940658945086007e-18
+        }
+      ],
+      "periodic_integral_transverse_coordinate_volume": 1
+    },
+    "joint_action": {
+      "rows": [
+        {
+          "Jordan_conformal_amplitude": 0.17,
+          "predicted_second_variation": 6.9486711082316965,
+          "rows": [
+            {
+              "amplitude": 0.04,
+              "actual_second_variation": 6.949689684045735,
+              "error": 0.0010185758140384138,
+              "frame_action_error": 2.42861286636753e-17
+            },
+            {
+              "amplitude": 0.02,
+              "actual_second_variation": 6.9489257386710355,
+              "error": 0.00025463043933893204,
+              "frame_action_error": 6.7220534694101275e-18
+            },
+            {
+              "amplitude": 0.01,
+              "actual_second_variation": 6.948734764996869,
+              "error": 6.365676517283703e-05,
+              "frame_action_error": 4.7704895589362195e-18
+            },
+            {
+              "amplitude": 0.005,
+              "actual_second_variation": 6.948687022370323,
+              "error": 1.5914138626449414e-05,
+              "frame_action_error": 1.3688052427629493e-18
+            }
+          ]
+        },
+        {
+          "Jordan_conformal_amplitude": -0.21,
+          "predicted_second_variation": 1.4263838327610419,
+          "rows": [
+            {
+              "amplitude": 0.04,
+              "actual_second_variation": 1.4268633569169806,
+              "error": 0.00047952415593877085,
+              "frame_action_error": 1.1058862159352145e-17
+            },
+            {
+              "amplitude": 0.02,
+              "actual_second_variation": 1.4265037080969785,
+              "error": 0.00011987533593660338,
+              "frame_action_error": 5.421010862427522e-18
+            },
+            {
+              "amplitude": 0.01,
+              "actual_second_variation": 1.426413801238632,
+              "error": 2.9968477590180953e-05,
+              "frame_action_error": 5.44811591673966e-18
+            },
+            {
+              "amplitude": 0.005,
+              "actual_second_variation": 1.426391324858097,
+              "error": 7.492097055195046e-06,
+              "frame_action_error": 1.362028979184915e-18
+            }
+          ]
+        }
+      ],
+      "nonlinear_original_Jordan_action_checked": true
+    }
+  },
+  "dependency_hashes": {
+    "joint_curved_quantum_source.py": "cf6aec9461174f41985b706c1bae776787b198ab77d9e42dfe8057764795775c",
+    "joint_gauss_einstein_initial_data.py": "8c600a6f4d6cdee75aa2240c8ad650402c69ab791aaed4380770c8ab119c6cb5",
+    "research_note_553.md": "bf352b5705e660cff91565a6da440eeb0ba1d405a2de4285ea821234faffbfdf",
+    "research_note_580.md": "6682439ad2ed97c2cb16c34fdfde08b8741f6f9e9a268e8115f2f6fc69fef920",
+    "research_note_582.md": "17c07c5cf056fb4e0618d559c506f0c70b0034ac14ca8792742376d1d482dcca",
+    "research_round_582_checks.json": "751d45341f16d049dda2f597248527eae806352ca3b63be1f4521ad80037a434"
+  },
+  "scope": "same four-dimensional leading scalar-tensor action and original H5 matter at its common flat vacuum; restricted scalar/conformal Hessian, normalized frozen scalar blocks and nonlinear Weyl substitution; not a full gauge-fixed gravitational determinant, convergent Euclidean integral, physical pole spectrum or graph-continuum quantum matching"
+}
