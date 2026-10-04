@@ -1,0 +1,61 @@
+{
+  "round": 775,
+  "tests_run": 2,
+  "failures": 0,
+  "errors": 0,
+  "auxiliary": {
+    "errors": {
+      "Schur_inverse": 3.3306690738754696e-16,
+      "auxiliary_contact_minus_identity": 2.220446049250313e-16
+    },
+    "omitted_Feynman_contact_inverse_defect": 2.6,
+    "null_symbol_state_auxiliary_zero_error": 3.506480399986654e-16,
+    "stripped_Feynman_auxiliary_contact": -1,
+    "physical_auxiliary_covariance_not_added": true,
+    "scope": "Original 111-field symbols; noncharacteristic inverse and separate null state calibration. No actual Feynman distribution or interacting state is simulated."
+  },
+  "first_vertex": {
+    "exact_monomials_checked": 96,
+    "two_same_background_states": [
+      {
+        "state_covariance": "5/4",
+        "same_state_raw_source": {
+          "q0": "3/7",
+          "r": "-37/90",
+          "q1": "37/192"
+        },
+        "gauge_anomaly_coefficient": "3/7"
+      },
+      {
+        "state_covariance": "7/6",
+        "same_state_raw_source": {
+          "q0": "3/7",
+          "r": "-17/45",
+          "q1": "17/96"
+        },
+        "gauge_anomaly_coefficient": "3/7"
+      }
+    ],
+    "full_free_BV_Wick_intertwining_exact": true,
+    "parametrix_field_BRST_but_not_full_BV_intertwining": true,
+    "tadpole_equals_single_vertex_anomaly_projection": true,
+    "prescribed_source_counterterm_cancels_linear_defect": true,
+    "wrong_non_bisolution_state_defect": "1/5",
+    "antifield_completion_necessary": true,
+    "original_continuum_loop_coefficients_computed": false,
+    "scope": "Exact rational cubic BV/Wick diagnostic with a genuine physical covariance parameter. It tests the map and failure controls, not original spacetime loop numbers."
+  },
+  "dependency_hashes": {
+    "research_note_735.md": "43ece0235df1d09dcef1d30c99b2cb2dd2ade100cb6572caf46ded7ac8ffe2b8",
+    "research_note_768.md": "fdc091e03bde167d216a2c1f6f94d030be5a88abe7af2ce1d7d4d309b55d7ca1",
+    "research_note_770.md": "e1bac6efcb34b5e9e8afd0fbbf588e30d2f3d6b9e29eeac30b5ee0b3910f6978",
+    "research_note_771.md": "779d525a39caa53d2b3b02d0e910a7016a18c8b18f8bc123d606be43078fc2b2",
+    "research_note_772.md": "35a4c3c607f3d58d7af75fb23f49473cbc99348c1688b918fc0a644b64f3401c",
+    "research_note_773.md": "fb704f44c0e1f7fb851bedaf7bf3ae7f177003ebd2f61506c1826ad179187528",
+    "research_note_774.md": "6ecbe206f0c9aeed71d89370149e64df8b60280936777560a125e796610cdd69",
+    "joint_brst_relative_source.py": "b252f4dedbd832913ad12e6acd32b05117fc85106735f6a3d45118df079538bb",
+    "joint_material_local_brst.py": "7fafe42184a00fa3e7ecc95118c71bb8de8224df178d2cacc25bae1eaec984b5",
+    "round775_drafts/STATUS.md": "083ae781451fb9e664fcfc9c25b3f78f10ff85ebf4c1ef7e9b82dff1ce89cd16"
+  },
+  "scope": "Direct same-free-state Wick/BV identification of the local one-loop linear anomaly with the raw tadpole Ward defect, plus the original auxiliary Feynman contact. Removes the full in-in-functional prerequisite for this first-jet compatibility only; higher common normalization, interacting physical state, instrument and continuum map remain open."
+}

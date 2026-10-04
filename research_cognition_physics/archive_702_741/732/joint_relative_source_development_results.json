@@ -1,0 +1,146 @@
+{
+  "round": 732,
+  "tests_run": 3,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "relative_mode_transport_check",
+    "gauge_and_mass_source_check",
+    "joint_background_work_check"
+  ],
+  "results": {
+    "relative_mode_transport_check": {
+      "physical_modes": 64,
+      "Nambu_dimension": 128,
+      "record_difference_rank": 4,
+      "signed_mode_weights": [
+        -0.49999989442578646,
+        -0.49999989442576326,
+        0.4999998944257631,
+        0.49999989442578624
+      ],
+      "time": 0.04000000000000002,
+      "mode_vs_full_covariance_error": 2.1149753172188734e-14,
+      "actual_record_relative_energy": 0.5103675693061844,
+      "finite_smooth_mode_reduction_not_a_continuum_discretization": true
+    },
+    "gauge_and_mass_source_check": {
+      "generators": 12,
+      "full_matrix_gauge_identity_error": 4.577566798522237e-16,
+      "same_record_exchange_balance_error": 1.8214596497756474e-17,
+      "rows": [
+        {
+          "kind": "color",
+          "index": null,
+          "charge_rate": 1.2589790890418278e-46,
+          "scalar_exchange": 0.0,
+          "connection_exchange": 0.0
+        },
+        {
+          "kind": "color",
+          "index": null,
+          "charge_rate": -2.1895288505075267e-47,
+          "scalar_exchange": 0.0,
+          "connection_exchange": 0.0
+        },
+        {
+          "kind": "color",
+          "index": null,
+          "charge_rate": -1.0947644252537633e-47,
+          "scalar_exchange": 0.0,
+          "connection_exchange": 0.0
+        },
+        {
+          "kind": "color",
+          "index": null,
+          "charge_rate": -5.473822126268817e-48,
+          "scalar_exchange": 0.0,
+          "connection_exchange": 0.0
+        },
+        {
+          "kind": "color",
+          "index": null,
+          "charge_rate": 2.7369110631344083e-48,
+          "scalar_exchange": 0.0,
+          "connection_exchange": 0.0
+        },
+        {
+          "kind": "color",
+          "index": null,
+          "charge_rate": 1.2589790890418278e-46,
+          "scalar_exchange": 0.0,
+          "connection_exchange": 0.0
+        },
+        {
+          "kind": "color",
+          "index": null,
+          "charge_rate": 2.1895288505075267e-47,
+          "scalar_exchange": 0.0,
+          "connection_exchange": 0.0
+        },
+        {
+          "kind": "color",
+          "index": null,
+          "charge_rate": -2.1895288505075267e-47,
+          "scalar_exchange": 0.0,
+          "connection_exchange": 0.0
+        },
+        {
+          "kind": "weak",
+          "index": 0,
+          "charge_rate": -2.3815003404768162e-07,
+          "scalar_exchange": 2.4136585902607947e-07,
+          "connection_exchange": -3.2158249783997195e-09
+        },
+        {
+          "kind": "weak",
+          "index": 1,
+          "charge_rate": 2.982930634990413e-07,
+          "scalar_exchange": -3.0667368665912807e-07,
+          "connection_exchange": 8.38062316008832e-09
+        },
+        {
+          "kind": "weak",
+          "index": 2,
+          "charge_rate": 0.0005414311257990539,
+          "scalar_exchange": -0.0005416201283367397,
+          "connection_exchange": 1.8900253768847468e-07
+        },
+        {
+          "kind": "circle",
+          "index": null,
+          "charge_rate": -0.003249720770020454,
+          "scalar_exchange": 0.0032497207700204356,
+          "connection_exchange": 0.0
+        }
+      ],
+      "continuum_Ward_proof_separate_from_local_numerical_check": true
+    },
+    "joint_background_work_check": {
+      "actual_original_background_work": {
+        "metric": 0.2276948073876353,
+        "all_five_scalars": -0.012867890769159545,
+        "weak_connection": -1.4059394110130831e-06,
+        "circle_connection": -5.268230486738082e-11
+      },
+      "complete_work_rate": 0.21482551062638244,
+      "covariance_commutator_work": 1.813497540071457e-18,
+      "energy_time_difference": 0.21482551070539643,
+      "work_identity_error": 7.901398979548446e-11,
+      "matrix_jet_error": 1.049715238409165e-10,
+      "background_is_original_first_jet_diagnostic_not_full_future_Einstein_solution": true
+    }
+  },
+  "dependency_hashes": {
+    "research_note_573.md": "0c3205d1137739062c7e00efeb188f61cc0cee2f77db363f5ba6d4ed525c79c5",
+    "research_note_601.md": "2464a6dddd68e4b5cf242b93255dff3a42df9f6accb5c5a976faed42cca5c362",
+    "research_note_634.md": "d213062ed54299f50a8085f56459e9a309d56b1848697360bad94dd8b0554b6c",
+    "joint_dynamic_continuum_reference.py": "7e7a5160fd87c640bc50dc617122036dbddedfcee1edbce53a7327de66202d9b",
+    "joint_dynamic_continuum_reference_results.json": "696852c61f1174337b600795d4c353ea853db44bb666516f8cc0e2d59ec546fc",
+    "joint_source_constraint_response.py": "5824b88b2da4b76f1caad3a5007a11b9003429bf79685cf32a6c6bb3804f1643",
+    "joint_source_constraint_response_results.json": "bc23927e02632370b0192267ce3d9a312201943aec0613a166420e164e8a2da2",
+    "round732_drafts/source_feedback_entry.py": "668fbc732eb657fdb5e05d390b233e1cca89d20d7df3cb80ba794f90180d0015",
+    "round732_drafts/source_feedback_entry_results.json": "9d099d23af7562e85dae5929b8eb3d00c99d25b21bdc14361cd39d92020b3253"
+  },
+  "scope": "Original730 same-background record difference gives smooth finite-mode sources satisfying joint relative Ward identities; with731 initial correction and573 fixed-gauge hyperbolicity it defines a short-time linear relative response. Numeric tests are full local matrix identities, not a continuum Einstein solve. No absolute reference, nonlinear semiclassical existence, causal detector or GR emergence is claimed."
+}

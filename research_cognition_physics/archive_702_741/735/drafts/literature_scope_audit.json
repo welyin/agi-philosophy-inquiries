@@ -1,0 +1,29 @@
+{
+  "sources": [
+    {
+      "url": "https://arxiv.org/html/1501.07014",
+      "locations": "Section8, equation8.1 and one-loop discussion following8.3",
+      "use": "One-loop joint local anomaly normalization; specifically account for Abelian matter and antifield classes.",
+      "caution": "Not importing the full all-orders EFT theorem or its cohomological-completeness enlargement as a physical action."
+    },
+    {
+      "url": "https://arxiv.org/html/1210.4031",
+      "locations": "Section3.2 scaling expansion and Proposition3.14",
+      "use": "Finite local jet expansion and extension of the singular coefficients, used with the explicitly mapped matrix-mass background.",
+      "caution": "Section4 stress theorem is not applied to variable charged chiral masses. Matrix-mass extension and Ward normalization are separate steps in note735."
+    }
+  ],
+  "independent_assumptions": [
+    "Four-dimensional ordinary spin background and original representation",
+    "Only quadratic fermions quantized; smooth given backgrounds in F>0 patches",
+    "Mass-independent, fixed-scale local UV normalization with standard scaling and zero-mass smoothness"
+  ],
+  "inference": "Combine one-loop formal joint normalization with finite UV-jet matching for the original matrix mass, then evaluate the common Wick sources in the original Hadamard state.",
+  "excluded": [
+    "Convergence of a nonlocal effective-action background expansion",
+    "All-loop quantum gravity",
+    "Numerical continuum stress coefficients",
+    "Unique finite physical constants",
+    "Nonlinear self-consistent spacetime existence"
+  ]
+}

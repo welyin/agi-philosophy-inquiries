@@ -1,0 +1,179 @@
+{
+  "date": "2026-10-02",
+  "round": 675,
+  "tests_run": 2,
+  "failures": 0,
+  "errors": 0,
+  "full_original_E_factorization": {
+    "rows": [
+      {
+        "seed": 67531,
+        "scale": 0.28,
+        "Wilson_gap": 0.17161920312927306,
+        "ru": 128,
+        "rv": 128,
+        "values": [
+          {
+            "full_weight": [
+              8.355284715451864e-21,
+              -2.1252937862866958e-35
+            ],
+            "auxiliary": [
+              -1.1184544744927407e-10,
+              3.757446843034277e-11
+            ],
+            "E_independent_physical_factor": [
+              -6.712765786856716e-11,
+              -2.255153087504311e-11
+            ],
+            "factor_relative": 2.770217792287208e-15,
+            "original_pairing_norm": 0.613633952069565,
+            "log_scalar_bound": 26.189885841187383
+          },
+          {
+            "full_weight": [
+              2.7243879992156966e-18,
+              -3.707415142945429e-33
+            ],
+            "auxiliary": [
+              -3.646918150307864e-08,
+              1.2251818382588562e-08
+            ],
+            "E_independent_physical_factor": [
+              -6.712765786856716e-11,
+              -2.255153087504311e-11
+            ],
+            "factor_relative": 4.4827233650948e-15,
+            "original_pairing_norm": 0.613633952069565,
+            "log_scalar_bound": 26.189885841187383
+          }
+        ]
+      },
+      {
+        "seed": 67351,
+        "scale": 0.9,
+        "Wilson_gap": 0.01788838599156347,
+        "ru": 128,
+        "rv": 128,
+        "values": [
+          {
+            "full_weight": [
+              4.92301462886328e-24,
+              -4.954525017723626e-38
+            ],
+            "auxiliary": [
+              -1.5135055510693456e-11,
+              3.5786554711530437e-13
+            ],
+            "E_independent_physical_factor": [
+              -3.2509056992307096e-13,
+              -7.686705515240144e-15
+            ],
+            "factor_relative": 1.999097753312984e-14,
+            "original_pairing_norm": 0.613633952069565,
+            "log_scalar_bound": 26.189885841187383
+          },
+          {
+            "full_weight": [
+              -3.155358938530004e-27,
+              -5.768417102423823e-40
+            ],
+            "auxiliary": [
+              9.700668450346962e-15,
+              -2.2937048495714664e-16
+            ],
+            "E_independent_physical_factor": [
+              -3.2509056992307096e-13,
+              -7.686705515240144e-15
+            ],
+            "factor_relative": 6.510362267723138e-14,
+            "original_pairing_norm": 0.613633952069565,
+            "log_scalar_bound": 26.189885841187383
+          }
+        ]
+      }
+    ],
+    "no_inverse_mass_or_Dirac_or_weight": true
+  },
+  "nonflat_exact_sphere_pullback": {
+    "rows": [
+      {
+        "seed": 67531,
+        "scale": 0.28,
+        "Wilson_gap": 0.17161920312927306,
+        "original_chiral_dimension": 128,
+        "checked_minor_modes": 8,
+        "retained_internal_channels": 16,
+        "original_sites": 4,
+        "exact_eight_mode_coefficient": [
+          -1.937604281935672e-06,
+          -8.781543683754871e-06
+        ],
+        "independent_cubature_coefficient": [
+          -1.937604281935677e-06,
+          -8.781543683754854e-06
+        ],
+        "eight_mode_error": 1.7686567184961518e-20,
+        "four_mode_error": 4.4702800766818725e-19,
+        "frame_phase_error": 2.711828597234095e-21,
+        "degree_six_antithetic_cancellation": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "seed": 67351,
+        "scale": 0.9,
+        "Wilson_gap": 0.01788838599156347,
+        "original_chiral_dimension": 128,
+        "checked_minor_modes": 8,
+        "retained_internal_channels": 16,
+        "original_sites": 4,
+        "exact_eight_mode_coefficient": [
+          -1.8575042330148227e-05,
+          -9.964525417421258e-07
+        ],
+        "independent_cubature_coefficient": [
+          -1.8575042330148234e-05,
+          -9.964525417421277e-07
+        ],
+        "eight_mode_error": 7.039169958065051e-21,
+        "four_mode_error": 4.84869951806108e-19,
+        "frame_phase_error": 1.627097158340457e-20,
+        "degree_six_antithetic_cancellation": [
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "original_128_mode_integral_not_evaluated": true,
+    "full_S9_moment_formula_reused_from657": true,
+    "no_minor_sign_extrapolated_to_full_physical_kernel": true
+  },
+  "prior_pilot": {
+    "samples": 8,
+    "largest_absolute_sample_share": [
+      [
+        0.7797797348390932,
+        0.777221998938186
+      ],
+      [
+        0.777221998938186,
+        0.4705437787425011
+      ]
+    ],
+    "numerical_sign_unresolved": true
+  },
+  "dependency_hashes": {
+    "joint_gauss_boundary_functional.py": "010fece0d0e2c2a072a6c5c0ff88e3a32ddd307fba0bc656f139aafe7b1d8e7f",
+    "joint_auxiliary_reflection_gluing.py": "33b0e9683d221ddb43ebc85727bcc85622d4d0eb6d5aa5d8d6f58c5cb11bc327",
+    "research_note_591.md": "5cf5a7698f191bb9f76a1ead396dd585784fe9e518aa88e96565905781655518",
+    "research_note_657.md": "5f64307ee8c5d3dfb4d62f074f32de9561f39f9334a4fd830da35a9a4f4273e9",
+    "research_note_673.md": "e628260d429f179133a9459cb4a71935cffdc716ecec297cdb92c4e8d0e586aa",
+    "research_note_674.md": "ee9e1092380a13b18882473f27b0192f4a3ec2b50d4a7e4d3c8f252f1f783827",
+    "round675_drafts/ground_haar_entry.md": "0c9b12bce1858dafb8a18471957881b18644346d49edc0e1490042f2574df1cd",
+    "round675_drafts/ground_haar_probe_results.json": "96f6d985bea30f6ea7f122158c1fa615a2e3e17602f4fb00bd9452483c7a0fce"
+  },
+  "scope": "Complete physical scalar marginal keeps auxiliary S9 and both original Haar boundaries. Exact657 local polynomial pulled into original nonflat chiral subspace, with selection rule and inverse-free physical factor.591 spectral gap yields controlled fixed-lambda ground limit and a necessary averaged-kernel positivity test. Only4/8-mode contractions evaluated exactly; no full integral sign, RP, normalization, original HF time, continuum or quantum GR identification.",
+  "all_checks_passed": true
+}

@@ -1,0 +1,123 @@
+{
+  "round": 731,
+  "tests_run": 3,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "gauss_and_zero_modes_check",
+    "nonlinear_joint_constraint_check",
+    "linearized_response_check"
+  ],
+  "evidence": {
+    "gauss_and_zero_modes_check": {
+      "N": 15,
+      "prescribed_sources_not_quantum_state": true,
+      "gauss_solver": {
+        "iterations": 25,
+        "residual": 4.2396641752873165e-15,
+        "preconditioner_min_eigenvalue": 0.20382396459320212
+      },
+      "pointwise_Gauss_error": 4.253541963095131e-15,
+      "zero_mean_color_error": 3.2959746043559335e-17,
+      "incompatible_constant_color_integral": 2.4805021344239853,
+      "momentum_before": [
+        0.7441503985329977,
+        -0.5358045369402722,
+        0.21868592660910882
+      ],
+      "correction_coefficients": [
+        -15.040742682205298,
+        9.620865770015246,
+        1.3587364090558747
+      ],
+      "momentum_after": [
+        -2.0535790090915292e-14,
+        -6.888155892820202e-14,
+        2.1150925742850666e-15
+      ],
+      "augmented_determinant": -0.0029399330541521078
+    },
+    "nonlinear_joint_constraint_check": {
+      "rows": [
+        {
+          "epsilon": 0.1,
+          "Gauss_error": 1.3428928108405458e-15,
+          "momentum_error": 1.457167719820518e-16,
+          "Hamiltonian_with_full_source_error": 5.321987295303643e-11,
+          "psi_min": 0.9145871865482696,
+          "psi_max": 1.0194392680972544,
+          "psi_change": 0.0029489998446753374,
+          "C_min": 1.9970571497157616,
+          "scalar_kinetic_change": 0.03362191990143981,
+          "electric_change": 0.0009738042307851913,
+          "error_if_extra_energy_omitted": 0.0029967131373571654
+        },
+        {
+          "epsilon": 0.05,
+          "Gauss_error": 1.309824644579738e-15,
+          "momentum_error": 1.5785983631388945e-16,
+          "Hamiltonian_with_full_source_error": 2.5659474545136618e-12,
+          "psi_min": 0.9131164826603436,
+          "psi_max": 1.0187689384846867,
+          "psi_change": 0.0014380382930038182,
+          "C_min": 1.9985460242945405,
+          "scalar_kinetic_change": 0.01620459369122823,
+          "electric_change": 0.0004696591163010355,
+          "error_if_extra_energy_omitted": 0.0014983565687556322
+        },
+        {
+          "epsilon": -0.05,
+          "Gauss_error": 1.29919946328938e-15,
+          "momentum_error": 1.4848148752188983e-16,
+          "Hamiltonian_with_full_source_error": 1.3014034294656085e-12,
+          "psi_min": 0.9103795171967117,
+          "psi_max": 1.0175668510707006,
+          "psi_change": 0.001360634492870605,
+          "C_min": 2.000548839190984,
+          "scalar_kinetic_change": 0.014991861172244658,
+          "electric_change": 0.0004636370143166202,
+          "error_if_extra_energy_omitted": 0.001498356569367143
+        }
+      ],
+      "original_magnetic_scalar_configuration_and_tau_retained": true,
+      "full_nonlin_prescribed_source_only": true
+    },
+    "linearized_response_check": {
+      "positive_supersolution_identity_error": 3.2738256550146616e-12,
+      "Lpsi_positive_min": 8.966730681772258,
+      "response_max": 0.02800162243279626,
+      "cg_iterations": 10,
+      "response_equation_error": 1.240785252321075e-12,
+      "rows": [
+        {
+          "epsilon": 0.02,
+          "centered_derivative_error": 2.3985379064561663e-06,
+          "one_sided_remainder": 6.252820488659755e-06,
+          "remainder_over_epsilon_squared": 0.015632051221649387
+        },
+        {
+          "epsilon": 0.01,
+          "centered_derivative_error": 5.99668242118323e-07,
+          "one_sided_remainder": 1.5691662306463656e-06,
+          "remainder_over_epsilon_squared": 0.015691662306463655
+        },
+        {
+          "epsilon": 0.005,
+          "centered_derivative_error": 1.4991919855544822e-07,
+          "one_sided_remainder": 3.9303611694367223e-07,
+          "remainder_over_epsilon_squared": 0.015721444677746887
+        }
+      ],
+      "full_state_dependent_quantum_feedback_not_proven": true
+    }
+  },
+  "dependency_hashes": {
+    "joint_gauss_einstein_initial_data.py": "8c600a6f4d6cdee75aa2240c8ad650402c69ab791aaed4380770c8ab119c6cb5",
+    "joint_gauss_einstein_initial_data_results.json": "b5193aa2aaf18cf0cff51985c71756d168066916fe36fe6a8b3e2b338d076228",
+    "joint_dynamic_continuum_reference.py": "7e7a5160fd87c640bc50dc617122036dbddedfcee1edbce53a7327de66202d9b",
+    "joint_dynamic_continuum_reference_results.json": "696852c61f1174337b600795d4c353ea853db44bb666516f8cc0e2d59ec546fc",
+    "round731_drafts/gauge_counterflow_entry.py": "b4d205bebbd3a8187de63b3e79637e4b842ce484a05a88a24b5bb9dd777e3e9b",
+    "round731_drafts/gauge_counterflow_entry_results.json": "e82521d44d244715901a17d3822a5e993f5cf46f3e6101d965579eaf34119891"
+  },
+  "scope": "Original572 fixed configurations and CMC on T3. Explicit joint right inverse for prescribed smooth sources with zero total color, full energy retained, nonlinear scalar constraint and first response. Classical conformal framework is input; diagnostic sources are not a computed quantum state. No full quantum Gauss, self-consistent semiclassical dynamics, new spacetime derivation or continuous numerical certificate."
+}

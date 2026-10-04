@@ -1,6 +1,6 @@
 # 第226轮：同维普遍导引迫使纯纠缠资源与辅助测量完备
 
-日期：2026-09-20。接续本次完成的[225轮](research_note_225.md)，并回查[184轮](../archive_001_222/research_process/research_note_184.md)及相关导引文献。使用刚建立的组合相容复矩阵表示；不修改历史条件引理。
+日期：2026-09-20。接续本次完成的[225轮](research_note_225.md)，并回查[184轮](../archive_171_189/research_note_184.md)及相关导引文献。使用刚建立的组合相容复矩阵表示；不修改历史条件引理。
 
 **结果：在相容的复量子表示中，同维辅助通过同一个联合态实现一个满秩目标态的全部有限系综，当且仅当该资源态纯且具有满Schmidt秩，并且该辅助允许全部有限POVM。对最大混合目标，资源进一步必须最大纠缠。**
 
@@ -167,14 +167,14 @@ $$
 
 对d≥2，只要v<1便出现负本征值，即使给全部数学POVM权限也不能实现这一精确分支。这里是解析判据，不进行极限优化；它约束**精确**U，不能直接当作近似认知系统的性能或成本定律。
 
-[代码](steering_permission_bridge.py)、[结果](steering_permission_bridge_results.json)复用既有Python 3.12.14与NumPy 2.3.5，8项检查通过：
+[代码](226/steering_permission_bridge.py)、[结果](226/steering_permission_bridge_results.json)复用既有Python 3.12.14与NumPy 2.3.5，8项检查通过：
 
 - d＝2、3、4的满秩条件映射秩分别4、9、16；纯资源秩均为1。
 - 多结果POVM唯一恢复误差低于1.9×10⁻¹⁶，归一化误差低于2.5×10⁻¹⁵。
 - 被排除的序同构分支，联合矩阵负本征值数分别1、3、6，吻合d(d−1)/2。
 - v＝0.5、0.9、0.99、1的噪声见证符合式(9)；两个边界反例按上述精确值通过。
 
-一般结论依赖解析证明和已有表示定理，有限数值只核验实现。文档和历史完整性检查见[轮次检查](research_round_226_checks.json)。
+一般结论依赖解析证明和已有表示定理，有限数值只核验实现。文档和历史完整性检查见[轮次检查](226/research_round_226_checks.json)。
 
 ```powershell
 python -B -X utf8 research_cognition_physics/archive_223_/steering_permission_bridge.py

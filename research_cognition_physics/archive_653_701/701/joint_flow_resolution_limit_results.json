@@ -1,0 +1,287 @@
+{
+  "date": "2026-10-02",
+  "round": 701,
+  "tests_run": 2,
+  "failures": 0,
+  "errors": 0,
+  "heat_and_contact": {
+    "heat_identity": [
+      {
+        "rho": 0.02,
+        "omega": 0.7,
+        "time": 0.0,
+        "exact_identity_residual": 1.1102230246251565e-16,
+        "defect": -0.11210502361632557,
+        "bound": 0.11283791670955126
+      },
+      {
+        "rho": 0.02,
+        "omega": 0.7,
+        "time": 0.1,
+        "exact_identity_residual": 6.938893903907228e-17,
+        "defect": -0.06918610566752818,
+        "bound": 0.10600141293761144
+      },
+      {
+        "rho": 0.02,
+        "omega": 0.7,
+        "time": 0.5,
+        "exact_identity_residual": 1.0755285551056204e-16,
+        "defect": -0.004312490640971108,
+        "bound": 0.023652112244729077
+      },
+      {
+        "rho": 0.02,
+        "omega": 0.7,
+        "time": 1.0,
+        "exact_identity_residual": 6.789985511779922e-17,
+        "defect": -1.4103587149606643e-05,
+        "bound": 0.000217828423035271
+      },
+      {
+        "rho": 0.08,
+        "omega": 1.0,
+        "time": 0.0,
+        "exact_identity_residual": 2.7755575615628914e-17,
+        "defect": -0.21419617752333422,
+        "bound": 0.22567583341910252
+      },
+      {
+        "rho": 0.08,
+        "omega": 1.0,
+        "time": 0.1,
+        "exact_identity_residual": 4.996003610813204e-16,
+        "defect": -0.16818419432776172,
+        "bound": 0.2221770539193325
+      },
+      {
+        "rho": 0.08,
+        "omega": 1.0,
+        "time": 0.5,
+        "exact_identity_residual": 9.020562075079397e-17,
+        "defect": -0.05311105817891935,
+        "bound": 0.15269990715212098
+      },
+      {
+        "rho": 0.08,
+        "omega": 1.0,
+        "time": 1.0,
+        "exact_identity_residual": 6.418476861114186e-17,
+        "defect": -0.007755454046165436,
+        "bound": 0.04730422448945815
+      },
+      {
+        "rho": 0.3,
+        "omega": 2.3,
+        "time": 0.0,
+        "exact_identity_residual": 8.326672684688674e-17,
+        "defect": -0.21483665853298453,
+        "bound": 0.4370193722368316
+      },
+      {
+        "rho": 0.3,
+        "omega": 2.3,
+        "time": 0.1,
+        "exact_identity_residual": 4.524158825347513e-15,
+        "defect": -0.1701786446802085,
+        "bound": 0.43520224649341965
+      },
+      {
+        "rho": 0.3,
+        "omega": 2.3,
+        "time": 0.5,
+        "exact_identity_residual": 3.608224830031759e-16,
+        "defect": -0.0664855921873592,
+        "bound": 0.3937872770405551
+      },
+      {
+        "rho": 0.3,
+        "omega": 2.3,
+        "time": 1.0,
+        "exact_identity_residual": 9.020562075079397e-17,
+        "defect": -0.01996840524974977,
+        "bound": 0.2881009263632112
+      }
+    ],
+    "contact_witnesses": [
+      {
+        "rho": 0.01,
+        "times": [
+          0.05,
+          0.1
+        ],
+        "source_amplitude": 3.1622776601683795,
+        "raw_reflection_norm": -0.002670774997441505,
+        "rescaled_reflection_norm": -0.02670774997441505,
+        "strict_negative_limit": -0.037556384489371375,
+        "limit_error": 0.010848634514956323
+      },
+      {
+        "rho": 0.001,
+        "times": [
+          0.015811388300841896,
+          0.03162277660168379
+        ],
+        "source_amplitude": 5.623413251903491,
+        "raw_reflection_norm": -0.001068148921856693,
+        "rescaled_reflection_norm": -0.03377783473320361,
+        "strict_negative_limit": -0.037556384489371375,
+        "limit_error": 0.0037785497561677664
+      },
+      {
+        "rho": 0.0001,
+        "times": [
+          0.005,
+          0.01
+        ],
+        "source_amplitude": 10.0,
+        "raw_reflection_norm": -0.00036324117409514134,
+        "rescaled_reflection_norm": -0.036324117409514134,
+        "strict_negative_limit": -0.037556384489371375,
+        "limit_error": 0.001232267079857241
+      },
+      {
+        "rho": 1e-06,
+        "times": [
+          0.0005,
+          0.001
+        ],
+        "source_amplitude": 31.622776601683793,
+        "raw_reflection_norm": -3.743156310032081e-05,
+        "rescaled_reflection_norm": -0.03743156310032081,
+        "strict_negative_limit": -0.037556384489371375,
+        "limit_error": 0.00012482138905056672
+      },
+      {
+        "rho": 1e-08,
+        "times": [
+          5e-05,
+          0.0001
+        ],
+        "source_amplitude": 100.0,
+        "raw_reflection_norm": -3.754388627541516e-06,
+        "rescaled_reflection_norm": -0.03754388627541516,
+        "strict_negative_limit": -0.037556384489371375,
+        "limit_error": 1.2498213956213533e-05
+      }
+    ],
+    "strict_A_lower_bound": 0.03024634056489292,
+    "A": 0.037556384489371375,
+    "contact_negative_limit_is_analytic_not_a_numerical_extrapolation": true
+  },
+  "full_magnetic_sources": {
+    "rows": [
+      {
+        "spatial_sites": 343,
+        "spacing": 0.8975979010256552,
+        "flow": 0.12085229878884927,
+        "retained_nonzero_modes": 342,
+        "physical_polarizations_per_mode": 2,
+        "reflected_value": 1.7628676753956725,
+        "unflowed_value": 4.5761483895815065,
+        "continuum_calibration": 4.58923873497366,
+        "error": 2.826371059577987,
+        "flow_defect_bound": 71.73037342057744,
+        "joint_bound": 250.90474636194318,
+        "polynomial_gram_error": 737.4962606553622,
+        "flowed_polynomial_gram_minimum": -0.47586015246308155,
+        "transverse_symbol_residual": 3.552713678800501e-15
+      },
+      {
+        "spatial_sites": 1331,
+        "spacing": 0.5711986642890533,
+        "flow": 0.04894018711283979,
+        "retained_nonzero_modes": 1330,
+        "physical_polarizations_per_mode": 2,
+        "reflected_value": 3.4196317474468594,
+        "unflowed_value": 4.633508214237708,
+        "continuum_calibration": 4.58923873497366,
+        "error": 1.1696069875268003,
+        "flow_defect_bound": 26.411374262229163,
+        "joint_bound": 93.599148703455,
+        "polynomial_gram_error": 643.4111173434278,
+        "flowed_polynomial_gram_minimum": -0.19856994195461428,
+        "transverse_symbol_residual": 1.4210854715202004e-14
+      },
+      {
+        "spatial_sites": 4913,
+        "spacing": 0.36959913571644626,
+        "flow": 0.020490528168351608,
+        "retained_nonzero_modes": 4912,
+        "physical_polarizations_per_mode": 2,
+        "reflected_value": 4.432784953061607,
+        "unflowed_value": 4.610203851456663,
+        "continuum_calibration": 4.58923873497366,
+        "error": 0.1564537819120524,
+        "flow_defect_bound": 4.767536790884526,
+        "joint_bound": 31.50926375502992,
+        "polynomial_gram_error": 518.0107821670042,
+        "flowed_polynomial_gram_minimum": 0.0001940255916770418,
+        "transverse_symbol_residual": 3.552713678800501e-14
+      },
+      {
+        "spatial_sites": 15625,
+        "spacing": 0.25132741228718347,
+        "flow": 0.009474820225045784,
+        "retained_nonzero_modes": 15624,
+        "physical_polarizations_per_mode": 2,
+        "reflected_value": 4.593251432616515,
+        "unflowed_value": 4.599325529183956,
+        "continuum_calibration": 4.58923873497366,
+        "error": 0.0040126976428549455,
+        "flow_defect_bound": 0.25230249531412485,
+        "joint_bound": 12.240932274489332,
+        "polynomial_gram_error": 406.45688836151646,
+        "flowed_polynomial_gram_minimum": 0.00020805012991537887,
+        "transverse_symbol_residual": 8.526512829121202e-14
+      }
+    ],
+    "source_moments": {
+      "1": 154.0014006049217,
+      "2": 375.2731097884495,
+      "3": 1030.9275160989455,
+      "4": 3127.275914929488
+    },
+    "continuum_calibration_spatial_modes": 35936,
+    "polynomial_basis": [
+      "1",
+      "B(f1)",
+      "B(f2)",
+      "B(f1)^2",
+      "B(f1)B(f2)",
+      "B(f2)^2"
+    ],
+    "full_magnetic_tensor_and_both_polarizations_retained": true,
+    "all_mode_limit_proof_uses_S4_and_explicit_tail_bound": true,
+    "quadrature_and_finite_sums_are_diagnostics_not_interval_certificates": true
+  },
+  "dependency_hashes": {
+    "research_note_382.md": "d67188e7d1af318c64109443e91482ab07233914789d8380e5d33be0352de1b4",
+    "research_note_383.md": "784fb6b0564909a6ad171c8cfddbc511884be09a32b8937d5c22c94dc35bca8d",
+    "research_note_384.md": "27c18ad597956498242dbc789255ac826cd055aabe210e3fb6a43ff59acd2887",
+    "research_note_386.md": "bd5271897e21562580a665ee1d3f752226c75be4aa05ef018ca44a2544a190ea",
+    "research_note_425.md": "c5ae63a1a16f90907b880c89059ff0a6b2800974409b2030b893afe7250d65c5",
+    "research_note_522.md": "c704d1c14506067f967fa9d8f00e0f27385113fceab028100576c8e51c5ada70",
+    "research_note_523.md": "140508aa0c2e903eb83cecf8ccd8693b06e4c56f78994156bc6bddb22afc64d8",
+    "research_note_524.md": "60996c7a56e37c892f68bbdb71ee966fbe36b7b8fc996cf03be6c75a3f6767b3",
+    "research_note_646.md": "526763e66b18198cb9cf58af304ae7b80521af87e3e9a7213516ce15bdc4c4ac",
+    "research_note_677.md": "cc889341caa2d4e6e2a2f42ca62882eed64317177d4f0d8f35a51343f2bea377",
+    "research_note_681.md": "d451f0e4e75cbc200a0fe769830bcff8d046376a5902efa6317bbdacfb538ad2",
+    "research_note_699.md": "17dff6cca81821d5fb7fb3ef284ab9fd4627acee73ce4c25c06b802b4c177c4a",
+    "research_note_700.md": "5eb11b708ef4e6f43b706cd6aae408c536d33d980dc834bd60f232750f6227cc",
+    "joint_gauge_flow_time_interface.py": "3b40ee0e862cdd3943b15b59e97e183890908bbcf94a1619ad925e01d69c554e",
+    "round701_drafts/joint_scale_entry.md": "529ae4dedb28628ea4be8f98e01d6e9a233d28c074d8ffa9cd2757dff9200472",
+    "round701_drafts/entry_checks.json": "a8cf1c41996f1ec3e383b84bef420674cac77ecd590bb05872da6998f8f30882"
+  },
+  "scope": {
+    "inherited_681_free_Abelian_physical_branch": true,
+    "full_spatial_modes_and_gauge_invariant_sources": true,
+    "continuous_physical_time_input": true,
+    "spatial_lattice_and_flow_joint_limit": true,
+    "fixed_smooth_polynomial_observables_have_RP_limit": true,
+    "shrinking_rescaled_sources_can_keep_negative_norm": true,
+    "original_Hb_Gauss_S9_chiral_candidate_continuum_unresolved": true,
+    "no_new_spatial_dimension_or_autonomous_instrument_claim": true,
+    "existing_523_524_instruments_not_reproved": true
+  }
+}

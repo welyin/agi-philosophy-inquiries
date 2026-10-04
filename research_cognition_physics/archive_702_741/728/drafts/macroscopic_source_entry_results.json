@@ -1,0 +1,63 @@
+{
+  "entry_round": 728,
+  "new_formal_round": false,
+  "tests_run": 2,
+  "failures": 0,
+  "errors": 0,
+  "results": {
+    "original_three_direction_star": true,
+    "original_ground_source_mean": 140.48342719233642,
+    "original_ground_source_variance": 5.768779777349025,
+    "finite_windows": [
+      {
+        "T": 1.0,
+        "ground_mean": 140.48342719233642,
+        "ground_variance": 0.27162388269527726,
+        "pair_gap_variance_bound": 492.9617143550445,
+        "postrecord_mean": 136.0798123310981,
+        "postrecord_variance": 19.660556440728044
+      },
+      {
+        "T": 4.0,
+        "ground_mean": 140.4834271923364,
+        "ground_variance": 0.013754259366856618,
+        "pair_gap_variance_bound": 30.81010714719028,
+        "postrecord_mean": 136.0798123106698,
+        "postrecord_variance": 19.40542021212789
+      },
+      {
+        "T": 16.0,
+        "ground_mean": 140.48342719233636,
+        "ground_variance": 0.0008396355052228732,
+        "pair_gap_variance_bound": 1.9256316966993925,
+        "postrecord_mean": 136.07981231151814,
+        "postrecord_variance": 19.392661454292323
+      },
+      {
+        "T": 64.0,
+        "ground_mean": 140.48342719233642,
+        "ground_variance": 2.538508806570883e-05,
+        "pair_gap_variance_bound": 0.12035198104371203,
+        "postrecord_mean": 136.07981241274226,
+        "postrecord_variance": 19.391858635476904
+      }
+    ],
+    "infinite_window_ground_variance": 1.3108574975653205e-13,
+    "infinite_window_postrecord_mean": 136.07980944776864,
+    "infinite_window_postrecord_variance": 19.3918593806544,
+    "postrecord_energy_increase": 4.417671929443031,
+    "postrecord_energy_variance": 19.515835536629627,
+    "degeneracy_threshold_crosscheck": 0.0,
+    "genuine_sterile_occupation_instrument_nonselective_moments": true
+  },
+  "dependencies": {
+    "research_note_591.md": "5cf5a7698f191bb9f76a1ead396dd585784fe9e518aa88e96565905781655518",
+    "research_note_602.md": "f3fb4939de75c594186627f1cb581d481b195dada8dd3c30a24380154e40aa2d",
+    "research_note_630.md": "455eb46ac40df7b2183801d74ab1a9b6205ece0838cd26f81b94471662a18128",
+    "research_note_633.md": "0c9b29f4095de54210140072552348e2d078374052d40d8d871171ed1d22ea9c",
+    "research_note_719.md": "be4662b3f03e67f1ed8a1471f3f78f7b59d3462af48edc21eb775f1d60c9516d",
+    "research_note_727.md": "0ad62e6e3ebef0fd60016418f46688e84595dc8870605358198d602ceb8aafa3",
+    "joint_matter_ground_source.py": "e33319e9037b7b5730323020d8d97e2ab217fc4b02e1b52fb7e7cf820817a6b9"
+  },
+  "scope": "Entry reuse of591/602 spectral averages on727 original finite CAR star. One-sided time averages reduce stationary-ground off-band source noise. The genuine original local occupation record changes the state and leaves conserved source and energy fluctuations. An averaged operator is not an implemented instrument; no whole-Gauss interacting, dynamic-background or spatial continuum claim."
+}

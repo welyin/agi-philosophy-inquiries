@@ -1,0 +1,185 @@
+{
+  "round": 721,
+  "tests_run": 3,
+  "failures": 0,
+  "errors": 0,
+  "results": {
+    "target_flow": {
+      "rows": [
+        {
+          "reference": "s",
+          "radius_fraction": 0.2,
+          "flow_refinement_error": 5.541394937034284e-14,
+          "inverse_error": 1.8875832159447664e-16,
+          "stretch_squared": 1.0515132103921974,
+          "stretch_bound": 2.0381964669628916,
+          "measure_jacobian_error": 4.448177937099729e-14,
+          "log_jacobian_gradient": 0.13272091251615065,
+          "log_jacobian_gradient_bound": 0.6225274384037889
+        },
+        {
+          "reference": "s",
+          "radius_fraction": 0.7,
+          "flow_refinement_error": 2.472484373539513e-14,
+          "inverse_error": 0.0,
+          "stretch_squared": 1.2759900814539535,
+          "stretch_bound": 2.0381964669628916,
+          "measure_jacobian_error": 1.1435297153639112e-14,
+          "log_jacobian_gradient": 0.04616553662252335,
+          "log_jacobian_gradient_bound": 0.6225274384037889
+        },
+        {
+          "reference": "s",
+          "radius_fraction": 0.94,
+          "flow_refinement_error": 1.947049178252012e-15,
+          "inverse_error": 1.3877787807814457e-17,
+          "stretch_squared": 1.120834317240005,
+          "stretch_bound": 2.0381964669628916,
+          "measure_jacobian_error": 1.3665866940675009e-14,
+          "log_jacobian_gradient": 0.005783590915083594,
+          "log_jacobian_gradient_bound": 0.6225274384037889
+        },
+        {
+          "reference": "T",
+          "radius_fraction": 0.2,
+          "flow_refinement_error": 1.4079765672452846e-12,
+          "inverse_error": 2.1456334586930846e-15,
+          "stretch_squared": 3.1422078293612836,
+          "stretch_bound": 11.783104302817202,
+          "measure_jacobian_error": 3.1605829065028956e-12,
+          "log_jacobian_gradient": 1.0453891574428817,
+          "log_jacobian_gradient_bound": 12.098533885292483
+        },
+        {
+          "reference": "T",
+          "radius_fraction": 0.7,
+          "flow_refinement_error": 4.4557561463049065e-13,
+          "inverse_error": 2.296847253011292e-15,
+          "stretch_squared": 1.7406339009686438,
+          "stretch_bound": 11.783104302817202,
+          "measure_jacobian_error": 7.475131624801179e-13,
+          "log_jacobian_gradient": 0.5980934443066162,
+          "log_jacobian_gradient_bound": 12.098533885292483
+        },
+        {
+          "reference": "T",
+          "radius_fraction": 0.94,
+          "flow_refinement_error": 3.588636001620751e-15,
+          "inverse_error": 0.0,
+          "stretch_squared": 1.1447063600046117,
+          "stretch_bound": 11.783104302817202,
+          "measure_jacobian_error": 3.1807889655510735e-14,
+          "log_jacobian_gradient": 0.08216005763581277,
+          "log_jacobian_gradient_bound": 12.098533885292483
+        }
+      ],
+      "max_cartesian_variational_error": 1.3316449780844522e-10,
+      "analytic_global_bounds_not_inferred_from_samples": true
+    },
+    "original_coefficients": {
+      "rows": [
+        {
+          "reference": "s",
+          "max_potential_bound_ratio": 0.01070948288796986,
+          "mass_rows": [
+            {
+              "radius_fraction": 0.2,
+              "Dirac_feedback": 1.9313763152392283e-16,
+              "Majorana_feedback": 0.0005150365879647949
+            },
+            {
+              "radius_fraction": 0.7,
+              "Dirac_feedback": 6.078494182609631e-16,
+              "Majorana_feedback": 0.0007410431638655184
+            },
+            {
+              "radius_fraction": 0.98,
+              "Dirac_feedback": 1.3241746373450571e-14,
+              "Majorana_feedback": 2.622364321132185e-05
+            }
+          ]
+        },
+        {
+          "reference": "T",
+          "max_potential_bound_ratio": 0.014663227659612671,
+          "mass_rows": [
+            {
+              "radius_fraction": 0.2,
+              "Dirac_feedback": 0.04584950577054469,
+              "Majorana_feedback": 4.694182240047171e-17
+            },
+            {
+              "radius_fraction": 0.7,
+              "Dirac_feedback": 0.004253031072987471,
+              "Majorana_feedback": 4.327222421404393e-16
+            },
+            {
+              "radius_fraction": 0.98,
+              "Dirac_feedback": 0.0017576320681618543,
+              "Majorana_feedback": 2.424763686264159e-15
+            }
+          ]
+        }
+      ],
+      "confinement_A": 2.730169528686151,
+      "confinement_B": 1.1359154281449408,
+      "numerator_bound": 28.661492695191466,
+      "complementary_mass_flow_identity_error": 2.522553089797459e-15,
+      "all_original32_mode_masses_retained": true
+    },
+    "records_and_sources": {
+      "rows": [
+        {
+          "reference": "s",
+          "energy": 0.01104896008301102,
+          "geometry_total_fd": -0.24725662802795031,
+          "source_instrument_preparation_terms": [
+            -0.06644884216666001,
+            -0.13208709677410033,
+            -0.048720687282196064
+          ],
+          "derivative_error": 1.8049939043418561e-09,
+          "two_record_probabilities": [
+            0.2591361018027333,
+            0.24086389819726672,
+            0.24086389819726678,
+            0.25913610180273333
+          ],
+          "actual_final_shifted_energy": 8.715802290777363,
+          "finite_matrix_two_step_budget": 9.177982330132323
+        },
+        {
+          "reference": "T",
+          "energy": 0.13854379495974228,
+          "geometry_total_fd": -3.0943629501345433,
+          "source_instrument_preparation_terms": [
+            -0.8335808561167756,
+            -1.6484973668881904,
+            -0.6122847037244232
+          ],
+          "derivative_error": 2.3405154259137362e-08,
+          "two_record_probabilities": [
+            0.2172264855481992,
+            0.28277351445180116,
+            0.2819830244828696,
+            0.21801697551713073
+          ],
+          "actual_final_shifted_energy": 8.968759683416078,
+          "finite_matrix_two_step_budget": 14.254930274054374
+        }
+      ],
+      "conditional64D_radial_diagnostic": true,
+      "no_full_Gauss_spectrum_or_continuum_simulation": true
+    }
+  },
+  "dependency_hashes": {
+    "joint_quantum_reference_forms.py": "7a22cd777d02dd38e7a66ca6b257c85e4dc2325e839236ecabafe2496d34a01e",
+    "joint_quantum_reference_forms_results.json": "9abb077c50e7e13c6eeb3e63b336e588476349f4efae376d8d2d17a08e6fd54f",
+    "joint_fermion_gauss_completion.py": "1de7d9f62d4ea8a5363cbcf2ecfb3149cf06e4e309f820f91dd856e11bc03a3b",
+    "joint_operator_domain_completion.py": "f88ff0aa098948f72532ecd21f42f8e21474ad9a165f9d0b68f8df44631f7224",
+    "round721_drafts/material_velocity_entry_results.json": "6750e385030df9fcb870cb75c16712f20f8ac9f5454549f0df1309a039f8a679",
+    "research_note_652.md": "ffd478c9cf190d71382409e15ffcf2dab1e4740834a11deb9c28461763c06c4a",
+    "research_note_720.md": "c9bcb880c25a7ce6ed2b123acce59d6bcefc22eb42c0e9953e8d9b5ca420ab4b"
+  },
+  "scope": "Full original fixed finite graph, fixed positive external geometry: velocity-flow instruments preserve the energy form; actual records and fixed-instrument source forms retained. Optional dynamical theta, uniform spatial refinement, autonomous apparatus and arbitrary finite-energy total source differentiability not proved."
+}

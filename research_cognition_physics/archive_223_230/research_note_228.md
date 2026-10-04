@@ -112,7 +112,7 @@ $$
 
 ## 5 可复算结果及边界
 
-[代码](instrument_completion_bridge.py)、[结果](instrument_completion_bridge_results.json)、[检查](research_round_228_checks.json)。既有Python与NumPy运行时，9项检查通过。
+[代码](228/instrument_completion_bridge.py)、[结果](228/instrument_completion_bridge_results.json)、[检查](228/research_round_228_checks.json)。既有Python与NumPy运行时，9项检查通过。
 
 | 内容 | 验证范围或结果 |
 |---|---|

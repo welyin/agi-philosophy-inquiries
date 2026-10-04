@@ -1,0 +1,143 @@
+{
+  "round": 724,
+  "tests_run": 3,
+  "failures": 0,
+  "errors": 0,
+  "results": {
+    "original_wall_energy": {
+      "lambda_from651": -30.681526820985155,
+      "original_inverse_metric": true,
+      "rows": [
+        {
+          "h": 0.24840294976735242,
+          "field": 7.379936172351451,
+          "gradient_squared": 1856.8785838175097,
+          "algebra_error": 2.2737367544323206e-13,
+          "relative_gradient_fd_error": 2.5279340266954535e-11
+        },
+        {
+          "h": 1.358652285043842,
+          "field": 41.95767348489855,
+          "gradient_squared": 1336.6957369551262,
+          "algebra_error": 4.547473508864641e-13,
+          "relative_gradient_fd_error": 8.12392716946431e-11
+        },
+        {
+          "h": 1.112314879849498,
+          "field": 36.665777200354945,
+          "gradient_squared": 597.8336303457545,
+          "algebra_error": 1.1368683772161603e-13,
+          "relative_gradient_fd_error": 6.878648476785495e-11
+        },
+        {
+          "h": 2.682814796395838,
+          "field": 80.3477320567142,
+          "gradient_squared": 63.40619613255386,
+          "algebra_error": 0.0,
+          "relative_gradient_fd_error": 1.7174591382913166e-10
+        },
+        {
+          "h": 0.01,
+          "field": 0.8068152682098515,
+          "gradient_squared": 1845.3254025334402,
+          "algebra_error": 2.2737367544323206e-13,
+          "relative_gradient_fd_error": 1.5467311983736163e-13
+        },
+        {
+          "h": 0.0001,
+          "field": 0.5030681526820985,
+          "gradient_squared": 1845.4060367074953,
+          "algebra_error": 2.2737367544323206e-13,
+          "relative_gradient_fd_error": 1.721214381537154e-11
+        },
+        {
+          "h": 1e-06,
+          "field": 0.500030681526821,
+          "gradient_squared": 1845.4065355124014,
+          "algebra_error": 4.547473508864641e-13,
+          "relative_gradient_fd_error": 8.940590422410899e-10
+        }
+      ],
+      "weak_gradient_bound": 1884.712176133663,
+      "regularized_gradient_max": 1853.8778007983112,
+      "gaussian_integrals": [
+        1.0000000000000182,
+        -1.0407891660063452e-17,
+        2.777777777777828
+      ],
+      "sigma": 0.3,
+      "per_node_energy_bound_for_original_w08": 1603.3141776137063,
+      "continuum_energy_identity_proved_analytically": true
+    },
+    "nested_gauge_regions": {
+      "nodes": 2,
+      "scalar_configurations": 4,
+      "weak_link_coefficient_dimension": 4,
+      "passive_reference_dimension": 2,
+      "fine_records": 9,
+      "coarse_records": 4,
+      "coarse_probabilities": [
+        0.4972372114440172,
+        0.20516938013107638,
+        0.2091033632051819,
+        0.08849004521972449
+      ],
+      "cut_Gauss_error": 1.2730102565409366e-16,
+      "isometry_error": 2.220446049250313e-16,
+      "energy_transport_error": 1.6654365306984854e-16,
+      "source_transport_error": 2.4340519874438612e-17,
+      "nested_record_gluing_error": 6.938893903907228e-18,
+      "pulled_back_coarse_instrument_error": 6.938893903907228e-18,
+      "trace_error": 0.0,
+      "minimum_bin_kernel_eigenvalue": 0.0,
+      "minimum_output_eigenvalue": -1.0208227462430067e-17,
+      "actual_vs_Luders_poststate_gap": 0.03542633344708743,
+      "same_single_measurement_not_remeasurement": true,
+      "full_endpoint_Gauss_and_CAR_claim_is_analytic_not_this_fixture": true
+    },
+    "moving_record_sources": {
+      "original652_dimension": 64,
+      "boundary_speed": 7.0,
+      "sigma": 1.1,
+      "probabilities": [
+        0.23375292621753693,
+        0.7662470737824634
+      ],
+      "energy_numerators": [
+        4.024061832306807,
+        7.787664977245952
+      ],
+      "energy_derivatives": [
+        -8.939581736398903,
+        -47.07501823867444
+      ],
+      "conditional_energy_derivatives": [
+        -95.4454049732516,
+        -51.133670912155594
+      ],
+      "state_derivative_fd_error": 6.403516566948967e-11,
+      "energy_derivative_fd_error": 2.186361314215901e-09,
+      "conditional_energy_derivative_fd_error": 9.410285883859615e-10,
+      "omitted_branch_energy_flux": 1.7914309923714276,
+      "omitted_branch_probability_flux": 0.1262363810529198,
+      "pulled_back_boundary_flux_cancellation_error": 6.938893903907228e-18,
+      "record_boundary_flux_not_GHY_or_Einstein_equation": true
+    }
+  },
+  "dependency_hashes": {
+    "joint_material_boundary_transport.py": "d3ff33e58c2e270c03f62131905a4547d725cd1b2ac53d210bce267f0fca6309",
+    "joint_quantum_reference_forms.py": "7a22cd777d02dd38e7a66ca6b257c85e4dc2325e839236ecabafe2496d34a01e",
+    "joint_region_energy_gluing.py": "3680874356ce8a2a5c217dd50b7800635e90406f0d3ab48e61ae26e14b9654e0",
+    "joint_reference_process_transport.py": "5b95ebaf3517078cb89a12e4499cedd8816769d7c7882b4030e227d3d6de4dfe",
+    "research_note_563.md": "97349b910e4cab2ace69de7798a078e56dcabefd811f71e311efd4f4f40d4da0",
+    "research_note_617.md": "68d930ea7de4a53b5fd098a05b499094328868010008f398178d7c26b6c4c2e9",
+    "research_note_647.md": "093760ac55b2f9fb947c8ba1c067b442e31b36bc8a1107e3946254b77d48e099",
+    "research_note_649.md": "ae1cc45b9838a306db96cbf25c6ae42974531bc70badeff0deb1afe35eaf104e",
+    "research_note_651.md": "8fce9b455c65c9019830f92601094361652cad1f17e6d7b43bd9650815fac67b",
+    "research_note_652.md": "ffd478c9cf190d71382409e15ffcf2dab1e4740834a11deb9c28461763c06c4a",
+    "research_note_723.md": "fd8d72a25d512bde5fc8cdfa6b9acc31464b3b8947895d35387f6319d9ce393a",
+    "round724_drafts/relational_wall_entry.py": "582d52ba3f869a071731203d3ee07e2468c03e751957d6be01f3d337931bca29",
+    "round724_drafts/relational_wall_entry_results.json": "a46b8798a32cf2eb91f7a8d83879c3ac89fa99b1806d6031feacbb2ca0bfb1cf"
+  },
+  "scope": "Same original material wall and full fixed-graph Gauss Hamiltonian: finite-resolution field records select vertex regions, original matching isometries transport all sectors and energy; coarsening the same record commutes with gluing. Moving record thresholds contribute branch source flux. No autonomous apparatus, physical graph refinement, sharp zero-cost boundaries, spacetime causal-type reconstruction or quantum gravity gluing."
+}

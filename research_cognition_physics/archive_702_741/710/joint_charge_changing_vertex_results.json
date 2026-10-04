@@ -1,0 +1,151 @@
+{
+  "round": 710,
+  "tests_run": 3,
+  "failures": 0,
+  "errors": 0,
+  "tensor": {
+    "original_modes": 32,
+    "active_Q_L_modes": 16,
+    "canonical_monomials": 36,
+    "coefficient_counts": {
+      "-2": 12,
+      "1": 24
+    },
+    "raw_vacuum_norm_squared": 72,
+    "raw_coefficient_l1": 48,
+    "normalized_operator_norm_upper_bound": 5.656854249492381,
+    "complete_output_occupancies": 880,
+    "gauge_and_SL2_tensor_errors": [
+      3.81742665022135e-15,
+      5.351333158828936e-15,
+      1.763002201227251e-15,
+      7.681846795075473e-15,
+      4.341359742708492e-15,
+      2.7121953605475856e-15
+    ],
+    "nonunitary_boost_tensor_only_defect": 1.2142835374292822,
+    "no_finite_CAR_Lorentz_boost_claim": true,
+    "one_generation_vacuum_creator_norm": 1.0
+  },
+  "charge_and_phase": {
+    "charge_commutator_error": 3.15417742518155e-16,
+    "ward_identity_error": 1.6012164870702237e-16,
+    "passive_phase_covariance_error": 2.7577193236257924e-16,
+    "one_generation_physical_charge_slope": -0.930000000000001,
+    "QQQL_phase_row": [
+      3,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "old_phase_rank": 6,
+    "new_phase_rank": 6,
+    "old_restricted_quotient_dimension": 3,
+    "new_restricted_quotient_dimension": 4,
+    "extra_invariant_coefficients": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      -1,
+      0,
+      1
+    ],
+    "generations": [
+      {
+        "generations": 1,
+        "charge_change": 3,
+        "lepton_change": 1,
+        "fermion_degree": 4,
+        "nonzero_vacuum_components": 36,
+        "raw_norm_squared": 72,
+        "physical_residual_order": 1,
+        "residual_coherence_factor_real": 1.0,
+        "U1_coherence_factor": 0,
+        "source_expectation_for_plus_i": -0.9299999999999999
+      },
+      {
+        "generations": 2,
+        "charge_change": 6,
+        "lepton_change": 2,
+        "fermion_degree": 8,
+        "nonzero_vacuum_components": 1296,
+        "raw_norm_squared": 5184,
+        "physical_residual_order": 2,
+        "residual_coherence_factor_real": 1.0,
+        "U1_coherence_factor": 0,
+        "source_expectation_for_plus_i": -1.8599999999999999
+      },
+      {
+        "generations": 3,
+        "charge_change": 9,
+        "lepton_change": 3,
+        "fermion_degree": 12,
+        "nonzero_vacuum_components": 46656,
+        "raw_norm_squared": 373248,
+        "physical_residual_order": 3,
+        "residual_coherence_factor_real": 1.0,
+        "U1_coherence_factor": 0,
+        "source_expectation_for_plus_i": -2.79
+      }
+    ],
+    "single_common_phase_is_unitarily_removable_in_finite_extension": true,
+    "independent_topological_carrier_not_constructed": true
+  },
+  "volume_and_reference": {
+    "volume_contracts": [
+      {
+        "generations": 1,
+        "continuum_operator_dimension": 6,
+        "coupling_mass_dimension": -2,
+        "canonical_volume_exponent": -1,
+        "conformal_source_factor": -6,
+        "first_source_relative_error": 2.3989248470895593e-09,
+        "mixed_source_relative_error": 2.3989248470895593e-09,
+        "half_cell_side_bare_coefficient_ratio": 8
+      },
+      {
+        "generations": 2,
+        "continuum_operator_dimension": 12,
+        "coupling_mass_dimension": -8,
+        "canonical_volume_exponent": -3,
+        "conformal_source_factor": -18,
+        "first_source_relative_error": 2.159930082100532e-08,
+        "mixed_source_relative_error": 2.159930082100532e-08,
+        "half_cell_side_bare_coefficient_ratio": 512
+      },
+      {
+        "generations": 3,
+        "continuum_operator_dimension": 18,
+        "coupling_mass_dimension": -14,
+        "canonical_volume_exponent": -5,
+        "conformal_source_factor": -30,
+        "first_source_relative_error": 5.99998021646225e-08,
+        "mixed_source_relative_error": 5.99998021646225e-08,
+        "half_cell_side_bare_coefficient_ratio": 32768
+      }
+    ],
+    "borrowed_cell_normalization": "664: psi=c/sqrt(w); w=epsilon^3 exp(6 sigma)",
+    "finite_positive_background_only": true,
+    "new_H_and_Gibbs_required": true,
+    "scalar_double_commutator_unchanged_as_operator": true,
+    "Gibbs_partition_comparison": "exp(-beta b) Z0 <= Znew <= exp(beta b) Z0",
+    "bounded_perturbation_proof_not_full_heat_spectrum_simulation": true,
+    "no_uniform_UV_bound_or_anomaly_amplitude_claim": true
+  },
+  "dependency_hashes": {
+    "joint_charge_quantum_coarse.py": "214278829b6bd35da2f8a1d028431d28968ca0254326758c87b9ff83bb090eb5",
+    "joint_charge_quantum_coarse_results.json": "f7678b2df5505988a7fb583c3e2456b598babee6257fce2d79f2b16c9c1cb9da",
+    "joint_topological_mass_phases.py": "d1a3bef64b99964891bbce90aea4ecb1163550c3e9fdf4fd0dfada5b33a25a1b",
+    "research_note_664.md": "de17fc110266d152fb56d9316710ed518cafcf49756b419d8ff18bf675f6f528",
+    "research_note_665.md": "a1ad572fa9a718b7159fa472fb5b2b6dd8fcbb3369e6f822f7886e32cb475c43",
+    "round710_drafts/residual_phase_entry.py": "2e1473c62115d3e0cc947f690f75af5a3f1ff98628f4a3b1921211c7b88dee97",
+    "round710_drafts/residual_phase_entry_results.json": "de54a6b13b848a39e2b04b6a75441504e3cdec52200ec38ee1052c23ed08bb6d"
+  },
+  "scope": "New bounded local QQQL-product extension of original finite CAR/Gauss model; joint charge, phase, volume, thermal and record conditions. No induced instanton vertex, complete chiral continuum, empirical parameter prediction or GR derivation."
+}

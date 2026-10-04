@@ -1,0 +1,95 @@
+{
+  "date": "2026-10-02",
+  "entry_round": 697,
+  "new_formal_round": false,
+  "full_original_group_and_two_S9_measures": true,
+  "original_full_matrix_relative_error": 4.664259184460013e-14,
+  "inherited_exact_B00": "52156246987832561/2426610065007202414857263303884800",
+  "inherited_exact_B00_decimal": 2.1493460255501643e-17,
+  "independent_pilot": {
+    "samples": 16384,
+    "seed": 69761,
+    "control_coefficients": [
+      1.0,
+      3089.94145183798,
+      244312.60582380235
+    ]
+  },
+  "main": {
+    "samples": 524288,
+    "seed": 69762,
+    "raw_mean": [
+      2.1864279041288414e-17,
+      7.445130607999194e-14,
+      7.489040280670298e-11
+    ],
+    "raw_standard_error": [
+      1.883831001476776e-19,
+      6.279105162624782e-16,
+      8.730539492868965e-13
+    ],
+    "controlled_mean": [
+      2.1493460255501643e-17,
+      7.330549774266916e-14,
+      7.479980710285899e-11
+    ],
+    "controlled_covariance_of_mean": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.1253477651138605e-31,
+        2.4296687902236124e-29
+      ],
+      [
+        0.0,
+        2.4296687902236126e-29,
+        7.596455468509742e-25
+      ]
+    ],
+    "sampled_range": [
+      [
+        1.9329160803417077e-53,
+        1.0266014309983067e-49,
+        -1.6149427777875192e-18
+      ],
+      [
+        8.795474083158658e-15,
+        2.899631871612118e-11,
+        8.048496010946352e-08
+      ]
+    ]
+  },
+  "fixed_rational_test": {
+    "vector": [
+      1,
+      "-1/1000"
+    ],
+    "estimated_value": -5.0317728126977705e-17,
+    "estimated_standard_error": 1.0547975641266783e-18,
+    "standard_errors_below_zero": 47.70368252474906,
+    "negative_deterministic_certificate": false,
+    "confidence_interval_not_rigorously_coverage_certified": true
+  },
+  "proposals": {
+    "torus": "0.1 uniform +0.9 six-Z6-centre product-vonMises mixture",
+    "kappa": [
+      1.0,
+      1.0,
+      1.0,
+      15.0
+    ],
+    "spheres": "uniform E;0.1 uniform F+0.9 conditional((1+E.F)/2)^8",
+    "both_densities_bounded_below_by": 0.1,
+    "self_normalized_importance_not_used": true
+  },
+  "limitation": "Sample standard errors do not prove exact sign; original Hb and finite-tau physical RP remain separate.",
+  "dependency_hashes": {
+    "joint_gauss_support_marginal_results.json": "dc949e35c625cdae84e97426c4f8f60a6a065c9103fa0886ce3790871e52f7a6",
+    "round697_drafts/full_average_probe.py": "bce264ea1c3673fb208f6b9350f1ae89cd80282f44689a20470ca528fe97d341",
+    "round697_drafts/center_holonomy_entry.py": "057d4a0104fcbdfb56a65114cf72451b281d273803ca53cce97c06be6beadfb2"
+  }
+}

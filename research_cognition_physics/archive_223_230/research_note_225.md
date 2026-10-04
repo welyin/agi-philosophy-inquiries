@@ -168,7 +168,7 @@ $$
 
 ## 7 可复算证据
 
-[代码](global_orientation_bridge.py)复用223、224轮的NumPy矩阵工具；[结果](global_orientation_bridge_results.json)包含9项通过的测试。
+[代码](225/global_orientation_bridge.py)复用223、224轮的NumPy矩阵工具；[结果](225/global_orientation_bridge_results.json)包含9项通过的测试。
 
 | 检查 | 实际结果 | 范围 |
 |---|---|---|
@@ -183,7 +183,7 @@ $$
 python -B -X utf8 research_cognition_physics/archive_223_/global_orientation_bridge.py
 ```
 
-加`--write-results`生成结果；已有不同内容时停止，不覆盖。归档与文档检查见[轮次检查](research_round_225_checks.json)。
+加`--write-results`生成结果；已有不同内容时停止，不覆盖。归档与文档检查见[轮次检查](225/research_round_225_checks.json)。
 
 ## 8 接下来可独立推进的问题
 

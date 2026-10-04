@@ -1,0 +1,160 @@
+{
+  "round": 744,
+  "tests_run": 2,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "original_unknown_input_instrument_selection",
+    "native_full_onsite_history_sixth_jet"
+  ],
+  "results": {
+    "selection": {
+      "entry_round": 744,
+      "latest_completed_round": 743,
+      "formal_test_count_unchanged": 3424,
+      "original_complete_species_mass_symmetry_error": 0.0,
+      "original_potential_edge_metric_symmetry_error": 0.0,
+      "encoded_Majorana_matrix_real": [
+        [
+          0.0,
+          0.3228002478313795
+        ],
+        [
+          0.3228002478313795,
+          0.0
+        ]
+      ],
+      "encoded_Majorana_matrix_imag": [
+        [
+          0.0,
+          1.3877787807814457e-17
+        ],
+        [
+          -1.3877787807814457e-17,
+          0.0
+        ]
+      ],
+      "symmetric_ready_packet": {
+        "normalization": 0.00011572564260104218,
+        "mean_x5": 4.828586692671031e-19,
+        "variance_x5": 0.11362789527824811,
+        "inherited_sin_readout_force_weight": 1.2440968689246032,
+        "nonGaussian_occupation_Wick_coefficient": 0.011840026687993452,
+        "connected_scalar_pair_derivative_abs": 0.036679112756376524,
+        "global_fermion_linear_entropy_coefficient_per_independent_node": 0.023680053375986904
+      },
+      "actual_plus_effect_t2_real": [
+        [
+          0.0,
+          -0.05019934720188815
+        ],
+        [
+          -0.05019934720188815,
+          0.0
+        ]
+      ],
+      "actual_plus_effect_t2_imag": [
+        [
+          0.0,
+          -2.15816404491275e-18
+        ],
+        [
+          2.15816404491275e-18,
+          0.0
+        ]
+      ],
+      "exact_effect_relation": "Z M_plus(t) Z = I - M_plus(t) for symmetric ready state and original global singlet reflection with exp(i pi N/2).",
+      "exact_equal_probabilities_for_encoded_empty_and_pair": "1/2 for every t; conditional on symmetry and fixed original sin-s effect.",
+      "no_claim_that_all_observables_or_all_preparations_are_population_blind": true,
+      "no_claim_of_exact_occupation_instrument_or_autonomous_final_readout": true,
+      "numerical_time_evolution_performed": false,
+      "dependencies": {
+        "research_note_577.md": "c4a8abb53b794856fd1abc86a8fc084e8d950e2231a080a6ffd26944eb583d7e",
+        "research_note_598.md": "3cfd675bceca95c6fcca2a72181a52cccb44cc4d5421b61fea0159002d80b8c5",
+        "research_note_717.md": "ae516fa8e118488d1026b7306f6807c5ce34a7d4dccc18cd02c4324904758ef3",
+        "research_note_743.md": "d271ba8ec0f8a729cdddd8ca63f3fb26009fda97070386f251083182c22b773d",
+        "joint_fermion_gauss_completion.py": "1de7d9f62d4ea8a5363cbcf2ecfb3149cf06e4e309f820f91dd856e11bc03a3b",
+        "joint_curved_quantum_source.py": "cf6aec9461174f41985b706c1bae776787b198ab77d9e42dfe8057764795775c",
+        "joint_native_quantum_record.py": "fdfd654301d7a9499bc7a0e270a004b5f4765f81f5c93d2defe4d56c2207370b"
+      },
+      "all_checks_passed": true
+    },
+    "parity_history": {
+      "graph_vertices": 1,
+      "target_coordinates": 5,
+      "physical_CAR_modes": 32,
+      "quantum_boson_H_retained": true,
+      "original_potential_and_all_mass_couplings_retained": true,
+      "alpha": 1.0,
+      "volume_weight": 1.0,
+      "normal_ready_state": "exp(-|x|^2/2), normalized in actual H5 measure",
+      "rows": [
+        {
+          "order": 48,
+          "difference_sixth": -0.5500507714463518,
+          "parity_expectation_t6_coefficient": -0.0007639594047865998,
+          "even_parity_probability_t6_coefficient": -0.0003819797023932999,
+          "lower_derivative_difference": [
+            0.0,
+            0.0,
+            4.163336342344337e-17,
+            4.980974023705752e-17,
+            2.91329460555545e-14
+          ],
+          "identity_sixth_residual": 2.251200961755906e-12
+        },
+        {
+          "order": 64,
+          "difference_sixth": -0.5500507714538321,
+          "parity_expectation_t6_coefficient": -0.000763959404796989,
+          "even_parity_probability_t6_coefficient": -0.0003819797023984945,
+          "lower_derivative_difference": [
+            0.0,
+            0.0,
+            -1.3877787807814457e-17,
+            -5.3140490575230465e-18,
+            1.5910883721659275e-14
+          ],
+          "identity_sixth_residual": 3.146186214897824e-11
+        },
+        {
+          "order": 80,
+          "difference_sixth": -0.5500507714542655,
+          "parity_expectation_t6_coefficient": -0.000763959404797591,
+          "even_parity_probability_t6_coefficient": -0.0003819797023987955,
+          "lower_derivative_difference": [
+            0.0,
+            0.0,
+            -3.469446951953614e-17,
+            -3.308102388301292e-17,
+            3.5041414214731503e-15
+          ],
+          "identity_sixth_residual": 1.7749531459343046e-11
+        }
+      ],
+      "quadrature_changes": [
+        7.480238650714455e-12,
+        4.334310688136611e-13
+      ],
+      "no_claim_of_analytic_vanishing_of_all_lower_derivatives": true,
+      "no_interval_sign_certificate": true,
+      "no_multi_vertex_continuum_or_full_propagation_claim": true,
+      "actual_two_read_effect": "Sum(r*s E_r E_s)=sin(s_ball)^2/4; original square-root instruments, zero separation at endpoint.",
+      "preparation_is_not_frozen_round743_compact_packet": true
+    }
+  },
+  "dependency_hashes": {
+    "research_note_577.md": "c4a8abb53b794856fd1abc86a8fc084e8d950e2231a080a6ffd26944eb583d7e",
+    "research_note_598.md": "3cfd675bceca95c6fcca2a72181a52cccb44cc4d5421b61fea0159002d80b8c5",
+    "research_note_623.md": "2ef362e618a11588e5edcf20c0090dd88e29165b2ab0405b1c6a5be1a9b0d804",
+    "research_note_624.md": "764cc0bd20ac7d36a1e99f91e5507c2ce568af940b832f9a72a99638f8b1bc63",
+    "research_note_717.md": "ae516fa8e118488d1026b7306f6807c5ce34a7d4dccc18cd02c4324904758ef3",
+    "research_note_718.md": "2b43b22c4da3a35287f7286f113e0a92696fc88b61eaa372f3a59ca702e39406",
+    "research_note_743.md": "d271ba8ec0f8a729cdddd8ca63f3fb26009fda97070386f251083182c22b773d",
+    "round744_drafts/native_instrument_selection_entry.py": "b0baef546d58e694aecd279b18b4b2e4adf13a7e26fe2c882365df9d94c2da8e",
+    "round744_drafts/native_instrument_selection_entry_results.json": "e37ff4f3e0a5f589c8396c5b9c82c65906b96000d47f43ee76293992d0ba0c98",
+    "round744_drafts/history_jet_probe.py": "efb7390afe62b8785fc2187bd48fa8b9b81c4c263430c5ac7518e5071693fb6f",
+    "round744_drafts/history_sixth_jet_probe.py": "d5f1d7ddf477f5ea11a1f01d765b46d4d0732a524d3ddc9e07f74ec5403e05d5"
+  },
+  "scope": "Exact full-H joint symmetry constrains the native single-read unknown-code POVM. True two-read histories permit population sensitivity. Full native onsite quantum Hamiltonian jets give reproducible sixth-order numerical evidence for that signal on a declared normal Gaussian preparation. It is not a certified nonzero connected-graph instrument, exact n measurement, autonomous detector, continuum SM or gravity construction."
+}

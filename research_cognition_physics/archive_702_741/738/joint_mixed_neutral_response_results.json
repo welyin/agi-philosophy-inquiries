@@ -1,0 +1,93 @@
+{
+  "round": 738,
+  "tests_run": 2,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "mixed_spectrum_check",
+    "matrix_inverse_check"
+  ],
+  "results": {
+    "mixed_spectrum_check": {
+      "original_mass_coordinates": [
+        0.48577184546706703,
+        0.39847924749141567
+      ],
+      "original_neutral_masses": [
+        0.14850053867208848,
+        0.27712973851797906
+      ],
+      "mixed_pair_threshold": 0.4256302771900675,
+      "probe_between_mixed_and_heavy_threshold": 0.4899448771130128,
+      "missing_mixed_cut_matrix": [
+        [
+          0.0001353866526493672,
+          -0.00016504504192657777
+        ],
+        [
+          -0.00016504504192657777,
+          0.00020120052702014387
+        ]
+      ],
+      "missing_mixed_cut_eigenvalues": [
+        6.776263578034403e-20,
+        0.000336587179669511
+      ],
+      "common_scaling_cancels_mixed_pair": 3.1603956335813334e-20,
+      "direct_unequal_mass_projector_error": 3.3306690738754696e-16,
+      "old_common_scaling_spectrum_projection_error": 2.7755575615628914e-17,
+      "full_log_coefficient": [
+        [
+          0.14157862293302967,
+          -4.336808689942018e-19
+        ],
+        [
+          -4.336808689942018e-19,
+          0.0013197084169414494
+        ]
+      ],
+      "full_log_eigenvalues": [
+        0.0013197084169414494,
+        0.14157862293302967
+      ],
+      "original_heat_kinetic_Gram_error": 4.336808689942018e-19,
+      "one_generation_and_Majorana_half_weights_retained": true
+    },
+    "matrix_inverse_check": {
+      "exact_matrix_decomposition_error": 8.760971849142158e-16,
+      "quadrature_refinement_error": 3.9739936517281115e-16,
+      "positive_measure_sample_minimum": 5.812733506045241e-05,
+      "exact_constant_matrix": [
+        [
+          -0.09224492456721857,
+          -0.0006258377658156372
+        ],
+        [
+          -0.0006258377658156372,
+          0.000365220694445031
+        ]
+      ],
+      "normalized_constant_norm": 0.6537983146429248,
+      "time_window": 0.01,
+      "normalized_memory_L1_upper": 0.000918608688094387,
+      "inverse_log_L1_upper": 0.40872230146423727,
+      "sufficient_contraction_upper": 0.26759740771143875,
+      "original_finite_mass_thresholds_retained": true,
+      "additional_local_gravity_terms_and_constraints_still_separate": true,
+      "short_time_inverse_not_a_nonlinear_spacetime": true
+    }
+  },
+  "dependency_hashes": {
+    "research_note_599.md": "ba5d7071d95480f4d9ce2cf08f99eb5584585e089f0370f468c4389bd59a7e77",
+    "research_note_630.md": "455eb46ac40df7b2183801d74ab1a9b6205ece0838cd26f81b94471662a18128",
+    "research_note_632.md": "1c5fbf535b5d106af8c4404f3c55faa656dc1b37b971a76a349adb665bfbef16",
+    "research_note_730.md": "d3ffb29f466387c0e6d6af03935f2f2e748765afb526aee97da70008127ba56a",
+    "research_note_736.md": "dd40eeb9466510b2f246df6834d7ffdc3fd2f795811898be8a628271014bbfb7",
+    "research_note_737.md": "cc4b53bf9e8bdf9591853b76e4ea48af05bbf0e1a0e3d913d6416e6904149922",
+    "joint_fermion_gauss_completion.py": "1de7d9f62d4ea8a5363cbcf2ecfb3149cf06e4e309f820f91dd856e11bc03a3b",
+    "joint_background_contact_matching.py": "f725329f179f5a0c787fae8292857c22c9c61273a19caa70ac54578b1030ee3e",
+    "joint_tensor_stress_spectrum.py": "6a69ab29c91e93a5fe05fb842848a8c7a0171cb33a546dcdb83e811758219611",
+    "joint_causal_log_inverse.py": "5bbae35d08b8de8519358996f01b07565bd004f2f2a5cae5a1d30b7e6d38e5f1"
+  },
+  "scope": "Full two-neutral-source free-fermion response on the original matched constant vacuum, including mixed Majorana thresholds, positive matrix logarithmic coefficient and exact short-time memory inverse. Full gauge constraints, interacting loops, actual time-dependent reference and nonlinear semiclassical existence remain open."
+}

@@ -1,0 +1,58 @@
+{
+  "round": 745,
+  "tests_run": 2,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "exact_original_onsite_H_CAR_density",
+    "outward_integral_with_analytic_remainders"
+  ],
+  "exact_coefficients": {
+    "zero_orders": [
+      0,
+      1,
+      2,
+      3,
+      5
+    ],
+    "maximum_floating_calibration_difference": 1.8758328224066645e-12
+  },
+  "certificate": {
+    "exact_parameter_interpretation": "Frozen decimal table and Yukawa values as real rationals; exact u solve.",
+    "derivative_order": 6,
+    "unnormalized_integral_interval": [
+      "-0.414314110204290526420325945058345458422626404992435177519814",
+      "-0.414314069148947068090515947255505888010681868774104242456227"
+    ],
+    "quadrature_interval": [
+      "-0.414314089676618797255420946156925673216654136883269734637767",
+      "-0.414314089676618797255420946156925673216654136883269685338274"
+    ],
+    "quadrature_decimal_precision": 60,
+    "quadrature_nodes": 10001,
+    "interpolation_degree": 20,
+    "sine_series_terms": 20,
+    "complex_disk_radius": "1/2",
+    "complex_disk_bound": "98868399221547321165904886175802675931974723237998124552893452895629503076721/57478783737070542612463929749145875000000000000000000",
+    "quadrature_analytic_error_upper": "2.00674142442744500570070978129847225005116143045842196281181E-8",
+    "sine_series_error_upper": "4.60121714179645855154552274929454619236225927004106120587338E-10",
+    "tail_error_upper": "1.35770710809086739769697291795148361325211293720700910810507E-13",
+    "newton_cotes_absolute_weight_sum": "5743460030229967/5277196926540",
+    "coefficient_l1_norm": "2951528707755934297445587702459957045128577560836937203609/4655781482702713951609578309680815875000000000000000000",
+    "strict_negative": true,
+    "normalized_derivative_has_same_sign": true,
+    "finite_time_interval_not_computed": true,
+    "connected_graph_not_certified": true,
+    "all_checks_passed": true
+  },
+  "dependency_hashes": {
+    "research_note_623.md": "2ef362e618a11588e5edcf20c0090dd88e29165b2ab0405b1c6a5be1a9b0d804",
+    "research_note_744.md": "5dd17ad7b5eb5a9a08c8b856552808d6b6770a43f82d1c78b8b0a28fd819225d",
+    "joint_singlet_common_mass_rg_results.json": "4bd60fde58c288d047275f8441c8e622819cd58a2fe55a5ea2717a5fc3a48d66",
+    "joint_fermion_gauss_completion.py": "1de7d9f62d4ea8a5363cbcf2ecfb3149cf06e4e309f820f91dd856e11bc03a3b",
+    "round745_drafts/exact_history_density.py": "bab5a5fbfb39cfd44cad19275f6ff7fde0d176669496ab1d5a2a6a752bee8ee7",
+    "round745_drafts/exact_history_density_results.json": "f8c4651512c3b20bd873dbad746596a292b6af8419c872174ef79bb0cd3b043e",
+    "round745_drafts/certify_history_integral.py": "b133c608ad3e568079859f826fe3e969b8bca093f72cc17a40c0bef4ac327191"
+  },
+  "scope": "The original one-vertex Gaussian preparation with exact-decimal frozen model parameters has a strictly negative sixth parity-history contrast derivative. Therefore arbitrarily short nonzero wait choices with nonzero contrast exist, and at each such choice sufficiently small positive inter-read gaps preserve contrast. No explicit usable time window, connected-graph result, ideal occupation instrument, autonomous detector or gravity completion is claimed."
+}

@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-02",
+  "round": 678,
+  "tests_run": 2,
+  "failures": 0,
+  "errors": 0,
+  "complete_local_physical_source_identity": {
+    "original_full_nonflat_16_channels": true,
+    "a": 0.23,
+    "L": 1,
+    "n": 256,
+    "bulk_dimension": 512,
+    "original_mass_and_four_distinct_phi": true,
+    "direct_identity_errors": {
+      "skew": 6.938893903907228e-17,
+      "full_action_pullback": 3.330849769336005e-16,
+      "physical_source_pullback": 1.2412670766236366e-16
+    },
+    "auxiliary_Schur_errors": {
+      "inverse": 1.2212488355316014e-15,
+      "Schur_action": 2.2247786310271853e-16,
+      "Schur_source": 1.2412670766236366e-16,
+      "no_source_contact": 0.0
+    },
+    "bare_berezin_sign": 1,
+    "rows": [
+      {
+        "source_count": 0,
+        "full_dimension": 1536,
+        "full_log_abs_Pf": 432.8730066931382,
+        "bulk_log_abs_det": 587.8654395052839,
+        "original_coefficient": [
+          4.8712642911886e-68,
+          -7.618385232412683e-83
+        ],
+        "corrected_bulk_coefficient": [
+          4.8712642911901245e-68,
+          2.324030467582668e-83
+        ],
+        "phase_preserving_relative_error": 3.1375566546560763e-13
+      },
+      {
+        "source_count": 2,
+        "full_dimension": 1538,
+        "full_log_abs_Pf": 427.7444292770337,
+        "bulk_log_abs_det": 587.8654395052839,
+        "original_coefficient": [
+          7.1237138745103155e-71,
+          2.7969214266586357e-70
+        ],
+        "corrected_bulk_coefficient": [
+          7.123713874510949e-71,
+          2.796921426659697e-70
+        ],
+        "phase_preserving_relative_error": 3.77048380932239e-13
+      },
+      {
+        "source_count": 4,
+        "full_dimension": 1540,
+        "full_log_abs_Pf": 426.89106061855796,
+        "bulk_log_abs_det": 587.8654395052839,
+        "original_coefficient": [
+          -7.006808950707733e-71,
+          1.0102603413317808e-70
+        ],
+        "corrected_bulk_coefficient": [
+          -7.006808950709972e-71,
+          1.0102603413321046e-70
+        ],
+        "phase_preserving_relative_error": 3.1352731396522615e-13
+      }
+    ],
+    "no_division_by_original_physical_weight_in_theorem": true
+  },
+  "normalization_and_original_gauge_source": {
+    "original_676_flux_lift_errors": {
+      "skew": 5.721958498152797e-17,
+      "full_action_pullback": 2.2887833992611187e-16,
+      "physical_source_pullback": 1.2412670766236366e-16
+    },
+    "L": 3,
+    "bulk_dimension": 1024,
+    "boson_gram_minimum_eigenvalue": 1.9922436257337803,
+    "gaussian_logdet_identity_error": 1.1368683772161603e-12,
+    "complex_phase_cancellation_error": 1.1350920203767982e-12,
+    "original_link_source_rows": [
+      {
+        "angle": -0.0001,
+        "numerator_aux_logdet": 1018.502507075139,
+        "compensating_fermion_logdet": 1018.502507075139,
+        "boson_log_integral": -2037.0050141502795,
+        "corrected_log_factor": -1.5916157281026244e-12
+      },
+      {
+        "angle": 0.0001,
+        "numerator_aux_logdet": 1018.5016454703383,
+        "compensating_fermion_logdet": 1018.5016454703383,
+        "boson_log_integral": -2037.003290940678,
+        "corrected_log_factor": -1.3642420526593924e-12
+      }
+    ],
+    "bulk_source_trace": [
+      -4.308023999236933,
+      0.0
+    ],
+    "bulk_source_finite_difference": -4.308024003307764,
+    "corrected_total_source": 1.1368683772161603e-09,
+    "local_boson_uses_K_adjoint_K": true,
+    "compensating_fermion_uses_K_adjoint": true,
+    "positive_boson_gaussian_is_not_reflection_positivity": true,
+    "finite_source_derivative_only": true
+  },
+  "dependency_hashes": {
+    "joint_rational_physical_limit.py": "da4257f2b161b996a39c2f6874816dd462501a6e36a2a1d24b6b61e79cccea8c",
+    "research_note_659.md": "5c07b093c8a4bdab6b19759afe506688b7265d0da59c364abf4297e1b7fb0c8a",
+    "research_note_673.md": "e628260d429f179133a9459cb4a71935cffdc716ecec297cdb92c4e8d0e586aa",
+    "research_note_676.md": "7c800b99c39c9b2448fc7671453c54db25a3c209ca1bf379bf961084955b70f0",
+    "research_note_677.md": "cc889341caa2d4e6e2a2f42ca62882eed64317177d4f0d8f35a51343f2bea377",
+    "round678_drafts/local_block_probe_results.json": "3306995aacda910f0cb30a2f28534097f6ec351e05f749e9d7290ca28b3f2005"
+  },
+  "scope": "Exact finite original-candidate Grassmann lift for all physical sources, original mass and signed Pfaffian; original local Wilson recurrence, explicit determinant and local convergent boson/fermion compensation. After auxiliary integration677 full-average limit applies. Auxiliary fields are not new particles or cognitive units. No finite regulator reflection positivity, normalized original physical state, HF/time identity, physical continuum or quantum GR claim.",
+  "all_checks_passed": true
+}

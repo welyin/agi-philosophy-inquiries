@@ -1,0 +1,280 @@
+{
+  "round": 740,
+  "tests_run": 2,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "original_total_poles_check",
+    "common_causal_pulse_check"
+  ],
+  "results": {
+    "original_total_poles": {
+      "entry_round": 740,
+      "latest_completed_round": 739,
+      "formal_count_unchanged": 3417,
+      "roots": [
+        {
+          "eigen_index": 0,
+          "numerical_initial_log_bracket": [
+            5.0,
+            12.0
+          ],
+          "log_positive_Laplace_pole": 7.714753422419471,
+          "log10_positive_Laplace_pole": 3.3504748406010028,
+          "pole_value_if_representable": 2241.1702073175807,
+          "scalar_Schur_eigenvalues": [
+            -1.4171480600407124e-16,
+            0.989453966229193
+          ],
+          "crossing_slope": -0.14157789285919317,
+          "exact_remainder_norm_log_upper": -14.429558108696005,
+          "quadrature_refinement_error": 0.0,
+          "normalized_active_direction": [
+            -0.9999997999610994,
+            0.0006325170045845517
+          ]
+        },
+        {
+          "eigen_index": 1,
+          "numerical_initial_log_bracket": [
+            500.0,
+            1000.0
+          ],
+          "log_positive_Laplace_pole": 757.4663995188814,
+          "log10_positive_Laplace_pole": 328.9634775381741,
+          "pole_value_if_representable": null,
+          "scalar_Schur_eigenvalues": [
+            -106.14880484104594,
+            5.1272308849982915e-17
+          ],
+          "crossing_slope": -0.0013197084213118014,
+          "exact_remainder_norm_log_upper": -1509.358442399113,
+          "quadrature_refinement_error": 0.0,
+          "normalized_active_direction": [
+            -5.89585315410774e-06,
+            -0.9999999999826195
+          ]
+        }
+      ],
+      "full_original_scaled_block_eigenvalues": [
+        -6.275199707844752,
+        -1.669370680741752e-16,
+        0.9655153369551244
+      ],
+      "full_block_null_residual": 2.3282398104477387e-16,
+      "pure_I_minimum_at_total_pole": 0.010546050478489432,
+      "baseline_local_scheme": {
+        "f": 1,
+        "ell": [
+          0,
+          0
+        ],
+        "Z": "original G",
+        "alpha": 0,
+        "beta": 0,
+        "potential": "original632 matched one-loop Hessian"
+      },
+      "omitted_u_tail_norm_upper": 2.291819000603116e-29,
+      "numerical_brackets_not_interval_arithmetic_certificates": true,
+      "analytic_existence_is_by_inertia_and_positive_log_coefficient": true,
+      "no_physical_UV_validity_or_microscopic_instability_claim": true,
+      "dependencies": {
+        "research_note_601.md": "2464a6dddd68e4b5cf242b93255dff3a42df9f6accb5c5a976faed42cca5c362",
+        "research_note_630.md": "455eb46ac40df7b2183801d74ab1a9b6205ece0838cd26f81b94471662a18128",
+        "research_note_632.md": "1c5fbf535b5d106af8c4404f3c55faa656dc1b37b971a76a349adb665bfbef16",
+        "research_note_738.md": "9a614bb0ed675ce4402fdbe3e5954d7fd6d910689bf0756419419100e8fc41e7",
+        "research_note_739.md": "cf72896b27820df4b96ae334ebdc3cdef89bf7d9fa69eadbc780a23fce4b9e86",
+        "joint_mixed_neutral_response.py": "8d9eda5f4b2fdc9e79f22e12107b446d92984792c2cfbaa36fe5bb166a5bba84",
+        "joint_covariant_response_closure.py": "39732e0e40a78ba22186f359015a8ac31dc5f36ab4175d7137bf50d4e7936004"
+      },
+      "all_checks_passed": true
+    },
+    "common_causal_pulse": {
+      "coarse": {
+        "points": 4096,
+        "quadrature": 384,
+        "dt": 0.03125,
+        "spatial_k": 0.3,
+        "Laplace_line": 0.25,
+        "period": 128.0,
+        "observed_window": 16.0,
+        "pulse_degree": 12,
+        "pulse_rate": 2.0,
+        "pulse_direction": [
+          0.4,
+          -0.3,
+          0.0,
+          0.15
+        ],
+        "baseline_inverse_Laplace_error": 5.967890310958576e-16,
+        "finite_difference_correction_equation_error": 4.2004715692105406e-07,
+        "maximum_pre_pulse_alias": 6.959545672293923e-16,
+        "inverse_transform_imaginary_error": 2.7070912437776464e-17,
+        "baseline_window_norm": 0.11940360927038064,
+        "one_loop_correction_window_norm": 0.06097759913499076,
+        "correction_to_baseline_window_norm": 0.5106847230799489,
+        "second_order_residual_coefficient_norm": 0.004790147173773027,
+        "residual_rows": [
+          {
+            "loop_parameter": 0.2,
+            "full_symbol_residual_identity_error": 6.514100823147245e-18
+          },
+          {
+            "loop_parameter": 0.1,
+            "full_symbol_residual_identity_error": 5.024112237041035e-18
+          },
+          {
+            "loop_parameter": 0.05,
+            "full_symbol_residual_identity_error": 4.932963864534158e-18
+          }
+        ]
+      },
+      "fine": {
+        "points": 8192,
+        "quadrature": 384,
+        "dt": 0.015625,
+        "spatial_k": 0.3,
+        "Laplace_line": 0.25,
+        "period": 128.0,
+        "observed_window": 16.0,
+        "pulse_degree": 12,
+        "pulse_rate": 2.0,
+        "pulse_direction": [
+          0.4,
+          -0.3,
+          0.0,
+          0.15
+        ],
+        "baseline_inverse_Laplace_error": 5.967890310782112e-16,
+        "finite_difference_correction_equation_error": 1.0502287243942948e-07,
+        "maximum_pre_pulse_alias": 6.97517040081582e-16,
+        "inverse_transform_imaginary_error": 2.7070921367661706e-17,
+        "baseline_window_norm": 0.11940360927038064,
+        "one_loop_correction_window_norm": 0.06097759913499076,
+        "correction_to_baseline_window_norm": 0.5106847230799489,
+        "second_order_residual_coefficient_norm": 0.004790147173773032,
+        "residual_rows": [
+          {
+            "loop_parameter": 0.2,
+            "full_symbol_residual_identity_error": 6.514100823147245e-18
+          },
+          {
+            "loop_parameter": 0.1,
+            "full_symbol_residual_identity_error": 5.024112237041035e-18
+          },
+          {
+            "loop_parameter": 0.05,
+            "full_symbol_residual_identity_error": 4.932963864534158e-18
+          }
+        ]
+      },
+      "spectral_refinement": {
+        "points": 8192,
+        "quadrature": 512,
+        "dt": 0.015625,
+        "spatial_k": 0.3,
+        "Laplace_line": 0.25,
+        "period": 128.0,
+        "observed_window": 16.0,
+        "pulse_degree": 12,
+        "pulse_rate": 2.0,
+        "pulse_direction": [
+          0.4,
+          -0.3,
+          0.0,
+          0.15
+        ],
+        "baseline_inverse_Laplace_error": 5.967890310782112e-16,
+        "finite_difference_correction_equation_error": 1.050228732235787e-07,
+        "maximum_pre_pulse_alias": 6.974405340554381e-16,
+        "inverse_transform_imaginary_error": 2.7131935809812486e-17,
+        "baseline_window_norm": 0.11940360927038064,
+        "one_loop_correction_window_norm": 0.06097759913461719,
+        "correction_to_baseline_window_norm": 0.5106847230768203,
+        "second_order_residual_coefficient_norm": 0.004790147064938426,
+        "residual_rows": [
+          {
+            "loop_parameter": 0.2,
+            "full_symbol_residual_identity_error": 5.413574702476996e-18
+          },
+          {
+            "loop_parameter": 0.1,
+            "full_symbol_residual_identity_error": 4.709784751583155e-18
+          },
+          {
+            "loop_parameter": 0.05,
+            "full_symbol_residual_identity_error": 6.260927059145128e-18
+          }
+        ]
+      },
+      "time_sampling_refinement_error": 9.825582188149884e-20,
+      "spectral_integral_refinement_error": 6.266943574437725e-10,
+      "independent_ODE_error_ratio": 3.999577874460733,
+      "initial_failed_resolution_check": {
+        "quadratures": [
+          160,
+          256
+        ],
+        "observed_difference": 7.534834884410178e-08,
+        "required_difference": 2e-08,
+        "resolution_increased_without_relaxing_tolerance": true
+      },
+      "analytic_retarded_support_not_proved_by_FFT": true,
+      "source_is_a_mathematical_calibration_not_a_built_record_apparatus": true,
+      "residual_bound_not_exact_resummed_solution_error": true
+    },
+    "loop_counting_data": {
+      "x": [
+        0.48577184546706703,
+        0.39847924749141567
+      ],
+      "G": [
+        [
+          0.9630988049627296,
+          -0.030270096069168542
+        ],
+        [
+          -0.030270096069168542,
+          0.9751694026409917
+        ]
+      ],
+      "V_tree": [
+        [
+          0.09942238225369972,
+          0.039801362388093155
+        ],
+        [
+          0.039801362388093155,
+          0.07695791430828108
+        ]
+      ],
+      "V_one_loop": [
+        [
+          0.08040172457042928,
+          -0.004799971360558167
+        ],
+        [
+          -0.004799971360558167,
+          0.0002576505670348339
+        ]
+      ],
+      "tree_mass_squared_eigenvalues": [
+        0.1380567264859816,
+        0.046838510435258225
+      ]
+    }
+  },
+  "dependency_hashes": {
+    "research_note_601.md": "2464a6dddd68e4b5cf242b93255dff3a42df9f6accb5c5a976faed42cca5c362",
+    "research_note_630.md": "455eb46ac40df7b2183801d74ab1a9b6205ece0838cd26f81b94471662a18128",
+    "research_note_632.md": "1c5fbf535b5d106af8c4404f3c55faa656dc1b37b971a76a349adb665bfbef16",
+    "research_note_735.md": "43ece0235df1d09dcef1d30c99b2cb2dd2ade100cb6572caf46ded7ac8ffe2b8",
+    "research_note_738.md": "9a614bb0ed675ce4402fdbe3e5954d7fd6d910689bf0756419419100e8fc41e7",
+    "research_note_739.md": "cf72896b27820df4b96ae334ebdc3cdef89bf7d9fa69eadbc780a23fce4b9e86",
+    "joint_covariant_response_closure.py": "39732e0e40a78ba22186f359015a8ac31dc5f36ab4175d7137bf50d4e7936004",
+    "joint_mixed_neutral_response.py": "8d9eda5f4b2fdc9e79f22e12107b446d92984792c2cfbaa36fe5bb166a5bba84",
+    "round740_drafts/total_pole_entry.py": "8129b88bf58a659e7564c1920eb732bd881269b2e98866bddd00345b65ae9d1b",
+    "round740_drafts/total_pole_entry_results.json": "437a60bd378938565090f334b14ba31395588cb059a57a4d7f3aab29dc70626b"
+  },
+  "scope": "Original all-frequency one-loop resummation has gauge-invariant growing poles. A consistently counted finite-order retarded response retains full memory and linear constraints with a derivative-budgeted O(lambda^2) equation residual. No convergence to the unstable exact inverse, microscopic theory, or nonlinear actual-record solution is claimed."
+}

@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-02",
+  "entry_for_round": 668,
+  "stage": "development",
+  "exception": "ValueError: operands could not be broadcast together with shapes (256,256) (192,192)",
+  "cause": "The inherited square-block diag helper was applied to rectangular source maps.",
+  "correction": "Allocate the actual 2r by 4r bare source map and assign both rectangular diagonal blocks.",
+  "physical_failure_inferred": false,
+  "first_code_preserved": "mass_observation_probe_first_attempt.py"
+}

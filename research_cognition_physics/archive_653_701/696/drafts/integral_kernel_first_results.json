@@ -1,0 +1,312 @@
+{
+  "date": "2026-10-02",
+  "round": 696,
+  "tests_run": 2,
+  "failures": 0,
+  "errors": 0,
+  "original_background": {
+    "spatial_sites": 1,
+    "AP_time_sites": 2,
+    "internal_channels": 16,
+    "original_full_N_dimension": 256,
+    "half_configurations": [
+      "identity_spatial_loop",
+      "weak_center_spatial_loop"
+    ],
+    "temporal_links": [
+      "identity",
+      "identity"
+    ],
+    "plaquette_weak_center": -1,
+    "actual_spatial_hopping_between_distinct_sites": false
+  },
+  "original_tensor_reduction": {
+    "exact_Clifford_relations": true,
+    "central_Q_eigenmultiplicities": [
+      8,
+      8
+    ],
+    "stabilizer_generators_checked": 21,
+    "color_axes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "weak_axes": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "accidental_background_stabilizer_not_added_gauge_group": true,
+    "determinant_auxiliary": "D_m^8",
+    "D": "((1+x)/2+y/(2*sqrt(1+m^2)))^2+m^2*(r*s-x^2)/(4*(1+m^2))"
+  },
+  "complete_S9_integrals": [
+    {
+      "average_spatial_Wilson_value": 0,
+      "radicand": 1,
+      "auxiliary_mean": "6486285/2147483648",
+      "auxiliary_mean_decimal": 0.0030204118229448795,
+      "mean_quartic": "11/40",
+      "strict_Jensen_lower": "214358881/6553600000000",
+      "physical_factor_algebraic": [
+        "1/4294967296",
+        "0"
+      ],
+      "full_scalar_mean_algebraic": [
+        "6486285/9223372036854775808",
+        "0"
+      ],
+      "full_scalar_mean_decimal": 7.03244428836014e-13,
+      "polynomial_monomials": 525,
+      "nonzero_integrated_monomials": 165
+    },
+    {
+      "average_spatial_Wilson_value": 1,
+      "radicand": 2,
+      "auxiliary_mean": "489381062671/199561360441344",
+      "auxiliary_mean_decimal": 0.002452283656458842,
+      "mean_quartic": "123/400",
+      "strict_Jensen_lower": "52389094428262881/655360000000000000000",
+      "physical_factor_algebraic": [
+        "665857/1099511627776",
+        "29427/68719476736"
+      ],
+      "full_scalar_mean_algebraic": [
+        "325857806246924047/219420036260055195209170944",
+        "4800338843739839/4571250755417816566857728"
+      ],
+      "full_scalar_mean_decimal": 2.970173661447542e-09,
+      "polynomial_monomials": 525,
+      "nonzero_integrated_monomials": 165
+    },
+    {
+      "average_spatial_Wilson_value": 2,
+      "radicand": 5,
+      "auxiliary_mean": "5175882843750793/2131545292800000000",
+      "auxiliary_mean_decimal": 0.0024282302896560777,
+      "mean_quartic": "327/1000",
+      "strict_Jensen_lower": "130732034921293503681/1000000000000000000000000",
+      "physical_factor_algebraic": [
+        "5374978561/1677721600000000",
+        "75117609/52428800000000"
+      ],
+      "full_scalar_mean_algebraic": [
+        "27820259319408225201748873/3576139579108884480000000000000000",
+        "18514283032699055333997/5321636278435840000000000000000"
+      ],
+      "full_scalar_mean_decimal": 1.5558821854677482e-08,
+      "polynomial_monomials": 525,
+      "nonzero_integrated_monomials": 165
+    }
+  ],
+  "original_matrix_cases": [
+    {
+      "first_weak_center": false,
+      "second_weak_center": false,
+      "original_matrix": {
+        "Wilson_gap": 1.0,
+        "factor": [
+          -2.3283064365386867e-10,
+          8.1027461048918e-27
+        ],
+        "crosscheck": [
+          0.0,
+          5.3297367716967675e-15,
+          1.6879007536205268e-15
+        ]
+      },
+      "formula_checks": 16,
+      "solver_frame_phase": [
+        -0.9999999999999893,
+        0.0
+      ],
+      "max_compressed_formula_relative_error": 1.0209351458732786e-14,
+      "independent_original_matrix_cubature": [
+        {
+          "radial_nodes": 9,
+          "angular_nodes": 17,
+          "original_determinants": 23409,
+          "original_compressed_mean": [
+            0.0030204118229448726,
+            -1.5842338254576163e-21
+          ],
+          "exact_rational_relative_error": 2.331468410712109e-15,
+          "diagnostic_node_real_range": [
+            -0.8802923846281157,
+            -2.4810695262692785e-34
+          ]
+        },
+        {
+          "radial_nodes": 10,
+          "angular_nodes": 18,
+          "original_determinants": 32400,
+          "original_compressed_mean": [
+            0.0030204118229448787,
+            -4.616292224525675e-20
+          ],
+          "exact_rational_relative_error": 3.3341738827708743e-16,
+          "diagnostic_node_real_range": [
+            -0.8925359246904997,
+            -3.9890842687551895e-35
+          ]
+        }
+      ]
+    },
+    {
+      "first_weak_center": true,
+      "second_weak_center": false,
+      "original_matrix": {
+        "Wilson_gap": 0.4142135623730951,
+        "factor": [
+          1.2111868272761578e-06,
+          -5.4422856590445e-23
+        ],
+        "crosscheck": [
+          1.1102230246251565e-16,
+          3.5660541169416325e-15,
+          7.55259583774478e-15
+        ]
+      },
+      "formula_checks": 16,
+      "solver_frame_phase": [
+        0.9999999999999893,
+        0.0
+      ],
+      "max_compressed_formula_relative_error": 7.554476196005745e-15,
+      "independent_original_matrix_cubature": [
+        {
+          "radial_nodes": 9,
+          "angular_nodes": 17,
+          "original_determinants": 23409,
+          "original_compressed_mean": [
+            0.00245228365645884,
+            1.8130831505461766e-20
+          ],
+          "exact_rational_relative_error": 8.882091917409975e-16,
+          "diagnostic_node_real_range": [
+            1.977425791990877e-18,
+            0.7873495322525611
+          ]
+        },
+        {
+          "radial_nodes": 10,
+          "angular_nodes": 18,
+          "original_determinants": 32400,
+          "original_compressed_mean": [
+            0.002452283656458842,
+            9.239134473334384e-21
+          ],
+          "exact_rational_relative_error": 3.767563531649484e-18,
+          "diagnostic_node_real_range": [
+            9.517338486841797e-19,
+            0.8094993739366225
+          ]
+        }
+      ]
+    },
+    {
+      "first_weak_center": true,
+      "second_weak_center": true,
+      "original_matrix": {
+        "Wilson_gap": 1.0,
+        "factor": [
+          -6.407473756074911e-06,
+          2.144282734731062e-22
+        ],
+        "crosscheck": [
+          1.1102230246251565e-16,
+          7.430991024051832e-16,
+          3.3513330426721368e-15
+        ]
+      },
+      "formula_checks": 16,
+      "solver_frame_phase": [
+        -0.9999999999999893,
+        0.0
+      ],
+      "max_compressed_formula_relative_error": 1.1322911104292788e-14,
+      "independent_original_matrix_cubature": [
+        {
+          "radial_nodes": 9,
+          "angular_nodes": 17,
+          "original_determinants": 23409,
+          "original_compressed_mean": [
+            0.0024282302896560743,
+            1.8369460432024653e-20
+          ],
+          "exact_rational_relative_error": 1.4433097576197905e-15,
+          "diagnostic_node_real_range": [
+            -0.763555315644885,
+            -1.5349434715584638e-16
+          ]
+        },
+        {
+          "radial_nodes": 10,
+          "angular_nodes": 18,
+          "original_determinants": 32400,
+          "original_compressed_mean": [
+            0.0024282302896560764,
+            -1.691900330033208e-20
+          ],
+          "exact_rational_relative_error": 5.551552385865625e-16,
+          "diagnostic_node_real_range": [
+            -0.7906301153619375,
+            -7.022468736399211e-17
+          ]
+        }
+      ]
+    }
+  ],
+  "fixed_seam_negative_kernel": {
+    "exact_algebraic_entry_bounds": [
+      [
+        "6486285/9223372036854775808",
+        "6486285/9223372036854775808"
+      ],
+      [
+        "40732217682098299732621/13713752266253449700573184000000",
+        "20366116041557415476069/6856876133126724850286592000000"
+      ],
+      [
+        "1738765827411150887388670347029/111754361847152640000000000000000000000",
+        "869383108105547287034416180483/55877180923576320000000000000000000000"
+      ]
+    ],
+    "determinant_strict_upper": "-22655059671111583623967413641733044341683133076039867/2571228532307033970644892553435026703871341756416000000000000000000000",
+    "rational_test": [
+      1,
+      "-1/5"
+    ],
+    "test_strict_upper": "-34484321847653038932437466210655533/61032782150124961792000000000000000000000000",
+    "test_upper_decimal": -5.650131066093378e-10,
+    "normalized_offdiagonal_strictly_greater_than": 28,
+    "complete_S9_averaged_fixed_seam_kernel_not_positive": true,
+    "NOT_full_Haar_Hb_physical_RP_certificate": true
+  },
+  "dependency_hashes": {
+    "research_note_653.md": "8c24f44505866167353b1addd8e38930e9410b178f1d124c7c180689d9c434dc",
+    "research_note_657.md": "5f64307ee8c5d3dfb4d62f074f32de9561f39f9334a4fd830da35a9a4f4273e9",
+    "research_note_671.md": "fed2b4499f3bef0da6347297654733378b3939150f84ce68ea2772c89a4f1605",
+    "research_note_675.md": "be4dee2a815cb158799ee8e41fa3cf6ee06b7d91855b2a9f27d5cd4cda951544",
+    "research_note_695.md": "fe003d308a6db9555419a17cddb7f10fb7164721b274e7ff83fe37d6eeacb8ce",
+    "joint_gauss_boundary_functional.py": "010fece0d0e2c2a072a6c5c0ff88e3a32ddd307fba0bc656f139aafe7b1d8e7f",
+    "round696_drafts/dynamic_center_probe.py": "24d568bdb2b2f0d3289cd69e2efd13a6cba07b4e566323e6f4aa9fff96f29912",
+    "round696_drafts/exterior_average_entry.py": "d5526f016514024a4d4824aecaf83a73a87749ab583157eb3fc54bcc7da50612",
+    "round696_drafts/exterior_average_entry_results.json": "08d3eea67f78ef103d8f12fa2ab36bb900a4f2d2064f12844f2d8a76d4ebf2c1"
+  },
+  "scope": {
+    "complete_auxiliary_integral_on_specified_dynamic_background": true,
+    "no_group_or_Hb_integral_claim": true,
+    "no_general_RP_or_HF_identity": true,
+    "not_same_volume_as695_counterexample": true,
+    "not_general_space_propagation": true,
+    "no_new_spacetime_dimension_or_GR_theorem": true,
+    "all_original16_channels_retained": true
+  },
+  "all_checks_passed": true
+}

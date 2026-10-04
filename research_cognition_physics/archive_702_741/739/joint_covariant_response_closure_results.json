@@ -1,0 +1,118 @@
+{
+  "round": 739,
+  "tests_run": 2,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "covariant_symbol_check",
+    "spatial_memory_check"
+  ],
+  "results": {
+    "covariant_symbol_check": {
+      "independent_curvature_projector_error": 1.5265566588595902e-16,
+      "full_twelve_component_diffeomorphism_Ward_error": 2.220446049250313e-16,
+      "original_active_eight_component_pullback_error": 7.105427357601002e-15,
+      "original_matched_mass_coordinate_potential_Hessian": [
+        [
+          0.179824106824129,
+          0.03500139102753499
+        ],
+        [
+          0.03500139102753499,
+          0.07721556487531592
+        ]
+      ],
+      "declared_finite_coefficient_fixtures": [
+        {
+          "f": 1.0,
+          "f_gradient": [
+            0.0,
+            0.0
+          ],
+          "Z": [
+            [
+              0.9630988049627296,
+              -0.030270096069168542
+            ],
+            [
+              -0.030270096069168542,
+              0.9751694026409917
+            ]
+          ],
+          "alpha": 0.0,
+          "beta": 0.0,
+          "complementary_second_order_coefficient": -5.629609245622329,
+          "complementary_fourth_order_coefficient": 0.0
+        },
+        {
+          "f": 1.03,
+          "f_gradient": [
+            0.02,
+            -0.01
+          ],
+          "Z": [
+            [
+              1.0030988049627296,
+              -0.030270096069168542
+            ],
+            [
+              -0.030270096069168542,
+              0.9851694026409917
+            ]
+          ],
+          "alpha": 0.02,
+          "beta": -0.007,
+          "complementary_second_order_coefficient": -5.764198550475013,
+          "complementary_fourth_order_coefficient": 1.44
+        }
+      ],
+      "fixture_coefficients_not_predictions": true,
+      "no_full_internal_gauge_or_nonlinear_constraint_claim": true
+    },
+    "spatial_memory_check": {
+      "rows": [
+        {
+          "channel": "neutral",
+          "exact_spatial_shift_error": 3.138842998901977e-16,
+          "unchanged_constant_matrix_error": 4.0245584642661925e-16,
+          "exact_shifted_memory_decomposition_error": 1.3666626723763042e-15,
+          "declared_spatial_band": 1.0,
+          "time_window": 0.01,
+          "normalized_memory_uniform_L1_upper": 0.002088097474146263,
+          "normalized_constant_norm": 0.6537983146429206,
+          "pure_kernel_contraction_upper": 0.26807540385960876
+        },
+        {
+          "channel": "shear",
+          "exact_spatial_shift_error": 8.768598412778043e-15,
+          "unchanged_constant_matrix_error": 1.019564071840992e-14,
+          "exact_shifted_memory_decomposition_error": 1.0276951886835064e-14,
+          "declared_spatial_band": 1.0,
+          "time_window": 0.01,
+          "normalized_memory_uniform_L1_upper": 0.0010095135632786694,
+          "normalized_constant_norm": 0.0020375940797143456,
+          "pure_kernel_contraction_upper": 0.0012454208486533725
+        }
+      ],
+      "all_masses_from_the_same632_background": true,
+      "finite_band_uniform_bound_not_K_to_infinity": true,
+      "local_gravity_terms_not_included_in_reported_numeric_contraction": true
+    }
+  },
+  "dependency_hashes": {
+    "research_note_583.md": "4d17aa9406971cf89cbdc6bf2bc89cf79e9719fa4a4ba2301711d71b7da636c5",
+    "research_note_601.md": "2464a6dddd68e4b5cf242b93255dff3a42df9f6accb5c5a976faed42cca5c362",
+    "research_note_630.md": "455eb46ac40df7b2183801d74ab1a9b6205ece0838cd26f81b94471662a18128",
+    "research_note_631.md": "e2cce60e1760a0f3e1832e1d0ee92bbb9a92140b181e1edcb792c8390d4141fb",
+    "research_note_632.md": "1c5fbf535b5d106af8c4404f3c55faa656dc1b37b971a76a349adb665bfbef16",
+    "research_note_732.md": "e3832fdc7ea50502b49c6aa9b41527a899e6228d78705579413291264ea26ead",
+    "research_note_735.md": "43ece0235df1d09dcef1d30c99b2cb2dd2ade100cb6572caf46ded7ac8ffe2b8",
+    "research_note_737.md": "cc4b53bf9e8bdf9591853b76e4ea48af05bbf0e1a0e3d913d6416e6904149922",
+    "research_note_738.md": "9a614bb0ed675ce4402fdbe3e5954d7fd6d910689bf0756419419100e8fc41e7",
+    "joint_mixed_neutral_response.py": "8d9eda5f4b2fdc9e79f22e12107b446d92984792c2cfbaa36fe5bb166a5bba84",
+    "joint_background_contact_matching.py": "f725329f179f5a0c787fae8292857c22c9c61273a19caa70ac54578b1030ee3e",
+    "joint_tensor_stress_spectrum.py": "6a69ab29c91e93a5fe05fb842848a8c7a0171cb33a546dcdb83e811758219611",
+    "joint_local_source_normalization.py": "c0d38cee69de88b4bc71c56cecd84b511ef8b12521ba44a49efe821677e9b3f0"
+  },
+  "scope": "Common stationary neutral/metric one-fermion-loop response including covariant local jets, linear diffeomorphism Ward identities and finite-spatial-band causal memory. Conditional retarded linear closure modulo coordinate gauge; no all-scale bound, all internal gauge dynamics, nonlinear integrability or physical stability theorem."
+}

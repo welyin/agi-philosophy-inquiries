@@ -205,7 +205,7 @@ $$
 
 ## 7 可复算结果
 
-[代码](continuous_seed_bridge.py)、[结果](continuous_seed_bridge_results.json)、[检查记录](research_round_229_checks.json)。复用Python 3.12.14、NumPy 2.3.5，8项检查通过。代码默认只读运行，只有显式`--write-results`才写本轮结果，且拒绝覆盖不同的已有结果。
+[代码](229/continuous_seed_bridge.py)、[结果](229/continuous_seed_bridge_results.json)、[检查记录](229/research_round_229_checks.json)。复用Python 3.12.14、NumPy 2.3.5，8项检查通过。代码默认只读运行，只有显式`--write-results`才写本轮结果，且拒绝覆盖不同的已有结果。
 
 | 环境Hilbert维数N | 共轭方向秩 | 所需秩N²−1 | 最小奇异值 | 扰动后的最小奇异值 |
 |---|---:|---:|---:|---:|

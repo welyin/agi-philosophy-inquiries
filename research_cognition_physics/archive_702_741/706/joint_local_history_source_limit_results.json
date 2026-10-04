@@ -1,0 +1,207 @@
+{
+  "date": "2026-10-02",
+  "round": 706,
+  "tests_run": 2,
+  "failures": 0,
+  "errors": 0,
+  "calibration": {
+    "total_dimension": 256,
+    "node_dimension": 16,
+    "beta": 1.2,
+    "hbar": 0.7,
+    "times": [
+      0.12,
+      0.19
+    ],
+    "radial_nodes_per_axis": 2,
+    "site_volume": 0.8,
+    "lattice_spacing": 0.9283177667225558,
+    "minimum_F": 1.7819907407407407,
+    "declared_neutral_hopping": 0.23,
+    "frozen_aligned_Higgs_and_gauge_link_conditional_diagnostic": true,
+    "not_full_Gauss_or_spatial_continuum_simulation": true
+  },
+  "local_model": {
+    "rows": [
+      {
+        "radial_bands": 1,
+        "local_main_rank": 8,
+        "trace_preservation_error": 0.0,
+        "even_Kraus_error": 0.0,
+        "remote_state_error": 5.37707525189024e-17,
+        "independent_Kraus_formula_error": 0.0,
+        "comparison_second_moment_before": 4.619139322809419,
+        "comparison_second_moment_after": 4.307746830511008
+      },
+      {
+        "radial_bands": 2,
+        "local_main_rank": 8,
+        "trace_preservation_error": 0.0,
+        "even_Kraus_error": 0.0,
+        "remote_state_error": 5.37707525189024e-17,
+        "independent_Kraus_formula_error": 0.0,
+        "comparison_second_moment_before": 4.619139322809419,
+        "comparison_second_moment_after": 4.307746830511008
+      },
+      {
+        "radial_bands": 3,
+        "local_main_rank": 16,
+        "trace_preservation_error": 0.0,
+        "even_Kraus_error": 0.0,
+        "remote_state_error": 0.0,
+        "independent_Kraus_formula_error": 0.0,
+        "comparison_second_moment_before": 4.619139322809419,
+        "comparison_second_moment_after": 4.619139322809419
+      },
+      {
+        "radial_bands": 4,
+        "local_main_rank": 16,
+        "trace_preservation_error": 0.0,
+        "even_Kraus_error": 0.0,
+        "remote_state_error": 0.0,
+        "independent_Kraus_formula_error": 0.0,
+        "comparison_second_moment_before": 4.619139322809419,
+        "comparison_second_moment_after": 4.619139322809419
+      }
+    ],
+    "CAR_error": 0.0,
+    "contact_independent_difference_error": 4.959281925840098e-05,
+    "neutral_hopping_norm": 0.46000000000000024,
+    "original_geodesic_edge_norm": 0.19234032476026733,
+    "contact_includes_gradient_and_hopping": true
+  },
+  "history": {
+    "jet_order": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "rows": [
+      {
+        "radial_bands": 1,
+        "source_jet_max_branch_errors": [
+          2.6619151050066847e-09,
+          6.84473169063754e-08,
+          0.022676551029267356,
+          1.2909400998141127e-06,
+          0.6002223218284763,
+          0.556620918331467
+        ],
+        "cq_state_error": 0.04335385952376969,
+        "mixed_total": [
+          1.3945126927121174e-17,
+          5.615040020838553
+        ]
+      },
+      {
+        "radial_bands": 2,
+        "source_jet_max_branch_errors": [
+          2.6619151050066847e-09,
+          6.84473169063754e-08,
+          0.022676551029267356,
+          1.2909400998141127e-06,
+          0.6002223218284763,
+          0.556620918331467
+        ],
+        "cq_state_error": 0.04335385952376969,
+        "mixed_total": [
+          1.3945126927121174e-17,
+          5.615040020838553
+        ]
+      },
+      {
+        "radial_bands": 3,
+        "source_jet_max_branch_errors": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cq_state_error": 0.0,
+        "mixed_total": [
+          5.02663232218592e-17,
+          8.005901028454161
+        ]
+      },
+      {
+        "radial_bands": 4,
+        "source_jet_max_branch_errors": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cq_state_error": 0.0,
+        "mixed_total": [
+          5.02663232218592e-17,
+          8.005901028454161
+        ]
+      }
+    ],
+    "full_mixed_total": [
+      5.02663232218592e-17,
+      8.005901028454161
+    ],
+    "independent_mixed_checks": [
+      {
+        "step": 0.0008,
+        "mixed_error": 2.6494902177376483e-05
+      },
+      {
+        "step": 0.0004,
+        "mixed_error": 6.623617617827317e-06
+      }
+    ],
+    "equal_history_joint_normalization_error": 3.2606780068243466e-14,
+    "ignoring_local_regulation_changes_second_source_by": 0.556620918331467,
+    "process_uses_original_full_diagnostic_H_between_every_record": true,
+    "no_claim_of_uniform_cutoff_rate_or_monotone_intermediate_errors": true
+  },
+  "dependency_hashes": {
+    "research_note_623.md": "2ef362e618a11588e5edcf20c0090dd88e29165b2ab0405b1c6a5be1a9b0d804",
+    "research_note_625.md": "dc19916b0c780a6527797fa3f61c992c35f3f6e565cd104f9412f60f4dfb521c",
+    "research_note_637.md": "97818586a1415b82ae30209d8bd856f42278b9e8e34b813231b1172ada02530c",
+    "research_note_704.md": "7d91ae9446a0e5a66e06abbaae50a1d216e13e19d7a678d38d6feec6433db3e3",
+    "research_note_705.md": "8eacdc623e484afd4d81981c1f444d8cb1b5eb2592791ad5380a40399757d581",
+    "round706_drafts/local_domain_entry.md": "0f9eb4f52570ce78f8a620ff344d78b483a5c653e566041fe7fbf26469c8d00c",
+    "round706_drafts/parity_completion_705.md": "2616eebb4ba9320b99e9f87d431032fe67a743b850eb0fdcbc86294798d29304",
+    "joint_gibbs_preserving_transfer.py": "a97d48f0e8f75a29b1bedfab6425b7082a29f7ca1bb881c83821a501195ce6c1",
+    "joint_preparation_history_limit.py": "cb69f131f051dd8d377e52e53db52bbe5c87b856b35dbf3586ddbb0913308662",
+    "joint_full_spatial_metric.py": "b9bbe239b920ccef4efa37110b53f0d8acd87f4053fe5444fadc5ffc05103720",
+    "research_note_667.md": "9adc75f83768baaf64798db042cecb72341367decfd2478083d7add646d300c9"
+  },
+  "scope": {
+    "original_complete_fixed_graph_theorem": true,
+    "graded_boundary_retaining_local_regularization": true,
+    "original_real_time_H_and_actual_record_instruments": true,
+    "scalar_joint_preparation_and_dynamic_sources_through_total_order_two": true,
+    "original_Gibbs_preparation_not_effective_regulator_Gibbs": true,
+    "full_process_remains_infinite_dimensional": true,
+    "no_uniform_spatial_limit_or_quantum_gravity_claim": true
+  }
+}

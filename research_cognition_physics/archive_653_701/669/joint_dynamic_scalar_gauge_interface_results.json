@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-02",
+  "round": 669,
+  "tests_run": 2,
+  "failures": 0,
+  "errors": 0,
+  "original_scalar_moment_coefficients": {
+    "original_target_gradient_constant": 22751.641595944715,
+    "original_coercive_constants": {
+      "lambda_lower": 0.09245786682717515,
+      "eta": 0.9382682076037214,
+      "b0": 0.3703907543776713,
+      "t_threshold": 0.7895199930596097,
+      "kappa": 0.002543594590547768,
+      "polynomial_constant": 1.5344709212229124,
+      "coercive_control": 393.14441213080585,
+      "laplacian_control": 603.268668255998
+    },
+    "points": 24,
+    "maximal_sampled_gradient_bound_ratio": 0.00012838578887668244,
+    "target_metric_gradient_identity_error": 2.9656303149967963e-16,
+    "mass_linear_in_original_global_coordinate_error": 1.480303075844444e-14,
+    "moment_recurrence_diagnostic_energy": 2.0,
+    "moment_polynomials": [
+      1.0,
+      3.0,
+      17072.731196958535,
+      388483879.4506957,
+      19888118931533.297,
+      1.8100090801478687e+18,
+      2.573846667580522e+23
+    ],
+    "eigenfunctions_and_thermal_integrals_not_numerically_computed": true,
+    "all_orders_moment_result_depends_on_note_induction": true
+  },
+  "joint_gauge_interface": {
+    "nx": 2,
+    "nt": 2,
+    "original_physical_Weyl_Nambu_dimension": 256,
+    "time_independent_spatial_local_SM_change": true,
+    "mass_scale": 0.37,
+    "original_mass_covariance_error": 5.585701844806365e-16,
+    "frozen_free_kinetic_gauge_defect_Frobenius": 8.80873384082263,
+    "transported_kinetic_gauge_error": 9.769962616701378e-15,
+    "original_mass_weight_ratio": [
+      1.967892246512232,
+      -1.404340733185127e-17
+    ],
+    "scalar_only_transformed_ratio": [
+      1.9437955082008693,
+      -8.973405793202122e-17
+    ],
+    "common_mass_and_kinetic_transformed_ratio": [
+      1.967892246512226,
+      7.606625133681511e-17
+    ],
+    "pure_gauge_transport_not_general_curved_gauge_RP": true
+  },
+  "dependency_hashes": {
+    "joint_operator_domain_completion.py": "f88ff0aa098948f72532ecd21f42f8e21474ad9a165f9d0b68f8df44631f7224",
+    "joint_mass_auxiliary_reflection.py": "c133c6d1f2b57c9e2153b584bf3ae74d0d703b8daac5f91dafd105a1e6d6cd0a",
+    "joint_spinor_subgroup_mass.py": "712913dd7ff8bc44c0f0da9754daa290b645530d54fbf6da6d609148b4894c53",
+    "research_note_603.md": "cc0b578680b1cd0dae279a2d7533fc4853772e4821358f17b3f57b4ac47b3fe5",
+    "research_note_623.md": "2ef362e618a11588e5edcf20c0090dd88e29165b2ab0405b1c6a5be1a9b0d804",
+    "research_note_624.md": "764cc0bd20ac7d36a1e99f91e5507c2ce568af940b832f9a72a99638f8b1bc63",
+    "research_note_643.md": "802e0a296b0e1f23360905ef22846c1e6414f7e3a5e0d955f2e2271cc9bb26f5",
+    "research_note_668.md": "3291bfa3926ddc5f72431f989b4c6378d8c942936aeb1069fe69328f059f9023",
+    "round669_drafts/dynamic_scalar_probe.py": "889728a7ea334e2111640d64516727e7992a0436dc0111c9d3039be3fc1dbbf4",
+    "round669_drafts/dynamic_scalar_probe_results.json": "6a05198994cb3cf067ff76a6b8af600f10d837c6b8e131ee2b01e3566263b1f9"
+  },
+  "scope": "Original bosonic heat process controls all finite-time polynomial scalar insertions; a declared free-Weyl joint dynamic-mass functional is integrable and unnormalized RP. Its real normalization polynomial is positive off finitely many possible zeros, not proved at every chosen coupling. Keeping fermion kinetics free while integrating original bosons does not restore local Gauss; actual mass and link dictionary must transform together. No full original Gibbs, general gauge RP, continuum or quantum GR identity.",
+  "all_checks_passed": true
+}

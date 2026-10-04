@@ -1,0 +1,83 @@
+{
+  "entry_round": 750,
+  "latest_completed_round": 749,
+  "formal_tests_unchanged": 3436,
+  "actual_reference_probability": 0.4996750781661937,
+  "actual_probability_derivative": 2.7550133690541543e-05,
+  "candidate_rule": "Use outcome-specific deformed PREPARATION histories, then take outcome0 probability from history0 and outcome1 from history1.",
+  "rows": [
+    {
+      "rule": "opposite_history_deformations",
+      "alpha": [
+        -1.0,
+        1.0
+      ],
+      "geometric_feedback_not_solved": true,
+      "rows": [
+        {
+          "lambda_parameter": 0.04,
+          "naive_probability_sum": 1.0000022044735268,
+          "normalization_defect": 2.204473526834505e-06,
+          "centered_derivative": 5.5111838170862626e-05,
+          "predicted_derivative": 5.5100267381083086e-05,
+          "centered_derivative_error": 1.157078977954035e-08
+        },
+        {
+          "lambda_parameter": 0.02,
+          "naive_probability_sum": 1.000001102063179,
+          "normalization_defect": 1.1020631789371294e-06,
+          "centered_derivative": 5.510315894685647e-05,
+          "predicted_derivative": 5.5100267381083086e-05,
+          "centered_derivative_error": 2.8915657733819575e-09
+        },
+        {
+          "lambda_parameter": 0.01,
+          "naive_probability_sum": 1.000000551009895,
+          "normalization_defect": 5.510098950445297e-07,
+          "centered_derivative": 5.510098950445297e-05,
+          "predicted_derivative": 5.5100267381083086e-05,
+          "centered_derivative_error": 7.221233698829241e-10
+        }
+      ]
+    },
+    {
+      "rule": "record_energy_proportional_history_deformations",
+      "alpha": [
+        0.49858798582714603,
+        0.5055804046309023
+      ],
+      "geometric_feedback_not_solved": true,
+      "rows": [
+        {
+          "lambda_parameter": 0.04,
+          "naive_probability_sum": 1.0000000075676239,
+          "normalization_defect": 7.567623860893491e-09,
+          "centered_derivative": 1.9267264173006282e-07,
+          "predicted_derivative": 1.9264207286374065e-07,
+          "centered_derivative_error": 3.0568866322167186e-11
+        },
+        {
+          "lambda_parameter": 0.02,
+          "naive_probability_sum": 1.0000000038181693,
+          "normalization_defect": 3.818169336256005e-09,
+          "centered_derivative": 1.9264936590435155e-07,
+          "predicted_derivative": 1.9264207286374065e-07,
+          "centered_derivative_error": 7.293040610900779e-12
+        },
+        {
+          "lambda_parameter": 0.01,
+          "naive_probability_sum": 1.000000001917746,
+          "normalization_defect": 1.9177459620323134e-09,
+          "centered_derivative": 1.9264491113446525e-07,
+          "predicted_derivative": 1.9264207286374065e-07,
+          "centered_derivative_error": 2.8382707245923383e-12
+        }
+      ]
+    }
+  ],
+  "exact_necessary_condition": "For backgrounds B+lambda b_r, sum_r p_r(B+lambda b_r)=1 requires sum_r Dp_r[b_r]=0 at first order; positivity of separate branches does not imply this.",
+  "safe_joint_instrument_identity": "A fixed common preparation followed by Kraus L_r and conditional trace-preserving future maps retains the original p_r and sum p_r=1.",
+  "renormalization_is_not_an_unknown_input_CPTP_completion": true,
+  "no_retrocausal_interpretation": true,
+  "no_full_continuum_or_Einstein_simulation": true
+}

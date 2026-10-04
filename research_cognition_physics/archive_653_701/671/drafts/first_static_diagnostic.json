@@ -1,0 +1,25 @@
+{
+  "spectral_residue_check": {
+    "parameter": 0.2,
+    "hermiticity_error": 4.938577738272187e-09,
+    "commutator_error": 2.012702553025839e-08,
+    "nullspace_error": 2.877411300756802e-14,
+    "Fourier_identity_error": 1.1519961357203317e-15,
+    "diagnosis": "Individual nearly degenerate residue projections amplify eigenspace conditioning. Replace with the full matrix spectral cut; do not loosen residue thresholds or claim sampled poles prove positivity."
+  },
+  "action_cross_check": {
+    "minimum": -0.5000000000000004,
+    "hermiticity_error": 1.1657341758564144e-15,
+    "diagnosis": "Wrong directed time difference: -gamma0 D applies for positive time separation. The check selected the opposite half. Keep both density signs explicitly and follow657 orientation."
+  },
+  "source_sha256": "18edda678f0ac7b9172c634927d0b523d4c3e84fcc3bcbd40db61125afbf6f13",
+  "cut_diagnostic": {
+    "zero_spectral_rank": "E=.6 lies below the first cut; the exact density is zero and no minimum over empty positive support is defined.",
+    "near_threshold": {
+      "E": 1.3,
+      "threshold_distance": 0.006973821052692841,
+      "error_at_delta_2e_6": 0.0005006427952183312,
+      "change": "Use delta=4e-7 with the same absolute error requirement; verify first-order convergence, do not change model or claim uniform threshold bound."
+    }
+  }
+}

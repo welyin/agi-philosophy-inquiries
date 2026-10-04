@@ -14,10 +14,10 @@
 
 | 编号 | 暂存问题 | 已有来源 | 本阶段处理 |
 |:---|:---|:---|:---|
-| N01 | 为什么认知整体必须采用复量子等价结构，而不是其他结构？ | [旧171轮](../research_cognition_physics/archive_001_222/research_process/research_note_171.md) | 保留工作假设，不论证唯一性 |
-| N02 | 哪些认知功能必然要求完整准备、效应、仪器与组合权限？ | [旧189轮](../research_cognition_physics/archive_001_222/research_process/research_note_189.md) | 声明本模型的权限，不证明所有模型都必须如此 |
-| N03 | 问题—动作对应、锐性、连续性及代数相容为什么不可缺少？ | [旧210轮](../research_cognition_physics/archive_001_222/research_process/research_note_210.md)、[旧214轮](../research_cognition_physics/archive_001_222/research_process/research_note_214.md) | 可作为明确工作输入，必要性不再展开 |
-| N04 | 为什么不能用不同参考、实编码、辅助或归还合同实现目标？ | [旧216轮](../research_cognition_physics/archive_001_222/research_process/research_note_216.md) | 按实际方案计资源，不为排除替代表示另开研究 |
+| N01 | 为什么认知整体必须采用复量子等价结构，而不是其他结构？ | [旧171轮](../research_cognition_physics/archive_171_189/research_note_171.md) | 保留工作假设，不论证唯一性 |
+| N02 | 哪些认知功能必然要求完整准备、效应、仪器与组合权限？ | [旧189轮](../research_cognition_physics/archive_171_189/research_note_189.md) | 声明本模型的权限，不证明所有模型都必须如此 |
+| N03 | 问题—动作对应、锐性、连续性及代数相容为什么不可缺少？ | [旧210轮](../research_cognition_physics/archive_205_216/research_note_210.md)、[旧214轮](../research_cognition_physics/archive_205_216/research_note_214.md) | 可作为明确工作输入，必要性不再展开 |
+| N04 | 为什么不能用不同参考、实编码、辅助或归还合同实现目标？ | [旧216轮](../research_cognition_physics/archive_205_216/research_note_216.md) | 按实际方案计资源，不为排除替代表示另开研究 |
 | N05 | 为什么必须是某种维数、基本传播机制和物理尺度？ | [新C0约定](MODEL_CONTRACT.md) | 记录选择；推导其后果与有效范围，不证明唯一选择 |
 | N06 | 普适耦合、几何反作用及最终引力方程是否唯一？ | [前序07轮](../research_information_geometry/research_note_07.md)、[前序08轮](../research_information_geometry/research_note_08.md) | 先构造并检验一条充分路线，再讨论不可替代性 |
 

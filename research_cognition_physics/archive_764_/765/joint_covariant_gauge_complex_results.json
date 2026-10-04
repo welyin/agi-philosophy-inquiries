@@ -1,0 +1,103 @@
+{
+  "round": 765,
+  "tests_run": 3,
+  "failures": 0,
+  "errors": 0,
+  "covariant_principal_symbols": {
+    "rows": [
+      {
+        "covector": [
+          2.0,
+          0.1,
+          0.3,
+          -0.2
+        ],
+        "lorentz_square": -3.8600000000000003,
+        "errors": {
+          "self_adjoint": 5.551115123125783e-17,
+          "noether": 1.2146677663793745e-15,
+          "field_wave_symbol": 1.7763568394002505e-15,
+          "gauge_wave_symbol": 1.3322676295501878e-15,
+          "intertwining": 4.623151193251292e-16
+        }
+      },
+      {
+        "covector": [
+          1.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "lorentz_square": 0.0,
+        "errors": {
+          "self_adjoint": 5.551115123125783e-17,
+          "noether": 3.546046371670331e-16,
+          "field_wave_symbol": 2.220446049250313e-16,
+          "gauge_wave_symbol": 3.3431156445189404e-16,
+          "intertwining": 3.546046371670331e-16
+        }
+      },
+      {
+        "covector": [
+          0.2,
+          0.3,
+          -0.7,
+          1.0
+        ],
+        "lorentz_square": 1.54,
+        "errors": {
+          "self_adjoint": 1.1102230246251565e-16,
+          "noether": 7.291020105916752e-16,
+          "field_wave_symbol": 4.440892098500626e-16,
+          "gauge_wave_symbol": 6.661338147750939e-16,
+          "intertwining": 8.881784197001252e-16
+        }
+      }
+    ],
+    "field_pairing_signature": {
+      "positive": 47,
+      "negative": 16
+    },
+    "numeric_coefficients": "Declared nondegenerate calibration, not a fit to physical constants.",
+    "scope": "Full second-order spacetime symbols in Einstein-frame variables; no lower-order Hessian simulation."
+  },
+  "original_background_gauge_mixing": {
+    "background_index": [
+      0,
+      3,
+      1
+    ],
+    "background_F": 1.8689716702248025,
+    "psi": 1.0282561151157399,
+    "scalar_metric_min_eigenvalue": 0.5350535890571944,
+    "adjoint_error": 2.7755575615628914e-17,
+    "color_magnetic_to_diffeomorphism_max": 0.10913503651990358,
+    "scalar_to_internal_gauge_max": 0.0785779230444214,
+    "scalar_only_diffeomorphism_gauge_fix": [
+      -0.15154890282159578,
+      -1.1669358575987042e-18,
+      0.007651681852012097,
+      0.01100285783591998
+    ],
+    "blocks_simulated": "All scalar gauge/translation zero-order blocks, and actual color magnetic curvature only.",
+    "all_curvature_blocks_or_PDE_simulated": false
+  },
+  "convention_failure_witnesses": {
+    "wrong_Euclidean_adjoint_defect": 8.450000000000001,
+    "half_gauge_coefficient_defect": 0.8450000000000003,
+    "normalized_gauge_coefficient_error": 4.440892098500626e-16,
+    "purpose": "Independent failure witnesses for adjoint and gauge-normalization conventions; no Hadamard inference."
+  },
+  "dependency_hashes": {
+    "research_note_573.md": "0c3205d1137739062c7e00efeb188f61cc0cee2f77db363f5ba6d4ed525c79c5",
+    "research_note_731.md": "fa743b79a2aa39261477c010231d4c535f63bf5e45b31c27152604327dc9a6df",
+    "research_note_735.md": "43ece0235df1d09dcef1d30c99b2cb2dd2ade100cb6572caf46ded7ac8ffe2b8",
+    "research_note_752.md": "0b4908b414b1ae444a837dd56095f2415a7477e6fa8c9151cfa628045ceaf5e8",
+    "research_note_753.md": "d7143f6f507771bc4d44813bb53ed8287be6bb63431c667fe37cfc74a1fda50e",
+    "research_note_754.md": "00ea8e42cadd4f7b4532ccd5f49ba8963e78b501fc122ec9237b499ff4be5ea6",
+    "research_note_764.md": "f9fe286cdd4264e5c8107b8974d84636c98700dcea3360401649fc4e21921cff",
+    "joint_reference_constraint_strata.py": "cdbd454aac0ed1ad7f105b78e2d6ce491ee49a084816bc70386a7f08c8199b64",
+    "joint_gauss_einstein_initial_data.py": "8c600a6f4d6cdee75aa2240c8ad650402c69ab791aaed4380770c8ab119c6cb5"
+  },
+  "scope": "Coupled linear covariant gauge complex, causal physical algebra and canonical matching proved analytically on the inherited smooth on-shell Einstein-frame model. Numerics check second-order symbols and specified zero-order gauge blocks. No physical Hadamard-state existence, quantum Ward renormalization, all loops, original instrument matching or Q-to-E continuum equivalence is claimed."
+}

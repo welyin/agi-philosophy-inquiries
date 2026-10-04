@@ -1,0 +1,99 @@
+{
+  "round": 733,
+  "tests_run": 3,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "principal_reference_check",
+    "finite_patch_boundary_check",
+    "second_order_reference_response_check"
+  ],
+  "results": {
+    "principal_reference_check": {
+      "gamma": 0.12,
+      "exact_asymptotic_operator_norm": 0.059397176747567004,
+      "all64_symbol_singular_values_error": 1.6653345369377348e-16,
+      "rows": [
+        {
+          "momentum_scale": 10.0,
+          "projector_difference": 0.05965198809370243,
+          "principal_symbol_error": 0.0015781241761188883,
+          "min_singular_difference": 0.05892439971386087
+        },
+        {
+          "momentum_scale": 100.0,
+          "projector_difference": 0.05942938558407174,
+          "principal_symbol_error": 0.000152893035448102,
+          "min_singular_difference": 0.059362810164818675
+        },
+        {
+          "momentum_scale": 1000.0,
+          "projector_difference": 0.059400465851123116,
+          "principal_symbol_error": 1.5280336506545477e-05,
+          "min_singular_difference": 0.05939386609419959
+        }
+      ],
+      "conformal_leading_direction_error": 0.0,
+      "local_symbol_calibration_not_a_continuum_covariance_computation": true
+    },
+    "finite_patch_boundary_check": {
+      "Nambu_dimension": 384,
+      "record_block_dimension": 4,
+      "patch_rank": 8,
+      "unchanged_record_difference_error": 1.0941090705770498e-16,
+      "reality_error": 1.5553031891404223e-15,
+      "residual_operator_norm": 0.059401285755387466,
+      "singular_values_above_half_asymptotic_bound": 380,
+      "rank_bound_required_count": 376,
+      "discarded_reference_change_cannot_be_finite_record_patch": true
+    },
+    "second_order_reference_response_check": {
+      "base_reference_geometric_source": 10.858494226138653,
+      "exact_reference_response_coefficient": -10.90689781409487,
+      "finite_difference": -10.906897814200176,
+      "derivative_error": 1.0530598615332565e-10,
+      "rows": [
+        {
+          "epsilon": 0.04,
+          "reference_source": 10.430897883717813,
+          "record_source": -0.3691007564447265,
+          "omitted_weighted_reference_term": -0.017103853696833583,
+          "term_over_epsilon_squared": -10.689908560520989,
+          "exact_branch_decomposition_error": 1.4432899320127035e-15,
+          "reference_patch_source": 4.774167395762296e-05
+        },
+        {
+          "epsilon": 0.02,
+          "reference_source": 10.642540821302989,
+          "record_source": -0.37655708632979923,
+          "omitted_weighted_reference_term": -0.004319068096713288,
+          "term_over_epsilon_squared": -10.79767024178322,
+          "exact_branch_decomposition_error": 7.771561172376096e-16,
+          "reference_patch_source": 2.4742809984290294e-05
+        },
+        {
+          "epsilon": 0.01,
+          "reference_source": 10.749973232359704,
+          "record_source": -0.3803415479641412,
+          "omitted_weighted_reference_term": -0.0010852099377894932,
+          "term_over_epsilon_squared": -10.85209937789493,
+          "exact_branch_decomposition_error": 1.7763568394002505e-15,
+          "reference_patch_source": 1.2595916244859078e-05
+        }
+      ],
+      "finite_matrix_sources_not_renormalized_continuum_predictions": true
+    }
+  },
+  "dependency_hashes": {
+    "research_note_730.md": "d3ffb29f466387c0e6d6af03935f2f2e748765afb526aee97da70008127ba56a",
+    "research_note_731.md": "fa743b79a2aa39261477c010231d4c535f63bf5e45b31c27152604327dc9a6df",
+    "research_note_732.md": "e3832fdc7ea50502b49c6aa9b41527a899e6228d78705579413291264ea26ead",
+    "joint_relative_source_development.py": "8b04e9a5591d308c98e13f63f863d2d48869712b427c726faca488dcc8fd9a44",
+    "joint_relative_source_development_results.json": "ed45d6c64c7c24f6261ed6267538cfa58caa547ac945e4fa6b15103305a1f6de",
+    "round732_drafts/source_feedback_entry.py": "668fbc732eb657fdb5e05d390b233e1cca89d20d7df3cb80ba794f90180d0015",
+    "round732_drafts/source_feedback_entry_results.json": "9d099d23af7562e85dae5929b8eb3d00c99d25b21bdc14361cd39d92020b3253",
+    "round733_drafts/reference_embedding_entry.py": "3ea6a7a836520ba3c18c8e441f5c1541c07541c4f0b92848b5923ce2bcfa646a",
+    "round733_drafts/reference_embedding_entry_results.json": "6d2910e60eee6ec773119666fc3fe03aec92b068d4888e6eaf1f0703b7d52fd3"
+  },
+  "scope": "Original record block admits Hadamard embedding, but a nonconformal metric variation changes the Cauchy covariance principal symbol in the fixed operational identification. Finite smooth record patches cannot absorb that reference change. Nonlinear branch comparison contains background-reference polarization, already order epsilon squared in a perturbative response. This closes only the finite-record-only absolute feedback shortcut, not the full unified programme, relative models, or renormalized quantum gravity."
+}

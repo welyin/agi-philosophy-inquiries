@@ -1,0 +1,113 @@
+{
+  "round": 725,
+  "tests_run": 3,
+  "failures": 0,
+  "errors": 0,
+  "results": {
+    "original_global_Hardy": {
+      "rows": [
+        {
+          "parameters": [
+            0.3,
+            0.4,
+            0.15
+          ],
+          "gradient_form": 4.875250911882433,
+          "original_Hardy_weight": 1.6162991008497363,
+          "positive_remainder": 3.258951811032699,
+          "squared_wall_derivative": 2173.3138734139934,
+          "full_energy_sufficient_bound": 78278.73462874685,
+          "normalized_quadrature_convergence": 2.0914521884204496e-16
+        },
+        {
+          "parameters": [
+            0.05,
+            0.1,
+            0.3
+          ],
+          "gradient_form": 4.289040820370061,
+          "original_Hardy_weight": 0.7982991127236233,
+          "positive_remainder": 3.4907417076464378,
+          "squared_wall_derivative": 1172.036854538249,
+          "full_energy_sufficient_bound": 68982.01172382856,
+          "normalized_quadrature_convergence": 2.1094925931365555e-16
+        },
+        {
+          "parameters": [
+            0.8,
+            0.15,
+            -0.2
+          ],
+          "gradient_form": 7.962480552158645,
+          "original_Hardy_weight": 3.3844780170939175,
+          "positive_remainder": 4.5780025350647335,
+          "squared_wall_derivative": 4982.298600739537,
+          "full_energy_sufficient_bound": 127239.19935812752,
+          "normalized_quadrature_convergence": 3.6501714010794234e-16
+        }
+      ],
+      "angular_and_CAR_extension_analytic": true,
+      "source_family": "Normalized F^3 exp(-alpha h^2-beta s^2+i phase h^2 s), original measure.",
+      "signed_velocity_selfadjointness_not_used": true
+    },
+    "actual_region_normal_backaction": {
+      "sigma": 0.7,
+      "initial_normal_square": 2173.3138734139934,
+      "postrecord_normal_square": 662961.0252523597,
+      "exact_positive_backaction": 660787.7113789498,
+      "independent_integral_error": 4.0745362639427185e-09,
+      "same_two_node_spatial_difference_mean": 417.64519638050706,
+      "initial_Q_mean": -1755.6686770334863,
+      "postrecord_Q_mean": -662543.3800559791,
+      "probability_normalization": 0.9999999999999931,
+      "gaussian_cross_integral": -9.277787521019297e-18,
+      "same_original_two_node_product_Gauss_state": true,
+      "sign_of_mean_not_a_classical_causal_signature": true
+    },
+    "joint_normal_sources": {
+      "original652_H_dimension": 64,
+      "finite_normal_form_min_eigenvalue": 1634.903264047515,
+      "form_discretization_not_signed_selfadjoint_velocity": true,
+      "branch_probabilities": [
+        0.23375292621753693,
+        0.7662470737824634
+      ],
+      "branch_normal_moments": [
+        -18201.33790994742,
+        -21186.78703455523
+      ],
+      "joint_source_derivatives": [
+        150789.1413277589,
+        262084.6453400996
+      ],
+      "independent_source_differences": [
+        150789.14133573562,
+        262084.64536921383
+      ],
+      "source_relative_error": 1.1108666591192442e-10,
+      "omitted_branch_boundary_source": -6165.955510237289,
+      "omitted_explicit_geometry_sources": [
+        218511.5061721623,
+        255530.57576981513
+      ],
+      "original_mixed_identity_error": 3.5498715078574605e-11,
+      "omitted_mixed_operator_norm": 3971.4486574666275,
+      "W_from_declared_fixed_neighbor_diagnostic": true,
+      "no_continuum_backaction_identity_asserted_for_finite_difference_H": true
+    }
+  },
+  "dependency_hashes": {
+    "research_note_556.md": "e2b42d3eb424b69517c7aff994400a32a2176dab8932c89bbe89fab198896fe0",
+    "research_note_563.md": "97349b910e4cab2ace69de7798a078e56dcabefd811f71e311efd4f4f40d4da0",
+    "research_note_652.md": "ffd478c9cf190d71382409e15ffcf2dab1e4740834a11deb9c28461763c06c4a",
+    "research_note_722.md": "cb9455857cddd7d64faa29b6cc107bf52eaed81bea79b800ef2d507d0f539608",
+    "research_note_723.md": "fd8d72a25d512bde5fc8cdfa6b9acc31464b3b8947895d35387f6319d9ce393a",
+    "research_note_724.md": "93b26ddc7500162e67ad8dbf21e7dadc566e2fa04b536dc5b34927a42d7694de",
+    "joint_quantum_reference_forms.py": "7a22cd777d02dd38e7a66ca6b257c85e4dc2325e839236ecabafe2496d34a01e",
+    "joint_material_region_records.py": "4e8c1a07a558df694d84f78e14734f196e3004ea07d7131836aeb9ad69c9be12",
+    "joint_reference_process_transport.py": "5b95ebaf3517078cb89a12e4499cedd8816769d7c7882b4030e227d3d6de4dfe",
+    "round725_drafts/wall_domain_entry.py": "00132aec6620b5332c16c28b15ba72f0f2275159886d42f3e05cb9b7a1d2a1fb",
+    "round725_drafts/wall_domain_entry_results.json": "8524443bd79935a586d0da38fac37b31e152c6ac18b78f116abf1c940be938de"
+  },
+  "scope": "Original f=s-lambda h on the complete curved target: original-core closed derivative yields a positive square form controlled by the full fixed-graph energy. Same actual region records retain finite normal moments and an exact negative Q backaction; original matching, finite process approximation and first external-geometry sources retain these terminal forms. Does not prove a self-adjoint signed wall velocity, an energy-preserving Q-read instrument, sharp classical signature, continuum quantum normal or Einstein gluing."
+}

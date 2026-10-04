@@ -1,0 +1,54 @@
+{
+  "round": 770,
+  "tests_run": 2,
+  "failures": 0,
+  "errors": 0,
+  "exact_subtraction_algebra": {
+    "errors": {
+      "BRST_exact": 2.7755575615628914e-17,
+      "fiber_adjoint": 6.938893903907228e-18,
+      "equation_remainder_blocks": 5.551115123125783e-17,
+      "free_gauge_fixing_insertion": 0.0
+    },
+    "equation_remainder_norm": 0.6206514555468137,
+    "intertwining_remainder_norm": 0.3454051927616051,
+    "scope": "Full 111-field matrix identities for arbitrary local coefficients. Exact linear BRST subtraction does not force its equation remainder to vanish; no actual parametrix coefficient is simulated."
+  },
+  "same_potential_source_and_gauge_fixing": {
+    "errors": {
+      "vacuum_equation": 2.4482185347794876e-18,
+      "on_shell_gauge_identity": 0.0,
+      "inverse_gauge_identity": 1.7763568394002505e-15,
+      "boson_plus_ghost_Ward": 8.326672684688674e-17,
+      "background_gauge_fixing_cancellation": 1.6653345369377348e-16,
+      "independent_logdet_derivative": 0.0
+    },
+    "bosonic_Ward_terms": [
+      0.07880673727868746,
+      -0.06946581790465013,
+      -0.06261060604100144
+    ],
+    "ghost_Ward_terms": [
+      -0.07880673727868745,
+      0.06946581790465013,
+      0.06261060604100152
+    ],
+    "gauge_fixing_boson_term": -0.14444198647492962,
+    "gauge_fixing_ghost_term": 0.14444198647492945,
+    "ghost_matrix_determinant": 0.00017580279161609385,
+    "minimum_bosonic_eigenvalue": 0.01728813490362784,
+    "scope": "Original five-scalar potential and SU(2) generators in a zero-dimensional Gaussian calibration, with a declared auxiliary gauge matrix. This is neither the physical Hadamard covariance nor a continuum loop computation."
+  },
+  "dependency_hashes": {
+    "research_note_734.md": "09d372b82822080c5a8757698bce7d8c26ec358a2c47ceb6e49239de430aa882",
+    "research_note_735.md": "43ece0235df1d09dcef1d30c99b2cb2dd2ade100cb6572caf46ded7ac8ffe2b8",
+    "research_note_765.md": "6ce177d199808bd525d904f2aa13bcb2a930beb29ac9f06933f2c931f1cf29a7",
+    "research_note_768.md": "fdc091e03bde167d216a2c1f6f94d030be5a88abe7af2ce1d7d4d309b55d7ca1",
+    "research_note_769.md": "301312f3d13a9eaf15628e8aa76e33ad86f6dcfbdbb1b580997634f0eb02a69b",
+    "joint_brst_relative_source.py": "b252f4dedbd832913ad12e6acd32b05117fc85106735f6a3d45118df079538bb",
+    "joint_covariant_gauge_complex.py": "ab15d61839f78d3e5c0bbc2f88038026bd3d0ab6cf9bbad2c87473fd4def9e85",
+    "joint_frame_hessian_matching.py": "2a0ba2011b76a5b592c5a5b4ee1ef767441ab38b8a1daf775acd63b7d1f1b488",
+    "round770_drafts/research_note_770_working.md": "162c1eb7c780f5c5b7ec2dd8b3f1b0181ea4183be48c5e87a5999c704400cb76"
+  },
+  "scope": "The same linear BRST extension admits a locally constructed subtraction with exact free BRST identities. The finite same-state all-sector tadpole candidate and background quadratic insertion agree at this level. The remaining on-shell Ward defect is a local equation-remainder trace, not proven to vanish or to have a permitted local primitive. Interacting Ward identities, absolute conserved backreaction and actual instruments remain open."
+}

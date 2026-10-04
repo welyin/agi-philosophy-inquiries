@@ -1,0 +1,377 @@
+{
+  "date": "2026-10-02",
+  "round": 702,
+  "tests_run": 2,
+  "failures": 0,
+  "errors": 0,
+  "original_full_fiber_bound": {
+    "rows": [
+      {
+        "theta": 0.25,
+        "c_theta": 1641.63823294498,
+        "c0": 167.95654892766015,
+        "c1": 175.85322922644545,
+        "j0": 14.72,
+        "cases": [
+          {
+            "target_F": 0.8,
+            "full64_conditional_ground": -54.895144904616615,
+            "original_W": 4.1282080414727655,
+            "remainder_minimum": -51.79898887351204,
+            "certified_lower": -1641.63823294498
+          },
+          {
+            "target_F": 0.2,
+            "full64_conditional_ground": -113.47768336420415,
+            "original_W": 140.32494373623223,
+            "remainder_minimum": -8.233975562029983,
+            "certified_lower": -1641.63823294498
+          },
+          {
+            "target_F": 0.01,
+            "full64_conditional_ground": -420.32342406267156,
+            "original_W": 68012.22589444052,
+            "remainder_minimum": 50588.84599676772,
+            "certified_lower": -1641.63823294498
+          },
+          {
+            "target_F": 0.0001,
+            "full64_conditional_ground": -3888.385347473778,
+            "original_W": 687248313.471784,
+            "remainder_minimum": 515432346.7184905,
+            "certified_lower": -1641.63823294498
+          }
+        ]
+      },
+      {
+        "theta": 0.5,
+        "c_theta": 1828.465063201942,
+        "c0": 167.95654892766015,
+        "c1": 175.85322922644545,
+        "j0": 14.72,
+        "cases": [
+          {
+            "target_F": 0.8,
+            "full64_conditional_ground": -54.895144904616615,
+            "original_W": 4.1282080414727655,
+            "remainder_minimum": -52.831040883880235,
+            "certified_lower": -1828.465063201942
+          },
+          {
+            "target_F": 0.2,
+            "full64_conditional_ground": -113.47768336420415,
+            "original_W": 140.32494373623223,
+            "remainder_minimum": -43.31521149608804,
+            "certified_lower": -1828.465063201942
+          },
+          {
+            "target_F": 0.01,
+            "full64_conditional_ground": -420.32342406267156,
+            "original_W": 68012.22589444052,
+            "remainder_minimum": 33585.78952315759,
+            "certified_lower": -1828.465063201942
+          },
+          {
+            "target_F": 0.0001,
+            "full64_conditional_ground": -3888.385347473778,
+            "original_W": 687248313.471784,
+            "remainder_minimum": 343620268.3505445,
+            "certified_lower": -1828.465063201942
+          }
+        ]
+      },
+      {
+        "theta": 0.75,
+        "c_theta": 2212.5846992030397,
+        "c0": 167.95654892766015,
+        "c1": 175.85322922644545,
+        "j0": 14.72,
+        "cases": [
+          {
+            "target_F": 0.8,
+            "full64_conditional_ground": -54.895144904616615,
+            "original_W": 4.1282080414727655,
+            "remainder_minimum": -53.863092894248425,
+            "certified_lower": -2212.5846992030397
+          },
+          {
+            "target_F": 0.2,
+            "full64_conditional_ground": -113.47768336420415,
+            "original_W": 140.32494373623223,
+            "remainder_minimum": -78.3964474301461,
+            "certified_lower": -2212.5846992030397
+          },
+          {
+            "target_F": 0.01,
+            "full64_conditional_ground": -420.32342406267156,
+            "original_W": 68012.22589444052,
+            "remainder_minimum": 16582.73304954746,
+            "certified_lower": -2212.5846992030397
+          },
+          {
+            "target_F": 0.0001,
+            "full64_conditional_ground": -3888.385347473778,
+            "original_W": 687248313.471784,
+            "remainder_minimum": 171808189.9825985,
+            "certified_lower": -2212.5846992030397
+          }
+        ]
+      }
+    ],
+    "all_original64_modes_and_mass_hopping_retained": true,
+    "actual_global_bound_proved_by_Young_not_by_the_sampled_rays": true
+  },
+  "same_thermal_process": {
+    "dimension": 256,
+    "scalar_grid": 64,
+    "neutral_Fock_dimension": 4,
+    "original_majorana_interaction_noncommutes_kinetic": 0.45524646554193526,
+    "target_partition": 6.403680753502485,
+    "target_entropy": 2.5269216589378143,
+    "target_energy_moments": [
+      0.5583739301285399,
+      0.9188453831511546
+    ],
+    "rows": [
+      {
+        "theta": 0.25,
+        "finite_box_lower_constant": 0.20367337135498456,
+        "rows": [
+          {
+            "step": 0.2,
+            "minimum_transfer_eigenvalue": 0.0008542948702296292,
+            "log_order_margin": 0.0024944412853559732,
+            "heat_trace_norm_error": 0.0033441877536501212,
+            "Gibbs_trace_norm_error": 0.0005218696550716507,
+            "partition_error": 0.0003030382381536967,
+            "entropy_error": 5.484881213213555e-06,
+            "energy_moment_errors": [
+              4.400522519665273e-05,
+              5.2303065682379746e-05
+            ],
+            "full_classical_quantum_history_trace_error": 0.0005203643219170738,
+            "thermal_reference_energy": 2.7395524161377094,
+            "uniform_M_beta": 6.837803646930173
+          },
+          {
+            "step": 0.1,
+            "minimum_transfer_eigenvalue": 0.029228500063193257,
+            "log_order_margin": 0.0006518566948494998,
+            "heat_trace_norm_error": 0.0008810269188797772,
+            "Gibbs_trace_norm_error": 0.00013747092345634904,
+            "partition_error": 7.631866954049826e-05,
+            "entropy_error": 1.3707891772796188e-06,
+            "energy_moment_errors": [
+              1.1073880048173557e-05,
+              1.3166666736341703e-05
+            ],
+            "full_classical_quantum_history_trace_error": 0.00013710988253889898,
+            "thermal_reference_energy": 2.7396199294506274,
+            "uniform_M_beta": 6.837803646930173
+          },
+          {
+            "step": 0.05,
+            "minimum_transfer_eigenvalue": 0.17096357710337945,
+            "log_order_margin": 0.00016481526532049524,
+            "heat_trace_norm_error": 0.0002237495677299354,
+            "Gibbs_trace_norm_error": 3.4911824985750536e-05,
+            "partition_error": 1.9118297354125957e-05,
+            "entropy_error": 3.4269420456922717e-07,
+            "energy_moment_errors": [
+              2.7735055714295243e-06,
+              3.2979707562663663e-06
+            ],
+            "full_classical_quantum_history_trace_error": 3.482275447130262e-05,
+            "thermal_reference_energy": 2.739637526073343,
+            "uniform_M_beta": 6.837803646930173
+          },
+          {
+            "step": 0.025,
+            "minimum_transfer_eigenvalue": 0.4134774598564041,
+            "log_order_margin": 4.131987968450374e-05,
+            "heat_trace_norm_error": 5.61700185053282e-05,
+            "Gibbs_trace_norm_error": 8.7641980595297e-06,
+            "partition_error": 4.782059740193745e-06,
+            "entropy_error": 8.567382048241257e-08,
+            "energy_moment_errors": [
+              6.937007472895829e-07,
+              8.248987116710182e-07
+            ],
+            "full_classical_quantum_history_trace_error": 8.742009561813118e-06,
+            "thermal_reference_energy": 2.7396419793624442,
+            "uniform_M_beta": 6.837803646930173
+          }
+        ]
+      },
+      {
+        "theta": 0.5,
+        "finite_box_lower_constant": 0.20518104405950632,
+        "rows": [
+          {
+            "step": 0.2,
+            "minimum_transfer_eigenvalue": 0.0008542948599154998,
+            "log_order_margin": 0.0023766419492943355,
+            "heat_trace_norm_error": 0.002844583752968748,
+            "Gibbs_trace_norm_error": 0.00044443178865010303,
+            "partition_error": 0.00028417734585595156,
+            "entropy_error": 5.583100272765762e-06,
+            "energy_moment_errors": [
+              4.163275318036508e-05,
+              4.8819240243358486e-05
+            ],
+            "full_classical_quantum_history_trace_error": 0.0004428586369225748,
+            "thermal_reference_energy": 2.7775548666705188,
+            "uniform_M_beta": 6.806090906032829
+          },
+          {
+            "step": 0.1,
+            "minimum_transfer_eigenvalue": 0.02922850002105212,
+            "log_order_margin": 0.0006265535639979349,
+            "heat_trace_norm_error": 0.0007404073478597725,
+            "Gibbs_trace_norm_error": 0.00011564059995726748,
+            "partition_error": 7.139653226939657e-05,
+            "entropy_error": 1.393813239936037e-06,
+            "energy_moment_errors": [
+              1.0452539247030046e-05,
+              1.2260231908256536e-05
+            ],
+            "full_classical_quantum_history_trace_error": 0.00011525661845782978,
+            "thermal_reference_energy": 2.7776179986197644,
+            "uniform_M_beta": 6.806090906032829
+          },
+          {
+            "step": 0.05,
+            "minimum_transfer_eigenvalue": 0.1709635770730653,
+            "log_order_margin": 0.0001589551053095688,
+            "heat_trace_norm_error": 0.00018735052504264307,
+            "Gibbs_trace_norm_error": 2.9258794176347647e-05,
+            "partition_error": 1.7872889670478287e-05,
+            "entropy_error": 3.483387880365285e-07,
+            "energy_moment_errors": [
+              2.6161406087021888e-06,
+              3.0688159949887606e-06
+            ],
+            "full_classical_quantum_history_trace_error": 2.9163513657567156e-05,
+            "thermal_reference_energy": 2.777634236277055,
+            "uniform_M_beta": 6.806090906032829
+          },
+          {
+            "step": 0.025,
+            "minimum_transfer_eigenvalue": 0.4134774598472807,
+            "log_order_margin": 3.988909121278183e-05,
+            "heat_trace_norm_error": 4.6986980965158266e-05,
+            "Gibbs_trace_norm_error": 7.33786015757528e-06,
+            "partition_error": 4.469740598977978e-06,
+            "entropy_error": 8.707772014560078e-08,
+            "energy_moment_errors": [
+              6.542275124976626e-07,
+              7.674445379191042e-07
+            ],
+            "full_classical_quantum_history_trace_error": 7.3140874604344904e-06,
+            "thermal_reference_energy": 2.7776383284808026,
+            "uniform_M_beta": 6.806090906032829
+          }
+        ]
+      },
+      {
+        "theta": 0.75,
+        "finite_box_lower_constant": 0.2084397768678673,
+        "rows": [
+          {
+            "step": 0.2,
+            "minimum_transfer_eigenvalue": 0.0008542948469622049,
+            "log_order_margin": 0.001945200220679323,
+            "heat_trace_norm_error": 0.002401797909762864,
+            "Gibbs_trace_norm_error": 0.0003770542850090244,
+            "partition_error": 0.0002739592366749477,
+            "entropy_error": 5.8322342844085995e-06,
+            "energy_moment_errors": [
+              4.0510704580776213e-05,
+              4.68487186514599e-05
+            ],
+            "full_classical_quantum_history_trace_error": 0.00037547125430585296,
+            "thermal_reference_energy": 2.809499095245592,
+            "uniform_M_beta": 6.7745689668842894
+          },
+          {
+            "step": 0.1,
+            "minimum_transfer_eigenvalue": 0.02922849996629589,
+            "log_order_margin": 0.0005604309323050724,
+            "heat_trace_norm_error": 0.0006162199674298896,
+            "Gibbs_trace_norm_error": 9.66505733020019e-05,
+            "partition_error": 6.872098250898517e-05,
+            "entropy_error": 1.4556319367642345e-06,
+            "energy_moment_errors": [
+              1.0155880005080498e-05,
+              1.1746707852200444e-05
+            ],
+            "full_classical_quantum_history_trace_error": 9.625991502694584e-05,
+            "thermal_reference_energy": 2.809559234385847,
+            "uniform_M_beta": 6.7745689668842894
+          },
+          {
+            "step": 0.05,
+            "minimum_transfer_eigenvalue": 0.1709635770332236,
+            "log_order_margin": 0.00014330756492286905,
+            "heat_trace_norm_error": 0.00015523565910882626,
+            "Gibbs_trace_norm_error": 2.4341706140839333e-05,
+            "partition_error": 1.7195289938598535e-05,
+            "entropy_error": 3.6375744194572235e-07,
+            "energy_moment_errors": [
+              2.5408113100144902e-06,
+              2.9389339222252175e-06
+            ],
+            "full_classical_quantum_history_trace_error": 2.42444041426204e-05,
+            "thermal_reference_energy": 2.8095745699419434,
+            "uniform_M_beta": 6.7745689668842894
+          },
+          {
+            "step": 0.025,
+            "minimum_transfer_eigenvalue": 0.41347745983525247,
+            "log_order_margin": 3.5937690578171496e-05,
+            "heat_trace_norm_error": 3.888676662611248e-05,
+            "Gibbs_trace_norm_error": 6.097240775224629e-06,
+            "partition_error": 4.29977388272107e-06,
+            "entropy_error": 9.092997155235594e-08,
+            "energy_moment_errors": [
+              6.35319375885679e-07,
+              7.348764033965338e-07
+            ],
+            "full_classical_quantum_history_trace_error": 6.072938843441419e-06,
+            "thermal_reference_energy": 2.809578424137999,
+            "uniform_M_beta": 6.7745689668842894
+          }
+        ]
+      }
+    ],
+    "no_full_graph_CAR_or_Gauss_partition_numerically_evaluated": true,
+    "finite_radial_box_diagnostic_not_infinite_dimensional_proof": true,
+    "Dirac_zero_only_in_diagnostic_not_in_analytic_theorem": true
+  },
+  "dependency_hashes": {
+    "research_note_603.md": "cc0b578680b1cd0dae279a2d7533fc4853772e4821358f17b3f57b4ac47b3fe5",
+    "research_note_623.md": "2ef362e618a11588e5edcf20c0090dd88e29165b2ab0405b1c6a5be1a9b0d804",
+    "research_note_624.md": "764cc0bd20ac7d36a1e99f91e5507c2ce568af940b832f9a72a99638f8b1bc63",
+    "research_note_625.md": "dc19916b0c780a6527797fa3f61c992c35f3f6e565cd104f9412f60f4dfb521c",
+    "research_note_643.md": "802e0a296b0e1f23360905ef22846c1e6414f7e3a5e0d955f2e2271cc9bb26f5",
+    "research_note_655.md": "a500b85edb04ac84d69f1778db85ac3d47f2c1a567b81832f5c350dd79251282",
+    "research_note_667.md": "9adc75f83768baaf64798db042cecb72341367decfd2478083d7add646d300c9",
+    "research_note_699.md": "17dff6cca81821d5fb7fb3ef284ab9fd4627acee73ce4c25c06b802b4c177c4a",
+    "research_note_701.md": "50de09a2501d0ddda706c6e67b1cd90c8c7d37506a17b0c8d3e575f7a04b3433",
+    "joint_full_graph_transfer_sources.py": "f6da4532f67093d6a68457ffb22b14601088feef206af72085896f8088803a70",
+    "joint_source_preserving_compression.py": "68f81e089538e40fd20982cab38c052905b781fadab28654d9212bebe07a4d97",
+    "round702_drafts/source_scale_entry.md": "e1473b8cd01f3ea870c3267d2208c0e85c3c5a84cbefc929ce6b4ddffdade783"
+  },
+  "scope": {
+    "analytic_model_is_original_full_finite_graph_HF": true,
+    "regrouping_preserves_all_interactions_and_Gauss": true,
+    "new_transfer_not_claimed_equal_to_655_or_673_at_finite_step": true,
+    "own_Gibbs_states_trace_norm_converge": true,
+    "real_time_and_actual_record_limit_shared": true,
+    "all_energy_moments_and_thermal_entropy_converge": true,
+    "spatial_refinement_uniformity_not_proved": true,
+    "autonomous_thermalization_not_proved": true,
+    "original_chiral_overlap_identity_still_open": true,
+    "GR_or_dimension_not_derived": true
+  }
+}

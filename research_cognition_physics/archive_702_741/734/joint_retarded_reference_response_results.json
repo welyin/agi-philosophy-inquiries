@@ -1,0 +1,149 @@
+{
+  "round": 734,
+  "tests_run": 3,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "retarded_kernel_check",
+    "linearized_exchange_check",
+    "same_record_source_contact_check"
+  ],
+  "results": {
+    "retarded_kernel_check": {
+      "original_dimension": 128,
+      "propagated_response_vs_retarded_kernel_error": 3.0696763965389513e-16,
+      "pre_support_kernel": 0.0,
+      "geometric_reference_response": -0.02934643662004672,
+      "actual_record_geometric_response": 0.0004191206137996378,
+      "independently_assembled_commutator_response": -0.029346436620046833,
+      "kernel_is_discrete_exact_Frechet_response_not_a_continuum_stress": true
+    },
+    "linearized_exchange_check": {
+      "generators": 12,
+      "full_matrix_linearized_identity_error": 2.7463062509198114e-10,
+      "complete_exchange_balance_error": 1.2240319868794813e-10,
+      "rows": [
+        {
+          "kind": "color",
+          "index": null,
+          "charge_rate_response": -1.4791141972893971e-31,
+          "state_response": 0.0,
+          "background_source_contact": 0.0,
+          "missing_contact_defect": -1.4791141972893971e-31
+        },
+        {
+          "kind": "color",
+          "index": null,
+          "charge_rate_response": 2.9582283945787943e-30,
+          "state_response": 0.0,
+          "background_source_contact": 0.0,
+          "missing_contact_defect": 2.9582283945787943e-30
+        },
+        {
+          "kind": "color",
+          "index": null,
+          "charge_rate_response": -5.9164567891575885e-31,
+          "state_response": 0.0,
+          "background_source_contact": 0.0,
+          "missing_contact_defect": -5.9164567891575885e-31
+        },
+        {
+          "kind": "color",
+          "index": null,
+          "charge_rate_response": 5.9164567891575885e-31,
+          "state_response": 0.0,
+          "background_source_contact": 0.0,
+          "missing_contact_defect": 5.9164567891575885e-31
+        },
+        {
+          "kind": "color",
+          "index": null,
+          "charge_rate_response": -5.9164567891575885e-31,
+          "state_response": 0.0,
+          "background_source_contact": 0.0,
+          "missing_contact_defect": -5.9164567891575885e-31
+        },
+        {
+          "kind": "color",
+          "index": null,
+          "charge_rate_response": -3.1554436208840472e-30,
+          "state_response": 0.0,
+          "background_source_contact": 0.0,
+          "missing_contact_defect": -3.1554436208840472e-30
+        },
+        {
+          "kind": "color",
+          "index": null,
+          "charge_rate_response": 3.469446951953614e-18,
+          "state_response": 0.0,
+          "background_source_contact": 0.0,
+          "missing_contact_defect": 3.469446951953614e-18
+        },
+        {
+          "kind": "color",
+          "index": null,
+          "charge_rate_response": 1.0408340855860843e-17,
+          "state_response": 0.0,
+          "background_source_contact": 0.0,
+          "missing_contact_defect": 1.0408340855860843e-17
+        },
+        {
+          "kind": "weak",
+          "index": 0,
+          "charge_rate_response": -1.2475389545102411e-05,
+          "state_response": 2.897055027756498e-06,
+          "background_source_contact": 9.578334517785886e-06,
+          "missing_contact_defect": -9.578334517345914e-06
+        },
+        {
+          "kind": "weak",
+          "index": 1,
+          "charge_rate_response": 1.6756940382799124e-05,
+          "state_response": -3.1131023571838213e-06,
+          "background_source_contact": -1.3643838026810362e-05,
+          "missing_contact_defect": 1.3643838025615303e-05
+        },
+        {
+          "kind": "weak",
+          "index": 2,
+          "charge_rate_response": 0.1390412760373151,
+          "state_response": 6.62208854487349e-05,
+          "background_source_contact": -0.13910749693801605,
+          "missing_contact_defect": 0.13910749692276383
+        },
+        {
+          "kind": "circle",
+          "index": null,
+          "charge_rate_response": -0.8333809580455412,
+          "state_response": -0.0005215647795412234,
+          "background_source_contact": 0.8339025229474857,
+          "missing_contact_defect": -0.8339025228250825
+        }
+      ],
+      "numerical_check_not_an_anomaly_cancellation_proof": true
+    },
+    "same_record_source_contact_check": {
+      "actual_post_record_state_response": -0.0016840912875608898,
+      "actual_operator_contact": -10.088505901768999,
+      "total_source_response": -10.09018999305656,
+      "independent_difference": -10.090189993450238,
+      "error": 3.936779791047229e-10,
+      "record_only_state_response": 3.161357240212234e-05,
+      "record_only_operator_contact": 0.3701310194384463,
+      "finite_matrix_contact_not_Hadamard_counterterm": true
+    }
+  },
+  "dependency_hashes": {
+    "research_note_620.md": "aac5a2cced79624dabadacd86fbc0d2ae30ead3ec8f36e659a9bcb3dbe698021",
+    "research_note_628.md": "d1773cea96d67012abc260beea0dc66cd1604969d17aafae0d1ea4a7c7adf7cf",
+    "research_note_632.md": "1c5fbf535b5d106af8c4404f3c55faa656dc1b37b971a76a349adb665bfbef16",
+    "research_note_733.md": "9c351f7a3653327c71842e07744c9f99a7f76bd4dd9930a24b5d5f7a25a91f4b",
+    "joint_dynamic_continuum_reference.py": "7e7a5160fd87c640bc50dc617122036dbddedfcee1edbce53a7327de66202d9b",
+    "joint_relative_source_development.py": "8b04e9a5591d308c98e13f63f863d2d48869712b427c726faca488dcc8fd9a44",
+    "joint_reference_polarization_boundary.py": "f1bf8276a9f878aaecb1585c893a13ac15e290e853b9c2fa159c83f8310b6b09",
+    "joint_reference_polarization_boundary_results.json": "ccee41400dcc38b1e405d931eaac44b20678d8604d4c87196425c2413b9fea33",
+    "round734_drafts/causal_reference_entry.py": "6c740276ed8985240da0fcafad22fd18cabe952a3f1dc9d17eba1da63e76fa5d",
+    "round734_drafts/causal_reference_entry_results.json": "2f0852cfb81aef80ef3e0aa6132fa3e79a22b9d06452c16af71160eea0654095"
+  },
+  "scope": "Same-past retarded reference response on the declared smooth continuum background family requires simultaneous state, source-operator, parametrix and local-term variation. The joint differentiated Ward identity has background contacts; zero anomaly requires the declared compatible renormalization contract. Original complete finite matrices verify causal kernel and nonzero contacts, not renormalized continuum stress or nonlinear semiclassical existence."
+}

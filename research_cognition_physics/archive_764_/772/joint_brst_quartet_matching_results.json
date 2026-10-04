@@ -1,0 +1,89 @@
+{
+  "round": 772,
+  "tests_run": 3,
+  "failures": 0,
+  "errors": 0,
+  "complete_Cauchy_pairing": {
+    "errors": {
+      "dual_pair": 1.1102230246251565e-15,
+      "dual_isotropic": 2.158830036921406e-16,
+      "slice_idempotent": 9.162731680546639e-16,
+      "slice_charge_adjoint": 2.7755575615628914e-16,
+      "left_inverse": 9.992007221626409e-16,
+      "constraint_of_slice": 9.010202647193666e-16,
+      "split_identity": 1.1102230246251565e-16,
+      "frequency_compatibility": 1.8735013540549517e-16,
+      "unchanged_physical_covariance": 6.249756658285759e-17,
+      "unchanged_gauge_intertwining": 1.1173882578713868e-16,
+      "exact_new_intertwining": 8.881784197001252e-16,
+      "raw_constraint": 8.014569998179112e-16,
+      "gauge_factorization": 8.881784197001252e-16
+    },
+    "changed_unphysical_covariance_norm": 0.07375011075258223,
+    "physical_rank": 62,
+    "scope": "Inherited full 126x32 Cauchy principal calibration plus a finite smooth-block analogue; it does not compute the original background covariance numerically."
+  },
+  "algebraic_quartet": {
+    "errors": {
+      "nilpotent": 1.706568635435857e-16,
+      "Krein_self_adjoint": 0.0,
+      "Hodge_number": 8.881784197001252e-16,
+      "contracting_homotopy": 2.220446049250313e-16,
+      "fundamental_symmetry": 0.0
+    },
+    "total_degree_cutoff": 4,
+    "vector_count": 85,
+    "image_rank": 40,
+    "kernel_dimension": 45,
+    "physical_positive_dimension": 5,
+    "kernel_null_dimension": 40,
+    "minimum_kernel_norm_eigenvalue": -2.6866715143810665e-16,
+    "scope": "An exact finite-degree invariant sector of one quartet and one physical mode. The note proves the arbitrary-mode finite-particle identity; this is not a continuum interacting Hilbert-space completion."
+  },
+  "original_source_dictionary": {
+    "errors": {
+      "stationary_original_potential": 2.4482185347794876e-18,
+      "gauge_is_a_linear_solution_of_potential": 1.2241092673897438e-18,
+      "source_plus_mean": 0.0,
+      "relational_record_compensation": 0.0
+    },
+    "original_vacuum": [
+      0.6654429655855137,
+      0.0,
+      0.0,
+      0.0,
+      0.545863690226873
+    ],
+    "F": 1.8765364152074429,
+    "source_change": [
+      0.009764761238987282,
+      0.0,
+      0.0,
+      0.0,
+      0.004289484383243001
+    ],
+    "mean_dictionary_change": [
+      -0.16636074139637844,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "invariant_record": "(sum of four real Higgs components squared)/F",
+    "record_mean_change": -0.12262746488938171,
+    "record_covariance_change": 0.12262746488938171,
+    "scope": "Original U=V/F^2 at its stationary potential vacuum, with a pure-gauge covariance jet. This is a normalization/source-dictionary calibration, not the dynamical 753 background or a new actual instrument."
+  },
+  "dependency_hashes": {
+    "research_note_753.md": "d7143f6f507771bc4d44813bb53ed8287be6bb63431c667fe37cfc74a1fda50e",
+    "research_note_765.md": "6ce177d199808bd525d904f2aa13bcb2a930beb29ac9f06933f2c931f1cf29a7",
+    "research_note_766.md": "d1de3d2bcde0b48ca636bceb074d543d41fce3d2c6329ea8ee1b66bc9d66eb71",
+    "research_note_767.md": "29aad9748819ce87c3c84d3ef52ffe40b8b7246188664eb75625c43f23d67677",
+    "research_note_768.md": "fdc091e03bde167d216a2c1f6f94d030be5a88abe7af2ce1d7d4d309b55d7ca1",
+    "research_note_771.md": "779d525a39caa53d2b3b02d0e910a7016a18c8b18f8bc123d606be43078fc2b2",
+    "joint_microlocal_gauge_projection.py": "171f117ca0aa5857e9a00d68dfc4192886fac3b763d71cd288d02c3781d4fd0c",
+    "joint_brst_relative_source.py": "b252f4dedbd832913ad12e6acd32b05117fc85106735f6a3d45118df079538bb",
+    "round772_drafts/research_note_772_working.md": "d3c077fb6b01da300ef58eff21364930fb835e7faabda66d7f57a2bcb80f407b"
+  },
+  "scope": "An adapted unphysical representative preserves the inherited physical Hadamard state and admits algebraic free BRST quartet positivity. Its smooth source change is compensated by the second-order mean dictionary for invariant observables. It is not a proof of interacting BRST/QME, a full completed charge domain, an actual instrument, finite-strength self-consistency, or original Q-to-continuum equivalence."
+}

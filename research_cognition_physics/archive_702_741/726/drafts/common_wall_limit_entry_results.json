@@ -1,0 +1,55 @@
+{
+  "entry_round": 726,
+  "new_formal_round": false,
+  "tests_run": 2,
+  "failures": 0,
+  "errors": 0,
+  "result": {
+    "N": 32,
+    "epsilon": 0.19634954084936207,
+    "psi": 1.0182691518828233,
+    "node_volume": 0.008438498802459459,
+    "original_lambda": -30.681526820985155,
+    "original_wall_normal_velocity": -5.371028733231352e-16,
+    "continuum_normal_squared": 0.0009977473105951084,
+    "prescribed_graph_normal_squared": 0.025597958108839285,
+    "finite_graph_continuum_difference": 0.024600210798244176,
+    "original_Gamma": 1685.9679350556523,
+    "critical_canonical_kick": 8.007898216491605e-07,
+    "Q_backaction_coefficient_per_hbar_over_sigma_squared": 9979487620.673288,
+    "phase_rows": [
+      {
+        "kick_over_symbolic_boundary": -1.5,
+        "normal_symbol": -0.031997447636049364,
+        "independent_identity_error": 1.3877787807814457e-17
+      },
+      {
+        "kick_over_symbolic_boundary": -0.5,
+        "normal_symbol": 0.01919846858162938,
+        "independent_identity_error": 3.469446951953614e-18
+      },
+      {
+        "kick_over_symbolic_boundary": 0.5,
+        "normal_symbol": 0.01919846858162955,
+        "independent_identity_error": 0.0
+      },
+      {
+        "kick_over_symbolic_boundary": 1.5,
+        "normal_symbol": -0.03199744763604884,
+        "independent_identity_error": 1.3877787807814457e-17
+      }
+    ],
+    "measurement_decomposition_label_is_not_pointer_record": true,
+    "no_finite_hbar_signature_probability_claim": true
+  },
+  "dependencies": {
+    "research_note_574.md": "23d72d666f593f845577712e761ab00dec1d10a56955b7da5fbb22a5ca68ef19",
+    "research_note_575.md": "8b1f807efa5d63b9ffb0e1a1cf7d9ca701029b16c8df30a45071a41569dee6f6",
+    "research_note_579.md": "8444240ebb9252a8cdbbb02b1f1fd35e098cce2dd2a8857ee01b81a0ea3faf99",
+    "research_note_651.md": "8fce9b455c65c9019830f92601094361652cad1f17e6d7b43bd9650815fac67b",
+    "research_note_725.md": "23fc527a96eb1443c1931d11126dff4f7686ccbdff85a0385f0149d2c98df114",
+    "joint_material_boundary_transport.py": "d3ff33e58c2e270c03f62131905a4547d725cd1b2ac53d210bce267f0fca6309",
+    "joint_gravity_material_coordinates.py": "492cc66a332db08ede6fa046cd69528d146216d87e357a8219dcad863ddc7baa"
+  },
+  "scope": "Deduplication and scale audit only. Reuse574 exact Gauss packets and651 original source. Gaussian position backaction uses canonical node volume; fixed-graph hbar/sigma convergence does not give joint refinement. Classical phase symbols do not prove the actual Q spectral or conditional-record concentration."
+}

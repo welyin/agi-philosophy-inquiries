@@ -1,0 +1,150 @@
+{
+  "round": 737,
+  "tests_run": 2,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "local_complement_check",
+    "curvature_order_check"
+  ],
+  "results": {
+    "local_complement_check": {
+      "original_backgrounds": [
+        {
+          "background": "old630_diagnostic_not_stationary",
+          "F": 1.975895483352716,
+          "mass_coordinate_norm": 0.2705470822467277,
+          "complementary_principal_magnitude": 5.927686450058148,
+          "original_metric_to_active_block_error": 8.881784197001252e-16,
+          "active_schur_eigenvalues": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0000000000000002
+          ],
+          "compensated_mass_error": 5.721958498152797e-17
+        },
+        {
+          "background": "old632_matched_stationary_vacuum",
+          "F": 1.8765364152074429,
+          "mass_coordinate_norm": 0.6282992889776375,
+          "complementary_principal_magnitude": 5.629609245622329,
+          "original_metric_to_active_block_error": 8.881784197001252e-16,
+          "active_schur_eigenvalues": [
+            0.9999999999999999,
+            1.0,
+            1.0000000000000002,
+            1.0000000000000002,
+            1.0000000000000002
+          ],
+          "compensated_mass_error": 2.8609792490763984e-17
+        }
+      ],
+      "matched_vacuum_radial_nonclosure": [
+        {
+          "loop_multiplier": 0.0,
+          "common_scaling_K_unit_norm": 1.0,
+          "radial_rayleigh_value": 0.13793444234696045,
+          "transverse_acceleration_K_norm": 0.003337602073667811,
+          "transverse_components": [
+            0.0,
+            0.002899694168691014,
+            0.0,
+            0.0,
+            -0.003534913791578276
+          ]
+        },
+        {
+          "loop_multiplier": 1.0,
+          "common_scaling_K_unit_norm": 1.0,
+          "radial_rayleigh_value": 0.1842514458224294,
+          "transverse_acceleration_K_norm": 0.044877268417212374,
+          "transverse_components": [
+            0.0,
+            0.03898917566082638,
+            0.0,
+            0.0,
+            -0.04753031414617727
+          ]
+        }
+      ],
+      "finite_mass_map_Gram_eigenvalues": [
+        0.4168,
+        44.71439999999998,
+        44.71439999999998,
+        44.71439999999999,
+        44.71439999999999
+      ],
+      "original630_b": 3.7186915677459282,
+      "original630_null_coefficient": 5.927686450058148,
+      "old583_Schur_tool_reused": true,
+      "no_claim_that_the_seven_source_block_is_a_closed_model": true
+    },
+    "curvature_order_check": {
+      "nonlinear_R_squared_checks": [
+        {
+          "amplitude": 0.001,
+          "nonlinear_second_variation": 18321.782097061943,
+          "predicted_quadratic_hessian": 18321.768355735672,
+          "finite_amplitude_remainder": 0.013741326270974241,
+          "exact_nonlinear_identity_error": 3.637978807091713e-12
+        },
+        {
+          "amplitude": 0.0005,
+          "nonlinear_second_variation": 18321.771791067244,
+          "predicted_quadratic_hessian": 18321.768355735672,
+          "finite_amplitude_remainder": 0.003435331571381539,
+          "exact_nonlinear_identity_error": 3.637978807091713e-12
+        }
+      ],
+      "null_channel_derivative_order_witness": [
+        {
+          "n": 2,
+          "second_derivative_sup": 1.0,
+          "fourth_derivative_sup": 4.0
+        },
+        {
+          "n": 4,
+          "second_derivative_sup": 1.0,
+          "fourth_derivative_sup": 16.0
+        },
+        {
+          "n": 8,
+          "second_derivative_sup": 1.0,
+          "fourth_derivative_sup": 64.0
+        },
+        {
+          "n": 16,
+          "second_derivative_sup": 1.0,
+          "fourth_derivative_sup": 256.0
+        }
+      ],
+      "R_squared_Hessian_coefficient_per_alpha": 72,
+      "local_elimination_identity_errors": [
+        1.1102230246251565e-16,
+        5.329070518200751e-15
+      ],
+      "nonzero_alpha_fixture": 0.02,
+      "zero_alpha_branch_requires_nonzero_effective_second_order_coefficient": true,
+      "no_uniform_alpha_to_zero_or_physical_branch_claim": true,
+      "lapse_and_shift_constraints_not_solved_by_these_checks": true
+    }
+  },
+  "dependency_hashes": {
+    "research_note_570.md": "0cd639b8abfb095d36454e07eeb2a7b81912abcb7e87ec8eb7e8a1b59020d0cc",
+    "research_note_583.md": "4d17aa9406971cf89cbdc6bf2bc89cf79e9719fa4a4ba2301711d71b7da636c5",
+    "research_note_601.md": "2464a6dddd68e4b5cf242b93255dff3a42df9f6accb5c5a976faed42cca5c362",
+    "research_note_623.md": "2ef362e618a11588e5edcf20c0090dd88e29165b2ab0405b1c6a5be1a9b0d804",
+    "research_note_630.md": "455eb46ac40df7b2183801d74ab1a9b6205ece0838cd26f81b94471662a18128",
+    "research_note_631.md": "e2cce60e1760a0f3e1832e1d0ee92bbb9a92140b181e1edcb792c8390d4141fb",
+    "research_note_632.md": "1c5fbf535b5d106af8c4404f3c55faa656dc1b37b971a76a349adb665bfbef16",
+    "research_note_735.md": "43ece0235df1d09dcef1d30c99b2cb2dd2ade100cb6572caf46ded7ac8ffe2b8",
+    "research_note_736.md": "dd40eeb9466510b2f246df6834d7ffdc3fd2f795811898be8a628271014bbfb7",
+    "joint_local_source_normalization.py": "c0d38cee69de88b4bc71c56cecd84b511ef8b12521ba44a49efe821677e9b3f0",
+    "joint_background_contact_matching.py": "f725329f179f5a0c787fae8292857c22c9c61273a19caa70ac54578b1030ee3e",
+    "joint_continuum_source_spectrum.py": "8c9d0ea35fc751533a41741a395b6105966d12a00263ffd3c58e5b1e1fe75893",
+    "joint_curved_quantum_source.py": "cf6aec9461174f41985b706c1bae776787b198ab77d9e42dfe8057764795775c"
+  },
+  "scope": "Original local scalar/conformal complement mapped to the fermionic null direction; matched-vacuum radial nonclosure and the R-squared derivative-order distinction. Conditional short-time local-complement criteria, not an unconstrained seven-source model or nonlinear semiclassical spacetime."
+}

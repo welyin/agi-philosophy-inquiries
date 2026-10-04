@@ -1,0 +1,108 @@
+{
+  "round": 746,
+  "tests_run": 2,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "original_graph_CAR_word_and_common_geometry_checks",
+    "native_Higgs_readout_fourth_sign"
+  ],
+  "coefficient_checks": {
+    "rows": [
+      {
+        "full_modes": 96,
+        "edges": 3,
+        "nonzero_original_species_and_links": true,
+        "third_occupation_word": 0.0,
+        "three_mass_or_hop_word": 0.0,
+        "external_edge_two_factor_words": 0.0,
+        "target_force_identity_error": 0.0
+      },
+      {
+        "full_modes": 96,
+        "edges": 3,
+        "nonzero_original_species_and_links": true,
+        "third_occupation_word": 0.0,
+        "three_mass_or_hop_word": 0.0,
+        "external_edge_two_factor_words": 0.0,
+        "target_force_identity_error": 2.7755575615628914e-17
+      },
+      {
+        "full_modes": 96,
+        "edges": 3,
+        "nonzero_original_species_and_links": true,
+        "third_occupation_word": 0.0,
+        "three_mass_or_hop_word": 0.0,
+        "external_edge_two_factor_words": 0.0,
+        "target_force_identity_error": 1.3877787807814457e-17
+      },
+      {
+        "full_modes": 96,
+        "edges": 3,
+        "nonzero_original_species_and_links": true,
+        "third_occupation_word": 0.0,
+        "three_mass_or_hop_word": 0.0,
+        "external_edge_two_factor_words": 0.0,
+        "target_force_identity_error": 2.220446049250313e-16
+      },
+      {
+        "full_modes": 96,
+        "edges": 3,
+        "nonzero_original_species_and_links": true,
+        "third_occupation_word": 0.0,
+        "three_mass_or_hop_word": 0.0,
+        "external_edge_two_factor_words": 0.0,
+        "target_force_identity_error": 1.1102230246251565e-16
+      },
+      {
+        "full_modes": 96,
+        "edges": 3,
+        "nonzero_original_species_and_links": true,
+        "third_occupation_word": 0.0,
+        "three_mass_or_hop_word": 0.0,
+        "external_edge_two_factor_words": 0.0,
+        "target_force_identity_error": 2.220446049250313e-16
+      }
+    ],
+    "common_geometry_edge_volume_error": 2.220446049250313e-16,
+    "exact_target_gradient_bound": "K^-1(dT,dT) <= 32/9 for M=2",
+    "native_single_read_injection_bound": "0 <= D_T <= hbar²/(9 w_v)",
+    "field_time_evolution_not_simulated": true
+  },
+  "certificate": {
+    "readout": "E_T_plus=1/2+sin(T)/4, T=|X|²/2, existing624/723 menu.",
+    "fourth_density_coefficients": {
+      "(0, 0)": "-8284/1875",
+      "(0, 1)": "-872/625",
+      "(1, 0)": "-1853/1875",
+      "(1, 1)": "3379/5625",
+      "(1, 2)": "218/1875",
+      "(2, 0)": "3379/5625",
+      "(2, 1)": "436/1875",
+      "(3, 0)": "218/1875"
+    },
+    "unnormalized_fourth_contrast_interval": [
+      "-0.151458842046343339233152210005713810050776453241139430738472",
+      "-0.151458842046326973517590786238835020492154729146213445990356"
+    ],
+    "quadrature_error_upper": "8.17071476375839755653462708363874044078272708500309744889210E-15",
+    "sine_error_upper": "1.21412599733175769800365309765971782785165750617183840401462E-17",
+    "tail_error_upper": "1.75698016830588011569624670984393076673764509819540712164276E-21",
+    "exact_density_independent_of_onsite_potential": true,
+    "scalar_volume_dependence": "w_v^-2; normalized contrast divides by same positive Gaussian Z",
+    "graph_extension_is_analytic_not_simulated": true,
+    "strict_negative": true,
+    "all_checks_passed": true
+  },
+  "dependency_hashes": {
+    "research_note_598.md": "3cfd675bceca95c6fcca2a72181a52cccb44cc4d5421b61fea0159002d80b8c5",
+    "research_note_623.md": "2ef362e618a11588e5edcf20c0090dd88e29165b2ab0405b1c6a5be1a9b0d804",
+    "research_note_723.md": "fd8d72a25d512bde5fc8cdfa6b9acc31464b3b8947895d35387f6319d9ce393a",
+    "research_note_745.md": "48168329855f06832b153fdfabb7a478971c973729229c898e632f7eb707092b",
+    "joint_fermion_gauss_completion.py": "1de7d9f62d4ea8a5363cbcf2ecfb3149cf06e4e309f820f91dd856e11bc03a3b",
+    "round745_drafts/exact_history_density_results.json": "f8c4651512c3b20bd873dbad746596a292b6af8419c872174ef79bb0cd3b043e",
+    "round745_drafts/certify_history_integral.py": "b133c608ad3e568079859f826fe3e969b8bca093f72cc17a40c0bef4ac327191",
+    "round746_drafts/higgs_readout_certificate.py": "ddc5862ec892da3710ea3dcc95470955d7b7eecf1f3e1f5fa5e141bb4fe4ad62"
+  },
+  "scope": "In the original fixed finite-graph, fixed positive geometry model with species-preserving original gauge-covariant hopping, the existing T readout has a local fourth-order population contrast for a declared normal Gauss ready state. Analytic word cancellations remove arbitrary scalar graph potentials and hopping from that coefficient; a strict interval certifies its sign. No weakening of edges, graph boson time simulation, ideal occupation instrument, autonomous detector or dynamic gravity is claimed."
+}

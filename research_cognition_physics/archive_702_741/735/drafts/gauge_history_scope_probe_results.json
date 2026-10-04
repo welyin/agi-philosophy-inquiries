@@ -1,0 +1,62 @@
+{
+  "round_in_progress": 735,
+  "latest_completed_round": 734,
+  "completed_new_round": false,
+  "probe_checks": 3,
+  "failures": 0,
+  "results": {
+    "local_dictionary_check": {
+      "full_nambu_dimension": 128,
+      "independent_mass_and_spatial_connection_error": 8.881784197001252e-16,
+      "temporal_connection_vs_frame_derivative_error": 7.351431336207365e-09,
+      "temporal_connection_norm_witness": 93.04215378330683,
+      "temporal_connection_is_distinct_from_original_spatial_U1_a0": true
+    },
+    "same_past_record_check": {
+      "rows": [
+        {
+          "steps": 192,
+          "exact_transport_covariance_and_record_source_error": 5.9952896483899054e-15,
+          "independent_midpoint_covariance_error": 0.00022065402425665192,
+          "omitted_temporal_connection_covariance_difference": 0.11773242390892745,
+          "original_post_record_geometric_source": 10.474329813817263,
+          "independent_midpoint_source_difference": 4.3207275624013164e-07,
+          "omitted_temporal_connection_source_difference": -0.0008143377338214464
+        },
+        {
+          "steps": 384,
+          "exact_transport_covariance_and_record_source_error": 1.0658141036401503e-14,
+          "independent_midpoint_covariance_error": 5.515931617064306e-05,
+          "omitted_temporal_connection_covariance_difference": 0.11773243495691756,
+          "original_post_record_geometric_source": 10.474329721754621,
+          "independent_midpoint_source_difference": 1.0799106497927369e-07,
+          "omitted_temporal_connection_source_difference": -0.0008143374712226148
+        }
+      ],
+      "integration_error_ratio": 4.0003038394099715,
+      "finite_symbol_check_not_continuum_gauge_anomaly_calculation": true
+    },
+    "phase_blindness_check": {
+      "purpose": "Counterexample to certifying absolute source normalization by state/record covariance alone",
+      "gauge_variation_of_forbidden_local_term": 0.243721109286979,
+      "independent_finite_difference": 0.243721109282917,
+      "pure_gauge_history_scalar_phase_integral": 0.005076719913231766,
+      "nontrivial_scalar_phase_distance_from_one": 0.005076714461452929,
+      "unchanged_covariance_error": 1.1102476580469885e-16,
+      "c_number_is_on_many_body_Fock_space_not_a_BdG_identity_shift": true,
+      "this_does_not_establish_a_nonzero_anomaly_in_the_original_model": true
+    }
+  },
+  "dependencies": {
+    "joint_dynamic_continuum_reference.py": "7e7a5160fd87c640bc50dc617122036dbddedfcee1edbce53a7327de66202d9b",
+    "joint_relative_source_development.py": "8b04e9a5591d308c98e13f63f863d2d48869712b427c726faca488dcc8fd9a44",
+    "round732_drafts/source_feedback_entry.py": "668fbc732eb657fdb5e05d390b233e1cca89d20d7df3cb80ba794f90180d0015",
+    "research_note_623.md": "2ef362e618a11588e5edcf20c0090dd88e29165b2ab0405b1c6a5be1a9b0d804",
+    "research_note_628.md": "d1773cea96d67012abc260beea0dc66cd1604969d17aafae0d1ea4a7c7adf7cf",
+    "research_note_734.md": "09d372b82822080c5a8757698bce7d8c26ec358a2c47ceb6e49239de430aa882",
+    "round735_drafts/STATUS.md": "96e8b3bf74cece68de580ce00d8aa643e788a10d3b34f1ff29536af0fc4eba98",
+    "round735_drafts/counterterm_scope_entry.md": "d1579d390b230ecd5659930bb4619c20bab57d4d66750633e1ae012f06d81a99",
+    "round735_drafts/entry_checks.json": "bb46d073656978b476408d065fcb094339a0f395132dd7609de664b5f63fae6f"
+  },
+  "scope": "Original complete finite local-symbol gauge-history and record calibration; phase-blindness limitation. No continuum Wick normalization or self-consistent gravity existence is claimed."
+}

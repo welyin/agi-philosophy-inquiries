@@ -1,0 +1,102 @@
+{
+  "round": 727,
+  "tests_run": 3,
+  "failures": 0,
+  "errors": 0,
+  "results": {
+    "original_mass_ground": {
+      "original_center": [
+        0.6987151138647895,
+        0.545863690226873
+      ],
+      "CAR_modes": 32,
+      "full_ground_energy": -6.019259254791661,
+      "exact_mass_formula": -6.019259254791661,
+      "singlet_source_mean": -0.36125370875602336,
+      "singlet_source_variance": 0.025547268552395207,
+      "ground_metric_ss": 0.1284842557307218,
+      "neutral_Fock_dimension": 16,
+      "maximum_independent_identity_error": 3.556338556975902e-11,
+      "radial_Born_Huang_coefficient_without_hbar_squared": 22.912560427037576,
+      "radial_kinetic_product_identity_error": 1.4210854715202004e-14,
+      "quantum_metric_radial": [
+        [
+          0.07841841359991705,
+          -0.10037694708446072
+        ],
+        [
+          -0.10037694708446072,
+          0.12848425571831876
+        ]
+      ],
+      "original_bosonic_source_not_held_fixed_by_reference_change": true
+    },
+    "retained_spatial_propagation": {
+      "nodes": 4,
+      "physical_modes": 128,
+      "Nambu_dimension": 256,
+      "all_three_original_Weyl_edge_directions": true,
+      "nonuniform_original651_node_fields": true,
+      "ground_energy": -153.83200921072446,
+      "quasiparticle_gap": 0.10817711237101245,
+      "geometry_source_mean": 140.48342719233642,
+      "geometry_source_variance": 5.7687797773489,
+      "ground_metric_geometry": 0.07287457096218707,
+      "ground_energy_variance": 8.379263799795991e-28,
+      "max_covariance_and_derivative_error": 9.961695468518883e-09,
+      "covariance_not_a_standalone_Gauss_state_or_global_gap_proof": true
+    },
+    "actual_recorded_reference": {
+      "rows": [
+        {
+          "hbar": 0.0001,
+          "sigma": 0.025118864315095798,
+          "normalization": 1.0,
+          "actual_recorded_mass_square_residual": 4.021921293493676e-07,
+          "actual_recorded_source_square_residual": 0.02554838076593269,
+          "position_square_error": 0.0006806493601332066,
+          "conditional_ground_source_floor": 0.025547268552395225
+        },
+        {
+          "hbar": 2.5e-05,
+          "sigma": 0.014426999059072132,
+          "normalization": 1.0000000000000002,
+          "actual_recorded_mass_square_residual": 1.0100030399058471e-07,
+          "actual_recorded_source_square_residual": 0.025547547893861412,
+          "position_square_error": 0.00022061909793604298,
+          "conditional_ground_source_floor": 0.025547268552395225
+        },
+        {
+          "hbar": 6.25e-06,
+          "sigma": 0.008286135043349964,
+          "normalization": 1.0,
+          "actual_recorded_mass_square_residual": 2.527824620503549e-08,
+          "actual_recorded_source_square_residual": 0.025547338468026454,
+          "position_square_error": 7.178383442244779e-05,
+          "conditional_ground_source_floor": 0.025547268552395225
+        }
+      ],
+      "neutral_conditional_fiber_fixture_only": true,
+      "original_actual_Gaussian_y_records": true,
+      "full_bosonic_derivative_and_Gauss_packet_extension_is_analytic": true
+    }
+  },
+  "dependency_hashes": {
+    "research_note_558.md": "8f29ba3565625a67c1faa25d5365f9869472ed55157d9cd99a2d4996abee15b8",
+    "research_note_574.md": "23d72d666f593f845577712e761ab00dec1d10a56955b7da5fbb22a5ca68ef19",
+    "research_note_591.md": "5cf5a7698f191bb9f76a1ead396dd585784fe9e518aa88e96565905781655518",
+    "research_note_602.md": "f3fb4939de75c594186627f1cb581d481b195dada8dd3c30a24380154e40aa2d",
+    "research_note_603.md": "cc0b578680b1cd0dae279a2d7533fc4853772e4821358f17b3f57b4ac47b3fe5",
+    "research_note_604.md": "398c3a49208c8eea7c1c017777b5c030ec56d85a1eeb49f7452d883e37e945a5",
+    "research_note_630.md": "455eb46ac40df7b2183801d74ab1a9b6205ece0838cd26f81b94471662a18128",
+    "research_note_632.md": "1c5fbf535b5d106af8c4404f3c55faa656dc1b37b971a76a349adb665bfbef16",
+    "research_note_633.md": "0c9b29f4095de54210140072552348e2d078374052d40d8d871171ed1d22ea9c",
+    "research_note_720.md": "c9bcb880c25a7ce6ed2b123acce59d6bcefc22eb42c0e9953e8d9b5ca420ab4b",
+    "research_note_726.md": "05fe6482dbbb87ee0d4db72761051f0c55d9c159c9d3df2301ee723b6f83abf2",
+    "joint_fermion_gauss_completion.py": "1de7d9f62d4ea8a5363cbcf2ecfb3149cf06e4e309f820f91dd856e11bc03a3b",
+    "joint_quantum_response_matching.py": "bf47024bcb481e9883bb1f1518bf1a61f267aabe5b1ff72971e61523c1689d96",
+    "joint_chiral_source_matching.py": "9dbfb2faba423e614c16f2d80d8497652828b4487dbc788e86dcb635fb54a96c",
+    "joint_recorded_classical_wall.py": "2185b58a5ad46ebd5ec2e45bc28713fcfb2ea1885a7da2cc6a290ea02334513a"
+  },
+  "scope": "Original-matter conditional isolated ground band gives a new energy surface and geometric kinetic terms. Fixed-graph actual recorded semiclassical energy may concentrate about Hb+e0; source variance need not vanish. Original three-direction nonuniform Weyl star retains all128 physical modes, gauge covariance and source noise. No full interacting Gauss ground calculation, universal band gap, autonomous preparation, spatial continuum, self-consistent original Einstein source or adiabatic time error is claimed."
+}

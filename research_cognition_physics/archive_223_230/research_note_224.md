@@ -187,7 +187,7 @@ $$
 
 ## 7 可复算证据及边界检查
 
-[代码](tensor_process_bridge.py)复用223轮的矩阵基、状态及酉矩阵构造；[结果](tensor_process_bridge_results.json)由既有Python 3.12.14与NumPy 2.3.5生成。
+[代码](224/tensor_process_bridge.py)复用223轮的矩阵基、状态及酉矩阵构造；[结果](224/tensor_process_bridge_results.json)由既有Python 3.12.14与NumPy 2.3.5生成。
 
 - 2×2、2×3、3×3复合，各检验四种局部取向：乘积正交框架、正边缘、对偶配对、Jordan嵌入、相互对易、完整乘积基及概率保持。
 - 二、三维通道，各检验四种取向下的扩张公式；二、三、四维额外检验复Kraus算子从Choi矩阵的恢复、保迹及正性。
@@ -205,7 +205,7 @@ $$
 
 对d≥2，反对称子空间非空，故Φ_p完全正当且仅当p≤1/(d＋1)。d＝2、3、4的阈值分别为1/3、1/4、1/5；p＝1时最小本征值分别为−1/2、−1/3、−1/4。该标准见证用于核验过程桥梁，不记为新的数域排除或新发现的量子效应。
 
-本轮11项测试通过。有限误差记录见结果文件与[轮次检查](research_round_224_checks.json)。测试覆盖具体矩阵实现；定理A、B的任意维数范围由§2—5保证，没有引入物理实验数据。
+本轮11项测试通过。有限误差记录见结果文件与[轮次检查](224/research_round_224_checks.json)。测试覆盖具体矩阵实现；定理A、B的任意维数范围由§2—5保证，没有引入物理实验数据。
 
 ```powershell
 python -B -X utf8 research_cognition_physics/archive_223_/tensor_process_bridge.py

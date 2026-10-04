@@ -1,0 +1,135 @@
+{
+  "round": 752,
+  "tests_run": 2,
+  "failures": 0,
+  "errors": 0,
+  "original_jet": {
+    "h": 0.6987151138647895,
+    "s": 0.545863690226873,
+    "F": 1.8689716702248025,
+    "W": 0.629789115534174,
+    "covectors": [
+      [
+        0.007778443444904127,
+        1.964822727422222e-18,
+        1.964822727422222e-18,
+        0.0
+      ],
+      [
+        -0.2386545211803426,
+        0.0,
+        -0.031586181851176294,
+        0.0
+      ]
+    ],
+    "derivative_labels": [
+      -6.050418242557198e-05,
+      -0.055958293595883016
+    ],
+    "radial_target_metric": [
+      [
+        0.5583475631378234,
+        0.0181981674639455
+      ],
+      [
+        0.0181981674639455,
+        0.5492707122453416
+      ]
+    ]
+  },
+  "common_source_and_principal": {
+    "hessian_steps": [
+      0.0002,
+      0.0001,
+      5e-05
+    ],
+    "gradient_hessian_max_errors": [
+      4.874098913365543e-08,
+      1.2533629467625929e-08,
+      5.135493696961646e-09
+    ],
+    "metric_source_max_errors": [
+      3.849158318469659e-11,
+      9.634458161822401e-12,
+      2.455609500462419e-12
+    ],
+    "tensor_covariance_max_error": 2.220446049250313e-16,
+    "mixed_window_second_derivative": -37.47466670862993,
+    "added_stress_covariant": [
+      [
+        0.011014153131728476,
+        5.533102726475714e-22,
+        -0.00017124128881691953,
+        0.0
+      ],
+      [
+        5.533102726475714e-22,
+        -0.012305803995958783,
+        1.3976531509351798e-37,
+        0.0
+      ],
+      [
+        -0.00017124128881691953,
+        1.3976531509351798e-37,
+        -0.012328467964201454,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        -0.012305803995958783
+      ]
+    ],
+    "scope": "Local source and principal tensor of the explicitly added action; not a solved new Einstein history."
+  },
+  "conditional_common_cone": {
+    "epsilon": 0.02,
+    "widths": [
+      0.1,
+      0.1
+    ],
+    "kinetic_eigenvalues": [
+      0.5574644147005163,
+      0.8374207522530691
+    ],
+    "spatial_energy_eigenvalues": [
+      0.5317791348204897,
+      0.5350535890571946,
+      0.5350535890571946,
+      0.5708124818409648,
+      0.5725646863259699,
+      0.5725646863259705
+    ],
+    "speed_squared_in_original_x_frame": [
+      0.6565956737407324,
+      0.9994543321411595
+    ],
+    "speeds_in_original_x_frame": [
+      0.8103059136775026,
+      0.9997271288412451
+    ],
+    "original_metric_null_principal_eigenvalues": [
+      -0.28696205256613305,
+      -0.00030483900428734945
+    ],
+    "sampled_directions": 21,
+    "maximum_characteristic_root_imaginary_part": 0.0,
+    "maximum_characteristic_determinant_residual": 6.345143067363688e-16,
+    "affine_candidate_target_eigenvalues": [
+      0.533888558781224,
+      0.5762488730640778
+    ],
+    "affine_common_null_symbol_error": 0.0,
+    "scope": "Original on-shell initial jet used to test a new action locally. No full perturbed constrained solution or instrument claimed."
+  },
+  "dependency_hashes": {
+    "research_note_352.md": "ee27e9fbba893e7d2f954872b0467bf45df1f2b2af35c66179f86182cb6a7d3d",
+    "research_note_573.md": "0c3205d1137739062c7e00efeb188f61cc0cee2f77db363f5ba6d4ed525c79c5",
+    "research_note_647.md": "093760ac55b2f9fb947c8ba1c067b442e31b36bc8a1107e3946254b77d48e099",
+    "research_note_731.md": "fa743b79a2aa39261477c010231d4c535f63bf5e45b31c27152604327dc9a6df",
+    "joint_gravity_material_coordinates.py": "492cc66a332db08ede6fa046cd69528d146216d87e357a8219dcad863ddc7baa",
+    "joint_dynamic_continuum_reference.py": "7e7a5160fd87c640bc50dc617122036dbddedfcee1edbce53a7327de66202d9b"
+  },
+  "scope": "Conditional incompatibility of promoting the original derivative relational window into a local action while demanding both radial polarizations retain the exact metric cone throughout its support. Affine derivative windows are the allowed positive-target class; a nonzero compact four-label window is excluded. A known k-essence principal-symbol method is applied, not a new general theorem. This is neither failure of relational observables nor quantum-gravity construction, and it does not replace the frozen original action."
+}

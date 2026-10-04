@@ -1,0 +1,60 @@
+{
+  "round": 771,
+  "tests_run": 3,
+  "failures": 0,
+  "errors": 0,
+  "schur_source_contact": {
+    "errors": {
+      "schur_factorization": 2.220446049250313e-16,
+      "smooth_difference_blocks": 1.1102230246251565e-16,
+      "differentiated_congruence": 4.163336342344337e-17,
+      "local_source_contact": 6.938893903907228e-18
+    },
+    "original_source": -0.0023596460269817363,
+    "diagonal_source": -0.018210322365408455,
+    "subtraction_contact": 1.4457826117771889e-18,
+    "change_of_field_contact": 0.01585067633842671,
+    "total_schur_contact": 0.01585067633842671,
+    "scope": "Original full principal block, fixed pairing, arbitrary transverse variation. Smooth local matrix calibration only; no physical state is set to zero in the proof."
+  },
+  "matrix_Hadamard_jets": {
+    "errors": {
+      "matrix_transport_equation": 1.3877787807814457e-17,
+      "sesqui_symmetry": 1.3877787807814457e-17,
+      "coincidence_coefficient": 1.734723475976807e-18,
+      "left_jet": 3.469446951953614e-18,
+      "right_jet": 3.469446951953614e-18,
+      "Synge_rule": 1.734723475976807e-18,
+      "commutator_jet": 2.0816681711721685e-17
+    },
+    "potential_commutator_norm": 0.06960000000000002,
+    "diagonal_v1_trace": 0.12997500000000003,
+    "gradient_v1_trace": [
+      -0.0287,
+      0.0036000000000000034,
+      -0.017,
+      0.0119
+    ],
+    "scope": "Actual finite Hadamard transport calculation for a noncommuting linear matrix potential on flat Lorentz spacetime. It checks universal jet coefficients, not the original 753 background numerically."
+  },
+  "joint_volume_contact": {
+    "errors": {
+      "local_Ward_plus_volume_contact": 2.710505431213761e-20
+    },
+    "uncorrected_Ward": -2.65042716167721e-05,
+    "volume_repair": 2.6504271616772072e-05,
+    "omitted_ghost_residual": -0.0005654907757174283,
+    "wrong_sign_residual": -5.300854323354417e-05,
+    "scalar_Moretti_normalization": true,
+    "scope": "Periodic local-jet/weight calibration with two matrix bundles. It tests the joint volume contact, ghost weight, and scalar normalization; it is not a compact-time physical spacetime or an actual source simulation."
+  },
+  "dependency_hashes": {
+    "research_note_735.md": "43ece0235df1d09dcef1d30c99b2cb2dd2ade100cb6572caf46ded7ac8ffe2b8",
+    "research_note_765.md": "6ce177d199808bd525d904f2aa13bcb2a930beb29ac9f06933f2c931f1cf29a7",
+    "research_note_768.md": "fdc091e03bde167d216a2c1f6f94d030be5a88abe7af2ce1d7d4d309b55d7ca1",
+    "research_note_770.md": "e1bac6efcb34b5e9e8afd0fbbf588e30d2f3d6b9e29eeac30b5ee0b3910f6978",
+    "joint_brst_relative_source.py": "b252f4dedbd832913ad12e6acd32b05117fc85106735f6a3d45118df079538bb",
+    "round771_drafts/research_note_771_working.md": "437c40fd46be249b1bff5e308a205135c80ae5fa3481707aba3b580ab6c68f19"
+  },
+  "scope": "For the original on-shell coupled free state, a local real finite-jet normalization of the complete one-loop tadpole can satisfy the joint infinitesimal background Ward identity. The construction keeps the actual state and full mixed operators, including Schur/pairing contacts. It does not prove interacting QME, full background independence, gauge-fixing independence, finite-strength self-consistency, or the original Q-to-continuum map."
+}

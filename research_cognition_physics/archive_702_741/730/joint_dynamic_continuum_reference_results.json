@@ -1,0 +1,60 @@
+{
+  "round": 730,
+  "tests_run": 3,
+  "failures": 0,
+  "errors": 0,
+  "results": {
+    "original_jets_and_auxiliary_collar": {
+      "original_grid": 8,
+      "point": [
+        0,
+        2,
+        1
+      ],
+      "canonical_momentum_and_CMC_error": 4.440892098500626e-16,
+      "original_initial_jet_error": 4.9711124106011084e-11,
+      "minimum_sampled_metric_eigenvalue": 1.0,
+      "minimum_sampled_F": 1.8625918584906564,
+      "extrinsic_curvature_norm": 18.528354302572954,
+      "actual_point_mass_mixing_time_derivative": 0.06202968257944138,
+      "diagnostic_is_first_jet_collar_not_solved_future_Einstein_evolution": true
+    },
+    "complete_matter_transport": {
+      "all_original_modes_in_two_momentum_calibration": 64,
+      "Nambu_dimension": 128,
+      "max_Clifford_reality_and_transport_error": 1.0758066720440405e-13,
+      "auxiliary_past_covariance_difference": 0.10894255918630805,
+      "transported_vs_instantaneous_ground_difference": 1.575783471111376,
+      "midpoint_96_vs_192_difference": 7.408426755863483e-07,
+      "local_symbol_calibration_only_not_continuum_Hadamard_test": true
+    },
+    "actual_record_and_total_source": {
+      "actual_sterile_mode_occupation": 0.4996750781661937,
+      "nonselective_record_energy_change": 0.5020819232394838,
+      "direct_fixed_state_source": -0.38416404407023197,
+      "preparation_response": -5.85745657199101e-05,
+      "total_record_energy_response": -0.38422261863595186,
+      "finite_difference": -0.38422261867676605,
+      "response_error": 4.08141853647237e-11,
+      "covariance_derivative_error": 6.489078566207736e-10,
+      "gauge_singlet_record_error": 0.0,
+      "preparation_response_cannot_be_dropped": true,
+      "no_instantaneous_extended_detector_or_continuum_limit_claim": true
+    }
+  },
+  "dependency_hashes": {
+    "research_note_573.md": "0c3205d1137739062c7e00efeb188f61cc0cee2f77db363f5ba6d4ed525c79c5",
+    "research_note_598.md": "3cfd675bceca95c6fcca2a72181a52cccb44cc4d5421b61fea0159002d80b8c5",
+    "research_note_630.md": "455eb46ac40df7b2183801d74ab1a9b6205ece0838cd26f81b94471662a18128",
+    "research_note_633.md": "0c9b29f4095de54210140072552348e2d078374052d40d8d871171ed1d22ea9c",
+    "research_note_635.md": "0898992b445a42e566e665340be90d3d12bfc3b59ed7d4ebe462ef5ac346b9df",
+    "research_note_663.md": "8d00d7994de7ee7d3aa42efd38c2526d759c0a561f16852d0219b14a818e856b",
+    "research_note_667.md": "9adc75f83768baaf64798db042cecb72341367decfd2478083d7add646d300c9",
+    "research_note_704.md": "7d91ae9446a0e5a66e06abbaae50a1d216e13e19d7a678d38d6feec6433db3e3",
+    "research_note_729.md": "1eb7543beb487dd1529c0704070735f3bb74e7ef233ea257236d5e9cc1110b77",
+    "joint_gravity_material_coordinates.py": "492cc66a332db08ede6fa046cd69528d146216d87e357a8219dcad863ddc7baa",
+    "joint_fermion_gauss_completion.py": "1de7d9f62d4ea8a5363cbcf2ecfb3149cf06e4e309f820f91dd856e11bc03a3b",
+    "round730_drafts/varying_reference_entry.py": "2e76a2ccf33a9d7c2d36c0611116a33bacafcfb57577c9917b3359bff809c651"
+  },
+  "scope": "Conditional continuum Hadamard reference on the original given smooth positive-F dynamical background, via an auxiliary-past construction that is identical on the target collar; all original matrix masses, connection and self-dual CAR retained. Smooth record differences share the same renormalization. Numeric checks validate original initial jets, local complete-matter time transport and total source bookkeeping only. No lattice-to-continuum theorem, unique reference selection, dynamical quantum Gauss state, autonomous detector or self-consistent semiclassical Einstein solution."
+}

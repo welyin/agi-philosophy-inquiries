@@ -1,0 +1,126 @@
+{
+  "round": 755,
+  "tests_run": 3,
+  "failures": 0,
+  "errors": 0,
+  "Gaussian_center_support": {
+    "exact_small_spectral_cases": 363,
+    "Gaussian_quark_modes": 24,
+    "half_occupied_physical_center_weight": "2796203/8388608",
+    "half_occupied_trace_distance_lower_bound": "5592405/8388608",
+    "lower_bound_float": 0.6666666269302368,
+    "characteristic_formula_error": 3.3306690738754696e-16,
+    "full_Gauss_support_is_stronger_than_center_support": true,
+    "no_actual_Gibbs_covariance_computed": true
+  },
+  "unchanged_complement_pair": {
+    "rows": [
+      {
+        "rest": "vacuum_rest",
+        "minus_center_weight": "1",
+        "plus_center_weight": "0",
+        "at_least_one_distance": "1"
+      },
+      {
+        "rest": "half_filled_rest",
+        "minus_center_weight": "1398101/4194304",
+        "plus_center_weight": "1398101/4194304",
+        "at_least_one_distance": "2796203/4194304"
+      },
+      {
+        "rest": "sharp_lower_bound",
+        "minus_center_weight": "1/2",
+        "plus_center_weight": "1/2",
+        "at_least_one_distance": "1/2"
+      }
+    ],
+    "same_complement_pair_contract_excluded": true,
+    "bosonic_only_dressing_cannot_change_global_center": true,
+    "finite_original_CAR_mapping_assumption_explicit": true,
+    "no_infinite_volume_number_operator_assumed": true
+  },
+  "physical_source_matching_and_records": {
+    "original_modes": 32,
+    "sparse_Fock_support_per_vector": 1,
+    "full_local_group_determinant_error": 2.2934168614624364e-14,
+    "generator_annihilation_norm_square_error": 4.930380657631324e-32,
+    "center_representation_error": 0.0,
+    "instantaneous_bilinear_source_error": 1.7763568394002506e-16,
+    "small_Fock_independent_variance": 1.0,
+    "rows": [
+      {
+        "p": "1/5",
+        "physical_two_sterile_record": [
+          "4/5",
+          "0",
+          "0",
+          "1/5"
+        ],
+        "Gaussian_two_sterile_record": [
+          "16/25",
+          "4/25",
+          "4/25",
+          "1/25"
+        ],
+        "record_total_variation": "8/25",
+        "four_point_Wick_defect": "4/25",
+        "physical_color_Gauss_square": "0",
+        "Gaussian_color_Gauss_square": "128/25"
+      },
+      {
+        "p": "1/2",
+        "physical_two_sterile_record": [
+          "1/2",
+          "0",
+          "0",
+          "1/2"
+        ],
+        "Gaussian_two_sterile_record": [
+          "1/4",
+          "1/4",
+          "1/4",
+          "1/4"
+        ],
+        "record_total_variation": "1/2",
+        "four_point_Wick_defect": "1/4",
+        "physical_color_Gauss_square": "0",
+        "Gaussian_color_Gauss_square": "8"
+      },
+      {
+        "p": "4/5",
+        "physical_two_sterile_record": [
+          "1/5",
+          "0",
+          "0",
+          "4/5"
+        ],
+        "Gaussian_two_sterile_record": [
+          "1/25",
+          "4/25",
+          "4/25",
+          "16/25"
+        ],
+        "record_total_variation": "8/25",
+        "four_point_Wick_defect": "4/25",
+        "physical_color_Gauss_square": "0",
+        "Gaussian_color_Gauss_square": "128/25"
+      }
+    ],
+    "full_original_H_preserves_Gauss_not_the_two_vector_code": true,
+    "no_753_geometry_or_continuum_completion_claim": true,
+    "no_autonomous_instrument_implementation_claim": true
+  },
+  "dependency_hashes": {
+    "research_note_709.md": "88e4ec735fbf84ea6c8cbfb84c01d11eab650deaf200f01450d890895a4082d7",
+    "round710_drafts/residual_phase_entry.md": "6443f8988fa13dcb82fb3817c20c69a5e9b084157121b78e1fc0adf112c043f8",
+    "research_note_728.md": "e7a74326915936289f67881ae753ed6907429846bebc2261ec0e8363fe0080ba",
+    "research_note_730.md": "d3ffb29f466387c0e6d6af03935f2f2e748765afb526aee97da70008127ba56a",
+    "research_note_742.md": "a6d8d83b1cf9fc105f8c0629807dcb53ea6906ef6961f95eb4ada4bc7f8e1191",
+    "research_note_751.md": "1e91e43e3ad4000d99d958e1abb6237f50bfa05093881507ab1b0bfb8748389a",
+    "research_note_753.md": "d7143f6f507771bc4d44813bb53ed8287be6bb63431c667fe37cfc74a1fda50e",
+    "research_note_754.md": "00ea8e42cadd4f7b4532ccd5f49ba8963e78b501fc122ec9237b499ff4be5ea6",
+    "joint_fermion_gauss_completion.py": "1de7d9f62d4ea8a5363cbcf2ecfb3149cf06e4e309f820f91dd856e11bc03a3b",
+    "joint_reference_constraint_strata.py": "cdbd454aac0ed1ad7f105b78e2d6ce491ee49a084816bc70386a7f08c8199b64"
+  },
+  "scope": "Necessary qualification of a finite original closed Gauss CAR bridge, not a new centre theorem. Number-conserving quasifree quark marginals require a neutral pure Slater symbol; fixed-complement two-mode filling cannot both lift faithfully. A full original 32-mode local singlet family matches all instantaneous bilinears but changes actual joint sterile records. No continuum number operator, new action, quantum Einstein constraint solution, autonomous preparation, or exact feedback is asserted."
+}

@@ -1,0 +1,124 @@
+{
+  "round": 749,
+  "tests_run": 2,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "original_all_source_family_and_mean_constraint_diagnostic",
+    "positive_analytic_energy_profile_original_constraint_check"
+  ],
+  "original_family": {
+    "entry_round": 749,
+    "latest_completed_round": 748,
+    "formal_test_count_unchanged": 3434,
+    "inherited_model": "731 original non-flat matter and all initial constraints; prescribed source family.",
+    "additional_candidate_map": "Erase equally weighted +/- source label and average psi, all canonical matter momenta, and conformal shear. This is one explicit map, not all geometric coarse grainings.",
+    "rows": [
+      {
+        "epsilon": 0.04,
+        "prescribed_branches_not_quantum_record_branches": true,
+        "largest_branch_H_constraint_error": 9.86100090472064e-13,
+        "mean_canonical_matter_and_tensor_error": 4.163336342344337e-17,
+        "mean_Gauss_error": 1.0547118733938987e-15,
+        "mean_momentum_error": 1.3877787807814457e-16,
+        "mean_psi_minus_original": 2.520110199677461e-05,
+        "erased_label_mean_H_constraint_defect": 0.0008014405512619671,
+        "defect_divided_by_epsilon_squared": 0.5009003445387294
+      },
+      {
+        "epsilon": 0.02,
+        "prescribed_branches_not_quantum_record_branches": true,
+        "largest_branch_H_constraint_error": 3.780309398848658e-13,
+        "mean_canonical_matter_and_tensor_error": 3.469446951953614e-17,
+        "mean_Gauss_error": 1.0547118733938987e-15,
+        "mean_momentum_error": 1.491862189340054e-16,
+        "mean_psi_minus_original": 6.300433493144908e-06,
+        "erased_label_mean_H_constraint_defect": 0.0002003859441825906,
+        "defect_divided_by_epsilon_squared": 0.5009648604564765
+      },
+      {
+        "epsilon": 0.01,
+        "prescribed_branches_not_quantum_record_branches": true,
+        "largest_branch_H_constraint_error": 4.687361609967411e-13,
+        "mean_canonical_matter_and_tensor_error": 4.163336342344337e-17,
+        "mean_Gauss_error": 1.0547118733938987e-15,
+        "mean_momentum_error": 1.3856103764364747e-16,
+        "mean_psi_minus_original": 1.575118193986036e-06,
+        "erased_label_mean_H_constraint_defect": 5.009809860800907e-05,
+        "defect_divided_by_epsilon_squared": 0.5009809860800907
+      }
+    ],
+    "no_rigorous_continuum_error_certificate": true,
+    "quantum_record_realization_not_claimed": true,
+    "arbitrary_cognitive_principle_refutation_not_claimed": true,
+    "dependency_hashes": {
+      "research_note_634.md": "d213062ed54299f50a8085f56459e9a309d56b1848697360bad94dd8b0554b6c",
+      "research_note_706.md": "9a8950bf7b143e2212800dee8f661a5a791ac07a6a4334191672701977c07730",
+      "research_note_708.md": "b4d0c720179ef5fadc939afde3c37a9ab13abbf553fff8ae8f0f6246885f0599",
+      "research_note_724.md": "93b26ddc7500162e67ad8dbf21e7dadc566e2fa04b536dc5b34927a42d7694de",
+      "research_note_725.md": "23fc527a96eb1443c1931d11126dff4f7686ccbdff85a0385f0149d2c98df114",
+      "research_note_731.md": "fa743b79a2aa39261477c010231d4c535f63bf5e45b31c27152604327dc9a6df",
+      "research_note_741.md": "03fef4677c5b34c85e9978ce3dcdb426e0e8b0b1f6f818e53dcc750b0c7513bf",
+      "research_note_748.md": "9bca1610e7f081d8f023380a061cb92d5721fa8e5601c362615522a864bdf707",
+      "joint_source_constraint_response.py": "5824b88b2da4b76f1caad3a5007a11b9003429bf79685cf32a6c6bb3804f1643"
+    },
+    "next": "Derive the exact second-order correction to this map from731 fields, retain all source/field covariances, and separately test whether the same marked source family comes from an actual record."
+  },
+  "positive_family": {
+    "entry_round": 749,
+    "latest_completed_round": 748,
+    "formal_tests_unchanged": 3434,
+    "inherited_conditions": "731 original smooth non-flat background, C>0,Y>0,A>=0 and fixed matter/CMC data.",
+    "source": "rho_star = 2C+4A psi^-12+4Y psi^-8; energy-only relative profiles +/- epsilon rho_star.",
+    "analytic_identity": "D2 coefficient after averaging psi is S2=10C psi^5+68A psi^-7+52Y psi^-3 > 0.",
+    "physical_constraint_leading_coefficient": "psi^-5 S2 >= 10 C > 0 pointwise.",
+    "analytic_counterexample_scope": "Equal-weight mean of psi and canonical fields is not closed under the original nonlinear constraint, even when every branch is an admissible prescribed-source solution.",
+    "source_from_actual_quantum_record_not_proven": true,
+    "all_geometric_averages_not_ruled_out": true,
+    "conditional_probability_not_physical_collapse": true,
+    "first_response_identity_error": 3.2738256550146616e-12,
+    "leading_coefficient_min": 64.78187442141673,
+    "leading_coefficient_max": 106.10971552871776,
+    "rows": [
+      {
+        "epsilon": 0.004,
+        "branch_equation_error": 2.3449046490571215e-10,
+        "mean_constraint_defect_min": 0.0010367237937169177,
+        "mean_constraint_defect_max": 0.0016983156017431604,
+        "scaled_defect_error": 0.03718189959556639,
+        "mean_psi_shift_min": 7.262012054076727e-05
+      },
+      {
+        "epsilon": 0.002,
+        "branch_equation_error": 1.338287815814037e-11,
+        "mean_constraint_defect_min": 0.00025914085591341614,
+        "mean_constraint_defect_max": 0.0004244738546668771,
+        "scaled_defect_error": 0.009290632872861693,
+        "mean_psi_shift_min": 1.814591458426662e-05
+      },
+      {
+        "epsilon": 0.001,
+        "branch_equation_error": 1.0003903560903896e-12,
+        "mean_constraint_defect_min": 6.478270912366733e-05,
+        "mean_constraint_defect_max": 0.00010611190220382269,
+        "scaled_defect_error": 0.0023222971262697456,
+        "mean_psi_shift_min": 4.535909322922471e-06
+      }
+    ],
+    "next": "Full joint contract must retain source-geometry correlations or alter its coarse map. Establish actual common record realization separately; do not equate labels with instruments."
+  },
+  "dependency_hashes": {
+    "research_note_634.md": "d213062ed54299f50a8085f56459e9a309d56b1848697360bad94dd8b0554b6c",
+    "research_note_706.md": "9a8950bf7b143e2212800dee8f661a5a791ac07a6a4334191672701977c07730",
+    "research_note_708.md": "b4d0c720179ef5fadc939afde3c37a9ab13abbf553fff8ae8f0f6246885f0599",
+    "research_note_724.md": "93b26ddc7500162e67ad8dbf21e7dadc566e2fa04b536dc5b34927a42d7694de",
+    "research_note_725.md": "23fc527a96eb1443c1931d11126dff4f7686ccbdff85a0385f0149d2c98df114",
+    "research_note_731.md": "fa743b79a2aa39261477c010231d4c535f63bf5e45b31c27152604327dc9a6df",
+    "research_note_741.md": "03fef4677c5b34c85e9978ce3dcdb426e0e8b0b1f6f818e53dcc750b0c7513bf",
+    "research_note_748.md": "9bca1610e7f081d8f023380a061cb92d5721fa8e5601c362615522a864bdf707",
+    "joint_source_constraint_response.py": "5824b88b2da4b76f1caad3a5007a11b9003429bf79685cf32a6c6bb3804f1643",
+    "round749_drafts/joint_coarse_source_entry.py": "4e53e038a7dcb2429279bf30866038482d490662a12ca92112e294e6366e5c79",
+    "round749_drafts/positive_constraint_defect.py": "24b2adcd29dbe65da54245ea80bba6f16befbe529846f895d5456f85baaec74c"
+  },
+  "scope": "Within731 original prescribed smooth source initial-data family, averaging conformal psi and canonical matter fields after erasing an equal-weight branch label is not closed under the Hamiltonian constraint. A positive analytic second-order coefficient proves the limited failure; numerical original-background checks calibrate it. This is not a derivation of Einstein dynamics, not a physical collapse claim, not a proof that actual quantum records realize these sources, and not a no-go for all coarse-graining maps. Old634 record/source covariance is reused."
+}

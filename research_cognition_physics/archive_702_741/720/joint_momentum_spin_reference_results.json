@@ -1,0 +1,63 @@
+{
+  "round": 720,
+  "tests_run": 3,
+  "failures": 0,
+  "errors": 0,
+  "results": {
+    "free_massive_reference": {
+      "neutral_masses": [
+        0.1485005386720885,
+        0.27712973851797906
+      ],
+      "max_identity_error": 1.1795799912345263e-14,
+      "spin_x_difference_at_kz_01_04_1": [
+        0.29200661592169297,
+        0.570946353363914,
+        0.6531118838106187
+      ],
+      "real_structure_preserved": true,
+      "exactly_original_Dirac_and_Majorana": true
+    },
+    "records_locality_and_geometry": {
+      "max_transport_error": 1.3472099245966595e-10,
+      "original_record_energy": 0.5454271044351767,
+      "unchanged_record_wrong_poststate_opnorm": 0.3131113055569322,
+      "fixed_direction_localization_commutator_block": 0.4793069429190189,
+      "geometry_derivative_finite_difference": -0.03162380118326702,
+      "transported_energy_derivative_term": -0.029851364512472715,
+      "actual_instrument_derivative_term": -0.0017724366971105525,
+      "omitted_connection_source_opnorm": 0.47030119991784286,
+      "source_identity_error": 1.3472099245966595e-10,
+      "genuine_two_momentum_CAR_record": true,
+      "full_fock_unitary_in_infinite_volume_not_assumed": true
+    },
+    "original_nonuniform_profiles": {
+      "common_complex_commutant_dimension": 2,
+      "smallest_nonzero_commutant_singular_value": 0.12862919984589052,
+      "mass_sector_Clifford_gram_errors": [
+        1.879379689857294e-15,
+        2.6449109941416137e-15
+      ],
+      "profile_amplitude": 0.17,
+      "profile_wavevector": [
+        0.21,
+        0.16,
+        0.13
+      ],
+      "exact_Fourier_compression_commutator_opnorm": 0.01648317411540744,
+      "original_radial_mass_path_error": 5.721958498152797e-17,
+      "witness_is_matrix_element_of_continuum_operator": true,
+      "no_claim_all_adapted_or_orbital_references_excluded": true
+    }
+  },
+  "dependency_hashes": {
+    "joint_continuum_record_sources.py": "6a62e142555a6b5ff30dd384df55c318f75e0d90f8ff9f4040ca1c49efa2173d",
+    "joint_continuum_record_sources_results.json": "8d0a55dfbf819a532f9e822cf6328ec814a7d28d1273bd248f97217bb1ab09c1",
+    "round720_drafts/spin_propagation_entry.py": "41551fbdeb87f5cb9113451693ffe1e2edd327b2f69e044eb0efa24a3f081c0b",
+    "round720_drafts/spin_propagation_entry_results.json": "ea56b6761e321cb7220d90740eca2ad3b07cc9039293ba102e78abbaafdcccd1",
+    "joint_local_relational_record.py": "a825516c16f5039df08e9ae626f8644772834bcc47f1ab8b8d5e959db1b16f89",
+    "research_note_633.md": "0c9b29f4095de54210140072552348e2d078374052d40d8d871171ed1d22ea9c",
+    "research_note_719.md": "be4662b3f03e67f1ed8a1471f3f78f7b59d3462af48edc21eb775f1d60c9516d"
+  },
+  "scope": "Original constant-background neutral BdG: exact massive FW spin, transported CAR record and geometry; no fixed translation-invariant SU2 reference for every original radial mass profile. Not a full interacting or gravitational no-go."
+}

@@ -1,0 +1,150 @@
+{
+  "round": 754,
+  "tests_run": 3,
+  "failures": 0,
+  "errors": 0,
+  "all_color_Gauss_and_internal_balance": {
+    "exact_gap_certificate": {
+      "zero_mode_gap_strict_lower": "1/100",
+      "exact_LDL_pivots": [
+        "2957/40000",
+        "777/8000",
+        "6801/40000",
+        "129/4000",
+        "1527/20000",
+        "1731/40000",
+        "1731/40000",
+        "142347/2267000"
+      ],
+      "connection_squared_norm_bound": "2131/10000",
+      "nonzero_integer_mode_gap_lower": "1/4",
+      "all_fourier_modes_covered_analytically": true
+    },
+    "color_solver": {
+      "residual": 1.0286910212542466e-15,
+      "xi_max": 0.06137061501777598,
+      "sampled_symbol_min_eigenvalue": 0.030634076110475996
+    },
+    "electroweak_Gauss_error": 1.3205582460873444e-14,
+    "color_Gauss_error": 1.0286910212542466e-15,
+    "prescribed_total_color": [
+      -2.9324047866757003e-18,
+      0.0,
+      1.0000000000000215,
+      0.0,
+      3.8567497737799975e-18,
+      0.0,
+      0.0,
+      0.5773502691896126
+    ],
+    "internal_gauge_total_color": [
+      3.364695437972322e-17,
+      3.3175509290302817e-37,
+      -0.9999999999999877,
+      2.8752108051595774e-36,
+      -3.645086724470015e-18,
+      1.0280952097776132e-37,
+      3.33680571853383e-19,
+      -0.5773502691896285
+    ],
+    "total_momentum_before": [
+      0.7441503985330041,
+      -0.5358045369402703,
+      0.21868592660910774
+    ],
+    "total_momentum_after": [
+      -2.443808776078398e-14,
+      -6.955270510526115e-14,
+      1.0378800506927625e-15
+    ],
+    "inherited_counterflow_coefficients": [
+      -15.040742682205378,
+      9.62086577001528,
+      1.3587364090558678
+    ],
+    "inherited_counterflow_determinant": -0.0029399330541521078,
+    "two_mode_quantum_charge_difference": [
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5773502691896258
+    ],
+    "numeric_J_rho_are_prescribed_not_claimed_quantum": true
+  },
+  "full_prescribed_source_constraints": {
+    "rows": [
+      {
+        "epsilon": 0.1,
+        "electroweak_Gauss_error": 1.3257624165152748e-15,
+        "color_Gauss_error": 3.3133218391157016e-16,
+        "total_momentum_error": 1.4224732503009818e-16,
+        "full_Einstein_constraint_error": 9.716893956124295e-12,
+        "psi_change": 0.002492449814073483,
+        "C_min": 1.9970571497157616,
+        "full_electric_Y_change": 0.0011068119867945203,
+        "error_if_extra_energy_omitted": 0.0029967131374974976
+      },
+      {
+        "epsilon": 0.05,
+        "electroweak_Gauss_error": 1.7650811368064012e-15,
+        "color_Gauss_error": 2.5726762300365413e-16,
+        "total_momentum_error": 1.457167719820518e-16,
+        "full_Einstein_constraint_error": 4.476419235288631e-13,
+        "psi_change": 0.0012127761358052824,
+        "C_min": 1.9985460242945405,
+        "full_electric_Y_change": 0.0005343104275328248,
+        "error_if_extra_energy_omitted": 0.0014983565688426737
+      },
+      {
+        "epsilon": -0.05,
+        "electroweak_Gauss_error": 1.2880321809127793e-15,
+        "color_Gauss_error": 4.2113122884768206e-16,
+        "total_momentum_error": 1.3097162243624894e-16,
+        "full_Einstein_constraint_error": 3.8902214782865485e-13,
+        "psi_change": 0.0011425231217119247,
+        "C_min": 2.000548839190984,
+        "full_electric_Y_change": 0.000496119295803954,
+        "error_if_extra_energy_omitted": 0.0014983565689374867
+      }
+    ],
+    "fixed_original_nonzero_color_connection": true,
+    "finite_strength_sources_prescribed_not_self_consistent_quantum": true
+  },
+  "same_source_first_order_response": {
+    "response_max": 0.023564075751047738,
+    "equation_residual": 7.431277815328485e-13,
+    "rows": [
+      {
+        "epsilon": 0.02,
+        "centered_derivative_error": 1.7814272431429523e-06,
+        "remainder_over_epsilon_squared": 0.01419943993168337
+      },
+      {
+        "epsilon": 0.01,
+        "centered_derivative_error": 4.453806558904483e-07,
+        "remainder_over_epsilon_squared": 0.014243768292709446
+      },
+      {
+        "epsilon": 0.005,
+        "centered_derivative_error": 1.1134666098172596e-07,
+        "remainder_over_epsilon_squared": 0.014265894776776178
+      }
+    ],
+    "absolute_quantum_feedback_and_state_preparation_not_computed": true
+  },
+  "dependency_hashes": {
+    "research_note_731.md": "fa743b79a2aa39261477c010231d4c535f63bf5e45b31c27152604327dc9a6df",
+    "research_note_732.md": "e3832fdc7ea50502b49c6aa9b41527a899e6228d78705579413291264ea26ead",
+    "research_note_735.md": "43ece0235df1d09dcef1d30c99b2cb2dd2ade100cb6572caf46ded7ac8ffe2b8",
+    "research_note_741.md": "03fef4677c5b34c85e9978ce3dcdb426e0e8b0b1f6f818e53dcc750b0c7513bf",
+    "research_note_753.md": "d7143f6f507771bc4d44813bb53ed8287be6bb63431c667fe37cfc74a1fda50e",
+    "joint_source_constraint_response.py": "5824b88b2da4b76f1caad3a5007a11b9003429bf79685cf32a6c6bb3804f1643",
+    "joint_reference_constraint_strata.py": "cdbd454aac0ed1ad7f105b78e2d6ce491ee49a084816bc70386a7f08c8199b64",
+    "joint_gauss_einstein_initial_data.py": "8c600a6f4d6cdee75aa2240c8ad650402c69ab791aaed4380770c8ab119c6cb5"
+  },
+  "scope": "Original753 nonzero color connection admits a proven all-mode covariant Gauss inverse, including nonzero color means. Original731 counterflows and conformal solve complete all prescribed smooth initial sources, with full internal cost. Numerics test specified smooth diagnostics, not a computed continuum quantum stress. A separately proven finite-rank Hadamard state comparison gives a genuine nonzero color source; inherited Ward and first-order response tools apply conditionally. No full quantum-gravity state, exact semiclassical feedback or independent Einstein emergence."
+}

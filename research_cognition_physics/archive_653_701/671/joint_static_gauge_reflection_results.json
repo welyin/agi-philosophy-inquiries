@@ -1,0 +1,97 @@
+{
+  "date": "2026-10-02",
+  "round": 671,
+  "tests_run": 2,
+  "failures": 0,
+  "errors": 0,
+  "static_matrix_spectral_density": {
+    "m0": 0.73,
+    "spatial_spin_internal_dimension": 256,
+    "original_plaquette_defect": 0.07922334444953111,
+    "B_C_commutator": 0.07834394922385782,
+    "matrix_pencil_identity_error": 5.329070518200751e-15,
+    "rows": [
+      {
+        "energy": 0.6,
+        "active_density_rank": 0,
+        "distance_from_threshold": 0.4000633908484858,
+        "minimum_positive_minus_weight": null,
+        "minimum_positive_plus_weight": null,
+        "density_hermiticity_error": 0.0,
+        "branch_jump_errors": [
+          4.030695627283375e-06,
+          8.061391255667206e-07
+        ]
+      },
+      {
+        "energy": 0.9,
+        "active_density_rank": 120,
+        "distance_from_threshold": 0.06108594733921768,
+        "minimum_positive_minus_weight": 0.12218281858185123,
+        "minimum_positive_plus_weight": 0.12218281858185215,
+        "density_hermiticity_error": 3.3325771748856727e-16,
+        "branch_jump_errors": [
+          1.868242512925722e-05,
+          3.736504268214702e-06
+        ]
+      },
+      {
+        "energy": 1.3,
+        "active_density_rank": 176,
+        "distance_from_threshold": 0.006973821052692841,
+        "minimum_positive_minus_weight": 0.034433045214231524,
+        "minimum_positive_plus_weight": 0.03443304521423364,
+        "density_hermiticity_error": 9.189778455511335e-16,
+        "branch_jump_errors": [
+          0.0005006427952183312,
+          0.00010012856149099747
+        ]
+      },
+      {
+        "energy": 1.8,
+        "active_density_rank": 256,
+        "distance_from_threshold": 0.6051355152113143,
+        "minimum_positive_minus_weight": 0.1345937743944724,
+        "minimum_positive_plus_weight": 0.13459377439447387,
+        "density_hermiticity_error": 3.337167946540778e-16,
+        "branch_jump_errors": [
+          6.748157633787896e-12,
+          2.717840018828858e-13
+        ]
+      }
+    ],
+    "branch_spectral_positivity_is_analytic_not_inferred_from_sampled_energies": true
+  },
+  "actual_joint_static_reflection": {
+    "nx": 2,
+    "ny": 2,
+    "nt": 4,
+    "m0": 1.0,
+    "mass_scale": 0.37,
+    "Wilson_gap": 0.9882520817333512,
+    "action_cross_minimum": -4.284135232436121e-16,
+    "action_cross_hermiticity_error": 1.1657341758564144e-15,
+    "physical_mass_Gram_minimum": -6.347395864692497e-17,
+    "physical_mass_Gram_hermiticity_error": 3.0331306570489533e-15,
+    "auxiliary_sample_minimum": 0.003030689666996501,
+    "auxiliary_sample_hermiticity_error": 3.9782303319483e-17,
+    "combined_sample_minimum": 0.0010309579697340822,
+    "auxiliary_reference": [
+      0.14549425183628087,
+      0.30010985266250206
+    ],
+    "sample_not_complete_S9_integral_or_dynamic_gauge_integral": true
+  },
+  "dependency_hashes": {
+    "joint_nonflat_mass_measure.py": "74acab6930bbe410feb48295b6cc10e24df46740716e00c3d7ba8059f6b350ca",
+    "joint_mass_auxiliary_reflection.py": "c133c6d1f2b57c9e2153b584bf3ae74d0d703b8daac5f91dafd105a1e6d6cd0a",
+    "research_note_605.md": "343ce7eb258a66fe4d202b565e7f9c5d4d05a19bf555a57c72f0057459b4adff",
+    "research_note_660.md": "f5d21ba2c9e12171b80c43a25b692d1caf7754c681122398713c575563516f1a",
+    "research_note_661.md": "1dc917fee6cb71ef0a3b7d3e65b159c6a9503e8d5305a37e1fa3f87ef286f44c",
+    "research_note_670.md": "0568a4f381d5d04f16121c6cf28c024d3f6d46e94b7250f0924cc57510c27147",
+    "round671_drafts/magnetic_reflection_probe.py": "aa0cf48d3bec427abbf77a0f5534caa1de7f7cfffd2d28d682bf941e597406c9",
+    "round671_drafts/magnetic_reflection_probe_results.json": "2f7c9cc18b5bf497d64509da803f4cc1649502df4a351cb9a73721a0f83f5b00"
+  },
+  "scope": "Finite static spatial gauge backgrounds in temporal gauge, original Wilson/overlap at 0<m0<=1 with finite AP kernel nonsingular. Matrix spectral density extends the reflection argument beyond commuting spatial momenta. Original auxiliary/physical mass functional is conditionally unnormalized RP; strict normalization still requires nonzero partition function. No dynamic gauge path integral, original Gibbs/instrument identity, continuum or quantum GR completion.",
+  "all_checks_passed": true
+}

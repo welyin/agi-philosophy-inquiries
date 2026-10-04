@@ -1,0 +1,101 @@
+{
+  "date": "2026-10-02",
+  "round": 670,
+  "tests_run": 2,
+  "failures": 0,
+  "errors": 0,
+  "nonflat_joint_dictionary": {
+    "sites": 4,
+    "internal_channels": 16,
+    "nonabelian_plaquette_defect": 0.206418365813443,
+    "link_commutator_norm": 0.011075671821036342,
+    "Wilson_gap": 0.9362484374615682,
+    "mass_scale": 0.37,
+    "complete_signed_weight": [
+      1.498267235216947e-11,
+      7.270142102516845e-27
+    ],
+    "errors": {
+      "kernel": 3.1086244689504383e-15,
+      "signed_weight": 2.5220226026742838e-14,
+      "physical_two_point": 1.4528658640935888e-15,
+      "mass_source": 9.76944834106891e-16,
+      "frame_weight": 1.339068643598865e-14,
+      "frame_two_point": 8.378552767209547e-16,
+      "local_weight": 3.1494492714586674e-15,
+      "local_two_point": 2.2826834346092555e-15
+    }
+  },
+  "physical_massless_zero_extension": {
+    "theta": 0.5235987755982988,
+    "mass_scale": 0.37,
+    "Wilson_gap": 1.0,
+    "massless_Kl_minimum": 1.2246467991473532e-16,
+    "massive_Nambu_minimum": 0.001296140937228835,
+    "exact_zero_signed_weight": [
+      2.0591707418105968e-10,
+      -9.909855523755317e-27
+    ],
+    "physical_covariance_norm": 1542.0607010547062,
+    "nearby_rows": [
+      {
+        "offset": 0.01,
+        "Kl_minimum": 0.029995500202495345,
+        "inverse_coordinate_norm": 7.702771640746536,
+        "signed_weight": [
+          6.652060134106744e-08,
+          -1.270050261161309e-25
+        ],
+        "local_weight_error": 4.662957525782757e-15,
+        "local_two_point_error": 1.421139596306519e-14
+      },
+      {
+        "offset": 0.001,
+        "Kl_minimum": 0.002999995500002016,
+        "inverse_coordinate_norm": 7.6778721196729895,
+        "signed_weight": [
+          3.37866541165573e-10,
+          1.4514960083230734e-28
+        ],
+        "local_weight_error": 5.570153113296983e-16,
+        "local_two_point_error": 2.474385137973768e-13
+      },
+      {
+        "offset": 0.0001,
+        "Kl_minimum": 0.0002999999954996225,
+        "inverse_coordinate_norm": 7.675352487878356,
+        "signed_weight": [
+          1.2137358395511815e-10,
+          -1.339102174352844e-26
+        ],
+        "local_weight_error": 8.980327101669674e-16,
+        "local_two_point_error": 1.2803519527514995e-13
+      }
+    ],
+    "zero_mode_projector_map_norm": 7.675072199026104,
+    "zero_mode_triangular_error": 2.220446049250313e-16,
+    "zero_mode_local_weight_error": 2.4459170159859794e-15,
+    "zero_mode_local_two_point_error": 2.8721599054500407e-13,
+    "cofactor_error": 6.919245385778411e-22,
+    "holonomy_log_source": [
+      -4654.4676429145475,
+      7.396575186939584e-11
+    ],
+    "source_finite_difference_error": 8.724103281650783e-06,
+    "mass_source_error": 3.0380168280367116e-10,
+    "inverse_Kl_not_required_for_actual_observation_map_or_generating_polynomial": true,
+    "global_normalization_or_index_change_not_proved": true
+  },
+  "dependency_hashes": {
+    "joint_mass_auxiliary_reflection.py": "c133c6d1f2b57c9e2153b584bf3ae74d0d703b8daac5f91dafd105a1e6d6cd0a",
+    "joint_local_mirror_process.py": "26c21c25cb9457d1f619d6f0f9a33569ba3114751d39353374b85cf75411aa15",
+    "joint_subgroup_measure_source.py": "cc1245f860509bb9b913cb0c28b340396f47a0b5d208f5af1364770b16acff7e",
+    "research_note_660.md": "f5d21ba2c9e12171b80c43a25b692d1caf7754c681122398713c575563516f1a",
+    "research_note_668.md": "3291bfa3926ddc5f72431f989b4c6378d8c942936aeb1069fe69328f059f9023",
+    "research_note_669.md": "26ee939612aed4dfad882e8ad80ca317a8f0334af4c3cfe5291bf7d6b3f41c84",
+    "round670_drafts/nonflat_gauge_probe.py": "47bdab934bb38d7fc1f798e52eb70a4eb4e9c5f13bb545222dc4e258689511f6",
+    "round670_drafts/nonflat_gauge_probe_results.json": "746cb7eb8cd32fabf171104250a232c2d66e4e68f7532ea63fb862322c36f27b"
+  },
+  "scope": "Same finite index-zero Wilson-gap patch: full non-Abelian original SM links, original masses and physical-source polynomial share covariance and frame cancellation. The apparent inverse massless Weyl kinetic block in the actual observation map cancels exactly using the original chiral pairing; the projector expression extends across its zero. An original massive holonomy witness has nonzero weight there. No all-background nonzero weight, interacting RP, complete Gauss process identity, continuum or quantum GR claim.",
+  "all_checks_passed": true
+}

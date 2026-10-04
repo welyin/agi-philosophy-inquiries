@@ -1,0 +1,155 @@
+{
+  "date": "2026-10-03",
+  "round": 708,
+  "tests_run": 3,
+  "failures": 0,
+  "errors": 0,
+  "geometry_and_budget": {
+    "rows": [
+      {
+        "nodes": 3,
+        "Z": 0.16189694559252354,
+        "P2": 0.10909301177045597,
+        "gamma": 3.0181821686284094,
+        "actual_kraus_cost": 0.05663678157022352,
+        "predicted_cost": 0.05663678156833417,
+        "gradient_error": 2.4067858817033994e-11,
+        "budget_error": 1.8893497877314758e-12
+      },
+      {
+        "nodes": 4,
+        "Z": 0.12482258459135798,
+        "P2": 0.15140965451477856,
+        "gamma": 4.02523494241913,
+        "actual_kraus_cost": 0.07614637860723772,
+        "predicted_cost": 0.0761463786133044,
+        "gradient_error": 3.3661962106634746e-12,
+        "budget_error": 6.06667494018609e-12
+      },
+      {
+        "nodes": 7,
+        "Z": 0.35033777232412394,
+        "P2": 0.3542311552426526,
+        "gamma": 7.059038525873776,
+        "actual_kraus_cost": 0.12281519514748294,
+        "predicted_cost": 0.12281519514602227,
+        "gradient_error": 2.7748470188271313e-11,
+        "budget_error": 1.460678800135895e-12
+      }
+    ],
+    "maximum_gradient_error": 2.7748470188271313e-11,
+    "maximum_budget_error": 6.06667494018609e-12
+  },
+  "mass_and_common_witness": {
+    "original_modes": 128,
+    "coefficient_gram_eigenvalues": [
+      0.20840000000000006,
+      22.357200000000006,
+      22.357200000000006,
+      22.35720000000001,
+      22.35720000000001
+    ],
+    "full_Dirac_Majorana_contrast": 6.019180719677193,
+    "covariance_prediction": 6.0191807196771965,
+    "covariance_error": 3.552713678800501e-15,
+    "majorana_error": 0.0,
+    "singlet_mass_coefficient_squared": 0.20840000000000006,
+    "witnesses": [
+      {
+        "axis": "Higgs",
+        "count": 4,
+        "amplitude": 4.875173211549825,
+        "Z": 0.0,
+        "P2": 0.0,
+        "gamma": 4.0,
+        "cost": 0.07656249999999999,
+        "majorana_contrast_squared": 0.0,
+        "average_mass_block_norm": 0.0,
+        "joint_cost_error": 0.0
+      },
+      {
+        "axis": "singlet",
+        "count": 4,
+        "amplitude": 4.875173211549825,
+        "Z": 0.0,
+        "P2": 11.650970763919538,
+        "gamma": 5.941828460653257,
+        "cost": 0.11373031037969124,
+        "majorana_contrast_squared": 0.6070155768002078,
+        "average_mass_block_norm": 0.0,
+        "joint_cost_error": 4.163336342344337e-17
+      }
+    ],
+    "equal_aggregate_error": 0.0,
+    "exact_model_parameter_status": "inherited diagnostic Y, not empirical fit"
+  },
+  "moment_hierarchy": {
+    "laplacian": [
+      {
+        "k": 1,
+        "geodesic_difference": 0.2195846143804303,
+        "analytic": 0.21958460840275565,
+        "error": 5.977674660817556e-09
+      },
+      {
+        "k": 2,
+        "geodesic_difference": 2.138866121020877,
+        "analytic": 2.1388661127124875,
+        "error": 8.308389531919147e-09
+      },
+      {
+        "k": 3,
+        "geodesic_difference": 1.6450441991250342,
+        "analytic": 1.6450441885586478,
+        "error": 1.0566386432486752e-08
+      },
+      {
+        "k": 4,
+        "geodesic_difference": 0.8589084957589393,
+        "analytic": 0.858908405954762,
+        "error": 8.98041773167435e-08
+      }
+    ],
+    "same_first_two_moments": [
+      {
+        "nodes": 8,
+        "Z": 0.0,
+        "P2": 2.0888807146885497,
+        "P4": 2.181711320098873,
+        "gamma_P2": 9.809997072153449,
+        "independent_gradient_error": 1.0579448428416072e-10
+      },
+      {
+        "nodes": 8,
+        "Z": 0.0,
+        "P2": 2.0888807146885497,
+        "P4": 1.0908556600494366,
+        "gamma_P2": 9.082759965453823,
+        "independent_gradient_error": 1.351311951225398e-09
+      }
+    ],
+    "aggregate_error": 0.0,
+    "no_claim_all_finite_state_compressions_fail": true
+  },
+  "dependency_hashes": {
+    "research_note_574.md": "23d72d666f593f845577712e761ab00dec1d10a56955b7da5fbb22a5ca68ef19",
+    "research_note_598.md": "3cfd675bceca95c6fcca2a72181a52cccb44cc4d5421b61fea0159002d80b8c5",
+    "research_note_642.md": "8fefb96c5e63430f1c0be629ab4cf3a87623f9f40d18753f8b4c4f83f214881f",
+    "research_note_707.md": "2f323ccb30afb0cf977015b7231afc18c245c570d3334ee8e1cedd66cf5d66e1",
+    "joint_geodesic_spatial_block.py": "7b083a963dd7b3f6a4339e55888f7217a9a3dcf25a1097a14c849eb0b2f60ae1",
+    "joint_fermion_gauss_completion.py": "1de7d9f62d4ea8a5363cbcf2ecfb3149cf06e4e309f820f91dd856e11bc03a3b",
+    "round708_drafts/nested_mass_entry.md": "20338b482bfe120f57052b694d0caf2257204c982040b970d075deb33864bae9",
+    "round708_drafts/nested_mass_entry_results.json": "fdc9e3cfb325ea972b8a5b0a7ba9712ca5a6dc287bfa82b2b00db78162f00eec"
+  },
+  "scope": {
+    "original_H5_and_all_CAR": true,
+    "fixed_graph_and_equal_positive_node_weights": true,
+    "full_H_singlet_double_commutator_analytic": true,
+    "mass_statements_are_original_onsite_blocks": true,
+    "target_information_contract_is_additional": true,
+    "physical_spatial_dimension_not_inferred": true,
+    "no_full_Gibbs_spectrum_or_autonomous_apparatus": true,
+    "no_universal_cognition_no_go": true
+  },
+  "all_checks_passed": true
+}

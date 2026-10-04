@@ -1,0 +1,126 @@
+{
+  "date": "2026-10-02",
+  "entry_round": 682,
+  "not_formal_round": true,
+  "omega": 0.7,
+  "kappa": 0.8,
+  "quantum_precision_spatial_part": [
+    [
+      1.29,
+      -0.8
+    ],
+    [
+      -0.8,
+      1.29
+    ]
+  ],
+  "original_complete_model_not_replaced": true,
+  "frequency_source_checks": [
+    {
+      "frequency": 0.0,
+      "boundary_covariance": 1.2596426130260716,
+      "conditional_mean_covariance": 0.4844488145764593,
+      "conditional_noise": 0.7751937984496123,
+      "complete_bulk_covariance": 1.2596426130260716,
+      "full_source": 0.08800019529342837,
+      "mapped_source": 0.08800019529342837,
+      "omitted_contact": 0.08562015503875968
+    },
+    {
+      "frequency": 0.3,
+      "boundary_covariance": 1.091426763682379,
+      "conditional_mean_covariance": 0.3667890825229587,
+      "conditional_noise": 0.7246376811594202,
+      "complete_bulk_covariance": 1.091426763682379,
+      "full_source": 0.08102024675735525,
+      "mapped_source": 0.08102024675735527,
+      "omitted_contact": 0.08003623188405797
+    },
+    {
+      "frequency": 1.0,
+      "boundary_covariance": 0.4973827675332856,
+      "conditional_mean_covariance": 0.060701544825861986,
+      "conditional_noise": 0.4366812227074236,
+      "complete_bulk_covariance": 0.4973827675332856,
+      "full_source": 0.049308442475185156,
+      "mapped_source": 0.049308442475185156,
+      "omitted_contact": 0.04823144104803493
+    },
+    {
+      "frequency": 2.0,
+      "boundary_covariance": 0.19346038084998227,
+      "conditional_mean_covariance": 0.004424464025785666,
+      "conditional_noise": 0.1890359168241966,
+      "complete_bulk_covariance": 0.19346038084998227,
+      "full_source": 0.023322069477510685,
+      "mapped_source": 0.023322069477510685,
+      "omitted_contact": 0.020879017013232512
+    }
+  ],
+  "conditional_mean_witness": {
+    "times": [
+      0.8,
+      1.6,
+      2.4000000000000004
+    ],
+    "coefficients": [
+      0.17968560689549581,
+      -0.8857797145397749,
+      1.0
+    ],
+    "exact_negative_norm": -1.5838262046252624e-05,
+    "computed_negative_norm": -1.583826204625314e-05,
+    "noise_contribution": 1.5838262046249398e-05,
+    "full_quantum_norm": -1.3720894485808108e-18,
+    "full_RP_eigenvalues": [
+      4.155356780424782e-18,
+      0.0012923880706591287,
+      0.18463543704212754
+    ]
+  },
+  "boundary_preserving_counterterm": {
+    "frequency_checks": [
+      {
+        "frequency": 0.0,
+        "positive_precision_minimum": 0.3237616095523963,
+        "unchanged_boundary": 2.0408163265306127,
+        "new_bulk": 1.5600759864068217
+      },
+      {
+        "frequency": 0.3,
+        "positive_precision_minimum": 0.3944105293694497,
+        "unchanged_boundary": 1.7241379310344829,
+        "new_bulk": 1.3040581158696014
+      },
+      {
+        "frequency": 1.0,
+        "positive_precision_minimum": 1.1884673373207733,
+        "unchanged_boundary": 0.6711409395973154,
+        "new_bulk": 0.5185885473851151
+      },
+      {
+        "frequency": 2.0,
+        "positive_precision_minimum": 4.081431066218404,
+        "unchanged_boundary": 0.22271714922048996,
+        "new_bulk": 0.19412948694083831
+      }
+    ],
+    "times": [
+      3.181167220254806,
+      6.362334440509612
+    ],
+    "coefficients": [
+      0.10787123257458282,
+      -1.0
+    ],
+    "analytic_bulk_negative_norm": -3.7801199305117033e-06,
+    "computed_bulk_negative_norm": -3.780119930511959e-06,
+    "full_dynamical_RP_not_restored_by_noise_if_boundary_is_pinned": true
+  },
+  "dependency_hashes": {
+    "research_note_643.md": "802e0a296b0e1f23360905ef22846c1e6414f7e3a5e0d955f2e2271cc9bb26f5",
+    "research_note_678.md": "21c83fddedb2a0d61c29132b1e98d650047e662661ad5d715182af2770c043c4",
+    "research_note_681.md": "d451f0e4e75cbc200a0fe769830bcff8d046376a5902efa6317bbdacfb538ad2"
+  },
+  "scope": "Declared two-mode free quantum bulk: conditional noise and full source contact are necessary in this mapping; boundary action changes. A separately defined boundary-preserving nonlocal counterterm is Euclidean positive but not reflection positive. Not original Gauss/S9, not chiral or gravity theorem."
+}

@@ -12,10 +12,10 @@
 
 | 已有成果 | 本轮如何接续 |
 |---|---|
-| [222轮](../archive_001_222/research_process/research_note_222.md)的P⇔L及[阶段论文](../可组合认知结构与复量子状态空间_阶段论文.md)的复状态锥重建 | 直接作为起点，不重新筛选数域 |
-| [178轮](../archive_001_222/research_process/research_note_178.md)、[183轮](../archive_001_222/research_process/research_note_183.md)、[189轮](../archive_001_222/research_process/research_note_189.md)的重建前提账目 | 逐项核对状态结论究竟能支持哪些过程结论 |
-| [195轮](../archive_001_222/research_process/research_note_195.md)已经指出几何不固定H | 本轮不把这个反例记为新发现；将其放进时间合同的验收 |
-| [214轮](../archive_001_222/research_process/research_note_214.md)审计Jordan–Lie相容；[215轮](../archive_001_222/research_process/research_note_215.md)、[216轮](../archive_001_222/research_process/research_note_216.md)讨论问题到动作的对应 | 本轮从已重建的全体密度矩阵及实际可逆过程出发，接入态空间自同构分类；不先假设交换子就是运动规则 |
+| [222轮](../archive_217_222/research_note_222.md)的P⇔L及[阶段论文](../可组合认知结构与复量子状态空间_阶段论文.md)的复状态锥重建 | 直接作为起点，不重新筛选数域 |
+| [178轮](../archive_171_189/research_note_178.md)、[183轮](../archive_171_189/research_note_183.md)、[189轮](../archive_171_189/research_note_189.md)的重建前提账目 | 逐项核对状态结论究竟能支持哪些过程结论 |
+| [195轮](../archive_190_204/research_note_195.md)已经指出几何不固定H | 本轮不把这个反例记为新发现；将其放进时间合同的验收 |
+| [214轮](../archive_205_216/research_note_214.md)审计Jordan–Lie相容；[215轮](../archive_205_216/research_note_215.md)、[216轮](../archive_205_216/research_note_216.md)讨论问题到动作的对应 | 本轮从已重建的全体密度矩阵及实际可逆过程出发，接入态空间自同构分类；不先假设交换子就是运动规则 |
 
 增量是**不额外预设酉演化，先从混合相容的可逆过程推出其酉表示，再审计连续时间所需的新增输入**。分类定理归文献作者；有限维导子计算和数值检验用于落实本项目的推理链，不宣称重新发现薛定谔方程。
 
@@ -193,7 +193,7 @@ $$
 
 取F＝diag(1,1/2)，考虑ρ↦FρF†／Tr(FρF†)。它在整个态集上可逆，也保持纯态；但先混合两个基态再条件化得到diag(4/5,1/5)，先分别条件化再等权混合得到I／2，迹距离为3/10。
 
-这是[182轮](../archive_001_222/research_process/research_note_182.md)已指出的归一化过滤与确定性操作之别在当前脚本中的回归见证，不记为新的数域排除。合法的未归一化成功分支和成功概率应一起保留。
+这是[182轮](../archive_171_189/research_note_182.md)已指出的归一化过滤与确定性操作之别在当前脚本中的回归见证，不记为新的数域排除。合法的未归一化成功分支和成功概率应一起保留。
 
 ### 7.4 不可逆生成元不属于本定理
 
@@ -203,7 +203,7 @@ $$
 
 ## 8 数值结果与证据等级
 
-[代码](reversible_dynamics_bridge.py)仅使用现有Python 3.12.14与NumPy 2.3.5。[结果](reversible_dynamics_bridge_results.json)包含10项通过的检查。
+[代码](223/reversible_dynamics_bridge.py)仅使用现有Python 3.12.14与NumPy 2.3.5。[结果](223/reversible_dynamics_bridge_results.json)包含10项通过的检查。
 
 | d | 生成元线性秩（去掉恒等项） | 矩阵单位法恢复K误差 | 中心差分恢复K误差 | 去极化到交换子空间距离 |
 |---|---:|---:|---:|---:|

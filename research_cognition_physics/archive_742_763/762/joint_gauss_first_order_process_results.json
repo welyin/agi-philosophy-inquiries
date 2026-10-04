@@ -1,0 +1,113 @@
+{
+  "round": 762,
+  "tests_run": 3,
+  "failures": 0,
+  "errors": 0,
+  "gauss_initial_jet": {
+    "group_jet_error": 6.661338147750939e-16,
+    "wrong_unsymmetrized_charge_error": 2.1213203435596424,
+    "density_gradient_and_momentum_variance_retained": true,
+    "rows": [
+      {
+        "epsilon": 0.04,
+        "first_coefficient_error": 0.008780800000000255
+      },
+      {
+        "epsilon": 0.02,
+        "first_coefficient_error": 0.004390399999999239
+      },
+      {
+        "epsilon": 0.01,
+        "first_coefficient_error": 0.0021952000000000638
+      },
+      {
+        "epsilon": 0.005,
+        "first_coefficient_error": 0.001097600000005805
+      }
+    ],
+    "scope": "Local Gaussian times a compact U(1) orbit coefficient calibration, using actual hypercharge values. Not original graph propagation."
+  },
+  "transport_and_instrument": {
+    "original_neutral_Fock_dimension": 16,
+    "noncommuting_original_mass_and_source": 0.2755915322670604,
+    "direct_differential_operator_first_order_error": 0.0,
+    "wrong_one_sided_matrix_Poisson_bracket_error": 0.03444894153338255,
+    "original_real_Kraus_first_order_star_term_error": 0.0,
+    "scope": "Independent differential-operator calculation of matrix-symbol identities. Original neutral mass and original Kraus jets; scalar polynomial h is an algebra calibration, not a solved original trajectory."
+  },
+  "original_conditional_source": {
+    "original_s": 0.545863690226873,
+    "covariance": [
+      [
+        0.6,
+        0.17
+      ],
+      [
+        0.17,
+        1.1
+      ]
+    ],
+    "probability_first_coefficient": -0.16333869411616203,
+    "conditional_Majorana_energy_first_coefficient": 0.06391795296772412,
+    "conditional_variance_leading": 0.01395444924241914,
+    "conditional_variance_first_coefficient": 0.14922101632433335,
+    "derivative_crosscheck_error": 5.609639919246234e-09,
+    "rows": [
+      {
+        "epsilon": 0.000244140625,
+        "probability": 0.6297492525028816,
+        "conditional_mean": 0.051571303668485696,
+        "conditional_source_variance": 0.013990875087123308,
+        "first_coefficient_errors": [
+          5.971794231979244e-05,
+          1.0467113891909907e-05,
+          2.0756416056672e-05
+        ]
+      },
+      {
+        "epsilon": 0.0001220703125,
+        "probability": 0.6297691803743855,
+        "conditional_mean": 0.05156350310056887,
+        "conditional_source_variance": 0.013972663431342168,
+        "first_coefficient_errors": [
+          2.986512796948615e-05,
+          5.233634705892332e-06,
+          1.0380666879500344e-05
+        ]
+      },
+      {
+        "epsilon": 6.103515625e-05,
+        "probability": 0.6297791470429623,
+        "conditional_mean": 0.051559602337474704,
+        "conditional_source_variance": 0.013963556653635936,
+        "first_coefficient_errors": [
+          1.4934103517105779e-05,
+          2.6168364931078436e-06,
+          5.190948343697377e-06
+        ]
+      },
+      {
+        "epsilon": 3.0517578125e-05,
+        "probability": 0.6297841310607037,
+        "conditional_mean": 0.051557651836140535,
+        "conditional_source_variance": 0.013959003027230429,
+        "first_coefficient_errors": [
+          7.467441234865202e-06,
+          1.3084233179694316e-06,
+          2.5956279904038038e-06
+        ]
+      }
+    ],
+    "scope": "Original invariant h/s slice, real field effect and true mixed sterile CAR source. Half-density Gaussian preparation, compact cutoff. Initial coefficient quadrature only, not full graph dynamics or Einstein fluctuations."
+  },
+  "dependency_hashes": {
+    "research_note_525.md": "c6a48a7ffca2ff95e39406c9112a08deeba47814ae32ab7ea4b2e55c8d57ca21",
+    "research_note_574.md": "23d72d666f593f845577712e761ab00dec1d10a56955b7da5fbb22a5ca68ef19",
+    "research_note_758.md": "8e9e36b65448669270bcc8312b3eb78daeb814a167a8141286826271d1229b08",
+    "research_note_761.md": "2b5bd75bb2698b6de54843dfd087bfcf52ce1c921a6f3616c19747fe84cdb218",
+    "joint_loop_scale_transport.py": "bbcec90e1abaf2d6acb33443a2f0221aac539f0118fcaa1c922953d47eacb1fd",
+    "round762_drafts/resource_scale_entry.py": "b7377b175be0ba685a408108ef4fb95fd6ca83b8a7bc04628b489c3eff58f4a7",
+    "round762_drafts/research_note_762_working.md": "96d17d67904c70c9452225f507bad8667c40eb40655dcc252dd50ad8b1bd0fd3"
+  },
+  "scope": "Conditional fixed-graph first-order observable and finite-history expansion for the explicit 761 scaling, with original Gauss packet data and all B retained analytically. No first-order trace-norm state theorem, uniform spatial refinement, epsilon=1 accuracy, continuum renormalization or quantum GR."
+}

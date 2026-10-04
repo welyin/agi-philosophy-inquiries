@@ -1,0 +1,135 @@
+{
+  "round": 718,
+  "tests_run": 3,
+  "failures": 0,
+  "errors": 0,
+  "original_coefficient_modes": 64,
+  "conditional_neutral_modes": 8,
+  "conditional_Fock_dimension": 256,
+  "neutral_sector_residual": 0.0,
+  "finite_time_record": {
+    "conditional_thermal_D_second_moment": 0.020961890353163256,
+    "rows": [
+      {
+        "time": 0.15,
+        "retained_record_and_poststate_trace_norm": 0.03129473648509325,
+        "bound": 0.061425892452363975,
+        "comparison_HS_norm": 0.04341885226187802,
+        "exact_isometry_identity_error": 3.2526065174565133e-19
+      },
+      {
+        "time": 0.65,
+        "retained_record_and_poststate_trace_norm": 0.1347332869608476,
+        "bound": 0.26617886729357726,
+        "comparison_HS_norm": 0.18693741530439578,
+        "exact_isometry_identity_error": 0.0
+      },
+      {
+        "time": 1.7,
+        "retained_record_and_poststate_trace_norm": 0.3387753025391466,
+        "bound": 0.6961601144601252,
+        "comparison_HS_norm": 0.4701547399668065,
+        "exact_isometry_identity_error": 0.0
+      }
+    ]
+  },
+  "multiple_record_history": {
+    "wait_times": [
+      0.43,
+      0.77
+    ],
+    "unconditional_prefix_resource_integrals": [
+      0.053607113515761334,
+      0.10040946217376298
+    ],
+    "all_record_blocks": 8,
+    "trace_norm": 0.4082020693012855,
+    "bound": 0.43562466034077524,
+    "isometry_norm": 0.21148910416817385,
+    "normalization_error": 3.1086244689504383e-15,
+    "rare_outcome_probabilities_not_divided": true
+  },
+  "geometry_source": {
+    "second_source_connection_identity_error": 1.8747932770074655e-14,
+    "independently_differentiated_evolution_error": 4.460190147488188e-14,
+    "cross_endpoint_derivative": -0.015747688016592376,
+    "rows": [
+      {
+        "first_outcome_sign": 1,
+        "actual_joint_probability": 0.275877754268335,
+        "derivative": 0.0020414991749031636,
+        "transport_identity_error": 8.283304597789254e-17,
+        "finite_differences": [
+          {
+            "step": 0.002,
+            "derivative": 0.002041502736346845,
+            "error": 3.561443681632248e-09
+          },
+          {
+            "step": 0.0005,
+            "derivative": 0.0020414993977535545,
+            "error": 2.2285039091851644e-10
+          },
+          {
+            "step": 0.000125,
+            "derivative": 0.0020414991888095813,
+            "error": 1.3906417684061978e-11
+          }
+        ],
+        "omit_endpoint_error": 0.007873844008296271,
+        "omit_cross_history_error": 0.002125174693081253,
+        "omit_prepared_thermal_response_error": 0.00932669628966841
+      },
+      {
+        "first_outcome_sign": -1,
+        "actual_joint_probability": 0.22396247835986138,
+        "derivative": -0.0022088502112594353,
+        "transport_identity_error": 9.974659986866641e-18,
+        "finite_differences": [
+          {
+            "step": 0.002,
+            "derivative": -0.0022088533607189653,
+            "error": 3.149459529977472e-09
+          },
+          {
+            "step": 0.0005,
+            "derivative": -0.002208850408164098,
+            "error": 1.9690466271371498e-10
+          },
+          {
+            "step": 0.000125,
+            "derivative": -0.0022088502230621643,
+            "error": 1.180272893308576e-11
+          }
+        ],
+        "omit_endpoint_error": 0.007873844008296178,
+        "omit_cross_history_error": 0.002125174693081346,
+        "omit_prepared_thermal_response_error": 0.00937749619434157
+      }
+    ]
+  },
+  "scope": {
+    "full_H_finite_time_bound_proved_analytically": true,
+    "first_classical_record_and_poststate_retained": true,
+    "shared_domain_and_second_source_framework_reused": true,
+    "numerical_fixture_is_conditional_not_full_boson_history": true,
+    "numerical_thermal_state_is_not_original_full_Gibbs": true,
+    "no_reset_of_actual_postrecord_state": true,
+    "no_uniform_spatial_limit_or_causal_device_claim": true,
+    "no_higher_moment_counterexample_scan": true,
+    "goal_not_completed": true
+  },
+  "dependency_hashes": {
+    "research_note_598.md": "3cfd675bceca95c6fcca2a72181a52cccb44cc4d5421b61fea0159002d80b8c5",
+    "research_note_623.md": "2ef362e618a11588e5edcf20c0090dd88e29165b2ab0405b1c6a5be1a9b0d804",
+    "research_note_624.md": "764cc0bd20ac7d36a1e99f91e5507c2ce568af940b832f9a72a99638f8b1bc63",
+    "research_note_625.md": "dc19916b0c780a6527797fa3f61c992c35f3f6e565cd104f9412f60f4dfb521c",
+    "research_note_633.md": "0c9b29f4095de54210140072552348e2d078374052d40d8d871171ed1d22ea9c",
+    "research_note_634.md": "d213062ed54299f50a8085f56459e9a309d56b1848697360bad94dd8b0554b6c",
+    "research_note_704.md": "7d91ae9446a0e5a66e06abbaae50a1d216e13e19d7a678d38d6feec6433db3e3",
+    "research_note_716.md": "2f6b06d47a2dd791dc381b006e2b60dbf52b807dfac7df39247f3911f34fcccd",
+    "research_note_717.md": "ae516fa8e118488d1026b7306f6807c5ce34a7d4dccc18cd02c4324904758ef3",
+    "joint_smooth_mode_contract.py": "f47fb8da56b7bcaa738ab13dc4ef04aa3c87ba69d336c0994b495a29065d49e0",
+    "round718_drafts/reflected_history_entry.py": "a882953256a1b2851b5dc5b6b04370a8fb6ec6e68a6723a7d6cac2880153375e"
+  }
+}

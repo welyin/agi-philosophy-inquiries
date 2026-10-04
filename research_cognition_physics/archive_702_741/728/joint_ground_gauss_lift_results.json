@@ -1,0 +1,114 @@
+{
+  "round": 728,
+  "tests_run": 3,
+  "failures": 0,
+  "errors": 0,
+  "results": {
+    "rational_global_band_bound": {
+      "rational_bounds": {
+        "uniform_mass_gap_lower": {
+          "exact": "57847662873/547542235840",
+          "decimal": 0.10564968158895408
+        },
+        "mass_perturbation_upper": {
+          "exact": "87072435896905576991483/940127808306670257600000",
+          "decimal": 0.09261765807538212
+        },
+        "graph_independent_gap_lower": {
+          "exact": "20963625879468358423559386335779/1608624006673728616349789851200000",
+          "decimal": 0.013032023513571954
+        },
+        "neutral_mass_lower": {
+          "exact": "653967585138801617/4270056030000000000",
+          "decimal": 0.15315199157674791
+        },
+        "radial_coefficient_deviation_upper": {
+          "exact": "12946474968906250/195859960063889637",
+          "decimal": 0.06610067195297652
+        },
+        "singlet_coefficient_deviation_upper": {
+          "exact": "19760074776575000/587579880191668911",
+          "decimal": 0.033629597341095566
+        }
+      },
+      "sampled32_profile_deviations": [
+        0.051195744532037846,
+        0.026002775590534488
+      ],
+      "profile_sites": 32768,
+      "proof_not_based_on_sampled_minimum": true,
+      "bound_only_for_flat_links_with_original_three_direction_kinetic": true
+    },
+    "complete_generation_character": {
+      "rows": [
+        {
+          "hopping_scale": 0.0,
+          "quasiparticle_gap": 0.10816154105395416,
+          "total_EM_charge": 4.218847493575595e-15,
+          "EM_variance": 7.805532840447305e-16,
+          "quark_EM_charge": 8.0,
+          "lepton_EM_charge": -7.999999999999998
+        },
+        {
+          "hopping_scale": 0.1,
+          "quasiparticle_gap": 0.10817711191985352,
+          "total_EM_charge": -1.3322676295501878e-15,
+          "EM_variance": -2.409530908131785e-15,
+          "quark_EM_charge": 8.0,
+          "lepton_EM_charge": -8.000000000000002
+        },
+        {
+          "hopping_scale": 0.3,
+          "quasiparticle_gap": 0.10817711232493392,
+          "total_EM_charge": 1.7763568394002505e-15,
+          "EM_variance": 5.368969158148216e-16,
+          "quark_EM_charge": 7.999999999999997,
+          "lepton_EM_charge": -7.999999999999998
+        },
+        {
+          "hopping_scale": 0.6,
+          "quasiparticle_gap": 0.10817711236291087,
+          "total_EM_charge": -1.3322676295501878e-15,
+          "EM_variance": -3.771288836773578e-15,
+          "quark_EM_charge": 7.9999999999999964,
+          "lepton_EM_charge": -8.0
+        },
+        {
+          "hopping_scale": 1.0,
+          "quasiparticle_gap": 0.10817711237101245,
+          "total_EM_charge": -1.7763568394002505e-15,
+          "EM_variance": 2.339563727934052e-15,
+          "quark_EM_charge": 7.999999999999998,
+          "lepton_EM_charge": -8.0
+        }
+      ],
+      "max_charge_and_commutator_error": 4.218847493575595e-15,
+      "homogeneous_mass_edge_anticommutator_error": 0.0,
+      "physical_modes": 128,
+      "comparison_one_node_gap": 0.1082983771678881,
+      "gap_path_is_analytically_controlled_not_just_five_samples": true,
+      "quark_and_lepton_character_cancellation_uses_original_complete_generation": true
+    },
+    "quotient_and_actual_record": {
+      "max_representation_error": 1.609823385706477e-15,
+      "neutral_ground_even_parity_error": 2.390798027392136e-16,
+      "reflected_ground_total_EM_charge": -1.7763568394002505e-15,
+      "reflected_ground_EM_variance": 2.339563727934052e-15,
+      "actual_sterile_record_preserves_Gauss_and_parity": true,
+      "full_Fock_line_character_proof_is_analytic": true,
+      "old574_nonflat_stabilizer_reused_not_reproved": true
+    }
+  },
+  "dependency_hashes": {
+    "research_note_574.md": "23d72d666f593f845577712e761ab00dec1d10a56955b7da5fbb22a5ca68ef19",
+    "research_note_591.md": "5cf5a7698f191bb9f76a1ead396dd585784fe9e518aa88e96565905781655518",
+    "research_note_598.md": "3cfd675bceca95c6fcca2a72181a52cccb44cc4d5421b61fea0159002d80b8c5",
+    "research_note_604.md": "398c3a49208c8eea7c1c017777b5c030ec56d85a1eeb49f7452d883e37e945a5",
+    "research_note_634.md": "d213062ed54299f50a8085f56459e9a309d56b1848697360bad94dd8b0554b6c",
+    "research_note_727.md": "0ad62e6e3ebef0fd60016418f46688e84595dc8870605358198d602ceb8aafa3",
+    "joint_gravity_material_coordinates.py": "492cc66a332db08ede6fa046cd69528d146216d87e357a8219dcad863ddc7baa",
+    "joint_matter_ground_source.py": "e33319e9037b7b5730323020d8d97e2ab217fc4b02e1b52fb7e7cf820817a6b9",
+    "round728_drafts/macroscopic_source_entry.py": "8639efa1f7bd10769ed53a59bea9649ffb3461bdbd3adb3d6e94472ecbdbbd64"
+  },
+  "scope": "Original matter conditional ground-line Gauss lift:574 nonflat stabilizer removes character obstruction conditional on isolated ground. Original flat-link Weyl branch has a rational graph-independent mass gap bound and complete-generation EM cancellation, supplying a genuine local Gauss band and admissible record states. The flat branch is not the original nonflat Einstein initial state. No nonflat full-graph gap, invariant slow band, autonomous reset, continuum chirality or Einstein backreaction claimed."
+}

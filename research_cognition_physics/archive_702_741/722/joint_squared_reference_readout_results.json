@@ -1,0 +1,126 @@
+{
+  "round": 722,
+  "tests_run": 3,
+  "failures": 0,
+  "errors": 0,
+  "results": {
+    "measure_and_domain_failure": {
+      "original_measure_metric_error": 5.551115123125783e-16,
+      "Hardy_identity_error": 1.9081958235744878e-17,
+      "finite_energy_Gauss_lift": {
+        "norm": 0.9999999999999994,
+        "original_kinetic": 4.5340437580487265,
+        "original_potential": 0.15002927606768737,
+        "weighted_Hardy_norm": 2.32133540899634
+      },
+      "radial_vs_flow_quadrature_error": 3.552713678800501e-15,
+      "analytic_tail_interval_bounds": [
+        {
+          "L": 80.0,
+          "log_integral_lower_bound": 283.68545741328757
+        },
+        {
+          "L": 160.0,
+          "log_integral_lower_bound": 588.1128686910478
+        },
+        {
+          "L": 320.0,
+          "log_integral_lower_bound": 1199.740279968808
+        }
+      ],
+      "infinity_proved_analytically_not_by_cutoff": true,
+      "all32_CAR_modes_retained_empty_vacuum_used": true
+    },
+    "complete_readout": {
+      "rows": [
+        {
+          "reference": "T",
+          "instrument_spectral_errors": [
+            5.422019225451872e-16,
+            5.886272596380177e-16,
+            6.025027388480386e-16
+          ],
+          "spatial_velocity_commutator": 1.0492066677583494,
+          "dropping_spatial_term_probability_error": 0.006694140836999501,
+          "record0_probability": 0.8050826757840945,
+          "actual_shifted_energy": 9.317721678535698,
+          "finite_matrix_energy_bound": 23.28498630079976
+        },
+        {
+          "reference": "s",
+          "instrument_spectral_errors": [
+            9.033022291592523e-16,
+            9.028817050251407e-16,
+            8.045417283425391e-16
+          ],
+          "spatial_velocity_commutator": 1.1966002312072865,
+          "dropping_spatial_term_probability_error": 0.010799973798658394,
+          "record0_probability": 0.8788060057580314,
+          "actual_shifted_energy": 8.72922453109771,
+          "finite_matrix_energy_bound": 11.674892129961158
+        }
+      ],
+      "resolvent_identity_error": 3.475061360570933e-18,
+      "actual_phases_not_Luders": true,
+      "conditioned_neighbour64D_diagnostic": true,
+      "full_graph_energy_bound_is_analytic": true
+    },
+    "geometry_and_history": {
+      "rows": [
+        {
+          "reference": "T",
+          "energy": 0.623868487213636,
+          "total_derivative": -16.426608011466115,
+          "source_instrument_preparation": [
+            -3.7526235180094836,
+            -10.008322706314235,
+            -2.6656617104558777
+          ],
+          "derivative_error": 7.668651846870489e-08,
+          "Kraus_derivative_error": 1.9486038594991394e-08,
+          "full_two_record_probabilities": [
+            0.6558951776224113,
+            0.14918749816168364,
+            0.14007641750827665,
+            0.05484090670762937
+          ],
+          "actual_final_shifted_energy": 10.17879244133345,
+          "finite_matrix_budget": 49.81083008473065
+        },
+        {
+          "reference": "s",
+          "energy": 0.0353713397756492,
+          "total_derivative": -1.046522183201573,
+          "source_instrument_preparation": [
+            -0.212452768603223,
+            -0.6779408896087923,
+            -0.15612851313583465
+          ],
+          "derivative_error": 1.1853723114185755e-08,
+          "Kraus_derivative_error": 1.0152824679156053e-08,
+          "full_two_record_probabilities": [
+            0.774548894317423,
+            0.10425711144060845,
+            0.10682674335239653,
+            0.014367250889572806
+          ],
+          "actual_final_shifted_energy": 8.742029401359044,
+          "finite_matrix_budget": 12.608400705238903
+        }
+      ],
+      "original_waiting_not_reset": true,
+      "no_autonomous_apparatus_or_continuum_claim": true
+    }
+  },
+  "dependency_hashes": {
+    "joint_velocity_record_energy.py": "815b44b30dae5081f39e420b2d19bf0289f5127cebcbadc861ae77016315fdfd",
+    "research_note_721.md": "62787c64e5e273300f2a7fbd7f18bf776c6a3d361cfcd0c59b859cb3d36e6af2",
+    "joint_quantum_reference_forms.py": "7a22cd777d02dd38e7a66ca6b257c85e4dc2325e839236ecabafe2496d34a01e",
+    "research_note_652.md": "ffd478c9cf190d71382409e15ffcf2dab1e4740834a11deb9c28461763c06c4a",
+    "joint_operator_domain_completion.py": "f88ff0aa098948f72532ecd21f42f8e21474ad9a165f9d0b68f8df44631f7224",
+    "research_note_704.md": "7d91ae9446a0e5a66e06abbaae50a1d216e13e19d7a678d38d6feec6433db3e3",
+    "round722_drafts/squared_reference_entry.py": "3fbc2615a6e4636d3e5539ee5ba1d6bb6229a782f5c0e55dce622a6e8297f941",
+    "round722_drafts/squared_reference_entry_results.json": "a89eaa226f512e89db9e3a967b24203ee76c0f3dd8b7753600f848db99ea2438"
+  },
+  "scope": "Original fixed finite graph, external positive geometry, no dynamical theta. One-node phase-of-square readout can leave the original full energy form. A sufficiently broad rational instrument for full Q including spatial W preserves that form and has bounded energy-space first geometry derivative. Not an autonomous apparatus, coordinate reconstruction, uniform continuum or gravity-generation proof."
+}

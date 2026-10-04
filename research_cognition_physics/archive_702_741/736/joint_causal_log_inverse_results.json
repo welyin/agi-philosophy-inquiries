@@ -1,0 +1,73 @@
+{
+  "round": 736,
+  "tests_run": 2,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "jet_identity_check",
+    "inverse_contract_check"
+  ],
+  "results": {
+    "jet_identity_check": {
+      "rows": [
+        {
+          "channel": "scalar",
+          "total_log_coefficient": 0.008309679216743242,
+          "exact_local_constant": 0.00036900312494305,
+          "normalized_constant": 0.04440642235617743,
+          "complex_spectral_decomposition_error": 1.7590200830918071e-15,
+          "positive_measure_identity_error": 4.336808689942018e-19,
+          "independent_constant_integral_error": 2.9531932455029164e-14
+        },
+        {
+          "channel": "tensor",
+          "total_log_coefficient": 0.010132118364233778,
+          "exact_local_constant": 0.0070400704398682155,
+          "normalized_constant": 0.6948271019730243,
+          "complex_spectral_decomposition_error": 3.587423247428768e-15,
+          "positive_measure_identity_error": 3.469446951953614e-18,
+          "independent_constant_integral_error": 4.596323321948148e-14
+        }
+      ],
+      "all_original_masses_retained": true,
+      "no_threshold_or_long_memory_replacement": true
+    },
+    "inverse_contract_check": {
+      "inverse_log_Laplace_identity_error": 1.2393291872495371e-14,
+      "auxiliary_log_inverse_pole": 1.0,
+      "pole_not_a_full_response_instability": true,
+      "time_window": 0.01,
+      "inverse_log_L1_norm": 0.231740764517972,
+      "analytic_L1_upper": 0.40872230146423727,
+      "original_exact_kernel_certificates": [
+        {
+          "channel": "scalar",
+          "exact_remainder_L1_upper": 1.3221329518112028e-06,
+          "sufficient_contraction_upper": 0.018214925961539882,
+          "normalized_inverse_bound": 0.4163052711557378,
+          "no_claim_that_full_Einstein_local_terms_vanish": true
+        },
+        {
+          "channel": "tensor",
+          "exact_remainder_L1_upper": 8.878596536238653e-07,
+          "sufficient_contraction_upper": 0.284027147852207,
+          "normalized_inverse_bound": 0.5708628479950629,
+          "no_claim_that_full_Einstein_local_terms_vanish": true
+        }
+      ],
+      "weak_causal_response_inverse_not_nonlinear_spacetime": true
+    }
+  },
+  "dependency_hashes": {
+    "research_note_601.md": "2464a6dddd68e4b5cf242b93255dff3a42df9f6accb5c5a976faed42cca5c362",
+    "research_note_630.md": "455eb46ac40df7b2183801d74ab1a9b6205ece0838cd26f81b94471662a18128",
+    "research_note_631.md": "e2cce60e1760a0f3e1832e1d0ee92bbb9a92140b181e1edcb792c8390d4141fb",
+    "research_note_632.md": "1c5fbf535b5d106af8c4404f3c55faa656dc1b37b971a76a349adb665bfbef16",
+    "research_note_735.md": "43ece0235df1d09dcef1d30c99b2cb2dd2ade100cb6572caf46ded7ac8ffe2b8",
+    "joint_continuum_source_spectrum.py": "8c9d0ea35fc751533a41741a395b6105966d12a00263ffd3c58e5b1e1fe75893",
+    "joint_tensor_stress_spectrum.py": "6a69ab29c91e93a5fe05fb842848a8c7a0171cb33a546dcdb83e811758219611",
+    "round736_drafts/response_regularity_entry.py": "1481e6bd1a9cdfba1e9d598a504d349ab095b727dca9315a4badea760f0d052e",
+    "round736_drafts/response_regularity_entry_results.json": "06152f585feba1313c53af3739de6ef64579f86e0c16fccd56af1ee629d06740"
+  },
+  "scope": "Original630/631 complete-generation stationary vacuum branch: exact logarithm-plus-L1-memory decomposition and a short-time causal inverse on the active scalar/shear response sectors. Additional finite local operators obey an explicit contraction criterion. No full constraint elimination, general dynamic-background inverse, nonlinear semiclassical solution, or long-time stability is claimed."
+}

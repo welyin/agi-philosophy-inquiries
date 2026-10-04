@@ -1,0 +1,87 @@
+{
+  "round": 735,
+  "tests_run": 2,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "mass_covariant_jet_check",
+    "actual_record_source_pullback_check"
+  ],
+  "results": {
+    "mass_covariant_jet_check": {
+      "mass_dimension": 64,
+      "original_generators": 12,
+      "first_and_second_mass_jet_error": 1.401139669486473e-09,
+      "connection_mass_mixed_jet_error": 2.776485376362676e-11,
+      "differentiated_spurion_equivariance_error": 1.3877787807814457e-17,
+      "noncommuting_connection_mass_witness": 0.17884526281535726,
+      "second_mass_coordinate_jet_norm": 0.013136543081016906,
+      "coordinate_map_is_inherited_from_round623": true,
+      "no_commuting_mass_or_zero_Yukawa_reduction": true
+    },
+    "actual_record_source_pullback_check": {
+      "original_dimension": 128,
+      "original_record_retained": true,
+      "scalar_sources_phi": [
+        1.1270273060473501e-06,
+        -12.098452185362431,
+        -3.423582248839022e-07,
+        -0.017904171236317573,
+        -0.4620641121016592
+      ],
+      "scalar_sources_x": [
+        1.53950853986934e-06,
+        -15.834375480617336,
+        -4.676580665572017e-07,
+        -0.0024311686470466134,
+        -0.07358207606936307
+      ],
+      "source_pullback_error": 1.7763568394002505e-15,
+      "history_state_response": [
+        -7.635931938015174e-07,
+        -0.002929756631058924,
+        4.2768168452308233e-07,
+        -0.00027072140923562724,
+        -0.00010732140423466008
+      ],
+      "coordinate_contact": [
+        8.097873538023006e-08,
+        -1.9552682076479786,
+        -2.4598992366342936e-08,
+        -0.035852343674031534,
+        -0.9082531029634149
+      ],
+      "complete_derivative": [
+        -6.826144584212873e-07,
+        -1.9581979642790375,
+        4.030826921567394e-07,
+        -0.03612306508326716,
+        -0.9083604243676495
+      ],
+      "independent_difference": [
+        -6.827967854033673e-07,
+        -1.9581979656457802,
+        4.029869771021181e-07,
+        -0.036123065262974596,
+        -0.9083604247853149
+      ],
+      "complete_derivative_error": 1.366742719000058e-09,
+      "omission_defect": 1.9552682090147213,
+      "gauge_and_time_exchange_pullback_error": 1.1102230246251565e-16,
+      "jacobian_eigenvalue_identity_error": 4.440892098500626e-16,
+      "local_field_reparametrization_not_a_new_reference_preparation": true
+    }
+  },
+  "dependency_hashes": {
+    "research_note_623.md": "2ef362e618a11588e5edcf20c0090dd88e29165b2ab0405b1c6a5be1a9b0d804",
+    "research_note_628.md": "d1773cea96d67012abc260beea0dc66cd1604969d17aafae0d1ea4a7c7adf7cf",
+    "research_note_734.md": "09d372b82822080c5a8757698bce7d8c26ec358a2c47ceb6e49239de430aa882",
+    "joint_dynamic_continuum_reference.py": "7e7a5160fd87c640bc50dc617122036dbddedfcee1edbce53a7327de66202d9b",
+    "joint_relative_source_development.py": "8b04e9a5591d308c98e13f63f863d2d48869712b427c726faca488dcc8fd9a44",
+    "joint_retarded_reference_response.py": "3235da068cc9e86f926aa147a2efcec670a3173adfea628362a8e7e31475596a",
+    "joint_retarded_reference_response_results.json": "5b2fd274ad88ebd4ac162ccda326ff3c89f36ec209750bc076d3a677694ce070",
+    "round735_drafts/counterterm_scope_entry_results.json": "11900137e45294c766fd76943c7d0c5351029386d3be213cecb014c4b28fc402",
+    "round735_drafts/gauge_history_scope_probe_results.json": "97619dc11547cb9a296392ea56e0aece3ce9e6313694ebf29d049a3fe0ea4ea3"
+  },
+  "scope": "Finite complete-species object checks for a conditional one-fermion-loop local normalization bridge: noncommuting mass and connection jets and the same actual record with full nonlinear scalar-source contacts. No numerical anomaly cancellation, continuum stress values, all-loop construction, or nonlinear semiclassical solution is claimed."
+}

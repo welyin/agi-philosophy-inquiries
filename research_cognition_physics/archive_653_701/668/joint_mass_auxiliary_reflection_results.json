@@ -1,0 +1,146 @@
+{
+  "date": "2026-10-02",
+  "round": 668,
+  "tests_run": 2,
+  "failures": 0,
+  "errors": 0,
+  "constant_mass_normalization": {
+    "rows": [
+      {
+        "nx": 1,
+        "nt": 2,
+        "mass_scale": 0.37,
+        "physical_Nambu_dimension": 128,
+        "actual_weight_ratio": [
+          1.8976906913416067,
+          2.852195102721288e-18
+        ],
+        "analytic_log_ratio": 0.6406377213339625,
+        "Fourier_product_relative_error": 4.440917532001537e-16,
+        "mass_source_error": 1.3328236089287791e-15,
+        "mass_source": 3.400496345873012,
+        "reflection_Gram_minimum": 0.9576225039284565,
+        "reflection_hermiticity_error": 6.938893903907228e-18
+      },
+      {
+        "nx": 2,
+        "nt": 4,
+        "mass_scale": 0.37,
+        "physical_Nambu_dimension": 512,
+        "actual_weight_ratio": [
+          37.014793954264945,
+          1.9384195874567492e-15
+        ],
+        "analytic_log_ratio": 3.611317669332629,
+        "Fourier_product_relative_error": 2.5540499033489616e-15,
+        "mass_source_error": 7.106216008412339e-15,
+        "mass_source": 17.854577189459278,
+        "reflection_Gram_minimum": -1.236592477333546e-15,
+        "reflection_hermiticity_error": 1.221248329874853e-15
+      },
+      {
+        "nx": 3,
+        "nt": 4,
+        "mass_scale": 1.1,
+        "physical_Nambu_dimension": 768,
+        "actual_weight_ratio": [
+          401526014571.0966,
+          0.0035354495369685074
+        ],
+        "analytic_log_ratio": 26.718538161686514,
+        "Fourier_product_relative_error": 9.763568424990312e-15,
+        "mass_source_error": 7.160404440893902e-15,
+        "mass_source": 34.12165658468587,
+        "reflection_Gram_minimum": -1.27593360738819e-15,
+        "reflection_hermiticity_error": 9.697104230710352e-16
+      }
+    ],
+    "all_constant_mass_real_scales_positive_by_analytic_product": true,
+    "finite_Gram_diagnostics_not_used_as_full_RP_proof": true
+  },
+  "common_source": {
+    "source_family": "kappa=1+.2 theta, phi=PHI[0]+theta*(.1,-.07,.05,.03,-.12)",
+    "actual_original_auxiliary_configuration": [
+      [
+        0.9025215324236245,
+        -0.09430513490222742,
+        0.10216504571403087,
+        0.19868781923757514,
+        -0.27260890961656353,
+        -0.06008524421688652,
+        0.057370208634797686,
+        -0.07515662141774003,
+        -0.0032659862838167316,
+        0.19942542350608464
+      ],
+      [
+        0.9365776037633983,
+        -0.20584658790210025,
+        -0.06420306968557801,
+        -0.1871884617008945,
+        0.07220075803779402,
+        -0.07433270087177116,
+        0.14613515819342476,
+        -0.007130260903010336,
+        -0.04407838603975179,
+        -0.08485570664439387
+      ],
+      [
+        0.8670481888275405,
+        0.14197350391229158,
+        -0.17483970197794532,
+        0.21451762512396713,
+        0.26001935594009895,
+        -0.1789576556161054,
+        0.08835561795223297,
+        0.0265392748913439,
+        -0.18681446921176176,
+        -0.09185655856669453
+      ],
+      [
+        0.9139176762685954,
+        -0.12418954034663199,
+        0.11247402650514947,
+        -0.23480598702641636,
+        0.018915426514233235,
+        0.12328191767683441,
+        0.06145998475682956,
+        -0.11663524389709463,
+        0.2195293308840216,
+        -0.02041370472620483
+      ]
+    ],
+    "full_conditional_log_source": [
+      0.680888812660225,
+      -4.2923997689570115e-14
+    ],
+    "original_auxiliary_and_free_source": [
+      0.6269614928731286,
+      6.071532165918825e-18
+    ],
+    "mass_increment_source": 0.053927319784707876,
+    "complete_derivative_matrix_error": 2.694935963899064e-12,
+    "full_source_finite_difference_error": 1.0633715822545599e-10,
+    "factorized_mass_and_auxiliary_source_error": 2.3889265214125876e-12,
+    "omitted_observation_map_source": [
+      -0.015011020922645679,
+      -0.00018204020629329957
+    ],
+    "conditional_source_not_full_bosonic_or_geometry_stress": true
+  },
+  "dependency_hashes": {
+    "joint_physical_auxiliary_state.py": "78cfedbf2120b4c919e77576413a50b27d4becd79997be5276e202ed7dc1da67",
+    "joint_local_mirror_process.py": "26c21c25cb9457d1f619d6f0f9a33569ba3114751d39353374b85cf75411aa15",
+    "joint_spinor_subgroup_mass.py": "712913dd7ff8bc44c0f0da9754daa290b645530d54fbf6da6d609148b4894c53",
+    "joint_gauss_fermion_influence.py": "15142bef8c560c21c61756098b7942e2937f66b2dd6defc74b3b937f0e634cde",
+    "research_note_604.md": "398c3a49208c8eea7c1c017777b5c030ec56d85a1eeb49f7452d883e37e945a5",
+    "research_note_614.md": "ac3db5a54d1f31939f92bfc762f6835bc1485d69052d5b775e7df54108cd0caf",
+    "research_note_658.md": "c0d9441fc4ffb114606f8882e2de70ade8dafa99e5705ab75995bab29fd0f694",
+    "research_note_661.md": "1dc917fee6cb71ef0a3b7d3e65b159c6a9503e8d5305a37e1fa3f87ef286f44c",
+    "research_note_667.md": "9adc75f83768baaf64798db042cecb72341367decfd2478083d7add646d300c9",
+    "round668_drafts/mass_observation_probe.py": "34ac68616b97b0d6cde7e8346eec4b2e15d82975c634edff7fc26930d1f980d2",
+    "round668_drafts/mass_observation_probe_results.json": "c451a0c5bea1b2cc55a3ff7bf9ee236b0b0f5b785f5ae1cb7fb7878facbf9c28"
+  },
+  "scope": "Declared original constant mass pairing in retained physical Weyl algebra shares normalized finite free reflection functional and original auxiliary measure; all real strengths strictly positive by Fourier product. Exact local-candidate pullback and common background source, not bare local mass or original complete Gibbs/quantum GR equivalence.",
+  "all_checks_passed": true
+}

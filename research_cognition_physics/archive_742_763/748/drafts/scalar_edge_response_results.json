@@ -1,0 +1,57 @@
+{
+  "entry_round": 748,
+  "latest_completed_round": 747,
+  "formal_test_count_unchanged": 3432,
+  "checks": {
+    "samples": 12,
+    "max_force_identity_error": 1.8315238214938745e-11,
+    "exact_time_order_factor": "1/720"
+  },
+  "quadrature_rows": [
+    {
+      "radial_order": 10,
+      "relative_angle_order": 12,
+      "gaussian_Z": 0.7532288028062418,
+      "scalar_sixth_for_k_wA_wB_1": -0.006901204393167384,
+      "original_tau_hop_sixth_for_hbar_wB_1": -0.11875444245022852,
+      "total_sixth_for_common_epsilon_psi_hbar_1": -0.12565564684339592,
+      "estimated_only_no_certified_error_bound": true
+    },
+    {
+      "radial_order": 16,
+      "relative_angle_order": 18,
+      "gaussian_Z": 0.7532288129828434,
+      "scalar_sixth_for_k_wA_wB_1": -0.006900251803774912,
+      "original_tau_hop_sixth_for_hbar_wB_1": -0.11875444084578028,
+      "total_sixth_for_common_epsilon_psi_hbar_1": -0.1256546926495552,
+      "estimated_only_no_certified_error_bound": true
+    },
+    {
+      "radial_order": 24,
+      "relative_angle_order": 24,
+      "gaussian_Z": 0.7532288130072575,
+      "scalar_sixth_for_k_wA_wB_1": -0.0069002487346668945,
+      "original_tau_hop_sixth_for_hbar_wB_1": -0.11875444084193114,
+      "total_sixth_for_common_epsilon_psi_hbar_1": -0.12565468957659803,
+      "estimated_only_no_certified_error_bound": true
+    },
+    {
+      "radial_order": 32,
+      "relative_angle_order": 32,
+      "gaussian_Z": 0.7532288130072912,
+      "scalar_sixth_for_k_wA_wB_1": -0.0069002487402042645,
+      "original_tau_hop_sixth_for_hbar_wB_1": -0.11875444084192584,
+      "total_sixth_for_common_epsilon_psi_hbar_1": -0.1256546895821301,
+      "estimated_only_no_certified_error_bound": true
+    }
+  ],
+  "assumptions": [
+    "Original two-node graph with epsilon=psi_A=psi_B=hbar=1, hence w_A=w_B=k_AB=1.",
+    "Original tau and Yukawa coefficients from747; radial Gaussian comparison, later compact core required.",
+    "All original potentials and fields retained; this computes the first scalar-edge coefficient, not a changed scalar-only dynamics."
+  ],
+  "proposed_exact_formula": "a6 = <P4(x_A) * [-grad_K f_B dot grad_B V_AB]> / (w_A² w_B), with the Gaussian pair measure; k included in V.",
+  "total_signal_not_yet_certified": true,
+  "full_field_time_evolution_not_simulated": true,
+  "next": "Audit the Duhamel word exclusions and obtain a rigorous bound on the original total coefficient before claiming remote distinguishability."
+}
