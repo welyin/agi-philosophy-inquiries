@@ -63,7 +63,9 @@
 
 ## 使用方式
 
-每个archive根目录直接放README和正式research_note_编号.md；该轮代码、结果、核验及草稿统一放在编号目录（如231/）中。旧稿和历史快照全部保留，迁移不新增科学轮次。[复算与原始快照](archive_764_/_migration/README.md)保留旧固定路径的可执行环境。
+每个archive根目录直接放README和正式research_note_编号.md；该轮代码、结果、核验及草稿统一放在编号目录（如231/）中。研究旧稿与科学证据保留，迁移不新增科学轮次。[当前目录复算](archive_764_/_migration/README.md)直接读取各阶段文件，已取消对ZIP和重复导航快照的依赖。
+
+正式报告、科学代码、结果及当前迁移清单纳入Git。README、研究方向、研究状态只在正式位置维护一份，修改记录交给Git；重复导航备份、迁移ZIP及旧版大型清单不再作为研究依赖。外部原始PDF按来源收据取得，详见[版本管理说明](../scripts/GIT_STORAGE.md)。
 
 后续在 [archive_764_](archive_764_/README.md) 从[776已有入口](archive_764_/776/drafts/STATUS.md)接续。应用目标仍保留用户暂停状态，本次整理未自动恢复目标或新增科学轮次。
 

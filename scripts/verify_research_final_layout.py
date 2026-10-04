@@ -3,10 +3,11 @@ import argparse
 import ast
 from collections import Counter
 import json
+from datetime import date
 from pathlib import Path
 import re
-import zipfile
 import organize_research_231_775 as m
+from research_layout import original_bytes, local_backup
 
 ROOT,BASE=m.ROOT,m.RESEARCH
 LAST=BASE/'archive_764_'
@@ -20,43 +21,44 @@ def read(p):
     return json.loads(p.read_text('utf8'))
 
 
-def evidence_check(manifest, snapshot, prefix, path_base):
-    assert m.digest(snapshot['path'])==snapshot['sha256']
+def evidence_check(manifest, path_base):
     identical=links_only=0
     documents=[]
     raw_docs=set()
-    with zipfile.ZipFile(snapshot['path']) as z:
-        for e in manifest['entries']:
-            path=path_base/e['destination']
-            original=z.read(prefix+e['original'])
-            current=path.read_bytes()
-            assert m.sha(original)==e['original_sha256'] and len(original)==e['bytes']
-            assert m.sha(current)==e['current_sha256'] and len(current)==e['current_bytes'],e['destination']
-            if original!=current:
-                assert e['rewrite_markdown_links'] and path.suffix=='.md',e['destination']
-                enc='utf-8-sig' if original.startswith(b'\xef\xbb\xbf') else 'utf8'
-                text=original.decode(enc)
-                spans={(a,b):t for a,b,t,_ in m.links(text)}
-                for edit in reversed(e['link_edits']):
-                    assert spans[edit['start'],edit['end']]==edit['before']
-                    text=text[:edit['start']]+edit['after']+text[edit['end']:]
-                assert text.encode(enc)==current,e['destination']
-                links_only+=1
+    skipped=0
+    for e in manifest['entries']:
+        if local_backup(e['destination']):
+            skipped+=1
+            continue
+        path=path_base/e['destination']
+        current=path.read_bytes()
+        original=original_bytes(current,e)
+        assert m.sha(original)==e['original_sha256'] and len(original)==e['bytes']
+        assert m.sha(current)==e['current_sha256'] and len(current)==e['current_bytes'],e['destination']
+        if original!=current:
+            assert e['rewrite_markdown_links'] and path.suffix=='.md',e['destination']
+            enc='utf-8-sig' if original.startswith(b'\xef\xbb\xbf') else 'utf8'
+            text=original.decode(enc)
+            spans={(a,b):t for a,b,t,_ in m.links(text)}
+            for edit in reversed(e['link_edits']):
+                assert spans[edit['start'],edit['end']]==edit['before']
+                text=text[:edit['start']]+edit['after']+text[edit['end']:]
+            assert text.encode(enc)==current,e['destination']
+            links_only+=1
+        else:
+            identical+=1
+        if path.suffix=='.md':
+            if e['rewrite_markdown_links']:
+                documents.append(path)
             else:
-                identical+=1
-            if path.suffix=='.md':
-                if e['rewrite_markdown_links']:
-                    documents.append(path)
-                else:
-                    raw_docs.add(path.resolve())
-    return dict(files=len(manifest['entries']),byte_identical=identical,link_only=links_only),documents,raw_docs
+                raw_docs.add(path.resolve())
+    return dict(files=identical+links_only,byte_identical=identical,link_only=links_only,
+                optional_local_files_skipped=skipped,zip_files_read=0),documents,raw_docs
 
 
 early,late=read(MAINT/'manifest.json'),read(LAST/'_migration/manifest.json')
-early_snapshot=read(MAINT/'snapshot.json')
-late_snapshot=read(LAST/'_migration/snapshot_checks.json')
-ec,ed,er=evidence_check(early,dict(path=MAINT/early_snapshot['file'],sha256=early_snapshot['sha256']),'',ROOT)
-lc,ld,lr=evidence_check(late,dict(path=LAST/'_migration'/late_snapshot['file'],sha256=late_snapshot['sha256']),'research_cognition_physics/archive_231_/',BASE)
+ec,ed,er=evidence_check(early,ROOT)
+lc,ld,lr=evidence_check(late,BASE)
 split=read(MAINT/'phase_split_plan.json')
 frozen=er|lr|{(ROOT/p).resolve() for p in split['raw_historical_navigation']}
 all_archives=[BASE/p['directory'] for p in early['early_phases']]+[BASE/'archive_223_230']+[BASE/p['directory'] for p in late['phases']]
@@ -99,11 +101,12 @@ for p in [ROOT/'scripts/organize_research_001_230.py',ROOT/'scripts/finish_resea
     ast.parse(p.read_text('utf8'))
 replay=read(MAINT/'replay_checks.json')
 assert replay['all_tests_passed'] and sum(j['tests_run'] for j in replay['jobs'])==1985
-result=dict(date='2026-10-04',early_phases=11,total_archive_directories=27,numbered_reports=775,
+result=dict(date=date.today().isoformat(),early_phases=11,total_archive_directories=27,numbered_reports=775,
             report_numbers_complete_and_unique=True,early_evidence=ec,later_evidence=lc,
             unchanged_scientific_code_results_and_receipts=True,markdown_changes_only_link_targets=True,
             checked_markdown_documents=len(documents),local_links_checked=total,broken_links=broken,
-            original_bytes_in_verified_snapshots=True,prior_historical_contracts_preserved=True,
+            original_bytes_verified_from_current_files_and_link_edits=True,
+            zip_dependency=False,historical_receipts_not_rewritten=True,
             early_unittest_cases_passed=1985,active_directory='archive_764_',next_round=776,
             new_scientific_rounds=0,all_checks_passed=not broken)
 if 'major_stage' in early:
