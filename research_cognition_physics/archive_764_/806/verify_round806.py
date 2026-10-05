@@ -36,8 +36,7 @@ def verify(writing=False):
     frozen=[STAGE/'805/research_round_805_checks.json',STAGE/'research_note_805.md',
             STAGE/'research_note_768.md',HERE/'drafts/STATUS.md']
     fresh=[note,STAGE/'807/drafts/STATUS.md',*sorted(HERE.glob('*.py')),
-        *sorted(p for p in HERE.glob('*.json') if p!=RECEIPT),
-        HERE/'drafts/working_checks.json']
+        *sorted(p for p in HERE.glob('*.json') if p!=RECEIPT)]
     for p in fresh:
         if p.suffix=='.py':ast.parse(p.read_text('utf-8'),filename=str(p))
     return dict(round=806,date='2026-10-05',all_checks_passed=True,fresh_test_groups=1,

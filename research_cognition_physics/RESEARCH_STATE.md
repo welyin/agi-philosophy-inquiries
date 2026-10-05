@@ -1,5 +1,15 @@
 # 研究状态
 
+## 2026-10-05：完成806，继续807
+
+[806报告](archive_764_/research_note_806.md)证明：在固定原背景、费米态和菜单时，新增正玻色协方差若保持某个旧观测的方差，就不能改变它与原记录的一阶联合响应。同一增量必须共同进入768/791原完整来源和相容初值。
+
+[一组联合校准](archive_764_/806/preparation_response_constraints_results.json)通过，累计分组3584；同时检出不定来源与任意态差的反例，避免扩大结论。[核验](archive_764_/806/research_round_806_checks.json)。尚未计算原完整连续非零响应，也未证明原引力/物质来源严格正。
+
+接[807](archive_764_/807/drafts/STATUS.md)核原实际物理解与切换上的解析非零/选择规则，目标保持。
+
+807[工作稿](archive_764_/807/drafts/research_note_807_working.md)已核原剪切主部经过Hadamard频率交叉及sterile读口压缩后仍非零；[结果](archive_764_/807/sterile_principal_cross_probe_results.json)。实际玻色解可达性和紧支时间积分仍待证明，正式仍806。
+
 ## 2026-10-05：完成805，继续806
 
 [805报告](archive_764_/research_note_805.md)给原辅助过去协方差的显式全动量乘子与有限模式作用，不换目标时刻的实际态；初态、完整PDE残差、系数及求积误差共同传入原响应矩阵。
