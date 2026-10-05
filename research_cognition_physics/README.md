@@ -11,9 +11,9 @@
 
 ## 当前状态
 
-001—804轮共804份正式编号报告，统一采用“阶段根目录放报告、编号目录放配套材料”的格式。231轮以后的15个阶段保留既有划分，末阶段 `archive_764_` 为持续研究目录。已有条件性空间定理、限定反例和联合模型构造；完整统一目标尚未完成。
+001—805轮共805份正式编号报告，统一采用“阶段根目录放报告、编号目录放配套材料”的格式。231轮以后的15个阶段保留既有划分，末阶段 `archive_764_` 为持续研究目录。已有条件性空间定理、限定反例和联合模型构造；完整统一目标尚未完成。
 
-2026-10-05继续研究：[777](archive_764_/research_note_777.md)接通辅助BV与同态自由约化；[778](archive_764_/research_note_778.md)接通混合传播字段的共同规范化；[779](archive_764_/research_note_779.md)给辅助复合插入的共同局部树接触处方，保原物理作用和观测。[780](archive_764_/research_note_780.md)给动态标架、旋量补偿及分次辅助的适配字典；[781](archive_764_/research_note_781.md)进一步算出取向/ghost因子抵消及剩余局部度规因子，核同一复合源接触；[782](archive_764_/research_note_782.md)通过完整域直接规范化实现原N1/N2，接通保首项的一圈共同作用及关系观测；更强跨方案等价另列。[783](archive_764_/research_note_783.md)将同一局部修复逐圈完成，保原一圈来源；范围仍是正则片内形式级数。[784](archive_764_/research_note_784.md)以完整量子切换缺陷构造局部BRST荷候选，明确局部幂零不等于整体荷幂零，并给保区内作用的相对补全判据。[785](archive_764_/research_note_785.md)进一步把原正自由物理态写成局部微分字段，保因果传播，并给完整模型的形式经典规范切片；原相互作用量子匹配未完成。[786](archive_764_/research_note_786.md)将原局部规范方向完整经典BV辅助化，给混合因果逆，并明确物理量子密度不可直接丢弃。[787](archive_764_/research_note_787.md)给保原起点的形式参数相对修复，作用及有限观测菜单可逐圈共同输送；不能直接将形式参数取1。[788](archive_764_/research_note_788.md)给同一原规范内的一圈绝对来源/均值/关系观测字典，保留状态无关局部减除余项；[789](archive_764_/research_note_789.md)在固定自由部分的坐标路径上给共同作用/菜单的形式端点；[790](archive_764_/research_note_790.md)识别原第一次BV/Wick异常，接通共同作用的线性反项与原实际来源；[791](archive_764_/research_note_791.md)接通同一分支的一圈物理来源约化，保原物理反项；[792](archive_764_/research_note_792.md)构造保字段独立性及基本场身份的严格字段BRST时间序族，并共同输送原量子分支；[793](archive_764_/research_note_793.md)给保原物理有限项及源伙伴的形式量子正规形；[794](archive_764_/research_note_794.md)构造保原局部作用的紧支主方程完成，并接通其相对S矩阵及有序乘积同伦；[795](archive_764_/research_note_795.md)进一步给原实分支的实紧支完成及旧切换的共同幺正比较，明确原首阶初值合同；[796](archive_764_/research_note_796.md)接通原固定局部源菜单的正形式态及原W/首阶初值实现；[797](archive_764_/research_note_797.md)接通同一源商的形式CP读出、有序记录及切换协变；[798](archive_764_/research_note_798.md)在有限相容菜单的规范化形式完成中构造原费米记录子代数，保原态及作用；[799](archive_764_/research_note_799.md)将原形式源和记录共同写入受约束的早期Cauchy表示，保同一态及全部作用系数；[800](archive_764_/research_note_800.md)以实零带主方程完成接通原目标族的相互作用时间片表示，原态共同运输，范围限声明的相对作用/Wick闭包；[801](archive_764_/research_note_801.md)以原S接通内部输出记录、旧菜单和完整来源的共同字典，原相关态保留；[802](archive_764_/research_note_802.md)给原完整BFF物理系数及交叉收缩抵消；[803](archive_764_/research_note_803.md)将完整顶点接到原共同Cauchy演化导数和两条原费米波函数；[804](archive_764_/research_note_804.md)给紧响应与有限模式证书；继续[805](archive_764_/805/drafts/STATUS.md)核原试探矩阵及误差；784相对补全路线保留。[当前联合条件账](archive_764_/_shared/notes/unified_physics_condition_ledger_current.md)记录准确范围。
+2026-10-05继续研究：[777](archive_764_/research_note_777.md)接通辅助BV与同态自由约化；[778](archive_764_/research_note_778.md)接通混合传播字段的共同规范化；[779](archive_764_/research_note_779.md)给辅助复合插入的共同局部树接触处方，保原物理作用和观测。[780](archive_764_/research_note_780.md)给动态标架、旋量补偿及分次辅助的适配字典；[781](archive_764_/research_note_781.md)进一步算出取向/ghost因子抵消及剩余局部度规因子，核同一复合源接触；[782](archive_764_/research_note_782.md)通过完整域直接规范化实现原N1/N2，接通保首项的一圈共同作用及关系观测；更强跨方案等价另列。[783](archive_764_/research_note_783.md)将同一局部修复逐圈完成，保原一圈来源；范围仍是正则片内形式级数。[784](archive_764_/research_note_784.md)以完整量子切换缺陷构造局部BRST荷候选，明确局部幂零不等于整体荷幂零，并给保区内作用的相对补全判据。[785](archive_764_/research_note_785.md)进一步把原正自由物理态写成局部微分字段，保因果传播，并给完整模型的形式经典规范切片；原相互作用量子匹配未完成。[786](archive_764_/research_note_786.md)将原局部规范方向完整经典BV辅助化，给混合因果逆，并明确物理量子密度不可直接丢弃。[787](archive_764_/research_note_787.md)给保原起点的形式参数相对修复，作用及有限观测菜单可逐圈共同输送；不能直接将形式参数取1。[788](archive_764_/research_note_788.md)给同一原规范内的一圈绝对来源/均值/关系观测字典，保留状态无关局部减除余项；[789](archive_764_/research_note_789.md)在固定自由部分的坐标路径上给共同作用/菜单的形式端点；[790](archive_764_/research_note_790.md)识别原第一次BV/Wick异常，接通共同作用的线性反项与原实际来源；[791](archive_764_/research_note_791.md)接通同一分支的一圈物理来源约化，保原物理反项；[792](archive_764_/research_note_792.md)构造保字段独立性及基本场身份的严格字段BRST时间序族，并共同输送原量子分支；[793](archive_764_/research_note_793.md)给保原物理有限项及源伙伴的形式量子正规形；[794](archive_764_/research_note_794.md)构造保原局部作用的紧支主方程完成，并接通其相对S矩阵及有序乘积同伦；[795](archive_764_/research_note_795.md)进一步给原实分支的实紧支完成及旧切换的共同幺正比较，明确原首阶初值合同；[796](archive_764_/research_note_796.md)接通原固定局部源菜单的正形式态及原W/首阶初值实现；[797](archive_764_/research_note_797.md)接通同一源商的形式CP读出、有序记录及切换协变；[798](archive_764_/research_note_798.md)在有限相容菜单的规范化形式完成中构造原费米记录子代数，保原态及作用；[799](archive_764_/research_note_799.md)将原形式源和记录共同写入受约束的早期Cauchy表示，保同一态及全部作用系数；[800](archive_764_/research_note_800.md)以实零带主方程完成接通原目标族的相互作用时间片表示，原态共同运输，范围限声明的相对作用/Wick闭包；[801](archive_764_/research_note_801.md)以原S接通内部输出记录、旧菜单和完整来源的共同字典，原相关态保留；[802](archive_764_/research_note_802.md)给原完整BFF物理系数及交叉收缩抵消；[803](archive_764_/research_note_803.md)将完整顶点接到原共同Cauchy演化导数和两条原费米波函数；[804](archive_764_/research_note_804.md)给紧响应与有限模式证书；[805](archive_764_/research_note_805.md)接原参考乘子及连续误差；继续[806](archive_764_/806/drafts/STATUS.md)核共同玻色准备与来源；784相对补全路线保留。[当前联合条件账](archive_764_/_shared/notes/unified_physics_condition_ledger_current.md)记录准确范围。
 
 [阶段成果总览](archive_764_/阶段成果总览.md) · [跨阶段主题索引](archive_764_/跨阶段主题索引.md) · [当前状态](RESEARCH_STATE.md) · [研究方向](research_direction.md)
 
@@ -56,7 +56,7 @@
 |12|653—701|[辅助历史与正性路线检验](archive_653_701/README.md)|
 |13|702—741|[正过程记录与首阶反作用](archive_702_741/README.md)|
 |14|742—763|[关联记录与共同量子背景](archive_742_763/README.md)|
-|15|764起（当前至804）|[共同量子场与局部来源](archive_764_/README.md)|
+|15|764起（当前至805）|[共同量子场与局部来源](archive_764_/README.md)|
 
 ## 量子理论重建大阶段的两篇综合论文
 
@@ -69,7 +69,7 @@
 
 正式报告、科学代码、结果及当前迁移清单纳入Git。README、研究方向、研究状态只在正式位置维护一份，修改记录交给Git；重复导航备份、迁移ZIP及旧版大型清单不再作为研究依赖。外部原始PDF按来源收据取得，详见[版本管理说明](../scripts/GIT_STORAGE.md)。
 
-按用户指示，在 [archive_764_](archive_764_/README.md) 持续推进当前目标；最新完成804，后续从[805入口](archive_764_/805/drafts/STATUS.md)接续。不改写应用目标或设置定时任务。
+按用户指示，在 [archive_764_](archive_764_/README.md) 持续推进当前目标；最新完成805，后续从[806入口](archive_764_/806/drafts/STATUS.md)接续。不改写应用目标或设置定时任务。
 
 ## 原项目根README迁入的历史记录
 
