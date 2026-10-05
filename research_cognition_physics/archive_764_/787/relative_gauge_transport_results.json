@@ -1,0 +1,121 @@
+{
+  "round": 787,
+  "fresh_test_groups": 3,
+  "free_gauge_family": {
+    "block_dimension": 15,
+    "cases": [
+      {
+        "auxiliary_pairing_case": 0,
+        "t": 0.0,
+        "inverse_residual": 1.3909527173404438e-15,
+        "physical_projection_residual": 1.3877787807814457e-16
+      },
+      {
+        "auxiliary_pairing_case": 0,
+        "t": 0.25,
+        "inverse_residual": 1.3031205660900408e-15,
+        "physical_projection_residual": 2.220446049250313e-16
+      },
+      {
+        "auxiliary_pairing_case": 0,
+        "t": 0.5,
+        "inverse_residual": 1.5673674885552325e-15,
+        "physical_projection_residual": 3.3306690738754696e-16
+      },
+      {
+        "auxiliary_pairing_case": 0,
+        "t": 0.75,
+        "inverse_residual": 1.82860803436989e-15,
+        "physical_projection_residual": 2.7755575615628914e-16
+      },
+      {
+        "auxiliary_pairing_case": 0,
+        "t": 1.0,
+        "inverse_residual": 3.3100633345384266e-15,
+        "physical_projection_residual": 4.440892098500626e-16
+      },
+      {
+        "auxiliary_pairing_case": 1,
+        "t": 0.0,
+        "inverse_residual": 1.3322676295501878e-15,
+        "physical_projection_residual": 3.3306690738754696e-16
+      },
+      {
+        "auxiliary_pairing_case": 1,
+        "t": 0.25,
+        "inverse_residual": 1.6151026221134762e-15,
+        "physical_projection_residual": 3.3306690738754696e-16
+      },
+      {
+        "auxiliary_pairing_case": 1,
+        "t": 0.5,
+        "inverse_residual": 2.1800554333057483e-15,
+        "physical_projection_residual": 2.220446049250313e-16
+      },
+      {
+        "auxiliary_pairing_case": 1,
+        "t": 0.75,
+        "inverse_residual": 5.337840383116975e-15,
+        "physical_projection_residual": 3.608224830031759e-16
+      },
+      {
+        "auxiliary_pairing_case": 1,
+        "t": 1.0,
+        "inverse_residual": 6.505107563725687e-15,
+        "physical_projection_residual": 9.43689570931383e-16
+      }
+    ],
+    "nonsymmetric_ghost_inverse_negative_control": 0.6159885503414126,
+    "scope": "Matrix calibration of both causal legs and general auxiliary pairing; not a continuum UV bound."
+  },
+  "anchored_relative_complex": {
+    "coefficient_arithmetic": "fractions.Fraction",
+    "external_parameter_degree_through": 4,
+    "monomials": 61,
+    "cochain_cases": 610,
+    "D_squared_zero": true,
+    "DH_plus_HD_equals_identity_minus_anchor": true,
+    "physical_ghost_zero_term": "(2/3)*r^4",
+    "anchored_counterterm": "-(2/3)*t*r^4",
+    "no_assumption_of_original_H0_vanishing": true,
+    "mixed_anomaly_components_repaired": true,
+    "unrepaired_anchor_anomaly_not_removed": true,
+    "scope": "Exact external-parameter relative complex diagnostic, not an original anomaly coefficient calculation."
+  },
+  "endpoint": {
+    "family": "A_t=(1-t) A_0+t I, spectrum(A_0) subset [1,infinity)",
+    "fixed_spectrum_limit_is_identity": true,
+    "operator_norm_convergence": false,
+    "strong_or_distributional_convergence_disproved": false,
+    "increasing_spectral_sequence": [
+      {
+        "t": "1/2",
+        "spectral_value": "4",
+        "inverse": "2/5",
+        "difference_from_endpoint": "3/5"
+      },
+      {
+        "t": "9/10",
+        "spectral_value": "100",
+        "inverse": "10/109",
+        "difference_from_endpoint": "99/109"
+      },
+      {
+        "t": "99/100",
+        "spectral_value": "10000",
+        "inverse": "100/10099",
+        "difference_from_endpoint": "9999/10099"
+      },
+      {
+        "t": "999/1000",
+        "spectral_value": "1000000",
+        "inverse": "1000/1000999",
+        "difference_from_endpoint": "999999/1000999"
+      }
+    ],
+    "scope": "Unbounded positive spectral counterexample to uniform endpoint inference; not a Lorentzian propagator model."
+  },
+  "all_checks_passed": true,
+  "actual_auxiliary_endpoint_quantum_matching_proven": false,
+  "original_interacting_positive_state_proven": false
+}

@@ -1,0 +1,89 @@
+{
+  "round": 804,
+  "all_checks_passed": true,
+  "scope": "Analytic infinite smoothing operator; not the original joint PDE or its state.",
+  "finite_block_certificates": [
+    {
+      "modes": 2,
+      "computed_eigenvalue": 0.39642297825504524,
+      "matrix_error_upper_bound": 1e-05,
+      "witness_lower_bound": 0.39641297825504523,
+      "direct_rayleigh_value": 0.39641881497842507,
+      "infinite_tail_upper_bound": 0.13368000000000002,
+      "global_norm_interval": [
+        0.2627329782550452,
+        0.5301129782550453
+      ],
+      "large_matrix_tail_check": 0.06752117751576767
+    },
+    {
+      "modes": 4,
+      "computed_eigenvalue": 0.40220872149649234,
+      "matrix_error_upper_bound": 1e-05,
+      "witness_lower_bound": 0.40219872149649233,
+      "direct_rayleigh_value": 0.4022074506998719,
+      "infinite_tail_upper_bound": 0.023056608000000003,
+      "global_norm_interval": [
+        0.37914211349649235,
+        0.4252753294964923
+      ],
+      "large_matrix_tail_check": 0.012032917190086055
+    },
+    {
+      "modes": 8,
+      "computed_eigenvalue": 0.40235326300380386,
+      "matrix_error_upper_bound": 1e-05,
+      "witness_lower_bound": 0.40234326300380385,
+      "direct_rayleigh_value": 0.4023530447570657,
+      "infinite_tail_upper_bound": 0.0008620948490188803,
+      "global_norm_interval": [
+        0.40148116815478496,
+        0.40322535785282276
+      ],
+      "large_matrix_tail_check": 0.0005310656215243324
+    },
+    {
+      "modes": 16,
+      "computed_eigenvalue": 0.40235316890735834,
+      "matrix_error_upper_bound": 1e-05,
+      "witness_lower_bound": 0.40234316890735833,
+      "direct_rayleigh_value": 0.40235313894477004,
+      "infinite_tail_upper_bound": 2.0887527806002326e-06,
+      "global_norm_interval": [
+        0.40234108015457776,
+        0.4023652576601389
+      ],
+      "large_matrix_tail_check": 1.838644080079918e-06
+    }
+  ],
+  "weakly_null_mode_responses": [
+    {
+      "mode": 1,
+      "response": 0.372
+    },
+    {
+      "mode": 4,
+      "response": -0.013967807999999998
+    },
+    {
+      "mode": 8,
+      "response": -0.00093682354265088
+    },
+    {
+      "mode": 16,
+      "response": -3.6621090844637806e-06
+    },
+    {
+      "mode": 32,
+      "response": -5.587935447692866e-11
+    }
+  ],
+  "hidden_mode_counterexample": {
+    "first_eight_modes_zero": true,
+    "ninth_response": 0.7
+  },
+  "hermitian_response_extraction_residual": 0.0,
+  "analytic_tail_proof": "D tail <= .12*.5**n; rank-one tail <= .3*(2*.4**n+.4**(2*n)).",
+  "original_PDE_evaluated": false,
+  "all_checks_are_numerical_calibration": true
+}

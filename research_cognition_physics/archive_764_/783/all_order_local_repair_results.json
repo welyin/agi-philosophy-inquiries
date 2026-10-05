@@ -1,0 +1,68 @@
+{
+  "round": 783,
+  "test_groups": 2,
+  "exact_arithmetic": true,
+  "all_order_source_repair": {
+    "qme_coefficients_checked_through_order": 6,
+    "equation": "1/2 (S_epsilon,S_epsilon) - epsilon Delta S_epsilon = 0",
+    "epsilon_is_a_formal_algebraic_loop_symbol_not_physical_hbar": true,
+    "first_physical_linear_coefficient": "7/11",
+    "first_correction_never_replaced": true,
+    "unrepaired_second_order_defect": "4*r*c + -7/11*r^2*c + -2*r^3*b^2*c + -5/2*r^4*b*c + -4*q*r^3*b*c + -5*q*r^4*c",
+    "quantum_laplacian_first_correction": "-4*r*c",
+    "second_order_correction": "-4*q*r + 7/11*q*r^2 + 2*q*r^3*b^2 + 5/2*q*r^4*b + 2*q^2*r^3*b + 5/2*q^2*r^4",
+    "order_checks": [
+      {
+        "order": 2,
+        "defect_terms": 6,
+        "correction_terms": 6,
+        "second_source_derivative_terms": 1,
+        "coefficient_equation_exact": true
+      },
+      {
+        "order": 3,
+        "defect_terms": 10,
+        "correction_terms": 10,
+        "second_source_derivative_terms": 3,
+        "coefficient_equation_exact": true
+      },
+      {
+        "order": 4,
+        "defect_terms": 14,
+        "correction_terms": 14,
+        "second_source_derivative_terms": 7,
+        "coefficient_equation_exact": true
+      },
+      {
+        "order": 5,
+        "defect_terms": 18,
+        "correction_terms": 18,
+        "second_source_derivative_terms": 11,
+        "coefficient_equation_exact": true
+      },
+      {
+        "order": 6,
+        "defect_terms": 22,
+        "correction_terms": 22,
+        "second_source_derivative_terms": 15,
+        "coefficient_equation_exact": true
+      }
+    ],
+    "mixed_source_derivatives_checked": 30,
+    "continuum_anomaly_coefficients_computed": false,
+    "source_symbol": "b in inherited engine denotes external zeta, not a quantum field"
+  },
+  "completion_and_scope": {
+    "homotopy_and_laplacian_monomials": 129,
+    "vertex_valence_loop_count_cases": 6282,
+    "maximum_vertices_enumerated": 5,
+    "identity": "sum(d_v+2*r_v-2) = external_legs+2*total_loops-2",
+    "types_have_strictly_positive_excess": true,
+    "omitted_degree_four_contact_at_degree_two": "3*q^2",
+    "exact_positive_rank_one_density_determinant": "0",
+    "first_order_density_determinant_at_epsilon_one_tenth": "-1/100",
+    "enumeration_is_not_a_continuum_Feynman_integral": true
+  },
+  "original_physical_anomaly_computed": false,
+  "interacting_charge_or_positive_state_constructed": false
+}

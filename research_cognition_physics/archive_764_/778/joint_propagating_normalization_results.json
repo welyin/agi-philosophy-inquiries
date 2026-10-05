@@ -1,0 +1,178 @@
+{
+  "round": 778,
+  "groups": {
+    "graded_bv_identity": {
+      "supermonomials": 321,
+      "coefficient_checks": 868,
+      "free_boson_hessian": [
+        [
+          "8/27",
+          "-4/45"
+        ],
+        [
+          "-4/45",
+          "77/75"
+        ]
+      ],
+      "mixed_boson_covariance": [
+        [
+          "693/200",
+          "3/10"
+        ],
+        [
+          "3/10",
+          "1"
+        ]
+      ],
+      "ghost_contraction": "-3/2",
+      "graded_quantum_bv_identity_exact": true,
+      "wrong_ghost_sign_defect": "-2"
+    },
+    "linear_insertions_and_quadratic_antifield": {
+      "supermonomials": 129,
+      "basic_equation_coefficient_checks": 376,
+      "quadratic_antifield_factor_checks": 161,
+      "antifield_square_brst_variation": "4/3*a*c",
+      "omit_mixed_covariance_offdiagonal_residual": "-4/45",
+      "preserves_antifield_square_without_treating_it_as_inert": true
+    },
+    "ultralocal_composite_loop_boundary": {
+      "regulator_dimension": 4,
+      "exact_regulator_cases": 15,
+      "cases": [
+        {
+          "mu": "1",
+          "epsilon": "1/4",
+          "raw_scaled": "65536/289",
+          "subtracted_scaled": "800/289",
+          "finite_limit_scaled": "3",
+          "error": 0.23183391003460208
+        },
+        {
+          "mu": "1",
+          "epsilon": "1/8",
+          "raw_scaled": "16777216/4225",
+          "subtracted_scaled": "12416/4225",
+          "finite_limit_scaled": "3",
+          "error": 0.06130177514792899
+        },
+        {
+          "mu": "1",
+          "epsilon": "1/16",
+          "raw_scaled": "4294967296/66049",
+          "subtracted_scaled": "197120/66049",
+          "finite_limit_scaled": "3",
+          "error": 0.015549062059985769
+        },
+        {
+          "mu": "1",
+          "epsilon": "1/32",
+          "raw_scaled": "1099511627776/1050625",
+          "subtracted_scaled": "3147776/1050625",
+          "finite_limit_scaled": "3",
+          "error": 0.003901487209994051
+        },
+        {
+          "mu": "1",
+          "epsilon": "1/64",
+          "raw_scaled": "281474976710656/16785409",
+          "subtracted_scaled": "50339840/16785409",
+          "finite_limit_scaled": "3",
+          "error": 0.0009762645640627524
+        },
+        {
+          "mu": "2",
+          "epsilon": "1/4",
+          "raw_scaled": "16384/81",
+          "subtracted_scaled": "832/81",
+          "finite_limit_scaled": "12",
+          "error": 1.728395061728395
+        },
+        {
+          "mu": "2",
+          "epsilon": "1/8",
+          "raw_scaled": "4194304/1089",
+          "subtracted_scaled": "12544/1089",
+          "finite_limit_scaled": "12",
+          "error": 0.48117539026629935
+        },
+        {
+          "mu": "2",
+          "epsilon": "1/16",
+          "raw_scaled": "1073741824/16641",
+          "subtracted_scaled": "197632/16641",
+          "finite_limit_scaled": "12",
+          "error": 0.12379063758187608
+        },
+        {
+          "mu": "2",
+          "epsilon": "1/32",
+          "raw_scaled": "274877906944/263169",
+          "subtracted_scaled": "3149824/263169",
+          "finite_limit_scaled": "12",
+          "error": 0.0311738844620757
+        },
+        {
+          "mu": "2",
+          "epsilon": "1/64",
+          "raw_scaled": "70368744177664/4198401",
+          "subtracted_scaled": "50348032/4198401",
+          "finite_limit_scaled": "12",
+          "error": 0.007807734420794964
+        },
+        {
+          "mu": "3",
+          "epsilon": "1/4",
+          "raw_scaled": "65536/361",
+          "subtracted_scaled": "7776/361",
+          "finite_limit_scaled": "27",
+          "error": 5.45983379501385
+        },
+        {
+          "mu": "3",
+          "epsilon": "1/8",
+          "raw_scaled": "16777216/4489",
+          "subtracted_scaled": "114048/4489",
+          "finite_limit_scaled": "27",
+          "error": 1.5938961906883493
+        },
+        {
+          "mu": "3",
+          "epsilon": "1/16",
+          "raw_scaled": "4294967296/67081",
+          "subtracted_scaled": "1783296/67081",
+          "finite_limit_scaled": "27",
+          "error": 0.41578092157242735
+        },
+        {
+          "mu": "3",
+          "epsilon": "1/32",
+          "raw_scaled": "1099511627776/1054729",
+          "subtracted_scaled": "28366848/1054729",
+          "finite_limit_scaled": "27",
+          "error": 0.10508386514450631
+        },
+        {
+          "mu": "3",
+          "epsilon": "1/64",
+          "raw_scaled": "281474976710656/16801801",
+          "subtracted_scaled": "453206016/16801801",
+          "finite_limit_scaled": "27",
+          "error": 0.026343068817444033
+        }
+      ],
+      "raw_product_diverges_as": "epsilon^-4",
+      "further_divergence": "epsilon^-2 * Laplacian(f)(0) / 4",
+      "finite_part_scaled": "Laplacian^2(f)(0) / 32",
+      "finite_delta_scheme_shift_scaled": "7/3",
+      "regulator_is_not_a_physical_model": true,
+      "continuum_auxiliary_extension_proven": false
+    }
+  },
+  "all_checks_passed": true,
+  "finite_tests_prove_continuum_normalization": false,
+  "original_full_N1_N2_proven": false,
+  "frame_quantum_transfer_proven": false,
+  "original_loop_anomaly_computed": false,
+  "interacting_positive_state_proven": false
+}

@@ -1,0 +1,60 @@
+{
+  "round": 782,
+  "groups": {
+    "full_nonlinear_bv_input_in_fixed_free_family": {
+      "canonical_generator_pairs": 100,
+      "free_bv_monomials": 231,
+      "full_nonlinear_master_equation_exact": true,
+      "nonlinear_vertices_retained": "4/5*r*c*p + 2/25*r^4 + 4/625*r^6 + 2/5*q*r^2 + 6/125*q*r^4 + 3/25*q^2*r^2 + 1/10*q^3",
+      "same_cubic_smooth_source": "1/5*q",
+      "analytic_frame_chart_cme_checked_through_degree": 6,
+      "second_chart_frame_source": "4/15*r",
+      "first_frame_counterterm": "-4/15*r",
+      "frame_source_repaired_without_changing_physical_source": true,
+      "omitted_antifield_interaction_master_defect": "16/25*r^3*c + 48/625*r^5*c + 8/5*q*r*c + 48/125*q*r^3*c + 12/25*q^2*r*c",
+      "same_free_contraction_suffices_for_complete_input_domain": true
+    },
+    "background_linear_full_kernel_dictionary": {
+      "sites": 3,
+      "maximum_residuals": {
+        "green_identity": 6.785656424430141e-16,
+        "covariance_round_trip": 1.7328906397371353e-16,
+        "cotangent_pairing": 1.2412670766236366e-16
+      },
+      "original_propagating_covariance_unchanged": true,
+      "original_ghost_mixed_block_required": true,
+      "omit_mixed_green_block_defect": 5.4520128800695655,
+      "fixed_background_difference_operator": [
+        [
+          -2.0,
+          2.0,
+          0.0
+        ],
+        [
+          0.0,
+          -3.0,
+          3.0
+        ],
+        [
+          1.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "finite_w_matrix_claimed_as_continuum_bisolution": false
+    },
+    "naive_nonlinear_star_transport_boundary": {
+      "exact_commutator_over_i_hbar": "1 + 4/7*q",
+      "naive_same_free_star_pullback_defect": "4/7*q",
+      "quantum_correction_starting_at_hbar_cannot_change_leading_poisson": true,
+      "centered_gaussian_composite_source_shift_over_hbar": "6/35",
+      "counterexample_scope": "Naive unchanged free-star pullback only; not a no-go for interacting equivalence or full-domain direct normalization."
+    }
+  },
+  "all_checks_passed": true,
+  "analytical_claim": "Original N1/N2 existence in the declared full local field chart; stronger independent-chart equivalence is not inferred.",
+  "finite_checks_prove_continuum_theorem": false,
+  "original_anomaly_coefficients_computed": false,
+  "all_loop_quantum_master_equation_proven": false,
+  "interacting_positive_state_proven": false
+}

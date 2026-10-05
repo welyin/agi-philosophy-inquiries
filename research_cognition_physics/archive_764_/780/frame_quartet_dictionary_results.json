@@ -1,0 +1,97 @@
+{
+  "round": 780,
+  "groups": {
+    "local_metric_frame_cocycle": {
+      "samples": 24,
+      "maximum_residuals": {
+        "section_metric": 1.2997283238011699e-15,
+        "lorentz_factor": 1.1389994201120872e-15,
+        "reconstruction": 4.582544366376917e-16,
+        "finite_cocycle": 9.749167597795535e-16,
+        "sylvester_derivative": 3.9984763628162415e-11
+      },
+      "freeze_metric_in_finite_cocycle_minimum_defect": 0.000390085125258113,
+      "frozen_infinitesimal_cocycle_defect": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          2.0,
+          0.0
+        ],
+        [
+          0.0,
+          -2.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "result_scope": "Near-background local section; no global square-root or topology assertion."
+    },
+    "same_spinor_and_connection": {
+      "samples": 16,
+      "maximum_residuals": {
+        "clifford": 0.0,
+        "spin_lift": 1.1436808431090124e-15,
+        "chirality": 0.0,
+        "majorana": 1.55436094595354e-15,
+        "connection_lift": 3.5677467411071865e-16,
+        "dirac_covariance": 3.2023728339893768e-15
+      },
+      "omit_inhomogeneous_connection_minimum_defect": 0.37213757626379457,
+      "same_chiral_and_majorana_bilinears": true,
+      "independent_torsion_or_new_fermions_added": false
+    },
+    "adapted_quartet_bv": {
+      "supermonomials": 321,
+      "classical_master_equation_exact": true,
+      "brst_on_generators": {
+        "q": "1*c",
+        "r": "0",
+        "c": "0",
+        "h": "1*r",
+        "p": "1*r",
+        "t": "-1*a + 1*q",
+        "z": "1*p + -1*h",
+        "a": "1*c"
+      },
+      "graded_commutator": "[s,C]=-Delta",
+      "bosonic_hessian": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "propagating_degrees_of_freedom_added": 0
+    },
+    "graded_tree_contact": {
+      "order": 4,
+      "exact_envelope_and_stationarity_checks": 50,
+      "odd_and_antifield_mixed_vertices": true,
+      "stationary_cost_omission_defect": "-1*q*r",
+      "second_order_contact": "1*q*r*c*p + -1*q*r*c*h + -1*q*r*a + -1/2*q*r^3 + 1*q^2*c*p + -1*q^2*c*h + -1/2*q^3*r",
+      "physical_spectator_action_unchanged": true,
+      "continuum_prescription_proven_by_finite_test": false
+    }
+  },
+  "all_checks_passed": true,
+  "original_full_N1_N2_proven": false,
+  "nonlinear_original_chart_quantum_transport_proven": false,
+  "new_physical_structure_derived_from_cognition": false,
+  "original_loop_anomaly_computed": false
+}

@@ -1,0 +1,77 @@
+{
+  "working_round": 805,
+  "all_checks_passed": true,
+  "model": "i dt psi = (-i sigma3 dx + .4 sigma1 + .46 cos(x) sigma1) psi on S1",
+  "diagnostic_not_original_background": true,
+  "full_omitted_Fourier_residual_included": true,
+  "trials": [
+    {
+      "modes_each_side": 2,
+      "time_midpoints": 2048,
+      "integral": [
+        0.004434860431254989,
+        -0.01313150264401892
+      ],
+      "u_L2_error_bound": 0.0006130391234506722,
+      "z_H1_error_bound": 0.037056707366924686,
+      "full_PDE_wave_pairing_error_bound": 0.005045298300910784,
+      "quadrature_error_bound": 1.1869302792491639e-05,
+      "total_error_bound": 0.005057167603703276,
+      "omitted_residual_integral_u": 0.0005922932861108218,
+      "omitted_residual_integral_z": 0.008871297096031336,
+      "larger_discretization_difference": 2.080862650319014e-06
+    },
+    {
+      "modes_each_side": 4,
+      "time_midpoints": 2048,
+      "integral": [
+        0.004434367872157138,
+        -0.01313352442881527
+      ],
+      "u_L2_error_bound": 4.1217159229522696e-05,
+      "z_H1_error_bound": 0.0003585229521158956,
+      "full_PDE_wave_pairing_error_bound": 5.746684736350488e-05,
+      "quadrature_error_bound": 6.344243863071348e-05,
+      "total_error_bound": 0.00012090928599421836,
+      "omitted_residual_integral_u": 5.1937685207275e-07,
+      "omitted_residual_integral_z": 1.2655975401866027e-05,
+      "larger_discretization_difference": 6.188940084234195e-11
+    },
+    {
+      "modes_each_side": 6,
+      "time_midpoints": 2048,
+      "integral": [
+        0.00443436787053641,
+        -0.013133524434534683
+      ],
+      "u_L2_error_bound": 6.082380278494172e-05,
+      "z_H1_error_bound": 0.0005668569860789039,
+      "full_PDE_wave_pairing_error_bound": 8.979298682216607e-05,
+      "quadrature_error_bound": 0.00016625590850722838,
+      "total_error_bound": 0.00025604889532939443,
+      "omitted_residual_integral_u": 2.1336745628837872e-10,
+      "omitted_residual_integral_z": 7.1680258573376405e-09,
+      "larger_discretization_difference": 6.735946892041544e-11
+    }
+  ],
+  "larger_discretization_check": {
+    "modes_each_side": 18,
+    "time_midpoints": 4096,
+    "integral": [
+      0.004434367863242231,
+      -0.013133524367571313
+    ],
+    "u_L2_error_bound": 9.099667905188171e-05,
+    "z_H1_error_bound": 0.0022816294045569685,
+    "full_PDE_wave_pairing_error_bound": 0.00032358865483386696,
+    "quadrature_error_bound": 0.0010110221146146837,
+    "total_error_bound": 0.0013346107694485506,
+    "omitted_residual_integral_u": 5.586833765792568e-26,
+    "omitted_residual_integral_z": 3.5698348973931106e-26
+  },
+  "discrete_residual_would_be_zero": true,
+  "floating_point_is_not_interval_certificate": true,
+  "original_PDE_response_evaluated": false,
+  "formal_round_completed": false,
+  "new_numbered_test_groups": 0
+}
