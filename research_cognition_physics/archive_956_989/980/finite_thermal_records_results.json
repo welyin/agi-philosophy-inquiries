@@ -1,0 +1,222 @@
+{
+  "round": 980,
+  "date": "2026-10-07",
+  "all_scientific_checks_passed": true,
+  "parameters": {
+    "eta": 0.05,
+    "beta": 1.3862943611198906,
+    "theta": 1.0,
+    "energies": [
+      -0.05407189535739738,
+      -0.009460353465319449,
+      1.0,
+      1.038532248822717
+    ],
+    "thermal_populations": [
+      0.4180856132343885,
+      0.39301253181746554,
+      0.09697297225727221,
+      0.09192888269087374
+    ],
+    "Q_star_center": 2,
+    "resonant_weights": [
+      0.02263356823323078,
+      0.013170625769085391,
+      0.0,
+      0.9641958059976847
+    ]
+  },
+  "eigensystem_certificate": {
+    "decimal_residual": 2.5860700791916545e-16,
+    "orthogonality_error": 8.92811933672532e-16,
+    "minimum_single_gap": 0.03853224882271711,
+    "coarse_analytic_certificate": {
+      "root_brackets": [
+        [
+          "-6759/125000",
+          "-54071/1000000"
+        ],
+        [
+          "-9461/1000000",
+          "-473/50000"
+        ],
+        [
+          "259633/250000",
+          "1038533/1000000"
+        ]
+      ],
+      "weight_intervals": [
+        [
+          0.022631930470645788,
+          0.02263469238555822
+        ],
+        [
+          0.013170177647789688,
+          0.013171277712599188
+        ],
+        [
+          0.9641909991907707,
+          0.9641997240533415
+        ]
+      ],
+      "thermal_intervals": [
+        [
+          0.41808490840910584,
+          0.4180860113836087
+        ],
+        [
+          0.39301216450062304,
+          0.39301320132923856
+        ],
+        [
+          0.09697292914192408,
+          0.09697305053865256
+        ],
+        [
+          0.09192874608787853,
+          0.09192898861053594
+        ]
+      ],
+      "nonresonant_gap_rational_lower": 0.04461,
+      "analytic_spectral_gap_lower": 1.622308606087149e-05,
+      "uniform_rate": "1 - 1/62500",
+      "minimum_population_diagonal_lower": 0.899,
+      "exp_9_6_rational_lower": 14764.781524031268
+    },
+    "minimum_nonresonant_V_gap": 0.044611541892077944,
+    "primitive_integral_bound": 4000.0,
+    "diagnostic_integral_bound": 57.312431560861846
+  },
+  "channel": {
+    "population_matrix": [
+      [
+        0.9999503313221313,
+        0.0,
+        0.0002141396634741779,
+        0.0
+      ],
+      [
+        0.0,
+        0.9999831795188364,
+        6.817012755833874e-05,
+        0.0
+      ],
+      [
+        4.9668677868667285e-05,
+        1.6820481163587443e-05,
+        0.9376646532078482,
+        0.06545785458770091
+      ],
+      [
+        0.0,
+        0.0,
+        0.062053037001119304,
+        0.9345421454122991
+      ]
+    ],
+    "coherence_multipliers": [
+      [
+        0.9999503313221312,
+        0.9999667540291501,
+        0.9603117229651925,
+        0.9582950050643964
+      ],
+      [
+        0.9999667540291501,
+        0.9999831795188363,
+        0.9603281498796086,
+        0.9583043696832813
+      ],
+      [
+        0.9603117229651924,
+        0.9603281498796085,
+        0.9376646532078482,
+        0.9186457248674001
+      ],
+      [
+        0.9582950050643964,
+        0.9583043696832813,
+        0.9186457248674003,
+        0.934542145412299
+      ]
+    ],
+    "reversible_population_spectrum": [
+      0.8723515214622751,
+      0.9998123286488836,
+      0.9999764593499564,
+      1.0
+    ],
+    "population_rate": 0.9999764593499564,
+    "coherence_rate": 0.9999667540291501,
+    "certified_rate": 0.999984,
+    "norm_prefactor": 13.0,
+    "stationary_error": 1.962615573354719e-17,
+    "one_contact_dilation_error": 2.220446049250313e-16,
+    "contacts": 600000,
+    "comparison_thermal_reset_bound": 0.0009285714285714286,
+    "final_choi_reset_bound": 1.1112671863197643e-06,
+    "full_charge_reset_bound": 0.0010285714285714286,
+    "arbitrary_unknown_input_and_passive_reference": true,
+    "final_label_information_upper_nats": 0.018468374870164006
+  },
+  "finite_resources": {
+    "coupling_g": 1.0416666666666667e-14,
+    "each_contact_time": 96000000000000.0,
+    "total_contact_time": 5.76e+19,
+    "prepared_thermal_copies": 600000,
+    "initial_bath_energy_above_ground": 132114.75473450756,
+    "initial_bath_entropy": 706391.3701566897,
+    "thermal_state_to_best_pure_blank_distance": 0.5819143867656116,
+    "switching_work_absolute_bound": 6.2500000000000005e-09,
+    "complete_bath_bare_energy_change_bound": 1.0926041504301145,
+    "no_bath_reused_or_reset": true,
+    "controller_preparation_not_constructed": true
+  },
+  "thermodynamic_check": {
+    "material_energy_change": -8.909873854274499e-05,
+    "bath_heat": 8.909873854262204e-05,
+    "energy_balance_error": 1.229485263598562e-16,
+    "endpoint_entropy_production": 0.15584634502066086,
+    "mutual_information": 0.1558068763251801,
+    "bath_relative_entropy": 3.946869548099308e-05,
+    "landauer_identity_error": 2.220446049250313e-16
+  },
+  "averaging_diagnostics": [
+    {
+      "g": 0.001,
+      "time": 1000.0,
+      "full_unitary_error": 0.02219889225348796,
+      "averaging_bound": 0.22719770082509794
+    },
+    {
+      "g": 0.0005,
+      "time": 2000.0,
+      "full_unitary_error": 0.013844520847508245,
+      "averaging_bound": 0.11359885041254897
+    }
+  ],
+  "scope": {
+    "finite_positive_full_charge_collision_sequence": true,
+    "infinite_bath_required": false,
+    "new_primitive_reset_operator_inserted": false,
+    "constant_autonomous_controller_constructed": false,
+    "pure_blank_reset_proved": false,
+    "universe_permanent_arrow_proved": false,
+    "actual_geometric_feedback_computed": false,
+    "whole_lifecycle_with_976_verified": false,
+    "full_SM_matching_completed": false,
+    "full_goal_completed": false
+  },
+  "references": [
+    "https://arxiv.org/abs/2106.11974",
+    "https://arxiv.org/abs/1306.4352"
+  ],
+  "source_hashes": {
+    "research_cognition_physics\\archive_764_\\980\\finite_thermal_records.py": "e93e543a119dc1e8073954dc9f51e44e7dcad8604cb877b045c9467cca80e687",
+    "research_cognition_physics\\archive_764_\\980\\drafts\\finite_thermal_decision.md": "dee5b8e15f8163ae853a8577032399bce22f1a157644c0eaf42d159703f4501c",
+    "research_cognition_physics\\archive_764_\\968\\internal_relay.py": "d400f901510b89f3e1e07f23b01bab3a1502ccddd05b57fd21a45970ddb63235",
+    "research_cognition_physics\\archive_764_\\research_note_972.md": "2aa2a55c90cfe08fbd88b173aece0d541e6e60d2f418df8c910012ca74380e41",
+    "research_cognition_physics\\archive_764_\\975\\drafts\\record_arrow_adoption.md": "f84aff050a281fc94084035e1fdb72692e19e118c4b8e9f787d37acb96f16cb1",
+    "research_cognition_physics\\archive_764_\\979\\spectral_mass_bridge_results.json": "9d2cc6f3f17f0e2bfc38bc4f86eff987413ed7504450d8c5a84573c191bacd4d"
+  }
+}

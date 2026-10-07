@@ -1,0 +1,303 @@
+{
+  "round": 1000,
+  "date": "2026-10-07",
+  "kind": "classical_effective_thermoelastic_dynamic_screen",
+  "all_scientific_checks_passed": true,
+  "parameters": {
+    "rho": {
+      "exact": "1",
+      "value": 1.0
+    },
+    "K": {
+      "exact": "4",
+      "value": 4.0
+    },
+    "b": {
+      "exact": "1",
+      "value": 1.0
+    },
+    "c": {
+      "exact": "2",
+      "value": 2.0
+    },
+    "T0": {
+      "exact": "1",
+      "value": 1.0
+    },
+    "kappa": {
+      "exact": "1/2",
+      "value": 0.5
+    }
+  },
+  "finite_state": {
+    "strain": [
+      {
+        "exact": "1/100",
+        "value": 0.01
+      },
+      {
+        "exact": "0",
+        "value": 0.0
+      },
+      {
+        "exact": "-1/100",
+        "value": -0.01
+      },
+      {
+        "exact": "0",
+        "value": 0.0
+      }
+    ],
+    "velocity": [
+      {
+        "exact": "0",
+        "value": 0.0
+      },
+      {
+        "exact": "1/10",
+        "value": 0.1
+      },
+      {
+        "exact": "0",
+        "value": 0.0
+      },
+      {
+        "exact": "-1/10",
+        "value": -0.1
+      }
+    ],
+    "temperature": [
+      {
+        "exact": "6/5",
+        "value": 1.2
+      },
+      {
+        "exact": "1",
+        "value": 1.0
+      },
+      {
+        "exact": "4/5",
+        "value": 0.8
+      },
+      {
+        "exact": "1",
+        "value": 1.0
+      }
+    ]
+  },
+  "matched": {
+    "strain_rate": [
+      {
+        "exact": "1/10",
+        "value": 0.1
+      },
+      {
+        "exact": "0",
+        "value": 0.0
+      },
+      {
+        "exact": "-1/10",
+        "value": -0.1
+      },
+      {
+        "exact": "0",
+        "value": 0.0
+      }
+    ],
+    "velocity_rate": [
+      {
+        "exact": "0",
+        "value": 0.0
+      },
+      {
+        "exact": "4/25",
+        "value": 0.16
+      },
+      {
+        "exact": "0",
+        "value": 0.0
+      },
+      {
+        "exact": "-4/25",
+        "value": -0.16
+      }
+    ],
+    "temperature_rate": [
+      {
+        "exact": "-4/25",
+        "value": -0.16
+      },
+      {
+        "exact": "0",
+        "value": 0.0
+      },
+      {
+        "exact": "7/50",
+        "value": 0.14
+      },
+      {
+        "exact": "0",
+        "value": 0.0
+      }
+    ],
+    "energy_rate": {
+      "exact": "0",
+      "value": 0.0
+    },
+    "entropy_rate": {
+      "exact": "1/12",
+      "value": 0.08333333333333333
+    },
+    "availability_rate": {
+      "exact": "-1/12",
+      "value": -0.08333333333333333
+    }
+  },
+  "omitted_thermal_feedback": {
+    "strain_rate": [
+      {
+        "exact": "1/10",
+        "value": 0.1
+      },
+      {
+        "exact": "0",
+        "value": 0.0
+      },
+      {
+        "exact": "-1/10",
+        "value": -0.1
+      },
+      {
+        "exact": "0",
+        "value": 0.0
+      }
+    ],
+    "velocity_rate": [
+      {
+        "exact": "0",
+        "value": 0.0
+      },
+      {
+        "exact": "4/25",
+        "value": 0.16
+      },
+      {
+        "exact": "0",
+        "value": 0.0
+      },
+      {
+        "exact": "-4/25",
+        "value": -0.16
+      }
+    ],
+    "temperature_rate": [
+      {
+        "exact": "-1/10",
+        "value": -0.1
+      },
+      {
+        "exact": "0",
+        "value": 0.0
+      },
+      {
+        "exact": "1/10",
+        "value": 0.1
+      },
+      {
+        "exact": "0",
+        "value": 0.0
+      }
+    ],
+    "energy_rate": {
+      "exact": "1/25",
+      "value": 0.04
+    },
+    "entropy_rate": {
+      "exact": "1/12",
+      "value": 0.08333333333333333
+    },
+    "availability_rate": {
+      "exact": "-13/300",
+      "value": -0.043333333333333335
+    }
+  },
+  "edge_entropy_production": {
+    "exact": "1/12",
+    "value": 0.08333333333333333
+  },
+  "state_function_diagnostics": {
+    "energy_relative_reference": 0.0104,
+    "entropy_relative_reference": -0.08164398904051023,
+    "availability": 0.09204398904051023
+  },
+  "continuous_linear_symbol": {
+    "k": {
+      "exact": "1",
+      "value": 1.0
+    },
+    "polynomial_coefficients": [
+      {
+        "exact": "2",
+        "value": 2.0
+      },
+      {
+        "exact": "1/2",
+        "value": 0.5
+      },
+      {
+        "exact": "9",
+        "value": 9.0
+      },
+      {
+        "exact": "2",
+        "value": 2.0
+      }
+    ],
+    "routh_margin": {
+      "exact": "1/2",
+      "value": 0.5
+    },
+    "roots": [
+      {
+        "real": -0.013737721509419765,
+        "imag": 2.119834265743928
+      },
+      {
+        "real": -0.013737721509419765,
+        "imag": -2.119834265743928
+      },
+      {
+        "real": -0.22252455698116047,
+        "imag": 0.0
+      }
+    ],
+    "isothermal_speed_squared": {
+      "exact": "4",
+      "value": 4.0
+    },
+    "adiabatic_speed_squared": {
+      "exact": "9/2",
+      "value": 4.5
+    }
+  },
+  "discrete_checkerboard_null_mode_preserved": true,
+  "long_time_ode_simulated": false,
+  "nonlinear_temperature_constitutive_branch": true,
+  "microscopic_phase_derived": false,
+  "transport_coefficients_derived": false,
+  "noise_or_memory_lifetime_certified": false,
+  "all_discrete_nonuniform_modes_damped": false,
+  "einstein_geometry_derived": false,
+  "quantum_channel_constructed": false,
+  "full_goal_completed": false,
+  "source_hashes": {
+    "research_cognition_physics\\archive_764_\\1000\\drafts\\adoption_decision.md": "42cb9c93ab137138c0c71e438e5cc4763e5db97b685d0cfd6f7e2270d8bfb064",
+    "research_cognition_physics\\archive_764_\\1000\\drafts\\STATUS.md": "8f8dbd0932f7c5263eb5b7585f75228b8199be9fd872c86df8d543147b681539",
+    "research_cognition_physics\\archive_764_\\999\\research_round_999_checks.json": "2bdac134816c9cab5660354a539f8c90e3adf0f6a482609882f76b45101fb2cb",
+    "research_cognition_physics\\archive_764_\\999\\overall_operation_hypothesis_v1.md": "ece850ff13e4d501ae8e40e68a56f15b8d763b2560de924cefd693573106d7e1",
+    "research_cognition_physics\\archive_629_652\\research_note_645.md": "f431e0bb87199b0eb4f90f07de631258eb103643e084fa9affe94b591c9646bb",
+    "research_cognition_physics\\archive_342_369\\research_note_354.md": "acd4edda7181697c1a28d0133420c57bb804958ff8ca064396890e8448bef799",
+    "research_cognition_physics\\archive_342_369\\research_note_355.md": "ff81f5ab6bab96286869d7d19d8648ec52cedcaf4cac1401eaf2fd0b5a7efad0",
+    "research_cognition_physics\\archive_764_\\1000\\thermoelastic_common_account.py": "edc07747c9d1fe82db046fbef193bff01a335ead076743d1dd5c9de0e83044ce"
+  }
+}

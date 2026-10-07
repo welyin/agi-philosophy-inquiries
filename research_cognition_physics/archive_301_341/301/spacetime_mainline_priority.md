@@ -75,4 +75,4 @@
 
 ## 6. 保存与核验
 
-本次只调整当前优先级，保留全部编号笔记、代码和结果。同步更新项目README、研究README、research_direction、RESEARCH_STATE及阶段索引。文档链接与冻结科学文件哈希核对结果见[路线调整检查](../../archive_764_/_shared/results/spacetime_mainline_priority_checks.json)。不新增科学检查计数，不运行图像检验。
+本次只调整当前优先级，保留全部编号笔记、代码和结果。同步更新项目README、研究README、research_direction、RESEARCH_STATE及阶段索引。文档链接与冻结科学文件哈希核对结果见[路线调整检查](../../_shared/results/spacetime_mainline_priority_checks.json)。不新增科学检查计数，不运行图像检验。

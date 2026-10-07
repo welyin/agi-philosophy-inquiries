@@ -1,6 +1,6 @@
 # 518后来源范围修正：已知局部态与预测分辨能力
 
-日期：2026-09-28。未编号复核；科学基线518／2542。复用[498](../research_note_498.md)、[499](../research_note_499.md)及[518](../research_note_518.md)，不把直接推论登记为519。代码：[四项诊断](../../archive_764_/_shared/code/record_determined_predictor_probe.py)；[保存结果](../../archive_764_/_shared/results/record_determined_predictor_probe_results.json)。正式稿与终审稿保持相同字节，旧笔记不改。
+日期：2026-09-28。未编号复核；科学基线518／2542。复用[498](../research_note_498.md)、[499](../research_note_499.md)及[518](../research_note_518.md)，不把直接推论登记为519。代码：[四项诊断](../../_shared/code/record_determined_predictor_probe.py)；[保存结果](../../_shared/results/record_determined_predictor_probe_results.json)。正式稿与终审稿保持相同字节，旧笔记不改。
 
 ## 1. 修正什么
 
@@ -122,7 +122,7 @@ $$
 
 ## 7. 与宏观空间主线的关系及下一项
 
-用户提出空间可以是宏观有效描述，已在[宏观猜想审查](../../archive_764_/_shared/notes/macroscopic_space_conjecture_review.md)记录；人脑感知错误仍不能直接推出微观物理几何异常。本次不修改理想量子操作的精确／极限语义，也不重问该问题阻断独立研究。
+用户提出空间可以是宏观有效描述，已在[宏观猜想审查](../../_shared/notes/macroscopic_space_conjecture_review.md)记录；人脑感知错误仍不能直接推出微观物理几何异常。本次不修改理想量子操作的精确／极限语义，也不重问该问题阻断独立研究。
 
 本审查修正了一项多加的摘要要求，未新增编号结论；宏观空间与三维选择仍未得到。下一项应声明一个有实际来源的跨尺度定位菜单，检验其能否区分不同关系配置、稳定接续并选择维数，而不只是允许一个恒定输出通过误差验收。若复用现有传播工具已能完成局部非零信号辨别，应记为推论，不再开一轮常数优化；真正待关闭的是有效端点／尺度及其几何组织的来源。
 

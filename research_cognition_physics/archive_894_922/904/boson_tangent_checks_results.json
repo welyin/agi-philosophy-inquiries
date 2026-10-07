@@ -1,0 +1,207 @@
+{
+  "round": 904,
+  "date": "2026-10-06",
+  "checks": {
+    "N": 8,
+    "analytic_extension_vs_original": 8.881784197001252e-15,
+    "complex_step_1e24_vs_1e18": 5.240252676230739e-14,
+    "linearity_error": 1.3766765505351941e-14,
+    "whole_field_central_RHS_errors": [
+      4.517231224632212e-07,
+      1.1292924062544785e-07,
+      2.8227217452325704e-08
+    ],
+    "initial_family_errors": [
+      2.3072222927328356e-08,
+      5.768175843218204e-09,
+      1.4418032497076627e-09
+    ],
+    "independent_constraint_field_reconstruction_error": 0.0,
+    "initial_tangent_solver": {
+      "elliptic_tangent_residual": 1.2795320358804929e-14,
+      "cg_iterations": 10,
+      "minimum_J": 11.50103801739188,
+      "epsilon": 0.02
+    },
+    "independent_family_trajectory_errors": [
+      {
+        "parameter_step": 0.002,
+        "errors": {
+          "g": 1.9729075144414576e-08,
+          "gd": 2.2335297819586764e-08,
+          "phi": 8.69573516925487e-11,
+          "pi": 1.5105228692857686e-08,
+          "A": 1.7510135146849536e-11,
+          "E": 1.1645893323048578e-09
+        },
+        "max_error": 2.2335297819586764e-08
+      },
+      {
+        "parameter_step": 0.001,
+        "errors": {
+          "g": 4.932131980606158e-09,
+          "gd": 5.584036316674812e-09,
+          "phi": 2.1856082576903434e-11,
+          "pi": 3.77630338457835e-09,
+          "A": 4.45141511745315e-12,
+          "E": 2.911090101614944e-10
+        },
+        "max_error": 5.584036316674812e-09
+      },
+      {
+        "parameter_step": 0.0005,
+        "errors": {
+          "g": 1.233148132218087e-09,
+          "gd": 1.3958864897301027e-09,
+          "phi": 5.578003987524727e-12,
+          "pi": 9.440757654799459e-10,
+          "A": 1.2245635346128277e-12,
+          "E": 7.292243024703549e-11
+        },
+        "max_error": 1.3958864897301027e-09
+      }
+    ],
+    "probe_only_initial_constraint_defects": {
+      "H": 0.053287350957670676,
+      "M": 0.0,
+      "Gauss": 0.0,
+      "harmonic": 0.0
+    },
+    "original902_sha256": "fcffc9ca52112dd6212f8052fa0b12a62dd04306981a574b5dc7c29a1b416c29"
+  },
+  "rows": [
+    {
+      "N": 12,
+      "steps": 8,
+      "Tend": 0.01,
+      "initial_solver": {
+        "elliptic_tangent_residual": 2.6832702726409252e-14,
+        "cg_iterations": 10,
+        "minimum_J": 11.398966117316009,
+        "epsilon": 0.02
+      },
+      "initial_linear_constraints": {
+        "H": 6.582735560745177e-05,
+        "M": 4.6403603243539346e-06,
+        "Gauss": 0.0,
+        "harmonic": 2.821218302741311e-07
+      },
+      "final_linear_constraints": {
+        "H": 6.740097984252676e-05,
+        "M": 4.77384594904885e-06,
+        "Gauss": 9.893533551995797e-10,
+        "harmonic": 3.0084332408083847e-07
+      },
+      "final_tangent_max": {
+        "g": 0.009125053370905,
+        "gd": 0.010764433645865988,
+        "phi": 0.9998893606152575,
+        "pi": 0.016624063278444984,
+        "A": 2.077525560408967e-05,
+        "E": 0.0012925428302118292
+      },
+      "induced_H5": 0.00017626765794180344,
+      "tangent_change_max": {
+        "g": 0.00010711112120381956,
+        "gd": 0.0009282741787289681,
+        "phi": 0.00017626765794180344,
+        "pi": 0.016624063278444984,
+        "A": 2.077525560408967e-05,
+        "E": 0.0012925428302118292
+      }
+    },
+    {
+      "N": 16,
+      "steps": 8,
+      "Tend": 0.01,
+      "initial_solver": {
+        "elliptic_tangent_residual": 2.212813265956015e-14,
+        "cg_iterations": 10,
+        "minimum_J": 11.35822390243148,
+        "epsilon": 0.02
+      },
+      "initial_linear_constraints": {
+        "H": 3.8039326543110057e-06,
+        "M": 3.538737063148892e-07,
+        "Gauss": 0.0,
+        "harmonic": 2.2820792446412614e-08
+      },
+      "final_linear_constraints": {
+        "H": 3.886048375012602e-06,
+        "M": 3.679061229525457e-07,
+        "Gauss": 6.953666021616514e-11,
+        "harmonic": 2.4613652211952395e-08
+      },
+      "final_tangent_max": {
+        "g": 0.009125063246218765,
+        "gd": 0.01076444209694486,
+        "phi": 0.9998893619210605,
+        "pi": 0.016906468742963688,
+        "A": 2.0775253044645408e-05,
+        "E": 0.0012927895333984544
+      },
+      "induced_H5": 0.00017841189283436662,
+      "tangent_change_max": {
+        "g": 0.00010711122070350756,
+        "gd": 0.0009282756936604194,
+        "phi": 0.00017841189283436662,
+        "pi": 0.016906468742963688,
+        "A": 2.0775253044645408e-05,
+        "E": 0.0012927895333984544
+      }
+    },
+    {
+      "N": 24,
+      "steps": 8,
+      "Tend": 0.01,
+      "initial_solver": {
+        "elliptic_tangent_residual": 2.6208202275057602e-14,
+        "cg_iterations": 10,
+        "minimum_J": 11.280281695355988,
+        "epsilon": 0.02
+      },
+      "initial_linear_constraints": {
+        "H": 9.287556428995338e-09,
+        "M": 9.85702457398077e-10,
+        "Gauss": 0.0,
+        "harmonic": 4.992852938714191e-11
+      },
+      "final_linear_constraints": {
+        "H": 9.376007399688909e-09,
+        "M": 1.2186769875201613e-09,
+        "Gauss": 3.605264637173313e-13,
+        "harmonic": 6.133994195360483e-11
+      },
+      "final_tangent_max": {
+        "g": 0.009125062854684805,
+        "gd": 0.010769204550556995,
+        "phi": 0.999889361950853,
+        "pi": 0.016863895575539398,
+        "A": 2.0775254941099634e-05,
+        "E": 0.0012927929961208402
+      },
+      "induced_H5": 0.00017729132293493166,
+      "tangent_change_max": {
+        "g": 0.00010716300965211804,
+        "gd": 0.0009282756267255179,
+        "phi": 0.00017729132293493166,
+        "pi": 0.016863895575539398,
+        "A": 2.0775254941099634e-05,
+        "E": 0.0012927929961208402
+      }
+    }
+  ],
+  "all_checks_passed": true,
+  "formal_reports": 904,
+  "fresh_numbered_groups": 1,
+  "cumulative_numbered_groups": 3689,
+  "argument_scope": "Full104-independent-Cauchy-variable classical tangent evolution of the same902 constrained859 family, verified against independently varied trajectories. Nonzero probe/geometry/matter mixing is retained. No sourced physical Green inverse, receiver-source calculation, or rigorous continuum/time error enclosure yet.",
+  "all_classical_background_components_linearized": true,
+  "original_family_constraints_differentiated": true,
+  "fixed_material_rule_f_epsilon_differentiated": false,
+  "physical_retarded_Green_operator_constructed": false,
+  "receiver_modes_evolved": false,
+  "quantum_source_or_backreaction_computed": false,
+  "rigorous_time_error_enclosure": false,
+  "full_goal_completed": false
+}

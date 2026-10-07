@@ -1,0 +1,181 @@
+{
+  "round": 931,
+  "date": "2026-10-06",
+  "all_scientific_checks_passed": true,
+  "q_star": 0.27,
+  "species": [
+    {
+      "label": "u",
+      "mass": 0.29931850230774976,
+      "colors": 3,
+      "charge": 0.6666666666666666,
+      "weight": 1.3333333333333333
+    },
+    {
+      "label": "d",
+      "mass": 0.12338845380399767,
+      "colors": 3,
+      "charge": -0.3333333333333333,
+      "weight": 0.3333333333333333
+    },
+    {
+      "label": "e",
+      "mass": 0.051275631597698115,
+      "colors": 1,
+      "charge": -1.0,
+      "weight": 1.0
+    }
+  ],
+  "physical_Dirac_charge_squared_sum": 2.666666666666667,
+  "frozen_full_mass_spectrum_error": 0.0,
+  "current_projector_spectral_error": 6.938893903907228e-18,
+  "Feynman_cut_spectral_error": 3.469446951953614e-18,
+  "independent_dispersion_error": 2.5153490401663703e-17,
+  "radial_scaling_error": 1.3552527156068805e-20,
+  "radial_source_derivative_error": 6.068617830479184e-13,
+  "charged_first_pair_threshold": 0.10255126319539623,
+  "C1": 0.7043879163161342,
+  "C2": 26.46412915811822,
+  "finite_momentum_rows": [
+    {
+      "momentum_squared": -0.00010516761582971431,
+      "type": "spacelike",
+      "threshold_fraction": 0.1,
+      "kernel": -7.378780537074335e-05,
+      "leading": -7.407879777822815e-05,
+      "remainder": 2.909924074848022e-07,
+      "remainder_bound": 2.9269928694268443e-07,
+      "radial_source_derivative": 0.00054663656621443,
+      "finite_difference_error": 4.663370384294652e-15
+    },
+    {
+      "momentum_squared": 0.00010516761582971431,
+      "type": "timelike_below_threshold",
+      "threshold_fraction": 0.1,
+      "kernel": 7.437322734598901e-05,
+      "leading": 7.407879777822815e-05,
+      "remainder": 2.944295677608595e-07,
+      "remainder_bound": 2.956558453966509e-07,
+      "radial_source_derivative": -0.0005553449293758602,
+      "finite_difference_error": 4.271648139375639e-15
+    },
+    {
+      "momentum_squared": -0.0012883032939139999,
+      "type": "spacelike",
+      "threshold_fraction": 0.35,
+      "kernel": -0.0008664594259427741,
+      "leading": -0.0009074652727832945,
+      "remainder": 4.100584684052044e-05,
+      "remainder_bound": 4.392318674683656e-05,
+      "radial_source_derivative": 0.006159262082698086,
+      "finite_difference_error": 1.3199424192533726e-13
+    },
+    {
+      "momentum_squared": 0.0012883032939139999,
+      "type": "timelike_below_threshold",
+      "threshold_fraction": 0.35,
+      "kernel": 0.0009548373250834667,
+      "leading": 0.0009074652727832945,
+      "remainder": 4.7372052300172175e-05,
+      "remainder_bound": 5.005491367160861e-05,
+      "radial_source_derivative": -0.007481837910629829,
+      "finite_difference_error": 8.85654397042579e-14
+    },
+    {
+      "momentum_squared": -0.004443331768805428,
+      "type": "spacelike",
+      "threshold_fraction": 0.65,
+      "kernel": -0.0027084418567169958,
+      "leading": -0.0031298292061301383,
+      "remainder": 0.0004213873494131426,
+      "remainder_bound": 0.0005224865208981254,
+      "radial_source_derivative": 0.017598946932220017,
+      "finite_difference_error": 5.127460955822727e-13
+    },
+    {
+      "momentum_squared": 0.004443331768805428,
+      "type": "timelike_below_threshold",
+      "threshold_fraction": 0.65,
+      "kernel": 0.003836670356916859,
+      "leading": 0.0031298292061301383,
+      "remainder": 0.0007068411507867205,
+      "remainder_bound": 0.0009047385643257584,
+      "radial_source_derivative": -0.035766786026870195,
+      "finite_difference_error": 6.068617830479184e-13
+    }
+  ],
+  "spectral_rows": [
+    {
+      "energy": 0.09229613687585661,
+      "density": 0.0
+    },
+    {
+      "energy": 0.11280638951493586,
+      "density": 0.004971033740041599
+    },
+    {
+      "energy": 0.3,
+      "density": 0.010540267055578648
+    },
+    {
+      "energy": 0.7,
+      "density": 0.01920819768878252
+    }
+  ],
+  "shared_background_comparison": [
+    {
+      "q": 0.27,
+      "subtracted_kernel": -0.0008664594259427741,
+      "charged_threshold": 0.10255126319539623
+    },
+    {
+      "q": 0.4,
+      "subtracted_kernel": -0.00040272387140193305,
+      "charged_threshold": 0.15229534738152187
+    }
+  ],
+  "subtracted_response_difference": 0.00046373555454084104,
+  "local_determinant_log_coefficient": 0.04503163717437235,
+  "local_determinant_change": -0.017808162067166938,
+  "local_determinant_radial_slope": -0.1674587694421325,
+  "finite_matching_slope_shift": 0.07,
+  "finite_matching_change": 0.0091,
+  "same_local_matching_at_q_star_but_different_radial_source": true,
+  "finite_local_polynomials_cannot_cancel_pair_cut": true,
+  "original_matter_used_no_extra_dilaton_species": true,
+  "scalar_source_and_EM_kernel_from_same_determinant": true,
+  "spacelike_subtraction_removes_only_zero_momentum_local_coefficient": true,
+  "no_radial_axion_generated_with_fixed_mass_phases": true,
+  "bare_gauge_normalization_selected": false,
+  "all_higher_derivative_matching_coefficients_fixed": false,
+  "full_interacting_SM_or_hadron_response_computed": false,
+  "graph_continuum_mapping_or_actual_reference_instrument_constructed": false,
+  "free_on_shell_photon_speed_modified_claimed": false,
+  "all_six_protocols_realized_in_continuum_candidate": false,
+  "full_backreaction_or_GR_generated": false,
+  "whole_stage_completed": false,
+  "full_goal_completed": false,
+  "source_hashes": {
+    "research_cognition_physics\\archive_764_\\931\\charged_matter_response.py": "a205c350bb6c2ca67bc41bf654239e076fdb169dba7c09adc35cee3185d8145d",
+    "research_cognition_physics\\archive_554_584\\567\\joint_scalar_propagation_matching.py": "3ef2f256906884ae1ef2b1ecb36fe0a2b6f1d60a931852511f0a7f11d88d42b5",
+    "research_cognition_physics\\archive_554_584\\555\\joint_matter_energy_moment_control.py": "604aba32b42c466a044eb91c207a889486f2fa18294f254953ab05ddf25725d4",
+    "research_cognition_physics\\archive_554_584\\572\\joint_gauss_einstein_initial_data.py": "8c600a6f4d6cdee75aa2240c8ad650402c69ab791aaed4380770c8ab119c6cb5",
+    "research_cognition_physics\\archive_554_584\\574\\joint_curved_quantum_source.py": "cf6aec9461174f41985b706c1bae776787b198ab77d9e42dfe8057764795775c",
+    "research_cognition_physics\\archive_554_584\\570\\joint_gauss_nonlinear_compatibility.py": "77f5bea2a6a82d54da8b0f54d65e1236ac5e37baa3e115121837d98701c1c1eb",
+    "research_cognition_physics\\archive_585_628\\598\\joint_fermion_gauss_completion.py": "1de7d9f62d4ea8a5363cbcf2ecfb3149cf06e4e309f820f91dd856e11bc03a3b",
+    "research_cognition_physics\\archive_554_584\\559\\drafts\\finite_duration_probe.py": "069d0db000e083e51cfea83c4c37cbe200daf289edebeb2f591e450386f56e6e",
+    "research_cognition_physics\\archive_585_628\\599\\joint_fermion_scalar_loop_matching.py": "2becf846a54eec151fa251594acc5bda390289d0a993d7519759d19d4eb09bfe",
+    "research_cognition_physics\\archive_531_553\\538\\protected_pair_rg.py": "f78969e549ab47dfd12dde1fb2ec58340c1888f725684ff322e1bb9c6538de82",
+    "research_cognition_physics\\archive_554_584\\554\\joint_matter_reference_quantum_readout.py": "81ad0bfb69e097a0a0ec7bf597ccd34c1c0cabd7bce9e6cdfbcf6fdba934734e",
+    "research_cognition_physics\\archive_554_584\\559\\joint_finite_time_gauge_probe.py": "acd1a47553fb49fc00d59e707f57af103acce1f6c31433ae70263f5e4e4316b6",
+    "research_cognition_physics\\archive_531_553\\544\\joint_singlet_common_mass_rg_results.json": "4bd60fde58c288d047275f8441c8e622819cd58a2fe55a5ea2717a5fc3a48d66",
+    "research_cognition_physics\\archive_531_553\\531\\joint_gauge_matter_constraints_results.json": "c2ede9a75cc2e0e13ebce2b65b9a2eaf8276518c7d6147943a21fd232f4e29c3",
+    "research_cognition_physics\\archive_554_584\\571\\joint_gauss_continuum_sampling.py": "962ad261027a69689127ba6473fcc9dac2931a005c5d630ce8de1b373feca6d3",
+    "research_cognition_physics\\archive_554_584\\557\\joint_gauge_link_reference.py": "4faf796ea9bb5adb6d02e17035ec6e9966a5a7e7bfdc39a5a1f0fbcfd49b3e88",
+    "research_cognition_physics\\archive_554_584\\569\\joint_quotient_gauge_completion.py": "ad79d467500513738d718478a24e2176d88e7225316badfb7f1d62129c4b9494",
+    "research_cognition_physics\\archive_531_553\\536\\joint_yukawa_higgs_matching_results.json": "4703023582d4c4dfddbe630e7bd5992eb351073753ddb050fc2dda854971c7fa",
+    "research_cognition_physics\\archive_554_584\\568\\joint_gauge_matter_propagation.py": "df013f78bf2f881d522b5879fd2adeb18746ce0886175f9d271545cd83964291",
+    "research_cognition_physics\\archive_629_652\\630\\joint_continuum_source_spectrum.py": "8c9d0ea35fc751533a41741a395b6105966d12a00263ffd3c58e5b1e1fe75893",
+    "research_cognition_physics\\archive_629_652\\630\\joint_continuum_source_spectrum_results.json": "5f6fb2ff991184071ccf8c2f9a053b706524eb9f85928fd086f0dc26ffb211e9"
+  }
+}

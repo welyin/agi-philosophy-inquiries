@@ -1,0 +1,148 @@
+{
+  "round": 960,
+  "date": "2026-10-07",
+  "all_scientific_checks_passed": true,
+  "parameters": {
+    "U": 1.0,
+    "hopping": 0.1,
+    "kappa_for_958_coefficient": 0.2,
+    "charge_weight": 0.035761654557370404,
+    "transition_gap": 1.0385164807134504,
+    "hbar": 1.0,
+    "r_definition": "R*Delta/c",
+    "geometry": "parallel dipoles perpendicular to separation"
+  },
+  "actual_material_response": {
+    "spectral_rows": [
+      {
+        "xi": 0.0,
+        "spectral": 0.06887065390200156,
+        "formula": 0.06887065390200164,
+        "error": 8.326672684688674e-17
+      },
+      {
+        "xi": 0.1,
+        "spectral": 0.06823795191611282,
+        "formula": 0.06823795191611291,
+        "error": 9.71445146547012e-17
+      },
+      {
+        "xi": 1.0385164807134504,
+        "spectral": 0.03443532695100077,
+        "formula": 0.03443532695100082,
+        "error": 4.85722573273506e-17
+      },
+      {
+        "xi": 10.385164807134505,
+        "spectral": 0.0006818876623960547,
+        "formula": 0.0006818876623960558,
+        "error": 1.0842021724855044e-18
+      }
+    ],
+    "maximum_spectral_error": 9.71445146547012e-17,
+    "triplet_dipole_error": 4.8750728027230504e-17,
+    "bright_transition_eigenstate_error": 1.962615573354719e-17,
+    "chi_from_36_state_spectral_sum": 2.4629285339836175e-05,
+    "chi_from_polarizability_integral": 2.4629285339835975e-05,
+    "chi_second_order_958": 2.4629285339835975e-05,
+    "chi_exact_958": 2.4866347759902596e-05,
+    "higher_electrostatic_order_difference": 2.3706242006662112e-07,
+    "old_read_time_times_difference": 0.029950259061543492
+  },
+  "maxwell_kernel": {
+    "rows": [
+      {
+        "r": 0.0,
+        "energy_ratio": 1.0,
+        "logarithmic_kernel_derivative": 0.0,
+        "force_ratio": 1.0,
+        "quadrature_difference": 0.0,
+        "independent_derivative_error": 0.0
+      },
+      {
+        "r": 0.01,
+        "energy_ratio": 1.0000926827720458,
+        "logarithmic_kernel_derivative": 0.00017971780344638812,
+        "force_ratio": 1.0000627298048048,
+        "quadrature_difference": 9.510784087368718e-15,
+        "independent_derivative_error": 6.298715889141437e-14
+      },
+      {
+        "r": 1.0,
+        "energy_ratio": 1.0746852191291574,
+        "logarithmic_kernel_derivative": -0.017629819864725997,
+        "force_ratio": 1.077623522439945,
+        "quadrature_difference": 2.220446049250313e-16,
+        "independent_derivative_error": 3.5139794199445795e-10
+      },
+      {
+        "r": 100.0,
+        "energy_ratio": 0.041348189050334584,
+        "logarithmic_kernel_derivative": -0.041284102753911846,
+        "force_ratio": 0.048228872842653224,
+        "quadrature_difference": 6.036837696399289e-16,
+        "independent_derivative_error": 3.502753642692369e-14
+      },
+      {
+        "r": 10000.0,
+        "energy_ratio": 0.00041380281988963595,
+        "logarithmic_kernel_derivative": -0.0004138027555910543,
+        "force_ratio": 0.00048276994582147835,
+        "quadrature_difference": 5.908901840045999e-18,
+        "independent_derivative_error": 3.272664257647495e-16
+      }
+    ],
+    "far_zone_moment": 3.25,
+    "far_coefficient_target": 13.0,
+    "far_coefficient_numeric": 12.999998990000206,
+    "x_cut_40_energy_tail_upper_for_r_at_least_1": 3.2526541774689714e-29,
+    "x_cut_40_derivative_tail_upper_for_r_at_least_1": 2.5078692446888254e-27
+  },
+  "analytic_effective_domain": {
+    "r_upper": 0.01,
+    "energy_relative_error_upper": 0.00010518191617571636,
+    "force_relative_error_upper": 0.00014196986029286059,
+    "tail_frequency_in_gap_units": 100.0,
+    "one_model_energy_tail_relative_upper": 5.169427032443672e-07,
+    "one_model_force_tail_relative_upper": 9.853413554389205e-07,
+    "tail_hypothesis": "|alpha_Q(i xi)|<=2*Delta*d/xi^2 above Lambda",
+    "two_completions_tail_difference_upper_is_sum": true,
+    "tails_do_not_bound_unknown_low_frequency_matching": true
+  },
+  "finite_geometry_comparison": {
+    "R": 3.0,
+    "a": 1.0,
+    "coulomb_coefficient": 5.846049894151551,
+    "exact_four_site_coupling": 0.2,
+    "dipole_coupling": 0.21652036645005743,
+    "dipole_to_site_leading_energy_ratio": 1.1720267271916787,
+    "relative_energy_mismatch": 0.17202672719167866,
+    "static_site_to_dipole_ratio_lower": 0.9166666666666666,
+    "static_site_to_dipole_ratio_actual": 0.9237006350907502
+  },
+  "scope": {
+    "same_material_leading_stationary_Maxwell_matching": true,
+    "record_phase_response_and_distance_force_share_coefficients": true,
+    "Maxwell_3plus1_and_dipole_coupling_are_physical_inputs": true,
+    "zero_temperature_fixed_spin_sector_stationary_domain": true,
+    "no_requirement_of_exact_UV_completion": true,
+    "physical_matching_above_material_band_not_certified": true,
+    "full_real_time_958_bound_transported": false,
+    "complete_QED_implementation_certified": false,
+    "full_parent_SM_Einstein_certified": false,
+    "six_protocols_jointly_certified": false,
+    "full_goal_completed": false,
+    "stop_dispersion_branch_after_this_interface": true
+  },
+  "primary_sources": [
+    "https://arxiv.org/abs/1111.4224",
+    "https://arxiv.org/abs/1502.06129"
+  ],
+  "source_hashes": {
+    "research_cognition_physics\\archive_764_\\960\\material_dispersion_bridge.py": "217b415cfec763b4e4be2a31557bd3b9930dd660a6fc92809d87b6989d6ea860",
+    "research_cognition_physics\\archive_764_\\956\\native_material_interface.py": "2ab03c573de42d54c28c65804766e7840331a8f028a5059d6129baf57f5bc0b8",
+    "research_cognition_physics\\archive_764_\\958\\capacitive_material_write_results.json": "f08f41ac4a147a5f70f7230c49367d424418e58280d69a8199e923e7084c5cf9",
+    "research_cognition_physics\\archive_764_\\959\\gauss_material_parent_results.json": "5f8c5bb416bf81a7986e60c4db4a135b03e34641583348d4f9c511bb5173b852",
+    "research_cognition_physics\\archive_764_\\960\\drafts\\material_propagation_decision.md": "510973e3bd6b4bbf67e229c039c69ec54b9097a319d5e7948b67fb4901b11f0c"
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "round": 956,
+  "date": "2026-10-07",
+  "all_scientific_checks_passed": true,
+  "parameters": {
+    "U": 1.0,
+    "hopping": 0.1,
+    "kappa": 0.7,
+    "source_contract": "static U,v; chosen v(R)=v0 exp[-kappa(R-R0)]"
+  },
+  "material": {
+    "two_electron_dimension": 6,
+    "low_spin_dimension": 4,
+    "spectrum": [
+      -0.03851648071345039,
+      -1.1905610112808014e-34,
+      0.0,
+      0.0,
+      1.0,
+      1.0385164807134502
+    ],
+    "exact_exchange_J": 0.03851648071345041,
+    "second_order_J": 0.04000000000000001,
+    "second_order_remainder": 0.0014835192865495991,
+    "second_order_remainder_upper": 0.0016000000000000003,
+    "charge_probability_singlet": 0.035761654557370404,
+    "charge_probability_triplet": 0.0,
+    "encoded_434_logical_charge_effect": [
+      [
+        0.0357616545573704,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    "unread_charge_instrument_leakage_singlet": 0.06896551724137942,
+    "singlet_radial_force": -0.05199469468957451,
+    "omitted_identity_source_error": 0.025997347344787255,
+    "static_U_curvature": -0.06403287523346622,
+    "bare_compressed_U_curvature": 0.0
+  },
+  "verification": {
+    "exact_H_intertwining_error": 1.225056144606175e-16,
+    "charge_effect_error": 1.3877787807814457e-17,
+    "U_source_error": 1.3877787807814457e-17,
+    "hopping_source_error": 6.66133814775094e-16,
+    "SU2_commutator": 0.0,
+    "charge_poststate_leakage_formula_error": 1.179611963664229e-16,
+    "old_434_logical_readout_transport_error": 6.938893903907228e-18,
+    "finite_difference": {
+      "first_U": 1.1041221825713876e-09,
+      "first_v": 1.766423080029611e-07,
+      "second_U": 3.4187320613332517e-09
+    },
+    "finite_time_rows": [
+      {
+        "exchange_phase": 0.7,
+        "time": 17.499999999999996,
+        "exact_low_sector_error": 4.067535913574038e-15,
+        "second_order_error": 0.025960858428493248,
+        "second_order_analytic_upper": 0.028
+      },
+      {
+        "exchange_phase": 1.5707963267948966,
+        "time": 39.26990816987241,
+        "exact_low_sector_error": 9.165194555167455e-15,
+        "second_order_error": 0.05824942800321649,
+        "second_order_analytic_upper": 0.06283185307179587
+      },
+      {
+        "exchange_phase": 3.141592653589793,
+        "time": 78.53981633974482,
+        "exact_low_sector_error": 1.8204829501130752e-14,
+        "second_order_error": 0.11644943550693237,
+        "second_order_analytic_upper": 0.12566370614359174
+      }
+    ]
+  },
+  "old_434_match": {
+    "epsilon": 0.001953125,
+    "all_14_weights_positive": true,
+    "spin_energy_scale": 0.001,
+    "hopping_coefficients": {
+      "1-2": 0.022360676220863282,
+      "1-3": 0.022360679774997897,
+      "1-4": 0.022360679774997897,
+      "2-3": 0.022360679774997897,
+      "2-4": 0.022360679774997897,
+      "3-4": 0.022360679774997897,
+      "5-6": 0.022360669112592355,
+      "5-7": 0.022360675671036695,
+      "5-8": 0.022360679774997897,
+      "6-7": 0.022360683878958346,
+      "6-8": 0.022360679774997897,
+      "7-8": 0.022360679774997897,
+      "1-5": 0.0009882117688026185,
+      "2-6": 0.0009882117688026185
+    },
+    "max_hopping_over_U": 0.022360683878958346,
+    "second_order_coefficient_error": 2.168404344971009e-19,
+    "scalar_offset_must_be_kept": -0.012003904978434244,
+    "full_array_high_order_and_long_time_transport_certified": false
+  },
+  "scope": {
+    "native_electronic_exchange_charge_and_static_sources_common": true,
+    "old_exchange_universality_reused_not_reproved": true,
+    "elementary_new_neutral_portal_required_for_this_interface": false,
+    "original_955_bounds_transferred": false,
+    "spin_only_postmeasurement_closure_claimed": false,
+    "all_six_protocols_autonomously_implemented": false,
+    "material_to_full_SM_and_GR_error_certified": false,
+    "three_spatial_dimensions_derived": false,
+    "full_goal_completed": false
+  },
+  "references": [
+    "https://arxiv.org/abs/cond-mat/9701055",
+    "https://arxiv.org/abs/1502.02194",
+    "https://arxiv.org/abs/1105.0675"
+  ],
+  "source_hashes": {
+    "research_cognition_physics\\archive_764_\\956\\native_material_interface.py": "2ab03c573de42d54c28c65804766e7840331a8f028a5059d6129baf57f5bc0b8",
+    "research_cognition_physics\\archive_429_466\\434\\encoded_exchange_response_audit.py": "39afff2eb6d43c61745cfb11b291fc960aa90897c183adcb8558c4bbd4c7e411",
+    "research_cognition_physics\\archive_429_466\\434\\encoded_exchange_response_audit_results.json": "9c6df0ecd3f277ff1315fb7ca1fdb8a497ee5fbb2ead0c3b5642d435787f60ea",
+    "research_cognition_physics\\archive_764_\\955\\joint_effective_window_results.json": "b38fac8a34e71cfed1cc4a5717077e367524a6ac9e5150d6e2c4b6172b244a57"
+  }
+}

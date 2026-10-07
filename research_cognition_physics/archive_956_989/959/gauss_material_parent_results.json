@@ -1,0 +1,96 @@
+{
+  "round": 959,
+  "date": "2026-10-07",
+  "all_scientific_checks_passed": true,
+  "parameters": {
+    "U": 1.0,
+    "hopping": 0.1,
+    "kappa": 0.2,
+    "full_link_space": "l2(Z) tensor l2(Z)",
+    "matrix_block_dimension": 324,
+    "entire_declared_physical_dimension": 36,
+    "electric_quadratic_K": [
+      [
+        2.0,
+        0.2
+      ],
+      [
+        0.2,
+        2.0
+      ]
+    ],
+    "capacitance_K_inverse": [
+      [
+        0.5050505050505051,
+        -0.05050505050505051
+      ],
+      [
+        -0.05050505050505051,
+        0.5050505050505051
+      ]
+    ],
+    "ground_capacitance": 0.45454545454545453,
+    "cross_capacitance": 0.05050505050505051
+  },
+  "exact_transport": {
+    "generator_error": 0.0,
+    "Gauss_error": 0.0,
+    "finite_time_propagator_error": 4.208371046115537e-15,
+    "all_source_errors": {
+      "U": 0.0,
+      "kappa": 0.0,
+      "hopping": 0.0
+    },
+    "instrument_completeness_error": 0.0,
+    "inherits_958_unknown_input_upper": 0.017059487979028228,
+    "inherits_958_read_window_contrast_lower": 0.9458810240419435
+  },
+  "negative_controls": {
+    "unrelated_zero_flux_preparation": {
+      "sum_squared_Gauss": 0.07152330911474075,
+      "probability_in_physical_sector": 0.9297555868219398
+    },
+    "incorrect_bare_partial_trace": {
+      "material_purity": 0.9303950347902801,
+      "correct_single_material_hopping_energy": -0.07427813527082079,
+      "bare_matter_hopping_energy": 0.0
+    },
+    "double_counted_electrostatics": {
+      "original_read_time": 126339.12643398577,
+      "correct_receiver_probabilities": [
+        4.2452633889511215e-08,
+        0.9999999999999998
+      ],
+      "duplicate_receiver_probabilities": [
+        0.6814298852757779,
+        0.4496324838834645
+      ],
+      "max_probability_change": 0.681429842823144,
+      "extra_generator_norm": 2.2
+    }
+  },
+  "scope": {
+    "exact_parent_for_958_static_constraint_sector": true,
+    "dressing_is_fixed_independent_of_unknown_input": true,
+    "no_duplicate_Coulomb_energy": true,
+    "physical_flux_bound_is_not_UV_cutoff": true,
+    "full_parent_SM_Einstein_certified": false,
+    "transverse_photon_recovery_certified": false,
+    "preparation_or_detector_manufactured": false,
+    "six_protocols_jointly_certified": false,
+    "three_dimensional_geometry_derived": false,
+    "full_goal_completed": false
+  },
+  "references": [
+    "https://arxiv.org/abs/1807.01294",
+    "https://arxiv.org/abs/1409.3085",
+    "https://doi.org/10.1103/PhysRevD.11.395"
+  ],
+  "source_hashes": {
+    "research_cognition_physics\\archive_764_\\959\\gauss_material_parent.py": "329ad5ecf0bab4dc104cc8dbd4a7bac5780a64026abaad1572fb53e011182aaf",
+    "research_cognition_physics\\archive_764_\\956\\native_material_interface.py": "2ab03c573de42d54c28c65804766e7840331a8f028a5059d6129baf57f5bc0b8",
+    "research_cognition_physics\\archive_764_\\958\\capacitive_material_write.py": "2d4acf2b8f565a0202812c58ba289fdd0818cc0f14fd08eefcce044a2040d143",
+    "research_cognition_physics\\archive_764_\\958\\capacitive_material_write_results.json": "f08f41ac4a147a5f70f7230c49367d424418e58280d69a8199e923e7084c5cf9",
+    "research_cognition_physics\\archive_764_\\957\\drafts\\unified_operation_hypotheses_v0_2.md": "5f0261a9cb6c03017c1b4f3d23e53ede457e42c4710b2c3ae3918d62301029d6"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "round": 909,
+  "date": "2026-10-06",
+  "cumulative_numbered_groups": 3694,
+  "transport_and_diagnostic_checks_passed": true,
+  "one_actual_response_reproduced": true,
+  "all_six_response_cases_previously_executed": true,
+  "all_saved_cases_rerun": false,
+  "source_file_sha256": {
+    "validate_weak_propagation.py": "3b8930fd53a96ab03efe6e55ff0d7cba0a511ec7b29b440f9eb77c33c98c2732",
+    "weak_source_propagation.py": "cfd34fe0a7eb290798d5475bb08821b4388408cbc5358a9117771cea385b1906",
+    "weak_propagation_checks.py": "0bbd499be7393ea8d7e9765f6e518b2bf1b92ba46ba557e04f78c46336309588",
+    "weak_propagation_checks_results.json": "f56505b12b433a9c66278e3f6faaee130b8af722a7c92a52994b90a6eb7505ea",
+    "observer_chart_check.py": "d542fb53800dfe8349c5c523e3d0be4860695639c23c17ad94d159a70e9591a4",
+    "observer_chart_check_results.json": "f01b7ce9c3aa3458d197f1227dcb22905d65a7863f5d82ddf550019b2b09a701",
+    "observer_quadrature_check.py": "8c418580c5812cf4b06f70da4f78156abc0557711b51b7d9bfd9fc3ed3b193eb",
+    "observer_quadrature_check_results.json": "8356d001921398476b9ab0af5faea6c46d7b78641dfd6763ea239295060d8e0c"
+  },
+  "differences": {
+    "time_interpolation2_to4": {
+      "relational_probe": 1.5249432272490537e-10,
+      "relational_magnetic": 2.3861770870325927e-07
+    },
+    "time_step_halving": {
+      "relational_probe": 3.451749303051699e-11,
+      "relational_magnetic": 1.2831904427912377e-09
+    },
+    "space16_to24": {
+      "relational_probe": 0.27999748396555035,
+      "relational_magnetic": 103.8828076061396
+    },
+    "omit_temporal_potential": {
+      "relational_probe": 2.072062169597433e-05,
+      "relational_magnetic": 2.382127047440008e-05
+    },
+    "observer_quadrature_range": {
+      "relational_probe": 0.08095562995520617,
+      "relational_magnetic": 4.310109978962245
+    }
+  },
+  "argument_scope": "Actual908 adjoint-loop first-jet source mapped to finite Fourier/time Duhamel impulses of the full904 mixed902 linear equations. Original time potentials retained; finite observer fails current spatial/quadrature acceptance. Diagnostics do not certify source support, physical Green constraints, or complete872 feedback.",
+  "original_source_not_replaced": true,
+  "source_kernel_density_confusion_avoided": true,
+  "physical_observer_accuracy_accepted": false,
+  "continuous_error_certified": false,
+  "physical_retarded_Green_certified": false,
+  "complete872_quantum_feedback": false,
+  "full_goal_completed": false
+}

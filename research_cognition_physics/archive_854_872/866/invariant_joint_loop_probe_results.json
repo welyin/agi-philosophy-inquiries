@@ -1,0 +1,86 @@
+{
+  "date": "2026-10-06",
+  "status": "866_working_not_formal",
+  "formal_reports": 865,
+  "cumulative_numbered_groups": 3650,
+  "fresh_numbered_groups": 0,
+  "all_diagnostic_checks_passed": true,
+  "input": "fixed dimensionless finite-resolution kernel; not derived bulk dynamics",
+  "kernel": "1 + 2 eta_R Re(chi_R(g) conj(chi_R(y))) + eta_A chi_A(g) chi_A(y)",
+  "eta_R": 0.03333333333333333,
+  "eta_A": 0.003125,
+  "analytic_uniform_lower_bound": 0.2,
+  "exact_group": "(SU3 x SU2 x U1) / Z6",
+  "branchwise_Gauss_preservation": "analytic class-function multiplication Kraus proof",
+  "independent_moment_check": "SU3 Weyl integration and U1 cover quadrature",
+  "rows": [
+    {
+      "original_coordinate_side": 0.4,
+      "lower_resolution": {
+        "N": 48,
+        "kernel_minimum_sample": 0.6006187851431467,
+        "polynomial_moment_error": 4.618527782440651e-14,
+        "added_complex_variance": 913.4998704119819,
+        "added_complex_variance_exact": 913.4998704119819,
+        "physical_tangent_of_variance": -0.00022510924947664822,
+        "physical_tangent_of_variance_exact": -0.00022510924947664825,
+        "source_tangent_dirichlet": 2.581662749543769e-13,
+        "color_Dirichlet_per_link": 7.1796530220890524e-09,
+        "U1_Dirichlet_per_link": 0.01990176706017975
+      },
+      "higher_resolution": {
+        "N": 72,
+        "kernel_minimum_sample": 0.6005264032498497,
+        "polynomial_moment_error": 2.4868995751603507e-14,
+        "added_complex_variance": 913.4998704119819,
+        "added_complex_variance_exact": 913.4998704119819,
+        "physical_tangent_of_variance": -0.00022510924947664833,
+        "physical_tangent_of_variance_exact": -0.00022510924947664825,
+        "source_tangent_dirichlet": 2.581662749543768e-13,
+        "color_Dirichlet_per_link": 7.179653022089051e-09,
+        "U1_Dirichlet_per_link": 0.01990176706017975
+      },
+      "Dirichlet_quadrature_differences": {
+        "color_Dirichlet_per_link": 1.6543612251060553e-24,
+        "U1_Dirichlet_per_link": 0.0,
+        "source_tangent_dirichlet": 1.0097419586828951e-28
+      }
+    },
+    {
+      "original_coordinate_side": 0.2,
+      "lower_resolution": {
+        "N": 48,
+        "kernel_minimum_sample": 0.6006182288912701,
+        "polynomial_moment_error": 1.1368683772161603e-13,
+        "added_complex_variance": 913.4999918964119,
+        "added_complex_variance_exact": 913.4999918964118,
+        "physical_tangent_of_variance": -1.4077785283709298e-05,
+        "physical_tangent_of_variance_exact": -1.4077785283709303e-05,
+        "source_tangent_dirichlet": 1.0096678402715767e-15,
+        "color_Dirichlet_per_link": 4.4896889969634806e-10,
+        "U1_Dirichlet_per_link": 0.019901914113176867
+      },
+      "higher_resolution": {
+        "N": 72,
+        "kernel_minimum_sample": 0.6005258466539724,
+        "polynomial_moment_error": 2.842170943040401e-14,
+        "added_complex_variance": 913.4999918964118,
+        "added_complex_variance_exact": 913.4999918964118,
+        "physical_tangent_of_variance": -1.4077785283709305e-05,
+        "physical_tangent_of_variance_exact": -1.4077785283709303e-05,
+        "source_tangent_dirichlet": 1.0096678402715765e-15,
+        "color_Dirichlet_per_link": 4.4896889969634806e-10,
+        "U1_Dirichlet_per_link": 0.01990191411317687
+      },
+      "Dirichlet_quadrature_differences": {
+        "color_Dirichlet_per_link": 0.0,
+        "U1_Dirichlet_per_link": 3.469446951953614e-18,
+        "source_tangent_dirichlet": 1.9721522630525295e-31
+      }
+    }
+  ],
+  "energy_bound_scope": "old fixed finite graph electric form, hbar=1; not full continuum source energy",
+  "original_continuum_CP_instrument_constructed": false,
+  "full_original_dynamics_match_proved": false,
+  "full_goal_completed": false
+}

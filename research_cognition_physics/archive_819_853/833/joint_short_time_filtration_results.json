@@ -1,0 +1,177 @@
+{
+  "round": 833,
+  "status": "working_not_formal",
+  "formal_test_groups_added": 0,
+  "all_working_checks_passed": true,
+  "source_filtration": {
+    "cases": [
+      {
+        "observable": "quadratic_source",
+        "initial_weight": 2,
+        "first_possible_logical_order": 4,
+        "rows": [
+          {
+            "commutators": 0,
+            "terms": 1,
+            "maximum_Majorana_degree": 2,
+            "logical_terms": []
+          },
+          {
+            "commutators": 1,
+            "terms": 2,
+            "maximum_Majorana_degree": 2,
+            "logical_terms": []
+          },
+          {
+            "commutators": 2,
+            "terms": 4,
+            "maximum_Majorana_degree": 4,
+            "logical_terms": []
+          },
+          {
+            "commutators": 3,
+            "terms": 4,
+            "maximum_Majorana_degree": 4,
+            "logical_terms": []
+          },
+          {
+            "commutators": 4,
+            "terms": 7,
+            "maximum_Majorana_degree": 6,
+            "logical_terms": [
+              {
+                "power": 0,
+                "derivatives": 0,
+                "real": 0,
+                "imaginary": 48
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "observable": "source_pair",
+        "initial_weight": 4,
+        "first_possible_logical_order": 2,
+        "rows": [
+          {
+            "commutators": 0,
+            "terms": 1,
+            "maximum_Majorana_degree": 4,
+            "logical_terms": []
+          },
+          {
+            "commutators": 1,
+            "terms": 2,
+            "maximum_Majorana_degree": 4,
+            "logical_terms": []
+          },
+          {
+            "commutators": 2,
+            "terms": 3,
+            "maximum_Majorana_degree": 6,
+            "logical_terms": [
+              {
+                "power": 1,
+                "derivatives": 0,
+                "real": 0,
+                "imaginary": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "observable": "scalar_readout",
+        "initial_weight": 0,
+        "first_possible_logical_order": 6,
+        "rows": [
+          {
+            "commutators": 0,
+            "terms": 1,
+            "maximum_Majorana_degree": 0,
+            "logical_terms": []
+          },
+          {
+            "commutators": 1,
+            "terms": 2,
+            "maximum_Majorana_degree": 0,
+            "logical_terms": []
+          },
+          {
+            "commutators": 2,
+            "terms": 6,
+            "maximum_Majorana_degree": 2,
+            "logical_terms": []
+          },
+          {
+            "commutators": 3,
+            "terms": 9,
+            "maximum_Majorana_degree": 2,
+            "logical_terms": []
+          },
+          {
+            "commutators": 4,
+            "terms": 13,
+            "maximum_Majorana_degree": 4,
+            "logical_terms": []
+          },
+          {
+            "commutators": 5,
+            "terms": 14,
+            "maximum_Majorana_degree": 4,
+            "logical_terms": []
+          },
+          {
+            "commutators": 6,
+            "terms": 22,
+            "maximum_Majorana_degree": 6,
+            "logical_terms": [
+              {
+                "power": 0,
+                "derivatives": 0,
+                "real": 0,
+                "imaginary": 4320
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "added_fermion_momentum_coupling_breaks_pair_first_order_blindness": true,
+    "coefficients_are_exact_Gaussian_integers": true,
+    "sharpness_examples_are_structural_not_original_Yukawa_coefficients": true
+  },
+  "actual_time_recovery_calibration": {
+    "H2_input_operator_norm": 3.1812104614438823,
+    "rows": [
+      {
+        "time": 0.03,
+        "entangled_input_infidelity": 7.932072229044351e-07,
+        "Taylor_upper_bound": 2.0493202499999996e-06,
+        "infidelity_over_t4": 0.9792681764252287
+      },
+      {
+        "time": 0.06,
+        "entangled_input_infidelity": 1.2662898915660747e-05,
+        "Taylor_upper_bound": 3.278912399999999e-05,
+        "infidelity_over_t4": 0.9770755336157986
+      },
+      {
+        "time": 0.12,
+        "entangled_input_infidelity": 0.00020079649239657105,
+        "Taylor_upper_bound": 0.0005246259839999999,
+        "infidelity_over_t4": 0.9683472820050688
+      },
+      {
+        "time": 0.24,
+        "entangled_input_infidelity": 0.003099130964697161,
+        "Taylor_upper_bound": 0.008394015743999998,
+        "infidelity_over_t4": 0.9341034205901456
+      }
+    ],
+    "recovery_is_ideal_syndrome_CP_not_native_decoder": true,
+    "finite_matrix_not_original_boson_dynamics": true
+  },
+  "scope": "For a scalar boson differential operator of order two plus coordinate-multiplication quadratic fermion couplings, commutation raises derivative-plus-Clifford degree by at most one. The code hides source means through order three, source pairs through order one, and scalar readouts through order five. Genuine time remainders require the declared source domains; graph-bounded parameter sources and bounded readouts admit them. Ideal recovery has a fourth-order infidelity bound, not an autonomous decoder or a fourth-order diamond bound."
+}

@@ -8,7 +8,7 @@ Git保存正式研究报告、工作稿、科学代码、数值结果、来源�
 
 - `research_cognition_physics/**/navigation_before_*/`：反复复制的导航、状态和审计文档快照。
 - `research_cognition_physics/**/_migration/**/*.zip`：迁移前的本地原件备份，包含原工作区整包。
-- `archive_764_/_migration/manifest_before_*.json`与`manifest_sibling_category_layout.json`：已被当前清单接替的旧版大型迁移清单。
+- `_migration/manifest_before_*.json`与`manifest_sibling_category_layout.json`：已被当前清单接替的旧版大型迁移清单。
 - 第660轮的`talk_20260629_kikukawa.pdf`：外部来源PDF，提取文本及来源收据继续跟踪。
 
 历史快照不是日常研究的新结果。后续保存这类材料时沿用上述路径，避免重复进入Git；不要用强制添加绕过忽略规则。
@@ -38,7 +38,7 @@ Git保存正式研究报告、工作稿、科学代码、数值结果、来源�
 - 1985项早期测试通过，240、425、523、699、775代表性复算通过；775原证据核验另外通过。
 - 旧发布时点检查要求当时的完整README快照，已退出日常复算；不将这类旧发布检查误称为已经适配当前目录。
 
-完整记录见[当前目录复算](../research_cognition_physics/archive_764_/_migration/README.md)与[核验收据](../research_cognition_physics/archive_764_/_migration/current_layout_20261005_checks.json)。
+完整记录见[当前目录复算](../research_cognition_physics/_migration/README.md)与[核验收据](../research_cognition_physics/_migration/current_layout_20261005_checks.json)。
 
 第660轮原PDF仍在本地保留，按[来源收据](../research_cognition_physics/archive_653_701/660/drafts/source_receipt.json)中的URL可重新获取，并须核对SHA-256；提取文本继续随Git提供。某些来源全链核验仍需要原PDF，这不是重复导航或ZIP依赖。
 

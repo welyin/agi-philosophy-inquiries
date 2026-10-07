@@ -1,0 +1,118 @@
+{
+  "round": 905,
+  "date": "2026-10-06",
+  "independent": {
+    "N": 10,
+    "time": 0.005,
+    "canonical_and_constraint_rows": [
+      {
+        "step": 0.01,
+        "force_errors": {
+          "g": 0.0,
+          "gd": 1.9855297961335339e-13,
+          "phi": 0.0,
+          "pi": 4.440892098500626e-16,
+          "A": 0.0,
+          "E": 5.8494292187738495e-09
+        },
+        "constraint_errors": {
+          "H": 3.8163916471489756e-17,
+          "M": 5.421010862427522e-19,
+          "Gauss": 3.060052211623088e-14
+        }
+      },
+      {
+        "step": 0.005,
+        "force_errors": {
+          "g": 0.0,
+          "gd": 3.7732317270666726e-13,
+          "phi": 0.0,
+          "pi": 7.771561172376096e-16,
+          "A": 0.0,
+          "E": 1.4637442924403388e-09
+        },
+        "constraint_errors": {
+          "H": 3.8163916471489756e-17,
+          "M": 5.421010862427522e-19,
+          "Gauss": 5.400888070106191e-14
+        }
+      },
+      {
+        "step": 0.0025,
+        "force_errors": {
+          "g": 0.0,
+          "gd": 8.120101813169356e-13,
+          "phi": 0.0,
+          "pi": 1.3877787807814457e-15,
+          "A": 0.0,
+          "E": 3.6988917484492845e-10
+        },
+        "constraint_errors": {
+          "H": 3.8163916471489756e-17,
+          "M": 5.421010862427522e-19,
+          "Gauss": 9.716533133641292e-14
+        }
+      }
+    ],
+    "independent_metric_scalar_action_errors": [
+      5.446161965849683e-09,
+      1.3615456539994852e-09,
+      3.4040673058122195e-10
+    ],
+    "dropped_scalar_force_max": 1.5261281301535716,
+    "dropped_Gauss_load_max": 0.009476278807902945,
+    "YM_trace_error": 5.828670879282072e-15,
+    "finite_kinetic_deformation_is_verification_not_the_quantum_source": true
+  },
+  "rows": [
+    {
+      "N": 12,
+      "time": 0.005,
+      "diffeomorphism_density_max": 8.904009863220513e-05,
+      "internal_density_max": 9.22358388386231e-09,
+      "stress_divergence_max": 0.03290778716631575,
+      "exchange_terms_max": 0.03299682035673682,
+      "constraint_load_max": {
+        "H": 0.03316968718023103,
+        "M": 0.0005886335399279761,
+        "Gauss": 0.00925073918427617
+      }
+    },
+    {
+      "N": 16,
+      "time": 0.005,
+      "diffeomorphism_density_max": 3.6894629467723594e-06,
+      "internal_density_max": 4.0049163443044156e-10,
+      "stress_divergence_max": 0.032978748252732615,
+      "exchange_terms_max": 0.03297540179755272,
+      "constraint_load_max": {
+        "H": 0.03466295639361553,
+        "M": 0.0005874796947935057,
+        "Gauss": 0.009014377927379837
+      }
+    },
+    {
+      "N": 24,
+      "time": 0.005,
+      "diffeomorphism_density_max": 4.916091134871126e-09,
+      "internal_density_max": 6.457211067928403e-13,
+      "stress_divergence_max": 0.03297728582538438,
+      "exchange_terms_max": 0.0329772874645777,
+      "constraint_load_max": {
+        "H": 0.034662955324076115,
+        "M": 0.0005914496280813264,
+        "Gauss": 0.009265673746108413
+      }
+    }
+  ],
+  "all_checks_passed": true,
+  "formal_reports": 905,
+  "fresh_numbered_groups": 1,
+  "cumulative_numbered_groups": 3690,
+  "argument_scope": "Explicit Euler-density conversion to the original902/904 canonical forced system and all normal constraints, verified by a covariant pF^2 action variation and joint Ward diagnostics. Conditional retarded physical mapping for compatible zero-past sources; no numerical872 source or feedback yet.",
+  "forcing_and_normal_constraints_share_same_source": true,
+  "full_physical_retarded_inverse_numerically_solved": false,
+  "actual_receiver_or_quantum_source_computed": false,
+  "rigorous_source_or_time_error_bound": false,
+  "full_goal_completed": false
+}

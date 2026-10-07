@@ -1,0 +1,69 @@
+{
+  "round": 813,
+  "all_checks_passed": true,
+  "original_Nambu_dimension": 64,
+  "packet_checks": [
+    {
+      "grid": 64,
+      "time": 0.7,
+      "errors": {
+        "continuity": 8.881784197001252e-16,
+        "causal_current": 0.0,
+        "moving_weight_flux": 2.7755575615628914e-17,
+        "global_CAR_isotropy": 1.056765272421735e-16
+      },
+      "localization": {
+        "tail": 0.0160321202109139,
+        "gram_min": 0.9828634699633428,
+        "gram_bound_error": 0.0,
+        "naive_CAR_anomaly": 0.0011224043471624937,
+        "repaired_CAR_anomaly": 6.026541457385172e-16,
+        "repaired_normalization_error": 2.220446049250313e-16,
+        "mode_error": 0.010227751252757442,
+        "mode_error_bound": 0.14278074627935866,
+        "projection_error_bound": 0.2855614925587173
+      },
+      "same_Nambu_charge_rate": -0.02971905767227037,
+      "weighted_norm_rate": -0.022511683708007504
+    },
+    {
+      "grid": 128,
+      "time": 0.7,
+      "errors": {
+        "continuity": 1.7763568394002505e-15,
+        "causal_current": 0.0,
+        "moving_weight_flux": 0.0,
+        "global_CAR_isotropy": 1.0061396160665481e-16
+      },
+      "localization": {
+        "tail": 0.01603212021091393,
+        "gram_min": 0.9828634699633412,
+        "gram_bound_error": 0.0,
+        "naive_CAR_anomaly": 0.0011224043471625,
+        "repaired_CAR_anomaly": 9.78580868706283e-16,
+        "repaired_normalization_error": 0.0,
+        "mode_error": 0.010227751252757421,
+        "mode_error_bound": 0.14278074627935866,
+        "projection_error_bound": 0.2855614925587173
+      },
+      "same_Nambu_charge_rate": -0.029719057672270344,
+      "weighted_norm_rate": -0.02251168370800755
+    }
+  ],
+  "source_support": {
+    "errors": {
+      "reflection_formula": 0.0,
+      "exterior_nonselective_source": 0.0,
+      "exterior_conditional_cancellation": 0.0
+    },
+    "empty_probability": 0.7499999999999999,
+    "exterior_conditional_covariance_change": 0.2500000000000001,
+    "supports_all_local_quadratic_source_matrices": true,
+    "original_continuum_covariance_evaluated": false
+  },
+  "scope": "Original auxiliary-past Fourier coefficient checks plus independent CAR support calibration.",
+  "original_future_PDE_solved": false,
+  "full_interacting_record_retention_proven": false,
+  "fixed_width_carrier_proven": false,
+  "autonomous_readout_proven": false
+}

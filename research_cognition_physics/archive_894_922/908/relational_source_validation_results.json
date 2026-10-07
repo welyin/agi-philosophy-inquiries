@@ -1,0 +1,94 @@
+{
+  "round": 908,
+  "date": "2026-10-06",
+  "all_checks_passed": true,
+  "cumulative_numbered_groups": 3693,
+  "argument_scope": "Original fixed material loop, compact4D anchor profile, three quotient-group records and all off-shell first-jet weak sources on the actual902 short-time numerical background. No full PDE error or strong-source/feedback completion.",
+  "one_actual_background_and_loop_case_reproduced": true,
+  "independent_offshell_source_checks_reproduced": {
+    "independent_offshell_jets": 372,
+    "reference_derivative_max_error": 1.9114484300919443e-16,
+    "source_adjoint_pairing_max_error": 1.3010426069826053e-18,
+    "omitted_metric_local_pair_defect": 1.1263498357395498e-07,
+    "omitted_time_derivative_local_pair_defect": 7.788587272720772e-10,
+    "omitted_clock_derivative_local_pair_defect": 1.820675235192247e-07,
+    "independent_time_and_connection_jets_retained": true
+  },
+  "full_refinement_and_family_runs_previously_executed": true,
+  "all_large_runs_rerun_by_default": false,
+  "full_check_command": "Set OPENBLAS_NUM_THREADS=1; python -B -X utf8 validate_relational_source.py --rerun-all",
+  "refinement_diagnostics": {
+    "path8_to16": 9.696587519036903e-09,
+    "path16_to32": 2.424039613133089e-09,
+    "anchor2_to3": 6.394230487542091e-09,
+    "space16_to24": 5.720374138522971e-08,
+    "interpolation_time_halving": 5.813894071032832e-12
+  },
+  "physical_family_smallest_epsilon": {
+    "epsilon": 0.01,
+    "full_source": {
+      "total": [
+        -3.312166012111263e-08,
+        6.722696432527451e-17,
+        -1.9872995946350685e-07
+      ],
+      "direct": [
+        -3.3134450826136395e-08,
+        -1.9141098773098272e-19,
+        -1.9880670369316062e-07
+      ],
+      "reference": [
+        1.2790705023466069e-11,
+        6.741837531228811e-17,
+        7.674422965286803e-11
+      ],
+      "jet_pairing_identity_residual": 9.04263505885313e-22
+    },
+    "independently_rebuilt_record_derivative": [
+      -3.313331831122923e-08,
+      -1.2934918641354227e-15,
+      -1.988013309528469e-07
+    ],
+    "difference": [
+      -1.16581901166018e-11,
+      -1.3607188284606973e-15,
+      -7.137148934006264e-11
+    ],
+    "initial_constraints": {
+      "plus": {
+        "H_max": 0.00010388471812650124,
+        "H_rms": 7.092842071760557e-05,
+        "M_max": 1.0230114457748796e-05,
+        "Gauss_max": 7.771561172376096e-16,
+        "harmonic_max": 6.804587703024279e-07,
+        "minimum_metric_eigenvalue": 0.7395475458462631,
+        "minimum_F": 1.8628335465576555
+      },
+      "minus": {
+        "H_max": 0.00010388471812650124,
+        "H_rms": 7.092842071759806e-05,
+        "M_max": 1.0230114457748796e-05,
+        "Gauss_max": 7.771561172376096e-16,
+        "harmonic_max": 6.804587703024279e-07,
+        "minimum_metric_eigenvalue": 0.7395475458462631,
+        "minimum_F": 1.8628335465576555
+      }
+    }
+  },
+  "source_file_sha256": {
+    "magnetic_reference_source.py": "256cc917d3516e26c1c0a21356f75c5dd3200d7022012bdc0052bcf6b29779af",
+    "material_background.py": "1a9eecaa603e08b3188a3d1e87b38f28c2f6f21fabec03080a3b2f77a4e2b6ee",
+    "relational_loop_source.py": "115e0123f8afa8d0bb557d61fc76ea56bd4dc42e22e6f57ac07d7c8fff5f6804",
+    "relational_source_checks.py": "e4420d5d642315fd1f0ce8d752b081f636e914dcf975e5de946aaf58eb545ee7",
+    "relational_source_checks_results.json": "d67d21822b1d997819f9442b7c5ec96f6e2e07dbdb60e2063617f9a2a53c1bad",
+    "physical_family_source_checks.py": "4ab96efde1a15a347970da0910ebbd08e9bf8ba385f2054394cb6ee5e854d652",
+    "physical_family_source_checks_results.json": "d6280e37bf75ff1a601c9b57c6b9b7149b837aa7c48b78e82b1f5e076f9d37a6",
+    "drafts/initial_anchor_failure.json": "68cf83fe8a62eb194b68fd9e011019d85695923198053a5a41e2c1b99c864923",
+    "drafts/source_implementation_working.md": "a13c34ac3d0623e905364a54e36376f45b6b230df11de8733284fba5aba86786"
+  },
+  "original_first_jet_weak_source_implemented": true,
+  "strong_spacetime_source_array_computed": false,
+  "full_support_and_dynamical_error_certified": false,
+  "original872_forced_feedback_computed": false,
+  "full_goal_completed": false
+}

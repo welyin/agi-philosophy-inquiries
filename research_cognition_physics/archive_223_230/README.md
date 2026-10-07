@@ -2,7 +2,7 @@
 
 [研究总目录](../README.md) · [整合阶段论文v1.1](../可组合认知结构与有限维量子理论_阶段论文.md) · [配套文件索引](文件索引.md)
 
-正式 `research_note_223.md` 至 `research_note_230.md` 直接放在本目录；其它材料分别放在 `223/` 至 `230/`，阶段结项与论文维护材料在相应轮次的 `archive_closure/`。当前研究转至 [archive_764_](../archive_764_/README.md)。
+正式 `research_note_223.md` 至 `research_note_230.md` 直接放在本目录；其它材料分别放在 `223/` 至 `230/`，阶段结项与论文维护材料在相应轮次的 `archive_closure/`。当前研究转至 [archive_764_](../_shared/notes/research_progress_764_1008.md)。
 
 结项范围为有限维量子操作规则与连续可逆动力学形式的条件性重建。229—230轮已整合进论文；保留原合同下的有限精度结论，以及增加连续种子、路径或闭群条件后的精确实现结论。具体自然Hamiltonian、物理钟尺、无限维和引力属于后续问题。
 
@@ -27,13 +27,13 @@
 
 [原科学清单](228/archive_closure/STAGE2_MANIFEST.json)及[补充清单](230/archive_closure/STAGE2_CLOSURE_ADDENDUM.json)的哈希与路径含义保持原样；[旧论文v1.0](230/archive_closure/paper_versions/finite_quantum_v1.0.md)、[原补充稿](230/archive_closure/STAGE2_ADDENDUM.md)和[旧归档导航](230/archive_closure/README_before_round_layout.md)继续保留。
 
-代码和结果保持原字节，阅读版报告只更新链接。原目录中的验证脚本依赖历史布局，现通过[隔离复算入口](../archive_764_/_migration/layout_001_230_20261004/README.md)运行八轮原单元测试，不改写结果文件：
+代码和结果保持原字节，阅读版报告只更新链接。原目录中的验证脚本依赖历史布局，现通过[隔离复算入口](../_migration/layout_001_230_20261004/README.md)运行八轮原单元测试，不改写结果文件：
 
 ```powershell
-python -B -X utf8 research_cognition_physics/archive_764_/_migration/layout_001_230_20261004/replay_early.py --stage 2
+python -B -X utf8 research_cognition_physics/_migration/layout_001_230_20261004/replay_early.py --stage 2
 ```
 
-从项目根目录运行。[本次测试记录](../archive_764_/_migration/layout_001_230_20261004/replay_checks.json)和[历史论文整合核验](230/archive_closure/integration_checks.json)分开保存；历史论文的整合生成与哈希合同依照冻结快照解释，不能直接套用到更新过链接的阅读版。
+从项目根目录运行。[本次测试记录](../_migration/layout_001_230_20261004/replay_checks.json)和[历史论文整合核验](230/archive_closure/integration_checks.json)分开保存；历史论文的整合生成与哈希合同依照冻结快照解释，不能直接套用到更新过链接的阅读版。
 
 ## 原项目根README迁入的历史记录
 

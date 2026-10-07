@@ -1,6 +1,6 @@
 # 空间参考值的局部量子读取：单次有限记录、回冲与规模边界
 
-日期：2026-09-30。未编号接口，已完成独立复算与解析复核；不增加521或编号检查。代码：[local_reference_probe_model.py](../../archive_764_/_shared/code/local_reference_probe_model.py)；结果：[local_reference_probe_results.json](../../archive_764_/_shared/results/local_reference_probe_results.json)。
+日期：2026-09-30。未编号接口，已完成独立复算与解析复核；不增加521或编号检查。代码：[local_reference_probe_model.py](../../_shared/code/local_reference_probe_model.py)；结果：[local_reference_probe_results.json](../../_shared/results/local_reference_probe_results.json)。
 
 ## 1. 结果与来源
 

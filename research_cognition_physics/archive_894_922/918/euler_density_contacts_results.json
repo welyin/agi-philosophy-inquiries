@@ -1,0 +1,53 @@
+{
+  "round": 918,
+  "status": "working",
+  "date": "2026-10-06",
+  "samples": 8,
+  "N": 17,
+  "same_action_background_response_receiver": true,
+  "direct_variation_density_conversion_error": {
+    "gravity": 1.6967763999398144e-17,
+    "scalar": 4.2207651761681786e-18,
+    "YM": 3.1720854479081514e-18
+  },
+  "volume_log_derivative_identity_error": 8.722004136995937e-18,
+  "internal_volume_cancellation_error": 5.293955920339377e-23,
+  "internal_density_reduction_error": 4.062219322191842e-17,
+  "raw_tensor_internal_driver_times_volume_max": 1.0566304719420808e-07,
+  "corrected_density_internal_driver_max": 1.0384658472622417e-12,
+  "corrected_density_diffeomorphism_driver_max": 9.966520760231279e-06,
+  "density_background_contact_correction_max": {
+    "gravity": 1.4793375825072102e-08,
+    "scalar": 4.91817753850997e-06,
+    "YM": 4.9001578796860775e-05
+  },
+  "same_Gauss_variation_identity_error": 6.776263578034403e-21,
+  "same_Gauss_variation_sample_max": 5.7039622279766704e-05,
+  "independent_coordinate_checks": [
+    {
+      "step": 2e-06,
+      "diffeomorphism_density_identity_error": 6.833759522109249e-11,
+      "internal_density_identity_error": 1.20189168692487e-11,
+      "directly_differenced_internal_Ward_max": 1.3056845272739503e-11
+    },
+    {
+      "step": 1e-06,
+      "diffeomorphism_density_identity_error": 1.585267739968128e-10,
+      "internal_density_identity_error": 1.8512662682663966e-11,
+      "directly_differenced_internal_Ward_max": 1.9551128529926207e-11
+    }
+  ],
+  "small_internal_driver_resolved_by_coordinate_difference": false,
+  "physical_error_not_removed_by_representation": true,
+  "actual_finite_observable_error_certified": false,
+  "full872_response_computed": false,
+  "full_goal_completed": false,
+  "elapsed_seconds": 44.076,
+  "source_hashes": {
+    "918\\euler_density_contacts.py": "5bf22ddb8a9deffd3223d0fcdeefab16d047d515b15c3620cac4b163251b0b93",
+    "917\\joint_constraint_driving.py": "4a5bd553a85b2e7a62523cb1cb99fb40602ff3a50dfe5031e6228d5057691846",
+    "917\\receiver_stress_derivative.py": "357a4e715ca00718b8e892d49a7277fb069d1b6da8b5ad81ade4ebf825fc5ab0",
+    "916\\covariant_joint_residual.py": "1223a54d5fd319d4390fff85f211f9e6398deb8a3c5f6bcc645b07b671692ee8"
+  },
+  "unreachable_expression_cleanup_AST_equivalent": true
+}

@@ -17,7 +17,7 @@
 | Nett, *Emergent Time and Causal Orientation*, v1.0，2026-05-11 | [旧版本DOI](https://doi.org/10.5281/zenodo.20122363)，112页；核对导言、10.22、12.28及版本关系 | 仅作版本追踪，不能冒充当前时间论文 |
 | 温沛林，FTT | [署名转载线索](https://blog.51cto.com/u_16099328/14727486)、[另一聚合线索](https://jishuzhan.net/article/2064265032019554306) | 只用于定位原稿，不作技术结论依据 |
 
-Zenodo网页在浏览工具中打不开，但其公开记录API及PDF可读取；本次通过API核对作者、题名、发布日期、文件校验值与版本关系，再提取PDF文字。未渲染或检查图像。[来源清单](../../archive_764_/_shared/results/ftt_tsa_source_manifest.json)保留具体版本、读取范围和访问方式。493页全文未逐页审计，不能以下载完整文件代替读完证明。
+Zenodo网页在浏览工具中打不开，但其公开记录API及PDF可读取；本次通过API核对作者、题名、发布日期、文件校验值与版本关系，再提取PDF文字。未渲染或检查图像。[来源清单](../../_shared/results/ftt_tsa_source_manifest.json)保留具体版本、读取范围和访问方式。493页全文未逐页审计，不能以下载完整文件代替读完证明。
 
 ## 3. TSA可立即借用的部分：预测充分性
 

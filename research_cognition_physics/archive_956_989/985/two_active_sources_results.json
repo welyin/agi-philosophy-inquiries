@@ -1,0 +1,164 @@
+{
+  "round": 985,
+  "date": "2026-10-07",
+  "all_scientific_checks_passed": true,
+  "parameters": {
+    "G": 1e-30,
+    "mu": 2.4865729440027034e+35,
+    "soft_core": 100000000.0,
+    "time_max": 138976.4948293033,
+    "mass_baseline_A": 200,
+    "cutoff_symbolic": "E=2*mu+400; held fixed under source variations"
+  },
+  "initial_moments": {
+    "K_first": [
+      [
+        0.17296800413777208,
+        0.0
+      ],
+      [
+        0.0,
+        0.21148384114144048
+      ]
+    ],
+    "K_second": [
+      [
+        0.09318623041110968,
+        0.0
+      ],
+      [
+        0.0,
+        0.10796748417107595
+      ]
+    ],
+    "rms_K": 0.32858405952065894,
+    "rms_K_A_plus_K_B": 0.5526172259982745,
+    "analytic_K_norm_upper": 4,
+    "analytic_sum_norm_upper": 8,
+    "moment_support_comparison": 2.7755575615628914e-17,
+    "unknown_joint_two_sender_input_and_passive_reference": true,
+    "all_Fock_occupations_retained_in_theorem": true
+  },
+  "stability": {
+    "relative_negative_form_bound": 0.0012432864720013518,
+    "common_energy_window_reduces_both_H": true,
+    "modified_high_energy_interaction_is_explicit_input": true,
+    "lower_bound_implies_positive_H": true,
+    "unmodified_unbounded_below_does_not_imply_nonunitarity": true
+  },
+  "uniform_budget": {
+    "inherited_978": 0.0017201120045897134,
+    "high_energy_extension": 6.434558872921849e-35,
+    "second_active_source": 1.134048197807115e-30,
+    "second_kinetic_increment": 2.1763291771256572e-72,
+    "rational_base_upper": {
+      "exact": "8601/5000000",
+      "decimal": 0.0017202
+    },
+    "rational_tail_upper": {
+      "exact": "1/12500000000000000000000000000000000",
+      "decimal": 8e-35
+    },
+    "rational_active_upper": {
+      "exact": "3/2500000000000000000000000000000",
+      "decimal": 1.2e-30
+    },
+    "rational_kinetic_upper": {
+      "exact": "1/250000000000000000000000000000000000000000000000000000000000000000000000",
+      "decimal": 4e-72
+    },
+    "exact_sum_upper": {
+      "exact": "430050000000000000000000000300020000000000000000000000000000000000001/250000000000000000000000000000000000000000000000000000000000000000000000",
+      "decimal": 0.0017202
+    },
+    "rounded_state_upper": {
+      "exact": "1721/1000000",
+      "decimal": 0.001721
+    },
+    "record_contrast_lower": {
+      "exact": "4825061/10000000",
+      "decimal": 0.4825061
+    }
+  },
+  "source_checks": [
+    {
+      "masses": [
+        2.0,
+        3.0
+      ],
+      "chi": 1.0,
+      "force_derivative_error": 3.3745142097307834e-14,
+      "constraint_source": -2.6699649569399084,
+      "rest_plus_potential": 4.973300350430601
+    },
+    {
+      "masses": [
+        8.0,
+        9.0
+      ],
+      "chi": 0.5882352941176471,
+      "force_derivative_error": 2.1883883594142617e-13,
+      "constraint_source": -18.846811460752296,
+      "rest_plus_potential": 16.811531885392476
+    },
+    {
+      "masses": [
+        50.0,
+        20.0
+      ],
+      "chi": 0.14285714285714285,
+      "force_derivative_error": 8.616996005628152e-13,
+      "constraint_source": -63.57059421285496,
+      "rest_plus_potential": 69.36429405787145
+    }
+  ],
+  "negative_extrapolation_control": [
+    {
+      "n": 100,
+      "unmodified_rest_plus_potential": 150.0,
+      "extended_rest_plus_potential": 197.5
+    },
+    {
+      "n": 1000,
+      "unmodified_rest_plus_potential": -3000.0,
+      "extended_rest_plus_potential": 1975.0
+    },
+    {
+      "n": 10000,
+      "unmodified_rest_plus_potential": -480000.0,
+      "extended_rest_plus_potential": 19750.0
+    }
+  ],
+  "conservation": {
+    "total_energy": true,
+    "total_momentum": true,
+    "both_complete_internal_masses": true,
+    "equal_opposite_forces": true,
+    "same_H_source_derivative": true
+  },
+  "scope": {
+    "two_active_source_Newton_subinterface_completed": true,
+    "entire_U1_completed": false,
+    "radiative_TT_matched": false,
+    "full_SM_matching": false,
+    "GR_total_physical_error_certified": false,
+    "physical_minimum_scale_assumed": false,
+    "microscopic_continuity_assumed": false,
+    "UV_completion_claimed": false,
+    "unbounded_source_error_deduced_from_probability": false,
+    "full_goal_completed": false
+  },
+  "references": [
+    "https://arxiv.org/abs/1908.06929",
+    "https://arxiv.org/abs/gr-qc/9405057"
+  ],
+  "source_hashes": {
+    "research_cognition_physics\\archive_764_\\985\\two_active_sources.py": "72d6b6c35e6bf872a967f39978df347efda49053a90999b7cf7c2319954dc6f0",
+    "research_cognition_physics\\archive_764_\\985\\drafts\\two_active_sources_decision.md": "bb088b2439193c853a2adbaf38c28a25bce19f40e0a74b10a25133e408b59888",
+    "research_cognition_physics\\archive_764_\\968\\internal_relay.py": "d400f901510b89f3e1e07f23b01bab3a1502ccddd05b57fd21a45970ddb63235",
+    "research_cognition_physics\\archive_764_\\976\\finite_internal_reference_results.json": "19336c55d3c1e15718a793a50ce9aafe0e9a3b99deb754a1b232e0edd5b4e358",
+    "research_cognition_physics\\archive_764_\\978\\moving_complete_source_results.json": "6e448f602b6c2926923e930672e54db666d0c54e36cc73ba5d4244c192226893",
+    "research_cognition_physics\\archive_764_\\978\\moving_complete_source.py": "18514a971c9950499798dc16fe8d05416877e213ace578352ad023dbc42c58d3",
+    "research_cognition_physics\\archive_764_\\981\\drafts\\common_parent_contract_v1.md": "babe46677102396464175ebd876703be6b37b2e08a81fa5fd0a8ecc3bfef74ee"
+  }
+}

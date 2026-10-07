@@ -1,0 +1,115 @@
+{
+  "round": 958,
+  "date": "2026-10-07",
+  "all_scientific_checks_passed": true,
+  "parameters": {
+    "U": 1.0,
+    "hopping": 0.1,
+    "kappa": 0.2,
+    "active_number_sector_dimension": 36,
+    "relational_material_with_spectator_dimension": 576,
+    "physical_input": "fixed Hubbard plus electrostatic density interaction"
+  },
+  "exact_interface": {
+    "one_body_charge_projection": 1.514599613801753e-18,
+    "double_occupancy_probability": 0.035761654557370404,
+    "first_order_joint_projection": 2.864139922289671e-20,
+    "conditional_energy_chi": 2.4866347759902596e-05,
+    "second_order_chi": 2.4629285339835975e-05,
+    "variational_chi_lower": 2.46289932947303e-05,
+    "resolvent_chi_upper": 6.100755160316205e-05,
+    "singlet_sector_gap_at_zero": 1.0385164807134504,
+    "dressed_product_distance": 0.0034946812556666223,
+    "distance_upper_eta": 0.008529743989514114,
+    "all_time_unknown_input_error_upper": 0.017059487979028228,
+    "controlled_phase_time": 126339.12643398577,
+    "read_window_half_width": 0.25946161103601995,
+    "analytic_receiver_contrast_lower": 0.9458810240419435,
+    "finite_time_rows": [
+      {
+        "time": 126338.86697237474,
+        "unknown_input_isometry_error": 0.003717328955886762,
+        "receiver_probabilities_for_logical_0_1": [
+          2.507478615896513e-05,
+          0.9999750324567296
+        ],
+        "receiver_contrast": 0.9999499576705706
+      },
+      {
+        "time": 126339.12643398577,
+        "unknown_input_isometry_error": 0.004524924524009836,
+        "receiver_probabilities_for_logical_0_1": [
+          4.2452633889511215e-08,
+          0.9999999999999998
+        ],
+        "receiver_contrast": 0.9999999575473659
+      },
+      {
+        "time": 126339.3858955968,
+        "unknown_input_isometry_error": 0.005227441668244924,
+        "receiver_probabilities_for_logical_0_1": [
+          2.5001531732040902e-05,
+          0.999975032456677
+        ],
+        "receiver_contrast": 0.9999500309249449
+      }
+    ]
+  },
+  "sources": {
+    "ground_energy_kappa_derivative": -0.00025105685912337074,
+    "finite_difference_derivative": -0.0002510568596764129,
+    "ground_marginal_charges": [
+      0.0,
+      0.0
+    ],
+    "actual_initial_code_at_read_time": [
+      {
+        "actual_initial_code_pair": true,
+        "charge_cross": -0.00010674724187167416,
+        "charge_A": 4.4504593356398635e-17,
+        "charge_B": 2.981555974335137e-17
+      }
+    ],
+    "extra_static_geometry": {
+      "R": 3.0,
+      "a": 1.0,
+      "coulomb_coefficient": 5.846049894151551,
+      "kappa_prime": -0.1899122198700344,
+      "conditional_ground_force": -4.767876542971784e-05,
+      "moving_geometry_or_full_stress_certified": false
+    }
+  },
+  "verification": {
+    "exact_intertwining_error": 1.225056144606175e-16,
+    "isometry_error": 5.920509606838652e-16,
+    "same_source_intertwining_error": 1.0842021724855044e-19,
+    "current_balance_error": 3.925231146709438e-17,
+    "energy_conservation_max_error": 1.942890293094024e-16,
+    "positive_density_representation_error": 0.0,
+    "all_density_coefficients_positive": true
+  },
+  "scope": {
+    "same_electrostatic_interaction_writes_relational_content": true,
+    "arbitrary_unknown_input_and_passive_reference_bound": true,
+    "controller_pulse_schedule_used": false,
+    "mean_charge_product_would_miss_cross_source": true,
+    "physical_preparation_and_terminal_readout_are_declared_inputs": true,
+    "full_six_protocols_implemented": false,
+    "full_QED_GR_matching_certified": false,
+    "physical_lifetime_at_calculated_read_time_certified": false,
+    "three_dimensions_derived": false,
+    "full_goal_completed": false
+  },
+  "references": [
+    "https://arxiv.org/abs/1408.4740",
+    "https://arxiv.org/abs/1404.5420",
+    "https://arxiv.org/abs/1105.0675"
+  ],
+  "source_hashes": {
+    "research_cognition_physics\\archive_764_\\958\\capacitive_material_write.py": "2d4acf2b8f565a0202812c58ba289fdd0818cc0f14fd08eefcce044a2040d143",
+    "research_cognition_physics\\archive_764_\\956\\native_material_interface.py": "2ab03c573de42d54c28c65804766e7840331a8f028a5059d6129baf57f5bc0b8",
+    "research_cognition_physics\\archive_764_\\956\\native_material_interface_results.json": "4ec63d69c03d2022ff7e9da0e39da22f69e5da39131bd7b866e3264734056615",
+    "research_cognition_physics\\archive_764_\\957\\task_domain_budget_results.json": "c0822cb98bc7b2e9ab12962a6670b7fa0e27363c20affbc4b43819250bb9bd59",
+    "research_cognition_physics\\archive_429_466\\434\\encoded_exchange_response_audit.py": "39afff2eb6d43c61745cfb11b291fc960aa90897c183adcb8558c4bbd4c7e411"
+  }
+}

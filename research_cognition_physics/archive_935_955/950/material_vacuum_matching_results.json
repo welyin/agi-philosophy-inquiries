@@ -1,0 +1,150 @@
+{
+  "round": 950,
+  "date": "2026-10-07",
+  "all_scientific_checks_passed": true,
+  "parameters": {
+    "literal_Dirac_flavors": 4063232,
+    "clock_eigenvalues": [
+      0.0,
+      0.10471975511965977,
+      0.20943951023931953,
+      0.3141592653589793,
+      0.41887902047863906,
+      0.5235987755982988,
+      0.6283185307179586,
+      0.7330382858376183,
+      0.8377580409572781,
+      0.9424777960769379,
+      1.0471975511965976,
+      1.1519173063162573,
+      1.2566370614359172,
+      1.361356816555577,
+      1.4660765716752366,
+      1.5707963267948966,
+      1.6755160819145563,
+      1.780235837034216,
+      1.8849555921538759,
+      1.9896753472735356,
+      2.0943951023931953,
+      2.199114857512855,
+      2.3038346126325147,
+      2.4085543677521746,
+      2.5132741228718345,
+      2.617993877991494,
+      2.722713633111154,
+      2.827433388230814,
+      2.9321531433504733,
+      3.036872898470133,
+      3.141592653589793
+    ],
+    "each_energy_multiplicity": 131072,
+    "each_energy_each_B_sign_multiplicity": 65536,
+    "base_mass": 100000000000000.0,
+    "yukawa_coupling": 0.5,
+    "K": [
+      [
+        1.25,
+        1.0
+      ],
+      [
+        1.0,
+        4.0
+      ]
+    ],
+    "spacelike_Q_window": [
+      0.0,
+      4.0
+    ]
+  },
+  "checks": {
+    "actual_B_core_eigenvalue_error": 2.220446049250313e-16,
+    "actual_clock_spectrum_error": 8.881784197001252e-16,
+    "state_binomial_weight_error": 1.0824674490095276e-15,
+    "Dirac_projector_trace_error": 6.938893903907228e-18,
+    "positive_quadrature_relative_agreement": 3.0337347786140306e-15,
+    "Sherman_Morrison_error": 1.3877787807814457e-17,
+    "finite_local_matching_response_identity_error": 1.3877787807814457e-16
+  },
+  "one_loop": {
+    "L4": 1.2865358614169077e-25,
+    "L6": 9.189541867263338e-55,
+    "wrong_state_probability_weight_L4": 3.166286988822956e-32,
+    "true_to_wrong_species_count_ratio": 4063231.9999999995,
+    "rows": [
+      {
+        "spacelike_Q": 0.25,
+        "one_loop_subtracted_residual": 5.025530708659787e-28,
+        "leading_positive_upper": 5.025530708659796e-28,
+        "leading_deficit": 2.2435404949373412e-58,
+        "deficit_upper": 2.2435404949373384e-58,
+        "leading_relative_deficit_upper": 4.464285714285574e-31,
+        "shared_response_relative_change_upper": 4.712851160510538e-28
+      },
+      {
+        "spacelike_Q": 1.0,
+        "one_loop_subtracted_residual": 1.2865358614169054e-25,
+        "leading_positive_upper": 1.2865358614169077e-25,
+        "leading_deficit": 9.18954186726335e-55,
+        "deficit_upper": 9.189541867263338e-55,
+        "leading_relative_deficit_upper": 7.142857142856919e-30,
+        "shared_response_relative_change_upper": 6.275784689838575e-26
+      },
+      {
+        "spacelike_Q": 4.0,
+        "one_loop_subtracted_residual": 3.293531805227278e-23,
+        "leading_positive_upper": 3.293531805227284e-23,
+        "leading_deficit": 3.764036348831068e-51,
+        "deficit_upper": 3.7640363488310633e-51,
+        "leading_relative_deficit_upper": 1.142857142857107e-28,
+        "shared_response_relative_change_upper": 1.9148440728065602e-24
+      }
+    ],
+    "entire_Q_window_kernel_upper": 3.293531805227284e-23,
+    "entire_Q_window_common_response_relative_upper": 3.561282613379815e-23,
+    "odd_p_vertices_cancel_in_pure_fermion_determinant": true
+  },
+  "local_matching_counterexample": {
+    "delta_K_pp": 0.1,
+    "Q": 1.0,
+    "record_W_before": 0.020609756097560977,
+    "record_W_after": 0.019651162790697677,
+    "record_fermion_before": 0.02414510960149186,
+    "record_fermion_after": 0.0230220812479341,
+    "common_relative_response_change": 0.046511627906976605
+  },
+  "weak_family_diagnostics": [
+    {
+      "epsilon": 1.0,
+      "collective_loop_factor_diagnostic": 6432.679307084741,
+      "one_loop_Q1_residual_upper": 1.2865358614169077e-25,
+      "dimension_two_local_scale_diagnostic": 6.432679307084741e+31
+    },
+    {
+      "epsilon": 0.001,
+      "collective_loop_factor_diagnostic": 0.0064326793070847415,
+      "one_loop_Q1_residual_upper": 1.2865358614169076e-31,
+      "dimension_two_local_scale_diagnostic": 6.432679307084741e+25
+    }
+  ],
+  "scope": {
+    "one_closed_fermion_loop_only": true,
+    "subtraction_constants_are_matching_inputs": true,
+    "local_mass_scale_is_not_a_physical_prediction": true,
+    "all_orders_certified": false,
+    "full_metric_source_or_parent_matching_certified": false,
+    "same_state_weights_as_vacuum_multiplicities": false,
+    "composite_internal_levels_identified_as_fundamental_species": false,
+    "new_finite_protocol_probability_bound": false,
+    "physical_cutoff_or_UV_completion_inferred": false,
+    "literal_flavor_candidate_selected_as_final": false,
+    "full_goal_completed": false
+  },
+  "source_hashes": {
+    "research_cognition_physics\\archive_764_\\950\\material_vacuum_matching.py": "c8182e210cdf05c7f7a7c3c25ba9dc8d3728d70b3c6bbd9b4a44ddd6ebecd88e",
+    "research_cognition_physics\\archive_764_\\929\\joint_protocol_selection.py": "6d92a4ffae1e4b167741c8b81193bad09f44827a2db8e051ac2bee1acafd72e9",
+    "research_cognition_physics\\archive_764_\\947\\protocol_field_transport_results.json": "e377828593376d0e729dda11a9739bf60b499616cab1c2901dfaf743dc452de8",
+    "research_cognition_physics\\archive_764_\\948\\neutral_matter_bridge_results.json": "a8732964dc9afaaf3fd4a561dd0253c13294500f8295f3d593217aaf398a5442",
+    "research_cognition_physics\\archive_764_\\949\\joint_weak_domain_results.json": "437076df16965f50bae0a31bfb2ead559e90015006fef601ad1293170b4908f0",
+    "research_cognition_physics\\archive_629_652\\research_note_630.md": "b4c23aeb35cddbc0849586d9ab1b59b596835cbef033283b5bb20c1dfba7f694"
+  }
+}

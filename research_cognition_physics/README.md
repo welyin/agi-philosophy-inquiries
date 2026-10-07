@@ -1,5 +1,842 @@
 # 认知物理研究：阶段论文与研究档案
 
+## 764—1008轮已按主题归档（2026-10-08）
+
+原`archive_764_`已实际拆分为10个连续阶段。正式报告仍放各阶段根目录，代码、结果和草稿放同号轮次目录；跨阶段材料集中在`_shared`，迁移和复算说明集中在`_migration`。[本次分期与核验](_migration/layout_764_1008_20261008/README.md)。科学编号仍止于1008、累计3786；没有新增研究轮次或启动新的目标。
+
+## 1008：整体认知操作假说v2.2与解释层验收
+
+[1008报告](archive_990_1008/research_note_1008.md)与[整体假说v2.2](archive_990_1008/1008/overall_operation_hypothesis_v2_2.md)整合16类主要现象、64项解释义务和9个跨部门接口，并按9项要求完成当前解释层验收。当前解释层交付完成；完整物理统一、独立物理推导、全部现实共同预测及共同实现尚未完成。正式1008／累计3786，新增物理试验0。
+
+[验收说明](archive_990_1008/1008/completion_audit.md) · [审计代码](archive_990_1008/1008/overall_completion_audit.py) · [结果](archive_990_1008/1008/overall_completion_results.json) · [核验](archive_990_1008/1008/research_round_1008_checks.json)。各机制保参与者、作用、来源、记录和反作用及适用边界，不把条件性采用汇总为同一现实历史。后续见[待选问题](archive_990_1008/1008/follow_on_questions.md)，不自动开启重复细化或新轮次。957及386或425等既有条件性空间接口保持。
+
+## 1007：中微子观测与介质味转换
+
+[1007报告](archive_990_1008/research_note_1007.md)采用中微子产生—传播—探测及普通介质味转换机制；区分质量分支辨认、包重叠、宏观平均与绝热转换，来源、反冲和记录共同入账。正式1007／累计3786，新增物理试验0，整体未完成。
+
+[机制补充](archive_990_1008/1007/neutrino_observation_adoption_v1.md) · [采用审计](archive_990_1008/1007/neutrino_adoption_audit.py) · [结果](archive_990_1008/1007/neutrino_adoption_results.json) · [核验](archive_990_1008/1007/research_round_1007_checks.json)。补[整体v2.1](archive_990_1008/1005/overall_operation_hypothesis_v2_1.md)的P13观测链，保539质量接口、994初始净荷及995—996可选生成分支；普通味振荡不等于净荷生成。不预测质量或PMNS参数，不认证现实源—探测器全链。接[1008](archive_990_1008/1008/drafts/STATUS.md)整合整体v2.2并审计四项任务义务，停止振荡细化。应用目标、957和条件性空间接口保持。
+
+## 1006：常规超导与集体相干
+
+[1006报告](archive_990_1008/research_note_1006.md)补常规声子配对、集体相位刚性、规范不变电磁响应及实际关系相位；宏观有序可以与其他变量中的耗散及经典记录共存，但零电阻不等于无成本生命周期。正式1006／累计3786，新增物理试验0，整体未完成。
+
+[机制补充](archive_990_1008/1006/conventional_superconductivity_adoption_v1.md) · [采用审计](archive_990_1008/1006/superconductivity_adoption_audit.py) · [结果](archive_990_1008/1006/superconductivity_adoption_results.json) · [核验](archive_990_1008/1006/research_round_1006_checks.json)。本轮接[整体v2.1](archive_990_1008/1005/overall_operation_hypothesis_v2_1.md)的P08；复用355中性凝聚态及1000材料接口，不计算现实Tc、完整相图或器件寿命。接[1007](archive_990_1008/1007/drafts/STATUS.md)补中微子产生—传播—探测。应用目标、957和条件性空间接口保持。
+
+## 1005：辐射反馈与整体假说v2.1
+
+[1005报告](archive_990_1008/research_note_1005.md)采用辐射输运、再吸收及热／动量反馈；发射、净失能和温度下降分开，同一来源与接收者共同记账。[整体假说v2.1](archive_990_1008/1005/overall_operation_hypothesis_v2_1.md)整合任务供给、有限强场及形成机制，保16类现象和输入边界。正式1005／累计3786，新增物理试验0，整体未完成。
+
+[机制补充](archive_990_1008/1005/radiation_formation_adoption_v1.md) · [审计结果](archive_990_1008/1005/mechanism_update_results.json) · [核验](archive_990_1008/1005/research_round_1005_checks.json)。停止输运求解器细化；接[1006](archive_990_1008/1006/drafts/STATUS.md)补宏观量子有序相的成熟机制。应用目标、957和条件性空间接口保持。
+
+## 1004：几何、场态与有限强场记录
+
+[1004报告](archive_990_1008/research_note_1004.md)补同一传播几何下真实场态与仪器的记录差；采用4D有限响应判别，1+1双算法校准一致，有限波包版本保新增应力。[结果](archive_990_1008/1004/finite_horizon_response_results.json) · [核验](archive_990_1008/1004/research_round_1004_checks.json)。正式1004／累计3786，整体未完成。
+
+[强场机制补充](archive_990_1008/1004/strong_field_adoption_v1.md)分清几何访问、场态、探测与来源；未签收4D灰体数值、共同几何反作用或完整蒸发。停止强场细化，接[1005](archive_990_1008/1005/drafts/STATUS.md)回辐射输运、再吸收与组织形成反馈。应用目标、957及条件性空间接口保持。
+
+## 1004工作审计：任务资源与关系参考
+
+[工作报告](archive_990_1008/research_note_1004_working.md)按人口记录、关系参考与裸非协变操作区分供给义务；直接复用421／447／457等结果。992给人口失配，未制造纯辅助、相位参考或控制；关系任务不要求外部绝对相位，但实际准备和访问仍需交代。[机制补充](archive_990_1008/1004/resource_preparation_adoption_v1.md) · [审计结果](archive_990_1008/1004/resource_preparation_audit_results.json) · [核验](archive_990_1008/1004/drafts/resource_adoption_checks.json)。
+
+正式仍1003／累计3785，新增物理试验0；整体未完成。供给分类已可采用，接[下一项](archive_990_1008/1004/drafts/NEXT.md)补有限强场的场态、探测记录与共同来源；不扩建写入器，不改应用目标。
+
+## 1003：整体假说v2与共同解释审计
+
+[1003报告](archive_990_1008/research_note_1003.md)发布[整体假说v2](archive_990_1008/1003/overall_operation_hypothesis_v2.md)，将核组成、材料相和有限记录接入16类现象说明；区分四项组织许可、任务资源与共同历史。[审计结果](archive_990_1008/1003/mechanism_synthesis_results.json) · [核验](archive_990_1008/1003/research_round_1003_checks.json)。正式1003／累计3785；新增物理试验0，整体未完成。
+
+近期仅980→1002有新增资源下的实际热态接续，未签收相位或全功能生命周期。接[1004](archive_990_1008/1004/drafts/STATUS.md)补有限非平衡供给到任务准备；复用旧资源与参考结论，停止写入器优化。应用目标、957及条件性空间接口保持。
+
+## 1002：热材料再写与功能分工
+
+[1002报告](archive_990_1008/research_note_1002.md)将980实际热输出接到有限精度人口再写；新增有限辅助体同时供能与记录，整窗叠旧误差后错率<0.193043。[结果](archive_990_1008/1002/thermal_record_reuse_results.json) · [核验](archive_990_1008/1002/research_round_1002_checks.json)。正式1002／累计3785，整体未完成。
+
+[机制补充](archive_990_1008/1002/organization_lifecycle_adoption_v1.md)按变量、时段与任务质量分工；工程化耦合及纯辅助准备明示，未签收相位循环或全功能装置。停止器件优化，接[1003](archive_990_1008/1003/drafts/STATUS.md)整合整体假说新版与剩余机制缺口。应用目标及957保持。
+
+## 1001：核组成与材料资源
+
+[1001报告](archive_990_1008/research_note_1001.md)接核束缚、反应组成、环境保存与有限资源；反冲直接复用971，受限核平衡显示正结合能不足以保证环境中大量保存。[结果](archive_990_1008/1001/nuclear_formation_results.json) · [核验](archive_990_1008/1001/research_round_1001_checks.json)。正式1001／累计3784，整体未完成。
+
+[机制补充](archive_990_1008/1001/nuclear_material_resource_adoption_v1.md)区分存在、形成、保存与运行，采用多来源元素与冷却机制；未预测现实丰度或提取功。停止核率／恒星细化，接[1002](archive_990_1008/1002/drafts/STATUS.md)补同一材料／环境中的功能分工与共同生命周期。应用目标及957保持。
+
+## 1000：宏观相与热—力输运
+
+[1000报告](archive_990_1008/research_note_1000.md)复用645静态共源，补同一材料的集体运动与导热。给定热弹性支保总能源、增热熵、降相对可用量；漏反向反馈即使熵产为正也会失去能源闭合。[结果](archive_990_1008/1000/thermoelastic_common_account_results.json) · [核验](archive_990_1008/1000/research_round_1000_checks.json)。正式1000／累计3783，整体未完成。
+
+[机制补充](archive_990_1008/1000/material_phase_transport_adoption_v1.md)采用相中慢变量及相容输运，保必要记录与涨落；未生成微观材料相、真实系数或记忆寿命。停止该本构细化；接[1001](archive_990_1008/1001/drafts/STATUS.md)补核反应、元素组成与材料资源链。应用目标及957保持。
+
+## 999：选择性组织与整体假说
+
+[999报告](archive_990_1008/research_note_999.md)采用选择性开放组织，直接复用旧写入／保持／热更新；补普通Coulomb物质的统计稳定性，区分有效视界任务和高能完成。[整体假说v1](archive_990_1008/999/overall_operation_hypothesis_v1.md)整合16类现象及其输入和空缺。
+
+[审计结果](archive_990_1008/999/mechanism_adoption_results.json) · [核验](archive_990_1008/999/research_round_999_checks.json)。正式999／累计3782；本轮新增物理试验0，整体未完成。不同旧准备未拼成共同生命周期；接[1000](archive_990_1008/1000/drafts/STATUS.md)补宏观相、集体模式和输运。应用目标及957保持。
+
+## 998：组织形成与有限接收者
+
+[998报告](archive_990_1008/research_note_998.md)接成熟引力热力学：明确有效支上，有限释能、有限辐射接收者及单一热交换模稳定可以相容；接收者越大不必越稳定。[结果](archive_990_1008/998/finite_receiver_formation_results.json) · [核验](archive_990_1008/998/research_round_998_checks.json)。正式998／累计3782，整体未完成。
+
+[整体机制补充](archive_990_1008/998/formation_resource_adoption_v1.md)区分载体形成、信息保持和运行资源。本例未从等离子体生成材料、未提取功或制造记录，也未推导引力。停止云模型与器件优化；接[999](archive_990_1008/999/drafts/STATUS.md)审这三类条件在共同环境中的相容机制。应用目标、旧空间结论和957保持。
+
+## 998工作审计：共同边界与候选投入
+
+[998工作报告](archive_990_1008/research_note_998_working.md)直接复用旧约束、来源和热资源结论，明确低关联不能删掉物理约束关联。997加速校准起点的辐射份额约2.06%，不能字面接成996辐射主导窗口；这不反证两轮各自结果。[复算结果](archive_990_1008/998/boundary_scope_audit_results.json) · [审计核验](archive_990_1008/998/drafts/boundary_adoption_audit_checks.json)。
+
+本次为采用审计，正式997／累计3781保持，不新增科学试验组。当前应用目标已含方向优先与有限有效域要求；接[下一步](archive_990_1008/998/drafts/NEXT.md)先审稳定组织、资源和宇宙阶段的共同机制，停止CP、Λ及器件调参。完整共同模型尚未完成，原998入口和全部历史保留。
+
+## 997：有效Λ与实际可达范围
+
+[997报告](archive_990_1008/research_note_997.md)将正有效Λ作为明示的加速机制，区分参数未定与机制缺失。同一材料／辐射／真空来源给有限类光窗口；体积增长不自动增加可完成的回读权限。[结果](archive_990_1008/997/vacuum_accessibility_results.json) · [核验](archive_990_1008/997/research_round_997_checks.json)。正式997／累计3781，整体未完成。
+
+[B997宇宙补充](archive_990_1008/997/cosmological_adoption_v1.md)保共同真空账、有限任务与未来条件；未预测Λ值、实际宇宙未来或全量子几何。停止真空／视界细化，接[998](archive_990_1008/998/drafts/STATUS.md)先对齐同一宇宙状态、约束和记录资源的边界合同。应用目标及957保持。
+
+## 996：膨胀包络与生成保存约束
+
+[996报告](archive_990_1008/research_note_996.md)把内部占据稀释接到W995：非周期包络与有限保存可在声明归约内相容；同一耦合的生成／洗出关系带H/T慢变限制。归一化响应非零不等于现实净荷或足够产额。[结果](archive_990_1008/996/cosmic_cp_window_results.json) · [核验](archive_990_1008/996/research_round_996_checks.json)。正式996／累计3780，整体未完成。
+
+[整体机制图v0.8](archive_990_1008/996/mechanism_map_v0_8.md)保留条件性宇宙链及新增输入；实际热核、味输运、共同热窗口与丰度未核。停止该候选的产额细化，接[997](archive_990_1008/997/drafts/STATUS.md)先回查宇宙边界、Λ与共同真空来源的整体缺口。应用目标及957保持。
+
+## 995：内部变化与CP偏置
+
+[995报告](archive_990_1008/research_note_995.md)以明确新增的Z2偶维七项，把已有暗模式与中微子耦合变化相接：零均值的偶态仍可改变二阶矩，两份耦合具有不可由常量味换基消去的CP不变量，反作用来自同一作用。[结果](archive_990_1008/995/internal_cp_bridge_results.json) · [核验](archive_990_1008/995/research_round_995_checks.json)。正式995／累计3779，整体未完成。
+
+[W995机制补充](archive_990_1008/995/internal_weinberg_adoption.md)只采用内部变化与偏置接口；平稳线性记忆近似下，完整周期的平均源抵消。实际热核、净荷与宇宙丰度未核。接[996](archive_990_1008/996/drafts/STATUS.md)回共同几何造成的包络及保存窗口，先作整体判断，停止相位和器件细化。应用目标及957保持。
+
+## 994：共同热史与净荷保存
+
+[994报告](archive_990_1008/research_note_994.md)将成熟电弱转换接到B993：声明热窗口内B=28(B−L)/79；不同快速Weinberg反应留下3、2或0个中性平衡方向。非平衡不替代偏置的产生与保存，实Z2单态不充当B−L仓库。[结果](archive_990_1008/994/charge_history_results.json) · [核验](archive_990_1008/994/research_round_994_checks.json)。正式994／累计3778，整体未完成。
+
+[共同边界补充](archive_990_1008/994/boundary_adoption_v1.md)保留明示初始净荷与保护窗口；实际速率、生成源及宇宙丰度未核。停止洗出参数细化，接[995](archive_990_1008/995/drafts/STATUS.md)筛选现有内部变量改变中微子耦合的净荷生成机制。应用目标及957保持。
+
+## 993：共同候选与跨部门匹配
+
+[993报告](archive_990_1008/research_note_993.md)将P981＋D991及热资源机制写成[共同候选B993](archive_990_1008/993/common_candidate_v1.md)：普通与暗源必须共同匹配，保交叉作用及来源；991自由频率在成对阈值，不能自动消去Higgs。[结果](archive_990_1008/993/joint_matching_results.json) · [核验](archive_990_1008/993/research_round_993_checks.json)。正式993／累计3777，整体目标未完成。
+
+992资源机制有非零的条件性误差窗口，但所选谱／态／温度预算尚未物理认证。停止门户和热设备细化，接[994](archive_990_1008/994/drafts/STATUS.md)回共同宇宙边界、非平衡与物质不对称的机制。应用目标及957保持。
+
+## 992：差异冷却与非平衡资源
+
+[992报告](archive_990_1008/research_note_992.md)将旧固定材料谱与自由光红移接到305相对熵身份：初始同温后，差异尺度响应形成有界非平衡自由能；原980材料在a=2给A≈.04299333，熵仍保持，膨胀侧上限≈.22019126。[结果](archive_990_1008/992/cooling_availability_results.json) · [核验](archive_990_1008/992/research_round_992_checks.json)。正式992／累计3776，整体目标未完成。
+
+[机制图v0.7](archive_990_1008/992/drafts/mechanism_map_v0_7.md)区分资源形成、实际使用与初始边界；未完成工作提取、记忆复位或宇宙箭头。停止热装置／温度扩建，接[993](archive_990_1008/993/drafts/STATUS.md)把近期机制并入一份候选，先核共同身份和解释范围。应用目标及957保持。
+
+## 991：共同几何与弱可见模式
+
+[991报告](archive_990_1008/research_note_991.md)复用旧共同依赖，明确普适几何反馈不要求各内部通道同样可见。以成熟Z2实单态门户给可选暗部门D991一个稳定、弱直接接触、完整应力的机制；瞬时矩与同源交换完成有界复算。[结果](archive_990_1008/991/dark_mode_screen_results.json) · [核验](archive_990_1008/991/research_round_991_checks.json)。正式991／累计3775，整体目标未完成。
+
+[机制图v0.6](archive_990_1008/991/drafts/mechanism_map_v0_6.md)保留新增字段／对称／初态输入；未认定现实暗物质，未验丰度或实验允许范围。停止门户扩建，接[992](archive_990_1008/992/drafts/STATUS.md)补宇宙状态、记录方向与几何演化的整体机制。应用目标及957保持。
+
+## 990：整体假说与联合解释优先
+
+[990整体报告](archive_990_1008/research_note_990.md)按用户最新目标，先整合全部门机制与解释边界。提出共同几何比较、内部表示输运和同源反作用的联合候选；物理闭合输入与认知推导分开，保留宇宙边界、暗部门等尚无机制的空缺。[条件清单](archive_990_1008/990/mechanism_inventory.json) · [交付核验](archive_990_1008/990/research_round_990_checks.json)。正式990；本轮新增数值／物理试验0，累计3774，整体目标未完成。
+
+用户追加的整体解释优先要求已同步至文档，见[目标快照](archive_990_1008/990/drafts/current_goal_20261007.txt)。957数学假说与历史保持；本轮不续修单项经典化、器件或连续极限。接[991](archive_990_1008/991/drafts/STATUS.md)先完成传播、物质和几何反馈的共同依赖说明，再选择决定性检验。
+
+## 989：共享证据与不可替代的量子作用
+
+[989报告](archive_956_989/research_note_989.md)复用958全时间界和269资源界：无共享纠缠、只靠局部操作与经典消息，不能恢复原材料的四项局部统计，有限窗口见证差>.46294；经典关系标签保留真实量子接触时，未读标签的见证仍>.60647。[结果](archive_956_989/989/shared_record_quantum_action_results.json) · [核验](archive_956_989/989/research_round_989_checks.json)。正式989／累计3774，整体目标未完成。
+
+[机制图v0.5](archive_956_989/989/drafts/mechanism_map_v0_5.md)保留证据政策为内部主体能力，不增宇宙收益最大化或所有标签必须相干的原则。停止经典替代与器件分支，接[990](archive_990_1008/990/drafts/STATUS.md)回同一量子过程与宏观报告的共同采用。应用目标及957假说保持。
+
+## 988：关系撤销与内部资料保存
+
+[988报告](archive_956_989/research_note_988.md)区分证据决定、材料参与和实际通道：原968材料停止活化后仍传递新干预，固定见证的概率差>0.00078574；内部同型转存可条件性关闭未来通道并保完整未知资料。[结果](archive_956_989/988/relation_withdrawal_results.json) · [核验](archive_956_989/988/research_round_988_checks.json)。正式988／累计3773，整体目标未完成。
+
+[机制图v0.4](archive_956_989/988/drafts/mechanism_map_v0_4.md)明确控制、空白、隔离及接触能交换输入，未完成自主控制和电池。停止转存器件扩建，接[989](archive_956_989/989/drafts/STATUS.md)先判定证据机制对整体模型的选择力。现行目标已含整体优先及有限有效域，本轮核对后保持；957假说不改。
+
+## 987：关系更新的证据机制与有限联合试探
+
+[987报告](archive_956_989/research_note_987.md)回到961整体机制，排除逐关系即时净改善作为普遍扩展规则，保留有预算的联合试探＋独立验证候选。有限两位任务的全部分支精确枚举：XOR在最坏建立费下256次服务的期望净任务收益>14.54；无关资料误接入<1/40000，仍承担试探损失。[结果](archive_956_989/987/coalition_mechanism_screen_results.json) · [核验](archive_956_989/987/research_round_987_checks.json)。正式987／累计3772，整体目标未完成。
+
+[机制图v0.3](archive_956_989/987/drafts/mechanism_map_v0_3.md)具体化M1与M4；费用不是热价，政策未成为同一自然Hamiltonian。P981接合暂作验证资产；停止样本与模式优化，接[988](archive_956_989/988/drafts/STATUS.md)先筛选证据如何使实际关系维持或撤销。应用目标及957假说保持。
+
+## 986后合并审计：记录交叠与来源边界
+
+[987工作报告](archive_956_989/987/drafts/research_note_987_working.md)将985／986运输到同一记录读口，输出迹距离上界0.001721134；空间来源不能随之直接移植。实际位置宽度与一个相容驻波给kσ=20，来源二阶矩约差50%，其绝对影响及任务范围单独列账。[结果](archive_956_989/987/overlap_adoption_results.json) · [审计核验](archive_956_989/987/drafts/common_overlap_audit_checks.json)。
+
+本次复用旧证明作合并审计，不增正式轮次；正式986／累计3771保持，整体未完成。停止局部模式／参数优化，下一项先用成熟有效理论核P981共同保留阶的来源及任务字典。应用目标已核为现行版本，保持active；历史和957假说不改。
+
+## 986：原电磁交互与传播几何的共同生成元
+
+[986报告](archive_956_989/research_note_986.md)从同一模式作用将976原电磁交互接入动态TT过程；几何来源含原偶极固定的混合项。原记录全区间的联合态误差<1.34×10⁻⁷，记录对比>.4859478。[结果](archive_956_989/986/metric_dipole_bridge_results.json) · [核验](archive_956_989/986/research_round_986_checks.json)。正式986／累计3771，整体目标未完成。
+
+[采用范围](archive_956_989/986/drafts/metric_dipole_adoption.md)保模式／偏振／支撑输入；未将985运动、982非零固有四极及完整父理论自动合并。停止本模式和精度优化，接[987](archive_956_989/987/drafts/STATUS.md)回共同恢复对象及采用范围。应用目标和957假说保持。
+
+## 985：两个活动来源与有限域共同过程
+
+[985报告](archive_956_989/research_note_985.md)将978的第二常数内部质量提升为同型活动量子模块；双方完整来源、运动和原A记录在同一Newton有效过程中共存。全联合态误差<.001721，记录对比>.482506；高能延拓影响有实际尾界。[结果](archive_956_989/985/two_active_sources_results.json) · [核验](archive_956_989/985/research_round_985_checks.json)。正式985／累计3770，整体目标未完成。
+
+[采用范围](archive_956_989/985/drafts/two_source_adoption.md)只关闭U1的双方活动来源子接口；没有认证完整传播、GR／SM匹配或全部门共同模型。停止双体和延拓优化，接[986](archive_956_989/986/drafts/STATUS.md)回传播／约束／材料的共同保留阶。应用目标和957假说保持。
+
+## 984后整体采用审计：先接共同物理过程
+
+[985工作报告](archive_956_989/985/drafts/research_note_985_working.md)核对957—984与旧恢复工具：物理作用、系数和准备允许明示输入，完整微观制造与UV完成退出默认队列；实际生成元、来源及交叠预测仍须同一字典。先接P981共同物理过程，再选择经典几何恢复域。[审计回执](archive_956_989/985/drafts/common_model_adoption_audit_checks.json)。本次无新增科学实验，正式984／累计3769保持，985尚未科学结项。目标与957假说保持，整体未完成。
+
+## 984：共同量子来源与有限尺度的经典几何报告
+
+[984报告](archive_956_989/research_note_984.md)把P981自由共形物质真空的实际应力核接到同源低频响应与谱过滤的线性Einstein报告；指定带宽与匹配下，绝对容差10⁻⁵的超差概率上界<6.118×10⁻⁶。[结果](archive_956_989/984/smeared_source_geometry_results.json) · [核验](archive_956_989/984/research_round_984_checks.json)。正式984／累计3769，整体目标未完成。
+
+[采用范围](archive_956_989/984/drafts/geometry_adoption_scope.md)区分受限几何报告、完整时空及有限实体装置；没有认证真实SM或全量子几何总误差。停止频率窗口／探测器优化，接[985](archive_956_989/985/drafts/STATUS.md)回共同模型的整体采用判断。应用目标和957假说保持。
+
+## 983：标准模型曲率来源与宇宙有效阶
+
+[983报告](archive_956_989/research_note_983.md)复用553／601，将P981自由共形SM阶的曲率修正共同接到能量、压力、trace与FLRW几何；错配压力产生一阶守恒缺陷。指定有限膨胀区间内，降阶与小根的无量纲时间差<2.461×10⁻⁹。[结果](archive_956_989/983/sm_curvature_radiation_results.json) · [核验](archive_956_989/983/research_round_983_checks.json)。正式983／累计3768，整体目标未完成。
+
+[采用范围v2](archive_956_989/983/drafts/parent_recovery_scope_v2.md)明确这是两个保留方程的比较，没有认证完整SM热相互作用或量子到经典几何误差。停止特殊宇宙背景优化，接[984](archive_956_989/984/drafts/STATUS.md)回实际共同来源与经典几何任务。应用目标和957假说保持。
+
+## 982：同一材料的电磁级联与动态几何通道
+
+[982报告](archive_956_989/research_note_982.md)保留同一原生材料的电磁级联和显式匹配的TT四极通道，同一次过程的几何模读数约.386406；删电磁的孤立旋波预测为1。指定有限时间的无限Fock等距误差<.00372。[结果](archive_956_989/982/native_radiative_channels_results.json) · [核验](archive_956_989/982/research_round_982_checks.json)。正式982／累计3767，整体目标未完成。
+
+[采用范围](archive_956_989/982/drafts/radiative_adoption.md)保留四极矩、模式环境、支撑和耦合比输入；三模内部误差不是实际父理论匹配误差。停止辐射与器件优化，接[983](archive_956_989/983/drafts/STATUS.md)回共同恢复范围和量子／经典几何接口。应用目标和957假说保持。
+
+## 981：共同父描述与电磁—时间来源匹配
+
+[981报告](archive_956_989/research_note_981.md)列明共同父描述的物种、作用阶与材料匹配，核出同一原生频率响应的时间来源必须保留频率导数；有限读数差有严格下界>5.1×10⁻⁵。[结果](archive_956_989/981/native_response_source_results.json) · [核验](archive_956_989/981/research_round_981_checks.json)。正式981／累计3766，整体目标未完成。
+
+[父合同](archive_956_989/981/drafts/common_parent_contract_v1.md)保留SM／Einstein与匹配输入；本轮只签收电磁—lapse—材料响应，没有完成动态量子几何或全部门恢复。停止混合响应和脉冲优化，接[982](archive_956_989/982/drafts/STATUS.md)回共同动态几何采用域。应用目标和957假说保持。
+
+## 980后采用复核：先合并父模型，停止局部扩建
+
+[981工作报告](archive_956_989/981/drafts/research_note_981_working.md)核对共同父模型与有限有效域：复用已有材料、表示、来源及热结果，停止局部器件扩建。下一项先冻结父描述的物种、作用阶数、匹配、参考和共同任务，再补决定采用的接口。本次是旧证据与投入审计，新增科学试验组0；正式980／累计3765，981科学轮尚未结项。[审计核验](archive_956_989/981/drafts/common_adoption_audit_checks.json)。应用目标及957假说保持，整体目标未完成。
+
+## 980：有限热材料与有效遗忘
+
+[980报告](archive_956_989/research_note_980.md)以972同种材料及原电荷接触，给有限热复位合同：60万份预备热副本下，全部未知输入与参考的误差<.001029；整体资料仍在，热量及开关平均功共同入账。[结果](archive_956_989/980/finite_thermal_records_results.json) · [核验](archive_956_989/980/research_round_980_checks.json)。正式980／累计3765，整体目标未完成。
+
+[采用范围](archive_956_989/980/drafts/thermal_arrow_adoption.md)保留大而有限的时间／热资源、接触及控制输入；不是纯空白、完整生命周期或宇宙永久箭头。停止热接触器件优化，接[981](archive_956_989/981/drafts/STATUS.md)回共同父模型及全部门有效域。应用目标和957假说保持。
+
+## 979：完整协议与实际质量的谱模拟桥接
+
+[979报告](archive_956_989/research_note_979.md)复用436静态模拟与929完整协议，证明同一编码可运输完整质量、逆质量动能及Newton来源。明示质量匹配下，有限协议联合误差<.000293；能量基线与高能资源尾不能删掉。[结果](archive_956_989/979/spectral_mass_bridge_results.json) · [核验](archive_956_989/979/research_round_979_checks.json)。正式979／累计3764，整体目标未完成。
+
+[采用范围](archive_956_989/979/drafts/protocol_parent_adoption.md)允许同一理论中的不同复合材料，不强迫两轨道器件承担所有协议；未生成实际交换材料或完成SM／GR匹配。停止模拟器与器件优化，接[980](archive_956_989/980/drafts/STATUS.md)回共同父层级和有限记录生命周期。应用目标和957假说保持。
+
+## 978：完整原生能源与双体运动
+
+[978报告](archive_956_989/research_note_978.md)将976完整原生能源接到两个动态位置的同一Newton有效H，利用实际质量二阶矩给全时间联合态误差<.001721；记录对比>.482507，来源、相反力和总动量／能源共用规则。[结果](archive_956_989/978/moving_complete_source_results.json) · [核验](archive_956_989/978/research_round_978_checks.json)。正式978／累计3763，整体目标未完成。
+
+[全部门审计v2](archive_956_989/978/drafts/common_recovery_audit_v2.md)保物质、热／箭头、动态几何及宇宙缺口；巨大但有限的第二质量、波包、软核和重合读口仍为输入，不领取全GR误差。停止运动方案优化，接[979](archive_956_989/979/drafts/STATUS.md)回共同父描述及保留阶的整体合并。应用目标和957假说保持。
+
+## 977：粗来源标签与块内量子记录
+
+[977报告](archive_956_989/research_note_977.md)在976同一过程采用经典来源箱与箱内量子状态，一次记录及任意路径末读的联合误差在旧全区间<.008663，记录对比>.468622。同一来源误差≤.0025且完整能源守恒；删除全部块内相干会丢失本记录。[结果](archive_956_989/977/coarse_source_record_results.json) · [核验](archive_956_989/977/research_round_977_checks.json)。正式977／累计3762，整体目标未完成。
+
+[采用增量](archive_956_989/977/drafts/coarse_source_adoption.md)只领取有限来源／记录字典，不等于动态经典度规、应力噪声核或宇宙完成。停止粗化优化，接[978](archive_956_989/978/drafts/STATUS.md)把974—977并回全部门共同验收，优先判断剩余跨部门接口。应用目标和957假说保持。
+
+## 976：有限内部参考与关系记录
+
+[976报告](archive_956_989/research_note_976.md)在974原局部过程加入同种材料参考，固定关系读口在整个预定有限区间的标签对比>.485948。参考完整能源进入质量源，旧材料边缘保持，路径相干预测随之变化。[结果](archive_956_989/976/finite_internal_reference_results.json) · [核验](archive_956_989/976/research_round_976_checks.json)。正式976／累计3761，整体目标未完成。
+
+[采用条件](archive_956_989/976/drafts/finite_record_adoption.md)保留参考准备、隔离、支撑和联合读口输入；不等于P人口转换、实体读后能源账或宏观不可逆记忆。停止保持方案优化，接[977](archive_956_989/977/drafts/STATUS.md)回共同模型的量子来源与经典几何有效域。应用目标和957假说保持。
+
+## 975：原生记录的资源账与保持接口
+
+[975报告](archive_956_989/research_note_975.md)保持974同一过程，核出局部资源转成约1.53自然信息单位的关联，总熵及完整能源保持；原发送标签仍在，接收信息下界>.67507。但新记录不在受保护P人口中，扇区退相位后可区分度<.000106。[结果](archive_956_989/975/record_resource_audit_results.json) · [核验](archive_956_989/975/research_round_975_checks.json)。正式975／累计3760，整体目标未完成。
+
+[采用条件](archive_956_989/975/drafts/record_arrow_adoption.md)区分转存、新记录、保持及复位；比较热参考不是新热库，关联预算不等于宏观箭头。停止资源／单模式优化，接[976](archive_956_989/976/drafts/STATUS.md)筛选新记录到有限保持载体的真实接口。应用目标和957假说保持。
+
+## 974：完整交互能源与原生记录的共同量子来源
+
+[974报告](archive_956_989/research_note_974.md)以965完整材料—场能源作质量来源，在固定静路径Newton模型中保原准备和读口：记录差>.99479、场效果差>.02241，来源分布报告与均值替代差>.14709；不要求原生电荷与材料h对易。[结果](archive_956_989/974/joint_energy_source_results.json) · [核验](archive_956_989/974/research_round_974_checks.json)。正式974／累计3759，整体目标未完成。
+
+[共同实现增量](archive_956_989/974/drafts/common_positive_process_increment.md)给同一固定正过程的有限接口，运输无限占据误差；支撑、运动、后Newton和动态度规未认证。停止路径优化，接[975](archive_956_989/975/drafts/STATUS.md)回全目标审稳定记录与非平衡资源。应用目标和957假说保持。
+
+## 973：共同实现的准备审计与平均来源边界
+
+[973报告](archive_956_989/research_note_973.md)核对964／969实际12模热准备：能源相对涨落约28.9%，大占据数不使其趋零。另在明示逐能源壳单极诊断中，有界几何报告与均值源替代相差>.6725；不是完整应力噪声或对969原均值解的反证。[结果](archive_956_989/973/common_source_distribution_results.json) · [核验](archive_956_989/973/research_round_973_checks.json)。正式973／累计3758，整体目标未完成。
+
+[共同实现审计](archive_956_989/973/drafts/common_realization_audit_v1.md)区分同一理论的不同准备、重叠任务和同一次联合过程，不强迫所有历史数值共处一次事件，也不拼接不同候选结项。停止本均值诊断优化，接[974](archive_956_989/974/drafts/STATUS.md)选择保实际源和未知量子资料的固定正过程。应用目标和957假说保持。
+
+## 972：原生记录的热接触、保护扇区与内部交换
+
+[972报告](archive_956_989/research_note_972.md)证明原生纯电荷作用对任意环境保留P标签，不能将两扇区共同重置。968已有内部交换解除局部保护，与同型电磁模式共同作用后，有限记录信息转移下界>2.15×10⁻⁵，完整能源及热参考熵账闭合；没有完全擦除或不可逆箭头。[结果](archive_956_989/972/native_thermal_record_results.json) · [核验](archive_956_989/972/research_round_972_checks.json)。正式972／累计3757，整体目标未完成。
+
+[机制增量](archive_956_989/972/drafts/thermal_record_mechanism.md)把保护、更新与热资源约束回同一材料作用，不把局部标签信息减少直接当成放热或资料全局消失。停止热接触效率与器件优化，接[973](archive_956_989/973/drafts/STATUS.md)核对一份共同实现的对象、准备和重叠任务域。应用目标和957假说保持。
+
+## 971：原生材料的共同父接口与重复计数检验
+
+[971报告](archive_956_989/research_note_971.md)选择原生材料的共同父有效接口：同一h和Q约束惯性、运动电偶极及真空反冲；同一CAR响应再次作为完整接触项加入会重复计数。这是匹配与运动学身份，不是实际跃迁率或全部SM匹配。[结果](archive_956_989/971/native_covariant_source_results.json) · [核验](archive_956_989/971/research_round_971_checks.json)。正式971／累计3756，整体目标未完成。
+
+[共同父接口表](archive_956_989/971/drafts/native_parent_map_v0_1.md)区分E_rec、P948与原生材料层级，不直接叠加各小模型；970波导没有被自由靶反冲检验推翻。停止光学／反冲优化，接[972](archive_956_989/972/drafts/STATUS.md)先回查共同材料的热与有限记录机制。应用目标和957假说保持。
+
+## 970：原生电荷与传播光子的共同记录接口
+
+[970报告](archive_956_989/research_note_970.md)以原生电荷矩阵元和旧关系码接成熟单光子散射：正频旋波模型内，等自由能谱的偶／奇波包留下>0.986的有限时间记录差下界，同一S保概率和能源。固定支撑、父作用误差及969共同历史尚未核。[结果](archive_956_989/970/native_photon_scattering_results.json) · [核验](archive_956_989/970/research_round_970_checks.json)。正式970／累计3755，整体目标未完成。
+
+[机制增量](archive_956_989/970/drafts/scattering_mechanism_increment.md)保留传播相位写入材料相干记录的接口，不将长的充分时间界当最短时间或不可能定理；机械反冲未完成。停止波导和读取优化，接[971](archive_956_989/971/drafts/STATUS.md)回父有效描述与共同任务域的整体比较。应用目标及任务设置保持。
+
+## 969：局部量子交互与宇宙传播的共同来源
+
+[969报告](archive_956_989/research_note_969.md)在明确稳定支撑／单极平均输入下，将965完整局部交互、准备与读口接到964同一引力参数及自由热光子。完整局部能源使a(T)从2变为2.000613，原记录和场效果界保留；只红移内部光子来源而保留原动力学会违反守恒。[结果](archive_956_989/969/local_field_cosmology_results.json) · [核验](archive_956_989/969/research_round_969_checks.json)。正式969／累计3754，整体目标未完成。
+
+[共同恢复v0.9](archive_956_989/969/drafts/common_recovery_v0_9.md)保留局域／自由模式区分、平均背景及微观匹配边界；外来光吸收与不可逆箭头未恢复。停止背景和腔体优化，接[970](archive_956_989/970/drafts/STATUS.md)先审局部材料与外界传播的共同交互。应用目标及任务设置保持。
+
+## 968：原生材料的内部组织更新与自主传递
+
+[968报告](archive_956_989/research_note_968.md)复用原材料的既有自旋：固定内部交换让中继自行参与电荷传递，同一远端效果的概率差在有限窗口内>.338；切断任一边解析上无信号。组织回作用、能量流与来源在同一H中；不是空间几何变化。[结果](archive_956_989/968/internal_relay_results.json) · [核验](archive_956_989/968/research_round_968_checks.json)。正式968／累计3753，整体目标未完成。
+
+[机制增量](archive_956_989/968/drafts/internal_organization_increment.md)采用内部组织改变功能关系，保留固定接触、交换规则、准备与长时间寿命的输入边界。停止中继和读取优化，接[969](archive_956_989/969/drafts/STATUS.md)回整体机制，优先比较与已有传播、钟尺及物质来源的共同桥接。应用目标及任务设置保持。
+
+## 967：原生材料的集体作用与共同来源
+
+[967报告](archive_956_989/research_note_967.md)把435的闭合虚过程接到958原材料：同一密度规则生成非加性集体能量，不增独立三体系数；孤立双体谱相同的两个符号菜单有严格不同的共同谱。只加精确双体低有效项会导致>.885的有限接收概率偏差，同一电荷来源也需集体修正。[结果](archive_956_989/967/collective_material_results.json) · [核验](archive_956_989/967/research_round_967_checks.json)。正式967／累计3752，整体目标未完成。
+
+[机制增量](archive_956_989/967/drafts/collective_mechanism_increment.md)保留组织、虚电荷、集体记录及来源的共同链；三块图与接触仍输入，未完成自主几何或965场的共同接合。停止三体和装置优化，接[968](archive_956_989/968/drafts/STATUS.md)先判定内部关系更新变量与实际传播的机制。应用目标及任务设置保持。
+
+## 966：局部比较的闭路生成与表示筛选
+
+[966报告](archive_956_989/research_note_966.md)提出并筛选一份内部比较规则：局部比较生成记录—闭路项，固定窗口概率差解析下界.641768；但完整联合换表示能从H消去记录符号，原实际效果仍含记录。候选保留为说明性例，停止扩建，不把可读响应当作内容选择内在动力学的证明。[结果](archive_956_989/966/comparison_loop_results.json) · [核验](archive_956_989/966/research_round_966_checks.json)。正式966／累计3751，整体目标未完成。
+
+[机制图v0.2](archive_956_989/966/drafts/mechanism_map_v0_2.md)区分有限响应、表示变换与内容依赖谱源；三体比较、群、能隙及初态仍为输入，未接成958／965同一材料。接[967](archive_956_989/967/drafts/STATUS.md)回查435等已有内容改变作用幅度的机制，先判断共同接合价值。现行目标已包含机制优先，应用目标及任务设置保持。
+
+## 965：原生材料的共同电磁读口
+
+[965报告](archive_956_989/research_note_965.md)保持958原材料和接收效果，同一电荷接入量子电磁模式及自极化；原记录差>0.998723，极化修正场效果差>0.049871，使用无限占据残差界而非只比较截断。[主结果](archive_956_989/965/material_field_window_results.json) · [场读口](archive_956_989/965/physical_mode_effect_results.json) · [核验](archive_956_989/965/research_round_965_checks.json)。正式965／累计3750，整体目标未完成。
+
+[共同恢复v0.8](archive_956_989/965/drafts/common_recovery_v0_8.md)保留单模、表示与读取权限边界；不是空间传播或实体光子探测，不能直接合并964不同场准备。停止模式和器件优化，接[966](archive_956_989/966/drafts/STATUS.md)回同一交互、尺度与物理来源。应用目标及任务设置保持。
+
+## 964：同一材料的膨胀、记录与热账
+
+[964报告](archive_956_989/research_note_964.md)把958原材料接入明示的均匀半经典作用；同一尺度增大一倍时光／材料频比减半，原记录概率差保持，平均来源与压力功闭合。热模熵不变、材料记录关联可回落，膨胀不自动提供时间箭头。[结果](archive_956_989/964/material_cosmology_results.json) · [核验](archive_956_989/964/research_round_964_checks.json)。正式964／累计3749，整体目标未完成。
+
+[共同恢复v0.7](archive_956_989/964/drafts/common_recovery_v0_7.md)明确均匀／单极／期望值输入，没有把自由光子、实际光学交互及量子引力涨落混为一项完成。停止背景和器件优化；接[965](archive_956_989/965/drafts/STATUS.md)审原生物质与真实传播交互的共同窗口。应用目标及任务设置保持。
+
+## 963：共同钟标定的有限证书与EPS接口
+
+[963报告](archive_956_989/research_note_963.md)把多类钟的共同尺度写成有限差分约束，给精确赋值或负环证书；物种差与路径差的两个合成菜单分别有最小log容差1/100、1/75。对接EPS时明示光／自由落体／钟输运条件，保留实际物质耦合的区别；不同介质声锥、累计时间差和内部相位不自动否定共同几何。[结果](archive_956_989/963/common_scale_certificate_results.json) · [核验](archive_956_989/963/research_round_963_checks.json)。正式963／累计3748，整体目标未完成。
+
+停止标定工具优化，EPS只作可选桥梁；接[964](archive_956_989/964/drafts/STATUS.md)回到同一候选的物理恢复与来源，不把这份条件证书升级为所有有效模型的门槛。应用目标保持active，任务与定时设置保持。
+
+## 962：钟保护、关系反馈与稳定性的量词
+
+[962报告](archive_956_989/research_note_962.md)直接复用430／438／449／459，以同一原始材料区分裸钟精确隔离与有来源的关系反馈；采用M2*澄清：保持声明能力与实际读数，不要求任意未知裸钟绝对隔离。精确交织、非零响应解析证书及内部能源流已核，不是几何或引力推导。[结果](archive_956_989/962/clock_relation_screen_results.json) · [核验](archive_956_989/962/research_round_962_checks.json)。正式962／累计3747，整体目标未完成。
+
+用户已更新并启用[新目标](archive_956_989/962/drafts/revised_goal_20261007.txt)，[应用读取确认](archive_956_989/962/drafts/app_goal_confirmation.json)。停止本轮钟与装置优化，接[963](archive_956_989/963/drafts/STATUS.md)先审共同几何与普通介质／材料变化的判别，沿整体机制→冲突→最小检验推进。
+
+## 961：整体机制图与跨部门筛选优先
+
+[961整体机制图v0.1](archive_956_989/research_note_961.md)覆盖量子、时空、物质、相互作用、引力、热与时间箭头、宇宙演化，区分认知机制解释物理与给定物理实现协议。机制空白、不相容和反直觉分开登记。首项筛选排除全体速率重标／只数节点就认定膨胀；相同往返仍可能有不同局部机制。[结果](archive_956_989/961/operational_scale_screen_results.json) · [核验](archive_956_989/961/research_round_961_checks.json)。正式961／累计3746，整体目标未完成。
+
+**现行执行顺序：整体机制草图 → 概念冲突检查 → 最小数学检验 → 修订假说 → 系统验证。** 暂缓自动接续局部器件、控制、来源和误差优化；已有结果按原范围保存。[961现行入口](archive_956_989/961/drafts/mechanism_priority_entry.md)接替冻结原入口；接[962](archive_956_989/962/drafts/STATUS.md)优先筛选同一内部关系转换、局部材料保持及来源的联合机制。应用目标、任务与定时设置保持。
+
+## 960：原生材料的电磁色散接口与有限有效域
+
+[960报告](archive_956_989/research_note_960.md)把实际电子材料的领先记录相位接到已知Maxwell色散响应及同一距离来源；给非延迟能量／力界与高频加权尾界。旧四点几何直接换点偶极会有约17.20%领先能量差，原实时记录界不自动继承。[结果](archive_956_989/960/material_dispersion_bridge_results.json) · [核验](archive_956_989/960/research_round_960_checks.json)。正式960／累计3745，整体目标未完成。已有采用价值，停止色散力和器件优化；接[961](archive_956_989/961/drafts/STATUS.md)按完整共同恢复选择同一有效域。
+
+## 959：Gauss父表示与共同恢复表
+
+[959报告](archive_956_989/research_note_959.md)给958实际材料的精确静电Gauss父表示，保未知准备、完整仪器和来源；旧记录界保持。重复计入原静电能会使原概率改变约.68143，独立零通量准备也不等于物理准备。[共同恢复表v0.6](archive_956_989/959/drafts/common_recovery_v0_6.md)区分已核静电部门与尚未实现的完整父物理；[结果](archive_956_989/959/gauss_material_parent_results.json) · [核验](archive_956_989/959/research_round_959_checks.json)。正式959／累计3744，整体目标未完成。停止转子／器件扩建，接[960](archive_956_989/960/drafts/STATUS.md)核全部物理部门的共同有效域。
+
+## 958：材料间的电荷关联写入与同一来源
+
+[958报告](archive_956_989/research_note_958.md)在固定电子密度有效模型中，把原关系内容自主写入另一份材料；一阶平均电荷为零而真实电荷关联及来源非零。全未知输入误差≤.017060，固定读数窗内容差≥.945881；等待时间约126339，现实寿命及准备／末读仍为输入。[结果](archive_956_989/958/capacitive_material_write_results.json) · [核验](archive_956_989/958/research_round_958_checks.json)。正式958／累计3743，完整共同模型未完成。停止电容与器件优化；接[959](archive_956_989/959/drafts/STATUS.md)回到同一父描述及全部物理恢复。
+
+## 957：任务域预算与共同假说v0.2
+
+[957报告](archive_956_989/research_note_957.md)明确区分全空间范数与实际任务预算；955原自主运行的全部已列H项有有限矩预算，956完整六维材料保原强界。[现行草案v0.2](archive_956_989/957/drafts/unified_operation_hypotheses_v0_2.md)采用明示A1_D工作修订，原A1_∞及依赖原前提的定理保留；不自动领取传播、空间、无界来源或读后继承。[结果](archive_956_989/957/task_domain_budget_results.json) · [核验](archive_956_989/957/research_round_957_checks.json)。正式957／累计3742，整体目标未完成。接[958](archive_956_989/958/drafts/STATUS.md)核共同材料的控制／读取与来源合同，停止预算及器件优化。
+
+## 956：原生电子材料的交换、记录与来源
+
+[956报告](archive_956_989/research_note_956.md)先比较候选，再以同一Hubbard材料接通旧434关系码、交换、电荷效果及静态来源；此接口无需新增基本门户。[结果](archive_956_989/956/native_material_interface_results.json) · [核验](archive_956_989/956/research_round_956_checks.json)。正式956／累计3741。测量后电荷态须保留；完整阵列、六协议和父SM／GR匹配未认证。按[采用比较](archive_956_989/956/drafts/adoption_comparison.md)，保留B_eff见证，优先接合现成物质；接[957](archive_956_989/957/drafts/STATUS.md)形成共同对象与权限合同，停止二聚体及器件优化。
+
+## 955：物质恢复点与有限协议共同采用
+
+[955报告](archive_935_955/research_note_955.md)在同一ζ=.1与原资源下，以指定效果误差界接通954物质恢复点与完整有限协议；记录、径向物质及弱引力任务均有正下界。[结果](archive_935_955/955/joint_effective_window_results.json) · [核验](archive_935_955/955/research_round_955_checks.json)。正式955／累计3740。有限共存见证成立，完整统一目标未完成。按[范围与投入决定](archive_935_955/955/drafts/common_model_scope_v0_5.md)，停止信号及精度优化；接[956](archive_956_989/956/drafts/STATUS.md)先比较共同模型接口的价值，再决定是否计算，不将候选边界自动变成全纲领门槛。
+
+## 954：接合信号与物质恢复的共同窗口
+
+[954报告](archive_935_955/research_note_954.md)给同一门户核的接合—物质响应精确关系，α族在明确容差下有非空共同系数窗；原949整体弱耦合不减小混合。[结果](archive_935_955/954/portal_recovery_window_results.json) · [核验](archive_935_955/954/research_round_954_checks.json)。正式954／累计3739。只签收树级空间类响应，未认证完整协议／SM／引力。停止门户扫描，接[955](archive_935_955/955/drafts/STATUS.md)判断系数窗与实际有限协议能否共同采用。
+
+## 953：有效物体的协变作用与共同能源交换
+
+[953报告](archive_935_955/research_note_953.md)将原h、B接入中性世界线作用，同一项给内部酉、标量源及四维能源交换；有限尺寸阻止直接继承947误差。[结果](archive_935_955/953/worldline_material_bridge_results.json) · [核验](archive_935_955/953/research_round_953_checks.json)。正式953／累计3738。协变单极接口已核，完整共同模型未完成；停止世界线修补，接[954](archive_935_955/954/drafts/STATUS.md)审门户是否恢复所声称的物理极点与响应。
+
+## 当前投入决定：先核共同模型能否接合
+
+[共同菜单v0.4](archive_935_955/951/drafts/joint_minimum_menu.md)保留全部目标。952已接通原共同物质核的lapse来源，明确同阶端点／传播场贡献；正式952／累计3737。961整体机制图已登记，接[962](archive_956_989/962/drafts/STATUS.md)按跨部门机制收益选择检验。
+
+## 952：共同交换核的局部时间来源
+
+[952报告](archive_935_955/research_note_952.md)将948原记录—W／费米交换核接到同一lapse来源；端点及传播场必须共同变分，有限变化有解析余项界。[结果](archive_935_955/952/portal_lapse_source_results.json) · [核验](archive_935_955/952/research_round_952_checks.json)。正式952／累计3737。只签收静态二次交换与指定几何来源，不是完整Einstein或947动态概率。按[范围决定](archive_935_955/952/drafts/shared_source_decision.md)停止静态精度优化，961整体机制图已登记，接[962](archive_956_989/962/drafts/STATUS.md)按跨部门机制收益选择检验。
+
+## 951：有限物体内部状态的保源表示
+
+[951报告](archive_935_955/research_note_951.md)将947实际H、已声明来源与完整仪器精确运输到固定物体数有效表示，原误差保持；内部态无需逐个解释为基本Dirac物种。[结果](archive_935_955/951/body_sector_bridge_results.json) · [核验](archive_935_955/951/research_round_951_checks.json)。正式951／累计3736。空物体扇区不添该材料圈，高能匹配仍保留；完整父物理未认证。按[共同菜单](archive_935_955/951/drafts/joint_minimum_menu.md)停止材料表示细化，接[952](archive_935_955/952/drafts/STATUS.md)审同一保留阶的物理来源。
+
+## 950：记录材料的真空计数与有限匹配
+
+[950报告](archive_935_955/research_note_950.md)复用630，核实际947字面材料的4,063,232个真空味；固定局部匹配的一个圈低能余项很小，但局部参数仍可改变有限共同响应。[结果](archive_935_955/950/material_vacuum_matching_results.json) · [核验](archive_935_955/950/research_round_950_checks.json)。正式950／累计3735。按[投入决定](archive_935_955/950/drafts/material_loop_decision.md)，停止字面多味材料的高阶修补，保留有效共存见证；未认证全阶父模型。接[951](archive_935_955/951/drafts/STATUS.md)收敛最低共同验收菜单。
+
+## 949：保持质量与协议的共同弱耦合族
+
+[949报告](archive_935_955/research_note_949.md)构造联动物理参数族：规范／Yukawa／记录交互及引力减弱，物质质量、946两标量谱和947实际h保持；跨部门领先响应同为ε²。[结果](archive_935_955/949/joint_weak_domain_results.json) · [核验](archive_935_955/949/research_round_949_checks.json)。正式949／累计3734。已有条件性共同窗口充分条件，尚无父模型实际联合预算或现实参数验收。停止参数扫描，接[950](archive_935_955/950/drafts/STATUS.md)核一份物理菜单的共同系数及来源。
+
+## 948：中性记录与规范、费米物质的共同响应
+
+[948报告](archive_935_955/research_note_948.md)把947实际中性事件源经946同一两模核接到标准W／费米质量顶点；两种树级响应及反向来源共用一个消元作用，无需给全部记录味添加规范荷。[结果](archive_935_955/948/neutral_matter_bridge_results.json) · [核验](archive_935_955/948/research_round_948_checks.json)。正式948／累计3733。质量机制与场表仍为物理输入；新增物质探测器的有限时间联合概率及完整SM／Einstein匹配未签收。停止门户细化，接[949](archive_935_955/949/drafts/STATUS.md)核共同有效域与整体存在性证据。
+
+## 947：完整有限协议与同一场—引力过程的共同运输
+
+[947报告](archive_935_955/research_note_947.md)把929两次有限协议接入946同一有效H，实际事件的质量对易耦合保条件量子后态；全未知输入与16故障扇区的联合仪器误差≤0.000633467，三种物理信号仍有正下界。[结果](archive_935_955/947/protocol_field_transport_results.json) · [核验](archive_935_955/947/research_round_947_checks.json)。正式947／累计3732。原终端逻辑权限与新增材料仍为输入，完整SM／Einstein匹配、全部仪器未签收。停止协议扩展，接[948](archive_935_955/948/drafts/STATUS.md)收敛共同模型及关键物理恢复。
+
+## 946：规范不变门户中的记录、径向物质与弱场引力
+
+[946报告](archive_935_955/research_note_946.md)将规范不变Higgs门户的二次部门接入同一记录—Newton过程，三项对易效果有联合分布；有限质量下径向内容差>0.0034096、记录差>0.0212445、引力对照差>0.0216928。[结果](archive_935_955/946/portal_common_process_results.json) · [核验](archive_935_955/946/research_round_946_checks.json)。正式946／累计3731。门户及物理表示是输入，完整非线性SM／Einstein匹配和六协议未签收。另限定945：路径0与相干路径不对易，旧表单项概率保持，不合称一次经典联合。停止门户细化，接[947](archive_935_955/947/drafts/STATUS.md)按全局交付选择操作访问与能力运输。
+
+## 945：记录与Newton引力相位的共同有限过程
+
+[945报告](archive_935_955/research_note_945.md)将940的领先Newton约束势接入944同一量子过程，实际质量谱、记录和场噪声共用字典；有限质量下引力路径差>0.0220301、联合记录差>0.0155322。[结果](archive_935_955/945/joint_record_newton_results.json) · [核验](archive_935_955/945/research_round_945_checks.json)。正式945／累计3730。[范围表v0.2](archive_935_955/945/drafts/common_model_scope_v0_2.md)区分已证连接与输入；完整应力、相对论／SM及六协议未签收。停止本例优化，接[946](archive_935_955/946/drafts/STATUS.md)选择规范物质与操作接口。
+
+## 944：有限场通信与同一反作用的受控连接
+
+[944报告](archive_935_955/research_note_944.md)在明确重粒子—平滑KG场有效模型中，由同一H给记录、噪声及机械交换；有限质量概率差解析下界>0.0321150，定中心相位梯度与冲量一致。[结果](archive_935_955/944/finite_field_communication_results.json) · [核验](archive_935_955/944/research_round_944_checks.json)。正式944／累计3729。三维、材料和交互仍为物理输入；原Dirac／几何匹配与无界应力误差未签收。停止本模型优化，接[945](archive_935_955/945/drafts/STATUS.md)按整体覆盖选择共同匹配。
+
+## 943：内部记录能否进入共同物理交互
+
+[943报告](archive_935_955/research_note_943.md)复用935谱与939访问引理，核942实际材料：无额外χ味参考时，仅质量／几何耦合不能把929逻辑内容传给中性探针。内部事件差0.60，指定任务最坏误差至少0.30。[结果](archive_935_955/943/material_content_access_results.json) · [核验](archive_935_955/943/research_round_943_checks.json)。正式943／累计3728。新增与质量对易的味矩阵可给有限内容信号，但属于额外物理输入；原场读出未签收。保留材料工具，停止编码细化，接[944](archive_935_955/944/drafts/STATUS.md)选择共同交互；本候选访问边界不是纲领失败。
+
+## 942：明确Dirac材料中的内部更新与几何来源
+
+[942报告](archive_935_955/research_note_942.md)以明确新增的中性Dirac多重态承载925实际更新，同一作用给传播及应力；正能任务、标架来源和实际质量交换核通过。[结果](archive_935_955/942/dirac_material_embedding_results.json) · [核验](archive_935_955/942/research_round_942_checks.json)。正式942／累计3727。物种与质量混合为输入，内部角色不自动成为空间主体；929通用编码需4,063,232个分量，局域读取未签收。停止本编码细化，接[943](archive_935_955/943/drafts/STATUS.md)先判断共同模型的实际组织与访问划分。
+
+## 941：组织更新、复合钟与质量来源的共同扩展
+
+[941报告](archive_935_955/research_note_941.md)将925实际内部更新接入复合物体质量壳，同一h给钟速、质量与非对易来源；漏掉相互作用能使红移传递概率差约0.00235829。[结果](archive_935_955/941/composite_operation_bridge_results.json) · [核验](archive_935_955/941/research_round_941_checks.json)。正式941／累计3726。等效耦合和复合材料匹配为物理输入，原场材料实现及动态几何未签收。停止钟精度和器件优化，接[942](archive_935_955/942/drafts/STATUS.md)把明确操作材料放入一份共同物理对象。
+
+## 940：同一物质的弱场交换与正量子联合接口
+
+[940报告](archive_935_955/research_note_940.md)用标准弱场物理传播模式及约束势共同恢复931实际Dirac来源的电磁／引力交换；同一有限正H给概率、能源和来源。[结果](archive_935_955/940/native_exchange_bridge_results.json) · [核验](archive_935_955/940/research_round_940_checks.json)。正式940／累计3725。这是输入物理后的树级连接；有限占据边界项显著，未认证该数值过程的连续物理误差，未迁入原曲背景或完整记录。停止本示例精度和高阶修补，接[941](archive_935_955/941/drafts/STATUS.md)先判断整体共同对象的覆盖；完整原生H不是纲领的普遍门槛。
+
+## 939：共同恢复表与接收记录的有限内部核验
+
+[939报告](archive_935_955/research_note_939.md)完成[整体恢复表](archive_935_955/939/drafts/common_model_recovery_map.md)，核853末读的实际访问条件：中性无参考读口不能自动读取原Z；有限内部关系参考保原三方信号的1/8。[结果](archive_935_955/939/receiver_relational_access_results.json) · [核验](archive_935_955/939/research_round_939_checks.json)。正式939／累计3724。新增准备与保荷读出操作为明确输入，未证明原作用自主产生装置；原853写入结论保持。停止参考器件细化，接[940](archive_935_955/940/drafts/STATUS.md)回到共同有效过程与物理来源。
+
+## 938：新增参考的物理模式与量子复用边界
+
+[938报告](archive_935_955/research_note_938.md)核新增参考增加四个物理canonical对；原非Abelian背景的低波数正密度初值族，已有非零参考流及生成元差，不能直接继承旧量子对象。[结果](archive_935_955/938/reference_physical_mode_audit_results.json) · [核验](archive_935_955/938/research_round_938_checks.json)。正式938／累计3723。保留937经典结论；这不是尘埃量子化或认知纲领的反证。尘埃转为备选，停止继续修补。接[939](archive_935_955/939/drafts/STATUS.md)整合已有同一E分支的共同模型及物理恢复范围，不再反复更换参考。
+
+## 937：正能源内部参考与原全场约束共同接入
+
+[937报告](archive_935_955/research_note_937.md)采用成熟正能源材料参考，把内部钟尺精确接入原753非Abelian—Einstein初值；原物质资料与Gauss保持，参考应力及质量来源由同一约化根产生。[结果](archive_935_955/937/dust_common_model_results.json) · [核验](archive_935_955/937/research_round_937_checks.json)。正式937／累计3722。新增参考介质是物理输入；经典共同骨架未签收全量子Ward／有效匹配，873原h钟结果仍成立。停止尘埃和精确钟细化，接[938](archive_935_955/938/drafts/STATUS.md)直接审共同父作用的有限量子恢复合同；不把候选内部问题升级为纲领门槛。
+
+## 936：原生有效生成元共同保来源与几何力
+
+[936报告](archive_935_955/research_note_936.md)在明确有限canonical符号类中构造同一正量子过程、参数来源及几何力，给源无关占据截断界；保留873原树级混合来源。校准实际产生关联并保能源账。[结果](archive_935_955/936/native_source_quantization_results.json) · [核验](archive_935_955/936/research_round_936_checks.json)。正式936／累计3721。完整物理符号、剩余Gauss、材料仪器及低能匹配尚未交付，不能用任意h可量子化冒充统一完成。停止校准细化，接[937](archive_935_955/937/drafts/STATUS.md)直接填共同物理内容并验证跨部门匹配。
+
+## 935：自主实现的程序源与物理来源不能混用
+
+[935报告](archive_935_955/research_note_935.md)证明独立初始钟的纯门带衣编译可保末端任务，却不自动保数据能量及真实钟速来源；同维正向对照可保两者。有限读数差约0.09045。[结果](archive_935_955/935/autonomous_source_identity_results.json) · [核验](archive_935_955/935/research_round_935_checks.json)。正式935／累计3720。B_rate仅为限定试行合同，未等同引力来源；不否定Q_eff或全部自主实现。停止编译器修补，接[936](archive_935_955/936/drafts/STATUS.md)先选择具有真实生成元与来源字典、可连接多个部门的共同骨架；不以任一旧候选全部自洽为纲领门槛。
+
+## 934：组合比较的群重建接口与内部参考边界
+
+当前依据[全局假说草案与共同实现](archive_935_955/935/drafts/unified_operation_hypotheses_v0_1.md)，不以唯一性为阶段门槛。
+
+[934报告](archive_923_934/research_note_934.md)接入成熟操作—表示重建路线，并核有限比较群与连续SU(2)的前三阶完整通道相同、第四阶不同；同一内部参考读出保留概率差1/240。[结果](archive_923_934/934/comparison_group_reference_results.json) · [核验](archive_923_934/934/research_round_934_checks.json)。正式934／累计3719。少体关系块不直接确定实际方向权限；群动力学和空间仍未生成。停止四阶测试，接[935](archive_935_955/935/drafts/STATUS.md)先完善全局假说草案与共同实现，传播／方向／校准作为其中接口。
+
+## 933：单边载荷独立与完整端点过程的闭路边界
+
+[933报告](archive_923_934/research_note_933.md)把等维共振单边的全载荷态无关转移分类为K=gU；再要求全部相干同端点路径读数独立，会强制可见闭路仅有标量相位。同一固定正H的全部边有相同能力，整网到达概率仍可为0／1。[结果](archive_923_934/933/transport_holonomy_contract_results.json) · [核验](archive_923_934/933/research_round_933_checks.json)。正式933／累计3718。一般共同空间不要求全路径载荷独立；未生成图、维数或规范动力学。停止本图细化，接[934](archive_923_934/934/drafts/STATUS.md)先审实际方向角色与内部资料划分的选择力。
+
+## 932：连续主动权限与量子保护的有限资源边界
+
+[932报告](archive_923_934/research_note_932.md)应用成熟协变纠错边界：有限资源下，任一份丢失后的精确量子恢复与非平凡横向连续权限不相容；这两项均为额外加强。已知广义W编码的完整偏迹核验给全部任务误差1/n，允许有限有效实现。[结果](archive_923_934/932/covariant_protection_contract_results.json) · [核验](archive_923_934/932/research_round_932_checks.json)。正式932／累计3717。不推导几何或权限必要性；停止码与控制器细化，接[933](archive_923_934/933/drafts/STATUS.md)先比较几何／共同来源桥接的净输入。
+
+## 931：原带荷物质约束电磁响应与标量来源，局部匹配仍自由
+
+[931报告](archive_923_934/research_note_931.md)复用原完整质量和电荷，在明示一个费米圈中接通电流谱、有限电磁核与软标量插入，无需另添响应物种；独立谱积分及来源导数通过。原q由.27变.4时，同一有限空间动量下的减除核相差约4.64×10⁻⁴。局部匹配仍能独立改变总来源，不声称选出完整场论。[结果](archive_923_934/931/charged_matter_response_results.json) · [核验](archive_923_934/931/research_round_931_checks.json)。正式931／累计3716。停止电磁高阶及装置细化；接[932](archive_923_934/932/drafts/STATUS.md)回到能减少多个部门独立输入的操作合同比较。
+
+## 930：共同光锥约束响应，完整偏振与来源仍须保留
+
+[930报告](archive_923_934/research_note_930.md)调用成熟分类：明示线性电磁类中，21个响应系数条件性收拢为共形度规与两个标量型系数；固定实际共同锥后仍余两项。同反射功率和总动量的两候选，完整偏振分布相差16/81。额外透明替换合同可匹配系数，并给有限误差界。[结果](archive_923_934/930/cone_response_bridge_results.json) · [核验](archive_923_934/930/research_round_930_checks.json)。正式930／累计3715。未生成三维、规范群、物理体积或完整反作用；停止界面细化，接[931](archive_923_934/931/drafts/STATUS.md)先审与已有共同物质的归属和输入收益。
+
+## 929：六条有限协议共同实现，仍未选定实际更新
+
+[929报告](archive_923_934/research_note_929.md)在同一对象中实现三方记录、声明单翻转纠正、两次运行、未知量子后态及内部自主执行。两候选的输入、容量、时间和完整初始能谱相同，事件00概率仍为.64与.13；有限读出误差不抹平差别。[结果](archive_923_934/929/joint_protocol_selection_results.json) · [核验](archive_923_934/929/research_round_929_checks.json)。正式929／累计3714。此有限合同不能选定更新，不是全部认知纲领的反证；初态、工程化H及几何仍有独立输入。停止协议处理器扩展，接[930](archive_923_934/930/drafts/STATUS.md)先比较已有空间／共同来源桥接的实际选择力。
+
+## 928：强分组合同约束来源，但有限任务必须保边界信息
+
+[928报告](archive_923_934/research_note_928.md)证明：只依赖容量、适用于全部精确分组的正线性来源分配仅剩一参数族；只保组数则为身份分配。一般邻接分配在连通分组后仍需边界资料，否则同一32维量子读出可给概率1与0；保留边界接口精确恢复该来源任务。[结果](archive_923_934/928/source_grouping_selection_results.json) · [核验](archive_923_934/928/research_round_928_checks.json)。正式928／累计3713。强总量闭合不是六条协议本身，基本来源及几何仍输入；停止分配分类。接[929](archive_923_934/929/drafts/STATUS.md)先审六条共同对象与新增选择力，不自动修复本候选的全部装置。
+
+## 927：同一过程可相容，但合同仍容许不同内部动力学
+
+[927报告](archive_923_934/research_note_927.md)在同一有限自主过程接通未知记录、方向主部及资源流；两组内部频率都满足相同到达与能源账，中途方向概率却相差1/√2。要求所有未来方向都对重编码不可见，才在声明类中强制统一混合，这属于额外条件。[结果](archive_923_934/927/joint_encoding_resource_selection_results.json) · [核验](archive_923_934/927/research_round_927_checks.json)。正式927／累计3712；结束此分类，不继续修补反例。接[928](archive_923_934/928/drafts/STATUS.md)先审查组织组合对局部来源的选择力，复用585—590等已有边界，不将同源记账直接当作共同几何。
+
+## 926：先判定要求的选择力，再决定候选投入
+
+[926报告](archive_923_934/research_note_926.md)完成有限分类：旋转与角色互换在最小情形给Dirac形式，但加入内部资料后仍允许不同色散；平方分离是额外输入，而所有未知纯态的方差可加过强。[结果](archive_923_934/926/direction_update_selection_results.json) · [核验](archive_923_934/926/research_round_926_checks.json)。正式926／累计3711。结束该分类支线；按[候选投入裁定](_shared/notes/candidate_priority_audit_20261006.md)，下一项先比较共同选择力，不自动继续模型修补。有限一致性只约束相应候选的结论，不能自动升级为整个纲领的前置门槛。
+
+## 925：同一交换连接未知记录与内部资源回作用
+
+[925报告](archive_923_934/research_note_925.md)在明确的有限自主移位交换中，证明完整到达要求逐对共振，连同端点能级差限制参考谱；同一传输项给参考流及能源补偿。联合接口保未知量子记录，裸接收端不一定保相干。保持其它条件、改用弯曲参考谱的一个输入，其最高到达率为25/61。[结果](archive_923_934/925/record_resource_exchange_results.json) · [核验](archive_923_934/925/research_round_925_checks.json)。正式925／累计3710；这是架构内的共同限制，未生成规范群或引力。停止资源装置优化，接[926](archive_923_934/926/drafts/STATUS.md)审查方向传播与内部混合的联合选择力。
+
+## 924：重编码选择共同主部，但不能一并选择规范和内部动力学
+
+[924报告](archive_923_934/research_note_924.md)给主动重编码的完整对易判据：不可约权限强制同向内部编码共享传播系数；仅换标签、仅全体同步操作均不够，保留不同流锥。相同主部仍容许不同完整内部对称，因此不扩展为唯一底层候选。[结果](archive_923_934/924/role_transport_selection_results.json) · [核验](archive_923_934/924/research_round_924_checks.json)。正式924／累计3709。有限动量和时间有明确概率误差界，未签收来源或反作用；停止本支线技术优化。接[925](archive_923_934/925/drafts/STATUS.md)先比较实际记录交换能否补足选择力，不返回860/869修补链。
+
+## 923：方向报告不能取代内部状态；保量子资料的共同实现存在
+
+[923报告](archive_923_934/research_note_923.md)按新方向检验同一传播／内部混合／报告合同：单qubit精确方向报告不完全正；合法有损报告也会遗漏未来可辨的内部相干。保内部量子资料可在同一有限过程恢复全部声明任务，未推导该过程的自然作用或质量。[代码与结果](archive_923_934/923/direction_memory_contract_results.json) · [核验](archive_923_934/923/research_round_923_checks.json)。正式923／累计3708。接[924](archive_923_934/924/drafts/STATUS.md)检验功能要求是否同时限制传播主部和内部比较群；不继续该报告仪器的技术优化。已写入[924工作对象](archive_923_934/924/drafts/role_transport_classification_working.md)，区分无约束的被动换基与实质的主动任务替换；尚不另计研究轮次。
+
+## 当前主线：认知操作对物理结构的实际约束
+
+截至933的[投入复核与934启动条件](archive_923_934/934/drafts/role_algebra_reuse_review.md)：先判断新检验能否建立共同连接，再投入候选细节；本次仅作取舍，不增加研究轮次。
+
+用户最新[转向指令已落实](_shared/notes/cognitive_generation_pivot_20261006.md)：继承001—230量子重建、修订后的条件性空间成果及755 H1—H3，允许明确新增认知假设并计算后果。860/869候选转为参照与检验工具；不以补完其全部误差/反馈缺口为转向前提。六条协议已正式采用，全部C01—C27对应到单一条件账。929有限联合实现仍不选定更新；930—931保留同物质的条件性响应连接，932区分精确横向保护与有限误差。933保留真实闭路，934将操作群重建与实际权限区分，并给内部参考的四阶判据。已登记用户授权的[七组待筛选提案](archive_923_934/934/drafts/operation_hypotheses_screening.md)，允许主动提出新工作假说。935进一步区分末端程序、实际能量和钟速来源，并有有限共同正向见证。951保原有效过程的材料表示；952将948共同物质核与其lapse来源接通，并排除同阶漏场项的接法。961整体机制图已登记，接[962](archive_956_989/962/drafts/STATUS.md)按跨部门机制收益选择检验。完整阶段尚未完成。先判定方向价值，再投入候选细节；目标保持。
+
+## 922：背景改变原参考与读口，仍需合并传播交叉项
+
+[922报告](archive_894_922/research_note_922.md)将同一背景缺陷接到原路径、参考投影和移动点权重：第三加权通道约+8.55×10⁻⁶，未抵消921分项。有限闭环的混合导数已交换顺序核验；两项之和仍非总误差。[结果](archive_894_922/922/background_readout_variation_results.json) · [核验](archive_894_922/922/research_round_922_checks.json)。正式922／累计3707。已按用户新指令[转向认知操作选模](_shared/notes/cognitive_generation_pivot_20261006.md)，旧反馈链保留为未完成参照；[923](archive_923_934/923/drafts/STATUS.md)检验方向报告、内部混合与未来任务，阶段未结项。
+
+## 921：同一运动学残差对原加权来源的影响不可由普通读数替代
+
+[921报告](archive_894_922/research_note_921.md)将原速度缺陷送入全部104变量，再接原读口；普通闭环配对约10⁻¹³，原非恒定加权来源却约1.31×10⁻⁴，需保参考及权重导数。独立非线性方向发展核验通过，尚非总误差。[结果](archive_894_922/921/kinematic_defect_readout_results.json) · [核验](archive_894_922/921/research_round_921_checks.json)。正式921／累计3706。接[922](archive_894_922/922/drafts/STATUS.md)按已保存的联合方程合并背景、接收和读口变化，阶段未结项。
+
+## 920：用同一缺陷泛函连接全部物质来源与度规应力
+
+[920报告](archive_894_922/research_note_920.md)将919重建缺陷统一写成原作用的确定离壳差；它的变分共同连接Gauss、标量和度规来源，不能只用作用差小来忽略反馈。原512个来源点已核字典，未添加物理反项。[结果](archive_894_922/920/common_legendre_defect_results.json) · [核验](archive_894_922/920/research_round_920_checks.json)。正式920／累计3705。接[921](archive_894_922/921/drafts/STATUS.md)运输到原关系记录及共同预算，阶段未结项。
+
+## 919：Gauss残差定位到非线性重建与求导的交换缺陷
+
+[919报告](archive_894_922/research_note_919.md)证明原准备时刻的线性化正则Gauss为零，约5.37×10⁻⁵的连续重建残差由动量重建与求导不交换解释；不是额外电荷需求。含真实初值的弱传播仍需空间/标量贡献，求积差尚未认证。[分解结果](archive_894_922/919/canonical_gauss_commutator_results.json) · [核验](archive_894_922/919/research_round_919_checks.json)。正式919／累计3704。接[920](archive_894_922/920/drafts/STATUS.md)把同一字典误差运输到原关系来源或真正需要的伴随测试，阶段未结项。
+
+## 截至918：有限预测与连续外推分开验收
+
+[必要性审计](archive_894_922/919/drafts/effective_scope_decision_after_918.md)确认可用误差受控的共同有效描述完成阶段；全局Fock、全态热态、裸预算及无限外推不作普遍门槛。916—918的有限来源、真实约束初值与反馈仍须运输到目标观测；918消去表示接触未修复实际Gauss误差。919只求原目标所需的弱响应或上界，声明域总预算达标即停止细化。[证据核验](archive_894_922/919/drafts/effective_scope_after_918_checks.json)。本次只审计，正式仍918／累计3703，不新增科学组，阶段未结项。
+
+## 918：正确作用密度吸收体积接触，实际Gauss误差保留
+
+[918报告](archive_894_922/research_note_918.md)把普通Euler残差转为同一作用Hessian密度，保密度与逆度规变分；917主要内部体积接触精确相消，原Gauss残差保持约5.70×10⁻⁵，不能用小Ward驱动签收约束。[结果](archive_894_922/918/euler_density_contacts_results.json) · [核验](archive_894_922/918/research_round_918_checks.json)。正式918／累计3703。接[919](archive_894_922/919/drafts/STATUS.md)落实含真实初值的约束弱传播和共同观测预算；919尚无新结果，阶段未结项。
+
+## 917：原来源与背景残差的联合约束驱动
+
+[917报告](archive_894_922/research_note_917.md)将同一接收应力散度与背景接触接成完整线性化Noether关系；删除任一方均不复现实际残差，内部体积联络项须保留。[联合结果](archive_894_922/917/joint_constraint_driving_results.json) · [核验](archive_894_922/917/research_round_917_checks.json)。正式917／累计3702。样本驱动未成为总观测误差；[下一项](archive_894_922/918/drafts/STATUS.md)按原作用密度统一转换，区分表示项与物理预算。918尚无结果，阶段未结项。
+
+## 917工作期：原接收应力的联合约束输入
+
+[工作记录](archive_894_922/917/drafts/receiver_stress_working.md)已计算同一原接收模式完整应力的导数与散度，保离壳项；8个原样本上的散度最大约8.49×10⁻⁶，原表达及独立导数核对通过。[结果](archive_894_922/917/receiver_stress_derivative_results.json) · [保存核验](archive_894_922/917/drafts/working_checks.json)。正式仍916／累计3701；下一项共同计算背景接触与约束驱动，再运输到目标观测。样本诊断不是全支持或物理误差证书，917未结项。
+
+## 916：同一背景的联合残差与投影修正
+
+[916报告](archive_894_922/research_note_916.md)独立重建原度规、标量与规范场Euler方程，接同一接收应力并核联合Noether交换；原近似背景的离壳误差会经参考投影放大，不能直接套用在壳PΠ=P。[实际残差](archive_894_922/916/covariant_joint_residual_results.json) · [独立验证](archive_894_922/916/covariant_residual_validation_results.json) · [核验](archive_894_922/916/research_round_916_checks.json)。正式916／累计3701。样本诊断未成为物理误差界；[下一项](archive_894_922/917/drafts/STATUS.md)将背景、受迫响应及接收误差运输到同一总观测，917尚无新结果。受控有效描述标准和阶段目标不变。
+
+## 915：有限算法误差归因与阶段验收范围
+
+[915报告](archive_894_922/research_note_915.md)将原加权源的差分误差单独运输到读数，最大差约6.70×10⁻¹¹；独立jet核验通过，真实物理误差仍未认证。[结果](archive_894_922/915/analytic_weighted_source_results.json) · [核验](archive_894_922/915/research_round_915_checks.json)。正式915／累计3700。
+
+[必要性裁定](archive_894_922/915/drafts/effective_scope_decision_after_915.md)：可用误差受控的共同有效描述验收，不预设微观连续或物理最小尺度；全局Fock、全态热态及无穷阶完成不作普遍门槛。有限来源、守恒、约束及反馈仍须在同一观测预算内相容。停止本辅助模式的独立精度扫描；[下一项](archive_894_922/916/drafts/STATUS.md)处理共同残差与总观测，916尚无新结果，阶段未结项。
+
+## 915工作期：原加权来源的误差放大系数
+
+[工作报告](archive_894_922/915/drafts/research_note_915_working.md)已计算原三通道对字段jet及参考抽取量的八组有限数组敏感系数，并独立核原源配对。实际物理输入误差仍留空，背景/权重/求积和总反馈另需控制，不能把这张系数表当总误差证书。[结果](archive_894_922/915/weighted_source_budget_results.json) · [保存核验](archive_894_922/915/drafts/working_checks.json)。正式仍914／累计3699；下一项落实真实输入界与原总源需要的测试。
+
+## 914：原加权接收响应的规范约化与实际接口
+
+[914报告](archive_894_922/research_note_914.md)将同一A的非恒定Dirac权重接原闭环来源；特征自然性降低抽取阶数，Ward先约化避免将纯规范求积残差认作信号。保原参考/权重次序，并显式固定一份允许的辅助配对。[结果](archive_894_922/914/weighted_ward_pairing_results.json) · [核验](archive_894_922/914/research_round_914_checks.json)。正式914／累计3699；尚无物理总误差或完整872反作用。接[915](archive_894_922/915/drafts/STATUS.md)落实真实核的误差放大系数，不先重建整个响应场。
+
+## 截至913：有限共同预测的验收裁定
+
+[必要性复审](archive_894_922/914/drafts/finite_scope_decision_after_913.md)确认可用误差受控的共同有效描述结项；无截断外推不作普遍门槛。912—913的实际来源、约束、参考及反馈影响仍须进入同一观测预算，路径细化差不能替代。914只求总源所需的加权响应或其上界，不以完整场重建为独立门槛；达标即停细化。正式仍913／累计3698，本审计不新增轮次或实验组。
+
+## 913：共同应力响应与原记录的独立一致性检验
+
+[913报告](archive_894_922/research_note_913.md)将实际A的来源配对、材料路径直接微分和原记录重建接通；分开参考敏感性引起的有限幅度非线性与路径离散差。相同参数步长不能跨方向直接沿用，完整参考/路径项保留。[重建结果](archive_894_922/913/independent_record_rebuild_results.json) · [直接导数](archive_894_922/913/discrete_record_tangent_results.json) · [核验](archive_894_922/913/research_round_913_checks.json)。正式913／累计3698；物理误差、完整v_A及872总源仍缺，接[914](archive_894_922/914/drafts/STATUS.md)处理总源真正需要的加权接收响应，不继续孤立优化本轮精度。
+
+## 913工作期：共同应力响应进入原关系读出
+
+[工作记录](archive_894_922/913/drafts/receiver_readout_working.md)已将912实际A与908三份完整关系来源配对；当前伴随配对主要来自参考/路径变化，固定路径项不能替代。复用803与870校准，连接到v_A的一个准备模式矩阵元；未重建全场或完整反作用。[结果](archive_894_922/913/receiver_response_readout_results.json) · [保存核验](archive_894_922/913/drafts/working_checks.json)。正式仍912／累计3697；913保工作状态，下一项核独立原记录及实际有限误差，不能把网格差或有限数组零尾当连续证书。
+
+## 912：原共同应力的同源初值与混合受迫演化
+
+[912报告](archive_894_922/research_note_912.md)将906同一接收应力接初值和全部104变量的受迫发展，给乘积求导/应力/旋度差的精确分解；独立改变应力权重的轨迹验证通过。范数保持不代表局部来源与约束已受控，数值零模不转为物质反流。[代码](archive_894_922/912/receiver_forced_response.py) · [结果](archive_894_922/912/receiver_forced_response_results.json) · [核验](archive_894_922/912/research_round_912_checks.json)。正式912／累计3697；接[913](archive_894_922/913/drafts/STATUS.md)与原关系来源配对并合并有限预算，物理A、872总反作用和阶段目标仍未完成。
+
+## 912工作期增量审计：有限预测验收与停止条件
+
+[必要性复审](archive_894_922/912/drafts/effective_scope_reaudit_912_working.md)继续允许误差受控的共同有效描述，不要求微观连续、最小尺度或无截断完成。911已消去路径直接复用；912独立含源约束与初片/演化来源一致性仍须控制，求积反流不算物理成本。剩余项可计算或界定其目标贡献，不追求全场任意精度或非零总响应。先绑定共同容差，达标即停细化。[证据核验](archive_894_922/912/drafts/effective_scope_reaudit_checks.json)。正式仍911／累计3696；本次审计不新增科学轮次，下一项接同源初值与演化。
+
+## 912工作期：原接收应力接初值与自旋流平衡
+
+[工作记录](archive_894_922/912/drafts/initial_response_working.md)已把906原应力接到已有约束补偿，并核出该实剖面/恒定自旋准备的J是旋度，连续总动量为零；初次数值反流来自求积伪差。共形解残差小，但独立能量/动量约束仍未受控。[初值结果](archive_894_922/912/receiver_initial_completion_results.json) · [原源身份](archive_894_922/912/receiver_momentum_curl_results.json) · [保存核验](archive_894_922/912/drafts/working_checks.json)。正式仍911／累计3696；接保结构源与同一A发展，不孤立提高椭圆精度。
+
+## 911：原四腿总来源的味过滤与旧通信消去
+
+[911报告](archive_894_922/research_note_911.md)将870同二点准备差逐项施于872完整源，严格消去三条旧接收通信路径，余项可用两份混合玻色响应和三份单味Dirac响应计算；重力应力、初值和密度顶点保留。[代码](archive_894_922/911/receiver_flavour_source_reduction.py) · [结果](archive_894_922/911/receiver_flavour_source_reduction_results.json) · [核验](archive_894_922/911/research_round_911_checks.json)。精确有理完整Euler及CAR核验通过；改旧味结构的负对照失效。正式911／累计3696。原总反作用数值与有限误差未签收；接[912](archive_894_922/912/drafts/STATUS.md)落实共同应力响应A及相容初值，不将其设零。
+
+## 911工作期范围审计：以有限共同预测验收
+
+[截至910的增量审计](archive_894_922/911/drafts/finite_scope_checkpoint_910.md)确认受控有效描述可完成本阶段；全局Fock、全态热态、裸预算和无穷阶完成不作普遍门槛。909有限读数未受控、910完整反作用未算，仍限制对应预测；911近零投影分量不构成新障碍。先绑定同一协议、阶数和容差，再合并实际来源/守恒/反馈预算，达标即停止细化。[验收表](archive_894_922/911/drafts/finite_scope_acceptance_910.json) · [工作证据](archive_894_922/911/drafts/future_test_projection_working.md) · [核验](archive_894_922/911/drafts/finite_scope_checkpoint_checks.json)。正式仍910／累计3695，911工作中；本审计不新增科学组，不改应用目标。
+
+## 910：原物理解与守恒未来读数的实际连接
+
+[910报告](archive_894_922/research_note_910.md)直接发展863原约束族的解析切向，与908同一弱源配对，并复用已证未来测试身份连接870首接收腿；未重证Green定理。N16/N24条件系数约−1.49105e−7，细化差仅作诊断。[代码](archive_894_922/910/physical_direction_dual_bridge.py) · [结果](archive_894_922/910/physical_direction_validation_results.json) · [核验](archive_894_922/910/research_round_910_checks.json)。正式910／累计3695。完整支持、连续误差、未来仪器及872总和未签收；接[911](archive_894_922/911/drafts/STATUS.md)做同一有限读数的共同预算，不以此替909另一读口背书。
+
+## 909：原弱来源的混合受迫传播与有限观测验收
+
+[909报告](archive_894_922/research_note_909.md)把908原伴随闭环来源接入904全部混合受迫演化，保时间导数势；运输配对及真实响应已复算。低频约束改善但后续读数对空间和观测求积仍敏感，尚不能作为受控预测。[代码](archive_894_922/909/weak_source_propagation.py) · [结果](archive_894_922/909/weak_propagation_validation_results.json) · [核验](archive_894_922/909/research_round_909_checks.json)。正式909／累计3694。问题限本有限读口/离散验收，不反证共同模型；接[910](archive_894_922/910/drafts/STATUS.md)统一处理参考、读口与传播误差，不继续孤立压小时间误差。
+
+## 909前范围复核：截至908的历史审计
+
+[增量审计](archive_894_922/909/drafts/effective_scope_reaudit_908.md)确认可用误差受控的共同有效描述验收；无截断全局表示、全态热态与全阶收敛不作普遍门槛。900—908的有限来源、守恒和反作用接口仍有效；909优先落实同一原源的有限观测预算，强源或实际伴随弱配对择一，不要求两路俱全。尚无最终共同误差证书，正式仍908／累计3693；此次审计不新增科学组。
+
+## 909前期：原来源的动量运输（已接正式909）
+
+[工作推导](archive_894_922/909/drafts/retarded_source_working.md)复用905/904，将908原源的时间散度写成动量移位；必须同步保留完整混合项−LS及约束变化。实际弱核尚不能直接当网格强源，下一项落实原系数推前或实际伴随配对。正式仍908／累计3693，不新增轮次；装置及有限域验收目标保持。
+
+## 908：原关系闭环的完整弱来源
+
+[908报告](archive_894_922/research_note_908.md)实现原三类平滑材料闭环的完整第一jet弱来源，含度规、时钟、连接及路径变化；独立重建路径、联合规范与863原约束解族已核。[代码](archive_894_922/908/relational_loop_source.py) · [结果](archive_894_922/908/relational_source_validation_results.json) · [核验](archive_894_922/908/research_round_908_checks.json)。正式908／累计3693。全支持/动态误差、强源或等价受控传播及872反作用仍缺；本装置跨t=0，迟致初片不可截掉负时段。接[909](archive_894_922/909/drafts/STATUS.md)将同一原源接完整混合响应，继续按有限域共同误差验收。
+
+## 907：有限读数的规范字典与材料参考
+
+[907报告](archive_894_922/research_note_907.md)证明旧链路a=−iA不能字面接当前物理规范律：同一原背景的纯规范变换可改变有限环读数；相容a=+iA修正通过解析及矩阵核验。实际新材料参考存在有限时窗失秩的数值警讯，尚非连续反例。[代码](archive_894_922/907/connection_dictionary_audit.py) · [结果](archive_894_922/907/material_dictionary_validation_results.json) · [核验](archive_894_922/907/research_round_907_checks.json)。正式907／累计3692。接受误差受控的有效描述，不追加无截断门槛；本域读数、来源及约束不一致仍须处理。原j/Π†和共同反作用预算未完成，接[908](archive_894_922/908/drafts/STATUS.md)。
+
+## 907前期：实际来源的两套参考与有限时窗（已接正式907）
+
+[工作审计](archive_894_922/907/drafts/material_source_implementation_audit.md)区分773/785的旧投影参考与859/863的新链路参考；已在902真实背景计算两套完整时空导数及规范变化。[网格/时间交叉结果](archive_894_922/907/reference_chart_crosscheck_results.json)提示新参考在t=0到.005之间可能退化，尚无连续时间证书；这是有限域字典警讯，不是全模型失败。下一项落实原源支持和共同正则域，必要时保物理过程拼接图册。[保存核验](archive_894_922/907/drafts/working_checks.json)。正式仍906／累计3691，原j/Π†尚未完成，不新增轮次。
+
+## 906：原接收来源与密度项的成对抵消
+
+[906报告](archive_894_922/research_note_906.md)实现原中性接收模式及完整双线性应力在902同一背景的传播/来源接口；证明872受迫接收响应与显式读出密度项成对抵消，给近似求解的抵消缺陷。[代码](archive_894_922/906/compact_receiver_propagation.py) · [结果](archive_894_922/906/compact_receiver_validation_results.json) · [核验](archive_894_922/906/research_round_906_checks.json)。正式906／累计3691。原j/Π†、四腿总和和共同观测误差仍未计算；小范数漂移不能替代局部来源验收。初次非单调细化检查已保留。接[907](archive_894_922/907/drafts/STATUS.md)落实原关系来源，不继续孤立波形精度优化。
+
+## 905：同一来源的演化与约束接口
+
+[905报告](archive_894_922/research_note_905.md)将同一Euler来源接到904全部混合演化及引力/规范法向约束；由协变作用变化独立核系数、动量转换和联合Ward。[代码](archive_894_922/905/canonical_source_bridge.py) · [结果](archive_894_922/905/source_bridge_validation_results.json) · [核验](archive_894_922/905/research_round_905_checks.json)。正式905／累计3690。有限尺度的一致性要求不能省略物质力和时间电流；实际872总源、迟致强迫解及严格时间误差仍未计算。接[906](archive_894_922/906/drafts/STATUS.md)，落实原来源和有限观测预算。
+
+[连续极限审计](archive_894_922/899/drafts/effective_scope_joint_audit.md)继续有效：受控有效描述可作为阶段验收；无需先完成无截断全局Fock、裸动能预算或无限阶收敛。计算截断不等于物理最小尺度，连续证明工具不等于微观连续假设。共同参数、有限预测、联合守恒和反作用误差仍须在同一声明域内核验。
+
+## 904：原约束背景的完整混合玻色变分传播
+
+[904报告](archive_894_922/research_note_904.md)实现902全部经典变量的变分演化，并以859约束解族的独立邻近轨迹核对；探针、几何、规范和H5混合保留。[代码](archive_894_922/904/coupled_boson_tangent.py) · [结果](archive_894_922/904/boson_tangent_checks_results.json) · [核验](archive_894_922/904/research_round_904_checks.json)。正式904／累计3689。已接无源Cauchy变分，尚未构成带源物理迟致逆或量子反作用；接[905](archive_894_922/905/drafts/STATUS.md)落实兼容来源、法向约束及同一物理投影，不以孤立KG替代。
+
+## 904前期回查：相对来源可复用已有过滤（已接正式904）
+
+[准备与来源审计](archive_894_922/904/drafts/preparation_and_relative_source_audit.md)回查730/842及845/870/872：完整参考选择对绝对源有物理后果，但指定λ²ℏ²四接收腿差已消去共同余部。故下一项优先接实际R模式、完整混合迟致核与四项总来源；不先把整个过去协方差当成门槛。903的64维物质测试模式不能代替R。正式仍903／累计3688，此次回查不增组。
+
+## 903：同一动态背景的完整费米空间传播
+
+[903报告](archive_894_922/research_note_903.md)把902三维背景接入原64维Nambu传播，保完整质量、规范连接、spin及半密度；时空标架协变、CAR与实际空间细化已核。[代码](archive_894_922/903/curved_fermion_propagation.py) · [结果](archive_894_922/903/curved_fermion_checks_results.json) · [核验](archive_894_922/903/research_round_903_checks.json)。正式903／累计3688。测试波函数不是原准备协方差，尚无严格背景/模式误差或量子来源。接[904](archive_894_922/904/drafts/STATUS.md)落实同一原准备与来源，维持有限域共同验收。
+
+## 902：同一背景的实际共同演化与能量交换
+
+[902报告](archive_894_922/research_note_902.md)已计算原859完整度规、规范场、H5与探针的三维短时耦合演化，同一作用的力、应力和能量交换通过独立检查。[演化代码](archive_894_922/902/common_background_evolution.py) · [结果](archive_894_922/902/joint_background_validation_results.json) · [核验](archive_894_922/902/research_round_902_checks.json)。正式902／累计3687。细化后的约束残差下降是数值证据，尚非有限时间误差界；实际量子模式和共同来源预算仍缺。接[903](archive_894_922/903/drafts/STATUS.md)，把实际背景与同一量子传播及必要误差证书接通；维持受控有效描述验收，不追加无截断门槛。
+
+## 901：原背景全域残差与共同初始预测
+
+[901报告](archive_894_922/research_note_901.md)用整数 Fourier 包络证明原859近似解的全域残差≤1.9020×10⁻⁷，得到同一初始度规、路径长度及原材料点Jacobian的误差区间。[代码](archive_894_922/901/wiener_certificate.py) · [共同结果](archive_894_922/901/initial_joint_prediction_certificate_results.json) · [核验](archive_894_922/901/research_round_901_checks.json)。正式901／累计3686。900所缺真实初值连续残差已补；时空支持、实际量子传播和共同来源预算仍缺。接[902](archive_894_922/902/drafts/STATUS.md)转入有限时间共同预测，不继续孤立初始点精度优化。
+
+## 有效描述验收原则（900时点，后续进度见上）
+
+按[连续极限联合审计](archive_894_922/899/drafts/effective_scope_joint_audit.md)，阶段允许误差受控的有效描述；必要的是声明域内的共同预测、来源、守恒与反作用相容。全局共同Fock表示、精确全态Gibbs、统一裸动能及无限外推不作普遍门槛。不预设微观连续或最小尺度；886/894涉及有限预测的偏差仍须处理。
+
+[900报告](archive_894_922/research_note_900.md)给原859约束背景的不依赖网格的参考下界及连续残差C1证书；[精确常数](archive_894_922/900/continuous_reference_bounds_results.json)已保存，[核验](archive_894_922/900/research_round_900_checks.json)复算。正式900／累计3685。实际连续残差、时空支持和共同量子来源预算仍未签收，阶段未完成；接[901](archive_894_922/901/drafts/STATUS.md)取得同一分支的有限预测预算，不继续无截断外推或孤立精度优化。
+
+## 900前期工作：原约束初值上的实际材料参考预算（已接正式报告）
+
+[工作稿与原数据](archive_894_922/900/drafts/current_reference_budget_working.md)已从859同一约束初值计算真实空间材料Jacobian，保完整钟投影与颜色电场，区分旧行列式辅助项和真实逆。N=16/24/32结果已保存；尚限初始中心点，未给连续残差、区域/时间统一界或872量子来源预算。正式仍899／累计3684，不新增科学组。
+
+## 899：有限关系几何读数的共同来源误差
+
+[899报告](archive_894_922/research_note_899.md)将当前860/869/872的完整相对来源接到有限关系几何测试误差，保同一混合传播、参数jet和初值；有限读数不必先要求完整源场强范数。[代码](archive_894_922/899/geometry_source_dual_certificate.py) · [结果](archive_894_922/899/geometry_source_dual_certificate_results.json) · [核验](archive_894_922/899/research_round_899_checks.json)。正式899／累计3684。实际曲背景预算、Q_eff当前系数及完整局部约束仍未签收；接[900](archive_894_922/900/drafts/STATUS.md)优先取得原数据的实际有限证书，不继续优化校准模型。
+
+## 899工作审计：以共同有效预测验收，分清候选分支
+
+[连续极限联合复审](archive_894_922/899/drafts/effective_scope_joint_audit.md)确认无截断全局模型不作阶段门槛；必要条件是声明域内同一模型的记录、共同来源、守恒及反作用误差。原Q与Q_eff无需同时成功，选用新候选须明确并重新核认知/区域合同。当前860/869分支的实际系数、局部源重建和物理参数预算仍未接齐；897一费米圈证书与898有限菜单界不能无条件拼接。正式仍898／累计3683；此次整理不新增科学轮次，下一步补同一分支的实际有限误差。
+
+## 898：有限候选对共同物理保留阶的真实误差
+
+[898报告](archive_894_922/research_note_898.md)复用854固定正有限候选及共同记忆，给记录和双边来源导数相对原E保留阶多项式的显式有限参数余项；这项比较无需精确无截断E(t)。[代码](archive_894_922/898/finite_order_effective_error.py) · [结果](archive_894_922/898/finite_order_effective_error_results.json) · [核验](archive_894_922/898/research_round_898_checks.json)。正式898／累计3683。Q_eff不冒称原Q，原物理系数预算、局域场重建与完整反作用仍缺；接[899](archive_894_922/899/drafts/STATUS.md)联合审计两条路线的实际物理字典，不以梯子校准或调小参数代替统一目标。
+
+## 897：绝对共同来源与约束误差的残差证书
+
+[897报告](archive_894_922/research_note_897.md)将805传播残差接到完整减除核的对角来源，给固定735处方下绝对一费米圈源、一二阶背景导数及首阶约束缺陷的条件性误差界；保同一参考与局部接触。[代码](archive_894_922/897/absolute_source_residual_certificate.py) · [结果](archive_894_922/897/absolute_source_residual_certificate_results.json) · [核验](archive_894_922/897/research_round_897_checks.json)。正式897／累计3682。原128维符号仅校准，实际曲背景预算和原Q/E匹配未完成。接[898](archive_894_922/898/drafts/STATUS.md)核原Q消元后的共同有效来源与记忆，不追加无截断连续门槛。
+
+## 896：实际仪器、守恒来源与首阶反作用的共同误差
+
+[896报告](archive_894_922/research_note_896.md)用同一原CAR仪器的光滑模式近似，保真实正操作、完整相对Ward与来源强范数，并复用732/754接到相容初值、首阶背景及有限后续记录。[代码](archive_894_922/896/compatible_instrument_source_bridge.py) · [结果](archive_894_922/896/compatible_instrument_source_bridge_results.json) · [核验](archive_894_922/896/research_round_896_checks.json)。正式896／累计3681。范围限记录相对源及首阶发展；保完整传播不等于已有闭合有限Hamiltonian。接[897](archive_894_922/897/drafts/STATUS.md)核绝对来源的共同有效输入；原Q/E桥、高阶真实余项和完整反馈仍未完成。
+
+## 895：共同来源的有限频率误差
+
+[895报告](archive_894_922/research_note_895.md)复用630—631原完整物质谱，给同一有限频率窗下物质—几何二阶因果来源及正噪声的显式尾界，保全部交叉与原局部匹配系数。[代码](archive_894_922/895/joint_source_window_errors.py) · [结果](archive_894_922/895/joint_source_window_errors_results.json) · [误差账本](archive_894_922/895/effective_error_ledger.json) · [核验](archive_894_922/895/research_round_895_checks.json)。正式895／累计3680。范围限原平直一圈二阶源核；接[896](archive_894_922/896/drafts/STATUS.md)核源误差到实际约束背景与记录，不宣称完整反馈已完成。
+
+## 894：共同模型的有限尺度验收
+
+[894报告](archive_894_922/research_note_894.md)按用户要求审计连续极限：固定全局正常表示、统一裸动能预算和精确全态连续Gibbs不作为阶段门槛；有限记录、共同来源、守恒及反作用误差仍须验收。不预设微观连续或物理最小尺度。原有限k=0脉冲证明水平附加规则会改变有限配对记录，仅限制指定同源路径匹配。[代码](archive_894_922/894/effective_scope_source_audit.py) · [结果](archive_894_922/894/effective_scope_source_audit_results.json) · [核验](archive_894_922/894/research_round_894_checks.json)。正式894／累计3679。接[895](archive_894_922/895/drafts/STATUS.md)建立共同有效模型的误差账本；完整阶段尚未结项。
+
+## 893：保非平坦连接的多参数共同过程
+
+[893报告](archive_873_893/research_note_893.md)保892原水平曲率，以有限秩能带占据和矩阵热核支配，构造完整原物种的多参数联合热态、连续迹范数极限及有限原CAR记录；无需另加平坦化规则。[代码](archive_873_893/893/curved_connection_heat_bridge.py) · [结果](archive_873_893/893/curved_connection_heat_bridge_results.json) · [核验](archive_873_893/893/research_round_893_checks.json)。正式893／累计3678；运输动能与真空减项仍为输入。接[894](archive_894_922/894/drafts/STATUS.md)回接原动力和共同来源。
+
+## 892：多来源运输不能由静态热态验收
+
+[892报告](archive_873_893/research_note_892.md)用原完整矩阵证明888指定水平连接在多EM方向上不平坦；原真空和热态不变时，中性偶配对记录仍可改变。平坦完成存在但会改动能。[代码](archive_873_893/892/multisource_transport_curvature.py) · [结果](archive_873_893/892/multisource_transport_curvature_results.json) · [核验](archive_873_893/892/research_round_892_checks.json)。正式892／累计3677。接[893](archive_873_893/893/drafts/STATUS.md)保曲率构造多参数共同过程；原Gauss和真空来源仍未签收。
+
+## 891：连续联合热态与原物理有序记录
+
+[891报告](archive_873_893/research_note_891.md)将890热权界接成完整原物种联合Gibbs的迹范数极限，并保兼容有限原物理CAR的准备和有序记录；漏运输读口的负对照有明确概率偏差。[代码](archive_873_893/891/continuous_thermal_records.py) · [结果](archive_873_893/891/continuous_thermal_records_results.json) · [核验](archive_873_893/891/research_round_891_checks.json)。正式891／累计3676；新增动能、真空来源和全Gauss仍待接。接[892](archive_873_893/892/drafts/STATUS.md)核多来源运输相容性。
+
+## 890：完整多模式的切口热权受控
+
+[890报告](archive_873_893/research_note_890.md)在889明确声明的自由分支中，利用一份共同坐标动能及完整原物种热熵界，证明全部边界占据的真实联合热概率趋零；没有给每个模式复制动能。[代码](archive_873_893/890/shared_coordinate_heat_bound.py) · [结果](archive_873_893/890/shared_coordinate_heat_bound_results.json) · [核验](archive_873_893/890/research_round_890_checks.json)。正式890／累计3675；原Gauss、真空来源及物理字典仍待接。接[891](archive_873_893/891/drafts/STATUS.md)核内部模式的共同连续热态。
+
+## 889：动态参数与切口的真实激发
+
+[889报告](archive_873_893/research_note_889.md)在明确新增的运输动能与真空减项分支中，证明原中性电子配对切口的实际激发阈值按(log N)²升高；不是冻结参数的能值推断。[代码](archive_873_893/889/dynamic_cut_spectrum.py) · [结果](archive_873_893/889/dynamic_cut_spectrum_results.json) · [核验](archive_873_893/889/research_round_889_checks.json)。正式889／累计3674；完整Gauss和共同来源未证。接[890](archive_873_893/890/drafts/STATUS.md)核同一动能下的多模式热权。
+
+## 888：连续参考的裸动能审计与显式运输
+
+[888报告](archive_873_893/research_note_888.md)证明原连续热参考也有线性发散的裸动能下界，故887预算不能自动视作目标事实；谱运输可给有限截断的有界新协变动能态，但必须改变动能规则，且不能取消切口热概率项。[代码](archive_873_893/888/reference_transport_energy.py) · [结果](archive_873_893/888/reference_transport_energy_results.json) · [核验](archive_873_893/888/research_round_888_checks.json)。正式888／累计3673。接[889](archive_873_893/889/drafts/STATUS.md)检验实际动态参数与切口激发。
+
+## 887：热校准、动态来源与量子坐标预算
+
+[887报告](archive_873_893/research_note_887.md)证明c数精确静态校准不能消除同背景来源方差；弱密度逃逸可行，但保逐点原条件Gibbs的正常量子坐标实现不能再有统一正动能预算。[代码](archive_873_893/887/conditional_thermal_kinetic_certificate.py) · [结果](archive_873_893/887/conditional_thermal_kinetic_certificate_results.json) · [核验](archive_873_893/887/research_round_887_checks.json)。正式887／累计3672；预算是额外连接，未冒称全Gauss事实。接[888](archive_873_893/888/drafts/STATUS.md)核连续目标能源及真实联合热准备。
+
+## 887前期：静态校准与动态方差的同背景检验（已接正式887）
+
+[工作报告](archive_873_893/887/drafts/energy_shift_source_working.md)及[原矩阵结果](archive_873_893/887/renormalized_weight_variance_probe_results.json)显示：用c数能源精确校准886连续静态权重，不能消除同背景的光滑来源方差下界。仅弱参数平均允许缩窄带抑制，尚须与来源及动态规范成本共同审计；不扩大为全部修正失败。正式仍886／累计3671，不增组。
+
+## 886：未破缺整环方向的局部反项障碍
+
+[886报告](archive_873_893/research_note_886.md)沿原Higgs稳定子保全部质量，证明883候选的整环真空差按Cα²N²发散，而协变连续相对值有限；在该族正则的局部规范反项不能消除它。[代码](archive_873_893/886/unbroken_holonomy_locality.py) · [结果](archive_873_893/886/unbroken_holonomy_locality_results.json) · [核验](archive_873_893/886/research_round_886_checks.json)。正式886／累计3671；不反证773—796仅正则片构造。接[887](archive_873_893/887/drafts/STATUS.md)核更宽能源重标定与动态方差能否共同通过。
+
+## 885：联合热权重与发散的平坦连接偏置
+
+[885报告](archive_873_893/research_note_885.md)证明原完整费米热权重可按exp(−cN³)抑制884切口，但正常参数片内同时留下Cα²N²真空偏置，不能据此签收共同准备。[代码](archive_873_893/885/joint_static_thermal_weight.py) · [结果](archive_873_893/885/joint_static_thermal_weight_results.json) · [核验](archive_873_893/885/research_round_885_checks.json)。正式885／累计3670；仅静态参数分支，动态Gauss态未证。接[886](archive_873_893/886/drafts/STATUS.md)核原局部规范反项。
+
+## 884：切口的光滑来源方差障碍
+
+[884报告](archive_873_893/research_note_884.md)用原完整电子质量块证明：883指定候选在固定正密度平坦参数平均下，固定光滑时间来源方差至少按(log N)²发散，连续对应量有限；来源Hessian不能取消此双历史二阶差。[代码](archive_873_893/884/cut_source_variance_certificate.py) · [结果](archive_873_893/884/cut_source_variance_certificate_results.json) · [核验](archive_873_893/884/research_round_884_checks.json)。正式884／累计3669；只排除该准备/来源合同，原动态Gauss权重尚未推出。接[885](archive_873_893/885/drafts/STATUS.md)核实际热权重。
+
+## 883：谱动能与共同规范来源
+
+[883报告](archive_873_893/research_note_883.md)证明最短路径谱插值虽精确匹配零源能谱，规范来源却留下非零极限误差；新声明的光滑整环跳跃在平坦参数片上共同匹配原64维生成元、有限CAR准备和记录响应。[代码](archive_873_893/883/spectral_source_bridge.py) · [结果](archive_873_893/883/spectral_source_bridge_results.json) · [核验](archive_873_893/883/research_round_883_checks.json)。正式883／累计3668；长程耦合及切口边界保留，全Gauss/相互作用Q/E未签收。接[884](archive_873_893/884/drafts/STATUS.md)核切口的共同来源。
+
+## 882：参数化参考与共同有限来源
+
+[882报告](archive_873_893/research_note_882.md)证明原质量族在固定等时CAR识别下无共同全局正常热态族；同时，有限光滑CAR准备、有序记录及一二阶参数来源可共同逼近。完整64维原传播保留，843固定共同过去构造未被推翻。[代码](archive_873_893/882/mass_reference_source_jets.py) · [结果](archive_873_893/882/mass_reference_source_jets_results.json) · [核验](archive_873_893/882/research_round_882_checks.json)。正式882／累计3667；完整混合重整化来源与原Q/E同源仍待核，接[883](archive_873_893/883/drafts/STATUS.md)。
+
+## 881：保原关联与局部模式的有限来源过程
+
+[881报告](archive_873_893/research_note_881.md)复用823局部辛非退化，在原区域内补有限物理模式；带权正常容量近似共同保有限有序词、完整CAR记录与指定来源，解除855精确有限Schmidt输入限制。[代码](archive_873_893/881/local_mode_source_capacity.py) · [结果](archive_873_893/881/local_mode_source_capacity_results.json) · [核验](archive_873_893/881/research_round_881_checks.json)。正式881／累计3666；只逼近固定任务系数，不宣称全区域独立化、原物理能量统一界或Q/E动力等同。接[882](archive_873_893/882/drafts/STATUS.md)核消去模式后的共同生成与来源。
+
+## 880：相邻全区域参考独立化的障碍
+
+[880报告](archive_873_893/research_note_880.md)用原Dirac主符号证明跨界协方差非Hilbert–Schmidt：相邻全区域的准自由边缘乘积不在原全局正常态类，也不保Hadamard源域。保留全部64维原质量的[复算](archive_873_893/880/contact_boundary_covariance_results.json)核界面代价；辅助过去能量不冒称实际未来值。[代码](archive_873_893/880/contact_boundary_covariance.py) · [核验](archive_873_893/880/research_round_880_checks.json)。正式880／累计3665；只排除无间隔全参考独立化，原关联整体与有限任务未被排除。接[881](archive_873_893/881/drafts/STATUS.md)核保原关联的有限任务／来源近似。
+
+## 879：完整CAR与共同正常区域字典
+
+[879报告](archive_873_893/research_note_879.md)把原完整矩阵Dirac／Majorana自由块接到跨区准等价，与878合并为同一自由过程的正常区域呈现；保实际非Gaussian准备和偶记录，并保留跨区奇×奇的总偶读口。[代码](archive_873_893/879/graded_regional_covariance.py) · [结果](archive_873_893/879/graded_regional_covariance_results.json) · [核验](archive_873_893/879/research_round_879_checks.json)。正式879／累计3664；能源来源、实际有限Hamiltonian及Q/E连续匹配未证。接[880](archive_873_893/880/drafts/STATUS.md)核共同任务字典和原源域。
+
+## 878：原混合玻色自由场的正常区域组合
+
+[878报告](archive_873_893/research_note_878.md)由原物理协方差下界、有限微分局部代表与跨区迹类，得到同一正则片内有限隔开区域的正常张量结构；保留引力／规范／六标量混合与原态关联。[代码](archive_873_893/878/regional_physical_covariance.py) · [结果](archive_873_893/878/regional_physical_covariance_results.json) · [核验](archive_873_893/878/research_round_878_checks.json)。正式878／累计3663；全外侧类型I插值、无界能源来源和Q/E动力等同未证。接[879](archive_873_893/879/drafts/STATUS.md)核完整自由CAR与偶记录。辅助热谱反例保留，未重复计组。
+
+## 877：连续接收材料的区域分裂与有限容量
+
+[877报告](archive_873_893/research_note_877.md)将成熟split定理接到原中性自由接收Dirac场；带间隔类型I因子内的正常CP近似保全部有限记录及其外侧关联，输入无需有限Schmidt秩。[代码](archive_873_893/877/collared_region_compression.py) · [结果](archive_873_893/877/collared_region_compression_results.json) · [核验](archive_873_893/877/research_round_877_checks.json)。正式877／累计3662；完整混合引力／规范网的分裂及能源来源控制未证，本轮不是原Q/E动力等同。接[878](archive_873_893/878/drafts/STATUS.md)核全物理自由网的区域紧性与原能源域。
+
+## 876：原局部有限过程的共同二阶来源
+
+[876报告](archive_873_893/research_note_876.md)证明875同一局部乘积有限族保自身热准备、有序CAR记录和总阶数二的准备/动力来源，含原Hessian接触。统一图范数与夹权迹收敛补上非对易截断接口。[代码](archive_873_893/876/local_graph_second_source.py) · [结果](archive_873_893/876/local_graph_second_source_results.json) · [核验](archive_873_893/876/research_round_876_checks.json)。正式876／累计3661；原固定图的内部谱近似已接，空间细化与原Q/E等同仍未完成。接[877](archive_873_893/877/drafts/STATUS.md)核连续E的区域结构与共同有限字典。
+
+## 875：原图的局部有限过程与共同一阶来源
+
+[875报告](archive_873_893/research_note_875.md)在原固定图上用节点/链路乘积谱投影保原支集、Gauss与CAR记录；自身热态和同一准备/动力来源的一阶标量响应共同收敛。[代码](archive_873_893/875/local_graph_process_bridge.py) · [结果](archive_873_893/875/local_graph_process_bridge_results.json) · [核验](archive_873_893/875/research_round_875_checks.json)。正式875／累计3660；原Q/E映射及空间细化未完成，接[876](archive_873_893/876/drafts/STATUS.md)核局部投影的图范数与二阶反作用。
+
+
+## 874：原约束历史与实际材料钟的共同来源
+
+[874报告](archive_873_893/research_note_874.md)保原空间约束、费米辛字典和正根Jacobian，在经典形式层恢复873交叉来源；明确有限CAR核同时保非Gaussian准备、有序记录和混合来源。只保lapse不保证完整canonical过程仍二次。[代码](archive_873_893/874/clock_history_source_match.py) · [结果](archive_873_893/874/clock_history_source_match_results.json) · [核验](archive_873_893/874/research_round_874_checks.json)。正式874／累计3659；原连续量子测度与尺度桥未完成，接[875](archive_873_893/875/drafts/STATUS.md)核h依赖的量子约束与根传播。
+
+## 873：实际材料时钟的物质交叉来源
+
+[873报告](archive_873_893/research_note_873.md)用原861时钟根与两份已有接收质量，证明解钟后必需保混合四费米来源；固定几何的纯二次历史不能未经运输就等同实际h过程。[代码](archive_873_893/873/clock_mass_source_bridge.py) · [结果](archive_873_893/873/clock_mass_source_bridge_results.json) · [核验](archive_873_893/873/research_round_873_checks.json)。正式873／累计3658；完整约化量子化与图—连续桥未完成。[截至872联合审计](archive_873_893/873/drafts/共同模型阶段报告_截至872.md)已保存；接[874](archive_873_893/874/drafts/STATUS.md)检验保约束历史的替代及共同来源。
+
+## 872：同一读出作用的四腿总来源与相对均值构造
+
+[872报告](archive_854_872/research_note_872.md)由869作用固定新密度Hessian和Dirac变化，将四类来源共同接到原因果方程；指定λα²ℏ²相对均值在同一局部规范/初值合同内存在，不再另设二阶反馈规则。[代码](archive_854_872/872/read_vertex_source_closure.py) · [结果](archive_854_872/872/read_vertex_source_closure_results.json) · [核验](archive_854_872/872/research_round_872_checks.json)。正式872／累计3657；原连续总和数值、平均几何非零和有限耦合未签收。接[873](archive_873_893/873/drafts/STATUS.md)更新联合审计与原图—连续/尺度接口。
+
+## 871：原非Gaussian接收准备的完整历史权重
+
+[871报告](archive_854_872/research_note_871.md)将870实际接收准备精确分解为四份接收部门准自由输入，在同一作用下保全部来源与记录；有限CAR双历史权重保模式外传播并复现原噪声差。仅保经典条件二次均值不能代替这一联合量子过程。[代码](archive_854_872/871/receiver_history_influence.py) · [结果](archive_854_872/871/receiver_history_influence_results.json) · [核验](archive_854_872/871/research_round_871_checks.json)。正式871／累计3656；原连续四腿总来源仍未求和，接[872](archive_854_872/872/drafts/STATUS.md)。
+
+## 870：相同接收校准与自由二点不固定实际反作用
+
+[870报告](archive_854_872/research_note_870.md)在同一局部关系作用下构造接收准备族：自由二点、平均自由能量和领先联合菜单保持，四点关联却使原物理输出二点在指定耦合二阶不同。完整模式外项在态差中相消，噪声差回接原守恒来源并有863非零证书。[代码](archive_854_872/870/receiver_four_point_backreaction.py) · [结果](archive_854_872/870/receiver_four_point_backreaction_results.json) · [核验](archive_854_872/870/research_round_870_checks.json)。正式870／累计3655；总平均来源及有限耦合未完成，接[871](archive_854_872/871/drafts/STATUS.md)。
+
+## 869：原闭环联合菜单直接写入已有接收材料
+
+[869报告](archive_854_872/research_note_869.md)用785完整形式切片与853已有接收场构造新增局部关系耦合，把863三份完整闭环来源写入实际CAR记录；866全部菜单在背景和领先耦合/涨落阶保持。校准须在微分投影内部，漏补偿的负对照失败。[代码](archive_854_872/869/direct_material_receiver.py) · [结果](archive_854_872/869/direct_material_receiver_results.json) · [核验](archive_854_872/869/research_round_869_checks.json)。正式869／累计3654；未等同868全强度仪器，接[870](archive_854_872/870/drafts/STATUS.md)核实际二阶反作用与总来源。
+
+## 868：同一联合菜单的区域保持实现与反作用差
+
+[868报告](archive_854_872/research_note_868.md)用三份既有线性场读口及有限译码保持866全部背景概率与首阶来源，非选择操作保持原自由物理网的每个局部区域。其精确自由二点反作用及原完整领先来源已计入，与867后态有明确差别。[代码](archive_854_872/868/causal_joint_readout.py) · [结果](archive_854_872/868/causal_joint_readout_results.json) · [核验](archive_854_872/868/research_round_868_checks.json)。正式868／累计3653；局部探针与内部控制/记录仍未实现，接[869](archive_854_872/869/drafts/STATUS.md)。
+
+## 867：原联合菜单进入同一连续正仪器与来源
+
+[867报告](archive_854_872/research_note_867.md)将866全部菜单的背景概率与一阶材料来源接到同一原物理Hadamard表示的有界CP仪器；可求和Weyl域保原形式S，非选择后态平滑，领先反作用及原约束来源由同一菜单决定。[代码](archive_854_872/867/shared_weyl_readout.py) · [结果](archive_854_872/867/shared_weyl_readout_results.json) · [核验](archive_854_872/867/research_round_867_checks.json)。正式867／累计3652；局部探针实施、全阶图匹配及有限bulk耦合仍未完成，接[868](archive_854_872/868/drafts/STATUS.md)。
+
+## 866：有限联合读口保融合、Gauss并计入噪声和反作用
+
+[866报告](archive_854_872/research_note_866.md)在原商群图上构造1368标签的正规CP仪器，每分支保Gauss；有限傅里叶证书精确保单个和融合联合矩，读数乘积须保噪声修正，原电动能来源有限。[代码](archive_854_872/866/joint_loop_instrument.py) · [结果](archive_854_872/866/joint_loop_instrument_results.json) · [核验](archive_854_872/866/research_round_866_checks.json)。正式866／累计3651；材料符号和非零来源已回接，连续量子仪器及原动力学匹配未完成，接[867](archive_854_872/867/drafts/STATUS.md)。
+
+## 865：原图融合约束闭环的联合量子字典
+
+[865报告](archive_854_872/research_note_865.md)证明：分别作Casimir周长规范化却沿用旧联合乘法，会破坏原商群闭环的融合关系；缺陷在原受约束解族上有非零物理响应。正向放大也不是旧有界图代数上的正映射。[代码](archive_854_872/865/relational_loop_fusion_matching.py) · [结果](archive_854_872/865/relational_loop_fusion_matching_results.json) · [核验](archive_854_872/865/research_round_865_checks.json)。正式865／累计3650；有限规范化是声明候选，完整相互作用环及图量子匹配未完成，接[866](archive_854_872/866/drafts/STATUS.md)。
+
+## 864：材料闭环高阶来源进入统一量子乘法域
+
+[864报告](archive_854_872/research_note_864.md)把同一小材料闭环的各阶变化写为有限推前核，证明共同锚点的统一波前界和固定闭锥分布连续性；因此原背景Hadamard核的每个有限阶自由星乘有定义且光滑。二阶来源须保规范生成元变化。[代码](archive_854_872/864/equicausal_relational_loop.py) · [结果](archive_854_872/864/equicausal_relational_loop_results.json) · [核验](archive_854_872/864/research_round_864_checks.json)。正式864／累计3649；相互作用时间序/BV闭性与原图量子匹配未完成，接[865](archive_854_872/865/drafts/STATUS.md)。
+
+## 863：关系闭环进入同一非零物理量子观测
+
+[863报告](archive_854_872/research_note_863.md)在原受约束背景上构造总颜色能量和面上参考不变、闭环却变化的实际解族；完整光滑涂抹来源与显式守恒伴随源给非零CCR配对，故既有物理Hadamard态的线性闭环方差有限且严格正。[代码](archive_854_872/863/physical_relational_loop_bridge.py) · [结果](archive_854_872/863/physical_relational_loop_bridge_results.json) · [核验](archive_854_872/863/research_round_863_checks.json)。正式863／累计3648；完整非线性环、实际装置及图量子匹配仍开放，接[864](archive_854_872/864/drafts/STATUS.md)。
+
+## 862：材料链路与受约束过程的共同运输
+
+[862报告](archive_854_872/research_note_862.md)将原材料路径、完整电动量、Gauss及经典约化流共同连接；原合法商群闭环在纯空间规范轨道上给限定反例：固定嵌入公式不能未经运输就作为所有代表上的物理读数。共同运输路径则保持。[结果](archive_854_872/862/material_graph_gauge_bridge_results.json) · [核验](archive_854_872/862/research_round_862_checks.json)。正式862／累计3647；有限图量子测度/态及动力学仍未匹配，接[863](archive_854_872/863/drafts/STATUS.md)核既有量子分支的关系观测类别。
+
+## 861：共享材料坐标的经典约化与尺度来源
+
+[861报告](archive_854_872/research_note_861.md)在原两导数零费米经典部门完成磁参考的完整动量运输、原引力约束的局部约化与实际时钟Hamiltonian；材料体积及逆体积候选的一阶来源共同拉回。原约束背景恢复时钟动量误差小于9×10⁻¹²；漏动量或钟速率变化会漏来源。[代码](archive_854_872/861/magnetic_reduced_hamiltonian.py) · [结果](archive_854_872/861/magnetic_reduced_hamiltonian_results.json) · [核验](archive_854_872/861/research_round_861_checks.json)。正式861／累计3646；完整高导数和量子约化未完成，接[862](archive_854_872/862/drafts/STATUS.md)核原量子图的共同对象。
+
+## 860：内部基准连接共享参考与接收记录
+
+[860报告](archive_854_872/research_note_860.md)给明确的改作用分支：以旧材料定义一次性探针基准，保非零p作为坐标，用偏差q通信。对足够小非零准备，真实约束背景、局部参考、完整自由物理正态、背景线性共锥与原非零形式接收内容可共同成立；传播必须保基准源端。[结果](archive_854_872/860/compensated_receiver_bridge_results.json) · [核验](archive_854_872/860/research_round_860_checks.json)。一组新增，正式860／累计3645。有限耦合/全非线性共锥及尺度连接未完成；接[861](archive_854_872/861/drafts/STATUS.md)核配置型参考约化与材料胞元。
+
+## 859：共享探针的参考与共锥限制
+
+[859报告](archive_854_872/research_note_859.md)在含已有探针反作用的新经典约束背景上构成局部参考；同时证明活跃非共形读出窗口内，保原作用、探针独立参考与原费米/接收器精确共锥不能同时成立。排除仅限这组三项要求，新量子运输与canonical约化未完成。[联合结果](archive_854_872/859/probe_reference_cone_compatibility_results.json) · [核验](archive_854_872/859/research_round_859_checks.json)。一组新增，正式859／累计3644；接[860](archive_854_872/860/drafts/STATUS.md)核内部基准补偿是否能保参考与通信的共同作用。
+
+## 858：材料体积匹配还须闭合实际时钟
+
+[858报告](archive_854_872/research_note_858.md)给原内部几何控制与材料胞元的条件性约束约化，保留完整Hamiltonian、记录及来源反力；原径向动量族证明，体积匹配正则并不保证旧速度仍是新过程的实际速度。结论限指定经典约束候选，量子约化与Einstein约束未完成。[结果](archive_854_872/858/material_cell_constraint_closure_results.json) · [核验](archive_854_872/858/research_round_858_checks.json)。一组新增，正式858／累计3643；接[859](archive_854_872/859/drafts/STATUS.md)核既有材料能否提供较少速度依赖的参考。
+
+## 857：材料时钟减除的非冗余响应
+
+[857报告](archive_854_872/research_note_857.md)在原在壳背景和实际受约束波上，证明856候选及小范围实际换钟差具有非零四阶频率响应；保持边界的局部一阶场重定义与旧二导数参数不能吸收。结论不排除其他高阶反项的共同匹配，不是完整量子方案不等价。[结果](archive_854_872/857/clock_counterterm_nonredundancy_results.json) · [核验](archive_854_872/857/research_round_857_checks.json)。一组新增，正式857／累计3642；接[858](archive_854_872/858/drafts/STATUS.md)核原裸图过程、材料胞元与完整canonical字典。
+
+## 856：尺度减除必须保完整材料来源
+
+[856报告](archive_854_872/research_note_856.md)把578的逆体积减除接到现有四参考的一份局部协变候选；固定参考的离散值匹配后，原复合参考仍要求额外度规/材料来源。明确配置中漏项会翻转两个来源分量并破坏相应Ward身份。候选及调节字典均列输入，579残余发散和原图—连续极限尚未解决。[结果](archive_854_872/856/relational_subtraction_source_bridge_results.json) · [核验](archive_854_872/856/research_round_856_checks.json)。一组新增，正式856／累计3641；接[857](archive_854_872/857/drafts/STATUS.md)核调节与真实参考变化。
+
+## 855：有限任务匹配与局域结构的区别
+
+[855报告](archive_854_872/research_note_855.md)给满足854任务合同的明确压缩反例：总词截止会在边界制造原本不存在的区域影响。区域乘积闭合能保相同有限系数和局部支集，但需要已建立的张量呈现、有限局域系数分解及有限张量秩输入；原Gauss/连续字典尚未因此完成。[结果](archive_854_872/855/locality_preserving_task_compression_results.json) · [核验](archive_854_872/855/research_round_855_checks.json)。一组新增、累计3640，正式855；接[856](archive_854_872/856/drafts/STATUS.md)核边界载体和局域输入。
+
+## 854：同一过程的有限任务实现
+
+[854报告](archive_854_872/research_note_854.md)从原形式S的共同系数可达空间构造有限模型Q_eff，保声明阶数内全部输入、记录历史、双边来源和过程记忆；来源预算为D=N+K。有限模型自身严格幺正，尚未识别为原图Hamiltonian，也不给原连续理论的有限耦合余项。[结果](archive_854_872/854/finite_task_jet_bridge_results.json) · [核验](archive_854_872/854/research_round_854_checks.json)。一组新增、累计3639，正式854；接[855](archive_854_872/855/drafts/STATUS.md)核局域/规范结构与原图连接。
+
+## 853阶段整理（历史审计）
+
+[记录传递、有限接收与共同来源：截至853的阶段报告](archive_854_872/854/drafts/共同模型阶段报告_截至853.md)已保存，保留其853审计时点；旧阶段稿保留。它给出局部形式共同模型的证据、独立输入和未完成项，不宣称完整统一已结束。该[共同任务候选](archive_854_872/854/drafts/finite_task_bridge_working.md)已在854正式报告中验收；855补局域性边界，856回接尺度来源；857补局部非冗余判据；858补实际过程闭合判据；下一项859。
+
+## 853：同一作用把内容写入有限内部记录
+
+[853报告](archive_819_853/research_note_853.md)以明确新增的接收材料和局部写入耦合，把852探针信号接到同一S产生的三份CAR记录；六耦合混合系数给非零ℏ³内容见证，八种联合输出至少一种可区分内容。接收准备、全部来源和新增圈保留；结论限于局部形式分支。[结果](archive_819_853/853/native_receiver_content_results.json) · [核验](archive_819_853/853/research_round_853_checks.json)，一组新增、累计3638。接[854](archive_854_872/854/drafts/STATUS.md)更新共同模型阶段审计，并回到有限图—连续/跨尺度连接。
+
+## 852：交互后内部探针承载记录内容
+
+[852报告](archive_819_853/research_note_852.md)在显式扩展的同一作用中构造材料窗口与中性探针，把847原来源的内容差传到交互后的三份探针观测；首项为原系数乘−λ³。探针圈、定位来源及新分支反项保留，结论限定局部形式理论。[精确结果](archive_819_853/852/native_outgoing_probe_results.json)及[核验](archive_819_853/852/research_round_852_checks.json)，一组新增、累计3637；接[853](archive_819_853/853/drafts/STATUS.md)核有限输出记录。新模块/准备/参数为输入，有限耦合和自治末读未完成。
+
 ## 阅读层级
 
 - [项目根README](../README.md)：用户指定保留的项目说明与作者寄语。
@@ -7,15 +844,21 @@
 - 各阶段README：该阶段的问题、成果、适用范围和逐轮索引。
 - 各轮报告及编号目录：具体推导、反例、代码、结果和核验材料。
 
-项目根README保留从“写在前面”到作者署名的主体内容，研究编排与引用随当前分期更新。此前及此后的逐轮进展已移入各所属阶段README的历史记录区；[迁移与原文备份](archive_764_/_migration/root_readme_simplification_20261004/README.md)保留逐段来源。后续研究进展继续写入所属目录。
+项目根README保留从“写在前面”到作者署名的主体内容，研究编排与引用随当前分期更新。此前及此后的逐轮进展已移入各所属阶段README的历史记录区；[迁移与原文备份](_migration/root_readme_simplification_20261004/README.md)保留逐段来源。后续研究进展继续写入所属目录。
 
 ## 当前状态
 
-001—806轮共806份正式编号报告，统一采用“阶段根目录放报告、编号目录放配套材料”的格式。231轮以后的15个阶段保留既有划分，末阶段 `archive_764_` 为持续研究目录。已有条件性空间定理、限定反例和联合模型构造；完整统一目标尚未完成。
+正式888、累计3673；下一项[889](archive_873_893/889/drafts/STATUS.md)核动态规范参数下的真实切口激发。872阶段审计、853版和更早论文均保留各自时点；完整目标未完成。
 
-2026-10-05继续研究：[777](archive_764_/research_note_777.md)接通辅助BV与同态自由约化；[778](archive_764_/research_note_778.md)接通混合传播字段的共同规范化；[779](archive_764_/research_note_779.md)给辅助复合插入的共同局部树接触处方，保原物理作用和观测。[780](archive_764_/research_note_780.md)给动态标架、旋量补偿及分次辅助的适配字典；[781](archive_764_/research_note_781.md)进一步算出取向/ghost因子抵消及剩余局部度规因子，核同一复合源接触；[782](archive_764_/research_note_782.md)通过完整域直接规范化实现原N1/N2，接通保首项的一圈共同作用及关系观测；更强跨方案等价另列。[783](archive_764_/research_note_783.md)将同一局部修复逐圈完成，保原一圈来源；范围仍是正则片内形式级数。[784](archive_764_/research_note_784.md)以完整量子切换缺陷构造局部BRST荷候选，明确局部幂零不等于整体荷幂零，并给保区内作用的相对补全判据。[785](archive_764_/research_note_785.md)进一步把原正自由物理态写成局部微分字段，保因果传播，并给完整模型的形式经典规范切片；原相互作用量子匹配未完成。[786](archive_764_/research_note_786.md)将原局部规范方向完整经典BV辅助化，给混合因果逆，并明确物理量子密度不可直接丢弃。[787](archive_764_/research_note_787.md)给保原起点的形式参数相对修复，作用及有限观测菜单可逐圈共同输送；不能直接将形式参数取1。[788](archive_764_/research_note_788.md)给同一原规范内的一圈绝对来源/均值/关系观测字典，保留状态无关局部减除余项；[789](archive_764_/research_note_789.md)在固定自由部分的坐标路径上给共同作用/菜单的形式端点；[790](archive_764_/research_note_790.md)识别原第一次BV/Wick异常，接通共同作用的线性反项与原实际来源；[791](archive_764_/research_note_791.md)接通同一分支的一圈物理来源约化，保原物理反项；[792](archive_764_/research_note_792.md)构造保字段独立性及基本场身份的严格字段BRST时间序族，并共同输送原量子分支；[793](archive_764_/research_note_793.md)给保原物理有限项及源伙伴的形式量子正规形；[794](archive_764_/research_note_794.md)构造保原局部作用的紧支主方程完成，并接通其相对S矩阵及有序乘积同伦；[795](archive_764_/research_note_795.md)进一步给原实分支的实紧支完成及旧切换的共同幺正比较，明确原首阶初值合同；[796](archive_764_/research_note_796.md)接通原固定局部源菜单的正形式态及原W/首阶初值实现；[797](archive_764_/research_note_797.md)接通同一源商的形式CP读出、有序记录及切换协变；[798](archive_764_/research_note_798.md)在有限相容菜单的规范化形式完成中构造原费米记录子代数，保原态及作用；[799](archive_764_/research_note_799.md)将原形式源和记录共同写入受约束的早期Cauchy表示，保同一态及全部作用系数；[800](archive_764_/research_note_800.md)以实零带主方程完成接通原目标族的相互作用时间片表示，原态共同运输，范围限声明的相对作用/Wick闭包；[801](archive_764_/research_note_801.md)以原S接通内部输出记录、旧菜单和完整来源的共同字典，原相关态保留；[802](archive_764_/research_note_802.md)给原完整BFF物理系数及交叉收缩抵消；[803](archive_764_/research_note_803.md)将完整顶点接到原共同Cauchy演化导数和两条原费米波函数；[804](archive_764_/research_note_804.md)给紧响应与有限模式证书；[805](archive_764_/research_note_805.md)接原参考乘子及连续误差；[806](archive_764_/research_note_806.md)联立正准备、旧统计与来源；继续[807](archive_764_/807/drafts/STATUS.md)核原物理解的响应；784相对补全路线保留。[当前联合条件账](archive_764_/_shared/notes/unified_physics_condition_ledger_current.md)记录准确范围。
+[记录与来源的局部量子共同模型：阶段论文工作稿](archive_819_853/851/drafts/记录与来源的局部量子共同模型_阶段论文工作稿.md)已保存于851工作目录。它整理既有成果，尚非全物理统一结项，不新增科学轮次。
 
-[阶段成果总览](archive_764_/阶段成果总览.md) · [跨阶段主题索引](archive_764_/跨阶段主题索引.md) · [当前状态](RESEARCH_STATE.md) · [研究方向](research_direction.md)
+[阶段共同模型审计](archive_819_853/851/drafts/common_model_stage_audit.md)已完成：先总结局部形式共同实现，明确条件性操作和资源边界，再安排加强。该审计记录保其850时点；当前已推进至853，持续目录保持开放。
+
+001—1008轮共1008份正式编号报告，统一采用“阶段根目录放报告、编号目录放配套材料”的格式。231—763原有14个阶段保持；764—1008新增10个主题分期，231—1008合计24个阶段。已有条件性空间定理、限定反例和联合模型构造；完整统一目标尚未完成。
+
+2026-10-05继续研究：[777](archive_764_796/research_note_777.md)接通辅助BV与同态自由约化；[778](archive_764_796/research_note_778.md)接通混合传播字段的共同规范化；[779](archive_764_796/research_note_779.md)给辅助复合插入的共同局部树接触处方，保原物理作用和观测。[780](archive_764_796/research_note_780.md)给动态标架、旋量补偿及分次辅助的适配字典；[781](archive_764_796/research_note_781.md)进一步算出取向/ghost因子抵消及剩余局部度规因子，核同一复合源接触；[782](archive_764_796/research_note_782.md)通过完整域直接规范化实现原N1/N2，接通保首项的一圈共同作用及关系观测；更强跨方案等价另列。[783](archive_764_796/research_note_783.md)将同一局部修复逐圈完成，保原一圈来源；范围仍是正则片内形式级数。[784](archive_764_796/research_note_784.md)以完整量子切换缺陷构造局部BRST荷候选，明确局部幂零不等于整体荷幂零，并给保区内作用的相对补全判据。[785](archive_764_796/research_note_785.md)进一步把原正自由物理态写成局部微分字段，保因果传播，并给完整模型的形式经典规范切片；原相互作用量子匹配未完成。[786](archive_764_796/research_note_786.md)将原局部规范方向完整经典BV辅助化，给混合因果逆，并明确物理量子密度不可直接丢弃。[787](archive_764_796/research_note_787.md)给保原起点的形式参数相对修复，作用及有限观测菜单可逐圈共同输送；不能直接将形式参数取1。[788](archive_764_796/research_note_788.md)给同一原规范内的一圈绝对来源/均值/关系观测字典，保留状态无关局部减除余项；[789](archive_764_796/research_note_789.md)在固定自由部分的坐标路径上给共同作用/菜单的形式端点；[790](archive_764_796/research_note_790.md)识别原第一次BV/Wick异常，接通共同作用的线性反项与原实际来源；[791](archive_764_796/research_note_791.md)接通同一分支的一圈物理来源约化，保原物理反项；[792](archive_764_796/research_note_792.md)构造保字段独立性及基本场身份的严格字段BRST时间序族，并共同输送原量子分支；[793](archive_764_796/research_note_793.md)给保原物理有限项及源伙伴的形式量子正规形；[794](archive_764_796/research_note_794.md)构造保原局部作用的紧支主方程完成，并接通其相对S矩阵及有序乘积同伦；[795](archive_764_796/research_note_795.md)进一步给原实分支的实紧支完成及旧切换的共同幺正比较，明确原首阶初值合同；[796](archive_764_796/research_note_796.md)接通原固定局部源菜单的正形式态及原W/首阶初值实现；[797](archive_797_818/research_note_797.md)接通同一源商的形式CP读出、有序记录及切换协变；[798](archive_797_818/research_note_798.md)在有限相容菜单的规范化形式完成中构造原费米记录子代数，保原态及作用；[799](archive_797_818/research_note_799.md)将原形式源和记录共同写入受约束的早期Cauchy表示，保同一态及全部作用系数；[800](archive_797_818/research_note_800.md)以实零带主方程完成接通原目标族的相互作用时间片表示，原态共同运输，范围限声明的相对作用/Wick闭包；[801](archive_797_818/research_note_801.md)以原S接通内部输出记录、旧菜单和完整来源的共同字典，原相关态保留；[802](archive_797_818/research_note_802.md)给原完整BFF物理系数及交叉收缩抵消；[803](archive_797_818/research_note_803.md)将完整顶点接到原共同Cauchy演化导数和两条原费米波函数；[804](archive_797_818/research_note_804.md)给紧响应与有限模式证书；[805](archive_797_818/research_note_805.md)接原参考乘子及连续误差；[806](archive_797_818/research_note_806.md)联立正准备、旧统计与来源；[807](archive_797_818/research_note_807.md)接真实剪切与瞬时记录系数；[808](archive_797_818/research_note_808.md)得允许紧支过程族的非零联合响应存在性；[809](archive_797_818/research_note_809.md)接同一过程的四结果形式观测；[810](archive_797_818/research_note_810.md)接读后来源/反作用并核拼接缺陷；[811](archive_797_818/research_note_811.md)接平滑时间片共同生成元；[812](archive_797_818/research_note_812.md)接因果事件窗口与完整量子来源；[813](archive_797_818/research_note_813.md)接原自由波包、局部记录及来源；[814](archive_797_818/research_note_814.md)接真实记录变化与共同响应；[815](archive_797_818/research_note_815.md)接原保持的有限秩判据；[816](archive_797_818/research_note_816.md)接原模式外满秩与固定记录限制；[817](archive_797_818/research_note_817.md)接有限偶准备见证和来源；[818](archive_797_818/research_note_818.md)接共同输入、原噪声与固定输出恢复限制；[819](archive_819_853/research_note_819.md)接完整输入差与原曲背景来源；[820](archive_819_853/research_note_820.md)证明固定初始几何的原物质补偿；[821](archive_819_853/research_note_821.md)接原齐次补偿的共同形式准备；[822](archive_819_853/research_note_822.md)补保原参考的物质目标；[823](archive_819_853/research_note_823.md)接有限菜单的实际均值匹配及方差下界；[824](archive_819_853/research_note_824.md)接参考收缩与实际标量力；[825](archive_819_853/research_note_825.md)接原初片来源及参考保持边界；[826](archive_819_853/research_note_826.md)接区域共同均值；[827](archive_819_853/research_note_827.md)与[828](archive_819_853/research_note_828.md)核补偿和扩大输出的恢复边界；[829](archive_819_853/research_note_829.md)接冗余记录与共同来源；继续[851](archive_819_853/851/drafts/STATUS.md)；784相对补全路线保留。[当前联合条件账](_shared/notes/unified_physics_condition_ledger_current.md)记录准确范围。
+
+[阶段成果总览](_shared/notes/阶段成果总览.md) · [跨阶段主题索引](_shared/notes/跨阶段主题索引.md) · [当前状态](RESEARCH_STATE.md) · [研究方向](research_direction.md)
 
 ## 第一大阶段：量子理论重建（001—230）
 
@@ -56,7 +899,16 @@
 |12|653—701|[辅助历史与正性路线检验](archive_653_701/README.md)|
 |13|702—741|[正过程记录与首阶反作用](archive_702_741/README.md)|
 |14|742—763|[关联记录与共同量子背景](archive_742_763/README.md)|
-|15|764起（当前至806）|[共同量子场与局部来源](archive_764_/README.md)|
+|15|764—796|[共同量子态与局部相互作用来源](archive_764_796/README.md)|
+|16|797—818|[内部记录的读写、保持与恢复边界](archive_797_818/README.md)|
+|17|819—853|[组织编码、有限熵与同源内部写入](archive_819_853/README.md)|
+|18|854—872|[有限任务实现、材料参考与闭环读取](archive_854_872/README.md)|
+|19|873—893|[材料时钟、区域组合与连续联合热态](archive_873_893/README.md)|
+|20|894—922|[有限尺度验收与实际共同反作用](archive_894_922/README.md)|
+|21|923—934|[认知联合协议的物理选择力](archive_923_934/README.md)|
+|22|935—955|[自主过程的真实来源与物质—引力接合](archive_935_955/README.md)|
+|23|956—989|[原生电子材料与共同物理接口](archive_956_989/README.md)|
+|24|990—1008|[整体认知操作机制与解释层验收](archive_990_1008/README.md)|
 
 ## 量子理论重建大阶段的两篇综合论文
 
@@ -65,11 +917,11 @@
 
 ## 使用方式
 
-每个archive根目录直接放README和正式research_note_编号.md；该轮代码、结果、核验及草稿统一放在编号目录（如231/）中。研究旧稿与科学证据保留，迁移不新增科学轮次。[当前目录复算](archive_764_/_migration/README.md)直接读取各阶段文件，已取消对ZIP和重复导航快照的依赖。
+每个archive根目录直接放README和正式research_note_编号.md；该轮代码、结果、核验及草稿统一放在编号目录（如231/）中。研究旧稿与科学证据保留，迁移不新增科学轮次。[当前目录复算](_migration/README.md)直接读取各阶段文件，已取消对ZIP和重复导航快照的依赖。
 
 正式报告、科学代码、结果及当前迁移清单纳入Git。README、研究方向、研究状态只在正式位置维护一份，修改记录交给Git；重复导航备份、迁移ZIP及旧版大型清单不再作为研究依赖。外部原始PDF按来源收据取得，详见[版本管理说明](../scripts/GIT_STORAGE.md)。
 
-按用户指示，在 [archive_764_](archive_764_/README.md) 持续推进当前目标；最新完成806，后续从[807入口](archive_764_/807/drafts/STATUS.md)接续。不改写应用目标或设置定时任务。
+按用户指示，在 [archive_764_](_shared/notes/research_progress_764_1008.md) 持续推进当前目标；最新完成853，后续从[854入口](archive_854_872/854/drafts/STATUS.md)接续。不改写应用目标或设置定时任务。
 
 ## 原项目根README迁入的历史记录
 
@@ -84,7 +936,7 @@
 
 <!-- 原项目README字符区间 28:210 -->
 
-**001—775轮已统一为报告在阶段根目录、材料按轮次归档。** [阶段目录与成果](README.md)。后续在 [archive_764_](archive_764_/README.md) 从776入口继续；应用目标仍保留暂停状态。下方保留历史进展。
+**001—775轮已统一为报告在阶段根目录、材料按轮次归档。** [阶段目录与成果](README.md)。后续在 [archive_764_](_shared/notes/research_progress_764_1008.md) 从776入口继续；应用目标仍保留暂停状态。下方保留历史进展。
 
 <!-- 原项目README字符区间 164534:164597 -->
 
@@ -99,3 +951,79 @@
 **最新范围：集中三维空间（2026-09-24）。** 用户明确要求粒子猜想只记下来，集中力量论证三维空间。粒子／标准模型与组织分类暂不展开；组织和交流机制只作为空间来源的工具。后继每轮须明确补上位置身份、实际位移、可测邻域、方向比较中的哪条前提；仅增加组织功能、稀疏图或内部三个参数不算三维进展。
 
 </details>
+
+811[工作稿](archive_797_818/811/drafts/research_note_811_working.md)回查原内部记录与自主演化接口：原TT—sterile主部的瞬时三粒子核有高频域障碍诊断；连续原受约束表示的提升尚缺。[校准](archive_797_818/811/sharp_time_sector_probe_results.json)已保存，不增正式轮次或新公理。下一项优先核已有共同时间片的两时刻连接。
+
+812[工作稿](archive_797_818/812/drafts/research_note_812_working.md)复用651的类时s梯度，排除将固定其余参考标签、只增加h的坐标线认作因果主体轨迹；原h梯度给无需新物种的局部类时中心候选。已用753非零颜色背景[复算](archive_797_818/812/material_event_thread_probe_results.json)；关系窗口的完整量子连接待核，正式仍811。
+
+815[工作稿](archive_797_818/815/drafts/research_note_815_working.md)把记录均方变化接到同一有序CAR核，有限原质量校准表明部门均值乘积项不可普遍删除；当时原受约束BFF的保持判据待接；现已并入815正式报告。
+
+816[工作稿](archive_797_818/816/drafts/research_note_816_working.md)证明有限CAR保持必须保模式外耦合，并用原64维矩阵计算剪切外出Gram；辅助诊断满秩；当时待补的原动态提升已在816正式报告中完成。
+
+818[工作稿](archive_797_818/818/drafts/research_note_818_working.md)回用391/801，核原中性系数的逻辑噪声Gram、有序二阶耗散和环境交叉项；[校准](archive_797_818/818/logical_noise_gram_results.json)通过。当时待核的共同输入与原噪声连接已在818正式报告中完成。
+
+819[工作稿](archive_819_853/819/drafts/research_note_819_working.md)回查593/731/763，核同一逻辑输入的局部来源差；[原64维包校准](archive_819_853/819/logical_input_source_results.json)通过。原曲背景提升及几何/其他物质补偿的范围区分已见819正式报告，受限补偿继续820。
+
+821[工作稿](archive_819_853/821/drafts/research_note_821_working.md)核一份共同受控位移如何给输入依赖的首阶物质均值，并同步改变逻辑相干；[校准](archive_819_853/821/controlled_shift_probe_results.json)通过。原齐次补偿的物理因果范围及共同形式准备已接821正式报告；绝对均值匹配继续822。
+
+[826](archive_819_853/research_note_826.md)将局部物理齐次差通过紧因果足迹接到原全局物理测试；一份共同形式准备可匹配许可工作区域内固定字段家族的全部首圈均值。原处方与来源保持；全初片、高阶区域态及自治装置未签收。接[827](archive_819_853/827/drafts/STATUS.md)。
+
+[827](archive_819_853/research_note_827.md)以同一有限迹准备检出原模式外响应的正分量；821/826纯玻色均值补偿只能改变内部CAR分量，因此保全部交叉项后联合逻辑噪声仍有严格正下界。同一裸M₂的形式二阶CP逆受阻；扩大输出和额外费米控制未排除。接[828](archive_819_853/828/drafts/STATUS.md)。
+
+[828](archive_819_853/research_note_828.md)证明忠实混合扩展因子的零阶译码唯一；原纯费米输出相对一阶通道为零，因此扩大到817迹准备的有限T仍不能恢复到二阶。纯冗余、其他输出及重新编码未排除；下一步同时核冗余码与共同二次来源。
+
+[829](archive_819_853/research_note_829.md)在十个原模式中把成熟五qubit/Majorana码接到完整BFF：次数≤2错误可纠正，次数≤4压缩同时使全部二次来源及其对逻辑盲。一份共同来源、兼容初值和公共区域均值准备因此可与二阶形式记录恢复相容。低熵资源、自主编码/译码、有限耦合及跨尺度未完成。
+
+830[工作稿](archive_819_853/830/drafts/research_note_830_working.md)已核：同二点Gaussian态不是829码；固定满混合其余因子的闭合编码至少要把9bit熵移入内部辅助，并给九CAR辅助的保宇称等距。[校准](archive_819_853/830/encoding_resource_probe_results.json)通过；尚未由原作用生成控制或补齐准备来源历史，不新增正式轮次。
+
+[830](archive_819_853/research_note_830.md)把829共同来源码接到原自治准备检验：完整固定图Hamiltonian在码上前两阶矩逻辑盲，而746旧等平均能量输入的二阶矩严格不同，故该精确守恒编码合同失败。保原全部相互作用；其他准备、近似/关系性实现及原非平稳连续模型不被排除。
+
+[831](archive_819_853/research_note_831.md)复用原紧预解，证明固定准备的全部守恒幺正所给载体通道构成紧集；结合830，旧输入到829码存在严格正、尚未求值的误差间隔，等待更久也不能趋零。完整相干谱Gram决定守恒幺正存在，仍不等于原H能执行；资源、图或输入改变后的极限未被排除。
+
+832[工作稿](archive_819_853/832/drafts/research_note_832_working.md)将内部条件成功接到完整量子操作：精确保未知相干要求成功权重与输入无关，831固定准备间隔约束其成功率；失败分支保留。[校准](archive_819_853/832/conditional_record_probe_results.json)通过，原仪器和全部来源历史待接，正式仍为831，累计3610。
+
+[832](archive_819_853/research_note_832.md)将原严格正标量读口接到条件编码及来源：固定旧输入的有限末端环境软筛选不能给精确829码，原注能与体积来源增量同时保留。全交互历史、有核仪器及不同初态未排除；结束该末端分支的精度优化，转检组织化初态的实际联合演化。
+
+833[工作稿](archive_819_853/833/drafts/research_note_833_working.md)开始核组织化态的原实际演化：共同次数计数将来源均值、来源对和原标量报告的首个允许差异分别推至4、2、6阶；图有界来源有真实余项，理想恢复有t⁴不保真度界。[校准](archive_819_853/833/joint_short_time_filtration_results.json)通过；更强字段力的域和自主译码来源待核。当时正式止于832、累计3612；现已并入833正式报告。
+
+[833](archive_819_853/research_note_833.md)在组织化初态与原完整固定图动力学下，给来源均值、来源对和标量报告的真实4、2、6阶差异界，以及理想恢复的四阶不保真度界。新反例显示译码寄存器可在二阶暴露逻辑内容；一次标签复制只把二次读口移到四次联合读口。初态组织是新增输入，自主译码仍待构造。
+
+[834](archive_819_853/research_note_834.md)用十份已有码连同全部综合征一起组织，并保内部宇称标签，给101CAR的端点来源证书；原二次动力学的宇称扭转过滤使标签的首次允许逻辑差延后到六阶。新增91个纯模式是资源条件，绝对来源与原自治实现尚未完成。
+
+835[工作稿](archive_819_853/835/drafts/research_note_835_working.md)把834端点接回原物质：若其余材料完全不变，组织扩展可有同平均H、不同H²，具体正常Gauss准备给严格守恒禁阻；待用空辅助也被原Majorana项在二阶扰动。[原系数校准](archive_819_853/835/endpoint_energy_budget_results.json)通过，带环境补偿的合同继续核。当时正式止于834、累计3615；现已并入835正式报告。
+
+[835](archive_819_853/research_note_835.md)对组织初态重算原全H：冻结其余材料的扩展端点平均能量相同、H²不同，不能守恒实现；允许原玻色纯态改变时，在声明准备范围内可同时补齐前两能源矩。后者不保证完整谱、其他来源或自治可达，下一步核实际读数是否也可保持。
+
+[836](archive_819_853/research_note_836.md)把原正动能接到835补偿：对连通支撑内严格正、无相位的初始波包，全部配置统计和平均能源相同会唯一固定原纯态，混合态也不能绕开。因此835纯材料补偿必须改变至少一个配置读数；有限菜单或其他材料变化未被排除。
+
+837[工作稿](archive_819_853/837/drafts/research_note_837_working.md)回接记录熵与几何来源：满秩有偏组织参考可有全部≤4次来源导数为零、熵一阶导数非零；正确模算符含六次逻辑方向。保固定Gaussian参考与相对熵余项是一个相容有限因子分支。[校准](archive_819_853/837/organized_reference_modular_audit_results.json)通过，当时实际空间区域映射待补、正式止于836；现见837正式报告的局部偶观测与相对熵下界，完整模流仍待核。
+
+[837](archive_819_853/research_note_837.md)把829组织态差异嵌入原自由场区域的偶测量，给严格正的区域相对熵下界，而全部≤4次来源矩仍共同。任意两块边缘在共同余部准备中盲，三块联合已可读；有偏组织参考的有限模方向不能由低阶来源代替。原区域模流及全相互作用/面积映射未完成。
+
+[838](archive_819_853/research_note_838.md)将组织准备接回730原纯参考：独立余部合同下，十模式全二点偏移的自对偶HS范数平方必在5—10之间，并有范数1的偶双线性读口期望改变1。该读口可能跨区，不直接等于局部应力。共同逻辑来源仍成立；绝对参考偏移须另记账。
+
+839[工作稿](archive_819_853/839/drafts/research_note_839_working.md)给固定Gaussian参考的有限相对熵分账：非Gaussian记录熵亏与共同二点偏移相加，原参考可含跨块关联和配对。[完整Fock校准](archive_819_853/839/gaussian_reference_entropy_split_results.json)通过；当时原区域、支持和极限待补；现已接入839正式报告的扩展值区域身份，有限性继续核。
+
+[839](archive_819_853/research_note_839.md)把有限熵分账接到同一原自由区域偶CAR代数：正常组织态相对原参考的相对熵，等于有限非Gaussian记录项加共同Gaussian偏移b_B；允许无穷值。整族有限性归结为b_B有限，内容之间则有精确有限相对熵。没有把该式当成面积响应。
+
+[840](archive_819_853/research_note_840.md)给839原区域有限性的充要判据：编码模式须具有有限的一粒子绝对模谱一阶矩。由有限重置条件熵界、模能量双边界和同一压缩极限得到；原既选光滑紧支模式是否满足仍须核，真实动力能源不能直接代替模谱。
+
+[841](archive_819_853/research_note_841.md)把原区域、编码模式及组织准备沿730同一辅助传播共同输送；精确反向子空间保相对熵，过去包含区域给熵上界及模域充分条件。原平坦T³过去的实际局部模域仍待核，未更换参考或把全局无穷当局部失败。
+
+[842](archive_819_853/research_note_842.md)明确构造有限β替代参考：原辅助过去热态沿同一U输送，与原组织码共同具有Hadamard性质、有限全局预算和有限区域相对熵。原纯参考局部域仍未决；热源变化须接原反作用，β为状态输入，未假定内部热浴或热化。
+
+[843](archive_819_853/research_note_843.md)将有限β参考、原组织记录、有限区域熵与741/754首阶联合反作用接成同一变背景态族。固定β、ε时不同内容共用来源与几何修正，仍有联合测量区别；温度变化必须改全部实际来源。精确反馈、原相互作用形式态的热映射及自治操作未完成。
+
+[844](archive_819_853/research_note_844.md)将真实热组织态接入原有限菜单的正形式相互作用源商及固定记录仪器。保原作用、有限项及非Gaussian关联；Wick换序与物理换态分开，来源同时保组织偏移、热差及其他量子部门。自由区域有限熵没有提升为相互作用数值熵。
+
+[845](archive_819_853/research_note_845.md)给固定共同准备下原未正规化来源的内容差ℏ³下界；首差只需原经典六费米核，原码选定内容轴缩为80个方向。它不等于原响应已非零，不适用于除ℏ正规化的记录，也不把ℏ阶当时间阶。
+
+[846](archive_819_853/research_note_846.md)用原受约束因果逆构造六腿核：源端投影处理对偶商，五层线性求解保Dirac回馈、全部来源和切换导数；80方向可逐个六生成元提取。原连续总投影非零性尚未计算，有限校准不代替实际引力响应。
+
+[847](archive_819_853/research_note_847.md)将组织内容接到原三份实际来源：平滑短窗和局域波包给三阶累积量非零ℏ³系数，领先单源／双源相同。保原质量、有限频率及有限自由区域熵；原单点平均几何及自主装置未完成。
+
+[848](archive_819_853/research_note_848.md)把同一内容差接到原联合玻色字段三阶统计：相互作用后的紧支方程测试，其领先纯费米项是847来源的负值。原投影、混合字段与初值保持；纯度规和单点均值仍未签收。
+
+[849](archive_819_853/research_note_849.md)明确紧支几何消元的原传播／混合规范判据；有限普通零矩不足以抹掉带质量尾部。原横向来源可保信号，但未解原补偿。该紧支策略不是一般几何读口前提，后续直接取原二费米响应。
+
+[850](archive_819_853/research_note_850.md)给一般原关系几何的二费米响应—80词三次型判据，保自由涨落及跨块核；原响应像仍待算。按用户阶段建议，纯几何读取后置，先审计同一模型的共同实现与条件性操作／资源。

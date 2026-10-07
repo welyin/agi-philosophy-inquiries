@@ -1,0 +1,109 @@
+{
+  "round": 957,
+  "date": "2026-10-07",
+  "all_scientific_checks_passed": true,
+  "actual_955_budget": {
+    "total_H_rms_upper": 13.247559982583699,
+    "positive_kinetic_plus_field_rms_upper": 53.03517217797983,
+    "same_saved_field_energy_upper": 26.328120991316922,
+    "term_rms_upper": {
+      "internal_h": 3.141592653589793,
+      "source_kinetic": 53.03517217797983,
+      "receiver_kinetic": 53.03517217797983,
+      "field_H": 53.03517217797983,
+      "source_field_interaction": 0.7727423588128913,
+      "receiver_field_interaction": 0.7727423588128913,
+      "soft_Newton": 10.000000000000316
+    },
+    "term_integrated_action_upper": {
+      "internal_h": 94.24777960769379,
+      "source_kinetic": 1591.055165339395,
+      "receiver_kinetic": 1591.055165339395,
+      "field_H": 1591.055165339395,
+      "source_field_interaction": 23.18227076438674,
+      "receiver_field_interaction": 23.18227076438674,
+      "soft_Newton": 300.0000000000095
+    },
+    "sum_integrated_action_upper": 5213.7778171546615
+  },
+  "actual_956_budget": {
+    "hopping_operator_norm": 0.2,
+    "coulomb_operator_norm": 1.0,
+    "duration": 39.269908169872416,
+    "all_state_integrated_action_upper": 47.1238898038469,
+    "all_six_dimensional_postmeasurement_states_included": true
+  },
+  "separating_example": {
+    "omega": 1.0,
+    "g": 0.2,
+    "positive_energy_coefficient": 0.8,
+    "full_interaction_operator_norm": "infinite",
+    "fixed_second_moment_rows": [
+      {
+        "n": 8,
+        "time": 0.9817477042468103,
+        "unrestricted_trace_distance": 1.0,
+        "second_moment_budget": 4.0,
+        "tail_probability": 0.0625,
+        "task_trace_distance": 0.34798527267687634,
+        "task_trace_distance_upper": 0.39269908169872414,
+        "first_moment_only_interaction_rms": 0.5656854249492381
+      },
+      {
+        "n": 32,
+        "time": 0.2454369260617026,
+        "unrestricted_trace_distance": 1.0,
+        "second_moment_budget": 4.0,
+        "tail_probability": 0.00390625,
+        "task_trace_distance": 0.08830198871451027,
+        "task_trace_distance_upper": 0.09817477042468103,
+        "first_moment_only_interaction_rms": 1.1313708498984762
+      },
+      {
+        "n": 128,
+        "time": 0.06135923151542565,
+        "unrestricted_trace_distance": 1.0,
+        "second_moment_budget": 4.0,
+        "tail_probability": 0.000244140625,
+        "task_trace_distance": 0.022095738171765716,
+        "task_trace_distance_upper": 0.02454369260617026,
+        "first_moment_only_interaction_rms": 2.2627416997969525
+      },
+      {
+        "n": 512,
+        "time": 0.015339807878856412,
+        "unrestricted_trace_distance": 1.0,
+        "second_moment_budget": 4.0,
+        "tail_probability": 1.52587890625e-05,
+        "task_trace_distance": 0.005524250654555453,
+        "task_trace_distance_upper": 0.006135923151542565,
+        "first_moment_only_interaction_rms": 4.525483399593905
+      }
+    ],
+    "entangled_reference_minimum_bound_margin": 8.328103114681878e-08,
+    "instrument_contract": "spin-only instruments preserve oscillator N moments"
+  },
+  "scope": {
+    "A1_D_is_declared_revision_not_old_A1_proved": true,
+    "all_955_H_terms_controlled_during_saved_free_run": true,
+    "arbitrary_955_terminal_instrument_moment_closure_certified": false,
+    "finite_956_full_material_strong_budget_preserved": true,
+    "Duhamel_controls_bounded_tasks_not_all_unbounded_sources": true,
+    "old_propagation_or_dimension_theorems_automatically_inherited": false,
+    "complete_native_parent_model_certified": false,
+    "full_goal_completed": false
+  },
+  "references": [
+    "https://arxiv.org/abs/1712.10267",
+    "https://arxiv.org/abs/1812.07447",
+    "https://doi.org/10.1007/s00220-025-05282-w"
+  ],
+  "source_hashes": {
+    "research_cognition_physics\\archive_764_\\957\\task_domain_budget.py": "d411d157a82fe4ebaabc73ec92ff79fd3bef088b220d07f8fb0b99bff44284d1",
+    "research_cognition_physics\\archive_764_\\955\\joint_effective_window_results.json": "b38fac8a34e71cfed1cc4a5717077e367524a6ac9e5150d6e2c4b6172b244a57",
+    "research_cognition_physics\\archive_764_\\946\\portal_common_process_results.json": "a92773c58d49f2292a2c8e500c3fe3a9fcd5691bc7ef1ed25a2b6dd71fdf81bd",
+    "research_cognition_physics\\archive_764_\\956\\native_material_interface.py": "2ab03c573de42d54c28c65804766e7840331a8f028a5059d6129baf57f5bc0b8",
+    "research_cognition_physics\\archive_764_\\956\\native_material_interface_results.json": "4ec63d69c03d2022ff7e9da0e39da22f69e5da39131bd7b866e3264734056615",
+    "research_cognition_physics\\archive_764_\\935\\drafts\\unified_operation_hypotheses_v0_1.md": "b6fcc2af9917ba8fee3b3c295aee1efdc2c2c36b2fcee2c0e0717146f78e10b7"
+  }
+}

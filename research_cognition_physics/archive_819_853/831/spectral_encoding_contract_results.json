@@ -1,0 +1,52 @@
+{
+  "round": 831,
+  "all_checks_passed": true,
+  "fresh_test_groups": 1,
+  "spectral_necessity_counterexamples": {
+    "equal_first_three_energy_moments": true,
+    "fourth_moment_difference": 3.0,
+    "spectral_Gram_gap": 0.7499999999999999,
+    "basis_only_probability_test_gap": 0.0,
+    "coherent_spectral_Gram_gap": 0.4999999999999999,
+    "both_naive_sufficiency_tests_correctly_rejected": true
+  },
+  "spectral_sufficiency_and_free_evolution": {
+    "matched_Gram_residual": 2.7862458142946467e-16,
+    "reconstructed_unitary_encoding_error": 6.488574897131485e-16,
+    "spectral_unitary_exists_does_not_imply_free_time_realization": true,
+    "idle_flag_free_evolution_overlap": 0.0,
+    "idle_flag_obstruction_analytic_for_all_times": true,
+    "idle_flag_example_is_not_original_material": true
+  },
+  "compact_orbit_tail_certificate": {
+    "rows": [
+      {
+        "spectral_blocks": 2,
+        "uniform_isometry_tail": 0.49999999982537696,
+        "output_tail": 0.4999999998253771,
+        "channel_continuity_factor_bound": 0.9999999996507539
+      },
+      {
+        "spectral_blocks": 4,
+        "uniform_isometry_tail": 0.24999999956344254,
+        "output_tail": 0.2499999995634426,
+        "channel_continuity_factor_bound": 0.4999999991268851
+      },
+      {
+        "spectral_blocks": 8,
+        "uniform_isometry_tail": 0.06249999814463078,
+        "output_tail": 0.06249999814463079,
+        "channel_continuity_factor_bound": 0.12499999628926156
+      },
+      {
+        "spectral_blocks": 16,
+        "uniform_isometry_tail": 0.003906220198018669,
+        "output_tail": 0.003906220198018669,
+        "channel_continuity_factor_bound": 0.007812440396037338
+      }
+    ],
+    "weights_are_declared_diagnostic_not_original_spectrum": true,
+    "original_encoding_error_gap_not_numerically_computed": true
+  },
+  "scope": "Spectral Gram equality is necessary and sufficient for a commuting unitary between specified pure input/output isometries when H has finite-multiplicity pure point spectrum. It is stronger than finitely many moments and weaker than free-H reachability. Compactness applied analytically to the original 598/623 model and 830 input gives a strictly positive fixed-preparation encoding error gap; its numerical value and any bound uniform in resource/model changes are not obtained."
+}

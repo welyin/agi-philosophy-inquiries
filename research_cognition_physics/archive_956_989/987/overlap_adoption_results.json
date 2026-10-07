@@ -1,0 +1,164 @@
+{
+  "date": "2026-10-07",
+  "kind": "overlap_adoption_audit",
+  "formal_reports": 986,
+  "cumulative_numbered_test_groups": 3771,
+  "new_numbered_scientific_groups": 0,
+  "all_audit_calculations_passed": true,
+  "common_record": {
+    "state_trace_distance_upper": {
+      "exact": "860567/500000000",
+      "decimal": 0.001721134
+    },
+    "bounded_effect_probability_difference_upper": {
+      "exact": "860567/500000000",
+      "decimal": 0.001721134
+    },
+    "two_input_contrast_difference_upper": {
+      "exact": "860567/250000000",
+      "decimal": 0.003442268
+    },
+    "inherited_isometry_bounds_not_added_as_full_physical_errors": true,
+    "common_preparation_and_read_map_required": true
+  },
+  "conditional_profile": {
+    "input": "u(X_z)=cos(k X_z); centered COM Gaussian",
+    "profile_is_additional_diagnostic_input": true,
+    "full_profile_was_not_specified_in_986": true,
+    "sigma_COM": 1000.0,
+    "k": 0.02,
+    "k_sigma": 20.0,
+    "mean_exact": "exp(-200)",
+    "mean_decimal": "1.383896526736737530648681456979084685403047582339477209393925353112436E-87",
+    "second_exact": "(1+exp(-800))/2",
+    "exp_minus_800": "3.667874584177687213455495654260798215469634226612640705069151310903542E-348",
+    "second_float": 0.5,
+    "squared_difference_from_one_float": 1.5,
+    "intrinsic_body_size_not_identified_with_COM_spread": true,
+    "source_mean_zero_hides_second_moment_difference": true,
+    "linear_source_second_moment_by_lapse": [
+      {
+        "lapse": 0.99997513427056,
+        "linear_vertex_force_second_moment_constant": [
+          1.2565757811225655e-29,
+          1.2565749722532242e-29
+        ],
+        "linear_vertex_force_second_moment_profiled": [
+          6.282878905612827e-30,
+          6.282874861266121e-30
+        ],
+        "absolute_difference": [
+          6.282878905612827e-30,
+          6.282874861266121e-30
+        ],
+        "relative_difference": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "lapse": 0.9999502685411199,
+        "linear_vertex_force_second_moment_constant": [
+          1.2565132889988304e-29,
+          1.2565124801697159e-29
+        ],
+        "linear_vertex_force_second_moment_profiled": [
+          6.282566444994152e-30,
+          6.2825624008485795e-30
+        ],
+        "absolute_difference": [
+          6.282566444994152e-30,
+          6.2825624008485795e-30
+        ],
+        "relative_difference": [
+          0.5,
+          0.5
+        ]
+      }
+    ],
+    "independent_quadrature": [
+      {
+        "k_sigma": 0.25,
+        "values": [
+          0.9692332344763441,
+          0.9412484512922978,
+          0.0027819823396095377
+        ],
+        "max_absolute_error": 1.1102230246251565e-16
+      },
+      {
+        "k_sigma": 1.0,
+        "values": [
+          0.6065306597126334,
+          0.5676676416183064,
+          0.3546063221930395
+        ],
+        "max_absolute_error": 5.551115123125783e-17
+      },
+      {
+        "k_sigma": 3.0,
+        "values": [
+          0.011108996538242294,
+          0.5000000076149899,
+          1.4777820145385054
+        ],
+        "max_absolute_error": 2.220446049250313e-16
+      },
+      {
+        "k_sigma": 20.0,
+        "values": [
+          -1.7101595205064324e-17,
+          0.5,
+          1.5
+        ],
+        "max_absolute_error": 1.7101595205064324e-17
+      }
+    ],
+    "tiny_mean_certified_by_formula_not_floating_quadrature": true
+  },
+  "spectator_comparison": {
+    "position_kinetic_energy_included": false,
+    "uniform_in_bounded_real_profile_abs_le_one": true,
+    "state_to_original_upper": {
+      "exact": "67/500000000",
+      "decimal": 1.34e-07
+    },
+    "constant_vs_profiled_state_upper": {
+      "exact": "67/250000000",
+      "decimal": 2.68e-07
+    },
+    "proves_join_with_985_motion": false
+  },
+  "established_EFT": {
+    "reference": "https://arxiv.org/html/hep-th/0409156v2",
+    "adopted": "Eq.(51) binding energy belongs in long-wave lapse coupling",
+    "full_binary_k_r": [
+      199989999.74998748,
+      99979997.9995999
+    ],
+    "binary_long_wave_formula_directly_applicable_to_986_mode": false,
+    "internal_noncommuting_material_matching_automatically_done": false
+  },
+  "decision": {
+    "old_record_overlap_certified": true,
+    "constant_spatial_source_transfer_certified": false,
+    "actual_finite_record_failure_demonstrated": false,
+    "all_goals_counterexample": false,
+    "full_U1_completed": false,
+    "full_goal_completed": false,
+    "UV_completion_required": false,
+    "optimize_this_candidate_next": false
+  },
+  "source_hashes": {
+    "research_cognition_physics\\archive_764_\\987\\overlap_adoption.py": "4de7bbaeec5104d2742451c3fce83c3b777d8c973319d7b075c1b190c48b4a71",
+    "research_cognition_physics\\archive_764_\\987\\drafts\\overlap_decision.md": "777494cd16410e11e7f87062724c96a8c46d863d3ba0f72c7d03e39a4c687f3b",
+    "research_cognition_physics\\archive_764_\\978\\moving_complete_source_results.json": "6e448f602b6c2926923e930672e54db666d0c54e36cc73ba5d4244c192226893",
+    "research_cognition_physics\\archive_764_\\985\\two_active_sources_results.json": "186865e40f977d17d2bba4421e17a320543461f0330b4243e0d1df5d6efe4b9e",
+    "research_cognition_physics\\archive_764_\\986\\metric_dipole_bridge_results.json": "1e00763c809cc7f21270ec1b1c69985ea9707fd824908667931df750641cc388",
+    "research_cognition_physics\\archive_764_\\research_note_953.md": "015c30c0525ff5e12fe94cad13e65055a8cb2d4478acb831c20d5da941b25919",
+    "research_cognition_physics\\archive_764_\\research_note_985.md": "bd9fecac72cd75cc7f5d27e64f39a9a6bcd046ef557447d691e6ac826abdbc4a",
+    "research_cognition_physics\\archive_764_\\research_note_986.md": "03f91f3d585cf7fec84ca1430914a567788bed36d9b1565d281a56a2b29a66fc",
+    "research_cognition_physics\\archive_764_\\987\\drafts\\STATUS.md": "81eab25e97fe93f5873d5144ff6a983c3cf0a3699493a51f79e0609b509d7d3c",
+    "research_cognition_physics\\archive_764_\\981\\drafts\\common_parent_contract_v1.md": "babe46677102396464175ebd876703be6b37b2e08a81fa5fd0a8ecc3bfef74ee"
+  }
+}

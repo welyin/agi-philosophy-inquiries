@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-06",
+  "status": "implementation_failure",
+  "source_sha256": "45d517bbc8df67a722c4b8966b3310e840c8b3faf9380fb4c8112a2e7c9ca124",
+  "error": "norm helper applied abs() to a list after computation; TypeError before result acceptance",
+  "physical_conclusion": false,
+  "repair": "convert norm helper input with np.asarray; retain all scientific assertions"
+}

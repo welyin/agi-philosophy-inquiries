@@ -1,0 +1,100 @@
+{
+  "round": 961,
+  "date": "2026-10-07",
+  "all_scientific_checks_passed": true,
+  "kind": "mechanism map with a finite falsification screen, not a new physical model",
+  "frozen_transfer_cases": [
+    {
+      "name": "base",
+      "active_links": 2,
+      "exchange_rate": 0.2,
+      "clock_angular_frequency": 1.0,
+      "local_gap": 4.0,
+      "echo_parameter_time": 31.41592653589793,
+      "echo_clock_ticks": 5.0,
+      "single_link_clock_ticks": 1.25,
+      "gap_to_clock_ratio": 4.0,
+      "all_unknown_payload_echo_isometry_error": 8.976972625750267e-16
+    },
+    {
+      "name": "all_rates_times_0p4",
+      "active_links": 2,
+      "exchange_rate": 0.08,
+      "clock_angular_frequency": 0.4,
+      "local_gap": 1.6,
+      "echo_parameter_time": 78.53981633974483,
+      "echo_clock_ticks": 5.000000000000001,
+      "single_link_clock_ticks": 1.25,
+      "gap_to_clock_ratio": 4.0,
+      "all_unknown_payload_echo_isometry_error": 8.976972625750267e-16
+    },
+    {
+      "name": "more_relays_same_local_rates",
+      "active_links": 4,
+      "exchange_rate": 0.2,
+      "clock_angular_frequency": 1.0,
+      "local_gap": 4.0,
+      "echo_parameter_time": 62.83185307179586,
+      "echo_clock_ticks": 10.0,
+      "single_link_clock_ticks": 1.25,
+      "gap_to_clock_ratio": 4.0,
+      "all_unknown_payload_echo_isometry_error": 1.7859010501456725e-15
+    },
+    {
+      "name": "same_relays_slower_transfer",
+      "active_links": 2,
+      "exchange_rate": 0.1,
+      "clock_angular_frequency": 1.0,
+      "local_gap": 4.0,
+      "echo_parameter_time": 62.83185307179586,
+      "echo_clock_ticks": 10.0,
+      "single_link_clock_ticks": 2.5,
+      "gap_to_clock_ratio": 4.0,
+      "all_unknown_payload_echo_isometry_error": 8.976972625750267e-16
+    },
+    {
+      "name": "refinement_with_faster_transfer",
+      "active_links": 4,
+      "exchange_rate": 0.4,
+      "clock_angular_frequency": 1.0,
+      "local_gap": 4.0,
+      "echo_parameter_time": 31.41592653589793,
+      "echo_clock_ticks": 5.0,
+      "single_link_clock_ticks": 0.625,
+      "gap_to_clock_ratio": 4.0,
+      "all_unknown_payload_echo_isometry_error": 1.7859010501456725e-15
+    }
+  ],
+  "decisions": {
+    "common_rate_rescaling_is_not_observable_expansion": true,
+    "more_nodes_alone_do_not_imply_observable_expansion": true,
+    "equal_echo_can_hide_different_local_transfer_mechanisms": true,
+    "clock_calibrated_delay_and_local_material_ratio_both_required": true
+  },
+  "internal_relation_source_example": {
+    "total_current_balance_error": 0.0,
+    "subsystem_current_norms": [
+      0.12,
+      0.27999999999999997,
+      0.4
+    ],
+    "new_gravity_or_cosmology_claim": false
+  },
+  "scope": {
+    "pulse_schedule_is_given": true,
+    "clock_frequency_is_given": true,
+    "no_autonomous_growth_process_certified": true,
+    "no_redshift_or_3D_metric_or_Friedmann_equation_derived": true,
+    "concept_map_is_not_a_mathematical_proof": true,
+    "source_example_is_not_a_common_physics_realization": true,
+    "full_goal_completed": false,
+    "stop_local_optimization": true
+  },
+  "source_hashes": {
+    "research_cognition_physics\\archive_764_\\961\\operational_scale_screen.py": "d7bf0b2c73f43d28862d1526aa729b93580f8afab7f1099bdd8f153e84663277",
+    "research_cognition_physics\\archive_764_\\961\\drafts\\mechanism_priority_entry.md": "1662dd2de93cb4845b09f578d9be8c98dd769ed2843f251ef6169ccb0ae4d180",
+    "research_cognition_physics\\archive_764_\\961\\drafts\\deferred_material_gravity_interface.md": "76fdc90fc16544809ef32eb2859707e1b61fdde71564e37241a65934b2279bda",
+    "research_cognition_physics\\archive_764_\\960\\research_round_960_checks.json": "76df02f3725374c665751ddb81bd72febbcaaddcd6eb5e2003b526bf0b5deaf9",
+    "research_cognition_physics\\archive_764_\\957\\drafts\\unified_operation_hypotheses_v0_2.md": "5f0261a9cb6c03017c1b4f3d23e53ede457e42c4710b2c3ae3918d62301029d6"
+  }
+}

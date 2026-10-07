@@ -1,0 +1,240 @@
+{
+  "round": 921,
+  "date": "2026-10-06",
+  "N": 17,
+  "projection_quadrature_M": 25,
+  "time_half_window": 0.00025,
+  "preparation_correction_at_t0_zero": true,
+  "original_background_source_and_receiver_retained": true,
+  "force_is_negative_tangent_kinematic_residual": true,
+  "force_slots": [
+    "phi",
+    "A"
+  ],
+  "all104_dynamical_variables_propagated": true,
+  "force_samples": [
+    {
+      "t": -0.00025,
+      "M": 25,
+      "base_residual_sample_max": {
+        "phi": 8.579138371933581e-06,
+        "A": 8.879142286311913e-07
+      },
+      "tangent_residual_sample_max": {
+        "phi": 5.44688029371533e-05,
+        "A": 1.7957209413496457e-06
+      },
+      "projected_tangent_force_max": {
+        "phi": 3.1036176213905e-05,
+        "A": 1.5850118328945064e-06
+      }
+    },
+    {
+      "t": 0.0,
+      "M": 25,
+      "base_residual_sample_max": {
+        "phi": 8.579354750626322e-06,
+        "A": 1.0266145888948586e-07
+      },
+      "tangent_residual_sample_max": {
+        "phi": 5.447017382874709e-05,
+        "A": 1.7970289183351826e-06
+      },
+      "projected_tangent_force_max": {
+        "phi": 3.103682557746964e-05,
+        "A": 1.5844912059544268e-06
+      }
+    },
+    {
+      "t": 0.00025,
+      "M": 25,
+      "base_residual_sample_max": {
+        "phi": 8.579475646364187e-06,
+        "A": 8.872728878709693e-07
+      },
+      "tangent_residual_sample_max": {
+        "phi": 5.447151404700966e-05,
+        "A": 1.7983336357904502e-06
+      },
+      "projected_tangent_force_max": {
+        "phi": 3.103745393823649e-05,
+        "A": 1.583969428249099e-06
+      }
+    }
+  ],
+  "original_grid_force": {
+    "t": 0.0,
+    "M": 17,
+    "base_residual_sample_max": {
+      "phi": 2.916060942714793e-07,
+      "A": 3.0385239879748838e-09
+    },
+    "tangent_residual_sample_max": {
+      "phi": 7.145237819698467e-12,
+      "A": 8.435298386907476e-13
+    },
+    "projected_tangent_force_max": {
+      "phi": 7.145237819698467e-12,
+      "A": 8.435298386907475e-13
+    }
+  },
+  "collocation_vs_projection_difference": {
+    "phi": 3.103682545022977e-05,
+    "A": 1.584490362424588e-06
+  },
+  "time_force_interpolation_checks": [
+    {
+      "t": -0.000125,
+      "interpolation_difference_not_bound": {
+        "phi": 6.574937026304715e-13,
+        "A": 2.2260888329052892e-13
+      }
+    },
+    {
+      "t": 0.000125,
+      "interpolation_difference_not_bound": {
+        "phi": 6.573259240383452e-13,
+        "A": 2.225980414851118e-13
+      }
+    }
+  ],
+  "finite_dynamical_contribution": [
+    {
+      "time": -0.00025,
+      "all104_response_max": {
+        "g": 7.534143687765039e-16,
+        "gd": 9.043355725820065e-12,
+        "phi": 7.759061176386726e-09,
+        "pi": 3.423336450429184e-11,
+        "A": 3.961877841838909e-10,
+        "E": 3.89629097349413e-12
+      },
+      "linear_canonical_constraints": {
+        "H": 2.536651683019137e-09,
+        "M": 3.611909650823136e-08,
+        "Gauss": 1.344410516467395e-09,
+        "harmonic": 9.034670158305764e-12
+      }
+    },
+    {
+      "time": 0.00025,
+      "all104_response_max": {
+        "g": 7.522218672530443e-16,
+        "gd": 9.02427570901258e-12,
+        "phi": 7.759333295087147e-09,
+        "pi": 3.4206800867276705e-11,
+        "A": 3.960574837041246e-10,
+        "E": 3.715872447232572e-12
+      },
+      "linear_canonical_constraints": {
+        "H": 2.4928533240582887e-09,
+        "M": 3.615137666156117e-08,
+        "Gauss": 1.3440443568775169e-09,
+        "harmonic": 9.032957320543993e-12
+      }
+    }
+  ],
+  "original_closed_source_pairing": {
+    "total": [
+      -2.4375662924981497e-14,
+      -2.1163063337900875e-14,
+      -1.462539766180216e-13
+    ],
+    "direct": [
+      -3.6975419835640015e-22,
+      -3.895912315298741e-20,
+      -2.2185251520019065e-21
+    ],
+    "reference": [
+      -2.4375662555227086e-14,
+      -2.116302437880151e-14,
+      -1.4625397439949654e-13
+    ],
+    "jet_pairing_identity_residual": 2.3785734014223948e-26
+  },
+  "independent_finite_Wilson_derivative": [
+    -2.4341209090507782e-14,
+    -2.088800061697231e-14,
+    -1.4604725360509655e-13
+  ],
+  "finite_path_curvature_source_difference_not_error_bound": [
+    3.4453834473714304e-17,
+    2.750627209285639e-16,
+    2.0672301292504712e-16
+  ],
+  "independent_record_jet_checks": {
+    "reference_Jacobian_two_jet_error": 8.405927863497364e-15,
+    "maximum_material_coordinate_derivative": 3.0280832816447415e-05,
+    "maximum_path_velocity_derivative": 1.8824006134945865e-05,
+    "implicit_reference_tangent_error": 7.884065213396045e-25,
+    "derivative_uses_second_jets_and_full_discrete_links": true
+  },
+  "original_weighted_Ward_source": {
+    "real": [
+      -2.181336859460142e-05,
+      -2.0235038144911765e-06,
+      -0.00013088021073550342
+    ],
+    "imag": [
+      -3.9796434898133315e-14,
+      -8.042202919703077e-17,
+      -2.3877860787073396e-13
+    ]
+  },
+  "direct_projected_weighted_pairing": {
+    "real": [
+      -2.1813346692991084e-05,
+      -2.027254636007648e-06,
+      -0.00013088007932584217
+    ],
+    "imag": [
+      -3.9796432058019764e-14,
+      -8.05820405569613e-17,
+      -2.387785908300527e-13
+    ]
+  },
+  "pure_gauge_quadrature_defect": {
+    "real": [
+      -2.1901610333671853e-11,
+      3.750821516474176e-09,
+      -1.3140966116049875e-10
+    ],
+    "imag": [
+      -2.8401135529926864e-21,
+      1.6001135993049333e-19,
+      -1.7040681209546273e-20
+    ]
+  },
+  "weighted_Ward_identity_error": 9.537669051253732e-20,
+  "receiver_weight": {
+    "minimum_sample_calibration_density": 0.08947325630802673,
+    "maximum_weight_abs": 0.08255607865813495,
+    "maximum_weight_derivative": 1.0406336045054898
+  },
+  "extractor_jets": {
+    "background_multiindices": 70,
+    "response_multiindices": 35,
+    "xi_second_jet_symmetry_error": 1.4210854715202004e-14
+  },
+  "integrated_field_first_jets_used": true,
+  "pointwise_jet_replacement_used": false,
+  "same_source_reference_terms_retained": true,
+  "contribution_scope": "fixed approximate background; tangent kinematic residual only; original source and original weighted source",
+  "background_error_Hessian_and_readout_variation_included": false,
+  "initial_geometric_constraint_error_included": false,
+  "remaining_momentum_and_receiver_residuals_included": false,
+  "continuum_projection_error_certified": false,
+  "physical_GPi_inverse_implemented": false,
+  "actual_full_observable_error_certified": false,
+  "full872_response_computed": false,
+  "full_goal_completed": false,
+  "elapsed_seconds": 95.366,
+  "source_hashes": {
+    "921\\kinematic_defect_readout.py": "0b943676bdf05b86f5760a61d9d4ae8f16fccc979e785a4a3302ea2063414377",
+    "920\\common_legendre_defect.py": "367c8aa19a64cf8a39158054b8b572eaba824bc6e00889cca6efee6aa1b3e562",
+    "919\\weak_gauss_transport.py": "c07d530dab60aa1b13eb7f2c35531022b48b697863c353211696861e0417a23e",
+    "908\\relational_loop_source.py": "115e0123f8afa8d0bb557d61fc76ea56bd4dc42e22e6f57ac07d7c8fff5f6804",
+    "904\\coupled_boson_tangent.py": "3f9e1a0e986b756b89dd1ea27431e7818b7f6e0f8bd6820d370cba4ccffadd20",
+    "915\\analytic_material_jets.py": "b47d0faddee1d7aad609623e68643243465ac0df24bb50160f45c8772dffa9a0"
+  }
+}

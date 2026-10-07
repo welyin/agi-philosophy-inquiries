@@ -1,6 +1,6 @@
 # 共同参考与相对偏差：正势完成的条件接口
 
-日期：2026-09-30。未编号接续。[代码](../../archive_764_/_shared/code/reference_alignment_completion.py)；[结果](../../archive_764_/_shared/results/reference_alignment_completion_results.json)。本项采用成熟的二次型对角化，检验一个具体新增模型能否同时连接稳定性、经典参考几何和量子读数；不新增521。
+日期：2026-09-30。未编号接续。[代码](../../_shared/code/reference_alignment_completion.py)；[结果](../../_shared/results/reference_alignment_completion_results.json)。本项采用成熟的二次型对角化，检验一个具体新增模型能否同时连接稳定性、经典参考几何和量子读数；不新增521。
 
 ## 1. 问题、来源与新增输入
 

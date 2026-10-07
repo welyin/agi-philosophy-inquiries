@@ -1,0 +1,138 @@
+{
+  "round": 978,
+  "date": "2026-10-07",
+  "all_scientific_checks_passed": true,
+  "parameters": {
+    "G": 1e-30,
+    "mu": 2.4865729440027034e+35,
+    "reference_radius": 10000000000.0,
+    "soft_core": 100000000.0,
+    "position_sigma": 1000.0,
+    "time_max": 138976.4948293033,
+    "radii": [
+      9999499987.499374,
+      4998999899.979995
+    ],
+    "potentials": [
+      -2.4865729440027037e-05,
+      -4.9731458880054074e-05
+    ]
+  },
+  "operator_bounds": {
+    "weak_potential_global_upper": 0.0024865729440027035,
+    "mass_lower": 199.0,
+    "initial_rms_mass_upper": 204.0,
+    "analytic_triangle_mass_upper": 203.82855728137423,
+    "full_H_lower_excluding_mu": 198.50517198414346,
+    "internal_occupation_not_physically_cutoff": true,
+    "mass_second_moment_exact_on_initial_support": [
+      [
+        40069.28038788549,
+        0.0
+      ],
+      [
+        0.0,
+        40084.70150394073
+      ]
+    ],
+    "mass_means": [
+      200.1729680041376,
+      200.21148384114133
+    ],
+    "source_moment_matrix_off_diagonal": 0.0
+  },
+  "uniform_moving_error": {
+    "kinetic_rate": 2.4327784837986286e-09,
+    "kinetic": 0.0003380990263744804,
+    "potential": 0.001382012878215233,
+    "numerical_guard": 1e-10,
+    "total": 0.0017201120045897134,
+    "tail_probability_upper": 2.8284271247461905e-100,
+    "minimum_tail_exponent": 780937499999.9999,
+    "interval_starts_at_zero": true,
+    "arbitrary_sender_and_passive_reference": true,
+    "actual_moving_record_contrast_lower": 0.4825079098116159,
+    "moving_output_to_977_cq_bound": 0.010382835142042551
+  },
+  "spatial_checks": [
+    {
+      "path": 0,
+      "radius": 9999499987.499374,
+      "potential": -2.4865729440027037e-05,
+      "spatial_difference_norm_bound": 4.8994694325096075e-17,
+      "quadrature_second_moment": 1.9998000001663497e-34,
+      "analytic_second_moment_upper": 2.4004800720096016e-33,
+      "initial_force_X_by_sender": [
+        [
+          7.962360463460975e-36,
+          3.400898761039253e-36,
+          4.977197985032769e-13
+        ],
+        [
+          7.963892523363137e-36,
+          3.4015531374201026e-36,
+          4.978155661527443e-13
+        ]
+      ],
+      "force_Y_is_exact_opposite": true
+    },
+    {
+      "path": 1,
+      "radius": 4998999899.979995,
+      "potential": -4.9731458880054074e-05,
+      "spatial_difference_norm_bound": 1.9603759446043843e-16,
+      "quadrature_second_moment": 3.198719999876872e-33,
+      "analytic_second_moment_upper": 3.8430738441835325e-32,
+      "initial_force_X_by_sender": [
+        [
+          1.8114034202885913e-35,
+          3.6171823368424347e-35,
+          1.9905805098625997e-12
+        ],
+        [
+          1.8117519574541211e-35,
+          3.617878328947102e-35,
+          1.990963522989822e-12
+        ]
+      ],
+      "force_Y_is_exact_opposite": true
+    }
+  ],
+  "conservation": {
+    "total_momentum_conserved_exactly": true,
+    "total_energy_conserved_exactly": true,
+    "full_internal_mass_conserved_exactly": true,
+    "both_centres_are_dynamical": true,
+    "force_identity_difference": 3.2864878353466853e-17,
+    "translation_difference": 6.776263578034403e-21,
+    "force_norm_upper": 1.9524480396682577e-09,
+    "speed_norm_upper": 5.715426073738078e-06,
+    "source_is_complete_internal_energy": true
+  },
+  "scope": {
+    "newton_effective_model_input": true,
+    "actual_wavepacket_evolution_computed": false,
+    "uniform_bound_not_ODE_sampling": true,
+    "force_signal_above_measurement_error_claimed": false,
+    "full_post_Newtonian_budget": false,
+    "dynamical_Einstein_metric_derived": false,
+    "entire_SM_matching_completed": false,
+    "actual_recombination_device_completed": false,
+    "full_goal_completed": false
+  },
+  "references": [
+    "https://arxiv.org/abs/1502.00971",
+    "https://arxiv.org/abs/gr-qc/9405057",
+    "https://arxiv.org/abs/hep-th/0409156"
+  ],
+  "source_hashes": {
+    "research_cognition_physics\\archive_764_\\978\\moving_complete_source.py": "18514a971c9950499798dc16fe8d05416877e213ace578352ad023dbc42c58d3",
+    "research_cognition_physics\\archive_764_\\978\\drafts\\moving_source_decision.md": "409fdd88aac0b40ca943e437d793ef861f4395ce5430ae78f045ea9676e64505",
+    "research_cognition_physics\\archive_764_\\978\\drafts\\common_recovery_audit_v2.md": "ed8141cb68ca5b1adacab76076c7cf226ec42edb92e0e777a113fe0750acb50e",
+    "research_cognition_physics\\archive_764_\\945\\joint_record_newton.py": "c010f999ce587b3602e7f9dcd575738dd07db5967b06b4a9dfbbcbcf59f1c3f3",
+    "research_cognition_physics\\archive_764_\\956\\native_material_interface.py": "2ab03c573de42d54c28c65804766e7840331a8f028a5059d6129baf57f5bc0b8",
+    "research_cognition_physics\\archive_764_\\968\\internal_relay.py": "d400f901510b89f3e1e07f23b01bab3a1502ccddd05b57fd21a45970ddb63235",
+    "research_cognition_physics\\archive_764_\\976\\finite_internal_reference_results.json": "19336c55d3c1e15718a793a50ce9aafe0e9a3b99deb754a1b232e0edd5b4e358",
+    "research_cognition_physics\\archive_764_\\977\\coarse_source_record_results.json": "ff237abca5b31e8cb4173e4f740b04f8f948b642a7e4c810cd9da77efc8b7850"
+  }
+}

@@ -1,6 +1,6 @@
 # 统一物理模型的条件总账：将时空、引力与物质作为同一个求解问题
 
-版本：2026-09-30，v1。依据用户最新方向修订。最新完成科学轮次仍为530；本文件为全阶段综合与后继研究入口，不把整理或成熟定理复述另算实验。配套[可复算条件与依赖检查](../../archive_764_/_shared/code/unified_physics_condition_audit.py)、[检查结果](../../archive_764_/_shared/results/unified_physics_condition_audit_results.json)。
+版本：2026-09-30，v1。依据用户最新方向修订。最新完成科学轮次仍为530；本文件为全阶段综合与后继研究入口，不把整理或成熟定理复述另算实验。配套[可复算条件与依赖检查](../../_shared/code/unified_physics_condition_audit.py)、[检查结果](../../_shared/results/unified_physics_condition_audit_results.json)。
 
 ## 1. 这次调整的核心
 

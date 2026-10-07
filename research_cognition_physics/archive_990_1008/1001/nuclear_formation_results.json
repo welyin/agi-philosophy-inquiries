@@ -1,0 +1,124 @@
+{
+  "round": 1001,
+  "date": "2026-10-07",
+  "all_scientific_checks_passed": true,
+  "kind": "conditional_nuclear_binding_kinematics_and_restricted_equilibrium",
+  "mass_inputs_MeV": {
+    "proton": {
+      "exact": "93827208943/100000000",
+      "value": 938.27208943
+    },
+    "neutron": {
+      "exact": "46978271097/50000000",
+      "value": 939.56542194
+    },
+    "deuteron": {
+      "exact": "375122589/200000",
+      "value": 1875.612945
+    }
+  },
+  "binding_energy_MeV": {
+    "exact": "222456637/100000000",
+    "value": 2.22456637
+  },
+  "capture_photon_MeV": {
+    "exact": "83497996567018542769/37556750227400000000",
+    "value": 2.22324871192134
+  },
+  "deuteron_recoil_MeV": {
+    "exact": "49486955345349769/37556750227400000000",
+    "value": 0.0013176580786600097
+  },
+  "photodissociation_threshold_MeV": {
+    "exact": "83497996567018542769/37512258900000000000",
+    "value": 2.225885590883959
+  },
+  "matched_energy_residual_MeV": {
+    "exact": "0",
+    "value": 0.0
+  },
+  "double_count_residual_MeV": {
+    "exact": "222456637/100000000",
+    "value": 2.22456637
+  },
+  "photon_equals_binding_on_shell_energy_excess_MeV": 0.0013192204200191365,
+  "thermal_inputs": {
+    "eta": 6.1e-10,
+    "neutron_constituent_fraction": 0.13,
+    "proton_constituent_fraction": 0.87,
+    "zeta3": 1.2020569031595942,
+    "spins_degeneracies": {
+      "n": 2,
+      "p": 2,
+      "d": 3
+    },
+    "chemical_potential_photon": 0
+  },
+  "equilibrium_rows": [
+    {
+      "temperature_MeV": 1.0,
+      "R": 1.5931775382244398e-12,
+      "Yd": 1.8018837957289708e-13,
+      "Yn": 0.12999999999981982,
+      "Yp": 0.8699999999998198,
+      "neutron_fraction_bound": 1.3860644582530544e-12,
+      "baryon_fraction_bound": 3.6037675914579415e-13,
+      "max_thermal_fugacity": 3.54201972306093e-14,
+      "chemical_equilibrium_log_residual": 5.329070518200751e-15
+    },
+    {
+      "temperature_MeV": 0.1,
+      "R": 2.496412030605863e-05,
+      "Yd": 2.823371523827841e-06,
+      "Yn": 0.12999717662847618,
+      "Yp": 0.8699971766284762,
+      "neutron_fraction_bound": 2.171824249098339e-05,
+      "baryon_fraction_bound": 5.646743047655682e-06,
+      "max_thermal_fugacity": 1.1200813492503936e-15,
+      "chemical_equilibrium_log_residual": -3.552713678800501e-15
+    },
+    {
+      "temperature_MeV": 0.08,
+      "R": 0.004647757872182071,
+      "Yd": 0.0005232308375187858,
+      "Yn": 0.12947676916248121,
+      "Yp": 0.8694767691624812,
+      "neutron_fraction_bound": 0.0040248525962983525,
+      "baryon_fraction_bound": 0.0010464616750375717,
+      "max_thermal_fugacity": 8.009855584628833e-16,
+      "chemical_equilibrium_log_residual": 3.552713678800501e-15
+    },
+    {
+      "temperature_MeV": 0.06,
+      "R": 32.01271217218741,
+      "Yd": 0.12477004951849342,
+      "Yn": 0.005229950481506582,
+      "Yp": 0.7452299504815065,
+      "neutron_fraction_bound": 0.9597696116807186,
+      "baryon_fraction_bound": 0.24954009903698685,
+      "max_thermal_fugacity": 4.459117319431465e-16,
+      "chemical_equilibrium_log_residual": 0.0
+    }
+  ],
+  "sources": {
+    "masses": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt",
+    "equilibrium": "https://arxiv.org/html/1801.08023#A1.SS4",
+    "description": "CODATA 2022 central values; Pitrou et al. A.4 equations 187-191"
+  },
+  "capture_rate_derived": false,
+  "cosmic_history_simulated": false,
+  "physical_abundances_predicted": false,
+  "mass_uncertainty_propagated": false,
+  "work_extraction_certified": false,
+  "joint_record_lifecycle_certified": false,
+  "cognitive_derivation_of_nuclear_force": false,
+  "full_goal_completed": false,
+  "source_hashes": {
+    "research_cognition_physics\\archive_764_\\1001\\nuclear_formation_screen.py": "f5a7e0f5e04fa20a88c697f45e08967e26135dd42af02fd59dccc208b4c3388d",
+    "research_cognition_physics\\archive_764_\\1001\\drafts\\STATUS.md": "69c479d3935255af50dbc0f2c15898368670ee7e8759ed6bd62916d8186d9c60",
+    "research_cognition_physics\\archive_764_\\1001\\drafts\\adoption_decision.md": "83ed4600f827b06dd1f13bf5cbaaca16b2e2b8af04c877477e1d841074e562fa",
+    "research_cognition_physics\\archive_764_\\1000\\research_round_1000_checks.json": "78dde9ca4a787f8e25ce81649e2f74a708f511bb21adba2a62d587e996e2f08a",
+    "research_cognition_physics\\archive_764_\\981\\drafts\\common_parent_contract_v1.md": "babe46677102396464175ebd876703be6b37b2e08a81fa5fd0a8ecc3bfef74ee",
+    "research_cognition_physics\\archive_764_\\999\\overall_operation_hypothesis_v1.md": "ece850ff13e4d501ae8e40e68a56f15b8d763b2560de924cefd693573106d7e1"
+  }
+}

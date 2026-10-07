@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-06",
+  "run_exit_code": 1,
+  "model_failure_claimed": false,
+  "reason": "A per-refinement monotonicity assertion failed for current divergence. Monotonicity is not guaranteed by consistency; preserve the observed sequence instead of silently discarding it.",
+  "N": [
+    17,
+    25,
+    33
+  ],
+  "current_divergence": [
+    0.0015988249329314348,
+    0.0019411775689926218,
+    0.0005239040478209323
+  ],
+  "on_shell_stress_divergence": [
+    0.011363200166807946,
+    0.008733990646406647,
+    0.004662058153145077
+  ],
+  "source_sha256_before_offshell_completion": {
+    "compact_receiver_propagation.py": "a156a5da55039720864b717138a113a39c0d212ce35d17e4f7bfff6b9b24af20",
+    "compact_receiver_checks.py": "6efa58c982cf1303b985bb8745e546bdbbb23e5b7b4a0b7a146c9a4eebe22736"
+  },
+  "next": "Complete the off-shell source needed for inhomogeneous receiver responses; rerun the changed implementation. Report all grid residuals and compare finest/coarsest without asserting monotonic refinement."
+}

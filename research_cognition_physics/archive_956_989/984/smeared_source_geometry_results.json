@@ -1,0 +1,130 @@
+{
+  "round": 984,
+  "all_scientific_checks_passed": true,
+  "inherited_matter": {
+    "real_scalars": 4,
+    "Weyl_components": 45,
+    "gauge_vectors": 12,
+    "c": {
+      "exact": "283/120",
+      "decimal": 2.3583333333333334
+    }
+  },
+  "analytic": {
+    "filter_integral": {
+      "exact": "6883/113513400",
+      "decimal": 6.0636013016965395e-05
+    },
+    "leading_variance_coefficient": 6.11681146237618e-08,
+    "leading_variance_coefficient_times_pi4": {
+      "exact": "1947889/326918592000",
+      "decimal": 5.958330445764308e-06
+    },
+    "variance_scaling": "Var(G00[f]/Lambda^2)=C*(Lambda/M)^4",
+    "no_time_smearing": "positive omega-independent integrand at fixed nonzero k; divergent integral"
+  },
+  "tensor_checks": {
+    "sampled_timelike_momenta": 24,
+    "ward_max": 1.1796119636642288e-16,
+    "trace_max": 1.457167719820518e-16,
+    "energy_component_max": 2.0816681711721685e-17,
+    "minimum_covariance_eigenvalue": -1.7501524254850595e-16,
+    "scalar_noise_coefficient_times_pi": "1/960",
+    "Dirac_noise_coefficient_times_pi": "1/160"
+  },
+  "benchmarks": [
+    {
+      "Lambda_over_M": 0.1,
+      "response_shift_upper": 0.0024237333383715603,
+      "leading_variance": 6.116811462376181e-12,
+      "retained_response_variance": 6.11420887191438e-12,
+      "retained_variance_lower": 6.08726787464797e-12,
+      "retained_variance_upper": 6.1465706508558384e-12,
+      "rms_upper": 2.479227833591709e-06,
+      "same_source_response_difference_rms": 7.527823441352587e-10,
+      "same_source_response_difference_rms_upper": 6.0089871536949234e-09,
+      "Chebyshev_error_at_tolerance_1e_minus_5": 0.061465706508558385,
+      "quadrature_48_80_difference": 3.6635869034643e-15
+    },
+    {
+      "Lambda_over_M": 0.03,
+      "response_shift_upper": 0.00028286585621391404,
+      "leading_variance": 4.954617284524705e-14,
+      "retained_response_variance": 4.9543563800998166e-14,
+      "retained_variance_lower": 4.951815489258269e-14,
+      "retained_variance_upper": 4.9574214583969686e-14,
+      "rms_upper": 2.226526770195447e-07,
+      "same_source_response_difference_rms": 8.06796147782451e-12,
+      "same_source_response_difference_rms_upper": 6.298084012345357e-11,
+      "Chebyshev_error_at_tolerance_1e_minus_5": 0.0004957421458396968,
+      "quadrature_48_80_difference": 3.2971943317999797e-16
+    },
+    {
+      "Lambda_over_M": 0.01,
+      "response_shift_upper": 3.799235069992365e-05,
+      "leading_variance": 6.116811462376179e-16,
+      "retained_response_variance": 6.1167667712018065e-16,
+      "retained_variance_lower": 6.11634670476971e-16,
+      "retained_variance_upper": 6.117276272957369e-16,
+      "rms_upper": 2.4733128134058113e-08,
+      "same_source_response_difference_rms": 1.2262154881223775e-13,
+      "same_source_response_difference_rms_upper": 9.39669677975284e-13,
+      "Chebyshev_error_at_tolerance_1e_minus_5": 6.1172762729573685e-06,
+      "quadrature_48_80_difference": 3.6605375848541843e-17
+    },
+    {
+      "Lambda_over_M": 0.003,
+      "response_shift_upper": 4.066610120597865e-06,
+      "leading_variance": 4.954617284524706e-18,
+      "retained_response_variance": 4.954613315481842e-18,
+      "retained_variance_lower": 4.954576987776927e-18,
+      "retained_variance_upper": 4.954657581764102e-18,
+      "rms_upper": 2.2259060136861352e-09,
+      "same_source_response_difference_rms": 1.2012895271612078e-15,
+      "same_source_response_difference_rms_upper": 9.051891922755687e-15,
+      "Chebyshev_error_at_tolerance_1e_minus_5": 4.954657581764102e-08,
+      "quadrature_48_80_difference": 3.279711571768651e-18
+    }
+  ],
+  "rational_certificate": {
+    "method": "Machin alternating bounds and positive exponential Taylor sums",
+    "response_shift_upper": {
+      "exact": "90001075/2368701054744",
+      "decimal": 3.7995961887950005e-05
+    },
+    "variance_upper": {
+      "exact": "1947889000000000/3184231539949664420086876092087",
+      "decimal": 6.117296985352993e-16
+    },
+    "Chebyshev_upper": {
+      "exact": "19478890000000000000000000/3184231539949664420086876092087",
+      "decimal": 6.117296985352993e-06
+    },
+    "stated_probability_upper": "6118/1000000000",
+    "all_exact_inequalities_passed": true
+  },
+  "negative_control": {
+    "shared_conservation_variance": 0.0,
+    "independent_component_conservation_variance": 0.011260212223751589
+  },
+  "scope": {
+    "free_conformal_vacuum": true,
+    "actual_SM_thermal_state": false,
+    "matter_induced_linear_Einstein_report_only": true,
+    "finite_band_retained_response_bound": true,
+    "Gaussian_stress_process_claimed": false,
+    "finite_spacetime_detector_certified": false,
+    "full_quantum_geometry_error_certified": false,
+    "full_physical_remainder_certified": false,
+    "UV_completion_assumed": false,
+    "minimum_physical_scale_assumed": false,
+    "full_goal_completed": false
+  },
+  "source_hashes": {
+    "research_cognition_physics\\archive_764_\\983\\sm_curvature_radiation_results.json": "b208620c70e2f9cb8ad4fe7c04e406c46c09bdd31c945bda0c8631a8b1d420a7",
+    "research_cognition_physics\\archive_764_\\981\\drafts\\common_parent_contract_v1.md": "babe46677102396464175ebd876703be6b37b2e08a81fa5fd0a8ecc3bfef74ee",
+    "research_cognition_physics\\archive_629_652\\research_note_631.md": "c83ec8437828033084be621ff9caaf7aba8c699ec3b5d6e36bf328a8ece85a49",
+    "research_cognition_physics\\archive_764_\\research_note_899.md": "336fdb71a6a6590c1597f6fba4354ebb9150937e1f8907c32e8c937462d89ca6",
+    "research_cognition_physics\\archive_764_\\research_note_940.md": "78cd07bf65333a3806b906f8b43d3d2a421480c06321cf4c4fbe4179bd1bddbd"
+  }
+}

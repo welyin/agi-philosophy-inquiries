@@ -1,0 +1,151 @@
+{
+  "round": 988,
+  "all_scientific_checks_passed": true,
+  "parameters": {
+    "U": 1,
+    "v": 0.1,
+    "kappa": 0.2,
+    "eta": 0.05,
+    "formation_time": 20.0,
+    "future_time": 5.0,
+    "initial_material_labels": [
+      "T",
+      "T",
+      "D+"
+    ],
+    "receiver_effect": "D- population",
+    "control_actions": [
+      "identity on A",
+      "swap D+ and T on A"
+    ]
+  },
+  "reuse_material_checks": {
+    "isometry": 4.441168859317376e-16,
+    "internal": 0.0,
+    "charge": 0.0,
+    "spin_exchange": 2.0867036143068544e-16
+  },
+  "operator_checks": {
+    "swap_isometry": 0.0,
+    "swap_recovers": 0.0,
+    "exact_state_relocation": 0.0,
+    "arbitrary_input_isometry": 0.0,
+    "dark_sector_intertwining": 0.0,
+    "unchanged_local_energy_operator": 0.0,
+    "contact_work_identity": 0.0,
+    "stopped_update_conserves_active_population": 0.0,
+    "formation_changes_active_population": 0.021650635094610966
+  },
+  "exact_heisenberg_source_commutators": [
+    {
+      "order": 1,
+      "nonzero_entries": 0,
+      "entry_17_38": 0,
+      "denominator": 5
+    },
+    {
+      "order": 2,
+      "nonzero_entries": 0,
+      "entry_17_38": 0,
+      "denominator": 25
+    },
+    {
+      "order": 3,
+      "nonzero_entries": 16,
+      "entry_17_38": 1,
+      "denominator": 125
+    }
+  ],
+  "formed_active_population": 0.1682940614833742,
+  "stop_update_only": [
+    {
+      "receiver_probability": 8.596110138151386e-05,
+      "active_relay_before": 0.1682940614833742,
+      "active_relay_after": 0.16829406148337414,
+      "intervention_work": 0.0,
+      "energy_drift": 5.551115123125783e-16
+    },
+    {
+      "receiver_probability": 0.0008717039192620509,
+      "active_relay_before": 0.1682940614833742,
+      "active_relay_after": 0.16829406148337392,
+      "intervention_work": 0.9999999999999977,
+      "energy_drift": -4.440892098500626e-16
+    }
+  ],
+  "new_intervention_contrast": 0.000785742817880537,
+  "numerical_contrast_budget": 1.900606508576381e-09,
+  "positive_contrast_lower": 0.0007857409172740285,
+  "park_then_stop": [
+    {
+      "receiver_probability": 0.0003190991517928832,
+      "intervention_work": 0.0,
+      "energy_drift": 5.551115123125783e-16
+    },
+    {
+      "receiver_probability": 0.0003190991517928931,
+      "intervention_work": 0.9999999999999977,
+      "energy_drift": 4.440892098500626e-16
+    }
+  ],
+  "park_numerical_contrast": 9.86623976961809e-18,
+  "park_exact_future_contrast": 0,
+  "all_input_free_transport_defect": 2.959999334563059e-14,
+  "certificates": {
+    "formation": {
+      "gram_defect": 2.5565127318914097e-15,
+      "eigen_residual": 6.0771223133280724e-15,
+      "operator_error_budget": 1.2012409895899848e-10
+    },
+    "future": {
+      "gram_defect": 3.4203583847874893e-15,
+      "eigen_residual": 4.8215653423796084e-15,
+      "operator_error_budget": 1.0502752818509669e-10
+    },
+    "parked": {
+      "gram_defect": 5.0027644423651676e-15,
+      "eigen_residual": 8.062131620357274e-15,
+      "operator_error_budget": 1.0504531342254415e-10
+    },
+    "free": {
+      "gram_defect": 2.6891345392886103e-15,
+      "eigen_residual": 4.415223850964601e-15,
+      "operator_error_budget": 1.0502476525379411e-10
+    }
+  },
+  "work_ledger": {
+    "stop_update": 0.018325625327079154,
+    "expected_stop_update": 0.018325625327079143,
+    "park": 0.0005496658450674374,
+    "expected_park": 0.0005496658450675081,
+    "parking_work_operator_norm": 0.4,
+    "analytic_parking_work_abs_bound": 0.4,
+    "analytic_update_switch_work_abs_bound": 0.037500000000000006
+  },
+  "resources": {
+    "additional_same_material_blank_dimension": 4,
+    "historical_input_dimension": 64,
+    "exact_relocation": true,
+    "blank_reusable_without_recovery": false,
+    "includes_autonomous_control_and_battery": false
+  },
+  "decision": {
+    "reject_stop_formation_as_universal_withdrawal": true,
+    "retain_internal_relocation_as_conditional_withdrawal": true,
+    "direct_contact_control_is_an_alternative": true,
+    "no_claim_unique_mechanism": true,
+    "full_goal_completed": false
+  },
+  "source_hashes": {
+    "research_cognition_physics\\archive_764_\\968\\internal_relay.py": "d400f901510b89f3e1e07f23b01bab3a1502ccddd05b57fd21a45970ddb63235",
+    "research_cognition_physics\\archive_764_\\968\\internal_relay_results.json": "8252d2d075636b148a346ecae36b96843fa6f431f357836a1bcabbb2d220b482",
+    "research_cognition_physics\\archive_764_\\research_note_932.md": "5c78f10b64365074266ca24c8c06699bb3a8466d779e64a76ef41fe9f19f48f9",
+    "research_cognition_physics\\archive_764_\\research_note_962.md": "eff59381e152c306429f411dc7e0ef87196ca5781715e99f92aa9598d16baef6",
+    "research_cognition_physics\\archive_764_\\research_note_968.md": "5e6e89d00123ff6e21c1a992a425c178264b0e98268ec2374c2c56ac295d350c",
+    "research_cognition_physics\\archive_764_\\research_note_972.md": "2aa2a55c90cfe08fbd88b173aece0d541e6e60d2f418df8c910012ca74380e41",
+    "research_cognition_physics\\archive_764_\\research_note_987.md": "4f69121706f6f3819d8934585c3bce58f575cee28eda81f3fa2ec057eefe0e80",
+    "research_cognition_physics\\archive_764_\\987\\drafts\\mechanism_map_v0_3.md": "59868f45509f0f114d1202a5a1fd71d8ca9ee94e09cb43dc1e6344260f10c905",
+    "research_cognition_physics\\archive_764_\\988\\drafts\\STATUS.md": "1631745a1faf8aa460b32bce1f62c3524ead99b28331046b388b2f4f5d3ef0d9",
+    "research_cognition_physics\\archive_764_\\988\\drafts\\withdrawal_decision.md": "dec3565962f568a411607853634c8fbeadae8ce77650ebb1cdfd01f5848e6598"
+  }
+}

@@ -1,0 +1,382 @@
+{
+  "round": 994,
+  "all_scientific_checks_passed": true,
+  "kind": "conditional_common_thermal_history_charge_audit",
+  "species_order": [
+    "q",
+    "u",
+    "d",
+    "l_e",
+    "l_mu",
+    "l_tau",
+    "e_e",
+    "e_mu",
+    "e_tau",
+    "H"
+  ],
+  "susceptibility_weights": [
+    "18",
+    "9",
+    "9",
+    "2",
+    "2",
+    "2",
+    "1",
+    "1",
+    "1",
+    "4"
+  ],
+  "hypercharges": [
+    "1/6",
+    "2/3",
+    "-1/3",
+    "-1/2",
+    "-1/2",
+    "-1/2",
+    "-1",
+    "-1",
+    "-1",
+    "1/2"
+  ],
+  "reaction_rows": [
+    [
+      "-1",
+      "1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "-1"
+    ],
+    [
+      "-1",
+      "0",
+      "1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "-1",
+      "0",
+      "0",
+      "1",
+      "0",
+      "0",
+      "1"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "-1",
+      "0",
+      "0",
+      "1",
+      "0",
+      "1"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "-1",
+      "0",
+      "0",
+      "1",
+      "1"
+    ],
+    [
+      "9",
+      "0",
+      "0",
+      "1",
+      "1",
+      "1",
+      "0",
+      "0",
+      "0",
+      "0"
+    ]
+  ],
+  "neutral_equilibrium_branches": [
+    {
+      "name": "slow_DeltaL2",
+      "fast_weinberg_pairs": [],
+      "neutral_equilibrium_dimension": 3,
+      "basis_chemical_potentials": [
+        [
+          "0",
+          "0",
+          "0",
+          "-1",
+          "1",
+          "0",
+          "-1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "1",
+          "-1",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "-7/12",
+          "5/12",
+          "-19/12",
+          "13/4",
+          "1",
+          "1",
+          "9/4",
+          "0",
+          "0",
+          "1"
+        ]
+      ]
+    },
+    {
+      "name": "fast_ee_only",
+      "fast_weinberg_pairs": [
+        [
+          0,
+          0
+        ]
+      ],
+      "neutral_equilibrium_dimension": 2,
+      "basis_chemical_potentials": [
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "1",
+          "0",
+          "-1",
+          "1",
+          "0"
+        ],
+        [
+          "-7/12",
+          "5/12",
+          "-19/12",
+          "-1",
+          "21/4",
+          "1",
+          "-2",
+          "17/4",
+          "0",
+          "1"
+        ]
+      ]
+    },
+    {
+      "name": "fast_ee_mm_tt",
+      "fast_weinberg_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "neutral_equilibrium_dimension": 0,
+      "basis_chemical_potentials": []
+    }
+  ],
+  "conversion_B_over_B_minus_L": "28/79",
+  "normalized_preserved_charge_example": {
+    "B": {
+      "exact": "28/79",
+      "value": 0.35443037974683544
+    },
+    "L": {
+      "exact": "-51/79",
+      "value": -0.6455696202531646
+    },
+    "B_minus_L": {
+      "exact": "1",
+      "value": 1.0
+    },
+    "hypercharge": {
+      "exact": "0",
+      "value": 0.0
+    },
+    "flavor_delta": [
+      {
+        "exact": "1",
+        "value": 1.0
+      },
+      {
+        "exact": "0",
+        "value": 0.0
+      },
+      {
+        "exact": "0",
+        "value": 0.0
+      }
+    ]
+  },
+  "one_fast_flavor_example": {
+    "B": {
+      "exact": "84/257",
+      "value": 0.32684824902723736
+    },
+    "L": {
+      "exact": "-153/257",
+      "value": -0.5953307392996109
+    },
+    "B_minus_L": {
+      "exact": "237/257",
+      "value": 0.9221789883268483
+    },
+    "hypercharge": {
+      "exact": "0",
+      "value": 0.0
+    },
+    "flavor_delta": [
+      {
+        "exact": "-20/257",
+        "value": -0.07782101167315175
+      },
+      {
+        "exact": "1",
+        "value": 1.0
+      },
+      {
+        "exact": "0",
+        "value": 0.0
+      }
+    ]
+  },
+  "relaxation": [
+    {
+      "name": "preserve_B_minus_L",
+      "rows": [
+        {
+          "relaxation_parameter": 0.0,
+          "B": 0.0003544303797468357,
+          "B_minus_L": 0.001000000000000001,
+          "quadratic_free_energy": 3.8906469760900156e-07,
+          "dissipation": 6.4891975308642e-07
+        },
+        {
+          "relaxation_parameter": 1.0,
+          "B": 0.0006401007954781971,
+          "B_minus_L": 0.0010000000000000007,
+          "quadratic_free_energy": 2.399450824554807e-07,
+          "dissipation": 3.4953750767686537e-08
+        },
+        {
+          "relaxation_parameter": 10.0,
+          "B": 0.0004392779332530752,
+          "B_minus_L": 0.0010000000000000002,
+          "quadratic_free_energy": 1.8368078538270614e-07,
+          "dissipation": 7.678581773332899e-10
+        },
+        {
+          "relaxation_parameter": 100.0,
+          "B": 0.00035443120145153037,
+          "B_minus_L": 0.001,
+          "quadratic_free_energy": 1.8073136427594957e-07,
+          "dissipation": 7.214345255541936e-20
+        },
+        {
+          "relaxation_parameter": 1000.0,
+          "B": 0.0003544303797468353,
+          "B_minus_L": 0.001,
+          "quadratic_free_energy": 1.8073136427566812e-07,
+          "dissipation": 5.790228032761346e-38
+        }
+      ],
+      "smallest_positive_rate": 0.12813848545127435
+    },
+    {
+      "name": "wash_all",
+      "rows": [
+        {
+          "relaxation_parameter": 0.0,
+          "B": 0.00035443037974683503,
+          "B_minus_L": 0.001,
+          "quadratic_free_energy": 3.8906469760900177e-07,
+          "dissipation": 2.763314110590861e-06
+        },
+        {
+          "relaxation_parameter": 1.0,
+          "B": 0.00042642760429334675,
+          "B_minus_L": 0.00022470362584390205,
+          "quadratic_free_energy": 7.342963566655414e-08,
+          "dissipation": 4.098065721702776e-08
+        },
+        {
+          "relaxation_parameter": 10.0,
+          "B": 0.0001627180473977297,
+          "B_minus_L": 0.00012994601753805066,
+          "quadratic_free_energy": 7.0207106875825475e-09,
+          "dissipation": 1.547759545466449e-09
+        },
+        {
+          "relaxation_parameter": 100.0,
+          "B": 1.0743841605497817e-08,
+          "B_minus_L": 1.136987036844958e-08,
+          "quadratic_free_energy": 3.0413887785332284e-17,
+          "dissipation": 6.4924864534401625e-18
+        },
+        {
+          "relaxation_parameter": 1000.0,
+          "B": -2.4517444111517703e-19,
+          "B_minus_L": -9.8069776446071e-19,
+          "quadratic_free_energy": 8.265194654219207e-38,
+          "dissipation": 4.752420380568259e-68
+        }
+      ],
+      "smallest_positive_rate": 0.10673555393553599
+    }
+  ],
+  "actual_cosmological_rates_computed": false,
+  "initial_asymmetry_generated": false,
+  "real_singlet_carries_B_minus_L": false,
+  "thermal_flavor_cases_are_actual_history": false,
+  "full_goal_completed": false,
+  "source_hashes": {
+    "research_cognition_physics\\archive_764_\\994\\charge_history.py": "dccf3280c7ff3e389f1969448a32496bdfec7f29fda2f8e3375c25bd0cdd6009",
+    "research_cognition_physics\\archive_764_\\994\\drafts\\STATUS.md": "3a7a42c7380ed6ffab4483ab90dc79d100886f73f1eba82cb30ca2ff1c202926",
+    "research_cognition_physics\\archive_764_\\994\\drafts\\selection.md": "6630efd2a6377e27e4bfad6162ab5272d9e6aabca972fe7660378ed5e165b324",
+    "research_cognition_physics\\archive_764_\\993\\common_candidate_v1.md": "8954e2b40ccb270ef886f2430d219b8438cd9b9955ac3570e39cb0b00784ce36",
+    "research_cognition_physics\\archive_764_\\research_note_993.md": "e635e99fd000ebd347f1a3a9d01fad37d18894debc61d89eb3544cdbd0109b0b",
+    "research_cognition_physics\\archive_764_\\981\\drafts\\common_parent_contract_v1.md": "babe46677102396464175ebd876703be6b37b2e08a81fa5fd0a8ecc3bfef74ee",
+    "research_cognition_physics\\archive_764_\\research_note_991.md": "97dd900d43ee06ac6656f0e27369fdd86ac887a474911ce7d32bb08c3a9aef0d",
+    "research_cognition_physics\\archive_764_\\research_note_992.md": "b6e721a43a7843966af6c3af9078538465b5ba091cbc0446ce479985f6b804fa",
+    "research_cognition_physics\\archive_629_652\\research_note_629.md": "52de3712a9f49302a5b14ce4a43c307e078c9d1d8b32dd5169a4fe0c9ed8a4c6",
+    "research_cognition_physics\\archive_702_741\\research_note_709.md": "ed2a28433377f5c297a111766a484286f99d049bb37a69d895645adfdb1639f0",
+    "research_cognition_physics\\archive_702_741\\research_note_710.md": "31e22b0da000b3417ad06d799db5ff48b616a891931edf0c3a2d2ea282146059"
+  }
+}

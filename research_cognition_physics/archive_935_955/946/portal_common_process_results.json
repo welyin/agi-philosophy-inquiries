@@ -1,0 +1,136 @@
+{
+  "round": 946,
+  "date": "2026-10-07",
+  "all_scientific_checks_passed": true,
+  "parameters": {
+    "duration": 30.0,
+    "lambda_H": 0.5,
+    "v": 2.0,
+    "portal_alpha": 0.5,
+    "mu": 1.0,
+    "mass_matrix": [
+      [
+        1.25,
+        1.0
+      ],
+      [
+        1.0,
+        4.0
+      ]
+    ],
+    "mass_squared": [
+      0.9248161864080695,
+      4.325183813591931
+    ],
+    "radii": [
+      2.0,
+      3.0
+    ],
+    "higgs_read_strength": 8.0,
+    "inherited_gravity_and_moving_parameters": {
+      "G": 1e-30,
+      "base_mass": 100000000000000.0,
+      "receiver_mass": 100000000000000.0,
+      "internal_energy_range": [
+        0,
+        30
+      ],
+      "radii": [
+        2.0,
+        3.0
+      ],
+      "duration": 30.0,
+      "soft_core": 0.001,
+      "position_std": 0.0001
+    }
+  },
+  "common_process": {
+    "outputs": [
+      {
+        "record": 0.514522446922175,
+        "path": 0.5249766748061868,
+        "path_G0": 0.49999999999999944,
+        "higgs": 0.5034868611632992
+      },
+      {
+        "record": 0.48547755307782386,
+        "path": 0.5249766748061868,
+        "path_G0": 0.49999999999999944,
+        "higgs": 0.4965131388366996
+      }
+    ],
+    "joint_outcome_order": "path_bit,record_bit,higgs_bit; lexicographic 000..111",
+    "joint_probability_tables": [
+      [
+        0.11454670455548577,
+        0.11606683188454518,
+        0.12132356494495927,
+        0.12308622380882189,
+        0.1264464930748915,
+        0.12841752356290143,
+        0.1341963762613631,
+        0.13591628190703073
+      ],
+      [
+        0.12308622380882189,
+        0.12132356494495927,
+        0.11606683188454518,
+        0.11454670455548577,
+        0.13591628190703073,
+        0.1341963762613631,
+        0.12841752356290143,
+        0.1264464930748915
+      ]
+    ],
+    "record_probability_contrast": 0.029044893844351105,
+    "higgs_probability_contrast": 0.006973722326599596,
+    "gravity_path_probability_contrast": 0.02497667480618737,
+    "gram_minimum_eigenvalue": 5.316555949682208e-09,
+    "higgs_instrument_gram_minimum_eigenvalues": [
+      2.628522096432954e-09,
+      2.6285219713906066e-09
+    ],
+    "closed_form_comparison_error": 2.706168622523819e-16,
+    "field_energy_plus_interaction_error": 8.673617379884035e-19,
+    "portal_propagator_identity_error": 2.254614724255715e-16,
+    "off_diagonal_static_propagator": -0.14678683615653346
+  },
+  "finite_moving_control": {
+    "state_error_G0": 0.0004642279306398926,
+    "state_error_GN": 0.0005009702767816513,
+    "higgs_static_contrast_lower": 0.004411635893605913,
+    "higgs_moving_contrast_lower": 0.0034096953400426103,
+    "record_static_contrast_lower": 0.0222465320873127,
+    "record_moving_contrast_lower": 0.0212445915337494,
+    "gravity_moving_contrast_lower": 0.0216928268355815,
+    "higgs_source_mean_lower": 0.00080167815315058,
+    "higgs_mean_absolute_upper": 0.004514588655109354,
+    "oscillatory_integral_absolute_bounds": [
+      0.0012472793771098707,
+      0.000661091153067843
+    ],
+    "variance_upper": 0.011671522112050645
+  },
+  "old_945_reading_correction": {
+    "path0_vs_coherent_path_commutator_norm": 0.5,
+    "old_individual_probabilities_preserved": true,
+    "three_current_effects_commute": true
+  },
+  "quadrature_comparison_error": 5.551115123125783e-16,
+  "scope": {
+    "gauge_invariant_parent_potential_is_physical_input": true,
+    "full_SM_representations_and_parameters_not_derived": true,
+    "added_scalar_has_no_chiral_gauge_anomaly_contribution": true,
+    "exact_results_are_for_quadratic_portal_effective_H": true,
+    "nonlinear_SM_and_full_Einstein_matching_certified": false,
+    "ideal_Higgs_effect_access_is_declared_input": true,
+    "full_six_protocol_organization_completed": false,
+    "full_goal_completed": false
+  },
+  "source_hashes": {
+    "research_cognition_physics\\archive_764_\\946\\portal_common_process.py": "2f2eb3a098dd3e8e95293c5e4436046787a0c64be4b31e1210d5b6b87e0b1848",
+    "research_cognition_physics\\archive_764_\\944\\finite_field_communication.py": "15a834d80fd1c8b65dfd915d71abf1882e70f416d58573d6343c68e8632495e5",
+    "research_cognition_physics\\archive_764_\\945\\joint_record_newton_results.json": "b70ca314c077d43aef6a294ba260dc162c35b288ab95b85e9ab36a24ffdf6bfd",
+    "research_cognition_physics\\archive_764_\\929\\joint_protocol_selection_results.json": "5382a741e90791ebd7892c6a2e0ab9926acb6aae5b8c6edf0c643f4034bbf413"
+  }
+}

@@ -1,0 +1,687 @@
+{
+  "round": 1003,
+  "date": "2026-10-07",
+  "kind": "mechanism_synthesis_and_adoption_audit",
+  "all_audit_checks_passed": true,
+  "formal_reports": 1003,
+  "fresh_physical_test_groups": 0,
+  "cumulative_test_groups": 3785,
+  "mechanism_version": "v2",
+  "groups": {
+    "Q": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "X": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "M": [
+      14,
+      15,
+      16,
+      17,
+      21
+    ],
+    "G": [
+      11,
+      12,
+      13,
+      18,
+      22
+    ],
+    "T": [
+      19,
+      23,
+      26
+    ],
+    "U": [
+      24,
+      25
+    ],
+    "E": [
+      20,
+      27
+    ]
+  },
+  "conditions": [
+    {
+      "id": "C01",
+      "title": "状态、概率、仪器、复合",
+      "newly_proved_closed": false
+    },
+    {
+      "id": "C02",
+      "title": "子系统、约束、边界拼接",
+      "newly_proved_closed": false
+    },
+    {
+      "id": "C03",
+      "title": "事件身份、关系记录、访问",
+      "newly_proved_closed": false
+    },
+    {
+      "id": "C04",
+      "title": "同一内部动力学与控制",
+      "newly_proved_closed": false
+    },
+    {
+      "id": "C05",
+      "title": "因果序、局域性、传播界",
+      "newly_proved_closed": false
+    },
+    {
+      "id": "C06",
+      "title": "有效Lorentz与惯性描述",
+      "newly_proved_closed": false
+    },
+    {
+      "id": "C07",
+      "title": "宏观维数",
+      "newly_proved_closed": false
+    },
+    {
+      "id": "C08",
+      "title": "流形、拓扑、测度、spin",
+      "newly_proved_closed": false
+    },
+    {
+      "id": "C09",
+      "title": "钟尺、参考态与可访问性",
+      "newly_proved_closed": false
+    },
+    {
+      "id": "C10",
+      "title": "共同传播几何与普适耦合",
+      "newly_proved_closed": false
+    },
+    {
+      "id": "C11",
+      "title": "引力自由度及约束闭合",
+      "newly_proved_closed": false
+    },
+    {
+      "id": "C12",
+      "title": "Einstein项及有效修正",
+      "newly_proved_closed": false
+    },
+    {
+      "id": "C13",
+      "title": "熵、面积项、引力耦合",
+      "newly_proved_closed": false
+    },
+    {
+      "id": "C14",
+      "title": "内部规范群、全局形式、连接",
+      "newly_proved_closed": false
+    },
+    {
+      "id": "C15",
+      "title": "表示、粒子谱与统计",
+      "newly_proved_closed": false
+    },
+    {
+      "id": "C16",
+      "title": "局部、混合、全局反常",
+      "newly_proved_closed": false
+    },
+    {
+      "id": "C17",
+      "title": "质量、耦合、稳定物质结构",
+      "newly_proved_closed": false
+    },
+    {
+      "id": "C18",
+      "title": "共同作用、来源与反作用",
+      "newly_proved_closed": false
+    },
+    {
+      "id": "C19",
+      "title": "真空、热态、非平衡准备",
+      "newly_proved_closed": false
+    },
+    {
+      "id": "C20",
+      "title": "跨尺度、误差与共同来源",
+      "newly_proved_closed": false
+    },
+    {
+      "id": "C21",
+      "title": "完整物质与相互作用",
+      "newly_proved_closed": false
+    },
+    {
+      "id": "C22",
+      "title": "引力来源与物质反作用",
+      "newly_proved_closed": false
+    },
+    {
+      "id": "C23",
+      "title": "统计、退相干与时间箭头",
+      "newly_proved_closed": false
+    },
+    {
+      "id": "C24",
+      "title": "宇宙初态、Λ与暗部门",
+      "newly_proved_closed": false
+    },
+    {
+      "id": "C25",
+      "title": "强引力、黑洞、紫外完成",
+      "newly_proved_closed": false
+    },
+    {
+      "id": "C26",
+      "title": "宏观经典、流体等",
+      "newly_proved_closed": false
+    },
+    {
+      "id": "C27",
+      "title": "共同数据与可区分预测",
+      "newly_proved_closed": false
+    }
+  ],
+  "coverage": [
+    {
+      "id": "quantum",
+      "section": "P01",
+      "phenomena": "干涉、纠缠、测量反作用",
+      "conditions": [
+        "C01",
+        "C02",
+        "C03",
+        "C04"
+      ],
+      "obligations": {
+        "参与者与过程": "待测系统、参考、交互场和仪器共同改变量子态；不同路径的振幅影响同一读取概率，复合态可具有不可分关联。",
+        "中间机制": "相干演化保留可重合路径之间的相位；测量作用将指定差异与标签相关，同时改变可用于后续任务的态。",
+        "资源、记录与反作用": "参考和仪器是实际子系统，标签不替代未读量子关联；未知量子态不能免费复制。控制能源与探针回扰入共同账。",
+        "输入与范围": "认知要求是操作可复核；量子形式来自001—230的有条件重建；自然作用、准备与读取另给。采用成熟测量机制，唯一结果的解释没有在本项目关闭。证据见[989](../research_note_989.md)。"
+      },
+      "previous_status": "inherited_conditional_interfaces",
+      "status": "inherited_conditional_interfaces",
+      "gaps": [
+        "interpretation",
+        "joint_implementation"
+      ],
+      "complete_physical_recovery": false
+    },
+    {
+      "id": "records",
+      "section": "P02",
+      "phenomena": "稳定记录与宏观事实",
+      "conditions": [
+        "C03",
+        "C04",
+        "C19",
+        "C23"
+      ],
+      "obligations": {
+        "参与者与过程": "材料中的指定变量与来源相关，环境片段或通信载体传递可再读取的标签，其他变量承接热和扰动。",
+        "中间机制": "选择性作用、稳定结构和合适工作窗口使某些差异保持；退相干抑制特定干涉，但不自动提供冗余记录或永久寿命。",
+        "资源、记录与反作用": "写入、读出与更新具有不同代价。1002辅助体同时供能和记录；旧环境没有在热复位后恢复初态。",
+        "输入与范围": "材料、作用、相、参考、误差和时间窗是输入。980→1002已有新增资源下的条件接续，整窗错误率<0.193043；它不是持续QND、无限保持、实体读取或全功能循环。见[1002](../research_note_1002.md)。"
+      },
+      "previous_status": "inherited_selective_interaction",
+      "status": "same_thermal_output_join_with_new_resources",
+      "gaps": [
+        "supply_mechanism",
+        "joint_implementation"
+      ],
+      "complete_physical_recovery": false
+    },
+    {
+      "id": "spacetime",
+      "section": "P03",
+      "phenomena": "空间、方向与时间比较",
+      "conditions": [
+        "C05",
+        "C06",
+        "C07",
+        "C08",
+        "C09",
+        "C10"
+      ],
+      "obligations": {
+        "参与者与过程": "物质钟尺和端口发射、接收并比较信号，多个参与者对同一事件形成可对照的坐标报告。",
+        "中间机制": "传播与可达性、方向读取及可组合位移约束定位结构；钟读数由实际内部演化给出，而非额外无成本时间标签。",
+        "资源、记录与反作用": "参考准备、传播损耗、校准误差及反馈共同决定可辨尺度；约束关联与闭路资料不能任意删除。",
+        "输入与范围": "旧条件性维数与光滑接口保持；本候选3+1、共同Lorentz结构仍属采用输入。不能从功能自相似或内部SU(2)直接签收三维。见[957 A2—A3](../957/drafts/unified_operation_hypotheses_v0_2.md)。"
+      },
+      "previous_status": "conditional_geometry_and_physical_input",
+      "status": "conditional_geometry_and_physical_input",
+      "gaps": [
+        "physical_input_not_derived",
+        "joint_implementation"
+      ],
+      "complete_physical_recovery": false
+    },
+    {
+      "id": "radiation",
+      "section": "P04",
+      "phenomena": "光、辐射与光学响应",
+      "conditions": [
+        "C14",
+        "C17",
+        "C18",
+        "C21"
+      ],
+      "obligations": {
+        "参与者与过程": "电磁场、带电材料及其跃迁发生传播、吸收、发射和散射，探测器留下响应。",
+        "中间机制": "采用电磁作用与材料极化／跃迁；介质的响应和边界决定折射、吸收与色散，几何也改变传播路径。",
+        "资源、记录与反作用": "同一相互作用交换能源、动量和资料；介质及光源会变化。光不是唯一消息载体，传播振幅不等于免费信息容量。",
+        "输入与范围": "电磁规律与电荷表示属物理采用，介质相、谱、占据和边界另给。实际材料光谱未统一匹配；不以一个声学模型替代真空光传播。见[P981](../981/drafts/common_parent_contract_v1.md)。"
+      },
+      "previous_status": "physical_input_and_partial_interfaces",
+      "status": "physical_input_and_partial_interfaces",
+      "gaps": [
+        "matching"
+      ],
+      "complete_physical_recovery": false
+    },
+    {
+      "id": "motion_mass",
+      "section": "P05",
+      "phenomena": "惯性、运动与质量",
+      "conditions": [
+        "C10",
+        "C15",
+        "C17",
+        "C18",
+        "C22"
+      ],
+      "obligations": {
+        "参与者与过程": "激发或复合物携带能量动量，交互改变运动及内部能源；吸放能伴随反冲。",
+        "中间机制": "在采用的相对论结构下，质量由静止系能源及谱体现，复合质量含相互作用和结合贡献；基本质量机制按选定物理作用给出。",
+        "资源、记录与反作用": "加热、束缚、支撑与操作能源都参与相同动量和几何来源，不能只称量裸部件后重复加结合能。",
+        "输入与范围": "Lorentz结构、质量参数、Higgs／强相互作用及有效谱均明示。971与1001给条件性反冲接口，不证明一切质量都来自内部空间循环。见[971](../research_note_971.md)。"
+      },
+      "previous_status": "physical_input_and_partial_interfaces",
+      "status": "physical_input_and_partial_interfaces",
+      "gaps": [
+        "physical_input_not_derived",
+        "matching"
+      ],
+      "complete_physical_recovery": false
+    },
+    {
+      "id": "ordinary_matter",
+      "section": "P06",
+      "phenomena": "原子、化学与普通物质",
+      "conditions": [
+        "C15",
+        "C17",
+        "C21"
+      ],
+      "obligations": {
+        "参与者与过程": "核、电子、辐射及其他材料在反应、输运和冷却中形成原子、分子及宏观材料。",
+        "中间机制": "量子动能、费米统计和电磁作用支持普通物质稳定；实际组成、结合路径、环境与相选择决定形成何种组织。",
+        "资源、记录与反作用": "结合释放和扰动输入由辐射或其他物质接收，刚性和长寿命模式可成为钟尺及记录载体，但形成不等于已能运行。",
+        "输入与范围": "999采用非相对论Coulomb稳定性定理，1001补组成／环境链，1000补选定相响应。具体成键、相形成、系数和功能载体的共同匹配仍缺。见[1001补充](../1001/nuclear_material_resource_adoption_v1.md)。"
+      },
+      "previous_status": "external_stability_theorem_adopted",
+      "status": "formation_preservation_and_phase_mechanisms_adopted",
+      "gaps": [
+        "matching",
+        "formation_history"
+      ],
+      "complete_physical_recovery": false
+    },
+    {
+      "id": "nuclear_weak",
+      "section": "P07",
+      "phenomena": "核、弱作用与粒子反应",
+      "conditions": [
+        "C14",
+        "C15",
+        "C16",
+        "C17",
+        "C21"
+      ],
+      "obligations": {
+        "参与者与过程": "核子、核、轻子及反应产物改变组成，正反反应在给定环境中竞争。",
+        "中间机制": "强、电磁及弱作用与守恒、选择规则共同决定允许通道，各通道的主导机制分别匹配；束缚、相空间、环境占据及反应率决定形成和保存。正结合能不保证在高温中大量存在。",
+        "资源、记录与反作用": "计量、反冲、辐射、净荷与介质反馈共同记账；产生的元素需输运和冷却才能成为其他组织的材料。",
+        "输入与范围": "SM及核有效作用、质量与率是物理采用。1001四个受限核平衡截面不是BBN轨迹或真实丰度；没有从认知功能推出粒子表。见[1001](../research_note_1001.md)。"
+      },
+      "previous_status": "standard_model_input_not_new_derivation",
+      "status": "reaction_and_environment_mechanisms_adopted",
+      "gaps": [
+        "parameters",
+        "formation_history"
+      ],
+      "complete_physical_recovery": false
+    },
+    {
+      "id": "phases_transport",
+      "section": "P08",
+      "phenomena": "宏观相、弹性、声与输运",
+      "conditions": [
+        "C17",
+        "C19",
+        "C23",
+        "C26"
+      ],
+      "obligations": {
+        "参与者与过程": "已选定材料相的慢变量和守恒密度发生集体运动、形变及热／动量输运。",
+        "中间机制": "共同热力学势给相应可逆响应，耗散系数和必要涨落描述未保留自由度的作用；声是该相中的集体激发。",
+        "资源、记录与反作用": "热—力响应须配对；遗漏反向反馈可在正熵产下破坏能源闭合。需保留被任务使用的慢记录，而非一律消去。",
+        "输入与范围": "已有1000共同本构条件例，故不再列作完全缺机制；材料相、系数、噪声和工作域仍输入。声的有效几何不是Einstein动力学，Fourier扩散不授权微观瞬时因果传递。见[1000](../research_note_1000.md)。"
+      },
+      "previous_status": "priority_mechanism_gap",
+      "status": "common_thermomechanical_example_with_phase_input",
+      "gaps": [
+        "parameters",
+        "noise_and_lifetime"
+      ],
+      "complete_physical_recovery": false
+    },
+    {
+      "id": "thermal_arrow",
+      "section": "P09",
+      "phenomena": "热化、耗散与时间箭头",
+      "conditions": [
+        "C19",
+        "C23",
+        "C26"
+      ],
+      "obligations": {
+        "参与者与过程": "组织与有限接收者交换能源和关联；有限访问下部分原有差异不再可用，接收者自身改变。",
+        "中间机制": "实际接触与可用转移通道改变占据和相关性，粗描述可能趋于热参考；方向性还依赖初始非平衡及允许访问。",
+        "资源、记录与反作用": "热量、可用功、纯度、相位参考和可读取记录分别核算；不可把比较热态当真实热浴，也不把熵增加当全部能源已守恒。",
+        "输入与范围": "980给有限热副本复位，992／998补差异响应和有限接收者。初始非平衡、实际冷却／泵浦和参考供给仍需指定；宇宙初始箭头未推出。见[980](../research_note_980.md)、[998](../research_note_998.md)。"
+      },
+      "previous_status": "conditional_finite_resource_mechanisms",
+      "status": "conditional_finite_resource_mechanisms",
+      "gaps": [
+        "supply_mechanism",
+        "initial_boundary"
+      ],
+      "complete_physical_recovery": false
+    },
+    {
+      "id": "gravity",
+      "section": "P10",
+      "phenomena": "重力、钟效应、透镜与波",
+      "conditions": [
+        "C10",
+        "C11",
+        "C12",
+        "C18",
+        "C22"
+      ],
+      "obligations": {
+        "参与者与过程": "同一物质、场和交互来源与几何相互影响；几何改变钟比较、光传播和物质运动，扰动可向外传播。",
+        "中间机制": "采用共同Einstein有效动力学与物质耦合，得到相应几何响应及传播；观测由实际钟尺和探针完成。",
+        "资源、记录与反作用": "控制、支撑、热、束缚和真空项使用同一来源处方；局部能量零点不能分别改变引力预测。一般时空没有自动成立的整体常数总能量。",
+        "输入与范围": "共同度规、作用和匹配参数是明示输入；既有同源与约束接口部分已核，未签收全部现象的联合恢复，更不是从认知独立推导GR。见[B993](../993/common_candidate_v1.md)。"
+      },
+      "previous_status": "einstein_effective_input_and_partial_interfaces",
+      "status": "einstein_effective_input_and_partial_interfaces",
+      "gaps": [
+        "physical_input_not_derived",
+        "joint_implementation"
+      ],
+      "complete_physical_recovery": false
+    },
+    {
+      "id": "horizons",
+      "section": "P11",
+      "phenomena": "黑洞外部、视界与半经典效应",
+      "conditions": [
+        "C11",
+        "C12",
+        "C13",
+        "C25"
+      ],
+      "obligations": {
+        "参与者与过程": "坍缩物质、几何、量子场与探测器共同决定外部可达性、吸收及可能的辐射响应。",
+        "中间机制": "视界限定信号可达范围；量子辐射还需要场态、准备历史和探测器，不能由“看不到”直接推出温度。事件视界还涉及整个未来。",
+        "资源、记录与反作用": "外部失去访问不等于从整体删除关联；辐射能流、应力、几何反馈与熵的处方需相容。",
+        "输入与范围": "成熟经典／半经典框架可采用，项目尚缺具体有限强场任务的共同核验。317／319的局部接口、635／648几何熵项不是完整黑洞热熵或蒸发证明。低曲率也不自动证明任意微观完成的辐射稳健性。依据[Wald§2—3](https://arxiv.org/html/gr-qc/9912119)。"
+      },
+      "previous_status": "mature_effective_route_not_project_recovery",
+      "status": "mature_effective_route_not_project_recovery",
+      "gaps": [
+        "finite_task_mechanism",
+        "beyond_effective_domain"
+      ],
+      "complete_physical_recovery": false
+    },
+    {
+      "id": "cosmic_formation",
+      "section": "P12",
+      "phenomena": "膨胀、红移与结构形成",
+      "conditions": [
+        "C09",
+        "C17",
+        "C19",
+        "C24"
+      ],
+      "obligations": {
+        "参与者与过程": "同一几何中的辐射和物质响应不同；局部聚集、反应、散热及材料形成改变可用组织和资源。",
+        "中间机制": "采用的宇宙动力学改变传播频率及密度；局部束缚和准静态形成支有各自条件，不跟随整体尺度等比例伸缩。",
+        "资源、记录与反作用": "释放能源必须有实际接收者；有限接收者改变温度和稳定性。局部非平衡可以供给组织，不能凭“膨胀”免费制造钟和空白。",
+        "输入与范围": "几何与相容初态、组成、扰动、局部物态均输入。992低温材料、994高温窗口、996辐射主导和997加速校准不是已连接的实际宇宙史。见[998采用审计](../research_note_998_working.md)。"
+      },
+      "previous_status": "conditional_cosmic_and_formation_routes",
+      "status": "conditional_cosmic_and_formation_routes",
+      "gaps": [
+        "initial_boundary",
+        "formation_history"
+      ],
+      "complete_physical_recovery": false
+    },
+    {
+      "id": "asymmetry_neutrino",
+      "section": "P13",
+      "phenomena": "物质不对称、中微子质量与混合",
+      "conditions": [
+        "C15",
+        "C16",
+        "C17",
+        "C21",
+        "C24"
+      ],
+      "obligations": {
+        "参与者与过程": "轻子、Higgs及选定扩展的内部变量影响质量、味演化和可能的净荷生成／洗出。",
+        "中间机制": "采用维五质量算符及可选W995维七项；相对CP结构、变化和非平衡是生成接口的一部分，还需真实源及保存条件。",
+        "资源、记录与反作用": "同一耦合同时进入质量、生成、洗出和来源反馈；变化由内部状态支撑。994的初始净荷分支不能冒充995—996已生成该净荷。",
+        "输入与范围": "质量算符、系数、CP参数及宇宙态是输入。995的CP因子和996的条件包络没有认证实际热源、味输运或现实产额；新增维七项确实增加输入。见[995](../research_note_995.md)、[996](../research_note_996.md)。"
+      },
+      "previous_status": "explicit_extension_not_actual_yield",
+      "status": "explicit_extension_not_actual_yield",
+      "gaps": [
+        "actual_source",
+        "parameters",
+        "formation_history"
+      ],
+      "complete_physical_recovery": false
+    },
+    {
+      "id": "dark_matter",
+      "section": "P14",
+      "phenomena": "暗物质现象",
+      "conditions": [
+        "C17",
+        "C18",
+        "C24"
+      ],
+      "obligations": {
+        "参与者与过程": "观测需要解释引力来源及其分布；可选D991以弱接触实单态σ承担暗部门的一个候选。",
+        "中间机制": "明示未破缺Z2保护最轻奇态，Higgs门户控制与普通物质的接触；弱接触不消除能量或引力来源。",
+        "资源、记录与反作用": "普通与暗部门的Higgs源共同消去／匹配，保交叉作用；所选成对阈值不能自动用静态近似消去Higgs。",
+        "输入与范围": "新场、对称性、作用、占据和分布均输入。稳定候选不等于现实暗物质身份、丰度、聚集或观测允许域；D991失败不要求整个纲领先修复它。见[991](../research_note_991.md)、[993](../research_note_993.md)。"
+      },
+      "previous_status": "optional_candidate_not_identification",
+      "status": "optional_candidate_not_identification",
+      "gaps": [
+        "identity",
+        "parameters",
+        "formation_history"
+      ],
+      "complete_physical_recovery": false
+    },
+    {
+      "id": "acceleration",
+      "section": "P15",
+      "phenomena": "加速膨胀",
+      "conditions": [
+        "C12",
+        "C18",
+        "C24"
+      ],
+      "obligations": {
+        "参与者与过程": "材料、辐射及有效真空来源共同影响宇宙几何，改变有限参与者可访问的范围。",
+        "中间机制": "采用正有效Λ给相应密度、负压及加速分支；这已有明确有效机制，参数或微观来源未知不等于完全缺机制。",
+        "资源、记录与反作用": "真空项与物质源使用同一处方。固定几何上的常数不凭空产生可用功；体积增加不保证任务仍能往返完成。",
+        "输入与范围": "Λ及宇宙态／未来条件是输入，实际暗能量是否恒定和数值来源未解释；997未预测整个真实未来，也未给视界热温度。见[997](../research_note_997.md)。"
+      },
+      "previous_status": "effective_lambda_input",
+      "status": "effective_lambda_input",
+      "gaps": [
+        "parameters",
+        "microscopic_origin"
+      ],
+      "complete_physical_recovery": false
+    },
+    {
+      "id": "cross_scale",
+      "section": "P16",
+      "phenomena": "跨尺度共同预测",
+      "conditions": [
+        "C20",
+        "C27"
+      ],
+      "obligations": {
+        "参与者与过程": "同一材料、几何、仪器与状态在量子、材料、热学及几何描述间换用字典，比较重叠任务的结果。",
+        "中间机制": "保留相关变量并匹配作用、仪器和来源；这是对共同解释的验收职责，本身不是额外物理作用或“粗粒化创造世界”的证明。",
+        "资源、记录与反作用": "必要后态、噪声／记忆、能源与源响应随字典一起传递，误差分别控制；不能重复计算束缚成分或漏掉控制反作用。",
+        "输入与范围": "采用A7及旧误差工具，按有效域验收。概率误差小不自动控制无界应力；全表尚无共同证书和定量观测恢复。见[957](../957/drafts/unified_operation_hypotheses_v0_2.md)。"
+      },
+      "previous_status": "joint_certificate_open",
+      "status": "joint_certificate_open",
+      "gaps": [
+        "joint_implementation",
+        "empirical_recovery"
+      ],
+      "complete_physical_recovery": false
+    }
+  ],
+  "adoption_changes": [
+    "separate_existence_formation_preservation_operation",
+    "adopt_phase_transport_without_claiming_phase_formation",
+    "mixed_memory_can_record_with_additional_resources",
+    "energy_auxiliary_also_receives_entropy_and_records",
+    "separate_common_theory_from_common_history"
+  ],
+  "connections": [
+    {
+      "id": "thermal_output_to_population_record",
+      "rounds": [
+        980,
+        1002
+      ],
+      "state_connection_verified": true,
+      "requires_new_resources": true,
+      "arbitrary_phase_lifecycle_verified": false
+    },
+    {
+      "id": "phase_and_thermal_tasks",
+      "rounds": [
+        976,
+        980,
+        1002
+      ],
+      "state_connection_verified": false
+    },
+    {
+      "id": "nuclei_to_material_to_function",
+      "rounds": [
+        1001,
+        1000,
+        1002
+      ],
+      "state_connection_verified": false
+    },
+    {
+      "id": "dark_preparations",
+      "rounds": [
+        991,
+        995,
+        996
+      ],
+      "state_connection_verified": false
+    },
+    {
+      "id": "cosmic_windows",
+      "rounds": [
+        992,
+        994,
+        996,
+        997
+      ],
+      "state_connection_verified": false
+    },
+    {
+      "id": "common_action_to_complete_process",
+      "rounds": [
+        993
+      ],
+      "state_connection_verified": false
+    }
+  ],
+  "next_priority": "finite nonequilibrium supply to task preparation and relational references",
+  "mathematical_axioms_957_changed": false,
+  "application_goal_changed": false,
+  "new_physics_theorem": false,
+  "joint_lifecycle_certified": false,
+  "all_physical_phenomena_explained": false,
+  "full_goal_completed": false,
+  "coverage_is_physical_proof": false,
+  "old_numerical_models_rerun": false,
+  "source_hashes": {
+    "research_cognition_physics\\archive_764_\\1003\\mechanism_synthesis_audit.py": "e0ff9e6519be30bbdf9c7cc3f510d1303b5160999e53c1fd4ccf8b9ce15906c3",
+    "research_cognition_physics\\archive_764_\\1003\\overall_operation_hypothesis_v2.md": "a9452ece2295fffa137569e571d4d1ba750f2fadb2b39d701cd3726e55c2c9f1",
+    "research_cognition_physics\\archive_764_\\1003\\drafts\\adoption_decision.md": "169bba1b8e9e0ac3f111d82c9a6c3b871a86022bf1ac2a5081721f988d46200d",
+    "research_cognition_physics\\archive_764_\\1003\\drafts\\review_notes.md": "fbb637355164d6cb10853645b99062819350c45bc41cb671aa7303b79ccdd8c9",
+    "research_cognition_physics\\archive_764_\\research_note_1003.md": "31fbe7e8afabcd71541d1cbdd14ca7560d2fc13baa0568c7df2503940b8c618c",
+    "research_cognition_physics\\archive_764_\\1004\\drafts\\STATUS.md": "eb580fd6542a6b86d278474e3d047a63adffd0b1046ee5843d3c6c94499f39b1",
+    "research_cognition_physics\\archive_764_\\999\\mechanism_adoption_results.json": "a434955d539fc15033bad88ded95d1d2360eecf1e8bfc203af26eab8e53b60ee",
+    "research_cognition_physics\\archive_764_\\999\\overall_operation_hypothesis_v1.md": "ece850ff13e4d501ae8e40e68a56f15b8d763b2560de924cefd693573106d7e1",
+    "research_cognition_physics\\archive_764_\\990\\mechanism_inventory.json": "f295de3633de8e152c15674a48494f9d11d0f6432698b84eb614083daf948d53",
+    "research_cognition_physics\\archive_764_\\957\\drafts\\unified_operation_hypotheses_v0_2.md": "5f0261a9cb6c03017c1b4f3d23e53ede457e42c4710b2c3ae3918d62301029d6",
+    "research_cognition_physics\\archive_764_\\993\\common_candidate_v1.md": "8954e2b40ccb270ef886f2430d219b8438cd9b9955ac3570e39cb0b00784ce36",
+    "research_cognition_physics\\archive_764_\\997\\cosmological_adoption_v1.md": "96e2ce42683a77166a41c607a58ec6a6eda435bea9ed6d998cca5be465510a92",
+    "research_cognition_physics\\archive_764_\\998\\formation_resource_adoption_v1.md": "c3c6cff5ea4aa5748779ed8290269c3340fa55a2d59cadde18b60f9eb4b7c33d",
+    "research_cognition_physics\\archive_764_\\1000\\material_phase_transport_adoption_v1.md": "2044d69b7fa18c8eedc55889985aadd62808539fcc432d513e3b8c53c10f8096",
+    "research_cognition_physics\\archive_764_\\1001\\nuclear_material_resource_adoption_v1.md": "7b2b7a4a7bd147c53805a10018cec0fe99b95a82f797a73c86e92bfe86e2c179",
+    "research_cognition_physics\\archive_764_\\1002\\organization_lifecycle_adoption_v1.md": "b11634cea949dd0d280667ae03cd056d72716044a28a344404ff03442e50a095",
+    "research_cognition_physics\\archive_764_\\980\\finite_thermal_records_results.json": "01c18485a3fa99a4ad73ed1f127a936d050a8988a16b89a6063e85cdd3ec01c2",
+    "research_cognition_physics\\archive_764_\\1002\\thermal_record_reuse_results.json": "6f4891e5ce208a6329b222124b56e2df08badc31c3446b54b9f5d2bc541b7f38",
+    "research_cognition_physics\\archive_764_\\research_note_991.md": "97dd900d43ee06ac6656f0e27369fdd86ac887a474911ce7d32bb08c3a9aef0d",
+    "research_cognition_physics\\archive_764_\\research_note_992.md": "b6e721a43a7843966af6c3af9078538465b5ba091cbc0446ce479985f6b804fa",
+    "research_cognition_physics\\archive_764_\\research_note_993.md": "e635e99fd000ebd347f1a3a9d01fad37d18894debc61d89eb3544cdbd0109b0b",
+    "research_cognition_physics\\archive_764_\\research_note_994.md": "ea87b3f905fa63db4c812de7370aa488d4b6ce2ef03f3174b66755f6de2b0f23",
+    "research_cognition_physics\\archive_764_\\research_note_995.md": "753c062486901f324ae470e0d4fa80876451c612689256dab32942bfe843611d",
+    "research_cognition_physics\\archive_764_\\research_note_996.md": "9dbd47453e9b9acaed5e0a3165362e457e9ab3eee73fd68ef411df07e916b7cd",
+    "research_cognition_physics\\archive_764_\\research_note_997.md": "855cc1f5f94da058a13153d84384114e56cbe1e3862226b7f0f0293adebcc78b",
+    "research_cognition_physics\\archive_764_\\research_note_998.md": "67388d9c31ccc7eba0dbf94d69290b78ffcb3c6462369b0a6328437834c67f3d",
+    "research_cognition_physics\\archive_764_\\research_note_999.md": "4d03d0af27e14cf32a1520b7a03a80e42ca09b133c99ca14b8252a81ce60bff4",
+    "research_cognition_physics\\archive_764_\\research_note_1000.md": "c41abd107fdaa9511ea2d3d1c223269faf62b3cc1b304658029f7eb9faa76ca6",
+    "research_cognition_physics\\archive_764_\\research_note_1001.md": "715b170658b20dd237858a125a2ca9d4ca5955119093f9b2fbb5cab457789ae7",
+    "research_cognition_physics\\archive_764_\\research_note_1002.md": "bd1231a1ada22c758f3a7f62e5bfed4cc3bfb5b275b987a3b96cc3c05e7ccaa6",
+    "research_cognition_physics\\archive_764_\\976\\research_round_976_checks.json": "ed0125e2fbcee9b76c78f70a51712ad3f76f9835c568dfd0a27de66143e3275d",
+    "research_cognition_physics\\archive_764_\\980\\research_round_980_checks.json": "cf9aaba7348cacdd4cd906c7cebdf1959e8be13d90431ed8121aa04e89c2fefe",
+    "research_cognition_physics\\archive_764_\\999\\research_round_999_checks.json": "2bdac134816c9cab5660354a539f8c90e3adf0f6a482609882f76b45101fb2cb",
+    "research_cognition_physics\\archive_764_\\1000\\research_round_1000_checks.json": "78dde9ca4a787f8e25ce81649e2f74a708f511bb21adba2a62d587e996e2f08a",
+    "research_cognition_physics\\archive_764_\\1001\\research_round_1001_checks.json": "c3bb65b051cedfd76e7fcf0fc578f75a6d305d082d856c671f05b8322e0229a1",
+    "research_cognition_physics\\archive_764_\\1002\\research_round_1002_checks.json": "ceebdc9af4ae627743ca01a1e2d3053db6f2848964802b5cbc4979381dad4475"
+  }
+}

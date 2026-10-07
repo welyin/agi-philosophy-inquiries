@@ -1,0 +1,1005 @@
+{
+  "round": 908,
+  "date": "2026-10-06",
+  "all_checks_passed": true,
+  "argument_scope": "Original fixed material loop, compact4D anchor profile, three quotient-group records and all off-shell first-jet weak sources on the actual902 short-time numerical background. No full PDE error or strong-source/feedback completion.",
+  "design": {
+    "L": 0.08,
+    "widths": [
+      2e-05,
+      2e-05,
+      2e-05,
+      0.005
+    ],
+    "profile": "normalized product exp(-1/(1-u^2)) on (-1,1)^4 transported by fixed907 initial Jacobian",
+    "curve": "fixed901 dyadic initial psi witness image of the original physical rectangle",
+    "reference_X": [
+      0.6987151138647895,
+      0.545863690226873,
+      0.0,
+      0.007099480532805241
+    ],
+    "reference_J": [
+      [
+        0.007338794654316687,
+        -2.415323725182204e-17,
+        3.35290620829038e-17,
+        0.0
+      ],
+      [
+        -0.22516542502012044,
+        0.0,
+        -0.032751821413611326,
+        0.0
+      ],
+      [
+        0.0,
+        0.020000000000000042,
+        0.0,
+        0.0
+      ],
+      [
+        0.04338258621853164,
+        -8.168376799099004e-06,
+        -3.0624350851023163e-06,
+        1.5535561753273733e-05
+      ]
+    ]
+  },
+  "rows": [
+    {
+      "N": 16,
+      "background_steps_each_direction": 2,
+      "interpolation_half_time": 0.00025,
+      "Fourier_drop_threshold": 1e-11,
+      "anchor_order": 2,
+      "segments_per_edge": 8,
+      "retained_spatial_modes": 590,
+      "records": [
+        2.9999999809271967,
+        3.145201052782196e-13,
+        7.999999885563173
+      ],
+      "inverse_and_support_diagnostics": {
+        "inverse_coordinate_residual": 4.628589233630229e-11,
+        "iterations": 8,
+        "time_min": -7.956476491718096e-06,
+        "time_max": 7.957697430572326e-06,
+        "minimum_Jacobian_det": 7.35512183003877e-11,
+        "clock_margin": 5.379786826970365e-05,
+        "maximum_sampled_receiver_radius": 0.1366048504969948,
+        "anchor_count": 16,
+        "path_sample_count": 512
+      },
+      "source_responses": {
+        "metric": {
+          "total": [
+            -7.812808934784337e-08,
+            -4.2307244698516215e-12,
+            -4.6876853310655776e-07
+          ],
+          "direct": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": [
+            -7.812808934784422e-08,
+            -4.230724469851596e-12,
+            -4.687685331065641e-07
+          ],
+          "jet_pairing_identity_residual": 6.3527471044072525e-21
+        },
+        "clock": {
+          "total": [
+            -3.861542484468764e-09,
+            1.6382402292714122e-11,
+            -2.3169254759510286e-08
+          ],
+          "direct": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": [
+            -3.86154248446875e-09,
+            1.6382402285514342e-11,
+            -2.3169254759510305e-08
+          ],
+          "jet_pairing_identity_residual": 7.199780051661553e-21
+        },
+        "probe": {
+          "total": [
+            3.3181445560569586e-07,
+            0.003096169641702059,
+            1.9908867229203167e-06
+          ],
+          "direct": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": [
+            3.318144556056958e-07,
+            0.00309616964170206,
+            1.9908867229203155e-06
+          ],
+          "jet_pairing_identity_residual": 1.3010426069826053e-18
+        },
+        "color_gauge": {
+          "total": [
+            -1.2388937723004241e-14,
+            4.158713540563038e-18,
+            -7.433378633843396e-14
+          ],
+          "direct": [
+            -1.2388937722021964e-14,
+            4.15871354079023e-18,
+            -7.433378634153589e-14
+          ],
+          "reference": [
+            2.513821068598258e-25,
+            -9.74914612691128e-30,
+            1.5082926315597906e-24
+          ],
+          "jet_pairing_identity_residual": 1.5936346655140632e-24
+        },
+        "affine_diffeomorphism": {
+          "total": [
+            -9.138980635549114e-18,
+            -4.167402100491158e-18,
+            -5.4865862898503734e-17
+          ],
+          "direct": [
+            -1.140633589993156e-09,
+            1.5709010041702802e-15,
+            -6.843801496479697e-09
+          ],
+          "reference": [
+            1.1406335808525588e-09,
+            -1.5750665533861992e-15,
+            6.843801441606642e-09
+          ],
+          "jet_pairing_identity_residual": 7.192335426148576e-21
+        },
+        "time_translation": {
+          "total": [
+            4.115081493323805e-23,
+            6.346518229382291e-21,
+            1.9298346796503343e-22
+          ],
+          "direct": [
+            -7.602258667824353e-12,
+            -5.376056482022632e-13,
+            -4.56135517171532e-11
+          ],
+          "reference": [
+            7.602258667865184e-12,
+            5.376056541449226e-13,
+            4.561355171732467e-11
+          ],
+          "jet_pairing_identity_residual": 4.0385881717551157e-22
+        }
+      },
+      "finite_Fourier_discard_field_bound_on_slab": 6.238993075653317e-10,
+      "finite_Fourier_discard_spatial_derivative_bounds": [
+        2.76177735376281e-09,
+        2.042746710524249e-09,
+        1.6706564943413265e-09
+      ],
+      "same_fixed_material_curve_and_profile": true
+    },
+    {
+      "N": 16,
+      "background_steps_each_direction": 2,
+      "interpolation_half_time": 0.00025,
+      "Fourier_drop_threshold": 1e-11,
+      "anchor_order": 2,
+      "segments_per_edge": 16,
+      "retained_spatial_modes": 590,
+      "records": [
+        2.999999980927199,
+        3.1420409533553065e-13,
+        7.999999885563162
+      ],
+      "inverse_and_support_diagnostics": {
+        "inverse_coordinate_residual": 4.650854132699743e-11,
+        "iterations": 8,
+        "time_min": -7.956509096144928e-06,
+        "time_max": 7.957730084633476e-06,
+        "minimum_Jacobian_det": 7.354158133077681e-11,
+        "clock_margin": 5.3797427709319364e-05,
+        "maximum_sampled_receiver_radius": 0.13802214714287422,
+        "anchor_count": 16,
+        "path_sample_count": 1024
+      },
+      "source_responses": {
+        "metric": {
+          "total": [
+            -7.812933707667689e-08,
+            -4.230718285775649e-12,
+            -4.687760194789806e-07
+          ],
+          "direct": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": [
+            -7.812933707667697e-08,
+            -4.230718285775656e-12,
+            -4.687760194789819e-07
+          ],
+          "jet_pairing_identity_residual": 1.2705494208814505e-21
+        },
+        "clock": {
+          "total": [
+            -3.861807701851407e-09,
+            1.6436213777469024e-11,
+            -2.317084606379027e-08
+          ],
+          "direct": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": [
+            -3.861807701851447e-09,
+            1.643621377662199e-11,
+            -2.317084606379033e-08
+          ],
+          "jet_pairing_identity_residual": 8.470329472543003e-22
+        },
+        "probe": {
+          "total": [
+            3.318109022118266e-07,
+            0.00309615994511454,
+            1.9908654025547735e-06
+          ],
+          "direct": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": [
+            3.3181090221182716e-07,
+            0.003096159945114542,
+            1.9908654025547692e-06
+          ],
+          "jet_pairing_identity_residual": 2.168404344971009e-18
+        },
+        "color_gauge": {
+          "total": [
+            -3.0966201719340994e-15,
+            1.0312382037863123e-18,
+            -1.857977727226068e-14
+          ],
+          "direct": [
+            -3.0966201709905965e-15,
+            1.0312382038809757e-18,
+            -1.8579777276293184e-14
+          ],
+          "reference": [
+            -7.98498839719689e-26,
+            -1.646658709649333e-30,
+            -4.790993007719505e-25
+          ],
+          "jet_pairing_identity_residual": 4.511604786967961e-24
+        },
+        "affine_diffeomorphism": {
+          "total": [
+            -2.278856402147325e-18,
+            -1.3755815063409838e-18,
+            -1.3665290994033513e-17
+          ],
+          "direct": [
+            -1.1406335715995063e-09,
+            1.5711144564729883e-15,
+            -6.843801386077996e-09
+          ],
+          "reference": [
+            1.1406335693191753e-09,
+            -1.5724861733915074e-15,
+            6.8438013724045495e-09
+          ],
+          "jet_pairing_identity_residual": 8.156000839772853e-21
+        },
+        "time_translation": {
+          "total": [
+            2.1868241479559914e-23,
+            -6.399175917583994e-21,
+            7.581813828092384e-23
+          ],
+          "direct": [
+            -7.602261883642806e-12,
+            -5.376079079596078e-13,
+            -4.561357101184769e-11
+          ],
+          "reference": [
+            7.60226188367512e-12,
+            5.376079014317052e-13,
+            4.561357101200977e-11
+          ],
+          "jet_pairing_identity_residual": 1.2872665068010128e-22
+        }
+      },
+      "finite_Fourier_discard_field_bound_on_slab": 6.238993075653317e-10,
+      "finite_Fourier_discard_spatial_derivative_bounds": [
+        2.76177735376281e-09,
+        2.042746710524249e-09,
+        1.6706564943413265e-09
+      ],
+      "same_fixed_material_curve_and_profile": true,
+      "independent_jet_checks": {
+        "independent_offshell_jets": 372,
+        "reference_derivative_max_error": 1.787307281342354e-16,
+        "source_adjoint_pairing_max_error": 8.673617379884035e-19,
+        "omitted_metric_local_pair_defect": 5.417477748102618e-08,
+        "omitted_time_derivative_local_pair_defect": 3.87617361548506e-10,
+        "omitted_clock_derivative_local_pair_defect": 6.61113106489949e-08,
+        "independent_time_and_connection_jets_retained": true
+      }
+    },
+    {
+      "N": 16,
+      "background_steps_each_direction": 2,
+      "interpolation_half_time": 0.00025,
+      "Fourier_drop_threshold": 1e-11,
+      "anchor_order": 2,
+      "segments_per_edge": 32,
+      "retained_spatial_modes": 590,
+      "records": [
+        2.999999980927189,
+        3.1521745776657723e-13,
+        7.999999885563075
+      ],
+      "inverse_and_support_diagnostics": {
+        "inverse_coordinate_residual": 4.5726905464479986e-11,
+        "iterations": 8,
+        "time_min": -7.956525406257218e-06,
+        "time_max": 7.957746427182401e-06,
+        "minimum_Jacobian_det": 7.353665279796057e-11,
+        "clock_margin": 5.379720742613702e-05,
+        "maximum_sampled_receiver_radius": 0.13874228516607937,
+        "anchor_count": 16,
+        "path_sample_count": 2048
+      },
+      "source_responses": {
+        "metric": {
+          "total": [
+            -7.812964903739199e-08,
+            -4.2307164410439406e-12,
+            -4.6877789124378987e-07
+          ],
+          "direct": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": [
+            -7.812964903739145e-08,
+            -4.230716441043937e-12,
+            -4.6877789124378627e-07
+          ],
+          "jet_pairing_identity_residual": 3.5998900258307764e-21
+        },
+        "clock": {
+          "total": [
+            -3.8618739931287145e-09,
+            1.644914490516136e-11,
+            -2.3171243811456952e-08
+          ],
+          "direct": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": [
+            -3.861873993128731e-09,
+            1.644914490516136e-11,
+            -2.317124381145711e-08
+          ],
+          "jet_pairing_identity_residual": 1.5881867761018131e-22
+        },
+        "probe": {
+          "total": [
+            3.318100112117831e-07,
+            0.0030961575210749267,
+            1.990860056559898e-06
+          ],
+          "direct": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": [
+            3.3181001121178285e-07,
+            0.003096157521074925,
+            1.9908600565599e-06
+          ],
+          "jet_pairing_identity_residual": 1.734723475976807e-18
+        },
+        "color_gauge": {
+          "total": [
+            -7.735759134188863e-16,
+            3.454735366363198e-19,
+            -4.6413927564026694e-15
+          ],
+          "direct": [
+            -7.735759153511285e-16,
+            3.454735368761335e-19,
+            -4.641392757901934e-15
+          ],
+          "reference": [
+            2.235492420579367e-25,
+            -1.047606379583609e-31,
+            1.3412954438223279e-24
+          ],
+          "jet_pairing_identity_residual": 1.7086929700776514e-24
+        },
+        "affine_diffeomorphism": {
+          "total": [
+            -5.2565602884582695e-19,
+            5.47447981722295e-18,
+            -3.142835489226063e-18
+          ],
+          "direct": [
+            -1.1406335669847947e-09,
+            1.571684139069576e-15,
+            -6.843801358386793e-09
+          ],
+          "reference": [
+            1.140633566457865e-09,
+            -1.566209659252353e-15,
+            6.843801355237422e-09
+          ],
+          "jet_pairing_identity_residual": 6.535554019781472e-21
+        },
+        "time_translation": {
+          "total": [
+            1.3288010708129897e-23,
+            -2.5398840664601603e-21,
+            1.5652319039195582e-23
+          ],
+          "direct": [
+            -7.602262688164948e-12,
+            -5.376084730120609e-13,
+            -4.561357583891211e-11
+          ],
+          "reference": [
+            7.60226268817256e-12,
+            5.376084736048392e-13,
+            4.5613575838914583e-11
+          ],
+          "jet_pairing_identity_residual": 3.132662327683223e-21
+        }
+      },
+      "finite_Fourier_discard_field_bound_on_slab": 6.238993075653317e-10,
+      "finite_Fourier_discard_spatial_derivative_bounds": [
+        2.76177735376281e-09,
+        2.042746710524249e-09,
+        1.6706564943413265e-09
+      ],
+      "same_fixed_material_curve_and_profile": true
+    },
+    {
+      "N": 16,
+      "background_steps_each_direction": 2,
+      "interpolation_half_time": 0.00025,
+      "Fourier_drop_threshold": 1e-11,
+      "anchor_order": 3,
+      "segments_per_edge": 16,
+      "retained_spatial_modes": 590,
+      "records": [
+        2.999999980927095,
+        3.1475464176144423e-13,
+        7.999999885562605
+      ],
+      "inverse_and_support_diagnostics": {
+        "inverse_coordinate_residual": 4.2432898339971964e-11,
+        "iterations": 8,
+        "time_min": -1.1585430380257496e-05,
+        "time_max": 1.1588049690913595e-05,
+        "minimum_Jacobian_det": 7.346521420536086e-11,
+        "clock_margin": 5.376971331689202e-05,
+        "maximum_sampled_receiver_radius": 0.139079370357606,
+        "anchor_count": 81,
+        "path_sample_count": 5184
+      },
+      "source_responses": {
+        "metric": {
+          "total": [
+            -7.813930607753211e-08,
+            -4.226258982890433e-12,
+            -4.68835833484161e-07
+          ],
+          "direct": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": [
+            -7.813930607753084e-08,
+            -4.226258982890443e-12,
+            -4.688358334841542e-07
+          ],
+          "jet_pairing_identity_residual": 6.776263578034403e-21
+        },
+        "clock": {
+          "total": [
+            -3.8604019689932094e-09,
+            1.6435518553154708e-11,
+            -2.316241166669819e-08
+          ],
+          "direct": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": [
+            -3.860401968993213e-09,
+            1.6435518549766577e-11,
+            -2.3162411666698297e-08
+          ],
+          "jet_pairing_identity_residual": 3.3881317890172014e-21
+        },
+        "probe": {
+          "total": [
+            3.3179922788325737e-07,
+            0.0030961663393450274,
+            1.990795356584304e-06
+          ],
+          "direct": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": [
+            3.3179922788325726e-07,
+            0.0030961663393450287,
+            1.990795356584303e-06
+          ],
+          "jet_pairing_identity_residual": 1.3010426069826053e-18
+        },
+        "color_gauge": {
+          "total": [
+            -3.0969653735193447e-15,
+            1.021192504085064e-18,
+            -1.8581613455125652e-14
+          ],
+          "direct": [
+            -3.096965373932935e-15,
+            1.0211925038831156e-18,
+            -1.8581613461743097e-14
+          ],
+          "reference": [
+            1.6387939420547583e-25,
+            -4.002837866993963e-30,
+            9.832763589791826e-25
+          ],
+          "jet_pairing_identity_residual": 5.634168541445039e-24
+        },
+        "affine_diffeomorphism": {
+          "total": [
+            -2.198613795197361e-18,
+            5.346471963069144e-18,
+            -1.3212329974755313e-17
+          ],
+          "direct": [
+            -1.1406391017590467e-09,
+            1.5717027737944156e-15,
+            -6.8438345670645914e-09
+          ],
+          "reference": [
+            1.1406390995604383e-09,
+            -1.5663587370510698e-15,
+            6.843834553852137e-09
+          ],
+          "jet_pairing_identity_residual": 2.4352197233561135e-21
+        },
+        "time_translation": {
+          "total": [
+            -4.06718528297148e-23,
+            -2.828531039861398e-22,
+            -2.4725049851537676e-22
+          ],
+          "direct": [
+            -7.602298743920257e-12,
+            -5.376079085166106e-13,
+            -4.561379217353667e-11
+          ],
+          "reference": [
+            7.602298743877037e-12,
+            5.376079077438171e-13,
+            4.561379217325929e-11
+          ],
+          "jet_pairing_identity_residual": 4.899404298693829e-22
+        }
+      },
+      "finite_Fourier_discard_field_bound_on_slab": 6.238993075653317e-10,
+      "finite_Fourier_discard_spatial_derivative_bounds": [
+        2.76177735376281e-09,
+        2.042746710524249e-09,
+        1.6706564943413265e-09
+      ],
+      "same_fixed_material_curve_and_profile": true
+    },
+    {
+      "N": 24,
+      "background_steps_each_direction": 2,
+      "interpolation_half_time": 0.00025,
+      "Fourier_drop_threshold": 1e-11,
+      "anchor_order": 2,
+      "segments_per_edge": 16,
+      "retained_spatial_modes": 633,
+      "records": [
+        2.999999980927097,
+        3.141521178227914e-13,
+        7.999999885562552
+      ],
+      "inverse_and_support_diagnostics": {
+        "inverse_coordinate_residual": 4.628455909817783e-11,
+        "iterations": 8,
+        "time_min": -7.95651078450703e-06,
+        "time_max": 7.957731832743779e-06,
+        "minimum_Jacobian_det": 7.354112997587903e-11,
+        "clock_margin": 5.379740461636052e-05,
+        "maximum_sampled_receiver_radius": 0.1380308958041367,
+        "anchor_count": 16,
+        "path_sample_count": 1024
+      },
+      "source_responses": {
+        "metric": {
+          "total": [
+            -7.83667101526418e-08,
+            -4.126461377834208e-12,
+            -4.702002579250156e-07
+          ],
+          "direct": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": [
+            -7.83667101526418e-08,
+            -4.126461377834221e-12,
+            -4.7020025792501985e-07
+          ],
+          "jet_pairing_identity_residual": 4.235164736271502e-21
+        },
+        "clock": {
+          "total": [
+            -3.863865504974073e-09,
+            1.741980585462976e-11,
+            -2.3183192882441133e-08
+          ],
+          "direct": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": [
+            -3.863865504974084e-09,
+            1.741980584997108e-11,
+            -2.318319288244128e-08
+          ],
+          "jet_pairing_identity_residual": 4.658681209898652e-21
+        },
+        "probe": {
+          "total": [
+            3.3179735744010867e-07,
+            0.003096217148855925,
+            1.9907841339249612e-06
+          ],
+          "direct": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": [
+            3.3179735744010883e-07,
+            0.0030962171488559224,
+            1.9907841339249646e-06
+          ],
+          "jet_pairing_identity_residual": 2.6020852139652106e-18
+        },
+        "color_gauge": {
+          "total": [
+            -3.0893536598490772e-15,
+            1.199550610805712e-18,
+            -1.853603222023436e-14
+          ],
+          "direct": [
+            -3.089353659383788e-15,
+            1.1995506105911418e-18,
+            -1.853603221341012e-14
+          ],
+          "reference": [
+            1.3199714817210393e-25,
+            -3.9542303630846446e-30,
+            7.91982883998132e-25
+          ],
+          "jet_pairing_identity_residual": 7.61622293756061e-24
+        },
+        "affine_diffeomorphism": {
+          "total": [
+            -1.8952818783972815e-18,
+            -6.5272358915416384e-18,
+            -1.1382505314339912e-17
+          ],
+          "direct": [
+            -1.1406395865512263e-09,
+            1.5711978892182928e-15,
+            -6.843837475807057e-09
+          ],
+          "reference": [
+            1.14063958465482e-09,
+            -1.5777182959066972e-15,
+            6.843837464418667e-09
+          ],
+          "jet_pairing_identity_residual": 6.829203137237796e-21
+        },
+        "time_translation": {
+          "total": [
+            -2.5700958918912097e-23,
+            5.881751750854086e-21,
+            -2.042750620347423e-22
+          ],
+          "direct": [
+            -7.602301976889284e-12,
+            -5.376080373773913e-13,
+            -4.561381157138358e-11
+          ],
+          "reference": [
+            7.602301976870843e-12,
+            5.376080431777886e-13,
+            4.561381157119982e-11
+          ],
+          "jet_pairing_identity_residual": 8.135450571429739e-23
+        }
+      },
+      "finite_Fourier_discard_field_bound_on_slab": 8.517813848448163e-10,
+      "finite_Fourier_discard_spatial_derivative_bounds": [
+        4.642283892076567e-09,
+        2.7817746879432568e-09,
+        1.8097297018258306e-09
+      ],
+      "same_fixed_material_curve_and_profile": true
+    },
+    {
+      "N": 16,
+      "background_steps_each_direction": 2,
+      "interpolation_half_time": 0.000125,
+      "Fourier_drop_threshold": 1e-11,
+      "anchor_order": 2,
+      "segments_per_edge": 16,
+      "retained_spatial_modes": 572,
+      "records": [
+        2.999999980927198,
+        3.1384903353593333e-13,
+        7.999999885563161
+      ],
+      "inverse_and_support_diagnostics": {
+        "inverse_coordinate_residual": 4.656501739415022e-11,
+        "iterations": 8,
+        "time_min": -7.956504719526272e-06,
+        "time_max": 7.95772585955422e-06,
+        "minimum_Jacobian_det": 7.354162271835672e-11,
+        "clock_margin": 5.379748597666591e-05,
+        "maximum_sampled_receiver_radius": 0.1380221353814843,
+        "anchor_count": 16,
+        "path_sample_count": 1024
+      },
+      "source_responses": {
+        "metric": {
+          "total": [
+            -7.812936138069696e-08,
+            -4.138216349420469e-12,
+            -4.687761653034628e-07
+          ],
+          "direct": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": [
+            -7.81293613806954e-08,
+            -4.13821634942049e-12,
+            -4.6877616530347613e-07
+          ],
+          "jet_pairing_identity_residual": 1.334076891925523e-20
+        },
+        "clock": {
+          "total": [
+            -3.861804751054225e-09,
+            1.644300730654314e-11,
+            -2.3170828359010654e-08
+          ],
+          "direct": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": [
+            -3.86180475105423e-09,
+            1.644300729934336e-11,
+            -2.3170828359010733e-08
+          ],
+          "jet_pairing_identity_residual": 7.199780051661553e-21
+        },
+        "probe": {
+          "total": [
+            3.3181095437747486e-07,
+            0.003096159950928434,
+            1.9908657155465845e-06
+          ],
+          "direct": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": [
+            3.318109543774756e-07,
+            0.0030961599509284374,
+            1.990865715546583e-06
+          ],
+          "jet_pairing_identity_residual": 3.469446951953614e-18
+        },
+        "color_gauge": {
+          "total": [
+            -3.09734642481507e-15,
+            1.0798598081754896e-18,
+            -1.8583992386035504e-14
+          ],
+          "direct": [
+            -3.097346426055841e-15,
+            1.0798598082417539e-18,
+            -1.8583992388517046e-14
+          ],
+          "reference": [
+            -8.350250593900138e-26,
+            2.2467564463359602e-30,
+            -5.010150324520631e-25
+          ],
+          "jet_pairing_identity_residual": 2.982556870111146e-24
+        },
+        "affine_diffeomorphism": {
+          "total": [
+            -2.261585810825033e-18,
+            -1.2396327183066685e-18,
+            -1.3585915366069558e-17
+          ],
+          "direct": [
+            -1.140633572096862e-09,
+            1.5697098111486446e-15,
+            -6.8438013890863224e-09
+          ],
+          "reference": [
+            1.140633569834008e-09,
+            -1.5709471145263464e-15,
+            6.8438013754940244e-09
+          ],
+          "jet_pairing_identity_residual": 6.3825256064591615e-21
+        },
+        "time_translation": {
+          "total": [
+            -2.6532002977748456e-23,
+            1.1317062430258203e-21,
+            -2.465867692120539e-22
+          ],
+          "direct": [
+            -7.60226188584658e-12,
+            -5.376077998577517e-13,
+            -4.561357102512624e-11
+          ],
+          "reference": [
+            7.602261885819173e-12,
+            5.376078006786251e-13,
+            4.561357102493033e-11
+          ],
+          "jet_pairing_identity_residual": 3.1083290610919033e-22
+        }
+      },
+      "finite_Fourier_discard_field_bound_on_slab": 6.286627113841253e-10,
+      "finite_Fourier_discard_spatial_derivative_bounds": [
+        2.780598360570178e-09,
+        2.0766569052265845e-09,
+        1.67021194349043e-09
+      ],
+      "same_fixed_material_curve_and_profile": true
+    }
+  ],
+  "refinement_comparisons": {
+    "path8_to16": 9.696587519036903e-09,
+    "path16_to32": 2.424039613133089e-09,
+    "anchor2_to3": 6.394230487542091e-09,
+    "space16_to24": 5.720374138522971e-08,
+    "interpolation_time_halving": 5.813894071032832e-12
+  },
+  "rebuilt_probe_finite_differences": [
+    {
+      "epsilon": 0.0001,
+      "derivative": [
+        3.214783994565096e-07,
+        0.0031005804698585613,
+        1.9288171060338755e-06
+      ],
+      "difference_from_full_source": [
+        -1.0332502755316998e-08,
+        4.420524744021444e-06,
+        -6.204829652089801e-08
+      ]
+    },
+    {
+      "epsilon": 5e-05,
+      "derivative": [
+        3.292344175065409e-07,
+        0.003097263109925967,
+        1.9756196678599736e-06
+      ],
+      "difference_from_full_source": [
+        -2.5764847052856544e-09,
+        1.1031648114272208e-06,
+        -1.5245734694799915e-08
+      ]
+    },
+    {
+      "epsilon": 2.5e-05,
+      "derivative": [
+        3.311217966484037e-07,
+        0.0030964356179721503,
+        1.987050524121514e-06
+      ],
+      "difference_from_full_source": [
+        -6.891055634228882e-10,
+        2.756728576104421e-07,
+        -3.8148784332593036e-09
+      ]
+    },
+    {
+      "epsilon": 1.25e-05,
+      "derivative": [
+        3.3152147693726874e-07,
+        0.0030962288684280356,
+        1.9903723114111926e-06
+      ],
+      "difference_from_full_source": [
+        -2.894252745578319e-10,
+        6.892331349574177e-08,
+        -4.930911435808352e-10
+      ]
+    }
+  ],
+  "rebuilt_metric_finite_difference": {
+    "epsilon": 0.0001,
+    "derivative": [
+      -7.811529201262601e-08,
+      -4.2694903345026905e-12,
+      -4.686917520757561e-07
+    ],
+    "full_source": [
+      -7.812933707667689e-08,
+      -4.230718285775649e-12,
+      -4.687760194789806e-07
+    ],
+    "difference": [
+      1.404506405087829e-11,
+      -3.877204872704115e-14,
+      8.426740322453383e-11
+    ]
+  },
+  "source_file_sha256": {
+    "magnetic_reference_source.py": "256cc917d3516e26c1c0a21356f75c5dd3200d7022012bdc0052bcf6b29779af",
+    "material_background.py": "1a9eecaa603e08b3188a3d1e87b38f28c2f6f21fabec03080a3b2f77a4e2b6ee",
+    "relational_loop_source.py": "115e0123f8afa8d0bb557d61fc76ea56bd4dc42e22e6f57ac07d7c8fff5f6804",
+    "drafts/initial_anchor_failure.json": "68cf83fe8a62eb194b68fd9e011019d85695923198053a5a41e2c1b99c864923",
+    "drafts/source_implementation_working.md": "a13c34ac3d0623e905364a54e36376f45b6b230df11de8733284fba5aba86786"
+  },
+  "full_first_jet_weak_source_implemented": true,
+  "original_three_records_and_U1_retained": true,
+  "dynamic_background_error_certified": false,
+  "full_compact_support_certified": false,
+  "strong_spacetime_source_array_computed": false,
+  "actual872_forced_response_computed": false,
+  "full_goal_completed": false
+}

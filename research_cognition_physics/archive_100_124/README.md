@@ -64,4 +64,4 @@
 
 ## 复算和原件
 
-代码、JSON结果与历史收据保持原字节，阅读版报告仅调整链接。通过[统一早期复算入口](../archive_764_/_migration/layout_001_230_20261004/README.md)恢复原布局，避免历史跨轮导入和固定路径失效；[本次原测试记录](../archive_764_/_migration/layout_001_230_20261004/replay_checks.json)与迁移核验分开保存。
+代码、JSON结果与历史收据保持原字节，阅读版报告仅调整链接。通过[统一早期复算入口](../_migration/layout_001_230_20261004/README.md)恢复原布局，避免历史跨轮导入和固定路径失效；[本次原测试记录](../_migration/layout_001_230_20261004/replay_checks.json)与迁移核验分开保存。

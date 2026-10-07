@@ -1,0 +1,65 @@
+{
+  "round": 917,
+  "date": "2026-10-06",
+  "status": "working",
+  "samples": 8,
+  "N": 17,
+  "same_original_background_response_receiver": true,
+  "original_receiver_divergence_reproduced": true,
+  "diffeomorphism_background_contact_parts_max": {
+    "inverse_metric": 9.33802914068064e-07,
+    "metric_connection": 1.716764838016341e-08,
+    "scalar_covariant_jet": 1.4727442130363664e-06,
+    "curvature": 5.226934716754513e-07
+  },
+  "diffeomorphism_background_contact_total_max": 9.477896097480163e-07,
+  "receiver_stress_divergence_max": 8.487831152483103e-06,
+  "total_diffeomorphism_driver_max": 8.522101269048093e-06,
+  "total_diffeomorphism_driver_components_max": [
+    6.530719863748359e-06,
+    8.522101269048093e-06,
+    6.764913692719434e-06,
+    9.337764634862154e-07
+  ],
+  "internal_background_contact_parts_max": {
+    "volume_connection": 8.941912503275253e-08,
+    "gauge_connection": 3.732793935382809e-13,
+    "scalar_representation": 8.788442458848356e-13
+  },
+  "total_internal_driver_max": 8.941889870198401e-08,
+  "independent_differentiated_residual_checks": [
+    {
+      "coordinate_check_step": 2e-06,
+      "diffeomorphism_identity_error": 4.274404771256545e-11,
+      "internal_identity_error": 9.727770378035932e-12,
+      "actual_diffeomorphism_driver_max": 8.52213388090707e-06,
+      "actual_internal_driver_max": 8.941804264318333e-08,
+      "wrong_drop_background_contact_error": 9.477826603348972e-07,
+      "wrong_drop_receiver_divergence_error": 8.48786376434208e-06,
+      "wrong_drop_internal_volume_contact_error": 8.941826897395185e-08
+    },
+    {
+      "coordinate_check_step": 1e-06,
+      "diffeomorphism_identity_error": 9.793693968854271e-11,
+      "internal_identity_error": 1.430224206244157e-11,
+      "actual_diffeomorphism_driver_max": 8.522057964957708e-06,
+      "actual_internal_driver_max": 8.941878792298759e-08,
+      "wrong_drop_background_contact_error": 9.477704966008743e-07,
+      "wrong_drop_receiver_divergence_error": 8.487787848392718e-06,
+      "wrong_drop_internal_volume_contact_error": 8.941901425375611e-08
+    }
+  ],
+  "full_background_contacts_including_volume_retained": true,
+  "derivative_check_is_not_error_certificate": true,
+  "full_support_constraint_driver_certified": false,
+  "actual_finite_observable_error_certified": false,
+  "full872_response_computed": false,
+  "full_goal_completed": false,
+  "elapsed_seconds": 43.603,
+  "source_hashes": {
+    "917\\joint_constraint_driving.py": "4a5bd553a85b2e7a62523cb1cb99fb40602ff3a50dfe5031e6228d5057691846",
+    "917\\receiver_stress_derivative.py": "357a4e715ca00718b8e892d49a7277fb069d1b6da8b5ad81ade4ebf825fc5ab0",
+    "916\\covariant_joint_residual.py": "1223a54d5fd319d4390fff85f211f9e6398deb8a3c5f6bcc645b07b671692ee8",
+    "916\\validate_covariant_residual.py": "47ad01cb0158b6fb2b4ac8453df69307c205d4f50bd3f41f8a1f02a4c7636a18"
+  }
+}

@@ -1,0 +1,812 @@
+{
+  "round": 963,
+  "date": "2026-10-07",
+  "all_scientific_checks_passed": true,
+  "kind": "finite conditional calibration certificate, not a spacetime model",
+  "cases": [
+    {
+      "name": "common_exact",
+      "records": [
+        {
+          "clock": "A",
+          "u": 0,
+          "v": 1,
+          "b": "3/100",
+          "eps": "0"
+        },
+        {
+          "clock": "A",
+          "u": 1,
+          "v": 2,
+          "b": "1/50",
+          "eps": "0"
+        },
+        {
+          "clock": "A",
+          "u": 2,
+          "v": 3,
+          "b": "-3/100",
+          "eps": "0"
+        },
+        {
+          "clock": "A",
+          "u": 3,
+          "v": 0,
+          "b": "-1/50",
+          "eps": "0"
+        },
+        {
+          "clock": "A",
+          "u": 0,
+          "v": 2,
+          "b": "1/20",
+          "eps": "0"
+        },
+        {
+          "clock": "B",
+          "u": 0,
+          "v": 1,
+          "b": "3/100",
+          "eps": "0"
+        },
+        {
+          "clock": "B",
+          "u": 1,
+          "v": 2,
+          "b": "1/50",
+          "eps": "0"
+        },
+        {
+          "clock": "B",
+          "u": 2,
+          "v": 3,
+          "b": "-3/100",
+          "eps": "0"
+        },
+        {
+          "clock": "B",
+          "u": 3,
+          "v": 0,
+          "b": "-1/50",
+          "eps": "0"
+        },
+        {
+          "clock": "B",
+          "u": 0,
+          "v": 2,
+          "b": "1/20",
+          "eps": "0"
+        }
+      ],
+      "certificate": {
+        "feasible": true,
+        "potential": [
+          "0",
+          "3/100",
+          "1/20",
+          "1/50"
+        ],
+        "residuals": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    },
+    {
+      "name": "each_species_exact_but_no_common_scale",
+      "records": [
+        {
+          "clock": "A",
+          "u": 0,
+          "v": 1,
+          "b": "3/100",
+          "eps": "0"
+        },
+        {
+          "clock": "A",
+          "u": 1,
+          "v": 2,
+          "b": "1/50",
+          "eps": "0"
+        },
+        {
+          "clock": "A",
+          "u": 2,
+          "v": 3,
+          "b": "-3/100",
+          "eps": "0"
+        },
+        {
+          "clock": "A",
+          "u": 3,
+          "v": 0,
+          "b": "-1/50",
+          "eps": "0"
+        },
+        {
+          "clock": "A",
+          "u": 0,
+          "v": 2,
+          "b": "1/20",
+          "eps": "0"
+        },
+        {
+          "clock": "B",
+          "u": 0,
+          "v": 1,
+          "b": "3/100",
+          "eps": "0"
+        },
+        {
+          "clock": "B",
+          "u": 1,
+          "v": 2,
+          "b": "1/25",
+          "eps": "0"
+        },
+        {
+          "clock": "B",
+          "u": 2,
+          "v": 3,
+          "b": "-1/20",
+          "eps": "0"
+        },
+        {
+          "clock": "B",
+          "u": 3,
+          "v": 0,
+          "b": "-1/50",
+          "eps": "0"
+        },
+        {
+          "clock": "B",
+          "u": 0,
+          "v": 2,
+          "b": "7/100",
+          "eps": "0"
+        }
+      ],
+      "certificate": {
+        "feasible": false,
+        "negative_cycle": [
+          {
+            "u": 2,
+            "v": 1,
+            "weight": "-1/25",
+            "record": 6,
+            "kind": "reverse_lower",
+            "clock": "B"
+          },
+          {
+            "u": 1,
+            "v": 2,
+            "weight": "1/50",
+            "record": 1,
+            "kind": "upper",
+            "clock": "A"
+          }
+        ],
+        "total_cycle_weight": "-1/50"
+      }
+    },
+    {
+      "name": "species_tolerance_below_boundary",
+      "records": [
+        {
+          "clock": "A",
+          "u": 0,
+          "v": 1,
+          "b": "3/100",
+          "eps": "9/1000"
+        },
+        {
+          "clock": "A",
+          "u": 1,
+          "v": 2,
+          "b": "1/50",
+          "eps": "9/1000"
+        },
+        {
+          "clock": "A",
+          "u": 2,
+          "v": 3,
+          "b": "-3/100",
+          "eps": "9/1000"
+        },
+        {
+          "clock": "A",
+          "u": 3,
+          "v": 0,
+          "b": "-1/50",
+          "eps": "9/1000"
+        },
+        {
+          "clock": "A",
+          "u": 0,
+          "v": 2,
+          "b": "1/20",
+          "eps": "9/1000"
+        },
+        {
+          "clock": "B",
+          "u": 0,
+          "v": 1,
+          "b": "3/100",
+          "eps": "9/1000"
+        },
+        {
+          "clock": "B",
+          "u": 1,
+          "v": 2,
+          "b": "1/25",
+          "eps": "9/1000"
+        },
+        {
+          "clock": "B",
+          "u": 2,
+          "v": 3,
+          "b": "-1/20",
+          "eps": "9/1000"
+        },
+        {
+          "clock": "B",
+          "u": 3,
+          "v": 0,
+          "b": "-1/50",
+          "eps": "9/1000"
+        },
+        {
+          "clock": "B",
+          "u": 0,
+          "v": 2,
+          "b": "7/100",
+          "eps": "9/1000"
+        }
+      ],
+      "certificate": {
+        "feasible": false,
+        "negative_cycle": [
+          {
+            "u": 1,
+            "v": 2,
+            "weight": "29/1000",
+            "record": 1,
+            "kind": "upper",
+            "clock": "A"
+          },
+          {
+            "u": 2,
+            "v": 1,
+            "weight": "-31/1000",
+            "record": 6,
+            "kind": "reverse_lower",
+            "clock": "B"
+          }
+        ],
+        "total_cycle_weight": "-1/500"
+      }
+    },
+    {
+      "name": "species_tolerance_at_boundary",
+      "records": [
+        {
+          "clock": "A",
+          "u": 0,
+          "v": 1,
+          "b": "3/100",
+          "eps": "1/100"
+        },
+        {
+          "clock": "A",
+          "u": 1,
+          "v": 2,
+          "b": "1/50",
+          "eps": "1/100"
+        },
+        {
+          "clock": "A",
+          "u": 2,
+          "v": 3,
+          "b": "-3/100",
+          "eps": "1/100"
+        },
+        {
+          "clock": "A",
+          "u": 3,
+          "v": 0,
+          "b": "-1/50",
+          "eps": "1/100"
+        },
+        {
+          "clock": "A",
+          "u": 0,
+          "v": 2,
+          "b": "1/20",
+          "eps": "1/100"
+        },
+        {
+          "clock": "B",
+          "u": 0,
+          "v": 1,
+          "b": "3/100",
+          "eps": "1/100"
+        },
+        {
+          "clock": "B",
+          "u": 1,
+          "v": 2,
+          "b": "1/25",
+          "eps": "1/100"
+        },
+        {
+          "clock": "B",
+          "u": 2,
+          "v": 3,
+          "b": "-1/20",
+          "eps": "1/100"
+        },
+        {
+          "clock": "B",
+          "u": 3,
+          "v": 0,
+          "b": "-1/50",
+          "eps": "1/100"
+        },
+        {
+          "clock": "B",
+          "u": 0,
+          "v": 2,
+          "b": "7/100",
+          "eps": "1/100"
+        }
+      ],
+      "certificate": {
+        "feasible": true,
+        "potential": [
+          "0",
+          "3/100",
+          "3/50",
+          "1/50"
+        ],
+        "residuals": [
+          "0",
+          "1/100",
+          "-1/100",
+          "0",
+          "1/100",
+          "0",
+          "-1/100",
+          "1/100",
+          "0",
+          "-1/100"
+        ]
+      }
+    },
+    {
+      "name": "common_path_dependence",
+      "records": [
+        {
+          "clock": "A",
+          "u": 0,
+          "v": 1,
+          "b": "3/100",
+          "eps": "0"
+        },
+        {
+          "clock": "A",
+          "u": 1,
+          "v": 2,
+          "b": "1/50",
+          "eps": "0"
+        },
+        {
+          "clock": "A",
+          "u": 2,
+          "v": 3,
+          "b": "-3/100",
+          "eps": "0"
+        },
+        {
+          "clock": "A",
+          "u": 3,
+          "v": 0,
+          "b": "1/50",
+          "eps": "0"
+        },
+        {
+          "clock": "A",
+          "u": 0,
+          "v": 2,
+          "b": "1/20",
+          "eps": "0"
+        },
+        {
+          "clock": "B",
+          "u": 0,
+          "v": 1,
+          "b": "3/100",
+          "eps": "0"
+        },
+        {
+          "clock": "B",
+          "u": 1,
+          "v": 2,
+          "b": "1/50",
+          "eps": "0"
+        },
+        {
+          "clock": "B",
+          "u": 2,
+          "v": 3,
+          "b": "-3/100",
+          "eps": "0"
+        },
+        {
+          "clock": "B",
+          "u": 3,
+          "v": 0,
+          "b": "1/50",
+          "eps": "0"
+        },
+        {
+          "clock": "B",
+          "u": 0,
+          "v": 2,
+          "b": "1/20",
+          "eps": "0"
+        }
+      ],
+      "certificate": {
+        "feasible": false,
+        "negative_cycle": [
+          {
+            "u": 2,
+            "v": 0,
+            "weight": "-1/20",
+            "record": 9,
+            "kind": "reverse_lower",
+            "clock": "B"
+          },
+          {
+            "u": 0,
+            "v": 3,
+            "weight": "-1/50",
+            "record": 8,
+            "kind": "reverse_lower",
+            "clock": "B"
+          },
+          {
+            "u": 3,
+            "v": 2,
+            "weight": "3/100",
+            "record": 7,
+            "kind": "reverse_lower",
+            "clock": "B"
+          }
+        ],
+        "total_cycle_weight": "-1/25"
+      }
+    },
+    {
+      "name": "path_tolerance_below_boundary",
+      "records": [
+        {
+          "clock": "A",
+          "u": 0,
+          "v": 1,
+          "b": "3/100",
+          "eps": "1/100"
+        },
+        {
+          "clock": "A",
+          "u": 1,
+          "v": 2,
+          "b": "1/50",
+          "eps": "1/100"
+        },
+        {
+          "clock": "A",
+          "u": 2,
+          "v": 3,
+          "b": "-3/100",
+          "eps": "1/100"
+        },
+        {
+          "clock": "A",
+          "u": 3,
+          "v": 0,
+          "b": "1/50",
+          "eps": "1/100"
+        },
+        {
+          "clock": "A",
+          "u": 0,
+          "v": 2,
+          "b": "1/20",
+          "eps": "1/100"
+        },
+        {
+          "clock": "B",
+          "u": 0,
+          "v": 1,
+          "b": "3/100",
+          "eps": "1/100"
+        },
+        {
+          "clock": "B",
+          "u": 1,
+          "v": 2,
+          "b": "1/50",
+          "eps": "1/100"
+        },
+        {
+          "clock": "B",
+          "u": 2,
+          "v": 3,
+          "b": "-3/100",
+          "eps": "1/100"
+        },
+        {
+          "clock": "B",
+          "u": 3,
+          "v": 0,
+          "b": "1/50",
+          "eps": "1/100"
+        },
+        {
+          "clock": "B",
+          "u": 0,
+          "v": 2,
+          "b": "1/20",
+          "eps": "1/100"
+        }
+      ],
+      "certificate": {
+        "feasible": false,
+        "negative_cycle": [
+          {
+            "u": 0,
+            "v": 3,
+            "weight": "-1/100",
+            "record": 8,
+            "kind": "reverse_lower",
+            "clock": "B"
+          },
+          {
+            "u": 3,
+            "v": 2,
+            "weight": "1/25",
+            "record": 2,
+            "kind": "reverse_lower",
+            "clock": "A"
+          },
+          {
+            "u": 2,
+            "v": 0,
+            "weight": "-1/25",
+            "record": 4,
+            "kind": "reverse_lower",
+            "clock": "A"
+          }
+        ],
+        "total_cycle_weight": "-1/100"
+      }
+    },
+    {
+      "name": "path_tolerance_at_boundary",
+      "records": [
+        {
+          "clock": "A",
+          "u": 0,
+          "v": 1,
+          "b": "3/100",
+          "eps": "1/75"
+        },
+        {
+          "clock": "A",
+          "u": 1,
+          "v": 2,
+          "b": "1/50",
+          "eps": "1/75"
+        },
+        {
+          "clock": "A",
+          "u": 2,
+          "v": 3,
+          "b": "-3/100",
+          "eps": "1/75"
+        },
+        {
+          "clock": "A",
+          "u": 3,
+          "v": 0,
+          "b": "1/50",
+          "eps": "1/75"
+        },
+        {
+          "clock": "A",
+          "u": 0,
+          "v": 2,
+          "b": "1/20",
+          "eps": "1/75"
+        },
+        {
+          "clock": "B",
+          "u": 0,
+          "v": 1,
+          "b": "3/100",
+          "eps": "1/75"
+        },
+        {
+          "clock": "B",
+          "u": 1,
+          "v": 2,
+          "b": "1/50",
+          "eps": "1/75"
+        },
+        {
+          "clock": "B",
+          "u": 2,
+          "v": 3,
+          "b": "-3/100",
+          "eps": "1/75"
+        },
+        {
+          "clock": "B",
+          "u": 3,
+          "v": 0,
+          "b": "1/50",
+          "eps": "1/75"
+        },
+        {
+          "clock": "B",
+          "u": 0,
+          "v": 2,
+          "b": "1/20",
+          "eps": "1/75"
+        }
+      ],
+      "certificate": {
+        "feasible": true,
+        "potential": [
+          "0",
+          "3/100",
+          "11/300",
+          "-1/150"
+        ],
+        "residuals": [
+          "0",
+          "-1/75",
+          "-1/75",
+          "-1/75",
+          "-1/75",
+          "0",
+          "-1/75",
+          "-1/75",
+          "-1/75",
+          "-1/75"
+        ]
+      }
+    }
+  ],
+  "individual_species": {
+    "A": {
+      "feasible": true,
+      "potential": [
+        "0",
+        "3/100",
+        "1/20",
+        "1/50"
+      ],
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    "B": {
+      "feasible": true,
+      "potential": [
+        "0",
+        "3/100",
+        "7/100",
+        "1/50"
+      ],
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    }
+  },
+  "sharp_uniform_error_thresholds": {
+    "species": "1/100",
+    "loop": "1/75",
+    "proof": "cycle lower bounds plus exact feasible potentials at equality"
+  },
+  "shared_unit_change_invariant": true,
+  "scale_reconstruction_log_error": 1.3877787807814457e-16,
+  "flat_nonexact_ring": {
+    "total_log_holonomy": "1/10",
+    "certificate": {
+      "feasible": false,
+      "negative_cycle": [
+        {
+          "u": 3,
+          "v": 2,
+          "weight": "-1/40",
+          "record": 2,
+          "kind": "reverse_lower",
+          "clock": "A"
+        },
+        {
+          "u": 2,
+          "v": 1,
+          "weight": "-1/40",
+          "record": 1,
+          "kind": "reverse_lower",
+          "clock": "A"
+        },
+        {
+          "u": 1,
+          "v": 0,
+          "weight": "-1/40",
+          "record": 0,
+          "kind": "reverse_lower",
+          "clock": "A"
+        },
+        {
+          "u": 0,
+          "v": 3,
+          "weight": "-1/40",
+          "record": 3,
+          "kind": "reverse_lower",
+          "clock": "A"
+        }
+      ],
+      "total_cycle_weight": "-1/10"
+    }
+  },
+  "rate_vs_elapsed_time": {
+    "v": "3/5",
+    "elapsed_stationary": "2",
+    "elapsed_traveling": "8/5",
+    "subsequent_rate_ratio": "1",
+    "is_second_clock_effect": false,
+    "ideal_instant_turnaround_and_identical_rest_clocks_are_inputs": true
+  },
+  "scope": {
+    "synthetic_declared_records": true,
+    "errors_are_measurement_contracts_not_physical_cutoffs": true,
+    "no_clock_material_dynamics_or_source_derived": true,
+    "zero_scale_holonomy_does_not_remove_phase_or_spacetime_curvature": true,
+    "EPS_requires_additional_geometry_and_clock_identification": true,
+    "not_all_Weyl_matter_theories_ruled_out": true,
+    "no_continuum_or_dimension_or_Einstein_equation_proved": true,
+    "full_goal_completed": false,
+    "stop_calibration_tool_optimization": true
+  },
+  "source_hashes": {
+    "research_cognition_physics\\archive_764_\\963\\common_scale_certificate.py": "976bd88f020beb17ceb4ccab0320ca0cf796a7c2e22c025bf51c022b486c6478",
+    "research_cognition_physics\\archive_764_\\963\\drafts\\calibration_bridge_decision.md": "b08a28c19f519cacf0c73310d5a28663873af0ba45170d59d3835eab00f23941",
+    "research_cognition_physics\\archive_259_300\\research_note_290.md": "1dc210758a38a5f92b3c228871f2627b7e0fe25f0f1e2347645be2bcfff08e0d",
+    "research_cognition_physics\\archive_301_341\\research_note_324.md": "866c582ab8534ae336f287d13ae67d868777a313d0f679e9402ad40c47064e14",
+    "research_cognition_physics\\archive_342_369\\research_note_352.md": "8df046e03a5c6cdbf39d180dabcddca4f372bc510ccaceb71543fac781fe44ab",
+    "research_cognition_physics\\archive_764_\\research_note_930.md": "1e030e200e84999cd249ee3c2f6739632da756ec868a0a330d2a1317a72c7f4e",
+    "research_cognition_physics\\archive_764_\\research_note_933.md": "884139d02ce4a0b79ba4bae3a088084001f5f228bfed106b71a5dcd8532e124f",
+    "research_cognition_physics\\archive_764_\\research_note_941.md": "525873bbb6288f62bbaac4ae1a87289871f3270157f252599b7103da0abd2224",
+    "research_cognition_physics\\archive_764_\\research_note_962.md": "eff59381e152c306429f411dc7e0ef87196ca5781715e99f92aa9598d16baef6"
+  }
+}

@@ -2,7 +2,7 @@
 
 2026-09-27。当前正式科学状态仍为500／2432，876份保护证据。这一目录保存已执行的后继检查，尚不是完整冻结轮次。父级及 `/root/current_neighbor_probe_audit` 已分别核查；代理审查已结束，不存在正在运行的数值进程。
 
-文件：[精确有限代码](../../../archive_764_/_shared/drafts/neighbor_return_candidate_drafts/local_return_probe_candidate.py)、[已保存结果](../../../archive_764_/_shared/drafts/neighbor_return_candidate_drafts/local_return_probe_candidate_results.json)。复算不带 `--write-results`；原结果首次独占保存，不覆盖。
+文件：[精确有限代码](../../../_shared/drafts/neighbor_return_candidate_drafts/local_return_probe_candidate.py)、[已保存结果](../../../_shared/drafts/neighbor_return_candidate_drafts/local_return_probe_candidate_results.json)。复算不带 `--write-results`；原结果首次独占保存，不覆盖。
 
 ## 要减少的输入
 

@@ -16,6 +16,8 @@ def main():
     choice = parser.add_mutually_exclusive_group(required=True)
     choice.add_argument('--script')
     choice.add_argument('--stage', choices=('1', '2'))
+    choice.add_argument('--verify-layout', action='store_true',
+                        help='Verify both the frozen historical manifest and the newest relocation layer')
     parser.add_argument('--module', action='append')
     parser.add_argument('--report', type=Path)
     parser.add_argument('arguments', nargs=argparse.REMAINDER)
@@ -30,7 +32,9 @@ def main():
     start = time.monotonic()
     details = {}
     with runtime.installed():
-        if args.script:
+        if args.verify_layout:
+            details = dict(historical_layout=store.verify(), relocation_layout=store.verify_relocation())
+        elif args.script:
             arguments = args.arguments[1:] if args.arguments[:1] == ['--'] else args.arguments
             runtime.run_script(args.script, arguments)
         else:
@@ -46,6 +50,8 @@ def main():
                 raise SystemExit(1)
     report = dict(source='current_stage_directories', zip_reads_forbidden=True,
                   restored_old_directory=False, research_files_read_only=True,
+                  relocation_manifest_available=bool(store.relocations),
+                  historical_views='per-module legacy archive_231_ or pre-split archive_764_',
                   physical_files_read=sorted(store.read_paths),
                   historical_markdown_link_views=sorted(store.restored_markdown),
                   seconds=round(time.monotonic()-start, 3), all_checks_passed=True, **details)

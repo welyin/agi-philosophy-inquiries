@@ -1,6 +1,6 @@
 # 物理参考场、关系坐标与引力反作用：成熟理论接口审查
 
-日期：2026-09-30。接续用户确认的“双向约束与逻辑统一”目标；科学基线仍为520／2552，继承1017份保护证据。本项是成熟理论的接口接入，不新增521或编号检查。[代码](../../archive_764_/_shared/code/material_reference_geometry.py)；[结果](../../archive_764_/_shared/results/material_reference_geometry_results.json)。
+日期：2026-09-30。接续用户确认的“双向约束与逻辑统一”目标；科学基线仍为520／2552，继承1017份保护证据。本项是成熟理论的接口接入，不新增521或编号检查。[代码](../../_shared/code/material_reference_geometry.py)；[结果](../../_shared/results/material_reference_geometry_results.json)。
 
 ## 1. 现在可以正面建立的连接
 
@@ -27,7 +27,7 @@
 
 [325](../../archive_301_341/research_note_325.md)、[332](../../archive_301_341/research_note_332.md)已经把标量应力与动态引力同算。本项不重复宣称首次关闭能量账；新增用途是同一批场兼作参考读数。[364](../../archive_342_369/research_note_364.md)的一般钟扩张不选择GR；[366](../../archive_342_369/research_note_366.md)的参数化场论保持固定背景。本项明确引入动态度规，因而与那条固定背景路线不同。
 
-[425](../../archive_370_428/research_note_425.md)给操作合同到局部Lie坐标的条件桥；[391](../../archive_370_428/research_note_391.md)给共同可读代数；[520](../research_note_520.md)给指定仪器下的状态学习。它们尚未证明本项的参考场梯度、探测器或相容连续极限。[远端见证](../../archive_764_/_shared/notes/remote_witness_interface_review.md)提供有限记录能力，但单个位串还不是这些场的数值和导数。两个接口之间的映射继续保留为具体研究问题。
+[425](../../archive_370_428/research_note_425.md)给操作合同到局部Lie坐标的条件桥；[391](../../archive_370_428/research_note_391.md)给共同可读代数；[520](../research_note_520.md)给指定仪器下的状态学习。它们尚未证明本项的参考场梯度、探测器或相容连续极限。[远端见证](../../_shared/notes/remote_witness_interface_review.md)提供有限记录能力，但单个位串还不是这些场的数值和导数。两个接口之间的映射继续保留为具体研究问题。
 
 ## 3. 场不是免费的坐标标签
 

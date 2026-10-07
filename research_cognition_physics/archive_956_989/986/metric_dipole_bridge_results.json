@@ -1,0 +1,106 @@
+{
+  "round": 986,
+  "date": "2026-10-07",
+  "all_scientific_checks_passed": true,
+  "inherited": {
+    "G": 1e-30,
+    "g": 0.003,
+    "omega": 0.5,
+    "J": 0.03851648071345041,
+    "same_native_generator_at_zero_strain": true
+  },
+  "geometry_input": {
+    "TT_frequency": 0.02,
+    "local_profile_value": 1,
+    "lambda_strain": 3.544907701811032e-15,
+    "vacuum_strain_variance": 3.1415926535897928e-28,
+    "initial_weak_strain_tail_bound": 3.1415926535897927e-22,
+    "dynamic_geometry_is_single_physical_TT_mode": true
+  },
+  "operator_checks": {
+    "native_identity_error": 5.654513114737566e-15,
+    "Legendre_errors": [
+      2.7755575615628914e-17,
+      1.3877787807814457e-17
+    ],
+    "source_first_derivative_error": 1.4659526537432618e-12,
+    "source_second_difference_error": 3.667051780829657e-06,
+    "omitted_mixed_source_second_moment": [
+      [
+        9.655646730490006e-07,
+        0.0
+      ],
+      [
+        0.0,
+        3.218548910163335e-07
+      ]
+    ],
+    "mixed_source_is_fixed_by_existing_g": true
+  },
+  "infinite_domain_bound": {
+    "initial_K_norm": 0.32858405952065894,
+    "uniform_photon_number_norm_upper": 15,
+    "derived_photon_number_norm_bound": 14.84225101214575,
+    "quadrature_square_norm_upper": 31.5,
+    "c1": 1.772453850905516e-14,
+    "c2": 3.544907701811032e-14,
+    "unrounded_Duhamel_bound": 7.784502439726244e-08,
+    "variance_rational_upper": {
+      "exact": "1/2500000000000000000000000000",
+      "decimal": 4e-28
+    },
+    "c1_rational_upper": {
+      "exact": "3/100000000000000",
+      "decimal": 3e-14
+    },
+    "c2_rational_upper": {
+      "exact": "3/50000000000000",
+      "decimal": 6e-14
+    },
+    "rational_Duhamel_upper": {
+      "exact": "331821/2500000000000",
+      "decimal": 1.327284e-07
+    },
+    "reported_state_upper": {
+      "exact": "67/500000000",
+      "decimal": 1.34e-07
+    },
+    "record_contrast_lower": {
+      "exact": "60743479/125000000",
+      "decimal": 0.485947832
+    },
+    "all_times_in_original_interval": true,
+    "unknown_input_and_passive_reference": true
+  },
+  "source_dictionary": {
+    "lapse_source": "m0+K(s)",
+    "TT_source": "dK/ds",
+    "EM_source": "dK/dg",
+    "total_joint_energy_conserved": true,
+    "geometric_force": "-Omega^2 Q_G - lambda*N*dK/ds"
+  },
+  "scope": {
+    "joint_quantum_mode_process_exists": true,
+    "record_transported": true,
+    "independent_quadrupole_matching_derived": false,
+    "full_U1_completed": false,
+    "spatial_mode_matching_error_certified": false,
+    "full_GR_error_certified": false,
+    "Newton_motion_985_and_TT_glued": false,
+    "all_SM_and_cosmology_completed": false,
+    "physical_minimum_scale_assumed": false,
+    "full_goal_completed": false
+  },
+  "references": [
+    "https://arxiv.org/html/1908.06929v2",
+    "https://arxiv.org/html/1305.5231v3"
+  ],
+  "source_hashes": {
+    "research_cognition_physics\\archive_764_\\986\\metric_dipole_bridge.py": "94db72189723e4e53929ef879a760229c6a76b977b9bf42848b33b0e10c82f18",
+    "research_cognition_physics\\archive_764_\\986\\drafts\\metric_dipole_decision.md": "9a1399d6a52efe94db93e232acd5dd79e9836d145882f7b75c32ec53e839d443",
+    "research_cognition_physics\\archive_764_\\968\\internal_relay.py": "d400f901510b89f3e1e07f23b01bab3a1502ccddd05b57fd21a45970ddb63235",
+    "research_cognition_physics\\archive_764_\\976\\finite_internal_reference_results.json": "19336c55d3c1e15718a793a50ce9aafe0e9a3b99deb754a1b232e0edd5b4e358",
+    "research_cognition_physics\\archive_764_\\981\\drafts\\common_parent_contract_v1.md": "babe46677102396464175ebd876703be6b37b2e08a81fa5fd0a8ecc3bfef74ee",
+    "research_cognition_physics\\archive_764_\\985\\two_active_sources_results.json": "186865e40f977d17d2bba4421e17a320543461f0330b4243e0d1df5d6efe4b9e"
+  }
+}

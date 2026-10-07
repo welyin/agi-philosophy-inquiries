@@ -1,0 +1,154 @@
+{
+  "round": 969,
+  "all_scientific_checks_passed": true,
+  "preparation": "old 965 balanced material labels and coherent local mode, tensor old 964 free Gibbs modes",
+  "added_input": "stable local support; disjoint bound and free mode menus; common monopole mean-field",
+  "original_material_parameters": {
+    "U": 1.0,
+    "v": 0.1,
+    "kappa": 0.2
+  },
+  "same_local_interaction_parameters": {
+    "g": 0.003,
+    "omega": 0.5
+  },
+  "shared_background_parameters": {
+    "mu": 1795261487420.0269,
+    "Mp2": 137849.96166921224,
+    "V0": 4341100.19734832,
+    "R": 100.0,
+    "T": 126339.12643398577,
+    "m0": 100.0
+  },
+  "local_sources": {
+    "mean_initial_parts": [
+      -0.03851648071345039,
+      0.24999999999999994,
+      -6.776263578034403e-21,
+      6.437097820326668e-07
+    ],
+    "mean_final_parts": [
+      -0.03851480659799062,
+      0.24999942222420646,
+      -1.0947636258324781e-06,
+      6.421337417739714e-07
+    ],
+    "complete_mass": 100.21148416299633,
+    "previous_964_mass": 99.96148351928655,
+    "mass_increment": 0.25000064370978237,
+    "analytic_mass_formula": "-J + omega/2 + (g*g/omega)*d + m0",
+    "minimum_mass_lower": 99.92294217222533,
+    "energy_change_error": 1.6653345369377348e-16
+  },
+  "background": {
+    "rows": [
+      {
+        "a": 1.0,
+        "time_over_T": 0.0,
+        "free_photon_to_bare_material_gap_ratio": 1.0,
+        "free_to_local_mode_frequency_ratio": 0.07703296142690082,
+        "photon_temperature": 8.352576772681127,
+        "local_complete_mass": 100.21148416299633,
+        "total_comoving_energy": 200.21148416299633,
+        "pressure_work": 0.0,
+        "continuity_residual": 2.0679515313825692e-25,
+        "constraint_residual": 2.842170943040401e-14
+      },
+      {
+        "a": 1.5,
+        "time_over_T": 0.4406728975718711,
+        "free_photon_to_bare_material_gap_ratio": 0.6666666666666666,
+        "free_to_local_mode_frequency_ratio": 0.05135530761793388,
+        "photon_temperature": 5.568384515120751,
+        "local_complete_mass": 100.21148416299633,
+        "total_comoving_energy": 166.878150829663,
+        "pressure_work": 33.333333333333336,
+        "continuity_residual": 5.169878828456423e-26,
+        "constraint_residual": 7.105427357601002e-14
+      },
+      {
+        "a": 2.000613304260866,
+        "time_over_T": 0.9999999999999996,
+        "free_photon_to_bare_material_gap_ratio": 0.4998467209381344,
+        "free_to_local_mode_frequency_ratio": 0.038504673173390166,
+        "photon_temperature": 4.175008111208687,
+        "local_complete_mass": 100.21148416299633,
+        "total_comoving_energy": 150.1961562568098,
+        "pressure_work": 50.015327906186556,
+        "continuity_residual": 6.462348535570529e-27,
+        "constraint_residual": 1.4210854715202004e-14
+      }
+    ],
+    "scale_at_T": 2.000613304260866,
+    "previous_scale_at_T": 2.0,
+    "exact_endpoint": [
+      2.000613304260866,
+      0.40837457255173587,
+      0.6741103708766766,
+      50.015327906186556
+    ],
+    "integrated_endpoint": [
+      2.0006133042581746,
+      0.4083745725498732,
+      0.6741103708770823,
+      50.01532790613157
+    ],
+    "integration_error": 5.4988902320474153e-11,
+    "step_difference": 8.278320251520199e-10,
+    "Raychaudhuri_constraint_max": 2.2689627954264324e-12
+  },
+  "joint_task_transport": {
+    "exact_factorization": true,
+    "original_local_time": 126339.12643398577,
+    "inherited_receiver_contrast_lower": 0.998723662150657,
+    "inherited_polarization_effect_contrast_lower": 0.0498710432539451,
+    "inherited_local_residual_bound": 8.731395991954302e-08,
+    "infinite_occupation_primary": true,
+    "photon_temperature_ratio": 0.4998467209381344,
+    "global_entropy_initial": 77.24402755984903,
+    "global_entropy_final": 77.24402755984903
+  },
+  "wrong_dictionary": {
+    "energy_balance_identity": "(1/a-1)*d<F>/dt",
+    "initial_field_derivatives": [
+      {
+        "fock_dimension": 4,
+        "first": 0.0,
+        "second": 3.2185489101633333e-07,
+        "current_operator_norm": 0.007003242655016933
+      },
+      {
+        "fock_dimension": 5,
+        "first": 0.0,
+        "second": 3.2185489101633333e-07,
+        "current_operator_norm": 0.008570910041618416
+      }
+    ],
+    "nonzero_t_squared_coefficient": -3.398918480091912e-12,
+    "source_energy_offset_at_T": -0.1250380307890087,
+    "applies_to": "bound-mode dynamics retained but its energy assigned a free-radiation redshift"
+  },
+  "scope": {
+    "one_nonselected_mean_background": true,
+    "microscopic_cavity_matching": false,
+    "microscopic_Einstein_derivation": false,
+    "full_quantum_geometry": false,
+    "external_radiation_absorption_recovered": false,
+    "irreversible_arrow_derived": false,
+    "round968_exchange_automatically_included": false,
+    "full_goal_completed": false
+  },
+  "source_hashes": {
+    "research_cognition_physics\\archive_764_\\965\\material_field_window.py": "4e32d4fe467c51668e5e67b166c73496b7afb68b44b3e4cdf0f448ce0e5286ad",
+    "research_cognition_physics\\archive_764_\\965\\material_field_window_results.json": "082fcdd415c798097da0050f68841caa124b5ca76ef219c77eab90e9d6b64da7",
+    "research_cognition_physics\\archive_764_\\965\\physical_mode_effect.py": "d1587d2c4edfaac67cfd130ea21102842fac57eef56b5b628488aaac01b55264",
+    "research_cognition_physics\\archive_764_\\965\\physical_mode_effect_results.json": "06d05445ee537a9313dc95f589564b090ec2d8265288f85f74421afcccff8b7a",
+    "research_cognition_physics\\archive_764_\\964\\material_cosmology_results.json": "dc6c7710b4afd3438e43962cadd97929b17fc184f898f143b76ada5ef88d5e5d",
+    "research_cognition_physics\\archive_764_\\research_note_968.md": "5e6e89d00123ff6e21c1a992a425c178264b0e98268ec2374c2c56ac295d350c",
+    "research_cognition_physics\\archive_764_\\969\\drafts\\common_background_decision.md": "fce55d4aad07315cd55636b5e84381c5ab1e28451cfab182cd1904eb8462d3c4"
+  },
+  "references": [
+    "https://arxiv.org/abs/0810.2712",
+    "https://arxiv.org/abs/1911.08427"
+  ]
+}

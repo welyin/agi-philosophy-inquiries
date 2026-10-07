@@ -4,7 +4,7 @@
 
 用户最新要求：先把3+1时空、GR与标准模型纳入同一候选结构，列出共同条件，再联合求解；不继续以独立三维闭合作为唯一主线。参见[统一条件总账](../unified_physics_condition_ledger.md)。
 
-已保存候选[代码](../../../archive_764_/_shared/code/conditional_anchor_reference.py)、[结果](../../../archive_764_/_shared/results/conditional_anchor_reference_results.json)、[范围审查](scope_review.txt)和[构造审查](construction_review.txt)。代码标记531表示候选预留编号，不表示研究轮已签收；没有正式research_note_531.md、冻结检查或累计计数更新。
+已保存候选[代码](../../../_shared/code/conditional_anchor_reference.py)、[结果](../../../_shared/results/conditional_anchor_reference_results.json)、[范围审查](scope_review.txt)和[构造审查](construction_review.txt)。代码标记531表示候选预留编号，不表示研究轮已签收；没有正式research_note_531.md、冻结检查或累计计数更新。
 
 数值六组检查已执行通过，但完整报告和最终科学验收未完成。源为极稀有的锚点接受事件，不能据此宣称可持续来源。终审指出：示例解码的原点身份还应改用已有+e₁锚点，或明确增加原点身份输入；延迟能量界应施于保留接受记录的粗分支联合cq态。以上范围修订尚未整合进完整正式报告。
 

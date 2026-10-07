@@ -1,0 +1,75 @@
+{
+  "round": 839,
+  "all_checks_passed": true,
+  "fresh_test_groups": 1,
+  "nested_CAR_tower_rows": [
+    {
+      "modes": 3,
+      "full_relative_entropy": 0.3030379328478207,
+      "common_gaussian_cost": 0.11029317582606352,
+      "constant_record_cost": 0.19274475702175708,
+      "split_residual": 1.1102230246251565e-16,
+      "even_algebra_residual": 6.661338147750939e-16,
+      "reference_minimum_eigenvalue": 0.05561626725590269
+    },
+    {
+      "modes": 4,
+      "full_relative_entropy": 0.3383923830480353,
+      "common_gaussian_cost": 0.1456476260262774,
+      "constant_record_cost": 0.19274475702175708,
+      "split_residual": 8.326672684688674e-16,
+      "even_algebra_residual": 1.3322676295501878e-15,
+      "reference_minimum_eigenvalue": 0.017542257646703897
+    },
+    {
+      "modes": 5,
+      "full_relative_entropy": 0.3973122909041983,
+      "common_gaussian_cost": 0.2045675338824402,
+      "constant_record_cost": 0.19274475702175708,
+      "split_residual": 9.992007221626409e-16,
+      "even_algebra_residual": 2.220446049250313e-16,
+      "reference_minimum_eigenvalue": 0.00558722011581924
+    },
+    {
+      "modes": 6,
+      "full_relative_entropy": 0.4961965440109167,
+      "common_gaussian_cost": 0.30345178698916014,
+      "constant_record_cost": 0.19274475702175708,
+      "split_residual": 5.551115123125783e-16,
+      "even_algebra_residual": 2.3869795029440866e-15,
+      "reference_minimum_eigenvalue": 0.0013338133911387164
+    }
+  ],
+  "same_original_pair_restricted_at_every_level": true,
+  "parity_center_probability_weights_retained": true,
+  "nonfaithful_common_support": {
+    "full_relative_entropy": 0.27992145059414675,
+    "gaussian_cost": 0.08717669357238922,
+    "record_cost": 0.19274475702175708,
+    "support_dimension": 8
+  },
+  "support_failure": {
+    "full_relative_entropy": "infinite",
+    "gaussian_cost": "infinite",
+    "both_share_support_failure": true
+  },
+  "reference_boundary_examples": [
+    {
+      "reference_occupation": 0.01,
+      "background_cost": 1.614463080360851
+    },
+    {
+      "reference_occupation": 0.0001,
+      "background_cost": 3.9120730079283126
+    },
+    {
+      "reference_occupation": 1e-08,
+      "background_cost": 8.517193196416237
+    }
+  ],
+  "boundary_examples_are_not_a_single_regional_tower": true,
+  "original_continuum_embedding_and_limit_are_analytic": true,
+  "original_regional_relative_entropy_finite_proven": false,
+  "area_or_Einstein_response_computed": false,
+  "scope": "Literal nested restrictions preserve the entropy split and its finite record term, including the even algebra with central weights. Nonfaithful references are treated by common support or infinity. The original-region result uses the analytic dense Cauchy-mode construction and Araki monotone convergence, not an inference from this finite numerical tower."
+}

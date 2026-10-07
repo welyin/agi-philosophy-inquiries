@@ -1,0 +1,5841 @@
+{
+  "round": 987,
+  "date": "2026-10-07",
+  "all_scientific_checks_passed": true,
+  "method": "exact rational enumeration, analytic screening, finite permutation check",
+  "contract": {
+    "noise": {
+      "exact": "1/10",
+      "decimal": 0.1
+    },
+    "port_cost": {
+      "exact": "1/8",
+      "decimal": 0.125
+    },
+    "training_repeats": 3,
+    "training_rows": 12,
+    "validation_rows": 32,
+    "maximum_validation_errors": 5,
+    "service_tasks": 256,
+    "maximum_port_uses": 900,
+    "maximum_setup_cost": {
+      "exact": "33/2",
+      "decimal": 16.5
+    },
+    "cost_is_not_heat": true,
+    "fresh_input_noise_and_blank_records_are_preparation_inputs": true
+  },
+  "analytic_screen": {
+    "single_port_information_bits": 0,
+    "joint_information_bits": 0.5310044064107188,
+    "oracle_greedy_stalls": true,
+    "exact_oracle_joint_gain": {
+      "exact": "3/20",
+      "decimal": 0.15
+    },
+    "general_parity": [
+      {
+        "arity": 2,
+        "all_proper_subsets_uninformative": true,
+        "full_prediction_error": {
+          "exact": "1/10",
+          "decimal": 0.1
+        },
+        "gain_with_fixed_cost": {
+          "exact": "3/20",
+          "decimal": 0.15
+        }
+      },
+      {
+        "arity": 3,
+        "all_proper_subsets_uninformative": true,
+        "full_prediction_error": {
+          "exact": "1/10",
+          "decimal": 0.1
+        },
+        "gain_with_fixed_cost": {
+          "exact": "1/40",
+          "decimal": 0.025
+        }
+      },
+      {
+        "arity": 4,
+        "all_proper_subsets_uninformative": true,
+        "full_prediction_error": {
+          "exact": "1/10",
+          "decimal": 0.1
+        },
+        "gain_with_fixed_cost": {
+          "exact": "-1/10",
+          "decimal": -0.1
+        }
+      },
+      {
+        "arity": 5,
+        "all_proper_subsets_uninformative": true,
+        "full_prediction_error": {
+          "exact": "1/10",
+          "decimal": 0.1
+        },
+        "gain_with_fixed_cost": {
+          "exact": "-9/40",
+          "decimal": -0.225
+        }
+      },
+      {
+        "arity": 6,
+        "all_proper_subsets_uninformative": true,
+        "full_prediction_error": {
+          "exact": "1/10",
+          "decimal": 0.1
+        },
+        "gain_with_fixed_cost": {
+          "exact": "-7/20",
+          "decimal": -0.35
+        }
+      }
+    ]
+  },
+  "training": {
+    "majority_error": {
+      "exact": "7/250",
+      "decimal": 0.028
+    },
+    "all_16_functions_used": true,
+    "policies": [
+      {
+        "truth_table": 0,
+        "oracle_greedy_ports": 0,
+        "oracle_joint_ports": 0,
+        "costs": [
+          {
+            "exact": "1/10",
+            "decimal": 0.1
+          },
+          {
+            "exact": "9/40",
+            "decimal": 0.225
+          },
+          {
+            "exact": "9/40",
+            "decimal": 0.225
+          },
+          {
+            "exact": "7/20",
+            "decimal": 0.35
+          }
+        ]
+      },
+      {
+        "truth_table": 1,
+        "oracle_greedy_ports": 0,
+        "oracle_joint_ports": 0,
+        "costs": [
+          {
+            "exact": "3/10",
+            "decimal": 0.3
+          },
+          {
+            "exact": "17/40",
+            "decimal": 0.425
+          },
+          {
+            "exact": "17/40",
+            "decimal": 0.425
+          },
+          {
+            "exact": "7/20",
+            "decimal": 0.35
+          }
+        ]
+      },
+      {
+        "truth_table": 2,
+        "oracle_greedy_ports": 0,
+        "oracle_joint_ports": 0,
+        "costs": [
+          {
+            "exact": "3/10",
+            "decimal": 0.3
+          },
+          {
+            "exact": "17/40",
+            "decimal": 0.425
+          },
+          {
+            "exact": "17/40",
+            "decimal": 0.425
+          },
+          {
+            "exact": "7/20",
+            "decimal": 0.35
+          }
+        ]
+      },
+      {
+        "truth_table": 3,
+        "oracle_greedy_ports": 2,
+        "oracle_joint_ports": 2,
+        "costs": [
+          {
+            "exact": "1/2",
+            "decimal": 0.5
+          },
+          {
+            "exact": "5/8",
+            "decimal": 0.625
+          },
+          {
+            "exact": "9/40",
+            "decimal": 0.225
+          },
+          {
+            "exact": "7/20",
+            "decimal": 0.35
+          }
+        ]
+      },
+      {
+        "truth_table": 4,
+        "oracle_greedy_ports": 0,
+        "oracle_joint_ports": 0,
+        "costs": [
+          {
+            "exact": "3/10",
+            "decimal": 0.3
+          },
+          {
+            "exact": "17/40",
+            "decimal": 0.425
+          },
+          {
+            "exact": "17/40",
+            "decimal": 0.425
+          },
+          {
+            "exact": "7/20",
+            "decimal": 0.35
+          }
+        ]
+      },
+      {
+        "truth_table": 5,
+        "oracle_greedy_ports": 1,
+        "oracle_joint_ports": 1,
+        "costs": [
+          {
+            "exact": "1/2",
+            "decimal": 0.5
+          },
+          {
+            "exact": "9/40",
+            "decimal": 0.225
+          },
+          {
+            "exact": "5/8",
+            "decimal": 0.625
+          },
+          {
+            "exact": "7/20",
+            "decimal": 0.35
+          }
+        ]
+      },
+      {
+        "truth_table": 6,
+        "oracle_greedy_ports": 0,
+        "oracle_joint_ports": 3,
+        "costs": [
+          {
+            "exact": "1/2",
+            "decimal": 0.5
+          },
+          {
+            "exact": "5/8",
+            "decimal": 0.625
+          },
+          {
+            "exact": "5/8",
+            "decimal": 0.625
+          },
+          {
+            "exact": "7/20",
+            "decimal": 0.35
+          }
+        ]
+      },
+      {
+        "truth_table": 7,
+        "oracle_greedy_ports": 0,
+        "oracle_joint_ports": 0,
+        "costs": [
+          {
+            "exact": "3/10",
+            "decimal": 0.3
+          },
+          {
+            "exact": "17/40",
+            "decimal": 0.425
+          },
+          {
+            "exact": "17/40",
+            "decimal": 0.425
+          },
+          {
+            "exact": "7/20",
+            "decimal": 0.35
+          }
+        ]
+      },
+      {
+        "truth_table": 8,
+        "oracle_greedy_ports": 0,
+        "oracle_joint_ports": 0,
+        "costs": [
+          {
+            "exact": "3/10",
+            "decimal": 0.3
+          },
+          {
+            "exact": "17/40",
+            "decimal": 0.425
+          },
+          {
+            "exact": "17/40",
+            "decimal": 0.425
+          },
+          {
+            "exact": "7/20",
+            "decimal": 0.35
+          }
+        ]
+      },
+      {
+        "truth_table": 9,
+        "oracle_greedy_ports": 0,
+        "oracle_joint_ports": 3,
+        "costs": [
+          {
+            "exact": "1/2",
+            "decimal": 0.5
+          },
+          {
+            "exact": "5/8",
+            "decimal": 0.625
+          },
+          {
+            "exact": "5/8",
+            "decimal": 0.625
+          },
+          {
+            "exact": "7/20",
+            "decimal": 0.35
+          }
+        ]
+      },
+      {
+        "truth_table": 10,
+        "oracle_greedy_ports": 1,
+        "oracle_joint_ports": 1,
+        "costs": [
+          {
+            "exact": "1/2",
+            "decimal": 0.5
+          },
+          {
+            "exact": "9/40",
+            "decimal": 0.225
+          },
+          {
+            "exact": "5/8",
+            "decimal": 0.625
+          },
+          {
+            "exact": "7/20",
+            "decimal": 0.35
+          }
+        ]
+      },
+      {
+        "truth_table": 11,
+        "oracle_greedy_ports": 0,
+        "oracle_joint_ports": 0,
+        "costs": [
+          {
+            "exact": "3/10",
+            "decimal": 0.3
+          },
+          {
+            "exact": "17/40",
+            "decimal": 0.425
+          },
+          {
+            "exact": "17/40",
+            "decimal": 0.425
+          },
+          {
+            "exact": "7/20",
+            "decimal": 0.35
+          }
+        ]
+      },
+      {
+        "truth_table": 12,
+        "oracle_greedy_ports": 2,
+        "oracle_joint_ports": 2,
+        "costs": [
+          {
+            "exact": "1/2",
+            "decimal": 0.5
+          },
+          {
+            "exact": "5/8",
+            "decimal": 0.625
+          },
+          {
+            "exact": "9/40",
+            "decimal": 0.225
+          },
+          {
+            "exact": "7/20",
+            "decimal": 0.35
+          }
+        ]
+      },
+      {
+        "truth_table": 13,
+        "oracle_greedy_ports": 0,
+        "oracle_joint_ports": 0,
+        "costs": [
+          {
+            "exact": "3/10",
+            "decimal": 0.3
+          },
+          {
+            "exact": "17/40",
+            "decimal": 0.425
+          },
+          {
+            "exact": "17/40",
+            "decimal": 0.425
+          },
+          {
+            "exact": "7/20",
+            "decimal": 0.35
+          }
+        ]
+      },
+      {
+        "truth_table": 14,
+        "oracle_greedy_ports": 0,
+        "oracle_joint_ports": 0,
+        "costs": [
+          {
+            "exact": "3/10",
+            "decimal": 0.3
+          },
+          {
+            "exact": "17/40",
+            "decimal": 0.425
+          },
+          {
+            "exact": "17/40",
+            "decimal": 0.425
+          },
+          {
+            "exact": "7/20",
+            "decimal": 0.35
+          }
+        ]
+      },
+      {
+        "truth_table": 15,
+        "oracle_greedy_ports": 0,
+        "oracle_joint_ports": 0,
+        "costs": [
+          {
+            "exact": "1/10",
+            "decimal": 0.1
+          },
+          {
+            "exact": "9/40",
+            "decimal": 0.225
+          },
+          {
+            "exact": "9/40",
+            "decimal": 0.225
+          },
+          {
+            "exact": "7/20",
+            "decimal": 0.35
+          }
+        ]
+      }
+    ]
+  },
+  "finite_trial": {
+    "all_functions": [
+      {
+        "truth": 0,
+        "independent_record": false,
+        "normalization": {
+          "exact": "1",
+          "decimal": 1.0
+        },
+        "commit_probability": {
+          "exact": "84310811739/335544320000000000",
+          "decimal": 2.512657992213964e-07
+        },
+        "pre_validation_commit_probability": {
+          "exact": "8680203/1953125000",
+          "decimal": 0.004444263936
+        },
+        "oracle_constant_risk": {
+          "exact": "1/10",
+          "decimal": 0.1
+        },
+        "service_loss_with_port_fees": {
+          "exact": "8394388892564042673/83886080000000000000",
+          "decimal": 0.10006891360955289
+        },
+        "no_validation_service_loss": {
+          "exact": "400731201/3906250000",
+          "decimal": 0.102587187456
+        },
+        "service_gain": {
+          "exact": "-5780892564042673/83886080000000000000",
+          "decimal": -6.891360955289213e-05
+        },
+        "expected_setup_cost": {
+          "exact": "1108759716/244140625",
+          "decimal": 4.541479796736
+        },
+        "net_256_tasks": {
+          "exact": "-1493932992358495153/327680000000000000",
+          "decimal": -4.559121680781541
+        },
+        "net_using_max_setup": {
+          "exact": "-5412500892564042673/327680000000000000",
+          "decimal": -16.517641884045542
+        },
+        "all_paths": [
+          {
+            "learned_table": 0,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "3486784401/3906250000",
+              "decimal": 0.892616806656
+            },
+            "true_prediction_error": {
+              "exact": "1/10",
+              "decimal": 0.1
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 1,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "1/10",
+              "decimal": 0.1
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 2,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "1/10",
+              "decimal": 0.1
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 3,
+            "selected_ports": 2,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "242825/4294967296",
+              "decimal": 5.653710104525089e-05
+            }
+          },
+          {
+            "learned_table": 4,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "1/10",
+              "decimal": 0.1
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 5,
+            "selected_ports": 1,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "242825/4294967296",
+              "decimal": 5.653710104525089e-05
+            }
+          },
+          {
+            "learned_table": 6,
+            "selected_ports": 3,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "242825/4294967296",
+              "decimal": 5.653710104525089e-05
+            }
+          },
+          {
+            "learned_table": 7,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "9/10",
+              "decimal": 0.9
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 8,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "1/10",
+              "decimal": 0.1
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 9,
+            "selected_ports": 3,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "242825/4294967296",
+              "decimal": 5.653710104525089e-05
+            }
+          },
+          {
+            "learned_table": 10,
+            "selected_ports": 1,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "242825/4294967296",
+              "decimal": 5.653710104525089e-05
+            }
+          },
+          {
+            "learned_table": 11,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "9/10",
+              "decimal": 0.9
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 12,
+            "selected_ports": 2,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "242825/4294967296",
+              "decimal": 5.653710104525089e-05
+            }
+          },
+          {
+            "learned_table": 13,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "9/10",
+              "decimal": 0.9
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 14,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "9/10",
+              "decimal": 0.9
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 15,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2401/3906250000",
+              "decimal": 6.14656e-07
+            },
+            "true_prediction_error": {
+              "exact": "9/10",
+              "decimal": 0.9
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          }
+        ]
+      },
+      {
+        "truth": 1,
+        "independent_record": false,
+        "normalization": {
+          "exact": "1",
+          "decimal": 1.0
+        },
+        "commit_probability": {
+          "exact": "768911226565496800070418986188139999643/195312500000000000000000000000000000000000",
+          "decimal": 0.003936825480015344
+        },
+        "pre_validation_commit_probability": {
+          "exact": "150788547/1953125000",
+          "decimal": 0.077203736064
+        },
+        "oracle_constant_risk": {
+          "exact": "3/10",
+          "decimal": 0.3
+        },
+        "service_loss_with_port_fees": {
+          "exact": "588972209310956450350595210956333408803611/1953125000000000000000000000000000000000000",
+          "decimal": 0.3015537711672097
+        },
+        "no_validation_service_loss": {
+          "exact": "1225744249/3906250000",
+          "decimal": 0.313790527744
+        },
+        "service_gain": {
+          "exact": "-3034709310956450350595210956333408803611/1953125000000000000000000000000000000000000",
+          "decimal": -0.0015537711672097025
+        },
+        "expected_setup_cost": {
+          "exact": "1274552784/244140625",
+          "decimal": 5.220568203264
+        },
+        "net_256_tasks": {
+          "exact": "-42864483810956450350595210956333408803611/7629394531250000000000000000000000000000",
+          "decimal": -5.618333622069684
+        },
+        "net_using_max_setup": {
+          "exact": "-128919719076581450350595210956333408803611/7629394531250000000000000000000000000000",
+          "decimal": -16.897765418805683
+        },
+        "all_paths": [
+          {
+            "learned_table": 0,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 1,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "3486784401/3906250000",
+              "decimal": 0.892616806656
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 2,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 3,
+            "selected_ports": 2,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "5103499564458333400901938670089/100000000000000000000000000000000",
+              "decimal": 0.05103499564458333
+            }
+          },
+          {
+            "learned_table": 4,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 5,
+            "selected_ports": 1,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "5103499564458333400901938670089/100000000000000000000000000000000",
+              "decimal": 0.05103499564458333
+            }
+          },
+          {
+            "learned_table": 6,
+            "selected_ports": 3,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "27906121271559572173449/100000000000000000000000000000000",
+              "decimal": 2.790612127155957e-10
+            }
+          },
+          {
+            "learned_table": 7,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 8,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 9,
+            "selected_ports": 3,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "5103499564458333400901938670089/100000000000000000000000000000000",
+              "decimal": 0.05103499564458333
+            }
+          },
+          {
+            "learned_table": 10,
+            "selected_ports": 1,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "27906121271559572173449/100000000000000000000000000000000",
+              "decimal": 2.790612127155957e-10
+            }
+          },
+          {
+            "learned_table": 11,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 12,
+            "selected_ports": 2,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "27906121271559572173449/100000000000000000000000000000000",
+              "decimal": 2.790612127155957e-10
+            }
+          },
+          {
+            "learned_table": 13,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 14,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2401/3906250000",
+              "decimal": 6.14656e-07
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 15,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          }
+        ]
+      },
+      {
+        "truth": 2,
+        "independent_record": false,
+        "normalization": {
+          "exact": "1",
+          "decimal": 1.0
+        },
+        "commit_probability": {
+          "exact": "768911226565496800070418986188139999643/195312500000000000000000000000000000000000",
+          "decimal": 0.003936825480015344
+        },
+        "pre_validation_commit_probability": {
+          "exact": "150788547/1953125000",
+          "decimal": 0.077203736064
+        },
+        "oracle_constant_risk": {
+          "exact": "3/10",
+          "decimal": 0.3
+        },
+        "service_loss_with_port_fees": {
+          "exact": "588972209310956450350595210956333408803611/1953125000000000000000000000000000000000000",
+          "decimal": 0.3015537711672097
+        },
+        "no_validation_service_loss": {
+          "exact": "1225744249/3906250000",
+          "decimal": 0.313790527744
+        },
+        "service_gain": {
+          "exact": "-3034709310956450350595210956333408803611/1953125000000000000000000000000000000000000",
+          "decimal": -0.0015537711672097025
+        },
+        "expected_setup_cost": {
+          "exact": "1274552784/244140625",
+          "decimal": 5.220568203264
+        },
+        "net_256_tasks": {
+          "exact": "-42864483810956450350595210956333408803611/7629394531250000000000000000000000000000",
+          "decimal": -5.618333622069684
+        },
+        "net_using_max_setup": {
+          "exact": "-128919719076581450350595210956333408803611/7629394531250000000000000000000000000000",
+          "decimal": -16.897765418805683
+        },
+        "all_paths": [
+          {
+            "learned_table": 0,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 1,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 2,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "3486784401/3906250000",
+              "decimal": 0.892616806656
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 3,
+            "selected_ports": 2,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "5103499564458333400901938670089/100000000000000000000000000000000",
+              "decimal": 0.05103499564458333
+            }
+          },
+          {
+            "learned_table": 4,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 5,
+            "selected_ports": 1,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "27906121271559572173449/100000000000000000000000000000000",
+              "decimal": 2.790612127155957e-10
+            }
+          },
+          {
+            "learned_table": 6,
+            "selected_ports": 3,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "5103499564458333400901938670089/100000000000000000000000000000000",
+              "decimal": 0.05103499564458333
+            }
+          },
+          {
+            "learned_table": 7,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 8,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 9,
+            "selected_ports": 3,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "27906121271559572173449/100000000000000000000000000000000",
+              "decimal": 2.790612127155957e-10
+            }
+          },
+          {
+            "learned_table": 10,
+            "selected_ports": 1,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "5103499564458333400901938670089/100000000000000000000000000000000",
+              "decimal": 0.05103499564458333
+            }
+          },
+          {
+            "learned_table": 11,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 12,
+            "selected_ports": 2,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "27906121271559572173449/100000000000000000000000000000000",
+              "decimal": 2.790612127155957e-10
+            }
+          },
+          {
+            "learned_table": 13,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2401/3906250000",
+              "decimal": 6.14656e-07
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 14,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 15,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          }
+        ]
+      },
+      {
+        "truth": 3,
+        "independent_record": false,
+        "normalization": {
+          "exact": "1",
+          "decimal": 1.0
+        },
+        "commit_probability": {
+          "exact": "157881861513578019491385633027106962970499/195312500000000000000000000000000000000000",
+          "decimal": 0.8083551309495195
+        },
+        "pre_validation_commit_probability": {
+          "exact": "1749180203/1953125000",
+          "decimal": 0.895580263936
+        },
+        "oracle_constant_risk": {
+          "exact": "1/2",
+          "decimal": 0.5
+        },
+        "service_loss_with_port_fees": {
+          "exact": "108477506430665459044283834270539228126793/390625000000000000000000000000000000000000",
+          "decimal": 0.2777024164625036
+        },
+        "no_validation_service_loss": {
+          "exact": "996430601/3906250000",
+          "decimal": 0.255086233856
+        },
+        "service_gain": {
+          "exact": "86834993569334540955716165729460771873207/390625000000000000000000000000000000000000",
+          "decimal": 0.22229758353749643
+        },
+        "expected_setup_cost": {
+          "exact": "2849259716/244140625",
+          "decimal": 11.670567796736
+        },
+        "net_256_tasks": {
+          "exact": "69027120344334540955716165729460771873207/1525878906250000000000000000000000000000",
+          "decimal": 45.237613588863084
+        },
+        "net_using_max_setup": {
+          "exact": "61657991616209540955716165729460771873207/1525878906250000000000000000000000000000",
+          "decimal": 40.408181385599086
+        },
+        "all_paths": [
+          {
+            "learned_table": 0,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 1,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 2,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 3,
+            "selected_ports": 2,
+            "training_probability": {
+              "exact": "3486784401/3906250000",
+              "decimal": 0.892616806656
+            },
+            "true_prediction_error": {
+              "exact": "1/10",
+              "decimal": 0.1
+            },
+            "validation_acceptance": {
+              "exact": "90560132568791470399485723984009/100000000000000000000000000000000",
+              "decimal": 0.9056013256879147
+            }
+          },
+          {
+            "learned_table": 4,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 5,
+            "selected_ports": 1,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "242825/4294967296",
+              "decimal": 5.653710104525089e-05
+            }
+          },
+          {
+            "learned_table": 6,
+            "selected_ports": 3,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "242825/4294967296",
+              "decimal": 5.653710104525089e-05
+            }
+          },
+          {
+            "learned_table": 7,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 8,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 9,
+            "selected_ports": 3,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "242825/4294967296",
+              "decimal": 5.653710104525089e-05
+            }
+          },
+          {
+            "learned_table": 10,
+            "selected_ports": 1,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "242825/4294967296",
+              "decimal": 5.653710104525089e-05
+            }
+          },
+          {
+            "learned_table": 11,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 12,
+            "selected_ports": 2,
+            "training_probability": {
+              "exact": "2401/3906250000",
+              "decimal": 6.14656e-07
+            },
+            "true_prediction_error": {
+              "exact": "9/10",
+              "decimal": 0.9
+            },
+            "validation_acceptance": {
+              "exact": "12130641289/100000000000000000000000000000000",
+              "decimal": 1.2130641289e-22
+            }
+          },
+          {
+            "learned_table": 13,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 14,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 15,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          }
+        ]
+      },
+      {
+        "truth": 4,
+        "independent_record": false,
+        "normalization": {
+          "exact": "1",
+          "decimal": 1.0
+        },
+        "commit_probability": {
+          "exact": "768911226565496800070418986188139999643/195312500000000000000000000000000000000000",
+          "decimal": 0.003936825480015344
+        },
+        "pre_validation_commit_probability": {
+          "exact": "150788547/1953125000",
+          "decimal": 0.077203736064
+        },
+        "oracle_constant_risk": {
+          "exact": "3/10",
+          "decimal": 0.3
+        },
+        "service_loss_with_port_fees": {
+          "exact": "588972209310956450350595210956333408803611/1953125000000000000000000000000000000000000",
+          "decimal": 0.3015537711672097
+        },
+        "no_validation_service_loss": {
+          "exact": "1225744249/3906250000",
+          "decimal": 0.313790527744
+        },
+        "service_gain": {
+          "exact": "-3034709310956450350595210956333408803611/1953125000000000000000000000000000000000000",
+          "decimal": -0.0015537711672097025
+        },
+        "expected_setup_cost": {
+          "exact": "1274552784/244140625",
+          "decimal": 5.220568203264
+        },
+        "net_256_tasks": {
+          "exact": "-42864483810956450350595210956333408803611/7629394531250000000000000000000000000000",
+          "decimal": -5.618333622069684
+        },
+        "net_using_max_setup": {
+          "exact": "-128919719076581450350595210956333408803611/7629394531250000000000000000000000000000",
+          "decimal": -16.897765418805683
+        },
+        "all_paths": [
+          {
+            "learned_table": 0,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 1,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 2,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 3,
+            "selected_ports": 2,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "27906121271559572173449/100000000000000000000000000000000",
+              "decimal": 2.790612127155957e-10
+            }
+          },
+          {
+            "learned_table": 4,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "3486784401/3906250000",
+              "decimal": 0.892616806656
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 5,
+            "selected_ports": 1,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "5103499564458333400901938670089/100000000000000000000000000000000",
+              "decimal": 0.05103499564458333
+            }
+          },
+          {
+            "learned_table": 6,
+            "selected_ports": 3,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "5103499564458333400901938670089/100000000000000000000000000000000",
+              "decimal": 0.05103499564458333
+            }
+          },
+          {
+            "learned_table": 7,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 8,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 9,
+            "selected_ports": 3,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "27906121271559572173449/100000000000000000000000000000000",
+              "decimal": 2.790612127155957e-10
+            }
+          },
+          {
+            "learned_table": 10,
+            "selected_ports": 1,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "27906121271559572173449/100000000000000000000000000000000",
+              "decimal": 2.790612127155957e-10
+            }
+          },
+          {
+            "learned_table": 11,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2401/3906250000",
+              "decimal": 6.14656e-07
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 12,
+            "selected_ports": 2,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "5103499564458333400901938670089/100000000000000000000000000000000",
+              "decimal": 0.05103499564458333
+            }
+          },
+          {
+            "learned_table": 13,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 14,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 15,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          }
+        ]
+      },
+      {
+        "truth": 5,
+        "independent_record": false,
+        "normalization": {
+          "exact": "1",
+          "decimal": 1.0
+        },
+        "commit_probability": {
+          "exact": "157881861513578019491385633027106962970499/195312500000000000000000000000000000000000",
+          "decimal": 0.8083551309495195
+        },
+        "pre_validation_commit_probability": {
+          "exact": "1749180203/1953125000",
+          "decimal": 0.895580263936
+        },
+        "oracle_constant_risk": {
+          "exact": "1/2",
+          "decimal": 0.5
+        },
+        "service_loss_with_port_fees": {
+          "exact": "108477506430665459044283834270539228126793/390625000000000000000000000000000000000000",
+          "decimal": 0.2777024164625036
+        },
+        "no_validation_service_loss": {
+          "exact": "996430601/3906250000",
+          "decimal": 0.255086233856
+        },
+        "service_gain": {
+          "exact": "86834993569334540955716165729460771873207/390625000000000000000000000000000000000000",
+          "decimal": 0.22229758353749643
+        },
+        "expected_setup_cost": {
+          "exact": "2849259716/244140625",
+          "decimal": 11.670567796736
+        },
+        "net_256_tasks": {
+          "exact": "69027120344334540955716165729460771873207/1525878906250000000000000000000000000000",
+          "decimal": 45.237613588863084
+        },
+        "net_using_max_setup": {
+          "exact": "61657991616209540955716165729460771873207/1525878906250000000000000000000000000000",
+          "decimal": 40.408181385599086
+        },
+        "all_paths": [
+          {
+            "learned_table": 0,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 1,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 2,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 3,
+            "selected_ports": 2,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "242825/4294967296",
+              "decimal": 5.653710104525089e-05
+            }
+          },
+          {
+            "learned_table": 4,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 5,
+            "selected_ports": 1,
+            "training_probability": {
+              "exact": "3486784401/3906250000",
+              "decimal": 0.892616806656
+            },
+            "true_prediction_error": {
+              "exact": "1/10",
+              "decimal": 0.1
+            },
+            "validation_acceptance": {
+              "exact": "90560132568791470399485723984009/100000000000000000000000000000000",
+              "decimal": 0.9056013256879147
+            }
+          },
+          {
+            "learned_table": 6,
+            "selected_ports": 3,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "242825/4294967296",
+              "decimal": 5.653710104525089e-05
+            }
+          },
+          {
+            "learned_table": 7,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 8,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 9,
+            "selected_ports": 3,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "242825/4294967296",
+              "decimal": 5.653710104525089e-05
+            }
+          },
+          {
+            "learned_table": 10,
+            "selected_ports": 1,
+            "training_probability": {
+              "exact": "2401/3906250000",
+              "decimal": 6.14656e-07
+            },
+            "true_prediction_error": {
+              "exact": "9/10",
+              "decimal": 0.9
+            },
+            "validation_acceptance": {
+              "exact": "12130641289/100000000000000000000000000000000",
+              "decimal": 1.2130641289e-22
+            }
+          },
+          {
+            "learned_table": 11,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 12,
+            "selected_ports": 2,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "242825/4294967296",
+              "decimal": 5.653710104525089e-05
+            }
+          },
+          {
+            "learned_table": 13,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 14,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 15,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          }
+        ]
+      },
+      {
+        "truth": 6,
+        "independent_record": false,
+        "normalization": {
+          "exact": "1",
+          "decimal": 1.0
+        },
+        "commit_probability": {
+          "exact": "157881861513578019491385633027106962970499/195312500000000000000000000000000000000000",
+          "decimal": 0.8083551309495195
+        },
+        "pre_validation_commit_probability": {
+          "exact": "1749180203/1953125000",
+          "decimal": 0.895580263936
+        },
+        "oracle_constant_risk": {
+          "exact": "1/2",
+          "decimal": 0.5
+        },
+        "service_loss_with_port_fees": {
+          "exact": "147947959540222111309881891549418324826449/390625000000000000000000000000000000000000",
+          "decimal": 0.3787467764229686
+        },
+        "no_validation_service_loss": {
+          "exact": "1431555601/3906250000",
+          "decimal": 0.366478233856
+        },
+        "service_gain": {
+          "exact": "47364540459777888690118108450581675173551/390625000000000000000000000000000000000000",
+          "decimal": 0.12125322357703139
+        },
+        "expected_setup_cost": {
+          "exact": "3719509716/244140625",
+          "decimal": 15.235111796736
+        },
+        "net_256_tasks": {
+          "exact": "24117604734777888690118108450581675173551/1525878906250000000000000000000000000000",
+          "decimal": 15.805713438984037
+        },
+        "net_using_max_setup": {
+          "exact": "22187538506652888690118108450581675173551/1525878906250000000000000000000000000000",
+          "decimal": 14.540825235720037
+        },
+        "all_paths": [
+          {
+            "learned_table": 0,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 1,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 2,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 3,
+            "selected_ports": 2,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "242825/4294967296",
+              "decimal": 5.653710104525089e-05
+            }
+          },
+          {
+            "learned_table": 4,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 5,
+            "selected_ports": 1,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "242825/4294967296",
+              "decimal": 5.653710104525089e-05
+            }
+          },
+          {
+            "learned_table": 6,
+            "selected_ports": 3,
+            "training_probability": {
+              "exact": "3486784401/3906250000",
+              "decimal": 0.892616806656
+            },
+            "true_prediction_error": {
+              "exact": "1/10",
+              "decimal": 0.1
+            },
+            "validation_acceptance": {
+              "exact": "90560132568791470399485723984009/100000000000000000000000000000000",
+              "decimal": 0.9056013256879147
+            }
+          },
+          {
+            "learned_table": 7,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 8,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 9,
+            "selected_ports": 3,
+            "training_probability": {
+              "exact": "2401/3906250000",
+              "decimal": 6.14656e-07
+            },
+            "true_prediction_error": {
+              "exact": "9/10",
+              "decimal": 0.9
+            },
+            "validation_acceptance": {
+              "exact": "12130641289/100000000000000000000000000000000",
+              "decimal": 1.2130641289e-22
+            }
+          },
+          {
+            "learned_table": 10,
+            "selected_ports": 1,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "242825/4294967296",
+              "decimal": 5.653710104525089e-05
+            }
+          },
+          {
+            "learned_table": 11,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 12,
+            "selected_ports": 2,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "242825/4294967296",
+              "decimal": 5.653710104525089e-05
+            }
+          },
+          {
+            "learned_table": 13,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 14,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 15,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          }
+        ]
+      },
+      {
+        "truth": 7,
+        "independent_record": false,
+        "normalization": {
+          "exact": "1",
+          "decimal": 1.0
+        },
+        "commit_probability": {
+          "exact": "768911226565496800070418986188139999643/195312500000000000000000000000000000000000",
+          "decimal": 0.003936825480015344
+        },
+        "pre_validation_commit_probability": {
+          "exact": "150788547/1953125000",
+          "decimal": 0.077203736064
+        },
+        "oracle_constant_risk": {
+          "exact": "3/10",
+          "decimal": 0.3
+        },
+        "service_loss_with_port_fees": {
+          "exact": "646211983204694463150313535011580848805039/1953125000000000000000000000000000000000000",
+          "decimal": 0.33086053540080357
+        },
+        "no_validation_service_loss": {
+          "exact": "1225744249/3906250000",
+          "decimal": 0.313790527744
+        },
+        "service_gain": {
+          "exact": "-60274483204694463150313535011580848805039/1953125000000000000000000000000000000000000",
+          "decimal": -0.030860535400803565
+        },
+        "expected_setup_cost": {
+          "exact": "1274552784/244140625",
+          "decimal": 5.220568203264
+        },
+        "net_256_tasks": {
+          "exact": "-100104257704694463150313535011580848805039/7629394531250000000000000000000000000000",
+          "decimal": -13.120865265869712
+        },
+        "net_using_max_setup": {
+          "exact": "-186159492970319463150313535011580848805039/7629394531250000000000000000000000000000",
+          "decimal": -24.400297062605713
+        },
+        "all_paths": [
+          {
+            "learned_table": 0,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 1,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 2,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 3,
+            "selected_ports": 2,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "5103499564458333400901938670089/100000000000000000000000000000000",
+              "decimal": 0.05103499564458333
+            }
+          },
+          {
+            "learned_table": 4,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 5,
+            "selected_ports": 1,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "5103499564458333400901938670089/100000000000000000000000000000000",
+              "decimal": 0.05103499564458333
+            }
+          },
+          {
+            "learned_table": 6,
+            "selected_ports": 3,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "5103499564458333400901938670089/100000000000000000000000000000000",
+              "decimal": 0.05103499564458333
+            }
+          },
+          {
+            "learned_table": 7,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "3486784401/3906250000",
+              "decimal": 0.892616806656
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 8,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2401/3906250000",
+              "decimal": 6.14656e-07
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 9,
+            "selected_ports": 3,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "27906121271559572173449/100000000000000000000000000000000",
+              "decimal": 2.790612127155957e-10
+            }
+          },
+          {
+            "learned_table": 10,
+            "selected_ports": 1,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "27906121271559572173449/100000000000000000000000000000000",
+              "decimal": 2.790612127155957e-10
+            }
+          },
+          {
+            "learned_table": 11,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 12,
+            "selected_ports": 2,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "27906121271559572173449/100000000000000000000000000000000",
+              "decimal": 2.790612127155957e-10
+            }
+          },
+          {
+            "learned_table": 13,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 14,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 15,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          }
+        ]
+      },
+      {
+        "truth": 8,
+        "independent_record": false,
+        "normalization": {
+          "exact": "1",
+          "decimal": 1.0
+        },
+        "commit_probability": {
+          "exact": "768911226565496800070418986188139999643/195312500000000000000000000000000000000000",
+          "decimal": 0.003936825480015344
+        },
+        "pre_validation_commit_probability": {
+          "exact": "150788547/1953125000",
+          "decimal": 0.077203736064
+        },
+        "oracle_constant_risk": {
+          "exact": "3/10",
+          "decimal": 0.3
+        },
+        "service_loss_with_port_fees": {
+          "exact": "588972209310956450350595210956333408803611/1953125000000000000000000000000000000000000",
+          "decimal": 0.3015537711672097
+        },
+        "no_validation_service_loss": {
+          "exact": "1225744249/3906250000",
+          "decimal": 0.313790527744
+        },
+        "service_gain": {
+          "exact": "-3034709310956450350595210956333408803611/1953125000000000000000000000000000000000000",
+          "decimal": -0.0015537711672097025
+        },
+        "expected_setup_cost": {
+          "exact": "1274552784/244140625",
+          "decimal": 5.220568203264
+        },
+        "net_256_tasks": {
+          "exact": "-42864483810956450350595210956333408803611/7629394531250000000000000000000000000000",
+          "decimal": -5.618333622069684
+        },
+        "net_using_max_setup": {
+          "exact": "-128919719076581450350595210956333408803611/7629394531250000000000000000000000000000",
+          "decimal": -16.897765418805683
+        },
+        "all_paths": [
+          {
+            "learned_table": 0,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 1,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 2,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 3,
+            "selected_ports": 2,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "27906121271559572173449/100000000000000000000000000000000",
+              "decimal": 2.790612127155957e-10
+            }
+          },
+          {
+            "learned_table": 4,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 5,
+            "selected_ports": 1,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "27906121271559572173449/100000000000000000000000000000000",
+              "decimal": 2.790612127155957e-10
+            }
+          },
+          {
+            "learned_table": 6,
+            "selected_ports": 3,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "27906121271559572173449/100000000000000000000000000000000",
+              "decimal": 2.790612127155957e-10
+            }
+          },
+          {
+            "learned_table": 7,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2401/3906250000",
+              "decimal": 6.14656e-07
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 8,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "3486784401/3906250000",
+              "decimal": 0.892616806656
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 9,
+            "selected_ports": 3,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "5103499564458333400901938670089/100000000000000000000000000000000",
+              "decimal": 0.05103499564458333
+            }
+          },
+          {
+            "learned_table": 10,
+            "selected_ports": 1,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "5103499564458333400901938670089/100000000000000000000000000000000",
+              "decimal": 0.05103499564458333
+            }
+          },
+          {
+            "learned_table": 11,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 12,
+            "selected_ports": 2,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "5103499564458333400901938670089/100000000000000000000000000000000",
+              "decimal": 0.05103499564458333
+            }
+          },
+          {
+            "learned_table": 13,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 14,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 15,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          }
+        ]
+      },
+      {
+        "truth": 9,
+        "independent_record": false,
+        "normalization": {
+          "exact": "1",
+          "decimal": 1.0
+        },
+        "commit_probability": {
+          "exact": "157881861513578019491385633027106962970499/195312500000000000000000000000000000000000",
+          "decimal": 0.8083551309495195
+        },
+        "pre_validation_commit_probability": {
+          "exact": "1749180203/1953125000",
+          "decimal": 0.895580263936
+        },
+        "oracle_constant_risk": {
+          "exact": "1/2",
+          "decimal": 0.5
+        },
+        "service_loss_with_port_fees": {
+          "exact": "147947959540222111309881891549418324826449/390625000000000000000000000000000000000000",
+          "decimal": 0.3787467764229686
+        },
+        "no_validation_service_loss": {
+          "exact": "1431555601/3906250000",
+          "decimal": 0.366478233856
+        },
+        "service_gain": {
+          "exact": "47364540459777888690118108450581675173551/390625000000000000000000000000000000000000",
+          "decimal": 0.12125322357703139
+        },
+        "expected_setup_cost": {
+          "exact": "3719509716/244140625",
+          "decimal": 15.235111796736
+        },
+        "net_256_tasks": {
+          "exact": "24117604734777888690118108450581675173551/1525878906250000000000000000000000000000",
+          "decimal": 15.805713438984037
+        },
+        "net_using_max_setup": {
+          "exact": "22187538506652888690118108450581675173551/1525878906250000000000000000000000000000",
+          "decimal": 14.540825235720037
+        },
+        "all_paths": [
+          {
+            "learned_table": 0,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 1,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 2,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 3,
+            "selected_ports": 2,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "242825/4294967296",
+              "decimal": 5.653710104525089e-05
+            }
+          },
+          {
+            "learned_table": 4,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 5,
+            "selected_ports": 1,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "242825/4294967296",
+              "decimal": 5.653710104525089e-05
+            }
+          },
+          {
+            "learned_table": 6,
+            "selected_ports": 3,
+            "training_probability": {
+              "exact": "2401/3906250000",
+              "decimal": 6.14656e-07
+            },
+            "true_prediction_error": {
+              "exact": "9/10",
+              "decimal": 0.9
+            },
+            "validation_acceptance": {
+              "exact": "12130641289/100000000000000000000000000000000",
+              "decimal": 1.2130641289e-22
+            }
+          },
+          {
+            "learned_table": 7,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 8,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 9,
+            "selected_ports": 3,
+            "training_probability": {
+              "exact": "3486784401/3906250000",
+              "decimal": 0.892616806656
+            },
+            "true_prediction_error": {
+              "exact": "1/10",
+              "decimal": 0.1
+            },
+            "validation_acceptance": {
+              "exact": "90560132568791470399485723984009/100000000000000000000000000000000",
+              "decimal": 0.9056013256879147
+            }
+          },
+          {
+            "learned_table": 10,
+            "selected_ports": 1,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "242825/4294967296",
+              "decimal": 5.653710104525089e-05
+            }
+          },
+          {
+            "learned_table": 11,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 12,
+            "selected_ports": 2,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "242825/4294967296",
+              "decimal": 5.653710104525089e-05
+            }
+          },
+          {
+            "learned_table": 13,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 14,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 15,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          }
+        ]
+      },
+      {
+        "truth": 10,
+        "independent_record": false,
+        "normalization": {
+          "exact": "1",
+          "decimal": 1.0
+        },
+        "commit_probability": {
+          "exact": "157881861513578019491385633027106962970499/195312500000000000000000000000000000000000",
+          "decimal": 0.8083551309495195
+        },
+        "pre_validation_commit_probability": {
+          "exact": "1749180203/1953125000",
+          "decimal": 0.895580263936
+        },
+        "oracle_constant_risk": {
+          "exact": "1/2",
+          "decimal": 0.5
+        },
+        "service_loss_with_port_fees": {
+          "exact": "108477506430665459044283834270539228126793/390625000000000000000000000000000000000000",
+          "decimal": 0.2777024164625036
+        },
+        "no_validation_service_loss": {
+          "exact": "996430601/3906250000",
+          "decimal": 0.255086233856
+        },
+        "service_gain": {
+          "exact": "86834993569334540955716165729460771873207/390625000000000000000000000000000000000000",
+          "decimal": 0.22229758353749643
+        },
+        "expected_setup_cost": {
+          "exact": "2849259716/244140625",
+          "decimal": 11.670567796736
+        },
+        "net_256_tasks": {
+          "exact": "69027120344334540955716165729460771873207/1525878906250000000000000000000000000000",
+          "decimal": 45.237613588863084
+        },
+        "net_using_max_setup": {
+          "exact": "61657991616209540955716165729460771873207/1525878906250000000000000000000000000000",
+          "decimal": 40.408181385599086
+        },
+        "all_paths": [
+          {
+            "learned_table": 0,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 1,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 2,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 3,
+            "selected_ports": 2,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "242825/4294967296",
+              "decimal": 5.653710104525089e-05
+            }
+          },
+          {
+            "learned_table": 4,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 5,
+            "selected_ports": 1,
+            "training_probability": {
+              "exact": "2401/3906250000",
+              "decimal": 6.14656e-07
+            },
+            "true_prediction_error": {
+              "exact": "9/10",
+              "decimal": 0.9
+            },
+            "validation_acceptance": {
+              "exact": "12130641289/100000000000000000000000000000000",
+              "decimal": 1.2130641289e-22
+            }
+          },
+          {
+            "learned_table": 6,
+            "selected_ports": 3,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "242825/4294967296",
+              "decimal": 5.653710104525089e-05
+            }
+          },
+          {
+            "learned_table": 7,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 8,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 9,
+            "selected_ports": 3,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "242825/4294967296",
+              "decimal": 5.653710104525089e-05
+            }
+          },
+          {
+            "learned_table": 10,
+            "selected_ports": 1,
+            "training_probability": {
+              "exact": "3486784401/3906250000",
+              "decimal": 0.892616806656
+            },
+            "true_prediction_error": {
+              "exact": "1/10",
+              "decimal": 0.1
+            },
+            "validation_acceptance": {
+              "exact": "90560132568791470399485723984009/100000000000000000000000000000000",
+              "decimal": 0.9056013256879147
+            }
+          },
+          {
+            "learned_table": 11,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 12,
+            "selected_ports": 2,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "242825/4294967296",
+              "decimal": 5.653710104525089e-05
+            }
+          },
+          {
+            "learned_table": 13,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 14,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 15,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          }
+        ]
+      },
+      {
+        "truth": 11,
+        "independent_record": false,
+        "normalization": {
+          "exact": "1",
+          "decimal": 1.0
+        },
+        "commit_probability": {
+          "exact": "768911226565496800070418986188139999643/195312500000000000000000000000000000000000",
+          "decimal": 0.003936825480015344
+        },
+        "pre_validation_commit_probability": {
+          "exact": "150788547/1953125000",
+          "decimal": 0.077203736064
+        },
+        "oracle_constant_risk": {
+          "exact": "3/10",
+          "decimal": 0.3
+        },
+        "service_loss_with_port_fees": {
+          "exact": "646211983204694463150313535011580848805039/1953125000000000000000000000000000000000000",
+          "decimal": 0.33086053540080357
+        },
+        "no_validation_service_loss": {
+          "exact": "1225744249/3906250000",
+          "decimal": 0.313790527744
+        },
+        "service_gain": {
+          "exact": "-60274483204694463150313535011580848805039/1953125000000000000000000000000000000000000",
+          "decimal": -0.030860535400803565
+        },
+        "expected_setup_cost": {
+          "exact": "1274552784/244140625",
+          "decimal": 5.220568203264
+        },
+        "net_256_tasks": {
+          "exact": "-100104257704694463150313535011580848805039/7629394531250000000000000000000000000000",
+          "decimal": -13.120865265869712
+        },
+        "net_using_max_setup": {
+          "exact": "-186159492970319463150313535011580848805039/7629394531250000000000000000000000000000",
+          "decimal": -24.400297062605713
+        },
+        "all_paths": [
+          {
+            "learned_table": 0,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 1,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 2,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 3,
+            "selected_ports": 2,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "5103499564458333400901938670089/100000000000000000000000000000000",
+              "decimal": 0.05103499564458333
+            }
+          },
+          {
+            "learned_table": 4,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2401/3906250000",
+              "decimal": 6.14656e-07
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 5,
+            "selected_ports": 1,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "27906121271559572173449/100000000000000000000000000000000",
+              "decimal": 2.790612127155957e-10
+            }
+          },
+          {
+            "learned_table": 6,
+            "selected_ports": 3,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "27906121271559572173449/100000000000000000000000000000000",
+              "decimal": 2.790612127155957e-10
+            }
+          },
+          {
+            "learned_table": 7,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 8,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 9,
+            "selected_ports": 3,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "5103499564458333400901938670089/100000000000000000000000000000000",
+              "decimal": 0.05103499564458333
+            }
+          },
+          {
+            "learned_table": 10,
+            "selected_ports": 1,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "5103499564458333400901938670089/100000000000000000000000000000000",
+              "decimal": 0.05103499564458333
+            }
+          },
+          {
+            "learned_table": 11,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "3486784401/3906250000",
+              "decimal": 0.892616806656
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 12,
+            "selected_ports": 2,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "27906121271559572173449/100000000000000000000000000000000",
+              "decimal": 2.790612127155957e-10
+            }
+          },
+          {
+            "learned_table": 13,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 14,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 15,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          }
+        ]
+      },
+      {
+        "truth": 12,
+        "independent_record": false,
+        "normalization": {
+          "exact": "1",
+          "decimal": 1.0
+        },
+        "commit_probability": {
+          "exact": "157881861513578019491385633027106962970499/195312500000000000000000000000000000000000",
+          "decimal": 0.8083551309495195
+        },
+        "pre_validation_commit_probability": {
+          "exact": "1749180203/1953125000",
+          "decimal": 0.895580263936
+        },
+        "oracle_constant_risk": {
+          "exact": "1/2",
+          "decimal": 0.5
+        },
+        "service_loss_with_port_fees": {
+          "exact": "108477506430665459044283834270539228126793/390625000000000000000000000000000000000000",
+          "decimal": 0.2777024164625036
+        },
+        "no_validation_service_loss": {
+          "exact": "996430601/3906250000",
+          "decimal": 0.255086233856
+        },
+        "service_gain": {
+          "exact": "86834993569334540955716165729460771873207/390625000000000000000000000000000000000000",
+          "decimal": 0.22229758353749643
+        },
+        "expected_setup_cost": {
+          "exact": "2849259716/244140625",
+          "decimal": 11.670567796736
+        },
+        "net_256_tasks": {
+          "exact": "69027120344334540955716165729460771873207/1525878906250000000000000000000000000000",
+          "decimal": 45.237613588863084
+        },
+        "net_using_max_setup": {
+          "exact": "61657991616209540955716165729460771873207/1525878906250000000000000000000000000000",
+          "decimal": 40.408181385599086
+        },
+        "all_paths": [
+          {
+            "learned_table": 0,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 1,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 2,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 3,
+            "selected_ports": 2,
+            "training_probability": {
+              "exact": "2401/3906250000",
+              "decimal": 6.14656e-07
+            },
+            "true_prediction_error": {
+              "exact": "9/10",
+              "decimal": 0.9
+            },
+            "validation_acceptance": {
+              "exact": "12130641289/100000000000000000000000000000000",
+              "decimal": 1.2130641289e-22
+            }
+          },
+          {
+            "learned_table": 4,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 5,
+            "selected_ports": 1,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "242825/4294967296",
+              "decimal": 5.653710104525089e-05
+            }
+          },
+          {
+            "learned_table": 6,
+            "selected_ports": 3,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "242825/4294967296",
+              "decimal": 5.653710104525089e-05
+            }
+          },
+          {
+            "learned_table": 7,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 8,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 9,
+            "selected_ports": 3,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "242825/4294967296",
+              "decimal": 5.653710104525089e-05
+            }
+          },
+          {
+            "learned_table": 10,
+            "selected_ports": 1,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "242825/4294967296",
+              "decimal": 5.653710104525089e-05
+            }
+          },
+          {
+            "learned_table": 11,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 12,
+            "selected_ports": 2,
+            "training_probability": {
+              "exact": "3486784401/3906250000",
+              "decimal": 0.892616806656
+            },
+            "true_prediction_error": {
+              "exact": "1/10",
+              "decimal": 0.1
+            },
+            "validation_acceptance": {
+              "exact": "90560132568791470399485723984009/100000000000000000000000000000000",
+              "decimal": 0.9056013256879147
+            }
+          },
+          {
+            "learned_table": 13,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 14,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 15,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          }
+        ]
+      },
+      {
+        "truth": 13,
+        "independent_record": false,
+        "normalization": {
+          "exact": "1",
+          "decimal": 1.0
+        },
+        "commit_probability": {
+          "exact": "768911226565496800070418986188139999643/195312500000000000000000000000000000000000",
+          "decimal": 0.003936825480015344
+        },
+        "pre_validation_commit_probability": {
+          "exact": "150788547/1953125000",
+          "decimal": 0.077203736064
+        },
+        "oracle_constant_risk": {
+          "exact": "3/10",
+          "decimal": 0.3
+        },
+        "service_loss_with_port_fees": {
+          "exact": "646211983204694463150313535011580848805039/1953125000000000000000000000000000000000000",
+          "decimal": 0.33086053540080357
+        },
+        "no_validation_service_loss": {
+          "exact": "1225744249/3906250000",
+          "decimal": 0.313790527744
+        },
+        "service_gain": {
+          "exact": "-60274483204694463150313535011580848805039/1953125000000000000000000000000000000000000",
+          "decimal": -0.030860535400803565
+        },
+        "expected_setup_cost": {
+          "exact": "1274552784/244140625",
+          "decimal": 5.220568203264
+        },
+        "net_256_tasks": {
+          "exact": "-100104257704694463150313535011580848805039/7629394531250000000000000000000000000000",
+          "decimal": -13.120865265869712
+        },
+        "net_using_max_setup": {
+          "exact": "-186159492970319463150313535011580848805039/7629394531250000000000000000000000000000",
+          "decimal": -24.400297062605713
+        },
+        "all_paths": [
+          {
+            "learned_table": 0,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 1,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 2,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2401/3906250000",
+              "decimal": 6.14656e-07
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 3,
+            "selected_ports": 2,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "27906121271559572173449/100000000000000000000000000000000",
+              "decimal": 2.790612127155957e-10
+            }
+          },
+          {
+            "learned_table": 4,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 5,
+            "selected_ports": 1,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "5103499564458333400901938670089/100000000000000000000000000000000",
+              "decimal": 0.05103499564458333
+            }
+          },
+          {
+            "learned_table": 6,
+            "selected_ports": 3,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "27906121271559572173449/100000000000000000000000000000000",
+              "decimal": 2.790612127155957e-10
+            }
+          },
+          {
+            "learned_table": 7,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 8,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 9,
+            "selected_ports": 3,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "5103499564458333400901938670089/100000000000000000000000000000000",
+              "decimal": 0.05103499564458333
+            }
+          },
+          {
+            "learned_table": 10,
+            "selected_ports": 1,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "27906121271559572173449/100000000000000000000000000000000",
+              "decimal": 2.790612127155957e-10
+            }
+          },
+          {
+            "learned_table": 11,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 12,
+            "selected_ports": 2,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "5103499564458333400901938670089/100000000000000000000000000000000",
+              "decimal": 0.05103499564458333
+            }
+          },
+          {
+            "learned_table": 13,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "3486784401/3906250000",
+              "decimal": 0.892616806656
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 14,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 15,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          }
+        ]
+      },
+      {
+        "truth": 14,
+        "independent_record": false,
+        "normalization": {
+          "exact": "1",
+          "decimal": 1.0
+        },
+        "commit_probability": {
+          "exact": "768911226565496800070418986188139999643/195312500000000000000000000000000000000000",
+          "decimal": 0.003936825480015344
+        },
+        "pre_validation_commit_probability": {
+          "exact": "150788547/1953125000",
+          "decimal": 0.077203736064
+        },
+        "oracle_constant_risk": {
+          "exact": "3/10",
+          "decimal": 0.3
+        },
+        "service_loss_with_port_fees": {
+          "exact": "646211983204694463150313535011580848805039/1953125000000000000000000000000000000000000",
+          "decimal": 0.33086053540080357
+        },
+        "no_validation_service_loss": {
+          "exact": "1225744249/3906250000",
+          "decimal": 0.313790527744
+        },
+        "service_gain": {
+          "exact": "-60274483204694463150313535011580848805039/1953125000000000000000000000000000000000000",
+          "decimal": -0.030860535400803565
+        },
+        "expected_setup_cost": {
+          "exact": "1274552784/244140625",
+          "decimal": 5.220568203264
+        },
+        "net_256_tasks": {
+          "exact": "-100104257704694463150313535011580848805039/7629394531250000000000000000000000000000",
+          "decimal": -13.120865265869712
+        },
+        "net_using_max_setup": {
+          "exact": "-186159492970319463150313535011580848805039/7629394531250000000000000000000000000000",
+          "decimal": -24.400297062605713
+        },
+        "all_paths": [
+          {
+            "learned_table": 0,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 1,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2401/3906250000",
+              "decimal": 6.14656e-07
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 2,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 3,
+            "selected_ports": 2,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "27906121271559572173449/100000000000000000000000000000000",
+              "decimal": 2.790612127155957e-10
+            }
+          },
+          {
+            "learned_table": 4,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 5,
+            "selected_ports": 1,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "27906121271559572173449/100000000000000000000000000000000",
+              "decimal": 2.790612127155957e-10
+            }
+          },
+          {
+            "learned_table": 6,
+            "selected_ports": 3,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "5103499564458333400901938670089/100000000000000000000000000000000",
+              "decimal": 0.05103499564458333
+            }
+          },
+          {
+            "learned_table": 7,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 8,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 9,
+            "selected_ports": 3,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "7/10",
+              "decimal": 0.7
+            },
+            "validation_acceptance": {
+              "exact": "27906121271559572173449/100000000000000000000000000000000",
+              "decimal": 2.790612127155957e-10
+            }
+          },
+          {
+            "learned_table": 10,
+            "selected_ports": 1,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "5103499564458333400901938670089/100000000000000000000000000000000",
+              "decimal": 0.05103499564458333
+            }
+          },
+          {
+            "learned_table": 11,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 12,
+            "selected_ports": 2,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "5103499564458333400901938670089/100000000000000000000000000000000",
+              "decimal": 0.05103499564458333
+            }
+          },
+          {
+            "learned_table": 13,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 14,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "3486784401/3906250000",
+              "decimal": 0.892616806656
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 15,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "3/10",
+              "decimal": 0.3
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          }
+        ]
+      },
+      {
+        "truth": 15,
+        "independent_record": false,
+        "normalization": {
+          "exact": "1",
+          "decimal": 1.0
+        },
+        "commit_probability": {
+          "exact": "84310811739/335544320000000000",
+          "decimal": 2.512657992213964e-07
+        },
+        "pre_validation_commit_probability": {
+          "exact": "8680203/1953125000",
+          "decimal": 0.004444263936
+        },
+        "oracle_constant_risk": {
+          "exact": "1/10",
+          "decimal": 0.1
+        },
+        "service_loss_with_port_fees": {
+          "exact": "8692621534462823577/83886080000000000000",
+          "decimal": 0.10362412374571352
+        },
+        "no_validation_service_loss": {
+          "exact": "400731201/3906250000",
+          "decimal": 0.102587187456
+        },
+        "service_gain": {
+          "exact": "-304013534462823577/83886080000000000000",
+          "decimal": -0.003624123745713515
+        },
+        "expected_setup_cost": {
+          "exact": "1108759716/244140625",
+          "decimal": 4.541479796736
+        },
+        "net_256_tasks": {
+          "exact": "-1792165634257276057/327680000000000000",
+          "decimal": -5.4692554756386595
+        },
+        "net_using_max_setup": {
+          "exact": "-5710733534462823577/327680000000000000",
+          "decimal": -17.42777567890266
+        },
+        "all_paths": [
+          {
+            "learned_table": 0,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "2401/3906250000",
+              "decimal": 6.14656e-07
+            },
+            "true_prediction_error": {
+              "exact": "9/10",
+              "decimal": 0.9
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 1,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "9/10",
+              "decimal": 0.9
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 2,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "9/10",
+              "decimal": 0.9
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 3,
+            "selected_ports": 2,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "242825/4294967296",
+              "decimal": 5.653710104525089e-05
+            }
+          },
+          {
+            "learned_table": 4,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "9/10",
+              "decimal": 0.9
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 5,
+            "selected_ports": 1,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "242825/4294967296",
+              "decimal": 5.653710104525089e-05
+            }
+          },
+          {
+            "learned_table": 6,
+            "selected_ports": 3,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "242825/4294967296",
+              "decimal": 5.653710104525089e-05
+            }
+          },
+          {
+            "learned_table": 7,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "1/10",
+              "decimal": 0.1
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 8,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "83349/3906250000",
+              "decimal": 2.1337344e-05
+            },
+            "true_prediction_error": {
+              "exact": "9/10",
+              "decimal": 0.9
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 9,
+            "selected_ports": 3,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "242825/4294967296",
+              "decimal": 5.653710104525089e-05
+            }
+          },
+          {
+            "learned_table": 10,
+            "selected_ports": 1,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "242825/4294967296",
+              "decimal": 5.653710104525089e-05
+            }
+          },
+          {
+            "learned_table": 11,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "1/10",
+              "decimal": 0.1
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 12,
+            "selected_ports": 2,
+            "training_probability": {
+              "exact": "2893401/3906250000",
+              "decimal": 0.000740710656
+            },
+            "true_prediction_error": {
+              "exact": "1/2",
+              "decimal": 0.5
+            },
+            "validation_acceptance": {
+              "exact": "242825/4294967296",
+              "decimal": 5.653710104525089e-05
+            }
+          },
+          {
+            "learned_table": 13,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "1/10",
+              "decimal": 0.1
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 14,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "100442349/3906250000",
+              "decimal": 0.025713241344
+            },
+            "true_prediction_error": {
+              "exact": "1/10",
+              "decimal": 0.1
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          },
+          {
+            "learned_table": 15,
+            "selected_ports": 0,
+            "training_probability": {
+              "exact": "3486784401/3906250000",
+              "decimal": 0.892616806656
+            },
+            "true_prediction_error": {
+              "exact": "1/10",
+              "decimal": 0.1
+            },
+            "validation_acceptance": {
+              "exact": "0",
+              "decimal": 0.0
+            }
+          }
+        ]
+      }
+    ],
+    "xor_summary": {
+      "truth": 6,
+      "independent_record": false,
+      "normalization": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "commit_probability": {
+        "exact": "157881861513578019491385633027106962970499/195312500000000000000000000000000000000000",
+        "decimal": 0.8083551309495195
+      },
+      "pre_validation_commit_probability": {
+        "exact": "1749180203/1953125000",
+        "decimal": 0.895580263936
+      },
+      "oracle_constant_risk": {
+        "exact": "1/2",
+        "decimal": 0.5
+      },
+      "service_loss_with_port_fees": {
+        "exact": "147947959540222111309881891549418324826449/390625000000000000000000000000000000000000",
+        "decimal": 0.3787467764229686
+      },
+      "no_validation_service_loss": {
+        "exact": "1431555601/3906250000",
+        "decimal": 0.366478233856
+      },
+      "service_gain": {
+        "exact": "47364540459777888690118108450581675173551/390625000000000000000000000000000000000000",
+        "decimal": 0.12125322357703139
+      },
+      "expected_setup_cost": {
+        "exact": "3719509716/244140625",
+        "decimal": 15.235111796736
+      },
+      "net_256_tasks": {
+        "exact": "24117604734777888690118108450581675173551/1525878906250000000000000000000000000000",
+        "decimal": 15.805713438984037
+      },
+      "net_using_max_setup": {
+        "exact": "22187538506652888690118108450581675173551/1525878906250000000000000000000000000000",
+        "decimal": 14.540825235720037
+      }
+    },
+    "independent_summary": {
+      "truth": 0,
+      "independent_record": true,
+      "normalization": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "commit_probability": {
+        "exact": "728475/34359738368",
+        "decimal": 2.1201412891969085e-05
+      },
+      "pre_validation_commit_probability": {
+        "exact": "3/8",
+        "decimal": 0.375
+      },
+      "oracle_constant_risk": {
+        "exact": "1/2",
+        "decimal": 0.5
+      },
+      "service_loss_with_port_fees": {
+        "exact": "34359981193/68719476736",
+        "decimal": 0.5000035335688153
+      },
+      "no_validation_service_loss": {
+        "exact": "9/16",
+        "decimal": 0.5625
+      },
+      "service_gain": {
+        "exact": "-242825/68719476736",
+        "decimal": -3.533568815328181e-06
+      },
+      "expected_setup_cost": {
+        "exact": "8",
+        "decimal": 8.0
+      },
+      "net_256_tasks": {
+        "exact": "-2147726473/268435456",
+        "decimal": -8.000904593616724
+      },
+      "net_using_max_setup": {
+        "exact": "-4429427849/268435456",
+        "decimal": -16.500904593616724
+      }
+    },
+    "independent_false_acceptance_per_proposed_mask": {
+      "exact": "242825/4294967296",
+      "decimal": 5.653710104525089e-05
+    }
+  },
+  "query": {
+    "dimension": 256,
+    "permutation_bijective": true,
+    "involution": true,
+    "preserves_truth_inputs_and_noise": true,
+    "whole_controller_autonomous_H_constructed": false
+  },
+  "witness": {
+    "truth_table": 6,
+    "learned_table": 6,
+    "selected_ports": 3,
+    "validation_errors": 0,
+    "remaining_credits": 768,
+    "additional_service_tasks_possible": 256,
+    "retained_records": [
+      {
+        "phase": "training",
+        "ports": 3,
+        "queried_values": 0,
+        "prediction": 0,
+        "outcome": 0,
+        "credits_before": 900,
+        "credits_after": 897
+      },
+      {
+        "phase": "training",
+        "ports": 3,
+        "queried_values": 0,
+        "prediction": 0,
+        "outcome": 0,
+        "credits_before": 897,
+        "credits_after": 894
+      },
+      {
+        "phase": "training",
+        "ports": 3,
+        "queried_values": 0,
+        "prediction": 0,
+        "outcome": 0,
+        "credits_before": 894,
+        "credits_after": 891
+      },
+      {
+        "phase": "training",
+        "ports": 3,
+        "queried_values": 1,
+        "prediction": 0,
+        "outcome": 1,
+        "credits_before": 891,
+        "credits_after": 888
+      },
+      {
+        "phase": "training",
+        "ports": 3,
+        "queried_values": 1,
+        "prediction": 1,
+        "outcome": 1,
+        "credits_before": 888,
+        "credits_after": 885
+      },
+      {
+        "phase": "training",
+        "ports": 3,
+        "queried_values": 1,
+        "prediction": 1,
+        "outcome": 1,
+        "credits_before": 885,
+        "credits_after": 882
+      },
+      {
+        "phase": "training",
+        "ports": 3,
+        "queried_values": 2,
+        "prediction": 0,
+        "outcome": 1,
+        "credits_before": 882,
+        "credits_after": 879
+      },
+      {
+        "phase": "training",
+        "ports": 3,
+        "queried_values": 2,
+        "prediction": 1,
+        "outcome": 1,
+        "credits_before": 879,
+        "credits_after": 876
+      },
+      {
+        "phase": "training",
+        "ports": 3,
+        "queried_values": 2,
+        "prediction": 1,
+        "outcome": 1,
+        "credits_before": 876,
+        "credits_after": 873
+      },
+      {
+        "phase": "training",
+        "ports": 3,
+        "queried_values": 3,
+        "prediction": 0,
+        "outcome": 0,
+        "credits_before": 873,
+        "credits_after": 870
+      },
+      {
+        "phase": "training",
+        "ports": 3,
+        "queried_values": 3,
+        "prediction": 0,
+        "outcome": 0,
+        "credits_before": 870,
+        "credits_after": 867
+      },
+      {
+        "phase": "training",
+        "ports": 3,
+        "queried_values": 3,
+        "prediction": 0,
+        "outcome": 0,
+        "credits_before": 867,
+        "credits_after": 864
+      },
+      {
+        "phase": "validation",
+        "ports": 3,
+        "queried_values": 1,
+        "prediction": 1,
+        "outcome": 1,
+        "credits_before": 864,
+        "credits_after": 861
+      },
+      {
+        "phase": "validation",
+        "ports": 3,
+        "queried_values": 0,
+        "prediction": 0,
+        "outcome": 0,
+        "credits_before": 861,
+        "credits_after": 858
+      },
+      {
+        "phase": "validation",
+        "ports": 3,
+        "queried_values": 3,
+        "prediction": 0,
+        "outcome": 0,
+        "credits_before": 858,
+        "credits_after": 855
+      },
+      {
+        "phase": "validation",
+        "ports": 3,
+        "queried_values": 2,
+        "prediction": 1,
+        "outcome": 1,
+        "credits_before": 855,
+        "credits_after": 852
+      },
+      {
+        "phase": "validation",
+        "ports": 3,
+        "queried_values": 1,
+        "prediction": 1,
+        "outcome": 1,
+        "credits_before": 852,
+        "credits_after": 849
+      },
+      {
+        "phase": "validation",
+        "ports": 3,
+        "queried_values": 0,
+        "prediction": 0,
+        "outcome": 0,
+        "credits_before": 849,
+        "credits_after": 846
+      },
+      {
+        "phase": "validation",
+        "ports": 3,
+        "queried_values": 3,
+        "prediction": 0,
+        "outcome": 0,
+        "credits_before": 846,
+        "credits_after": 843
+      },
+      {
+        "phase": "validation",
+        "ports": 3,
+        "queried_values": 2,
+        "prediction": 1,
+        "outcome": 1,
+        "credits_before": 843,
+        "credits_after": 840
+      },
+      {
+        "phase": "validation",
+        "ports": 3,
+        "queried_values": 1,
+        "prediction": 1,
+        "outcome": 1,
+        "credits_before": 840,
+        "credits_after": 837
+      },
+      {
+        "phase": "validation",
+        "ports": 3,
+        "queried_values": 0,
+        "prediction": 0,
+        "outcome": 0,
+        "credits_before": 837,
+        "credits_after": 834
+      },
+      {
+        "phase": "validation",
+        "ports": 3,
+        "queried_values": 3,
+        "prediction": 0,
+        "outcome": 0,
+        "credits_before": 834,
+        "credits_after": 831
+      },
+      {
+        "phase": "validation",
+        "ports": 3,
+        "queried_values": 2,
+        "prediction": 1,
+        "outcome": 1,
+        "credits_before": 831,
+        "credits_after": 828
+      },
+      {
+        "phase": "validation",
+        "ports": 3,
+        "queried_values": 1,
+        "prediction": 1,
+        "outcome": 1,
+        "credits_before": 828,
+        "credits_after": 825
+      },
+      {
+        "phase": "validation",
+        "ports": 3,
+        "queried_values": 0,
+        "prediction": 0,
+        "outcome": 0,
+        "credits_before": 825,
+        "credits_after": 822
+      },
+      {
+        "phase": "validation",
+        "ports": 3,
+        "queried_values": 3,
+        "prediction": 0,
+        "outcome": 0,
+        "credits_before": 822,
+        "credits_after": 819
+      },
+      {
+        "phase": "validation",
+        "ports": 3,
+        "queried_values": 2,
+        "prediction": 1,
+        "outcome": 1,
+        "credits_before": 819,
+        "credits_after": 816
+      },
+      {
+        "phase": "validation",
+        "ports": 3,
+        "queried_values": 1,
+        "prediction": 1,
+        "outcome": 1,
+        "credits_before": 816,
+        "credits_after": 813
+      },
+      {
+        "phase": "validation",
+        "ports": 3,
+        "queried_values": 0,
+        "prediction": 0,
+        "outcome": 0,
+        "credits_before": 813,
+        "credits_after": 810
+      },
+      {
+        "phase": "validation",
+        "ports": 3,
+        "queried_values": 3,
+        "prediction": 0,
+        "outcome": 0,
+        "credits_before": 810,
+        "credits_after": 807
+      },
+      {
+        "phase": "validation",
+        "ports": 3,
+        "queried_values": 2,
+        "prediction": 1,
+        "outcome": 1,
+        "credits_before": 807,
+        "credits_after": 804
+      },
+      {
+        "phase": "validation",
+        "ports": 3,
+        "queried_values": 1,
+        "prediction": 1,
+        "outcome": 1,
+        "credits_before": 804,
+        "credits_after": 801
+      },
+      {
+        "phase": "validation",
+        "ports": 3,
+        "queried_values": 0,
+        "prediction": 0,
+        "outcome": 0,
+        "credits_before": 801,
+        "credits_after": 798
+      },
+      {
+        "phase": "validation",
+        "ports": 3,
+        "queried_values": 3,
+        "prediction": 0,
+        "outcome": 0,
+        "credits_before": 798,
+        "credits_after": 795
+      },
+      {
+        "phase": "validation",
+        "ports": 3,
+        "queried_values": 2,
+        "prediction": 1,
+        "outcome": 1,
+        "credits_before": 795,
+        "credits_after": 792
+      },
+      {
+        "phase": "validation",
+        "ports": 3,
+        "queried_values": 1,
+        "prediction": 1,
+        "outcome": 1,
+        "credits_before": 792,
+        "credits_after": 789
+      },
+      {
+        "phase": "validation",
+        "ports": 3,
+        "queried_values": 0,
+        "prediction": 0,
+        "outcome": 0,
+        "credits_before": 789,
+        "credits_after": 786
+      },
+      {
+        "phase": "validation",
+        "ports": 3,
+        "queried_values": 3,
+        "prediction": 0,
+        "outcome": 0,
+        "credits_before": 786,
+        "credits_after": 783
+      },
+      {
+        "phase": "validation",
+        "ports": 3,
+        "queried_values": 2,
+        "prediction": 1,
+        "outcome": 1,
+        "credits_before": 783,
+        "credits_after": 780
+      },
+      {
+        "phase": "validation",
+        "ports": 3,
+        "queried_values": 1,
+        "prediction": 1,
+        "outcome": 1,
+        "credits_before": 780,
+        "credits_after": 777
+      },
+      {
+        "phase": "validation",
+        "ports": 3,
+        "queried_values": 0,
+        "prediction": 0,
+        "outcome": 0,
+        "credits_before": 777,
+        "credits_after": 774
+      },
+      {
+        "phase": "validation",
+        "ports": 3,
+        "queried_values": 3,
+        "prediction": 0,
+        "outcome": 0,
+        "credits_before": 774,
+        "credits_after": 771
+      },
+      {
+        "phase": "validation",
+        "ports": 3,
+        "queried_values": 2,
+        "prediction": 1,
+        "outcome": 1,
+        "credits_before": 771,
+        "credits_after": 768
+      }
+    ],
+    "records_or_noise_erased": false,
+    "this_basis_history_probability_not_used_as_success_estimate": true
+  },
+  "mechanism_decision": {
+    "reject_strict_edgewise_improvement_as_universal": true,
+    "retain_bounded_coalition_trial_with_validation": true,
+    "unconditional_exploration_guarantees_benefit": false,
+    "fixed_max_coalition_size_is_universal": false,
+    "learned_functional_relation_is_spacetime": false,
+    "whole_goal_completed": false
+  },
+  "references": [
+    "https://arxiv.org/abs/1004.2515",
+    "https://arxiv.org/abs/1207.1394"
+  ],
+  "source_hashes": {
+    "research_cognition_physics\\archive_764_\\987\\coalition_mechanism_screen.py": "d2df79740102277c46055758d0d3ab87735b926da049120f3bd237be48d31067",
+    "research_cognition_physics\\archive_764_\\987\\drafts\\mechanism_priority_entry.md": "cbf5806cc1c55149f921b1af1de749bd49b88ca1b03688155149a36262f2c5e2",
+    "research_cognition_physics\\archive_764_\\research_note_961.md": "3c6a7d9f012887fdabb41f4d19a10487491e4d6156b42e573702e64c0fa033aa",
+    "research_cognition_physics\\archive_764_\\966\\drafts\\mechanism_map_v0_2.md": "d3f1369a524efedbfea65158191d05e73527f9b37a73e8064441e69aa2763411",
+    "research_cognition_physics\\archive_764_\\968\\drafts\\internal_organization_increment.md": "b771af9e7b1a1ff86ad821552dc8e5be8168c8f0464862b9b3bc6406e74329db",
+    "research_cognition_physics\\archive_764_\\972\\drafts\\thermal_record_mechanism.md": "fc046ed92f3d2a2b2d4d921a416f16bc99bacb4ea9ad456a1bbd5b207c87f2a6",
+    "research_cognition_physics\\archive_764_\\957\\drafts\\unified_operation_hypotheses_v0_2.md": "5f0261a9cb6c03017c1b4f3d23e53ede457e42c4710b2c3ae3918d62301029d6",
+    "research_cognition_physics\\archive_764_\\987\\drafts\\common_overlap_audit_checks.json": "fc78031da64ff884c30c1e385d3245e9b8ab2c48aaf9b37da5cc46849a1ec331"
+  }
+}

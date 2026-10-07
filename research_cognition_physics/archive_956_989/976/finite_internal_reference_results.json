@@ -1,0 +1,147 @@
+{
+  "round": 976,
+  "date": "2026-10-07",
+  "all_scientific_checks_passed": true,
+  "material_reduction_identities": {
+    "isometry": 4.441168859317376e-16,
+    "internal": 0.0,
+    "charge": 0.0,
+    "spin_exchange": 2.0867036143068544e-16
+  },
+  "parameters": {
+    "T": 126339.12643398577,
+    "t0": 126342.26802663936,
+    "J": 0.03851648071345041,
+    "cutoff": 10,
+    "Phi": [
+      -2.4865729440027037e-05,
+      -4.9731458880054074e-05
+    ],
+    "reference_baseline_mass": 100,
+    "coordinate_interval": [
+      113708.04122397542,
+      138976.4948293033
+    ]
+  },
+  "fixed_relational_readout": {
+    "effect": "(I+SWAP_BR)/2",
+    "free_common_invariance_residual": 0.0,
+    "extra_native_material_reference": true,
+    "external_time_dependent_effect": false,
+    "reference_preparation_is_resource": true,
+    "isolation_is_additional_input": true
+  },
+  "interval_certificate": {
+    "finite_spectral_derivative_bound": 3.8726715679252686e-05,
+    "joint_derivative_bound": 1.936273561553697e-05,
+    "grid_points": 257,
+    "grid_minimum_contrast": 0.48690774223207156,
+    "mesh_gap_bound": 0.0009555984112762173,
+    "uniform_infinite_contrast_lower": 0.4859481338207953,
+    "probability_error_per_input": 2e-06,
+    "finite_spectral_formula_error": 3.069766663088558e-14,
+    "phase_check_error": 2.204902926905561e-13,
+    "equal_prior_binary_error_upper": 0.2570259330896023,
+    "binary_information_lower": 0.12322408729658313,
+    "whole_interval_not_only_grid_certified": true,
+    "endpoints": [
+      {
+        "coordinate_time": 113708.04122397542,
+        "probabilities": [
+          0.5128272060202386,
+          0.9997349482521207
+        ],
+        "contrast": 0.48690774223188216
+      },
+      {
+        "coordinate_time": 126342.26802663936,
+        "probabilities": [
+          0.5003092839195729,
+          0.9996732492218838
+        ],
+        "contrast": 0.499363965302311
+      },
+      {
+        "coordinate_time": 138976.4948293033,
+        "probabilities": [
+          0.5121600915075312,
+          0.9996045696813676
+        ],
+        "contrast": 0.4874444781738364
+      }
+    ]
+  },
+  "infinite_occupation_certificate": {
+    "maximum_proper_time": 138973.03907738434,
+    "initial_defect_bound": 1.0126969293561528e-11,
+    "infinite_occupation_boundary": 2.9712876671773013e-09,
+    "finite_eigen_residual": 1.4343513233167755e-08,
+    "defining_matrix_error": 3.437040433007055e-16,
+    "phase_and_definition_guard": 1e-08,
+    "total_state_vector_error": 2.7324927869638617e-08,
+    "input_isometry_defect": 3.8459253727671276e-16
+  },
+  "reference_account": {
+    "internal_energy_mean": -0.019258240356725194,
+    "internal_energy_variance": 0.0003708798216374063,
+    "reference_characteristic_real": 0.9963440269674999,
+    "reference_characteristic_imag": 0.06035401307026457,
+    "source_mass_positive_lower": 199.68445055785966,
+    "populated_sector_mass_lower": 199.8844256915119,
+    "source_rows": [
+      {
+        "label": 0,
+        "local_energy_mean_before_reference": 0.19222624449449727,
+        "mass_mean_with_reference": 200.17296800413777,
+        "mass_variance_with_reference": 0.06326829995570543,
+        "old_path_visibility": 0.7058105679277752,
+        "new_path_visibility": 0.7045191743207402,
+        "new_internal_characteristic_real": 0.60305421316613,
+        "new_internal_characteristic_imag": -0.36424289007221194
+      },
+      {
+        "label": 1,
+        "local_energy_mean_before_reference": 0.2307420814981657,
+        "mass_mean_with_reference": 200.21148384114144,
+        "mass_variance_with_reference": 0.06324206910713791,
+        "old_path_visibility": 0.7058130048476547,
+        "new_path_visibility": 0.7045216067818842,
+        "new_internal_characteristic_real": 0.5546628092404019,
+        "new_internal_characteristic_imag": -0.4343959742770108
+      }
+    ],
+    "receiver_old_effect_probabilities": [
+      0.0025991736423311004,
+      0.9974025393802272
+    ],
+    "old_endpoint_check": 8.816846124720668e-12,
+    "source_includes_complete_reference_energy": true,
+    "old_path_predictions_unchanged": false
+  },
+  "scope": {
+    "finite_relational_record_adopted": true,
+    "reference_mass_and_energy_included": true,
+    "phase_record_converted_to_protected_population": false,
+    "actual_joint_apparatus_derived": false,
+    "arbitrary_noise_stability_proven": false,
+    "repeatable_nondestructive_readout_proven": false,
+    "macroscopic_irreversible_memory_proven": false,
+    "full_microscopic_SM_matching_proven": false,
+    "moving_support_or_quantum_metric_completed": false,
+    "full_goal_completed": false
+  },
+  "references": [
+    "https://arxiv.org/abs/quant-ph/0203016",
+    "https://arxiv.org/abs/1703.10434"
+  ],
+  "source_hashes": {
+    "research_cognition_physics\\archive_764_\\976\\finite_internal_reference.py": "f021ac466ee9979555e74a1a5457cd493575f1d9326c9b86bd01c3f18873b1c7",
+    "research_cognition_physics\\archive_764_\\976\\drafts\\finite_reference_decision.md": "40cb1f30f0bcd0144bd10de4558a567b744ecaf8ed568a145e4d5aaa88fa0ba1",
+    "research_cognition_physics\\archive_764_\\956\\native_material_interface.py": "2ab03c573de42d54c28c65804766e7840331a8f028a5059d6129baf57f5bc0b8",
+    "research_cognition_physics\\archive_764_\\958\\capacitive_material_write_results.json": "f08f41ac4a147a5f70f7230c49367d424418e58280d69a8199e923e7084c5cf9",
+    "research_cognition_physics\\archive_764_\\965\\material_field_window.py": "4e32d4fe467c51668e5e67b166c73496b7afb68b44b3e4cdf0f448ce0e5286ad",
+    "research_cognition_physics\\archive_764_\\968\\internal_relay.py": "d400f901510b89f3e1e07f23b01bab3a1502ccddd05b57fd21a45970ddb63235",
+    "research_cognition_physics\\archive_764_\\974\\joint_energy_source_results.json": "6ff30647c330f0f5474bd40e4baab46f3122f222507136354358bbe9c897005f",
+    "research_cognition_physics\\archive_764_\\975\\record_resource_audit_results.json": "2dc0ff53fb33c64d0c1eaba53ba2c389ca3d57b4f19a3d276dd78a4a4649dc54"
+  }
+}

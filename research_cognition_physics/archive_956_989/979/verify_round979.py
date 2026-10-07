@@ -1,0 +1,137 @@
+"""Delivery checks for 979. Passing is not proof of complete physical unification."""
+from pathlib import Path
+import argparse, ast, hashlib, json, math, re, sys
+HERE=Path(__file__).resolve().parent
+STAGE=HERE.parent
+ROOT=HERE.parents[2]
+sys.path.insert(0,str(ROOT/"scripts"))
+from research_layout import Layout
+TARGET=HERE/"research_round_979_checks.json"
+def read(p):return json.loads(p.read_text("utf-8-sig"))
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+
+def run(writing=False):
+    frozen={}
+    def add(d):
+        for k,v in d.items():
+            assert k not in frozen or frozen[k]==v,k
+            frozen[k]=v
+    for n in range(776,979):
+        old=read(STAGE/f"{n}/research_round_{n}_checks.json")
+        for key in ("frozen_inputs","new_scientific_and_entry_files"):add(old[key])
+    for path in ("875/drafts/clock_transport_working_checks.json",
+        "878/drafts/working_checks.json","884/drafts/working_checks.json",
+        "887/drafts/working_checks.json","894/drafts/working_checks.json",
+        "896/drafts/working_checks.json","897/drafts/working_checks.json",
+        "899/drafts/working_checks.json","900/drafts/working_checks.json",
+        "904/drafts/working_checks.json","907/drafts/working_checks.json",
+        "909/drafts/working_checks.json","912/drafts/working_checks.json",
+        "913/drafts/working_checks.json","915/drafts/working_checks.json",
+        "917/drafts/working_checks.json"):
+        add(read(STAGE/path)["files"])
+    extra={
+      "909/drafts/scope_reaudit_checks.json":("preserved_files","evidence_and_audit_hashes"),
+      "911/drafts/finite_scope_checkpoint_checks.json":("evidence_and_audit_hashes",),
+      "912/drafts/effective_scope_reaudit_checks.json":("evidence_and_audit_hashes",),
+      "914/drafts/finite_scope_decision_checks.json":("evidence_hashes","new_document_and_verifier_hashes"),
+      "919/drafts/effective_scope_after_918_checks.json":("frozen_inputs_verified","new_document_and_verifier_hashes"),
+      "953/drafts/priority_reaudit_checks.json":("frozen_evidence_hashes","audit_file_hashes")}
+    for path,keys in extra.items():
+        value=read(STAGE/path)
+        for key in keys:add(value[key])
+    for rel,digest in frozen.items():assert sha(ROOT/rel)==digest,rel
+    layout=Layout().verify()
+    result=read(HERE/"spectral_mass_bridge_results.json")
+    assert result["round"]==979 and result["all_scientific_checks_passed"]
+    for rel,digest in result["source_hashes"].items():assert sha(ROOT/rel)==digest,rel
+    c=result["finite_contract"];p=result["protocol_transport"]
+    assert c["noncommuting_error"]>1e-6
+    assert c["low_mass_intertwining_error"]<1e-11 and c["minimum_mass"]>0
+    assert c["actual_full_H_error"]<=c["full_H_error_bound"]
+    assert c["translation_symmetry_error"]<1e-11
+    assert c["exact_compressed_force_error"]<=c["exact_compressed_force_bound"]
+    assert c["force_finite_difference_error"]<1e-10 and c["equal_opposite_force_difference"]<1e-10
+    for row in c["rows"]:assert row["all_input_isometry_difference"]<=row["analytic_uniform_bound"]
+    assert p["time"]==30 and p["G"]==1e-30
+    assert p["gaussian_initial_bound"]<p["initial_H_minus_mu_norm_bound"]
+    assert p["moving_simulation_error"]<.000148
+    assert p["full_protocol_output_bound"]<.000293
+    assert p["unknown_input_and_passive_reference"] and p["uniform_time_interval"]
+    assert p["physical_simulator_generated"] is False
+    b=result["resource_boundaries"]
+    assert b["baseline_omission_probability_gap"]>.999999
+    assert b["tail_examples"][-1]["excess_mass_mean"]>9999
+    assert b["tail_examples"][-1]["all_time_trace_distance_upper"]<.021
+    for key in ("exchange_coupling_list_generated","native_976_charge_model_identified_with_exchange_simulator",
+        "all_SM_matching_completed","full_GR_completed","macro_arrow_completed",
+        "resolved_gravity_signal_claimed_in_protocol_example","full_goal_completed"):
+        assert result["scope"][key] is False
+    import importlib.util
+    spec=importlib.util.spec_from_file_location("core979",HERE/"spectral_mass_bridge.py")
+    mod=importlib.util.module_from_spec(spec);spec.loader.exec_module(mod)
+    mod.compare(mod.run(),result)
+    note=STAGE/"research_note_979.md";prose=note.read_text("utf-8")
+    assert prose.count("$$")==16
+    assert re.findall(r"\\tag\{(\d+)\}",prose)==[str(i) for i in range(1,9)]
+    for term in ("整体目标未完成","没有生成最终交换网络","数学Newton H的存在不自动认证",
+        "不是947／976／978旧装置的新误差","高能辅助态的资源矩"):
+        # The resource-tail phrase occurs in the next entry; prose carries the same explicit boundary.
+        assert term in prose or term in (STAGE/"980/drafts/STATUS.md").read_text("utf-8"),term
+    newfiles=[note,HERE/"spectral_mass_bridge.py",HERE/"spectral_mass_bridge_results.json",
+        Path(__file__),HERE/"drafts/spectral_mass_decision.md",
+        HERE/"drafts/protocol_parent_adoption.md",HERE/"drafts/publish979.py",
+        STAGE/"980/drafts/STATUS.md"]
+    for p in newfiles:
+        if p.suffix==".py":ast.parse(p.read_text("utf-8"))
+    nav=[STAGE.parent/n for n in ("README.md","research_direction.md","RESEARCH_STATE.md")]+[
+        STAGE/n for n in ("README.md","文件索引.md","阶段成果总览.md","跨阶段主题索引.md",
+                         "_shared/notes/unified_physics_condition_ledger_current.md")]
+    mapping=nav[-1].read_text("utf-8-sig").split(
+        "## 六条共同协议：全局缺口对应与检验优先级（截至979）",1)[1].split("### 当前取舍",1)[0]
+    assert re.findall(r"^\|(C\d\d) ",mapping,re.M)==[f"C{i:02d}" for i in range(1,28)]
+    links=0
+    for doc in [p for p in newfiles if p.suffix==".md"]+nav:
+        content=re.sub(r"\$\$.*?\$\$","",doc.read_text("utf-8-sig"),flags=re.S)
+        for link in re.findall(r"\]\(([^)]+)\)",content):
+            if re.match(r"^[a-zA-Z]+://",link) or link.startswith("#"):continue
+            target=(doc.parent/link.split("#")[0].strip("<>")).resolve()
+            assert target.exists() or (writing and target==TARGET.resolve()),(doc,link)
+            links+=1
+    nums=[]
+    for p in STAGE.parent.rglob("research_note_*.md"):
+        match=re.fullmatch(r"research_note_(\d+).md",p.name)
+        if match and p.parent.name.startswith("archive_"):nums.append(int(match[1]))
+    assert sorted(n for n in nums if n<=979)==list(range(1,980))
+    assert "001—979轮共979份" in nav[0].read_text("utf-8-sig")
+    assert "231—979的749份" in nav[5].read_text("utf-8-sig")
+    for p in nav:assert "979：完整协议与实际质量的谱模拟桥接" in p.read_text("utf-8-sig")
+    oldfiles=[STAGE/"978/research_round_978_checks.json",HERE/"drafts/STATUS.md"]
+    prev=read(oldfiles[0])
+    out=dict(round=979,date="2026-10-07",all_delivery_checks_passed=True,
+        formal_reports=979,fresh_test_groups=1,
+        cumulative_numbered_test_groups_from_978=prev["cumulative_numbered_test_groups_from_977"]+1,
+        historical_unique_files_verified=len(frozen),historical_manifest_evidence=layout,
+        local_links_checked=links,
+        continuum_spectral_mass_transport_proved=True,
+        existing_complete_protocol_budget_checked=True,
+        baseline_and_high_energy_resource_boundaries_checked=True,
+        actual_exchange_material_or_SM_matching_completed=False,
+        full_goal_completed=False,visual_checks_performed=False,app_goal_changed=False,
+        frozen_inputs={str(p.relative_to(ROOT)):sha(p) for p in oldfiles},
+        new_scientific_and_entry_files={str(p.relative_to(ROOT)):sha(p) for p in newfiles})
+    if not writing:
+        before=read(TARGET)
+        for key in ("frozen_inputs","new_scientific_and_entry_files"):assert before[key]==out[key],key
+    return out
+
+if __name__=="__main__":
+    parser=argparse.ArgumentParser();parser.add_argument("--write",action="store_true")
+    args=parser.parse_args()
+    if args.write:assert not TARGET.exists()
+    out=run(args.write)
+    if args.write:
+        with TARGET.open("x",encoding="utf-8") as dest:
+            json.dump(out,dest,ensure_ascii=False,indent=2);dest.write("\n")
+    print(json.dumps({k:v for k,v in out.items() if k not in
+         ("frozen_inputs","new_scientific_and_entry_files")},ensure_ascii=False,indent=2))
+

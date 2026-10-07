@@ -18,7 +18,7 @@
 
 ## 这是什么
 
-这是**认知本体论**（Cognitive Ontology）——一个从认知操作结构出发，探索量子理论、时空、引力与物质如何相互统一的研究纲领。
+这是**知行本体论**（Epistemic–Operational Ontology）——一个从认知操作结构出发，探索量子理论、时空、引力与物质如何相互统一的研究纲领。
 
 ### 核心研究假说
 
@@ -30,7 +30,7 @@
 
 ### 理论定位
 
-| 维度 | 认知本体论 |
+| 维度 | 知行本体论 |
 |---|---|
 | 出发点 | 认知操作结构（不是物质，也不是纯粹心灵） |
 | 量子力学 | 已完成明确公理与附加条件下的有限维重建 |
@@ -39,7 +39,7 @@
 
 ## 研究进展
 
-更新日期：**2026-10-05**。当前持续推进的主线为 [research_cognition_physics](research_cognition_physics/README.md)，已完成 **001—805轮正式报告**，后续从 [806轮入口](research_cognition_physics/archive_764_/806/drafts/STATUS.md)接续。这里概括截至本次更新的进度；后续状态以[研究状态](research_cognition_physics/RESEARCH_STATE.md)为准。
+更新日期：**2026-10-05**。当前持续推进的主线为 [research_cognition_physics](research_cognition_physics/README.md)，已完成 **001—805轮正式报告**，后续从 [806轮入口](research_cognition_physics/archive_797_818/806/drafts/STATUS.md)接续。这里概括截至本次更新的进度；后续状态以[研究状态](research_cognition_physics/RESEARCH_STATE.md)为准。
 
 - **001—230：量子理论重建阶段已结项。** 在明确的操作公理与附加条件下，建立有限维复量子状态空间、操作与连续动力学的条件性重建链。完整前提、证明及适用范围见研究主目录中的两篇阶段论文。
 - **231—805：物理生成与统一研究持续进行。** 已形成条件性三维与光滑坐标结果、限定特定候选的反例，以及让同一物质共同承担参考、记录和几何反作用的模型构造。当前在 `archive_764_` 检查共同量子模型中的状态、相互作用、记录与来源是否相容。
@@ -74,10 +74,10 @@
 |[research_cognition_physics/](research_cognition_physics/README.md)|阶段论文、各阶段研究档案与当前进展入口|
 |[research_information_geometry/](research_information_geometry/README.md)|冻结的信息几何早期探索|
 |[research_physics_construction/](research_physics_construction/README.md)|冻结的早期物理构造案例|
-|[猜想/](猜想/)|方向性猜想、认知架构与研究讨论|
-|[哲学起点/](哲学起点/)|早期哲学思考与论文稿|
-|[杂想/](杂想/)|零散思考与随笔|
-|[scripts/](scripts/)|复算、转换与资料维护工具|
+|[猜想/](猜想)|方向性猜想、认知架构与研究讨论|
+|[哲学起点/](哲学起点)|早期哲学思考与论文稿|
+|[杂想/](杂想)|零散思考与随笔|
+|[scripts/](scripts)|复算、转换与资料维护工具|
 
 根README提供项目定位与进度摘要。详细分期、逐轮报告、代码和复算入口见各研究目录的README。
 
@@ -92,7 +92,7 @@
 1. [认知物理研究主目录](research_cognition_physics/README.md)：阶段论文、研究分期与各阶段入口。
 2. [当前研究状态](research_cognition_physics/RESEARCH_STATE.md)：最新正式结论和接续任务。
 3. [研究方向](research_cognition_physics/research_direction.md)：当前目标、推进顺序与适用边界。
-4. [第805轮报告](research_cognition_physics/archive_764_/research_note_805.md)：本次更新时最新完成轮次的推导、代码、结果与核验链接。
+4. [第805轮报告](research_cognition_physics/archive_797_818/research_note_805.md)：本次更新时最新完成轮次的推导、代码、结果与核验链接。
 
 ---
 

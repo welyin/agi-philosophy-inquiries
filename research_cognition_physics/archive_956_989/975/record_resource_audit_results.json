@@ -1,0 +1,204 @@
+{
+  "round": 975,
+  "date": "2026-10-07",
+  "all_scientific_checks_passed": true,
+  "unchanged_physical_hamiltonian_preparation_and_endpoint": true,
+  "reference": {
+    "beta": 1.3862943611198906,
+    "partitions": [
+      "sender_A",
+      "receiver_B",
+      "mode_F",
+      "path_P"
+    ],
+    "reference_is_product_of_bare_Gibbs_states": true,
+    "reference_is_actual_joint_equilibrium": false,
+    "physical_heat_bath_added": false
+  },
+  "states": [
+    {
+      "time": "initial",
+      "marginal_entropies": {
+        "sender_A": 0.6931471805599454,
+        "receiver_B": 5.551115123125782e-16,
+        "mode_F": 2.220446049250313e-16,
+        "path_P": 4.440892098500625e-16
+      },
+      "bare_energies": {
+        "sender_A": -0.0192582403567252,
+        "receiver_B": -0.019258240356725194,
+        "mode_F": 0.24999999999999994,
+        "path_P": 0.0
+      },
+      "local_relative_entropies": {
+        "sender_A": 2.179783511745136,
+        "receiver_B": 2.872930692305081,
+        "mode_F": 1.0397207708399177,
+        "path_P": 0.6931471805599448
+      },
+      "local_readiness": 6.785582155450079,
+      "total_correlation": 1.3322676295501878e-15,
+      "label_Holevo_information": {
+        "sender_A": 0.6931471805599448,
+        "receiver_B": -1.1102230246251556e-16,
+        "mode_F": 4.930380657631324e-32,
+        "path_P": 5.551115123125778e-17
+      },
+      "global_entropy": 0.6931471805599453
+    },
+    {
+      "time": "final",
+      "marginal_entropies": {
+        "sender_A": 0.6932447355467415,
+        "receiver_B": 0.6932445205082993,
+        "mode_F": 0.41806621465392335,
+        "path_P": 0.418769156231561
+      },
+      "bare_energies": {
+        "sender_A": -0.01924988858794583,
+        "receiver_B": -0.019249888587945796,
+        "mode_F": 0.24999956815134997,
+        "path_P": 0.0
+      },
+      "local_relative_entropies": {
+        "sender_A": 2.1796975347683043,
+        "receiver_B": 2.1796977498067465,
+        "mode_F": 0.6216539575166462,
+        "path_P": 0.27437802432838426
+      },
+      "local_readiness": 5.255427266420082,
+      "total_correlation": 1.5301774463805797,
+      "label_Holevo_information": {
+        "sender_A": 0.6931471805599454,
+        "receiver_B": 0.6816035217629196,
+        "mode_F": 0.0007821986558370075,
+        "path_P": 0.0011339262918191317
+      },
+      "global_entropy": 0.6931471805599453,
+      "total_correlation_interval": [
+        1.5299954350471872,
+        1.5303594577139723
+      ],
+      "local_readiness_interval": [
+        5.255244065189863,
+        5.255610467650301
+      ],
+      "receiver_label_information_error": 6.903242637333124e-05
+    }
+  ],
+  "energy_rows": [
+    [
+      {
+        "branch": 0,
+        "full_local_before": 0.19222624449449738,
+        "full_local_after": 0.1922262444944971,
+        "local_interaction_before": 9.655646730490777e-07,
+        "local_interaction_after": -3.2036510026589135e-05,
+        "gravity_before": -0.0024913527897895762,
+        "gravity_after": -0.0024913527897895762
+      },
+      {
+        "branch": 1,
+        "full_local_before": 0.19222624449449738,
+        "full_local_after": 0.19222624449449704,
+        "local_interaction_before": 9.655646730490777e-07,
+        "local_interaction_after": -3.0598970408355954e-05,
+        "gravity_before": -0.0049827055795791525,
+        "gravity_after": -0.0049827055795791525
+      }
+    ],
+    [
+      {
+        "branch": 0,
+        "full_local_before": 0.23074208149816583,
+        "full_local_after": 0.2307420814981662,
+        "local_interaction_before": 3.218548910163327e-07,
+        "local_interaction_after": -1.1201233570324308e-07,
+        "gravity_before": -0.002492310514171666,
+        "gravity_after": -0.002492310514171666
+      },
+      {
+        "branch": 1,
+        "full_local_before": 0.23074208149816583,
+        "full_local_after": 0.23074208149816622,
+        "local_interaction_before": 3.218548910163327e-07,
+        "local_interaction_after": 2.355762636624686e-07,
+        "gravity_before": -0.004984621028343332,
+        "gravity_after": -0.004984621028343332
+      }
+    ]
+  ],
+  "resource_balance": {
+    "initial_readiness": 6.785582155450079,
+    "final_local_readiness": 5.255427266420082,
+    "final_total_correlation": 1.5301774463805797,
+    "interaction_energy_change": -1.6271688908779084e-05,
+    "beta_interaction_change": -2.255735058013751e-05,
+    "identity_residual": -1.7763568394002505e-15,
+    "initial_correlations": 0.0
+  },
+  "record": {
+    "source_label_probabilities": [
+      0.999999999999999,
+      2.4569360933040625e-22
+    ],
+    "receiver_probabilities": [
+      0.0025991736511479357,
+      0.9974025393826478
+    ],
+    "error_probability": 0.002598317134250072,
+    "error_upper": 0.002600317134250072,
+    "certified_binary_information_lower": 0.6750728427094396,
+    "quantum_receiver_information": 0.6816035217629196,
+    "sender_retains_label_exactly": true,
+    "arbitrary_unknown_quantum_state_copied": false,
+    "all_time_record_retention_proven": false,
+    "receiver_conserved_sector_probabilities": [
+      0.4999999999999992,
+      0.49999999999999944
+    ],
+    "sector_dephasing_is_diagnostic_only": true,
+    "after_sector_dephasing_same_effect": [
+      0.49999216701912336,
+      0.499999810775697
+    ],
+    "after_sector_dephasing_trace_distance": 0.00010176375107378525,
+    "after_sector_dephasing_infinite_distance_upper": 0.00010576375107378525
+  },
+  "error_bounds": {
+    "state_trace_distance": 2e-06,
+    "oscillator_mean_number_bound": 1.0,
+    "derived_sqrt_mean_number_bound": 0.7966016942026402,
+    "finite_material_entropy": 3.451571318666562e-05,
+    "path_entropy": 2.8244724754807322e-05,
+    "oscillator_entropy": 8.473418226442197e-05,
+    "total_correlation": 0.00018201133339256054,
+    "interaction_energy": 8.58329125496955e-07,
+    "local_readiness": 0.00018320123021922194,
+    "infinite_oscillator_entropy_controlled": true
+  },
+  "scope": {
+    "resource_identity_is_mature_theorem": true,
+    "snapshot_nondestructive_classical_record_certified": true,
+    "global_entropy_production": false,
+    "actual_heat_or_work_cost_identified": false,
+    "continuous_dissipation_required_for_storage": false,
+    "stable_macroscopic_record_dynamics_completed": false,
+    "full_cyclic_reset_completed": false,
+    "cosmic_low_entropy_origin_derived": false,
+    "full_goal_completed": false
+  },
+  "adoption": "local readiness is redistributed into classical records and other correlations; no new bath or arrow mechanism is claimed",
+  "references": [
+    "https://arxiv.org/abs/1404.2169",
+    "https://arxiv.org/html/1507.07775"
+  ],
+  "source_hashes": {
+    "research_cognition_physics\\archive_764_\\975\\record_resource_audit.py": "2185e5480b4d4d84636863463b9c77a6d2181c1c783b0808a397c159203fe1c9",
+    "research_cognition_physics\\archive_764_\\965\\material_field_window.py": "4e32d4fe467c51668e5e67b166c73496b7afb68b44b3e4cdf0f448ce0e5286ad",
+    "research_cognition_physics\\archive_764_\\956\\native_material_interface.py": "2ab03c573de42d54c28c65804766e7840331a8f028a5059d6129baf57f5bc0b8",
+    "research_cognition_physics\\archive_764_\\974\\joint_energy_source.py": "c5f7ea2f653e5b9c7a54408391dcbb418851971cf1372e852d35773769ae5d9d",
+    "research_cognition_physics\\archive_764_\\974\\joint_energy_source_results.json": "6ff30647c330f0f5474bd40e4baab46f3122f222507136354358bbe9c897005f",
+    "research_cognition_physics\\archive_764_\\972\\native_thermal_record_results.json": "2b7d1fc81ffabf805c23942943f4c1f3e32ccf8ed7c39081123527b7edc0b788"
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "round": 952,
+  "date": "2026-10-07",
+  "all_scientific_checks_passed": true,
+  "parameters": {
+    "K": [
+      [
+        1.25,
+        1.0
+      ],
+      [
+        1.0,
+        4.0
+      ]
+    ],
+    "C": [
+      [
+        0.5,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.42250000000000004,
+        0.4949747468305832
+      ]
+    ],
+    "lapse_profile": "N(x)=1+0.1*cos(x)",
+    "spatial_Galerkin_modes": [
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3
+    ],
+    "spatial_metric_fixed": true
+  },
+  "checks": {
+    "uniform_lapse_identity_error": 4.9065389333867974e-18,
+    "source_exchange_reciprocity_error": 1.3985787785349405e-17,
+    "independent_real_space_bilinear_error": 2.1339846146473283e-15,
+    "independent_resolvent_variation_error": 9.554044394727142e-13,
+    "exact_positive_remainder_identity_error": 1.3287380593626088e-16,
+    "direct_stationary_energy_error": 0.0,
+    "stationary_energy_lapse_variation_error": 2.291894972417108e-13,
+    "relative_quadratic_form_norm": 0.8603174933904972
+  },
+  "momentum_vertices": [
+    {
+      "q_out": [
+        1,
+        0,
+        0
+      ],
+      "q_in": [
+        1,
+        0,
+        0
+      ],
+      "lapse_vertex": [
+        [
+          -0.12195121951219512,
+          0.020609756097560973,
+          0.024145109601491858
+        ],
+        [
+          0.020609756097560973,
+          -0.03918429878048781,
+          -0.04590588962983641
+        ],
+        [
+          0.024145109601491858,
+          -0.04590588962983641,
+          -0.053780487804878034
+        ]
+      ],
+      "record_W": 0.020609756097560973,
+      "record_fermion": 0.024145109601491858,
+      "endpoints_only_record_W": 0.04121951219512195,
+      "field_insertion_record_W": -0.020609756097560973
+    },
+    {
+      "q_out": [
+        2,
+        0,
+        0
+      ],
+      "q_in": [
+        1,
+        0,
+        0
+      ],
+      "lapse_vertex": [
+        [
+          -0.0975609756097561,
+          0.015457317073170732,
+          0.018108832201118894
+        ],
+        [
+          0.015457317073170733,
+          -0.03374203506097562,
+          -0.03953007162569246
+        ],
+        [
+          0.018108832201118894,
+          -0.03953007162569247,
+          -0.04631097560975608
+        ]
+      ],
+      "record_W": 0.015457317073170732,
+      "record_fermion": 0.018108832201118894,
+      "endpoints_only_record_W": 0.02576219512195122,
+      "field_insertion_record_W": -0.010304878048780488
+    },
+    {
+      "q_out": [
+        1,
+        1,
+        0
+      ],
+      "q_in": [
+        1,
+        0,
+        0
+      ],
+      "lapse_vertex": [
+        [
+          -0.1219512195121951,
+          0.020609756097560973,
+          0.024145109601491858
+        ],
+        [
+          0.020609756097560973,
+          -0.03918429878048781,
+          -0.04590588962983641
+        ],
+        [
+          0.024145109601491858,
+          -0.045905889629836404,
+          -0.05378048780487803
+        ]
+      ],
+      "record_W": 0.020609756097560973,
+      "record_fermion": 0.024145109601491858,
+      "endpoints_only_record_W": 0.03202867501647989,
+      "field_insertion_record_W": -0.011418918918918917
+    }
+  ],
+  "finite_lapse": {
+    "lambda_value": 0.1,
+    "baseline_record_W": -0.0,
+    "correct_record_W": 0.0007715476910149738,
+    "correct_record_fermion": 0.0009038973326103139,
+    "endpoints_only_record_W": 0.0012881097560975608,
+    "wrong_minus_correct_record_W": 0.000516562065082587,
+    "leading_record_W": 0.0007728658536585366,
+    "kernel_linearization_remainder_norm": 0.0016028119954145839,
+    "kernel_remainder_bound": 0.04805759792879924,
+    "exact_remainder_min_eigenvalue": -1.822039862135344e-20,
+    "stationary_energy": -0.022014742449342584,
+    "stationary_lapse_source": -0.0011398621757969356
+  },
+  "scope": {
+    "same_948_record_W_and_fermion_kernel": true,
+    "quadratic_static_exchange_lapse_source_connected": true,
+    "field_and_endpoint_variations_both_included": true,
+    "constant_lapse_is_only_normalization_check": true,
+    "finite_Galerkin_result_is_not_continuum_error_certificate": true,
+    "full_Einstein_solution_or_full_stress_certified": false,
+    "new_947_finite_time_probability_or_preparation_bound": false,
+    "full_SM_or_quantum_gravity_restored": false,
+    "full_goal_completed": false
+  },
+  "source_hashes": {
+    "research_cognition_physics\\archive_764_\\952\\portal_lapse_source.py": "7ec1dc3a5590490c6b888697e08507906492c0b5b41355226f25cd5e5de86614",
+    "research_cognition_physics\\archive_764_\\948\\neutral_matter_bridge_results.json": "a8732964dc9afaaf3fd4a561dd0253c13294500f8295f3d593217aaf398a5442",
+    "research_cognition_physics\\archive_764_\\951\\body_sector_bridge_results.json": "f6aa3f98cd537b5c63a0fb88553e4a683ff55fdb71dd75b209ca5c82b7219dcc",
+    "research_cognition_physics\\archive_301_341\\research_note_303.md": "5017741fe316f028238989e73601e5c67c546030ecfde136b885843ccf0308c9",
+    "research_cognition_physics\\archive_585_628\\research_note_588.md": "2a4eb48accfacf85be6d5e90353a64671d06f1b9593a6c63beafd4166fd026a2"
+  }
+}

@@ -1,6 +1,6 @@
 # 从物理参考钟到量子仪器：联合读取误差与回冲接口
 
-日期：2026-09-30。接续[物理参考场与几何接口](material_reference_geometry_review.md)，继承1021份保护证据。仍为未编号接口审查；不新增521，编号检查仍2552。[代码](../512/quantum_reference_readout.py)；[结果](../../archive_764_/_shared/results/quantum_reference_readout_results.json)。
+日期：2026-09-30。接续[物理参考场与几何接口](material_reference_geometry_review.md)，继承1021份保护证据。仍为未编号接口审查；不新增521，编号检查仍2552。[代码](../512/quantum_reference_readout.py)；[结果](../../_shared/results/quantum_reference_readout_results.json)。
 
 ## 1. 这一步实际完成了什么
 

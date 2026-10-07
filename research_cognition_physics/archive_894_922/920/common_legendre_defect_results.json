@@ -1,0 +1,75 @@
+{
+  "round": 920,
+  "date": "2026-10-06",
+  "N": 17,
+  "source_points": 512,
+  "original_material_source_points": true,
+  "same912_preparation_and_104_variable_flow": true,
+  "same_time_window": 0.00025,
+  "algebraic_checks": {
+    "square_identity": 1.334409499706945e-16,
+    "actual_joint_first_variation_identity": 4.2587436107110504e-18,
+    "auxiliary_momentum_equation_identity": 1.7799832959858146e-16,
+    "A0_source_direction_identity": 4.070787404944964e-16,
+    "independent919_momentum_dictionary": 1.6653345369377348e-16
+  },
+  "actual_momentum_defects": {
+    "dp": {
+      "max": 2.1104645434172342e-06,
+      "RMS": 6.230747204842005e-07
+    },
+    "dE": {
+      "max": 7.106024049741144e-08,
+      "RMS": 8.288594923686635e-09
+    }
+  },
+  "actual_velocity_equation_defects": {
+    "velocity_phi_defect": {
+      "max": 3.346639512247875e-06,
+      "RMS": 9.79911458650891e-07
+    },
+    "velocity_A_defect": {
+      "max": 7.489479988644274e-09,
+      "RMS": 1.2406381461383747e-09
+    }
+  },
+  "actual_tangent_momentum_defects": {
+    "dp": {
+      "max": 2.075144032557877e-05,
+      "RMS": 6.188246547581073e-06
+    },
+    "dE": {
+      "max": 4.029602354328616e-06,
+      "RMS": 4.393185372566084e-07
+    }
+  },
+  "actual_tangent_velocity_defects": {
+    "velocity_phi_defect": {
+      "max": 3.301584121101311e-05,
+      "RMS": 9.776407397486915e-06
+    },
+    "velocity_A_defect": {
+      "max": 1.241588247801631e-07,
+      "RMS": 2.2606121307190712e-08
+    }
+  },
+  "action_defect": {
+    "minimum": 3.603132779034821e-15,
+    "maximum": 4.298210651341422e-12,
+    "maximum_first_variation": 8.163893324343545e-11,
+    "A0_test_first_variation_max": 1.9689471357251414e-06
+  },
+  "action_defect_smallness_is_not_source_or_observable_bound": true,
+  "mixed_action_is_same_theory_offshell_dictionary_not_new_physical_counterterm": true,
+  "full_relation_observable_error_certified": false,
+  "quantum_auxiliary_measure_equivalence_proved": false,
+  "full872_response_computed": false,
+  "full_goal_completed": false,
+  "elapsed_seconds": 57.354,
+  "source_hashes": {
+    "920\\common_legendre_defect.py": "367c8aa19a64cf8a39158054b8b572eaba824bc6e00889cca6efee6aa1b3e562",
+    "919\\canonical_gauss_commutator.py": "2881c04d465f5fe27e6d5b016c2c43cf7768261699bd7dfbde3d9bcef8fffa70",
+    "919\\weak_gauss_transport.py": "c07d530dab60aa1b13eb7f2c35531022b48b697863c353211696861e0417a23e",
+    "912\\receiver_forced_response.py": "778038d77be2f59d6681ee073361af54290d0ce1cc9b57e25c65226a2b7e964c"
+  }
+}

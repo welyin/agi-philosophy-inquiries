@@ -1,0 +1,49 @@
+{
+  "round": 917,
+  "status": "working",
+  "date": "2026-10-06",
+  "samples": 8,
+  "original_receiver_and_full_offshell_stress_retained": true,
+  "independent_original_stress_error": 3.187554387107383e-17,
+  "original_frame_error": 4.440892098500626e-16,
+  "actual_stress_divergence_sample_max": 8.487831152483103e-06,
+  "actual_stress_divergence_components_max": [
+    7.478509473496375e-06,
+    8.487831152483103e-06,
+    6.775318759727732e-06,
+    1.9567043852346364e-11
+  ],
+  "actual_Dirac_residual_sample_max": 0.0003292143342529823,
+  "actual_stress_first_derivative_sample_max": 0.1314605233677802,
+  "independent_central_difference_diagnostics": [
+    {
+      "step": 2e-06,
+      "coordinate_derivative_differences": [
+        2.12054540593698e-11,
+        3.881132069373516e-11,
+        4.7757814630039475e-11,
+        4.5896212611667986e-11
+      ]
+    },
+    {
+      "step": 1e-06,
+      "coordinate_derivative_differences": [
+        3.8238523458744567e-11,
+        5.86900180147773e-11,
+        5.674574135236532e-11,
+        8.350360637329746e-11
+      ]
+    }
+  ],
+  "finite_difference_used_only_for_check": true,
+  "source_hashes": {
+    "917\\receiver_stress_derivative.py": "357a4e715ca00718b8e892d49a7277fb069d1b6da8b5ad81ade4ebf825fc5ab0",
+    "916\\covariant_joint_residual.py": "1223a54d5fd319d4390fff85f211f9e6398deb8a3c5f6bcc645b07b671692ee8",
+    "906\\compact_receiver_propagation.py": "a2f2659fe3a4b16c756555d074235e276b1c0df4571f06d9bc2d363a42d2b4f9",
+    "914\\weighted_receiver_pairing.py": "fb2e836d324b8c28f410ed7654b9efba0361e8d54712ba433b3464ec670a0127"
+  },
+  "uniform_source_divergence_bound_certified": false,
+  "actual_finite_observable_error_certified": false,
+  "full_goal_completed": false,
+  "elapsed_seconds": 38.711
+}

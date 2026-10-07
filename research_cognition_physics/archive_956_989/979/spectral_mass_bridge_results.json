@@ -1,0 +1,131 @@
+{
+  "round": 979,
+  "date": "2026-10-07",
+  "all_scientific_checks_passed": true,
+  "finite_contract": {
+    "position_dimension": 25,
+    "internal_dimensions": [
+      2,
+      3
+    ],
+    "eta": 0.0001999999996666667,
+    "epsilon": 0.0001,
+    "actual_internal_error": 0.0001,
+    "noncommuting_error": 3.999999999999996e-06,
+    "low_mass_intertwining_error": 1.7908904837797258e-15,
+    "inverse_mass_error": 7.133480860156756e-07,
+    "minimum_mass": 11.839345026375621,
+    "actual_full_H_error": 9.652773715734372e-05,
+    "full_H_error_bound": 0.00010129058701891403,
+    "weak_potential": 0.1625,
+    "rows": [
+      {
+        "time": 0.0,
+        "all_input_isometry_difference": 3.569806822559569e-15,
+        "analytic_uniform_bound": 0.0003999999993333334
+      },
+      {
+        "time": 0.5,
+        "all_input_isometry_difference": 0.0003798275628781061,
+        "analytic_uniform_bound": 0.0004506452928427904
+      },
+      {
+        "time": 2.0,
+        "all_input_isometry_difference": 0.00041841831486572767,
+        "analytic_uniform_bound": 0.0006025811733711614
+      },
+      {
+        "time": 5.0,
+        "all_input_isometry_difference": 0.0005825474841363868,
+        "analytic_uniform_bound": 0.0009064529344279035
+      }
+    ],
+    "translation_symmetry_error": 0.0,
+    "exact_compressed_force_error": 3.2823120261546785e-06,
+    "exact_compressed_force_bound": 1.5636569790552364e-05,
+    "source_derivative_error": 0.0010722219284913237,
+    "force_finite_difference_error": 5.180744741434576e-12,
+    "equal_opposite_force_difference": 2.220446226015527e-12
+  },
+  "protocol_transport": {
+    "target": "929 complete H scaled by pi/30, including clock and faults",
+    "unknown_input_and_passive_reference": true,
+    "physical_simulator_generated": false,
+    "source_rule": "complete actual simulator energy with matched rest baseline",
+    "time": 30.0,
+    "eta": 1e-05,
+    "epsilon": 1e-06,
+    "mass0": 20.0,
+    "mass_lower": 19.0,
+    "mass_upper": 24.0,
+    "initial_H_minus_mu_norm_bound": 25.0,
+    "gaussian_initial_bound": 23.141597494818974,
+    "sigma": 100.0,
+    "mu": 20.0,
+    "G": 1e-30,
+    "soft_core": 1.0,
+    "continuum_coefficient": 4.257617728531856,
+    "moving_simulation_error": 0.00014772853185595567,
+    "moving_target_to_flat_protocol": 0.00014523687548277815,
+    "full_protocol_output_bound": 0.0002929654073387338,
+    "uniform_time_interval": true
+  },
+  "resource_boundaries": {
+    "baseline_omission_probability_gap": 1.0,
+    "tail_examples": [
+      {
+        "angle": 0.1,
+        "high_energy": 9999.999999999998,
+        "high_energy_probability": 0.009966711079379185,
+        "all_time_trace_distance_upper": 0.19866933079506122,
+        "excess_mass_mean": 99.66711079379184,
+        "excess_mass_second_moment": 1000657.7923696699
+      },
+      {
+        "angle": 0.03,
+        "high_energy": 1234567.901234568,
+        "high_energy_probability": 0.0008997300323979172,
+        "all_time_trace_distance_upper": 0.059964006479444595,
+        "excess_mass_mean": 1110.7778177752066,
+        "excess_mass_second_moment": 1371375070.3413613
+      },
+      {
+        "angle": 0.01,
+        "high_energy": 99999999.99999999,
+        "high_energy_probability": 9.99966667111108e-05,
+        "all_time_trace_distance_upper": 0.01999866669333308,
+        "excess_mass_mean": 9999.666671111077,
+        "excess_mass_second_moment": 999967067097.7745
+      }
+    ],
+    "finite_spectral_simulation_does_not_bound_bare_preparation_energy": true,
+    "actual_simulator_rest_mass_matching_is_input": true
+  },
+  "scope": {
+    "existing_exchange_theorem_reused": true,
+    "continuum_positions_in_analytic_proof": true,
+    "finite_position_check_not_continuum_convergence": true,
+    "exchange_coupling_list_generated": false,
+    "native_976_charge_model_identified_with_exchange_simulator": false,
+    "all_SM_matching_completed": false,
+    "full_GR_completed": false,
+    "macro_arrow_completed": false,
+    "resolved_gravity_signal_claimed_in_protocol_example": false,
+    "full_goal_completed": false
+  },
+  "references": [
+    "https://arxiv.org/html/1701.05182v4",
+    "https://arxiv.org/abs/1502.00971"
+  ],
+  "source_hashes": {
+    "research_cognition_physics\\archive_764_\\979\\spectral_mass_bridge.py": "e3a4c2769b80bcf3493a2a96f6859f161c1c149f678fc3708aac09600a9ad43b",
+    "research_cognition_physics\\archive_764_\\979\\drafts\\spectral_mass_decision.md": "6fc0d2999ec9cd6a4cac36f7c139498d2640eb5873787ac6b0ec90059b3a2b55",
+    "research_cognition_physics\\archive_429_466\\research_note_436.md": "3942397d1d53526da57a6f005e0f86044f1f394492f18ad299b175a12acbfdf1",
+    "research_cognition_physics\\archive_585_628\\research_note_625.md": "a8da603083b45b2165c9251081a447eee7a8b2e58f68df9384c16e2d8b380dac",
+    "research_cognition_physics\\archive_764_\\929\\joint_protocol_selection.py": "6d92a4ffae1e4b167741c8b81193bad09f44827a2db8e051ac2bee1acafd72e9",
+    "research_cognition_physics\\archive_764_\\929\\joint_protocol_selection_results.json": "5382a741e90791ebd7892c6a2e0ab9926acb6aae5b8c6edf0c643f4034bbf413",
+    "research_cognition_physics\\archive_764_\\research_note_935.md": "36fccd815e238ff60267ec55a76317078fdcaa020ae7c6ef94d20862a56d4453",
+    "research_cognition_physics\\archive_764_\\978\\moving_complete_source.py": "18514a971c9950499798dc16fe8d05416877e213ace578352ad023dbc42c58d3",
+    "research_cognition_physics\\archive_764_\\978\\moving_complete_source_results.json": "6e448f602b6c2926923e930672e54db666d0c54e36cc73ba5d4244c192226893"
+  }
+}

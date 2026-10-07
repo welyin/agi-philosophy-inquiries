@@ -1,0 +1,204 @@
+{
+  "round": 935,
+  "date": "2026-10-07",
+  "all_scientific_checks_passed": true,
+  "one_bounded_common_source_identity_test": true,
+  "endpoint_isometry_errors": {
+    "program": 3.32951569475387e-16,
+    "actual_rate": 3.32951569475387e-16,
+    "direct_rate": 3.3853529664243003e-16
+  },
+  "full_input_energy_moments": [
+    {
+      "order": 1,
+      "compiled_diagonal": [
+        0.5,
+        0.5
+      ],
+      "direct_diagonal": [
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "order": 2,
+      "compiled_diagonal": [
+        0.5,
+        0.5
+      ],
+      "direct_diagonal": [
+        0.5,
+        1.25
+      ]
+    },
+    {
+      "order": 3,
+      "compiled_diagonal": [
+        0.5,
+        0.5
+      ],
+      "direct_diagonal": [
+        0.5,
+        1.75
+      ]
+    },
+    {
+      "order": 4,
+      "compiled_diagonal": [
+        0.5,
+        0.5
+      ],
+      "direct_diagonal": [
+        0.5,
+        2.5625
+      ]
+    }
+  ],
+  "source_rows": [
+    {
+      "source": -0.1,
+      "program": 0.5782172325201151,
+      "actual_rate": 0.5122358709262113,
+      "direct_rate": 0.5782172325201153,
+      "target_probability": 0.5782172325201155
+    },
+    {
+      "source": -0.02,
+      "program": 0.515705379539064,
+      "actual_rate": 0.5004933178929318,
+      "direct_rate": 0.5157053795390639,
+      "target_probability": 0.5157053795390641
+    },
+    {
+      "source": 0.0,
+      "program": 0.49999999999999967,
+      "actual_rate": 0.49999999999999967,
+      "direct_rate": 0.49999999999999967,
+      "target_probability": 0.5
+    },
+    {
+      "source": 0.02,
+      "program": 0.48429462046093574,
+      "actual_rate": 0.5004933178929317,
+      "direct_rate": 0.4842946204609355,
+      "target_probability": 0.48429462046093585
+    },
+    {
+      "source": 0.1,
+      "program": 0.4217827674798845,
+      "actual_rate": 0.5122358709262114,
+      "direct_rate": 0.4217827674798844,
+      "target_probability": 0.42178276747988447
+    }
+  ],
+  "two_branch_matrix_rows": [
+    {
+      "left_source": 0.0,
+      "right_source": 0.07,
+      "identity_errors": [
+        6.145525706514757e-16,
+        6.300271117485416e-16,
+        4.845666967429348e-16
+      ],
+      "program_actual_rate_difference": 0.10990035982489149
+    },
+    {
+      "left_source": -0.03,
+      "right_source": 0.04,
+      "identity_errors": [
+        5.566705740848049e-16,
+        6.463236069784172e-16,
+        6.366956047564537e-16
+      ],
+      "program_actual_rate_difference": 0.10990035982489152
+    },
+    {
+      "left_source": 0.02,
+      "right_source": -0.08,
+      "identity_errors": [
+        7.108895957933346e-16,
+        7.178989156685113e-16,
+        5.117875266520903e-16
+      ],
+      "program_actual_rate_difference": 0.15691819145568986
+    }
+  ],
+  "derivative_checks": [
+    {
+      "step": 0.001,
+      "program": -0.7853978404153972,
+      "actual_rate": -5.551115123125783e-14,
+      "direct_rate": -0.7853978404154804,
+      "program_error": 3.2298205110414813e-07
+    },
+    {
+      "step": 0.0005,
+      "program": -0.7853980826519891,
+      "actual_rate": -3.3306690738754696e-13,
+      "direct_rate": -0.7853980826524887,
+      "program_error": 8.07454592077761e-08
+    },
+    {
+      "step": 0.00025,
+      "program": -0.7853981432113244,
+      "actual_rate": -2.220446049250313e-13,
+      "direct_rate": -0.7853981432105472,
+      "program_error": 2.018612388354768e-08
+    }
+  ],
+  "analytic_derivatives": {
+    "program": -0.7853981633974483,
+    "actual_rate": 0.0,
+    "direct_rate": -0.7853981633974483
+  },
+  "source_generator_difference": 1.798249301441869,
+  "energy_rows": [
+    {
+      "model": "compiled",
+      "initial_energy_operator_diagonal": [
+        0.5,
+        0.5
+      ],
+      "conservation_error": 3.1401849173675503e-16,
+      "spectrum": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "model": "direct",
+      "initial_energy_operator_diagonal": [
+        0.5,
+        1.0
+      ],
+      "conservation_error": 4.965068306494546e-16,
+      "spectrum": [
+        0.0,
+        0.5,
+        1.0,
+        1.5
+      ]
+    }
+  ],
+  "datum_energy_K_is_nontrivial": true,
+  "clock_baseline_accounted": true,
+  "exact_uniform_universe_time_rescaling_not_used_as_observable": true,
+  "pure_gate_dressed_independent_clock_class_only": true,
+  "original_Qeff_rejected": false,
+  "all_autonomous_implementations_rejected": false,
+  "gravity_or_standard_model_restored": false,
+  "full_goal_completed": false,
+  "clock_optimization_stopped": true,
+  "source_hashes": {
+    "research_cognition_physics\\archive_764_\\935\\autonomous_source_identity.py": "c713c204e8b4082686b97ab7983815d8ad21fac22c09101aac3afdbced7d5631",
+    "research_cognition_physics\\archive_764_\\935\\drafts\\STATUS.md": "a6baba5bcd0f9fe440359514fe1f0b333a1c671df143574dc39c9e7263ec63eb",
+    "research_cognition_physics\\archive_764_\\935\\drafts\\unified_operation_hypotheses_v0_1.md": "b6fcc2af9917ba8fee3b3c295aee1efdc2c2c36b2fcee2c0e0717146f78e10b7",
+    "research_cognition_physics\\archive_764_\\935\\drafts\\joint_model_identity_review.md": "2f8baeb71c32000dd90ac4a7d257c01f70420f9698f99cf42e7cbcbdffebdb3f",
+    "research_cognition_physics\\archive_764_\\research_note_854.md": "fd5b12e3b37914bb9ac36427abc5450ebdb7a0a53c0f09999dbfad22af6a09dd",
+    "research_cognition_physics\\archive_764_\\research_note_898.md": "451f3dd0074e9d5c2df1a25409b2b78f943b561b6d3d575035b71e08dac4ba88",
+    "research_cognition_physics\\archive_764_\\research_note_929.md": "a72604b07577bc48b11ef6cc91b5fd3ddc69fff6e1964400272a91f869303c6a",
+    "research_cognition_physics\\archive_342_369\\research_note_346.md": "3f13e19dcdff86acff04884651f18129b17b91ee3cb8a46f56d2d2f42d3b8eab"
+  }
+}

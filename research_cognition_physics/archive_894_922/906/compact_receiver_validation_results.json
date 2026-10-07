@@ -1,0 +1,73 @@
+{
+  "round": 906,
+  "date": "2026-10-06",
+  "all_checks_passed": true,
+  "cumulative_numbered_groups": 3691,
+  "argument_scope": "Original neutral doublet receiver mode with a single grid-independent compact preparation, propagated on902; scalar response and full off-shell covariant bilinear stress mapped to905 full gravity force and normal constraints. Sampled PDE, Ward and refinement diagnostics only; no full872 source or response yet.",
+  "independent_spinor_action_and_density_pair_reproduced": true,
+  "full_grid_time_integrations_previously_executed": true,
+  "full_grid_time_integrations_rerun_by_default": false,
+  "full_check_command": "python -B -X utf8 validate_compact_receiver.py --rerun-flow",
+  "source_file_sha256": {
+    "compact_receiver_propagation.py": "a2f2659fe3a4b16c756555d074235e276b1c0df4571f06d9bc2d363a42d2b4f9",
+    "compact_receiver_checks.py": "13e3abb2b96d2113fa1eccf73c7631f2087642a3b6cc444966b127ff73265bda",
+    "compact_receiver_checks_results.json": "0f0a238ed9ad2793c0b75889fedde8929b9f8169b37770a4c49f64e6a92e2f0e",
+    "receiver_density_pair_identity.py": "5a59e406f28134103e77f48e5be4a27e9e3ce709832c2560cdf95014dcf99c12",
+    "receiver_density_pair_identity_results.json": "fa0eb24c94916aa202f5a315fa992442223f167cd105467101f371bbf68cc939",
+    "drafts\\initial_refinement_failure.json": "2fe190744477bf64ce830a532fd3171b3cf839089671e52ff1bb95e349dd8dad",
+    "drafts\\receiver_source_derivation.md": "b830c6e98c66cc77191d1fbeda8ee2bf8fd3cf95e00306160ec0c4ea84a15584"
+  },
+  "finest_receiver_diagnostics": {
+    "time": 0.01,
+    "norm": 1.0000050445775062,
+    "sampled_inner_scalar_min": 0.07681945598155113,
+    "sampled_inner_scalar_max": 0.08078594383721793,
+    "sampled_spatial_speed_bound": 1.1499278781554612,
+    "outside_radius_test_probability": 3.492811662638141e-08,
+    "covariant_Dirac_residual_max": 0.0003028561114572902,
+    "current_density_divergence_max": 0.0005239040478209323,
+    "stress_density_divergence_max": 0.0042586576526694175,
+    "on_shell_trace_error_max": 1.5006392045255335e-05,
+    "source_stress_max": 0.09351480596487352,
+    "offshell_completion_max": 4.856381817422211e-06,
+    "gravity_acceleration_force_max": 0.09938902508180855,
+    "normal_constraint_load_max": {
+      "H": 0.1936108002270378,
+      "M": 0.05233771167910908,
+      "Gauss": 0.0
+    },
+    "background_constraints": {
+      "H_max": 1.2909873170485753e-10,
+      "H_rms": 4.7410577566748604e-11,
+      "M_max": 3.1173976594578434e-11,
+      "Gauss_max": 3.447242491461111e-14,
+      "harmonic_max": 9.386269539390923e-12,
+      "minimum_metric_eigenvalue": 0.7307034811388238,
+      "minimum_F": 1.8627664002832471
+    },
+    "N": 33,
+    "steps": 4,
+    "initial_quadrature_norm": 1.0000050445770299,
+    "norm_drift": 4.762856775641922e-13
+  },
+  "paired_density_identity": {
+    "round": 906,
+    "date": "2026-10-06",
+    "all_checks_passed": true,
+    "curved_forced_doublet_jets": 20,
+    "forced_Dirac_equation_error": 3.471222854278345e-15,
+    "paired_density_cancellation_error": 2.4202861936828413e-14,
+    "largest_uncancelled_piece_if_only_one_is_omitted": 6.747352516117448,
+    "statement": "On the872 lambda^2 four-receiver-leg coefficient, 2 L_R(psi1,psi32)=c ell(b21) O(psi1). The corresponding minimal-Dirac Hilbert density source cancels exactly the -c nu_star ell(b21) O term of F1_prime, before and after the same Pi_adjoint.",
+    "remaining_b_nu_term_required": true,
+    "other_old_F0_vertices_retained": true,
+    "full_source_not_zero_by_this_identity": true,
+    "physical_source_or_mean_numerically_evaluated": false,
+    "extra_model_principle": false
+  },
+  "local_Ward_residual_is_not_a_certified_observation_error": true,
+  "initial_failure_preserved": true,
+  "original872_total_source_computed": false,
+  "finite_time_error_certified": false,
+  "full_goal_completed": false
+}
