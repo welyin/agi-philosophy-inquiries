@@ -134,7 +134,8 @@ def prepare():
         if src.suffix.lower()=='.md':
             enc = 'utf-8-sig' if raw.startswith(b'\xef\xbb\xbf') else 'utf8'
             before = raw.decode(enc)
-            for a,b,target,local in links(before):
+            link_spans=list(links(before))
+            for a,b,target,local in link_spans:
                 original_target = (src.parent/local.replace('\\','/')).resolve()
                 new_target = mapped(original_target)
                 suffix = '#'+target.split('#',1)[1] if '#' in target else ''
@@ -144,7 +145,7 @@ def prepare():
                 if after != target:
                     edits.append(dict(start=a,end=b,before=target,after=after,kind='markdown_target'))
             # Concrete project paths in examples keep pointing to current assets.
-            occupied = [(e['start'],e['end']) for e in edits]
+            occupied = [(a,b) for a,b,_,_ in link_spans]
             pattern = re.compile(r'archive_764_([\\/])(?:(research_note_)(\d+)|(\d+)(?=[\\/])|(_shared|_migration|_history)(?=[\\/]))')
             for match in pattern.finditer(before):
                 if any(a<=match.start()<b or a<match.end()<=b for a,b in occupied):

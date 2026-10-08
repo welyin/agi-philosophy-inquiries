@@ -1,0 +1,200 @@
+{
+  "round": 1015,
+  "date": "2026-10-08",
+  "new_calibration_groups": 1,
+  "cumulative_research_groups": 3793,
+  "cumulative_count_pending_primary_confirmation": false,
+  "all_scientific_calibrations_passed": true,
+  "exact_structure_tests": [
+    {
+      "family": "abelian_three_vectors",
+      "vectors": 3,
+      "jacobi_nonzero_entries": 0,
+      "largest_integer_jacobi_component": 0
+    },
+    {
+      "family": "su2",
+      "vectors": 3,
+      "jacobi_nonzero_entries": 0,
+      "largest_integer_jacobi_component": 0
+    },
+    {
+      "family": "su2_plus_abelian",
+      "vectors": 4,
+      "jacobi_nonzero_entries": 0,
+      "largest_integer_jacobi_component": 0
+    },
+    {
+      "family": "two_su2_with_relative_strength_two",
+      "vectors": 6,
+      "jacobi_nonzero_entries": 0,
+      "largest_integer_jacobi_component": 0
+    },
+    {
+      "family": "antisymmetric_non_jacobi",
+      "vectors": 5,
+      "jacobi_nonzero_entries": 24,
+      "largest_integer_jacobi_component": 1
+    }
+  ],
+  "first_jet_calibrations": [
+    {
+      "family": "abelian_three_vectors",
+      "first_jets": 12,
+      "action_residual": 0.0,
+      "covariance_residual": 0.0,
+      "closure_residual": 0.0,
+      "independent_directional_difference_error": 5.551115123125782e-12
+    },
+    {
+      "family": "su2",
+      "first_jets": 12,
+      "action_residual": 7.762887554996212e-17,
+      "covariance_residual": 1.1102230246251565e-16,
+      "closure_residual": 5.551115123125783e-17,
+      "independent_directional_difference_error": 1.110225800182718e-11
+    },
+    {
+      "family": "su2_plus_abelian",
+      "first_jets": 12,
+      "action_residual": 1.0505919051384538e-16,
+      "covariance_residual": 8.326672684688674e-17,
+      "closure_residual": 5.551115123125783e-17,
+      "independent_directional_difference_error": 1.5265590007362828e-11
+    },
+    {
+      "family": "two_su2_with_relative_strength_two",
+      "first_jets": 12,
+      "action_residual": 3.5865407865820487e-16,
+      "covariance_residual": 1.6653345369377348e-16,
+      "closure_residual": 2.220446049250313e-16,
+      "independent_directional_difference_error": 3.122491674945049e-11
+    }
+  ],
+  "first_jet_count": 48,
+  "max_action_residual": 3.5865407865820487e-16,
+  "max_covariance_residual": 1.6653345369377348e-16,
+  "max_closure_residual": 2.220446049250313e-16,
+  "max_independent_directional_error": 3.122491674945049e-11,
+  "non_jacobi_witness": {
+    "seeds": {
+      "f123": 1,
+      "f145": 1
+    },
+    "jacobi_e2_e3_e4": [
+      0,
+      0,
+      0,
+      0,
+      -1
+    ],
+    "failures": [
+      {
+        "g": "1/4",
+        "action_variation": "-1/16",
+        "covariance_defect_max": "1/16",
+        "independent_difference_error": 2.3661142489750375e-12
+      },
+      {
+        "g": "1/2",
+        "action_variation": "-1/4",
+        "covariance_defect_max": "1/4",
+        "independent_difference_error": 1.637801005927031e-12
+      },
+      {
+        "g": "1",
+        "action_variation": "-1",
+        "covariance_defect_max": "1",
+        "independent_difference_error": 6.551204023708124e-12
+      }
+    ],
+    "closure_defect_at_g_half": 0.25
+  },
+  "independent_quartic_test": [
+    {
+      "quartic_multiplier": "0",
+      "g": "1/2",
+      "gauge_variation": "-1/4"
+    },
+    {
+      "quartic_multiplier": "1/2",
+      "g": "1/2",
+      "gauge_variation": "-1/8"
+    },
+    {
+      "quartic_multiplier": "1",
+      "g": "1/2",
+      "gauge_variation": "0"
+    },
+    {
+      "quartic_multiplier": "3/2",
+      "g": "1/2",
+      "gauge_variation": "1/8"
+    }
+  ],
+  "noncompact_affine_boundary": {
+    "jacobi_passed": true,
+    "invariant_metric_obstructions": [
+      [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ]
+    ],
+    "positive_invariant_metric_exists": false,
+    "delta_metric_first_order_action_variation": -0.5
+  },
+  "higher_dimension_abelian_freedom": {
+    "operator": "(F_munu F^munu)^2",
+    "operator_dimension": 8,
+    "coefficient": "3/10",
+    "cutoff": "2",
+    "sample_density_shift": "3/40",
+    "gauge_invariance_residual": 0.0
+  },
+  "claim_boundaries": {
+    "SM_group_selected": false,
+    "vector_field_number_selected": false,
+    "physical_couplings_predicted": false,
+    "spacetime_dimension_derived": false,
+    "massless_vector_modes_generated": false,
+    "matter_representation_generated": false,
+    "nonzero_interactions_forced": false,
+    "full_quantum_existence_proved": false,
+    "all_EFT_operators_fixed": false,
+    "new_cognitive_axiom": false,
+    "goal_completed": false
+  },
+  "historical_source_sha256": {
+    "archive_301_341/research_note_326.md": "ba09bad9d3aaaee8aa686ba1494b3f5fb09a2d4bbf13216ea87c95faeac33b47",
+    "archive_342_369/research_note_358.md": "e37029d318b84e7b54e7a6a0f3bbc74170f0122c96d91f8784de9828826f1595",
+    "archive_1009_/1009/input_dependency_ledger_v0_1.md": "93a0f9afdf5ad1844c3e531575628db82e2d2be5355d7ba2c3051e2cac546eba",
+    "archive_956_989/981/drafts/common_parent_contract_v1.md": "babe46677102396464175ebd876703be6b37b2e08a81fa5fd0a8ecc3bfef74ee"
+  },
+  "code_sha256": "1bfa2e7220d9d11b2653c41fd66661c7b0048f929b48e2ef2c43200207c16800"
+}

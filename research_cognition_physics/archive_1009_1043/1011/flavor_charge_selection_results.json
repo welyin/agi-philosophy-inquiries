@@ -1,0 +1,229 @@
+{
+  "round": 1011,
+  "calibration_groups": 1,
+  "cumulative_test_groups": 3789,
+  "scope": "finite flavor-matrix calibration; analytic proof covers the stated class",
+  "graph_cases": [
+    {
+      "mask": 0,
+      "components": 3,
+      "exact_incidence_rank": 0
+    },
+    {
+      "mask": 1,
+      "components": 2,
+      "exact_incidence_rank": 1
+    },
+    {
+      "mask": 2,
+      "components": 2,
+      "exact_incidence_rank": 1
+    },
+    {
+      "mask": 3,
+      "components": 1,
+      "exact_incidence_rank": 2
+    },
+    {
+      "mask": 4,
+      "components": 2,
+      "exact_incidence_rank": 1
+    },
+    {
+      "mask": 5,
+      "components": 1,
+      "exact_incidence_rank": 2
+    },
+    {
+      "mask": 6,
+      "components": 1,
+      "exact_incidence_rank": 2
+    },
+    {
+      "mask": 7,
+      "components": 1,
+      "exact_incidence_rank": 2
+    }
+  ],
+  "physical_charge_cases": [
+    {
+      "case": "connected_real_cp_conserving",
+      "components": [
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "hermitian_charge_dimension": 1,
+      "down_eigenvalues": [
+        3.324869129433353,
+        4.460811127189111,
+        7.214319743377533
+      ],
+      "commutator_det": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "case": "connected_complex",
+      "components": [
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "hermitian_charge_dimension": 1,
+      "down_eigenvalues": [
+        3.197224362268005,
+        5.000000000000002,
+        6.802775637731996
+      ],
+      "commutator_det": [
+        0.0,
+        -119.99999999999997
+      ]
+    },
+    {
+      "case": "two_components",
+      "components": [
+        [
+          0,
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "hermitian_charge_dimension": 2,
+      "down_eigenvalues": [
+        3.381966011250105,
+        5.618033988749895,
+        6.0
+      ],
+      "commutator_det": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "case": "three_components",
+      "components": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "hermitian_charge_dimension": 3,
+      "down_eigenvalues": [
+        4.0,
+        5.0,
+        6.0
+      ],
+      "commutator_det": [
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "largest_intertwiner_residual": 2.237726045655905e-16,
+  "largest_hermiticity_residual": 4.9797671764220625e-18,
+  "largest_basis_covariance_residual": 2.3990567937899652e-15,
+  "real_cp_conserving_certificate": {
+    "leading_principal_minors": [
+      "4",
+      "19",
+      "107"
+    ],
+    "exact_commutator_determinant": "0",
+    "commutant_dimension": 1
+  },
+  "invalid_noncommuting_left_charge_right_hermiticity_defect": 0.47360222277831493,
+  "degenerate_up_spectrum_counterexample_dimension": 3,
+  "rank_deficient_right_charge": {
+    "null_space_shift": 0.75,
+    "intertwiner_residual": 1.1102230246251565e-16,
+    "full_anomaly_test_claimed": false
+  },
+  "finite_precision": [
+    {
+      "step": 0.002,
+      "commutator_norm": 0.0028284271247461905,
+      "graph_edge_lower_bound": 1.0,
+      "charge_spread": 0.004,
+      "bound": 0.005656854249492381
+    },
+    {
+      "step": 0.02,
+      "commutator_norm": 0.028284271247461905,
+      "graph_edge_lower_bound": 1.0,
+      "charge_spread": 0.04,
+      "bound": 0.05656854249492381
+    },
+    {
+      "step": 0.2,
+      "commutator_norm": 0.28284271247461906,
+      "graph_edge_lower_bound": 1.0,
+      "charge_spread": 0.4,
+      "bound": 0.5656854249492381
+    }
+  ],
+  "weak_edge_counterexample": [
+    {
+      "edge": 0.01,
+      "commutator_norm": 0.01,
+      "charge_spread": 1.0
+    },
+    {
+      "edge": 0.0001,
+      "commutator_norm": 0.0001,
+      "charge_spread": 1.0
+    },
+    {
+      "edge": 1e-06,
+      "commutator_norm": 1e-06,
+      "charge_spread": 1.0
+    }
+  ],
+  "synthetic_mixing": [
+    {
+      "cp_phase": 0.0,
+      "J": -0.0,
+      "commutator_det": [
+        0.0,
+        0.0
+      ],
+      "hermitian_charge_dimension": 1
+    },
+    {
+      "cp_phase": 0.7,
+      "J": 0.0028914840467982395,
+      "commutator_det": [
+        -1.5601533917485802e-14,
+        112.42089973951553
+      ],
+      "hermitian_charge_dimension": 1
+    }
+  ],
+  "all_scientific_calibrations_passed": true,
+  "new_cognitive_axioms": 0,
+  "actual_experiment": false,
+  "all_physics_generated": false,
+  "historical_source_sha256": {
+    "archive_923_934\\research_note_924.md": "8d22788c229622f772ec2ff936c76871793a89d9056b433d1b39aee2b59356d4",
+    "archive_923_934\\research_note_926.md": "94d32752ad08ffb91b84b004a6f246957ba7efee2fc897e50855b7695f67beee",
+    "archive_923_934\\research_note_927.md": "8b1c8df615ed084e61f37d1294df5962fa8b6d1c5ddad6b54675b82619320d3a",
+    "archive_531_553\\research_note_531.md": "fb828893b471547e48af36cb5111ce94a2eb72dec49cc4db8e1419427add5d9d",
+    "archive_531_553\\research_note_532.md": "ff304b81bfd726218b89b9c23fabb8e434540bdcf32c0ebb26cbd45058aa9288",
+    "archive_531_553\\research_note_536.md": "4c8ead3dfc3720f5aa5c204985917b83c83d37a2a2dac18d945b0ea7511f2b32",
+    "archive_531_553\\research_note_537.md": "ec365aa77ee2f75cf5ba37aebe272306e28a13156ab545fd2116bf6af5d24a3b",
+    "archive_956_989\\981\\drafts\\common_parent_contract_v1.md": "babe46677102396464175ebd876703be6b37b2e08a81fa5fd0a8ecc3bfef74ee"
+  }
+}

@@ -27,10 +27,10 @@
 
 ## 复算与原件保护
 
-代码、JSON结果及历史收据保持原字节；阅读版Markdown仅调整链接目标。原件与路径变化见[本次迁移说明](../_migration/layout_001_230_20261004/README.md)。旧脚本使用固定目录与跨轮导入，统一通过隔离复算入口恢复原布局：
+代码、JSON结果及历史收据保持原字节；阅读版Markdown仅调整链接目标。原件与路径变化见[本次迁移说明](../archive_764_/_migration/layout_001_230_20261004/README.md)。旧脚本使用固定目录与跨轮导入，统一通过隔离复算入口恢复原布局：
 
 ```powershell
 python -B -X utf8 research_cognition_physics/_migration/layout_001_230_20261004/replay_early.py --stage 1
 ```
 
-命令从项目根目录运行，使用既有Python/NumPy环境；可加 `--module local_calibration_contract` 只检查指定模块。[本次复算记录](../_migration/layout_001_230_20261004/replay_checks.json)与[原1915项回归记录](222/archive_closure/stage1_test_results.json)分别保留，不把目录整理计为新研究轮次。
+命令从项目根目录运行，使用既有Python/NumPy环境；可加 `--module local_calibration_contract` 只检查指定模块。[本次复算记录](../archive_764_/_migration/layout_001_230_20261004/replay_checks.json)与[原1915项回归记录](222/archive_closure/stage1_test_results.json)分别保留，不把目录整理计为新研究轮次。

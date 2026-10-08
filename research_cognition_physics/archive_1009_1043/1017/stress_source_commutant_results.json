@@ -1,0 +1,945 @@
+{
+  "round": 1017,
+  "new_calibration_groups": 1,
+  "cumulative_test_groups": 3795,
+  "new_cognitive_axioms": 0,
+  "all_scientific_calibrations_passed": true,
+  "scope": "canonical real scalar fields on flat background; target R^n; constant real symmetric Q; specified weighted stress tensor and scalar W",
+  "full_multigraviton_no_go_claimed": false,
+  "gravity_generated": false,
+  "target_dimension_or_matter_content_selected": false,
+  "symbolic_family_commutator_equations": {
+    "0,0": {
+      "B*m1_squared": "-1",
+      "B*m2_squared": "1"
+    },
+    "2,0": {
+      "B*a": "-12",
+      "B*c": "2"
+    },
+    "0,2": {
+      "B*b": "12",
+      "B*c": "-2"
+    },
+    "1,1": {
+      "A*c": "4",
+      "D*c": "-4"
+    }
+  },
+  "exact_polynomial_families": [
+    {
+      "name": "separated_quartic",
+      "parameters": {
+        "m1_squared": "1",
+        "m2_squared": "2",
+        "a": "1",
+        "b": "2",
+        "c": "0"
+      },
+      "potential": {
+        "0,2": "1",
+        "0,4": "2",
+        "2,0": "1/2",
+        "4,0": "1"
+      },
+      "exact_constraint_matrix": [
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "24",
+          "0"
+        ],
+        [
+          "0",
+          "-12",
+          "0"
+        ]
+      ],
+      "coefficient_labels": [
+        {
+          "matrix_entry": [
+            0,
+            1
+          ],
+          "field_power": [
+            0,
+            0
+          ]
+        },
+        {
+          "matrix_entry": [
+            0,
+            1
+          ],
+          "field_power": [
+            0,
+            2
+          ]
+        },
+        {
+          "matrix_entry": [
+            0,
+            1
+          ],
+          "field_power": [
+            2,
+            0
+          ]
+        }
+      ],
+      "constraint_rank": 1,
+      "symmetric_commutant_dimension": 2,
+      "symmetric_commutant_basis": [
+        [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ]
+      ],
+      "corresponding_W": [
+        {
+          "2,0": "1/2",
+          "4,0": "1"
+        },
+        {
+          "0,2": "1",
+          "0,4": "2"
+        }
+      ],
+      "rotated_commutant_dimension": 2,
+      "all_polynomial_coefficients_checked_exactly": true
+    },
+    {
+      "name": "genuine_mixed_quartic",
+      "parameters": {
+        "m1_squared": "1",
+        "m2_squared": "2",
+        "a": "1",
+        "b": "2",
+        "c": "1"
+      },
+      "potential": {
+        "0,2": "1",
+        "0,4": "2",
+        "2,0": "1/2",
+        "2,2": "1",
+        "4,0": "1"
+      },
+      "exact_constraint_matrix": [
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "22",
+          "0"
+        ],
+        [
+          "4",
+          "0",
+          "-4"
+        ],
+        [
+          "0",
+          "-10",
+          "0"
+        ]
+      ],
+      "coefficient_labels": [
+        {
+          "matrix_entry": [
+            0,
+            1
+          ],
+          "field_power": [
+            0,
+            0
+          ]
+        },
+        {
+          "matrix_entry": [
+            0,
+            1
+          ],
+          "field_power": [
+            0,
+            2
+          ]
+        },
+        {
+          "matrix_entry": [
+            0,
+            1
+          ],
+          "field_power": [
+            1,
+            1
+          ]
+        },
+        {
+          "matrix_entry": [
+            0,
+            1
+          ],
+          "field_power": [
+            2,
+            0
+          ]
+        }
+      ],
+      "constraint_rank": 2,
+      "symmetric_commutant_dimension": 1,
+      "symmetric_commutant_basis": [
+        [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ]
+      ],
+      "corresponding_W": [
+        {
+          "0,2": "1",
+          "0,4": "2",
+          "2,0": "1/2",
+          "2,2": "1",
+          "4,0": "1"
+        }
+      ],
+      "rotated_commutant_dimension": 1,
+      "all_polynomial_coefficients_checked_exactly": true
+    },
+    {
+      "name": "pure_cross_quartic",
+      "parameters": {
+        "m1_squared": "1",
+        "m2_squared": "2",
+        "a": "0",
+        "b": "0",
+        "c": "1"
+      },
+      "potential": {
+        "0,2": "1",
+        "2,0": "1/2",
+        "2,2": "1"
+      },
+      "exact_constraint_matrix": [
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "-2",
+          "0"
+        ],
+        [
+          "4",
+          "0",
+          "-4"
+        ],
+        [
+          "0",
+          "2",
+          "0"
+        ]
+      ],
+      "coefficient_labels": [
+        {
+          "matrix_entry": [
+            0,
+            1
+          ],
+          "field_power": [
+            0,
+            0
+          ]
+        },
+        {
+          "matrix_entry": [
+            0,
+            1
+          ],
+          "field_power": [
+            0,
+            2
+          ]
+        },
+        {
+          "matrix_entry": [
+            0,
+            1
+          ],
+          "field_power": [
+            1,
+            1
+          ]
+        },
+        {
+          "matrix_entry": [
+            0,
+            1
+          ],
+          "field_power": [
+            2,
+            0
+          ]
+        }
+      ],
+      "constraint_rank": 2,
+      "symmetric_commutant_dimension": 1,
+      "symmetric_commutant_basis": [
+        [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ]
+      ],
+      "corresponding_W": [
+        {
+          "0,2": "1",
+          "2,0": "1/2",
+          "2,2": "1"
+        }
+      ],
+      "rotated_commutant_dimension": 1,
+      "all_polynomial_coefficients_checked_exactly": true
+    },
+    {
+      "name": "rotated_decoupled_quartic",
+      "parameters": {
+        "m1_squared": "1",
+        "m2_squared": "1",
+        "a": "1/2",
+        "b": "1/2",
+        "c": "3"
+      },
+      "potential": {
+        "0,2": "1/2",
+        "0,4": "1/2",
+        "2,0": "1/2",
+        "2,2": "3",
+        "4,0": "1/2"
+      },
+      "exact_constraint_matrix": [
+        [
+          "12",
+          "0",
+          "-12"
+        ]
+      ],
+      "coefficient_labels": [
+        {
+          "matrix_entry": [
+            0,
+            1
+          ],
+          "field_power": [
+            1,
+            1
+          ]
+        }
+      ],
+      "constraint_rank": 1,
+      "symmetric_commutant_dimension": 2,
+      "symmetric_commutant_basis": [
+        [
+          [
+            "0",
+            "1"
+          ],
+          [
+            "1",
+            "0"
+          ]
+        ],
+        [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ]
+      ],
+      "corresponding_W": [
+        {
+          "1,1": "1",
+          "1,3": "2",
+          "3,1": "2"
+        },
+        {
+          "0,2": "1/2",
+          "0,4": "1/2",
+          "2,0": "1/2",
+          "2,2": "3",
+          "4,0": "1/2"
+        }
+      ],
+      "rotated_commutant_dimension": 2,
+      "all_polynomial_coefficients_checked_exactly": true
+    },
+    {
+      "name": "rotated_quartic_mass_split",
+      "parameters": {
+        "m1_squared": "1",
+        "m2_squared": "2",
+        "a": "1/2",
+        "b": "1/2",
+        "c": "3"
+      },
+      "potential": {
+        "0,2": "1",
+        "0,4": "1/2",
+        "2,0": "1/2",
+        "2,2": "3",
+        "4,0": "1/2"
+      },
+      "exact_constraint_matrix": [
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "12",
+          "0",
+          "-12"
+        ]
+      ],
+      "coefficient_labels": [
+        {
+          "matrix_entry": [
+            0,
+            1
+          ],
+          "field_power": [
+            0,
+            0
+          ]
+        },
+        {
+          "matrix_entry": [
+            0,
+            1
+          ],
+          "field_power": [
+            1,
+            1
+          ]
+        }
+      ],
+      "constraint_rank": 2,
+      "symmetric_commutant_dimension": 1,
+      "symmetric_commutant_basis": [
+        [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ]
+      ],
+      "corresponding_W": [
+        {
+          "0,2": "1",
+          "0,4": "1/2",
+          "2,0": "1/2",
+          "2,2": "3",
+          "4,0": "1/2"
+        }
+      ],
+      "rotated_commutant_dimension": 1,
+      "all_polynomial_coefficients_checked_exactly": true
+    },
+    {
+      "name": "equal_mass_free",
+      "parameters": {
+        "m1_squared": "2",
+        "m2_squared": "2",
+        "a": "0",
+        "b": "0",
+        "c": "0"
+      },
+      "potential": {
+        "0,2": "1",
+        "2,0": "1"
+      },
+      "exact_constraint_matrix": [],
+      "coefficient_labels": [],
+      "constraint_rank": 0,
+      "symmetric_commutant_dimension": 3,
+      "symmetric_commutant_basis": [
+        [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "1"
+          ],
+          [
+            "1",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ]
+      ],
+      "corresponding_W": [
+        {
+          "2,0": "1"
+        },
+        {
+          "1,1": "2"
+        },
+        {
+          "0,2": "1"
+        }
+      ],
+      "rotated_commutant_dimension": 3,
+      "all_polynomial_coefficients_checked_exactly": true
+    },
+    {
+      "name": "unequal_mass_free",
+      "parameters": {
+        "m1_squared": "1",
+        "m2_squared": "2",
+        "a": "0",
+        "b": "0",
+        "c": "0"
+      },
+      "potential": {
+        "0,2": "1",
+        "2,0": "1/2"
+      },
+      "exact_constraint_matrix": [
+        [
+          "0",
+          "1",
+          "0"
+        ]
+      ],
+      "coefficient_labels": [
+        {
+          "matrix_entry": [
+            0,
+            1
+          ],
+          "field_power": [
+            0,
+            0
+          ]
+        }
+      ],
+      "constraint_rank": 1,
+      "symmetric_commutant_dimension": 2,
+      "symmetric_commutant_basis": [
+        [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ]
+      ],
+      "corresponding_W": [
+        {
+          "2,0": "1/2"
+        },
+        {
+          "0,2": "1"
+        }
+      ],
+      "rotated_commutant_dimension": 2,
+      "all_polynomial_coefficients_checked_exactly": true
+    },
+    {
+      "name": "equal_mass_separated_quartic",
+      "parameters": {
+        "m1_squared": "1",
+        "m2_squared": "1",
+        "a": "1",
+        "b": "1",
+        "c": "0"
+      },
+      "potential": {
+        "0,2": "1/2",
+        "0,4": "1",
+        "2,0": "1/2",
+        "4,0": "1"
+      },
+      "exact_constraint_matrix": [
+        [
+          "0",
+          "12",
+          "0"
+        ],
+        [
+          "0",
+          "-12",
+          "0"
+        ]
+      ],
+      "coefficient_labels": [
+        {
+          "matrix_entry": [
+            0,
+            1
+          ],
+          "field_power": [
+            0,
+            2
+          ]
+        },
+        {
+          "matrix_entry": [
+            0,
+            1
+          ],
+          "field_power": [
+            2,
+            0
+          ]
+        }
+      ],
+      "constraint_rank": 1,
+      "symmetric_commutant_dimension": 2,
+      "symmetric_commutant_basis": [
+        [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ]
+      ],
+      "corresponding_W": [
+        {
+          "2,0": "1/2",
+          "4,0": "1"
+        },
+        {
+          "0,2": "1/2",
+          "0,4": "1"
+        }
+      ],
+      "rotated_commutant_dimension": 2,
+      "all_polynomial_coefficients_checked_exactly": true
+    },
+    {
+      "name": "O2_invariant_radial_quartic",
+      "parameters": {
+        "m1_squared": "1",
+        "m2_squared": "1",
+        "a": "1",
+        "b": "1",
+        "c": "2"
+      },
+      "potential": {
+        "0,2": "1/2",
+        "0,4": "1",
+        "2,0": "1/2",
+        "2,2": "2",
+        "4,0": "1"
+      },
+      "exact_constraint_matrix": [
+        [
+          "0",
+          "8",
+          "0"
+        ],
+        [
+          "8",
+          "0",
+          "-8"
+        ],
+        [
+          "0",
+          "-8",
+          "0"
+        ]
+      ],
+      "coefficient_labels": [
+        {
+          "matrix_entry": [
+            0,
+            1
+          ],
+          "field_power": [
+            0,
+            2
+          ]
+        },
+        {
+          "matrix_entry": [
+            0,
+            1
+          ],
+          "field_power": [
+            1,
+            1
+          ]
+        },
+        {
+          "matrix_entry": [
+            0,
+            1
+          ],
+          "field_power": [
+            2,
+            0
+          ]
+        }
+      ],
+      "constraint_rank": 2,
+      "symmetric_commutant_dimension": 1,
+      "symmetric_commutant_basis": [
+        [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ]
+      ],
+      "corresponding_W": [
+        {
+          "0,2": "1/2",
+          "0,4": "1",
+          "2,0": "1/2",
+          "2,2": "2",
+          "4,0": "1"
+        }
+      ],
+      "rotated_commutant_dimension": 1,
+      "all_polynomial_coefficients_checked_exactly": true
+    }
+  ],
+  "rational_rotation": [
+    [
+      "3/5",
+      "-4/5"
+    ],
+    [
+      "4/5",
+      "3/5"
+    ]
+  ],
+  "rotation_preserves_all_exact_commutant_dimensions": true,
+  "on_shell_jet_calibration": {
+    "samples": 30,
+    "maximum_divergence": 1.1102230246251565e-16,
+    "maximum_direct_formula_difference": 1.1102230246251565e-16
+  },
+  "mixed_vertex_counterexample": {
+    "potential": {
+      "0,2": "1/2",
+      "0,4": "1/2",
+      "2,0": "1/2",
+      "2,2": "3",
+      "4,0": "1/2"
+    },
+    "Q_plus": [
+      [
+        "1/2",
+        "1/2"
+      ],
+      [
+        "1/2",
+        "1/2"
+      ]
+    ],
+    "Q_minus": [
+      [
+        "1/2",
+        "-1/2"
+      ],
+      [
+        "-1/2",
+        "1/2"
+      ]
+    ],
+    "W_plus": {
+      "0,2": "1/4",
+      "0,4": "1/4",
+      "1,1": "1/2",
+      "1,3": "1",
+      "2,0": "1/4",
+      "2,2": "3/2",
+      "3,1": "1",
+      "4,0": "1/4"
+    },
+    "W_minus": {
+      "0,2": "1/4",
+      "0,4": "1/4",
+      "1,1": "-1/2",
+      "1,3": "-1",
+      "2,0": "1/4",
+      "2,2": "3/2",
+      "3,1": "-1",
+      "4,0": "1/4"
+    },
+    "projector_identities_exact": true,
+    "source_span_rank": 2,
+    "two_sectors_decoupled_in_u_v": true,
+    "visible_x2_y2_coefficient": "3",
+    "different_metric_scalar_density_checks": 8,
+    "maximum_scalar_density_redefinition_residual": 1.3322676295501878e-15,
+    "both_gravity_actions_unchanged_by_scalar_coordinate_rotation": true,
+    "gravity_action_numerically_rederived": false,
+    "ordinary_vertex_graph_is_basis_dependent": true
+  },
+  "impossible_weighted_source": {
+    "potential": {
+      "2,2": "1"
+    },
+    "Q": [
+      [
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ]
+    ],
+    "exact_curl": {
+      "1,1": "-4"
+    },
+    "endpoint": [
+      "1",
+      "2"
+    ],
+    "path_x_then_y": "0",
+    "path_y_then_x": "4",
+    "candidate_radial_W": {
+      "2,2": "1/2"
+    },
+    "gradient_defect_at_endpoint": [
+      "4",
+      "-2"
+    ],
+    "direct_on_shell_divergence": [
+      0.0,
+      4.0,
+      0.0,
+      0.0
+    ],
+    "predicted_on_shell_divergence": [
+      -0.0,
+      4.0,
+      0.0,
+      0.0
+    ]
+  },
+  "equal_mass_free_boundary": {
+    "symmetric_commutant_dimension": 3,
+    "commutator_of_two_symmetric_solutions": [
+      [
+        "0",
+        "1"
+      ],
+      [
+        "-1",
+        "0"
+      ]
+    ],
+    "unique_sector_decomposition_claimed": false
+  },
+  "retained_freedom": [
+    "additive constant in each W",
+    "coefficient of scalar total stress",
+    "number of independent spin2 fields not selected by linear source analysis",
+    "nonlinear gravitational consistency beyond the stated counterexample",
+    "other stress improvements, derivative interactions, quantum effects and matter representations"
+  ],
+  "analytic_obligations": "on-shell divergence and Poincare lemma give gradient/commutant equivalence; spectral projectors give global orthogonal separation on R^n; polynomial coefficient systems are exact certificates for stated families",
+  "historical_source_sha256": {
+    "archive_301_341/research_note_326.md": "ba09bad9d3aaaee8aa686ba1494b3f5fb09a2d4bbf13216ea87c95faeac33b47",
+    "archive_342_369/research_note_358.md": "e37029d318b84e7b54e7a6a0f3bbc74170f0122c96d91f8784de9828826f1595",
+    "archive_1009_/research_note_1016.md": "ffaddfaf5c62283de99836ccb10ee6e4f235fdef64e9a83d5db088c3ec507969",
+    "archive_1009_/1016/NEXT.md": "597211ea6bdc38ef4cf57e18d3b7dbb9dafb922e32a8eba33800519a150591cd",
+    "archive_1009_/1009/input_dependency_ledger_v0_1.md": "93a0f9afdf5ad1844c3e531575628db82e2d2be5355d7ba2c3051e2cac546eba"
+  }
+}

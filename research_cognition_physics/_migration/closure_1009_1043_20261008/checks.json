@@ -1,0 +1,75 @@
+{
+  "schema": "closed_stage_migration_checks_v1",
+  "date": "2026-10-08",
+  "all_checks_passed": true,
+  "counts": {
+    "files": 378,
+    "byte_identical": 376,
+    "reversible_markdown": 2,
+    "python": 79,
+    "json": 86
+  },
+  "local_markdown_links_checked": 1765,
+  "missing_local_links": [],
+  "manifest_sha256": "4ae881b2c8c03f4259c5e625f6878a123689e5d87f745a27c066335c566dc22a",
+  "frozen_1043_receipt_sha256": "4b994816d0a733798cc2ed6868daa358d179a93136c2e610b4264e2013506807",
+  "unchanged_runtime_sha256": {
+    "scripts/research_layout.py": "21553bbfa40269b9e5f35891c1c62fb351fba3ccccd725b9aaee2403d05779c4",
+    "scripts/run_research_current.py": "052007125574b3704e54d490001feabf82c79e2792e38eba3856dd9491b1e097",
+    "scripts/test_research_layout.py": "1dcf5b4616e3763d110d70740ec21e7e6f9e609c38add31195be545cdfb1abe2"
+  },
+  "maintenance_scripts_sha256": {
+    "scripts/close_research_1009_1043.py": "077a6b9db1ab6203b7c8501eca320c2cd08bb1bb61603075221d879ed33c943b",
+    "scripts/run_research_closed.py": "1258b9c065b3ff4601dc0f16c82bcc91a8e508038c0a0c021df0f6d0aeb79ae6"
+  },
+  "default_1009_failure_preserved": true,
+  "original_33_successes_not_reclassified": true,
+  "new_scientific_groups": 0,
+  "cumulative_unchanged": 3819,
+  "old_directory_absent": true,
+  "zip_created": false,
+  "duplicate_directory_created": false,
+  "runs": [
+    {
+      "command": [
+        "C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "D:\\workspace\\AGI的哲学思考\\scripts\\run_research_closed.py",
+        "--verify-closure"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"files\": 378, \"reversible_markdown_files\": 2, \"scientific_python_json_bytes_unchanged\": true, \"frozen_runtime_files_unchanged\": true, \"zip_used\": false, \"old_directory_retained\": false}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "D:\\workspace\\AGI的哲学思考\\scripts\\run_research_closed.py",
+        "--script",
+        "archive_1009_1043/1043/verify_round1043.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"passed\": true, \"round\": 1043, \"cumulative\": 3819, \"original_default_passes\": 33, \"legacy_scope_reverified\": 1, \"dependency_rows\": 34, \"frozen_artifacts\": 16, \"document_links\": 91, \"navigation_links\": 3838, \"full_physics_generated\": false}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "D:\\workspace\\AGI的哲学思考\\scripts\\run_research_closed.py",
+        "--script",
+        "archive_1009_1043/1043/legacy_1009_scope_check.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"round\": 1043,\n  \"kind\": \"legacy_publication_scope_diagnosis\",\n  \"new_scientific_calibration_groups\": 0,\n  \"original_1009_default_verifier_passed\": false,\n  \"original_failure_preserved\": true,\n  \"run_false_full_scientific_and_source_checks_passed\": true,\n  \"only_allowed_publication_scope_fields_differ\": true,\n  \"all_seven_frozen_original_assets_unchanged\": true,\n  \"missing_original_sources\": [],\n  \"permitted_mutable_original_sources\": [\n    \"research_cognition_physics/archive_1009_/README.md\",\n    \"research_cognition_physics/archive_1009_/文件索引.md\"\n  ],\n  \"actually_changed_original_sources\": [\n    \"research_cognition_physics/archive_1009_/README.md\",\n    \"research_cognition_physics/archive_1009_/文件索引.md\"\n  ],\n  \"differing_top_level_keys_at_this_run\": [\n    \"new_stage_local_links_checked\",\n    \"source_sha256\"\n  ],\n  \"link_counts_at_this_run\": {\n    \"publication\": 69,\n    \"current\": 1759\n  },\n  \"source_counts_at_this_run\": {\n    \"publication\": 9,\n    \"current\": 377,\n    \"added\": 368\n  },\n  \"dynamic_counts_and_navigation_hashes_are_not_scientific_invariants\": true,\n  \"writes_to_original_assets\": false,\n  \"semantic_goal_completion_certified\": false\n}\n",
+      "stderr": ""
+    }
+  ]
+}

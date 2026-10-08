@@ -1,0 +1,264 @@
+{
+  "date": "2026-10-08",
+  "scope": "Representative read-only replays after the physical 764–1008 phase split; no scientific evidence modified.",
+  "unit_tests": {
+    "command": "& 'C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe' -B -X utf8 -m unittest discover -s scripts -p test_research_layout.py -v",
+    "exit_code": 0,
+    "tests_run": 14
+  },
+  "jobs": [
+    {
+      "round": 776,
+      "kind": "verifier",
+      "command": "& 'C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe' -B -X utf8 scripts/run_research_current.py --script archive_764_796/776/verify_round776.py --report .research_runtime/phase_split_764_1008_verify_776_20261008.json",
+      "exit_code": 0,
+      "receipt": ".research_runtime/phase_split_764_1008_verify_776_20261008.json",
+      "failure": null,
+      "scope": "original read-only verifier including its own navigation requirements",
+      "receipt_sha256": "e0a701cff073a38d585780ff0294162d5f96421a9fdd819e939825f7d8bc5712",
+      "receipt_summary": {
+        "source": "current_stage_directories",
+        "zip_reads_forbidden": true,
+        "restored_old_directory": false,
+        "research_files_read_only": true,
+        "relocation_manifest_available": true,
+        "historical_views": "per-module legacy archive_231_ or pre-split archive_764_",
+        "seconds": 6.078,
+        "all_checks_passed": true,
+        "physical_files_read_count": 24,
+        "historical_markdown_link_views_count": 8
+      }
+    },
+    {
+      "round": 875,
+      "kind": "verifier",
+      "command": "& 'C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe' -B -X utf8 scripts/run_research_current.py --script archive_873_893/875/verify_round875.py --report .research_runtime/phase_split_764_1008_verify_875_20261008.json",
+      "exit_code": 0,
+      "receipt": ".research_runtime/phase_split_764_1008_verify_875_20261008.json",
+      "failure": null,
+      "scope": "original read-only verifier including its own navigation requirements",
+      "receipt_sha256": "3b360b4bb4a13f23dbae069ca24833074f3df489c1bbcb6eb3386ddf851f15e3",
+      "receipt_summary": {
+        "source": "current_stage_directories",
+        "zip_reads_forbidden": true,
+        "restored_old_directory": false,
+        "research_files_read_only": true,
+        "relocation_manifest_available": true,
+        "historical_views": "per-module legacy archive_231_ or pre-split archive_764_",
+        "seconds": 10.859,
+        "all_checks_passed": true,
+        "physical_files_read_count": 825,
+        "historical_markdown_link_views_count": 56
+      }
+    },
+    {
+      "round": 957,
+      "kind": "verifier",
+      "command": "& 'C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe' -B -X utf8 scripts/run_research_current.py --script archive_956_989/957/verify_round957.py --report .research_runtime/phase_split_764_1008_verify_957_20261008.json",
+      "exit_code": 1,
+      "receipt": null,
+      "failure": "Traceback (most recent call last):\r\n  File \"D:\\workspace\\AGI的哲学思考\\scripts\\run_research_current.py\", line 71, in <module>\r\n    main()\r\n  File \"D:\\workspace\\AGI的哲学思考\\scripts\\run_research_current.py\", line 39, in main\r\n    runtime.run_script(args.script, arguments)\r\n  File \"D:\\workspace\\AGI的哲学思考\\scripts\\research_layout.py\", line 494, in run_script\r\n    ResearchLoader(self, key).exec_module(module)\r\n  File \"D:\\workspace\\AGI的哲学思考\\scripts\\research_layout.py\", line 406, in exec_module\r\n    exec(compile(raw, str(actual), 'exec'), module.__dict__)\r\n  File \"D:\\workspace\\AGI的哲学思考\\research_cognition_physics\\archive_956_989\\957\\verify_round957.py\", line 102, in <module>\r\n    out=run(a.write)\r\n        ^^^^^^^^^^^^\r\n  File \"D:\\workspace\\AGI的哲学思考\\research_cognition_physics\\archive_956_989\\957\\verify_round957.py\", line 58, in run\r\n    mapping=nav[-1].read_text('utf-8-sig').split('## 六条共同协议：全局缺口对应与检验优先级（截至957）',1)[1].split('### 当前取舍',1)[0]\r\n            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^\r\nIndexError: list index out of range\r\n",
+      "scope": "original read-only verifier including its own navigation requirements"
+    },
+    {
+      "round": 1008,
+      "kind": "verifier",
+      "command": "& 'C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe' -B -X utf8 scripts/run_research_current.py --script archive_990_1008/1008/verify_round1008.py --report .research_runtime/phase_split_764_1008_verify_1008_20261008.json",
+      "exit_code": 0,
+      "receipt": ".research_runtime/phase_split_764_1008_verify_1008_20261008.json",
+      "failure": null,
+      "scope": "original read-only verifier including its own navigation requirements",
+      "receipt_sha256": "bc8c8afdfdf2943726b28c037ba604d4dfbe7d91da82fb7cbf8e14a17ecd3653",
+      "receipt_summary": {
+        "source": "current_stage_directories",
+        "zip_reads_forbidden": true,
+        "restored_old_directory": false,
+        "research_files_read_only": true,
+        "relocation_manifest_available": true,
+        "historical_views": "per-module legacy archive_231_ or pre-split archive_764_",
+        "seconds": 6.89,
+        "all_checks_passed": true,
+        "physical_files_read_count": 2065,
+        "historical_markdown_link_views_count": 170
+      }
+    },
+    {
+      "round": 776,
+      "kind": "core",
+      "command": "& 'C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe' -B -X utf8 scripts/run_research_current.py --script archive_764_796/776/joint_auxiliary_source_tower.py --report .research_runtime/phase_split_764_1008_core_776_20261008.json",
+      "exit_code": 0,
+      "receipt": ".research_runtime/phase_split_764_1008_core_776_20261008.json",
+      "failure": null,
+      "scope": "frozen core saved-result reproduction",
+      "receipt_sha256": "b4de4c9f41991c5b9a201a09677faf9dda83f39e1174b172582e67ec2b5b1ecc",
+      "receipt_summary": {
+        "source": "current_stage_directories",
+        "zip_reads_forbidden": true,
+        "restored_old_directory": false,
+        "research_files_read_only": true,
+        "relocation_manifest_available": true,
+        "historical_views": "per-module legacy archive_231_ or pre-split archive_764_",
+        "seconds": 0.187,
+        "all_checks_passed": true,
+        "physical_files_read_count": 4,
+        "historical_markdown_link_views_count": 0
+      }
+    },
+    {
+      "round": 875,
+      "kind": "core",
+      "command": "& 'C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe' -B -X utf8 scripts/run_research_current.py --script archive_873_893/875/local_graph_process_bridge.py --report .research_runtime/phase_split_764_1008_core_875_20261008.json",
+      "exit_code": 0,
+      "receipt": ".research_runtime/phase_split_764_1008_core_875_20261008.json",
+      "failure": null,
+      "scope": "frozen core saved-result reproduction",
+      "receipt_sha256": "6eaf034ff5494aa0eab88bfac69078f8004e8520ab5fd25101eacd660a9daebb",
+      "receipt_summary": {
+        "source": "current_stage_directories",
+        "zip_reads_forbidden": true,
+        "restored_old_directory": false,
+        "research_files_read_only": true,
+        "relocation_manifest_available": true,
+        "historical_views": "per-module legacy archive_231_ or pre-split archive_764_",
+        "seconds": 3.719,
+        "all_checks_passed": true,
+        "physical_files_read_count": 4,
+        "historical_markdown_link_views_count": 0
+      }
+    },
+    {
+      "round": 957,
+      "kind": "core",
+      "command": "& 'C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe' -B -X utf8 scripts/run_research_current.py --script archive_956_989/957/task_domain_budget.py --report .research_runtime/phase_split_764_1008_core_957_20261008.json",
+      "exit_code": 0,
+      "receipt": ".research_runtime/phase_split_764_1008_core_957_20261008.json",
+      "failure": null,
+      "scope": "frozen core saved-result reproduction",
+      "receipt_sha256": "77a02056faacf5d9a5cb203c10819470e7dccf87ea904e3e1d142f69ff6f6394",
+      "receipt_summary": {
+        "source": "current_stage_directories",
+        "zip_reads_forbidden": true,
+        "restored_old_directory": false,
+        "research_files_read_only": true,
+        "relocation_manifest_available": true,
+        "historical_views": "per-module legacy archive_231_ or pre-split archive_764_",
+        "seconds": 0.078,
+        "all_checks_passed": true,
+        "physical_files_read_count": 9,
+        "historical_markdown_link_views_count": 1
+      }
+    },
+    {
+      "round": 1008,
+      "kind": "core",
+      "command": "& 'C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe' -B -X utf8 scripts/run_research_current.py --script archive_990_1008/1008/overall_completion_audit.py --report .research_runtime/phase_split_764_1008_core_1008_20261008.json",
+      "exit_code": 0,
+      "receipt": ".research_runtime/phase_split_764_1008_core_1008_20261008.json",
+      "failure": null,
+      "scope": "frozen core saved-result reproduction",
+      "receipt_sha256": "f77df82ab422c5de348642a6f738291cba1fccdaa21c4e9fa70e76c23f602462",
+      "receipt_summary": {
+        "source": "current_stage_directories",
+        "zip_reads_forbidden": true,
+        "restored_old_directory": false,
+        "research_files_read_only": true,
+        "relocation_manifest_available": true,
+        "historical_views": "per-module legacy archive_231_ or pre-split archive_764_",
+        "seconds": 0.0,
+        "all_checks_passed": true,
+        "physical_files_read_count": 17,
+        "historical_markdown_link_views_count": 5
+      }
+    }
+  ],
+  "passed_core_replays": 4,
+  "passed_original_verifiers": 3,
+  "failed_original_verifiers": 1,
+  "all_selected_original_verifiers_passed": false,
+  "failure_classification": {
+    "round": 957,
+    "classification": "historical live-navigation header no longer present",
+    "reason": "verify_round957.py line 58 requires the exact ledger heading 截至957; the verified pre-split current ledger is at round 1008.",
+    "not_skipped": true,
+    "scientific_core_reproduced": true,
+    "scientific_or_manifest_data_rewritten_to_force_success": false
+  },
+  "science_and_old_receipts_unmodified": true,
+  "zip_reads_forbidden": true,
+  "old_archive_shell_restored": false,
+  "final_layout_verification": {
+    "command": "& 'C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe' -B -X utf8 scripts/run_research_current.py --verify-layout --report .research_runtime/phase_split_764_1008_layout_final_20261008.json",
+    "exit_code": 0,
+    "receipt": ".research_runtime/phase_split_764_1008_layout_final_20261008.json",
+    "historical_layout": {
+      "mapped_files": 9965,
+      "checked_files": 7146,
+      "unchanged_files": 5512,
+      "verified_link_only_changes": 1634,
+      "optional_local_files_skipped": 2819,
+      "zip_files_read": 0
+    },
+    "relocation_layout": {
+      "mapped_files": 2560,
+      "checked_files": 2560,
+      "byte_identical_files": 2311,
+      "rewritten_markdown_files": 249,
+      "recorded_text_edits": 11626,
+      "edit_kinds": {
+        "markdown_target": 10163,
+        "literal_path": 59,
+        "navigation_or_reference": 1404
+      },
+      "current_and_pre_split_hashes_verified": true,
+      "zip_files_read": 0
+    },
+    "receipt_sha256": "5d3ad0456c193283161d073a1a4019dfb6cc9654782995190710f82b3b3e5396",
+    "receipt_summary": {
+      "source": "current_stage_directories",
+      "zip_reads_forbidden": true,
+      "restored_old_directory": false,
+      "research_files_read_only": true,
+      "relocation_manifest_available": true,
+      "historical_views": "per-module legacy archive_231_ or pre-split archive_764_",
+      "seconds": 0.906,
+      "all_checks_passed": true,
+      "historical_layout": {
+        "mapped_files": 9965,
+        "checked_files": 7146,
+        "unchanged_files": 5512,
+        "verified_link_only_changes": 1634,
+        "optional_local_files_skipped": 2819,
+        "zip_files_read": 0
+      },
+      "relocation_layout": {
+        "mapped_files": 2560,
+        "checked_files": 2560,
+        "byte_identical_files": 2311,
+        "rewritten_markdown_files": 249,
+        "recorded_text_edits": 11626,
+        "edit_kinds": {
+          "markdown_target": 10163,
+          "literal_path": 59,
+          "navigation_or_reference": 1404
+        },
+        "current_and_pre_split_hashes_verified": true,
+        "zip_files_read": 0
+      },
+      "physical_files_read_count": 426,
+      "historical_markdown_link_views_count": 29
+    }
+  },
+  "initial_layout_receipt": ".research_runtime/phase_split_764_1008_layout_replay_20261008.json",
+  "receipt_paths_relative_to_project_root": true,
+  "final_manifest_recheck_only": true,
+  "recheck_scope": "The final manifest reverses three unnecessary changes to pre-existing broken historical references. Only complete two-layer hash verification was repeated; the seven successful representative replays were not rerun, and no scientific bytes or pre-split hashes were changed.",
+  "status": "verified_with_explicit_historical_navigation_limitation",
+  "local_receipts_optional": true,
+  "durable_receipt_scope": "Commands, exits, failures, receipt hashes and bounded receipt summaries are retained here. Local runtime receipts are optional execution logs, not required research inputs.",
+  "verified_runtime_sha256": {
+    "scripts/research_layout.py": "21553bbfa40269b9e5f35891c1c62fb351fba3ccccd725b9aaee2403d05779c4",
+    "scripts/test_research_layout.py": "1dcf5b4616e3763d110d70740ec21e7e6f9e609c38add31195be545cdfb1abe2",
+    "scripts/run_research_current.py": "052007125574b3704e54d490001feabf82c79e2792e38eba3856dd9491b1e097",
+    "research_cognition_physics/_migration/layout_764_1008_20261008/manifest.json": "87517a730b9f465ba37f16f5cb4de2103a64dd05491bc7096eaa6b0bb4119d46"
+  }
+}
