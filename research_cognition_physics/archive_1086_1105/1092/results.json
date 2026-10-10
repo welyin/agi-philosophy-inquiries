@@ -1,0 +1,123 @@
+{
+  "schema": "round1092_bounded_directed_types_v1",
+  "round": 1092,
+  "status": "PASS",
+  "seed": 109220261010,
+  "numpy_version": "2.3.5",
+  "types": 15,
+  "maximum_type_dimension": 3,
+  "groups": [
+    {
+      "name": "isometric_inclusions",
+      "passed": true,
+      "maximum_residual": 2.370726887964196e-15,
+      "pairs": 65
+    },
+    {
+      "name": "directed_coherence",
+      "passed": true,
+      "maximum_residual": 1.2301232285039785e-15,
+      "triples": 175
+    },
+    {
+      "name": "upper_choice_independence",
+      "passed": true,
+      "maximum_residual": 6.80390063354123e-16,
+      "comparisons": 22
+    },
+    {
+      "name": "common_carrier_intertwining",
+      "passed": true,
+      "maximum_residual": 1.1730630610775706e-15
+    },
+    {
+      "name": "effects_natural_and_descend",
+      "passed": true,
+      "maximum_residual": 1.215299775624532e-15
+    },
+    {
+      "name": "full_channel_with_unknown_reference",
+      "passed": true,
+      "maximum_residual": 9.599070570428685e-16,
+      "reference_dimension": 2
+    },
+    {
+      "name": "missing_naturality_diagnostic",
+      "passed": true,
+      "maximum_residual": 0.0,
+      "same_state_probabilities": [
+        1.0,
+        0.5
+      ],
+      "nature_of_check": "violates_naturality_not_theorem"
+    },
+    {
+      "name": "controlled_move_image_vs_complete_type",
+      "passed": true,
+      "maximum_residual": 0.0,
+      "input_dimension": 4,
+      "image_rank": 4,
+      "complete_output_dimension": 6,
+      "same_composition_full_type_without_spare_capacity": false
+    },
+    {
+      "name": "padding_is_not_global_translation",
+      "passed": true,
+      "maximum_residual": 0.0,
+      "valid_input_positions": [
+        0,
+        1
+      ],
+      "padded_input": 2,
+      "padded_output": 0,
+      "full_real_line_translation": false
+    },
+    {
+      "name": "explicit_workspace_and_private_unknown_member",
+      "passed": true,
+      "maximum_residual": 0.0,
+      "unknown_private_dimension": 2,
+      "reference_dimension": 3,
+      "added_prepared_workspace_dimension": 2,
+      "input_prepared_workspace_is_unknown": false,
+      "mathematical_recovery_not_physical_rollback": true,
+      "autonomous_motion_and_full_CO_join_certified": false
+    }
+  ],
+  "translation_catalogs": [
+    {
+      "valid_catalog_size": 1,
+      "union_with_translate_size": 2,
+      "extra_orthogonal_port_required": true
+    },
+    {
+      "valid_catalog_size": 2,
+      "union_with_translate_size": 3,
+      "extra_orthogonal_port_required": true
+    },
+    {
+      "valid_catalog_size": 4,
+      "union_with_translate_size": 5,
+      "extra_orthogonal_port_required": true
+    },
+    {
+      "valid_catalog_size": 8,
+      "union_with_translate_size": 9,
+      "extra_orthogonal_port_required": true
+    },
+    {
+      "valid_catalog_size": 16,
+      "union_with_translate_size": 17,
+      "extra_orthogonal_port_required": true
+    }
+  ],
+  "scope": {
+    "new_universal_axioms": 0,
+    "scientific_count_increment": 0,
+    "proof_of_entire_new_conjecture": false,
+    "Lorentz_derived": false,
+    "bounded_directed_family_lemma_analytic_proof_in_proof_md": true,
+    "numerics_do_not_prove_infinite_quantifier": true,
+    "round1088_compactness_reused": true
+  }
+}

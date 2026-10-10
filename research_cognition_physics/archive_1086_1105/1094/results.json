@@ -1,0 +1,350 @@
+{
+  "schema": "round1094_same_clock_source_law_v1",
+  "round": 1094,
+  "status": "PASS",
+  "numpy_version": "2.3.5",
+  "groups": [
+    {
+      "name": "actual_three_observer_pulse_intercepts",
+      "status": "PASS",
+      "scenarios": 18,
+      "actual_events": 216,
+      "max_formula_residual": 2.4424906541753444e-15,
+      "common_window_max": 16.39846743295019,
+      "right_partner_crossing_time": 40.0,
+      "example_clock_rate": 0.9839948356327152,
+      "example_end": 16.0,
+      "example_ratios": {
+        "A": 0.9959100033104782,
+        "C": 1.0041067934611798
+      },
+      "example_event_records": [
+        {
+          "source": "A",
+          "receiver": "B",
+          "mode_c": 1.0,
+          "emission_tick": 0,
+          "emission_time": 0.0,
+          "arrival_time": 13.333333333333334,
+          "arrival_tick": 13.119931141769536,
+          "emission_x": -10.0,
+          "arrival_x": 3.3333333333333335,
+          "velocity": 1.0,
+          "direction": 1
+        },
+        {
+          "source": "A",
+          "receiver": "B",
+          "mode_c": 1.0,
+          "emission_tick": 1,
+          "emission_time": 1.0,
+          "arrival_time": 14.666666666666666,
+          "arrival_tick": 14.43192425594649,
+          "emission_x": -10.0,
+          "arrival_x": 3.6666666666666665,
+          "velocity": 1.0,
+          "direction": 1
+        },
+        {
+          "source": "A",
+          "receiver": "B",
+          "mode_c": 1.0,
+          "emission_tick": 2,
+          "emission_time": 2.0,
+          "arrival_time": 16.0,
+          "arrival_tick": 15.743917370123443,
+          "emission_x": -10.0,
+          "arrival_x": 4.0,
+          "velocity": 1.0,
+          "direction": 1
+        },
+        {
+          "source": "B",
+          "receiver": "A",
+          "mode_c": 1.0,
+          "emission_tick": 0,
+          "emission_time": 0.0,
+          "arrival_time": 11.428571428571429,
+          "arrival_tick": 11.428571428571429,
+          "emission_x": 0.0,
+          "arrival_x": -10.0,
+          "velocity": -0.875,
+          "direction": -1
+        },
+        {
+          "source": "B",
+          "receiver": "A",
+          "mode_c": 1.0,
+          "emission_tick": 1,
+          "emission_time": 1.0162654963092295,
+          "arrival_time": 12.735198495254723,
+          "arrival_tick": 12.735198495254723,
+          "emission_x": 0.25406637407730737,
+          "arrival_x": -10.0,
+          "velocity": -0.875,
+          "direction": -1
+        },
+        {
+          "source": "B",
+          "receiver": "A",
+          "mode_c": 1.0,
+          "emission_tick": 2,
+          "emission_time": 2.032530992618459,
+          "arrival_time": 14.041825561938017,
+          "arrival_tick": 14.041825561938017,
+          "emission_x": 0.5081327481546147,
+          "arrival_x": -10.0,
+          "velocity": -0.875,
+          "direction": -1
+        },
+        {
+          "source": "C",
+          "receiver": "B",
+          "mode_c": 1.0,
+          "emission_tick": 0,
+          "emission_time": 0.0,
+          "arrival_time": 8.0,
+          "arrival_tick": 7.871958685061721,
+          "emission_x": 10.0,
+          "arrival_x": 2.0,
+          "velocity": -1.0,
+          "direction": -1
+        },
+        {
+          "source": "C",
+          "receiver": "B",
+          "mode_c": 1.0,
+          "emission_tick": 1,
+          "emission_time": 1.0,
+          "arrival_time": 8.8,
+          "arrival_tick": 8.659154553567895,
+          "emission_x": 10.0,
+          "arrival_x": 2.2,
+          "velocity": -1.0,
+          "direction": -1
+        },
+        {
+          "source": "C",
+          "receiver": "B",
+          "mode_c": 1.0,
+          "emission_tick": 2,
+          "emission_time": 2.0,
+          "arrival_time": 9.6,
+          "arrival_tick": 9.446350422074065,
+          "emission_x": 10.0,
+          "arrival_x": 2.4,
+          "velocity": -1.0,
+          "direction": -1
+        },
+        {
+          "source": "B",
+          "receiver": "C",
+          "mode_c": 1.0,
+          "emission_tick": 0,
+          "emission_time": 0.0,
+          "arrival_time": 8.88888888888889,
+          "arrival_tick": 8.88888888888889,
+          "emission_x": 0.0,
+          "arrival_x": 10.0,
+          "velocity": 1.125,
+          "direction": 1
+        },
+        {
+          "source": "B",
+          "receiver": "C",
+          "mode_c": 1.0,
+          "emission_tick": 1,
+          "emission_time": 1.0162654963092295,
+          "arrival_time": 9.679317608240511,
+          "arrival_tick": 9.679317608240511,
+          "emission_x": 0.25406637407730737,
+          "arrival_x": 10.0,
+          "velocity": 1.125,
+          "direction": 1
+        },
+        {
+          "source": "B",
+          "receiver": "C",
+          "mode_c": 1.0,
+          "emission_tick": 2,
+          "emission_time": 2.032530992618459,
+          "arrival_time": 10.469746327592135,
+          "arrival_tick": 10.469746327592135,
+          "emission_x": 0.5081327481546147,
+          "arrival_x": 10.0,
+          "velocity": 1.125,
+          "direction": 1
+        }
+      ]
+    },
+    {
+      "name": "exact_factor_and_rational_witness",
+      "status": "PASS",
+      "max_factor_residual": 5.021753412409735e-16,
+      "F_plus": "27/28",
+      "F_minus": "35/36",
+      "clock_free_ratio": "243/245"
+    },
+    {
+      "name": "multimode_shared_clock_branch_tests",
+      "status": "PASS",
+      "tests": [
+        {
+          "name": "background_common",
+          "modes": [
+            [
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              1.0
+            ]
+          ],
+          "certificate": {
+            "lower": -0.06453852113857118,
+            "upper": -0.06453852113657117,
+            "feasible": true
+          }
+        },
+        {
+          "name": "background_different",
+          "modes": [
+            [
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              2.0
+            ]
+          ],
+          "certificate": {
+            "lower": -0.015748356969139166,
+            "upper": -0.06453852113657117,
+            "feasible": false
+          }
+        },
+        {
+          "name": "source_carried_different",
+          "modes": [
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              2.0
+            ]
+          ],
+          "certificate": {
+            "lower": -1e-12,
+            "upper": 1e-12,
+            "feasible": true
+          }
+        },
+        {
+          "name": "mixed",
+          "modes": [
+            [
+              0.0,
+              1.0
+            ],
+            [
+              1.0,
+              2.0
+            ]
+          ],
+          "certificate": {
+            "lower": -1e-12,
+            "upper": -0.06453852113657117,
+            "feasible": false
+          }
+        },
+        {
+          "name": "intermediate",
+          "modes": [
+            [
+              0.5,
+              1.0
+            ]
+          ],
+          "certificate": {
+            "lower": -0.028170876967696334,
+            "upper": -0.036367644169874834,
+            "feasible": false
+          }
+        }
+      ],
+      "finite_checks_are_not_exhaustive_proof": true
+    },
+    {
+      "name": "removing_shared_clock_hides_conflict",
+      "status": "PASS",
+      "side_dependent_clocks": [
+        0.9819805060619657,
+        0.9860132971832694
+      ],
+      "mode_dependent_clocks": [
+        0.9682458365518543,
+        0.9921567416492215
+      ],
+      "largest_residual": 1.1102230246251565e-16
+    },
+    {
+      "name": "finite_error_interval_certificate",
+      "status": "PASS",
+      "min_uniform_log_tolerance": 0.004098383602089245,
+      "infeasible": {
+        "lower": -0.031859422208576654,
+        "upper": -0.03267909892899451,
+        "feasible": false
+      },
+      "feasible": {
+        "lower": -0.0326790989289945,
+        "upper": -0.03185942220857666,
+        "feasible": true
+      },
+      "synthetic_observed_log_ratios": [
+        -0.00399838360208925,
+        0.003898383602089247
+      ],
+      "declared_error": [
+        0.0001,
+        0.0002
+      ],
+      "contrast_lower": 0.007596767204178498,
+      "not_experimental_data": true,
+      "interval_theorem_reused_from_round963": true
+    },
+    {
+      "name": "ballistic_same_events_three_chart_consistency",
+      "status": "PASS",
+      "pulse_covariance_residual": 4.440892098500626e-16,
+      "chart_cocycle_residual": 0.0,
+      "one_signal_velocities_in_three_frames": [
+        1.4,
+        1.15,
+        1.7999999999999998
+      ],
+      "full_cognitive_joint_model_certified": false
+    },
+    {
+      "name": "calibration_and_reflection_controls",
+      "status": "PASS",
+      "constant_delay_interval_residual": 0.0,
+      "varying_delay_interval_change": 0.0030000000000001137,
+      "reflection_preserves_radial_q": true,
+      "actual_right_and_left_tasks_required": true
+    }
+  ],
+  "scope": {
+    "theorem_conditional_on_affine_emission_and_actual_reciprocity": true,
+    "all_six_protocols_implemented": false,
+    "whole_conjecture_decided": false,
+    "Lorentz_derived": false,
+    "new_adopted_axioms": 0,
+    "scientific_count_increment": 0,
+    "scientific_count_total": 3860
+  }
+}

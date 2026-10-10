@@ -1,0 +1,153 @@
+{
+  "round": 1100,
+  "status": "PASS",
+  "groups": {
+    "fixed_time_transport_certificate": {
+      "status": "PASS",
+      "cases": [
+        {
+          "time": "1",
+          "start": [
+            "0",
+            "0",
+            "0"
+          ],
+          "target": [
+            "1",
+            "0",
+            "0"
+          ],
+          "reference_factors": 4
+        },
+        {
+          "time": "2",
+          "start": [
+            "1",
+            "-1",
+            "0"
+          ],
+          "target": [
+            "-2",
+            "3",
+            "0"
+          ],
+          "reference_factors": 4
+        },
+        {
+          "time": "3/2",
+          "start": [
+            "-1",
+            "2",
+            "1"
+          ],
+          "target": [
+            "5",
+            "-4",
+            "1"
+          ],
+          "reference_factors": 4
+        }
+      ],
+      "stationary_task_not_required": true,
+      "general_transitivity": "1099 orbit lemma plus proof.md; not a sampling inference"
+    },
+    "positive_proper_latency_menu": {
+      "status": "PASS",
+      "c": "1",
+      "delta": "1",
+      "deadline": "5/4",
+      "reachable_radius_squared": "9/16",
+      "excluded_target": [
+        "1",
+        "0",
+        "0"
+      ],
+      "H_holds": false,
+      "FD_holds": true,
+      "scope": "Lorentz-invariant permission menu; no physical implementation or minimum-time axiom"
+    },
+    "resource_union_and_empty_window": {
+      "status": "PASS",
+      "cases": [
+        {
+          "budget": 1,
+          "outside_target": 2,
+          "sufficient_larger_budget": 2
+        },
+        {
+          "budget": 2,
+          "outside_target": 3,
+          "sufficient_larger_budget": 3
+        },
+        {
+          "budget": 4,
+          "outside_target": 5,
+          "sufficient_larger_budget": 5
+        },
+        {
+          "budget": 16,
+          "outside_target": 17,
+          "sufficient_larger_budget": 17
+        }
+      ],
+      "analytic_union": "t>=1, arbitrary x",
+      "per_budget_FD": true,
+      "union_FD": false,
+      "short_empty_window_modulus": "0",
+      "scope": "Quantifier diagnostic; not an internal-resource physical countermodel"
+    },
+    "missing_actual_motion": {
+      "status": "PASS",
+      "cases": [
+        {
+          "deadline": "1",
+          "max_radius": "2",
+          "boundary_average_speed": "2"
+        },
+        {
+          "deadline": "2",
+          "max_radius": "6",
+          "boundary_average_speed": "3"
+        },
+        {
+          "deadline": "10",
+          "max_radius": "110",
+          "boundary_average_speed": "11"
+        },
+        {
+          "deadline": "100",
+          "max_radius": "10100",
+          "boundary_average_speed": "101"
+        }
+      ],
+      "FD": true,
+      "finite_global_speed": false,
+      "actual_references": "spatial rotations only",
+      "source": "1093 permission menu, reused; O fails"
+    },
+    "finite_error_and_original_relation_witness": {
+      "status": "PASS",
+      "task_time": "1",
+      "deadline": "5/4",
+      "time_upper": "11/10",
+      "time_margin": "3/20",
+      "location_error": "1/10",
+      "excluded_radius": "1/5",
+      "total_complete_error": "1/20",
+      "error_limit": "1/10",
+      "target_relation_gap": "1/4",
+      "near_target_relation_gap": "9/38",
+      "assumed_all_outputs_relation_gap_bound": "1/10",
+      "relation_margin": "13/95",
+      "uniform_nonexpansive_complete_transport_assumed": true,
+      "exclusion_is_additional_contract": true,
+      "real_instrument_data": false
+    }
+  },
+  "theorem": "FD iff positive finite task speed, conditional on actual R/O and affine positive time",
+  "new_adopted_axioms": 0,
+  "scientific_count_increment": 0,
+  "FD_derived_from_cognition": false,
+  "unconditional_Lorentz_derived": false,
+  "previous_orbit_and_cone_proofs_reused": true
+}

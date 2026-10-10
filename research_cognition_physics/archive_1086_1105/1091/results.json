@@ -1,0 +1,403 @@
+{
+  "schema": "research_round1091_autonomous_contact_v1",
+  "round": 1091,
+  "status": "PASS",
+  "seed": 109120261010,
+  "numpy_version": "2.3.5",
+  "parameters": {
+    "epsilon": 0.001,
+    "omega": 0.2,
+    "n_values": [
+      256,
+      512,
+      1024
+    ]
+  },
+  "scope": {
+    "finite_calibration_not_universal_axiom_proof": true,
+    "autonomous_relative_contact_rule_is_model_input": true,
+    "exact_payload_sector_solved_analytically": true,
+    "clock_sector_time_ordered_and_numerically_approximated": true,
+    "slow_signal_alone_is_not_a_relativistic_counterexample": true,
+    "clock_array_exclusion_uses_fixed_actual_synchronization_and_units": true,
+    "all_Lorentz_reinterpretations_excluded": false,
+    "uniform_finite_error_exclusion_for_c_to_infinity": false,
+    "microphysics_of_the_universe_claimed": false
+  },
+  "arrival_contact_calibrations": [
+    {
+      "configuration": [
+        0.0,
+        2.0,
+        1.0,
+        0.0
+      ],
+      "relative_speed": 2.0,
+      "contact_center": 0.5,
+      "n_values": [
+        256,
+        512,
+        1024
+      ],
+      "record_probabilities": [
+        0.5499167081855023,
+        0.5499167082595389,
+        0.5499167082642602
+      ],
+      "ideal_record_probability": 0.5499167083234141,
+      "operator_refinement_differences": [
+        1.797633735735228e-05,
+        4.49408434406548e-06
+      ],
+      "finite_contact_window_bound": 0.0002,
+      "midpoint_Duhamel_bound_at_1024": 0.0046019423636569235,
+      "exact_payload_area": 1.0
+    },
+    {
+      "configuration": [
+        0.0,
+        2.0,
+        1.0,
+        1.0
+      ],
+      "relative_speed": 1.0,
+      "contact_center": 1.0,
+      "n_values": [
+        256,
+        512,
+        1024
+      ],
+      "record_probabilities": [
+        0.5993346648421122,
+        0.5993346649228157,
+        0.5993346649279017
+      ],
+      "ideal_record_probability": 0.5993346653975307,
+      "operator_refinement_differences": [
+        1.7976337373124905e-05,
+        4.494084348908466e-06
+      ],
+      "finite_contact_window_bound": 0.0004,
+      "midpoint_Duhamel_bound_at_1024": 0.0046019423636569235,
+      "exact_payload_area": 1.0
+    }
+  ],
+  "cocycle_checks": [
+    {
+      "cut": 0.49975,
+      "operator_residual": 8.426408124981542e-07,
+      "conservative_bound": 0.01380582709097077
+    },
+    {
+      "cut": 0.500125,
+      "operator_residual": 1.0533010164345764e-06,
+      "conservative_bound": 0.01380582709097077
+    },
+    {
+      "cut": 0.9995,
+      "operator_residual": 8.426408174255086e-07,
+      "conservative_bound": 0.01380582709097077
+    },
+    {
+      "cut": 1.00025,
+      "operator_residual": 1.0533005278279208e-06,
+      "conservative_bound": 0.01380582709097077
+    }
+  ],
+  "co_boost_checks": [
+    {
+      "velocity_shift": 0.25,
+      "residual": 0.0,
+      "position_flow_residual": 0.0
+    },
+    {
+      "velocity_shift": 0.5,
+      "residual": 0.0,
+      "position_flow_residual": 0.0
+    },
+    {
+      "velocity_shift": -0.75,
+      "residual": 0.0,
+      "position_flow_residual": 0.0
+    }
+  ],
+  "clock_arrays": {
+    "u": 0.5,
+    "T": 2.0,
+    "L": 1.0,
+    "event_delta_t": 0.0,
+    "event_delta_x": 1.0,
+    "matching_configurations": [
+      [
+        -1.0,
+        0.5,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.5,
+        1.0,
+        0.0
+      ]
+    ],
+    "record_probabilities": [
+      0.6947091674737718,
+      0.6947091674737718
+    ],
+    "ideal_record_probability": 0.6947091711543253,
+    "finite_window_probability_bound": 0.0008,
+    "Duhamel_numerical_probability_bound": 0.0046019423636569235,
+    "calibration_interval": [
+      1.5,
+      2.5
+    ],
+    "probability_derivative_lower_bound": 0.08775825618903728,
+    "one_clock_time_error_bound": 0.06155480519144285,
+    "candidate_c_comparisons": [
+      {
+        "c": 1.0,
+        "gamma": 1.1547005383792517,
+        "standard_Lorentz_delta_t_prime": -0.5773502691896258,
+        "declared_array_delta_t_prime": 0.0,
+        "two_clock_conservative_time_error": 0.1231096103828857,
+        "finite_numerical_margin": 0.45424065880674014,
+        "positive_margin": true
+      },
+      {
+        "c": 2.0,
+        "gamma": 1.0327955589886444,
+        "standard_Lorentz_delta_t_prime": -0.12909944487358055,
+        "declared_array_delta_t_prime": 0.0,
+        "two_clock_conservative_time_error": 0.1231096103828857,
+        "finite_numerical_margin": 0.005989834490694845,
+        "positive_margin": true
+      },
+      {
+        "c": 10.0,
+        "gamma": 1.0012523486435176,
+        "standard_Lorentz_delta_t_prime": -0.005006261743217588,
+        "declared_array_delta_t_prime": 0.0,
+        "two_clock_conservative_time_error": 0.1231096103828857,
+        "finite_numerical_margin": -0.11810334863966812,
+        "positive_margin": false
+      }
+    ]
+  },
+  "resource_samples": [
+    {
+      "w": 2.0,
+      "emitter_velocity": 0.25,
+      "declared_preparation_cost": 5
+    },
+    {
+      "w": 3.0,
+      "emitter_velocity": 0.25,
+      "declared_preparation_cost": 9
+    },
+    {
+      "w": 8.0,
+      "emitter_velocity": 0.25,
+      "declared_preparation_cost": 62
+    }
+  ],
+  "check_groups": 28,
+  "checks": [
+    {
+      "name": "contact_generators_are_declared_gates",
+      "residual": 6.989578164420291e-16,
+      "allowed_bound": 3e-10,
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "pulse_payload_exponential_formula",
+      "residual": 3.554447978966673e-16,
+      "allowed_bound": 3e-10,
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "clock_unitarity_s_2",
+      "residual": 1.9806378759312793e-13,
+      "allowed_bound": 3e-10,
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "clock_midpoint_refinement_s_2",
+      "residual": 4.49408434406548e-06,
+      "allowed_bound": 6.291718075073298e-06,
+      "status": "PASS",
+      "detail": "Convergence calibration only; not an error proof."
+    },
+    {
+      "name": "clock_record_vs_ideal_with_independent_bounds_s_2",
+      "residual": 5.915390399735543e-11,
+      "allowed_bound": 0.004801942363656923,
+      "status": "PASS",
+      "detail": "Finite contact-window bound plus rigorous Duhamel midpoint bound; no ideal instantaneous gate is substituted for the autonomous pulse."
+    },
+    {
+      "name": "full_diameter_area_s_2",
+      "residual": 0.0,
+      "allowed_bound": 3e-10,
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "clock_unitarity_s_1",
+      "residual": 1.6432449744036217e-13,
+      "allowed_bound": 3e-10,
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "clock_midpoint_refinement_s_1",
+      "residual": 4.494084348908466e-06,
+      "allowed_bound": 6.2917180805937165e-06,
+      "status": "PASS",
+      "detail": "Convergence calibration only; not an error proof."
+    },
+    {
+      "name": "clock_record_vs_ideal_with_independent_bounds_s_1",
+      "residual": 4.696290023531446e-10,
+      "allowed_bound": 0.005001942363656924,
+      "status": "PASS",
+      "detail": "Finite contact-window bound plus rigorous Duhamel midpoint bound; no ideal instantaneous gate is substituted for the autonomous pulse."
+    },
+    {
+      "name": "full_diameter_area_s_1",
+      "residual": 0.0,
+      "allowed_bound": 3e-10,
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "direct_full_H_midpoint_factorization",
+      "residual": 2.7000505873316605e-14,
+      "allowed_bound": 3e-09,
+      "status": "PASS",
+      "detail": "Direct numerical pulse area is retained here. Exact area one is used only for the analytically solved payload sector."
+    },
+    {
+      "name": "midpoint_area_bias_is_not_hidden",
+      "residual": 1.9984014443252818e-15,
+      "allowed_bound": 2e-10,
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "unknown_payload_and_reference_reach_receiver",
+      "residual": 3.619327097692962e-14,
+      "allowed_bound": 3e-09,
+      "status": "PASS",
+      "detail": "The reduced coherent configuration may change when clock records are discarded; only the receiver payload/reference marginal is identified here."
+    },
+    {
+      "name": "Bell_reference_payload_swap",
+      "residual": 0.0,
+      "allowed_bound": 3e-10,
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "finite_directory_full_propagator_naturality",
+      "residual": 0.0,
+      "allowed_bound": 3e-10,
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "naturality_with_coherent_configuration_and_external_reference",
+      "residual": 0.0,
+      "allowed_bound": 3e-09,
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "autonomous_typed_cocycle_cut_0.49975",
+      "residual": 8.426408124981542e-07,
+      "allowed_bound": 0.01380582709097077,
+      "status": "PASS",
+      "detail": "Comparison of time-ordered numerical propagators; three independent midpoint errors bound the discrepancy. A cut lies inside a nonzero pulse."
+    },
+    {
+      "name": "autonomous_typed_cocycle_cut_0.500125",
+      "residual": 1.0533010164345764e-06,
+      "allowed_bound": 0.01380582709097077,
+      "status": "PASS",
+      "detail": "Comparison of time-ordered numerical propagators; three independent midpoint errors bound the discrepancy. A cut lies inside a nonzero pulse."
+    },
+    {
+      "name": "autonomous_typed_cocycle_cut_0.9995",
+      "residual": 8.426408174255086e-07,
+      "allowed_bound": 0.01380582709097077,
+      "status": "PASS",
+      "detail": "Comparison of time-ordered numerical propagators; three independent midpoint errors bound the discrepancy. A cut lies inside a nonzero pulse."
+    },
+    {
+      "name": "autonomous_typed_cocycle_cut_1.00025",
+      "residual": 1.0533005278279208e-06,
+      "allowed_bound": 0.01380582709097077,
+      "status": "PASS",
+      "detail": "Comparison of time-ordered numerical propagators; three independent midpoint errors bound the discrepancy. A cut lies inside a nonzero pulse."
+    },
+    {
+      "name": "co_boost_full_typed_intertwining_0.25",
+      "residual": 0.0,
+      "allowed_bound": 3e-09,
+      "status": "PASS",
+      "detail": "This checks the declared Galilean time/synchronization contract, not a claim that every physical clock must follow it."
+    },
+    {
+      "name": "co_boost_full_typed_intertwining_0.5",
+      "residual": 0.0,
+      "allowed_bound": 3e-09,
+      "status": "PASS",
+      "detail": "This checks the declared Galilean time/synchronization contract, not a claim that every physical clock must follow it."
+    },
+    {
+      "name": "co_boost_full_typed_intertwining_-0.75",
+      "residual": 0.0,
+      "allowed_bound": 3e-09,
+      "status": "PASS",
+      "detail": "This checks the declared Galilean time/synchronization contract, not a claim that every physical clock must follow it."
+    },
+    {
+      "name": "matching_clock_arrays_identical_complete_contact_propagators",
+      "residual": 0.0,
+      "allowed_bound": 3e-10,
+      "status": "PASS",
+      "detail": "Both have the identical relative history -1+0.5t. Each of the four clocks has the same H and same internal initial state; matching roles alone interact."
+    },
+    {
+      "name": "matching_array_joint_record_distributions",
+      "residual": 0.0,
+      "allowed_bound": 3e-10,
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "array_record_matches_calibration_with_contact_and_numerical_margin",
+      "residual": 3.680553528617736e-09,
+      "allowed_bound": 0.005401942363656924,
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "finite_c_clock_array_comparison_scope",
+      "residual": 0.0,
+      "allowed_bound": 3e-10,
+      "status": "PASS",
+      "detail": "For c=1,2 this deterministic integration/contact bound leaves a margin; c=10 does not. This is not a uniform finite-error exclusion as c tends to infinity, and no experimental sampling confidence is claimed."
+    },
+    {
+      "name": "finite_internal_preparation_budget_samples",
+      "residual": 0.0,
+      "allowed_bound": 3e-10,
+      "status": "PASS",
+      "detail": "Budget is a stipulated finite resource count, not an energy law; no infinite velocity or infinite task is implemented."
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "schema": "round1097_complete_task_cone_bridge_v1",
+  "round": 1097,
+  "status": "PASS",
+  "numpy_version": "2.3.5",
+  "groups": [
+    {
+      "name": "resource_union_versus_fixed_budget",
+      "status": "PASS",
+      "finite_menu": [
+        {
+          "n": 1,
+          "time": "1",
+          "cost_a": 1,
+          "cost_b": 1
+        },
+        {
+          "n": 2,
+          "time": "1/2",
+          "cost_a": 1,
+          "cost_b": 2
+        },
+        {
+          "n": 3,
+          "time": "1/3",
+          "cost_a": 1,
+          "cost_b": 3
+        },
+        {
+          "n": 4,
+          "time": "1/4",
+          "cost_a": 1,
+          "cost_b": 4
+        }
+      ],
+      "all_resource_event_menus_equal": true,
+      "budget_one_optimum_a": "1/4",
+      "budget_one_optimum_b": "1",
+      "analytic_extension_to_all_finite_n_requires_no_uniform_cost_bound": true
+    },
+    {
+      "name": "cone_envelope_is_not_the_event_set",
+      "status": "PASS",
+      "finite_samples": [
+        {
+          "n": 2,
+          "duration": 1,
+          "speed": "1/2"
+        },
+        {
+          "n": 3,
+          "duration": 1,
+          "speed": "2/3"
+        },
+        {
+          "n": 5,
+          "duration": 1,
+          "speed": "4/5"
+        },
+        {
+          "n": 10,
+          "duration": 1,
+          "speed": "9/10"
+        },
+        {
+          "n": 100,
+          "duration": 1,
+          "speed": "99/100"
+        }
+      ],
+      "baseline_one_minimum_duration": 2,
+      "actual_half_duration_task": false,
+      "finite_primitive_attains_speed_one": false,
+      "analytical_speed_supremum": 1,
+      "finite_scale_handoff_A": 1,
+      "inherited_1093_upper_bound": 1.0,
+      "discrete_task_menu_is_not_a_microtime_axiom": true
+    },
+    {
+      "name": "forward_simulation_not_bidirectional_symmetry",
+      "status": "PASS",
+      "matrix": [
+        [
+          2.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.5,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "forward_spatial_bound": 1.5,
+      "forward_time": 2.0,
+      "inverse_witness": [
+        0.5,
+        -1.25,
+        0.0,
+        0.0
+      ],
+      "inverse_quadratic_form": -1.3125,
+      "conformal_residual": 4.815340071064556
+    },
+    {
+      "name": "finite_galilean_witness_and_background",
+      "status": "PASS",
+      "source_event": [
+        1,
+        "-4/5"
+      ],
+      "target_event": [
+        1,
+        "-21/20"
+      ],
+      "source_resource_index": 5,
+      "boost": "1/4",
+      "declared_same_menu_bound": 1,
+      "same_menu_symmetry_fails": true,
+      "time_order_preserved": true,
+      "transformed_background_velocity_ball_center": "-1/4",
+      "transformed_background_radius": 1,
+      "background_covariance_not_excluded": true
+    },
+    {
+      "name": "conditional_conformal_class_and_free_units",
+      "status": "PASS",
+      "cases": 18,
+      "maximum_metric_error": 1.6433067836730938e-15,
+      "maximum_inverse_error": 3.8536479161924547e-16,
+      "minimum_null_future_lower_bound": 0.21004201260420152,
+      "scaled_lorentz_metric_factor": 3.9999999999999996,
+      "physical_scale_eliminated": false
+    },
+    {
+      "name": "transport_error_does_not_preserve_exact_error_class",
+      "status": "PASS",
+      "phase_flip_probability": 0.07,
+      "normalized_choi_half_trace_distance": 0.07,
+      "plus_input_error": 0.0700000000000005,
+      "exact_identity_menu_qualification_lost": true,
+      "no_claim_about_unrestricted_error_corrected_capacity": true
+    },
+    {
+      "name": "finite_nine_direction_algebra_certificate",
+      "status": "PASS",
+      "probes": 9,
+      "near_boundary_radius": 0.998,
+      "matrix_norm_bound": 1.6343427242993678,
+      "measured_quadratic_residual_upper": 0.011324682074837774,
+      "inferred_null_residual_upper": 0.027351138917659466,
+      "actual_null_residual": 0.00872565376434764,
+      "actual_conformal_residual": 0.007144504140540409,
+      "certified_residual_bound": 0.2461602502589352,
+      "positive_a": 1.4396092957722095,
+      "all_resource_task_coverage_certified": false,
+      "empirical_measurements": false
+    }
+  ],
+  "scope": {
+    "conditional_conformal_bridge": true,
+    "adopted_R": false,
+    "cognitive_source_of_finite_envelope_proved": false,
+    "full_influence_cone_certified": false,
+    "physical_clock_scale_fixed": false,
+    "all_matter_motion_transport_certified": false,
+    "entire_conjecture_decided": false,
+    "new_adopted_axioms": 0,
+    "scientific_count_increment": 0,
+    "scientific_count_total": 3860
+  }
+}

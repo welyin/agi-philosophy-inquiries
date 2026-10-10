@@ -1,0 +1,127 @@
+{
+  "schema": "round1096_running_protocol_transfer_v1",
+  "round": 1096,
+  "status": "PASS",
+  "numpy_version": "2.3.5",
+  "groups": [
+    {
+      "name": "inherited_full_input_protocol",
+      "status": "PASS",
+      "cases": 32,
+      "max_actual_isometry_error": 3.393679576423748e-16,
+      "max_normalization_error": 3.51965432795432e-16,
+      "original_code_sha256": "6d92a4ffae1e4b167741c8b81193bad09f44827a2db8e051ac2bee1acafd72e9"
+    },
+    {
+      "name": "matched_full_state_contact",
+      "status": "PASS",
+      "commutator_norm": 0.0,
+      "full_gate_error": 5.114717465839722e-15,
+      "internal_energy_operator_error": 3.6803042299850956e-15,
+      "reference_state_error": 1.2293094565861722e-15
+    },
+    {
+      "name": "same_running_protocol_and_reference",
+      "status": "PASS",
+      "retained_nonzero_output_rows": 8,
+      "swap_isometry_intertwiner_error": 0.0,
+      "complete_input_operator_error": 0.0,
+      "normalized_choi_vector_error": 0.0,
+      "single_full_register_dimension": 8126464,
+      "two_full_register_dimension": 66039417143296,
+      "full_hardware_duplicated": true,
+      "source_keeps_evolved_receiver_state": true
+    },
+    {
+      "name": "directory_and_actual_chart_transport",
+      "status": "PASS",
+      "directory_embedding_operator_error": 0.0,
+      "galilean_relative_position_error": 4.440892098500626e-16,
+      "integrated_contact_area": 0.9999999999999989
+    },
+    {
+      "name": "deletions_and_finite_mismatch",
+      "status": "PASS",
+      "unmatched_commutator_norm": 1.4142135623730951,
+      "unmatched_full_gate_error": 0.8155494028256358,
+      "mismatch_operator_error": 0.055714715154882785,
+      "Duhamel_bound": 0.05600000000000001,
+      "bound_compares_same_complete_initial_state_and_pulse": true
+    },
+    {
+      "name": "finite_window_and_complete_task_witness",
+      "status": "PASS",
+      "cases": [
+        {
+          "c": 0.01,
+          "finite_speed": 1.0,
+          "finite_distance": 1.0,
+          "contact_end": 1.1,
+          "readout_window": [
+            3.121592653589793,
+            3.161592653589793
+          ],
+          "maximum_lorentz_time_difference": -54.08433417972656
+        },
+        {
+          "c": 0.1,
+          "finite_speed": 1.2566370614359172,
+          "finite_distance": 1.2566370614359172,
+          "contact_end": 1.0795774715459476,
+          "readout_window": [
+            3.121592653589793,
+            3.161592653589793
+          ],
+          "maximum_lorentz_time_difference": -3.604504717700851
+        },
+        {
+          "c": 1.0,
+          "finite_speed": 12.566370614359172,
+          "finite_distance": 12.566370614359172,
+          "contact_end": 1.0079577471545949,
+          "readout_window": [
+            3.121592653589793,
+            3.161592653589793
+          ],
+          "maximum_lorentz_time_difference": -3.604504717700851
+        },
+        {
+          "c": 10.0,
+          "finite_speed": 125.66370614359172,
+          "finite_distance": 125.66370614359172,
+          "contact_end": 1.0007957747154594,
+          "readout_window": [
+            3.121592653589793,
+            3.161592653589793
+          ],
+          "maximum_lorentz_time_difference": -3.604504717700851
+        },
+        {
+          "c": 100.0,
+          "finite_speed": 1256.6370614359173,
+          "finite_distance": 1256.6370614359173,
+          "contact_end": 1.0000795774715459,
+          "readout_window": [
+            3.121592653589793,
+            3.161592653589793
+          ],
+          "maximum_lorentz_time_difference": -3.604504717700851
+        }
+      ],
+      "readout_record_error": 0.0029955543481807734,
+      "record_error_bound": 0.003,
+      "error_not_a_bound_for_full_clock_terminal_state": true,
+      "empirical_data": false
+    }
+  ],
+  "scope": {
+    "finite_task_joint_qualification": true,
+    "entire_conjecture_decided": false,
+    "shared_motion_observers_consensus": false,
+    "all_mechanical_sources_closed": false,
+    "six_protocol_recorded_events_are_original_internal_instrument_results": true,
+    "new_adopted_axioms": 0,
+    "scientific_count_increment": 0,
+    "scientific_count_total": 3860
+  }
+}

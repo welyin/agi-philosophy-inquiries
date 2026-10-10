@@ -1,0 +1,52 @@
+{
+  "schema": "research_round_1089_acceptance_v1",
+  "date": "2026-10-10",
+  "round": 1089,
+  "status": "PASS",
+  "scope": "Fixed-waiting-time independent exchange: complete source/reference channel convergence criterion, scoped resource guarantees and budget-indexed task transport. No spacetime realization or joint SR conclusion.",
+  "goal_status": "active",
+  "goal_foundation": "F+U+C+P and CO1-CO5 jointly",
+  "independent_review": "PASS_WITH_DECLARED_SCOPE",
+  "independent_review_source_status": "PASS",
+  "exact_FUCP_plus_CO_model_certified": false,
+  "joint_SR_goal_proved_or_disproved": false,
+  "science_increment": 0,
+  "cumulative_science": 3860,
+  "analytic_results": [
+    "For zero-prepared independent receivers and arbitrary joint source/reference inputs, half-diamond distance to no exchange tends to zero iff the sum of line transition probabilities tends to zero.",
+    "Bounded total coupling action with vanishing largest line action is sufficient, not necessary.",
+    "The sharp basis-code bound is not a bound on general quantum encodings.",
+    "Actual task transport with explicit budget distortion gives a budget-indexed operational capability inequality."
+  ],
+  "finite_checks": {
+    "full_hamiltonians": [
+      4,
+      16,
+      64
+    ],
+    "maximally_entangled_reference_probes": 3,
+    "exact_minimal_copy_certificate": 2302,
+    "budget_partition_samples": 264,
+    "independent_kraus_and_partial_trace_cases": 6
+  },
+  "not_certified": [
+    "Actual CO endpoint realization",
+    "Inertial qualification or actual clock for the waiting parameter",
+    "Lorentz-invariance of the resource norm",
+    "A universal physical propagation cone",
+    "Lorentz or joint non-Lorentz conclusion"
+  ],
+  "assets_sha256": {
+    "research_note_1089.md": "befdacfd4d6844e1547a73829b117fc3ba42a706d173f623b000b7df91ea1515",
+    "1089/proof.md": "4da92845a06f335b672e9b784319ab64240e5114836593ea54d5b21209bb8ae5",
+    "1089/check.py": "e24e4cdc5ad8d4f0515c9c830929e76226e4b5e2e3e5840bdd1e87d6790edecc",
+    "1089/results.json": "cfcdb7d81b3e286f6b0316a5090b714524fc17d243c0aabaff0bba0dceb479c3",
+    "1089/NEXT.md": "5f0f6769ffb539c7ec38ce88781153daf90f55823705f1099afcd02b2a331a57",
+    "1089/verify.py": "1b6d94d35539550eb9ba205a56e7af221f115b28cccafbfd39604443c877d1da",
+    "1089/independent_review.md": "cbba629025f8bc2117d6cc5022d7b7c388bb9ad700e92d5e930602d13e901894",
+    "1089/independent_review_checks.json": "88f34f78f5d0bfbd8bae2df88a189c32af8d07fc5bd0aee0f6bd048704a5cd0a"
+  },
+  "previous_goal_turn_classification": "progress: round1088 finite joint task and fixed-carrier scope theorem verified",
+  "current_goal_turn_classification": "progress: complete quantum channel convergence criterion and resource scope delivered and independently checked",
+  "next": "NEXT.md"
+}

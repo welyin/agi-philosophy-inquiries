@@ -1,0 +1,207 @@
+{
+  "schema": "round1095_finite_role_inheritance_v1",
+  "round": 1095,
+  "status": "PASS",
+  "numpy_version": "2.3.5",
+  "groups": [
+    {
+      "name": "all_recoil_branches_and_actual_members",
+      "status": "PASS",
+      "finite_preparations": 27,
+      "max_mass_momentum_energy_errors": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "example": {
+        "initial_mass": 16.0,
+        "initial_velocity": 0.0,
+        "core_count": 16,
+        "steps": [
+          {
+            "parent_mass": 16.0,
+            "parent_velocity": 0.0,
+            "kick": 0.75,
+            "daughter_velocity": 0.75,
+            "released_energy": 4.5,
+            "event_time": 0.5,
+            "event_x": 0.0
+          },
+          {
+            "parent_mass": 8.0,
+            "parent_velocity": 0.75,
+            "kick": 0.75,
+            "daughter_velocity": 1.5,
+            "released_energy": 2.25,
+            "event_time": 1.0,
+            "event_x": 0.375
+          },
+          {
+            "parent_mass": 4.0,
+            "parent_velocity": 1.5,
+            "kick": 0.75,
+            "daughter_velocity": 2.25,
+            "released_energy": 1.125,
+            "event_time": 1.5,
+            "event_x": 1.125
+          },
+          {
+            "parent_mass": 2.0,
+            "parent_velocity": 2.25,
+            "kick": 1.0,
+            "daughter_velocity": 3.25,
+            "released_energy": 1.0,
+            "event_time": 1.75,
+            "event_x": 1.6875
+          }
+        ],
+        "leaves": [
+          {
+            "mass": 8.0,
+            "velocity": -0.75,
+            "birth_time": 0.5,
+            "birth_x": 0.0
+          },
+          {
+            "mass": 4.0,
+            "velocity": 0.0,
+            "birth_time": 1.0,
+            "birth_x": 0.375
+          },
+          {
+            "mass": 2.0,
+            "velocity": 0.75,
+            "birth_time": 1.5,
+            "birth_x": 1.125
+          },
+          {
+            "mass": 1.0,
+            "velocity": 1.25,
+            "birth_time": 1.75,
+            "birth_x": 1.6875
+          },
+          {
+            "mass": 1.0,
+            "velocity": 3.25,
+            "birth_time": 1.75,
+            "birth_x": 1.6875
+          }
+        ],
+        "released": 8.875
+      },
+      "source_cores_exclude_receiver_and_control": true
+    },
+    {
+      "name": "split_isometry_full_input_and_conservation",
+      "status": "PASS",
+      "isometry_residual": 0.0,
+      "momentum_intertwiner_residual": 0.0,
+      "energy_intertwiner_residual": 0.0,
+      "payload_reference_residual": 2.220446049250313e-16,
+      "rear_payload_is_prepared_blank": true,
+      "full_physical_energy_model_certified": false
+    },
+    {
+      "name": "actual_preparation_and_emission_worldlines",
+      "status": "PASS",
+      "new_input_absolute_time": 1.5,
+      "new_input_absolute_x": 1.125,
+      "source_velocity": 2.25,
+      "emission_displacement_after_input": 0.5625,
+      "source_preparation_finished_before_new_input": true
+    },
+    {
+      "name": "finite_complete_delivery_certificate",
+      "status": "PASS",
+      "n": 3,
+      "w": "13/4",
+      "actual_time": "211/13",
+      "conservative_time": "17",
+      "complete_average_speed_lower": "52/17",
+      "threshold_using_h_one": "39",
+      "core_count": 16,
+      "split_release_energy": "71/8",
+      "all_preparation_costs_recorded_but_not_added_to_message_age": true
+    },
+    {
+      "name": "complete_encounter_channel_reused",
+      "status": "PASS",
+      "encounter_integral": 0.9999999999999999,
+      "full_gate_swap_residual": 6.007102474043191e-16,
+      "receiver_reference_choi_residual": 2.1745074706104732e-16,
+      "exact_task": true,
+      "receiver_mechanical_backreaction_generated": false
+    },
+    {
+      "name": "removing_uniform_role_and_delivery_permissions",
+      "status": "PASS",
+      "proportional_role_inheritance_speed_upper": 2.0,
+      "proportional_role_finite_speeds": [
+        1.5,
+        1.75,
+        1.875,
+        1.9375,
+        1.96875,
+        1.984375,
+        1.9921875,
+        1.99609375,
+        1.998046875,
+        1.9990234375,
+        1.99951171875,
+        1.999755859375,
+        1.9998779296875,
+        1.99993896484375,
+        1.999969482421875,
+        1.9999847412109375,
+        1.9999923706054688,
+        1.9999961853027344,
+        1.9999980926513672,
+        1.9999990463256836
+      ],
+      "distance_proportional_processing": [
+        {
+          "flight_speed": 4.0,
+          "input_after_processing": 4.333333333333332,
+          "completed_speed": 3.0
+        },
+        {
+          "flight_speed": 10.0,
+          "input_after_processing": 12.133333333333333,
+          "completed_speed": 3.0
+        },
+        {
+          "flight_speed": 100.0,
+          "input_after_processing": 16.813333333333333,
+          "completed_speed": 3.0
+        }
+      ],
+      "finite_domain_Dmax": 8.0,
+      "exact_threshold_for_N3": 9.0,
+      "completed_speed_at_Dmax": 2.971428571428571,
+      "N3_exact_delivery_violates_bound_in_this_domain": false,
+      "not_a_claim_about_other_preparations_or_larger_N": true
+    },
+    {
+      "name": "finite_calibration_margin_with_matching_task_scope",
+      "status": "PASS",
+      "minimum_distance": "519/10",
+      "maximum_total_time": "1701/100",
+      "certified_envelope_upper": "301/100",
+      "positive_distance_margin": "6999/10000",
+      "hypothetical_calibration_only": true,
+      "must_use_same_transfer_error_class_for_envelope_and_delivery": true,
+      "empirical_data": false
+    }
+  ],
+  "scope": {
+    "new_split_primitive_is_input": true,
+    "cognitive_derivation_of_split": false,
+    "full_six_protocol_model_certified": false,
+    "full_mechanical_conservation_of_reception": false,
+    "whole_conjecture_decided": false,
+    "Lorentz_derived": false,
+    "new_adopted_axioms": 0,
+    "scientific_count_increment": 0,
+    "scientific_count_total": 3860
+  }
+}

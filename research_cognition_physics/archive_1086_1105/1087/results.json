@@ -1,0 +1,129 @@
+{
+  "round": 1087,
+  "passed": true,
+  "new_independent_scientific_calibrations": 0,
+  "cumulative_scientific_calibrations": 3860,
+  "scope": "CO1-CO5 effective CQ model with original internal CP/control primitives",
+  "exact": {
+    "hamiltonian_derivative_checks": 32,
+    "I_domain": "I > 0",
+    "prepared_action": "1/8",
+    "m_c_omega": [
+      "1",
+      "1",
+      "1"
+    ],
+    "epsilon1_global_kinetic_coefficient_lower_bound": "3/8",
+    "tau_definition": "tau=t/T0, T0=2*pi/omega",
+    "ell_definition": "ell=r/(c*T0)",
+    "beta": "3/5",
+    "initial_normalized_distance": "2/5",
+    "histories": [
+      {
+        "epsilon": 0,
+        "phase_rate_factor": "1",
+        "prepared_energy": "61/200",
+        "A_emits_tau": [
+          "1",
+          "2"
+        ],
+        "B_emits_tau": [
+          "1",
+          "2"
+        ],
+        "A_receives_tau": [
+          "2",
+          "18/5"
+        ],
+        "B_receives_tau": [
+          "7/2",
+          "6"
+        ],
+        "B_local_receipt_readings": [
+          "7/2",
+          "6"
+        ],
+        "D_A_from_B": "8/5",
+        "D_B_from_A": "5/2",
+        "reciprocity_gap": "9/10",
+        "per_reading_example_error_bound": "1/10",
+        "certified_example_gap_margin": "7/10",
+        "conditional_rigid_arm_echo_parallel": "25/16",
+        "conditional_rigid_arm_echo_transverse": "5/4"
+      },
+      {
+        "epsilon": 1,
+        "phase_rate_factor": "34/25",
+        "prepared_energy": "61/200",
+        "A_emits_tau": [
+          "1",
+          "2"
+        ],
+        "B_emits_tau": [
+          "25/34",
+          "25/17"
+        ],
+        "A_receives_tau": [
+          "134/85",
+          "234/85"
+        ],
+        "B_receives_tau": [
+          "7/2",
+          "6"
+        ],
+        "B_local_receipt_readings": [
+          "119/25",
+          "204/25"
+        ],
+        "D_A_from_B": "20/17",
+        "D_B_from_A": "17/5",
+        "reciprocity_gap": "189/85",
+        "per_reading_example_error_bound": "1/10",
+        "certified_example_gap_margin": "172/85",
+        "conditional_rigid_arm_echo_parallel": "17/8",
+        "conditional_rigid_arm_echo_transverse": "17/10"
+      }
+    ],
+    "lorentz_necessary_comparison": {
+      "phase_rate_factor": "4/5",
+      "D_A_from_B": "2",
+      "D_B_from_A": "2"
+    }
+  },
+  "quantum": {
+    "spatial_control_cases": 12,
+    "reference_dimensions": [
+      2,
+      3,
+      5
+    ],
+    "unknown_input_state_cases": 36,
+    "complete_branch_state_cases": 72,
+    "linear_basis_branch_cases": 96,
+    "poststate_delivery_history_cases": 144,
+    "tolerance": 2e-12,
+    "max_residuals": {
+      "kraus_completeness": 1.3322705020733248e-15,
+      "unitary_dilation": 1.5543122344752192e-15,
+      "spatial_effect_transport": 2.0516726431624886e-16,
+      "spatial_branch_transport": 9.992007221626409e-16,
+      "dilation_branch_equality": 5.551168909359101e-17,
+      "reference_nonsignalling": 6.661353059043426e-16,
+      "trace_preservation": 8.881839849538507e-16,
+      "classical_record_marginal": 0.0,
+      "payload_transport": 0.0,
+      "relative_control_composition": 6.661338147750939e-16,
+      "relative_control_inverse": 8.881784197001252e-16,
+      "midpoint_record_inverse": 2.220446049250313e-16
+    },
+    "all_passed": true
+  },
+  "preserved_original_CO_contract": true,
+  "Lorentz_clock_signal_dictionary_follows_from_CO_alone": false,
+  "counterexample_satisfies_1086_double_echo_contract": false,
+  "generative_completeness_disproved": false,
+  "all_primitives_generated_by_one_autonomous_H": false,
+  "closed_detector_energy_and_recoil_certified": false,
+  "fundamental_Lorentz_theory_excluded": false,
+  "empirical_instrument_error_budget_certified": false
+}

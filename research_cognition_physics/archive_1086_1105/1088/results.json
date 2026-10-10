@@ -1,0 +1,200 @@
+{
+  "schema": "round1088_finite_common_clock_signal_v1",
+  "scope": "one finite quantized task; full finite quantum carrier exists; exact CO not certified",
+  "spatial_ring_per_axis": 16384,
+  "clock_modulus": 4250,
+  "last_tick": 1100,
+  "tick_in_tau_units": "1/170",
+  "spatial_step_unit": "1/850",
+  "branches": [
+    {
+      "epsilon": 0,
+      "emissions": [
+        {
+          "pulse": "A0",
+          "tick": 0,
+          "clock_cycles": "0"
+        },
+        {
+          "pulse": "B0",
+          "tick": 0,
+          "clock_cycles": "0"
+        },
+        {
+          "pulse": "A1",
+          "tick": 170,
+          "clock_cycles": "1"
+        },
+        {
+          "pulse": "B1",
+          "tick": 170,
+          "clock_cycles": "1"
+        },
+        {
+          "pulse": "A2",
+          "tick": 340,
+          "clock_cycles": "2"
+        },
+        {
+          "pulse": "B2",
+          "tick": 340,
+          "clock_cycles": "2"
+        }
+      ],
+      "arrivals": [
+        {
+          "pulse": "B0",
+          "receiver": "A",
+          "tick": 68,
+          "clock_units": 1700,
+          "clock_cycles": "2/5"
+        },
+        {
+          "pulse": "A0",
+          "receiver": "B",
+          "tick": 170,
+          "clock_units": 4250,
+          "clock_cycles": "1"
+        },
+        {
+          "pulse": "B1",
+          "receiver": "A",
+          "tick": 340,
+          "clock_units": 8500,
+          "clock_cycles": "2"
+        },
+        {
+          "pulse": "A1",
+          "receiver": "B",
+          "tick": 595,
+          "clock_units": 14875,
+          "clock_cycles": "7/2"
+        },
+        {
+          "pulse": "B2",
+          "receiver": "A",
+          "tick": 612,
+          "clock_units": 15300,
+          "clock_cycles": "18/5"
+        },
+        {
+          "pulse": "A2",
+          "receiver": "B",
+          "tick": 1020,
+          "clock_units": 25500,
+          "clock_cycles": "6"
+        }
+      ],
+      "received_intervals_cycles": {
+        "A": "8/5",
+        "B": "5/2"
+      },
+      "reciprocity_gap": "9/10",
+      "largest_coordinate": 3640,
+      "spatial_wraps": 0,
+      "pulse_deliveries": 6,
+      "copying_unknown_payload": false
+    },
+    {
+      "epsilon": 1,
+      "emissions": [
+        {
+          "pulse": "A0",
+          "tick": 0,
+          "clock_cycles": "0"
+        },
+        {
+          "pulse": "B0",
+          "tick": 0,
+          "clock_cycles": "0"
+        },
+        {
+          "pulse": "B1",
+          "tick": 125,
+          "clock_cycles": "1"
+        },
+        {
+          "pulse": "A1",
+          "tick": 170,
+          "clock_cycles": "1"
+        },
+        {
+          "pulse": "B2",
+          "tick": 250,
+          "clock_cycles": "2"
+        },
+        {
+          "pulse": "A2",
+          "tick": 340,
+          "clock_cycles": "2"
+        }
+      ],
+      "arrivals": [
+        {
+          "pulse": "B0",
+          "receiver": "A",
+          "tick": 68,
+          "clock_units": 1700,
+          "clock_cycles": "2/5"
+        },
+        {
+          "pulse": "A0",
+          "receiver": "B",
+          "tick": 170,
+          "clock_units": 5780,
+          "clock_cycles": "34/25"
+        },
+        {
+          "pulse": "B1",
+          "receiver": "A",
+          "tick": 268,
+          "clock_units": 6700,
+          "clock_cycles": "134/85"
+        },
+        {
+          "pulse": "B2",
+          "receiver": "A",
+          "tick": 468,
+          "clock_units": 11700,
+          "clock_cycles": "234/85"
+        },
+        {
+          "pulse": "A1",
+          "receiver": "B",
+          "tick": 595,
+          "clock_units": 20230,
+          "clock_cycles": "119/25"
+        },
+        {
+          "pulse": "A2",
+          "receiver": "B",
+          "tick": 1020,
+          "clock_units": 34680,
+          "clock_cycles": "204/25"
+        }
+      ],
+      "received_intervals_cycles": {
+        "A": "20/17",
+        "B": "17/5"
+      },
+      "reciprocity_gap": "189/85",
+      "largest_coordinate": 3640,
+      "spatial_wraps": 0,
+      "pulse_deliveries": 6,
+      "copying_unknown_payload": false
+    }
+  ],
+  "quantum_payload": {
+    "effects": 6,
+    "full_input_matrix_units_per_effect": 16,
+    "branches_per_input": 2,
+    "swap_unitary_exact": true,
+    "reference_included": true,
+    "max_residual": 4.440893528902104e-16,
+    "note": "General arbitrary-reference statement follows from tensor identity, not finite sampling."
+  },
+  "exact_FUCP_plus_CO_counterexample": false,
+  "continuous_between_tick_causal_speed_certified": false,
+  "full_large_unitary_numerically_allocated": false,
+  "scientific_calibration_increment": 0
+}

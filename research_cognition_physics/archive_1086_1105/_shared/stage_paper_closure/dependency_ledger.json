@@ -1,0 +1,113 @@
+{
+  "date": "2026-10-10",
+  "canonical_document": "research_cognition_physics/认知时空操作公理与洛伦兹运动学_阶段论文.md",
+  "method": "按原子、组合、宏观描述与物理连接分层；每阶段核依赖和冗余",
+  "adopted_inputs": [
+    {
+      "id": "SR-T",
+      "layer": "complete task and actual timing",
+      "paper_section": "3",
+      "extra_input": "新鲜未知Q+任意参考，全部必要输入后延迟；实际时间标定"
+    },
+    {
+      "id": "SR-A",
+      "layer": "global flat kinematical description",
+      "paper_section": "3",
+      "extra_input": "同一原CO端点的全域欧氏仿射实现与事件字典"
+    },
+    {
+      "id": "SR-R",
+      "layer": "actual reference and task composition",
+      "paper_section": "3",
+      "extra_input": "同菜单、逆和全部所用有限组合，逐任务有限资源"
+    },
+    {
+      "id": "SR-O",
+      "layer": "actual directional and motion comparison",
+      "paper_section": "3",
+      "extra_input": "完整SO(3)以及一份非静止比较"
+    },
+    {
+      "id": "SR-F",
+      "layer": "all allowed finite preparations",
+      "paper_section": "3",
+      "extra_input": "一个非空期限内仍有同一个共同不可达目标"
+    },
+    {
+      "id": "SR-S",
+      "layer": "optional calibration branch",
+      "paper_section": "7",
+      "extra_input": "预定义不变任务子类的正端点间隔下界",
+      "included_only_in": "SR_S"
+    }
+  ],
+  "proved_chain": [
+    {
+      "id": "positive_finite_task_speed",
+      "uses": [
+        "SR-T",
+        "SR-A",
+        "SR-R",
+        "SR-O",
+        "SR-F"
+      ],
+      "sources": [
+        1099,
+        1100
+      ],
+      "paper_section": "4"
+    },
+    {
+      "id": "task_cone_and_conformal_lorentz",
+      "uses": [
+        "positive_finite_task_speed",
+        "SR-R",
+        "SR-O"
+      ],
+      "sources": [
+        1097
+      ],
+      "paper_section": "5"
+    },
+    {
+      "id": "full_L_and_scale_kernel",
+      "uses": [
+        "task_cone_and_conformal_lorentz",
+        "SR-R",
+        "SR-O"
+      ],
+      "sources": [
+        1101
+      ],
+      "paper_section": "6"
+    },
+    {
+      "id": "no_extra_reference_scale",
+      "uses": [
+        "full_L_and_scale_kernel",
+        "SR-S"
+      ],
+      "sources": [
+        1101
+      ],
+      "paper_section": "7"
+    }
+  ],
+  "not_automatic": [
+    "complete new-old joint model",
+    "actual clock equals endpoint interval",
+    "all observable influences share task cone",
+    "all matter and interactions have common Lorentz dynamics",
+    "actual Poincare translation permissions",
+    "boundary light signal or Maxwell equations",
+    "physical numerical c",
+    "generation completeness G"
+  ],
+  "next_priority": [
+    "same-model actual clocks and inertial preparation",
+    "all influences and joint material interactions",
+    "finite-domain error and resource validation",
+    "phasewise compression before broader final convergence"
+  ],
+  "new_condition_required_for_full_L": false
+}

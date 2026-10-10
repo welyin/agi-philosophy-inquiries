@@ -1,0 +1,182 @@
+{
+  "schema": "research_round1091_independent_math_review_v1",
+  "date": "2026-10-10",
+  "round": 1091,
+  "reviewer": "/root/motion_source_review",
+  "status": "PASS_WITH_DECLARED_SCOPE",
+  "source_sha256": {
+    "../research_note_1091.md": "d8a10c889daaac294d50f0d94d1af0c34609d07dc079c259504b909be75361e4",
+    "proof.md": "59f463e20071802a6e5b5f4d604367174ef32abde837e9ac8e2d14113409477e",
+    "check.py": "55c1f37a36187731913b1d2ce40961938e2f02480d61d53ee75842f41cad3af8",
+    "results.json": "cd1f3d5dc60e4716c415849cd6684f3e12a7fcf018f51b734e85e4d7bd0930c7",
+    "finite_certificate.py": "9a5c341bf42614d9befe081b9299751c4ddc29e4f2f63837be43a65cd8446ae7",
+    "finite_certificate_results.json": "42463d1fad375b6c11b93545b2ca5453c25a17a18e711bbc9d28649eea99f746",
+    "NEXT.md": "82da67277ad22aadd6c6db6ecee395dc5c492d9acbdcf857e256a5c8654ff45b",
+    "completion_audit.md": "e4c47df1adc5fe213043547a79eece2f52f4ad69031e75872974b978e18b52dd"
+  },
+  "exact_joint_countermodel_certified_in_declared_type_family": true,
+  "scientific_negative_branch_can_be_signed": true,
+  "actual_goal_tool_completion_claimed": false,
+  "exact_Lorentz_derivation_claimed": false,
+  "all_Lorentz_reinterpretations_excluded": false,
+  "empirical_data": false,
+  "blocking_findings": [],
+  "author_recomputation": {
+    "main": {
+      "script": "check.py",
+      "mode": "read_only_recompute_match",
+      "status": "PASS",
+      "check_groups": 28,
+      "record_probabilities": [
+        0.5499167082642602,
+        0.5993346649279017
+      ]
+    },
+    "finite_certificate": {
+      "script": "finite_certificate.py",
+      "mode": "read_only_recompute_match",
+      "status": "PASS",
+      "candidate_c": 1,
+      "positive_margin_lower": 0.050013333673469385,
+      "total_record_samples": 560000,
+      "joint_sampling_failure_upper": 0.00729505572443613
+    }
+  },
+  "analytic_review": {
+    "inherited_FUCP_and_CO_same_family": "PASS: each complete finite matrix object and the same original endpoint task; compatible family not a single infinite F object",
+    "autonomous_waiting_and_cocycle": "PASS: fixed phase flow, internal matrix ODE, natural embeddings and complete isometries",
+    "full_Galilean_intertwining": "PASS: relative data are unchanged; holds for complete channels with coherent configurations and references",
+    "gate_area_and_payload_reference_transfer": "PASS: area one and commuting payload block produce exact SWAP",
+    "clock_contact_channel_bound": "PASS: half-diamond and record error at most 2*omega*delta",
+    "fixed_epsilon_finite_window_future_witness": "PASS: for every c>0 choose u=c/2,w=max(3c,10*epsilon/T),L=w*T; completed transfer has Lorentz time difference at most -0.4*gamma*T",
+    "linear_resynchronization": "PASS: positivity along all finite velocities forces b=0,a>0",
+    "finite_sampling_certificate": "PASS_WITH_CALIBRATION_AND_PREPARATION_CONDITIONS",
+    "weak_static_record_consensus_screen": "PASS as a finite eventual-delivery union protocol only; not a result about the stronger user conjecture"
+  },
+  "limitations": [
+    "M1/M2 and D1-D5 are declared model inputs; deeper generative completeness is not proved.",
+    "Cross-type motion is not a strongly continuous position Hamiltonian on one fixed finite object.",
+    "Continuity for original CO menu and the stated clock readouts does not establish continuity for all compatible sharp effects.",
+    "The c=2 margin in the main program is not a complete experimental confidence certificate.",
+    "The finite c=1 certificate assumes the declared calibration intervals, clock model, initial preparations, synchronization and independent repetitions.",
+    "No fixed finite-error dataset excludes all finite c as c tends to infinity.",
+    "The result does not exclude a deeper Lorentz reinterpretation retaining additional noncovariant or superluminal sectors.",
+    "Energy, recoil, binding, field theory and empirical applicability are not derived."
+  ],
+  "independent_checks": {
+    "status": "PASS",
+    "finite_sampling_certificate_independent_rational_bounds": {
+      "probability_error_rational_upper": "1165449/112000000",
+      "one_clock_time_error_rational_upper": "1165449/9800000",
+      "mismatch_rational_lower": "11465523/20000000",
+      "four_clock_error_rational_upper": "12819939/24500000",
+      "margin_rational_lower": "49013067/980000000",
+      "margin_numeric_lower": 0.050013333673469385,
+      "failure_probability_strict_upper": 0.0073126542143557155,
+      "record_repetitions": 560000,
+      "conditional_on_declared_calibration_intervals_and_model_preparations": true
+    },
+    "independent_method": "RK4 in dimensionless pulse coordinate, separate gate construction; refinement is calibration, not a rigorous ODE error proof",
+    "clock_checks": [
+      {
+        "v": 0,
+        "independent_probability": 0.5499167082644478,
+        "rk_refinement_norm": 2.3769889418994436e-14,
+        "unitarity_residual": 1.337681247079467e-14,
+        "author_operator_difference": 1.4980281165142566e-06,
+        "actual_vs_centre_probability_difference": 5.896627630619378e-11,
+        "analytic_contact_probability_bound": 0.0002,
+        "author_midpoint_operator_bound": 0.0046019423636569235
+      },
+      {
+        "v": 1,
+        "independent_probability": 0.5993346649281354,
+        "rk_refinement_norm": 2.7288135711099842e-14,
+        "unitarity_residual": 9.916232061312329e-15,
+        "author_operator_difference": 1.498028112928119e-06,
+        "actual_vs_centre_probability_difference": 4.69395300406461e-10,
+        "analytic_contact_probability_bound": 0.0004,
+        "author_midpoint_operator_bound": 0.0046019423636569235
+      }
+    ],
+    "three_dimensional_flow_and_relative_data_residual": 1.7763568394002505e-15,
+    "finite_width_future_direction_witnesses": [
+      {
+        "c": 1e-06,
+        "u": 5e-07,
+        "w": 0.01,
+        "T": 1,
+        "epsilon": 0.001,
+        "receive_complete_time": 1.1,
+        "Lorentz_complete_receive_time_difference": -5772.232521304041
+      },
+      {
+        "c": 0.001,
+        "u": 0.0005,
+        "w": 0.01,
+        "T": 1,
+        "epsilon": 0.001,
+        "receive_complete_time": 1.1,
+        "Lorentz_complete_receive_time_difference": -4.503332099679082
+      },
+      {
+        "c": 0.1,
+        "u": 0.05,
+        "w": 0.30000000000000004,
+        "T": 1,
+        "epsilon": 0.001,
+        "receive_complete_time": 1.0033333333333334,
+        "Lorentz_complete_receive_time_difference": -0.5735012673950283
+      },
+      {
+        "c": 1,
+        "u": 0.5,
+        "w": 3,
+        "T": 1,
+        "epsilon": 0.001,
+        "receive_complete_time": 1.0003333333333333,
+        "Lorentz_complete_receive_time_difference": -0.5769653690101662
+      },
+      {
+        "c": 2,
+        "u": 1,
+        "w": 6,
+        "T": 1,
+        "epsilon": 0.001,
+        "receive_complete_time": 1.0001666666666666,
+        "Lorentz_complete_receive_time_difference": -0.5771578190998959
+      },
+      {
+        "c": 10,
+        "u": 5,
+        "w": 30,
+        "T": 1,
+        "epsilon": 0.001,
+        "receive_complete_time": 1.0000333333333333,
+        "Lorentz_complete_receive_time_difference": -0.5773117791716799
+      },
+      {
+        "c": 100,
+        "u": 50,
+        "w": 300,
+        "T": 1,
+        "epsilon": 0.001,
+        "receive_complete_time": 1.0000033333333334,
+        "Lorentz_complete_receive_time_difference": -0.5773464201878312
+      }
+    ]
+  },
+  "independent_reproduction": {
+    "runtime": "C:/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+    "flags": [
+      "-B",
+      "-X",
+      "utf8"
+    ],
+    "numpy_version": "2.3.5",
+    "source": "python_code",
+    "note": "Run python_code through the stated runtime on the current workspace; it reads author check.py and prints JSON, without writing files. RK4 refinement is numerical calibration, not a rigorous ODE error proof.",
+    "python_code": "import importlib.util, json, math\nfrom fractions import Fraction as F\nfrom pathlib import Path\nimport numpy as np\np=Path(r\"D:\\workspace\\AGI的哲学思考\\research_cognition_physics\\archive_1086_\\1091\\check.py\")\nspec=importlib.util.spec_from_file_location(\"author1091\",p)\nm=importlib.util.module_from_spec(spec); spec.loader.exec_module(m)\nI=np.eye(2,dtype=complex); X=np.array([[0,1],[1,0]],complex)\nY=np.array([[0,-1j],[1j,0]],complex); Z=np.diag([1.,-1.])\nP=(I+Y)/2\ngate=np.kron(P,X)+np.kron(I-P,I)\nK=math.pi/2*(np.eye(4)-gate)\nHC=.1*np.kron(Z,I)\nket=np.kron(np.array([1.,1.])/math.sqrt(2),np.array([1.,0.]))\nD=np.kron(I,np.diag([0.,1.]))\ndef free(t):\n    phase=np.diag(np.exp(-1j*.1*t*np.array([1.,-1.])))\n    return np.kron(phase,I)\ndef rk4(delta,n):\n    h=2/n; U=np.eye(4,dtype=complex)\n    def f(q,V): return -1j*(delta*HC+.75*(1-q*q)*K)@V\n    for j in range(n):\n        q=-1+j*h\n        a=f(q,U); b=f(q+h/2,U+h*a/2)\n        c=f(q+h/2,U+h*b/2); d=f(q+h,U+h*c)\n        U=U+h*(a+2*b+2*c+d)/6\n    return U\nrows=[]\nfor v in (0.,1.):\n    s=2-v; tc=1/s; delta=.001/s; T=1.25\n    UU=[]\n    for n in (4096,8192):\n        UU.append(free(T-tc-delta)@rk4(delta,n)@free(tc-delta))\n    prob=float(np.vdot(UU[-1]@ket,D@(UU[-1]@ket)).real)\n    author=m.clock_gate((0.,2.,1.,v),T,1024)\n    ideal=(1+math.sin(.2*tc))/2\n    row={\"v\":v,\"independent_probability\":prob,\n         \"rk_refinement_norm\":float(np.linalg.norm(UU[1]-UU[0],2)),\n         \"unitarity_residual\":float(np.linalg.norm(UU[-1].conj().T@UU[-1]-np.eye(4),2)),\n         \"author_operator_difference\":float(np.linalg.norm(UU[-1]-author,2)),\n         \"actual_vs_centre_probability_difference\":abs(prob-ideal),\n         \"analytic_contact_probability_bound\":.4*delta,\n         \"author_midpoint_operator_bound\":3*math.pi/(2*1024)}\n    assert row[\"rk_refinement_norm\"]<1e-10\n    assert row[\"unitarity_residual\"]<1e-10\n    assert row[\"author_operator_difference\"]<row[\"author_midpoint_operator_bound\"]\n    assert row[\"actual_vs_centre_probability_difference\"]<row[\"analytic_contact_probability_bound\"]\n    rows.append(row)\nrng=np.random.default_rng(701091)\nres=0.\nfor j in range(12):\n    x=rng.normal(size=(4,3)); v=rng.normal(size=(4,3))\n    u=rng.normal(size=3); t=float(rng.uniform(.1,3))\n    left=x+v*t-u*t; right=x+(v-u)*t\n    res=max(res,float(np.max(np.abs(left-right))))\n    for a in range(4):\n        for b in range(a):\n            res=max(res,float(np.max(np.abs(((x[a]+v[a]*t)-(x[b]+v[b]*t))-((right[a])-(right[b]))))))\nassert res<1e-12\nfuture=[]\nfor c0 in (1e-6,.001,.1,1.,2.,10.,100.):\n    T=1.; eps=.001; u=c0/2; w=max(3*c0,10*eps/T)\n    gamma=1/math.sqrt(1-(u/c0)**2)\n    receive_time=T+eps/w; L=w*T\n    dtp=gamma*(receive_time-u*L/c0**2)\n    assert dtp<0\n    future.append({\"c\":c0,\"u\":u,\"w\":w,\"T\":T,\"epsilon\":eps,\n                   \"receive_complete_time\":receive_time,\n                   \"Lorentz_complete_receive_time_difference\":dtp})\nep_upper=F(802,1000000)+3*F(22,7)/2048+F(1,200)\net_upper=F(80,7)*ep_upper\nmismatch_lower=F(23,20)*F(499,1000)*F(999,1000)\nfour_clock_error_upper=F(11,5)*2*et_upper\nmargin_lower=mismatch_lower-four_clock_error_upper\nexp7_lower=sum((F(7)**j)/math.factorial(j) for j in range(16))\nassert margin_lower>F(499,10000)\nassert exp7_lower>800\ncert={\"probability_error_rational_upper\":str(ep_upper),\n      \"one_clock_time_error_rational_upper\":str(et_upper),\n      \"mismatch_rational_lower\":str(mismatch_lower),\n      \"four_clock_error_rational_upper\":str(four_clock_error_upper),\n      \"margin_rational_lower\":str(margin_lower),\n      \"margin_numeric_lower\":float(margin_lower),\n      \"failure_probability_strict_upper\":float(F(8)/exp7_lower),\n      \"record_repetitions\":560000,\n      \"conditional_on_declared_calibration_intervals_and_model_preparations\":True}\nprint(json.dumps({\"status\":\"PASS\",\"finite_sampling_certificate_independent_rational_bounds\":cert,\"independent_method\":\"RK4 in dimensionless pulse coordinate, separate gate construction; refinement is calibration, not a rigorous ODE error proof\",\"clock_checks\":rows,\"three_dimensional_flow_and_relative_data_residual\":res,\"finite_width_future_direction_witnesses\":future},ensure_ascii=False))"
+  },
+  "review_sha256": "6aaf2eb84a30d8fe7b32130f0d1c9b9ebeb8f4d25e35335085bbda9aadfad383"
+}

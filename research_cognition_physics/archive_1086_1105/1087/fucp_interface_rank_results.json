@@ -1,0 +1,67 @@
+{
+  "round": 1087,
+  "passed": true,
+  "scope": "specific exact tent interface on one fixed finite complete object",
+  "exact_cases": [
+    {
+      "N": 2,
+      "determinant": "3/4",
+      "error_threshold": "3/64"
+    },
+    {
+      "N": 3,
+      "determinant": "3/16",
+      "error_threshold": "1/48"
+    },
+    {
+      "N": 5,
+      "determinant": "3/1024",
+      "error_threshold": "3/400"
+    },
+    {
+      "N": 9,
+      "determinant": "3/67108864",
+      "error_threshold": "1/432"
+    }
+  ],
+  "numerical_cases": [
+    {
+      "N": 2,
+      "lambda_min": 0.5,
+      "analytic_lower_bound": 0.09375,
+      "eta": 0.0234375,
+      "perturbed_sigma_min": 0.5008399809858699
+    },
+    {
+      "N": 4,
+      "lambda_min": 0.09763107293781724,
+      "analytic_lower_bound": 0.046875,
+      "eta": 0.005859375,
+      "perturbed_sigma_min": 0.0940469246946593
+    },
+    {
+      "N": 8,
+      "lambda_min": 0.03712736178202072,
+      "analytic_lower_bound": 0.0234375,
+      "eta": 0.00146484375,
+      "perturbed_sigma_min": 0.036881423921661646
+    },
+    {
+      "N": 16,
+      "lambda_min": 0.0168283426089212,
+      "analytic_lower_bound": 0.01171875,
+      "eta": 0.0003662109375,
+      "perturbed_sigma_min": 0.01662402211777309
+    },
+    {
+      "N": 32,
+      "lambda_min": 0.008083979414260438,
+      "analytic_lower_bound": 0.005859375,
+      "eta": 9.1552734375e-05,
+      "perturbed_sigma_min": 0.008058735646583572
+    }
+  ],
+  "fixed_positive_error_requires_infinite_dimension": false,
+  "FUCP_plus_CO_inconsistent_proved": false,
+  "joint_quantum_clock_signal_realization_supplied": false
+}

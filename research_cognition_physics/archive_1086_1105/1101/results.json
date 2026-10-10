@@ -1,0 +1,224 @@
+{
+  "round": 1101,
+  "status": "PASS",
+  "groups": {
+    "conjugated_flip_cancels_scale": {
+      "status": "PASS",
+      "cases": [
+        {
+          "initial_scale": "1/3",
+          "result_cosh": "17/8",
+          "result_sinh": "15/8",
+          "result_scale_squared": "1",
+          "reference_factors": 4
+        },
+        {
+          "initial_scale": "1",
+          "result_cosh": "17/8",
+          "result_sinh": "15/8",
+          "result_scale_squared": "1",
+          "reference_factors": 4
+        },
+        {
+          "initial_scale": "2",
+          "result_cosh": "17/8",
+          "result_sinh": "15/8",
+          "result_scale_squared": "1",
+          "reference_factors": 4
+        }
+      ],
+      "exact_word": "g R g^-1 R^-1",
+      "scope": "Finite matrix identity conditional on actual inverses and rotations.",
+      "all_reference_scales_eliminated_by_this_identity": false
+    },
+    "canonical_boost_from_actual_rotation_word": {
+      "status": "PASS",
+      "cases": [
+        {
+          "initial_scale": "1/3",
+          "rotation_determinant": "1",
+          "reference_word_factors": 4
+        },
+        {
+          "initial_scale": "1",
+          "rotation_determinant": "1",
+          "reference_word_factors": 4
+        },
+        {
+          "initial_scale": "2",
+          "rotation_determinant": "1",
+          "reference_word_factors": 4
+        }
+      ],
+      "h_e0": [
+        "25/16",
+        "15/16",
+        "-3/4",
+        "0"
+      ],
+      "canonical_boost": [
+        [
+          "25/16",
+          "15/16",
+          "-3/4",
+          "0"
+        ],
+        [
+          "15/16",
+          "881/656",
+          "-45/164",
+          "0"
+        ],
+        [
+          "-3/4",
+          "-45/164",
+          "50/41",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "spatial_rotation": [
+        [
+          "-9/41",
+          "-40/41",
+          "0"
+        ],
+        [
+          "40/41",
+          "-9/41",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "identity": "h k^-1 = B(h e0)",
+      "scope": "k is certified algebraically to be SO(3); its actual availability uses O. B is realized conditionally as the finite word, not added as a free boost permission.",
+      "universal_boost_family_certified_by_samples": false
+    },
+    "finite_scale_contradiction_with_coordinate_margin": {
+      "status": "PASS",
+      "lower_bound_d": "1",
+      "initial_tau": "2",
+      "scale": "1/2",
+      "iterations": 2,
+      "result_tau": "1/2",
+      "result_coordinates": [
+        "17/16",
+        "15/16",
+        "0",
+        "0"
+      ],
+      "assumed_coordinate_error_per_component": "1/100",
+      "quadratic_error_bound": "101/2500",
+      "quadratic_lower": "131/625",
+      "quadratic_upper": "363/1250",
+      "strict_quadratic_margin": "887/1250",
+      "future_time_lower": "421/400",
+      "scope": "Conditional finite certificate for an already qualified complete task. Coordinate errors are assumed certificate bounds, not measured instrument data or proof of full-process fidelity.",
+      "whole_menu_positive_gap_is_additional": true,
+      "actual_reference_word_and_complete_task_qualification_assumed": true,
+      "real_instrument_data": false
+    },
+    "positive_budget_gaps_disappear_under_union": {
+      "status": "PASS",
+      "cases": [
+        {
+          "budget": 1,
+          "threshold_squared": "1",
+          "inverse_scale_needed_budget": 2,
+          "finite_coordinates": [
+            "5/4",
+            "3/4",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "budget": 2,
+          "threshold_squared": "1/4",
+          "inverse_scale_needed_budget": 4,
+          "finite_coordinates": [
+            "5/8",
+            "3/8",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "budget": 4,
+          "threshold_squared": "1/16",
+          "inverse_scale_needed_budget": 8,
+          "finite_coordinates": [
+            "5/16",
+            "3/16",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "budget": 16,
+          "threshold_squared": "1/256",
+          "inverse_scale_needed_budget": 32,
+          "finite_coordinates": [
+            "5/64",
+            "3/64",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "budget": 100,
+          "threshold_squared": "1/10000",
+          "inverse_scale_needed_budget": 200,
+          "finite_coordinates": [
+            "1/80",
+            "3/400",
+            "0",
+            "0"
+          ]
+        }
+      ],
+      "analytic_menu": "P_n = {t>0, q(t,x)>=1/n^2}",
+      "analytic_union": "P = {t>0, q(t,x)>0}",
+      "union_infimum_tau": "0",
+      "union_admits_scale_and_inverse": [
+        "2",
+        "1/2"
+      ],
+      "FD": {
+        "deadline": "1",
+        "completed_example": [
+          "1/2",
+          "0",
+          "0",
+          "0"
+        ],
+        "excluded_target": [
+          "2",
+          "0",
+          "0"
+        ],
+        "all_deadline_outputs_have_norm_less_than": "1",
+        "analytic_exclusion": "For t<=1 at x=(2,0,0), q<=-3."
+      },
+      "scope": "Finite samples check analytic witnesses only. The union and all-budget statements require the proof; these are permission menus, not a full FUCP+CO+six-protocol physical countermodel."
+    }
+  },
+  "exact_arithmetic": "fractions.Fraction",
+  "reused_arithmetic": "../1099/check.py (runpy, main not executed)",
+  "universal_theorem": "See proof.md; finite matrix tests do not prove permissions.",
+  "new_adopted_axioms": 0,
+  "scientific_count_increment": 0,
+  "positive_task_gap_derived_from_cognition": false,
+  "full_actual_clock_proper_time_identification": false,
+  "all_matter_Lorentz_certified": false,
+  "unconditional_Lorentz_derived": false
+}

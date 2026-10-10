@@ -1,0 +1,217 @@
+{
+  "schema": "round1098_actual_observer_influence_bridge_v1",
+  "round": 1098,
+  "status": "PASS",
+  "numpy_version": "2.3.5",
+  "groups": [
+    {
+      "name": "finite_powers_and_null_boundary",
+      "status": "PASS",
+      "prefix_table": [
+        {
+          "n": 1,
+          "beta": "3/5",
+          "prefix_speed_bound": "5/3",
+          "null_future_time": "1/2"
+        },
+        {
+          "n": 2,
+          "beta": "15/17",
+          "prefix_speed_bound": "17/15",
+          "null_future_time": "1/4"
+        },
+        {
+          "n": 3,
+          "beta": "63/65",
+          "prefix_speed_bound": "65/63",
+          "null_future_time": "1/8"
+        },
+        {
+          "n": 4,
+          "beta": "255/257",
+          "prefix_speed_bound": "257/255",
+          "null_future_time": "1/16"
+        },
+        {
+          "n": 5,
+          "beta": "1023/1025",
+          "prefix_speed_bound": "1025/1023",
+          "null_future_time": "1/32"
+        },
+        {
+          "n": 6,
+          "beta": "4095/4097",
+          "prefix_speed_bound": "4097/4095",
+          "null_future_time": "1/64"
+        }
+      ],
+      "first_negative_witnesses": [
+        {
+          "speed": "6/5",
+          "first_negative_n": 2,
+          "previous_time": "7/20",
+          "witness_time": "-1/8"
+        },
+        {
+          "speed": "101/100",
+          "first_negative_n": 4,
+          "previous_time": "137/1600",
+          "witness_time": "-11/640"
+        },
+        {
+          "speed": "1000001/1000000",
+          "first_negative_n": 11,
+          "previous_time": "38057/81920000",
+          "witness_time": "-2194303/4096000000"
+        }
+      ],
+      "maximum_matrix_error": 0.0,
+      "future_null_kept_for_every_finite_n_by_exact_formula": true,
+      "finite_readout_overhead": 3,
+      "illustrative_serial_readout": [
+        {
+          "repetitions": 1,
+          "completion_time": "4",
+          "distance": "4/5",
+          "observed_speed": "1/5"
+        },
+        {
+          "repetitions": 2,
+          "completion_time": "5",
+          "distance": "8/5",
+          "observed_speed": "8/25"
+        },
+        {
+          "repetitions": 10,
+          "completion_time": "13",
+          "distance": "8",
+          "observed_speed": "8/13"
+        },
+        {
+          "repetitions": 100,
+          "completion_time": "103",
+          "distance": "80",
+          "observed_speed": "80/103"
+        }
+      ],
+      "fixed_readout_overhead_permission_certified": false,
+      "actual_finite_iteration_permission_certified": false
+    },
+    {
+      "name": "finite_reference_and_direction_coverage",
+      "status": "PASS",
+      "speed_outside_unit_cone": "6/5",
+      "all_direction_beta_cap": "3/5",
+      "all_direction_time_bracket": "7/25",
+      "remaining_speed_bound": "5/3",
+      "six_axis_minimum": 0.4,
+      "same_event_aligned_axis_bracket": -0.03923048454132627,
+      "finite_axes_do_not_certify_all_directions": true
+    },
+    {
+      "name": "finite_record_and_timestamp_certificate",
+      "status": "PASS",
+      "chain_length": 2,
+      "scale": "3/2",
+      "ideal_time": "-3/16",
+      "per_input_transport_error": "1/50",
+      "input_contrast": "1/5",
+      "output_contrast_lower_bound": "4/25",
+      "timestamp_error_bound": "7/1000",
+      "exact_box_corners": 8,
+      "maximum_actual_time": "-361/2000",
+      "declared_output_probabilities": [
+        "21/50",
+        "29/50"
+      ],
+      "large_probability_error_certifies_signal": false,
+      "large_clock_error_certifies_negative_time": false,
+      "empirical_calibration": false
+    },
+    {
+      "name": "dependence_identity_is_not_every_clock_order",
+      "status": "PASS",
+      "directed_chain": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "transformed_times": [
+        "0",
+        "-1/8",
+        "17/4"
+      ],
+      "physical_edge_identity_reversed": false,
+      "directed_cycle": false,
+      "stationary_local_clock_derivative": "17/8",
+      "all_remote_timestamp_orders_forward": false,
+      "full_physical_countermodel": false
+    },
+    {
+      "name": "mixed_involution_and_positive_scale",
+      "status": "PASS",
+      "mixed_matrix": [
+        [
+          1.25,
+          -0.75,
+          0.0,
+          0.0
+        ],
+        [
+          0.75,
+          -1.25,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "involution_residual": 0.0,
+      "Lorentz_metric_residual": 0.0,
+      "time_space_mixing_without_unbounded_powers": true,
+      "positive_scale_time_examples": [
+        "-1/80",
+        "-7/8"
+      ],
+      "physical_scale_removed": false
+    },
+    {
+      "name": "fixed_noisy_strategy_is_not_exact_quantum_delivery",
+      "status": "PASS",
+      "binary_noise": "1/10",
+      "repetitions": 3,
+      "majority_error": "7/250",
+      "half_diamond_error_from_Pauli_identity": "3451/62500",
+      "normalized_choi_half_trace_distance": 0.05521600000000003,
+      "theorem_about_all_possible_error_corrected_strategies": false,
+      "physical_completion_latency_assumed_zero": false
+    }
+  ],
+  "scope": {
+    "conditional_full_influence_bridge": true,
+    "new_OC_or_MC_adopted": false,
+    "actual_observer_resources_certified": false,
+    "full_influence_cone_unconditionally_derived": false,
+    "physical_clock_scale_fixed": false,
+    "all_matter_dynamics_certified": false,
+    "entire_conjecture_decided": false,
+    "new_adopted_axioms": 0,
+    "scientific_count_increment": 0,
+    "scientific_count_total": 3860
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "schema": "research_round1090_typed_family_calibration_v1",
+  "round": 1090,
+  "status": "PASS",
+  "seed": 109020261010,
+  "numpy_version": "2.3.5",
+  "tolerance": 2e-11,
+  "claim_scope": "Finite calibration of a declared exact compatible typed-family model; analytic universal statements and actual primitive permissions require the separate proof.",
+  "infinite_inductive_family_is_an_F_object": false,
+  "fixed_finite_programmer_for_all_continuous_inputs_claimed": false,
+  "Lorentz_or_natural_motion_derived": false,
+  "empirical_realization_claimed": false,
+  "check_groups": 20,
+  "max_residual": 1.3322676295501878e-15,
+  "checks": [
+    {
+      "name": "tent_full_instrument_naturality_with_coherent_controls_and_reference",
+      "instances": 2,
+      "max_residual": 2.220446049250313e-16,
+      "status": "PASS",
+      "detail": "Input dimension 24; larger directory dimension 90; reference 3; both outcomes and poststates retained."
+    },
+    {
+      "name": "qubit_full_instrument_naturality_with_coherent_controls_and_reference",
+      "instances": 2,
+      "max_residual": 1.3322676295501878e-15,
+      "status": "PASS",
+      "detail": "Input dimension 24; larger directory dimension 90; reference 3; both outcomes and poststates retained."
+    },
+    {
+      "name": "CO2_tent_complete_Kraus_intertwining",
+      "instances": 2,
+      "max_residual": 0.0,
+      "status": "PASS",
+      "detail": "Frame R transports to gR and anchor a to ga+b; the probe is not silently replaced."
+    },
+    {
+      "name": "CO2_qubit_complete_Kraus_intertwining",
+      "instances": 2,
+      "max_residual": 0.0,
+      "status": "PASS",
+      "detail": "Frame R transports to gR and anchor a to ga+b; the probe is not silently replaced."
+    },
+    {
+      "name": "controlled_rigid_isometry_naturality_and_reference",
+      "instances": 3,
+      "max_residual": 2.7755575615628914e-17,
+      "status": "PASS",
+      "detail": "Control is retained; the output directory is the union of controlled images, not a falsely bijective common image."
+    },
+    {
+      "name": "controlled_coordination_isometry_naturality_and_reference",
+      "instances": 3,
+      "max_residual": 2.7755575615628914e-17,
+      "status": "PASS",
+      "detail": "Control is retained; the output directory is the union of controlled images, not a falsely bijective common image."
+    },
+    {
+      "name": "CO3_B_t_0_isometry",
+      "instances": 1,
+      "max_residual": 0.0,
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "CO3_B_t_0.125_isometry",
+      "instances": 1,
+      "max_residual": 0.0,
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "CO3_B_t_0.5_isometry",
+      "instances": 1,
+      "max_residual": 0.0,
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "CO3_B_t_0.875_isometry",
+      "instances": 1,
+      "max_residual": 0.0,
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "CO3_B_t_1_isometry",
+      "instances": 1,
+      "max_residual": 0.0,
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "CO3_declared_budget_strict_decrease_samples",
+      "instances": 2,
+      "max_residual": 0.0,
+      "status": "PASS",
+      "detail": "The budget is Euclidean norm, not energy or elapsed time."
+    },
+    {
+      "name": "CO4_midpoint_with_both_inputs_retained",
+      "instances": 9,
+      "max_residual": 0.0,
+      "status": "PASS",
+      "detail": "9 input pairs, 6 distinct midpoint labels; joint isometry preserves information and reference, but does not preserve the reduced position state after the new record is discarded."
+    },
+    {
+      "name": "CO4_discarding_new_midpoint_dephases_old_position",
+      "instances": 1,
+      "max_residual": 0.0,
+      "status": "PASS",
+      "detail": "The joint isometry retains both original basis labels and quantum information; tracing the midpoint removes this nonzero coherence. No nondisturbing unknown-position read is claimed."
+    },
+    {
+      "name": "declared_Q_tent_witness_and_qubit_Lipschitz_bound",
+      "instances": 80,
+      "max_residual": 5.551115123125783e-17,
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "CO5a_antipodal_traceless_effect_gap",
+      "instances": 80,
+      "max_residual": 5.551115123125783e-17,
+      "status": "PASS",
+      "detail": "Gap equals |z|/(2 sqrt(1+|z|^2)); a finite sample does not certify every nonzero endpoint."
+    },
+    {
+      "name": "CO5b_actual_endpoint_order_witness",
+      "instances": 1,
+      "max_residual": 5.551115123125783e-17,
+      "status": "PASS",
+      "detail": "Rotations about the same anchor produce a tent-record gap; these are stipulated relation operations, not boosts."
+    },
+    {
+      "name": "U_one_fixed_resource_all_sampled_ensemble_members",
+      "instances": 5,
+      "max_residual": 5.717278291444014e-16,
+      "status": "PASS",
+      "detail": "Same dimension-3 auxiliary and same purification for this finite ensemble; no unknown-state purifier is claimed."
+    },
+    {
+      "name": "C_finite_pure_state_transport_connected_unitary_path",
+      "instances": 5,
+      "max_residual": 8.881784197001252e-16,
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "P_complete_channel_Kraus_equivalence_and_reference",
+      "instances": 5,
+      "max_residual": 5.58800831163398e-17,
+      "status": "PASS",
+      "detail": "Local equality checked on a matrix basis; correlated-reference extension and nonsignalling marginal checked."
+    }
+  ]
+}
