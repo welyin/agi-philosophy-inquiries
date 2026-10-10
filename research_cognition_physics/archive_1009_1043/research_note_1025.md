@@ -61,7 +61,9 @@ $$
 
 所以零阶成立。ξ=(I₂,I₂)是分离向量，并且A的复线性作用已生成全H。更强的文献条件也满足：π(A)′包含任意分块右乘(X,Y)↦(XR,YS)，作用于ξ得到任意(R,S)，故π(A)′ξ=H。分级作用为γπ(a,b)γ=π(sas,b)，故
 
-$$A^{\rm ev}=(\mathbb C\oplus\mathbb C)\oplus M_2(\mathbb C),\quad\dim_{\mathbb R}A^{\rm ev}=12.\tag{4}$$
+$$
+A^{\rm ev}=(\mathbb C\oplus\mathbb C)\oplus M_2(\mathbb C),\quad\dim_{\mathbb R}A^{\rm ev}=12.\tag{4}
+$$
 
 **母不可约性证明。** 若复线性正交投影P与A、J对易，则也与A⁰对易。左右矩阵单位在X、Y两块分别生成完整End(M₂(C))，故P=diag(αI₄,βI₄)。正交投影要求α,β∈{0,1}，与J对易再要求α=β；因此仅有0、I。一般非自伴对易算子可以有diag(zI₄,z̄I₄)，本证明没有错误地把整个实对易代数说成一维。
 
@@ -69,7 +71,9 @@ $$A^{\rm ev}=(\mathbb C\oplus\mathbb C)\oplus M_2(\mathbb C),\quad\dim_{\mathbb 
 
 设P₁(Z)=Z₁₁E₁₁，取
 
-$$D_0(X,Y)=(P_1(Y),P_1(X)).\tag{5}$$
+$$
+D_0(X,Y)=(P_1(Y),P_1(X)).\tag{5}
+$$
 
 D₀自伴、J实、γ奇，并跨接X₁₁与Y₁₁。对母中心投影e_X(X,Y)=(X,0)，[D₀,e_X]≠0。定义
 
@@ -82,11 +86,15 @@ $$
 
 现在不预设第二矩阵对角。令a=diag(α,β)，b=[[u,v],[w,z]]。对同一元素c=(a,b)取K=[[D₀,π(c)],c⁰]，在
 
-$$ (X_{11},X_{12},X_{21},X_{22},Y_{11},Y_{12},Y_{21},Y_{22}) \tag{7}$$
+$$
+ (X_{11},X_{12},X_{21},X_{22},Y_{11},Y_{12},Y_{21},Y_{22}) \tag{7}
+$$
 
 基底中，采用从0开始的矩阵下标，有
 
-$$ K_{0,4}=-(u-\alpha)^2,\qquad K_{1,6}=-v^2,\qquad K_{6,1}=-w^2.\tag{8}$$
+$$
+ K_{0,4}=-(u-\alpha)^2,\qquad K_{1,6}=-v^2,\qquad K_{6,1}=-w^2.\tag{8}
+$$
 
 若任意实*子代数B对此固定D₀满足一阶条件，则其每个元素满足式(8)全零。复数域无非零幂零元，因此u=α、v=w=0，B⊂A_F。反向已证，故A_F是**固定D₀时的唯一最大包含子代数**，并非仅在对角候选里挑选的最大。
 
@@ -98,7 +106,9 @@ $$ K_{0,4}=-(u-\alpha)^2,\qquad K_{1,6}=-v^2,\qquad K_{6,1}=-w^2.\tag{8}$$
 
 在本母模型中，X的左表示只有两个一维字符α、β，各重复两次。Y则为二维b表示的两个副本。所以共同分量要求b在某条固定复直线上，按α或β作用。B的*闭合保证该直线的正交补也不变，可用同一个U∈U(2)对所有b写成diag(μ,ν)，其中μ=α或μ=β。没有假定B含全部复标量；这个表示论论证仍给一个实线性单射
 
-$$ B\hookrightarrow\{(\alpha,\beta,\mu,\nu)\in\mathbb C^4:\mu=\alpha\}\quad\text{或}\quad\mu=\beta.\tag{9}$$
+$$
+ B\hookrightarrow\{(\alpha,\beta,\mu,\nu)\in\mathbb C^4:\mu=\alpha\}\quad\text{或}\quad\mu=\beta.\tag{9}
+$$
 
 因此dim_R B≤6。式(6)达到上界，故**在这个固定母对象中，允许D一起变化的最大实维恰为6**。
 
@@ -108,11 +118,15 @@ $$ B\hookrightarrow\{(\alpha,\beta,\mu,\nu)\in\mathbb C^4:\mu=\alpha\}\quad\text
 
 为排除反例只是D₀对最终A_F完全静止的疑虑，令t=σ_x，取
 
-$$D_t(X,Y)=(tX,Yt).\tag{10}$$
+$$
+D_t(X,Y)=(tX,Yt).\tag{10}
+$$
 
 它自伴、J实、γ奇，并有
 
-$$[D_t,\pi(a,b)](X,Y)=([t,a]X,0).\tag{11}$$
+$$
+[D_t,\pi(a,b)](X,Y)=([t,a]X,0).\tag{11}
+$$
 
 式(11)与任意右作用对易，所以D_t对完整A满足一阶条件。于是D₀+D_t的双交换子与D₀完全相同，保留第5节唯一最大A_F；λ≠q时[D_t,π(A_F)]非零，一形式不再全零。
 
@@ -131,7 +145,9 @@ $$[D_t,\pi(a,b)](X,Y)=([t,a]X,0).\tag{11}$$
 
 对于对角左右表示，一阶双交换子的每个矩阵元是Dᵢⱼ乘左右字符差的乘积。D₁第一边有相同右字符，第二边有相同左字符，因此一阶条件成立。取D_*=D₀+D_t+D₁，所有要求仍成立，而且
 
-$$[D_*,\pi(\lambda,q,m)]=0\quad\Longleftrightarrow\quad\lambda=q=m.\tag{12}$$
+$$
+[D_*,\pi(\lambda,q,m)]=0\quad\Longleftrightarrow\quad\lambda=q=m.\tag{12}
+$$
 
 证明是D_t的不同左字符边强迫λ=q，D₁另一条边强迫λ=m；它们的矩阵支撑不同，不能相消。这个“连通”仅指式(12)的代数判据。D_*保留最大维6；未另称其固定D下唯一最大包含子代数，也未证明完整最终谱三元组满足所有可能公理。
 
@@ -149,7 +165,9 @@ $$[D_*,\pi(\lambda,q,m)]=0\quad\Longleftrightarrow\quad\lambda=q=m.\tag{12}$$
 
 见[联合依赖v0.14](1025/input_dependency_update_v0_14.md)。本轮没有产生SM群，而是严格划清一条候选生成链：
 
-$$\text{有限几何基本合同}+\text{特定实形式／最小性}+\text{一阶与最大性}\Longrightarrow\text{条件性内部代数选择}.\tag{13}$$
+$$
+\text{有限几何基本合同}+\text{特定实形式／最小性}+\text{一阶与最大性}\Longrightarrow\text{条件性内部代数选择}.\tag{13}
+$$
 
 删去其中实形式／最小性后，余下合同仍容纳非SM最大代数。这证明这组额外选择不能整体省去；本轮没有分别证明每条前提相对于所有其它前提的逻辑独立性。以后若从认知原则提出新选择要求，必须能独立排除本例，并解释为何保留目标物理；仅把“四元数”或“标准模型”改称认知功能没有减少输入。
 

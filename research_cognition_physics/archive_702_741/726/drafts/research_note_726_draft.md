@@ -64,7 +64,7 @@ $$
 \tag{4}
 $$
 
-常数含节点数、原壁斜率及图／管资料。算符A含ℏ²二阶项和ℏ一阶项；将 \((A-a)K\Psi=K(A-a)\Psi+[A,K]\Psi\) 展开，用式(2)、式(4)控制 \(\hbar\partial K\,\hbar\partial\Psi\)、\(\hbar^2\partial^2K\,\Psi\) 及低阶项。对0<ℏ,σ≤1得到
+常数含节点数、原壁斜率及图／管资料。算符A含ℏ²二阶项和ℏ一阶项；将 $(A-a)K\Psi=K(A-a)\Psi+[A,K]\Psi$ 展开，用式(2)、式(4)控制 $\hbar\partial K\,\hbar\partial\Psi$、$\hbar^2\partial^2K\,\Psi$ 及低阶项。对0<ℏ,σ≤1得到
 
 $$
 \mathcal E_A:=

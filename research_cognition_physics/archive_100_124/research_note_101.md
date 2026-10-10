@@ -8,9 +8,9 @@
 
 即使把每个原始读数都保留，并允许之后对“全部经典记录 R+剩余 M,N”作任意联合分析，H 校准的迹距离仍只有
 
-\[
+$$
 \boxed{D_H(RMN)=cw.}
-\]
+$$
 
 这不是忘记读数造成的假象。同时，G 校准的迹距离仍有 D_G(RMN)=v；R 单独的区别为 γ_m v。旧答案可以继续改善读出，丢失的另一查询却不会因此回来。
 
@@ -20,24 +20,24 @@
 
 令 P_z=(I+zA)/2。第 90 轮的保护式读取先复制 A 轴到纯指针，再读取并丢弃指针；M 保留。对全部原始历史 h=(h₁,…,h_m)，仪器为
 
-\[
+$$
 \boxed{
 \mathcal B_h(\omega)=\sum_{z=\pm1}
 L_h(z)(P_z\otimes I)\omega(P_z\otimes I),}
-\]
+$$
 
-\[
+$$
 L_h(z)=\prod_{j=1}^{m}
 \frac{1+(2h_j-1)z\alpha}{2}.
-\]
+$$
 
 脚本实际旋转 M、执行复制门和原 Kraus 读取，最后把 M 恢复到原坐标，再逐历史比较这条公式。
 
 由于 Σ_h L_h(z)=1，
 
-\[
+$$
 \sum_h\mathcal B_h(\omega)=\Lambda_0(\omega).
-\]
+$$
 
 原读噪声使公开结果不完美，但不使这次复制后的求和通道变成“弱退相干”。正交指针已经记录了 A 基底区别，丢弃其量子自由度便去掉 M 的非对角块。
 
@@ -47,29 +47,29 @@ L_h(z)=\prod_{j=1}^{m}
 
 第 99 轮 H 校准态为
 
-\[
+$$
 \rho_t^H=\frac{(I+cL)\otimes A_d+
 t(cI+L)\otimes D_d}{4},\qquad AL=-LA.
-\]
+$$
 
 因为 P_zLP_z=0，每条历史都因子分解为
 
-\[
+$$
 \boxed{
 \mathcal B_h(\rho_t^H)=Q_h^M\otimes
 \frac{A_d+t cD_d}{2},}
 \qquad
 Q_h=\frac12\sum_zL_h(z)P_z.
-\]
+$$
 
 Q_h 与未知标签 t 无关，而且 Σ_h tr Q_h=1。把 R 作为正交经典块保留，两个标签的总迹距离为
 
-\[
+$$
 \frac12\sum_h
 \left\|\mathcal B_h(\rho_+^H)
 -\mathcal B_h(\rho_-^H)\right\|_1
 =cw.
-\]
+$$
 
 所以任何以后仅访问 R,M,N 的操作，都不能超过理想成功率 (1+cw)/2。这个结论覆盖任意经典后处理、依据历史的反馈和新的独立辅助，而非只排除多数判决。
 

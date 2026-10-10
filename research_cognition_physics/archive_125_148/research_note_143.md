@@ -10,11 +10,11 @@
 
 在完整取向重编码之后，每个标记位受到
 
-\[
+$$
 \mathcal D_{\lambda_j}(\omega)
 =\tfrac{1+\lambda_j}{2}\omega
 +\tfrac{1-\lambda_j}{2}Z_j\omega Z_j.
-\]
+$$
 
 标记的对角块不变，非对角块乘以 λ_j。独立噪声使两个取向 b,c 之间的块乘以所有不同位的 λ_j 之积。
 
@@ -26,17 +26,17 @@
 
 沿用第 142 轮的实反射 Q_a=Σ_b(−1)^(a·b)P_b，得到
 
-\[
+$$
 \mathcal N(\omega)=\sum_a p_aQ_a\omega Q_a,
 \qquad
 p_a=\prod_j\frac{1+(-1)^{a_j}\lambda_j}{2}.
-\]
+$$
 
 这些 Q_a 满足 Tr(Q_a^T Q_b)=d δ_ab，其中 d=4^n；Q_0=I。由于 λ_j≥0，最大权重为
 
-\[
+$$
 p_{\max}=p_0=\prod_j\frac{1+\lambda_j}{2}.
-\]
+$$
 
 对两主体实际电路，Z_h V=VQ_1，所以噪声输出仍位于原接入等距映射 V 的像空间。允许恢复器操作全部旧七位系统，与允许对逆转后的原输入作任意通道同样一般，下面的界没有把控制器人为限定为“只会逆转”。
 
@@ -46,23 +46,23 @@ p_{\max}=p_0=\prod_j\frac{1+\lambda_j}{2}.
 
 令恢复通道的 Kraus 算子为 R_l。目标重叠为
 
-\[
+$$
 F_\Phi=\frac1{d^2}\sum_{l,a}p_a|\operatorname{Tr}(R_lQ_a)|^2.
-\]
+$$
 
 Q_a/√d 在矩阵 Hilbert–Schmidt 内积下正交。Bessel 不等式给出
 
-\[
+$$
 \sum_a|\operatorname{Tr}(R_lQ_a)|^2
 \le d\operatorname{Tr}(R_l^\dagger R_l).
-\]
+$$
 
 因此
 
-\[
+$$
 F_\Phi\le\frac{p_0}{d}\sum_l\operatorname{Tr}(R_l^\dagger R_l)=p_0,
 \qquad D\ge1-p_0.
-\]
+$$
 
 这覆盖全部实或复 CPTP 恢复和独立辅助，不靠随机搜索决定最优。
 
@@ -72,9 +72,9 @@ F_\Phi\le\frac{p_0}{d}\sum_l\operatorname{Tr}(R_l^\dagger R_l)=p_0,
 
 于是
 
-\[
+$$
 \boxed{\epsilon_{\rm ext}^{*}=1-\prod_{j=1}^{n-1}\frac{1+\lambda_j}{2}}.
-\]
+$$
 
 相同 λ 时，结果为 1−[(1+λ)/2]^(n−1)：
 
@@ -91,9 +91,9 @@ F_\Phi\le\frac{p_0}{d}\sum_l\operatorname{Tr}(R_l^\dagger R_l)=p_0,
 
 若 n>1、要求外部误差不超过 ε，且使用相同 λ，则必须且足以
 
-\[
+$$
 \lambda\ge\max\{0,\ 2(1-\epsilon)^{1/(n-1)}-1\}.
-\]
+$$
 
 在固定 n、δ=1−λ 很小时，误差为 (n−1)δ/2+O(δ²)。这只是声明的独立退相干模型中的精确公式与展开，不是从认知原则推导出的噪声规律。
 

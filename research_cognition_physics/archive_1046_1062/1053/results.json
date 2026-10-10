@@ -1,0 +1,145 @@
+{
+  "round": 1053,
+  "new_conditional_physical_source_calibration_groups": 1,
+  "new_cognitive_axioms": 0,
+  "rational_certificate": {
+    "exact": {
+      "R": "1000",
+      "a": "500",
+      "T": "1000/137",
+      "overlap_strict_upper": "1/1000000",
+      "initial_source_error_strict_upper": "40021/10500000",
+      "natural_source_error_strict_upper": "4155439679/38839500000",
+      "driven_source_error_strict_upper": "4156812479/38839500000",
+      "driven_source_error_simple_upper": "27/250",
+      "d_strict_lower": "221/400",
+      "old_instrument_error_strict_upper": "74239/335650",
+      "bad_pointer_probability_strict_upper": "5511429121/112660922500",
+      "pointer_total_variation_strict_upper": "5511429121/112660922500",
+      "joint_source_half_test_strict_lower": "178265403721/450643690000",
+      "record_recovery_half_test_strict_lower": "156219687237/901287380000",
+      "joint_source_half_test_tighter_lower": "723753659875361/1825106944500000",
+      "record_recovery_half_test_tighter_lower": "634468508115161/3650213889000000"
+    },
+    "decimal": {
+      "R": 1000.0,
+      "a": 500.0,
+      "T": 7.299270072992701,
+      "overlap_strict_upper": 1e-06,
+      "initial_source_error_strict_upper": 0.0038115238095238094,
+      "natural_source_error_strict_upper": 0.10699004052575342,
+      "driven_source_error_strict_upper": 0.1070253859859164,
+      "driven_source_error_simple_upper": 0.108,
+      "d_strict_lower": 0.5525,
+      "old_instrument_error_strict_upper": 0.2211798003873082,
+      "bad_pointer_probability_strict_upper": 0.0489205040993695,
+      "pointer_total_variation_strict_upper": 0.0489205040993695,
+      "joint_source_half_test_strict_lower": 0.3955794959006305,
+      "record_recovery_half_test_strict_lower": 0.1733294959006305,
+      "joint_source_half_test_tighter_lower": 0.39655410991471407,
+      "record_recovery_half_test_tighter_lower": 0.1738168029076723
+    },
+    "positive_Taylor_terms": 50,
+    "e20_positive_Taylor_exceeds_required_threshold": true,
+    "R1000_overlap_underflow_used": false,
+    "all_inequalities_use_positive_rational_arithmetic": true
+  },
+  "kernel": {
+    "kernel": "(|r|^2+a^2)^(-1/2)",
+    "positive_density": "3a^2/(4pi(|r|^2+a^2)^(5/2))",
+    "radial_CDF": "r^3/(r^2+a^2)^(3/2)",
+    "normalization_at_infinity": 1,
+    "poisson_point_check_max_error": 8.271806125530277e-25,
+    "fixed_nuclei_symmetric_source_difference": 0,
+    "kernel_values": [
+      0.002,
+      0.0016329931618554521,
+      0.001414213562373095,
+      0.0008944271909999158
+    ]
+  },
+  "actual_R1000_orbital_integral": {
+    "R": 1000,
+    "a": 500,
+    "quadrature_orders": [
+      48,
+      80
+    ],
+    "raw_right_orbital_f": 0.001105561023933562,
+    "raw_right_orbital_f2": 1.2222656898488345e-06,
+    "radial_angular_normalization": 1.0000000000001155,
+    "coefficient_before_Lowdin": 0.552780511966781,
+    "positive_Lowdin_correction_upper_diagnostic": 2.764148272381008e-13,
+    "coefficient_formula": "500 * raw_f / sqrt(1-S(1000)^2), 0<S(1000)<1e-6",
+    "quadrature_order_change_max": 1.1102230246251565e-15,
+    "quadrature_is_numerical_diagnostic_not_rigorous_error_bound": true,
+    "actual_Coulomb_propagation_numerically_solved": false
+  },
+  "finite_CAR_source_diagnostic": {
+    "diagnostic_only_R": 20.0,
+    "quadrature_order": 80,
+    "overlap_floating_positive": 3.1810470906301746e-07,
+    "sector_binary_labels": [
+      3,
+      5,
+      6,
+      9,
+      10,
+      12
+    ],
+    "Q_diagonal": [
+      -1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "compressed_A_diagonal": [
+      -0.5388179065598929,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5388179065598929
+    ],
+    "actual_compressed_source_coefficient": 0.5388179065598931,
+    "compressed_A_equals_source_Q_residual": 2.220446049250315e-16,
+    "full_source_error_gram_eigenvalues": [
+      0.0002870455841325236,
+      0.0002870455894259168,
+      0.00028704558942591697,
+      0.0002870455894259171,
+      0.00048216452412982996,
+      0.00048216452942322335
+    ],
+    "full_source_error_norm_diagnostic": 0.021958245135329537,
+    "analytic_initial_source_error_bound": 0.18856201415168966,
+    "cross_f_odd_symmetry_scaled_residual": 2.117582399697891e-22,
+    "off_code_variance_included": true
+  },
+  "scope": {
+    "same_actual_1050_H_and_pulse_and_preparation": true,
+    "all_six_dimensional_inputs_and_passive_references": true,
+    "source": "electronic rest-mass leading-G Newton constraint dual coefficient",
+    "full_actual_U_source_dictionary": "|| A U_F V - U_F V d Q || <= delta",
+    "positive_overlap_not_replaced_by_underflow_zero": true,
+    "joint_unormalized_pointer_and_source": true,
+    "record_decoder_obstruction": "one use of this binary pointer, same CPTP decoder; not arbitrary histories or repeated sampling",
+    "Newton_constraint_adopted_not_generated": true,
+    "total_apparatus_source_matched": false,
+    "physical_finite_G_backreaction_remainder_certified": false,
+    "gravity_detector_constructed": false,
+    "whole_M4_or_roadmap_complete": false
+  },
+  "historical_sha256": {
+    "archive_894_922/research_note_896.md": "9d53ac6f6845ef474e4dc79d8e87b1649cd23e71dc4446ef3d7e67d1e429a7a5",
+    "archive_894_922/research_note_899.md": "336fdb71a6a6590c1597f6fba4354ebb9150937e1f8907c32e8c937462d89ca6",
+    "archive_956_989/research_note_986.md": "5fc94a6c4108265a3625eb7d2fb356a2c1851673e3e4c8d7d6776bc172637e9a",
+    "archive_1046_/research_note_1047.md": "5a5e4641bc4faa862ca554a05980a7c6ea8a39e870267204ecf746636bd60c81",
+    "archive_1046_/research_note_1050.md": "1e13d7134d815ea09f0f2cf3ccb0b12f39d6c48adc72393a86321bd7e9c3773c",
+    "archive_1046_/1050/proof.md": "cad9fce66a975fd7793f3dfaf25266d0a863860f1cf507f5b83b21886754b7e7",
+    "archive_1046_/1050/coulomb_natural_instrument_results.json": "09ee96ff7ba512cb388d9d22f8b07e047cfd2208ab87e6510122b915f6badbd8",
+    "archive_1046_/1050/research_round_1050_checks.json": "1b3098246515c0fe8e94f314d8499c9ebea8ee4f36c3a59630c48f2abc347d7d"
+  }
+}

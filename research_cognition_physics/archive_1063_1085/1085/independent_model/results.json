@@ -1,0 +1,178 @@
+{
+  "assertion_calls": 1255,
+  "check_groups": 9,
+  "classification": "count-0 joint conditional compatibility witness",
+  "dimension_generation_proved": false,
+  "groups": [
+    {
+      "assertion_calls": 245,
+      "detail": {
+        "declared_menu_only": true,
+        "distance_formula": "min(1, Euclidean distance)",
+        "global_identity_status": "proved in model.md; finite samples only checked here",
+        "random_pairs": 24,
+        "tent_centers_per_pair": 6
+      },
+      "max_equality_residual": 0.0,
+      "name": "declared_current_task_metric"
+    },
+    {
+      "assertion_calls": 80,
+      "detail": {
+        "actual_action": "x -> R x + a; probe and passive reference unchanged",
+        "implemented_here_as": "adopted classical pullback *-automorphisms, not derived autonomous control",
+        "stabilizer_of_anchor": "SO(3)"
+      },
+      "max_equality_residual": 8.881784197001252e-16,
+      "name": "actual_euclidean_moves_and_test_transport"
+    },
+    {
+      "assertion_calls": 192,
+      "detail": {
+        "actual_compensation": "(x,o) -> (2o-x,o)",
+        "full_reversible_map": "(x,y) <-> (m,v)",
+        "kept_relative_record": "v=(x-y)/2",
+        "meeting": "m=(x+y)/2",
+        "unknown_qubit_copied": false
+      },
+      "max_equality_residual": 4.440892098500626e-16,
+      "name": "meeting_with_retained_relative_record"
+    },
+    {
+      "assertion_calls": 193,
+      "detail": {
+        "B": "o+(1-t/2)(x-o)",
+        "C": "||x-o||",
+        "C_is_execution_energy": false,
+        "R": "o+(x-o)/2",
+        "compact_neighborhood_radius": 1.0,
+        "finite_cost_infinite_completion_claimed": false
+      },
+      "max_equality_residual": 2.220446049250313e-16,
+      "name": "one_step_continuous_coordination"
+    },
+    {
+      "assertion_calls": 274,
+      "detail": {
+        "antipodal_effect_gap": 0.5,
+        "covariance": "isotropic control branch only; primary anisotropic branch deliberately fails it",
+        "effect_span_determinant": 0.12499999999999997,
+        "minimum_sample_effect_eigenvalue": -1.1102230246251565e-16,
+        "repeatability_1073_required_or_claimed": false,
+        "shell_radius": 0.5
+      },
+      "max_equality_residual": 1.776356924700231e-15,
+      "name": "isotropic_qubit_control"
+    },
+    {
+      "assertion_calls": 196,
+      "detail": {
+        "actual_rotations_and_upper_interface_compatible_without_unitary_covariance": true,
+        "effect_span_determinant": 0.04687499999999999,
+        "moved_task_parameter": "O -> O R^-1; o -> R o + a",
+        "opposite_gap_uniform_lower": 0.25,
+        "primary_effect": "(I + (diag(1,3/4,1/2) O s(x-o)) dot sigma)/2",
+        "primary_fixed_task_O": "identity",
+        "repeatability_required_or_claimed": false,
+        "same_fixed_task_rotation_purities": [
+          0.625,
+          0.53125
+        ],
+        "shell_radius": 0.5,
+        "unitary_covariance_failure_exact_gap": "3/32"
+      },
+      "max_equality_residual": 1.332273136566741e-15,
+      "name": "primary_anisotropic_interface_without_qubit_covariance"
+    },
+    {
+      "assertion_calls": 54,
+      "detail": {
+        "endpoints": 2,
+        "input_states": 3,
+        "not_claimed": "probe state, individual conditional reference, or all later natural dynamics unchanged",
+        "preserved": "unconditional passive reference marginal",
+        "reference_dimension": 2,
+        "report_and_environment_retained": true
+      },
+      "max_equality_residual": 5.55122354228426e-16,
+      "name": "instrument_with_passive_quantum_reference"
+    },
+    {
+      "assertion_calls": 15,
+      "detail": {
+        "actual_continuous_anchored_paths": [
+          "R_z(t*pi/2)",
+          "R_x(t*pi/2)"
+        ],
+        "fixed_later_probe": "+X",
+        "geometric_noncommutation_already_visible_without_qubit_covariance": true,
+        "p_AB": 0.75,
+        "p_BA": 0.5,
+        "probability_gap": 0.25,
+        "same_reading_rule": true,
+        "tent_task_gap": 0.7071067811865475
+      },
+      "max_equality_residual": 1.1102230246251565e-16,
+      "name": "actual_anchored_order_difference"
+    },
+    {
+      "assertion_calls": 6,
+      "detail": {
+        "dimension_2": {
+          "SO2_commutation_residual": 5.551115123125783e-17,
+          "deleted": "continuous anchored noncommuting Euclidean motions",
+          "keeps": "tent tasks, midpoint, coordination, opposite qubit separation"
+        },
+        "dimension_4": {
+          "deleted": "one complete continuous qubit task separating every opposite pair",
+          "keeps": "classical actual tasks, midpoint, coordination, anchored noncommutation",
+          "opposite_e4_qubit_gap": 0.0,
+          "opposite_e4_tent_gap": 1.0
+        },
+        "status": "explicit deletion examples only; global exclusion is not proved by these samples"
+      },
+      "max_equality_residual": 5.551115123125783e-17,
+      "name": "dimension_2_and_4_deleted_contract_controls"
+    }
+  ],
+  "max_equality_residual": 1.776356924700231e-15,
+  "resource_ledger": {
+    "control_inputs": [
+      "test center z",
+      "finite Euclidean move parameters",
+      "finite coordination parameters",
+      "adopted meeting/compensation permission"
+    ],
+    "execution_energy_or_autonomous_law_derived": false,
+    "infinite_coordination_at_finite_resource_claimed": false,
+    "precision": "exact continuum operations are ideal inputs; finite precision budgets are not derived",
+    "records_retained": [
+      "meeting relative vector v",
+      "measurement report",
+      "measurement environment as required"
+    ],
+    "role_fair_accounting": "same register and operation counts after swapping x,y; no erasure of their relative record",
+    "source_registers": [
+      "actual endpoint x",
+      "optional second endpoint y",
+      "anchor o",
+      "unknown qubit Q",
+      "passive reference R"
+    ]
+  },
+  "runtime": {
+    "numpy": "2.3.5",
+    "python": "3.12.14"
+  },
+  "scope": [
+    "global identities are analytic statements in model.md",
+    "finite NumPy checks validate formulas only",
+    "actual instrument/control permissions and the chosen R^3 base are inputs",
+    "declared single-call operational metric excludes arbitrary bounded effects and unrestricted repetition outside the task menu",
+    "no physical minimum scale or microscopic continuity is established",
+    "not a sole-qubit representation of all position states or translations"
+  ],
+  "seed": 20261010,
+  "selected_model": "C_0(R^3,M_2); primary anisotropic bounded effects in multiplier algebra",
+  "sha256_check": "22144bd4e37facaa30eeb1ca0b70c8ccc687f791de5f4355fe7a8648b7e34f5f"
+}

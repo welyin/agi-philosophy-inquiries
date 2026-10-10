@@ -8,14 +8,14 @@
 
 真实六条分支、原读取对比度η=1/2、每个标签位读取一次、110→010和111→011的报告规则继续固定。两种Y报告的解码器不变，四种X/Z报告分别使用
 
-\[
+$$
 \begin{aligned}
 \widetilde U_0&=Z_R\otimes(c_0Z_A+s_0X_A)\otimes I_B,\\
 \widetilde U_2&=Z_R\otimes(c_2X_A+s_2Z_A)\otimes I_B,\\
 \widetilde U_3&=I_R\otimes I_A\otimes(c_3Z_B+s_3X_B),\\
 \widetilde U_5&=I_R\otimes I_A\otimes(c_5X_B+s_5Z_B),
 \end{aligned}
-\]
+$$
 
 其中c_g=cosθ_g、s_g=sinθ_g。取t_g=tan(θ_g/2)后，c_g=(1−t_g²)/(1+t_g²)、s_g=2t_g/(1+t_g²)，有理t给出精确实正交矩阵。
 
@@ -38,13 +38,13 @@
 
 在固定输入处，令a_j为Schur解生成的补偿系数，d=1−Σa_j²/p_j，B=diag(bI₈,D)，D=I₈−Σa_jW_j。接触处的角度导数为
 
-\[
+$$
 \partial_{\theta_g}D_{\rm error}
 =\frac{\operatorname{Tr}\{\sigma\operatorname{Tr}_R[
 D^T(\partial_gD)+(\partial_gD)^TD]\}}{4d},
 \qquad
 \partial_gD=-\sum_r a_{rg}(\partial_g\widetilde U_g)^TU_r.
-\]
+$$
 
 这里求偏导时保持接触系数a_j不变；Schur恒等式保证其一阶导数与真实误差一致。有限差分及直接物理纯化输出另作核对。内层数值解和包络梯度用于提出候选，未以局部驻点代替全局证明。
 
@@ -57,9 +57,9 @@ D^T(\partial_gD)+(\partial_gD)^TD]\}}{4d},
 
 每个报告的线路直接使用第164轮反射夹层，将其参数换为对应t_g。完整16维算子核对通过；六个条件门数依然为
 
-\[
+$$
 (33,21,33,23,11,23).
-\]
+$$
 
 故新增门最坏仍为368+12+33=413，包括首次接入共579；YX/Ry最坏分别293/120。平均新增门仍约404.7135029501，与第164轮相同。三次读取、三个新纯指针、一个相干历史位、原始三位读数和三位解码消息保持。
 

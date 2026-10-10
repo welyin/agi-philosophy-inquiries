@@ -50,31 +50,31 @@ Aleksandrova、Borish、Wootters（2013）研究了一个实量子整体：共�
 
 在实2d维空间预先指定正交复结构J：
 
-\[
+$$
 J^T=-J,\qquad J^2=-I.
-\]
+$$
 
 定义对易部分的投影和一个连续通道族
 
-\[
+$$
 \mathcal P_J(\rho)=\frac{\rho+J\rho J^T}{2},\qquad
 \mathcal T_t(\rho)=\mathcal P_J(\rho)+e^{-2\kappa t}
 [\rho-\mathcal P_J(\rho)],\quad\kappa>0.
-\]
+$$
 
 因为共轭映射Ad_J的平方为恒等，P_J²=P_J。再令p_t=(1+e^{-2κt})/2，有
 
-\[
+$$
 \mathcal T_t(\rho)=p_t\rho+(1-p_t)J\rho J^T,
 \qquad\dot\rho=\kappa(J\rho J^T-\rho).
-\]
+$$
 
 这是两个实正交通道的概率混合，因而完全正、保迹，并满足T_(t+s)=T_tT_s。其固定状态恰满足[ρ,J]=0。用平方矩阵范数定义偏离量
 
-\[
+$$
 V_J(\rho)=\|\rho-\mathcal P_J(\rho)\|_2^2,
 \qquad V_J(\rho_t)=e^{-4\kappa t}V_J(\rho_0).
-\]
+$$
 
 因此确实能构造一个实动力学，使状态连续逼近第85轮的复等价状态集合。这是解析恒等式，不需要靠越来越多轮数值扫描寻找极限。
 
@@ -89,17 +89,17 @@ V_J(\rho)=\|\rho-\mathcal P_J(\rho)\|_2^2,
 
 对任一固定t，引入一个初始为|0〉的内部环境rebit E，令X_E为实交换矩阵，选cos²θ=p_t。实矩阵
 
-\[
+$$
 O_\theta=\cos\theta\,I+\sin\theta\,(J\otimes X_E)
-\]
+$$
 
 正交，因为(J⊗X_E)^T=−J⊗X_E且其平方为−I。对输入ψ⊗|0〉，
 
-\[
+$$
 O_\theta(\psi\otimes|0\rangle)=
 \cos\theta\,\psi\otimes|0\rangle+
 \sin\theta\,J\psi\otimes|1\rangle.
-\]
+$$
 
 只看原系统得到T_t；保留系统与环境的整体演化可逆，原区别及外部关系仍在完整联合态中。信息可能保存在关联中，不能只去环境边缘寻找。这直接沿用第173轮实正交扩张思路。
 
@@ -152,11 +152,11 @@ O_\theta(\psi\otimes|0\rangle)=
 
 通常实量子理论在任意有限层次都允许
 
-\[
+$$
 \mathcal H_{n+1}^{\mathbb R}
 =\mathcal H_n^{\mathbb R}\otimes\mathcal K_{n+1}^{\mathbb R},
 \qquad\omega_n\mapsto\omega_n\otimes\sigma_{n+1}.
-\]
+$$
 
 旧实分支算子K扩成K⊗I。逐分支演化和求迹保持旧记录概率；若旧群体已与外部E关联，对完整ω_(nE)张量接入新的独立实σ也同样保留它。这是把已存在的新系统接入，不是复制任意未知状态。由归纳，任意有限次这种实组合都合法，没有一个仅因层数变大就必须换成复数的代数障碍。
 

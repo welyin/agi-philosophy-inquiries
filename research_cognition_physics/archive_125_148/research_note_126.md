@@ -10,25 +10,25 @@
 
 每方维数 $d_i\ge2$，输入为
 
-\[
+$$
 \Omega(\rho_1,\ldots,\rho_n)=\bigotimes_i\mathcal E(\rho_i),\qquad
 \mathcal E(\rho)=\operatorname{real\_lift}(\rho)/2.
-\]
+$$
 
 每个 ρ_i 可以是本维数任意复密度矩阵。设成功过程为
 
-\[
+$$
 \mathcal S(X)=\sum_a L_aXL_a^{\mathsf T},\qquad
 \sum_aL_a^{\mathsf T}L_a\le I,
-\]
+$$
 
 并对所有输入满足
 
-\[
+$$
 \mathcal S(\Omega)
 =p(\rho_1,\ldots,\rho_n)\,
 \mathcal E\!\left(\bigotimes_i\rho_i\right).
-\]
+$$
 
 允许 p 依赖未知输入，装置本身仍是同一个映射。允许任意固定、与这些未知输入独立的辅助态，联合实操作、经典反馈、失败回退和有限多次重试。把辅助态、成功记录后的修正和输出解码并入映射，再仅取目标输出，仍得到上述实完全正映射。因此上界不只约束某种参考投影电路。
 
@@ -38,10 +38,10 @@
 
 设复线性算子 A 满足
 
-\[
+$$
 A|\psi^*\rangle\in\operatorname{span}\{|\psi\rangle\}
 \quad\text{对任意 }|\psi\rangle\in\mathbb C^d,\ d\ge2.
-\]
+$$
 
 则 A=0。证明只需每对基向量：
 
@@ -57,30 +57,30 @@ A|\psi^*\rangle\in\operatorname{span}\{|\psi\rangle\}
 
 记 $|s\rangle_Y=(1,is)^{\mathsf T}/\sqrt2$，s=±。项目的提升约定给出
 
-\[
+$$
 \mathcal E(\rho)
 =\tfrac12\big(
 |+\rangle_Y\langle+|\otimes\rho+
 |-\rangle_Y\langle-|\otimes\rho^*
 \big).
-\]
+$$
 
 这是在复化空间中核对实矩阵的谱分解。单个 $|s\rangle_Y$ 不是本轮免费可准备的实局部态；证明没有增加这种物理权限。
 
 对纯产品输入 $\rho_i=|\psi_i\rangle\langle\psi_i|$，Ω 是 $2^n$ 个向量的等权混合：
 
-\[
+$$
 |s_1\cdots s_n\rangle_Y\otimes
 \bigotimes_i|\psi_i^{(s_i)}\rangle,\qquad
 \psi_i^{(+)}=\psi_i,\quad\psi_i^{(-)}=\psi_i^*.
-\]
+$$
 
 而目标 $\mathcal E(\bigotimes_i\rho_i)$ 的支撑只有两个方向：
 
-\[
+$$
 |+\rangle_Y\otimes\bigotimes_i|\psi_i\rangle,\qquad
 |-\rangle_Y\otimes\bigotimes_i|\psi_i^*\rangle.
-\]
+$$
 
 ## 4 正性迫使所有混合取向分量被成功映射消去
 
@@ -88,19 +88,19 @@ A|\psi^*\rangle\in\operatorname{span}\{|\psi\rangle\}
 
 固定输入取向 s，投影到输出取向 t=±，得到复线性块 $L_{a;t,s}$。对任意产品向量，它必须映入
 
-\[
+$$
 \operatorname{span}\!\left\{\bigotimes_i|\psi_i^{(t)}\rangle\right\}.
-\]
+$$
 
 只要有一个 i 满足 $s_i\ne t$，固定其余输入，并在输出端收缩其余固定因子，就得到第 2 节的线性共轭问题，所以该收缩为零。输出已被要求落在这些固定因子的乘积方向，故整块也为零。再让其余产品向量遍历一组张成集，得到 $L_{a;t,s}=0$。
 
 当 s 既含 + 又含 − 时，对 t=+ 和 t=− 都至少有一项不匹配。因此每一个成功 Kraus 算子都满足
 
-\[
+$$
 L_a=L_aP_{\rm align},\qquad
 P_{\rm align}=
 \left(V_+^{(n)}V_+^{(n)\mathsf T}\right)\otimes I_D.
-\]
+$$
 
 即只有全部 + 和全部 − 两个输入取向能贡献精确成功。该结论限制全部成功算子，不是假设装置先测取向后再修复。
 
@@ -108,17 +108,17 @@ P_{\rm align}=
 
 写 $G=\sum_aL_a^{\mathsf T}L_a$。上一节及迹不增性给出
 
-\[
+$$
 0\le G\le P_{\rm align}.
-\]
+$$
 
 每个编码的参考边缘恰为 I/2，独立输入的 n 参考边缘为 $I/2^n$。因此对纯或混合输入都有
 
-\[
+$$
 p=\operatorname{tr}(G\Omega)
 \le\operatorname{tr}(P_{\rm align}\Omega)
 =\boxed{2^{1-n}}.
-\]
+$$
 
 第 86 轮的 $K_+=V_+^{(n)\mathsf T}\otimes I_D$ 满足 $K_+^{\mathsf T}K_+=P_{\rm align}$，输出恰为 $2^{1-n}\mathcal E(\bigotimes_i\rho_i)$，故达到。
 
@@ -139,36 +139,36 @@ p=\operatorname{tr}(G\Omega)
 
 为避免普遍证明只依赖文字推断，代码还单独检验一个有限但已足够强的输入集：
 
-\[
+$$
 \{|0\rangle,|1\rangle,|+X\rangle,|+Y\rangle\}^{\otimes2}.
-\]
+$$
 
 每个纯输入对应实支撑投影
 
-\[
+$$
 P_{\rm in}=4\Omega,\qquad
 P_{\rm out}=\operatorname{real\_lift}(\rho_A\otimes\rho_B).
-\]
+$$
 
 任一成功实 Kraus 矩阵 K（8×16）必须满足
 
-\[
+$$
 (I-P_{\rm out})KP_{\rm in}=0.
-\]
+$$
 
 把 16 个输入的方程联立，得到 **2048 条方程、128 个实未知数**。系数乘 16 后全部为整数。程序在素数 1009 的有限域上消元，得到秩 126；因此有一个有理数域非零的 126 阶子式。
 
 另直接给出两个互相正交的非零整数零空间向量：
 
-\[
+$$
 C=\sqrt2K_+,\qquad J_{\rm out}C.
-\]
+$$
 
 它们的 Gram 矩阵恰为 $16I_2$。所以有理数域秩又至多 126，精确秩即 126，全部解恰为
 
-\[
+$$
 K=aK_++bJ_{\rm out}K_+.
-\]
+$$
 
 对一组 Kraus 算子，$G=\sum(a^2+b^2)P_{\rm align}$，迹不增要求系数和≤1，成功率≤1/2。这是一份独立的有限输入代数验证，**不用浮点 SVD 阈值决定秩，也不用数值优化器声称最优**。浮点仅用于另外的电路核对；证书系数生成只含小的二进制精确分数。
 

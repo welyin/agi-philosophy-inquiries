@@ -45,9 +45,9 @@
 
 于是沿既有定理使用
 
-\[
+$$
 F+U+C+L\ \Longrightarrow\ V_A\simeq\operatorname{Herm}_{n_A}(\mathbb C)
-\]
+$$
 
 （序结构意义下）。C排除非平凡经典单纯形，L排除通常实量子族。定理结论不自行确定项目全部仪器权限、具体哈密顿量、物理时空或引力。
 
@@ -65,9 +65,9 @@ F+U+C+L\ \Longrightarrow\ V_A\simeq\operatorname{Herm}_{n_A}(\mathbb C)
 
 特别地，L可精确回译如下。固定划分A|B，记
 
-\[
+$$
 T(\omega)=\bigl(\omega(a\otimes b)\bigr)_{a\in E_A,b\in E_B}.
-\]
+$$
 
 若要求T成为整体全部效应的充分预测描述，即T(ω)=T(ω′)时所有整体效应h也有h(ω)=h(ω′)，则由操作状态的可区分性定义得到ω=ω′，也就是L；反过来L给出这种充分性。**这是在声明框架内对L的等价表述，尚不是从一般“认同＋融入”推出L的新证明。**
 

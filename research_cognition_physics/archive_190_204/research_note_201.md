@@ -16,22 +16,22 @@
 
 取实矩阵
 
-\[
+$$
 Z=\begin{pmatrix}1&0\\0&-1\end{pmatrix},\qquad
 X=\begin{pmatrix}0&1\\1&0\end{pmatrix}.
-\]
+$$
 
 均匀查询时编码为
 
-\[
+$$
 \rho_{xm}=\frac12\left(I+\frac{(-1)^x Z+(-1)^m X}{\sqrt2}\right).
-\]
+$$
 
 其Bloch向量长度为1，故均为合法纯实量子态。查询x时测Z、查询m时测X，特征值(−1)^b对应猜测b。对每个输入和每个查询，成功率都为
 
-\[
+$$
 q=\frac12+\frac1{2\sqrt2}=0.853553390593\ldots.
-\]
+$$
 
 这是已知2→1量子随机访问码的等价实平面写法。原论文第3.3.1节以另一对轴展示相同成功率，见[公式48](https://arxiv.org/html/0810.2937)。这里直接给出实矩阵，不依赖“原式中出现i所以必须复量子”的判断。
 
@@ -43,27 +43,27 @@ q=\frac12+\frac1{2\sqrt2}=0.853553390593\ldots.
 
 记v=1−w。对固定解码，每种输入都可选最优准备，平均成功率至多
 
-\[
+$$
 \frac12+\frac18\sum_{s,t=\pm1}
 \lambda_{\max}(wsB_0+vtB_1).
-\]
+$$
 
 四种符号求和使标量偏置抵消，得
 
-\[
+$$
 S\le\frac12+\frac14\left(|wu_0+vu_1|+|wu_0-vu_1|\right)
 \le\frac12+\frac12\sqrt{w^2|u_0|^2+v^2|u_1|^2}
 \le\frac12+\frac12\sqrt{w^2+v^2}.
-\]
+$$
 
 中间一步由两个长度的平方和恒等式及Cauchy不等式得到。它覆盖完整三维Bloch向量、混合态和任意二结果POVM；独立共享随机数只是这种平均分的凸混合，不提高上界。
 
 令u₀、u₁为Z与X两个正交方向，取
 
-\[
+$$
 \rho_{xm}^{(w)}=\frac12\left(I+
 \frac{w(-1)^xZ+v(-1)^mX}{\sqrt{w^2+v^2}}\right)
-\]
+$$
 
 即可达到。所需两个正交方向全部位于实量子平面，因此实与复二维载体在这个任务中最优值相等。
 
@@ -71,10 +71,10 @@ S\le\frac12+\frac14\left(|wu_0+vu_1|+|wu_0-vu_1|\right)
 
 本轮只要求晚到的一个J的一次回答。若改为同一份记忆恢复整个(x,m)，任意二维量子载体及四结果POVM {F_xm}均满足
 
-\[
+$$
 P_{\rm pair}=\frac14\sum_{xm}\operatorname{Tr}(F_{xm}\rho_{xm})
 \le\frac14\sum_{xm}\operatorname{Tr}F_{xm}=\frac24=\frac12,
-\]
+$$
 
 因为0≤ρ≤I。均匀码取F_xm=ρ_xm/2，利用Σρ_xm=2I，正好达到1/2。经典一比特同时猜完整二位的最优值也是1/2。
 

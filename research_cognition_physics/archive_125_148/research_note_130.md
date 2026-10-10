@@ -8,16 +8,16 @@
 
 第 46 轮原密度表示为
 
-\[
+$$
 \rho=\frac12(I+xX+zZ),\quad x^2+z^2\le1.
-\]
+$$
 
 它是整个实平面圆盘，不是三方向 Bloch 球缩小后的版本。原读取效应为
 
-\[
+$$
 E_{\theta,\pm}=\tfrac12[I\pm\alpha\eta(\cos\theta Z+\sin\theta X)],
 \qquad\alpha=4\sin(1/4).
-\]
+$$
 
 η 降低效应对比度，不自动把所有输入状态变成低纯度。原更新的实 Kraus 矩阵保持这个实准备集合；加入参考位和两系统控制又是额外结构，应单列。
 
@@ -25,22 +25,22 @@ E_{\theta,\pm}=\tfrac12[I\pm\alpha\eta(\cos\theta Z+\sin\theta X)],
 
 若新主体 $\sigma_B=\sigma_B^*$，标准编码恰为
 
-\[
+$$
 \mathcal E(\sigma_B)=I_{R_B}/2\otimes\sigma_B.
-\]
+$$
 
 于是输入
 
-\[
+$$
 \mathcal E(\rho_A)_{R_A A}\otimes I_{R_B}/2\otimes\sigma_B
-\]
+$$
 
 按访问顺序整理为
 
-\[
+$$
 \boxed{\mathcal E(\rho_A\otimes\sigma_B)_{R_AAB}
 \otimes I_{R_B}/2.}
-\]
+$$
 
 保留 R_A 作为共同参考，R_B 留在整体中但暂不使用。ρ_A 可有任意复分量，也可包含旧群体的内部记忆。无需知道 ρ_A、σ_B 的具体值。
 
@@ -50,18 +50,18 @@ E_{\theta,\pm}=\tfrac12[I\pm\alpha\eta(\cos\theta Z+\sin\theta X)],
 
 对原实 Kraus 算子 $K_B$，有
 
-\[
+$$
 K_B\sigma_BK_B^{\mathsf T}
 =(K_B\sigma_BK_B^{\mathsf T})^*.
-\]
+$$
 
 新共同编码下执行相同的实本地操作，所得未归一化条件态和原独立输入完全一致。按历史归纳，有限自适应旧协议的记录概率与更新都保持。代码使用原噪声 Kraus 仪器，并令后一方设置依赖前一方结果作直接核对。
 
 如果新输入其实含 Y 分量，这种接入的活跃输出为
 
-\[
+$$
 \mathcal E(\rho_A\otimes\operatorname{Re}\sigma_B).
-\]
+$$
 
 原实局部测量及实更新无法区分 σ 与 Re σ：对任意实 K，$\operatorname{Re}(K\sigma K^{\mathsf T})=K\operatorname{Re}(\sigma)K^{\mathsf T}$，迹概率也相同。但一旦允许访问参考关联来读取逻辑 Y，二者便有区别。完整路由后的整体仍保留原 Y 信息，本轮没有物理删除它。
 
@@ -69,9 +69,9 @@ K_B\sigma_BK_B^{\mathsf T}
 
 取新主体 σ=|0⟩⟨0|，旧读取 η=1/2。若套用第 127 轮通用方案，σ 变为 $2\sigma/3+I/6$，一次原 Z 正结果概率变化为
 
-\[
+$$
 \frac{\alpha}{12}\approx0.0824679864.
-\]
+$$
 
 该损失在旧噪声读取中已经可见，但本轮精确方案完全避免它。因此此前 1/6 最优结论的“任意未知复态”量词不可省略。
 

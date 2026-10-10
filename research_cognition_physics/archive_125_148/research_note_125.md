@@ -8,10 +8,10 @@
 
 沿第 85—86 轮固定
 
-\[
+$$
 \mathcal E(\rho)=\tfrac12\operatorname{real\_lift}(\rho),\qquad
 \Omega=\mathcal E(\rho_A)\otimes\mathcal E(\rho_B).
-\]
+$$
 
 ρ_A、ρ_B 均可未知；A 可以代表已经有共同参考的整个旧群体，包含其内部记忆和内部纠缠。这里的两份编码在物理上独立，不是从同一共同编码里重新划分访问权限。接入装置不获知输入态的经典描述，也没有额外副本。
 
@@ -27,20 +27,20 @@
 
 第 86 轮已有实矩阵 $V_+,V_-$，其像空间正交并张满两参考空间。令
 
-\[
+$$
 K_\pm=V_\pm^{\mathsf T}\otimes I_D,\qquad
 W=\begin{pmatrix}K_+\\K_-\end{pmatrix},\qquad D=d_A d_B.
-\]
+$$
 
 则 $W^{\mathsf T}W=WW^{\mathsf T}=I_{4D}$。输出按“标记 h、共同参考 R、目标 A、B”排列，输入按两个私人参考及目标排列。**W 是实正交变换；它没有降低总空间维数。**
 
 对规定输入，
 
-\[
+$$
 W\Omega W^{\mathsf T}
 =|0\rangle\langle0|_h\otimes\tfrac12\mathcal E(\rho_A\otimes\rho_B)
 +|1\rangle\langle1|_h\otimes\tfrac12\mathcal E(\rho_A\otimes\rho_B^*).
-\]
+$$
 
 两个标记概率均为 1/2，与未知态无关。完整结果本来就在 h 上分块对角，所以记录 h 后，再对全部输出施加 $W^{\mathsf T}$，其**不按 h 条件化的输入密度矩阵**仍精确恢复为 Ω。
 
@@ -48,17 +48,17 @@ W\Omega W^{\mathsf T}
 
 对 n 个独立编码，标记为 b=(0,b₂,…,b_n)。定义
 
-\[
+$$
 V_b=\left(\bigotimes_i X^{b_i}\right)V_+^{(n)},\qquad
 K_b=V_b^{\mathsf T}\otimes I_D.
-\]
+$$
 
 把全部 $K_b$ 竖排仍得到正交 W；每一块为
 
-\[
+$$
 K_b\Omega K_b^{\mathsf T}
 =2^{1-n}\mathcal E\!\left(\bigotimes_i\rho_i^{*b_i}\right).
-\]
+$$
 
 n 个参考重编码成一个参考和 n−1 个取向标记位，总参考空间维数仍为 $2^n$。
 
@@ -66,10 +66,10 @@ n 个参考重编码成一个参考和 n−1 个取向标记位，总参考空�
 
 在标记 b 下，把第 i 方原本的局部 Kraus 操作 $L_i$ 编译成 $L_i^{*b_i}$ 的共同实提升。于是
 
-\[
+$$
 L_i^*\rho_i^*L_i^{\mathsf T}
 =(L_i\rho_iL_i^\dagger)^*.
-\]
+$$
 
 每个原结果的概率保持，更新后仍处在同一标记规则下。因此按历史归纳，任意有限本地仪器序列、消息和依消息选动作都可保持。这里保持的是第 85 轮的本地复接口；任意更宽的实操作若要保持，可通过相干 W 的逆变换返回原编码后执行。
 
@@ -87,16 +87,16 @@ L_i^*\rho_i^*L_i^{\mathsf T}
 
 令 $P_\pm=K_\pm^{\mathsf T}K_\pm$。初次观察到负分支后，逆嵌入的条件态为
 
-\[
+$$
 \Omega_- =2P_-\Omega P_-.
-\]
+$$
 
 它保留负取向记录，通常已不是原独立产品 Ω。再做相同过滤：
 
-\[
+$$
 \Pr(+\mid\hbox{已观察到 }-)=
 \operatorname{tr}(P_+\Omega_-)=0.
-\]
+$$
 
 没有按 h 条件化的整体密度可以恢复为 Ω；控制器实际知道 h 后，下一轮必须使用条件态。保留历史正是为了避免把这两个描述混用。代码直接验证成功概率 0、重复负分支概率 1。
 

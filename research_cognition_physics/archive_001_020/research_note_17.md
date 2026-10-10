@@ -12,46 +12,46 @@
 
 第 n 个实验取隐藏比特的初始概率
 
-\[
+$$
 p_0=\tfrac12(1+u_0,1-u_0)^T.
-\]
+$$
 
 每步先根据当前比特产生记录，再独立翻转比特：
 
-\[
+$$
 \Pr(s|X)=\frac{1+s\eta_nX}{2},\qquad
 r_n=\Pr(X\text{ 翻转})=\frac{1-\alpha_n}{2}.
-\]
+$$
 
 这里 r_n 是每步概率，后面的 r 才是连续率。写
 
-\[
+$$
 T_n=\begin{pmatrix}1-r_n&r_n\\r_n&1-r_n\end{pmatrix},\quad
 D_{s,n}=\tfrac12\operatorname{diag}(1+s\eta_n,1-s\eta_n),
 \quad H_{s,n}=T_nD_{s,n}.
-\]
+$$
 
 用 (w,u)=(p_++p_-,p_+−p_-) 换基，H_{s,n} 恰好变成
 
-\[
+$$
 \frac12\begin{pmatrix}1&s\eta_n\\
 \alpha_n s\eta_n&\alpha_n\end{pmatrix},
-\]
+$$
 
 即原 A_{s,n} 的整个相关子块。因此对**每个**记录串都有
 
-\[
+$$
 \mathbf1^T H_{s_k,n}\cdots H_{s_1,n}p_0
 =e_0^T A_{s_k,n}\cdots A_{s_1,n}z_0.
-\]
+$$
 
 这是一项逐矩阵相同的解析结论，不受枚举长度限制。程序还分别枚举记录串与隐藏比特路径，独立复核这个等价。
 
 根据一个结果先做 Bayes 更新再做隐藏翻转，条件均值为
 
-\[
+$$
 u'=\alpha_n\frac{u+s\eta_n}{1+s\eta_nu},
-\]
+$$
 
 也与原条件预测精确相同。因而它是整个固定方向记录模型的替代实现。
 
@@ -59,24 +59,24 @@ u'=\alpha_n\frac{u+s\eta_n}{1+s\eta_nu},
 
 因为 nr_n→ν/12，定义连续隐藏比特以对称率
 
-\[
+$$
 r=\nu/12=a/2
-\]
+$$
 
 翻转，其生成矩阵为 Q=[[-r,r],[r,−r]]。注意比特均值衰减率是 2r=a，不能把翻转率与均值衰减率混为一谈。
 
 观察定义为
 
-\[
+$$
 dY_t=\sigma X_tdt+dB_t,
-\]
+$$
 
 其中 B 与隐藏比特过程独立。令 U_t=E[X_t|Y_{[0,t]}]，则二状态 Wonham 滤波器给出
 
-\[
+$$
 dU_t=-2rU_tdt+\sigma(1-U_t^2)
 (dY_t-\sigma U_tdt).
-\]
+$$
 
 这正是第十五轮 U、Y 的系统。核对来源为 [van Handel 博士论文，推论 1.2.1](https://minty2.stanford.edu/wp/wp-content/thesis/RVHandel_thesis.pdf)（印刷页 27，PDF 第 41 页），以及 [Chigansky、Liptser、van Handel，§2.1、式 (2.13)–(2.14)](https://web.math.princeton.edu/~rvan/handbook-new.pdf)。本轮读取了对应有限状态信号、独立布朗观察和滤波方程的正文，未声称复现其一般稳定性理论。
 
@@ -86,35 +86,35 @@ dU_t=-2rU_tdt+\sigma(1-U_t^2)
 
 特征函数 χ_T(ω)=E[e^{iωY_T}] 编码整个终端记录分布。对隐藏模型，带观察相位的 2×2 生成矩阵为
 
-\[
+$$
 K(\omega)=Q+i\omega\sigma\operatorname{diag}(1,-1)
 -\frac{\omega^2}{2}I.
-\]
+$$
 
 因此 χ_T(ω)=1ᵀe^{TK(ω)}p₀。令 d=√(r²−σ²ω²)，直接计算 2×2 指数得到
 
-\[
+$$
 \boxed{\chi_T(\omega)=e^{-(r+\omega^2/2)T}
 \left[\cosh(dT)+(r+i\omega\sigma u_0)\frac{\sinh(dT)}d\right].}
-\]
+$$
 
 d 可以为纯虚数；d=0 时 sinh(dT)/d 取 T。这里的复数仅用于经典特征函数，不是引入量子概率幅。
 
 独立的离散复算使用
 
-\[
+$$
 M_n(\omega)=\sum_s e^{i\omega s/\sqrt n}H_{s,n},\qquad
 \chi_{n,T}(\omega)=\mathbf1^TM_n(\omega)^{nT}p_0,
-\]
+$$
 
 其中 nT 为整数。展开 M_n=I+K(ω)/n+O(n^{-2})，便得上述连续表达式。对多个不相交区段使用不同 ω 并连乘，就得到联合增量特征函数的同类极限；终端公式本身不应被误称为全部路径统计。
 
 ν=0 时比特不翻转，公式退化为
 
-\[
+$$
 \chi_T(\omega)=e^{-\omega^2T/2}
 [\cos(\omega\sigma T)+iu_0\sin(\omega\sigma T)],
-\]
+$$
 
 即均值 ±σT、方差 T 的两个高斯分布的经典混合。对 ν>0，则是积分电报过程加独立高斯噪声。脚本用离散记录矩阵验证多个频率的收敛，也覆盖 d=0 的退化点。
 

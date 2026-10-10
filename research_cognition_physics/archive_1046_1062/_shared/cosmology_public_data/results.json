@@ -1,0 +1,62 @@
+{
+  "schema": "cosmology_public_summary_check_results_v1",
+  "inputs_sha256": "8909ecc1665febcf07a552133e04c1afca1393e38fc20979a59017ee91a7342b",
+  "scientific_increment": 0,
+  "new_research_round": null,
+  "scope": "Arithmetic verification of adopted predictive and observation summaries only",
+  "normal_quantile_97_5_percent": 1.9599639845400536,
+  "residual_definition": "held_out_observation_mean - prediction_mean",
+  "rows": [
+    {
+      "prediction_id": "GP_2026",
+      "prediction_mean_yD": 2.442,
+      "prediction_sigma_yD": 0.04,
+      "observation_mean_yD": 2.527,
+      "observation_sigma_yD": 0.03,
+      "residual_observation_minus_prediction_yD": 0.08499999999999996,
+      "combined_sigma_yD": 0.05,
+      "signed_standardized_residual": 1.6999999999999993,
+      "two_sided_gaussian_p": 0.08913092551708623,
+      "residual_interval_95_yD": [
+        -0.012998199227002724,
+        0.18299819922700267
+      ],
+      "interval_contains_zero": true
+    },
+    {
+      "prediction_id": "PRIMAT_network_2026_comparison",
+      "prediction_mean_yD": 2.444,
+      "prediction_sigma_yD": 0.037,
+      "observation_mean_yD": 2.527,
+      "observation_sigma_yD": 0.03,
+      "residual_observation_minus_prediction_yD": 0.08300000000000018,
+      "combined_sigma_yD": 0.04763402145525821,
+      "signed_standardized_residual": 1.7424520849653773,
+      "two_sided_gaussian_p": 0.08142936876748509,
+      "residual_interval_95_yD": [
+        -0.010360966491114107,
+        0.1763609664911145
+      ],
+      "interval_contains_zero": true
+    },
+    {
+      "prediction_id": "PArthENoPE_network_2026_comparison",
+      "prediction_mean_yD": 2.512,
+      "prediction_sigma_yD": 0.042,
+      "observation_mean_yD": 2.527,
+      "observation_sigma_yD": 0.03,
+      "residual_observation_minus_prediction_yD": 0.015000000000000124,
+      "combined_sigma_yD": 0.051613951602255764,
+      "signed_standardized_residual": 0.29061909685955056,
+      "two_sided_gaussian_p": 0.7713426530081485,
+      "residual_interval_95_yD": [
+        -0.08616148624021457,
+        0.11616148624021481
+      ],
+      "interval_contains_zero": true
+    }
+  ],
+  "averaged_prediction": null,
+  "physical_prediction_independently_recomputed": false,
+  "joint_B993_cosmological_history_verified": false
+}

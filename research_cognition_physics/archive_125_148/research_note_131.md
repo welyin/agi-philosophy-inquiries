@@ -4,9 +4,9 @@
 
 **定理：单份独立标准编码、任意未知输入来自相同半径 r 的三维球时，确定性共同输出的最优最坏迹距离误差恰为**
 
-\[
+$$
 \boxed{\epsilon_*(r)=r(1+r)/12.}
-\]
+$$
 
 双方平分方案达到此界。若要求旧主体精确保留，最优值改为 r/6。
 
@@ -14,19 +14,19 @@
 
 输入集合为
 
-\[
+$$
 \rho_{\boldsymbol n,r}=\tfrac12(I+r\,\boldsymbol n\cdot\boldsymbol\sigma),
 \quad|\boldsymbol n|\le1.
-\]
+$$
 
 它在任意 r>0 时仍张成全部 Hermitian 方向。它没有从原读取强度 η 自动导出，也不等于 X–Z 圆盘。
 
 一个简单检查是：纯态 P 可以用半径 r 的两个混态作有符号线性组合，
 
-\[
+$$
 P=\frac{1+r}{2r}\rho_{P,r}
 -\frac{1-r}{2r}\rho_{I-P,r}.
-\]
+$$
 
 因此若一个固定线性接入通道对整个非零球精确，双线性展开会让它对纯产品输入也精确，与第 126 轮冲突。下面进一步求出非零误差的锐界。
 
@@ -34,85 +34,85 @@ P=\frac{1+r}{2r}\rho_{P,r}
 
 沿第 128 轮取六个 Pauli 纯态 a,b；物理输入改成
 
-\[
+$$
 \Omega_{ab}(r)=\mathcal E((1-r)I/2+ra)
 \otimes\mathcal E((1-r)I/2+rb).
-\]
+$$
 
 检测效应仍为 $F_{ab}=\operatorname{real\_lift}(a\otimes b)$。正确的混态共同目标通过率是
 
-\[
+$$
 q_{\rm ideal}(r)=(1+r)^2/4,
-\]
+$$
 
 此时不再是 1。定义平均 Choi 得分矩阵 $R_r=\frac1{36}\sum\Omega_{ab}(r)^{\mathsf T}\otimes F_{ab}$。
 
 写第 128 轮的纯态对偶为 Y₁，余量 $D_1=Y_1\otimes I-R_1\ge0$。另设
 
-\[
+$$
 Q=\frac1{36}\sum_{a,b}\Omega_{ab}(1)^{\mathsf T}\otimes
 (I-F_A-F_B+F_{ab}),
-\]
+$$
 
 其中 $F_A=\operatorname{real\_lift}(a\otimes I)$，$F_B=\operatorname{real\_lift}(I\otimes b)$。因两投影对易，
 
-\[
+$$
 I-F_A-F_B+F_{ab}=(I-F_A)(I-F_B)\ge0,
-\]
+$$
 
 故 Q≥0。程序逐项核对投影恒等式，576Q 的条目也均为整数。
 
 取
 
-\[
+$$
 Y_0=I_{16}/64,\quad
 Y_{\rm lin}=(I_{16}/16+Y_1)/2,
-\]
+$$
 
-\[
+$$
 Y_r=(1-r)^2Y_0+r(1-r)Y_{\rm lin}+r^2Y_1.
-\]
+$$
 
 展开两个独立输入，并利用六态平均为 I/2，直接得到
 
-\[
+$$
 \boxed{Y_r\otimes I-R_r=
 \frac{r(1+r)}2D_1+\frac{r(1-r)}2Q\ge0.}
-\]
+$$
 
 D₁ 的正性由第 128 轮整数多项式证书保证，Q 的正性逐项成立，两个系数在整个 [0,1] 非负。因此这是连续全区间证明，不是只检查有限 r 点的最小特征值。
 
 对任意完全正保迹接入，
 
-\[
+$$
 \overline q(r)\le\operatorname{tr}Y_r
 =\frac14+\frac{5r}{12}+\frac{r^2}{6}.
-\]
+$$
 
 迹距离至少是同一个有效检测的概率差，故
 
-\[
+$$
 \epsilon_*(r)\ge q_{\rm ideal}(r)-\operatorname{tr}Y_r
 =r(1+r)/12.
-\]
+$$
 
 ## 3 平分通道达到全区间界
 
 用第 129 轮 θ=1/2 的确定性通道：
 
-\[
+$$
 \tau=\tfrac12[\rho\otimes\Lambda(\sigma)+\Lambda(\rho)\otimes\sigma],
 \qquad\Lambda(X)=2X/3+I/6
-\]
+$$
 
 （上式 Λ 写法针对归一化状态）。两输入都在半径 r 球面时，选各自 Bloch 方向为局部特征基，$\tau-\rho\otimes\sigma$ 的四个特征值为
 
-\[
+$$
 -\frac{r(1+r)}{12},\quad
 \frac{r^2}{12},\quad
 \frac{r^2}{12},\quad
 \frac{r(1-r)}{12}.
-\]
+$$
 
 迹距离恰为 r(1+r)/12。内部状态是球面状态的混合；误差对每个输入分别凸，故整个球也不超过该值。与上界证书合并，最优性成立。
 
@@ -120,9 +120,9 @@ D₁ 的正性由第 128 轮整数多项式证书保证，Q 的正性逐项成�
 
 平分方案的两方边缘误差分别为 r/12。任意共同输出通道都满足
 
-\[
+$$
 \delta_A(r)+\delta_B(r)\ge r/6.
-\]
+$$
 
 证明可从第 129 轮的平均局部支撑检测得到：将某一方的六个准备平均，另一方输入变为中心态；对准备符号求平均后，输入无关的偏置相消，每个局部方向的响应随 r 线性缩放。纯态证书给出的平均两方 Bloch 响应和≤5/3，因此半径 r 下两边平均缺口之和至少 r/6。各方最坏迹距离不小于对应平均有符号检测缺口。
 

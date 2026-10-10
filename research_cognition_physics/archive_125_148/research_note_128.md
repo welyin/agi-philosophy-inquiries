@@ -8,11 +8,11 @@
 
 对任意实完全正保迹映射 Φ，定义
 
-\[
+$$
 \epsilon(\Phi)=\sup_{\rho,\sigma}
 D\!\left(\Phi(\mathcal E(\rho)\otimes\mathcal E(\sigma)),
 \mathcal E(\rho\otimes\sigma)\right).
-\]
+$$
 
 输入各一份，不提供未知态描述或副本。任意固定独立辅助态、全部分支反馈和固定共同输出解码，都可以并入 Φ。Φ 的输出可以是任意 8 维实态，不要求它先具有共同取向对称性；这使下界覆盖面更宽。
 
@@ -22,23 +22,23 @@ D\!\left(\Phi(\mathcal E(\rho)\otimes\mathcal E(\sigma)),
 
 取六个纯态
 
-\[
+$$
 \mathcal Q=\{(I\pm X)/2,(I\pm Y)/2,(I\pm Z)/2\}.
-\]
+$$
 
 对每对 $a,b\in\mathcal Q$，定义实际输入和目标支撑效应
 
-\[
+$$
 \Omega_{ab}=\mathcal E(a)\otimes\mathcal E(b),\qquad
 F_{ab}=\operatorname{real\_lift}(a\otimes b).
-\]
+$$
 
 $F_{ab}^2=F_{ab}$，秩为 2。它是效应，不是归一化密度矩阵；理想编码通过它的概率为 1。因而
 
-\[
+$$
 D(\Phi(\Omega_{ab}),\mathcal E(a\otimes b))
 \ge1-\operatorname{tr}(F_{ab}\Phi(\Omega_{ab})).
-\]
+$$
 
 只需证明 36 个输入上的平均通过率不超过 5/6，就得到至少一个输入误差≥1/6。
 
@@ -48,36 +48,36 @@ D(\Phi(\Omega_{ab}),\mathcal E(a\otimes b))
 
 采用“输入、输出”顺序的 Choi 矩阵
 
-\[
+$$
 C_\Phi=\sum_r\operatorname{vec}(L_r)\operatorname{vec}(L_r)^{\mathsf T},
 \quad C_\Phi\ge0,\quad\operatorname{tr}_{\rm out}C_\Phi=I_{16}.
-\]
+$$
 
 这里 vec 按输入索引再输出索引排列。定义
 
-\[
+$$
 R=\frac1{36}\sum_{a,b}\Omega_{ab}^{\mathsf T}\otimes F_{ab}.
-\]
+$$
 
 平均通过率就是 $\operatorname{tr}(C_\Phi R)$。若找到输入上的对称矩阵 Y 满足
 
-\[
+$$
 Y\otimes I_8-R\ge0,
-\]
+$$
 
 则每个允许通道都满足
 
-\[
+$$
 \operatorname{tr}(C_\Phi R)\le
 \operatorname{tr}(C_\Phi(Y\otimes I_8))
 =\operatorname{tr}Y.
-\]
+$$
 
 取第 126 轮的输入对齐投影 P（包括目标恒等因子），有 rank(P)=8。设
 
-\[
+$$
 \boxed{Y=P/16+(I-P)/24,\qquad \operatorname{tr}Y=5/6.}
-\]
+$$
 
 剩下唯一需要认证的条件是上述矩阵正性。
 
@@ -85,27 +85,27 @@ Y\otimes I_8-R\ge0,
 
 令第 126 轮整数矩阵 $C=\sqrt2K_+$，于是 $C^{\mathsf T}C=2P$。不含无理数地构造
 
-\[
+$$
 576Y=24I+6C^{\mathsf T}C,
-\]
+$$
 
-\[
+$$
 576R=16\sum_{a,b}\Omega_{ab}^{\mathsf T}\otimes F_{ab}.
-\]
+$$
 
 第二式虽然由小的二进制分数构成，相加后全部为整数。代码在转整数前精确核对这一点，不使用舍入容差。
 
 写
 
-\[
+$$
 M=576(Y\otimes I_8-R).
-\]
+$$
 
 M 是 128×128 实对称整数矩阵，逐项整数乘法验证
 
-\[
+$$
 \boxed{M(M-16I)(M-20I)(M-24I)(M-32I)(M-36I)=0.}
-\]
+$$
 
 因此 M 的每个实特征值属于 {0,16,20,24,32,36}，全部非负，正性得到证明。不是凭有限精度最小特征值接近零来判断。
 
@@ -117,16 +117,16 @@ M 是 128×128 实对称整数矩阵，逐项整数乘法验证
 
 综上，
 
-\[
+$$
 \epsilon(\Phi)\ge1-\frac56=\frac16
 \quad\text{对每个确定性实通道成立}.
-\]
+$$
 
 第 127 轮对任意混合或纯输入给出≤1/6 的构造，因此
 
-\[
+$$
 \boxed{\inf_\Phi\epsilon(\Phi)=1/6.}
-\]
+$$
 
 该构造还精确保留旧群体，所以在加入“旧群体必须精确保留”条件后，此最优值仍然可达。
 

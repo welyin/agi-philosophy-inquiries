@@ -26,6 +26,7 @@
 原非零 Higgs 对单独超荷有响应，|D H|²可以随超荷连接改变。因此不能仅凭885的α²项就断言一切局部物质反项无能为力。也不能随意把 Higgs 设零后忘记原参考片条件。
 
 本轮沿原群中真正保持 Higgs 的方向。原表示来自[598](../archive_585_628/research_note_598.md)，原Higgs X=(0,h)，超荷3，SU(2)生成元 t₃=diag(1,−1)/2。取
+
 $$
 Q_{\rm em}=Y+6T_3,\qquad
 g(t)=(I_3,\operatorname{diag}(e^{3it},e^{-3it}),e^{it}),
@@ -36,6 +37,7 @@ $$
 这里采用原整数荷单位；不是重新推出电磁群，也不是改变耦合。粒子32分量中，荷4、−2、−6、0的重数分别为12、12、4、4。自对偶扩展取 Q=diag(Q_em,−Q_em)，于是 tr₆₄Q²=768。
 
 原Yukawa仅连接相同 Q_em，Majorana位于中性部门。因此
+
 $$
 [Q,M_\xi]=0,\qquad \{\Gamma_i,M_\xi\}=0,\qquad
 [\Gamma_i,Q]=0,\qquad
@@ -48,6 +50,7 @@ $$
 ## 3. 候选在没有切口的片内仍发散
 
 对固定 |α|<1/15，883给所有保留动量上的生成元完全一致。把885式(7)—(9)用于原Q_em，得到
+
 $$
 \ell_N^{\rm em}(\alpha)-\ell_N^{\rm em}(0)
 =C_{\rm em}\alpha^2N^2+o(N^2),\qquad
@@ -65,6 +68,7 @@ $$
 在任意不绕环的小区域，g(x₁)=exp(−iαx₁Q_em)把A变成零，同时保持原Higgs和singlet不变。其全局周期性一般不成立，所以整环输运可以不同；但局部规范协变密度必须在这两份局部同构背景上相同。
 
 明确允许的反项写为
+
 $$
 C_N[\Phi]=\int c_N(j^m\Phi)\,d{\rm vol},\qquad
 c_N(j^m(g\Phi))=c_N(j^m\Phi),\qquad
@@ -81,6 +85,7 @@ $$
 ## 5. 连续相对目标并非本来就同样发散
 
 由式(2)，同时对角化 Q 与 M_ξ²，记64个本征标签为 (q_a,μ_a²)，μ_a>0。定义完整连续热核差
+
 $$
 \Delta\Theta_\alpha(s)=
 \sum_{a=1}^{64}e^{-s\mu_a^2}
@@ -93,6 +98,7 @@ e^{-s[(k_1+\alpha q_a)^2+k_2^2+k_3^2]}
 $$
 
 对Gaussian函数作Fourier积分，再将其整数周期化，得到
+
 $$
 \Delta\Theta_\alpha(s)=
 \left(\frac{\pi}{s}\right)^{3/2}
@@ -106,6 +112,7 @@ $$
 n=0项恰消失；虚部由±n相消。s→0时差为 O(s^(-3/2)e^(−π²/s))，且α在紧集上一致；s→∞改用式(5)，原正质量隙使其指数衰减。局部短时发散因此与α无关。
 
 对平方根使用 elementary Laplace identity，并只在已相减的表达式上积分：
+
 $$
 \Delta\ell_{\rm vac}^{\rm cov}(\alpha)
 =-\frac{\beta}{8\sqrt\pi}\int_0^\infty
@@ -114,6 +121,7 @@ s^{-3/2}\Delta\Theta_\alpha(s)\,ds .
 $$
 
 系数包含原Nambu半权。式(6)及正质量保证绝对收敛，α导数也可在紧片交换积分。零点处为零，所得相对值连续。热激发差为
+
 $$
 \Delta\ell_{\rm exc}(\alpha)=\frac12\sum_{a,k}
 \left[

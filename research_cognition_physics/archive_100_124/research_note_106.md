@@ -8,10 +8,10 @@
 
 沿用两记忆 M,N、A=cX−√(1−c²)Z、L=cZ+√(1−c²)X，以及两套分开准备的 G、H 校准任务。每个环境片段仍使用已有受控实旋转：
 
-\[
+$$
 R_i=R_y(2\arccos\lambda_i)=\lambda_i I-i s_iY,\qquad
 s_i=\sqrt{1-\lambda_i^2}.
-\]
+$$
 
 **这里 λ_i 是门的角度参数。环境初态改为混合或相关后，它不再自动等于两种条件环境态的纯态重叠，也不再单独衡量记录质量。** 代码沿用旧函数的 overlaps 字段名，物理含义以此处为准。
 
@@ -19,21 +19,21 @@ s_i=\sqrt{1-\lambda_i^2}.
 
 在数学上先去掉可访问侧已知受控门；这只是求谱的酉等价变换。若实际采用逆操作，必须另外执行这些门。定义
 
-\[
+$$
 \sigma_S=\operatorname{tr}_U\sigma_{SU},\qquad
 C_S=\operatorname{tr}_U[\sigma_{SU}(I_S\otimes R_U^\dagger)].
-\]
+$$
 
 完整可访问输出在此框架中恰为
 
-\[
+$$
 \boxed{
 \Psi_{\sigma_S,C_S}(\omega)=
 \sigma_S\otimes(P_+\omega P_++P_-\omega P_-)
 +C_S\otimes P_+\omega P_-
 +C_S^\dagger\otimes P_-\omega P_+.
 }
-\]
+$$
 
 P_±=(I±A)/2，其他记忆或参考上的恒等因子省略。实际输出再共轭可访问受控门。此式由四个扇区块逐项取偏迹得到，适用于任意复 σ 和任意复参考；C_S 通常不是密度矩阵，也不必厄米。
 
@@ -43,18 +43,18 @@ P_±=(I±A)/2，其他记忆或参考上的恒等因子省略。实际输出再�
 
 在 A 本征基中，L 是一个非对角 Pauli 轴；无关整体符号可由基变换吸收。定义
 
-\[
+$$
 Q=\begin{pmatrix}
 c\sigma_S&C_S\\
 C_S^\dagger&c\sigma_S
 \end{pmatrix}.
-\]
+$$
 
 H 校准态差为 Q 与 D_d/2 的张量形式，w=√(1−d²)，‖D_d‖_1=2w，故
 
-\[
+$$
 \boxed{D_H(E_SMN)=\frac{w}{2}\|Q\|_1.}
-\]
+$$
 
 该界覆盖全部可访问联合量子测量。主反例中的 σ、C 和校准差矩阵均为实，最优谱投影也可以取实；没有偷加单片段 Y 读取。
 
@@ -62,9 +62,9 @@ H 校准态差为 Q 与 D_d/2 的张量形式，w=√(1−d²)，‖D_d‖_1=2w�
 
 开放 E_0，关闭 E_1,E_2。使用一参数实状态族
 
-\[
+$$
 \boxed{\sigma_\kappa=\frac{I+\kappa X_0Y_1Y_2}{8},\qquad -1\le\kappa\le1.}
-\]
+$$
 
 XYY 含两个 Y，所以矩阵为实对称；平方为 I，其特征值为 ±1，σ_κ 的特征值为 (1±κ)/8，各四重，因而正且归一化。
 
@@ -72,30 +72,30 @@ XYY 含两个 Y，所以矩阵为实对称；平方为 I，其特征值为 ±1�
 
 把环境全部排除后的记忆通道也完全相同：
 
-\[
+$$
 \zeta=\operatorname{tr}(\sigma_\kappa R_0^\dagger R_1^\dagger R_2^\dagger)
 =\lambda_0\lambda_1\lambda_2,\qquad
 \omega\longmapsto\Lambda_\zeta(\omega).
-\]
+$$
 
 这里乘积代表不同片段上的张量乘积；X_0 与 I、Y_0 都迹正交，使 κ 项没有贡献。不仅 G 查询统计相同，整个无环境记忆输出对任意输入都相同。
 
 但是开放 E_0 后：
 
-\[
+$$
 \sigma_0=I/2,\qquad
 C_0=\frac{BI-Q_\kappa X}{2},\quad
 B=\lambda_1\lambda_2,\quad Q_\kappa=\kappa s_1s_2.
-\]
+$$
 
 在 E_0 的 X 本征基下，两个相位系数为 B±Q_κ，因此
 
-\[
+$$
 \boxed{
 D_H(E_0MN)=\frac{w}{2}
 \left[\max(c,|B+Q_\kappa|)+\max(c,|B-Q_\kappa|)\right].
 }
-\]
+$$
 
 取 c=d=4/5，三个 λ_i=9/10：
 
@@ -120,15 +120,15 @@ D_H(E_0MN)=\frac{w}{2}
 
 实双片段状态的 Pauli 展开只含偶数个 Y。固定两个单片段边缘后，可变化的相关方向是 XX、XZ、ZX、ZZ、YY。设 t_YY=tr(σYY)，则
 
-\[
+$$
 \zeta=\lambda_0\lambda_1-s_0s_1t_{YY}.
-\]
+$$
 
 门参数相同且两个耦合活跃，ζ 相同就固定了 t_YY。开放 E_0 的响应只有
 
-\[
+$$
 C_0=\lambda_1\sigma_0+\frac{i s_1t_{YY}}2Y_0.
-\]
+$$
 
 其他四个相关方向在对 E_1 取响应偏迹时全部消失，因此 σ_0、C_0 相同，完整可访问通道相同。开放另一个片段也一样。
 

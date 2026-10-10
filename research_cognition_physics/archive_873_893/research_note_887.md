@@ -28,15 +28,18 @@
 ## 2. c数校准必须同时改变来源
 
 记原有限自由Fock Hamiltonian为 B_N(α)，条件态 γ_N=e^(−βB_N)/Z_N。对
+
 $$
 B_N^C(\alpha)=B_N(\alpha)+C_N(\alpha)I,\qquad
 \gamma_N^C(\alpha)=\gamma_N(\alpha),\qquad
 r_N^C(\alpha)\propto p(\alpha)Z_N(\alpha)e^{-\beta C_N(\alpha)}
 \tag{1}
 $$
+
 条件归一态精确不变。来源必须是 ∂αB_N+C_N'I，Hessian也同时改变。
 
 固定一次准备，施加α+εf(t)，令W为有源与无源传播的相对算符。新增项在每个时刻为c数，故
+
 $$
 W_N^C(\epsilon)=e^{-i\vartheta_N(\epsilon)}W_N(\epsilon),\qquad
 \vartheta_N(\epsilon)=\int
@@ -44,6 +47,7 @@ W_N^C(\epsilon)=e^{-i\vartheta_N(\epsilon)}W_N(\epsilon),\qquad
 |\operatorname{Tr}\gamma_N W_N^C|=|\operatorname{Tr}\gamma_N W_N|.
 \tag{2}
 $$
+
 这是实际有限传播的精确相位身份，不是省略来源接触的近似。它不适用于把α提升为动态算符后的整个耦合系统；届时C_N(α)是规范势，不能作为全局c数拿出去。
 
 ## 3. 同一原电子块的正下界
@@ -52,6 +56,7 @@ $$
 w=(N/2−u)χ(u/η)，w∈[1/2,2]，η=0.1。886的 Q_em 使电子左右荷均为−6，原质量 |μ|²=0.017496923397356805 保持。
 
 k=(L,0,0) 的原电子四维粒子块平方为 (w²+|μ|²)I。两正两负能值为±ε，ε=√(w²+|μ|²)，相应来源对角值为±6ww′/ε；共轭hole在相反动量计入。以884相同Nambu半权计数，记S_N为完整Fock能值导数的热方差，得到
+
 $$
 V_{N,f}(\alpha)\ge S_N(\alpha)\ge
 S_N^{\rm e}(\alpha_N(w))
@@ -60,9 +65,11 @@ S_N^{\rm e}(\alpha_N(w))
 v_\beta(E)=\frac{e^{-\beta E}}{(1+e^{-\beta E})^2}.
 \tag{3}
 $$
+
 f为同一个实光滑紧支时间测试且∫f=1，第一项沿884的谱对角正下界。电子部门是原完整自由Hamiltonian的不变Fock因子；其余物种只增加能值导数的独立热方差，未从模型删除。
 
 由884已证 w′/(logN)²→w/η 及 dα=dw/(6w′)，
+
 $$
 \frac{1}{(\log N)^2}\int_{\alpha_N([1/2,2])}
 S_N^{\rm e}(\alpha)\,d\alpha
@@ -72,6 +79,7 @@ C_{\rm e}:=\frac{24}{\eta}
 v_\beta\!\left(\sqrt{w^2+|\mu|^2}\right)\,dw>0.
 \tag{4}
 $$
+
 数值 C_e≈28.5680672934。原质量精确保留，无需884超荷背景中的重轻近似。
 
 若r_N在这条带上趋向连续r_*且r_*(−1/12)>0，式(4)直接乘该正值。取 C_N=(ℓ_N−ℓ_cov)/β，使(1)精确等于886的固定连续参数准备，就是一个满足此前提的明确修复；因此它不能同时匹配二阶动态来源。式(2)禁止以c数接触消掉该差。
@@ -79,12 +87,14 @@ $$
 ## 4. 弱收敛确实允许挖窄坑
 
 取任意光滑正的目标密度r_*。在切口带附近取中心a_N→−1/12、宽δ_N→0且带宽/δ_N→0，选光滑 b_N：中心平台为√ε_N，带外为1，0<ε_N→0。令
+
 $$
 r_N(\alpha)=\frac{r_*(\alpha)b_N(\alpha)^2}
 {\int_I r_*(a)b_N(a)^2\,da},\qquad
 \|r_N-r_*\|_1=O(\delta_N).
 \tag{5}
 $$
+
 若取ε_N=N⁻⁴、δ_N=η/[6√(logN)]，可让884/本轮选定带完全落于低平台。该带的加权式(4)趋零；利用884的全带多项式方差上界亦能压低该带的全部时间平滑方差。**这没有证明所有参数、全部混合来源或真正动态模型通过。**
 
 实现这份正密度可在(1)的精确静态校准上再加 −β⁻¹log b_N²。它是明确新增的参数势；其导数及内部资源不能免费忽略。
@@ -95,6 +105,7 @@ $$
 
 现在明确添加以下合同：α为同一Hilbert空间中的量子配置坐标，空间为L²(I,dα;F_N)，F_N是原完整有限费米Fock空间；考察正常态ρ_N。有限动能允许把其谱分解写为
 ρ_N=∑_l|ψ_l⟩⟨ψ_l|，ψ_l∈H¹，∑‖ψ_l‖²=1。令F(α)的列为ψ_l，配置对角矩阵密度及动能为
+
 $$
 R_N(\alpha)=F(\alpha)F(\alpha)^*,\quad
 r_N=\operatorname{Tr}R_N,\quad
@@ -102,15 +113,18 @@ r_N=\operatorname{Tr}R_N,\quad
 \kappa_N\ge\kappa_*>0.
 \tag{6}
 $$
+
 平凡表示D=∂；也允许反Hermitian纤维连接。它不改变下述本征值估计，因为[A,R]的本征基对角元为零。区间可取标准闭动能形式；结论是局部的，不依赖额外施加零边界值。正常态不是“逐α混合”的形式δ核；后者一般不定义L²上的迹类态。
 
 设R的本征值λ_j、归一本征向量u_j。几乎处处，
 λ_j′=2Re⟨F* u_j,(D F)*u_j⟩，故Cauchy不等式给
+
 $$
 \sum_j\frac{(\lambda_j')^2}{\lambda_j}
 \le4\|D_\alpha F\|_{\rm HS}^2 .
 \tag{7}
 $$
+
 零本征值按下半连续延拓。对本轮正条件Gibbs，在r>0处所有λ_j>0；电子显式谱使分支导数可取，简并不改变不等式。可用有限谱和再极限处理无限列F。
 
 此处没有要求ρ_N为纯态、Gaussian态、特定纯化或整个耦合Hamiltonian的热态。
@@ -118,13 +132,16 @@ $$
 ## 6. 把逐参数条件Gibbs和动能联立
 
 额外要求 R_N(α)=r_N(α)γ_N(α)。记γ_N本征概率p_j。将λ_j=r_Np_j代入式(7)，交叉项因∑p_j′=0消失：
+
 $$
 \mathcal K_N\ge\frac{\kappa_N}{4}\int_I
 \left[\frac{(r_N')^2}{r_N}
 +r_N\sum_j\frac{(p_j')^2}{p_j}\right]d\alpha.
 \tag{8}
 $$
+
 对原自由Gibbs，p_j′/p_j=−β(E_j′−⟨E′⟩)，所以
+
 $$
 \sum_j\frac{(p_j')^2}{p_j}
 =\beta^2 S_N(\alpha)\ge\beta^2S_N^{\rm e}(\alpha),\qquad
@@ -133,16 +150,19 @@ $$
 \frac{\kappa_N\beta^2}{4}\int_I r_N S_N^{\rm e}\,d\alpha.
 \tag{9}
 $$
+
 任意c数能源平移同时平移所有E_j′，在中心化方差中消失。原Majorana与其他物种保留；只取电子正贡献给下界。16维数值是这份原四模式电子因子的完整Fock矩阵，不是任意另配两态模型。
 
 ## 7. 有界动能使弱边缘收敛变强
 
 假设sup_N K_N<∞，由式(9)得u_N=√r_N在H¹(I)有一致界且‖u_N‖₂=1。直接Cauchy积分给
+
 $$
 |u_N(x)-u_N(y)|\le
 \|u_N'\|_2\,|x-y|^{1/2}.
 \tag{10}
 $$
+
 与L²归一合用得到一致上界及等度连续性，故每个子列有一致收敛子列。若同时r_Ndα弱收敛到连续r_*dα，则任何一致极限u满足u²=r_*且u≥0；唯一性使整个r_N一致趋于r_*。
 
 若r_*(−1/12)>0，切口邻域于是最终有固定正下界r_N≥c。代入式(4)、(9)得 K_N≥c′(logN)²，和所假设的一致预算矛盾。因此：

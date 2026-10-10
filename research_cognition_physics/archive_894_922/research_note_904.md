@@ -24,6 +24,7 @@
 ## 2. 同一104个Cauchy变量，不是104个物理自由度
 
 在902的谐和坐标和内部时间规范下，计算变量及其变分为
+
 $$
 Y=(g_{\mu\nu},\dot g_{\mu\nu},\Phi^A,\pi_A,A_i^a,E^{ia}),
 \quad \Phi=(\phi^1,\ldots,\phi^5,p),\qquad
@@ -39,6 +40,7 @@ $$
 ## 3. 约束相容的初始变分
 
 复用859的真实初值族p=εsin x、π_p=0；初始其他canonical物质资料不变，但共形因子必须随ε解约束。写原方程
+
 $$
 -8\Delta\psi+C_\epsilon\psi^5-B_\epsilon\psi
 -\mathcal A\psi^{-7}-2\mathcal Y\psi^{-3}=0,
@@ -48,6 +50,7 @@ $$
 $$
 
 𝒜=|Ã|²+p_H5 K⁻¹p_H5，𝒴沿原规范资料，均在此族不变。τ及动量约束解Ã也保持。对ε求导，z=∂εψ满足
+
 $$
 \begin{aligned}
 (-8\Delta+J)z&=2\epsilon\left(\sin^2x\,\psi^5+\cos^2x\,\psi\right),\\
@@ -60,6 +63,7 @@ $$
 连续可逆性、光滑依赖及正支使用原572/859/900结果，不在本轮重复计数。程序用原CG和Fourier预条件器求式(3)，不靠两份近似ψ相减定义初值导数。
 
 同一谐和初始资料的导数为
+
 $$
 \begin{gathered}
 \delta\gamma_{ij}=4\psi^3z\delta_{ij},\qquad
@@ -76,6 +80,7 @@ $$
 δg₀μ、δḡ₀₀、δπ、初始δH5、δA和δE为零。初始g的空间部分及其时间导数不能冻结。本轮取原ε=.02，不把它与870的接收关联参数r或872的λ混同。
 
 一个直接负对照是只保δp=sin x而令几何变化全为零。原Hamiltonian约束的变化为
+
 $$
 \delta\mathcal H_{\rm frozen\ geometry}
 =-2\epsilon\left(\psi^{-4}\cos^2x+\sin^2x\right),
@@ -88,6 +93,7 @@ $$
 ## 4. 如何避免遗漏耦合或差分抵消
 
 数值方向导数采用同一实解析右端的复数延拓：
+
 $$
 D\mathcal F(Y)[U]
 ={\operatorname{Im}\mathcal F(Y+ihU)\over h}+O(h^2),
@@ -127,6 +133,7 @@ $$
 ## 6. 与765/785物理传播的关系及边界
 
 连续层面，若Y_ε是同一原作用的真实约束发展，则对其求导得到原Euler方程Hessian的无源解。由canonical量恢复协变字段u=(δg,δA_μ,δΦ)时，δA₀=0，动量必须按同一Legendre关系运输：
+
 $$
 \pi_A=\sqrt\gamma\,G_{AB}
 {\partial_t\Phi^B-\beta^iD_i\Phi^B\over\alpha},\qquad
@@ -136,6 +143,7 @@ E^{ia}=K_a\sqrt\gamma\,\gamma^{ij}
 $$
 
 谐和约束及Einstein/Gauss约束的线性化由同一Noether身份传播。故在相应正则片内，可复用765/785：
+
 $$
 Pu=0,\qquad P\Pi=P,\quad\Pi=I-KL
 \quad\Longrightarrow\quad P(\Pi u)=0,\quad L\Pi u=0.

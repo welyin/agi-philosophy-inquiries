@@ -36,16 +36,22 @@ $$
 
 式(1)的半群对所有时间保持可分态、以及对所有时间属于LOCC闭包，二者在本类别内都等价于
 
-$$\boxed{\gamma_A\gamma_B\ge g^2.}\tag{2}$$
+$$
+\boxed{\gamma_A\gamma_B\ge g^2.}\tag{2}
+$$
 
 必要性直接来自 $|++\rangle$ 初态的部分转置：其零空间中的切向块为
 
-$$\begin{pmatrix}\gamma_A&-ig\\ig&\gamma_B\end{pmatrix}.$$
+$$
+\begin{pmatrix}\gamma_A&-ig\\ig&\gamma_B\end{pmatrix}.
+$$
 
 当式(2)失败时，该块有负本征值，足够小的正时间就产生纠缠。充分性由双向局部弱测量与经典条件反馈构造，而非从部分转置正性猜测实现：两测量强度贡献的噪声分别为
 
-$$\gamma_A=\kappa_A+\frac{g^2}{4\kappa_B},\qquad
-\gamma_B=\kappa_B+\frac{g^2}{4\kappa_A}.$$
+$$
+\gamma_A=\kappa_A+\frac{g^2}{4\kappa_B},\qquad
+\gamma_B=\kappa_B+\frac{g^2}{4\kappa_A}.
+$$
 
 适当选择κ达到乘积边界，再加局部噪声覆盖全部允许率。每个有限步都是合法LOCC；精确半群属于其闭包。详细局部Kraus构造、g=0与非对称情况见[解析稿§1—3](1033/drafts/classical_channel_noise_derivation.md)。
 
@@ -55,11 +61,15 @@ $$\gamma_A=\kappa_A+\frac{g^2}{4\kappa_B},\qquad
 
 用同一生成元和时长T，分别在一端Z本征态上检查另一端相干，得到
 
-$$V_A=e^{-2\gamma_AT},\quad V_B=e^{-2\gamma_BT},\quad\phi=4gT.$$
+$$
+V_A=e^{-2\gamma_AT},\quad V_B=e^{-2\gamma_BT},\quad\phi=4gT.
+$$
 
 φ是四路径相互作用相位的展开标定值。式(2)推出
 
-$$\boxed{V_AV_B\le e^{-|\phi|}.}\tag{3}$$
+$$
+\boxed{V_AV_B\le e^{-|\phi|}.}\tag{3}
+$$
 
 这项必要条件可以把同一作用的相位预算与量子相干预算联系起来；只看到相位不够，单独通过式(3)也不等于满足全部合同。相位仅知道模 $2\pi$ 时须保留展开分支。
 
@@ -69,11 +79,15 @@ $$\boxed{V_AV_B\le e^{-|\phi|}.}\tag{3}$$
 
 取 $g=1$、$\gamma_A=\gamma_B=1/4$、$T=.01$，定义可信局部统计见证
 
-$$W=\frac{I\otimes I-X\otimes X-Y\otimes Z-Z\otimes Y}{4}.$$
+$$
+W=\frac{I\otimes I-X\otimes X-Y\otimes Z-Z\otimes Y}{4}.
+$$
 
 所有可分态的W期望非负。解析Taylor余项给
 
-$$\langle W\rangle\le-\frac{273}{38800}<-0.007.$$
+$$
+\langle W\rangle\le-\frac{273}{38800}<-0.007.
+$$
 
 直接计算为约 $-0.00746191990$。若实际态与有效态的半迹距离误差至多 $.001$，因 $\|W\|=1/2$，误差后上界仍为 $-1171/194000<0$。另有仪器误差则继续扣除，不能假设为零。
 
@@ -83,7 +97,9 @@ $$\langle W\rangle\le-\frac{273}{38800}<-0.007.$$
 
 若两质量均有两条受控路径且同一势可压缩至四路径对角值，才有
 
-$$g=\frac{V_{00}-V_{01}-V_{10}+V_{11}}{4\hbar}.$$
+$$
+g=\frac{V_{00}-V_{01}-V_{10}+V_{11}}{4\hbar}.
+$$
 
 Newton或软核势可提供候选V，但G、路径、支撑、波包移动、泄漏及实际噪声仍需共同匹配。945的单端相位不能当成这里的四路径相位；989的电容见证不能代替引力证据。本轮只提供条件接口，未签收这一共同实现。
 

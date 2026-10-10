@@ -6,10 +6,10 @@
 
 仍用B=2I+aX、H=γ₅X、H_a=γ₅aX B⁻¹，以及A±=(I±H_a)B。H_a Hermitian且谱h_j在(−1,1)，但不要求统一离零间隙。原递推T=A₊⁻¹A₋与(I+H_a)⁻¹(I−H_a)相似。消去z₁至z_L给
 
-\[
+$$
 \det K=\det B\,(\det A_+)^L\det(I+T^L)
 =(\det B)^{L+1}\prod_{j=1}^n[(1+h_j)^L+(1-h_j)^L].
-\]
+$$
 
 det B为正实数：γ₅-Hermiticity保证其为实，Re B>0保证随a从0连续延伸时不经零。代码在原自由及平坦非平凡时间holonomy两种背景、L=1和3上将公式与完整K行列式直接比较，另对大L只用精确谱表达，不构造巨大体矩阵。
 
@@ -17,25 +17,25 @@ det B为正实数：γ₅-Hermiticity保证其为实，Re B>0保证随a从0连�
 
 恒等式
 
-\[
+$$
 \log[(1+h)^L+(1-h)^L]
 =L\log(1+|h|)+r_L(h),\qquad0\le r_L(h)\le\log2
-\]
+$$
 
 在h=0也成立。固定有限盒有一致有界‖X‖，所以log det B=n log2+(a/2)Tr X+O(a²)，且H_a=(a/2)H+O(a²)。Hermitian矩阵的迹范数三角不等式给Tr|H_a|=(a/2)Tr|H|+O(a²)，无需对sign求导。于是
 
-\[
+$$
 \log\det K=n(L+1)\log2+
 \frac{a(L+1)}2\operatorname{Tr}X+
 \frac{aL}2\operatorname{Tr}|H|+O(La^2+a^2+1).
-\]
+$$
 
 原无自环两方向图中Tr X不随规范链路改变。对任意两份原背景U,V，在677的a→0、aL→∞下，得到
 
-\[
+$$
 \frac{\log\det K(U)-\log\det K(V)}{aL}
 \longrightarrow\frac12[\operatorname{Tr}|H(U)|-\operatorname{Tr}|H(V)|].
-\]
+$$
 
 固定盒的误差可一致于全部紧规范背景；上式只涉及辅助谱，不宣称完整物理连续极限。这里的O(1)在除以aL后消失，不错误要求La²→0。
 
@@ -45,11 +45,11 @@ det B为正实数：γ₅-Hermiticity保证其为实，Re B>0保证随a从0连�
 
 对超荷q，时间反周期动量为±π/2+qθ；空间动量只有0、π。空间零模式的|H|恒为1，空间π模式分别为√(5±4sin(qθ))。故
 
-\[
+$$
 \Delta(\theta):=\operatorname{Tr}|H(\theta)|-\operatorname{Tr}|H(0)|
 =4\sum_{q}\left[
 \sqrt{5+4\sin(q\theta)}+\sqrt{5-4\sin(q\theta)}-2\sqrt5\right]<0.
-\]
+$$
 
 求和按原重数；严格不等式由平方根严格凹性及至少一个非零sin(qθ)给出，不依赖小数。两背景的Wilson核都有非零谱，选定θ也避免这两点中的自由物理时间零动量；但本入口不以这些点替代完整Gauss平均。
 

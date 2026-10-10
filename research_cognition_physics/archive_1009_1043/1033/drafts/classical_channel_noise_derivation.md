@@ -39,7 +39,9 @@ $$
 
 对角非负。若 $\det M=\gamma_A\gamma_B-g^2<0$，取其负本征向量w，则
 
-$$\langle w|(e^{t\mathcal L}\rho_0)^\Gamma|w\rangle=t\lambda_-+O(t^2)<0$$
+$$
+\langle w|(e^{t\mathcal L}\rho_0)^\Gamma|w\rangle=t\lambda_-+O(t^2)<0
+$$
 
 在足够小的正t成立。可分态的部分转置必为正，因此此演化会产生纠缠。这里仅需可分态的PPT必要性，不依赖PPT充分分类。LOCC及其闭包保持可分性，故得到1与2各自蕴涵3。
 
@@ -47,15 +49,21 @@ $$\langle w|(e^{t\mathcal L}\rho_0)^\Gamma|w\rangle=t\lambda_-+O(t^2)<0$$
 
 若g=0，式(1)是两份局部退相干，结论直接成立。以下g非零，条件3迫使 $\gamma_A>0$。先引入两个局部测量强度 $\kappa_A,\kappa_B>0$，一向反馈采用
 
-$$c_A=\sqrt{\kappa_A}A,\quad F_B={g\over2\sqrt{\kappa_A}}B,$$
+$$
+c_A=\sqrt{\kappa_A}A,\quad F_B={g\over2\sqrt{\kappa_A}}B,
+$$
 
 反向交换A、B和对应κ。单向的测量反馈生成元为
 
-$$\mathcal L_{c,F}\rho=-i[\tfrac12(c^\dagger F+Fc),\rho]+\mathcal D[c-iF]\rho.\tag{3}$$
+$$
+\mathcal L_{c,F}\rho=-i[\tfrac12(c^\dagger F+Fc),\rho]+\mathcal D[c-iF]\rho.\tag{3}
+$$
 
 不只引用式(3)：对一步δ，A处执行两结果测量
 
-$$M_s=\sqrt{\frac{I+2s\sqrt{\kappa_A\delta}A}{2}},\quad s=\pm1,$$
+$$
+M_s=\sqrt{\frac{I+2s\sqrt{\kappa_A\delta}A}{2}},\quad s=\pm1,
+$$
 
 把s作为经典消息发至B，B执行 $U_s=\exp[-isg\sqrt\delta B/(2\sqrt{\kappa_A})]$。当 $4\kappa_A\delta\le1$ 时，$\sum_s M_s^\dagger M_s=I$，所有Kraus算子 $U_sM_s$ 均为两方局部算子的乘积。展开并对s求和得 $\Phi_{A\to B}(\delta)=I+\delta\mathcal L_{c_A,F_B}+O(\delta^2)$。平方根在所用小δ邻域解析；半整数奇项由正负s相消。
 
@@ -84,7 +92,9 @@ $$
 
 在B的Z本征态上准备A的等权相干态，A的归一化可见度为 $V_A=e^{-2\gamma_AT}$；反向准备给 $V_B=e^{-2\gamma_BT}$。两实验使用相同生成元与时长，局部相位按同一校准字典处理。四路径交互相位的连续标定值为 $\phi=4gT$。由算术—几何均值不等式，经典合同必有
 
-$$V_AV_B=e^{-2T(\gamma_A+\gamma_B)}\le e^{-4|g|T}=e^{-|\phi|}.\tag{6}$$
+$$
+V_AV_B=e^{-2T(\gamma_A+\gamma_B)}\le e^{-4|g|T}=e^{-|\phi|}.\tag{6}
+$$
 
 等号要求 $\gamma_A=\gamma_B=|g|$；本轮不增“宇宙选择最小噪声”原则。式(6)是必要条件，单独通过它不能保证乘积门槛或全部合同成立。
 
@@ -96,7 +106,9 @@ $$V_AV_B=e^{-2T(\gamma_A+\gamma_B)}\le e^{-4|g|T}=e^{-|\phi|}.\tag{6}$$
 
 取 $g=1$、$\gamma_A=\gamma_B=1/4$、$T=1/100$。式(2)的负本征值为 $-3/4$。对应的可分态见证是
 
-$$W=(|w\rangle\langle w|)^\Gamma={I\otimes I-X\otimes X-Y\otimes Z-Z\otimes Y\over4},\quad \|W\|_\infty=1/2.\tag{7}$$
+$$
+W=(|w\rangle\langle w|)^\Gamma={I\otimes I-X\otimes X-Y\otimes Z-Z\otimes Y\over4},\quad \|W\|_\infty=1/2.\tag{7}
+$$
 
 它只需三组可信局部Pauli相关统计；局部读数记录后再作经典比较，不要求实施非局部投影。可分态满足 $\operatorname{Tr}W\sigma\ge0$。
 
@@ -111,7 +123,9 @@ $$
 
 直接有限矩阵值约 $-0.00746191990$，仅作校准。若真实过程、准备及对齐的共同误差以半迹距离 $\epsilon\le1/1000$ 控制，则式(7)使见证偏差至多ε，仍有
 
-$$\operatorname{Tr}W\rho_{\rm actual}\le-{1171\over194000}<0.$$
+$$
+\operatorname{Tr}W\rho_{\rm actual}\le-{1171\over194000}<0.
+$$
 
 读数本身另有误差时继续扣除；本文没有认证任何实验的ε。这个证书直接发生在给定有限时间内，不是只有无限精细外推才可见的矛盾。
 
@@ -127,7 +141,9 @@ $$
 
 若两质量均有两条受控路径，并且势在该四维码上可用对角 $V_{ab}$ 表示，去掉各自局部项后，交互率才是
 
-$$g={V_{00}-V_{01}-V_{10}+V_{11}\over4\hbar}.\tag{9}$$
+$$
+g={V_{00}-V_{01}-V_{10}+V_{11}\over4\hbar}.\tag{9}
+$$
 
 采用Newton或945的软核势时，$V_{ab}=-GM_AM_Bu(r_{ab})$；G、核、路径准备、支撑、读取及误差仍是物理输入。[945](../../../archive_935_955/research_note_945.md)只有一端路径相干任务，**没有**给出式(9)需要的双路径交互与新噪声合同。不能把945的约.05相位直接冒作本轮φ。波包移动、泄漏、环境噪声及四路径投影必须另有控制，才可把现实数据接来。
 

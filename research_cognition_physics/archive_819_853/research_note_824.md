@@ -190,3 +190,4 @@ v_s f_s\ne0\quad\Longrightarrow\quad
 \text{同片固定几何、配置及径向一阶资料，不能再固定}\ \partial_n r_s .
 \tag{12}
 $$
+

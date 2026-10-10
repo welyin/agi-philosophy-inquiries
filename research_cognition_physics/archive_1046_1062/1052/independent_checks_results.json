@@ -1,0 +1,81 @@
+{
+  "round": 1052,
+  "date": "2026-10-08",
+  "all_checks_passed": true,
+  "method": "Independent Decimal(70) Newton and erfc inversion; no author imports",
+  "new_scientific_groups": 0,
+  "new_empirical_groups": 0,
+  "source_data_transcription_checked": true,
+  "author_assets_checked": 9,
+  "historical_assets_checked": 5,
+  "author_receipt_sha256": "5433d55214dfa6e5d1bb1c6cd93979f9df5885947c8ff343c18c25f641541519",
+  "numerical_comparisons": 26,
+  "maximum_author_difference": 6.483702463810914e-14,
+  "independent_values": {
+    "source_conversions": {
+      "R_W_from_rounded_WZ_and_Z": 0.9994494488967414,
+      "external_Z_error_propagated": 0.001397971054506382,
+      "W_component_quadrature_sigma": 0.004445222154178574,
+      "tau_amplitude_from_rounded_SM_normalization": 0.9973747155694537
+    },
+    "fixed_adopted_SM_branch": {
+      "tau_marginal_standardized_residual": -1.368421052631579,
+      "W_marginal_standardized_residual": -0.11248031766646188
+    },
+    "primary_marginal_gaussian_bonferroni": {
+      "z_per_two_sided_interval": 2.241402727604945,
+      "tau_amplitude_interval": [
+        0.9931413348175506,
+        1.0016586651824495
+      ],
+      "W_ratio_interval": [
+        0.9895364669388143,
+        1.0094635330611859
+      ],
+      "common_amplitude_allowed_interval": [
+        0.9947544757068522,
+        1.0016586651824495
+      ],
+      "relative_transport_residual_point": -0.0023505564547720093,
+      "relative_transport_residual_interval": [
+        -0.0115248849130229,
+        0.006940596543374499
+      ]
+    },
+    "secondary_independent_gaussian_diagnostics": {
+      "fixed_SM_chi_square_two_observables": 1.8852279991476668,
+      "fixed_SM_nominal_p_two_dof": 0.3896080677800463,
+      "common_amplitude_best_fit": 0.9983907528385876,
+      "common_amplitude_min_chi_square": 0.6451952545915312,
+      "common_amplitude_nominal_p_one_dof": 0.421835757631503,
+      "transport_delta_method_sigma": 0.0029212206683351927,
+      "transport_delta_method_standardized_residual": -0.8046487142347909
+    },
+    "freedom_diagnostics": {
+      "saturated_amplitude": 0.999749968742185,
+      "saturated_transport_residual": -0.0023505564547720093,
+      "saturated_model_remaining_goodness_of_fit_dof": 0
+    }
+  },
+  "additional_checks": {
+    "chi_second_derivative_global_lower_bound": 351688.6852759429,
+    "decimal_newton_derivative_abs": "2.28E-65",
+    "W_ratio_intermediate_rounding_range": [
+      0.9993744635706503,
+      0.9995244360981751
+    ],
+    "component_sigma_rounding_range": [
+      0.004364344166080398,
+      0.004526311964502668
+    ],
+    "conditional_union_coverage_exact": "19/20",
+    "external_Z_family": [
+      0.9623236850464078,
+      1.002003004005006,
+      1.0424839253668083
+    ]
+  },
+  "coverage_assumption_tested_as_fact": false,
+  "author_freeze_unmodified": true,
+  "roadmap_complete": false
+}

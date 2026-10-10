@@ -14,19 +14,19 @@
 
 固定一个已知实初始模型和有限自适应协议。记录 h 后，控制器的预测矩阵为实对称正矩阵 ρ_h，所选原实 Kraus 算子为 K_{y,j|h}：
 
-\[
+$$
 A_{hy}=\sum_jK_{y,j|h}\rho_hK_{y,j|h}^{T},\qquad
 p(y|h)=\operatorname{tr}A_{hy},\qquad
 \rho_{hy}=A_{hy}/p(y|h).
-\]
+$$
 
 先存 ρ_h、操作标识、模型版本、权限和 p(y|h)，再接收 y 并存后验。每一步仍然只使用实数运算。
 
 经典历史登记器和物理系统的联合表示可以写成实分块矩阵
 
-\[
+$$
 \Omega=\sum_h p_h|h\rangle\langle h|\otimes\rho_h.
-\]
+$$
 
 已记录的 h 由互相正交的经典标签编码，因此复制日志不要求复制未知的 ρ_h。已知模型描述可由 h 与声明的程序重算；若真实源与该描述不符，内部重算也不会神奇地纠正它。
 
@@ -50,21 +50,21 @@ p(y|h)=\operatorname{tr}A_{hy},\qquad
 
 连续矩阵不能免费存成精确实数。设已知实 d 维密度矩阵 ρ，每项对称舍入到步长 u=2^{-b}，得到 R。令
 
-\[
+$$
 B=R+\frac{du}{2}I,\qquad \sigma=B/\operatorname{tr}B.
-\]
+$$
 
 每项误差至多 u/2，故
 
-\[
+$$
 \|R-\rho\|_\infty\le du/2,\qquad B\ge0.
-\]
+$$
 
 这里 ∥·∥∞ 指算子范数。又有 tr B≥1、∥B−ρ∥₁≤d²u，从而
 
-\[
+$$
 \boxed{D(\rho,\sigma)=\tfrac12\|\rho-\sigma\|_1\le d^2\,2^{-b}}.
-\]
+$$
 
 σ 是正的、迹为 1 的有理数模型。只需保存 d(d+1)/2 个舍入整数和公共精度，归一化由程序重算。按每个有符号整数 b+2 位计，d=4、b=20 的矩阵载荷上界是 **220 位**，迹距离误差至多 **1/65536**。精度和维数元数据、临时工作区、各步日志另计。
 
@@ -76,24 +76,24 @@ B=R+\frac{du}{2}I,\qquad \sigma=B/\operatorname{tr}B.
 
 若同一分支的两个未归一化模型 A、B 满足
 
-\[
+$$
 p=\operatorname{tr}A>0,\quad q=\operatorname{tr}B>0,\quad
 \|A-B\|_1\le e,
-\]
+$$
 
 则由三角不等式与 |p−q|≤e，
 
-\[
+$$
 \boxed{D(A/p,B/q)\le\min(1,e/p)}.
-\]
+$$
 
 因此整体预测误差很小，不保证每个条件分支的后验都很准。例子完全可以是经典的：
 
-\[
+$$
 \rho=(1-p)|00\rangle\langle00|+p|10\rangle\langle10|,
 \quad
 \sigma=(1-p)|00\rangle\langle00|+p|11\rangle\langle11|.
-\]
+$$
 
 首位是**已存在的经典历史标签**。整体迹距离等于 p；条件在稀有标签 1 后，第二位两个后验完全相反，迹距离等于 1。取 p=10⁻⁸ 仍成立。读取这里的经典标签不被冒充为免费增加的理想量子测量。
 

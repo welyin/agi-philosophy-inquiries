@@ -12,10 +12,10 @@
 
 每个物理门都属于已经使用的两种原语：
 
-\[
+$$
 R_y(\theta)=e^{-i\theta Y/2},\qquad
 U_{ab}(\theta)=e^{-i\theta Y_aX_b/2}.
-\]
+$$
 
 它们都是实正交旋转。门列表显式给出 Y 所在第一线、X 所在第二线，允许相应有向线对的联合访问。不把路由、运输或任意远程耦合视为已经免费完成；数组轴排列仅用于计算，不是隐藏的 SWAP 门。
 
@@ -25,16 +25,16 @@ U_{ab}(\theta)=e^{-i\theta Y_aX_b/2}.
 
 令 G=U_eh(π/2)。Pauli 乘法给出
 
-\[
+$$
 G(Y_hX_t)G^{\mathsf T}=Z_hY_eX_t.
-\]
+$$
 
 因此
 
-\[
+$$
 C_h[U_{et}(\theta)]
 =U_{et}(\theta/2)\,G\,U_{ht}(-\theta/2)\,G^{\mathsf T}.
-\]
+$$
 
 右侧恰为四个原 YX 门，且是完整八维算子恒等式，不只在某个已知输入上成立。式子右端先作用。
 
@@ -46,7 +46,7 @@ C_h[U_{et}(\theta)]
 
 第 125 轮的两参考取向变换是
 
-\[
+$$
 W=\frac1{\sqrt2}
 \begin{pmatrix}
 1&0&0&-1\\
@@ -54,24 +54,24 @@ W=\frac1{\sqrt2}
 0&1&-1&0\\
 1&0&0&1
 \end{pmatrix},\qquad \det W=-1.
-\]
+$$
 
 两个 rebit 上的原连续旋转都在 SO(4) 中；不能直接声称这些门的乘积等于 W。
 
 实际分解是
 
-\[
+$$
 W=\operatorname{diag}(1,1,-1,1)\,
 e^{-i\pi X_hY_R/4}.
-\]
+$$
 
 第一因子为 C_h[-Z_R]。借用 E_1，并令 J=-iY，有
 
-\[
+$$
 C_h[R_y(\pi)_{E_1}]\,
 C_h[e^{-i\pi Y_{E_1}Z_R/2}]
 =C_h[-Z_R]\otimes I_{E_1}.
-\]
+$$
 
 辅助线以整个算子恒等式返回原状，所以即使借用时与别处纠缠也成立。第二节的分解把它化为五个两系统门和五个局部门，再加前面的一个 XY 门，即：
 
@@ -83,35 +83,35 @@ W⊗I_E 的行列式为 +1，因而没有违反前面的反射限制。E_1 随�
 
 两能级已有近似转置可写为
 
-\[
+$$
 \mathcal T(M)=\frac{M+XMX+ZMZ}{3}
 =\frac{\operatorname{tr}(M)I+M^{\mathsf T}}3.
-\]
+$$
 
 其 Kraus 算子 I/√3、X/√3、Z/√3 与第 127 轮的对角、对称非对角 Kraus 表示等价。近似转置本身是已有结果，见 [Buscemi 等原始论文](https://arxiv.org/abs/quant-ph/0304175)；这里新增的是与本项目原门、取向线和保留环境匹配的显式编译。
 
 令
 
-\[
+$$
 A=J_{E_1}X_B,\quad B=J_{E_2}Z_B,\quad
 A^2=B^2=-I,\quad AB=-BA.
-\]
+$$
 
 取 β=arcsin(1/√3)，可直接展开指数得到
 
-\[
+$$
 e^{\pi A/8}e^{\beta B}e^{\pi A/8}
 =\frac{I+A+B}{\sqrt3}.
-\]
+$$
 
 故在环境初态 |00⟩ 上，
 
-\[
+$$
 |\psi\rangle\longmapsto
 \frac{|00\rangle|\psi\rangle+
 |10\rangle X|\psi\rangle+
 |01\rangle Z|\psi\rangle}{\sqrt3}.
-\]
+$$
 
 这是真实等距扩张，三个分支相干保留，没有抽签或丢弃。将三次旋转都控制在 h=1 上，再用第二节分解，需 **12 个 YX 门、2 个局部旋转**；h=0 分支保持不变。
 
@@ -130,10 +130,10 @@ e^{\pi A/8}e^{\beta B}e^{\pi A/8}
 
 对承诺输入，共同输出为
 
-\[
+$$
 \mathcal E\!\left[
 \rho_A\otimes\left(\frac23\sigma_B+\frac I6\right)\right].
-\]
+$$
 
 旧主体的编码边缘精确保留，新主体纯态的最坏迹距离为 1/6，任意混态不超过此值。最优性沿用第 128 轮的通道下界，不以数值电路检查替代证明。若仅为审计而计算取向条件态，h=0 误差为零，h=1 为 1/3；细环境标签不享有统一的 1/6 条件保证。
 

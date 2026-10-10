@@ -6,19 +6,19 @@
 
 固定原 α=4sin(1/4)，保持全部原单系统 fresh 输入输出和每个结果概率不变。在**实 2×2 Kraus 操作、通常实张量组合**的范围内，每个结果 s 的全部合法扩展恰好为
 
-\[
+$$
 \boxed{\frac{(2\alpha-1)\sqrt{1-\eta^2}}2
 \le\kappa_s\le\frac{\sqrt{1-\eta^2}}2.}
-\]
+$$
 
 两结果可独立选取各自区间内的值，各读取方向的区间相同。η<1 时都有非零宽度；η=1 时 κ_s=0，完整操作扩展唯一。
 
 若两个实操作的局部矩阵 B 相同，则它们在任意实辅助系统、任意联合输入下的最大输出差异精确为
 
-\[
+$$
 \boxed{\sup_{d,\rho}\frac12\|[(\Phi-\Psi)\otimes\mathrm{id}_d](\rho)\|_1
 =\frac{|\kappa_\Phi-\kappa_\Psi|}{2}.}
-\]
+$$
 
 一个实辅助二能级系统就能达到上界。这是当前模型内的完整分类与误差界，不是一般概率理论分类，也不是从认知选择了 κ 的某个值。
 
@@ -26,38 +26,38 @@
 
 设实噪声映射在局部校准下满足
 
-\[
+$$
 I\mapsto I,\quad X\mapsto\alpha X,\quad Z\mapsto\alpha Z.
-\]
+$$
 
 第 52 轮证明其余作用只有 `Y→γY` 一个自由数。故记为 D_γ。
 
 将 D_γ 作用于实 Bell 输入 `|Φ⁺⟩=(|00⟩+|11⟩)/√2` 的第一边，输出为
 
-\[
+$$
 C_\gamma=\frac14(II+\alpha XX-\gamma YY+\alpha ZZ).
-\]
+$$
 
 在 Bell 基底上，它的四个特征值为
 
-\[
+$$
 p_I=\frac{1+2\alpha+\gamma}{4},\quad
 p_X=p_Z=\frac{1-\gamma}{4},\quad
 p_J=\frac{1-2\alpha+\gamma}{4}.
-\]
+$$
 
 联合输出必须为正，所以必要条件是
 
-\[
+$$
 \boxed{2\alpha-1\le\gamma\le1.}
-\]
+$$
 
 反过来，在该区间中四个 p 都非负且和为 1，用实 Kraus 矩阵
 
-\[
+$$
 \sqrt{p_I}I,\quad\sqrt{p_X}X,\quad
 \sqrt{p_J}J,\quad\sqrt{p_Z}Z,\qquad J=-iY,
-\]
+$$
 
 直接构造 D_γ。因此该区间同时必要且充分，没有遗漏其他实 Kraus 扩展。
 
@@ -69,23 +69,23 @@ p_J=\frac{1-2\alpha+\gamma}{4}.
 
 沿 Z 的结果 s=±1 对应实过滤矩阵
 
-\[
+$$
 L_s=\operatorname{diag}\left(\sqrt{\frac{1+s\eta}{2}},
 \sqrt{\frac{1-s\eta}{2}}\right),\qquad
 \det L_s=\frac{\sqrt{1-\eta^2}}2=:c_\eta.
-\]
+$$
 
 一般方向是将 L_s 作实旋转共轭，不改变行列式。全部候选为
 
-\[
+$$
 \Phi_{s,\gamma_s}(M)=L_s\mathcal D_{\gamma_s}(M)L_s^T.
-\]
+$$
 
 其局部作用与原分支完全一致，而
 
-\[
+$$
 \kappa_s=c_\eta\gamma_s.
-\]
+$$
 
 **没有其他扩展的证明。** 当 η<1 时 L_s 可逆。对任一与原分支局部等价的实 Kraus 映射 Φ_s，在输出两侧乘 L_s⁻¹ 和 L_s⁻ᵀ，得到另一个实 Kraus 映射；它在 I、X、Z 上恰好是上述噪声作用。因此必属于 D_γ 的已证明区间。这个逆过滤只用于代数证明，没有假设它是一项概率守恒的物理操作。
 
@@ -105,9 +105,9 @@ L_s=\operatorname{diag}\left(\sqrt{\frac{1+s\eta}{2}},
 
 每个分支的区间宽度是
 
-\[
+$$
 \Delta\kappa=(1-\alpha)\sqrt{1-\eta^2}.
-\]
+$$
 
 | 原强度 η | κ_s 下端约值 | κ_s 上端约值 | 宽度约值 |
 |---:|---:|---:|---:|
@@ -120,15 +120,15 @@ L_s=\operatorname{diag}\left(\sqrt{\frac{1+s\eta}{2}},
 
 对 ρ₊ 探针执行分支后，再用第 52 轮共同门和原 η=1 读取，保留完整的 `(s,r)` 记录：
 
-\[
+$$
 p(s,r)=\frac14+\frac{r\alpha\kappa_s}{2}.
-\]
+$$
 
 两个结果同时选择区间上端与同时选择下端时，完整记录的总变差距离恰为
 
-\[
+$$
 \boxed{\alpha(1-\alpha)\sqrt{1-\eta^2}.}
-\]
+$$
 
 这给出一项直接可执行的区间两端区分协议。
 
@@ -136,32 +136,32 @@ p(s,r)=\frac14+\frac{r\alpha\kappa_s}{2}.
 
 令 δ=κ_Φ−κ_Ψ，两操作 B 相同。它们在所有矩阵上的差满足
 
-\[
+$$
 (\Phi-\Psi)(M)=\frac\delta2\operatorname{Tr}(YM)Y.
-\]
+$$
 
 对任意归一化联合状态 ρ，令
 
-\[
+$$
 C=\operatorname{Tr}_A[(Y\otimes I)\rho].
-\]
+$$
 
 C 是 Hermitian 矩阵。对任意 `||H||≤1` 的 Hermitian H，有
 
-\[
+$$
 |\operatorname{Tr}(HC)|=|\operatorname{Tr}[\rho(Y\otimes H)]|\le1,
-\]
+$$
 
 故 `||C||₁≤1`。于是
 
-\[
+$$
 [(\Phi-\Psi)\otimes\mathrm{id}](\rho)=\frac\delta2Y\otimes C,
-\]
+$$
 
-\[
+$$
 \frac12\|[(\Phi-\Psi)\otimes\mathrm{id}](\rho)\|_1
 =\frac{|\delta|}{2}\|C\|_1\le\frac{|\delta|}{2}.
-\]
+$$
 
 用实两系统输入 `ρ₊=(I+YY)/4`，有 C=Y/2、`||C||₁=1`，取得等号。证明不要求辅助维数有固定上限。
 

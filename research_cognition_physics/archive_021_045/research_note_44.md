@@ -16,17 +16,17 @@
 
 配合第三十四轮的正旋转混合定理，现在完整仪器族满足
 
-\[
+$$
 \boxed{0.144739232\le\eta_*\le\eta_B.}
-\]
+$$
 
 η_* 的定义与索引一致：允许全部较低强度、所有方向及任意有限组合时，准备非情境可行强度上限的上确界。当前剩余未知区间宽度严格小于 10⁻¹⁰，约比上一轮缩小 8.6 万倍。
 
 另一个可量化结论是：在精确强度 0.144739232，任意规范有限中间分解的最少标签数满足
 
-\[
+$$
 \boxed{48\le M_{\min}(0.144739232)\le324.}
-\]
+$$
 
 下界来自第四十二轮的一般必要成本，上界来自本轮实际构造。它没有确定最少标签数。
 
@@ -36,26 +36,26 @@
 
 继续使用第二十九轮的等价形式：
 
-\[
+$$
 Y=\alpha n_\theta,\quad
 \theta\sim R_\eta(\theta)\frac{d\theta}{2\pi},\quad
 X\sim\sigma,\quad E[X\mid Y]=Y,
 \qquad \alpha=4\sin(1/4).
-\]
+$$
 
 其中 σ 是单位圆均匀分布，n_θ=(cosθ,sinθ)，
 
-\[
+$$
 R_\eta(\theta)=\frac{q^3}{2}
 \left[(1-\eta\cos\theta)^{-2}+(1+\eta\cos\theta)^{-2}\right],
 \quad q=\sqrt{1-\eta^2}.
-\]
+$$
 
 本轮的辅助链为
 
-\[
+$$
 Y\longrightarrow Z\longrightarrow J\longrightarrow X.
-\]
+$$
 
 源连续角度经局部重心随机化得到有限点 Z；有限条件矩阵连接 Z 与目标圆弧 J；给定 J 后，在该圆弧上均匀生成 X。只要每一步的均值和边缘精确相容，复合后就是原连续问题的解。
 
@@ -65,48 +65,48 @@ Y\longrightarrow Z\longrightarrow J\longrightarrow X.
 
 对角度区间 [a,b]，令 d=(b−a)/2、m=(a+b)/2。三个点为
 
-\[
+$$
 A=\alpha n_a,\quad B=\alpha n_b,\quad
 C=\alpha\sec d\,n_m.
-\]
+$$
 
 C 是内圆在 A、B 两点的切线交点。对 θ=a+2du，0≤u≤1，定义
 
-\[
+$$
 \ell=\frac{\sin(d(1-u))}{\sin d},\qquad
 r=\frac{\sin(du)}{\sin d},
-\]
+$$
 
-\[
+$$
 q_A=\ell^2,\qquad q_B=r^2,\qquad
 q_C=2\cos d\,\ell r.
-\]
+$$
 
 在本轮 0<2d≤0.1 的区间内，这些量非负。三角恒等式直接给出
 
-\[
+$$
 q_A+q_B+q_C=1,\qquad
 q_AA+q_BB+q_CC=\alpha n_\theta.
-\]
+$$
 
 例如在以 m 为中轴的坐标系，第二个等式的两坐标分别化为 cos(d(2u−1)) 和 sin(d(2u−1))，再乘 α。因而这是逐角度的精确恒等式，不是只在采样点成立。
 
 完整划分有 M 个边界点和 M 个切线交点，总共 2M 个源点。令 Q_i(θ) 表示上述相邻局部权重合并后的量化函数，则
 
-\[
+$$
 w_i=\int Q_i(\theta)R_\eta(\theta)\frac{d\theta}{2\pi},
 \quad \sum_iw_i=1,\quad \sum_iw_iZ_i=0.
-\]
+$$
 
 最后一个等式来自逐点均值恒等式和 R_η 的中心对称性。它们是解析等式；严格验证器不会把近似权重归一化后当作精确积分。
 
 所有区间都在一个闭象限内，三个顶点也在相同象限，故量化还逐点保持两个绝对坐标：
 
-\[
+$$
 \sum_iQ_i(\theta)|Z_{ix}|=\alpha|\cos\theta|,
 \quad
 \sum_iQ_i(\theta)|Z_{iy}|=\alpha|\sin\theta|.
-\]
+$$
 
 三组证书均认证全部切线交点严格在单位圆内，最小半径余量大于 0.00989560623。
 
@@ -114,10 +114,10 @@ w_i=\int Q_i(\theta)R_\eta(\theta)\frac{d\theta}{2\pi},
 
 第一象限内用 t 表示距 θ=π/2 的角距离占 π/2 的比例。给定 h₀，生成
 
-\[
+$$
 t_0=0,\quad t_1=h_0,\quad
 t_{k+1}=\min\{(6/5)t_k,t_k+1/25,1\},
-\]
+$$
 
 并取边界 θ_k=(π/2)(1−t_k)。按两坐标反射补齐全圆。
 
@@ -125,23 +125,23 @@ t_{k+1}=\min\{(6/5)t_k,t_k+1/25,1\},
 
 对目标圆弧 A_j=[a_j,b_j]，其精确质量与条件均值为
 
-\[
+$$
 \tau_j=\frac{b_j-a_j}{2\pi},\qquad
 T_j=E[X\mid J=j]=\operatorname{sinc}(d_j)n_{m_j}.
-\]
+$$
 
 反射对称性给出
 
-\[
+$$
 \sum_j\tau_j=1,\quad \sum_j\tau_jT_j=0,\quad
 D=\sum_j\tau_jT_jT_j^T=\mathrm{diag}(D_x,D_y)>0.
-\]
+$$
 
 由于圆弧的边界正好包含四个坐标轴，每段内坐标不变号。因此
 
-\[
+$$
 \sum_j\tau_j|T_{jx}|=\int|\cos\theta|\frac{d\theta}{2\pi}=\frac2\pi.
-\]
+$$
 
 这消除了旧“极点位于圆弧中心”的划分在该测试上的 cos(π/N) 损失。它并没有消除全部凸函数测试的限制：第四十一轮已经排除任何有限中间分解恰好到达 η_B。
 
@@ -149,92 +149,92 @@ D=\sum_j\tau_jT_jT_j^T=\mathrm{diag}(D_x,D_y)>0.
 
 为了取得连乘结构的正性，候选保存
 
-\[
+$$
 C^0_{ij}=\delta\tau_j+V_{ij},\qquad
 \delta>0,\quad V_{ij}\ge0.
-\]
+$$
 
 δ 和稀疏 V 都是分母 2¹⁰⁰ 的精确非负有理数。联合候选是 w_i C⁰_ij；解析积分 w_i 保留为因子，而不是先将非常小的联合元素舍入。
 
 定义条件行残差
 
-\[
+$$
 a_i=1-\delta-\sum_jV_{ij},\qquad
 b_i=Z_i-\sum_jV_{ij}T_j.
-\]
+$$
 
 第一次修正为
 
-\[
+$$
 C^1_{ij}=C^0_{ij}+\tau_j(a_i+b_i^TD^{-1}T_j).
-\]
+$$
 
 由目标的零均值和协方差等式，直接得到
 
-\[
+$$
 \sum_jC^1_{ij}=1,\qquad \sum_jC^1_{ij}T_j=Z_i.
-\]
+$$
 
 再令
 
-\[
+$$
 d_j=\tau_j-\sum_iw_iC^1_{ij},\qquad
 C_{ij}=C^1_{ij}+d_j,\qquad H_{ij}=w_iC_{ij}.
-\]
+$$
 
 因为源总质量为 1、源均值为零，所以 Σ_j d_j=0、Σ_j d_jT_j=0。第二次修正不破坏任何行等式，并使
 
-\[
+$$
 \boxed{\sum_jH_{ij}=w_i,\quad
 \sum_iH_{ij}=\tau_j,\quad
 \sum_jH_{ij}T_j=w_iZ_i.}
-\]
+$$
 
 剩下只需认证正性。取严格上界
 
-\[
+$$
 E_i\ge |a_i|+
 |b_{ix}|\frac{\max_j|T_{jx}|}{D_x}+
 |b_{iy}|\frac{\max_j|T_{jy}|}{D_y},
-\]
+$$
 
-\[
+$$
 e_j=\left|(1-\delta)\tau_j-\sum_iw_iV_{ij}\right|,
 \quad
 D_0=\max_j\frac{e_j}{\tau_j}+\sum_iw_iE_i.
-\]
+$$
 
 则 |d_j|≤τ_jD₀，因而
 
-\[
+$$
 \boxed{H_{ij}\ge w_i\tau_j\varepsilon,\qquad
 \varepsilon=\delta-\max_iE_i-D_0.}
-\]
+$$
 
 验证器用向外舍入整数区间计算 ε 的下界。ε>0、所有 w_i>0 和 τ_j>0 一起证明完整矩阵严格正。若下界非正，只能说明该充分认证失败。
 
 324 标签的精确证书给出
 
-\[
+$$
 \varepsilon\ge
 \frac{9901545679856274709}{1267650600228229401496703205376}>0,
-\]
+$$
 
 且全部联合元素有统一正下界
 
-\[
+$$
 H_{ij}\ge
 \frac{77307043781066484828001909603390064554329}
 {842498333348457493583344221469363458551160763204392890034487820288}
 >9.17\times10^{-26}.
-\]
+$$
 
 最终连续条件核可以直接写为
 
-\[
+$$
 K(dx\mid\theta)=\sum_j\left(\sum_iQ_i(\theta)C_{ij}\right)
 \frac{\mathbf1_{A_j}(x)}{2\pi\tau_j}\,dx.
-\]
+$$
 
 源积分的 J 边缘是 τ，故 X 均匀；条件均值是 Σ_iQ_i(θ)Z_i=αn_θ。于是连续耦合以及原 fresh 选择性仪器成立。
 
@@ -242,51 +242,51 @@ K(dx\mid\theta)=\sum_j\left(\sum_iQ_i(\theta)C_{ij}\right)
 
 R_η 的 Fourier 展开沿用第二十六轮：
 
-\[
+$$
 R_\eta(\theta)=1+2\sum_{k\ge1}c_k\cos(2k\theta),\quad
 c_k=r^k(1+2kq),\quad r=\left(\frac\eta{1+q}\right)^2.
-\]
+$$
 
 保留 k≤12，余项总和精确有上界
 
-\[
+$$
 S=r^{13}\left[\frac{1+26q}{1-r}+\frac{2qr}{(1-r)^2}\right].
-\]
+$$
 
 直接使用小圆弧端点的三角函数差，再除以 sin²d，会放大区间宽度。本轮改用局部积分级数。令 Δ=b−a，
 
-\[
+$$
 I_n=\int_0^1q_A(u)e^{in\Delta u}du.
-\]
+$$
 
 把 1−cos(Δ(1−u)) 和指数分别展开，使用
 ∫₀¹uᵖ(1−u)ʳdu=p!r!/(p+r+1)!，按总次数整理得到
 
-\[
+$$
 \boxed{I_n=\frac{2}{\operatorname{sinc}^2(\Delta/2)}
 \sum_{j\ge0}\frac{i^j\Delta^jS_j(n)}{(j+3)!},\quad
 S_j(n)=\sum_{r=0}^{\lfloor j/2\rfloor}n^{j-2r}.}
-\]
+$$
 
 这里 n=0 或 n∈{2,4,…,24}；0⁰按幂级数惯例取 1。n=0 时 S_j 在偶数阶为 1、奇数阶为 0；n≥2 时 S_j(n)≤(4/3)nʲ。令 A=max(1,n)Δ，截取 j≤35 后，两坐标尾项都可用
 
-\[
+$$
 \frac{2}{\operatorname{sinc}^2(\Delta/2)}
 \frac{4A^{36}}{3\cdot39!}\frac1{1-A/40}
-\]
+$$
 
 控制。这里 Δ≤0.1，A≤2.4，分母严格为正。程序将 ΔʲS_j 写成 Aʲ[S_j/max(1,n)ʲ]，避免先舍入很小的 Δʲ 再乘大整数。
 
 设 I_n=U_n+iV_n，单元质量 τ=Δ/(2π)。有限 Fourier 部分的端点权重分别是
 
-\[
+$$
 \begin{aligned}
 w_A^{(12)}&=\tau\left[I_0+2\sum_{k=1}^{12}c_k
 \{\cos(2ka)U_{2k}-\sin(2ka)V_{2k}\}\right],\\
 w_B^{(12)}&=\tau\left[I_0+2\sum_{k=1}^{12}c_k
 \{\cos(2kb)U_{2k}+\sin(2kb)V_{2k}\}\right].
 \end{aligned}
-\]
+$$
 
 切线点的部分权重是该单元的部分总质量减去上述两项；总质量由 sinc(kΔ)cos(2km) 积分。每种局部权重的 Fourier 尾部单独加宽 2Sτ，因为对应 q 都位于 [0,1]。对切线点先做有限部分相减，再加一次尾界，避免重复放大余项。
 
@@ -310,19 +310,19 @@ w_B^{(12)}&=\tau\left[I_0+2\sum_{k=1}^{12}c_k
 
 用 αG(η)−1 的严格符号二分重新夹逼 η_B：
 
-\[
+$$
 \frac{6674918929710967577}{46116860184273879040}
 <\eta_B<
 \frac{2669967571884387031}{18446744073709551616}.
-\]
+$$
 
 本轮显示约 0.14473923209514498；它与早期普通浮点值末位有微小差别，结论使用上述分数。当前未知宽度满足
 
-\[
+$$
 \frac{1713979627769337}{18014398509481984000000000}
 <\eta_B-0.144739232<
 \frac{3427959255929299}{36028797018963968000000000}<10^{-10}.
-\]
+$$
 
 把这个差距上界代入第四十二轮的必要成本，排除所有 M≤47，得到 48 的必要下界；没有证明 48 个标签足够。
 

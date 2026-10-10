@@ -1,0 +1,566 @@
+{
+  "status": "PASS",
+  "seed": 107501,
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "tolerance": 3e-11,
+  "assertion_groups": 6,
+  "assertions": 1257,
+  "max_equality_residual": 1.4043333874306805e-15,
+  "minimum_inequality_margin": -5.078225462824511e-16,
+  "groups": {
+    "classification_choi_and_full_operator_blocks": {
+      "assertions": 224,
+      "max_equality_residual": 9.155133597044475e-16,
+      "minimum_inequality_margin": -5.078225462824511e-16
+    },
+    "forced_spectrum_any_pure_target_and_pairwise_sharpness": {
+      "assertions": 552,
+      "max_equality_residual": 8.926673565214725e-16,
+      "minimum_inequality_margin": 0.0
+    },
+    "qubit_covariance_specialization": {
+      "assertions": 29,
+      "max_equality_residual": 1.4043333874306805e-15,
+      "minimum_inequality_margin": null
+    },
+    "six_pauli_tensor_witness": {
+      "assertions": 4,
+      "max_equality_residual": 4.440892098500626e-16,
+      "minimum_inequality_margin": null
+    },
+    "eight_input_robust_bound_random_and_near_contract_channels": {
+      "assertions": 443,
+      "max_equality_residual": 7.771791011963451e-16,
+      "minimum_inequality_margin": 5.551115123125783e-17
+    },
+    "deleted_assumption_witnesses": {
+      "assertions": 5,
+      "max_equality_residual": 0.0,
+      "minimum_inequality_margin": null
+    }
+  },
+  "coverage": {
+    "classified_channels": 8,
+    "pure_input_pairs": 56,
+    "robust_channels": 63,
+    "nonvacuous_robust_channels": 27,
+    "nonvacuous_role_asymmetric_channels": 15
+  },
+  "robust_examples": [
+    {
+      "name": "generic_CPTP_0",
+      "delta": 0.8625629986885417,
+      "kappa": 0.5650161633379962,
+      "bound": 0.0,
+      "closest_pure_distance": 0.10969233632846317,
+      "margin": 0.10969233632846317
+    },
+    {
+      "name": "generic_CPTP_1",
+      "delta": 0.6959928388224399,
+      "kappa": 0.1523788191745607,
+      "bound": 0.0,
+      "closest_pure_distance": 0.3701378970622,
+      "margin": 0.3701378970622
+    },
+    {
+      "name": "generic_CPTP_2",
+      "delta": 0.6401383426938981,
+      "kappa": 0.4467515714596497,
+      "bound": 0.0,
+      "closest_pure_distance": 0.32776603011560657,
+      "margin": 0.32776603011560657
+    },
+    {
+      "name": "generic_CPTP_3",
+      "delta": 0.7935871981491049,
+      "kappa": 0.5768635442312684,
+      "bound": 0.0,
+      "closest_pure_distance": 0.09488585634754831,
+      "margin": 0.09488585634754831
+    },
+    {
+      "name": "generic_CPTP_4",
+      "delta": 0.8408621161274029,
+      "kappa": 0.35750121357995246,
+      "bound": 0.0,
+      "closest_pure_distance": 0.3203045614809491,
+      "margin": 0.3203045614809491
+    },
+    {
+      "name": "generic_CPTP_5",
+      "delta": 0.8112610483509324,
+      "kappa": 0.2707500339019596,
+      "bound": 0.0,
+      "closest_pure_distance": 0.24153572528634323,
+      "margin": 0.24153572528634323
+    },
+    {
+      "name": "generic_CPTP_6",
+      "delta": 0.8302369094966253,
+      "kappa": 0.24904431880190997,
+      "bound": 0.0,
+      "closest_pure_distance": 0.2099911516727746,
+      "margin": 0.2099911516727746
+    },
+    {
+      "name": "generic_CPTP_7",
+      "delta": 0.6695525344567412,
+      "kappa": 0.14908206303583754,
+      "bound": 0.0,
+      "closest_pure_distance": 0.40960424836312204,
+      "margin": 0.40960424836312204
+    },
+    {
+      "name": "generic_CPTP_8",
+      "delta": 0.6830210318272205,
+      "kappa": 0.2646340824499269,
+      "bound": 0.0,
+      "closest_pure_distance": 0.1671115814697007,
+      "margin": 0.1671115814697007
+    },
+    {
+      "name": "generic_CPTP_9",
+      "delta": 0.7347301439733928,
+      "kappa": 0.5727918622268676,
+      "bound": 0.0,
+      "closest_pure_distance": 0.2171437480004881,
+      "margin": 0.2171437480004881
+    },
+    {
+      "name": "generic_CPTP_10",
+      "delta": 0.7789471495168515,
+      "kappa": 0.3599432761123571,
+      "bound": 0.0,
+      "closest_pure_distance": 0.23239309370486794,
+      "margin": 0.23239309370486794
+    },
+    {
+      "name": "generic_CPTP_11",
+      "delta": 0.763907758959521,
+      "kappa": 0.6033416664287907,
+      "bound": 0.0,
+      "closest_pure_distance": 0.24686291268711186,
+      "margin": 0.24686291268711186
+    },
+    {
+      "name": "generic_CPTP_12",
+      "delta": 0.7230685483129028,
+      "kappa": 0.6089810938583717,
+      "bound": 0.0,
+      "closest_pure_distance": 0.15298602801577532,
+      "margin": 0.15298602801577532
+    },
+    {
+      "name": "generic_CPTP_13",
+      "delta": 0.733007006114127,
+      "kappa": 0.30839039508166555,
+      "bound": 0.0,
+      "closest_pure_distance": 0.43881905401589727,
+      "margin": 0.43881905401589727
+    },
+    {
+      "name": "generic_CPTP_14",
+      "delta": 0.7953395867832472,
+      "kappa": 0.29803079181790165,
+      "bound": 0.0,
+      "closest_pure_distance": 0.1579880636160727,
+      "margin": 0.1579880636160727
+    },
+    {
+      "name": "generic_CPTP_15",
+      "delta": 0.8786241325324131,
+      "kappa": 0.7831643636249292,
+      "bound": 0.0,
+      "closest_pure_distance": 0.1202165253857797,
+      "margin": 0.1202165253857797
+    },
+    {
+      "name": "generic_CPTP_16",
+      "delta": 0.8490740088897809,
+      "kappa": 0.2711872062247694,
+      "bound": 0.0,
+      "closest_pure_distance": 0.34913447089861804,
+      "margin": 0.34913447089861804
+    },
+    {
+      "name": "generic_CPTP_17",
+      "delta": 0.6320359527755028,
+      "kappa": 0.3561817923137771,
+      "bound": 0.0,
+      "closest_pure_distance": 0.24225857019960184,
+      "margin": 0.24225857019960184
+    },
+    {
+      "name": "generic_CPTP_18",
+      "delta": 0.6664491106518624,
+      "kappa": 0.15851763626459212,
+      "bound": 0.0,
+      "closest_pure_distance": 0.15474297282353172,
+      "margin": 0.15474297282353172
+    },
+    {
+      "name": "generic_CPTP_19",
+      "delta": 0.8912178986256727,
+      "kappa": 0.5309295669997769,
+      "bound": 0.0,
+      "closest_pure_distance": 0.18427713460746917,
+      "margin": 0.18427713460746917
+    },
+    {
+      "name": "generic_CPTP_20",
+      "delta": 0.6728420520608613,
+      "kappa": 0.3087239397903632,
+      "bound": 0.0,
+      "closest_pure_distance": 0.2464029109595593,
+      "margin": 0.2464029109595593
+    },
+    {
+      "name": "generic_CPTP_21",
+      "delta": 0.7428509912110685,
+      "kappa": 0.38686679720494677,
+      "bound": 0.0,
+      "closest_pure_distance": 0.16786886062482986,
+      "margin": 0.16786886062482986
+    },
+    {
+      "name": "generic_CPTP_22",
+      "delta": 0.7886695416411555,
+      "kappa": 0.41398281768152767,
+      "bound": 0.0,
+      "closest_pure_distance": 0.19548645621544736,
+      "margin": 0.19548645621544736
+    },
+    {
+      "name": "generic_CPTP_23",
+      "delta": 0.6374390273779431,
+      "kappa": 0.3762830176611146,
+      "bound": 0.0,
+      "closest_pure_distance": 0.17487639586028636,
+      "margin": 0.17487639586028636
+    },
+    {
+      "name": "generic_CPTP_24",
+      "delta": 0.7375346992478865,
+      "kappa": 0.2792805573602455,
+      "bound": 0.0,
+      "closest_pure_distance": 0.22804330704017367,
+      "margin": 0.22804330704017367
+    },
+    {
+      "name": "generic_CPTP_25",
+      "delta": 0.716235578282857,
+      "kappa": 0.16732331427698685,
+      "bound": 0.0,
+      "closest_pure_distance": 0.3580041832502602,
+      "margin": 0.3580041832502602
+    },
+    {
+      "name": "generic_CPTP_26",
+      "delta": 0.6950665406629809,
+      "kappa": 0.4356515578296234,
+      "bound": 0.0,
+      "closest_pure_distance": 0.28221546815847726,
+      "margin": 0.28221546815847726
+    },
+    {
+      "name": "generic_CPTP_27",
+      "delta": 0.6306715701751373,
+      "kappa": 0.32534668980935044,
+      "bound": 0.0,
+      "closest_pure_distance": 0.29357741887727606,
+      "margin": 0.29357741887727606
+    },
+    {
+      "name": "generic_CPTP_28",
+      "delta": 0.6937440452037893,
+      "kappa": 0.4544895836893198,
+      "bound": 0.0,
+      "closest_pure_distance": 0.23933563385401324,
+      "margin": 0.23933563385401324
+    },
+    {
+      "name": "generic_CPTP_29",
+      "delta": 0.8775386824049997,
+      "kappa": 0.3082469851588545,
+      "bound": 0.0,
+      "closest_pure_distance": 0.3231652670144549,
+      "margin": 0.3231652670144549
+    },
+    {
+      "name": "generic_CPTP_30",
+      "delta": 0.8212627354061823,
+      "kappa": 0.10146869544965204,
+      "bound": 0.0,
+      "closest_pure_distance": 0.2471318155485311,
+      "margin": 0.2471318155485311
+    },
+    {
+      "name": "generic_CPTP_31",
+      "delta": 0.7806777408492591,
+      "kappa": 0.679695202949387,
+      "bound": 0.0,
+      "closest_pure_distance": 0.19866539756623527,
+      "margin": 0.19866539756623527
+    },
+    {
+      "name": "generic_small_contamination_0.0",
+      "delta": 1.1102230246251565e-16,
+      "kappa": 0.0,
+      "bound": 0.24999999999999983,
+      "closest_pure_distance": 0.25000000000000006,
+      "margin": 2.220446049250313e-16
+    },
+    {
+      "name": "role_asymmetric_marginal_0.0",
+      "delta": 1.1102230246251565e-16,
+      "kappa": 0.0,
+      "bound": 0.24999999999999983,
+      "closest_pure_distance": 0.25000000000000006,
+      "margin": 2.220446049250313e-16
+    },
+    {
+      "name": "diagonal_imperfect_reset_0.0",
+      "delta": 1.1102230246251565e-16,
+      "kappa": 0.0,
+      "bound": 0.24999999999999983,
+      "closest_pure_distance": 0.25000000000000006,
+      "margin": 2.220446049250313e-16
+    },
+    {
+      "name": "generic_small_contamination_0.001",
+      "delta": 0.0006731871183329459,
+      "kappa": 0.00037946751639626015,
+      "bound": 0.24880048556430245,
+      "closest_pure_distance": 0.25047028188943954,
+      "margin": 0.001669796325137085
+    },
+    {
+      "name": "role_asymmetric_marginal_0.001",
+      "delta": 1.1102230246251565e-16,
+      "kappa": 0.0010000000000000009,
+      "bound": 0.24949999999999983,
+      "closest_pure_distance": 0.24975000000000003,
+      "margin": 0.0002500000000001945
+    },
+    {
+      "name": "diagonal_imperfect_reset_0.001",
+      "delta": 0.000999999999999945,
+      "kappa": 0.0,
+      "bound": 0.24850000000000008,
+      "closest_pure_distance": 0.24975000000000003,
+      "margin": 0.0012499999999999456
+    },
+    {
+      "name": "generic_small_contamination_0.01",
+      "delta": 0.006876090710083029,
+      "kappa": 0.004502353346520818,
+      "bound": 0.23743468726161504,
+      "closest_pure_distance": 0.25493735953468255,
+      "margin": 0.01750267227306751
+    },
+    {
+      "name": "role_asymmetric_marginal_0.01",
+      "delta": 1.1102230246251565e-16,
+      "kappa": 0.010000000000000009,
+      "bound": 0.24499999999999983,
+      "closest_pure_distance": 0.24750000000000003,
+      "margin": 0.0025000000000001965
+    },
+    {
+      "name": "diagonal_imperfect_reset_0.01",
+      "delta": 0.010000000000000005,
+      "kappa": 0.0,
+      "bound": 0.235,
+      "closest_pure_distance": 0.24750000000000003,
+      "margin": 0.012500000000000039
+    },
+    {
+      "name": "generic_small_contamination_0.03",
+      "delta": 0.021530093788398232,
+      "kappa": 0.008179475504576605,
+      "bound": 0.21361512156511436,
+      "closest_pure_distance": 0.2519074563026878,
+      "margin": 0.03829233473757343
+    },
+    {
+      "name": "role_asymmetric_marginal_0.03",
+      "delta": 1.1102230246251565e-16,
+      "kappa": 0.03,
+      "bound": 0.23499999999999982,
+      "closest_pure_distance": 0.24250000000000002,
+      "margin": 0.007500000000000201
+    },
+    {
+      "name": "diagonal_imperfect_reset_0.03",
+      "delta": 0.030000000000000013,
+      "kappa": 0.0,
+      "bound": 0.205,
+      "closest_pure_distance": 0.24250000000000002,
+      "margin": 0.03750000000000003
+    },
+    {
+      "name": "generic_small_contamination_0.08",
+      "delta": 0.05613067665291709,
+      "kappa": 0.03509226219948551,
+      "bound": 0.14825785392088162,
+      "closest_pure_distance": 0.27388021805806806,
+      "margin": 0.12562236413718644
+    },
+    {
+      "name": "role_asymmetric_marginal_0.08",
+      "delta": 5.551115123125783e-17,
+      "kappa": 0.07999999999999997,
+      "bound": 0.20999999999999994,
+      "closest_pure_distance": 0.22999999999999998,
+      "margin": 0.020000000000000046
+    },
+    {
+      "name": "diagonal_imperfect_reset_0.08",
+      "delta": 0.07999999999999999,
+      "kappa": 0.0,
+      "bound": 0.13,
+      "closest_pure_distance": 0.22999999999999998,
+      "margin": 0.09999999999999998
+    },
+    {
+      "name": "generic_small_contamination_0.15",
+      "delta": 0.12090064171164942,
+      "kappa": 0.06998043806365259,
+      "bound": 0.03365881840069958,
+      "closest_pure_distance": 0.27219524988721133,
+      "margin": 0.23853643148651177
+    },
+    {
+      "name": "role_asymmetric_marginal_0.15",
+      "delta": 1.1102230246251565e-16,
+      "kappa": 0.15000000000000002,
+      "bound": 0.17499999999999982,
+      "closest_pure_distance": 0.21250000000000002,
+      "margin": 0.0375000000000002
+    },
+    {
+      "name": "diagonal_imperfect_reset_0.15",
+      "delta": 0.14999999999999997,
+      "kappa": 0.0,
+      "bound": 0.02500000000000005,
+      "closest_pure_distance": 0.21250000000000002,
+      "margin": 0.18749999999999997
+    },
+    {
+      "name": "generic_small_contamination_0.3",
+      "delta": 0.17954613679097936,
+      "kappa": 0.11927058375986546,
+      "bound": 0.0,
+      "closest_pure_distance": 0.3982191564972482,
+      "margin": 0.3982191564972482
+    },
+    {
+      "name": "role_asymmetric_marginal_0.3",
+      "delta": 1.1102230246251565e-16,
+      "kappa": 0.29999999999999993,
+      "bound": 0.09999999999999987,
+      "closest_pure_distance": 0.17500000000000004,
+      "margin": 0.07500000000000018
+    },
+    {
+      "name": "diagonal_imperfect_reset_0.3",
+      "delta": 0.29999999999999993,
+      "kappa": 0.0,
+      "bound": 0.0,
+      "closest_pure_distance": 0.17500000000000004,
+      "margin": 0.17500000000000004
+    },
+    {
+      "name": "rotated_output_0.001",
+      "delta": 0.0009999998333334041,
+      "kappa": 0.0,
+      "bound": 0.24850000024999988,
+      "closest_pure_distance": 0.2500000000000001,
+      "margin": 0.0014999997500002304
+    },
+    {
+      "name": "rotation_plus_role_asymmetry_0.001",
+      "delta": 0.000929999845000041,
+      "kappa": 0.06999999999999998,
+      "bound": 0.21360500023249995,
+      "closest_pure_distance": 0.2325000608411082,
+      "margin": 0.01889506060860824
+    },
+    {
+      "name": "rotated_output_0.01",
+      "delta": 0.00999983333416671,
+      "kappa": 0.0,
+      "bound": 0.23500024999874994,
+      "closest_pure_distance": 0.2500000000000002,
+      "margin": 0.014999750001250284
+    },
+    {
+      "name": "rotation_plus_role_asymmetry_0.01",
+      "delta": 0.009299845000774997,
+      "kappa": 0.07000000000000003,
+      "bound": 0.20105023249883747,
+      "closest_pure_distance": 0.2325060839785352,
+      "margin": 0.03145585147969773
+    },
+    {
+      "name": "rotated_output_0.04",
+      "delta": 0.039989334186634154,
+      "kappa": 0.0,
+      "bound": 0.19001599872004876,
+      "closest_pure_distance": 0.2500000000000002,
+      "margin": 0.05998400127995146
+    },
+    {
+      "name": "rotation_plus_role_asymmetry_0.04",
+      "delta": 0.037190080793569766,
+      "kappa": 0.06999999999999998,
+      "bound": 0.15921487880964535,
+      "closest_pure_distance": 0.2325973115877945,
+      "margin": 0.07338243277814915
+    },
+    {
+      "name": "rotated_output_0.1",
+      "delta": 0.09983341664682815,
+      "kappa": 0.0,
+      "bound": 0.10024987502975777,
+      "closest_pure_distance": 0.25,
+      "margin": 0.14975012497024223
+    },
+    {
+      "name": "rotation_plus_role_asymmetry_0.1",
+      "delta": 0.09284507748155019,
+      "kappa": 0.07000000000000005,
+      "bound": 0.07573238377767469,
+      "closest_pure_distance": 0.2331070747390141,
+      "margin": 0.1573746909613394
+    },
+    {
+      "name": "rotated_output_0.2",
+      "delta": 0.19866933079506122,
+      "kappa": 0.0,
+      "bound": 0.0,
+      "closest_pure_distance": 0.2500000000000001,
+      "margin": 0.2500000000000001
+    },
+    {
+      "name": "rotation_plus_role_asymmetry_0.2",
+      "delta": 0.18476247763940695,
+      "kappa": 0.06999999999999998,
+      "bound": 0.0,
+      "closest_pure_distance": 0.23491224532733143,
+      "margin": 0.23491224532733143
+    }
+  ],
+  "scope": [
+    "Matrix and finite-input checks corroborate, but do not prove, universal statements.",
+    "Classification tests use d=2 and d=3; the open-patch extension is analytic.",
+    "Sharpness is per specified pair, not simultaneous optimization by one fixed antisymmetric channel.",
+    "The eight-input bound assumes neither global swap symmetry nor exact diagonal preservation.",
+    "No assertion identifies internal pure states with actual spatial endpoints.",
+    "No author module imported; script writes no files."
+  ]
+}

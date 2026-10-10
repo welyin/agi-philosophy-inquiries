@@ -1,0 +1,722 @@
+{
+  "round": 1083,
+  "status": "matrix_and_exact_fraction_checks_passed",
+  "scientific_calibration_groups": 1,
+  "validation_group_count": 6,
+  "require_call_count": 130,
+  "maximum_matrix_residual": 2.220446049250313e-16,
+  "groups": [
+    {
+      "name": "fixed_18_dimensional_comparator",
+      "passed": true,
+      "certificate": {
+        "source_Hilbert_space": "C^2_ready direct-sum C_vac; basis ready0, ready1, vac2",
+        "dimension": 18,
+        "fine_branch_count": 10,
+        "fine_branch_labels": [
+          "both:A:swap+1",
+          "both:A:swap-1",
+          "both:B:swap+1",
+          "both:B:swap-1",
+          "flags00:coin0",
+          "flags00:coin1",
+          "flags01:coin0",
+          "flags01:coin1",
+          "flags10:coin0",
+          "flags10:coin1"
+        ],
+        "effect_formula": "T_plus=I18/2+P11*(S_QA-S_QB)*P11/4",
+        "induced_effect": "E_xy=I2/2+q_x*q_y*(p_x-p_y).sigma/8",
+        "global_effect_spectrum": [
+          0.06698729810778044,
+          0.0669872981077807,
+          0.4999999999999999,
+          0.4999999999999999,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5000000000000002,
+          0.9330127018922193,
+          0.9330127018922194
+        ],
+        "finite_program_cases": [
+          {
+            "qx": "2/3",
+            "px": [
+              "1/3",
+              "1/4",
+              "1/5"
+            ],
+            "qy": "1/4",
+            "py": [
+              "-1/2",
+              "1/3",
+              "0"
+            ],
+            "formula_residual": 5.551115123125783e-17,
+            "actual_eigenvalues": [
+              0.48206167867626476,
+              0.5179383213237356
+            ]
+          },
+          {
+            "qx": "1",
+            "px": [
+              "1",
+              "0",
+              "0"
+            ],
+            "qy": "1",
+            "py": [
+              "0",
+              "1",
+              "0"
+            ],
+            "formula_residual": 0.0,
+            "actual_eigenvalues": [
+              0.323223304703363,
+              0.6767766952966368
+            ]
+          },
+          {
+            "qx": "1/5",
+            "px": [
+              "0",
+              "0",
+              "0"
+            ],
+            "qy": "3/4",
+            "py": [
+              "0",
+              "0",
+              "-1"
+            ],
+            "formula_residual": 5.551115123125783e-17,
+            "actual_eigenvalues": [
+              0.48125000000000007,
+              0.51875
+            ]
+          }
+        ],
+        "scope": "The matrix checks calibrate the operator identity; universality is established analytically."
+      }
+    },
+    {
+      "name": "passive_reference_and_full_report_map",
+      "passed": true,
+      "certificate": {
+        "reference_dimension": 2,
+        "program_probe_independence": "rho_QR tensor Omega_x tensor Omega_y",
+        "finite_reference_cases": 3,
+        "program_cases": 3,
+        "checks": [
+          {
+            "program_case": 0,
+            "reference_case": 0,
+            "CQ_report_residual": 2.7755575615628914e-17
+          },
+          {
+            "program_case": 0,
+            "reference_case": 1,
+            "CQ_report_residual": 5.551115123125783e-17
+          },
+          {
+            "program_case": 0,
+            "reference_case": 2,
+            "CQ_report_residual": 1.1102230246251565e-16
+          },
+          {
+            "program_case": 1,
+            "reference_case": 0,
+            "CQ_report_residual": 2.7755575615628914e-17
+          },
+          {
+            "program_case": 1,
+            "reference_case": 1,
+            "CQ_report_residual": 1.3877787807814457e-17
+          },
+          {
+            "program_case": 1,
+            "reference_case": 2,
+            "CQ_report_residual": 1.3877787807814457e-17
+          },
+          {
+            "program_case": 2,
+            "reference_case": 0,
+            "CQ_report_residual": 8.326672684688674e-17
+          },
+          {
+            "program_case": 2,
+            "reference_case": 1,
+            "CQ_report_residual": 1.1102230246251565e-16
+          },
+          {
+            "program_case": 2,
+            "reference_case": 2,
+            "CQ_report_residual": 1.1102230246251565e-16
+          }
+        ],
+        "unknown_probe_uses_per_trial": 1,
+        "unknown_probe_copied": false,
+        "scope": "Full C_report tensor R is checked. Program poststates and fine source/branch records are retained, not asserted equivalent from q,p alone."
+      }
+    },
+    {
+      "name": "whole_source_routing_and_same_weight",
+      "passed": true,
+      "certificate": {
+        "source_channel": "fair identity or source SWAP; keep coin label and the unselected source",
+        "moment_rule": "q_m=(q_x+q_y)/2; B_m=(q_x*p_x+q_y*p_y)/2; p_m=B_m/q_m",
+        "conditional_ready_participation": "q_x/(q_x+q_y) versus q_y/(q_x+q_y)",
+        "finite_cases": [
+          {
+            "qx": "2/3",
+            "qy": "1/4",
+            "q_m": "11/24",
+            "B_m": [
+              "7/144",
+              "1/8",
+              "1/15"
+            ],
+            "p_m": [
+              "7/66",
+              "3/11",
+              "8/55"
+            ],
+            "whole_source_average_residual": 6.938893903907228e-18
+          },
+          {
+            "qx": "1",
+            "qy": "1",
+            "q_m": "1",
+            "B_m": [
+              "1/2",
+              "1/2",
+              "0"
+            ],
+            "p_m": [
+              "1/2",
+              "1/2",
+              "0"
+            ],
+            "whole_source_average_residual": 0.0
+          },
+          {
+            "qx": "1/5",
+            "qy": "3/4",
+            "q_m": "19/40",
+            "B_m": [
+              "0",
+              "0",
+              "-3/8"
+            ],
+            "p_m": [
+              "0",
+              "0",
+              "-15/19"
+            ],
+            "whole_source_average_residual": 5.551115123125783e-17
+          }
+        ],
+        "independent_clone_trace_distance": 0.5,
+        "controls_depend_on_unknown_q_or_p": false,
+        "scope": "The active source marginal closes for this routing and fresh independent comparisons. Arbitrary reused partners or retained logs are not compressed into this marginal."
+      }
+    },
+    {
+      "name": "identical_local_sources_different_ready_correlations",
+      "passed": true,
+      "certificate": {
+        "positions": [
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1"
+          ]
+        ],
+        "independent_flags": [
+          {
+            "bits": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "probability": "1/16"
+          },
+          {
+            "bits": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "probability": "1/16"
+          },
+          {
+            "bits": [
+              0,
+              0,
+              1,
+              0
+            ],
+            "probability": "1/16"
+          },
+          {
+            "bits": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "probability": "1/16"
+          },
+          {
+            "bits": [
+              0,
+              1,
+              0,
+              0
+            ],
+            "probability": "1/16"
+          },
+          {
+            "bits": [
+              0,
+              1,
+              0,
+              1
+            ],
+            "probability": "1/16"
+          },
+          {
+            "bits": [
+              0,
+              1,
+              1,
+              0
+            ],
+            "probability": "1/16"
+          },
+          {
+            "bits": [
+              0,
+              1,
+              1,
+              1
+            ],
+            "probability": "1/16"
+          },
+          {
+            "bits": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "probability": "1/16"
+          },
+          {
+            "bits": [
+              1,
+              0,
+              0,
+              1
+            ],
+            "probability": "1/16"
+          },
+          {
+            "bits": [
+              1,
+              0,
+              1,
+              0
+            ],
+            "probability": "1/16"
+          },
+          {
+            "bits": [
+              1,
+              0,
+              1,
+              1
+            ],
+            "probability": "1/16"
+          },
+          {
+            "bits": [
+              1,
+              1,
+              0,
+              0
+            ],
+            "probability": "1/16"
+          },
+          {
+            "bits": [
+              1,
+              1,
+              0,
+              1
+            ],
+            "probability": "1/16"
+          },
+          {
+            "bits": [
+              1,
+              1,
+              1,
+              0
+            ],
+            "probability": "1/16"
+          },
+          {
+            "bits": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "probability": "1/16"
+          }
+        ],
+        "correlated_flags": [
+          {
+            "bits": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "probability": "1/8"
+          },
+          {
+            "bits": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "probability": "1/8"
+          },
+          {
+            "bits": [
+              0,
+              1,
+              1,
+              0
+            ],
+            "probability": "1/8"
+          },
+          {
+            "bits": [
+              0,
+              1,
+              1,
+              1
+            ],
+            "probability": "1/8"
+          },
+          {
+            "bits": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "probability": "1/8"
+          },
+          {
+            "bits": [
+              1,
+              0,
+              0,
+              1
+            ],
+            "probability": "1/8"
+          },
+          {
+            "bits": [
+              1,
+              1,
+              1,
+              0
+            ],
+            "probability": "1/8"
+          },
+          {
+            "bits": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "probability": "1/8"
+          }
+        ],
+        "correlated_rule": "R0,Z,R3 independent fair bits, and R1=R2=Z",
+        "readiness_marginals": [
+          [
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2"
+          ],
+          [
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2"
+          ]
+        ],
+        "joint_readiness_matrices": [
+          [
+            [
+              "1/2",
+              "1/4",
+              "1/4",
+              "1/4"
+            ],
+            [
+              "1/4",
+              "1/2",
+              "1/4",
+              "1/4"
+            ],
+            [
+              "1/4",
+              "1/4",
+              "1/2",
+              "1/4"
+            ],
+            [
+              "1/4",
+              "1/4",
+              "1/4",
+              "1/2"
+            ]
+          ],
+          [
+            [
+              "1/2",
+              "1/4",
+              "1/4",
+              "1/4"
+            ],
+            [
+              "1/4",
+              "1/2",
+              "1/2",
+              "1/4"
+            ],
+            [
+              "1/4",
+              "1/2",
+              "1/2",
+              "1/4"
+            ],
+            [
+              "1/4",
+              "1/4",
+              "1/4",
+              "1/2"
+            ]
+          ]
+        ],
+        "program_rule": "At flag 1 use rho(p_i), at flag 0 use vac; conditional ready program does not depend on other flags.",
+        "actual_effect": "I/2+h_ij*(p_i-p_j).sigma/8 for distinct i,j",
+        "same_label_branch": "If lottery selections i=j, the controller reports a neutral coin directly; it never copies one unknown source into two input ports.",
+        "correlation_is_extra_spatial_dimension": false
+      }
+    },
+    {
+      "name": "finite_same_instrument_cycle_and_tie_witnesses",
+      "passed": true,
+      "certificate": {
+        "cycle_probe": [
+          "1/4",
+          "1/2",
+          "3/4"
+        ],
+        "cycle_lotteries": [
+          [
+            "0",
+            "1/6",
+            "2/3",
+            "1/6"
+          ],
+          [
+            "0",
+            "1/3",
+            "1/6",
+            "1/2"
+          ],
+          [
+            "1/6",
+            "1/6",
+            "0",
+            "2/3"
+          ]
+        ],
+        "independent_cycle_probability_margins": [
+          "-1/768",
+          "0",
+          "1/768"
+        ],
+        "correlated_cycle_probability_margins": [
+          "1/4608",
+          "1/4608",
+          "1/2304"
+        ],
+        "integer_report_margin_matrix_denominator": 128,
+        "integer_report_margin_matrix": [
+          [
+            0,
+            -1,
+            -2,
+            -3
+          ],
+          [
+            1,
+            0,
+            -2,
+            -2
+          ],
+          [
+            2,
+            2,
+            0,
+            -1
+          ],
+          [
+            3,
+            2,
+            1,
+            0
+          ]
+        ],
+        "integer_lotteries_denominator": 6,
+        "integer_lotteries": [
+          [
+            0,
+            1,
+            4,
+            1
+          ],
+          [
+            0,
+            2,
+            1,
+            3
+          ],
+          [
+            1,
+            1,
+            0,
+            4
+          ]
+        ],
+        "integer_cyclic_products": [
+          1,
+          1,
+          2
+        ],
+        "binary_probe": [
+          "1/2",
+          "0",
+          "-1/2"
+        ],
+        "binary_lotteries": [
+          [
+            "0",
+            "1/3",
+            "0",
+            "2/3"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "1",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        "binary_pair_order": [
+          "P,Q",
+          "Q,R",
+          "P,R"
+        ],
+        "independent_binary_probability_margins": [
+          "-1/192",
+          "0",
+          "-1/192"
+        ],
+        "correlated_binary_probability_margins": [
+          "0",
+          "0",
+          "-1/192"
+        ],
+        "source_marginals_and_instrument_held_fixed": true
+      }
+    },
+    {
+      "name": "finite_probability_error_scope",
+      "passed": true,
+      "certificate": {
+        "per_coarse_probability_absolute_error_upper": "1/9216",
+        "strict_cycle_remaining_positive_margins": [
+          "1/9216",
+          "1/9216",
+          "1/3072"
+        ],
+        "independent_fixed_sampling_finite_precision_claim": "Only probability error bounds are assumed; no sample cost is derived.",
+        "exact_ties_claimed_robust_under_nonzero_noise": false,
+        "finite_matrix_tolerance": 3e-12
+      }
+    }
+  ],
+  "scope": {
+    "actual_contact_or_position_identity_derived": false,
+    "actual_spatial_dimension_derived": false,
+    "source_independence_derived_from_cognitive_principles": false,
+    "same_q_is_comparison_weight_and_ready_participation_rate": true,
+    "only_single_source_marginals_determine_correlated_comparisons": false,
+    "all_natural_future_tasks_closed": false,
+    "unknown_probe_or_program_copied": false,
+    "ready_vac_coherence_or_arbitrary_source_probe_correlations_in_scalar_formula": false,
+    "retained_unselected_sources_or_fine_records_deleted": false
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "checker_sha256": "029d8c8e27232022ee2610cb49e8bf27ab4efed4c5133e82e2c524c97e42e3ac"
+}

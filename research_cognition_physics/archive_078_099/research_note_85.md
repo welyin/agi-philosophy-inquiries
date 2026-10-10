@@ -6,35 +6,35 @@
 
 沿第 56 轮符号约定，令
 
-\[
+$$
 J=\begin{pmatrix}0&-1\\1&0\end{pmatrix}=-iY,\qquad
 \mathcal J_d=J\otimes I_d,\qquad \mathcal J_d^2=-I.
-\]
+$$
 
 它是一个声明的共同参考结构。尚未证明认知组合或任务增益必然提供它。
 
 考察与 $\mathcal J_d$ 对易的实对称状态。逐块解对易关系得到
 
-\[
+$$
 \omega=\begin{pmatrix}A&B\\-B&A\end{pmatrix},
 \quad A^{\mathsf T}=A,\quad B^{\mathsf T}=-B.
-\]
+$$
 
 定义复矩阵 $\rho=2(A+iB)$，则 $\omega\succeq0,\operatorname{Tr}\omega=1$ 当且仅当 $\rho\succeq0,\operatorname{Tr}\rho=1$。反向编码为
 
-\[
+$$
 \mathcal E(\rho)=\tfrac12R(\rho),\quad
 R(M)=I\otimes\operatorname{Re}M-J\otimes\operatorname{Im}M.
-\]
+$$
 
 因此这个受限实整体的齐次维数恰为 $d^2$，等价于复 d 维密度矩阵。编码中的额外两维是参考自由度，不是新增时空坐标；复纯态编码为实秩二态。
 
 对任意复效应 F，
 
-\[
+$$
 \operatorname{Tr}_{\mathbb R}[\mathcal E(\rho)R(F)]
 =\operatorname{Tr}_{\mathbb C}(\rho F).
-\]
+$$
 
 概率保持来自 $R(MN)=R(M)R(N)$ 及实迹为复实部迹的两倍。此处是表示与受限状态族，不把分化定义成删除整体状态。
 
@@ -42,16 +42,16 @@ R(M)=I\otimes\operatorname{Re}M-J\otimes\operatorname{Im}M.
 
 任意与 $\mathcal J_d$ 对易的实矩阵都是 R(K)。再要求正交，便等价于 $K^\dagger K=I$：
 
-\[
+$$
 \{O\in O(2d):[O,\mathcal J_d]=0\}=R(U(d)).
-\]
+$$
 
 同理，若实 Kraus 算符每个都与共同结构对易，保迹条件化为 $\sum_kK_k^\dagger K_k=I$，并且
 
-\[
+$$
 \sum_kR(K_k)\mathcal E(\rho)R(K_k)^{\mathsf T}
 =\mathcal E\!\left(\sum_kK_k\rho K_k^\dagger\right).
-\]
+$$
 
 这给出复态、效应和完全正通道的准确有效接口。但“每个 Kraus 算符保持共同取向”强于“输出状态还在同一集合”，不能自动替换成后者。
 
@@ -61,15 +61,15 @@ R(M)=I\otimes\operatorname{Re}M-J\otimes\operatorname{Im}M.
 
 取实正交矩阵
 
-\[
+$$
 Q=\operatorname{diag}(I_d,-I_d).
-\]
+$$
 
 它满足 $Q\mathcal J_dQ^{\mathsf T}=-\mathcal J_d$，但依然把每个允许编码态送回允许编码态：
 
-\[
+$$
 Q\mathcal E(\rho)Q^{\mathsf T}=\mathcal E(\rho^*).
-\]
+$$
 
 因此仅要求保持同一个状态集合，仍容许整体取向反转，对应逻辑复共轭。
 

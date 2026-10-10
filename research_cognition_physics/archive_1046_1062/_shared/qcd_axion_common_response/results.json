@@ -1,0 +1,55 @@
+{
+  "scope": "count0 algebra and ideal filter; no QCD or empirical recomputation",
+  "dimensionless_inputs": {
+    "chi": "9",
+    "rho": "1/8",
+    "kappa": "2/5"
+  },
+  "rational_cases": [
+    {
+      "fa": "3",
+      "mass": "1",
+      "field_amplitude": "1/2",
+      "theta_amplitude": "1/6",
+      "edm_amplitude": "1/15"
+    },
+    {
+      "fa": "6",
+      "mass": "1/2",
+      "field_amplitude": "1",
+      "theta_amplitude": "1/6",
+      "edm_amplitude": "1/15"
+    }
+  ],
+  "ramsey_ideal_window": {
+    "time0": 0.4,
+    "duration": 1.7,
+    "phase": 0.23
+  },
+  "filter_checks": [
+    {
+      "omega": 0.0,
+      "rectangular_average": 0.06491109300035833,
+      "quadrature_error": 1.3877787807814457e-17
+    },
+    {
+      "omega": 0.5,
+      "rectangular_average": 0.042442749636079545,
+      "quadrature_error": 6.938893903907228e-18
+    },
+    {
+      "omega": 1.0,
+      "rectangular_average": 0.0053427305695902,
+      "quadrature_error": 1.734723475976807e-18
+    },
+    {
+      "omega": 3.6959913571644627,
+      "rectangular_average": 3.5646549231881426e-19,
+      "quadrature_error": 4.953482703657353e-18
+    }
+  ],
+  "max_filter_quadrature_error": 1.3877787807814457e-17,
+  "spin_energy_splitting_exact": "28/33",
+  "unchanged_bare_amplitude_does_not_imply_unchanged_finite_readout": true,
+  "all_assertions_passed": true
+}

@@ -8,9 +8,9 @@
 
 给定一个已知状态ρ及它的有限分解
 
-\[
+$$
 \rho=\sum_i\tau_i,\qquad \tau_i\ge0.
-\]
+$$
 
 每个τ_i是含发生概率的条件状态，Tr τ_i就是该结果概率。任务是准备同一个扩张W，然后根据希望实现的分解，在环境侧选择测量，使主体条件态恰为τ_i。
 
@@ -22,23 +22,23 @@
 
 令ρ=VDV†，其中V只含非零特征值的本征向量，D>0为r×r。取纯态系数矩阵C=V√D，即
 
-\[
+$$
 |\Psi\rangle=\sum_{a,k}C_{ak}|a\rangle|k\rangle,
 \qquad CC^\dagger=\rho.
-\]
+$$
 
 定义环境效应
 
-\[
+$$
 E_i=\left(D^{-1/2}V^\dagger\tau_iVD^{-1/2}\right)^T.
-\]
+$$
 
 每个E_i正，且Σ_iE_i=I_r。由τ_i≤ρ可知τ_i的支持位于ρ的支持内。环境读取的条件态为
 
-\[
+$$
 \operatorname{Tr}_E[(I\otimes E_i)|\Psi\rangle\langle\Psi|]
 =CE_i^T C^\dagger=\tau_i.
-\]
+$$
 
 这个式子利用环境部分迹的循环性计算分支，与采用相应平方根测量后再丢弃环境一致。复情形的转置不能省略；Bell态上测环境+Y，主体得到−Y。实情形中所有矩阵可为实，正交谱分解已足够。一般维数、秩亏与分解结果数大于r的情形均包括；零概率分支可保留。
 
@@ -46,22 +46,22 @@ E_i=\left(D^{-1/2}V^\dagger\tau_iVD^{-1/2}\right)^T.
 
 比较两种给定扩张：
 
-\[
+$$
 W_{pure}=|\Phi^+\rangle\langle\Phi^+|,
 \quad |\Phi^+\rangle=(|00\rangle+|11\rangle)/\sqrt2,
-\]
+$$
 
-\[
+$$
 W_{flag}=\tfrac12|00\rangle\langle00|+\tfrac12|11\rangle\langle11|.
-\]
+$$
 
 二者主体边缘都是I/2。对W_pure，环境Z读取给出|0〉、|1〉的各半系综，环境X读取给出|+〉、|−〉的各半系综；所有态与测量都可为实。
 
 对W_flag，任意环境效应E给出的主体分支都是
 
-\[
+$$
 \tfrac12 E_{00}|0\rangle\langle0|+\tfrac12 E_{11}|1\rangle\langle1|,
-\]
+$$
 
 没有非对角项，故不能只靠环境操作产生|±〉条件态。这是两个明确扩张的能力差别，不是从相同局部数据判断“混合究竟起源于何处”的方法，也不排除所有带隐藏准备记录的经典解释。
 
@@ -71,15 +71,15 @@ W_{flag}=\tfrac12|00\rangle\langle00|+\tfrac12|11\rangle\langle11|.
 
 普通经典状态p(x)及任意细分τ_i(x)≥0、Σ_iτ_i(x)=p(x)，均可由固定混合扩张
 
-\[
+$$
 W(x,e)=p(x)\delta_{e,x}
-\]
+$$
 
 实现。只需在环境读出e后，按
 
-\[
+$$
 q(i|e=x)=\tau_i(x)/p(x)
-\]
+$$
 
 随机报告i，便有W(x,i)=τ_i(x)。p(x)=0处任选归一化报告规则，不影响概率。换一种细分，只需换q，W保持。
 

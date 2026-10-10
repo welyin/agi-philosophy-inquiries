@@ -14,7 +14,9 @@
 
 任务域沿用[957](../archive_956_989/957/drafts/unified_operation_hypotheses_v0_2.md)：必须声明参与者、未知输入与被动参考、实际准备／干扰／读取、时间窗、资源、误差及来源。记采用某份父对象的资料为
 
-$$P=(\mathcal A,\mathcal S,\mathcal U,\mathcal I,\mathcal J,\mathcal R;D),$$
+$$
+P=(\mathcal A,\mathcal S,\mathcal U,\mathcal I,\mathcal J,\mathcal R;D),
+$$
 
 分别表示状态与可观测代数、作用或生成元、演化、仪器、来源字典和资源。此记号只是身份账，不假设已经存在覆盖所有物理部门的P。
 
@@ -22,12 +24,16 @@ $$P=(\mathcal A,\mathcal S,\mathcal U,\mathcal I,\mathcal J,\mathcal R;D),$$
 
 本报告主张的逻辑形式是
 
-$$C_i(P_i,D_i)\Longrightarrow R_i(P_i,D_i),$$
+$$
+C_i(P_i,D_i)\Longrightarrow R_i(P_i,D_i),
+$$
 
 并明确哪些箭头共用同一个P，哪些只是独立分支。在若干类中还证明
 
-$$\exists P_0,P_1\in C_i:\quad [P_0]\ne[P_1],\qquad
-|p_{D_i}(P_0)-p_{D_i}(P_1)|>\epsilon_0+\epsilon_1.$$
+$$
+\exists P_0,P_1\in C_i:\quad [P_0]\ne[P_1],\qquad
+|p_{D_i}(P_0)-p_{D_i}(P_1)|>\epsilon_0+\epsilon_1.
+$$
 
 第二式只在原证书允许的表示商、任务及误差下使用。对没有这样一对实例的更强公理集合，只登记“未定”，不登记“不蕴涵已证”。
 
@@ -43,8 +49,10 @@ $$\exists P_0,P_1\in C_i:\quad [P_0]\ne[P_1],\qquad
 
 矢量一致性要求正内部动能下的三次系数全反对称、满足Jacobi身份，并固定对应四次接触项。给定同一Lie结构及耦合后，所列标量作用的局部不变性进一步要求
 
-$$R_a=C_a,\qquad K_{ab}=\tfrac12\{C_a,C_b\},\qquad
-[C_a,C_b]=ig f^c{}_{ab}C_c,\qquad S_{\rm eff,a}=0,\quad\delta_CV=0.$$
+$$
+R_a=C_a,\qquad K_{ab}=\tfrac12\{C_a,C_b\},\qquad
+[C_a,C_b]=ig f^c{}_{ab}C_c,\qquad S_{\rm eff,a}=0,\quad\delta_CV=0.
+$$
 
 证明连接：1015的矢量变换正是1016采用的变换；1016使用同一C构造物质变换与三、四点。因此这些输出不需要彼此独立输入。作用之外的字段菜单、表示、各规范因子的耦合和不变势仍未被唯一选择。Abelian及零交互分支未因本结论消失。
 
@@ -52,7 +60,9 @@ $$R_a=C_a,\qquad K_{ab}=\tfrac12\{C_a,C_b\},\qquad
 
 在同一P981平直领先物质作用中，保三个非零规范耦合及原表示。对全部允许局部壳上资料守恒，1027利用独立场强系数证明
 
-$$Qt_A=k_at_A,\qquad R_fT_{f,A}=k_aT_{f,A}.$$
+$$
+Qt_A=k_at_A,\qquad R_fT_{f,A}=k_aT_{f,A}.
+$$
 
 带荷表示的连接迫使全部带荷部门共用一个倍数k，味权也是kI；不需额外假设Yukawa满秩或味混合。若另采用B993中性标量，它只有在非零门户等真实交换接通时才必须共用k。孤立中性部门保独立来源方向。于是，在指定源类和壳上／恒等改进的等价关系内，动态源为共同总应力的倍数。
 
@@ -62,13 +72,17 @@ $$Qt_A=k_at_A,\qquad R_fT_{f,A}=k_aT_{f,A}.$$
 
 再采用同背景正号Pauli–Fierz理想及其已核纯引力三次形变，令
 
-$$S_0=\sum_aS_{\rm PF}[h^a]+S_m,\qquad
+$$
+S_0=\sum_aS_{\rm PF}[h^a]+S_m,\qquad
 S_1=\sum_a\kappa_aS_{{\rm EH},3}[h^a]
-+\tfrac12\sum_aq_a\int h^a_{\mu\nu}T_m^{\mu\nu}.$$
++\tfrac12\sum_aq_a\int h^a_{\mu\nu}T_m^{\mu\nu}.
+$$
 
 对同一S_m，[1028](research_note_1028.md)使用完整规范方程的合法实径向Higgs解，给出规范不变量O的非零变化；没有把任意Higgs运动错误地限制为A=0。其实际首阶反作用和正规二阶闭合迫使
 
-$$q_aq_b=\delta_{ab}\kappa_aq_a.$$
+$$
+q_aq_b=\delta_{ab}\kappa_aq_a.
+$$
 
 故最小一阶动态源权或全零，或只有一个非自由理想活跃，并有q_r=κ_r。[1029](research_note_1029.md)核完整自由作用的局部正规性，将固定S_0、S_1的任意另一提升写成原规范参数重定义加Euler平凡项；完整运输后上述必要条件不变。其允许的恒等守恒改进和常量源不解除这项条件，但也没有因此全部消失。
 
@@ -78,7 +92,9 @@ $$q_aq_b=\delta_{ab}\kappa_aq_a.$$
 
 [1031](research_note_1031.md)已给同一采用的领先经典规范—物质—Einstein父族：同步改变完整色耦合g_3，保其它菜单和参数，存在完整方程解，其非零应力和动态几何相同，而有限无量纲磁能占比不同。指定单位和终点下，
 
-$$M_{g_3=2}(1/4)-M_{g_3=1}(1/4)\ge119/10240>0.$$
+$$
+M_{g_3=2}(1/4)-M_{g_3=1}(1/4)\ge119/10240>0.
+$$
 
 整段正耦合区间还有严格单调性证书。这证明本主链已接的经典共同条件不唯一选g_3，排除了“只是字段归一或单位变化”的解释。其真实量子制备、仪器和来源误差没有被认证；因而不能用这条经典自由反证完整A1_D—A7的选择力。
 
@@ -130,7 +146,9 @@ $$M_{g_3=2}(1/4)-M_{g_3=1}(1/4)\ge119/10240>0.$$
 
 1042的商后自由使用[原第一与第三族](1042/representation_quotient_clarification.md)，其最大中心熵特征值差为
 
-$$\log2-h(3/8)=\tfrac18\log(84375/65536)>0.$$
+$$
+\log2-h(3/8)=\tfrac18\log(84375/65536)>0.
+$$
 
 原第一、第二族仅作固定任务身份对照，允许交换中心标签时不能独立承担商后不等价证明。
 

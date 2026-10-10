@@ -1,0 +1,102 @@
+{
+  "passed": true,
+  "status": "mature adoption; algebra and published-budget audit only",
+  "science_group_delta": 0,
+  "empirical_group_delta": 0,
+  "new_cognitive_axiom_delta": 0,
+  "new_round": false,
+  "exact_coefficients": {
+    "A0": "3/4",
+    "B0": "2/9",
+    "B0_over_A0": "8/27",
+    "shared_C_calibrated_slope": "29/216",
+    "fixed_scale_target_only_slope": "-1/8",
+    "one_S_three_S_calibrated_slope": "2/27",
+    "sensitivity_ratio": "29/16"
+  },
+  "shared_nuisance_covariance": {
+    "rank_one": true,
+    "variance_with_covariance": "841/46656",
+    "incorrect_independent_variance": "3865/46656",
+    "incorrect_to_correct_std_ratio": "2.143762902395800418514528988108666395428234854280552344"
+  },
+  "algebra_C_diagnostic": {
+    "abs_C_bound": "1/1000000",
+    "uniform_remainder_bound": "203/1295998488000000",
+    "is_physical_QED_bound": false,
+    "samples": [
+      {
+        "C": "-1/1000000",
+        "exact_normalized_shift": "-29/216000252",
+        "linearized_shift": "-29/216000000",
+        "absolute_remainder": "203/1296001512000000"
+      },
+      {
+        "C": "0/1",
+        "exact_normalized_shift": "0/1",
+        "linearized_shift": "0/1",
+        "absolute_remainder": "0/1"
+      },
+      {
+        "C": "1/1000000",
+        "exact_normalized_shift": "29/215999748",
+        "linearized_shift": "29/216000000",
+        "absolute_remainder": "203/1295998488000000"
+      }
+    ]
+  },
+  "general_ratio_corner_diagnostic": {
+    "bound": "31/101248650000",
+    "samples": [
+      {
+        "delta_A": "-1/100000",
+        "delta_B": "-1/50000",
+        "remainder": "23/101248650000"
+      },
+      {
+        "delta_A": "-1/100000",
+        "delta_B": "1/50000",
+        "remainder": "31/101248650000"
+      },
+      {
+        "delta_A": "1/100000",
+        "delta_B": "-1/50000",
+        "remainder": "31/101251350000"
+      },
+      {
+        "delta_A": "1/100000",
+        "delta_B": "1/50000",
+        "remainder": "23/101251350000"
+      }
+    ]
+  },
+  "published_budget": {
+    "inputs_standard_uncertainty_Hz": {
+      "QED": "179",
+      "muonic_radius": "138",
+      "alpha": "1.7",
+      "calibration_line": "3",
+      "mass_ratio": "0.0001"
+    },
+    "quadrature_variance_Hz2": "51096.89000001",
+    "quadrature_standard_uncertainty_Hz": "226.0462120894973103818042114203245310667822525305737992",
+    "combined_with_480Hz_Hz": "530.5628049533909797896854070226751815131705170682707243",
+    "combined_relative_ppt": "0.7261117908198620971260339534722583338375823640985746290",
+    "printed_observation_minus_prediction_kHz": "0.00",
+    "is_new_pvalue_or_hard_error_bound": false
+  },
+  "muonic_theory_extraction_diagnostic": {
+    "units_energy": "meV",
+    "units_radius": "fm",
+    "radius_from_rounded_table_central_only": "0.8406040259804930104105402736338024584851445320561626104",
+    "published_radius": "0.84060(39)",
+    "recomputed_radius_uncertainty": false
+  },
+  "not_performed": [
+    "raw spectra or line-shape reanalysis",
+    "full QED energies or covariance reconstruction",
+    "new empirical fit or p value",
+    "62MB dataset download",
+    "new-particle scan"
+  ]
+}

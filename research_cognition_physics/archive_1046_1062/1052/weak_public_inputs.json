@@ -1,0 +1,43 @@
+{
+  "schema": "selected_published_weak_ratio_inputs_v1",
+  "checked_on": "2026-10-08",
+  "not_a_global_average": true,
+  "belle_ii": {
+    "source": "https://arxiv.org/html/2405.14625v2",
+    "location": "equations 2 and 6; section 6",
+    "R_tau": 0.9675,
+    "R_tau_stat": 0.0007,
+    "R_tau_syst": 0.0036,
+    "published_SM_R_tau_rounded": 0.9726,
+    "published_effective_amplitude_ratio": 0.9974,
+    "published_effective_amplitude_ratio_sigma": 0.0019
+  },
+  "atlas": {
+    "source": "https://arxiv.org/html/2403.02133v2",
+    "location": "section 7",
+    "R_WZ": 0.9990,
+    "R_WZ_stat": 0.0022,
+    "R_WZ_syst": 0.0036,
+    "external_R_Z": 1.0009,
+    "external_R_Z_sigma": 0.0028,
+    "published_R_W": 0.9995,
+    "published_R_W_stat": 0.0022,
+    "published_R_W_syst": 0.0036,
+    "published_R_W_external": 0.0014,
+    "published_R_W_sigma_rounded": 0.0045
+  },
+  "statistical_contract": {
+    "marginal_errors": "Published approximately Gaussian standard errors, not deterministic error bounds",
+    "joint_covariance": "Not supplied across the two experiments; no exact joint likelihood claimed",
+    "primary_joint_region": "Bonferroni rectangle from two 97.5 percent marginal intervals, conditional on Gaussian marginal coverage",
+    "secondary_fit": "Independent Gaussian approximation only; not the collaborations' combined likelihood",
+    "prospective_blinding": false
+  },
+  "theory_contract": {
+    "baseline": "P981 adopted SM charged-current branch in the published extraction conventions",
+    "nominal_prediction": {"tau_effective_amplitude_ratio": 1.0, "W_ratio": 1.0},
+    "radiative_and_acceptance_matching": "Adopt publication conventions; no new all-orders theory remainder or detector-level reanalysis",
+    "higher_dimensional_coefficients": "No arbitrary unspecialized P981 EFT family is claimed to predict the baseline",
+    "new_cognitive_prediction": false
+  }
+}

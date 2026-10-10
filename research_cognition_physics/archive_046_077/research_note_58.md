@@ -25,21 +25,21 @@
 
 设候选世界模型标签为 h，当前公开历史为 H，模型给出合法的下一步概率核
 
-\[
+$$
 p_h(o\mid a,H)\ge0,\qquad\sum_o p_h(o\mid a,H)=1.
-\]
+$$
 
 控制器保存权重 w_h(H)，先预测
 
-\[
+$$
 \widehat p(o\mid a,H)=\sum_h w_h(H)p_h(o\mid a,H),
-\]
+$$
 
 再按某个依赖已有历史的规则选行动。得到结果后追加记录，并作
 
-\[
+$$
 w_h(H,a,o)=\frac{w_h(H)p_h(o\mid a,H)}{\widehat p(o\mid a,H)}.
-\]
+$$
 
 不可能结果不进行条件化。概率核可以来自经典随机过程、实矩阵候选或复矩阵候选；上述构造完全不需要在三者之间选择。
 
@@ -51,9 +51,9 @@ w_h(H,a,o)=\frac{w_h(H)p_h(o\mid a,H)}{\widehat p(o\mid a,H)}.
 
 未知准备为已研究的实联合态
 
-\[
+$$
 \rho_\pm=\tfrac14(I\otimes I\pm Y\otimes Y),
-\]
+$$
 
 先验各一半；每轮独立重置为同一个未知标签对应的准备。控制器有以下行动：
 

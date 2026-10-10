@@ -161,7 +161,9 @@ $$
 
 因|v|≤1且在ξ的小共同邻域分母有一致下界，差商在全乘法算子范数收敛，D_i属于M。对j≠i，Pauli反对易给
 
-$$\tfrac12\{\sigma_j,D_i\}=v_j(p)I\in\mathcal M.\tag{14}$$
+$$
+\tfrac12\{\sigma_j,D_i\}=v_j(p)I\in\mathcal M.\tag{14}
+$$
 
 三个vj均在M。p↦v是R³到开单位球的Borel双射，逆为p=2mv/(1−|v|²)，故这三个坐标的联合有界Borel泛函演算给所有L∞乘法函数。乘常Pauli完成右侧。
 
@@ -173,12 +175,16 @@ $$\tfrac12\{\sigma_j,D_i\}=v_j(p)I\in\mathcal M.\tag{14}$$
 
 给有限个动量箱Bk、代表pk，域内|p−pk|≤r。记录有限正矩阵
 
-$$F_k=\int_{B_k}F_\rho(p)d\mu(p),\qquad
-\widehat\tau_A=\sum_k W(A,p_k)F_kW(A,p_k)^\dagger .\tag{15}$$
+$$
+F_k=\int_{B_k}F_\rho(p)d\mu(p),\qquad
+\widehat\tau_A=\sum_k W(A,p_k)F_kW(A,p_k)^\dagger .\tag{15}
+$$
 
 保留余箱以保持迹；尾箱用任意固定合法qubit通道输出，原尾权重≤η。对于纯boost、rapidity有界，式(9)与迹范数三角不等式给
 
-$$\tfrac12\|\tau_A-\widehat\tau_A\|_1\le L_{m,\xi}r+\eta.\tag{16}$$
+$$
+\tfrac12\|\tau_A-\widehat\tau_A\|_1\le L_{m,\xi}r+\eta.\tag{16}
+$$
 
 同界适用于任意旁观参考，前提是保留其与每个Fk的关联及同一尾权重范围。这是统计压缩和数学CPTP接口，不是已由同一材料完成的箱测量或无扰恢复。完整连续R_alg结论没有升格为有限任务必须携带无限存储。
 

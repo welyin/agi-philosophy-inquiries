@@ -24,17 +24,17 @@
 
 取码空间及代数
 
-\[
+$$
 \mathcal H_C=\bigoplus_{\alpha=0}^1
  (\mathbb C_a^2\otimes\mathbb C_b^2),\qquad
 M=\bigoplus_\alpha(M_2\otimes I_2),\quad
 M'=\bigoplus_\alpha(I_2\otimes M_2).
 \tag{1}
-\]
+$$
 
 其共同中心由两份扇区投影P_α张成。A、B各有一个二值标签、一个逻辑qubit和一个内部辅助qubit，所以各维数8。对每个0<p_α<1，声明内部辅助准备
 
-\[
+$$
 |\chi_\alpha\rangle=
  \sqrt{p_\alpha}|00\rangle+\sqrt{1-p_\alpha}|11\rangle,
 \quad
@@ -42,7 +42,7 @@ V_p|\alpha,a,b\rangle
 =|\alpha,a\rangle_A|\alpha,b\rangle_B
  \otimes|\chi_\alpha\rangle_{e_Ae_B}.
 \tag{2}
-\]
+$$
 
 因不同标签与逻辑基正交，V_p†V_p=I_8。全体8维未知输入及其被动参考都可保留；跨α相干仍存在于整体输出，区域迹才去掉它，**不是新增基本超选规则**。辅助纠缠是实际编码资源，不是免费的数学环境。
 
@@ -54,23 +54,23 @@ V_p|\alpha,a,b\rangle
 
 设w_α=Tr(P_αρ)，ρ_α为相应归一化块，ρ_{α,a/b}为其两逻辑边缘，τ_α=diag(p_α,1−p_α)。区域输出具有直接和形式
 
-\[
+$$
 \rho_A=\bigoplus_\alpha w_\alpha
        (\rho_{\alpha,a}\otimes\tau_\alpha),\qquad
 \rho_B=\bigoplus_\alpha w_\alpha
        (\rho_{\alpha,b}\otimes\tau_\alpha).
 \tag{3}
-\]
+$$
 
 按标准代数熵约定，S_M(ρ)=H(w)+Σw_αS(ρ_{α,a})，不把表示的b重数加入M的熵；M′互换a/b。由块谱和张量谱直接得到
 
-\[
+$$
 S(\rho_A)=S_M(\rho)+\operatorname{Tr}(\rho L_p),\quad
 S(\rho_B)=S_{M'}(\rho)+\operatorname{Tr}(\rho L_p),\quad
 L_p=\sum_\alpha h(p_\alpha)P_\alpha,
 \quad h(p)=-p\log p-(1-p)\log(1-p).
 \tag{4}
-\]
+$$
 
 这不是独立可拟合的两份“面积项”。给定V_p后，双方必须用同一个L_p。若另一Hermitian算符也对全部码态给相同熵差，其与L_p的全部态期望差为零，故两算符相同。**给定完整编码后的唯一性**不等于由抽象恢复结构选出编码。
 
@@ -78,28 +78,28 @@ L_p=\sum_\alpha h(p_\alpha)P_\alpha,
 
 在固定同一p下，取参考σ使各扇区限制态严格正定。以未归一化块w_α^σ σ_{α,a}定义
 
-\[
+$$
 K_M(\sigma)=\bigoplus_\alpha
  [-\log(w_\alpha^\sigma\sigma_{\alpha,a})\otimes I_b].
-\]
+$$
 
 式(3)的对数及χ的固定边缘给
 
-\[
+$$
 V_p^\dagger(K_A(\sigma)\otimes I_B)V_p
 =K_M(\sigma)+L_p,
 \qquad
 D(\rho_A\Vert\sigma_A)=D_M(\rho\Vert\sigma).
 \tag{5}
-\]
+$$
 
 B侧有同一L_p。相对熵等式直接来自每块双方相同的τ_α，其对数项抵消；ρ可含跨α相干。有限变化亦有
 
-\[
+$$
 \Delta S_A=\Delta\langle K_M(\sigma)\rangle
  +\Delta\langle L_p\rangle-D_M(\rho\Vert\sigma).
 \tag{6}
-\]
+$$
 
 此处Δ比较同一码和固定σ内的状态；不是同时改变p的参数变分。改变编码时要保留δV、δL及实际资源变化。K_A也没有被识别成物理能量或几何boost；[312](../archive_301_341/research_note_312.md)等旧几何模流条件继续独立存在。
 
@@ -109,11 +109,11 @@ B侧有同一L_p。相对熵等式直接来自每块双方相同的τ_α，其�
 
 在明确输入|α=0,a=0,b=0〉下，固定A端辅助效果|0〉〈0|的概率分别为1/2和1/4。两区域态的半迹距离为1/4，熵差为
 
-\[
+$$
 \log2-h(1/4)=\tfrac34\log3-\log2
 \simeq0.13081203594>0.
 \tag{7}
-\]
+$$
 
 因此差别并非全部任务下的换名冗余。跨编码物理态的相对熵也不相同：上述辅助边缘D(τ_{1/2}∥τ_{1/4})=(1/2)log(4/3)>0。式(5)绝不能被改称“任意不同编码之间相对熵一致”。
 
@@ -125,11 +125,11 @@ B侧有同一L_p。相对熵等式直接来自每块双方相同的τ_α，其�
 
 若实际编码到这份**固定V_p**在所声明全任务域的输出半迹距离不超过ε，区域误差不增。对d_A=d_B=8及0≤ε≤7/8，成熟的[Audenaert熵连续界](https://arxiv.org/abs/quant-ph/0610146)给
 
-\[
+$$
 |S(\widehat\rho_A)-S_M(\rho)-\langle L_p\rangle_\rho|
 \le \epsilon\log7+h(\epsilon).
 \tag{8}
-\]
+$$
 
 B侧同理。代码检验实际通道(1−ε)V_pρV_p†+εI_64/64，ε=.001,.01,.05；混合噪声仍需内部来源。式(8)是给定编码距离后的充分证书，不从“近似能恢复”自动推得同一V_p邻域。小恢复误差、精确代数结构、熵误差和无界应力误差不是一件事。391的精确代数噪声边界保持。
 

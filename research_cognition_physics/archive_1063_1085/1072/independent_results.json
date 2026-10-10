@@ -1,0 +1,154 @@
+{
+  "status": "PASS",
+  "script_sha256": "d42f0790b23bdc6195b3cbeffd922fdab9041cff3caecbc25e81708a0d818efd",
+  "checks_total": 793,
+  "checks_by_group": {
+    "projectors": 13,
+    "universal_adjoint_identity": 1,
+    "three_pi_code_identity": 1,
+    "all_axis_code_operator_identity": 36,
+    "preparation": 24,
+    "Werner_preservation": 24,
+    "four_average": 6,
+    "three_pi_average": 6,
+    "all_axis_AB_preservation": 216,
+    "attainment_formula": 216,
+    "attainment_range": 216,
+    "generic_state_identity": 12,
+    "passive_reference": 10,
+    "old433_model": 1,
+    "old433_effect_decomposition": 1,
+    "old433_nonzero_contrast": 1,
+    "old433_direct_readout": 9
+  },
+  "max_identity_residual": 8.881784197001252e-16,
+  "residuals_by_group": {
+    "projectors": 8.881784197001252e-16,
+    "universal_adjoint_identity": 5.551115123125783e-17,
+    "three_pi_code_identity": 1.1102230246251565e-16,
+    "all_axis_code_operator_identity": 3.331446316980491e-16,
+    "preparation": 4.440892098500626e-16,
+    "Werner_preservation": 1.6653345369377348e-16,
+    "four_average": 1.1102230246251565e-16,
+    "three_pi_average": 1.1102230246251565e-16,
+    "all_axis_AB_preservation": 2.7764247878179436e-16,
+    "attainment_formula": 6.661338147750939e-16,
+    "generic_state_identity": 1.1102230246251565e-16,
+    "passive_reference": 1.3877787807814457e-16,
+    "old433_model": 0.0,
+    "old433_effect_decomposition": 2.1435060414318834e-17,
+    "old433_direct_readout": 6.938893903907228e-18
+  },
+  "preparation_and_revision_rows": [
+    {
+      "w": "-1/3",
+      "singlet_weight": "0",
+      "four_leakages": [
+        9.598803233738333e-17,
+        0.8888888888888891,
+        0.8888888888888891,
+        0.8888888888888888
+      ],
+      "four_average": 0.6666666666666667,
+      "three_pi_average": 0.888888888888889,
+      "sharp_minimax": "8/9"
+    },
+    {
+      "w": "0",
+      "singlet_weight": "1/4",
+      "four_leakages": [
+        5.088522196198634e-17,
+        0.6666666666666667,
+        0.6666666666666667,
+        0.6666666666666667
+      ],
+      "four_average": 0.5,
+      "three_pi_average": 0.6666666666666666,
+      "sharp_minimax": "2/3"
+    },
+    {
+      "w": "1/4",
+      "singlet_weight": "7/16",
+      "four_leakages": [
+        4.9728739644668466e-17,
+        0.5000000000000001,
+        0.5000000000000001,
+        0.5
+      ],
+      "four_average": 0.37500000000000006,
+      "three_pi_average": 0.5000000000000001,
+      "sharp_minimax": "1/2"
+    },
+    {
+      "w": "1/3",
+      "singlet_weight": "1/2",
+      "four_leakages": [
+        4.625929269271486e-17,
+        0.44444444444444453,
+        0.44444444444444453,
+        0.4444444444444444
+      ],
+      "four_average": 0.33333333333333337,
+      "three_pi_average": 0.4444444444444445,
+      "sharp_minimax": "4/9"
+    },
+    {
+      "w": "1/2",
+      "singlet_weight": "5/8",
+      "four_leakages": [
+        2.1973164029039556e-17,
+        0.33333333333333337,
+        0.33333333333333337,
+        0.33333333333333337
+      ],
+      "four_average": 0.25,
+      "three_pi_average": 0.3333333333333333,
+      "sharp_minimax": "1/3"
+    },
+    {
+      "w": "1",
+      "singlet_weight": "1",
+      "four_leakages": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "four_average": 0.0,
+      "three_pi_average": 0.0,
+      "sharp_minimax": "0"
+    }
+  ],
+  "correlated_reference": {
+    "dimension": 4,
+    "four_leakages": [
+      -1.156482317317892e-18,
+      0.5,
+      0.5,
+      0.4999999999999999
+    ]
+  },
+  "old433_readout": {
+    "time": "1/8",
+    "dimension": 64,
+    "symmetric_sector_coefficient": 0.015462916240067801,
+    "half_spin_sector_coefficient": 0.015503352954473193,
+    "difference": -4.043671440539208e-05,
+    "four_revision_probabilities": [
+      0.015503352954473193,
+      0.015483134597270503,
+      0.015483134597270503,
+      0.015483134597270501
+    ],
+    "three_pi_average_minus_identity": -2.0218357202691703e-05
+  },
+  "scope": [
+    "The full matrix adjoint identity underlies the universal state quantifier; samples are consistency checks.",
+    "The analytic compressed operator identity gives the all-axis formula for every admissible extension, not just the displayed preparation or a grid maximum.",
+    "Zero initial symmetric-sector weight is required when the final weight is called leakage.",
+    "The result concerns common AB revisions on this original ABC fixed code; it does not rule out other encodings.",
+    "No post-revision recovery, moving code, or physical space has been classified.",
+    "The old433 readout is reused with identical rule and blank edges; no new coupling mechanism is claimed.",
+    "The readout sign is numerically checked here; a rigorous finite-time sign needs analytic bounds in the main proof."
+  ]
+}

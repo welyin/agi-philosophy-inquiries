@@ -43,9 +43,9 @@
 
 三方通道的十个 Kraus 算子的 Hilbert–Schmidt Gram 矩阵为
 
-\[
+$$
 \operatorname{diag}(16,16/3,\ldots,16/3),
-\]
+$$
 
 其中 16/3 出现九次。不同取向块正交，同块内 I、X、Z 由 Pauli 正交性给出该式，故秩精确为 10。
 

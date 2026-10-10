@@ -1,0 +1,159 @@
+{
+  "new_science_groups": 0,
+  "new_empirical_groups": 0,
+  "new_cognitive_axioms": 0,
+  "scope": "Adopted sequential-tunneling model diagnostics; no experiment fit.",
+  "experimental_fit": false,
+  "cotunneling_included": false,
+  "complete_unknown_quantum_reference_instrument": false,
+  "finite_reservoir_depletion_model": false,
+  "constants_SI": {
+    "e": 1.602176634e-19,
+    "k_B": 1.380649e-23
+  },
+  "adopted_device_scale": {
+    "J_over_kB_K": 0.35,
+    "R_s_ohm": 580000,
+    "R_d_ohm": 43000,
+    "E_s_over_kB_K": 1.7,
+    "E_d_over_kB_K": 0.81,
+    "n_g": 0.5,
+    "N_g": 0.5
+  },
+  "diagnostic_temperature_choice": "Both sectors 0.070 K, not measured-fit temperatures.",
+  "primary_sources": [
+    "https://arxiv.org/html/1507.00530",
+    "https://arxiv.org/pdf/1509.08288"
+  ],
+  "nonequilibrium": {
+    "voltage_microvolt": 20.0,
+    "temperature_S_K": 0.07,
+    "temperature_D_K": 0.07,
+    "state_order": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "stationary_probability": [
+      0.0037431769503859526,
+      0.49625682304961416,
+      0.49625682304961394,
+      0.0037431769503859518
+    ],
+    "stationary_G_probability": 0.9925136460992281,
+    "current_fA": 712.7478062832884,
+    "heat_S_aW": -2.7593626803575075,
+    "heat_D_aW": 17.014318806023276,
+    "supplied_IV_aW": 14.254956125665764,
+    "interaction_energy_flow_S_aW": 17.014318806023276,
+    "interaction_energy_flow_D_aW": -17.014318806023276,
+    "mutual_information_nats": 0.6490456623307161,
+    "information_D_per_s": 17207576.025302604,
+    "information_S_per_s": -17207576.025302604,
+    "heat_entropy_S_per_s": -2855140.362412901,
+    "heat_entropy_D_per_s": 17604887.06607573,
+    "entropy_production_S_per_s": 14352435.662889697,
+    "entropy_production_D_per_s": 397311.04077312717,
+    "coarse_visible_entropy_S_per_s": -15307979.76968659,
+    "coarse_entropy_production_S_per_s": 1899596.2556160025,
+    "hidden_junction_entropy_per_s": 12452839.40727369,
+    "product_marginal_stationarity_residual_scaled": 0.24811429446582553,
+    "checks": {
+      "stationarity_scaled": 7.354676569921265e-19,
+      "column_sum_scaled": 2.3534965023748048e-17,
+      "closed_probability": 1.1102230246251565e-16,
+      "local_detailed_balance": 0.0,
+      "energy_ledger_scaled": 2.5179238667516393e-19,
+      "stationary_H_scaled": 1.2589619333758196e-19,
+      "current_conservation_scaled": 4.976952069965635e-19,
+      "power_IV_scaled": 2.5179238667516393e-19,
+      "information_balance_scaled": 0.0,
+      "entropy_S_identity_scaled": 1.1032014854881898e-18,
+      "entropy_D_identity_scaled": 1.1491682140501976e-20,
+      "coarse_entropy_identity_scaled": 2.068502785290356e-18,
+      "closed_heat_S_scaled": 2.5179238667516393e-19,
+      "closed_heat_D_scaled": 1.5107543200509837e-18,
+      "closed_current_scaled": 2.4884760349828176e-19,
+      "closed_information_scaled": 2.941870627968506e-18
+    }
+  },
+  "equilibrium_control": {
+    "voltage_microvolt": 0.0,
+    "temperature_S_K": 0.07,
+    "temperature_D_K": 0.07,
+    "state_order": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "stationary_probability": [
+      0.0033464254621424308,
+      0.4966535745378575,
+      0.4966535745378575,
+      0.0033464254621424303
+    ],
+    "stationary_G_probability": 0.993307149075715,
+    "current_fA": 0.0,
+    "heat_S_aW": 0.0,
+    "heat_D_aW": 0.0,
+    "supplied_IV_aW": 0.0,
+    "interaction_energy_flow_S_aW": 0.0,
+    "interaction_energy_flow_D_aW": 0.0,
+    "mutual_information_nats": 0.652967577449403,
+    "information_D_per_s": -1.4901161193847656e-08,
+    "information_S_per_s": 0.0,
+    "heat_entropy_S_per_s": 0.0,
+    "heat_entropy_D_per_s": 0.0,
+    "entropy_production_S_per_s": 0.0,
+    "entropy_production_D_per_s": 3.101927297073854e-25,
+    "coarse_visible_entropy_S_per_s": 0.0,
+    "coarse_entropy_production_S_per_s": 0.0,
+    "hidden_junction_entropy_per_s": 0.0,
+    "product_marginal_stationarity_residual_scaled": 0.24831551325022858,
+    "checks": {
+      "stationarity_scaled": 3.680320578024931e-19,
+      "column_sum_scaled": 2.3554051699359558e-17,
+      "closed_probability": 4.336808689942018e-19,
+      "local_detailed_balance": 0.0,
+      "energy_ledger_scaled": 0.0,
+      "stationary_H_scaled": 0.0,
+      "current_conservation_scaled": 0.0,
+      "power_IV_scaled": 0.0,
+      "information_balance_scaled": 2.9442564624199448e-18,
+      "entropy_S_identity_scaled": 0.0,
+      "entropy_D_identity_scaled": 2.9442564624199448e-18,
+      "coarse_entropy_identity_scaled": 0.0,
+      "closed_heat_S_scaled": 0.0,
+      "closed_heat_D_scaled": 1.0079863534562328e-18,
+      "closed_current_scaled": 0.0,
+      "closed_information_scaled": 2.9442564624199448e-18
+    }
+  },
+  "all_checks_passed": true
+}

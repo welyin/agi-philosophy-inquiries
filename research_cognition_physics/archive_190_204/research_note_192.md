@@ -16,17 +16,17 @@
 
 定义归一振幅
 
-\[
+$$
 \psi_i(p)=\sqrt{p_i},\qquad \sum_i p_i=1.
-\]
+$$
 
 在归一向量上，使用约定
 
-\[
+$$
 h(d\psi,d\psi)=\langle d\psi,d\psi\rangle
 -\langle d\psi,\psi\rangle\langle\psi,d\psi\rangle,
 \qquad g=\operatorname{Re}h,\quad\omega=\operatorname{Im}h.
-\]
+$$
 
 这里省略不同物理归一约定中的整体常数；后续全部公式使用同一约定。
 
@@ -34,15 +34,15 @@ h(d\psi,d\psi)=\langle d\psi,d\psi\rangle
 
 因为dψ_i=dp_i/(2√p_i)，且Σdp_i=0，得到〈ψ,dψ〉=0，故
 
-\[
+$$
 \boxed{g=\frac14\sum_i\frac{dp_i\otimes dp_i}{p_i}}
-\]
+$$
 
 正是经典Fisher度量的四分之一。但此截面所有向量和切向量均为实数，h没有虚部，于是
 
-\[
+$$
 \boxed{\omega=0.}
-\]
+$$
 
 Fisher与量子几何的联系可对照[Facchi等，公式(2)、(8)—(14)](https://arxiv.org/html/1009.5219)。本轮的虚部符号与系数按上面明确的h定义直接计算，不混用不同二形式约定。这里选用Fisher作为比较度量，也尚未证明原认知规则唯一要求这一度量。
 
@@ -52,18 +52,18 @@ Fisher与量子几何的联系可对照[Facchi等，公式(2)、(8)—(14)](http
 
 若额外引入
 
-\[
+$$
 \psi_i=\sqrt{p_i}e^{i\theta_i},
-\]
+$$
 
 则同一计算给出
 
-\[
+$$
 g=\frac14\sum_i\frac{dp_i^2}{p_i}
 +\sum_i p_i d\theta_i^2-\left(\sum_i p_i d\theta_i\right)^2,
 \qquad
 \omega=\frac12\sum_i dp_i\wedge d\theta_i.
-\]
+$$
 
 固定整体相位，例如θ_8=0，留下7个p坐标与7个相位坐标，得到复射线空间CP⁷的14维开集。完整的Kähler相容性来自这个标准射线空间的结构；数值核对J²=−I不是单独证明一般流形的积分性。
 

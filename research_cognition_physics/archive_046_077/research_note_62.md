@@ -14,9 +14,9 @@
 
 第一源向 A、B_L 发送 τ=(II+YY)/4；第二源向 B_R、C 独立发送相同的 τ。初态为
 
-\[
+$$
 \Omega=\tau_{AB_L}\otimes\tau_{B_RC}.
-\]
+$$
 
 Bob 同时持有 B_L、B_R。Alice 与 Charlie 分别持有 A、C。外端初始边缘严格为 I_A/2⊗I_C/2。
 
@@ -42,9 +42,9 @@ flowchart LR
 
 保留系统按 A、B_L、C 排序，简写 B=B_L。两个分支概率都为 1/2，归一化条件态为
 
-\[
+$$
 \rho_r=\frac18[III+YYI+r\beta(IYY+YIY)].
-\]
+$$
 
 程序使用完整旧 Kraus 仪器计算，包括原噪声和测后状态，随后做部分迹；不是用理想奇偶投影替代旧仪器。
 
@@ -52,9 +52,9 @@ flowchart LR
 
 更一般地，两源相关分别为 u、v，τ_u=(II+uYY)/4、τ_v=(II+vYY)/4，则
 
-\[
+$$
 \rho_r(u,v)=\frac18[III+uYYI+r\beta v IYY+r\beta uvYIY].
-\]
+$$
 
 这保留了来源不完美与探针不完美的不同作用。
 
@@ -62,24 +62,24 @@ flowchart LR
 
 若 r=−1，Charlie 对自己的参考 C 做 X 共轭；若 r=+1，不动。因为 XYX=−Y，两个归一化分支都变为
 
-\[
+$$
 \rho_{\rm aligned}=\frac18[III+YYI+\beta(IYY+YIY)].
-\]
+$$
 
 这里没有将孤立反射 X 偷加为连续局部门。Charlie 可以独立重置辅助 D 为 |0〉，在 D、C 上执行原 U_YX(π)：
 
-\[
+$$
 U_{YX}(\pi)=(-iY)_D\otimes X_C.
-\]
+$$
 
 丢弃 D 后目标精确接受 X 共轭。这对任意与其他系统相关的目标输入也成立；代码直接验证了整个通道。辅助需要计入，不能说原单系统 SO(2) 自己产生了 X。
 
 令 τ₃^flip 为 τ₃ 在 C 上翻转 Y 方向后的状态，则
 
-\[
+$$
 \rho_{\rm aligned}=\frac{1+\beta}{2}\tau_3+
 \frac{1-\beta}{2}\tau_3^{\rm flip}.
-\]
+$$
 
 两项支撑正交，所以 D(ρ_aligned,τ₃)=(1−β)/2。对 0≤u,v≤1 的弱来源，距离进一步精确为 1−(1+u)(1+βv)/4。
 
@@ -87,9 +87,9 @@ U_{YX}(\pi)=(-iY)_D\otimes X_C.
 
 若 Bob 读取后不做远端反馈，也不保留可用的结果标签，则
 
-\[
+$$
 \tfrac12(\rho_++\rho_-)=\tau_{AB}\otimes I_C/2.
-\]
+$$
 
 外端 A、C 的边缘仍为 I/4。出现跨两源的条件相关，与不依赖结果的远端相关，是两个不同命题。下一轮会一般性证明这一无信号约束，并检查“事后只处理记录”能做到什么。
 

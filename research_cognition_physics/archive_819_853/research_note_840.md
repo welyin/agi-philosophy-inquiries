@@ -22,6 +22,7 @@
 ## 2. 原区域对象及需检查的矩
 
 沿839，H_B为同一区域的Cauchy空间，E_B是其嵌入全空间的投影。P为730原纯协方差，但其区域压缩一般不是投影：
+
 $$
 A=E_BPE_B|_{H_B},\qquad
 h=\log\frac{I-A}{A},\qquad
@@ -30,6 +31,7 @@ L=-\log A-\log(I-A),\qquad CAC=I-A .
 $$
 
 端点0、1通过非负谱形式处理；若编码模式含端点谱质量，下面的绝对矩为∞，不把零本征值加底噪。Q是20维C不变编码投影，q=20、d=2^{q/2}=1024。取任意C实正交基u₁,…,u_q：
+
 $$
 Z_B=\operatorname{Tr}_Q|h|
 :=\sum_{j=1}^{q}\langle u_j,|h|u_j\rangle,\qquad
@@ -43,6 +45,7 @@ $$
 ## 3. 同一有限限制的模能量和条件熵
 
 沿839真正嵌套的H_n⊃ran Q，记A_n为A的压缩，R_n=I_n−Q。Gaussian化态g_n的协方差是
+
 $$
 \widetilde A_n=Q/2+R_nA_nR_n,\qquad
 h_n=\log\frac{I_n-A_n}{A_n},\qquad
@@ -52,6 +55,7 @@ h_n=\log\frac{I_n-A_n}{A_n},\qquad
 $$
 
 1/2来自自对偶计数，保配对和跨块项。γ_n是原参考限制，ν_n是其余部限制。先在支持相容的有限层计算；非相容时b_n=∞。重置熵增满足
+
 $$
 s_n=S(g_n)-S(\gamma_n)
 =\log d+S(\nu_n)-S(\gamma_n),\qquad
@@ -65,6 +69,7 @@ $$
 ## 4. 有限模能量的双边估计
 
 令A_Q=QA_nQ、H_Q=Qh_nQ、Z_n=Tr_Q|h_n|。自对偶性给Tr_Q h_n=0。将838重置差代入式(3)：
+
 $$
 \Delta K_n
 =\frac12\left[
@@ -74,6 +79,7 @@ $$
 $$
 
 所有乘积均由原完整A_n生成，未将跨块关联删除后再计算。由于∥A_Q−I_Q/2∥≤1/2、∥H_Q∥₁≤Z_n，且A_n、h_n对易，
+
 $$
 0\le\Delta K_n
 \le\frac12\left(\frac12Z_n+Z_n\right)
@@ -82,6 +88,7 @@ $$
 $$
 
 此处Tr_Q(A_nh_n)=Tr_Q((A_n−I/2)h_n)；后者非正，因为h为A的递减log-odds。标量t=|h_n|给|A_n−1/2|=(1/2)tanh(t/2)。再用t/(1+e^t)≤1/e：
+
 $$
 \begin{aligned}
 \Delta K_n
@@ -94,6 +101,7 @@ $$
 $$
 
 结合式(4)：
+
 $$
 \frac14Z_n-\frac qe-2\log d
 \le b_n\le\frac34Z_n .
@@ -105,6 +113,7 @@ $$
 ## 5. 从压缩到同一原区域谱
 
 对−log应用[Hansen—Pedersen算符Jensen不等式](https://arxiv.org/pdf/math/0204049)的等距压缩形式，得到二次型意义的
+
 $$
 |h_n|\le L_n:=-\log A_n-\log(I_n-A_n)
 \le E_n L E_n|_{H_n},\qquad
@@ -115,6 +124,7 @@ $$
 可先用−log(x+δ)证明有界正则化版本，再令δ↓0取非负形式极限；这只是证明手段，不更改物理参考。于是Z_B有限时，所有Z_n≤Z_B+2qlog2，式(8)给统一b_n上界。
 
 反向不假定Z_n收敛。把A_n在H_n外扩成半单位，其强极限为A。对连续有界函数f_M(x)=min{M,|log((1−x)/x)|}（端点定义为M）：
+
 $$
 \operatorname{Tr}_Qf_M(A_n)\longrightarrow
 \operatorname{Tr}_Qf_M(A),\qquad
@@ -127,6 +137,7 @@ $$
 ## 6. 原区域充要条件和误差范围
 
 由839的b_n↗b_B及式(8)—(10)，得到
+
 $$
 \boxed{\ b_B<\infty\ \Longleftrightarrow\ Z_B<\infty\ },\qquad
 \max\left\{0,\frac{Z_B}{4}-\frac qe-2\log d\right\}
@@ -144,6 +155,7 @@ $$
 [637—645](../archive_629_652/README.md)在指定Gibbs参考下能用真实H控制相对熵；本轮的局部γ_n一般不是那个Gibbs态。813/829的光滑资料和动力能源矩，不能仅凭符号相似代替式(2)。
 
 一个抽象CAR例子说明缺少谱比较的危险。取一粒子“能源”E_j=j，模式系数a_j=√(e²−1)e^{-j}，参考占据p_j=(1+exp(e^{3j}))^{-1}，按自对偶伙伴补全。它是合法Gaussian协方差，且可作纯Gaussian扩展，但未被证明是原时空Hadamard参考：
+
 $$
 \sum_{j\ge1}|a_j|^2j^{2m}<\infty
 \quad\hbox{每个有限 }m,\qquad

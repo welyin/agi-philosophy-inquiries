@@ -23,6 +23,7 @@
 ## 2. 一份共同作用，而非分别指定各场的力
 
 记Φ=(φ¹,…,φ⁵,p)，G=diag(𝒦,1)，U_total=U_H5+p²/2。沿原Einstein单位与Hermitian规范约定，经典核心为
+
 $$
 S_{\rm cl}=\int\sqrt{-g}\left[{R\over2}
 -{1\over2}G_{AB}D_\mu\Phi^A D^\mu\Phi^B-U_{\rm total}
@@ -33,6 +34,7 @@ $$
 K_a在每个简单部门恒定；颜色、弱、圆三块分别为1/g_c²、1/g_w²、36/g_Y²，与原K=1/(2b)相同。规范连接吸收耦合，圆荷用Q=6Y。五标量保完整角向，不能只演化h与s。探针中性；经典颜色物质源为零，但颜色电磁应力保留。
 
 在lapse α、shift β、空间度规γ下，沿原canonical密度π_A、E^{ia}定义
+
 $$
 \begin{gathered}
 v^A={G^{AB}\pi_B\over\sqrt\gamma},\qquad
@@ -46,6 +48,7 @@ M_i=\pi_A D_i\Phi^A+E^{ja}F^a_{ij},\\
 $$
 
 e_i=F_{ni}是物理法向电场，不是canonical E。内部时间规范A₀=0时，整份物质Hamiltonian为
+
 $$
 H_m=\int_{T^3}\left(\alpha\sqrt\gamma\rho+\beta^iM_i\right)d^3x,\qquad
 \dot\Phi={\delta H_m\over\delta\pi},\quad
@@ -62,6 +65,7 @@ $$
 ## 3. 完整度规的谐和演化
 
 [730](../archive_702_741/730/joint_dynamic_continuum_reference.py)已给原ADM符号K_ij=−γ̇_ij/2及初始jet；805明确其局部符号插值不是原未来解。本轮用谐和坐标C_μ=g_μν g^{αβ}Γ^ν_αβ=0，解
+
 $$
 R_{\mu\nu}-\nabla_{(\mu}C_{\nu)}
 =T_{\mu\nu}-{1\over2}g_{\mu\nu}T,\qquad
@@ -76,6 +80,7 @@ Q由Christoffel表达的二阶导数零部分直接构造，源使用(2)—(3)�
 方法对接[Sarbach—Tiglio，2012](https://arxiv.org/abs/1203.6443)的双曲约化、约束传播和离散化框架。旧573的局部存在方法继续承担连续存在论；内部时间规范可由光滑局部规范变换取得。数值时间规范实现与谐和Einstein方程的联合全误差稳定性，尚未由此自动证明。
 
 初始α=1、β=0、γ=ψ⁴δ，采用原K=ψ⁻²Ã+(τ/3)γ。同一Cauchy资料的谐和初始时间导数为
+
 $$
 \partial_tg_{ij}=-2K_{ij},\qquad
 \partial_tg_{00}=2\tau,\qquad
@@ -91,6 +96,7 @@ $$
 ## 4. 与作用独立交叉检查的能量交换
 
 保持canonical资料，在初始α=1、β=0时对空间度规作变分：
+
 $$
 \delta H_m=-{1\over2}\int\sqrt\gamma\,S^{ij}\delta\gamma_{ij}\,d^3x,
 \qquad
@@ -110,6 +116,7 @@ $$
 空间用周期Fourier配点导数，时间用四阶Runge–Kutta；终点T=.01为原模型坐标单位。N=12、16、24、32各用8步，另在N=24用16步。所有部门同时演化；每个N复用原859约束求解器准备初值，没有冻结非Abelian电场、标量角向或shift。
 
 独立监测
+
 $$
 \begin{gathered}
 \mathcal H={}^{(3)}R+K^2-K_{ij}K^{ij}-2\rho,\qquad
@@ -137,6 +144,7 @@ $$
 ## 6. 材料参考也随同一演化改变
 
 读取仍使用859的完整内部磁标量
+
 $$
 M_h={1\over2}P^{\mu\rho}P^{\nu\sigma}
 \sum_{a\in\mathrm{color}}F^a_{\mu\nu}F^a_{\rho\sigma},\qquad

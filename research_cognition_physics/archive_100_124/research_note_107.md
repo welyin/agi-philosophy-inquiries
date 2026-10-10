@@ -8,23 +8,23 @@
 
 引入环境 E_0,E_1,E_2 和纯化系统 R_0,R_1,R_2，全部初始化为 |0〉。准备三对状态：
 
-\[
+$$
 |\psi_\kappa\rangle_{E_0R_0}
 =\sqrt{\frac{1+\kappa}{2}}|00\rangle+
  \sqrt{\frac{1-\kappa}{2}}|11\rangle,
-\]
+$$
 
 其余两对为同式 κ=0 的状态。每对通过 E_i 上一次 R_y 旋转和一个原受控实复制门完成。E_i 边缘的张量积为
 
-\[
+$$
 \frac{I+\kappa Z_0}{2}\otimes\frac I2\otimes\frac I2.
-\]
+$$
 
 再在环境上施加
 
-\[
+$$
 T=R_{Z_1Y_2}(\pi/2)R_{Y_0X_1}(\pi/2).
-\]
+$$
 
 第一个门将 Z_0 变成 X_0X_1，第二个将它变成 X_0Y_1Y_2。因此 T Z_0 T†=XYY，恰好准备 σ_κ。
 
@@ -42,37 +42,39 @@ R_0,R_1,R_2 从未删除，也不开放给恢复者。取偏迹只计算当前�
 
 记 λ_i=cos(θ_i/2)、s_i=√(1−λ_i²)，并令
 
-\[
+$$
 \zeta=\lambda_0\lambda_1\lambda_2,\qquad Q_\kappa=\kappa s_1s_2.
-\]
+$$
 
 第 106 轮先逆变换后的响应 C_0=(BI−Q_κX)/2。未逆变换时交叉块变成 C_0R_0†，其厄米部分为
 
-\[
+$$
 \frac12\left[\zeta I+
 Q_\kappa(s_0Z-\lambda_0X)\right].
-\]
+$$
 
 因此只需在 E_0 上读取实轴
 
-\[
+$$
 \boxed{F=s_0Z-\lambda_0X.}
-\]
+$$
 
 环境多数消息 r 的概率为 1/2，与输入无关。使用 m 次原读取、γ=γ_m，保留全部分支后，M,N 的未归一化仪器为
 
-\[
+$$
 \boxed{
 \mathcal J_r(\omega)=\frac12\Lambda_{\zeta+r\gamma Q_\kappa}(\omega),
 }
-\]
-\[
+$$
+
+
+$$
 \Lambda_t(\omega)=\frac{1+t}{2}\omega+\frac{1-t}{2}A\omega A,\qquad -1\le t\le1.
-\]
+$$
 
 相干系数 t 可以为负，它代表带相位反转的通道，仍完全正。条件查询在 |t|>c 时读关联轴并按 sign(t) 翻转答案，否则只读 N。最终 q 次原读取得到
 
-\[
+$$
 \boxed{
 P_H=\frac12+\frac{\gamma_qw}{4}
 \left[
@@ -80,7 +82,7 @@ P_H=\frac12+\frac{\gamma_qw}{4}
 +\max(c,|\zeta-\gamma_mQ_\kappa|)
 \right].
 }
-\]
+$$
 
 环境消息自身不报告 H 真值。它改变的是该如何利用剩余记忆。
 
@@ -90,17 +92,17 @@ P_H=\frac12+\frac{\gamma_qw}{4}
 
 写任意非零实效应为 F_j=f_j(I+n_j·σ)，其中 n_j 位于 XZ 圆盘，Σf_j=1、Σf_j n_j=0。E_0 边缘为 I/2，故消息概率为 f_j。相关归一化相干系数为
 
-\[
+$$
 t_j=\zeta+Q_\kappa x_j,\qquad
 x_j=(s_0\hat z-\lambda_0\hat x)\cdot n_j,\quad
 |x_j|\le1,\quad\sum_j f_jx_j=0.
-\]
+$$
 
 函数 g(x)=max(c,|ζ+Q_κx|) 为凸函数。以两端连线控制：
 
-\[
+$$
 g(x)\le\frac{1+x}{2}g(1)+\frac{1-x}{2}g(-1).
-\]
+$$
 
 平均后，任何此类 POVM 的恢复因子至多 [g(1)+g(−1)]/2，由 F 轴的二结果投影达到。于是上一节 γ_m=1 的式子给出这个**环境先测量、单向实消息类**的精确理想界。
 

@@ -14,18 +14,18 @@
 
 在[Hollowood–Shore，1512.04952，式(7)—(12)](https://arxiv.org/html/1512.04952)的归一中，采用
 
-\[
+$$
 \sigma=4G\mu/b^2,\quad \hat s=\omega\sigma/(2m^2),\quad
 \Delta v_\pm=\pm8\widetilde a\sigma.
-\]
+$$
 
-其标量QED匹配为 \(\widetilde a=\alpha/(1440\pi m^2)\)，所以
+其标量QED匹配为 $\widetilde a=\alpha/(1440\pi m^2)$，所以
 
-\[
+$$
 |\omega\Delta v|=\alpha\hat s/(90\pi).
-\]
+$$
 
-低能采用若明确限为 \(\hat s\le\varepsilon\ll1\)，且 \(\alpha\ll1\)，则单模相位修正至多 \(\alpha\varepsilon/(90\pi)\ll1\)。把单脉冲可分辨标准具体取为 \(|\omega\Delta v|\ge1\)，反而要求 \(\hat s\ge90\pi/\alpha\)，与上述低能合同不相容。这个显式常数只是对原公式的代数整理，**不是本项目新发现**。原文另有 \(\omega\gg\sigma\)、\(m\gg\sigma\) 的几何光学／曲率条件，不能只留低能不等式。
+低能采用若明确限为 $\hat s\le\varepsilon\ll1$，且 $\alpha\ll1$，则单模相位修正至多 $\alpha\varepsilon/(90\pi)\ll1$。把单脉冲可分辨标准具体取为 $|\omega\Delta v|\ge1$，反而要求 $\hat s\ge90\pi/\alpha$，与上述低能合同不相容。这个显式常数只是对原公式的代数整理，**不是本项目新发现**。原文另有 $\omega\gg\sigma$、$m\gg\sigma$ 的几何光学／曲率条件，不能只留低能不等式。
 
 四维冲击波的共同坐标跳跃需要说明时钟和背景拼接；偏振差修正与共同坐标项不是同一个量。原文也区分相位除以频率与波包相位导数。本审计没有构建现实引力背景、证明装置可制备，或认证完整余项上界。
 

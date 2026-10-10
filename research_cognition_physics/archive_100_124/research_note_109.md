@@ -8,20 +8,20 @@
 
 保留 G=YY、H=IZ 两套分别准备的任务、M,N 两记忆、A=cX−vZ、L=cZ+vX，v=√(1−c²)、w=√(1−d²)。环境门仍为受 A 控制的
 
-\[
+$$
 R_i=R_y(2\arccos\lambda_i),\qquad s_i=\sqrt{1-\lambda_i^2}.
-\]
+$$
 
 λ_i 是门角度参数，混合环境下不自动等于条件纯态重叠。
 
 取三个局部偏置 0≤r_i≤1，构造
 
-\[
+$$
 \boxed{
 \sigma_{\boldsymbol r,\kappa}
 =\frac{\bigotimes_{i=0}^2(I+r_iZ_i)+\kappa X_0Y_1Y_2}{8}.
 }
-\]
+$$
 
 它的每个单片段边缘为 ρ_i=(I+r_iZ)/2，每个两片段边缘为 ρ_i⊗ρ_j，均与 κ 无关。κ=0 是这些局部边缘的独立乘积源；κ≠0 只增加三片段关联。
 
@@ -31,21 +31,21 @@ R_i=R_y(2\arccos\lambda_i),\qquad s_i=\sqrt{1-\lambda_i^2}.
 
 XYY 将计算基 |b〉映到其按位互补 |b̄〉，带一个实符号。因此状态分成四个 2×2 块。未除以 8 的块对角元素为
 
-\[
+$$
 d_b=\prod_i[1+(-1)^{b_i}r_i],\qquad d_{\bar b},
-\]
+$$
 
 非对角元素的模为 |κ|。所有块具有相同的对角乘积：
 
-\[
+$$
 d_bd_{\bar b}=\prod_i(1-r_i^2).
-\]
+$$
 
 对角元已非负，故每块正性等价于行列式非负，得到
 
-\[
+$$
 \boxed{|\kappa|\le R_{\boldsymbol r}:=\prod_i\sqrt{1-r_i^2}.}
-\]
+$$
 
 这是整个状态族的精确条件，包含端点。任意一个局部边缘成为纯态 r_i=1，都迫使 κ=0；若每个 r_i<1，则仍有非零关联余量。不能将此乘积界推广为任意其他相关态族的通用上界。
 
@@ -53,29 +53,29 @@ d_bd_{\bar b}=\prod_i(1-r_i^2).
 
 G 校准标签 g=±1 在记忆 A 扇区的概率为 (1±gv)/2。因而环境片段 i 的校准态为
 
-\[
+$$
 \rho_{i,g}=\frac{1+gv}{2}\rho_i+
 \frac{1-gv}{2}R_i\rho_iR_i^\dagger.
-\]
+$$
 
 两态差矩阵为
 
-\[
+$$
 \rho_{i,+}-\rho_{i,-}
 =vr_is_i(s_iZ-\lambda_iX),
-\]
+$$
 
 所以
 
-\[
+$$
 \boxed{D_G(E_i)=vr_is_i.}
-\]
+$$
 
 只要 c<1、r_i>0、λ_i<1，记录严格非零。沿实轴 F_i=s_iZ−λ_iX 作 m 次原保护读取，成功率为
 
-\[
+$$
 P_G^{(i)}=\frac{1+\gamma_mvr_is_i}{2}.
-\]
+$$
 
 这描述可读出的历史记录，没有假定不对易 G,H 具有共同真值。重复读取同一个片段仍不是多个独立原样本。
 
@@ -85,38 +85,38 @@ P_G^{(i)}=\frac{1+\gamma_mvr_is_i}{2}.
 
 排除整个环境后，
 
-\[
+$$
 \zeta=\operatorname{tr}(\sigma_{\boldsymbol r,\kappa}R_0^\dagger R_1^\dagger R_2^\dagger)
 =\lambda_0\lambda_1\lambda_2.
-\]
+$$
 
 局部 Z 偏置与 Y 迹正交，XYY 项也因第零片段上的 X 消失。因此任意记忆及复参考的通道都是 Λ_ζ，与 κ 无关。更早原 AB 的求和通道也不受这些记忆及环境操作影响。
 
 开放 E_0，数学上去掉已知 E_0–M 受控门后，响应为
 
-\[
+$$
 \sigma_0=\frac{I+r_0Z}{2},\qquad
 C_0=B\sigma_0-\frac{KX}{2},
 \quad B=\lambda_1\lambda_2,\quad K=\kappa s_1s_2.
-\]
+$$
 
 如需实际采用这个逆步骤，必须计入一个 E_0–M 共同门。
 
 第 106 轮的 H 差矩阵在 M 的 L 基中分成两块：
 
-\[
+$$
 (c\pm B)\sigma_0\mp KX/2.
-\]
+$$
 
 每块的标量部分为 (c±B)/2，向量长度为 √[(c±B)²r_0²+K²]/2，故
 
-\[
+$$
 \boxed{
 D_H(E_0MN)=wT,\qquad
 T=\frac12\sum_{a=c+B,c-B}
 \max\left\{|a|,\sqrt{a^2r_0^2+K^2}\right\}.
 }
-\]
+$$
 
 这是全部可访问联合测量的理想上限及可达值。κ=0 时退化为 w max(c,B)。
 
@@ -124,10 +124,10 @@ T=\frac12\sum_{a=c+B,c-B}
 
 选
 
-\[
+$$
 c=d=4/5,\quad r_0=r_1=r_2=3/5,\quad
 \lambda_0=\lambda_1=\lambda_2=9/10.
-\]
+$$
 
 允许的最大 |κ|=64/125=0.512。比较 κ=0 与 κ=64/125：
 

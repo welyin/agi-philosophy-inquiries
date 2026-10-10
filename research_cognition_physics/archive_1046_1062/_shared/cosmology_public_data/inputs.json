@@ -1,0 +1,87 @@
+{
+  "schema": "cosmology_public_summary_check_v1",
+  "retrieved_on": "2026-10-08",
+  "scientific_increment": 0,
+  "new_research_round": null,
+  "observable": {
+    "symbol": "y_D",
+    "definition": "100000 * n_deuterium / n_hydrogen1",
+    "residual_definition": "held_out_observation_mean - prediction_mean"
+  },
+  "calibration": {
+    "id": "Planck2018_TTTEEE_lowE_lensing_baseLCDM",
+    "omega_b_mean": 0.02237,
+    "omega_b_sigma": 0.00015,
+    "source_url": "https://arxiv.org/html/1807.06209",
+    "source_location": "Table 2 baseline column and equation (22), v4 HTML",
+    "uses_BBN_helium_relation": true,
+    "uses_held_out_DH_data": false,
+    "uses_BAO_data": false,
+    "scope": "Published conditional CMB posterior with base LCDM and BBN helium relation; not an inference independent of all BBN theory."
+  },
+  "predictions": [
+    {
+      "id": "GP_2026",
+      "label": "2026 GP nuclear-rate analysis, LINX propagation",
+      "mean": 2.442,
+      "sigma": 0.040,
+      "source_url": "https://arxiv.org/html/2604.16600",
+      "source_location": "Equation (6), Table 2",
+      "calibration_id": "Planck2018_TTTEEE_lowE_lensing_baseLCDM",
+      "omega_b_uncertainty_already_included": true,
+      "nuclear_rate_and_neutron_lifetime_uncertainty_included": true,
+      "uses_held_out_DH_in_rate_fit_or_calibration": false
+    },
+    {
+      "id": "PRIMAT_network_2026_comparison",
+      "label": "PRIMAT rates in the 2026 paper's LINX comparison",
+      "mean": 2.444,
+      "sigma": 0.037,
+      "source_url": "https://arxiv.org/html/2604.16600",
+      "source_location": "Equation (5), Table 2; not the separate PRIMAT website 2026 grid",
+      "calibration_id": "Planck2018_TTTEEE_lowE_lensing_baseLCDM",
+      "omega_b_uncertainty_already_included": true,
+      "nuclear_rate_and_neutron_lifetime_uncertainty_included": true,
+      "uses_held_out_DH_in_rate_fit_or_calibration": false
+    },
+    {
+      "id": "PArthENoPE_network_2026_comparison",
+      "label": "PArthENoPE rates in the 2026 paper's LINX comparison",
+      "mean": 2.512,
+      "sigma": 0.042,
+      "source_url": "https://arxiv.org/html/2604.16600",
+      "source_location": "Equation (4), Table 2; not the 2021 polynomial with its original error prescription",
+      "calibration_id": "Planck2018_TTTEEE_lowE_lensing_baseLCDM",
+      "omega_b_uncertainty_already_included": true,
+      "nuclear_rate_and_neutron_lifetime_uncertainty_included": true,
+      "uses_held_out_DH_in_rate_fit_or_calibration": false
+    }
+  ],
+  "held_out_observation": {
+    "id": "Cooke_Pettini_Steidel_2018_precision_sample",
+    "mean": 2.527,
+    "sigma": 0.030,
+    "source_url": "https://arxiv.org/html/1710.11129",
+    "source_location": "Direct seven-system primordial D/H estimate; not the BBN-converted baryon density",
+    "used_in_prediction_calibration": false
+  },
+  "statistical_contract": {
+    "prediction_summary_approximated_as_gaussian": true,
+    "observation_summary_approximated_as_gaussian": true,
+    "prediction_observation_errors_assumed_independent": true,
+    "residual_interval_coverage": 0.95,
+    "two_sided_p_definition": "erfc(abs(residual) / (sqrt(2) * sigma_total)); equal-mean Gaussian diagnostic",
+    "do_not_add_omega_b_error_again": true,
+    "method_comparisons_share_calibration_and_nuclear_data": true,
+    "method_averaging_allowed": false,
+    "parameter_refitting_allowed": false,
+    "interpretation": "The residual interval is estimate plus/minus 1.95996 combined standard deviations under the adopted summary assumptions. It is not a rigorous physical truncation envelope, a probability that a theory is true, or a new nuclear-network computation."
+  },
+  "source_caveats": [
+    "The retrieved 2604.16600 HTML Table 1 prints Planck 100 omega_b as 2.337, inconsistent with its equation (3) and original Planck value 2.237. This input uses original Planck and equation (3); it does not silently repair the external table or recompute a prediction from 2.337.",
+    "D/H was not a fitted datum in the selected nuclear-rate or Planck baseline calibration, but shared theoretical assumptions, including the Planck BBN helium relation, remain.",
+    "All three prediction errors are the published 2026 Table 2 summaries, already marginalized over the same Planck omega_b uncertainty. The 0.029 error in equation (12), which fixes omega_b, is not used.",
+    "Different rate methodologies share inputs and are shown side by side. They are not independent measurements to average or alternatives from which to choose a convenient pass.",
+    "This adopts the standard P981 BBN branch. No claim is made that the B993 sigma state and portal history have been matched to this cosmological window."
+  ]
+}

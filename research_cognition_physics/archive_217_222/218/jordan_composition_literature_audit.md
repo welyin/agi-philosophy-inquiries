@@ -14,9 +14,9 @@
 
 2014定理的结构结论可写成
 
-\[
+$$
 E(A)\simeq\bigoplus_\alpha\operatorname{Herm}_{n_\alpha}(\mathbb C).
-\]
+$$
 
 全为一维块时是经典概率；较大块是复量子扇区。已有复量子位排除了“整个理论完全经典”，但没有排除经典系统或超选择扇区。若要求每个系统都是单一完整矩阵块，还须说明为何不允许直和。
 
@@ -24,10 +24,10 @@ E(A)\simeq\bigoplus_\alpha\operatorname{Herm}_{n_\alpha}(\mathbb C).
 
 局部层析要求：两个整体态若对所有乘积效应给出相同的联合概率，便是同一操作态：
 
-\[
+$$
 \bigl[\forall a,b:\ \omega(a\otimes b)=\omega'(a\otimes b)\bigr]
 \Longrightarrow\omega=\omega'.
-\]
+$$
 
 这里包含两方结果的关联统计，不是只分别知道两个边缘分布，也不是只问有限几个问题。它要求局部测量并对照结果足以区分所有整体态；不能直接从“主体愿意合作”得到。[定义来源：2020，§2.3](https://arxiv.org/html/1606.09331v3#S2.SS3)。
 
@@ -35,13 +35,13 @@ E(A)\simeq\bigoplus_\alpha\operatorname{Herm}_{n_\alpha}(\mathbb C).
 
 数学结论与认知论证应分成两段：
 
-\[
+$$
 \text{认同与融入的操作要求}
 \ \overset{\text{待论证}}{\Longrightarrow}\
 \text{某一完整重建定理的前提}
 \ \overset{\text{已有定理}}{\Longrightarrow}\
 \text{复量子等价结构（允许经典扇区）}.
-\]
+$$
 
 - 若用户把完整前提作为候选公理，后一段可以直接引用，无需重新证明数域筛选。
 - 若目标仍是从 SoCA 推出这些前提，须分别解释 Jordan/HSD、复合相容性、局部层析及该版本的复量子位来源。仅加入“非经典”不能冒充已经满足“存在复量子位”。这里不是断言所有其他重建定理都必须预设 qubit。

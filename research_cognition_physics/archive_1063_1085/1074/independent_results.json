@@ -1,0 +1,292 @@
+{
+  "round": 1074,
+  "independent": true,
+  "assertion_groups": 13,
+  "all_passed": true,
+  "maximum_equality_residual": 4.04121180963557e-14,
+  "minimum_inequality_margin": -5.551115123125783e-17,
+  "numerical_tolerance": 3e-11,
+  "groups": [
+    {
+      "name": "01_symmetry_and_idempotence",
+      "passed": true,
+      "max_absolute_equality_residual": 0.0,
+      "minimum_inequality_margin": 0.0,
+      "diagnostics": {
+        "parameter_cases": 15
+      }
+    },
+    {
+      "name": "02_explicit_inverse_meeting_and_involution",
+      "passed": true,
+      "max_absolute_equality_residual": 1.1102230246251565e-16,
+      "minimum_inequality_margin": 0.0,
+      "diagnostics": {
+        "dimensions": [
+          1,
+          2,
+          3,
+          5,
+          8
+        ]
+      }
+    },
+    {
+      "name": "03_right_uniqueness_bounds_and_independent_solver",
+      "passed": true,
+      "max_absolute_equality_residual": 4.04121180963557e-14,
+      "minimum_inequality_margin": -5.551115123125783e-17,
+      "diagnostics": {
+        "maximum_fixed_point_iterations": 139,
+        "scope": "Sample checks of bounds proved by triangle inequalities and contraction."
+      }
+    },
+    {
+      "name": "04_full_allowed_group_covariance",
+      "passed": true,
+      "max_absolute_equality_residual": 2.4424906541753444e-15,
+      "minimum_inequality_margin": 0.0,
+      "diagnostics": {
+        "group": "R^d semidirect SO(d-1); d=1 uses the trivial stabilizer."
+      }
+    },
+    {
+      "name": "05_complete_offset_shell_and_isotropy",
+      "passed": true,
+      "max_absolute_equality_residual": 6.938893903907228e-17,
+      "minimum_inequality_margin": 0.0,
+      "diagnostics": {
+        "formula": "F(S_r) is the sphere centered at -2*a*r*e with radius r."
+      }
+    },
+    {
+      "name": "06_non_C1_one_sided_derivatives",
+      "passed": true,
+      "max_absolute_equality_residual": 2.220446049250313e-16,
+      "minimum_inequality_margin": 0.0,
+      "diagnostics": {
+        "derivative_jump": "4*a, exactly for every positive t."
+      }
+    },
+    {
+      "name": "07_affine_stabilizer_is_not_normal",
+      "passed": true,
+      "max_absolute_equality_residual": 2.7755575615628914e-17,
+      "minimum_inequality_margin": 0.0,
+      "diagnostics": {
+        "conjugated_stabilizer_moves_origin_by": 0.19964415357367474,
+        "position_dimension": 3,
+        "group_dimension": 4,
+        "stabilizer_dimension": 1
+      }
+    },
+    {
+      "name": "08_S2_meeting_and_full_rotation_covariance",
+      "passed": true,
+      "max_absolute_equality_residual": 2.220446049250313e-16,
+      "minimum_inequality_margin": 0.0,
+      "diagnostics": {
+        "sample_tangent_points": 33,
+        "domain": "northern cap"
+      }
+    },
+    {
+      "name": "09_S2_explicit_reverse_and_complete_circle",
+      "passed": true,
+      "max_absolute_equality_residual": 5.551115123125783e-17,
+      "minimum_inequality_margin": 0.0,
+      "diagnostics": {
+        "local_unique_solution": "y = 2*(north dot x)*north - x"
+      }
+    },
+    {
+      "name": "10_S2_reductive_section_and_center_recovery",
+      "passed": true,
+      "max_absolute_equality_residual": 3.3306690738754696e-16,
+      "minimum_inequality_margin": 0.0,
+      "diagnostics": {}
+    },
+    {
+      "name": "11_S2_stabilizer_non_normal_and_position_dimension",
+      "passed": true,
+      "max_absolute_equality_residual": 0.0,
+      "minimum_inequality_margin": 0.0,
+      "diagnostics": {
+        "tangent_rank": 2,
+        "Lie_algebra_rank": 3,
+        "stabilizer_kernel_dimension": 1,
+        "conjugated_stabilizer_motion": 0.40389767752974753,
+        "scope": "This two-dimensional example satisfies the bridge; the bridge alone does not select three."
+      }
+    },
+    {
+      "name": "12_missing_uniqueness_collapses_half_neighborhood",
+      "passed": true,
+      "max_absolute_equality_residual": 1.3877787807814457e-17,
+      "minimum_inequality_margin": 0.0,
+      "diagnostics": {
+        "distinct_compensations_for_zero": [
+          -0.19,
+          -0.07,
+          0
+        ],
+        "no_solution_for_positive_x": "max(x,y)>=x>0 for every real y",
+        "F": "v-|v|"
+      }
+    },
+    {
+      "name": "13_missing_full_covariance_precludes_common_compact_shell",
+      "passed": true,
+      "max_absolute_equality_residual": 8.881784197001252e-16,
+      "minimum_inequality_margin": 0.0,
+      "diagnostics": {
+        "covariance_defect": 0.08202975070058426,
+        "radius_multiplier": 2.7037037037037033,
+        "finite_growth_witness": [
+          1e-05,
+          2.7037037037037044e-05,
+          7.310013717421127e-05,
+          0.0001976411116191638,
+          0.0005343630054888503,
+          0.0014447592370624473,
+          0.0039062009002058763
+        ],
+        "analytic_reason": "A full SO(d)-invariant nonzero compact set contains r*e; (R*i)^N gives k^N*r*e, contradicting compactness.",
+        "scope": "d>=2; this explicit candidate loses the common rotation/reversal shell when the required covariance is deleted."
+      }
+    }
+  ],
+  "affine_case_diagnostics": [
+    {
+      "dimension": 1,
+      "a": 0.14285714285714285,
+      "sample_points": 21,
+      "explicit_inverse_residual": 2.7755575615628914e-17,
+      "meeting_at_anchor_residual": 1.3877787807814457e-17,
+      "complete_shell_formula_residual": 0.0
+    },
+    {
+      "dimension": 1,
+      "a": 0.23,
+      "sample_points": 21,
+      "explicit_inverse_residual": 2.7755575615628914e-17,
+      "meeting_at_anchor_residual": 1.3877787807814457e-17,
+      "complete_shell_formula_residual": 0.0
+    },
+    {
+      "dimension": 1,
+      "a": 0.4,
+      "sample_points": 21,
+      "explicit_inverse_residual": 8.326672684688674e-17,
+      "meeting_at_anchor_residual": 2.7755575615628914e-17,
+      "complete_shell_formula_residual": 0.0
+    },
+    {
+      "dimension": 2,
+      "a": 0.14285714285714285,
+      "sample_points": 21,
+      "explicit_inverse_residual": 2.7755575615628914e-17,
+      "meeting_at_anchor_residual": 1.3877787807814457e-17,
+      "complete_shell_formula_residual": 2.7755575615628914e-17
+    },
+    {
+      "dimension": 2,
+      "a": 0.23,
+      "sample_points": 21,
+      "explicit_inverse_residual": 2.7755575615628914e-17,
+      "meeting_at_anchor_residual": 1.3877787807814457e-17,
+      "complete_shell_formula_residual": 5.551115123125783e-17
+    },
+    {
+      "dimension": 2,
+      "a": 0.4,
+      "sample_points": 21,
+      "explicit_inverse_residual": 8.326672684688674e-17,
+      "meeting_at_anchor_residual": 2.7755575615628914e-17,
+      "complete_shell_formula_residual": 5.551115123125783e-17
+    },
+    {
+      "dimension": 3,
+      "a": 0.14285714285714285,
+      "sample_points": 21,
+      "explicit_inverse_residual": 2.7755575615628914e-17,
+      "meeting_at_anchor_residual": 1.3877787807814457e-17,
+      "complete_shell_formula_residual": 2.7755575615628914e-17
+    },
+    {
+      "dimension": 3,
+      "a": 0.23,
+      "sample_points": 21,
+      "explicit_inverse_residual": 2.7755575615628914e-17,
+      "meeting_at_anchor_residual": 1.3877787807814457e-17,
+      "complete_shell_formula_residual": 2.7755575615628914e-17
+    },
+    {
+      "dimension": 3,
+      "a": 0.4,
+      "sample_points": 21,
+      "explicit_inverse_residual": 8.326672684688674e-17,
+      "meeting_at_anchor_residual": 2.7755575615628914e-17,
+      "complete_shell_formula_residual": 5.551115123125783e-17
+    },
+    {
+      "dimension": 5,
+      "a": 0.14285714285714285,
+      "sample_points": 21,
+      "explicit_inverse_residual": 1.3877787807814457e-17,
+      "meeting_at_anchor_residual": 1.3877787807814457e-17,
+      "complete_shell_formula_residual": 2.7755575615628914e-17
+    },
+    {
+      "dimension": 5,
+      "a": 0.23,
+      "sample_points": 21,
+      "explicit_inverse_residual": 3.2959746043559335e-17,
+      "meeting_at_anchor_residual": 1.3877787807814457e-17,
+      "complete_shell_formula_residual": 2.7755575615628914e-17
+    },
+    {
+      "dimension": 5,
+      "a": 0.4,
+      "sample_points": 21,
+      "explicit_inverse_residual": 6.245004513516506e-17,
+      "meeting_at_anchor_residual": 2.7755575615628914e-17,
+      "complete_shell_formula_residual": 2.7755575615628914e-17
+    },
+    {
+      "dimension": 8,
+      "a": 0.14285714285714285,
+      "sample_points": 21,
+      "explicit_inverse_residual": 1.3877787807814457e-17,
+      "meeting_at_anchor_residual": 6.938893903907228e-18,
+      "complete_shell_formula_residual": 2.7755575615628914e-17
+    },
+    {
+      "dimension": 8,
+      "a": 0.23,
+      "sample_points": 21,
+      "explicit_inverse_residual": 2.0816681711721685e-17,
+      "meeting_at_anchor_residual": 1.3877787807814457e-17,
+      "complete_shell_formula_residual": 2.7755575615628914e-17
+    },
+    {
+      "dimension": 8,
+      "a": 0.4,
+      "sample_points": 21,
+      "explicit_inverse_residual": 6.938893903907228e-17,
+      "meeting_at_anchor_residual": 2.7755575615628914e-17,
+      "complete_shell_formula_residual": 2.7755575615628914e-17
+    }
+  ],
+  "proof_sha256": "515ad48596634ddc15c334414b8d29966f6fc9bdb807e426c5df409026639890",
+  "independent_script_sha256": "c7551958bfef433a8d350421fb76f235332f09732c65401bc0a0f8689a997db3",
+  "numpy_version": "2.3.5",
+  "scope": [
+    "The 13 groups are distinct mathematical checks; sample counts are not new assertion groups.",
+    "Explicit models do not derive the prior actual contact space or physical controls.",
+    "The general continuous theorem relies on the analytic proof and invariance of domain, not sampling.",
+    "Bi-Lipschitz bounds occur in this witness only, not as restored assumptions of the general theorem.",
+    "The stronger missing-covariance boundary is stated independently; author proof.md is not edited.",
+    "No author computation imports, images, dependency installations, or default file writes."
+  ]
+}

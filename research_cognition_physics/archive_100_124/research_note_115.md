@@ -8,11 +8,11 @@
 
 保持源族、偏置和实际查询仪器：
 
-\[
+$$
 \sigma_\kappa
 =\frac{\bigotimes_{i=0}^2(I+\tfrac35Z_i)+\kappa XYY}{8},
 \qquad |\kappa|\le R=\frac{64}{125}.
-\]
+$$
 
 未来任务的源与旧 AB 输入及 H 校准标签初始独立。源纯化与额外共享标签仍在整体，但不向控制器开放。
 
@@ -20,11 +20,11 @@
 
 引入一个封闭的公平标签 Z∈{−1,+1}。N 份校准源均使用 κ=ZR，未来任务使用 κ=εZR，ε=±1。两种整体状态为
 
-\[
+$$
 \Omega_\varepsilon
 =\frac12\sum_{z=\pm1}
 \sigma_{zR}^{\otimes N}\otimes\sigma_{\varepsilon zR}.
-\]
+$$
 
 两种整体具有：
 
@@ -52,9 +52,9 @@
 
 第 110 轮源制备中，R_2 槽的旋转角为 acos τ，κ=τR。令封闭标签处于 |+>，把该旋转替换为
 
-\[
+$$
 R_Y(\pi/2)_{R_2}\,R_{ZY}(-\varepsilon\arcsin\tau)_{Z,R_2}.
-\]
+$$
 
 两个生成元对易。在标签本征值 z 下，总角为 π/2−εz arcsin τ=acos(εzτ)，恰好准备所需源。R_ZY 可由一次原 XY 相互作用和两次局部 Y 旋转编译。
 
@@ -70,23 +70,23 @@ R_Y(\pi/2)_{R_2}\,R_{ZY}(-\varepsilon\arcsin\tau)_{Z,R_2}.
 
 未来的有效区间为
 
-\[
+$$
 J=[L-d,U+d]\cap[-R,R].
-\]
+$$
 
 设 J=[l,u]。第 112 轮三个策略满足
 
-\[
+$$
 P_H(\kappa,s)=P_0+C\,s\kappa,\quad
 s\in\{-1,0,+1\},\quad C>0.
-\]
+$$
 
 对三者任意随机混合，令 x=E s∈[−1,1]。最坏增益是 C min_{κ∈J}xκ。因此
 
-\[
+$$
 \boxed{\sup_x\inf_{\kappa\in J}(P_H-P_0)
 =C\max(0,l,-u).}
-\]
+$$
 
 若 l>0，选正号；若 u<0，选负号；区间跨零则基础查询达到这个受限策略类的最坏情况最优值。要保证至少 Ch 增益，就要求 l≥h 或 u≤−h。
 

@@ -6,18 +6,18 @@
 
 **保留**：每个旧协议在组合系统中都有对应实现，对嵌入的旧准备给出相同完整记录分布。以矩阵候选为例：
 
-\[
+$$
 \rho\mapsto\rho\otimes\sigma,\quad
 K\mapsto K\otimes I,\quad E\mapsto E\otimes I.
-\]
+$$
 
 σ 是声明的伙伴准备。逐分支有 $(K\otimes I)(\rho\otimes\sigma)(K^\dagger\otimes I)=K\rho K^\dagger\otimes\sigma$，故任意有限自适应旧协议可以照常执行。这里保留的是可调用能力，不要求任意一次新的相互作用都不改变旧状态。
 
 **扩展**：存在一个明确任务、输入分布和资源条件，组合允许的协议取得严格更好的成绩。记任务价值为
 
-\[
+$$
 V(\mathcal P)=\sup_{\pi\in\mathcal P}\Pr(\text{任务完成}\mid\pi).
-\]
+$$
 
 若旧协议可嵌入新协议，则至少不退步；若某个任务满足 $V(\mathcal P_{\rm new})>V(\mathcal P_{\rm old})$，便给出边界扩展的证据。
 
@@ -31,22 +31,22 @@ V(\mathcal P)=\sup_{\pi\in\mathcal P}\Pr(\text{任务完成}\mid\pi).
 
 基准允许：两方各自任意局部量子操作和经典通信，独立局部辅助，不额外提供共享纠缠资源。甚至给予理想本地读取，这一基准仍满足
 
-\[
+$$
 P_{\rm succ}^{\rm LOCC}\le\frac12.
-\]
+$$
 
 证明：每个有限局部通信协议的判决效应 E_b 为正乘积效应的和。任意 Bell 态对纯乘积向量的平方重叠最多为 1/2，谱分解后得到
 
-\[
+$$
 \operatorname{Tr}(\rho_b E_b)\le\tfrac12\operatorname{Tr}(E_b).
-\]
+$$
 
 于是
 
-\[
+$$
 P_{\rm succ}=\tfrac14\sum_b\operatorname{Tr}(\rho_bE_b)
 \le\tfrac18\operatorname{Tr}I_4=\tfrac12.
-\]
+$$
 
 理想本地 Z 读取辨认一组奇偶类别，再随机猜另一个符号，可达到 1/2。原噪声基准也不可能超过这个更宽松的上界。
 
@@ -56,17 +56,17 @@ P_{\rm succ}=\tfrac14\sum_b\operatorname{Tr}(\rho_bE_b)
 
 组合协议增加一个原 YX Bell 逆门，将四个标签变成两个 Z 比特，再对每个比特使用 m 次旧指针读取。多数读取可见度为 $\gamma_m$，两个比特独立解码，所以
 
-\[
+$$
 P_{\rm succ}^{\rm joint}=\left(\frac{1+\gamma_m}{2}\right)^2.
-\]
+$$
 
 全 16 项输入—输出概率核对如下：若输出与真标签相差 h 个比特，
 
-\[
+$$
 P(\widehat b\mid b)
 =\left(\frac{1+\gamma_m}{2}\right)^{2-h}
  \left(\frac{1-\gamma_m}{2}\right)^h.
-\]
+$$
 
 所有试验都有判决，不筛选结果。
 
@@ -78,11 +78,11 @@ P(\widehat b\mid b)
 
 m=1 已有严格证书
 
-\[
+$$
 P_{\rm succ}\ge
 \frac{1254521282748872455953902714155}
 {1267650600228229401496703205376}>0.98.
-\]
+$$
 
 它使用一个旧共同逆门、两次原读取，无需 Y 新资源。m>1 另需旧保持式复制门与独立重置，不能把“一个 Bell 逆门”误读成整段程序仅有一个门。输入仍只有一份未知 Bell 态，指针重复不是新增未知态样本。
 

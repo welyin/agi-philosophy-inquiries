@@ -24,7 +24,7 @@
 
 ## 2. 从原完整质量取得共同方向
 
-复用599的单位径向方向，M表示原常数2，矩阵质量写作 \(\mathsf M\) 以免混淆：
+复用599的单位径向方向，M表示原常数2，矩阵质量写作 $\mathsf M$ 以免混淆：
 
 $$
 \phi(q)=\sqrt{6M}\tanh(q/\sqrt6)\,\hat n,\quad
@@ -34,9 +34,9 @@ F=M-\phi^2/6,\quad
 \tag{1}
 $$
 
-\(\mathsf M_0\) 是原一代16维复对称Weyl质量：三个颜色的u、d Dirac块、一个e Dirac块，以及原ν与singlet Majorana的二阶块。所有Y继承598，没有再拟合。q★=0.27是599既有诊断幅度，不是物理真空预测。质量沿这条射线只改变共同实幅度；一次常量Takagi变换足够，不产生随位置变化的质量本征基联络。
+$\mathsf M_0$ 是原一代16维复对称Weyl质量：三个颜色的u、d Dirac块、一个e Dirac块，以及原ν与singlet Majorana的二阶块。所有Y继承598，没有再拟合。q★=0.27是599既有诊断幅度，不是物理真空预测。质量沿这条射线只改变共同实幅度；一次常量Takagi变换足够，不产生随位置变化的质量本征基联络。
 
-令m_a为 \(\mathsf M(q_\star)\) 的16个正奇异值，每项取半权：
+令m_a为 $\mathsf M(q_\star)$ 的16个正奇异值，每项取半权：
 
 $$
 d_a=\frac12,\quad
@@ -52,7 +52,7 @@ $$
 
 ## 3. 同一质量来源的正实时谱
 
-先用线性外部来源η定义质量 \(\mathsf M_\star(1+\eta)\)。在平直背景中，O是Hamiltonian对η的一阶导数，即完整的质量双线性算符；各Majorana项含标准半因子。采用 \(\hbar=c=1\)，空间零动量及单位体积归一。定义连通谱和迟致核：
+先用线性外部来源η定义质量 $\mathsf M_\star(1+\eta)$。在平直背景中，O是Hamiltonian对η的一阶导数，即完整的质量双线性算符；各Majorana项含标准半因子。采用 $\hbar=c=1$，空间零动量及单位体积归一。定义连通谱和迟致核：
 
 $$
 \rho(\omega)=\int dt\,d^3x\,e^{i\omega t}
@@ -62,7 +62,7 @@ N(\omega)=\frac12\rho(|\omega|).
 \tag{3}
 $$
 
-最后一式限真空，且ρ奇延拓。此约定 \(\operatorname{Im}\Pi_R(\omega+i0)=\rho(\omega)/2\)；因为Hamiltonian扰动为＋ηO，实际一阶期望变化是−Π_R η。局部接触项与来源的非线性二阶导数另计，避免符号或“静态曲率＝正协方差”混淆。
+最后一式限真空，且ρ奇延拓。此约定 $\operatorname{Im}\Pi_R(\omega+i0)=\rho(\omega)/2$；因为Hamiltonian扰动为＋ηO，实际一阶期望变化是−Π_R η。局部接触项与来源的非线性二阶导数另计，避免符号或“静态曲率＝正协方差”混淆。
 
 对ω>0，原完整物质给
 
@@ -84,7 +84,7 @@ E_{\mathbf k}=\sqrt{\mathbf k^2+m^2}.
 \tag{5}
 $$
 
-将(5)乘 \(2\pi\delta(\omega-2E_{\mathbf k})\,d^3k/(2\pi)^3\) 积分便得Dirac权1的(4)。Majorana取半权。解析归一不依赖数值拟合；原全部质量的投影矩阵检查误差1.39×10⁻¹⁷。
+将(5)乘 $2\pi\delta(\omega-2E_{\mathbf k})\,d^3k/(2\pi)^3$ 积分便得Dirac权1的(4)。Majorana取半权。解析归一不依赖数值拟合；原全部质量的投影矩阵检查误差1.39×10⁻¹⁷。
 
 真空正性同时给谱和噪声非负。这里没有把热态的零频占据记忆设为零后还称之为同一热态；本轮明确选择真空。602和626对其它状态的限制继续有效。
 
@@ -120,7 +120,7 @@ $$
 
 纯曲率项没有被删除，只未写在(8)；也未把本轮当成规范、标量或引力圈总和。热核公式来源已由599核实为[Vassilevich式4.28](https://arxiv.org/pdf/hep-th/0306138)，此处不重新计为新定理。
 
-对(8)求两次η导数，以 \(1/\epsilon\leftrightarrow2\log\Lambda\) 比较对数项，并使用(6)的符号，得到
+对(8)求两次η导数，以 $1/\epsilon\leftrightarrow2\log\Lambda$ 比较对数项，并使用(6)的符号，得到
 
 $$
 \Pi_\Lambda(z)=\frac{S_2}{8\pi^2}\Lambda^2
@@ -157,7 +157,7 @@ L_6=\frac1\pi\int_0^\infty\frac{\rho(\omega)}{\omega^7}\,d\omega
 \tag{11}
 $$
 
-代换x=2m_a/ω把积分化为[0,1]上的Beta积分，分别为1/5与2/35。对实频率 \(|z|<\omega_0=2m_{\min}\)：
+代换x=2m_a/ω把积分化为[0,1]上的Beta积分，分别为1/5与2/35。对实频率 $|z|<\omega_0=2m_{\min}$：
 
 $$
 0\le\mathcal R(z)\le
@@ -175,7 +175,7 @@ $$
 
 ## 6. 同一谱怎样约束几何来源
 
-取 \(g_{\mu\nu}=e^{2\sigma}\eta_{\mu\nu}\)。在四维canonical费米动力学中，使用 \(\psi_g=e^{-3\sigma/2}\psi_{\rm flat}\) 后，质量成为
+取 $g_{\mu\nu}=e^{2\sigma}\eta_{\mu\nu}$。在四维canonical费米动力学中，使用 $\psi_g=e^{-3\sigma/2}\psi_{\rm flat}$ 后，质量成为
 
 $$
 \mathsf M_{\mathrm{flat}}=e^\sigma(1+\eta)\mathsf M_\star,\qquad
@@ -241,7 +241,7 @@ $$
 
 这里P_real指消去费米子后只留下的实局部二次来源核，不是含显式费米子的局部场论。保留显式物质及同一真空，或保留完整因果影响核，均可表示这些通道。少数局部系数相同不证明完整量子过程相同。
 
-作为实际非绝热响应诊断，取外部η脉冲 \(\epsilon e^{-t^2/(2\tau^2)}\)，按原自由场真空计算最低非平凡阶的吸收能量密度：
+作为实际非绝热响应诊断，取外部η脉冲 $\epsilon e^{-t^2/(2\tau^2)}$，按原自由场真空计算最低非平凡阶的吸收能量密度：
 
 $$
 \frac{\Delta E}{V}

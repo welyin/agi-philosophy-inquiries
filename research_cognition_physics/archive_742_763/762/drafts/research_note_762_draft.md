@@ -55,7 +55,7 @@ Q_\alpha=-iR^\dagger\partial_{\theta^\alpha}R .
 \tag{3}
 $$
 
-T0在协变菜单上等于c(z0)|K。Qα是相应框架中的Hermitian生成元；不是新增随机荷。所有下面的导数均在零截面取值。令 \(\widetilde c_{p_\theta^\alpha}=R^\dagger(\partial_{p_\theta^\alpha}c)R\)，则
+T0在协变菜单上等于c(z0)|K。Qα是相应框架中的Hermitian生成元；不是新增随机荷。所有下面的导数均在零截面取值。令 $\widetilde c_{p_\theta^\alpha}=R^\dagger(\partial_{p_\theta^\alpha}c)R$，则
 
 $$
 \begin{aligned}
@@ -172,7 +172,7 @@ $$
 
 1. 从末端欲核的来源A（或概率的I）及其已定符号对(a0,a1)开始。
 2. 每次原读口采用(11)；每段真实等待采用(7)。
-3. 得到初面符号对 \(a_{\mathbf r,0},a_{\mathbf r,1}\)，再统一使用(5)。
+3. 得到初面符号对 $a_{\mathbf r,0},a_{\mathbf r,1}$，再统一使用(5)。
 
 实际未归一历史来源和概率由同一公式得到：
 

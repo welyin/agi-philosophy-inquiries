@@ -10,7 +10,9 @@
 
 在第2节完整一阶最小数据下，任意正规局域完成必须满足
 
-$$D_{ab}:=q_aq_b-\delta_{ab}\kappa_aq_a=0.\tag{1}$$
+$$
+D_{ab}:=q_aq_b-\delta_{ab}\kappa_aq_a=0.\tag{1}
+$$
 
 因此其最小一阶动态源权只能全为零，或只在一个非自由引力理想上非零，并有 $q_r=\kappa_r$。允许分支存在一个经典最小完成。**完整一阶代表、自由自旋2、共同Lorentz主部仍是条件**；本轮没有证明所有第一阶耦合都等价于此代表，也不把一阶零权误称为所有可能高阶交互均为零。
 
@@ -20,7 +22,9 @@ $$D_{ab}:=q_aq_b-\delta_{ab}\kappa_aq_a=0.\tag{1}$$
 
 规范、物质相互作用不随形式参数 $\varepsilon$ 关闭。引入同背景、正号Pauli–Fierz字段 $h^a$，纯引力理想的三次系数为 $A^c{}_{ab}=\delta_{ab}\delta_{ac}\kappa_a$，沿用[358](../archive_342_369/research_note_358.md)与1018的归一。写
 
-$$S=S_0+\varepsilon S_1+\varepsilon^2S_2+\cdots,\qquad S_0=\sum_a S_{\rm PF}[h^a]+S_m.\tag{2}$$
+$$
+S=S_0+\varepsilon S_1+\varepsilon^2S_2+\cdots,\qquad S_0=\sum_a S_{\rm PF}[h^a]+S_m.\tag{2}
+$$
 
 采用完整最小一阶Noether代表：
 
@@ -40,17 +44,23 @@ $$S=S_0+\varepsilon S_1+\varepsilon^2S_2+\cdots,\qquad S_0=\sum_a S_{\rm PF}[h^a
 
 取一个局部空间坐标 $y$，令
 
-$$A=0,\qquad\psi=0,\qquad\sigma=0,\qquad \Phi=\frac1{\sqrt2}\begin{pmatrix}0\\f(y)\end{pmatrix},\qquad f\in\mathbb R.\tag{3}$$
+$$
+A=0,\qquad\psi=0,\qquad\sigma=0,\qquad \Phi=\frac1{\sqrt2}\begin{pmatrix}0\\f(y)\end{pmatrix},\qquad f\in\mathbb R.\tag{3}
+$$
 
 这里零规范场只用于证明存在一个特殊完整解，并非任意Higgs解的截断规则。对每个Hermitian内部生成元 $T_A$，Higgs电流正比
 
-$$i\bigl(\Phi^\dagger T_A\partial^\mu\Phi-(\partial^\mu\Phi)^\dagger T_A\Phi\bigr)=0,\tag{4}$$
+$$
+i\bigl(\Phi^\dagger T_A\partial^\mu\Phi-(\partial^\mu\Phi)^\dagger T_A\Phi\bigr)=0,\tag{4}
+$$
 
 因为实 $f$ 与导数沿同一固定内部向量；色作用则本来平凡。因此全部规范方程在 $F=0$ 下成立，Gauss也成立。
 
 Higgs规范不变势在该分支成为 $U_{\rm rad}(f)$。完整Higgs方程沿径向化为
 
-$$f''(y)=U_{\rm rad}'(f(y));\tag{5}$$
+$$
+f''(y)=U_{\rm rad}'(f(y));\tag{5}
+$$
 
 其它实Higgs方向的方程为零。标准 $U_{\rm rad}=\lambda_H(f^2-v_H^2)^2/4+V_0$ 给 $f''=\lambda_Hf(f^2-v_H^2)$。Yukawa和Weinberg项的物质变分在全部费米字段为零时成立，且没有额外Higgs源。B993势及门户关于 $\sigma$ 为偶，其一阶变分在 $\sigma=0$ 为零。
 
@@ -66,7 +76,9 @@ $$f''(y)=U_{\rm rad}'(f(y));\tag{5}$$
 
 取 $h^a=\varepsilon h_1^a$，全部物质保持上节解，则物质一阶耦合 $\varepsilon hT=O(\varepsilon^2)$，引力首阶源由 $h_1$ 抵消。因此全部Euler残差及任意固定阶局部导数满足
 
-$$E=O(\varepsilon^2).\tag{6}$$
+$$
+E=O(\varepsilon^2).\tag{6}
+$$
 
 未知 $S_2$ 本身也从该阶开始。对正规开放代数算符 $M=\varepsilon M_1+\cdots$，有 $ME=O(\varepsilon^3)$。这消去了二阶测试中的方程平凡项，而没有另设 $M_1=0$。有限Taylor校准只核局部系数，实际光滑解与反作用的阶数由解析引理承担。
 
@@ -78,11 +90,15 @@ $$E=O(\varepsilon^2).\tag{6}$$
 
 沿1018的交换子顺序约定，唯一剩余条件为
 
-$$\sum_{a,b}D_{ab}\mathcal L_{[\xi^a,\zeta^b]}O_0=0.\tag{7}$$
+$$
+\sum_{a,b}D_{ab}\mathcal L_{[\xi^a,\zeta^b]}O_0=0.\tag{7}
+$$
 
 令仅 $a,b$ 槽活跃，选
 
-$$\xi=\partial_x,\qquad \zeta=x\partial_y-y\partial_x,\qquad[\xi,\zeta]=\partial_y.\tag{8}$$
+$$
+\xi=\partial_x,\qquad \zeta=x\partial_y-y\partial_x,\qquad[\xi,\zeta]=\partial_y.\tag{8}
+$$
 
 二者为Killing，且 $\mathcal L_{[\xi,\zeta]}O_0=ff'\ne0$。因此每个 $D_{ab}=0$。所测量的代数身份必须对每个合法局部解成立，一个真实父解已经足以提供必要条件；没有把整个父作用换成独立标量模型。
 
@@ -90,7 +106,9 @@ $$\xi=\partial_x,\qquad \zeta=x\partial_y-y\partial_x,\qquad[\xi,\zeta]=\partial
 
 对 $a\ne b$，式(1)为 $q_aq_b=0$；对角为 $q_a(q_a-\kappa_a)=0$。故
 
-$$q=0\quad\text{或}\quad q_r=\kappa_r\ne0,\quad q_{a\ne r}=0.\tag{9}$$
+$$
+q=0\quad\text{或}\quad q_r=\kappa_r\ne0,\quad q_{a\ne r}=0.\tag{9}
+$$
 
 给定允许非零分支，可把全部原规范—Higgs—Weyl物质及所声明Weinberg项最小协变化到 $g_r=\eta+\varepsilon\kappa_rh^r$，采用该理想的Einstein完成；其余引力理想保独立Einstein或自由Pauli–Fierz作用。这给一个正规**经典**完成的存在例，包含完整原物质作用而非只含径向截面。$q=0$ 则允许物质脱离这些引力部门。
 

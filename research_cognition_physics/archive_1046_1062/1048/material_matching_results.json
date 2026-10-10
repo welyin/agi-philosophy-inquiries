@@ -1,0 +1,147 @@
+{
+  "round": 1048,
+  "new_scientific_groups": 1,
+  "new_cognitive_axioms": 0,
+  "all_scientific_checks_passed": true,
+  "old_material": {
+    "U": 1.0,
+    "v": 0.1,
+    "rank": 6,
+    "electron_count": 2,
+    "C_diagnostic_units": 2.0,
+    "singlet_retained_strength": 0.07427813527082076,
+    "singlet_strength_formula": 0.07427813527082087,
+    "triplet_retained_strength": 0.0,
+    "required_heavy_strength_diagonal": [
+      1.9257218647291792,
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      2.074278135270821
+    ],
+    "total_required_heavy_strength": 12.0,
+    "four_dimensional_charge_poststate_leakage": 0.06896551724137942
+  },
+  "exact_virtual_matrix_check": {
+    "exact_matrix_entries": 9,
+    "nonzero_offdiagonal_virtual_entries": 6
+  },
+  "canonical_oscillator_certificate": {
+    "rank": 3,
+    "C": 1,
+    "heavy_gap": 1,
+    "off_block_norm_squared": 1.5,
+    "trk_bound_squared": 1.5,
+    "finite_history_checks": [
+      {
+        "force": 0.03,
+        "time": 0.1,
+        "exact_infinite_isometry_error": 0.003672697688871187,
+        "trk_duhamel_upper": 0.0036742346141747668,
+        "exact_max_bare_energy": 2.500013488693101,
+        "conditional_energy_upper": 2.5067127039325
+      },
+      {
+        "force": 0.05,
+        "time": 0.5,
+        "exact_infinite_isometry_error": 0.03029729403252478,
+        "trk_duhamel_upper": 0.030618621784789725,
+        "exact_max_bare_energy": 2.5009178500697553,
+        "conditional_energy_upper": 2.5562141994374947
+      },
+      {
+        "force": 0.04,
+        "time": 1.0,
+        "exact_infinite_isometry_error": 0.046962503486243576,
+        "trk_duhamel_upper": 0.04898979485566356,
+        "exact_max_bare_energy": 2.5022049297480216,
+        "conditional_energy_upper": 2.5902427190999915
+      }
+    ]
+  },
+  "gauge_checks": [
+    {
+      "A": 0.1,
+      "correct_spectrum_max_error": 2.3592239273284576e-16,
+      "bare_contact_false_gap_change": 0.0003712626988487608,
+      "same_source_transport_error": 0.0
+    },
+    {
+      "A": 0.5,
+      "correct_spectrum_max_error": 2.3592239273284576e-16,
+      "bare_contact_false_gap_change": 0.009206076791715666,
+      "same_source_transport_error": 0.0
+    },
+    {
+      "A": 1.0,
+      "correct_spectrum_max_error": 2.42861286636753e-16,
+      "bare_contact_false_gap_change": 0.03593978394035243,
+      "same_source_transport_error": 0.0
+    }
+  ],
+  "finite_meter_checks": [
+    {
+      "duration": 0.001,
+      "complete_instrument_isometry_error": 0.0005273572678883519,
+      "internal_drift_upper": 0.0005385164807134501
+    },
+    {
+      "duration": 0.01,
+      "complete_instrument_isometry_error": 0.0052735663930592236,
+      "internal_drift_upper": 0.005385164807134502
+    },
+    {
+      "duration": 0.1,
+      "complete_instrument_isometry_error": 0.05272937833855334,
+      "internal_drift_upper": 0.053851648071345015
+    }
+  ],
+  "conditional_microscopic_certificate_example": {
+    "heavy_gap": 100000000.0,
+    "extra_field_area": 0.01,
+    "meter_duration": 0.001,
+    "isometry_error_upper": 0.0013104958685533517,
+    "microscopic_material_embedding_certified": false
+  },
+  "subgap_linear_response_bounds": [
+    {
+      "heavy_gap": 10.0,
+      "frequency": 0.0,
+      "singlet_remainder_upper": 0.019257218647291793,
+      "triplet_remainder_upper": 0.02
+    },
+    {
+      "heavy_gap": 10.0,
+      "frequency": 0.5,
+      "singlet_remainder_upper": 0.019305482353174728,
+      "triplet_remainder_upper": 0.020050125313283207
+    },
+    {
+      "heavy_gap": 100.0,
+      "frequency": 0.0,
+      "singlet_remainder_upper": 0.00019257218647291793,
+      "triplet_remainder_upper": 0.0002
+    },
+    {
+      "heavy_gap": 100.0,
+      "frequency": 0.5,
+      "singlet_remainder_upper": 0.00019257700089794037,
+      "triplet_remainder_upper": 0.00020000500012500312
+    }
+  ],
+  "scope": {
+    "parent": "Nonrelativistic local-potential canonical electrons with stated domains and spectral gap",
+    "uniform_tasks": "Finite low-input histories with bounded auxiliary couplings to one dipole component",
+    "unbounded_cavity_coupling_certified": false,
+    "unbounded_stress_error_certified": false,
+    "full_P981_or_GR_or_roadmap_completed": false
+  },
+  "historical_sha256": {
+    "archive_956_989/956/native_material_interface.py": "2ab03c573de42d54c28c65804766e7840331a8f028a5059d6129baf57f5bc0b8",
+    "archive_956_989/research_note_956.md": "277a155167b75edf66c623ab201fb2052aee092e2b175398e421709d4c0836b5",
+    "archive_956_989/research_note_960.md": "7c12fa18d4798ae0ef1bf1fecdfaea573299ca89cf79a4a04decd3dc4760d9c8",
+    "archive_956_989/research_note_965.md": "a406de4ee5e38f007e661321e6d2c857f409a029b4d32a654444ffcc77284cb6",
+    "archive_702_741/research_note_712.md": "2a7493f1e44e447afbbadd2a1fc068fdc658249264939ef6cbedca4435cc7314"
+  }
+}

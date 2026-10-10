@@ -87,6 +87,8 @@ $$
 $$
 B_D=I,\quad \Omega_D=(|00\rangle+|11\rangle)/\sqrt2,\quad \nu_D=+1;
 $$
+
+
 $$
 B_Q=E,\quad \Omega_Q=(|01\rangle-|10\rangle)/\sqrt2,\quad \nu_Q=-1.
 \tag{4}

@@ -1,0 +1,75 @@
+{
+  "round": 1066,
+  "passed": true,
+  "checker_sha256": "567570D823B5226DEEF301AB3F651637D849F4DABAE6443FD90D8FF730250F11",
+  "method": "standard-library exact rational circle coordinates and unit quaternions",
+  "circle_domain_boundary": {
+    "passed": true,
+    "large_U_radius": "9/20",
+    "g": "2/5",
+    "g_squared": "-1/5",
+    "R_g_squared": "-1/10",
+    "return_error": "1/2",
+    "small_V_radius": "1/5",
+    "right_root_grid_points": 179,
+    "small_domain_left_identity_points": 39,
+    "scope": "Continuity of the coordinate half-map and the slow-log strict cost decrease are analytic facts. A smaller-domain root identity is not asserted on the original U."
+  },
+  "circle_dyadic_chains": {
+    "passed": true,
+    "seeds": [
+      "0",
+      "2/5",
+      "-2/5",
+      "1/3",
+      "-1/7",
+      "3/7"
+    ],
+    "maximum_root_depth": 12,
+    "exact_refinement_identities": 4368,
+    "scope": "Only the coherent chain h_(n+1)^2=h_n is used. Integer powers may leave U; no root selection is invoked outside U."
+  },
+  "quaternion_chains": {
+    "passed": true,
+    "rational_parameter": "1/64",
+    "root_depth": 5,
+    "chains": 2,
+    "exact_refinement_identities": 252,
+    "two_seed_elements_commute": false,
+    "scope": "Quaternion SU(2) controls use exact rational multiplication, no matrices, logarithms or floating roots. Each one-point root chain commutes internally; different seed elements need not commute."
+  },
+  "discontinuous_product_root": {
+    "passed": true,
+    "cut_controls": [
+      {
+        "epsilon": "1/16",
+        "input_circle_distance": "1/8",
+        "root_circle_distance": "7/16"
+      },
+      {
+        "epsilon": "1/64",
+        "input_circle_distance": "1/32",
+        "root_circle_distance": "31/64"
+      },
+      {
+        "epsilon": "1/256",
+        "input_circle_distance": "1/128",
+        "root_circle_distance": "127/256"
+      },
+      {
+        "epsilon": "1/1024",
+        "input_circle_distance": "1/512",
+        "root_circle_distance": "511/1024"
+      }
+    ],
+    "finite_prefix_cost": "6463/32256",
+    "finite_prefix_root_cost": "6463/64512",
+    "uniform_tail_cost_bound": "1/128",
+    "analytic_scope": "On T^N, sum_(j>=1) 2^-j distance(x_j,0) is continuous and positive by uniform tail control; the coordinate principal root halves it exactly but is discontinuous at cuts in every identity neighborhood. Compactness, connectedness and arbitrarily small tail subgroups are analytic, not finite-prefix conclusions."
+  },
+  "not_computed": [
+    "Existence of an invariant compact neighborhood and uniform convergence of roots.",
+    "Lie quotient compatibility and actual-group joint continuity of the constructed contraction.",
+    "Local contractibility to Lie, or any spatial dimension/cognitive necessity."
+  ]
+}

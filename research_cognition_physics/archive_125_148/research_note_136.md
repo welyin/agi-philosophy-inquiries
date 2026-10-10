@@ -10,11 +10,11 @@
 
 令 P=ρ_A⊗ρ_B，Γ(ρ)=(ρ+I)/3。第一次平分方案的共同逻辑态为
 
-\[
+$$
 \tau_{AB}=\tfrac12P+
 \tfrac14\Gamma(\rho_A)\otimes\rho_B+
 \tfrac14\rho_A\otimes\Gamma(\rho_B).
-\]
+$$
 
 当前实接口为 E(τ_AB)，完整相干电路及其环境保留。新主体独立提供 E(ρ_C)。
 
@@ -33,19 +33,21 @@
 
 Λ(ρ)=2ρ/3+I/6 使单目标矩变成
 
-\[
+$$
 A_\Lambda=\tfrac23A+\tfrac1{12}I,\qquad
 B_\Lambda=\tfrac23B+\tfrac1{12}I.
-\]
+$$
 
 AB 的两个平均矩为
 
-\[
+$$
 C_A=\tfrac12(A\otimes A_\Lambda+A_\Lambda\otimes A),
-\]
-\[
+$$
+
+
+$$
 C_B=\tfrac12(B\otimes B_\Lambda+B_\Lambda\otimes B).
-\]
+$$
 
 这些因子互相对易并为正，最大本征向量可以同时选择。第 135 轮整数投影证书给出精确范数：
 
@@ -58,23 +60,23 @@ C_B=\tfrac12(B\otimes B_\Lambda+B_\Lambda\otimes B).
 
 当两个输入参考取向相同时，两种输出取向的块范数中较大者为
 
-\[
+$$
 \max[(5/24)(1/2),(11/108)(1/3)]=5/48.
-\]
+$$
 
 相反时较大者为
 
-\[
+$$
 \max[(5/24)(1/3),(11/108)(1/2)]=5/72.
-\]
+$$
 
 参考来源权重为 1/4，每个输入参考块带八维目标空间。令 P_aligned 是两个输入参考的同取向投影，则一个实对偶可行解为
 
-\[
+$$
 Y=\left[\frac5{192}P_{\rm aligned}
 +\frac5{288}(I-P_{\rm aligned})\right]\otimes I_8,
 \quad \operatorname{Tr}Y=\frac{25}{36}.
-\]
+$$
 
 按与第 135 轮相同的块正性论证，Y⊗I_out−R≥0。R 是原 216 个纯产品准备经过固定第一次平分接入后的实际得分矩阵。于是任意第二阶段 CPTP 通道的平均目标支撑概率≤25/36，最坏联合误差≥11/36。
 
@@ -86,23 +88,23 @@ Y=\left[\frac5{192}P_{\rm aligned}
 
 反向执行第 134 轮的实际相干电路，恢复原独立 A、B 编码及辅助初态。再与新 C 一起执行第 135 轮三方最优通道，输出为
 
-\[
+$$
 \tau_{ABC}=\tfrac14\big[
 \rho_A\otimes\rho_B\otimes\rho_C
 +\Gamma(\rho_A)\otimes\rho_B\otimes\rho_C
 +\rho_A\otimes\Gamma(\rho_B)\otimes\rho_C
 +\rho_A\otimes\rho_B\otimes\Gamma(\rho_C)\big].
-\]
+$$
 
 由于 Tr Γ(ρ_C)=1，
 
-\[
+$$
 \operatorname{Tr}_C\tau_{ABC}
 =\tfrac12\rho_A\otimes\rho_B+
 \tfrac14\Gamma(\rho_A)\otimes\rho_B+
 \tfrac14\rho_A\otimes\Gamma(\rho_B)
 =\tau_{AB}.
-\]
+$$
 
 因此相同的不只是 A、B 各自的边缘，而是它们的整个旧联合状态。以后仅在 AB 共同接口上运行的任意联合仪器及反馈，其完整记录分布均不变，只要不可访问余部不再反馈。
 

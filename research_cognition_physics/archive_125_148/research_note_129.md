@@ -8,11 +8,11 @@
 
 对任意确定性实通道，令 ω 为其活跃共同输出，排列为 R,A,B。定义
 
-\[
+$$
 \delta_A=\sup_{\rho,\sigma}D(\operatorname{tr}_B\omega,\mathcal E(\rho)),
 \qquad
 \delta_B=\sup_{\rho,\sigma}D(\operatorname{tr}_A\omega,\mathcal E(\sigma)).
-\]
+$$
 
 两个边缘都保留同一个编码参考 R。它们是两种访问范围的描述，不是把一个参考免费复制成两个独立系统。
 
@@ -22,23 +22,23 @@
 
 使用第 128 轮的 36 个纯产品准备，设
 
-\[
+$$
 F_A=\operatorname{real\_lift}(a\otimes I),\quad
 F_B=\operatorname{real\_lift}(I\otimes b),\quad
 F_{AB}=F_AF_B.
-\]
+$$
 
 这些是相互对易的投影，因而
 
-\[
+$$
 I-F_{AB}\le(I-F_A)+(I-F_B).
-\]
+$$
 
 对每个输入，A、B 的边缘迹距离分别至少是 $1-\operatorname{tr}(\omega F_A)$ 和 $1-\operatorname{tr}(\omega F_B)$。取 36 输入的平均，再用第 128 轮平均联合通过率≤5/6，得到
 
-\[
+$$
 \boxed{\delta_A+\delta_B\ge1/6.}
-\]
+$$
 
 这个必要界不假设通道协变、先读取向或采用下面的分担方案。
 
@@ -53,26 +53,26 @@ I-F_{AB}\le(I-F_A)+(I-F_B).
 
 共同逻辑输出为
 
-\[
+$$
 \tau_\theta=
 \theta\,\rho\otimes\Lambda(\sigma)
 +(1-\theta)\,\Lambda(\rho)\otimes\sigma.
-\]
+$$
 
 边缘为
 
-\[
+$$
 \tau_A=\left(1-\frac{1-\theta}{3}\right)\rho+\frac{1-\theta}{6}I,
 \quad
 \tau_B=\left(1-\frac{\theta}{3}\right)\sigma+\frac{\theta}{6}I.
-\]
+$$
 
 于是
 
-\[
+$$
 \delta_A=(1-\theta)/6,\qquad
 \delta_B=\theta/6.
-\]
+$$
 
 任意纯输入达到各自最坏值，故这不仅是上界。整个家族的联合误差≤1/6；纯产品输入下，理想方向权重均为 5/6，其余权重落在正交方向，故联合最坏值也恰为 1/6。
 
@@ -88,9 +88,9 @@ I-F_{AB}\le(I-F_A)+(I-F_B).
 
 两方的任意状态对在各自共同接口边缘中的迹距离分别收缩为
 
-\[
+$$
 c_A=1-(1-\theta)/3,\qquad c_B=1-\theta/3.
-\]
+$$
 
 平分时均为 5/6。原先可完全区别的两种等先验局部状态，在这个局部共同接口的最优判别率为 $(1+5/6)/2=11/12$。
 
@@ -100,18 +100,18 @@ c_A=1-(1-\theta)/3,\qquad c_B=1-\theta/3.
 
 取输入 A=|+X⟩、B=|0⟩，接入后执行共同实提升 CNOT。理想目标为
 
-\[
+$$
 |\Phi^+\rangle=(|00\rangle+|11\rangle)/\sqrt2.
-\]
+$$
 
 全部分支的实际逻辑输出是
 
-\[
+$$
 \tau'_\theta=
 \tfrac56|\Phi^+\rangle\langle\Phi^+|
 +\tfrac{\theta}{6}|\Psi^+\rangle\langle\Psi^+|
 +\tfrac{1-\theta}{6}|\Phi^-\rangle\langle\Phi^-|.
-\]
+$$
 
 因此 Bell 目标检测通过率为 5/6，部分转置最小特征值为 −1/3，全部 θ 都保有纠缠。程序直接对完整实编码施加提升门，再解码核对这两个量。
 

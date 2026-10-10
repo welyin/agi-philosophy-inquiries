@@ -10,10 +10,10 @@
 
 沿用第 144—148 轮：旧最优共同接口不变，恢复器可访问接口和一个相干历史位 Q。六条等概率分支为
 
-\[
+$$
 B_r=V_r/\sqrt6,\qquad
 V_r=\begin{pmatrix}K_+\\ U_rK_-\end{pmatrix},\qquad r=0,\ldots,5.
-\]
+$$
 
 本轮使用从零开始的标签：0、1、2 为 A 的 X、Y、Z 修正，3、4、5 为 B 的 X、Y、Z 修正。K_± 是原取向等距算子，P_±=K_±^T K_±。每个 V_r 都是 16 维实正交矩阵。
 
@@ -23,10 +23,10 @@ V_r=\begin{pmatrix}K_+\\ U_rK_-\end{pmatrix},\qquad r=0,\ldots,5.
 
 每类选择 r_g，按 V_{r_g}^T 恢复。K 条代表分支各以概率 1/6 给出恒等操作；其余分支仍是通道。因此平均恢复可写为
 
-\[
+$$
 \mathcal R=\frac K6\,\mathrm{id}+
 \left(1-\frac K6\right)\mathcal N.
-\]
+$$
 
 迹距离约定为 D(ρ,σ)=‖ρ−σ‖₁/2。对任何未知输入和任何外部关联，D≤1−K/6。此界允许任意外部维数，不需要访问源纯化。
 
@@ -34,37 +34,37 @@ V_r=\begin{pmatrix}K_+\\ U_rK_-\end{pmatrix},\qquad r=0,\ldots,5.
 
 只为证明本节的强任务下界，取输入与外部八维系统的纯态
 
-\[
+$$
 |\Psi_-\rangle=\operatorname{vec}(K_-^T)/\sqrt8.
-\]
+$$
 
 其输入边缘为 P_-/8。在这条见证上，Q 恒为 1，六分支退化为八维实正交修正 U_r。它们满足
 
-\[
+$$
 \operatorname{Tr}(U_r^TU_s)=8\delta_{rs}.
-\]
+$$
 
 令 J=K_-^T，F₁ 是把八维向量嵌入 Q=1 输出的等距矩阵。类别 g 的任意恢复 Kraus 算子为 R_{g,l}。定义 A_{g,l}=J^†R_{g,l}F₁。Hilbert–Schmidt 空间中的 Bessel 不等式给出
 
-\[
+$$
 \sum_{r\in G_g}|\operatorname{Tr}(A_{g,l}U_r)|^2
 \le8\operatorname{Tr}(A_{g,l}^\dagger A_{g,l}).
-\]
+$$
 
 由于 JJ^† 是投影且 ∑_l R_{g,l}^†R_{g,l}=I，
 
-\[
+$$
 \sum_l\operatorname{Tr}(A_{g,l}^\dagger A_{g,l})\le8.
-\]
+$$
 
 故目标纯态重叠至多
 
-\[
+$$
 F_{\rm target}
 =\frac1{6\cdot8^2}\sum_{g,l,r\in G_g}
 |\operatorname{Tr}(A_{g,l}U_r)|^2
 \le\frac K6.
-\]
+$$
 
 投影到目标纯态的二结果测量给出 D≥1−F_target≥1−K/6。它与第 2 节上界吻合。
 
@@ -83,10 +83,10 @@ F_{\rm target}
 
 原任务输入 Ω=E(ρ_A)⊗E(ρ_B)，按参考优先顺序重排。它是实对称矩阵，且
 
-\[
+$$
 \operatorname{Tr}(P_+\Omega)
 =\operatorname{Tr}(P_-\Omega)=1/2.
-\]
+$$
 
 本节下界见证 P_-/8 的两取向权重是 0、1，所以不属于这组输入。允许该见证得到的是更强任务的必要代价；不能据此声称原任务两位消息的误差至少 1/3。未知外部关联仍然必须保留，但输入边缘的约束没有因此消失。
 

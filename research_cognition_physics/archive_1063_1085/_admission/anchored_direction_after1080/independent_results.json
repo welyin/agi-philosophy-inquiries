@@ -1,0 +1,209 @@
+{
+  "status": "passed",
+  "scientific_round_increment": 0,
+  "assertion_groups": 8,
+  "groups": [
+    "frozen actual source effects are valid and distinct",
+    "two-stage effect algebra is positive and has fixed trace",
+    "eight retained QMR branches reproduce fine and coarse probabilities",
+    "full process preserves reference trace and stores unknown QR on reset branch",
+    "coincident source and anchor are coarse neutral but fine task is retained",
+    "exact source ball and one-request compiler budgets cover every rotation",
+    "exact antipode contrast and quarter-turn order witness use the new normalization",
+    "mature Pauli covariance control has the declared rotation convention"
+  ],
+  "source_diagnostic": {
+    "anchor_parameters": [
+      0.2,
+      0.4,
+      1.5707963267948966
+    ],
+    "target_parameters": [
+      0.2,
+      0.6,
+      1.5707963267948966
+    ],
+    "anchor_effect_coefficients": [
+      0.5739062588509245,
+      -0.046864159468799196,
+      0.06895665693789413,
+      0.1605844244155197
+    ],
+    "target_effect_coefficients": [
+      0.5737039759260637,
+      -0.04561207507189632,
+      0.06907078386607168,
+      0.1555234099687803
+    ],
+    "raw_effect_eigenvalues": [
+      [
+        0.3975257547278829,
+        0.7498821971242448
+      ],
+      [
+        0.39296807232405784,
+        0.7548444453777912
+      ]
+    ],
+    "difference_effect_eigenvalues": [
+      0.497291436078377,
+      0.5025062809967621
+    ],
+    "coarse_effect_coefficients": [
+      0.5,
+      0.0003130210992257198,
+      2.853173204438869e-05,
+      -0.0012652536116848495
+    ],
+    "coarse_effect_eigenvalues": [
+      0.4986962887704038,
+      0.5013037112295963
+    ],
+    "second_source_is_small_ball_point": false,
+    "old_384_dimensional_propagation_recomputed": false
+  },
+  "retained_instrument": {
+    "branch_order": "reset r, source j (0 target, 1 anchor), reported y",
+    "actual_raw_result": "z = y XOR j XOR r",
+    "branch_weight": "1/4",
+    "quantum_order": "Q,M,R; M is initially maximally mixed",
+    "fine_branch_count": 8,
+    "input_states_checked": 6,
+    "max_fine_probability_residual": 6.938893903907228e-17,
+    "max_coarse_conditioned_reference_residual": 1.665413944383364e-16,
+    "max_full_reference_residual": 2.2210183183151347e-16,
+    "max_reset_branch_stored_QR_residual": 1.1569674592471205e-16,
+    "max_full_trace_preservation_residual": 2.220446049250313e-16,
+    "max_raw_instrument_TP_residual": 8.88360540258509e-16,
+    "max_original_Z_output_residual": 1.1179713599077504e-16,
+    "minimum_branch_eigenvalue_diagnostic": -2.7755575615628926e-17,
+    "fine_probabilities": [
+      [
+        0.14342599398151595,
+        0.10657400601848413,
+        0.10652343528726888,
+        0.14347656471273115,
+        0.10657400601848413,
+        0.14342599398151595,
+        0.14347656471273115,
+        0.10652343528726888
+      ],
+      [
+        0.1320229752135419,
+        0.11797702478645822,
+        0.11823947515446868,
+        0.13176052484553136,
+        0.10657400601848413,
+        0.14342599398151595,
+        0.14347656471273115,
+        0.10652343528726888
+      ],
+      [
+        0.16069368994803385,
+        0.08930631005196622,
+        0.08928427105279535,
+        0.1607157289472047,
+        0.10657400601848413,
+        0.14342599398151595,
+        0.14347656471273115,
+        0.10652343528726888
+      ],
+      [
+        0.18230684647371098,
+        0.067693153526289,
+        0.06637732918338896,
+        0.18362267081661104,
+        0.10657400601848413,
+        0.14342599398151595,
+        0.14347656471273115,
+        0.10652343528726888
+      ],
+      [
+        0.14342599398151593,
+        0.10657400601848412,
+        0.10652343528726888,
+        0.14347656471273112,
+        0.10657400601848412,
+        0.14342599398151593,
+        0.14347656471273112,
+        0.10652343528726886
+      ],
+      [
+        0.15675657197883994,
+        0.09324342802116009,
+        0.09275905605165288,
+        0.1572409439483471,
+        0.10657400601848412,
+        0.14342599398151595,
+        0.14347656471273112,
+        0.10652343528726888
+      ]
+    ],
+    "coincident_anchor_fine_effect_traces": [
+      0.28695312942546225,
+      0.21304687057453775,
+      0.21304687057453775,
+      0.28695312942546225,
+      0.21304687057453775,
+      0.28695312942546225,
+      0.28695312942546225,
+      0.21304687057453775
+    ]
+  },
+  "exact_budget": {
+    "r0": "1/246240000",
+    "B": "30000",
+    "source_parameter_radius": "1/984960000",
+    "source_contraction": "1/16",
+    "source_map_radius_bound": "1/5253120000",
+    "request_delta": "1/59097600000000",
+    "shell_radius_a": "1/236390400000000",
+    "all_pair_request_distance_upper": "1/118195200000000",
+    "history_recurrence_epsilon": "1/236390400000000",
+    "compiler_contraction": "25920001/103680000",
+    "antipode_effect_operator_gap": "1/472780800000000",
+    "quarter_turn_order_effect_gap_squared": "1/447043369697280000000000000000",
+    "quarter_turn_plus_X_probability_difference": "1/945561600000000",
+    "quarter_turn_endpoints": [
+      [
+        "1/236390400000000",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "-1/236390400000000",
+        "0"
+      ]
+    ],
+    "all_rotations_budget_basis": "||R w-w||_infinity <= ||R w-w||_2 <= 2a < delta",
+    "complete_source_ball_basis": "Frozen1077 inverse and Hessian bounds; contraction on C_(r0/4)."
+  },
+  "pauli_covariance_residual": 2.2610626239330836e-16,
+  "fixed_dependency_sha256": {
+    "1079/independent_check.py": "14def97e57e9ce2a96fdddee0f5f5c6c1d771c8f88122fa0c700fdfb3a0d93e3",
+    "1080/independent_results.json": "f49411d93bcaa7835ec2cf9fe0f9a813ceacd31a696b362d482449ef72862b54",
+    "1077/results.json": "131f634da1aca6d3f69c110e5a3804505e4784c70100ade73b443f5a7ad8d65b",
+    "1077/proof.md": "716b8b8a77900cb23e3fda9987f90c7c00dadad5212a5d83ebde1fad4a743f15",
+    "_admission/history_aware_endpoint_after1075/results.json": "0ac35375c38fdbed6c7167782234eddfa669005e793c105412490d8abb3b99c1"
+  },
+  "independent_code_sha256": "b1b592b253a54bf29b5ac7830966f9539234483d4d26579e9a0667d52adcfa27",
+  "scope": {
+    "new_bridge": "Combine same actual source, physical anchor comparison and known-history requests into a complete relative task shell.",
+    "new_cognitive_principle": false,
+    "new_formal_round": false,
+    "unknown_probe_cloned": false,
+    "fresh_QR_independent_of_source_and_anchor_resources_required": true,
+    "same_calibrated_probe_interface_for_both_sources_required": true,
+    "anchor_preparation_or_refresh_resource_is_input": true,
+    "persistent_undisturbed_catalytic_anchor_proved": false,
+    "full_fine_process_isospectral_or_covariant_claimed": false,
+    "arbitrary_read_then_update_histories_covered": false,
+    "limited_known_unitary_history_endpoint_quotient": true,
+    "same_b_implies_original_Q_or_all_future_identity": false,
+    "actual_spatial_dimension_derived": false,
+    "tiny_shell_contrasts_resolved_by_floating_differences": false,
+    "uniform_finite_resource_or_runtime_bound_derived": false,
+    "finite_matrix_checks_replace_universal_CP_or_continuity_proof": false
+  }
+}

@@ -20,28 +20,28 @@
 
 旧共同通道的 Kraus 支撑为
 
-\[
+$$
 \mathsf S=\operatorname{span}\{K_+,U_1K_-,\ldots,U_6K_-\}.
-\]
+$$
 
 每条消息对应的共同子通道，其 Choi 矩阵都是 J_T 的正半定分量，所以它的 Kraus 算子也在这个支撑内。把 V_c 按 Q 的两个基矢分块，每块必为
 
-\[
+$$
 A_{c,z}=a_{c,z}K_++W_{c,z}K_-.
-\]
+$$
 
 由于 K_-K_+^T=0、K_+K_+^T=I_8，V_c 在正取向输入上的像为
 
-\[
+$$
 V_cK_+^T=|a_c\rangle_Q\otimes I_8.
-\]
+$$
 
 V_c 酉意味着 a_c 归一化。正取向像空间占据 |a_c⟩⊗C^8，负取向的像只能是其正交补 |a_c^⊥⟩⊗C^8。因此必有
 
-\[
+$$
 V_cK_-^T=|a_c^\perp\rangle_Q\otimes W_c,
 \qquad W_c^\dagger W_c=I_8.
-\]
+$$
 
 换言之，忽略 Q 之后，每条消息在负取向上贡献一个酉通道。它不可能在同一消息中容纳两个独立负取向 Kraus 方向而仍可精确恢复。
 
@@ -49,21 +49,21 @@ V_cK_-^T=|a_c^\perp\rangle_Q\otimes W_c,
 
 实际负取向通道为
 
-\[
+$$
 \mathcal T_-(\rho)=\frac16\sum_{r=1}^6U_r\rho U_r^T.
-\]
+$$
 
 六个实 Pauli 乘积满足 Tr(U_r^T U_s)=8δ_rs。令 v_r=vec(U_r)/√8，则归一化 Choi 态为
 
-\[
+$$
 \tau_-=\frac16\sum_{r=1}^6|v_r\rangle\langle v_r|.
-\]
+$$
 
 它秩为 6，六个非零特征值全部为 1/6。每条可恢复消息只能提供一个纯 Choi 分量，所以至少六条。第 144 轮六条构造达到：
 
-\[
+$$
 \boxed{N_{\min}=6,\qquad b_{\rm fixed}=3.}
-\]
+$$
 
 代码另验证连续旋转后的六个不同实酉分量也实现同一通道；必要性没有假设只能选择原来六种离散操作。
 
@@ -71,15 +71,15 @@ V_cK_-^T=|a_c^\perp\rangle_Q\otimes W_c,
 
 任意分解 τ_-=Σ_c p_c|w_c⟩⟨w_c| 中，每个 w_c 归一化；由 τ_-−p_c|w_c⟩⟨w_c|≥0 得
 
-\[
+$$
 p_c\le\langle w_c|\tau_-|w_c\rangle\le1/6.
-\]
+$$
 
 因此至少六条，且记录熵 H≥log₂6，六条均匀记录达到。单次前缀编码可取
 
-\[
+$$
 00,\ 01,\ 100,\ 101,\ 110,\ 111,
-\]
+$$
 
 平均长度为 8/3 位。
 

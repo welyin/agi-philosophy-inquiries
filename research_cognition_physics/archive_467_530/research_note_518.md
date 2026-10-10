@@ -152,7 +152,7 @@ $$
 
 ## 6. 保存、交付和499接口
 
-延迟后检验保存记录与当前图，不再要求包留在w。在成功记录空间明确改用 \(Q_{\rm graph}=\sum_r I_D\otimes\pi_r\otimes|r\rangle\langle r|\)，并定义 \(q_{\rm delayed}=1-\operatorname{Tr}(Q_{\rm graph}\rho_{\rm delay})\)。源结束时每个记录的D=w，因此它与式(4)Q给相同事件；之后包离开w本身不算邻域失配。
+延迟后检验保存记录与当前图，不再要求包留在w。在成功记录空间明确改用 $Q_{\rm graph}=\sum_r I_D\otimes\pi_r\otimes|r\rangle\langle r|$，并定义 $q_{\rm delayed}=1-\operatorname{Tr}(Q_{\rm graph}\rho_{\rm delay})$。源结束时每个记录的D=w，因此它与式(4)Q给相同事件；之后包离开w本身不算邻域失配。
 
 pi_r指定u的全部三个邻居，只有触及u的NNI会改变它。复用500的逐点界||F_u||≤24，记录隔离保存而原h继续运行，额外等待不超过tau时
 

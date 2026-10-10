@@ -19,18 +19,18 @@
 
 第 56 轮的实辅助提升提供任意局部复旋转。两边分别作用在原生成元 YX 上，
 
-\[
+$$
 (U_A\otimes U_B)(Y\otimes X)(U_A^\dagger\otimes U_B^\dagger)
 =(U_AYU_A^\dagger)\otimes(U_BXU_B^\dagger).
-\]
+$$
 
 局部旋转可以分别将 Y 和 X 送到任一 Pauli 轴，所以原共同流的局部共轭提供全部九个 `P⊗Q` 相互作用方向，P、Q∈{X,Y,Z}。再加六个局部方向，恰好得到所有十五个非恒等 Pauli 字符串。
 
 它们均为无迹 Hermitian 矩阵，且
 
-\[
+$$
 \operatorname{Tr}(P_jP_k)/4=\delta_{jk}.
-\]
+$$
 
 所以线性独立并张成 su(4) 的 Hermitian 生成元表示。连续控制群的闭包含全部 Lie 代数，故为 SU(4)。程序用整数 Pauli 矩阵取得单位 Gram 矩阵证书，并逐个检查九种实际局部共轭。
 
@@ -40,16 +40,16 @@
 
 其实不必先编译任意 SU(4) 门才能准备全部纯态。把目标四维向量的振幅整理为 `2×2` 复矩阵 C，并作奇异值分解
 
-\[
+$$
 C=L\begin{pmatrix}s_0&0\\0&s_1\end{pmatrix}V^\dagger,
 \qquad s_0^2+s_1^2=1.
-\]
+$$
 
 令 `θ=atan2(s₁,s₀)`。原实门已经满足
 
-\[
+$$
 U_{YX}(2\theta)|00\rangle=s_0|00\rangle+s_1|11\rangle.
-\]
+$$
 
 再对两边分别执行 L、`(V†)ᵀ`，振幅矩阵便成为 C。这就是完整构造：
 
@@ -57,10 +57,10 @@ U_{YX}(2\theta)|00\rangle=s_0|00\rangle+s_1|11\rangle.
 
 两次局部旋转可以依次使用同一个第 56 轮 Y 辅助资源，在 R–A、R–B 两对上分别执行实 SO(4) 提升；纯资源最终无相关归还。有限偏置 ν 时，目标输出是
 
-\[
+$$
 \frac{1+\nu}{2}|\psi\rangle\langle\psi|
 +\frac{1-\nu}{2}|\psi^*\rangle\langle\psi^*|,
-\]
+$$
 
 故误差至多 `(1−ν)/2`。第 55 轮可以任意逼近 ν=1。因此在准备闭包中，全部复联合纯态可达；再按谱分解进行经典混合，得到全部复联合密度矩阵。
 
@@ -82,23 +82,23 @@ IY XY YI YX YZ ZY
 
 对 P、Q∈{X,Y,Z}，使用局部效应
 
-\[
+$$
 E_s(P)=\frac12(I+s\beta_P P),\quad
 \beta_X=\beta_Z=\alpha,\quad\beta_Y=\nu_0>0.
-\]
+$$
 
 两边选择九种轴组合之一，保留同次实验的两个结果。其记录满足
 
-\[
+$$
 p(s,t|P,Q)=\frac14[1+s\beta_Pa_P+t\beta_Qb_Q
 +st\beta_P\beta_QT_{PQ}].
-\]
+$$
 
 由边缘均值除以 β_P 或 β_Q，得到六个局部坐标；由结果乘积均值除以 β_Pβ_Q，得到九个相关坐标。于是
 
-\[
+$$
 \rho=\frac14\left[II+\sum_Pa_PPI+\sum_Qb_QIQ+\sum_{P,Q}T_{PQ}PQ\right].
-\]
+$$
 
 这给出了必要的全部十五个归一化参数。**新 Y 读取可以很弱，理想读取并非层析前提。** ν₀ 变小时估计方差会增加；总体概率可反演不等于有限样本精确已知。
 
@@ -108,9 +108,9 @@ p(s,t|P,Q)=\frac14[1+s\beta_Pa_P+t\beta_Qb_Q
 
 两态
 
-\[
+$$
 |\Phi_{\pm i}\rangle=\frac{|00\rangle\pm i|11\rangle}{\sqrt2}
-\]
+$$
 
 在全部旧实联合效应上给出相同统计，但它们的 XY 相关分别为 ±1。现在 A 用原 X 读取，B 用弱新 Y 读取，便得到总变差距离 `αν₀`。
 

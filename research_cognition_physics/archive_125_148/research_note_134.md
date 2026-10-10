@@ -8,18 +8,18 @@
 
 第 129 轮家族的逻辑输出为
 
-\[
+$$
 \tau_\theta=
 \theta\,\rho_A\otimes\Lambda(\sigma_B)
 +(1-\theta)\,\Lambda(\rho_A)\otimes\sigma_B,
 \qquad \Lambda(\rho)=\frac23\rho+\frac I6.
-\]
+$$
 
 先执行第 133 轮相干取向变换。在另一新增线 C 上，用一个局部旋转准备
 
-\[
+$$
 \sqrt{1-\theta}|0\rangle+\sqrt\theta|1\rangle.
-\]
+$$
 
 C=1 控制原负取向的新主体修正；C=0 控制以下另一条路径：
 
@@ -60,9 +60,9 @@ C=1 控制原负取向的新主体修正；C=0 控制以下另一条路径：
 
 这次以实际编译 Kraus 替代抽象接入通道，再枚举原噪声 Z 仪器的全部四种结果。修正得分的均值仍为
 
-\[
+$$
 q_{\rm allowed}(r)=\frac14+\frac{5r}{12}+\frac{r^2}{6}.
-\]
+$$
 
 因此此前已证明的有限样本数可以与本次门级实现配套使用。η=1/2、总错误预算 1%，三个充分输入对数仍为 3555、25280、1175194；样本数不是最优统计界。
 
@@ -89,17 +89,17 @@ q_{\rm allowed}(r)=\frac14+\frac{5r}{12}+\frac{r^2}{6}.
 
 每个原语形式为 exp(−iθP/2)，且 ‖P‖=1。若第 j 个门实际多了角度 δ_j，则
 
-\[
+$$
 \|U_j-\widetilde U_j\|
 =2|\sin(\delta_j/4)|\le|\delta_j|/2.
-\]
+$$
 
 用乘积差的逐项展开和迹距离的收缩性，对于任意输入及外部关联，
 
-\[
+$$
 D(\Phi(\omega),\widetilde\Phi(\omega))
 \le \min\left(1,\frac12\sum_j|\delta_j|\right).
-\]
+$$
 
 所以可把这项直接加在理想接口误差上。若希望额外误差不超过 1/1000，则以下统一单门角度精度足够：
 

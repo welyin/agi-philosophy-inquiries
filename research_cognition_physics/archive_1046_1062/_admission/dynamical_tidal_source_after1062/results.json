@@ -1,0 +1,80 @@
+{
+  "schema": "dynamical-tidal-source-algebra-audit-v1",
+  "source": "https://arxiv.org/pdf/2606.19446v2",
+  "source_version": "v2, 22 September 2026",
+  "arithmetic": "exact fractions; powers are dimensional algebra",
+  "checks": {
+    "eq56_to_eq66_static_conversion": true,
+    "eq57_to_eq66_prefactor": true,
+    "eq57_eq65_finite_scale_disagreement": true,
+    "consistent_wave_beta_requires_opposite_sign": true,
+    "eq64_missing_inverse_radius_squared": true,
+    "eq67_to_eq68_with_eq65_convention": true,
+    "eq68_eq69_relative_balance": true,
+    "eq70_eq71_second_derivative_matches_eq68_eq69": true,
+    "all_checks": true
+  },
+  "eq56_to_eq66": {
+    "Lambda0_per_b0_over_a0": "16/45",
+    "beta_log_prefactor": "-64/45",
+    "Lambda0_coefficient_in_parenthesis": "321/112"
+  },
+  "finite_scale_identity_witness": {
+    "is_verified_stellar_model": false,
+    "b0_over_a0": "1",
+    "Lambda0": "16/45",
+    "Lambda_bar": "10",
+    "log_mu_rs": "-1",
+    "mu_rs": "exp(-1)",
+    "gamma": "1",
+    "r_over_rs": "exp(1)",
+    "beta_log_eq66": "-13568/4725",
+    "beta_wave_consistent": "13568/4725",
+    "Lambda_from_eq57": "60818/4725",
+    "Lambda_from_printed_eq65": "33682/4725",
+    "difference": "27136/4725"
+  },
+  "eq63_eq64": {
+    "dimensions": {
+      "eq63_solved_rhs_length_power": 0,
+      "eq64_printed_rhs_length_power": 2
+    },
+    "formal_example": {
+      "GM": "1",
+      "R": "2",
+      "cE": "3",
+      "omega_f": "1/2"
+    },
+    "eq63_solved": "3/2",
+    "eq64_printed": "6",
+    "ratio_printed_over_solved": "4"
+  },
+  "waveform_internal_algebra": {
+    "assumed_running": "Lambda(r)=Lambda_bar+beta_wave*log(r/(gamma*r_s))",
+    "eq68_energy_coefficients_L_beta": [
+      "5",
+      "-2/3"
+    ],
+    "relative_balance_L_coefficients_1_b": [
+      "-24",
+      "-441"
+    ],
+    "relative_balance_beta_coefficients_1_b": [
+      "0",
+      "105"
+    ],
+    "psi_second_derivative_L_coefficients_1_b": [
+      "-5/2",
+      "-735/16"
+    ],
+    "psi_second_derivative_beta_coefficients_1_b": [
+      "0",
+      "175/16"
+    ],
+    "eq69_independent_radiation_derivation_certified": false,
+    "eq57_through_eq71_as_printed_jointly_accepted": false
+  },
+  "new_scientific_rounds": 0,
+  "physical_finite_frequency_remainder_certified": false,
+  "author_erratum_claimed": false
+}

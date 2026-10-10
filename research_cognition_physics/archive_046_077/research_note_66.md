@@ -14,11 +14,11 @@
 
 两份独立准备为
 
-\[
+$$
 \rho=\Phi^+_{AB_1}\otimes\Phi^+_{B_2C},\qquad
 \Phi^+=|\Phi^+\rangle\langle\Phi^+|,
 \quad |\Phi^+\rangle=(|00\rangle+|11\rangle)/\sqrt2.
-\]
+$$
 
 它们均为实态，可以用已有实准备和一次旧 YX(π/2) 流生成。Bob 用该门的逆作用后读取两个 Z 标签。因此理想 Bell 基就是旧门的四列；允许的相关符号如下。
 
@@ -33,11 +33,11 @@
 
 Alice 测 Pᵢ；Charlie 对每个 i<j 测 (Pᵢ+sPⱼ)/√2，s=±1，共六种设置。完整概率为
 
-\[
+$$
 p(a,b,c\mid x,(i,j,s))
 =\frac1{16}\left[1+\frac{ac\,q_x^b}{\sqrt2}
 (\delta_{xi}+s\delta_{xj})\right].
-\]
+$$
 
 3×6×2×4×2=288 项都已保存。每组设置归一化，p(b)=1/4；忽略 b 后两端完全均匀。因此差异存在于联合记录中，不能从单边摘要读取。
 
@@ -45,17 +45,17 @@ p(a,b,c\mid x,(i,j,s))
 
 令
 
-\[
+$$
 E^b_{x,z}=\sum_{a,c=\pm1}ac\,p(a,b,c\mid x,z),
-\]
+$$
 
 注意它没有除以 p(b)。定义
 
-\[
+$$
 T=\sum_b\sum_{i<j}
 \left[q_i^b(E^b_{i,ij+}+E^b_{i,ij-})
 +q_j^b(E^b_{j,ij+}-E^b_{j,ij-})\right].
-\]
+$$
 
 代入完整概率，得到 **T=6√2≈8.48528137424**。每个 b 的贡献已经带着该结果的实际发生概率；不是把四份条件分数直接相加。
 
@@ -63,24 +63,24 @@ T=\sum_b\sum_{i<j}
 
 设两端最终读取可见度分别为 β_A、β_C，有限私人 Y 参考偏置为 ν_A、ν_C。两端实际方向为
 
-\[
+$$
 (X,Y,Z)\longmapsto\beta_L(X,\nu_LY,Z),\qquad L=A,C.
-\]
+$$
 
 Charlie 的和差方向使用同一线性替换。Bob 两次 Z 标签读取可见度均为 γ_B；其效应为
 
-\[
+$$
 B_{uv}=U_{YX}(\pi/2)
 \left[\frac{I+(-1)^u\gamma_BZ}{2}\otimes
 \frac{I+(-1)^v\gamma_BZ}{2}\right]U_{YX}(\pi/2)^\dagger.
-\]
+$$
 
 按上表，q_X=(−1)^u，q_Y=−(−1)^v，q_Z=(−1)^{u+v}。所以 X、Y 相关衰减 γ_B，Z 相关衰减 γ_B²。精确分数为
 
-\[
+$$
 \boxed{T=2\sqrt2\,\beta_A\beta_C
 \left[\gamma_B(1+\nu_A\nu_C)+\gamma_B^2\right].}
-\]
+$$
 
 这也解释了为什么不能把 Bob 的整个 Bell 测量统一乘一个可见度。若参考先理想化、四个目标都只读一次原仪器，β_A=β_C=γ_B=α=4sin(1/4)，得到 T≈8.19521382227。第 69 轮将把理想参考和读取都换成有限流程。
 

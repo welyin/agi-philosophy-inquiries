@@ -6,9 +6,9 @@
 
 固定原 h=1/4、α=sin(h)/h，保留 λ=1 的 fresh 读取族及任意静默旋转。对所有
 
-\[
+$$
 0\le\eta\le\eta_{\rm suff}=\boxed{0.001749820194\ldots},
-\]
+$$
 
 本轮构造一个连续隐藏角模型，具有以下性质：
 
@@ -23,24 +23,24 @@
 
 对允许的未归一化摘要 z=(w,u,v)，定义
 
-\[
+$$
 F_z(\lambda)=\frac1{2\pi}\left[w+\frac u\alpha\cos\lambda+\frac v\alpha\sin\lambda\right].
-\]
+$$
 
 因为 √(u²+v²)≤αw，F_z≥0 且积分为 w。这个编码是 z 的线性函数；归一化情况下，它就是第二十二轮使用的圆盘编码。
 
 使用 Poisson 核
 
-\[
+$$
 P_\alpha(t)=\frac{1-\alpha^2}{1-2\alpha\cos t+\alpha^2}
 =1+2\sum_{n=1}^\infty\alpha^n\cos(nt).
-\]
+$$
 
 级数由几何级数直接求和；α<1 时绝对收敛。因此 P_α 的圆周平均为 1，一阶余弦系数给出保留 α，并有逐点下界
 
-\[
+$$
 P_\alpha(t)\ge p_{\min}:=\frac{1-\alpha}{1+\alpha}>0.
-\]
+$$
 
 这个严格正余量允许加入足够小的读取修正。
 
@@ -48,13 +48,13 @@ P_\alpha(t)\ge p_{\min}:=\frac{1-\alpha}{1+\alpha}>0.
 
 令 s∈{−1,+1} 为结果，q=√(1−η²)，先写 θ=0 的核密度，积分测度为输出角 dλ′：
 
-\[
+$$
 K_s(\lambda'\mid\lambda)=\frac1{4\pi}\left[
 P_\alpha(\lambda'-\lambda)
 s\eta(\cos\lambda'+2\alpha\cos\lambda)
 2\alpha(q-1)\sin\lambda'\sin\lambda
 \right].
-\]
+$$
 
 任意读取方向 θ，只需将 λ、λ′ 同时替换为 λ−θ、λ′−θ。隐藏角的静默旋转仍是 λ→λ+φ。
 
@@ -62,22 +62,22 @@ s\eta(\cos\lambda'+2\alpha\cos\lambda)
 
 每个核的方括号不小于
 
-\[
+$$
 p_{\min}-(1+2\alpha)\eta-2\alpha(1-\sqrt{1-\eta^2}).
-\]
+$$
 
 在 η∈[0,1]，1−√(1−η²)≤η²。因此只需
 
-\[
+$$
 2\alpha\eta^2+(1+2\alpha)\eta\le p_{\min}.
-\]
+$$
 
 正根可稳定写成
 
-\[
+$$
 \boxed{\eta_{\rm suff}=
 \frac{2p_{\min}}{1+2\alpha+\sqrt{(1+2\alpha)^2+8\alpha p_{\min}}}}.
-\]
+$$
 
 原 α 给出前述约 0.00174982。比如 η=0.001 时，K_s 的统一密度下界约为 **0.0001781707**。这证明整个连续角空间上的非负性，网格扫描只是实现检查。
 
@@ -85,10 +85,10 @@ p_{\min}-(1+2\alpha)\eta-2\alpha(1-\sqrt{1-\eta^2}).
 
 对输出角积分：
 
-\[
+$$
 \int K_s(\lambda'\mid\lambda)d\lambda'
 =\tfrac12[1+2s\alpha\eta\cos\lambda].
-\]
+$$
 
 两个结果的积分相加为 1。各分支已经非负，因此构成合法经典仪器。其隐藏响应与原潜变量模型的响应可以不同；对相应准备编码积分后的操作概率必须相同。
 
@@ -96,26 +96,26 @@ p_{\min}-(1+2\alpha)\eta-2\alpha(1-\sqrt{1-\eta^2}).
 
 卷积的一阶谐波恒等式以及圆周正交关系，直接给出
 
-\[
+$$
 \int K_s(\lambda'\mid\lambda)F_z(\lambda)d\lambda
 =\frac1{4\pi}\left[
 w+s\eta u
 \left(u+s\eta w\right)\cos\lambda'
 qv\sin\lambda'
 \right].
-\]
+$$
 
 而原 θ=0 的 fresh 分支为
 
-\[
+$$
 A_s z=\tfrac12(w+s\eta u,\ \alpha u+s\alpha\eta w,\ \alpha qv).
-\]
+$$
 
 所以
 
-\[
+$$
 \boxed{K_sF_z=F_{A_s z}}.
-\]
+$$
 
 旋转坐标后，对所有 θ 同样成立。这是**密度函数恒等式**；未对输出分布丢弃高阶信息，也没有只凭摘要正性宣布核存在。
 

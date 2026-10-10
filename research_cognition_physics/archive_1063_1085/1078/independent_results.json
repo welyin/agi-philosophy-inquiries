@@ -1,0 +1,144 @@
+{
+  "round": 1078,
+  "status": "passed",
+  "assertion_groups": 7,
+  "groups": [
+    "independently recomputed center has well-resolved spectral minor",
+    "reused propagation retained source coherence and fixed-reader context",
+    "abstract radial fixed-trace control admits angular rank two",
+    "independent exact corner enclosure is strictly negative on the full old cube",
+    "independent finite-pulse center lies in the reused exact error boxes",
+    "independent corner result fits author's outward interval",
+    "old local Bloch embedding budget is reused exactly"
+  ],
+  "center_effect": [
+    0.5739062588509245,
+    -0.046864159468799196,
+    0.06895665693789413,
+    0.1605844244155197
+  ],
+  "center_effect_jacobian": [
+    [
+      0.000659224854910264,
+      0.0031021590331159095,
+      -0.0014668562067608063
+    ],
+    [
+      0.001256031183279201,
+      0.00590449162933127,
+      -5.244335045257771e-05
+    ],
+    [
+      -0.002929158734344792,
+      -0.004025677247998283,
+      0.0012591950429559561
+    ],
+    [
+      -0.016874518737329987,
+      -0.02845948457496116,
+      -8.016789964244823e-05
+    ]
+  ],
+  "center_spectral_invariant_jacobian": [
+    [
+      0.000659224854910264,
+      0.0031021590331159095,
+      -0.0014668562067608063
+    ],
+    [
+      -0.005941265436709739,
+      -0.010248912463729146,
+      0.00015282775622602952
+    ]
+  ],
+  "center_spectral_singular_values_diagnostic": [
+    0.012237263577335851,
+    0.001679646792600627
+  ],
+  "center_minors_diagnostic": [
+    {
+      "columns": [
+        "t",
+        "u"
+      ],
+      "value": 1.167441241073863e-05
+    },
+    {
+      "columns": [
+        "t",
+        "theta"
+      ],
+      "value": -8.614234226426775e-06
+    },
+    {
+      "columns": [
+        "u",
+        "theta"
+      ],
+      "value": -1.4559584855481872e-05
+    }
+  ],
+  "chosen_minor_columns": [
+    "u",
+    "theta"
+  ],
+  "domain": "unchanged entire closed 480/1077 control cube",
+  "radius": "1/246240000",
+  "independent_uniform_minor_enclosure": [
+    "-7283023/500000000000",
+    "-3638281/250000000000"
+  ],
+  "independent_uniform_minor_float": [
+    -1.4566045089335363e-05,
+    -1.4553124640323073e-05
+  ],
+  "author_outward_enclosure": [
+    "-455189/31250000000",
+    "-7276561/500000000000"
+  ],
+  "independent_interval_algorithm": "exact grouped multiaffine corners; four shared derivative corners and three independent eight-corner terms",
+  "corner_term_evaluations": 96,
+  "equivalent_full_box_corner_count": 2048,
+  "strict_minor_upper": "-1/100000",
+  "center_error_budgets": {
+    "effect_float": 1.8000000417008274e-09,
+    "jacobian_by_column_float": [
+      3.2400000750614895e-08,
+      3.2400000750614895e-08,
+      3.600000083401655e-09
+    ]
+  },
+  "abstract_positive_control": {
+    "effect_family": "I/2 + (1/5) n.sigma, |n|=1",
+    "fixed_spectral_invariants": [
+      "1/2",
+      "1/25"
+    ],
+    "tangent_rank_diagnostic": 2,
+    "fixed_plus_X_order_gap": 0.19999999999999993,
+    "physical_source_or_spatial_dimension_claimed": false
+  },
+  "source_reuse": {
+    "independent_spectral_Frechet_source": "1077/independent_check.py",
+    "exact_propagation_source_reused_at_final_stage": "1078.original_data -> frozen 1077 Gaussian source and 1076 reader",
+    "author_interval_algorithm_reused": false,
+    "new_propagation_model_or_parameters": false
+  },
+  "hashes": {
+    "independent_check": "0b828722b8830c4f2956ecc2761539bec84a8fe5cc64006e689bde87407dbd8f",
+    "frozen1077_independent_check": "fbbcaa1eaf6ebc823872c6bd86df75ec98599fcfc3aafc203513a5c7538d760d",
+    "author_check": "3a3fe4ba8b207061d8fd942b9a96ed0504998e20f88ef51e5e35d7e1cb5fd29c",
+    "author_results": "c70def457a6b6478e96e13648262850f8bb45f50ba771283182a009fcee1c4c3",
+    "frozen1077_proof": "716b8b8a77900cb23e3fda9987f90c7c00dadad5212a5d83ebde1fad4a743f15"
+  },
+  "scope": {
+    "fixed_context_spectral_level_is_locally_one_dimensional": true,
+    "local_angular_rank_two_conjugacy_patch_in_this_context": false,
+    "argument_relies_only_on_small_cube_not_fitting_a_full_sphere": false,
+    "later_departure_from_cube_rescues_a_local_patch_through_it": false,
+    "all_readers_or_actual_context_transport_excluded": false,
+    "spatial_dimension_derived_or_refuted": false,
+    "numerical_rank_is_universal_proof": false,
+    "positive_control_is_an_abstract_legality_check": true
+  }
+}

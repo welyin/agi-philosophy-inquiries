@@ -16,23 +16,23 @@
 
 两种条件环境态为
 
-\[
+$$
 |e_+\rangle=|0\rangle,\qquad
 |e_-\rangle=\lambda|0\rangle+\sqrt{1-\lambda^2}|1\rangle.
-\]
+$$
 
 选择实环境轴
 
-\[
+$$
 F=\lambda Z+\sqrt{1-\lambda^2}X.
-\]
+$$
 
 它的两个本征方向与 e_++e_-、e_+−e_- 对齐。理想读取的两个分支在 M 上分别为
 
-\[
+$$
 \sqrt{\frac{1+\lambda}{2}}\,I,\qquad
 \sqrt{\frac{1-\lambda}{2}}\,A,
-\]
+$$
 
 允许无关整体符号。分支概率与输入无关，环境标签说明是否发生了 A 轴相位翻转，而不是给出旧 G 答案。λ=1 的零概率分支按极限定义即可。
 
@@ -44,42 +44,42 @@ F=\lambda Z+\sqrt{1-\lambda^2}X.
 
 剩余 M,N 的未归一化分支通道为
 
-\[
+$$
 \mathcal E_r(\omega)=
 \frac{(1+\lambda)(1+r\gamma)}4\omega+
 \frac{(1-\lambda)(1-r\gamma)}4 A\omega A.
-\]
+$$
 
 定义其概率和有符号相干权重
 
-\[
+$$
 p_r=\frac{1+r\lambda\gamma}{2},\qquad
 a_r=\frac{\lambda+r\gamma}{2}.
-\]
+$$
 
 对任意输入 tr E_r(ω)=p_r，环境消息自身不携带原标签。它的作用是改变之后怎样利用记忆。
 
 将该通道作用于两套 H 校准态，其差矩阵为
 
-\[
+$$
 \mathcal E_r(\rho_+^H)-\mathcal E_r(\rho_-^H)
 =\frac{(cp_rI+a_rL)\otimes D_d}{2}.
-\]
+$$
 
 于是，**固定这两个环境消息之后**，全部消息与剩余两记忆的理想 H 区分度为
 
-\[
+$$
 \boxed{D_H=wT,\qquad T=\sum_{r=\pm1}\max(cp_r,|a_r|).}
-\]
+$$
 
 等价的闭式是
 
-\[
+$$
 T=\frac12\left[
 \max\{c(1+\lambda\gamma),\lambda+\gamma\}
 +\max\{c(1-\lambda\gamma),|\lambda-\gamma|\}
 \right].
-\]
+$$
 
 这来自每个经典块的精确迹范数。它证明固定消息仪器之后的理想最优性，没有优化任意环境基底、全部原始环境历史或所有有限同资源协议。
 
@@ -94,9 +94,9 @@ T=\frac12\left[
 
 最终查询再用 k 次原读取、可见度 η=γ_k，则
 
-\[
+$$
 \boxed{P_H=\frac{1+\eta wT}{2}.}
-\]
+$$
 
 全部环境和查询分支都计入，没有筛掉不利消息。G 查询在收到环境消息后也仍能选择，环境相位翻转与 A 查询交换；这里仍不同时兑现 G、H 两个最优答案。
 

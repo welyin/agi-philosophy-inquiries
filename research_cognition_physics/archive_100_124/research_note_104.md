@@ -8,17 +8,17 @@
 
 保持第 103 轮的 a=∏_S λ_i、b=∏_U λ_i。k≥1 个开放片段的条件态是
 
-\[
+$$
 |e_+^S\rangle=|0\cdots0\rangle,\qquad
 |e_-^S\rangle=\bigotimes_{i\in S}|v(\lambda_i)\rangle.
-\]
+$$
 
 第 94 轮压缩器每合并一片，使用 3 次两系统实旋转和 3 次局部旋转：
 
-\[
+$$
 T\bigl(|v(x)\rangle|v(y)\rangle\bigr)=|v(xy)\rangle|0\rangle,\qquad
 T|00\rangle=|00\rangle.
-\]
+$$
 
 归纳后有效片段 E_* 的条件重叠为 a，其余 k−1 槽精确成为 |0〉，并与整个其余系统无关联。两条向量恒等式的线性延拓保证完整复相干和参考关联一起保留。
 
@@ -26,9 +26,9 @@ T|00\rangle=|00\rangle.
 
 汇集后忽略纯暂存位，实际状态恰为
 
-\[
+$$
 W_a\Lambda_b(\omega)W_a^\dagger.
-\]
+$$
 
 ## 2 原噪声环境消息与剩余仪器
 
@@ -36,37 +36,37 @@ W_a\Lambda_b(\omega)W_a^\dagger.
 
 定义
 
-\[
+$$
 p_r=\frac{1+ra\gamma}{2},\qquad t_r=\frac{a+r\gamma}{2}.
-\]
+$$
 
 环境消息后的未归一化记忆分支为
 
-\[
+$$
 \boxed{
 \mathcal J_r(\omega)=
 \frac{p_r+bt_r}{2}\omega+
 \frac{p_r-bt_r}{2}A\omega A.
 }
-\]
+$$
 
 由 |t_r|≤p_r、0≤b≤1，系数非负；tr J_r(ω)=p_r，与输入无关。两个分支相加为 Λ_ab(ω)。因此消息不是直接报告 G 或 H 标签，而是告诉接收方应如何解读剩余关联。
 
 H 差矩阵为
 
-\[
+$$
 \mathcal J_r(\rho_+^H-\rho_-^H)
 =\frac{(cp_rI+bt_rL)\otimes D_d}{2}.
-\]
+$$
 
 逐经典块计算迹范数得
 
-\[
+$$
 \boxed{
 D_H(RMN)=wT_S,\qquad
 T_S=\sum_{r=\pm1}\max(cp_r,b|t_r|).
 }
-\]
+$$
 
 这是固定该二值环境仪器以后的理想最优区别；未优化所有环境读取基底、原始历史或有限同资源协议。
 
@@ -76,21 +76,23 @@ T_S=\sum_{r=\pm1}\max(cp_r,b|t_r|).
 
 最终使用 q 次原读取、η=γ_q：
 
-\[
+$$
 \boxed{P_H=\frac{1+\eta wT_S}{2}.}
-\]
+$$
 
 完整原始环境和末端读取分支均已计入，没有后选。
 
 几个边界直接检验：
 
-\[
+$$
 T_S(\gamma=0)=\max(c,ab),\qquad
 T_S(\gamma=1)=\max(c,b),
-\]
-\[
+$$
+
+
+$$
 \max(c,ab)\le T_S\le\max(c,b).
-\]
+$$
 
 γ=1 时，t_r=rp_r，每个消息分支选取相同类型的最优轴并按需翻转答案，因而只用经典环境消息就达到第 103 轮的全部可访问理想信息界。它没有恢复一般量子态；只为本次 H 判别补齐查询能力。有限 m 则按已认证的 γ_m 给出逼近程度。
 

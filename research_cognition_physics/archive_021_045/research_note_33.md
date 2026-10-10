@@ -17,7 +17,7 @@
 
 仍记 X 为均匀单位圆上的向量，Y=αn_ψ，ψ 的密度为 R_ηdψ/(2π)。对任意方向 n_θ，利用原结果—输出角换元：
 
-\[
+$$
 \begin{aligned}
 E|Y\cdot n_\theta|
 &=\frac\alpha2\int\left(
@@ -26,25 +26,25 @@ E|Y\cdot n_\theta|
 \right)\frac{dy}{2\pi}\\
 &=\alpha\int\max\{|A\cos y|,b\}\frac{dy}{2\pi},
 \end{aligned}
-\]
+$$
 
 其中 b=η|cos θ|，A²=cos²θ+q²sin²θ=q²+b²，q=√(1−η²)，γ 只是把正弦和余弦合并后的相位。
 
 积分给出
 
-\[
+$$
 \boxed{
 E|Y\cdot n_\theta|
 =\frac{2\alpha}{\pi}
 \left[q+b\arctan\frac bq\right].
 }
-\]
+$$
 
 X 的对应平均恒为 2/π。函数 b↦q+b arctan(b/q) 严格随 b>0 增加，而 0≤b≤η，所以最大值在读取轴 θ=0 mod π 处取得：
 
-\[
+$$
 q+\eta\arctan(\eta/q)=q+\eta\arcsin\eta=G(\eta).
-\]
+$$
 
 因此所有中心绝对投影测试通过，当且仅当 αG(η)≤1。该结论是全方向解析结果，不是方向网格的最大值猜测。
 
@@ -52,16 +52,16 @@ q+\eta\arctan(\eta/q)=q+\eta\arcsin\eta=G(\eta).
 
 两个待比较分布均中心对称。对任意一次齐次凸函数 φ，换成
 
-\[
+$$
 \phi_{\rm even}(v)=\frac{\phi(v)+\phi(-v)}2
-\]
+$$
 
 不会改变两边期望。偶的一次齐次凸函数是一个中心对称紧凸集的支撑函数；在二维，它有正测度表示
 
-\[
+$$
 \phi_{\rm even}(v)=\int|\langle v,n_\theta\rangle|\,m(d\theta),
 \qquad m\ge0.
-\]
+$$
 
 这可从中心对称多边形理解：它的边成对平行且等长，因此可由线段作 Minkowski 求和；支撑函数相应是绝对线性函数的正和。用这样的多边形逼近一般平面中心对称凸集，即得积分表示；线段等退化情况也包含在极限中。
 
@@ -69,21 +69,21 @@ q+\eta\arctan(\eta/q)=q+\eta\arcsin\eta=G(\eta).
 
 于是
 
-\[
+$$
 E\phi(X)-E\phi(Y)
 =\int\frac2\pi
 \left[1-\alpha\left(q+b_\theta\arctan\frac{b_\theta}q\right)\right]m(d\theta).
-\]
+$$
 
 若 αG≤1，右侧每项非负；若 αG>1，单个 |v_x| 已经违反。故
 
-\[
+$$
 \boxed{
 E\phi(Y)\le E\phi(X)\quad
 \text{对全部一次齐次凸 }\phi
 \iff\alpha G(\eta)\le1.
 }
-\]
+$$
 
 这只穷尽了一个函数类别，不能替代第二十九轮要求的**全部凸函数**。尤其是带非零截距的最大仿射函数，一般不在此类中。
 
@@ -93,23 +93,23 @@ E\phi(Y)\le E\phi(X)\quad
 
 第三十轮已证明：如果 η=η_B 有准备非情境实现，任意一般编码
 
-\[
+$$
 d\mu_t(\lambda)=[1+a(\lambda)\cdot t]d\mu_0(\lambda)
-\]
+$$
 
 必满足 |a|=1 几乎处处，而且 a 的基准分布是均匀单位圆。
 
 现在去掉额外隐藏标签，而不作输入状态相关的重新采样。将均匀输入下的联合分支测度 μ_0(dλ)K_s(dλ′|λ) 直接推送到 (a(λ),a(λ′))，得到圆×圆上的 M_s(dx,dy)。其合计输入边缘为 σ(dx)，故可分解为
 
-\[
+$$
 M_s(dx,dy)=\sigma(dx)\widehat K_s(dy\mid x).
-\]
+$$
 
 一般输入仅将原联合测度乘以 1+n_x·t，这个因子只依赖已经保留的输入角。回到 z=(w,u,v) 坐标，新的角度核满足
 
-\[
+$$
 \widehat K_s F_z=F_{A_sz}
-\]
+$$
 
 作为完整分布恒等式。静默旋转直接作用于角度即可。这里只对紧圆周上的联合分布取条件概率，不需要假设原隐藏变量纤维具有特殊结构。
 
@@ -119,22 +119,22 @@ M_s(dx,dy)=\sigma(dx)\widehat K_s(dy\mid x).
 
 对任何固定编码的合法耦合 E[X|Y]=Y，有
 
-\[
+$$
 \begin{aligned}
 E|X_x|-E|Y_x|
 &=E[|X_x|-\operatorname{sign}(Y_x)X_x]\\
 &=2E\!\left[|X_x|\,\mathbf1_{\{X_xY_x<0\}}\right].
 \end{aligned}
-\]
+$$
 
 Y_x=0 的事件概率为零，所以无需在边界加额外项。代入第二节：
 
-\[
+$$
 \boxed{
 E\!\left[|X_x|\,\mathbf1_{\{X_xY_x<0\}}\right]
 =\frac{1-\alpha G(\eta)}{\pi}.
 }
-\]
+$$
 
 这是按 |X_x| 加权的跨半圆转移量，不能直接称为跨半圆概率。它在 η=0.1182 时约为 0.00110230719，在 η=0.14 时约为 0.000213265511；到 η_B 必须为零。若只计 |X_x|≥ε 的跨越，其概率至多为右侧除以 ε，但靠近分界线的无权重概率不受这个估计直接控制。
 
@@ -146,28 +146,28 @@ E\!\left[|X_x|\,\mathbf1_{\{X_xY_x<0\}}\right]
 
 定义概率分布
 
-\[
+$$
 \sigma_+=\operatorname{Law}(n_x\mid \cos x>0),\qquad
 \nu_+=\operatorname{Law}(\alpha n_\psi\mid \cos\psi>0),
-\]
+$$
 
 其中 σ_+ 是均匀正半圆；ν_+ 的角密度为 R(ψ)dψ/π，−π/2<ψ<π/2。
 
 在端点，两者的均值恰好相同：
 
-\[
+$$
 E_{\sigma_+}X=(2/\pi,0),\qquad
 E_{\nu_+}Y=(2\alpha G(\eta_B)/\pi,0)=(2/\pi,0).
-\]
+$$
 
 若全圆鞅耦合存在，第五节说明它不跨半圆，将其限制并归一化就得到正半圆鞅耦合。反之，若有正半圆耦合，把它关于原点反射，再各取一半，便得到完整耦合。因此利用第二十九轮的 Strassen 判据，
 
-\[
+$$
 \boxed{
 \eta_B\text{ 单一读取强度有任意准备非情境实现}
 \iff \nu_+\le_{\rm cx}\sigma_+.
 }
-\]
+$$
 
 当前没有证明右侧成立或失败。这个化简的价值是：额外隐藏标签与任意系数半径已不再是端点搜索中的自由度，接下来可以专门研究两个明确半圆分布之间的正耦合。
 

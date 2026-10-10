@@ -6,18 +6,18 @@
 
 **可以直接用连续分析，而且本轮已经完成端点构造。** 在本项目固定准备宽度 h=1/4、α=4sin(1/4)、原 fresh 仪器及准备非情境条件下：
 
-\[
+$$
 \boxed{\eta_* = \eta_B,\qquad
 \alpha\big[\sqrt{1-\eta_B^2}+\eta_B\arcsin\eta_B\big]=1,}
-\]
+$$
 
 其中 η_B 是唯一正根，约 0.14473923209514498，**等号端点本身可行**。其严格有理夹逼为
 
-\[
+$$
 \frac{6674918929710967577}{46116860184273879040}
 <\eta_B<
 \frac{2669967571884387031}{18446744073709551616}.
-\]
+$$
 
 必要上界来自第三十轮；本轮构造规范端点耦合，第三十四轮再给出所有 η≤η_B 的完整族。因而不再需要不断增加有限标签来证明这一强度边界。
 
@@ -32,44 +32,44 @@
 
 继续使用第二十九轮的等价问题：
 
-\[
+$$
 Y=\alpha n_\theta\sim\nu_{\eta_B},\qquad
 X\sim\sigma,\qquad E[X\mid Y]=Y.
-\]
+$$
 
 第三十三轮已经说明：端点必须不跨越读取轴的正负半圆，只需在右半圆构造，再按 x 坐标反射补齐。
 
 在右半圆，写源点和目标点为
 
-\[
+$$
 Y=(s,\epsilon a(s)),\qquad
 X=(t,\epsilon' b(t)),
-\]
+$$
 
-\[
+$$
 a(s)=\sqrt{\alpha^2-s^2},\quad
 b(t)=\sqrt{1-t^2},\quad
 0\le s\le\alpha,\quad0\le t\le1.
-\]
+$$
 
 给定 s，源的 ε=±1 等概率；给定 t，均匀右半圆要求目标 ε′=±1 等概率。源、目标横坐标的归一化密度分别是
 
-\[
+$$
 f(s)=\frac{2\rho(s)}{\pi a(s)}\mathbf1_{(0,\alpha)}(s),\qquad
 g(t)=\frac{2}{\pi b(t)}\mathbf1_{(0,1)}(t),
-\]
+$$
 
-\[
+$$
 \rho(s)=q^3\frac{1+\eta_B^2s^2/\alpha^2}
 {(1-\eta_B^2s^2/\alpha^2)^2},\qquad q=\sqrt{1-\eta_B^2}.
-\]
+$$
 
 两密度都积分为 1。端点方程恰好保证它们的横坐标一阶矩相同：
 
-\[
+$$
 \int sf(s)\,ds=\frac{2\alpha G(\eta_B)}\pi
 =\frac2\pi=\int tg(t)\,dt.
-\]
+$$
 
 本轮直接利用这个精确等式。把 η_B 换成夹逼中的任意小数或任意点，都不能自动保留该等式。
 
@@ -77,29 +77,29 @@ g(t)=\frac{2}{\pi b(t)}\mathbf1_{(0,1)}(t),
 
 在 (0,α) 内，
 
-\[
+$$
 \frac{f(s)}{g(s)}=\rho(s)\frac{b(s)}{a(s)}
-\]
+$$
 
 严格增加。ρ 的单调性来自
 
-\[
+$$
 \frac{d}{dz}\frac{1+z}{(1-z)^2}=\frac{3+z}{(1-z)^3}>0,
 \quad z=\eta_B^2s^2/\alpha^2;
-\]
+$$
 
 另一因子的对数导数为
 
-\[
+$$
 \frac{d}{ds}\log\frac{b(s)}{a(s)}
 =\frac{s(1-\alpha^2)}{(1-s^2)(\alpha^2-s^2)}>0.
-\]
+$$
 
 在 s=0，f/g=q³/α<1；当 s↑α 时趋于无穷。因此存在唯一交点 c，且严格证书给出
 
-\[
+$$
 0<c<0.521<\alpha/\sqrt2.
-\]
+$$
 
 普通数值诊断 c≈0.520287990326。由此分布差具有简单结构：
 
@@ -113,57 +113,57 @@ g(t)=\frac{2}{\pi b(t)}\mathbf1_{(0,1)}(t),
 
 定义两端缺额测度
 
-\[
+$$
 L(dt)=(g(t)-f(t))\mathbf1_{(0,c)}(t)\,dt,
 \qquad
 U(dt)=g(t)\mathbf1_{(\alpha,1)}(t)\,dt.
-\]
+$$
 
 记总质量 m_L、m_U，归一化概率分布 L₀=L/m_L、U₀=U/m_U，以及
 
-\[
+$$
 \ell=E_{L_0}T,\quad u=E_{U_0}T,
 \qquad 0<\ell<c<\alpha<u<1.
-\]
+$$
 
 对于中间 s∈[c,α]，令
 
-\[
+$$
 p(s)=\frac{g(s)}{f(s)}=\frac{a(s)}{\rho(s)b(s)},\qquad
 \lambda(s)=\frac{u-s}{u-\ell}.
-\]
+$$
 
 定义横坐标条件核
 
-\[
+$$
 \boxed{P(dt\mid s)=
 \begin{cases}
 \delta_s(dt),&0\le s<c,\\
 p(s)\delta_s(dt)+(1-p(s))
 \{\lambda(s)L_0(dt)+(1-\lambda(s))U_0(dt)\},&c\le s\le\alpha.
 \end{cases}}
-\]
+$$
 
 端点取连续延拓，例如 p(α)=0。所有系数在 [0,1] 内，且
 
-\[
+$$
 E[T\mid s]=p(s)s+(1-p(s))
 \{\lambda(s)\ell+(1-\lambda(s))u\}=s.
-\]
+$$
 
 还必须检查目标边缘。令中部过剩 H(ds)=(f−g)1_(c,α)ds。总质量和一阶矩相等给出
 
-\[
+$$
 \int H=m_L+m_U,\qquad
 \int sH(ds)=m_L\ell+m_Uu.
-\]
+$$
 
 因此
 
-\[
+$$
 \int\lambda(s)H(ds)=
 \frac{u(m_L+m_U)-(m_L\ell+m_Uu)}{u-\ell}=m_L,
-\]
+$$
 
 另一尾部同理得到 m_U。输出是公共部分 min(f,g) 加 L 加 U，恰好为 g。这就解析地构造了一维鞅耦合，没有使用有限线性规划。
 
@@ -171,42 +171,42 @@ E[T\mid s]=p(s)s+(1-p(s))
 
 定义
 
-\[
+$$
 v_L=E_{L_0}b(T),\quad v_U=E_{U_0}b(T),\quad
 \Lambda(s)=\frac{u-s}{u-\ell}v_L+\frac{s-\ell}{u-\ell}v_U.
-\]
+$$
 
 给定 s，目标可用的平均纵向高度为
 
-\[
+$$
 h(s)=E[b(T)\mid s]=
 \begin{cases}
 b(s),&s<c,\\
 p(s)b(s)+(1-p(s))\Lambda(s),&s\ge c.
 \end{cases}
-\]
+$$
 
 若能证明
 
-\[
+$$
 \boxed{h(s)\ge a(s)\quad(0\le s\le\alpha),}
-\]
+$$
 
 就可先按 P 取 T，再独立于 T 选目标纵向符号：
 
-\[
+$$
 \Pr(\epsilon'=+1\mid s,\epsilon,T)
 =\frac{1+\epsilon a(s)/h(s)}2.
-\]
+$$
 
 于是
 
-\[
+$$
 E[X_x\mid Y]=s,
 \qquad
 E[X_y\mid Y]=\epsilon\frac{a(s)}{h(s)}E[b(T)\mid s]
 =\epsilon a(s).
-\]
+$$
 
 给定 s，源的两个 ε 等概率，而 P 不依赖 ε。因此对任何输出 T，平均后的 ε′ 也等概率，目标边缘确实是均匀右半圆。再按 x 反射得到完整圆周耦合。
 
@@ -216,73 +216,80 @@ E[X_y\mid Y]=\epsilon\frac{a(s)}{h(s)}E[b(T)\mid s]
 
 不需要高精度算出 L 的全部积分就能证明 h≥a。用以下严格常数：
 
-\[
+$$
 u>u_0=0.9965,\qquad
 v_U>v_0=0.0719,\qquad
 v_L>v_1=0.8535.
-\]
+$$
 
 证明如下。令 γ=arccosα，直接积分上尾得
 
-\[
+$$
 u=\frac{\sin\gamma}{\gamma},\qquad
 v_U=\frac{1-\alpha}{\gamma}.
-\]
+$$
 
 整数区间认证 cos(0.1443)<α，故 γ<0.1443。Taylor 下界给出
 
-\[
+$$
 u\ge1-\frac{\gamma^2}{6}>0.9965,
 \qquad
 v_U>\frac{1-\alpha}{0.1443}>0.0719.
-\]
+$$
 
 下尾位于 [0,c]，故
 
-\[
+$$
 v_L\ge\sqrt{1-c^2}>\sqrt{1-0.521^2}>0.8535.
-\]
+$$
 
 因 ℓ≥0，且 c≤s≤α<u₀≤u，凸组合系数均非负，得到一个简单直线下界
 
-\[
+$$
 \boxed{\Lambda(s)\ge B(s)
 =v_0+(v_1-v_0)\frac{u_0-s}{u_0}.}
-\]
+$$
 
 具体地，先分别将 v_L、v_U 换为下界，再使用
 (u−s)/(u−ℓ)≥(u−s)/u≥(u₀−s)/u₀。
 
 在中部过剩区间，令 k(s)=a(s)/b(s)，则 ρ(s)≥k(s)。将 h≥a 乘以正数 ρ，可化为
 
-\[
+$$
 \rho(s)(h(s)-a(s))
 =a(s)(1-\rho(s))+(\rho(s)-k(s))\Lambda(s).
-\]
+$$
 
 现在分三段处理：
 
 1. **s<c**：h=b>a，由 α<1 直接成立。
 2. **c≤s≤α/√2**：ρ 单调增加，而
-   \[
+   
+
+$$
    \rho(\alpha/\sqrt2)=q^3\frac{1+\eta_B^2/2}{(1-\eta_B^2/2)^2}<1.
-   \]
+   
+$$
+
    上式右边两项均非负，且第一项严格为正。
 3. **α/√2≤s≤α**：写 s=αcosθ、a=αsinθ，θ∈[0,π/4]，只需证明
-   \[
+   
+
+$$
    D(\theta)=a(s)(1-\rho(s))+(\rho(s)-k(s))B(s)>0.
-   \]
+   
+$$
 
 第三段用 4096 个覆盖整个 [0,π/4] 的区间进行向外舍入认证。在每个区间，θ 本身是区间输入，正弦、余弦、平方根及全部代数运算都传播完整范围，不只检查端点或中点。
 
 全段严格下界为
 
-\[
+$$
 \boxed{D(\theta)\ge
 \frac{1400008562357258785485458337}
 {633825300114114700748351602688}
 >0.0022088.}
-\]
+$$
 
 因此 h≥a 在全部源位置成立，连续二维耦合完成。
 

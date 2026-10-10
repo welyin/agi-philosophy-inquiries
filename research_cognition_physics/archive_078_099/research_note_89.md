@@ -6,17 +6,17 @@
 
 沿用
 
-\[
+$$
 \tau_s=(I+sYY)/4,\qquad
 U=e^{-i\pi YX/4},\qquad s=\pm1.
-\]
+$$
 
 旧门有 $U(IZ)U^\dagger=-YY$，因此
 
-\[
+$$
 U^\dagger\tau_sU
 =\frac{I_A}{2}\otimes\frac{I_B-sZ_B}{2}.
-\]
+$$
 
 原先只存在于联合关系中的 s，已经写入 B 的本地 Z。此时再把 A、B 分开，B 使用原噪声读取，成功率仍为 $(1+\alpha)/2\approx99.4808\%$。不必一直保持共同操作权限。
 
@@ -28,13 +28,15 @@ U^\dagger\tau_sU
 
 分开后的实局部完整记录效应张成
 
-\[
+$$
 L=\operatorname{Sym}_{\mathbb R}(d_A)
 \otimes\operatorname{Sym}_{\mathbb R}(d_B),
-\]
-\[
+$$
+
+
+$$
 \dim L=\frac{d_A(d_A+1)d_B(d_B+1)}4.
-\]
+$$
 
 经典通信和有限自适应选择不会越出这个线性空间。真实效应须满足正性和归一化；这里比较它们的线性张成空间，讨论完整统计的可确定性。
 
@@ -57,10 +59,10 @@ L=\operatorname{Sym}_{\mathbb R}(d_A)
 
 新增可见方向为 YY，原 IZ 则变得不可见。显式对照为
 
-\[
+$$
 \zeta_s=(I+sIZ)/4,\qquad
 U^\dagger\zeta_sU=\tau_s.
-\]
+$$
 
 ζ 的正负原来只看 B 即可区分；固定解码后变成实局部操作加通信完全无法区分的 τ 态对。
 

@@ -16,23 +16,23 @@
 
 令 `J=−iY`，它是实二维半圈生成矩阵。比较两个通道：
 
-\[
+$$
 \mathcal D_R(\rho)=\frac{1+\alpha}{2}\rho+
 \frac{1-\alpha}{2}J\rho J^T,
-\]
+$$
 
-\[
+$$
 \mathcal D_I(\rho)=\frac{1+3\alpha}{4}\rho+
 \frac{1-\alpha}{4}(X\rho X+J\rho J^T+Z\rho Z).
-\]
+$$
 
 每一项都有实 Kraus 矩阵，且权重非负、总和为 1。第二个通道就是第 46 轮各向同性扩展的实 Kraus 表示；把单个 Kraus 矩阵乘整体相位，不改变通道。
 
 两者都满足
 
-\[
+$$
 I\mapsto I,\quad X\mapsto\alpha X,\quad Z\mapsto\alpha Z.
-\]
+$$
 
 它们在整个实单系统矩阵空间上相同。因此插入任意局部旋转、读取、条件分支和经典控制，都不可能区分两者。第 46 轮完整 fresh 仪器中的两个扩展也逐分支相同，故这一等价包含全部局部自适应记录，而不只是一次平均输出。
 
@@ -40,22 +40,22 @@ I\mapsto I,\quad X\mapsto\alpha X,\quad Z\mapsto\alpha Z.
 
 将它们各自作用于第 47 轮已经可准备的 `ρ₊=(I₄+YY)/4` 的第一边，得到
 
-\[
+$$
 (\mathcal D_R\otimes\mathrm{id})(\rho_+)=\frac{I_4+YY}{4},\qquad
 (\mathcal D_I\otimes\mathrm{id})(\rho_+)=\frac{I_4+\alpha YY}{4}.
-\]
+$$
 
 再执行同一个 `U=exp(−iπYX/4)`，读取第二边 Z，正结果概率分别为
 
-\[
+$$
 \frac{1+\alpha}{2},\qquad\frac{1+\alpha^2}{2}.
-\]
+$$
 
 可读的总变差差距为
 
-\[
+$$
 \boxed{\frac{\alpha(1-\alpha)}2\approx0.00513816607>\frac1{200}.}
-\]
+$$
 
 严格下界由 100 位整数区间认证。这不是新物理实验，而是两个已明确候选操作在同一允许协议中的可区分预测。
 
@@ -71,27 +71,27 @@ I\mapsto I,\quad X\mapsto\alpha X,\quad Z\mapsto\alpha Z.
 
 对任意实 2×2 矩阵 K，直接展开得到
 
-\[
+$$
 \boxed{KJK^T=(\det K)J.}
-\]
+$$
 
 所以对任意实 Kraus 操作
 
-\[
+$$
 \Phi(M)=\sum_jK_jMK_j^T
-\]
+$$
 
 都有
 
-\[
+$$
 \boxed{\Phi(Y)=\kappa_\Phi Y,\qquad\kappa_\Phi=\sum_j\det K_j.}
-\]
+$$
 
 实对称输入仍映到实对称输出，实反对称输入仍映到实反对称输出；后二者的空间在二维只有一个方向。因此，在按 `(I,X,Z,Y)` 排列的矩阵基底上，操作恰好具有分块形式
 
-\[
+$$
 \widehat\Phi=\begin{pmatrix}B_\Phi&0\\0&\kappa_\Phi\end{pmatrix}.
-\]
+$$
 
 B 是原三个齐次状态坐标的线性作用，κ 是剩下的一个数。虽然求和公式使用 Kraus 矩阵，κ 也由 `Φ(Y)` 唯一确定，因此不依赖 Kraus 表示的选取。
 
@@ -103,23 +103,23 @@ B 是原三个齐次状态坐标的线性作用，κ 是剩下的一个数。虽
 
 对于一般选择性操作 Φ，作用于 ρ₊ 第一边后，不归一化地保存操作是否发生及最终 ± 读数。前述 YY 读取满足
 
-\[
+$$
 p_+-p_-=\alpha\kappa_\Phi.
-\]
+$$
 
 不先按成功条件归一化，便可直接估计 κ。若先归一化，还需保留分支总概率才能恢复它。
 
 顺序执行与经典混合的规则分别为
 
-\[
+$$
 B_{\Psi\circ\Phi}=B_\Psi B_\Phi,\quad
 \kappa_{\Psi\circ\Phi}=\kappa_\Psi\kappa_\Phi,
-\]
+$$
 
-\[
+$$
 B_{p\Phi+(1-p)\Psi}=pB_\Phi+(1-p)B_\Psi,\quad
 \kappa_{p\Phi+(1-p)\Psi}=p\kappa_\Phi+(1-p)\kappa_\Psi.
-\]
+$$
 
 κ 描述本地操作对联合相关方向的影响；它不是本地密度矩阵多出的一维。完整操作描述和单独可准备状态的描述可以有不同的信息要求。
 

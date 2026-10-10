@@ -28,26 +28,36 @@
 
 采用Hermitian $T_a=\lambda_a/2$，$2\operatorname{Tr}T_aT_b=\delta_{ab}$，其中前三个构成闭合SU(2)：
 
-$$[T_i,T_j]=i\epsilon_{ijk}T_k,\qquad i,j,k\in\{1,2,3\}.$$
+$$
+[T_i,T_j]=i\epsilon_{ijk}T_k,\qquad i,j,k\in\{1,2,3\}.
+$$
 
 在空间平坦环面 $T^3$ 上取
 
-$$ds^2=a(\eta)^2(-d\eta^2+d\mathbf x^2),\qquad
-A_0=0,\quad A_i=f(\eta)T_i.$$
+$$
+ds^2=a(\eta)^2(-d\eta^2+d\mathbf x^2),\qquad
+A_0=0,\quad A_i=f(\eta)T_i.
+$$
 
 恒定空间分量是合法周期连接。环面仅需局部平坦FLRW几何及各向同性应力，不要求其有全局连续SO(3)旋转群。此处SU(2)是既有SU(3)的子代数，不增加新的宇宙规范群。
 
 直接从曲率计算
 
-$$F_{0i}=f'T_i,\qquad F_{ij}=g f^2\epsilon_{ijk}T_k.$$
+$$
+F_{0i}=f'T_i,\qquad F_{ij}=g f^2\epsilon_{ijk}T_k.
+$$
 
 完整色方程为 $D_\mu(\sqrt{-g}\,F^{\mu\nu})=0$。四维共形因子相消；$\nu=0$给Gauss，逐方向 $[fT_i,f'T_i]=0$，故Gauss精确成立。空间分量给
 
-$$D_\mu F^{\mu i}=a^{-4}(-f''-2g^2f^3)T_i.$$
+$$
+D_\mu F^{\mu i}=a^{-4}(-f''-2g^2f^3)T_i.
+$$
 
 因前三个生成元闭合，余下五个色分量同样满足其方程；不是只对约化作用变分后忽略它们。于是
 
-$$f''+2g^2f^3=0.\tag{1}$$
+$$
+f''+2g^2f^3=0.\tag{1}
+$$
 
 全部其它原字段按如下选择：
 
@@ -64,32 +74,44 @@ $$f''+2g^2f^3=0.\tag{1}$$
 
 由完整Hilbert张量
 
-$$T_{\mu\nu}=2\operatorname{Tr}(F_{\mu\alpha}F_\nu{}^\alpha)
--\frac14g_{\mu\nu}\,2\operatorname{Tr}(F_{\alpha\beta}F^{\alpha\beta})$$
+$$
+T_{\mu\nu}=2\operatorname{Tr}(F_{\mu\alpha}F_\nu{}^\alpha)
+-\frac14g_{\mu\nu}\,2\operatorname{Tr}(F_{\alpha\beta}F^{\alpha\beta})
+$$
 
 得到零动量来源与
 
-$$\rho_{\rm YM}=\frac{3}{2a^4}(f'^2+g^2f^4),\qquad
-P_{\rm YM}=\frac{\rho_{\rm YM}}3.\tag{2}$$
+$$
+\rho_{\rm YM}=\frac{3}{2a^4}(f'^2+g^2f^4),\qquad
+P_{\rm YM}=\frac{\rho_{\rm YM}}3.\tag{2}
+$$
 
 取所有g相同的canonical初值
 
-$$f(0)=0,\quad f'(0)=p>0,\quad a(0)=a_0>0.$$
+$$
+f(0)=0,\quad f'(0)=p>0,\quad a(0)=a_0>0.
+$$
 
 式(1)给精确第一积分
 
-$$f'^2+g^2f^4=p^2.\tag{3}$$
+$$
+f'^2+g^2f^4=p^2.\tag{3}
+$$
 
 因此对全族，同一非零应力与其完整历史均为 $\rho_{\rm YM}=3p^2/(2a^4)$。固定势真空常数 $V_0$ 仍计入总来源 $T^{\rm total}=T^{\rm YM}-V_0g$；令 $\Lambda_{\rm eff}=\Lambda+V_0/M_P^2$，Einstein方程化为
 
-$$a'^2=\frac{p^2}{2M_P^2}+\frac{\Lambda_{\rm eff}}3a^4,
-\qquad a''=\frac{2\Lambda_{\rm eff}}3a^3.\tag{4}$$
+$$
+a'^2=\frac{p^2}{2M_P^2}+\frac{\Lambda_{\rm eff}}3a^4,
+\qquad a''=\frac{2\Lambda_{\rm eff}}3a^3.\tag{4}
+$$
 
-在同一正a、非零a′的正规局部膨胀窗内，固定同分支后解唯一且完全独立于g；一般Λ只签收这一共同正规窗，不假设覆盖任意长时间。\(\rho'+4(a'/a)\rho=0\) 与完整应力守恒一致，非平直几何不是外给不反冲背景。
+在同一正a、非零a′的正规局部膨胀窗内，固定同分支后解唯一且完全独立于g；一般Λ只签收这一共同正规窗，不假设覆盖任意长时间。$\rho'+4(a'/a)\rho=0$ 与完整应力守恒一致，非平直几何不是外给不反冲背景。
 
 实际有限校准取 $p=1,M_P^2=2,a_0=1,\Lambda=V_0=0$，故
 
-$$a(\eta)=1+\eta/2,\qquad \tau(\eta)=\eta+\eta^2/4.$$
+$$
+a(\eta)=1+\eta/2,\qquad \tau(\eta)=\eta+\eta^2/4.
+$$
 
 在 $T=1/4$ 时 $a=9/8,\tau=17/64$，全族相同。这个数值选择不解释现实宇宙常数；其它参数和单位同样固定。
 
@@ -97,15 +119,19 @@ $$a(\eta)=1+\eta/2,\qquad \tau(\eta)=\eta+\eta^2/4.$$
 
 记电／磁能比例
 
-$$M_g(\eta)=\frac{\rho_B}{\rho_{
+$$
+M_g(\eta)=\frac{\rho_B}{\rho_{
 \rm YM}}=\frac{g^2f_g(\eta)^4}{p^2},\qquad
-1-M_g=\frac{f_g'(\eta)^2}{p^2}.\tag{5}$$
+1-M_g=\frac{f_g'(\eta)^2}{p^2}.\tag{5}
+$$
 
 它属于[0,1]，但本轮没有把它称作已经实现的量子概率效果。其内部规范不变性直接来自迹；还可写为
 
-$$M_g=\frac12\left[1+
+$$
+M_g=\frac12\left[1+
 \frac{F^a_{\mu\nu}F_a^{\mu\nu}}{4\rho_{
-\rm YM}}\right].\tag{6}$$
+\rm YM}}\right].\tag{6}
+$$
 
 YM应力具有唯一未来类时本征方向（时间取向已给），其正本征能源为ρ。故式(6)是几何标量。在共同膨胀分支，ρ严格下降，可以在**同一ρ切片**比较；或者用上节完全相同的proper时间。不把任意坐标η重标导致的差算作物理差。
 
@@ -117,21 +143,29 @@ YM应力具有唯一未来类时本征方向（时间取向已给），其正本
 
 在 $g^2p^2T^4\le1$ 的区间，初始 $f'>0$，由式(1)及首次失效反证可闭合
 
-$$0\le f\le p\eta,\qquad
-f'\ge p-\frac{g^2p^3\eta^4}{2}\ge p/2,$$
+$$
+0\le f\le p\eta,\qquad
+f'\ge p-\frac{g^2p^3\eta^4}{2}\ge p/2,
+$$
 
-$$f\ge p\eta-\frac{g^2p^3\eta^5}{10}.\tag{7}$$
+$$
+f\ge p\eta-\frac{g^2p^3\eta^5}{10}.\tag{7}
+$$
 
 具体是：在首次 $f'=0$ 之前，$f''\le0$ 给 $f'\le p$，继而 $f\le p\eta$；两次积分给上述正下界，排除首次失效。没有靠时间网格外推单调性。
 
 取 $p=1,T=1/4,g_1=1,g_2=2$，则
 
-$$M_1(T)\le\frac1{256},\qquad
-M_2(T)\ge\frac1{64}\left(\frac{639}{640}\right)^4.$$
+$$
+M_1(T)\le\frac1{256},\qquad
+M_2(T)\ge\frac1{64}\left(\frac{639}{640}\right)^4.
+$$
 
 利用 $(1-z)^4\ge1-4z$，得到
 
-$$\boxed{M_2(T)-M_1(T)\ge\frac{119}{10240}>0.}\tag{8}$$
+$$
+\boxed{M_2(T)-M_1(T)\ge\frac{119}{10240}>0.}\tag{8}
+$$
 
 这是同一有限终点、同一动态来源及几何之下的精确经典差；RK积分只作交叉，不能成为式(8)的证明。
 
@@ -139,17 +173,23 @@ $$\boxed{M_2(T)-M_1(T)\ge\frac{119}{10240}>0.}\tag{8}$$
 
 令 $y''+2y^3=0,y(0)=0,y'(0)=1$。由常微分方程唯一性，
 
-$$f_g(\eta)=\sqrt{p/g}\ y(x),\quad x=\sqrt{pg}\,\eta,
-\qquad M_g=y(x)^4.$$
+$$
+f_g(\eta)=\sqrt{p/g}\ y(x),\quad x=\sqrt{pg}\,\eta,
+\qquad M_g=y(x)^4.
+$$
 
 所以
 
-$$\partial_g M_g=\frac{2xy^3y'}g>0.\tag{9}$$
+$$
+\partial_g M_g=\frac{2xy^3y'}g>0.\tag{9}
+$$
 
 在 $p=1,\eta=T=1/4,1\le g\le2$，$x^4\le1/64$，式(7)给
 
-$$\boxed{\frac{80899}{10485760}\le\partial_gM_g(T)
-\le\frac1{64}.}\tag{10}$$
+$$
+\boxed{\frac{80899}{10485760}\le\partial_gM_g(T)
+\le\frac1{64}.}\tag{10}
+$$
 
 下界来自 $2x^4/g\ge1/128$、$(1-1/640)^3\ge637/640$ 及 $1-1/128=127/128$。上界由 $y\le x,y'\le1$ 得到；同一上界也覆盖全部 $0\le\eta\le T$。
 
@@ -159,14 +199,18 @@ $$\boxed{\frac{80899}{10485760}\le\partial_gM_g(T)
 
 若要把式(8)运输到其它有效描述的实际预测 $\widetilde M_i$，必须**另有**
 
-$$|\widetilde M_i-M_i|\le\varepsilon_i,
-\qquad\varepsilon_1+\varepsilon_2<119/10240.$$
+$$
+|\widetilde M_i-M_i|\le\varepsilon_i,
+\qquad\varepsilon_1+\varepsilon_2<119/10240.
+$$
 
 才可结论 $|\widetilde M_2-\widetilde M_1|\ge119/10240-\varepsilon_1-\varepsilon_2>0$。代码用 $\varepsilon_i=1/1024$ 给纯条件性的 $99/10240$ 余量，没有计算真实量子／高阶误差，也没认证实际仪器。
 
 对有限组已明示任务约束 $F_j(g)\le b_j$，若基准点有严格余量 $m_j=b_j-F_j(g_0)>0$，并**已证**所用共同域内
 
-$$|F_j(g)-F_j(g_0)|\le L_j|g-g_0|,$$
+$$
+|F_j(g)-F_j(g_0)|\le L_j|g-g_0|,
+$$
 
 则取 $|g-g_0|\le\min_jm_j/(2L_j)$（常量约束不限制半径），各约束至少保一半余量。这里只给声明任务的运输工具，不给尚未构造的全QFT自动颁发连续性。
 

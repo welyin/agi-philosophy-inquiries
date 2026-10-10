@@ -1,0 +1,127 @@
+{
+  "status": "PASS",
+  "script_sha256": "2144e1687099b005d945fdad30d1b8f4151807403aa7a2ae3c53c32700537b08",
+  "checks_total": 7380,
+  "checks_by_group": {
+    "segment_endpoints": 290,
+    "sphere_and_cap": 2610,
+    "fixed_origin": 1305,
+    "dyadic_join": 1305,
+    "dyadic_values": 1305,
+    "homotopy_endpoints": 290,
+    "strict_cost": 144,
+    "descent_identity": 6,
+    "nonhalf": 1,
+    "nonhalf_formula": 1,
+    "finite_iteration_witness": 1,
+    "proper_rotation": 30,
+    "isometry": 72,
+    "stabilizer": 1,
+    "non_normal_stabilizer": 1,
+    "orbit_rank": 1,
+    "torus_exact_shift": 5,
+    "torus_winding": 8,
+    "tail_loop": 4
+  },
+  "max_numerical_identity_residual": 2.5438405243138006e-16,
+  "residuals_by_group": {
+    "segment_endpoints": 2.5438405243138006e-16,
+    "sphere_and_cap": 2.220446049250313e-16,
+    "fixed_origin": 0.0,
+    "dyadic_join": 2.5438405243138006e-16,
+    "dyadic_values": 2.5438405243138006e-16,
+    "homotopy_endpoints": 2.5438405243138006e-16,
+    "nonhalf_formula": 1.1102230246251565e-16,
+    "proper_rotation": 0.0,
+    "isometry": 2.220446049250313e-16,
+    "stabilizer": 0.0,
+    "torus_winding": 0.0
+  },
+  "sphere_cap": {
+    "step_mixture_lambda": "1/3",
+    "cap_z_min": "1/2",
+    "cost": "1-z",
+    "sample_points": 145,
+    "edge_angle": 1.0471975511965979,
+    "edge_after_step": 0.7137243789447657,
+    "geodesic_half_defect": 0.19012560334646678,
+    "sample_max_distance_after_n": {
+      "0": 0.9999999999999999,
+      "1": 0.6986716739378311,
+      "2": 0.47589398942569744,
+      "4": 0.21448936688388773,
+      "8": 0.04250976330080936,
+      "16": 0.0016588892690470002,
+      "24": 6.472728858297988e-05
+    },
+    "conjugated_stabilizer_displacement": 0.9999999999999999,
+    "group_dimension": 3,
+    "orbit_dimension": 2,
+    "stabilizer_dimension": 1
+  },
+  "old_round425_torus": {
+    "cost_formula": "sum_{j>=1} 2^-j dist(theta_j,Z)",
+    "exact_shift_rows": [
+      {
+        "support_length": 0,
+        "before": "0",
+        "after": "0"
+      },
+      {
+        "support_length": 1,
+        "before": "1/4",
+        "after": "1/8"
+      },
+      {
+        "support_length": 2,
+        "before": "5/24",
+        "after": "5/48"
+      },
+      {
+        "support_length": 13,
+        "before": "1935/8192",
+        "after": "1935/16384"
+      },
+      {
+        "support_length": 17,
+        "before": "47/5242880",
+        "after": "47/10485760"
+      }
+    ],
+    "tail_loop_degrees": [
+      {
+        "fixed_prefix": 1,
+        "tail_coordinate": 4,
+        "degree_before": 1.0,
+        "degree_after": 0.0
+      },
+      {
+        "fixed_prefix": 4,
+        "tail_coordinate": 7,
+        "degree_before": 1.0,
+        "degree_after": 0.0
+      },
+      {
+        "fixed_prefix": 12,
+        "tail_coordinate": 15,
+        "degree_before": 1.0,
+        "degree_after": 0.0
+      },
+      {
+        "fixed_prefix": 32,
+        "tail_coordinate": 35,
+        "degree_before": 1.0,
+        "degree_after": 0.0
+      }
+    ]
+  },
+  "scope": [
+    "Sphere samples validate formulas, not universal convergence.",
+    "Compactness plus strict continuous Lyapunov decrease analytically supplies uniform convergence.",
+    "A single jointly continuous segment B(x,t):x->R(x) fixes o; dyadic joins define a limiting contraction.",
+    "Finite-support torus cost checks reuse round 425; the new boundary is the degree obstruction to B.",
+    "Infinite torus noncontractibility and absence of B are analytic, not finite-dimensional inference.",
+    "The contraction is a mathematical limit; no finite total implementation cost is asserted.",
+    "This bridge allows space dimension two; it does not select physical dimension three."
+  ]
+}

@@ -6,18 +6,18 @@
 
 对固定的仿射隐藏角编码
 
-\[
+$$
 F_z(x)=\frac{w+(u/\alpha)\cos x+(v/\alpha)\sin x}{2\pi},
 \qquad \sqrt{u^2+v^2}\le\alpha w,
-\]
+$$
 
 完整正更新核存在，当且仅当一个明确的内圆分布小于均匀单位圆分布的**凸序**。凸序指所有凸函数在前者上的平均不超过后者；它比仅比较协方差更强。
 
 本轮先证明这一等价，再用一个绝对值函数取得必要条件
 
-\[
+$$
 \boxed{\alpha\big[\sqrt{1-\eta^2}+\eta\arcsin\eta\big]\le1.}
-\]
+$$
 
 其等号正根约为 0.144739232095。此处排除仅针对固定 F 编码；推广到其他准备非情境编码需要独立证明，见接续的第三十轮。
 
@@ -25,30 +25,30 @@ F_z(x)=\frac{w+(u/\alpha)\cos x+(v/\alpha)\sin x}{2\pi},
 
 记 n_x=(cos x,sin x)，先令读取方向 θ=0。对结果 s=±1，定义
 
-\[
+$$
 q=\sqrt{1-\eta^2},\quad
 f_s(y)=\frac{1+s\eta\cos y}{2},\quad
 n_{\psi_s(y)}=\frac{(\cos y+s\eta,\ q\sin y)}{1+s\eta\cos y}.
-\]
+$$
 
 原 fresh 矩阵为
 
-\[
+$$
 A_sz=\frac12(w+s\eta u,\ \alpha u+s\alpha\eta w,\ \alpha qv).
-\]
+$$
 
 直接展开整个输出密度，得到
 
-\[
+$$
 F_{A_sz}(y)=\frac{f_s(y)}{2\pi}
 [w+u\cos\psi_s(y)+v\sin\psi_s(y)].
-\]
+$$
 
 设输入为均匀隐藏角，构造联合测度
 
-\[
+$$
 J_s(dx,dy)=\frac{dx}{2\pi}K_s(dy\mid x).
-\]
+$$
 
 比较 w、u、v 的系数，核归一化及 K_sF_z=F_{A_sz} 等价于：
 
@@ -62,37 +62,37 @@ J_s(dx,dy)=\frac{dx}{2\pi}K_s(dy\mid x).
 
 第二十六轮的换元计算给出：上述输出边缘经 (s,y)↦ψ_s(y) 推送后，角密度为
 
-\[
+$$
 R_\eta(\psi)=\frac{q^3}{2}
 \left[(1-\eta\cos\psi)^{-2}+(1+\eta\cos\psi)^{-2}\right].
-\]
+$$
 
 R 平均为 1，且 π 周期，所以相应向量均值为零。令
 
-\[
+$$
 X=n_x\sim\sigma,\qquad
 Y=\alpha n_\psi\sim\nu_\eta,\qquad
 \nu_\eta(d\psi)=R_\eta(\psi)\frac{d\psi}{2\pi},
-\]
+$$
 
 其中 σ 是均匀单位圆分布。上一节条件要求存在 E[X|Y]=Y 的耦合。
 
 反方向也成立。若有该耦合，先给定 Y 抽取 X，再按既定输出边缘的条件分布抽取 (s,y)，两者在给定 Y 后独立。由于 α>0，Y 唯一确定圆上的 ψ。更明确地，令
 
-\[
+$$
 b_s(\psi)=\frac{q^3}{2(1-s\eta\cos\psi)^2},\qquad
 T_s(\psi)=\operatorname{atan2}(q\sin\psi,\cos\psi-s\eta),
-\]
+$$
 
 则以 b_s(ψ)/R(ψ) 选择 s，再令 y=T_s(ψ)。这恢复指定的 (s,y) 边缘及条件均值。最后给定 x 分解联合测度，得到正核 K_s。圆和有限结果集合都是标准 Borel 空间，因此这里的条件概率分解适用。
 
 由 Strassen 鞅耦合定理，
 
-\[
+$$
 \boxed{\exists\,K_s\text{ 完整保持 }F_z
 \iff\exists\,\operatorname{Law}(Y,X):E[X|Y]=Y
 \iff\nu_\eta\le_{\rm cx}\sigma.}
-\]
+$$
 
 使用的是 Leskelä–Vihola 对该定理的陈述，定理 1.1、1.2；两边支撑有界，有限一阶矩条件满足。若一个强度区间内逐点满足凸序，该文定理 1.3 还给出随参数可测的耦合选择。其他读取方向可直接旋转构造。[原文：Conditional convex orders and measurable martingale couplings](https://arxiv.org/pdf/1404.0999)。
 
@@ -102,7 +102,7 @@ T_s(\psi)=\operatorname{atan2}(q\sin\psi,\cos\psi-s\eta),
 
 取 φ(v)=|v_x|，利用输出换元：
 
-\[
+$$
 \begin{aligned}
 E_{\nu_\eta}|Y_x|
 &=\alpha\int\sum_s f_s(y)|\cos\psi_s(y)|\frac{dy}{2\pi}\\
@@ -110,7 +110,7 @@ E_{\nu_\eta}|Y_x|
 &=\frac{2\alpha}{\pi}G(\eta),\\
 G(\eta)&=\sqrt{1-\eta^2}+\eta\arcsin\eta.
 \end{aligned}
-\]
+$$
 
 单位圆的对应平均为 2/π，于是 αG(η)≤1。G(0)=1，G′(η)=arcsin η>0，因此等号在 (0,1) 中有唯一正根 η_B。
 
@@ -118,10 +118,10 @@ G(\eta)&=\sqrt{1-\eta^2}+\eta\arcsin\eta.
 
 作为对照，二次函数 φ(v)=v_x² 只要求
 
-\[
+$$
 \frac{\alpha^2}{2}(1+c_1)\le\frac12,\quad
 c_1=t^2(1+2q),\quad t=\frac{\eta}{1+q}.
-\]
+$$
 
 在 η=0.15，它给出约 0.49796418≤0.5，仍然通过；绝对值测试却给出约 0.63710999>2/π，已经排除固定编码的核。因此仅解低阶矩的正性问题仍会漏掉障碍。
 

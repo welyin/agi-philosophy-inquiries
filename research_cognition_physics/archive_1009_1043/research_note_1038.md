@@ -6,7 +6,9 @@
 
 **同一个方向qubit不能在任意运动参考之间独立运输，即使另外保存完整动量边缘，也可能丢掉决定读数的关联。** 在明确采用的有质量、自旋1/2、正能自由单粒子表示中，本轮给正常有限能波包：两个输入的spin边缘和完整动量边缘完全相同，换到同一惯性参考后，指定方向效果的概率差仍至少
 
-$$\boxed{783/1700>0.46.}$$
+$$
+\boxed{783/1700>0.46.}
+$$
 
 因此，仅据这两个边缘预测，至少一份输入的误差不小于783/3400。保留动量分辨的条件spin资料可准确比较此菜单；有限分箱另有保任意旧参考的误差界。完整联合过程没有矛盾。
 
@@ -40,7 +42,9 @@ $$
 
 U_Aψ(Λp)=W(A,p)ψ(p)是酉变换，且
 
-$$W(A_2A_1,p)=W(A_2,\Lambda_1p)W(A_1,p).\tag{2}$$
+$$
+W(A_2A_1,p)=W(A_2,\Lambda_1p)W(A_1,p).\tag{2}
+$$
 
 无需为方向另拟独立旋转规则。纯旋转的W与p无关；一般boost随p变化。[Polyzou—Glöckle—Witała，§4、5.1](https://arxiv.org/html/1208.5840)提供成熟canonical-spin表示；[Peres—Scudo—Terno，式(9)及后文](https://arxiv.org/html/quant-ph/0203033)已有约化spin非自主协变结论，不作为本项目发现。
 
@@ -58,8 +62,10 @@ $$
 
 在给定动量域上允许全部正常联合态时，存在仅依赖spin边缘的固定预测映射，满足
 
-$$\operatorname{Tr}_p(U_A\rho U_A^\dagger)
-=T(\operatorname{Tr}_p\rho)\quad(\forall\rho),\tag{4}$$
+$$
+\operatorname{Tr}_p(U_A\rho U_A^\dagger)
+=T(\operatorname{Tr}_p\rho)\quad(\forall\rho),\tag{4}
+$$
 
 **当且仅当Ad_W(p)几乎处处相同。** 必要性不要求T线性：对|f><f|⊗τ，左侧是∫|f|²Ad_W(τ)dμ。其对所有f相同，迫使积分核几乎处处恒定；用张成Herm(2)的有限组τ完成证明。充分性给同一酉CPTP通道。
 
@@ -69,7 +75,9 @@ $$\operatorname{Tr}_p(U_A\rho U_A^\dagger)
 
 取m=1、x向boost ξ=ln3，动量中心p±=(0,0,±4/3)。中心处
 
-$$W_\pm=(4I\mp i\sigma_y)/\sqrt{17}.\tag{5}$$
+$$
+W_\pm=(4I\mp i\sigma_y)/\sqrt{17}.\tag{5}
+$$
 
 取任意归一C∞波包f+支持在p+半径ε=1/100的动量球中，f−(p)=f+(−p)。具体紧支指数轮廓见解析稿§4。比较
 
@@ -95,13 +103,17 @@ $$
 
 正常态限制到动量对角代数后由可积正矩阵Fρ(p)表示。任意boost方向报告为
 
-$$\int d\mu\,\operatorname{tr}[F_\rho(p)W(A,p)^\dagger E W(A,p)].\tag{8}$$
+$$
+\int d\mu\,\operatorname{tr}[F_\rho(p)W(A,p)^\dagger E W(A,p)].\tag{8}
+$$
 
 因此保Fρ足以正确运输本菜单；只存其迹与积分两个边缘不够。不同动量之间的相干不被这份菜单看到，但可能影响位置、局域交互或其它后继任务，不能从完整态删除。
 
 若另要求忠实保所有这些效果**生成的von Neumann代数**，则
 
-$$\mathcal M=L^\infty(\mathbb R^3,d\mu)\bar\otimes M_2.\tag{9}$$
+$$
+\mathcal M=L^\infty(\mathbb R^3,d\mu)\bar\otimes M_2.\tag{9}
+$$
 
 证明要点：各效果都是乘法矩阵，常Pauli在其中；第i轴boost在零点的算子范数导数为D_i=Σ_{j≠i}v_jσ_j。于是{σ_j,D_i}/2=v_jI。p↔v是Borel双射，三个v_j的联合谱演算生成全部动量乘法函数；再乘Pauli完成式(9)。
 
@@ -111,7 +123,9 @@ $$\mathcal M=L^\infty(\mathbb R^3,d\mu)\bar\otimes M_2.\tag{9}$$
 
 给有限动量箱、代表p_k，域内|p−p_k|≤r，保联合矩阵F_k=∫BkFρ并对尾箱保迹。若尾权重≤η，则
 
-$$\tfrac12\|\tau_A-\widehat\tau_A\|_1\le L_{m,\xi}r+\eta.\tag{10}$$
+$$
+\tfrac12\|\tau_A-\widehat\tau_A\|_1\le L_{m,\xi}r+\eta.\tag{10}
+$$
 
 将旧参考腿一起保留时，同界有效。有限任务因此不必先取得无限精度动量记录。真实分箱仪器、参考准备与资源代价仍需另接；本文没有优化它们。
 

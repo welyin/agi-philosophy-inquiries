@@ -20,11 +20,15 @@
 
 固定 $G_p=\widetilde G/\Gamma_p$，$\widetilde G=SU(3)\times SU(2)\times U(1)$，$p=1,2,3,6$，$\Gamma_p=\langle z^{6/p}\rangle$，
 
-$$z=(e^{2\pi i/3}I_3,-I_2,e^{i\pi/3}),\qquad q=6Y\in\mathbb Z.$$
+$$
+z=(e^{2\pi i/3}I_3,-I_2,e^{i\pi/3}),\qquad q=6Y\in\mathbb Z.
+$$
 
 采用既有独立spin结构。不可约表示记 $R_{a,b,n,q}$，a、b为颜色最高权，$n=2j$。其下降条件是
 
-$$2(a+2b)+3n+q\equiv0\pmod p.\tag{1}$$
+$$
+2(a+2b)+3n+q\equiv0\pmod p.\tag{1}
+$$
 
 **E_alg：** 所有允许的有限维不可约表示，都出现在所列材料及反材料的某个有限张量词中，允许取不变子表示。
 
@@ -42,11 +46,15 @@ $$2(a+2b)+3n+q\equiv0\pmod p.\tag{1}$$
 
 先取 $a$ 份D、$b$ 份Dbar、$n$ 份H。最高权张量产生(a,b,n)，总荷
 
-$$q_0=-2a+2b+3n.$$
+$$
+q_0=-2a+2b+3n.
+$$
 
 式(1)保证 $k=(q-q_0)/6$ 为整数；再补 $|k|$ 份相应符号的E即可。每个目标都有长度至多 $a+b+n+|k|$ 的构造，因此
 
-$$\boxed{\text{固定SM菜单下的E_alg}\ \Longleftrightarrow\ p=6.}\tag{2}$$
+$$
+\boxed{\text{固定SM菜单下的E_alg}\ \Longleftrightarrow\ p=6.}\tag{2}
+$$
 
 这一构造也与成熟的忠实表示张量生成定理一致，见[Harlow–Ooguri，Theorem A.11](https://arxiv.org/html/1810.05338)。完整证明见[推导](1032/drafts/electric_completion_derivation.md)。
 

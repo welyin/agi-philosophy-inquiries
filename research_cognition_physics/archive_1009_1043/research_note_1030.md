@@ -6,7 +6,9 @@
 
 对于正确归一的物理通道，完整散射的概率守恒限制其观测子块。若Hermitian领先部分波为K，完整复振幅A满足独立误差界 $\|A-K\|\le\delta$，则必须有
 
-$$\boxed{\quad \|K\|\le\sqrt{\delta(1+\delta)}.\quad}\tag{1}$$
+$$
+\boxed{\quad \|K\|\le\sqrt{\delta(1+\delta)}.\quad}\tag{1}
+$$
 
 这个界来自K到所有合法压缩散射矩阵的**精确最小距离**。它能发现分别检查两个弹性通道看不到的混合问题。应用于声明的Higgs有效描述后，有限能窗通常给一个连续耦合区域，不迫使参数精确等于标准模型。
 
@@ -31,9 +33,11 @@ $$\boxed{\quad \|K\|\le\sqrt{\delta(1+\delta)}.\quad}\tag{1}$$
 
 采用custodial三Goldstone加一个径向标量的两导数Higgs有效描述，工作在 $F(h)>0$ 的局部场域：
 
-$$\mathcal L_2=\frac12\partial h\cdot\partial h+
+$$
+\mathcal L_2=\frac12\partial h\cdot\partial h+
 \frac{v^2}{4}F(h)\operatorname{Tr}(\partial U^\dagger\partial U),\qquad
-F(h)=1+2a\frac h v+b\frac{h^2}{v^2}+O(h^3/v^3).\tag{2}$$
+F(h)=1+2a\frac h v+b\frac{h^2}{v^2}+O(h^3/v^3).\tag{2}
+$$
 
 这里用惯常正时间动能记号，$v>0$；完整时空符号可以一致转换。字段、对称类、真空邻域及领先导数级别仍是物理采用。势、规范连接、质量和其它部门在真实映射中的影响须计入第2节预算，而不是声称它们不存在。
 
@@ -41,14 +45,18 @@ F(h)=1+2a\frac h v+b\frac{h^2}{v^2}+O(h^3/v^3).\tag{2}$$
 
 记 $x=1-a^2,\ y=a^2-b$。质量忽略的领先幅具有
 
-$$\mathcal A(\omega\omega\to\omega\omega)=\frac{x}{v^2}
+$$
+\mathcal A(\omega\omega\to\omega\omega)=\frac{x}{v^2}
 \bigl(s\delta_{ab}\delta_{cd}+t_{\rm M}\delta_{ac}\delta_{bd}+u_{\rm M}\delta_{ad}\delta_{bc}\bigr),
-\quad \mathcal A(\omega^a\omega^b\to hh)=\delta_{ab}\frac{ys}{v^2}.\tag{3}$$
+\quad \mathcal A(\omega^a\omega^b\to hh)=\delta_{ab}\frac{ys}{v^2}.\tag{3}
+$$
 
 此处 $t_{\rm M},u_{\rm M}$ 是Mandelstam变量。custodial singlet的弹性组合是 $2xs/v^2$，混合组合是 $\sqrt3ys/v^2$。用 $1/(64\pi)$ 的 $J=0$ 投影得到
 
-$$K(s)=\tau(s)\begin{pmatrix}x&\sqrt3y/2\\\sqrt3y/2&0\end{pmatrix},
-\qquad\tau(s)=\frac{s}{16\pi v^2}.\tag{4}$$
+$$
+K(s)=\tau(s)\begin{pmatrix}x&\sqrt3y/2\\\sqrt3y/2&0\end{pmatrix},
+\qquad\tau(s)=\frac{s}{16\pi v^2}.\tag{4}
+$$
 
 hh对角在两导数领先s阶为零，不表示完整hh散射为零。公式和归一核对[Delgado–Dobado–Llanes-Estrada，§II.2、附录A.3](https://arxiv.org/html/1502.04841)；本轮使用其成熟领先映射，未采用某一种幺正化或共振预测作为物理真理。
 
@@ -56,17 +64,23 @@ hh对角在两导数领先s阶为零，不表示完整hh散射为零。公式和
 
 令K为任意有限维Hermitian矩阵，$\rho=\|K\|$。对任意合法压缩C，有
 
-$$2\|A-K\|=\|C-(I+2iK)\|
-\ge\|I+2iK\|-1=\sqrt{1+4\rho^2}-1.\tag{5}$$
+$$
+2\|A-K\|=\|C-(I+2iK)\|
+\ge\|I+2iK\|-1=\sqrt{1+4\rho^2}-1.\tag{5}
+$$
 
 最后一步用K可酉对角化。下界可达到：
 
-$$C_*=(I+2iK)(I+4K^2)^{-1/2},\qquad A_*=(C_*-I)/(2i).\tag{6}$$
+$$
+C_*=(I+2iK)(I+4K^2)^{-1/2},\qquad A_*=(C_*-I)/(2i).\tag{6}
+$$
 
 $C_*$ 为酉矩阵。沿K的本征方向，它把 $1+2ik$ 除以其模；与原值之差的模为 $\sqrt{1+4k^2}-1$。因此
 
-$$\inf_{\|I+2iA\|\le1}\|A-K\|
-=d(K):=\frac{\sqrt{1+4\|K\|^2}-1}{2}.\tag{7}$$
+$$
+\inf_{\|I+2iA\|\le1}\|A-K\|
+=d(K):=\frac{\sqrt{1+4\|K\|^2}-1}{2}.\tag{7}
+$$
 
 式(1)恰与 $d(K)\le\delta$ 等价。允许额外漏道不能使这个最小距离更低，因为下界已对全部收缩矩阵成立，且由本块内酉矩阵达到。它不证明真实过程没有漏道。
 
@@ -86,15 +100,21 @@ $$\inf_{\|I+2iA\|\le1}\|A-K\|
 
 式(4)的谱给
 
-$$\rho(s)=\frac{\tau(s)}2\bigl(|x|+\sqrt{x^2+3y^2}\bigr).\tag{8}$$
+$$
+\rho(s)=\frac{\tau(s)}2\bigl(|x|+\sqrt{x^2+3y^2}\bigr).\tag{8}
+$$
 
 若δ(s)是声明候选类共用的预算，定义
 
-$$c_*:=\inf_{s\in\mathcal W}\frac{\sqrt{\delta(s)(1+\delta(s))}}{\tau(s)}.\tag{9}$$
+$$
+c_*:=\inf_{s\in\mathcal W}\frac{\sqrt{\delta(s)(1+\delta(s))}}{\tau(s)}.\tag{9}
+$$
 
 逐能量的矩阵兼容条件等价于
 
-$$\boxed{|x|\le c_*,\qquad 3y^2\le4c_*(c_*-|x|),\qquad x\le1.}\tag{10}$$
+$$
+\boxed{|x|\le c_*,\qquad 3y^2\le4c_*(c_*-|x|),\qquad x\le1.}\tag{10}
+$$
 
 最后一项来自实a的 $a^2\ge0$。证明是先把 $\sqrt{x^2+3y^2}\le2c_*-|x|$ 保留非负右端，再平方；不能丢掉 $|x|\le c_*$。
 
@@ -115,12 +135,16 @@ $$\boxed{|x|\le c_*,\qquad 3y^2\le4c_*(c_*-|x|),\qquad x\le1.}\tag{10}$$
 
 两导数标量场目标度量可写成
 
-$$d\ell^2=dh^2+r(h)^2d\Omega_3^2,\qquad r(h)=v\sqrt{F(h)}.\tag{11}$$
+$$
+d\ell^2=dh^2+r(h)^2d\Omega_3^2,\qquad r(h)=v\sqrt{F(h)}.\tag{11}
+$$
 
 在h=0，$r=v,r'=a,r''=(b-a^2)/v$，因此两种截面曲率为
 
-$$\mathcal K_{\omega\omega}=\frac{1-r'^2}{r^2}=\frac{x}{v^2},\qquad
-\mathcal K_{h\omega}=-\frac{r''}{r}=\frac{y}{v^2}.\tag{12}$$
+$$
+\mathcal K_{\omega\omega}=\frac{1-r'^2}{r^2}=\frac{x}{v^2},\qquad
+\mathcal K_{h\omega}=-\frac{r''}{r}=\frac{y}{v^2}.\tag{12}
+$$
 
 这是[Alonso–Jenkins–Manohar的场空间几何](https://arxiv.org/html/1511.00724)在本记号下的关系。原文F乘方的约定与式(2)不同，故此处明确取平方根。548、580、582已使用相关工具，不能把一般场空间曲率当成本轮新发现。
 

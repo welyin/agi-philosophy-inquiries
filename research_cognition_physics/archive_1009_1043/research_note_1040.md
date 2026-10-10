@@ -42,23 +42,31 @@ Born–Infeld作用提供另一条有范围的共同实现：两个极化共用�
 
 取−+++约定，并定义
 
-$$S=-\frac14F_{\mu\nu}F^{\mu\nu}=\frac{E^2-B^2}{2},\qquad
-P=-\frac14F_{\mu\nu}\widetilde F^{\mu\nu}=E\cdot B.$$
+$$
+S=-\frac14F_{\mu\nu}F^{\mu\nu}=\frac{E^2-B^2}{2},\qquad
+P=-\frac14F_{\mu\nu}\widetilde F^{\mu\nu}=E\cdot B.
+$$
 
 场方程写成
 
-$$\nabla\cdot B=0,\quad\partial_tB=-\nabla\times E,
-\qquad\nabla\cdot D=0,\quad\partial_tD=\nabla\times H,$$
+$$
+\nabla\cdot B=0,\quad\partial_tB=-\nabla\times E,
+\qquad\nabla\cdot D=0,\quad\partial_tD=\nabla\times H,
+$$
 
 其中
 
-$$D=L_SE+L_PB,\qquad H=L_SB-L_PE.\tag{1}$$
+$$
+D=L_SE+L_PB,\qquad H=L_SB-L_PE.\tag{1}
+$$
 
 令$\mathcal H=\operatorname{Hess}_{S,P}L$，扰动满足
 
-$$\delta S=E\cdot\delta E-B\cdot\delta B,\qquad
+$$
+\delta S=E\cdot\delta E-B\cdot\delta B,\qquad
 \delta P=B\cdot\delta E+E\cdot\delta B,
-\quad\binom{\delta L_S}{\delta L_P}=\mathcal H\binom{\delta S}{\delta P}.\tag{2}$$
+\quad\binom{\delta L_S}{\delta L_P}=\mathcal H\binom{\delta S}{\delta P}.\tag{2}
+$$
 
 将式(1)完整线性化，再加Gauss约束，即得下面使用的物理主符号。没有仅从已猜的速度公式重建结论。
 
@@ -68,37 +76,49 @@ $$\delta S=E\cdot\delta E-B\cdot\delta B,\qquad
 
 取U中任意$(S,P)\ne(0,0)$。总能选择平行常场
 
-$$E=e\hat z,\qquad B=b\hat z,\qquad
+$$
+E=e\hat z,\qquad B=b\hat z,\qquad
 S=(e^2-b^2)/2,\quad P=eb,
-\quad r^2=e^2+b^2=2\sqrt{S^2+P^2}>0.\tag{3}$$
+\quad r^2=e^2+b^2=2\sqrt{S^2+P^2}>0.\tag{3}
+$$
 
 例如$e^2=\sqrt{S^2+P^2}+S$、$b^2=\sqrt{S^2+P^2}-S$，符号选为eb=P。只使用这个确实属于相同不变量点的代表，不声称非零null场也有这样的平行标架。
 
 令波沿x，协向量$q=(-\omega,k,0,0)$，先测试原g的null值$\omega/k=1$。Faraday方程给$\delta B=\hat x\times\delta E$。平行背景下$\delta D_x=L_S\delta E_x$；因L_S≠0，Gauss给$\delta E_x=0$。所以两个可能的物理极化写成
 
-$$\delta E=(0,u,w),\qquad\delta B=(0,-w,u),\qquad
+$$
+\delta E=(0,u,w),\qquad\delta B=(0,-w,u),\qquad
 \binom{\delta S}{\delta P}=J\binom uw,
-\quad J=\begin{pmatrix}-b&e\\e&b\end{pmatrix},\quad J^2=r^2I.\tag{4}$$
+\quad J=\begin{pmatrix}-b&e\\e&b\end{pmatrix},\quad J^2=r^2I.\tag{4}
+$$
 
 剩下的两条Ampère方程分别为
 
-$$b\,\delta L_S-e\,\delta L_P=0,\qquad
-e\,\delta L_S+b\,\delta L_P=0.$$
+$$
+b\,\delta L_S-e\,\delta L_P=0,\qquad
+e\,\delta L_S+b\,\delta L_P=0.
+$$
 
 它们在$(u,w)$上的矩阵是
 
-$$\mathcal M_{\rm null}
-=\begin{pmatrix}-1&0\\0&1\end{pmatrix}J\mathcal HJ.\tag{5}$$
+$$
+\mathcal M_{\rm null}
+=\begin{pmatrix}-1&0\\0&1\end{pmatrix}J\mathcal HJ.\tag{5}
+$$
 
 K_g要求此null方向有两个线性独立的物理极化。因此该2×2矩阵的整个核必须为二维，矩阵本身为零。J可逆，立刻给
 
-$$\operatorname{Hess}_{S,P}L=0.\tag{6}$$
+$$
+\operatorname{Hess}_{S,P}L=0.\tag{6}
+$$
 
 注意这里不是只要求行列式为零；后者至多保证一份极化，不能替代合同中的两个独立物理自由度。
 
 式(6)对U中所有非零不变量点成立。若U含原点，用C²连续性将它延到原点；若U不含原点则无需此步。连通性使梯度为同一常向量，故
 
-$$\boxed{L(S,P)=aS+b_0P+c,\qquad a\ne0.}\tag{7}$$
+$$
+\boxed{L(S,P)=aS+b_0P+c,\qquad a\ne0.}\tag{7}
+$$
 
 原点的证明没有把S=P=0与F=0混为一谈。仅在零场检查传播远不足以约束$\mathcal H$：式(2)的背景因子在F=0时为零，任意正常弱场非线性都可在该点具有Maxwell主部。仅测一个非零背景也不能把该点的Hessian条件推广为整个函数仿射。
 
@@ -108,8 +128,10 @@ $$\boxed{L(S,P)=aS+b_0P+c,\qquad a\ne0.}\tag{7}$$
 
 同一度规变分给
 
-$$T_{\mu\nu}=L_SF_{\mu\rho}F_\nu{}^\rho
-+g_{\mu\nu}(L-PL_P).\tag{8}$$
+$$
+T_{\mu\nu}=L_SF_{\mu\rho}F_\nu{}^\rho
++g_{\mu\nu}(L-PL_P).\tag{8}
+$$
 
 于是式(7)保留$aT^{\rm Maxwell}_{\mu\nu}+cg_{\mu\nu}$，能源密度为$a(E^2+B^2)/2-c$。传播不能确定真空常数c的几何来源。常$b_0$在此局部体方程消失，不代表带边界或非平凡拓扑时物理冗余；930的来源与边界区分继续适用。
 
@@ -117,7 +139,9 @@ $$T_{\mu\nu}=L_SF_{\mu\rho}F_\nu{}^\rho
 
 另有一个有限的代数版本。式(5)给精确范数身份
 
-$$\|\mathcal M_{\rm null}\|_{\rm op}=r^2\|\mathcal H\|_{\rm op}.\tag{9}$$
+$$
+\|\mathcal M_{\rm null}\|_{\rm op}=r^2\|\mathcal H\|_{\rm op}.\tag{9}
+$$
 
 若另有可信的归一主符号残差预算$\|\mathcal M_{\rm null}\|\le\varepsilon|L_S|$，它只推出$\|\mathcal H\|/|L_S|\le\varepsilon/r^2$。这不是自动可观测概率界；从真实仪器到主符号残差的字典及误差还须另给，也不能在r→0时继续领取固定非线性上界。
 
@@ -125,27 +149,35 @@ $$\|\mathcal M_{\rm null}\|_{\rm op}=r^2\|\mathcal H\|_{\rm op}.\tag{9}$$
 
 取T>0的明确比较族
 
-$$L_T=T\left(1-\sqrt{1-2S/T-P^2/T^2}\right).\tag{10}$$
+$$
+L_T=T\left(1-\sqrt{1-2S/T-P^2/T^2}\right).\tag{10}
+$$
 
 T有能源密度量纲。全部T具有同一零场Maxwell归一；量纲固定后T仍是物理参数。这里只在实且正规分支比较，不使用其强场奇异边界。
 
 对$E=0,B=B_0\hat z$的常背景，令$R=\sqrt{1+B_0^2/T}$。直接对式(1)微分得到
 
-$$\epsilon:=\frac{\partial D}{\partial E}
+$$
+\epsilon:=\frac{\partial D}{\partial E}
 =\operatorname{diag}(R^{-1},R^{-1},R),\qquad
 \mu^{-1}:=\frac{\partial H}{\partial B}
-=\operatorname{diag}(R^{-1},R^{-1},R^{-3}),\tag{11}$$
+=\operatorname{diag}(R^{-1},R^{-1},R^{-3}),\tag{11}
+$$
 
 混合响应为零。两矩阵严格正，线性扰动Hamiltonian的电、磁二次形式正。对任意空间波向量，两份物理极化具有同一色散
 
-$$\omega^2=k_z^2+R^{-2}(k_x^2+k_y^2).\tag{12}$$
+$$
+\omega^2=k_z^2+R^{-2}(k_x^2+k_y^2).\tag{12}
+$$
 
 其群速度模不超过1。B₀≠0且T有限时，横向速度为$1/R<1$；这是一份有效锥，未等于原g锥。完整六分量传播还含两份Gauss约束方向，不能把它们算作额外物理极化。
 
 同一作用的Legendre能源与式(8)同时给
 
-$$\rho=T(R-1),\qquad
-T_{\mu\nu}=\operatorname{diag}\bigl(\rho,T(1-R^{-1}),T(1-R^{-1}),-\rho\bigr).\tag{13}$$
+$$
+\rho=T(R-1),\qquad
+T_{\mu\nu}=\operatorname{diag}\bigl(\rho,T(1-R^{-1}),T(1-R^{-1}),-\rho\bigr).\tag{13}
+$$
 
 因此传播与背景来源不能各自拟合。比如$R=1+\rho/T$使$v_\perp=1/(1+\rho/T)$；这只是在该磁背景上的关系，不能移植为任意材料状态方程。
 
@@ -155,12 +187,16 @@ T_{\mu\nu}=\operatorname{diag}\bigl(\rho,T(1-R^{-1}),T(1-R^{-1}),-\rho\bigr).\ta
 
 同一标定B₀下
 
-$$1-v_\perp^2=\frac{B_0^2}{T+B_0^2}.$$
+$$
+1-v_\perp^2=\frac{B_0^2}{T+B_0^2}.
+$$
 
 对$B_0^2>0$和$0<\delta<1$，有限平方速度预算给充要条件
 
-$$\boxed{|1-v_\perp^2|\le\delta
-\iff T\ge B_0^2\frac{1-\delta}{\delta}.}\tag{14}$$
+$$
+\boxed{|1-v_\perp^2|\le\delta
+\iff T\ge B_0^2\frac{1-\delta}{\delta}.}\tag{14}
+$$
 
 例如$B_0^2=1,\delta=1/100$只要求T≥99；没有选择T=∞。B₀=0时所有T都通过，完全没有这项尺度选择力。T、B²需处在同一有效作用适用域，不能利用改单位隐藏实际场强和截止之比。
 
@@ -168,8 +204,10 @@ $$\boxed{|1-v_\perp^2|\le\delta
 
 无双折射本身也不是正能和因果的同义词。取有限弱背景中的$L=S+aS^2+bP^2$，$E=0,B=B_0\hat z$，两个横向速度平方是
 
-$$v_y^2=\frac{1-3aB_0^2}{1-aB_0^2},\qquad
-v_z^2=\frac{1-aB_0^2}{1-aB_0^2+2bB_0^2}.\tag{15}$$
+$$
+v_y^2=\frac{1-3aB_0^2}{1-aB_0^2},\qquad
+v_z^2=\frac{1-aB_0^2}{1-aB_0^2+2bB_0^2}.\tag{15}
+$$
 
 在本轮正响应控制$a=1/100,b=7/400,B_0^2=1/4$，两者均实且小于1但不相等。这是有效类内的有限反例；不宣称此截断多项式在所有任意大场强上健康，也不把它当成完整已匹配QED。
 

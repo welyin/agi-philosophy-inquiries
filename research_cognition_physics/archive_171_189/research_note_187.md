@@ -18,9 +18,9 @@
 
 记S_d为实对称矩阵空间，A_d为实反对称矩阵空间。它们在Frobenius内积下正交，且
 
-\[
+$$
 S_{ab}=(S_a\otimes S_b)\oplus(A_a\otimes A_b).
-\]
+$$
 
 两部分维数分别为K(a)K(b)、L(a)L(b)，其中K(d)=d(d+1)/2，L(d)=d(d−1)/2。局部实乘积效应只能看到第一部分。
 
@@ -28,9 +28,9 @@ S_{ab}=(S_a\otimes S_b)\oplus(A_a\otimes A_b).
 
 对参考作相同分解τ=τ_SS+τ_AA。用部分转置作代数记号，
 
-\[
+$$
 \tau_{AA}=\frac{\tau-\tau^{T_S}}2.
-\]
+$$
 
 这里只是正交投影公式；部分转置一般不是合法物理操作，τ_AA也不必是态。
 
@@ -38,9 +38,9 @@ S_{ab}=(S_a\otimes S_b)\oplus(A_a\otimes A_b).
 
 扩大实验室的效应空间同样分解为
 
-\[
+$$
 S_{ar}=(S_a\otimes S_r)\oplus(A_a\otimes A_r).
-\]
+$$
 
 目标隐藏方向X⊗Y（X∈A_a，Y∈A_b）要与扩大后的乘积效应有非零配对，只可能通过两端的A⊗A项。相应参考配对为Tr[τ(U⊗V)]，U∈A_r、V∈A_s。
 
@@ -54,30 +54,30 @@ S_{ar}=(S_a\otimes S_r)\oplus(A_a\otimes A_r).
 
 若τ_AA≠0，存在反对称U、V使
 
-\[
+$$
 c=\operatorname{Tr}[\tau(U\otimes V)]\ne0.
-\]
+$$
 
 将U、V及所需目标反对称基X、Y缩放至算符范数≤1。两端可测的算符
 
-\[
+$$
 O_A=X\otimes U,\qquad O_B=Y\otimes V
-\]
+$$
 
 均为实对称且范数≤1，所以(I±O_A)/2及(I±O_B)/2是合法二元测量。由目标—参考独立，
 
-\[
+$$
 \mathbb E[ab]=c\operatorname{Tr}[\rho(X\otimes Y)].
-\]
+$$
 
 已知c≠0即可除回目标坐标。普通S⊗S坐标直接局部测量；两类基合起来覆盖全部S_ab，证明充分性。这里是为不同坐标使用不同测量设置，不要求一次测量同时准确输出全部不相容坐标。
 
 特别地，令
 
-\[
+$$
 J=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\quad H=J\otimes J,\quad
 \tau_c=(I_4+cH)/4,
-\]
+$$
 
 任意已知0<|c|≤1都可供上述任意有限维双目标使用。本轮c是JJ系数；与旧笔记的YY系数符号相反，因为J=−iY。没有引入新物理取向。
 

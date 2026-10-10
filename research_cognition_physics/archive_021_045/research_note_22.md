@@ -6,10 +6,10 @@
 
 归一化空间坐标为 s=(u,v)/α，||s||≤1，单次读取统计写成
 
-\[
+$$
 p(+\mid s,\theta)=\tfrac12(1+\beta n_\theta\cdot s),\qquad
 n_\theta=(\cos\theta,\sin\theta),\quad\beta=\alpha\eta.
-\]
+$$
 
 所有圆盘内准备及其实际随机混合均可用。只要求准备非情境性；隐藏响应可以是任意有界函数，不要求它对 θ 只有一阶谐波，也不要求测量非情境性。本轮只构造一次最终读取的实现，尚未实现原 fresh 选择性更新。
 
@@ -19,37 +19,37 @@ n_\theta=(\cos\theta,\sin\theta),\quad\beta=\alpha\eta.
 
 准备非情境性加混合一致性，使隐藏分布 μ_s 在整个圆盘上仿射：
 
-\[
+$$
 \mu_s=\mu_0+s_1\nu_1+s_2\nu_2.
-\]
+$$
 
 这里 ν_i 是有限有符号测度。由 μ₀±ν_i≥0，它们对 μ₀ 绝对连续。取 Radon–Nikodym 密度 a_i，得到
 
-\[
+$$
 d\mu_s(\lambda)=[1+a(\lambda)\cdot s]d\mu_0(\lambda),\qquad
 \int a\,d\mu_0=0.
-\]
+$$
 
 对圆周上一组可数稠密方向应用非负性，去掉共同零测集，再用连续性，得 ||a(λ)||≤1，μ₀ 几乎处处成立。故该表示不依赖隐藏空间有限或存在原先选定的密度。
 
 任意读取偏置 g_θ(λ)∈[−1,1] 若复现统计，必须满足
 
-\[
+$$
 \int g_\theta d\mu_0=0,\qquad
 \int g_\theta a\,d\mu_0=\beta n_\theta.
-\]
+$$
 
 与 n_θ 点乘，得每个方向的必要条件
 
-\[
+$$
 \beta\le h(\theta):=\int|a\cdot n_\theta|d\mu_0.
-\]
+$$
 
 对 θ 均匀平均，使用平均 |cos θ|=2/π：
 
-\[
+$$
 \boxed{\beta\le\frac2\pi\int\|a\|d\mu_0\le\frac2\pi}.
-\]
+$$
 
 只需对非负连续函数 h 平均，不需要额外假定响应族对 θ 联合可测。这个推导也说明，为何不能先把隐藏响应限制成一阶谐波再声称得到一般阈值。
 
@@ -57,24 +57,24 @@ d\mu_s(\lambda)=[1+a(\lambda)\cdot s]d\mu_0(\lambda),\qquad
 
 取隐藏角 λ∈[0,2π)，令
 
-\[
+$$
 d\mu_s(\lambda)=\frac{1+s\cdot n_\lambda}{2\pi}d\lambda.
-\]
+$$
 
 这是非负、归一化、尊重任意准备混合的唯一 s 编码。选响应偏置
 
-\[
+$$
 g_\theta(\lambda)=\frac{\pi\beta}{2}\operatorname{sign}\cos(\lambda-\theta).
-\]
+$$
 
 β≤2/π 时 |g_θ|≤1；零点如何赋值不影响积分。利用
 
-\[
+$$
 \int\operatorname{sign}\cos(\lambda-\theta)\,\frac{d\lambda}{2\pi}=0,
 \quad
 \int\operatorname{sign}\cos(\lambda-\theta)n_\lambda\,\frac{d\lambda}{2\pi}
 =\frac2\pi n_\theta,
-\]
+$$
 
 得到恰好所需的单次读取概率。原 s 的静默旋转也可由 λ→λ+φ 精确实现，因此最终读取前的任意静默旋转可包含在此模型中。
 
@@ -84,10 +84,10 @@ g_\theta(\lambda)=\frac{\pi\beta}{2}\operatorname{sign}\cos(\lambda-\theta).
 
 β≤1/2 时有简单四标签实现。取 n_j=(±1,0),(0,±1)，
 
-\[
+$$
 p_j(s)=\tfrac14(1+n_j\cdot s),\qquad
 g_{\theta,j}=2\beta n_j\cdot n_\theta.
-\]
+$$
 
 全部概率合法，且 Σ_j p_j g_{θ,j}=β n_θ·s。这是充分构造，不声称四标签最少，也未求出 1/2<β<2/π 的最小标签数。
 
@@ -103,9 +103,9 @@ g_{\theta,j}=2\beta n_j\cdot n_\theta.
 
 原 α≈0.9896158370，所以完整圆盘单次读取的准备非情境条件是
 
-\[
+$$
 \eta\le\frac2{\pi\alpha}=\boxed{0.6432999034}.
-\]
+$$
 
 第二十一轮四准备见证要到 η>0.7145265412 才违反。因此，例如 η=0.68 时，四准备分数只有 0.7379197835，没有超过 0.75；但完整圆盘仍不允许准备非情境模型。单个见证不完备。
 

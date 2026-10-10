@@ -14,42 +14,42 @@ POVM 指一组半正定效应 B_b，满足 Σ_b B_b=I。任意本地辅助、顺
 
 一个来源按“外端目标、外端参考、中间目标、中间参考”排列：
 
-\[
+$$
 \omega=\Phi^+_{T_AT_B}\otimes\tau_{R_AR_B}.
-\]
+$$
 
 两端的三个实对称反射为
 
-\[
+$$
 \widetilde X=X_T I_R,\quad
 \widetilde Y=Y_TY_R,\quad
 \widetilde Z=Z_T I_R.
-\]
+$$
 
 它们平方为 I，并且两两反对易。外端结果 a 收缩后，Bob 的未归一化状态是 (I+aFᵢ)/8，其中
 
-\[
+$$
 F_X=X_TI_R,\quad F_Y=-Y_TY_R,\quad F_Z=Z_TI_R.
-\]
+$$
 
 负号来自 Bell 态的转置，不能省略。两个来源一起给 Bob 边缘 I₁₆/16。取 Bob 排列为 B₁目标、B₁参考、B₂目标、B₂参考，则
 
-\[
+$$
 Q_X=XIXI,\qquad Q_Y=YYYY,\qquad Q_Z=ZIZI,
 \quad R_0=IYIY.
-\]
+$$
 
 四者两两对易，均为实对称反射，且
 
-\[
+$$
 Q_XQ_YQ_Z=-R_0.
-\]
+$$
 
 令 M_b=ΣᵢqᵢᵇQᵢ。完整记录给出的分数因此恰为
 
-\[
+$$
 T=\frac{2\sqrt2}{16}\sum_b\operatorname{Tr}(B_bM_b).
-\]
+$$
 
 脚本另从实际来源做偏迹收缩，计算完整 288 项概率，复核了这个线性表达式。
 
@@ -57,23 +57,23 @@ T=\frac{2\sqrt2}{16}\sum_b\operatorname{Tr}(B_bM_b).
 
 取共同算符
 
-\[
+$$
 D=2I+R_0.
-\]
+$$
 
 由对易关系、Qᵢ²=R₀²=I 及 q₁q₂q₃=−1，可直接展开验证
 
-\[
+$$
 S_b=D-M_b,\qquad S_b^T=S_b,\qquad S_b^2=4S_b.
-\]
+$$
 
 所以 S_b 的特征值只能为 0 或 4，必定半正定。这是精确代数证书，不依赖数值特征值的正性容差。对任意 POVM，
 
-\[
+$$
 T\le\frac{2\sqrt2}{16}\sum_b\operatorname{Tr}(B_bD)
 =\frac{2\sqrt2}{16}\operatorname{Tr}D
 =4\sqrt2.
-\]
+$$
 
 取只测 Bob 两个目标的理想 Bell 测量、对参考用恒等效应，逐个满足 S_bB_b=0，因此达到上界。
 

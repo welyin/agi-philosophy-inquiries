@@ -28,6 +28,7 @@
 ## 3. 明确比较对象
 
 辅助过去取730的紧空间三环面。原64维Hermitian矩阵M满足正质量隙，Γ满足原Clifford关系并与M反对易。将全部原Yukawa及单态Majorana矩阵共同乘以a=e^λ，固定原标量背景；这是一条623允许的物理参数路径。保留全部原32个CAR成分，不另选二能级质量模型：
+
 $$
 H_\lambda(k)=\Gamma\cdot k+aM,\quad
 E_\lambda(k)=\sqrt{|k|^2+a^2M^2},\quad
@@ -42,6 +43,7 @@ P是原greater协方差。β固定正值；λ在有质量隙的紧区间中。�
 ## 4. 固定全局正常态类的障碍：解析证明
 
 令r=|k|。因M有限维、热修正指数衰减，矩阵函数展开一致给出
+
 $$
 P_{\lambda,\beta}-P_{0,\beta}
 =\frac{(a-1)M}{2r}+O(r^{-2}),\qquad
@@ -51,6 +53,7 @@ P_{\lambda,\beta}-P_{0,\beta}
 $$
 
 故当λ≠0时，
+
 $$
 \|P_{\lambda,\beta}(k)-P_{0,\beta}(k)\|_{\mathrm{HS}}^2
 =\frac{(a-1)^2\operatorname{tr}M^2}{4r^2}+O(r^{-3}),
@@ -62,6 +65,7 @@ $$
 余项不能抵消正首项：大r后每项至少为首项一半。沿立方壳计数也直接给线性发散。因此协方差差及一阶导数均非Hilbert–Schmidt。空间虽紧，仍有无穷高频模式；本轮不诉诸无限空间体积。
 
 成熟输入为[Araki自对偶CAR准等价判据，Theorem 1](https://ems.press/content/serial-article-files/41673?nt=1)：准等价要求平方根差为Hilbert–Schmidt。对正压缩P、Q，
+
 $$
 P-Q=(\sqrt P-\sqrt Q)\sqrt P+
 \sqrt Q(\sqrt P-\sqrt Q).
@@ -75,6 +79,7 @@ $$
 ## 5. 有限任务的正结果
 
 非Hilbert–Schmidt不意味着有限光滑测试不可微。式(1)直接给紧参数范围中
+
 $$
 \sup_{\lambda,k}\|\partial_\lambda^jP_{\lambda,\beta}(k)\|
 \le B_j<\infty,\qquad j=0,1,2.
@@ -82,6 +87,7 @@ $$
 $$
 
 对固定有限时间、固定光滑度规和改变上述质量的原Dirac传播，H′、H″是有界光滑矩阵乘法；其中H″=aM，不能删除。803的共同Cauchy字典和Duhamel公式给
+
 $$
 \begin{aligned}
 U'_\lambda(t,s)&=-i\int_s^t U_\lambda(t,u)H'_\lambda(u)U_\lambda(u,s)\,du,\\
@@ -95,6 +101,7 @@ $$
 在原正则紧时空片且F保持正下界时，光滑系数还给各固定Sobolev阶的有限时间估计。这里只改变质量，不偷用式(6)替代改变度规主符号所需的额外域控制。
 
 令Q_F为固定的有限光滑、共轭封闭模式投影。保全传播后
+
 $$
 C_{\lambda,\Sigma}=U_\lambda P_{\lambda,\beta}U_\lambda^*,\qquad
 C_F(\lambda)=Q_FC_{\lambda,\Sigma}Q_F .
@@ -102,6 +109,7 @@ C_F(\lambda)=Q_FC_{\lambda,\Sigma}Q_F .
 $$
 
 有限CAR态的矩阵元可由有限Wick/Pfaffian多项式重建。以2d个Majorana的正交单项式Γ_A为基，
+
 $$
 \rho_F^{(j)}(\lambda)
 =2^{-d}\sum_A
@@ -115,6 +123,7 @@ $$
 844/854的实际有限CAR准备可在参考期望中写成有限Kraus插入。即使准备后非Gaussian，计算仍是原参考上的有限多项式插入，不能把准备态重新当Gaussian。固定有限未知输入σ及有限辅助系统时，矩阵元有限且一致有界，故上述二阶结论对σ一致。原自由有序仪器历史也由同一有限组传播模式的Wick配对给出。
 
 对这些模式及其前两阶参数jet作共同平滑有限模式逼近；紧参数区间、有限时间和Sobolev界给统一尾控。有限多项式连续性于是给
+
 $$
 \max_{\substack{j\le2,\ w\in\mathcal W\\ \lambda\in K}}
 \left|\partial_\lambda^j
@@ -141,6 +150,7 @@ $$
 r=1000时r²乘纤维HS平方为0.143950916056。发散结论来自式(2)—(4)，不是用有限样本拟合指数。
 
 有限任务用原第30、31模式及共轭，归一Fourier幅度正比q的曼哈顿次数幂，q=0.3；这是光滑全局校准包，**不当作严格局域模式**。在t₁=0.12、t₂=0.31作两个占据Lüders读数：
+
 $$
 p_{\epsilon\eta}(\lambda)
 =\omega_\lambda\!\left(
@@ -166,6 +176,7 @@ $$
 |8|1.817×10⁻¹¹|3.285×10⁻¹¹|5.270×10⁻¹¹|
 
 归一无限包的精确遗漏概率为
+
 $$
 \delta_L=3d_L-3d_L^2+d_L^3,\qquad
 d_L=\frac{2q^{2(L+1)}}{1+q^2}.
@@ -177,6 +188,7 @@ $$
 ## 7. 对共同来源连接的影响
 
 有限任务的参数二阶导数必须共同包含参考、传播和仪器变化。抽象写作
+
 $$
 \frac{d^2}{d\lambda^2}\omega_\lambda(O_\lambda)
 =\omega_\lambda''(O_\lambda)

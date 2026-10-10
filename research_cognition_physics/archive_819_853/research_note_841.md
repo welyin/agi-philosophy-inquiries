@@ -32,6 +32,7 @@
 ## 3. 精确反向输送不换参考
 
 以H_Σ表示原目标Cauchy空间，H_-表示730那份已选辅助过去空间，U是**同一**完整辅助Dirac传播，含原全部质量、规范及spin连接。使用805的同一协方差约定：
+
 $$
 P_\Sigma=UP_-U^*,\qquad
 X:=U^*H_B,\qquad V:=U|_X:X\longrightarrow H_B,\qquad
@@ -40,6 +41,7 @@ Q_-=U^*QU .
 $$
 
 Q是原20维自对偶编码投影；C-real基经U*仍C-real且正交。X是闭子空间，但通常不是某个过去空间区域的全部L²资料。令E_X为其投影，则
+
 $$
 A_X=E_XP_-E_X|_X,
 \qquad A_B=V A_X V^*,\qquad
@@ -52,6 +54,7 @@ $$
 ## 4. 同一组织准备也能共同输送
 
 839的Gaussian化准备在完整Cauchy空间上为有限因子重置。其协方差满足
+
 $$
 U^*\widetilde P_\Sigma U
 =\frac{Q_-}{2}+(I-Q_-)P_-(I-Q_-)
@@ -62,6 +65,7 @@ $$
 同时把σ_{ε,r}的基沿U*输送，余部仍取同一P_-的限制；由分次CAR同构得到原非Gaussian准备ω_{ε,r}的精确对应。不是只匹配二点后任意选择高阶关联。完整码及内容熵亏c_{ε,r}=log1024−S(σ_{ε,r})不变。
 
 相对熵对同构不变，因此，在各自参考表示中的偶CAR von Neumann代数上，
+
 $$
 D_{M_B}(\omega_{\varepsilon,r}\Vert\omega_{\rm bg})
 =D_{M_X}(\omega^-_{\varepsilon,r}\Vert\omega_-),\qquad
@@ -74,6 +78,7 @@ $$
 ## 5. 因果传播给出可用的过去包含区域
 
 设D_-为辅助过去片上的开区域，包含从B反向传播的支撑。有限传播给
+
 $$
 U^*H_B=X\subset H_{D_-},\qquad
 \operatorname{ran}Q_-\subset X\subset H_{D_-}.
@@ -83,6 +88,7 @@ $$
 可先对紧支光滑资料应用有限传播，再由L²稠密及U的连续性延拓。原模式反向传播后仍光滑、保持相应Sobolev域；813的C-real结构也保持。不过原五个空间块反向传播后可能重叠，本轮不称它们在过去仍是五个空间分离的读口。
 
 在730单位lapse、零shift的T³坐标分支上，一个保守的可检验选择是
+
 $$
 R_{\rm aux}=\int_{t_-}^{t_\Sigma}
 \sup_x\sqrt{\lambda_{\max}(\widetilde g^{ij}(t,x))}\,dt,
@@ -99,6 +105,7 @@ $$
 ## 6. 不求动态模流的充分条件
 
 记A_D为同一P_-在H_{D_-}上的压缩；h_D=log((I−A_D)/A_D)，L_D=−log A_D−log(I−A_D)，并定义Z_D=Tr_{Q_-}|h_D|。区域限制的相对熵单调性给
+
 $$
 0\le b_B=b_X\le b_D,
 \qquad
@@ -111,6 +118,7 @@ $$
 g_D正是式(3)的限制，因为Q_-⊂H_{D_-}；没有在D_-另换余部准备。单调性也可由839的有限偶CAR子代数及其增加极限得到，∞情形不相减。
 
 令J:X↪H_{D_-}为包含等距，A_X=J*A_DJ。复用840的正则化Jensen形式：
+
 $$
 \left|\log\frac{I_X-A_X}{A_X}\right|
 \le-\log A_X-\log(I_X-A_X)
@@ -119,6 +127,7 @@ $$
 $$
 
 于是得到同一模式的显式预算（q=20）：
+
 $$
 Z_B\le\operatorname{Tr}_{Q_-}L_D
 \le Z_D+2q\log2,\qquad
@@ -132,6 +141,7 @@ $$
 ## 7. 整个辅助过去为什么不能充当有限上界
 
 若将D_-扩大为整个T³，则A_D=P_-是纯投影；非零有限Q_-的重置不再是该纯态。840端点判据给
+
 $$
 Z_{\mathbb T^3}=\infty,\qquad
 b_{\mathbb T^3}=\infty,\qquad

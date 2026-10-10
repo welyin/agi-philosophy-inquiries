@@ -27,16 +27,16 @@
 
 Bob 首先仅执行一次 U_YX(π/2) 作用于 B_L、B_R。在便于计算的方向分量 a,c 上，B_L 保持 Y=a，而 B_R 成为 Z=ac。对这个 Z 指针使用已编译的实复制门
 
-\[
+$$
 C=I_D\otimes|0\rangle\langle0|_{B_R}
   +(-iY)_D\otimes|1\rangle\langle1|_{B_R}.
-\]
+$$
 
 它由一次原 YX 流及原局部实旋转组成。D 的一次结果 o 对原指针的效果为二元噪声通道
 
-\[
+$$
 p(o\mid t)=\tfrac12(1+\alpha ot),\qquad t=ac.
-\]
+$$
 
 独立重置和原 fresh 噪声规则使给定 t 的各次读取独立。程序在完整四系统源态上逐次加入第五个系统 D，执行编译门、完整 Kraus 读取，再部分迹丢弃 D；没有直接拿二项模型代替实际电路。
 
@@ -44,32 +44,32 @@ p(o\mid t)=\tfrac12(1+\alpha ot),\qquad t=ac.
 
 对奇数 m 和记录 h=(o₁,…,o_m)，两个相对方向的似然为
 
-\[
+$$
 L_\pm(h)=\prod_j\frac{1\pm\alpha o_j}{2}.
-\]
+$$
 
 对齐前的非归一化保留态精确为
 
-\[
+$$
 \widetilde\rho_h=\tfrac12L_+(h)\rho_+(\gamma=1)
                     +\tfrac12L_-(h)\rho_-(\gamma=1).
-\]
+$$
 
 多数标记 r=sign(Σo_j)。如 r=−1，则使用第 62 轮带辅助的实 X 修正；所有路径求和后，得到
 
-\[
+$$
 \rho^{(m)}_{\rm aligned}
 =\frac18[III+YYI+\gamma_m(IYY+YIY)],
 \quad\gamma_m=1-2\delta_m,
-\]
+$$
 
 其中
 
-\[
+$$
 \delta_m=\sum_{k=(m+1)/2}^m {m\choose k}
 \left(\frac{1-\alpha}{2}\right)^k
 \left(\frac{1+\alpha}{2}\right)^{m-k}.
-\]
+$$
 
 与 τ₃ 的迹距离恰为 δ_m，不需要额外除以成功率。在指定的独立二元指针记录中，多数是等先验最优鉴别，故也是该记录模型下最优的方向修正。这里没有证明它对全部可能的共同仪器或门预算全局最优。
 
@@ -77,11 +77,11 @@ L_\pm(h)=\prod_j\frac{1\pm\alpha o_j}{2}.
 
 复用第 48 轮的 100 位整数区间及二项尾概率证书，15 次的严格上界为
 
-\[
+$$
 \delta_{15}\le
 \frac{4170802789592989}{1267650600228229401496703205376}
 <3.3\times10^{-15}.
-\]
+$$
 
 下界也严格大于零，避免浮点输出“等于纯参考”的误读。
 

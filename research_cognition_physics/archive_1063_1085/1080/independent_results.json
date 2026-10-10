@@ -1,0 +1,174 @@
+{
+  "round": 1080,
+  "status": "passed",
+  "assertion_groups": 6,
+  "groups": [
+    "original dimensions, source normalization and reader Hermiticity",
+    "K exactly factors on data alone and squares to identity",
+    "K finite graph invariance and H+kappa K first derivative",
+    "two-source H response contradicts common rotation diagnostically",
+    "two positive finite drifts converge to the analytic derivative",
+    "K commutes with all original reader graph coefficients"
+  ],
+  "source_tau": 1e-10,
+  "fixed_reader_time": 0.7,
+  "sources": [
+    {
+      "source_parameters": [
+        0.2,
+        0.4,
+        1.5707963267948966
+      ],
+      "effect_coefficients": [
+        0.5739062588509245,
+        -0.046864159468799196,
+        0.06895665693789413,
+        0.1605844244155197
+      ],
+      "append_H_effect_derivative": [
+        0.003102159033115892,
+        0.00590449162933126,
+        -0.0040256772479982834,
+        -0.028459484574961173
+      ],
+      "append_K_effect_derivative": [
+        6.81572418052497e-19,
+        -1.0374287100492477e-19,
+        2.0956022539796544e-19,
+        2.5728232166024367e-19
+      ],
+      "H_plus_kappa_K": [
+        {
+          "kappa": 0.6666666666666666,
+          "effect_derivative": [
+            0.0031021590331158574,
+            0.0059044916293312264,
+            -0.0040256772479982696,
+            -0.028459484574961176
+          ],
+          "max_residual_from_H": 4.460365043975677e-16
+        },
+        {
+          "kappa": 1.25,
+          "effect_derivative": [
+            0.0031021590331158783,
+            0.005904491629331204,
+            -0.004025677247998294,
+            -0.02845948457496118
+          ],
+          "max_residual_from_H": 4.441434166503682e-16
+        }
+      ],
+      "graph_trace": 1.0000000000000009,
+      "graph_coherence_frobenius": 0.38237694788806886
+    },
+    {
+      "source_parameters": [
+        0.2,
+        0.6,
+        1.5707963267948966
+      ],
+      "effect_coefficients": [
+        0.5737039759260637,
+        -0.04561207507189632,
+        0.06907078386607168,
+        0.1555234099687803
+      ],
+      "append_H_effect_derivative": [
+        -0.004695026178433721,
+        0.005475160053410177,
+        0.004467199759497074,
+        -0.01898761078191653
+      ],
+      "append_K_effect_derivative": [
+        1.842670002223982e-18,
+        2.8300016748808884e-19,
+        1.0564606314696962e-18,
+        3.4523072488588485e-21
+      ],
+      "H_plus_kappa_K": [
+        {
+          "kappa": 0.6666666666666666,
+          "effect_derivative": [
+            -0.004695026178433653,
+            0.00547516005341019,
+            0.004467199759497044,
+            -0.018987610781916527
+          ],
+          "max_residual_from_H": 5.977525850487323e-16
+        },
+        {
+          "kappa": 1.25,
+          "effect_derivative": [
+            -0.004695026178433693,
+            0.005475160053410182,
+            0.004467199759497069,
+            -0.018987610781916527
+          ],
+          "max_residual_from_H": 4.441434166503682e-16
+        }
+      ],
+      "graph_trace": 1.0000000000000009,
+      "graph_coherence_frobenius": 0.3260249932696519
+    }
+  ],
+  "normalized_direction_gram": 0.9999288313637751,
+  "normalized_direction_gram_derivative": -0.00030352781075401183,
+  "polynomial_N_diagnostic": -9.832090140946746e-09,
+  "two_source_shared_omega_diagnostic": [
+    0.2728459868835952,
+    -0.49065301304979325,
+    -1.122107933800955
+  ],
+  "stacked_equation_singular_values_diagnostic": [
+    0.0451134424738484,
+    0.04511264207885347,
+    0.00026873129048667364
+  ],
+  "stacked_equation_max_residual_diagnostic": 0.00040166878155856287,
+  "stacked_equation_residual_norm_diagnostic": 0.0005730675760204958,
+  "finite_positive_drift_checks": [
+    {
+      "positive_appended_time": 0.001,
+      "direction_gram": 0.9999285292838047,
+      "one_sided_slope": -0.00030207997037123846,
+      "error_from_analytic_slope": 1.4478403827733683e-06
+    },
+    {
+      "positive_appended_time": 0.0005,
+      "direction_gram": 0.9999286799612234,
+      "one_sided_slope": -0.0003028051034359436,
+      "error_from_analytic_slope": 7.227073180682492e-07
+    }
+  ],
+  "K_invariance": {
+    "finite_K_angle": 0.37,
+    "max_graph_derivative_residual": 9.536597496921328e-18,
+    "max_finite_graph_residual": 5.551115123125783e-17,
+    "max_H_plus_kappa_K_first_derivative_residual": 5.977525850487323e-16,
+    "reader_commutator_residual": 0.0
+  },
+  "hashes": {
+    "independent_check.py": "faf23a0a82bb80af795a623b9f136022f52918f7ba19cbad41eefc0e069689d9",
+    "480_original_source": "c30d6bf95cb714b873a8e6cd6a4adc07b084603918574954b4fb6cf0b665faae",
+    "474_original_reader": "b6fd15d0bcc52b150b39e2d06b791f8127060253d9727bb6487036ffdffe57ab",
+    "1077_independent_check.py": "fbbcaa1eaf6ebc823872c6bd86df75ec98599fcfc3aafc203513a5c7538d760d",
+    "1077_proof.md": "716b8b8a77900cb23e3fda9987f90c7c00dadad5212a5d83ebde1fad4a743f15",
+    "author_check.py": "421ec5120f562c23781862ef8b933ee4ce06c56fedf37f9e12844c3acfb8ea10",
+    "author_results.json": "8b79ad554281cc4421a5aa2be7f9e390defa93b98d29e4396ce57913f5f8ccd6",
+    "author_proof.md": "e4bd0c1e6aa374375e44c6021a02efb2082cff0f650165337556f2dbe17065da"
+  },
+  "scope": {
+    "same_fixed_H_K_source_and_reader": true,
+    "source_dependent_positive_gain_allowed_in_tested_necessity": true,
+    "source_dependent_rotation_selected": false,
+    "all_graph_coherences_retained": true,
+    "second_source_point_is_analytic_identity_witness_not_new_cube_permission": true,
+    "two_fixed_points_not_control_optimization_scan": true,
+    "finite_and_floating_checks_are_rigorous_witness_certificate": false,
+    "K_first_order_zero_excludes_all_higher_order_control_words": false,
+    "known_history_481_strategies_excluded": false,
+    "macroscopic_approximate_reorientations_excluded": false,
+    "cognitive_axioms_or_spatial_dimension_refuted": false
+  }
+}

@@ -81,21 +81,21 @@ P981和B993的字段、作用与匹配合同仍不是全部门正量子过程的
 
 956 §3、5、6明确给W: C⁴→C⁶、物理双占据投影D，以及六维上的D与I−D Lüders仪器。记逻辑空间为单态s加三重态t₁,t₂,t₃，P=|s〉〈s|。选物理基(s,t₁,t₂,t₃,d₊,d₋)，则
 
-\[
+$$
 W|s\rangle=\sqrt{1-d}|s\rangle+\sqrt d|d_+\rangle,
 \quad W|t_j\rangle=|t_j\rangle,
 \quad D=|d_+\rangle\langle d_+|+|d_-\rangle\langle d_-|.
-\]
+$$
 
 这里d=(1−U/√(U²+16v²))/2，原U=1、v=.1；h_spin=−JP，J=(√(U²+16v²)−U)/2。旧算符身份是W†DW=dP=∂_U h_spin，不是新增拟合系数。
 
 本次为了检验1042，**选择**未读材料通道的一份最小纯指针扩张：
 
-\[
+$$
 A_0=(I-D)W,\quad A_1=DW,\qquad
 V\psi=A_0\psi\otimes|0\rangle_R+A_1\psi\otimes|1\rangle_R.
 \tag{A}
-\]
+$$
 
 这是一份保原六维材料后态的Stinespring等距；测指针的计算基恰恢复原两分支仪器。原956明确授予的是这份抽象Lüders仪器，**没有证明仪器由二聚体自身制造，也没有赋予主体未读取指针的任意相干访问**。式(A)仅为此次采用的最小纯实现；其纯空白、指针、作用和能源不能被当作已在原生材料中免费取得。以下甚至允许数学上访问指针全代数，仍不能恢复所需中心。
 
@@ -105,38 +105,38 @@ V\psi=A_0\psi\otimes|0\rangle_R+A_1\psi\otimes|1\rangle_R.
 
 材料端Kraus就是A₀,A₁。直接有
 
-\[
+$$
 A_0^\dagger A_0=I-dP,\quad A_1^\dagger A_1=dP,
 \quad A_0^\dagger A_1=A_1^\dagger A_0=0.
-\]
+$$
 
 故0<d<1时产品张成为span{I,P}，应用[391 §2—4](../../archive_370_428/research_note_391.md)的既有最大代数工具，
 
-\[
+$$
 \mathcal A_{\rm mat}=\{P\}'=\mathbb C\oplus M_3,
 \quad\dim\mathcal A_{\rm mat}=10,
 \quad\mathcal A_{\rm mat}'=\operatorname{span}\{P,I-P\}\cong\mathbb C^2.
 \tag{B}
-\]
+$$
 
 指针侧按物理输出基取Kraus，非零项可写为
 
-\[
+$$
 B_s=\sqrt{1-d}|0\rangle\langle s|,\quad
 B_{t_j}=|0\rangle\langle t_j|,\quad
 B_{d_+}=\sqrt d|1\rangle\langle s|.
-\]
+$$
 
 前四项的两两产品已经是非零倍数的全部4×4矩阵单位。因此
 
-\[
+$$
 \operatorname{span}\{B_x^\dagger B_y\}=M_4,
 \quad\mathcal A_R=\mathbb CI,
 \quad\mathcal A_R'=M_4.
 \tag{C}
-\]
+$$
 
-对956所有U>0、v>0，有0<d<1/2，以上解析量词成立；并非数值SVD推出全参数结论。材料与指针的最大代数不是互相的交换子。更强地，任何可在材料端恢复的M均包含于\(\mathcal A_{\rm mat}\)，而其交换子包含非平凡\(\mathcal A_{\rm mat}'\)；指针仅能恢复标量，所以本次二分等距上不存在另选一个M便取得完整互补恢复的办法。
+对956所有U>0、v>0，有0<d<1/2，以上解析量词成立；并非数值SVD推出全参数结论。材料与指针的最大代数不是互相的交换子。更强地，任何可在材料端恢复的M均包含于$\mathcal A_{\rm mat}$，而其交换子包含非平凡$\mathcal A_{\rm mat}'$；指针仅能恢复标量，所以本次二分等距上不存在另选一个M便取得完整互补恢复的办法。
 
 指针的实际两分布为ρ_R(s)=diag(1−d,d)、ρ_R(t)=diag(1,0)。半迹距离是d，等先验最优平均判错率为(1−d)/2。非零记录概率差不是无误恢复中心扇区。这是391抽象恢复工具对956具体、来源已绑定的物理仪器的实际前提检查；不重计391的一般不可恢复或噪声定理。
 
@@ -144,21 +144,21 @@ B_{d_+}=\sqrt d|1\rangle\langle s|.
 
 若1042的熵式能以(B)的代数成立，则中心L=ℓ_sP+ℓ_t(I−P)。纯s输入和任意纯t输入分别强制ℓ_s=h(d)、ℓ_t=0。再取956本来允许的纯输入ψ=(s+t₁)/√2：
 
-\[
+$$
 S(\rho_{\rm mat})=S(\rho_R)=h(d/2),\qquad
 S_{\mathcal A_{\rm mat}}(\psi)=\log2,
 \qquad\langle L\rangle_\psi=\tfrac12h(d).
-\]
+$$
 
 由于0<d<1，h(d/2)<log2<log2+h(d)/2，所需身份失败。若只先把输入去掉s／t相干，部分块熵公式会成立；那已经缩小956的全未知输入D，不能用它证明原合同。相干在整体式(A)中仍然存在，没有引入基本超选。
 
 ### 6.4 相同压缩效果不能替换真实后态与来源
 
-不得将A₀,A₁替为逻辑Kraus \(\sqrt{I-dP},\sqrt dP\)，再用W嵌回，并声称同一仪器。对纯s，两者都有双占据结果概率d；真实未读材料后态为
+不得将A₀,A₁替为逻辑Kraus $\sqrt{I-dP},\sqrt dP$，再用W嵌回，并声称同一仪器。对纯s，两者都有双占据结果概率d；真实未读材料后态为
 
-\[
+$$
 (1-d)|s\rangle\langle s|+d|d_+\rangle\langle d_+|,
-\]
+$$
 
 而压缩逻辑仪器会保留原衣着纯态W|s〉。真实后态漏出W码的概率仍为956已有的2d(1−d)。取原h，其真实后态内能为Ud；读前及错误替代后为−J，相差Ud+J。这只是材料内部能源变化，不是已算出的总仪器功耗；纯指针及作用的能量账仍未实现。该差直接说明A4/A7不能仅凭效果相同继承完整来源。
 

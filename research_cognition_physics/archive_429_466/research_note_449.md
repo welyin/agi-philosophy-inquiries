@@ -62,7 +62,7 @@ $$
 
 这是同一静态整体律；各项同时开启，无逐门调度。每主体双寄存器仍在内部记账，原始h_R的非负延拓已由448给出。本轮不改变它，也不排除非互指中间态。
 
-令\(\mathcal Z\)为全部完美匹配及全部逻辑基态到共同载体的等距嵌入，P＝\(\mathcal Z\mathcal Z^\dagger\)、Q＝I−P、R＝Qh_R⁻¹Q。D保持P。二阶有效作用为
+令$\mathcal Z$为全部完美匹配及全部逻辑基态到共同载体的等距嵌入，P＝$\mathcal Z\mathcal Z^\dagger$、Q＝I−P、R＝Qh_R⁻¹Q。D保持P。二阶有效作用为
 
 $$
 K=-\mathcal Z^\dagger G R G\mathcal Z,\qquad
@@ -86,7 +86,7 @@ W_1=-RG\mathcal Z,\qquad W_2=RGRG\mathcal Z.
 \tag{6}
 $$
 
-由于D\(\mathcal Z\)＝\(\mathcal ZD_P\)，直接按ε收集得到精确残差
+由于D$\mathcal Z$＝$\mathcal ZD_P$，直接按ε收集得到精确残差
 
 $$
 (h_R+\epsilon G+\epsilon^2D)\mathcal W-\mathcal W\epsilon^2B
@@ -96,9 +96,9 @@ A_4=DW_2-W_2B.
 \tag{7}
 $$
 
-这是整数缩放矩阵逐项核验的恒等式。均匀L与h_R、G对易，且L\(\mathcal Z\)＝\(\mathcal ZL_P\)，所以LWₖ＝WₖL_P；式(7)中的ℓ项严格抵消。该事实不表示实际读数、能量预算或动力学与ℓ无关。
+这是整数缩放矩阵逐项核验的恒等式。均匀L与h_R、G对易，且L$\mathcal Z$＝$\mathcal ZL_P$，所以LWₖ＝WₖL_P；式(7)中的ℓ项严格抵消。该事实不表示实际读数、能量预算或动力学与ℓ无关。
 
-以下定量常数限N＝4。445给||W₁||＝1、||W₂||<13／10、旧残差范数均<4；h_A和h_A,P谱在[0,4]，同时减2I后，||h_AWₖ−Wₖh_A,P||≤4||Wₖ||。因此||A₃||<4＋4|j|、||A₄||<4＋26|j|／5。首尾各比较一次\(\mathcal W-\mathcal Z\)，中间积分残差，得
+以下定量常数限N＝4。445给||W₁||＝1、||W₂||<13／10、旧残差范数均<4；h_A和h_A,P谱在[0,4]，同时减2I后，||h_AWₖ−Wₖh_A,P||≤4||Wₖ||。因此||A₃||<4＋4|j|、||A₄||<4＋26|j|／5。首尾各比较一次$\mathcal W-\mathcal Z$，中间积分残差，得
 
 $$
 \begin{aligned}
@@ -112,7 +112,7 @@ $$
 
 式(8)是完整算符范数界，张量任意内部参考不变，随后覆盖所有未知混态。其有效酉演化允许匹配与逻辑纠缠；没有先把未知图当经典随机变量。此界随慢时间增长，不能声称全时间一致逼近。
 
-另有**全时间记录保护界**，适用于任意有限偶数N。设m＝N(N−1)／2，h_R在Q上≥2，h_A\(\mathcal Z\)不必为零。由HU＝UH及初始h_R\(\mathcal Z\)＝0，并把D减去标量jN／2，有
+另有**全时间记录保护界**，适用于任意有限偶数N。设m＝N(N−1)／2，h_R在Q上≥2，h_A$\mathcal Z$不必为零。由HU＝UH及初始h_R$\mathcal Z$＝0，并把D减去标量jN／2，有
 
 $$
 \|QU(t)\mathcal Z\|
@@ -123,7 +123,7 @@ p_Q(t)\le\min\!\left\{1,
 \tag{9}
 $$
 
-具体地，h_RU\(\mathcal Z\)＝ε(UG\(\mathcal Z\)−GU\(\mathcal Z\))＋ε²(UD\(\mathcal Z\)−DU\(\mathcal Z\))，再用||G||≤m、||D−jNI／2||≤N(|j|／2＋|ℓ|)。这是已准备代码的封闭演化稳定性，没有任意错误初态自动修复或冷却的结论；界也不是无限规模一致的。
+具体地，h_RU$\mathcal Z$＝ε(UG$\mathcal Z$−GU$\mathcal Z$)＋ε²(UD$\mathcal Z$−DU$\mathcal Z$)，再用||G||≤m、||D−jNI／2||≤N(|j|／2＋|ℓ|)。这是已准备代码的封闭演化稳定性，没有任意错误初态自动修复或冷却的结论；界也不是无限规模一致的。
 
 ## 5. 重组与真实条件信号出现在同一窗口
 

@@ -1,0 +1,96 @@
+{
+  "round": 1079,
+  "status": "passed",
+  "assertion_groups": 24,
+  "groups": [
+    "strict same-source squared-radius derivative bound",
+    "old Bloch embedding and new half-response remain nondegenerate",
+    "fixed coarse effect equals actual half traceless response",
+    "raw reduced Z instrument complete",
+    "full retained-memory branch probabilities normalized 0",
+    "full retained-memory branch probabilities normalized 1",
+    "full retained-memory branch probabilities normalized 2",
+    "full retained-memory branch probabilities normalized 3",
+    "full retained-memory branch probabilities normalized 4",
+    "full retained-memory branch probabilities normalized 5",
+    "full retained-memory branch probabilities normalized 6",
+    "full retained-memory branch probabilities normalized 7",
+    "replacement preserves old unknown Q R in retained memory",
+    "complete reference coarse-map identity",
+    "fine neutral-branch record still carries raw bias",
+    "finite coin/depolarization effect bound (-0.05, 0.0)",
+    "finite coin/depolarization effect bound (-0.05, 0.04)",
+    "finite coin/depolarization effect bound (0.0, 0.0)",
+    "finite coin/depolarization effect bound (0.0, 0.04)",
+    "finite coin/depolarization effect bound (0.05, 0.0)",
+    "finite coin/depolarization effect bound (0.05, 0.04)",
+    "unfair branch retains predicted scalar bias",
+    "nonzero arbitrarily small bias does not preserve exact spectral rank one",
+    "Pauli coordinate changes do not change centering rule"
+  ],
+  "strict_source": {
+    "domain": "original closed 480/1077 cube",
+    "squared_radius_u_derivative_upper": "-10247346983/4000000000000",
+    "strict_upper": "-1/400",
+    "bloch_z_strict_lower": "2/25",
+    "embedding_lower": "59/240000",
+    "Q_response_separation_lower": "59/9120000",
+    "ambient_isospectral_dimension": 2,
+    "closed_cube_dimension_upper": 2,
+    "center_angular_rank": 2
+  },
+  "effect_formula": "F=I/2+tf(E)/2",
+  "effect_center_diagnostic": [
+    0.5,
+    -0.023432079734399598,
+    0.034478328468947064,
+    0.08029221220775985
+  ],
+  "effect_eigenvalues_diagnostic": [
+    0.40953090673656667,
+    0.5904690932634333
+  ],
+  "raw_bias_diagnostic": 0.5739062588509245,
+  "retained_memory_residual": 0.0,
+  "reference_map_residual": 5.551115381619718e-17,
+  "effect_probability_residual": 3.3306690738754696e-16,
+  "fine_record_probabilities_diagnostic": [
+    [
+      0.32959646478322496,
+      0.17040353521677515
+    ],
+    [
+      0.28695312942546236,
+      0.2130468705745378
+    ]
+  ],
+  "finite_error_example_max": 0.020418175315026772,
+  "exactness_boundary": {
+    "example_bias": "1/1000",
+    "unfair_invariant_minor": [
+      "-114252894189/15625000000000000000",
+      "-1826424087561/250000000000000000000"
+    ],
+    "unfair_exact_spectral_rank": 2,
+    "small_statistical_error_does_not_preserve_exact_level_dimension": true
+  },
+  "robustness": "half diamond instrument error <= eps_I+abs(delta)+(.5-delta)*eps_D, after tracing replacement memory; full lifted error needs its own certificate",
+  "source_hashes": {
+    "1078/check.py": "3a3fe4ba8b207061d8fd942b9a96ed0504998e20f88ef51e5e35d7e1cb5fd29c",
+    "1078/results.json": "c70def457a6b6478e96e13648262850f8bb45f50ba771283182a009fcee1c4c3",
+    "1077/proof.md": "716b8b8a77900cb23e3fda9987f90c7c00dadad5212a5d83ebde1fad4a743f15",
+    "1077/independent_results.json": "e9882bfc8a91b1da58e6633f3a1aefc9a639698b0d4da1af79c09a1cfb25a669"
+  },
+  "scope": {
+    "fixed_source_independent_preprocessing": true,
+    "new_classical_axis_feedback": false,
+    "source_parameter_estimation": false,
+    "full_fine_task_isospectral_or_covariant": false,
+    "probe_original_marginal_preserved": false,
+    "original_H_autonomously_generates_added_controls": false,
+    "actual_reorientation_generated": false,
+    "spatial_dimension_derived": false,
+    "new_accepted_cognitive_axioms": 0,
+    "empirical_results": 0
+  }
+}

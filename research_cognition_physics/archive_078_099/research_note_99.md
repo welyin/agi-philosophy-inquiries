@@ -8,18 +8,18 @@
 
 仍使用第 97 轮相同的两次写入。只访问 M,N：
 
-\[
+$$
 D_G=\sqrt{1-c^2}=v,\qquad D_H=\sqrt{1-d^2}=w.
-\]
+$$
 
 这里 D_G、D_H 是两套等先验本征态校准任务各自的最优记忆迹距离。与只看 N 的 c w 相比，联合记忆恢复了完整 w。
 
 实门能够有限步读取这项关联。因此同一套未读的存储，在之后选择 G 或 H 时，分别达到
 
-\[
+$$
 P_G^{(m)}=\frac{1+\gamma_m v}{2},\qquad
 P_H^{(m)}=\frac{1+\gamma_m w}{2}.
-\]
+$$
 
 **每次运行选择其中一个查询。** 这不提供同时取得两个各自最优答案的办法；相干存储的查询选择权，与已经输出的两个经典答案必须分开核验。
 
@@ -27,34 +27,34 @@ P_H^{(m)}=\frac{1+\gamma_m w}{2}.
 
 对一组条件记忆 m_±(c)，定义
 
-\[
+$$
 A_c=|m_-\rangle\langle m_-|+|m_+\rangle\langle m_+|,
-\]
+$$
 
-\[
+$$
 B_c=|m_-\rangle\langle m_+|+|m_+\rangle\langle m_-|,
 \qquad
 D_c=|m_+\rangle\langle m_+|-|m_-\rangle\langle m_-|.
-\]
+$$
 
 对第 98 轮 G、H 校准输入，实际两记忆约化态分别为
 
-\[
+$$
 \rho^G_s=|m_s(c)\rangle\langle m_s(c)|\otimes\frac{A_d}{2},
-\]
+$$
 
-\[
+$$
 \boxed{\rho^H_t=\frac{A_c\otimes A_d+tB_c\otimes D_d}{4}.}
-\]
+$$
 
 第一式说明 G 信息保存在 M，加入 N 没有额外提高它的最优区分度。
 
 第二式中，B_c 的本征值为 c±1，故 ||B_c||₁=2；D_d 的本征值为 ±w，故 ||D_d||₁=2w。因此
 
-\[
+$$
 \frac12\|\rho^H_+-\rho^H_-\|_1
 =\frac14\|B_c\|_1\|D_d\|_1=w.
-\]
+$$
 
 若忽略 M，只剩 tr B_c=2c，才得到 c w。信息差额来自联合关联，没有增加一次对旧系统的写入。
 
@@ -62,23 +62,23 @@ D_c=|m_+\rangle\langle m_+|-|m_-\rangle\langle m_-|.
 
 记
 
-\[
+$$
 N_c=cX-vZ,\qquad L_c=cZ+vX,\qquad N_d=dX-wZ.
-\]
+$$
 
 两个最优理想记忆查询为
 
-\[
+$$
 O_G=N_c\otimes I,\qquad
 \boxed{O_H=L_c\otimes N_d.}
-\]
+$$
 
 它们不仅对校准输入奏效；完整等距映射满足
 
-\[
+$$
 V^\dagger(O_G\otimes I_{\mathrm{old}})V=vG,\qquad
 V^\dagger(O_H\otimes I_{\mathrm{old}})V=wH.
-\]
+$$
 
 所以对任意旧输入及旁观系统，它们分别实现相应无偏弱效应。
 
@@ -99,9 +99,9 @@ G 查询沿用第一份记忆的原读取轴。H 查询有两条实现路线：
 
 若两个记忆已分开，可分别读取 M 的 L_c 和 N 的 N_d，将两个符号相乘。各读一次时成功率为
 
-\[
+$$
 P_H^{\mathrm{local}}=\frac{1+\alpha^2w}{2}.
-\]
+$$
 
 需两次原局部读取和一个结果位的通信，无需再次共同量子门。两人读的都是为 H 选择的轴；第一方没有在同一过程中获得原 G 查询。
 
@@ -127,16 +127,16 @@ c=d=4/5，对旧态的最坏扰动仍为 0.19：
 
 L_c 与 N_c 是正交的 Pauli 方向，因此
 
-\[
+$$
 O_GO_H+O_HO_G=0.
-\]
+$$
 
 更具体地，当 c<1、d<1 时，两套校准的差矩阵均可逆：
 
-\[
+$$
 \rho^G_+-\rho^G_-=\frac{D_c\otimes A_d}{2},\qquad
 \rho^H_+-\rho^H_-=\frac{B_c\otimes D_d}{2}.
-\]
+$$
 
 二态等先验最优辨认的正效应，必须是各差矩阵的正谱投影；可逆性使它唯一。上述最优投影分别为 (I+O_G)/2、(I+O_H)/2。
 
@@ -148,15 +148,15 @@ O_GO_H+O_HO_G=0.
 
 c=d=0 时，
 
-\[
+$$
 O_G=-ZI,\quad O_H=-XZ,\quad O_K=-iO_GO_H=YZ.
-\]
+$$
 
 对任意旧四维复态 ρ，令 g=tr(Gρ)、h=tr(Hρ)、k=tr(Kρ)，实际两记忆约化态为
 
-\[
+$$
 \boxed{\rho_{MN}=\frac{I-gZI-hXZ+kYZ}{4}.}
-\]
+$$
 
 这三个编码算子平方为 I、两两反对易，保存一个逻辑二能级系统的关系代数。若输入含复相干，k 可以非零，并保存在记忆的复关联中；原实效应并不因此自动拥有直接读取 k 的权限。
 

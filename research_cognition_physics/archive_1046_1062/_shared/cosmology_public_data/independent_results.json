@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-08",
+  "review_status": "arithmetic_passed",
+  "new_research_round": null,
+  "scientific_increment": 0,
+  "method": "Decimal 60-digit square root and erfc inversion, no author import",
+  "author_assets_sha256": {
+    "inputs.json": "8909ecc1665febcf07a552133e04c1afca1393e38fc20979a59017ee91a7342b",
+    "check.py": "8729adce69ad4d8fac16db057ce66b33a7b0563b377882984e3c327f9a926c81",
+    "results.json": "6af7ede38d17db8e1cfc3fc59626763f3f55d41e8ce9219c88d932269c581500"
+  },
+  "source_transcription": "Independently read Planck eq22/table2/sec2.1; Cooke eq10; Launders et al eq3-6/12 and table2",
+  "normal_quantile_97_5": 1.959963984540054,
+  "rows": [
+    {
+      "method": "GP",
+      "delta_observation_minus_prediction": 0.085,
+      "sigma": 0.05,
+      "z": 1.7,
+      "two_sided_p": 0.08913092551708612,
+      "interval_95": [
+        -0.0129981992270027,
+        0.1829981992270027
+      ]
+    },
+    {
+      "method": "PRIMAT",
+      "delta_observation_minus_prediction": 0.083,
+      "sigma": 0.04763402145525822,
+      "z": 1.7424520849653733,
+      "two_sided_p": 0.08142936876748581,
+      "interval_95": [
+        -0.010360966491114313,
+        0.17636096649111432
+      ]
+    },
+    {
+      "method": "PArthENoPE",
+      "delta_observation_minus_prediction": 0.015,
+      "sigma": 0.05161395160225576,
+      "z": 0.2906190968595482,
+      "two_sided_p": 0.7713426530081504,
+      "interval_95": [
+        -0.0861614862402147,
+        0.1161614862402147
+      ]
+    }
+  ],
+  "maximum_author_difference": 3.9968028886505635e-15,
+  "comparisons": 18,
+  "independent_method_average": null,
+  "physical_prediction_recomputed": false,
+  "statistical_coverage_certified": false
+}

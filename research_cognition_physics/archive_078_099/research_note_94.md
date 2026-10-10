@@ -14,22 +14,22 @@
 
 记
 
-\[
+$$
 |v(c)\rangle=c|0\rangle+\sqrt{1-c^2}|1\rangle,\qquad 0\le c\le1.
-\]
+$$
 
 累积记忆 A 和新记忆 B 的两个候选是
 
-\[
+$$
 |00\rangle,\qquad |v(a)\rangle_A|v(b)\rangle_B.
-\]
+$$
 
 它们记录的是**同一个二值关系**，不是两个独立标签。要求一个与未知标签无关的实正交门 T 满足
 
-\[
+$$
 T|00\rangle=|00\rangle,\qquad
 T|v(a)v(b)\rangle=|v(ab)\rangle_A|0\rangle_B.
-\]
+$$
 
 两边候选内积均为 ab，故不存在内积障碍。下面给出实际有限门，而不止存在性论证。
 
@@ -37,10 +37,10 @@ T|v(a)v(b)\rangle=|v(ab)\rangle_A|0\rangle_B.
 
 令 s_a=√(1−a²)、s_b=√(1−b²)，定义
 
-\[
+$$
 \phi=-2\operatorname{atan2}(s_b,b),\qquad
 \beta=\operatorname{atan2}(a s_b,s_a).
-\]
+$$
 
 当两个 atan2 参数均为零时取 β=0。记 R_P(t)=exp(−itP/2)。按实际时间顺序执行：
 
@@ -55,16 +55,16 @@ T|v(a)v(b)\rangle=|v(ab)\rangle_A|0\rangle_B.
 
 前四段合成为 A=1 时对 B 执行 R_y(φ) 的受控门。它固定 |00〉，并将第二个候选的坐标
 
-\[
+$$
 [ab,\;a s_b,\;s_a b,\;s_a s_b]^T
 \longmapsto [ab,\;a s_b,\;s_a,\;0]^T.
-\]
+$$
 
 后两段的生成元相互交换，乘积为 exp[−iβ(YX−XY)/2]：在偶宇称平面上为恒等，在 |01〉、|10〉平面上是普通 β 旋转。因此
 
-\[
+$$
 [a s_b,s_a]^T\longmapsto[0,\sqrt{1-a^2b^2}]^T.
-\]
+$$
 
 目标映射得证。所有脉冲都含一个 Y，矩阵为实，行列式为 +1；a、b 为 0 或 1 的端点也适用。未优化掉的零角脉冲仍计入上述编译上界。
 
@@ -72,16 +72,16 @@ T|v(a)v(b)\rangle=|v(ab)\rangle_A|0\rangle_B.
 
 沿用旧系统的 Π_±=(I±YY)/2。先向 A 写入 c₁；此后每次向同一个暂存位 B 写入 c_j，再应用 T(C_{j−1},c_j)，其中
 
-\[
+$$
 C_j=\prod_{i=1}^{j}c_i.
-\]
+$$
 
 归纳得到作用于**任意旧输入**的等距映射
 
-\[
+$$
 V_n=|0\rangle_A|0\rangle_B\otimes\Pi_-
     +|v(C_n)\rangle_A|0\rangle_B\otimes\Pi_+.
-\]
+$$
 
 这不只是对两个混态的概率核对。由线性性，它保留跨扇区的复相干，并能张量任意旁观系统。B 与其余系统确定地分离，因此再次使用 B 无需测量、筛选或耗散重置。
 
@@ -89,11 +89,11 @@ V_n=|0\rangle_A|0\rangle_B\otimes\Pi_-
 
 若只看旧约化状态，仍有
 
-\[
+$$
 \Phi_{C_n}(\rho)=\frac{1+C_n}{2}\rho+
  \frac{1-C_n}{2}(YY\otimes I)\rho(YY\otimes I),
 \qquad \Delta_n=\frac{1-C_n}{2}.
-\]
+$$
 
 压缩没有额外增加这项扰动。对于某一确定扇区内的任意相关旧整体，旧整体完全不变，累积记忆与它因子分离。对跨扇区输入，旧约化态可以变化，关联转移到记忆；不能将 Δ 解释为整个系统或认知能力丢失的比例。
 
@@ -101,10 +101,10 @@ V_n=|0\rangle_A|0\rangle_B\otimes\Pi_-
 
 去掉已因子分离的 B 后，
 
-\[
+$$
 V_n=W_{\theta_{\mathrm{eff}}},\qquad
 \theta_{\mathrm{eff}}=2\arccos C_n.
-\]
+$$
 
 所以，在第 91 轮允许 θ 在 [0,π] 自由选取的模型里，一次较强写入和多次弱写入加压缩的**有效等距映射相同**，包括任意外部关联。
 

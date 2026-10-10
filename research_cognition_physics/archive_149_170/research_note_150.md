@@ -19,16 +19,16 @@
 
 每对待合并的修正都反对易，故
 
-\[
+$$
 W_0=(U_0+U_2)/\sqrt2,\qquad
 W_1=(U_3+U_5)/\sqrt2
-\]
+$$
 
 是实正交矩阵。它们并非两操作的概率混合，而是一个明确的可逆操作。按消息 g 执行
 
-\[
+$$
 D_g=\begin{pmatrix}K_+\\W_gK_-\end{pmatrix}^{T}.
-\]
+$$
 
 恢复器不读取 Q，也不重新准备未知输入。细标签差异留在封闭环境；对它求偏迹只是描述访问范围。
 
@@ -36,21 +36,21 @@ D_g=\begin{pmatrix}K_+\\W_gK_-\end{pmatrix}^{T}.
 
 设 J_A、J_B 分别是在负取向八维空间的 A、B 上作用的实反对称矩阵 −iY。定义
 
-\[
+$$
 \widetilde J_A=K_-^TJ_AK_-,\qquad
 \widetilde J_B=K_-^TJ_BK_-,\qquad
 L=P_++P_-/\sqrt2.
-\]
+$$
 
 一对修正经过中点逆操作后，负取向块是 (I±J)/√2。对两分支求和消去正负交叉项。加上两条单独修正，得到
 
-\[
+$$
 \boxed{
 \mathcal R_4(\rho)
 =\frac13\rho+\frac23L\rho L
 +\frac16\widetilde J_A\rho\widetilde J_A^T
 +\frac16\widetilde J_B\rho\widetilde J_B^T.}
-\]
+$$
 
 这是迹保持的实通道。此式对任意输入都成立；下一节的精确误差使用输入约束。
 
@@ -58,36 +58,36 @@ L=P_++P_-/\sqrt2.
 
 实际上只需 Ω 实对称且 Tr(P_±Ω)=1/2，比独立编码条件更宽。取 Ω 的任意完整纯化 |ψ⟩，令
 
-\[
+$$
 |\psi_\pm\rangle=(P_\pm\otimes I)|\psi\rangle,\qquad
 \|\psi_\pm\|^2=1/2.
-\]
+$$
 
 实对称矩阵与实反对称矩阵的迹内积为零，所以
 
-\[
+$$
 \langle\psi_-|(\widetilde J_j\otimes I)|\psi\rangle
 =\operatorname{Tr}(\Omega\widetilde J_j)=0.
-\]
+$$
 
 与 ψ_+ 的内积也为零，因为 J̃_j 只支撑在负取向。于是两个正误差项都在 span{ψ_+,ψ_-} 的正交补；它们的总迹为 1/6。两误差向量彼此不必正交，这不影响其和为半正定且迹为 1/6。
 
 在归一化基 √2ψ_+、√2ψ_- 中，输出减输入的剩余块为
 
-\[
+$$
 B=\begin{pmatrix}
 0&-(2-\sqrt2)/6\\
 -(2-\sqrt2)/6&-1/6
 \end{pmatrix}.
-\]
+$$
 
 这个块有一正一负两个本征值，迹范数为 √(25−16√2)/6。因此
 
-\[
+$$
 \boxed{D((\mathcal R_4\otimes\mathrm{id})(\psi),\psi)
 =\delta_4=\frac{1+\sqrt{25-16\sqrt2}}{12}
 \approx0.2116932602865452.}
-\]
+$$
 
 每一个满足条件的完整纯化都达到同一个数，无需知道其状态。对任意混合外部扩展，先进一步纯化再取偏迹；迹距离收缩保证 D≤δ₄。故该方案在原任务上的最坏误差**恰为** δ₄，不是对有限随机样本的外推。
 

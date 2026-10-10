@@ -8,33 +8,33 @@
 
 沿用第165轮四个固定有理角度，记原负取向误差块为W_rg=Ũ_gᵀU_r。定义实反对称矩阵
 
-\[
+$$
 J=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\qquad
 G=Z_R\otimes X_A\otimes J_B,\qquad
 H=Z_R\otimes J_A\otimes Z_B.
-\]
+$$
 
 直接矩阵乘法给出
 
-\[
+$$
 G^T=-G,\ H^T=-H,\ G^2=H^2=-I_8,\ GH=HG=I_R\otimes Z_A\otimes X_B.
-\]
+$$
 
 因此可取共同相干修正
 
-\[
+$$
 E(\varepsilon)=e^{-\varepsilon G}e^{\varepsilon H}
 =(cI_8-sG)(cI_8+sH),\qquad c=\cos\varepsilon,\ s=\sin\varepsilon.
-\]
+$$
 
 本轮固定tan(ε/2)=3/800，ε约0.007499964844弧度；c、s及E均为精确有理矩阵。完整取向操作是diag(I₈,E)，Q保持相干且不被读取。
 
 令T为原取向坐标变换，则新解码器为
 
-\[
+$$
 D_g^{\rm new}=T^T\operatorname{diag}(I_8,E\widetilde U_g^T),\qquad
 A_{rg}^{\rm new}=T^T\operatorname{diag}(I_8,EW_{rg})T.
-\]
+$$
 
 E相同，不需要多判断一个未知标签；两种Y报告原先固定的负块也被E改变，所以新方案已不属于第167轮的四角度类别。它仍只访问已有Q、R、A、B，不读取封闭源纯化或噪声浴。
 
@@ -42,17 +42,17 @@ E相同，不需要多判断一个未知标签；两种Y报告原先固定的负
 
 E在ε=0的导数是H−G。在一个固定来源处，沿用Schur根生成的接触系数a_rg，令
 
-\[
+$$
 D=I_8-\sum_{r,g}a_{rg}EW_{rg},\qquad
 D'=-\sum_{r,g}a_{rg}(H-G)EW_{rg}.
-\]
+$$
 
 则误差对ε的导数为
 
-\[
+$$
 \frac{\operatorname{Tr}[\sigma\operatorname{Tr}_R(D^TD'+D'^TD)]}{4d},
 \qquad d=1-\sum_{r,g}a_{rg}^2/p_{rg}.
-\]
+$$
 
 在第166轮旧合法见证处，ε=0的数值导数约−0.06858316，显示一个显著的局部下降方向。解析式与有限差分核对，但它只说明这个固定输入的变化，不能直接证明对全部未知输入取最坏后的误差下降。
 

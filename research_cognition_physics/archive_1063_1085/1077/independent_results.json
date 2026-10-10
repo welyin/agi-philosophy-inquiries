@@ -1,0 +1,309 @@
+{
+  "round": 1077,
+  "status": "passed_diagnostic",
+  "assertion_groups": 11,
+  "groups": [
+    "archived source normalization and original generators",
+    "rebuilt original fixed reader is a physical joint effect",
+    "full coherent graph state and matching-reference statistics",
+    "both original correlated-source branches remain reference-safe",
+    "existing original distance chart is recovered",
+    "coherence is retained rather than replacing the source by its diagonal",
+    "three-scale finite differences agree with exact Frechet formula",
+    "finite H-on pulse agrees with the old Duhamel error scale",
+    "old-data storage and independent new-probe reader contractions",
+    "well-resolved nondegenerate numerical candidate",
+    "final comparison to author exact ideal source and finite-pulse enclosure"
+  ],
+  "parameters": {
+    "p0": [
+      0.2,
+      0.4,
+      1.5707963267948966
+    ],
+    "pulse_time": 1e-10,
+    "reader_time": 0.7,
+    "reader": "source 1 fixed Z+"
+  },
+  "graph_eigenvalues": [
+    0.08567177495993945,
+    0.08574327154808911,
+    0.09824993657836197,
+    0.10446496781108339,
+    0.11071069020304146,
+    0.5151593588994854
+  ],
+  "graph_coherence_frobenius": 0.38237694788806886,
+  "matching_pair_totals": [
+    0.3333333333333336,
+    0.33333333333333365,
+    0.3333333333333337
+  ],
+  "matching_pair_derivative_max": 2.1510571102112408e-16,
+  "branch_matching_residual": 4.440892098500626e-16,
+  "old_Q": [
+    0.0036477992965549544,
+    0.0044149624680618615,
+    -0.004468155111879646
+  ],
+  "old_Q_Jacobian": [
+    [
+      -0.15517421715800742,
+      0.141515846647769,
+      -0.02147471484907013
+    ],
+    [
+      -0.0025687760217135217,
+      0.027640714275257133,
+      -0.0032217410479331073
+    ],
+    [
+      0.0019546500926607563,
+      -0.027926539050413465,
+      0.0030876609065088236
+    ]
+  ],
+  "old_Q_Jacobian_reproduction_residual": 2.498001805406602e-16,
+  "old_Q_singular_values_diagnostic": [
+    0.21314341760203806,
+    0.02666538232954999,
+    0.0001001024224357713
+  ],
+  "old_Q_determinant_diagnostic": 5.689371952472427e-07,
+  "effect_center": [
+    0.5739062588509245,
+    -0.046864159468799196,
+    0.06895665693789413,
+    0.1605844244155197
+  ],
+  "effect_Jacobian": [
+    [
+      0.000659224854910264,
+      0.0031021590331159095,
+      -0.0014668562067608063
+    ],
+    [
+      0.001256031183279201,
+      0.00590449162933127,
+      -5.244335045257771e-05
+    ],
+    [
+      -0.002929158734344792,
+      -0.004025677247998283,
+      0.0012591950429559561
+    ],
+    [
+      -0.016874518737329987,
+      -0.02845948457496116,
+      -8.016789964244823e-05
+    ]
+  ],
+  "Bloch_singular_values_diagnostic": [
+    0.03394188522931773,
+    0.0019975570497335142,
+    0.0012129596388306089
+  ],
+  "Bloch_determinant_diagnostic": -8.223969710117987e-08,
+  "Bloch_vs_Q_local_derivative_diagnostic": [
+    [
+      0.005112054801003176,
+      -3.8035099316504937,
+      -3.950105880674045
+    ],
+    [
+      0.05145333147389125,
+      -6.723614552051242,
+      -6.249910502721279
+    ],
+    [
+      0.05299502407752402,
+      17.611375157003604,
+      18.718757381315026
+    ]
+  ],
+  "population_only_effect_Jacobian": [
+    [
+      -0.0032538575030588712,
+      0.004048431514530659,
+      -0.0005673941918399928
+    ],
+    [
+      0.001243683996600272,
+      0.00024109444622779069,
+      1.9418016102314438e-05
+    ],
+    [
+      0.0028562797099537397,
+      -0.0022785541577612497,
+      0.0003589882449005653
+    ],
+    [
+      -0.0004575126553682746,
+      0.00034139879813083456,
+      -5.47225999934398e-05
+    ]
+  ],
+  "coherence_effect_Jacobian": [
+    [
+      0.003913082357969135,
+      -0.0009462724814147498,
+      -0.0008994620149208135
+    ],
+    [
+      1.2347186678929051e-05,
+      0.005663397183103479,
+      -7.186136655489215e-05
+    ],
+    [
+      -0.0057854384442985315,
+      -0.0017471230902370329,
+      0.0009002067980553908
+    ],
+    [
+      -0.016417006081961713,
+      -0.028800883373091994,
+      -2.544529964900843e-05
+    ]
+  ],
+  "finite_difference_diagnostics": [
+    {
+      "step": 0.001,
+      "effect_jacobian": [
+        [
+          0.0006592175444318678,
+          0.003102150375499168,
+          -0.0014668552288666183
+        ],
+        [
+          0.0012560342530346217,
+          0.005904459987578738,
+          -5.244331548771481e-05
+        ],
+        [
+          -0.0029291240376484195,
+          -0.004025672185922108,
+          0.0012591942034923258
+        ],
+        [
+          -0.016874378282727073,
+          -0.028459365706386953,
+          -8.016784620732992e-05
+        ]
+      ],
+      "max_difference_from_Frechet": 1.4045460291350897e-07
+    },
+    {
+      "step": 0.0001,
+      "effect_jacobian": [
+        [
+          0.0006592247821236366,
+          0.003102158946077564,
+          -0.0014668561980397473
+        ],
+        [
+          0.0012560312139343376,
+          0.005904491312939671,
+          -5.244335001857101e-05
+        ],
+        [
+          -0.002929158387338907,
+          -0.00402567719743464,
+          0.0012591950344504224
+        ],
+        [
+          -0.016874517332704304,
+          -0.02845948338639345,
+          -8.016789936623125e-05
+        ]
+      ],
+      "max_difference_from_Frechet": 1.4046256831268256e-09
+    },
+    {
+      "step": 1e-05,
+      "effect_jacobian": [
+        [
+          0.0006592248512600207,
+          0.003102159030551381,
+          -0.001466856211624672
+        ],
+        [
+          0.001256031184072432,
+          0.00590449162633566,
+          -5.2443350320230316e-05
+        ],
+        [
+          -0.0029291587311211474,
+          -0.004025677247516607,
+          0.0012591950421919353
+        ],
+        [
+          -0.016874518723899046,
+          -0.02845948456333279,
+          -8.016790083882164e-05
+        ]
+      ],
+      "max_difference_from_Frechet": 1.3430940387637591e-11
+    }
+  ],
+  "ideal_effect_Jacobian": [
+    [
+      0.000659224854700026,
+      0.003102159035049682,
+      -0.0014668562064826841
+    ],
+    [
+      0.001256031182441534,
+      0.005904491628339807,
+      -5.244334985250599e-05
+    ],
+    [
+      -0.0029291587333832567,
+      -0.004025677250154689,
+      0.0012591950425370443
+    ],
+    [
+      -0.016874518731435258,
+      -0.028459484573451013,
+      -8.016790244724065e-05
+    ]
+  ],
+  "finite_pulse_effect_Jacobian_difference": 5.894729149247269e-12,
+  "old_Duhamel_entry_bound": 3.24e-08,
+  "retained_source_probability_residual": 1.3322676295501878e-15,
+  "fixed_reader_probability_residual": 2.220446049250313e-16,
+  "source_hashes": {
+    "source480": "c30d6bf95cb714b873a8e6cd6a4adc07b084603918574954b4fb6cf0b665faae",
+    "reader474": "b6fd15d0bcc52b150b39e2d06b791f8127060253d9727bb6487036ffdffe57ab",
+    "frozen1076proof": "e66c3acc9eddeb10f4329d22f73c338eb0097ca36b5b18952a1ffe78943616b7",
+    "independent_check": "fbbcaa1eaf6ebc823872c6bd86df75ec98599fcfc3aafc203513a5c7538d760d"
+  },
+  "scope": {
+    "strict_rank_proof_from_float": false,
+    "all_graph_coherences_retained": true,
+    "coordinate_to_Pauli_feedback": false,
+    "new_dephasing_device": false,
+    "old_data_and_records_destroyed": false,
+    "complete_location_encoded_in_one_qubit": false,
+    "same_Q_arbitrary_history_reader_equivalence": false,
+    "fixed_actual_source_control_context": true,
+    "spatial_dimension_derived": false,
+    "independent_probe_and_storage_permissions_are_inputs": true
+  },
+  "author_comparison": {
+    "performed_only_after_independent_calculation": true,
+    "ideal_intermediate_max_difference": 1.805196617188365e-16,
+    "actual_finite_pulse_column_max_difference": [
+      5.894843640996683e-12,
+      2.156341945280804e-12,
+      2.8048038067454706e-12
+    ],
+    "author_finite_pulse_entry_bounds": [
+      3.2400000750614895e-08,
+      3.2400000750614895e-08,
+      3.600000083401655e-09
+    ],
+    "actual_inside_author_strict_enclosure": true,
+    "author_code_sha256": "ad68e63f4c91f01b5af8a719ff1d8596bec6cf3694c7f0d406abb658a3293e87",
+    "author_results_sha256": "131f634da1aca6d3f69c110e5a3804505e4784c70100ade73b443f5a7ad8d65b"
+  }
+}

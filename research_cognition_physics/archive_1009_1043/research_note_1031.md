@@ -10,7 +10,9 @@
 
 核心解析证书为：采用下文共同单位与时间窗，$g_3=1,2$ 的磁能占比差满足
 
-$$\boxed{M_2(1/4)-M_1(1/4)\ge\frac{119}{10240}>0.}\tag{1}$$
+$$
+\boxed{M_2(1/4)-M_1(1/4)\ge\frac{119}{10240}>0.}\tag{1}
+$$
 
 不是通过拟合现有实验得到此值。它是明确模型类别中的严格有限预测差。
 
@@ -28,16 +30,22 @@ $$\boxed{M_2(1/4)-M_1(1/4)\ge\frac{119}{10240}>0.}\tag{1}$$
 
 在固定周期的三维平坦环面上取局部FLRW度规
 
-$$ds^2=a(\eta)^2(-d\eta^2+\delta_{ij}dx^idx^j).\tag{2}$$
+$$
+ds^2=a(\eta)^2(-d\eta^2+\delta_{ij}dx^idx^j).\tag{2}
+$$
 
 取 $SU(3)$ 的前三个Gell-Mann生成元的一半 $T_i$，满足 $[T_i,T_j]=i\epsilon_{ijk}T_k$、$\operatorname{Tr}(T_iT_j)=\delta_{ij}/2$。它们构成闭合的嵌入 $SU(2)$ 子代数。令 $g=g_3$，并取
 
-$$A_0=0,\qquad A_i=f_g(\eta)T_i,\qquad
-F_{0i}=f'_gT_i,\qquad F_{ij}=g f_g^2\epsilon_{ijk}T_k.\tag{3}$$
+$$
+A_0=0,\qquad A_i=f_g(\eta)T_i,\qquad
+F_{0i}=f'_gT_i,\qquad F_{ij}=g f_g^2\epsilon_{ijk}T_k.\tag{3}
+$$
 
 这里 $F=dA-ig[A,A]$。完整Yang–Mills空间方程归约为
 
-$$f_g''+2g^2f_g^3=0,\qquad f_g(0)=0,\quad f'_g(0)=p>0.\tag{4}$$
+$$
+f_g''+2g^2f_g^3=0,\qquad f_g(0)=0,\quad f'_g(0)=p>0.\tag{4}
+$$
 
 Gauss约束由 $\sum_i[A_i,A_i']=0$ 满足；Bianchi恒等式及其余五个色方向由同一曲率和子代数闭合满足。数值检查从完整 $3\times3$ 矩阵曲率和协变散度计算，不只检验另写的标量ODE。各向同性Yang–Mills背景是成熟结果，参见[Bielefeld–Caldwell，§II，式(5)—(8)](https://arxiv.org/pdf/1503.05222)；本轮新增的是共同父族嵌入和有限自由证书。
 
@@ -49,21 +57,29 @@ Gauss约束由 $\sum_i[A_i,A_i']=0$ 满足；Bianchi恒等式及其余五个色�
 
 完整Hilbert张量给出
 
-$$\rho_{\rm YM}=\frac{3}{2a^4}(f_g'^2+g^2f_g^4),\qquad
-P_{\rm YM}=\frac{\rho_{\rm YM}}3,\qquad T_{0i}=0.\tag{5}$$
+$$
+\rho_{\rm YM}=\frac{3}{2a^4}(f_g'^2+g^2f_g^4),\qquad
+P_{\rm YM}=\frac{\rho_{\rm YM}}3,\qquad T_{0i}=0.\tag{5}
+$$
 
 由式(4)严格得到第一积分 $f_g'^2+g^2f_g^4=p^2$。于是对每一个正g，在整个共同正规区间有
 
-$$\rho_{\rm YM}=\frac{3p^2}{2a^4},\qquad P_{\rm YM}=\frac{p^2}{2a^4}.\tag{6}$$
+$$
+\rho_{\rm YM}=\frac{3p^2}{2a^4},\qquad P_{\rm YM}=\frac{p^2}{2a^4}.\tag{6}
+$$
 
 这不只是初片密度相等，而是完整背景应力相等。设固定Higgs等真空能为 $V_{\rm vac}$，定义 $\Lambda_{\rm eff}=\Lambda+V_{\rm vac}/M_P^2$。Hamiltonian、动量及空间Einstein方程同时归为
 
-$$a'^2=\frac{p^2}{2M_P^2}+\frac{\Lambda_{\rm eff}}3a^4,
-\qquad a''=\frac{2\Lambda_{\rm eff}}3a^3.\tag{7}$$
+$$
+a'^2=\frac{p^2}{2M_P^2}+\frac{\Lambda_{\rm eff}}3a^4,
+\qquad a''=\frac{2\Lambda_{\rm eff}}3a^3.\tag{7}
+$$
 
 相同 $a_0>0$ 和膨胀支给同一个a。一般 $\Lambda_{\rm eff}$ 只承诺共同正规时间窗，不能假定任意参数都覆盖指定终点。下面明确采用 $\Lambda_{\rm eff}=0$，因此
 
-$$a(\eta)=a_0+\frac{p\eta}{\sqrt2 M_P}.\tag{8}$$
+$$
+a(\eta)=a_0+\frac{p\eta}{\sqrt2 M_P}.\tag{8}
+$$
 
 这是对共同真空偏置的选择，未解决宇宙学常数问题。保存的几何校准取 $p=a_0=1,M_P^2=2$，此时 $a(1/4)=9/8$，从初片到终点的固有时为 $17/64$。这些数值用于方程检验，未认证为现实有效能窗。来源非零，几何确实演化；同一份源的反作用没有被关闭。
 
@@ -71,9 +87,11 @@ $$a(\eta)=a_0+\frac{p\eta}{\sqrt2 M_P}.\tag{8}$$
 
 磁能占比为
 
-$$M_g(\eta)=\frac{\rho_B}{\rho_{\rm YM}}=
+$$
+M_g(\eta)=\frac{\rho_B}{\rho_{\rm YM}}=
 \frac{g^2f_g(\eta)^4}{p^2}
-=\frac12\left(1+\frac{F^A_{\mu\nu}F_A^{\mu\nu}}{4\rho_{\rm YM}}\right).\tag{9}$$
+=\frac12\left(1+\frac{F^A_{\mu\nu}F_A^{\mu\nu}}{4\rho_{\rm YM}}\right).\tag{9}
+$$
 
 $\rho_{\rm YM}$ 是Yang–Mills应力的唯一未来类时本征方向所测密度，排除真空常量。因此式(9)可用字段和应力定义，是规范不变量；在共同膨胀分支上可按同一单调密度值比较，也可用同一初片后的共同固有时 $d\tau=a\,d\eta$ 比较。差异不来自分别改时间坐标。
 
@@ -81,17 +99,21 @@ $\rho_{\rm YM}$ 是Yang–Mills应力的唯一未来类时本征方向所测密�
 
 在 $q=g^2p^2\eta^4\le1$ 的早期窗口，积分式(4)及首次转折的反证给
 
-$$0\le f_g\le p\eta,\qquad
+$$
+0\le f_g\le p\eta,\qquad
 f_g'\ge p-\frac{g^2p^3\eta^4}{2}\ge\frac p2,
-\qquad f_g\ge p\eta-\frac{g^2p^3\eta^5}{10}.\tag{10}$$
+\qquad f_g\ge p\eta-\frac{g^2p^3\eta^5}{10}.\tag{10}
+$$
 
 证明不是先假定整个区间正性：在首次转折前用 $f\le p\eta$，所得严格正导数排除窗口内的首次转折，继而延拓这些界。
 
 以 $\mu=\sqrt p$ 为共同单位，取无量纲 $p=1,T=1/4$。维度恢复后 $T=1/(4\sqrt p)$，其它尺度的比值保持固定。对 $g=1,2$，有
 
-$$M_1(T)\le\frac1{256},\qquad
+$$
+M_1(T)\le\frac1{256},\qquad
 M_2(T)\ge\frac1{64}\left(\frac{639}{640}\right)^4.
-\tag{11}$$
+\tag{11}
+$$
 
 利用Bernoulli界 $(1-1/640)^4\ge159/160$ 即得式(1)。数值轨迹只校准这个解析结论，不承担严格积分误差或现实有效理论误差证明。
 
@@ -99,17 +121,23 @@ M_2(T)\ge\frac1{64}\left(\frac{639}{640}\right)^4.
 
 令 $f_g(\eta)=\sqrt{p/g}\,y(x)$、$x=\sqrt{pg}\,\eta$，则 $y''+2y^3=0$、$y(0)=0,y'(0)=1$，且 $M_g=y(x)^4$。因此
 
-$$\partial_g M_g=\frac{2xy^3y'}g.\tag{12}$$
+$$
+\partial_g M_g=\frac{2xy^3y'}g.\tag{12}
+$$
 
 在 $p=1,T=1/4,g\in[1,2]$ 上，$x^4\le1/64$；式(10)给 $y\ge x(639/640)$、$y'\ge127/128$。再用 $(639/640)^3\ge637/640$，得到
 
-$$\boxed{\frac{80899}{10485760}\le\partial_gM_g(T)\le\frac1{64}.}\tag{13}$$
+$$
+\boxed{\frac{80899}{10485760}\le\partial_gM_g(T)\le\frac1{64}.}\tag{13}
+$$
 
 故每个非空开子区间都含不同的精确经典预测，而非只有两个孤立候选。任意接近的g之差可能低于给定分辨率；可辨性的数学命题不等于有限仪器必能分辨所有g。
 
 若额外有限约束 $F_j(g)\le b_j$ 已有经证明的Lipschitz常数 $L_j$，在 $g_0$ 有严格裕量 $m_j=b_j-F_j(g_0)>0$，那么
 
-$$|g-g_0|\le\min_{j:L_j>0}\frac{m_j}{2L_j}\tag{14}$$
+$$
+|g-g_0|\le\min_{j:L_j>0}\frac{m_j}{2L_j}\tag{14}
+$$
 
 保留这些约束的半裕量；$L_j=0$ 项不限制半径。精确规范和守恒恒等式则沿族精确保留，不靠连续性近似。式(14)只有在实际约束具备这些量时才适用，不能把全部未知量子要求当作自动有裕量。
 

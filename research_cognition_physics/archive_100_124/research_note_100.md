@@ -6,15 +6,15 @@
 
 仍先写入 G=YY，再写入 H=IZ，两个写入重叠为 c、d。令 v=√(1−c²)、w=√(1−d²)。第一份记忆 M 的旧查询轴及其正交轴为
 
-\[
+$$
 A=cX-vZ,\qquad L=cZ+vX,\qquad AL=-LA.
-\]
+$$
 
 在 A 基底上发生纯退相干，保留的相干系数为 λ∈[0,1]。之后只访问两份记忆 M,N，两套校准任务的最优迹距离为
 
-\[
+$$
 \boxed{D_G=v,\qquad D_H=w\max(c,\lambda).}
-\]
+$$
 
 因此旧 G 答案的可读精度可以完全保持，而未来 H 关联查询的优势消失。**阈值为 λ=c**：高于它时应读关联，低于它时应改为只读 N。
 
@@ -24,11 +24,11 @@ A=cX-vZ,\qquad L=cZ+vX,\qquad AL=-LA.
 
 定义作用于第一份记忆的通道
 
-\[
+$$
 \Lambda_\lambda(\omega)=
 \frac{1+\lambda}{2}\omega+
 \frac{1-\lambda}{2}(A\otimes I)\omega(A\otimes I).
-\]
+$$
 
 它保持 A 基底的对角块，把非对角块乘 λ；等价地，保持 A，令 L→λL。λ=1 无退相干，λ=0 完全去掉这组非对角块。
 
@@ -36,10 +36,10 @@ A=cX-vZ,\qquad L=cZ+vX,\qquad AL=-LA.
 
 该通道可用已有实门实现。新环境 E 初始为 |0〉，先把 M 的 A 轴转为 Z，再用旧受控 R_y(2 arccos λ) 将它弱写入 E，最后恢复 M 的坐标。两种条件环境态为
 
-\[
+$$
 |e_+\rangle=|0\rangle,\qquad
 |e_-\rangle=\lambda|0\rangle+\sqrt{1-\lambda^2}|1\rangle.
-\]
+$$
 
 忽略 E 得到 Λ_λ。编译需 1 次两系统旋转、5 次局部旋转、1 份纯环境准备。
 
@@ -49,25 +49,25 @@ A=cX-vZ,\qquad L=cZ+vX,\qquad AL=-LA.
 
 沿用第 99 轮记号。记忆块满足
 
-\[
+$$
 A_c=I+cL,\qquad B_c=cI+L,\qquad D_c=vA.
-\]
+$$
 
 对 H 校准输入 τ_t^H=(I+tH)/4，退相干后的两记忆态为
 
-\[
+$$
 \rho_t^{H,\lambda}=
 \frac{(I+c\lambda L)\otimes A_d+
 t(cI+\lambda L)\otimes D_d}{4}.
-\]
+$$
 
 cI+λL 的本征值为 c±λ，D_d 的本征值为 ±w。因迹范数在张量积下相乘，
 
-\[
+$$
 D_H=\frac14\|cI+\lambda L\|_1\|D_d\|_1
 =\frac{w}{2}\bigl(|c+\lambda|+|c-\lambda|\bigr)
 =w\max(c,\lambda).
-\]
+$$
 
 当 λ>c 时，差矩阵的符号算子是 L⊗N_d，仍为第 99 轮关联查询；λ<c 时则为 I⊗N_d，忽略 M 最优。等号处有零本征值，两种查询都可达到界，代码选择较省门的 N 查询。
 
@@ -77,10 +77,10 @@ G 校准的差矩阵为 D_c⊗A_d/2，而 Λ_λ(D_c)=D_c。因此 D_G=v 不变�
 
 按已知 c、λ 选择对应最优实轴，再用 m 次原读取：
 
-\[
+$$
 P_H^{(m)}=\frac{1+\gamma_m w\max(c,\lambda)}2,\qquad
 P_G^{(m)}=\frac{1+\gamma_m v}2.
-\]
+$$
 
 最优性只指理想的两记忆校准辨认；有限式是明确原门流程达到的值，没有求出所有同资源有限协议的最优性。
 
@@ -102,17 +102,17 @@ G、H 仍分别以对应本征态族校准，每次选择一个查询。退相�
 
 相同轴的退相干满足
 
-\[
+$$
 \Lambda_{\lambda_2}\Lambda_{\lambda_1}
 =\Lambda_{\lambda_1\lambda_2}.
-\]
+$$
 
 若每次保留 19/20，相干经过 n 次为 (19/20)^n。c=4/5 时：
 
-\[
+$$
 (19/20)^4=\frac{130321}{160000}>\frac45,\qquad
 (19/20)^5=\frac{2476099}{3200000}<\frac45.
-\]
+$$
 
 所以第 5 次开始，关联查询不再优于只读 N。这里计数的是指定噪声通道的重复作用，没有引入物理时间。
 

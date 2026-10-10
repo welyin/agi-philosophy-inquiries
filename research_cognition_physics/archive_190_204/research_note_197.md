@@ -8,9 +8,9 @@
 
 沿用[第194轮](research_note_194.md)：状态(x,m)，read读x且不扰动，swap交换两位，flip_memory翻转m；tick执行
 
-\[
+$$
 T_e(x,m)=(m,x\oplus m\oplus e),\quad e\sim\operatorname{Bernoulli}(\eta).
-\]
+$$
 
 噪声只在tick上发生。其他控制理想、可直接执行；执行一次控制不隐含再执行一次tick。若所有控制都经历额外存储噪声，需要另建模型，本轮不偷换这个条件。
 
@@ -28,17 +28,17 @@ T_e(x,m)=(m,x\oplus m\oplus e),\quad e\sim\operatorname{Bernoulli}(\eta).
 
 执行(read,swap,read,swap,read)。真实三次读数为
 
-\[
+$$
 (r_0,r_1,r_2)=(x,m,x).
-\]
+$$
 
 Q的三次读数相互独立均匀。故事件E={r₂=r₀}在真实模型中概率1，在Q中概率1/2，完整记录的总变差距离恰为1/2。只有4个真实读数串，各概率1/4；Q则有8个，各概率1/8。
 
 更一般地，执行read后重复k次(swap,read)，k≥1：
 
-\[
+$$
 \operatorname{TV}(P,Q)=1-2^{-(k-1)}
-\]
+$$
 
 对均匀初态，真实记录只有4个交替串，而Q有2^(k+1)个等概率串。若已知原初态为(0,0)，但仍按同一规则删除m，真实记录确定，误差为1−2^(−k)。这两个公式针对指定Q，不声称已优化所有两标签近似模型。
 

@@ -18,33 +18,33 @@
 
 现有非归一化摘要 z=(w,u,v) 的允许锥是
 
-\[
+$$
 w\ge0,\qquad u^2+v^2\le\alpha^2w^2,
 \qquad \alpha=4\sin(1/4).
-\]
+$$
 
 定义
 
-\[
+$$
 \boxed{\rho(z)=\frac12\left[wI+\frac u\alpha\sigma_z+\frac v\alpha\sigma_x\right].}
-\]
+$$
 
 这里 σ_x、σ_z 是通常的 2×2 Pauli 矩阵；它们与 I 都是实对称矩阵。ρ 的两个特征值是
 
-\[
+$$
 \frac12\left(w\pm\frac{\sqrt{u^2+v^2}}\alpha\right).
-\]
+$$
 
 因此原摘要锥与全部 2×2 实对称半正定矩阵一一对应，Trρ=w，原准备混合也对应矩阵凸混合。w=1 时是实量子比特的圆盘状态空间。
 
 原角度平移 θ 对应实正交矩阵
 
-\[
+$$
 U_\theta=e^{-i\theta\sigma_y/2}
 =\begin{pmatrix}\cos(\theta/2)&-\sin(\theta/2)\\
 \sin(\theta/2)&\cos(\theta/2)\end{pmatrix},
 \quad \rho\mapsto U_\theta\rho U_\theta^T.
-\]
+$$
 
 它准确旋转 (u,v)。使用矩阵书写并没有推导出复数态空间：当前状态根本没有独立的 σ_y 坐标。
 
@@ -52,51 +52,51 @@ U_\theta=e^{-i\theta\sigma_y/2}
 
 先取读取方向 0，结果 s=±1。原分支为
 
-\[
+$$
 A_s(w,u,v)=\frac12
 \left(w+s\eta u,\ \alpha u+s\alpha\eta w,
 \ \alpha\sqrt{1-\eta^2}\,v\right).
-\]
+$$
 
 定义噪声通道
 
-\[
+$$
 \mathcal D_\alpha(\rho)
 =\frac{1+\alpha}{2}\rho+
 \frac{1-\alpha}{2}\sigma_y\rho\sigma_y.
-\]
+$$
 
 它使 σ_x、σ_z 坐标乘以 α，同时保留 σ_y 坐标。令
 
-\[
+$$
 L_s=\operatorname{diag}\left(
 \sqrt{\frac{1+s\eta}{2}},
 \sqrt{\frac{1-s\eta}{2}}\right).
-\]
+$$
 
 则直接逐项相乘得到
 
-\[
+$$
 \boxed{\rho(A_sz)=L_s\mathcal D_\alpha(\rho(z))L_s^\dagger.}
-\]
+$$
 
 例如令 r_z=u/α、r_x=v/α。噪声后平面坐标为 (u,v)，再经过 L_s：
 
-\[
+$$
 w'=\frac{w+s\eta u}{2},\quad
 r_z'=\frac{u+s\eta w}{2},\quad
 r_x'=\frac{\sqrt{1-\eta^2}\,v}{2}.
-\]
+$$
 
 将后两者乘回 α，恰好恢复原 A_s。
 
 分支的两个 Kraus 算子可取
 
-\[
+$$
 K_{s0}=\sqrt{\frac{1+\alpha}{2}}L_s,
 \qquad
 K_{s1}=\sqrt{\frac{1-\alpha}{2}}L_s(-i\sigma_y),
-\]
+$$
 
 它们全为实矩阵。由算子和形式，分支完全正；Σ_sL_s†L_s=I 和噪声通道保迹保证两个结果合计保迹。任意方向通过 U_θ 共轭恢复。
 
@@ -104,10 +104,10 @@ K_{s1}=\sqrt{\frac{1-\alpha}{2}}L_s(-i\sigma_y),
 
 注意实际读取效应是
 
-\[
+$$
 \boxed{E_{s,\theta}=\tfrac12\{I+s\alpha\eta
 [\cos\theta\,\sigma_z+\sin\theta\,\sigma_x]\}.}
-\]
+$$
 
 因此可见度是 αη，最大值 α<1。并没有由当前原语取得全部实量子测量或全部量子操作。Tr(Eρ) 是当前概率的精确表示，不能单凭这个改写声称从认知推导了 Born 规则。
 
@@ -115,10 +115,10 @@ K_{s1}=\sqrt{\frac{1-\alpha}{2}}L_s(-i\sigma_y),
 
 将上述噪声通道替换为
 
-\[
+$$
 \widetilde{\mathcal D}_\alpha(\rho)
 =\alpha\rho+(1-\alpha)\operatorname{Tr}(\rho)\frac I2.
-\]
+$$
 
 这是各方向同样收缩的完全正通道，可取 I、σ_x、σ_y、σ_z 四个 Kraus 算子，平方权重分别为 (1+3α)/4、(1−α)/4、(1−α)/4、(1−α)/4。
 
@@ -127,9 +127,9 @@ L_sD(ρ)L_s† 对现有全部圆盘准备及本轮固定的 fresh—旋转协�
 
 但若额外加入当前模型没有的状态
 
-\[
+$$
 \rho_y=\frac12(I+\sigma_y),
-\]
+$$
 
 在 η=0、忽略结果后，第一种通道给出的 σ_y 期望仍是 1，第二种给出 α。它们是不同的复量子扩展。
 
@@ -137,9 +137,9 @@ L_sD(ρ)L_s† 对现有全部圆盘准备及本轮固定的 fresh—旋转协�
 
 另一个直接对照是：对当前圆盘边界准备，η=0 的 fresh 非选择更新仍把半径乘 α，纯度从 1 变为
 
-\[
+$$
 \operatorname{Tr}\rho'^2=\frac{1+\alpha^2}{2}\approx0.9896697524<1.
-\]
+$$
 
 所以它不能直接被称为封闭系统的 Schrödinger 演化。原静默旋转另有可逆表示，两类操作应分别讨论。
 
@@ -149,24 +149,24 @@ L_sD(ρ)L_s† 对现有全部圆盘准备及本轮固定的 fresh—旋转协�
 
 定义
 
-\[
+$$
 \rho_\pm=\frac14(I_4\pm\sigma_y\otimes\sigma_y).
-\]
+$$
 
 σ_y⊗σ_y 是实对称矩阵，特征值为 ±1。因此 ρ_± 都是真实、合法且不同的归一化状态。
 
 任何局部实对称效应都在 span{I,σ_x,σ_z} 内。对任意这样的 A、B，
 
-\[
+$$
 \operatorname{Tr}[(\rho_+-\rho_-)(A\otimes B)]
 =\tfrac12\operatorname{Tr}(\sigma_yA)\operatorname{Tr}(\sigma_yB)=0.
-\]
+$$
 
 故它们所有局部实测量的联合概率都相同。但若允许整体效应
 
-\[
+$$
 F_+=\tfrac12(I_4+\sigma_y\otimes\sigma_y),
-\]
+$$
 
 则两态得到的概率分别为 1、0，可以被整体操作完美区分。
 

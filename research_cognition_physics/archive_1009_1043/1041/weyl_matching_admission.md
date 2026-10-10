@@ -34,7 +34,7 @@ $$
 
 因此983的自由共形SM计数不自动是实际P981的a_UV。真实相互作用、质量阈值、维五项及UV完成仍需同对象说明。辅助补偿源也不是已实现的认知操作；这里不新增物理dilaton、不证明实际散射仪器。背景度规色散论证不自动包含动态引力前向交换。
 
-若完整上述合同已成立，记\(\widehat\sigma=f^4\sigma\)。在有限能窗W=[s_1,s_2]已有认证\(|\widehat\sigma-\widehat\sigma_{\rm est}|\le\epsilon(s)\)，由同一正测度直接得到
+若完整上述合同已成立，记$\widehat\sigma=f^4\sigma$。在有限能窗W=[s_1,s_2]已有认证$|\widehat\sigma-\widehat\sigma_{\rm est}|\le\epsilon(s)$，由同一正测度直接得到
 
 $$
 \Delta a\ge\frac1\pi\int_{s_1}^{s_2}

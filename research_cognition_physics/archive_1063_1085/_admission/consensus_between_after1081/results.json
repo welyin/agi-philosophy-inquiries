@@ -1,0 +1,288 @@
+{
+  "status": "exact_fraction_screen_passed",
+  "formal_round_increment": 0,
+  "scientific_calibration_increment": 0,
+  "validation_group_count": 5,
+  "arithmetic": "fractions.Fraction and integer square roots; no scientific floating point",
+  "four_cube_meeting": {
+    "domain": "X=[-1,1]^3 x [-1,1]",
+    "visible_map": "v(x1,x2,x3,h)=(x1,x2,x3)",
+    "actual_model_operation": "m(x,y)=(x+y)/2 on all four coordinates",
+    "vertex_count": 16,
+    "ordered_vertex_pairs": 256,
+    "finite_physical_probe_count": 3,
+    "strict_probe_tests": 480,
+    "tie_probe_tests": 288,
+    "global_all_probe_identity": "r.v(m)=(r.v(x)+r.v(y))/2",
+    "effect": "E_xy=I/2+(v(x)-v(y)).sigma/8",
+    "global_component_difference_bound": "2",
+    "global_effect_Bloch_norm_squared_upper": "3/16",
+    "positivity_threshold": "1/4",
+    "effect_positivity_margin": "1/16",
+    "interpretation": "An abstract admissible countermodel, not an implementation by the old autonomous Hamiltonian."
+  },
+  "nonhalf_meeting": {
+    "weight": "1/3",
+    "left": [
+      "-1",
+      "0",
+      "1"
+    ],
+    "right": [
+      "1",
+      "1",
+      "-1"
+    ],
+    "meeting": [
+      "-1/3",
+      "1/3",
+      "1/3"
+    ],
+    "finite_checks": [
+      {
+        "probe": [
+          "1",
+          "0",
+          "0"
+        ],
+        "left": "-1",
+        "right": "1",
+        "meeting": "-1/3"
+      },
+      {
+        "probe": [
+          "0",
+          "1",
+          "0"
+        ],
+        "left": "0",
+        "right": "1",
+        "meeting": "1/3"
+      },
+      {
+        "probe": [
+          "1/3",
+          "-1/4",
+          "1/5"
+        ],
+        "left": "-2/15",
+        "right": "-7/60",
+        "meeting": "-23/180"
+      }
+    ]
+  },
+  "hidden_antipodal_pair": {
+    "left": [
+      "0",
+      "0",
+      "0",
+      "1"
+    ],
+    "right": [
+      "0",
+      "0",
+      "0",
+      "-1"
+    ],
+    "meeting": [
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "visible_difference": [
+      "0",
+      "0",
+      "0"
+    ],
+    "complete_comparison_effect": "I/2",
+    "full_endpoints_equal": false
+  },
+  "four_anchor_affine_rank": {
+    "anchors": [
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0"
+      ]
+    ],
+    "visible_difference_rows": [
+      [
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1"
+      ]
+    ],
+    "determinant": "1",
+    "affine_rank": 3
+  },
+  "rational_closure_boundary": {
+    "domain": "S=Q^3 intersect [-1,1]^3, inherited Euclidean topology",
+    "meetings": "arithmetic average; t=1/3 also preserves rationality",
+    "closure_formula": "(1-a/b)*(m/n)+(a/b)*(p/q)=((b-a)*m*q+a*p*n)/(b*n*q)",
+    "finite_rational_examples": [
+      {
+        "left": [
+          "1/3",
+          "-2/7",
+          "5/11"
+        ],
+        "right": [
+          "-4/5",
+          "1/13",
+          "-3/8"
+        ],
+        "weight": "1/2",
+        "meeting": [
+          "-7/30",
+          "-19/182",
+          "7/176"
+        ]
+      },
+      {
+        "left": [
+          "1/3",
+          "-2/7",
+          "5/11"
+        ],
+        "right": [
+          "-4/5",
+          "1/13",
+          "-3/8"
+        ],
+        "weight": "1/3",
+        "meeting": [
+          "-2/45",
+          "-15/91",
+          "47/264"
+        ]
+      },
+      {
+        "left": [
+          "-1",
+          "0",
+          "1"
+        ],
+        "right": [
+          "1",
+          "3/10",
+          "-1"
+        ],
+        "weight": "1/2",
+        "meeting": [
+          "0",
+          "3/20",
+          "0"
+        ]
+      },
+      {
+        "left": [
+          "-1",
+          "0",
+          "1"
+        ],
+        "right": [
+          "1",
+          "3/10",
+          "-1"
+        ],
+        "weight": "1/3",
+        "meeting": [
+          "-1/3",
+          "1/10",
+          "1/3"
+        ]
+      }
+    ],
+    "omitted_limit": "(sqrt(2)/2,0,0)",
+    "integer_square_brackets": [
+      {
+        "n": 1,
+        "lower": "7/10",
+        "upper": "3/4",
+        "width": "1/20",
+        "lower_square": "49/100",
+        "upper_square": "9/16"
+      },
+      {
+        "n": 2,
+        "lower": "141/200",
+        "upper": "71/100",
+        "width": "1/200",
+        "lower_square": "19881/40000",
+        "upper_square": "5041/10000"
+      },
+      {
+        "n": 3,
+        "lower": "707/1000",
+        "upper": "283/400",
+        "width": "1/2000",
+        "lower_square": "499849/1000000",
+        "upper_square": "80089/160000"
+      },
+      {
+        "n": 4,
+        "lower": "7071/10000",
+        "upper": "14143/20000",
+        "width": "1/20000",
+        "lower_square": "49999041/100000000",
+        "upper_square": "200024449/400000000"
+      },
+      {
+        "n": 5,
+        "lower": "141421/200000",
+        "upper": "70711/100000",
+        "width": "1/200000",
+        "lower_square": "19999899241/40000000000",
+        "upper_square": "5000045521/10000000000"
+      },
+      {
+        "n": 6,
+        "lower": "1414213/2000000",
+        "upper": "707107/1000000",
+        "width": "1/2000000",
+        "lower_square": "1999998409369/4000000000000",
+        "upper_square": "500000309449/1000000000000"
+      }
+    ],
+    "analytic_boundary": "Rational density and irrationality imply S is not closed and has empty R3 interior; these are analytic facts, not conclusions of finite sampling."
+  },
+  "scope": {
+    "general_convexity_proof_done_by_this_code": false,
+    "random_mixture_records_claimed_to_be_actual_meetings": false,
+    "actual_qubit_process_for_meeting_constructed": false,
+    "actual_spatial_dimension_derived": false,
+    "finite_samples_establish_topological_dimension": false,
+    "full_endpoint_injectivity_imposed_as_new_universal_principle": false
+  },
+  "checker_sha256": "dae451f7eb411151ad24c909d1d9decc8c5ab574b326d8b61e0e402c0dab738c"
+}

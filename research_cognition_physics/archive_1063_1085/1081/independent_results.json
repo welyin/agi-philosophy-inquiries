@@ -1,0 +1,31 @@
+{
+  "round": 1081,
+  "passed": true,
+  "arithmetic": "Fraction exact",
+  "assertion_groups": 5,
+  "rank2_counterexample": {
+    "span": 2,
+    "anchored_direction_constraint_rank": 9,
+    "unknown_coordinates": 9,
+    "positive_triangle_certificates": 4,
+    "max_effect_norm_squared": "13/64"
+  },
+  "strict_order_counterexample": {
+    "span": 3,
+    "anchored_direction_constraint_rank": 8,
+    "positive_scale_obstruction": "cross-block edges force each block to coincide; internal nonzero edge cannot have positive difference gain",
+    "tie_witness": "r=e2: 0~1, 1~2, 0>2",
+    "all_r_strict_acyclic_reason": "uniform cross-block orientation; blocks of size two"
+  },
+  "positive_network": {
+    "nodes": 6,
+    "span": 3,
+    "unknown_coordinates": 15,
+    "constraint_rank": 14,
+    "parallel_stars": true,
+    "zero_edge": true,
+    "positive_triangle_certificates": 20
+  },
+  "dimension_boundary": "curve t -> (t,t^2,t^3) has affine span 3 and dimension 1",
+  "scope": "exact finite certificates and implementation audit; general theorem rests on proof.md; no actual spatial dimension conclusion"
+}

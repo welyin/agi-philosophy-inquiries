@@ -8,31 +8,33 @@
 
 沿用 G=YY、H=IZ 两套分别准备的校准任务、两份记忆 M,N，以及
 
-\[
+$$
 v=\sqrt{1-c^2},\quad w=\sqrt{1-d^2},\quad
 A=cX-vZ,\quad L=cZ+vX.
-\]
+$$
 
 A 是 M 上用于查询历史 G 的轴。环境复制的是这个轴的扇区信息，不能把它说成对任意输入都完美复制了原 G 真值。G 与 H 仍没有共同本征值假设。
 
 增加 n 个纯初始化片段 E_i。第 i 个使用第 100 轮真实实门扩张：
 
-\[
+$$
 |0\rangle_{E_i}P_+\longmapsto |e_+^{(i)}\rangle P_+,\qquad
 |0\rangle_{E_i}P_-\longmapsto |e_-^{(i)}\rangle P_-,
-\]
-\[
+$$
+
+
+$$
 P_\pm=(I\pm A)/2,\quad |e_+^{(i)}\rangle=|0\rangle,\quad
 |e_-^{(i)}\rangle=\lambda_i|0\rangle+\sqrt{1-\lambda_i^2}|1\rangle.
-\]
+$$
 
 每个 λ_i∈[0,1]；越接近零，两种条件记录越容易分开。各片段初始独立，耦合同一 A，记录阶段没有片段之间的相互作用。这些是新增模型条件，不是认知原则的推论。
 
 开放子集 S，其他片段组成 U。定义空乘积为 1：
 
-\[
+$$
 a=\prod_{i\in S}\lambda_i,\qquad b=\prod_{i\in U}\lambda_i.
-\]
+$$
 
 恢复接口只可访问 E_S 与 M,N；原 AB、未开放环境及外部参考不提供额外查询。允许任意联合量子测量时先求信息上限，有限旧门实现另列。
 
@@ -40,27 +42,27 @@ a=\prod_{i\in S}\lambda_i,\qquad b=\prod_{i\in U}\lambda_i.
 
 令 |e_z^S〉、|e_z^U〉为相应条件乘积态。完整写入等距映射为
 
-\[
+$$
 W=\sum_{z=\pm}|e_z^S\rangle|e_z^U\rangle\otimes P_z.
-\]
+$$
 
 对任意 M 及其余系统的状态 ω，包括任意复相关参考，逐扇区展开可得
 
-\[
+$$
 \begin{aligned}
 \operatorname{tr}_U(W\omega W^\dagger)
 &=\sum_{z,z'}\langle e_{z'}^U|e_z^U\rangle
  |e_z^S\rangle\langle e_{z'}^S|\otimes P_z\omega P_{z'}\\
 &=W_S\Lambda_b(\omega)W_S^\dagger,
 \end{aligned}
-\]
+$$
 
 其中
 
-\[
+$$
 W_S=\sum_z|e_z^S\rangle\otimes P_z,\qquad
 \Lambda_b(\omega)=\frac{1+b}{2}\omega+\frac{1-b}{2}A\omega A.
-\]
+$$
 
 这是全矩阵恒等式，不仅对某些读取概率成立。由于 W_S†W_S=I，左右等距嵌入保持迹范数；所有可访问状态的二态区别恰等于 Λ_b 后的区别。
 
@@ -70,17 +72,17 @@ W_S=\sum_z|e_z^S\rangle\otimes P_z,\qquad
 
 H 校准两记忆的差矩阵，在剩余退相干后为
 
-\[
+$$
 \Lambda_b(\rho_+^H-\rho_-^H)
 =\frac{(cI+bL)\otimes D_d}{2},
 \qquad D_d=wN_d,\quad N_d=dX-wZ.
-\]
+$$
 
 L 的本征值为 ±1，D_d 的本征值为 ±w。因此迹距离为
 
-\[
+$$
 \boxed{D_H(E_SMN)=w\max(c,b).}
-\]
+$$
 
 这里 D=‖ρ_+−ρ_-‖_1/2，等先验理想成功率为 (1+D)/2。二态最优判别沿用已核对的谱投影结果。
 
@@ -88,9 +90,9 @@ L 的本征值为 ±1，D_d 的本征值为 ±w。因此迹距离为
 
 若允许已开放 E_i 与 M 再次相干交互，把这些记录门逐个逆转，就得到
 
-\[
+$$
 |0\cdots0\rangle\langle0\cdots0|_{E_S}\otimes\Lambda_b(\omega).
-\]
+$$
 
 这使上述界可达；随后依据 b>c 与否，选择关联 H 查询或仅查询 N。逆操作每个开放片段需 1 次两系统旋转与 5 次局部旋转。它不需要片段之间的 XY 门，却需要恢复阶段 E_i–M 联合控制。若 b=1，环境记录前的整个记忆及参考可恢复；这里没有撤销更早两次关系写入对原 AB 的求和通道。
 
@@ -98,9 +100,9 @@ L 的本征值为 ±1，D_d 的本征值为 ±w。因此迹距离为
 
 若任意未开放片段 λ_j=0，则 b=0，于是
 
-\[
+$$
 D_H(E_SMN)=cw.
-\]
+$$
 
 即使开放了其他所有片段，也不能超过只读 N 的理想 H 区别。这个结论说的是指定受限接口；完整 W 仍可逆，整体没有被删除。
 
@@ -112,10 +114,10 @@ D_H(E_SMN)=cw.
 
 取 c=d=4/5，每片段 λ=19/20，共 100 片。访问 k 片以后，b=(19/20)^(100−k)。
 
-\[
+$$
 (19/20)^5=2476099/3200000<4/5,\qquad
 (19/20)^4=130321/160000>4/5.
-\]
+$$
 
 所以至少访问 **96 片**，才可能超过只读 N 的水平。
 

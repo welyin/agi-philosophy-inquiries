@@ -1,0 +1,467 @@
+{
+  "round": 1076,
+  "status": "passed",
+  "assertion_groups": 11,
+  "groups": [
+    "archived Hamiltonian and graph-coordinate convention",
+    "same-process qubit-graph effect is Hermitian and physical",
+    "independent-input probability identity",
+    "independent series enclosure fits chosen coefficient budget",
+    "rank three certified by rational approximate inverse",
+    "three diagonal directions plus one coherence certify rank four",
+    "zero-population coherences alone certify all four coefficients",
+    "trace-only coherence illustration and positive graph states",
+    "same original position means give distinguishable fixed-reader effects",
+    "nonzero eighth-order determinant coefficient",
+    "final comparison after explicit graph-order permutation"
+  ],
+  "source": "archived 474/442 model; independent Heisenberg contraction",
+  "graph_order": [
+    [
+      4,
+      5
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      3
+    ]
+  ],
+  "canonical_to_archived_permutation": [
+    5,
+    4,
+    2,
+    3,
+    1,
+    0
+  ],
+  "effect_convention": "N=sum sigma_mu tensor B_mu; E_sigma=sum Tr(B_mu sigma) sigma_mu",
+  "t": "7/10",
+  "Hilbert_dimension": 384,
+  "effect_extreme_eigenvalues": [
+    0.2965050908672838,
+    0.8355090067077526
+  ],
+  "direct_probability_residual": 5.204170427930421e-18,
+  "response_4x3": [
+    [
+      -0.032812654403723496,
+      -0.01672077275232886,
+      0.02476671357802601
+    ],
+    [
+      0.010522706686980885,
+      -0.030377781264289905,
+      0.023265586227803017
+    ],
+    [
+      0.003410511650493969,
+      -0.023265586227803035,
+      -0.010522706686980878
+    ],
+    [
+      -0.0029980101100039944,
+      0.002998010110004015,
+      -2.7755575615628914e-17
+    ]
+  ],
+  "canonical_W01_response": [
+    0.012957147129871765,
+    0.0005259220503431694,
+    -0.0005255022943772398,
+    0.024132564299065743
+  ],
+  "old_W01_response": [
+    -0.00816445280527579,
+    -0.005706527143452703,
+    -0.006757951488173093,
+    0.02413256429906574
+  ],
+  "series": {
+    "degree": 80,
+    "H_infinity_norm": 9,
+    "gamma": 1e-12,
+    "arithmetic_assumptions": "IEEE binary64; no overflow/underflow; 384-term real-integer times complex dot products; gamma deliberately exceeds their operation-count bound",
+    "recurrence_error": 3.831974595495864e-07,
+    "addition_error": 6.266265044387255e-10,
+    "double_margin_error": 7.676481721080503e-07,
+    "rational_tail_bound": "528608507122027086194481927544925936763935084283181019011098197595799704533075874831321881242445541123893392985085592735149/14248082582046978126042629912107207978526257586291094114780426025390625000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "coefficient_error_budget": 3.071592688432201e-06,
+    "certificate_entry_radius": "1/100000",
+    "series_vs_spectral_maxrow": 6.00059995429407e-14
+  },
+  "rank3_certificate": {
+    "center": [
+      [
+        "10522706687/1000000000000",
+        "-1898611329/62500000000",
+        "5816396557/250000000000"
+      ],
+      [
+        "68210233/20000000000",
+        "-5816396557/250000000000",
+        "-10522706687/1000000000000"
+      ],
+      [
+        "-299801011/100000000000",
+        "299801011/100000000000",
+        "0"
+      ]
+    ],
+    "approximate_inverse": [
+      [
+        "-15685187/1000000",
+        "-34679771/1000000",
+        "-428059391/1000000"
+      ],
+      [
+        "-15685187/1000000",
+        "-34679771/1000000",
+        "-94504813/1000000"
+      ],
+      [
+        "591921/20000",
+        "-591921/20000",
+        "70210863/1000000"
+      ]
+    ],
+    "entry_error": "1/100000",
+    "exact_residual": "8066948857/500000000000000000",
+    "inverse_infinity_norm": "478424349/1000000",
+    "neumann_bound": "7176373301948857/500000000000000000",
+    "neumann_bound_float": 0.014352746603897714,
+    "strictly_below_one": true
+  },
+  "diagonal_plus_coherence_rank4_certificate": {
+    "center": [
+      [
+        "-8203163601/250000000000",
+        "-1045048297/62500000000",
+        "12383356789/500000000000",
+        "1295714713/100000000000"
+      ],
+      [
+        "10522706687/1000000000000",
+        "-1898611329/62500000000",
+        "5816396557/250000000000",
+        "10518441/20000000000"
+      ],
+      [
+        "68210233/20000000000",
+        "-5816396557/250000000000",
+        "-10522706687/1000000000000",
+        "-262751147/500000000000"
+      ],
+      [
+        "-299801011/100000000000",
+        "299801011/100000000000",
+        "0",
+        "24132564299/1000000000000"
+      ]
+    ],
+    "approximate_inverse": [
+      [
+        "-1587223/62500",
+        "11330273/500000",
+        "-1933987/200000",
+        "6465431/500000"
+      ],
+      [
+        "-5587579/1000000",
+        "-226509/31250",
+        "-14588531/500000",
+        "2522671/1000000"
+      ],
+      [
+        "849203/200000",
+        "23184831/1000000",
+        "-8444393/250000",
+        "-880137/250000"
+      ],
+      [
+        "-615191/250000",
+        "3715601/1000000",
+        "605847/250000",
+        "10682701/250000"
+      ]
+    ],
+    "entry_error": "1/100000",
+    "exact_residual": "64548643119/1000000000000000000",
+    "inverse_infinity_norm": "70656911/1000000",
+    "neumann_bound": "2826340988643119/1000000000000000000",
+    "neumann_bound_float": 0.002826340988643119,
+    "strictly_below_one": true
+  },
+  "coherence_only_rank4_certificate": {
+    "center": [
+      [
+        "2237257479/1000000000000",
+        "-221491249/100000000000",
+        "30280704087/1000000000000",
+        "-80325089/500000000000"
+      ],
+      [
+        "-4125055619/125000000000",
+        "4807193303/1000000000000",
+        "1425819797/50000000000",
+        "109218719/62500000000"
+      ],
+      [
+        "-5925587167/500000000000",
+        "-193381917/25000000000",
+        "126043501/500000000000",
+        "17870917707/1000000000000"
+      ],
+      [
+        "-29667473/31250000000",
+        "3135401933/125000000000",
+        "-575153899/1000000000000",
+        "1560858091/62500000000"
+      ]
+    ],
+    "approximate_inverse": [
+      [
+        "12727041/500000",
+        "-5373209/200000",
+        "-130689/25000",
+        "2892217/500000"
+      ],
+      [
+        "-10284657/1000000",
+        "2351499/200000",
+        "-917863/25000",
+        "12691811/500000"
+      ],
+      [
+        "1522753/50000",
+        "2777253/1000000",
+        "-2104961/1000000",
+        "1507863/1000000"
+      ],
+      [
+        "2399751/200000",
+        "-6383187/500000",
+        "18314139/500000",
+        "1480179/100000"
+      ]
+    ],
+    "entry_error": "1/100000",
+    "exact_residual": "11971629379/200000000000000000",
+    "inverse_infinity_norm": "42070147/500000",
+    "neumann_bound": "673134323629379/200000000000000000",
+    "neumann_bound_float": 0.003365671618146895,
+    "strictly_below_one": true
+  },
+  "coherence_only_columns": [
+    [
+      0,
+      1,
+      "Im"
+    ],
+    [
+      0,
+      3,
+      "Re"
+    ],
+    [
+      1,
+      3,
+      "Im"
+    ],
+    [
+      2,
+      4,
+      "Re"
+    ]
+  ],
+  "coherence_only_response": [
+    [
+      0.0022372574789837436,
+      -0.0022149124904757692,
+      0.03028070408696712,
+      -0.00016065017772651225
+    ],
+    [
+      -0.03300044495225599,
+      0.004807193302567094,
+      0.028516395940352608,
+      0.0017474995040900221
+    ],
+    [
+      -0.011851174334293575,
+      -0.007735276679730528,
+      0.00025208700225972427,
+      0.01787091770732161
+    ],
+    [
+      -0.0009493591357896643,
+      0.025083215464048673,
+      -0.000575153898760259,
+      0.02497372945557969
+    ]
+  ],
+  "trace_only_weights_illustrative": [
+    0.8357915598609127,
+    -0.33769944458223555,
+    1.0,
+    0.393982332505712
+  ],
+  "trace_only_response_illustrative": [
+    0.03283526639123121,
+    2.9820745569818996e-19,
+    2.705206376874146e-18,
+    2.111888423500468e-18
+  ],
+  "trace_only_pair_probability_gap_illustrative": 0.005472544398538535,
+  "same_population_effect_difference": [
+    0.002591429425974353,
+    0.0001051844100686337,
+    -0.00010510045887544782,
+    0.004826512859813149
+  ],
+  "same_population_probability_gap_lower": 0.004824512859813149,
+  "same_population_fixed_plus_Z_gap_lower": 0.007413942285787502,
+  "determinant_taylor_coefficients_0_to_8": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "-5/1536"
+  ],
+  "integer_nested_maximum_entry": 768208.0,
+  "time_diagnostics": [
+    {
+      "t": 0.001,
+      "trace_response": [
+        -2.4999931258484764e-07,
+        -2.4999931236280304e-07,
+        2.4999931236280304e-07
+      ],
+      "bloch_singular_values_diagnostic": [
+        0.0004999981302115752,
+        0.00035355201321052196,
+        9.809643957120444e-17
+      ]
+    },
+    {
+      "t": 0.01,
+      "trace_response": [
+        -2.4993142468010543e-05,
+        -2.4993109142945613e-05,
+        2.4993125805561345e-05
+      ],
+      "bloch_singular_values_diagnostic": [
+        0.0049981305301084345,
+        0.003534156752700357,
+        1.837484145249883e-14
+      ]
+    },
+    {
+      "t": 0.1,
+      "trace_response": [
+        -0.002433674754597437,
+        -0.002430423816667915,
+        0.0024320492856326204
+      ],
+      "bloch_singular_values_diagnostic": [
+        0.04816202806326826,
+        0.034000894258911916,
+        1.839474085586158e-08
+      ]
+    },
+    {
+      "t": 0.3,
+      "trace_response": [
+        -0.01780250042705539,
+        -0.01715626686672589,
+        0.017479383646890667
+      ],
+      "bloch_singular_values_diagnostic": [
+        0.1065955229142534,
+        0.07400382671640507,
+        1.3263582020120516e-05
+      ]
+    },
+    {
+      "t": 0.7,
+      "trace_response": [
+        -0.032812654403723385,
+        -0.016720772752328805,
+        0.024766713578025956
+      ],
+      "bloch_singular_values_diagnostic": [
+        0.04249398582009465,
+        0.02111117578306495,
+        0.0022419760845824965
+      ]
+    },
+    {
+      "t": 1.0,
+      "trace_response": [
+        -0.004370401850504579,
+        0.020170573819563553,
+        -0.00790008598452957
+      ],
+      "bloch_singular_values_diagnostic": [
+        0.02447822416196661,
+        0.01582633867652393,
+        0.0015039198753897737
+      ]
+    },
+    {
+      "t": 2.0,
+      "trace_response": [
+        0.005946274130019635,
+        -0.006979312615910116,
+        0.0005165192429453236
+      ],
+      "bloch_singular_values_diagnostic": [
+        0.008715394108534537,
+        0.002529104262479794,
+        0.0009587963155997343
+      ]
+    }
+  ],
+  "author_comparison": {
+    "used_only_after_independent_calculations": true,
+    "response_residual": 1.0408340855860843e-16,
+    "coherence_residual": 9.107298248878237e-18,
+    "author_strict_effect_error": 4.170082746051943e-17,
+    "author_code_sha256": "5f5b2e51f5415f4e1530d7af53b9d1e9c01b8b15be414a686a4e04ff40cd152b"
+  },
+  "source_hashes": {
+    "archived474": "b6fd15d0bcc52b150b39e2d06b791f8127060253d9727bb6487036ffdffe57ab",
+    "archived442": "3b69018a14093d1d8e335682745a072551e91541114b0b70cf5e468aa80465c1",
+    "independent_check": "a1afa7240976f773dc1b59d9d66bfa9f611873ca7bdf681fa08d4409cde11301"
+  },
+  "scope": {
+    "fixed_readout_bloch_response_on_declared_diagonal_section": 3,
+    "effect_response_with_same_population_coherences": 4,
+    "descends_to_entire_original_distance_mean_quotient": false,
+    "full_unknown_location_encoded_as_qubit": false,
+    "actual_spatial_dimension_derived": false,
+    "new_control_device_built": false,
+    "pure_trace_exact_existence_from_invertibility": true,
+    "decimal_weights_exact_preparation_claimed": false,
+    "same_population_coherence_obstruction_previously_known": true
+  }
+}

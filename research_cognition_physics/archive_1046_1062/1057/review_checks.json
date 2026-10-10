@@ -1,0 +1,102 @@
+{
+  "round": 1057,
+  "reviewer": "phase1044_goal_scope_review",
+  "date": "2026-10-09",
+  "independent_math_review_passed": true,
+  "author_code_imported_in_independent_check": false,
+  "author_default_verification": {
+    "exit_code": 0,
+    "assets": 10,
+    "historical_inputs": 11,
+    "local_links": 20
+  },
+  "independent_matrix_check": {
+    "valid_types": 88,
+    "direction_type_counts": [
+      36,
+      36
+    ],
+    "processes": 1,
+    "signed_local_maps_per_party": 72,
+    "dense_settings": 5184,
+    "max_CPTP_trace_error": 0.0,
+    "max_instrument_branch_error": 0.0,
+    "max_dense_formula_error": 4.440956154905281e-16,
+    "delta": 0.0070150795759636,
+    "chosen_order_trace_distance": 0.10229370603569556,
+    "three_sqrt_delta": 0.25126821562559876
+  },
+  "independent_record_check": {
+    "instrument_pairs": 9,
+    "outcomes_per_pair": 4,
+    "max_normalization_error": 2.220446049250313e-16,
+    "max_complement_15_over_16_error": 0.0,
+    "max_TV_over_16T": 0.018801759254618813
+  },
+  "sharpness_numeric_checks": [
+    {
+      "t": "1/16",
+      "distance": "1/32",
+      "menu_defect": "1/256",
+      "minimum_eigenvalue": 0.0546875
+    },
+    {
+      "t": "1/8",
+      "distance": "1/16",
+      "menu_defect": "1/64",
+      "minimum_eigenvalue": 0.046875
+    },
+    {
+      "t": "1/4",
+      "distance": "1/8",
+      "menu_defect": "1/16",
+      "minimum_eigenvalue": 0.03125
+    },
+    {
+      "t": "1/2",
+      "distance": "1/4",
+      "menu_defect": "1/4",
+      "minimum_eigenvalue": 0.0
+    }
+  ],
+  "finite_amplification": {
+    "t": "1/16",
+    "threshold": "1/10",
+    "first_blocks": 25,
+    "copies": 50,
+    "defect_24": "615686879680146116418243458963097133856906899362562709505/6277101735386680763835789423207666416102355444464034512896",
+    "defect_25": "164508629813184232683324358376723629817327428580642650855681/1606938044258990275541962092341162602522202993782792835301376",
+    "fraction_inequalities_passed": true
+  },
+  "analytic_checks": [
+    "Pauli support completeness",
+    "input-transpose measurement preparation with all branches",
+    "Z=1+st*c_i*d_j",
+    "T<=3*sqrt(Delta)",
+    "single-copy local records TV<=16T",
+    "positive fixed-order twirl",
+    "t/2 lower bound and attaining twirl",
+    "finite independent-copy amplification",
+    "forbidden-block Hilbert-Schmidt identity"
+  ],
+  "owned_sha256_reviewed": {
+    "../research_note_1057.md": "e99460fd195a5ad4f987eb4dc3b6a74fddd3332c032a818a3010ea85b3345cca",
+    "proof.md": "3fbcd83a9fa765d7ca37541b23917a798e267298a5c7f61ecdc5516fb0716da5",
+    "sources.md": "c9000f9e0188adb551aba85a52124d9527b1025a8f9c6d389766e42fc483ee28",
+    "dependency_update.md": "8568c3c00326a13cf336d38da0daf26eb01533b0c406b66fdf69099309bd5891",
+    "NEXT.md": "9008c7c05b371e2b65f6724e982e9edfc2c1653ae46d2bdde7fd7c10dd01c0c2",
+    "composition_stability.py": "bac0dc8d57779ff819a5645d9455691a68efa7e957767cee6efaed7809692a74",
+    "results.json": "b92843ed45f7f76693343a45516614b7e2f2b08945674e0149d2959b33129a5b",
+    "record_bound_check.py": "8251457fab9595ee39d564e83e71bfce59608ed87823edbffbcf779626ba424a",
+    "record_bound_results.json": "bc1882f86ae6622f8898fbc1c9f0938bb8f16f09ffeb9da5cb373e85e7809d70",
+    "verify_round1057.py": "2d03098c8815d230ce7817e877281583af04db9d46865c4f0467c70d2825b311"
+  },
+  "author_receipt_sha256": "351875ac16f78a1603870994b4c5c3d72b55c503e430f419d0bab52207ab5b64",
+  "scope": {
+    "additional_cross_copy_permissions_derived_from_cognitive_axioms": false,
+    "normalization_defect_is_observed_probability_sum": false,
+    "complete_reference_poststate_or_source_certified": false,
+    "whole_roadmap_complete": false
+  },
+  "new_science_count_from_review": 0
+}

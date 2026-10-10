@@ -1,0 +1,84 @@
+{
+  "scope": "count0: rounded table/linear energy ledger/published interval only",
+  "source_version": "2311.16226v2 Table 1 and Eq 20; no-LC CNO-Rfixed",
+  "table_checks": [
+    {
+      "reaction": "pp",
+      "printed_beta": "0.91864",
+      "beta_from_printed_inputs": 0.9186439800433023,
+      "rounding_intervals_overlap": true
+    },
+    {
+      "reaction": "Be7",
+      "printed_beta": "0.071693",
+      "beta_from_printed_inputs": 0.07169279864445072,
+      "rounding_intervals_overlap": true
+    },
+    {
+      "reaction": "pep",
+      "printed_beta": "0.0019987",
+      "beta_from_printed_inputs": 0.0019987291725501273,
+      "rounding_intervals_overlap": true
+    },
+    {
+      "reaction": "N13",
+      "printed_beta": "0.0041630",
+      "beta_from_printed_inputs": 0.004163031864821614,
+      "rounding_intervals_overlap": true
+    },
+    {
+      "reaction": "O15",
+      "printed_beta": "0.0030082",
+      "beta_from_printed_inputs": 0.0030081728325331825,
+      "rounding_intervals_overlap": true
+    },
+    {
+      "reaction": "F17",
+      "printed_beta": "0.000077841",
+      "beta_from_printed_inputs": 7.784141720794502e-05,
+      "rounding_intervals_overlap": true
+    },
+    {
+      "reaction": "B8",
+      "printed_beta": "0.000039205",
+      "beta_from_printed_inputs": 3.920533571025134e-05,
+      "rounding_intervals_overlap": true
+    },
+    {
+      "reaction": "hep",
+      "printed_beta": "0.000000034944",
+      "beta_from_printed_inputs": 3.49444895509743e-08,
+      "rounding_intervals_overlap": true
+    }
+  ],
+  "sum_printed_beta_at_reference_f_equal_one": 0.999619980944,
+  "reference_sum_is_not_imposed_as_exact_unity": true,
+  "energy_ledger_basis_order": [
+    "r_He4",
+    "r_He3",
+    "r_N14",
+    "Sdot",
+    "Lother"
+  ],
+  "linear_identity_coefficients": [
+    "2673097/100000",
+    "2673097/200000",
+    "2673097/200000",
+    "0",
+    "0"
+  ],
+  "correction_coefficients": [
+    "0",
+    "1285897/200000",
+    "331097/200000",
+    "1",
+    "1"
+  ],
+  "published_1sigma_interval_exact": [
+    "489/500",
+    "1107/1000"
+  ],
+  "published_interval_contains_unity": true,
+  "no_new_pvalue_or_stellar_prediction": true,
+  "all_assertions_passed": true
+}

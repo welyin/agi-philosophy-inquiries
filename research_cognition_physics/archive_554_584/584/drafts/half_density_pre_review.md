@@ -10,19 +10,19 @@
 
 记r²=φ·φ、F=M−r²/6>0、μ=√M F⁻³、G=F(I−φφᵀ/(6M))。在球内紧支撑光滑核上，令l=logμ，直接有
 
-\[
+$$
 \nabla l=\phi/F,\qquad G\nabla l=F\phi/M,
 \quad\operatorname{div}(G\nabla l)=5-7r^2/(6M),
 \quad (\nabla l)^TG\nabla l=r^2/M.
-\]
+$$
 
 故T=μ¹ᐟ²给
 
-\[
+$$
 T(-\Delta_K)T^{-1}=-\partial_a(G^{ab}\partial_b)+q,
 \qquad q=\tfrac12\operatorname{div}(G\nabla l)+\tfrac14(\nabla l)^TG\nabla l
 =\tfrac52-r^2/(3M).
-\]
+$$
 
 全目标上1/2<q≤5/2，F→0时q→1/2。T在同一个flat Hilbert空间上不是有界点乘算符，但在L²(μdφ)与L²(dφ)之间恰为酉映射；两种说法不可混淆。T及T⁻¹把内部C_c∞核互相映射。球面是原完整目标的无穷距离端，G在该坐标边界退化；不得仅因换成Lebesgue测度就另加任意球墙边界条件。
 
@@ -32,10 +32,10 @@ T(-\Delta_K)T^{-1}=-\partial_a(G^{ab}\partial_b)+q,
 
 固定有限图及正的固定几何权w_i时，用乘积T并保留链路Haar测度。μ和q都是原规范不变量，因此T交织规范群酉作用及Gauss投影。节点、链路的乘法势不变，链路电动能不受T影响；完整正确flat测度算符为
 
-\[
+$$
 H_c=H_b+Q,\qquad Q=\sum_i\frac{\hbar^2 q(\phi_i)}{2w_i},
 \qquad \|Q\|\le\frac{5\hbar^2}{4}\sum_iw_i^{-1}.
-\]
+$$
 
 Q为有界自伴规范不变乘法，故H_b=H_c−Q可在同一算符域定义，是合法的有界扰动模型。其核上二次型为正的divergence动能加原正势，闭包与上述有界减项一致。该“有界”仅对每个固定有限图成立，没有网格一致预算；不能以它取消578/579的连续能源问题。
 
@@ -45,16 +45,16 @@ Q为有界自伴规范不变乘法，故H_b=H_c−Q可在同一算符域定义�
 
 单节点b=sin s，D_j O=(i/ℏ)[H_j,O]。因[Q,b]=0，一阶相同。完整二阶差中所有其它节点、链路和乘法势均消去，留下
 
-\[
+$$
 (D_c^2-D_b^2)b=-w^{-1}(db)^TG\,dQ
 =\frac{\hbar^2F^2s\cos s}{3M^2w^2}.
-\]
+$$
 
 此处D²是生成元两次作用，不是把Db作平方。取归一、严格Gauss不变、紧支撑于0<s<π/2及F>0内的全图光滑态，可由非负紧支撑函数沿紧规范群平均获得，故右侧期望严格正。不需半经典极限，也不需物理Hilbert空间先张量分解。该源在两个H的足够高阶域内；二阶时间Taylor公式因此适用。对同一末读E₊=(1+b)/2，
 
-\[
+$$
 p_c(t)-p_b(t)=\frac{t^2}{4}\langle(D_c^2-D_b^2)b\rangle+o(t^2)>0
-\]
+$$
 
 在足够小正时间成立。这里E₊的归一与577使用过的1/2+sin(s)/4不同，须按当前定义保留系数。制备与末读权限仍属输入；证明只签收两个明确Hamiltonian的同源记录差。
 
@@ -75,10 +75,10 @@ p_c(t)-p_b(t)=\frac{t^2}{4}\langle(D_c^2-D_b^2)b\rangle+o(t^2)>0
 
 D节的背景权响应也成立，条件是固定有限图、M及目标K、ℏ，沿原文已声明的共同Hilbert空间平凡化只变化正w和其它外部几何权。在共同紧支撑核的矩阵元上T不依赖参数，于是
 
-\[
+$$
 \partial_\lambda H_c=T(\partial_\lambda H_K)T^{-1},\qquad
 \partial_\lambda(H_c-H_b)=-\sum_i\frac{\hbar^2q_i}{2w_i^2}\partial_\lambda w_i.
-\]
+$$
 
 对于w_i=ε³ψ_i⁶，后一项为−3ℏ²q_i/(ε³ψ_i⁷)。方向须写成correct−bare，不能含混写“删项后的变化”而翻转符号。574本就剔除了配置无关的几何体积常数；若改用含w依赖正常数的Hilbert测度，须先声明相同规范化/平凡化，不能把参数依赖的空间直接作裸微分。
 

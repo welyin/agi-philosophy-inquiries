@@ -1,0 +1,30 @@
+{
+  "version": "1059-retrospective-2026-10-09",
+  "physical_numbers_are_decimal_strings": true,
+  "alpha_inverse": {
+    "Cs2018": {"value": "137.035999046", "u": "0.000000027", "source": "Parker2018, arXiv:1812.04130, abstract and Eq.(1)"},
+    "Rb2020": {"value": "137.035999206", "u": "0.000000011", "source": "Morel2020, Nature 588, 61, DOI:10.1038/s41586-020-2964-7, abstract"}
+  },
+  "electron": {"ae": "0.00115965218059", "u": "0.00000000000013", "source": "Fan2023, arXiv:2209.13084, Eq.(6), ae=g/2-1"},
+  "pi": "3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679",
+  "qed_table_AKN2019": [
+    {"n": 1, "A1": "0.5", "mu": "0", "tau": "0", "mixed": "0", "u_mu": "0", "u_tau": "0", "u_mixed": "0"},
+    {"n": 2, "A1": "-0.328478965579193", "mu": "0.519738676e-6", "tau": "0.183790e-8", "mixed": "0", "u_mu": "0.000000024e-6", "u_tau": "0.000025e-8", "u_mixed": "0"},
+    {"n": 3, "A1": "1.181241456587", "mu": "-0.737394164e-5", "tau": "-0.658273e-7", "mixed": "0.1909e-12", "u_mu": "0.000000024e-5", "u_tau": "0.000079e-7", "u_mixed": "0.0001e-12"},
+    {"n": 4, "A1": "-1.912245764", "mu": "0.916197070e-3", "tau": "0.74292e-5", "mixed": "0.74687e-6", "u_mu": "0.000000037e-3", "u_tau": "0.00012e-5", "u_mixed": "0.00028e-6"},
+    {"n": 5, "A1": "version_dependent", "mu": "-0.00382", "tau": "omitted_O(1e-5)", "mixed": "omitted_O(1e-5)", "u_mu": "0.00039", "u_tau": "not_certified", "u_mixed": "not_certified"}
+  ],
+  "theory_versions": {
+    "V2024_main": {"A1_10": "5.891", "u_A1_10": "0.061", "source": "Volkov2024, arXiv:2404.00649v2, Eq.(3), complete mass-independent coefficient"},
+    "AH2025_sensitivity": {"setV": "6.800", "u_setV": "0.128", "fermion_loop": "-0.93042", "u_fermion_loop": "0.00361", "A1_10": "5.86958", "u_A1_10": "0.13161", "uncertainty_rule": "linear standard-deviation upper bound; no independence assertion", "source": "AHHN2025 arXiv:2412.06473v3 Eq.(9) plus AKN2018 arXiv:1712.06060v2 Eq.(15); assembled sensitivity, not published new full evaluation"},
+    "AKN2019_legacy_check": {"A1_10": "6.737", "u_A1_10": "0.159", "source": "AKN2019 Table 1; reproduction only, not main current five-loop choice"}
+  },
+  "fixed_nonQED": {
+    "hadronic": "1.693e-12", "u_hadronic": "0.012e-12",
+    "weak": "0.03053e-12", "u_weak": "0.00023e-12",
+    "source": "AKN2019, Atoms 7(1)28, Table 2, printed central values; total hadronic error adopted intact"
+  },
+  "hadronic_version_diagnostic": {"value": "1.7030e-12", "u": "0.0077e-12", "source": "Keshavarzi-Nomura-Teubner2020 arXiv:1911.00367v2 Eq.(3.3); comparison only, not a second datum or a global 2026 update"},
+  "statistics": {"family_error": "0.05", "normal_quantile_for_two_marginals": "2.241402727604947", "standard_uncertainty_is_not_a_hard_bound": true, "joint_covariance_available": false},
+  "scope": {"uses_ae_inferred_alpha": false, "averages_Cs_and_Rb": false, "full_QED_integrals_recomputed": false, "rigorous_all_order_remainder": false, "all_calibration_QED_independent": false, "higher_dimension_dipoles_fixed_to_SM_baseline": true}
+}

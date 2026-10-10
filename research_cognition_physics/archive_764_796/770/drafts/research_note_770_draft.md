@@ -158,7 +158,7 @@ $$
 
 ## 6. 把尚缺的联合Ward变成局部余项问题
 
-现在将算符形式转成带密度的完整二次Hessian\(\widehat{\mathbb L}\)，并将二点及减除核转成具有两个字段上指标的\(\mathsf W,\mathsf H\)。此转换使用原纤维配对，不能把(5)的矩阵直接当成密度Hessian。定义\(\mathsf C=\mathsf W-\mathsf H\)。包括必要的实场半权、Grassmann次序与重复字段识别后，(10)写为
+现在将算符形式转成带密度的完整二次Hessian$\widehat{\mathbb L}$，并将二点及减除核转成具有两个字段上指标的$\mathsf W,\mathsf H$。此转换使用原纤维配对，不能把(5)的矩阵直接当成密度Hessian。定义$\mathsf C=\mathsf W-\mathsf H$。包括必要的实场半权、Grassmann次序与重复字段识别后，(10)写为
 
 $$
  J_H^{b+gh}(\eta)

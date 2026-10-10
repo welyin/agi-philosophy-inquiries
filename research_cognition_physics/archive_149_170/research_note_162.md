@@ -10,9 +10,9 @@
 
 旧方案收到g就执行V_gᵀ；这在标签完全可靠时是精确逆操作。但报告有噪时，g不能等同于真实历史。现将条件恢复改成
 
-\[
+$$
 \widetilde D_g=\begin{pmatrix}K_+\\ \widetilde U_gK_-\end{pmatrix}^{T}.
-\]
+$$
 
 这里K±是原正负取向接入块。仍然得到一个16维实正交恢复器。
 
@@ -20,7 +20,7 @@
 
 令c=cosθ、s=sinθ，按(A_X,A_Y,A_Z,B_X,B_Y,B_Z)顺序选
 
-\[
+$$
 \begin{aligned}
 \widetilde U_0&=Z_R\otimes(cZ_A+sX_A)\otimes I_B,\\
 \widetilde U_1&=Z_R\otimes I_A\otimes I_B,\\
@@ -29,16 +29,16 @@
 \widetilde U_4&=I_8,\\
 \widetilde U_5&=I_R\otimes I_A\otimes(cX_B+sZ_B).
 \end{aligned}
-\]
+$$
 
 因为XZ+ZX=0，且c²+s²=1，每个cZ+sX及cX+sZ仍为实正交矩阵。这是相干的正交反射，不是把两个解码器作未经归一化的概率平均。
 
 θ=0恰好回到旧六个解码器。本轮固定一个便于精确复算的点：
 
-\[
+$$
 \tan(\theta/2)=3/40,\qquad
 c=1591/1609,\quad s=240/1609,
-\]
+$$
 
 θ约0.1497196954弧度。四个X/Z报告使用同一角度，两种Y报告不变。这个角度来自候选探索，未证明是此单参数族的最优值。
 
@@ -46,22 +46,22 @@ c=1591/1609,\quad s=240/1609,
 
 每个真实标签—报告分支现在为
 
-\[
+$$
 A_{rg}=T^T\operatorname{diag}(I_8,\widetilde U_g^TU_r)T,
 \qquad p_{rg}=M_{rg}/6.
-\]
+$$
 
 保留36个分支，加目标列构成37维Gram矩阵。所有负块及其乘积在参考R上仍只含I、Z，故完整外部恢复误差仍只依赖
 
-\[
+$$
 \sigma=\operatorname{Re}(\rho_A\otimes\overline{\rho_B}).
-\]
+$$
 
 未加权Gram依旧是
 
-\[
+$$
 G^0_{ij}=\frac12+\frac14\operatorname{Tr}\bigl[\sigma\operatorname{Tr}_R(W_i^TW_j)\bigr].
-\]
+$$
 
 第160轮的Schur正根和隐式梯度公式相应从18个输出列扩到36个。代码独立比较原完整纯化输出，并核对解析梯度。数值搜索得到合法输入上的误差约0.449863269918；这个数暂时只说明新方案的下界候选，不能单凭它证明全局改善。
 
@@ -71,25 +71,25 @@ G^0_{ij}=\frac12+\frac14\operatorname{Tr}\bigl[\sigma\operatorname{Tr}_R(W_i^TW_
 
 令P±为两个取向投影，L=P₊+cP₋，J_A、J_B为负取向内两个局部实反对称生成元。对六个真实标签平均，新通道可写为四个Kraus项
 
-\[
+$$
 I/\sqrt3,\quad\sqrt{2/3}L,\quad sJ_A/\sqrt3,\quad sJ_B/\sqrt3.
-\]
+$$
 
 对任意合法纯化，两个扇区的范数各为1/√2；J_A|ψ〉、J_B|ψ〉与正负取向目标向量均正交。因而输出减目标在这两个归一化目标方向上的块为
 
-\[
+$$
 \begin{pmatrix}
 0&(c-1)/3\\
 (c-1)/3&-s^2/3
 \end{pmatrix},
-\]
+$$
 
 其余部分正半定。唯一负特征值给出完全相同的误差
 
-\[
+$$
 D_{e=0}=\frac{s^2+\sqrt{s^4+4(1-c)^2}}6
 \approx0.0089670740023.
-\]
+$$
 
 所以本轮策略针对指定含噪报告环境。它没有在所有读取条件下支配旧精确逆操作，也未实现更准确地知道未知量子态。
 

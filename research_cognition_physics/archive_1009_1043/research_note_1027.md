@@ -71,7 +71,9 @@ $$
 
 初片的Gauss方程可写成
 
-$$D_1E^1=\rho-D_2E^2-D_3E^3.\tag{5}$$
+$$
+D_1E^1=\rho-D_2E^2-D_3E^3.\tag{5}
+$$
 
 固定局部光滑 $A_i$、物质Cauchy资料及 $E^2,E^3$ 后，这是沿 $x^1$ 对 $E^1$ 的线性一阶方程。经过考察点的横截面初值可任意给定，故该点电场值不由物质值固定。$A_i$ 的反对称空间导数允许任意点磁场。Weyl方程规定时间导数，标量方程规定二阶时间导数，也不消去此点场强自由。
 
@@ -79,7 +81,9 @@ $$D_1E^1=\rho-D_2E^2-D_3E^3.\tag{5}$$
 
 独立Abelian系数证书取 $F_{10}=2$，$j^\mu=(1,0,0,1)$，选
 
-$$\partial_1F_{10}=j^0,\qquad \partial_0F_{0i}=j^i,\tag{6}$$
+$$
+\partial_1F_{10}=j^0,\qquad \partial_0F_{0i}=j^i,\tag{6}
+$$
 
 其它独立导数为零并补齐反对称部分。直接满足 $\partial_\mu F^{\mu\nu}=-j^\nu$ 及全部点Bianchi身份。对Weyl场，此处 $j$ 及对应场强导数是选定独立Grassmann偶单项式的**系数**；可以在二者前同时保留这个偶因子。点 $F_{10}=2$ 的普通数部分保持自由。该证书不是已制备的量子态或普通实数费米场全局解。
 
@@ -87,19 +91,25 @@ $$\partial_1F_{10}=j^0,\qquad \partial_0F_{0i}=j^i,\tag{6}$$
 
 对每个Weyl模块，$T_{f,Y}=y_fI$ 且五个超荷均非零。式(4)立即给 $R_f=k_YI_3$，包括消去全部味非对角实部和虚部。Higgs的实超荷生成元满足
 
-$$t_Y^2=-\frac14I_4,\tag{7}$$
+$$
+t_Y^2=-\frac14I_4,\tag{7}
+$$
 
 故 $Q_H=k_YI_4$。若有中性 $\sigma$，式(4)与 $Q=Q^T$ 同时消去其与Higgs的交叉源权，只余 $Q=\operatorname{diag}(k_YI_4,q_\sigma)$。
 
 夸克双重态同时携带非平凡色、弱表示，式(4)进而给 $(k_Y-k_3)T_{q,3}=0$、$(k_Y-k_2)T_{q,2}=0$。因此
 
-$$k_Y=k_2=k_3=q,\qquad R_f=qI_3,\qquad Q_H=qI_4.\tag{8}$$
+$$
+k_Y=k_2=k_3=q,\qquad R_f=qI_3,\qquad Q_H=qI_4.\tag{8}
+$$
 
 这是表示算符条件，任意共同运输的味基或实标量坐标基均保结论，不借字段分量顶点图判不可分解。非零规范相互作用是必要前提；关掉交互后不可继续使用相应力系数。凝聚背景下应保完整规范协变Higgs描述；不能先删到中性径向变量再领取式(7)的可逆性。
 
 当全部权共同为 $q$，源与完整应力之差为
 
-$$\mathcal T^{\mu\nu}-qT_{\rm full}^{\mu\nu}=-\eta^{\mu\nu}(W-qU)+I^{\mu\nu}.\tag{9}$$
+$$
+\mathcal T^{\mu\nu}-qT_{\rm full}^{\mu\nu}=-\eta^{\mu\nu}(W-qU)+I^{\mu\nu}.\tag{9}
+$$
 
 守恒要求 $\partial_\nu(W-qU)=0$ 对所有资料成立。任意**空间**一阶Cauchy资料及独立Grassmann系数使该无导数函数的全部场导数消失，所以在连通场域内 $W=qU+C$。反之，这确实给守恒源。于是式(2)在所声明取商内完成充要分类；整体 $q$、常数 $C$ 及改进仍自由。守恒不选择 $q$ 的正号或非零性。
 
@@ -107,7 +117,9 @@ $$\mathcal T^{\mu\nu}-qT_{\rm full}^{\mu\nu}=-\eta^{\mu\nu}(W-qU)+I^{\mu\nu}.\ta
 
 对式(1)，混合Hessian为 $\partial_{h_i}\partial_\sigma U=\kappa h_i\sigma$。规范力已给 $Q=\operatorname{diag}(qI_4,q_\sigma)$，剩余无导数补全的混合可积条件直接复用[1017](research_note_1017.md)：
 
-$$ (q-q_\sigma)\kappa h_i\sigma=0\quad\text{对所有 }h,\sigma.\tag{10}$$
+$$
+ (q-q_\sigma)\kappa h_i\sigma=0\quad\text{对所有 }h,\sigma.\tag{10}
+$$
 
 故 $\kappa\ne0$ 锁定 $q_\sigma=q$；$\kappa=0$ 且保持B993无其它连接菜单时，$W=q(U_H+U_f)+q_\sigma U_\sigma+C$ 允许两个独立源。它不要求把任意Higgs轨迹截断成 $A=0$；规范力及约束已保留，点 $F=0$ 也可由相容导数承接。
 

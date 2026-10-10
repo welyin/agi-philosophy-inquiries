@@ -24,11 +24,11 @@ T=∏μ_i¹ᐟ²在两种不同测度的Hilbert空间之间酉，映射内部C_c
 
 正式报告若与577统一使用E₊=1/2+sin(s)/4，则在同一flat源下
 
-\[
+$$
 \mathcal A=(D_c^2-D_b^2)\sin s
 =\frac{\hbar^2F^2s\cos s}{3M^2w^2},\qquad
 p_c(t)-p_b(t)=\frac{t^2}{8}\langle\mathcal A\rangle+o(t^2).
-\]
+$$
 
 支持位于0<s<π/2并远离F=0的严格Gauss源给正期望，因此存在充分小正时间的非零概率差。早先预审使用的另一合法效果(1+sin s)/2对应t²/4，应保留为历史，不与正式归一混用。
 
@@ -38,10 +38,10 @@ p_c(t)-p_b(t)=\frac{t^2}{8}\langle\mathcal A\rangle+o(t^2).
 
 原574已将配置无关的几何体积常数剔除，采用固定Hilbert测度∏μ_i dφ_i dHaar。固定有限图、M、K及ℏ，仅沿光滑外部参数改变正w、边／面几何权时，T不随该参数变化。共同紧支撑核上
 
-\[
+$$
 \partial_\lambda H_c=T(\partial_\lambda H_K)T^{-1},\qquad
 \partial_\lambda(H_c-H_b)=-\sum_i\frac{\hbar^2q_i}{2w_i^2}\partial_\lambda w_i.
-\]
+$$
 
 因此w_i=ε³ψ_i⁶给局部correct−bare响应差−3ℏ²q_i/(ε³ψ_i⁷)。有限图、参数局部范围内所有权正且有上下界时，各正形式的系数可比较，也可在共同能量形式域讨论相应固定态形式偏导；无需假设不同参数的完整闭算符域逐一相等。
 

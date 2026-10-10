@@ -1,0 +1,25 @@
+{
+  "round": 1061,
+  "kind": "fixed_publication_retrospective_conditional_CKM_summaries",
+  "date": "2026-10-09",
+  "x": {"mean": "0.97373", "sigma": "0.00031", "rounding_half_unit": "0.000005", "source": "Hardy-Towner 2020; Seng et al 2022 Eq.(43), rounded published total"},
+  "y": {"mean": "0.22309", "sigma": "0.00056", "rounding_half_unit": "0.000005", "source": "Seng et al 2022 abstract and Eq.(42), rounded published total"},
+  "r": {"mean": "0.23131", "sigma_components": ["0.00041", "0.00024", "0.00019"], "rounding_half_unit": "0.000005", "source": "Seng et al 2022 Eq.(55), axial ratio only; internal RSS adopted"},
+  "z": {"mean": "0.00410", "sigma_components": ["0.00009", "0.00022", "0.00015"], "rounding_half_unit": "0.000005", "source": "Belle 2021 arXiv:2102.00020 Eq.(36)/(51), one inclusive sample, arithmetic average of four QCD descriptions"},
+  "z_sigma_modes": ["rss_adopted", "linear_widening"],
+  "assumptions": {
+    "marginal_gaussian_coverage": "adopted conditionally, not derived from quoted standard uncertainties",
+    "cross_summary_correlations": "unspecified, never set to zero",
+    "Bailey_2015_scale_input_used": false,
+    "four_QCD_descriptions_counted_as_independent_data": false,
+    "latest_world_combination": false,
+    "blind_or_preregistered_test": false,
+    "independent_new_raw_observations": false,
+    "CKM_row_constraint_used_to_extract_inputs": false
+  },
+  "contracts": {
+    "main_four_two_sided": {"q": "2.50", "coordinates": ["x", "y", "r", "z"]},
+    "supplement_three_two_sided": {"q": "2.40", "coordinates": ["x", "y", "z"]},
+    "supplement_directional": {"upper_q": "2.25", "ratio_two_sided_q": "2.50", "coordinates": ["x", "y", "r", "z"]}
+  }
+}

@@ -21,7 +21,7 @@
 
 ## 2. 保留651的原壁，不用线性T壁替换
 
-在原目标球内，记原Higgs四实分量为 \(\phi_H\)，singlet为s，\(M>0\)。沿用651的固定λ：
+在原目标球内，记原Higgs四实分量为 $\phi_H$，singlet为s，$M>0$。沿用651的固定λ：
 
 $$
 h=|\phi_H|=\sqrt{2T},\quad f=s-\lambda h,\quad
@@ -42,7 +42,7 @@ df=(-\lambda\phi_H/h,1),\qquad
 \tag{2}
 $$
 
-该关系几乎处处成立；Higgs轴为原目标测度零集。以 \(h_\epsilon=\sqrt{h^2+\epsilon^2}\) 正则化，一阶梯度同样被 \(\sqrt{1+\lambda^2}\) 控制，故得到能源乘法估计及弱链式法则。没有新证明563的径向机制，也没有使用不存在的全局光滑h。
+该关系几乎处处成立；Higgs轴为原目标测度零集。以 $h_\epsilon=\sqrt{h^2+\epsilon^2}$ 正则化，一阶梯度同样被 $\sqrt{1+\lambda^2}$ 控制，故得到能源乘法估计及弱链式法则。没有新证明563的径向机制，也没有使用不存在的全局光滑h。
 
 ## 3. 同一次实际测量生成全部区域记录
 
@@ -55,7 +55,7 @@ K_y(f)=(2\pi\sigma^2)^{-1/4}
 \tag{3}
 $$
 
-有限有序阈值将实线分成区间 \(I_0,\ldots,I_m\)，首尾允许无穷。记录 \(\ell_v=j\) 表示该次节点读数 \(y_v\in I_j\)，并非另做一次锐测量。全记录instrument为
+有限有序阈值将实线分成区间 $I_0,\ldots,I_m$，首尾允许无穷。记录 $\ell_v=j$ 表示该次节点读数 $y_v\in I_j$，并非另做一次锐测量。全记录instrument为
 
 $$
 \mathcal I_\ell(\rho)=
@@ -78,11 +78,11 @@ M_j(u,v)=e^{-(u-v)^2/(8\sigma^2)}
 \tag{5}
 $$
 
-它是Gaussian振幅积分形成的正定核。对角给正确效果概率，但通常不同于 \(\sqrt{M_j(u,u)M_j(v,v)}\)；后者是另一个Lüders instrument。读数概率相同不足以替换实际后态，和723的对象要求一致。
+它是Gaussian振幅积分形成的正定核。对角给正确效果概率，但通常不同于 $\sqrt{M_j(u,u)M_j(v,v)}$；后者是另一个Lüders instrument。读数概率相同不足以替换实际后态，和723的对象要求一致。
 
 ### 完整原能源，而非只计算一个读口成本
 
-原完整H中，字段势、空间差分、全部CAR质量及跳跃与K_y的字段乘法对易；规范电动能也不受该规范不变字段乘法影响。只有原目标动能贡献非选择反作用。用 \(\int K_y\partial_fK_y=0\)、\(\int|\partial_fK_y|^2=1/(4\sigma^2)\) 展开能源形式，得到
+原完整H中，字段势、空间差分、全部CAR质量及跳跃与K_y的字段乘法对易；规范电动能也不受该规范不变字段乘法影响。只有原目标动能贡献非选择反作用。用 $\int K_y\partial_fK_y=0$、$\int|\partial_fK_y|^2=1/(4\sigma^2)$ 展开能源形式，得到
 
 $$
 \sum_\ell\operatorname{Tr}\!\left[H\mathcal I_\ell(\rho)\right]

@@ -8,7 +8,9 @@
 
 把这个差在完整作用上运输后，1028二阶必要条件仍成立：
 
-$$q_aq_b=\delta_{ab}\kappa_aq_a.\tag{1}$$
+$$
+q_aq_b=\delta_{ab}\kappa_aq_a.\tag{1}
+$$
 
 本轮还允许所列恒等守恒的物质改进及独立常量源，不必为这条必要条件限定它们为零。结论只约束最小动态源权，不能宣称所有非最小响应都已消除或必然存在非线性完成。
 
@@ -18,15 +20,19 @@ $$q_aq_b=\delta_{ab}\kappa_aq_a.\tag{1}$$
 
 使用[1028](research_note_1028.md)的同一对象：
 
-$$S=S_0+\varepsilon S_1+\varepsilon^2S_2+\cdots,\qquad
-S_0=\sum_aS_{\rm PF}[h^a]+S_m.\tag{2}$$
+$$
+S=S_0+\varepsilon S_1+\varepsilon^2S_2+\cdots,\qquad
+S_0=\sum_aS_{\rm PF}[h^a]+S_m.\tag{2}
+$$
 
 $S_m$ 是[P981](../archive_956_989/981/drafts/common_parent_contract_v1.md)平直领先Yang–Mills—Higgs—Weyl作用，保Yukawa、所声明Weinberg及Higgs势；可含[B993](../archive_990_1008/993/common_candidate_v1.md)中性标量。物质交互不随形式引力参数 $\varepsilon$ 关闭。健康PF理想及其三次系数 $\kappa_a$ 沿用358、1018。
 
 先固定作用泛函
 
-$$S_1=\sum_a\kappa_a S_{\rm EH,3}[h^a]
-+\frac12\sum_aq_a\int h^a_{\mu\nu}T_m^{\mu\nu},\tag{3}$$
+$$
+S_1=\sum_a\kappa_a S_{\rm EH,3}[h^a]
++\frac12\sum_aq_a\int h^a_{\mu\nu}T_m^{\mu\nu},\tag{3}
+$$
 
 模边界项，场重定义须在全部对象中一起运输。$S_1$ 的选择本身不是本轮结论。1027先给来源方向，本轮不穷尽所有可能的高导数或非最小顶点。
 
@@ -53,18 +59,24 @@ $$S_1=\sum_a\kappa_a S_{\rm EH,3}[h^a]
 
 记 $R_0$ 为全部零阶规范生成元、$E_0$ 为 $S_0$ 的Euler导数。一个标准最小提升 $R_1^{\rm std}$ 的存在由一阶协变化提供。任意另一提升 $R_1$ 满足相同方程
 
-$$R_0S_1+R_1S_0=0\quad\text{模边界项}.\tag{4}$$
+$$
+R_0S_1+R_1S_0=0\quad\text{模边界项}.\tag{4}
+$$
 
 两式相减，$\Delta R_1S_0=0$ 对任意局部参数成立。因此由第3节完备性，存在局部有限阶参数算子 $Z$ 和分次形式反自伴算子 $M$，使
 
-$$\Delta R_1(\xi)=R_0(Z\xi)+M_\xi E_0.\tag{5}$$
+$$
+\Delta R_1(\xi)=R_0(Z\xi)+M_\xi E_0.\tag{5}
+$$
 
 反自伴是连同分部积分及费米符号定义的；它保证 $\int E_0M_\xi E_0=0$。全局刚性对称若只能接受常参数，不构成式(5)之外的任意函数规范自由。
 
 必须保留式(5)的第二项。令实Higgs为 $h$，$O=h^Th/2$，超荷实生成元 $t_Y^T=-t_Y$，取
 
-$$b_\xi=\xi^\mu\partial_\mu O,\qquad
-\Delta h=b_\xi t_YE_h.\tag{6}$$
+$$
+b_\xi=\xi^\mu\partial_\mu O,\qquad
+\Delta h=b_\xi t_YE_h.\tag{6}
+$$
 
 则 $E_h^T\Delta h=0$ 恒成立，但 $\Delta O=b_\xi h^Tt_YE_h$ 离壳可以非零。本轮用完整原Higgs作用的真实离壳jet得到 $\Delta O=-75/224$、作用变分为零。因此“裸公式唯一”确实不成立，正确结论是等价类唯一。这个离壳校准不是解或量子态；所用系数可带相应量纲，任意选择的平凡代表不被登记为新物理耦合。
 
@@ -87,13 +99,17 @@ $S_0,S_1$ 均不改变。这里不声称形式级数收敛为一个全局非微�
 
 归一 $R_1$ 后，把首阶闭合关系与标准代表比较。差别的一阶引力参数 $\Delta B_1$ 必须满足
 
-$$2\partial_{(\mu}\Delta B^a_{1,\nu)}\approx0,\tag{7}$$
+$$
+2\partial_{(\mu}\Delta B^a_{1,\nu)}\approx0,\tag{7}
+$$
 
 其中 $\approx$ 表示在 $S_0$ 的全部方程及其延长上成立。此式先对**任意**两份局部参数判断，不能一开始只选Killing。
 
 固定第二份参数，把 $\Delta B_1$ 看成第一份参数的有限阶微分算子。若最高参数导数阶非零，其主符号须在PF对称梯度符号的核中。对任意非零协向量 $k$，
 
-$$k_\mu v_\nu+k_\nu v_\mu=0\quad\Longrightarrow\quad v=0.\tag{8}$$
+$$
+k_\mu v_\nu+k_\nu v_\mu=0\quad\Longrightarrow\quad v=0.\tag{8}
+$$
 
 选一个 $k_j\ne0$，先由 $jj$ 分量得 $v_j=0$，再由 $j\nu$ 得全部 $v_\nu=0$；此论证包括null协向量。逐参数导数阶下降，算子各系数均弱零。第3节正规性把它们写成Euler项及有限导数的组合。
 
@@ -107,8 +123,10 @@ $$k_\mu v_\nu+k_\nu v_\mu=0\quad\Longrightarrow\quad v=0.\tag{8}$$
 
 可把式(3)扩为
 
-$$S_1'=S_1+\frac12\sum_a\int h^a_{\mu\nu}
-\bigl(I_a^{\mu\nu}+C_a\eta^{\mu\nu}\bigr),\tag{9}$$
+$$
+S_1'=S_1+\frac12\sum_a\int h^a_{\mu\nu}
+\bigl(I_a^{\mu\nu}+C_a\eta^{\mu\nu}\bigr),\tag{9}
+$$
 
 条件是 $I_a$ 只依赖物质jet、无 $h$，正规、对称、内部规范不变且 $\partial_\mu I_a^{\mu\nu}\equiv0$；$C_a$ 是真常量。式(9)新增项在 $R_0$ 下模边界严格不变，故同一个标准 $R_1$ 仍满足一阶恒等式。
 

@@ -1,0 +1,105 @@
+{
+  "round": 1083,
+  "passed": true,
+  "arithmetic": "Fraction and exact Gaussian-rational matrices",
+  "group_count": 7,
+  "assertion_count": 93,
+  "groups": [
+    {
+      "name": "fixed_quantum_comparator",
+      "passed": true,
+      "dimension": 18,
+      "arithmetic": "Gaussian rational",
+      "source_cases": 3,
+      "coarse_effect": "I/2 + q_i*q_j*(p_i-p_j).sigma/8",
+      "failure_branch": "fair report, retained readiness record; never postselected"
+    },
+    {
+      "name": "same_q_in_actual_meeting",
+      "passed": true,
+      "lambda_right": "2/5",
+      "q_output": "11/20",
+      "B_output": [
+        "3/20",
+        "1/20",
+        "7/40"
+      ],
+      "p_output": [
+        "3/11",
+        "1/11",
+        "7/22"
+      ],
+      "scope": "Selected source marginal; no equality of full instruments or retained environments is asserted."
+    },
+    {
+      "name": "actual_representation_test",
+      "passed": true,
+      "exact_residual": "R_i/(kappa*w_i)=Delta B-Delta W*v_i",
+      "scalar_checks": 4,
+      "anchor_difference_squared": "5/16",
+      "weak_scope": "Only V is forced by all-r sign agreement; representative weight remains free."
+    },
+    {
+      "name": "attenuation_and_balancing_boundary",
+      "passed": true,
+      "known_weight_required": true,
+      "universal_unknown_normalization_is_affine": false,
+      "bare_normalized_outputs": [
+        "e1/2",
+        "2*e1/3"
+      ],
+      "nonzero_anchor_probability_gap": "1/32",
+      "zero_anchor_probability_gap": "0",
+      "balanced_source": "q=c and p=(1-lambda)*p_x+lambda*p_y after explicit known-q equalization"
+    },
+    {
+      "name": "correlated_readiness_with_fixed_local_sources",
+      "passed": true,
+      "joint_atoms": 8,
+      "all_local_q": "1/2",
+      "h12": "1/2",
+      "all_other_distinct_h": "1/4",
+      "local_states_equal": true,
+      "processor_equal": true,
+      "scope": "A single joint preparation realizes all pair marginals. Independence is a model input, not a universal cognitive axiom."
+    },
+    {
+      "name": "finite_probability_failures",
+      "passed": true,
+      "strict_cycle_contrasts": [
+        "1/4608",
+        "1/4608",
+        "1/2304"
+      ],
+      "binary_tie_contrasts": [
+        "0",
+        "0",
+        "-1/192"
+      ],
+      "maximum_effect_vector_norm_squared": "1/128",
+      "counterexample": "Only joint readiness was changed; local p_i,q_i and the physical comparator stay fixed."
+    },
+    {
+      "name": "two_actual_representation_counterexamples",
+      "passed": true,
+      "affine_anchor_determinant": "1",
+      "wrong_position_probability_contrast": "-1/96",
+      "correct_position_probabilities": [
+        "9/16",
+        "5/8"
+      ],
+      "wrong_weight_probability_gap": "1/16",
+      "maximum_effect_vector_norm_squared": "5/64",
+      "scope": "General positive weights, not q>1 readiness. Betweenness and ordinal representation each fall short of full probability representation."
+    }
+  ],
+  "scope": {
+    "general_representation_theorem_proved_by_finite_examples": false,
+    "actual_spatial_dimension_derived": false,
+    "neutral_attenuation_is_original_contact_equivalence": false,
+    "independent_source_preparations_are_universal_cognitive_axiom": false,
+    "passive_reference_full_instrument_equality_claimed": false,
+    "output_readiness_postselected": false
+  },
+  "checker_sha256": "b0d634bc16b6a0e6754c64c922b1f56b25aff42228ad00fc7e45450eaa720fa3"
+}

@@ -8,7 +8,9 @@
 
 新候选K_X采用精确的 $\mathbb Z_{4,X}$，生成元r满足 $r^2=(-1)^F$，允许在与
 
-$$\mathrm{Spin}^{\mathbb Z_4}=(\mathrm{Spin}\times\mathbb Z_4)/\langle(-1,r^2)\rangle\tag{1}$$
+$$
+\mathrm{Spin}^{\mathbb Z_4}=(\mathrm{Spin}\times\mathbb Z_4)/\langle(-1,r^2)\rangle\tag{1}
+$$
 
 相容的全部背景上定义该对称性。所有Weyl费米场有奇荷，玻色场有偶荷。本轮暂不加入反常流入、高维体或抵消此反常的其它拓扑部门。要求反常为零，是要把该额外结构作为无反常背景耦合或规范结构使用；仅仅存在一个有't Hooft反常的全局对称，不自动使四维理论不自洽。
 
@@ -33,13 +35,17 @@ $$
 
 奇整数s增加4时，式(2)两项只改变整数。第一项的改变量是 $(11s^2+44s+57)/8$，对奇s为整数。因此只需算代表s=1、−1，分别给
 
-$$ (\alpha,\beta)=(1/16,3/4),\quad(-1/16,-3/4)\pmod1.$$
+$$
+ (\alpha,\beta)=(1/16,3/4),\quad(-1/16,-3/4)\pmod1.
+$$
 
 于是净计数 $\nu=N_1-N_3\pmod{16}$ 完整决定此反常，$\beta=12\alpha\pmod1$，不是两份独立条件。零反常等价于 $\nu=0$。
 
 标准 $Q_{\rm em}=T_3+Y$ 记号下，定义标签
 
-$$X=5(B-L)-4Y.\tag{3}$$
+$$
+X=5(B-L)-4Y.\tag{3}
+$$
 
 这里B−L只是用于给出电荷指派；没有假定它是当前P981的精确对称。若质量作用破坏它，相应X也须重新核查。
 
@@ -55,11 +61,15 @@ $$X=5(B-L)-4Y.\tag{3}$$
 
 每代原SM给15个左手分量。若新增SM单态的Z4荷1和3数目分别为 $n_+,n_-$，则在该明确菜单中
 
-$$\boxed{\nu=15n_g+n_+-n_-\equiv-n_g+n_+-n_-\pmod{16}.}\tag{4}$$
+$$
+\boxed{\nu=15n_g+n_+-n_-\equiv-n_g+n_+-n_-\pmod{16}.}\tag{4}
+$$
 
 三代的必要且足以消除此**被审计反常**的条件是
 
-$$n_+-n_-=3+16k,\quad k\in\mathbb Z.\tag{5}$$
+$$
+n_+-n_-=3+16k,\quad k\in\mathbb Z.\tag{5}
+$$
 
 若只允许荷1，数目可为3、19、35、51……；允许两种荷还可加任意成对的(1,3)表示，其不变二次质量和反常相消相容。
 
@@ -73,7 +83,9 @@ $$n_+-n_-=3+16k,\quad k\in\mathbb Z.\tag{5}$$
 
 若进一步采用完整连续 $U(1)_X$，并只增加X=5的N，则同一SM表给
 
-$$\sum X=5(n_N-n_g),\qquad\sum X^3=125(n_N-n_g).\tag{6}$$
+$$
+\sum X=5(n_N-n_g),\qquad\sum X^3=125(n_N-n_g).\tag{6}
+$$
 
 $SU(3)^2X$、$SU(2)^2X$、$Y^2X$、$YX^2$ 的所列局部系数均为零。连续局部反常因而要求 $n_N=n_g$，比离散同余更强。这里恰有三个N来自**更强连续对称和固定荷表**，不能称为同一离散定理的无代价加强。此局部计算仍不是所有全局规范束的完整证书。
 
@@ -81,7 +93,9 @@ $SU(3)^2X$、$SU(2)^2X$、$Y^2X$、$YX^2$ 的所列局部系数均为零。连�
 
 用左手不变量 $\ell_i=\epsilon_{ab}l_i^aH^b$，其Z4荷为3。于是
 
-$$X_4(\ell_iN_j)=0,\quad X_4(N_iN_j)=2,\quad X_4(\ell_i\ell_j)=2.\tag{7}$$
+$$
+X_4(\ell_iN_j)=0,\quad X_4(N_iN_j)=2,\quad X_4(\ell_i\ell_j)=2.\tag{7}
+$$
 
 普通带电Yukawa项均为中性。固定不变常数的Dirac中微子Yukawa允许；非零裸Majorana块及Weinberg块均破坏r。任意 $H^\dagger H$ 因子都是中性，不能改变这个判断；也不能只看H在一个规范下的符号就宣布质量来源已经完成。
 
@@ -93,19 +107,25 @@ $$X_4(\ell_iN_j)=0,\quad X_4(N_iN_j)=2,\quad X_4(\ell_i\ell_j)=2.\tag{7}$$
 
 一种明确的候选扩展是加入荷2的SM实单态S，以及三个荷1的N，采用
 
-$$\mathcal L\supset-\ell^T YN-\tfrac12 S N^T yN+\mathrm{h.c.},\qquad y=y^T.\tag{8}$$
+$$
+\mathcal L\supset-\ell^T YN-\tfrac12 S N^T yN+\mathrm{h.c.},\qquad y=y^T.\tag{8}
+$$
 
 这类带S的质量来源已有[Kawasaki–Yanagida，§2](https://arxiv.org/html/2304.10100)。本文不采用其暴胀势、宇宙初态或观测结论；这里只核同一作用的选择规则。
 
 在固定规范与Higgs相的非零S背景 $v_S$ 上，$M=v_Sy$ 可逆时，低能树级消去N给
 
-$$C_5=-YM^{-1}Y^T.\tag{9}$$
+$$
+C_5=-YM^{-1}Y^T.\tag{9}
+$$
 
 S及其势、准备／相选择、y、Y全是新增输入。对规范对称的“破缺”应理解为Higgs相及选取背景后的描述，不能把两个规范相关的符号分支直接当作两种不同物理宇宙。这里未构造全局相、缺陷、实际制备或完整阈值误差。
 
 直接核查共同二次对象：令
 
-$$K(S)=\begin{pmatrix}0&Y\\Y^T&Sy\end{pmatrix},\qquad U=\operatorname{diag}(-iI_3,iI_3).$$
+$$
+K(S)=\begin{pmatrix}0&Y\\Y^T&Sy\end{pmatrix},\qquad U=\operatorname{diag}(-iI_3,iI_3).
+$$
 
 有 $U^TK(-S)U=K(S)$。消元的 $C_5(-S)=-C_5(S)$ 正好补偿 $\ell\ell\mapsto-\ell\ell$。若冻结S而仍宣称全部原变换都不动背景，恒等式失效。
 
@@ -115,8 +135,10 @@ $$K(S)=\begin{pmatrix}0&Y\\Y^T&Sy\end{pmatrix},\qquad U=\operatorname{diag}(-iI_
 
 旧[539](../../../archive_531_553/research_note_539.md)已有seesaw谱与其余输入的精确关系，本轮不重新发现seesaw自由。这里只核新对称没有将它去掉：
 
-$$Y\longmapsto tY,\quad v_S\longmapsto t^2v_S,\quad y\longmapsto y,
-\qquad t>0$$
+$$
+Y\longmapsto tY,\quad v_S\longmapsto t^2v_S,\quad y\longmapsto y,
+\qquad t>0
+$$
 
 保持式(8)的电荷、式(4)的反常以及式(9)的C₅。相同固定规范／字段归一下，重质量不同，树级导数匹配矩阵 $C_6=YM^{-1}(M^{-1})^\dagger Y^\dagger$ 则变为 $t^{-2}C_6$。这不是完整现实低能预测已匹配，而是所声明质量类别的参数仍未被选定；数值矩阵不能代替全量子阈值证明。
 

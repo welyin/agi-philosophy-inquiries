@@ -22,42 +22,54 @@
 
 取
 
-$$A=\mathbb R^4,\qquad \mathcal H=\operatorname{span}_{\mathbb C}\{|ij\rangle:1\le i,j\le4,\ i\ne j\}.$$
+$$
+A=\mathbb R^4,\qquad \mathcal H=\operatorname{span}_{\mathbb C}\{|ij\rangle:1\le i,j\le4,\ i\ne j\}.
+$$
 
 A的每个不可约复表示都是实际的实一维字符 $a\mapsto a_i$；不存在需另分的复共轭角色。**这里选择R⁴是明示比较类别，不从一般实代数的summand名字推断双模类型。**
 
 定义
 
-$$\rho(a)|ij\rangle=a_i|ij\rangle,\quad
+$$
+\rho(a)|ij\rangle=a_i|ij\rangle,\quad
 J\sum z_{ij}|ij\rangle=\sum\bar z_{ij}|ji\rangle,\quad
-\rho(b)^0=J\rho(b)^*J^{-1},\quad\rho(b)^0|ij\rangle=b_j|ij\rangle.$$
+\rho(b)^0=J\rho(b)^*J^{-1},\quad\rho(b)^0|ij\rangle=b_j|ij\rangle.
+$$
 
 故表示忠实、零阶成立、J²=1。置
 
-$$G=\begin{pmatrix}
+$$
+G=\begin{pmatrix}
 0&-1&-1&1\\1&0&-1&-1\\1&1&0&-1\\-1&1&1&0
-\end{pmatrix},\qquad\Gamma|ij\rangle=G_{ij}|ij\rangle.$$
+\end{pmatrix},\qquad\Gamma|ij\rangle=G_{ij}|ij\rangle.
+$$
 
 G反对称且非对角元均±1，直接给Γ²=1、JΓ=−ΓJ。若e_i是A的第i个最小投影，则
 
-$$\Gamma=\sum_{i,j}G_{ij}\rho(e_i)\rho(e_j)^0,\qquad
-\cap_{ij}=\operatorname{Tr}(\Gamma\rho(e_i)\rho(e_j)^0)=G_{ij}.$$
+$$
+\Gamma=\sum_{i,j}G_{ij}\rho(e_i)\rho(e_j)^0,\qquad
+\cap_{ij}=\operatorname{Tr}(\Gamma\rho(e_i)\rho(e_j)^0)=G_{ij}.
+$$
 
 因此定向成立；Pfaffian为 $G_{12}G_{34}-G_{13}G_{24}+G_{14}G_{23}=-1$，所以det∩=1。
 
 按词典序排列12个槽：12,13,14,21,23,24,31,32,34,41,42,43。D₀无对角元，以下无向边系数为1：
 
-$$12\!:\!32,\ 12\!:\!42,\ 13\!:\!14,\ 13\!:\!43,
+$$
+12\!:\!32,\ 12\!:\!42,\ 13\!:\!14,\ 13\!:\!43,
 \ 14\!:\!24,\ 14\!:\!34,\ 21\!:\!23,\ 21\!:\!24,
 \ 23\!:\!43,\ 31\!:\!34,\ 31\!:\!41,\ 32\!:\!34,
-\ 41\!:\!42,\ 41\!:\!43.$$
+\ 41\!:\!42,\ 41\!:\!43.
+$$
 
 另有12:14和21:41两条边系数为2。它等于“同一行或同一列且分级相反”的全部允许边，把这两条J配对边加权为2。这个权重只是准确反例的数据，不是物理拟合或需继续优化的参数。
 
 实对称性给D₀*=D₀；每条边的J伙伴具有同系数，所以JD₀=D₀J；各边连接相反Γ，故D₀Γ=−ΓD₀。对任意顶点s=(i,j)、u=(k,l)，一阶双交换子为
 
-$$[[D_0,\rho(a)],\rho(b)^0]_{su}
-=(D_0)_{su}(a_k-a_i)(b_l-b_j). \tag{1}$$
+$$
+[[D_0,\rho(a)],\rho(b)^0]_{su}
+=(D_0)_{su}(a_k-a_i)(b_l-b_j). \tag{1}
+$$
 
 每条非零边有i=k或j=l，所以对全部a,b精确为零。这是全量词证明；基元检查只是核算。
 
@@ -67,9 +79,11 @@ $$[[D_0,\rho(a)],\rho(b)^0]_{su}
 
 在上述**无重数、互不等价的实际左右字符**类别中，要求一个粒／反粒分级
 
-$$\varepsilon=\varepsilon^*,\quad\varepsilon^2=I,\quad
+$$
+\varepsilon=\varepsilon^*,\quad\varepsilon^2=I,\quad
 [\varepsilon,\rho(A)]=[\varepsilon,D]=0,\quad
-\varepsilon J=-J\varepsilon. \tag{2}$$
+\varepsilon J=-J\varepsilon. \tag{2}
+$$
 
 由于(2)还推出ε与右作用对易，联合秩一投影 $P_{ij}=\rho(e_i)\rho(e_j)^0$ 迫使ε在顶点基底为实对角，记元素x_s。于是D支撑边给x_s=x_u，J给x_{Js}=−x_s。
 
@@ -79,7 +93,9 @@ $$\varepsilon=\varepsilon^*,\quad\varepsilon^2=I,\quad
 
 本例支撑图连通，且含
 
-$$13\longleftrightarrow14\longleftrightarrow34\longleftrightarrow31=J(13). \tag{3}$$
+$$
+13\longleftrightarrow14\longleftrightarrow34\longleftrightarrow31=J(13). \tag{3}
+$$
 
 因此不存在ε；即使把ε²=I删除，满足其它式(2)的Hermitian线性解也只有0。代码从边约束和J约束形成精确满秩Gram，另一个核验脚本在全部144个Hermitian实参数上直接求约束秩，不预先假设对角性。
 
@@ -89,35 +105,47 @@ $$13\longleftrightarrow14\longleftrightarrow34\longleftrightarrow31=J(13). \tag{
 
 保留轻槽L=(13,31)，其余十槽按原顺序组成H。两份投影都与A、J、Γ相容。写
 
-$$D_0=\begin{pmatrix}0&C\\C^T&B\end{pmatrix}_{L\oplus H},\qquad
-D(t,M)=\begin{pmatrix}0&tC\\tC^T&MB\end{pmatrix},\quad M>0,\ t\ne0. \tag{4}$$
+$$
+D_0=\begin{pmatrix}0&C\\C^T&B\end{pmatrix}_{L\oplus H},\qquad
+D(t,M)=\begin{pmatrix}0&tC\\tC^T&MB\end{pmatrix},\quad M>0,\ t\ne0. \tag{4}
+$$
 
 给J伙伴边共同缩放保留上节全部身份及图；t和M是比较族的明示实参数。H次序为12,14,21,23,24,32,34,41,42,43。C只有C_{1,2}=C_{1,10}=C_{2,7}=C_{2,8}=1，其余零，故CCᵀ=2I₂。
 
 以下整数／有理数身份可直接以伴随矩阵或消元验证；代码保存完整B⁻¹供复算：
 
-$$\det B=-4,\quad CB^{-1}C^T=-2\sigma_x,\quad
-\|B^{-1}\|_F^2=41/2,\quad\det D(t,M)=16M^8t^4. \tag{5}$$
+$$
+\det B=-4,\quad CB^{-1}C^T=-2\sigma_x,\quad
+\|B^{-1}\|_F^2=41/2,\quad\det D(t,M)=16M^8t^4. \tag{5}
+$$
 
 例如
 
-$$CB^{-1}=\begin{pmatrix}1&0&0&2&0&0&-1&-1&0&0\\
-0&-1&1&0&0&2&0&0&0&-1\end{pmatrix},$$
+$$
+CB^{-1}=\begin{pmatrix}1&0&0&2&0&0&-1&-1&0&0\\
+0&-1&1&0&0&2&0&0&0&-1\end{pmatrix},
+$$
 
 乘回B和Cᵀ分别验证C及−2σ_x，避免只凭数值逆推。式(5)证明重块与完整D均可逆。
 
 由 $(D-zI)(\ell,h)^T=(f,0)^T$ 的第二行消去h，得到
 
-$$[\Sigma(z)-zI_2]\ell=f,\qquad
-\Sigma(z)=-t^2C(MB-zI)^{-1}C^T. \tag{6}$$
+$$
+[\Sigma(z)-zI_2]\ell=f,\qquad
+\Sigma(z)=-t^2C(MB-zI)^{-1}C^T. \tag{6}
+$$
 
 因此
 
-$$\boxed{\Sigma(0)=\frac{2t^2}{M}\sigma_x\ne0.} \tag{7}$$
+$$
+\boxed{\Sigma(0)=\frac{2t^2}{M}\sigma_x\ne0.} \tag{7}
+$$
 
 在两侧逆存在时，更有精确的压缩预解式
 
-$$P_L(D-zI)^{-1}P_L=[\Sigma(z)-zI]^{-1}. \tag{8}$$
+$$
+P_L(D-zI)^{-1}P_L=[\Sigma(z)-zI]^{-1}. \tag{8}
+$$
 
 式(7)是同一父对象的**零频Schur算符**，并非先猜一个低能质量再拟合父矩阵。它连接J互换的两个保留槽；由于本轮没有Lorentz旋量／SM表示／物理量子场映射，不能把它直接叫作标准模型Majorana或Weinberg质量。
 
@@ -125,12 +153,16 @@ $$P_L(D-zI)^{-1}P_L=[\Sigma(z)-zI]^{-1}. \tag{8}$$
 
 由 $\|B^{-1}\|\le\|B^{-1}\|_F=\sqrt{41/2}<5$，重块MB到零的谱距离严格大于M/5。对实或复z满足|z|<M/5，用预解恒等式得
 
-$$\|\Sigma(z)-\Sigma(0)\|
-\le\frac{2t^2|z|}{(M/5)(M/5-|z|)}. \tag{9}$$
+$$
+\|\Sigma(z)-\Sigma(0)\|
+\le\frac{2t^2|z|}{(M/5)(M/5-|z|)}. \tag{9}
+$$
 
 特别地|z|≤M/100时，右边至多 $(10/19)t^2/M$，所以
 
-$$|\Sigma(z)_{13,31}|\ge\frac{28t^2}{19M}>0. \tag{10}$$
+$$
+|\Sigma(z)_{13,31}|\ge\frac{28t^2}{19M}>0. \tag{10}
+$$
 
 该非零性覆盖一个明确有限窗口，无需数值外推。t/M小使轻重混合较弱，但(4)—(10)的有限矩阵恒等式不依赖把它当零。实际极点还要解det[Σ(z)−zI]=0，并带入残差、波函数及物理场字典；本轮不开展该候选的极点拟合。
 
@@ -138,16 +170,20 @@ $$|\Sigma(z)_{13,31}|\ge\frac{28t^2}{19M}>0. \tag{10}$$
 
 **在零频Σ(0)上**，L上的J、Γ与自伴性仍满足相应身份。一般复z上正确的运输式是
 
-$$\Sigma(z)^\dagger=\Sigma(\bar z),\qquad
+$$
+\Sigma(z)^\dagger=\Sigma(\bar z),\qquad
 J_L\Sigma(z)J_L^{-1}=\Sigma(\bar z),\qquad
-\Gamma_L\Sigma(z)\Gamma_L=-\Sigma(-z).$$
+\Gamma_L\Sigma(z)\Gamma_L=-\Sigma(-z).
+$$
 
 因此不能把每个非零z处的Σ(z)称作同一类实偶D。左右作用仍保持零阶；Γ_L可由−P_1Q_3+P_3Q_1写出定向。原R⁴在L上不忠实，因为第2、4角色不再可见；取支持商R²可以恢复忠实性，但不能修复下面的一阶失败。
 
 令 $P=\rho(e_1)|_L=\operatorname{diag}(1,0)$，$Q=\rho(e_1)^0|_L=\operatorname{diag}(0,1)$。则
 
-$$[[\Sigma(0),P],Q]=-\Sigma(0),\qquad
-\|[[\Sigma(0),P],Q]\|=2t^2/M. \tag{11}$$
+$$
+[[\Sigma(0),P],Q]=-\Sigma(0),\qquad
+\|[[\Sigma(0),P],Q]\|=2t^2/M. \tag{11}
+$$
 
 所以不再继承的是**零维一阶质量算符合同**。把非零有效核装回完整父D并要求其仍是一个直接一阶项，才会制造矛盾；正确消元已经包含通过重部门的多步路径。
 
@@ -157,7 +193,9 @@ $$[[\Sigma(0),P],Q]=-\Sigma(0),\qquad
 
 若另有真正的(2)分级，且轻重投影与ε对易，则D的各块交织ε，重块预解也与ε_H对易，因此
 
-$$[\varepsilon_L,\Sigma(z)]=0. \tag{12}$$
+$$
+[\varepsilon_L,\Sigma(z)]=0. \tag{12}
+$$
 
 ε_L相反标签之间的有效块严格为零，任何可逆重块和任何允许z都成立。这个正结果给了一个可审核的选择条件：**实际全局守恒分拆与所用轻重字典相容**，而不是逐块的一阶零元。对本轮无重数类别，是否存在这份分拆由第4节图判据完全决定。
 

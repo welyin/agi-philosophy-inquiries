@@ -8,15 +8,15 @@
 
 设K为整体转移矩阵，R取主体边缘。要求存在同一个局部随机矩阵L，使任意整体初态p都满足
 
-\[
+$$
 RKp=LRp.
-\]
+$$
 
 等价地，
 
-\[
+$$
 RK=LR\quad\Longleftrightarrow\quad\ker R\subseteq\ker(RK).
-\]
+$$
 
 右侧说：现在被局部摘要忘掉的每个区别，经过K后也不能变成本地可见区别。R在局部空间上满射时，核包含关系使L良定义；对于边缘映射和随机K，用每个局部标签对应的一列定义L，即得正且归一的局部核。反向蕴含直接由矩阵乘法得到。这是有限状态粗粒化闭合条件的具体形式。
 
@@ -28,10 +28,10 @@ RK=LR\quad\Longleftrightarrow\quad\ker R\subseteq\ker(RK).
 
 考虑完全经典、因而也是合法实复密度矩阵的两个联合准备：
 
-\[
+$$
 \omega_0=\tfrac12(|00\rangle\langle00|+|11\rangle\langle11|),\qquad
 \omega_1=\tfrac12(|01\rangle\langle01|+|10\rangle\langle10|).
-\]
+$$
 
 两方边缘都为I/2。施加同一个CNOT，使目标位变为两输入的异或，目标分别确定为0和1。于是当前边缘完全相同，未来目标状态的迹距离却为1。
 
@@ -43,16 +43,16 @@ RK=LR\quad\Longleftrightarrow\quad\ker R\subseteq\ker(RK).
 
 固定有限维A、B和闭合幺正U，假设存在Φ_A，对每个联合态都有
 
-\[
+$$
 \operatorname{Tr}_B(U\rho_{AB}U^\dagger)
 =\Phi_A(\operatorname{Tr}_B\rho_{AB}).
-\]
+$$
 
 对偶地，任意A上的算符X满足
 
-\[
+$$
 U^\dagger(X\otimes I)U=\phi(X)\otimes I.
-\]
+$$
 
 幺正共轭保持乘法和伴随，所以φ是同一个全矩阵代数的保单位、保伴随、单射乘法映射。有限维下它是自同构，可由某个局部幺正实现。消去该局部共轭后，剩余操作与全部X⊗I对易，故只能是I⊗U_B。因而U=U_A⊗U_B。
 
@@ -64,9 +64,9 @@ U^\dagger(X\otimes I)U=\phi(X)\otimes I.
 
 上述要求覆盖**所有联合初态**。若事先承诺独立且固定的环境σ_B，则
 
-\[
+$$
 \Phi_A(\rho_A)=\operatorname{Tr}_B[U(\rho_A\otimes\sigma_B)U^\dagger]
-\]
+$$
 
 本来就是合法局部通道，并不迫使U为乘积。特定受限准备域、显式保留的环境条件和更长历史，也可能使某个局部描述闭合。不能据此说“开放系统不能用通道描述”。初始关系与适用域问题见[Pechukas，1994](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.73.1060)。
 

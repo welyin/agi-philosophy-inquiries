@@ -6,14 +6,14 @@
 
 此前尚未证明“实现某个端点强度”就足以实现全部较低强度。本轮补上固定圆周编码下的这一环：
 
-\[
+$$
 \boxed{
 0\le\eta\le E\le
 \sqrt{\frac{\sqrt5-1}{2}}\approx0.78615138
 \quad\Longrightarrow\quad
 R_\eta=D_{\eta,E}*R_E,
 }
-\]
+$$
 
 其中 D 是一个明确的**正概率旋转分布**，卷积在圆周上进行。
 
@@ -25,34 +25,34 @@ R_\eta=D_{\eta,E}*R_E,
 
 设
 
-\[
+$$
 q=\sqrt{1-\eta^2},\quad t=\frac{\eta}{1+q},\qquad
 Q=\sqrt{1-E^2},\quad T=\frac E{1+Q}.
-\]
+$$
 
 先考虑 0≤η<E。R 的已知展开为
 
-\[
+$$
 R_\eta(\psi)=1+2\sum_{k\ge1}
 t^{2k}(1+2kq)\cos(2k\psi).
-\]
+$$
 
 令 r=t²/T²，λ=q/Q≥1。需要旋转分布的第 2k 个 Fourier 系数等于
 
-\[
+$$
 d_k=r^k\frac{1+2kq}{1+2kQ}
 =r^k\left[\lambda-\frac{\lambda-1}{1+2kQ}\right].
-\]
+$$
 
 记 P_r(z)=(1−r²)/(1−2r cos z+r²)。利用
 
-\[
+$$
 \frac1{1+2kQ}=\int_0^1u^{2kQ}du,
-\]
+$$
 
 定义旋转密度
 
-\[
+$$
 \boxed{
 D_{\eta,E}(\phi)=\frac1{2\pi}
 \left[
@@ -60,7 +60,7 @@ D_{\eta,E}(\phi)=\frac1{2\pi}
 -(\lambda-1)\int_0^1P_{r u^{2Q}}(2\phi)du
 \right].
 }
-\]
+$$
 
 它的积分为 λ−(λ−1)=1；奇数谐波为零，偶数谐波恰为 d_k。只要证明它非负，R_η=D*R_E 就由完整 Fourier 展开成立，而不需要截断。
 
@@ -70,24 +70,24 @@ D_{\eta,E}(\phi)=\frac1{2\pi}
 
 对 0≤s≤r<1，直接比较 Poisson 核可得
 
-\[
+$$
 \frac{P_s(z)}{P_r(z)}
 \le\frac{1+r}{1-r}.
-\]
+$$
 
 可先对 cos z 求单调性，最大值出现在 z=π；再用 (1−s)/(1+s)≤1。于是
 
-\[
+$$
 2\pi D_{\eta,E}(\phi)
 \ge P_r(2\phi)
 \left[\lambda-(\lambda-1)\frac{1+r}{1-r}\right].
-\]
+$$
 
 代入 q=(1−t²)/(1+t²)、Q=(1−T²)/(1+T²)，括号恰为
 
-\[
+$$
 1-\frac{4t^2}{(1+t^2)(1-T^2)}.
-\]
+$$
 
 对 t≤T，它在 T⁴+4T²≤1 时非负。这个条件等价于第一节的 E≤√((√5−1)/2)。该范围仅为这个正性估计的充分范围，本轮没有求最大的可降强度范围。
 
@@ -97,27 +97,27 @@ D_{\eta,E}(\phi)=\frac1{2\pi}
 
 设基准耦合有
 
-\[
+$$
 X_E\sim\sigma,\qquad Y_E\sim\nu_E,\qquad
 E[X_E\mid Y_E]=Y_E.
-\]
+$$
 
 独立抽取旋转 Φ∼D_η,E，同时旋转两个向量：
 
-\[
+$$
 X=R_\Phi X_E,\qquad Y=R_\Phi Y_E.
-\]
+$$
 
 均匀单位圆 σ 对旋转不变，所以 X 的边缘仍是 σ。卷积恒等式保证 Y 的边缘为 ν_η。给定 Y、Φ 后，条件均值为 Y，再取条件期望仍有 E[X|Y]=Y。
 
 若希望把反向条件核直接写出，基准核记为 P_E(dx|ψ)，则
 
-\[
+$$
 P_\eta(dx\mid\psi)=
 \int D_{\eta,E}(d\phi)
 \frac{R_E(\psi-\phi)}{R_\eta(\psi)}
 P_E(d(x-\phi)\mid\psi-\phi).
-\]
+$$
 
 各项非负，卷积式保证归一化；旋转保证条件均值为 αn_ψ。结合第二十九轮按 f_s、ψ_s 提升回输出标签的步骤，就得到所需完整仪器，而不仅是单次读取概率。
 
@@ -127,12 +127,12 @@ P_E(d(x-\phi)\mid\psi-\phi).
 
 第三十三轮已证明：η_B 的任意准备非情境实现，若存在，就能投影为固定编码。加上本轮降强度定理，当前得到
 
-\[
+$$
 \boxed{
 \eta_B\text{ 的单一强度可行}
 \iff [0,\eta_B]\text{ 的整个固定编码仪器族可行}.
 }
-\]
+$$
 
 单一端点是否可行仍由第三十三轮的正半圆凸序决定，本轮没有完成该耦合。但现在，在端点以下取得一个严格构造，就能直接提高整个可行区间的下界；不必逐个强度独立求解。
 

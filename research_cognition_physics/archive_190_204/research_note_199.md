@@ -16,24 +16,24 @@
 
 令
 
-\[
+$$
 B_k(\eta,\zeta)=\frac12\sum_{j=0}^{k}\binom kj
 \left|\eta^j(1-\eta)^{k-j}-\zeta^j(1-\zeta)^{k-j}\right|.
-\]
+$$
 
 这正是两组k位独立噪声分布的总变差。对任意允许策略π，有
 
-\[
+$$
 \operatorname{TV}(P^\pi_\eta,P^\pi_\zeta)\le B_k(\eta,\zeta).
-\]
+$$
 
 所需的数据处理不等式可直接证明。若某同一随机核L将输入分布p、q映成输出，则
 
-\[
+$$
 \tfrac12\sum_y\left|\sum_xL(y|x)(p_x-q_x)\right|
 \le\tfrac12\sum_x|p_x-q_x|\sum_yL(y|x)
 =\operatorname{TV}(p,q).
-\]
+$$
 
 共同独立初态与策略种子不改变输入总变差，所以适用于上述任意反馈。总变差收缩是已有信息论工具，相关背景见Polyanskiy–Wu的[原论文摘要](https://arxiv.org/abs/1405.3629)；本轮采用上述有限和证明，没有借其更强的输入约束结果。
 
@@ -41,25 +41,25 @@ B_k(\eta,\zeta)=\frac12\sum_{j=0}^{k}\binom kj
 
 先执行(read,swap,read)。读出的两位确定了当前状态；设此时为(x,m)。然后重复k次操作块
 
-\[
+$$
 (\mathrm{tick},\mathrm{swap},\mathrm{read}).
-\]
+$$
 
 一个块中
 
-\[
+$$
 (x,m)\xrightarrow{T_e}(m,x\oplus m\oplus e)
 \xrightarrow{swap}(x\oplus m\oplus e,m).
-\]
+$$
 
 最后read给z=x⊕m⊕e，故控制者从已知x,m及新z准确计算e=z⊕x⊕m，同时知道新的状态(z,m)，可以继续下一个块。
 
 这样，公开记录确定全部k个噪声位。将记录再解码成噪声串，数据处理给反向不等式B_k≤TV(完整记录)。与第2节合并，得到
 
-\[
+$$
 \boxed{\sup_{\pi:\,\#tick\le k}\operatorname{TV}(P^\pi_\eta,P^\pi_\zeta)
 =B_k(\eta,\zeta).}
-\]
+$$
 
 方案共有3+3k条命令，适用于任何共同初始分布；若共同已知准备为(0,0)，可略去初始3条读取，使用3k条命令。初始准备是否已知不改变上述可达值，因为允许初始读取，但会改变实现成本。
 
@@ -69,9 +69,9 @@ B_k(\eta,\zeta)=\frac12\sum_{j=0}^{k}\binom kj
 
 记d=|η−ζ|。逐个噪声位最大耦合立即给出
 
-\[
+$$
 B_k(\eta,\zeta)\le1-(1-d)^k\le\min\{1,kd\}.
-\]
+$$
 
 因此kd≤ε足以保证任何允许策略的记录误差不超过ε；更紧要求可直接用精确B_k≤ε。与第196轮只覆盖被动协议的界相比，这里保留了完整状态，保证范围已经扩到所有允许反馈和停止规则。
 

@@ -1,0 +1,205 @@
+{
+  "round": 1061,
+  "independent_checks_passed": true,
+  "new_scientific_calibration_groups": 0,
+  "independent_method": "exact rational half-plane vertices and segment projections; rational sqrt and Gaussian-tail enclosures",
+  "author_calculation_imported": false,
+  "contracts_checked": 12,
+  "author_assets_checked": 8,
+  "historical_assets_checked": 6,
+  "author_receipt_sha256": "2d1c2432b679a413fd4f07cb0de9a56f001726544537bbac030d7b68ac2d53a9",
+  "author_assets_sha256": {
+    "../research_note_1061.md": "7edfee9d8fc00b85dc5f89cead38dd8cc2cd6739fc0b88a9c05bad3f6e5e6b98",
+    "analysis.md": "7a8f4994798a6aed1aee5ecd29346dca46e8b1a68cc1c0d18601e918b0f66bdb",
+    "sources.md": "763af3269e106b608433c1b02c7186b469ab7487f20fb945dcbed45bd6da9e26",
+    "public_inputs.json": "63b9e1e5e8cba7f81526c6b8f384aefd14f1d77f9de2b8f21bc92c90a3df3a8a",
+    "ckm_closure_check.py": "024aaa32969f8af4f387883c4448f0c703790d0101468afec2b42f6d2ba15264",
+    "results.json": "7e3074d4914dd45c8fa8d113d1fcf3a9a0084fc240dc74d7ef6210ea3053b236",
+    "dependency_update.md": "be49a65a6d11560b6b5f3a4eaf28bbd6c9f8853da4dd9eed06de066ba4ec79e7",
+    "verify_round1061.py": "7a9ee9be3984f5a6a8e3ea687e8f4560a9f8d511a527f0c83499dbf11cbc0b96"
+  },
+  "coverage_enclosures_conditional_on_adopted_marginals": {
+    "main_four_two_sided": [
+      "0.950322677393790918664175163406",
+      "0.950322677393790918664175163407"
+    ],
+    "supplement_three_two_sided": [
+      "0.950814784452423223333678358073",
+      "0.950814784452423223333678358074"
+    ],
+    "supplement_directional": [
+      "0.950907251383313620208171996952",
+      "0.950907251383313620208171996953"
+    ]
+  },
+  "all_published_endpoints_enclose_the_exact_target_to_display_precision": true,
+  "max_printed_witness_residual_upper": "0.000000000000000000000000555802",
+  "results": {
+    "zsigma_rss_adopted_publication_rounding_false": {
+      "main_four_two_sided": {
+        "feasible": true,
+        "vertices": 4,
+        "norm_min_enclosure": [
+          "0.996743735993091059727609093545",
+          "0.996743735993091059727609093546"
+        ],
+        "norm_max_enclosure": [
+          "1.000078820797422247630365955895",
+          "1.000078820797422247630365955896"
+        ],
+        "directional_ratio_nonbinding_at_max": null
+      },
+      "supplement_three_two_sided": {
+        "feasible": false,
+        "vertices": 4,
+        "norm_min_enclosure": [
+          "0.995884778306474642274848682340",
+          "0.995884778306474642274848682341"
+        ],
+        "norm_max_enclosure": [
+          "0.999992993517525357725151317659",
+          "0.999992993517525357725151317660"
+        ],
+        "directional_ratio_nonbinding_at_max": null
+      },
+      "supplement_directional": {
+        "feasible": false,
+        "vertices": 4,
+        "norm_min_enclosure": [
+          "0.000000000000000000000000000000",
+          "0.000000000000000000000000000000"
+        ],
+        "norm_max_enclosure": [
+          "0.999864270923930022867329360305",
+          "0.999864270923930022867329360306"
+        ],
+        "directional_ratio_nonbinding_at_max": true
+      }
+    },
+    "zsigma_rss_adopted_publication_rounding_true": {
+      "main_four_two_sided": {
+        "feasible": true,
+        "vertices": 4,
+        "norm_min_enclosure": [
+          "0.996696586596231925277233977283",
+          "0.996696586596231925277233977284"
+        ],
+        "norm_max_enclosure": [
+          "1.000121031747330121558627685705",
+          "1.000121031747330121558627685706"
+        ],
+        "directional_ratio_nonbinding_at_max": null
+      },
+      "supplement_three_two_sided": {
+        "feasible": true,
+        "vertices": 4,
+        "norm_min_enclosure": [
+          "0.995843989576346120859615795847",
+          "0.995843989576346120859615795848"
+        ],
+        "norm_max_enclosure": [
+          "1.000033993178436916696282578277",
+          "1.000033993178436916696282578278"
+        ],
+        "directional_ratio_nonbinding_at_max": null
+      },
+      "supplement_directional": {
+        "feasible": false,
+        "vertices": 4,
+        "norm_min_enclosure": [
+          "0.000000000000000000000000000000",
+          "0.000000000000000000000000000000"
+        ],
+        "norm_max_enclosure": [
+          "0.999903454154784609402764917134",
+          "0.999903454154784609402764917135"
+        ],
+        "directional_ratio_nonbinding_at_max": true
+      }
+    },
+    "zsigma_linear_widening_publication_rounding_false": {
+      "main_four_two_sided": {
+        "feasible": true,
+        "vertices": 4,
+        "norm_min_enclosure": [
+          "0.996740896665513307357975049440",
+          "0.996740896665513307357975049441"
+        ],
+        "norm_max_enclosure": [
+          "1.000083317625000000000000000000",
+          "1.000083317625000000000000000001"
+        ],
+        "directional_ratio_nonbinding_at_max": null
+      },
+      "supplement_three_two_sided": {
+        "feasible": false,
+        "vertices": 4,
+        "norm_min_enclosure": [
+          "0.995882020727999999999999999999",
+          "0.995882020728000000000000000000"
+        ],
+        "norm_max_enclosure": [
+          "0.999997278648000000000000000000",
+          "0.999997278648000000000000000001"
+        ],
+        "directional_ratio_nonbinding_at_max": null
+      },
+      "supplement_directional": {
+        "feasible": false,
+        "vertices": 4,
+        "norm_min_enclosure": [
+          "0.000000000000000000000000000000",
+          "0.000000000000000000000000000000"
+        ],
+        "norm_max_enclosure": [
+          "0.999868243481250000000000000000",
+          "0.999868243481250000000000000001"
+        ],
+        "directional_ratio_nonbinding_at_max": true
+      }
+    },
+    "zsigma_linear_widening_publication_rounding_true": {
+      "main_four_two_sided": {
+        "feasible": true,
+        "vertices": 4,
+        "norm_min_enclosure": [
+          "0.996693670886496382715134189941",
+          "0.996693670886496382715134189942"
+        ],
+        "norm_max_enclosure": [
+          "1.000125731118750000000000000000",
+          "1.000125731118750000000000000001"
+        ],
+        "directional_ratio_nonbinding_at_max": null
+      },
+      "supplement_three_two_sided": {
+        "feasible": true,
+        "vertices": 4,
+        "norm_min_enclosure": [
+          "0.995841156426999999999999999999",
+          "0.995841156427000000000000000000"
+        ],
+        "norm_max_enclosure": [
+          "1.000038470507000000000000000000",
+          "1.000038470507000000000000000001"
+        ],
+        "directional_ratio_nonbinding_at_max": null
+      },
+      "supplement_directional": {
+        "feasible": false,
+        "vertices": 4,
+        "norm_min_enclosure": [
+          "0.000000000000000000000000000000",
+          "0.000000000000000000000000000000"
+        ],
+        "norm_max_enclosure": [
+          "0.999907603742187500000000000000",
+          "0.999907603742187500000000000001"
+        ],
+        "directional_ratio_nonbinding_at_max": true
+      }
+    }
+  },
+  "directional_selection_adjusted": false,
+  "physical_joint_likelihood_or_cognitive_generation_validated": false
+}

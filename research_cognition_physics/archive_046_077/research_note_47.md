@@ -35,22 +35,22 @@ Bell 比较采用另一个明确时序：先共同准备，再独立选择两边
 
 设 P₀=I、P₁=σ_z、P₂=σ_x，定义
 
-\[
+$$
 V_{ij}=\operatorname{Tr}[\rho(P_i\otimes P_j)],\qquad
 V=\begin{pmatrix}w&b^T\\a&T\end{pmatrix}.
-\]
+$$
 
 其中 a、b 是两边的非归一化局部均值，T 是 2×2 相关矩阵。读取方向 n_θ=(cosθ,sinθ)、结果 s=±1、强度 η 对应
 
-\[
+$$
 e_{s,\theta}=\tfrac12(1,s\beta n_\theta),\qquad \beta=\alpha\eta.
-\]
+$$
 
 两个局部读取的完整联合概率为
 
-\[
+$$
 \boxed{p(s,t\mid\theta,\phi)=e_{s,\theta}^TVe_{t,\phi}.}
-\]
+$$
 
 不同强度只需分别使用 β_A、β_B。对任意固定 η>0，所有方向和结果的这些效应张成九维空间，故 V 完全记录局部乘积读取统计。
 
@@ -58,10 +58,10 @@ e_{s,\theta}=\tfrac12(1,s\beta n_\theta),\qquad \beta=\alpha\eta.
 
 ### 3.1 乘积圆盘准备的凸锥 C_sep
 
-\[
+$$
 V=\sum_k p_k(1,r_k)(1,s_k)^T,
 \quad p_k\ge0,\quad |r_k|,|s_k|\le1.
-\]
+$$
 
 它是允许局部圆盘准备的乘积及其混合。各个分量都可以由原经典局部模型实现；本轮只允许局部操作和经典消息时，该集合保持闭合。
 
@@ -69,34 +69,34 @@ V=\sum_k p_k(1,r_k)(1,s_k)^T,
 
 ### 3.2 实量子锥 C_R
 
-\[
+$$
 C_R=\{\rho\in\mathbb R^{4\times4}:\rho=\rho^T,\ \rho\succeq0\}.
-\]
+$$
 
 它有 10 个齐次实坐标。除 V 外，还需要
 
-\[
+$$
 q=\operatorname{Tr}(\rho\,\sigma_y\otimes\sigma_y),
 \qquad
 \boxed{\rho=\tfrac14\left[\sum_{i,j=0}^2 V_{ij}P_i\otimes P_j
 +q\,\sigma_y\otimes\sigma_y\right].}
-\]
+$$
 
 σ_y 本身是虚矩阵，但 σ_y⊗σ_y 是实对称矩阵。
 
 ### 3.3 只保留局部统计的投影锥 C_9
 
-\[
+$$
 C_9=\{V:\exists q,\ \rho(V,q)\succeq0\}.
-\]
+$$
 
 它将局部统计相同的实量子状态视作同一状态，在只执行局部协议时自洽，并保留 C_R 的全部局部关联。它不是简单地把 q 设为零。
 
 例如 Bell 状态 Φ⁺ 的 V 满足 a=b=0、T=I₂、q=−1。若强行填 q=0，所得矩阵特征值为
 
-\[
+$$
 \{-1/4,1/4,1/4,3/4\},
-\]
+$$
 
 已经不再是正矩阵。正确投影必须保留“存在某个 q”的正性条件。
 
@@ -106,9 +106,9 @@ C_9=\{V:\exists q,\ \rho(V,q)\succeq0\}.
 
 第 46 轮的局部 Kraus 算子都是实矩阵。任意实 2×2 矩阵 K 满足
 
-\[
+$$
 K\sigma_yK^T=(\det K)\sigma_y.
-\]
+$$
 
 所以任意实局部分支都只把 σ_y⊗σ_y 乘以某个标量，不会将其变成九个可见基向量。由此得到两件事：
 
@@ -117,9 +117,9 @@ K\sigma_yK^T=(\det K)\sigma_y.
 
 若 B 是原 fresh 分支在 (w,r_z,r_x) 坐标中的矩阵，局部更新明确写成
 
-\[
+$$
 V\mapsto B_AV\quad\text{或}\quad V\mapsto VB_B^T,
-\]
+$$
 
 两边同时选择分支时为 B_AVB_B^T。C_sep 与 C_9 都在这些操作下闭合。
 
@@ -129,45 +129,45 @@ V\mapsto B_AV\quad\text{或}\quad V\mapsto VB_B^T,
 
 取第 46 轮的两个状态
 
-\[
+$$
 \rho_\pm=\tfrac14(I_4\pm Y\otimes Y),\qquad
 X=\sigma_x,\ Y=\sigma_y,\ Z=\sigma_z.
-\]
+$$
 
 它们 V 完全相同，只有 q=±1 不同。现在显式加入候选共同操作
 
-\[
+$$
 \boxed{U_\theta=e^{-i\theta(Y\otimes X)/2}
 =\cos(\theta/2)I_4-i\sin(\theta/2)Y\otimes X.}
-\]
+$$
 
 U_θ 是实正交矩阵，连续连接恒等，且 U_(−θ) 是逆。θ 是无量纲控制参数，本轮没有将它解释为物理时间或指定能量单位。
 
 利用 Pauli 乘法直接得到
 
-\[
+$$
 U_\theta(Y\otimes Y)U_\theta^T
 =\cos\theta\,Y\otimes Y+\sin\theta\,I\otimes Z,
-\]
+$$
 
 从而
 
-\[
+$$
 \rho_\pm'=\tfrac14[I_4\pm\cos\theta\,Y\otimes Y
 \pm\sin\theta\,I\otimes Z].
-\]
+$$
 
 第二边的 Z 均值变为 ±sinθ。仅用已有方向 0 的 fresh 读取，就有
 
-\[
+$$
 \Pr(+\mid\rho_\pm')=\tfrac12(1\pm\alpha\eta\sin\theta).
-\]
+$$
 
 两个输出分布的总变差距离为
 
-\[
+$$
 \boxed{\mathrm{TV}=\alpha\eta|\sin\theta|.}
-\]
+$$
 
 θ=π/2、η=1 时，等先验单次判断成功率为 (1+α)/2≈0.9948079185。没有换成理想无噪声读取，也不需要前一轮那个额外整体效应 F₊。
 
@@ -179,9 +179,9 @@ U_\theta(Y\otimes Y)U_\theta^T
 
 实 4×4 正交变换在恒等附近的生成元空间有 6 维。写 U(t)=exp(−itH/2)，其 Hermitian 生成元可写成
 
-\[
+$$
 H=a\,YI+b\,IY+c\,YX+d\,YZ+e\,XY+f\,ZY.
-\]
+$$
 
 这里用 YX 简写 Y⊗X；这六项对应所有实反对称 4×4 生成元，而非只挑选几个例子。
 
@@ -200,10 +200,10 @@ H=a\,YI+b\,IY+c\,YX+d\,YZ+e\,XY+f\,ZY.
 
 故
 
-\[
+$$
 \boxed{\text{九坐标对全部初态保持闭合}
 \iff c=d=e=f=0}
-\]
+$$
 
 对本轮实正交候选的连续生成元成立。剩下的正是两边各自的旋转。
 
@@ -215,9 +215,9 @@ H=a\,YI+b\,IY+c\,YX+d\,YZ+e\,XY+f\,ZY.
 
 加入 U 后，
 
-\[
+$$
 U_{\pi/2}^T(I\otimes Z)U_{\pi/2}=Y\otimes Y.
-\]
+$$
 
 因此已有本地读取的预处理版本能探测第十个独立坐标。乘积准备已经张成原九个方向，经过 U 的准备又含 q≠0，故可准备状态与可观察效应的配对秩至少是 10。
 
@@ -231,9 +231,9 @@ U_{\pi/2}^T(I\otimes Z)U_{\pi/2}=Y\otimes Y.
 
 对 C_sep，相关矩阵为 T=Σ_kp_kr_ks_k^T，所以在归一化状态上
 
-\[
+$$
 \operatorname{Tr}T=\sum_kp_kr_k\cdot s_k\le1.
-\]
+$$
 
 Bell 状态 Φ⁺ 则 T=I₂，给出 TrT=2。实际两轴相关之和分别有 β² 与 2β² 的界和取值，β=αη。这个检验排除乘积圆盘准备的混合，不等于排除所有共享经典隐藏变量模型。
 
@@ -241,23 +241,23 @@ Bell 状态 Φ⁺ 则 T=I₂，给出 TrT=2。实际两轴相关之和分别有 
 
 在第 2 节的独立设置、无读取中通信条件下，任意共享经典隐藏变量模型均满足 |S|≤2。这由确定性结果 a₀,a₁,b₀,b₁∈{±1} 的
 
-\[
+$$
 S=a_0b_0+a_0b_1+a_1b_0-a_1b_1=\pm2
-\]
+$$
 
 及凸混合直接成立。
 
 对本轮 U 准备的 Φ⁺，原读取的相关函数是
 
-\[
+$$
 E(\theta,\phi)=\beta^2\cos(\theta-\phi).
-\]
+$$
 
 选 θ₀=0、θ₁=π/2、φ₀=π/4、φ₁=−π/4，得到
 
-\[
+$$
 \boxed{S=2\sqrt2(\alpha\eta)^2.}
-\]
+$$
 
 只有 η>2^(−1/4)/α≈0.8497200467 时，这个具体协议才违反一般局域界。严格区间认证为
 

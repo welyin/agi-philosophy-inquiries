@@ -52,7 +52,7 @@ z_hom仍须由初始准备选定，不由Ward身份唯一确定。一般qΣ非�
 
 ## 4. 首阶均值不需要先解决全部背景输送
 
-以ε作形式量子阶次。保持原自由态在B₀上，形式平均背景为B₀+εw₁；令\(\widehat E=\delta E/\delta B|_{B_0}\)为密度Hessian。直接Taylor展开得
+以ε作形式量子阶次。保持原自由态在B₀上，形式平均背景为B₀+εw₁；令$\widehat E=\delta E/\delta B|_{B_0}$为密度Hessian。直接Taylor展开得
 
 $$
  E(B_0+\epsilon w_1)+\epsilon J_0

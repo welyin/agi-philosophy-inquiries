@@ -60,7 +60,7 @@ $$
 
 ## 4. 任意固定辅助的完整接纳效果
 
-先把两个G相加为s＝0与s＝1，投影分别记P_s、P_t。只有辅助j＝1／2或3／2可能与s＝0、1合成总1／2。令\(\mathbf L\)为s＝1上的spin-1矩阵，\(X_j=\mathbf L\cdot\mathbf J_C\)。在s＝1的两个相关辅助部门，目标投影为
+先把两个G相加为s＝0与s＝1，投影分别记P_s、P_t。只有辅助j＝1／2或3／2可能与s＝0、1合成总1／2。令$\mathbf L$为s＝1上的spin-1矩阵，$X_j=\mathbf L\cdot\mathbf J_C$。在s＝1的两个相关辅助部门，目标投影为
 
 $$
 \Pi\big|_{1\otimes1/2}=\frac{I-2X_{1/2}}3,
@@ -71,7 +71,7 @@ $$
 
 证明直接来自总角动量相加。X₁/₂的本征值为−1、1／2；X₃/₂的本征值为−5／2、−1、3／2。式(3)分别在总j＝1／2取1、其余取0。s＝0时则要求辅助自身j＝1／2，投影只是Π^C₁/₂。
 
-令q_j＝Tr(Π^C_jτ)，\(\mu_j^a=\operatorname{Tr}(\Pi_j^C J_C^a\tau)\)，\(Q_{3/2}^{ab}=\operatorname{Tr}(\Pi_{3/2}^C J_C^aJ_C^b\tau)\)。对辅助偏迹，得到两个未知G上的完整效果F_τ；以下T_τ写在三维triplet块，嵌回P_t后省略嵌入符号：
+令q_j＝Tr(Π^C_jτ)，$\mu_j^a=\operatorname{Tr}(\Pi_j^C J_C^a\tau)$，$Q_{3/2}^{ab}=\operatorname{Tr}(\Pi_{3/2}^C J_C^aJ_C^b\tau)$。对辅助偏迹，得到两个未知G上的完整效果F_τ；以下T_τ写在三维triplet块，嵌回P_t后省略嵌入符号：
 
 $$
 F_\tau=q_{1/2}P_s+T_\tau,\qquad
@@ -214,7 +214,7 @@ K是完整Hilbert直和，状态可以保留两个j部门之间的相干；不�
 
 取完全属于本轮旧输入合同的一份准备：A＝V₃|G0,L0〉、B＝V₃|G0,L0〉、辅助C＝I₂／2，三方独立。随后一个原始伙伴D独立准备为|0〉。读数是**A的三个原始单元与D合成总singlet的投影**；459已核这个合法原始效果在A代码上恰为G_A与D的singlet问题。
 
-如果先把旧ABC共同总j去相干为\(\Delta_J(\rho)=P_{1/2}\rho P_{1/2}+P_{3/2}\rho P_{3/2}\)，再接同一个D，得到
+如果先把旧ABC共同总j去相干为$\Delta_J(\rho)=P_{1/2}\rho P_{1/2}+P_{3/2}\rho P_{3/2}$，再接同一个D，得到
 
 $$
 \Pr(E_{AD}\mid\rho_{ABC}\otimes|0\rangle\langle0|_D)=0,

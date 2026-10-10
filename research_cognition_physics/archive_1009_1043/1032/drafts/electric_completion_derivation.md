@@ -4,15 +4,21 @@
 
 固定内部群族 $G_p=(SU(3)\times SU(2)\times U(1))/\Gamma_p$，$p\in\{1,2,3,6\}$，$\Gamma_p=\langle z^{6/p}\rangle$，
 
-$$z=(e^{2\pi i/3}I_3,-I_2,e^{i\pi/3}),\qquad q=6Y\in\mathbb Z.$$
+$$
+z=(e^{2\pi i/3}I_3,-I_2,e^{i\pi/3}),\qquad q=6Y\in\mathbb Z.
+$$
 
 给定独立spin结构，只比较这一内部群族，不分类spin—gauge对角商。不可约表示记 $R_{a,b,n,q}$，其中a、b为SU(3)最高权，$n=2j$为SU(2)最高权。因中心作用为
 
-$$z|_{R}=\exp\left[\frac{2\pi i}{6}\bigl(2(a+2b)+3n+q\bigr)\right]I,$$
+$$
+z|_{R}=\exp\left[\frac{2\pi i}{6}\bigl(2(a+2b)+3n+q\bigr)\right]I,
+$$
 
 该表示能下降到 $G_p$ 的充要条件为
 
-$$2(a+2b)+3n+q\equiv0\pmod p.\tag{1}$$
+$$
+2(a+2b)+3n+q\equiv0\pmod p.\tag{1}
+$$
 
 这是继承的全局表示合同，不重新把共同核计算算作新发现。纯电Wilson线的表示标签按该合同允许；磁线、dyon与theta数据另列。
 
@@ -26,8 +32,10 @@ E_alg是表示生成的代数条件，不是FUCP或957的已证后果。它也�
 
 S取标准模型已给物质与Higgs表示，及其反表示。只需其中
 
-$$D=(3,1)_{-2},\quad \bar D=(\bar3,1)_2,\quad
-H=(1,2)_3,\quad E=(1,1)_6,\quad\bar E=(1,1)_{-6}.$$
+$$
+D=(3,1)_{-2},\quad \bar D=(\bar3,1)_2,\quad
+H=(1,2)_3,\quad E=(1,1)_6,\quad\bar E=(1,1)_{-6}.
+$$
 
 D是已有 $d^c$ 的反表示，不是新增基本物种。所有SM字段上z作用为恒等，旧531已核共同核恰为 $K=\langle z\rangle\simeq\mathbb Z_6$；多代重复或中性单态不改变它。
 
@@ -37,15 +45,21 @@ D是已有 $d^c$ 的反表示，不是新增基本物种。所有SM字段上z作
 
 充分性给直接构造。对满足式(1)且p=6的任意R，取
 
-$$D^{\otimes a}\otimes\bar D^{\otimes b}\otimes H^{\otimes n}.$$
+$$
+D^{\otimes a}\otimes\bar D^{\otimes b}\otimes H^{\otimes n}.
+$$
 
 SU(3)的最高权向量张量积产生最高权(a,b)，SU(2)最高权相加给n，其U(1)荷为
 
-$$q_0=-2a+2b+3n.$$
+$$
+q_0=-2a+2b+3n.
+$$
 
 因为 $[2(a+2b)+3n+q_0]=6(b+n)$，式(1)保证
 
-$$k=(q-q_0)/6\in\mathbb Z.$$
+$$
+k=(q-q_0)/6\in\mathbb Z.
+$$
 
 再添 $E^{\otimes k}$（k≥0）或 $\bar E^{\otimes(-k)}$，即得R作为子表示。有限词长上界是 $a+b+n+|k|$，并不声称最小。紧群表示完全可约，因此非零最高权向量确实属于相应不可约直和分量。这也可由一般忠实表示张量生成定理检验，见[Harlow–Ooguri，Appendix A，Theorem A.11](https://arxiv.org/html/1810.05338)。
 
@@ -55,13 +69,17 @@ $$k=(q-q_0)/6\in\mathbb Z.$$
 
 对每个p，增添两个左手Weyl字段
 
-$$X=(1,1)_p,\qquad X^c=(1,1)_{-p}.$$
+$$
+X=(1,1)_p,\qquad X^c=(1,1)_{-p}.
+$$
 
 它们都可下降到 $G_p$，允许规范不变Dirac质量 $MXX^c+\mathrm{h.c.}$。新增U(1)立方及混合引力反常系数分别为 $p^3+(-p)^3=0$ 和 $p-p=0$；非Abelian表示平凡，不增相应反常或SU(2)奇双重态。此处只核这些表示／局部项，不声称完整量子引力或全部非微扰反常已由此解决。
 
 新表示把原K核缩为
 
-$$\{z^k:pk=0\pmod6\}=\langle z^{6/p}\rangle=\Gamma_p.$$
+$$
+\{z^k:pk=0\pmod6\}=\langle z^{6/p}\rangle=\Gamma_p.
+$$
 
 对任意允许R，仍先形成q0，再以 $k=(q-q_0)/p\in\mathbb Z$ 份X或Xc补足电荷。因此**每一个p都满足扩展菜单的E_alg**。对p=6，新增表示并非必要；这个统一构造只用于分类。
 

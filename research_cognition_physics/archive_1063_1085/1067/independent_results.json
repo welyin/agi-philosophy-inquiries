@@ -1,0 +1,158 @@
+{
+  "schema": "1067-independent-v1",
+  "arithmetic": "exact fractions; irrational witness stored symbolically and squared exactly",
+  "algorithm": "unnormalized rational quaternions and rational Mobius transformations; no author-code imports",
+  "script_sha256": "8be10e8da65adcf517eb58955aad1930d2207489f58997a39f0e74bf35e8b499",
+  "checks": [
+    {
+      "name": "S2_same_preparation_order_witness",
+      "passed": true,
+      "data": {
+        "ab_ez": [
+          "1",
+          "0",
+          "0"
+        ],
+        "ba_ez": [
+          "0",
+          "-1",
+          "0"
+        ],
+        "preparation": "+(ex+ey)/sqrt(2)",
+        "gap_exact": "(3/5)/sqrt(2)",
+        "gap_squared": "9/50",
+        "gap_numeric": 0.42426406871192845
+      }
+    },
+    {
+      "name": "quaternion_paths_and_composition",
+      "passed": true,
+      "data": {
+        "exact_rotations": 20,
+        "path_parameterization": "q=(1,u*axis), normalized implicitly; 0<=u<=1"
+      }
+    },
+    {
+      "name": "two_vector_plus_cross_representation_reconstruction",
+      "passed": true,
+      "data": {
+        "path_settings": 18,
+        "probe_vectors": [
+          [
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "3/5",
+            "4/5",
+            "0"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "nonzero_fixed_trace_orbit_difference_rank",
+      "passed": true,
+      "data": {
+        "full_coefficient_difference_rank": 3,
+        "trace": "1"
+      }
+    },
+    {
+      "name": "S3_nonminimal_positive_contract",
+      "passed": true,
+      "data": {
+        "invariant_t": "4/5",
+        "radius": "3/5",
+        "gap_exact": "(9/25)/sqrt(2)",
+        "gap_squared": "81/1250",
+        "pole_orbits": "two fixed singleton orbits; action is not minimal"
+      }
+    },
+    {
+      "name": "S3_constant_trace_antipodal_failure",
+      "passed": true,
+      "data": {
+        "north_effect": [
+          "1/2",
+          "0",
+          "0",
+          "0"
+        ],
+        "south_effect": [
+          "1/2",
+          "0",
+          "0",
+          "0"
+        ],
+        "antipodal_gap_at_poles": "0"
+      }
+    },
+    {
+      "name": "S3_variable_trace_changes_full_difference_space",
+      "passed": true,
+      "data": {
+        "full_difference_rank": 4,
+        "traceless_projection_rank": 3,
+        "north_trace": "6/5",
+        "south_trace": "4/5",
+        "global_fixed_trace": false
+      }
+    },
+    {
+      "name": "S3_variable_trace_antipodal_certificate",
+      "passed": true,
+      "data": {
+        "samples": 195,
+        "sample_minimum": "1/5",
+        "global_exact_minimum": "1/5",
+        "global_proof": "gap=(|t|+3r)/5 >= sqrt(t^2+r^2)/5=1/5; equality at r=0"
+      }
+    },
+    {
+      "name": "O2_circle_without_identity_reachability",
+      "passed": true,
+      "data": {
+        "ab_ex": [
+          "0",
+          "1",
+          "0"
+        ],
+        "ba_ex": [
+          "0",
+          "-1",
+          "0"
+        ],
+        "same_preparation": "+Y",
+        "probability_gap": "3/5",
+        "reflection_normal_sign": -1,
+        "identity_component_normal_sign": 1,
+        "missing_condition": "reflection is not reachable from identity inside O(2)"
+      }
+    },
+    {
+      "name": "Mobius_circle_without_global_unitary_covariance",
+      "passed": true,
+      "data": {
+        "ab_1": [
+          "0",
+          "1"
+        ],
+        "ba_1": [
+          "-4/5",
+          "3/5"
+        ],
+        "same_preparation": "+X",
+        "probability_gap": "6/25",
+        "inverse_identity_checks": 90,
+        "initial_direction_inner_product": "0",
+        "after_b_inner_product": "-4/5",
+        "missing_condition": "one common unitary must preserve every Bloch inner product"
+      }
+    }
+  ],
+  "passed": 10,
+  "failed": 0,
+  "scope": "Finite model witnesses and exact ranks only; not proof of maximum equicontinuous factor, circle quotient, or dimension theorem."
+}

@@ -1,0 +1,179 @@
+{
+  "round": 1079,
+  "status": "passed",
+  "assertion_groups": 9,
+  "groups": [
+    "independent original propagation and source continuity data reused",
+    "complete QAR instrument, retained fine probabilities, and reference trace",
+    "fine coin record still retains raw trace bias",
+    "raw measured-Q output is distinguished from a Luders surrogate",
+    "finite-error full-output witnesses obey epsilon_I + delta + epsilon_D",
+    "centered Bloch response and angular tangent have diagnostic ranks three and two",
+    "frozen rational boxes prove nonzero spectral gradient and Bloch amplitude",
+    "centered map inherits positive strict source embedding budget",
+    "small coin bias need not preserve the exact two-dimensional isospectral level"
+  ],
+  "original_center_effect": [
+    0.5739062588509245,
+    -0.046864159468799196,
+    0.06895665693789413,
+    0.1605844244155197
+  ],
+  "centered_effect": [
+    0.5,
+    -0.023432079734399598,
+    0.034478328468947064,
+    0.08029221220775985
+  ],
+  "centered_effect_jacobian": [
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0006280155916396005,
+      0.002952245814665635,
+      -2.6221675226288855e-05
+    ],
+    [
+      -0.001464579367172396,
+      -0.0020128386239991413,
+      0.0006295975214779781
+    ],
+    [
+      -0.008437259368664993,
+      -0.01422974228748058,
+      -4.0083949821224116e-05
+    ]
+  ],
+  "raw_norm_squared_gradient": [
+    -0.005941265436709739,
+    -0.010248912463729146,
+    0.00015282775622602952
+  ],
+  "centered_norm_squared_gradient": [
+    -0.0014853163591774347,
+    -0.0025622281159322865,
+    3.820693905650738e-05
+  ],
+  "tangent_source_columns_diagnostic": [
+    [
+      -0.8650728929342152,
+      0.012899627123070554
+    ],
+    [
+      0.5015911224656241,
+      0.007432077374675644
+    ],
+    [
+      0.007432077374675643,
+      0.9998891757819877
+    ]
+  ],
+  "angular_tangent_singular_values_diagnostic": [
+    0.0009987845936743544,
+    0.0006287598834096127
+  ],
+  "strict_centered_spectral_u_derivative_box": [
+    "-10250477949/4000000000000",
+    "-10247346983/4000000000000"
+  ],
+  "strict_centered_bz_box": [
+    "20073033537/250000000000",
+    "160584580539/2000000000000"
+  ],
+  "strict_centered_bloch_embedding_lower": "59/240000",
+  "exactness_boundary": {
+    "example_coin_bias": "1/1000",
+    "raw_spectral_minor_multiplier": "251001/500000000",
+    "perturbed_strict_spectral_minor_box": [
+      "-114252894189/15625000000000000000",
+      "-1826424087561/250000000000000000000"
+    ],
+    "statistical_error_control_implies_exact_level_set_dimension_stability": false
+  },
+  "process": {
+    "coarse_effect_eigenvalues": [
+      0.40953090673656667,
+      0.5904690932634333
+    ],
+    "max_probability_residual": 1.1102230246251565e-16,
+    "max_reference_marginal_residual": 1.1153995627308808e-16,
+    "max_reset_branch_stored_QR_residual": 1.1443916996305594e-16,
+    "max_trace_preservation_residual": 1.1102230246251565e-16,
+    "smallest_branch_eigenvalue_diagnostic": 0.0,
+    "fine_effect_traces": [
+      0.5739062588509245,
+      0.4260937411490755,
+      0.4260937411490755,
+      0.5739062588509245
+    ],
+    "four_calibration_fine_probabilities": [
+      [
+        0.2869531294254623,
+        0.21304687057453775,
+        0.21304687057453775,
+        0.2869531294254623
+      ],
+      [
+        0.2635210496910627,
+        0.23647895030893737,
+        0.21304687057453775,
+        0.2869531294254623
+      ],
+      [
+        0.3214314578944094,
+        0.1785685421055907,
+        0.21304687057453775,
+        0.2869531294254623
+      ],
+      [
+        0.3672453416332221,
+        0.1327546583667779,
+        0.21304687057453775,
+        0.2869531294254623
+      ]
+    ],
+    "raw_measure_prepare_vs_luders_choi_frobenius": 0.974080053593594,
+    "finite_error": {
+      "epsilon_I": 0.031,
+      "coin_total_variation": 0.017,
+      "epsilon_complete_reset_with_storage": 0.023,
+      "conservative_half_diamond_upper": 0.07100000000000001,
+      "full_QAR_reference_trace_distance_witnesses": [
+        0.04006913987874355,
+        0.03523575221121542
+      ],
+      "samples_do_not_certify_diamond_supremum": true
+    }
+  },
+  "hashes": {
+    "independent_check": "14def97e57e9ce2a96fdddee0f5f5c6c1d771c8f88122fa0c700fdfb3a0d93e3",
+    "1077/independent_check.py": "fbbcaa1eaf6ebc823872c6bd86df75ec98599fcfc3aafc203513a5c7538d760d",
+    "1077/proof.md": "716b8b8a77900cb23e3fda9987f90c7c00dadad5212a5d83ebde1fad4a743f15",
+    "1078/check.py": "3a3fe4ba8b207061d8fd942b9a96ed0504998e20f88ef51e5e35d7e1cb5fd29c",
+    "1078/results.json": "c70def457a6b6478e96e13648262850f8bb45f50ba771283182a009fcee1c4c3",
+    "1078/proof.md": "6ca276279936b52dfaa94217f1673056de4de1e328a39c0851d4b6e1a7493561",
+    "author_check.py": "655b41140d56e22be6f5350639e2ab47f4132deb71e245469e28a712d81d22e9",
+    "author_results.json": "20a8b8e070e77964e4388da39a1c70684a3f0bf1f66f2a627bf3450ca7e7e598",
+    "author_proof.md": "fb563f9ae5c97777c7973f86a8ba14aa28b3ccbeed41d41ef8e19906f75ae6d1",
+    "author_source_scope.md": "dd78fe4cbbd5204d2f97e1506a7a8ba8e9cd9ccde6c6b486f489879b3ec85498"
+  },
+  "scope": {
+    "actual_coarse_binary_effect_realized_with_added_fixed_operations": true,
+    "raw_source_propagation_changed": false,
+    "coordinate_estimation_or_feedback": false,
+    "maximally_mixed_blank_and_fair_coin_are_declared_resources": true,
+    "coin_original_labels_and_storage_are_retained": true,
+    "whole_fine_instrument_is_isospectral": false,
+    "raw_afterstate_assumed_luders": false,
+    "old_QR_stays_on_working_QR_in_reset_branch": false,
+    "coarse_effect_unique_afterstate_claimed": false,
+    "strict_gradient_comes_from_reused_outward_rational_boxes": true,
+    "numerical_tangent_rank_used_as_proof": false,
+    "actual_rotations_reverse_or_spatial_dimension_derived": false,
+    "general_arbitrary_Q_source_correlations_allowed_for_effect_formula": false,
+    "complete_environment_state_of_raw_384dim_process_recomputed_here": false
+  }
+}

@@ -1,0 +1,850 @@
+{
+  "round": 1082,
+  "status": "exact_fraction_certificates_passed",
+  "scientific_calibration_groups": 1,
+  "validation_group_count": 7,
+  "require_call_count": 177,
+  "arithmetic": "fractions.Fraction; no floating-point scientific computation",
+  "groups": [
+    {
+      "name": "factorization_with_collinear_and_repeated_partners",
+      "passed": true,
+      "certificate": {
+        "zero_based_positions": [
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1"
+          ],
+          [
+            "2",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        "weights": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5/2",
+          "2"
+        ],
+        "anchor_opposite_products": [
+          "24",
+          "24",
+          "24"
+        ],
+        "recovered_anchor_weights": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "recovered_extra_weights": {
+          "4": "5/2",
+          "5": "2"
+        },
+        "edge_vectors": {
+          "0,1": [
+            "-2",
+            "0",
+            "0"
+          ],
+          "0,2": [
+            "0",
+            "-3",
+            "0"
+          ],
+          "0,3": [
+            "0",
+            "0",
+            "-4"
+          ],
+          "0,4": [
+            "-5",
+            "0",
+            "0"
+          ],
+          "0,5": [
+            "0",
+            "0",
+            "0"
+          ],
+          "1,2": [
+            "6",
+            "-6",
+            "0"
+          ],
+          "1,3": [
+            "8",
+            "0",
+            "-8"
+          ],
+          "1,4": [
+            "-5",
+            "0",
+            "0"
+          ],
+          "1,5": [
+            "4",
+            "0",
+            "0"
+          ],
+          "2,3": [
+            "0",
+            "12",
+            "-12"
+          ],
+          "2,4": [
+            "-15",
+            "15/2",
+            "0"
+          ],
+          "2,5": [
+            "0",
+            "6",
+            "0"
+          ],
+          "3,4": [
+            "-20",
+            "0",
+            "10"
+          ],
+          "3,5": [
+            "0",
+            "0",
+            "8"
+          ],
+          "4,5": [
+            "10",
+            "0",
+            "0"
+          ]
+        },
+        "zero_edge": {
+          "pair": [
+            0,
+            5
+          ],
+          "arbitrary_literal_coefficient": "77/5",
+          "factorized_coefficient": "2",
+          "same_observable_vector": [
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      }
+    },
+    {
+      "name": "exact_lottery_moments_and_composition",
+      "passed": true,
+      "certificate": {
+        "identity": "D(P,Q)=W_Q B_P-W_P B_Q=W_P W_Q(V_P-V_Q)",
+        "normalization": "W_P=sum p_i w_i; B_P=sum p_i w_i v_i; V_P=B_P/W_P",
+        "normalized_lotteries_checked": 9,
+        "ordered_pair_identities_checked": 81,
+        "moments": [
+          {
+            "lottery": [
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "W": "1",
+            "B": [
+              "0",
+              "0",
+              "0"
+            ],
+            "normalized_V": [
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "lottery": [
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "W": "2",
+            "B": [
+              "2",
+              "0",
+              "0"
+            ],
+            "normalized_V": [
+              "1",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "lottery": [
+              "0",
+              "0",
+              "1",
+              "0",
+              "0",
+              "0"
+            ],
+            "W": "3",
+            "B": [
+              "0",
+              "3",
+              "0"
+            ],
+            "normalized_V": [
+              "0",
+              "1",
+              "0"
+            ]
+          },
+          {
+            "lottery": [
+              "0",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            "W": "4",
+            "B": [
+              "0",
+              "0",
+              "4"
+            ],
+            "normalized_V": [
+              "0",
+              "0",
+              "1"
+            ]
+          },
+          {
+            "lottery": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            "W": "5/2",
+            "B": [
+              "5",
+              "0",
+              "0"
+            ],
+            "normalized_V": [
+              "2",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "lottery": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            "W": "2",
+            "B": [
+              "0",
+              "0",
+              "0"
+            ],
+            "normalized_V": [
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "lottery": [
+              "1/2",
+              "1/2",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "W": "3/2",
+            "B": [
+              "1",
+              "0",
+              "0"
+            ],
+            "normalized_V": [
+              "2/3",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "lottery": [
+              "0",
+              "0",
+              "1/2",
+              "1/2",
+              "0",
+              "0"
+            ],
+            "W": "7/2",
+            "B": [
+              "0",
+              "3/2",
+              "2"
+            ],
+            "normalized_V": [
+              "0",
+              "3/7",
+              "4/7"
+            ]
+          },
+          {
+            "lottery": [
+              "1/6",
+              "0",
+              "1/6",
+              "1/6",
+              "1/3",
+              "1/6"
+            ],
+            "W": "5/2",
+            "B": [
+              "5/3",
+              "1/2",
+              "2/3"
+            ],
+            "normalized_V": [
+              "2/3",
+              "1/5",
+              "4/15"
+            ]
+          }
+        ],
+        "mixture": {
+          "classical_Q_fraction": "1/3",
+          "probabilities": [
+            "1/3",
+            "1/3",
+            "1/6",
+            "1/6",
+            "0",
+            "0"
+          ],
+          "W": "13/6",
+          "B": [
+            "2/3",
+            "1/2",
+            "2/3"
+          ],
+          "normalized_V": [
+            "4/13",
+            "3/13",
+            "4/13"
+          ],
+          "geometric_Q_fraction": "7/13"
+        },
+        "scope": "This is a lottery/coarse-record composition, not an autonomous physical meeting of endpoints."
+      }
+    },
+    {
+      "name": "weight_is_visible_to_the_original_probability_task",
+      "passed": true,
+      "certificate": {
+        "same_position_partners": [
+          0,
+          5
+        ],
+        "fixed_other_partner": 1,
+        "probe": [
+          "1",
+          "0",
+          "0"
+        ],
+        "effect_scale": "1/128",
+        "probabilities": [
+          "31/64",
+          "15/32"
+        ],
+        "finite_gap": "1/64",
+        "conclusion": "Only sign-order identity can discard this weight; full probabilities cannot."
+      }
+    },
+    {
+      "name": "pure_weak_order_but_strict_lottery_cycle",
+      "passed": true,
+      "certificate": {
+        "positions": [
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1"
+          ]
+        ],
+        "exceptional_gain_pair_zero_based": [
+          1,
+          2
+        ],
+        "exceptional_gain": "2",
+        "other_gains": "1",
+        "opposite_products": [
+          "1",
+          "1",
+          "2"
+        ],
+        "pure_partner_order": "sign r.d_ij = sign(r.v_i-r.v_j), since all gains are positive",
+        "probe": [
+          "1/4",
+          "1/2",
+          "3/4"
+        ],
+        "probe_norm_squared": "7/8",
+        "lotteries_P_Q_R": [
+          [
+            "0",
+            "1/6",
+            "2/3",
+            "1/6"
+          ],
+          [
+            "0",
+            "1/3",
+            "1/6",
+            "1/2"
+          ],
+          [
+            "1/6",
+            "1/6",
+            "0",
+            "2/3"
+          ]
+        ],
+        "D_PQ_D_QR_D_RP": [
+          [
+            "-13/36",
+            "25/36",
+            "-1/3"
+          ],
+          [
+            "5/36",
+            "7/36",
+            "-1/6"
+          ],
+          [
+            "1/9",
+            "-7/9",
+            "1/2"
+          ]
+        ],
+        "unscaled_cyclic_margins": [
+          "1/144",
+          "1/144",
+          "1/72"
+        ],
+        "effect_scale": "1/8",
+        "coarse_probabilities": [
+          "577/1152",
+          "577/1152",
+          "289/576"
+        ],
+        "probability_margins": [
+          "1/1152",
+          "1/1152",
+          "1/576"
+        ],
+        "signs": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "name": "binary_representative_tie_substitution_failure",
+      "passed": true,
+      "certificate": {
+        "probe": [
+          "1/2",
+          "0",
+          "-1/2"
+        ],
+        "P": [
+          "0",
+          "1/3",
+          "0",
+          "2/3"
+        ],
+        "Q": [
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        "R": [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        "pair_order": [
+          "P,Q",
+          "Q,R",
+          "P,R"
+        ],
+        "unscaled_margins": [
+          "0",
+          "0",
+          "-1/6"
+        ],
+        "effect_scale": "1/8",
+        "coarse_probabilities": [
+          "1/2",
+          "1/2",
+          "23/48"
+        ],
+        "nonzero_probability_difference": "-1/48"
+      }
+    },
+    {
+      "name": "legal_qubit_effects_and_actual_classical_routing",
+      "passed": true,
+      "certificate": {
+        "convention": "rho_r=(I+r.sigma)/2; E_ij=I/2+scale*d_ij.sigma",
+        "menus": [
+          {
+            "menu": "factorized",
+            "effect_scale": "1/128",
+            "maximum_Bloch_norm_squared": "125/4096",
+            "positivity_threshold": "1/4",
+            "strict_margin": "899/4096"
+          },
+          {
+            "menu": "nonfactorized",
+            "effect_scale": "1/8",
+            "maximum_Bloch_norm_squared": "1/8",
+            "positivity_threshold": "1/4",
+            "strict_margin": "1/8"
+          }
+        ],
+        "selected_mixture_checks": [
+          {
+            "left": [
+              "0",
+              "1/6",
+              "2/3",
+              "1/6"
+            ],
+            "right": [
+              "0",
+              "1/3",
+              "1/6",
+              "1/2"
+            ],
+            "nonzero_fine_branches": 9,
+            "fine_probability_sum": "1",
+            "coarse_effect_Pauli_coefficients": [
+              "1/2",
+              "-13/288",
+              "25/288",
+              "-1/24"
+            ],
+            "probe": [
+              "1/4",
+              "1/2",
+              "3/4"
+            ],
+            "coarse_probability": "577/1152"
+          },
+          {
+            "left": [
+              "0",
+              "1/3",
+              "1/6",
+              "1/2"
+            ],
+            "right": [
+              "1/6",
+              "1/6",
+              "0",
+              "2/3"
+            ],
+            "nonzero_fine_branches": 9,
+            "fine_probability_sum": "1",
+            "coarse_effect_Pauli_coefficients": [
+              "1/2",
+              "5/288",
+              "7/288",
+              "-1/48"
+            ],
+            "probe": [
+              "1/4",
+              "1/2",
+              "3/4"
+            ],
+            "coarse_probability": "577/1152"
+          },
+          {
+            "left": [
+              "1/6",
+              "1/6",
+              "0",
+              "2/3"
+            ],
+            "right": [
+              "0",
+              "1/6",
+              "2/3",
+              "1/6"
+            ],
+            "nonzero_fine_branches": 9,
+            "fine_probability_sum": "1",
+            "coarse_effect_Pauli_coefficients": [
+              "1/2",
+              "1/72",
+              "-7/72",
+              "1/16"
+            ],
+            "probe": [
+              "1/4",
+              "1/2",
+              "3/4"
+            ],
+            "coarse_probability": "289/576"
+          },
+          {
+            "left": [
+              "0",
+              "1/3",
+              "0",
+              "2/3"
+            ],
+            "right": [
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            "nonzero_fine_branches": 2,
+            "fine_probability_sum": "1",
+            "coarse_effect_Pauli_coefficients": [
+              "1/2",
+              "1/12",
+              "-1/6",
+              "1/12"
+            ],
+            "probe": [
+              "1/2",
+              "0",
+              "-1/2"
+            ],
+            "coarse_probability": "1/2"
+          },
+          {
+            "left": [
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            "right": [
+              "1",
+              "0",
+              "0",
+              "0"
+            ],
+            "nonzero_fine_branches": 1,
+            "fine_probability_sum": "1",
+            "coarse_effect_Pauli_coefficients": [
+              "1/2",
+              "0",
+              "1/8",
+              "0"
+            ],
+            "probe": [
+              "1/2",
+              "0",
+              "-1/2"
+            ],
+            "coarse_probability": "1/2"
+          },
+          {
+            "left": [
+              "0",
+              "1/3",
+              "0",
+              "2/3"
+            ],
+            "right": [
+              "1",
+              "0",
+              "0",
+              "0"
+            ],
+            "nonzero_fine_branches": 2,
+            "fine_probability_sum": "1",
+            "coarse_effect_Pauli_coefficients": [
+              "1/2",
+              "1/24",
+              "0",
+              "1/12"
+            ],
+            "probe": [
+              "1/2",
+              "0",
+              "-1/2"
+            ],
+            "coarse_probability": "23/48"
+          },
+          {
+            "left": [
+              "1/2",
+              "1/2",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "right": [
+              "0",
+              "0",
+              "1/2",
+              "1/2",
+              "0",
+              "0"
+            ],
+            "nonzero_fine_branches": 4,
+            "fine_probability_sum": "1",
+            "coarse_effect_Pauli_coefficients": [
+              "1/2",
+              "7/256",
+              "-9/512",
+              "-3/128"
+            ],
+            "probe": [
+              "1",
+              "0",
+              "0"
+            ],
+            "coarse_probability": "135/256"
+          }
+        ],
+        "protocol": {
+          "selection": "Independent finite classical I~P and J~Q, independent of the unknown probe.",
+          "probe_uses": 1,
+          "unknown_probe_copying": false,
+          "branch": "Apply the already specified binary instrument for the selected pair (I,J).",
+          "coarse_effect": "sum p_i q_j E_ij",
+          "fine_records": "I,J can remain recorded in the complete system; only the comparison report is coarse.",
+          "reference_scope": "The effect identity is operator-level and hence holds with any passive reference; no equality of branch poststates is claimed.",
+          "source_scope": "Finite routing and fixed instruments are declared permissions, not derived autonomous-H controls."
+        }
+      }
+    },
+    {
+      "name": "lottery_compatibility_does_not_fix_a_separate_meeting",
+      "passed": true,
+      "certificate": {
+        "comparison_contract": "d_xy=v_x-v_y, all endpoint weights w=1; every independent lottery obeys ordinary expected-coordinate order.",
+        "additional_label": "c in [1,2], distinct from the comparison weight w",
+        "actual_meeting": "m((v,c),(u,e))=((c*v+e*u)/(c+e),(c+e)/2)",
+        "inputs": {
+          "left_visible": [
+            "0",
+            "0",
+            "0"
+          ],
+          "left_resources": [
+            "1",
+            "2"
+          ],
+          "right_visible": [
+            "1",
+            "0",
+            "0"
+          ],
+          "right_resource": "1"
+        },
+        "meeting_positions": [
+          [
+            "1/2",
+            "0",
+            "0"
+          ],
+          [
+            "1/3",
+            "0",
+            "0"
+          ]
+        ],
+        "fixed_final_comparison": "against visible origin, probe +X, effect scale 1/8",
+        "probabilities": [
+          "9/16",
+          "13/24"
+        ],
+        "finite_gap": "1/48",
+        "scope": "Abstract countermodel of an inference, not a new apparatus or a demand that position predict every future."
+      }
+    }
+  ],
+  "scope": {
+    "general_factorization_theorem_proved_by_finite_examples": false,
+    "binary_random_representative_tie_substitution_is_an_additional_cognitive_hypothesis": true,
+    "full_lottery_weak_order_is_a_conditional_consequence": true,
+    "unknown_quantum_input_copied": false,
+    "random_lottery_is_actual_meeting_endpoint": false,
+    "weight_identified_as_mass_energy_or_time": false,
+    "autonomous_physical_implementation_derived": false,
+    "actual_spatial_dimension_derived": false
+  },
+  "checker_sha256": "1b1a731a12a7d53fa1742695e6618fe4e0745971ccde2d43bb66f1c3bc7e90f2"
+}

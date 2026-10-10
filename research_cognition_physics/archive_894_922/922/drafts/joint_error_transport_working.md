@@ -24,6 +24,8 @@ $$
  \dot b=L b-r_Y,\qquad
  \dot\eta=-iH_D\eta-i(DH_D[b])\widehat u-r_u,
 $$
+
+
 $$
  \dot C=L C+D^2F[b,\widehat A]
  +D_Y S_\chi[b]+D_u S_\chi[\eta]-r_A,

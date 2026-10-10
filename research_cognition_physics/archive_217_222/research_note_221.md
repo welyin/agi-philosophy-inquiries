@@ -22,9 +22,9 @@
 
 对一个固定整体AB及固定划分，令
 
-\[
+$$
 E=\operatorname{span}\{a\otimes b:a\in\mathcal E_A,b\in\mathcal E_B\}\subseteq V^*,\qquad u\in E.
-\]
+$$
 
 T把ω映到E的一组基的读数。T包含乘积效应的**联合概率和相关性**，不只是成员边缘。选不同基不改变下述结论。
 
@@ -32,11 +32,11 @@ G是这个整体允许的归一化可逆变换群；g和g的逆变换均在G内�
 
 新增候选条件D是
 
-\[
+$$
 T\omega=T\omega'\quad\Longrightarrow\quad
 T(g\omega)=T(g\omega')\qquad(\forall g\in G).
 \tag{D}
-\]
+$$
 
 也就是说，每个g都有只以Tω为输入的正确更新f_g。并未预设f_g是随机矩阵；在合法像空间T(Ω)上它将由线性操作诱导为仿射映射。
 
@@ -46,28 +46,28 @@ T(g\omega)=T(g\omega')\qquad(\forall g\in G).
 
 若D成立，这两个等价态经g后仍等价，故Tgx=0。于是gN⊆N；对逆变换重复即有gN=N。反过来，N不变显然保证D。因此
 
-\[
+$$
 \boxed{D\iff gN=N\ (\forall g)\iff g^*E=E\ (\forall g).}
 \tag{1}
-\]
+$$
 
 这里g^*e(ω)=e(gω)。若将T写成矩阵，D等价于存在矩阵F_g满足Tg=F_gT；F_g只需在合法描述的像空间上给出有效预测。
 
 定义可逆检验所能涉及的效应空间
 
-\[
+$$
 \mathcal O=\operatorname{span}\{g^*e:g\in G,e\in E\}.
 \tag{2}
-\]
+$$
 
 它是包含E的最小G不变子空间：任何闭合扩充E′必须含全部g^*E；而G是群，式(2)本身在G下不变。因此，若允许在线性预测描述中补充坐标，至少且只需
 
-\[
+$$
 \dim\mathcal O-\dim E
 \tag{3}
-\]
+$$
 
-个额外独立实坐标。这里计的是理想线性预测维数，不是物理比特数、有限样本数或热耗。补充的读数可能要求共同操作，不能把扩充后的\(\mathcal O\)冒称为原来的局部乘积空间E。
+个额外独立实坐标。这里计的是理想线性预测维数，不是物理比特数、有限样本数或热耗。补充的读数可能要求共同操作，不能把扩充后的$\mathcal O$冒称为原来的局部乘积空间E。
 
 这属于已知的受控可观测性方法；核对[D’Alessandro，定理1—2及§2.1](https://arxiv.org/pdf/quant-ph/0307127)。本文给出适合当前概率描述的直接证明，不宣称一般轨道张成方法原创。
 
@@ -75,17 +75,17 @@ T(g\omega)=T(g\omega')\qquad(\forall g\in G).
 
 另将R定义为：对不同整体态，存在一个允许可逆g及一个局部乘积检验，使变换后的统计不同。在上述框架内，这等价于
 
-\[
+$$
 \mathcal O=V^*.
 \tag{R}
-\]
+$$
 
-D给\(\mathcal O=E\)，R给\(\mathcal O=V^*\)，所以
+D给$\mathcal O=E$，R给$\mathcal O=V^*$，所以
 
-\[
+$$
 \boxed{D+R\Longrightarrow E=V^*\Longleftrightarrow L.}
 \tag{4}
-\]
+$$
 
 反过来L当然蕴含D和R。因此D、R在这里是L的动态分解，不能把它们重新命名后声称已经由认知推出。但两项可以分别审计：D问**旧描述能否正确更新**，R问**操作与读取是否足够识别状态**，不再把所有责任压在一句“整体可理解”上。
 
@@ -106,11 +106,11 @@ R单独只给“先共同操作、再局部读取”的可识别性，弱于无�
 
 于是可写出一条有明确缺口的回溯路线：
 
-\[
+$$
 F+U+C+\underbrace{\text{R的独立证书}}_{\text{如上述纯效应条件}}+D
 \Longrightarrow L
 \Longrightarrow\text{沿189轮定理得到复矩阵状态结构}.
-\]
+$$
 
 这是条件性充分路线；U、C、D及可用检验权限的认知来源均不能省略。接回189轮时，相关条件须覆盖理论所需的各级复合与划分；某个固定整体的一份证书不能代替这个普遍量词。
 
@@ -128,10 +128,10 @@ F+U+C+\underbrace{\text{R的独立证书}}_{\text{如上述纯效应条件}}+D
 
 代码给标准复矩阵基准中的一份有限证书：从一个秩一检验出发，用显式可逆门得到以下检验向量的投影：
 
-\[
+$$
 |j\rangle,\quad (|j\rangle+|k\rangle)/\sqrt2,\quad
 (|j\rangle+i|k\rangle)/\sqrt2\quad(j<k).
-\]
+$$
 
 其数量为d²；对角项、实部和虚部逐项可恢复，故线性独立。有限门证书验证张成性，不冒充对一般认知系统的C公理实验。
 

@@ -8,20 +8,20 @@
 
 条件固定为：环境与输入记忆初始独立；耦合门已知；之后只开放 S 与记忆；U 及源纯化系统始终不能再交互。沿用
 
-\[
+$$
 \sigma_S=\operatorname{tr}_U\sigma,\qquad
 C_S=\operatorname{tr}_U[\sigma(I_S\otimes R_U^\dagger)].
-\]
+$$
 
 第 106 轮的完整输出 Ψ_(σ_S,C_S) 对任意输入、任意未操作参考成立，实际可访问输出只相差一个已知受控门。因此：
 
-\[
+$$
 \boxed{
 (\sigma_S,C_S)\text{ 相同}
 \quad\Longleftrightarrow\quad
 \text{整个可访问输入输出通道相同}.
 }
-\]
+$$
 
 充分性直接来自四块输出式。必要性也能操作检验：
 
@@ -36,17 +36,17 @@ C_S=\operatorname{tr}_U[\sigma(I_S\otimes R_U^\dagger)].
 
 考虑
 
-\[
+$$
 \sigma_{\kappa,\epsilon}
 =\frac{I+\kappa XYY+\epsilon ZZZ}{8},
 \qquad \kappa^2+\epsilon^2\le1.
-\]
+$$
 
 XYY 与 ZZZ 反对易且各自平方为 I，所以该条件保证正性。对只开放 E_0 的固定旋转接口，
 
-\[
+$$
 \operatorname{tr}_{12}[ZZZ(I\otimes R_1^\dagger\otimes R_2^\dagger)]=0.
-\]
+$$
 
 故 ε 不改变 σ_0、C_0。相同 κ、不同 ε 的两个源可以有显著全局区别，却在当前全部可访问通道上严格相同。
 
@@ -58,27 +58,27 @@ XYY 与 ZZZ 反对易且各自平方为 I，所以该条件保证正性。对只
 
 比较两对物理可实现摘要，记差为 δσ、δC。对于任意包含参考的密度矩阵 ω，令
 
-\[
+$$
 \operatorname{Diag}_A(\omega)=P_+\omega P_++P_-\omega P_-.
-\]
+$$
 
 有 ‖Diag_A(ω)‖_1=1，且正矩阵的交叉块满足
 
-\[
+$$
 \|P_+\omega P_-\|_1
 \le\sqrt{\operatorname{tr}(P_+\omega)\operatorname{tr}(P_-\omega)}
 \le1/2.
-\]
+$$
 
 分别控制输出的对角项和非对角项，得到
 
-\[
+$$
 \boxed{
 \sup_{\omega,\mathrm{reference}}
 D(\Psi_1(\omega),\Psi_2(\omega))
 \le\frac{\|\delta\sigma\|_1+\|\delta C\|_1}{2}.
 }
-\]
+$$
 
 可再与平凡上界 1 取较小值。已知门共轭不改变这个界，任何后续协议的记录总变差也不超过它。该式给出充分误差预算，没有声称对任意摘要都达到等号。
 
@@ -86,24 +86,26 @@ D(\Psi_1(\omega),\Psi_2(\omega))
 
 对 σ_κ=(I+κXYY)/8，令 q=s_1s_2。此处 σ_0=I/2，δC=−δκ q X/2。输出差简化为
 
-\[
+$$
 \delta\Psi(\omega)
 =-\frac{\delta\kappa q}{2}X_0\otimes
 \operatorname{Off}_A(\omega),
-\]
-\[
+$$
+
+
+$$
 \operatorname{Off}_A(\omega)=\frac{\omega-A\omega A}{2}.
-\]
+$$
 
 因为 ‖Off_A(ω)‖_1≤1，得到
 
-\[
+$$
 \boxed{
 \sup_{\omega,\mathrm{reference}}
 D(\Phi_{\kappa_1}(\omega),\Phi_{\kappa_2}(\omega))
 =\frac{|\kappa_1-\kappa_2|s_1s_2}{2}.
 }
-\]
+$$
 
 等号由 M 的纯 L 正本征态达到，无需纠缠辅助输入。此式包含任意复参考的最坏情况，不是只在 H 校准态上得到的差异。
 
@@ -124,16 +126,16 @@ D(\Phi_{\kappa_1}(\omega),\Phi_{\kappa_2}(\omega))
 
 m 次原保护读取的多数符号 r 满足
 
-\[
+$$
 \boxed{\mathbb E[r]=-\gamma_m\kappa s_1s_2.}
-\]
+$$
 
 因此比较两候选 κ_1、κ_2 的完整读数历史，总变差为
 
-\[
+$$
 D_{\rm records}
 =\gamma_m\frac{|\kappa_1-\kappa_2|s_1s_2}{2}.
-\]
+$$
 
 多数符号保留这次二候选判别的似然比符号，实际全部原始分支也已核对该等式。随着读取精度提高，达到上节理想通道区别。
 
@@ -145,9 +147,9 @@ D_{\rm records}
 
 当 λ_1=λ_2=0 时，两者都能恢复完整的理想 H 区别 w；上一节探针的可访问输出却互相正交，理想可完全区分。一次原读取已把等先验源辨认成功率提高到
 
-\[
+$$
 (1+\alpha)/2=99.4807918509\%.
-\]
+$$
 
 所以“记下每个任务能做到的最高正确率”不足以定义未来预测状态。至少还需保存不同消息、动作与结果之间的对应关系。这里 κ 的符号就是一个不能被能力分数替代的例子。
 

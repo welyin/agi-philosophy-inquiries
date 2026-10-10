@@ -24,6 +24,7 @@
 ## 2. 从同一作用到固定内积的完整Hamiltonian
 
 沿802的Hermitian极化费米作用及Nambu总体1/2计数。令γ为空间度规，B=√γ为对称正平方根，取时间规范coframe：
+
 $$
 E^0{}_0=\alpha,\quad E^0{}_i=0,\quad
 E^a{}_0=B_{ai}\beta^i,\quad E^a{}_i=B_{ai},\qquad
@@ -35,6 +36,7 @@ $$
 所以W⁰⁰=1、W⁰ᵃ=0，Wⁱ⁰=−βⁱ。χ的Cauchy内积使用固定坐标体积；转写作用时，体积因子的导数由对称时间/空间导数共同处理，不能简单删去原测度后保留裸算符。
 
 以802原Clifford矩阵γᵃ、αᴬ=(I,Γ₁,Γ₂,Γ₃)及同一Levi-Civita连接构造
+
 $$
 \omega_\mu=E\,\Gamma^{\rm LC}_\mu E^{-1}-(\partial_\mu E)E^{-1},\qquad
 \Omega_\mu={1\over4}\omega_{\mu ab}\gamma^a\gamma^b,\qquad
@@ -45,6 +47,7 @@ $$
 最后的Sylvester方程在正B下唯一可解。在本征基中分母是√λᵢ+√λⱼ，因此原初始共形度规的重复本征值不会造成除零。代码从902的g、∂g和Γ直接计算这些系数；时间导数不是另加的静态假设。
 
 设Qₐ为原内部Hermitian生成器，Nambu提升为diag(qₐ,−qₐ*)，内部时间规范A₀=0。由同一对称作用得到
+
 $$
 \begin{aligned}
 H&=-i\mathsf A^i\partial_i-{i\over2}\partial_i\mathsf A^i+V,
@@ -66,6 +69,7 @@ $$
 ## 3. 计算表示改变不能改变传播
 
 空间标架可作时空依赖的旋转，其spin提升记S(t,x)。同一密度表示下应有
+
 $$
 \chi'=S\chi,\qquad
 H'=SHS^{-1}+i(\partial_tS)S^{-1},\qquad
@@ -82,6 +86,7 @@ C是粒子—空穴交换加复共轭，故它同时改变i的符号。第二式
 ## 4. 空间离散保结构，但不冒充连续误差证书
 
 对奇数N的周期Fourier配点导数Dᵢ，Dᵢ†=−Dᵢ且与复共轭交换。采用
+
 $$
 H_N=-{i\over2}\sum_i\left(\mathsf A^iD_i+D_i\mathsf A^i\right)+V.
 \tag{5}
@@ -117,6 +122,7 @@ N=13时间步减半的波函数最大差1.073e−13。同一低频立方|kᵢ|�
 ## 6. 背景与量子模式必须使用同一误差预算
 
 直接复用805的能量/Duhamel界。当前实现把所需系数明确成有限列表V=ΣᵣcᵣBᵣ；其中包括质量、颜色/电弱及spin项。对精确与近似背景的差，可取
+
 $$
 \begin{aligned}
 a_i&=\sum_A\|\Delta W^{iA}\|_\infty\|\alpha^A\|,\\
@@ -131,6 +137,7 @@ $$
 因此需要g、∂g、φ、A及相关系数误差；初始ψ的C0误差不能替代整段这些量的预算。F和空间度规的正下界保证矩阵根、逆和质量函数在声明区域光滑，但它们的实际误差常数仍须给定。
 
 令r̂=(i∂t−Ĥ)û为重建的连续时空残差，805给
+
 $$
 \|u(t)-\widehat u(t)\|_2\le e_0+
 \int_0^t\left[\|\widehat r\|_2+
@@ -143,6 +150,7 @@ $$
 ## 7. 原准备与共同来源怎样接续
 
 805已经给原辅助过去投影及三步算法：
+
 $$
 P_\Sigma f=U_a P_-U_a^\dagger f,\qquad
 P_-={1\over2}\left[I+H_-\left(|k|^2I+\mathcal M_\star^2\right)^{-1/2}\right].

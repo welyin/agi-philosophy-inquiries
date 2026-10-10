@@ -30,6 +30,7 @@
 在837原正则Cauchy片选开集B，包含全部十模式的紧支持，其许可因果发展O留在原背景范围。原自由时间片性质把B内Cauchy资料与O内场代数对应。H_B为B内资料的Hilbert闭包，C为自对偶共轭，Q为20维C不变编码投影。
 
 从B内光滑紧支C实资料的稠密列先减Q分量，再Gram正交化，跳过零向量，每次取两个实模式。减去的Q模式仍紧支于B，故全部有限步骤保支持：
+
 $$
 H_n=\operatorname{ran}Q\oplus
  \operatorname{span}_{\mathbb C}\{e_1,\ldots,e_{2n}\},
@@ -39,6 +40,7 @@ H_n=\operatorname{ran}Q\oplus
 $$
 
 没有每级重选真空、背景或边界。CAR范数连续性保证有限模式多项式的并稠密。π为原自由表示，取偶部分：
+
 $$
 \mathfrak N_n=\pi(\operatorname{CAR}(H_n)_{\rm ev})'',
 \qquad
@@ -52,6 +54,7 @@ $$
 ## 4. 同一参考、两份准备及正常性
 
 ω_bg为730原准自由参考，ν为其编码正交余部限制。σ=σ_{ε,r}沿837，0<ε<1、|r|<1，d=1024。定义偶分级乘积：
+
 $$
 \omega_r=\sigma_{\epsilon,r}\,\widehat\otimes\,\nu,\qquad
 \omega_g=(I_d/d)\,\widehat\otimes\,\nu .
@@ -63,6 +66,7 @@ $$
 正常性不依赖假设连续区域有密度矩阵。原表示的有限CAR因子为M_d；在其矩阵单位分解中，用有限个Kraus算符重置该因子、余部取原限制，得到正常态。偶准备与原偶态保证分级字典一致；限制到区域偶代数仍正常。这是829已有数学准备，不是自治控制证明。
 
 若λmin、λmax为σ的极端本征值：
+
 $$
 \alpha\omega_g\le\omega_r\le\beta\omega_g,\qquad
 \alpha=d\lambda_{\min}>0,\quad \beta=d\lambda_{\max}<\infty .
@@ -74,6 +78,7 @@ $$
 ## 5. 有限分解及非忠实支持
 
 γ_n、ρ_{r,n}、g_n分别为三态在H_n的有限CAR密度。它们均偶，完整有限CAR的迹相对熵等于偶代数直和相对熵。忠实Gaussian参考的log为常数加二次Majorana形式，同二点性给
+
 $$
 \operatorname{Tr}[(\rho_{r,n}-g_n)\log\gamma_n]=0,\qquad
 \operatorname{Tr}[(\rho_{r,n}-g_n)\log g_n]=0 .
@@ -81,6 +86,7 @@ $$
 $$
 
 展开定义，复用标准Gaussian最大熵的迹论证：
+
 $$
 D(\rho_{r,n}\Vert\gamma_n)
 =D(\rho_{r,n}\Vert g_n)+D(g_n\Vert\gamma_n),\qquad
@@ -96,6 +102,7 @@ $$
 ## 6. 原区域精确分账
 
 对式(1)—(2)应用增加子代数收敛，两项与原参考比较的相对熵分别趋向其区域值；c与n无关。于是
+
 $$
 D_{\mathfrak M_B}(\omega_r\Vert\omega_{\rm bg})
 =c_{\epsilon,r}
@@ -105,12 +112,14 @@ D_{\mathfrak M_B}(\omega_r\Vert\omega_{\rm bg})
 $$
 
 同一极限还给
+
 $$
 D_{\mathfrak M_B}(\omega_r\Vert\omega_g)=c_{\epsilon,r}<\infty .
 \tag{8}
 $$
 
 这里是Araki相对熵，未给连续区域配普通有限熵或密度矩阵。ε=.1、r=.6时c≈5.463074974 nat，但b_B尚未由原背景计算。整族有限性归结为一个共同条件：
+
 $$
 D_{\mathfrak M_B}(\omega_r\Vert\omega_{\rm bg})<\infty
 \quad\Longleftrightarrow\quad b_B<\infty .
@@ -122,6 +131,7 @@ $$
 ## 7. 内容比较与837的强化范围
 
 同一ε的组织态共享余部，有限相对熵完全位于编码因子。取极限：
+
 $$
 D_{\mathfrak M_B}(\omega_r\Vert\omega_{r_0})
 =(1-\epsilon)D(\tau_r\Vert\tau_{r_0})<\infty .
@@ -131,6 +141,7 @@ $$
 837对任意正常扩展只给下界；这里对共同独立余部扩展、且区域包含全部编码模式给等号，没有扩成任意扩展结论。
 
 只有b_B有限时，式(7)才允许相减：
+
 $$
 D_{\mathfrak M_B}(\omega_r\Vert\omega_{\rm bg})
 -D_{\mathfrak M_B}(\omega_{r_0}\Vert\omega_{\rm bg})
@@ -143,6 +154,7 @@ b_B=∞时，式(10)仍比较内容，但式(11)不能用作∞−∞的定义�
 ## 8. 物理边界和负对照
 
 每个有限层的内容变化保原Gaussian二次模能量，不证明原区域模流由局部应力生成。若完整参考模算符另有高阶项K_ng，则有限比较满足
+
 $$
 \Delta D=-\Delta S+\Delta\langle K_{\rm ng}\rangle
 \quad\hbox{在共同二次模响应为零时}.

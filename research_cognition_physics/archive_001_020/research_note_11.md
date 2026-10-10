@@ -12,20 +12,20 @@
 
 沿用 h=1/4、α=sin(h)/h、κ=√(1−α²)。归一化预测摘要为 z=(1,u,v)，u²+v²≤α²。用 s=±1 表示 active 结果：
 
-\[
+$$
 A_s=\frac12\begin{pmatrix}
 1&s\kappa&0\\
 \alpha s\kappa&\alpha&0\\
 0&0&\alpha^2
 \end{pmatrix},\qquad p_s(z)=\frac{1+s\kappa u}{2}.
-\]
+$$
 
 已知 active 及结果后的预测是
 
-\[
+$$
 \Phi_s(z)=\left(1,\frac{\alpha(u+s\kappa)}{1+s\kappa u},
 \frac{\alpha^2v}{1+s\kappa u}\right).
-\]
+$$
 
 已知 idle 后 z 不变。对于一般未知初态，以上是给定先验的前向预测规则；观察一个事件并不会告诉观察者精确的初态摘要。
 
@@ -37,28 +37,28 @@ A_s=\frac12\begin{pmatrix}
 
 给定当前预测，带结果的强度为
 
-\[
+$$
 \lambda_s(z)=\frac{1+s\kappa u}{2\kappa},\qquad
 dz=\sum_{s=\pm1}(\Phi_s(z)-z)\,dN_s.
-\]
+$$
 
 事件之间状态不变。N_s 是由状态相关结果标记的计数过程；两个标记过程不能额外假定为相互独立、常强度的泊松过程。
 
 对 0<t₁<⋯<t_k<τ，指定有序标记的路径密度为
 
-\[
+$$
 e^{-\tau/\kappa}\kappa^{-k}
 e_0^T A_{s_k}\cdots A_{s_1}z_0\,dt_1\cdots dt_k.
-\]
+$$
 
 对标记求和、在有序时间单纯形上积分，就得到泊松计数概率。固定方向时，给定计数的事件位置分布不依赖输入，全部输入信息在有序 active 标记中。
 
 忽略记录，S=Σ_s A_s=diag(1,α,α²)，平均演化满足
 
-\[
+$$
 \bar z(\tau)=\exp[\tau(S-I)/\kappa]z_0
 =\operatorname{diag}(1,e^{-(1-\alpha)\tau/\kappa},e^{-\kappa\tau})z_0.
-\]
+$$
 
 这与第十轮的均值极限相同。τ 是累计操作参数；这一步没有定义物理时间或时空对称性。
 
@@ -66,16 +66,16 @@ e_0^T A_{s_k}\cdots A_{s_1}z_0\,dt_1\cdots dt_k.
 
 比较输入 μ₀ 与 μ_π。令 D_k 为恰有 k 次 active 时，全部 2^k 个有序标记串分布的总变差距离（TV）。因后续记录可被丢弃，D_{k+1}≥D_k。完整事件记录距离为
 
-\[
+$$
 D(\tau)=\sum_{k=0}^{\infty}e^{-m}\frac{m^k}{k!}D_k,
 \qquad m=\tau/\kappa.
-\]
+$$
 
 脚本精确枚举到 k=18；这不是轨迹蒙特卡洛。截断以后只用 0≤D_k≤1。若 K+2>m，余项上界是
 
-\[
+$$
 \sum_{k>K}p_k\le\frac{p_{K+1}}{1-m/(K+2)}.
-\]
+$$
 
 | 累计强度 τ | 仅第一次 active 的 TV | 全部 active 标记的 TV |
 |:---|---:|---:|

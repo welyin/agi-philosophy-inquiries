@@ -25,24 +25,24 @@
 
 若曾将“分化为实系统”理解为对任意单量子比特执行
 
-\[
+$$
 \rho\longmapsto\operatorname{Re}\rho,
-\]
+$$
 
 它对孤立密度矩阵确实保迹且正：$\rho$ 与 $\rho^*$ 都正，它们的平均也正。Bloch 坐标的效果是保留 X、Z，抹去 Y。
 
 但若把它当作定义在整个复矩阵空间、可以局部执行的量子过程，其复线性扩展必须是
 
-\[
+$$
 \mathcal E_1(M)=\frac{M+M^{\mathsf T}}2.
-\]
+$$
 
 对实 Bell 态 $\Phi^+=(|00\rangle+|11\rangle)/\sqrt2$ 的后一半执行该映射，
 
-\[
+$$
 (\operatorname{id}\otimes\mathcal E_1)(|\Phi^+\rangle\langle\Phi^+|)
 =\frac{II+XX+ZZ}{4}.
-\]
+$$
 
 在实反对称向量 $\Psi^-=(|01\rangle-|10\rangle)/\sqrt2$ 上，其“概率”为 **$-1/4$**。所以这不是可对任意纠缠背景使用的合法局部过程。
 
@@ -54,23 +54,23 @@
 
 作为边界对照，考虑
 
-\[
+$$
 \mathcal E_v(M)=v\frac{M+M^{\mathsf T}}2+
 (1-v)\operatorname{Tr}(M)\frac I2,\qquad0\le v\le1.
-\]
+$$
 
 它完全抹去 Y，同时把 X、Z 等比例缩小为 v。上述 Bell 检验的四个特征值为
 
-\[
+$$
 \frac{1+2v}{4},\quad\frac14,\quad\frac14,\quad\frac{1-2v}{4}.
-\]
+$$
 
 因此完全正必须有 $v\le1/2$。反向取实 Kraus 矩阵为 $\sqrt{p_j}$ 乘以 $(I,X,-iY,Z)$，其中
 
-\[
+$$
 (p_I,p_X,p_J,p_Z)=
 \left(\frac{1+2v}{4},\frac14,\frac{1-2v}{4},\frac14\right).
-\]
+$$
 
 当 $0\le v\le1/2$ 时它们非负、和为 1，且逐基矩阵代入得到同一 $\mathcal E_v$。故这一特定通道族的充要条件恰为 **$v\le1/2$**。
 
@@ -80,17 +80,17 @@
 
 用目标态和共同参考
 
-\[
+$$
 \rho_q=\frac{II+qYY}{4},\qquad
 \tau=\frac{II+YY}{4},\qquad
 \Omega_q=\rho_q\otimes\tau,\quad -1\le q\le1.
-\]
+$$
 
 把四个系统重新排列为 Alice 的“目标、参考”与 Charlie 的“目标、参考”。整个矩阵是实的。两边各执行旧门可实现的带噪声局部 YY 读取，完整记录满足
 
-\[
+$$
 P_q(a,c)=\frac{1+ac\,\alpha^2q}{4}.
-\]
+$$
 
 因此 $q=\pm1$ 的联合记录总变差为 $\alpha^2\approx0.9793395048770184$。划分成两个主体，并没有自动失去联合读取能力。
 

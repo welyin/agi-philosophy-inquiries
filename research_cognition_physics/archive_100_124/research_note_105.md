@@ -8,36 +8,38 @@
 
 第 i 个已开放片段沿自身相位擦除轴读取 m_i 次，只保留本地多数符号 r_i，可见度 γ_i=γ_(m_i)。定义
 
-\[
+$$
 p_i(r_i)=\frac{1+r_i\lambda_i\gamma_i}{2},\qquad
 t_i(r_i)=\frac{\lambda_i+r_i\gamma_i}{2},
-\]
-\[
+$$
+
+
+$$
 p_{\boldsymbol r}=\prod_i p_i(r_i),\qquad
 t_{\boldsymbol r}=\prod_i t_i(r_i).
-\]
+$$
 
 不可访问片段仍给出 b=∏_U λ_i。不同片段的相位仪器由 I 和 A 的共轭组成，彼此交换。复合以后
 
-\[
+$$
 \boxed{
 \mathcal J_{\boldsymbol r}(\omega)=
 \frac{p_{\boldsymbol r}+bt_{\boldsymbol r}}2\omega+
 \frac{p_{\boldsymbol r}-bt_{\boldsymbol r}}2A\omega A.
 }
-\]
+$$
 
 相位消息概率与输入无关，因而这里可以乘积计算。它不同于把重复 G 记录误作给定原 G 标签后的独立证据，也没有给不对易 G,H 指派共同真值。
 
 固定这些本地多数仪器、保留全部多数消息之后，H 的最优区别为
 
-\[
+$$
 \boxed{
 D_H=wT_{\rm all},\qquad
 T_{\rm all}=\sum_{\boldsymbol r}
 \max(cp_{\boldsymbol r},b|t_{\boldsymbol r}|).
 }
-\]
+$$
 
 每个消息的最优选择仍是 N、正号关联、负号关联三者之一。最终 q 次原读取给出 P_H=(1+γ_q w T_all)/2，全部分支计入。
 
@@ -47,10 +49,10 @@ T_{\rm all}=\sum_{\boldsymbol r}
 
 若经典汇总只保留 R=∏_i r_i，令 a=∏_S λ_i、Γ=∏_i γ_i。对奇偶类求和得
 
-\[
+$$
 p_R=\frac{1+Ra\Gamma}{2},\qquad
 bt_R=\frac{b(a+R\Gamma)}2.
-\]
+$$
 
 因此乘积消息的区别，就是第 104 轮公式把 γ 换成 Γ。乘积消息删除了某些记录的置信程度，通常不能保存完整多数消息的能力。
 
@@ -62,13 +64,13 @@ bt_R=\frac{b(a+R\Gamma)}2.
 
 定义每条多数消息对应的动作：
 
-\[
+$$
 \begin{cases}
 N,&cp_{\boldsymbol r}\ge b|t_{\boldsymbol r}|,\\
 J_+,&cp_{\boldsymbol r}<b|t_{\boldsymbol r}|,\quad t_{\boldsymbol r}>0,\\
 J_-,&cp_{\boldsymbol r}<b|t_{\boldsymbol r}|,\quad t_{\boldsymbol r}<0.
 \end{cases}
-\]
+$$
 
 将相同动作的消息合并。理由并非一般数据压缩直觉，而是：每组中 H 差矩阵共享同一个最优谱符号，因此同一个查询达到每条分支的最优值，求和后仍达到其和。
 
@@ -86,30 +88,30 @@ J_-,&cp_{\boldsymbol r}<b|t_{\boldsymbol r}|,\quad t_{\boldsymbol r}<0.
 
 所有 λ_i=λ、γ_i=γ，访问 k 片，总数 n。b=λ^(n−k)。令
 
-\[
+$$
 p_\pm=(1\pm\lambda\gamma)/2,\quad
 t_\pm=(\lambda\pm\gamma)/2.
-\]
+$$
 
 按负号条数 j 汇总：
 
-\[
+$$
 T_{\rm all}=\sum_{j=0}^k {k\choose j}
 \max\{c\,p_+^{k-j}p_-^j,\;
 b\,t_+^{k-j}|t_-|^j\}.
-\]
+$$
 
 在 0<λ,γ<1 时，
 
-\[
+$$
 \frac{|t_-|}{p_-}\le\frac{t_+}{p_+}.
-\]
+$$
 
 所以所有分支中，正号全出的分支具有最大的相位置信度。出现任何严格优于只读 N 的分支，当且仅当
 
-\[
+$$
 \boxed{b\left(\frac{\lambda+\gamma}{1+\lambda\gamma}\right)^k>c.}
-\]
+$$
 
 分支概率非零，存在这样的分支就带来未后选平均增益。边界参数另由完整求和式处理。
 
@@ -153,9 +155,9 @@ k=96、m=1 的全正号增益见证为约 −0.0003328492；k=97 时约 +0.00185
 
 单看一组条件重叠为 a 的环境片段，原 G 校准的区别是
 
-\[
+$$
 D_G(E_S)=v\sqrt{1-a^2},
-\]
+$$
 
 而原 H 校准在环境片段单独上的区别为零。原因是 G 改变 A 扇区权重，H 信息则存在 M,N 与相位响应的关系中。
 

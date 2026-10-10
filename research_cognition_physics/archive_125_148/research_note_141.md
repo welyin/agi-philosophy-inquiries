@@ -16,11 +16,11 @@
 
 目标误差为
 
-\[
+$$
 \epsilon_{\rm ext}=\inf_{\text{允许恢复}}
 \sup_{\omega_{SR}:\ \omega_S=E(\rho_A)\otimes E(\rho_B)}
 D\bigl((\mathcal C\otimes\mathrm{id}_R)(\omega_{SR}),\omega_{SR}\bigr).
-\]
+$$
 
 其中 D(ρ,σ)=‖ρ−σ‖_1/2。经典记录保留在整体；上式比较恢复系统与原外部系统的联合边缘，没有要求物理删除记录。
 
@@ -28,26 +28,26 @@ D\bigl((\mathcal C\otimes\mathrm{id}_R)(\omega_{SR}),\omega_{SR}\bigr).
 
 把任意环境测量细分，得到接入仪器的 Kraus 算子 K_a：16→8。给定报告 a，恢复器的 Kraus 算子记为 L_{aj}：8→16。完整恢复的每个算子
 
-\[
+$$
 A_{aj}=L_{aj}K_a,\qquad \operatorname{rank}A_{aj}\le8.
-\]
+$$
 
 辅助系统、额外局部随机性和粗记录都包含在 Kraus 索引中；独立辅助不会提高这个因子分解的中间维数。
 
 对任意方阵 A，奇异值三角不等式与 Cauchy–Schwarz 给出
 
-\[
+$$
 |\operatorname{Tr}A|\le\|A\|_1
 \le\sqrt{\operatorname{rank}A}\,\|A\|_2.
-\]
+$$
 
-令 \(|\Phi_d\rangle=d^{-1/2}\sum_i|i\rangle|i\rangle\)。恢复后的目标重叠满足
+令 $|\Phi_d\rangle=d^{-1/2}\sum_i|i\rangle|i\rangle$。恢复后的目标重叠满足
 
-\[
+$$
 F_\Phi=\frac1{d^2}\sum_{a,j}|\operatorname{Tr}A_{aj}|^2
 \le\frac q{d^2}\sum_{a,j}\operatorname{Tr}A_{aj}^\dagger A_{aj}
 =\frac qd=\frac12.
-\]
+$$
 
 这里 F 是与纯目标的重叠，未取平方根。测量目标投影便有 D≥1−F，故任何允许恢复都满足 ε_ext≥1/2。
 
@@ -57,28 +57,28 @@ F_\Phi=\frac1{d^2}\sum_{a,j}|\operatorname{Tr}A_{aj}|^2
 
 第 138 轮完整经典记录的恢复通道为
 
-\[
+$$
 \Delta(\omega)=P_+\omega P_++P_-\omega P_-.
-\]
+$$
 
 定义 Q=P_+−P_-，有 Q²=I、Q 实正交，且
 
-\[
+$$
 \Delta=\tfrac12\mathrm{id}+\tfrac12\operatorname{Ad}_Q.
-\]
+$$
 
 对任意外部系统和任意联合态，
 
-\[
+$$
 D((\Delta\otimes\mathrm{id})(\omega),\omega)
 =\tfrac12D((Q\otimes I)\omega(Q\otimes I),\omega)\le\tfrac12.
-\]
+$$
 
 最大纠缠见证达到等号。因此
 
-\[
+$$
 \boxed{\epsilon_{\rm ext}^{\rm classical}=1/2}.
-\]
+$$
 
 下界甚至允许复 CPTP 处理；达到方案只用既有实操作。更换数域本身不会移除当前输入和访问权限造成的限制。
 

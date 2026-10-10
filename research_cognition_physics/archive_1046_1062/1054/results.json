@@ -1,0 +1,189 @@
+{
+  "round": 1054,
+  "date": "2026-10-08",
+  "author_scientific_checks_passed": true,
+  "new_project_conditional_physical_dictionary_groups": 1,
+  "new_cognitive_axioms": 0,
+  "full_roadmap_completed_here": false,
+  "parameters": {
+    "g": 0.1,
+    "Omega": 1.5,
+    "time": 0.01,
+    "anchor_radius": 0.25,
+    "adopted_dimension": 3,
+    "radial_quadratures": [
+      24,
+      48
+    ],
+    "fixed_local_ball_radius": 1e-05
+  },
+  "rational_certificate": {
+    "exact": {
+      "r0": "1/4",
+      "t0": "1/100",
+      "z": "3/70",
+      "minus_F_prime_lower": "161/1728",
+      "leading_slope_lower": "161/1728000000",
+      "derivative_remainder_upper": "9/114905000",
+      "exact_slope_lower": "589541/39711168000000",
+      "probability_remainder_upper": "27/183848000",
+      "exact_probability_lower": "802069/2206176000000",
+      "hessian_component_bound": "1401/42875000",
+      "local_ball_radius": "1/100000",
+      "jacobian_perturbation_upper": "4203/2143750000000",
+      "co_lipschitz_lower": "1/200000000",
+      "inverse_lipschitz_upper": "200000000",
+      "position_instrument_half_diamond_per_length_upper": "1/350",
+      "direction_t1_gap_lower_at_origin": "6889/4000000",
+      "direction_t1_gap_lower_in_ball": "47903/28000000"
+    },
+    "decimal": {
+      "r0": 0.25,
+      "t0": 0.01,
+      "z": 0.04285714285714286,
+      "minus_F_prime_lower": 0.0931712962962963,
+      "leading_slope_lower": 9.317129629629629e-08,
+      "derivative_remainder_upper": 7.832557329968234e-08,
+      "exact_slope_lower": 1.484572299661395e-08,
+      "probability_remainder_upper": 1.468604499369044e-07,
+      "exact_probability_lower": 3.635562167297623e-07,
+      "hessian_component_bound": 3.267638483965015e-05,
+      "local_ball_radius": 1e-05,
+      "jacobian_perturbation_upper": 1.9605830903790086e-09,
+      "co_lipschitz_lower": 5e-09,
+      "inverse_lipschitz_upper": 200000000.0,
+      "position_instrument_half_diamond_per_length_upper": 0.002857142857142857,
+      "direction_t1_gap_lower_at_origin": 0.00172225,
+      "direction_t1_gap_lower_in_ball": 0.0017108214285714285
+    }
+  },
+  "probability_and_slope": {
+    "p": 6.35765115744792e-07,
+    "minus_p_prime": 2.422425900921708e-07,
+    "refined_p": 6.35765115744793e-07,
+    "refined_minus_p_prime": 2.4224259009217116e-07,
+    "leading_F": 0.6357659634462757,
+    "minus_F_prime": 0.2422429142941785,
+    "full_minus_leading_probability": -8.477014837839094e-13,
+    "full_minus_leading_derivative": 3.2420200773355804e-13
+  },
+  "independent_diagnostics": {
+    "radial_raw_normalization": 0.999999999999999,
+    "same_free_energy_mean": 1.5000000000000004,
+    "angular_integral_vs_bessel_max_residual": 3.876066134722578e-14,
+    "full_transverse_matrix_max_residual": 6.994408090418658e-15,
+    "source_gram_residual": 1.9984061826475588e-15,
+    "self_energy_residual": 5.329070518200751e-15,
+    "star_spectral_vs_direct_taylor_residual": 2.1746041196761824e-15,
+    "quadrature_probability_difference": 9.529120656610879e-22,
+    "quadrature_derivative_difference": 3.705769144237564e-22,
+    "analytic_jacobian": [
+      [
+        2.422425900921708e-07,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        2.422425900921708e-07,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        2.422425900921708e-07
+      ]
+    ],
+    "finite_difference_jacobian_residual": 6.348464294067698e-17,
+    "neighborhood_checks": [
+      {
+        "x": [
+          1e-06,
+          2e-06,
+          -1e-06
+        ],
+        "probabilities": [
+          6.357653579845146e-07,
+          6.357656002272227e-07,
+          6.357648734993345e-07
+        ],
+        "response_per_length": 2.422416735720312e-07
+      },
+      {
+        "x": [
+          -3e-06,
+          0.0,
+          2e-06
+        ],
+        "probabilities": [
+          6.35764389011077e-07,
+          6.357651157384938e-07,
+          6.357656002238308e-07
+        ],
+        "response_per_length": 2.4224301715646257e-07
+      }
+    ]
+  },
+  "complete_instrument_diagnostic": {
+    "preparation_gram_diagonal": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ],
+    "coherent_source_purification_retained": true,
+    "isometry_completeness_residual": 1.1102230342862572e-15,
+    "scalar_effect_residual": 1.058791616950358e-22,
+    "unknown_reference_probability": 6.357651157447919e-07,
+    "reference_marginal_residual": 3.965581956729551e-16,
+    "conditional_excited_spin_z": -0.32052390449605406,
+    "conditional_excited_spin_distance_from_luders": 0.6602619522480271,
+    "terminal_read_commutator_norm": 0.14142135623730956,
+    "finite_quadrature_H_extreme_eigenvalues": [
+      1.0024063899991178,
+      1.9975936100008826
+    ],
+    "radial_probability_derivative": -2.422425900921708e-07
+  },
+  "deletion_controls": {
+    "one_center_equal_radius_equal_probability": [
+      6.35765115744792e-07,
+      6.35765115744792e-07
+    ],
+    "collinear_at_origin_jacobian_rank": 1
+  },
+  "scope": {
+    "three_dimensional_Maxwell_and_fixed_anchor_frame_adopted": true,
+    "c_number_receiver_position_parameter_not_quantum_position": true,
+    "same_dipole_effective_action_translation_family_not_autonomous_receiver_motion": true,
+    "three_alternative_experiments_not_cloned_input_or_free_reset": true,
+    "normal_photon_preparation_permissions_adopted": true,
+    "short_time_RWA_error_relative_to_full_QED_certified": false,
+    "all_unknown_spin_and_passive_reference_exact_in_proof": true,
+    "retained_source_purification_uses_coherent_sum": true,
+    "terminal_detector_energy_closed": false,
+    "actual_displacement_or_half_cost_contract_derived": false,
+    "three_dimensions_generated": false,
+    "M3A_complete": false,
+    "quadrature_differences_are_not_continuous_error_certificates": true
+  },
+  "historical_sha256": {
+    "archive_370_428/research_note_382.md": "2742f1a2568e4a7ce18a78fbfd4e223e2ffc8283a2b3ca4233bbf16f4f5f6eef",
+    "archive_370_428/research_note_383.md": "803d5a525d2ad991913f320665fc5dff5b296f53111bdfd0128cc6e896eda6d8",
+    "archive_370_428/research_note_384.md": "807531267aa7d90bbe9714ea5b2cddeaeeff6d30c735e58f0da08cc27c701cd8",
+    "archive_370_428/research_note_386.md": "1744dd01df9f63e2971af71de3a374a5d1a2a45dbda990aee2feadced17bf176",
+    "archive_370_428/research_note_412.md": "3c2c07d460a0b70e67a2eff02c2c1ffc4d27abf1caa836f602e1b2d5e19a51cd",
+    "archive_370_428/research_note_425.md": "3e5fd4dabb3edae064804d27e59ab34da4850b3653d1f0413acf973e9831e043",
+    "archive_370_428/research_note_427.md": "c1a76e478978ef68ad7371a1459a8d67dfb61de3eaaec0d985e9f5c0c4ba3c55",
+    "archive_467_530/research_note_488.md": "2131c7c6b2f894678f05fa34dd31e08e6499d9451bfe763852c1c96d50807264",
+    "archive_467_530/research_note_522.md": "0ddfba01855d166bc32ed70761f1d0a692c7a6aee534e9db267fff709a61da4c",
+    "archive_467_530/research_note_523.md": "d80a75f59584ee767c057c1e441955525f0b74ab74b5798d3846894194008909",
+    "archive_1009_1043/research_note_1038.md": "259713cb0b43b47bd53fd6a609028d0402743c329b487c0df1ba679c580276bd",
+    "archive_1046_/research_note_1046.md": "6cad90a11fa3a95f7ef22110ea3230e5df24218ceb484808853d2a660e0260ff",
+    "archive_1046_/1046/proof.md": "7aaa8fcfe54760161b60dfc0533efeac32a033935ea7600609a9e9c3e4397329",
+    "archive_1046_/1046/photon_direction_receiver_results.json": "b9bbbec55329443e59b61a51bddeb56c38d47263c06c7aca8d0a21e5c0eb3ea9",
+    "archive_1046_/1046/research_round_1046_checks.json": "7bebfd12ea016aaae9c9df3dfdf842655ab748283a56c738d4c40193c05111a9",
+    "archive_1046_/research_note_1051.md": "0f5b95d83311c31ecd619dca40849e98b01b9a81781d196aa44c257a4e8db421",
+    "archive_1046_/_admission/finite_direction_descent/selection.md": "7bda0930834b8683bbc93efca9712a919a91287e9478b99ed46b1f7b6af7a5a6",
+    "archive_1046_/_admission/optical_coordinates/selection.md": "bb60feba7086ef2221b95fa9c0c0389dc333e4ae567a35a4c762e529fffbe170"
+  }
+}

@@ -19,17 +19,17 @@
 
 实对称 4×4 矩阵有 4 个对角元素、6 个独立非对角元素，所以
 
-\[
+$$
 \dim\operatorname{Sym}_4(\mathbb R)=4+6=10.
-\]
+$$
 
 正性限定可行区域；归一化 `Trρ=1` 再减少一个自由参数。第 47 轮保留的总质量 `w=Trρ` 用来记录分支发生的概率，它不是时间坐标；其余九个参数也没有被定义为空间方向。
 
 在通常实量子候选的多系统延伸中，n 个二级系统的矩阵阶数是 N=2ⁿ，因而状态表示的齐次维数为
 
-\[
+$$
 D_n=\frac{N(N+1)}2=\frac{4^n+2^n}{2}.
-\]
+$$
 
 | 系统数 | 状态矩阵 | 含总质量的参数数目 | 归一化后的自由参数 |
 |:---:|:---:|---:|---:|
@@ -51,25 +51,25 @@ D_n=\frac{N(N+1)}2=\frac{4^n+2^n}{2}.
 
 对归一化实状态
 
-\[
+$$
 \rho=\tfrac12(I+r_zZ+r_xX),\qquad |r|\le1,
-\]
+$$
 
 一个事件的效应 E 定义为 `p(event|ρ)=Tr(Eρ)`。写
 
-\[
+$$
 E=e_0I+e_zZ+e_xX.
-\]
+$$
 
 这里讨论包括失败、停止和未入选记录的完整概率空间。只报告筛选后的条件概率，不能把其分母忽略后当成一个新效应。
 
 ### 定理 A：全部有限原局部协议效应恰好为
 
-\[
+$$
 \boxed{\mathcal E_{\rm local}
 =\{e_0I+e\cdot(Z,X):0\le e_0\le1,
 \ |e|\le\alpha\min(e_0,1-e_0)\}.}
-\]
+$$
 
 α=4sin(1/4)≈0.9896158370。这个集合已经闭合，所以取这些协议的效应极限也不会扩大它。
 
@@ -77,23 +77,23 @@ E=e_0I+e_zZ+e_xX.
 
 第 46 轮证明，任意方向的原分支可写为
 
-\[
+$$
 \mathcal A_s(\rho)=L_s\,\mathcal D(\rho)\,L_s^T,
 \qquad \sum_sL_s^TL_s=I,
-\]
+$$
 
 其中 L_s 已包含方向旋转，在实平面上
 
-\[
+$$
 \mathcal D(\rho)=\alpha\rho+(1-\alpha)\operatorname{Tr}(\rho)I/2.
-\]
+$$
 
 该噪声与全部局部旋转交换。设第一次读取后，分支 s 的整个后续协议对应效应 F_s，必有 `0≤F_s≤I`。则总效应
 
-\[
+$$
 E=\mathcal D^*(F),\qquad
 F=\sum_s L_s^TF_sL_s,\qquad 0\le F\le I.
-\]
+$$
 
 因此若 `F=f₀I+f·(Z,X)`，就有 `|f|≤min(f₀,1−f₀)`，而 D* 将 f 乘以 α，总效应满足定理中的界。
 
@@ -103,9 +103,9 @@ F=\sum_s L_s^TF_sL_s,\qquad 0\le F\le I.
 
 令 n=e/|e|，执行 η=1 的 n 方向读取，再按结果 ± 分别以
 
-\[
+$$
 t_\pm=e_0\pm |e|/\alpha
-\]
+$$
 
 的概率接受。定理中的界恰好保证 `0≤t±≤1`，所得效应正是 E。e=0 时只需独立抛硬币。
 
@@ -115,16 +115,16 @@ t_\pm=e_0\pm |e|/\alpha
 
 对任意非平凡 E，即 `0<e₀<1`，定理 A 保证所有允许状态的事件概率都严格在 0 与 1 之间。例如
 
-\[
+$$
 \lambda_{\min}(E)\ge(1-\alpha)e_0>0.
-\]
+$$
 
 对两个相反的圆盘边界态、等先验判断，最优成功率为
 
-\[
+$$
 \boxed{P_{\rm success}^{\rm local}=\frac{1+\alpha}{2}
 \approx0.9948079185.}
-\]
+$$
 
 任意完整记录最终都可后处理为二值猜测事件，因而同样受界约束。沿正确方向的一次 η=1 读取达到该值。
 
@@ -142,32 +142,32 @@ t_\pm=e_0\pm |e|/\alpha
 
 记 `R_y(t)=exp(−itY/2)`，有
 
-\[
+$$
 U_{YZ}(t)=(I\otimes R_y(-\pi/2))U_{YX}(t)
 (I\otimes R_y(\pi/2)).
-\]
+$$
 
 由此拼成
 
-\[
+$$
 \begin{aligned}
 C(t)&=(R_y(t/2)\otimes I)U_{YZ}(-t/2)\\
 &=I\otimes P_0+R_y(t)\otimes P_1,
 \qquad P_b=|b\rangle\langle b|.
 \end{aligned}
-\]
+$$
 
 取 t=π：
 
-\[
+$$
 \boxed{C=I\otimes P_0+(-iY)\otimes P_1.}
-\]
+$$
 
 它是连续连接恒等的实正交操作，且
 
-\[
+$$
 C|0,b\rangle=|b,b\rangle.
-\]
+$$
 
 因此可将 B 的 Z 基取值传给 A。这里没有假设交换两根线，也没有加入任意两体门。
 
@@ -177,11 +177,11 @@ C|0,b\rangle=|b,b\rangle.
 
 准备 A、执行 C、读取 A 得到 s=±1、丢弃 A 后，B 上的选择性映射精确为
 
-\[
+$$
 \boxed{\mathcal R_s(\rho)=
 \frac{1+s\beta}{2}P_0\rho P_0+
 \frac{1-s\beta}{2}P_1\rho P_1,\qquad\beta=\alpha\eta.}
-\]
+$$
 
 证明只需将 C 后的联合状态展开成 |b,b⟩⟨b′,b′|，并用辅助读取效应 `(I+sβZ)/2` 作部分迹；其非对角元素为零。
 
@@ -194,9 +194,9 @@ C|0,b\rangle=|b,b\rangle.
 
 把辅助系统重新准备为 |0⟩后重复操作，全部记录等价于：先按 B 的初始 Z 布居取一个固定比特 b，每轮读取它时独立出错，错误率
 
-\[
+$$
 \epsilon=(1-\beta)/2<1/2\quad(\eta>0).
-\]
+$$
 
 这个条件比特只是推导该固定方向记录的表示，没有把全部方向或全部联合理论改写成同一个经典比特模型。
 
@@ -208,32 +208,32 @@ C|0,b\rangle=|b,b\rangle.
 
 令 m 为正奇数，按多数结果判断 Z，错误率为
 
-\[
+$$
 \delta_m=\sum_{k=(m+1)/2}^{m}
 \binom mk\epsilon^k(1-\epsilon)^{m-k}.
-\]
+$$
 
 对任意输入状态，判断为 + 的效应恰好是
 
-\[
+$$
 E_m=\tfrac12[I+(1-2\delta_m)Z].
-\]
+$$
 
 因此与理想 Z 效应 P₀ 的最大概率误差为
 
-\[
+$$
 \boxed{\sup_\rho|\operatorname{Tr}[(E_m-P_0)\rho]|
 =\|E_m-P_0\|_{\rm op}=\delta_m.}
-\]
+$$
 
 这是一致界，覆盖整个圆盘，不只是若干采样输入。
 
 若 K∼Binomial(m,ε)，对 t>0 应用 `Pr(K≥m/2)≤E[exp(tK)]exp(−tm/2)`，取 `exp(t)=(1−ε)/ε`，得到
 
-\[
+$$
 0<\delta_m\le[2\sqrt{\epsilon(1-\epsilon)}]^m
 =(1-\beta^2)^{m/2}\longrightarrow0.
-\]
+$$
 
 任何固定 η>0 都可如此放大，只是所需轮数不同。η=0 不带信息，不能放大。上述指数界是充分成本，没有证明最优。
 
@@ -253,17 +253,17 @@ E_m=\tfrac12[I+(1-2\delta_m)Z].
 
 ### 定理 B：在第 5 节的共同操作和重置条件下
 
-\[
+$$
 \boxed{\mathcal E_{\rm aux}^{\rm finite}
 =\{0,I\}\cup\{E\in\operatorname{Sym}_2(\mathbb R):0<E<I\},}
-\]
+$$
 
 且
 
-\[
+$$
 \boxed{\overline{\mathcal E_{\rm aux}^{\rm finite}}
 =\{E\in\operatorname{Sym}_2(\mathbb R):0\le E\le I\}.}
-\]
+$$
 
 这里有限协议指有有限最大读取次数的电路及经典随机后处理，基本产生记录的操作仍是原局部 fresh 读取。
 
@@ -271,9 +271,9 @@ E_m=\tfrac12[I+(1-2\delta_m)Z].
 
 **充分性。** 对 `E=e₀I+e·(Z,X)` 且 `|e|<min(e₀,1−e₀)`，选择足够大的奇数 m，使
 
-\[
+$$
 \gamma_m=1-2\delta_m\ge |e|/\min(e_0,1-e_0).
-\]
+$$
 
 将输入旋到 e 的方向，执行上述辅助多数读取，再按结果 ± 以 `t±=e₀±|e|/γ_m` 接受。它们属于 [0,1]，产生的效应精确等于 E。e=0 时无需辅助读取。
 

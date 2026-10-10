@@ -133,7 +133,7 @@ $$
 
 这里1/4来自原SU(3)生成元的非零结构常数，不是把三个方向当独立Abelian场。物理颜色能量密度为ψ⁻⁸ΔY，而不是固定旧几何上的常数注能。
 
-令\(\mathcal A=|\widetilde A|^2+p\mathcal K^{-1}p\)，沿用原B、C=2τ²/3−2U，则新的唯一正ψ满足
+令$\mathcal A=|\widetilde A|^2+p\mathcal K^{-1}p$，沿用原B、C=2τ²/3−2U，则新的唯一正ψ满足
 
 $$
 -8\Delta\psi_\lambda+C\psi_\lambda^5-B\psi_\lambda

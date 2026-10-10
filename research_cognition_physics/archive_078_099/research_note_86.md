@@ -10,10 +10,10 @@
 
 本轮另行检查两个独立准备的编码
 
-\[
+$$
 \mathcal E(\rho)_{R_AT_A}\otimes
 \mathcal E(\sigma)_{R_BT_B}.
-\]
+$$
 
 每个参考边缘为 I/2，两个参考独立；不是事先对齐的共同参考。目标是比较它与 $\mathcal E(\rho\otimes\sigma)$。这里的投影和编码压缩是候选操作，不把用户的“分化”重新定义为物理删减；相关分支保留在记录中。
 
@@ -21,31 +21,33 @@
 
 将输入重排为 $R_A,R_B,T_A,T_B$。定义从一个参考到对齐参考对的实等距嵌入
 
-\[
+$$
 V_+=\frac1{\sqrt2}
 \begin{pmatrix}1&0\\0&1\\0&1\\-1&0\end{pmatrix},
 \qquad V_-=(I\otimes X)V_+.
-\]
+$$
 
 两者像空间分别为 $Y_{R_A}Y_{R_B}=\pm1$，且
 
-\[
+$$
 V_\pm^{\mathsf T}V_\pm=I_2,\quad
 V_+V_+^{\mathsf T}+V_-V_-^{\mathsf T}=I_4.
-\]
+$$
 
 令 $D=d_A d_B$，$K_\pm=V_\pm^{\mathsf T}\otimes I_D$。它们给出完整实 Kraus 仪器，$\sum K_\pm^{\mathsf T}K_\pm=I$。
 
 对任意未知产品输入，逐块计算得到未归一化输出
 
-\[
+$$
 K_+\Omega K_+^{\mathsf T}
 =\tfrac12\mathcal E(\rho\otimes\sigma),
-\]
-\[
+$$
+
+
+$$
 K_-\Omega K_-^{\mathsf T}
 =\tfrac12\mathcal E(\rho\otimes\sigma^*).
-\]
+$$
 
 两分支概率恒为 1/2。一个分支是所需共同编码，另一个保留了一方的逻辑共轭。不能只报告成功分支并把另一个当作没有发生。
 
@@ -55,9 +57,9 @@ K_-\Omega K_-^{\mathsf T}
 
 若忘掉分支，逻辑有效输出为
 
-\[
+$$
 \tfrac12(\rho\otimes\sigma+\rho\otimes\sigma^*).
-\]
+$$
 
 例如 $\sigma=(I\pm Y)/2$ 的原正负区别会消失，输出距各自所需目标的迹距离为 1/2。这种直接忘记会违反第 84 轮的能力保留要求。
 
@@ -80,9 +82,9 @@ K_-\Omega K_-^{\mathsf T}
 
 n 个独立参考的共同对齐空间只有秩二，而参考总边缘为 $I/2^n$。故这套“只接受共同取向”的过滤成功率恰为
 
-\[
+$$
 p_n=2^{1-n}.
-\]
+$$
 
 等距嵌入可由 $|+Y\rangle^{\otimes n}$ 的实、虚两列构成，直接得到未归一化成功输出 $2^{1-n}\mathcal E(\bigotimes_i\rho_i)$。代码核对 n=1—4，公式对任意 n 由秩和参考边缘证明。
 

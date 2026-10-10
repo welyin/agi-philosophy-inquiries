@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-09",
+  "round": 1058,
+  "reviewer": "round1037_dynamics_selection",
+  "independent_review_passed": true,
+  "new_calibration_groups": 0,
+  "author_default_science_exit_code": 0,
+  "author_default_verify_exit_code": 0,
+  "author_verified_assets": 7,
+  "author_verified_history": 7,
+  "author_verified_local_links": 12,
+  "author_assets_unchanged": true,
+  "author_sha256": {
+    "../research_note_1058.md": "b5b9d6ac8f47840c5ab938ed967b7d942738cf06e731d73e35c4af678e6f7fcd",
+    "proof.md": "c4b6b5e1e69056df52d00e09b1765ea0f2722e6356e7b05f387e4eb3c92ef873",
+    "sources.md": "b28409ec120d026ee5864f3d31a0a470b931be38785274dd216cec7b96c94989",
+    "dependency_update.md": "fb644749094fa049088f0159c9c21f849cc641d456ced75e7b2abce5c2c19428",
+    "shared_preparation.py": "856a5f8bce7ef5b58a95e94e62e7b87ec8465aef00ec9cda818d8f5dc9bbf095",
+    "results.json": "75ee7c01c1dc32d69d507d7bb73fb54abd50cde2f17101c92b36e3cc40a007f4",
+    "verify_round1058.py": "1194f8a1a312badf289c1baa8edb7d2f58f5ecafcf955fcb5a473f67af347451"
+  },
+  "receipt_sha256": "c6ee49bb26a3a21a4cd9e7d44b2ccbf82985ae86dffde2e7f8935f73b1517f33",
+  "independent_result": {
+    "counterexample_t": 0.25,
+    "branch_min_eigenvalue": 0.03125,
+    "two_copy_merged_constraint_residual": 0,
+    "two_copy_weights": {
+      "1": 1,
+      "-1": 1
+    },
+    "four_copy_weights": {
+      "1": 1.00390625,
+      "-1": 1.00390625
+    },
+    "expected_four_copy_weight": 1.00390625,
+    "random_moment_identity_error": 3.177288347786661e-16,
+    "random_direct_Born_error": 6.661338147750939e-16,
+    "random_epsilon": 0.011694063681709554,
+    "random_average_branch_distance": 0.12092669417577141,
+    "random_first_distance": 0.06207337398915155,
+    "random_second_distance": 0.09251914591422358,
+    "branch_Jensen_bound": 0.1507796968744324,
+    "theorem_bound": 0.9865352742158073,
+    "second_hybrid_bound": 0.24185338835154283,
+    "exact_hidden_sign_support": {
+      "2": {
+        "retained": 5,
+        "forbidden": 0
+      },
+      "3": {
+        "retained": 14,
+        "forbidden": 3
+      },
+      "4": {
+        "retained": 41,
+        "forbidden": 18
+      }
+    },
+    "three_copy_PQQ_coefficient": "1/64",
+    "four_copy_is_not_claimed_minimal": true
+  },
+  "independent_python_source": "import numpy as np, json\nfrom functools import reduce\nI=np.eye(2,dtype=complex)\npa=[I,np.array([[0,1],[1,0]],complex),np.array([[0,-1j],[1j,0]],complex),np.diag([1.,-1.]).astype(complex)]\ndef kron(seq): return reduce(np.kron,seq)\ndef pm(a): return kron([pa[j] for j in a])\ndef trnorm(a): return np.abs(np.linalg.eigvalsh(a)).sum()\ndef dep(a,axes,n):\n    for q in axes:\n        rest=[k for k in range(n) if k!=q]\n        perm=[q]+rest\n        tmp=a.reshape([2]*(2*n)).transpose(perm+[j+n for j in perm]).reshape(2,2**(n-1),2,2**(n-1))\n        red=np.trace(tmp,axis1=0,axis2=2)\n        b=np.kron(I/2,red).reshape([2]*(2*n))\n        inv=list(np.argsort(perm))\n        a=b.transpose(inv+[j+n for j in inv]).reshape(2**n,2**n)\n    return a\ndef valid2(a):\n    DA=dep(a,[1,5],8);DB=dep(a,[3,7],8)\n    z=[a-DA-DB+dep(DA,[3,7],8)]\n    z += [dep(a,[2,6,3,7],8)-dep(a,[1,5,2,6,3,7],8)]\n    z += [dep(a,[0,4,1,5],8)-dep(a,[3,7,0,4,1,5],8)]\n    return max(np.linalg.norm(v) for v in z)\nP=pm([0,3,3,0]);Q=pm([3,0,0,3]);t=.25\nws=[(np.eye(16)+t*P+s*t*Q)/16 for s in [1,-1]]\nrho2=sum(np.kron(w,w) for w in ws)/2\ndef ztest(w,a,b,s,t):\n    # Direct Choi construction in local input-input-output-output order.\n    UA=kron([pa[a[0]],pa[b[0]]]); VA=kron([pa[a[1]],pa[b[1]]])\n    UB=kron([pa[a[2]],pa[b[2]]]); VB=kron([pa[a[3]],pa[b[3]]])\n    MA=(np.eye(16)+s*np.kron(UA,VA))/4\n    MB=(np.eye(16)+t*np.kron(UB,VB))/4\n    # grouped order: AI1,AI2,AO1,AO2,BI1,BI2,BO1,BO2\n    perm=[0,4,1,5,2,6,3,7];inv=list(np.argsort(perm))\n    J=np.kron(MA,MB).reshape([2]*16).transpose(inv+[j+8 for j in inv]).reshape(256,256)\n    return np.einsum('ij,ji->',16*np.kron(w,w),J).real\ncp2={str(s):[ztest(w,[0,3,3,0],[3,0,0,3],1,s) for w in ws] for s in [1,-1]}\nR=[(a,0,b,0) for a in range(4) for b in range(4)]\nPP=[(a,o,b,0) for a in range(4) for o in range(1,4) for b in range(1,4)]\nQQ=[(a,0,b,o) for b in range(4) for a in range(1,4) for o in range(1,4)]\nPB=np.array([pm(a) for a in PP]); QB=np.array([pm(a) for a in QQ])\nbasis=np.array([pm(a) for a in R[1:]+PP+QQ])\nrng=np.random.default_rng(105808)\nrnd=[]\nfor _ in range(4):\n    h=np.einsum('k,kij->ij',rng.normal(size=87),basis)\n    h *= .8/max(abs(np.linalg.eigvalsh(h)))\n    rnd.append((np.eye(16)+h)/16)\nweights=np.array([.1,.2,.3,.4])\ncc=np.array([np.einsum('ij,kji->k',w,PB).real for w in rnd])\ndd=np.array([np.einsum('ij,kji->k',w,QB).real for w in rnd])\ngg=cc[:,:,None]*dd[:,None,:]\nmom=np.einsum('l,lij->ij',weights,gg**2)\nzplus=np.einsum('l,lij->ij',weights,(1+gg)**2)\nzminus=np.einsum('l,lij->ij',weights,(1-gg)**2)\nerr=float(np.max(abs((zplus+zminus)/2-1-mom)))\nchosen=[dep(w,[1],4) if np.dot(c,c)<=np.dot(d,d) else dep(w,[3],4) for w,c,d in zip(rnd,cc,dd)]\navgdist=sum(p*.5*trnorm(w-v) for p,w,v in zip(weights,rnd,chosen))\navg1=.5*trnorm(sum(p*(w-v) for p,w,v in zip(weights,rnd,chosen)))\navg2=.5*trnorm(sum(p*(np.kron(w,w)-np.kron(v,v)) for p,w,v in zip(weights,rnd,chosen)))\neps=float(max(np.max(abs(zplus-1)),np.max(abs(zminus-1))))\ndirecterr=0.\nfor l in range(4):\n    for i,j in [(0,0),(5,17),(23,11),(35,35)]:\n        for s in [1,-1]:\n            directerr=max(directerr,abs(ztest(rnd[l],PP[i],QQ[j],1,s)-(1+s*gg[l,i,j])))\nout=dict(counterexample_t=t,branch_min_eigenvalue=min(np.linalg.eigvalsh(w).min() for w in ws),\n two_copy_merged_constraint_residual=valid2(rho2),\n two_copy_weights={s:float(np.mean(z)) for s,z in cp2.items()},\n four_copy_weights={s:float(np.mean(np.array(z)**2)) for s,z in cp2.items()},\n expected_four_copy_weight=1+t**4,\n random_moment_identity_error=err,random_direct_Born_error=directerr,\n random_epsilon=eps,random_average_branch_distance=avgdist,\n random_first_distance=avg1,random_second_distance=avg2,\n branch_Jensen_bound=.5*float(np.sum(mom))**.25,\n theorem_bound=3*eps**.25,second_hybrid_bound=2*avgdist)\nassert out['two_copy_merged_constraint_residual']<1e-14\nassert directerr<1e-13 and err<1e-13\nassert avg1<=avgdist+1e-13 and avg2<=2*avgdist+1e-13\nassert avgdist<=out['branch_Jensen_bound']+1e-13\nfrom fractions import Fraction\nfrom itertools import product\ntypes=[(0,0,0,0),(0,3,3,0),(3,0,0,3)]\nsupport_counts={}\nfor n in [2,3,4]:\n    retained=[]; forbidden=[]\n    for labels in product(range(3),repeat=n):\n        if sum(j==2 for j in labels)%2: continue\n        words=[types[j] for j in labels]\n        valid=all(j==0 for j in labels) or any(\n            all(w[o]==0 for w in words) and any(w[i]!=0 for w in words)\n            for i,o in [(0,1),(2,3)])\n        coeff=Fraction(1,4)**sum(j!=0 for j in labels)\n        retained.append((labels,coeff))\n        if not valid: forbidden.append((labels,coeff))\n    support_counts[str(n)]={\"retained\":len(retained),\"forbidden\":len(forbidden)}\n    if n==2: assert not forbidden\n    if n==3: assert dict(forbidden)[(1,2,2)]==Fraction(1,64)\n    if n==4: assert dict(forbidden)[(1,2,1,2)]==Fraction(1,256)\nout[\"exact_hidden_sign_support\"]=support_counts\nout[\"three_copy_PQQ_coefficient\"]=\"1/64\"\nout[\"four_copy_is_not_claimed_minimal\"]=True\n\nprint(json.dumps(out,indent=2))\n",
+  "independent_source_imports_author_code": false,
+  "scope": "finite shared conditional-iid preparation and specified grouped CPTP tests; no strategy/source/poststate claim"
+}

@@ -1,0 +1,91 @@
+{
+  "checker": "independent Fraction complex finite-algebra verifier",
+  "arithmetic": "exact fractions; no numpy, sympy, floating point or author imports",
+  "assertions": 6095,
+  "test_groups": 10,
+  "results": [
+    {
+      "name": "three charge supports and maximum ranks",
+      "status": "PASS",
+      "n_range": "2..12",
+      "nontrivial_partitions": 66,
+      "maximum_rank_witnesses": 198,
+      "exact_ranks": "r, 2*min(r,n-r), n-r",
+      "invertible_support": "cross, exactly when n=2*r"
+    },
+    {
+      "name": "n2 partial entanglement need not be SU2 invariant",
+      "status": "PASS",
+      "marginal_eigenvalues": [
+        "9/25",
+        "16/25"
+      ],
+      "Schmidt_rank": 2
+    },
+    {
+      "name": "n4 binary sectors of rank two",
+      "status": "PASS",
+      "rank_P": 2,
+      "Schmidt_rank": 4
+    },
+    {
+      "name": "n3 embedded singlet",
+      "status": "PASS",
+      "Schmidt_rank": 2,
+      "hardware_dimension": 3,
+      "marginal_diagonal": [
+        "1/2",
+        "1/2",
+        "0"
+      ]
+    },
+    {
+      "name": "n3 mixed antisymmetric relation",
+      "status": "PASS",
+      "state_rank": 3,
+      "marginal_rank": 3,
+      "purity": "1/3",
+      "exact_unitary_settings": 5
+    },
+    {
+      "name": "n3 classical mixed relation and independent dephasing",
+      "status": "PASS",
+      "state_rank": 3,
+      "local_pure_output_rank": 2
+    },
+    {
+      "name": "n3 discrete minus phase and failed i intermediate",
+      "status": "PASS",
+      "endpoint": "invariant",
+      "i_intermediate": "changed",
+      "fidelity": "1/9"
+    },
+    {
+      "name": "n4 only P statistics with J2 direct sum J2",
+      "status": "PASS",
+      "rank_P": 1,
+      "Schmidt_rank": 4,
+      "Q_coherence_before": "1/2",
+      "Q_coherence_after": "(3/10-2/5i)"
+    },
+    {
+      "name": "U tensor conjugate U versus same role",
+      "status": "PASS",
+      "dimensions": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "name": "correlated ZZ versus independent local dephasing",
+      "status": "PASS",
+      "shared_rank": 1,
+      "shared_purity": "1",
+      "independent_rank": 2,
+      "independent_purity": "1/2",
+      "equal_Bell_output_marginals": true
+    }
+  ],
+  "scope": "Exact finite cases and constructive charge-rank bounds for n=2..12. Not a formal proof of universal CPTP classification or the continuity argument."
+}

@@ -1,6 +1,6 @@
 # 1009—1043轮：条件生成链与剩余自由
 
-> 本阶段已归档至1043轮。下文的历史轮次与命令保留原时点语义；冻结脚本统一通过 `scripts/run_research_closed.py --script archive_1009_1043/1043/verify_round1043.py` 只读复算。[阶段论文](../条件生成链与物理选择的剩余自由_阶段论文.md) · [下一阶段准备](../archive_1044_/README.md) · [目录迁移及核验](../_migration/closure_1009_1043_20261008/README.md)。此顶部说明优先于下文旧轮次的“当前下一项”。
+> 本阶段已归档至1043轮。下文的历史轮次与命令保留原时点语义；冻结脚本统一通过 `scripts/run_research_closed.py --script archive_1009_1043/1043/verify_round1043.py` 只读复算。[阶段论文](../条件生成链与物理选择的剩余自由_阶段论文.md) · [下一阶段准备](../archive_1044_1045/README.md) · [目录迁移及核验](../_migration/closure_1009_1043_20261008/README.md)。此顶部说明优先于下文旧轮次的“当前下一项”。
 
 [研究总目录](../README.md) · [研究方向](../research_direction.md) · [研究状态](../RESEARCH_STATE.md) · [文件索引](文件索引.md)
 

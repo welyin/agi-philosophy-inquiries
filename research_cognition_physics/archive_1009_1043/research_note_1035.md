@@ -8,7 +8,9 @@
 
 在开放新增N的超荷后，有无限整数族
 
-$$\boxed{Y_k=Y_{\rm SM}+3k(B-L),\quad k\in\mathbb Z}$$
+$$
+\boxed{Y_k=Y_{\rm SM}+3k(B-L),\quad k\in\mathbb Z}
+$$
 
 能同时通过所列局部反常、纯Spin-Z4检测、内部G6表示完备与满秩Dirac质量。这不是全部认知原则或全部混合全局反常下的反模型；它精确定位了现有这些检测仍未关闭的分叉。
 
@@ -34,7 +36,9 @@ X_k=5(B−L)−4Y_k=X₀−4kb，所以48个左手Weyl分量仍全为Z4荷1，�
 
 表示完备需要实际构造：菜单含
 
-$$(u^c)^\dagger\otimes d^c\supset(1,1)_6.$$
+$$
+(u^c)^\dagger\otimes d^c\supset(1,1)_6.
+$$
 
 因此即使eᶜ不再是纯荷6，也可复用1032最高权词并用这个单态或其共轭补齐任意允许荷。每个内部G6不可约表示均来自有限词；构造没有预测其物理制备成本。完整证明见[解析稿§1—4](1035/drafts/joint_selection_derivation.md)。
 

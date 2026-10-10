@@ -12,10 +12,10 @@
 
 令 q=√(1−η²)，f_s(y)=(1+sη cos y)/2，并定义角变换 ψ_s：
 
-\[
+$$
 n_{\psi_s(y)}=
 \frac{(\cos y+s\eta,\ q\sin y)}{1+s\eta\cos y}.
-\]
+$$
 
 该向量长度为 1。若对每个输出 y、结果 s，输入角的反向条件分布具有均值 αn_ψ，就能得到所需的整个仿射输出编码。
 
@@ -25,37 +25,37 @@ n_{\psi_s(y)}=
 
 先从均匀 y 以权重 f_s(y) 混合，并推到 ψ。由于
 
-\[
+$$
 \frac{d\psi_s}{dy}=\frac q{1+s\eta\cos y},
-\]
+$$
 
 得到相对于均匀角测度 dψ/(2π) 的归一化密度
 
-\[
+$$
 R_\eta(\psi)=\frac{q^3}{2}
 \left[(1-\eta\cos\psi)^{-2}+(1+\eta\cos\psi)^{-2}\right].
-\]
+$$
 
 它是 π 周期函数，平均为 1，所有一阶谐波为零。令 g=P_α*R_η，卷积使用均匀角测度；于是 g−1 同样没有零阶和一阶谐波。
 
 可避免重复数值积分：取 t=η/(1+q)、r=(αt)²，由几何级数得
 
-\[
+$$
 R_\eta(\psi)=1+2\sum_{k\ge1}t^{2k}(1+2kq)\cos(2k\psi),
-\]
+$$
 
-\[
+$$
 g(x)-1=2\operatorname{Re}\left[\frac z{1-z}+\frac{2qz}{(1-z)^2}\right],
 \qquad z=re^{2ix}.
-\]
+$$
 
 系数均非负，所以其最大值恰为
 
-\[
+$$
 C(\eta):=\max_x[g(x)-1]
 =2\left[\frac r{1-r}+\frac{2qr}{(1-r)^2}\right]
 =\frac32\alpha^2\eta^2+O(\eta^4).
-\]
+$$
 
 质量偏差从二阶开始，这是它比旧加性核更有余量的原因。
 
@@ -63,10 +63,10 @@ C(\eta):=\max_x[g(x)-1]
 
 定义结果核，密度相对于输出角 dy：
 
-\[
+$$
 \boxed{K_s(y\mid x)=\frac{f_s(y)}{2\pi}
 \left[P_\alpha(x-\psi_s(y))-(g(x)-1)\right]}.
-\]
+$$
 
 ### 非负性
 
@@ -74,20 +74,20 @@ C(\eta):=\max_x[g(x)-1]
 
 在 η₀=59/1000，取有理数
 
-\[
+$$
 \alpha_U=95/96+1/30720,\quad
 q_L=1-\eta_0^2/2-\eta_0^4/2,\quad
 r_U=\left(\frac{\alpha_U\eta_0}{1+q_L}\right)^2.
-\]
+$$
 
 对所有 η≤η₀，α≤α_U、q≥q_L、r≤r_U、q≤1。因此
 
-\[
+$$
 p_{\min}-C(\eta)\ge
 \frac{1-\alpha_U}{1+\alpha_U}
 -\frac{2r_U}{1-r_U}-\frac{4r_U}{(1-r_U)^2}
 >0.00008929>0.
-\]
+$$
 
 全部计算可用精确分数。对 η₀ 本身，解析公式余量约 0.0000953005。
 
@@ -97,19 +97,19 @@ p_{\min}-C(\eta)\ge
 
 对固定 x，未补偿部分对 s,y 求和恰为 g(x)。补偿项乘的 f_s(y)/(2π) 对 s,y 积分为 1，因此
 
-\[
+$$
 \sum_s\int K_s(y\mid x)dy=g(x)-(g(x)-1)=1.
-\]
+$$
 
 ### 整个条件输出
 
 g−1 的零阶、一阶矩为零，不影响 F_z 的积分；Poisson 核的一阶矩为 αn_ψ。所以
 
-\[
+$$
 \int K_s(y\mid x)F_z(x)dx
 =\frac{f_s(y)}{2\pi}[w+u\cos\psi_s(y)+v\sin\psi_s(y)]
 =F_{A_sz}(y).
-\]
+$$
 
 这是密度函数恒等式。将两个角同时减去读取方向 θ，即得任意方向核。再按分支归纳，可保持全部有限自适应协议和后选择准备的唯一编码。
 

@@ -16,7 +16,7 @@
 
 ## 2. 解析接口：体积补足共形尺度
 
-固定共形代表为\(\bar g\)，未知度量为\(g=\Omega^2\bar g\)，维数为d，给定物理体积形式\(dV=w(x)d^dx\)。行列式缩放立即得到：
+固定共形代表为$\bar g$，未知度量为$g=\Omega^2\bar g$，维数为d，给定物理体积形式$dV=w(x)d^dx$。行列式缩放立即得到：
 
 $$
 \sqrt{-\det g}=\Omega^d\sqrt{-\det\bar g},\qquad
@@ -31,7 +31,7 @@ $$
 
 ## 3. 同一因果序，平直与非平直两个背景
 
-在相同坐标域\(\eta<0\)上比较：
+在相同坐标域$\eta<0$上比较：
 
 $$
 g_0=-d\eta^2+d\mathbf x^2,\qquad
@@ -42,7 +42,7 @@ $$
 
 第二个是de Sitter时空的平直切片共形坐标片。它是选定的解析校准对象，H不是由本项目计算出来的宇宙膨胀率。两个背景的时间取向相同，正共形因子保持每个切向量的类时、类光、类空分类，也保持同一域内的因果可达关系。
 
-取曲率约定\(R_{\mu\nu}=\partial_\lambda\Gamma^\lambda_{\mu\nu}-\partial_\nu\Gamma^\lambda_{\mu\lambda}+\Gamma^\lambda_{\mu\nu}\Gamma^\sigma_{\lambda\sigma}-\Gamma^\sigma_{\mu\lambda}\Gamma^\lambda_{\nu\sigma}\)。对一般均匀平直切片\(-N(t)^2dt^2+A(t)^2d\mathbf x^2\)，由联络缩并：
+取曲率约定$R_{\mu\nu}=\partial_\lambda\Gamma^\lambda_{\mu\nu}-\partial_\nu\Gamma^\lambda_{\mu\lambda}+\Gamma^\lambda_{\mu\nu}\Gamma^\sigma_{\lambda\sigma}-\Gamma^\sigma_{\mu\lambda}\Gamma^\lambda_{\nu\sigma}$。对一般均匀平直切片$-N(t)^2dt^2+A(t)^2d\mathbf x^2$，由联络缩并：
 
 $$
 R=6\left[\frac{A''}{AN^2}+\frac{(A')^2}{A^2N^2}-\frac{A'N'}{AN^3}\right],
@@ -50,11 +50,11 @@ R=6\left[\frac{A''}{AN^2}+\frac{(A')^2}{A^2N^2}-\frac{A'N'}{AN^3}\right],
 \tag{3}
 $$
 
-代码独立组装联络及其导数，再缩并得到Ricci张量与标量；同时核对\(R_{\mu\nu}=3H^2g_{\mu\nu}\)。R＝0与R≠0证明两者的差别不能只靠坐标改名消去。该张量关系是所选背景的几何恒等式，未使用物质方程来决定背景，也不记为导出了Einstein方程。
+代码独立组装联络及其导数，再缩并得到Ricci张量与标量；同时核对$R_{\mu\nu}=3H^2g_{\mu\nu}$。R＝0与R≠0证明两者的差别不能只靠坐标改名消去。该张量关系是所选背景的几何恒等式，未使用物质方程来决定背景，也不记为导出了Einstein方程。
 
 ## 4. 改坐标的正反对照
 
-作\(z=-\log(-\eta)\)，即\(\eta=-e^{-z}\)，得到：
+作$z=-\log(-\eta)$，即$\eta=-e^{-z}$，得到：
 
 $$
 \bar g_z=-e^{-2z}dz^2+d\mathbf x^2,\qquad

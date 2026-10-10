@@ -18,7 +18,9 @@
 
 采用候选K_X：精确内部Z4生成元r满足r²=(-1)^F，并要求在全部相容的
 
-$$\mathrm{Spin}^{\mathbb Z_4}=(\mathrm{Spin}\times\mathbb Z_4)/\langle(-1,r^2)\rangle$$
+$$
+\mathrm{Spin}^{\mathbb Z_4}=(\mathrm{Spin}\times\mathbb Z_4)/\langle(-1,r^2)\rangle
+$$
 
 背景上无反常；本轮菜单不含其它反常流入或拓扑抵消部门。这些是新增物理要求，尚未从认知原则生成。单有一个异常的全局对称，并不自动使原普通spin理论不自洽。
 
@@ -28,11 +30,15 @@ $$\mathrm{Spin}^{\mathbb Z_4}=(\mathrm{Spin}\times\mathbb Z_4)/\langle(-1,r^2)\r
 
 用全左手字段和Q=T3+Y归一，取X=5(B−L)−4Y。SM每代15个Weyl分量均为Z4荷1；候选SM单态N=νᶜ也为荷1。若新增荷1、荷3单态数为n₊、n₋，文献定理给出的被审计反常为
 
-$$\nu=15n_g+n_+-n_-\pmod{16}.$$
+$$
+\nu=15n_g+n_+-n_-\pmod{16}.
+$$
 
 三代下消除此反常恰需
 
-$$n_+-n_-=3+16k,\qquad k\in\mathbb Z.$$
+$$
+n_+-n_-=3+16k,\qquad k\in\mathbb Z.
+$$
 
 只允许荷1时可以是3、19、35……。只有再要求新增总数最少，才唯一得到(n₊,n₋)=(3,0)。这不要求每代各分配一个，不固定味耦合，也不预测三代：任意n_g配n₊=n_g都可通过。
 
@@ -48,7 +54,9 @@ $$n_+-n_-=3+16k,\qquad k\in\mathbb Z.$$
 
 加入荷2实单态S及三个N，采用质量部门
 
-$$\mathcal L\supset-\ell^TYN-\tfrac12 S N^TyN+\mathrm{h.c.},\qquad y=y^T.$$
+$$
+\mathcal L\supset-\ell^TYN-\tfrac12 S N^TyN+\mathrm{h.c.},\qquad y=y^T.
+$$
 
 在选定非零S背景且M=Sy可逆时，低能树级消元给C₅=-YM⁻¹Yᵀ。共同块矩阵K(S)满足UᵀK(-S)U=K(S)，其中U=diag(-iI₃,iI₃)；C₅同时变号，补偿ℓℓ的变号。
 
