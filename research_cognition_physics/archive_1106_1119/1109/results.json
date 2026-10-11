@@ -1,0 +1,190 @@
+{
+  "round": 1109,
+  "status": "PASS_MOVING_CLOCK_BOUNDARY_INSTRUMENT",
+  "groups": {
+    "bare_violation": {
+      "clock_velocities": [
+        [
+          1.25,
+          0.75,
+          0.0,
+          0.0
+        ],
+        [
+          1.25,
+          -0.75,
+          0.0,
+          0.0
+        ]
+      ],
+      "delta_four_momentum": [
+        0.0,
+        1.5,
+        0.0,
+        0.0
+      ],
+      "bare_readout_commutator_norms": [
+        0.0,
+        1.5,
+        0.0,
+        0.0
+      ],
+      "energy_only_check_misses_momentum_violation": true
+    },
+    "positive_reference_and_instrument": {
+      "reference_four_momenta": [
+        [
+          2.5,
+          -1.5,
+          0.0,
+          0.0
+        ],
+        [
+          2.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          2.5,
+          1.5,
+          0.0,
+          0.0
+        ]
+      ],
+      "reference_rest_masses": [
+        2.0,
+        2.5,
+        2.0
+      ],
+      "reference_rest_internal_energies": [
+        0.0,
+        0.5,
+        0.0
+      ],
+      "lifted_effect_norm": 1.0,
+      "lifted_four_commutators": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "full_instrument_dimension": 48,
+      "instrument_four_commutators": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "full_unitarity_error": 4.440892098500626e-16
+    },
+    "clock_record": {
+      "reference_overlap_factor": 0.6666666666666667,
+      "all_input_effect_identity_error": 1.1102230246251565e-16,
+      "cases": [
+        {
+          "phase": -0.5235987755982988,
+          "plus": 0.33333333333333337,
+          "expected": 0.33333333333333337,
+          "record_disagreement": 0.0,
+          "incoherent_reference_plus": 0.4999999999999999
+        },
+        {
+          "phase": 0.0,
+          "plus": 0.4999999999999999,
+          "expected": 0.5,
+          "record_disagreement": 0.0,
+          "incoherent_reference_plus": 0.4999999999999999
+        },
+        {
+          "phase": 0.5235987755982988,
+          "plus": 0.6666666666666666,
+          "expected": 0.6666666666666666,
+          "record_disagreement": 0.0,
+          "incoherent_reference_plus": 0.4999999999999999
+        }
+      ],
+      "finite_phase_window": [
+        -1.0471975511965976,
+        1.0471975511965976
+      ],
+      "minimum_probability_slope": 0.16666666666666669,
+      "probability_to_relative_time_error": 5.999999999999999,
+      "two_phase_single_record_discrimination_error": 0.3333333333333333
+    },
+    "complete_error": {
+      "complete_output_overlap_error": 2.220446049250313e-16,
+      "minimum_complete_overlap": 0.9023689270621825,
+      "complete_isometry_difference": 0.441884765380789,
+      "analytic_complete_half_diamond": 0.4309644062711508,
+      "pure_witness_distance": 0.43096440627115107,
+      "effect_probability_error_bound": 0.16666666666666666,
+      "reference_and_both_records_kept": true
+    },
+    "recoil_and_boost": {
+      "unconditional_recoil_for_10": [
+        {
+          "component": 0,
+          "reference_gain": -4.440892098500626e-16,
+          "clock_change": -8.881784197001252e-16
+        },
+        {
+          "component": 1,
+          "reference_gain": 0.5000000000000002,
+          "clock_change": -0.5000000000000001
+        },
+        {
+          "component": 2,
+          "reference_gain": 0.0,
+          "clock_change": 0.0
+        },
+        {
+          "component": 3,
+          "reference_gain": 0.0,
+          "clock_change": 0.0
+        }
+      ],
+      "reference_energy_variance_cm": 0.0,
+      "reference_momentum_variance_cm": 1.5,
+      "reference_energy_variance_boosted": 0.84375,
+      "boosted_four_commutators": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mass_invariance_error": 0.0
+    },
+    "joint_payload_receive": {
+      "actual_payload_factor_swap_error": 0.0,
+      "complete_local_boundary_dimension": 192,
+      "payload_carrier_and_record_baseline_four_momentum": [
+        27.75,
+        -0.75,
+        0.0,
+        0.0
+      ],
+      "full_joint_four_commutators": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "all_passive_references_protected_by_factor_identity": true,
+      "incoming_port_response_implemented": false,
+      "normal_localized_preparation_implemented": false
+    }
+  },
+  "source_sha256": {
+    "archive_370_428/research_note_421.md": "becfc4c403479ece38478034d2baac9c91a4caa21e11586fd354b0fe22635b37",
+    "archive_935_955/research_note_939.md": "d7a6ce1aaf9231622999c2301732cd60d78a85ad33ea4e477ca64f8acf2d7eb3",
+    "archive_956_989/research_note_976.md": "bb1807a3e1e90170e2b8d59c8a7c5ee9a1b45490b444570bf9aedb0a57d0f5b1",
+    "archive_1106_/1108/proof.md": "a6e0a45e27da8a372e394ec46a2c1398fd30aab4f41dd1f147270cf3dfa35aa8",
+    "archive_1106_/_shared/clock_instrument_admission/README.md": "6ba288534dead58bc226721da73ba772c95093c667561b1b88b1b7dcf77474bf"
+  },
+  "code_sha256": "059a8118b6d32fd8bad8b886ad10d3770c782b45df6aa7be40dda9304d01a3ae",
+  "new_adopted_axioms": 0,
+  "scientific_calibration_increment": 0,
+  "goal_complete": false,
+  "actual_SR_common_model_complete": false
+}

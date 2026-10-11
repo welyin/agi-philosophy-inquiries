@@ -1,0 +1,111 @@
+{
+  "candidate": "fixed_925_finite_window_handoff",
+  "formal_round": null,
+  "scientific_calibration_increment": 0,
+  "numerical_groups": 3,
+  "status": "PASS_FINITE_WINDOW_ONLY",
+  "source": {
+    "path": "archive_923_934/925/record_resource_exchange.py",
+    "sha256": "0c4f388024d0f2ed5acf0904809f6f00a8cc53675fd53b3443eda48d8ede814d"
+  },
+  "group1_material_subspace": {
+    "full_single_material_dimension": 60,
+    "closed_single_material_dimension": 6,
+    "closed_joint_dimension": 72,
+    "full_joint_dimension": 7200,
+    "exact_subspace_intertwining_error": 0.0,
+    "inherited_h_formula_error": 8.881784197001252e-16,
+    "original_spectrum_tenth_grid_error": 1.2789769243681803e-13
+  },
+  "group2_handoff_and_energy": {
+    "kappa": 0.025,
+    "handoff_proper_time": 62.83185307179586,
+    "energy_commutator_error": 0.0,
+    "all_input_handoff_isometry_error": 2.831361514406625e-13,
+    "source_energy_transfer_diagonal": [
+      -0.3999999999999968,
+      -1.1000000000000076,
+      -1.9000000000000021
+    ],
+    "receiver_energy_transfer_diagonal": [
+      0.40000000000000213,
+      1.0999999999999917,
+      1.8999999999999986
+    ],
+    "transfer_operator_sum_error": 1.6754765462136313e-14,
+    "initial_contact_compression": 0.0,
+    "final_contact_compression": 3.6166137467764465e-15,
+    "contact_variance": 0.0006250000000000001,
+    "contact_variance_identity_error": 3.2526065174565133e-19,
+    "minimum_closed_block_energy": 9.575
+  },
+  "group3_finite_windows": [
+    {
+      "period_multiplier": 1,
+      "kappa": 0.025,
+      "handoff_proper_time": 62.83185307179586,
+      "continuation_proper_time": 0.1,
+      "whole_60d_h_period_error": 3.4498762729771207e-13,
+      "all_input_cross_gram_error": 9.815088784360621e-14,
+      "complete_output_isometry_distance": 0.0024999993490117047,
+      "exact_complete_half_diamond": 0.0024999973958341475,
+      "exact_receiver_half_diamond": 6.249986979177519e-06,
+      "receiver_q1_trace_distance_witness": 6.249986979507702e-06,
+      "receiver_choi_mixture_identity_error": 9.362153994237233e-14,
+      "actual_flag_failure_probability": 6.249986979511846e-06
+    },
+    {
+      "period_multiplier": 1,
+      "kappa": 0.025,
+      "handoff_proper_time": 62.83185307179586,
+      "continuation_proper_time": 3.9269908169872414,
+      "whole_60d_h_period_error": 3.4498762729771207e-13,
+      "all_input_cross_gram_error": 1.0344237626014752e-13,
+      "complete_output_isometry_distance": 0.09813534865490034,
+      "exact_complete_half_diamond": 0.0980171403295606,
+      "exact_receiver_half_diamond": 0.009607359798384776,
+      "receiver_q1_trace_distance_witness": 0.009607359798376888,
+      "receiver_choi_mixture_identity_error": 1.1213805635426018e-13,
+      "actual_flag_failure_probability": 0.00960735979838867
+    },
+    {
+      "period_multiplier": 10,
+      "kappa": 0.0025,
+      "handoff_proper_time": 628.3185307179587,
+      "continuation_proper_time": 0.1,
+      "whole_60d_h_period_error": 3.677217309227431e-12,
+      "all_input_cross_gram_error": 1.2096800264117456e-12,
+      "complete_output_isometry_distance": 0.0002500000000388167,
+      "exact_complete_half_diamond": 0.00024999999739583334,
+      "exact_receiver_half_diamond": 6.249999869791668e-08,
+      "receiver_q1_trace_distance_witness": 6.249999905651318e-08,
+      "receiver_choi_mixture_identity_error": 7.132470711385087e-13,
+      "actual_flag_failure_probability": 6.249999839891274e-08
+    },
+    {
+      "period_multiplier": 10,
+      "kappa": 0.0025,
+      "handoff_proper_time": 628.3185307179587,
+      "continuation_proper_time": 3.9269908169872414,
+      "whole_60d_h_period_error": 3.677217309227431e-12,
+      "all_input_cross_gram_error": 1.9056792359665667e-12,
+      "complete_output_isometry_distance": 0.009817437616753938,
+      "exact_complete_half_diamond": 0.009817319337149617,
+      "exact_receiver_half_diamond": 9.63797589675718e-05,
+      "receiver_q1_trace_distance_witness": 9.63797589679955e-05,
+      "receiver_choi_mixture_identity_error": 7.550246714576671e-13,
+      "actual_flag_failure_probability": 9.637975896537032e-05
+    }
+  ],
+  "scope": {
+    "arbitrary_passive_reference_protected": true,
+    "full_contact_hamiltonian_retained": true,
+    "no_postselection": true,
+    "autonomous_continuation_is_original_925_h": true,
+    "actual_fresh_input_loading_implemented": false,
+    "original_CO_meter_and_flag_readout_implemented": false,
+    "permanent_isolated_takeover_implemented": false,
+    "common_SR_model_completed": false,
+    "formal_1106_completed": false
+  }
+}

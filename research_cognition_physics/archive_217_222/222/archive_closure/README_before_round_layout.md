@@ -4,7 +4,7 @@
 
 ## 阅读入口
 
-- [新的阶段论文](../可组合认知结构与复量子状态空间_阶段论文.md)。
+- [新的阶段论文](../01_可组合认知结构与复量子状态空间_阶段论文.md)。
 - [全部222轮：结论与适用范围](ROUND_INDEX.md)。
 - [原研究索引](research_process/README.md)、[222轮最终笔记](research_process/research_note_222.md)。
 - [219轮修订稿](research_process/research_note_219.md)、[219轮原稿归档清单](research_process/history/round219_v1/archive_manifest.json)。

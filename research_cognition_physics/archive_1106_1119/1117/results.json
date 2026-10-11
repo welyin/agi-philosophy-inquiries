@@ -1,0 +1,174 @@
+{
+  "round": 1117,
+  "status": "PASS",
+  "numerical_check_groups": 6,
+  "scientific_calibration_increment": 0,
+  "new_adopted_axioms": 0,
+  "units_in_checks": "c=hbar=1",
+  "scope": {
+    "conditional_operational_position_bridge": true,
+    "PT_source_or_Lorentz_classification_reproved": false,
+    "ideal_envelope_is_one_finite_F_object": false,
+    "new_local_detector_or_full_conservative_readout_built": false,
+    "Lorentz_covariant_sharp_position_PVM_required": false,
+    "mass_preserving_readout_required_for_effective_inertia": false,
+    "all_UV_or_infinite_free_window_required": false,
+    "full_cognitive_axiom_countermodel_claimed": false
+  },
+  "groups": [
+    {
+      "id": "translation_covariance_does_not_remove_mass_mixing",
+      "status": "PASS",
+      "unitary_connection_and_translation_residual": 4.856904734204673e-18,
+      "mixed_connection_commutator_norm": 0.24599145752102425,
+      "mass_preserving_connection_commutator_norm": 0.0,
+      "centered_smearing_width": 0.4,
+      "smearing_preserves_first_moment": true,
+      "causal_local_detector_implementation_claimed": false
+    },
+    {
+      "id": "complete_first_moment_free_displacement_identity",
+      "status": "PASS",
+      "central_difference_step": 2e-05,
+      "max_independent_derivative_residual": 7.91459892549311e-11,
+      "max_connection_displacement_in_samples": 0.37297100305080083,
+      "analytic_connection_displacement_bound": 0.5,
+      "arbitrary_passive_reference_via_operator_identity": true
+    },
+    {
+      "id": "normal_packet_zero_momentum_centroid_oscillation",
+      "status": "PASS",
+      "support_half_width_each_axis": 0.2,
+      "raw_packet_norm": 0.9999999999999889,
+      "quadrature_orders": [
+        24,
+        40
+      ],
+      "quadrature_convergence_difference": 6.938893903907228e-16,
+      "matrix_expectation_vs_sine_identity_residual": 1.8041124150158794e-16,
+      "mean_momentum_norm": 2.1375067180798268e-18,
+      "finite_canonical_position_variance_each_axis": 61.685027506808474,
+      "exact_gap_lower_bound_on_support": 0.990155461089856,
+      "rows": [
+        {
+          "time": 0.0,
+          "measured_first_moment": 0.0,
+          "center_fiber_formula": 0.0,
+          "normal_packet_to_center_bound": 0.0
+        },
+        {
+          "time": 1.5707963267948966,
+          "measured_first_moment": 0.24999923215799255,
+          "center_fiber_formula": 0.25,
+          "normal_packet_to_center_bound": 0.0038659413897609188
+        },
+        {
+          "time": 3.141592653589793,
+          "measured_first_moment": 0.0010233309923109494,
+          "center_fiber_formula": 3.061616997868383e-17,
+          "normal_packet_to_center_bound": 0.0077318827795218375
+        },
+        {
+          "time": 10.0,
+          "measured_first_moment": -0.1332553765376625,
+          "center_fiber_formula": -0.13600527772234244,
+          "normal_packet_to_center_bound": 0.024611347275360074
+        },
+        {
+          "time": 50.0,
+          "measured_first_moment": -0.0810761623473626,
+          "center_fiber_formula": -0.06559371342598219,
+          "normal_packet_to_center_bound": 0.12305673637680037
+        }
+      ],
+      "normal_packet_is_not_a_sharp_momentum_eigenstate": true,
+      "centered_readout_noise_changes_resolution_not_mean": true
+    },
+    {
+      "id": "finite_window_weaker_operational_branch",
+      "status": "PASS",
+      "rows": [
+        {
+          "time": 1.5707963267948966,
+          "readout_average_speed": 0.15915445426849134,
+          "arbitrary_state_connection_bound": 0.3183098861837907
+        },
+        {
+          "time": 3.141592653589793,
+          "readout_average_speed": 0.0003257363716908439,
+          "arbitrary_state_connection_bound": 0.15915494309189535
+        },
+        {
+          "time": 10.0,
+          "readout_average_speed": -0.013325537653766251,
+          "arbitrary_state_connection_bound": 0.05
+        },
+        {
+          "time": 50.0,
+          "readout_average_speed": -0.001621523246947252,
+          "arbitrary_state_connection_bound": 0.01
+        }
+      ],
+      "conditional_example": {
+        "declared_free_window_max": 60.0,
+        "chosen_time": 50.0,
+        "assumed_endpoint_mean_bias": 0.005,
+        "assumed_mean_momentum_radius": 0.004,
+        "fixed_mass": 2.0,
+        "total_speed_error_bound": 0.0122,
+        "accuracy_budget": 0.013,
+        "is_a_detector_or_preparation_certificate": false
+      },
+      "no_infinite_time_limit_required": true
+    },
+    {
+      "id": "same_mass_in_velocity_and_low_speed_response",
+      "status": "PASS",
+      "max_exact_spectral_relation_residual": 4.440892098500626e-16,
+      "max_response_jacobian_finite_difference_residual": 6.449346941741862e-12,
+      "equal_weight_mass_mixture_speed": 0.020828271747098198,
+      "speed_using_mean_mass_instead": 0.01999600119960014,
+      "incorrect_mean_mass_speed_gap": 0.0008322705474980568,
+      "ratio_of_means_not_asserted": true
+    },
+    {
+      "id": "finite_conservative_impulse_inertia_protocol",
+      "status": "PASS",
+      "mass": 2.0,
+      "declared_momentum_transfer": [
+        0.02,
+        0.0,
+        0.0
+      ],
+      "packet_mean_velocity_change": [
+        0.009999496770910703,
+        7.347929564828026e-26,
+        -3.6940186643583894e-26
+      ],
+      "central_exact_change": [
+        0.009999500037496877,
+        0.0,
+        0.0
+      ],
+      "low_speed_linear_change": [
+        0.01,
+        0.0,
+        0.0
+      ],
+      "central_finite_impulse_error": 4.99962503123369e-07,
+      "central_finite_impulse_bound": 5.000000000000001e-07,
+      "normal_packet_error": 3.2665861734310075e-09,
+      "normal_packet_bound": 0.0011739634212569582,
+      "actual_impulse_source_and_recoil_not_constructed": true
+    }
+  ],
+  "source_sha256": {
+    "archive_1106_/1108/proof.md": "a6e0a45e27da8a372e394ec46a2c1398fd30aab4f41dd1f147270cf3dfa35aa8",
+    "archive_935_955/research_note_941.md": "a12e2dd67212a77538f850908efc6057e450d4def00dccd59aaa7cfaea346b7f",
+    "archive_956_989/research_note_971.md": "5822631c33ea0136181791dc7b97470bb19e28739e0bb60d11729f43065c7d77",
+    "archive_1009_1043/research_note_1038.md": "780fe7e4d4ef462d310e303b76f7b447e17164e070749151f44f03a15c0ce560",
+    "archive_1106_/1106/proof.md": "c50a74955d98bfd0072a84d1589d3df10cf192eaa4b1f53c7533b50ba5c1dbfe",
+    "archive_1106_/1111/proof.md": "34b0ee5dc58b22fc52b580cc47b79d6850a1ac4cb07660fbd3c688c799a57b3c",
+    "archive_1106_/1115/proof.md": "f6dcee885a1cb2e732ba234888ac633fffa290dff161a178d0b25c7fcaf40227"
+  }
+}

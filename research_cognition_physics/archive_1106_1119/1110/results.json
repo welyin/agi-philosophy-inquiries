@@ -1,0 +1,264 @@
+{
+  "schema": "research_1110_finite_box_four_momentum_v1",
+  "status": "PASS",
+  "groups_count": 7,
+  "scientific_increment": 0,
+  "scope": {
+    "ideal_fucp_axioms_remain_exact": true,
+    "finite_physical_implementations_are_approximate_on_original_system": true,
+    "full_resources_and_arbitrary_passive_reference_in_proof": true,
+    "four_momentum_conserved_exactly_by_finite_block_definition": true,
+    "local_port_preparation_and_control_permissions_are_conditional": true,
+    "does_not_close_round_1106_or_full_joint_model": true,
+    "does_not_claim_optimal_resource_cost": true
+  },
+  "groups": {
+    "01_finite_blocks_and_representation": {
+      "status": "PASS",
+      "d": 3,
+      "M": 2,
+      "mother_dimension": 192,
+      "complete_blocks": 27,
+      "residual_basis_vectors": 111,
+      "residuals": {
+        "unitarity": 6.661338147750939e-16,
+        "representation": 2.2887833992611187e-16,
+        "inverse": 0.0,
+        "residual_identity": 0.0,
+        "finite_vs_shift_isometry": 0.0
+      }
+    },
+    "02_positive_noncollinear_four_momentum": {
+      "status": "PASS",
+      "p_i": [
+        [
+          3.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          4.0,
+          1.0,
+          0.0,
+          1.0
+        ],
+        [
+          5.0,
+          0.0,
+          2.0,
+          -1.0
+        ]
+      ],
+      "q0": [
+        7.0,
+        0.5,
+        -0.5,
+        0.25
+      ],
+      "min_system_mass_squared": 9.0,
+      "min_bank_mass_squared": 48.4375,
+      "spatial_catalog_rank": 2,
+      "full_commutator_residuals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bare_U_commutator_norm_entries": [
+        1.2427798604301645,
+        0.6952771968087018,
+        1.3905543936174036,
+        1.3905543936174036
+      ]
+    },
+    "03_rectangular_full_output_error": {
+      "status": "PASS",
+      "dense_U": "DFT3 times phases and two real plane rotations",
+      "rows": [
+        {
+          "M": 2,
+          "reference_dimension": 64,
+          "isometry_rows": 192,
+          "full_output_operator_error": 1.0786919916951592,
+          "independent_gram_error": 1.0786919916951592,
+          "proved_operator_bound": 2.0,
+          "proved_half_diamond_bound": 1.0,
+          "isometry_residual": 6.661420904964077e-16,
+          "cross_gram_residual": 2.2219220086622845e-16
+        },
+        {
+          "M": 4,
+          "reference_dimension": 216,
+          "isometry_rows": 648,
+          "full_output_operator_error": 0.823864617247624,
+          "independent_gram_error": 0.8238646172476237,
+          "proved_operator_bound": 1.4142135623730951,
+          "proved_half_diamond_bound": 1.0,
+          "isometry_residual": 1.3322676816176743e-15,
+          "cross_gram_residual": 5.551572165697211e-16
+        },
+        {
+          "M": 8,
+          "reference_dimension": 1000,
+          "isometry_rows": 3000,
+          "full_output_operator_error": 0.6030071550537539,
+          "independent_gram_error": 0.6030071550537536,
+          "proved_operator_bound": 1.0,
+          "proved_half_diamond_bound": 1.0,
+          "isometry_residual": 2.2204460493679575e-15,
+          "cross_gram_residual": 1.5543159668857098e-15
+        },
+        {
+          "M": 16,
+          "reference_dimension": 5832,
+          "isometry_rows": 17496,
+          "full_output_operator_error": 0.4334387019411678,
+          "independent_gram_error": 0.43343870194116774,
+          "proved_operator_bound": 0.7071067811865476,
+          "proved_half_diamond_bound": 0.7071067811865476,
+          "isometry_residual": 2.2204460538813723e-15,
+          "cross_gram_residual": 1.776356839689473e-15
+        }
+      ],
+      "no_numerical_diamond_optimization_claimed": true
+    },
+    "04_reference_recoil_and_all_input_balance": {
+      "status": "PASS",
+      "rows": [
+        {
+          "M": 4,
+          "all_input_operator_balance_residuals": [
+            2.842177592489833e-14,
+            2.666052692970579e-15,
+            5.3290790269038026e-15,
+            1.1106119053950363e-15
+          ],
+          "probe_reference_delta_four_momentum": [
+            -0.6110696354779961,
+            -0.3235370617848994,
+            -0.287532573693122,
+            -0.17977077493833923
+          ],
+          "probe_reference_fidelity_with_initial": 0.6805543515214625,
+          "initial_reference_mean": [
+            37.0,
+            3.0,
+            4.5,
+            0.25
+          ],
+          "full_output_operator_error": 0.823864617247624
+        },
+        {
+          "M": 16,
+          "all_input_operator_balance_residuals": [
+            1.0746963300476327e-13,
+            7.549604553983104e-15,
+            2.4980414606216965e-14,
+            1.6383614698114372e-15
+          ],
+          "probe_reference_delta_four_momentum": [
+            -0.6110696354780032,
+            -0.3235370617848936,
+            -0.2875325736930989,
+            -0.17977077493833768
+          ],
+          "probe_reference_fidelity_with_initial": 0.8936773646324405,
+          "initial_reference_mean": [
+            109.0,
+            9.0,
+            16.5,
+            0.25
+          ],
+          "full_output_operator_error": 0.4334387019411678
+        }
+      ],
+      "same_nonzero_probe_recoil_at_all_M": [
+        -0.6110696354780258,
+        -0.32353706178490116,
+        -0.2875325736931238,
+        -0.17977077493833926
+      ]
+    },
+    "05_lorentz_transport_and_resource_moments": {
+      "status": "PASS",
+      "beta": 0.6,
+      "residuals": {
+        "metric": 0.0,
+        "catalog": 0.0,
+        "mass_squared": 0.0,
+        "mean_formula": 7.105427357601002e-15,
+        "covariance_formula": 1.7763568394002505e-15,
+        "mean_transport": 3.552713678800501e-15,
+        "covariance_transport": 1.7763568394002505e-15
+      },
+      "boosted_commutator_residuals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_reference_mean": [
+        25.000000000000007,
+        2.0000000000000004,
+        2.5000000000000004,
+        0.25
+      ],
+      "transported_mean": [
+        32.75000000000001,
+        21.250000000000004,
+        2.5000000000000004,
+        0.25
+      ],
+      "initial_energy_variance": 12.500000000000002,
+      "transported_energy_variance": 21.546875000000004
+    },
+    "06_stinespring_instrument_all_outputs": {
+      "status": "PASS",
+      "expanded_system_dimension": 4,
+      "M": 4,
+      "reference_dimension": 1296,
+      "fresh_input_dimension": 2,
+      "damping_parameter": 0.35,
+      "report_one_on_excited_input": 0.35,
+      "normalization_residual": 1.1102230246251565e-15,
+      "full_isometry_residual": 2.220446049250313e-16,
+      "full_output_operator_error": 0.5533985905294663,
+      "normalized_choi_half_trace_diagnostic": 2.989958859155538e-15,
+      "choi_diagnostic_is_not_a_computed_diamond_norm": true,
+      "all_input_momentum_balance_residuals": [
+        2.1316282072803006e-14,
+        6.661338147750939e-16,
+        2.220446049250313e-16,
+        6.661338147750939e-16
+      ]
+    },
+    "07_two_step_fresh_reference_composition": {
+      "status": "PASS",
+      "M_values": [
+        4,
+        5
+      ],
+      "reference_dimensions": [
+        36,
+        49
+      ],
+      "output_dimension_including_both_banks": 3528,
+      "first_bank_retained": true,
+      "node_operator_errors": [
+        0.6614378277661476,
+        0.33823123063439775
+      ],
+      "composed_operator_error": 0.7598713712476441,
+      "hybrid_bound_from_actual_node_operator_errors": 0.9996690584005453,
+      "proved_uniform_hybrid_bound": 2.679124626440447,
+      "isometry_residual": 4.440892120834714e-16,
+      "full_four_momentum_balance_residuals": [
+        7.105498630565823e-15,
+        8.888025141962708e-16,
+        4.441121550411134e-16,
+        4.441121550411134e-16
+      ]
+    }
+  }
+}

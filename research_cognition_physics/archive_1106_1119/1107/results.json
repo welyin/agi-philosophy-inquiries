@@ -1,0 +1,408 @@
+{
+  "round": 1107,
+  "status": "PASS_BOUNDED_PROTOCOL_OBSTRUCTION",
+  "groups": {
+    "reset_decompositions": {
+      "bsc_one_tenth": {
+        "T": [
+          [
+            "9/10",
+            "1/10"
+          ],
+          [
+            "1/10",
+            "9/10"
+          ]
+        ],
+        "alpha": "1/5",
+        "R": [
+          [
+            "1/2",
+            "1/2"
+          ],
+          [
+            "1/2",
+            "1/2"
+          ]
+        ],
+        "residual": [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ]
+      },
+      "biased_binary": {
+        "T": [
+          [
+            "4/5",
+            "2/5"
+          ],
+          [
+            "1/5",
+            "3/5"
+          ]
+        ],
+        "alpha": "3/5",
+        "R": [
+          [
+            "2/3",
+            "2/3"
+          ],
+          [
+            "1/3",
+            "1/3"
+          ]
+        ],
+        "residual": [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ]
+      },
+      "three_output": {
+        "T": [
+          [
+            "1/2",
+            "1/4"
+          ],
+          [
+            "1/3",
+            "1/4"
+          ],
+          [
+            "1/6",
+            "1/2"
+          ]
+        ],
+        "alpha": "2/3",
+        "R": [
+          [
+            "3/8",
+            "3/8"
+          ],
+          [
+            "3/8",
+            "3/8"
+          ],
+          [
+            "1/4",
+            "1/4"
+          ]
+        ],
+        "residual": [
+          [
+            "3/4",
+            "0"
+          ],
+          [
+            "1/4",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ]
+      },
+      "constant": {
+        "T": [
+          [
+            "2/3",
+            "2/3"
+          ],
+          [
+            "1/3",
+            "1/3"
+          ]
+        ],
+        "alpha": "1",
+        "R": [
+          [
+            "2/3",
+            "2/3"
+          ],
+          [
+            "1/3",
+            "1/3"
+          ]
+        ],
+        "residual": null
+      }
+    },
+    "finite_feedback_protocols": {
+      "protocols": 4096,
+      "all_reset_independent": 4096,
+      "convex_decomposition_checked": 4096,
+      "uses_including_return": 3,
+      "reset_weight": "1/125",
+      "maximum_classical_contrast": "4/5",
+      "minimum_average_classical_error": "1/10",
+      "scope": "fixed three-slot deterministic classical subfamily only; general quantum theorem is analytic"
+    },
+    "maximally_entangled_witness": {
+      "rows": [
+        {
+          "d": 2,
+          "sigma_cases": 10,
+          "reset_weight": "1/125",
+          "exact_effect_deficit": "3/500",
+          "mixed_identity_example_saturates_effect_and_trace_bound": true
+        },
+        {
+          "d": 3,
+          "sigma_cases": 10,
+          "reset_weight": "1/125",
+          "exact_effect_deficit": "8/1125",
+          "mixed_identity_example_saturates_effect_and_trace_bound": true
+        },
+        {
+          "d": 4,
+          "sigma_cases": 10,
+          "reset_weight": "1/125",
+          "exact_effect_deficit": "3/400",
+          "mixed_identity_example_saturates_effect_and_trace_bound": true
+        }
+      ],
+      "maximum_overlap_residual": 1.1102230246251565e-16,
+      "diamond_optimization_performed": false,
+      "note": "maximally entangled input gives a lower bound; all strategies covered by proof"
+    },
+    "old_Bell_strategy_comparison": {
+      "rows": [
+        {
+          "repeats_per_label": 1,
+          "total_uses": 2,
+          "label_error": "1/10",
+          "old_strategy_error": "19/100",
+          "all_protocols_reset_bound": "3/100",
+          "positive_remainder_choi_verified": true
+        },
+        {
+          "repeats_per_label": 3,
+          "total_uses": 6,
+          "label_error": "7/250",
+          "old_strategy_error": "3451/62500",
+          "all_protocols_reset_bound": "3/62500",
+          "positive_remainder_choi_verified": true
+        }
+      ],
+      "old_strategy_not_reoptimized": true,
+      "known_Pauli_half_diamond_formula_reused": true
+    },
+    "shared_noise_assumption_control": {
+      "marginal_bsc_error": "1/10",
+      "marginal_reset_weight": "1/5",
+      "actual_joint_kernel": [
+        [
+          "9/10",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "9/10",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "9/10",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "9/10"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1/10"
+        ],
+        [
+          "0",
+          "0",
+          "1/10",
+          "0"
+        ],
+        [
+          "0",
+          "1/10",
+          "0",
+          "0"
+        ],
+        [
+          "1/10",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "joint_common_reset_weight": "0",
+      "two_bits_exactly_recovered_with_uses": 3,
+      "independent_uses_assumption_satisfied": false,
+      "hypothetical_independent_weight": "1/125",
+      "actual_time_and_resources_certified": false
+    },
+    "finite_budget_quantifiers": {
+      "rows": [
+        {
+          "d": 2,
+          "N": 0,
+          "reset_weight": "1",
+          "necessary_error_lower_bound": "3/4"
+        },
+        {
+          "d": 2,
+          "N": 1,
+          "reset_weight": "1/5",
+          "necessary_error_lower_bound": "3/20"
+        },
+        {
+          "d": 2,
+          "N": 2,
+          "reset_weight": "1/25",
+          "necessary_error_lower_bound": "3/100"
+        },
+        {
+          "d": 2,
+          "N": 6,
+          "reset_weight": "1/15625",
+          "necessary_error_lower_bound": "3/62500"
+        },
+        {
+          "d": 2,
+          "N": 10,
+          "reset_weight": "1/9765625",
+          "necessary_error_lower_bound": "3/39062500"
+        },
+        {
+          "d": 3,
+          "N": 0,
+          "reset_weight": "1",
+          "necessary_error_lower_bound": "8/9"
+        },
+        {
+          "d": 3,
+          "N": 1,
+          "reset_weight": "1/5",
+          "necessary_error_lower_bound": "8/45"
+        },
+        {
+          "d": 3,
+          "N": 2,
+          "reset_weight": "1/25",
+          "necessary_error_lower_bound": "8/225"
+        },
+        {
+          "d": 3,
+          "N": 6,
+          "reset_weight": "1/15625",
+          "necessary_error_lower_bound": "8/140625"
+        },
+        {
+          "d": 3,
+          "N": 10,
+          "reset_weight": "1/9765625",
+          "necessary_error_lower_bound": "8/87890625"
+        },
+        {
+          "d": 4,
+          "N": 0,
+          "reset_weight": "1",
+          "necessary_error_lower_bound": "15/16"
+        },
+        {
+          "d": 4,
+          "N": 1,
+          "reset_weight": "1/5",
+          "necessary_error_lower_bound": "3/16"
+        },
+        {
+          "d": 4,
+          "N": 2,
+          "reset_weight": "1/25",
+          "necessary_error_lower_bound": "3/80"
+        },
+        {
+          "d": 4,
+          "N": 6,
+          "reset_weight": "1/15625",
+          "necessary_error_lower_bound": "3/50000"
+        },
+        {
+          "d": 4,
+          "N": 10,
+          "reset_weight": "1/9765625",
+          "necessary_error_lower_bound": "3/31250000"
+        }
+      ],
+      "thresholds": [
+        {
+          "target_error": "1/100",
+          "first_N_not_excluded_by_bound": 3,
+          "sufficiency_or_deadline_feasibility_asserted": false
+        },
+        {
+          "target_error": "1/10000",
+          "first_N_not_excluded_by_bound": 6,
+          "sufficiency_or_deadline_feasibility_asserted": false
+        }
+      ],
+      "all_finite_N_bound_positive": true,
+      "constant_full_support_boundary": [
+        {
+          "d": 2,
+          "alpha": "1",
+          "all_N_bound": "3/4",
+          "repetition_cannot_approach_identity": true
+        },
+        {
+          "d": 3,
+          "alpha": "1",
+          "all_N_bound": "8/9",
+          "repetition_cannot_approach_identity": true
+        },
+        {
+          "d": 4,
+          "alpha": "1",
+          "all_N_bound": "15/16",
+          "repetition_cannot_approach_identity": true
+        }
+      ],
+      "bsc_uniform_positive_bound_over_all_N": false,
+      "input_after_deadline_or_overhead_ignored": false,
+      "physical_N_limit_assumed_without_evidence": false
+    }
+  },
+  "source_sha256": {
+    "research_cognition_physics/archive_1086_1105/1098/proof.md": "9548a6450d5076f0483dcb69a568124a18ff037cc3f343382829422bb392f4d2",
+    "research_cognition_physics/archive_1086_1105/1098/results.json": "283b4499f4aafc93aca9674a5b34c051c51c487a4da940a5e5c53ea7e9861a78",
+    "research_cognition_physics/archive_1086_1105/_admission/after_1097_full_influence.md": "9c3fd678d3654db5e57f45bfe6efc0b236373634ac085667cdb3dfc589b74c26",
+    "research_cognition_physics/archive_1009_1043/research_note_1041.md": "75829db957b563ae8bef97671f881aae38eb199ec605e8ff4f4f464ad4625fc2",
+    "research_cognition_physics/archive_1009_1043/1041/relay_information_admission.md": "a2927303cc15efe8e206be9686640e8fb559fb3afcd884889d9345b690229ca7",
+    "research_cognition_physics/认知时空操作公理与洛伦兹运动学_阶段论文.md": "22b27ce17b4b8f193c55d2b76ae1f1febc0d4bf9365748da22ddefaaf5bf3967"
+  },
+  "code_sha256": "e8bc1b302a3dc9526e0482f41900bd864eb25a2bccc9c0c44ce410f393fe4876",
+  "new_adopted_cognitive_axioms": 0,
+  "scientific_calibration_increment": 0,
+  "empirical_data": false,
+  "full_SR_joint_countermodel": false,
+  "arbitrary_precision_excluded": false,
+  "goal_complete": false,
+  "general_quantifiers_proved_analytically": true
+}

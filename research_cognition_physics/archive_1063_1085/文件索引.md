@@ -2,7 +2,7 @@
 
 ## 正式收尾：五公理及阶段论文
 
-2026-10-10。1063—1085研究阶段封存，正式报告23份，科学校准累计3860、本阶段22组。[阶段论文](../认知操作五公理与三维关系空间_阶段论文.md)正式采用认知操作五公理CO1—CO5，并完整证明同一原实际端点空间具有光滑局部坐标且恰好三维。
+2026-10-10。1063—1085研究阶段封存，正式报告23份，科学校准累计3860、本阶段22组。[阶段论文](../03_认知操作五公理与三维关系空间_阶段论文.md)正式采用认知操作五公理CO1—CO5，并完整证明同一原实际端点空间具有光滑局部坐标且恰好三维。
 
 [采用与收尾记录](_shared/stage_paper_closure/README.md) · [独立数学审阅](_shared/stage_paper_closure/independent_math_review.md) · [独立范围审阅](_shared/stage_paper_closure/independent_scope_review.md) · [核验收据](_shared/stage_paper_closure/publication_checks.json)。本次模型公理正式采用5条，新增已证普遍认知原则0；未增加研究轮次或科学校准。
 

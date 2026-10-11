@@ -1,0 +1,267 @@
+{
+  "round": 1118,
+  "status": "PASS_CONDITIONAL_FINITE_REST_TYPE_INERTIA_BRIDGE",
+  "new_adopted_axioms": 0,
+  "scientific_calibrations": 0,
+  "check_groups": 5,
+  "units": "c=1; four-vector ordering (E,p_x,p_y,p_z)",
+  "scope": {
+    "finite_internal_rest_type_not_full_quantum_position": true,
+    "full_SO3_and_commuting_translation_generators_are_department_conditions": true,
+    "same_transport_of_four_P_and_original_CO_worldline_required": true,
+    "massive_declared_material_sector_only": true,
+    "existing_1111_effective_scattering_permission_reused": true,
+    "not_full_joint_FUCP_CO_SR_or_all_matter_completion": true,
+    "no_new_axiom_adopted": true
+  },
+  "source_sha256": {
+    "archive_1106_/1111/proof.md": "34b0ee5dc58b22fc52b580cc47b79d6850a1ac4cb07660fbd3c688c799a57b3c",
+    "archive_1106_/1111/results.json": "7e5b27990183dd54a75ce9eda35340ce79ae3d1c24b31b25dfb2064bc9d257b3",
+    "archive_1106_/1114/proof.md": "e5ce41a2f3a65ecc40a6c83f062914bdcf1db40904e0a22fddf634f0249fdb32",
+    "archive_1106_/1108/proof.md": "a6e0a45e27da8a372e394ec46a2c1398fd30aab4f41dd1f147270cf3dfa35aa8",
+    "archive_1086_1105/1105/proof.md": "8c7bb45f79cd5469bd7d0d15e457dde2c60fcef3e8b4bb1174a121e5a7558ace",
+    "archive_1086_1105/_admission/dynamic_contract_audit.md": "328481ad973a7eab6d283fb26c2d65054cfc075b4a8c27acabafc5e4e24e5d56"
+  },
+  "groups": {
+    "1_finite_rest_rotations_and_missing_conditions": {
+      "status": "PASS",
+      "rest_type_dimension": 4,
+      "rest_mass_eigenvalues": [
+        2.639444872453601,
+        2.639444872453601,
+        3.360555127546399,
+        3.360555127546399
+      ],
+      "nontrivial_spin_allowed": true,
+      "rotated_complete_H_residual": 5.261293541323903e-16,
+      "noncommuting_Pauli_vector_covariance_residual": 1.3453200592350898e-16,
+      "dropped_commutativity_counterexample_commutator_norm": 2.0,
+      "discrete_catalog_missing_rotated_direction_distance": 0.4450418679126288,
+      "finite_samples_do_not_prove_full_rotation_quantifier": true
+    },
+    "2_same_four_momentum_worldline_transport": {
+      "status": "PASS",
+      "rows": [
+        {
+          "declared_velocity": [
+            0.6,
+            0.0,
+            0.0
+          ],
+          "transported_endpoint": [
+            1.5,
+            0.8999999999999999,
+            0.0,
+            0.0
+          ],
+          "same_worldline_velocity_residual": 0.0,
+          "operator_p_minus_Ev_residual": 4.440892098500626e-16,
+          "full_internal_mass_shell_residual": 3.5606337539780155e-15,
+          "proper_interval_residual": 2.220446049250313e-16
+        },
+        {
+          "declared_velocity": [
+            0.3,
+            0.2,
+            0.1
+          ],
+          "transported_endpoint": [
+            1.293993278441261,
+            0.38819798353237833,
+            0.2587986556882522,
+            0.1293993278441261
+          ],
+          "same_worldline_velocity_residual": 0.0,
+          "operator_p_minus_Ev_residual": 1.1102230246251565e-16,
+          "full_internal_mass_shell_residual": 2.708508756651533e-15,
+          "proper_interval_residual": 4.440892098500626e-16
+        }
+      ],
+      "positive_mass_coherence_operator_identity_only": true,
+      "unknown_mass_preparation_or_acceleration_not_certified": true,
+      "reference_change_is_not_scattering": true
+    },
+    "3_actual_conservative_turn_and_recoil": {
+      "status": "PASS",
+      "source_round": 1111,
+      "source_scattering_duration": 0.39269908169872414,
+      "source_positive_window_check": true,
+      "m": 3.0,
+      "E": 5.0,
+      "gamma": 1.6666666666666667,
+      "actual_unboosted_impulses": [
+        [
+          0.0,
+          -4.0,
+          4.0,
+          0.0
+        ],
+        [
+          0.0,
+          4.0,
+          -4.0,
+          0.0
+        ]
+      ],
+      "actual_velocity_changes": [
+        [
+          -0.8,
+          0.8,
+          0.0
+        ],
+        [
+          0.8,
+          -0.8,
+          0.0
+        ]
+      ],
+      "finite_turn_p_response_residual": 0.0,
+      "source_endpoint_identity_residual": 8.005932084973442e-16,
+      "source_velocity_identity_residual": 0.0,
+      "whole_pair_conservation_residual": 0.0,
+      "boosted_pair_conservation_residual": 0.0,
+      "boosted_body_energy_transfers": [
+        -3.0,
+        3.0
+      ],
+      "boosted_rows": [
+        {
+          "body": 0,
+          "input_four_momentum": [
+            9.25,
+            8.75,
+            0.0,
+            0.0
+          ],
+          "output_four_momentum": [
+            6.25,
+            3.75,
+            4.0,
+            0.0
+          ],
+          "impulse": [
+            -3.0,
+            -5.0,
+            4.0,
+            0.0
+          ],
+          "output_event": [
+            9.093657483653908,
+            6.256194490192344,
+            1.6,
+            0.0
+          ],
+          "actual_velocity_matches_P_residual": 0.0
+        },
+        {
+          "body": 1,
+          "input_four_momentum": [
+            3.25,
+            -1.25,
+            0.0,
+            0.0
+          ],
+          "output_four_momentum": [
+            6.25,
+            3.75,
+            -4.0,
+            0.0
+          ],
+          "impulse": [
+            3.0,
+            5.0,
+            -4.0,
+            0.0
+          ],
+          "output_event": [
+            9.093657483653908,
+            6.256194490192344,
+            -1.6,
+            0.0
+          ],
+          "actual_velocity_matches_P_residual": 0.0
+        }
+      ],
+      "omitting_recoil_partner_defect": 5.656854249492381,
+      "unchanged_output_port_defect": 2.2627416997969525,
+      "new_detector_or_bare_Q_readout_not_claimed": true,
+      "old_device_experiment_not_rerun": true
+    },
+    "4_finite_low_velocity_error_bounds": {
+      "status": "PASS",
+      "rows": [
+        {
+          "speed": 0.01,
+          "momentum": 0.030001500112509377,
+          "newton_momentum_error": 1.5001125093783152e-06,
+          "uniform_momentum_error_bound": 1.511344577763623e-06,
+          "kinetic_energy": 0.00015001125093783152,
+          "newton_kinetic_error": 1.1250937831532677e-08,
+          "uniform_kinetic_error_bound": 1.1536246731625483e-08
+        },
+        {
+          "speed": 0.03,
+          "momentum": 0.0900405273580193,
+          "newton_momentum_error": 4.052735801930718e-05,
+          "uniform_momentum_error_bound": 4.0806303599617806e-05,
+          "kinetic_energy": 0.0013509119339765174,
+          "newton_kinetic_error": 9.119339765175771e-07,
+          "uniform_kinetic_error_bound": 9.34435985261664e-07
+        },
+        {
+          "speed": 0.05,
+          "momentum": 0.15018785229652765,
+          "newton_momentum_error": 0.00018785229652762414,
+          "uniform_momentum_error_bound": 0.0001889180722204529,
+          "kinetic_energy": 0.003757045930552927,
+          "newton_kinetic_error": 7.045930552926176e-06,
+          "uniform_kinetic_error_bound": 7.210154207265929e-06
+        },
+        {
+          "speed": 0.1,
+          "momentum": 0.3015113445777637,
+          "newton_momentum_error": 0.0015113445777636403,
+          "uniform_momentum_error_bound": 0.0015113445777636232,
+          "kinetic_energy": 0.015113445777636292,
+          "newton_kinetic_error": 0.00011344577763628891,
+          "uniform_kinetic_error_bound": 0.00011536246731625486
+        }
+      ],
+      "response_tensor_eigenvalues": [
+        3.015113445777636,
+        3.0151134457776365,
+        3.0455691371491276
+      ],
+      "response_tensor_spectrum_residual": 6.280369834735101e-16,
+      "uniform_speed_domain": [
+        0.0,
+        0.1
+      ],
+      "arbitrary_impulse_actuator_not_built": true
+    },
+    "5_complete_composite_energy_and_mass": {
+      "status": "PASS",
+      "actual_pair_composite_rest_mass": 10.0,
+      "bare_mass_sum": 6.0,
+      "actual_pair_internal_relative_kinetic_energy": 4.0,
+      "composite_mass_vs_total_energy_residual": 0.0,
+      "toy_complete_rest_spectrum": [
+        5.477984674554472,
+        5.819722436226801,
+        6.180277563773199,
+        6.522015325445528
+      ],
+      "complete_interaction_included_shell_residual": 1.4210854715202004e-14,
+      "declared_binding_shift_only": -0.1,
+      "binding_shift_mass_difference": [
+        -0.09999999999999964,
+        -0.09999999999999964,
+        -0.09999999999999964,
+        -0.09999999999999964
+      ],
+      "binding_shift_residual": 7.216449660063518e-16,
+      "binding_dynamics_or_stability_not_derived": true,
+      "null_sector_has_no_positive_rest_worldline_type": true
+    }
+  }
+}

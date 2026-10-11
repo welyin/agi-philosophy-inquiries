@@ -1,0 +1,111 @@
+{
+  "candidate": "finite_relational_clock_record_instrument",
+  "formal_round": null,
+  "scientific_calibration_increment": 0,
+  "numerical_groups": 3,
+  "status": "PASS_OPERATOR_AND_BOUNDARY_LEDGER_ONLY",
+  "group1_instrument": {
+    "read_generator_norm": 0.7853981633974482,
+    "copy_generator_norm": 0.5235987755982988,
+    "total_phase_readout_dimension": 16,
+    "relational_effect_energy_commutator": 0.0,
+    "readout_formula_error": 8.296904672724405e-16,
+    "unitary_error": 1.5868486242003962e-15,
+    "complete_instrument_identity_error": 7.062167112529075e-16,
+    "complete_boundary_energy_intertwining_error": 0.0
+  },
+  "group2_clock_readings_and_resources": {
+    "readout_duration": 2.0,
+    "internal_record_duration": 3.0,
+    "phase_branch": [
+      -1.0471975511965976,
+      1.0471975511965976
+    ],
+    "omega": 0.8,
+    "minimum_probability_slope": 0.2,
+    "probability_error_to_time_error_multiplier": 5.0,
+    "two_candidate_phases": [
+      -0.5235987755982988,
+      0.5235987755982988
+    ],
+    "one_record_equal_prior_discrimination_error": 0.25,
+    "initial_total_clock_energy": 0.8,
+    "initial_total_clock_energy_variance": 0.0,
+    "each_clock_energy_mean": 0.4,
+    "each_clock_energy_variance": 0.16000000000000003,
+    "clock_reference_energy_covariance": -0.16000000000000003,
+    "cases": [
+      {
+        "phase": -1.0471975511965976,
+        "reported_plus": 0.06698729810778065,
+        "analytic_plus": 0.0669872981077807,
+        "record_disagreement_probability": 3.965180362050919e-33,
+        "dephased_reference_plus": 0.5,
+        "first_contact_energy_variance": 0.5755291418042322,
+        "copying_contact_energy_variance": 0.25579072969077
+      },
+      {
+        "phase": -0.5235987755982988,
+        "reported_plus": 0.24999999999999992,
+        "analytic_plus": 0.25,
+        "record_disagreement_probability": 3.187400627565871e-33,
+        "dephased_reference_plus": 0.5,
+        "first_contact_energy_variance": 0.4626377063010634,
+        "copying_contact_energy_variance": 0.20561675835602827
+      },
+      {
+        "phase": 0.0,
+        "reported_plus": 0.49999999999999994,
+        "analytic_plus": 0.5,
+        "record_disagreement_probability": 2.1249337517105814e-33,
+        "dephased_reference_plus": 0.5,
+        "first_contact_energy_variance": 0.30842513753404227,
+        "copying_contact_energy_variance": 0.13707783890401884
+      },
+      {
+        "phase": 0.5235987755982988,
+        "reported_plus": 0.7499999999999998,
+        "analytic_plus": 0.75,
+        "record_disagreement_probability": 1.0624668758552907e-33,
+        "dephased_reference_plus": 0.5,
+        "first_contact_energy_variance": 0.15421256876702114,
+        "copying_contact_energy_variance": 0.06853891945200942
+      },
+      {
+        "phase": 1.0471975511965976,
+        "reported_plus": 0.9330127018922191,
+        "analytic_plus": 0.9330127018922193,
+        "record_disagreement_probability": 2.846871413702431e-34,
+        "dephased_reference_plus": 0.5,
+        "first_contact_energy_variance": 0.0413211332638523,
+        "copying_contact_energy_variance": 0.018364948117267698
+      }
+    ]
+  },
+  "group3_payload_and_mass_boundary": {
+    "payload_dimension": 3,
+    "all_input_kraus_completeness_error": 4.440892098500626e-16,
+    "complete_payload_energy_intertwining_error": 0.0,
+    "independently_declared_baseline_mass": 63.0,
+    "minimum_boundary_mass": 63.0,
+    "common_velocity_four_momentum_intertwining_max_error": 0.0,
+    "common_wait_relational_effect_error": 0.0,
+    "arbitrary_passive_reference_follows_from_factor_identity": true,
+    "actual_fresh_payload_loading_implemented": false,
+    "energy_of_unimplemented_trigger_or_support_not_signed_off": true
+  },
+  "source_sha256": {
+    "archive_935_955/research_note_939.md": "d7a6ce1aaf9231622999c2301732cd60d78a85ad33ea4e477ca64f8acf2d7eb3",
+    "archive_956_989/research_note_976.md": "bb1807a3e1e90170e2b8d59c8a7c5ee9a1b45490b444570bf9aedb0a57d0f5b1",
+    "archive_370_428/research_note_420.md": "425cc0c503f55776f5b3d2c607b5ae31cb89b50ccd61ca90a182e4dc9c23fff2",
+    "archive_1106_/1108/proof.md": "a6e0a45e27da8a372e394ec46a2c1398fd30aab4f41dd1f147270cf3dfa35aa8"
+  },
+  "scope": {
+    "effective_positive_duration_collision_is_an_extra_material_permission": true,
+    "autonomous_incoming_exit_trigger_not_constructed": true,
+    "complete_local_SR_experiment_not_completed": true,
+    "preparation_phase_reference_and_record_blanks_are_resources": true,
+    "no_postselection": true,
+    "no_battery_optimization": true
+  }
+}
