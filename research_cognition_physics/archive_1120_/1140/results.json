@@ -1,0 +1,117 @@
+{
+  "status": "PASS",
+  "scope": "ORIGINAL_RECEIVER_FINITE_COHERENT_COLLECTION_BOUNDARY_BRIDGE_AND_BACKGROUND_COST",
+  "frozen_sources": {
+    "1121/proof.md": "300c1a401edc2789059b7773013a12a2ad8eb225ad3d8a14dce0235a8141deb4",
+    "1126/proof.md": "06644f8cc78f2075d62b67dee961a4064208c5226047405652201c337b5f3a76",
+    "1128/proof.md": "fc9963b8f77d0a60e2233acbcc68e02e583af345a5653d1d4431ea619be0fcd2",
+    "1133/proof.md": "476dc1d1258b819a72e2650684e1096cfa800d7c7c885c77cc1d41a07ebbde8d",
+    "1137/proof.md": "b665fe6ac4a8f326b5289b93321206666c1c24d5684e7277d5b683f0ebad1beb",
+    "1139/acceptance.json": "9e32524e342b65798f0edc81a4465bb82a92341531adbfbcba7509bc8f7d5c81",
+    "_shared/after1139_collection_admission.md": "8fb7011e1bc4d08a78cdc7a891eeabefa302bedbac041d944fe4d0fb11268b86"
+  },
+  "numerical_check_groups": 3,
+  "analytic": {
+    "grid_side": 257,
+    "cell_modes": 16974593,
+    "rails": 2,
+    "collection_events": 16974592,
+    "return_events": 16974592,
+    "central_events": 2,
+    "total_events": 33949186,
+    "tree_depth": 384,
+    "fractions": {
+      "cell_side": "1/32",
+      "corridor_width": "1/1000000000000000000000",
+      "volume_coefficient": "25560963/256",
+      "linfty_squared_upper": "3243601/24",
+      "lost_L2_squared_upper": "1717/125000000000000",
+      "mode_norm_error_upper": "1/100000",
+      "full_CP_unitary_error_upper": "11/175000",
+      "blank_pointer_isometry_error_upper": "3/50000",
+      "slot": "3/32",
+      "record_time_after_new_start": "50923779/32",
+      "complete_time_after_new_start": "50923779/16"
+    },
+    "schedule_checks": {
+      "3": {
+        "vertices": 27,
+        "collection_events": 26,
+        "tree_depth": 3
+      },
+      "5": {
+        "vertices": 125,
+        "collection_events": 124,
+        "tree_depth": 6
+      },
+      "7": {
+        "vertices": 343,
+        "collection_events": 342,
+        "tree_depth": 9
+      }
+    },
+    "old_deadline_preserved": false,
+    "actual_clock_schedule_certified": false,
+    "continuous_microcausality_claimed": false
+  },
+  "CAR": {
+    "full_Fock_dimension": 256,
+    "pointer_dimension": 2,
+    "exact_compilation_and_error": [
+      {
+        "setting": "Z",
+        "tail": 1e-05,
+        "mode_error": 1.0000000000125001e-05,
+        "complete_CP_unitary_error": 1.8477590651693784e-05,
+        "blank_P_isometry_error": 1.7808910341080966e-05,
+        "compiler_residual": 5.691395168983473e-15
+      },
+      {
+        "setting": "Z",
+        "tail": 0.02,
+        "mode_error": 0.02000100017504126,
+        "complete_CP_unitary_error": 0.03695441589203197,
+        "blank_P_isometry_error": 0.03561743531532713,
+        "compiler_residual": 5.691395168983473e-15
+      },
+      {
+        "setting": "X",
+        "tail": 1e-05,
+        "mode_error": 1.0000000000125001e-05,
+        "complete_CP_unitary_error": 1.8477590651600403e-05,
+        "blank_P_isometry_error": 1.7808910341065533e-05,
+        "compiler_residual": 6.2465139373595436e-15
+      },
+      {
+        "setting": "X",
+        "tail": 0.02,
+        "mode_error": 0.02000100017504126,
+        "complete_CP_unitary_error": 0.03695441589203178,
+        "blank_P_isometry_error": 0.03561743531532692,
+        "compiler_residual": 6.2465139373595436e-15
+      }
+    ],
+    "position_dephasing_g_occupation": 0.5000000000000001,
+    "scope": "Full finite CAR algebra diagnostic; no truncation of the original continuous sea in the proof."
+  },
+  "background": {
+    "mode_error": 0.0,
+    "time": 1.5707963267948966,
+    "old_bminus_probability": 0.9999999999999991,
+    "new_bminus_probability": 0.0,
+    "background_state_overlap": 1.9821445675202303e-16,
+    "single_particle_holding_difference_norm": 1.0,
+    "full_CAR_holding_difference_norm": 1.0000000000000004,
+    "gate_energy_defect_identity_residual": 7.251708323889042e-16,
+    "normal_sea_gate_work": 0.47031562543102273,
+    "normal_order_scalar": 0.4703156254310231,
+    "scope": "Finite normal CAR counterexample to a universal background-error inference; not a bound on the original fixed input at the new long time.",
+    "autonomous_controller_work_proved": false,
+    "total_four_momentum_conservation_proved": false
+  },
+  "new_axioms": 0,
+  "science_increment": 0,
+  "old_complete_dynamics_localization_claimed": false,
+  "actual_Y_clock_and_source_implementation_claimed": false,
+  "stage_completed": false
+}

@@ -1,0 +1,90 @@
+{
+  "round": 1122,
+  "scope": "Finite positive-energy Fock algebra calibration; not a continuum Dirac truncation",
+  "groups_passed": 4,
+  "continuum_obligations": "Compact support, Dirac covariance I/2, and e_L<0 are analytic in proof.md",
+  "code_and_addressability": {
+    "single_empty_probability": 0.25,
+    "double_empty_probability": 0.06250000000000001,
+    "max_isometry_residual": 6.377745716588144e-16,
+    "max_local_gate_residual": 0.0,
+    "max_global_gate_residual": 0.0,
+    "entangled_reference_residual": 0.0,
+    "double_code_fixed_even_parity": true
+  },
+  "full_fock_propagation": {
+    "times": [
+      0.13,
+      0.37,
+      0.81
+    ],
+    "max_formula_residual": 1.831868018962444e-15,
+    "max_same_flavour_identity_residual": 1.1102230246251565e-16,
+    "max_determinant_vs_creation_residual": 5.551115123125783e-17,
+    "compressed_one_particle_nonunitarity": [
+      0.026614666894727988,
+      0.19235431327183883,
+      0.5439530612741936
+    ],
+    "wrong_exchange_sign_defects": [
+      0.00019358827696136323,
+      0.015520709946318323,
+      0.2832443341535187
+    ],
+    "wrong_absolute_square_defects": [
+      1.7970668890269392,
+      1.7816059017908115,
+      0.16920984756758373
+    ]
+  },
+  "conservation_and_spectrum": {
+    "one_particle_energy_eigenvalues": [
+      1.223694538575979,
+      2.1999999999999997,
+      4.576305461424021
+    ],
+    "global_energy_commutator_residual": 0.0,
+    "max_single_code_scalar_residual": 1.3738309013483032e-16,
+    "max_double_global_rotation_commutator": 2.8031757299712627e-16,
+    "selective_rotation_commutators": [
+      6.309368829846374e-05,
+      0.005058461446620113,
+      0.09231411122588615
+    ],
+    "max_exact_commutator_norm_formula_residual": 4.027811070783649e-17,
+    "scalar_theta_pi_exception_residual": 0.0,
+    "trace_kernel_at_first_time_abs": 3.635141627804812
+  },
+  "quartic_exchange": {
+    "finite_model_e0": 2.0,
+    "finite_model_eL": -0.2,
+    "H1_squared_fg_abs": 8.583245565579249e-17,
+    "expected_B_over_t4": -0.16000000000000003,
+    "samples": [
+      {
+        "t": 0.02,
+        "B_over_t4_real": -0.15961738397245903,
+        "B_over_t4_imag": -0.01409566495813685,
+        "error_from_leading_coefficient": 0.01410085691142841
+      },
+      {
+        "t": 0.01,
+        "B_over_t4_real": -0.15990472633666292,
+        "B_over_t4_imag": -0.007041968088722077,
+        "error_from_leading_coefficient": 0.007042612557389888
+      },
+      {
+        "t": 0.005,
+        "B_over_t4_real": -0.1599762053936409,
+        "B_over_t4_imag": -0.0035202463227580003,
+        "error_from_leading_coefficient": 0.0035203267399749995
+      },
+      {
+        "t": 0.0025,
+        "B_over_t4_real": -0.15999405283735493,
+        "B_over_t4_imag": -0.0017600308000607222,
+        "error_from_leading_coefficient": 0.0017600408477947075
+      }
+    ]
+  }
+}

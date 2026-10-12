@@ -1,0 +1,121 @@
+{
+  "round": 1123,
+  "new_axioms": 0,
+  "scientific_calibration": 0,
+  "tolerance": 3e-11,
+  "physical_mode_diagnostic": {
+    "radius": 2.0,
+    "mass": 0.7,
+    "sigma_space": 0.9574271077563381,
+    "sigma_time": 1.6583123951777,
+    "profile": "Reused 1121 H0^1 intersect H^2 radial diagnostic; smooth H1 approximation required."
+  },
+  "groups": {
+    "full_CAR_closure": {
+      "hilbert_dimension": 64,
+      "TP_residual": 4.457288468835922e-16,
+      "Kraus_number_commutator": 0.0,
+      "cases": [
+        {
+          "label": "time_Dirac_jet",
+          "mu": 0.7,
+          "sigma": 1.6583123951777,
+          "source_norm": 3.3166247903554,
+          "actual_error": 1.3266499161421603,
+          "bound": 1.32664991614216,
+          "exterior_leakage_norm": 0.37,
+          "exterior_commutator_residual": 0.0,
+          "closure_residual": 9.8202072370021e-16,
+          "norm_residuals": [
+            0.0,
+            4.440892098500626e-16,
+            2.220446049250313e-16
+          ]
+        },
+        {
+          "label": "space_Dirac_jet",
+          "mu": 0.0,
+          "sigma": 0.9574271077563381,
+          "source_norm": 1.9148542155126762,
+          "actual_error": 0.7659416862050707,
+          "bound": 0.7659416862050705,
+          "exterior_leakage_norm": 0.37,
+          "exterior_commutator_residual": 0.0,
+          "closure_residual": 8.95919334971589e-16,
+          "norm_residuals": [
+            0.0,
+            6.661338147750939e-16,
+            2.220446049250313e-16
+          ]
+        }
+      ]
+    },
+    "sharp_constant_and_invisible_code": {
+      "fixed_theta": 1.0471975511965976,
+      "mixture_probability": 0.2,
+      "half_diamond_exact": 0.2,
+      "half_diamond_justification": "Convex upper bound eta plus explicit orthogonal-output witness.",
+      "reference_half_trace_witness": 0.2,
+      "reference_total_parity_residual": 0.0,
+      "reference_output_overlap": 1.1102230246251565e-16,
+      "N_F_one_code_matrix_unit_errors": [
+        1.387778780781446e-16,
+        1.387778780781446e-16,
+        1.387778780781446e-16,
+        1.387778780781446e-16
+      ],
+      "full_source_error": 0.7659416862050707,
+      "linear_bound": 0.7659416862050705,
+      "source_formula_residual": 2.220446049250313e-16
+    },
+    "expanded_output_code_certificate": {
+      "code_dimension": 2,
+      "retained_output_modes": 4,
+      "total_even_parity_residual": 1.5461201737183445e-16,
+      "half_diamond_exact": 0.2,
+      "endpoint_half_trace_errors": [
+        0.20000000000000007,
+        0.2
+      ],
+      "endpoint_source_errors": [
+        -0.7659416862050706,
+        0.7659416862050705
+      ],
+      "compressed_source_error_norm": 0.7659416862050706,
+      "bound": 0.7659416862050705,
+      "interpretation": "Finite CAR contract demonstration, not a certified old preparation or readout."
+    },
+    "same_field_hidden_mode": {
+      "visible_CAR_matrix_units_checked": 16,
+      "visible_endpoint_max_residual": 3.740168272603356e-16,
+      "fixed_angle": 1.0471975511965976,
+      "cases": [
+        {
+          "relative_scale": 1.0,
+          "sigma": 0.9574271077563381,
+          "hidden_defect_norm": 1.9148542155126762,
+          "formula": 1.914854215512676
+        },
+        {
+          "relative_scale": 3.0,
+          "sigma": 2.8722813232690143,
+          "hidden_defect_norm": 5.744562646538029,
+          "formula": 5.744562646538028
+        }
+      ],
+      "defect_ratio": 3.0,
+      "interpretation": "Actual same-ball smooth scaling is proved analytically; these matrices test its CAR identity."
+    }
+  },
+  "analytic_only": [
+    "Actual positive-energy Dirac representation and unbounded physical generator domains.",
+    "Strong commutation of the residual with the entire local CAR algebra.",
+    "Arbitrary passive references and representation multiplicity.",
+    "All smooth same-ball hidden modes and unbounded spatial scaling family."
+  ],
+  "not_certified": [
+    "Actual finite-duration controller, recoil resource, or point Hamiltonian implementation.",
+    "Old preparation/readout permissions for all expanded modes.",
+    "Local stress, source Hessian, higher energy moments, or complete four-momentum distributions."
+  ]
+}

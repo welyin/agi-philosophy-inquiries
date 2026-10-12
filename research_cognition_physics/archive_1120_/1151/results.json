@@ -1,0 +1,82 @@
+{
+  "round": 1151,
+  "all_passed": true,
+  "numerical_check_groups": 3,
+  "groups": [
+    {
+      "name": "original_parameter_and_time_window_bounds",
+      "passed": true,
+      "no_boost_full_state_error": {
+        "fraction": "2039999/19999500000",
+        "value": 0.00010200250006250156
+      },
+      "clock_time_over_original_T0_upper": {
+        "fraction": "9/479993600",
+        "value": 1.875025000333338e-08
+      },
+      "ideal_tester_probability_gap_lower": {
+        "fraction": "9997710001/19999500000",
+        "value": 0.4998979974999375
+      },
+      "gap_with_each_test_error_1e_minus3": {
+        "fraction": "9957711001/19999500000",
+        "value": 0.4978979974999375
+      },
+      "original_coupling_mass_inertia_and_packet_unchanged": true
+    },
+    {
+      "name": "full_spin_CAR_compression_and_single_call_tester",
+      "passed": true,
+      "full_Fock_dimension": 16,
+      "code_dimension": 4,
+      "reference_dimension": 3,
+      "code_loop_iX_residual": 1.818279725175902e-15,
+      "code_Hermitian_part_norm": 1.3877787807814457e-15,
+      "one_call_probability": 0.4999999999999998,
+      "probability_formula_residual": 4.440892098500626e-16,
+      "full_Fock_Hermitian_part_norm": 1.0000000000000007,
+      "statement_restricted_to_declared_one_particle_code": true,
+      "controlled_candidate_or_inverse_required": false,
+      "physical_sea_simulation": false
+    },
+    {
+      "name": "normal_continuous_boost_and_lab_tester_diagnostic",
+      "passed": true,
+      "masses": [
+        50.0,
+        50.3
+      ],
+      "momentum_standard_deviation": 0.3,
+      "finite_translation": 13.96263401595477,
+      "comparison_time": 10.471975511966077,
+      "rows": [
+        {
+          "points": 15001,
+          "norm_residual": 8.881784197001252e-16,
+          "transported_probability": 0.5000000011845773,
+          "rest_clock_probability": 0.5000000011845775,
+          "Lorentz_pullback_probability_residual": 2.220446049250313e-16,
+          "bare_probability": 0.9999999999999997,
+          "probability_gap": 0.49999999881542234
+        },
+        {
+          "points": 30001,
+          "norm_residual": 4.440892098500626e-16,
+          "transported_probability": 0.5000000011845773,
+          "rest_clock_probability": 0.5000000011845775,
+          "Lorentz_pullback_probability_residual": 2.220446049250313e-16,
+          "bare_probability": 0.9999999999999998,
+          "probability_gap": 0.49999999881542245
+        }
+      ],
+      "physical_1148_parameters": false,
+      "full_interacting_field_or_domain_simulation": false
+    }
+  ],
+  "frozen_source_count": 8,
+  "new_adopted_axioms": 0,
+  "scientific_calibration_increment": 0,
+  "new_controlled_translation_menu_is_input": true,
+  "prior_narrow_endpoint_contract_refuted": false,
+  "goal_complete": false
+}

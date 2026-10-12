@@ -1,0 +1,75 @@
+{
+  "round": 1150,
+  "all_passed": true,
+  "numerical_check_groups": 3,
+  "groups": [
+    {
+      "kind": "actual_positive_negative_ground_scalar_blocks",
+      "passed": true,
+      "rows": [
+        {
+          "radius": 0.13,
+          "scalar_block_residual": 5.92828141283272e-19,
+          "pair_block_norm": 4.9727026034961765e-18
+        },
+        {
+          "radius": 0.4,
+          "scalar_block_residual": 5.557263922731734e-17,
+          "pair_block_norm": 1.6007549153938552e-18
+        },
+        {
+          "radius": 0.81,
+          "scalar_block_residual": 1.5402859614939105e-17,
+          "pair_block_norm": 9.312286939616726e-18
+        },
+        {
+          "radius": 0.97,
+          "scalar_block_residual": 1.4683185084751698e-17,
+          "pair_block_norm": 1.6869971440124846e-18
+        }
+      ],
+      "MIT_boundary_residual": 1.5700924586837752e-16,
+      "pair_vertices_vanish": true,
+      "strict_subball_locality_claimed": false
+    },
+    {
+      "kind": "fixed_original_coupling_and_duration_budget",
+      "passed": true,
+      "lambda_upper": 1.6666666666666667e-06,
+      "a_upper": 0.15,
+      "density_L2_squared_upper": 11,
+      "new_cloud_upper": 2.3452078799117144e-06,
+      "old_cloud_upper": 0.00010000250006250156,
+      "original_time_phase_upper": 1.5707963425028602e-05,
+      "unperturbed_comparison_upper": 0.00011805567136744187,
+      "one_insertion_history_upper": 0.00022040337930985516,
+      "matching_Q_norm_upper": 15.99,
+      "energy_lower_shift_coefficient_upper": 31.83,
+      "noncommuting_rotation_norm": 0.7071067811865476,
+      "original_T0_reselected": false
+    },
+    {
+      "kind": "noncommuting_history_and_complete_kick_work_identity_diagnostic",
+      "passed": true,
+      "oscillator_cutoff": 10,
+      "reference_dimension": 2,
+      "unknown_input_seed": 1150,
+      "total_time": 1.6,
+      "pulse_time": 0.7,
+      "physical_continuum_parameters": false,
+      "field_reset_at_pulse": false,
+      "coherent_vs_spectral_full_state_residual": 2.2191211695798922e-11,
+      "pulse_work": 0.004045487951199078,
+      "material_including_matching_work": -0.0027088633339687473,
+      "interaction_storage_work": 0.0067543512851679244,
+      "free_field_jump": 0.0,
+      "complete_work_residual": 9.8879238130678e-17,
+      "post_pulse_energy_conservation_residual": 0.0
+    }
+  ],
+  "frozen_source_count": 6,
+  "scientific_calibration_increment": 0,
+  "new_adopted_axioms": 0,
+  "full_continuum_simulation": false,
+  "goal_complete": false
+}

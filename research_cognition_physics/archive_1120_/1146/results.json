@@ -1,0 +1,272 @@
+{
+  "round": 1146,
+  "status": "PASS",
+  "check_groups": 5,
+  "frozen_sources_checked": 11,
+  "packet_results_match": true,
+  "packet_groups": [
+    {
+      "pass": true,
+      "kind": "exact_rational_certificate_plus_independent_envelope_diagnostic",
+      "fixed_inputs": {
+        "m": 10000000000,
+        "p0_over_m": "3/4",
+        "delta": "1/1000",
+        "T": 1,
+        "epsilon": "1/10^16",
+        "lambda": "pi/2",
+        "kappa1_upper": 20,
+        "kappa2_used_upper": 1000,
+        "kappa2_analytic_stronger_upper": 600
+      },
+      "qsecond_sup_upper": {
+        "numerator": 2097,
+        "denominator": 64,
+        "float": 32.765625
+      },
+      "packet_upper": {
+        "numerator": 62314520147,
+        "denominator": 980000000000000000,
+        "float": 6.358624504795918e-08
+      },
+      "kernel_upper": {
+        "numerator": 4125000011,
+        "denominator": 1750000000000000,
+        "float": 2.3571428634285716e-06
+      },
+      "packet_plus_kernel_upper": {
+        "numerator": 2372314526307,
+        "denominator": 980000000000000000,
+        "float": 2.4207291084765307e-06
+      },
+      "early_packet_upper": {
+        "numerator": 1160048003,
+        "denominator": 80000000000000000,
+        "float": 1.45006000375e-08
+      },
+      "initial_negative_frequency_amplitude_upper": {
+        "numerator": 20001,
+        "denominator": 20000000000000,
+        "float": 1.00005e-09
+      },
+      "two_mode_empty_probability_lower": {
+        "numerator": 199999999999999999599959999,
+        "denominator": 200000000000000000000000000,
+        "float": 1.0
+      },
+      "diagnostic_only": {
+        "quadrature_points": 256,
+        "q_norm_squared": 0.13308612084499433,
+        "kappa1": 3.0385567945482457,
+        "kappa2": 17.350905089291974,
+        "integration_by_parts_residual": 1.3322676295501878e-15,
+        "F_maximum": 5.210813029040051,
+        "F_squared_integral": 3.9250822436308783,
+        "F_total_variation": 10.421626058080102
+      }
+    },
+    {
+      "pass": true,
+      "kind": "full_two_band_8x8_noncommuting_exact_time_evolution_diagnostic",
+      "diagnostic_mass": 20.0,
+      "production_mass_not_floating_point_diagonalized": true,
+      "fixed_momentum_geometry_samples": [
+        {
+          "momentum": [
+            0.0,
+            0.0,
+            15.0
+          ],
+          "projector_error": 0.0,
+          "projector_lipschitz_bound": 0.0,
+          "retained_negative_band_amplitude": 4.954167655244382e-17,
+          "linear_dispersion_remainder": 0.0,
+          "hessian_bound": 0.0
+        },
+        {
+          "momentum": [
+            0.7,
+            -0.4,
+            15.3
+          ],
+          "projector_error": 0.016696541691646086,
+          "projector_lipschitz_bound": 0.021505813167606573,
+          "retained_negative_band_amplitude": 0.016696541691646073,
+          "linear_dispersion_remainder": 0.014046915888680206,
+          "hessian_bound": 0.01850000000000001
+        },
+        {
+          "momentum": [
+            -5.0,
+            2.0,
+            6.0
+          ],
+          "projector_error": 0.21339138256976337,
+          "projector_lipschitz_bound": 0.2622022120425379,
+          "retained_negative_band_amplitude": 0.21339138256976337,
+          "linear_dispersion_remainder": 1.963858652847823,
+          "hessian_bound": 2.75
+        }
+      ],
+      "exact_rotating_source_samples": [
+        {
+          "momentum": [
+            0.7,
+            -0.4,
+            15.3
+          ],
+          "source_type": "scalar",
+          "full_eight_dimensional_gap": 0.016841439133509124,
+          "analytic_bound_for_this_diagnostic": 0.07934890359909787,
+          "commutator_identity_residual": 2.071420250961136e-16,
+          "integration_by_parts_derivative_residual": 2.3747350447419836e-10,
+          "noncommuting_internal_source_norm": 1.016614882834203
+        },
+        {
+          "momentum": [
+            0.7,
+            -0.4,
+            15.3
+          ],
+          "source_type": "vector",
+          "full_eight_dimensional_gap": 0.002853743073546518,
+          "analytic_bound_for_this_diagnostic": 0.07934890359909787,
+          "commutator_identity_residual": 3.1157140261171675e-17,
+          "integration_by_parts_derivative_residual": 3.6845970174128305e-11,
+          "noncommuting_internal_source_norm": 1.016614882834203
+        }
+      ],
+      "continuous_field_simulation": false
+    },
+    {
+      "pass": true,
+      "kind": "same_actual_flavor_effects_early_clock_and_terminal_source_readouts",
+      "clock_ideal_gap_lower": {
+        "numerator": 19199999,
+        "denominator": 768000000000,
+        "float": 2.4999998697916665e-05
+      },
+      "source_ideal_gap_lower": {
+        "numerator": 74793,
+        "denominator": 800000,
+        "float": 0.09349125
+      },
+      "clock_correct_probability": 0.5000999999993332,
+      "clock_wrong_dictionary_probability": 0.5001249999986979,
+      "clock_effect_sign_checked_by_matrix": true,
+      "mass_split_not_deleted": true,
+      "same_clock_coefficient_both_sources": "4/5",
+      "scalar_source_coefficient": "4/5",
+      "vector_source_coefficient": "1",
+      "actual_F_internal_diagnostics_only": {
+        "scalar": {
+          "smooth_pulse_probability_diagnostic": 0.904508494172756,
+          "delta_zero_exact_probability": 0.9045084971874734,
+          "512_to_1024_operator_difference": 9.76021963134937e-10,
+          "delta_perturbation_probability_difference": 3.014717364635544e-09
+        },
+        "vector": {
+          "smooth_pulse_probability_diagnostic": 0.9999999964663087,
+          "delta_zero_exact_probability": 0.9999999999999996,
+          "512_to_1024_operator_difference": 1.3612961510535872e-09,
+          "delta_perturbation_probability_difference": 3.5336908954519686e-09
+        }
+      },
+      "diagnostic_source_gap": 0.09549150229355263,
+      "full_CAR_and_quantum_source_errors_must_be_subtracted_elsewhere": true
+    }
+  ],
+  "joint_budget": {
+    "pass": true,
+    "kind": "joint_exact_rational_full_CAR_source_budget",
+    "packet_error_upper": {
+      "fraction": "62314520147/980000000000000000",
+      "float": 6.358624504795918e-08
+    },
+    "finite_kernel_error_upper": {
+      "fraction": "4125000011/1750000000000000",
+      "float": 2.3571428634285716e-06
+    },
+    "one_particle_error_upper": {
+      "fraction": "2372314526307/980000000000000000",
+      "float": 2.4207291084765307e-06
+    },
+    "early_one_particle_upper": {
+      "fraction": "1160048003/80000000000000000",
+      "float": 1.45006000375e-08
+    },
+    "quantum_source_error_upper": {
+      "fraction": "4323/53405761718750000000000000000000",
+      "float": 8.094632228571429e-29
+    },
+    "full_isometry_error_upper": {
+      "fraction": "2714898521011734008789092761/373840332031250000000000000000000",
+      "float": 7.262187325429592e-06
+    },
+    "early_full_isometry_upper": {
+      "fraction": "9292987084579467773441823/213623046875000000000000000000000",
+      "float": 4.35018001125e-08
+    },
+    "actual_clock_gap_lower": {
+      "fraction": "5331283017897415161132808177/213623046875000000000000000000000",
+      "float": 2.49564974186375e-05
+    },
+    "actual_scalar_vector_probability_gap_lower": {
+      "fraction": "17472685072487289047241210907239/186920166015625000000000000000000",
+      "float": 0.09347672562534914
+    },
+    "retarded_normalized_source_backreaction_upper": {
+      "fraction": "1441/1335144042968750000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "float": 1.0792842971428571e-96
+    },
+    "endpoint_interaction_mean_upper": {
+      "fraction": "5771827697755982731/71304384618997573852539062500000000000000000000",
+      "float": 8.094632228574341e-29
+    },
+    "finite_menu_causal_upper": {
+      "fraction": "30919819594621658325195354891020263823/261846487071990966796875000000000000000000",
+      "float": 0.00011808376709717207
+    },
+    "negative_sea_occupancy_upper": {
+      "fraction": "400000001/506250000000000000000000000",
+      "float": 7.901234587654321e-19
+    },
+    "material_input_graph_upper": {
+      "fraction": "773437501299375001237500002079/8750000000000000000",
+      "float": 88392857291.35715
+    },
+    "source_initial_energy_upper": "107300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "actual_total_free_energy_upper": {
+      "fraction": "938875000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014755840000000000000000000000000000000000000773437501299375001237500002079/8750000000000000000",
+      "float": 1.073e+203
+    },
+    "unbounded_energy_independently_controlled": true,
+    "full_apparatus_four_momentum_closed": false
+  },
+  "full_CAR_diagnostic": {
+    "pass": true,
+    "kind": "unequal_sea_full_CAR_two_mixed_columns_and_reference",
+    "finite_modes": 4,
+    "fock_dimension": 16,
+    "reference_dimension": 3,
+    "sea_occupancies": [
+      0.17,
+      0.43
+    ],
+    "empty_probability": 0.4731000000000001,
+    "column_errors": [
+      0.004562977205659301,
+      0.005933174172465841
+    ],
+    "full_correction_bound": 0.015059128583784444,
+    "complete_isometry_difference": 0.0061627680236960814,
+    "corrected_column_residual": 1.2160663776682872e-15,
+    "bare_readout_probability_difference": 1.1921943803172574e-05,
+    "pure_phase_companion_checked": true,
+    "continuous_field_simulation": false
+  },
+  "new_adopted_axioms": 0,
+  "scientific_calibration_increment": 0,
+  "goal_complete": false,
+  "scope": "SAME_NORMAL_MOVING_MATERIAL_CLOCK_SCALAR_OPERATION_AND_QUANTUM_SOURCE"
+}

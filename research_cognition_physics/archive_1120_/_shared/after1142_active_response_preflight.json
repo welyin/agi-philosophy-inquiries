@@ -1,0 +1,70 @@
+{
+  "status": "PASS_IDEAL_PREFLIGHT_ONLY",
+  "numbered_round": null,
+  "source_hashes": {
+    "local1139_tail_certificate.py": "fbc400a14c92788f00efd4579f4197e96ff579bacc2f42e1ffb92323ee478dd3",
+    "local1139_tail_certificate.md": "a502e98a6bcf634e6976c394a57bcf226b402447cfad1b61b1fe5d5507427a90",
+    "after1142_joint_contract_review.md": "dcb3316bcedcb86a4e0a7416652445b43d63e382d5e7c488a24929d950891b59"
+  },
+  "tail": {
+    "projection_error": 0.006705674886636766,
+    "coefficient_error": 1.2557350354451414e-05,
+    "cell_error": 0.054729536982001226,
+    "arithmetic_norm_budget": 1e-06,
+    "complete_L2_error": 0.06144876921899244,
+    "norm_diagnostic": 0.9999640564933119,
+    "independent_fft_max_error": 3.3528675511660435e-16,
+    "masks": {
+      "old_1139": {
+        "rin": 1.9,
+        "rout": 2.0,
+        "mu_lower": 0.03853499093756257,
+        "nu_lower": 0.034317083420038634,
+        "q_lower": 0.03853499093756257,
+        "cell_mu": 0.06643713620701226,
+        "cell_nu": 0.060860644739350205
+      },
+      "active_F3": {
+        "rin": 1.1,
+        "rout": 1.25,
+        "mu_lower": 0.40826989237576294,
+        "nu_lower": 0.4051354603095417,
+        "q_lower": 0.40826989237576294,
+        "cell_mu": 0.4905734558109317,
+        "cell_nu": 0.48713700469185955
+      }
+    }
+  },
+  "full_CAR": {
+    "covariance": "arbitrary original sea in analytic proof; all four outside occupations in diagnostic",
+    "fock_dimension": 16,
+    "quadratic_norm": 0.5916079783099615,
+    "expected_norm": 0.5916079783099616,
+    "derivative_max_error": 1.4029044592689388e-10,
+    "finite_shifts": [
+      0.10068431278126477,
+      0.1002485244368479,
+      0.09863787344460362,
+      0.09820208510018713
+    ],
+    "fixed_mu_nu_lower": 0.05625000000000001,
+    "scope": "finite full-CAR diagnostic, not actual BT evolution"
+  },
+  "budget": {
+    "mu_safe": "2/5",
+    "x": "1/4",
+    "normal_gain_second_moment_upper": "121/100",
+    "ideal_probability_gap_lower": "79/2000",
+    "ideal_probability_gap_float": 0.0395,
+    "per_program_isometry_error_new_requirement": "1/200 (not proved here)",
+    "conditional_actual_gap_lower": "39/2000",
+    "actual_BT_connection": "UNPROVED; do not inherit old 1137 error for new program"
+  },
+  "new_inputs": [
+    "relational radial mask 1.1 to 1.25",
+    "explicit off/source/material program",
+    "normal Z gain 1+s(Z)",
+    "program mass and actual BT output comparison still to qualify"
+  ],
+  "scientific_calibration_increment": 0
+}

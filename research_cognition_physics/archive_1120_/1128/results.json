@@ -1,0 +1,77 @@
+{
+  "round": 1128,
+  "schema": 1,
+  "status": "PASS",
+  "budget": {
+    "box_side": 45,
+    "box_sites": 91125,
+    "platform_sites": 11521,
+    "full_car_modes": 1458000,
+    "target_half_diamond": 0.01,
+    "tail_fraction": "531441/900160625",
+    "tail_upper": 0.0005903846327426286,
+    "platform_error_upper": 0.003525439664091696,
+    "clock_error_upper": 0.0007415666637531429,
+    "total_error_fraction": "4422193681029993/1036369140625000000",
+    "total_error_upper": 0.004267006327844839,
+    "endpoint_interaction_energy_upper": 0.0007415666639917972,
+    "per_clock_force_upper": 6436.571428571428,
+    "initial_controller_energy_exact": "4608400000000000000000000011521/800",
+    "initial_controller_energy": 5.7605e+27,
+    "field_hamiltonian_norm_upper": 14580000,
+    "interaction_operator_norm_upper": 2317366.8571428573,
+    "actual_early_spatial_signal_lower": 0.00013695106672493714,
+    "scope": "Exact rational certificate for the fixed 3D instance; no giant Fock matrix."
+  },
+  "wilson": {
+    "scope": "27-site open 3D Wilson diagnostic, not the 91,125-site simulation.",
+    "sites": 27,
+    "spinor_dimension": 108,
+    "positive_levels": 54,
+    "negative_levels": 54,
+    "gap": 2.0346941986288187,
+    "hermiticity_error": 0.0,
+    "chiral_anticommutator_error": 0.0,
+    "source_negative_weight": 0.4999999999999998,
+    "source_empty_probability": 0.2500000000000002,
+    "six_neighbor_hf_norm": 1.732050807568877,
+    "early_neighbor_amplitude": 0.017317044408032015,
+    "early_axis_probabilities": [
+      9.996501037031337e-05,
+      9.996501037031261e-05,
+      9.996501037031219e-05
+    ],
+    "global_rotation_error": 1.7610808708223168e-16,
+    "local_platform_mode_error": 0.0009889190662479704,
+    "local_platform_mode_error_bound": 0.07853981633974484
+  },
+  "car_and_clock": {
+    "car": {
+      "modes": 6,
+      "full_fock_dimension": 64,
+      "complex_overlap_single_rotation_error": 2.7755575615628914e-17,
+      "pure_phase_pair_error": 2.7755575615628914e-17,
+      "two_rail_full_fock_distance": 0.3228773022410378,
+      "two_rail_distance_upper": 0.32392818721216343,
+      "all_code_matrix_units_error": 6.674218273301344e-16,
+      "conditional_empty_probability": 0.08642277043815298,
+      "determinant_probability_error": 1.1102230246251565e-16,
+      "full_output_correction_error": 5.8166939616130635e-16
+    },
+    "clock": {
+      "scope": "Two 5-dimensional clock matrices and full 4-mode CAR; not canonical Gaussian clocks.",
+      "total_dimension": 400,
+      "duration": 0.35,
+      "field_energy_change": -0.004150420197172933,
+      "controller_energy_change": -0.06269482539751148,
+      "interaction_energy_change": 0.06684524559468691,
+      "total_energy_conservation_error": 1.7763568394002505e-15,
+      "sum_of_sector_energy_changes_error": 2.4980018054066022e-15,
+      "deleting_interaction_balance_error": 0.06684524559468441,
+      "actual_pointer_momentum_change": -0.22099938525976814,
+      "exact_matrix_force_error": 4.3186968100088425e-14,
+      "local_energy_flow_error": 3.298465096252053e-14,
+      "finite_clock_ccr_defect": 8.768963517777767
+    }
+  }
+}

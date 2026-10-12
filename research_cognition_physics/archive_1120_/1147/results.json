@@ -1,0 +1,231 @@
+{
+  "round": 1147,
+  "all_passed": true,
+  "check_groups": 4,
+  "scientific_check_increment": 0,
+  "frozen_source_count": 10,
+  "groups": [
+    {
+      "pass": true,
+      "kind": "exact_rational_uniform_budget_no_spectral_truncation",
+      "lambda_times_D_upper": {
+        "fraction": "1/40000",
+        "float": 2.5e-05
+      },
+      "Riesz_projection_upper": {
+        "fraction": "1/39999",
+        "float": 2.500062501562539e-05
+      },
+      "all_time_complete_isometry_upper": {
+        "fraction": "4/39999",
+        "float": 0.00010000250006250156
+      },
+      "relative_conditional_energy_upper": {
+        "fraction": "1/37500",
+        "float": 2.6666666666666667e-05
+      },
+      "relative_actual_clock_shift_upper": {
+        "fraction": "1/75000",
+        "float": 1.3333333333333333e-05
+      },
+      "timing_relative_tolerance": {
+        "fraction": "1/10000",
+        "float": 0.0001
+      },
+      "record_isometry_upper": {
+        "fraction": "8716639163/17499562500000",
+        "float": 0.0004981061191101206
+      },
+      "with_phase_and_instrument_upper": {
+        "fraction": "43715764163/17499562500000",
+        "float": 0.0024981061191101206
+      },
+      "same_effect_record_probability_gap_lower": {
+        "fraction": "8706065485837/8749781250000",
+        "float": 0.9950037877617798
+      },
+      "actual_clock_isometry_upper": {
+        "fraction": "282221/2333275000",
+        "float": 0.00012095488101488252
+      },
+      "clock_readout_change_lower": {
+        "fraction": "1166355279/2333275000",
+        "float": 0.4998790451189851
+      },
+      "gate_time_lower_not_feasibility_estimate": {
+        "fraction": "360000000000",
+        "float": 360000000000.0
+      },
+      "exact_spectral_constants_not_numerically_certified": [
+        "Delta_D",
+        "C_epsilon",
+        "gamma"
+      ],
+      "no_truncated_spectrum_used_in_error_certificate": true
+    },
+    {
+      "pass": true,
+      "kind": "second_order_four_branch_and_same_bare_record_algebra",
+      "branch_diagnostic_dimension": 8,
+      "gamma": 0.125,
+      "predicted_mixed_coefficient": -0.020000000000000004,
+      "cases": [
+        {
+          "pair_strength": 0.2,
+          "branch_second_order": {
+            "00": -0.002791666666666667,
+            "01": -0.01126388888888889,
+            "10": -0.013854166666666671,
+            "11": -0.042326388888888886
+          },
+          "local_self_terms": {
+            "00": [
+              -0.0011250000000000003,
+              -0.001666666666666667
+            ],
+            "01": [
+              -0.0011250000000000003,
+              -0.010138888888888892
+            ],
+            "10": [
+              -0.012187500000000002,
+              -0.001666666666666667
+            ],
+            "11": [
+              -0.012187500000000002,
+              -0.010138888888888892
+            ]
+          },
+          "four_branch_difference": -0.019999999999999993,
+          "cross_identity_residual": 1.0408340855860843e-17
+        },
+        {
+          "pair_strength": 0.7,
+          "branch_second_order": {
+            "00": -0.02563310185185184,
+            "01": -0.03155902777777777,
+            "10": -0.034586226851851844,
+            "11": -0.060512152777777765
+          },
+          "local_self_terms": {
+            "00": [
+              -0.013781249999999998,
+              -0.01185185185185185
+            ],
+            "01": [
+              -0.013781249999999998,
+              -0.017777777777777778
+            ],
+            "10": [
+              -0.022734375,
+              -0.01185185185185185
+            ],
+            "11": [
+              -0.022734375,
+              -0.017777777777777778
+            ]
+          },
+          "four_branch_difference": -0.019999999999999993,
+          "cross_identity_residual": 1.0408340855860843e-17
+        }
+      ],
+      "E00_response_preserved": true,
+      "bare_record_effect_residual": 5.569553219462483e-16,
+      "phase_misset_Lueders_isometry_norm": 0.00070710675172375,
+      "not_a_continuous_field_simulation": true,
+      "no_long_time_truncation_claim": true
+    }
+  ],
+  "material_results": {
+    "round": 1147,
+    "check_groups": 2,
+    "all_passed": true,
+    "scope": "actual MIT material formulas and free-clock CAR diagnostics; no full gate certificate",
+    "source_sha256": {
+      "material_bound.md": "5fa16e8187c2a93d63ffc0779165477872cc1ac43c9151a02fc4e555429e4160",
+      "../_shared/after1146_bound_dirac_feasibility.md": "32780d30a9631433f2a35ed4a21a8527aed80e66614fe1fdd45f7f17c487f466"
+    },
+    "groups": [
+      {
+        "name": "MIT_ground_root_scalar_density_and_mass_derivative",
+        "pass": true,
+        "fixed_inputs": {
+          "R": 1,
+          "m0": 1,
+          "m1": "1001/1000",
+          "epsilon": "1/100"
+        },
+        "rows": [
+          {
+            "mR": 1.0,
+            "q": 2.396287464615213,
+            "ER": 2.596573436872527,
+            "boundary_residual": 0.0,
+            "scalar_radial_integral": 0.6231375027471722,
+            "scalar_closed_formula": 0.6231375027471655,
+            "integral_closed_difference": 6.661338147750939e-15,
+            "independent_mass_derivative": 0.6231375026866104,
+            "derivative_scalar_difference": 6.056177781488259e-11,
+            "j1_numerator_before_exact_heat_normalization": 0.5445301609459979
+          },
+          {
+            "mR": 1.001,
+            "q": 2.396545300345174,
+            "ER": 2.59719663803235,
+            "boundary_residual": 5.551115123125783e-17,
+            "scalar_radial_integral": 0.6232648107256937,
+            "scalar_closed_formula": 0.6232648107256866,
+            "integral_closed_difference": 7.105427357601002e-15,
+            "independent_mass_derivative": 0.6232648106641037,
+            "derivative_scalar_difference": 6.159006638029041e-11,
+            "j1_numerator_before_exact_heat_normalization": 0.5446061529522338
+          }
+        ],
+        "strict_scalar_positivity_basis": "monotonic j1(x)/j0(x) on (0,pi), not floating samples",
+        "gap": "Delta_D=min(g0,g1,2*e_min)>0, exact spectral definition",
+        "heat_trace": "C_epsilon=Tr(exp(-2*epsilon*h_m1^2))<infinity, exact spectral definition",
+        "gap_or_heat_trace_truncation_used": false,
+        "full_source_norm": "2*C_epsilon/(1+2*C_epsilon)<1",
+        "j1": "exp(-2*epsilon*E1^2)*s(m1)/(1+2*C_epsilon)",
+        "gate_certificate_claimed": false
+      },
+      {
+        "name": "same_positive_bound_modes_actual_free_clock_and_flavor_readout_algebra",
+        "pass": true,
+        "E0": 2.596573436872527,
+        "E1": 2.59719663803235,
+        "free_clock_frequency": 0.0006232011598230613,
+        "matrix_checks": {
+          "CAR_different_modes": 0.0,
+          "CAR_same_mode": 0.0,
+          "code_isometry": 0.0,
+          "full_energy_compression": 0.0,
+          "X_total_charge_commutator": 0.0,
+          "X_flavor_charge_commutator": 1.0
+        },
+        "probabilities": [
+          {
+            "t": 1.0,
+            "actual_bare_CAR_effect_probability": 0.5003116005597414,
+            "exact_free_clock_formula": 0.5003116005597417,
+            "formula_difference": 2.220446049250313e-16,
+            "incorrect_mass_difference_only_probability": 0.5004999999166666
+          },
+          {
+            "t": 1000.0,
+            "actual_bare_CAR_effect_probability": 0.7918187670246306,
+            "exact_free_clock_formula": 0.7918187670247951,
+            "formula_difference": 1.645350522494482e-13,
+            "incorrect_mass_difference_only_probability": 0.9207354924039185
+          }
+        ],
+        "shared_negative_mode_sea": "fixed spectator in this exact positive-mode subalgebra",
+        "normal_full_J_not_replaced_by_two_mode_operator": true,
+        "material_pair_processes_simulated_here": false,
+        "source_and_interacting_clock_phase_unchanged_claim": false,
+        "flavor_U1_is_a_dynamical_symmetry_not_an_imposed_SSR": true,
+        "reading_requires_declared_preparation_and_readout_permissions": true
+      }
+    ]
+  }
+}

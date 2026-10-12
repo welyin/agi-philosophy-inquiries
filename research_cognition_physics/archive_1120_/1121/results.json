@@ -1,0 +1,204 @@
+{
+  "round": 1121,
+  "status": "PASS",
+  "new_cognitive_axioms": 0,
+  "scientific_calibration": 0,
+  "scope": "Finite CAR algebra checks and radial quadrature, not a physical device simulation.",
+  "groups": {
+    "car_and_full_spectrum": {
+      "modes": 4,
+      "hilbert_dimension": 16,
+      "car_residual": 0.0,
+      "cases": [
+        {
+          "sigma": 0.0,
+          "theta": 0.0,
+          "one_particle_norm": 0.0,
+          "full_car_norm": 0.0,
+          "expected_full_norm": 0.0,
+          "max_residual": 1.955325984766309e-15
+        },
+        {
+          "sigma": 0.0,
+          "theta": 1.0471975511965976,
+          "one_particle_norm": 0.0,
+          "full_car_norm": 0.0,
+          "expected_full_norm": 0.0,
+          "max_residual": 1.3388261776843067e-15
+        },
+        {
+          "sigma": 0.0,
+          "theta": 1.5707963267948966,
+          "one_particle_norm": 0.0,
+          "full_car_norm": 0.0,
+          "expected_full_norm": 0.0,
+          "max_residual": 1.955325984766309e-15
+        },
+        {
+          "sigma": 0.0,
+          "theta": 3.141592653589793,
+          "one_particle_norm": 0.0,
+          "full_car_norm": 0.0,
+          "expected_full_norm": 0.0,
+          "max_residual": 1.955325984766309e-15
+        },
+        {
+          "sigma": 0.0,
+          "theta": 6.283185307179586,
+          "one_particle_norm": 0.0,
+          "full_car_norm": 0.0,
+          "expected_full_norm": 0.0,
+          "max_residual": 1.955325984766309e-15
+        },
+        {
+          "sigma": 1.0,
+          "theta": 0.0,
+          "one_particle_norm": 0.0,
+          "full_car_norm": 0.0,
+          "expected_full_norm": 0.0,
+          "max_residual": 1.9854149383464497e-15
+        },
+        {
+          "sigma": 1.0,
+          "theta": 1.0471975511965976,
+          "one_particle_norm": 1.0,
+          "full_car_norm": 2.0,
+          "expected_full_norm": 1.9999999999999998,
+          "max_residual": 1.3568289977389602e-15
+        },
+        {
+          "sigma": 1.0,
+          "theta": 1.5707963267948966,
+          "one_particle_norm": 1.414213562373095,
+          "full_car_norm": 2.82842712474619,
+          "expected_full_norm": 2.8284271247461903,
+          "max_residual": 2.792458874597652e-15
+        },
+        {
+          "sigma": 1.0,
+          "theta": 3.141592653589793,
+          "one_particle_norm": 2.0,
+          "full_car_norm": 4.0,
+          "expected_full_norm": 4.0,
+          "max_residual": 2.075115057827e-15
+        },
+        {
+          "sigma": 1.0,
+          "theta": 6.283185307179586,
+          "one_particle_norm": 2.4492935982947064e-16,
+          "full_car_norm": 4.898587196589413e-16,
+          "expected_full_norm": 4.898587196589413e-16,
+          "max_residual": 1.9854149383464497e-15
+        },
+        {
+          "sigma": 1.9148542155126762,
+          "theta": 0.0,
+          "one_particle_norm": 0.0,
+          "full_car_norm": 0.0,
+          "expected_full_norm": 0.0,
+          "max_residual": 2.0698729199280584e-15
+        },
+        {
+          "sigma": 1.9148542155126762,
+          "theta": 1.0471975511965976,
+          "one_particle_norm": 1.9148542155126764,
+          "full_car_norm": 3.829708431025352,
+          "expected_full_norm": 3.829708431025352,
+          "max_residual": 2.9557416617487617e-15
+        },
+        {
+          "sigma": 1.9148542155126762,
+          "theta": 1.5707963267948966,
+          "one_particle_norm": 2.70801280154532,
+          "full_car_norm": 5.41602560309064,
+          "expected_full_norm": 5.416025603090641,
+          "max_residual": 2.4389436053081033e-15
+        },
+        {
+          "sigma": 1.9148542155126762,
+          "theta": 3.141592653589793,
+          "one_particle_norm": 3.8297084310253524,
+          "full_car_norm": 7.659416862050705,
+          "expected_full_norm": 7.659416862050705,
+          "max_residual": 5.40707714243779e-15
+        },
+        {
+          "sigma": 1.9148542155126762,
+          "theta": 6.283185307179586,
+          "one_particle_norm": 4.69004017172283e-16,
+          "full_car_norm": 9.38008034344566e-16,
+          "expected_full_norm": 9.38008034344566e-16,
+          "max_residual": 2.0698729199280576e-15
+        }
+      ],
+      "full_spectrum_multiplicities": [
+        1,
+        4,
+        6,
+        4,
+        1
+      ],
+      "reference_dimension_checked": 3
+    },
+    "translation_derivative": {
+      "finite_difference_steps": [
+        0.001,
+        0.0005
+      ],
+      "finite_difference_errors": [
+        8.219207080046458e-06,
+        2.054803945775078e-06
+      ],
+      "derivative_to_defect_residual": 9.980408270514766e-16,
+      "interpretation": "Finite algebra identity only; analytic proof uses the actual physical translation automorphism."
+    },
+    "normal_ordering": {
+      "scalar_trace": 1.414213562373095,
+      "independent_filled_slater_expectation": 1.414213562373095,
+      "normal_ordered_norm": 4.242640687119286,
+      "actual_defect_norm": 2.82842712474619,
+      "normal_ordered_gate_defect_residual": 1.9854149383464497e-15,
+      "interpretation": "Nonzero scalar must be retained in the defect; finite covariance is not a Dirac vacuum discretization."
+    },
+    "radial_mode": {
+      "profile": "C_R(1-r^2/R^2)_+^2 chi; H0^1 intersect H^2, not C-infinity",
+      "norm_integral_exact": "128/3465",
+      "gradient_integral_exact": "128/315",
+      "gradient_over_norm_exact": "11",
+      "quadrature_order": 64,
+      "max_integral_residual": 6.106226635438361e-16,
+      "cases": [
+        {
+          "radius": 1.0,
+          "normalized_mass": 1.0000000000000016,
+          "gradient_sum": 11.000000000000016,
+          "sigma_j_squared": 3.666666666666672,
+          "theta": 1.5707963267948966,
+          "full_car_norm_each_direction": 5.416025603090644,
+          "at_least_one_direction_lower_bound": 5.130199320647456
+        },
+        {
+          "radius": 2.0,
+          "normalized_mass": 1.0000000000000016,
+          "gradient_sum": 2.750000000000004,
+          "sigma_j_squared": 0.916666666666668,
+          "theta": 1.5707963267948966,
+          "full_car_norm_each_direction": 2.708012801545322,
+          "at_least_one_direction_lower_bound": 2.565099660323728
+        }
+      ]
+    }
+  },
+  "analytic_only_claims": [
+    "Positive-energy Dirac representation and actual unbounded momentum domains.",
+    "All smooth compact modes, all radii and angles, arbitrary passive references.",
+    "Ball Poincare lower bound and H0^1 density extension.",
+    "Conditional controller balance and all-input exact-unitary obstruction with finite moments."
+  ],
+  "not_certified": [
+    "Actual finite-duration local controller or point Hamiltonian implementation.",
+    "Original CO endpoint, physical clock and complete source-family identification.",
+    "Attainment within a fixed physical energy budget or old preparation menu.",
+    "Unbounded momentum control from ordinary channel distance."
+  ]
+}

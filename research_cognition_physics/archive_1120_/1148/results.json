@@ -1,0 +1,122 @@
+{
+  "round": 1148,
+  "all_passed": true,
+  "check_groups": 3,
+  "scientific_check_increment": 0,
+  "source_sha256": {
+    "proof.md": "fec78dbc7e4f579f757432abf434d331411bc1485662541d1e7911e869005cdd",
+    "admission.md": "02cadc88052fe4fa85f05e8900da4d18dc325363b2308c7a84ca8e9225277986",
+    "../1147/proof.md": "107af9c2236063b69df6a5316c38cb73f2bc5386cc6008b8eade02eb0695b2fe",
+    "../1147/material_bound.md": "5fa16e8187c2a93d63ffc0779165477872cc1ac43c9151a02fc4e555429e4160",
+    "../1147/results.json": "48f4343bfb273889b168ec4d0bd63cfb6cc0db2e3514d31959a5fc546107a845",
+    "../1135/proof.md": "f3577777e8983a02d02bf66ef5f869b207ac4f94df1610202c1ce6e995e17068",
+    "../1137/proof.md": "b665fe6ac4a8f326b5289b93321206666c1c24d5684e7277d5b683f0ebad1beb",
+    "../_shared/after1147_moment_rotation_screen.md": "4cdad58f1760bd169e1bf9b8c9cb6a7c01e52a3d4e99de5100326cd2e84f5629",
+    "../_shared/after1147_clothed_residual_screen.md": "e537d8d0e1d200e0c8642e1230dc7bfdca7af92e5f7f71bd129e1f01a93ce7cd",
+    "../_shared/after1147_boost_material_screen.md": "80a72dc01ee6362f0d296ba925244935aa9b4f377bbd915572956bc1a3252e1d"
+  },
+  "groups": [
+    {
+      "name": "exact_uniform_budget",
+      "pass": true,
+      "prior_record_instrument_bound": {
+        "fraction": "43715764163/17499562500000",
+        "float": 0.0024981061191101206
+      },
+      "new_motion_bound": {
+        "fraction": "241/50000000",
+        "float": 4.82e-06
+      },
+      "position_instrument_bound": {
+        "fraction": "22923/4000000000",
+        "float": 5.73075e-06
+      },
+      "full_instrument_bound": {
+        "fraction": "2809625451011/1119972000000000",
+        "float": 0.0025086568691101204
+      },
+      "record_probability_gap_lower": {
+        "fraction": "557176374548989/559986000000000",
+        "float": 0.9949826862617798
+      },
+      "clock_total_bound": {
+        "fraction": "8526203/4000000000",
+        "float": 0.00213155075
+      },
+      "wrong_clock_gap_lower": {
+        "fraction": "143473797/4000000000",
+        "float": 0.03586844925
+      },
+      "actual_frequency_wrong_probability_upper": {
+        "fraction": "808049/840000",
+        "float": 0.9619630952380952
+      },
+      "no_concrete_heat_trace_gap_or_gate_time_substituted": true,
+      "finite_parameter_recipe": "proof (11), Gp/Go independent of I/M0"
+    },
+    {
+      "name": "normal_mass_spectral_tail_and_continuous_boost_diagnostic",
+      "pass": true,
+      "mu": 50.0,
+      "masses": [
+        49.99,
+        50.01,
+        65.0
+      ],
+      "rho": 0.010111874158629557,
+      "window_h": 0.5,
+      "actual_tail_norm": 0.0001,
+      "tail_certificate": 0.020223748317259115,
+      "samples": [
+        {
+          "count": 30001,
+          "norm_max_error": 2.220446049250313e-16,
+          "boost_difference": 0.0009074410698545372,
+          "near_window_difference": 0.0009008549400778854,
+          "proven_bound": 0.20046753671467854,
+          "endpoint_phase_residual": 2.1392852979467722e-14
+        },
+        {
+          "count": 60001,
+          "norm_max_error": 1.1102230246251565e-16,
+          "boost_difference": 0.0009074410698545363,
+          "near_window_difference": 0.0009008549400778844,
+          "proven_bound": 0.20046753671467854,
+          "endpoint_phase_residual": 2.1493929225986095e-14
+        }
+      ],
+      "full_3D_field_and_spin_claim": false
+    },
+    {
+      "name": "spin_blind_full_CAR_effect_and_complete_instrument",
+      "pass": true,
+      "full_Fock_phase_tolerance_checks": [
+        {
+          "phase_error": 0.001,
+          "full_instrument_norm": 0.0009999998958332066,
+          "exact": 0.0009999998957089193
+        },
+        {
+          "phase_error": 0.1,
+          "full_instrument_norm": 0.09989589712127227,
+          "exact": 0.09989589712127067
+        },
+        {
+          "phase_error": 0.7,
+          "full_instrument_norm": 0.6653315166069101,
+          "exact": 0.6653315166069105
+        }
+      ],
+      "errors": {
+        "projection": 1.6265215376518347e-16,
+        "rotation": 1.1102230246251565e-16,
+        "code": 1.2196480754761405e-17,
+        "leakage": 1.2196480754761405e-17
+      },
+      "instrument_compression_residual": 1.7248428496606022e-17,
+      "single_spin_bad_commutator": 0.49999999999999994,
+      "summed_occupancy_norm_not_effect": 1.9999999999999998,
+      "not_a_sea_or_interacting_field_simulation": true
+    }
+  ]
+}

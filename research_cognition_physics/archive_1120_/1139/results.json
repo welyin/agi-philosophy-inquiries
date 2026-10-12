@@ -1,0 +1,176 @@
+{
+  "status": "PASS",
+  "scope": "CONDITIONAL_FINITE_LOCAL_READOUT_REFINEMENT_OBSTRUCTION",
+  "frozen_sources": {
+    "1129/proof.md": "c835b90f123547f7d224c72e1e0cbf89e1dd2fa377ae67ce90b1211922fcfefa",
+    "1133/proof.md": "476dc1d1258b819a72e2650684e1096cfa800d7c7c885c77cc1d41a07ebbde8d",
+    "1137/proof.md": "b665fe6ac4a8f326b5289b93321206666c1c24d5684e7277d5b683f0ebad1beb",
+    "1137/results.json": "1fb7f63266bc240d80ab880af707414d4e41a92c2075e14b69459e53b819ceb4",
+    "1137/acceptance.json": "8101ad968bca9dcc40ccb19c35280a69d64c23cf84603e11788cea7b1b69adad",
+    "1138/acceptance.json": "e714abf633301cd7b0bbd288781c0c8b16ae50bcc2b0c92be9cba004a801d342",
+    "_shared/local1138_dynamics_preflight.md": "56a559135a1288336d38907cfdf14e7fa5d23b4f3d1ec7268f83b97936d7f1b9",
+    "_shared/local1138_dynamics_preflight.json": "3482a6c485289c414e4bae28243ac052902ae067c4eb987609c14aaf3f1a13db",
+    "_shared/local1139_tail_certificate.py": "fbc400a14c92788f00efd4579f4197e96ff579bacc2f42e1ffb92323ee478dd3",
+    "_shared/local1139_tail_certificate.md": "a502e98a6bcf634e6976c394a57bcf226b402447cfad1b61b1fe5d5507427a90",
+    "_shared/local1139_tail_certificate.json": "27a7ae96911148f5073c633b0f0b2285d92b9c13acab87408bc3b48e756664cd",
+    "_shared/after1138_refinement_admission.md": "07d182d478a1ac05ef104b9c5f315154319dad97c2a10dde6c3fcd5e0f133b7a"
+  },
+  "numerical_check_groups": 3,
+  "tail": {
+    "status": "PASS",
+    "scope": "ORIGINAL_MODE_FINITE_FOURIER_TAIL_ENCLOSURE",
+    "n_fourier": 63,
+    "n_grid": 128,
+    "n_midpoint": 16384,
+    "z_midpoint": 0.13308612084499427,
+    "z_error": 2.582867940266927e-07,
+    "one_dim_projected_norm_lower": 0.9999850110834384,
+    "projection_error": 0.006705674886636766,
+    "coefficient_error": 1.2557350354451414e-05,
+    "cell_error": 0.054729536982001226,
+    "arithmetic_norm_budget": 1e-06,
+    "complete_L2_error": 0.06144876921899244,
+    "cell_weighted_a": 0.0664371362070123,
+    "cell_weighted_nu": 0.06086064473935027,
+    "q_lower": 0.03853499093756259,
+    "nu_lower": 0.03431708342003868,
+    "q_diagnostic": 0.10946038892865498,
+    "norm_diagnostic": 0.9999640564933119,
+    "gradient_norm": 3.0334188392814703,
+    "independent_fft_max_error": 3.3528675511660435e-16,
+    "k1_upper": 242.4871130596428,
+    "k2_upper": 73341.71630084635,
+    "midpoint_enclosure_assumptions": "Decimal 60 digits, exp/sqrt correctly rounded; Taylor remainder and rounding <1e-35; IEEE754 binary64 nearest arithmetic, no overflow",
+    "scientific_calibration_increment": 0
+  },
+  "exact": {
+    "fractions": {
+      "t": "4",
+      "s": "11/5",
+      "tau": "9/5",
+      "C1": "44000/7",
+      "C2": "2552000000/49",
+      "extra_HL_error": "15959794244625019963722240000000718964041949999999999999999966357127475199943886059217491598026570949828607999813935801449/112546874999999999999999999999999999999999999999999999999999683671679999999999970094687500000000000000000000000000000000000000000000000000000000000000000000000000",
+      "original_safe_HL_error": "3201/100000000000",
+      "full_recomputed_error": "162789686947308765792608494431972000015959941149810019968223684468665148568503119467478138939915250035028914817854273405969737994926569753608930724813935801449/112546874999999999999999999999999999999999999999999999999999683671679999999999970094687500000000000000000000000000000000000000000000000000000000000000000000000000",
+      "per_branch_complete_error": "1447/1000000",
+      "q_used": "7/200",
+      "source_support_inner_radius": "19/10",
+      "read_lab_radius": "3/50",
+      "causal_gap": "1/25",
+      "Y_rms_upper": "1050000000000006580007000000000000000000000000021675999999997048831999999999999721/524999999999999999999999999999999999999999999999999999999998524415999999999999860500000000000000000000000000000",
+      "normal_Y_tail_upper": "1102500000000013818014700000043296492120049000045519599999994087803663463961162001903647999996798205069999872060964864008709380469016000001646751744000000000077841/27562499999999999999999999999999999999999999999999999999999845063679999999999985352500000000000000000000000000000000000217734814105600000041168793600000000001946025000000000000000000000000000000000000000000000000000000",
+      "actual_response_lower": "7303/250000",
+      "parent_response_tolerance": "1/500000",
+      "parent_max_probability_error_lower": "2921/200000",
+      "target": "1/100"
+    },
+    "decimal": {
+      "t": 4.0,
+      "s": 2.2,
+      "tau": 1.8,
+      "C1": 6285.714285714285,
+      "C2": 52081632.653061226,
+      "extra_HL_error": 1.4180575200000018e-40,
+      "original_safe_HL_error": 3.201e-08,
+      "full_recomputed_error": 0.001446416765879184,
+      "per_branch_complete_error": 0.001447,
+      "q_used": 0.035,
+      "source_support_inner_radius": 1.9,
+      "read_lab_radius": 0.06,
+      "causal_gap": 0.04,
+      "Y_rms_upper": 2.0000000000000124e-30,
+      "normal_Y_tail_upper": 4.00000000000005e-56,
+      "actual_response_lower": 0.029212,
+      "parent_response_tolerance": 2e-06,
+      "parent_max_probability_error_lower": 0.014605,
+      "target": 0.01
+    }
+  },
+  "CAR": {
+    "full_CAR_dimension": 16,
+    "passive_reference_dimension": 2,
+    "pointer_dimension": 2,
+    "common_background_not_empty": true,
+    "continuation_included": true,
+    "rows": [
+      {
+        "q": 0.0,
+        "no_W": [
+          0.9999999999999994,
+          0.0
+        ],
+        "with_W": [
+          0.9999999999999994,
+          0.0
+        ],
+        "contrast": 0.9999999999999994,
+        "contrast_identity_residual": 5.551115123125783e-16,
+        "maximum_input_response": 0.0
+      },
+      {
+        "q": 0.035,
+        "no_W": [
+          0.9999999999999994,
+          0.0
+        ],
+        "with_W": [
+          0.9622979999999998,
+          0.03229799999999999
+        ],
+        "contrast": 0.9299999999999997,
+        "contrast_identity_residual": 2.220446049250313e-16,
+        "maximum_input_response": 0.03770199999999968
+      },
+      {
+        "q": 0.109,
+        "no_W": [
+          0.9999999999999994,
+          0.0
+        ],
+        "with_W": [
+          0.8832304799999999,
+          0.1012304800000001
+        ],
+        "contrast": 0.7819999999999998,
+        "contrast_identity_residual": 2.220446049250313e-16,
+        "maximum_input_response": 0.11676951999999952
+      },
+      {
+        "q": 0.5,
+        "no_W": [
+          0.9999999999999994,
+          0.0
+        ],
+        "with_W": [
+          0.48,
+          0.47999999999999987
+        ],
+        "contrast": 1.1102230246251565e-16,
+        "contrast_identity_residual": 1.1102230246251565e-16,
+        "maximum_input_response": 0.5199999999999995
+      },
+      {
+        "q": 1.0,
+        "no_W": [
+          0.9999999999999994,
+          0.0
+        ],
+        "with_W": [
+          4.249867503421166e-33,
+          0.9999999999999991
+        ],
+        "contrast": -0.9999999999999991,
+        "contrast_identity_residual": 8.881784197001252e-16,
+        "maximum_input_response": 0.9999999999999994
+      }
+    ],
+    "scope": "Finite identity diagnostic; the original normal infinite sea is handled analytically."
+  },
+  "inherited_coarse_receiver_refuted": false,
+  "all_cognitive_axioms_refuted": false,
+  "added_late_control_and_small_readout_contract": true,
+  "local_control_hardware_implementation_claimed": false,
+  "new_axioms": 0,
+  "science_increment": 0
+}
