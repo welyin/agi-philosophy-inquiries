@@ -1,0 +1,85 @@
+{
+  "schema": "merge_1120_1158_verification_v1",
+  "date": "2026-10-12",
+  "status": "PASS",
+  "manifest_sha256": "9ac094e5d68bcb432aaac83c1ed5c40f94d284a9764d94cdd22fc0bfab2df577",
+  "root_asset_checks": {
+    "entries": 603,
+    "moved_files": 597,
+    "archive_files": 599,
+    "unchanged_python_json": 247,
+    "recovered_original_bytes": true,
+    "python_ast": 67,
+    "formal_rounds": 39,
+    "numerical_groups": 152,
+    "new_scientific_rounds": 0,
+    "new_scientific_calibrations": 0,
+    "old_directories_absent": true,
+    "support_files": 47,
+    "preserved_link_targets_checked": 5960,
+    "preexisting_missing_links": [],
+    "new_missing_links": 0,
+    "optional_cache_not_required_for_clean_checkout": true
+  },
+  "runtime_validation": {
+    "executor": "merge_1120_1158_runtime subagent; actual executions reported to parent",
+    "runner": "scripts/run_research_combined.py",
+    "checks": [
+      {
+        "check": "--verify-layout (all current and frozen layers)",
+        "status": "PASS"
+      },
+      {
+        "check": "--verify-merge",
+        "status": "PASS"
+      },
+      {
+        "check": "1120-1156 stage_closure/verify_assets.py",
+        "status": "PASS"
+      },
+      {
+        "check": "1157-1158 verify_stage.py --require-closure",
+        "status": "PASS"
+      },
+      {
+        "check": "1156/check.py default read-only",
+        "status": "PASS"
+      },
+      {
+        "check": "1157/check.py default read-only",
+        "status": "PASS"
+      },
+      {
+        "check": "1158/check.py default read-only: READ_ONLY_MATCH",
+        "status": "PASS"
+      }
+    ],
+    "initial_checks_runner_sha256": "86ff739fa451455c2100eebe6e9ace3344e09bfd98a76a198f76bd2039420097",
+    "runner_sha256": "e3d485d77feb7699df4e2b8c2b703595da790b6f32aa694030064da09700f4c1",
+    "final_version_change": "Only permits the explicitly marked existing local bytecode cache to be absent; scientific assets remain mandatory and cache reads are prohibited.",
+    "final_version_checks": [
+      {
+        "check": "--verify-layout all layers, optional cache present",
+        "status": "PASS",
+        "executor": "runtime subagent"
+      },
+      {
+        "check": "--verify-merge with optional cache temporarily absent",
+        "status": "PASS",
+        "executor": "main agent",
+        "exit_code": 0,
+        "absent_optional_local_caches": 1,
+        "cache_files_executed": 0,
+        "original_cache_bytes_restored": true
+      }
+    ]
+  },
+  "independent_review": {
+    "status": "PASS",
+    "path": "independent_review.md",
+    "sha256": "01d85b94396cfe378f2a86302a9fb768dce615bf5828955d55a54822a7c43486",
+    "round_core_hashes": 269,
+    "round_review_hashes": 39,
+    "closure_and_adoption_hashes": 26
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schema": "composition_stage_final_checks_v1",
+  "date": "2026-10-12",
+  "status": "PASS",
+  "commands": [
+    {
+      "entry": "1157/check.py",
+      "status": "PASS",
+      "exit_code": 0,
+      "scope": "Default read-only numeric recomputation; no new research round."
+    },
+    {
+      "entry": "1158/check.py",
+      "status": "PASS",
+      "exit_code": 0,
+      "scope": "Default read-only numeric recomputation; no new research round."
+    },
+    {
+      "entry": "../archive_1120_/_shared/stage_closure/verify_assets.py",
+      "status": "PASS",
+      "exit_code": 0,
+      "scope": "Prior frozen-stage integrity and reversible navigation."
+    }
+  ],
+  "empirical_calibration_increment": 0,
+  "entry_paths_relative_to": "research_cognition_physics/archive_1157_1158",
+  "closure_integrity_entry": "_shared/verify_stage.py --require-closure",
+  "closure_integrity": {
+    "status": "PASS",
+    "accepted_rounds": 2,
+    "numerical_groups": 8,
+    "round_core_hashes": 15,
+    "independent_review_hashes": 2,
+    "frozen_sources": 16,
+    "markdown_files": 24,
+    "local_links": 182,
+    "python_ast": 4,
+    "reversible_navigation_files": 4,
+    "closure_hashes": 8,
+    "closure_required": true,
+    "scope": "Integrity and scope records only; numeric scripts and analytic reviews are separate evidence."
+  },
+  "goal_tool_receipt": "Generated separately only after all reviews and artifacts are complete."
+}

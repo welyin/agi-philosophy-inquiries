@@ -1,0 +1,74 @@
+{
+  "schema": "round1157_checks_v1",
+  "status": "PASS",
+  "check_groups": 4,
+  "scope": "Finite algebraic and network checks; no new empirical calibration or actual-apparatus certification.",
+  "exact_certificate": {
+    "input_local_dim": 2,
+    "output_local_dim": 3,
+    "remote_dims": [
+      2,
+      3
+    ],
+    "generators": 4,
+    "tp_residual": 4.440892098500626e-16,
+    "generator_residual": 5.823706435028344e-16,
+    "kraus_factor_residual": 1.1102230246251565e-16,
+    "kept_environment_residual": 1.1102230246251565e-16,
+    "all_remote_matrix_units_residual": 4.440892098500626e-16
+  },
+  "weak_condition_failure": {
+    "faithful_ready_invariance": 0.0,
+    "diagonal_readout_invariance": 0.0,
+    "remote_maximally_mixed_ready_residual": 0.0,
+    "full_X_generator_defect": 2.0,
+    "remote_X_before_after": [
+      0.9999999999999998,
+      -0.9999999999999998
+    ],
+    "scope": "Fixed ready and commuting readouts fail; full-state fixed marginal was NOT weakened to this."
+  },
+  "joint_network": {
+    "reordering_residual": 0.0,
+    "isometry_residual": 4.440892098500626e-16,
+    "spacelike_event_commutator": 0.0,
+    "reference_trace_distance": 0.0,
+    "full_record_entanglement_negativity": 0.4999999999999998,
+    "min_causal_margin": 2.0,
+    "scope": "Logical finite network certificate; actual clocks, control, and fourP require separate material evidence."
+  },
+  "finite_error": {
+    "twirl_certificates": [
+      {
+        "theta": 1e-06,
+        "epsilon_X": 1.999999999999667e-06,
+        "epsilon_Z": 1.1102230246251565e-16,
+        "eta": 0.0020000149011610274,
+        "isometry_distance": 9.999999999999582e-07,
+        "half_diamond_to_identity": 9.999999999998333e-07,
+        "certified_half_diamond_bound": 0.004000029802322055
+      },
+      {
+        "theta": 0.0001,
+        "epsilon_X": 0.0001999999996666667,
+        "epsilon_Z": 0.0,
+        "eta": 0.019999999983333336,
+        "isometry_distance": 9.999999995833333e-05,
+        "half_diamond_to_identity": 9.999999983333334e-05,
+        "certified_half_diamond_bound": 0.03999999996666667
+      },
+      {
+        "theta": 0.01,
+        "epsilon_X": 0.019999666668333332,
+        "epsilon_Z": 0.0,
+        "eta": 0.19999833333472222,
+        "isometry_distance": 0.009999958333385416,
+        "half_diamond_to_identity": 0.009999833334166664,
+        "certified_half_diamond_bound": 0.39999666666944445
+      }
+    ],
+    "composed_reference_trace_distance": 0.04997437423962649,
+    "telescoping_bound": 0.06998483438912982,
+    "scope": "Existence error bound alone does not certify physical access to the approximating map."
+  }
+}

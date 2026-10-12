@@ -1,0 +1,248 @@
+{
+  "round": 1154,
+  "all_passed": true,
+  "numerical_check_groups": 3,
+  "groups": [
+    {
+      "name": "one_shot_parameter_recipe_and_budget",
+      "passed": true,
+      "exact_g_eta_one": {
+        "MF": {
+          "numerator": 1,
+          "denominator": 2,
+          "float": 0.5
+        },
+        "K2": {
+          "numerator": 3720,
+          "denominator": 1,
+          "float": 3720.0
+        },
+        "K4": {
+          "numerator": 51840000,
+          "denominator": 1,
+          "float": 51840000.0
+        },
+        "Kt": {
+          "numerator": 22500,
+          "denominator": 1,
+          "float": 22500.0
+        }
+      },
+      "epsilon": {
+        "numerator": 1,
+        "denominator": 1000,
+        "float": 0.001
+      },
+      "each_budget_cap": {
+        "numerator": 1,
+        "denominator": 3000,
+        "float": 0.0003333333333333333
+      },
+      "sample_inputs_not_actual_spectral_constants": [
+        {
+          "g": 1.0,
+          "C": 0.001,
+          "nu": 0.03,
+          "eta": 1.0,
+          "D": 15.0,
+          "R0": 0.016666666666666666,
+          "MF": 0.5,
+          "K2": 3720.0,
+          "K4": 51840000.0,
+          "Kt": 22500.0,
+          "previous_coupling": 8.784104611578831e-09,
+          "new_coupling": 1.4814814814814814e-11,
+          "new_duration": 1.4313881527918497e+25,
+          "dressing_budget": 8.164609053497941e-19,
+          "fourth_order_budget": 1.1377777777777775e-11,
+          "tail_budget": 0.00033333333333333327,
+          "total_budget": 0.00033333334471111187,
+          "old_linear_tail_budget": 0.1976423537605237,
+          "new_to_old_coupling": 0.0016865480854231355
+        },
+        {
+          "g": 0.2,
+          "C": 0.5,
+          "nu": 0.0001,
+          "eta": 5.0,
+          "D": 47.3606797749979,
+          "R0": 0.005278640450004206,
+          "MF": 0.5000000000000001,
+          "K2": 169498.44718999244,
+          "K4": 5151950310.07976,
+          "Kt": 625549.5168499706,
+          "previous_coupling": 4.405692351337825e-08,
+          "new_coupling": 2.66432412106937e-10,
+          "new_duration": 8.851273391483938e+19,
+          "dressing_budget": 1.2032055794351271e-14,
+          "fourth_order_budget": 7.31435061598192e-10,
+          "tail_budget": 0.0003333333333333334,
+          "total_budget": 0.000333334064780427,
+          "old_linear_tail_budget": 0.055119574435379744,
+          "new_to_old_coupling": 0.006047458398361214
+        },
+        {
+          "g": 0.01,
+          "C": 1.0,
+          "nu": 0.2,
+          "eta": 32.0,
+          "D": 600.0,
+          "R0": 0.0004166666666666667,
+          "MF": 0.16,
+          "K2": 248640000.0,
+          "K4": 42467327999999.99,
+          "Kt": 322560000.0,
+          "previous_coupling": 1.7361111111111113e-09,
+          "new_coupling": 1.033399470899471e-12,
+          "new_duration": 2.941801756855658e+24,
+          "dressing_budget": 2.655262529394474e-16,
+          "fourth_order_budget": 4.535147392290249e-11,
+          "tail_budget": 0.0003333333333333333,
+          "total_budget": 0.0003333333786850728,
+          "old_linear_tail_budget": 0.56,
+          "new_to_old_coupling": 0.0005952380952380952
+        },
+        {
+          "g": 1.0,
+          "C": 1e-16,
+          "nu": 0.001,
+          "eta": 1.0,
+          "D": 15.0,
+          "R0": 0.016666666666666666,
+          "MF": 0.5,
+          "K2": 3720.0,
+          "K4": 51840000.0,
+          "Kt": 22500.0,
+          "previous_coupling": 2.777777777777778e-15,
+          "new_coupling": 1.4814814814814815e-24,
+          "new_duration": 1.4313881527918494e+64,
+          "dressing_budget": 8.164609053497943e-45,
+          "fourth_order_budget": 1.1377777777777777e-24,
+          "tail_budget": 0.0003333333333333334,
+          "total_budget": 0.0003333333333333334,
+          "old_linear_tail_budget": 625000.0,
+          "new_to_old_coupling": 5.333333333333334e-10
+        }
+      ],
+      "old_lambda_over_C_not_uniformly_controlled": true,
+      "changed_coupling_and_duration_explicit": true
+    },
+    {
+      "name": "compact_radial_yukawa_and_force_ratio",
+      "passed": true,
+      "calibration_profile_radius": 0.5,
+      "center_separation": 3.0,
+      "radial_charge": 1.0140381544732617,
+      "direct_integral": 0.0013579820453240472,
+      "exterior_formula": 0.0013579820453240474,
+      "quadrature_difference": 3.924811864397526e-16,
+      "derivative_step": 0.0002,
+      "finite_difference_derivative": -0.0018106427532516489,
+      "analytic_derivative": -0.0018106427270987299,
+      "impulse_ratio": -4.188790265289266,
+      "expected_impulse_ratio": -4.1887902047863905,
+      "same_actual_material_profile_not_claimed": true,
+      "exact_angular_formula_reused_from_1149": true
+    },
+    {
+      "name": "complete_rank_four_force_integral_and_PQ_terms",
+      "passed": true,
+      "hilbert_dimension": 12,
+      "low_cluster_rank": 4,
+      "bare_input_includes_tail": true,
+      "KG_parity_proxy": true,
+      "nontrivial_fourth_order_spin_matrix_offdiag_norm": 0.000141309856226242,
+      "Q_calibration": 1.0,
+      "C": 0.0013206430054666148,
+      "C_derivative": -0.001760857340622153,
+      "leading_impulse_scalar": -4.1887902047863905,
+      "samples": [
+        {
+          "coupling": 0.0020833333333333333,
+          "lambda_fraction_of_R0": 0.125,
+          "duration": 548083732.2356803,
+          "gap": 0.9999972336938536,
+          "conservative_force_theorem_bound": 205865.64287055144,
+          "bare_tail_norm": 7.570982296314348e-05,
+          "complete_impulse_eigenvalues": [
+            -4.188795930693044,
+            -4.188793385064572,
+            -4.188791568985911,
+            -4.1887904691271105
+          ],
+          "full_impulse_error": 5.725906656212961e-06,
+          "full_spectral_bound": 5.833057447485034e-06,
+          "pp_error": 5.7457419352050515e-06,
+          "pp_bound": 5.793762071420405e-06,
+          "cross_norm": 5.797534887267413e-09,
+          "cross_endpoint_bound": 1.528528848468903e-08,
+          "qq_norm": 2.4010033391176112e-08,
+          "qq_tail_bound": 2.4010087579940588e-08,
+          "complete_minus_P_only": 2.723915818684307e-08,
+          "passive_reference_norm_difference": 8.470329472543003e-22,
+          "two_window_integral_residual": 2.790561517265889e-16
+        },
+        {
+          "coupling": 0.0033333333333333335,
+          "lambda_fraction_of_R0": 0.2,
+          "duration": 214095207.90456262,
+          "gap": 0.9999929182870813,
+          "conservative_force_theorem_bound": 492941.7351183136,
+          "bare_tail_norm": 0.00012113604319318999,
+          "complete_impulse_eigenvalues": [
+            -4.188804835065771,
+            -4.1887983195921965,
+            -4.1887936758016435,
+            -4.188790888068094
+          ],
+          "full_impulse_error": 1.463027938089352e-05,
+          "full_spectral_bound": 1.4932661671829664e-05,
+          "pp_error": 1.4709132422391431e-05,
+          "pp_bound": 1.4832064755468021e-05,
+          "cross_norm": 1.7387092905530493e-08,
+          "cross_endpoint_bound": 3.913061213946758e-08,
+          "qq_norm": 6.146594909475435e-08,
+          "qq_tail_bound": 6.146630422217564e-08,
+          "complete_minus_P_only": 7.88530414979182e-08,
+          "passive_reference_norm_difference": 0.0,
+          "two_window_integral_residual": 1.0388060515929067e-15
+        },
+        {
+          "coupling": 0.004166666666666667,
+          "lambda_fraction_of_R0": 0.25,
+          "duration": 137020933.0589201,
+          "gap": 0.9999889348680103,
+          "conservative_force_theorem_bound": 752474.4243357513,
+          "bare_tail_norm": 0.00015142043066846284,
+          "complete_impulse_eigenvalues": [
+            -4.188813091782387,
+            -4.188802911973317,
+            -4.188795608145898,
+            -4.188791300803373
+          ],
+          "full_impulse_error": 2.288699599315772e-05,
+          "full_spectral_bound": 2.333232729560434e-05,
+          "pp_error": 2.298306060912784e-05,
+          "pp_bound": 2.317514352680615e-05,
+          "cross_norm": 3.02520457968224e-08,
+          "cross_endpoint_bound": 6.114197611201992e-08,
+          "qq_norm": 9.604092568502732e-08,
+          "qq_tail_bound": 9.604179268616634e-08,
+          "complete_minus_P_only": 1.2629217102621918e-07,
+          "passive_reference_norm_difference": 0.0,
+          "two_window_integral_residual": 7.660406189940014e-16
+        }
+      ],
+      "diagnostic_couplings_not_actual_lambda_star": true,
+      "diagnostic_sharp_bound_uses_exact_spectral_decomposition": true,
+      "conservative_theorem_bound_also_checked_within_R0_over_4": true,
+      "diagnostic_is_not_physical_epsilon_certificate": true,
+      "field_model_simulation": false,
+      "field_reset_performed": false
+    }
+  ],
+  "interpretation": "Analytic-tool calibrations; no complete field simulation or actual spectral parameter estimate.",
+  "physical_new_experiments": 0,
+  "new_adopted_axioms": 0,
+  "full_goal_complete": false
+}

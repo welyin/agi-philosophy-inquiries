@@ -1,0 +1,205 @@
+{
+  "round": 1153,
+  "all_passed": true,
+  "numerical_check_groups": 3,
+  "groups": [
+    {
+      "name": "exact_positivity_and_finite_parameter_budgets",
+      "passed": true,
+      "bessel_polynomial_lower": {
+        "numerator": 9575936269679,
+        "denominator": 17270948495360,
+        "float": 0.5544534089862907
+      },
+      "bessel_lower_component_upper": {
+        "numerator": 99,
+        "denominator": 224,
+        "float": 0.4419642857142857
+      },
+      "positivity_margin": {
+        "numerator": 1942793854319,
+        "denominator": 17270948495360,
+        "float": 0.11248912327200498
+      },
+      "derivative_majorant": {
+        "numerator": -21559,
+        "denominator": 94080,
+        "float": -0.22915603741496599
+      },
+      "dressing_bound": {
+        "numerator": 4,
+        "denominator": 39999,
+        "float": 0.00010000250006250156
+      },
+      "long_time_remainder_bound": {
+        "numerator": 400,
+        "denominator": 63636363,
+        "float": 6.285714348571429e-06
+      },
+      "record_bound": {
+        "numerator": 90181684,
+        "denominator": 848463627879,
+        "float": 0.00010628821441107299
+      },
+      "actual_clock_bound": {
+        "numerator": 23878720986667,
+        "denominator": 212115906969750000,
+        "float": 0.00011257392869678727
+      },
+      "one_insertion_history_bound": {
+        "numerator": 175030168,
+        "denominator": 848463627879,
+        "float": 0.00020629071447357455
+      },
+      "ideal_read_probability_gap_lower": {
+        "numerator": 848283264511,
+        "denominator": 848463627879,
+        "float": 0.9997874235711779
+      },
+      "sample_parameters_not_physical_spectral_values": [
+        {
+          "g": 1.0,
+          "C": 0.5,
+          "nu": 0.03,
+          "R0": 0.016666666666666666,
+          "coupling": 1.9641855032959655e-07,
+          "duration": 162860163162094.84,
+          "record_bound": 1.8068333050152565e-05,
+          "omega_relative_bound": 1.851851851851852e-08,
+          "clock_duration_fraction": 3.215020576131688e-13
+        },
+        {
+          "g": 0.2,
+          "C": 0.001,
+          "nu": 0.0001,
+          "R0": 0.005278640450004206,
+          "coupling": 1.9702855171084526e-09,
+          "duration": 8.092664622903114e+20,
+          "record_bound": 6.6564415877748815e-06,
+          "omega_relative_bound": 1.1145618000168243e-09,
+          "clock_duration_fraction": 1.941012509463661e-17
+        },
+        {
+          "g": 0.01,
+          "C": 1.0,
+          "nu": 0.2,
+          "R0": 0.0004166666666666667,
+          "coupling": 1.7361111111111113e-09,
+          "duration": 1.042305044237407e+18,
+          "record_bound": 1.0449856314237635e-05,
+          "omega_relative_bound": 3.472222222222222e-12,
+          "clock_duration_fraction": 7.535204475308643e-18
+        },
+        {
+          "g": 0.7,
+          "C": 1e-08,
+          "nu": 0.001,
+          "R0": 0.013092334365214049,
+          "coupling": 2.0487320260851926e-11,
+          "duration": 7.484788964317564e+29,
+          "record_bound": 6.284750140439828e-06,
+          "omega_relative_bound": 6.85636876522259e-15,
+          "clock_duration_fraction": 2.098651457353569e-27
+        }
+      ],
+      "actual_profile_C_not_numerically_evaluated": true
+    },
+    {
+      "name": "rank_four_even_cluster_and_operator_remainder",
+      "passed": true,
+      "hilbert_dimension": 12,
+      "cluster_rank": 4,
+      "interaction_norm": 1.0630145812734648,
+      "second_order_scalar": -0.48999999999999994,
+      "fourth_order_offdiagonal_norm": 0.05243039130502476,
+      "samples": [
+        {
+          "lambda_fraction": 0.25,
+          "coupling": 0.004166666666666667,
+          "projection_distance": 0.002916649703532267,
+          "projection_bound": 0.06666666666666667,
+          "errors": {
+            "isometry": 4.0044888515297e-15,
+            "intertwining": 2.762068160871068e-15,
+            "spectral_intertwining": 9.386020492296715e-16,
+            "projection_parity": 0.0,
+            "rotation_parity": 0.0,
+            "effective_evenness": 0.0
+          },
+          "remainder_norm": 6.941315929801891e-11,
+          "cauchy_remainder_bound": 0.008333333333333333,
+          "scaled_fourth_order_error": 3.796607404870257e-06,
+          "higher_order_spin_mixing": 0.052429167153406765,
+          "bare_full_output_error": 0.005814300051436811,
+          "spectral_full_output_bound": 0.011670597012104635
+        },
+        {
+          "lambda_fraction": 0.35,
+          "coupling": 0.005833333333333333,
+          "projection_distance": 0.0040832867868029095,
+          "projection_bound": 0.0958904109589041,
+          "errors": {
+            "isometry": 2.8803642130854284e-15,
+            "intertwining": 1.4269386197989625e-15,
+            "spectral_intertwining": 9.494418236344232e-16,
+            "projection_parity": 0.0,
+            "rotation_parity": 0.0,
+            "effective_evenness": 0.0
+          },
+          "remainder_norm": 2.666533727970343e-10,
+          "cauchy_remainder_bound": 0.034202279202279195,
+          "scaled_fourth_order_error": 7.4411362222712175e-06,
+          "higher_order_spin_mixing": 0.052427991983367304,
+          "bare_full_output_error": 0.007346037417006536,
+          "spectral_full_output_bound": 0.01634098349122853
+        },
+        {
+          "lambda_fraction": 0.5,
+          "coupling": 0.008333333333333333,
+          "projection_distance": 0.005833197631084342,
+          "projection_bound": 0.14285714285714285,
+          "errors": {
+            "isometry": 3.411371209116951e-15,
+            "intertwining": 2.427727002228588e-15,
+            "spectral_intertwining": 7.369415427884764e-16,
+            "projection_parity": 0.0,
+            "rotation_parity": 0.0,
+            "effective_evenness": 0.0
+          },
+          "remainder_norm": 1.1105556262832706e-09,
+          "cauchy_remainder_bound": 0.16666666666666666,
+          "scaled_fourth_order_error": 1.518533390096538e-05,
+          "higher_order_spin_mixing": 0.05242549496168579,
+          "bare_full_output_error": 0.004113681548386228,
+          "spectral_full_output_bound": 0.023348782525355848
+        }
+      ],
+      "includes_high_order_spin_mixing": true,
+      "field_model_simulation": false
+    },
+    {
+      "name": "complete_record_isometry_and_noncommuting_history",
+      "passed": true,
+      "code_dimension": 16,
+      "input_unknown_flavor_and_spins_dimension": 8,
+      "bare_B_pulled_effect_error": 4.458205583648681e-16,
+      "code_spin_operator_residual": 0.0,
+      "insertion_noncommutator_norm": 0.7071067811865475,
+      "inserted_history_differs_from_CZ": 0.7653668647301793,
+      "finite_full_parent_dimension": 32,
+      "nonzero_retained_tail": 0.00598024687160918,
+      "bare_full_output_error": 0.005980278827445619,
+      "bare_full_output_bound": 0.0120099820000081,
+      "history_full_output_error": 0.007116069580213379,
+      "history_full_output_bound": 0.0240099640000162,
+      "passive_reference_norm_difference": 8.673617379884035e-19,
+      "field_model_simulation": false,
+      "field_reset_performed": false,
+      "arbitrary_unknown_input_supported_by_operator_identity": true
+    }
+  ],
+  "interpretation": "Analytic-tool calibration; the full normal field result is proved in proof.md.",
+  "physical_new_experiments": 0,
+  "new_adopted_axioms": 0,
+  "full_goal_complete": false
+}

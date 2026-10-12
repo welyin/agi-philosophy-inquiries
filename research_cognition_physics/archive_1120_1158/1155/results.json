@@ -1,0 +1,99 @@
+{
+  "round": 1155,
+  "all_passed": true,
+  "numerical_check_groups": 3,
+  "groups": [
+    {
+      "name": "prior_budgets_and_complete_CAR_record",
+      "passed": true,
+      "duration": 10000000000,
+      "alpha_squared_upper": 24000,
+      "q_norm_squared_upper": 3,
+      "f_second_derivative_L1_upper": 24,
+      "F2": {
+        "numerator": 10,
+        "denominator": 7,
+        "float": 1.4285714285714286
+      },
+      "phase_and_spatial_impulse_error": {
+        "numerator": 27,
+        "denominator": 156250,
+        "float": 0.0001728
+      },
+      "single_source_radiation_energy_bound": {
+        "numerator": 81,
+        "denominator": 3906250000000000000000000,
+        "float": 2.0736e-23
+      },
+      "single_source_displacement_bound": 4.553679830642466e-12,
+      "complete_record_error_bound": 0.00017280000910735967,
+      "boosted_station_energy_error": {
+        "numerator": 202500000000000000081,
+        "denominator": 1562500000000000000000000,
+        "float": 0.0001296
+      },
+      "boosted_station_momentum_error": {
+        "numerator": 1687500000000000000243,
+        "denominator": 7812500000000000000000000,
+        "float": 0.000216
+      },
+      "complete_CAR_dimension": 16,
+      "CAR_residual": 0.0,
+      "bare_pointer_effect_error": 2.220446049250313e-16,
+      "self_phases_retained": true,
+      "arbitrary_reference_supported_by_operator_identity": true,
+      "large_T_field_numerically_simulated": false
+    },
+    {
+      "name": "finite_pulse_retarded_phase_and_station_exchange",
+      "passed": true,
+      "diagnostic_duration": 8.0,
+      "diagnostic_alpha": 0.8,
+      "Gaussian_sigma": 0.4,
+      "separation": 3.0,
+      "spatial_k_cutoff": 16.0,
+      "spatial_nodes": 120,
+      "triangular_time_nodes": 96,
+      "forced_oscillator_steps": 4096,
+      "phase": 0.0021093205457046603,
+      "phase_derivative": -0.0024347419979556424,
+      "station_B_spatial_impulse": -0.0024347419906301402,
+      "station_A_spatial_impulse": 0.0024347419906301402,
+      "self_energy_from_retarded_work": 0.0006197405858092657,
+      "cross_energy_from_retarded_work": 0.0002498601904509625,
+      "station_B_time_exchange": -0.0008696007762602282,
+      "station_A_time_exchange": -0.0008696007762602282,
+      "final_field_energy_independent": 0.0017392015525254198,
+      "energy_balance_residual": 4.963477545638639e-15,
+      "retarded_R_crosscheck": 9.206240281223188e-08,
+      "radiation_energy_crosscheck": 5.459703014687456e-08,
+      "per_frequency_work_identity": 7.878932551077709e-15,
+      "Gaussian_is_not_actual_compact_profile": true,
+      "large_T_not_numerically_simulated": true
+    },
+    {
+      "name": "two_exact_Weyl_windows_with_noncommuting_CAR_and_no_reset",
+      "passed": true,
+      "complete_material_dimension": 16,
+      "normal_oscillator_modes": 2,
+      "full_history_isometry_error": 3.3306690738754696e-16,
+      "complete_output_error_to_retained_phase_vacuum_target": 0.1528897814028047,
+      "first_window_displacement_bound": 0.10099504938362078,
+      "second_window_displacement_bound": 0.08426149773176358,
+      "sequential_full_output_bound": 0.18525654711538436,
+      "actual_final_field_number": 0.010719607513445147,
+      "CP_reset_control_final_field_number": 0.003472362633068574,
+      "CP_reset_control_keeps_first_window_material_dephasing": true,
+      "field_memory_changes_later_energy": 0.007247244880376573,
+      "passive_reference_squared_error_norm_difference": 0.0,
+      "Fock_cutoff_used": false,
+      "first_window_field_reset": false,
+      "second_window_vacuum_exchange_not_assumed": true,
+      "source_causality_and_boost_not_proved_by_this_two_mode_diagnostic": true
+    }
+  ],
+  "interpretation": "Analytic-tool calibrations; the actual compact 3D parent and Lorentz transport require the proof.",
+  "physical_new_experiments": 0,
+  "new_adopted_axioms": 0,
+  "full_goal_complete": false
+}
