@@ -1,0 +1,121 @@
+{
+  "round": 1183,
+  "status": "PASS",
+  "groups": 4,
+  "scope": "classical Hamiltonian and momentum initial-constraint surface only; no quantum implementation or finite instrument certificate",
+  "source_sha256": {
+    "../archive_342_369/research_note_351.md": "6a21e5cb3bf6aae30fce70bbff6a197d359f7ac87ad9afb84f3274954b602765",
+    "../archive_342_369/research_note_352.md": "8df046e03a5c6cdbf39d180dabcddca4f372bc510ccaceb71543fac781fe44ab",
+    "../archive_935_955/research_note_937.md": "b0a767ad24d0cde8a823a43d438369941b30d73b4e2355e6d71c713f37407fc8",
+    "../archive_935_955/research_note_938.md": "0b5cc920ca257e848f51ac33c6e3909e7b4459da010fb542ebeef09c0b18a758",
+    "_shared/goal.md": "8acafd3ed835d581a543de077e1e6ea6c120b6e78c7a1e271e749f263e422667",
+    "_admission/after1178_reference/local_boundary_mechanism.md": "4a6ce37e70edddfa1f20e44e1f7c980495f5cd42f68fe67b1b909e52b0773fe7"
+  },
+  "exact": {
+    "parameter_interval": [
+      "2/5",
+      "3/5"
+    ],
+    "gravity_density_bounds": [
+      "-62/5",
+      "-1"
+    ],
+    "positive_matter_density_bounds": [
+      "1",
+      "62/5"
+    ],
+    "scalar_momentum_squared_bounds": [
+      "2",
+      "124/5"
+    ],
+    "total_initial_constraints": "H(x)=0, D_i(x)=0",
+    "smeared_unit_lapse_derivative": {
+      "2/5": "-1/5",
+      "1/2": "0",
+      "3/5": "1/5"
+    },
+    "positive_lapse_obstruction": "integral N^2 |grad pi|^2 > 0 for every smooth strictly positive N",
+    "no_all_close_lambda_finite_error_exclusion": true
+  },
+  "initial_max_residual": 1.2434497875801753e-14,
+  "nonlinear_tangent_checks": [
+    {
+      "lam": 0.4,
+      "dt": 2e-06,
+      "constraint_density_derivative_error": 1.9332194178822704e-09,
+      "momentum_derivative_error": 9.529120656610879e-16,
+      "curvature_derivative_error": 1.9200196987867457e-11,
+      "smeared_derivative": -0.19999999998616685
+    },
+    {
+      "lam": 0.4,
+      "dt": 1e-06,
+      "constraint_density_derivative_error": 4.456782498607481e-09,
+      "momentum_derivative_error": 1.0852609636695723e-15,
+      "curvature_derivative_error": 4.799993735815633e-12,
+      "smeared_derivative": -0.20000000023653655
+    },
+    {
+      "lam": 0.5,
+      "dt": 2e-06,
+      "constraint_density_derivative_error": 2.886579864025407e-09,
+      "momentum_derivative_error": 1.0587911840678754e-15,
+      "curvature_derivative_error": 5.5999995120941965e-11,
+      "smeared_derivative": 1.6905916401367713e-09
+    },
+    {
+      "lam": 0.5,
+      "dt": 1e-06,
+      "constraint_density_derivative_error": 5.329070518200751e-09,
+      "momentum_derivative_error": 1.0587911840678754e-15,
+      "curvature_derivative_error": 1.4000078189574296e-11,
+      "smeared_derivative": 2.8343543348904846e-10
+    },
+    {
+      "lam": 0.6,
+      "dt": 2e-06,
+      "constraint_density_derivative_error": 9.624193497703715e-09,
+      "momentum_derivative_error": 1.9058241313221758e-15,
+      "curvature_derivative_error": 1.6460799390216607e-10,
+      "smeared_derivative": 0.20000001051394128
+    },
+    {
+      "lam": 0.6,
+      "dt": 1e-06,
+      "constraint_density_derivative_error": 6.780562167296722e-09,
+      "momentum_derivative_error": 1.4823076576950256e-15,
+      "curvature_derivative_error": 4.115230378687329e-11,
+      "smeared_derivative": 0.20000000280151536
+    }
+  ],
+  "positive_lapse_checks": [
+    {
+      "a": 0.0,
+      "minimum_lapse": 1.0,
+      "integrated_positive_obstruction": 0.5,
+      "integration_error": 2.220446049250313e-16
+    },
+    {
+      "a": 0.25,
+      "minimum_lapse": 0.75,
+      "integrated_positive_obstruction": 0.5078125,
+      "integration_error": 2.220446049250313e-16
+    },
+    {
+      "a": 0.5,
+      "minimum_lapse": 0.5,
+      "integrated_positive_obstruction": 0.53125,
+      "integration_error": 2.220446049250313e-16
+    }
+  ],
+  "cmc_deletion_checks": [
+    {
+      "lam": 0.4,
+      "first_tangent_residual": 3.7747582837255317e-10
+    },
+    {
+      "lam": 0.6,
+      "first_tangent_residual": 9.450218385609331e-08
+    }
+  ]
+}

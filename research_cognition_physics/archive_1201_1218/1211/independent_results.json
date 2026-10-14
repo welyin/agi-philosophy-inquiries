@@ -1,0 +1,93 @@
+{
+  "status": "PASS",
+  "all_checks_passed": true,
+  "source_sha256": {
+    "1205/acceptance.json": "ca7c9eb535f601cbc80a0725b8fc7676872cb3c9b82fe7ead4d7535c7e6b0a31",
+    "1206/acceptance.json": "ad6bccd3436a9315f214e8a38a55be15153ee4d8e542c2c9aa86551a5fcb0501",
+    "1209/acceptance.json": "322a33fad8ac75a1734251eaa1053f450cf26211d4a98c0acbacce26fe33d9ab",
+    "1202/results.json": "ffd1cb78a71db45caa1c1c2ec5f4a39cce94a87478f95976b4fe1bdbb59bad60",
+    "1204/results.json": "61a57b8e936af8c40ade3b1dbe8d5f3614432d85af61388ec821d07db43897e9"
+  },
+  "independent_code_sha256": "8c7c35320dfecc5ed2c57180f8c68c556da2c8dd4bdc9bbd5c60c641c8c5d905",
+  "complete_permutation_cases": [
+    {
+      "n": 1,
+      "dimension_full": 8,
+      "ground_success_exact": "2/5",
+      "no_record_optimum_exact": "2/5",
+      "residual_exact": "3/5",
+      "all_basis_permutation": true
+    },
+    {
+      "n": 2,
+      "dimension_full": 48,
+      "ground_success_exact": "16/25",
+      "no_record_optimum_exact": "2/5",
+      "residual_exact": "9/25",
+      "all_basis_permutation": true
+    },
+    {
+      "n": 3,
+      "dimension_full": 256,
+      "ground_success_exact": "98/125",
+      "no_record_optimum_exact": "2/5",
+      "residual_exact": "27/125",
+      "all_basis_permutation": true
+    },
+    {
+      "n": 4,
+      "dimension_full": 1280,
+      "ground_success_exact": "544/625",
+      "no_record_optimum_exact": "2/5",
+      "residual_exact": "81/625",
+      "all_basis_permutation": true
+    }
+  ],
+  "unknown_reference_check": {
+    "no_ground_probability": 0.48818296627220936,
+    "output_ground_probability": 0.5118170337277905,
+    "inverse_recovers_full_input": true,
+    "passive_reference_unchanged": true
+  },
+  "correlated_full_rank_marginals_but_zero_no_ground_probability": true,
+  "pure_same_h_stock_swap_transfers_unknown_state": true,
+  "finite_spectrum_entropy_examples": [
+    {
+      "ground_degeneracy": 1,
+      "S_beta40": 1.6993417021166355e-16,
+      "limit": 0.0
+    },
+    {
+      "ground_degeneracy": 2,
+      "S_beta40": 0.6931471805599454,
+      "limit": 0.6931471805599453
+    }
+  ],
+  "closing_gap_nonuniform_entropy": 0.5822031088882179,
+  "native_correlated_output_pool_bounds": {
+    "cold": {
+      "no_ground_words": "697371434362795584136880520",
+      "selected_occupation_types": 21,
+      "pool_dimension": "9399690799043690121938015947926455391852712761214920",
+      "unavoidable_failure_exact": "1728194677/23293893044523903491665952470273117",
+      "approximate_failure": 7.419089087842602e-26,
+      "scope": "Only the selected output pool is active; other stocks and preparation records stay passive."
+    },
+    "hot": {
+      "no_ground_words": "15012257218605233042216640072976755763560",
+      "selected_occupation_types": 40,
+      "pool_dimension": "25275816084126394831643399421736368715529309287003959388080",
+      "unavoidable_failure_exact": "19119388214871161/32190904613676472907010903107264798",
+      "approximate_failure": 5.93937587163928e-19,
+      "scope": "Only the selected output pool is active; other stocks and preparation records stay passive."
+    }
+  },
+  "mixed_record_resource_gain_exact": "3/25",
+  "qualifications": {
+    "native_clock_exact_routing_proved": false,
+    "arbitrary_energy_battery_covered": false,
+    "new_axiom_adopted": false,
+    "general_third_law_derived": false,
+    "stage_complete": false
+  }
+}

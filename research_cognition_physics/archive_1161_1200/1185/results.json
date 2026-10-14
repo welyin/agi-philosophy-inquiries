@@ -1,0 +1,234 @@
+{
+  "round": 1185,
+  "date": "2026-10-13",
+  "status": "PASS_WITH_COMPOSITE_SOURCE_SCOPE",
+  "source_sha256": {
+    "1176/proof.md": "966a751121980b976ad86f459d06088c72a56e3eca49109828293020b86320f9",
+    "1177/proof.md": "6c3229a8bd9caad35e7d96bc53ced14e867feb89a8aeaff01be8d7d40339c447",
+    "1177/check.py": "ce6be9e2d7a186586af32169a38345d9a72bb653210b99ac4d2db66a4dbdb916",
+    "1178/proof.md": "cd44222a8fedc2d45c497b2e0e02120e18408c3385d5a628e3f0066895f127cf",
+    "1178/check.py": "3c5e06e1a048ca2758c33f1b74f6c67b75e4c19ab3654b516a08e3e115ae6037",
+    "1178/results.json": "e6255dd8f47a4bc57e1cf8a1b8cd602d9ce3ac87098013bc0e3e26442ba13b98",
+    "_admission/after1174_direction/mean_field_bound.md": "11ac64ce824d3448dec97548efe3dda768bcda30f2e48e1cd88bfe511fcd6b3f"
+  },
+  "groups": {
+    "1_finite_generated_energy_and_all_ports": {
+      "pass": true,
+      "microscopic_t_mediator_dimension": 4,
+      "binding_energy_generated_by_same_micro_interaction": true,
+      "all_declared_t_ports_preparation_records_future_transported": true,
+      "arbitrary_micro_interventions_preserve_code_claimed": false,
+      "matrix_diagnostics": {
+        "residuals": {
+          "W_unitarity": 6.600509456459794e-17,
+          "E_isometry": 2.6740123749743303e-17,
+          "diagonal_identity": 3.335547891213247e-16,
+          "free_intertwining": 2.1183873065262644e-16,
+          "transported_Z_intertwining": 7.473417450352271e-17,
+          "dressed_number_commutator": 2.316621139684286e-16,
+          "bare_Z_compression": 7.113968016196114e-18,
+          "bare_Z_leak_formula": 1.1102230246251565e-16
+        },
+        "micro_spectrum": [
+          -1.9667185622701531e-16,
+          1.0,
+          2.0,
+          3.0
+        ],
+        "bare_Z_leak_operator_norm": 0.5773502691896257,
+        "bare_number_commutator_norm": 2.0,
+        "alpha_beta_diagnostics": [
+          {
+            "alpha": 0.0,
+            "beta": 0.0,
+            "compression_residual": 2.6740123749743303e-17,
+            "leak_gram_residual": 1.150852533127761e-32
+          },
+          {
+            "alpha": 1.0,
+            "beta": 1.0,
+            "compression_residual": 1.2412670766236366e-16,
+            "leak_gram_residual": 4.367808253069626e-32
+          },
+          {
+            "alpha": 2.0,
+            "beta": 1.25,
+            "compression_residual": 1.7554167342883506e-16,
+            "leak_gram_residual": 1.086108692045682e-16
+          },
+          {
+            "alpha": 0.7,
+            "beta": 0.2,
+            "compression_residual": 1.32021460364232e-16,
+            "leak_gram_residual": 1.6996749443881478e-17
+          }
+        ],
+        "two_copy_port_diagnostics": {
+          "matched": {
+            "full_micro_dimension": 128,
+            "effective_dimension": 32,
+            "parent_intertwining_residual": 2.4412053274491316e-15,
+            "Hermiticity_residual": 0.0,
+            "dressed_sector_commutator": 2.737662964701912e-15,
+            "micro_B_norm": 0.45,
+            "effective_B_norm": 0.15000000000000002
+          },
+          "deleted": {
+            "full_micro_dimension": 128,
+            "effective_dimension": 32,
+            "parent_intertwining_residual": 2.383003763949748e-15,
+            "Hermiticity_residual": 0.0,
+            "dressed_sector_commutator": 2.980696152943183e-15,
+            "micro_B_norm": 0.15,
+            "effective_B_norm": 0.15
+          }
+        },
+        "diagnostic_not_large_parent_simulation": true
+      }
+    },
+    "2_complete_parent_and_deleted_source_control": {
+      "pass": true,
+      "K": 100000000000000,
+      "volume": 274625,
+      "source_CAR_modes_per_site": 4,
+      "probe_CAR_modes_per_site": 12,
+      "same_positive_shift_both_branches": true,
+      "original_CK_exact": "36695392500000969393327/32",
+      "free_norm_increment_exact": "68656250000000000000",
+      "reciprocal_full_space_increment_exact": "49432499999999505675/4",
+      "positive_shift_total_exact": "39287852500000965438727/32",
+      "matched_full_micro_B_norm_exact": "9/20",
+      "deleted_full_micro_B_norm_exact": "3/20",
+      "matched_effective_B_norm_exact": "3/20",
+      "effective_E0_exact": "1/2",
+      "central_free_phase_retained": true,
+      "central_source_term_retained": true,
+      "full_CAR_parent_not_truncated": true,
+      "exact_joint_BG_and_probe_backreaction_retained": true
+    },
+    "3_original_clock_four_task_finite_certificate": {
+      "pass": true,
+      "certificate": {
+        "time": {
+          "lower_exact": "3141592653589793238462643383279502884197/2000000000000000000000000000000000000000",
+          "upper_exact": "7853981633974483096156608458198757210493/5000000000000000000000000000000000000000",
+          "outward_decimal_places": 40,
+          "lower_float_diagnostic": 1.5707963267948966,
+          "upper_float_diagnostic": 1.5707963267948966
+        },
+        "tasks": {
+          "matched_q_plus": {
+            "b_exact": "3/80",
+            "r_squared_exact": "1609/6400",
+            "tau": {
+              "lower_exact": "15643793466961426091222821824379816164543/10000000000000000000000000000000000000000",
+              "upper_exact": "3128758693392285218244564364875963232909/2000000000000000000000000000000000000000",
+              "outward_decimal_places": 40,
+              "lower_float_diagnostic": 1.5643793466961426,
+              "upper_float_diagnostic": 1.5643793466961426
+            },
+            "P_minus_Y_probability": {
+              "lower_exact": "6538980790353554789526679422183570049321/10000000000000000000000000000000000000000",
+              "upper_exact": "3269490395176777394763339711091785024661/5000000000000000000000000000000000000000",
+              "outward_decimal_places": 40,
+              "lower_float_diagnostic": 0.6538980790353555,
+              "upper_float_diagnostic": 0.6538980790353555
+            }
+          },
+          "matched_q_minus": {
+            "b_exact": "9/80",
+            "r_squared_exact": "1681/6400",
+            "tau": {
+              "lower_exact": "1551652548421919738803789393748646371333/1000000000000000000000000000000000000000",
+              "upper_exact": "15516525484219197388037893937486463713333/10000000000000000000000000000000000000000",
+              "outward_decimal_places": 40,
+              "lower_float_diagnostic": 1.5516525484219197,
+              "upper_float_diagnostic": 1.5516525484219197
+            },
+            "P_minus_Y_probability": {
+              "lower_exact": "1631716719054415465825686358725834532581/2500000000000000000000000000000000000000",
+              "upper_exact": "261074675048706474532109817396133525213/400000000000000000000000000000000000000",
+              "outward_decimal_places": 40,
+              "lower_float_diagnostic": 0.6526866876217662,
+              "upper_float_diagnostic": 0.6526866876217662
+            }
+          },
+          "deleted_q_plus": {
+            "b_exact": "3/20",
+            "r_squared_exact": "109/400",
+            "tau": {
+              "lower_exact": "15453956832883717836211727324464225631029/10000000000000000000000000000000000000000",
+              "upper_exact": "1931744604110464729526465915558028203879/1250000000000000000000000000000000000000",
+              "outward_decimal_places": 40,
+              "lower_float_diagnostic": 1.5453956832883717,
+              "upper_float_diagnostic": 1.5453956832883717
+            },
+            "P_minus_Y_probability": {
+              "lower_exact": "6520907690749965512707032774642851609357/10000000000000000000000000000000000000000",
+              "upper_exact": "6520907690749965512707032774642851609359/10000000000000000000000000000000000000000",
+              "outward_decimal_places": 40,
+              "lower_float_diagnostic": 0.6520907690749965,
+              "upper_float_diagnostic": 0.6520907690749965
+            }
+          },
+          "deleted_q_minus": {
+            "b_exact": "3/20",
+            "r_squared_exact": "109/400",
+            "tau": {
+              "lower_exact": "15453956832883717836211727324464225631029/10000000000000000000000000000000000000000",
+              "upper_exact": "1931744604110464729526465915558028203879/1250000000000000000000000000000000000000",
+              "outward_decimal_places": 40,
+              "lower_float_diagnostic": 1.5453956832883717,
+              "upper_float_diagnostic": 1.5453956832883717
+            },
+            "P_minus_Y_probability": {
+              "lower_exact": "6520907690749965512707032774642851609357/10000000000000000000000000000000000000000",
+              "upper_exact": "6520907690749965512707032774642851609359/10000000000000000000000000000000000000000",
+              "outward_decimal_places": 40,
+              "lower_float_diagnostic": 0.6520907690749965,
+              "upper_float_diagnostic": 0.6520907690749965
+            }
+          }
+        },
+        "ideal_four_task_difference": {
+          "lower_exact": "6056957067946463111966993640115959497/5000000000000000000000000000000000000000",
+          "upper_exact": "12113914135892926223933987280231919/10000000000000000000000000000000000000",
+          "outward_decimal_places": 40,
+          "lower_float_diagnostic": 0.0012113914135892926,
+          "upper_float_diagnostic": 0.0012113914135892926
+        },
+        "a_s_exact": "1389/320",
+        "a_t_exact": "13/8",
+        "B_squared_exact": "14857247/102400",
+        "effective_pair_norm_bound_exact": "3/10",
+        "eta_interval": {
+          "lower_exact": "152662495033380851667155736011529673/625000000000000000000000000000000000000",
+          "upper_exact": "2442599920534093626674491776184474769/10000000000000000000000000000000000000000",
+          "outward_decimal_places": 40,
+          "lower_float_diagnostic": 0.00024425999205340934,
+          "upper_float_diagnostic": 0.00024425999205340934
+        },
+        "eta_adopted_exact": "49/200000",
+        "instrument_each_input_exact": "1/50000",
+        "total_error_each_exact": "53/200000",
+        "four_task_error_exact": "53/50000",
+        "actual_four_task_lower_exact": "756957067946463111966993640115959497/5000000000000000000000000000000000000000",
+        "actual_four_task_lower_float": 0.00015139141358929263,
+        "published_strict_lower_exact": "3/20000",
+        "outward_decimal_places": 40,
+        "all_strict_scalar_bounds_are_rational": true,
+        "instrument_contract_covers_new_preparation_and_transported_ports": true,
+        "sampling_error_included": false
+      },
+      "original_unknown_code_dimension": 48,
+      "arbitrary_reference_preserved": true,
+      "new_instrument_input_explicit": true,
+      "actual_instrument_constructed": false,
+      "new_adopted_axioms": 0,
+      "universal_self_coupling_proved": false,
+      "Einstein_dynamics_proved": false,
+      "dark_sector_generated": false
+    }
+  },
+  "numerical_scope": "small exact-form diagnostics plus rational intervals; no K-copy simulation"
+}

@@ -1,0 +1,169 @@
+{
+  "status": "PASS_WITH_SCOPE",
+  "check_groups": 3,
+  "clock_design": {
+    "eta_unit": true,
+    "inverse_row_norms": [
+      "1",
+      "8/15",
+      "8/15",
+      "8/15",
+      "41/9",
+      "24/5",
+      "24/5",
+      "41/9",
+      "24/5",
+      "41/9"
+    ],
+    "inverse_infinity_norm": "24/5",
+    "missing_last_direction_null": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1",
+      "0"
+    ]
+  },
+  "finite_certificate": {
+    "B0": {
+      "exact": "1/100",
+      "float": 0.01
+    },
+    "L": {
+      "exact": "1/100",
+      "float": 0.01
+    },
+    "V": {
+      "exact": "2",
+      "float": 2.0
+    },
+    "tau": {
+      "exact": "1/1000",
+      "float": 0.001
+    },
+    "delta_x": {
+      "exact": "1/1000000000000",
+      "float": 1e-12
+    },
+    "delta_u": {
+      "exact": "1/1000000000000",
+      "float": 1e-12
+    },
+    "h_beam": {
+      "exact": "1/10000",
+      "float": 0.0001
+    },
+    "h_cover": {
+      "exact": "1/20",
+      "float": 0.05
+    },
+    "J": {
+      "exact": "1056/625",
+      "float": 1.6896
+    },
+    "b": {
+      "exact": "441564063/781250000000",
+      "float": 0.00056520200064
+    },
+    "Gamma_updated": {
+      "exact": "859416407/244140625000",
+      "float": 0.003520169603072
+    },
+    "I0": {
+      "exact": "16777216/31255875",
+      "float": 0.5367699992401429
+    },
+    "I1": {
+      "exact": "524288/99225",
+      "float": 5.2838296800201565
+    },
+    "weak_Ricci_prior_bound": {
+      "exact": "70355255296/6511640625",
+      "float": 10.804535960704987
+    },
+    "weak_Ricci_updated_bound": {
+      "exact": "35444731548441093250037579776/9703100658953189849853515625",
+      "float": 3.652928357054168
+    },
+    "source_reference_lower": {
+      "exact": "75/16",
+      "float": 4.6875
+    },
+    "source_matching_error": {
+      "exact": "1/8",
+      "float": 0.125
+    },
+    "Einstein_tolerance": {
+      "exact": "1/8",
+      "float": 0.125
+    },
+    "kappa": {
+      "exact": "1",
+      "float": 1.0
+    },
+    "strict_margin": {
+      "exact": "121804442010618987338998332959/155249610543251037597656250000",
+      "float": 0.7845716429458317
+    },
+    "kappa_exclusion_threshold": {
+      "exact": "586521906092963871700308307666/708326348103582859039306640625",
+      "float": 0.8280390919570779
+    }
+  },
+  "fluid_tracefree_pairs": {
+    "dust": "3/4",
+    "vacuum": "0",
+    "negative_pressure": "1/4"
+  },
+  "curved_diagnostic": {
+    "metric": "diag((1+x^2/1000)^2,-1,-1,-1)",
+    "exact_Ricci_pairing": {
+      "exact": "4686676066304/8729668212890625",
+      "float": 0.0005368676050463683
+    },
+    "exact_integrated_connection_pairing": {
+      "exact": "4686676066304/8729668212890625",
+      "float": 0.0005368676050463683
+    },
+    "analytic_weak_bound": {
+      "exact": "106803349159936/51910400390625",
+      "float": 2.0574556997488433
+    },
+    "taylor_cases": 90,
+    "max_remainder_bound_ratio": 0.021963057032256983,
+    "RK_refinement_difference": 2.886579864025407e-15,
+    "unit_speed_error": 4.440892098500626e-15,
+    "interpretation": "prescribed-metric numerical diagnostic; no same-parent matter/geometry implementation"
+  },
+  "deletion_check": {
+    "samples": [
+      0,
+      1
+    ],
+    "support_interval": [
+      "2/5",
+      "3/5"
+    ],
+    "Gamma_at_samples": [
+      "0",
+      "0"
+    ],
+    "Gamma_inside_gap": {
+      "exact": "-6914187/409600000",
+      "float": -0.01688033935546875
+    },
+    "scope": "invalidates extension from finite samples without regularity/coverage; not an Einstein countermodel"
+  },
+  "frozen_history": {
+    "old_scientific_files_unchanged": 325,
+    "old_acceptances_unchanged": 31
+  },
+  "new_adopted_axioms": 0,
+  "new_empirical_calibration": 0,
+  "gr_hard_deliverables_completed": 0
+}

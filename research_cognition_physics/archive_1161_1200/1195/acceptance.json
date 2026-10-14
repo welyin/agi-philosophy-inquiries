@@ -1,0 +1,197 @@
+{
+  "schema": "gr_round_acceptance_v1",
+  "date": "2026-10-14",
+  "round": 1195,
+  "status": "ACCEPTED_WITH_SCOPE",
+  "check_groups": 3,
+  "scope": "指定十二次旋量单胞的直接全偶边界收缩秩至多13951、核至少18817，不能作该域的保信息等距接续。原DV一维附录核单步有负谱，但显式正内积使两步严格正；不等于原观测/反射正性或实际量子过程，未反证完整旋量引力。",
+  "certified_results": {
+    "wetterich_cell": {
+      "boundary_variables_each": 16,
+      "integrated_variables": 96,
+      "action_degree": 12,
+      "grade_shift": 8,
+      "grade_dimensions": [
+        1821,
+        576,
+        240,
+        576,
+        1821,
+        4368,
+        8008,
+        11440,
+        12870,
+        11440,
+        8008,
+        4368
+      ],
+      "rank_upper_full_from_grade": 24991,
+      "even_boundary_dimension": 32768,
+      "rank_upper_even": 13951,
+      "nullity_lower_even": 18817,
+      "grade8_kernel_dimension_lower": 11049,
+      "scope": "unmodified single-cell boundary amplitude; not full physical quotient or multi-layer transfer"
+    },
+    "dv_original_kernel": {
+      "couplings": {
+        "lambda1": 1,
+        "lambda2": 0.5,
+        "mu": 0
+      },
+      "basis_masks": [
+        0,
+        3,
+        5,
+        10,
+        12,
+        15
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          -0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -0.5,
+          0.0
+        ],
+        [
+          -2.5,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "eigenvalues": [
+        -0.5811388300841898,
+        -0.5,
+        -0.5,
+        0.5,
+        0.5,
+        2.58113883008419
+      ],
+      "negative_eigenvalues": 3,
+      "partition_traces_2_3_4": [
+        8.0,
+        17.0,
+        44.75
+      ],
+      "exact_traces": [
+        "8",
+        "17",
+        "179/4"
+      ],
+      "minimum_modulus": 0.5,
+      "maximum_modulus": 2.58113883008419
+    },
+    "blocking": {
+      "positive_metric_diagonal": [
+        2.5,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "T2_eigenvalues": [
+        0.33772233983162075,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        6.662277660168381
+      ],
+      "H2_eigenvalues_at_a1": [
+        0.5427656004433219,
+        0.6931471805599453,
+        0.6931471805599453,
+        0.6931471805599453,
+        0.6931471805599453,
+        -0.9482307085514865
+      ],
+      "sign_involution_eigenvalues": [
+        -1.0,
+        -1.0,
+        -1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "scope": "finite algebraic two-step positive reconstruction only; original reflection/observable positivity and real-time process not certified"
+    }
+  },
+  "inputs_retained": [
+    "Specified original eight-site degree-12 action and two-endpoint single-cell contraction, without added boundary overlap.",
+    "Full even Grassmann boundary polynomial space as declared test domain, not a physical Fock or gauge quotient identification.",
+    "Original DV appendix 1D toy model, real couplings, mu=0 and stated Berezin orientation.",
+    "New W-positive algebraic reconstruction; original physical adjoint, observables, instruments and source dictionary remain unproved."
+  ],
+  "certification_limits": [
+    "Not the full four-dimensional transfer operator or a no-go for all spinor gravity.",
+    "A negative transfer eigenvalue does not rule out a general CP channel.",
+    "Two-step positivity retains the one-step sign involution; intermediate insertions are not automatically certified.",
+    "No common real-time matter/clock/geometry process or arbitrary-reference implementation is claimed.",
+    "No Einstein dynamics, dark-sector identification, new cognitive axiom or empirical calibration."
+  ],
+  "review_independence": "Internal non-blind independent Pascal grade counting and rational Berezin contraction; author code expands original action. Separate scope audit. Root reran both checks. Not external peer review.",
+  "new_adopted_axioms": 0,
+  "new_empirical_calibration": 0,
+  "gr_hard_deliverables_completed": 0,
+  "files_sha256": {
+    "../research_note_1195.md": "5dbef048c86a429e1df1d1184b82b3f5452c0a6f252250c9467eabc1972ea42b",
+    "admission.md": "8af4c6bc10a953d4c569bb8400dfd511383697b1ee5161ca21b6c856a391a148",
+    "baseline.json": "1804c446b2c97f7fa1be11e3f8aae9ff2813dc6227c541c2f828693ee0ba665b",
+    "proof.md": "8061ac7d001e368823e8b37c8a8188bed8be04ec085ba2a8d72fbad51023d741",
+    "sources.md": "ff138dc78033be0e51b3f81d8e46ed0cb4a2fba6679dc53ca53744068825d404",
+    "check.py": "8478c4bd9ed9fa46bf2ae1a2a7ef9cd60b564ad6cb68cd0bdc90a58111b5b7eb",
+    "results.json": "07eef9417c80b26d651b43f0f409e9304e0a99e8fb11405155c840661c38d7c7",
+    "NEXT.md": "8259dab017c962c3c5d1fbfb8d5907b49dc602270f9526654e68a709cef263d2",
+    "review.md": "a82f9ed6c63e3c9a8c797f7ae8394a33b7b02dae701a177dd067dfb988690ada",
+    "reviewer_check.py": "c53975beadc90409e21e3defe03376dd4992ecfcec41921c8afe7137614273d2",
+    "review_checks.json": "d8280235f3fcb35f7e4fa5776596a5eb2e55b7314654d6a31ebeb8669935549f",
+    "../_shared/goal.md": "8acafd3ed835d581a543de077e1e6ea6c120b6e78c7a1e271e749f263e422667"
+  },
+  "validation": {
+    "root_personally_executed": true,
+    "author_check": "PASS_WITH_SCOPE, 3 groups",
+    "reviewer_check": "PASS_WITH_SCOPE",
+    "old_acceptances_unchanged": 34,
+    "old_bindings_unchanged": 415,
+    "old_unique_scientific_files_unchanged": 358,
+    "blockers": 0
+  }
+}

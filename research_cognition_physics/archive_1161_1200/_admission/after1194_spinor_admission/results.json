@@ -1,0 +1,40 @@
+{
+  "status": "PASS_DIAGNOSTIC_ONLY",
+  "parameters": {
+    "m": 1.0,
+    "p_x": 1.0,
+    "k": 0.5,
+    "b": -0.25,
+    "T": 0.5,
+    "L": "8*pi",
+    "kL": "4*pi"
+  },
+  "same_original_input": "psi(z,x)=S(z) exp(i p_x x) phi; beta phi=phi, Sigma_x phi=phi",
+  "spin_structure_preserved": true,
+  "exact_probabilities": {
+    "twisted": "1-9/25*sin(5/8)^2",
+    "flat": "1-17/33*sin(sqrt(33)/8)^2"
+  },
+  "probabilities": {
+    "twisted": 0.8767580252311483,
+    "flat": 0.777003556365625,
+    "difference": 0.0997544688655233
+  },
+  "verification": {
+    "clifford_residual": 0.0,
+    "axial_identity_residual": 0.0,
+    "hrot_hermitian_residual": 0.0,
+    "fourier_support_error": 2.2524763065781557e-16,
+    "flat_square_identity_residual": 5.798648786885567e-15,
+    "twisted_probability_residual": 9.992007221626409e-16,
+    "flat_probability_residual": 3.3306690738754696e-16,
+    "beta_mean": 0.9999999999999998
+  },
+  "scope": "fixed-background effective Dirac kernel, known upper-spinor input; NOT a positive-energy Fock preparation or actual detector",
+  "not_proved": [
+    "composite-frame positive real-time parent",
+    "same complete stress and backreaction",
+    "controlled loop error",
+    "quantum gravity or dark sector"
+  ]
+}

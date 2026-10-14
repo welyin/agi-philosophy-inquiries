@@ -1,0 +1,78 @@
+{
+  "schema": "gr_round_acceptance_v1",
+  "date": "2026-10-13",
+  "round": 1180,
+  "status": "ACCEPTED_WITH_SCOPE",
+  "check_groups": 3,
+  "scope": "在声明的线性对称张量、严格点态规范不变正平方低阶成本类中，非退化TT只能有二次色散，两固定波数的最优相对误差为1/3。放宽同平方导数阶后，有严格正两点精确逃逸及整个固定[1,2]非零频带的高阶一致近似。同一Q/P、64个实TT振子、每模参考占据至多1、时间不超过1时，全部未知初码及任意R的完整Fock输出误差严格小于1e-4。未提供原实际钟/来源/边界实现或Einstein生成。",
+  "certified_results": {
+    "low_order_two_point_minimax_relative_error_exact": "1/3",
+    "strict_positive_cross_order_two_point_escape": true,
+    "uniform_band_k": [
+      1,
+      2
+    ],
+    "frequency_error_upper_exact": "364325745847155802203/2384185791015625000000000000",
+    "prepared_full_Fock_error_upper_exact": "1737240665833166509395285068999029426208459653209/17763568394002504646778106689453125000000000000000000",
+    "prepared_full_Fock_error_upper_display": "9.7797955191239024e-5",
+    "prepared_full_Fock_error_strict_upper_exact": "1/10000"
+  },
+  "quantum_domain": {
+    "same_canonical_Q_P": true,
+    "real_TT_oscillators": 64,
+    "reference_nmax_each_mode": 1,
+    "input_code_dimension": "18446744073709551616",
+    "time_limit": "1",
+    "full_Fock_output_and_arbitrary_reference": true,
+    "pair_creation_and_zero_point_energy_retained": true,
+    "zero_modes_only_common_free_spectators": true,
+    "not_arbitrary_unbounded_energy_inputs": true
+  },
+  "numerical_authority": "以作者及独审一致的精确有理字段为准；上展示9.7797955191239024e-5。全带界来自解析证明，不是有限谱点采样或Fock输出截断。",
+  "review_independence": "Internal non-blind review: direction/quantifier discussions disclosed; independent rational jet, Ricci, binomial band and same-Q/P Duhamel implementation preceded reading author code.",
+  "development_disclosure": "严格点态低阶正成本是额外候选模型类；32阶只满足公开粗界，不宣称全体逼近中的最优阶数。较高空间导数是存在性逃逸，不是由认知原则选出的物理系数。",
+  "inputs_retained": [
+    "三维线性对称张量、线性空间规范变换、平移/SO(3)/常系数、正超局域动能、无p-h交叉、低阶点态不变量正平方及TT非退化",
+    "放宽导数混合后的具体高阶系数、正基底1e-12及固定非零[1,2]比较频带",
+    "边长2pi周期盒及0<|k|<=2的TT Fourier调节器、共同Q/P与声明有限能源准备码",
+    "任意同一完整后续仪器的数学收缩不等于获得实际原钟、局域器件、来源或边界权限"
+  ],
+  "two_distinct_scopes": {
+    "low_order_obstruction": "仅排声明低阶正成本类的线性TT传播；不是所有认知或局域量子模型的反证",
+    "finite_band_escape": "任意固定且下端点严格正的频带可采用有限更高导数阶；当前证书固定[1,2]，不统一覆盖k趋零或无穷UV"
+  },
+  "new_adopted_axioms": 0,
+  "new_empirical_calibration": 0,
+  "gr_hard_deliverables_completed": 0,
+  "hard_deliverable_progress": {
+    "common_dynamic_geometry": "partial: earlier material geometry connections retained; 1180 is a conditional TT cost-class comparison, not an actual common clock/position/source implementation",
+    "complete_common_source_and_backreaction": "partial: prior reciprocal source connection retained; complete interaction, participant response and actual boundary selection remain open",
+    "nonlinear_Einstein_dynamics": "not completed"
+  },
+  "files_sha256": {
+    "../research_note_1180.md": "dd819b5eee437ce31ce117e13deeb50df4ac9013486fe086f00a7087b9b147f7",
+    "admission.md": "8d8a9c07737d660ca4c0e838c45368abacfb8d137678729aa2a521263a37e9d5",
+    "proof.md": "5125a890b5f9e32d22560fbdd91ae1d57a3fd6ee49ed2a3f9eb5745d1cf2e82c",
+    "check.py": "67efccd2eb77db14d77c742154d5ea9e25d9d694d12498de5b3ea638a69f7b60",
+    "results.json": "468d2c345d26be824ce8060bc3016d76609fd50fa747fa0e37df344d8678d3e7",
+    "NEXT.md": "f1613379fff3f024004aae11f693b4be8043c33a074c1601d67e952c5a348a57",
+    "../../archive_342_369/research_note_343.md": "6b3622ae728c4fcfd1280f3b903cc2e1e92cbe4380439ae62204d5af5a974d85",
+    "../../archive_342_369/research_note_358.md": "e37029d318b84e7b54e7a6a0f3bbc74170f0122c96d91f8784de9828826f1595",
+    "../../archive_702_741/research_note_739.md": "9f5d670c015686dddccb5a9d70ca0ddbfa8b1a59f9874281394778bc2c14e32d",
+    "review.md": "b87657295cdb89e1d1545b7ca5548e2105b4babf412359b073efbcb3388d7f42",
+    "reviewer_check.py": "31c8573ef03a9151e3a7abdc570f6f1fd9fcf5f5d31467592cd438452279cb91",
+    "review_checks.json": "f090fba6baa29e69ab0c7f91b45f80cedff26d408b98384701606acfac1d623f"
+  },
+  "validation": {
+    "author_default": "READ_ONLY_MATCH; exit 0, 3 groups, root personally confirmed",
+    "independent_default": "READ_ONLY_MATCH; exit 0, 3 groups, root personally confirmed",
+    "groups": 3,
+    "blockers": 0,
+    "old_science_rerun": false
+  },
+  "next": "NEXT.md",
+  "scope_audit": "../_admission/after1179_boundary/README.md",
+  "resource_principle_audit": "../_admission/after1179_boundary/resource_principle_scope.md",
+  "scope_audits_not_scientific_groups": true,
+  "mutable_direction_not_a_frozen_scientific_dependency": true
+}

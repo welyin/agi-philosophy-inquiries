@@ -1,0 +1,121 @@
+{
+  "schema": "unnumbered_dynamic_quadrupole_normal_parent_v1",
+  "status": "PASS_MATHEMATICAL_PARENT_WITH_SCOPE",
+  "numbered_round": null,
+  "new_scientific_groups": 0,
+  "check_groups": 3,
+  "smearing_and_complete_norm": {
+    "radius": "1/4",
+    "split_k": "4",
+    "pi_times_I0": "776160/4199",
+    "pi_times_I2": "10644480/221",
+    "I_minus2_upper": {
+      "exact": "153928/37791",
+      "display_float": 4.073139107194835
+    },
+    "L_squared_upper": {
+      "exact": "344975616/4199",
+      "display_float": 82156.61252679209
+    },
+    "S_squared_upper": {
+      "exact": "88662528/4199",
+      "display_float": 21115.15313169802
+    },
+    "W_norm_upper": {
+      "exact": "125412112/2223",
+      "display_float": 56415.70490328385
+    },
+    "declared_rational_bounds": {
+      "L": 300,
+      "S": 150,
+      "w": 60000
+    },
+    "mass_monopole_and_self_terms_included": true,
+    "momentum_or_fock_cutoff": false
+  },
+  "coefficient": {
+    "population_prefactor": "5/16",
+    "integral_a_squared_div_pi": "5775/262144",
+    "integral_adot_squared_div_pi": "4725/65536",
+    "I_C": {
+      "exact": "-22700475/27917287424",
+      "display_float": -0.0008131332623843963
+    },
+    "setting_difference_leading_coefficient": {
+      "exact": "22700475/13958643712",
+      "display_float": 0.0016262665247687926
+    },
+    "sign_convention": "Delta p=p(A+)-p(A-); coefficient multiplies g^2*(xi-1)",
+    "readout": "all-head all-field nonselective B Y effect",
+    "whole_operator_replaced_by_mean": false
+  },
+  "finite_coupling_budget": {
+    "g": "1/1000000000000000",
+    "T": "pi",
+    "T_upper": "22/7",
+    "xi_range": [
+      0,
+      2
+    ],
+    "deviation_test": "abs(xi-1)>=1/2",
+    "u": {
+      "exact": "33/17500000000000",
+      "display_float": 1.8857142857142856e-12
+    },
+    "v": {
+      "exact": "33/175000000000000000000000000",
+      "display_float": 1.8857142857142858e-25
+    },
+    "second_vector_bound_d": {
+      "exact": "4587/1225000000000000000000000000",
+      "display_float": 3.744489795918367e-24
+    },
+    "vector_tail_r3": {
+      "exact": "26489925000000133402499995004757/3751562499992925624999999292562500001334025000000000000000000000000",
+      "display_float": 7.061037900887986e-36
+    },
+    "single_probability_tail": {
+      "exact": "32450158124954999167921862761654650017002558361251153901132998395448887/1148916015620666945312503652146093751634180624998500055640624845920112500145275322500000000000000000000000",
+      "display_float": 2.8244151603565896e-35
+    },
+    "two_setting_probability_tail": {
+      "exact": "32450158124954999167921862761654650017002558361251153901132998395448887/574458007810333472656251826073046875817090312499250027820312422960056250072637661250000000000000000000000",
+      "display_float": 5.648830320713179e-35
+    },
+    "minimal_leading_difference": {
+      "exact": "908019/1116691496960000000000000000000000000000",
+      "display_float": 8.131332623843964e-34
+    },
+    "normal_parent_difference_lower": {
+      "exact": "388305576112629187803515926015518512254821641693344956402390971332400176367608394408451/513193898145904525869844063328195419251550243373041369955189060392119910543534286941548707840000000000000000000000000000",
+      "display_float": 7.566449591772646e-34
+    },
+    "simple_strict_lower": "7/10000000000000000000000000000000000",
+    "hamiltonian_positivity_margin": {
+      "exact": "399999999999999999999999979/200000000000000000000000000",
+      "display_float": 2.0
+    },
+    "hypothetical_actual_probability_error_each": "1/100000000000000000000000000000000000",
+    "conditional_actual_difference_lower": {
+      "exact": "29534507667946179475478050371012078427327393502022197578381811728481076418495133489814064519/40093273292648791083581567447515267129027362763518857027749145343134368011213616167308492800000000000000000000000000000000000",
+      "display_float": 7.366449591772645e-34
+    },
+    "actual_matching_certified": false,
+    "uniform_unknown_matter_and_reference": true,
+    "field_preparation": "normal vacuum; full Fock output retained",
+    "zero_source_head_boundary_scope": "prepared head image only, not every head state"
+  },
+  "source_sha256": {
+    "archive_935_955/research_note_940.md": "a89fba08345b124b3b8ffbab2a281345bb42cd5312b62f6019c9f9b7bd21cd71",
+    "archive_1161_/1171/proof.md": "ecf48b81b9b42a21bcf7007b386bae16132cb9849e3fc939f02c398860e8d4ea",
+    "archive_1161_/_admission/after1185_quadrupole_screen/proof.md": "563e263b6106a9583f338998a2e84b3cb885162647afab41a86311be7468dfff"
+  },
+  "proof_sha256": "50b7c1c527217a8714b241255b36caac5fcfd82f2e3762acef27f7c7a40d7686",
+  "code_sha256": "ddbcd3ab9ed269787a6412603878c356b402ca8455ced0a9ab99d7521910df7b",
+  "not_certified": [
+    "Dynamic COM, body frame, support and full recoil matching.",
+    "Finite fresh setting operation and actual terminal instrument accuracy.",
+    "All-order Ward identity, nonlinear Einstein dynamics or physical xi selection.",
+    "Feasibility of detecting a probability difference of order 1e-34."
+  ]
+}

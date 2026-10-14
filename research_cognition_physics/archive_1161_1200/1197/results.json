@@ -1,0 +1,71 @@
+{
+  "schema": "same_macro_state_source_response_1197_v1",
+  "status": "PASS",
+  "check_groups": 2,
+  "source_interval": {
+    "weights": 274625,
+    "Ehop": {
+      "lo": "-4566364241663778257808224235891/500000000000000000000000000000",
+      "hi": "-1141591060414790135563327510993/125000000000000000000000000000",
+      "float_lo": -9.132728483327556,
+      "float_hi": -9.13272848331832
+    },
+    "b": {
+      "lo": "-3480026936437450648407190062057/1000000000000000000000000000000",
+      "hi": "-3480026936434063459956840704021/1000000000000000000000000000000",
+      "float_lo": -3.4800269364374508,
+      "float_hi": -3.4800269364340632
+    },
+    "r": {
+      "lo": "3515762716439585483271491321127/1000000000000000000000000000000",
+      "hi": "439470339555367280353501226711/125000000000000000000000000000",
+      "float_lo": 3.5157627164395855,
+      "float_hi": 3.5157627164429384
+    },
+    "delta_Ehop": {
+      "lo": "1337457121014201487264302079521/500000000000000000000000000000",
+      "hi": "1337457121015553984836745845061/500000000000000000000000000000",
+      "float_lo": 2.674914242028403,
+      "float_hi": 2.674914242031108
+    },
+    "delta_force": {
+      "lo": "58513749044371315067813215979/62500000000000000000000000000",
+      "hi": "936219984710887789385722091543/1000000000000000000000000000000",
+      "float_lo": 0.936219984709941,
+      "float_hi": 0.9362199847108877
+    },
+    "negative_acceleration_coefficient_magnitude": {
+      "lo": "266292142052509913358261444179/1000000000000000000000000000000",
+      "hi": "133146071026516573001557892821/500000000000000000000000000000",
+      "float_lo": 0.2662921420525099,
+      "float_hi": 0.26629214205303314
+    },
+    "full_preparation_energy_per_site_copy_lower_at_K2": {
+      "lo": "3138266155680111328574047213891/1000000000000000000000000000000",
+      "hi": "3138266155684221106268048364391/1000000000000000000000000000000",
+      "float_lo": 3.1382661556801112,
+      "float_hi": 3.1382661556842213
+    },
+    "all_K_at_least_2_acceleration_difference_abs_lower": "133/1000"
+  },
+  "exact_Pauli_checks": [
+    {
+      "copies": 1,
+      "Hamiltonian_terms": 8,
+      "exact_double_commutator_difference_terms": 0
+    },
+    {
+      "copies": 2,
+      "Hamiltonian_terms": 22,
+      "exact_double_commutator_difference_terms": 0
+    },
+    {
+      "copies": 3,
+      "Hamiltonian_terms": 44,
+      "exact_double_commutator_difference_terms": 0
+    }
+  ],
+  "scope": "Two equal coarse initial states have different exact finite-K relation curvature; only rejects this memoryless source summary. No certified finite-time instrument gap or GR exclusion.",
+  "code_sha256": "747191bd9c69f7ca8ffaf0bc3911a818863b681e32fa7bbec267aa006c3a927e",
+  "inherited_interval_code_sha256": "eaa0901c5c4ba70f893c68545bae9cbf0ace075f773f0fce2af6f401bc4b62e0"
+}

@@ -1,0 +1,109 @@
+{
+  "schema": "1215-finite-balance-window-author-v1",
+  "status": "PASS",
+  "all_checks_passed": true,
+  "check_groups": 7,
+  "groups": [
+    {
+      "name": "complete finite amplitude calibration",
+      "max_error": 0.0,
+      "material_dimension": 2,
+      "carrier_dimension": 6,
+      "exchanges": [
+        {
+          "input_energy": 0,
+          "material_change": 0.5,
+          "carrier_change": -0.5
+        },
+        {
+          "input_energy": 1,
+          "material_change": -0.5,
+          "carrier_change": 0.5
+        }
+      ],
+      "full_SR_checked": true
+    },
+    {
+      "name": "balance address deletion",
+      "max_error": 0.0,
+      "normalized_unital_defect": "1/2",
+      "unknown_information_map": "|i> -> |1+i>_C",
+      "full_SR_isometry_checked": true,
+      "example_carrier_gain": 0.3507265887863
+    },
+    {
+      "name": "population calibration is insufficient",
+      "max_error": 0.0,
+      "exact_output": [
+        [
+          "1/2",
+          "-3/8"
+        ],
+        [
+          "-3/8",
+          "1/2"
+        ]
+      ],
+      "output_eigenvalues": [
+        "1/8",
+        "7/8"
+      ],
+      "normalized_unital_defect": "3/8",
+      "all_transition_probabilities": "1/2",
+      "late_energy_copy_defect": "0"
+    },
+    {
+      "name": "terminal record and feedback distinction",
+      "max_error": 0.0,
+      "terminal_QND_unital": true,
+      "record_entropy_for_maximally_mixed_input": 0.6931471805599,
+      "record_blank_distance": "1/2",
+      "whole_SK_feedback_unital": true,
+      "reduced_S_feedback_defect": "1/2"
+    },
+    {
+      "name": "1209 finite member with retained copy",
+      "max_error": 0.0,
+      "material_dimension": 9,
+      "carrier_dimension": 7,
+      "pointer_dimension": 2,
+      "full_SR_Gram_checked": true,
+      "population_drift": 0.4444444444444,
+      "amplitude_rule_checked_for_all_safe_columns": true
+    },
+    {
+      "name": "finite calibration and leakage transport",
+      "all_checks_passed": true,
+      "angle": 0.05,
+      "support_leakage": 0.01,
+      "safe_operator_error": 0.0499947918294,
+      "analytic_half_diamond_upper": 0.1499947918294,
+      "simple_upper": "3/20",
+      "tested_full_SR_distance": 0.0151918072433,
+      "tested_normalized_unital_defect": 0.0061856706848,
+      "diamond_bound_from_analytic_isometry_not_numerical_optimization": true
+    },
+    {
+      "name": "positive autonomous endpoint with resident interaction",
+      "max_error": 0.0,
+      "G_min": 0.0,
+      "G_max": 3.9269908169872,
+      "bare_energy_and_G_conserved": true,
+      "free_phase_retained": true,
+      "not_spatial_clock_or_QQ_implementation": true
+    }
+  ],
+  "code_sha256": "9b056c4b7970c623c89448eb2c912a91f1e837bb7948abe59ad0901e2aa6631e",
+  "source_sha256": {
+    "archive_370_428/research_note_421.md": "becfc4c403479ece38478034d2baac9c91a4caa21e11586fd354b0fe22635b37",
+    "archive_429_466/research_note_457.md": "f4779b245cfe934763a9c9ab0325b742bb485b639effe348b9086a77ce63920f",
+    "archive_1009_1043/research_note_1037.md": "08bd919e709844bf158104b77a552e6d80ab28bb82e18857c270e5fa5bd4cd05",
+    "archive_1201_/_shared/four_laws_dependency_after1211.md": "e2a54fe6500ff818364ede719b839138f66c3a66f2e08ec898ee355aaef47ce0",
+    "archive_1201_/1209/proof.md": "9c2eecc8d9a372996f3c317f65613ecbecfad54486fc4a5f23bcf72fa7897e47",
+    "archive_1201_/1209/results.json": "2b6befefebf30f83e9d155059bc604ac76f42b55ee047dad00064df7f69dfdd1",
+    "archive_1201_/1213/proof.md": "b7a8a2212d376d134705d1ce0c46059a36a5203562e4c4fc753335d7980ab010",
+    "archive_1201_/1214/proof.md": "5155aa6794a80836dfb9f7ad76782b5baff92f610451ce60b5bbb73615c08359",
+    "archive_1201_/1214/results.json": "146a59b19baa03a15997fc58895118586ccb022d52b9e87334713971199e888a"
+  },
+  "scope": "Finite mathematical window contract and deletion checks. No adoption of new cognitive axioms; no native QQ, spatial apparatus, or four-law completion certificate."
+}

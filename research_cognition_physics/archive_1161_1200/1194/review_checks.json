@@ -1,0 +1,76 @@
+{
+  "status": "PASS_WITH_SCOPE",
+  "review_type": "internal non-blind independent mathematical review",
+  "clock": {
+    "method": "exact binomial spectral moments plus frozen FK intertwining",
+    "head_mean": "3/2",
+    "head_variance": "3/4",
+    "compressed_energy": "37/2+2*sqrt(19)",
+    "compressed_second_moment": "419+74*sqrt(19)",
+    "head_probability_identity_max_error": 2.220446049250313e-16,
+    "scope": "old device energy compression only; curved stress and physical filtering not identified"
+  },
+  "sharp_filter": {
+    "success_probability": "1/2",
+    "conditional_joint_distance": "1/3",
+    "conditional_reference_distance": "1/3",
+    "full_flag_reference_preserved": true,
+    "general_bound_proof": "purification overlap and completed-square spectral inequality"
+  },
+  "noncommuting": {
+    "fixed_cases": 5,
+    "delta_exact": "1/1000",
+    "maxima": {
+      "identity": 1.1102230246251565e-16,
+      "joint": 0.0009999995000003923,
+      "cq": 0.0009999991250008665,
+      "effect_excess": 0.0,
+      "full_flag_R": 1.494683490566967e-16
+    },
+    "effects_not_commuting_with_energy": true,
+    "positive_total_insufficient": true,
+    "scope": "finite mathematical effects and states; no actual CO hardware or common source"
+  },
+  "endpoint": {
+    "exact_author_budget": {
+      "exact": "44345176546834702186370498554487545444736825256523811075509918450563/7148967753312257756354685882924980563947354380436509229591598708802500",
+      "float": 0.006203018124719993
+    },
+    "exact_margin": {
+      "exact": "11395195452702204216224605251974637005789310813063507063262545022109/14297935506624515512709371765849961127894708760873018459183197417605000",
+      "float": 0.0007969818752800071
+    },
+    "independent_conservative_bound": {
+      "exact": "30996379/4996982500",
+      "float": 0.006203019322160924
+    },
+    "fixed_threshold": "7/1000",
+    "closed_tail_example": {
+      "r00": "1/10000",
+      "tail": "1/200"
+    },
+    "fixed_center_and_same_state_required": true
+  },
+  "bound_files_sha256": {
+    "1194/proof.md": "4483ad31b6c559e2d12454c63c434e28092e0a2e335ec7fe5dcb9a0ae268fb54",
+    "1194/admission.md": "462b0f01cc413f57b936f5b5c026f53e65726c337f32a9d2e61044e2b50154b5",
+    "1194/sources.md": "77796cd97d01885a12f0b8285b5e2ffdd735ee037209ea7d494c798c06126194",
+    "1194/check.py": "1cd5cf2ef94c0931666321bc5f7bc7423e1dfa7657cefc1637d8c2af42484026",
+    "1194/results.json": "367aec5ad566b6dfd3ff78ee97c55dd615f1cecba5347e7a9a0f3cc56962b6dc",
+    "1194/baseline.json": "fd62024765056866fba2f4f27320def2dd5ea5d1ffbdf50415a1ae5a41bc7a17",
+    "1194/NEXT.md": "97b6b8d609a0f02c42cc5923ac857933722080fbd333d909abc0d69aa4815b70",
+    "research_note_1194.md": "c8aa0993b44899b478d83de5c3cfca2b047a248033ae40ab44374f4f3d7891ba",
+    "reused/research_cognition_physics/archive_1106_1119/1112/check.py": "6e49d71ec5535fd6999432481938663a5543e2704db993ec7a00b8f475b6cd9f",
+    "reused/research_cognition_physics/archive_1106_1119/1112/proof.md": "6ba86beebe49d3b5050b2974d4dd4bd889cea8622c4050873814f2cb6010e0bd",
+    "reused/research_cognition_physics/archive_1161_/1193/results.json": "3e10a60051581a31ea6b01c3c9a33533132766ae9ae75c6950ead5af5afd2448"
+  },
+  "scope": {
+    "finite_probability_bridge": true,
+    "original_CO_instrument_implemented": false,
+    "proper_time_calibration_certified": false,
+    "physical_energy_filter_nondisturbing": false,
+    "curved_stress_equals_clock_H_certified": false,
+    "Einstein_dynamics_generated": false,
+    "gr_goal_complete": false
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema": "operational_thermodynamics_round_acceptance_v1",
+  "round": 1206,
+  "date": "2026-10-14",
+  "status": "ACCEPTED_WITH_SCOPE",
+  "check_groups": 2,
+  "scope": "原四能级材料全部有限固定份数的精确保裸能操作均固定任意对角同态产品边缘，不选择Gibbs；原完整QQ接触的满秩裸平稳独立产品全时不变仅有最大混合。给原冷参考非零交换子、近共振有限精度边界与另一材料的转换秩删弱例；不新增实际操作权限。",
+  "certified": {
+    "all_finite_fixed_n_integer_resonance_lattice": "{0}",
+    "all_bare_energy_preserving_unitaries_fix_diagonal_iid_marginal": true,
+    "arbitrary_purifying_reference_joint_state_fixed": false,
+    "full_QQ_stationary_full_rank_product_unique": "I4/4 tensor I4/4",
+    "native_cold_commutator_strict_interval": [
+      ".0003202089318",
+      ".0003202089319"
+    ],
+    "no_n_uniform_positive_occupation_gap": true,
+    "finite_n30_occupation_types": 5456,
+    "finite_n30_minimum_gap_strict_interval": [
+      ".0004237212509",
+      ".0004237212510"
+    ],
+    "alternative_qutrit_exchange_conversion_deletion_ranks": [
+      4,
+      5,
+      3
+    ],
+    "finite_log_constraint_bound_requires_actual_preparation_implementation_readout_errors": true
+  },
+  "remaining_inputs": [
+    "native h and Q, fixed copy number and selected operation permissions",
+    "full-rank independent bare-stationary products for QQ uniqueness only",
+    "explicit alternative conversion/readout permissions and finite error parameters",
+    "full auxiliary return, work and correlation rules for future equilibrium selection",
+    "same actual region/clock/physical-flow identity for geometry"
+  ],
+  "limits": [
+    "marginal invariance need not preserve correlations with R",
+    "bare energy preserving is not all cyclic work extraction",
+    "all-time stationary is not one-time zero directed flow",
+    "full-rank diagonal product is not correlated interacting Gibbs",
+    "no new physical apparatus, axiom, or geometry identity"
+  ],
+  "new_adopted_axioms": 0,
+  "new_empirical_calibration": 0,
+  "GR_hard_deliverables_completed": 0,
+  "stage_complete": false,
+  "root_executed_both_codes": true,
+  "review": "Scoped independent standard-library exact algebra, separate spectral-projector cold witness, rational ranks and interval spectra; root proof/scope audit; no empirical test.",
+  "files_sha256": {
+    "proof.md": "3c46636ae5df10e3102aa1c71489f6f12923df4d1275bbedff91ba70265ee612",
+    "check.py": "3cbb11d2f0236ec73a7ad572558318fe76e4ef5ad188f66b26a8934c87e6c5b1",
+    "results.json": "0b7e0023fcad17fcd49178ab790c369141b169289188b4a8c88c810b47cfdbbc",
+    "independent_check.py": "1c80f4bbd00497a3dc01e4a5bbce49c61e6a1bc7aeb597f3c0691404179482ec",
+    "independent_results.json": "9173a6eb4d14980d733160808ca0224a908dc5654d055857cbdc5461760bb139",
+    "independent_review.md": "8c2e4da9fe7a6d2967de55ccef4158c62b7e0c51113f1558dc24c14db5b9f724",
+    "NEXT.md": "e8f505676ce8415fbdab391d07fdfb951dbb0dee5436c01961446f1cb3a7a38a",
+    "../research_note_1206.md": "36c6a9560433d3cfe77f963edecf53cc3a00e6c14538bb4a6b286d8298b6723e",
+    "../_shared/goal.md": "5ebfd7cd14daec1d26010925774f510a78d0672cab518b77a03de454b8a377d7"
+  }
+}

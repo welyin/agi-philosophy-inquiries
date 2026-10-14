@@ -1,0 +1,91 @@
+{
+  "schema": "gr_round_acceptance_v1",
+  "date": "2026-10-14",
+  "round": 1199,
+  "status": "ACCEPTED_WITH_SCOPE",
+  "check_groups": 2,
+  "scope": "原Gu-Wen L型4^3周期、p=5有限Weyl对象的无缺陷扇区中，完整H方差=3000(g^2+J^2)；仅依S,V标签的任何来源无法代表完整能源，即使允许加性零点。J=g=1时来源单位误差>77，有限U=2000可隔离整个扇区。只拒绝原标签直接能源身份，不排窄窗口、非线性几何/边界来源或GR。",
+  "certified_results": {
+    "box": [
+      4,
+      4,
+      4
+    ],
+    "qudit_prime": 5,
+    "qudits": 384,
+    "constraint_ranks": {
+      "scalar": 63,
+      "vector": 189
+    },
+    "code_dimension": "5^132",
+    "integer_commutators_max_abs": {
+      "S_V": 0,
+      "R_V": 0,
+      "T_S": 0
+    },
+    "variance_g_squared_coefficient": "3000",
+    "variance_J_squared_coefficient": "3000",
+    "mixed_covariance": "0",
+    "J_g_one_variance": "6000",
+    "J_g_one_error_strict_lower": "77",
+    "positive_shifted_finite_band": {
+      "J": "1",
+      "g": "1",
+      "U1": "2000",
+      "U2": "2000",
+      "dynamic_operator_norm_upper": "2880",
+      "constant_positive_shift": "2880",
+      "whole_code_energy_interval": [
+        "0",
+        "5760"
+      ],
+      "outside_code_energy_strict_lower": "6875",
+      "band_separation_strict_lower": "1115",
+      "qualifier": "The whole protected band is isolated by a chosen finite penalty; no variance bound is claimed for every narrower energy window."
+    }
+  },
+  "inputs_retained": [
+    "Gu-Wen L-type finite local algebra, cubic periodic geometry and Hamiltonian are candidate inputs.",
+    "The tested identity is a fixed self-adjoint spectral function of all original S,V defect labels equal to nonzero multiple of full H plus a constant.",
+    "Whole invariant code sector; J,g positive, with one J=g=1 and U1=U2=2000 finite isolated-band example."
+  ],
+  "certification_limits": [
+    "Does not derive 3D, a graviton spectrum, actual instruments, or common material/geometry dynamics.",
+    "No bound asserted for every smaller energy window or arbitrary effective encoding.",
+    "Linear GR constraints need not equal the full energy; nonlinear geometric contributions and boundary energy remain allowed.",
+    "No no-go for Gu-Wen as a whole, the N type, GR, cognitive axioms, or dark sectors."
+  ],
+  "review_independence": "Independent agent rebuilt finite integer stencils and quotient traces without importing author code; root executed both saved programs and checked scope with a second read-only reviewer. Internal non-blind mathematical review; no experimental validation.",
+  "new_adopted_axioms": 0,
+  "new_empirical_calibration": 0,
+  "gr_hard_deliverables_completed": 0,
+  "files_sha256": {
+    "../research_note_1199.md": "5d9c0ad4d1abe2c60d4b58948503df7f8171139aa7ddfbd58742ff300fefb4dc",
+    "check.py": "ec8b1e80b52e264c78c2bb394bebd117452ac792fda69097d3f910f6a5b600bd",
+    "independent_check.py": "1f7b08950608836f2c98999632b8da9aba5cdfae6e662eea03d9b51256af757b",
+    "independent_results.json": "78c894bfc3e268e4e132fd60963f90a1a846757af3fa5c821a94806ff120a526",
+    "NEXT.md": "2b15d9a171e5c5eb253c4e67af5473b32fc2aed88b0358110098d55834b660bd",
+    "proof.md": "13fbce5093f341b80a5f72bebc0b8853f2720366bd31d7b5322e7532c841f861",
+    "results.json": "56d4cdfff297b10a49b4a788af8a124f71a9fdee37b50db0ee35bd165953caf9",
+    "review.md": "5aaedcf875e516c7e26a492fb4183b6d96085c1389eddc64264869b34cfa6237",
+    "../_shared/goal.md": "8acafd3ed835d581a543de077e1e6ea6c120b6e78c7a1e271e749f263e422667"
+  },
+  "validation": {
+    "root_personally_executed": true,
+    "executions": [
+      {
+        "script": "check.py",
+        "result": "results.json",
+        "status": "PASS_EXACT_FINITE_ALGEBRA"
+      },
+      {
+        "script": "independent_check.py",
+        "result": "independent_results.json",
+        "status": "PASS_INDEPENDENT_EXACT_FINITE_CODE"
+      }
+    ],
+    "old_acceptances_unchanged": 38,
+    "old_bindings_unchanged": 466,
+    "old_unique_scientific_files_unchanged": 404
+  }
+}

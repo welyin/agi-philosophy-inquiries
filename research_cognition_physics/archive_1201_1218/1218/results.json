@@ -1,0 +1,151 @@
+{
+  "schema": "1218-cross-segment-safe-window-v1",
+  "status": "PASS",
+  "all_checks_passed": true,
+  "check_groups": 8,
+  "groups": [
+    {
+      "name": "safe cross-material closure",
+      "max_error": 0.0,
+      "carrier_dimension": 7,
+      "material_dimension": 4,
+      "unknown_R_dimension": 3,
+      "initial_materials_need_not_be_independent": true,
+      "same_carrier_not_reset": true
+    },
+    {
+      "name": "positive common-phase representation",
+      "max_error": 0.0,
+      "phase_terms": 19,
+      "minimum_weight": 0.000179763526,
+      "weight_sum": 1.0,
+      "same_phase_for_all_contacts": true,
+      "not_a_new_physical_register": true
+    },
+    {
+      "name": "shared carrier cannot be resampled",
+      "max_error": 0.0,
+      "same_carrier_final_zero_probability": "1",
+      "reset_comparison_final_zero_probability": "1/2",
+      "output_distance": "1/2",
+      "not_a_new_claim_about_1216_actual_A": true
+    },
+    {
+      "name": "actual middle nonfeedback QND",
+      "max_error": 0.0,
+      "middle_record_zero_probability": "1/2",
+      "terminal_record_zero_probability": "1",
+      "both_material_channels_unital": true,
+      "pointer_entropy": 0.6931471805599,
+      "pointer_blank_distance": "1/2",
+      "all_records_retained": true
+    },
+    {
+      "name": "same finite carrier path deletion",
+      "max_error": 0.0,
+      "exact_joint_probabilities": [
+        "1/8",
+        "3/8",
+        "3/8",
+        "1/8"
+      ],
+      "normalized_unital_defect": "1/4",
+      "different_energy_labels_initial_probability": "1/2",
+      "different_energy_labels_final_probability": "3/4",
+      "A_B_means_each": "1/2",
+      "C_initial_and_final_mean": "2",
+      "carrier_exact_matrix": [
+        [
+          "1/8",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "3/8",
+          "0",
+          "1/4",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1/4",
+          "0",
+          "3/8",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1/8"
+        ]
+      ],
+      "carrier_exact_spectrum": [
+        "5/8",
+        "1/8",
+        "1/8",
+        "1/8",
+        "0"
+      ],
+      "material_final_entropy": 1.2554823251788,
+      "carrier_final_entropy": 1.0735428464085,
+      "total_final_entropy": 1.3862943611199,
+      "fresh_preparation_each_stage_is_unital": true,
+      "AB_C_final_mutual_information": 0.9427308104674
+    },
+    {
+      "name": "reachable operator calibration and path error",
+      "max_error": 0.0,
+      "safe_eta_squared": "0",
+      "deleted_path_eta_squared": "1/2",
+      "calibration_a_squared": "4/2501",
+      "strict_half_diamond_upper": "1/25",
+      "prepared_isometry_error": 0.0399920023992,
+      "tested_full_SR_distance": 0.0004829906447,
+      "tested_normalized_unital_defect": 0.0003996801919,
+      "uses_operator_supremum_not_average_path_probability": true
+    },
+    {
+      "name": "initial carrier independence is not recreated midway",
+      "max_error": 0.0,
+      "initial_material_marginal": "I/2",
+      "correlated_final_material": "|0><0|",
+      "independent_same_marginals_final_material": "I/2",
+      "not_a_counterexample_to_safe_independent_protocol": true
+    },
+    {
+      "name": "all boundaries and longer same-carrier protocol",
+      "max_error": 0.0,
+      "number_of_contacts": 3,
+      "all_material_dimension": 4,
+      "carrier_dimension": 7,
+      "same_A_contacted_again": true,
+      "all_complete_boundary_columns_checked": true,
+      "arbitrary_material_reference_channel_checked": true
+    }
+  ],
+  "code_sha256": "b5408f396974ece29d25fdaec0f4d282e7575fddd0719b37b4d8d8dd4b9c1f8c",
+  "source_sha256": {
+    "archive_370_428/research_note_421.md": "becfc4c403479ece38478034d2baac9c91a4caa21e11586fd354b0fe22635b37",
+    "archive_429_466/research_note_457.md": "f4779b245cfe934763a9c9ab0325b742bb485b639effe348b9086a77ce63920f",
+    "archive_1009_1043/research_note_1037.md": "08bd919e709844bf158104b77a552e6d80ab28bb82e18857c270e5fa5bd4cd05",
+    "archive_1201_/1209/proof.md": "9c2eecc8d9a372996f3c317f65613ecbecfad54486fc4a5f23bcf72fa7897e47",
+    "archive_1201_/1214/proof.md": "5155aa6794a80836dfb9f7ad76782b5baff92f610451ce60b5bbb73615c08359",
+    "archive_1201_/1215/proof.md": "dafdc8e6c8ed950586640d7e7051d6440247a8ececdb515572b3759512000b3b",
+    "archive_1201_/1215/results.json": "d5aa3940946635b56ff7f85774bfde3c6b545cd12052548f9057b413c6555c9c",
+    "archive_1201_/1216/proof.md": "11afbcd22dae59cbd2a5c98dd4dd6ba4aee13976745a0b3753446c7179109928",
+    "archive_1201_/1216/results.json": "21f4b6f33bbcae2e3b34a1e6931026d4799feceee9cf9494ddb3d2a2f8fa5b96"
+  },
+  "scope": "Finite endpoint qualification and path deletion. Known lift homomorphism reused. No Markov, controller, four-law completion, or uniform time/resource assumption."
+}

@@ -1,0 +1,313 @@
+{
+  "schema": "round1168_independent_review_v1",
+  "date": "2026-10-13",
+  "status": "PASS_WITH_SCOPE",
+  "blocking_findings": [],
+  "review_role": "Independent analytic and computational verification after disclosed advance scope and probability-window suggestions; not a blind review. Reviewer did not author or mutate the six scientific core files.",
+  "core_sha256": {
+    "../research_note_1168.md": "9859deb6fb58547dd107b9c14624b941107de6f1ac41b059c3701345e883c441",
+    "admission.md": "70b0331643ef7f2168010fcd1a13e2e27960eef083b257e83a4702b871e6abc1",
+    "proof.md": "c5674849ab457dd3b6a4bba2d0ce81b03263f94c1b3881303aa76821e46c7711",
+    "check.py": "fbd033b53b3df2484fd359867dee43e3bea7fd9c6e06983847e19ac261e74b6d",
+    "results.json": "64822d73d9dadef64d53742c1468a380aa0ac58ba2bdd12e0f7385dc9adc0777",
+    "NEXT.md": "32b722438b79555f31349a3370f06e24a628c2078b3ab86625ab2f50b838083e"
+  },
+  "sources_sha256": {
+    "archive_1106_1119/1106/proof.md": "3cf66b629a49e00a6503b68e516f67bdd5b9fecd258447e90156b15cf87fb8cb",
+    "archive_1106_1119/1112/check.py": "6e49d71ec5535fd6999432481938663a5543e2704db993ec7a00b8f475b6cd9f",
+    "archive_1106_1119/1119/proof.md": "b4a97154a8302a49c4f4f6788f615909b4849820bfa42e3bf11574c16808008d",
+    "archive_1120_1158/1158/proof.md": "8d05617c800014afd8965eaf51874fa3235e16cf2e49a2918ad00ebe5a8e7608",
+    "archive_1161_/1166/proof.md": "02335c08c46865b438b075a0d8475e143fc113e01eb711f725b96e4290bb0812",
+    "archive_1161_/1166/results.json": "d1bf0dc11287685e6eb54b0b4c6a9af36c11b7bca82a51af86d8fd57ec3e7cf3",
+    "archive_1161_/1167/acceptance.json": "cab43b4c5421791c800cebfe012c8d42ebf8358da8050752167f340b51b6b74a"
+  },
+  "default_replay": {
+    "exit_code": 0,
+    "result": {
+      "status": "PASS",
+      "mode": "READ_ONLY_MATCH",
+      "groups": 4,
+      "geometry_match": 1.6653345369377348e-16,
+      "complete_clock_match": 7.79036985936549e-15,
+      "cone_direction_defect": 1.7320508075688772,
+      "cylinder_direction_defect": 0,
+      "new_adopted_axioms": 0,
+      "GR_hard_deliverables_completed": 0
+    },
+    "mode": "READ_ONLY_MATCH",
+    "source_execution": "Loads the frozen original 1112 Material(1) matrices. No claim to re-run every earlier scientific round."
+  },
+  "independent_reviewer_script": {
+    "path": "reviewer_check.py",
+    "sha256": "14c10109f49215b03782eecd14b1e4f80f42156b3e7ed9bd3de79f3a7b601d5e",
+    "exit_code": 0,
+    "result": {
+      "status": "PASS",
+      "kind": "independent_review_not_new_scientific_group",
+      "core_sha256": {
+        "../research_note_1168.md": "9859deb6fb58547dd107b9c14624b941107de6f1ac41b059c3701345e883c441",
+        "admission.md": "70b0331643ef7f2168010fcd1a13e2e27960eef083b257e83a4702b871e6abc1",
+        "proof.md": "c5674849ab457dd3b6a4bba2d0ce81b03263f94c1b3881303aa76821e46c7711",
+        "check.py": "fbd033b53b3df2484fd359867dee43e3bea7fd9c6e06983847e19ac261e74b6d",
+        "results.json": "64822d73d9dadef64d53742c1468a380aa0ac58ba2bdd12e0f7385dc9adc0777",
+        "NEXT.md": "32b722438b79555f31349a3370f06e24a628c2078b3ab86625ab2f50b838083e"
+      },
+      "source_sha256": {
+        "archive_1106_1119/1106/proof.md": "3cf66b629a49e00a6503b68e516f67bdd5b9fecd258447e90156b15cf87fb8cb",
+        "archive_1106_1119/1112/check.py": "6e49d71ec5535fd6999432481938663a5543e2704db993ec7a00b8f475b6cd9f",
+        "archive_1106_1119/1119/proof.md": "b4a97154a8302a49c4f4f6788f615909b4849820bfa42e3bf11574c16808008d",
+        "archive_1120_1158/1158/proof.md": "8d05617c800014afd8965eaf51874fa3235e16cf2e49a2918ad00ebe5a8e7608",
+        "archive_1161_/1166/proof.md": "02335c08c46865b438b075a0d8475e143fc113e01eb711f725b96e4290bb0812",
+        "archive_1161_/1166/results.json": "d1bf0dc11287685e6eb54b0b4c6a9af36c11b7bca82a51af86d8fd57ec3e7cf3",
+        "archive_1161_/1167/acceptance.json": "cab43b4c5421791c800cebfe012c8d42ebf8358da8050752167f340b51b6b74a"
+      },
+      "replay_comparison": {
+        "leaves": 739,
+        "floats": 576,
+        "maximum_absolute_float_difference": 1.4210854715202004e-14
+      },
+      "closest_cylinder_lift_error": 8.326672684688674e-17,
+      "independently_selected_lift_counts": [
+        1,
+        2,
+        1,
+        1,
+        2,
+        1
+      ],
+      "independent_cone_chord_error": 8.326672684688674e-17,
+      "unfolded_face_interval_error": 3.5240838034000627e-15,
+      "unfolded_initial_direction_error": 1.1102230246251565e-16,
+      "diagonal_angles_radians": [
+        1.0471975511965979,
+        3.141592653589793
+      ],
+      "full_FK_projector_residual": 4.064557425225249e-15,
+      "closed_spin_full_D_state_error": 3.677524580261259e-14,
+      "one_capture_then_segmented_propagation_error": 4.2850005064015265e-15,
+      "entire_qutrit_clock_effect_error": 1.2028119284181733e-17,
+      "same_station_clock_effect_error": 2.4107791741217556e-17,
+      "independent_full_rail_output_error": 5.970950592515503e-14,
+      "full_rail_reference_gram_error": 1.0934428697813141e-15,
+      "retained_two_positive_body_minimum_mass": 51.43559577416269,
+      "full_rail_both_body_energy_effect_error": 3.623353915793422e-14,
+      "finite_error_corner_maximum": 0.00031093498366072114,
+      "declared_length_error_bound": 0.00043475982289542905,
+      "independent_optical_integral_error": 5.551115123125783e-16,
+      "metadata": {
+        "local_links_checked": 17,
+        "links": [
+          {
+            "source": "../research_note_1168.md",
+            "target": "1168/admission.md",
+            "exists": true
+          },
+          {
+            "source": "../research_note_1168.md",
+            "target": "1168/proof.md",
+            "exists": true
+          },
+          {
+            "source": "../research_note_1168.md",
+            "target": "1168/check.py",
+            "exists": true
+          },
+          {
+            "source": "../research_note_1168.md",
+            "target": "1168/results.json",
+            "exists": true
+          },
+          {
+            "source": "../research_note_1168.md",
+            "target": "1168/NEXT.md",
+            "exists": true
+          },
+          {
+            "source": "../research_note_1168.md",
+            "target": "1168/NEXT.md",
+            "exists": true
+          },
+          {
+            "source": "proof.md",
+            "target": "../../archive_1106_1119/1119/proof.md",
+            "exists": true
+          },
+          {
+            "source": "proof.md",
+            "target": "../../archive_1120_1158/1158/proof.md",
+            "exists": true
+          },
+          {
+            "source": "proof.md",
+            "target": "../../archive_585_628/research_note_618.md",
+            "exists": true
+          },
+          {
+            "source": "proof.md",
+            "target": "../../archive_467_530/research_note_467.md",
+            "exists": true
+          },
+          {
+            "source": "proof.md",
+            "target": "../../archive_467_530/research_note_468.md",
+            "exists": true
+          },
+          {
+            "source": "proof.md",
+            "target": "NEXT.md",
+            "exists": true
+          },
+          {
+            "source": "NEXT.md",
+            "target": "../_admission/after_1167_direction.md",
+            "exists": true
+          },
+          {
+            "source": "NEXT.md",
+            "target": "../../archive_956_989/research_note_986.md",
+            "exists": true
+          },
+          {
+            "source": "NEXT.md",
+            "target": "../../archive_956_989/research_note_978.md",
+            "exists": true
+          },
+          {
+            "source": "NEXT.md",
+            "target": "../../archive_956_989/research_note_985.md",
+            "exists": true
+          },
+          {
+            "source": "NEXT.md",
+            "target": "../../archive_585_628/research_note_618.md",
+            "exists": true
+          }
+        ],
+        "issues": []
+      },
+      "frozen_core_and_seven_sources_unchanged": true
+    }
+  },
+  "analytic_checks": [
+    "K1168 and the fixed deficit/cylinder configurations are explicitly additional static transport inputs; no generation of these rules from FUCP/CO/SR is asserted.",
+    "Four static cone endpoints have sides r and diagonals sqrt(3)r; the Euclidean squared-distance identity applies only to simultaneous common Euclidean direct distances.",
+    "The flat cylinder has closest lifts with multiplicities 1,2,1,1,2,1, exactly matching the eight declared routes for six endpoint pairs.",
+    "The punctured cone propagation domain and the cylinder are locally Riemann flat. Neither the four-point data nor their distinction certifies nonzero local curvature or dynamic geometry.",
+    "Original full positive 288D D includes the 1112 work baseline; capture is performed once, followed by cumulative unreset original H_D evolution on every real free leg.",
+    "The clock probability p=sin^6((delta+s)/2) is uniform on the original ready qutrit code, including vac; it is not a claim about arbitrary unknown states of the full 288D clock.",
+    "Arbitrary payload/path input and any passive reference are preserved by the full 82944x4 rail isometry with both actual positive-mass D bodies; no unknown active clock splitting or free physical merging is licensed.",
+    "Time/internal/rail channel equality is relative to matched input and role labels in A_time,int; geometric velocity types, direction readouts, and all permitted futures are not equated.",
+    "Cone diagonal departure angle pi/3 and cylinder angle pi remain distinct under common local rotations; their defect predictions are sqrt(3) and 0.",
+    "The displacement and probability error contracts are extra quantitative permissions; normalized-direction and clamped-window clock inverse bounds are correct.",
+    "The optical-medium comparison is conditional and auxiliary; unknown force/guide resources do not become certified actual material permissions.",
+    "CC/D-P are inherited only on declared local material contacts/free segments and their new K1168 continuation, not as global affine SR symmetries of a curved or quotient domain."
+  ],
+  "resolved_pre_freeze_items": [
+    "Author added the true/estimated probability common-window requirement, or clamping, in proof equation (15); final proof SHA c5674849ab457dd3b6a4bba2d0ce81b03263f94c1b3881303aa76821e46c7711.",
+    "Equation (16) includes the plus sign before s_max epsilon_k.",
+    "Capture age, independent reverse preparations, no free clock reset/turnaround, retained vac bodies, and restricted observation menu are explicit."
+  ],
+  "development_disclosures": [
+    "Main agent disclosed that an initial unsaved optical check used a 0.01 threshold, subsequently replaced by the declared 2*epsilon_p discrimination threshold. This review verifies the final inequality; it does not treat that auxiliary threshold or the direction comparison as an independently preregistered empirical experiment."
+  ],
+  "scope": {
+    "new_adopted_axioms": 0,
+    "new_empirical_calibration": 0,
+    "new_scientific_groups_from_review": 0,
+    "GR_hard_deliverables_completed": 0,
+    "signoff": "Conditional static common-transport interface, exact timing/internal-channel ambiguity, and a finite direction discriminator for the two named candidates only."
+  },
+  "metadata_checks": {
+    "local_links_checked": 17,
+    "links": [
+      {
+        "source": "../research_note_1168.md",
+        "target": "1168/admission.md",
+        "exists": true
+      },
+      {
+        "source": "../research_note_1168.md",
+        "target": "1168/proof.md",
+        "exists": true
+      },
+      {
+        "source": "../research_note_1168.md",
+        "target": "1168/check.py",
+        "exists": true
+      },
+      {
+        "source": "../research_note_1168.md",
+        "target": "1168/results.json",
+        "exists": true
+      },
+      {
+        "source": "../research_note_1168.md",
+        "target": "1168/NEXT.md",
+        "exists": true
+      },
+      {
+        "source": "../research_note_1168.md",
+        "target": "1168/NEXT.md",
+        "exists": true
+      },
+      {
+        "source": "proof.md",
+        "target": "../../archive_1106_1119/1119/proof.md",
+        "exists": true
+      },
+      {
+        "source": "proof.md",
+        "target": "../../archive_1120_1158/1158/proof.md",
+        "exists": true
+      },
+      {
+        "source": "proof.md",
+        "target": "../../archive_585_628/research_note_618.md",
+        "exists": true
+      },
+      {
+        "source": "proof.md",
+        "target": "../../archive_467_530/research_note_467.md",
+        "exists": true
+      },
+      {
+        "source": "proof.md",
+        "target": "../../archive_467_530/research_note_468.md",
+        "exists": true
+      },
+      {
+        "source": "proof.md",
+        "target": "NEXT.md",
+        "exists": true
+      },
+      {
+        "source": "NEXT.md",
+        "target": "../_admission/after_1167_direction.md",
+        "exists": true
+      },
+      {
+        "source": "NEXT.md",
+        "target": "../../archive_956_989/research_note_986.md",
+        "exists": true
+      },
+      {
+        "source": "NEXT.md",
+        "target": "../../archive_956_989/research_note_978.md",
+        "exists": true
+      },
+      {
+        "source": "NEXT.md",
+        "target": "../../archive_956_989/research_note_985.md",
+        "exists": true
+      },
+      {
+        "source": "NEXT.md",
+        "target": "../../archive_585_628/research_note_618.md",
+        "exists": true
+      }
+    ],
+    "issues": []
+  },
+  "frozen_core_and_sources_unchanged": true
+}
+

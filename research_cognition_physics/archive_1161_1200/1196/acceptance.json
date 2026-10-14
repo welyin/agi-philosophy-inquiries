@@ -1,0 +1,101 @@
+{
+  "schema": "gr_round_acceptance_v1",
+  "date": "2026-10-14",
+  "round": 1196,
+  "status": "ACCEPTED_WITH_SCOPE",
+  "check_groups": 3,
+  "scope": "原1178能量选择唯一各向同性Hartree占据参考，源两站关联严格非零且约化态满秩；同一完整能源的瞬时压缩给独立boost比较。原65周期源模占据与固定细格点裸2πboost之间，保固定点、有限K、远端与周期预算后严格差>0.0081。仅源CAR与指定初始准备，未证全父真空、实际加速仪器、有限时热流、面积熵或GR。",
+  "certified_results": {
+    "fixed_point": {
+      "grid_weights": 274625,
+      "global_lipschitz_upper": "10240/25857",
+      "map_at_seed": {
+        "lo": "494917777039049237911741868577/500000000000000000000000000000",
+        "hi": "989835554078098475823483737801/1000000000000000000000000000000",
+        "float_lo": 0.9898355540780984,
+        "float_hi": 0.9898355540780984
+      },
+      "root_error_upper": "12303367819008320457/15617000000000000000000000000000000",
+      "root_enclosure": {
+        "lo": "494917777038549/500000000000000",
+        "hi": "494917777039549/500000000000000",
+        "float_lo": 0.989835554077098,
+        "float_hi": 0.989835554079098
+      },
+      "mu": {
+        "lo": "209961904969043632510741497277/500000000000000000000000000000",
+        "hi": "419923809938415269368524299089/1000000000000000000000000000000",
+        "float_lo": 0.41992380993808726,
+        "float_hi": 0.41992380993841527
+      }
+    },
+    "finite_occupation_witness": {
+      "sites": 32,
+      "finite_K": "100000000000000",
+      "norm_squared": "307828173409331829312566906615344451859045123286978861753582233323749989585340503691431579485709631076212117037305/307828173409331868845930000782371982852185463050511302093346042220669701339821957901673955116288403443801781174272",
+      "rayleigh_residual_squared": "1593934508021196373301825515641671636767974849780487925808719679891683787571003065789705583061725886731970890580034584536826693746739520606798512002481/76515636838415777944240196515655615884502231963594846319881607044422291929290172351522117344050670934724144746921931368817561406126406154536611291055635812538853543158595937370112000",
+      "far_end_residual_squared": "22832876440191493738477745284969397789156591839886809526106886714002537671722377085650499489809764974592/307828173409331829312566906615344451859045123286978861753582233323749989585340503691431579485709631076212117037305",
+      "finite_and_extended_boost_error_upper": 1.5931040872017244e-10,
+      "source_occupation": {
+        "lo": "104325855286693106853791593541/1000000000000000000000000000000",
+        "hi": "6520365955440748838599953297/62500000000000000000000000000",
+        "float_lo": 0.10432585528669311,
+        "float_hi": 0.10432585528705197
+      },
+      "boost_occupation": {
+        "lo": "19241866849683977699898100993/200000000000000000000000000000",
+        "hi": "96209334248419888499490504969/1000000000000000000000000000000",
+        "float_lo": 0.09620933424841989,
+        "float_hi": 0.09620933424841989
+      },
+      "torus_alias_upper": 8.626649785443729e-08,
+      "certified_difference_lower": "10206449420393400823138590428599106343195886386220863900604738357837659475031435790284058213726204977194991586604301491922438572975175661643596424418183595967448246932824413106665405573423487448757336928097/1257504052914893091567891640871526762070440208710215272851419191657239850114391824633417209745082941003338855619199593995144727382293624596428523294000000000000000000000000000000000000000000000000000000000000",
+      "certified_difference_float_lower": 0.008116434612464956,
+      "threshold": ".0081"
+    },
+    "strict_source_region": "168662169/8668637328050"
+  },
+  "inputs_retained": [
+    "Original 1178 finite parent, material spectrum, couplings, periodic box, reciprocal interaction and positive spectral baseline.",
+    "New known isotropic Hartree stationary source preparation; not a finite-K ground state or stable vacuum.",
+    "Source CAR subalgebra and whole transverse zero-momentum readout, not a local three-dimensional horizon instrument.",
+    "Fixed geometric x*h/v boost comparison and frozen rational mode; no target Gibbs state used to choose the reference."
+  ],
+  "certification_limits": [
+    "Finite-K value 10^14 used only for instantaneous full-parent energy compression, not a new finite-time Hartree certificate.",
+    "No complete-parent faithful reference or all-sector modular identity.",
+    "Occupation effect is a mathematical observable, not a certified preparation/readout/post-state device.",
+    "Boundary comparisons do not replace the original periodic physical object with an infinite vacuum.",
+    "Mismatch of this bare fixed-lattice candidate does not refute Unruh physics, controlled macroscopic Lorentz limits, Jacobson routes or GR.",
+    "No new axiom, empirical calibration, area entropy, dynamic Einstein equation or dark-sector identification."
+  ],
+  "review_independence": "Independent real-space 130-dimensional negative-spectrum reconstruction and finite-boundary estimates, separate exact interval-code audit and full-parent energy scope audit; root reran all saved programs. Internal non-blind review, not external peer review.",
+  "new_adopted_axioms": 0,
+  "new_empirical_calibration": 0,
+  "gr_hard_deliverables_completed": 0,
+  "files_sha256": {
+    "../research_note_1196.md": "6fd3b8682f132578f641c0f5b3ce85a9b7d891aa6a4c276b5080d3bc07af0359",
+    "boost_review.md": "7fb1ef8410528c44841a3a1c093a7ee500bcf61291b8f83c51f610ee546021b7",
+    "certificate.py": "eaa0901c5c4ba70f893c68545bae9cbf0ace075f773f0fce2af6f401bc4b62e0",
+    "certificate_results.json": "66affdbc7ad5fa78ec4c1a5a3a78f23a7a78e489c8efc785dce8466c11f72288",
+    "derivation.md": "e319e7deb827f350a771947dbde022b95ca6d681825927d575c1b3df545dcd52",
+    "hartree_reference.py": "78fca77451d605311f83a44aee500d91531ce4711dc171f52a8eb197ade4398f",
+    "hartree_reference_result.json": "de63b47c07df72b2f99790b0bf711b3d0c947889a5e140189f7b94a6b7854468",
+    "make_witness.py": "d41eb5bf1a49da8c78a12644e8247669e9631470d918cb3945d76960280cfb61",
+    "mode_witness.json": "108bf32a942fe0b1005905229b60e7c373a18f45eadfa4c0e0f563e236470c81",
+    "NEXT.md": "f071c917ee303c3327402e845d280f09af8d84d154f7c127702b30f68e9692d2",
+    "proof.md": "2ce008da39b57cfedb6f60de6f0aebf178f7c39c7986cc3a879248480c217986",
+    "review.md": "4f13e9eabff1b87eafd95e51cf28e2c94848ac684c9388cf17218259145f2135",
+    "reviewer_boost.py": "dcd1a5d98183f28d71feb9ae70a7cb39e1967c0d82f807625a520614f6de890e",
+    "reviewer_boost_results.json": "3783b3d6782fb1693dffe39a0234ce817c5c049fdd66c4f33f18a334d24a6c5e",
+    "../_shared/goal.md": "8acafd3ed835d581a543de077e1e6ea6c120b6e78c7a1e271e749f263e422667"
+  },
+  "validation": {
+    "root_personally_executed": true,
+    "interval_certificate": "PASS",
+    "independent_check": "PASS_WITH_SCOPE",
+    "old_acceptances_unchanged": 35,
+    "old_bindings_unchanged": 427,
+    "old_unique_scientific_files_unchanged": 369
+  }
+}

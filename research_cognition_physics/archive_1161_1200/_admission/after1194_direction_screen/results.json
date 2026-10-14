@@ -1,0 +1,126 @@
+{
+  "schema": "after1194_unaccepted_candidate_screen_v1",
+  "status": "DIAGNOSTIC_REPRODUCED_NOT_PHYSICAL_CERTIFICATE",
+  "method": "RK4 at 4000 and 8000 steps, NumPy float64",
+  "certified_new_research_rounds": 0,
+  "new_scientific_check_groups": 0,
+  "assumptions": {
+    "model": "Hartree/Bloch comparator for proposed reaction code",
+    "epsilon": 0.15,
+    "Omega": 0.5,
+    "d_central": 0,
+    "delta_compared": [
+      0.0,
+      0.2
+    ],
+    "initial_state": [
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "old_probe_readout": "(1+sin(0.2*tau))/2"
+  },
+  "rows": [
+    {
+      "T": 0.5,
+      "branches": {
+        "0.0": {
+          "state": [
+            -0.05485486591327899,
+            0.47532179667018154,
+            0.8781002979704912,
+            1.0,
+            0.0,
+            0.0,
+            0.5719216378382784
+          ],
+          "probe_probability": 0.557067530450827,
+          "reaction_Gt_probability": 0.5,
+          "bloch_norm_errors": [
+            1.4432899320127035e-15,
+            0.0
+          ],
+          "step_doubling_state_difference": 4.3298697960381105e-15
+        },
+        "0.2": {
+          "state": [
+            -0.05369266066789555,
+            0.4754791241372255,
+            0.8780869550904957,
+            0.9821549802977267,
+            0.18010259707998105,
+            -0.05417240258117634,
+            0.5719214932003878
+          ],
+          "probe_probability": 0.5570675160815552,
+          "reaction_Gt_probability": 0.47291379870941186,
+          "bloch_norm_errors": [
+            8.881784197001252e-16,
+            8.881784197001252e-16
+          ],
+          "step_doubling_state_difference": 2.9976021664879227e-15
+        }
+      },
+      "probe_probability_gap_diagnostic": 1.4369271772451953e-08,
+      "old_two_branch_instrument_budget": 4e-05,
+      "diagnostic_gap_below_old_instrument_budget": true,
+      "reaction_Gt_probability_difference": -0.02708620129058814
+    },
+    {
+      "T": 1.5707963267948966,
+      "branches": {
+        "0.0": {
+          "state": [
+            -0.43077815568305966,
+            0.9014463885643497,
+            0.04271520959320191,
+            1.0,
+            0.0,
+            0.0,
+            1.7229209810244597
+          ],
+          "probe_probability": 0.668902672639253,
+          "reaction_Gt_probability": 0.5,
+          "bloch_norm_errors": [
+            1.9984014443252818e-15,
+            0.0
+          ],
+          "step_doubling_state_difference": 3.3306690738754696e-15
+        },
+        "0.2": {
+          "state": [
+            -0.37130453979539885,
+            0.9278704271924839,
+            0.03448781044035696,
+            0.932782113122642,
+            0.16930270307152975,
+            -0.3182045319776848,
+            1.7226114487361548
+          ],
+          "probe_probability": 0.6688735386415562,
+          "reaction_Gt_probability": 0.34089773401115764,
+          "bloch_norm_errors": [
+            5.551115123125783e-15,
+            5.329070518200751e-15
+          ],
+          "step_doubling_state_difference": 3.774758283725532e-15
+        }
+      },
+      "probe_probability_gap_diagnostic": 2.913399769677305e-05,
+      "old_two_branch_instrument_budget": 4e-05,
+      "diagnostic_gap_below_old_instrument_budget": true,
+      "reaction_Gt_probability_difference": -0.15910226598884236
+    }
+  ],
+  "limits": [
+    "Step doubling is a numerical consistency diagnostic, not interval certification.",
+    "No full finite-K quantum evolution or actual readout is simulated.",
+    "The larger reaction-readout gap does not replace the original probe readout.",
+    "No tuning of time, precision or resources to force a passing witness.",
+    "Deduplication against 1040 and 1178 is documented in README and scope_review."
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "status": "PASS_WITH_SCOPE",
+  "check_groups": 3,
+  "clock_compression": {
+    "logical_dimension": 3,
+    "full_device_dimension": 288,
+    "compressed_energy_exact": "37/2+2*sqrt(19)",
+    "compressed_energy_float": 27.217797887081346,
+    "compressed_variance_exact": "3/4",
+    "normalization_delta_exact": "0",
+    "max_energy_residual": 7.129095399271229e-15,
+    "max_second_moment_residual": 2.2823418967295714e-13,
+    "head_zero_probabilities": [
+      0.9999999999999998,
+      0.9018869704128049,
+      0.38392047962320996,
+      3.277922107449145e-31
+    ],
+    "scope": "original 1112 device energy only; neither complete curved body stress nor original CO matching"
+  },
+  "normalization": {
+    "sharp_reference_example": {
+      "energy": "diag(1,4)",
+      "success_probability": "1/2",
+      "joint_trace_distance": "1/3",
+      "reference_trace_distance": "1/3",
+      "full_flag_reference_preserved": true
+    },
+    "noncommuting_diagnostic": {
+      "samples": 40,
+      "largest_identity_error": 2.220446049250313e-16,
+      "largest_joint_bound_excess": 0.0,
+      "largest_cq_distance": 0.000700912265800953,
+      "delta_exact": "1/1000"
+    },
+    "positive_total_not_local": {
+      "total_energy": "I",
+      "regional_minimum": "-1",
+      "scope": "algebraic deletion example, not a complete physical stress construction"
+    }
+  },
+  "endpoint_certificate": {
+    "a": {
+      "exact": "998001/1000000",
+      "float": 0.998001
+    },
+    "b": {
+      "exact": "1002001/1000000",
+      "float": 1.002001
+    },
+    "delta": {
+      "exact": "1/1000",
+      "float": 0.001
+    },
+    "r00": {
+      "exact": "1/10000",
+      "float": 0.0001
+    },
+    "R": {
+      "exact": "1/50",
+      "float": 0.02
+    },
+    "Zx_from_1193": {
+      "exact": "1726118103896327757715686428213275861058247825396308163360516479/143065660971439971514979501979910275072000000000000000000000000000000",
+      "float": 1.2065216014630588e-05
+    },
+    "epsilon_CO": {
+      "exact": "1/5000",
+      "float": 0.0002
+    },
+    "tail_upper": {
+      "exact": "44345176546834702186370498554487545444736825256523811075509918450563/7148967753312257756354685882924980563947354380436509229591598708802500",
+      "float": 0.006203018124719993
+    },
+    "threshold": {
+      "exact": "7/1000",
+      "float": 0.007
+    },
+    "strict_margin": {
+      "exact": "11395195452702204216224605251974637005789310813063507063262545022109/14297935506624515512709371765849961127894708760873018459183197417605000",
+      "float": 0.0007969818752800071
+    },
+    "scalar_compression_conditional_upper": {
+      "exact": "74392417587044888860031625343125129761578941752174603691836639483521/14297935506624515512709371765849961127894708760873018459183197417605000",
+      "float": 0.005203018124719993
+    },
+    "one_slice_markov_example": {
+      "positions": [
+        "-1/50",
+        "0",
+        "1/50"
+      ],
+      "probabilities": [
+        "1/400",
+        "199/200",
+        "1/400"
+      ],
+      "mean": "0",
+      "first_absolute_moment": "1/10000",
+      "tail_probability": "1/200",
+      "scope": "single-slice mathematical sharpness; not a dynamical quantum GR implementation"
+    }
+  },
+  "frozen_history": {
+    "science_files_unchanged": 347,
+    "acceptances_unchanged": 33,
+    "reused_files_unchanged": 3
+  },
+  "new_adopted_axioms": 0,
+  "new_empirical_calibration": 0,
+  "gr_hard_deliverables_completed": 0
+}

@@ -1,0 +1,197 @@
+{
+  "round": 1178,
+  "date": "2026-10-13",
+  "status": "PASS_WITH_EXPLICIT_RECIPROCAL_ROLE_SCOPE",
+  "source_sha256": {
+    "1176/proof.md": "966a751121980b976ad86f459d06088c72a56e3eca49109828293020b86320f9",
+    "1177/proof.md": "6c3229a8bd9caad35e7d96bc53ced14e867feb89a8aeaff01be8d7d40339c447",
+    "1177/check.py": "ce6be9e2d7a186586af32169a38345d9a72bb653210b99ac4d2db66a4dbdb916",
+    "1177/results.json": "d93aeadd8b201f982f7006847531c54dfa50ce5ee52c724f00aa5127cb259c09",
+    "1170/proof.md": "c55f5abdc1503801b87fa03336d0710f48d723ecbcd4c133a3fe044a48e1b3af",
+    "1171/proof.md": "ecf48b81b9b42a21bcf7007b386bae16132cb9849e3fc939f02c398860e8d4ea",
+    "_admission/after1174_direction/mean_field_bound.md": "11ac64ce824d3448dec97548efe3dda768bcda30f2e48e1cd88bfe511fcd6b3f"
+  },
+  "groups": {
+    "1_selected_response_and_complete_parent": {
+      "pass": true,
+      "linear_Hermitian_class_declared": true,
+      "lambda_selected_exact": "-3/40",
+      "E0_remains_free": true,
+      "E0_witness_input": 0,
+      "K": 100000000000000,
+      "volume": 274625,
+      "positive_shift_extra_exact": "16477499999999835225/8",
+      "positive_shift_total_exact": "36761302500000968734227/32",
+      "known_background_only_no_unknown_Gt_cloning": true,
+      "new_quantum_rule_and_instrument_inputs_explicit": true,
+      "small_matrix_diagnostics": {
+        "fixed_condition_central_commutator_residual": 0.0,
+        "full_two_cluster_W_dimension": 16,
+        "W_spectral_norm": 0.15000000000000008,
+        "reciprocal_contraction_residual": 1.3991252851745213e-17,
+        "closed_form_vs_2x2_spectral_residual": 3.3306690738754696e-16,
+        "Hartree_energy_residual": 2.220446049250313e-16,
+        "q_tasks": [
+          {
+            "q": 0.5,
+            "tau": 1.5772133068936505,
+            "p_D": 0.6551186608478554,
+            "p_G": 0.4972213851790054,
+            "bare_Gt_energy": -0.25,
+            "clock_amplitude": 0.8660254037844386
+          },
+          {
+            "q": -0.5,
+            "tau": 1.5643793466961426,
+            "p_D": 0.6538980790353554,
+            "p_G": 0.5027786148209946,
+            "bare_Gt_energy": 0.25,
+            "clock_amplitude": 0.8660254037844386
+          }
+        ],
+        "C_Gt_probability": 0.42528093376320036,
+        "C_full_local_record_probability": 0.42528093376320036,
+        "local_full_record_isometry_residual": 0.0,
+        "diagnostic_not_large_parent_evolution": true
+      }
+    },
+    "2_exact_BG_and_unknown_probe_finite_K": {
+      "pass": true,
+      "certificate": {
+        "time": {
+          "lower_exact": "3141592653589793238462643383279502884197/2000000000000000000000000000000000000000",
+          "upper_exact": "7853981633974483096156608458198757210493/5000000000000000000000000000000000000000",
+          "outward_decimal_places": 40,
+          "lower_float_diagnostic": 1.5707963267948966,
+          "upper_float_diagnostic": 1.5707963267948966
+        },
+        "lambda_selected_exact": "-3/40",
+        "E0_witness_input_exact": "0",
+        "r_squared_exact": "1609/6400",
+        "tau_plus": {
+          "lower_exact": "7886066534468253146701806004207606338713/5000000000000000000000000000000000000000",
+          "upper_exact": "3943033267234126573350903002103803169357/2500000000000000000000000000000000000000",
+          "outward_decimal_places": 40,
+          "lower_float_diagnostic": 1.5772133068936507,
+          "upper_float_diagnostic": 1.5772133068936507
+        },
+        "tau_minus": {
+          "lower_exact": "15643793466961426091222821824379816164543/10000000000000000000000000000000000000000",
+          "upper_exact": "3128758693392285218244564364875963232909/2000000000000000000000000000000000000000",
+          "outward_decimal_places": 40,
+          "lower_float_diagnostic": 1.5643793466961426,
+          "upper_float_diagnostic": 1.5643793466961426
+        },
+        "p_D_plus": {
+          "lower_exact": "6551186608478555408495789065952768299733/10000000000000000000000000000000000000000",
+          "upper_exact": "3275593304239277704247894532976384149867/5000000000000000000000000000000000000000",
+          "outward_decimal_places": 40,
+          "lower_float_diagnostic": 0.6551186608478555,
+          "upper_float_diagnostic": 0.6551186608478555
+        },
+        "p_D_minus": {
+          "lower_exact": "6538980790353554789526679422183570049321/10000000000000000000000000000000000000000",
+          "upper_exact": "3269490395176777394763339711091785024661/5000000000000000000000000000000000000000",
+          "outward_decimal_places": 40,
+          "lower_float_diagnostic": 0.6538980790353555,
+          "upper_float_diagnostic": 0.6538980790353555
+        },
+        "p_G_plus_Hartree_local": {
+          "lower_exact": "19888855407160214679743155553389723827/40000000000000000000000000000000000000",
+          "upper_exact": "2486106925895026834967894444173715478377/5000000000000000000000000000000000000000",
+          "outward_decimal_places": 40,
+          "lower_float_diagnostic": 0.4972213851790054,
+          "upper_float_diagnostic": 0.4972213851790054
+        },
+        "p_G_minus_Hartree_local": {
+          "lower_exact": "1005557229641989266012842222330513808649/2000000000000000000000000000000000000000",
+          "upper_exact": "5027786148209946330064211111652569043249/10000000000000000000000000000000000000000",
+          "outward_decimal_places": 40,
+          "lower_float_diagnostic": 0.5027786148209946,
+          "upper_float_diagnostic": 0.5027786148209946
+        },
+        "ideal_clock_gap": {
+          "lower_exact": "12205818125000618969109643769198250411/10000000000000000000000000000000000000000",
+          "upper_exact": "12205818125000618969109643769198250413/10000000000000000000000000000000000000000",
+          "outward_decimal_places": 40,
+          "lower_float_diagnostic": 0.001220581812500062,
+          "upper_float_diagnostic": 0.001220581812500062
+        },
+        "eta_prepared_interval": {
+          "lower_exact": "290103539178820562269397313023513/4882812500000000000000000000000000000",
+          "upper_exact": "4753056385905796092221805576577237/80000000000000000000000000000000000000",
+          "outward_decimal_places": 40,
+          "lower_float_diagnostic": 5.941320482382245e-05,
+          "upper_float_diagnostic": 5.941320482382245e-05
+        },
+        "sqrt_alpha_interval": {
+          "lower_exact": "996933553819898082301598428477791/2500000000000000000000000000000000000000",
+          "upper_exact": "398773421527959232920639371516501/1000000000000000000000000000000000000000",
+          "outward_decimal_places": 40,
+          "lower_float_diagnostic": 3.987734215279592e-07,
+          "upper_float_diagnostic": 3.987734215279592e-07
+        },
+        "eta_adopted_exact": "3/50000",
+        "local_Gt_adopted_exact": "1/2500000",
+        "instrument_input_each_exact": "1/50000",
+        "D_error_each_exact": "1/12500",
+        "G_local_error_each_exact": "201/2500000",
+        "finite_clock_gap_lower_exact": "10605818125000618969109643769198250411/10000000000000000000000000000000000000000",
+        "finite_clock_gap_lower": 0.001060581812500062,
+        "C_tau": {
+          "lower_exact": "3441592653589793238462643383279502884197/2000000000000000000000000000000000000000",
+          "upper_exact": "8603981633974483096156608458198757210493/5000000000000000000000000000000000000000",
+          "outward_decimal_places": 40,
+          "lower_float_diagnostic": 1.7207963267948967,
+          "upper_float_diagnostic": 1.7207963267948967
+        },
+        "C_p_D": {
+          "lower_exact": "3343513407709013699763276021599842606299/5000000000000000000000000000000000000000",
+          "upper_exact": "33435134077090136997632760215998426063/50000000000000000000000000000000000000",
+          "outward_decimal_places": 40,
+          "lower_float_diagnostic": 0.6687026815418028,
+          "upper_float_diagnostic": 0.6687026815418028
+        },
+        "C_p_G": {
+          "lower_exact": "4252809337632003892511372806561790909507/10000000000000000000000000000000000000000",
+          "upper_exact": "2126404668816001946255686403280895454771/5000000000000000000000000000000000000000",
+          "outward_decimal_places": 40,
+          "lower_float_diagnostic": 0.42528093376320036,
+          "upper_float_diagnostic": 0.42528093376320036
+        },
+        "C_role_residual_upper_exact": "1401/2500000",
+        "C_role_residual_upper": 0.0005604,
+        "old1177_active_residual_lower_minus_C_bound": 0.0740046662367996,
+        "with_each_sampling_error_1e_minus4_lower": 0.0008605818125000619,
+        "B_squared_exact": "14857247/102400",
+        "w_site_exact": "3/20",
+        "a_s_exact": "1389/320",
+        "a_t_exact": "13/8",
+        "all_probability_bounds_use_exact_outward_rational_arithmetic": true,
+        "outward_decimal_places": 40
+      },
+      "original_unknown_code_dimension": 48,
+      "arbitrary_reference_preserved": true,
+      "all_mass_coherences_preserved": true,
+      "exact_joint_BG_preserved": true,
+      "centering_uses_exact_mu_before_spatial_orthogonality": true,
+      "within_site_st_correlation_uses_Cauchy": true,
+      "global_pointer_distribution_replaced_by_Hartree_product": false
+    },
+    "3_finite_feedback_C_control_and_remaining_freedom": {
+      "pass": true,
+      "formal_original_clock_gap_lower": 0.001060581812500062,
+      "formal_original_clock_gap_lower_exact": "10605818125000618969109643769198250411/10000000000000000000000000000000000000000",
+      "C_role_residual_upper": 0.0005604,
+      "C_has_noncentral_mean_feedback": false,
+      "q_tasks_have_nonzero_mean_feedback": true,
+      "candidate_clock_contract_adopted_as_axiom": false,
+      "actual_instrument_constructed": false,
+      "universal_self_coupling_proved": false,
+      "Einstein_selected": false,
+      "central_baseline_is_Lambda_claim": false,
+      "extra_modes_preserved": true
+    }
+  },
+  "numerical_scope": "closed forms and exact rational intervals; no large grid or K-copy simulation"
+}

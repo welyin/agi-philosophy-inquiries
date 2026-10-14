@@ -1,0 +1,279 @@
+{
+  "round": 1176,
+  "date": "2026-10-13",
+  "status": "ACCEPT_WITH_SCOPE",
+  "blockers": 0,
+  "groups": 4,
+  "author_core_sha256": {
+    "research_note_1176.md": "a4edca5555f2cfe8aa64dbc809a38d17558c00f6cc04e87923c2ca763e460d63",
+    "1176/admission.md": "4ae5e20a9c35fefaee2bcd6009b9470736d1c1f6b200ff8e4d227854d2349f49",
+    "1176/proof.md": "966a751121980b976ad86f459d06088c72a56e3eca49109828293020b86320f9",
+    "1176/check.py": "0face41bf7b67a5b3b7d974ae3b025af7241c0bfd3411bec4adc259193d27709",
+    "1176/results.json": "d9b815dec37cd1597202b61a683d768e4d5eb692170992fcaedfb0452f877873",
+    "1176/NEXT.md": "8d662827c152698090e9552b044709ef20b0342738244f89aab279f83155410d"
+  },
+  "author_external_dependency_sha256": {
+    "1175/proof.md": "581427de3c8e03176a1145773d6bd0754930d849524110a22971c0e3f8e861f4",
+    "_admission/after1174_direction/mean_field_bound.md": "11ac64ce824d3448dec97548efe3dda768bcda30f2e48e1cd88bfe511fcd6b3f",
+    "_admission/after1174_direction/mean_field_numerical_bound.py": "b83e5e8f262a4f4a6ca8ff0cf88e2cec559d957f31b06e64321b080414739e73",
+    "_admission/after1175_selection/tensor_covariance_bridge.md": "2c3b401f6627267e0965a2b41c2e088047b9cd521690d5efdf0eae73bd03bf9f",
+    "_admission/after1175_selection/tensor_covariance_check.py": "3c98583c7ad0baa0c798f747f3626bf99d31b3dc88231bbb783444112def7c3f",
+    "_admission/after1175_selection/tensor_covariance_checks.json": "11e22a9e815a1af289907a188460c58dd31eb520ced88b44b0dee8bbc51e792d",
+    "_admission/after1175_selection/correlated_lattice_bound.md": "8c28c2da081f67b1cf48ceafb27a836fee830a62cd4f7502ada3ed72824b32b4",
+    "_admission/after1175_selection/tensor_candidate/preview.py": "a49375d2638cb948dd0c5fb28b0a3f2b4ad258ec4beaa7ecb3bcf54e3a8e5403",
+    "_admission/after1175_selection/tensor_candidate/results_preview.json": "595629e22ce306f966cb21cf09a3c5b51b80897492fc54f7a853f28e3ca55070",
+    "_admission/after1175_selection/tensor_candidate/symmetry_check.py": "809f66c368667bdcd65ffe4b144700a07fb97de100a5ca7016656736c8f15f8e",
+    "_admission/after1175_selection/tensor_candidate/results_symmetry.json": "05ee0b0dac480f78e4e5b4f77b6ab8dcd3b3a654990542e18a31dd8ed642f805",
+    "_admission/after1175_selection/tensor_candidate/numerical_bound.py": "5066891a03e1f1411669fbc2e3be1ec613f8a0e8a7773b0c23df0da3f6a82d78",
+    "_admission/after1175_selection/tensor_candidate/numerical_bound_checks.json": "37e1cbe702a6506f47086d38d9f52f241a4f20d57fd1a4f437ad7f26c532ef27",
+    "_admission/after1175_selection/tensor_candidate/numerical_bound.md": "42e26161d8902937b276e3ce4bc0391bae8da7281713f419b80169dbaecc5a2d",
+    "_admission/after1175_selection/tensor_candidate/polar_endpoint_guard.py": "76b3dd71a7b86807ccd123953cdc537b67cb7dc66cd5c1abbb658cc95a273b9b",
+    "_admission/after1175_selection/tensor_candidate/polar_endpoint_guard.json": "4283338b2058ccb7e0bb07fc0558d79568375a69fedd54b2391920c55e77d093",
+    "_admission/after1175_selection/tensor_candidate/polar_endpoint_guard.md": "57d8ed0e6f3bb70a86289c603b42b0dfc62894b54b9db1910f5abc55a2babb95"
+  },
+  "independent_evidence_sha256": {
+    "candidate.md": "4d550d06b52295d7ff2404089f8e1153aa57a102febc07db37d470f3ce957fef",
+    "reviewer_preview.py": "eaf339ed21acc0535860c0e8143bec9d1bd3cfbbab40965454f737fb02e43722",
+    "reviewer_preview.json": "1089c6b33a16f0a0d8d10e95ffcfa513d2dce48498876d1ed64b76e5c36b246f",
+    "reviewer_scope.md": "19254e5f9407129b544f7e70517f63c5cc95460d50219ffdb3668aae15c532c1",
+    "polar_endpoint_guard.py": "76b3dd71a7b86807ccd123953cdc537b67cb7dc66cd5c1abbb658cc95a273b9b",
+    "polar_endpoint_guard.json": "4283338b2058ccb7e0bb07fc0558d79568375a69fedd54b2391920c55e77d093",
+    "polar_endpoint_guard.md": "57d8ed0e6f3bb70a86289c603b42b0dfc62894b54b9db1910f5abc55a2babb95"
+  },
+  "historical_candidate_sha256_at_Taylor_write": "aa493991057253fa9154b58347132bd01af938527488316bda3b830955eb2140",
+  "candidate_revision_scope": "Later prose clarifications; original Taylor evidence retained. Formal equations reviewed and bound through author six-core SHA.",
+  "review_text_sha256": "0afb18014f040b812ef81ecab262b428892648d5a2413dd143a2a5b353e7613b",
+  "review_code_sha256": "20d46c3643b7a0cba16d61ce4a9cc1c06645b4ab36498f223df7dcc2a884eb22",
+  "group1_complete_parent_and_source": {
+    "bS_exact": "1981/160",
+    "bP_exact": "28467/800",
+    "w_exact": "108806425/16",
+    "L_exact": "312709995/32",
+    "sufficient_log10_K_high_precision": "70881070.74584358342938211213340208533685799074950871954812985935222146",
+    "K_power10": 70881071,
+    "integer_source_weight_sum": 274625,
+    "zero_x_plane_weight": 4225,
+    "source_particles": 549250,
+    "full_parent_simulated": false,
+    "each_exact_BG_retained": true,
+    "unknown_prepared_dimension": 48,
+    "arbitrary_R_by_operator_norm": true
+  },
+  "group2_independent_dynamics_and_geometry": {
+    "provenance": {
+      "author_preview_imported": false,
+      "author_source_implementation_read_before_writing": false,
+      "candidate_equations_and_checked_10_component_bridge_read": true,
+      "author_reported_results_seen_before_run": true,
+      "external_blind_review": false,
+      "interval_certificate_reimplemented": false
+    },
+    "method": {
+      "full_source_classes": 35937,
+      "active_runs": [
+        [
+          64,
+          16
+        ],
+        [
+          128,
+          12
+        ]
+      ],
+      "scalar_run": [
+        64,
+        16
+      ],
+      "fourier_coefficients": "analytic 1/2 and +/-i/4",
+      "finite_K_simulated": false
+    },
+    "convergence_diagnostic": {
+      "whole_prepared_operator_difference": 2.373385746427198e-15,
+      "integrals_max_difference": 3.1086244689504383e-15,
+      "all_source_coefficients_max_difference": 2.145505995088115e-14,
+      "G_max_difference": 1.1213252548714081e-14
+    },
+    "certified2048_menu_max_difference": 1.1999082283331575e-14,
+    "independent_original_menu": {
+      "x_clock_minusY_joint": {
+        "source_A": 0.2720224527346791,
+        "source_B": 0.273157180220864,
+        "signed_gap": -0.0011347274861848722,
+        "complete_48code_effect_distance": 0.008629787481454272
+      },
+      "x_massive_position": {
+        "source_A": 0.5511555974190063,
+        "source_B": 0.5524379855867502,
+        "signed_gap": -0.001282388167743842,
+        "complete_48code_effect_distance": 0.008655605840199516
+      },
+      "x_massless_position": {
+        "source_A": 0.5802362837931789,
+        "source_B": 0.5836126311500229,
+        "signed_gap": -0.0033763473568440006,
+        "complete_48code_effect_distance": 0.008941660024773718
+      },
+      "y_clock_minusY_joint": {
+        "source_A": 0.2720569055364755,
+        "source_B": 0.2708942359415349,
+        "signed_gap": 0.0011626695949406018,
+        "complete_48code_effect_distance": 0.008629787481454232
+      },
+      "y_massive_position": {
+        "source_A": 0.5509658347653232,
+        "source_B": 0.5481707652853676,
+        "signed_gap": 0.0027950694799556697,
+        "complete_48code_effect_distance": 0.008655605840199504
+      },
+      "y_massless_position": {
+        "source_A": 0.49999999999999944,
+        "source_B": 0.49999999999999944,
+        "signed_gap": 0.0,
+        "complete_48code_effect_distance": 0.008941660024773734
+      },
+      "z_clock_minusY_joint": {
+        "source_A": 0.24650874859829885,
+        "source_B": 0.246872947871974,
+        "signed_gap": -0.0003641992736751476,
+        "complete_48code_effect_distance": 0.0019074102341512145
+      },
+      "z_massive_position": {
+        "source_A": 0.5000000000000001,
+        "source_B": 0.5000000000000001,
+        "signed_gap": 0.0,
+        "complete_48code_effect_distance": 1.2563933644871502e-15
+      },
+      "z_massless_position": {
+        "source_A": 0.49999999999999944,
+        "source_B": 0.49999999999999944,
+        "signed_gap": 0.0,
+        "complete_48code_effect_distance": 2.501516936747266e-15
+      }
+    },
+    "invariants_diagnostic": {
+      "energy_max_drift": 1.2088108292118704e-12,
+      "source_quadratic_invariant": 1.021405182655144e-14,
+      "G_norm": 4.440892098500626e-16,
+      "probe_unitarity": 3.774758283725532e-15
+    },
+    "initial_Q_diagnostic": 5.171528690559316,
+    "initial_a_second_diagnostic": [
+      1.1414286196153571,
+      0.3139840291258665,
+      0.7277063243706118
+    ],
+    "initial_Weyl_squared_diagnostic": 0.6846645503303208,
+    "Weyl_measured_by_full_curvature_instrument": false,
+    "traceless_is_velocity_direction_and_initial_metric_tangent": true
+  },
+  "group3_original_menu_and_total_budget": {
+    "p_upper_exact_decimal": "15707963267949/40000000000000",
+    "d_upper_exact_decimal": "611563643/1000000000000",
+    "J_upper_exact_decimal": "22831096163267/500000000000000",
+    "V_upper_exact_decimal": "1868888431192047/1000000000000000",
+    "correlated_lattice_upper": 0.00013782949485494715,
+    "finite_K_pair": 2e-05,
+    "instrument_pair_INPUT": 4e-05,
+    "numeric_pair_adopted": 9e-05,
+    "numeric_pair_certificate": 8.644435261830677e-05,
+    "total_pair_upper": 0.00028782949485494714,
+    "y_clock_site_lower": 0.000874840100089818,
+    "massless_x_lower": 0.003088517861993494,
+    "old_scalar_finite_instrument_upper": 6e-05,
+    "separation_from_old_scalar_y": 0.000814840100089818,
+    "posthoc_polar_probability_guard": 2.960431899624811e-11,
+    "posthoc_eigh_accuracy_assumed": false,
+    "mixed_bound_only_controls_A_B_difference": true,
+    "all_unknown_inputs_have_nonzero_signal_claimed": false
+  },
+  "group4_common_reflection_and_complete_records": {
+    "independently_recomputed_algebra": {
+      "Clifford_anticommutator_max": 0.0,
+      "Dirac_parity_max": 2.220446049250313e-16,
+      "full48_generator_intertwiner_max": 5.551115123125783e-17,
+      "all_analytic_menu_transport_max": 1.1102230246251565e-16
+    },
+    "record_and_reference_diagnostics": {
+      "source_reflection_intertwiner": 3.664213011684506e-16,
+      "complete_passive_probability_difference": 2.7755575615628914e-17,
+      "arbitrary_R_before_record_error": 3.379311963843333e-16,
+      "complete_site_clock_record_normalization_error": 4.440892098500626e-16,
+      "record_R_error": 6.244552433697187e-16,
+      "record_min_probability": 4.864407298814871e-07,
+      "fine_outcomes": 823875,
+      "mass0_mass03_coherence_before_record": 0.18328615579897986,
+      "record_outcome_weights": [
+        0.312467409923981,
+        0.2792281333519509,
+        0.4083044567240682
+      ],
+      "R_dimension_sample": 3,
+      "all_R_claim_from_operator_norm_not_sample": true
+    },
+    "scalar_original_menu": {
+      "x_clock_minusY_joint": {
+        "source_A": 0.2725948653028522,
+        "source_B": 0.2725948653028522,
+        "signed_gap": 0.0,
+        "complete_48code_effect_distance": 0.0
+      },
+      "x_massive_position": {
+        "source_A": 0.5518061640178131,
+        "source_B": 0.5518061640178131,
+        "signed_gap": 0.0,
+        "complete_48code_effect_distance": 0.0
+      },
+      "x_massless_position": {
+        "source_A": 0.581948919954937,
+        "source_B": 0.581948919954937,
+        "signed_gap": 0.0,
+        "complete_48code_effect_distance": 0.0
+      },
+      "y_clock_minusY_joint": {
+        "source_A": 0.27148599963339776,
+        "source_B": 0.27148599963339776,
+        "signed_gap": 0.0,
+        "complete_48code_effect_distance": 0.0
+      },
+      "y_massive_position": {
+        "source_A": 0.5495884326789042,
+        "source_B": 0.5495884326789042,
+        "signed_gap": 0.0,
+        "complete_48code_effect_distance": 0.0
+      },
+      "y_massless_position": {
+        "source_A": 0.499999999999999,
+        "source_B": 0.499999999999999,
+        "signed_gap": 0.0,
+        "complete_48code_effect_distance": 0.0
+      },
+      "z_clock_minusY_joint": {
+        "source_A": 0.24669178329394564,
+        "source_B": 0.24669178329394564,
+        "signed_gap": 0.0,
+        "complete_48code_effect_distance": 0.0
+      },
+      "z_massive_position": {
+        "source_A": 0.49999999999999994,
+        "source_B": 0.49999999999999994,
+        "signed_gap": 0.0,
+        "complete_48code_effect_distance": 0.0
+      },
+      "z_massless_position": {
+        "source_A": 0.499999999999999,
+        "source_B": 0.499999999999999,
+        "signed_gap": 0.0,
+        "complete_48code_effect_distance": 0.0
+      }
+    },
+    "same_full_BG_energy_spectrum_not_same_fixed_probe_total_experiment": true,
+    "scalar_exact_zero_only_Hartree_probe_channel": true
+  },
+  "execution_scope": {
+    "default": "Read-only SHA binding, exact rational budget and finite algebra; uses already recomputed independent Taylor and polar evidence.",
+    "author_integration_imported_in_default": false,
+    "independent_taylor_command": "python -B -X utf8 reviewer_check.py --recompute-taylor",
+    "polar_replay_command": "python -B -X utf8 reviewer_check.py --recompute-polar",
+    "numerical_scope": "Declared gamma_n arithmetic and mathematical residual bounds, not hardware IEEE formal verification."
+  }
+}

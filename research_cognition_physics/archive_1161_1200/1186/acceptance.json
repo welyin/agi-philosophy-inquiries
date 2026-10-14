@@ -1,0 +1,62 @@
+{
+  "schema": "gr_round_acceptance_v1",
+  "date": "2026-10-14",
+  "round": 1186,
+  "status": "ACCEPTED_WITH_SCOPE",
+  "check_groups": 3,
+  "scope": "在声明复合标量母作用及各向同性驻定参考下，背景固定局部接触并满足A0=-C^-1/4；另一个完整正量子振子/控制对照中，删除二阶来源但保同零/一阶，使固定有限记录概率差严格大于0.03879。两个不同资格结果不合并为共同GR实现。",
+  "certified_results": {
+    "local_tensor_identity": "C=a Q/2, C^-1=2P/L, A0=-C^-1/4; D>2, a!=0",
+    "canonical_contact": "3/4",
+    "canonical_static_retarded_response": "-3/8",
+    "full_probability_display": 0.5082573380439783,
+    "contact_deleted_probability_display": 0.5470527495625931,
+    "probability_gap_strict_lower": "3879/100000",
+    "uniform_H_strict_lower": "3/160",
+    "oscillator": "full L2(R), no occupation truncation",
+    "reference": "arbitrary for complete joint unitary"
+  },
+  "inputs_retained": [
+    "selected covariant scalar action, fixed field variables, measure, local subtraction and isotropic stationary reference",
+    "separate canonical conformal oscillator family and its vacuum matching constant",
+    "internal quantum control, known initial vacuum/product, duration 1 and fixed Y+ effect"
+  ],
+  "certification_limits": [
+    "local contact Hessian is not the connected total 1PI kernel; no graviton mass conclusion",
+    "canonical and covariant second derivatives hold different variables fixed; no identification of the two quantum realizations",
+    "unknown control/reference retained by exact full unitary; finite probability witness only on declared known input",
+    "no covariant regulator, Lorentz composite metric, actual internal clock or hardware implementation certified",
+    "no generated two-derivative Einstein coefficient, nonlinear GR or dark-sector interpretation"
+  ],
+  "review_independence": "Internal AI non-blind cross-review. Independent Gaussian probability derivation before author-code inspection, separate rational interval arithmetic, determinant mixed expansion and oscillator polynomial checks. Not external peer review.",
+  "new_adopted_axioms": 0,
+  "new_empirical_calibration": 0,
+  "gr_hard_deliverables_completed": 0,
+  "hard_deliverable_progress": {
+    "common_dynamic_geometry": "partial: prior common clock/three-axis cumulative finite records retained",
+    "complete_common_source_and_backreaction": "partial: generated microscopic binding energy now connected to original common source and original material clock, under explicit response input",
+    "nonlinear_Einstein_dynamics": "not completed"
+  },
+  "files_sha256": {
+    "../research_note_1186.md": "b0932067041b2d0e236146b7392951b876dbe45af3c4d9d05d413b87bdb22b2b",
+    "admission.md": "a4e4e61baedb95864c5e0187662adb00e634ab4d1ed3134d974a326c7afdc496",
+    "proof.md": "c2b0db949c7916755ec3e23c95d74b45b8f56c7252a086cd98c277edb3e34eba",
+    "check.py": "c261af9da9fde10b72d9079e42fba73c4f7048c067de1dcd25a39c1e3b05abc4",
+    "results.json": "3a71f0ad7c845272393b85ae80e0ca3d8be94fda2bfdd9076194c3763796e44d",
+    "NEXT.md": "73aed6892e03de4ea65d31e9b356ef55d4368bd4a0b3452310fae9eb9d3baccf",
+    "review.md": "b60a5dd11581adfa3bfebf8bb3c9025c88c92159a2aecae34ceb52102a305659",
+    "reviewer_check.py": "345ae4dee6c13647f7648128f49d4af024469b6752feb5b8ef2c4fd6838b6544",
+    "review_checks.json": "76135b8cb08a95fffd4ff4d246316d6a3aabadb6b7fb6bbf6c4fbce60a006a81",
+    "../_shared/goal.md": "8acafd3ed835d581a543de077e1e6ea6c120b6e78c7a1e271e749f263e422667"
+  },
+  "validation": {
+    "root_personally_executed": true,
+    "commands": {
+      "check.py": "READ_ONLY_MATCH 3 groups; exact rational gap > 0.03879",
+      "reviewer_check.py": "READ_ONLY_MATCH independent review; strict probability gap > 0.03879"
+    },
+    "groups": 3,
+    "blockers": 0,
+    "old_science_rerun": false
+  }
+}

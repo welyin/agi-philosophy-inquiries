@@ -1,0 +1,72 @@
+{
+  "schema": "gr_round_acceptance_v1",
+  "date": "2026-10-13",
+  "round": 1184,
+  "status": "ACCEPTED_WITH_SCOPE",
+  "check_groups": 4,
+  "scope": "固定1178局部父规则，扩大有限空间及已知K背景；非均匀双平台的完整48码/R与精确BG有统一误差，在事前近同钟端点，原三轴累计传播记录各保持非零有限分离。只签累计记录与明确连续菜单，不签瞬时体积率、非CMC或Einstein动力学。",
+  "certified_results": {
+    "per_platform_unknown_dimension": 48,
+    "reference": "arbitrary",
+    "common_probability_budget": "7/125000",
+    "clock_parameter_mismatch_upper": "1/100000000000000",
+    "all_axes_lattice_gap_strict_lower": "11/12500",
+    "all_axes_continuous_record_gap_strict_lower": "3/25000",
+    "complete_actual_to_continuous_wide_packet_upper": "1501/1000000",
+    "with_instrument_upper": "1521/1000000"
+  },
+  "inputs_retained": [
+    "original graph/Clifford/CAR/material and reciprocal Hamiltonian rule",
+    "Lx=2097152, Nx=8519680, V=35995648000, K=10^16; positive Fock baseline retained",
+    "known nonuniform product background and localized finite-band preparations",
+    "predeclared endpoints plus preparation/trigger/timing/full-record/causal-collection instrument contract at 2e-5 per task"
+  ],
+  "certification_limits": [
+    "each platform has its own 48-code task, not an asynchronous 96-code handover",
+    "same prepared physical parent, complete exact BG and probe backreaction retained",
+    "cumulative axes, not instantaneous volume rate/non-CMC or canonical constraint preparation",
+    "probability-specific continuum error is not arbitrary-state error",
+    "no empirical instrument demonstration, no Einstein or dark-sector generation"
+  ],
+  "review_independence": "Internal AI cross-review, prior scope discussion and author-code reading disclosed; independent rational intervals, alternate atan identity, exact Fourier and Simpson quadrature; not blind/external peer review",
+  "new_adopted_axioms": 0,
+  "new_empirical_calibration": 0,
+  "gr_hard_deliverables_completed": 0,
+  "hard_deliverable_progress": {
+    "common_dynamic_geometry": "partial: nonuniform same-parent clock and three-axis cumulative records added; normal-volume identity still open",
+    "complete_common_source_and_backreaction": "partial: exact BG/source and probe backreaction retained in new finite tasks; universal self-coupling absent",
+    "nonlinear_Einstein_dynamics": "not completed"
+  },
+  "files_sha256": {
+    "../research_note_1184.md": "c24a911fe41c50a00c158412b57f17ffedefca7726a6d9cbdeb29434df207a92",
+    "admission.md": "9f251a1d2bfae42bdc36c5ddec19072ffc297db3b4fafa31ecd1e9b519d9bc9d",
+    "proof.md": "87c0607842caaad18fbea6344d2ceda8a2444f50910351c551980ef4e60a29bd",
+    "check.py": "3d6d172723eb21b784345504107dd6bc9363a54adccf01d778c406c122fe2d43",
+    "results.json": "acb2c0e8964f06f395c7f1a1622a99827ac98db7572c81615b4623af69180bdb",
+    "NEXT.md": "62238ea5531c0db65228b50409bb7aaaef0074e75df441150f62d414da30e387",
+    "review.md": "8993280cd1d7c7fa538bf6019faa1ec33ad71480f167e4629b70b10d43a0e69d",
+    "reviewer_check.py": "0ca77a07fa62b1826410b07283af112f8d508a3da45c1a77e71b644e51504697",
+    "review_checks.json": "a65c1f46867fa3082bdae6b47d966641cc2a39d51c38a22fed043876dbfc0c7b",
+    "../1175/proof.md": "581427de3c8e03176a1145773d6bd0754930d849524110a22971c0e3f8e861f4",
+    "../1176/proof.md": "966a751121980b976ad86f459d06088c72a56e3eca49109828293020b86320f9",
+    "../1177/proof.md": "6c3229a8bd9caad35e7d96bc53ced14e867feb89a8aeaff01be8d7d40339c447",
+    "../1178/proof.md": "cd44222a8fedc2d45c497b2e0e02120e18408c3385d5a628e3f0066895f127cf",
+    "../1179/proof.md": "6154136dc607b8dbba865deb26408133910cd663664bc165d92c7ebf7c66620d",
+    "../../archive_1120_1158/1128/proof.md": "fc9963b8f77d0a60e2233acbcc68e02e583af345a5653d1d4431ea619be0fcd2",
+    "../../archive_1120_1158/1146/packet_bound.md": "e85c8760eac3bb4d1ae3487df6cccc17fc15cfe9fe3b5fbf6422343387246ab3",
+    "../_admission/after1174_direction/mean_field_bound.md": "11ac64ce824d3448dec97548efe3dda768bcda30f2e48e1cd88bfe511fcd6b3f",
+    "../_shared/goal.md": "8acafd3ed835d581a543de077e1e6ea6c120b6e78c7a1e271e749f263e422667"
+  },
+  "validation": {
+    "root_personally_executed": true,
+    "commands": {
+      "check.py": "READ_ONLY_MATCH 4 groups; integer interval certificate",
+      "reviewer_check.py": "READ_ONLY_MATCH 4 groups; blockers 0"
+    },
+    "groups": 4,
+    "blockers": 0,
+    "old_science_rerun": false
+  },
+  "next": "NEXT.md",
+  "mutable_direction_not_a_frozen_scientific_dependency": true
+}

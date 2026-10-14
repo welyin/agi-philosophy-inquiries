@@ -1,0 +1,65 @@
+{
+  "schema": "gr_round_acceptance_v1",
+  "date": "2026-10-14",
+  "round": 1188,
+  "status": "ACCEPTED_WITH_SCOPE",
+  "check_groups": 3,
+  "scope": "同一声明有效非真空历史、同事件同法向五切片，在公开二次度规Hamiltonian类及候选CT1188下，中心二差消去完整物质来源、环境曲率、常数与背景外曲率一阶项；秩一及无迹形状必要选择lambda_H=1/2、a*b=1。无需新增非CMC准备或真空探针；未认证CT实际量子身份或全部Einstein动力学。",
+  "certified_results": {
+    "complete_source_cancelled": "same physical p,h,n,T; no zero-energy clock or vacuum assumption",
+    "central_difference": "2*s^2*((1/a-b)*A:A+(b-lambda_L/a)*(tr A)^2)",
+    "conditional_parameter_selection": {
+      "lambda_H": "1/2",
+      "a_times_b": "1"
+    },
+    "degenerate_lambda_H": "1/3 excluded only by this same-velocity five-slice condition",
+    "normalized_finite_error_bound": "abs(lambda_H-1/2) <= (16/5)*epsilon; a=b=1, s=1/2, lambda_H in [2/5,3/5]"
+  },
+  "inputs_retained": [
+    "Smooth effective Lorentz history with same actual geometry/source dictionary; no microscopic continuity claim.",
+    "Local quadratic metric momentum and scalar-curvature Hamiltonian with a,b>0.",
+    "Matter/source term has no metric momentum mixing and equals complete normal source in that dictionary.",
+    "CT1188 admits the five slices with same Legendre/constraint identity; unadopted candidate condition.",
+    "Any actual finite jet/source/transport errors must be certified separately."
+  ],
+  "certification_limits": [
+    "Central differences are necessary constraints; baseline constraint, all normals and dynamical preservation remain unproved.",
+    "No complete same-process quantum geometry encoding or physical finite instrument tolerance is certified.",
+    "Coherent record postprocessing isometry does not itself imply CT or implementation in the original Hamiltonian.",
+    "Nonminimal coupling, mixed metric momenta or extra variables are outside this class.",
+    "G, net constant, species, states, boundaries, higher terms and dark-sector mechanisms remain free."
+  ],
+  "review_independence": "Internal non-blind AI review; reviewer independently derived formulas and wrote different rational/finite-permutation checks before reading author code. Not external peer review.",
+  "new_adopted_axioms": 0,
+  "new_empirical_calibration": 0,
+  "gr_hard_deliverables_completed": 0,
+  "hard_deliverable_progress": {
+    "common_dynamic_geometry": "partial: prior common clock/three-axis cumulative finite records retained",
+    "complete_common_source_and_backreaction": "partial: generated microscopic binding energy now connected to original common source and original material clock, under explicit response input",
+    "nonlinear_Einstein_dynamics": "not completed"
+  },
+  "files_sha256": {
+    "../research_note_1188.md": "0476eae8cf7a82a7d618902217b8de2dc5b013e388e903b74881d69433c0fb73",
+    "admission.md": "f37bbb632b4be75c0d8780c8c4c06fef3b6ac2c68e1ea6d4ffe29f25ae90b3dd",
+    "proof.md": "6c2c22b858fb938ca6b1cf36747da2c40f5634af39568b7859e19c6024f604a3",
+    "check.py": "2815d7e7905712ad182a5c8d8eba02a73e5698c95ed462f7f5cd7432e8232245",
+    "results.json": "6ff8424e955070834c2b2bbafc1d4f43ac2491ffe756ebbb10b6dc1157e5511e",
+    "NEXT.md": "32a6711ae1a22509f053c61e29983d75a599d95ee6b3ed5500a8d0e2d113f237",
+    "review.md": "55cb4279c781c74284e115979207855f0abd6d9f65aea96fc30887a71a209c0b",
+    "reviewer_check.py": "51da2829c6f44005b6e3e6d6381880d702a094ffba67a042fb3ddc550e73a462",
+    "review_checks.json": "d314efc49c0cd9ed7360ddb1188f8ecf03d798573d2100330ad6c24167042095",
+    "../_shared/goal.md": "8acafd3ed835d581a543de077e1e6ea6c120b6e78c7a1e271e749f263e422667"
+  },
+  "validation": {
+    "root_personally_executed": true,
+    "commands": {
+      "check.py": "READ_ONLY_MATCH 1188: 3 groups",
+      "reviewer_check.py": "READ_ONLY_MATCH independent 1188: source/slice/selection/records"
+    },
+    "groups": 3,
+    "blockers": 0,
+    "old_science_rerun": false,
+    "old_acceptances_unchanged": 27,
+    "old_bindings_unchanged": 335
+  }
+}

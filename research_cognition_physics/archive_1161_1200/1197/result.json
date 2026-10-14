@@ -1,0 +1,95 @@
+{
+  "closure_test": {
+    "Hartree_initial_probe_probability_third_derivative_difference": -0.003994382130791572,
+    "claim_complete_preparation_record_same": false,
+    "initial_Gs_z_second_derivative_difference": -0.26629214205277146,
+    "initial_source_force_change": 0.9362199847104142,
+    "rejects": "autonomous closure from this two-mode instantaneous state plus identical Gs/Gt; not general coarse-graining",
+    "same_initial_macro_covariance_numerical_residual": 3.3423774554807196e-16,
+    "same_initial_macro_state_exact_reason": "real envelope Fourier intensity is even; sin(k) term cancels; Cmacro commutes with beta",
+    "source_hopping_energy_change": 2.674914242029755
+  },
+  "macro_readout": {
+    "boost_leakage_from_two_mode_span": 3.9813991064748295,
+    "envelope": "normalized sin(pi*(j+1/2)/32), j=0..31",
+    "identifiability_controls": {
+      "1": {
+        "prediction_separation_from_2pi": 0.00034162756073759606,
+        "residual_over_separation": 0.05416566606419847
+      },
+      "4": {
+        "prediction_separation_from_2pi": 6.332869075304579e-05,
+        "residual_over_separation": 0.29219748826639586
+      }
+    },
+    "source_compressed_covariance_eigenvalues": [
+      0.011407884641569124,
+      0.9885921153584302
+    ],
+    "source_upper_occupation": 0.011407884641569124,
+    "temperature_controls": {
+      "1": {
+        "beta_over_pi": 1,
+        "compressed_covariance_error": 0.0003231230763646237,
+        "upper_mode_occupation": 0.011731007717933747
+      },
+      "2": {
+        "beta_over_pi": 2,
+        "compressed_covariance_error": 1.8504484373239307e-05,
+        "upper_mode_occupation": 0.011389380157196151
+      },
+      "4": {
+        "beta_over_pi": 4,
+        "compressed_covariance_error": 8.183317512622266e-05,
+        "upper_mode_occupation": 0.011326051466443107
+      }
+    },
+    "transverse": "p_y=p_z=0 as in 1196; full periodic cross-section"
+  },
+  "parameters": {
+    "Nlat": 65,
+    "ell": "16/65",
+    "longitudinal_region_sites": 32,
+    "source_beta_rotation": "pi/8",
+    "time": "pi/2"
+  },
+  "reference_sha256": "de63b47c07df72b2f99790b0bf711b3d0c947889a5e140189f7b94a6b7854468",
+  "scope": {
+    "GR_or_Jacobson_derived": false,
+    "RK_step_difference_is_rigorous_error": false,
+    "actual_coarse_source_instrument": false,
+    "actual_source_preparation_device": false,
+    "full_modular_flow_identity": false,
+    "new_finite_K_time_certificate": false,
+    "new_round_assigned": false,
+    "whole_parent_region": false
+  },
+  "script_sha256": "6736ad561db4573185f19453482d712d79357af0736de0ca727807a4f9716ef2",
+  "source_response": {
+    "cubic_orbits": 6545,
+    "initial_pulse_energy_per_site_copy_excluding_common_baseline": 3.601618069334579,
+    "probability_step_difference": 6.6058269965196814e-15,
+    "runs": [
+      {
+        "Gs_Bloch_length_error": 5.74651437545981e-13,
+        "Gs_z_change": -0.014626649185176643,
+        "complete_Hartree_energy_drift": 2.0605739337042905e-13,
+        "delta_tau": -0.001971380817551216,
+        "probe_PminusY_probability_change": -0.00018445871322528284,
+        "source_Bloch_length_error": 4.78412731652611e-09,
+        "steps": 1024
+      },
+      {
+        "Gs_Bloch_length_error": 3.68594044175552e-14,
+        "Gs_z_change": -0.014626649186398222,
+        "complete_Hartree_energy_drift": 1.5987211554602254e-14,
+        "delta_tau": -0.001971380817621604,
+        "probe_PminusY_probability_change": -0.00018445871323188867,
+        "source_Bloch_length_error": 1.4952727944717026e-10,
+        "steps": 2048
+      }
+    ],
+    "total_momenta": 274625
+  },
+  "status": "COMPLETED_NUMERICAL_SCREEN_NOT_CERTIFIED"
+}

@@ -1,0 +1,192 @@
+{
+  "schema": "round1162_frozen_ports_exact_recoil_v1",
+  "status": "PASS",
+  "check_groups": 4,
+  "new_adopted_axioms": 0,
+  "new_empirical_calibration": 0,
+  "code_sha256": "09f335b2f813e12b78b835b61a4d1b31f68721dfda5df724e90884cc8353368c",
+  "sources_sha256": {
+    "archive_1106_1119/1111/check.py": "704ae4ca016c77e0df83fc9c2d39e90d79e9fbf3d6469c8c5b9bf1dad8a5bd44",
+    "archive_1159_1160/1160/check.py": "8af83d78311b77c804693e055f2ece2c9f195e1d217b5b67e41fa6b3b6753170",
+    "archive_1159_1160/1160/proof.md": "ca3121515439d2b93c23d341d83a1dfbd68b48c4c63ac95fc41c28b027cf8e81"
+  },
+  "frozen_joint_spectrum": {
+    "joint_spectral_cases": 64,
+    "positive_energy_candidates": 24,
+    "single_null_matches": [],
+    "clock_characteristic_polynomial_ascending": [
+      "0",
+      "-6",
+      "11",
+      "-6",
+      "1"
+    ],
+    "original_HD_spectral_residual": 6.750155989720952e-14,
+    "clock_width": 3,
+    "nonzero_frozen_spatial_momentum_squared": 32,
+    "two_opposite_quanta_kinematic_control": [
+      2,
+      0,
+      0,
+      0
+    ],
+    "no_uniform_gap_control_residual_at_energy_1e_minus_8": 1.4142135623730952e-08
+  },
+  "exact_recoil_family": {
+    "exact_rational_samples": [
+      {
+        "axis": "x",
+        "omega": "51/16",
+        "k": "1/4"
+      },
+      {
+        "axis": "y",
+        "omega": "51/16",
+        "k": "1/4"
+      },
+      {
+        "axis": "x",
+        "omega": "3",
+        "k": "1"
+      },
+      {
+        "axis": "y",
+        "omega": "3",
+        "k": "1"
+      },
+      {
+        "axis": "x",
+        "omega": "12/5",
+        "k": "2"
+      },
+      {
+        "axis": "y",
+        "omega": "12/5",
+        "k": "2"
+      },
+      {
+        "axis": "x",
+        "omega": "7/5",
+        "k": "3"
+      },
+      {
+        "axis": "y",
+        "omega": "7/5",
+        "k": "3"
+      },
+      {
+        "axis": "x",
+        "omega": "31/80",
+        "k": "15/4"
+      },
+      {
+        "axis": "y",
+        "omega": "31/80",
+        "k": "15/4"
+      },
+      {
+        "axis": "x",
+        "omega": "799/50000",
+        "k": "399/100"
+      },
+      {
+        "axis": "y",
+        "omega": "799/50000",
+        "k": "399/100"
+      }
+    ],
+    "general_bound": "omega <= 16/5 from (P-q)^2 >= 36",
+    "retained_encoding_domain": "0 < omega < 16/5",
+    "upper_endpoint_direction_labels_merge": true,
+    "upper_endpoint_A": [
+      3.4,
+      0.0,
+      0.0,
+      -1.6
+    ],
+    "example_omega_1_over_10": {
+      "A_x": [
+        4.95,
+        3.9370039370059056,
+        0.0,
+        -0.05
+      ],
+      "B_x": [
+        4.95,
+        -3.9370039370059056,
+        0.0,
+        -0.05
+      ],
+      "q": [
+        0.1,
+        0.0,
+        0.0,
+        0.1
+      ]
+    }
+  },
+  "finite_endpoint_transport": {
+    "omega_cap": 3.1,
+    "C_cap": 1.2760560397968992,
+    "maximum_momentum_bound_ratio": 0.9597892515649415,
+    "maximum_endpoint_bound_ratio": 0.9597892515649415,
+    "mass_shell_and_null_residual": 2.842170943040401e-14,
+    "boosted_fourP_residual": 2.0350724194510405e-15,
+    "common_affine_endpoint_residual": 1.9984014443252818e-15,
+    "examples": [
+      {
+        "omega": 0.1,
+        "A_endpoint": [
+          6.654925986923127,
+          2.574801574802362,
+          0.0,
+          -0.020000000000000004
+        ],
+        "B_endpoint": [
+          6.654925986923127,
+          -0.5748015748023623,
+          0.0,
+          -0.020000000000000004
+        ],
+        "coordinate_flight_time": 1.98,
+        "x_y_endpoint_separation": 2.2271057451320093
+      },
+      {
+        "omega": 1.0,
+        "A_endpoint": [
+          6.474925986923126,
+          2.32664991614216,
+          0.0,
+          -0.2
+        ],
+        "B_endpoint": [
+          6.474925986923126,
+          -0.3266499161421601,
+          0.0,
+          -0.2
+        ],
+        "coordinate_flight_time": 1.8,
+        "x_y_endpoint_separation": 1.8761663039293721
+      }
+    ]
+  },
+  "conditional_kinematic_isometry_and_bins": {
+    "contract": "reduced direct integral only; no emission instrument certified",
+    "quadrature_Gram_residual": 1.3623268404373326e-17,
+    "total_fourP_intertwiner_residual": 0.0,
+    "spectator_clock_intertwiner_residual": 0.0,
+    "uniform_bin_width": "1/5",
+    "uniform_bin_energy_variance_exact": "1/300",
+    "uniform_bin_energy_variance_quadrature": 0.003333333333333339,
+    "finite_bin_L_cap": 1.033528818263825,
+    "maximum_bin_bound_ratio": 0.9537893570967846
+  },
+  "not_certified": [
+    "finite emission amplitude",
+    "physical emission channel",
+    "normalizable full 3D momentum wavepacket",
+    "spin-2 emergence",
+    "dynamic geometry",
+    "Einstein dynamics"
+  ]
+}

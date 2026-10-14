@@ -1,0 +1,63 @@
+{
+  "schema": "gr_round_acceptance_v1",
+  "date": "2026-10-14",
+  "round": 1189,
+  "status": "ACCEPTED_WITH_SCOPE",
+  "check_groups": 3,
+  "scope": "同一有限Dirac物质、原完整约束势和四个完整Fock模式中，将1180固定正频带成本接入持续非对易量子来源，初始总占据不超过1、30维未知初码及任意R、时间不超过1时，完整输出误差小于3.535e-6，同一耦合来源插入误差小于5.232e-5。保受驱高占据、反作用与原零点；不生成TT约束、Einstein约束势或实际内部钟。",
+  "certified_results": {
+    "full_Fock_output_upper": 3.534988588683327e-06,
+    "same_kappa_source_insertion_upper": 5.231785315184274e-05,
+    "input_code": "material dimension 6 times total boson occupation N<=1, dimension 30; arbitrary reference R",
+    "time_interval": [
+      0,
+      1
+    ],
+    "initial_system_energy_upper": 8,
+    "exact_budget_authority": "rational fields in results.json; independent fractions agree"
+  },
+  "inputs_retained": [
+    "940 Dirac vertices, TT degrees and complete normal-ordered constraint potential; explicit new finite mode parameters.",
+    "1180 fixed degree-32 positive frequency cost and positive floor; comparison background and frequencies.",
+    "Known input support, time window, kappa=1/10 and unchanged parameter dictionary."
+  ],
+  "certification_limits": [
+    "Full Fock for four declared modes, not an all-mode continuum quantum field theory.",
+    "Same kappa source insertion bound, not a full Hilbert stress tensor, interacting Ward identity or all parameter-response channels.",
+    "Finite 420-dimensional diagnostics do not prove the full Fock error bound.",
+    "No original internal clock implementation, strict spatial causal propagation, nonlinear self-coupling, Einstein generation or dark sector identified."
+  ],
+  "review_independence": "Internal non-blind AI review; independently derived bounds and rebuilt Dirac/CAR matrices without reading or importing author check.py; not external peer review.",
+  "new_adopted_axioms": 0,
+  "new_empirical_calibration": 0,
+  "gr_hard_deliverables_completed": 0,
+  "hard_deliverable_progress": {
+    "common_dynamic_geometry": "partial: previous common clock/position results retained",
+    "complete_common_source_and_backreaction": "partial: full driven source and Fock output controlled in one declared comparison model",
+    "nonlinear_Einstein_dynamics": "not completed"
+  },
+  "files_sha256": {
+    "../research_note_1189.md": "e2557c673fb2d21483b99f49c8584e47177f14d6b8195a1273c4850179e37f9f",
+    "admission.md": "89edb58321467aa4b411170b38af0f0dbc115afcaa210ba128d2d9f4697aab2b",
+    "proof.md": "820640f846110f243da54cf54c2c6e9c88ba4daf6a660e8d819016a3cbef88ea",
+    "check.py": "0ae9236295c569fe31aba61d3a4e1e01da755ce9b0845f1e4066eafecf0ce62a",
+    "results.json": "ddfb87e4f6ad449b983b9503a72e0c4eeadfc6c192abd5bd26ec1fae19667fb6",
+    "NEXT.md": "fa2b647905e3441735e595da1aa81fa34c025444f98a8770069f5498ab033a72",
+    "review.md": "58d614dc742e3e2ba54638454696573f4ec658429feaa1fcca9d55f8e91b8838",
+    "reviewer_check.py": "d130bb8ab55fa14d1843d4aa849d6a378199a665c5dbb9b7b370cd963b0e3151",
+    "review_checks.json": "7a06961b9841cb867ec6292866c969842c644f0e06ae614c26aa4b94b0683fe2",
+    "../_shared/goal.md": "8acafd3ed835d581a543de077e1e6ea6c120b6e78c7a1e271e749f263e422667"
+  },
+  "validation": {
+    "root_personally_executed": true,
+    "commands": {
+      "check.py": "READ_ONLY_MATCH 1189: 3 groups",
+      "reviewer_check.py": "PASS_WITH_EXPLICIT_SCOPE; same exact rational budgets"
+    },
+    "groups": 3,
+    "blockers": 0,
+    "old_science_rerun": false,
+    "old_acceptances_unchanged": 28,
+    "old_bindings_unchanged": 345
+  }
+}

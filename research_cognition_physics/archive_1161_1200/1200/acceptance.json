@@ -1,0 +1,173 @@
+{
+  "schema": "gr_round_acceptance_v1",
+  "date": "2026-10-14",
+  "round": 1200,
+  "status": "ACCEPTED_WITH_SCOPE",
+  "check_groups": 2,
+  "scope": "原1199有限L型完整H与全Weyl反演C对易，码内两奇偶维数为(5^132±1)/2，任意有限时间跨支振幅为零。不破缺参考、原C奇一引力子、其余资源不接走奇荷及散射资格下，与非零Einstein五点软自耦不相容。仅停止保该分支的调参；未认证有限格子S矩阵、实际仪器或所有有限误差GR排除。",
+  "certified_results": {
+    "box": [
+      4,
+      4,
+      4
+    ],
+    "prime": 5,
+    "qudits": 384,
+    "full_H_pairing": {
+      "HU_scalar_per_U2": {
+        "original_rows": 64,
+        "collected_weyl_terms": 128,
+        "inversion_coefficient_mismatches": 0
+      },
+      "HU_vector_per_U1": {
+        "original_rows": 192,
+        "collected_weyl_terms": 384,
+        "inversion_coefficient_mismatches": 0
+      },
+      "Hg_per_g": {
+        "original_rows": 384,
+        "collected_weyl_terms": 768,
+        "inversion_coefficient_mismatches": 0
+      },
+      "HJ_per_J": {
+        "original_rows": 576,
+        "collected_weyl_terms": 1152,
+        "inversion_coefficient_mismatches": 0
+      }
+    },
+    "code": {
+      "scalar_rank": 63,
+      "vector_rank": 189,
+      "dimension": "5^132",
+      "C_trace": 1,
+      "even_dimension": "(5^132+1)/2",
+      "odd_dimension": "(5^132-1)/2",
+      "fixed_cosets": 1
+    },
+    "nonzero_C_odd_operators": {
+      "R": {
+        "row": 0,
+        "W_and_W_squared_nonidentity": true,
+        "normalized_code_trace_O_squared": "1/2"
+      },
+      "T": {
+        "row": 0,
+        "W_and_W_squared_nonidentity": true,
+        "normalized_code_trace_O_squared": "1/2"
+      }
+    },
+    "finite_exact_result": "P_minus exp(-it H) P_plus = 0 for all real t, including arbitrary passive reference; odd multitime correlators vanish for any C-invariant state.",
+    "perturbation_bound": {
+      "hypothesis": "norm of C-odd part of perturbed full H <= delta",
+      "opposite_parity_probability_upper": "min(1,(abs(t)*delta)^2)",
+      "physical_readout_certified": false
+    },
+    "soft_witness": {
+      "hard_momenta_at_soft_limit": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          -1
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          -1,
+          0,
+          0
+        ]
+      ],
+      "in_out_signs": [
+        -1,
+        -1,
+        1,
+        1
+      ],
+      "q_over_omega": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "polarization_diagonal": [
+        0,
+        1,
+        0,
+        -1
+      ],
+      "polarization_norm_squared": 2,
+      "s_t_u": [
+        4,
+        -2,
+        -2
+      ],
+      "omega_times_each_geometric_term": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "omega_times_soft_sum": "4",
+      "omega_M5_over_kappa_M4_limit": "2",
+      "hypotheses": "unbroken C, C-odd one-graviton branch, appropriate scattering/soft limit, nonzero kappa and hard M4; not certified for the finite lattice"
+    }
+  },
+  "inputs_retained": [
+    "Frozen finite Gu-Wen L-type Hamiltonian, lattice and invariant code.",
+    "Einstein comparison requires unbroken C, a C-odd one-graviton branch, unchanged remaining asymptotic C charge, suitable scattering/soft qualifications and nonzero kappa,M4.",
+    "All instrument implementations and macroscopic uniform perturbation/measurement budgets remain unproved."
+  ],
+  "certification_limits": [
+    "Not an asymptotic scattering theorem for the 4^3 p5 box.",
+    "Not a no-go for broken references, C-even collective encodings, active extra charge-carrying degrees of freedom, changed Hamiltonians or all finite-error effective GR.",
+    "Not a new general selection-rule theorem or first discovery of Gu-Wen nonlinear mismatch.",
+    "The additional planar finite-five-point trial canceled exactly; it is retained as an unused zero screen, not as nonzero evidence.",
+    "User changed the direct stage goal to operational thermodynamics during closure; GR hard deliveries remain incomplete."
+  ],
+  "review_independence": "Independent agent reused only frozen round1199 independent Laurent stencils, never imported round1200 author code; root reran both programs; second agent audited historical duplication and physical scope. Internal non-blind review, not experimental verification.",
+  "new_adopted_axioms": 0,
+  "new_empirical_calibration": 0,
+  "gr_hard_deliverables_completed": 0,
+  "files_sha256": {
+    "../research_note_1200.md": "6905d8f9a05f4ad5c65e4071341830eac3787c432f3feb779f072248ec0a9e7a",
+    "check.py": "e172b6268cec81478f61ba85a1b0d12d77269e31c58563ba4b8260c073c4533e",
+    "finite_five_point_screen.md": "e15d15027ebecf0a6dd1a55404413ce973ab547badc177eb4cc2fdf479112d76",
+    "independent_check.py": "668746a8c123bf711d554c178dfd4f84f136e9a07bcc46e1dc1496dec688fda1",
+    "independent_results.json": "61270c456735dadcb4bc844e8487d564bb4a7c92f9999da07f12a9f198ab10fb",
+    "NEXT.md": "969be35f2f1a01d3ced238596b5bf8a0690838972b1a8dc4cf1d15764ba032e5",
+    "proof.md": "c9e8d49f4564e2bae88f5d931fe674880b96652aae419a038df7a5a816da41c5",
+    "results.json": "1880aacd2784c0dd6fd52eaa4b4d70f1b0ff887cb3015e15d33aed1ee3f26db9",
+    "review.md": "5265720af55230c2d5859549d415b2848bc0a9ecb93df6710587369b5a22a241",
+    "../_shared/goal.md": "8acafd3ed835d581a543de077e1e6ea6c120b6e78c7a1e271e749f263e422667"
+  },
+  "validation": {
+    "root_personally_executed": true,
+    "executions": [
+      {
+        "script": "check.py",
+        "result": "results.json",
+        "status": "PASS_EXACT_PARITY_AND_CONDITIONAL_SOFT_WITNESS"
+      },
+      {
+        "script": "independent_check.py",
+        "result": "independent_results.json",
+        "status": "PASS_INDEPENDENT_FINITE_PARITY_ALGEBRA"
+      }
+    ],
+    "old_acceptances_unchanged": 39,
+    "old_bindings_unchanged": 475,
+    "old_unique_scientific_files_unchanged": 412
+  }
+}

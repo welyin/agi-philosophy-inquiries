@@ -1,0 +1,86 @@
+{
+  "status": "PASS_WITH_SCOPE",
+  "groups": 3,
+  "blockers": 0,
+  "algorithm": "independent rational enclosure, Clifford/Fourier, convex record witness",
+  "core_sha256": {
+    "research_note_1179.md": "8c8cc42f1b2c7b2d39579459687a8d082e774e18f2051813152ae87b9d71bbfd",
+    "1179/admission.md": "6e892f034895081576748a5f46966c7a1b1e4cb9d01273b8a70e24a6b5f188a8",
+    "1179/proof.md": "6154136dc607b8dbba865deb26408133910cd663664bc165d92c7ebf7c66620d",
+    "1179/check.py": "31e861284bef9e998f934fe680bbd7ebcd50bd0a20c9375308fc17ea28d15a39",
+    "1179/results.json": "8d605e9607c5919fce0d5b17cac1962da7bee74a07c42a233853677ea6d60c9d",
+    "1179/NEXT.md": "e810558d464ffb6ca3946bedb749806ce81166dd75483e8e56da62fa57c8ce6e"
+  },
+  "source_sha256": {
+    "1178/proof.md": "cd44222a8fedc2d45c497b2e0e02120e18408c3385d5a628e3f0066895f127cf",
+    "1178/results.json": "e6255dd8f47a4bc57e1cf8a1b8cd602d9ce3ac87098013bc0e3e26442ba13b98",
+    "1178/check.py": "3c5e06e1a048ca2758c33f1b74f6c67b75e4c19ab3654b516a08e3e115ae6037",
+    "1178/review.md": "c7b76b46abe364ba5c2d031b732766d776937717e29ec6ce6a69cccde641d888",
+    "1177/proof.md": "6c3229a8bd9caad35e7d96bc53ced14e867feb89a8aeaff01be8d7d40339c447",
+    "1176/proof.md": "966a751121980b976ad86f459d06088c72a56e3eca49109828293020b86320f9",
+    "1175/proof.md": "581427de3c8e03176a1145773d6bd0754930d849524110a22971c0e3f8e861f4",
+    "_admission/after1174_direction/mean_field_bound.md": "11ac64ce824d3448dec97548efe3dda768bcda30f2e48e1cd88bfe511fcd6b3f"
+  },
+  "reviewer_script_sha256": "5bca284ba07f66871af2caa55e5656892ab1baa036e6d5462dfd57efd318b461",
+  "author_outward_bounds_confirmed_by_independent_tighter_enclosure": true,
+  "groups_data": {
+    "strict_intervals": {
+      "pi": {
+        "lower": 3.141592653589793,
+        "upper": 3.1415926535897936
+      },
+      "native_k": {
+        "lower": 0.3920878037152176,
+        "upper": 0.3920878037152177
+      },
+      "phase_window": [
+        0.277150536835624,
+        0.9546296268782607
+      ],
+      "target_linear_witness": {
+        "lower": 0.04840144622757064,
+        "upper": 0.048401446227570644
+      },
+      "random_three_setting_TV_bound": {
+        "lower": 0.005664796945739101,
+        "upper": 0.005664796945739102
+      },
+      "convex_preparation_TV_bound": {
+        "lower": 0.008066907704595106,
+        "upper": 0.008066907704595108
+      },
+      "actual_convex_TV_bound": {
+        "lower": 0.007906907704595106,
+        "upper": 0.007906907704595107
+      },
+      "actual_convex_lower_exact": "3162763081838042846484684089366346431977490401223818256446306053773591321986406195821979700269870144392781458437862524517672200014588497457/400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "eta_PK_upper": 5.9413204823822455e-05,
+      "eta_PK_upper_exact": "950611277181159218444361115315447399936181633888507585843072979/16000000000000000000000000000000000000000000000000000000000000000000",
+      "each_side_probability_budget": "1/12500"
+    },
+    "original_port_and_rotation": {
+      "clifford_residual": 0.0,
+      "proper_cyclic_rotation_residual": 0.0,
+      "transported_native_unitary_residual": 0.0,
+      "target_original_port_probabilities": [
+        0.6444213222173197,
+        0.6599633796056014,
+        0.6279916277976754
+      ],
+      "maximum_direct_Fourier_formula_error": 2.220446049250313e-16,
+      "same_prepared_massless_subcode_dimension": 16,
+      "full_original_prepared_code_dimension": 48,
+      "instantaneous_minimax_for_a_one_fifth_exact": "3/20"
+    },
+    "convex_preparation_record": {
+      "sampled_identity_residual": 3.2612801348363973e-16,
+      "sampled_preparation_witness_maximum": -7.444358463004619e-10,
+      "sampled_mixture_witness_maximum": -0.0006903178418840028,
+      "sampled_mixture_TV_minimum": 0.01082374992189931,
+      "fixed_event_target_probability": 0.5080669077045951,
+      "fixed_event_candidate_upper_exact": "1/2",
+      "diagnostics_are_not_universal_proof": true,
+      "setting_must_be_independent_of_preparation_and_mixture_label": true
+    }
+  }
+}

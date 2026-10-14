@@ -1,0 +1,68 @@
+{
+  "schema": "round1164_independent_review_checks_v1",
+  "status": "PASS",
+  "date": "2026-10-13T00:47:23",
+  "reviewer": "/root/merge_1120_1158_runtime",
+  "prior_involvement": "Read-only direction and scope feedback on this candidate before submission; no proof/code/results authorship. Not blind or external human peer review.",
+  "entry": "Direct existing Python -B -X utf8 1164/check.py; default recomputes and recursively compares all saved scientific fields.",
+  "default_exit_code": 0,
+  "default_stdout": {
+    "status": "PASS",
+    "mode": "READ_ONLY_MATCH",
+    "groups": 4,
+    "sharp_task_gap": 1,
+    "full_source_error": 4.197898819563626e-15
+  },
+  "default_stderr": "",
+  "comparison_tolerance": {
+    "rel_tol": 1e-09,
+    "abs_tol": 3e-10,
+    "non_float_fields": "exact with all keys and list lengths checked by default entry"
+  },
+  "core_sha256": {
+    "../research_note_1164.md": "0989a4fa9c3630c36729060c9e9f7a3640770438dfb78eb83548fe54a548a296",
+    "admission.md": "e3f4053ece9747e521a836bc17073f0451df199ef3b94ccac7aec4adafc43d74",
+    "proof.md": "c20ace2c8163d278933e2f3232d2df791fe60d9046a9d14fac5b1d6dae8e68cc",
+    "check.py": "dd11c2df91bff7ceb3049673409b4d4de560ee6eb92f04d26367cb1a111742dd",
+    "results.json": "24ef020b4b33538dc26bab116de2e13651b01aba0dc3264dc45e7eb0da55366e",
+    "NEXT.md": "e3556fe8c48dfcd85f4e4752aacee7afc75720cc604ab11c5254d1dd15569e8d"
+  },
+  "sources_sha256": {
+    "archive_1161_/1161/check.py": "52edf7a1dfc530996daa88ee3715efa936f7c5845eefe067124a544688621119",
+    "archive_1159_1160/1160/check.py": "8af83d78311b77c804693e055f2ece2c9f195e1d217b5b67e41fa6b3b6753170",
+    "archive_1159_1160/1160/proof.md": "ca3121515439d2b93c23d341d83a1dfbd68b48c4c63ac95fc41c28b027cf8e81",
+    "archive_1159_1160/1160/results.json": "f6e38c2f676991d7e0ccf63ff603819d2c6975ce3fe0901e7b10b1c05377b4e2"
+  },
+  "core_and_saved_result_unchanged": true,
+  "source_files_unchanged": true,
+  "analytic_scope_checks": {
+    "all_interval_bound": "32/147",
+    "bound_lt_one": true,
+    "full_mother_spectrum_not_preparation_compression": true,
+    "unknown_input_and_reference_scope": "Full operator identities and a product Q=1 witness; no claim every input has gap one.",
+    "constant_q_flat_and_passive_transport_distinguished": true,
+    "finite_energy_tolerance_exception_explicit": true
+  },
+  "reported_residuals": {
+    "source_identity_error": 4.197898819563626e-15,
+    "mother_commutator_error": 7.665163403307869e-15,
+    "D_spectrum_error": 3.5168276637357584e-13,
+    "passive_transport": {
+      "energy_error": 0.0,
+      "phase_error": 8.881784197001252e-16,
+      "endpoint_error": 2.220446049250313e-16,
+      "constant_metric_is_flat": true
+    }
+  },
+  "core_markdown_links": 18,
+  "pending_review_link_only": [
+    [
+      "../research_note_1164.md",
+      "1164/review.md"
+    ]
+  ],
+  "check_groups": 4,
+  "new_adopted_axioms": 0,
+  "new_empirical_calibrations": 0,
+  "scope": "Exact joint-energy intertwining within the frozen finite material menu; source residual and task-distance separation, with passive-coordinate positive control. No geometry dynamics, full-axiom countermodel, or GR completion."
+}

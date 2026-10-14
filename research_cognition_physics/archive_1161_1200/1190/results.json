@@ -1,0 +1,148 @@
+{
+  "status": "PASS_WITH_SCOPE",
+  "check_groups": 3,
+  "dynamic_auxiliary_and_double_sources": {
+    "exact_rows": [
+      {
+        "phi": "1",
+        "c": "0",
+        "trace": "-3",
+        "j_e": "-3/2",
+        "j_A": "-9/2",
+        "j_h": "0"
+      },
+      {
+        "phi": "1",
+        "c": "1/2",
+        "trace": "-3",
+        "j_e": "-5/2",
+        "j_A": "-11/2",
+        "j_h": "-1"
+      },
+      {
+        "phi": "1",
+        "c": "1",
+        "trace": "-3",
+        "j_e": "-7/2",
+        "j_A": "-13/2",
+        "j_h": "-2"
+      },
+      {
+        "phi": "9/4",
+        "c": "0",
+        "trace": "-2187/64",
+        "j_e": "-243/32",
+        "j_A": "-729/32",
+        "j_h": "0"
+      },
+      {
+        "phi": "9/4",
+        "c": "1/2",
+        "trace": "-64881/512",
+        "j_e": "-32805/512",
+        "j_A": "-61641/512",
+        "j_h": "-227/32"
+      },
+      {
+        "phi": "9/4",
+        "c": "1",
+        "trace": "-56133/256",
+        "j_e": "-30861/256",
+        "j_A": "-55809/256",
+        "j_h": "-227/16"
+      },
+      {
+        "phi": "4",
+        "c": "0",
+        "trace": "-192",
+        "j_e": "-24",
+        "j_A": "-72",
+        "j_h": "0"
+      },
+      {
+        "phi": "4",
+        "c": "1/2",
+        "trace": "-2112",
+        "j_e": "-640",
+        "j_A": "-1168",
+        "j_h": "-47/2"
+      },
+      {
+        "phi": "4",
+        "c": "1",
+        "trace": "-4032",
+        "j_e": "-1256",
+        "j_A": "-2264",
+        "j_h": "-47"
+      }
+    ],
+    "all_residuals": "0",
+    "material_q_fixed": true
+  },
+  "complete_quantum_source": {
+    "zero_to_two": 1.0606601717798214,
+    "identity_error": 0.0,
+    "energy_only_source_sufficient": false
+  },
+  "full_Fock_probability": {
+    "phi": "121/100",
+    "time": "11*pi/20",
+    "occupation_exact": "595306376721/7086244000000",
+    "P2": 0.03721733447146313,
+    "strict_lower": "3/100",
+    "isospectral_frozen_basis_P2": "0",
+    "certificate": "exact Bogoliubov identity plus rational inequalities",
+    "finite_matrix_diagnostics": [
+      {
+        "dimension": 12,
+        "P2": 0.03721731691340931,
+        "analytic_difference": 1.7558053823363284e-08,
+        "norm_error": 4.440892098500626e-16,
+        "fixed_H_energy_error": 1.1102230246251565e-16
+      },
+      {
+        "dimension": 24,
+        "P2": 0.03721733447146337,
+        "analytic_difference": 2.42861286636753e-16,
+        "norm_error": 4.440892098500626e-16,
+        "fixed_H_energy_error": 1.6653345369377348e-16
+      },
+      {
+        "dimension": 48,
+        "P2": 0.037217334471463165,
+        "analytic_difference": 3.469446951953614e-17,
+        "norm_error": 0.0,
+        "fixed_H_energy_error": 0.0
+      }
+    ]
+  },
+  "allowed_material_family": [
+    {
+      "c": "0",
+      "gap_at_reference": "1",
+      "d_log_gap_at_reference": "-1/2",
+      "positive_for_all_phi_gt_zero": true
+    },
+    {
+      "c": "1/2",
+      "gap_at_reference": "1",
+      "d_log_gap_at_reference": "0",
+      "positive_for_all_phi_gt_zero": true
+    },
+    {
+      "c": "1",
+      "gap_at_reference": "1",
+      "d_log_gap_at_reference": "1/2",
+      "positive_for_all_phi_gt_zero": true
+    }
+  ],
+  "scope": {
+    "full_unknown_input_R_preserved_by_declared_unitaries": true,
+    "finite_preparation_and_readout_implemented": false,
+    "dynamic_geometry_solved": false,
+    "clock_driving_resource_certified": false,
+    "new_axioms": 0,
+    "GR_generated": false,
+    "dark_sector_identified": false
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "schema": "finite_L_parity_and_conditional_selfcoupling_v1",
+  "status": "PASS_EXACT_PARITY_AND_CONDITIONAL_SOFT_WITNESS",
+  "check_groups": 2,
+  "box": [
+    4,
+    4,
+    4
+  ],
+  "prime": 5,
+  "qudits": 384,
+  "frozen_stencils_sha256": {
+    "S": "6ce9f6093815c44886ddf6613369dd66b54bc1ae6f79a3a7483576c013a836b7",
+    "V": "52c156f26909b88f29932eaf883d1424b123a73a0805bfb8cd035421404ce2d2",
+    "R": "40ee6f585e7118e645488f821c6c6142458c17aba1734585ef579632e933bc5b",
+    "T": "e365ef708a46471a699ba6e809dfea034fa3973ab8c799c47ae9c6b7ad677c19"
+  },
+  "full_H_pairing": {
+    "HU_scalar_per_U2": {
+      "original_rows": 64,
+      "collected_weyl_terms": 128,
+      "inversion_coefficient_mismatches": 0
+    },
+    "HU_vector_per_U1": {
+      "original_rows": 192,
+      "collected_weyl_terms": 384,
+      "inversion_coefficient_mismatches": 0
+    },
+    "Hg_per_g": {
+      "original_rows": 384,
+      "collected_weyl_terms": 768,
+      "inversion_coefficient_mismatches": 0
+    },
+    "HJ_per_J": {
+      "original_rows": 576,
+      "collected_weyl_terms": 1152,
+      "inversion_coefficient_mismatches": 0
+    }
+  },
+  "local_inversion": "unitary involution; X->X^-1 and Z->Z^-1",
+  "code": {
+    "scalar_rank": 63,
+    "vector_rank": 189,
+    "dimension": "5^132",
+    "C_trace": 1,
+    "even_dimension": "(5^132+1)/2",
+    "odd_dimension": "(5^132-1)/2",
+    "fixed_cosets": 1
+  },
+  "nonzero_C_odd_operators": {
+    "R": {
+      "row": 0,
+      "W_and_W_squared_nonidentity": true,
+      "normalized_code_trace_O_squared": "1/2"
+    },
+    "T": {
+      "row": 0,
+      "W_and_W_squared_nonidentity": true,
+      "normalized_code_trace_O_squared": "1/2"
+    }
+  },
+  "finite_exact_result": "P_minus exp(-it H) P_plus = 0 for all real t, including arbitrary passive reference; odd multitime correlators vanish for any C-invariant state.",
+  "perturbation_bound": {
+    "hypothesis": "norm of C-odd part of perturbed full H <= delta",
+    "opposite_parity_probability_upper": "min(1,(abs(t)*delta)^2)",
+    "physical_readout_certified": false
+  },
+  "soft_witness": {
+    "hard_momenta_at_soft_limit": [
+      [
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        -1
+      ],
+      [
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        -1,
+        0,
+        0
+      ]
+    ],
+    "in_out_signs": [
+      -1,
+      -1,
+      1,
+      1
+    ],
+    "q_over_omega": [
+      1,
+      0,
+      1,
+      0
+    ],
+    "polarization_diagonal": [
+      0,
+      1,
+      0,
+      -1
+    ],
+    "polarization_norm_squared": 2,
+    "s_t_u": [
+      4,
+      -2,
+      -2
+    ],
+    "omega_times_each_geometric_term": [
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "omega_times_soft_sum": "4",
+    "omega_M5_over_kappa_M4_limit": "2",
+    "hypotheses": "unbroken C, C-odd one-graviton branch, appropriate scattering/soft limit, nonzero kappa and hard M4; not certified for the finite lattice"
+  },
+  "diagnostic_only": {
+    "unitary_residual": 0.0,
+    "X_inverse_residual": 0.0,
+    "Z_inverse_residual": 4.965068306494546e-16
+  },
+  "scope": "Excludes the unchanged unbroken C-odd branch from an Einstein soft selfcoupling identification, conditionally on scattering qualifications. Does not exclude symmetry-broken or C-even collective encodings, new rules, finite-error effective alternatives, GR or dark sectors.",
+  "new_adopted_axioms": 0,
+  "gr_hard_deliverables_completed": 0
+}

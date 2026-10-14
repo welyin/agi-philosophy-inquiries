@@ -1,0 +1,78 @@
+{
+  "schema": "gr_round_acceptance_v1",
+  "date": "2026-10-14",
+  "round": 1192,
+  "status": "ACCEPTED_WITH_SCOPE",
+  "check_groups": 3,
+  "scope": "在固定同一操作坐标、仿射固有钟、同历史十束、有效正则与完整弱源合同下，有限端点残差给联络及无迹弱Ricci上界；预定有理预算有严格余量0.7845716429458317。未认证实际同父仪器、来源匹配或全部有效字典排除；Λ型来源在该测试中消失。",
+  "certified_results": {
+    "inverse_design_infinity_norm": "24/5",
+    "weak_Ricci_bound": "192*B*I1+12288*B^2*I0",
+    "finite_budget": {
+      "Gamma_updated": {
+        "exact": "859416407/244140625000",
+        "float": 0.003520169603072
+      },
+      "weak_Ricci_prior_bound": {
+        "exact": "70355255296/6511640625",
+        "float": 10.804535960704987
+      },
+      "weak_Ricci_updated_bound": {
+        "exact": "35444731548441093250037579776/9703100658953189849853515625",
+        "float": 3.652928357054168
+      },
+      "strict_margin": {
+        "exact": "121804442010618987338998332959/155249610543251037597656250000",
+        "float": 0.7845716429458317
+      },
+      "kappa_exclusion_threshold": {
+        "exact": "586521906092963871700308307666/708326348103582859039306640625",
+        "float": 0.8280390919570779
+      }
+    },
+    "ideal_fluid_test": "K:T=3*g00*(rho+p)/4 in the stated comoving ideal-fluid class"
+  },
+  "inputs_retained": [
+    "A single fixed operational chart and units; all finite clock beams in one history share the same candidate geometry.",
+    "Calibrated clock parameter equals affine proper time; free geodesic legs and all position/clock/velocity errors are budgeted.",
+    "C2 Lorentz metric near eta, connection bound, Lipschitz constant and finite spatial-temporal coverage on a full trajectory neighborhood.",
+    "Uniform complete smooth effective-source pairing lower bound and matching error, including all clock/control/resource/dark-sector contributions.",
+    "Fixed positive kappa, weak equation tolerance and a declared macrostate family; no universal classical geometry for arbitrary quantum states."
+  ],
+  "certification_limits": [
+    "Conditional mathematical theorem, not an implemented experiment or proof that all assumptions have a common actual realization.",
+    "No finite-precision exclusion of every positive G or every goal-admissible effective dictionary.",
+    "A point-worldline reference is used only with source matching error, not as an exact C2 self-gravitating solution.",
+    "Positive Hamiltonian alone does not prove the required complete tracefree source lower bound.",
+    "Extra modes are retained; uncontrolled cancellation invalidates the source certificate rather than excluding the mode.",
+    "The test is blind to a vacuum-like pure trace source; no dark matter, dark energy or acceleration identification.",
+    "No new cognitive axiom, empirical calibration, nonlinear Einstein generation or complete GR deliverable."
+  ],
+  "review_independence": "Internal non-blind review by a separate agent using explicit inverse formulas, generic metric-jet Ricci arithmetic and beta moments without importing author code; separate scope audit. Root personally reran both scripts. Not external peer review.",
+  "new_adopted_axioms": 0,
+  "new_empirical_calibration": 0,
+  "gr_hard_deliverables_completed": 0,
+  "files_sha256": {
+    "../research_note_1192.md": "88e98a66966ef13c3a573e03835030a3e4ec4d87bedca42c097d1ca03ec79918",
+    "admission.md": "7556a778096be51fda7ced97c9fa380e64b579c8bf6bc298e7eeec3d1b23accc",
+    "baseline.json": "7dd483bf394314a19e40c195de3313e098b0be30782db8b89e370c0cba3972a3",
+    "proof.md": "76c10d8a5326c6538187b786575327bc1b829a57bee282c78179fd4dc70395e5",
+    "sources.md": "41657cf21552b47101907efafd771e204050e41f62781b2365bb6b9dab0591d5",
+    "check.py": "054a95dc789bb83b185b37574b0fc2e62fe99749c509640957136ba5c10f4c14",
+    "results.json": "0ef77f22c4eb8bdeb99a612412eade53c1a73202627247ad906e12005b7a9ec2",
+    "NEXT.md": "ceeff5f61f2186289bb8dfb6d9d066ffbfd9988997d3809fc3c960badf15c694",
+    "review.md": "baef929a295009a39bdc4e2a2b9efe41d29399cb4009732de66a3fc888cfb4b0",
+    "reviewer_check.py": "d7fd8cfaec1095123c3ad2ed4ae264143043620e1447c9c847f1b829f7be22f8",
+    "review_checks.json": "885969b7139b85054e542b01a4df5616d0706289fb2578b30a38daf2f4798863",
+    "../_shared/goal.md": "8acafd3ed835d581a543de077e1e6ea6c120b6e78c7a1e271e749f263e422667"
+  },
+  "validation": {
+    "root_personally_executed": true,
+    "author_check": "PASS_WITH_SCOPE, 3 groups",
+    "reviewer_check": "PASS_WITH_SCOPE, independent implementation",
+    "old_acceptances_unchanged": 31,
+    "old_bindings_unchanged": 379,
+    "old_unique_scientific_files_unchanged": 325,
+    "blockers": 0
+  }
+}

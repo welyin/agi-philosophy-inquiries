@@ -1,0 +1,155 @@
+{
+  "schema": "round1171_independent_review_v1",
+  "round": 1171,
+  "date": "2026-10-13",
+  "verdict": "PASS_WITH_SCOPE",
+  "blockers": 0,
+  "reviewer": "/root/local_dynamics_goal_scope_audit",
+  "blind_review": false,
+  "disclosure": "Pre-admission source/phase scope and loop review; suggested energy-expectation wording. No author core edits.",
+  "core_sha256": {
+    "archive_1161_/research_note_1171.md": "47840ba4fcd53a456ddd68584070b049eca2c84e6d404d00ee4447222b66f16a",
+    "archive_1161_/1171/admission.md": "4b1b025cd58c81aef92c2ca8659477a8716a8a6a7c18bc6b18020be3f8790ad4",
+    "archive_1161_/1171/proof.md": "ecf48b81b9b42a21bcf7007b386bae16132cb9849e3fc939f02c398860e8d4ea",
+    "archive_1161_/1171/check.py": "7a88684bad79f61f7f436bcfb678f0d6a5f28620074a3d1b512463ff4a2e0892",
+    "archive_1161_/1171/results.json": "fe43f6ec9c43352ea989605538fb90b2c7c4325ce2c148a3be09020a6d100d3c",
+    "archive_1161_/1171/NEXT.md": "ee88f0bd493ee621fa9d7e8a9335b02a8970a91663d8c8671c936f39b8a52794"
+  },
+  "source_sha256": {
+    "archive_223_230/research_note_225.md": "9dc8a13ef9d34779a0a2fb03f9a970a678f86dc26fb60851c8e2ac8e6b926d72",
+    "archive_231_258/research_note_242.md": "fecc9b89b925dcc761074479daac502e64db49ae0a8d6fad5b40c522af4d9edb",
+    "archive_467_530/research_note_471.md": "ff45a09b0d087de085c0c2db35a93692d487801b0adf6b659a05364894af872f",
+    "archive_554_584/research_note_578.md": "ad971d84217960b52411334923f8b54bacced4e3093530924756f0849787c980",
+    "archive_854_872/research_note_856.md": "6474f01f70a35d85d23e903ee73c4cc4fed8e4796f1dd94fd3ed52f3b1b31b4d",
+    "archive_894_922/research_note_894.md": "051d3e0c08176a30f7f9b687e726bb144cd7b0889bc1e3ca2fcc716c2eac57a3",
+    "archive_1120_1158/research_note_1136.md": "430a5776c1ccc09e0f3443ebd9f4c9bc233f2074f756cac597482d517ebd0dc8",
+    "archive_797_818/research_note_803.md": "c13362b464c0729dfd2f16b79c786344bf85db7988329fbc39b231bc5750ff12",
+    "archive_1161_/1170/acceptance.json": "e0d3fe2ee607a47adb7784cb8551b12388e92437112e55e36749ce46d3b3e7ce"
+  },
+  "source_count": 9,
+  "author_default": {
+    "exit_code": 0,
+    "stdout": {
+      "status": "PASS_WITH_SCOPE",
+      "mode": "READ_ONLY_MATCH",
+      "groups": 3,
+      "actual_record_gap": 0.9999998584038335,
+      "certified_gap": 0.9968584073464102
+    },
+    "stderr": ""
+  },
+  "independent_physical_Fourier_and_5x5": {
+    "status": "PASS",
+    "cases": [
+      {
+        "n": 0,
+        "exact_sector_dimension": 20,
+        "physical_labels_in_h_action": 20,
+        "physical_modes_in_h_action": [
+          -1,
+          0
+        ],
+        "embedding_error": 0.0,
+        "physical_H_sector_leakage": 0.0,
+        "physical_H_hermiticity_error": 0.0,
+        "compressed_H_formula_error": 0.0,
+        "prepared_full_isometry_error": 0.0005321581832324323,
+        "record1_probability_no_postselection": 0.9999999127697854,
+        "independent_5x5_record_probability_error": 3.3306690738754696e-16,
+        "complete_output_isometry_error": 4.440892101805363e-16,
+        "initial_energy_mean": 2.0,
+        "initial_energy_variance": 1.0,
+        "energy_mean_error": 0.0,
+        "energy_variance_error": 0.0,
+        "complete_mean_conservation_error": 1.776356839401345e-15,
+        "complete_second_moment_conservation_error": 7.993605779159283e-15,
+        "final_rotor_energy_norm": 3.0153490465050426e-11
+      },
+      {
+        "n": 1,
+        "exact_sector_dimension": 20,
+        "physical_labels_in_h_action": 20,
+        "physical_modes_in_h_action": [
+          0,
+          1
+        ],
+        "embedding_error": 0.0,
+        "physical_H_sector_leakage": 0.0,
+        "physical_H_hermiticity_error": 0.0,
+        "compressed_H_formula_error": 0.0,
+        "prepared_full_isometry_error": 0.0005321581832322099,
+        "record1_probability_no_postselection": 5.4365951671125307e-08,
+        "independent_5x5_record_probability_error": 4.47941462754616e-19,
+        "complete_output_isometry_error": 1.0082089256739241e-15,
+        "initial_energy_mean": 2.0,
+        "initial_energy_variance": 1.0,
+        "energy_mean_error": 0.0,
+        "energy_variance_error": 0.0,
+        "complete_mean_conservation_error": 1.7857333706672826e-15,
+        "complete_second_moment_conservation_error": 3.580040243297337e-15,
+        "final_rotor_energy_norm": 3.015349046517555e-11
+      }
+    ],
+    "independent_5x5_PST_error": 1.9166399291587737e-15,
+    "independent_5x5_transfer": [
+      0.999999858403834,
+      -0.0004663301262338036
+    ],
+    "uniform_prepared_error_bound": 0.0015707963267948967,
+    "actual_gap": 0.9999998584038338,
+    "guaranteed_gap": 0.9968584073464102,
+    "rotor_truncation": false,
+    "postselection": false,
+    "general_reference_reason": "Operator norm of the whole prepared isometry tensors unchanged with I_R."
+  },
+  "independent_source_check": {
+    "status": "PASS",
+    "composition_error": 2.7414674420466597e-16,
+    "error_if_pullback_omitted": 0.18394653352804138,
+    "scalar_source_superoperator_error": 8.881784197001252e-16,
+    "source_diameter": 1.414213562373095,
+    "extremal_state_tangent_trace_norm": 1.4142135623730945,
+    "C0_counterexample": [
+      {
+        "N": 16,
+        "finite_channel_difference": 0.24934946677045533,
+        "source_diameter_at_zero": 4.0
+      },
+      {
+        "N": 64,
+        "finite_channel_difference": 0.12491863568476039,
+        "source_diameter_at_zero": 8.0
+      },
+      {
+        "N": 256,
+        "finite_channel_difference": 0.06248982797065215,
+        "source_diameter_at_zero": 16.0
+      }
+    ],
+    "diamond_norm_scope": "Self-contained complete upper bound plus attained pure-state lower bound; no sampled SDP claim."
+  },
+  "text_and_links": {
+    "status": "PASS",
+    "markdown_files": [
+      "archive_1161_/research_note_1171.md",
+      "archive_1161_/1171/admission.md",
+      "archive_1161_/1171/proof.md",
+      "archive_1161_/1171/NEXT.md"
+    ],
+    "valid_local_link_occurrences": 37,
+    "display_math_delimiters_paired": true,
+    "control_characters_absent": true,
+    "image_inspection": false
+  },
+  "frozen_inputs_unchanged": true,
+  "scope": {
+    "new_adopted_axioms": 0,
+    "empirical_calibrations": 0,
+    "GR_hard_deliverables": 0,
+    "hardware_accuracy_certified": false,
+    "unknown_black_box_control_derived": false,
+    "complete_channel_equality_domain": "Original D at fixed q and known n only.",
+    "coherent_implementation_permission_is_input": true
+  },
+  "reviewer_script_sha256": "04beabff32917221377fa7c75228ba4e6949fbdc9c4c330bf558caf22b7d30ba"
+}

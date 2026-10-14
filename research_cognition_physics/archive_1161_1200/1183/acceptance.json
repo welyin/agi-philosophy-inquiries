@@ -1,0 +1,88 @@
+{
+  "schema": "gr_round_acceptance_v1",
+  "date": "2026-10-13",
+  "round": 1183,
+  "status": "ACCEPTED_WITH_SCOPE",
+  "check_groups": 4,
+  "scope": "正常正能标量将351离壳异常补为逐点满足Hamiltonian与动量初始约束的非CMC数据。对Hamiltonian迹系数λ∈[2/5,3/5]，若许可该准备并要求全部局部约束在任意严格正lapse下接续，则必要λ=1/2。完整源反馈保留；非完整Dirac物理准备或量子实现，错误λ可另加CMC排除此族。",
+  "certified_results": {
+    "parameter_interval": [
+      "2/5",
+      "3/5"
+    ],
+    "gravity_density_bounds": [
+      "-62/5",
+      "-1"
+    ],
+    "positive_matter_density_bounds": [
+      "1",
+      "62/5"
+    ],
+    "scalar_momentum_squared_bounds": [
+      "2",
+      "124/5"
+    ],
+    "total_initial_constraints": "H(x)=0, D_i(x)=0",
+    "smeared_unit_lapse_derivative": {
+      "2/5": "-1/5",
+      "1/2": "0",
+      "3/5": "1/5"
+    },
+    "positive_lapse_obstruction": "integral N^2 |grad pi|^2 > 0 for every smooth strictly positive N",
+    "no_all_close_lambda_finite_error_exclusion": true
+  },
+  "classical_initial_surface_only": true,
+  "certification_limits": [
+    "Hamiltonian lambda is not Lagrangian lambda or cosmological Lambda",
+    "Different lambda uses different scalar momentum, same source dictionary",
+    "Original H and D initial surface, not full Dirac physical constraint surface",
+    "Tangent diagnostic is not a finite-time field-equation solution",
+    "CMC may exclude the preparation; no rejection of all lambda theories",
+    "No quantum parent, actual clock, unknown-input/reference implementation or finite instrument certificate",
+    "G, Lambda, higher terms, extra modes and dark sector remain free"
+  ],
+  "inputs_retained": [
+    "Declared local quadratic momentum/curvature Hamiltonian class and minimally coupled positive scalar",
+    "Permission for the non-CMC initial family",
+    "Preservation of all local Hamiltonian constraints with smooth strictly positive lapse"
+  ],
+  "review_independence": "Internal AI review; prior scope discussion disclosed; independent Fraction polynomial full-source calculation, no author imports; not external human or blind peer review",
+  "numerical_authority": "Exact analytic interval and positive-lapse obstruction are authoritative; central differences only diagnose the full nonlinear tangent. Independent rational polynomial checks confirm source feedback and momentum derivative.",
+  "development_disclosure": "First larger-step diagnostic failed; reducing steps and tightening threshold corrected truncation error without changing physical parameters or equations; review section 3 records this.",
+  "new_adopted_axioms": 0,
+  "new_empirical_calibration": 0,
+  "gr_hard_deliverables_completed": 0,
+  "hard_deliverable_progress": {
+    "common_dynamic_geometry": "partial: prior actual material geometry connections retained; 1183 is a classical initial-constraint witness, not actual geometry preparation",
+    "complete_common_source_and_backreaction": "partial: prior reciprocal source connections retained; 1183 includes full positive scalar source and metric feedback on its declared initial family",
+    "nonlinear_Einstein_dynamics": "not completed"
+  },
+  "files_sha256": {
+    "../research_note_1183.md": "63a8ef0b00becaf1c5a04a83e8c1c639a5ec0f4a25c2d4fd391f9fc3223cd68c",
+    "admission.md": "406b13ca1aba82d24e8a8274954f7f66fe8f259b4fee85c2500ecc4a6f05d7a9",
+    "proof.md": "3b36b25d9c679e4fae44910865315100123423a27f61dfcd13f5e237be16b456",
+    "check.py": "0cb431994048cf5c0516b0f4e6b59d7eb13b582ad70205a2910e3e597252c922",
+    "results.json": "9a5a48c0c92be7b0648ecfa2358f2b8ce94b2ec1e0ab5c12d33ba17f09ee0cbf",
+    "NEXT.md": "ebfb5fe59da66711a3c04a93efc429c3548067545df3163745fa878294c25c31",
+    "review.md": "51c3f21b3edb022e5e1602fa850ad7e540af76c771fc1973ff79b484c95bca6d",
+    "reviewer_check.py": "96193313df1d555b3561f3eacdeb80ba01f3742869d89caab5cc1a3f18536ae5",
+    "review_checks.json": "5c6a79559fa648b1fcb55d9878e29f315ae63efda0c711712be291d45c6b31ef",
+    "../../archive_342_369/research_note_351.md": "6a21e5cb3bf6aae30fce70bbff6a197d359f7ac87ad9afb84f3274954b602765",
+    "../../archive_342_369/research_note_352.md": "8df046e03a5c6cdbf39d180dabcddca4f372bc510ccaceb71543fac781fe44ab",
+    "../../archive_935_955/research_note_937.md": "b0a767ad24d0cde8a823a43d438369941b30d73b4e2355e6d71c713f37407fc8",
+    "../../archive_935_955/research_note_938.md": "0b5cc920ca257e848f51ac33c6e3909e7b4459da010fb542ebeef09c0b18a758",
+    "../_shared/goal.md": "8acafd3ed835d581a543de077e1e6ea6c120b6e78c7a1e271e749f263e422667",
+    "../_admission/after1178_reference/local_boundary_mechanism.md": "4a6ce37e70edddfa1f20e44e1f7c980495f5cd42f68fe67b1b909e52b0773fe7"
+  },
+  "validation": {
+    "author_default": "{\"status\": \"READ_ONLY_MATCH\", \"groups\": 4, \"scope\": \"classical Hamiltonian and momentum initial-constraint surface only; no quantum implementation or finite instrument certificate\"}",
+    "independent_default": "READ_ONLY_MATCH 4 groups; blockers 0",
+    "root_personally_executed": true,
+    "groups": 4,
+    "blockers": 0,
+    "old_science_rerun": false
+  },
+  "next": "NEXT.md",
+  "scope_audit": "../_admission/after1182_followup_routes.md",
+  "mutable_direction_not_a_frozen_scientific_dependency": true
+}

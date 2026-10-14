@@ -1,0 +1,375 @@
+{
+  "status": "independent 1203 finite comparator and analytic-bound audit; no clock PDE simulation",
+  "all_checks_passed": true,
+  "inputs": {
+    "source_1202_independent_result_sha256": "b615b92c30ca4af0ecf049f4c9be3bae5074a672279bfc320f9fef233e77b32a",
+    "source_1201_independent_result_sha256": "0d2444f159165209444a6b9dda39ae630e4cce8f5a63484ebcdeef6ab8dd2323",
+    "A_preparation_native_index": 2,
+    "A_preparation_energy": 1,
+    "B_pool_preparation_before_factory": "e0, not A's c state",
+    "fixed_beta": 1.2,
+    "h": [
+      [
+        0.0,
+        -0.2,
+        0.0,
+        -0.021650635094610966
+      ],
+      [
+        -0.2,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        -0.021650635094610966,
+        0.0,
+        0.0,
+        -0.025
+      ]
+    ],
+    "Q": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "energies": [
+      -0.05407189535739738,
+      -0.009460353465319449,
+      1.0,
+      1.038532248822717
+    ],
+    "source_one": [
+      0.39212546972907836,
+      0.38752743488699176,
+      0.11084742642230301,
+      0.10949966896162684
+    ],
+    "source_two": [
+      [
+        0.15340494364034593,
+        0.1514086161911519,
+        0.043956053447755564,
+        0.043355856449824974
+      ],
+      [
+        0.1514086161911519,
+        0.14990470633791517,
+        0.043327660458871785,
+        0.042886451899052935
+      ],
+      [
+        0.043956053447755564,
+        0.043327660458871785,
+        0.011869930262706831,
+        0.011693782252968833
+      ],
+      [
+        0.043355856449824974,
+        0.042886451899052935,
+        0.011693782252968833,
+        0.011563578359780105
+      ]
+    ],
+    "M_exact": "1000000000000000000000000",
+    "sigma_exact": "1/10000000000",
+    "T_exact": "606"
+  },
+  "finite_read_gate": {
+    "dimension_ABK": 64,
+    "minimum_eigenvalue_numeric": -1.1269428175288137e-15,
+    "maximum_eigenvalue_numeric": 3.1415926535897962,
+    "commutator_with_H0_norm": 4.3993461104203353e-16,
+    "exponential_vs_controlled_swap_norm": 3.781334274300464e-15,
+    "full_prepared_pointer_copy_isometry_error": 2.8610103175509094e-15,
+    "program_compensation_deleted_v2_nonzero_label_copy_success_exact": "1/2",
+    "initial_c_pointer0_G_expectation": 1.5707963267948966
+  },
+  "gate_exact": {
+    "smoothstep_integral_0_1": "1/2",
+    "F_lipschitz": "1500",
+    "J_lipschitz": "3/2",
+    "J_integral": "1",
+    "F_rectangular_L1_difference": "1/1000",
+    "semibounded_total_H_lower_greater_than": "-21/100",
+    "constant_energy_shift_for_positive_reference": "1"
+  },
+  "branches": {
+    "1": {
+      "contact_duration": 600.0,
+      "common_final_time": 606,
+      "L_upper_exact": "1083/7",
+      "L_upper": 154.71428571428572,
+      "clock_isometry_bound_exact": "65659927031541/7000000000000000000",
+      "shape_isometry_bound_exact": "1/10000",
+      "total_isometry_bound_exact": "765659927031541/7000000000000000000",
+      "total_isometry_bound": 0.00010937998957593443,
+      "total_isometry_bound_up_12dp": "0.000109379990",
+      "free_clock_width_factor_upper_exact": "200091809/200000000",
+      "position_rms_bound": 1.0004593290832771e-10,
+      "initial_interaction_tail_bound": 1.547142857142857e-08,
+      "final_interaction_tail_bound": 1.5478535048531272e-08,
+      "initial_clock_mean_exact": "40000000000000000000000000001/80000",
+      "initial_clock_variance_exact": "80000000000000000000000000001/3200000000",
+      "record_kernel": [
+        [
+          0.9577928435608416,
+          0.0009936039173984855,
+          0.00029907605170325334,
+          4.560271559996797e-05
+        ],
+        [
+          0.0009936039173984788,
+          0.5030260740093451,
+          0.00046593724191024014,
+          1.9195007642617843e-05
+        ],
+        [
+          0.04116794980615772,
+          0.4959611270656157,
+          0.7010955797136442,
+          0.07938946459320684
+        ],
+        [
+          4.560271559993858e-05,
+          1.9195007642592642e-05,
+          0.29813940699274344,
+          0.9205457376835501
+        ]
+      ],
+      "record_kernel_vs_1201_max_error": 4.262146191535976e-13,
+      "pointer_probabilities": [
+        0.37599816275474557,
+        0.19537977133607273,
+        0.2947493058102292,
+        0.1338727600989524
+      ],
+      "energy_coefficients": {
+        "delta_A": [
+          -1.010583764558407,
+          -0.5088314688093798,
+          0.010702388980516675,
+          0.035403252277048214
+        ],
+        "delta_B": [
+          1.011496158296255,
+          0.5087335608903665,
+          0.010702388980516453,
+          -0.03621773809588391
+        ],
+        "bare_AB_gain": [
+          0.0009123937378479052,
+          -9.790791901331808e-05,
+          0.021404777961033128,
+          -0.0008144858188356974
+        ]
+      },
+      "ideal_delta_A": -0.5883988105959626,
+      "ideal_delta_B": 0.5910021200368686,
+      "ideal_bare_AB_gain": 0.002603309440906029,
+      "clock_energy_conservation_error_bound": 0.00023935436715576448,
+      "clock_energy_interval_including_1e_minus_10_numeric_allowance": [
+        -0.0028426639080617933,
+        -0.0023639549737502646
+      ],
+      "ideal_joint_AK_entropy": 1.3148601801964113,
+      "ideal_B_entropy": 0.7268722697634848,
+      "ideal_pointer_entropy": 1.3160832996300373,
+      "clock_rank_upper": 256,
+      "clock_orthogonal_probability_bound": 1.1963982119631524e-08,
+      "clock_entropy_bound_decimal80_diagnostic": "2.9649892700163729968935484436680810029027094228576254470151206532194607325115662E-7",
+      "clock_entropy_upper_outward_15dp": "2.96498928E-7"
+    },
+    "2": {
+      "contact_duration": 300.0,
+      "common_final_time": 606,
+      "L_upper_exact": "1116/7",
+      "L_upper": 159.42857142857142,
+      "clock_isometry_bound_exact": "16915161257433/1750000000000000000",
+      "shape_isometry_bound_exact": "1/20000",
+      "total_isometry_bound_exact": "104415161257433/1750000000000000000",
+      "total_isometry_bound": 5.966580643281886e-05,
+      "total_isometry_bound_up_12dp": "0.000059665807",
+      "free_clock_width_factor_upper_exact": "200091809/200000000",
+      "position_rms_bound": 1.0004593377395543e-10,
+      "initial_interaction_tail_bound": 1.5942857142857142e-08,
+      "final_interaction_tail_bound": 1.595018029881918e-08,
+      "initial_clock_mean_exact": "160000000000000000000000000001/80000",
+      "initial_clock_variance_exact": "320000000000000000000000000001/3200000000",
+      "record_kernel": [
+        [
+          0.40146802732983944,
+          0.0008559572565065318,
+          0.0007386481498750126,
+          0.00029818885263298224
+        ],
+        [
+          0.0008559572565060762,
+          0.14821468364627097,
+          0.0002687872348360717,
+          0.0003290666379566356
+        ],
+        [
+          0.5973778265610226,
+          0.8506002924592687,
+          0.9158771269587543,
+          0.6400455522281179
+        ],
+        [
+          0.0002981888526330135,
+          0.0003290666379566949,
+          0.08311543765653572,
+          0.35932719228129445
+        ]
+      ],
+      "record_kernel_vs_1201_max_error": 3.7769787297747826e-13,
+      "pointer_probabilities": [
+        0.15787207454500324,
+        0.05783872586846113,
+        0.7354854088286136,
+        0.048803790757923876
+      ],
+      "energy_coefficients": {
+        "delta_A": [
+          -0.4240287295205962,
+          -0.15050640775245006,
+          0.002152706412366312,
+          0.01319919256801838
+        ],
+        "delta_B": [
+          0.4246262320067531,
+          0.1509194239624291,
+          0.00215270641236609,
+          -0.01420971126414683
+        ],
+        "bare_AB_gain": [
+          0.0005975024861568645,
+          0.0004130162099790502,
+          0.004305412824732402,
+          -0.0010105186961284485
+        ]
+      },
+      "ideal_delta_A": -0.22291389768983835,
+      "ideal_delta_B": 0.22367484121390843,
+      "ideal_bare_AB_gain": 0.000760943524070046,
+      "clock_energy_conservation_error_bound": 0.00013058067751244934,
+      "clock_energy_interval_including_1e_minus_10_numeric_allowance": [
+        -0.0008915243015824954,
+        -0.0006303627465575965
+      ],
+      "ideal_joint_AK_entropy": 0.8277506324345625,
+      "ideal_B_entropy": 1.2737880082166189,
+      "ideal_pointer_entropy": 0.829617182676814,
+      "clock_rank_upper": 256,
+      "clock_orthogonal_probability_bound": 3.5600084572786082e-09,
+      "clock_entropy_bound_decimal80_diagnostic": "9.2541588441954523763441102362385098701247484533298793601125273248725033100691345E-8",
+      "clock_entropy_upper_outward_15dp": "9.2541589E-8"
+    }
+  },
+  "joint": {
+    "pointer_table": [
+      [
+        0.05922202733601395,
+        0.021669013253483024,
+        0.276574188546874,
+        0.018532933618375318
+      ],
+      [
+        0.03073382477562252,
+        0.011280011500601945,
+        0.14373341416598484,
+        0.009632520893863843
+      ],
+      [
+        0.0465683461981195,
+        0.01706841792162474,
+        0.21677506790112216,
+        0.014337473789363304
+      ],
+      [
+        0.021347876235247247,
+        0.007821283192751416,
+        0.09840273821463259,
+        0.006300862456321407
+      ]
+    ],
+    "old_pointer_table_max_difference": 2.2620794126737565e-14,
+    "isometry_bound_exact": "1183320572061273/7000000000000000000",
+    "isometry_bound": 0.0001690457960087533,
+    "isometry_bound_up_12dp": "0.000169045797",
+    "inherited_old_table_allowance_exact": "3/1250000000",
+    "pointer_TV_budget_up_12dp": "0.000169048197",
+    "wrong_independent_source_model_TV": 0.0006950292712013788,
+    "model_separation_after_two_channel_error_budgets": 0.00035693767918387227,
+    "separation_smaller_than_original_readout_budget": true,
+    "branch1_population_infinity_budget": 0.016044453167268435
+  },
+  "entropy": {
+    "fixed_beta": 1.2,
+    "Gibbs_control_only": [
+      0.4000540973568206,
+      0.37920081933988375,
+      0.11292382845278288,
+      0.10782125485051287
+    ],
+    "D_source_single_numeric": 0.00020205445328094675,
+    "D_source_pair_numeric": 0.00045562514950996114,
+    "source_pair_mutual_information": 5.1516242947993794e-05,
+    "D_source_pair_inherited_certified_upper": 0.000912,
+    "ideal_joint_AK_entropy": 2.1426030717131805,
+    "ideal_joint_B_entropy": 2.000655070506082,
+    "ideal_source_delta_E": 0.8146769612507784,
+    "ideal_mutual_information_AK_B": 1.7023568232656925,
+    "ideal_D_B_out": 1.418314227097932,
+    "ideal_identity_residual": 0.0,
+    "clock_entropy_sum_decimal80_diagnostic": "3.8904051544359182345279594672919319899151842681906133830263733857067110635184796E-7",
+    "clock_entropy_sum_upper_15dp": "3.89040516E-7",
+    "actual_AK_plus_beta_delta_EB_lower_decimal80_diagnostic": "-0.00091238904051544359182345279594672919319899151842681906133830263733857067110635185",
+    "actual_AK_plus_beta_delta_EB_lower_outward_15dp": "-0.000912389040516",
+    "clock_rank_proof_uses_A_K_C_pure_and_B_marginal_rank_at_most": 4,
+    "joint_AKC_rank_upper": 256,
+    "clock_projection_uses_squared_isometry_error": true
+  },
+  "scope": {
+    "author_1203_code_imported": false,
+    "unknown_input_reference_uniform_isometry_bound_analytical": true,
+    "continuous_clock_evolution_numerically_solved": false,
+    "two_branches_common_final_time": 606,
+    "actual_Gaussian_tails_discarded": false,
+    "initial_read_interaction_claimed_exactly_zero": false,
+    "R_omitted_or_pool_sources_assumed_independent": false,
+    "physical_A_energy_pointer_constructed_in_declared_H": true,
+    "B_energy_pointer_or_precision_clock_energy_instrument_constructed": false,
+    "1202_factory_autonomous_controller_completed": false,
+    "clock_or_pointer_reset_free": false,
+    "internal_X_identified_with_space_or_metric": false,
+    "full_final_admission_or_navigation_changed": false
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "gr_round_acceptance_v1",
+  "date": "2026-10-13",
+  "round": 1177,
+  "status": "ACCEPTED_WITH_SCOPE",
+  "check_groups": 3,
+  "scope": "在原1176有限局部父规则、明确源CAR真空与已知Gs/Gt准备、K=10^14和新增共同内部钟角色及完整同站末读合同下，原物质钟与关系自身钟率的配对残差认证下界为0.0744110662367996，严格大于0.07441075。全未知一粒子输入/R及保留BG、指针、位置细记录的准备等距误差小于2e-6，实际仪器每支2e-5为输入。unit-lapse基准不等于平直几何，同站末读不等于整条共动世界线；只排除该新增角色合同下的指定候选，非现行认知公理、SR或GR反证。",
+  "certified_lower_bounds": {
+    "paired_clock_role_residual": 0.0744110662367996,
+    "simple_strict_lower": 0.07441075,
+    "full_prepared_isometry_error_strict_upper": 2e-06,
+    "K": "100000000000000"
+  },
+  "review_independence": "Independent implementation before reading author code; equations and proposed results known; internal AI review, not blind or external.",
+  "development_disclosure": "新增共同内部钟角色须事前准入并固定生成元频差、准备与读口；不能把满足末端关系倒定义为有资格。基准A和主动B误差均纳入配对14e预算。独立实现于读取作者代码前完成，已知方程与预期结果；非盲审或外部人工审核。",
+  "inputs_retained": [
+    "1176同一完整有限CAR/双G父规则、正基线及全部相互作用",
+    "源真空与两份事前已知关系准备、K=10^14、固定T=pi/2",
+    "新增共同内部钟角色与预固定频差比、可逆有限概率窗",
+    "新增有限资源Gt当地指针、全部位置/内部细记录及后来因果汇集；每支2e-5实际仪器匹配误差"
+  ],
+  "new_adopted_axioms": 0,
+  "new_empirical_calibration": 0,
+  "gr_hard_deliverables_completed": 0,
+  "hard_deliverable_progress": {
+    "common_dynamic_geometry": "partial: existing material geometry retained; new participant-clock contract excludes the specified role extension",
+    "complete_common_source_and_backreaction": "partial: full parent accounting and backreaction retained; universal relation self-source not selected",
+    "nonlinear_Einstein_dynamics": "not completed"
+  },
+  "files_sha256": {
+    "../1176/proof.md": "966a751121980b976ad86f459d06088c72a56e3eca49109828293020b86320f9",
+    "NEXT.md": "2cdff50abb87a01757e3dcf5fcddcb06e5e8263c6317cb7a8f15288900dc85ce",
+    "admission.md": "89e44772078859270af75c830f9fb52b47c5e6afebc3808998e23201f216cf7f",
+    "check.py": "ce6be9e2d7a186586af32169a38345d9a72bb653210b99ac4d2db66a4dbdb916",
+    "proof.md": "6c3229a8bd9caad35e7d96bc53ced14e867feb89a8aeaff01be8d7d40339c447",
+    "results.json": "d93aeadd8b201f982f7006847531c54dfa50ce5ee52c724f00aa5127cb259c09",
+    "../_admission/after1176_selection/propagation_contract_review.md": "cddfebb9f6013aa0ce66cb7bd520ff8b57d88441e285154ce872400ef8d21ba3",
+    "../research_note_1177.md": "ec3c11f501a0fc727b1c25efad974f6572f32f77825bbd3c89eb62d47a90305a",
+    "../1176/results.json": "d9b815dec37cd1597202b61a683d768e4d5eb692170992fcaedfb0452f877873",
+    "../1176/NEXT.md": "8d662827c152698090e9552b044709ef20b0342738244f89aab279f83155410d",
+    "review.md": "8b63671187245575611894d3635e5c9e34dfa4ce003766635ee6437b5b46d781",
+    "reviewer_check.py": "78b4fd8915f439f1f77a0cca31927d4a9c271f6eeb778ed6c4f5b56807867788",
+    "review_checks.json": "52341f1c26c8fe827dfc2594e124cb4d7ae62500df8b0fbd1a004b99c8afe2a7"
+  },
+  "validation": {
+    "author_default": "READ_ONLY_MATCH; exit 0, root confirmed",
+    "independent_default": "READ_ONLY_MATCH; exit 0, root confirmed",
+    "groups": 3,
+    "blockers": 0,
+    "old_science_rerun": false
+  },
+  "next": "NEXT.md",
+  "candidate_direction_document": "../../../猜想/共同内部钟与关系承担者的接续猜想.md",
+  "mutable_direction_not_a_frozen_scientific_dependency": true
+}

@@ -1,0 +1,172 @@
+{
+  "status": "PASS_WITH_SCOPE",
+  "check_groups": 3,
+  "wetterich_cell": {
+    "boundary_variables_each": 16,
+    "integrated_variables": 96,
+    "action_degree": 12,
+    "grade_shift": 8,
+    "grade_dimensions": [
+      1821,
+      576,
+      240,
+      576,
+      1821,
+      4368,
+      8008,
+      11440,
+      12870,
+      11440,
+      8008,
+      4368
+    ],
+    "rank_upper_full_from_grade": 24991,
+    "even_boundary_dimension": 32768,
+    "rank_upper_even": 13951,
+    "nullity_lower_even": 18817,
+    "grade8_kernel_dimension_lower": 11049,
+    "scope": "unmodified single-cell boundary amplitude; not full physical quotient or multi-layer transfer"
+  },
+  "dv_original_kernel": {
+    "couplings": {
+      "lambda1": 1,
+      "lambda2": 0.5,
+      "mu": 0
+    },
+    "basis_masks": [
+      0,
+      3,
+      5,
+      10,
+      12,
+      15
+    ],
+    "matrix": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      [
+        0.0,
+        -0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.5,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.5,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.5,
+        0.0
+      ],
+      [
+        -2.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "eigenvalues": [
+      -0.5811388300841898,
+      -0.5,
+      -0.5,
+      0.5,
+      0.5,
+      2.58113883008419
+    ],
+    "negative_eigenvalues": 3,
+    "partition_traces_2_3_4": [
+      8.0,
+      17.0,
+      44.75
+    ],
+    "exact_traces": [
+      "8",
+      "17",
+      "179/4"
+    ],
+    "minimum_modulus": 0.5,
+    "maximum_modulus": 2.58113883008419
+  },
+  "blocking": {
+    "positive_metric_diagonal": [
+      2.5,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "T2_eigenvalues": [
+      0.33772233983162075,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      6.662277660168381
+    ],
+    "H2_eigenvalues_at_a1": [
+      0.5427656004433219,
+      0.6931471805599453,
+      0.6931471805599453,
+      0.6931471805599453,
+      0.6931471805599453,
+      -0.9482307085514865
+    ],
+    "sign_involution_eigenvalues": [
+      -1.0,
+      -1.0,
+      -1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "scope": "finite algebraic two-step positive reconstruction only; original reflection/observable positivity and real-time process not certified"
+  },
+  "verification": {
+    "symbolic_original_action_matches_matrix": true,
+    "WT_minus_TadjW": 0.0,
+    "symmetrized_asymmetry": 0.0,
+    "spectrum_residual": 0.0,
+    "signed_block_reconstruction": 0.0,
+    "berezin_pairing_eigenvalues": [
+      -1.0,
+      -1.0,
+      -1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "not_proved": [
+    "full physical spinor Hilbert space",
+    "same original quantum instruments or arbitrary-reference implementation",
+    "GR or dark sector",
+    "failure of all spinor routes"
+  ]
+}

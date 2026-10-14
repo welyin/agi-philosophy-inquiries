@@ -1,0 +1,65 @@
+{
+  "schema": "after1199_adm_original_clock_initial_jet_preflight_v1",
+  "status": "PASS_SCOPED_PREFLIGHT",
+  "numbered_round": null,
+  "exact_mixed_coefficients": {
+    "rho_G_A": "-1",
+    "rho_G_B": "0",
+    "rho_G_rho": "-1/8"
+  },
+  "original_model_path": "research_cognition_physics/archive_923_934/925/record_resource_exchange.py",
+  "original_model_sha256": "0c4f388024d0f2ed5acf0904809f6f00a8cc53675fd53b3443eda48d8ede814d",
+  "clock": {
+    "mass_center": "526/5",
+    "mass_x": "2/5",
+    "initial": "original A,q=0,n=3",
+    "effect": "original B,q=0,n=3 projection",
+    "invariant_pair_leakage_diagnostic": 0.0
+  },
+  "inputs": {
+    "epsilon": "1/1000",
+    "coordinate_profile": "w(z)=1 on [0,1]",
+    "boundary": "Dirichlet Green; unit transverse torus",
+    "modes": [
+      1,
+      3
+    ]
+  },
+  "exact_certificate": {
+    "minus_delta_X_strict_lower": "357/1760",
+    "beta_strict_lower": "279143/280000",
+    "delta_p_second_derivative_strict_lower": "14236293/220000000000",
+    "target": "1/15625",
+    "margin_over_target": "156293/220000000000",
+    "retained_full_fock_kinetic_margin_strict_lower": "16523/16875",
+    "retained_background_mass_factor_lower": "9989/10000"
+  },
+  "numerical_diagnostics": {
+    "quadrature_max_error": 4.0245584642661925e-16,
+    "X_moments_plus_minus": [
+      [
+        1.0499266786996084,
+        1.8356093235306132
+      ],
+      [
+        1.2566750144827803,
+        2.5509384156007715
+      ]
+    ],
+    "initial_p_second_derivatives_plus_minus": [
+      0.3182637770823615,
+      0.3181978198407378
+    ],
+    "delta_jet": 6.595724162367089e-05,
+    "fock_levels_per_mode": 5,
+    "maximum_required_total_occupation_for_X_action": 3
+  },
+  "not_certified": [
+    "finite_time_probability_difference_or_remainder",
+    "full_unknown_qutrit_and_reference_coupled_channel",
+    "stationary_support_or_complete_boundary_resource",
+    "full_ADM_quantum_dynamics_or_its_remainder",
+    "GR_generation",
+    "dark_matter_or_dark_energy_identity"
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "schema": "gr_round_acceptance_v1",
+  "date": "2026-10-14",
+  "round": 1197,
+  "status": "ACCEPTED_WITH_SCOPE",
+  "check_groups": 2,
+  "scope": "原1178完整有限K父过程的两份源准备，在实低频包的整个两CAR宏观态及全部关系初态上相同，但完整源力增>0.936，关系二阶差绝对值为A*(K-1)/K、A>0.266，任意K>=2严格大于0.133。只拒绝该瞬时摘要的精确自主闭合；静态boost与原钟有限T结果仅诊断，不签实际仪器、有限误差GR排除或新公理。",
+  "certified_results": {
+    "same_reduced_state": "Exact entire two-mode gauge-invariant Gaussian density matrix, identical relation factors and same probe/R input.",
+    "source_and_relation": {
+      "weights": 274625,
+      "Ehop": {
+        "lo": "-4566364241663778257808224235891/500000000000000000000000000000",
+        "hi": "-1141591060414790135563327510993/125000000000000000000000000000",
+        "float_lo": -9.132728483327556,
+        "float_hi": -9.13272848331832
+      },
+      "b": {
+        "lo": "-3480026936437450648407190062057/1000000000000000000000000000000",
+        "hi": "-3480026936434063459956840704021/1000000000000000000000000000000",
+        "float_lo": -3.4800269364374508,
+        "float_hi": -3.4800269364340632
+      },
+      "r": {
+        "lo": "3515762716439585483271491321127/1000000000000000000000000000000",
+        "hi": "439470339555367280353501226711/125000000000000000000000000000",
+        "float_lo": 3.5157627164395855,
+        "float_hi": 3.5157627164429384
+      },
+      "delta_Ehop": {
+        "lo": "1337457121014201487264302079521/500000000000000000000000000000",
+        "hi": "1337457121015553984836745845061/500000000000000000000000000000",
+        "float_lo": 2.674914242028403,
+        "float_hi": 2.674914242031108
+      },
+      "delta_force": {
+        "lo": "58513749044371315067813215979/62500000000000000000000000000",
+        "hi": "936219984710887789385722091543/1000000000000000000000000000000",
+        "float_lo": 0.936219984709941,
+        "float_hi": 0.9362199847108877
+      },
+      "negative_acceleration_coefficient_magnitude": {
+        "lo": "266292142052509913358261444179/1000000000000000000000000000000",
+        "hi": "133146071026516573001557892821/500000000000000000000000000000",
+        "float_lo": 0.2662921420525099,
+        "float_hi": 0.26629214205303314
+      },
+      "full_preparation_energy_per_site_copy_lower_at_K2": {
+        "lo": "3138266155680111328574047213891/1000000000000000000000000000000",
+        "hi": "3138266155684221106268048364391/1000000000000000000000000000000",
+        "float_lo": 3.1382661556801112,
+        "float_hi": 3.1382661556842213
+      },
+      "all_K_at_least_2_acceleration_difference_abs_lower": "133/1000"
+    },
+    "Pauli_identity": [
+      {
+        "copies": 1,
+        "Hamiltonian_terms": 8,
+        "exact_double_commutator_difference_terms": 0
+      },
+      {
+        "copies": 2,
+        "Hamiltonian_terms": 22,
+        "exact_double_commutator_difference_terms": 0
+      },
+      {
+        "copies": 3,
+        "Hamiltonian_terms": 44,
+        "exact_double_commutator_difference_terms": 0
+      }
+    ]
+  },
+  "inputs_retained": [
+    "Original 1178 full finite parent, source spectrum, couplings, periodic box, reciprocal interaction, probe backreaction and positive spectral baseline.",
+    "1196 stationary Hartree reference used only as a known initial preparation, not a finite-K eigenstate.",
+    "Known onsite beta-rotated source preparation; same original unknown probe and arbitrary reference.",
+    "Specified real low-frequency two-mode summary, retaining all relation factors; not an assumption that every effective model must be memoryless."
+  ],
+  "certification_limits": [
+    "No implemented preparation controller or new source/boost/Gs readout.",
+    "Exact second derivative is not a certified probability gap at a preselected time or resolution.",
+    "Finite-time original-clock values and static boost comparisons are numerical diagnostics, not new finite-K/instrument budgets.",
+    "General memoryful, source-enriched and finite-error effective descriptions are not excluded.",
+    "No general cognitive axiom nonentailment, area entropy, nonlinear Einstein dynamics or dark-sector identification.",
+    "Proposed additional exact original-clock third derivative was not included; supplementary agent review encountered service capacity error."
+  ],
+  "review_independence": "Two distinct agents independently checked exact coarse-state invariance and the full-parent double commutator/scope before publication; root checked all final formulas and ran interval/Pauli and diagnostic codes. New interval code itself is root-authored, not independently reimplemented. Internal non-blind review, not external peer review.",
+  "new_adopted_axioms": 0,
+  "new_empirical_calibration": 0,
+  "gr_hard_deliverables_completed": 0,
+  "files_sha256": {
+    "../research_note_1197.md": "2573c7611e75a99f7f28900d47bce4c89db10ce0e522cba8e62681105719f737",
+    "check.py": "747191bd9c69f7ca8ffaf0bc3911a818863b681e32fa7bbec267aa006c3a927e",
+    "NEXT.md": "b7f0afea324c86cfc906b6c4c239ace09fa0de8aee8cf16c9cf988060e81f1d0",
+    "proof.md": "3bfdc232a1e23eec05ab16289e73c6810967f7b962e370c87ad1bd0a6b41c26c",
+    "result.json": "c0f5ab3b85b90e3e11dcb784b43d6e31712c12389db25c7d9442562f292f5ff0",
+    "results.json": "39cd76e5721b427e73cdddbd60e014bebf80be54b292afe5d8531b9662a1e104",
+    "review.md": "443f6e8d7595e42626a8d8ee4b470534f871a2a694c9c320c20def32297bcdae",
+    "screen.md": "b821507a8f0adf1fe920dacd471d2b5e34ced58bd8a802f25a71c63ac5ffb851",
+    "screen.py": "6736ad561db4573185f19453482d712d79357af0736de0ca727807a4f9716ef2",
+    "../_shared/goal.md": "8acafd3ed835d581a543de077e1e6ea6c120b6e78c7a1e271e749f263e422667"
+  },
+  "validation": {
+    "root_personally_executed": true,
+    "interval_and_Pauli_certificate": "PASS",
+    "numerical_screen": "DIAGNOSTIC_ONLY",
+    "old_acceptances_unchanged": 36,
+    "old_bindings_unchanged": 442,
+    "old_unique_scientific_files_unchanged": 383
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "round": 1175,
+  "status": "ACCEPT_WITH_SCOPE",
+  "blockers": 0,
+  "author_six_core_sha256": {
+    "../research_note_1175.md": "c3821f148d9b2c9b3db3e6cffc8988d88591bd40f33533b1feb46674f51417d1",
+    "admission.md": "35a4124c019f094945210e019844b61e5d47f42dc695d1c409b8ddf4fd410ef3",
+    "proof.md": "581427de3c8e03176a1145773d6bd0754930d849524110a22971c0e3f8e861f4",
+    "check.py": "1438ef6f89890cf7d4e08b6aa8e3bd9efbe2feeab5a7d43c04ff4306d5de0a54",
+    "results.json": "537c8d179be1a46ae7f9385227801f74ac92a09ea486cb07e6b114866d631254",
+    "NEXT.md": "5cce5bec4f25d117ac45d0b6fc58283db2055e5565e48ee34e84a38022c56432"
+  },
+  "author_dependency_sha256": {
+    "_admission/after1174_direction/mean_field_bound.md": "11ac64ce824d3448dec97548efe3dda768bcda30f2e48e1cd88bfe511fcd6b3f",
+    "_admission/after1174_direction/mean_field_numerical_bound.md": "4d0b68e32b7f016b4166cd9a1652e521ef83264d217938add509a29043286667",
+    "_admission/after1174_direction/mean_field_numerical_bound.py": "b83e5e8f262a4f4a6ca8ff0cf88e2cec559d957f31b06e64321b080414739e73",
+    "_admission/after1174_direction/mean_field_candidate/preview.py": "cdc5b6c55f18089ec15d6e4c8b4f6cdb65f5dbba26e3473bf50fd545d7e2042f",
+    "_admission/after1174_direction/mean_field_candidate/results_preview.json": "d361b347e0e4594a2b33925ca425a7e5c71725115620947b285b07f8d5d7efff",
+    "_admission/after1174_direction/mean_field_candidate/unified_probe_extension.py": "7fd536f0c504d0c23d33e9aa9448112e8e4bf246de45c1457eb333d77eeb51c1",
+    "_admission/after1174_direction/mean_field_candidate/results_unified_probe.json": "3bf3e81fc7723e0a8ceefce9876efa4b650b83437a0b4a7c0a7febe8fd1b337d"
+  },
+  "reviewer_taylor_dependency_sha256": "a69307d6ca8c254a92168451031bfba3650c635ebbfe74f92ec2d8554bd3a4a2",
+  "independence": "Taylor implementation preceded reading author preview.py. This is AI internal independent implementation, not blind or external review.",
+  "group1_parent_resources_and_scope": {
+    "w_exact": "5015339.0625",
+    "L_exact": "7094593.59375",
+    "sufficient_log10_K": "52275241.421256896488591321620075065505098825050208237487889340429",
+    "chosen_etaK_bound": "0.000051360406012530213506101446874046341262031002414766055098464294778",
+    "physical_low_k_interval_decimal": [
+      "0.39208780371521764455051826066834433781794997235329458286042132449",
+      "0.39208780371521769980252316073481074183562989955089261635378544232"
+    ],
+    "stored_low_k_absolute_error_bound": 3.083160262699324e-17
+  },
+  "group2_independent_dynamics": {
+    "refinement": {
+      "g_max": 4.218847493575595e-15,
+      "tau": 1.1102230246251565e-15,
+      "xi": 2.4424906541753444e-15,
+      "U_max": 2.3895600220792276e-15
+    },
+    "full_small_grid_Dirac": {
+      "n": 7,
+      "g_max": 8.326672684688674e-16,
+      "tau_error": 0.0,
+      "U_max": 2.2336880404788363e-16,
+      "projector_error": 1.887379141862766e-15
+    },
+    "author_scalar_comparisons": 35,
+    "max_author_scalar_difference": 2.55351295663786e-13,
+    "author_RK4_vs_independent_Taylor_matrix_max": 9.21990758551103e-14,
+    "independent_active": {
+      "g": [
+        0.6760000378380412,
+        -0.7280171369173626,
+        -0.11408329061530459
+      ],
+      "tau": 1.8851275756768326,
+      "xi": 1.7319643432459428,
+      "a": 1.0237655983033205,
+      "source_classes": 6545,
+      "max_energy_error": 6.661338147750939e-15,
+      "max_g_norm_error": 3.1086244689504383e-15,
+      "max_unitary_error": 3.885780586188048e-15,
+      "source_length_error": 8.104628079763643e-15
+    },
+    "lapse_control": 1.669954059090464e-15
+  },
+  "group3_48_code_records_and_endpoint": {
+    "full_48_gram_error": 3.885780586188048e-15,
+    "complete_instrument": {
+      "reference_dimension": 3,
+      "fine_outcomes": 823875,
+      "joint_record_normalization_error": 8.881784197001252e-16,
+      "minimum_joint_probability": 6.094131050705692e-07,
+      "R_error_after_propagation": 4.3400228164964565e-16,
+      "R_error_after_complete_nonselective_instrument": 4.97255077953009e-16,
+      "site_instrument_vs_compressed_effect_max": 8.326672684688674e-17,
+      "initial_cross_mass_coherence_norm": 0.3174759489144165,
+      "cross_mass_coherence_norm_change": 1.6653345369377348e-16,
+      "note": "Finite diagnostic R and complete instrument test; universal R guarantee comes from operator norm proof."
+    },
+    "flat_H_max_row_sum": 1.6816993187086373,
+    "Taylor32_tail_bound": 1.051073553295727e-27,
+    "Taylor32_basic_roundoff_bound": 1.6802914615256759e-12,
+    "effect_basic_roundoff_bound": 2.910383045674694e-11,
+    "physical_coefficient_allowance": 2.0123326410507972e-14,
+    "flat_library_vs_Taylor32": 1.6500388920404754e-16,
+    "massless_library_vs_Taylor32": 1.1102230246251565e-16,
+    "author_Fourier_vs_analytic": 5.124106267500723e-17,
+    "endpoint_probability_recompute_difference": 1.6653345369377348e-16,
+    "endpoint_arithmetic_sum_bound": 3.08050663126455e-11,
+    "endpoint_guard": 1e-10,
+    "extra_nonunitary_probability_allowance": 1.9584551425671962e-10,
+    "endpoint_plus_normalization_allowance": 2.9584551425671964e-10,
+    "published_arithmetic_allowance": 1e-09
+  },
+  "group4_budget_and_stopping_lines": {
+    "decimal_pair_lattice": "0.0022121591152380208029538088790093701396810096080009952735969278276",
+    "decimal_pair_total": "0.0025421591152380208029538088790093701396810096080009952735969278276",
+    "decimal_y_lower": "0.0000043036578232879456695236972347680415285546009833797264030721724",
+    "decimal_massless_lower": "0.0031541227338171084397888144399086791957987267201240047264030721724",
+    "numerical_probability_budget": 9e-05,
+    "underlying_uniform_numeric_bound": 8.744789709873008e-05,
+    "y_strict_but_narrow_margin": 4.303657823286934e-06,
+    "massless_margin": 0.0031541227338171074,
+    "finite_K_full_BG_and_complete_discrete_instrument": true,
+    "continuum_claim_only_prepared_low_band_smooth_terminal_menu": true,
+    "actual_instrument_precision_is_input": true,
+    "formal_hardware_verification": false,
+    "Einstein_or_dark_energy_claim": false,
+    "note": "Numerical Hermite/Bernstein envelope is code/proof audited and separately reproduced by author default check; this script independently computes Taylor dynamics, endpoints and budget."
+  }
+}

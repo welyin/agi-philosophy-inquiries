@@ -1,0 +1,59 @@
+{
+  "schema": "operational_thermodynamics_round_acceptance_v1",
+  "round": 1201,
+  "date": "2026-10-14",
+  "status": "ACCEPTED_WITH_SCOPE",
+  "check_groups": 2,
+  "scope": "原完整16维QQ有限接触在未知平稳参考族上的人口识别、全实温度族有限排除及另一固定窗能源预测；保开关均值能源、指针等距与任意BR。内部参考生成、实际钟/控制/读出与三维区域身份未完成。",
+  "certified": {
+    "g": "1/10",
+    "identification_time": 600,
+    "holdout_time": 300,
+    "matrix_entry_error_upper": "1e-10",
+    "actual_inverse_inf_norm_upper": "3.14",
+    "population_error_upper": ".015701",
+    "nonthermal_compatible_set_gibbs_inf_distance_lower": ".093598",
+    "model_holdout_energy_errors_upper": [
+      ".009262",
+      ".009294",
+      ".000100"
+    ],
+    "holdout_instrument_errors_must_be_added": true,
+    "fresh_iid_trials_for_declared_statistics": 250000,
+    "statistical_failure_upper": 0.002683701023220095,
+    "exact_deletion": "center/outer reference coherences invisible to this parity-respecting menu"
+  },
+  "inputs_retained": [
+    "independent stationary B preparation; fresh iid copies for sampling",
+    "known c preparation, finite control/timing and energy readout with stated systematic error",
+    "controller/battery and blank-record preparation costs not autonomously constructed",
+    "actual clock/three-dimensional region identity not established by tensor labels"
+  ],
+  "stage_requirement_status": {
+    "conditional_identification_and_prediction": "completed_for_declared_model",
+    "independently_generated_stable_reference": "incomplete",
+    "internal_control_clock_record_preparation_resource_closure": "incomplete",
+    "actual_geometry_identity": "incomplete",
+    "stage_deliverables_all_completed": false
+  },
+  "new_adopted_axioms": 0,
+  "new_empirical_calibration": 0,
+  "GR_hard_deliverables_completed": 0,
+  "review": "Internal independent native NumPy rebuild plus separate rational/rounding review; not blind experimental validation. Candidate-review pending language is historical; final scope is this acceptance.",
+  "files_sha256": {
+    "check.py": "1aa57a699dd4b9aac37f283922841d73dcf568c046cf1eff3f9b32f90f33c535",
+    "results.json": "16bf563918c97691ec87533517e47c59c76cb37dfc3d1dbad4d335b337c26d9b",
+    "proof.md": "597e1d00457761355c133f1a11f92a7c0c34860464fa9f99b063cc94385c03a6",
+    "independent_check_1201.py": "70d77f2c467ddf78cecd69302dd9d8c505408277b953959ba2cc7365629d8521",
+    "independent_results_1201.json": "0d2444f159165209444a6b9dda39ae630e4cce8f5a63484ebcdeef6ab8dd2323",
+    "independent_candidate_review.md": "bf7f817cc190f5345ae1546a47b83b2a6ee756e74e6b96ddf83e7d86d7f63d81",
+    "protocol_resource_audit.md": "83f1293b1199f73cbd9fc74078f09576d764ec754b2e8640d643887804e8cbf3",
+    "certificate_review.md": "ef8f495da6672d6e20a08f458c6535abfcc538ddf0e8afa08363319a095d0b54",
+    "NEXT.md": "3c445222111787978e9dd34c9b4a8c45c37e1533a0b51956a73489e0d8385ce3",
+    "../research_note_1201.md": "55f6382d45cd27382b863ba02bc7954eb670f028456bec75b9521699605bc1ee",
+    "../_shared/goal.md": "5ebfd7cd14daec1d26010925774f510a78d0672cab518b77a03de454b8a377d7"
+  },
+  "root_executed_both_codes": true,
+  "previous_scientific_files_verified": 421,
+  "previous_acceptance_bindings_verified": 485
+}

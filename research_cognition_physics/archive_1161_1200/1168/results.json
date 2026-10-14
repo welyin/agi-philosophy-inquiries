@@ -1,0 +1,1197 @@
+{
+  "schema": "round1168_complete_clock_flat_topology_direction_v1",
+  "status": "PASS",
+  "check_groups": 4,
+  "code_sha256": "fbd033b53b3df2484fd359867dee43e3bea7fd9c6e06983847e19ac261e74b6d",
+  "source_sha256": {
+    "archive_1106_1119/1106/proof.md": "3cf66b629a49e00a6503b68e516f67bdd5b9fecd258447e90156b15cf87fb8cb",
+    "archive_1106_1119/1112/check.py": "6e49d71ec5535fd6999432481938663a5543e2704db993ec7a00b8f475b6cd9f",
+    "archive_1106_1119/1119/proof.md": "b4a97154a8302a49c4f4f6788f615909b4849820bfa42e3bf11574c16808008d",
+    "archive_1120_1158/1158/proof.md": "8d05617c800014afd8965eaf51874fa3235e16cf2e49a2918ad00ebe5a8e7608",
+    "archive_1161_/1166/proof.md": "02335c08c46865b438b075a0d8475e143fc113e01eb711f725b96e4290bb0812",
+    "archive_1161_/1166/results.json": "d1bf0dc11287685e6eb54b0b4c6a9af36c11b7bca82a51af86d8fd57ec3e7cf3",
+    "archive_1161_/1167/acceptance.json": "cab43b4c5421791c800cebfe012c8d42ebf8358da8050752167f340b51b6b74a"
+  },
+  "group1_shared_faces_and_flat_cylinder": {
+    "radius": 0.25,
+    "wedge_angle": 1.0471975511965976,
+    "cone_total_angle": 4.1887902047863905,
+    "cylinder_circumference": 0.8660254037844386,
+    "speed": 0.6,
+    "gamma": 1.25,
+    "cone_routes": [
+      {
+        "start": 0,
+        "target": 1,
+        "signed_cell_steps": 1,
+        "initial_direction": [
+          -0.8660254037844387,
+          0.5000000000000001
+        ],
+        "final_direction": [
+          -4.0636983087920376e-17,
+          1.0000000000000002
+        ],
+        "segments": [
+          {
+            "cell": 0,
+            "entry": [
+              0.21650635094610968,
+              0.12499999999999999
+            ],
+            "exit": [
+              0.10825317547305487,
+              0.1875
+            ],
+            "direction": [
+              -0.8660254037844387,
+              0.5000000000000001
+            ],
+            "length": 0.12499999999999997,
+            "coordinate_duration": 0.2083333333333333,
+            "proper_duration": 0.16666666666666663,
+            "starts_at": 0.0,
+            "finishes_at": 0.2083333333333333,
+            "termination": "upper",
+            "smallest_radius": 0.21650635094610968,
+            "next_cell": 1,
+            "face_rotation": [
+              [
+                0.5000000000000001,
+                0.8660254037844386
+              ],
+              [
+                -0.8660254037844386,
+                0.5000000000000001
+              ]
+            ]
+          },
+          {
+            "cell": 1,
+            "entry": [
+              0.2165063509461097,
+              2.563322577438557e-18
+            ],
+            "exit": [
+              0.2165063509461097,
+              0.12500000000000003
+            ],
+            "direction": [
+              -4.0636983087920376e-17,
+              1.0000000000000002
+            ],
+            "length": 0.125,
+            "coordinate_duration": 0.20833333333333334,
+            "proper_duration": 0.16666666666666666,
+            "starts_at": 0.2083333333333333,
+            "finishes_at": 0.41666666666666663,
+            "termination": "actual_target",
+            "smallest_radius": 0.2165063509461097
+          }
+        ],
+        "length": 0.24999999999999997,
+        "coordinate_time": 0.41666666666666663,
+        "proper_time": 0.33333333333333326
+      },
+      {
+        "start": 0,
+        "target": 2,
+        "signed_cell_steps": 2,
+        "initial_direction": [
+          -1.0,
+          2.2434564674474914e-16
+        ],
+        "final_direction": [
+          0.5,
+          0.8660254037844387
+        ],
+        "segments": [
+          {
+            "cell": 0,
+            "entry": [
+              0.21650635094610968,
+              0.12499999999999999
+            ],
+            "exit": [
+              0.07216878364870324,
+              0.12500000000000003
+            ],
+            "direction": [
+              -1.0,
+              2.2434564674474914e-16
+            ],
+            "length": 0.14433756729740643,
+            "coordinate_duration": 0.24056261216234406,
+            "proper_duration": 0.19245008972987523,
+            "starts_at": 0.0,
+            "finishes_at": 0.24056261216234406,
+            "termination": "upper",
+            "smallest_radius": 0.14433756729740646,
+            "next_cell": 1,
+            "face_rotation": [
+              [
+                0.5000000000000001,
+                0.8660254037844386
+              ],
+              [
+                -0.8660254037844386,
+                0.5000000000000001
+              ]
+            ]
+          },
+          {
+            "cell": 1,
+            "entry": [
+              0.1443375672974065,
+              1.0960740256835342e-17
+            ],
+            "exit": [
+              0.07216878364870327,
+              0.12500000000000003
+            ],
+            "direction": [
+              -0.4999999999999999,
+              0.8660254037844387
+            ],
+            "length": 0.14433756729740646,
+            "coordinate_duration": 0.24056261216234412,
+            "proper_duration": 0.1924500897298753,
+            "starts_at": 0.24056261216234406,
+            "finishes_at": 0.4811252243246882,
+            "termination": "upper",
+            "smallest_radius": 0.12500000000000006,
+            "next_cell": 2,
+            "face_rotation": [
+              [
+                0.5000000000000001,
+                0.8660254037844386
+              ],
+              [
+                -0.8660254037844386,
+                0.5000000000000001
+              ]
+            ]
+          },
+          {
+            "cell": 2,
+            "entry": [
+              0.1443375672974065,
+              -1.3076293322959205e-17
+            ],
+            "exit": [
+              0.2165063509461097,
+              0.12499999999999999
+            ],
+            "direction": [
+              0.5,
+              0.8660254037844387
+            ],
+            "length": 0.14433756729740643,
+            "coordinate_duration": 0.24056261216234406,
+            "proper_duration": 0.19245008972987523,
+            "starts_at": 0.4811252243246882,
+            "finishes_at": 0.7216878364870323,
+            "termination": "actual_target",
+            "smallest_radius": 0.1443375672974065
+          }
+        ],
+        "length": 0.4330127018922193,
+        "coordinate_time": 0.7216878364870323,
+        "proper_time": 0.5773502691896257
+      },
+      {
+        "start": 0,
+        "target": 2,
+        "signed_cell_steps": -2,
+        "initial_direction": [
+          -0.5,
+          -0.8660254037844387
+        ],
+        "final_direction": [
+          1.0000000000000002,
+          -2.701186720846204e-16
+        ],
+        "segments": [
+          {
+            "cell": 0,
+            "entry": [
+              0.21650635094610968,
+              0.12499999999999999
+            ],
+            "exit": [
+              0.1443375672974065,
+              1.3877787807814457e-17
+            ],
+            "direction": [
+              -0.5,
+              -0.8660254037844387
+            ],
+            "length": 0.1443375672974064,
+            "coordinate_duration": 0.240562612162344,
+            "proper_duration": 0.1924500897298752,
+            "starts_at": 0.0,
+            "finishes_at": 0.240562612162344,
+            "termination": "lower",
+            "smallest_radius": 0.1443375672974065,
+            "next_cell": 3,
+            "face_rotation": [
+              [
+                0.5000000000000001,
+                -0.8660254037844386
+              ],
+              [
+                0.8660254037844386,
+                0.5000000000000001
+              ]
+            ]
+          },
+          {
+            "cell": 3,
+            "entry": [
+              0.07216878364870324,
+              0.12500000000000003
+            ],
+            "exit": [
+              0.14433756729740643,
+              0.0
+            ],
+            "direction": [
+              0.49999999999999994,
+              -0.8660254037844388
+            ],
+            "length": 0.14433756729740643,
+            "coordinate_duration": 0.24056261216234406,
+            "proper_duration": 0.19245008972987523,
+            "starts_at": 0.240562612162344,
+            "finishes_at": 0.48112522432468807,
+            "termination": "lower",
+            "smallest_radius": 0.12500000000000003,
+            "next_cell": 2,
+            "face_rotation": [
+              [
+                0.5000000000000001,
+                -0.8660254037844386
+              ],
+              [
+                0.8660254037844386,
+                0.5000000000000001
+              ]
+            ]
+          },
+          {
+            "cell": 2,
+            "entry": [
+              0.07216878364870323,
+              0.12499999999999999
+            ],
+            "exit": [
+              0.2165063509461097,
+              0.12499999999999994
+            ],
+            "direction": [
+              1.0000000000000002,
+              -2.701186720846204e-16
+            ],
+            "length": 0.14433756729740646,
+            "coordinate_duration": 0.24056261216234412,
+            "proper_duration": 0.1924500897298753,
+            "starts_at": 0.48112522432468807,
+            "finishes_at": 0.7216878364870322,
+            "termination": "actual_target",
+            "smallest_radius": 0.14433756729740643
+          }
+        ],
+        "length": 0.4330127018922193,
+        "coordinate_time": 0.7216878364870322,
+        "proper_time": 0.5773502691896257
+      },
+      {
+        "start": 0,
+        "target": 3,
+        "signed_cell_steps": -1,
+        "initial_direction": [
+          0.0,
+          -1.0
+        ],
+        "final_direction": [
+          0.8660254037844386,
+          -0.5000000000000001
+        ],
+        "segments": [
+          {
+            "cell": 0,
+            "entry": [
+              0.21650635094610968,
+              0.12499999999999999
+            ],
+            "exit": [
+              0.21650635094610968,
+              0.0
+            ],
+            "direction": [
+              0.0,
+              -1.0
+            ],
+            "length": 0.12499999999999999,
+            "coordinate_duration": 0.20833333333333331,
+            "proper_duration": 0.16666666666666666,
+            "starts_at": 0.0,
+            "finishes_at": 0.20833333333333331,
+            "termination": "lower",
+            "smallest_radius": 0.21650635094610968,
+            "next_cell": 3,
+            "face_rotation": [
+              [
+                0.5000000000000001,
+                -0.8660254037844386
+              ],
+              [
+                0.8660254037844386,
+                0.5000000000000001
+              ]
+            ]
+          },
+          {
+            "cell": 3,
+            "entry": [
+              0.10825317547305487,
+              0.1875
+            ],
+            "exit": [
+              0.21650635094610968,
+              0.125
+            ],
+            "direction": [
+              0.8660254037844386,
+              -0.5000000000000001
+            ],
+            "length": 0.12499999999999999,
+            "coordinate_duration": 0.20833333333333331,
+            "proper_duration": 0.16666666666666666,
+            "starts_at": 0.20833333333333331,
+            "finishes_at": 0.41666666666666663,
+            "termination": "actual_target",
+            "smallest_radius": 0.21650635094610968
+          }
+        ],
+        "length": 0.24999999999999997,
+        "coordinate_time": 0.41666666666666663,
+        "proper_time": 0.3333333333333333
+      },
+      {
+        "start": 1,
+        "target": 2,
+        "signed_cell_steps": 1,
+        "initial_direction": [
+          -0.8660254037844387,
+          0.5000000000000001
+        ],
+        "final_direction": [
+          -4.0636983087920376e-17,
+          1.0000000000000002
+        ],
+        "segments": [
+          {
+            "cell": 1,
+            "entry": [
+              0.21650635094610968,
+              0.12499999999999999
+            ],
+            "exit": [
+              0.10825317547305487,
+              0.1875
+            ],
+            "direction": [
+              -0.8660254037844387,
+              0.5000000000000001
+            ],
+            "length": 0.12499999999999997,
+            "coordinate_duration": 0.2083333333333333,
+            "proper_duration": 0.16666666666666663,
+            "starts_at": 0.0,
+            "finishes_at": 0.2083333333333333,
+            "termination": "upper",
+            "smallest_radius": 0.21650635094610968,
+            "next_cell": 2,
+            "face_rotation": [
+              [
+                0.5000000000000001,
+                0.8660254037844386
+              ],
+              [
+                -0.8660254037844386,
+                0.5000000000000001
+              ]
+            ]
+          },
+          {
+            "cell": 2,
+            "entry": [
+              0.2165063509461097,
+              2.563322577438557e-18
+            ],
+            "exit": [
+              0.2165063509461097,
+              0.12500000000000003
+            ],
+            "direction": [
+              -4.0636983087920376e-17,
+              1.0000000000000002
+            ],
+            "length": 0.125,
+            "coordinate_duration": 0.20833333333333334,
+            "proper_duration": 0.16666666666666666,
+            "starts_at": 0.2083333333333333,
+            "finishes_at": 0.41666666666666663,
+            "termination": "actual_target",
+            "smallest_radius": 0.2165063509461097
+          }
+        ],
+        "length": 0.24999999999999997,
+        "coordinate_time": 0.41666666666666663,
+        "proper_time": 0.33333333333333326
+      },
+      {
+        "start": 1,
+        "target": 3,
+        "signed_cell_steps": 2,
+        "initial_direction": [
+          -1.0,
+          2.2434564674474914e-16
+        ],
+        "final_direction": [
+          0.5,
+          0.8660254037844387
+        ],
+        "segments": [
+          {
+            "cell": 1,
+            "entry": [
+              0.21650635094610968,
+              0.12499999999999999
+            ],
+            "exit": [
+              0.07216878364870324,
+              0.12500000000000003
+            ],
+            "direction": [
+              -1.0,
+              2.2434564674474914e-16
+            ],
+            "length": 0.14433756729740643,
+            "coordinate_duration": 0.24056261216234406,
+            "proper_duration": 0.19245008972987523,
+            "starts_at": 0.0,
+            "finishes_at": 0.24056261216234406,
+            "termination": "upper",
+            "smallest_radius": 0.14433756729740646,
+            "next_cell": 2,
+            "face_rotation": [
+              [
+                0.5000000000000001,
+                0.8660254037844386
+              ],
+              [
+                -0.8660254037844386,
+                0.5000000000000001
+              ]
+            ]
+          },
+          {
+            "cell": 2,
+            "entry": [
+              0.1443375672974065,
+              1.0960740256835342e-17
+            ],
+            "exit": [
+              0.07216878364870327,
+              0.12500000000000003
+            ],
+            "direction": [
+              -0.4999999999999999,
+              0.8660254037844387
+            ],
+            "length": 0.14433756729740646,
+            "coordinate_duration": 0.24056261216234412,
+            "proper_duration": 0.1924500897298753,
+            "starts_at": 0.24056261216234406,
+            "finishes_at": 0.4811252243246882,
+            "termination": "upper",
+            "smallest_radius": 0.12500000000000006,
+            "next_cell": 3,
+            "face_rotation": [
+              [
+                0.5000000000000001,
+                0.8660254037844386
+              ],
+              [
+                -0.8660254037844386,
+                0.5000000000000001
+              ]
+            ]
+          },
+          {
+            "cell": 3,
+            "entry": [
+              0.1443375672974065,
+              -1.3076293322959205e-17
+            ],
+            "exit": [
+              0.2165063509461097,
+              0.12499999999999999
+            ],
+            "direction": [
+              0.5,
+              0.8660254037844387
+            ],
+            "length": 0.14433756729740643,
+            "coordinate_duration": 0.24056261216234406,
+            "proper_duration": 0.19245008972987523,
+            "starts_at": 0.4811252243246882,
+            "finishes_at": 0.7216878364870323,
+            "termination": "actual_target",
+            "smallest_radius": 0.1443375672974065
+          }
+        ],
+        "length": 0.4330127018922193,
+        "coordinate_time": 0.7216878364870323,
+        "proper_time": 0.5773502691896257
+      },
+      {
+        "start": 1,
+        "target": 3,
+        "signed_cell_steps": -2,
+        "initial_direction": [
+          -0.5,
+          -0.8660254037844387
+        ],
+        "final_direction": [
+          1.0000000000000002,
+          -2.701186720846204e-16
+        ],
+        "segments": [
+          {
+            "cell": 1,
+            "entry": [
+              0.21650635094610968,
+              0.12499999999999999
+            ],
+            "exit": [
+              0.1443375672974065,
+              1.3877787807814457e-17
+            ],
+            "direction": [
+              -0.5,
+              -0.8660254037844387
+            ],
+            "length": 0.1443375672974064,
+            "coordinate_duration": 0.240562612162344,
+            "proper_duration": 0.1924500897298752,
+            "starts_at": 0.0,
+            "finishes_at": 0.240562612162344,
+            "termination": "lower",
+            "smallest_radius": 0.1443375672974065,
+            "next_cell": 0,
+            "face_rotation": [
+              [
+                0.5000000000000001,
+                -0.8660254037844386
+              ],
+              [
+                0.8660254037844386,
+                0.5000000000000001
+              ]
+            ]
+          },
+          {
+            "cell": 0,
+            "entry": [
+              0.07216878364870324,
+              0.12500000000000003
+            ],
+            "exit": [
+              0.14433756729740643,
+              0.0
+            ],
+            "direction": [
+              0.49999999999999994,
+              -0.8660254037844388
+            ],
+            "length": 0.14433756729740643,
+            "coordinate_duration": 0.24056261216234406,
+            "proper_duration": 0.19245008972987523,
+            "starts_at": 0.240562612162344,
+            "finishes_at": 0.48112522432468807,
+            "termination": "lower",
+            "smallest_radius": 0.12500000000000003,
+            "next_cell": 3,
+            "face_rotation": [
+              [
+                0.5000000000000001,
+                -0.8660254037844386
+              ],
+              [
+                0.8660254037844386,
+                0.5000000000000001
+              ]
+            ]
+          },
+          {
+            "cell": 3,
+            "entry": [
+              0.07216878364870323,
+              0.12499999999999999
+            ],
+            "exit": [
+              0.2165063509461097,
+              0.12499999999999994
+            ],
+            "direction": [
+              1.0000000000000002,
+              -2.701186720846204e-16
+            ],
+            "length": 0.14433756729740646,
+            "coordinate_duration": 0.24056261216234412,
+            "proper_duration": 0.1924500897298753,
+            "starts_at": 0.48112522432468807,
+            "finishes_at": 0.7216878364870322,
+            "termination": "actual_target",
+            "smallest_radius": 0.14433756729740643
+          }
+        ],
+        "length": 0.4330127018922193,
+        "coordinate_time": 0.7216878364870322,
+        "proper_time": 0.5773502691896257
+      },
+      {
+        "start": 2,
+        "target": 3,
+        "signed_cell_steps": 1,
+        "initial_direction": [
+          -0.8660254037844387,
+          0.5000000000000001
+        ],
+        "final_direction": [
+          -4.0636983087920376e-17,
+          1.0000000000000002
+        ],
+        "segments": [
+          {
+            "cell": 2,
+            "entry": [
+              0.21650635094610968,
+              0.12499999999999999
+            ],
+            "exit": [
+              0.10825317547305487,
+              0.1875
+            ],
+            "direction": [
+              -0.8660254037844387,
+              0.5000000000000001
+            ],
+            "length": 0.12499999999999997,
+            "coordinate_duration": 0.2083333333333333,
+            "proper_duration": 0.16666666666666663,
+            "starts_at": 0.0,
+            "finishes_at": 0.2083333333333333,
+            "termination": "upper",
+            "smallest_radius": 0.21650635094610968,
+            "next_cell": 3,
+            "face_rotation": [
+              [
+                0.5000000000000001,
+                0.8660254037844386
+              ],
+              [
+                -0.8660254037844386,
+                0.5000000000000001
+              ]
+            ]
+          },
+          {
+            "cell": 3,
+            "entry": [
+              0.2165063509461097,
+              2.563322577438557e-18
+            ],
+            "exit": [
+              0.2165063509461097,
+              0.12500000000000003
+            ],
+            "direction": [
+              -4.0636983087920376e-17,
+              1.0000000000000002
+            ],
+            "length": 0.125,
+            "coordinate_duration": 0.20833333333333334,
+            "proper_duration": 0.16666666666666666,
+            "starts_at": 0.2083333333333333,
+            "finishes_at": 0.41666666666666663,
+            "termination": "actual_target",
+            "smallest_radius": 0.2165063509461097
+          }
+        ],
+        "length": 0.24999999999999997,
+        "coordinate_time": 0.41666666666666663,
+        "proper_time": 0.33333333333333326
+      }
+    ],
+    "cylinder_routes": [
+      {
+        "start": 0,
+        "target": 1,
+        "signed_cell_steps": 1,
+        "cover_source": [
+          0.0,
+          0.0625,
+          0.0
+        ],
+        "cover_target": [
+          0.21650635094610965,
+          -0.0625,
+          0.0
+        ],
+        "direction": [
+          0.8660254037844387,
+          -0.5000000000000001,
+          0.0
+        ],
+        "length": 0.24999999999999997,
+        "coordinate_time": 0.41666666666666663,
+        "proper_time": 0.3333333333333333
+      },
+      {
+        "start": 0,
+        "target": 2,
+        "signed_cell_steps": 2,
+        "cover_source": [
+          0.0,
+          0.0625,
+          0.0
+        ],
+        "cover_target": [
+          0.4330127018922193,
+          0.0625,
+          0.0
+        ],
+        "direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "length": 0.4330127018922193,
+        "coordinate_time": 0.7216878364870322,
+        "proper_time": 0.5773502691896257
+      },
+      {
+        "start": 0,
+        "target": 2,
+        "signed_cell_steps": -2,
+        "cover_source": [
+          0.0,
+          0.0625,
+          0.0
+        ],
+        "cover_target": [
+          -0.4330127018922193,
+          0.0625,
+          0.0
+        ],
+        "direction": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "length": 0.4330127018922193,
+        "coordinate_time": 0.7216878364870322,
+        "proper_time": 0.5773502691896257
+      },
+      {
+        "start": 0,
+        "target": 3,
+        "signed_cell_steps": -1,
+        "cover_source": [
+          0.0,
+          0.0625,
+          0.0
+        ],
+        "cover_target": [
+          -0.21650635094610965,
+          -0.0625,
+          0.0
+        ],
+        "direction": [
+          -0.8660254037844387,
+          -0.5000000000000001,
+          0.0
+        ],
+        "length": 0.24999999999999997,
+        "coordinate_time": 0.41666666666666663,
+        "proper_time": 0.3333333333333333
+      },
+      {
+        "start": 1,
+        "target": 2,
+        "signed_cell_steps": 1,
+        "cover_source": [
+          0.21650635094610965,
+          -0.0625,
+          0.0
+        ],
+        "cover_target": [
+          0.4330127018922193,
+          0.0625,
+          0.0
+        ],
+        "direction": [
+          0.8660254037844387,
+          0.5000000000000001,
+          0.0
+        ],
+        "length": 0.24999999999999997,
+        "coordinate_time": 0.41666666666666663,
+        "proper_time": 0.3333333333333333
+      },
+      {
+        "start": 1,
+        "target": 3,
+        "signed_cell_steps": 2,
+        "cover_source": [
+          0.21650635094610965,
+          -0.0625,
+          0.0
+        ],
+        "cover_target": [
+          0.649519052838329,
+          -0.0625,
+          0.0
+        ],
+        "direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "length": 0.43301270189221935,
+        "coordinate_time": 0.7216878364870323,
+        "proper_time": 0.5773502691896258
+      },
+      {
+        "start": 1,
+        "target": 3,
+        "signed_cell_steps": -2,
+        "cover_source": [
+          0.21650635094610965,
+          -0.0625,
+          0.0
+        ],
+        "cover_target": [
+          -0.21650635094610965,
+          -0.0625,
+          0.0
+        ],
+        "direction": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "length": 0.4330127018922193,
+        "coordinate_time": 0.7216878364870322,
+        "proper_time": 0.5773502691896257
+      },
+      {
+        "start": 2,
+        "target": 3,
+        "signed_cell_steps": 1,
+        "cover_source": [
+          0.4330127018922193,
+          0.0625,
+          0.0
+        ],
+        "cover_target": [
+          0.649519052838329,
+          -0.0625,
+          0.0
+        ],
+        "direction": [
+          0.8660254037844386,
+          -0.4999999999999999,
+          0.0
+        ],
+        "length": 0.25000000000000006,
+        "coordinate_time": 0.4166666666666668,
+        "proper_time": 0.3333333333333334
+      }
+    ],
+    "distinct_station_pairs": 6,
+    "route_count_including_diagonal_alternatives": 8,
+    "smallest_radius": 0.12500000000000003,
+    "complete_time_match_error": 1.6653345369377348e-16,
+    "independently_prepared_reverse_error": 0.0,
+    "times_computed_from_face_intersections": true
+  },
+  "group2_same_complete_old_clock": {
+    "material_dimension": 288,
+    "baseline_mass": 25.717797887081346,
+    "positive_complete_mass_spectrum": [
+      25.717797887081293,
+      28.717797887081396
+    ],
+    "capture_duration": 0.7853981633974483,
+    "capture_energy_intertwiner_error": 3.4443405665515266e-14,
+    "all_qutrit_effect_error": 2.0440369920494805e-15,
+    "complete_isometry_error": 1.231699488514307e-15,
+    "cone_cylinder_complete_internal_matrix_difference": 7.660865950760493e-15,
+    "complete_four_P_phase_error": 5.1324597491180035e-14,
+    "task_readouts": [
+      {
+        "start": 0,
+        "target": 1,
+        "signed_steps": 1,
+        "moving_probability": 0.022327634642073026,
+        "stationary_probability": 0.03270161578887175,
+        "inferred_proper_time": 0.33333333333332926,
+        "inferred_station_time": 0.4166666666666621,
+        "inferred_distance": 0.24999999999999695,
+        "total_clock_ages": [
+          1.1187314967307815,
+          1.2020648300641148
+        ]
+      },
+      {
+        "start": 0,
+        "target": 2,
+        "signed_steps": 2,
+        "moving_probability": 0.06244076856230943,
+        "stationary_probability": 0.10261259596982804,
+        "inferred_proper_time": 0.577350269189622,
+        "inferred_station_time": 0.7216878364870283,
+        "inferred_distance": 0.43301270189221647,
+        "total_clock_ages": [
+          1.362748432587074,
+          1.5070859998844806
+        ]
+      },
+      {
+        "start": 0,
+        "target": 2,
+        "signed_steps": -2,
+        "moving_probability": 0.06244076856230943,
+        "stationary_probability": 0.10261259596982804,
+        "inferred_proper_time": 0.577350269189622,
+        "inferred_station_time": 0.7216878364870283,
+        "inferred_distance": 0.43301270189221647,
+        "total_clock_ages": [
+          1.362748432587074,
+          1.5070859998844806
+        ]
+      },
+      {
+        "start": 0,
+        "target": 3,
+        "signed_steps": -1,
+        "moving_probability": 0.022327634642073026,
+        "stationary_probability": 0.03270161578887175,
+        "inferred_proper_time": 0.33333333333332904,
+        "inferred_station_time": 0.4166666666666621,
+        "inferred_distance": 0.24999999999999678,
+        "total_clock_ages": [
+          1.1187314967307815,
+          1.2020648300641148
+        ]
+      },
+      {
+        "start": 1,
+        "target": 2,
+        "signed_steps": 1,
+        "moving_probability": 0.022327634642073026,
+        "stationary_probability": 0.03270161578887175,
+        "inferred_proper_time": 0.33333333333332926,
+        "inferred_station_time": 0.4166666666666621,
+        "inferred_distance": 0.24999999999999695,
+        "total_clock_ages": [
+          1.1187314967307815,
+          1.2020648300641148
+        ]
+      },
+      {
+        "start": 1,
+        "target": 3,
+        "signed_steps": 2,
+        "moving_probability": 0.06244076856230943,
+        "stationary_probability": 0.10261259596982804,
+        "inferred_proper_time": 0.577350269189622,
+        "inferred_station_time": 0.7216878364870283,
+        "inferred_distance": 0.43301270189221647,
+        "total_clock_ages": [
+          1.362748432587074,
+          1.5070859998844806
+        ]
+      },
+      {
+        "start": 1,
+        "target": 3,
+        "signed_steps": -2,
+        "moving_probability": 0.06244076856230943,
+        "stationary_probability": 0.10261259596982804,
+        "inferred_proper_time": 0.577350269189622,
+        "inferred_station_time": 0.7216878364870283,
+        "inferred_distance": 0.43301270189221647,
+        "total_clock_ages": [
+          1.362748432587074,
+          1.5070859998844806
+        ]
+      },
+      {
+        "start": 2,
+        "target": 3,
+        "signed_steps": 1,
+        "moving_probability": 0.022327634642073026,
+        "stationary_probability": 0.03270161578887175,
+        "inferred_proper_time": 0.33333333333332926,
+        "inferred_station_time": 0.4166666666666621,
+        "inferred_distance": 0.24999999999999695,
+        "total_clock_ages": [
+          1.1187314967307815,
+          1.2020648300641148
+        ]
+      }
+    ],
+    "largest_two_flight_plus_capture_station_age": 2.228773836371513,
+    "actual_roundtrip_or_clock_reset_claimed": false
+  },
+  "group3_retained_unknown_path_and_reference": {
+    "complete_two_material_dimension": 82944,
+    "open_rail_qubit_dimension": 4,
+    "output_shape": [
+      82944,
+      4
+    ],
+    "all_input_gram_error": 2.604628604873775e-15,
+    "reference_reduced_state_error": 6.511571512184437e-16,
+    "cross_path_matrix_unit_HS_norm": 0.9999999999999988,
+    "full_output_trace_distance_after_actual_path_dephasing": 0.4999999999999999,
+    "both_vac_carriers_and_receiver_velocity_types_retained": true,
+    "equal_internal_maps_do_not_mean_all_geometric_types_equal": true,
+    "no_new_cross_mode_interference_or_free_turning_permission": true
+  },
+  "group4_direction_holdout_and_false_positives": {
+    "direction_holdout": {
+      "local_coordinate_duration": 0.05,
+      "local_free_length": 0.03,
+      "distance_to_nearest_cone_face": 0.12499999999999999,
+      "cone_initial_radial_tangent_directions": [
+        [
+          -0.8660254037844386,
+          0.5000000000000001
+        ],
+        [
+          -0.8660254037844386,
+          -0.5000000000000001
+        ]
+      ],
+      "cylinder_initial_directions": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "cone_antipodal_defect": 1.7320508075688772,
+      "cylinder_antipodal_defect": 0.0,
+      "displacement_error_contract": 0.001,
+      "direction_error_bound": 0.06666666666666667,
+      "defect_error_bound": 0.13333333333333333,
+      "separated_prediction_intervals": [
+        [
+          -0.13333333333333333,
+          0.13333333333333333
+        ],
+        [
+          1.598717474235544,
+          1.8653841409022105
+        ]
+      ],
+      "example_perturbed_defect": 1.7146362202272183
+    },
+    "global_Euclidean_screen": {
+      "five_task_fit_points": [
+        [
+          -0.21650635094610965,
+          0.0
+        ],
+        [
+          0.0,
+          0.125
+        ],
+        [
+          0.21650635094610965,
+          0.0
+        ],
+        [
+          0.0,
+          -0.125
+        ]
+      ],
+      "fitted_holdout_distance": 0.25,
+      "cone_and_cylinder_holdout_distance": 0.4330127018922193,
+      "squared_sum_violation": 0.12499999999999994
+    },
+    "finite_accuracy": {
+      "probability_window": [
+        0.01,
+        0.15
+      ],
+      "total_probability_error_contract": 1e-05,
+      "capture_age_error": 1e-05,
+      "gamma_v_error": 0.0001,
+      "other_endpoint_seam_unit_length_error": 0.0002,
+      "inverse_clock_Lipschitz_bound": 22.600159442269888,
+      "total_length_error_bound": 0.00043475982289542905,
+      "positive_robust_Euclidean_separation_margin": 0.12337707621965738,
+      "these_are_declared_independent_implementation_errors_not_empirical_estimates": true
+    },
+    "single_flat_optical_medium_countercheck": [
+      {
+        "start": 0,
+        "target": 1,
+        "same_coordinate_time": 0.41666666666666663,
+        "cone_moving_proper_time": 0.33333333333333326,
+        "flat_medium_moving_proper_time": 0.40510622614836356,
+        "proper_time_gap_lower_bound": 0.07063998811802738,
+        "old_Mr_probability_cone": 0.02232763464207259,
+        "old_Mr_probability_flat_medium": 0.03107886060741028,
+        "probability_gap": 0.008751225965337693
+      },
+      {
+        "start": 0,
+        "target": 2,
+        "same_coordinate_time": 0.7216878364870323,
+        "cone_moving_proper_time": 0.5773502691896257,
+        "flat_medium_moving_proper_time": 0.7065808358954578,
+        "proper_time_gap_lower_bound": 0.12235204846648523,
+        "old_Mr_probability_cone": 0.06244076856230858,
+        "old_Mr_probability_flat_medium": 0.09773782513784228,
+        "probability_gap": 0.0352970565755337
+      }
+    ],
+    "optical_massive_path_and_proper_clock_rule_are_extra_conditional_inputs": true,
+    "no_claim_to_exclude_all_flat_topologies_or_forced_paths": true
+  },
+  "scope": {
+    "new_adopted_axioms": 0,
+    "new_empirical_calibration": 0,
+    "GR_hard_deliverables_completed": 0,
+    "additional_candidate_permission": "K1168 common static piecewise-flat actual transport",
+    "inherited_global_SR_A_not_claimed_on_quotient_domain": true,
+    "six_timing_and_complete_internal_channels_do_not_identify_geometry": true,
+    "local_direction_distinguishes_only_the_stated_cone_and_cylinder_models": true,
+    "no_dynamic_source_geometry_update_or_Einstein_equation_claim": true,
+    "no_nonzero_local_Riemann_claim_in_propagation_domain": true
+  }
+}

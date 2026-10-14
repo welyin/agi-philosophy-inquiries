@@ -1,0 +1,62 @@
+{
+  "schema": "gr_round_acceptance_v1",
+  "date": "2026-10-14",
+  "round": 1191,
+  "status": "ACCEPTED_WITH_SCOPE",
+  "check_groups": 4,
+  "scope": "同一声明Cartan材料与引力子类中，alpha^2/mchi^2=1/(24kappa Lambda)不随z改变；冷支唯一条件驻点与局部能量修正不随重质量路径消失。保完整配对来源后，有限初码到全Fock及任意R的固定T线性响应、自能有1/K上界。未认证完整耦合来源误差、实际钟尺或GR恢复。",
+  "certified_results": {
+    "correlated_ratio": "alpha_v^2/m_chi^2=1/(24*kappa*Lambda)",
+    "cold_stationary": "r=(3/2)(x^(3/2)-x^(-5/2)), unique minimum x>=1",
+    "finite_linear_example": {
+      "z": 1000.0,
+      "K": 750000.0,
+      "mass": 0.013856406460551019,
+      "T": 1.0,
+      "full_source_response_norm": 9.506985186842698e-07,
+      "analytic_upper": 1.636245461044379e-06,
+      "induced_linear_energy_upper": 8.031897626364996e-06,
+      "computed_energy_norm": 2.4706719183382896e-06,
+      "zero_frequency_susceptibility": 0.003472222222222222
+    }
+  },
+  "inputs_retained": [
+    "Specified Cartan action, effective four-dimensional positive-norm branch, fixed b/v and minimal f=1 material.",
+    "Cold conserved-particle, diagonal, adiabatic fixed-density branch only for stationary formulas.",
+    "Free full material source drives a fixed-background linear response; finite initial code, arbitrary reference, zero induced initial component and bounded spatial readout."
+  ],
+  "certification_limits": [
+    "Static or adiabatic preparation is not the t->infinity limit of an undamped response.",
+    "Exact finite columns are a single quadratic source mapping into the full Fock output, not a truncation of coupled dynamics.",
+    "Positive induced quadratic scalar energy excludes independent scalar state, vacuum and interaction energy; no complete stress tensor certificate.",
+    "No full coupled-source remainder, actual clock, nonlinear Einstein error, dark-matter or dark-energy identification.",
+    "Keeping an additional complete source is allowed; elimination of all scalar modes or selection of all parameters is not a goal prerequisite."
+  ],
+  "review_independence": "Internal non-blind review; reviewer did not write 1191 author proof and independently rebuilt q/p source and augmented-ODE response without importing author code; no external peer-review claim.",
+  "new_adopted_axioms": 0,
+  "new_empirical_calibration": 0,
+  "gr_hard_deliverables_completed": 0,
+  "files_sha256": {
+    "../research_note_1191.md": "83cee48f6b009a63652d130ad3bcad12fe363925f3dd2323a1bac7ee8da28bd6",
+    "admission.md": "3d7b62b4e9c33c6b44c0c8e2a5073f2a69efd6519e0f8b19f22cea63ec612d2b",
+    "proof.md": "43dcf5e0922afba93a8479056905a7e8f2c575c0d0773da84709773ad5311cea",
+    "sources.md": "004f70d44dcb085aab8e613a11e37d5d8761e468b70cfc3458371eaeea2a11a5",
+    "check.py": "a9559b7c0a19be3ee42a079271d5b1c3322c9972b1a0c2cc5f9dd4805ebe23e5",
+    "results.json": "c3528df0c641df2bcddaccaeae6111f8eea2b07135dccaaa27d148af0e7aa606",
+    "NEXT.md": "0241f38fa24c8d1c426b02ea8dc1975cd02a9fe4fa1930046d026439455b7360",
+    "review.md": "c14d6f3aee700b12be105af0640e37a329800ff023e3364510d484164990078b",
+    "reviewer_check.py": "280ead9ddd1e0da98a784ad006218e225bd946f9eaf3499ec638aca1729dd8e3",
+    "review_checks.json": "41a219c3e7cc08dab27be4a83dd4d76a589c0d02ac9de8efb359546d44e6d726",
+    "baseline.json": "aadaa5f716474dc3d34fa9f81f7514a8d4e8fc05b9474fa9f1bd0c14acabde89",
+    "../_shared/goal.md": "8acafd3ed835d581a543de077e1e6ea6c120b6e78c7a1e271e749f263e422667"
+  },
+  "validation": {
+    "root_personally_executed": true,
+    "author_check": "PASS_WITH_SCOPE, 4 groups",
+    "reviewer_check": "PASS_INDEPENDENT_IMPLEMENTATION_WITH_SCOPE",
+    "old_acceptances_unchanged": 30,
+    "old_bindings_unchanged": 367,
+    "old_unique_scientific_files_unchanged": 314,
+    "blockers": 0
+  }
+}

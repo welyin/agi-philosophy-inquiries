@@ -1,0 +1,111 @@
+{
+  "schema": "round_1200_independent_parity_and_conditional_soft_factor_v1",
+  "status": "PASS_INDEPENDENT_FINITE_PARITY_ALGEBRA",
+  "dependency": {
+    "path": "../1199/independent_check.py",
+    "sha256": "1f7b08950608836f2c98999632b8da9aba5cdfae6e662eea03d9b51256af757b"
+  },
+  "independent_implementation": "Frozen independent Laurent stencils; local complex-linear matrix; exact finite-field quotient; exact rational soft contraction; no 1200 author imports",
+  "finite_model": {
+    "prime": 5,
+    "qudits": 384,
+    "scalar_rank": 63,
+    "vector_rank": 189,
+    "logical_qudits": 132,
+    "inversion_paired_distinct_terms": {
+      "S_penalty": 128,
+      "V_penalty": 384,
+      "R_curvature": 768,
+      "T_curl": 1152
+    }
+  },
+  "local_matrix_residual_max": 4.47545209131181e-16,
+  "twisted_trace_exact_formula": "Tr(C X^a Z^b)=omega^(-a*b/2); CSS orthogonality makes every stabilizer contribution 1",
+  "code_parity": {
+    "dimension": "183670992315982423120115083940975887159166493245638675235742454106002696789801120758056640625",
+    "C_trace": 1,
+    "even_dimension": "91835496157991211560057541970487943579583246622819337617871227053001348394900560379028320313",
+    "odd_dimension": "91835496157991211560057541970487943579583246622819337617871227053001348394900560379028320312"
+  },
+  "original_odd_readouts": {
+    "R_diag_first": {
+      "weyl_order_on_code": 5,
+      "normalized_trace_sine_squared": "1/2",
+      "nonzero_syndrome_entries": 189
+    },
+    "T_diag_first": {
+      "weyl_order_on_code": 5,
+      "normalized_trace_sine_squared": "1/2",
+      "nonzero_syndrome_entries": 118
+    }
+  },
+  "exact_consequences": [
+    "[H,C]=0",
+    "[P,C]=0",
+    "P_minus exp(-itH) P_plus=0 for all real t",
+    "odd total C-parity multi-time correlators vanish in every C-invariant state"
+  ],
+  "conditional_soft_witness": {
+    "signature": "+---",
+    "hard_momenta": [
+      [
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        -1
+      ],
+      [
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        -1,
+        0,
+        0
+      ]
+    ],
+    "eta": [
+      -1,
+      -1,
+      1,
+      1
+    ],
+    "q_over_omega": [
+      1,
+      0,
+      1,
+      0
+    ],
+    "polarization_spatial_diagonal": [
+      1,
+      0,
+      -1
+    ],
+    "individual_residues": [
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "sum_residue": "4",
+    "leading_amplitude_coefficient_per_kappa_M4": "2",
+    "condition": "Requires nonzero hard M4, kappa, unbroken C vacuum, C-odd graviton identification and a qualified soft scattering limit; finite p lattice certifies none of these."
+  },
+  "not_certified": [
+    "asymptotic_gravitons_or_Lorentz_IR",
+    "vacuum_nonbreaking",
+    "finite_probability_or_actual_instrument",
+    "all_L_or_N_phases_excluded",
+    "C_even_composite_or_broken_vacuum_excluded",
+    "complete_GR_generation"
+  ]
+}

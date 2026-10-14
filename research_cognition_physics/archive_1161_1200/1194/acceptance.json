@@ -1,0 +1,83 @@
+{
+  "schema": "gr_round_acceptance_v1",
+  "date": "2026-10-14",
+  "round": 1194,
+  "status": "ACCEPTED_WITH_SCOPE",
+  "check_groups": 3,
+  "scope": "在同一声明编码/过程、正压缩区域能源测度、固定共同中心与原CO效应误差下，1193质心界给有限越界概率上界0.006203018124720<0.007；二元记录与被动参考同时受控。原1112活钟能源压缩为标量且方差3/4，故无需窄化全母体能谱。尚未认证原完整应力/CO/固有钟共同身份，不签全仪器或GR。",
+  "certified_results": {
+    "encoded_normalization_bound": "delta=(sqrt(b)-sqrt(a))/(sqrt(b)+sqrt(a))",
+    "finite_endpoint_bound": "P_CO(outside)>=0 and P_CO(outside)<=r00/(R-Zx)+delta+epsilon_CO",
+    "finite_budget": {
+      "delta": {
+        "exact": "1/1000",
+        "float": 0.001
+      },
+      "Zx_from_1193": {
+        "exact": "1726118103896327757715686428213275861058247825396308163360516479/143065660971439971514979501979910275072000000000000000000000000000000",
+        "float": 1.2065216014630588e-05
+      },
+      "tail_upper": {
+        "exact": "44345176546834702186370498554487545444736825256523811075509918450563/7148967753312257756354685882924980563947354380436509229591598708802500",
+        "float": 0.006203018124719993
+      },
+      "strict_margin": {
+        "exact": "11395195452702204216224605251974637005789310813063507063262545022109/14297935506624515512709371765849961127894708760873018459183197417605000",
+        "float": 0.0007969818752800071
+      },
+      "threshold": {
+        "exact": "7/1000",
+        "float": 0.007
+      }
+    },
+    "original_1112_encoding": {
+      "compressed_energy": "(37/2+2*sqrt(19))*I",
+      "energy_variance": "3/4",
+      "encoded_delta": "0",
+      "clock_running": true
+    }
+  },
+  "inputs_retained": [
+    "A predeclared isometric preparation and the same complete process, with a positive compressed regional energy measure and 0<aI<=E<=bI.",
+    "The same body, densitized stress integral, fixed operational slice, uniform valid family and common center fixed before the unknown input.",
+    "The 1193 stress/moment/trajectory conditions and positive energy first absolute moment.",
+    "An independently qualified original binary CO effect within operator norm epsilon_CO of the normalized encoded measure.",
+    "Source, apparatus, complete resource, internal-clock and postmeasurement implementation identities remain to be proved."
+  ],
+  "certification_limits": [
+    "No new physical localization POVM is claimed; Terno/Moretti normalization and old filtering boundaries are reused.",
+    "The normalized-source reference state is a mathematical reweighting, generally nonlinear, not a deterministic channel or diamond comparison.",
+    "Binary record/reference statistics do not certify material poststates or all future operations.",
+    "Positive total energy does not imply positive regional energy; code normalization does not authorize a local detector.",
+    "Scalar compressed device energy does not identify curved coordinate stress energy with H_D, nor make a physical H_D filter nondisturbing.",
+    "The old clock compression and the numerical endpoint budget are not asserted to have a single implemented gravitational realization.",
+    "No new cognitive axiom, empirical calibration, Einstein dynamics or dark-sector identification."
+  ],
+  "review_independence": "Internal non-blind independent implementation: binomial clock spectrum, fixed noncommuting effects/reference states, analytic saturation and a coarser rational tail bound; separate scope audit. Root reran both checks. Not external peer review.",
+  "new_adopted_axioms": 0,
+  "new_empirical_calibration": 0,
+  "gr_hard_deliverables_completed": 0,
+  "files_sha256": {
+    "../research_note_1194.md": "c8aa0993b44899b478d83de5c3cfca2b047a248033ae40ab44374f4f3d7891ba",
+    "admission.md": "462b0f01cc413f57b936f5b5c026f53e65726c337f32a9d2e61044e2b50154b5",
+    "baseline.json": "fd62024765056866fba2f4f27320def2dd5ea5d1ffbdf50415a1ae5a41bc7a17",
+    "proof.md": "4483ad31b6c559e2d12454c63c434e28092e0a2e335ec7fe5dcb9a0ae268fb54",
+    "sources.md": "77796cd97d01885a12f0b8285b5e2ffdd735ee037209ea7d494c798c06126194",
+    "check.py": "1cd5cf2ef94c0931666321bc5f7bc7423e1dfa7657cefc1637d8c2af42484026",
+    "results.json": "367aec5ad566b6dfd3ff78ee97c55dd615f1cecba5347e7a9a0f3cc56962b6dc",
+    "NEXT.md": "97b6b8d609a0f02c42cc5923ac857933722080fbd333d909abc0d69aa4815b70",
+    "review.md": "16586ae6156ab0d0d0352f520c33fe685e1aceb373f7d58f71e32f5e00060e8d",
+    "reviewer_check.py": "2e65ca3821dda3b7c3a70d079a36da0254d344e44a1deffdd6b8d4156499d53b",
+    "review_checks.json": "16c59d7f738c554f18d3ce876197e5d31c0c873c31f931491f73ef061bc00c26",
+    "../_shared/goal.md": "8acafd3ed835d581a543de077e1e6ea6c120b6e78c7a1e271e749f263e422667"
+  },
+  "validation": {
+    "root_personally_executed": true,
+    "author_check": "PASS_WITH_SCOPE, 3 groups",
+    "reviewer_check": "PASS_WITH_SCOPE",
+    "old_acceptances_unchanged": 33,
+    "old_bindings_unchanged": 403,
+    "old_unique_scientific_files_unchanged": 347,
+    "blockers": 0
+  }
+}

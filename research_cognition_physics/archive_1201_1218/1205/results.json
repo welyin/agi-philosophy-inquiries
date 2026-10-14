@@ -1,0 +1,172 @@
+{
+  "schema": "fixed_preparation_autonomous_bridge_1205_v1",
+  "status": "AUTHOR_CANDIDATE_NOT_ACCEPTANCE",
+  "primitive_checks": {
+    "exhaustive_w1_to_w4_cases": 1670,
+    "maximum_boolean_count_over_w_squared": "18",
+    "reverse_restores_all_inputs_and_zero_ancillas": true,
+    "uniform_bound_is_analytic_not_inferred_from_tests": true
+  },
+  "fixed_program": {
+    "N": 100,
+    "word_width": 256,
+    "types": [
+      1728,
+      2391
+    ],
+    "dimensions": [
+      "9399690799043690121938015947926455391852712761214920",
+      "25275816084126394831643399421736368715529309287003959388080"
+    ],
+    "word_counts_each_pool": {
+      "add": 400,
+      "and": 9058,
+      "div": 400,
+      "eq": 4519,
+      "lt": 9048,
+      "mul": 400,
+      "mux": 25526,
+      "notbit": 4529,
+      "or": 210,
+      "sub": 9038
+    },
+    "actual_word_count_two_pools": 126256,
+    "word_operation_bound": 278276,
+    "boolean_output_bound": 4668696559616,
+    "reversible_gate_bound": 14006089679648,
+    "padded_program_slots": 20000000000000,
+    "working_bit_bound": 10000000000000,
+    "packed_table_bits": 880889,
+    "unpacked_constant_words_bits_upper": 10000000,
+    "uniform_seed_bits": 3900,
+    "fixed_tags_extra_bits": 3,
+    "material_four_level_units": 1000,
+    "pointer_dimension": 4,
+    "program_hardware_description_bits_upper": 5120000000000000,
+    "all_seed_garbage_failure_stock_and_reference_kept": true,
+    "test_cases": [
+      {
+        "window": 0,
+        "success": 0,
+        "rank": "0"
+      },
+      {
+        "window": 0,
+        "success": 1,
+        "rank": "0"
+      },
+      {
+        "window": 0,
+        "success": 1,
+        "rank": "9399690799043690121938015947926455391852712761214919"
+      },
+      {
+        "window": 0,
+        "success": 1,
+        "rank": "4699845399521845060969007973963227695926356380607460"
+      },
+      {
+        "window": 1,
+        "success": 0,
+        "rank": "0"
+      },
+      {
+        "window": 1,
+        "success": 1,
+        "rank": "0"
+      },
+      {
+        "window": 1,
+        "success": 1,
+        "rank": "25275816084126394831643399421736368715529309287003959388079"
+      },
+      {
+        "window": 1,
+        "success": 1,
+        "rank": "12637908042063197415821699710868184357764654643501979694040"
+      }
+    ],
+    "forward_reverse_same_H_menus": [
+      {
+        "window_tags": [
+          0,
+          1
+        ],
+        "word_count": 126256,
+        "same_readonly_label_controlled_program": true
+      },
+      {
+        "window_tags": [
+          1,
+          0
+        ],
+        "word_count": 126256,
+        "same_readonly_label_controlled_program": true
+      }
+    ],
+    "worst_joint_success_probability_lower": ".998",
+    "recorded_initial_resources_are_inputs": true
+  },
+  "normal_clock": {
+    "M": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "sigma": "1/10000000000000000000000000000000000000000000",
+    "common_T": 60000000000606,
+    "force_bound": "188571428571588",
+    "epsilon_clock_upper": "1.131428571440956E-15",
+    "epsilon_clock_contract": "1/250000000000000",
+    "endpoint_total_interaction_upper": "1.8857142857158801E-29",
+    "conditional_joint_trace_error_upper": "8.016032064128289E-15",
+    "conditional_clock_entropy_upper": "4.80961923849253E-16",
+    "clock_mean_energy_upper": "2e112 + 1.25e-27",
+    "clock_energy_variance_upper": "2e86",
+    "success_conditioned_reference_clock_not_reset": true,
+    "same_conserved_success_event_at_both_contact_sections": true,
+    "conserved_seed_event_is_not_a_physical_oracle_gate": true,
+    "computed_flag_used_for_gates_and_terminal_data_has_separate_error": true,
+    "shape_error_not_used_in_clock_entropy": true
+  },
+  "thermodynamic_transport": {
+    "finite_entropy_and_energy_extra_upper": "1.038194400000000001E-12",
+    "two_reference_clausius_defect_upper": "0.000502765846038194400000000001",
+    "exact_initial_independence_not_assumed_after_real_preparation": true,
+    "whole_preparation_energy_not_mislabeled_heat": true
+  },
+  "native_flow_transport": {
+    "t600_lambda1": {
+      "Q_dir_center": "2362071138927222091661097815615955590555874479927573475532838053490151153640608383/32243614030330385554208857679845583390956102291908006025832209692920738000000000000",
+      "new_actual_energy_radius_upper": "0.000109400100019692000000000001",
+      "Q_dir_lower": "0.073147621792914157570810981619",
+      "rectangular_shape_error": "1/10000",
+      "pointer_probability_error_upper": "0.000100000100009000000000000001",
+      "finite_proxy_positive_margin": "0.062207621792914157570810981619",
+      "proxy_margin_requires_extra_success_flag_readout_contract": true,
+      "old_K_systematic_budget_does_not_bound_success_flag_instrument": true,
+      "full_old_statistical_protocol_not_automatically_certified": true,
+      "actual_B_energy_still_prediction_not_a_new_pointer": true
+    },
+    "t300_lambda1": {
+      "Q_dir_center": "11133091526709664883018839728968257308820136859232434753348294237137050501200040499/403045175379129819427610720998069792386951278648850075322902621161509225000000000000",
+      "new_actual_energy_radius_upper": "0.000054700100019692000000000001",
+      "Q_dir_lower": "0.027567740774597337870349971667",
+      "rectangular_shape_error": "1/20000",
+      "pointer_probability_error_upper": "0.000050000100009000000000000001",
+      "finite_proxy_positive_margin": "0.016627740774597337870349971667",
+      "proxy_margin_requires_extra_success_flag_readout_contract": true,
+      "old_K_systematic_budget_does_not_bound_success_flag_instrument": true,
+      "full_old_statistical_protocol_not_automatically_certified": true,
+      "actual_B_energy_still_prediction_not_a_new_pointer": true
+    }
+  },
+  "source_sha256": {
+    "1202/results.json": "ffd1cb78a71db45caa1c1c2ec5f4a39cce94a87478f95976b4fe1bdbb59bad60",
+    "1203/results.json": "290b56c957f6522b37bcd68e4fbaeaff21d4ee7cde7fb3e0cb95275e29720d52",
+    "1204/results.json": "61a57b8e936af8c40ade3b1dbe8d5f3614432d85af61388ec821d07db43897e9"
+  },
+  "not_claimed": [
+    "native QQ generates Boolean/inventory gates",
+    "free pure seeds, blanks, stocks, program or clock",
+    "universal controller or minimum resource cost",
+    "physical realization or stage completion",
+    "3D positioning, area entropy, Unruh or GR"
+  ]
+}

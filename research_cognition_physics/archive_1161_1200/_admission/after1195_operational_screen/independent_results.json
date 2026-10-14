@@ -1,0 +1,294 @@
+{
+  "status": "PASS_WITH_SCOPE",
+  "audit_type": "Unnumbered independent exact matrix audit; not a new scientific round",
+  "implementation": "Python standard library; no numpy and no import or execution of author check.py",
+  "hamiltonian_terms": [
+    [
+      [
+        10,
+        1,
+        0
+      ],
+      [
+        1,
+        11,
+        1
+      ],
+      [
+        0,
+        1,
+        14
+      ]
+    ],
+    [
+      [
+        10,
+        1,
+        0
+      ],
+      [
+        1,
+        9,
+        1
+      ],
+      [
+        0,
+        1,
+        6
+      ]
+    ],
+    [
+      [
+        10,
+        -2,
+        0
+      ],
+      [
+        -2,
+        11,
+        -2
+      ],
+      [
+        0,
+        -2,
+        12
+      ]
+    ]
+  ],
+  "strict_positivity_sylvester_leading_minors": [
+    [
+      10,
+      109,
+      1516
+    ],
+    [
+      10,
+      89,
+      524
+    ],
+    [
+      10,
+      106,
+      1232
+    ]
+  ],
+  "strict_positive_gershgorin_bounds": [
+    9,
+    5,
+    7
+  ],
+  "linear_independence_diagonal_minor": 40,
+  "H": [
+    [
+      30,
+      0,
+      0
+    ],
+    [
+      0,
+      31,
+      0
+    ],
+    [
+      0,
+      0,
+      32
+    ]
+  ],
+  "source_weights": [
+    3,
+    1,
+    2
+  ],
+  "J": [
+    [
+      60,
+      0,
+      0
+    ],
+    [
+      0,
+      64,
+      0
+    ],
+    [
+      0,
+      0,
+      72
+    ]
+  ],
+  "pair_commutators": [
+    [
+      [
+        0,
+        -2,
+        0
+      ],
+      [
+        2,
+        0,
+        -6
+      ],
+      [
+        0,
+        6,
+        0
+      ]
+    ],
+    [
+      [
+        0,
+        3,
+        0
+      ],
+      [
+        -3,
+        0,
+        7
+      ],
+      [
+        0,
+        -7,
+        0
+      ]
+    ],
+    [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        1,
+        0,
+        -5
+      ],
+      [
+        0,
+        5,
+        0
+      ]
+    ]
+  ],
+  "pair_commutator_frobenius_squared": [
+    80,
+    116,
+    52
+  ],
+  "pair_commutator_rank": 2,
+  "pair_commutator_zero_combination": [
+    -2,
+    -1,
+    1
+  ],
+  "actual_exchange_commutators": [
+    [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        1,
+        0,
+        -1
+      ],
+      [
+        0,
+        1,
+        0
+      ]
+    ],
+    [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        1,
+        0,
+        -1
+      ],
+      [
+        0,
+        1,
+        0
+      ]
+    ],
+    [
+      [
+        0,
+        2,
+        0
+      ],
+      [
+        -2,
+        0,
+        2
+      ],
+      [
+        0,
+        -2,
+        0
+      ]
+    ]
+  ],
+  "actual_exchange_frobenius_squared": [
+    4,
+    4,
+    16
+  ],
+  "normal_qutrit_witness_current_expectations": [
+    1,
+    1,
+    -2
+  ],
+  "weight_map_rank": 1,
+  "weight_kernel_dimension": 2,
+  "weight_kernel_basis": [
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      -1,
+      0
+    ]
+  ],
+  "kernel_equation": "g1 + g2 - 2*g3 = 0",
+  "source_eigenvalues": [
+    60,
+    64,
+    72
+  ],
+  "source_spectral_second_difference": 4,
+  "source_commutator_squared": 0,
+  "nonaffine_identity": "J = 2*H + 2*(H - 30*I)^2",
+  "author_result_fields_independently_matched": [
+    "H",
+    "J",
+    "actual_exchange_frobenius_squared",
+    "hamiltonian_terms",
+    "kernel_equation",
+    "pair_commutator_frobenius_squared",
+    "source_commutator_squared",
+    "source_spectral_second_difference",
+    "source_weights",
+    "strict_positive_gershgorin_bounds",
+    "term_span_rank",
+    "weight_kernel_dimension",
+    "weight_map_rank"
+  ],
+  "scope": {
+    "same_qutrit_not_three_spatial_subsystems": true,
+    "positive_linear_source_class_counterexample_only": true,
+    "physical_monopole_not_constructed": true,
+    "1047_TT_is_not_total_monopole_counterexample": true,
+    "Lloyd_assessment_is_literature_admission_only": true,
+    "new_axioms": 0,
+    "new_numbered_round": false
+  }
+}

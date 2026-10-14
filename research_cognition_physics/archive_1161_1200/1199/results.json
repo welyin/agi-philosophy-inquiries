@@ -1,0 +1,75 @@
+{
+  "schema": "finite_l_type_complete_energy_source_v1",
+  "status": "PASS_EXACT_FINITE_ALGEBRA",
+  "box": [
+    4,
+    4,
+    4
+  ],
+  "qudit_prime": 5,
+  "qudits": 384,
+  "full_hilbert_dimension": "5^384",
+  "constraint_generators": {
+    "scalar": 64,
+    "vector": 192
+  },
+  "constraint_ranks": {
+    "scalar": 63,
+    "vector": 189
+  },
+  "code_dimension": "5^132",
+  "integer_commutators_max_abs": {
+    "S_V": 0,
+    "R_V": 0,
+    "T_S": 0
+  },
+  "hamiltonian_rows_without_hc": {
+    "R": 384,
+    "T": 576
+  },
+  "nonidentity_cosets": {
+    "R": 768,
+    "T": 768
+  },
+  "normalized_code_trace_mean_Hg_per_g": "0",
+  "normalized_code_trace_mean_HJ_per_J": "0",
+  "variance_g_squared_coefficient": "3000",
+  "variance_J_squared_coefficient": "3000",
+  "mixed_covariance": "0",
+  "J_g_one_variance": "6000",
+  "J_g_one_error_strict_lower": "77",
+  "positive_shifted_finite_band": {
+    "J": "1",
+    "g": "1",
+    "U1": "2000",
+    "U2": "2000",
+    "dynamic_operator_norm_upper": "2880",
+    "constant_positive_shift": "2880",
+    "whole_code_energy_interval": [
+      "0",
+      "5760"
+    ],
+    "outside_code_energy_strict_lower": "6875",
+    "band_separation_strict_lower": "1115",
+    "qualifier": "The whole protected band is isolated by a chosen finite penalty; no variance bound is claimed for every narrower energy window."
+  },
+  "logical_noncommutation_witness": {
+    "R_row": 0,
+    "T_row": 3,
+    "pairing_mod_p": 4
+  },
+  "stencils_sha256": {
+    "S": "6ce9f6093815c44886ddf6613369dd66b54bc1ae6f79a3a7483576c013a836b7",
+    "V": "52c156f26909b88f29932eaf883d1424b123a73a0805bfb8cd035421404ce2d2",
+    "R": "40ee6f585e7118e645488f821c6c6142458c17aba1734585ef579632e933bc5b",
+    "T": "e365ef708a46471a699ba6e809dfea034fa3973ab8c799c47ae9c6b7ad677c19"
+  },
+  "check_groups": 2,
+  "scope": "Full finite L-type Hamiltonian on its invariant defect-free sector, with one finite-penalty isolated-band example; not a bound on every narrower low-energy window, graviton dispersion certificate, physical instrument, gravitational source dictionary or dark-sector identification.",
+  "physical_inputs": {
+    "lattice_and_rule": "Gu-Wen L type; cubic periodic box",
+    "couplings": "J,g positive; U1,U2 arbitrary positive",
+    "energy_unit": "J=g=1 only for the reported numerical threshold"
+  },
+  "claim": "Any self-adjoint source that is a function only of all S,V labels is scalar on the code. For any nonzero real a, its best additive-constant operator-norm approximation to a*H has error at least abs(a)*sqrt(variance)."
+}

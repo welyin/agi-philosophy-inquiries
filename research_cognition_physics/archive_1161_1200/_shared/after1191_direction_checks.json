@@ -1,0 +1,55 @@
+{
+  "schema": "gr_after1191_direction_audit_v1",
+  "date": "2026-10-14",
+  "status": "PASS",
+  "latest_accepted_round": 1191,
+  "accepted_round_count": 31,
+  "scientific_check_groups": 107,
+  "acceptance_hash_bindings": 379,
+  "unchanged_scientific_files": 325,
+  "unchanged_acceptances": 31,
+  "new_research_rounds": 0,
+  "new_adopted_axioms": 0,
+  "new_empirical_calibration": 0,
+  "gr_hard_deliverables_completed": 0,
+  "goal_sha256": "8acafd3ed835d581a543de077e1e6ea6c120b6e78c7a1e271e749f263e422667",
+  "audit_sha256": "79249842a1a94a48c496917d8eb439e2f27d92ac3bfd25fce0af7788f14be612",
+  "prior_progress_1191_sha256": "6d4d2f86eb0f9d231bd2de9f4b870a5ee20d6101684250d59576d6d40b454c30",
+  "review": "gr_operational_route_audit final file read: scope and deduplication passed; no new physics proof certified",
+  "navigation": [
+    {
+      "command": "research_cognition_physics/archive_1161_/_shared/update_navigation.py --apply",
+      "output": "{\"status\": \"APPLIED\", \"files\": 4, \"changed_files\": 4, \"frozen_closure_unchanged\": true, \"original_navigation_recoverable\": true, \"scientific_files_modified\": false}"
+    },
+    {
+      "command": "research_cognition_physics/archive_1161_/_shared/update_navigation.py --check",
+      "output": "{\"status\": \"CHECKED\", \"files\": 4, \"changed_files\": 0, \"frozen_closure_unchanged\": true, \"original_navigation_recoverable\": true, \"scientific_files_modified\": false}"
+    },
+    {
+      "command": "scripts/run_research_gr_active.py --verify-navigation",
+      "output": "{\"status\": \"PASS\", \"files\": 4, \"manifest_sha256\": \"1cace3437c140d45653371d139532983c343fb94d2a3c49432fd79a3d4b4f7cd\", \"original_navigation_recoverable\": true, \"closure_boundary_verified\": true}"
+    }
+  ],
+  "management_before_sha256": {
+    "research_cognition_physics/archive_1161_/README.md": "844899a7ea278332dceb619b18ff4b7d7c0ca1a9201f23c8dac7510e09ebe474",
+    "research_cognition_physics/archive_1161_/文件索引.md": "cd9d282c75d7f86119e656b1766f40e4944d2afa14b8a1f6a2d3d0562fcfed54",
+    "research_cognition_physics/archive_1161_/_shared/dependency_ledger.json": "916f405d590d3a5988c5b430337c178954aac125488630e3e838e83028961502",
+    "research_cognition_physics/archive_1161_/_shared/navigation_notice.md": "6c6e03d1869751a0c6dced6d8b9572814fcfed339fb705cb38a2c01d7e154a5e",
+    "research_cognition_physics/_migration/gr_active_1161/layer.json": "e06761692f76651fc269fc59c0ac6cb9e72e587657ebfc90d01f320e66057c0d",
+    "research_cognition_physics/README.md": "8f3c65f98c0a97fa8d35bee118587d6303ab974970fb2d067e1ef645b50dc6da",
+    "research_cognition_physics/research_direction.md": "b2acdf542361ae17bd332aa3f17c75e5b2db390c302a9aa2fd69df8b9a37fb4f",
+    "research_cognition_physics/RESEARCH_STATE.md": "fda8e270300f9e44c66f995a3985d849ad39cf0752d52ced25f1ae3ec3b2f9c6",
+    "research_cognition_physics/ROADMAP.md": "70e7a4976e5091418b8d5ad0b06bf19afd073e3c2b51476d8568c8519a4378a9"
+  },
+  "management_after_sha256": {
+    "research_cognition_physics/archive_1161_/README.md": "58080b6cc25280b64c4cadbbb3b550dafbc045b294f5d4ab084d49ad9532a970",
+    "research_cognition_physics/archive_1161_/文件索引.md": "7d8c9130508a98692a36218451e18d57645d053bdb5bdd4467c83d7dd8e8467d",
+    "research_cognition_physics/archive_1161_/_shared/dependency_ledger.json": "2113a6088166ee09842bc2d1f2a0206389131c2692560465011abdb2fb4c9202",
+    "research_cognition_physics/archive_1161_/_shared/navigation_notice.md": "300e26ebf09f17bbe20a70c820bfb83efb0f71efb338df310aa70df5f1d8c737",
+    "research_cognition_physics/_migration/gr_active_1161/layer.json": "1cace3437c140d45653371d139532983c343fb94d2a3c49432fd79a3d4b4f7cd",
+    "research_cognition_physics/README.md": "88f32b79072caef5b4dc7dc454682e193fbd0626f2ee5421796558cc4065c027",
+    "research_cognition_physics/research_direction.md": "3f85ad565a7a00bb783b4cdad59c829574cef909b3e3e159149bfd1873f0c4ae",
+    "research_cognition_physics/RESEARCH_STATE.md": "ad3634fde862426b58370a4f5d0823e9849a720d5d7cc414629a628786057ff6",
+    "research_cognition_physics/ROADMAP.md": "b2ebf5020794f0e0878615ecdacbc152194fc7dca56a30a9323440d99c7f2bff"
+  }
+}

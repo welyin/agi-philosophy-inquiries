@@ -1,0 +1,73 @@
+{
+  "status": "PASS_SCOPE_ONLY",
+  "kind": "classical_given_GR_initial_source_not_full_material_state",
+  "parameters": {
+    "a0": 1.0,
+    "A": 1.0,
+    "B": 1.0,
+    "m": 1.0,
+    "Mp": 1.0
+  },
+  "initial_H": 0.5773502691896257,
+  "initial_stress_common": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "constraint_residual": [
+    0.0,
+    0.0
+  ],
+  "analytic_differences": [
+    -4.0,
+    2.0,
+    2.0
+  ],
+  "directional_checks": [
+    {
+      "step": 1e-05,
+      "delta_pdot_Hddot_a3": [
+        -3.9999999999956732,
+        1.999999999993673,
+        1.9999999997938334
+      ],
+      "formula_residual": 2.0616663931605217e-10
+    },
+    {
+      "step": 1e-06,
+      "delta_pdot_Hddot_a3": [
+        -4.0000000000595115,
+        2.0000000000575113,
+        2.0000000000436335
+      ],
+      "formula_residual": 5.951150683358719e-11
+    }
+  ],
+  "source_conservation_residual": [
+    1.0222267476933666e-11,
+    1.198197097096454e-11
+  ],
+  "counts_as_numbered_round": false,
+  "quantum_parent_or_finite_instrument_certificate": false
+}

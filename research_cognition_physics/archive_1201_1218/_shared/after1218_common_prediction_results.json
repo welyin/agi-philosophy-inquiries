@@ -1,0 +1,96 @@
+{
+  "all_checks_passed": true,
+  "check_groups": 4,
+  "groups": {
+    "accepted_source_hashes": {
+      "pass": true
+    },
+    "factory_success": {
+      "candidates_each_pool": 10,
+      "computed_flag_not_used_as_conserved_event": true,
+      "joint_success_additional_strict_display_lower": "999086420209/1000000000000",
+      "joint_success_strict_lower": "499/500",
+      "pass": true,
+      "pool_dimensions": [
+        "9399690799043690121938015947926455391852712761214920",
+        "25275816084126394831643399421736368715529309287003959388080"
+      ],
+      "seed_bits_per_candidate": [
+        173,
+        195
+      ]
+    },
+    "native_factory_event_transport": {
+      "1203_parent_or_error_substituted_for_1205": false,
+      "S_conditional_heat_bounds_promoted_to_unconditional_heat": false,
+      "actual_1205_post_preparation_channel_unital_claimed": false,
+      "additional_preparation_or_readout_noise_included": false,
+      "finite_observation_confidence_claimed": false,
+      "new_hardware_or_permissions": false,
+      "pass": true,
+      "rows": [
+        {
+          "QQ_duration": 600,
+          "S_conditional_probability_lower_exact": "50618636281456251295106146905280608633216321806689371017859810568952319876050082317/93731436134681353355258307208853440089988669453220947749512237479420750000000000000",
+          "S_conditional_probability_strict_display_lower": "108007811/200000000",
+          "all_raw_trials_probability_lower_using_success_bound": "25258699504446669396257967305735023707974944581537996137912045473907207618148991076183/46865718067340676677629153604426720044994334726610473874756118739710375000000000000000",
+          "all_raw_trials_probability_strict_display_lower": "538958977/1000000000",
+          "clock_isometry_to_same_smooth_program_upper": "1/250000000000000",
+          "does_not_postselect_actual_trials": true,
+          "events_separately_certified": [
+            "A_excited",
+            "K_nonzero"
+          ],
+          "factory_parent": "1205 fixed H, M=10^112, common T=60000000000606",
+          "initial_and_final_success_projector": "same conserved original-label S; not computed P_ok",
+          "smooth_to_rectangle_isometry_upper": "1/10000",
+          "sum_probability_transport_upper": "25000000001/250000000000000",
+          "velocity_label": 1
+        },
+        {
+          "QQ_duration": 300,
+          "S_conditional_probability_lower_exact": "50623322853262985362773909820641051305220821240162032065247286180826290913550082317/93731436134681353355258307208853440089988669453220947749512237479420750000000000000",
+          "S_conditional_probability_strict_display_lower": "108017811/200000000",
+          "all_raw_trials_probability_lower_using_success_bound": "25261038103778229696024181000499884601305189798840854000558395804232319165861491076183/46865718067340676677629153604426720044994334726610473874756118739710375000000000000000",
+          "all_raw_trials_probability_strict_display_lower": "539008877/1000000000",
+          "clock_isometry_to_same_smooth_program_upper": "1/250000000000000",
+          "does_not_postselect_actual_trials": true,
+          "events_separately_certified": [
+            "A_excited",
+            "K_nonzero"
+          ],
+          "factory_parent": "1205 fixed H, M=10^112, common T=60000000000606",
+          "initial_and_final_success_projector": "same conserved original-label S; not computed P_ok",
+          "smooth_to_rectangle_isometry_upper": "1/20000",
+          "sum_probability_transport_upper": "12500000001/250000000000000",
+          "velocity_label": 2
+        }
+      ],
+      "universal_finite_time_third_law_claimed": false
+    },
+    "source_and_ideal_event": {
+      "cold_and_hot_port_exchange_has_same_joint_spectrum": true,
+      "dimension": 16,
+      "exact_joint_bottom_12_spectral_mass": "5062800942507009435618621146141491501045415608739505306731257467649126/9373143613468135335525830720885344008998866945322094774951223747942075",
+      "factory_inventory_and_source_R_retained": true,
+      "ideal_event_rank": 12,
+      "ideal_source": "independent cold and hot output marginals conditional on conserved S",
+      "not_exact_Gibbs_and_not_all_factory_faithful": true,
+      "pass": true
+    }
+  },
+  "schema": "after1218_existing_certificate_common_prediction_v1",
+  "source_sha256": {
+    "archive_1201_/1202/results.json": "ffd1cb78a71db45caa1c1c2ec5f4a39cce94a87478f95976b4fe1bdbb59bad60",
+    "archive_1201_/1203/results.json": "290b56c957f6522b37bcd68e4fbaeaff21d4ee7cde7fb3e0cb95275e29720d52",
+    "archive_1201_/1204/results.json": "61a57b8e936af8c40ade3b1dbe8d5f3614432d85af61388ec821d07db43897e9",
+    "archive_1201_/1205/acceptance.json": "ca7c9eb535f601cbc80a0725b8fc7676872cb3c9b82fe7ead4d7535c7e6b0a31",
+    "archive_1201_/1205/proof.md": "192e0a6256b618fccfbc1c1754056c1017481415bbd9eafce532f34f9f681872",
+    "archive_1201_/1205/results.json": "64970f3af93ed1fcfdedee3b4f1b710e9c77691b24fce11ce7204566392fd6b1",
+    "archive_1201_/1217/acceptance.json": "b38d7793afb35ca72ee194d36b5a83f89876bcb652f2dab8e79a7460ac33d389",
+    "archive_1201_/1217/proof.md": "9a47a425dce40bb35dfd94f9743d795447c0565bf019140ec01a991f533d5930",
+    "archive_1201_/1217/results.json": "a1c39c970f0890980664fccc78bc747bf5939e9d2f094dc9f1d47ff719a993ad",
+    "archive_1201_/_shared/after1218_common_prediction_check.py": "c41c4dcb85361bb3d3137214745c8e27e0812c79ecf007513220081183416edc"
+  },
+  "status": "SYNTHESIS_CHECK_PASS_NOT_NEW_ROUND_OR_ACCEPTANCE"
+}

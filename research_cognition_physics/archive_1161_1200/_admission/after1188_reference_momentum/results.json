@@ -1,0 +1,60 @@
+{
+  "status": "PASS_LOCAL_REFERENCE_MOMENTUM_AUDIT",
+  "numbered_round": null,
+  "groups": {
+    "chart_hessian_transport": {
+      "pass": true,
+      "metrics": 2,
+      "shapes": 2,
+      "cuts_per_shape": 3,
+      "clock_gradient": "7/3",
+      "actual_reference_jet_fixed": true,
+      "cases": [
+        {
+          "metric": 0,
+          "shape": "rank_one",
+          "bare_second_difference": "9/70",
+          "omitted_terms_second_difference": "-9/70",
+          "full_reference_second_difference": "0"
+        },
+        {
+          "metric": 0,
+          "shape": "traceless",
+          "bare_second_difference": "2/5",
+          "omitted_terms_second_difference": "-2/5",
+          "full_reference_second_difference": "0"
+        },
+        {
+          "metric": 1,
+          "shape": "rank_one",
+          "bare_second_difference": "9/70",
+          "omitted_terms_second_difference": "-9/70",
+          "full_reference_second_difference": "0"
+        },
+        {
+          "metric": 1,
+          "shape": "traceless",
+          "bare_second_difference": "3/10",
+          "omitted_terms_second_difference": "-3/10",
+          "full_reference_second_difference": "0"
+        }
+      ]
+    },
+    "metric_velocity_dictionary": {
+      "pass": true,
+      "exact_directional_derivatives": 36,
+      "reference_momentum_invariant": true,
+      "clock_adapted_apparent_a": "5/7",
+      "clock_adapted_apparent_lambda_L": "40/49",
+      "clock_adapted_apparent_lambda_H": "40/71",
+      "curvature_coefficient_in_EH_comparison": "1"
+    }
+  },
+  "limits": [
+    "Local jet and action/metric-velocity identities only; no complete Hamiltonian constraint cancellation.",
+    "EH is an explicit comparison input, not generated.",
+    "No arbitrary-reference quantum implementation, stability, empirical calibration or full-axiom countermodel.",
+    "1188 remains valid in its declared pure-metric/non-mixing class.",
+    "No new numbered round, axiom, scientific calibration or GR deliverable."
+  ]
+}

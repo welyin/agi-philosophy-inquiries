@@ -1,0 +1,42 @@
+{
+  "schema": "unnumbered_source_contract_root_checks_v1",
+  "date": "2026-10-14",
+  "status": "PASS_CONDITIONAL_ONLY",
+  "actual_root_runs": {
+    "check.py": {
+      "exit_code": 0,
+      "stdout": "READ_ONLY_MATCH; conditional xi radius < 0.064; actual material existence not certified",
+      "stderr": ""
+    },
+    "reviewer_check.py": {
+      "exit_code": 0,
+      "stdout": "READ_ONLY_MATCH: conditional source coefficient and COM scope reviewed",
+      "stderr": ""
+    }
+  },
+  "accepted_rounds_unchanged": 25,
+  "check_groups_unchanged": 88,
+  "frozen_bindings_verified": 315,
+  "old_parent_assets_verified": 13,
+  "goal_unchanged": true,
+  "goal_status": "active",
+  "new_numbered_round": null,
+  "actual_material_exists_proved": false,
+  "GR_complete": false,
+  "local_links_checked": 28,
+  "navigation_verification": [
+    "{\"status\": \"CHECKED\", \"files\": 4, \"changed_files\": 0, \"frozen_closure_unchanged\": true, \"original_navigation_recoverable\": true, \"scientific_files_modified\": false}",
+    "{\"status\": \"PASS\", \"files\": 4, \"manifest_sha256\": \"025aff40e515346ca3c69f652b92c51c8cbe2c0846be5576207c230e22090d2a\", \"original_navigation_recoverable\": true, \"closure_boundary_verified\": true}"
+  ],
+  "package_sha256": {
+    "check.py": "ff1d27660cbb816cf7f09a66fcc9a02c0d5131a0f179b8a2e9e81ddaf7e492cb",
+    "coefficient_bound.md": "e114b50f7d676b62934b832efbede4c38df8df46d110fe36ee9deef419654092",
+    "com_scope.md": "e6cf537602e8c3fb9f2ea9a47790dc3a33ef668642ad0d88efa5d43f23684849",
+    "README.md": "9db650bcffec249a8374db1e5fac6b57131fbf64cdc4941eb171678d17ee69de",
+    "results.json": "efd585b25f1d143eea654f5e5b97c0e68c8dfb52aa4752a92e5da631b5b87691",
+    "review.md": "6403a461f92d090f2400fe7fe9d1e964e711590c242565c39194d33d0414b90f",
+    "reviewer_check.py": "d8cd20e0d3150ecc1f1892bebeb0a177bb987a06b6b344ade50c2a5adefa9f25",
+    "review_checks.json": "628265a85b3fa22e4de649b15f9056e90bdd7736b8965dcbaeab1ee53ee48403",
+    "scope_decision.md": "d4bff141a904b4deb93041fba5515af9d12b3cd971f00462ac382d290b3007c2"
+  }
+}

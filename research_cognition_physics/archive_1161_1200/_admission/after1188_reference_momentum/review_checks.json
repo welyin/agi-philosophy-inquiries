@@ -1,0 +1,50 @@
+{
+  "status": "PASS_INTERNAL_NONBLIND_RANGE_REVIEW",
+  "numbered_round": null,
+  "method": "Independent ambient embedding/pullback and hdot variations; exact Fraction arithmetic; no author imports",
+  "groups": {
+    "fixed_reference_projection": {
+      "pass": true,
+      "metric_determinant": "1",
+      "clock_gradient": "5/4",
+      "shape_cases": [
+        {
+          "shape": "rank_one",
+          "bare_density_second_difference": "11/125",
+          "mixed_density_second_difference": "-11/125",
+          "full_density_second_difference": "0",
+          "reference_partial_momentum_change": "0"
+        },
+        {
+          "shape": "trace_free",
+          "bare_density_second_difference": "6/25",
+          "mixed_density_second_difference": "-6/25",
+          "full_density_second_difference": "0",
+          "reference_partial_momentum_change": "0"
+        }
+      ]
+    },
+    "partial_metric_velocity": {
+      "pass": true,
+      "independent_hdot_direction_checks": 36,
+      "lapse": "3/2",
+      "same_reference_partial_momentum": true
+    },
+    "published_coefficient_crosscheck": {
+      "pass": true,
+      "bare_second_differences": [
+        "9/70",
+        "2/5"
+      ],
+      "clock_adapted_a": "5/7",
+      "clock_adapted_lambda_L": "40/49",
+      "clock_adapted_lambda_H": "40/71"
+    }
+  },
+  "not_certified": [
+    "On-shell EOM or Noether conservation for these local jets",
+    "Full canonical reduction or Hamiltonian constraint cancellation",
+    "Original quantum-process implementation, stability or empirical calibration",
+    "Generated EH/GR, new axiom, dark matter or dark energy identification"
+  ]
+}

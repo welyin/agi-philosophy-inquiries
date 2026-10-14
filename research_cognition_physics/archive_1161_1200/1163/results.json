@@ -1,0 +1,516 @@
+{
+  "schema": "round1163_actual_three_readouts_v1",
+  "status": "PASS",
+  "date": "2026-10-13",
+  "check_groups": 4,
+  "code_sha256": "3670ab58e54e96e59eb8bd30c91ee1065d0fa3af745176a3cf93e44737818e69",
+  "reuse_code_sha256": "52edf7a1dfc530996daa88ee3715efa936f7c5845eefe067124a544688621119",
+  "inherited_1160_replay": "matches frozen results",
+  "adopted_new_axioms": 0,
+  "readouts": {
+    "exact_negative_zz": "36/125",
+    "full_clock_residual": 7.979426292750752e-16,
+    "massive_hessian_residual": 5.052411237994025e-08,
+    "signal_form_residual": 4.440892098500626e-16,
+    "position_velocity_residual": 3.296849988127246e-11,
+    "rows": [
+      {
+        "source_label": 0,
+        "N": 1.0,
+        "gamma_inverse": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "K": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "S_plus": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "S_minus": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "massive_and_plus_speed_bound": 1.0,
+        "minus_signal_speed_bound": 1.0
+      },
+      {
+        "source_label": 1,
+        "N": 0.8,
+        "gamma_inverse": [
+          [
+            0.9,
+            0.05,
+            0.0
+          ],
+          [
+            0.05,
+            0.6,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.8
+          ]
+        ],
+        "K": [
+          [
+            0.7200000000000001,
+            0.04000000000000001,
+            0.0
+          ],
+          [
+            0.04000000000000001,
+            0.48,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.6400000000000001
+          ]
+        ],
+        "S_plus": [
+          [
+            0.5760000000000002,
+            0.03200000000000001,
+            0.0
+          ],
+          [
+            0.03200000000000001,
+            0.38400000000000006,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.5120000000000001
+          ]
+        ],
+        "S_minus": [
+          [
+            0.9,
+            0.05,
+            0.0
+          ],
+          [
+            0.05,
+            0.6,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.8
+          ]
+        ],
+        "massive_and_plus_speed_bound": 0.7623600757682607,
+        "minus_signal_speed_bound": 0.9529500947103259
+      }
+    ]
+  },
+  "complete_process": {
+    "original_spectrum_residual": 2.282877719951748e-13,
+    "full_operator_checks": {
+      "gram": 6.069077233100083e-15,
+      "total_energy": 2.5662594785440226e-14,
+      "original_HD": 1.9138655689586408e-14,
+      "mel_choi": 1.2662364315166974e-15,
+      "current_balance": 0.0
+    },
+    "rows": [
+      {
+        "candidate": "plus",
+        "signal_center": 1.0,
+        "program": 0,
+        "initial_R": [
+          0.49999999999999944,
+          0.9999999999999949
+        ],
+        "final_R": [
+          0.5043509964066702,
+          0.8970254709324279
+        ],
+        "R_effect_offdiag_abs": 9.321150108569413e-16,
+        "source_exchange_energy": [
+          0.023391130037047576,
+          -0.6069675841635255
+        ],
+        "initial_complete_energy": [
+          39.314110463767655,
+          36.36247290962819
+        ],
+        "current_operator_norm": 7.924227651835172
+      },
+      {
+        "candidate": "plus",
+        "signal_center": 1.0,
+        "program": 1,
+        "initial_R": [
+          0.4999999999999992,
+          0.49999999999999745
+        ],
+        "final_R": [
+          0.5043509964066702,
+          0.49999999999999734
+        ],
+        "R_effect_offdiag_abs": 2.26052449550471e-16,
+        "source_exchange_energy": [
+          0.02339113003704753,
+          1.2020431966725706e-17
+        ],
+        "initial_complete_energy": [
+          39.31411046376764,
+          39.314110463767456
+        ],
+        "current_operator_norm": 7.924227651835172
+      },
+      {
+        "candidate": "plus",
+        "signal_center": 1.0,
+        "program": 2,
+        "initial_R": [
+          0.49999999999999944,
+          0.9999999999999949
+        ],
+        "final_R": [
+          0.5043509964066702,
+          0.8970254709324279
+        ],
+        "R_effect_offdiag_abs": 9.321150108569413e-16,
+        "source_exchange_energy": [
+          0.023391130037047576,
+          -0.6069675841635255
+        ],
+        "initial_complete_energy": [
+          39.314110463767655,
+          36.36247290962819
+        ],
+        "current_operator_norm": 7.924227651835172
+      },
+      {
+        "candidate": "plus",
+        "signal_center": 2.0,
+        "program": 0,
+        "initial_R": [
+          0.49999999999999944,
+          0.9999999999999949
+        ],
+        "final_R": [
+          0.4865539325443714,
+          0.904353138039479
+        ],
+        "R_effect_offdiag_abs": 9.49427398581565e-16,
+        "source_exchange_energy": [
+          -0.0847521485411582,
+          -0.5867814215419419
+        ],
+        "initial_complete_energy": [
+          40.193583782987815,
+          37.12141954806858
+        ],
+        "current_operator_norm": 8.265128585008375
+      },
+      {
+        "candidate": "plus",
+        "signal_center": 2.0,
+        "program": 1,
+        "initial_R": [
+          0.4999999999999992,
+          0.49999999999999745
+        ],
+        "final_R": [
+          0.4865539325443715,
+          0.49999999999999745
+        ],
+        "R_effect_offdiag_abs": 1.8911956510549625e-16,
+        "source_exchange_energy": [
+          -0.08475214854115826,
+          6.376226617323301e-19
+        ],
+        "initial_complete_energy": [
+          40.19358378298783,
+          40.19358378298768
+        ],
+        "current_operator_norm": 8.265128585008375
+      },
+      {
+        "candidate": "plus",
+        "signal_center": 2.0,
+        "program": 2,
+        "initial_R": [
+          0.49999999999999944,
+          0.9999999999999949
+        ],
+        "final_R": [
+          0.4865539325443714,
+          0.904353138039479
+        ],
+        "R_effect_offdiag_abs": 9.49427398581565e-16,
+        "source_exchange_energy": [
+          -0.0847521485411582,
+          -0.5867814215419419
+        ],
+        "initial_complete_energy": [
+          40.193583782987815,
+          37.12141954806858
+        ],
+        "current_operator_norm": 8.265128585008375
+      },
+      {
+        "candidate": "minus",
+        "signal_center": 1.0,
+        "program": 0,
+        "initial_R": [
+          0.49999999999999944,
+          0.9999999999999949
+        ],
+        "final_R": [
+          0.5192214272848681,
+          0.8911823836710588
+        ],
+        "R_effect_offdiag_abs": 8.629028270333427e-16,
+        "source_exchange_energy": [
+          0.10741373939965475,
+          -0.620805230863898
+        ],
+        "initial_complete_energy": [
+          39.408978793572686,
+          36.55220956923827
+        ],
+        "current_operator_norm": 7.655899494535204
+      },
+      {
+        "candidate": "minus",
+        "signal_center": 1.0,
+        "program": 1,
+        "initial_R": [
+          0.4999999999999992,
+          0.49999999999999745
+        ],
+        "final_R": [
+          0.5192214272848681,
+          0.49999999999999756
+        ],
+        "R_effect_offdiag_abs": 2.4580997703012634e-16,
+        "source_exchange_energy": [
+          0.10741373939965472,
+          8.756669915082669e-18
+        ],
+        "initial_complete_energy": [
+          39.40897879357268,
+          39.40897879357251
+        ],
+        "current_operator_norm": 7.655899494535204
+      },
+      {
+        "candidate": "minus",
+        "signal_center": 1.0,
+        "program": 2,
+        "initial_R": [
+          0.49999999999999944,
+          0.9999999999999949
+        ],
+        "final_R": [
+          0.5192214272848681,
+          0.8911823836710588
+        ],
+        "R_effect_offdiag_abs": 8.629028270333427e-16,
+        "source_exchange_energy": [
+          0.10741373939965475,
+          -0.620805230863898
+        ],
+        "initial_complete_energy": [
+          39.408978793572686,
+          36.55220956923827
+        ],
+        "current_operator_norm": 7.655899494535204
+      },
+      {
+        "candidate": "minus",
+        "signal_center": 2.0,
+        "program": 0,
+        "initial_R": [
+          0.49999999999999944,
+          0.9999999999999949
+        ],
+        "final_R": [
+          0.5151285121944622,
+          0.8927682186060366
+        ],
+        "R_effect_offdiag_abs": 8.785236615559901e-16,
+        "source_exchange_energy": [
+          0.08483509350790257,
+          -0.6172494672257084
+        ],
+        "initial_complete_energy": [
+          40.383320442597935,
+          37.50089286728879
+        ],
+        "current_operator_norm": 7.728472270408418
+      },
+      {
+        "candidate": "minus",
+        "signal_center": 2.0,
+        "program": 1,
+        "initial_R": [
+          0.4999999999999992,
+          0.49999999999999745
+        ],
+        "final_R": [
+          0.5151285121944622,
+          0.49999999999999745
+        ],
+        "R_effect_offdiag_abs": 2.398109018972374e-16,
+        "source_exchange_energy": [
+          0.08483509350790262,
+          2.6894934216146525e-19
+        ],
+        "initial_complete_energy": [
+          40.38332044259795,
+          40.38332044259778
+        ],
+        "current_operator_norm": 7.728472270408418
+      },
+      {
+        "candidate": "minus",
+        "signal_center": 2.0,
+        "program": 2,
+        "initial_R": [
+          0.49999999999999944,
+          0.9999999999999949
+        ],
+        "final_R": [
+          0.5151285121944622,
+          0.8927682186060366
+        ],
+        "R_effect_offdiag_abs": 8.785236615559901e-16,
+        "source_exchange_energy": [
+          0.08483509350790257,
+          -0.6172494672257084
+        ],
+        "initial_complete_energy": [
+          40.383320442597935,
+          37.50089286728879
+        ],
+        "current_operator_norm": 7.728472270408418
+      }
+    ],
+    "feedback_contrasts": [
+      {
+        "candidate": "plus",
+        "program": 0,
+        "Q_column": 1,
+        "R_response_contrast": 0.007327667107051128
+      },
+      {
+        "candidate": "minus",
+        "program": 0,
+        "Q_column": 1,
+        "R_response_contrast": 0.00158583493497777
+      }
+    ],
+    "complete_positive_lower_bound": 33.374238309665074
+  },
+  "controlled_domain": {
+    "momentum_halfwidth_ball": 0.0001,
+    "time": 0.5,
+    "each_experiment_probability_error": 0.0001,
+    "contrast_error": 0.0002,
+    "certified_positive_contrast_margins": [
+      0.007127667107051128,
+      0.00138583493497777
+    ],
+    "exact_massive_low_momentum_remainders": [
+      {
+        "source_label": 0,
+        "actual_remainder": 0.0003832025076992915,
+        "bound": 0.0003893518518518518
+      },
+      {
+        "source_label": 1,
+        "actual_remainder": 0.00017870514378484983,
+        "bound": 0.00018089259259259263
+      }
+    ],
+    "packet": "normalized product cosines, halfwidth delta/sqrt(3), continuous H1",
+    "locality_or_signal_front_certified": false
+  },
+  "weakenings": {
+    "rest_scalar_potential_amplitude": 0.02,
+    "extra_force_at_origin": -0.02,
+    "force_derivative_residual": 3.333340548028474e-13,
+    "clock_gap_and_momentum_hessian_changes": 0.0,
+    "quartic_hessian_at_zero": 0.0,
+    "finite_difference_hessian_sequence": [
+      7.407407407407409e-05,
+      7.407407407407408e-07,
+      7.407407407407408e-09
+    ],
+    "quartic_energy_at_declared_cutoff": 0.0002314814814814815,
+    "cutoff": 0.5,
+    "quartic_unitary_error_bound": 0.00011574074074074075,
+    "scope": "weakening witnesses, not complete countermodels to all cognitive axioms"
+  },
+  "claims": {
+    "common_principal_part_for_new_probe_menu": true,
+    "old_AB_common_geometry": false,
+    "old_V_realized_under_new_H": false,
+    "curvature_or_Einstein_dynamics": false
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "all_checks_passed": true,
+  "check_groups": 6,
+  "groups": {
+    "faithfulness_and_normalized_unital_defect": {
+      "exact_saturation": [
+        {
+          "failure_equals_lower_bound": "1/6",
+          "lambda": "1/24",
+          "normalized_unital_defect": "0",
+          "reset_mixture": "0"
+        },
+        {
+          "failure_equals_lower_bound": "2/15",
+          "lambda": "1/24",
+          "normalized_unital_defect": "2/15",
+          "reset_mixture": "1/5"
+        },
+        {
+          "failure_equals_lower_bound": "0",
+          "lambda": "1/24",
+          "normalized_unital_defect": "2/3",
+          "reset_mixture": "1"
+        }
+      ],
+      "full_dimension": 6,
+      "target_rank": 2
+    },
+    "first_hit_lift_with_complete_pointer": {
+      "TP_and_unital_integer_Gram_exact": true,
+      "auxiliary_dimension_including_record": 14,
+      "block_count": 2,
+      "block_length": 1,
+      "complete_auxiliary_entropy_diagnostic": 0.6753250153906718,
+      "full_energy_permutation_conserves_labels": true,
+      "ladder_L": 5,
+      "material_dimension": 9,
+      "nonthermal_diagonal_drift_exact": "4/9",
+      "record_event_before_after": [
+        "2/3",
+        "2/9"
+      ],
+      "unknown_SR_Gram_channel_residual": 7.585098789492016e-17
+    },
+    "full_material_Clausius_and_target_distinction": {
+      "Clausius_LHS": 0.18060736317910003,
+      "final_bath_relative_entropy": 0.07787372175026241,
+      "final_mutual_information": 0.005129025131761944,
+      "full_AB_unital": true,
+      "identity_residual": 5.551115123125783e-17,
+      "target_only_normalized_defect": 0.16666666666666666,
+      "total_entropy_increase": 0.09760461629707562
+    },
+    "native_independent_contact_bridge": {
+      "cold_min_index": 3,
+      "hot_min_index": 2,
+      "ideal_failure_lower_exact": "2524876747268972055030227259588348057078889786831643333143494970743642/9373143613468135335525830720885344008998866945322094774951223747942075",
+      "lambda_diagnostic": 0.022447793854712496,
+      "lambda_exact": "420812791211495342505037876598058009513148297805273888857249161790607/18746287226936270671051661441770688017997733890644189549902447495884150",
+      "rows": [
+        {
+          "QQ_duration": 600.0,
+          "TP_residual": 1.382028004259034e-14,
+          "actual_failure_lower_diagnostic": 0.2693342408252246,
+          "actual_failure_lower_exact": "2208944954369337615529698003067478294440457181698772102024139575750320896159282273464613/8201500661784618418585101880774676007874008577156832928082320779449315625000000000000000",
+          "epsilon_diagnostic": 0.00010937998957593443,
+          "epsilon_exact": "765659927031541/7000000000000000000",
+          "ideal_outputs": [
+            {
+              "ideal_failure_diagnostic": 0.6545108390138694,
+              "ideal_total_entropy_gain_diagnostic": 0.012740928237880311,
+              "orientation": "CH"
+            },
+            {
+              "ideal_failure_diagnostic": 0.6587291359989009,
+              "ideal_total_entropy_gain_diagnostic": 0.01270045175348411,
+              "orientation": "HC"
+            }
+          ],
+          "speed": 1,
+          "unital_residual": 1.293022862224819e-14
+        },
+        {
+          "QQ_duration": 300.0,
+          "TP_residual": 1.4298479027723162e-14,
+          "actual_failure_lower_diagnostic": 0.26935209640498226,
+          "actual_failure_lower_exact": "552272849229634098267343850481247953710970218090726767199636493999896017998340031668169/2050375165446154604646275470193669001968502144289208232020580194862328906250000000000000",
+          "epsilon_diagnostic": 5.966580643281886e-05,
+          "epsilon_exact": "104415161257433/1750000000000000000",
+          "ideal_outputs": [
+            {
+              "ideal_failure_diagnostic": 0.6273515615189964,
+              "ideal_total_entropy_gain_diagnostic": 0.015525545894462756,
+              "orientation": "CH"
+            },
+            {
+              "ideal_failure_diagnostic": 0.6859026948674544,
+              "ideal_total_entropy_gain_diagnostic": 0.015534227238538811,
+              "orientation": "HC"
+            }
+          ],
+          "speed": 2,
+          "unital_residual": 1.3428886735469257e-14
+        }
+      ],
+      "scope": "1203 arbitrary ABR, fixed independent C/K; not the correlated 1205 preparation section."
+    },
+    "positive_zero_negative_beta": [
+      {
+        "auxiliary_energy_change": 1.5892389348209943,
+        "beta": -1.2,
+        "material_trace_distance": 0.794619467410497,
+        "relative_entropy": 1.9070867217851932,
+        "uniform_upper": 0.976495448475105
+      },
+      {
+        "auxiliary_energy_change": -0.0,
+        "beta": 0.0,
+        "material_trace_distance": 0.0,
+        "relative_entropy": 0.0,
+        "uniform_upper": 0.0
+      },
+      {
+        "auxiliary_energy_change": -1.110643591783751,
+        "beta": 0.7,
+        "material_trace_distance": 0.5553217958918755,
+        "relative_entropy": 0.7774505142486257,
+        "uniform_upper": 0.6234783533726835
+      },
+      {
+        "auxiliary_energy_change": -1.901521773124959,
+        "beta": 2.0,
+        "material_trace_distance": 0.9507608865624796,
+        "relative_entropy": 3.8030435462499184,
+        "uniform_upper": 1.0
+      }
+    ],
+    "reset_and_pure_inventory_deletions": {
+      "1213_reset_normalized_unital_defect_exact": "3/4",
+      "exact_reset_target_probability": 1,
+      "pure_inventory_as_aux_target_reset_defect_exact": "3/4",
+      "pure_inventory_included_material_min_eigenvalue": 0,
+      "whole_material_SWAP_unital": true
+    }
+  },
+  "independent_code_sha256": "11357ac83e7ced1f35f9f922ed284f5348ab98e812aae7d8044fad0fff8ae0b7",
+  "not_certified": [
+    "No all-n classification is proved by finite examples.",
+    "Unital role is not derived from FUCP/CC or imposed on all work processes.",
+    "Negative beta remains in the mathematical Gibbs class.",
+    "The window references remain non-Gibbs; their initial relative-entropy defects remain.",
+    "All auxiliary budgets must be assessed jointly; channel composition alone does not add entropy-return budgets.",
+    "No new controller, preparation, physical area, temperature instrument, or universal third law is certified."
+  ],
+  "schema": "1214-independent-v1",
+  "source_sha256": {
+    "1202/results.json": "ffd1cb78a71db45caa1c1c2ec5f4a39cce94a87478f95976b4fe1bdbb59bad60",
+    "1203/proof.md": "c2c29a7805afc15a596086e6915f5216296a2e523175483881ab2313f7219428",
+    "1204/results.json": "61a57b8e936af8c40ade3b1dbe8d5f3614432d85af61388ec821d07db43897e9",
+    "1209/proof.md": "9c2eecc8d9a372996f3c317f65613ecbecfad54486fc4a5f23bcf72fa7897e47",
+    "1213/proof.md": "b7a8a2212d376d134705d1ce0c46059a36a5203562e4c4fc753335d7980ab010"
+  },
+  "status": "PASS"
+}

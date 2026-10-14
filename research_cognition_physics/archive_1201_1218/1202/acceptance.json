@@ -1,0 +1,68 @@
+{
+  "schema": "operational_thermodynamics_round_acceptance_v1",
+  "round": 1202,
+  "date": "2026-10-14",
+  "status": "ACCEPTED_WITH_SCOPE",
+  "check_groups": 2,
+  "scope": "固定100材料总能窗、1730位独立种子、保记录unrank及基态目标/已知能级库存的受控交换合同，成功参考严格平稳且关联保留；接原QQ的单/双源概率、完整平均能源及有限Clausius缺陷。未签原QQ实现SWAP、自主控制、精确Gibbs或几何身份。",
+  "certified": {
+    "N": 100,
+    "total_bare_energy_window": [
+      "39/2",
+      "41/2"
+    ],
+    "exact_shell_dimension": "9399690799043690121938015947926455391852712761214920",
+    "seed_bits": 1730,
+    "all_rejected_probability_upper": "2.11e-7",
+    "conditional_success_uniformity": true,
+    "target_initial_level": "e0, distinct from probe A center c",
+    "material_counts": {
+      "ground_targets": 100,
+      "known_energy_inventory": 400
+    },
+    "inventory_supplies_target_energy_exact": true,
+    "preparation_switch_net_work": 0,
+    "temporary_control_energy_and_clock_not_free": true,
+    "effective_beta_comparison": "6/5, not an input to the preparation rule",
+    "single_reference_trace_error_upper": ".01001",
+    "two_reference_initial_relative_entropy_upper": ".000912",
+    "two_reference_clausius_lower": "-.000912, initially independent probes and kept passive source records",
+    "native_joint_probability_entry_numerical_error_upper": "3e-10",
+    "native_correlation_prediction_TV_lower": ".00069502",
+    "correlation_experimental_resolution_certified": false
+  },
+  "inputs_retained": [
+    "uniform distinguishable seed labels or coherent seed with kept orthogonal record",
+    "pure known energy inventory and ground targets",
+    "finite reversible rank program",
+    "controlled same-material SWAP permission and bounded timed gate schedule",
+    "original QQ switch, timing and pointer contracts",
+    "actual spatial region and clock identity"
+  ],
+  "new_adopted_axioms": 0,
+  "new_empirical_calibration": 0,
+  "GR_hard_deliverables_completed": 0,
+  "stage_complete": false,
+  "limits": [
+    "unconditional success",
+    "prepared reference independent of inventory/records",
+    "autonomous thermalization or exact Gibbs state",
+    "free cooling from maximally mixed stock",
+    "full internal clock/controller construction",
+    "area entropy, Unruh or GR"
+  ],
+  "review": "Separate integer/rank and native-contact reconstruction, independent relative entropy/resource audit; root reran both. Candidate reviews retained as original review history; this acceptance gives adopted scope.",
+  "root_executed_both_codes": true,
+  "files_sha256": {
+    "check.py": "75e5c2835425595553388bae3914494f9c780f14e8c8d582434c2623dd4582bc",
+    "results.json": "ffd1cb78a71db45caa1c1c2ec5f4a39cce94a87478f95976b4fe1bdbb59bad60",
+    "proof.md": "02bade63d63e5289aab0728fcb2d1a73317db700a66acef412240b7620a808ff",
+    "independent_check.py": "6d7bfe2d1980363519f6146d1d0e5fbc360d0f615670ad0e76b01383f2c7f102",
+    "independent_results.json": "b615b92c30ca4af0ecf049f4c9be3bae5074a672279bfc320f9fef233e77b32a",
+    "independent_review.md": "c57c331285fa200128e5db07212983f7e9df913ec94b07e794b7413f4679486b",
+    "resource_review.md": "a7c15669dafd4c14a63244353d1971a9e99be8b95ad68eb7f7050fbcb689cafa",
+    "NEXT.md": "313921cd190111506c061e87e16336d4aa9c4fc9dbf3db4122655958dab8fecb",
+    "../research_note_1202.md": "55467358d875d3ef946a9d2632ad569461844d6739f3e932f300064ea23ff4ae",
+    "../_shared/goal.md": "5ebfd7cd14daec1d26010925774f510a78d0672cab518b77a03de454b8a377d7"
+  }
+}

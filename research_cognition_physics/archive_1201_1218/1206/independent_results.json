@@ -1,0 +1,378 @@
+{
+  "status": "independent exact algebra and scoped finite diagnostics; not an implementation certificate",
+  "all_checks_passed": true,
+  "method": "Python standard library only; no import of any author program",
+  "source_sha256": {
+    "1201/proof.md": "597e1d00457761355c133f1a11f92a7c0c34860464fa9f99b063cc94385c03a6",
+    "1204/proof.md": "9ccd911f0b13f1f2b52dcf9b1f344577dadffa285c720c60dbfcb521ca8f6151",
+    "1202/results.json": "ffd1cb78a71db45caa1c1c2ec5f4a39cce94a87478f95976b4fe1bdbb59bad60",
+    "_shared/reference_preparation_screen.md": "cfb33e9ef63559d8e6ffb827070b75c1746a048d31c807b9706984c98c01b2e5"
+  },
+  "independent_script_sha256": "1c80f4bbd00497a3dc01e4a5bbce49c61e6a1bc7aeb597f3c0691404179482ec",
+  "native_spectrum": {
+    "cubic_coefficients_low_to_high": [
+      -17,
+      -2095,
+      -31200,
+      32000
+    ],
+    "full_characteristic_coefficients_low_to_high": [
+      "17/32000",
+      "1039/16000",
+      "5821/6400",
+      "-79/40",
+      "1"
+    ],
+    "mod11_values_x0_to10": [
+      5,
+      8,
+      9,
+      3,
+      7,
+      5,
+      3,
+      7,
+      1,
+      2,
+      5
+    ],
+    "irreducible_cubic_over_Q_from_mod11": true,
+    "discriminant": 2736128576000000,
+    "discriminant_isqrt": 52308016,
+    "discriminant_not_square": true,
+    "galois_group": "S3 (irreducible cubic and nonsquare discriminant)",
+    "f_at_exact_center_energy_1": -1312,
+    "root_denominator": "10000000000000000000000000000000000000000000000000000000000000000000000",
+    "root_integer_boxes": [
+      [
+        "-540718953573974656050953242043173739776130487993907249639401818643928",
+        "-540718953573974656050953242043173739776130487993907249639401818643927"
+      ],
+      [
+        "-94603534653195818427477103439578723167949831590208672754358548130484",
+        "-94603534653195818427477103439578723167949831590208672754358548130483"
+      ],
+      [
+        "10000000000000000000000000000000000000000000000000000000000000000000000",
+        "10000000000000000000000000000000000000000000000000000000000000000000000"
+      ],
+      [
+        "10385322488227170474478430345482752462944080319584115922393760366774411",
+        "10385322488227170474478430345482752462944080319584115922393760366774412"
+      ]
+    ],
+    "root_midpoints": [
+      "-0.054071895357397465605095324204317",
+      "-0.0094603534653195818427477103439579",
+      "1",
+      "1.0385322488227170474478430345483"
+    ]
+  },
+  "fixed_n_resonance": {
+    "root_sum": "39/40",
+    "two_equation_determinant": "81/40",
+    "integer_energy_relation_without_fixed_n": [
+      40,
+      40,
+      -39,
+      40
+    ],
+    "relation_particle_number_change": 81,
+    "fixed_n_integer_resonance_lattice": "{0}",
+    "real_kernel_dimension": 2,
+    "invariance": "Every bare-energy-preserving unitary fixes the diagonal iid system marginal for every finite n.",
+    "not_claimed": "No claim that arbitrary purifying-reference correlations remain fixed.",
+    "purification_phase_witness_overlap": "1/4",
+    "purification_phase_witness_trace_distance_squared": "15/16"
+  },
+  "qq_full_product_stationarity": {
+    "assumptions": [
+      "g != 0",
+      "r and s individually stationary for nondegenerate h",
+      "full rank",
+      "initial product r tensor s",
+      "unchanged for every t"
+    ],
+    "q_star_nonzero_overlap_argument": "If outer eigenvector component v1=0, row1 forces v0=0 and row0 forces v3=0; contradiction.",
+    "qq_undirected_edge_count": 18,
+    "components": [
+      [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          3
+        ]
+      ]
+    ],
+    "log_product_constraint_rank": 6,
+    "log_product_constraint_nullspace_basis": [
+      [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "unique_normalized_full_rank_product": [
+      "I4/4",
+      "I4/4"
+    ],
+    "test_rational_population": [
+      "3/8",
+      "1/8",
+      "1/8",
+      "3/8"
+    ],
+    "test_self_product_violated_edges": 12,
+    "cold_reference_commutator": {
+      "preparation": "one material from each of two independent cold pools",
+      "entry": "absolute <00|[H_AB,r_C tensor r_C]|cc>",
+      "method": "spectral-projector cofactor divided by characteristic-polynomial derivative; independent rational interval roots",
+      "strict_lower": "0.0003202089318",
+      "strict_upper": "0.0003202089319",
+      "interval_lower_exact": "211722825877665211541669650722474427177708672435548510647963878355510998197573906287096378333784818038379336590153696400604683862548800000707682271404938645636080386924054473972280106427425611953492369591459/661202124092598001871352728241827693029110302462054083782949666487809479958167381059540581463143367616591954729306099092744126256869364743387809022185757180951282154198011012749653000517892861550548269110832000",
+      "interval_upper_exact": "626398893129187016395472339415604814135232758685054765230662361998557969928042215194237047449160501039112871629645487265165479044058212122193522339469849844123480371064642366679058563319671339649482360928/1956219302049106514412286178230259446831687285390692555570857001443214185387585551730042376277891420650872559167638277844088934930537203771678762439862781916882074549519744166997250674654045397439953943618375",
+      "finite_time_measurement_claimed": false
+    },
+    "excluded_claims": [
+      "not a finite-time zero-flow criterion",
+      "not a claim about correlated full-H Gibbs states",
+      "not arbitrary auxiliary or battery cycles"
+    ]
+  },
+  "near_resonance_diagnostics": {
+    "general_bound": "delta_n <= n*(e_max-e_min)/(binomial(n+3,3)-1), hence O(n^-2)",
+    "nearest_configuration_swap_commutator_norm": "delta_n exactly on the two-state swap block",
+    "scope": "No n-uniform positive gap. No lower bound on the iid-state change or physically available collision is implied.",
+    "samples": [
+      {
+        "n": 1,
+        "distinct_occupation_energies": 4,
+        "all_adjacent_interval_gaps_strictly_positive": true,
+        "minimum_gap_lower": "0.038532248822717047447843034548275",
+        "minimum_gap_upper": "0.038532248822717047447843034548276",
+        "minimum_gap_integer_bounds": [
+          "385322488227170474478430345482752462944080319584115922393760366774411",
+          "385322488227170474478430345482752462944080319584115922393760366774412"
+        ],
+        "one_minimum_midpoint_pair": [
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "pigeonhole_upper": "0.36420138139337150435097945291754",
+        "scope": "finite spectrum diagnostic; no collision permission or observable response lower bound"
+      },
+      {
+        "n": 2,
+        "distinct_occupation_energies": 10,
+        "all_adjacent_interval_gaps_strictly_positive": true,
+        "minimum_gap_lower": "0.0060792930693608363145045793120842",
+        "minimum_gap_upper": "0.0060792930693608363145045793120843",
+        "minimum_gap_integer_bounds": [
+          "60792930693608363145045793120842553664100336819582654491282903739031",
+          "60792930693608363145045793120842553664100336819582654491282903739034"
+        ],
+        "one_minimum_midpoint_pair": [
+          [
+            1,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            0
+          ]
+        ],
+        "pigeonhole_upper": "0.24280092092891433623398630194503",
+        "scope": "finite spectrum diagnostic; no collision permission or observable response lower bound"
+      },
+      {
+        "n": 10,
+        "distinct_occupation_energies": 286,
+        "all_adjacent_interval_gaps_strictly_positive": true,
+        "minimum_gap_lower": "0.0060792930693608363145045793120842",
+        "minimum_gap_upper": "0.0060792930693608363145045793120843",
+        "minimum_gap_integer_bounds": [
+          "60792930693608363145045793120842553664100336819582654491282903739023",
+          "60792930693608363145045793120842553664100336819582654491282903739034"
+        ],
+        "one_minimum_midpoint_pair": [
+          [
+            9,
+            0,
+            0,
+            1
+          ],
+          [
+            8,
+            1,
+            1,
+            0
+          ]
+        ],
+        "pigeonhole_upper": "0.038336987515091737300103100307109",
+        "scope": "finite spectrum diagnostic; no collision permission or observable response lower bound"
+      },
+      {
+        "n": 30,
+        "distinct_occupation_energies": 5456,
+        "all_adjacent_interval_gaps_strictly_positive": true,
+        "minimum_gap_lower": "0.00042372125094126530854922918382761",
+        "minimum_gap_upper": "0.00042372125094126530854922918382762",
+        "minimum_gap_integer_bounds": [
+          "4237212509412653085492291838276138787382553902730627573850906801823",
+          "4237212509412653085492291838276138787382553902730627573850906801867"
+        ],
+        "one_minimum_midpoint_pair": [
+          [
+            19,
+            0,
+            11,
+            0
+          ],
+          [
+            5,
+            15,
+            0,
+            10
+          ]
+        ],
+        "pigeonhole_upper": "0.0060088220578191448930500734670171",
+        "scope": "finite spectrum diagnostic; no collision permission or observable response lower bound"
+      }
+    ]
+  },
+  "permitted_conversion_criterion": {
+    "full_rank_reference_condition": "For each permitted equal-energy type conversion z, z dot log(p) = 0.",
+    "gibbs_selection_condition": "real span of permitted integer z equals real ker([1;E]); then log p = alpha - beta E",
+    "inverse_temperature_sign": "beta may be any real value; noninversion is an additional condition",
+    "three_subject_qutrit_exact_ranks": {
+      "cross_subject_exchange_only": 4,
+      "with_one_conversion": 5,
+      "with_conversion_but_delete_last_subject_edge": 3,
+      "number_of_log_population_variables": 9
+    },
+    "qutrit_example_only": {
+      "energies": [
+        0,
+        1,
+        2
+      ],
+      "conversion": [
+        1,
+        -2,
+        1
+      ],
+      "strings": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "nonstationary_example": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ],
+      "product_state_trace_distance_after_string_swap": "1/36",
+      "inverted_stationary_example": [
+        "1/7",
+        "2/7",
+        "4/7"
+      ],
+      "not_native_h_or_native_QQ_permission": true
+    }
+  }
+}

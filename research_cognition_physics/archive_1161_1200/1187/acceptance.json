@@ -1,0 +1,68 @@
+{
+  "schema": "gr_round_acceptance_v1",
+  "date": "2026-10-14",
+  "round": 1187,
+  "status": "ACCEPTED_WITH_SCOPE",
+  "check_groups": 3,
+  "scope": "声明D4正实Gram行列式、V>0及非退化实际四材料坐标中，Legendre秩N-4、四约束及非零约化根共同给出一般图像的椭圆主符号。常正势m=0诊断支在固定有限k、kT=1的归一线性响应差cosh1-cos1严格大于1。停止裸材料钟直接接Lorentz的路线；不排除重整化集体分支，不签非线性误差或量子记录。",
+  "certified_results": {
+    "regular_material_Hessian_rank": "N-4",
+    "original_material_primary_constraints": 4,
+    "oriented_reduced_Hamiltonian": "-sqrt(F^2 det h - p^T M p)",
+    "general_graph_principal_symbol": "F sqrt(det g) (xi^T g^-1 xi) (I+Z^T Z)^-1",
+    "constant_potential_linear_equation": "psi_TT+Delta psi=0",
+    "normalized_linear_gap_strict_lower": "1",
+    "normalized_linear_gap_display": 1.0027783289471042,
+    "diagnostic_finite_modes": [
+      "k=1/2, T=2",
+      "k=1, T=1",
+      "k=2, T=1/2"
+    ]
+  },
+  "inputs_retained": [
+    "D=4 real positive field-space Gram determinant and V>0, regular classical branch",
+    "four actual material fields used as local coordinates; residual modes require N>=5",
+    "constant-V m=0 flat graph for the exact finite-mode linear comparison",
+    "same real coordinate/readout dictionary for raw and Lorentz comparison"
+  ],
+  "certification_limits": [
+    "No full Dirac quantum constraint algebra or physical Hilbert space construction.",
+    "Canonical H=0 does not forbid relational time; nonzero reduced root exists on R>0.",
+    "General strong ellipticity is rank-one principal positivity, not ordinary area convexity.",
+    "Finite contrast is a linear response coefficient, not a finite-amplitude nonlinear or quantum record probability.",
+    "Variable V lower-order terms may change individual finite-mode stability.",
+    "Renormalized or collective Lorentz background and the general cognitive axiom programme are not excluded."
+  ],
+  "review_independence": "Internal non-blind AI review. First reviewer independently derived formulas and saved separate exact-rational code/results before connection failure; continuation reviewer preserved files, independently checked proof and reran both scripts. Not external peer review.",
+  "new_adopted_axioms": 0,
+  "new_empirical_calibration": 0,
+  "gr_hard_deliverables_completed": 0,
+  "hard_deliverable_progress": {
+    "common_dynamic_geometry": "partial: prior common clock/three-axis cumulative finite records retained",
+    "complete_common_source_and_backreaction": "partial: generated microscopic binding energy now connected to original common source and original material clock, under explicit response input",
+    "nonlinear_Einstein_dynamics": "not completed"
+  },
+  "files_sha256": {
+    "../research_note_1187.md": "97c780109ebc12eb3929797b40339ef73d91bacb87684d3fd181fdf07aa9bfe1",
+    "admission.md": "63579744238b649ea41496f5bec6d2b2c22d3ce4e5fbb0a2dd83a564af8f5863",
+    "proof.md": "a9651f85b944e8e42e24b59e1c561048efb3f07a30a56c89d42e193f226c76f3",
+    "check.py": "0ab516e8232a0e5014c450b0e15ea823c14b009e002abf659d84b05aaf1f5a9f",
+    "results.json": "6b2d06cfb4b9242833cfe4bd51d06fd26a7a9ef793d2269efb63c0fabb15680a",
+    "NEXT.md": "fdbfcb3c5cfe11b3d585785960566d16d42b9ff7300c7e4a021c7760a0dc973c",
+    "review.md": "a93f58986e80faaf992c584ce7fd29a27d4b482fcacafdb4a6e364451cdcd076",
+    "reviewer_check.py": "58debd54b627580d181919522a2701b91ea763fe28377ee884ed9679605874c7",
+    "review_checks.json": "13fe9febff3998b1405218afe8d8bcbc35af6863f974305b33e1d25e19723be3",
+    "../_shared/goal.md": "8acafd3ed835d581a543de077e1e6ea6c120b6e78c7a1e271e749f263e422667"
+  },
+  "validation": {
+    "root_personally_executed": true,
+    "commands": {
+      "check.py": "READ_ONLY_MATCH 3 groups; bare material-clock finite linear gap > 1",
+      "reviewer_check.py": "READ_ONLY_MATCH independent 1187 review; finite linear gap > 1"
+    },
+    "groups": 3,
+    "blockers": 0,
+    "old_science_rerun": false,
+    "review_recovery": "two agent stream interruptions; saved reviewer code/results retained and independently rechecked; review.md completed by continuation reviewer"
+  }
+}

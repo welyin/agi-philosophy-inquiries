@@ -1,0 +1,58 @@
+{
+  "schema": "operational_thermodynamics_round_acceptance_v1",
+  "round": 1207,
+  "date": "2026-10-14",
+  "status": "ACCEPTED_WITH_SCOPE",
+  "check_groups": 2,
+  "scope": "给定有限H、满秩平稳参考、独立副本和全部近保裸能联合酉权限，跨有限组合统一半迹距连续性恰选择全实逆温度Gibbs族；非Gibbs在任意正总能容差下的扰动上确界为1。首次命中置换使概率放大而总能范数不累加；原冷参考有巨大但有限的数学证书。未采用新认知公理，未授予原QQ相应实际权限，未认证该证书的准备/读出资源。",
+  "certified": {
+    "full_rank_stationary_uniform_stability_iff_real_beta_Gibbs": true,
+    "Gibbs_bound": "min(1,sqrt(abs(beta)*delta/2))",
+    "non_Gibbs_response_supremum_for_each_positive_delta": 1,
+    "supremum_one_attained_at_finite_full_rank_size": false,
+    "native_exact_response_at_delta_zero": 0,
+    "first_hit_trace_formula": "(1-(1-a-b)^M)*abs(a-b)/(a+b)",
+    "first_hit_total_energy_operator_error": "abs(E_x-E_y), independent of M",
+    "first_hit_x_binary_effect_attains_the_witness_trace_distance": true,
+    "sufficient_comparison_family": "first-hit permutations and first-x readouts for all required string pairs and finite block counts; not one fixed finite menu",
+    "native_cold_block_length": 25,
+    "native_cold_blocks": "4375693525386771",
+    "native_cold_total_materials": "109392338134669275",
+    "native_cold_trace_distance_strict_lower": ".283",
+    "native_total_energy_operator_error_upper": ".0004237212511",
+    "finite_preparation_transport": "min(1,2*epsilon_n+sqrt(abs(beta)*delta/2))",
+    "full_operation_access_proven_for_native_model": false,
+    "finite_witness_physical_resources_certified": false
+  },
+  "remaining_inputs": [
+    "independent physical H, full rank and stationary reference role",
+    "independently prepared identical copies and cross-all-finite-n uniformity",
+    "sufficient permitted first-hit conditional permutations and joint discrimination",
+    "full actual control, preparation, timing, memory, energy and readout resource contracts",
+    "temperature sign/value, other conserved charges, same physical region/clock/flow identity"
+  ],
+  "limits": [
+    "material marginal stability does not return arbitrary purifying R",
+    "operator energy error is not total implementation cost",
+    "all-scale classification does not invalidate a declared finite effective task",
+    "not a derivation of passivity, thermalization, geometry or GR"
+  ],
+  "new_adopted_axioms": 0,
+  "new_empirical_calibration": 0,
+  "GR_hard_deliverables_completed": 0,
+  "stage_complete": false,
+  "root_executed_both_codes": true,
+  "review": "Root proof audit; independent exact full-basis permutations, original cold-reference arithmetic, another native reference, scope and primary-literature audit; no empirical experiment.",
+  "files_sha256": {
+    "proof.md": "b965c0addb07c5e8cadc15922b744f2593842ebcae88e47546a1de8ef4ba05ea",
+    "check.py": "014c811feb9d3be0f79fbd609e4721454874c65a7ef94915dff545250223653a",
+    "results.json": "29e1d62e92ad9252353d1119857aef06149334a9f827d8dc3d5aeacbd453f5e9",
+    "independent_check.py": "eb0ed7c0d16d49ed2031e560ad25952fe28efddf4a60e855ace12d70741cb462",
+    "independent_results.json": "137b6f151450b0cec5c09c6803583b16bfa8eb207ba73eefa415113d199538b1",
+    "independent_review.md": "49d54c3826447ffcd3b6da00bf63248f1a3299f9ef96a05ef07e3b3f06300588",
+    "cognitive_scope_review.md": "26d9535493c4e45f68fd987bf1c6ca7328b0b5f5a3e41f5529729faf9aa31c8c",
+    "NEXT.md": "c84bc3fddbf7cfcf042e9059b08150f523304ae36cffb1f296790a61e98ed398",
+    "../research_note_1207.md": "d770aaf1bac84cb24111731e33af68ae1393183dc0ce8da3e17d54b424c60d13",
+    "../_shared/goal.md": "5ebfd7cd14daec1d26010925774f510a78d0672cab518b77a03de454b8a377d7"
+  }
+}

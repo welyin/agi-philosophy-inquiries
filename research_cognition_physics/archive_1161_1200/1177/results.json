@@ -1,0 +1,125 @@
+{
+  "round": 1177,
+  "date": "2026-10-13",
+  "status": "PASS_WITH_EXPLICIT_ROLE_CONTRACT",
+  "source_sha256": {
+    "1176/proof.md": "966a751121980b976ad86f459d06088c72a56e3eca49109828293020b86320f9",
+    "1176/results.json": "d9b815dec37cd1597202b61a683d768e4d5eb692170992fcaedfb0452f877873",
+    "1176/NEXT.md": "8d662827c152698090e9552b044709ef20b0342738244f89aab279f83155410d"
+  },
+  "groups": {
+    "1_same_parent_exact_vacuum": {
+      "pass": true,
+      "K": 100000000000000,
+      "volume": 274625,
+      "source_modes_per_copy": 1098500,
+      "relation_qubits": 54925000000000000000,
+      "new_blank_pointer_qubits": 274625,
+      "parent_positive_shift_exact": "36695392500000969393327/32",
+      "source_vacuum_exactly_invariant": true,
+      "W_on_vacuum_exactly_zero": true,
+      "exact_background_product_not_interacting_parent_product": true,
+      "baseline_is_unit_lapse_not_claimed_flat_geometry": true,
+      "local_algebra_diagnostics": {
+        "normal_ordered_four_mode_vacuum_residual": 0.0,
+        "seven_site_full_internal_dimension": 84,
+        "s_local_norm_diagnostic": 0.9090242069841636,
+        "t_local_norm_diagnostic": 0.4062500000000004,
+        "s_support_multiplicity": 7,
+        "t_support_multiplicity": 5
+      }
+    },
+    "2_full_input_prepared_isometry": {
+      "pass": true,
+      "one_particle_support_bound_all_sites_internal_reference": true,
+      "original_code_dimension": 48,
+      "all_mass_coherences_preserved": true,
+      "a_s_exact": "1389/320",
+      "a_t_exact": "13/8",
+      "B_squared_exact": "14857247/102400",
+      "eta_formula_float_diagnostic": 1.8920781500922302e-06,
+      "eta_adopted_exact": "1/500000",
+      "eta_adopted": 2e-06,
+      "instrument_error_input_exact": "1/50000",
+      "marginal_error_adopted_exact": "11/500000",
+      "joint_effect_full_record_diagnostic": {
+        "full_two_site_pointer_isometry_residual": 4.440892098500626e-16,
+        "p_original_minus_y": 0.6687026815418029,
+        "p_colocated_gt_record": 0.5,
+        "all_pointer_and_position_records_retained": true,
+        "dimension": 64,
+        "diagnostic_only_not_large_parent_simulation": true
+      }
+    },
+    "3_finite_role_violation_and_control": {
+      "pass": true,
+      "pi_interval": {
+        "lower_exact": "31415926535897932384626433832795028841971/10000000000000000000000000000000000000000",
+        "upper_exact": "7853981633974483096156608458198757210493/2500000000000000000000000000000000000000",
+        "outward_decimal_places": 40,
+        "lower_float_diagnostic": 3.141592653589793,
+        "upper_float_diagnostic": 3.141592653589793
+      },
+      "tau_interval": {
+        "lower_exact": "3441592653589793238462643383279502884197/2000000000000000000000000000000000000000",
+        "upper_exact": "8603981633974483096156608458198757210493/5000000000000000000000000000000000000000",
+        "outward_decimal_places": 40,
+        "lower_float_diagnostic": 1.7207963267948967,
+        "upper_float_diagnostic": 1.7207963267948967
+      },
+      "clock_p_interval": {
+        "lower_exact": "3343513407709013699763276021599842606299/5000000000000000000000000000000000000000",
+        "upper_exact": "6687026815418027399526552043199685212599/10000000000000000000000000000000000000000",
+        "outward_decimal_places": 40,
+        "lower_float_diagnostic": 0.6687026815418028,
+        "upper_float_diagnostic": 0.6687026815418028
+      },
+      "relation_role_p_interval": {
+        "lower_exact": "212640466881600194625568640328089545477/500000000000000000000000000000000000000",
+        "upper_exact": "4252809337632003892511372806561790909541/10000000000000000000000000000000000000000",
+        "outward_decimal_places": 40,
+        "lower_float_diagnostic": 0.42528093376320036,
+        "upper_float_diagnostic": 0.42528093376320036
+      },
+      "reference_relation_p_exact": "1/2",
+      "ideal_residual_interval": {
+        "lower_exact": "747190662367996107488627193438209090459/10000000000000000000000000000000000000000",
+        "upper_exact": "37359533118399805374431359671910454523/500000000000000000000000000000000000000",
+        "outward_decimal_places": 40,
+        "lower_float_diagnostic": 0.07471906623679961,
+        "upper_float_diagnostic": 0.07471906623679961
+      },
+      "role_curve_Lipschitz_adopted": 6,
+      "combined_residual_probability_budget_exact": "77/500000",
+      "actual_role_residual_lower_exact": "2831662997817317639731661963765352900182859221414281395655481911250677096166789051520901253173/37975732346628366186212050583632988976919347200000000000000000000000000000000000000000000000000",
+      "actual_role_residual_lower": 0.07456506623679961,
+      "separation_after_baseline_error_lower_exact": "2825814735035936871338985307975473419880413641945481395655481911250677096166789051520901253173/37975732346628366186212050583632988976919347200000000000000000000000000000000000000000000000000",
+      "separation_after_baseline_error_lower": 0.0744110662367996,
+      "with_statistical_each_1e_minus4_lower": 0.07386506623679961,
+      "baseline_clock_p_interval": {
+        "lower_exact": "65450849718747371205114670859140952943/100000000000000000000000000000000000000",
+        "upper_exact": "6545084971874737120511467085914095294301/10000000000000000000000000000000000000000",
+        "outward_decimal_places": 40,
+        "lower_float_diagnostic": 0.6545084971874737,
+        "upper_float_diagnostic": 0.6545084971874737
+      },
+      "baseline_joint_record_diagnostic": {
+        "full_two_site_pointer_isometry_residual": 4.440892098500626e-16,
+        "p_original_minus_y": 0.6545084971874737,
+        "p_colocated_gt_record": 0.5000000000000001,
+        "all_pointer_and_position_records_retained": true,
+        "dimension": 64,
+        "diagnostic_only_not_large_parent_simulation": true
+      },
+      "candidate_contract_adopted_as_axiom": false,
+      "actual_instrument_constructed": false,
+      "Einstein_selected": false,
+      "all_extra_modes_retained": true
+    }
+  },
+  "numerical_scope": {
+    "certificate": "exact rational Machin and Taylor intervals",
+    "matrix_checks": "small diagnostics only",
+    "large_lattice_or_K_parent_simulated": false
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "schema": "composition_robust_reference_1207_v1",
+  "status": "AUTHOR_CHECKS_PASS_NOT_ACCEPTANCE",
+  "source_sha256": {
+    "1202/results.json": "ffd1cb78a71db45caa1c1c2ec5f4a39cce94a87478f95976b4fe1bdbb59bad60",
+    "1206/proof.md": "3c46636ae5df10e3102aa1c71489f6f12923df4d1275bbedff91ba70265ee612",
+    "1206/results.json": "0b7e0023fcad17fcd49178ab790c369141b169289188b4a8c88c810b47cfdbbc"
+  },
+  "exact_first_hit_small_examples": [
+    {
+      "blocks": 1,
+      "basis_strings": 3,
+      "energy_operator_norm_exact": "1/1000",
+      "trace_distance_exact": "1/10"
+    },
+    {
+      "blocks": 2,
+      "basis_strings": 9,
+      "energy_operator_norm_exact": "1/1000",
+      "trace_distance_exact": "17/100"
+    },
+    {
+      "blocks": 3,
+      "basis_strings": 27,
+      "energy_operator_norm_exact": "1/1000",
+      "trace_distance_exact": "219/1000"
+    },
+    {
+      "blocks": 4,
+      "basis_strings": 81,
+      "energy_operator_norm_exact": "1/1000",
+      "trace_distance_exact": "2533/10000"
+    },
+    {
+      "blocks": 5,
+      "basis_strings": 243,
+      "energy_operator_norm_exact": "1/1000",
+      "trace_distance_exact": "27731/100000"
+    },
+    {
+      "blocks": 6,
+      "basis_strings": 729,
+      "energy_operator_norm_exact": "1/1000",
+      "trace_distance_exact": "294117/1000000"
+    }
+  ],
+  "native_finite_witness": {
+    "reference": "1202 one-sample cold marginal, independent copies",
+    "full_rank_and_single_copy_passive": true,
+    "non_Gibbs_certificate": {
+      "higher_energy_string": [
+        1,
+        2
+      ],
+      "lower_energy_string": [
+        0,
+        3
+      ],
+      "energy_gap_bounds": [
+        "0.006079293069360835000000000000",
+        "0.006079293069360838000000000000"
+      ],
+      "higher_minus_lower_probability_bounds": [
+        "0.000018809698503132824521214633",
+        "0.000018809698503132824521214634"
+      ],
+      "cyclic_swap_mean_energy_drop_bounds": [
+        "0.000000114349669746862252457591",
+        "0.000000114349669746862308886687"
+      ],
+      "battery_or_control_implementation_claimed": false
+    },
+    "first_hit_witness": {
+      "block_length": 25,
+      "x_occupation": [
+        0,
+        15,
+        0,
+        10
+      ],
+      "y_occupation": [
+        14,
+        0,
+        11,
+        0
+      ],
+      "occupation_difference": [
+        -14,
+        15,
+        -11,
+        10
+      ],
+      "P_x_bounds": [
+        "0.000000000000000165449274604352",
+        "0.000000000000000165449274604353"
+      ],
+      "P_y_bounds": [
+        "0.000000000000000063085926546786",
+        "0.000000000000000063085926546787"
+      ],
+      "q_bounds": [
+        "0.000000000000000228535201151138",
+        "0.000000000000000228535201151139"
+      ],
+      "conditional_trace_distance_bounds": [
+        "0.447910639332404740413357387567",
+        "0.447910639332404740413357387568"
+      ],
+      "N_blocks_exact_decimal_integer": "4375693525386771",
+      "N_choice": "ceil(1/q); (N-1)q<1<=Nq verified exactly",
+      "total_materials_exact_decimal_integer": "109392338134669275",
+      "log2_Hilbert_dimension_exact_decimal_integer": "218784676269338550",
+      "energy_operator_norm_bounds": [
+        "0.000423721250941250000000000000",
+        "0.000423721250941289000000000000"
+      ],
+      "hit_probability_strict_lower": "103/163",
+      "trace_distance_strict_lower_rational": "461337/1630000",
+      "declared_trace_distance_strict_lower": "0.283",
+      "whole_matrix_materialized": false,
+      "current_preparation_readout_or_control_resources_certified": false
+    }
+  },
+  "analytic_claims_require_proof": [
+    "Gibbs all real beta: R(delta)<=min(1,sqrt(abs(beta)*delta/2))",
+    "full-rank stationary non-Gibbs: R(delta)=1 for every delta>0",
+    "native h: R(0)=0 for every diagonal reference by 1206",
+    "suprema need not be achieved at finite n",
+    "full operation class is a candidate permission, not native QQ reachability"
+  ],
+  "external_reference_scope": "Only the material marginal is tested; R is retained, not reset.",
+  "new_cognitive_axioms_adopted": 0
+}

@@ -1,0 +1,32 @@
+{
+  "authorization": "Root explicitly authorized preserved-history format correction and canonical results regeneration; source_check.py remains unchanged.",
+  "corrected_proof_sha256": "89bad0b3d530a3f87c3bb3e664f55c3545fe9a332438c1a0bcf1b7b8c8f37ba9",
+  "kind": "explicit_minimal_format_correction",
+  "original_results_raw_text": "{\n  \"head\": {\n    \"U_pi_equals_reflection\": true,\n    \"basis_gram\": [\n      1,\n      6,\n      15,\n      20,\n      15,\n      6,\n      1\n    ],\n    \"derivative_operator_norm_squared\": \"6\",\n    \"dimension\": 7,\n    \"energy_eigenvalues\": [\n      0,\n      1,\n      2,\n      3,\n      4,\n      5,\n      6\n    ],\n    \"mean_P\": \"(5/16) sin(t)^6\",\n    \"prepared_ad_orders_0_1_2_zero_at_both_ends\": [\n      [\n        true,\n        true,\n        true\n      ],\n      [\n        true,\n        true,\n        true\n      ]\n    ],\n    \"spectral_projector_ranks\": [\n      1,\n      1,\n      1,\n      1,\n      1,\n      1,\n      1\n    ],\n    \"third_ad_nonzero_at_both_ends\": true,\n    \"variance_P_at_pi_over_2\": \"55/256\"\n  },\n  \"numbered_research_round\": false,\n  \"operator_source\": {\n    \"Pauli_commutator_Z_EY_equals_minus_i_X\": true,\n    \"R_tensor_factor_identity\": \"All operator identities tensor with I_R; fixed head preparation remains part of the declared code.\",\n    \"control_mass_includes_Hc\": true,\n    \"four_Ward_matrices_exact_zero\": true,\n    \"physical_STF_mass_quadrupole_equals_2S\": true,\n    \"spatial_trace_exact_zero\": true\n  },\n  \"remaining\": [\n    \"One common field/constraint Hamiltonian or process matching the response kernel and its normalization.\",\n    \"Finite coupling remainder on the whole declared prepared code with arbitrary reference and retained field/head outputs.\",\n    \"Actual COM, orientation/reference, setting, pointer and material matching errors and their complete stress.\"\n  ],\n  \"scope\": \"Exact finite head, full linear source insertion, and normalized leading record coefficient only; no complete apparatus or finite-coupling probability bound.\",\n  \"sha256\": {\n    \"../../1161/proof.md\": \"f07074bca0db63349bcd3c28ef6cc8e4f786720308d52351ee12c94959582bbe\",\n    \"../../1171/proof.md\": \"ecf48b81b9b42a21bcf7007b386bae16132cb9849e3fc939f02c398860e8d4ea\",\n    \"../after1185_quadrupole_screen/check.py\": \"6d4126d47edfe98984f0290727b4ece8b2783a089a1f4e5f91231c3f1ced4ea4\",\n    \"../after1185_quadrupole_screen/proof.md\": \"563e263b6106a9583f338998a2e84b3cb885162647afab41a86311be7468dfff\",\n    \"../after1185_quadrupole_screen/results.json\": \"78be9ac8ddb529127efe971b3f647d463c013fa55074554552a7dd6169de54a6\",\n    \"source_check.py\": \"7e90ccc7586e65940c1a141d755828e1524cb50cd4dec2a693ecf29242a5de6a\",\n    \"source_proof.md\": \"5da7a859b074f924ac597df2145f736706a580a32acc552e9c68366c092ef31b\"\n  },\n  \"status\": \"PASS_WITH_SCOPE\",\n  \"time_and_kernel\": {\n    \"C0_times_pi\": \"3/2048\",\n    \"C1_times_pi\": \"-4995/425984\",\n    \"I_C_display\": -0.0008131332623843963,\n    \"I_C_exact\": \"-22700475/27917287424\",\n    \"R\": \"4\",\n    \"T\": \"pi\",\n    \"V_C_norm_bound_times_pi\": \"15297/212992\",\n    \"delta_p_leading_coefficient_for_g2_qstar2_ximinus1\": \"22700475/13958643712\",\n    \"integral_a_squared_div_pi\": \"5775/262144\",\n    \"integral_adot_squared_div_pi\": \"4725/65536\",\n    \"m2_total\": \"3/104\",\n    \"probability_lower_bound_claimed\": false,\n    \"radius_each\": \"1/4\",\n    \"strict_spacelike_margin_using_pi_upper\": \"5/14\"\n  }\n}\n",
+  "original_sha256": {
+    "source_check.py": "7e90ccc7586e65940c1a141d755828e1524cb50cd4dec2a693ecf29242a5de6a",
+    "source_proof.md": "5da7a859b074f924ac597df2145f736706a580a32acc552e9c68366c092ef31b",
+    "source_results.json": "ba4ce78082d2e7ef980d65b825bce7b52c8ad7a8589203553e9cd6505521452c"
+  },
+  "process_disclosure": "The first protective count assertion expected six occurrences, found five, and stopped before any file write. This revision corrects the actual five malformed occurrences only.",
+  "proof_reversible_edit": {
+    "after": ",\\qquad",
+    "before": ",qquad",
+    "count": 5,
+    "encoding": "utf-8",
+    "index_unit": "Unicode code point",
+    "original_offsets": [
+      264,
+      300,
+      333,
+      607,
+      641
+    ],
+    "reverse_instruction": "Process offsets in reverse order; corrected offset is original offset plus its zero-based edit index. Replace only the specified after string with before."
+  },
+  "reason": "Five missing LaTeX backslashes before qquad in equations (1) and (2); mathematics unchanged.",
+  "verified_before_write": {
+    "reversible_edit_restores_original_proof_bytes": true,
+    "stored_results_text_restores_original_results_bytes": true
+  }
+}

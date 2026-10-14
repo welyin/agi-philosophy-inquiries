@@ -1,0 +1,50 @@
+{
+  "schema": "operational_thermodynamics_round_acceptance_v1",
+  "round": 1209,
+  "date": "2026-10-14",
+  "status": "ACCEPTED_WITH_SCOPE",
+  "check_groups": 2,
+  "scope": "固定有限物理H、满秩平稳参考、独立副本、全部有限保能联合操作与独立辅助下，能源/双侧熵/状态三预算共同趋零的跨组合稳健性恰选择任实beta的Gibbs族；反向有限能梯与保留二值记录共同满足预算。",
+  "certified": {
+    "three_budget_classification": true,
+    "gibbs_trace_distance_bound": "min(1,sqrt((abs(beta)*delta+kappa)/2))",
+    "non_gibbs_supremum_for_all_strictly_positive_budgets": 1,
+    "complete_auxiliary_record_retained": true,
+    "initial_SA_independence_required": true,
+    "auxiliary_preparation_resources_finite_per_instance": true,
+    "uniform_initial_resource_bound": false,
+    "native_material_distance_lower": ".6313",
+    "native_energy_change_upper": ".00339",
+    "native_auxiliary_entropy_upper": ".00423",
+    "native_auxiliary_trace_distance_upper": ".0212",
+    "exact_zero_budget_classification_claimed": false,
+    "native_QQ_control_permission_proved": false,
+    "actual_clock_instrument_implementation_proved": false
+  },
+  "remaining_inputs": [
+    "reference role adoption and qualified comparison family",
+    "independent reference and auxiliary preparation; potentially unbounded initial resources across instances",
+    "real charges, actual clock and region/flow identity"
+  ],
+  "limits": [
+    "the auxiliary energy budget is reference-specific, not the old all-input operator budget",
+    "Hermitian-log autonomous representation uses a freely propagated comparison and is not a native local implementation",
+    "finite effective references remain valid in their original task budgets"
+  ],
+  "new_adopted_axioms": 0,
+  "new_empirical_calibration": 0,
+  "GR_hard_deliverables_completed": 0,
+  "stage_complete": false,
+  "root_executed_both_codes": true,
+  "files_sha256": {
+    "proof.md": "9c2eecc8d9a372996f3c317f65613ecbecfad54486fc4a5f23bcf72fa7897e47",
+    "check.py": "fef2943d8032958158bd4e569f547a1d3862a8e918718eae54f1a5ccabc0c38c",
+    "results.json": "2b6befefebf30f83e9d155059bc604ac76f42b55ee047dad00064df7f69dfdd1",
+    "independent_check.py": "5df518f8ea7db2eb6e220ca174a5b86393d6940ca2386a1737e6202f5dba9cb8",
+    "independent_results.json": "123d15b0f5c00dd0d881b527cc2762eceb19353fb7e0689380e68dbf296839a6",
+    "NEXT.md": "6184f654e96b3f9a7ee89525fe7642923df61ff264462772005a088c76b2b02e",
+    "../research_note_1209.md": "78172a21fa88e0f8437436c7655e5561207ac49bd86b6ece8268640d29e2d28b",
+    "independent_review.md": "73663ca63fd305a60b726f36a2eab5800aa4bca1713f658245125a54bf89c5f3",
+    "../_shared/goal.md": "5ebfd7cd14daec1d26010925774f510a78d0672cab518b77a03de454b8a377d7"
+  }
+}

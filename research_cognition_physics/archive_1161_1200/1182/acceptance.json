@@ -1,0 +1,104 @@
+{
+  "schema": "gr_round_acceptance_v1",
+  "date": "2026-10-13",
+  "round": 1182,
+  "status": "ACCEPTED_WITH_SCOPE",
+  "check_groups": 3,
+  "scope": "固定1181纯Euclidean EPRL四价几何码在共同局部SU(2)／Gauss身份、内部节点且无额外带荷边界下，不能直接容纳单旋量；全部严格|gamma|<1的纯许可标签集合也不在一次基本旋量holonomy下闭合。gamma=1/3、k=3/2的完整68×32乘法是等距，全部中间输出位于J=1,2，逐步投回纯许可集为零，保中间支则在原32维输入像上精确往返。额外真实半自旋参考或改腿可使不变空间非空，但不自动给予未知编码或实际权限。此为具体候选对象／传播域的停止证书，不选择新动态系数，不构成EPRL、GR或认知纲领反证。",
+  "certified_results": {
+    "fixed_geometry_legs": "four k=3/2",
+    "geometry_tensor_dimension": 256,
+    "geometry_invariant_dimension": 4,
+    "with_one_same_SU2_spinor_tensor_dimension": 512,
+    "with_one_same_SU2_spinor_invariant_dimension": 0,
+    "general_gamma_range": "-1 < gamma < 1; endpoints excluded",
+    "adjacent_allowed_labels": "No pair separated by 1/2; the nonzero change of 2j_plus is strictly between -1 and 1 and cannot be an integer",
+    "fixed_gamma": "1/3",
+    "allowed_labels": "k=3n/2, n>=0 integer",
+    "full_link_spinor_input_dimension": 32,
+    "intermediate_carrier_dimension": 68,
+    "intermediate_spins": [
+      "1",
+      "2"
+    ],
+    "U_dagger_U_exact": "I_32",
+    "pure_label_compression_exact": "0",
+    "kept_intermediate_return_exact": "I_32 on the original input image",
+    "normal_input_output_component_weights_exact": [
+      "4/5",
+      "1/5"
+    ],
+    "extra_half_spin_reference_full_invariant_dimension": 13,
+    "known_singlet_subcode_dimension": 4,
+    "one_leg_changed_to_spin1_invariant_dimension": 6,
+    "one_leg_changed_to_spin2_invariant_dimension": 7
+  },
+  "quantum_domain": {
+    "node_support_and_link_transport_domains_distinct": true,
+    "all_32_unknown_link_spinor_inputs_and_arbitrary_reference": true,
+    "neutral_spectator_reference_cannot_fix_empty_node_support": true,
+    "true_charged_reference_changes_the_object": true,
+    "known_singlet_not_an_encoding_of_arbitrary_unknown_spinor": true,
+    "no_isometric_compression_of_arbitrary_68_dimensional_inputs_claimed": true,
+    "physical_Dirac_rotation_spin_not_arbitrary_internal_pseudospin": true
+  },
+  "numerical_authority": "Exact SU(2) fusion and rational square-root CG coefficients. Independent ascending-magnetic-basis construction matched all 2176 matrix elements after basis reordering. The all-label exclusion is analytic, not inferred from finite scanning or floating tolerances.",
+  "review_independence": "Prior scope advice disclosed; internal agent review, not blind or external human peer review. Independent full matrix construction preceded reading author code and imports only the reviewer-owned algebra library.",
+  "development_disclosure": "Common Gauss intertwiners, center parity and CG/Peter-Weyl tools are mature and reused. The net project decision rejects direct single-spinor support plus stepwise pure-label projection for this declared boundary object; 1181 static pairing remains valid.",
+  "inputs_retained": [
+    "Pure Euclidean EPRL simplicity labels and common local SU(2) matter/geometry identity; CC alone does not impose that physical group identity",
+    "Closed internal-node Gauss condition without uncounted charged boundary or reference; edge kinematical carrier is a separate declared domain",
+    "Complete fundamental matrix multiplication on L2(SU2) tensor spinor, not an individual matrix element treated as a unitary gate",
+    "Extra charged reference, matter intertwiners, changed representation legs or retained intermediate branches require a different complete object and actual permissions"
+  ],
+  "not_claimed": [
+    "failure of EPRL matter coupling, Lorentzian spin foams, GR or the whole cognitive programme",
+    "every physical clock or internal two-level system carries a fundamental SU(2) charge",
+    "all effective or even-step transport vanishes",
+    "physical inverse-time operation, prepared apparatus, Hamiltonian, actual clock, source/energy bookkeeping, or an empirical probability experiment",
+    "dynamic coefficient selection, nonlinear Einstein recovery or identification of dark matter/dark energy"
+  ],
+  "new_adopted_axioms": 0,
+  "new_empirical_calibration": 0,
+  "gr_hard_deliverables_completed": 0,
+  "hard_deliverable_progress": {
+    "common_dynamic_geometry": "partial: prior actual material geometry connections retained; 1182 only tests representation support and a mathematical transport carrier",
+    "complete_common_source_and_backreaction": "partial: prior reciprocal source connection retained; this Euclidean boundary interface has no actual source/clock/energy implementation",
+    "nonlinear_Einstein_dynamics": "not completed"
+  },
+  "files_sha256": {
+    "../research_note_1182.md": "c18a797def4cc8924658b0641bde5a0cb35159c4d8545f30d77e7d5b6f8977d8",
+    "admission.md": "bae733db33038d56e241c3eccf08dad94c411d02836bb6850c6ec5203fc7bb64",
+    "proof.md": "a2d87924d239ae76f7352e0881b6e510cdfdd1449f6846a8cdcafc90117f7913",
+    "check.py": "5e1c80ebe96368d479373d060a77bf087a1f68ff73152427d439c1336c7b08d3",
+    "results.json": "b8c44ba2785758cf2ddad0404d7b84d003c2afe462002ffba6ef542b06540b4c",
+    "NEXT.md": "793e3964469a4adf344b4555c4a5156da18becfbf33b7b5a29a5c27d61c203fa",
+    "review.md": "91dc2347d1ce8af7f698b3b8dfffff606aa22a329fc8a8baa7465e5c5b90298e",
+    "reviewer_check.py": "0c8417a99384d59809550a788529fb2bcca6488849c06489f0100d9bc7f007b9",
+    "reviewer_algebra.py": "24440903d227cc1d209432b67b071c92362e7aeb475d9e46cc9d4598f96bf2af",
+    "review_checks.json": "0d7cd3f6bee855b53a5a7210fad70f42ce1d95137fa8fe9d5fc36968640fb166",
+    "../_shared/goal.md": "8acafd3ed835d581a543de077e1e6ea6c120b6e78c7a1e271e749f263e422667",
+    "../../archive_585_628/research_note_590.md": "3cb182239911373a4c0042ce1b9d0a103b4aee6ee576459bfa7e0a411ca130ee",
+    "../../archive_629_652/research_note_649.md": "880a44ecb3d7fc7b11cb78e394ce9754c04b03d13e6f5daaff6c9c48a52f934f",
+    "../research_note_1173.md": "8400637e1ccd3aeb8c97d47703792941bac1afb5bd8b81bc6539ad81af691742",
+    "../research_note_1178.md": "8a3744e80effff3001b5c9b15f5448ba4f4411d99e6b82074a5f8ed23a1d58bf",
+    "../research_note_1179.md": "8c8cc42f1b2c7b2d39579459687a8d082e774e18f2051813152ae87b9d71bbfd",
+    "../research_note_1181.md": "36ab985e00a8216566ba9a8c7b0b81ec9aac204fb8a4bf7f02363df366e3e939",
+    "../1181/proof.md": "5eaab64cd3d230d332788ce655aa7f77b154581b3e06947e30d4844661bd4de8",
+    "../1181/check.py": "0fdadcd9e1a5afa04b331e5b499cbd02d2805fd9e46e22708d8de34f919c564d",
+    "../1181/results.json": "774a99ff74076bd1ba01b640f9d580a8fc9f2664ecb746a56dc1860d3a68e469"
+  },
+  "validation": {
+    "author_default": "READ_ONLY_MATCH; exit 0, 3 groups, root personally confirmed",
+    "independent_default": "READ_ONLY_MATCH; exit 0, 3 groups, root personally confirmed",
+    "groups": 3,
+    "blockers": 0,
+    "management_binding_check": "six core, four review/library files and ten author sources verified; twenty distinct paths",
+    "old_science_rerun": false
+  },
+  "next": "NEXT.md",
+  "scope_audit": "../_admission/after1181_matter_support/README.md",
+  "scope_audits_not_scientific_groups": true,
+  "mutable_direction_not_a_frozen_scientific_dependency": true
+}
+

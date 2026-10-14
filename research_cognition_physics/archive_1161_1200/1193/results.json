@@ -1,0 +1,104 @@
+{
+  "status": "PASS_WITH_SCOPE",
+  "check_groups": 3,
+  "finite_budget": {
+    "B": {
+      "exact": "1/100",
+      "float": 0.01
+    },
+    "L": {
+      "exact": "1/50",
+      "float": 0.02
+    },
+    "v": {
+      "exact": "1/2",
+      "float": 0.5
+    },
+    "r_tau": {
+      "exact": "1/10000",
+      "float": 0.0001
+    },
+    "r_f": {
+      "exact": "1/10000000",
+      "float": 1e-07
+    },
+    "sigma": {
+      "exact": "1/10000",
+      "float": 0.0001
+    },
+    "eta": {
+      "exact": "1/100000",
+      "float": 1e-05
+    },
+    "T": {
+      "exact": "1",
+      "float": 1.0
+    },
+    "A_x": {
+      "exact": "3/16",
+      "float": 0.1875
+    },
+    "A_v": {
+      "exact": "23/80",
+      "float": 0.2875
+    },
+    "D": {
+      "exact": "11/10000000",
+      "float": 1.1e-06
+    },
+    "W": {
+      "exact": "39/2000000",
+      "float": 1.95e-05
+    },
+    "position_lower": {
+      "exact": "191790900432925306412853527163295932860267536155145351484501831/15896184552382219057219944664434475008000000000000000000000000000000",
+      "float": 1.2065216014630588e-05
+    },
+    "position_upper": {
+      "exact": "1726118103896327757715686428213275861058247825396308163360516479/143065660971439971514979501979910275072000000000000000000000000000000",
+      "float": 1.2065216014630588e-05
+    },
+    "velocity_lower": {
+      "exact": "29782438452172855786411618887409471569335456431627797336343978513/1271694764190577524577595573154758000640000000000000000000000000000000",
+      "float": 2.341948657084321e-05
+    },
+    "velocity_upper": {
+      "exact": "38291706581365100296814992098024891621326615412092882289585115231/1635036125387885388742622879770403143680000000000000000000000000000000",
+      "float": 2.341948657084321e-05
+    },
+    "Taylor_tail": {
+      "exact": "1/30545152085328710860800000000",
+      "float": 3.2738419412889903e-29
+    }
+  },
+  "dust_diagnostic": {
+    "samples": 201,
+    "moment_identity_error": 4.762240913867841e-17,
+    "largest_centroid_slip_ratio": 0.0009836859521852083,
+    "largest_momentum_defect_ratio": 0.00029759675161115826,
+    "centroid_geodesic_position_difference": 2.863215109449868e-08,
+    "scope": "prescribed-background dust-flow diagnostic; sampled ratios are not certified global moment budgets"
+  },
+  "deletion": {
+    "cold_closure": {
+      "geometry": "flat, nonlinear spatial coordinate",
+      "instant_mean_speed": "0",
+      "Sigma_11": "1/4",
+      "centroid_acceleration": "-1/20",
+      "rest_geodesic_acceleration": "0",
+      "scope": "single-event limit; not a finite smooth self-gravitating body or an equivalence violation"
+    },
+    "exchange": {
+      "flat_packet_acceleration": "1/100",
+      "required_eta": "1/100",
+      "scope": "specified exchanged stress; the environment must carry the opposite exchange; no complete quantum model claimed"
+    }
+  },
+  "frozen_history": {
+    "science_files_unchanged": 336,
+    "acceptances_unchanged": 32
+  },
+  "new_adopted_axioms": 0,
+  "new_empirical_calibration": 0,
+  "gr_hard_deliverables_completed": 0
+}

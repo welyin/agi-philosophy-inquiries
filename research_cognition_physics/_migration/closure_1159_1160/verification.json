@@ -1,0 +1,125 @@
+{
+  "schema": "closure_1159_1160_and_gr_startup_verification_v1",
+  "status": "PASS",
+  "scope": "Physical stage closure, historical replay and reversible 1161 navigation; no new scientific round.",
+  "physical_rename": {
+    "source": "research_cognition_physics/archive_1159_",
+    "destination": "research_cognition_physics/archive_1159_1160",
+    "old_directory_absent": true,
+    "destination_files": 41,
+    "absolute_paths_checked_inside_workspace": true,
+    "operation": "PowerShell Rename-Item; no directory copy or ZIP",
+    "preexisting_uncommitted_scientific_files_preserved": true
+  },
+  "science_default_replays": [
+    {
+      "round": 1159,
+      "path": "research_cognition_physics/archive_1159_/1159/check.py",
+      "status": "PASS; four groups; READ_ONLY_MATCH"
+    },
+    {
+      "round": 1160,
+      "path": "research_cognition_physics/archive_1159_1160/1160/check.py",
+      "status": "PASS; four groups; READ_ONLY_MATCH"
+    }
+  ],
+  "old_and_new_paths_same_logical_key": [
+    1159,
+    1160
+  ],
+  "closed_stage_asset_replay": {
+    "new_path_before_gr_notice": "PASS; READ_ONLY_MATCH",
+    "old_path_after_gr_notice": "PASS; READ_ONLY_MATCH",
+    "markdown_files": 26,
+    "local_links": 246,
+    "bound_assets": 38
+  },
+  "full_historical_layout": {
+    "status": "PASS",
+    "timing": "After closure implementation fixes, before publishing the new four-file GR notice.",
+    "all_checks_passed": true,
+    "old_source_checked_files": 7146,
+    "optional_old_source_files_skipped": 2819,
+    "scope_note": "Earlier recent-migration layer preserves its original affected-entry scope; this report does not enlarge that historical claim."
+  },
+  "after_gr_notice_checks": [
+    {
+      "name": "maintenance_current_view",
+      "result": {
+        "status": "CHECKED",
+        "files": 4,
+        "changed_files": 0,
+        "frozen_closure_unchanged": true,
+        "original_navigation_recoverable": true,
+        "scientific_files_modified": false
+      }
+    },
+    {
+      "name": "navigation",
+      "result": {
+        "status": "PASS",
+        "files": 4,
+        "manifest_sha256": "350b97262b5323e00e40d632152bb39a4980366aecd04dd7ebb2f0639b463730",
+        "original_navigation_recoverable": true,
+        "closure_boundary_verified": true
+      }
+    },
+    {
+      "name": "closure",
+      "result": {
+        "status": "PASS",
+        "files": 46,
+        "moved_files": 41,
+        "scientific_python_json_byte_identical": 16,
+        "reversible_markdown_files": 8,
+        "frozen_support_files": 80,
+        "manifest_sha256": "6b47acff0328423a7aea15ed02231dddd3c97adf7e7295c0cd70f02d03123731",
+        "old_directory_absent": true,
+        "current_and_original_hashes_verified": true,
+        "directory_copy_used": false,
+        "zip_used": false
+      }
+    },
+    {
+      "name": "old_stage_assets",
+      "result": {
+        "status": "PASS",
+        "mode": "READ_ONLY_MATCH",
+        "accepted_rounds": [
+          1159,
+          1160
+        ],
+        "science_check_groups": 8,
+        "markdown_files": 26,
+        "local_links": 246,
+        "bound_assets": 38
+      }
+    }
+  ],
+  "current_closed_stage_links": {
+    "markdown_files": 26,
+    "local_links": 246,
+    "missing_targets": []
+  },
+  "new_gr_notice_links": {
+    "checked": 7,
+    "missing_targets": []
+  },
+  "new_goal_status": "active",
+  "new_scientific_rounds": 0,
+  "new_adopted_axioms": 0,
+  "new_scientific_calibrations": 0,
+  "runtime_code_review": {
+    "agent": "gr_rename_reference_audit",
+    "scope": "Read-only path/view/closure inventory and parent-method collision audit",
+    "result": "No remaining defect identified"
+  },
+  "implementation_repairs": "Resolved inherited attribute/method name collisions before successful complete historical verification. No frozen script or evidence was changed.",
+  "sha256": {
+    "scripts/run_research_gr_active.py": "f24840a1883e6eeaf2e43528b607160f5dae52937dc816a7f3164223337ab186",
+    "research_cognition_physics/archive_1161_/_shared/update_navigation.py": "00c43b6c80a73f8e0f36a0410fb8757671e396147f7a9a005f6f3a7ea9b64728",
+    "research_cognition_physics/_migration/closure_1159_1160/manifest.json": "6b47acff0328423a7aea15ed02231dddd3c97adf7e7295c0cd70f02d03123731",
+    "research_cognition_physics/_migration/gr_active_1161/layer.json": "350b97262b5323e00e40d632152bb39a4980366aecd04dd7ebb2f0639b463730"
+  },
+  "date": "2026-10-12T23:56:11"
+}

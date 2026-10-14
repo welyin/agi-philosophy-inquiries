@@ -1,0 +1,432 @@
+{
+  "round": 1175,
+  "date": "2026-10-13",
+  "status": "PASS_WITH_EXPLICIT_EFFECTIVE_SCOPE",
+  "sources": {
+    "_admission/after1174_direction/mean_field_bound.md": "11ac64ce824d3448dec97548efe3dda768bcda30f2e48e1cd88bfe511fcd6b3f",
+    "_admission/after1174_direction/mean_field_numerical_bound.md": "4d0b68e32b7f016b4166cd9a1652e521ef83264d217938add509a29043286667",
+    "_admission/after1174_direction/mean_field_numerical_bound.py": "b83e5e8f262a4f4a6ca8ff0cf88e2cec559d957f31b06e64321b080414739e73",
+    "_admission/after1174_direction/mean_field_candidate/preview.py": "cdc5b6c55f18089ec15d6e4c8b4f6cdb65f5dbba26e3473bf50fd545d7e2042f",
+    "_admission/after1174_direction/mean_field_candidate/results_preview.json": "d361b347e0e4594a2b33925ca425a7e5c71725115620947b285b07f8d5d7efff",
+    "_admission/after1174_direction/mean_field_candidate/unified_probe_extension.py": "7fd536f0c504d0c23d33e9aa9448112e8e4bf246de45c1457eb333d77eeb51c1",
+    "_admission/after1174_direction/mean_field_candidate/results_unified_probe.json": "3bf3e81fc7723e0a8ceefce9876efa4b650b83437a0b4a7c0a7febe8fd1b337d"
+  },
+  "group1_parent_and_full_background_bridge": {
+    "full_CAR_modes_source_per_site": 4,
+    "full_CAR_modes_probe_per_site": 12,
+    "replica_diagonal_terms_included": false,
+    "exact_BG_output_kept": true,
+    "unknown_probe_reference_kept": true,
+    "resource_constants": {
+      "bP_full_Fock_bound": 25.833749999999995,
+      "L_full_Fock_bound": 7094593.593749998,
+      "w_bound": 5015339.062499999,
+      "meanfield_target_eta": 0.0001,
+      "sufficient_log10_K": 52275241.42125688
+    },
+    "K_defined_as_power_of_10": 52275242,
+    "finite_K_budget_per_branch": 0.0001,
+    "full_Kbody_parent_numerically_simulated": false
+  },
+  "group2_autonomous_common_transport": {
+    "parameters": {
+      "grid": 65,
+      "V": 274625,
+      "L": 16.0,
+      "ell": 0.24615384615384617,
+      "T": 2.0,
+      "steps": 2048,
+      "epsilon": 0.15,
+      "nu": 0.35,
+      "Omega": 0.5,
+      "source_mass": 2.0,
+      "probe_masses": [
+        0.3,
+        0.5
+      ],
+      "source_classes": 6545,
+      "probe_modes": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    "unified_mass_labels": [
+      0,
+      0.3,
+      0.5
+    ],
+    "unknown_prepared_dimension": 48,
+    "background": {
+      "tau": 1.8851275756769434,
+      "xi": 1.7319643432461982,
+      "history": [
+        {
+          "t": 0.0,
+          "z": 0.0,
+          "N": 1.0,
+          "v": 1.0,
+          "a": 1.0,
+          "Em": 3.999999999999985,
+          "Et": 0.0
+        },
+        {
+          "t": 0.125,
+          "z": -0.010835735298585027,
+          "N": 0.9983746397052122,
+          "v": 0.9962074926454952,
+          "a": 1.002175397269862,
+          "Em": 1.4031248864395822,
+          "Et": 2.5994009542903913
+        },
+        {
+          "t": 0.25,
+          "z": -0.055630594327355384,
+          "N": 0.9916554108508967,
+          "v": 0.9805292919854256,
+          "a": 1.0113470540415395,
+          "Em": -2.006202523383483,
+          "Et": 6.026872012233323
+        },
+        {
+          "t": 0.375,
+          "z": -0.14365069173989065,
+          "N": 0.9784523962390164,
+          "v": 0.9497222578910383,
+          "a": 1.0302510951062436,
+          "Em": -1.0521188328325914,
+          "Et": 5.046659662419154
+        },
+        {
+          "t": 0.5,
+          "z": -0.2562877552853044,
+          "N": 0.9615568367072044,
+          "v": 0.9102992856501435,
+          "a": 1.0563084601570925,
+          "Em": 1.8694301918700669,
+          "Et": 2.0016061999627786
+        },
+        {
+          "t": 0.625,
+          "z": -0.3734073668058235,
+          "N": 0.9439888949791265,
+          "v": 0.8693074216179618,
+          "a": 1.085909163437449,
+          "Em": 2.42224253447163,
+          "Et": 1.4173960346949737
+        },
+        {
+          "t": 0.75,
+          "z": -0.48547680330481646,
+          "N": 0.9271784795042776,
+          "v": 0.8300831188433142,
+          "a": 1.1169706484288726,
+          "Em": 0.8383533894370339,
+          "Et": 3.1639155615908052
+        },
+        {
+          "t": 0.875,
+          "z": -0.5819739667769949,
+          "N": 0.9127039049834508,
+          "v": 0.7963091116280518,
+          "a": 1.146167853231555,
+          "Em": -0.2429289765492422,
+          "Et": 4.3842828409365575
+        },
+        {
+          "t": 1.0,
+          "z": -0.6484911846960336,
+          "N": 0.902726322295595,
+          "v": 0.7730280853563882,
+          "a": 1.1677794628631277,
+          "Em": 0.13761650084516416,
+          "Et": 3.9415592111596305
+        },
+        {
+          "t": 1.125,
+          "z": -0.6769489157143926,
+          "N": 0.8984576626428411,
+          "v": 0.7630678794999626,
+          "a": 1.1774282298864411,
+          "Em": 0.979986036220458,
+          "Et": 2.953045798512561
+        },
+        {
+          "t": 1.25,
+          "z": -0.6678449003355267,
+          "N": 0.899823264949671,
+          "v": 0.7662542848825656,
+          "a": 1.1743141705074782,
+          "Em": 1.220088031524545,
+          "Et": 2.67025762129744
+        },
+        {
+          "t": 1.375,
+          "z": -0.6234272467807654,
+          "N": 0.9064859129828852,
+          "v": 0.7818004636267322,
+          "a": 1.1594850030885677,
+          "Em": 0.8549629206019007,
+          "Et": 3.0962940097268072
+        },
+        {
+          "t": 1.5,
+          "z": -0.5466671138724547,
+          "N": 0.9179999329191318,
+          "v": 0.8086665101446409,
+          "a": 1.1352021153379224,
+          "Em": 0.5483682947549978,
+          "Et": 3.44899260631952
+        },
+        {
+          "t": 1.625,
+          "z": -0.4450508939733863,
+          "N": 0.933242365903992,
+          "v": 0.8442321871093148,
+          "a": 1.105433292112981,
+          "Em": 0.6282347935587058,
+          "Et": 3.3602585688713043
+        },
+        {
+          "t": 1.75,
+          "z": -0.3304244353403907,
+          "N": 0.9504363346989414,
+          "v": 0.8843514476308633,
+          "a": 1.0747269507446575,
+          "Em": 0.7731922131109045,
+          "Et": 3.201821004017551
+        },
+        {
+          "t": 1.875,
+          "z": -0.21577137884884295,
+          "N": 0.9676342931726736,
+          "v": 0.924480017402905,
+          "a": 1.046679511679441,
+          "Em": 0.6861215115991408,
+          "Et": 3.2936690345052795
+        },
+        {
+          "t": 2.0,
+          "z": -0.1140832906148773,
+          "N": 0.9828875064077685,
+          "v": 0.9600708482847929,
+          "a": 1.0237655983032277,
+          "Em": 0.5721618297458848,
+          "Et": 3.411862062745068
+        }
+      ],
+      "diagnostic_residuals": {
+        "source_bloch_norm": 1.1013068235143919e-10,
+        "G_bloch_norm": 7.301936832959655e-13,
+        "energy_per_site": 5.679012815562601e-12,
+        "probe_unitarity": 4.718914004383009e-15
+      }
+    },
+    "full_48_column_gram_error": 4.718914004383009e-15,
+    "cross_mass_coherent_norm_error": 4.440892098500626e-16,
+    "old_menu_reuse_error": 1.1102230246251565e-16,
+    "initial_comparator_tidal": {
+      "z_second": -1.2,
+      "a_second": 0.24,
+      "FLRW_Kretschmann": 0.6912
+    },
+    "all_three_mobile_clock_effects": {
+      "x_position": {
+        "active": 0.5514261889547263,
+        "proper_time_flat": 0.5547196467286488,
+        "signed_gap": -0.003293457773922537,
+        "complete_input_effect_distance": 0.01466460771818843
+      },
+      "x_joint_clock_minusY": {
+        "active": 0.2719454247076735,
+        "proper_time_flat": 0.27404211370907344,
+        "signed_gap": -0.0020966890013999206,
+        "complete_input_effect_distance": 0.015024644817161653
+      },
+      "y_position": {
+        "active": 0.5461979361254401,
+        "proper_time_flat": 0.5503909414426855,
+        "signed_gap": -0.004193005317245424,
+        "complete_input_effect_distance": 0.014664607718188439
+      },
+      "y_joint_clock_minusY": {
+        "active": 0.2693312982930305,
+        "proper_time_flat": 0.2718777610660918,
+        "signed_gap": -0.0025464627730613087,
+        "complete_input_effect_distance": 0.01502464481716163
+      },
+      "z_position": {
+        "active": 0.5000000000000006,
+        "proper_time_flat": 0.4999999999999997,
+        "signed_gap": 8.326672684688674e-16,
+        "complete_input_effect_distance": 0.014664607718188434
+      },
+      "z_joint_clock_minusY": {
+        "active": 0.24623233023031063,
+        "proper_time_flat": 0.24668229034474887,
+        "signed_gap": -0.0004499601144382359,
+        "complete_input_effect_distance": 0.015024644817161655
+      }
+    }
+  },
+  "group3_fixed_menu_and_error_certificate": {
+    "numerical_enclosure": {
+      "status": "OUTWARD_RESIDUAL_ENCLOSURE_UNDER_DECLARED_IEEE_BASIC_OPERATION_MODEL",
+      "steps": 2048,
+      "F_upper": 1.7670859553060339,
+      "max_L": 4.998100054444514,
+      "max_Hermite_r_norm": 1.0000104867193593,
+      "max_Bloch_residual": 3.089156285171607e-07,
+      "Bloch_terminal_error_bound": 0.0012623025381518402,
+      "integrated_Bloch_error_bound": 0.0002524814428360501,
+      "probe_background_coefficient_error": 5.363833897439382e-05,
+      "probe_own_interpolation_residual_error": 6.528183808557321e-11,
+      "probe_total_numerical_error": 5.3638404256231914e-05,
+      "clock_tau_error": 3.7872216445169506e-05,
+      "clock_xi_error": 8.836850503547217e-05,
+      "massless_active_plus_flat_numerical_operator_error": 4.957461539843241e-05,
+      "flat_clock_calibration_operator_error": 3.3808492842498155e-05,
+      "active_plus_flat_numerical_operator_error": 8.744689709873008e-05,
+      "stored_tau": 1.8851275756769434,
+      "stored_xi": 1.7319643432461982,
+      "not_claimed": "formal IEEE implementation verification or certified hardware/library behavior"
+    },
+    "uniform_48_code_numeric_sum_bound": 8.744789709873008e-05,
+    "numeric_budget": 9e-05,
+    "arithmetic_and_polar_allowance": 1e-09,
+    "lattice_dstar_upper": 0.000611563643,
+    "tau_upper": 1.8851654478933888,
+    "xi_upper": 1.7320527117512339,
+    "two_branch_lattice_error": 0.0022121591152380214,
+    "two_branch_finite_K_error": 0.0002,
+    "instrument_contract_error_per_branch_INPUT": 2e-05,
+    "total_two_branch_probability_budget": 0.002542159115238022,
+    "fixed_y_clock_site_probabilities": {
+      "active": 0.2693312982930305,
+      "proper_time_flat": 0.2718777610660918,
+      "signed_gap": -0.0025464627730613087,
+      "complete_input_effect_distance": 0.01502464481716163
+    },
+    "fixed_massless_x_probabilities": {
+      "active": 0.5785098777116072,
+      "proper_time_flat": 0.5842061595606624,
+      "signed_gap": -0.005696281849055129,
+      "complete_input_effect_distance": 0.01501110293828365
+    },
+    "certified_y_joint_gap_lower": 4.303657823286934e-06,
+    "certified_massless_x_gap_lower": 0.0031541227338171074,
+    "x_joint_gap_is_NOT_claimed_above_budget": true,
+    "instruments_built_in_this_round": false
+  },
+  "group4_delimited_controls": {
+    "pure_lapse_comparator": {
+      "full_prepared_unitary_error": 2.622635853926793e-15,
+      "readouts": {
+        "x_position": {
+          "active": 0.5548066446800077,
+          "proper_time_flat": 0.5548066446800084,
+          "signed_gap": -6.661338147750939e-16,
+          "complete_input_effect_distance": 2.1095833916840737e-15
+        },
+        "x_joint_clock_minusY": {
+          "active": 0.27393655798515654,
+          "proper_time_flat": 0.27393655798515687,
+          "signed_gap": -3.3306690738754696e-16,
+          "complete_input_effect_distance": 1.3660550489788155e-15
+        },
+        "y_position": {
+          "active": 0.5492473555776769,
+          "proper_time_flat": 0.5492473555776776,
+          "signed_gap": -6.661338147750939e-16,
+          "complete_input_effect_distance": 2.1047495468135074e-15
+        },
+        "y_joint_clock_minusY": {
+          "active": 0.2711569134339911,
+          "proper_time_flat": 0.27115691343399156,
+          "signed_gap": -4.440892098500626e-16,
+          "complete_input_effect_distance": 1.3635906746976624e-15
+        },
+        "z_position": {
+          "active": 0.49999999999999917,
+          "proper_time_flat": 0.4999999999999998,
+          "signed_gap": -6.106226635438361e-16,
+          "complete_input_effect_distance": 2.1095833916840737e-15
+        },
+        "z_joint_clock_minusY": {
+          "active": 0.24653323564515225,
+          "proper_time_flat": 0.24653323564515262,
+          "signed_gap": -3.608224830031759e-16,
+          "complete_input_effect_distance": 1.3660550489788159e-15
+        }
+      }
+    },
+    "vacuum_comparator": {
+      "full_prepared_unitary_error": 3.13547930492708e-15
+    },
+    "massless_all_axes": {
+      "x_position": {
+        "active": 0.5785098777116072,
+        "proper_time_flat": 0.5842061595606624,
+        "signed_gap": -0.005696281849055129,
+        "complete_input_effect_distance": 0.01501110293828365
+      },
+      "x_joint_clock_minusY": {
+        "active": 0.2892549388558036,
+        "proper_time_flat": 0.2921030797803312,
+        "signed_gap": -0.0028481409245275646,
+        "complete_input_effect_distance": 0.015011102938283647
+      },
+      "y_position": {
+        "active": 0.4999999999999998,
+        "proper_time_flat": 0.4999999999999998,
+        "signed_gap": 0.0,
+        "complete_input_effect_distance": 0.015011102938283656
+      },
+      "y_joint_clock_minusY": {
+        "active": 0.2499999999999999,
+        "proper_time_flat": 0.2499999999999999,
+        "signed_gap": 0.0,
+        "complete_input_effect_distance": 0.015011102938283649
+      },
+      "z_position": {
+        "active": 0.4999999999999998,
+        "proper_time_flat": 0.4999999999999998,
+        "signed_gap": 0.0,
+        "complete_input_effect_distance": 0.015011102938283647
+      },
+      "z_joint_clock_minusY": {
+        "active": 0.2499999999999999,
+        "proper_time_flat": 0.2499999999999999,
+        "signed_gap": 0.0,
+        "complete_input_effect_distance": 0.015011102938283649
+      }
+    },
+    "finite_K_controls_exactly_flat": false,
+    "passive_reference_joint_probability_error": 5.553824967135427e-17,
+    "passive_reference_change_requires_joint_transport_of_state_H_instruments": true
+  },
+  "not_claimed": [
+    "Einstein dynamics or completed GR hard deliverables",
+    "dimension generation or arbitrary background classicalization",
+    "all continuum position PVMs and their arbitrary intervening histories",
+    "practical preparation of K replicas or manufactured instruments",
+    "dark energy or observational cosmology evidence"
+  ]
+}

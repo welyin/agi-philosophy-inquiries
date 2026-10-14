@@ -1,0 +1,65 @@
+{
+  "schema": "operational_thermodynamics_round_acceptance_v1",
+  "round": 1204,
+  "date": "2026-10-14",
+  "status": "ACCEPTED_WITH_SCOPE",
+  "check_groups": 2,
+  "scope": "固定两独立100材料能窗、保失败/标签的λ三点准备和原自主QQ/能源指针，给实际定向流、均温对照、有限响应/耗竭及完整多参考熵账。对换A读的统计代理与同次实际Q推断分开；未授普遍温度序、自动准备程序、区域几何或GR。",
+  "certified": {
+    "cold_window": [
+      "39/2",
+      "41/2"
+    ],
+    "hot_window": [
+      "79/2",
+      "81/2"
+    ],
+    "hot_shell_dimension": "25275816084126394831643399421736368715529309287003959388080",
+    "hot_selected_types": 2391,
+    "hot_seed_bits": 1950,
+    "hot_failure_upper": "0.000913369901",
+    "conditional_mixture_weight_accounts_for_unequal_failures": true,
+    "hot_beta_comparison": "1/3, after independent preparation",
+    "hot_reference_trace_error_upper": "0.003949977019",
+    "initial_two_reference_relative_entropy_defect_upper": "0.000502765845",
+    "four_nonzero_label_branches_actual_direction_positive": true,
+    "weakest_half_preparation_actual_Q_lower": ".01373963",
+    "actual_swap_symmetry_of_readout_parent_claimed": false,
+    "future_measurement_inference_uses_two_model_error_allowances": true,
+    "all_possible_observations_guaranteed_positive_confidence_lower": false,
+    "mixed_AB_clock_rank_bound": 1024,
+    "Y_clock_record_rank_bound": 256,
+    "clock_work_direction_for_600_certified": false
+  },
+  "remaining_inputs": [
+    "1202 finite reversible energy-window preparation and known level inventories",
+    "1203 positive-energy clock, fixed gates, pure pointer and matched velocity/program preparation",
+    "terminal A-label interrogation with normalized pointer-distribution readout/classification/calibration budget",
+    "additional source/clock/pointer preparation deviations need a separate full-state trace or prepared-isometry contract",
+    "actual 3D region, signal and metric identity"
+  ],
+  "limits": [
+    "universal hot-to-cold theorem under all driven contacts",
+    "exact Gibbs or attracting equilibrium",
+    "free repeated use or clock reset",
+    "record entropy as heat",
+    "area entropy, Unruh or GR"
+  ],
+  "new_adopted_axioms": 0,
+  "new_empirical_calibration": 0,
+  "GR_hard_deliverables_completed": 0,
+  "stage_complete": false,
+  "root_executed_both_codes": true,
+  "review": "Independent integer and native matrix reconstruction, fixed-budget inference and retained-resource/entropy audit; root read proofs and ran both programs. No physical experiment.",
+  "files_sha256": {
+    "proof.md": "9ccd911f0b13f1f2b52dcf9b1f344577dadffa285c720c60dbfcb521ca8f6151",
+    "check.py": "4d8517a6ac4bd83990a53fb869a2ce6e3f33940352b781d81ce0734ad2ed1f20",
+    "results.json": "61a57b8e936af8c40ade3b1dbe8d5f3614432d85af61388ec821d07db43897e9",
+    "independent_check.py": "53c14b283497ffc3f0d1206fe707afdcd75648ac8c3a31c433d49fae39fec986",
+    "independent_results.json": "853a33c9211b9ccd739b7f2c27d958325ada8be404e9cbef8a8a6e49f5c16a4e",
+    "independent_review.md": "e0a40daa84ead6e0d9d618fe6bcb2db71b1e3392222961557440d762ea21b353",
+    "NEXT.md": "3cab0f25f2574676fd67cba96b1b1b7b4a998e0c4e1ecc2dbf2911dbbaa840cc",
+    "../research_note_1204.md": "15c63959c7452c11aae37501ac1be83cadd5d9159627ac0e5d9179d01f9ac792",
+    "../_shared/goal.md": "5ebfd7cd14daec1d26010925774f510a78d0672cab518b77a03de454b8a377d7"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "status": "PASS_WITH_SCOPE",
+  "params": {
+    "z_reference_decimal": 0.989835554078098,
+    "lapse_N": 1.1484753331117146,
+    "velocity_v": 1.3464424439273341,
+    "ell": 0.24615384615384617,
+    "mass": 2.0,
+    "mu": 0.41992380993825135,
+    "period": 65,
+    "region_sites": 32,
+    "boost_beta_test": 6.283185307179586,
+    "analytic_strip_eta": 0.4
+  },
+  "original_covariance_crosscheck": {
+    "negative_rank": 65,
+    "fourier_vs_direct_negative_projector_opnorm": 5.305340819341515e-15,
+    "hamiltonian_min_abs_energy_dimensionless": 0.41992380993825135
+  },
+  "selected_mode": {
+    "positive_mode_index": 32,
+    "rayleigh_lambda": 0.356518434051165,
+    "inside_eigen_residual": 1.8129176189118445e-16,
+    "last_site_weight": 2.897425619184357e-13,
+    "covariance_occupation": 0.10432585528687253,
+    "geometric_boost_fermi_occupation": 0.09620933424841982,
+    "signed_difference": 0.008116521038452715
+  },
+  "analytic_boundary_controls": {
+    "all_finite_boost_extensions_bound": 1.4088674143967947e-10,
+    "periodic_vs_infinite_reference_bound": 7.457132917709944e-10,
+    "complex_symbol_norm_bound": 9.098326162181257,
+    "combined_boundary_bound": 8.866000332106739e-10,
+    "difference_minus_boundary_bounds": 0.008116520151852682
+  },
+  "auxiliary_extension_checks": [
+    {
+      "auxiliary_boost_length": 48,
+      "occupation_same_zero_extended_mode": 0.09620933424960526,
+      "difference_from_finite_boost": 1.1854406345435109e-12,
+      "residual_squared": 7.417409585111954e-11,
+      "analytic_bound_with_fp_slack_pass": true
+    },
+    {
+      "auxiliary_boost_length": 64,
+      "occupation_same_zero_extended_mode": 0.09620933424960526,
+      "difference_from_finite_boost": 1.1854406345435109e-12,
+      "residual_squared": 7.417409585111954e-11,
+      "analytic_bound_with_fp_slack_pass": true
+    },
+    {
+      "auxiliary_boost_length": 96,
+      "occupation_same_zero_extended_mode": 0.0962093342496052,
+      "difference_from_finite_boost": 1.1853851233922796e-12,
+      "residual_squared": 7.417409585111954e-11,
+      "analytic_bound_with_fp_slack_pass": true
+    }
+  ],
+  "local_read_support": [
+    {
+      "prefix_sites": 8,
+      "discarded_mode_weight": 0.00012895814938319603,
+      "one_model_occupation_change_bound": 0.011355974171474503,
+      "normalized_prefix_occupation": 0.10433426645170785,
+      "measured_probability_change": 8.411164835311902e-06
+    },
+    {
+      "prefix_sites": 12,
+      "discarded_mode_weight": 3.4093426112005467e-06,
+      "one_model_occupation_change_bound": 0.001846440524685414,
+      "normalized_prefix_occupation": 0.10432610956494238,
+      "measured_probability_change": 2.5427806985001133e-07
+    },
+    {
+      "prefix_sites": 16,
+      "discarded_mode_weight": 9.954454111691899e-08,
+      "one_model_occupation_change_bound": 0.000315506800428959,
+      "normalized_prefix_occupation": 0.10432586325840101,
+      "measured_probability_change": 7.971528478978307e-09
+    },
+    {
+      "prefix_sites": 24,
+      "discarded_mode_weight": 9.843054476519475e-11,
+      "one_model_occupation_change_bound": 9.92121689941283e-06,
+      "normalized_prefix_occupation": 0.1043258552953148,
+      "measured_probability_change": 8.44226077933996e-12
+    }
+  ],
+  "scope": [
+    "Independent floating-point deployment of explicit analytic inequalities, not interval certification.",
+    "Original finite 65-site negative-energy covariance, no logarithm or clipping of covariance eigenvalues.",
+    "The larger boost matrices are auxiliary boundary comparisons, not an enlarged physical preparation.",
+    "Fixed Hartree/reference effective block only; no complete finite-K ground-state certification.",
+    "Occupation-effect comparison only; no implemented measurement instrument, post-state or full source-insertion certificate.",
+    "Mismatch of this fixed lattice candidate is not a no-go for Unruh, effective Lorentz symmetry, or general relativity."
+  ]
+}

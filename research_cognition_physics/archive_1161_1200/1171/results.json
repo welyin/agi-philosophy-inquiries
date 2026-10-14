@@ -1,0 +1,201 @@
+{
+  "schema": "cognitive_physics_round_1171_v1",
+  "round": 1171,
+  "status": "PASS_WITH_SCOPE",
+  "check_groups": 3,
+  "new_adopted_axioms": 0,
+  "new_empirical_calibration": 0,
+  "gr_hard_deliverables_completed": 0,
+  "source_sha256": {
+    "archive_223_230/research_note_225.md": "9dc8a13ef9d34779a0a2fb03f9a970a678f86dc26fb60851c8e2ac8e6b926d72",
+    "archive_231_258/research_note_242.md": "fecc9b89b925dcc761074479daac502e64db49ae0a8d6fad5b40c522af4d9edb",
+    "archive_467_530/research_note_471.md": "ff45a09b0d087de085c0c2db35a93692d487801b0adf6b659a05364894af872f",
+    "archive_554_584/research_note_578.md": "ad971d84217960b52411334923f8b54bacced4e3093530924756f0849787c980",
+    "archive_854_872/research_note_856.md": "6474f01f70a35d85d23e903ee73c4cc4fed8e4796f1dd94fd3ed52f3b1b31b4d",
+    "archive_894_922/research_note_894.md": "051d3e0c08176a30f7f9b687e726bb144cd7b0889bc1e3ca2fcc716c2eac57a3",
+    "archive_1120_1158/research_note_1136.md": "430a5776c1ccc09e0f3443ebd9f4c9bc233f2074f756cac597482d517ebd0dc8",
+    "archive_797_818/research_note_803.md": "c13362b464c0729dfd2f16b79c786344bf85db7988329fbc39b231bc5750ff12",
+    "archive_1161_/1170/acceptance.json": "e0d3fe2ee607a47adb7784cb8551b12388e92437112e55e36749ce46d3b3e7ce"
+  },
+  "code_sha256": "7a88684bad79f61f7f436bcfb678f0d6a5f28620074a3d1b512463ff4a2e0892",
+  "source_and_composition": {
+    "status": "PASS",
+    "errors": {
+      "source_composition": 2.5798393573631314e-16,
+      "hermiticity": 1.0095387231917411e-16,
+      "periodic_u": 1.1102230246251565e-16,
+      "periodic_v": 5.551115123125783e-17
+    },
+    "diamond_tangent_witnesses": [
+      {
+        "dimension": 2,
+        "diameter": 1.414213562373095,
+        "extremal_state_trace_norm": 1.4142135623730947,
+        "centering_upper": 1.4142135623730954
+      },
+      {
+        "dimension": 3,
+        "diameter": 5.0,
+        "extremal_state_trace_norm": 4.999999999999998,
+        "centering_upper": 5.0
+      }
+    ],
+    "C0_does_not_bound_derivative": [
+      {
+        "N": 16,
+        "channel_C0_sup": 0.24934946677045539,
+        "source_diameter_at_zero": 4.0
+      },
+      {
+        "N": 64,
+        "channel_C0_sup": 0.1249186356847604,
+        "source_diameter_at_zero": 8.0
+      },
+      {
+        "N": 256,
+        "channel_C0_sup": 0.06248982797065216,
+        "source_diameter_at_zero": 16.0
+      }
+    ],
+    "proof_not_SDP_or_samples": "Extremal-state lower witness plus complete-norm upper proof."
+  },
+  "coherent_lift_return": {
+    "status": "PASS",
+    "fixed_q_D_channel_difference": 8.000752159618322e-18,
+    "cases": [
+      {
+        "n": 0,
+        "J_eigenvalues": [
+          0,
+          1
+        ],
+        "prefix_momentum_support": [
+          [
+            0
+          ],
+          [
+            -1,
+            0
+          ],
+          [
+            -1,
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "loop_error": 0.0,
+        "inverse_link_errors": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ideal_Y_expectation": -0.9999999999999998,
+        "rotor_returns_p0": true
+      },
+      {
+        "n": 1,
+        "J_eigenvalues": [
+          -1,
+          0
+        ],
+        "prefix_momentum_support": [
+          [
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "loop_error": 0.0,
+        "inverse_link_errors": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ideal_Y_expectation": 0.9999999999999998,
+        "rotor_returns_p0": true
+      }
+    ],
+    "ideal_record_gap": 1.0,
+    "same_channel_scope": "Known n restrictions on D; not the full coherent N x D channel."
+  },
+  "autonomous_positive_completion": {
+    "status": "PASS",
+    "inertia": 1000.0,
+    "actual_autonomous_duration": 3.141592653589793,
+    "PST_error": 4.550699115026034e-15,
+    "uniform_prepared_isometry_bound": 0.0015707963267948967,
+    "actual_record_gap": 0.9999998584038335,
+    "certified_record_gap_lower": 0.9968584073464102,
+    "cases": [
+      {
+        "n": 0,
+        "exact_sector_dimension": 20,
+        "ambient_modes_for_embedding": [
+          -1,
+          0
+        ],
+        "p2_sector_invariance_error": 0.0,
+        "prepared_isometry_error": 0.0005321581832324323,
+        "record1_probability_all_heads": 0.9999999127697852,
+        "head_failure_probability_plus": 3.286426308868329e-08,
+        "independent_5x5_record1_probability": 0.9999999127697857,
+        "independent_transfer_amplitude_real": 0.999999858403834,
+        "independent_transfer_amplitude_imag": -0.0004663301262338036,
+        "energy_input_all_logical_states": 2.0,
+        "energy_conservation_error": 1.776356839401345e-15,
+        "final_rotor_energy_operator_norm": 3.0153490465050426e-11,
+        "final_program_energy_min": 1.9999999999698486,
+        "hamiltonian_min": -1.1102230246251565e-16,
+        "hamiltonian_max": 4.00031253352531,
+        "bell_reference_trace_distance": 0.0002953476171228921
+      },
+      {
+        "n": 1,
+        "exact_sector_dimension": 20,
+        "ambient_modes_for_embedding": [
+          0,
+          1
+        ],
+        "p2_sector_invariance_error": 0.0,
+        "prepared_isometry_error": 0.0005321581832322099,
+        "record1_probability_all_heads": 5.436595167112532e-08,
+        "head_failure_probability_plus": 3.28642637548171e-08,
+        "independent_5x5_record1_probability": 5.4365951670677365e-08,
+        "independent_transfer_amplitude_real": 0.999999858403834,
+        "independent_transfer_amplitude_imag": -0.0004663301262338036,
+        "energy_input_all_logical_states": 2.0,
+        "energy_conservation_error": 1.7857333706672826e-15,
+        "final_rotor_energy_operator_norm": 3.015349046517555e-11,
+        "final_program_energy_min": 1.9999999999698463,
+        "hamiltonian_min": -1.4504259319958253e-15,
+        "hamiltonian_max": 4.000312533525309,
+        "bell_reference_trace_distance": 0.0002953476182506036
+      }
+    ],
+    "postselection": false,
+    "mode_cutoff_used": false,
+    "program_register_total_exact_sector_dimension": 40,
+    "selfadjointness": "Positive bounded H_prog plus p^2/(2I), domain D(p^2).",
+    "hardware_preparation_and_terminal_accuracy_certified": false
+  },
+  "scope": "Known coherent implementation and finite preparation/readout permissions; no local geometry, actual spacetime signal or Einstein selection."
+}

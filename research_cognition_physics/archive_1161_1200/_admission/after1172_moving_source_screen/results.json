@@ -1,0 +1,130 @@
+{
+  "status": "ADMISSION_SCREEN_ONLY_NOT_A_NUMBERED_ROUND",
+  "source_fingerprints": {
+    "1129": {
+      "path": "archive_1120_1158/1129/proof.md",
+      "sha256": "c835b90f123547f7d224c72e1e0cbf89e1dd2fa377ae67ce90b1211922fcfefa"
+    },
+    "1144": {
+      "path": "archive_1120_1158/1144/proof.md",
+      "sha256": "205dc68aec100de83b59f0f156a1afc8048dcdd87d45280dd2df242c89cde939"
+    },
+    "1146": {
+      "path": "archive_1120_1158/1146/proof.md",
+      "sha256": "0350230f9649aba387ff89aeeff5201300e1d999418ee3aa0639b79936ab8583"
+    }
+  },
+  "parameters": {
+    "sites": 9,
+    "spacing": 1,
+    "periodic": true,
+    "mass_values": [
+      2.0,
+      2.4
+    ],
+    "KG_mass": 0.8,
+    "time": 2.0,
+    "packet_width": 0.8,
+    "source_translation_sites": 5,
+    "probe_p0": 0.7,
+    "endpoint_sites": [
+      0,
+      1,
+      2
+    ],
+    "fine_grid": 4097,
+    "coarse_grid": 2049
+  },
+  "same_energy_preparation": {
+    "translation_commutator_norm": 0.0,
+    "source_energy_moment_differences_1_to_4": [
+      4.440892098500626e-16,
+      8.881784197001252e-16,
+      4.196601348819787e-31,
+      3.552713678800501e-15
+    ],
+    "source_norms": [
+      0.9999999999999999,
+      0.9999999999999999
+    ],
+    "probe_norm": 1.0,
+    "source_code_isometry_error": 1.5386123473637474e-16,
+    "probe_code_isometry_error": 2.672127715877317e-16,
+    "source_energy": 2.2606316750415862,
+    "probe_energy": 2.3007129179215324
+  },
+  "second_order_effects": {
+    "clock": {
+      "free_probability": 0.15366081326940326,
+      "source_cross_coefficient": 0.07426359506967754,
+      "coarse_coefficient": 0.07426359453282441,
+      "refinement_difference": 5.368531313942881e-10,
+      "analytic_trapezoid_error_bound": 0.00018393145547658822,
+      "floating_allowance_not_interval_certified": 1e-10,
+      "screen_lower_coefficient": 0.07407966351420096,
+      "screen_upper_coefficient": 0.07444752662515412
+    },
+    "endpoint": {
+      "free_probability": 0.32984614775164733,
+      "source_cross_coefficient": 0.01411499828714312,
+      "coarse_coefficient": 0.014114993987155433,
+      "refinement_difference": 4.29998768709805e-09,
+      "analytic_trapezoid_error_bound": 0.00018393145547658822,
+      "floating_allowance_not_interval_certified": 1e-10,
+      "screen_lower_coefficient": 0.013931066731666532,
+      "screen_upper_coefficient": 0.014298929842619709
+    },
+    "joint": {
+      "free_probability": 0.05112598652978424,
+      "source_cross_coefficient": 0.006926933765487805,
+      "coarse_coefficient": 0.00692693363267828,
+      "refinement_difference": 1.3280952466249163e-10,
+      "analytic_trapezoid_error_bound": 0.00018393145547658822,
+      "floating_allowance_not_interval_certified": 1e-10,
+      "screen_lower_coefficient": 0.006743002210011217,
+      "screen_upper_coefficient": 0.007110865320964392
+    }
+  },
+  "prepared_Dyson": {
+    "domain": "two first-quantized one-particle sectors and exact KG vacuum",
+    "fmax": 0.5990748474094227,
+    "current_number_bound_C": 2.875559267565229,
+    "coupling_example": 1e-06,
+    "z": 1.1502237070260916e-05,
+    "prepared_second_order_norm_remainder_bound": 6.212606060766714e-16,
+    "state_to_Dyson_polynomial_contrast_bound": 2.485042424306686e-15,
+    "Dyson_polynomial_quartic_contrast_bound": 1.750367568850484e-20,
+    "two_preparation_probability_contrast_remainder_bound": 2.4850599279823744e-15,
+    "joint_screen_signal_lower": 6.743002210011217e-15,
+    "joint_screen_net_lower": 4.257942282028843e-15,
+    "instrument_error_budget_certified": false,
+    "CAR_normal_ordering_constant_included_in_this_C": false
+  },
+  "normal_CAR_responsibility": {
+    "negative_band_rank_per_species": 18,
+    "normal_order_energy_shift_per_species": 41.586109743735605,
+    "local_scalar_normal_order_constants_per_species": [
+      -4.194935092226107,
+      -4.194935092226105,
+      -4.194935092226107,
+      -4.194935092226108,
+      -4.194935092226109,
+      -4.1949350922261095,
+      -4.194935092226107,
+      -4.194935092226107,
+      -4.194935092226105
+    ],
+    "constant_translation_variation": 4.440892098500626e-15,
+    "normal_Fock_completion_implemented": false,
+    "comment": "Constants cancel in source contrast but enlarge a naive Dyson C."
+  },
+  "not_certified": [
+    "actual_CO_instrument",
+    "positive_full_CAR_joint_model",
+    "continuum_limit",
+    "strict_null_causality",
+    "common_dynamic_metric",
+    "Einstein_equation"
+  ],
+  "check_sha256": "d1099ca11e4eb32c721c580a7643381b49a5af7205ae1ac23b266165b6d5b029"
+}

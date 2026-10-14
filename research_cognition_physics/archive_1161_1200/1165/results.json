@@ -1,0 +1,352 @@
+{
+  "schema": "round1165_isospectral_transport_distance_v1",
+  "status": "PASS",
+  "check_groups": 4,
+  "code_sha256": "086d32d43af668c7fd18db908aee0e4cf9fab131d44ff5fe256e5a5a5b1e2476",
+  "source_sha256": {
+    "../1161/check.py": "52edf7a1dfc530996daa88ee3715efa936f7c5845eefe067124a544688621119",
+    "../1164/proof.md": "c20ace2c8163d278933e2f3232d2df791fe60d9046a9d14fac5b1d6dae8e68cc",
+    "../1164/check.py": "dd11c2df91bff7ceb3049673409b4d4de560ee6eb92f04d26367cb1a111742dd",
+    "../1164/results.json": "24ef020b4b33538dc26bab116de2e13651b01aba0dc3264dc45e7eb0da55366e"
+  },
+  "original_process_replay": "1160 calculate matched frozen results through 1161 reuse",
+  "full_material": {
+    "dimension": 13824,
+    "D_spectrum_error": 3.5168276637357584e-13,
+    "old_level_multiplicities": [
+      3456,
+      3456,
+      3456,
+      3456
+    ],
+    "actual_unknown_input_gram_error": 4.071937794123934e-15,
+    "deformed_level_multiplicities": [
+      {
+        "q": -0.01,
+        "multiplicities_by_D_level": [
+          [
+            864,
+            1728,
+            864
+          ],
+          [
+            864,
+            1728,
+            864
+          ],
+          [
+            864,
+            1728,
+            864
+          ],
+          [
+            864,
+            1728,
+            864
+          ]
+        ],
+        "interband_gap": 0.871997037215436
+      },
+      {
+        "q": -0.003,
+        "multiplicities_by_D_level": [
+          [
+            864,
+            1728,
+            864
+          ],
+          [
+            864,
+            1728,
+            864
+          ],
+          [
+            864,
+            1728,
+            864
+          ],
+          [
+            864,
+            1728,
+            864
+          ]
+        ],
+        "interband_gap": 0.9615999200050928
+      },
+      {
+        "q": 0.003,
+        "multiplicities_by_D_level": [
+          [
+            864,
+            1728,
+            864
+          ],
+          [
+            864,
+            1728,
+            864
+          ],
+          [
+            864,
+            1728,
+            864
+          ],
+          [
+            864,
+            1728,
+            864
+          ]
+        ],
+        "interband_gap": 0.9615999200050928
+      },
+      {
+        "q": 0.01,
+        "multiplicities_by_D_level": [
+          [
+            864,
+            1728,
+            864
+          ],
+          [
+            864,
+            1728,
+            864
+          ],
+          [
+            864,
+            1728,
+            864
+          ],
+          [
+            864,
+            1728,
+            864
+          ]
+        ],
+        "interband_gap": 0.871997037215436
+      }
+    ]
+  },
+  "unitary_orbit": {
+    "formula": "2*(sqrt(9+16*exp(2*abs(q)))-5)",
+    "maximum_identity_error": 5.6066262743570405e-15,
+    "cases": [
+      {
+        "q": -0.01,
+        "analytic_distance": 0.06443668377482376,
+        "sorted_spectral_bound": 0.06443668377482936,
+        "identity_upper_bound": 0.06443668377482403,
+        "top_spectral_lower_bound": 0.06443668377482936
+      },
+      {
+        "q": -0.003,
+        "analytic_distance": 0.019239208016751976,
+        "sorted_spectral_bound": 0.019239208016756493,
+        "identity_upper_bound": 0.01923920801675294,
+        "top_spectral_lower_bound": 0.019239208016756493
+      },
+      {
+        "q": 0.0,
+        "analytic_distance": 0.0,
+        "sorted_spectral_bound": 0.0,
+        "identity_upper_bound": 0.0,
+        "top_spectral_lower_bound": 0.0
+      },
+      {
+        "q": 0.003,
+        "analytic_distance": 0.019239208016751976,
+        "sorted_spectral_bound": 0.019239208016756493,
+        "identity_upper_bound": 0.01923920801675294,
+        "top_spectral_lower_bound": 0.019239208016756493
+      },
+      {
+        "q": 0.01,
+        "analytic_distance": 0.06443668377482376,
+        "sorted_spectral_bound": 0.06443668377482936,
+        "identity_upper_bound": 0.06443668377482403,
+        "top_spectral_lower_bound": 0.06443668377482936
+      }
+    ]
+  },
+  "common_scale_and_tangent": {
+    "affine_optimum": "abs(Ey-Ex) for abs(q)<=1/100",
+    "noninterlacing_two_delta_bound": "32/147",
+    "affine_error": 9.520162436160717e-15,
+    "cases": [
+      {
+        "q": -0.01,
+        "scale": 0.9,
+        "optimum_offset_for_scale": 3.8222149910906786,
+        "sorted_spectral_error": 0.21400148139229103,
+        "lower_bound_all_positive_scales": 0.064001481392282
+      },
+      {
+        "q": -0.01,
+        "scale": 1.0,
+        "optimum_offset_for_scale": 0.0004352023825440199,
+        "sorted_spectral_error": 0.06400148139228534,
+        "lower_bound_all_positive_scales": 0.064001481392282
+      },
+      {
+        "q": -0.01,
+        "scale": 1.1,
+        "optimum_offset_for_scale": -3.8213445863255977,
+        "sorted_spectral_error": 0.21400148139227682,
+        "lower_bound_all_positive_scales": 0.064001481392282
+      },
+      {
+        "q": -0.003,
+        "scale": 0.9,
+        "optimum_offset_for_scale": 3.8218189567274337,
+        "sorted_spectral_error": 0.16920003999746314,
+        "lower_bound_all_positive_scales": 0.019200039997453643
+      },
+      {
+        "q": -0.003,
+        "scale": 1.0,
+        "optimum_offset_for_scale": 3.916801929904068e-05,
+        "sorted_spectral_error": 0.019200039997457452,
+        "lower_bound_all_positive_scales": 0.019200039997453643
+      },
+      {
+        "q": -0.003,
+        "scale": 1.1,
+        "optimum_offset_for_scale": -3.8217406206888427,
+        "sorted_spectral_error": 0.16920003999744893,
+        "lower_bound_all_positive_scales": 0.019200039997453643
+      },
+      {
+        "q": 0.003,
+        "scale": 0.9,
+        "optimum_offset_for_scale": 3.8218189567274337,
+        "sorted_spectral_error": 0.16920003999746314,
+        "lower_bound_all_positive_scales": 0.019200039997453643
+      },
+      {
+        "q": 0.003,
+        "scale": 1.0,
+        "optimum_offset_for_scale": 3.916801929904068e-05,
+        "sorted_spectral_error": 0.019200039997457452,
+        "lower_bound_all_positive_scales": 0.019200039997453643
+      },
+      {
+        "q": 0.003,
+        "scale": 1.1,
+        "optimum_offset_for_scale": -3.8217406206888427,
+        "sorted_spectral_error": 0.16920003999744893,
+        "lower_bound_all_positive_scales": 0.019200039997453643
+      },
+      {
+        "q": 0.01,
+        "scale": 0.9,
+        "optimum_offset_for_scale": 3.8222149910906786,
+        "sorted_spectral_error": 0.21400148139229103,
+        "lower_bound_all_positive_scales": 0.064001481392282
+      },
+      {
+        "q": 0.01,
+        "scale": 1.0,
+        "optimum_offset_for_scale": 0.0004352023825440199,
+        "sorted_spectral_error": 0.06400148139228534,
+        "lower_bound_all_positive_scales": 0.064001481392282
+      },
+      {
+        "q": 0.01,
+        "scale": 1.1,
+        "optimum_offset_for_scale": -3.8213445863255977,
+        "sorted_spectral_error": 0.21400148139227682,
+        "lower_bound_all_positive_scales": 0.064001481392282
+      }
+    ],
+    "zero_block_commutator_error": 0.0,
+    "unremoved_block_half_widths": [
+      6.4,
+      6.4,
+      6.4,
+      6.400000000000001
+    ],
+    "source_derivative_error": 9.521716748395193e-11,
+    "source_slope": 6.4
+  },
+  "finite_precision": {
+    "cases": [
+      {
+        "q": 0.01,
+        "duration": 0.5,
+        "energy_operator_distance": 0.06443668377482376,
+        "affine_energy_distance": 0.064001481392282,
+        "duhamel_isometry_upper_bound": 0.03221834188741188,
+        "original_output_column_norms": [
+          0.03221694843327116,
+          0.032000114760676907,
+          0.03221694843327116
+        ]
+      },
+      {
+        "q": 0.01,
+        "duration": 2.0,
+        "energy_operator_distance": 0.06443668377482376,
+        "affine_energy_distance": 0.064001481392282,
+        "duhamel_isometry_upper_bound": 0.1288733675496475,
+        "original_output_column_norms": [
+          0.12878420384026482,
+          0.1279185303632644,
+          0.12878420384026482
+        ]
+      },
+      {
+        "q": 0.0001,
+        "duration": 0.5,
+        "energy_operator_distance": 0.0006400435214814103,
+        "affine_energy_distance": 0.0006400000014813867,
+        "duhamel_isometry_upper_bound": 0.00032002176074070516,
+        "original_output_column_norms": [
+          0.0003200217593754723,
+          0.00032000000011556747,
+          0.0003200217593754723
+        ]
+      },
+      {
+        "q": 0.0001,
+        "duration": 2.0,
+        "energy_operator_distance": 0.0006400435214814103,
+        "affine_energy_distance": 0.0006400000014813867,
+        "duhamel_isometry_upper_bound": 0.0012800870429628206,
+        "original_output_column_norms": [
+          0.0012800869555651777,
+          0.001279999918542269,
+          0.0012800869555651777
+        ]
+      },
+      {
+        "q": 1e-06,
+        "duration": 0.5,
+        "energy_operator_distance": 6.400004352001481e-06,
+        "affine_energy_distance": 6.40000000000148e-06,
+        "duhamel_isometry_upper_bound": 3.2000021760007404e-06,
+        "original_output_column_norms": [
+          3.2000021761277734e-06,
+          3.200000000091393e-06,
+          3.2000021761277734e-06
+        ]
+      },
+      {
+        "q": 1e-06,
+        "duration": 2.0,
+        "energy_operator_distance": 6.400004352001481e-06,
+        "affine_energy_distance": 6.40000000000148e-06,
+        "duhamel_isometry_upper_bound": 1.2800008704002962e-05,
+        "original_output_column_norms": [
+          1.2800008704429179e-05,
+          1.2800000000283652e-05,
+          1.2800008704429179e-05
+        ]
+      }
+    ],
+    "distance_slope_error": 4.35200148096726e-06,
+    "nonzero_operator_lower_bound_is_not_measurement_probability": true
+  },
+  "new_adopted_axioms": 0,
+  "new_empirical_calibration": 0,
+  "scope": "Frozen finite boundary-material spectrum; no new geometry instrument, physical W, or GR completion."
+}

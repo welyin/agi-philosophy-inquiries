@@ -1,0 +1,265 @@
+{
+  "round": 1173,
+  "status": "PASS_WITH_SCOPE",
+  "scientific_groups": 3,
+  "actual_process": "finite local conditional shift and onsite coin; analytic certificate",
+  "numerically_integrated": "midpoint Dirac comparator, not full actual QW",
+  "source_sha256": {
+    "archive_342_369/research_note_349.md": "ff5cc757f8c330b3ca095185bd60db826c9f4a1c80b29dad84da994123c41c80",
+    "archive_342_369/research_note_350.md": "b940327746d7e811572b1d05fda1c6cd5e711b06b545c7f66fb4791c6bb4fcc0",
+    "archive_585_628/research_note_622.md": "4169cd07be1dd3caf8e541c666838c2ef15df87d5fbd2674138a0325c54e0523",
+    "archive_585_628/research_note_624.md": "1f164af6c052dec40648348b9c9b4144bc37a8f80ca258d91be52dd1ed00f49a",
+    "archive_1120_1158/1146/proof.md": "0350230f9649aba387ff89aeeff5201300e1d999418ee3aa0639b79936ab8583",
+    "archive_1120_1158/1155/proof.md": "b06c03d52b14f4ebf978f9445a22b3fc2f3308a79715b175214222350a0a7a58",
+    "archive_1161_/1171/proof.md": "ecf48b81b9b42a21bcf7007b386bae16132cb9849e3fc939f02c398860e8d4ea",
+    "archive_1161_/_shared/goal.md": "8acafd3ed835d581a543de077e1e6ea6c120b6e78c7a1e271e749f263e422667"
+  },
+  "parameters": {
+    "L": 96.0,
+    "T": 8.0,
+    "a": 1.52587890625e-05,
+    "actual_sites": 6291456,
+    "actual_QW_steps": 524288,
+    "band_n": [
+      -128,
+      128
+    ],
+    "band_dimension": 257,
+    "masses": [
+      3.0,
+      3.4
+    ],
+    "reference_steps": 8192,
+    "prepared_p_center": 4.0,
+    "prepared_finite_envelope_sigma_p": 0.6,
+    "port_threshold": 5.8,
+    "first_port_site": 3525837,
+    "port_site_count": 2765619
+  },
+  "group1_complete_algebra_and_clock": {
+    "prepared_dimension_with_source": 2056,
+    "max_comparator_block_unitarity_error": 3.8991058586400926e-14,
+    "static_clock_tau": [
+      8.0,
+      12.0
+    ],
+    "static_clock_minusY_probabilities": [
+      0.47081292828620996,
+      0.0019176955820797148
+    ],
+    "same_integral_different_order_operator_difference": 0.210692328834038,
+    "commutator_identity_error": 0.0,
+    "massless_identity_error": 0.0,
+    "port_effect_eigenvalue_extremes": [
+      -2.153168828040825e-15,
+      1.0000000000000073
+    ]
+  },
+  "group2_same_moving_clock_position_and_source": {
+    "branches": {
+      "q0_d0": {
+        "comparator_site_port": 0.7246051136492043,
+        "comparator_continuous_port": 0.7246034314410419,
+        "both_frequency_components_retained_negative_weight": 5.817953497432758e-33
+      },
+      "q0_d1": {
+        "comparator_site_port": 0.6025902028011026,
+        "comparator_continuous_port": 0.6025882979570353,
+        "both_frequency_components_retained_negative_weight": 6.181761003579137e-33
+      },
+      "q1_d0": {
+        "comparator_site_port": 0.3066924138008949,
+        "comparator_continuous_port": 0.30669071166099704,
+        "both_frequency_components_retained_negative_weight": 1.2576308575045952e-06
+      },
+      "q1_d1": {
+        "comparator_site_port": 0.19010180826172451,
+        "comparator_continuous_port": 0.1901005000492329,
+        "both_frequency_components_retained_negative_weight": 1.0508600956585103e-06
+      }
+    },
+    "moving_clock_joint_effects": {
+      "q0": {
+        "joint_clock_minusY_site_port_effect": {
+          "real": [
+            [
+              0.36230255682460216,
+              0.3028151486397868
+            ],
+            [
+              0.30281514863978687,
+              0.3012951014005513
+            ]
+          ],
+          "imag": [
+            [
+              1.82606324075675e-17,
+              -0.12632645843577284
+            ],
+            [
+              0.12632645843577284,
+              -1.2025637772079622e-17
+            ]
+          ]
+        },
+        "unknown_internal_effect_eigenvalues": [
+          0.0022751338325701087,
+          0.6613225243925833
+        ],
+        "plus_internal_joint_probability": 0.6346139777523635,
+        "port_effect_diagonal": [
+          0.7246051136492043,
+          0.6025902028011026
+        ]
+      },
+      "q1": {
+        "joint_clock_minusY_site_port_effect": {
+          "real": [
+            [
+              0.15334620690044745,
+              -0.05080386220419667
+            ],
+            [
+              -0.05080386220419665,
+              0.09505090413086226
+            ]
+          ],
+          "imag": [
+            [
+              -6.699438351462928e-18,
+              -0.10884774233839507
+            ],
+            [
+              0.1088477423383951,
+              -1.6475022434667656e-18
+            ]
+          ]
+        },
+        "unknown_internal_effect_eigenvalues": [
+          0.000592532166151162,
+          0.24780457886515855
+        ],
+        "plus_internal_joint_probability": 0.07339469331145818,
+        "port_effect_diagonal": [
+          0.3066924138008949,
+          0.19010180826172451
+        ]
+      }
+    },
+    "source_gamma": {
+      "real": [
+        -0.510688393999728,
+        -0.571612156939413
+      ],
+      "imag": [
+        -0.6510876162879513,
+        0.5756368063966064
+      ]
+    },
+    "source_gamma_modulus": [
+      0.8274767186148188,
+      0.8112325134259674
+    ],
+    "all_eight_joint_records_plus_plus": [
+      {
+        "source_X": -1,
+        "clock_minusY": -1,
+        "port": 0,
+        "probability": 0.20045265728559672
+      },
+      {
+        "source_X": -1,
+        "clock_minusY": -1,
+        "port": 1,
+        "probability": 0.08139795249542091
+      },
+      {
+        "source_X": -1,
+        "clock_minusY": 1,
+        "port": 0,
+        "probability": 0.2222674203075846
+      },
+      {
+        "source_X": -1,
+        "clock_minusY": 1,
+        "port": 1,
+        "probability": 0.2664571076461833
+      },
+      {
+        "source_X": 1,
+        "clock_minusY": -1,
+        "port": 0,
+        "probability": 0.10471437571741511
+      },
+      {
+        "source_X": 1,
+        "clock_minusY": -1,
+        "port": 1,
+        "probability": 0.020595096600899795
+      },
+      {
+        "source_X": 1,
+        "clock_minusY": 1,
+        "port": 0,
+        "probability": 0.016568162061172495
+      },
+      {
+        "source_X": 1,
+        "clock_minusY": 1,
+        "port": 1,
+        "probability": 0.08754722788572764
+      }
+    ],
+    "joint_probability_sum": 1.0000000000000004,
+    "site_port_gaps_q0_minus_q1": [
+      0.4179126998483094,
+      0.41248839453937813
+    ],
+    "moving_clock_joint_gap_q1_minus_q0": -0.5612192844409053
+  },
+  "group3_uniform_certificates_and_resources": {
+    "P_bound": 8.377580409572781,
+    "actual_QW_to_Dirac_bounds": [
+      0.003477023119207453,
+      0.0069947926030931185
+    ],
+    "reference_to_Dirac_bounds": [
+      0.0,
+      0.00260776733940559
+    ],
+    "rounding_allowance_per_branch": 2e-06,
+    "actual_to_comparator_per_branch": [
+      0.003479023119207453,
+      0.009604559942498708
+    ],
+    "whole_controlled_isometry_bound": 0.009604559942498708,
+    "complete_cell_record_prepared_bound": 0.009732391674822512,
+    "sampling_embedding_bound": 0.00012783173232380342,
+    "continuous_port_change_bound": 0.00029651251453367453,
+    "computed_site_vs_continuous_port_norm": 2.042452407767662e-05,
+    "certified_site_port_gap_lower": [
+      0.40482911678660327,
+      0.399404811477672
+    ],
+    "certified_moving_clock_joint_abs_gap_lower": 0.5481357013791991,
+    "source_gamma_error_bound": 0.01308358306170616,
+    "certified_source_X_change_from_initial_lower": [
+      1.4976048109380218,
+      1.5585285738777068
+    ],
+    "certified_source_Y_dependence_on_internal_mass_lower": 1.2005572565611453,
+    "reference_step_halving_diagnostic": [
+      2.0240824982228785e-08,
+      2.2548579126493833e-08
+    ],
+    "onsite_gate_slots_upper": 3298534883328,
+    "relay_CNOT_count_upper": 12582910,
+    "relay_single_trip_serial_time_upper": 95.99998474121094,
+    "program_bits_including_terminal": 20,
+    "arbitrary_unknown_Q_D_band_and_reference_bound": true,
+    "actual_full_QW_numerically_iterated": false,
+    "no_continuum_sample_probability_as_actual_port": true,
+    "finite_device_error_certified": false,
+    "KG_or_Einstein_response_claimed": false
+  }
+}

@@ -1,0 +1,343 @@
+{
+  "schema_version": 1,
+  "round": 1165,
+  "date": "2026-10-13",
+  "status": "PASS_WITH_SCOPE",
+  "reviewer": "/root/local_dynamics_goal_scope_audit",
+  "independence": {
+    "prior_direction_and_deduplication_discussion": true,
+    "preliminary_scope_feedback": true,
+    "author_of_proof_code_results": false,
+    "blind_review": false,
+    "external_human_review": false
+  },
+  "scope": "指定固定 canonical 剪切谱相对于原完整有限母材料全部酉表示运输及统一正尺度/能移类别的精确范数筛查。",
+  "core_sha256": {
+    "research_note_1165.md": "c1bb636078ec571e1edf61dbccee7a092c8f7540cfffb3f1bc32ec99ef0f54fd",
+    "1165/admission.md": "866511773ced5e036467d1593d98718ffecd37c38e4f1ee4e707cada94681f6b",
+    "1165/proof.md": "9912ac03d8aff13d9794c7953d9de5161264cd43092a72b74979cd6a664c5aa9",
+    "1165/check.py": "086d32d43af668c7fd18db908aee0e4cf9fab131d44ff5fe256e5a5a5b1e2476",
+    "1165/results.json": "70c71dc34610f17e13fd26109a6ba6753838031604c7783cd5aa9f4850747c50",
+    "1165/NEXT.md": "212499154411f3a904abcbd564f581f2b4260cfa2ce7bc5956e04851ff55b54e"
+  },
+  "source_sha256": {
+    "D:\\workspace\\AGI的哲学思考\\research_cognition_physics\\archive_1161_\\1161\\check.py": "52edf7a1dfc530996daa88ee3715efa936f7c5845eefe067124a544688621119",
+    "D:\\workspace\\AGI的哲学思考\\research_cognition_physics\\archive_1161_\\1164\\proof.md": "c20ace2c8163d278933e2f3232d2df791fe60d9046a9d14fac5b1d6dae8e68cc",
+    "D:\\workspace\\AGI的哲学思考\\research_cognition_physics\\archive_1161_\\1164\\check.py": "dd11c2df91bff7ceb3049673409b4d4de560ee6eb92f04d26367cb1a111742dd",
+    "D:\\workspace\\AGI的哲学思考\\research_cognition_physics\\archive_1161_\\1164\\results.json": "24ef020b4b33538dc26bab116de2e13651b01aba0dc3264dc45e7eb0da55366e",
+    "D:\\workspace\\AGI的哲学思考\\research_cognition_physics\\archive_1159_1160\\1160\\check.py": "8af83d78311b77c804693e055f2ece2c9f195e1d217b5b67e41fa6b3b6753170",
+    "D:\\workspace\\AGI的哲学思考\\research_cognition_physics\\archive_1106_1119\\1111\\check.py": "704ae4ca016c77e0df83fc9c2d39e90d79e9fbf3d6469c8c5b9bf1dad8a5bd44"
+  },
+  "review_md_sha256": "21dc0dadaa12dbfcdef4219d5a54c5f5a44ad5702da523b79924ba9fcea51178",
+  "runtime": {
+    "python": "C:/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+    "flags": [
+      "-B",
+      "-X",
+      "utf8"
+    ],
+    "OPENBLAS_NUM_THREADS": 1,
+    "OMP_NUM_THREADS": 1
+  },
+  "default_replay": {
+    "command": "$env:OPENBLAS_NUM_THREADS='1'\n$env:OMP_NUM_THREADS='1'\n& 'C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe' -B -X utf8 'research_cognition_physics/archive_1161_/1165/check.py'",
+    "exit_code": 0,
+    "result": {
+      "status": "PASS",
+      "mode": "READ_ONLY_MATCH",
+      "groups": 4,
+      "full_material_dimension": 13824,
+      "orbit_error": 5.6066262743570405e-15,
+      "affine_error": 5.9674487573602164e-15
+    }
+  },
+  "recursive_result_replay": {
+    "command": "$env:OPENBLAS_NUM_THREADS='1'\n$env:OMP_NUM_THREADS='1'\n@'\nfrom pathlib import Path\nimport importlib.util, json, hashlib, re\nimport numpy as np\nbase=Path('research_cognition_physics/archive_1161_')\np=base/'1165'\ncore=[base/'research_note_1165.md']+[p/n for n in ('admission.md','proof.md','check.py','results.json','NEXT.md')]\nbefore={str(x.relative_to(base)):hashlib.sha256(x.read_bytes()).hexdigest() for x in core}\ns=importlib.util.spec_from_file_location('review1165_author_replay',p/'check.py')\nm=importlib.util.module_from_spec(s);s.loader.exec_module(m)\nfresh=m.calculate();saved=json.loads((p/'results.json').read_text(encoding='utf-8-sig'))\ncounts={'leaves':0,'floats':0,'max_float_absolute_difference':0.}\ndef cmp(a,b,key=''):\n if isinstance(b,dict):\n  assert a.keys()==b.keys(),key\n  for k in b:cmp(a[k],b[k],key+'/'+k)\n elif isinstance(b,list):\n  assert len(a)==len(b),key\n  for i,(x,y) in enumerate(zip(a,b)):cmp(x,y,key+'/'+str(i))\n else:\n  counts['leaves']+=1\n  if isinstance(b,float):\n   counts['floats']+=1\n   d=abs(a-b);counts['max_float_absolute_difference']=max(counts['max_float_absolute_difference'],d)\n   assert d<=3e-10+1e-9*abs(b),(key,a,b)\n  else:assert a==b,(key,a,b)\ncmp(fresh,saved)\nlinks=0\nfor f in core:\n assert hashlib.sha256(f.read_bytes()).hexdigest()==before[str(f.relative_to(base))]\n if f.suffix=='.md':\n  text=f.read_bytes().decode('utf-8')\n  assert '\\r' not in text,f\n  assert all(ord(x)>=32 or x in '\\n\\t' for x in text),f\n  assert text.count('$$')%2==0,f\n  for ref in re.findall(r'\\]\\(([^)]+)\\)',text):\n   if '://' not in ref and not ref.startswith('#'):\n    target=f.parent/ref.split('#')[0]\n    assert target.exists() or target.resolve()==(p/'review.md').resolve(),(f,ref)\n    links+=1\nsourcehashes={str((p/k).resolve()):hashlib.sha256((p/k).read_bytes()).hexdigest() for k in m.SOURCES}\nfor f in (base.parent/'archive_1159_1160/1160/check.py',base.parent/'archive_1106_1119/1111/check.py'):\n sourcehashes[str(f.resolve())]=hashlib.sha256(f.read_bytes()).hexdigest()\nprint(json.dumps({'status':'PASS','core_sha256':before,'source_sha256':sourcehashes,'replay_comparison':counts,\n 'static_check':{'local_link_count':links,'formula_blocks_balanced':True,'control_characters_absent':True},\n 'fresh_summary':{'orbit_error':fresh['unitary_orbit']['maximum_identity_error'],\n 'affine_error':fresh['common_scale_and_tangent']['affine_error'],\n 'original_D_spectrum_norm_residual':fresh['full_material']['D_spectrum_error']}},ensure_ascii=False,indent=2))\n'@ | & 'C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe' -B -X utf8 -",
+    "comparison": {
+      "leaves": 222,
+      "floats": 153,
+      "max_float_absolute_difference": 7.105427357601002e-15
+    },
+    "summary": {
+      "orbit_error": 5.6066262743570405e-15,
+      "affine_error": 5.9674487573602164e-15,
+      "original_D_spectrum_norm_residual": 3.502442379333145e-13
+    },
+    "core_hashes_unchanged": true
+  },
+  "independent_crosscheck": {
+    "command": "$env:OPENBLAS_NUM_THREADS='1'\n$env:OMP_NUM_THREADS='1'\n@'\nimport numpy as np, math, json\ndef shells(q):\n return math.sqrt(9+16*math.exp(-2*q)),math.sqrt(9+16*math.exp(2*q))\ndef compact(q):\n x,y=shells(q)\n return np.sort(np.array([n+v for n in range(4) for v in (2*x-10,x+y-10,x+y-10,2*y-10)]))\nold=np.repeat(np.arange(4),4)\nmax_orbit=0.\nrows=[]\nfor q in (-2.,-.2,-.01,-1e-5,0.,1e-5,.01,.2,2.):\n x,y=shells(q); d=2*(max(x,y)-5)\n sorted_distance=float(np.max(abs(compact(q)-old)))\n max_orbit=max(max_orbit,abs(sorted_distance-d))\n assert abs(sorted_distance-d)<1e-12\n rows.append({'q':q,'sorted_orbit_distance':sorted_distance,'endpoint_formula':d})\nmax_affine=0.\narows=[]\nfor q in (-.01,-.003,.003,.01):\n x,y=shells(q); delta=abs(y-x)\n for a in (.1,.75,1.,1.4,4.):\n  diff=compact(q)-a*old\n  c=float((min(diff)+max(diff))/2)\n  radius=float((max(diff)-min(diff))/2)\n  predicted=delta+1.5*abs(1-a)\n  max_affine=max(max_affine,abs(radius-predicted))\n  assert abs(radius-predicted)<1e-12\n  arows.append({'q':q,'a':a,'optimal_c_relative_baseline':c,'radius':radius,'profile_formula':predicted})\ndx=1e-6\nsx=(compact(dx)-compact(0))/dx\n# Sorted derivative has q>0 ordered AB eigenvalues; every n has +-6.4 endpoints.\ntarget=np.tile([-6.4,0.,0.,6.4],4)\nsource_res=float(max(abs(sx-target)))\nassert source_res<1e-5\nspectral_remainder=[]\nfor q in (.001,.01):\n x,y=shells(q); diff=np.array([2*x-10,x+y-10,x+y-10,2*y-10])\n d=max(abs(diff))\n for t in (.1,.5,2.,10.):\n  exact=float(max(2*abs(np.sin(t*diff/2))))\n  bound=min(2.,abs(t)*d)\n  assert exact<=bound+1e-13\n  spectral_remainder.append({'q':q,'t':t,'exact_full_unitary_norm':exact,'Duhamel_bound':bound})\nprint(json.dumps({'status':'PASS','orbit_max_residual':max_orbit,'affine_profile_max_residual':max_affine,\n 'positive_q_source_difference_residual':source_res,'orbit':rows,'affine':arows,'wait_comparison':spectral_remainder},indent=2))\n'@ | & 'C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe' -B -X utf8 -",
+    "result": {
+      "status": "PASS",
+      "orbit_max_residual": 0,
+      "affine_profile_max_residual": 2.220446049250313e-16,
+      "positive_q_source_difference_residual": 0.000004352258292428246,
+      "orbit": [
+        {
+          "q": -2,
+          "sorted_orbit_distance": 49.4161729003243,
+          "endpoint_formula": 49.4161729003243
+        },
+        {
+          "q": -0.2,
+          "sorted_orbit_distance": 1.4663324846718666,
+          "endpoint_formula": 1.4663324846718666
+        },
+        {
+          "q": -0.01,
+          "sorted_orbit_distance": 0.06443668377482403,
+          "endpoint_formula": 0.06443668377482403
+        },
+        {
+          "q": -0.00001,
+          "sorted_orbit_distance": 0.00006400043520038423,
+          "endpoint_formula": 0.00006400043520038423
+        },
+        {
+          "q": 0,
+          "sorted_orbit_distance": 0,
+          "endpoint_formula": 0
+        },
+        {
+          "q": 0.00001,
+          "sorted_orbit_distance": 0.00006400043520038423,
+          "endpoint_formula": 0.00006400043520038423
+        },
+        {
+          "q": 0.01,
+          "sorted_orbit_distance": 0.06443668377482403,
+          "endpoint_formula": 0.06443668377482403
+        },
+        {
+          "q": 0.2,
+          "sorted_orbit_distance": 1.4663324846718666,
+          "endpoint_formula": 1.4663324846718666
+        },
+        {
+          "q": 2,
+          "sorted_orbit_distance": 49.4161729003243,
+          "endpoint_formula": 49.4161729003243
+        }
+      ],
+      "affine": [
+        {
+          "q": -0.01,
+          "a": 0.1,
+          "optimal_c_relative_baseline": 1.3504352023825423,
+          "radius": 1.4140014813922819,
+          "profile_formula": 1.4140014813922819
+        },
+        {
+          "q": -0.01,
+          "a": 0.75,
+          "optimal_c_relative_baseline": 0.37543520238254224,
+          "radius": 0.4390014813922818,
+          "profile_formula": 0.4390014813922818
+        },
+        {
+          "q": -0.01,
+          "a": 1,
+          "optimal_c_relative_baseline": 0.0004352023825422435,
+          "radius": 0.06400148139228179,
+          "profile_formula": 0.06400148139228179
+        },
+        {
+          "q": -0.01,
+          "a": 1.4,
+          "optimal_c_relative_baseline": -0.5995647976174574,
+          "radius": 0.6640014813922814,
+          "profile_formula": 0.6640014813922817
+        },
+        {
+          "q": -0.01,
+          "a": 4,
+          "optimal_c_relative_baseline": -4.499564797617458,
+          "radius": 4.564001481392282,
+          "profile_formula": 4.564001481392282
+        },
+        {
+          "q": -0.003,
+          "a": 0.1,
+          "optimal_c_relative_baseline": 1.3500391680192991,
+          "radius": 1.369200039997454,
+          "profile_formula": 1.369200039997454
+        },
+        {
+          "q": -0.003,
+          "a": 0.75,
+          "optimal_c_relative_baseline": 0.37503916801929904,
+          "radius": 0.3942000399974539,
+          "profile_formula": 0.3942000399974539
+        },
+        {
+          "q": -0.003,
+          "a": 1,
+          "optimal_c_relative_baseline": 0.00003916801929904068,
+          "radius": 0.0192000399974539,
+          "profile_formula": 0.0192000399974539
+        },
+        {
+          "q": -0.003,
+          "a": 1.4,
+          "optimal_c_relative_baseline": -0.5999608319807006,
+          "radius": 0.6192000399974535,
+          "profile_formula": 0.6192000399974538
+        },
+        {
+          "q": -0.003,
+          "a": 4,
+          "optimal_c_relative_baseline": -4.499960831980701,
+          "radius": 4.519200039997454,
+          "profile_formula": 4.519200039997454
+        },
+        {
+          "q": 0.003,
+          "a": 0.1,
+          "optimal_c_relative_baseline": 1.3500391680192991,
+          "radius": 1.369200039997454,
+          "profile_formula": 1.369200039997454
+        },
+        {
+          "q": 0.003,
+          "a": 0.75,
+          "optimal_c_relative_baseline": 0.37503916801929904,
+          "radius": 0.3942000399974539,
+          "profile_formula": 0.3942000399974539
+        },
+        {
+          "q": 0.003,
+          "a": 1,
+          "optimal_c_relative_baseline": 0.00003916801929904068,
+          "radius": 0.0192000399974539,
+          "profile_formula": 0.0192000399974539
+        },
+        {
+          "q": 0.003,
+          "a": 1.4,
+          "optimal_c_relative_baseline": -0.5999608319807006,
+          "radius": 0.6192000399974535,
+          "profile_formula": 0.6192000399974538
+        },
+        {
+          "q": 0.003,
+          "a": 4,
+          "optimal_c_relative_baseline": -4.499960831980701,
+          "radius": 4.519200039997454,
+          "profile_formula": 4.519200039997454
+        },
+        {
+          "q": 0.01,
+          "a": 0.1,
+          "optimal_c_relative_baseline": 1.3504352023825423,
+          "radius": 1.4140014813922819,
+          "profile_formula": 1.4140014813922819
+        },
+        {
+          "q": 0.01,
+          "a": 0.75,
+          "optimal_c_relative_baseline": 0.37543520238254224,
+          "radius": 0.4390014813922818,
+          "profile_formula": 0.4390014813922818
+        },
+        {
+          "q": 0.01,
+          "a": 1,
+          "optimal_c_relative_baseline": 0.0004352023825422435,
+          "radius": 0.06400148139228179,
+          "profile_formula": 0.06400148139228179
+        },
+        {
+          "q": 0.01,
+          "a": 1.4,
+          "optimal_c_relative_baseline": -0.5995647976174574,
+          "radius": 0.6640014813922814,
+          "profile_formula": 0.6640014813922817
+        },
+        {
+          "q": 0.01,
+          "a": 4,
+          "optimal_c_relative_baseline": -4.499564797617458,
+          "radius": 4.564001481392282,
+          "profile_formula": 4.564001481392282
+        }
+      ],
+      "wait_comparison": [
+        {
+          "q": 0.001,
+          "t": 0.1,
+          "exact_full_unitary_norm": 0.0006404353372174554,
+          "Duhamel_bound": 0.000640435348162427
+        },
+        {
+          "q": 0.001,
+          "t": 0.5,
+          "exact_full_unitary_norm": 0.003202175372690853,
+          "Duhamel_bound": 0.003202176740812135
+        },
+        {
+          "q": 0.001,
+          "t": 2,
+          "exact_full_unitary_norm": 0.012808619403654839,
+          "Duhamel_bound": 0.01280870696324854
+        },
+        {
+          "q": 0.001,
+          "t": 10,
+          "exact_full_unitary_norm": 0.06403259040571592,
+          "Duhamel_bound": 0.0640435348162427
+        },
+        {
+          "q": 0.01,
+          "t": 0.1,
+          "exact_full_unitary_norm": 0.006443657229710418,
+          "Duhamel_bound": 0.0064436683774824035
+        },
+        {
+          "q": 0.01,
+          "t": 0.5,
+          "exact_full_unitary_norm": 0.032216948433271234,
+          "Duhamel_bound": 0.032218341887412016
+        },
+        {
+          "q": 0.01,
+          "t": 2,
+          "exact_full_unitary_norm": 0.1287842038402651,
+          "Duhamel_bound": 0.12887336754964807
+        },
+        {
+          "q": 0.01,
+          "t": 10,
+          "exact_full_unitary_norm": 0.6332767753561139,
+          "Duhamel_bound": 0.6443668377482403
+        }
+      ]
+    },
+    "meaning": "独立 16 谱类型 oracle 不调用作者 energies；对应物理重数 864。有限样本仅交叉核验解析全参数证明。"
+  },
+  "analytic_review": {
+    "full_unitary_distance_all_real_q": true,
+    "positive_affine_scale_distance_restricted_to_abs_q_at_most_0_01": true,
+    "affine_fixed_a_profile": "abs(Ey-Ex) + 1.5*abs(1-a), a>0, small noninterlacing q",
+    "signed_q_and_zero_limit_accounted_for": true,
+    "full_degenerate_spectral_block_first_derivative": true,
+    "finite_time_duhamel_and_arbitrary_spectator_reference": true,
+    "no_inference_of_new_measurement_probability_lower_bound": true,
+    "isospectral_matter_with_bare_geometric_kinetic_energy_can_still_exchange": true
+  },
+  "static_check": {
+    "local_link_count": 31,
+    "formula_blocks_balanced": true,
+    "control_characters_absent": true
+  },
+  "blocking_findings": [],
+  "new_axioms_adopted": false,
+  "stage_complete": false,
+  "not_certified": [
+    "GR or dynamic geometry construction",
+    "whole cognitive axiom countermodel",
+    "physical permissions for arbitrary mathematical unitary W",
+    "new operational energy measurement instrument",
+    "nonzero spacetime curvature",
+    "all physical isospectral matter couplings lack backreaction"
+  ]
+}

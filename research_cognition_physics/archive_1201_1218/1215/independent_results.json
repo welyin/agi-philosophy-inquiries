@@ -1,0 +1,112 @@
+{
+  "schema": "1215-independent-v1",
+  "status": "PASS",
+  "all_checks_passed": true,
+  "check_groups": 7,
+  "groups": {
+    "finite_positive_ladder_complete_boundaries": {
+      "dimension": 39,
+      "energies": [
+        0,
+        1,
+        3
+      ],
+      "support": [
+        5,
+        6,
+        7
+      ],
+      "TP": 0.0,
+      "unital": 0.0,
+      "energy_rows": [
+        {
+          "input": 0,
+          "material_delta": 1.333333333333,
+          "balance_delta": -1.333333333333
+        },
+        {
+          "input": 1,
+          "material_delta": 0.333333333333,
+          "balance_delta": -0.333333333333
+        },
+        {
+          "input": 2,
+          "material_delta": -1.666666666667,
+          "balance_delta": 1.666666666667
+        }
+      ],
+      "full_boundary_unitarity": true
+    },
+    "unknown_reference_preserved": {
+      "reference_dimension": 2,
+      "joint_output_residual": 0.0
+    },
+    "probability_only_contract_fails": {
+      "identical_full_transition_probabilities": true,
+      "normalized_output_exact": [
+        [
+          "1/2",
+          "1/4"
+        ],
+        [
+          "1/4",
+          "1/2"
+        ]
+      ],
+      "normalized_unital_defect_exact": "1/4",
+      "output_eigenvalues_exact": [
+        "1/4",
+        "3/4"
+      ],
+      "diagnostic_error": 0.0
+    },
+    "balance_address_reset": {
+      "normalized_unital_defect_exact": "1/2",
+      "output_material_ground": true,
+      "unknown_R_transferred_to_balance": true,
+      "reference_residual": 0.0,
+      "additional_record_dimension": 1
+    },
+    "QND_record_then_feedback_scope": {
+      "complete_SK_channel_unital": true,
+      "whole_material_residuals": {
+        "TP": 0.0,
+        "unital": 0.0
+      },
+      "terminal_QND_preserves_material_maxmixed": true,
+      "feedback_with_initial_pure_K_resets_S": true,
+      "full_initial_SK_min_eigenvalue": 0,
+      "statement": "The same balance-independent whole SK unitary can consume K purity; S alone is not the material domain."
+    },
+    "two_block_lift_with_terminal_record": {
+      "material_dimension": 9,
+      "first_hit_before_exact": "13/20",
+      "first_hit_after_exact": "13/50",
+      "event_drift_exact": "39/100",
+      "all_boundary_shells_retained": true,
+      "full_record_included": true,
+      "TP": 0.0,
+      "unital": 0.0,
+      "claim": "Small independent membership check; the all-size 1209 theorem is reused analytically."
+    },
+    "autonomous_endpoint_scope": {
+      "positive_parent": true,
+      "time": "2*pi",
+      "endpoint_residual": 0.0,
+      "constant_interaction_retained": true,
+      "physical_clock_or_release_certified": false
+    }
+  },
+  "source_sha256": {
+    "archive_370_428/research_note_421.md": "becfc4c403479ece38478034d2baac9c91a4caa21e11586fd354b0fe22635b37",
+    "archive_1201_/1209/proof.md": "9c2eecc8d9a372996f3c317f65613ecbecfad54486fc4a5f23bcf72fa7897e47",
+    "archive_1201_/1214/proof.md": "5155aa6794a80836dfb9f7ad76782b5baff92f610451ce60b5bbb73615c08359"
+  },
+  "independent_code_sha256": "26f86e59c89c51c8984055081af62227e8fb0bda93d3f2e98e049a955bd01942",
+  "not_certified": [
+    "No new cognitive axiom adopted.",
+    "No general unital equals mixed-unitary converse.",
+    "No arbitrary initial/boundary battery or permanent cold output.",
+    "No native QQ controller implementation or four-law completion."
+  ]
+}

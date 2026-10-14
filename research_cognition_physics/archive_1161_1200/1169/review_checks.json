@@ -1,0 +1,109 @@
+{
+  "schema": "round1169_independent_review_v1",
+  "round": 1169,
+  "date": "2026-10-13",
+  "verdict": "PASS_WITH_SCOPE",
+  "blocker_count": 0,
+  "independence": "Reviewer provided pre-admission feedback, including relative-readout risks and residual decomposition; not blind review. Independent implementation owns no author core.",
+  "core_sha256": {
+    "archive_1161_/research_note_1169.md": "49ef3dbe394569a3db113f1d358156753a3ad81274313af8c77e31192b4b008a",
+    "archive_1161_/1169/admission.md": "648a3cbf3ca6c76811d6b05cddc24fa6d852f3110446343d5294036ccefe09d0",
+    "archive_1161_/1169/proof.md": "33f4384f5a851a5b8e35f816e577fc4101eefcf8365d9024bab0a70e739d5871",
+    "archive_1161_/1169/check.py": "67d8f3f2fb886de162e5e906035239a93a4c6fe94fc409bc08adc5e5e61f7c16",
+    "archive_1161_/1169/results.json": "ffb6d6ae5199a31cee25d54e2eb89f062a31da18de1281354f8c2690c0dcd6f5",
+    "archive_1161_/1169/NEXT.md": "adb6c24d98afb449bd176560a4ec09f3079512760b6b644fd01f8b3e5c729284"
+  },
+  "source_sha256": {
+    "archive_1106_1119/1112/check.py": "6e49d71ec5535fd6999432481938663a5543e2704db993ec7a00b8f475b6cd9f",
+    "archive_935_955/research_note_941.md": "a12e2dd67212a77538f850908efc6057e450d4def00dccd59aaa7cfaea346b7f",
+    "archive_935_955/research_note_953.md": "e510568c8812a86a6829be66d6733195858fd7e72c6686e14f060afce3bc2d88",
+    "archive_956_989/research_note_978.md": "0f1481e7e8602a6980855a3ec1a3efe7c18b945d9d03b79b10a6258580a304be",
+    "archive_956_989/research_note_985.md": "d8b193fd13cae40c986381134d14c356ece5bb6dbaaaa5c0bf4ec8b0a5ec3e8a",
+    "archive_1161_/1168/proof.md": "c5674849ab457dd3b6a4bba2d0ce81b03263f94c1b3881303aa76821e46c7711",
+    "archive_1161_/1168/acceptance.json": "98cf567ed554b0dfd4b20a066349c3a58808d16478dfaa608b214b577d09ef72"
+  },
+  "reviewer_code_sha256": "4f566a1e7434d2daf4d4ce742293f88e757feca3ebd9860b17fe1d83edeace24",
+  "author_default_run_observed": {
+    "command": "python -B -X utf8 archive_1161_/1169/check.py",
+    "exit_code": 0,
+    "message": "1169 READ_ONLY PASS: 4 groups; saved results and all 7 sources unchanged"
+  },
+  "independent_methods": [
+    "affine 5x5 Hamilton matrix exponential in long double",
+    "Simpson integration on independent trajectories",
+    "288D integer-spectrum polynomial projectors",
+    "two local Gaussian records convolution and derivative norm"
+  ],
+  "independent_numerics": {
+    "max_mean_error": 6.938893903907228e-18,
+    "max_relative_sd_error": 5.204170427930421e-18,
+    "max_momentum_error": 4.3655745685100555e-11,
+    "max_phase_error": 1.4210854715202004e-14,
+    "max_joint_error": 2.8171909249863347e-15,
+    "max_dynamic_bound_error": 5.421010862427522e-20,
+    "rows": [
+      {
+        "radius": 1000,
+        "independently_integrated_clock_age": 101.8711744696071,
+        "joint_reference": 0.05244923595238697,
+        "soft_norm_bound": 0.00023496678254684102,
+        "clock_norm_bound": 4.332693263678369e-05,
+        "total_error": 0.0037802937151836247,
+        "log_tail_norm": -161.83210730466507
+      },
+      {
+        "radius": 2000,
+        "independently_integrated_clock_age": 102.37728533980058,
+        "joint_reference": 0.0231338390293463,
+        "soft_norm_bound": 2.3399928272764453e-06,
+        "clock_norm_bound": 1.0953096914325438e-05,
+        "total_error": 0.003515293089741602,
+        "log_tail_norm": -176.85289403727234
+      }
+    ],
+    "certified_contrast_lower": 0.022019810118115445,
+    "zero_coupling_joint_probability_each": 0.007463046892670987,
+    "independent_repeats_per_preparation": 11982930
+  },
+  "complete_clock": {
+    "projector_algebra_error": 3.947541559759188e-15,
+    "complete_qutrit_effect_errors": [
+      1.0516773536878627e-17,
+      1.358093313604073e-15,
+      5.67274068157492e-15
+    ],
+    "complete_qutrit_isometry_errors": [
+      3.846069560300518e-16,
+      3.855262864093833e-16,
+      3.851536642060625e-16
+    ],
+    "method": "integer-spectrum polynomial projectors; no eigendecomposition"
+  },
+  "local_records": {
+    "two_local_noise_convolution_max_error": 4.440892098500626e-16,
+    "local_gaussian_derivative_norm": 499999.9999999999,
+    "ideal_local_records_kinetic_energy_bound": 0.0025002499999999994,
+    "full_local_records_are_not_relative_lueders": true,
+    "physical_instrument_contract_is_assumed_not_constructed": true
+  },
+  "text_and_links": {
+    "local_link_occurrences": 29,
+    "eq3_terminal_backslashes": 2,
+    "block_delimiters_paired": true,
+    "control_character_scan_passed": true
+  },
+  "analytic_review": {
+    "direct_duhamel_on_common_prepared_reference": true,
+    "inverse_mass_residual_includes_momentum_fluctuations": true,
+    "reference_uniform_prepared_isometry_bound_not_all_position_inputs": true,
+    "probability_error_le_isometry_norm_for_purified_inputs": true,
+    "gaussian_tails_are_bounded_not_deleted": true,
+    "actual_poststates_not_identified_with_relative_lueders": true,
+    "contract_point003_is_additional_assumption": true,
+    "no_model_error_claim_to_full_sr_pn_or_gr": true,
+    "no_arbitrary_remote_intervention_causality_claim": true,
+    "no_instrument_hardware_or_new_axiom_claim": true
+  },
+  "checks_complete": true,
+  "author_and_source_files_unchanged": true
+}

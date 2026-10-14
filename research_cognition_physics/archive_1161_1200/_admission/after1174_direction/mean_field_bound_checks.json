@@ -1,0 +1,2141 @@
+{
+  "schema": "mean_field_bound_small_K_numerical_crosscheck_v1",
+  "status": "PASS_NUMERICAL_CROSSCHECK_ONLY",
+  "proof_sha256": "11ac64ce824d3448dec97548efe3dda768bcda30f2e48e1cd88bfe511fcd6b3f",
+  "checker_sha256": "4cfde127050670d2dfb7d0c4d75d4f370c4fa4f8c33d5b47548c02003e604ec5",
+  "numpy_version": "2.3.5",
+  "settings": {
+    "cluster_dimension": 2,
+    "probe_dimension": 2,
+    "explicit_reference_dimension": 2,
+    "K_values": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "time": 0.65,
+    "RK4_fine_steps": 1024,
+    "RK4_coarse_steps": 512,
+    "unknown_probe_reference_coverage": "full prepared-isometry operator norm, plus explicit Bell input",
+    "numerical_status": "floating eigendecomposition and RK4; no interval certification"
+  },
+  "random_models": [
+    {
+      "seed": 731,
+      "w": 0.18000000000000002,
+      "L": 0.09200000000000003,
+      "h": [
+        [
+          [
+            -0.019633861136170477,
+            0.0
+          ],
+          [
+            -0.011838555404448418,
+            0.0445764516088203
+          ]
+        ],
+        [
+          [
+            -0.011838555404448418,
+            -0.0445764516088203
+          ],
+          [
+            -0.39440746371784896,
+            0.0
+          ]
+        ]
+      ],
+      "W": [
+        [
+          [
+            0.10116474256737473,
+            0.0
+          ],
+          [
+            0.028102105545277777,
+            0.0013478071304004996
+          ],
+          [
+            0.028102105545277777,
+            0.0013478071304004996
+          ],
+          [
+            0.00401277276468931,
+            -0.02275748965990202
+          ]
+        ],
+        [
+          [
+            0.028102105545277777,
+            -0.0013478071304004996
+          ],
+          [
+            -0.07237362139102234,
+            0.0
+          ],
+          [
+            -0.08985316967729048,
+            0.0
+          ],
+          [
+            0.0008797193920616209,
+            0.0395902037624072
+          ]
+        ],
+        [
+          [
+            0.028102105545277777,
+            -0.0013478071304004996
+          ],
+          [
+            -0.08985316967729048,
+            0.0
+          ],
+          [
+            -0.07237362139102234,
+            0.0
+          ],
+          [
+            0.0008797193920616209,
+            0.0395902037624072
+          ]
+        ],
+        [
+          [
+            0.00401277276468931,
+            0.02275748965990202
+          ],
+          [
+            0.0008797193920616209,
+            -0.0395902037624072
+          ],
+          [
+            0.0008797193920616209,
+            -0.0395902037624072
+          ],
+          [
+            0.11089783929580065,
+            0.0
+          ]
+        ]
+      ],
+      "phi0": [
+        [
+          -0.30537721392505124,
+          0.17337036417183022
+        ],
+        [
+          0.13476488471742465,
+          -0.9265667271650756
+        ]
+      ],
+      "B": [
+        [
+          [
+            [
+              -0.8190021797740957,
+              0.0
+            ],
+            [
+              0.17090112656020812,
+              0.4783522991879005
+            ]
+          ],
+          [
+            [
+              0.17090112656020812,
+              -0.4783522991879005
+            ],
+            [
+              0.42558687654830624,
+              0.0
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              0.18825987206736888,
+              0.0
+            ],
+            [
+              -0.27990164723589067,
+              0.2336761726002367
+            ]
+          ],
+          [
+            [
+              -0.27990164723589067,
+              -0.2336761726002367
+            ],
+            [
+              -0.6654711280664066,
+              0.0
+            ]
+          ]
+        ]
+      ],
+      "swap_error": 0.0,
+      "B_noncommutator": 0.8066936818687591,
+      "RK4_coarse_fine_difference": 1.5488748713684758e-15
+    },
+    {
+      "seed": 1947,
+      "w": 0.17999999999999997,
+      "L": 0.092,
+      "h": [
+        [
+          [
+            -0.17403104640406358,
+            0.0
+          ],
+          [
+            -0.09060692974065591,
+            -0.2941756496204203
+          ]
+        ],
+        [
+          [
+            -0.09060692974065591,
+            0.2941756496204203
+          ],
+          [
+            0.01930064745110324,
+            0.0
+          ]
+        ]
+      ],
+      "W": [
+        [
+          [
+            0.023689206543534923,
+            0.0
+          ],
+          [
+            -0.01018230494526626,
+            0.06600878558941439
+          ],
+          [
+            -0.01018230494526626,
+            0.06600878558941439
+          ],
+          [
+            0.022506398195529218,
+            0.015709430599686866
+          ]
+        ],
+        [
+          [
+            -0.01018230494526626,
+            -0.06600878558941439
+          ],
+          [
+            0.008826315515309513,
+            0.0
+          ],
+          [
+            0.07292983777600404,
+            0.0
+          ],
+          [
+            0.004279648034793406,
+            -0.03953698940184114
+          ]
+        ],
+        [
+          [
+            -0.01018230494526626,
+            -0.06600878558941439
+          ],
+          [
+            0.07292983777600404,
+            0.0
+          ],
+          [
+            0.008826315515309513,
+            0.0
+          ],
+          [
+            0.004279648034793406,
+            -0.03953698940184114
+          ]
+        ],
+        [
+          [
+            0.022506398195529218,
+            -0.015709430599686866
+          ],
+          [
+            0.004279648034793406,
+            0.03953698940184114
+          ],
+          [
+            0.004279648034793406,
+            0.03953698940184114
+          ],
+          [
+            0.04907477012073361,
+            0.0
+          ]
+        ]
+      ],
+      "phi0": [
+        [
+          -0.7582068112692006,
+          -0.6410737305659131
+        ],
+        [
+          0.11846223522814718,
+          -0.010658430843459993
+        ]
+      ],
+      "B": [
+        [
+          [
+            [
+              0.5778335359410485,
+              0.0
+            ],
+            [
+              0.2919808397050917,
+              0.2689357615853926
+            ]
+          ],
+          [
+            [
+              0.2919808397050917,
+              -0.2689357615853926
+            ],
+            [
+              -0.9001293539369335,
+              0.0
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              -0.5001026447662222,
+              0.0
+            ],
+            [
+              -0.0811908301516544,
+              0.19106294061610943
+            ]
+          ],
+          [
+            [
+              -0.0811908301516544,
+              -0.19106294061610943
+            ],
+            [
+              0.7668510802965567,
+              0.0
+            ]
+          ]
+        ]
+      ],
+      "swap_error": 0.0,
+      "B_noncommutator": 0.6890828165893691,
+      "RK4_coarse_fine_difference": 2.8244582302725125e-15
+    }
+  ],
+  "background_and_complete_output": [
+    {
+      "seed": 731,
+      "K": 2,
+      "background_samples": [
+        {
+          "time": 0.0,
+          "alpha": 5.853267202908819e-17,
+          "alpha_bound": 0.0,
+          "abs_dot_alpha": 2.168404344971009e-18,
+          "dot_bound": 1.0800000000000003,
+          "fluctuations": [
+            {
+              "fluctuation": 0.55782021788164,
+              "bound": 2.8284271247461907,
+              "raising_commutator_margin": 0.1888366045224797,
+              "decomposition_error": 2.07828650202481e-16
+            },
+            {
+              "fluctuation": 0.3211700378250361,
+              "bound": 2.2627416997969525,
+              "raising_commutator_margin": 0.21684980680346505,
+              "decomposition_error": 1.4682806517507337e-16
+            }
+          ]
+        },
+        {
+          "time": 0.1625,
+          "alpha": 7.940225833062123e-05,
+          "alpha_bound": 0.21024366295609764,
+          "abs_dot_alpha": 0.0009706143217507865,
+          "dot_bound": 1.0801715088779942,
+          "fluctuations": [
+            {
+              "fluctuation": 0.5560331220031319,
+              "bound": 3.371038209112671,
+              "raising_commutator_margin": 0.19105998401330257,
+              "decomposition_error": 1.0439043594054208e-16
+            },
+            {
+              "fluctuation": 0.3234057497069142,
+              "bound": 2.696830567290137,
+              "raising_commutator_margin": 0.21814464639065223,
+              "decomposition_error": 7.219843299415645e-16
+            }
+          ]
+        },
+        {
+          "time": 0.325,
+          "alpha": 0.00031306938485783616,
+          "alpha_bound": 0.5088921215385895,
+          "abs_dot_alpha": 0.0018973173022081404,
+          "dot_bound": 1.080676229871293,
+          "fluctuations": [
+            {
+              "fluctuation": 0.553646920410219,
+              "bound": 4.017744882968235,
+              "raising_commutator_margin": 0.19346531531642863,
+              "decomposition_error": 8.281622661985011e-17
+            },
+            {
+              "fluctuation": 0.32560399296604076,
+              "bound": 3.2141959063745884,
+              "raising_commutator_margin": 0.21955086499716323,
+              "decomposition_error": 6.652519163125204e-16
+            }
+          ]
+        },
+        {
+          "time": 0.48750000000000004,
+          "alpha": 0.0006932459525274266,
+          "alpha_bound": 0.9331184718582326,
+          "abs_dot_alpha": 0.002772651910538722,
+          "dot_bound": 1.0814974112574594,
+          "fluctuations": [
+            {
+              "fluctuation": 0.550675358782891,
+              "bound": 4.788517051210294,
+              "raising_commutator_margin": 0.19604300438860903,
+              "decomposition_error": 1.5378778410113418e-16
+            },
+            {
+              "fluctuation": 0.32774286664317775,
+              "bound": 3.830813640968235,
+              "raising_commutator_margin": 0.22106514615758854,
+              "decomposition_error": 6.131309090683474e-16
+            }
+          ]
+        },
+        {
+          "time": 0.65,
+          "alpha": 0.0012110518073378505,
+          "alpha_bound": 1.5357266258052724,
+          "abs_dot_alpha": 0.0035902520255845505,
+          "dot_bound": 1.0826158719038497,
+          "fluctuations": [
+            {
+              "fluctuation": 0.5471393067590398,
+              "bound": 5.707155685004954,
+              "raising_commutator_margin": 0.1987820680101203,
+              "decomposition_error": 8.962269683638702e-17
+            },
+            {
+              "fluctuation": 0.3297995282739857,
+              "bound": 4.565724548003963,
+              "raising_commutator_margin": 0.2226839134433533,
+              "decomposition_error": 1.0156380083093055e-15
+            }
+          ]
+        }
+      ],
+      "complete_output": {
+        "prepared_isometry_error": 0.029334637348243642,
+        "bell_reference_vector_error": 0.023067213088849778,
+        "all_input_gram_defect": 1.2774337972118475e-15,
+        "total_energy_compression_drift": 9.32943568413531e-16,
+        "actual_backreaction_B0_difference": -0.00041444855711031056,
+        "analytic_bound": 0.3412879099632963,
+        "phase_optimized_BG_product_distance": 0.04655714691860755
+      }
+    },
+    {
+      "seed": 731,
+      "K": 3,
+      "background_samples": [
+        {
+          "time": 0.0,
+          "alpha": 5.388871882477831e-17,
+          "alpha_bound": 0.0,
+          "abs_dot_alpha": 2.688821387764051e-17,
+          "dot_bound": 0.7200000000000001,
+          "fluctuations": [
+            {
+              "fluctuation": 0.4554583006727183,
+              "bound": 2.309401076758504,
+              "raising_commutator_margin": 0.1258910696816532,
+              "decomposition_error": 1.4562908303583994e-16
+            },
+            {
+              "fluctuation": 0.26223423778057037,
+              "bound": 1.8475208614068028,
+              "raising_commutator_margin": 0.14456653786897675,
+              "decomposition_error": 1.3344391984665785e-16
+            }
+          ]
+        },
+        {
+          "time": 0.1625,
+          "alpha": 4.4010757255408695e-05,
+          "alpha_bound": 0.14016244197073177,
+          "abs_dot_alpha": 0.000535926122437583,
+          "dot_bound": 0.7200950632356717,
+          "fluctuations": [
+            {
+              "fluctuation": 0.4541241291383503,
+              "bound": 2.752441171917221,
+              "raising_commutator_margin": 0.12737332267553508,
+              "decomposition_error": 1.060485959080062e-16
+            },
+            {
+              "fluctuation": 0.26342028891192204,
+              "bound": 2.2019529375337767,
+              "raising_commutator_margin": 0.14542976426043477,
+              "decomposition_error": 7.059621884252091e-16
+            }
+          ]
+        },
+        {
+          "time": 0.325,
+          "alpha": 0.00017220517738364134,
+          "alpha_bound": 0.3392614143590597,
+          "abs_dot_alpha": 0.0010354922794693832,
+          "dot_bound": 0.7203719631831487,
+          "fluctuations": [
+            {
+              "fluctuation": 0.45229409754330624,
+              "bound": 3.2804749599834313,
+              "raising_commutator_margin": 0.1289768768776192,
+              "decomposition_error": 1.7533359771583483e-16
+            },
+            {
+              "fluctuation": 0.2645512828217895,
+              "bound": 2.624379967986745,
+              "raising_commutator_margin": 0.14636724333144213,
+              "decomposition_error": 6.565890024514346e-16
+            }
+          ]
+        },
+        {
+          "time": 0.48750000000000004,
+          "alpha": 0.00037839537531169113,
+          "alpha_bound": 0.6220789812388218,
+          "abs_dot_alpha": 0.0014953849560965416,
+          "dot_bound": 0.7208173340106733,
+          "fluctuations": [
+            {
+              "fluctuation": 0.4499882338805427,
+              "bound": 3.9098078000273224,
+              "raising_commutator_margin": 0.13069533625907262,
+              "decomposition_error": 1.4268274278273278e-16
+            },
+            {
+              "fluctuation": 0.26560710609389226,
+              "bound": 3.127846240021858,
+              "raising_commutator_margin": 0.1473767641050589,
+              "decomposition_error": 5.900536486150367e-16
+            }
+          ]
+        },
+        {
+          "time": 0.65,
+          "alpha": 0.0006559170408600742,
+          "alpha_bound": 1.0238177505368482,
+          "abs_dot_alpha": 0.0019130595662736965,
+          "dot_bound": 0.7214167808082578,
+          "fluctuations": [
+            {
+              "fluctuation": 0.4472319395210913,
+              "bound": 4.6598731036287795,
+              "raising_commutator_margin": 0.13252137867341354,
+              "decomposition_error": 1.8539336488987527e-16
+            },
+            {
+              "fluctuation": 0.26656724266880444,
+              "bound": 3.7278984829030235,
+              "raising_commutator_margin": 0.14845594229556885,
+              "decomposition_error": 9.968490634847688e-16
+            }
+          ]
+        }
+      ],
+      "complete_output": {
+        "prepared_isometry_error": 0.02392126198054092,
+        "bell_reference_vector_error": 0.01883337517571095,
+        "all_input_gram_defect": 7.931739343746861e-16,
+        "total_energy_compression_drift": 6.993788064382465e-16,
+        "actual_backreaction_B0_difference": -0.00027149689513967373,
+        "analytic_bound": 0.27866041159700106,
+        "phase_optimized_BG_product_distance": 0.04026589434270638
+      }
+    },
+    {
+      "seed": 731,
+      "K": 4,
+      "background_samples": [
+        {
+          "time": 0.0,
+          "alpha": 5.4409469635881986e-17,
+          "alpha_bound": 0.0,
+          "abs_dot_alpha": 3.686287386450715e-18,
+          "dot_bound": 0.5400000000000001,
+          "fluctuations": [
+            {
+              "fluctuation": 0.39443845874706535,
+              "bound": 2.0000000000000004,
+              "raising_commutator_margin": 0.0944183022612399,
+              "decomposition_error": 1.9256237627973139e-16
+            },
+            {
+              "fluctuation": 0.22710151166002293,
+              "bound": 1.6000000000000003,
+              "raising_commutator_margin": 0.10842490340173251,
+              "decomposition_error": 1.5987181125509068e-16
+            }
+          ]
+        },
+        {
+          "time": 0.1625,
+          "alpha": 2.9667661928104518e-05,
+          "alpha_bound": 0.10512183147804882,
+          "abs_dot_alpha": 0.00036037948258667535,
+          "dot_bound": 0.5400640821497646,
+          "fluctuations": [
+            {
+              "fluctuation": 0.39334181299683,
+              "bound": 2.3836839773025247,
+              "raising_commutator_margin": 0.09552999200665134,
+              "decomposition_error": 1.1428261687278012e-16
+            },
+            {
+              "fluctuation": 0.22784852462497124,
+              "bound": 1.9069471818420198,
+              "raising_commutator_margin": 0.10907232319532618,
+              "decomposition_error": 7.18186896233933e-16
+            }
+          ]
+        },
+        {
+          "time": 0.325,
+          "alpha": 0.00011551631014701546,
+          "alpha_bound": 0.25444606076929477,
+          "abs_dot_alpha": 0.0006911094790674054,
+          "dot_bound": 0.5402495152299176,
+          "fluctuations": [
+            {
+              "fluctuation": 0.39182192182161385,
+              "bound": 2.840974651824391,
+              "raising_commutator_margin": 0.09673265765821457,
+              "decomposition_error": 2.2455792976040734e-16
+            },
+            {
+              "fluctuation": 0.2285308178078621,
+              "bound": 2.272779721459513,
+              "raising_commutator_margin": 0.10977543249858165,
+              "decomposition_error": 6.702302706164539e-16
+            }
+          ]
+        },
+        {
+          "time": 0.48750000000000004,
+          "alpha": 0.0002525731067703525,
+          "alpha_bound": 0.4665592359291163,
+          "abs_dot_alpha": 0.0009903790960376726,
+          "dot_bound": 0.540545557910624,
+          "fluctuations": [
+            {
+              "fluctuation": 0.3898992806837573,
+              "bound": 3.3859928787382096,
+              "raising_commutator_margin": 0.09802150219430457,
+              "decomposition_error": 1.7170921421783768e-16
+            },
+            {
+              "fluctuation": 0.2291303572006047,
+              "bound": 2.7087943029905674,
+              "raising_commutator_margin": 0.11053257307879427,
+              "decomposition_error": 5.924996357881279e-16
+            }
+          ]
+        },
+        {
+          "time": 0.65,
+          "alpha": 0.0004356171619079196,
+          "alpha_bound": 0.7678633129026362,
+          "abs_dot_alpha": 0.0012569473655524273,
+          "dot_bound": 0.5409409330697211,
+          "fluctuations": [
+            {
+              "fluctuation": 0.3875984909815748,
+              "bound": 4.035568486154359,
+              "raising_commutator_margin": 0.09939103400506014,
+              "decomposition_error": 1.734860213024032e-16
+            },
+            {
+              "fluctuation": 0.2296291475002434,
+              "bound": 3.228454788923487,
+              "raising_commutator_margin": 0.1113419567216766,
+              "decomposition_error": 1.014879148702095e-15
+            }
+          ]
+        }
+      ],
+      "complete_output": {
+        "prepared_isometry_error": 0.020703960277460614,
+        "bell_reference_vector_error": 0.01631071659819826,
+        "all_input_gram_defect": 6.930166920196033e-16,
+        "total_energy_compression_drift": 7.873478539118058e-16,
+        "actual_backreaction_B0_difference": -0.00020187670868905203,
+        "analytic_bound": 0.2413269954720307,
+        "phase_optimized_BG_product_distance": 0.036731168993194126
+      }
+    },
+    {
+      "seed": 731,
+      "K": 5,
+      "background_samples": [
+        {
+          "time": 0.0,
+          "alpha": 4.950109587165801e-17,
+          "alpha_bound": 0.0,
+          "abs_dot_alpha": 1.463672932855431e-17,
+          "dot_bound": 0.43200000000000016,
+          "fluctuations": [
+            {
+              "fluctuation": 0.3527964826794741,
+              "bound": 1.7888543819998322,
+              "raising_commutator_margin": 0.07553464180899172,
+              "decomposition_error": 1.9254578055439186e-16
+            },
+            {
+              "fluctuation": 0.20312576714590905,
+              "bound": 1.4310835055998656,
+              "raising_commutator_margin": 0.08673992272138599,
+              "decomposition_error": 2.2623072459029774e-16
+            }
+          ]
+        },
+        {
+          "time": 0.1625,
+          "alpha": 2.213228383249677e-05,
+          "alpha_bound": 0.08409746518243906,
+          "abs_dot_alpha": 0.0002683816211293717,
+          "dot_bound": 0.4320478057330782,
+          "fluctuations": [
+            {
+              "fluctuation": 0.35184849482451197,
+              "bound": 2.1320317640502044,
+              "raising_commutator_margin": 0.0764239936053211,
+              "decomposition_error": 1.715689404690275e-16
+            },
+            {
+              "fluctuation": 0.20364263336520705,
+              "bound": 1.7056254112401634,
+              "raising_commutator_margin": 0.08725785855626088,
+              "decomposition_error": 6.820660735477173e-16
+            }
+          ]
+        },
+        {
+          "time": 0.325,
+          "alpha": 8.588025785550364e-05,
+          "alpha_bound": 0.20355684861543583,
+          "abs_dot_alpha": 0.0005119701400807884,
+          "dot_bound": 0.4321855013569679,
+          "fluctuations": [
+            {
+              "fluctuation": 0.3505278761517497,
+              "bound": 2.5410449775332538,
+              "raising_commutator_margin": 0.07738612612657152,
+              "decomposition_error": 1.2578870601624452e-16
+            },
+            {
+              "fluctuation": 0.20409057171290806,
+              "bound": 2.032835982026603,
+              "raising_commutator_margin": 0.0878203459988652,
+              "decomposition_error": 6.889122815250076e-16
+            }
+          ]
+        },
+        {
+          "time": 0.48750000000000004,
+          "alpha": 0.00018711850908123768,
+          "alpha_bound": 0.37324738874329305,
+          "abs_dot_alpha": 0.0007296523302560288,
+          "dot_bound": 0.4324041759796155,
+          "fluctuations": [
+            {
+              "fluctuation": 0.3488544675429082,
+              "bound": 3.0285240992755353,
+              "raising_commutator_margin": 0.07841720175544364,
+              "decomposition_error": 2.149966690459417e-16
+            },
+            {
+              "fluctuation": 0.20445317912402644,
+              "bound": 2.422819279420428,
+              "raising_commutator_margin": 0.08842605846303547,
+              "decomposition_error": 6.314783218449612e-16
+            }
+          ]
+        },
+        {
+          "time": 0.65,
+          "alpha": 0.00032157717182196093,
+          "alpha_bound": 0.6142906503221089,
+          "abs_dot_alpha": 0.0009207628486290754,
+          "dot_bound": 0.4326946066911355,
+          "fluctuations": [
+            {
+              "fluctuation": 0.346851383811669,
+              "bound": 3.609522185158826,
+              "raising_commutator_margin": 0.07951282720404802,
+              "decomposition_error": 2.262236311921109e-16
+            },
+            {
+              "fluctuation": 0.20471436760848286,
+              "bound": 2.887617748127061,
+              "raising_commutator_margin": 0.08907356537734129,
+              "decomposition_error": 1.00060394542234e-15
+            }
+          ]
+        }
+      ],
+      "complete_output": {
+        "prepared_isometry_error": 0.018511698436495597,
+        "bell_reference_vector_error": 0.014589305374604311,
+        "all_input_gram_defect": 1.807126703151948e-15,
+        "total_energy_compression_drift": 5.545448264941441e-15,
+        "actual_backreaction_B0_difference": -0.0001606780675293719,
+        "analytic_bound": 0.21584942667249785,
+        "phase_optimized_BG_product_distance": 0.03444105563118675
+      }
+    },
+    {
+      "seed": 731,
+      "K": 6,
+      "background_samples": [
+        {
+          "time": 0.0,
+          "alpha": 5.504272486186001e-17,
+          "alpha_bound": 0.0,
+          "abs_dot_alpha": 8.456776945386935e-18,
+          "dot_bound": 0.3600000000000001,
+          "fluctuations": [
+            {
+              "fluctuation": 0.3220576529533802,
+              "bound": 1.6329931618554525,
+              "raising_commutator_margin": 0.06294553484082668,
+              "decomposition_error": 3.3739430346301636e-16
+            },
+            {
+              "fluctuation": 0.18542760779392664,
+              "bound": 1.306394529484362,
+              "raising_commutator_margin": 0.07228326893448837,
+              "decomposition_error": 1.8409924997753093e-16
+            }
+          ]
+        },
+        {
+          "time": 0.1625,
+          "alpha": 1.7554189882460424e-05,
+          "alpha_bound": 0.07008122098536589,
+          "abs_dot_alpha": 0.00021259367475059488,
+          "dot_bound": 0.36003791705014615,
+          "fluctuations": [
+            {
+              "fluctuation": 0.32121278291871785,
+              "bound": 1.9462698174797148,
+              "raising_commutator_margin": 0.06368666133776762,
+              "decomposition_error": 1.2047720051711928e-16
+            },
+            {
+              "fluctuation": 0.18580701086203877,
+              "bound": 1.557015853983772,
+              "raising_commutator_margin": 0.07271488213021748,
+              "decomposition_error": 6.127397684942642e-16
+            }
+          ]
+        },
+        {
+          "time": 0.325,
+          "alpha": 6.794209891835179e-05,
+          "alpha_bound": 0.16963070717952985,
+          "abs_dot_alpha": 0.0004039534131613806,
+          "dot_bound": 0.36014675493366366,
+          "fluctuations": [
+            {
+              "fluctuation": 0.320032356955227,
+              "bound": 2.319646089716952,
+              "raising_commutator_margin": 0.06448843843880944,
+              "decomposition_error": 1.354234742673196e-16
+            },
+            {
+              "fluctuation": 0.1861160387689134,
+              "bound": 1.855716871773562,
+              "raising_commutator_margin": 0.07318362166572111,
+              "decomposition_error": 5.944377200034562e-16
+            }
+          ]
+        },
+        {
+          "time": 0.48750000000000004,
+          "alpha": 0.00014764826680569338,
+          "alpha_bound": 0.3110394906194109,
+          "abs_dot_alpha": 0.0005733417508262703,
+          "dot_bound": 0.3603189202563003,
+          "fluctuations": [
+            {
+              "fluctuation": 0.31853534016495233,
+              "bound": 2.764651608535377,
+              "raising_commutator_margin": 0.06534766812953653,
+              "decomposition_error": 1.8058044922716538e-16
+            },
+            {
+              "fluctuation": 0.18633956117787492,
+              "bound": 2.2117212868283014,
+              "raising_commutator_margin": 0.07368838205252948,
+              "decomposition_error": 5.29967691275206e-16
+            }
+          ]
+        },
+        {
+          "time": 0.65,
+          "alpha": 0.000253067358168088,
+          "alpha_bound": 0.5119088752684241,
+          "abs_dot_alpha": 0.0007203885346800838,
+          "dot_bound": 0.360546625493643,
+          "fluctuations": [
+            {
+              "fluctuation": 0.31674340416672686,
+              "bound": 3.295027871044714,
+              "raising_commutator_margin": 0.06626068933670676,
+              "decomposition_error": 1.975871252352612e-16
+            },
+            {
+              "fluctuation": 0.18646293396242894,
+              "bound": 2.6360222968357707,
+              "raising_commutator_margin": 0.07422797114778436,
+              "decomposition_error": 9.067103075682361e-16
+            }
+          ]
+        }
+      ],
+      "complete_output": {
+        "prepared_isometry_error": 0.01689492058333587,
+        "bell_reference_vector_error": 0.013318594728991242,
+        "all_input_gram_defect": 3.781018373644112e-15,
+        "total_energy_compression_drift": 6.527984030109413e-15,
+        "actual_backreaction_B0_difference": -0.00013344627074006118,
+        "analytic_bound": 0.19704266668847392,
+        "phase_optimized_BG_product_distance": 0.03282762182725534
+      }
+    },
+    {
+      "seed": 731,
+      "K": 7,
+      "background_samples": [
+        {
+          "time": 0.0,
+          "alpha": 6.035436869390951e-17,
+          "alpha_bound": 0.0,
+          "abs_dot_alpha": 2.3635607360183997e-17,
+          "dot_bound": 0.3085714285714287,
+          "fluctuations": [
+            {
+              "fluctuation": 0.2981674483898122,
+              "bound": 1.5118578920369092,
+              "raising_commutator_margin": 0.053953315577851504,
+              "decomposition_error": 3.3531497980420577e-16
+            },
+            {
+              "fluctuation": 0.17167260634835887,
+              "bound": 1.2094863136295273,
+              "raising_commutator_margin": 0.06195708765813289,
+              "decomposition_error": 2.3016601193006474e-16
+            }
+          ]
+        },
+        {
+          "time": 0.1625,
+          "alpha": 1.4502153461095832e-05,
+          "alpha_bound": 0.06006961798745647,
+          "abs_dot_alpha": 0.00017545735322452522,
+          "dot_bound": 0.30860275322290454,
+          "fluctuations": [
+            {
+              "fluctuation": 0.29739905208059975,
+              "bound": 1.8018957166033749,
+              "raising_commutator_margin": 0.05458856686094346,
+              "decomposition_error": 1.7670908600075376e-16
+            },
+            {
+              "fluctuation": 0.1719625774412954,
+              "bound": 1.4415165732827,
+              "raising_commutator_margin": 0.06232704182590059,
+              "decomposition_error": 6.461095314721204e-16
+            }
+          ]
+        },
+        {
+          "time": 0.325,
+          "alpha": 5.6018724005642146e-05,
+          "alpha_bound": 0.1453977490110256,
+          "abs_dot_alpha": 0.00033237305520435667,
+          "dot_bound": 0.30869242901528077,
+          "fluctuations": [
+            {
+              "fluctuation": 0.29632349249682177,
+              "bound": 2.1475749742187573,
+              "raising_commutator_margin": 0.055275804376122555,
+              "decomposition_error": 2.229570706272059e-16
+            },
+            {
+              "fluctuation": 0.17218212867038357,
+              "bound": 1.718059979375006,
+              "raising_commutator_margin": 0.06272881857061798,
+              "decomposition_error": 6.659213458903527e-16
+            }
+          ]
+        },
+        {
+          "time": 0.48750000000000004,
+          "alpha": 0.00012149064766147857,
+          "alpha_bound": 0.2666052776737807,
+          "abs_dot_alpha": 0.00047023300587884604,
+          "dot_bound": 0.30883384837037736,
+          "fluctuations": [
+            {
+              "fluctuation": 0.2949588636205804,
+              "bound": 2.559570028050567,
+              "raising_commutator_margin": 0.056012286968174146,
+              "decomposition_error": 1.7542604526098802e-16
+            },
+            {
+              "fluctuation": 0.17231714897438238,
+              "bound": 2.0476560224404534,
+              "raising_commutator_margin": 0.06316147033073956,
+              "decomposition_error": 6.013866286652249e-16
+            }
+          ]
+        },
+        {
+          "time": 0.65,
+          "alpha": 0.0002078007080582796,
+          "alpha_bound": 0.43877903594436357,
+          "abs_dot_alpha": 0.0005888337785523813,
+          "dot_bound": 0.3090202781008345,
+          "fluctuations": [
+            {
+              "fluctuation": 0.2933255608222158,
+              "bound": 3.0506030323239544,
+              "raising_commutator_margin": 0.05679487657432014,
+              "decomposition_error": 2.261555120175034e-16
+            },
+            {
+              "fluctuation": 0.17235412134246159,
+              "bound": 2.4404824258591633,
+              "raising_commutator_margin": 0.06362397526952952,
+              "decomposition_error": 9.789402855064253e-16
+            }
+          ]
+        }
+      ],
+      "complete_output": {
+        "prepared_isometry_error": 0.0156391323729717,
+        "bell_reference_vector_error": 0.012330961842007644,
+        "all_input_gram_defect": 5.5281554802117984e-15,
+        "total_energy_compression_drift": 1.4334341190011467e-14,
+        "actual_backreaction_B0_difference": -0.00011410796257783559,
+        "analytic_bound": 0.18242606133297248,
+        "phase_optimized_BG_product_distance": 0.03162580941766891
+      }
+    },
+    {
+      "seed": 1947,
+      "K": 2,
+      "background_samples": [
+        {
+          "time": 0.0,
+          "alpha": 1.3037949908505723e-16,
+          "alpha_bound": 0.0,
+          "abs_dot_alpha": 2.8189256484623115e-18,
+          "dot_bound": 1.08,
+          "fluctuations": [
+            {
+              "fluctuation": 0.3960903464933674,
+              "bound": 2.82842712474619,
+              "raising_commutator_margin": 0.3431124374147641,
+              "decomposition_error": 1.1756189923798752e-16
+            },
+            {
+              "fluctuation": 0.1452553660051926,
+              "bound": 2.262741699796952,
+              "raising_commutator_margin": 0.29890087864669757,
+              "decomposition_error": 1.4649657611491323e-16
+            }
+          ]
+        },
+        {
+          "time": 0.1625,
+          "alpha": 2.8013898101272947e-05,
+          "alpha_bound": 0.2102436629560976,
+          "abs_dot_alpha": 0.00032999000214098254,
+          "dot_bound": 1.0800605100198986,
+          "fluctuations": [
+            {
+              "fluctuation": 0.37992438564910586,
+              "bound": 3.3710382091126703,
+              "raising_commutator_margin": 0.3528865502110036,
+              "decomposition_error": 5.046423808965978e-17
+            },
+            {
+              "fluctuation": 0.10129524311317428,
+              "bound": 2.6968305672901365,
+              "raising_commutator_margin": 0.30902385022987616,
+              "decomposition_error": 1.2310253662318624e-16
+            }
+          ]
+        },
+        {
+          "time": 0.325,
+          "alpha": 0.00010277854807653737,
+          "alpha_bound": 0.5088921215385895,
+          "abs_dot_alpha": 0.0005776575835240126,
+          "dot_bound": 1.080222001663845,
+          "fluctuations": [
+            {
+              "fluctuation": 0.36734575406302233,
+              "bound": 4.017744882968234,
+              "raising_commutator_margin": 0.3603336206107024,
+              "decomposition_error": 3.006038104452214e-16
+            },
+            {
+              "fluctuation": 0.056880749038892675,
+              "bound": 3.214195906374587,
+              "raising_commutator_margin": 0.31596498474974133,
+              "decomposition_error": 3.895474639754618e-16
+            }
+          ]
+        },
+        {
+          "time": 0.48750000000000004,
+          "alpha": 0.0002121489774973719,
+          "alpha_bound": 0.9331184718582324,
+          "abs_dot_alpha": 0.0007589343015326635,
+          "dot_bound": 1.0804582417913942,
+          "fluctuations": [
+            {
+              "fluctuation": 0.35887510744097306,
+              "bound": 4.788517051210293,
+              "raising_commutator_margin": 0.36534973625444445,
+              "decomposition_error": 2.1163522592841715e-16
+            },
+            {
+              "fluctuation": 0.014840282932996933,
+              "bound": 3.8308136409682345,
+              "raising_commutator_margin": 0.3195239112286407,
+              "decomposition_error": 4.473145671072521e-16
+            }
+          ]
+        },
+        {
+          "time": 0.65,
+          "alpha": 0.00034691697316144494,
+          "alpha_bound": 1.535726625805272,
+          "abs_dot_alpha": 0.0008938836944945979,
+          "dot_bound": 1.0807493406620285,
+          "fluctuations": [
+            {
+              "fluctuation": 0.3548947194829385,
+              "bound": 5.7071556850049525,
+              "raising_commutator_margin": 0.3678716838173969,
+              "decomposition_error": 1.3293372707991263e-15
+            },
+            {
+              "fluctuation": 0.03615522394964501,
+              "bound": 4.5657245480039625,
+              "raising_commutator_margin": 0.3195965254201337,
+              "decomposition_error": 1.4679132902462627e-15
+            }
+          ]
+        }
+      ],
+      "complete_output": {
+        "prepared_isometry_error": 0.01570483008792394,
+        "bell_reference_vector_error": 0.014381080716746703,
+        "all_input_gram_defect": 9.206132986890469e-16,
+        "total_energy_compression_drift": 5.614291273846692e-16,
+        "actual_backreaction_B0_difference": 0.0006738334214002606,
+        "analytic_bound": 0.34128790996329617,
+        "phase_optimized_BG_product_distance": 0.026138765428247814
+      }
+    },
+    {
+      "seed": 1947,
+      "K": 3,
+      "background_samples": [
+        {
+          "time": 0.0,
+          "alpha": 1.3004324611020398e-16,
+          "alpha_bound": 0.0,
+          "abs_dot_alpha": 5.204170427930421e-18,
+          "dot_bound": 0.7200000000000001,
+          "fluctuations": [
+            {
+              "fluctuation": 0.3234064136503129,
+              "bound": 2.3094010767585034,
+              "raising_commutator_margin": 0.22874162494317607,
+              "decomposition_error": 1.2435380990415206e-16
+            },
+            {
+              "fluctuation": 0.1186005097046452,
+              "bound": 1.8475208614068026,
+              "raising_commutator_margin": 0.19926725243113175,
+              "decomposition_error": 3.34137105282055e-16
+            }
+          ]
+        },
+        {
+          "time": 0.1625,
+          "alpha": 1.4185781239129622e-05,
+          "alpha_bound": 0.14016244197073172,
+          "abs_dot_alpha": 0.00016421923200554927,
+          "dot_bound": 0.7200306412874764,
+          "fluctuations": [
+            {
+              "fluctuation": 0.31126662289715634,
+              "bound": 2.7524411719172206,
+              "raising_commutator_margin": 0.23525770014066905,
+              "decomposition_error": 2.248337402534681e-16
+            },
+            {
+              "fluctuation": 0.0835750224723515,
+              "bound": 2.2019529375337763,
+              "raising_commutator_margin": 0.20601590015325077,
+              "decomposition_error": 2.3448407805911672e-16
+            }
+          ]
+        },
+        {
+          "time": 0.325,
+          "alpha": 5.040998376065048e-05,
+          "alpha_bound": 0.3392614143590597,
+          "abs_dot_alpha": 0.00027381752176651214,
+          "dot_bound": 0.7201088855649229,
+          "fluctuations": [
+            {
+              "fluctuation": 0.30188549077718846,
+              "bound": 3.28047495998343,
+              "raising_commutator_margin": 0.24022241374046818,
+              "decomposition_error": 3.399399992167034e-16
+            },
+            {
+              "fluctuation": 0.04816273664430223,
+              "bound": 2.624379967986744,
+              "raising_commutator_margin": 0.2106433231664942,
+              "decomposition_error": 3.913562626820221e-16
+            }
+          ]
+        },
+        {
+          "time": 0.48750000000000004,
+          "alpha": 0.00010108505673449221,
+          "alpha_bound": 0.6220789812388215,
+          "abs_dot_alpha": 0.00034482870467894425,
+          "dot_bound": 0.7202183437225463,
+          "fluctuations": [
+            {
+              "fluctuation": 0.2955494191991589,
+              "bound": 3.909807800027321,
+              "raising_commutator_margin": 0.2435664908362963,
+              "decomposition_error": 2.2675091768751487e-16
+            },
+            {
+              "fluctuation": 0.013507678052050954,
+              "bound": 3.1278462400218574,
+              "raising_commutator_margin": 0.2130159408190938,
+              "decomposition_error": 6.672732362631717e-16
+            }
+          ]
+        },
+        {
+          "time": 0.65,
+          "alpha": 0.00016129775849415304,
+          "alpha_bound": 1.023817750536848,
+          "abs_dot_alpha": 0.0003940359861160981,
+          "dot_bound": 0.7203484031583473,
+          "fluctuations": [
+            {
+              "fluctuation": 0.29246318389701687,
+              "bound": 4.659873103628779,
+              "raising_commutator_margin": 0.24524778921159793,
+              "decomposition_error": 1.3337975223714298e-15
+            },
+            {
+              "fluctuation": 0.025080572330855973,
+              "bound": 3.727898482903023,
+              "raising_commutator_margin": 0.21306435028008916,
+              "decomposition_error": 1.4684442296020393e-15
+            }
+          ]
+        }
+      ],
+      "complete_output": {
+        "prepared_isometry_error": 0.012944507085738199,
+        "bell_reference_vector_error": 0.011825158032174082,
+        "all_input_gram_defect": 5.828007062177456e-16,
+        "total_energy_compression_drift": 1.314354568065946e-15,
+        "actual_backreaction_B0_difference": 0.0004313704100078475,
+        "analytic_bound": 0.278660411597001,
+        "phase_optimized_BG_product_distance": 0.02160921402653834
+      }
+    },
+    {
+      "seed": 1947,
+      "K": 4,
+      "background_samples": [
+        {
+          "time": 0.0,
+          "alpha": 1.2866354527298204e-16,
+          "alpha_bound": 0.0,
+          "abs_dot_alpha": 4.9873299934333204e-18,
+          "dot_bound": 0.5400000000000001,
+          "fluctuations": [
+            {
+              "fluctuation": 0.2800781699679895,
+              "bound": 2.0,
+              "raising_commutator_margin": 0.17155621870738205,
+              "decomposition_error": 1.2473497255990464e-16
+            },
+            {
+              "fluctuation": 0.10271105430600559,
+              "bound": 1.6,
+              "raising_commutator_margin": 0.1494504393233488,
+              "decomposition_error": 2.22441840868931e-16
+            }
+          ]
+        },
+        {
+          "time": 0.1625,
+          "alpha": 8.959450854079934e-06,
+          "alpha_bound": 0.1051218314780488,
+          "abs_dot_alpha": 0.00010231682326593532,
+          "dot_bound": 0.5400193524138448,
+          "fluctuations": [
+            {
+              "fluctuation": 0.2700220294695317,
+              "bound": 2.3836839773025242,
+              "raising_commutator_margin": 0.1764432751055018,
+              "decomposition_error": 1.1386121468338401e-16
+            },
+            {
+              "fluctuation": 0.07275322106602217,
+              "bound": 1.9069471818420194,
+              "raising_commutator_margin": 0.15451192511493808,
+              "decomposition_error": 2.3689479355627086e-16
+            }
+          ]
+        },
+        {
+          "time": 0.325,
+          "alpha": 3.1042362889910835e-05,
+          "alpha_bound": 0.25444606076929477,
+          "abs_dot_alpha": 0.0001638369955446659,
+          "dot_bound": 0.5400670515038422,
+          "fluctuations": [
+            {
+              "fluctuation": 0.2622819957666152,
+              "bound": 2.84097465182439,
+              "raising_commutator_margin": 0.18016681030535117,
+              "decomposition_error": 3.347166677113324e-16
+            },
+            {
+              "fluctuation": 0.04245925944063678,
+              "bound": 2.272779721459512,
+              "raising_commutator_margin": 0.15798249237487064,
+              "decomposition_error": 3.891583595132635e-16
+            }
+          ]
+        },
+        {
+          "time": 0.48750000000000004,
+          "alpha": 6.075516712629957e-05,
+          "alpha_bound": 0.4665592359291162,
+          "abs_dot_alpha": 0.00019855757676109757,
+          "dot_bound": 0.5401312311609927,
+          "fluctuations": [
+            {
+              "fluctuation": 0.2570523894361628,
+              "bound": 3.3859928787382083,
+              "raising_commutator_margin": 0.18267486812722222,
+              "decomposition_error": 2.1763833991588978e-16
+            },
+            {
+              "fluctuation": 0.012490031152896684,
+              "bound": 2.708794302990567,
+              "raising_commutator_margin": 0.15976195561432036,
+              "decomposition_error": 4.456291015796457e-16
+            }
+          ]
+        },
+        {
+          "time": 0.65,
+          "alpha": 9.487305025735149e-05,
+          "alpha_bound": 0.767863312902636,
+          "abs_dot_alpha": 0.00022032981051393156,
+          "dot_bound": 0.5402049257885558,
+          "fluctuations": [
+            {
+              "fluctuation": 0.254468809024648,
+              "bound": 4.035568486154358,
+              "raising_commutator_margin": 0.1839358419086984,
+              "decomposition_error": 1.3294792267927647e-15
+            },
+            {
+              "fluctuation": 0.019811115331689402,
+              "bound": 3.2284547889234867,
+              "raising_commutator_margin": 0.15979826271006684,
+              "decomposition_error": 1.4713483673590584e-15
+            }
+          ]
+        }
+      ],
+      "complete_output": {
+        "prepared_isometry_error": 0.011262552716250006,
+        "bell_reference_vector_error": 0.010276745542429475,
+        "all_input_gram_defect": 3.9620843550738263e-16,
+        "total_energy_compression_drift": 6.148958811019932e-16,
+        "actual_backreaction_B0_difference": 0.000316482631842363,
+        "analytic_bound": 0.24132699547203063,
+        "phase_optimized_BG_product_distance": 0.01894247586608216
+      }
+    },
+    {
+      "seed": 1947,
+      "K": 5,
+      "background_samples": [
+        {
+          "time": 0.0,
+          "alpha": 1.2891172563517985e-16,
+          "alpha_bound": 0.0,
+          "abs_dot_alpha": 1.111307226797642e-18,
+          "dot_bound": 0.4320000000000003,
+          "fluctuations": [
+            {
+              "fluctuation": 0.2505095308248657,
+              "bound": 1.7888543819998317,
+              "raising_commutator_margin": 0.13724497496590563,
+              "decomposition_error": 2.408781627057938e-16
+            },
+            {
+              "fluctuation": 0.09186755978756042,
+              "bound": 1.4310835055998654,
+              "raising_commutator_margin": 0.11956035145867906,
+              "decomposition_error": 4.445128766506908e-16
+            }
+          ]
+        },
+        {
+          "time": 0.1625,
+          "alpha": 6.362219127954745e-06,
+          "alpha_bound": 0.08409746518243903,
+          "abs_dot_alpha": 7.18639361057479e-05,
+          "dot_bound": 0.43201374239331636,
+          "fluctuations": [
+            {
+              "fluctuation": 0.24175995053439853,
+              "bound": 2.132031764050204,
+              "raising_commutator_margin": 0.1411546200844014,
+              "decomposition_error": 2.374305044855519e-16
+            },
+            {
+              "fluctuation": 0.06527358291390817,
+              "bound": 1.7056254112401632,
+              "raising_commutator_margin": 0.12360954009195046,
+              "decomposition_error": 4.44491972003039e-16
+            }
+          ]
+        },
+        {
+          "time": 0.325,
+          "alpha": 2.159325025996982e-05,
+          "alpha_bound": 0.20355684861543583,
+          "abs_dot_alpha": 0.0001111904415314627,
+          "dot_bound": 0.4320466414205615,
+          "fluctuations": [
+            {
+              "fluctuation": 0.2350429816283024,
+              "bound": 2.5410449775332533,
+              "raising_commutator_margin": 0.14413344824428095,
+              "decomposition_error": 4.460448510176786e-16
+            },
+            {
+              "fluctuation": 0.03837976553597741,
+              "bound": 2.0328359820266027,
+              "raising_commutator_margin": 0.12638599389989652,
+              "decomposition_error": 6.665833569068163e-16
+            }
+          ]
+        },
+        {
+          "time": 0.48750000000000004,
+          "alpha": 4.139462999184628e-05,
+          "alpha_bound": 0.37324738874329294,
+          "abs_dot_alpha": 0.0001301104239870383,
+          "dot_bound": 0.43208941240078236,
+          "fluctuations": [
+            {
+              "fluctuation": 0.23050532369932522,
+              "bound": 3.0285240992755345,
+              "raising_commutator_margin": 0.1461398945017778,
+              "decomposition_error": 2.255324395624086e-16
+            },
+            {
+              "fluctuation": 0.011638230737565626,
+              "bound": 2.4228192794204277,
+              "raising_commutator_margin": 0.12780956449145628,
+              "decomposition_error": 2.4121349461613485e-16
+            }
+          ]
+        },
+        {
+          "time": 0.65,
+          "alpha": 6.34080694495655e-05,
+          "alpha_bound": 0.6142906503221088,
+          "abs_dot_alpha": 0.0001403106311873249,
+          "dot_bound": 0.432136961430011,
+          "fluctuations": [
+            {
+              "fluctuation": 0.22824715797949968,
+              "bound": 3.6095221851588253,
+              "raising_commutator_margin": 0.14714867352695876,
+              "decomposition_error": 1.3188056021308565e-15
+            },
+            {
+              "fluctuation": 0.016698650804507872,
+              "bound": 2.8876177481270604,
+              "raising_commutator_margin": 0.1278386101680535,
+              "decomposition_error": 1.457896385551438e-15
+            }
+          ]
+        }
+      ],
+      "complete_output": {
+        "prepared_isometry_error": 0.010101482186349677,
+        "bell_reference_vector_error": 0.00921100901351982,
+        "all_input_gram_defect": 1.1348505065061337e-15,
+        "total_energy_compression_drift": 1.430622528220383e-15,
+        "actual_backreaction_B0_difference": 0.0002497100124286833,
+        "analytic_bound": 0.21584942667249776,
+        "phase_optimized_BG_product_distance": 0.017144398036512035
+      }
+    },
+    {
+      "seed": 1947,
+      "K": 6,
+      "background_samples": [
+        {
+          "time": 0.0,
+          "alpha": 1.3033309736526993e-16,
+          "alpha_bound": 0.0,
+          "abs_dot_alpha": 4.119968255444917e-18,
+          "dot_bound": 0.3600000000000002,
+          "fluctuations": [
+            {
+              "fluctuation": 0.22868286817135783,
+              "bound": 1.6329931618554523,
+              "raising_commutator_margin": 0.11437081247158803,
+              "decomposition_error": 2.307921197511912e-16
+            },
+            {
+              "fluctuation": 0.08386322466433566,
+              "bound": 1.3063945294843617,
+              "raising_commutator_margin": 0.09963362621556586,
+              "decomposition_error": 4.444119515717881e-16
+            }
+          ]
+        },
+        {
+          "time": 0.1625,
+          "alpha": 4.854785524987279e-06,
+          "alpha_bound": 0.07008122098536586,
+          "abs_dot_alpha": 5.434289371417946e-05,
+          "dot_bound": 0.3600104863367339,
+          "fluctuations": [
+            {
+              "fluctuation": 0.22084449611225354,
+              "bound": 1.9462698174797146,
+              "raising_commutator_margin": 0.11762885007033455,
+              "decomposition_error": 2.245643115916201e-16
+            },
+            {
+              "fluctuation": 0.05970868195230644,
+              "bound": 1.5570158539837715,
+              "raising_commutator_margin": 0.10300795007662539,
+              "decomposition_error": 3.337201642715119e-16
+            }
+          ]
+        },
+        {
+          "time": 0.325,
+          "alpha": 1.6196322210050584e-05,
+          "alpha_bound": 0.16963070717952985,
+          "abs_dot_alpha": 8.163335242962206e-05,
+          "dot_bound": 0.3600349840559737,
+          "fluctuations": [
+            {
+              "fluctuation": 0.21483797105012653,
+              "bound": 2.3196460897169517,
+              "raising_commutator_margin": 0.12011120687023409,
+              "decomposition_error": 3.464165367133287e-16
+            },
+            {
+              "fluctuation": 0.03528141063861733,
+              "bound": 1.8557168717735613,
+              "raising_commutator_margin": 0.1053216615832471,
+              "decomposition_error": 3.9764972615690185e-16
+            }
+          ]
+        },
+        {
+          "time": 0.48750000000000004,
+          "alpha": 3.0496765878230926e-05,
+          "alpha_bound": 0.3110394906194108,
+          "abs_dot_alpha": 9.24947002943713e-05,
+          "dot_bound": 0.36006587301429693,
+          "fluctuations": [
+            {
+              "fluctuation": 0.21078134725641878,
+              "bound": 2.7646516085353756,
+              "raising_commutator_margin": 0.12178324541814817,
+              "decomposition_error": 2.449243936602872e-16
+            },
+            {
+              "fluctuation": 0.010921865098217227,
+              "bound": 2.211721286828301,
+              "raising_commutator_margin": 0.10650797040954692,
+              "decomposition_error": 2.3994079072587023e-16
+            }
+          ]
+        },
+        {
+          "time": 0.65,
+          "alpha": 4.591431702953699e-05,
+          "alpha_bound": 0.511908875268424,
+          "abs_dot_alpha": 9.700263053489204e-05,
+          "dot_bound": 0.36009917492478377,
+          "fluctuations": [
+            {
+              "fluctuation": 0.20875371588185254,
+              "bound": 3.295027871044713,
+              "raising_commutator_margin": 0.12262389460579894,
+              "decomposition_error": 1.3564546928712178e-15
+            },
+            {
+              "fluctuation": 0.014623735067893827,
+              "bound": 2.6360222968357707,
+              "raising_commutator_margin": 0.10653217514004458,
+              "decomposition_error": 1.4762392744344457e-15
+            }
+          ]
+        }
+      ],
+      "complete_output": {
+        "prepared_isometry_error": 0.009238316425706676,
+        "bell_reference_vector_error": 0.00842013777733659,
+        "all_input_gram_defect": 5.911311890460648e-15,
+        "total_energy_compression_drift": 1.2734168376954242e-15,
+        "actual_backreaction_B0_difference": 0.0002061268239530456,
+        "analytic_bound": 0.19704266668847384,
+        "phase_optimized_BG_product_distance": 0.015832589815661154
+      }
+    },
+    {
+      "seed": 1947,
+      "K": 7,
+      "background_samples": [
+        {
+          "time": 0.0,
+          "alpha": 1.3027651994155734e-16,
+          "alpha_bound": 0.0,
+          "abs_dot_alpha": 4.228388472693467e-18,
+          "dot_bound": 0.30857142857142883,
+          "fluctuations": [
+            {
+              "fluctuation": 0.21171919582667958,
+              "bound": 1.5118578920369088,
+              "raising_commutator_margin": 0.09803212497564688,
+              "decomposition_error": 3.3387737010714397e-16
+            },
+            {
+              "fluctuation": 0.07764225902598292,
+              "bound": 1.209486313629527,
+              "raising_commutator_margin": 0.08540025104191361,
+              "decomposition_error": 3.3344638908805415e-16
+            }
+          ]
+        },
+        {
+          "time": 0.1625,
+          "alpha": 3.887678392525093e-06,
+          "alpha_bound": 0.060069617987456456,
+          "abs_dot_alpha": 4.3188034018716684e-05,
+          "dot_bound": 0.30857982595675637,
+          "fluctuations": [
+            {
+              "fluctuation": 0.20456063663301724,
+              "bound": 1.8018957166033747,
+              "raising_commutator_margin": 0.10082472863171531,
+              "decomposition_error": 3.37028606590068e-16
+            },
+            {
+              "fluctuation": 0.05536035768430848,
+              "bound": 1.4415165732826996,
+              "raising_commutator_margin": 0.08829252863710747,
+              "decomposition_error": 4.446507761688937e-16
+            }
+          ]
+        },
+        {
+          "time": 0.325,
+          "alpha": 1.2782680799673608e-05,
+          "alpha_bound": 0.1453977490110256,
+          "abs_dot_alpha": 6.32290732020444e-05,
+          "dot_bound": 0.3085990391619558,
+          "fluctuations": [
+            {
+              "fluctuation": 0.19908241077386765,
+              "bound": 2.147574974218757,
+              "raising_commutator_margin": 0.10295246303162922,
+              "decomposition_error": 3.3341739083304405e-16
+            },
+            {
+              "fluctuation": 0.03282682642453883,
+              "bound": 1.7180599793750053,
+              "raising_commutator_margin": 0.09027570992849752,
+              "decomposition_error": 4.0134700986479683e-16
+            }
+          ]
+        },
+        {
+          "time": 0.48750000000000004,
+          "alpha": 2.3694615643857827e-05,
+          "alpha_bound": 0.26660527767378067,
+          "abs_dot_alpha": 6.954196516522303e-05,
+          "dot_bound": 0.30862260894121923,
+          "fluctuations": [
+            {
+              "fluctuation": 0.19538360558103932,
+              "bound": 2.559570028050566,
+              "raising_commutator_margin": 0.10438563892984128,
+              "decomposition_error": 2.692481924863356e-16
+            },
+            {
+              "fluctuation": 0.010314076963150655,
+              "bound": 2.047656022440453,
+              "raising_commutator_margin": 0.09129254606532591,
+              "decomposition_error": 4.451076794136755e-16
+            }
+          ]
+        },
+        {
+          "time": 0.65,
+          "alpha": 3.512054966591947e-05,
+          "alpha_bound": 0.4387790359443634,
+          "abs_dot_alpha": 7.09694099905949e-05,
+          "dot_bound": 0.3086472889587069,
+          "fluctuations": [
+            {
+              "fluctuation": 0.19352948450368773,
+              "bound": 3.0506030323239535,
+              "raising_commutator_margin": 0.1051061953763991,
+              "decomposition_error": 1.3405840528218123e-15
+            },
+            {
+              "fluctuation": 0.013129549249985838,
+              "bound": 2.440482425859163,
+              "raising_commutator_margin": 0.09131329297718106,
+              "decomposition_error": 1.4898770506996526e-15
+            }
+          ]
+        }
+      ],
+      "complete_output": {
+        "prepared_isometry_error": 0.008564219931842131,
+        "bell_reference_vector_error": 0.007803246921572035,
+        "all_input_gram_defect": 4.366695290765324e-15,
+        "total_energy_compression_drift": 4.453441728309543e-15,
+        "actual_backreaction_B0_difference": 0.0001754627713759227,
+        "analytic_bound": 0.18242606133297243,
+        "phase_optimized_BG_product_distance": 0.014824655765118286
+      }
+    }
+  ],
+  "finite_K_self_term_correction": [
+    {
+      "seed": 731,
+      "K": 2,
+      "D_norm": 0.148309518948453,
+      "full_background_correction_norm": 0.148309518948453,
+      "Hartree_vector_difference": 0.0194816330453822,
+      "Hartree_bound": 0.06090841469738926,
+      "B_differences": [
+        0.01976706017015037,
+        0.006451744438389251
+      ],
+      "B_bounds": [
+        0.12181682939477854,
+        0.09745346351582283
+      ],
+      "corrected_comparator_complete_error": 0.029388173030722695,
+      "unmodified_probe_with_exact_corrected_BG_error": 0.029390626934938973,
+      "main_bound": 0.3412879099632963,
+      "additional_probe_budget": 0.0036423231989038793,
+      "actual_corrected_energy_drift": 6.694405559197095e-16
+    },
+    {
+      "seed": 731,
+      "K": 3,
+      "D_norm": 0.148309518948453,
+      "full_background_correction_norm": 0.14830951894845304,
+      "Hartree_vector_difference": 0.012990163192544783,
+      "Hartree_bound": 0.04060560979825951,
+      "B_differences": [
+        0.01317836224550395,
+        0.004244452975874502
+      ],
+      "B_bounds": [
+        0.08121121959651903,
+        0.06496897567721523
+      ],
+      "corrected_comparator_complete_error": 0.023951183208004864,
+      "unmodified_probe_with_exact_corrected_BG_error": 0.023952535056370496,
+      "main_bound": 0.27866041159700106,
+      "additional_probe_budget": 0.0024282154659359197,
+      "actual_corrected_energy_drift": 3.4614158671098275e-15
+    },
+    {
+      "seed": 731,
+      "K": 4,
+      "D_norm": 0.148309518948453,
+      "full_background_correction_norm": 0.14830951894845304,
+      "Hartree_vector_difference": 0.009743466413347886,
+      "Hartree_bound": 0.03045420734869463,
+      "B_differences": [
+        0.0098836778523754,
+        0.0031620004589155704
+      ],
+      "B_bounds": [
+        0.06090841469738927,
+        0.048726731757911416
+      ],
+      "corrected_comparator_complete_error": 0.020723664463893888,
+      "unmodified_probe_with_exact_corrected_BG_error": 0.020724547826791194,
+      "main_bound": 0.2413269954720307,
+      "additional_probe_budget": 0.0018211615994519397,
+      "actual_corrected_energy_drift": 4.284355357081782e-15
+    },
+    {
+      "seed": 731,
+      "K": 5,
+      "D_norm": 0.148309518948453,
+      "full_background_correction_norm": 0.14830951894845304,
+      "Hartree_vector_difference": 0.007795163175937274,
+      "Hartree_bound": 0.024363365878955705,
+      "B_differences": [
+        0.00790684229482061,
+        0.002519339039871671
+      ],
+      "B_bounds": [
+        0.04872673175791142,
+        0.03898138540632914
+      ],
+      "corrected_comparator_complete_error": 0.018525917185741814,
+      "unmodified_probe_with_exact_corrected_BG_error": 0.018526551568000843,
+      "main_bound": 0.21584942667249785,
+      "additional_probe_budget": 0.0014569292795615517,
+      "actual_corrected_energy_drift": 5.4627751796904976e-15
+    },
+    {
+      "seed": 731,
+      "K": 6,
+      "D_norm": 0.148309518948453,
+      "full_background_correction_norm": 0.1483095189484531,
+      "Hartree_vector_difference": 0.00649618076747765,
+      "Hartree_bound": 0.020302804899129754,
+      "B_differences": [
+        0.006588960618130413,
+        0.002093742089582351
+      ],
+      "B_bounds": [
+        0.040605609798259515,
+        0.03248448783860761
+      ],
+      "corrected_comparator_complete_error": 0.016905798989365447,
+      "unmodified_probe_with_exact_corrected_BG_error": 0.01690628275244066,
+      "main_bound": 0.19704266668847392,
+      "additional_probe_budget": 0.0012141077329679598,
+      "actual_corrected_energy_drift": 6.599060272809684e-15
+    },
+    {
+      "seed": 731,
+      "K": 7,
+      "D_norm": 0.148309518948453,
+      "full_background_correction_norm": 0.14830951894845315,
+      "Hartree_vector_difference": 0.0055682822063815455,
+      "Hartree_bound": 0.017402404199254075,
+      "B_differences": [
+        0.005647626829603902,
+        0.0017911392635578949
+      ],
+      "B_bounds": [
+        0.03480480839850816,
+        0.027843846718806527
+      ],
+      "corrected_comparator_complete_error": 0.015647800556017617,
+      "unmodified_probe_with_exact_corrected_BG_error": 0.015648185117885526,
+      "main_bound": 0.18242606133297248,
+      "additional_probe_budget": 0.001040663771115394,
+      "actual_corrected_energy_drift": 9.047319531666645e-15
+    },
+    {
+      "seed": 1947,
+      "K": 2,
+      "D_norm": 0.148309518948453,
+      "full_background_correction_norm": 0.14830951894845298,
+      "Hartree_vector_difference": 0.04252185655789307,
+      "Hartree_bound": 0.060908414697389245,
+      "B_differences": [
+        0.01392624564116507,
+        8.077454719312982e-05
+      ],
+      "B_bounds": [
+        0.12181682939477849,
+        0.09745346351582279
+      ],
+      "corrected_comparator_complete_error": 0.015604139022064808,
+      "unmodified_probe_with_exact_corrected_BG_error": 0.015610901710799764,
+      "main_bound": 0.34128790996329617,
+      "additional_probe_budget": 0.0036423231989038767,
+      "actual_corrected_energy_drift": 4.239131828740759e-16
+    },
+    {
+      "seed": 1947,
+      "K": 3,
+      "D_norm": 0.148309518948453,
+      "full_background_correction_norm": 0.14830951894845298,
+      "Hartree_vector_difference": 0.028347681392916376,
+      "Hartree_bound": 0.040605609798259494,
+      "B_differences": [
+        0.00934177494745081,
+        0.00013587625160504935
+      ],
+      "B_bounds": [
+        0.08121121959651899,
+        0.0649689756772152
+      ],
+      "corrected_comparator_complete_error": 0.012891001133007772,
+      "unmodified_probe_with_exact_corrected_BG_error": 0.012894690006686662,
+      "main_bound": 0.278660411597001,
+      "additional_probe_budget": 0.002428215465935918,
+      "actual_corrected_energy_drift": 7.622515522403323e-16
+    },
+    {
+      "seed": 1947,
+      "K": 4,
+      "D_norm": 0.148309518948453,
+      "full_background_correction_norm": 0.14830951894845298,
+      "Hartree_vector_difference": 0.02126050150844567,
+      "Hartree_bound": 0.030454207348694622,
+      "B_differences": [
+        0.007027789259037576,
+        0.00013266620203966628
+      ],
+      "B_bounds": [
+        0.060908414697389245,
+        0.048726731757911396
+      ],
+      "corrected_comparator_complete_error": 0.011228232196919256,
+      "unmodified_probe_with_exact_corrected_BG_error": 0.011230630753962134,
+      "main_bound": 0.24132699547203063,
+      "additional_probe_budget": 0.0018211615994519384,
+      "actual_corrected_energy_drift": 9.276852450189654e-16
+    },
+    {
+      "seed": 1947,
+      "K": 5,
+      "D_norm": 0.148309518948453,
+      "full_background_correction_norm": 0.14830951894845296,
+      "Hartree_vector_difference": 0.017008231607473372,
+      "Hartree_bound": 0.024363365878955698,
+      "B_differences": [
+        0.005632493693815022,
+        0.00012089676264803728
+      ],
+      "B_bounds": [
+        0.048726731757911396,
+        0.038981385406329117
+      ],
+      "corrected_comparator_complete_error": 0.010077112405451526,
+      "unmodified_probe_with_exact_corrected_BG_error": 0.010078829786013618,
+      "main_bound": 0.21584942667249776,
+      "additional_probe_budget": 0.0014569292795615506,
+      "actual_corrected_energy_drift": 8.623423002692378e-16
+    },
+    {
+      "seed": 1947,
+      "K": 6,
+      "D_norm": 0.148309518948453,
+      "full_background_correction_norm": 0.14830951894845296,
+      "Hartree_vector_difference": 0.014173416487847049,
+      "Hartree_bound": 0.020302804899129747,
+      "B_differences": [
+        0.0046994329364675735,
+        0.00010894917675452476
+      ],
+      "B_bounds": [
+        0.040605609798259494,
+        0.0324844878386076
+      ],
+      "corrected_comparator_complete_error": 0.009219873772425143,
+      "unmodified_probe_with_exact_corrected_BG_error": 0.009221180796453449,
+      "main_bound": 0.19704266668847384,
+      "additional_probe_budget": 0.001214107732967959,
+      "actual_corrected_energy_drift": 6.043439235266417e-15
+    },
+    {
+      "seed": 1947,
+      "K": 7,
+      "D_norm": 0.148309518948453,
+      "full_background_correction_norm": 0.148309518948453,
+      "Hartree_vector_difference": 0.01214856888665075,
+      "Hartree_bound": 0.01740240419925407,
+      "B_differences": [
+        0.004031562441241476,
+        9.840645017322736e-05
+      ],
+      "B_bounds": [
+        0.03480480839850814,
+        0.027843846718806516
+      ],
+      "corrected_comparator_complete_error": 0.00854963932037042,
+      "unmodified_probe_with_exact_corrected_BG_error": 0.008550676846205472,
+      "main_bound": 0.18242606133297243,
+      "additional_probe_budget": 0.0010406637711153934,
+      "actual_corrected_energy_drift": 6.7954286517022714e-15
+    }
+  ],
+  "whole_product_nonconvergence_control": {
+    "H": "K^-1 sum_(r<s) Z_r Z_s; initial |+>^K; h=0",
+    "Hartree": "phi(t)=|+>; b_Z=0",
+    "rows": [
+      {
+        "K": 2,
+        "time": 1.0,
+        "W_norm": 1.0,
+        "alpha_exact": 0.22984884706593012,
+        "whole_product_overlap_absolute": 0.8775825618903725,
+        "phase_optimized_whole_product_distance": 0.4948079185090462
+      },
+      {
+        "K": 3,
+        "time": 1.0,
+        "W_norm": 1.0,
+        "alpha_exact": 0.19119060667425264,
+        "whole_product_overlap_absolute": 0.8445200352795794,
+        "phase_optimized_whole_product_distance": 0.5576378120615936
+      },
+      {
+        "K": 4,
+        "time": 1.0,
+        "W_norm": 1.0,
+        "alpha_exact": 0.1620643890826473,
+        "whole_product_overlap_absolute": 0.8397451071551754,
+        "phase_optimized_whole_product_distance": 0.5661358367827012
+      },
+      {
+        "K": 5,
+        "time": 1.0,
+        "W_norm": 1.0,
+        "alpha_exact": 0.14014829280703917,
+        "whole_product_overlap_absolute": 0.839993492815381,
+        "phase_optimized_whole_product_distance": 0.5656969280182083
+      },
+      {
+        "K": 6,
+        "time": 1.0,
+        "W_norm": 1.0,
+        "alpha_exact": 0.12327007986019684,
+        "whole_product_overlap_absolute": 0.8404691294805772,
+        "phase_optimized_whole_product_distance": 0.5648555045662967
+      },
+      {
+        "K": 7,
+        "time": 1.0,
+        "W_norm": 1.0,
+        "alpha_exact": 0.10993873531660187,
+        "whole_product_overlap_absolute": 0.8406988688224045,
+        "phase_optimized_whole_product_distance": 0.5644486357102751
+      },
+      {
+        "K": 32,
+        "time": 1.0,
+        "W_norm": 1.0,
+        "alpha_exact": 0.029393746869997683,
+        "whole_product_overlap_absolute": 0.8408955018667439,
+        "phase_optimized_whole_product_distance": 0.5641001651005894
+      },
+      {
+        "K": 128,
+        "time": 1.0,
+        "W_norm": 1.0,
+        "alpha_exact": 0.007691999511748204,
+        "whole_product_overlap_absolute": 0.8408964023252082,
+        "phase_optimized_whole_product_distance": 0.5640985688242646
+      },
+      {
+        "K": 512,
+        "time": 1.0,
+        "W_norm": 1.0,
+        "alpha_exact": 0.0019455203633670926,
+        "whole_product_overlap_absolute": 0.8408964150563646,
+        "phase_optimized_whole_product_distance": 0.5640985462552361
+      }
+    ],
+    "limiting_overlap_absolute": 0.8408964152537145,
+    "limiting_phase_optimized_distance": 0.5640985459053861
+  },
+  "model_mapping_audit": {
+    "status": "generic finite tensor-copy hypotheses checked; concrete spatial candidate not certified here",
+    "necessary_author_data": [
+      "explicit K-independent cluster h and swap-symmetric W",
+      "separate same-copy diagonal term D/K from r<s interaction",
+      "even local CAR factors and fixed spatial support",
+      "strict bounds for w=||W|| and L=sum ||A_a||||B_a||",
+      "fixed physical finite domain and product preparation resource",
+      "actual clock/endpoint/signal menu and common geometric comparison"
+    ],
+    "not_claimed": [
+      "all-background product convergence",
+      "arbitrary initial background/reference classicalization",
+      "actual CAR or spatial transport construction from qubit diagnostic",
+      "numerical proof of the analytical mean-field theorem",
+      "new research round or accepted physical result"
+    ]
+  }
+}

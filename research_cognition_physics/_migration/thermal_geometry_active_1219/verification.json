@@ -1,0 +1,98 @@
+{
+  "schema": "thermal_geometry_active_1219_verification_v1",
+  "date": "2026-10-15",
+  "status": "PASS",
+  "scope": "Four-root active navigation above the unchanged closed 1161--1218 boundary; representative original thermal closure replay",
+  "file_sha256": {
+    "scripts/run_research_thermal_geometry_active.py": "370a766c835fb91e747411d1b9d2ca0d5a331f68c8eeedc3db26ada66d059f01",
+    "research_cognition_physics/archive_1219_/_shared/update_navigation.py": "7d5645fac6f7f75b6ec114b6b1ae13534cb1073a3d46db7345c3d93fbf887db5",
+    "research_cognition_physics/archive_1219_/_shared/navigation_notice.md": "3aaba6d5979c3feb3ff7ef6b2948a1ddbf05c1668655b5ec5d58d0fb4d3199a0",
+    "research_cognition_physics/_migration/thermal_geometry_active_1219/layer.json": "fa706a0379309c5f4ec749897189d2a761664e25fb246a67bc84e2bd30c43002"
+  },
+  "publication": {
+    "status": "APPLIED",
+    "files": 4,
+    "changed_files": 4,
+    "closed_boundary_unchanged": true,
+    "original_navigation_recoverable": true,
+    "scientific_files_modified": false
+  },
+  "checks": [
+    {
+      "arguments": "'research_cognition_physics/archive_1219_/_shared/update_navigation.py' --check",
+      "exit_code": 0,
+      "result": {
+        "status": "CHECKED",
+        "files": 4,
+        "changed_files": 0,
+        "closed_boundary_unchanged": true,
+        "original_navigation_recoverable": true,
+        "scientific_files_modified": false
+      }
+    },
+    {
+      "arguments": "'scripts/run_research_thermal_geometry_active.py' --verify-navigation",
+      "exit_code": 0,
+      "result": {
+        "status": "PASS",
+        "files": 4,
+        "manifest_sha256": "fa706a0379309c5f4ec749897189d2a761664e25fb246a67bc84e2bd30c43002",
+        "closed_boundary_verified": true,
+        "original_navigation_recoverable": true,
+        "frozen_archives_modified": false
+      }
+    },
+    {
+      "arguments": "'scripts/run_research_thermal_geometry_active.py' --verify-closure",
+      "exit_code": 0,
+      "result": {
+        "status": "PASS",
+        "files": 992,
+        "moved_files": 984,
+        "scientific_python_json_byte_identical": 507,
+        "reversible_markdown_files": 24,
+        "frozen_support_files": 124,
+        "manifest_sha256": "338b9a7dd23e70ff20e19e6957569acb0c46437e14cee8a89f084b24332806dd",
+        "old_directories_absent": true,
+        "current_and_original_hashes_verified": true,
+        "directory_copy_used": false,
+        "zip_used": false
+      }
+    },
+    {
+      "arguments": "'scripts/run_research_thermal_geometry_active.py' --script 'research_cognition_physics/archive_1201_1218/_shared/finalize_four_laws_stage.py' -- --verify",
+      "exit_code": 0,
+      "result": {
+        "status": "PASS",
+        "goal_status": "complete",
+        "stage_complete": true,
+        "stage_scope": "declared compatible thermal domains",
+        "latest_scientific_round": 1218,
+        "stage_rounds": 18,
+        "stage_check_groups": 36,
+        "new_scientific_rounds": 0,
+        "old_GR_science_files_verified": 421,
+        "old_GR_acceptance_bindings_verified": 485,
+        "current_stage_science_files_verified": 152,
+        "adopted_thermal_roles": [
+          "TR",
+          "TW",
+          "TC"
+        ],
+        "new_universal_axioms": 0,
+        "old_GR_goal_completed": false
+      }
+    }
+  ],
+  "old_archive_files_modified": false,
+  "old_runtime_support_files_modified": false,
+  "old_manifests_modified": false,
+  "new_scientific_rounds": 0,
+  "global_pathlib_patch_used": false,
+  "historical_modules_keep_original_view": true,
+  "new_1219_modules_keep_native_view": true,
+  "closure_manifest_sha256": "338b9a7dd23e70ff20e19e6957569acb0c46437e14cee8a89f084b24332806dd",
+  "prior_full_layout_limitation": "The earlier formula inventory mismatch for 猜想/2029-9-29.md is recorded in ../closure_1161_1218/runtime_checks.json; this work did not rerun or repair that unrelated historical check.",
+  "goal_scope": "Application-goal creation and scientific admissions are managed separately; the replayed complete status belongs only to the prior four-laws stage."
+}
+

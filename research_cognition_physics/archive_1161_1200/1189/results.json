@@ -1,0 +1,86 @@
+{
+  "round": 1189,
+  "date": "2026-10-14",
+  "status": "PASS_CONDITIONAL_DRIVEN_FINITE_BAND",
+  "groups": {
+    "1_complete_noncommuting_Dirac_source": {
+      "Ward_diagnostic": 2.7755575615628914e-16,
+      "Hm_source_commutator_norm": 0.22474487139158886,
+      "source_pair_commutator_norm": 0.4999999999999998,
+      "source_norms": [
+        0.7071067811865474,
+        0.7071067811865474,
+        0.30290544652768625,
+        0.3029054465276862
+      ],
+      "V0_norm": 0.11858913544009508,
+      "energy_levels": [
+        1.4142135623730951,
+        1.7320508075688772
+      ]
+    },
+    "2_exact_full_Fock_and_source_bounds": {
+      "epsilon": {
+        "exact": "364325745847155802203/2384185791015625000000000000",
+        "upper_display": 1.5280929331097092e-07
+      },
+      "frequency_squared_relative_error": {
+        "exact": "1737240665833166509395285068999029426208459653209/5684341886080801486968994140625000000000000000000000000",
+        "upper_display": 3.0561860997262193e-07
+      },
+      "d": {
+        "exact": "1737240665833166509395285068999029426208459653209/1136868377216160297393798828125000000000000000000000000",
+        "upper_display": 1.5280930498631098e-06
+      },
+      "r": {
+        "exact": "5211721997499499528185855206997088278625378959627/2842170943040400743484497070312500000000000000000000000",
+        "upper_display": 1.8337116598357316e-06
+      },
+      "full_Fock_prepared_distance": {
+        "exact": "200940837014702926253387972980887736964778499887841/56843418860808014869689941406250000000000000000000000000",
+        "upper_display": 3.534988588683327e-06
+      },
+      "same_kappa_source_insertion_error": {
+        "exact": "2113099323215820550460190049491674238767237139275819934027542361164927756677469203497815169846259232804693/40389641315803743193196353578640817281891780329921746591992359753930941224098205566406250000000000000000000000",
+        "upper_display": 5.231785315184274e-05
+      },
+      "constraint_V0_norm_bound": {
+        "exact": "1599/640",
+        "upper_display": 2.4984375
+      },
+      "source_norm_bound_per_mode": "1",
+      "Nmax": 1,
+      "unknown_input_code_dimension": 30,
+      "full_Fock_output_preserved": true,
+      "arbitrary_reference_preserved": true,
+      "T_max": "1",
+      "kappa": "1/10",
+      "modes": 4,
+      "m": "2",
+      "b_upper": "2/5",
+      "u_upper": "3/5",
+      "w_upper": "4",
+      "proof_required_for_quantifiers": true
+    },
+    "3_driven_finite_diagnostic_only": {
+      "finite_total_occupation_cutoff": 4,
+      "dimension": 420,
+      "initial_state": "boson vacuum times (two-fermion mask 3 + mask 5)/sqrt(2)",
+      "actual_delta_frequency_squared": "-1667894313415706818509223030791827226864187169086998703022048198590472058551/115292150460684697600000000000000000000000000000000000000000000000000000000000000000",
+      "driven_mean_number": 0.0004222198880741223,
+      "population_outside_initial_code": 1.4367994562536645e-07,
+      "initial_code_generator_leak_norm": 0.043301270189221926,
+      "prepared_one_input_vector_difference": 1.6834234400246476e-08,
+      "same_source_expectation_difference": 1.3526137675190508e-11,
+      "full_source_derivative_residual": 4.478221092563128e-11,
+      "energy_conservation_residual": 8.881784197001252e-16,
+      "truncation_used_as_full_Fock_certificate": false,
+      "physical_instrument_claimed": false
+    }
+  },
+  "old_source_sha256": "6454e8c09443fdd0bcc1fb47161b055c7e960dbb7f4dc836b05109ffe95955db",
+  "new_axioms": 0,
+  "Einstein_generated": false,
+  "actual_internal_clock_implemented": false,
+  "full_goal_complete": false
+}

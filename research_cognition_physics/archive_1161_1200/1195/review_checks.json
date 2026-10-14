@@ -1,0 +1,180 @@
+{
+  "status": "PASS_WITH_SCOPE",
+  "review_type": "internal non-blind independent mathematical/code review",
+  "author_check_groups": 3,
+  "independent_review_groups": 3,
+  "grading": {
+    "method": "Pascal DP, independently checked by all 65536 subsets",
+    "degree_counts": [
+      1,
+      16,
+      120,
+      560,
+      1820,
+      4368,
+      8008,
+      11440,
+      12870,
+      11440,
+      8008,
+      4368,
+      1820,
+      560,
+      120,
+      16,
+      1
+    ],
+    "residue_dimensions": [
+      1821,
+      576,
+      240,
+      576,
+      1821,
+      4368,
+      8008,
+      11440,
+      12870,
+      11440,
+      8008,
+      4368
+    ],
+    "even_block_rank_capacities": [
+      1821,
+      240,
+      1821,
+      240,
+      1821,
+      8008
+    ],
+    "even_dimension": 32768,
+    "rank_upper_even": 13951,
+    "nullity_lower_even": 18817,
+    "grade8_nullity_lower": 11049,
+    "full_grade_only_loose_bound": 24991,
+    "scope": "single-cell unmodified amplitude; actual rank not computed; odd inputs additionally vanish"
+  },
+  "berezin_and_blocking": {
+    "haar_coefficients_at_fixed_point": {
+      "0x0": "1",
+      "0xf": "-1",
+      "0xf0": "-1",
+      "0xff": "5/2",
+      "0x3c": "1/2",
+      "0x5a": "1/2",
+      "0xa5": "1/2",
+      "0xc3": "1/2"
+    },
+    "exact_matrix": [
+      [
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-1"
+      ],
+      [
+        "0",
+        "-1/2",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1/2",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1/2",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "-1/2",
+        "0"
+      ],
+      [
+        "-5/2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1"
+      ]
+    ],
+    "exact_traces_2_3_4": [
+      "8",
+      "17",
+      "179/4"
+    ],
+    "eigenvalues": [
+      -0.5811388300841895,
+      -0.5,
+      -0.5,
+      0.5,
+      0.5,
+      2.5811388300841895
+    ],
+    "exact_positive_metric_diagonal": [
+      "5/2",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "berezin_pairing_inertia": [
+      3,
+      3,
+      0
+    ],
+    "two_step_eigenvalues": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.3377223398316209,
+      6.662277660168379
+    ],
+    "reconstruction_errors": {
+      "signed_one_step": 6.661338147750939e-16,
+      "positive_two_step": 4.440892098500626e-16,
+      "involution": 4.440892098500626e-16,
+      "commutator_PH": 0.0
+    },
+    "parameter_samples_checked": 4,
+    "scope": "Berezin contraction is not an identified CP superoperator; new W is not original reflection positivity"
+  },
+  "author_files_sha256": {
+    "baseline.json": "1804c446b2c97f7fa1be11e3f8aae9ff2813dc6227c541c2f828693ee0ba665b",
+    "proof.md": "8061ac7d001e368823e8b37c8a8188bed8be04ec085ba2a8d72fbad51023d741",
+    "check.py": "8478c4bd9ed9fa46bf2ae1a2a7ef9cd60b564ad6cb68cd0bdc90a58111b5b7eb",
+    "results.json": "07eef9417c80b26d651b43f0f409e9304e0a99e8fb11405155c840661c38d7c7",
+    "admission.md": "8af4c6bc10a953d4c569bb8400dfd511383697b1ee5161ca21b6c856a391a148",
+    "sources.md": "ff138dc78033be0e51b3f81d8e46ed0cb4a2fba6679dc53ca53744068825d404",
+    "NEXT.md": "8259dab017c962c3c5d1fbfb8d5907b49dc602270f9526654e68a709cef263d2",
+    "../research_note_1195.md": "5dbef048c86a429e1df1d1184b82b3f5452c0a6f252250c9467eabc1972ea42b"
+  },
+  "reviewer_files_sha256": {
+    "reviewer_check.py": "c53975beadc90409e21e3defe03376dd4992ecfcec41921c8afe7137614273d2",
+    "review.md": "a82f9ed6c63e3c9a8c797f7ae8394a33b7b02dae701a177dd067dfb988690ada"
+  },
+  "not_certified": [
+    "full four-dimensional transfer or physical quotient",
+    "original reflection positivity or physical observable adjoint",
+    "original real-time arbitrary-reference quantum instrument",
+    "GR, dark matter, dark energy, or exclusion of all spinor candidates"
+  ]
+}

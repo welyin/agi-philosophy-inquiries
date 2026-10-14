@@ -1,0 +1,81 @@
+{
+  "round": 1186,
+  "date": "2026-10-14",
+  "status": "PASS_WITH_LOCAL_COMPOSITE_SCOPE",
+  "groups": {
+    "1_same_background_contact_tree": {
+      "pass": true,
+      "rational_tensor_basis_cases": 31,
+      "dimensions": [
+        3,
+        4,
+        5
+      ],
+      "identity": "C A0 = -I/4; C=a Q/2; L=a(D-2)/2",
+      "D4_conformal_hessian_example": "-3"
+    },
+    "2_complete_contact_and_causal_source": {
+      "pass": true,
+      "free_contact_example": "-6",
+      "normal_order_counterterm_example": "6",
+      "remaining_vacuum_contact_example": "-3",
+      "mode_tadpole": "0",
+      "mode_contact": "3/4",
+      "mode_transition_square": "9/8",
+      "mode_static_complete": "-3/8",
+      "mode_static_without_contact": "-9/8"
+    },
+    "3_complete_quantum_control_record": {
+      "pass": true,
+      "time": "1",
+      "y_active": "3/2",
+      "input_control_dimension": 2,
+      "oscillator": "full L2(R), no Fock truncation",
+      "reference": "arbitrary for the exact joint unitary",
+      "uniform_positive_H_strict_lower": "3/160",
+      "full_probability": {
+        "lower": "337794941395586862975007520844909299/664613997892457936451903530140172288",
+        "upper": "675589882791173725950015041689818603/1329227995784915872903807060280344576",
+        "lower_display": 0.5082573380439783,
+        "upper_display": 0.5082573380439783
+      },
+      "contact_deleted_probability": {
+        "lower": "727157829889713146521261080983529723/1329227995784915872903807060280344576",
+        "upper": "727157829889713146521261080983529729/1329227995784915872903807060280344576",
+        "lower_display": 0.5470527495625931,
+        "upper_display": 0.5470527495625931
+      },
+      "difference": {
+        "lower": "3222996693658713785702877455856945/83076749736557242056487941267521536",
+        "upper": "51567947098539420571246039293711131/1329227995784915872903807060280344576",
+        "lower_display": 0.03879541151861482,
+        "upper_display": 0.03879541151861482
+      },
+      "certified_strict_lower": "3879/100000",
+      "interval_bits": 120,
+      "trig_terms": 28,
+      "float_diagnostics": [
+        {
+          "amplitude_real": 0.9242085521919733,
+          "amplitude_imag": 0.016514676087956627,
+          "p_Y_plus": 0.5082573380439783
+        },
+        {
+          "amplitude_real": 0.9031524978608652,
+          "amplitude_imag": 0.09410549912518637,
+          "p_Y_plus": 0.5470527495625932
+        }
+      ]
+    }
+  },
+  "scope_limits": [
+    "Tensor identity assumes the selected covariant scalar action, fixed variables/measure/local terms and isotropic stationary reference.",
+    "The positive quantum mode is a finite-mode diagnostic, not a realization of that covariant vacuum or regulator.",
+    "No field environment or quantum control coherence is discarded in the comparison.",
+    "Probability separation is for the stated known preparation and Y effect; no hardware or universal instrument error is certified.",
+    "Composite metric signature, actual common clocks, the two-derivative coefficient and Einstein dynamics remain open."
+  ],
+  "new_adopted_axioms": 0,
+  "new_empirical_calibration": 0,
+  "gr_hard_deliverables_completed": 0
+}

@@ -1,0 +1,290 @@
+"""1173: read-only recomputation by default; --write creates results once.
+
+The computed propagator is the midpoint Dirac COMPARATOR, not a claim to have
+iterated every actual local QW step. Analytic uniform bounds connect them.
+"""
+from __future__ import annotations
+import argparse
+import hashlib
+import json
+import math
+from pathlib import Path
+import numpy as np
+
+HERE = Path(__file__).resolve().parent
+RESEARCH = HERE.parents[1]
+SOURCES = [
+    "archive_342_369/research_note_349.md",
+    "archive_342_369/research_note_350.md",
+    "archive_585_628/research_note_622.md",
+    "archive_585_628/research_note_624.md",
+    "archive_1120_1158/1146/proof.md",
+    "archive_1120_1158/1155/proof.md",
+    "archive_1161_/1171/proof.md",
+    "archive_1161_/_shared/goal.md",
+]
+L, T, A_STEP, NMAX, NREF = 96.0, 8.0, 1 / 65536, 128, 8192
+MASSES = (3.0, 3.4)
+P0, SIGMA_P, PORT = 4.0, 0.6, 5.8
+ROUNDING_ALLOWANCE = 2e-6
+I2 = np.eye(2, dtype=complex)
+X = np.array([[0, 1], [1, 0]], dtype=complex)
+Y = np.array([[0, -1j], [1j, 0]], dtype=complex)
+Z = np.diag([1.0, -1.0]).astype(complex)
+
+
+def cjson(z):
+    ar = np.asarray(z)
+    return {"real": ar.real.tolist(), "imag": ar.imag.tolist()}
+
+
+def opnorm(x):
+    return float(np.linalg.norm(x, 2))
+
+
+def block_exp(p, b, t):
+    e = np.sqrt(p * p + b * b)
+    sinc = np.sinc(t * e / np.pi) * t
+    out = np.zeros((len(p), 2, 2), dtype=complex)
+    c = np.cos(t * e)
+    out[:, 0, 0], out[:, 1, 1] = c - 1j * sinc * p, c + 1j * sinc * p
+    out[:, 0, 1] = out[:, 1, 0] = -1j * sinc * b
+    return out
+
+
+def reference(p, mass, q, steps=NREF):
+    if q == 0:
+        return block_exp(p, mass, T)
+    dt = T / steps
+    u = np.broadcast_to(I2, (len(p), 2, 2)).copy()
+    for k in range(steps):
+        scale = 1 + np.sin(np.pi * (k + 0.5) / steps) ** 2
+        v = block_exp(p, mass * scale, dt)
+        u = v @ u
+    return u
+
+
+def port_matrices(n):
+    p = 2 * np.pi * n / L
+    diff = p[None, :] - p[:, None]
+    continuous = np.zeros_like(diff, dtype=complex)
+    mask = diff != 0
+    continuous[mask] = (
+        np.exp(1j * diff[mask] * L / 2) - np.exp(1j * diff[mask] * PORT)
+    ) / (1j * diff[mask] * L)
+    continuous[~mask] = (L / 2 - PORT) / L
+    nsites = int(round(L / A_STEP))
+    jfirst = math.floor((PORT + L / 2) / A_STEP) + 1
+    count = nsites - jfirst
+    xfirst = -L / 2 + jfirst * A_STEP
+    site = (count / nsites) * np.exp(
+        1j * diff * (xfirst + (count - 1) * A_STEP / 2)
+    ) * np.sinc(count * diff * A_STEP / (2 * np.pi)) / np.sinc(
+        diff * A_STEP / (2 * np.pi)
+    )
+    return continuous, site, jfirst, count
+
+
+def spatial_inner(left, right, effect):
+    return np.sum(left.conj() * (effect @ right))
+
+
+def run():
+    n = np.arange(-NMAX, NMAX + 1)
+    p = 2 * np.pi * n / L
+    momentum_bound = float(max(abs(p)))
+    nsites, nsteps = int(round(L / A_STEP)), int(round(T / A_STEP))
+    phi = np.exp(-(p - P0) ** 2 / (4 * SIGMA_P**2))
+    phi /= np.linalg.norm(phi)
+    kc, ka, first, count = port_matrices(n)
+    eye_band = np.eye(len(n))
+    inputs, us, zs = {}, {}, {}
+    unitary_errors = []
+    for d, mass in enumerate(MASSES):
+        e = np.sqrt(p * p + mass * mass)
+        spin = np.stack([np.sqrt((e + p) / (2 * e)), np.sqrt((e - p) / (2 * e))], axis=1)
+        inputs[d] = spin * phi[:, None]
+        for q in (0, 1):
+            u = reference(p, mass, q)
+            us[q, d] = u
+            zs[q, d] = np.einsum("nij,nj->ni", u, inputs[d])
+            defect = u.conj().transpose(0, 2, 1) @ u - I2
+            unitary_errors.append(float(np.max(np.linalg.norm(defect, axis=(1, 2)))))
+
+    mass_max = max(MASSES)
+    referr = [0.0, mass_max * np.pi * (T / NREF) / 4]
+    qwerr = [T * A_STEP * momentum_bound * mass_max * (1 + q)
+             + q * mass_max * np.pi * A_STEP / 4 for q in (0, 1)]
+    err = [qwerr[q] + referr[q] + ROUNDING_ALLOWANCE for q in (0, 1)]
+    embedding = A_STEP * momentum_bound
+    port_bound = 2 * embedding + len(n) * A_STEP / L
+    p_data, joint, gammas = {}, {}, []
+    ey = (I2 - Y) / 2
+    plus = np.ones(2, dtype=complex) / np.sqrt(2)
+    for q in (0, 1):
+        port_vals, neg_vals = [], []
+        gram = np.empty((2, 2), dtype=complex)
+        for d, mass in enumerate(MASSES):
+            z = zs[q, d]
+            pc = float(spatial_inner(z, z, kc).real)
+            pa = float(spatial_inner(z, z, ka).real)
+            e = np.sqrt(p * p + mass * mass)
+            up = np.sqrt((e + p) / (2 * e))
+            um = np.sqrt((e - p) / (2 * e))
+            negative = float(np.sum(abs(-um * z[:, 0] + up * z[:, 1]) ** 2))
+            port_vals.append(pa)
+            neg_vals.append(negative)
+            p_data[f"q{q}_d{d}"] = {"comparator_site_port": pa,
+                "comparator_continuous_port": pc,
+                "both_frequency_components_retained_negative_weight": negative}
+            for ee in (0, 1):
+                gram[d, ee] = spatial_inner(z, zs[q, ee], ka)
+        f = ey * gram
+        joint[f"q{q}"] = {"joint_clock_minusY_site_port_effect": cjson(f),
+            "unknown_internal_effect_eigenvalues": np.linalg.eigvalsh(f).tolist(),
+            "plus_internal_joint_probability": float(np.vdot(plus, f @ plus).real),
+            "port_effect_diagonal": port_vals}
+    for d in (0, 1):
+        gamma = np.vdot(zs[0, d], zs[1, d])
+        gammas.append(gamma)
+
+    joint_eight = []
+    for sx in (-1, 1):
+        eq = (I2 + sx * X) / 2
+        for sy in (-1, 1):
+            ed = (I2 - sy * Y) / 2
+            for port_flag in (0, 1):
+                spatial = ka if port_flag else eye_band - ka
+                prob = 0j
+                for q in (0, 1):
+                    for d in (0, 1):
+                        for r in (0, 1):
+                            for e in (0, 1):
+                                prob += eq[q, r] * ed[d, e] * spatial_inner(
+                                    zs[q, d], zs[r, e], spatial) / 4
+                assert abs(prob.imag) < 2e-12
+                joint_eight.append({"source_X": sx, "clock_minusY": sy,
+                                    "port": port_flag, "probability": float(prob.real)})
+
+    # Same integral does not determine the moving transport: an algebraic witness.
+    pa, ma, av, bv, seg = 4.0, 3.0, 1.0, 2.0, 0.1
+    ha, hb = pa * Z + ma * av * X, pa * Z + ma * bv * X
+    va = block_exp(np.array([pa]), ma * av, seg)[0]
+    vb = block_exp(np.array([pa]), ma * bv, seg)[0]
+    order_defect = opnorm(vb @ va - va @ vb)
+    comm_identity = opnorm(ha @ hb - hb @ ha - 2j * pa * ma * (bv - av) * Y)
+
+    # Independent diagnostic at a few momenta; it is not the analytic certificate.
+    pick = np.array([0.0, p[NMAX + 55], p[NMAX + 90]])
+    refinements = []
+    for mass in MASSES:
+        u1, u2 = reference(pick, mass, 1), reference(pick, mass, 1, 2 * NREF)
+        refinements.append(float(np.max(np.linalg.norm(u1 - u2, axis=(1, 2)))))
+    gaps = [p_data[f"q0_d{d}"]["comparator_site_port"] -
+            p_data[f"q1_d{d}"]["comparator_site_port"] for d in (0, 1)]
+    lower = [g - sum(err) for g in gaps]
+    joint_gap = joint["q1"]["plus_internal_joint_probability"] - joint["q0"]["plus_internal_joint_probability"]
+    joint_abs_lower = abs(joint_gap) - sum(err)
+    gamma_error = sum(err)
+    source_return_lower = [1 - g.real - gamma_error for g in gammas]
+    source_mass_difference_lower = abs(gammas[0].imag - gammas[1].imag) - 2 * gamma_error
+    full_record_err = max(err) + embedding
+    eigka = np.linalg.eigvalsh(ka)
+    sampled_port_diff = opnorm(ka - kc)
+    clock_tau = [T, 1.5 * T]
+    clock_probs = [(1 + math.sin(0.4 * tau)) / 2 for tau in clock_tau]
+    # Exact zero-mass coin identity and the same shift, for every source label.
+    massless_error = opnorm(block_exp(np.array([4.0]), 0.0, T)[0] -
+                           np.diag(np.exp(-1j * T * 4 * np.array([1, -1]))))
+
+    assert max(unitary_errors) < 5e-11
+    assert min(eigka) > -1e-12 and max(eigka) < 1 + 1e-12
+    assert sampled_port_diff <= port_bound
+    assert min(lower) > 0.35
+    assert joint_abs_lower > 0.02
+    assert min(source_return_lower) > 1.0
+    assert source_mass_difference_lower > 1.0
+    assert abs(sum(z["probability"] for z in joint_eight) - 1) < 1e-11
+    assert min(z["probability"] for z in joint_eight) >= -1e-12
+    assert comm_identity < 1e-12 and massless_error < 1e-12
+    return {
+        "round": 1173, "status": "PASS_WITH_SCOPE", "scientific_groups": 3,
+        "actual_process": "finite local conditional shift and onsite coin; analytic certificate",
+        "numerically_integrated": "midpoint Dirac comparator, not full actual QW",
+        "source_sha256": {s: hashlib.sha256((RESEARCH / s).read_bytes()).hexdigest() for s in SOURCES},
+        "parameters": {"L": L, "T": T, "a": A_STEP, "actual_sites": nsites,
+            "actual_QW_steps": nsteps, "band_n": [-NMAX, NMAX], "band_dimension": len(n),
+            "masses": list(MASSES), "reference_steps": NREF, "prepared_p_center": P0,
+            "prepared_finite_envelope_sigma_p": SIGMA_P, "port_threshold": PORT,
+            "first_port_site": first, "port_site_count": count},
+        "group1_complete_algebra_and_clock": {
+            "prepared_dimension_with_source": len(n) * 8,
+            "max_comparator_block_unitarity_error": max(unitary_errors),
+            "static_clock_tau": clock_tau, "static_clock_minusY_probabilities": clock_probs,
+            "same_integral_different_order_operator_difference": order_defect,
+            "commutator_identity_error": comm_identity, "massless_identity_error": massless_error,
+            "port_effect_eigenvalue_extremes": [float(min(eigka)), float(max(eigka))]},
+        "group2_same_moving_clock_position_and_source": {
+            "branches": p_data, "moving_clock_joint_effects": joint,
+            "source_gamma": cjson(np.array(gammas)),
+            "source_gamma_modulus": [float(abs(g)) for g in gammas],
+            "all_eight_joint_records_plus_plus": joint_eight,
+            "joint_probability_sum": sum(z["probability"] for z in joint_eight),
+            "site_port_gaps_q0_minus_q1": gaps,
+            "moving_clock_joint_gap_q1_minus_q0": joint_gap},
+        "group3_uniform_certificates_and_resources": {
+            "P_bound": momentum_bound, "actual_QW_to_Dirac_bounds": qwerr,
+            "reference_to_Dirac_bounds": referr, "rounding_allowance_per_branch": ROUNDING_ALLOWANCE,
+            "actual_to_comparator_per_branch": err, "whole_controlled_isometry_bound": max(err),
+            "complete_cell_record_prepared_bound": full_record_err,
+            "sampling_embedding_bound": embedding, "continuous_port_change_bound": port_bound,
+            "computed_site_vs_continuous_port_norm": sampled_port_diff,
+            "certified_site_port_gap_lower": lower,
+            "certified_moving_clock_joint_abs_gap_lower": joint_abs_lower,
+            "source_gamma_error_bound": gamma_error,
+            "certified_source_X_change_from_initial_lower": source_return_lower,
+            "certified_source_Y_dependence_on_internal_mass_lower": source_mass_difference_lower,
+            "reference_step_halving_diagnostic": refinements,
+            "onsite_gate_slots_upper": nsites * nsteps,
+            "relay_CNOT_count_upper": 2 * nsites,
+            "relay_single_trip_serial_time_upper": nsites * A_STEP,
+            "program_bits_including_terminal": math.ceil(math.log2(nsteps + 1)),
+            "arbitrary_unknown_Q_D_band_and_reference_bound": True,
+            "actual_full_QW_numerically_iterated": False,
+            "no_continuum_sample_probability_as_actual_port": True,
+            "finite_device_error_certified": False,
+            "KG_or_Einstein_response_claimed": False}
+    }
+
+
+def compare(old, new, path="root"):
+    if isinstance(old, dict):
+        assert old.keys() == new.keys(), path
+        for k in old: compare(old[k], new[k], path + "." + k)
+    elif isinstance(old, list):
+        assert len(old) == len(new), path
+        for k, (a, b) in enumerate(zip(old, new)): compare(a, b, path + f"[{k}]")
+    elif isinstance(old, float):
+        assert math.isclose(old, new, rel_tol=2e-9, abs_tol=2e-11), (path, old, new)
+    else:
+        assert old == new, (path, old, new)
+
+
+if __name__ == "__main__":
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--write", action="store_true", help="write results once; refuses overwrite")
+    args = ap.parse_args()
+    result = run()
+    output = HERE / "results.json"
+    if args.write:
+        with output.open("x", encoding="utf-8", newline="\n") as f:
+            json.dump(result, f, ensure_ascii=False, indent=2, allow_nan=False)
+            f.write("\n")
+        label = "WRITE_ONCE"
+    else:
+        compare(json.loads(output.read_text(encoding="utf-8")), result)
+        label = "READ_ONLY_MATCH"
+    print(json.dumps({"status": label, "scientific_groups": 3,
+        "port_lower": result["group3_uniform_certificates_and_resources"]["certified_site_port_gap_lower"],
+        "joint_clock_lower": result["group3_uniform_certificates_and_resources"]["certified_moving_clock_joint_abs_gap_lower"],
+        "source_Y_lower": result["group3_uniform_certificates_and_resources"]["certified_source_Y_dependence_on_internal_mass_lower"]}, ensure_ascii=False))

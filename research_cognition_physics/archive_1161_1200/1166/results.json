@@ -1,0 +1,379 @@
+{
+  "schema": "round1166_flat_effective_nonentailment_v1",
+  "status": "PASS",
+  "check_groups": 4,
+  "code_sha256": "932c295d23a7f2031d41f58ffed75d4d0cc799c6fde6e2148b5386816ebf7099",
+  "source_sha256": {
+    "02_可组合认知结构与有限维量子理论_阶段论文.md": "381dfab12a958a68bd5b36bf0353053c9cc5e0f24fcfd4f69f0cddfe6396e953",
+    "03_认知操作五公理与三维关系空间_阶段论文.md": "d14a56d9d9dd138cf39dbb652cd18b94427efa4ed22e9b8760d5af144f8a7d1d",
+    "04_认知时空操作公理与洛伦兹运动学_阶段论文.md": "ac72400f9043b72ac4344ea350ee7a10226a205db81c319d02e76a306a6c3b86",
+    "archive_1106_1119/_shared/1116_1119/adoption_and_dependencies.md": "1c1395c16cf2392be0c6e7275d660f454113290bd0e23d6892e08b3aa41b4a0e",
+    "archive_1120_1158/_shared/1157_1158/adoption_and_dependencies.md": "f7af93c680768e4e786edf9aad5e1f95c8c6759e69f2ac94137219960bfe95af",
+    "archive_1106_1119/1112/check.py": "6e49d71ec5535fd6999432481938663a5543e2704db993ec7a00b8f475b6cd9f",
+    "archive_1106_1119/1114/proof.md": "36529e5f56971a8baf66065928b5b7d1899d6444f257b1cc7008a01fd42be9a2",
+    "archive_1106_1119/1115/proof.md": "b7b2239946e44cb1aade62d1282525d998297deb6dcadc36b3005dc7c454a8da",
+    "archive_1106_1119/1115/results.json": "e17b36f5835e44564be721722b9242490e8727314f89d2c0e0b663cba5eebc68",
+    "archive_1106_1119/1119/proof.md": "b4a97154a8302a49c4f4f6788f615909b4849820bfa42e3bf11574c16808008d",
+    "archive_1106_1119/1119/check.py": "efe8f4aabafb94d146e13f773337ddc453afb26b7705d3eacd92f56244f7a863",
+    "archive_1106_1119/1119/results.json": "fc48bf4935d25f975eae2b2337fe87d474f976e325b4da3847e3ec47c13c5d27",
+    "archive_1120_1158/1158/proof.md": "8d05617c800014afd8965eaf51874fa3235e16cf2e49a2918ad00ebe5a8e7608",
+    "archive_1120_1158/1158/check.py": "d0f56b05cad8f576ab608896a0165d807ea9b4c128e8cbe642ee65af2cd0d3fc",
+    "archive_1120_1158/1158/results.json": "24187911743d4cb8660c0c717fd74bbdd835874a482e7a1870a9011d17056929",
+    "archive_1120_1158/1158/acceptance.json": "c8d9b32be4c04552b02beed4c02437f9e86732f258e7acadfac0418b6fecaf0c",
+    "archive_1106_1119/1111/results.json": "7e5b27990183dd54a75ce9eda35340ce79ae3d1c24b31b25dfb2064bc9d257b3"
+  },
+  "group1_actual_frozen_replay": [
+    {
+      "script": "archive_1106_1119/1119/check.py",
+      "exit_code": 0,
+      "result_comparison": "saved results matched"
+    },
+    {
+      "script": "archive_1120_1158/1158/check.py",
+      "exit_code": 0,
+      "result_comparison": "READ_ONLY_MATCH"
+    }
+  ],
+  "group2_same_complete_clock_and_operational_metric": {
+    "full_clock_dimension": 288,
+    "open_qutrit_columns": 3,
+    "capture_duration": 0.7853981633974483,
+    "capture_energy_intertwiner_error": 3.4443405665515266e-14,
+    "maximum_probability_error": 2.4682183047870186e-15,
+    "complete_output_gram_error": 1.35514750275691e-15,
+    "calibration_cases": [
+      {
+        "velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coordinate_duration": 1.2,
+        "free_proper_time": 1.2,
+        "total_clock_age": 1.9853981633974482,
+        "actual_Mr_all_qutrit_probabilities": [
+          0.3450809606979636,
+          0.3450809606979667,
+          0.34508096069796645
+        ],
+        "inferred_free_time": 1.1999999999999966
+      },
+      {
+        "velocity": [
+          -0.3,
+          -0.0,
+          -0.0
+        ],
+        "coordinate_duration": 1.2,
+        "free_proper_time": 1.1447270417003348,
+        "total_clock_age": 1.930125205097783,
+        "actual_Mr_all_qutrit_probabilities": [
+          0.3086732218066842,
+          0.3086732218066869,
+          0.3086732218066869
+        ],
+        "inferred_free_time": 1.1447270417003312
+      },
+      {
+        "velocity": [
+          0.3,
+          0.0,
+          0.0
+        ],
+        "coordinate_duration": 1.2,
+        "free_proper_time": 1.1447270417003348,
+        "total_clock_age": 1.930125205097783,
+        "actual_Mr_all_qutrit_probabilities": [
+          0.3086732218066842,
+          0.3086732218066869,
+          0.3086732218066869
+        ],
+        "inferred_free_time": 1.1447270417003312
+      },
+      {
+        "velocity": [
+          -0.0,
+          -0.3,
+          -0.0
+        ],
+        "coordinate_duration": 1.2,
+        "free_proper_time": 1.1447270417003348,
+        "total_clock_age": 1.930125205097783,
+        "actual_Mr_all_qutrit_probabilities": [
+          0.3086732218066842,
+          0.3086732218066869,
+          0.3086732218066869
+        ],
+        "inferred_free_time": 1.1447270417003312
+      },
+      {
+        "velocity": [
+          0.0,
+          0.3,
+          0.0
+        ],
+        "coordinate_duration": 1.2,
+        "free_proper_time": 1.1447270417003348,
+        "total_clock_age": 1.930125205097783,
+        "actual_Mr_all_qutrit_probabilities": [
+          0.3086732218066842,
+          0.3086732218066869,
+          0.3086732218066869
+        ],
+        "inferred_free_time": 1.1447270417003312
+      },
+      {
+        "velocity": [
+          -0.0,
+          -0.0,
+          -0.3
+        ],
+        "coordinate_duration": 1.2,
+        "free_proper_time": 1.1447270417003348,
+        "total_clock_age": 1.930125205097783,
+        "actual_Mr_all_qutrit_probabilities": [
+          0.3086732218066842,
+          0.3086732218066869,
+          0.3086732218066869
+        ],
+        "inferred_free_time": 1.1447270417003312
+      },
+      {
+        "velocity": [
+          0.0,
+          0.0,
+          0.3
+        ],
+        "coordinate_duration": 1.2,
+        "free_proper_time": 1.1447270417003348,
+        "total_clock_age": 1.930125205097783,
+        "actual_Mr_all_qutrit_probabilities": [
+          0.3086732218066842,
+          0.3086732218066869,
+          0.3086732218066869
+        ],
+        "inferred_free_time": 1.1447270417003312
+      },
+      {
+        "velocity": [
+          0.3,
+          0.3,
+          0.0
+        ],
+        "coordinate_duration": 1.2,
+        "free_proper_time": 1.08664621657649,
+        "total_clock_age": 1.8720443799739384,
+        "actual_Mr_all_qutrit_probabilities": [
+          0.2725466768199304,
+          0.2725466768199331,
+          0.2725466768199327
+        ],
+        "inferred_free_time": 1.0866462165764865
+      },
+      {
+        "velocity": [
+          0.3,
+          0.0,
+          0.3
+        ],
+        "coordinate_duration": 1.2,
+        "free_proper_time": 1.08664621657649,
+        "total_clock_age": 1.8720443799739384,
+        "actual_Mr_all_qutrit_probabilities": [
+          0.2725466768199304,
+          0.2725466768199331,
+          0.2725466768199327
+        ],
+        "inferred_free_time": 1.0866462165764865
+      },
+      {
+        "velocity": [
+          0.0,
+          0.3,
+          0.3
+        ],
+        "coordinate_duration": 1.2,
+        "free_proper_time": 1.08664621657649,
+        "total_clock_age": 1.8720443799739384,
+        "actual_Mr_all_qutrit_probabilities": [
+          0.2725466768199304,
+          0.2725466768199331,
+          0.2725466768199327
+        ],
+        "inferred_free_time": 1.0866462165764865
+      }
+    ],
+    "design_rank": 10,
+    "recovered_bilinear_form": [
+      [
+        0.9999999999999944,
+        3.700743415417187e-18,
+        3.700743415417187e-18,
+        3.700743415417187e-18
+      ],
+      [
+        3.700743415417187e-18,
+        -0.9999999999999997,
+        1.6715024426300968e-15,
+        1.6715024426300968e-15
+      ],
+      [
+        3.700743415417187e-18,
+        1.6715024426300968e-15,
+        -0.9999999999999997,
+        1.6715024426300968e-15
+      ],
+      [
+        3.700743415417187e-18,
+        1.6715024426300968e-15,
+        1.6715024426300968e-15,
+        -0.9999999999999997
+      ]
+    ],
+    "reconstruction_error": 6.921797777449666e-15,
+    "no_reset_or_intermediate_clock_measurement": true
+  },
+  "group3_nontrivial_complete_process_flat_law": {
+    "complete_record_output_dimension": 1152,
+    "open_input_dimension": 8,
+    "CHSH": 2.8284271247461903,
+    "record_dephasing_changes_actual_future_probability_by": 0.5000000000000002,
+    "active_future_identity_error": 3.9999352815860993e-16,
+    "retained_arbitrary_reference_identity_error": 1.4141906809584265e-16,
+    "original_recoil_free_legs": [
+      {
+        "branch": "xx",
+        "body": "A",
+        "four_momentum": [
+          5.0,
+          4.0,
+          0.0,
+          0.0
+        ],
+        "actual_free_displacement": [
+          2.0,
+          1.5999999999999999,
+          0.0,
+          0.0
+        ],
+        "proper_square_error": 4.440892098500626e-16
+      },
+      {
+        "branch": "xx",
+        "body": "B",
+        "four_momentum": [
+          5.0,
+          -4.0,
+          0.0,
+          0.0
+        ],
+        "actual_free_displacement": [
+          2.0,
+          -1.5999999999999999,
+          0.0,
+          0.0
+        ],
+        "proper_square_error": 4.440892098500626e-16
+      },
+      {
+        "branch": "yy",
+        "body": "A",
+        "four_momentum": [
+          5.0,
+          0.0,
+          4.0,
+          0.0
+        ],
+        "actual_free_displacement": [
+          2.0,
+          0.0,
+          1.5999999999999999,
+          0.0
+        ],
+        "proper_square_error": 4.440892098500626e-16
+      },
+      {
+        "branch": "yy",
+        "body": "B",
+        "four_momentum": [
+          5.0,
+          0.0,
+          -4.0,
+          0.0
+        ],
+        "actual_free_displacement": [
+          2.0,
+          0.0,
+          -1.5999999999999999,
+          0.0
+        ],
+        "proper_square_error": 4.440892098500626e-16
+      }
+    ],
+    "branch_endpoint_difference": 2.262741699796952,
+    "boosted_actual_individual_energy_exchange": [
+      3.0,
+      -3.0
+    ],
+    "finite_boost_task_speeds": [
+      0.21390712982349594,
+      0.8388447373160006,
+      0.9967948014253016,
+      0.9999920423858006
+    ],
+    "common_metric": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ]
+    ],
+    "exact_null_probe_claimed": false
+  },
+  "group4_finite_accuracy_and_dictionary": {
+    "probability_calibration_window": [
+      0.2,
+      0.5
+    ],
+    "probability_error": 1e-06,
+    "inverse_clock_lipschitz_bound": 2.8061099812808186,
+    "inverse_design_infinity_norm": 22.22222222222222,
+    "observed_coefficient_error": 2.7760369334378028e-05,
+    "certified_coefficient_error_bound": 0.00010393012082295047,
+    "wrong_changed_metric_fixed_endpoints_defect": 0.0036729696773097897,
+    "common_coordinate_transport_residual": 1.724494811000246e-14,
+    "recovered_transported_form_error": 7.18725476456142e-15,
+    "endpoint_time_and_capture_calibration_errors_not_included": true,
+    "these_math_counterchecks_do_not_grant_new_geometry_instruments": true
+  },
+  "scope": {
+    "theory": "S_eff: exact FUCP parent plus declared finite material domain and common realization",
+    "conclusion": "nonzero certified common geometric response is not forced in this semantics",
+    "single_layer_all_physical_mother_C_not_certified": true,
+    "no_distributional_stress_or_Einstein_equation_counterexample": true,
+    "calibrated_quadratic_interval_class_only": true,
+    "all_finite_context_quantifiers_proved_by_generator_induction": true,
+    "new_adopted_axioms": 0,
+    "new_empirical_calibration": 0,
+    "GR_hard_deliverables_completed": 0
+  }
+}

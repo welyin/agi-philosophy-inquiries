@@ -1,0 +1,68 @@
+{
+  "schema": "research_closure_1161_1218_verification_v1",
+  "date": "2026-10-15",
+  "status": "PASS_FOR_REQUESTED_ARCHIVE_RELOCATION",
+  "directories": [
+    {
+      "source": "research_cognition_physics/archive_1161_",
+      "destination": "research_cognition_physics/archive_1161_1200",
+      "first_round": 1161,
+      "last_round": 1200
+    },
+    {
+      "source": "research_cognition_physics/archive_1201_",
+      "destination": "research_cognition_physics/archive_1201_1218",
+      "first_round": 1201,
+      "last_round": 1218
+    }
+  ],
+  "moved_files": 984,
+  "old_directories_absent": true,
+  "round_reports_and_acceptances": 58,
+  "python_json_byte_identical": 507,
+  "reversible_markdown_files": 24,
+  "frozen_support_files": 124,
+  "markdown_links_checked": 9074,
+  "missing_links": [],
+  "stale_active_link_targets": [],
+  "current_navigation_check": "PASS",
+  "representative_scientific_replays": "PASS",
+  "prior_stage_completion_replay": "PASS",
+  "full_historical_layout_check": {
+    "arguments": "--verify-layout",
+    "exit_code": 1,
+    "status": "PREEXISTING_FROZEN_INVENTORY_MISMATCH",
+    "error": "ValueError: Noncandidate Markdown changed: 猜想/2029-9-29.md",
+    "failing_function": "scripts/normalize_markdown_math.py:verify",
+    "interpretation": "Not claimed PASS. Directly verified that the formula verifier received exactly the manifest original bytes, whose hash and length already differ from its older frozen inventory. No formula-layer hash or prior conjecture was rewritten."
+  },
+  "preexisting_limitation": {
+    "file": "猜想/2029-9-29.md",
+    "manifest_original_sha256": "b8db44bfe9daa1ede8b0274ea94f2e67356b918768d157de30ee93cee0768de0",
+    "manifest_current_sha256": "615561865c3b9a58d92e381446f3511b0e960658f5c4d4855f71570e6f0fafc6",
+    "restored_preclosure_sha256": "b8db44bfe9daa1ede8b0274ea94f2e67356b918768d157de30ee93cee0768de0",
+    "restored_preclosure_bytes": 12606,
+    "formula_read_sha256": "b8db44bfe9daa1ede8b0274ea94f2e67356b918768d157de30ee93cee0768de0",
+    "formula_expected": {
+      "sha256": "cf3bc15c1cb35a676e87791c21d86c864ca68c7d9a8fa8f91b64041084be8586",
+      "bytes": 11437
+    },
+    "formula_reader_equals_preclosure": true,
+    "conclusion": "The frozen full-layout formula inventory already differs from the pre-migration conjecture file; this migration inverse is verified, and no old evidence was rewritten."
+  },
+  "files_sha256": {
+    "research_cognition_physics/_migration/closure_1161_1218/manifest.json": "338b9a7dd23e70ff20e19e6957569acb0c46437e14cee8a89f084b24332806dd",
+    "research_cognition_physics/_migration/closure_1161_1218/README.md": "f46ca2a396ab8592c1567c8eaabbb6bd2f0797e1fa9d86b8ae41fb6e08853226",
+    "research_cognition_physics/_migration/closure_1161_1218/link_checks.json": "0d01978854a54b8358f5491d193997ff9d06cc6f4060191530919b65062685fb",
+    "research_cognition_physics/_migration/closure_1161_1218/runtime_checks.json": "36f0c2a56eb2e8646427561918b89551cd47b012f5e86f50234d585496bc7b49",
+    "scripts/close_research_1161_1218.py": "695d43936f5cf74421fed54cb60320942c4c1532fae7e52c8addaf0b3035e30e",
+    "scripts/run_research_thermodynamics_closed.py": "7c3b4a969c05db2c7ff8fbda8d74beabb37983b8191242fa9d30c7a400024d06"
+  },
+  "no_zip_or_shadow_copy": true,
+  "new_scientific_rounds": 0,
+  "new_goal_started": false,
+  "next_round": 1219,
+  "GR_goal_completed": false,
+  "four_laws_goal_status": "complete",
+  "lock_resolution": "Codex directory watch on archive_1201_/_shared; initial attempts rolled back; user closed relevant file tabs before successful directory rename."
+}

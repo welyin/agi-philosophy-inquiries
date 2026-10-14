@@ -1,0 +1,179 @@
+{
+  "schema": "round1172_complete_worldline_weak_einstein_nonentailment_v1",
+  "status": "PASS_WITH_SCOPE",
+  "check_groups": 3,
+  "code_sha256": "51ccd935d6961a4c200efad496fee5f16c638bb2d407e3b51c612e448b3dabe6",
+  "source_sha256": {
+    "archive_935_955/research_note_941.md": "a12e2dd67212a77538f850908efc6057e450d4def00dccd59aaa7cfaea346b7f",
+    "archive_935_955/research_note_953.md": "e510568c8812a86a6829be66d6733195858fd7e72c6686e14f060afce3bc2d88",
+    "archive_1106_1119/1112/check.py": "6e49d71ec5535fd6999432481938663a5543e2704db993ec7a00b8f475b6cd9f",
+    "archive_1106_1119/1119/proof.md": "b4a97154a8302a49c4f4f6788f615909b4849820bfa42e3bf11574c16808008d",
+    "archive_1106_1119/1115/proof.md": "b7b2239946e44cb1aade62d1282525d998297deb6dcadc36b3005dc7c454a8da",
+    "archive_1106_1119/_shared/1116_1119/adoption_and_dependencies.md": "1c1395c16cf2392be0c6e7275d660f454113290bd0e23d6892e08b3aa41b4a0e",
+    "archive_1120_1158/_shared/1157_1158/adoption_and_dependencies.md": "f7af93c680768e4e786edf9aad5e1f95c8c6759e69f2ac94137219960bfe95af",
+    "archive_1161_/1166/proof.md": "02335c08c46865b438b075a0d8475e143fc113e01eb711f725b96e4290bb0812",
+    "archive_1161_/1166/check.py": "932c295d23a7f2031d41f58ffed75d4d0cc799c6fde6e2148b5386816ebf7099",
+    "archive_1161_/1166/results.json": "d1bf0dc11287685e6eb54b0b4c6a9af36c11b7bca82a51af86d8fd57ec3e7cf3",
+    "archive_1161_/1166/acceptance.json": "7a660aa0b7d74fee7320addb51f0f124b9979b20dc64825f22279a64b93bc51a"
+  },
+  "old1166_accepted_bindings_verified": 8,
+  "group1_original_complete_material": {
+    "full_material_dimension": 288,
+    "open_logical_dimension": 3,
+    "baseline": 25.717797887081346,
+    "mass_min": 25.717797887081293,
+    "mass_max": 28.71779788708138,
+    "spectrum_levels": [
+      25.717797887081346,
+      26.717797887081346,
+      27.717797887081346,
+      28.717797887081346
+    ],
+    "spectral_multiplicity": 72,
+    "complete_spectrum_error": 3.5250726203925754e-13,
+    "complete_mass_shell_error": 2.446859114742507e-13,
+    "original_phase_error": 3.6637359812630166e-15,
+    "capture_age": 0.7853981633974483,
+    "free_duration": 0.5,
+    "original_Mr_probability": 0.04635735463190045,
+    "original_full_effect_error": 4.510372796108496e-16,
+    "all_input_output_gram_error": 1.0373346679572107e-15,
+    "prepared_source_mean": 27.217797887081346,
+    "prepared_source_compression_error": 7.112749572753214e-15,
+    "full_operator_source_variation_error": 1.6142105734177424e-08,
+    "central_difference_truncation_bound": 1.578927340261059e-08,
+    "source_variation_step": 2e-06,
+    "new_physical_operations": 0
+  },
+  "group2_compact_weak_source_and_covariance": {
+    "test": {
+      "time_center": 1.2853981633974483,
+      "time_half_width": 0.2,
+      "spatial_half_width": 0.05,
+      "translated_bump_center": 0.2,
+      "strict_free_open_time_interval": [
+        1.0353981633974483,
+        1.5353981633974483
+      ],
+      "closed_time_support": [
+        1.0853981633974483,
+        1.4853981633974482
+      ]
+    },
+    "bump_integral_128": 1.2069003224378685,
+    "bump_integral_256": 1.2069003224378765,
+    "bump_quadrature_difference": 7.993605777301127e-15,
+    "spatial_positive_lobe_integral": 0.00021974764168821695,
+    "spatial_negative_lobe_integral": 0.00021974764168821692,
+    "four_volume_integral_numeric": 2.710505431213761e-20,
+    "worldline_integral_numeric": 1.0000000000000067,
+    "analytic_four_volume_integral": 0,
+    "analytic_worldline_integral": 1,
+    "analytic_equalities_proved_by_translation_and_normalization": true,
+    "asymmetric_test_divergence_integral_numeric": 3.859759734048396e-16,
+    "common_lorentz_error": 0.0,
+    "transformed_worldline_four_velocity": [
+      1.25,
+      0.75,
+      0.0,
+      0.0
+    ],
+    "transformed_source_coefficient": [
+      [
+        1.5625000000000104,
+        0.9375000000000062,
+        0.0,
+        0.0
+      ],
+      [
+        0.9375000000000062,
+        0.5625000000000038,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "transported_observer_contraction_error": 4.440892098500626e-16,
+    "physical_surface_flux_error": 0.0,
+    "inverse_event_transport_error": 4.440892098500626e-16,
+    "lambda_cases": [
+      {
+        "Lambda": -7.0,
+        "residual_operator_norm": 0.7217569829546552,
+        "error_from_minus_kappa_M": 4.800007246122671e-15
+      },
+      {
+        "Lambda": 0.0,
+        "residual_operator_norm": 0.7217569829546552,
+        "error_from_minus_kappa_M": 4.800007246122671e-15
+      },
+      {
+        "Lambda": 1000000.0,
+        "residual_operator_norm": 0.7217569829546282,
+        "error_from_minus_kappa_M": 2.2785620245050215e-14
+      }
+    ],
+    "contact_domain_stress_claimed": false
+  },
+  "group3_fixed_coupling_and_finite_precision": {
+    "fixed_G": 0.001,
+    "fixed_kappa": 0.025132741228718346,
+    "exact_any_prepared_state_expectation_floor": 0.6463587592684935,
+    "exact_operator_residual_norm": 0.7217569829546516,
+    "hypothetical_source_error": 0.01,
+    "hypothetical_geometry_error": 0.02,
+    "conditional_finite_error_lower_bound": 0.6261074318562062,
+    "actual_source_or_curvature_measurement_precision_certified": false,
+    "finite_test_coefficients": [
+      1.0,
+      0.4,
+      1.6
+    ],
+    "finite_test_source_norm_max": 45.94847661933026,
+    "fixed_residual_tolerance": 0.001,
+    "arbitrarily_small_G_comparison": [
+      {
+        "power": 1,
+        "positive_G": 4.329712179863102e-07,
+        "largest_weak_residual": 0.0005,
+        "below_fixed_tolerance": true
+      },
+      {
+        "power": 4,
+        "positive_G": 5.412140224828878e-08,
+        "largest_weak_residual": 6.25e-05,
+        "below_fixed_tolerance": true
+      },
+      {
+        "power": 12,
+        "positive_G": 2.1141172753237804e-10,
+        "largest_weak_residual": 2.44140625e-07,
+        "below_fixed_tolerance": true
+      }
+    ],
+    "small_equation_residual_proves_neighboring_Einstein_solution": false,
+    "G_may_not_be_refitted_per_precision_in_a_fixed_physical_theory": true
+  },
+  "scope": {
+    "premise": "S_eff plus explicit free-leg worldline monopole source dictionary",
+    "conclusion": "the old common model fails the local weak Einstein necessary equation for every fixed G>0 and constant Lambda",
+    "complete_contact_stress_not_constructed": true,
+    "no_new_actual_source_or_metric_instruments": true,
+    "no_uniform_fixed_precision_exclusion_of_all_positive_G": true,
+    "new_adopted_axioms": 0,
+    "new_empirical_calibration": 0,
+    "GR_positive_hard_deliverables_completed": 0,
+    "broader_constructive_goal_completed": false
+  }
+}

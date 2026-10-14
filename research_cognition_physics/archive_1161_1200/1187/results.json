@@ -1,0 +1,74 @@
+{
+  "round": 1187,
+  "date": "2026-10-14",
+  "status": "PASS_WITH_BARE_MATERIAL_CLOCK_SCOPE",
+  "groups": {
+    "1_material_constraints": {
+      "pass": true,
+      "spatial_gram_determinant": "1",
+      "material_fields": 6,
+      "Legendre_Hessian_rank": 2,
+      "expected_rank": "N-4",
+      "canonical_H": "0",
+      "normal_constraint": "pi^2-W^2=0",
+      "dummy_X_FP_rank": 4,
+      "constraints_before_X_gauge": 8,
+      "original_material_constraints_remaining": 4
+    },
+    "2_true_material_clock_graph": {
+      "pass": true,
+      "exact_graph_tests": 3,
+      "momentum": "1",
+      "lagrangian": "9/2",
+      "Hamiltonian_same_oriented_branch": "-5/2",
+      "root_squared": "25/4",
+      "flat_graph_principal": "F0 times I4, positive definite",
+      "nonzero_graph_eigenvalues_diagnostic": [
+        0.6746600148515606,
+        0.8770580193070291,
+        0.8770580193070292,
+        0.8770580193070293
+      ],
+      "linear_equation_constant_V": "psi_TT + Delta psi = 0"
+    },
+    "3_finite_mode_linear_separation": {
+      "pass": true,
+      "exact_gap_lower": "29605305287131042907458125102924312461/29523279903960414084761860964352000000",
+      "exact_gap_upper": "31060607637675147202577979015199368275845835939/30974550148374392238580926945266478612480000000",
+      "certified_gap_strict_lower": "1",
+      "float_gap_diagnostic": 1.0027783289471042,
+      "samples": [
+        {
+          "k": "1/2",
+          "T": "2",
+          "bare_linear_position": 1.5430806348152437,
+          "Lorentz_wave_position": 0.5403023058681398
+        },
+        {
+          "k": "1",
+          "T": "1",
+          "bare_linear_position": 1.5430806348152437,
+          "Lorentz_wave_position": 0.5403023058681398
+        },
+        {
+          "k": "2",
+          "T": "1/2",
+          "bare_linear_position": 1.5430806348152437,
+          "Lorentz_wave_position": 0.5403023058681398
+        }
+      ],
+      "statement": "normalized linear-response coefficient, not a complete finite-amplitude quantum record"
+    }
+  },
+  "scope_limits": [
+    "Original real positive Gram and V>0 regular material coordinate branch only.",
+    "Flat constant-V witness is an explicit m=0 diagnostic; not the massive loop-induced background.",
+    "Variable positive V changes lower-order terms; elliptic principal type alone does not prove all finite or low modes unstable.",
+    "H_can=0 does not preclude relational time; the material clock has a nontrivial reduced Hamiltonian on R>0.",
+    "No quantum physical Hilbert space, nonlinear finite-error estimate, actual clock resource or Lorentz collective renormalized phase certified.",
+    "No rejection of general composite gravity or the cognitive axioms."
+  ],
+  "new_adopted_axioms": 0,
+  "new_empirical_calibration": 0,
+  "gr_hard_deliverables_completed": 0
+}

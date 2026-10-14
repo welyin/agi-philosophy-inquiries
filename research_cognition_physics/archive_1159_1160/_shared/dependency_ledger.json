@@ -1,0 +1,98 @@
+{
+  "schema": "local_dynamics_stage_1159_v1",
+  "status": "ready_for_completion",
+  "first_round": 1159,
+  "latest_accepted_round": 1160,
+  "accepted_stage_rounds": [
+    1159,
+    1160
+  ],
+  "stage_check_groups": 8,
+  "new_adopted_axioms": [],
+  "new_scientific_calibration": 0,
+  "inherited_scientific_calibration": 3860,
+  "current_work": "两轮与阶段综合已通过审阅；交付及最终状态见结项证据。",
+  "adopted_basis": [
+    "F+U+C+P",
+    "CO1-CO5",
+    "SR-T/A/R/O/F",
+    "D-P",
+    "CC1-CC3"
+  ],
+  "conditional_only": [
+    "SR-S明示分支",
+    "K1-K4材料输入",
+    "A1119实际参考运输及原范围",
+    "1159的S1-S4：实际分离边界的充分认证资格，不是新公理",
+    "K1160：完整材料、真实记录器与四个正时长窗口的有限有效权限；不由K2或交换子守恒自动产生"
+  ],
+  "not_adopted": [
+    "全局自治生成完备G"
+  ],
+  "direct_reuse_rounds": [
+    1111,
+    1119,
+    1155,
+    1157,
+    1158
+  ],
+  "field_bridge_rounds": [
+    1015,
+    1016,
+    1017,
+    1018,
+    1019,
+    1027,
+    1028,
+    1029
+  ],
+  "resolved_gap_not_to_reintroduce": "1029固定父作用及正规局部类别中的一阶提升",
+  "completion_requirements": [
+    "一般条件定理及缺口判定",
+    "完整非平凡相互作用共同模型",
+    "旧场论/引力接口表与剩余自由",
+    "独立审阅及阶段总结/论文"
+  ],
+  "accepted_results": [
+    {
+      "round": 1159,
+      "check_groups": 4,
+      "receipt": "../1159/acceptance.json",
+      "scope": "条件性有限分离边界接口、基线校准与区域接续"
+    },
+    {
+      "round": 1160,
+      "check_groups": 4,
+      "receipt": "../1160/acceptance.json",
+      "scope": "K1160下包含真实记录与逆记录的完整非平凡共同模型"
+    }
+  ],
+  "completed_deliverables": [
+    "明确充分资格的一般有限边界定理及删弱对照",
+    "K1160下的完整非平凡相互作用共同模型",
+    "1159与1160的独立正式审阅及逐轮验收",
+    "同一过程前提映射、旧场论／引力接口与剩余自由",
+    "07阶段论文、论文独立审阅与完成范围审阅"
+  ],
+  "pending_deliverables": [
+    "正式资产核查及实际目标完成状态，由stage_assets_check.json与completion_receipt.json分别记录"
+  ],
+  "goal_status_authority": {
+    "path": "completion_receipt.json",
+    "field": "goal.status",
+    "rule": "目标工具状态以实际完成回执为准；回执尚未生成时不因本账ready_for_completion而宣布工具complete。"
+  },
+  "stage_delivery_authority": "stage_completion.md",
+  "stage_assets_authority": "stage_assets_check.json",
+  "stage_synthesis": {
+    "paper": "../../07_局域相对论过程的区域收支与量子记录_阶段论文.md",
+    "common_process_mapping": "common_process_mapping.md",
+    "field_bridge": "field_bridge_after_1160.md",
+    "paper_review": "stage_paper_review.md",
+    "completion_scope_review": "completion_scope_review.md",
+    "next_candidate": "NEXT.md",
+    "asset_check_entry": "verify_stage.py",
+    "asset_receipt": "stage_assets_check.json",
+    "completion_receipt": "completion_receipt.json"
+  }
+}

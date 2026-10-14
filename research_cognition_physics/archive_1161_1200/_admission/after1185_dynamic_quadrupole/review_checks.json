@@ -1,0 +1,145 @@
+{
+  "schema": "unnumbered_dynamic_quadrupole_independent_review_v1",
+  "status": "ACCEPT_MATHEMATICAL_PARENT_WITH_SCOPE",
+  "blocking_findings": 0,
+  "numbered_round": null,
+  "new_scientific_groups": 0,
+  "reviewer_role": "independent code and mathematical review, prior admission/boundary participation disclosed; not blind",
+  "author_wrote_review_files": false,
+  "frozen_author_sha256": {
+    "source_proof.md": "89bad0b3d530a3f87c3bb3e664f55c3545fe9a332438c1a0bcf1b7b8c8f37ba9",
+    "source_check.py": "7e90ccc7586e65940c1a141d755828e1524cb50cd4dec2a693ecf29242a5de6a",
+    "source_results.json": "2241cc0bebadfbbdc45a37ceeb3691c9cb4d9e720bd94730df1f4938fcdc9a57",
+    "source_format_correction.json": "71d28b97e0b586fd5b73165475217e1de14f44277294e04b8667f5c11cd53852",
+    "response_proof.md": "50b7c1c527217a8714b241255b36caac5fcfd82f2e3762acef27f7c7a40d7686",
+    "response_check.py": "ddbcd3ab9ed269787a6412603878c356b402ca8455ced0a9ab99d7521910df7b",
+    "response_results.json": "639daac7d9cfbdd3458724ad660f9bf05db8c426944a0826394cd44a52925b48"
+  },
+  "dependency_sha256_relative_to_research_root": {
+    "archive_1161_\\1161\\proof.md": "f07074bca0db63349bcd3c28ef6cc8e4f786720308d52351ee12c94959582bbe",
+    "archive_1161_\\1171\\proof.md": "ecf48b81b9b42a21bcf7007b386bae16132cb9849e3fc939f02c398860e8d4ea",
+    "archive_1161_\\_admission\\after1185_quadrupole_screen\\check.py": "6d4126d47edfe98984f0290727b4ece8b2783a089a1f4e5f91231c3f1ced4ea4",
+    "archive_1161_\\_admission\\after1185_quadrupole_screen\\proof.md": "563e263b6106a9583f338998a2e84b3cb885162647afab41a86311be7468dfff",
+    "archive_1161_\\_admission\\after1185_quadrupole_screen\\results.json": "78be9ac8ddb529127efe971b3f647d463c013fa55074554552a7dd6169de54a6",
+    "archive_1161_\\_admission\\after1185_dynamic_quadrupole\\source_check.py": "7e90ccc7586e65940c1a141d755828e1524cb50cd4dec2a693ecf29242a5de6a",
+    "archive_1161_\\_admission\\after1185_dynamic_quadrupole\\source_proof.md": "89bad0b3d530a3f87c3bb3e664f55c3545fe9a332438c1a0bcf1b7b8c8f37ba9",
+    "archive_935_955/research_note_940.md": "a89fba08345b124b3b8ffbab2a281345bb42cd5312b62f6019c9f9b7bd21cd71",
+    "archive_1161_/1171/proof.md": "ecf48b81b9b42a21bcf7007b386bae16132cb9849e3fc939f02c398860e8d4ea",
+    "archive_1161_/_admission/after1185_quadrupole_screen/proof.md": "563e263b6106a9583f338998a2e84b3cb885162647afab41a86311be7468dfff"
+  },
+  "reviewer_asset_sha256": {
+    "review.md": "e7e13be6986571bb4b983611398e23466eb64c76cbfe7e12ba7845ccaae21b7c",
+    "reviewer_check.py": "4ef5acdcf8ab4677b9f2b78745fda4a8155758aec9d0351e7c9b8ad73c9de664"
+  },
+  "admission_scope_sha256": "47ef315f9e6a4c60f45969176976c798ba1f95423ce0b05d5087814a92dd3255",
+  "actual_runs": {
+    "source_check.py": {
+      "exit_code": 0,
+      "stdout": "READ_ONLY_MATCH PASS_WITH_SCOPE\nI_C = -22700475/27917287424\nNo finite-coupling probability lower bound is claimed.",
+      "stderr": ""
+    },
+    "response_check.py": {
+      "exit_code": 0,
+      "stdout": "READ_ONLY_MATCH; unnumbered; groups=3; actual_matching=False\nparent difference lower = 7.566449591772646e-34",
+      "stderr": ""
+    },
+    "reviewer_check.py": {
+      "exit_code": 0,
+      "stdout": "JSON result saved separately in independent_results",
+      "stderr": ""
+    }
+  },
+  "independent_results": {
+    "continuous_parent_budget": {
+      "I_minus2_upper": "153928/37791",
+      "L_squared_upper": "344975616/4199",
+      "S_squared_upper": "88662528/4199",
+      "TT_constraint_exact_cases": [
+        {
+          "complete_kernel_defect": "0",
+          "omega": "1"
+        },
+        {
+          "complete_kernel_defect": "0",
+          "omega": "7"
+        },
+        {
+          "complete_kernel_defect": "0",
+          "omega": "11/3"
+        }
+      ],
+      "W_norm_upper": "125412112/2223",
+      "actual_instrument_matching": false,
+      "nonlinear_GR_or_physical_xi_selection": false,
+      "normal_parent_difference_lower_display": 7.566449591772646e-34,
+      "normal_parent_difference_lower_exact": "388305576112629187803515926015518512254821641693344956402390971332400176367608394408451/513193898145904525869844063328195419251550243373041369955189060392119910543534286941548707840000000000000000000000000000",
+      "pair_probability_tail_exact": "32450158124954999167921862761654650017002558361251153901132998395448887/574458007810333472656251826073046875817090312499250027820312422960056250072637661250000000000000000000000",
+      "pi_times_I0": "776160/4199",
+      "pi_times_I2": "10644480/221",
+      "positivity_lower_exact": "399999999999999999999999979/200000000000000000000000000",
+      "radial_method": "exact half-beta recurrence",
+      "single_probability_tail_exact": "32450158124954999167921862761654650017002558361251153901132998395448887/1148916015620666945312503652146093751634180624998500055640624845920112500145275322500000000000000000000000"
+    },
+    "normalization": {
+      "I_C": "-22700475/27917287424",
+      "analytic_C_norm_upper": 0.022860888338310573,
+      "complete_C_dimension": 196,
+      "complete_C_norm_diagnostic": 0.02262896470833276,
+      "independent_full_operator_quadrature": 0.0016262665247687932,
+      "integral_a2_over_pi": "5775/262144",
+      "integral_adot2_over_pi": "4725/65536",
+      "leading_probability_coefficient": "22700475/13958643712",
+      "quadrature_difference": 6.505213034913027e-19
+    },
+    "scope": {
+      "COM_or_pointer_implementation_certified": false,
+      "analytic_field_domain_and_retarded_support_require_proof": true,
+      "field_parent_certified_by_this_script": false,
+      "finite_coupling_arithmetic_checked": true,
+      "no_author_code_imported": true
+    },
+    "source_algebra": {
+      "Pauli_commutator_error": 0.0,
+      "derivative_norm_squared": 6.000000000000001,
+      "endpoint_ad_0_1_2_residual": 0.0,
+      "head_mirror_operator_error": 4.170801768394319e-15,
+      "head_spectrum_max_error": 1.0540087906949156e-15,
+      "mean_P_max_error": 1.5265566588595902e-16,
+      "third_ad_endpoint_norm": 3.3541019662496843
+    },
+    "status": "PASS_WITH_SCOPE"
+  },
+  "exact_saved_field_comparison": "PASS",
+  "scope": {
+    "normal_mathematical_parent": true,
+    "all_prepared_internal_inputs_and_reference_error_bound": true,
+    "nonzero_gap_for_fixed_witness_only": true,
+    "actual_COM_control_pointer_source_matching": false,
+    "physical_xi_selected": false,
+    "GR_goal_completed": false,
+    "no_large_field_simulation": true
+  },
+  "link_check": {
+    "local_links_checked": 34,
+    "missing": []
+  },
+  "format_checks": {
+    "admission_scope.md": {
+      "block_delimiters": 16,
+      "unexpected_control_characters": 0
+    },
+    "source_proof.md": {
+      "block_delimiters": 28,
+      "unexpected_control_characters": 0
+    },
+    "response_proof.md": {
+      "block_delimiters": 32,
+      "unexpected_control_characters": 0
+    },
+    "review.md": {
+      "block_delimiters": 4,
+      "unexpected_control_characters": 0
+    }
+  },
+  "author_files_unchanged_after_runs": true
+}

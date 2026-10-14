@@ -1,0 +1,69 @@
+{
+  "status": "ADMISSION_ALGEBRA_ONLY_NO_NEW_ROUND",
+  "full_dimension": 4,
+  "encoded_dimension": 2,
+  "full_spectrum": [
+    -1.9667185622701531e-16,
+    1.0,
+    2.0,
+    3.0
+  ],
+  "checks": {
+    "unitary_residual": 5.4004048711890364e-17,
+    "full_diagonalization_residual": 2.7107248662113606e-16,
+    "encoded_generator_residual": 2.0830656848625163e-16,
+    "transported_port_invariance_residual": 6.938893903907228e-17,
+    "bare_port_compression_residual": 5.030335025396483e-18,
+    "bare_port_leakage": 0.5773502691896257,
+    "bare_port_leakage_exact": 0.5773502691896258
+  },
+  "source_rows": [
+    {
+      "alpha": 1.0,
+      "beta": 1.0,
+      "compressed_source_residual": 1.1102230246251565e-16,
+      "source_leakage_identity_residual": 4.365091664694343e-32,
+      "source_leakage_norm": 2.0892801786008366e-16,
+      "source_minus_energy_norm": 0.0,
+      "soft_Y_initial_derivative_A0": 0.3,
+      "soft_Y_initial_derivative_A1": 0.0
+    },
+    {
+      "alpha": 0.0,
+      "beta": 0.0,
+      "compressed_source_residual": 1.890812283321094e-17,
+      "source_leakage_identity_residual": 1.146774280532792e-32,
+      "source_leakage_norm": 1.0708754738683633e-16,
+      "source_minus_energy_norm": 1.0,
+      "soft_Y_initial_derivative_A0": 0.3,
+      "soft_Y_initial_derivative_A1": 0.3
+    },
+    {
+      "alpha": 0.0,
+      "beta": 0.75,
+      "compressed_source_residual": 2.026313305965524e-16,
+      "source_leakage_identity_residual": 4.9426474202485657e-17,
+      "source_leakage_norm": 0.35355339059327384,
+      "source_minus_energy_norm": 0.0,
+      "soft_Y_initial_derivative_A0": 0.3,
+      "soft_Y_initial_derivative_A1": 0.0
+    },
+    {
+      "alpha": 5.0,
+      "beta": 2.0,
+      "compressed_source_residual": 2.3105282466009286e-16,
+      "source_leakage_identity_residual": 6.66133814775094e-16,
+      "source_leakage_norm": 1.414213562373095,
+      "source_minus_energy_norm": 0.0,
+      "soft_Y_initial_derivative_A0": 0.3,
+      "soft_Y_initial_derivative_A1": 0.0
+    }
+  ],
+  "analytic_source_condition": "4 beta - alpha = 3 (encoded initial response only)",
+  "limits": [
+    "No spatial or metric dictionary for a newly introduced soft spin",
+    "Complete transport into an old parent is a further input",
+    "A transported exact embedding alone selects no new effective dynamics",
+    "Floating checks support the exact identities in README, not a GR certificate"
+  ]
+}

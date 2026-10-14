@@ -1,0 +1,167 @@
+{
+  "schema": "round1173_independent_review_v1",
+  "status": "PASS_WITH_SCOPE",
+  "blockers": 0,
+  "reviewer_script_sha256": "e42c300d09acb3b554b84724afe0d17464e5422f84fca1c01198dfb98452b58c",
+  "author_core_sha256": {
+    "archive_1161_/research_note_1173.md": "8400637e1ccd3aeb8c97d47703792941bac1afb5bd8b81bc6539ad81af691742",
+    "archive_1161_/1173/admission.md": "e91343edaeec04e3ff45e8cb8e7cfac1c56a5e739eaf54d619e5b9631181d8a9",
+    "archive_1161_/1173/proof.md": "67aaffaa8d19962c34acdd3ad08bc3f3729a3c08a51f3ddae6edc7e37dd79be6",
+    "archive_1161_/1173/check.py": "d18e37efdb6e4167ded60d42b09d55ee1adc36cca6c4548187993bed3999b26a",
+    "archive_1161_/1173/results.json": "a634cd6f2d74ddbb4e86cac1ec561cbb7d13b8095000b74d8c4d2a4c522d9204",
+    "archive_1161_/1173/NEXT.md": "c29ab9d3855820ceaa7ce2121157582db8009221b84f4384069f4f4cf84566a8"
+  },
+  "author_default_run": {
+    "exit_code": 0,
+    "stdout": {
+      "status": "READ_ONLY_MATCH",
+      "scientific_groups": 3,
+      "port_lower": [
+        0.40482911678660327,
+        0.399404811477672
+      ],
+      "joint_clock_lower": 0.5481357013791991,
+      "source_Y_lower": 1.2005572565611453
+    },
+    "stderr": ""
+  },
+  "independent_observables": {
+    "method": "16384-step RK4 matrix evolution; independent eigenvector preparation; exponential finite sum; rank-one output contractions",
+    "author_module_imported": false,
+    "maximum_saved_observable_difference": 1.418508908177005e-08,
+    "source_gamma_difference": 1.418508908177005e-08,
+    "RK4_unitarity_defect": 4.251888883478549e-12,
+    "eight_records": [
+      {
+        "source_X": -1,
+        "clock_minusY": -1,
+        "port": 0,
+        "probability": 0.20045265671971713
+      },
+      {
+        "source_X": -1,
+        "clock_minusY": -1,
+        "port": 1,
+        "probability": 0.08139795294477824
+      },
+      {
+        "source_X": -1,
+        "clock_minusY": 1,
+        "port": 0,
+        "probability": 0.22226741993087584
+      },
+      {
+        "source_X": -1,
+        "clock_minusY": 1,
+        "port": 1,
+        "probability": 0.2664571086549259
+      },
+      {
+        "source_X": 1,
+        "clock_minusY": -1,
+        "port": 0,
+        "probability": 0.10471437606743716
+      },
+      {
+        "source_X": 1,
+        "clock_minusY": -1,
+        "port": 1,
+        "probability": 0.020595096524245016
+      },
+      {
+        "source_X": 1,
+        "clock_minusY": 1,
+        "port": 0,
+        "probability": 0.01656816223756391
+      },
+      {
+        "source_X": 1,
+        "clock_minusY": 1,
+        "port": 1,
+        "probability": 0.08754722692032182
+      }
+    ],
+    "branch_port_probabilities": [
+      [
+        0.7246051136492043,
+        0.602590202801103
+      ],
+      [
+        0.3066924146339125,
+        0.19010180909286514
+      ]
+    ],
+    "moving_clock_joint_probabilities": [
+      0.6346139777523631,
+      0.07339469339813237
+    ],
+    "source_gamma_real": [
+      -0.5106884053661264,
+      -0.5716121476353322
+    ],
+    "source_gamma_imag": [
+      -0.6510876083394648,
+      0.5756368171041193
+    ],
+    "absolute_branch_error_certificates": [
+      0.003479023119207453,
+      0.009604559942498708
+    ]
+  },
+  "finite_port_and_embedding": {
+    "direct_site_sum_error": 7.414663095350595e-16,
+    "finite_sampling_isometry_error": 1.3660816325950173e-15,
+    "actual_band_embedding_operator_norm": 3.690184343979891e-05,
+    "used_embedding_upper": 0.00012783173232380342
+  },
+  "direct_site_QW": {
+    "full_prepared_site_vs_Fourier_error": 8.082888938012644e-16,
+    "coarse_actual_vs_fine_comparator_error": 0.14820857335123735,
+    "full_chirality_and_unknown_internal_coherence_checked": true
+  },
+  "causal_label_relay": {
+    "reset_G_leakage": 0.0,
+    "full_source_clock_carrier_R_error": 1.1724699655335876e-16,
+    "causal_neighbour_edges": [
+      [
+        -1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "source_distribution_preserved": true,
+    "arbitrary_state_cloning_claimed": false,
+    "feedback_means_coherent_source_state_only": true
+  },
+  "independence": {
+    "blind_review": false,
+    "pre_freeze_contribution": "admission choice and scope: temporal-profile identification, absolute phases, full moving-clock readout, positive-frequency and complete-resource limits",
+    "author_core_edited": false,
+    "author_module_imported": false
+  },
+  "scope": {
+    "whole_finite_QW_executed": false,
+    "actual_large_grid_connection": "analytic uniform prepared-subspace bound",
+    "all_unknown_Q_D_band_R": true,
+    "negative_frequency_discarded": false,
+    "one_dimensional_corridor": true,
+    "externally_specified_finite_program_permission": true,
+    "physical_device_and_energy_momentum_ledger_certified": false,
+    "source_backreaction": "coherent source X/Y only, not population or geometry field equation",
+    "local_clock_and_site_records_before_causal_G_return": true,
+    "new_adopted_axioms": 0,
+    "GR_hard_deliverables_completed": 0,
+    "constructive_goal_completed": false
+  }
+}

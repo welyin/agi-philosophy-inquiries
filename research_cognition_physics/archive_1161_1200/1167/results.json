@@ -1,0 +1,191 @@
+{
+  "schema": "round1167_complete_common_scale_kernel_v1",
+  "status": "PASS",
+  "date": "2026-10-13",
+  "check_groups": 3,
+  "new_adopted_axioms": 0,
+  "new_empirical_calibration": 0,
+  "gr_hard_deliverables_completed": 0,
+  "code_sha256": "f6846457da951ec7471875544fdecf86ea717aa81eea6bedf1ffe6cb28fe9571",
+  "sources_sha256": {
+    "../1161/check.py": "52edf7a1dfc530996daa88ee3715efa936f7c5845eefe067124a544688621119",
+    "../1161/proof.md": "f07074bca0db63349bcd3c28ef6cc8e4f786720308d52351ee12c94959582bbe",
+    "../../archive_1159_1160/1160/proof.md": "ca3121515439d2b93c23d341d83a1dfbd68b48c4c63ac95fc41c28b027cf8e81",
+    "../../archive_1159_1160/1160/results.json": "f6e38c2f676991d7e0ccf63ff603819d2c6975ce3fe0901e7b10b1c05377b4e2",
+    "../1166/acceptance.json": "7a660aa0b7d74fee7320addb51f0f124b9979b20dc64825f22279a64b93bc51a"
+  },
+  "reused_identity_check": "original complete 1160 calculation matches saved results; not new discovery",
+  "complete_source_kernel": {
+    "material_dimension": 13824,
+    "logical_dimension": 144,
+    "head_logical_dimension": 576,
+    "spectator_multiplicity": 24,
+    "original_clock_intertwiner": 0.0,
+    "complete_isometry_error": 4.071937794123934e-15,
+    "typed_program_relation_error": 5.329070518200751e-15,
+    "maximum_kernel_error": 0.0,
+    "samples": [
+      {
+        "scale": 0.8,
+        "AB_one_energy": 4.664761515876241,
+        "material_dimension": 13824,
+        "lowest_energy": 30.70376134141754,
+        "highest_energy": 33.10376134141759,
+        "energy_commutator": 0.0,
+        "source_commutator": 0.0
+      },
+      {
+        "scale": 1.0,
+        "AB_one_energy": 5.0,
+        "material_dimension": 13824,
+        "lowest_energy": 36.71779788708132,
+        "highest_energy": 39.717797887081375,
+        "energy_commutator": 0.0,
+        "source_commutator": 0.0
+      },
+      {
+        "scale": 1.2,
+        "AB_one_energy": 5.3814496188294845,
+        "material_dimension": 13824,
+        "lowest_energy": 42.82425670215655,
+        "highest_energy": 46.424256702156626,
+        "energy_commutator": 0.0,
+        "source_commutator": 0.0
+      }
+    ]
+  },
+  "relation_future": {
+    "G_dimension": 2,
+    "material_dimension": 13824,
+    "reference_dimension": 2,
+    "A_eigenvalues": [
+      0.8,
+      1.2
+    ],
+    "HG_A_commutator_norm": 0.28,
+    "joint_energy_lower_bound": 31.003761341417537,
+    "waits": [
+      0.2,
+      0.3
+    ],
+    "instruments": [
+      "Pauli Y",
+      "Pauli X"
+    ],
+    "retained_histories": 4,
+    "normalized_Choi_history_probabilities": [
+      [
+        0.040369172854921295,
+        0.18704278122910278,
+        0.6305342324858181,
+        0.14205381343015502
+      ],
+      [
+        0.040369172854921295,
+        0.18704278122910267,
+        0.6305342324858181,
+        0.14205381343015502
+      ],
+      [
+        0.040369172854921295,
+        0.18704278122910278,
+        0.6305342324858181,
+        0.14205381343015502
+      ]
+    ],
+    "full_G_R_history_matrix_error": 2.3551636438409798e-16,
+    "other_HD_eigenstate_G_trace_distance": 0.11895824631172316,
+    "bounded_perturbation_norm": 0.02,
+    "perturbed_Choi_trace_distance": 0.0022652179045510685,
+    "universal_half_diamond_upper_bound": 0.02
+  },
+  "directional_source": {
+    "samples": [
+      {
+        "scale": 0.8,
+        "shear_changes_Q0_Q1": [
+          [
+            6.859943405700353,
+            13.719886811400677
+          ],
+          [
+            6.859943405700353,
+            6.859943405700353
+          ],
+          [
+            6.859943405700353,
+            13.719886811400677
+          ]
+        ],
+        "program0_minus1": [
+          0.0,
+          0.9999999999999958
+        ]
+      },
+      {
+        "scale": 1.0,
+        "shear_changes_Q0_Q1": [
+          [
+            6.4,
+            12.799999999999974
+          ],
+          [
+            6.4,
+            6.4
+          ],
+          [
+            6.4,
+            12.799999999999974
+          ]
+        ],
+        "program0_minus1": [
+          0.0,
+          0.9999999999999959
+        ]
+      },
+      {
+        "scale": 1.2,
+        "shear_changes_Q0_Q1": [
+          [
+            5.94635316997733,
+            11.892706339954637
+          ],
+          [
+            5.94635316997733,
+            5.94635316997733
+          ],
+          [
+            5.94635316997733,
+            11.892706339954637
+          ]
+        ],
+        "program0_minus1": [
+          0.0,
+          0.9999999999999961
+        ]
+      }
+    ],
+    "source_pullback_error": 3.149288907969352e-14,
+    "contrast_operator": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ],
+    "comparison_rank": 1,
+    "isometry_error_per_program": 0.01,
+    "normalized_contrast_lower_bound": 0.96
+  },
+  "scope": [
+    "homogeneous scale family and stated G-only finite future algebra only",
+    "local scalar field profiles may distinguish spatially different recoil supports",
+    "complete original material and active futures remain present",
+    "dynamic A does not certify original clock timing or a local spacetime realization",
+    "directional coefficient is not a new actual geometry readout",
+    "no all-axiom dynamic quantum countermodel or Einstein selection is claimed"
+  ]
+}

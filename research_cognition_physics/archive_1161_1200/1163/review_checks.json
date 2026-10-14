@@ -1,0 +1,71 @@
+{
+  "schema": "round1163_independent_review_v1",
+  "date": "2026-10-13",
+  "status": "PASS_WITH_SCOPE",
+  "reviewer": "/root/round1163_independent_review",
+  "participation": "No author proof/code/results written; pre-final scope review and two wording clarifications disclosed in review.md. Independent default recomputation and closed 2x2 propagator performed after formal files existed.",
+  "default_recomputation": {
+    "command": "python -B -X utf8 research_cognition_physics/archive_1161_/1163/check.py",
+    "runtime": "C:/Users/admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+    "exit_code": 0,
+    "status": "PASS",
+    "mode": "read-only comparison",
+    "groups": 4,
+    "frozen_1160_recomputed_and_compared": true,
+    "full_operator_checks": {
+      "gram": 4.75325661446897e-15,
+      "total_energy": 2.844089263216845e-14,
+      "original_HD": 3.1779807059451285e-14,
+      "mel_choi": 1.964262306114482e-15,
+      "current_balance": 0.0
+    }
+  },
+  "independent_closed_propagator": {
+    "status": "PASS",
+    "cases": 12,
+    "D_eigenslices": 288,
+    "method": "Independently assemble a,d from explicit energies; z=(a-d)/2, nu=sqrt(1+z*z), U=exp(-it(a+d)/2)[cos(t nu)I-i sin(t nu)(z sigma_z+sigma_x)/nu]; retain cross-label phases; apply to complete original output. Uses old D spectral basis, not new-H eigh for the closed propagator.",
+    "matrix_propagator_max_residual": 1.1800094848712793e-14,
+    "full_output_max_residual": 3.676291128490293e-15,
+    "saved_R_probability_max_residual": 1.4130832128153975e-15,
+    "MEL_Choi_max_residual": 1.9150406190382886e-15,
+    "program0_Q1": {
+      "plus_k1": 0.897025470932429,
+      "plus_k2": 0.9043531380394796,
+      "minus_k1": 0.8911823836710596,
+      "minus_k2": 0.8927682186060376
+    }
+  },
+  "analytic_checks": {
+    "restricted_necessary_sufficient_S_equals_NK": "PASS",
+    "full_rest_energy_not_clock_gap": "PASS",
+    "complete_old_output_unknown_Q_and_reference_identity": "PASS within declared preparation family",
+    "self_adjoint_positive_direct_integral_and_full_new_energy": "PASS",
+    "instantaneous_R_blocks_not_full_H_bands": "PASS after explicit clarification",
+    "normalizable_packet_operator_bound": "PASS",
+    "wavepacket_two_experiment_probability_error": 0.0002,
+    "scalar_potential_and_quartic_weakening_scope": "PASS"
+  },
+  "not_certified": [
+    "preparation or old V implemented under new H",
+    "source AB sharing the new geometry",
+    "all former permitted operations retained under new H",
+    "spatial CC implementation or field signal front",
+    "classical metric for arbitrary quantum source states",
+    "spacetime curvature or nonlinear Einstein dynamics",
+    "countermodel to all current cognitive axioms"
+  ],
+  "new_adopted_axioms": 0,
+  "stage_goal_completed": false,
+  "sha256": {
+    "research_note_1163.md": "e9543df302e867817277d5a7175aff0e8770e570b8569f2bcd78db6f4faae762",
+    "1163/admission.md": "40474401d0a28f52ad74eb693538b7cae13a59982fdaadd20fdb004edc545f68",
+    "1163/proof.md": "383e841fb176cb586bfebcd75f0dbac5480221a655bf339597c195030c68a966",
+    "1163/check.py": "3670ab58e54e96e59eb8bd30c91ee1065d0fa3af745176a3cf93e44737818e69",
+    "1163/results.json": "47b9b473ece964d0cc95a198e8fa25a1e1e8b5d01a08f712c789140393cce91a",
+    "1163/NEXT.md": "848d78eed9526216a2ade72a28a87a03379656aad0d276c25d5dd112e669c41e",
+    "1163/review.md": "f010e76c660b6837d91de51fd68432b247be0722800d8c536cc8a7aa9e5a383d",
+    "1161/check.py": "52edf7a1dfc530996daa88ee3715efa936f7c5845eefe067124a544688621119",
+    "../archive_1159_1160/1160/check.py": "8af83d78311b77c804693e055f2ece2c9f195e1d217b5b67e41fa6b3b6753170"
+  }
+}

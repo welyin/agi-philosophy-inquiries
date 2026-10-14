@@ -1,0 +1,156 @@
+{
+  "schema": "native_reference_permission_1206_v1",
+  "status": "AUTHOR_CHECKS_PASS_NOT_ACCEPTANCE",
+  "source_sha256": {
+    "1201/proof.md": "597e1d00457761355c133f1a11f92a7c0c34860464fa9f99b063cc94385c03a6",
+    "1201/results.json": "16bf563918c97691ec87533517e47c59c76cb37dfc3d1dbad4d335b337c26d9b",
+    "1202/results.json": "ffd1cb78a71db45caa1c1c2ec5f4a39cce94a87478f95976b4fe1bdbb59bad60",
+    "1204/results.json": "61a57b8e936af8c40ade3b1dbe8d5f3614432d85af61388ec821d07db43897e9",
+    "1205/results.json": "64970f3af93ed1fcfdedee3b4f1b710e9c77691b24fce11ce7204566392fd6b1"
+  },
+  "algebraic_certificate": {
+    "polynomial_descending": [
+      32000,
+      -31200,
+      -2095,
+      -17
+    ],
+    "irreducibility_prime": 11,
+    "mod_11_values": [
+      5,
+      8,
+      9,
+      3,
+      7,
+      5,
+      3,
+      7,
+      1,
+      2,
+      5
+    ],
+    "discriminant": 2736128576000000,
+    "sqrt_floor": 52308016,
+    "galois_group": "S3",
+    "root_sum": "39/40",
+    "number_energy_2x2_determinant": "81/40",
+    "all_finite_n_claim_requires_proof_not_enumeration": true
+  },
+  "native_QQ_graph": {
+    "edges": 18,
+    "components": [
+      [
+        0,
+        1,
+        3,
+        4,
+        5,
+        7,
+        10,
+        12,
+        13,
+        15
+      ],
+      [
+        2,
+        6,
+        8,
+        9,
+        11,
+        14
+      ]
+    ],
+    "diagonal_stationarity_rank": 14
+  },
+  "original_cold_reference_witness": {
+    "preparation": "two independent cold pools; one sample from each",
+    "source": "../1202/results.json",
+    "source_sha256": "ffd1cb78a71db45caa1c1c2ec5f4a39cce94a87478f95976b4fe1bdbb59bad60",
+    "cold_population_exact": [
+      "45670643759514234180638922478801886/116469465222619517458329762351365585",
+      "45135113100381438933758302623609031/116469465222619517458329762351365585",
+      "2582068095341859267026421020829909/23293893044523903491665952470273117",
+      "12753367886014548008800432144805123/116469465222619517458329762351365585"
+    ],
+    "entry": "<00|[H0+0.1 QQ,r_C tensor r_C]|cc>; c=2",
+    "entry_absolute_lower": "0.000320208931827349218063154482",
+    "entry_absolute_upper": "0.000320208931827349218063154483",
+    "declared_strict_lower": "0.0003202089318",
+    "finite_time_readout_difference_claimed": false
+  },
+  "finite_resolution_scope": {
+    "n": 30,
+    "occupation_types": 5456,
+    "minimum_nonzero_gap_lower": "0.000423721250941265308549229183",
+    "minimum_nonzero_gap_upper": "0.000423721250941265308549229184",
+    "witness_lower_energy_counts": [
+      14,
+      0,
+      16,
+      0
+    ],
+    "witness_upper_energy_counts": [
+      0,
+      15,
+      5,
+      10
+    ],
+    "occupation_difference": [
+      -14,
+      15,
+      -11,
+      10
+    ],
+    "pigeonhole_bound_using_width_1_094": "1641/272750",
+    "all_adjacent_interval_orderings_certified": true,
+    "physical_swap_implementation_claimed": false
+  },
+  "alternative_calibration_example": {
+    "spectrum": [
+      0,
+      1,
+      2
+    ],
+    "subjects": 3,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "conversion": [
+      1,
+      -2,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "exchange_only_rank": 4,
+    "with_one_conversion_rank": 5,
+    "delete_last_edge_rank": 3,
+    "counterexample_probability": [
+      "1/2",
+      "1/3",
+      "1/6"
+    ],
+    "conversion_population_imbalance": "1/36",
+    "smallest_nonzero_singular_value_diagnostic": 0.617770110884,
+    "native_material_permission": false,
+    "beta_sign_selected": false
+  },
+  "limits": [
+    "marginal invariance need not preserve correlations with R",
+    "bare energy preserving is not all cyclic work extraction",
+    "all-time stationary is not one-time zero directed flow",
+    "full-rank diagonal product is not correlated interacting Gibbs",
+    "no new physical apparatus, axiom, or geometry identity"
+  ]
+}

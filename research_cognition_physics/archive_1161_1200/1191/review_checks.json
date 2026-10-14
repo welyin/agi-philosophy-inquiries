@@ -1,0 +1,178 @@
+{
+  "status": "PASS_INDEPENDENT_IMPLEMENTATION_WITH_SCOPE",
+  "implementation": "q,p quadratic source and 3x3 augmented ODE matrix exponential; no import of author check.py",
+  "author_files_sha256": {
+    "proof.md": "43dcf5e0922afba93a8479056905a7e8f2c575c0d0773da84709773ad5311cea",
+    "sources.md": "004f70d44dcb085aab8e613a11e37d5d8761e468b70cfc3458371eaeea2a11a5",
+    "admission.md": "3d7b62b4e9c33c6b44c0c8e2a5073f2a69efd6519e0f8b19f22cea63ec612d2b",
+    "check.py": "a9559b7c0a19be3ee42a079271d5b1c3322c9972b1a0c2cc5f9dd4805ebe23e5",
+    "results.json": "c3528df0c641df2bcddaccaeae6111f8eea2b07135dccaaa27d148af0e7aa606",
+    "baseline.json": "aadaa5f716474dc3d34fa9f81f7514a8d4e8fc05b9474fa9f1bd0c14acabde89"
+  },
+  "parameter_identity": [
+    {
+      "b": "1",
+      "v": "1",
+      "z": "1/7",
+      "ratio": "1/1152"
+    },
+    {
+      "b": "1",
+      "v": "1",
+      "z": "2",
+      "ratio": "1/1152"
+    },
+    {
+      "b": "1",
+      "v": "1",
+      "z": "17",
+      "ratio": "1/1152"
+    },
+    {
+      "b": "5/7",
+      "v": "4/3",
+      "z": "1/7",
+      "ratio": "7/4320"
+    },
+    {
+      "b": "5/7",
+      "v": "4/3",
+      "z": "2",
+      "ratio": "7/4320"
+    },
+    {
+      "b": "5/7",
+      "v": "4/3",
+      "z": "17",
+      "ratio": "7/4320"
+    },
+    {
+      "b": "3",
+      "v": "2/5",
+      "z": "1/7",
+      "ratio": "1/8640"
+    },
+    {
+      "b": "3",
+      "v": "2/5",
+      "z": "2",
+      "ratio": "1/8640"
+    },
+    {
+      "b": "3",
+      "v": "2/5",
+      "z": "17",
+      "ratio": "1/8640"
+    }
+  ],
+  "cold_max_stationary_residual": 3.0552817220641515e-16,
+  "kernel_anchor_max_error": 1.099152334353211e-15,
+  "source_norms": [
+    {
+      "N": 0,
+      "norm_from_qp": 1.0897247358851683,
+      "bound": 1.3106601717798214
+    },
+    {
+      "N": 1,
+      "norm_from_qp": 1.984313483298443,
+      "bound": 2.587117307087383
+    },
+    {
+      "N": 2,
+      "norm_from_qp": 3.119885381862104,
+      "bound": 4.908736383133137
+    },
+    {
+      "N": 5,
+      "norm_from_qp": 7.126955213120832,
+      "bound": 10.964657490055579
+    },
+    {
+      "N": 12,
+      "norm_from_qp": 18.16945636317126,
+      "bound": 24.984897142231073
+    }
+  ],
+  "finite_time": [
+    {
+      "z": 1.0,
+      "response_ode": 0.01087831425342386,
+      "energy_ode": 0.02929347624993409
+    },
+    {
+      "z": 10.0,
+      "response_ode": 0.008058477520968266,
+      "energy_ode": 0.022402097298505803
+    },
+    {
+      "z": 100.0,
+      "response_ode": 9.491644385387387e-05,
+      "energy_ode": 0.00024682915676769865
+    },
+    {
+      "z": 1000.0,
+      "response_ode": 9.506985186842695e-07,
+      "energy_ode": 2.4706719183382998e-06
+    }
+  ],
+  "max_author_response_error": 1.8214596497756474e-16,
+  "max_author_energy_error": 7.979727989493313e-17,
+  "resonant_response": [
+    {
+      "N": 0,
+      "t": 0.5,
+      "norm": 0.0016934457820926348,
+      "bound": 0.0022754516871177455
+    },
+    {
+      "N": 0,
+      "t": 1.0,
+      "norm": 0.004796931273058175,
+      "bound": 0.009101806748470982
+    },
+    {
+      "N": 0,
+      "t": 2.3,
+      "norm": 0.008517852813828648,
+      "bound": 0.04814855769941149
+    },
+    {
+      "N": 2,
+      "t": 0.5,
+      "norm": 0.0048668624138830064,
+      "bound": 0.008522111776272807
+    },
+    {
+      "N": 2,
+      "t": 1.0,
+      "norm": 0.013966832139012827,
+      "bound": 0.03408844710509123
+    },
+    {
+      "N": 2,
+      "t": 2.3,
+      "norm": 0.023019717062613538,
+      "bound": 0.18032788518593257
+    }
+  ],
+  "multiple_spatial_modes": [
+    {
+      "K": 36.0,
+      "response_norm": 0.011365656682797381,
+      "energy": 0.033874756364287356
+    },
+    {
+      "K": 7500.0,
+      "response_norm": 9.115710514831922e-05,
+      "energy": 0.00020114888489541037
+    }
+  ],
+  "scope": {
+    "full_Fock_output": "single quadratic source/linear response exact from P_N to P_(N+2)",
+    "arbitrary_R": "proved tensor norm identity; finite examples supplementary",
+    "no_coupled_material_geometry_error_certificate": true,
+    "no_actual_clock_or_GR_certificate": true,
+    "not_external_peer_review": true
+  }
+}

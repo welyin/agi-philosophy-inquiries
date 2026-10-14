@@ -1,0 +1,134 @@
+{
+  "schema": "thermal_closure_runtime_checks_v1",
+  "date": "2026-10-15",
+  "status": "MIGRATION_AND_REPLAY_PASS_WITH_PREEXISTING_FULL_LAYOUT_MISMATCH",
+  "scientific_rounds_added": 0,
+  "old_scientific_files_modified": false,
+  "old_support_files_modified": false,
+  "global_pathlib_patch_used": false,
+  "archive_or_shadow_copy_used": false,
+  "manifest_sha256": "338b9a7dd23e70ff20e19e6957569acb0c46437e14cee8a89f084b24332806dd",
+  "artifact_sha256": {
+    "scripts/run_research_thermodynamics_closed.py": "7c3b4a969c05db2c7ff8fbda8d74beabb37983b8191242fa9d30c7a400024d06",
+    "scripts/close_research_1161_1218.py": "695d43936f5cf74421fed54cb60320942c4c1532fae7e52c8addaf0b3035e30e"
+  },
+  "baseline_limitation": {
+    "file": "猜想/2029-9-29.md",
+    "manifest_original_sha256": "b8db44bfe9daa1ede8b0274ea94f2e67356b918768d157de30ee93cee0768de0",
+    "manifest_current_sha256": "615561865c3b9a58d92e381446f3511b0e960658f5c4d4855f71570e6f0fafc6",
+    "restored_preclosure_sha256": "b8db44bfe9daa1ede8b0274ea94f2e67356b918768d157de30ee93cee0768de0",
+    "restored_preclosure_bytes": 12606,
+    "formula_read_sha256": "b8db44bfe9daa1ede8b0274ea94f2e67356b918768d157de30ee93cee0768de0",
+    "formula_expected": {
+      "sha256": "cf3bc15c1cb35a676e87791c21d86c864ca68c7d9a8fa8f91b64041084be8586",
+      "bytes": 11437
+    },
+    "formula_reader_equals_preclosure": true,
+    "conclusion": "The frozen full-layout formula inventory already differs from the pre-migration conjecture file; this migration inverse is verified, and no old evidence was rewritten."
+  },
+  "closure": {
+    "arguments": "--verify-closure",
+    "exit_code": 0,
+    "result": {
+      "status": "PASS",
+      "files": 992,
+      "moved_files": 984,
+      "scientific_python_json_byte_identical": 507,
+      "reversible_markdown_files": 24,
+      "frozen_support_files": 124,
+      "manifest_sha256": "338b9a7dd23e70ff20e19e6957569acb0c46437e14cee8a89f084b24332806dd",
+      "old_directories_absent": true,
+      "current_and_original_hashes_verified": true,
+      "directory_copy_used": false,
+      "zip_used": false
+    }
+  },
+  "navigation": {
+    "arguments": "--verify-navigation",
+    "exit_code": 0,
+    "result": {
+      "status": "PASS",
+      "files": 4,
+      "manifest_sha256": "0813861d002a7760da8a0829e73ae743c88a4cdf022aecb734dcd50c0ca75f43",
+      "original_navigation_recoverable": true,
+      "closure_boundary_verified": true
+    }
+  },
+  "full_layout": {
+    "arguments": "--verify-layout",
+    "exit_code": 1,
+    "status": "PREEXISTING_FROZEN_INVENTORY_MISMATCH",
+    "error": "ValueError: Noncandidate Markdown changed: 猜想/2029-9-29.md",
+    "failing_function": "scripts/normalize_markdown_math.py:verify",
+    "interpretation": "Not claimed PASS. Directly verified that the formula verifier received exactly the manifest original bytes, whose hash and length already differ from its older frozen inventory. No formula-layer hash or prior conjecture was rewritten."
+  },
+  "representative_replays": [
+    {
+      "arguments": "--script 'research_cognition_physics/archive_1201_1218/1218/check.py'",
+      "exit_code": 0,
+      "stdout": "{\"status\": \"PASS\", \"all_checks_passed\": true, \"results_match\": true, \"check_groups\": 8}",
+      "result": {
+        "status": "PASS",
+        "all_checks_passed": true,
+        "results_match": true,
+        "check_groups": 8
+      }
+    },
+    {
+      "arguments": "--script 'research_cognition_physics/archive_1201_1218/1218/independent_check.py'",
+      "exit_code": 0,
+      "stdout": "{\"status\": \"PASS\", \"all_checks_passed\": true, \"results_match\": true, \"check_groups\": 6}",
+      "result": {
+        "status": "PASS",
+        "all_checks_passed": true,
+        "results_match": true,
+        "check_groups": 6
+      }
+    },
+    {
+      "arguments": "--script 'research_cognition_physics/archive_1201_/_shared/finalize_four_laws_stage.py' -- --verify",
+      "exit_code": 0,
+      "stdout": "{\"status\": \"PASS\", \"goal_status\": \"complete\", \"stage_complete\": true, \"stage_scope\": \"declared compatible thermal domains\", \"latest_scientific_round\": 1218, \"stage_rounds\": 18, \"stage_check_groups\": 36, \"new_scientific_rounds\": 0, \"old_GR_science_files_verified\": 421, \"old_GR_acceptance_bindings_verified\": 485, \"current_stage_science_files_verified\": 152, \"adopted_thermal_roles\": [\"TR\", \"TW\", \"TC\"], \"new_universal_axioms\": 0, \"old_GR_goal_completed\": false}",
+      "result": {
+        "status": "PASS",
+        "goal_status": "complete",
+        "stage_complete": true,
+        "stage_scope": "declared compatible thermal domains",
+        "latest_scientific_round": 1218,
+        "stage_rounds": 18,
+        "stage_check_groups": 36,
+        "new_scientific_rounds": 0,
+        "old_GR_science_files_verified": 421,
+        "old_GR_acceptance_bindings_verified": 485,
+        "current_stage_science_files_verified": 152,
+        "adopted_thermal_roles": [
+          "TR",
+          "TW",
+          "TC"
+        ],
+        "new_universal_axioms": 0,
+        "old_GR_goal_completed": false
+      }
+    },
+    {
+      "arguments": "--script 'research_cognition_physics/archive_1201_1218/_shared/after1218_common_prediction_check.py'",
+      "exit_code": 0,
+      "stdout": "{\"all_checks_passed\": true, \"check_groups\": 4, \"mode\": \"read_only_replay\", \"results_match\": true, \"status\": \"PASS\"}",
+      "result": {
+        "all_checks_passed": true,
+        "check_groups": 4,
+        "mode": "read_only_replay",
+        "results_match": true,
+        "status": "PASS"
+      }
+    }
+  ],
+  "scope_notes": [
+    "Old and current directory names are both tested: new 1218 scientific paths and old finalizer path.",
+    "The finalizer also runs the old 1161 navigation checker and the old GR entry child command through the new read-only routes.",
+    "Existing 1218 author/independent and common-prediction check counts are replay counts, not new scientific groups.",
+    "The user-requested rename preserves the GR not-completed status and the four-laws completed status in their declared scopes.",
+    "No fix or new research was attempted for the older full-layout inventory mismatch."
+  ]
+}
+

@@ -1,0 +1,143 @@
+{
+  "schema": "autonomous_contact_record_1203_v1",
+  "status": "PASS_SCOPED_CLOCK_RECORD_CONNECTION",
+  "common_terminal_time": 606,
+  "one_fixed_H_with_program_Z": [
+    1,
+    2
+  ],
+  "clock_mass": "1000000000000000000000000",
+  "clock_sigma": "1/10000000000",
+  "bounds_by_program": {
+    "1": {
+      "v": 1,
+      "time": 606,
+      "contact_time": 600,
+      "lipschitz_upper_exact": "1083/7",
+      "clock_error_exact_upper": "65659927031541/7000000000000000000",
+      "edge_error_exact": "1/10000",
+      "isometry_error_exact_upper": "765659927031541/7000000000000000000",
+      "isometry_error_upper": "10937999/100000000000",
+      "initial_plus_final_interaction_energy_exact_upper": "758274108689016201/24500000000000000000000000",
+      "initial_plus_final_interaction_energy_upper": "619/20000000000",
+      "single_material_energy_error_upper": "119661709/1000000000000",
+      "clock_energy_prediction_error_upper": "59838617/250000000000",
+      "clock_delta_energy_interval": [
+        -0.0028426639081049316,
+        -0.0023639549737934024
+      ],
+      "clock_energy_loss_lower": 0.0023639549737934024,
+      "initial_clock_mean_energy_exact": "40000000000000000000000000001/80000",
+      "initial_clock_energy_variance_exact": "80000000000000000000000000001/3200000000",
+      "finite_unknown_material_reference_bound": true
+    },
+    "2": {
+      "v": 2,
+      "time": 606,
+      "contact_time": 300,
+      "lipschitz_upper_exact": "1116/7",
+      "clock_error_exact_upper": "16915161257433/1750000000000000000",
+      "edge_error_exact": "1/20000",
+      "isometry_error_exact_upper": "104415161257433/1750000000000000000",
+      "isometry_error_upper": "59665807/1000000000000",
+      "initial_plus_final_interaction_energy_exact_upper": "48836213582566869/1531250000000000000000000",
+      "initial_plus_final_interaction_energy_upper": "15947/500000000000",
+      "single_material_energy_error_upper": "65274393/1000000000000",
+      "clock_energy_prediction_error_upper": "65290389/500000000000",
+      "clock_delta_energy_interval": [
+        -0.0008915243015728309,
+        -0.0006303627465479323
+      ],
+      "clock_energy_loss_lower": 0.0006303627465479323,
+      "initial_clock_mean_energy_exact": "160000000000000000000000000001/80000",
+      "initial_clock_energy_variance_exact": "320000000000000000000000000001/3200000000",
+      "finite_unknown_material_reference_bound": true
+    }
+  },
+  "combined_isometry_error_exact_upper": "1183320572061273/7000000000000000000",
+  "combined_isometry_error_upper": "169045797/1000000000000",
+  "pointer_joint_probabilities": [
+    [
+      0.05922202733598826,
+      0.021669013253480487,
+      0.2765741885468674,
+      0.0185329336183708
+    ],
+    [
+      0.030733824775617532,
+      0.011280011500603692,
+      0.1437334141660204,
+      0.009632520893864113
+    ],
+    [
+      0.04656834619810836,
+      0.017068417921626063,
+      0.21677506790115905,
+      0.014337473789362558
+    ],
+    [
+      0.021347876235236755,
+      0.007821283192750052,
+      0.09840273821462464,
+      0.00630086245631951
+    ]
+  ],
+  "pointer_joint_table_TV_error_upper": "169048197/1000000000000",
+  "correlation_prediction_TV_lower_after_two_clock_errors": 0.00035692840798249345,
+  "correlation_experimental_resolution_claimed": false,
+  "population_identification_error_with_original_budget_upper": "1002778323/62500000000",
+  "thermodynamics": {
+    "retained_AKC_clausius_lower": "-.000912",
+    "AKC_entropy_rank_bound": 256,
+    "each_clock_rank_bound": 256,
+    "AK_dimension": 256,
+    "AK_only_clausius_lower": "-0.000912389042",
+    "each_clock_entropy_upper_decimal": [
+      "2.96498927001637299689355E-7",
+      "9.2541588441954523763442E-8"
+    ],
+    "clock_pure_comparison_failure_is_amplitude_squared": true,
+    "looser_finite_AK_continuity_lower": "-0.003929825840",
+    "beta": "6/5",
+    "initial_clock_pure_and_independent": true,
+    "all_clocks_records_source_reference_retained": true,
+    "clocks_state_recovery_or_free_reset_claimed": false
+  },
+  "finite_matrix_diagnostic": {
+    "1": {
+      "material_pointer_dimension": 64,
+      "copy_norm_error": 2.4441574809578874e-16,
+      "pointer_kernel_vs_certified_native_max_error": 5.543898673465719e-13,
+      "unconditional_clock_evolution_simulated": false
+    },
+    "2": {
+      "material_pointer_dimension": 64,
+      "copy_norm_error": 2.4441574809578874e-16,
+      "pointer_kernel_vs_certified_native_max_error": 4.937978194743953e-13,
+      "unconditional_clock_evolution_simulated": false
+    }
+  },
+  "remaining_inputs": [
+    "1202 successful reference preparation and full stock/seed resources",
+    "normal positive-energy clock degree and specified Gaussian preparation",
+    "same fixed smooth gates and energy-projector record coupling",
+    "pure degenerate pointer, correlated known Z/mean-velocity preparation",
+    "finite terminal window and pointer interrogation; additional physical errors separate",
+    "actual spatial region, causal support and geometric identity"
+  ],
+  "not_claimed": [
+    "autonomous full reference/preparation computation",
+    "direct physical measurement of the tiny change of the huge clock energy",
+    "physical B-energy pointer in this model",
+    "attracting thermalization",
+    "universal temperature-flow ordering",
+    "SR clock mass or 3D area identity",
+    "Unruh or GR"
+  ],
+  "source_sha256": {
+    "research_cognition_physics/archive_1201_/1201/results.json": "16bf563918c97691ec87533517e47c59c76cb37dfc3d1dbad4d335b337c26d9b",
+    "research_cognition_physics/archive_1201_/1201/acceptance.json": "512811a28eda71efad22d6998af964e043ed56d1bd8468122a31efbdde4798a3",
+    "research_cognition_physics/archive_1201_/1202/results.json": "ffd1cb78a71db45caa1c1c2ec5f4a39cce94a87478f95976b4fe1bdbb59bad60",
+    "research_cognition_physics/archive_1201_/1202/acceptance.json": "1fbcd63cbb237bbf4bd0361aab94c7fc8c2a9769d6c58c212b148b17b9949c60"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "schema": "gr_round_acceptance_v1",
+  "date": "2026-10-14",
+  "round": 1198,
+  "status": "ACCEPTED_WITH_SCOPE",
+  "check_groups": 2,
+  "scope": "原1178父规则与1196填带参考的受驱Hartree线性化，保全部源CAR跃迁、两关系及交叉反馈后，相同格距/耦合的各轴至少3点周期盒中，全q及实频|omega|<=1/4的加权反馈范数<.835、逆余量>.165。停止把该参考的同一受驱核直接作为低频无质量几何部门；不签有限K全谱、任意初态、实际仪器或全部有限有效GR排除。",
+  "certified_results": {
+    "root_certificate_sha256": "66affdbc7ad5fa78ec4c1a5a3a78f23a7a78e489c8efc785dce8466c11f72288",
+    "z_lower": "49/50",
+    "sqrt3_upper": "17321/10000",
+    "xs_upper": "199/1000",
+    "uniform_periodic_boxes": {
+      "minimum_sites_each_axis": 3,
+      "Emax_squared_at_zlo": "24208434691/256000000",
+      "absolute_b_lower_at_zlo": "130044843/51200000",
+      "root_bracket_squared_margin": "100735097898570251/6553600000000000000",
+      "inherited_global_lipschitz_squared_upper": "33022594252800000000/587597982116239600129",
+      "all_same_spacing_filled_fixed_points_above_zlo": true
+    },
+    "Bs_upper": {
+      "exact": "13428966119/9858694400",
+      "decimal": 1.3621444761488906
+    },
+    "Bt_upper": {
+      "exact": "225173/537200",
+      "decimal": 0.4191604616530156
+    },
+    "source_pair_gap_lower": "1147/250",
+    "static_feedback_norm_upper": {
+      "exact": "3708596296968425281/4929347200000000000",
+      "decimal": 0.7523503917452651
+    },
+    "low_frequency_feedback_norm_upper": {
+      "exact": "373901331379513018111433/448151477922597240000000",
+      "decimal": 0.8343190858428712
+    },
+    "weighted_inverse_margin_lower": {
+      "exact": "74250146543084221888567/448151477922597240000000",
+      "decimal": 0.16568091415712877
+    },
+    "frequency_interval": [
+      "-1/4",
+      "1/4"
+    ]
+  },
+  "numerical_algebra_audit": {
+    "diagnostic_torus": [
+      3,
+      3,
+      3
+    ],
+    "full_single_particle_dimension": 108,
+    "vertex_max_error": 4.7207330545682824e-15,
+    "response_max_error": 6.93890005041245e-17,
+    "hermitian_max_error": 3.808651472064831e-19,
+    "min_Q_eigenvalue": 0.0216365047321242,
+    "scope": "Numerical algebra audit only, not a finite-K physical gap or detector certificate."
+  },
+  "inputs_retained": [
+    "Original 1178 parent couplings, finite lattice spacing, all CAR source modes and reciprocal relation interaction.",
+    "1196 stationary isotropic filled Hartree reference with z_s >= .98; not a finite-K ground state.",
+    "Retarded linear response with fixed initial occupations; real frequency window [-1/4,1/4].",
+    "Original lapse and three-axis transport dictionary; no new instrument or freely implemented driving control."
+  ],
+  "certification_limits": [
+    "Weighted response inverse, not Euclidean singular-value bound without conditioning factors.",
+    "No full finite-K gap, general initial-state spectrum, complex-frequency stability, or unknown-probe/reference finite-time certificate.",
+    "Other references, relation rules, initial occupation sources and controlled finite-window GR approximations remain open.",
+    "No identification or exclusion of dark matter/dark energy; no general cognitive-axiom nonentailment or nonlinear Einstein generation."
+  ],
+  "review_independence": "An independent agent derived the Fourier vertices, spectral Gram bounds, reciprocal tangent and feedback sign, and independently recomputed rational constants without importing author code. A second agent independently checked the uniform-box fixed-point lower bound by exact fractions and reported it in messages; root archived those messages after the agent file-writing attempt hit capacity. Root checked the formal proof and executed two independent position/momentum numerical constructions. A further agent pass over the final numerical program encountered service capacity error; that program was not independently reimplemented. Internal non-blind review.",
+  "new_adopted_axioms": 0,
+  "new_empirical_calibration": 0,
+  "gr_hard_deliverables_completed": 0,
+  "files_sha256": {
+    "../research_note_1198.md": "271620663e773139a91120d13b686c4718f09c4d4889575ed0e3c5f468f64e93",
+    "check.py": "d3fea9663ffbb708880ec9115c75a73cea265eb7a88c0719bf3c7a96ba696eae",
+    "NEXT.md": "4f35b04f3f9305febfe7da7c22454ca9c1ad17876a675bfcd067c0d2a2203a34",
+    "proof.md": "64217efac0d35997d5111b4c635cea07ee4756cd165f31438d300c11091a4848",
+    "results.json": "cb45c68271b94861157a1bb6792b22f51a63720b38d84e558b126570948278d7",
+    "results_initial.json": "11a69cae6e5c43e9dcc8ea79f281e5ce0a02a4158b3a4ddd3384e49034d77499",
+    "review.md": "e8ab845caf9570131b51f3f15936f7520de7500ded687bda6b621be355ee7260",
+    "../1196/certificate_results.json": "66affdbc7ad5fa78ec4c1a5a3a78f23a7a78e489c8efc785dce8466c11f72288",
+    "../_shared/goal.md": "8acafd3ed835d581a543de077e1e6ea6c120b6e78c7a1e271e749f263e422667",
+    "../_admission/after1197_ir_screen/README.md": "3eeba8af2c8e5aa2799bb8821138c2a2012dc1ccad7ef1d72982c5c4c3c30714",
+    "../_admission/after1197_ir_screen/screen.py": "e118da6b4bc2364c31d968711cf23a7962c4a370596266b2afe98b917dd232bf",
+    "../_admission/after1197_ir_screen/results.json": "0cfc31ac917465cacc978803c83ac5b65c640d718f29ce1fee18a15a5d883b82",
+    "../_admission/after1197_ir_screen/review.md": "f4a87e4a701e1703b7b3956000df8be3058b682a0bd09ee58d4bebc05e743336",
+    "../_admission/after1197_ir_screen/NEXT_review.md": "7ffc16ad3f85ec40a6ff4d96ef76974876f7ae58c18691d6de837e03b7868e52"
+  },
+  "validation": {
+    "root_personally_executed": true,
+    "rational_certificate": "PASS",
+    "position_momentum_audit": "PASS_NUMERICAL_ALGEBRA",
+    "old_acceptances_unchanged": 37,
+    "old_bindings_unchanged": 452,
+    "old_unique_scientific_files_unchanged": 392
+  }
+}

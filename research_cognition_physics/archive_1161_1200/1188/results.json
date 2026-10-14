@@ -1,0 +1,156 @@
+{
+  "round": 1188,
+  "date": "2026-10-14",
+  "status": "PASS_CONDITIONAL_SAME_HISTORY_SLICING",
+  "groups": {
+    "1_full_source_same_event_central_difference": {
+      "pass": true,
+      "exact_tests": 12,
+      "source_components": {
+        "matter": "7/5",
+        "clock": "13/17",
+        "control": "2/9",
+        "record": "5/11",
+        "binding": "-3/13"
+      },
+      "total_source": "285598/109395",
+      "nonzero_ambient_gauss_projection": "11/7",
+      "nonzero_constant_u": "19/23",
+      "records": [
+        {
+          "metric": 0,
+          "shape": "rank_one",
+          "a": "2",
+          "b": "1/2",
+          "lambda_H": "1/2",
+          "second_difference": "0"
+        },
+        {
+          "metric": 0,
+          "shape": "rank_one",
+          "a": "3/2",
+          "b": "4/7",
+          "lambda_H": "2/5",
+          "second_difference": "-16/147"
+        },
+        {
+          "metric": 0,
+          "shape": "rank_one",
+          "a": "5/3",
+          "b": "7/11",
+          "lambda_H": "3/5",
+          "second_difference": "6/245"
+        },
+        {
+          "metric": 0,
+          "shape": "traceless",
+          "a": "2",
+          "b": "1/2",
+          "lambda_H": "1/2",
+          "second_difference": "0"
+        },
+        {
+          "metric": 0,
+          "shape": "traceless",
+          "a": "3/2",
+          "b": "4/7",
+          "lambda_H": "2/5",
+          "second_difference": "32/1029"
+        },
+        {
+          "metric": 0,
+          "shape": "traceless",
+          "a": "5/3",
+          "b": "7/11",
+          "lambda_H": "3/5",
+          "second_difference": "-32/2695"
+        },
+        {
+          "metric": 1,
+          "shape": "rank_one",
+          "a": "2",
+          "b": "1/2",
+          "lambda_H": "1/2",
+          "second_difference": "0"
+        },
+        {
+          "metric": 1,
+          "shape": "rank_one",
+          "a": "3/2",
+          "b": "4/7",
+          "lambda_H": "2/5",
+          "second_difference": "-16/147"
+        },
+        {
+          "metric": 1,
+          "shape": "rank_one",
+          "a": "5/3",
+          "b": "7/11",
+          "lambda_H": "3/5",
+          "second_difference": "6/245"
+        },
+        {
+          "metric": 1,
+          "shape": "traceless",
+          "a": "2",
+          "b": "1/2",
+          "lambda_H": "1/2",
+          "second_difference": "0"
+        },
+        {
+          "metric": 1,
+          "shape": "traceless",
+          "a": "3/2",
+          "b": "4/7",
+          "lambda_H": "2/5",
+          "second_difference": "8/343"
+        },
+        {
+          "metric": 1,
+          "shape": "traceless",
+          "a": "5/3",
+          "b": "7/11",
+          "lambda_H": "3/5",
+          "second_difference": "-24/2695"
+        }
+      ],
+      "source_constant_and_ambient_shifts_cancel": true
+    },
+    "2_two_shapes_degeneracy_and_finite_error": {
+      "pass": true,
+      "shape_equation_determinant": "-2",
+      "exact_selection": "lambda_H=1/2 and a*b=1; a and constant term remain free",
+      "lambda_H_one_third": "trace velocity image zero; nonzero-trace slicing family unavailable",
+      "per_slice_residual_example": "1/1000",
+      "loose_lambda_radius": "2/625",
+      "exact_lambda_lower": "126/253",
+      "exact_lambda_upper": "124/247",
+      "excluded_lambda_example": "51/100",
+      "central_difference_example": "1/53",
+      "allowed_total_residual": "1/250",
+      "physical_instrument_tolerance_certified": false
+    },
+    "3_postprocessing_does_not_imply_canonical_admission": {
+      "pass": true,
+      "input_dimension": 8,
+      "output_dimension": 32,
+      "isometry_exact": true,
+      "unknown_data_and_reference_retained_on_full_output": true,
+      "original_record_and_auxiliary_retained": true,
+      "lambda_not_selected_by_label_isometry": "2/5",
+      "candidate_geometric_constraint_second_difference": "-1/2",
+      "full_axiom_countermodel_claimed": false
+    }
+  },
+  "scope_limits": [
+    "CT1188 is an unadopted candidate connecting record slices to the same canonical geometric dynamics.",
+    "Smooth effective Lorentz history and a declared two-derivative quadratic metric Hamiltonian are inputs.",
+    "Complete physical source must be the same normal projection; nonminimal mixed-momentum couplings need a different calculation.",
+    "Finite jet/source dictionary errors must enter the residual budget; no point measurement or actual quantum instrument is certified.",
+    "Gauss-Codazzi and ADM reconstruction are reused mature tools; no new generic HDA theorem.",
+    "No full joint quantum geometry, nonlinear GR construction or dark-sector prediction delivered."
+  ],
+  "new_adopted_axioms": 0,
+  "new_empirical_calibration": 0,
+  "gr_hard_deliverables_completed": 0
+}

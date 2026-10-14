@@ -1,0 +1,260 @@
+{
+  "schema": "round1164_common_shear_frozen_process_v1",
+  "status": "PASS",
+  "check_groups": 4,
+  "code_sha256": "dd11c2df91bff7ceb3049673409b4d4de560ee6eb92f04d26367cb1a111742dd",
+  "source_sha256": "52edf7a1dfc530996daa88ee3715efa936f7c5845eefe067124a544688621119",
+  "original_process_replay": "1160 saved calculation matched by 1161 reuse",
+  "full_process": {
+    "gram_error": 4.071937794123934e-15,
+    "source_identity_error": 4.197898819563626e-15,
+    "mother_commutator_error": 7.665163403307869e-15,
+    "samples": [
+      {
+        "q": -0.01,
+        "program": 0,
+        "delta": -0.064001481392282,
+        "input1_mean_work": -0.12800296278456347,
+        "energy_intertwining_norm": 0.12800296278456375
+      },
+      {
+        "q": -0.01,
+        "program": 1,
+        "delta": -0.064001481392282,
+        "input1_mean_work": -0.06400148139228173,
+        "energy_intertwining_norm": 0.09051176299693449
+      },
+      {
+        "q": -0.01,
+        "program": 2,
+        "delta": -0.064001481392282,
+        "input1_mean_work": -0.12800296278456347,
+        "energy_intertwining_norm": 0.12800296278456375
+      },
+      {
+        "q": -0.003,
+        "program": 0,
+        "delta": -0.019200039997453643,
+        "input1_mean_work": -0.03840007999490713,
+        "energy_intertwining_norm": 0.03840007999490721
+      },
+      {
+        "q": -0.003,
+        "program": 1,
+        "delta": -0.019200039997453643,
+        "input1_mean_work": -0.019200039997453566,
+        "energy_intertwining_norm": 0.027152956962504825
+      },
+      {
+        "q": -0.003,
+        "program": 2,
+        "delta": -0.019200039997453643,
+        "input1_mean_work": -0.03840007999490713,
+        "energy_intertwining_norm": 0.03840007999490721
+      },
+      {
+        "q": 0.003,
+        "program": 0,
+        "delta": 0.019200039997453643,
+        "input1_mean_work": 0.03840007999490713,
+        "energy_intertwining_norm": 0.03840007999490721
+      },
+      {
+        "q": 0.003,
+        "program": 1,
+        "delta": 0.019200039997453643,
+        "input1_mean_work": 0.019200039997453566,
+        "energy_intertwining_norm": 0.027152956962504825
+      },
+      {
+        "q": 0.003,
+        "program": 2,
+        "delta": 0.019200039997453643,
+        "input1_mean_work": 0.03840007999490713,
+        "energy_intertwining_norm": 0.03840007999490721
+      },
+      {
+        "q": 0.01,
+        "program": 0,
+        "delta": 0.064001481392282,
+        "input1_mean_work": 0.12800296278456347,
+        "energy_intertwining_norm": 0.12800296278456375
+      },
+      {
+        "q": 0.01,
+        "program": 1,
+        "delta": 0.064001481392282,
+        "input1_mean_work": 0.06400148139228173,
+        "energy_intertwining_norm": 0.09051176299693449
+      },
+      {
+        "q": 0.01,
+        "program": 2,
+        "delta": 0.064001481392282,
+        "input1_mean_work": 0.12800296278456347,
+        "energy_intertwining_norm": 0.12800296278456375
+      }
+    ]
+  },
+  "exact_spectral_certificate": {
+    "open_punctured_interval": "0<abs(q)<=1/100",
+    "maximum_two_delta_bound": "32/147",
+    "original_D_spectrum_error": 3.5168276637357584e-13,
+    "nonzero_q_cases": [
+      {
+        "q": -0.01,
+        "matches": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            2,
+            2,
+            0
+          ],
+          [
+            3,
+            3,
+            0
+          ]
+        ]
+      },
+      {
+        "q": -0.003,
+        "matches": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            2,
+            2,
+            0
+          ],
+          [
+            3,
+            3,
+            0
+          ]
+        ]
+      },
+      {
+        "q": 0.003,
+        "matches": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            2,
+            2,
+            0
+          ],
+          [
+            3,
+            3,
+            0
+          ]
+        ]
+      },
+      {
+        "q": 0.01,
+        "matches": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            2,
+            2,
+            0
+          ],
+          [
+            3,
+            3,
+            0
+          ]
+        ]
+      }
+    ],
+    "zero_q_matches": 16
+  },
+  "task_separation": {
+    "cases": [
+      {
+        "program": 0,
+        "yy_probability": 0.999999999999996,
+        "pure_output_distance_lower_bound": 1.4142135176696107,
+        "comparison_vector_distance": 1.4142135623730936,
+        "yy_effect_probability_gap": 0.999999999999996
+      },
+      {
+        "program": 1,
+        "yy_probability": 0.499999999999998,
+        "pure_output_distance_lower_bound": 0.7653668647301778,
+        "comparison_vector_distance": 0.7653668647301788,
+        "yy_effect_probability_gap": 0.499999999999998
+      },
+      {
+        "program": 2,
+        "yy_probability": 0.999999999999996,
+        "pure_output_distance_lower_bound": 1.4142135176696107,
+        "comparison_vector_distance": 1.4142135623730936,
+        "yy_effect_probability_gap": 0.999999999999996
+      }
+    ],
+    "vanishing_energy_residual": [
+      {
+        "q": 0.01,
+        "energy_residual_norm": 0.128002962784564,
+        "exact_frozen_menu_task_trace_distance": 1.0
+      },
+      {
+        "q": 0.0001,
+        "energy_residual_norm": 0.0012800000029627734,
+        "exact_frozen_menu_task_trace_distance": 1.0
+      },
+      {
+        "q": 1e-06,
+        "energy_residual_norm": 1.280000000000296e-05,
+        "exact_frozen_menu_task_trace_distance": 1.0
+      }
+    ],
+    "source_slope": 12.8,
+    "numerical_slope_error": 2.9611868512802175e-12
+  },
+  "passive_transport": {
+    "energy_error": 0.0,
+    "phase_error": 8.881784197001252e-16,
+    "endpoint_error": 2.220446049250313e-16,
+    "constant_metric_is_flat": true
+  },
+  "new_adopted_axioms": 0,
+  "new_empirical_calibration": 0,
+  "scope": "Frozen exact-energy menu only; no dynamic metric or full-axiom counterexample."
+}
