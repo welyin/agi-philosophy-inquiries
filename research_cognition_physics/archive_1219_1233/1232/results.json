@@ -1,0 +1,457 @@
+{
+  "round": 1232,
+  "status": "PASS",
+  "all_checks_passed": true,
+  "check_groups": 5,
+  "groups": {
+    "tent_and_series_guards": {
+      "passed": true,
+      "method": "exact rational inequalities; Fourier identity proved in proof.md",
+      "tent_half_duration": {
+        "exact": "128",
+        "display": 128.0
+      },
+      "tent_full_duration": {
+        "exact": "256",
+        "display": 256.0
+      },
+      "tent_L1": {
+        "exact": "128",
+        "display": 128.0
+      },
+      "tent_L2_squared": {
+        "exact": "256/3",
+        "display": 85.33333333333333
+      },
+      "sinc_core_factor": {
+        "exact": "279841/331776",
+        "display": 0.8434636622299383
+      },
+      "exp_0p7_positive_partial_sum": {
+        "exact": "482921/240000",
+        "display": 2.0121708333333332
+      },
+      "uniform_dyson_x4_coefficient": {
+        "exact": "1240/3249",
+        "display": 0.3816558941212681
+      },
+      "coarse_x4_coefficient": {
+        "exact": "1/2",
+        "display": 0.5
+      }
+    },
+    "finite_measure_band_regression": {
+      "passed": true,
+      "fixture_is_Dirac_spectrum": false,
+      "fixture_type": "four-atom finite positive KMS measure at beta=log(2)",
+      "atoms": [
+        {
+          "frequency": {
+            "exact": "-2",
+            "display": -2.0
+          },
+          "mass": {
+            "exact": "1/16",
+            "display": 0.0625
+          }
+        },
+        {
+          "frequency": {
+            "exact": "-1",
+            "display": -1.0
+          },
+          "mass": {
+            "exact": "1/16",
+            "display": 0.0625
+          }
+        },
+        {
+          "frequency": {
+            "exact": "1",
+            "display": 1.0
+          },
+          "mass": {
+            "exact": "1/32",
+            "display": 0.03125
+          }
+        },
+        {
+          "frequency": {
+            "exact": "2",
+            "display": 2.0
+          },
+          "mass": {
+            "exact": "1/64",
+            "display": 0.015625
+          }
+        }
+      ],
+      "total_mass": {
+        "exact": "11/64",
+        "display": 0.171875
+      },
+      "bands": [
+        {
+          "energy": {
+            "exact": "1",
+            "display": 1.0
+          },
+          "target_ratio": {
+            "exact": "2",
+            "display": 2.0
+          },
+          "core_mass": {
+            "exact": "1/32",
+            "display": 0.03125
+          },
+          "forward_response_interval": [
+            {
+              "exact": "512",
+              "display": 512.0
+            },
+            {
+              "exact": "10871636389/21233664",
+              "display": 512.0000198270068
+            }
+          ],
+          "reverse_response_interval": [
+            {
+              "exact": "1024",
+              "display": 1024.0
+            },
+            {
+              "exact": "43486546553/42467328",
+              "display": 1024.0000631308849
+            }
+          ],
+          "ratio_interval": [
+            {
+              "exact": "21743271936/10871636389",
+              "display": 1.9999999225507579
+            },
+            {
+              "exact": "43486546553/21743271936",
+              "display": 2.0000001233025095
+            }
+          ],
+          "log_error_rational_upper": {
+            "exact": "2681/43486543872",
+            "display": 6.165125487763205e-08
+          },
+          "response_display_only": {
+            "forward": 512.000011975565,
+            "reverse": 1024.000044248636,
+            "log_ratio": 0.6931472003817277
+          }
+        },
+        {
+          "energy": {
+            "exact": "2",
+            "display": 2.0
+          },
+          "target_ratio": {
+            "exact": "4",
+            "display": 4.0
+          },
+          "core_mass": {
+            "exact": "1/64",
+            "display": 0.015625
+          },
+          "forward_response_interval": [
+            {
+              "exact": "256",
+              "display": 256.0
+            },
+            {
+              "exact": "86973098449/339738624",
+              "display": 256.00003150951716
+            }
+          ],
+          "reverse_response_interval": [
+            {
+              "exact": "1024",
+              "display": 1024.0
+            },
+            {
+              "exact": "1391569487441/1358954496",
+              "display": 1024.0000614715211
+            }
+          ],
+          "ratio_interval": [
+            {
+              "exact": "347892350976/86973098449",
+              "display": 3.9999995076638553
+            },
+            {
+              "exact": "1391569487441/347892350976",
+              "display": 4.000000240123129
+            }
+          ],
+          "log_error_rational_upper": {
+            "exact": "10705/86973087744",
+            "display": 1.2308405137356418e-07
+          },
+          "response_display_only": {
+            "forward": 256.0000221146768,
+            "reverse": 1024.0000437955023,
+            "log_ratio": 1.3862943175034823
+          }
+        }
+      ],
+      "exact_interval_method": "central atom exact; each other sin^4 bounded by one"
+    },
+    "joint_finite_certificate": {
+      "passed": true,
+      "conditional_input": "each actual positive-frequency core mass is at least 1/64",
+      "actual_Dirac_core_mass_computed": false,
+      "gaps": [
+        1,
+        2
+      ],
+      "beta": "log(2)",
+      "a": "2*pi/log(2)",
+      "T_half": {
+        "exact": "128",
+        "display": 128.0
+      },
+      "r": {
+        "exact": "1/4",
+        "display": 0.25
+      },
+      "m_star": {
+        "exact": "1/64",
+        "display": 0.015625
+      },
+      "coupling": {
+        "exact": "1/65536",
+        "display": 1.52587890625e-05
+      },
+      "operator_norm_guard": 1,
+      "rho": {
+        "exact": "1/100",
+        "display": 0.01
+      },
+      "op_error": {
+        "exact": "1/10000000000",
+        "display": 1e-10
+      },
+      "core_response_lower_A": {
+        "exact": "279841/1296",
+        "display": 215.9266975308642
+      },
+      "both_tail_integrals_upper": {
+        "exact": "1/4",
+        "display": 0.25
+      },
+      "tail_to_core_u": {
+        "exact": "324/279841",
+        "display": 0.0011578003223258922
+      },
+      "x": {
+        "exact": "1/512",
+        "display": 0.001953125
+      },
+      "R3_rational_upper": {
+        "exact": "5/4026531072",
+        "display": 1.2417636696682618e-09
+      },
+      "dyson_probability_error_upper": {
+        "exact": "39321605/8106476236890734592",
+        "display": 4.850640876618659e-12
+      },
+      "leading_probability_lower": {
+        "exact": "279841/5566277615616",
+        "display": 5.0274351968165534e-08
+      },
+      "actual_probability_lower": {
+        "exact": "74962551458548362802265881/1494185699983700199997440000000000",
+        "display": 5.0169501327288914e-08
+      },
+      "joint_probability_error_upper": {
+        "exact": "8300480748916733/79164807000886080000000000",
+        "display": 1.0485064087661866e-10
+      },
+      "allowed_relative_error": {
+        "exact": "279841/556627761561600",
+        "display": 5.027435196816553e-10
+      },
+      "joint_budget_strict_margin": {
+        "exact": "2378103398543333232891649/5976742799934800799989760000000000",
+        "display": 3.9789287880503665e-10
+      },
+      "spectral_log_error_upper": {
+        "exact": "1971847/11193640",
+        "display": 0.1761578003223259
+      },
+      "probability_log_error_upper": {
+        "exact": "2/99",
+        "display": 0.020202020202020204
+      },
+      "total_log_error_upper": {
+        "exact": "217600133/1108170360",
+        "display": 0.19635982052434608
+      },
+      "strict_margin_to_one_fifth": {
+        "exact": "4033939/1108170360",
+        "display": 0.003640179475653906
+      }
+    },
+    "full_finite_coupling_diagnostic": {
+      "passed": true,
+      "certification": "analytic two-block formula; floats are diagnostics",
+      "system": "two qubits, H0=diag(0,1)+diag(0,1), B=sigma_x/2",
+      "field_initial_probabilities": [
+        "2/3",
+        "1/3"
+      ],
+      "switch": "constant on one interval; not the Dirac/tent example",
+      "cases": [
+        {
+          "lambda": 0.01,
+          "duration": 0.25,
+          "exact_closed_form_up": 1.5409778460935637e-06,
+          "exact_closed_form_down": 1.5517385161458248e-06,
+          "leading_up": 1.5409786509135608e-06,
+          "leading_down": 1.5517393254567804e-06,
+          "max_probability_difference": 8.093109556117222e-13,
+          "dyson_guard_display": 1.3020844184033288e-11
+        },
+        {
+          "lambda": 0.01,
+          "duration": 1.0,
+          "exact_closed_form_up": 2.013438193375834e-05,
+          "exact_closed_form_down": 2.2567086800559727e-05,
+          "leading_up": 2.0134556971226183e-05,
+          "leading_down": 2.2567278485613096e-05,
+          "max_probability_difference": 1.9168505336882111e-10,
+          "dyson_guard_display": 3.3333777781388924e-09
+        },
+        {
+          "lambda": 0.05,
+          "duration": 0.25,
+          "exact_closed_form_up": 3.852396326286148e-05,
+          "exact_closed_form_down": 3.8792977319604243e-05,
+          "leading_up": 3.852446627283903e-05,
+          "leading_down": 3.8793483136419515e-05,
+          "max_probability_difference": 5.058168152719238e-10,
+          "dyson_guard_display": 8.138190377586445e-09
+        },
+        {
+          "lambda": 0.05,
+          "duration": 1.0,
+          "exact_closed_form_up": 0.0005032545349172021,
+          "exact_closed_form_down": 0.0005640621687170394,
+          "leading_up": 0.0005033639242806547,
+          "leading_down": 0.0005641819621403274,
+          "max_probability_difference": 1.1979342328803828e-07,
+          "dyson_guard_display": 2.084027918861224e-06
+        },
+        {
+          "lambda": 0.1,
+          "duration": 0.25,
+          "exact_closed_form_up": 0.00015408981705774115,
+          "exact_closed_form_down": 0.00015516583960322402,
+          "leading_up": 0.00015409786509135612,
+          "leading_down": 0.00015517393254567806,
+          "max_probability_difference": 8.092942454043534e-09,
+          "dyson_guard_display": 1.302191845788135e-07
+        },
+        {
+          "lambda": 0.1,
+          "duration": 1.0,
+          "exact_closed_form_up": 0.0020117059199229697,
+          "exact_closed_form_down": 0.0022548116404550434,
+          "leading_up": 0.0020134556971226187,
+          "leading_down": 0.00225672784856131,
+          "max_probability_difference": 1.9162081062664045e-06,
+          "dyson_guard_display": 3.337781391390488e-05
+        }
+      ]
+    },
+    "deletion_tests": {
+      "passed": true,
+      "no_positive_core": {
+        "measure": "delta_0",
+        "KMS_for_any_beta": true,
+        "Fminus_over_Fplus_for_real_tent_when_nonzero": 1,
+        "positive_core_mass_at_E1_rquarter": 0
+      },
+      "no_relative_probability_control": {
+        "leading_plus": {
+          "exact": "1/100000000",
+          "display": 1e-08
+        },
+        "leading_minus": {
+          "exact": "1/50000000",
+          "display": 2e-08
+        },
+        "allowed_absolute_error": {
+          "exact": "1/50000000",
+          "display": 2e-08
+        },
+        "permitted_observed_plus": {
+          "exact": "1/100000000",
+          "display": 1e-08
+        },
+        "permitted_observed_minus": {
+          "exact": "1/100000000",
+          "display": 1e-08
+        },
+        "observed_ratio": 1
+      },
+      "wrong_clock_scale": {
+        "target_beta": "log(2)",
+        "transport_rate_multiplier": 2,
+        "actual_spectral_beta": "log(2)/2",
+        "gap": 2,
+        "target_ratio": 4,
+        "actual_ideal_ratio": 2,
+        "status": "analytical time-reparametrization deletion, not an actual device"
+      },
+      "diagonal_then_flip": {
+        "unitary": "exp(-i theta X) exp(-i theta Z), input |0>",
+        "theta": {
+          "exact": "1/10",
+          "display": 0.1
+        },
+        "flip_amplitude": "-sin(theta)^2-i sin(theta)cos(theta)",
+        "first_order_flip_amplitude": "-i theta",
+        "amplitude_error_rigorous_lower": {
+          "exact": "358801/36000000",
+          "display": 0.009966694444444445
+        },
+        "inapplicable_odd_only_remainder_upper": {
+          "exact": "2/1497",
+          "display": 0.0013360053440213762
+        },
+        "strict_violation_margin": {
+          "exact": "155041699/17964000000",
+          "display": 0.008630689100423068
+        }
+      }
+    }
+  },
+  "scope": {
+    "full_probability_conditional_theorem": true,
+    "Dirac_spectral_nonempty_existence": "analytic proof, not computed by this code",
+    "fixed_table_is_conditional": true,
+    "fixed_table_Dirac_core_mass_certified": false,
+    "atomic_fixture_is_Dirac_data": false,
+    "actual_motion_controller_constructed": false,
+    "actual_operation_error_achieved": false,
+    "global_vacuum_called_finite_temperature_bath": false,
+    "TG2_or_stage_completion_signed": false
+  },
+  "code_sha256": "c1325ec22cea416abfc82cfe6c17fd27b4001428dff3d218e8893bb46dc04f9c",
+  "source_sha256": {
+    "archive_1219_/1232/proof.md": "268d5d445d31ce151cb7a03570d097c252b717888db2b560ce70af4c5b25a071",
+    "archive_1219_/_admission/stage_scope_audit_after1230.md": "d94ea8bfc91ab23b2bc0a11b8b273bc39fdc8a59638512d259760363bee9a361",
+    "archive_1219_/_admission/after1230_finite_motion_thermal_admission.md": "a2f141fbd3e53b75b45b32dfaa448d7d2bb99b4b749178b4f07920110bbb04db",
+    "archive_1219_/1222/proof.md": "f2b63a1e0e9668ffb3975f32cf032edf64d50f9583e9e537f0902384ac1ece17",
+    "archive_1219_/1228/proof.md": "3bfff8396ca39798180f14ed6f0f9862d6d24898ffe108dab01b1e9f18ead074",
+    "archive_1219_/1229/proof.md": "62acaf16867864cf0c51aa1a4fd1e12301f33872aec6c9e7e01ac7d1a51b07f0",
+    "archive_1106_1119/1119/proof.md": "b4a97154a8302a49c4f4f6788f615909b4849820bfa42e3bf11574c16808008d",
+    "archive_1120_1158/1126/proof.md": "06644f8cc78f2075d62b67dee961a4064208c5226047405652201c337b5f3a76",
+    "archive_301_341/research_note_312.md": "2d733de9f9277f5029f6ab56f8325444a268b1e8952f27d5fd246093a8941c9d"
+  }
+}

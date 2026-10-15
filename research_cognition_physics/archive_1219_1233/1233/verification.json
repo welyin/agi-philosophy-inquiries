@@ -1,0 +1,62 @@
+{
+  "schema": "round1233_root_verification_v1",
+  "date": "2026-10-15",
+  "status": "PASS",
+  "scientific_files_sha256": {
+    "proof.md": "d42417a88bd21abffe4ac099a9e6fc3040823a4f2d224620f0fe180fb1b7e00d",
+    "check.py": "da938b038981e1e7fc04811700da61edead10ed0d32dec16d09a9480a2923ef4",
+    "results.json": "2b6817e481a89971ae02ce12991873a39695dd94232ea8ee23391740c676c012",
+    "independent_check.py": "a54116fe607e968246f7c6c92b6264cc45dc2f0a58a9dc408a4a6e31577ba542",
+    "independent_results.json": "429b40513c25945e0430e2779dac3246b9e669d3bba7feb4b186f077efa8d82d",
+    "independent_review.md": "7398887ff28e778115dc35d14f8ef75812a283ac7a3b60bd773612a80183c8fb",
+    "NEXT.md": "2b5958528aa3344191d72163b2b469fcad39f233aeac4ffc134c341f37e81bbb",
+    "../research_note_1233.md": "9c0a261dfc49cf9bcec9916c8465bdb766e9f7dd365d92e0bfcf9d1ec440a250",
+    "../_admission/stage_scope_audit_after1230.md": "d94ea8bfc91ab23b2bc0a11b8b273bc39fdc8a59638512d259760363bee9a361"
+  },
+  "root_executed_both_codes": true,
+  "checks": [
+    {
+      "entry": "1233/check.py",
+      "exit_code": 0,
+      "result": {
+        "round": 1233,
+        "status": "PASS",
+        "check_groups": 4,
+        "maximal_operator_residual": 3.552713678800501e-15,
+        "maximal_integrated_residual": 3.0322966360074588e-15,
+        "deleted_source_residual": 0.030756995150920577,
+        "omitted_interaction_energy_residual": 0.10729542258847656,
+        "read_only": true
+      }
+    },
+    {
+      "entry": "1233/independent_check.py",
+      "exit_code": 0,
+      "result": {
+        "round": 1233,
+        "status": "PASS",
+        "all_checks_passed": true,
+        "results_match": true,
+        "check_groups": 6,
+        "read_only": true
+      }
+    }
+  ],
+  "markdown_local_links_checked": 41,
+  "source_bindings_verified": 13,
+  "display_math_delimiters_paired": true,
+  "control_character_scan_passed": true,
+  "independent_review_bindings_verified": true,
+  "counted_scientific_groups": 4,
+  "independent_groups": 6,
+  "independent_groups_added_to_scientific_total": false,
+  "analytic_review_includes": [
+    "finite regulated quadratic CAR kernels are trace class, not merely HS",
+    "uniform H1 compact-time convergence of actual-history Duhamel expressions",
+    "same real source and boundary flux, no free-future history substituted",
+    "form Ehrenfest cancellation of source by clock plus interaction storage",
+    "fixed independent spatial platforms, geometry uncertainties and full finite propagation halo",
+    "finite fixtures diagnose algebra and do not simulate original continuum clocks"
+  ],
+  "stage_complete": false
+}

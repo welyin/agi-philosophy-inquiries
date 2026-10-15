@@ -1,0 +1,669 @@
+{
+  "schema": "round1219_thermal_recoil_candidate_v1",
+  "status": "PASS",
+  "check_groups": 5,
+  "adopted_axioms": 0,
+  "empirical_calibrations": 0,
+  "source_sha256": {
+    "archive_1106_1119/1111/check.py": "704ae4ca016c77e0df83fc9c2d39e90d79e9fbf3d6469c8c5b9bf1dad8a5bd44",
+    "archive_1106_1119/1118/proof.md": "cbf928ac8a1dc8997869eddc50dae4774c58e9baecdfad904ad813a03ae3cd60",
+    "archive_1106_1119/1119/proof.md": "b4a97154a8302a49c4f4f6788f615909b4849820bfa42e3bf11574c16808008d",
+    "archive_1106_1119/_shared/1116_1119/adoption_and_dependencies.md": "1c1395c16cf2392be0c6e7275d660f454113290bd0e23d6892e08b3aa41b4a0e",
+    "archive_1159_1160/1159/proof.md": "20abbc0de0feeafc4ff51163e646beeaa91ead8596e6264d4a274177d04aaa19",
+    "archive_1159_1160/1160/check.py": "8af83d78311b77c804693e055f2ece2c9f195e1d217b5b67e41fa6b3b6753170",
+    "archive_1201_1218/1205/proof.md": "192e0a6256b618fccfbc1c1754056c1017481415bbd9eafce532f34f9f681872"
+  },
+  "code_sha256": "59211c21a9763f88879914046d2f8c7d4c10fed4ba660cbbead6513eae7fbdb5",
+  "exact_witnesses": {
+    "qA": "1/4",
+    "qB": "2/5",
+    "delta_hA": "3/20",
+    "delta_EA": "1/4",
+    "delta_PxA": "-133/15",
+    "delta_boost_EA": "557/80",
+    "recorded_delta_hA": "3/40",
+    "recorded_delta_EA": "1/8",
+    "joint_J1_reflected_full": "2/5",
+    "joint_J1_reflected_recorded": "1/5",
+    "joint_J1_forward_recorded": "1/8",
+    "J1_recorded": "13/40",
+    "endpoint_gap": "16/5",
+    "heatonly_momentum_defect": "-8/3",
+    "added_all_resource_energy": "92/3"
+  },
+  "group1_same_thermal_preparation": {
+    "A": {
+      "seed_dimension": 4,
+      "selected_labels": 1,
+      "target_excited": 0.25,
+      "whole_source_energy": 13.333333333333334,
+      "whole_source_Px": 10.666666666666666,
+      "seed_purity_resource": "known pure uniform superposition, retained",
+      "target_stock_initial_occupations": [
+        0,
+        1
+      ],
+      "mother_unitarity": 0.0,
+      "mother_fourP": 0.0,
+      "Gibbs_marginal_residual": 0.0
+    },
+    "B": {
+      "seed_dimension": 5,
+      "selected_labels": 2,
+      "target_excited": 0.4,
+      "whole_source_energy": 13.333333333333332,
+      "whole_source_Px": -10.666666666666664,
+      "seed_purity_resource": "known pure uniform superposition, retained",
+      "target_stock_initial_occupations": [
+        0,
+        1
+      ],
+      "mother_unitarity": 0.0,
+      "mother_fourP": 0.0,
+      "Gibbs_marginal_residual": 5.551115123125783e-17
+    },
+    "reverse_A": {
+      "seed_dimension": 5,
+      "selected_labels": 2,
+      "target_excited": 0.4,
+      "whole_source_energy": 13.333333333333332,
+      "whole_source_Px": 10.666666666666664,
+      "seed_purity_resource": "known pure uniform superposition, retained",
+      "target_stock_initial_occupations": [
+        0,
+        1
+      ],
+      "mother_unitarity": 0.0,
+      "mother_fourP": 0.0,
+      "Gibbs_marginal_residual": 5.551115123125783e-17
+    },
+    "reverse_B": {
+      "seed_dimension": 4,
+      "selected_labels": 1,
+      "target_excited": 0.25,
+      "whole_source_energy": 13.333333333333334,
+      "whole_source_Px": -10.666666666666666,
+      "seed_purity_resource": "known pure uniform superposition, retained",
+      "target_stock_initial_occupations": [
+        0,
+        1
+      ],
+      "mother_unitarity": 0.0,
+      "mother_fourP": 0.0,
+      "Gibbs_marginal_residual": 0.0
+    },
+    "betaA": 1.0986122886681098,
+    "betaB": 0.4054651081081644,
+    "initial_global_source_energy": 26.666666666666668,
+    "positive_stationary_record_program_mass": 4,
+    "old_complete_D_energy_upper": 26.717797887081346,
+    "full_initial_support_energy_upper": 57.38446455374802,
+    "full_mother_dimension": 35389440,
+    "actual_retained_source_labels": 20,
+    "no_postselection": true,
+    "local_Gibbs_only": true,
+    "initial_source_correlations_retained": true
+  },
+  "group2_complete_mechanical_gates": {
+    "unitarity": 2.5121479338940403e-15,
+    "fourP": 0.0,
+    "rest_internal_sum": 0.0,
+    "records_preserve_current_A_fourP": 0.0,
+    "maximum_active_core_dimension": 128
+  },
+  "group3_joint_predictions_and_future": {
+    "rows": [
+      {
+        "preparation": "cold_A_hot_B",
+        "unknown_control_basis": 0,
+        "program": 0,
+        "exchange_weight": 0.5,
+        "joint_J_direction": [
+          [
+            0.375,
+            0.29999999999999993
+          ],
+          [
+            0.12499999999999997,
+            0.2
+          ]
+        ],
+        "J_excited": 0.32499999999999996,
+        "A_reflected": 0.49999999999999994,
+        "A_delta_rest_internal": 0.07499999999999996,
+        "A_delta_fourP": [
+          0.12499999999999933,
+          -4.433333333333333,
+          0.0,
+          0.0
+        ],
+        "B_delta_fourP": [
+          -0.1250000000000009,
+          4.433333333333334,
+          0.0,
+          0.0
+        ],
+        "A_boost_delta_fourP": [
+          3.4812499999999984,
+          -5.635416666666665,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "preparation": "cold_A_hot_B",
+        "unknown_control_basis": 0,
+        "program": 1,
+        "exchange_weight": 0.5,
+        "joint_J_direction": [
+          [
+            0.375,
+            0.29999999999999993
+          ],
+          [
+            0.12499999999999997,
+            0.2
+          ]
+        ],
+        "J_excited": 0.32499999999999996,
+        "A_reflected": 0.49999999999999994,
+        "A_delta_rest_internal": 0.07499999999999996,
+        "A_delta_fourP": [
+          0.12499999999999933,
+          -4.433333333333333,
+          0.0,
+          0.0
+        ],
+        "B_delta_fourP": [
+          -0.1250000000000009,
+          4.433333333333334,
+          0.0,
+          0.0
+        ],
+        "A_boost_delta_fourP": [
+          3.4812499999999984,
+          -5.635416666666665,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "preparation": "cold_A_hot_B",
+        "unknown_control_basis": 0,
+        "program": 2,
+        "exchange_weight": 0.5,
+        "joint_J_direction": [
+          [
+            0.375,
+            0.29999999999999993
+          ],
+          [
+            0.12499999999999997,
+            0.2
+          ]
+        ],
+        "J_excited": 0.32499999999999996,
+        "A_reflected": 0.49999999999999994,
+        "A_delta_rest_internal": 0.07499999999999996,
+        "A_delta_fourP": [
+          0.12499999999999933,
+          -4.433333333333333,
+          0.0,
+          0.0
+        ],
+        "B_delta_fourP": [
+          -0.1250000000000009,
+          4.433333333333334,
+          0.0,
+          0.0
+        ],
+        "A_boost_delta_fourP": [
+          3.4812499999999984,
+          -5.635416666666665,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "preparation": "cold_A_hot_B",
+        "unknown_control_basis": 1,
+        "program": 0,
+        "exchange_weight": 1.0,
+        "joint_J_direction": [
+          [
+            0.0,
+            0.5999999999999998
+          ],
+          [
+            0.0,
+            0.3999999999999999
+          ]
+        ],
+        "J_excited": 0.3999999999999999,
+        "A_reflected": 0.9999999999999997,
+        "A_delta_rest_internal": 0.1499999999999999,
+        "A_delta_fourP": [
+          0.24999999999999756,
+          -8.866666666666665,
+          0.0,
+          0.0
+        ],
+        "B_delta_fourP": [
+          -0.25000000000000266,
+          8.866666666666665,
+          0.0,
+          0.0
+        ],
+        "A_boost_delta_fourP": [
+          6.962499999999996,
+          -11.27083333333333,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "preparation": "cold_A_hot_B",
+        "unknown_control_basis": 1,
+        "program": 1,
+        "exchange_weight": 0.5,
+        "joint_J_direction": [
+          [
+            0.3749999999999999,
+            0.2999999999999999
+          ],
+          [
+            0.12499999999999994,
+            0.19999999999999996
+          ]
+        ],
+        "J_excited": 0.3249999999999999,
+        "A_reflected": 0.49999999999999983,
+        "A_delta_rest_internal": 0.0749999999999999,
+        "A_delta_fourP": [
+          0.12499999999999756,
+          -4.433333333333334,
+          0.0,
+          0.0
+        ],
+        "B_delta_fourP": [
+          -0.12500000000000178,
+          4.433333333333334,
+          0.0,
+          0.0
+        ],
+        "A_boost_delta_fourP": [
+          3.481249999999997,
+          -5.635416666666665,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "preparation": "cold_A_hot_B",
+        "unknown_control_basis": 1,
+        "program": 2,
+        "exchange_weight": 1.0,
+        "joint_J_direction": [
+          [
+            0.0,
+            0.5999999999999998
+          ],
+          [
+            0.0,
+            0.3999999999999999
+          ]
+        ],
+        "J_excited": 0.3999999999999999,
+        "A_reflected": 0.9999999999999997,
+        "A_delta_rest_internal": 0.1499999999999999,
+        "A_delta_fourP": [
+          0.24999999999999756,
+          -8.866666666666665,
+          0.0,
+          0.0
+        ],
+        "B_delta_fourP": [
+          -0.25000000000000266,
+          8.866666666666665,
+          0.0,
+          0.0
+        ],
+        "A_boost_delta_fourP": [
+          6.962499999999996,
+          -11.27083333333333,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "preparation": "hot_A_cold_B",
+        "unknown_control_basis": 0,
+        "program": 0,
+        "exchange_weight": 0.5,
+        "joint_J_direction": [
+          [
+            0.29999999999999993,
+            0.375
+          ],
+          [
+            0.2,
+            0.12499999999999997
+          ]
+        ],
+        "J_excited": 0.32499999999999996,
+        "A_reflected": 0.5,
+        "A_delta_rest_internal": -0.07500000000000007,
+        "A_delta_fourP": [
+          -0.125,
+          -4.433333333333334,
+          0.0,
+          0.0
+        ],
+        "B_delta_fourP": [
+          0.12500000000000022,
+          4.433333333333334,
+          0.0,
+          0.0
+        ],
+        "A_boost_delta_fourP": [
+          3.16875,
+          -5.447916666666667,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "preparation": "hot_A_cold_B",
+        "unknown_control_basis": 0,
+        "program": 1,
+        "exchange_weight": 0.5,
+        "joint_J_direction": [
+          [
+            0.29999999999999993,
+            0.375
+          ],
+          [
+            0.2,
+            0.12499999999999997
+          ]
+        ],
+        "J_excited": 0.32499999999999996,
+        "A_reflected": 0.5,
+        "A_delta_rest_internal": -0.07500000000000007,
+        "A_delta_fourP": [
+          -0.125,
+          -4.433333333333334,
+          0.0,
+          0.0
+        ],
+        "B_delta_fourP": [
+          0.12500000000000022,
+          4.433333333333334,
+          0.0,
+          0.0
+        ],
+        "A_boost_delta_fourP": [
+          3.16875,
+          -5.447916666666667,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "preparation": "hot_A_cold_B",
+        "unknown_control_basis": 0,
+        "program": 2,
+        "exchange_weight": 0.5,
+        "joint_J_direction": [
+          [
+            0.29999999999999993,
+            0.375
+          ],
+          [
+            0.2,
+            0.12499999999999997
+          ]
+        ],
+        "J_excited": 0.32499999999999996,
+        "A_reflected": 0.5,
+        "A_delta_rest_internal": -0.07500000000000007,
+        "A_delta_fourP": [
+          -0.125,
+          -4.433333333333334,
+          0.0,
+          0.0
+        ],
+        "B_delta_fourP": [
+          0.12500000000000022,
+          4.433333333333334,
+          0.0,
+          0.0
+        ],
+        "A_boost_delta_fourP": [
+          3.16875,
+          -5.447916666666667,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "preparation": "hot_A_cold_B",
+        "unknown_control_basis": 1,
+        "program": 0,
+        "exchange_weight": 1.0,
+        "joint_J_direction": [
+          [
+            0.0,
+            0.7499999999999998
+          ],
+          [
+            0.0,
+            0.2499999999999999
+          ]
+        ],
+        "J_excited": 0.2499999999999999,
+        "A_reflected": 0.9999999999999997,
+        "A_delta_rest_internal": -0.15000000000000013,
+        "A_delta_fourP": [
+          -0.25000000000000266,
+          -8.866666666666665,
+          0.0,
+          0.0
+        ],
+        "B_delta_fourP": [
+          0.24999999999999845,
+          8.866666666666665,
+          0.0,
+          0.0
+        ],
+        "A_boost_delta_fourP": [
+          6.337499999999995,
+          -10.89583333333333,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "preparation": "hot_A_cold_B",
+        "unknown_control_basis": 1,
+        "program": 1,
+        "exchange_weight": 0.5,
+        "joint_J_direction": [
+          [
+            0.2999999999999999,
+            0.3749999999999999
+          ],
+          [
+            0.19999999999999996,
+            0.12499999999999994
+          ]
+        ],
+        "J_excited": 0.3249999999999999,
+        "A_reflected": 0.49999999999999983,
+        "A_delta_rest_internal": -0.07500000000000012,
+        "A_delta_fourP": [
+          -0.12500000000000178,
+          -4.433333333333334,
+          0.0,
+          0.0
+        ],
+        "B_delta_fourP": [
+          0.12499999999999845,
+          4.433333333333334,
+          0.0,
+          0.0
+        ],
+        "A_boost_delta_fourP": [
+          3.168749999999998,
+          -5.447916666666666,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "preparation": "hot_A_cold_B",
+        "unknown_control_basis": 1,
+        "program": 2,
+        "exchange_weight": 1.0,
+        "joint_J_direction": [
+          [
+            0.0,
+            0.7499999999999998
+          ],
+          [
+            0.0,
+            0.2499999999999999
+          ]
+        ],
+        "J_excited": 0.2499999999999999,
+        "A_reflected": 0.9999999999999997,
+        "A_delta_rest_internal": -0.15000000000000013,
+        "A_delta_fourP": [
+          -0.25000000000000266,
+          -8.866666666666665,
+          0.0,
+          0.0
+        ],
+        "B_delta_fourP": [
+          0.24999999999999845,
+          8.866666666666665,
+          0.0,
+          0.0
+        ],
+        "A_boost_delta_fourP": [
+          6.337499999999995,
+          -10.89583333333333,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "coherent_record_recovery": 0.0,
+    "leaked_record_joint": [
+      [
+        0.3749999999999999,
+        0.2999999999999999
+      ],
+      [
+        0.12499999999999994,
+        0.19999999999999996
+      ]
+    ],
+    "actual_joint_future_gap": 0.19999999999999996,
+    "leakage_contrast_added_positive_record_mass": 1,
+    "leakage_contrast_requires_separate_same_window_copy_permission": true,
+    "nonthermal_population_blindness": 0.0,
+    "nonthermal_stationarity_defect": 0.6123724356957945,
+    "nonthermal_is_separate_mathematical_diagnostic_not_claimed_seed_preparation": true
+  },
+  "group4_original_clock_and_unknown_reference": {
+    "original_FK_intertwiner": 0.0,
+    "dressed_source_control_commutator": 0.0,
+    "seven_window_clock_word": 4.216547402686685e-15,
+    "independent_old_final_state": 8.406577567985082e-14,
+    "old_complete_isometry": 1.5701449259261638e-16,
+    "old_Mr_start": [
+      0.12500000000000033,
+      0.12500000000000033
+    ],
+    "old_Mr_finish": [
+      0.9999999999999997,
+      0.9999999999999997
+    ],
+    "retained_source_normalization": 6.661338147750939e-16,
+    "all_input_Gram": 8.005932084973442e-16,
+    "entangled_reference_sample": 1.8159661670124596e-15,
+    "windows": 7,
+    "positive_window": 0.2243994752564138,
+    "original_elapsed_start": 1.5707963267948966,
+    "original_elapsed_finish": 3.141592653589793
+  },
+  "group5_actual_ports_and_deletions": {
+    "begin_event": [
+      3.1041296601282298,
+      1.0,
+      0.0,
+      0.0
+    ],
+    "end_event": [
+      4.674925986923126,
+      1.0,
+      0.0,
+      0.0
+    ],
+    "A_initial_position": [
+      -1.4833037281025838,
+      0.0,
+      0.0
+    ],
+    "B_initial_position": [
+      3.483303728102584,
+      0.0,
+      0.0
+    ],
+    "outgoing_endpoints_by_level_direction": [
+      [
+        6.674925986923126,
+        2.5999999999999996,
+        0.0,
+        0.0
+      ],
+      [
+        6.674925986923126,
+        -0.5999999999999999,
+        0.0,
+        0.0
+      ],
+      [
+        6.674925986923126,
+        2.5999999999999996,
+        0.0,
+        0.0
+      ],
+      [
+        6.674925986923126,
+        -0.5999999999999999,
+        0.0,
+        0.0
+      ]
+    ],
+    "endpoint_gap": 3.1999999999999993,
+    "transported_endpoint_residual": 4.965068306494546e-16,
+    "mass_shell_residual": 2.842170943040401e-14,
+    "proper_phase_residual": 2.6645352591003757e-15,
+    "deleting_internal_mass_contribution_shell_defect": 7.000000000000007,
+    "deleting_internal_mass_clock_halftrace_witness": 1.0,
+    "heatonly_swap_momentum_defect_norm": 2.666666666666666,
+    "heatonly_swap_specific_momentum_defect": -2.666666666666666,
+    "heatonly_swap_same_thermal_input_mean_momentum_defect": 0.4
+  },
+  "limitations": [
+    "K1219 finite positive-window mechanical permissions are new model inputs",
+    "The old clock does not autonomously trigger these effective collisions",
+    "Known degenerate seeds, excited stocks and blank records are input resources",
+    "Rest-internal Gibbs is not global moving-carrier or whole-process Gibbs",
+    "Access to a retained stock/seed changes reference and correlation qualifications",
+    "Actual finite incoming preparations are narrower than the full algebraic mother",
+    "No accelerated detector, Unruh response, local stress, area entropy or GR is proved"
+  ]
+}

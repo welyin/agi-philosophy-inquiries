@@ -1,0 +1,50 @@
+{
+  "schema": "round1223_independent_stability_v1",
+  "status": "PASS",
+  "check_groups": 3,
+  "scope": "Old three-field material, Gaussian input and fixed noisy marginal readout; no autonomous source or joint-output bound",
+  "constants": {
+    "kappa": "0.015125",
+    "h_L1L2_upper": "5.78881003646614127490412",
+    "spatial_volume": "4.18879020478639098461686",
+    "delta_q_L1L2_coefficient": "0.0580249495470050557235623",
+    "vacuum_covariance_conservative": "0.563625825893413308311300",
+    "vacuum_covariance_optimal_split": "0.447350114469824764088622",
+    "mean_and_covariance_rms_coefficient": "1.40178803417068188838486",
+    "full_readout_TV_coefficient": "3.24494384674261452286070",
+    "coherent_preparation_energy_upper": "968.657734856852915192648",
+    "coherent_preparation_number_upper": "492.706447837999239565558"
+  },
+  "rational_envelope": {
+    "status": "PASS",
+    "TV_coefficient_strictly_below": "3.32",
+    "intermediate_rational_TV_upper": "10296/3125",
+    "no_floating_point_rounding_used": true
+  },
+  "exact_Gaussian_probability_tests": [
+    {
+      "actual_Gaussian_TV": 0.020232210658071015,
+      "rms_envelope": 0.2459245379682968
+    },
+    {
+      "actual_Gaussian_TV": 0.07916164118939373,
+      "rms_envelope": 0.07991302829678214
+    },
+    {
+      "actual_Gaussian_TV": 0.0,
+      "rms_envelope": 5.6418958354775635
+    },
+    {
+      "actual_Gaussian_TV": 0.03987761167674492,
+      "rms_envelope": 0.039894228040143274
+    }
+  ],
+  "normal_finite_energy_preparation": true,
+  "full_probability_given_classical_history": true,
+  "quantum_source_and_poststate_error_certified": false,
+  "continuum_PDE_grid_not_used_as_certificate": true,
+  "source_sha256": {
+    "archive_1219_/1223/independent_check.py": "83b602796890c33543e970c3371bebb53cb83e181f3afc1ccad20bebe71c9ee3",
+    "archive_467_530/research_note_524.md": "a9ce2b08de78fcbe77194829c608918d7c37cf7f907e0e02d67400e5188bc935"
+  }
+}

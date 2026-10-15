@@ -1,0 +1,60 @@
+{
+  "schema": "round1232_root_verification_v1",
+  "date": "2026-10-15",
+  "status": "PASS",
+  "scientific_files_sha256": {
+    "proof.md": "268d5d445d31ce151cb7a03570d097c252b717888db2b560ce70af4c5b25a071",
+    "check.py": "c1325ec22cea416abfc82cfe6c17fd27b4001428dff3d218e8893bb46dc04f9c",
+    "results.json": "b55765465b1253d720b0e989ed96d93f2c6872a43041df6fd2d12c2d1aa48bbf",
+    "independent_check.py": "4cad3cf22eb0ac306b7323db57c7226e01d821920bba401face6307eff22e8c6",
+    "independent_results.json": "0a647d2722403cac53e1cc868e783d34405b3df1c5cc45fbfa5d8fc0e04a812f",
+    "independent_review.md": "ef53b4e50437fabbcb5b7352991184d4b535e6e07022f38d1cb69b30bbeaa072",
+    "NEXT.md": "9688123f86d8f7f5fdfa14a22849988bc98f33f0dea418d3dd4c6d4f81068e66",
+    "../research_note_1232.md": "f8e4096b4af985526f3d5716e46d0874be2629c938ae55021c97c9f00d7a0411",
+    "../_admission/after1230_finite_motion_thermal_admission.md": "a2f141fbd3e53b75b45b32dfaa448d7d2bb99b4b749178b4f07920110bbb04db",
+    "../_admission/stage_scope_audit_after1230.md": "d94ea8bfc91ab23b2bc0a11b8b273bc39fdc8a59638512d259760363bee9a361"
+  },
+  "root_executed_both_codes": true,
+  "checks": [
+    {
+      "entry": "1232/check.py",
+      "exit_code": 0,
+      "result": {
+        "round": 1232,
+        "status": "PASS",
+        "all_checks_passed": true,
+        "results_match": true,
+        "check_groups": 5,
+        "read_only": true
+      }
+    },
+    {
+      "entry": "1232/independent_check.py",
+      "exit_code": 0,
+      "result": {
+        "round": 1232,
+        "status": "PASS",
+        "check_groups": 5,
+        "probability_error_upper": 1.0485064087661866e-10,
+        "joint_log_error_upper": 0.19464661566762598,
+        "read_only": true
+      }
+    }
+  ],
+  "markdown_local_links_checked": 39,
+  "source_bindings_verified": 14,
+  "display_math_delimiters_paired": true,
+  "control_character_scan_passed": true,
+  "independent_review_bindings_verified": true,
+  "counted_scientific_groups": 5,
+  "independent_groups": 5,
+  "independent_groups_added_to_scientific_total": false,
+  "analytic_review_includes": [
+    "finite positive measure KMS signs and reflected-tail bound",
+    "full odd-Dyson probability bound and relative probability guard",
+    "massive pair boost absolute continuity and positive-frequency Lebesgue windows",
+    "fixed conditional spectral budget versus unconstructed actual apparatus",
+    "finite comparison field energy is not internalized control work"
+  ],
+  "stage_complete": false
+}

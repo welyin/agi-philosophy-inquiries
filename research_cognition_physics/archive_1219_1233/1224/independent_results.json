@@ -1,0 +1,117 @@
+{
+  "schema": "round1224_independent_scope_constants_v1",
+  "status": "PASS",
+  "all_checks_passed": true,
+  "check_groups": 3,
+  "check_group_names": [
+    "exact_shapes_and_unique_forward_star",
+    "normal_preparation_and_positive_response_constants",
+    "conditional_time_readout_and_statistical_margin_algebra"
+  ],
+  "scope": "Full-H analytic-domain theorem and independent finite coefficient checks; no full-H propagation simulation.",
+  "geometry": {
+    "G1": [
+      [
+        "4/3",
+        "2/3",
+        "1/2"
+      ],
+      [
+        "2/3",
+        "4/3",
+        "0"
+      ],
+      [
+        "1/2",
+        "0",
+        "1"
+      ]
+    ],
+    "leading_principal_minors": [
+      "4/3",
+      "4/3",
+      "1"
+    ],
+    "det_G1": "1",
+    "G1_inverse_12": "-2/3",
+    "G0_inverse_12": "0",
+    "lattice_shape": [
+      5,
+      5,
+      5
+    ],
+    "shared_star_and_one_based_directions": [
+      [
+        [
+          4,
+          0,
+          0
+        ],
+        1,
+        2
+      ]
+    ]
+  },
+  "inputs": {
+    "hbar": 1,
+    "epsilon": 0.73,
+    "psi": 1.1274968515793757,
+    "w": 0.7992094443050535,
+    "target_radius": 2.449489742783178,
+    "target_M": 2.0,
+    "b": 0.1,
+    "density_exponent": 16,
+    "amplitude_boundary_zero_order": 8
+  },
+  "beta_integrals": {
+    "B_3_16": "1/2448",
+    "B_5over2_17": "4294967296/4281195077775",
+    "ratio_exact": "27981667175/68719476736"
+  },
+  "preparation_bounds": {
+    "b0": 0.3535533905932738,
+    "d0": 0.08249579113843057,
+    "Q1": 46.20164109019078,
+    "Qinf": 363095.67468467477,
+    "eta": 6.88523762275904e-07,
+    "density_ratio_lower": "3/4",
+    "a0": 0.34944101998849186,
+    "h_2b": 1.0022212351945656,
+    "bK": 0.001886656736374183,
+    "S_lower": 0.06868632737846113,
+    "S_upper": 0.125,
+    "chi_lower": 5.4913883387567466e-08,
+    "clock_v_lower": 0.6173119038348787
+  },
+  "conditional_margins": {
+    "leading_background_difference_over_chi_t2": "2/3",
+    "maximum_remainder_over_chi_t2": "1/3",
+    "minimum_signal_over_chi_t2": "1/3",
+    "four_probability_error_over_chi_t2": "1/12",
+    "remaining_margin_over_chi_t2": "1/4",
+    "time_contract": "t <= chi_lower / (3*(B_G0+B_G1))",
+    "sampling_contract": "N >= log(8/delta)/(2*epsilon_p**2), epsilon_p=chi_lower*t**2/48",
+    "relational_contract": "d <= chi_lower/(3*v**2*K_rel), with local inverse domain retained"
+  },
+  "limitations": {
+    "N1_N2_N3_computed": false,
+    "specified_numerical_time_certified": false,
+    "specified_numerical_sample_count_certified": false,
+    "full_H_evolution_simulated": false,
+    "normal_finite_energy_preparation": true,
+    "preparation_is_full_space_faithful_thermal_state": false,
+    "amplitude_is_C_infinity": false,
+    "analytic_D_H3_domain": true,
+    "single_run_proper_clock_constructed": false,
+    "autonomous_preparation_and_readout_constructed": false,
+    "independent_area_instrument_constructed": false,
+    "numerical_constants_are_directed_intervals": false
+  },
+  "independent_code_sha256": "1819e29fb12c80f89dd352489b99e3eb34943ae75a666e936925d7ac5172ecb4",
+  "source_sha256": {
+    "archive_1219_/1224/independent_check.py": "1819e29fb12c80f89dd352489b99e3eb34943ae75a666e936925d7ac5172ecb4",
+    "archive_585_628/research_note_589.md": "63eb1a3275bd6559b153f7d18b8b94d615e5c76a8a8b8af900a264d54914da40",
+    "archive_585_628/research_note_598.md": "9a83b9ed293b537ff575dd440fdcd1837473bef74b6d815bfbfebdc6055adaa3",
+    "archive_1219_/_admission/area_readout_screen_after1221.md": "018e3b12e0ed0ef43962704c7af4e4bb7654f31ddc7a06fa8f10e0315ef3a3e4"
+  }
+}

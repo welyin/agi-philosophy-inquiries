@@ -1,0 +1,53 @@
+{
+  "schema": "round1226_root_verification_v1",
+  "date": "2026-10-15",
+  "status": "PASS",
+  "scientific_files_sha256": {
+    "proof.md": "9d5558d399c0059d5f6d3ac8f0a077111f9702588edaadcfb0626458e1d42eb1",
+    "check.py": "46081a80e01ac1fc945ef1a7fe8bdf90d65285364ad7646ce492a7420aedae3d",
+    "results.json": "baf60422dcf9a48a0330c3aa68b04d8fea74b75691a5663fb81a77dc15f6034d",
+    "independent_check.py": "2a35acf2a17864140a615b56a168760556f6197378baf02dce6ae7830504d082",
+    "independent_results.json": "4ce428c4cab8ea9d6110023e21b15043db4b6f33cb924be7c750821e878471ed",
+    "independent_review.md": "ce3f903b7c32abe8272df40f00e470f12fa8e2d433b47d7e65b8687457beb0a2",
+    "NEXT.md": "511b5c555010a97d21718517bd84eca4063edcd39915cb3bc3939acc798b955b",
+    "../research_note_1226.md": "115e44b3f9b958c297a08efcf6f99e93486550a1b75578494606f4c73b983fc4",
+    "../_admission/after1225_uniform_boundary_thermal_screen.md": "b7d9b06721d23ef59905233e502bb2d6c0a55cace2421b07d6415eb3ec93e1f5",
+    "../_admission/after1226_stage_priority_review.md": "07c95289e3f06f4393d65546c4ff6ed1290272b3d469f68a0503ec89658aa019"
+  },
+  "root_executed_both_codes": true,
+  "checks": [
+    {
+      "entry": "1226/check.py",
+      "exit_code": 0,
+      "result": {
+        "round": 1226,
+        "status": "PASS",
+        "check_groups": 4,
+        "receipt_mode": "read_only_verified",
+        "e_beta": 11180.168613466907,
+        "I_per_area": 1316980771.2811768
+      }
+    },
+    {
+      "entry": "1226/independent_check.py",
+      "exit_code": 0,
+      "result": {
+        "status": "PASS",
+        "all_checks_passed": true,
+        "results_match": true,
+        "check_groups": 6,
+        "independent_code_sha256": "2a35acf2a17864140a615b56a168760556f6197378baf02dce6ae7830504d082"
+      }
+    }
+  ],
+  "markdown_local_links_checked": 49,
+  "display_math_delimiters_paired": true,
+  "control_character_scan_passed": true,
+  "independent_review_bindings_verified": true,
+  "counted_scientific_groups": 4,
+  "independent_groups": 6,
+  "independent_groups_added_to_scientific_total": false,
+  "full_Gibbs_spectrum_computed": false,
+  "outward_interval_constants_certified": false,
+  "stage_complete": false
+}

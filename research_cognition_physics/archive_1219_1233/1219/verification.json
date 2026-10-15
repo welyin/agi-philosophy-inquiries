@@ -1,0 +1,32 @@
+{
+  "schema": "round1219_root_verification_v1",
+  "date": "2026-10-15",
+  "status": "PASS",
+  "scientific_files_sha256": {
+    "candidate_proof.md": "b9b3ed8f4e39ef90016faa5756622ae8562cb7d4532975d8f10f074577c56dee",
+    "check.py": "59211c21a9763f88879914046d2f8c7d4c10fed4ba660cbbead6513eae7fbdb5",
+    "results.json": "b7eb42ab4d1f92f26ef2f9d89fb5fedb1f79e6da265f4dc214a631740270cd3c",
+    "independent_check.py": "5702c04cd8037fafa506e4a07a4d1a9d2e322b1b39c6aa833a2f6d0b11f78f00",
+    "independent_results.json": "3f27870e751df502908e50023ebb718f84471dc0a8c0dcb30effc74d746b656e",
+    "independent_review.md": "615ce0bb637e72a504346ead749f8daeaff7bb724f13a1f4cbe4054e275fe19b",
+    "NEXT.md": "b1a97f742df7fa1951011768aed8de213d4fb40824fac13bb2ba09a258544590",
+    "../research_note_1219.md": "a737d959c79c0962084d8c07fecffddec5279aae1667d245eb42b0e2f5ebcc3f"
+  },
+  "root_executed_both_codes": true,
+  "checks": [
+    {
+      "entry": "scripts/run_research_thermal_geometry_active.py --script research_cognition_physics/archive_1219_/1219/check.py",
+      "exit_code": 0,
+      "result": "PASS: 5 groups; READ_ONLY_MATCH"
+    },
+    {
+      "entry": "research_cognition_physics/archive_1219_/1219/independent_check.py",
+      "exit_code": 0,
+      "result": "PASS; all_checks_passed=true; results_match=true; check_groups=6"
+    }
+  ],
+  "counted_scientific_groups": 5,
+  "independent_groups": 6,
+  "independent_groups_added_to_scientific_total": false,
+  "stage_complete": false
+}

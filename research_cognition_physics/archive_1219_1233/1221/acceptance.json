@@ -1,0 +1,50 @@
+{
+  "schema": "thermal_geometry_round_acceptance_v1",
+  "round": 1221,
+  "date": "2026-10-15",
+  "status": "ACCEPTED_WITH_SCOPE",
+  "check_groups": 4,
+  "scope": "原固定有限图完整Gauss Gibbs模型的保匹配比较态、双向形式能源控制、关联/边界能源及同一来源身份；数值仅为真实物理Galerkin压缩诊断。",
+  "root_executed_both_codes": true,
+  "files_sha256": {
+    "proof.md": "b57dbed7f92210b753a0bf980206cb999d5243286247d888a799cd6f76de6b70",
+    "check.py": "a63a14c9f975fa51d6ea7d33d0140c0b57fd5771afaf5009a03579805168e534",
+    "results.json": "7959dbff9de2e985aea9bd52f7a67a57f85c86abb868a61cea8daac69fb345db",
+    "independent_check.py": "a2b5b3b5e399bcbbb8a074f61eae797cddea07e018442200607829b0efae7b9e",
+    "independent_results.json": "690094cb61ea926a1fe2467c7c17e450bc5255592cafdc1e965d6a5198a1b959",
+    "independent_review.md": "08901b99fd83b2606602288f53fb3cb258477b2ce89542901505379d45f4c2ca",
+    "NEXT.md": "05454cbf17c58fbf591d27344d5626689a0278973835206fecf359e1e3bba152",
+    "../research_note_1221.md": "d3ba8fe2b99499080ef7206ca822be7ea8cb9dfab08571ea187b1cbebcee93ed",
+    "../_admission/boundary_entropy_next_after1219.md": "cec6fcf0245ecce6a593c9c97ba94b6849c7f67be0c6f324f01074fea3f958f1",
+    "verification.json": "047a43f5fc9681d5e99ce8828547db6a3bfc9e43a09c33fde99ada661507311b"
+  },
+  "certified": {
+    "physical_matching_comparison_state": true,
+    "full_model_finite_form_energy": true,
+    "full_Gibbs_relative_entropy_boundary_identity": true,
+    "center_and_forced_pairing_retained": true,
+    "sector_coherence_counted": true,
+    "fixed_state_complete_source_boundary_identity": true,
+    "comparison_is_nonlinear_not_universal_CPTP": true,
+    "numerical_diagnostic_from_original_material": true,
+    "independent_review_and_closed_spectrum_check": true
+  },
+  "additional_model_inputs": [
+    "Inherited finite graph, positive given geometry, original Hamiltonian/material/couplings and cut isometry",
+    "Fixed positive-temperature original Gibbs reference",
+    "Numerical compact radial packets and true physical Galerkin subspace"
+  ],
+  "not_claimed": [
+    "Actual implementation of state-dependent decorrelation",
+    "Complete Gibbs numerical approximation",
+    "Independent internal area measurement",
+    "Entropy proportional to area or universal entropy-area coefficient",
+    "Uniform graph-refinement estimate",
+    "Common actual instrument with rounds 1219 or 1220",
+    "Dynamical geometry or Einstein equation",
+    "Full thermal-geometry stage completion"
+  ],
+  "new_adopted_axioms": 0,
+  "new_empirical_calibration": 0,
+  "stage_complete": false
+}

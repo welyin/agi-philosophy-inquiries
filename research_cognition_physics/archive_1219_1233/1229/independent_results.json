@@ -1,0 +1,223 @@
+{
+  "schema": "1229-independent-v1",
+  "status": "PASS",
+  "all_checks_passed": true,
+  "check_groups": 6,
+  "groups": {
+    "wedge_time_and_boost_sign": {
+      "full_window": [
+        0,
+        4
+      ],
+      "preparation_cut": 2,
+      "gate_centers": [
+        1,
+        3
+      ],
+      "physical_second_support_z": [
+        -1,
+        5
+      ],
+      "physical_wedge_margin": 4,
+      "common_Cauchy_support_min_z": -2,
+      "Cauchy_wedge_margin": 6,
+      "Schrodinger_p_coefficients": {
+        "0": 1,
+        "1": 0,
+        "2": -1,
+        "4": -3
+      },
+      "commutator": "[h,k_z]=-i p_z",
+      "common_charge": "k_z+8h at t=1",
+      "boost_mode_norm_upper": {
+        "exact": "140000747/10",
+        "display": 14000074.7
+      },
+      "per_gate_boost_commutator_upper": 128000000,
+      "Gaussian_time_tails_included": true,
+      "infinite_future_same_wedge_claim": false
+    },
+    "exact_CAR_field_channel": {
+      "exact_operator_dephasing_identity": true,
+      "all_input_columns": 4,
+      "preserved_full_PE_isometry": true,
+      "examples": [
+        {
+          "vacuum_comparator_population": "1/16",
+          "after_nonselective_record": "1/2"
+        },
+        {
+          "vacuum_comparator_population": "1/4",
+          "after_nonselective_record": "1/2"
+        },
+        {
+          "vacuum_comparator_population": "1/2",
+          "after_nonselective_record": "1/2"
+        },
+        {
+          "vacuum_comparator_population": "15/16",
+          "after_nonselective_record": "1/2"
+        }
+      ],
+      "actual_continuum_state_replaced": false,
+      "old_PE_record_used_as_field_channel": false
+    },
+    "vacuum_probability_and_finite_KL": {
+      "vacuum_population_lower": {
+        "exact": "5/20000000000548",
+        "display": 2.4999999999315e-13
+      },
+      "vacuum_population_upper": {
+        "exact": "137/5000000000000",
+        "display": 2.74e-11
+      },
+      "common_reference_probability_floor": "1/5000000000000",
+      "preparation_probability_error": {
+        "exact": "50000000000000000000000000000000000000000000000000000100000000000000000001/1562500000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "display": 3.2e-17
+      },
+      "terminal_record_error": {
+        "exact": "25000000000000000000000000000000000000000000000000000050000000000000000001/390625000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "display": 6.4e-17
+      },
+      "actual_record_to_fixed_field_channel_error": {
+        "exact": "30000000000000000000000000000000000000000000000000000060000000000000000001/312500000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "display": 9.6e-17
+      },
+      "vacuum_readout_error": {
+        "exact": "12500000000000000000000000000000000000000000000000000050000000000000000001/390625000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "display": 3.2e-17
+      },
+      "finite_binary_KL_transport_upper": {
+        "exact": "12500000009920287500000000000000000000000000000000000049999999999993650000999999999999873/78112499999999999999999999999999999999999999999999999999949999999999999999999000000000000000",
+        "display": 0.00016002560422365546
+      },
+      "exact_field_and_actual_record_KL_lower": {
+        "exact": "553/50",
+        "display": 11.06
+      },
+      "second_clock_initial_independence_at_T2_assumed": false,
+      "infinite_algebra_relative_entropy_continuity_used": false
+    },
+    "uniform_auxiliary_domain_guards": {
+      "independent_commutator_graph_constant": {
+        "exact": "2750000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011/54687500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "display": 5.028571428571429e-71
+      },
+      "uniform_Nplus1_second_moment_upper": {
+        "exact": "186920166015625000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000/186920166015624999999999999999999999999999999999999999999999999999999924804687500000000000000000000000000000000000000000000000000000000000007562499999999999999999999699218750000000000000000000000000000000000000000000000000000000000000060500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000121",
+        "display": 1.0
+      },
+      "retained_coarse_uniform_guard": 4,
+      "tail_expectation_bound": "E[N 1_(N>R)] <= 4/R",
+      "each_actual_clock_number_upper": {
+        "exact": "10000000000000000000200000000000000000001/2441406250000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "display": 4.096e-141
+      },
+      "full_auxiliary_entropy_upper": {
+        "exact": "69400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000211/25000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "display": 2.776
+      },
+      "faithful_reference": "exp(-N)/Z times I_PE/16; Z=(1-exp(-1))^-2",
+      "reference_is_actual_bath": false,
+      "fixed_reference_embedding_correction": "log(Z/Z_L)",
+      "moment_deletion_examples": [
+        {
+          "n": 10,
+          "trace_distance": "1/10",
+          "mean_N": 1,
+          "mean_N2": 10
+        },
+        {
+          "n": 100,
+          "trace_distance": "1/100",
+          "mean_N": 1,
+          "mean_N2": 100
+        },
+        {
+          "n": 1000,
+          "trace_distance": "1/1000",
+          "mean_N": 1,
+          "mean_N2": 1000
+        }
+      ],
+      "entropy_continuity_used_for_lsc_limit": false
+    },
+    "same_state_boost_geometry_energy": {
+      "HF_weighted_error": {
+        "exact": "100000000000000000000000000000200000000000000000002000100000000000000000001/97656250000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "display": 1.024e-09
+      },
+      "boost_weighted_error": {
+        "exact": "100000000000000000000000000000200000000000000000002000100000000000000000001/12207031250000000000000000000000000000000000000000000000000000000000000000000000000",
+        "display": 8.192e-09
+      },
+      "modular_energy_weighted_error": {
+        "exact": "1100000000000000000000000000002200000000000000000022001100000000000000000011/21362304687500000000000000000000000000000000000000000000000000000000000000000000000",
+        "display": 5.149257142857143e-08
+      },
+      "uniform_geometry_error_upper": {
+        "exact": "1760000000000368500000000011/875000000000000000000000000000",
+        "display": 0.0020114285714289927
+      },
+      "strict_modular_energy_positive_margin": "41/5",
+      "initial_interaction_upper": {
+        "exact": "1/62500000000000000000000000000000000000000000000000000000000000000000000",
+        "display": 1.6e-71
+      },
+      "initial_plus_terminal_interaction_upper": {
+        "exact": "2343750000000000000000000000000000000000000000000000000000000000000000000000000000000000001/48828125000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "display": 4.8e-71
+      },
+      "free_initial_energy": "M + 1/(4 M sigma^2) + 6",
+      "total_initial_energy_adds_V0": true,
+      "geometry_errors": "uniform origin/time shifts and uniform area multiplier only",
+      "pointwise_T00_operator_bound_claim": false,
+      "total_apparatus_boost_conservation_claim": false
+    },
+    "general_initial_state_entropy_chain_fixture": {
+      "initial_relative_entropy_to_faithful_reference": 0.3132616875182229,
+      "cases": {
+        "swap": {
+          "Dfield": 0.10536051565782628,
+          "mutual_information": 0.0,
+          "aux_entropy": 0.3250829733914482,
+          "delta_K": -0.21972245773362192,
+          "joint_balance_residual": -8.326672684688674e-17,
+          "chain_residual": 5.551115123125783e-17,
+          "reduced_balance_residual": 0.0
+        },
+        "partial_swap": {
+          "Dfield": 0.016706501178764627,
+          "mutual_information": 0.07194751330029686,
+          "aux_entropy": 0.1985152433458726,
+          "delta_K": -0.10986122886681099,
+          "joint_balance_residual": -2.2898349882893854e-16,
+          "chain_residual": 0.0,
+          "reduced_balance_residual": -1.1102230246251565e-16
+        },
+        "record_only": {
+          "Dfield": 0.0,
+          "mutual_information": 0.3250829733914482,
+          "aux_entropy": 0.3250829733914482,
+          "delta_K": 0.0,
+          "joint_balance_residual": -2.7755575615628914e-17,
+          "chain_residual": 1.1102230246251565e-16,
+          "reduced_balance_residual": 0.0
+        }
+      },
+      "omitting_aux_entropy_fails": true,
+      "fixture_not_infinite_wedge_entropy_computation": true,
+      "pure_aux_not_substituted_for_faithful_tau": true
+    }
+  },
+  "independent_code_sha256": "d73fa18537d081eaa89da719863218745873abd4fb7f0255448ee7bc1ee2c00f",
+  "source_sha256": {
+    "archive_1120_1158/1126/proof.md": "06644f8cc78f2075d62b67dee961a4064208c5226047405652201c337b5f3a76",
+    "archive_1219_/1228/proof.md": "3bfff8396ca39798180f14ed6f0f9862d6d24898ffe108dab01b1e9f18ead074",
+    "archive_1219_/1228/results.json": "cf92900840f0568891f597dc6f1fdcc7e6664aee0e0861052db81c1f72b99e6e",
+    "archive_1219_/1228/NEXT.md": "ca7b438bc5d73d12106dc97e4435f055e3d6bd9f318d648964e6144966d590e0",
+    "archive_1219_/_admission/after1228_geometric_information_admission.md": "1a07e388046d3f4395e0b2d5f151f3ea5c88a8739ae052c6ddadb75452ff3d8e"
+  },
+  "scope": "Exact finite guards and distinct algebra fixtures; domain/lsc arguments require analytic review, not a vacuum truncation."
+}

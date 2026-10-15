@@ -1,0 +1,207 @@
+{
+  "status": "PASS",
+  "all_checks_passed": true,
+  "check_groups": 6,
+  "independent_code_sha256": "35a57e452351dcd2fa81106639dbb7c6cd4b5a90f48894ffeef59bd31e7f6b55",
+  "source_sha256": {
+    "archive_585_628/research_note_589.md": "63eb1a3275bd6559b153f7d18b8b94d615e5c76a8a8b8af900a264d54914da40",
+    "archive_585_628/research_note_598.md": "9a83b9ed293b537ff575dd440fdcd1837473bef74b6d815bfbfebdc6055adaa3",
+    "archive_1219_/1224/proof.md": "fb0362e16401e8d9e670a27422ffdcea685db2d7fabba0c9aee85e20423796ab",
+    "archive_1219_/1224/results.json": "123961f92d9ed41be607f57b8c07b33becc2c71aae3edf5c1b9ae0c3df3511a0"
+  },
+  "exact_six_row_algebra": {
+    "exact_det": "-27/8615125",
+    "det_identity": "-a^3*S^3",
+    "variable_order": [
+      "P12",
+      "P13",
+      "P23",
+      "P11",
+      "P22",
+      "P33"
+    ],
+    "exact_round_trips": 2,
+    "exact_inverse_infinity_bound": "305/12"
+  },
+  "adjacent_full_graph": {
+    "graph_side": 5,
+    "adjacent_source_stars": [
+      {
+        "axis": 1,
+        "source": [
+          1,
+          0,
+          0
+        ],
+        "common_centers": [
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "axis": 2,
+        "source": [
+          0,
+          1,
+          0
+        ],
+        "common_centers": [
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "axis": 3,
+        "source": [
+          0,
+          0,
+          1
+        ],
+        "common_centers": [
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    ],
+    "diagonal_density_gradient_factor": "-4*eta*A_B",
+    "diagonal_response": "2*eta*w^(-2/3)*a*Cii",
+    "mixed_response": "2*eta*w^(-2/3)*b*sum(Cij)",
+    "all_remaining_full_H_terms_retained_in_analytic_cancellation": true
+  },
+  "analytic_bounds": {
+    "Q1": 46.20164109019078,
+    "Q1_kappa": 2441.778613006792,
+    "Qinf": 363095.67468467477,
+    "eta": 6.88523762275904e-07,
+    "bK": 0.0018866567363741826,
+    "Hessian_F_bound": 0.7886751345948129,
+    "a_lower": 0.09213347003213283,
+    "b_absolute_upper": 1.632366911833736,
+    "b_gradient_upper": 0.15623277496937446,
+    "singular_value_lower": 0.014670607359650447,
+    "S_lower": 0.0686863273784611,
+    "S_upper": 0.125,
+    "inverse_infinity_uniform_upper": 60.2296499825506,
+    "amplitude_C7_and_H3_only": true,
+    "numeric_bounds_are_not_interval_arithmetic": true
+  },
+  "independent_target_integrals": {
+    "rows": [
+      {
+        "order": 12,
+        "a": 0.12494836124596856,
+        "b": 0.1249554840062126,
+        "S": 0.12489677802188662
+      },
+      {
+        "order": 16,
+        "a": 0.12494836128095974,
+        "b": 0.12495548104705659,
+        "S": 0.12489677809181653
+      },
+      {
+        "order": 20,
+        "a": 0.12494836128096014,
+        "b": 0.12495548104675407,
+        "S": 0.12489677809181687
+      }
+    ],
+    "last_refinement_max_difference": 3.0252189642254734e-13,
+    "v0": 0.4997437000518409,
+    "v0_lower": 0.49336150362676795,
+    "clock_relation": "v=v0/w",
+    "quadrature_only_diagnostic": true,
+    "full_H_moments_computed": false
+  },
+  "cofactor_area": {
+    "cases": [
+      {
+        "w": 0.5,
+        "areas": [
+          0.727415757314481,
+          0.6556837028944575,
+          0.7274157573144809
+        ],
+        "roundtrip_error": 1.1102230246251565e-16,
+        "illustrative_area_error_bound": 7.62563686264931e-07
+      },
+      {
+        "w": 0.8,
+        "areas": [
+          0.9950907585931009,
+          0.8969626884619459,
+          0.9950907585931009
+        ],
+        "roundtrip_error": 2.220446049250313e-16,
+        "illustrative_area_error_bound": 5.574371344179664e-07
+      },
+      {
+        "w": 1.0,
+        "areas": [
+          1.1547005383792515,
+          1.0408329997330663,
+          1.1547005383792515
+        ],
+        "roundtrip_error": 2.220446049250313e-16,
+        "illustrative_area_error_bound": 4.803846831313201e-07
+      },
+      {
+        "w": 2.0,
+        "areas": [
+          1.83297284933147,
+          1.652219398699486,
+          1.83297284933147
+        ],
+        "roundtrip_error": 4.440892098500626e-16,
+        "illustrative_area_error_bound": 3.0262330291874123e-07
+      }
+    ],
+    "max_roundtrip_error": 4.440892098500626e-16,
+    "normalized_relational_coefficient": "(v0^2/eta)*lim(q(d)/d^2)=L*vec(cof(h))",
+    "cofactor_formula": "cof(w^(2/3)*G)=w^(4/3)*inverse(G)",
+    "uncertainty_budget_is_conditional": true
+  },
+  "deletion_and_scope": {
+    "offdiagonal_only_counterexample": {
+      "P0_diag": [
+        "1",
+        "1",
+        "1"
+      ],
+      "P1_diag": [
+        "4",
+        "1/4",
+        "1"
+      ],
+      "area0": [
+        "1",
+        "1",
+        "1"
+      ],
+      "area1": [
+        "2",
+        "1/2",
+        "1"
+      ],
+      "same_three_mixed_coefficients": true,
+      "same_full_histories_claimed": false
+    },
+    "per_channel_normalized_error": "(v0^2/eta)*(Kq*d + (2*eps_p + 2*L_clock*eps_d)/d^2)",
+    "inverse_error": "||P_hat-P||_entry_max <= ||L^-1||_infinity * normalized_error",
+    "time_window_requires_compact_positive_geometry_and_uniform_full_H_moments": true,
+    "full_H_moments_computed": false,
+    "numerical_wait_or_sample_budget_certified": false,
+    "single_run_proper_clock": false,
+    "autonomous_instrument": false,
+    "entropy_area_identity": false
+  }
+}

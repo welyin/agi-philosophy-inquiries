@@ -1,0 +1,824 @@
+{
+  "schema": "1220-independent-numerical-audit-v1",
+  "status": "PASS",
+  "all_checks_passed": true,
+  "check_groups": 6,
+  "independent_code_sha256": "ba8cbd6029037691786307aa1e7f8a59387956f68e39b4ec1ca55b265950abaa",
+  "source_sha256": {
+    "archive_1106_1119/1118/proof.md": "cbf928ac8a1dc8997869eddc50dae4774c58e9baecdfad904ad813a03ae3cd60",
+    "archive_1106_1119/1119/proof.md": "b4a97154a8302a49c4f4f6788f615909b4849820bfa42e3bf11574c16808008d",
+    "archive_1159_1160/1160/proof.md": "ca3121515439d2b93c23d341d83a1dfbd68b48c4c63ac95fc41c28b027cf8e81",
+    "archive_1161_1200/1169/proof.md": "33f4384f5a851a5b8e35f816e577fc4101eefcf8365d9024bab0a70e739d5871",
+    "archive_1219_/1219/candidate_proof.md": "b9b3ed8f4e39ef90016faa5756622ae8562cb7d4532975d8f10f074577c56dee",
+    "archive_1219_/1220/admission.md": "43cb8929e93700365185fd58496dc4575f055128fc201cf9b3dc3609b4850bbd"
+  },
+  "scope": "Independent finite projection and residual-formula diagnostics. Analytic mother-domain and rigorous outward arithmetic must be audited separately.",
+  "checks": [
+    "basis, total momentum, parity, merged exterior rows",
+    "coherence preparation energy and force",
+    "training joint event and complete endpoint accounting",
+    "frozen holdout joint event",
+    "no-source and no-field controls",
+    "vector Taylor leakage formula and terminal 12-block reference"
+  ],
+  "training": [
+    {
+      "hin": 0,
+      "gap": 0.5,
+      "T": 2.356194490192,
+      "kappa": 2.0,
+      "g": 0.15,
+      "dimension": 812,
+      "leakage_rows": 300,
+      "merged_leakage_rows": 216,
+      "phase_shift": 2.029984267263,
+      "coherent": {
+        "joint_event": 0.03342966588743,
+        "hflip_and_plus": 0.02784040389874,
+        "hflip_and_minus": 0.03548965611262,
+        "hflip": 0.06333006001136,
+        "table_h_direction_sourcebin": [
+          [
+            [
+              0.0001731562923027,
+              0.001710665397574
+            ],
+            [
+              0.0665856658844,
+              0.8657394140306
+            ],
+            [
+              0.000138633212153,
+              0.002322405171616
+            ]
+          ],
+          [
+            [
+              0.002453584725702,
+              0.02538681917304
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.002059990225195,
+              0.03342966588743
+            ]
+          ]
+        ],
+        "means": {
+          "h": 0.06333006001136,
+          "p": -3.263649204591,
+          "q": 3.27248809279,
+          "a": 0.0365626128355,
+          "b": 0.04540150103471
+        },
+        "shifted_energy": 2.022488200447,
+        "reference_pinching_mean_work": {
+          "source": 0.02151078109894,
+          "field": 0.1139458894317,
+          "total": 0.1354566705307
+        },
+        "reference_pinching_state_bound": 1.121464153134,
+        "norm": 1.0
+      },
+      "incoherent": {
+        "joint_event": 0.01640117325865,
+        "hflip_and_plus": 0.03162012724169,
+        "hflip_and_minus": 0.03162012724169,
+        "hflip": 0.06324025448338,
+        "table_h_direction_sourcebin": [
+          [
+            [
+              0.001304134350947,
+              0.000865850361884
+            ],
+            [
+              0.5017571571705,
+              0.4306626189204
+            ],
+            [
+              0.001030291096769,
+              0.001139693616062
+            ]
+          ],
+          [
+            [
+              0.01879468494496,
+              0.01282544229673
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.01521895398304,
+              0.01640117325865
+            ]
+          ]
+        ],
+        "means": {
+          "h": 0.06324025448338,
+          "p": -1.2570007207e-15,
+          "q": 1.250071540918e-15,
+          "a": 0.04093899766601,
+          "b": 0.04093899766601
+        },
+        "shifted_energy": 2.022488200447,
+        "reference_pinching_mean_work": {
+          "source": 0.02222140721908,
+          "field": 0.114044256385,
+          "total": 0.1362656636041
+        },
+        "reference_pinching_state_bound": 1.121400326028,
+        "norm": 1.0
+      },
+      "coherent_minus_incoherent_joint": 0.01702849262877,
+      "initial": {
+        "energy_coherent": 2.022488200447,
+        "energy_incoherent": 2.022488200447,
+        "p_force_coherent": -1.414213562373,
+        "q_force_coherent": 1.414213562373,
+        "p_force_incoherent": 0.0
+      },
+      "diagnostic": {
+        "eigen_residual_fro": 2.910892995248e-13,
+        "eigen_orthogonality_fro": 7.458589903868e-14,
+        "energy_conservation_error": 2.22044604925e-15
+      },
+      "residual_vector_taylor_diagnostic": {
+        "midpoints": 1024,
+        "midpoint_integral": 5.664321708388e-05,
+        "first_derivative_term": 1.340801566838e-07,
+        "second_derivative_remainder": 3.966452928552e-06,
+        "total": 6.074375016912e-05,
+        "C2": 7.63097536352,
+        "R_norm_bound": 1.705875451079,
+        "status": "Exact-arithmetic analytic bound evaluated in binary64; no outward arithmetic certification claimed."
+      }
+    },
+    {
+      "hin": 1,
+      "gap": 0.5,
+      "T": 2.356194490192,
+      "kappa": 2.0,
+      "g": 0.15,
+      "dimension": 812,
+      "leakage_rows": 300,
+      "merged_leakage_rows": 216,
+      "phase_shift": 2.529723136567,
+      "coherent": {
+        "joint_event": 0.09201729527716,
+        "hflip_and_plus": 0.09257142232158,
+        "hflip_and_minus": 0.09866209675493,
+        "hflip": 0.1912335190765,
+        "table_h_direction_sourcebin": [
+          [
+            [
+              0.007048463857203,
+              0.08552295846438
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.006644801477768,
+              0.09201729527716
+            ]
+          ],
+          [
+            [
+              0.0001714506917704,
+              0.001696228456456
+            ],
+            [
+              0.05740406441668,
+              0.7470062012253
+            ],
+            [
+              0.0001395190666462,
+              0.002349017066618
+            ]
+          ]
+        ],
+        "means": {
+          "h": 0.8087664809235,
+          "p": -3.265919955304,
+          "q": 3.27330760198,
+          "a": 0.1015881586744,
+          "b": 0.1089758053505
+        },
+        "shifted_energy": 2.522292352425,
+        "reference_pinching_mean_work": {
+          "source": 0.02134036240443,
+          "field": 0.1184777172672,
+          "total": 0.1398180796716
+        },
+        "reference_pinching_state_bound": 1.194683110527,
+        "norm": 1.0
+      },
+      "incoherent": {
+        "joint_event": 0.04564845906476,
+        "hflip_and_plus": 0.09567188032334,
+        "hflip_and_minus": 0.09567188032334,
+        "hflip": 0.1913437606467,
+        "table_h_direction_sourcebin": [
+          [
+            [
+              0.05295800933034,
+              0.04271387099299
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.05002342125858,
+              0.04564845906476
+            ]
+          ],
+          [
+            [
+              0.00131487836064,
+              0.00085962625713
+            ],
+            [
+              0.4327759175091,
+              0.3715313126086
+            ],
+            [
+              0.001024031040562,
+              0.001150473577209
+            ]
+          ]
+        ],
+        "means": {
+          "h": 0.8086562393533,
+          "p": 4.110221925932e-15,
+          "q": -3.640525569891e-15,
+          "a": 0.105335192001,
+          "b": 0.105335192001
+        },
+        "shifted_energy": 2.522292352425,
+        "reference_pinching_mean_work": {
+          "source": 0.02204496622177,
+          "field": 0.1186507662935,
+          "total": 0.1406957325153
+        },
+        "reference_pinching_state_bound": 1.194732301174,
+        "norm": 1.0
+      },
+      "coherent_minus_incoherent_joint": 0.0463688362124,
+      "initial": {
+        "energy_coherent": 2.522292352425,
+        "energy_incoherent": 2.522292352425,
+        "p_force_coherent": -1.414213562373,
+        "q_force_coherent": 1.414213562373,
+        "p_force_incoherent": 0.0
+      },
+      "diagnostic": {
+        "eigen_residual_fro": 2.899574101227e-13,
+        "eigen_orthogonality_fro": 7.379210482129e-14,
+        "energy_conservation_error": 2.6645352591e-15
+      },
+      "residual_vector_taylor_diagnostic": {
+        "midpoints": 1024,
+        "midpoint_integral": 5.669460322096e-05,
+        "first_derivative_term": 1.208898570072e-07,
+        "second_derivative_remainder": 3.938991362149e-06,
+        "total": 6.075448444012e-05,
+        "C2": 7.578142633513,
+        "R_norm_bound": 1.705875451079,
+        "status": "Exact-arithmetic analytic bound evaluated in binary64; no outward arithmetic certification claimed."
+      }
+    }
+  ],
+  "holdout": [
+    {
+      "hin": 0,
+      "gap": 0.6666666666667,
+      "T": 1.963495408494,
+      "kappa": 2.0,
+      "g": 0.15,
+      "dimension": 812,
+      "leakage_rows": 300,
+      "merged_leakage_rows": 216,
+      "phase_shift": 2.029984267263,
+      "coherent": {
+        "joint_event": 0.02671575581764,
+        "hflip_and_plus": 0.02532527758514,
+        "hflip_and_minus": 0.02937836918856,
+        "hflip": 0.0547036467737,
+        "table_h_direction_sourcebin": [
+          [
+            [
+              0.0001558046818552,
+              0.001212039410239
+            ],
+            [
+              0.09524302337379,
+              0.8470983887649
+            ],
+            [
+              0.0001433308388837,
+              0.001443766156611
+            ]
+          ],
+          [
+            [
+              0.002856807852913,
+              0.02246846973223
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.002662613370922,
+              0.02671575581764
+            ]
+          ]
+        ],
+        "means": {
+          "h": 0.0547036467737,
+          "p": -2.746944277841,
+          "q": 2.751447408956,
+          "a": 0.03133195140836,
+          "b": 0.03583508252342
+        },
+        "shifted_energy": 2.022488200447,
+        "reference_pinching_mean_work": {
+          "source": 0.01981954548975,
+          "field": 0.1043218651231,
+          "total": 0.1241414106129
+        },
+        "reference_pinching_state_bound": 1.109954836673,
+        "norm": 1.0
+      },
+      "incoherent": {
+        "joint_event": 0.01350967750977,
+        "hflip_and_plus": 0.02733270010239,
+        "hflip_and_minus": 0.02733270010239,
+        "hflip": 0.05466540020478,
+        "table_h_direction_sourcebin": [
+          [
+            [
+              0.0008516041868837,
+              0.0006256002979995
+            ],
+            [
+              0.5097531052491,
+              0.4326270855764
+            ],
+            [
+              0.0007462933129862,
+              0.000730911171897
+            ]
+          ],
+          [
+            [
+              0.01573797445009,
+              0.0115947256523
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.01382302259262,
+              0.01350967750977
+            ]
+          ]
+        ],
+        "means": {
+          "h": 0.05466540020478,
+          "p": -8.665386449176e-15,
+          "q": 8.487882107363e-15,
+          "a": 0.03356581331647,
+          "b": 0.03356581331647
+        },
+        "shifted_energy": 2.022488200447,
+        "reference_pinching_mean_work": {
+          "source": 0.01837266503018,
+          "field": 0.1043686203457,
+          "total": 0.1227412853759
+        },
+        "reference_pinching_state_bound": 1.109925851345,
+        "norm": 1.0
+      },
+      "coherent_minus_incoherent_joint": 0.01320607830787,
+      "initial": {
+        "energy_coherent": 2.022488200447,
+        "energy_incoherent": 2.022488200447,
+        "p_force_coherent": -1.414213562373,
+        "q_force_coherent": 1.414213562373,
+        "p_force_incoherent": 0.0
+      },
+      "diagnostic": {
+        "eigen_residual_fro": 2.922469813161e-13,
+        "eigen_orthogonality_fro": 7.5269331195e-14,
+        "energy_conservation_error": 7.105427357601e-15
+      },
+      "residual_vector_taylor_diagnostic": {
+        "midpoints": 1024,
+        "midpoint_integral": 2.264190908643e-05,
+        "first_derivative_term": 4.966040538125e-08,
+        "second_derivative_remainder": 2.299527933138e-06,
+        "total": 2.499109742495e-05,
+        "C2": 7.64469519838,
+        "R_norm_bound": 1.705875451079,
+        "status": "Exact-arithmetic analytic bound evaluated in binary64; no outward arithmetic certification claimed."
+      }
+    },
+    {
+      "hin": 1,
+      "gap": 0.6666666666667,
+      "T": 1.963495408494,
+      "kappa": 2.0,
+      "g": 0.15,
+      "dimension": 812,
+      "leakage_rows": 300,
+      "merged_leakage_rows": 216,
+      "phase_shift": 2.696305017941,
+      "coherent": {
+        "joint_event": 0.06792569636736,
+        "hflip_and_plus": 0.07360561706096,
+        "hflip_and_minus": 0.07539632413882,
+        "hflip": 0.1490019411998,
+        "table_h_direction_sourcebin": [
+          [
+            [
+              0.007606383977814,
+              0.06599923308315
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.007470627771462,
+              0.06792569636736
+            ]
+          ],
+          [
+            [
+              0.0001531836170443,
+              0.001188099962093
+            ],
+            [
+              0.08568126820783,
+              0.7623981656129
+            ],
+            [
+              0.0001416167875875,
+              0.001435724612754
+            ]
+          ]
+        ],
+        "means": {
+          "h": 0.8509980588002,
+          "p": -2.749660608057,
+          "q": 2.751940061743,
+          "a": 0.07970801530842,
+          "b": 0.08198746899426
+        },
+        "shifted_energy": 2.688895430123,
+        "reference_pinching_mean_work": {
+          "source": 0.01960818446552,
+          "field": 0.06563196066496,
+          "total": 0.08524014513048
+        },
+        "reference_pinching_state_bound": 1.170602424293,
+        "norm": 1.0
+      },
+      "incoherent": {
+        "joint_event": 0.03465336999764,
+        "hflip_and_plus": 0.07452374193697,
+        "hflip_and_minus": 0.07452374193697,
+        "hflip": 0.1490474838739,
+        "table_h_direction_sourcebin": [
+          [
+            [
+              0.04075963986668,
+              0.03376410207029
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.03987037193933,
+              0.03465336999764
+            ]
+          ],
+          [
+            [
+              0.0008446367230394,
+              0.0006138841066707
+            ],
+            [
+              0.4586968004518,
+              0.3893386740149
+            ],
+            [
+              0.0007328809698863,
+              0.0007256398598237
+            ]
+          ]
+        ],
+        "means": {
+          "h": 0.8509525161261,
+          "p": 3.200259471812e-15,
+          "q": -3.211354471448e-15,
+          "a": 0.08087020644598,
+          "b": 0.08087020644598
+        },
+        "shifted_energy": 2.688895430123,
+        "reference_pinching_mean_work": {
+          "source": 0.01817608569152,
+          "field": 0.06563755986376,
+          "total": 0.08381364555528
+        },
+        "reference_pinching_state_bound": 1.170626124379,
+        "norm": 1.0
+      },
+      "coherent_minus_incoherent_joint": 0.03327232636972,
+      "initial": {
+        "energy_coherent": 2.688895430123,
+        "energy_incoherent": 2.688895430123,
+        "p_force_coherent": -1.414213562373,
+        "q_force_coherent": 1.414213562373,
+        "p_force_incoherent": 0.0
+      },
+      "diagnostic": {
+        "eigen_residual_fro": 2.777956955177e-13,
+        "eigen_orthogonality_fro": 7.350846767808e-14,
+        "energy_conservation_error": 4.440892098501e-15
+      },
+      "residual_vector_taylor_diagnostic": {
+        "midpoints": 1024,
+        "midpoint_integral": 2.264914066403e-05,
+        "first_derivative_term": 4.456600236039e-08,
+        "second_derivative_remainder": 2.278354023811e-06,
+        "total": 2.49720606902e-05,
+        "C2": 7.574303323324,
+        "R_norm_bound": 1.705875451079,
+        "status": "Exact-arithmetic analytic bound evaluated in binary64; no outward arithmetic certification claimed."
+      }
+    }
+  ],
+  "no_source": {
+    "hin": 0,
+    "gap": 0.5,
+    "T": 2.356194490192,
+    "kappa": 0,
+    "g": 0.15,
+    "dimension": 812,
+    "leakage_rows": 298,
+    "merged_leakage_rows": 192,
+    "phase_shift": 0.02998426726293,
+    "coherent": {
+      "joint_event": 0.008441496490356,
+      "hflip_and_plus": 0.03144051776425,
+      "hflip_and_minus": 0.03144051776425,
+      "hflip": 0.06288103552849,
+      "table_h_direction_sourcebin": [
+        [
+          [
+            0.001666654535193,
+            0.0004936620014929
+          ],
+          [
+            0.6996147185785,
+            0.2331836128197
+          ],
+          [
+            0.001572685135461,
+            0.0005876314012242
+          ]
+        ],
+        [
+          [
+            0.02414692047698,
+            0.007293597287271
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.02299902127389,
+            0.008441496490356
+          ]
+        ]
+      ],
+      "means": {
+        "h": 0.06288103552849,
+        "p": 2.921274333545e-15,
+        "q": -2.890049310977e-15,
+        "a": 0.04076706091583,
+        "b": 0.04076706091583
+      },
+      "shifted_energy": 0.0224882004472,
+      "reference_pinching_mean_work": {
+        "source": -0.0,
+        "field": 0.1144454474986,
+        "total": 0.1144454474986
+      },
+      "reference_pinching_state_bound": 1.121145127552,
+      "norm": 1.0
+    },
+    "incoherent": {
+      "joint_event": 0.008441496490356,
+      "hflip_and_plus": 0.03144051776425,
+      "hflip_and_minus": 0.03144051776425,
+      "hflip": 0.06288103552849,
+      "table_h_direction_sourcebin": [
+        [
+          [
+            0.001666654535193,
+            0.0004936620014929
+          ],
+          [
+            0.6996147185785,
+            0.2331836128197
+          ],
+          [
+            0.001572685135461,
+            0.0005876314012242
+          ]
+        ],
+        [
+          [
+            0.02414692047698,
+            0.007293597287271
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.02299902127389,
+            0.008441496490356
+          ]
+        ]
+      ],
+      "means": {
+        "h": 0.06288103552849,
+        "p": 1.34961486431e-15,
+        "q": -1.452830911131e-15,
+        "a": 0.04076706091583,
+        "b": 0.04076706091583
+      },
+      "shifted_energy": 0.0224882004472,
+      "reference_pinching_mean_work": {
+        "source": -0.0,
+        "field": 0.1144454474986,
+        "total": 0.1144454474986
+      },
+      "reference_pinching_state_bound": 1.121145127552,
+      "norm": 1.0
+    },
+    "coherent_minus_incoherent_joint": -3.642919299551e-17,
+    "initial": {
+      "energy_coherent": 0.0224882004472,
+      "energy_incoherent": 0.0224882004472,
+      "p_force_coherent": 0.0,
+      "q_force_coherent": 0.0,
+      "p_force_incoherent": 0.0
+    },
+    "diagnostic": {
+      "eigen_residual_fro": 2.793357278776e-13,
+      "eigen_orthogonality_fro": 5.846588743435e-14,
+      "energy_conservation_error": 8.326672684689e-17
+    }
+  },
+  "no_field": {
+    "hin": 0,
+    "gap": 0.5,
+    "T": 2.356194490192,
+    "kappa": 2.0,
+    "g": 0,
+    "dimension": 812,
+    "leakage_rows": 56,
+    "merged_leakage_rows": 0,
+    "phase_shift": 2.029984267263,
+    "coherent": {
+      "joint_event": 0.0,
+      "hflip_and_plus": 0.0,
+      "hflip_and_minus": 0.0,
+      "hflip": 0.0,
+      "table_h_direction_sourcebin": [
+        [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.07139831299074,
+            0.9286016870093
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      ],
+      "means": {
+        "h": 0.0,
+        "p": -3.272499290497,
+        "q": 3.272499290497,
+        "a": 0.0,
+        "b": 0.0
+      },
+      "shifted_energy": 2.022488200447,
+      "reference_pinching_mean_work": {
+        "source": 0.02152387627956,
+        "field": -0.0,
+        "total": 0.02152387627956
+      },
+      "reference_pinching_state_bound": 1.0,
+      "norm": 1.0
+    },
+    "incoherent": {
+      "joint_event": 0.0,
+      "hflip_and_plus": 0.0,
+      "hflip_and_minus": 0.0,
+      "hflip": 0.0,
+      "table_h_direction_sourcebin": [
+        [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.5381055507582,
+            0.4618944492418
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      ],
+      "means": {
+        "h": 0.0,
+        "p": 4.41172776151e-16,
+        "q": -4.41172776151e-16,
+        "a": 0.0,
+        "b": 0.0
+      },
+      "shifted_energy": 2.022488200447,
+      "reference_pinching_mean_work": {
+        "source": 0.0222377807952,
+        "field": -0.0,
+        "total": 0.0222377807952
+      },
+      "reference_pinching_state_bound": 1.0,
+      "norm": 1.0
+    },
+    "coherent_minus_incoherent_joint": 0.0,
+    "initial": {
+      "energy_coherent": 2.022488200447,
+      "energy_incoherent": 2.022488200447,
+      "p_force_coherent": -1.414213562373,
+      "q_force_coherent": 1.414213562373,
+      "p_force_incoherent": 0.0
+    },
+    "diagnostic": {
+      "eigen_residual_fro": 7.69352052441e-14,
+      "eigen_orthogonality_fro": 2.971664292141e-14,
+      "energy_conservation_error": 1.7763568394e-15
+    }
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "round": 1229,
+  "status": "PASS",
+  "check_groups": 4,
+  "groups": {
+    "actual_wedge_and_auxiliary_domain": {
+      "status": "PASS",
+      "wedge": "z+8 > |t-1|",
+      "total_time_window": [
+        0,
+        4
+      ],
+      "preparation_cut": 2,
+      "gate_centers": [
+        1,
+        3
+      ],
+      "physical_spacetime_support_margin": 4,
+      "reference_slice_Cauchy_support_margin": 6,
+      "first_slice_one_particle_generator": "k_z+8*h",
+      "initial_global_slice_generator": "k_z+8*h+p_z",
+      "final_Schrodinger_generator": "k_z+8*h-(T-1)*p_z",
+      "field_boost_commutator_upper": 128000000,
+      "uniform_aux_comm_a": 3.2e-71,
+      "uniform_aux_comm_b": 6.4e-167,
+      "uniform_aux_Nplus1_second_moment_certified_upper": 4,
+      "uniform_aux_N_tail_first_moment": "<=4/R",
+      "each_clock_occupation_upper": 4.096e-141,
+      "both_clock_entropy_upper": "1e-136",
+      "finite_pointer_entropy_upper": "4*ln(2)",
+      "actual_aux_entropy_upper": 2.8,
+      "faithful_aux_reference": "exp(-N)/Z tensor I_PE/16; Z=(1-exp(-1))^-2",
+      "initial_aux_pure_not_equal_reference": true,
+      "relative_entropy_proof": "finite auxiliary identity; fixed-reference lsc; then chain rule",
+      "relative_entropy_equality_not_claimed": true
+    },
+    "full_field_channel_identity": {
+      "status": "PASS",
+      "full_finite_identity_domain_dimension": 4,
+      "full_PE_dimension": 16,
+      "full_isometry_output_dimension": 64,
+      "identity_error": 5.20740757162067e-16,
+      "isometry_error": 6.280369834735101e-16,
+      "rows": [
+        {
+          "s_rational": "1/10",
+          "ideal_after_first": 0.4999999999999998,
+          "final_second_pointer": 0.4999999999999998
+        },
+        {
+          "s_rational": "1/1000",
+          "ideal_after_first": 0.4999999999999998,
+          "final_second_pointer": 0.4999999999999998
+        },
+        {
+          "s_rational": "1/2",
+          "ideal_after_first": 0.49999999999999983,
+          "final_second_pointer": 0.49999999999999983
+        }
+      ],
+      "same_field_effect": "n_(f_plus in flavor1)",
+      "physical_s_not_numerically_evaluated": true,
+      "actual_continued_readout_not_exact_field_only_channel": true
+    },
+    "finite_same_field_information": {
+      "status": "PASS",
+      "vacuum_s_lower": 2.4999999999315e-13,
+      "vacuum_s_upper": 2.74e-11,
+      "vacuum_s_lower_formula": "1/[4(K^2+137/5)]",
+      "vacuum_s_upper_formula": "(137/5)/K^2",
+      "common_probability_floor": 2e-13,
+      "actual_prep_field_probability_error": 3.2e-17,
+      "actual_full_second_pointer_error": 6.4e-17,
+      "actual_pointer_to_same_field_channel_TV_upper": 9.6e-17,
+      "vacuum_actual_readout_error": 3.2e-17,
+      "finite_record_KL_transport_upper": 0.0005002501251845313,
+      "fixed_field_KL_lower": 11.06,
+      "actual_record_KL_lower": 11.06,
+      "exact_KL_values_not_evaluated": true,
+      "actual_record_DPI_with_correction_only": true,
+      "correction_claim": "Drecord - 1e-3 + I(W:E) <= DeltaK + S(E)"
+    },
+    "source_geometry_and_resource_transport": {
+      "status": "PASS",
+      "field_energy_transport_error": 1.024e-09,
+      "field_boost_expectation_transport_error": 8.192e-09,
+      "modular_energy_transport_error": 5.149257142857143e-08,
+      "actual_field_energy_upper": 32000000.0,
+      "actual_field_boost_absolute_upper": 256000000.0,
+      "actual_modular_energy_absolute_upper": 1609142857.1428573,
+      "independent_uniform_geometry_error": {
+        "longitudinal_origin_absolute": 1e-12,
+        "time_origin_absolute": 1e-12,
+        "area_common_relative_scale": 1e-12
+      },
+      "geometry_transport_error_upper": 0.0020114285714289736,
+      "geometry_calibration_is_conditional_input_not_new_instrument": true,
+      "source_role": "same-slice renormalized expectation distribution / generator form",
+      "no_arbitrary_sharp_time_stress_operator_claim": true,
+      "free_initial_total_energy_display": 1e+260,
+      "exact_total_initial_energy": "free initial energy plus <V(0)>",
+      "initial_plus_terminal_interaction_bound": 4.8e-71,
+      "actual_modular_energy_strict_lower": 8.2,
+      "clock_energy_boost_identity_not_claimed": true,
+      "no_area_law_or_gravity_claim": true
+    }
+  },
+  "source_sha256": {
+    "archive_1120_1158/1126/proof.md": "06644f8cc78f2075d62b67dee961a4064208c5226047405652201c337b5f3a76",
+    "archive_1120_1158/1128/proof.md": "fc9963b8f77d0a60e2233acbcc68e02e583af345a5653d1d4431ea619be0fcd2",
+    "archive_1201_1218/1203/proof.md": "c2c29a7805afc15a596086e6915f5216296a2e523175483881ab2313f7219428",
+    "archive_1219_/1228/proof.md": "3bfff8396ca39798180f14ed6f0f9862d6d24898ffe108dab01b1e9f18ead074",
+    "archive_1219_/1228/check.py": "f43c41a6e31ba8e1fb661d14e4ec2699a3ae56d1f7856a843bcb094e3427f76b",
+    "archive_1219_/1228/results.json": "cf92900840f0568891f597dc6f1fdcc7e6664aee0e0861052db81c1f72b99e6e",
+    "archive_1219_/1228/NEXT.md": "ca7b438bc5d73d12106dc97e4435f055e3d6bd9f318d648964e6144966d590e0",
+    "archive_1219_/_admission/after1228_geometric_information_admission.md": "1a07e388046d3f4395e0b2d5f151f3ea5c88a8739ae052c6ddadb75452ff3d8e",
+    "archive_1219_/1229/proof.md": "62acaf16867864cf0c51aa1a4fd1e12301f33872aec6c9e7e01ac7d1a51b07f0",
+    "archive_1219_/1229/check.py": "010403597b859e44a1498a53216cea3824c0171caee83aa06ec2eb3e51476a13"
+  },
+  "scope": {
+    "actual_untruncated_field_and_clocks": true,
+    "full_auxiliary_kept": true,
+    "strict_finite_window_wedge_localization": true,
+    "finite_relative_entropy_proven_before_chain_rule": true,
+    "actual_entropy_energy_inequality": true,
+    "entropy_energy_equality": false,
+    "actual_readout_exact_field_channel": false,
+    "finite_readout_error_included": true,
+    "independent_geometry_input": true,
+    "local_microscopic_gate_realization": false,
+    "accelerated_thermometer": false,
+    "area_law": false,
+    "stage_complete": false
+  }
+}

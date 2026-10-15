@@ -1,0 +1,223 @@
+{
+  "round": 1233,
+  "status": "PASS",
+  "all_checks_passed": true,
+  "check_groups": 6,
+  "groups": {
+    "CAR_normal_order": {
+      "passed": true,
+      "modes": 4,
+      "Fock_dimension": 16,
+      "one_particle_eigenvalues": [
+        -1.50061256342,
+        -0.13125691176,
+        0.77161631496,
+        1.86025316022
+      ],
+      "filled_negative_modes": 2,
+      "CAR_and_normal_order_residuals": "<1e-12",
+      "bounded_commutator_sign_checked": true,
+      "continuous_trace_class_limit_proven_by_matrices": false
+    },
+    "regional_operator_reaction": {
+      "passed": true,
+      "finite_region_1_sites": [
+        0,
+        1
+      ],
+      "finite_region_2_sites": [
+        2,
+        3
+      ],
+      "source_modes": [
+        0,
+        3
+      ],
+      "full_device_dimension": 1024,
+      "exact_invariant_initial_block_dimension": 256,
+      "four_dimensional_PE_pairs_kept": true,
+      "reduction_reason": "K annihilates both unused P/E sectors; blank lies in invariant logical block",
+      "all_state_operator_identities_residual": "<1e-10",
+      "same_time_gate_commutation_only": true,
+      "claims_different_time_commutation": false
+    },
+    "complete_autonomous_history": {
+      "passed": true,
+      "full_energy_conservation_residual": "<1e-10",
+      "initial_interaction_energy_retained": 1.33365820319,
+      "minimum_complete_H_eigenvalue": 6.4,
+      "history": [
+        {
+          "time": 0.0,
+          "field_energy_change": -0.0,
+          "interaction_energy_change": -0.0,
+          "source_region_1": 0.0,
+          "source_region_2": -0.0,
+          "inward_flux_1": 0.0,
+          "inward_flux_2": -0.0,
+          "controls_HC_energy_change": -0.0
+        },
+        {
+          "time": 0.15,
+          "field_energy_change": 0.00255149771,
+          "interaction_energy_change": 0.08051477754,
+          "source_region_1": 0.02100839354,
+          "source_region_2": 0.01267124611,
+          "inward_flux_1": -0.00450498298,
+          "inward_flux_2": 0.00450498298,
+          "controls_HC_energy_change": -0.08306627525
+        },
+        {
+          "time": 0.55,
+          "field_energy_change": 0.02799815585,
+          "interaction_energy_change": 0.22585990555,
+          "source_region_1": 0.07319264214,
+          "source_region_2": 0.00605068144,
+          "inward_flux_1": -0.00965518144,
+          "inward_flux_2": 0.00965518144,
+          "controls_HC_energy_change": -0.2538580614
+        },
+        {
+          "time": 1.1,
+          "field_energy_change": 0.06917394367,
+          "interaction_energy_change": 0.18002522086,
+          "source_region_1": 0.07670097126,
+          "source_region_2": -0.00600816171,
+          "inward_flux_1": -0.00952768726,
+          "inward_flux_2": 0.00952768726,
+          "controls_HC_energy_change": -0.24919916453
+        },
+        {
+          "time": 1.7,
+          "field_energy_change": 0.09825124392,
+          "interaction_energy_change": -0.12324537666,
+          "source_region_1": 0.00657182248,
+          "source_region_2": -0.00060473588,
+          "inward_flux_1": -0.00319205463,
+          "inward_flux_2": 0.00319205463,
+          "controls_HC_energy_change": 0.02499413274
+        }
+      ],
+      "source_factorization_used": false,
+      "reference_free_future_substituted": false
+    },
+    "finite_regulator_weak_identity": {
+      "passed": true,
+      "finite_regulator_analogue": "spectral projection of finite h",
+      "regulators": [
+        {
+          "threshold": 0.5,
+          "rank": 1,
+          "energy_change": 0.00290142514,
+          "integrated_flux_plus_source": 0.00290142514,
+          "residual": "<1e-10"
+        },
+        {
+          "threshold": 1.0,
+          "rank": 2,
+          "energy_change": 0.02957986503,
+          "integrated_flux_plus_source": 0.02957986503,
+          "residual": "<1e-10"
+        },
+        {
+          "threshold": 1.75,
+          "rank": 3,
+          "energy_change": 0.08006869798,
+          "integrated_flux_plus_source": 0.08006869798,
+          "residual": "<1e-10"
+        },
+        {
+          "threshold": 3.0,
+          "rank": 4,
+          "energy_change": 0.07946934857,
+          "integrated_flux_plus_source": 0.07946934857,
+          "residual": "<1e-10"
+        }
+      ],
+      "quadrature": "32-node Gauss-Legendre, diagnostic only",
+      "proves_continuum_trace_class_or_cutoff_rate": false
+    },
+    "deletion_witnesses": {
+      "passed": true,
+      "fixed_witness_time": 0.55,
+      "omitting_source_local_derivative_residual": 0.07319264214,
+      "omitting_interaction_complete_energy_residual": -0.22585990555,
+      "full_equations_hold_at_same_time": true,
+      "deletion_is_finite_algebra_not_QFT_counterexample": true
+    },
+    "continuous_platform_and_halo_guards": {
+      "passed": true,
+      "geometry_error": {
+        "exact": "1/100000000",
+        "display": 1e-08
+      },
+      "small_platform_xy_margin": {
+        "exact": "9999999/100000000",
+        "display": 0.09999999
+      },
+      "second_platform_z_margin_at_fixed_center_3": {
+        "exact": "4499999/50000000",
+        "display": 0.08999998
+      },
+      "gradient_squared_upper": {
+        "exact": "16875/32",
+        "display": 527.34375
+      },
+      "gradient_guard": 24,
+      "theta_second_derivative_squared_max": {
+        "exact": "100/3",
+        "display": 33.333333333333336
+      },
+      "laplacian_guard": {
+        "exact": "900",
+        "display": 900.0
+      },
+      "packet_h_norm_squared_upper": {
+        "exact": "10074183936902653356902332211/112233198653356902332211",
+        "display": 89761.17635226405
+      },
+      "packet_h_norm_guard": 400,
+      "halo_xy_margin": {
+        "exact": "79999999/100000000",
+        "display": 0.79999999
+      },
+      "halo_z_interval": [
+        {
+          "exact": "-1000001/100000000",
+          "display": -0.01000001
+        },
+        {
+          "exact": "250500001/50000000",
+          "display": 5.01000002
+        }
+      ],
+      "large_platform_z_interval": [
+        "-1/2",
+        "11/2"
+      ],
+      "b_A": {
+        "exact": "412",
+        "display": 412.0
+      },
+      "b_J": {
+        "exact": "10050",
+        "display": 10050.0
+      },
+      "C2_implies_quantified_cutoff_rate": false
+    }
+  },
+  "scope": {
+    "continuous_Dirac_proof_is_separate": true,
+    "finite_diagnostic_is_QFT_cutoff": false,
+    "finite_controls_are_Gaussian_clock_approximation": false,
+    "actual_full_H_history_used": true,
+    "new_region_energy_instrument_constructed": false,
+    "whole_apparatus_four_momentum_or_boost_signed": false,
+    "area_dynamics_or_Einstein_signed": false
+  },
+  "independent_code_sha256": "a54116fe607e968246f7c6c92b6264cc45dc2f0a58a9dc408a4a6e31577ba542",
+  "source_sha256": {
+    "archive_1219_/1230/proof.md": "1a55db79c9318f70cfb4ede5592763dfbbefea48643f4113131a1d250ba259b7",
+    "archive_1219_/1228/proof.md": "3bfff8396ca39798180f14ed6f0f9862d6d24898ffe108dab01b1e9f18ead074"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "schema": "round1224_root_verification_v1",
+  "date": "2026-10-15",
+  "status": "PASS",
+  "scientific_files_sha256": {
+    "proof.md": "fb0362e16401e8d9e670a27422ffdcea685db2d7fabba0c9aee85e20423796ab",
+    "check.py": "91c961df1dd35b0f8a5f36208961e9947d1070828b4fb65167f26162576d3c89",
+    "results.json": "123961f92d9ed41be607f57b8c07b33becc2c71aae3edf5c1b9ae0c3df3511a0",
+    "independent_check.py": "1819e29fb12c80f89dd352489b99e3eb34943ae75a666e936925d7ac5172ecb4",
+    "independent_results.json": "f2c9c2f9ace52194fde55d562c6bf32e71644ea8bcabc02b23c565fc02d3ad6a",
+    "independent_review.md": "413c3bfa2632c5b0b588fff70236eb80c5eb5d15b9772e773026baacf77b3216",
+    "NEXT.md": "76d6aa74fd14c4af02ed7b2ebfe2dc97f1f78669c0d0a9fde54c211f8460c8a4",
+    "../research_note_1224.md": "ca6ca24abe3e1dd5043cde03233395c20cc5bd5e735c87bef2e7345491d2c111",
+    "../_admission/area_readout_screen_after1221.md": "018e3b12e0ed0ef43962704c7af4e4bb7654f31ddc7a06fa8f10e0315ef3a3e4",
+    "../_admission/after1224_joint_geometry_thermal_screen.md": "00cb1cc825cf521a7fe4892f17a894e0af01e2af24ca6b0ec9caa86adaf5b430"
+  },
+  "root_executed_both_codes": true,
+  "checks": [
+    {
+      "entry": "1224/check.py --verify",
+      "exit_code": 0,
+      "result": "PASS: 4 groups; saved result equality"
+    },
+    {
+      "entry": "1224/independent_check.py",
+      "exit_code": 0,
+      "result": "PASS: 3 groups; exact algebra and positive finite preparation constants"
+    }
+  ],
+  "markdown_local_links_checked": 67,
+  "display_math_delimiters_paired": true,
+  "independent_review_bindings_verified": true,
+  "counted_scientific_groups": 4,
+  "independent_groups": 3,
+  "independent_groups_added_to_scientific_total": false,
+  "full_H_moments_numerically_computed": false,
+  "stage_complete": false
+}

@@ -1,0 +1,178 @@
+{
+  "schema": "1228-independent-v1",
+  "status": "PASS",
+  "all_checks_passed": true,
+  "check_groups": 6,
+  "groups": {
+    "packet_and_real_cosine_moments": {
+      "norm": {
+        "exact": "4294967296/9917826435",
+        "display": 0.4330552993792132
+      },
+      "moment2": "1/35",
+      "moment4": "3/1295",
+      "derivative_energy": "44/5",
+      "rho_derivative4_L1_upper": {
+        "exact": "6891885/16",
+        "display": 430742.8125
+      },
+      "r_lower": {
+        "exact": "747/1715",
+        "display": 0.43556851311953354
+      },
+      "r_upper": {
+        "exact": "2282515537/3886618750",
+        "display": 0.5872753886652762
+      },
+      "actual_packet_regular_class": "C7 and H8, not C-infinity",
+      "quadrature_used": false
+    },
+    "full_finite_CAR_record_fixture": {
+      "fixture_one_particle_dimension": 4,
+      "fixture_Fock_dimension": 16,
+      "full_PE_dimension": 16,
+      "all_input_isometry_columns": 16,
+      "joint_order": [
+        "00",
+        "01",
+        "10",
+        "11"
+      ],
+      "joint_probabilities": [
+        "17/50",
+        "4/25",
+        "4/25",
+        "17/50"
+      ],
+      "repeated_mode_probabilities": [
+        "1/2",
+        "0",
+        "0",
+        "1/2"
+      ],
+      "p11_formula": "17/50",
+      "complete_output_purity": "1",
+      "after_record_dephasing_purity": "353/1250",
+      "Dirac_vacuum_replaced_by_fixture": false
+    },
+    "independent_high_carrier_flow_gap": {
+      "K": 1000000,
+      "boost_parameter_upper": "11/1750000",
+      "spectral_error_upper": {
+        "exact": "53/10000000",
+        "display": 5.3e-06
+      },
+      "boost_vector_error_upper": {
+        "exact": "407/2450000",
+        "display": 0.00016612244897959183
+      },
+      "lab_vector_error_upper": {
+        "exact": "407/4375000",
+        "display": 9.302857142857143e-05
+      },
+      "comparison_gap_lower": {
+        "exact": "6519/40000",
+        "display": 0.162975
+      },
+      "ideal_event_gap_lower": {
+        "exact": "15920237/98000000",
+        "display": 0.16245139795918367
+      },
+      "both_exact_mode_occupancies": "1/2",
+      "physical_same_second_time": true,
+      "boost_equals_actual_accelerated_detector": false
+    },
+    "normal_Wick_source_domain_guards": {
+      "two_flavors_times_spin_rank_over_energy_factor": "1",
+      "spatial_Fourier_convention": "unitary; convolution coefficient (2 pi)^(-3/2)",
+      "momentum_integral": "pi^2/4",
+      "independent_pair_HS_square_over_D4square_upper": {
+        "exact": "25/314",
+        "display": 0.07961783439490445
+      },
+      "author_wider_pair_ratio_upper": {
+        "exact": "25/157",
+        "display": 0.1592356687898089
+      },
+      "TQ_vacuum_vector_norm_upper": 268435456,
+      "commutator_constant": 16000000,
+      "CAR_commutator_sign": "[T(Q),c(u)] = -c(A_Q u)",
+      "full_Fock_TQ_bounded_claim": false,
+      "future_source_meaning": "terminal state followed by a specified free reference continuation",
+      "actual_autonomous_future_source_history_certified": false
+    },
+    "three_process_weighted_transport": {
+      "pulse_vector_error": {
+        "exact": "1/31250000000000000",
+        "display": 3.2e-17
+      },
+      "quantum_clock_vector_error": {
+        "exact": "100000000000000000001/3125000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "display": 3.2e-71
+      },
+      "actual_TQ_vector_norm_bound": "64000000000000000000000268435456",
+      "ideal_TQ_vector_norm_bound": "300435456",
+      "TQ_branch_absolute_error": {
+        "exact": "29339400000000000000000000000003125000000000000000031277776900000000000000277769/1525878906250000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "display": 1.9227869184e-08
+      },
+      "HF_total_or_branch_absolute_error": {
+        "exact": "200000000000000000000000000000200000000000000000002000100000000000000000001/97656250000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "display": 2.048e-09
+      },
+      "both_menu_probability_error": {
+        "exact": "100000000000000000000000000000000000000000000000000000100000000000000000001/781250000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "display": 1.28e-16
+      },
+      "actual_joint_gap_lower": {
+        "exact": "6218842578124995099999999999999999999999999999999999999999999999999995099999999999999999951/38281250000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "display": 0.16245139795918354
+      },
+      "record_branches": 4,
+      "weighted_transport_not_trace_distance": true,
+      "comparison_order": [
+        "actual two clocks",
+        "finite scalar pulses",
+        "complete instantaneous instruments"
+      ],
+      "scalar_area_replaces_quantum_operator_norm_integral": false
+    },
+    "positive_clock_resource_bounds": {
+      "clock_count": 2,
+      "M": "100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "sigma": "1/1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "pulse_width": "1/1000000000000000000000000",
+      "final_time": 2,
+      "total_force_bound": "16000000000000000000000000000000000000000000000000",
+      "total_initial_clock_energy_exact": "40000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800000000000000000001/400000000000000000000",
+      "pointer_baseline_energy": 4,
+      "endpoint_interaction_sum_upper": {
+        "exact": "9375000000000000000000000000000000000000000000000000000000000000000000000000000000000000001/195312500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "display": 4.8e-71
+      },
+      "each_back_free_mode_occupation_upper": {
+        "exact": "40000000000000000000400000000000000000001/39062500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "display": 1.024e-141
+      },
+      "total_clock_entropy_upper": {
+        "exact": "211/25000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "display": 8.44e-138
+      },
+      "total_clock_energy_reaction": "|Delta E_C1+C2 + Delta E_F| <= endpoint bound",
+      "each_clock_loss_sign_claim": false,
+      "terminal_clock_Gaussian_or_independent_assumed": false,
+      "finite_region_effective_gate_permission_is_input": true,
+      "pointwise_Lorentz_implementation_certified": false,
+      "actual_Unruh_thermometer_certified": false,
+      "same_Dirac_independent_area_entropy_bridge_certified": false
+    }
+  },
+  "independent_code_sha256": "121431ef2ad632b463dff7b373f3949927f5018f19b26e1a178521e46ca98b7a",
+  "source_sha256": {
+    "archive_1120_1158/1126/proof.md": "06644f8cc78f2075d62b67dee961a4064208c5226047405652201c337b5f3a76",
+    "archive_1219_/1227/proof.md": "3cbde4effccf211d8a1625e64f78049d5f65ca6c886256544bd414a002930861",
+    "archive_1219_/1227/results.json": "521c1a79fbbf33c0a734d7dea94be00bc3d2ae656d4dc71dc3f557a4de9fe056",
+    "archive_1219_/_admission/after1227_reference_flow_priority.md": "a16232c6ee57879bdef5f66f94f0974889bc3ac03917c9f3cafbe128a4b8dd0e"
+  },
+  "scope": "Independent rational guards and an exact finite CAR fixture; continuum domains and effective gate permissions are reviewed separately."
+}

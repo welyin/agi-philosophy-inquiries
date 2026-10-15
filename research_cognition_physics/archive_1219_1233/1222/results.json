@@ -1,0 +1,208 @@
+{
+  "schema": "round1222_window_certificate_v1",
+  "status": "PASS",
+  "check_groups": 4,
+  "scope": "Analytic certificate and conditional resource feasibility, not a full Unruh implementation",
+  "inputs": {
+    "acceleration": 1.0,
+    "mass": 100.0,
+    "remainder_mass_lower": 500.0,
+    "gaps": [
+      0.1,
+      0.2
+    ],
+    "fixed_durations": [
+      20.0,
+      30.0
+    ],
+    "budgets": [
+      100000.0,
+      100000000.0
+    ],
+    "coupling": 0.02,
+    "switching_log_tolerance": 0.1,
+    "actual_probability_log_tolerance": 0.1
+  },
+  "spectral_checks": {
+    "identity_max_error": 8.881784197001252e-16,
+    "curvature_min": 1.9714412425283408e-25,
+    "curvature_max": 1.0471975511965976,
+    "envelope_positive_violation": 0.0,
+    "grid_is_not_continuous_proof": true
+  },
+  "switching_norms": [
+    {
+      "duration": 20.0,
+      "norm": 7.499999999999954,
+      "derivative_norm": 0.24674011002723237
+    },
+    {
+      "duration": 30.0,
+      "norm": 11.24999999999993,
+      "derivative_norm": 0.1644934066848216
+    }
+  ],
+  "thresholds": [
+    {
+      "gap": 0.1,
+      "k_star": 0.029305259421724753,
+      "optimal_H1_duration": 13.279337190781096,
+      "cos_squared_duration": 15.33365780351455
+    },
+    {
+      "gap": 0.2,
+      "k_star": 0.01220818910659544,
+      "optimal_H1_duration": 20.57422854836621,
+      "cos_squared_duration": 23.75707278153623
+    }
+  ],
+  "finite_switching_certificates": [
+    {
+      "gap": 0.1,
+      "duration": 20.0,
+      "second_moment": 0.032898681336964525,
+      "delta_upper": 0.01722570926683323,
+      "f_plus": 0.11435680009516887,
+      "f_minus": 0.2143568000951689,
+      "log_ratio_bias_upper": 0.06301641123507051,
+      "passes_switching": true
+    },
+    {
+      "gap": 0.2,
+      "duration": 20.0,
+      "second_moment": 0.032898681336964525,
+      "delta_upper": 0.01722570926683323,
+      "f_plus": 0.07956760973950609,
+      "f_minus": 0.2795676097395061,
+      "log_ratio_bias_upper": 0.13617903385359592,
+      "passes_switching": false
+    },
+    {
+      "gap": 0.1,
+      "duration": 30.0,
+      "second_moment": 0.014621636149762012,
+      "delta_upper": 0.007655870785259214,
+      "f_plus": 0.11435680009516887,
+      "f_minus": 0.2143568000951689,
+      "log_ratio_bias_upper": 0.029708973452343745,
+      "passes_switching": true
+    },
+    {
+      "gap": 0.2,
+      "duration": 30.0,
+      "second_moment": 0.014621636149762012,
+      "delta_upper": 0.007655870785259214,
+      "f_plus": 0.07956760973950609,
+      "f_minus": 0.2795676097395061,
+      "log_ratio_bias_upper": 0.06485003764262867,
+      "passes_switching": true
+    }
+  ],
+  "budgets": [
+    {
+      "budget": 100000.0,
+      "maximum_symmetric_duration": 13.815460557289262,
+      "maximum_rest_start_duration": 6.907730278644631,
+      "cos_squared_certificate_interval": null,
+      "any_H1_second_moment_certificate_possible": false,
+      "fixed_windows": [
+        {
+          "duration": 20.0,
+          "energy_required": 2202646.6929804906,
+          "passes_budget": false,
+          "passes_both_gaps_and_budget": false
+        },
+        {
+          "duration": 30.0,
+          "energy_required": 326901737.2479758,
+          "passes_budget": false,
+          "passes_both_gaps_and_budget": false
+        }
+      ]
+    },
+    {
+      "budget": 100000000.0,
+      "maximum_symmetric_duration": 27.63102111587855,
+      "maximum_rest_start_duration": 13.815510557939275,
+      "cos_squared_certificate_interval": [
+        23.75707278153623,
+        27.63102111587855
+      ],
+      "any_H1_second_moment_certificate_possible": true,
+      "fixed_windows": [
+        {
+          "duration": 20.0,
+          "energy_required": 2202646.6929804906,
+          "passes_budget": true,
+          "passes_both_gaps_and_budget": false
+        },
+        {
+          "duration": 30.0,
+          "energy_required": 326901737.2479758,
+          "passes_budget": false,
+          "passes_both_gaps_and_budget": false
+        }
+      ]
+    }
+  ],
+  "recoil_deletion_witness": [
+    {
+      "rapidity": 0.5,
+      "complete_budget": 164.87212707001282,
+      "material_only": 112.76259652063807,
+      "missing_recoil_energy": 52.10953054937475
+    },
+    {
+      "rapidity": 1.0,
+      "complete_budget": 271.8281828459045,
+      "material_only": 154.30806348152436,
+      "missing_recoil_energy": 117.52011936438015
+    },
+    {
+      "rapidity": 3.0,
+      "complete_budget": 2008.553692318767,
+      "material_only": 1006.7661995777765,
+      "missing_recoil_energy": 1001.7874927409904
+    }
+  ],
+  "probability_contract": {
+    "leading_probability_lowers": [
+      {
+        "gap": 0.1,
+        "duration": 20.0,
+        "leading_probability_lower": 5.460135003395356e-05
+      },
+      {
+        "gap": 0.2,
+        "duration": 20.0,
+        "leading_probability_lower": 3.799073520014769e-05
+      },
+      {
+        "gap": 0.1,
+        "duration": 30.0,
+        "leading_probability_lower": 8.190202505093035e-05
+      },
+      {
+        "gap": 0.2,
+        "duration": 30.0,
+        "leading_probability_lower": 5.698610280022154e-05
+      }
+    ],
+    "common_probability_lower": 3.799073520014769e-05,
+    "relative_error_max": 0.04995837495787998,
+    "required_full_absolute_error": 1.8979553940545077e-06,
+    "full_error_achieved": false,
+    "leading_coefficient_is_not_full_probability": true
+  },
+  "fixed_windows_jointly_pass": false,
+  "higher_budget_continuous_certificate_intersection_nonempty": true,
+  "actual_common_source_clock_field_instrument_constructed": false,
+  "stage_complete": false,
+  "source_sha256": {
+    "archive_1219_/1222/proof.md": "f2b63a1e0e9668ffb3975f32cf032edf64d50f9583e9e537f0902384ac1ece17",
+    "archive_1219_/1222/check.py": "902c5146208708571cc7d376bde0b85d9324e7ccb96e23e9498fc46ff44bdef5",
+    "archive_1106_1119/1114/proof.md": "36529e5f56971a8baf66065928b5b7d1899d6444f257b1cc7008a01fd42be9a2",
+    "archive_990_1008/research_note_1004.md": "ae717955f940e15ff1861e56c4c02e067564d15767abe713bf4cc5db1548c5fd",
+    "archive_1219_/_admission/finite_source_unruh_screen_after1221.md": "13e8f119c35580606ce8df1f21ef9415dec27c995f1c907261a876bc57d9a623"
+  }
+}

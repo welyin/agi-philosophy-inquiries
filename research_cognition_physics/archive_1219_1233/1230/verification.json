@@ -1,0 +1,64 @@
+{
+  "schema": "round1230_root_verification_v1",
+  "date": "2026-10-15",
+  "status": "PASS",
+  "scientific_files_sha256": {
+    "proof.md": "1a55db79c9318f70cfb4ede5592763dfbbefea48643f4113131a1d250ba259b7",
+    "check.py": "e88cebf93ab291b8ffd0ac72eafd0d58bc41260551fed908b38a4c35da27fd7b",
+    "results.json": "36f5eaa5105e39b0d3e7535dd7ec5e341bb6bddbe6c2f3b61c8bf19747bc8521",
+    "independent_check.py": "59e1ed9526f883b40290d9612f46cc4be35ad419f4538b448967117feb9813e2",
+    "independent_results.json": "93bab69998ceee7364b45ad937d8f65475ce519d13207c44faec2b79d2b4966f",
+    "independent_review.md": "ad40c9aee28d75cc2cbff38785b312a348fce7ec8c4efda4f1572a56e29ce132",
+    "NEXT.md": "d5fd38c7121aad7acd5fdcf05e74531d716b87f2b435e142ca9d16974e6b48ae",
+    "../research_note_1230.md": "d5a1ef9015d8c2b7221d34d8644f01450f1568213fbb3229ab0444ab92b828ad",
+    "../_admission/after1229_geometry_roles_and_area_priority.md": "296fb31705a8e4a62f3fc1b7b36aaf97854fdab33ac3c95796bdf06bc6083eec",
+    "../_admission/after1230_finite_motion_thermal_admission.md": "a2f141fbd3e53b75b45b32dfaa448d7d2bb99b4b749178b4f07920110bbb04db"
+  },
+  "root_executed_both_codes": true,
+  "checks": [
+    {
+      "entry": "1230/check.py",
+      "exit_code": 0,
+      "result": {
+        "round": 1230,
+        "status": "PASS",
+        "check_groups": 4,
+        "actual_MI_gap_lower": 4.500899343477501e-22,
+        "field_energy_error_upper": 7.2e-17,
+        "branch_stress_error_upper": 3.221297472e-12,
+        "read_only": true
+      }
+    },
+    {
+      "entry": "1230/independent_check.py",
+      "exit_code": 0,
+      "result": {
+        "round": 1230,
+        "status": "PASS",
+        "check_groups": 6,
+        "actual_MI_gap_lower": 1.1590196042770374e-21,
+        "empirical_MI_gap_lower": 1.1286613516756052e-21,
+        "read_only": true
+      }
+    }
+  ],
+  "markdown_local_links_checked": 36,
+  "source_bindings_verified": 12,
+  "display_math_delimiters_paired": true,
+  "control_character_scan_passed": true,
+  "independent_review_bindings_verified": true,
+  "counted_scientific_groups": 4,
+  "independent_groups": 6,
+  "independent_groups_added_to_scientific_total": false,
+  "analytic_review_includes": [
+    "heat-kernel and Schwinger constants with independent upper bound",
+    "actual geometry parameters transported through supports and normalization",
+    "binary covariance mutual-information bounds and synchronous full-auxiliary gates",
+    "actual regional-channel correction and split reference scope",
+    "same-state weighted-source estimates and complete clocks/records/initial interaction energy"
+  ],
+  "actual_continuum_field_truncated": false,
+  "actual_geometry_contract_conditional": true,
+  "empirical_repetitions_performed": false,
+  "stage_complete": false
+}

@@ -1,0 +1,79 @@
+{
+  "schema": "research_closure_1219_1233_verification_v1",
+  "date": "2026-10-15",
+  "status": "PASS",
+  "scope": "Current archive relocation, preserved scientific evidence, scoped replay and next-stage preparation",
+  "migration": {
+    "schema": "research_closure_1219_1233_v1",
+    "date": "2026-10-15",
+    "stages": [
+      {
+        "source": "research_cognition_physics/archive_1219_",
+        "destination": "research_cognition_physics/archive_1219_1233",
+        "first_round": 1219,
+        "last_round": 1233
+      }
+    ],
+    "source_file_counts": {
+      "archive_1219_": 231
+    },
+    "source_suffix_counts": {
+      ".md": 93,
+      ".json": 102,
+      ".py": 35,
+      ".txt": 1
+    },
+    "external_markdown_files": 5,
+    "scientific_python_json_unchanged": true,
+    "new_scientific_rounds": 0,
+    "GR_goal_completed": false,
+    "thermal_geometry_goal_status": "complete",
+    "next_round": 1234,
+    "new_goal_started": false,
+    "directory_copy_used": false,
+    "old_directory_shell": false,
+    "zip_created": false,
+    "replay_entry": "scripts/run_research_thermal_geometry_closed.py",
+    "manifest_entries": 236,
+    "reversible_markdown_files": 8,
+    "frozen_support_files": 133,
+    "status": "PASS",
+    "old_directories_absent": true
+  },
+  "runtime_check_count": 11,
+  "runtime_checks_sha256": "e94091126146e17a59c4bd881a083edc01796b362ae561cd1bae7f355e691fcb",
+  "independent_review_sha256": "b2854e5b5b9e290c3dd867d3f86ebf6ea151234338bef6802e37a4bdebb5e865",
+  "parent_stage_replay_observed": {
+    "status": "PASS_IN_DECLARED_SCOPE",
+    "final_bindings_verified": 203,
+    "rounds": 15,
+    "author_check_groups": 63,
+    "old_historical_closure_status": "EXTERNAL_EDIT",
+    "whole_historical_closure_passed": false
+  },
+  "new_scientific_rounds": 0,
+  "new_goal_started": false,
+  "next_round": 1234,
+  "link_check": {
+    "status": "PASS",
+    "documents": 101,
+    "local_links_checked": 5618,
+    "fragment_context": {
+      "file": "research_cognition_physics/archive_1219_1233/_shared/navigation_notice.md",
+      "base": "research_cognition_physics",
+      "reason": "Frozen navigation template is inserted into research-root Markdown files."
+    },
+    "broken_links": [],
+    "stale_old_directory_targets": []
+  },
+  "support_sha256": {
+    "research_cognition_physics/_migration/closure_1219_1233/manifest.json": "b7b33781a76e9dee159e86f4471aa1631113e45e01eeb72366c4f6cc545c2351",
+    "research_cognition_physics/_migration/closure_1219_1233/README.md": "5fb3a09dfb808c7c117310bf8cbd4e7d948906599ac8aee666b208e61abbb7b5",
+    "research_cognition_physics/_migration/closure_1219_1233/next_stage_plan.md": "2b7616d86ddb10b0d42280f1a827c657a8c5c89315d6c41a4cd0742060c94ae0",
+    "research_cognition_physics/_migration/closure_1219_1233/independent_review.md": "b2854e5b5b9e290c3dd867d3f86ebf6ea151234338bef6802e37a4bdebb5e865",
+    "research_cognition_physics/_migration/closure_1219_1233/runtime_checks.json": "e94091126146e17a59c4bd881a083edc01796b362ae561cd1bae7f355e691fcb",
+    "research_cognition_physics/_migration/closure_1219_1233/link_checks.json": "68c3f7d3913f3067de8c3ab5ff6c4e59492cc874edf2b6636a1a76cd7ea1c8ae",
+    "scripts/close_research_1219_1233.py": "a11adcc4a606ce251ebef0a66b45f0df7bd23a3eed23807d4912876e0de54e4f",
+    "scripts/run_research_thermal_geometry_closed.py": "aae3cf95a989adacbdcbde76c99299149e0e1609a070de255d1cfdd09312c799"
+  }
+}

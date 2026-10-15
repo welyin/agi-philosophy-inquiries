@@ -1,0 +1,191 @@
+{
+  "round": 1232,
+  "status": "PASS",
+  "check_groups": 5,
+  "groups": {
+    "KMS_sign_and_actual_excitation_convention": {
+      "status": "PASS",
+      "correlation": "omega(B_t B_0)",
+      "Fourier_sign": "W(t)=integral exp(+i nu t) mu(dnu)",
+      "detailed_balance": "mu(-dnu)=exp(beta nu) mu(dnu)",
+      "excitation_filter": "abs(chi_hat(E-nu))^2",
+      "finite_thermal_fixture_not_Dirac": true,
+      "positive_frequency_weight": "1/3",
+      "negative_frequency_weight": "2/3",
+      "diagnostics": [
+        {
+          "t": 0.125,
+          "residual": 1.1102230246251565e-16
+        },
+        {
+          "t": 0.75,
+          "residual": 1.1102230246251565e-16
+        },
+        {
+          "t": 1.25,
+          "residual": 0.0
+        }
+      ]
+    },
+    "finite_switch_band_bound_and_regression": {
+      "status": "PASS",
+      "exact_core_filter_factor": "279841/331776",
+      "leading_response_lower": {
+        "exact": "279841/1296",
+        "display": 215.9266975308642
+      },
+      "each_tail_upper": {
+        "exact": "1/4",
+        "display": 0.25
+      },
+      "reflected_measure_total_mass_bound_used": true,
+      "tail_over_core": {
+        "exact": "324/279841",
+        "display": 0.0011578003223258922
+      },
+      "atomic_fixture": {
+        "1": "1/32",
+        "-1": "1/16",
+        "2": "1/48",
+        "-2": "1/12",
+        "0": "5/96"
+      },
+      "atomic_fixture_not_Dirac_data": true,
+      "float_regressions_not_continuum_certificates": [
+        {
+          "gap": 1,
+          "response_plus": 512.0000520654826,
+          "response_minus": 1024.0000952680903,
+          "log_bias_diagnostic": 8.65515037418163e-09
+        },
+        {
+          "gap": 2,
+          "response_plus": 341.3333563864641,
+          "response_minus": 1365.3333780078735,
+          "log_bias_diagnostic": 3.481785681991312e-08
+        }
+      ]
+    },
+    "simultaneous_finite_conditional_budget": {
+      "status": "PASS",
+      "x": {
+        "exact": "1/512",
+        "display": 0.001953125
+      },
+      "odd_Dyson_remainder_upper": {
+        "exact": "5/4026531072",
+        "display": 1.2417636696682618e-09
+      },
+      "complete_probability_error_upper": {
+        "exact": "8300480748916733/79164807000886080000000000",
+        "display": 1.0485064087661866e-10
+      },
+      "leading_probability_lower": {
+        "exact": "279841/5566277615616",
+        "display": 5.0274351968165534e-08
+      },
+      "actual_probability_lower_if_contract_holds": {
+        "exact": "74962551458548362802265881/1494185699983700199997440000000000",
+        "display": 5.0169501327288914e-08
+      },
+      "operation_error_input": {
+        "exact": "1/10000000000",
+        "display": 1e-10
+      },
+      "relative_error_allowance": "1/100",
+      "joint_log_ratio_error_upper": {
+        "exact": "3192061590670949543/16399265816784810960",
+        "display": 0.19464661566762598
+      },
+      "ln2_interval": [
+        {
+          "exact": "149337754816/215448838605",
+          "display": 0.6931471795482413
+        },
+        {
+          "exact": "10154967342503/14650521025140",
+          "display": 0.6931471805731195
+        }
+      ],
+      "fixed_gap_menu": [
+        1,
+        2
+      ],
+      "fixed_core_mass": "1/64",
+      "specified_Dirac_core_mass_certified": false,
+      "actual_motion_clock_source_contract_constructed": false
+    },
+    "complete_odd_flip_Dyson_bound": {
+      "status": "PASS",
+      "all_order_time_ordered_bound": "sum odd n>=3 x^n/n!",
+      "generic_x_le_1_bound": "d_D <= x^4/2",
+      "pure_flip_structure_required": true,
+      "full_environment_kept": true,
+      "finite_complete_unitary_fixture_only": true,
+      "cases": [
+        {
+          "x": "1/8",
+          "full_probability": 0.015543789144677609,
+          "rational_complete_error_guard": {
+            "exact": "9605/117780552",
+            "display": 8.154996590608609e-05
+          }
+        },
+        {
+          "x": "1/3",
+          "full_probability": 0.10705636961152598,
+          "rational_complete_error_guard": {
+            "exact": "10840/2595321",
+            "display": 0.004176747307943796
+          }
+        },
+        {
+          "x": "1",
+          "full_probability": 0.7080734182735712,
+          "rational_complete_error_guard": {
+            "exact": "1240/3249",
+            "display": 0.3816558941212681
+          }
+        }
+      ]
+    },
+    "necessary_condition_deletions": {
+      "status": "PASS",
+      "zero_frequency_KMS_without_core_mass": true,
+      "zero_atom_response_lower": {
+        "exact": "178107760787273828015668973931379709129716798148397773822907216481/842826521045474821327263281085828641049537048785977344000000000000",
+        "display": 0.21132196999014938
+      },
+      "zero_atom_ratio": 1,
+      "fixed_absolute_error_can_destroy_ratio": true,
+      "diagonal_interaction_creates_second_order_flip": true,
+      "even_amplitude_sum_diagnostic": [
+        -0.031087578289355218,
+        0.0
+      ],
+      "wrong_clock_rate_effect": "beta -> beta/c",
+      "no_deletion_is_a_counterexample_to_the_entire_cognitive_program": true
+    }
+  },
+  "analytic_review_only": {
+    "massive_pair_boost_absolute_continuity": true,
+    "positive_Lebesgue_point_existence": true,
+    "no_assumed_pointwise_continuous_density": true,
+    "specified_Dirac_numerical_spectrum": false,
+    "finite_comparison_field_energy_from_bounded_commutator": true
+  },
+  "scope": {
+    "conditional_complete_probability_Unruh": true,
+    "scalar_spectrum_substituted": false,
+    "actual_autonomous_accelerated_apparatus": false,
+    "actual_source_internalization": false,
+    "TG2_or_stage_completion": false
+  },
+  "source_sha256": {
+    "archive_1120_1158/1126/proof.md": "06644f8cc78f2075d62b67dee961a4064208c5226047405652201c337b5f3a76",
+    "archive_1219_/1228/proof.md": "3bfff8396ca39798180f14ed6f0f9862d6d24898ffe108dab01b1e9f18ead074",
+    "archive_1219_/1229/proof.md": "62acaf16867864cf0c51aa1a4fd1e12301f33872aec6c9e7e01ac7d1a51b07f0",
+    "archive_1219_/_admission/stage_scope_audit_after1230.md": "d94ea8bfc91ab23b2bc0a11b8b273bc39fdc8a59638512d259760363bee9a361",
+    "archive_1219_/1232/independent_check.py": "4cad3cf22eb0ac306b7323db57c7226e01d821920bba401face6307eff22e8c6"
+  }
+}

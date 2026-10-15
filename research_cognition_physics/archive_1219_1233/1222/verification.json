@@ -1,0 +1,36 @@
+{
+  "schema": "round1222_root_verification_v1",
+  "date": "2026-10-15",
+  "status": "PASS",
+  "scientific_files_sha256": {
+    "proof.md": "f2b63a1e0e9668ffb3975f32cf032edf64d50f9583e9e537f0902384ac1ece17",
+    "check.py": "902c5146208708571cc7d376bde0b85d9324e7ccb96e23e9498fc46ff44bdef5",
+    "results.json": "0188a829c2a97a5643f146fc81d1430c82c7d675b3e20ffb1c0a7c6b79077662",
+    "independent_check.py": "13d6e2cd6c5e0dd80096d48e96884e5a6b4022fafa8f63772344a1e2b26912c5",
+    "independent_results.json": "417d014917122e46346ef5cfbedf43dc395dc1b97c3b34c6be107fb06192e0fe",
+    "independent_review.md": "af6a4c9c53848fdc496e019e692da24b98cb4c5cb2ab39cbbff87c576efa90c7",
+    "NEXT.md": "a012e49f0cd6bb547920cdad69daf3e112df55c31deaa186c3fdc5b0e1b3ad93",
+    "../research_note_1222.md": "0534313bd98133fcb783d03675feee2ab5de4630d1c620e3a021faaa7981e52a",
+    "../_admission/finite_source_unruh_screen_after1221.md": "13e8f119c35580606ce8df1f21ef9415dec27c995f1c907261a876bc57d9a623",
+    "../_admission/unruh_scope_independent_after1221.md": "117ec77fb7fc604ef0859db62035e3bca9bad105f1505885253b8bd42308e201"
+  },
+  "root_executed_both_codes": true,
+  "checks": [
+    {
+      "entry": "1222/check.py --verify",
+      "exit_code": 0,
+      "result": "PASS: 4 groups; saved results match"
+    },
+    {
+      "entry": "1222/independent_check.py",
+      "exit_code": 0,
+      "result": "PASS: 6 groups; Decimal and direct switching norm check"
+    }
+  ],
+  "markdown_local_links_checked": 53,
+  "display_math_delimiters_paired": true,
+  "counted_scientific_groups": 4,
+  "independent_groups": 6,
+  "independent_groups_added_to_scientific_total": false,
+  "stage_complete": false
+}

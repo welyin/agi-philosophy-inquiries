@@ -1,0 +1,268 @@
+{
+  "round": 1230,
+  "status": "PASS",
+  "check_groups": 4,
+  "groups": {
+    "continuum_kernel_and_independent_geometry": {
+      "status": "PASS",
+      "mass": 1,
+      "flavors": 2,
+      "used_flavor": 1,
+      "envelope_order": 8,
+      "regularity": "C7 and H8, not C-infinity",
+      "J_exact": "65536/109395",
+      "I0_exact": "4294967296/9917826435",
+      "Q_exact": "392863/474045",
+      "derivative_norm_ratio_exact": "44/5",
+      "Fourier_kernel_G": "K1(r)/(2*pi^2*r)",
+      "covariance_kernel": "d_z*K2(r)/(4*pi^2*r^2)",
+      "Schwinger_covariance_prefactor_without_pi": "1/32",
+      "K2_over_r2_bounds": "2/r^4-1/(2*r^2) <= K2(r)/r^2 <= 2/r^4",
+      "pi_certified_interval": [
+        "314159/100000",
+        "22/7"
+      ],
+      "geometry_tolerance_exact": "1/100000000",
+      "interval_applies_to_mode_normalization_and_support": true,
+      "menus": [
+        {
+          "a_nominal": 0.1,
+          "area_nominal": 0.04,
+          "area_interval": [
+            0.0399999920000004,
+            0.0400000080000004
+          ],
+          "actual_mode_geometry_intervals": {
+            "ax": [
+              0.09999999,
+              0.10000001
+            ],
+            "ay": [
+              0.09999999,
+              0.10000001
+            ],
+            "b": [
+              0.00999999,
+              0.01000001
+            ],
+            "D": [
+              0.99999999,
+              1.00000001
+            ]
+          },
+          "longitudinal_gap_lower": 0.97999997,
+          "distance_squared_upper": 1.1204000772000018,
+          "c_lower": 1.6193355163747494e-06,
+          "c_upper": 3.188835558729988e-06,
+          "field_mode_h_squared_upper": 89761.17635226405,
+          "exact_c_lower": "217158762943251751901634458829108486842558440440953527803927/134103625065552204315912120056021858340161749640000000000000000000",
+          "exact_c_upper": "674770494887239418662135699266909029284280000000/211604042434843867678160697553371236666760658466062863"
+        },
+        {
+          "a_nominal": 0.2,
+          "area_nominal": 0.16,
+          "area_interval": [
+            0.1599999840000004,
+            0.1600000160000004
+          ],
+          "actual_mode_geometry_intervals": {
+            "ax": [
+              0.19999999,
+              0.20000001
+            ],
+            "ay": [
+              0.19999999,
+              0.20000001
+            ],
+            "b": [
+              0.00999999,
+              0.01000001
+            ],
+            "D": [
+              0.99999999,
+              1.00000001
+            ]
+          },
+          "longitudinal_gap_lower": 0.97999997,
+          "distance_squared_upper": 1.3604000932000018,
+          "c_lower": 4.027316683581886e-06,
+          "c_upper": 1.2755340959385888e-05,
+          "field_mode_h_squared_upper": 88441.17604426401,
+          "exact_c_lower": "2321395962892691727626713299290782452232738038393329293889/576412570771079078076236544885764114503095480000000000000000000",
+          "exact_c_upper": "36287654096281778716787777741573772238155320000000/2844898792735123109895271600439768848519782186043734047"
+        }
+      ],
+      "schwinger_diagnostic_only": [
+        {
+          "r": 0.98,
+          "K2_over_r2_diagnostic": 1.7745798756120108,
+          "analytic_lower": 1.647715159638642,
+          "analytic_upper": 2.1683315694678797
+        },
+        {
+          "r": 1.1,
+          "K2_over_r2_diagnostic": 1.0681207978623626,
+          "analytic_lower": 0.9528037702342733,
+          "analytic_upper": 1.366026910730141
+        },
+        {
+          "r": 1.2,
+          "K2_over_r2_diagnostic": 0.7241848969247124,
+          "analytic_lower": 0.617283950617284,
+          "analytic_upper": 0.9645061728395062
+        }
+      ],
+      "certificate": "analytic continuum kernel plus exact rational geometry bounds"
+    },
+    "full_CAR_and_entity_records": {
+      "status": "PASS",
+      "field_restriction_dimension": 4,
+      "PE_dimension": 16,
+      "full_joint_dimension": 64,
+      "mode_algebras_commute_evenly": true,
+      "cases": [
+        {
+          "c": 3e-06,
+          "probabilities": [
+            0.249999999991,
+            0.250000000009,
+            0.250000000009,
+            0.249999999991
+          ]
+        },
+        {
+          "c": 0.125,
+          "probabilities": [
+            0.234375,
+            0.265625,
+            0.265625,
+            0.234375
+          ]
+        },
+        {
+          "c": 0.3,
+          "probabilities": [
+            0.16,
+            0.33999999999999997,
+            0.33999999999999997,
+            0.16
+          ]
+        }
+      ],
+      "max_float_residual": 0.0,
+      "ideal_probabilities": "(.25-c^2,.25+c^2,.25+c^2,.25-c^2)",
+      "full_continuum_not_replaced_by_finite_matrix": true,
+      "both_environment_registers_retained": true
+    },
+    "actual_finite_information_response": {
+      "status": "PASS",
+      "logarithm": "natural",
+      "quantity": "actual binary pointer mutual information",
+      "actual_MI_intervals": [
+        [
+          5.500945521535669e-23,
+          1.654430323496341e-21
+        ],
+        [
+          2.104520257844091e-21,
+          4.2353399152715583e-19
+        ]
+      ],
+      "actual_covariance_error_upper": 2.4e-20,
+      "actual_large_minus_small_MI_lower": 4.500899343477501e-22,
+      "exact_actual_gap_lower": "1421171174360990227906493108554978762196957042705934547433840829339907225524142937003359647182074584721943195622650629651239807682224212161902835349926597489849198566004169169395546709913809458508294532868226810910156430109166768267454173021961314157013936314690278592922748367993311954676812044567507466059133670456119136636771266239607995846325832217282074166518647928412587920991026315785533206732577394913538621523638717184301433156683653890290935950046326509188933096350295460315423641694937394940915466374933454533739881032727009134172594198209111673495391948579560998403048959496366418452562179374811465268682571578528022447622188885168914705000893745768163733375916558825827502211615578517646246732978044265945994029469770973368942242379924065858243797342624008473730977901965734047617209257331969856550477441887797404939569825696218067567852154450902243176925087601470325858642061033234554973370201376660174816315515991540535118847826810800926527831785054428671091063629973194613674239008163769665816414514108260175438293809/3157527120486457592781592855033216159623563235389963639992124385211080026883579661894580598828953901930013523762216436949851468590787233803142335630794662973407530652557549425415336213154075270420556668305772443066306200411483804247248797107179249765086694575218307928472796645821808765163715214037417220470878116458904265107087046520475025589579334464785959939727620308631996553351244061175740667275594476006834466031403220434147258901222362743691901867538205396763429544548708514304222435614966303681766224964077856817091729437400324269263914339418824419985945568250145635970237783672249734228160393825106531710969775120585709040363782041134589997298518840119018771126040007254675161420027769356966018676757812500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "certified_gap_greater_than": "4e-22 nats",
+      "ideal_region_MI_lower_bounds": [
+        5.500945622229974e-23,
+        2.1045202640722942e-21
+      ],
+      "actual_MI_not_automatically_bounded_by_original_region_MI": true,
+      "region_bound_from_actual": "I_region >= 8 max(|d_actual|-xi,0)^2",
+      "optional_sampling": {
+        "per_menu_trials": 40000000000000000000000000000,
+        "independent_preparations_input": true,
+        "per_cell_frequency_error": "1/100000000000000",
+        "predeclared_failure_probability": 0.01,
+        "union_failure_bound": "16 exp(-8) < .01",
+        "empirical_MI_intervals": [
+          [
+            5.334401682137736e-23,
+            1.6674718239694556e-21
+          ],
+          [
+            2.0941527188707426e-21,
+            4.23742271492614e-19
+          ]
+        ],
+        "empirical_gap_lower": 4.266808949012868e-22,
+        "actual_trials_performed": false,
+        "all_PE_registers_retained": 320000000000000000000000000000,
+        "all_clock_pairs_retained": 80000000000000000000000000000,
+        "total_preparation_baseline_energy_display": 8e+288,
+        "no_free_erasure_or_reused_blank_records": true
+      }
+    },
+    "same_source_and_complete_resources": {
+      "status": "PASS",
+      "same_center_times": [
+        1,
+        1
+      ],
+      "T": 2,
+      "clock_count": 2,
+      "M": "1e260",
+      "sigma": "1e-120",
+      "delta": "1e-24",
+      "per_gate_H_and_Q_commutator_upper": 3000,
+      "field_mode_H_norm_upper": 400,
+      "force_upper": 1.6e+49,
+      "clock_to_classical_vector_error": 3.2e-71,
+      "simultaneous_pulse_to_joint_instrument_vector_error": 6e-21,
+      "any_event_probability_error": 1.2e-20,
+      "branch_stress_error_upper": 3.221297472e-12,
+      "field_energy_error_upper": 7.2e-17,
+      "classical_and_ideal_field_H_norm_upper": 6000.0,
+      "actual_field_H_norm_upper": 1.2e+28,
+      "initial_two_clock_energy_display": 1e+260,
+      "pointer_baseline_energy": 4,
+      "initial_and_terminal_interaction_sum_upper": 4.8e-71,
+      "field_energy_gain_upper": 6000.0,
+      "reaction": "|Delta E_clocks + Delta E_field| <= endpoint bound",
+      "each_clock_ref_free_occupation_upper": 1.024e-141,
+      "both_clock_entropy_upper": "1e-136",
+      "PE_entropy_upper": "4 log 2",
+      "stress_Q": "same 1228 compact spacetime T00 smearing",
+      "source_is_same_terminal_state_free_continuation": true,
+      "not_actual_driven_future_source_history": true,
+      "all_apparatus_boost_or_proper_time": false
+    }
+  },
+  "scope": {
+    "normal_same_massive_Dirac_vacuum": true,
+    "continuum_positive_and_negative_spectra_retained": true,
+    "geometry_precedes_entropy": true,
+    "finite_region_effective_gate_input": true,
+    "same_reference_units_slice_and_geometry_role_contract_input": true,
+    "microscopic_pointwise_device": false,
+    "accelerated_thermometer": false,
+    "full_region_entropy_area_law": false,
+    "universal_area_coefficient": false,
+    "dynamical_area_backreaction": false,
+    "all_apparatus_boost_conservation": false,
+    "empirical_experiment": false,
+    "stage_complete": false
+  },
+  "source_sha256": {
+    "03_认知操作五公理与三维关系空间_阶段论文.md": "d14a56d9d9dd138cf39dbb652cd18b94427efa4ed22e9b8760d5af144f8a7d1d",
+    "04_认知时空操作公理与洛伦兹运动学_阶段论文.md": "ac72400f9043b72ac4344ea350ee7a10226a205db81c319d02e76a306a6c3b86",
+    "05_认知动力学公理与狭义相对论基础动力学_阶段论文.md": "ac725073d1bb5c6bd4c39f05da28a6b57e8f815c5f9dba39a4e0f5f6db8d89df",
+    "archive_1120_1158/1126/proof.md": "06644f8cc78f2075d62b67dee961a4064208c5226047405652201c337b5f3a76",
+    "archive_1219_/1227/proof.md": "3cbde4effccf211d8a1625e64f78049d5f65ca6c886256544bd414a002930861",
+    "archive_1219_/1228/proof.md": "3bfff8396ca39798180f14ed6f0f9862d6d24898ffe108dab01b1e9f18ead074",
+    "archive_1219_/1228/check.py": "f43c41a6e31ba8e1fb661d14e4ec2699a3ae56d1f7856a843bcb094e3427f76b",
+    "archive_1219_/1228/results.json": "cf92900840f0568891f597dc6f1fdcc7e6664aee0e0861052db81c1f72b99e6e",
+    "archive_1219_/_admission/after1229_geometry_roles_and_area_priority.md": "296fb31705a8e4a62f3fc1b7b36aaf97854fdab33ac3c95796bdf06bc6083eec",
+    "archive_1219_/1230/proof.md": "1a55db79c9318f70cfb4ede5592763dfbbefea48643f4113131a1d250ba259b7",
+    "archive_1219_/1230/check.py": "e88cebf93ab291b8ffd0ac72eafd0d58bc41260551fed908b38a4c35da27fd7b"
+  }
+}

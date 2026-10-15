@@ -1,0 +1,154 @@
+{
+  "schema": "round1223_continuum_Green_probability_v1",
+  "status": "PASS",
+  "check_groups": 4,
+  "group_names": [
+    "continuous_resolvent_and_rational_envelope",
+    "Gaussian_probability_and_covariance",
+    "normal_compact_preparation_and_resource_bounds",
+    "same_524_PDE_and_fixed_event_diagnostics"
+  ],
+  "analytic_rational_certificate": {
+    "kappa": "121/8000",
+    "Q_coefficient_rational_upper": "3611080/62078641",
+    "Q_coefficient_loose_upper": "59/1000",
+    "variance_C0_upper": "113/200",
+    "mean_squared_coefficient_upper": "839/1000",
+    "combined_amplitude_upper": "351/250",
+    "TV_coefficient_intermediate_upper": "20709/6250",
+    "TV_coefficient_upper": "83/25",
+    "fine_delta_rho": "1/10000000",
+    "fine_TV_upper": "83/250000000",
+    "reference_excitation_energy_upper": 1000,
+    "reference_mean_number_upper": 500,
+    "exact_rational_checks": true,
+    "pi_bounds_are_classical_analytic_inputs": true
+  },
+  "floating_constants": {
+    "spatial_volume": 4.1887902047863905,
+    "h_L1_L2_upper": 5.788810036466141,
+    "kappa": 0.015125000000000003,
+    "Q_coefficient": 0.05802494954700508,
+    "vacuum_split_optimal": 0.44735011446982476,
+    "vacuum_split_used": 0.5636258258934133,
+    "thermal_extra_coefficient": 0.6723682072841812,
+    "TV_coefficient": 3.244943846742616,
+    "figures_are_float_diagnostics": true
+  },
+  "Gaussian_checks": {
+    "noncommuting_QP_examples": [
+      {
+        "angle": 0.1,
+        "symmetric_covariance_eigenvalues": [
+          0.0024979173609870897,
+          0.9975020826390129
+        ],
+        "quantum_difference_variance": 0.004995834721974234
+      },
+      {
+        "angle": 0.7,
+        "symmetric_covariance_eigenvalues": [
+          0.11757890635775575,
+          0.8824210936422443
+        ],
+        "quantum_difference_variance": 0.23515781271551153
+      },
+      {
+        "angle": 1.3,
+        "symmetric_covariance_eigenvalues": [
+          0.3662505856877063,
+          0.6337494143122937
+        ],
+        "quantum_difference_variance": 0.7325011713754126
+      }
+    ],
+    "Gaussian_shift_envelope_max_excess": 0.0,
+    "auxiliary_classical_coupling_not_joint_quantum_measurement": true,
+    "general_nonGaussian_states_covered": false
+  },
+  "preparation": {
+    "Cauchy_plateau_radius": 1.5,
+    "Cauchy_support_radius": 2.0,
+    "maximum_past_domain_radius": 1.25,
+    "excitation_energy_quadrature_diagnostic": 63.14623011616213,
+    "L2_squared_quadrature_diagnostic": 20.780128200193424,
+    "number_upper_from_quadrature_diagnostic": 36.76814710812942,
+    "independent_analytic_energy_upper": 1000,
+    "independent_analytic_number_upper": 500,
+    "global_affine_reference_used": false,
+    "normal_Fock_coherent_preparation": true
+  },
+  "same_material_diagnostics": {
+    "spatial_step": 0.025,
+    "spectral_endpoint": 20.0,
+    "spectral_order": 192,
+    "inherited_PDE_modified_on_disk": false,
+    "rows": [
+      {
+        "delta_rho_upper": 0.0,
+        "effective_coupling_for_legacy_evaluation": 0.05,
+        "gain": 0.0023007553245133353,
+        "mean": -0.0010289290610412812,
+        "variance_truncated": 10.442895627101299,
+        "fixed_event_Y_ge_0_probability_truncated": 0.49987297622264637,
+        "Q_diagnostic": 0.0,
+        "analytic_Q_upper": 0.0,
+        "analytic_TV_rational_upper": 0.0,
+        "forward_advanced_residual": 3.0357660829594124e-18,
+        "fixed_event_difference_truncated": 0.0
+      },
+      {
+        "delta_rho_upper": 0.001,
+        "effective_coupling_for_legacy_evaluation": 0.04995,
+        "gain": 0.0022984548055222406,
+        "mean": -0.0010279002376717577,
+        "variance_truncated": 10.442898020221897,
+        "fixed_event_Y_ge_0_probability_truncated": 0.49987310324791157,
+        "Q_diagnostic": 1.6167854234007619e-06,
+        "analytic_Q_upper": 5.802494954700508e-05,
+        "analytic_TV_rational_upper": 0.00332,
+        "forward_advanced_residual": 6.938893903907228e-18,
+        "fixed_event_difference_truncated": 1.2702526519525748e-07
+      },
+      {
+        "delta_rho_upper": 1e-07,
+        "effective_coupling_for_legacy_evaluation": 0.049999995000000005,
+        "gain": 0.002300755094461458,
+        "mean": -0.001028928958158954,
+        "variance_truncated": 10.44289562734061,
+        "fixed_event_Y_ge_0_probability_truncated": 0.4998729762353489,
+        "Q_diagnostic": 1.6167852517939138e-10,
+        "analytic_Q_upper": 5.802494954700508e-09,
+        "analytic_TV_rational_upper": 3.3199999999999996e-07,
+        "forward_advanced_residual": 0.0,
+        "fixed_event_difference_truncated": 1.2702505713946266e-11
+      }
+    ],
+    "numerical_probability_is_not_interval_or_full_continuum_certification": true,
+    "finite_k_endpoint_is_not_physical_UV_cutoff": true
+  },
+  "scope": {
+    "full_single_readout_distribution_bound": true,
+    "nonperturbative": true,
+    "normally_prepared_finite_excitation_energy_example": true,
+    "actual_old_Gaussian_readout_reused": true,
+    "continuous_history_bound_independent_of_mesh": true,
+    "quantum_source_history_internalized": false,
+    "co_moving_clock_constructed": false,
+    "full_instrument_poststate_distance_controlled": false,
+    "directly_fills_1222_all_material_errors": false,
+    "general_nonGaussian_state_bound": false,
+    "new_adopted_axioms": 0,
+    "empirical_calibrations": 0,
+    "TG2_complete": false,
+    "stage_complete": false
+  },
+  "source_sha256": {
+    "archive_1219_/1223/check.py": "8fd93f61163faa639a3359d82b321254187ec6eabeed5bcec73ce4c6702a595f",
+    "archive_1219_/1223/proof.md": "59abd708aa6aeccfa00a7d7bf7c508f4c64b2719fdf63e80637752750bfe567d",
+    "archive_467_530/research_note_524.md": "a9ce2b08de78fcbe77194829c608918d7c37cf7f907e0e02d67400e5188bc935",
+    "archive_467_530/524/compact_probe_reference_model.py": "9df9ce19ee49ea6b3257a463a2948549e4c5b32bd0003d74af9a35fa467f90b7",
+    "archive_467_530/524/compact_probe_reference_results.json": "e0da78e104855773c072e8d9c009a97f29467825de74ed243dbfe194382ee28d",
+    "archive_467_530/523/thermal_direction_bridge_model.py": "1adeab319ab6237e33566d941344f2877446cc2bf728fb15f378e2e7b58524f3"
+  }
+}

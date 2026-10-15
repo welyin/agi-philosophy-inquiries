@@ -1,0 +1,141 @@
+{
+  "round": 1233,
+  "status": "PASS",
+  "check_groups": 4,
+  "groups": {
+    "CAR_source_boundary_identity": {
+      "status": "PASS",
+      "diagnostic_modes": 4,
+      "fock_dimension": 16,
+      "filled_negative_modes": 2,
+      "car_residual": 0.0,
+      "CAR_source_residual": 0.0,
+      "one_particle_boundary_identity_residual": 0.0,
+      "normal_ordered_free_identity_residual": 8.881784197001252e-16,
+      "bounded_source_norm_to_bound_ratios": [
+        0.16517521236405303
+      ],
+      "HS_kernel_not_assumed_bounded_Fock_generator": true
+    },
+    "actual_autonomous_history_and_regional_balance": {
+      "status": "PASS",
+      "full_diagnostic_dimension": 256,
+      "all_finite_controllers_and_records_retained": true,
+      "original_Gaussian_clock_simulation": false,
+      "original_infinite_Dirac_simulation": false,
+      "operator_identity_residuals": {
+        "regional_field": 2.4424906541753444e-15,
+        "regional_with_controller": 3.552713678800501e-15,
+        "sources_commute": 0.0,
+        "global_field": 2.9976021664879227e-15,
+        "global_controller": 8.881784197001252e-16,
+        "complementary_boundary": 3.552713678800501e-15
+      },
+      "actual_history_duration": 0.7,
+      "quadrature_points": 24,
+      "integrated_balance_residuals": {
+        "field_integrated": 1.7694179454963432e-16,
+        "controller_region_integrated": 3.0322966360074588e-15,
+        "complete_energy": 1.9845236565174673e-15
+      },
+      "actual_energy_changes": {
+        "q": 0.010623196691181542,
+        "regional": -0.009394883502833906,
+        "hf": 0.025239585401352533,
+        "c": -0.1325350079898291,
+        "v": 0.10729542258847458
+      },
+      "actual_boundary_inflow_integral": -0.009394883502830874,
+      "actual_control_source_integral": 0.02001808019401224
+    },
+    "omitted_source_and_interaction_energy_counterexample": {
+      "status": "PASS",
+      "observation_time": 0.37,
+      "true_field_rate": 0.014073710296634928,
+      "incorrectly_free_field_rate": -0.01668328485428565,
+      "deleted_actual_source_residual": 0.030756995150920577,
+      "time_integrated_deleted_source": 0.02001808019401224,
+      "interaction_energy_change": 0.10729542258847458,
+      "omitted_interaction_energy_residual": 0.10729542258847656,
+      "finite_example_only": true
+    },
+    "same_continuum_material_geometry_and_finite_bounds": {
+      "status": "PASS",
+      "original_mode_H_regularities": 8,
+      "original_mode_H_norm_upper": 400,
+      "original_geometry_tolerance": "1/100000000",
+      "boundary_defined_before_energy_and_entropy": true,
+      "fixed_small_plateau_centers_z": [
+        2,
+        3
+      ],
+      "small_plateau_halfwidths": [
+        0.3,
+        0.3,
+        0.1
+      ],
+      "small_transition_widths": [
+        0.2,
+        0.2,
+        0.1
+      ],
+      "larger_plateau_center": [
+        0,
+        0,
+        2.5
+      ],
+      "larger_plateau_halfwidths": [
+        3,
+        3,
+        3
+      ],
+      "all_actual_geometry_supports_and_time_halo_contained": true,
+      "chi_norm_bounds": [
+        1.0,
+        24.0,
+        900.0
+      ],
+      "A_on_original_transported_mode_bound": "412",
+      "J_on_original_transported_mode_bound": "10050",
+      "uniform_actual_region_energy_absolute_bound": 1.0358857142857142e+28,
+      "uniform_actual_boundary_flux_absolute_bound": 2.5268571428571427e+29,
+      "uniform_actual_control_source_absolute_bound": 5.179428571428571e+27,
+      "bounds_are_finite_sufficient_not_optimized": true,
+      "regulator_only_used_in_analytic_definition": true,
+      "finite_R_CAR_quadratic_trace_class": true,
+      "Q_chi_on_vacuum_not_assumed": true,
+      "no_C2_quantitative_cutoff_rate_claim": true,
+      "existing_independent_geometry_actual_MI_gap": 4.500899343477501e-22,
+      "reused_geometry_record_certificate_not_recomputed": true
+    }
+  },
+  "scope": {
+    "actual_full_driven_history": true,
+    "old_1230_Dirac_material_reference_controls_and_records_reused": true,
+    "continuum_domain_proved_analytically_not_numerically": true,
+    "local_energy_expectation_difference_not_new_sharp_operator": true,
+    "effective_regional_gate_permission_input": true,
+    "spatial_apparatus_worldtubes": false,
+    "all_apparatus_four_momentum": false,
+    "independent_geometry_information_response_reused": true,
+    "area_response_dynamics": false,
+    "Einstein_dynamics": false,
+    "new_energy_measurement_device": false,
+    "Unruh_device": false,
+    "empirical_experiment": false,
+    "stage_complete": false
+  },
+  "source_sha256": {
+    "archive_1120_1158/1128/proof.md": "fc9963b8f77d0a60e2233acbcc68e02e583af345a5653d1d4431ea619be0fcd2",
+    "archive_1120_1158/1138/proof.md": "8e5579d3349f7835f9a8fbfe03cc48625c25706115d6345fda91d41dffea5310",
+    "archive_1120_1158/1150/energy_balance.md": "480b751cac36bea04adb4e5d53eaec5cf6e2acdc747e780efa7de58c026feea2",
+    "archive_1219_/1228/proof.md": "3bfff8396ca39798180f14ed6f0f9862d6d24898ffe108dab01b1e9f18ead074",
+    "archive_1219_/1229/proof.md": "62acaf16867864cf0c51aa1a4fd1e12301f33872aec6c9e7e01ac7d1a51b07f0",
+    "archive_1219_/1230/proof.md": "1a55db79c9318f70cfb4ede5592763dfbbefea48643f4113131a1d250ba259b7",
+    "archive_1219_/1230/check.py": "e88cebf93ab291b8ffd0ac72eafd0d58bc41260551fed908b38a4c35da27fd7b",
+    "archive_1219_/1230/results.json": "36f5eaa5105e39b0d3e7535dd7ec5e341bb6bddbe6c2f3b61c8bf19747bc8521",
+    "archive_1219_/_admission/stage_scope_audit_after1230.md": "d94ea8bfc91ab23b2bc0a11b8b273bc39fdc8a59638512d259760363bee9a361",
+    "archive_1219_/1233/proof.md": "d42417a88bd21abffe4ac099a9e6fc3040823a4f2d224620f0fe180fb1b7e00d",
+    "archive_1219_/1233/check.py": "da938b038981e1e7fc04811700da61edead10ed0d32dec16d09a9480a2923ef4"
+  }
+}

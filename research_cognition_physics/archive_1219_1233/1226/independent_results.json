@@ -1,0 +1,244 @@
+{
+  "status": "PASS",
+  "all_checks_passed": true,
+  "check_groups": 6,
+  "independent_code_sha256": "2a35acf2a17864140a615b56a168760556f6197378baf02dce6ae7830504d082",
+  "source_sha256": {
+    "archive_554_584/569/joint_quotient_gauge_completion_results.json": "8f716f7ddc239f6f0be949772bedfa0972abf608855b417dcc206c1464b5fc70",
+    "archive_585_628/598/joint_fermion_gauss_completion_results.json": "2ce4f397dea7b4afd201b385e302d24bbbdde07aa352121f8f2f9d15d5e31690",
+    "archive_585_628/603/joint_thermal_gauss_source.py": "b6a44e1cf03e1d45ab2aa3bfdd1ea16c853313e466df51df6284a08cc7f7f58b",
+    "archive_629_652/research_note_637.md": "9dd65ccae9bed584e61c98c88b2768f8c6dc940ab3b9e5c10bf1312da6ba6a72",
+    "archive_1219_/1221/proof.md": "b57dbed7f92210b753a0bf980206cb999d5243286247d888a799cd6f76de6b70",
+    "archive_1219_/1225/proof.md": "ef2987369cce9641c14c0d02ed703bcc5ec82bc6c13dd99bd387d1f442615fbe"
+  },
+  "local_constants": {
+    "original_lambda_lower": 0.09245786682717515,
+    "original_D": 11.259218491244658,
+    "recomputed_A": 2.7301695286861514,
+    "recomputed_B0": 1.1359154281449406,
+    "rational_mass_prefactor_upper": "9436/75",
+    "young_remainder_upper": "1847/2",
+    "magnetic_dimension_weighted_sum": 14.491973305311701,
+    "cT": "1/4000",
+    "u": "1/4",
+    "shift_per_site": 1072,
+    "inputs_are_frozen_model_parameters_not_experimental_uncertainty": true,
+    "no_N_in_local_constants": true
+  },
+  "trial_and_trace": {
+    "trial_beta_ratio": "15/32",
+    "trial_scalar_energy": 240,
+    "trial_gradient_bound": 36,
+    "complete_magnetic_bound": 4096,
+    "trial_H_per_site": 4374,
+    "trial_shifted_H_per_site": 5446,
+    "original_tail_coefficient_lower": "729/131072",
+    "tail_a": "1/200",
+    "tail_R0": "5/2",
+    "positive_face_area_lower": "3/10",
+    "Gauss_trial_is_form_domain_only": true,
+    "spectral_steps": [
+      "min-max eigenvalue ordering",
+      "Gauss trace <= full trace",
+      "spectral Jensen on a legal Gauss trial",
+      "convex log trace secant beta/2 to beta"
+    ],
+    "energy_density_formula": "2*5446+2*a_star(beta/2)/beta"
+  },
+  "boundary_clusters": {
+    "rows": [
+      {
+        "side": 5,
+        "region": "slab",
+        "sites": 125,
+        "cut_edges": 50,
+        "crossing_gradient_stars": 50,
+        "crossing_magnetic_stars": 50
+      },
+      {
+        "side": 5,
+        "region": "one_site",
+        "sites": 125,
+        "cut_edges": 6,
+        "crossing_gradient_stars": 4,
+        "crossing_magnetic_stars": 7
+      },
+      {
+        "side": 5,
+        "region": "checker",
+        "sites": 125,
+        "cut_edges": 300,
+        "crossing_gradient_stars": 124,
+        "crossing_magnetic_stars": 124
+      },
+      {
+        "side": 5,
+        "region": "oblique",
+        "sites": 125,
+        "cut_edges": 250,
+        "crossing_gradient_stars": 125,
+        "crossing_magnetic_stars": 125
+      },
+      {
+        "side": 6,
+        "region": "slab",
+        "sites": 216,
+        "cut_edges": 72,
+        "crossing_gradient_stars": 72,
+        "crossing_magnetic_stars": 72
+      },
+      {
+        "side": 6,
+        "region": "one_site",
+        "sites": 216,
+        "cut_edges": 6,
+        "crossing_gradient_stars": 4,
+        "crossing_magnetic_stars": 7
+      },
+      {
+        "side": 6,
+        "region": "checker",
+        "sites": 216,
+        "cut_edges": 648,
+        "crossing_gradient_stars": 216,
+        "crossing_magnetic_stars": 216
+      },
+      {
+        "side": 6,
+        "region": "oblique",
+        "sites": 216,
+        "cut_edges": 360,
+        "crossing_gradient_stars": 205,
+        "crossing_magnetic_stars": 210
+      },
+      {
+        "side": 7,
+        "region": "slab",
+        "sites": 343,
+        "cut_edges": 98,
+        "crossing_gradient_stars": 98,
+        "crossing_magnetic_stars": 98
+      },
+      {
+        "side": 7,
+        "region": "one_site",
+        "sites": 343,
+        "cut_edges": 6,
+        "crossing_gradient_stars": 4,
+        "crossing_magnetic_stars": 7
+      },
+      {
+        "side": 7,
+        "region": "checker",
+        "sites": 343,
+        "cut_edges": 882,
+        "crossing_gradient_stars": 342,
+        "crossing_magnetic_stars": 342
+      },
+      {
+        "side": 7,
+        "region": "oblique",
+        "sites": 343,
+        "cut_edges": 686,
+        "crossing_gradient_stars": 335,
+        "crossing_magnetic_stars": 343
+      }
+    ],
+    "all_magnetic_stars_vertices": 7,
+    "all_magnetic_stars_edges": 9,
+    "magnetic_star_incidence_per_edge": 3,
+    "gradient_star_incidence_per_edge": 1,
+    "electric_star_difference": 0,
+    "electric_reason": "source half-link representation and preserved regional marginals",
+    "counting_is_local_not_a_full_H_simulation": true
+  },
+  "thermal_bound_functions": {
+    "rows": [
+      {
+        "beta": 0.5,
+        "a_star_half_beta": 274.7650898539151,
+        "e_beta": 11991.06035941566,
+        "C_boundary": 221048440.54474944,
+        "double_relative_entropy_per_area": 368414067.5745824,
+        "full_extended_I_per_area_t1": 528294920.12901795
+      },
+      {
+        "beta": 1.0,
+        "a_star_half_beta": 257.86758303337564,
+        "e_beta": 11407.735166066752,
+        "C_boundary": 210296590.58094236,
+        "double_relative_entropy_per_area": 700988635.2698079,
+        "full_extended_I_per_area_t1": 853091818.5795914
+      },
+      {
+        "beta": 2.0,
+        "a_star_half_beta": 240.99911583030013,
+        "e_beta": 11132.9991158303,
+        "C_boundary": 205232655.7029841,
+        "double_relative_entropy_per_area": 1368217704.6865606,
+        "full_extended_I_per_area_t1": 1516657740.659858
+      }
+    ],
+    "log_zG_upper_t1": 14.328668019278991,
+    "numerical_values_are_displays_of_analytic_bounds": true,
+    "no_full_Gibbs_spectrum_or_measured_energy_computed": true,
+    "fixed_positive_beta_only": true
+  },
+  "original_quotient_KL": {
+    "labels": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        0
+      ]
+    ],
+    "dims": [
+      "1",
+      "3",
+      "8"
+    ],
+    "Casimir": [
+      "0",
+      "2",
+      "3"
+    ],
+    "probabilities": [
+      "1/2",
+      "1/3",
+      "1/6"
+    ],
+    "single_edge_center_plus_pair": 2.4369596377127034,
+    "finite_label_KL": 0.416918601273605,
+    "two_correlated_edge_center_plus_pair": 3.862515010718055,
+    "full_original_group_upper_used": true,
+    "fixture_is_not_original_full_Gibbs_distribution": true,
+    "d_squared_in_reference_probability": true,
+    "independent_labels_assumed": false
+  },
+  "boundary_area": {
+    "C_boundary_linear": 18432,
+    "C_boundary_constant": 29216,
+    "two_state_factor_retained": true,
+    "center_pair_thermal_term": "t*e_beta/cT+log(zG_upper(t))",
+    "safe_area_input": "A_hat+delta_A",
+    "area_source": "1225 independent cofactor dictionary, same uniform geometry",
+    "ordinary_region_entropy_area_law": false,
+    "entropy_area_equality": false,
+    "thermodynamic_limit_unique_state": false,
+    "autonomous_thermalization": false,
+    "vacuum_energy_subtraction": false
+  }
+}

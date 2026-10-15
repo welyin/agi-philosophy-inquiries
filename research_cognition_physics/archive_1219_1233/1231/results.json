@@ -1,0 +1,193 @@
+{
+  "round": 1231,
+  "status": "PASS",
+  "check_groups": 4,
+  "groups": {
+    "exact_shell_measure_and_recoil": {
+      "status": "PASS",
+      "mass_shell_measure": "deta dxi = dp_A/E_A dp_B/E_B",
+      "map": "(d,xi) -> (-d,xi+R_mu(d))",
+      "jacobian": -1,
+      "full_four_momentum_conserved": true,
+      "transverse_momenta_zero": true,
+      "involution": true,
+      "common_boost_covariance": true,
+      "cases": [
+        {
+          "mu": 3,
+          "exp_eta": "1",
+          "exp_xi": "3/2",
+          "target_delta_E": 1.041666666666599,
+          "source_delta_E": -1.041666666666599,
+          "target_delta_P": 2.7083333333332322,
+          "source_delta_P": -2.7083333333332322,
+          "jacobian_exact": "-1",
+          "conservation_exact": true
+        },
+        {
+          "mu": 3,
+          "exp_eta": "1/2",
+          "exp_xi": "2",
+          "target_delta_E": 8.437499999998671,
+          "source_delta_E": -8.437499999998671,
+          "target_delta_P": 14.062499999998629,
+          "source_delta_P": -14.062499999998629,
+          "jacobian_exact": "-1",
+          "conservation_exact": true
+        },
+        {
+          "mu": 3,
+          "exp_eta": "2",
+          "exp_xi": "3/2",
+          "target_delta_E": -0.7291666666666605,
+          "source_delta_E": 0.7291666666666605,
+          "target_delta_P": -1.8958333333332804,
+          "source_delta_P": 1.8958333333332804,
+          "jacobian_exact": "-1",
+          "conservation_exact": true
+        },
+        {
+          "mu": 4,
+          "exp_eta": "1",
+          "exp_xi": "3/2",
+          "target_delta_E": 1.3888888888887685,
+          "source_delta_E": -1.3888888888887685,
+          "target_delta_P": 3.6111111111109313,
+          "source_delta_P": -3.6111111111109313,
+          "jacobian_exact": "-1",
+          "conservation_exact": true
+        },
+        {
+          "mu": 4,
+          "exp_eta": "1/2",
+          "exp_xi": "2",
+          "target_delta_E": 11.249999999997637,
+          "source_delta_E": -11.249999999997637,
+          "target_delta_P": 18.749999999997563,
+          "source_delta_P": -18.749999999997563,
+          "jacobian_exact": "-1",
+          "conservation_exact": true
+        },
+        {
+          "mu": 4,
+          "exp_eta": "2",
+          "exp_xi": "3/2",
+          "target_delta_E": -0.9722222222222112,
+          "source_delta_E": 0.9722222222222112,
+          "target_delta_P": -2.527777777777684,
+          "source_delta_P": 2.527777777777684,
+          "jacobian_exact": "-1",
+          "conservation_exact": true
+        }
+      ],
+      "exact_identities_not_a_grid_proof": true
+    },
+    "one_normal_source_and_full_isometry": {
+      "status": "PASS",
+      "target_masses": [
+        3,
+        4
+      ],
+      "source_mass": "100000000000000",
+      "eta_center": 0,
+      "xi_center": 0.5,
+      "target_output_center": 1,
+      "target_rapidity_halfwidth": "1/100",
+      "source_rapidity_halfwidth": "1/10000000",
+      "envelope_order": 8,
+      "regularity": "C7 and H8, not C-infinity",
+      "I0_exact": "4294967296/9917826435",
+      "derivative_ratio_exact": "44/5",
+      "variance_ratio_exact": "1/35",
+      "relative_rapidity_support_upper": 0.5100001,
+      "R_upper": 8e-14,
+      "R_derivative_upper": 1.6e-13,
+      "three_error_terms": {
+        "source_velocity_spread": 1.2e-05,
+        "target_packet_recoil": 2.4e-11,
+        "source_packet_recoil": 2.4e-06
+      },
+      "all_output_isometry_norm_error": 1.4400024e-05,
+      "exact_error_upper": "1800003/125000000000",
+      "half_diamond_error_upper": 1.4400024e-05,
+      "arbitrary_passive_reference": true,
+      "full_source_retained": true,
+      "source_preparation_independent_of_internal_input": true,
+      "initial_energy_support_upper_exact": "200000000000005",
+      "joint_motional_overlap_loss_upper": 1.80003600018e-13,
+      "exact_overlap_loss_upper": "90001800009/500000000000000000000000",
+      "reduced_source_not_assumed_pure": true,
+      "internal_coherence_coefficient": "Gamma >= 1 - stated loss",
+      "arbitrary_unknown_motion_boost": false
+    },
+    "coherence_resource_and_phase_freedom": {
+      "status": "PASS",
+      "bad_source_halfwidth": "1/10000000000000000",
+      "source_branch_support_gap_lower": 6.81999999999687e-15,
+      "exact_support_gap": "284166666666559/41666666666670000000000000000",
+      "bad_joint_environment_overlap_exact": 0,
+      "internal_populations_unchanged": true,
+      "all_four_momentum_still_exact": true,
+      "full_global_information_not_erased": true,
+      "logical_reference_diagnostic_only": true,
+      "good_Bell_return_diagnostic": 0.9999999999999096,
+      "bad_Bell_return_diagnostic": 0.49999999999999983,
+      "constant_relative_pi_phase_also_preserves_fourP": true,
+      "relative_scattering_phase_not_fixed_by_conservation": true
+    },
+    "free_clock_position_and_scope": {
+      "status": "PASS",
+      "output_rapidity_halfwidth_upper": 0.01000020000008,
+      "central_comoving_proper_parameter": 1,
+      "free_internal_phase_norm_error": 0.00020002800368368876,
+      "scattering_plus_free_phase_norm_error": 0.00021442802768368877,
+      "actual_contact_proper_time_not_constructed": true,
+      "comoving_generator": "u_* . P_A = mu cosh(eta-1)",
+      "optional_X_and_rapidity_record": {
+        "actual_readout_permission_not_constructed": true,
+        "ideal_zero_phase_probability": 0.7701511529340699,
+        "ideal_pi_phase_probability": 0.22984884706593012,
+        "certified_probability_gap_if_same_readout_is_licensed": 0.5398489217224104,
+        "rapidity_window_halfwidth": 0.02
+      },
+      "target_asymptotic_X_norm_upper": 100.16666826668266,
+      "source_asymptotic_X_norm_upper": 3.00006005000048e-07,
+      "physical_CO_position_identification_is_additional_contract": true,
+      "optional_free_position_tail": {
+        "lab_time": 10.0,
+        "radius": 1000000.0,
+        "probability_upper": 1.0053405166367826e-08,
+        "finite_collision_not_inferred": true
+      },
+      "phase_zero_is_selected_model_input": true,
+      "arbitrary_phase_error_must_be_added": true,
+      "source_free_wait_retained": true
+    }
+  },
+  "scope": {
+    "effective_asymptotic_scattering_boundary": true,
+    "coherent_mass_input_permission_is_declared": true,
+    "same_source_before_unknown_input": true,
+    "source_and_target_identity_retained": true,
+    "unknown_internal_state_and_arbitrary_reference": true,
+    "arbitrary_unknown_motional_boost": false,
+    "phase_zero_is_selected_scattering_law": true,
+    "local_continuous_collision_dynamics": false,
+    "finite_contact_window_or_worldtube": false,
+    "actual_internal_X_readout_constructed": false,
+    "original_288_dim_clock_not_replaced": true,
+    "Dirac_field_coupling": false,
+    "Unruh_thermometer": false,
+    "empirical_certification": false,
+    "stage_complete": false
+  },
+  "source_sha256": {
+    "05_认知动力学公理与狭义相对论基础动力学_阶段论文.md": "ac725073d1bb5c6bd4c39f05da28a6b57e8f815c5f9dba39a4e0f5f6db8d89df",
+    "archive_1106_1119/1118/proof.md": "cbf928ac8a1dc8997869eddc50dae4774c58e9baecdfad904ad813a03ae3cd60",
+    "archive_1106_1119/1119/proof.md": "b4a97154a8302a49c4f4f6788f615909b4849820bfa42e3bf11574c16808008d",
+    "archive_1219_/1219/candidate_proof.md": "b9b3ed8f4e39ef90016faa5756622ae8562cb7d4532975d8f10f074577c56dee",
+    "archive_1219_/_admission/after1230_finite_motion_thermal_admission.md": "a2f141fbd3e53b75b45b32dfaa448d7d2bb99b4b749178b4f07920110bbb04db",
+    "archive_1219_/1231/proof.md": "4b341a6274c368822efeab7cdc42ee5bf8eea3c039530f768ee661f8630f96cf",
+    "archive_1219_/1231/check.py": "ee579b39bde07998d175aa81fc5a30a4678720ac0dc22e33ca20134479dd3f94"
+  }
+}

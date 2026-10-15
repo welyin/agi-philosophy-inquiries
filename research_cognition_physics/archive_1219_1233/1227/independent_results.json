@@ -1,0 +1,156 @@
+{
+  "status": "PASS",
+  "all_checks_passed": true,
+  "check_groups": 6,
+  "independent_code_sha256": "fb41df394902b596c3f399f3a5e6c7f274ee0220d585274a8e075e794cf4803a",
+  "source_sha256": {
+    "archive_585_628/research_note_598.md": "9a83b9ed293b537ff575dd440fdcd1837473bef74b6d815bfbfebdc6055adaa3",
+    "archive_1219_/1226/proof.md": "9d5558d399c0059d5f6d3ac8f0a077111f9702588edaadcfb0626458e1d42eb1",
+    "archive_1219_/1226/results.json": "baf60422dcf9a48a0330c3aa68b04d8fea74b75691a5663fb81a77dc15f6034d",
+    "archive_1219_/1225/proof.md": "ef2987369cce9641c14c0d02ed703bcc5ec82bc6c13dd99bd387d1f442615fbe",
+    "archive_1201_1218/1203/proof.md": "c2c29a7805afc15a596086e6915f5216296a2e523175483881ab2313f7219428"
+  },
+  "groups": {
+    "field_and_pulse": {
+      "theta_prime_square_upper": "1/16",
+      "theta_second_square_upper": "1/12",
+      "laplacian_theta_upper": "10/9",
+      "commutator_constant": 64,
+      "injection_support_lower": "225/16384",
+      "registered_injection_lower": "1/128",
+      "pulse_integral": "1",
+      "pulse_derivative_square_max": "25/12",
+      "all_other_original_H_terms_commute_with_scalar_field_gate": true,
+      "constant_theta_deletes_injection": true
+    },
+    "thermal_and_seed": {
+      "S4_rational_guard": "21678631969",
+      "S2_rational_guard": "1460569",
+      "twoS0_minus1_guard": "143",
+      "scalar_core_guard": "78975/32",
+      "scalar_tail_guard": "60750",
+      "a_star_guard": 500,
+      "a_star_intermediate": 455,
+      "e_beta_guard": 11481,
+      "x0_guard": 1435125,
+      "A2_guard": "595221513653964/289",
+      "root_A2_guard": 1440000,
+      "small_packet_shifted_energy_per_node": 9046,
+      "j0_exact": "2^(-7)*exp(-1984775)",
+      "complete_Gibbs_state_assumed": true,
+      "thermal_spectrum_computed": false
+    },
+    "separate_process_budgets": {
+      "R": 1597696,
+      "D": 169984,
+      "T": 4,
+      "delta_denominator": 8690648219648,
+      "instantaneous_and_scalar_r_bound": 1597696,
+      "autonomous_r_formula": "(1200+256/delta)^2",
+      "autonomous_pulse_norm_integral_upper": "2*T/delta",
+      "epsilon_E_over_j_upper": "5/64",
+      "epsilon_probability_over_j_upper": "3/102252544",
+      "endpoint_residual_over_j_upper": "25563139/818020352",
+      "actual_injection_over_j_strict_lower": "59/64",
+      "total_clock_energy_loss_over_j_strict_lower": "55/64",
+      "independent_initial_clocks": 2,
+      "local_force_bound_each": "2/delta^2",
+      "sum_force_bound": "4/delta^2",
+      "total_constant_baseline": 6,
+      "energy_transport_separate_from_trace_distance": true,
+      "scalar_to_instantaneous_error_not_multiplied_by_autonomous_r": true,
+      "endpoint_interaction_not_deleted": true
+    },
+    "retained_Stinespring": {
+      "input_dimension": 4,
+      "retained_output_rows": 16,
+      "exact_input_Gram_identity": true,
+      "arbitrary_reference_isometry_preserved": true,
+      "diagnostic_joint_pointer_probabilities": {
+        "00": "14841/62500",
+        "01": "16409/62500",
+        "10": "16409/62500",
+        "11": "14841/62500"
+      },
+      "pure_PE_vs_dephased_half_trace_distance": "12/25",
+      "full_Stinespring_is_not_classical_quantum_output": true,
+      "diagnostics_are_not_original_Gauss_probabilities": true,
+      "actual_budget_requires_original_thermal_material_marginal": true
+    },
+    "finite_log_resources": {
+      "values": {
+        "j0": {
+          "natural_log": -1984779.852030264,
+          "log10": -861978.9375294963
+        },
+        "pulse_width_delta": {
+          "natural_log": -1984809.64529891,
+          "log10": -861991.8765816671
+        },
+        "force_L": {
+          "natural_log": 3969620.6768921814,
+          "log10": 1723984.3552233255
+        },
+        "autonomous_material_norm_bound": {
+          "natural_log": 3969630.3809527094,
+          "log10": 1723988.5696432649
+        },
+        "clock_width_sigma": {
+          "natural_log": -9924037.14819978,
+          "log10": -4309954.571666048
+        },
+        "clock_M": {
+          "natural_log": 19848075.68269392,
+          "log10": 8619909.745392088
+        },
+        "initial_one_clock_mean_energy": {
+          "natural_log": 19848074.989546742,
+          "log10": 8619909.444362093
+        },
+        "initial_two_clock_mean_energy": {
+          "natural_log": 19848075.68269392,
+          "log10": 8619909.745392088
+        },
+        "interaction_norm_upper": {
+          "natural_log": 1984810.3845636877,
+          "log10": 861992.1976402807
+        },
+        "clock_occupation_upper": {
+          "natural_log": -3969568.0218266947,
+          "log10": -1723961.4874189405
+        },
+        "one_clock_entropy_upper": {
+          "natural_log": -3969552.827658355,
+          "log10": -1723954.8886754734
+        },
+        "joint_two_clock_entropy_upper": {
+          "natural_log": -3969552.134511174,
+          "log10": -1723954.5876454776
+        }
+      },
+      "log_displays_are_not_outward_intervals": true,
+      "discarded_logsumexp_terms_below_float_underflow_are_display_only": true,
+      "no_subtraction_of_huge_clock_energies": true,
+      "engineering_feasibility_claimed": false
+    },
+    "clock_entropy_scope": {
+      "occupation_over_j_squared_upper": "1/4096",
+      "reference_mode": "(X-T*P/M)/(2*sigma)+i*sigma*(P-M)",
+      "momentum_difference_bound": "L*T",
+      "back_free_position_difference_bound": "L*T^2/(2*M)",
+      "one_clock_entropy_upper": "nbar*(2-log(nbar))",
+      "joint_two_clock_entropy_upper": "2*nbar*(2-log(nbar))",
+      "final_clock_independence_assumed": false,
+      "individual_clock_energy_loss_asserted": false,
+      "infinite_rank_material_allowed": true,
+      "finite_rank_clock_argument_used": false,
+      "nonGaussian_clock_states_allowed": true,
+      "retained_pointer_environment_entropy_upper": "4*log(2)",
+      "original_reference_preparation_is_input": true,
+      "unbounded_energy_measurement_implemented": false,
+      "spatial_or_accelerated_proper_clock_claimed": false,
+      "Unruh_or_gravity_claimed": false,
+      "stage_completion_claimed": false
+    }
+  }
+}

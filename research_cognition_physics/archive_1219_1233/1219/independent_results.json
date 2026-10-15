@@ -1,0 +1,157 @@
+{
+  "schema": "1219-independent-joint-thermal-port-v1",
+  "status": "PASS",
+  "all_checks_passed": true,
+  "check_groups": 6,
+  "independent_code_sha256": "5702c04cd8037fafa506e4a07a4d1a9d2e322b1b39c6aa833a2f6d0b11f78f00",
+  "source_sha256": {
+    "archive_1159_1160/1160/proof.md": "ca3121515439d2b93c23d341d83a1dfbd68b48c4c63ac95fc41c28b027cf8e81",
+    "archive_1106_1119/1118/proof.md": "cbf928ac8a1dc8997869eddc50dae4774c58e9baecdfad904ad813a03ae3cd60",
+    "archive_1106_1119/1119/proof.md": "b4a97154a8302a49c4f4f6788f615909b4849820bfa42e3bf11574c16808008d",
+    "archive_1201_1218/1205/proof.md": "192e0a6256b618fccfbc1c1754056c1017481415bbd9eafce532f34f9f681872"
+  },
+  "groups": {
+    "full_type_four_momentum_and_unknown_input": {
+      "pass": true,
+      "material_dimension": 16,
+      "with_record_dimension": 128,
+      "actual_unknown_input_dimension": 2,
+      "source_slot_dimension": 3,
+      "source_slot_basis": [
+        "logical0",
+        "logical1",
+        "vac"
+      ],
+      "mother_extension_columns": 48,
+      "actual_input_columns": 32,
+      "max_gram_error_rounded_12": 0.0,
+      "scope": "All 32 legal logical/material columns plus 16 mathematical vac columns; old 288-dimensional clock dressing is an inherited analytic identity, not reconstructed here."
+    },
+    "finite_pure_seed_and_excited_stock": {
+      "pass": true,
+      "seed_dimensions": [
+        4,
+        5
+      ],
+      "full_preparation_mother_dimensions": [
+        64,
+        80
+      ],
+      "initial_target_h": 0,
+      "initial_stock_h": 1,
+      "marginals": [
+        [
+          0.75,
+          0.25
+        ],
+        [
+          0.6,
+          0.4
+        ]
+      ],
+      "rest_energy_each_target_plus_stock": 7,
+      "seed_rest_masses": [
+        1,
+        1
+      ],
+      "four_stationary_record_program_rest_masses": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "full_added_prepared_energy": "92/3",
+      "scope": "Explicit independent preparation witness with retained seed/stock; no externally supplied Gibbs mixed state and no proof of microscopic manufacture."
+    },
+    "joint_pointer_port_and_exchange": {
+      "pass": true,
+      "programs": [
+        {
+          "program": 0,
+          "joint_pointer_rows_direction_columns": [
+            [
+              0.0,
+              0.6
+            ],
+            [
+              0.0,
+              0.4
+            ]
+          ],
+          "delta_h_A": 0.15,
+          "delta_lab_E_A": 0.25,
+          "delta_Px_A": -8.866666666667,
+          "reflection_probability": 1.0,
+          "pointer1_and_reflection": 0.4
+        },
+        {
+          "program": 1,
+          "joint_pointer_rows_direction_columns": [
+            [
+              0.375,
+              0.3
+            ],
+            [
+              0.125,
+              0.2
+            ]
+          ],
+          "delta_h_A": 0.075,
+          "delta_lab_E_A": 0.125,
+          "delta_Px_A": -4.433333333333,
+          "reflection_probability": 0.5,
+          "pointer1_and_reflection": 0.2
+        },
+        {
+          "program": 2,
+          "joint_pointer_rows_direction_columns": [
+            [
+              0.0,
+              0.6
+            ],
+            [
+              0.0,
+              0.4
+            ]
+          ],
+          "delta_h_A": 0.15,
+          "delta_lab_E_A": 0.25,
+          "delta_Px_A": -8.866666666667,
+          "reflection_probability": 1.0,
+          "pointer1_and_reflection": 0.4
+        }
+      ]
+    },
+    "retained_records_and_future": {
+      "pass": true,
+      "extra_environment_then_record_only_undo_reflection": 0.5,
+      "scope": "Deleting inaccessible correlations is a different channel, not a harmless state simplification."
+    },
+    "internal_only_swap_deletion": {
+      "pass": true,
+      "operator_Px_defect_norm": "8/3",
+      "input_mean_Px_defect": "2/5",
+      "total_lab_energy_defect": 0
+    },
+    "finite_ports_and_conditional_error_budget": {
+      "pass": true,
+      "proper_flight_time": "6/5",
+      "coordinate_flight_time": 2,
+      "outgoing_x": [
+        "8/5",
+        "-8/5"
+      ],
+      "port_separation": "16/5",
+      "joint_event_gap": "1/5",
+      "hypothetical_each_program_total_error": "1/1000",
+      "gap_lower_bound": "99/500",
+      "reflection_conditioned_excitation_both_programs": "2/5",
+      "scope": "Error values are a conditional budget, not experimental calibration; joint unconditioned event is the witness."
+    }
+  },
+  "scope_limits": [
+    "The internal h references are Gibbs; directed motion, pure seeds/stocks, clock and records are resources, not a Gibbs state of the moving apparatus.",
+    "K1219 is an extra effective finite contact permission; this code does not show old H_D alone triggers the new gates.",
+    "No independent field reference, acceleration response, Unruh relation, area law or GR is certified."
+  ]
+}

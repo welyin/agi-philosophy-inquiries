@@ -1,0 +1,213 @@
+{
+  "round": 1220,
+  "status": "author candidate; independent acceptance required",
+  "model": "translation-invariant circle, two finite-band boson modes, finite quantum source",
+  "parameters": {
+    "K": 14,
+    "N": 6,
+    "m": 25.0,
+    "mass": 20.0,
+    "kappa": 2.0,
+    "g": 0.15,
+    "gap": 0.6666666666666666,
+    "T": 1.9634954084936207,
+    "holdout": true,
+    "contract_each": 0.001,
+    "target": 0.005
+  },
+  "source_sha256": {
+    "archive_1106_1119/1111/check.py": "704ae4ca016c77e0df83fc9c2d39e90d79e9fbf3d6469c8c5b9bf1dad8a5bd44",
+    "archive_1106_1119/1118/proof.md": "cbf928ac8a1dc8997869eddc50dae4774c58e9baecdfad904ad813a03ae3cd60",
+    "archive_1106_1119/1119/proof.md": "b4a97154a8302a49c4f4f6788f615909b4849820bfa42e3bf11574c16808008d",
+    "archive_1159_1160/1160/proof.md": "ca3121515439d2b93c23d341d83a1dfbd68b48c4c63ac95fc41c28b027cf8e81",
+    "archive_1161_1200/1169/proof.md": "33f4384f5a851a5b8e35f816e577fc4101eefcf8365d9024bab0a70e739d5871",
+    "archive_1219_/1219/candidate_proof.md": "b9b3ed8f4e39ef90016faa5756622ae8562cb7d4532975d8f10f074577c56dee",
+    "archive_1219_/1220/admission.md": "43cb8929e93700365185fd58496dc4575f055128fc201cf9b3dc3609b4850bbd"
+  },
+  "code_sha256": "235d464544417dc5058ff2d67db95fa6011598bd89e7678b955cff17754cddbd",
+  "groups": {
+    "same_kernel_source_field_mass_and_joint_holdout": {
+      "0": {
+        "dimension": 812,
+        "response": {
+          "joint_coherent": 0.026715755817640505,
+          "joint_dephased": 0.013509677509771001,
+          "joint_difference": 0.013206078307869507,
+          "flip_probability": 0.05470364677370504,
+          "dephased_flip_probability": 0.05466540020477575,
+          "flip_positive_field": 0.02532527758514271,
+          "flip_negative_field": 0.029378369188562327,
+          "initial_reduced_energy": 2.0224882004471976,
+          "initial_dephased_reduced_energy": 2.0224882004471976,
+          "energy_conservation_residual": 5.773159728050814e-15,
+          "projected_detector_p_mean": -2.7469442778412825,
+          "projected_source_q_mean": 2.7514474089563485,
+          "projected_field_momentum": -0.004503131115064483,
+          "projected_field_number": 0.06716703393177516,
+          "projected_reference_pinching_work_source": 0.019819545489750744,
+          "projected_reference_pinching_work_field": 0.1043218651231328,
+          "projected_reference_pinching_work_total": 0.12414141061288354,
+          "initial_force_detector": -1.414213562373095,
+          "initial_force_source": 1.414213562373095,
+          "pointer_event_definition": "h!=hin AND n_minus>n_plus AND source_q>0"
+        },
+        "certificate": {
+          "outside_rows": 300,
+          "uniform_preparation_dimension": 3,
+          "intervals": 4096,
+          "R_norm_upper": 1.7058754510790104,
+          "second_derivative_upper": 25.689287570515333,
+          "midpoint_integral": 2.2641925615096084e-05,
+          "linear_envelope": 1.6900107536698823e-08,
+          "quadratic_envelope": 4.829593660853094e-07,
+          "projection_state_norm_upper": 2.314178508871809e-05,
+          "numeric_state_reserve": 1e-05,
+          "total_state_norm_upper": 3.314178508871809e-05,
+          "event_probability_upper": 6.628466855535504e-05
+        },
+        "numerical_checks": {
+          "orthogonality_fro": 7.629075453892443e-14,
+          "eigen_residual_fro": 3.7175507581584223e-13,
+          "verified_product_rounding_upper": 7.995352971316747e-06,
+          "polynomial_phase_scalar_error_upper": 1.4915713109076023e-10,
+          "reserved_state_norm": 1e-05
+        },
+        "nonrelativistic_comparator": {
+          "finite_projection_state_norm_upper": 0.005475267156690205,
+          "finite_joint_probability": 0.02672211178834825,
+          "finite_joint_difference_from_sqrt": 6.355970707746378e-06,
+          "declaration": "Comparison of these two effective kinetic choices only; no bound to full SR or QFT."
+        },
+        "zero_force_joint": 0.007183405486227023,
+        "zero_force_difference": -2.1266002312032093e-16,
+        "source_off_probability_difference_bound": "exact zero for coherent-vs-dephased on this event",
+        "zero_field_flip_probability": 0.0,
+        "certified_joint_difference_lower": 0.011073508970758797,
+        "total_model_energy_above_m_plus_M": 2.0674882004471975,
+        "full_model_field_number_bound": 4.224976402894395,
+        "reference_12_block_pinching_mean_work_absolute_bound": 1.872064075926185
+      },
+      "1": {
+        "dimension": 812,
+        "response": {
+          "joint_coherent": 0.06792569636736215,
+          "joint_dephased": 0.03465336999763666,
+          "joint_difference": 0.03327232636972549,
+          "flip_probability": 0.14900194119978266,
+          "dephased_flip_probability": 0.14904748387393696,
+          "flip_positive_field": 0.07360561706095965,
+          "flip_negative_field": 0.07539632413882297,
+          "initial_reduced_energy": 2.6888954301227184,
+          "initial_dephased_reduced_energy": 2.688895430122718,
+          "energy_conservation_residual": 8.881784197001252e-15,
+          "projected_detector_p_mean": -2.749660608056893,
+          "projected_source_q_mean": 2.75194006174273,
+          "projected_field_momentum": -0.002279453685836412,
+          "projected_field_number": 0.16169548430268443,
+          "projected_reference_pinching_work_source": 0.019608184465522,
+          "projected_reference_pinching_work_field": 0.0656319606649571,
+          "projected_reference_pinching_work_total": 0.0852401451304791,
+          "initial_force_detector": -1.414213562373095,
+          "initial_force_source": 1.414213562373095,
+          "pointer_event_definition": "h!=hin AND n_minus>n_plus AND source_q>0"
+        },
+        "certificate": {
+          "outside_rows": 300,
+          "uniform_preparation_dimension": 3,
+          "intervals": 4096,
+          "R_norm_upper": 1.7058754510790104,
+          "second_derivative_upper": 36.160140032702984,
+          "midpoint_integral": 2.2649157223602463e-05,
+          "linear_envelope": 1.690632104648799e-08,
+          "quadratic_envelope": 6.798117020494673e-07,
+          "projection_state_norm_upper": 2.334587524669842e-05,
+          "numeric_state_reserve": 1e-05,
+          "total_state_norm_upper": 3.334587524669842e-05,
+          "event_probability_upper": 6.66928624407928e-05
+        },
+        "numerical_checks": {
+          "orthogonality_fro": 7.545008648803709e-14,
+          "eigen_residual_fro": 3.684091592517946e-13,
+          "verified_product_rounding_upper": 8.07483494579211e-06,
+          "polynomial_phase_scalar_error_upper": 1.4915713109076023e-10,
+          "reserved_state_norm": 1e-05
+        },
+        "nonrelativistic_comparator": {
+          "finite_projection_state_norm_upper": 0.005425927424372842,
+          "finite_joint_probability": 0.06792780964737138,
+          "finite_joint_difference_from_sqrt": 2.1132800092360515e-06,
+          "declaration": "Comparison of these two effective kinetic choices only; no bound to full SR or QFT."
+        },
+        "zero_force_joint": 0.018810920945060722,
+        "zero_force_difference": 3.741490153169081e-17,
+        "source_off_probability_difference_bound": "exact zero for coherent-vs-dephased on this event",
+        "zero_field_flip_probability": 0.0,
+        "certified_joint_difference_lower": 0.031138940644843904,
+        "total_model_energy_above_m_plus_M": 2.7338954301227183,
+        "full_model_field_number_bound": 5.557790862245437,
+        "reference_12_block_pinching_mean_work_absolute_bound": 2.000201157369945
+      }
+    },
+    "source_and_field_controls": {
+      "0": {
+        "zero_force_difference": -2.1266002312032093e-16,
+        "zero_field_flip_probability": 0.0
+      },
+      "1": {
+        "zero_force_difference": 3.741490153169081e-17,
+        "zero_field_flip_probability": 0.0
+      }
+    },
+    "projection_and_numerical_certificate": {
+      "0": {
+        "event_probability_upper": 6.628466855535504e-05,
+        "verified_rounding_upper": 7.995352971316747e-06
+      },
+      "1": {
+        "event_probability_upper": 6.66928624407928e-05,
+        "verified_rounding_upper": 8.07483494579211e-06
+      }
+    },
+    "reference_record_work_account": {
+      "0": {
+        "reference_mean_work": 0.12414141061288354,
+        "full_model_absolute_mean_work_bound": 1.872064075926185
+      },
+      "1": {
+        "reference_mean_work": 0.0852401451304791,
+        "full_model_absolute_mean_work_bound": 2.000201157369945
+      }
+    },
+    "original_lab_clock_and_unknown_Q": {
+      "start_age": 0.7853981633974483,
+      "elapsed": 1.9634954084936207,
+      "finish_age": 2.748893571891069,
+      "Mr": [
+        0.8901099095985504,
+        0.890109909598545
+      ],
+      "unknown_Q_isometry_residual": 1.1352413270901444e-15,
+      "limitation": "Rest lab clock only, independent of accelerator; no accelerated proper-clock certification."
+    }
+  },
+  "check_groups": 5,
+  "scope": {
+    "field_reference": "Two working-mode vacuum |0,0>, independent of source, not Minkowski vacuum.",
+    "initial_force": "coherent detector/source = -sqrt(2), +sqrt(2); dephased = 0,0",
+    "conserved_quantity": "P=p+q+n_plus-n_minus, exact zero on the chosen sector",
+    "positive_energy": "H_full=H_reduced+m+M+2g^2; lower bound m+M via square completion",
+    "reference_record": "12-block (h,sign(n_minus-n_plus),1[q>0]) pinching; finite positive-mass actual apparatus is R1220 input",
+    "readout_work": "Neither QND nor energy free; source-cross-bin potential and field coupling work included. Mean-work bound is not total apparatus cost or deterministic work capacity.",
+    "preparation": "Finite-support joint source/material state; dephased version retains a three-valued preparation label. Reference/coherence/record preparation is input.",
+    "clock": "Existing rest D is retained, no moving thermometer clock supplied.",
+    "no_claim": [
+      "Unruh temperature",
+      "KMS reconstruction",
+      "full Lorentz-covariant interaction",
+      "causal local QFT",
+      "Einstein dynamics",
+      "manufactured instrument",
+      "full stage completion"
+    ]
+  }
+}

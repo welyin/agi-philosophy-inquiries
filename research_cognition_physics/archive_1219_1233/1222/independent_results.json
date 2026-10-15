@@ -1,0 +1,273 @@
+{
+  "status": "PASS",
+  "check_groups": 6,
+  "check_group_names": [
+    "spectral_identities_and_constants",
+    "H1_window_integrals",
+    "threshold_inversion_and_domain",
+    "closed_COM_energy",
+    "fixed_plan_admission",
+    "conditional_material_log_error_transport"
+  ],
+  "scope": "Conditional finite-source/certificate interface; no actual Unruh detector or measured probability.",
+  "numerical_status": "Decimal 70/95 precision cross-check plus float64 quadrature; not directed interval arithmetic.",
+  "resource_domain": "Constant collinear proper acceleration with optimally centered rapidity interval; endpoint additive complete four-momentum decomposes into the on-shell detector of mass at least m and a future-causal remainder of invariant mass at least M, with opposite spatial momenta in the complete COM frame. If additional binding is allowed, the same decomposition must be proved separately; an interaction energy lower bound alone is insufficient.",
+  "failure_interpretation": "Fixed-plan failure is failure of these sufficient thermal bounds plus this necessary resource bound, not proof of absent physical thermality.",
+  "window_optimality_scope": "Wirtinger minimizes this second-moment certificate in H1_0; it does not prove a shortest actual thermalization time.",
+  "readout_contract_status": "Required absolute error budget only; no actual source/clock/field/readout implementation is supplied.",
+  "source_sha256": {
+    "archive_1219_/1222/independent_check.py": "13d6e2cd6c5e0dd80096d48e96884e5a6b4022fafa8f63772344a1e2b26912c5"
+  },
+  "calculations": {
+    "parameters": {
+      "a": "1",
+      "m": "100",
+      "M": "500",
+      "gaps": [
+        "0.1",
+        "0.2"
+      ],
+      "epsilon_switch_log": "0.1",
+      "epsilon_material_log": "0.1",
+      "coupling": "0.02",
+      "times": [
+        "20",
+        "30"
+      ],
+      "budgets": [
+        "1e+5",
+        "1e+8"
+      ]
+    },
+    "spectral_identity_diagnostics": [
+      {
+        "E": "-0.7",
+        "delta": "0.3958203185584570975539955",
+        "upper": "1.886526388480670839696817"
+      },
+      {
+        "E": "0",
+        "delta": "0.5068159658950383555005102",
+        "upper": "1.886526388480670839696817"
+      },
+      {
+        "E": "0.1",
+        "delta": "0.5037389506785637854947819",
+        "upper": "1.886526388480670839696817"
+      },
+      {
+        "E": "0.2",
+        "delta": "0.4947828227888520629006897",
+        "upper": "1.886526388480670839696817"
+      },
+      {
+        "E": "2",
+        "delta": "0.2003710605247199172984522",
+        "upper": "1.886526388480670839696817"
+      }
+    ],
+    "curvature_diagnostics": [
+      {
+        "beta_E": "0",
+        "f_second": "1.047197551196597746154214"
+      },
+      {
+        "beta_E": "0.001",
+        "f_second": "1.047197446476848859812906"
+      },
+      {
+        "beta_E": "0.1",
+        "f_second": "1.046150976686506663471651"
+      },
+      {
+        "beta_E": "1",
+        "f_second": "0.9484316087012535570432474"
+      },
+      {
+        "beta_E": "5",
+        "f_second": "0.1316473096779662941233207"
+      },
+      {
+        "beta_E": "20",
+        "f_second": "2.331109848429096770536760e-7"
+      }
+    ],
+    "thermal_thresholds": [
+      {
+        "gap": "0.1",
+        "f_plus": "0.1143568000951688489484975",
+        "f_minus": "0.2143568000951688489484975",
+        "K_star": "0.02930525942172474022458622",
+        "r_star": "0.05596892274669396775784959",
+        "minimum_T_H1_certificate": "13.27933719078109966527404",
+        "minimum_T_cos_squared_certificate": "15.33365780351455335767683"
+      },
+      {
+        "gap": "0.2",
+        "f_plus": "0.07956760973950607597271381",
+        "f_minus": "0.2795676097395060759727138",
+        "K_star": "0.01220818910659543645622475",
+        "r_star": "0.02331592371018351900397426",
+        "minimum_T_H1_certificate": "20.57422854836621466059698",
+        "minimum_T_cos_squared_certificate": "23.75707278153623472495462"
+      }
+    ],
+    "fixed_window_certificates": [
+      {
+        "gap": "0.1",
+        "T": "20",
+        "window_norm_squared": "7.5",
+        "r_cos_squared": "0.03289868133696452872944830",
+        "K": "0.01722570926683323343082018",
+        "log_bias_upper": "0.06301641123507051020170016",
+        "thermal_certificate_pass": true,
+        "leading_reference_q_lower": "0.00005460135003395354781592315",
+        "conditional_absolute_probability_error_allowance": "0.000002727794718202703692932559",
+        "worst_material_log_error": "0.1000000000000000000000000"
+      },
+      {
+        "gap": "0.1",
+        "T": "30",
+        "window_norm_squared": "11.25",
+        "r_cos_squared": "0.01462163614976201276864369",
+        "K": "0.007655870785259214858142300",
+        "log_bias_upper": "0.02970897345234375356070674",
+        "thermal_certificate_pass": true,
+        "leading_reference_q_lower": "0.00008190202505093032172388472",
+        "conditional_absolute_probability_error_allowance": "0.000004091692077304055539398838",
+        "worst_material_log_error": "0.1000000000000000000000000"
+      },
+      {
+        "gap": "0.2",
+        "T": "20",
+        "window_norm_squared": "7.5",
+        "r_cos_squared": "0.03289868133696452872944830",
+        "K": "0.01722570926683323343082018",
+        "log_bias_upper": "0.1361790338535959983675039",
+        "thermal_certificate_pass": false,
+        "leading_reference_q_lower": "0.00003799073520014767974879106",
+        "conditional_absolute_probability_error_allowance": "0.000001897955394054507017436047",
+        "worst_material_log_error": "0.1000000000000000000000000"
+      },
+      {
+        "gap": "0.2",
+        "T": "30",
+        "window_norm_squared": "11.25",
+        "r_cos_squared": "0.01462163614976201276864369",
+        "K": "0.007655870785259214858142300",
+        "log_bias_upper": "0.06485003764262868513357370",
+        "thermal_certificate_pass": true,
+        "leading_reference_q_lower": "0.00005698610280022151962318659",
+        "conditional_absolute_probability_error_allowance": "0.000002846933091081760526154071",
+        "worst_material_log_error": "0.1000000000000000000000000"
+      }
+    ],
+    "resource_certificates": [
+      {
+        "B": "1e+5",
+        "T_max": "13.81546055728926113714654",
+        "p_max": "49998.69999749993499824745",
+        "fixed_times": [
+          {
+            "T": "20",
+            "B_required": "2202646.692980490443334705",
+            "energy_pass": false
+          },
+          {
+            "T": "30",
+            "B_required": "326901737.2479758197314384",
+            "energy_pass": false
+          }
+        ],
+        "continuous_H1_certificate_interval": null,
+        "continuous_cos_squared_certificate_interval": null
+      },
+      {
+        "B": "1e+8",
+        "T_max": "27.63102111587854820821522",
+        "p_max": "49999999.99869999999999750",
+        "fixed_times": [
+          {
+            "T": "20",
+            "B_required": "2202646.692980490443334705",
+            "energy_pass": true
+          },
+          {
+            "T": "30",
+            "B_required": "326901737.2479758197314384",
+            "energy_pass": false
+          }
+        ],
+        "continuous_H1_certificate_interval": [
+          "20.57422854836621466059698",
+          "27.63102111587854820821522"
+        ],
+        "continuous_cos_squared_certificate_interval": [
+          "23.75707278153623472495462",
+          "27.63102111587854820821522"
+        ]
+      }
+    ],
+    "fixed_plan_admission": [
+      {
+        "B": "1e+5",
+        "T": "20",
+        "both_gap_thermal_certificate_pass": false,
+        "two_body_energy_pass": false,
+        "combined_fixed_plan_pass": false
+      },
+      {
+        "B": "1e+5",
+        "T": "30",
+        "both_gap_thermal_certificate_pass": true,
+        "two_body_energy_pass": false,
+        "combined_fixed_plan_pass": false
+      },
+      {
+        "B": "1e+8",
+        "T": "20",
+        "both_gap_thermal_certificate_pass": false,
+        "two_body_energy_pass": true,
+        "combined_fixed_plan_pass": false
+      },
+      {
+        "B": "1e+8",
+        "T": "30",
+        "both_gap_thermal_certificate_pass": true,
+        "two_body_energy_pass": false,
+        "combined_fixed_plan_pass": false
+      }
+    ],
+    "uniform_actual_error_contract_required": "0.000001897955394054507017436047"
+  },
+  "window_integral_diagnostics": [
+    {
+      "T": 20.0,
+      "cosine_power": 1,
+      "norm_integral": 9.999999999999936,
+      "gradient_integral": 0.24674011002723556,
+      "r": 0.024674011002723713
+    },
+    {
+      "T": 20.0,
+      "cosine_power": 2,
+      "norm_integral": 7.499999999999954,
+      "gradient_integral": 0.2467401100272324,
+      "r": 0.032898681336964525
+    },
+    {
+      "T": 30.0,
+      "cosine_power": 1,
+      "norm_integral": 14.999999999999904,
+      "gradient_integral": 0.1644934066848237,
+      "r": 0.01096622711232165
+    },
+    {
+      "T": 30.0,
+      "cosine_power": 2,
+      "norm_integral": 11.249999999999929,
+      "gradient_integral": 0.1644934066848216,
+      "r": 0.014621636149762012
+    }
+  ]
+}

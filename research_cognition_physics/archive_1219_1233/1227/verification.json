@@ -1,0 +1,53 @@
+{
+  "schema": "round1227_root_verification_v1",
+  "date": "2026-10-15",
+  "status": "PASS",
+  "scientific_files_sha256": {
+    "proof.md": "3cbde4effccf211d8a1625e64f78049d5f65ca6c886256544bd414a002930861",
+    "check.py": "ab406a2ef6926ce4c54a2079f19a04f60bb085b2381dfec72a37bb6faf634a55",
+    "results.json": "521c1a79fbbf33c0a734d7dea94be00bc3d2ae656d4dc71dc3f557a4de9fe056",
+    "independent_check.py": "fb41df394902b596c3f399f3a5e6c7f274ee0220d585274a8e075e794cf4803a",
+    "independent_results.json": "1a062b8cd93b20fcec7380ae0765c3ce35a3fb4799157026bd8ba24a0291789e",
+    "independent_review.md": "c79df9636ec6c522983ac359a8549ab7b4dc31f38d12309c7cb2dfc1875122ef",
+    "NEXT.md": "75af1b33d77a251b577ce62b2b00b33cb35a3383ed66e5df4997e3e4545d475a",
+    "../research_note_1227.md": "c7376b818b3244cfd428c2689567ed20327578c62b772d601412c20db4a536a6",
+    "../_admission/after1226_stage_priority_review.md": "07c95289e3f06f4393d65546c4ff6ed1290272b3d469f68a0503ec89658aa019",
+    "../_admission/after1227_reference_flow_priority.md": "a16232c6ee57879bdef5f66f94f0974889bc3ac03917c9f3cafbe128a4b8dd0e"
+  },
+  "root_executed_both_codes": true,
+  "checks": [
+    {
+      "entry": "1227/check.py",
+      "exit_code": 0,
+      "result": {
+        "round": 1227,
+        "status": "PASS",
+        "check_groups": 4,
+        "receipt_mode": "read_only_verified",
+        "log10_j0": -861978.9375294963,
+        "no_actual_Gauss_or_clock_truncation": true
+      }
+    },
+    {
+      "entry": "1227/independent_check.py",
+      "exit_code": 0,
+      "result": {
+        "status": "PASS",
+        "all_checks_passed": true,
+        "results_match": true,
+        "check_groups": 6,
+        "independent_code_sha256": "fb41df394902b596c3f399f3a5e6c7f274ee0220d585274a8e075e794cf4803a"
+      }
+    }
+  ],
+  "markdown_local_links_checked": 58,
+  "display_math_delimiters_paired": true,
+  "control_character_scan_passed": true,
+  "independent_review_bindings_verified": true,
+  "counted_scientific_groups": 4,
+  "independent_groups": 6,
+  "independent_groups_added_to_scientific_total": false,
+  "actual_Gauss_or_clock_dynamics_truncated": false,
+  "outward_interval_constants_certified": false,
+  "stage_complete": false
+}

@@ -1,0 +1,33 @@
+{
+  "schema": "round1221_root_verification_v1",
+  "date": "2026-10-15",
+  "status": "PASS",
+  "scientific_files_sha256": {
+    "proof.md": "b57dbed7f92210b753a0bf980206cb999d5243286247d888a799cd6f76de6b70",
+    "check.py": "a63a14c9f975fa51d6ea7d33d0140c0b57fd5771afaf5009a03579805168e534",
+    "results.json": "7959dbff9de2e985aea9bd52f7a67a57f85c86abb868a61cea8daac69fb345db",
+    "independent_check.py": "a2b5b3b5e399bcbbb8a074f61eae797cddea07e018442200607829b0efae7b9e",
+    "independent_results.json": "690094cb61ea926a1fe2467c7c17e450bc5255592cafdc1e965d6a5198a1b959",
+    "independent_review.md": "08901b99fd83b2606602288f53fb3cb258477b2ce89542901505379d45f4c2ca",
+    "NEXT.md": "05454cbf17c58fbf591d27344d5626689a0278973835206fecf359e1e3bba152",
+    "../research_note_1221.md": "d3ba8fe2b99499080ef7206ca822be7ea8cb9dfab08571ea187b1cbebcee93ed",
+    "../_admission/boundary_entropy_next_after1219.md": "cec6fcf0245ecce6a593c9c97ba94b6849c7f67be0c6f324f01074fea3f958f1"
+  },
+  "root_executed_both_codes": true,
+  "checks": [
+    {
+      "entry": "1221/check.py --verify",
+      "exit_code": 0,
+      "result": "PASS: 4 groups; saved results match"
+    },
+    {
+      "entry": "1221/independent_check.py",
+      "exit_code": 0,
+      "result": "PASS: 3 groups; closed spectra and source bindings match"
+    }
+  ],
+  "counted_scientific_groups": 4,
+  "independent_groups": 3,
+  "independent_groups_added_to_scientific_total": false,
+  "stage_complete": false
+}

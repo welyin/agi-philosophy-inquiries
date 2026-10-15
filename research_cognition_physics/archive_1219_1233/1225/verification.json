@@ -1,0 +1,39 @@
+{
+  "schema": "round1225_root_verification_v1",
+  "date": "2026-10-15",
+  "status": "PASS",
+  "scientific_files_sha256": {
+    "proof.md": "ef2987369cce9641c14c0d02ed703bcc5ec82bc6c13dd99bd387d1f442615fbe",
+    "check.py": "bd9acbfad41892265c4885ed5c741210b13f7c7eda30992d8fe9bbb9395dbe6c",
+    "results.json": "8ba47c22a169d6c7fe0bc713c3626ec8a9a9048adcd701a410689abe63ac86cd",
+    "independent_check.py": "35a57e452351dcd2fa81106639dbb7c6cd4b5a90f48894ffeef59bd31e7f6b55",
+    "independent_results.json": "e31ffc11d4e0b473c7555e50fffb0f7d2226c399feedf09c4bcc7f98778ec5f6",
+    "independent_review.md": "8cc941bac299f7e1e3be06eaaf5390279237746beb24829abeb00f24a159f055",
+    "NEXT.md": "08fb0eb806a20f7072eb29fe41788eb90a878613325d08bf6275a9f308171ad9",
+    "../research_note_1225.md": "295b350c917062c214bff6a5b62cb9877bacbcc3fc4fa634480178a1831bf879",
+    "../_admission/after1224_joint_geometry_thermal_screen.md": "00cb1cc825cf521a7fe4892f17a894e0af01e2af24ca6b0ec9caa86adaf5b430",
+    "../_admission/after1225_uniform_boundary_thermal_screen.md": "b7d9b06721d23ef59905233e502bb2d6c0a55cace2421b07d6415eb3ec93e1f5"
+  },
+  "root_executed_both_codes": true,
+  "checks": [
+    {
+      "entry": "1225/check.py --verify",
+      "exit_code": 0,
+      "result": "PASS: 4 groups; saved result equality"
+    },
+    {
+      "entry": "1225/independent_check.py",
+      "exit_code": 0,
+      "result": "PASS: 6 groups; independently rebuilt matrix, geometry, target integrals and errors"
+    }
+  ],
+  "markdown_local_links_checked": 55,
+  "display_math_delimiters_paired": true,
+  "independent_review_bindings_verified": true,
+  "counted_scientific_groups": 4,
+  "independent_groups": 6,
+  "independent_groups_added_to_scientific_total": false,
+  "full_H_moments_numerically_computed": false,
+  "specific_coefficient_error_interval_certified": false,
+  "stage_complete": false
+}

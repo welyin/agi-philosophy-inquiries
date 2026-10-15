@@ -1,0 +1,104 @@
+{
+  "schema": "thermal_geometry_startup_checks_v1",
+  "date": "2026-10-15",
+  "status": "PASS",
+  "application_goal_status": "active",
+  "goal_objective_sha256": "b831ed16bf3433b78a7852086842e77d2e4127e93fc2f9ea74f1b829aef75f40",
+  "first_round": 1219,
+  "latest_historical_accepted_round": 1218,
+  "accepted_scientific_rounds": [],
+  "new_scientific_rounds": 0,
+  "stage_complete": false,
+  "phase": "goal activation and first-question admission; no new theorem claimed",
+  "source_files_sha256": {
+    "research_cognition_physics/_migration/thermal_geometry_active_1219/verification.json": "06fc04a134a3025022c4f589ee8dbe720759f611949ff7a0d8da6c08dc18a374",
+    "research_cognition_physics/archive_1219_/_admission/reuse_and_first_question.md": "4a42c80c12367bf0f8225ea5ed419624a9af82242d18447c7f516930b5141336",
+    "research_cognition_physics/archive_1219_/_shared/check_startup.py": "481341b0f5faf60d146b340dffc98afaf18d67afc6d1f84d864a07bb23ef9a13",
+    "research_cognition_physics/archive_1219_/_shared/dependency_ledger.json": "fd978e975b412637445f21992e1daa4f1dfd7e6abd9eab23f8efdb6a1db01919",
+    "research_cognition_physics/archive_1219_/_shared/goal.md": "96e76c08f2a718a0d8b8e570cde27aa27f825fa235a6519c674a472418d713d1",
+    "research_cognition_physics/archive_1219_/_shared/goal_prompt.txt": "395fdf574485636e3896ed2c28360f1405370800c3a2b5db53862bde47435c43",
+    "research_cognition_physics/archive_1219_/_shared/goal_start_receipt.json": "ba29bfc7c2c43ea6c19ac0d5efa6ed7f94fbe03aa5139704da24109ce5a2602b",
+    "research_cognition_physics/archive_1219_/_shared/navigation_notice.md": "3aaba6d5979c3feb3ff7ef6b2948a1ddbf05c1668655b5ec5d58d0fb4d3199a0",
+    "research_cognition_physics/archive_1219_/_shared/update_navigation.py": "7d5645fac6f7f75b6ec114b6b1ae13534cb1073a3d46db7345c3d93fbf887db5",
+    "research_cognition_physics/archive_1219_/_shared/usage_reset_policy.json": "7ffccbfac1d0f87df8123c5f4a41d83bde0f702349c913019f673f450e2ff4e5",
+    "research_cognition_physics/archive_1219_/README.md": "017c773c92542c6e6d79d6aad6aeddb25fdbd5ad17152558d7116e75bf203908",
+    "research_cognition_physics/archive_1219_/文件索引.md": "20735a493018c57f09f82767128ac4e215b4cd6de820f55daeb11759433bbbb4",
+    "scripts/run_research_thermal_geometry_active.py": "370a766c835fb91e747411d1b9d2ca0d5a331f68c8eeedc3db26ada66d059f01"
+  },
+  "active_navigation_and_old_replay": [
+    {
+      "arguments": "'research_cognition_physics/archive_1219_/_shared/update_navigation.py' --check",
+      "exit_code": 0,
+      "result": {
+        "status": "CHECKED",
+        "files": 4,
+        "changed_files": 0,
+        "closed_boundary_unchanged": true,
+        "original_navigation_recoverable": true,
+        "scientific_files_modified": false
+      }
+    },
+    {
+      "arguments": "'scripts/run_research_thermal_geometry_active.py' --verify-navigation",
+      "exit_code": 0,
+      "result": {
+        "status": "PASS",
+        "files": 4,
+        "manifest_sha256": "fa706a0379309c5f4ec749897189d2a761664e25fb246a67bc84e2bd30c43002",
+        "closed_boundary_verified": true,
+        "original_navigation_recoverable": true,
+        "frozen_archives_modified": false
+      }
+    },
+    {
+      "arguments": "'scripts/run_research_thermal_geometry_active.py' --verify-closure",
+      "exit_code": 0,
+      "result": {
+        "status": "PASS",
+        "files": 992,
+        "moved_files": 984,
+        "scientific_python_json_byte_identical": 507,
+        "reversible_markdown_files": 24,
+        "frozen_support_files": 124,
+        "manifest_sha256": "338b9a7dd23e70ff20e19e6957569acb0c46437e14cee8a89f084b24332806dd",
+        "old_directories_absent": true,
+        "current_and_original_hashes_verified": true,
+        "directory_copy_used": false,
+        "zip_used": false
+      }
+    },
+    {
+      "arguments": "'scripts/run_research_thermal_geometry_active.py' --script 'research_cognition_physics/archive_1201_1218/_shared/finalize_four_laws_stage.py' -- --verify",
+      "exit_code": 0,
+      "result": {
+        "status": "PASS",
+        "goal_status": "complete",
+        "stage_complete": true,
+        "stage_scope": "declared compatible thermal domains",
+        "latest_scientific_round": 1218,
+        "stage_rounds": 18,
+        "stage_check_groups": 36,
+        "new_scientific_rounds": 0,
+        "old_GR_science_files_verified": 421,
+        "old_GR_acceptance_bindings_verified": 485,
+        "current_stage_science_files_verified": 152,
+        "adopted_thermal_roles": [
+          "TR",
+          "TW",
+          "TC"
+        ],
+        "new_universal_axioms": 0,
+        "old_GR_goal_completed": false
+      }
+    }
+  ],
+  "old_GR_goal_completed": false,
+  "four_laws_previous_goal_status": "complete_in_declared_scope",
+  "usage_remaining_percent_at_last_tool_check": 2,
+  "one_conditional_reset_authorized": true,
+  "reset_used": false,
+  "local_markdown_files": 9,
+  "local_links_checked": 4695,
+  "missing_links": [],
+  "known_historical_limit": "Earlier full-layout formula inventory differs from later conjecture edits; already recorded in closure_1161_1218. Not rerun or silently rebound."
+}

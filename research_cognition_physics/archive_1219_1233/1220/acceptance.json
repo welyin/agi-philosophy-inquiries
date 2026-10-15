@@ -1,0 +1,58 @@
+{
+  "schema": "thermal_geometry_round_acceptance_v1",
+  "round": 1220,
+  "date": "2026-10-15",
+  "status": "ACCEPTED_WITH_SCOPE",
+  "check_groups": 5,
+  "scope": "指定一维圆周两模式有限源有效核的质量翻转、场方向与来源动量分箱联合预测；有全母准备支持Duhamel界及公开舍入条件预算，实际记录仍以R1220为条件。",
+  "root_executed_both_codes": true,
+  "files_sha256": {
+    "proof.md": "67f3edb3abbe4793cfbc6ad8284645d5a3e46794d1fc2137befc787cd62c06b7",
+    "check.py": "235d464544417dc5058ff2d67db95fa6011598bd89e7678b955cff17754cddbd",
+    "results.json": "5855ddecbda1732cc3deb65f03466467d2a694a46d2d770acbbaa4f6ecc78eb3",
+    "independent_check.py": "ba8cbd6029037691786307aa1e7f8a59387956f68e39b4ec1ca55b265950abaa",
+    "independent_results.json": "f026a7c7cf276eb420539338cc57f2e391bdab424772adf98407d894658248a9",
+    "independent_review.md": "d32431da529293d041e39dc12844aa9d8e2b621952cea8fe3ee47fda350fca37",
+    "NEXT.md": "89231e22d102ad2222aaad6a0291fd1cea91d7fb67e0ffc3c3757e2640f43e6c",
+    "admission.md": "43cb8929e93700365185fd58496dc4575f055128fc201cf9b3dc3609b4850bbd",
+    "candidate_explore.py": "b40c48ac5c6a88a49bbc34a21ace253b26a16c20584fbcdd06d6eb6fd8df04ae",
+    "../research_note_1220.md": "831bd373f5da4a05590d6ef0951456f96015917c3c8c22f5ee53721fd6055dee",
+    "verification.json": "2a4c14e24fdcdfff453ef39e30f9d4d7cfef5e159c4c321e5c5a0600a93fa128"
+  },
+  "certified": {
+    "positive_self_adjoint_effective_mother_H": true,
+    "total_momentum_and_material_mass_in_same_kernel": true,
+    "finite_source_dynamic_not_given_trajectory": true,
+    "source_final_state_retained": true,
+    "unknown_preparation_dimension": 3,
+    "arbitrary_reference_extension": true,
+    "projection_state_bound_includes_momentum_and_Fock_leakage": true,
+    "numerical_certificate": "conditional on published standard binary64 arithmetic and correctly rounded sqrt",
+    "joint_holdout_gap_lower_bounds": [
+      0.0110735,
+      0.0311389
+    ],
+    "actual_event_contract_each": 0.001,
+    "reference_pinching_not_QND": true,
+    "full_model_reference_mean_work_bound": true,
+    "actual_readout_kernel_constructed": false,
+    "clock": "old rest laboratory clock only"
+  },
+  "additional_model_inputs": [
+    "Circle, positive-mass material/source, fixed cosine source potential and two working boson modes",
+    "Finite joint preparation and independently chosen two-mode vacuum",
+    "R1220 finite preparation/trigger/readout/work-account contract; conditional performance, not manufactured hardware"
+  ],
+  "not_claimed": [
+    "Classical accelerated trajectory or actual comoving proper clock",
+    "Full Lorentz-covariant local field interaction",
+    "Unruh or KMS temperature",
+    "Certified unbounded final momentum means from norm error",
+    "Deterministic work capacity or actual total readout resource construction",
+    "Independent area entropy or geometric backreaction",
+    "Einstein dynamics or full stage completion"
+  ],
+  "new_adopted_axioms": 0,
+  "new_empirical_calibration": 0,
+  "stage_complete": false
+}

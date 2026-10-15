@@ -1,0 +1,177 @@
+{
+  "round": 1227,
+  "status": "PASS",
+  "check_groups": 4,
+  "tests_run": 4,
+  "failures": 0,
+  "errors": 0,
+  "source_sha256": {
+    "archive_554_584/574/joint_curved_quantum_source.py": "cf6aec9461174f41985b706c1bae776787b198ab77d9e42dfe8057764795775c",
+    "archive_585_628/research_note_598.md": "9a83b9ed293b537ff575dd440fdcd1837473bef74b6d815bfbfebdc6055adaa3",
+    "archive_585_628/research_note_603.md": "caaf9d2ca3b63b21084227b4d4995b1bf45efc5599df42f3518471cc309ce8ca",
+    "archive_702_741/research_note_723.md": "e4feedf13d8c532011039fba21d0852f501674310be234b0c6d34ce06273a731",
+    "archive_702_741/research_note_725.md": "e13743dec59ff4e73a8d38b152515db70abc15d69d944ea2c8faadc04d5e16ed",
+    "archive_1120_1158/1128/proof.md": "fc9963b8f77d0a60e2233acbcc68e02e583af345a5653d1d4431ea619be0fcd2",
+    "archive_1201_1218/1203/proof.md": "c2c29a7805afc15a596086e6915f5216296a2e523175483881ab2313f7219428",
+    "archive_1219_/1225/proof.md": "ef2987369cce9641c14c0d02ed703bcc5ec82bc6c13dd99bd387d1f442615fbe",
+    "archive_1219_/1226/proof.md": "9d5558d399c0059d5f6d3ac8f0a077111f9702588edaadcfb0626458e1d42eb1",
+    "archive_1219_/1226/check.py": "46081a80e01ac1fc945ef1a7fe8bdf90d65285364ad7646ce492a7420aedae3d",
+    "archive_1219_/1226/results.json": "baf60422dcf9a48a0330c3aa68b04d8fea74b75691a5663fb81a77dc15f6034d",
+    "archive_1219_/_admission/after1226_stage_priority_review.md": "07c95289e3f06f4393d65546c4ff6ed1290272b3d469f68a0503ec89658aa019",
+    "archive_1219_/1227/proof.md": "3cbde4effccf211d8a1625e64f78049d5f65ca6c886256544bd414a002930861",
+    "archive_1219_/1227/check.py": "ab406a2ef6926ce4c54a2079f19a04f60bb085b2381dfec72a37bb6faf634a55"
+  },
+  "groups": {
+    "material_commutator_and_thermal_moments": {
+      "status": "PASS",
+      "beta": "17/10",
+      "N": 125,
+      "trace_a_upper": 500,
+      "trace_log_budget_rational": 455,
+      "scalar_core_guard": "19683/4",
+      "scalar_tail_guard": "60750",
+      "e_beta_rational_upper": "195164/17",
+      "chosen_e_upper": 11481,
+      "A_mean_upper": 1435126,
+      "A_second_moment_upper_rational": "595221513653964/289",
+      "A_second_norm_upper": 1440000,
+      "material_commutator_constant": 64,
+      "positive_injection_formula": "j0 = 2^(-7) exp(-1984775)",
+      "narrow_trial_shifted_energy_per_node": 9046,
+      "no_full_Gibbs_spectrum_or_moment_evaluation": true
+    },
+    "original_field_Stinespring_identity": {
+      "status": "PASS",
+      "pointer_dimensions": "P1 E1 P2 E2 = 2^4",
+      "pointer_bare_positive_energy": 4,
+      "rows": [
+        {
+          "s": -1.2,
+          "theta": 1.027791454233027,
+          "plus_probability": 0.26699022850819343,
+          "minus_probability": 0.7330097714918066,
+          "Gamma_s": 1.5488,
+          "Delta_s": 0.35200000000000004,
+          "Delta_theta": -0.4268208920875231,
+          "original_energy_injection_density_w1": 0.00811811797867296
+        },
+        {
+          "s": -0.7,
+          "theta": 0.9493762697365077,
+          "plus_probability": 0.33894557819057725,
+          "minus_probability": 0.6610544218094228,
+          "Gamma_s": 1.840001388888889,
+          "Delta_s": 0.22380555555555556,
+          "Delta_theta": -0.30714890905399117,
+          "original_energy_injection_density_w1": 0.037530527075400735
+        },
+        {
+          "s": 0.0,
+          "theta": 0.7853981633974483,
+          "plus_probability": 0.5000000000000001,
+          "minus_probability": 0.5000000000000001,
+          "Gamma_s": 2.0,
+          "Delta_s": -0.0,
+          "Delta_theta": 0.0,
+          "original_energy_injection_density_w1": 0.0625
+        },
+        {
+          "s": 0.4,
+          "theta": 0.687417694492422,
+          "plus_probability": 0.5973545855771626,
+          "minus_probability": 0.4026454144228374,
+          "Gamma_s": 1.9470222222222224,
+          "Delta_s": -0.13155555555555556,
+          "Delta_theta": 0.18153272334197001,
+          "original_energy_injection_density_w1": 0.053651610234812325
+        },
+        {
+          "s": 1.2,
+          "theta": 0.5430048725618696,
+          "plus_probability": 0.7330097714918066,
+          "minus_probability": 0.26699022850819343,
+          "Gamma_s": 1.5488,
+          "Delta_s": -0.35200000000000004,
+          "Delta_theta": 0.4268208920875231,
+          "original_energy_injection_density_w1": 0.00811811797867296
+        }
+      ],
+      "maximum_Stinespring_error": 0.0,
+      "constant_angle_deleted_field_injection": 0,
+      "constant_angle_deleted_field_readout_dependence": true,
+      "full_state": "coherent Stinespring with E retained; CQ records only after matching query/trace",
+      "not_a_finite_matrix_replacement_of_material_or_clock": true
+    },
+    "two_comparisons_and_full_energy_certificate": {
+      "status": "PASS",
+      "R": 1597696,
+      "D": 169984,
+      "T": 4,
+      "fixed_parameters": [
+        "delta=j0/(32 R D)",
+        "L=4/delta^2",
+        "r_a=(1200+256/delta)^2",
+        "sigma=j0/(128 L T (r_a+R+1))",
+        "M=T/sigma^2+16 L^2 T^2/j0+1"
+      ],
+      "classical_pulse_total_area": 2,
+      "actual_operator_time_bound": "2 T/delta (not area 2)",
+      "pulse_material_energy_error_over_j0": "<= 1/16",
+      "clock_tracking_material_energy_error_over_j0": "< 1/64",
+      "total_material_energy_error_over_j0": "< 5/64",
+      "endpoint_interaction_bound_over_j0": "19/512 < 1/16",
+      "total_record_halftrace_over_j0": "< 1/(16 R)",
+      "actual_material_gain_lower_over_j0": "59/64",
+      "actual_clock_loss_lower_over_j0": "55/64",
+      "number_of_independently_prepared_local_clocks": 2,
+      "force_bounds": "L1=L2=2/delta^2; L1+L2=L; sum Lj^2 <= L^2",
+      "energy_identity": "Delta EH + Delta E_C1C2 + Delta E_PE + Delta V = 0",
+      "parameter_log_displays": {
+        "log_j0": -1984779.852030264,
+        "log_delta": -1984809.64529891,
+        "log_force_bound": 3969620.6768921814,
+        "log_actual_material_A_norm_bound": 3969630.3809527094,
+        "log_r_a_plus_R_plus_one": 3969630.3809527094,
+        "log_sigma": -9924037.14819978,
+        "log_M": 19848075.68269392,
+        "log_single_clock_energy": 19848074.989546742,
+        "log_initial_two_clock_energy": 19848075.68269392
+      },
+      "displays_are_not_interval_certification": true
+    },
+    "infinite_rank_clock_entropy_and_resources": {
+      "status": "PASS",
+      "each_clock_number_bound": "n_Cj <= (sigma L T + L T^2/(4 M sigma))^2 <= j0^2/4096",
+      "joint_two_clock_entropy_bound": "S(C1 C2) <= 2 nbar (2-log nbar)",
+      "no_final_clock_independence_assumption": true,
+      "no_finite_rank_assumption": true,
+      "actual_clock_may_be_non_Gaussian": true,
+      "initial_two_clock_energy": "2 (M/2 + 1/(8 M sigma^2) + 1)",
+      "pointer_environment_entropy_upper_display": 2.772588722239781,
+      "material_entropy_finite_from": "finite actual A mean and inherited positive-temperature trace",
+      "log10_displays": {
+        "j0": -861978.9375294963,
+        "pulse_width_delta": -861991.8765816671,
+        "clock_spatial_width_sigma": -4309954.571666048,
+        "clock_mass_parameter": 8619909.745392088,
+        "initial_two_clock_energy": 8619909.745392088,
+        "each_clock_number_upper": -1723961.4874189405,
+        "joint_two_clock_entropy_upper": -1723954.5876454776
+      },
+      "no_empirical_precision_or_practical_feasibility_claim": true,
+      "all_four_pointer_environment_systems_retained": true
+    }
+  },
+  "scope": "one finite sufficient same-untruncated-material two-record clock certificate",
+  "claims_not_made": [
+    "full dynamics numerical simulation",
+    "practical clock specification",
+    "three-dimensional clock position",
+    "accelerated proper time",
+    "Unruh response",
+    "full Lorentz-causal certification of the original Gauss graph",
+    "gravitational backreaction",
+    "autonomous preparation of all hardware",
+    "stage completion"
+  ]
+}

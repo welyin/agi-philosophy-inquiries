@@ -1,0 +1,46 @@
+{
+  "schema": "thermal_geometry_round_acceptance_v1",
+  "round": 1224,
+  "date": "2026-10-15",
+  "status": "ACCEPTED_WITH_SCOPE",
+  "check_groups": 4,
+  "scope": "原完整Gauss H与原字段仪器在固定有限正常准备下，区分两份压缩谱相同的形状；非零有限窗及样本存在，具体H矩和数值时长未认证。",
+  "root_executed_both_codes": true,
+  "files_sha256": {
+    "proof.md": "fb0362e16401e8d9e670a27422ffdcea685db2d7fabba0c9aee85e20423796ab",
+    "check.py": "91c961df1dd35b0f8a5f36208961e9947d1070828b4fb65167f26162576d3c89",
+    "results.json": "123961f92d9ed41be607f57b8c07b33becc2c71aae3edf5c1b9ae0c3df3511a0",
+    "independent_check.py": "1819e29fb12c80f89dd352489b99e3eb34943ae75a666e936925d7ac5172ecb4",
+    "independent_results.json": "f2c9c2f9ace52194fde55d562c6bf32e71644ea8bcabc02b23c565fc02d3ad6a",
+    "independent_review.md": "413c3bfa2632c5b0b588fff70236eb80c5eb5d15b9772e773026baacf77b3216",
+    "NEXT.md": "76d6aa74fd14c4af02ed7b2ebfe2dc97f1f78669c0d0a9fde54c211f8460c8a4",
+    "../research_note_1224.md": "ca6ca24abe3e1dd5043cde03233395c20cc5bd5e735c87bef2e7345491d2c111",
+    "../_admission/area_readout_screen_after1221.md": "018e3b12e0ed0ef43962704c7af4e4bb7654f31ddc7a06fa8f10e0315ef3a3e4",
+    "../_admission/after1224_joint_geometry_thermal_screen.md": "00cb1cc825cf521a7fe4892f17a894e0af01e2af24ca6b0ec9caa86adaf5b430",
+    "verification.json": "db8c5583aa3a1dd410474f080db340d1a37d839714936786ffb0b7c797df5a77"
+  },
+  "certified": {
+    "full_H_nonzero_mixed_shape_response": true,
+    "normal_Gauss_preparation_and_finite_H3_domain": true,
+    "finite_time_and_samples_exist": true,
+    "explicit_conditional_remainder_and_statistics": true,
+    "same_field_local_mean_record_parameter": true,
+    "independent_review_and_recomputation": true
+  },
+  "additional_model_inputs": [
+    "Original fixed positive graph geometry and material Hamiltonian",
+    "Fixed finite normal preparations and original singlet instrument permissions",
+    "Scalar-independent declared hopping and finite waiting protocol",
+    "Full Hamiltonian moments as inputs to quantitative time and error contracts"
+  ],
+  "not_claimed": [
+    "Numerically certified full H moments, time window or sample count",
+    "Autonomous preparation, trigger, clock or record construction",
+    "Single-run proper time or absolute length calibration",
+    "Complete face-area readout or entropy-area law",
+    "Dynamic gravity or TG1-TG4 completion"
+  ],
+  "new_adopted_axioms": 0,
+  "new_empirical_calibration": 0,
+  "stage_complete": false
+}

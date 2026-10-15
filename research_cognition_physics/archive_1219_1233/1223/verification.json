@@ -1,0 +1,36 @@
+{
+  "schema": "round1223_root_verification_v1",
+  "date": "2026-10-15",
+  "status": "PASS",
+  "scientific_files_sha256": {
+    "proof.md": "59abd708aa6aeccfa00a7d7bf7c508f4c64b2719fdf63e80637752750bfe567d",
+    "check.py": "8fd93f61163faa639a3359d82b321254187ec6eabeed5bcec73ce4c6702a595f",
+    "results.json": "6bb2f28a8610b1158e2e11403bc98de475318e42346c9c01f8418885ed2a6823",
+    "independent_check.py": "83b602796890c33543e970c3371bebb53cb83e181f3afc1ccad20bebe71c9ee3",
+    "independent_results.json": "91aefeac01a83b18e833ccbf04a7a40a15c614a9b00c31ca753a2f5201d9399e",
+    "independent_review.md": "ba0a528db7f1846c9fd813f7a17f249c2c191f6df127edc5a8b59a6052ecdadd",
+    "NEXT.md": "362c584728a1b8133ee6dcfa10c30bba866c4cab4744f67ec7852b1a0a1a34fe",
+    "../research_note_1223.md": "8adc94379b4e896f17d3b3bcbfd52413e8a6fb61a81a531006c6e03769c9b834",
+    "../_admission/full_probability_bridge_screen_after1222.md": "14f5f4826aa4d0841cc5d97409218453ddf408c688d29ccba15b066be8df7059",
+    "../_admission/priority_crosscheck_after1222.md": "217ac8cc9358b69b0934993867eeae5ad4f6c7b1f58b7a4cb6a76a83a573f2cc"
+  },
+  "root_executed_both_codes": true,
+  "checks": [
+    {
+      "entry": "1223/check.py --verify",
+      "exit_code": 0,
+      "result": "PASS: 4 groups; saved result equality"
+    },
+    {
+      "entry": "1223/independent_check.py",
+      "exit_code": 0,
+      "result": "PASS: 3 groups; independent rational envelope and Gaussian TV"
+    }
+  ],
+  "markdown_local_links_checked": 32,
+  "display_math_delimiters_paired": true,
+  "counted_scientific_groups": 4,
+  "independent_groups": 3,
+  "independent_groups_added_to_scientific_total": false,
+  "stage_complete": false
+}

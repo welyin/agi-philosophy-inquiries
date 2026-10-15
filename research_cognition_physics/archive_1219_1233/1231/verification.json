@@ -1,0 +1,62 @@
+{
+  "schema": "round1231_root_verification_v1",
+  "date": "2026-10-15",
+  "status": "PASS",
+  "scientific_files_sha256": {
+    "proof.md": "4b341a6274c368822efeab7cdc42ee5bf8eea3c039530f768ee661f8630f96cf",
+    "check.py": "ee579b39bde07998d175aa81fc5a30a4678720ac0dc22e33ca20134479dd3f94",
+    "results.json": "18c4564b6c1b7df54a7914990166a5795c1b398df11bcce9a70d066b3e50b192",
+    "independent_check.py": "890e846107f75edfed3dfb82db3c9db88d749bd0d33b617725f9fc4a239fdf76",
+    "independent_results.json": "5946e1deb7aa4767d04b1e251f47425e2596e6ddf4c804193afbfbbd37ff56f9",
+    "independent_review.md": "ed4a7d279b8bc97f7b5c3a8cb5438273d5d0de8c7a48c5d4c7fd310f9ffeb9ca",
+    "NEXT.md": "f2d6b80e83e16df2ac9e93ec57a79fcebef8784db14db3c8d43e5f9724f0a825",
+    "../research_note_1231.md": "f90657b08a1fc2dbbfedd5391ba813ff28c7e822ff8851dfdf76461835f24f0e",
+    "../_admission/after1230_finite_motion_thermal_admission.md": "a2f141fbd3e53b75b45b32dfaa448d7d2bb99b4b749178b4f07920110bbb04db",
+    "../_admission/stage_scope_audit_after1230.md": "d94ea8bfc91ab23b2bc0a11b8b273bc39fdc8a59638512d259760363bee9a361"
+  },
+  "root_executed_both_codes": true,
+  "checks": [
+    {
+      "entry": "1231/check.py",
+      "exit_code": 0,
+      "result": {
+        "round": 1231,
+        "status": "PASS",
+        "check_groups": 4,
+        "all_output_norm_error": 1.4400024e-05,
+        "coherence_loss_upper": 1.80003600018e-13,
+        "narrow_source_support_gap": 6.81999999999687e-15,
+        "read_only": true
+      }
+    },
+    {
+      "entry": "1231/independent_check.py",
+      "exit_code": 0,
+      "result": {
+        "round": 1231,
+        "status": "PASS",
+        "check_groups": 6,
+        "complete_vector_error_upper": 1.2426785181319796e-05,
+        "joint_motion_overlap_loss_upper": 1.764215283776418e-13,
+        "narrow_source_gap": 6.81999999999687e-15,
+        "read_only": true
+      }
+    }
+  ],
+  "markdown_local_links_checked": 37,
+  "source_bindings_verified": 8,
+  "display_math_delimiters_paired": true,
+  "control_character_scan_passed": true,
+  "independent_review_bindings_verified": true,
+  "counted_scientific_groups": 4,
+  "independent_groups": 6,
+  "independent_groups_added_to_scientific_total": false,
+  "analytic_review_includes": [
+    "exact lightcone conservation and involutive measure-preserving shear",
+    "same source initial state and uniform conditional-translation norm estimates",
+    "arbitrary reference extension and full environment coherence coefficient",
+    "strict disjoint-source-support countercase and unfixed scattering phase",
+    "free comoving phase, asymptotic position domain and actual instrument permission boundary"
+  ],
+  "stage_complete": false
+}

@@ -1,0 +1,47 @@
+{
+  "schema": "thermal_geometry_round_acceptance_v1",
+  "round": 1232,
+  "date": "2026-10-15",
+  "status": "ACCEPTED_WITH_SCOPE",
+  "check_groups": 5,
+  "scope": "同Dirac楔参考的有限正谱窗口、全阶翻转概率与实际操作误差联合条件定理；同材料谱侧存在性与固定条件数值证书分别成立。",
+  "root_executed_both_codes": true,
+  "files_sha256": {
+    "proof.md": "268d5d445d31ce151cb7a03570d097c252b717888db2b560ce70af4c5b25a071",
+    "check.py": "c1325ec22cea416abfc82cfe6c17fd27b4001428dff3d218e8893bb46dc04f9c",
+    "results.json": "b55765465b1253d720b0e989ed96d93f2c6872a43041df6fd2d12c2d1aa48bbf",
+    "independent_check.py": "4cad3cf22eb0ac306b7323db57c7226e01d821920bba401face6307eff22e8c6",
+    "independent_results.json": "0a647d2722403cac53e1cc868e783d34405b3df1c5cc45fbfa5d8fc0e04a812f",
+    "independent_review.md": "ef53b4e50437fabbcb5b7352991184d4b535e6e07022f38d1cb69b30bbeaa072",
+    "NEXT.md": "9688123f86d8f7f5fdfa14a22849988bc98f33f0dea418d3dd4c6d4f81068e66",
+    "../research_note_1232.md": "f8e4096b4af985526f3d5716e46d0874be2629c938ae55021c97c9f00d7a0411",
+    "../_admission/after1230_finite_motion_thermal_admission.md": "a2f141fbd3e53b75b45b32dfaa448d7d2bb99b4b749178b4f07920110bbb04db",
+    "../_admission/stage_scope_audit_after1230.md": "d94ea8bfc91ab23b2bc0a11b8b273bc39fdc8a59638512d259760363bee9a361",
+    "verification.json": "b10ee9c7128860bfb7fa1fbd89aa3add5ecb57cfec3ba5b0d82a9bf52ea037dd"
+  },
+  "certified": {
+    "finite_measure_KMS_and_band_bound": true,
+    "all_order_flip_probability_error": true,
+    "Dirac_positive_frequency_window_existence": true,
+    "fixed_conditional_budget_log_error_below_one_fifth": true,
+    "strict_positive_allowed_operation_error": true,
+    "independent_recomputation": true
+  },
+  "additional_model_inputs": [
+    "Same free massive Dirac wedge vacuum and BW premises",
+    "Independently identified proper time, acceleration, original energy gap and boosted regional coupling",
+    "Actual full process and instrument approximation contract with complete source/control records",
+    "Fixed numerical table uses an uncomputed Dirac spectral core lower bound 1/64"
+  ],
+  "not_claimed": [
+    "Specified Dirac numerical core mass certified",
+    "An actual autonomous accelerated apparatus or moving old clock constructed",
+    "Actual operation error already achieved",
+    "Atomic regression spectrum equals Dirac spectrum",
+    "Global vacuum is a global finite-temperature bath",
+    "TG2 or stage completion"
+  ],
+  "new_adopted_axioms": 0,
+  "new_empirical_calibration": 0,
+  "stage_complete": false
+}
