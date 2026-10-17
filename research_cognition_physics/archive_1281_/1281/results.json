@@ -1,0 +1,74 @@
+{
+  "round": 1281,
+  "status": "PASS_WITH_SCOPE",
+  "new_axioms": 0,
+  "theorem": "positive comparison + independently fixed full-rank coherent zero calibration => C=AR,K=RAR",
+  "exact_witness": {
+    "d": 2,
+    "reference": "Pauli X",
+    "comparison_eigenvalues": [
+      0,
+      0,
+      2,
+      2
+    ],
+    "preserves_arbitrary_partner": true,
+    "comparison_cost_zero": true
+  },
+  "positive_mismatch": {
+    "c": "X+Z/4",
+    "k": "9I/8",
+    "schur_remainder": "I/16",
+    "exact_calibration_energy": "1/16",
+    "finite_evolution_code_change": 0.169632734588
+  },
+  "necessity": {
+    "without_positivity_min_eigenvalue": -1,
+    "rank_deficient_missed_energy": "1/5",
+    "reference_cannot_be_fitted_to_candidate": true
+  },
+  "square_root_order": [
+    {
+      "t": 0.5,
+      "epsilon": 0.125,
+      "coupling_error": 0.5
+    },
+    {
+      "t": 0.25,
+      "epsilon": 0.03125,
+      "coupling_error": 0.25
+    },
+    {
+      "t": 0.125,
+      "epsilon": 0.0078125,
+      "coupling_error": 0.125
+    },
+    {
+      "t": 0.0625,
+      "epsilon": 0.001953125,
+      "coupling_error": 0.0625
+    }
+  ],
+  "numerical_diagnostics": {
+    "noncommuting_general_cases": 24,
+    "largest_c_error_bound_ratio": 0.369724062834,
+    "largest_schur_bound_ratio": 0.370247628752,
+    "singular_a_test": "PASS"
+  },
+  "scope": {
+    "finite_comparison_model": true,
+    "all_local_field_variations_assumed": false,
+    "full_field_theory_generated": false,
+    "gauge_dynamics_generated": false,
+    "full_cognitive_axiom_model_certified": false,
+    "preparation_and_records_free": false
+  },
+  "source_sha256": {
+    "archive_1281_/1281/proof.md": "b22e68f480567bf1c524d2bdd529ba4f1728caa4930d1e592cb2ce367936d2ae",
+    "archive_1281_/1281/check.py": "87170874e771f9d70da8c25dcbb9079bf3af33ed460a37c760cbb556da25ead3",
+    "archive_923_934/research_note_933.md": "26ef1506c8d1155245025a4df1b0a2fcecdad7951065910ad619c3c5d38e69d4",
+    "archive_956_989/research_note_959.md": "d4e90c984d032b4aa437fc9bc35a7f7d293cf131a0050e5ec2d6796c4ccbeaed",
+    "archive_956_989/research_note_962.md": "c50a3972a5d31734ee93067556b1c853370db21105cd272a2fd9f76f9fd7a7d1",
+    "archive_1009_1043/research_note_1016.md": "ffaddfaf5c62283de99836ccb10ee6e4f235fdef64e9a83d5db088c3ec507969"
+  }
+}

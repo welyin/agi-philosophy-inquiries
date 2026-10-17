@@ -1,0 +1,20 @@
+{
+  "round": 1283,
+  "date": "2026-10-17",
+  "all_passed": true,
+  "cases": [
+    {
+      "script": "check.py",
+      "returncode": 0,
+      "tool_receipt": "483952",
+      "stdout": "PASS: READ_ONLY_MATCH\nresult_sha256=a08ab9c9fa2b461af08f1fa85388e128182afc91a8a96debb45d33fc4a059ab5\nC4=4608/125; residual(c=1/10)=1728/625\nmax_group_diagnostic_residual=1.0517118525891604e-08\n",
+      "stderr": ""
+    },
+    {
+      "script": "independent_check.py",
+      "returncode": 0,
+      "stdout": "{\"status\": \"PASS_WITH_SCOPE\", \"mode\": \"READ_ONLY_MATCH\", \"round\": 1283, \"exact_cases\": 3, \"C4\": \"4608/125\", \"doubling_residual\": \"1728/625\", \"conditional_c_bound\": \"1/34560\"}\n",
+      "stderr": ""
+    }
+  ]
+}

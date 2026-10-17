@@ -1,0 +1,229 @@
+{
+  "schema": "1286_independent_v1",
+  "round": 1286,
+  "verdict": "PASS_WITH_SCOPE",
+  "independent_groups": 1,
+  "method": "orthogonal generalized-Laguerre radial oscillator Jacobi action; positive weighted norm sums, independent neutral metric jets; no author imports",
+  "author_file_sha256": {
+    "1286/proof.md": "a81bb431bd1a4d6e9e96936939536272d3ed9810fdcfebdaf6f011069777c8a4",
+    "1286/check.py": "46c4caffa87eb4f64bb475205ca7bdf3c3b8eec1c82dea68fff529b44e51933f",
+    "1286/results.json": "3b0aa05c7ff4ca7e085591834b8e5115aa82aaf043d2b862ebf2a28f9ac7cc67",
+    "1286/NEXT.md": "69f45b525cd83d64ed8b74b040f9de623294d9582e880d80270d44b172c6e19b",
+    "research_note_1286.md": "f4a9bd29432aa4d98c592113a6cc7145ffe9fb29b4be369ca5d7f4e318f153f3"
+  },
+  "independent_code_sha256": "47ff1d30f21225f5a9dfd3a5d1093607e253123cec6ac39477578fcb6e866ee4",
+  "normal_code": {
+    "Gram": [
+      [
+        "1/1",
+        "0/1"
+      ],
+      [
+        "0/1",
+        "1/1"
+      ]
+    ],
+    "compressed_H": [
+      [
+        "4561/78",
+        "0/1"
+      ],
+      [
+        "0/1",
+        "4561/78"
+      ]
+    ],
+    "compressed_Y": [
+      [
+        "14/1",
+        "0/1"
+      ],
+      [
+        "0/1",
+        "266/25"
+      ]
+    ],
+    "H_bandwidth_at_most_2": true,
+    "Y_bandwidth_at_most_1": true
+  },
+  "component_grams": {
+    "gauge_kinetic": [
+      [
+        "3/8",
+        "0/1"
+      ],
+      [
+        "0/1",
+        "3/8"
+      ]
+    ],
+    "scalar_kinetic": [
+      [
+        "7/4",
+        "0/1"
+      ],
+      [
+        "0/1",
+        "133/100"
+      ]
+    ],
+    "record_kinetic": [
+      [
+        "1/8",
+        "0/1"
+      ],
+      [
+        "0/1",
+        "1/8"
+      ]
+    ],
+    "gauge_scalar_interaction": [
+      [
+        "21/1",
+        "0/1"
+      ],
+      [
+        "0/1",
+        "399/25"
+      ]
+    ],
+    "scalar_quartic": [
+      [
+        "4403/156",
+        "0/1"
+      ],
+      [
+        "0/1",
+        "137921/3900"
+      ]
+    ],
+    "scalar_record_interaction": [
+      [
+        "7/1",
+        "0/1"
+      ],
+      [
+        "0/1",
+        "133/25"
+      ]
+    ]
+  },
+  "H_power_certificates": [
+    {
+      "code": 0,
+      "norm_squared": [
+        "1/1",
+        "12650683/2028",
+        "212920931356049/1370928",
+        "95167001739542521638535/11120967936",
+        "406564956555995431610586085037/433717749504"
+      ],
+      "norm_integer_upper": [
+        1,
+        79,
+        12463,
+        2925311,
+        968191741
+      ],
+      "Jacobi_expansion_terms": [
+        1,
+        11,
+        37,
+        80,
+        140
+      ],
+      "fourth_probability_derivative_upper": 4717138248
+    },
+    {
+      "code": 1,
+      "norm_squared": [
+        "1/1",
+        "19756577/1300",
+        "25579774548153257/12852450",
+        "23923952921360908765386629/55604839680",
+        "31788264857849567960737146211549/216858874752"
+      ],
+      "norm_integer_upper": [
+        1,
+        124,
+        44613,
+        20742456,
+        12107230522
+      ],
+      "Jacobi_expansion_terms": [
+        2,
+        18,
+        55,
+        110,
+        185
+      ],
+      "fourth_probability_derivative_upper": 56732896010
+    }
+  ],
+  "finite_response": {
+    "difference": "p0-p1",
+    "leading_coefficient": "21/25 * exp(-1/2)",
+    "fourth_derivative_sum_upper": 61450034258,
+    "window": [
+      "1/1000000",
+      "1/500000"
+    ],
+    "factorized_window_coefficient_lower": "1229274982871/3000000000000",
+    "strict_uniform_record_gap": "1/2500000000000",
+    "strict_point_lower": "5009274982871/12000000000000000000000000",
+    "deleted_coupling_record_independence": true,
+    "deleted_mean_energies": [
+      "4015/78",
+      "103651/1950"
+    ]
+  },
+  "source_geometry": {
+    "independent_metric_jets": [
+      {
+        "metric_jet": 1,
+        "neutral_boundary_residual": "0/1",
+        "mixed_potential_residual": "0/1",
+        "rho": "123147/6656",
+        "pressure": "41049/6656"
+      },
+      {
+        "metric_jet": 2,
+        "neutral_boundary_residual": "0/1",
+        "mixed_potential_residual": "0/1",
+        "rho": "123147/16250",
+        "pressure": "41049/16250"
+      },
+      {
+        "metric_jet": 3,
+        "neutral_boundary_residual": "0/1",
+        "mixed_potential_residual": "0/1",
+        "rho": "4561/1248",
+        "pressure": "4561/3744"
+      },
+      {
+        "metric_jet": 4,
+        "neutral_boundary_residual": "0/1",
+        "mixed_potential_residual": "0/1",
+        "rho": "123147/62426",
+        "pressure": "41049/62426"
+      }
+    ],
+    "slope_squared": "4561/1287",
+    "lapse_acceleration_continuity_residuals": [
+      "0/1",
+      "0/1",
+      "0/1"
+    ]
+  },
+  "scope": {
+    "same_mean_energy_for_all_unknown_code_and_R": true,
+    "joint_isometry_not_invariant_code_dynamics": true,
+    "complete_homogeneous_unread_source": true,
+    "declared_effective_quantum_model": true,
+    "full_4D_quantum_invariant_sector": false,
+    "actual_terminal_instrument_certified": false,
+    "stable_classical_record_certified": false,
+    "branch_semiclassical_geometry_certified": false,
+    "new_axioms": 0
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "independence": "No author imports or numerical payload; direct original-L Legendre and boundary checks.",
+  "legendre": {
+    "random_instances": 24,
+    "max_direct_legendre_error": 1.0302869668521453e-13,
+    "max_boundary_one_form_error": 7.105427357601002e-15,
+    "max_old_primary_difference_error": 7.603766505326348e-10
+  },
+  "finite_witnesses": {
+    "C_minus_R": 0.5,
+    "nonzero_S": -0.5,
+    "wrong_K": -0.5,
+    "noninvariant_positive_V": 0.9999999999999998,
+    "V_finite_difference_error": 1.5653145446492545e-11,
+    "correct_temporal_random_instances": 12,
+    "max_correct_temporal_error": 1.7763568394002505e-15
+  },
+  "local_gauss": {
+    "A_z_coefficient": 0.7,
+    "Q_x": 0.4,
+    "box_length": 0.6,
+    "charge_components": [
+      0.4,
+      0.0,
+      0.0
+    ],
+    "max_covariant_divergence_residual": 1.3877787807814457e-17,
+    "electric_energy_exact": 0.00570940965151245,
+    "electric_energy_quadrature_error": 1.1275702593849246e-17,
+    "endpoint_flux_operator_norm": 0.11911994276919975
+  },
+  "scope": {
+    "representation_input": true,
+    "classical_local_initial_data_only": true,
+    "periodic_or_fixed_flux_extension_certified": false,
+    "unphysical_quantum_preparations_granted": false,
+    "complete_quantum_or_microscopic_implementation_certified": false,
+    "global_Ward_from_Gauss_state_identity_claimed": false
+  }
+}

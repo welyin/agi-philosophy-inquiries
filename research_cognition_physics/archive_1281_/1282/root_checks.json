@@ -1,0 +1,19 @@
+{
+  "round": 1282,
+  "date": "2026-10-17",
+  "all_passed": true,
+  "cases": [
+    {
+      "script": "check.py",
+      "returncode": 0,
+      "stdout": "PASS: read-only replay MATCH\nresult_sha256=b0a923f27b1acf2d2b8deaaa047f1a76e418c8cbbd025696766f465bcaa19071\nmax_matrix_residual=4.263256414560601e-14\n",
+      "stderr": ""
+    },
+    {
+      "script": "independent_check.py",
+      "returncode": 0,
+      "stdout": "{\"status\": \"PASS_WITH_SCOPE\", \"mode\": \"READ_ONLY_MATCH\", \"round\": 1282, \"new_axioms\": 0, \"commutant\": {\"real_dimension\": 4, \"symmetric_dimension\": 1}, \"source_cases\": 2}\n",
+      "stderr": ""
+    }
+  ]
+}

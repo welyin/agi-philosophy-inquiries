@@ -1,0 +1,21 @@
+{
+  "round": 1284,
+  "date": "2026-10-18",
+  "all_passed": true,
+  "cases": [
+    {
+      "script": "check.py",
+      "returncode": 0,
+      "tool_receipt": "99c239",
+      "stdout": "{\"author_groups\": 1, \"electric_energy_upper\": \"7/3\", \"max_residual\": 4.4408920985006255e-11, \"mode\": \"READ_ONLY_MATCH\", \"primary_witnesses\": \"C,S,K each -1/2\", \"secondary_witness\": \"-1\", \"verdict\": \"PASS_WITH_SCOPE\"}\r\n"
+    },
+    {
+      "script": "independent_check.py",
+      "returncode": 0,
+      "tool_receipt": "246612",
+      "stdout": "PASS: independent result matches; no files written\r\n"
+    }
+  ],
+  "new_axioms_adopted": 0,
+  "current_priority": "Retrospective axiom/dependency audit requested by user; conditional mathematics does not adopt E-RED."
+}

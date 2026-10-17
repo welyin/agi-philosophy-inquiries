@@ -1,0 +1,87 @@
+{
+  "round": 1282,
+  "status": "PASS",
+  "new_axioms": 0,
+  "commutant": {
+    "real_dimension": 4,
+    "symmetric_dimension": 1
+  },
+  "random_positive_cases": 48,
+  "max_matrix_residual": 4.263256414560601e-14,
+  "minimum_sample_eigenvalue": 0.05547194010275886,
+  "largest_coefficient_bound_ratio": 0.782974462010726,
+  "finite_normal_examples": [
+    {
+      "s": 0.17961658216690934,
+      "t": 2.5348778197818223,
+      "q": 3.9762137850765553,
+      "r": 1.9163383681600241,
+      "expected_F": 5.571877554686138
+    },
+    {
+      "s": 2.2868106292520194,
+      "t": 2.3115218154254302,
+      "q": 2.726797577816459,
+      "r": 2.9752190502528606,
+      "expected_F": 13.112953425098155
+    },
+    {
+      "s": 1.5344933422102283,
+      "t": 1.2395650448463247,
+      "q": 3.173432191072497,
+      "r": 3.294027526950751,
+      "expected_F": 8.952771948326099
+    }
+  ],
+  "selected_normal_cost": "3/2",
+  "finite_error": {
+    "q": "1/50",
+    "r": "199/50",
+    "mean1": "203/200",
+    "mean2": "211/200",
+    "eta_each": "1/1000",
+    "epsilon": "21/1000",
+    "r_max": "4",
+    "second_moment_cap": "13",
+    "target_kappa": "199/200",
+    "coefficient_error": 0.10512492197250395,
+    "coefficient_bound": 0.1554137674618944,
+    "expectation_bound": 1.0101894885023135
+  },
+  "deletion_tests": {
+    "positivity": true,
+    "full_local_covariance": true,
+    "quadratic_class": true,
+    "nonzero_interaction_not_selected": true,
+    "fixed_difference_width": true
+  },
+  "same_source_budget": [
+    {
+      "sigma_squared": "1",
+      "delta_squared": "1/4",
+      "coordinate_kinetic_per_a_kin": "5",
+      "group_kinetic_per_b_el": "27/64",
+      "edge_mean": "3/2",
+      "W_algebra_fixture": "59/16",
+      "full_algebra_fixture": "711/64"
+    },
+    {
+      "sigma_squared": "3",
+      "delta_squared": "1/4",
+      "coordinate_kinetic_per_a_kin": "13/3",
+      "group_kinetic_per_b_el": "121/64",
+      "edge_mean": "3/2",
+      "W_algebra_fixture": "427/16",
+      "full_algebra_fixture": "6703/192"
+    }
+  ],
+  "scope": {
+    "normal_Gauss_tests": true,
+    "all_fixed_polynomial_moments_finite": "analytic proof",
+    "actual_autonomous_preparation_certified": false,
+    "arbitrary_unknown_cost_readout_granted": false,
+    "potential_operator_norm_bound_claimed": false,
+    "gauge_group_or_Yang_Mills_dynamics_generated": false,
+    "old_probe_results_recounted": false
+  }
+}

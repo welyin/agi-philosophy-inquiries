@@ -1,0 +1,67 @@
+{
+  "author_groups": 1,
+  "diagnostics": {
+    "electric_completion": {
+      "charge": [
+        1,
+        2,
+        3
+      ],
+      "connection": [
+        0,
+        0,
+        "1/3"
+      ],
+      "energy_quadrature_diagnostic": 2.3287159325194473,
+      "energy_upper_is_analytic": true,
+      "gauss_points": 17,
+      "unit_box_energy_upper": "7/3"
+    },
+    "finite_difference_step": 1e-05,
+    "finite_witnesses": {
+      "wrong_C": -0.5000000000088267,
+      "wrong_K": -0.5000000000005,
+      "wrong_S": -0.5000000000088267,
+      "wrong_positive_V_Gauss_drift": -1.0,
+      "wrong_positive_V_gauge_variation": 1.0
+    },
+    "maximum_residuals": {
+      "boundary_lagrangian": 1.6653345369377348e-16,
+      "boundary_one_form": 1.7660206630409903e-11,
+      "correct_primary": 1.6653345369377348e-11,
+      "correct_spatial_direction": 4.4408920985006255e-11,
+      "electric_gauss": 1.1102230246251565e-16,
+      "legendre_transform": 4.440892098500626e-16,
+      "momentum_from_original_l": 6.287838473538052e-12,
+      "primary_derivative": 2.4250032537587174e-11
+    },
+    "noncommuting_vertex_cases": 12,
+    "witness_exact_targets": {
+      "primary_each": "-1/2",
+      "secondary_V": "-1"
+    },
+    "zero_matter_trajectory_blindness": true
+  },
+  "method": "direct original-L and boundary Legendre checks; independent electric ODE completion",
+  "round": 1284,
+  "schema": "research_1284_author_v1",
+  "scope": {
+    "R_representation_is_input": true,
+    "arbitrary_local_classical_Gauss_data": true,
+    "fixed_boundary_canonical_dictionary": true,
+    "floating_diagnostics_do_not_replace_analytic_quantifiers": true,
+    "full_primary_secondary_chain": true,
+    "no_arbitrary_global_boundary_completion": true,
+    "no_new_axiom_adoption": true,
+    "no_new_device": true,
+    "no_quantum_jet_preparation_certified": true,
+    "not_general_Dirac_conjecture": true
+  },
+  "sources_sha256": {
+    "archive_1009_1043/research_note_1016.md": "ffaddfaf5c62283de99836ccb10ee6e4f235fdef64e9a83d5db088c3ec507969",
+    "archive_1009_1043/research_note_1027.md": "ed335fd9f104986208e6ff6a131ea219118b1804a105d02baa80f79b3278b3a6",
+    "archive_1009_1043/research_note_1029.md": "997bc4f528eb2f8f916887b87779c43437cf8137d90c0aaafe437396b0004087",
+    "archive_894_922/research_note_920.md": "f30fa0ba790ca8c03c8f5f7b617a34ef144039b5d0811cff73a9cd403f85a6be"
+  },
+  "verdict": "PASS_WITH_SCOPE"
+}

@@ -1,0 +1,153 @@
+{
+  "round": 1287,
+  "status": "PASS_WITH_SCOPE",
+  "author_groups": 1,
+  "new_axioms": 0,
+  "method": "Fraction mass projectors, globally bounded alternating Bessel series, causal support, finite-source component differentiation; no quadrature or propagator truncation",
+  "source_bindings": {
+    "research_cognition_physics/archive_1281_/1287/proof.md": "7297d71f74f08ef7e78a366e71569c44399209748c27814de84e91a2e656b029",
+    "research_cognition_physics/archive_1281_/1287/check.py": "b0ec5a8366d652f70dc80dfa155f0a9575acb236543038d7133237618c5e5766",
+    "research_cognition_physics/archive_1281_/_shared/source_scope_and_round1287_admission.md": "1dcc0c8480310423bbd83f593c90c398109278ca23454ba8167008e19e8a69b9",
+    "research_cognition_physics/archive_1281_/1282/proof.md": "4c26761ed867a5387dba5b4865b0043e205c3f8beee4be65ea914e15cd0eab7e",
+    "research_cognition_physics/archive_935_955/research_note_942.md": "0f51b118cb170d547f9ec5edbdef1c78bca5c35ba8379b56e60904b98356374e",
+    "research_cognition_physics/archive_1120_1158/_shared/1120_1156/after1124_execution_audit.md": "20c084918e5dd4241e41bf6d3ec4db3636cf1c8db440c7e2380a5a4bdd097ec0",
+    "research_cognition_physics/archive_1159_1160/_shared/field_bridge_after_1160.md": "fe30b68dd7becf0f26f09463e39b2146486a6fd575edbea881b8e310aee6bf65"
+  },
+  "parameters": {
+    "mass_squared_matrix": [
+      [
+        "5/2",
+        "-3/2"
+      ],
+      [
+        "-3/2",
+        "5/2"
+      ]
+    ],
+    "eigen_masses": [
+      "1/1",
+      "2/1"
+    ],
+    "tag_mass": "3/1",
+    "support_radius": "1/32",
+    "support_center_separation": "1/4",
+    "time_window": [
+      "7/16",
+      "1/2"
+    ],
+    "weyl_effect_strength": "1/256",
+    "input": "zero configuration; first KG velocity +/- normalized C_infinity compact bump",
+    "tag": "two degenerate neutral Dirac flavors; same normal positive-energy Gaussian momentum packet"
+  },
+  "causal_certificate": {
+    "source_receiver_distance_interval": [
+      "3/16",
+      "5/16"
+    ],
+    "proper_interior_s_squared_interval": [
+      "3/32",
+      "55/256"
+    ],
+    "no_signal_before": "3/16",
+    "lightcone_delta_cancellation": true,
+    "mean_interval": [
+      "5/(32*pi)",
+      "1/(4*pi)"
+    ],
+    "global_alternating_ratio_bounds": [
+      "1/8",
+      "1/32",
+      "1/6"
+    ],
+    "tail_numerator_uniform_lower": "5/4",
+    "finite_series_diagnostics": [
+      {
+        "s_squared": "3/32",
+        "numerator_lower": "1046679802971842438504799591/740467064513960369507532800",
+        "numerator_upper": "73686258129217707670737928955127/52128881341782810013330309120000"
+      },
+      {
+        "s_squared": "79/512",
+        "numerator_lower": "151258027678008250037545860677414869427521/111284421650233546631242715625642629529600",
+        "numerator_upper": "170377042376508492842304895073299505600858219701/125350772546823066925431794880723857902141440000"
+      },
+      {
+        "s_squared": "55/256",
+        "numerator_lower": "11354671464299385807275480607690425473/8694095441424495830565837158253330432",
+        "numerator_upper": "123038979676640963668527483733129484011/94209034201255912492057325397369421824"
+      }
+    ]
+  },
+  "normal_resource_certificate": {
+    "e_upper_rational": "8877691/3265920",
+    "normalization_lower": "pi*a^3/24",
+    "bump_squared_L2_strict_upper": "131072/1",
+    "receiver_variance_strict_upper": "49152/1",
+    "gaussian_exponent_strict_upper": "3/8",
+    "coherent_energy_strict_upper": "65536/1",
+    "tag_energy_upper": "13/4",
+    "total_energy_strict_upper": "262157/4",
+    "tag_derivative_L2_squared": "21/2",
+    "full_source_smearing_constant_strict_upper": "65540/1"
+  },
+  "record_certificate": {
+    "effect": "(I+sin(zeta*phi_2(t,h_B)))/2",
+    "difference": "p_plus-p_minus",
+    "whole_window_strict_lower": "5/131072",
+    "decimal_diagnostic": 3.814697265625e-05,
+    "nonnegative_normalized_time_average_same_gap": true,
+    "optional_each_event_error": "1/1000000",
+    "optional_gap_lower": "74029/2048000000"
+  },
+  "source_diagnostics": {
+    "finite_jet_diagnostics": 24,
+    "complete_divergence_max": "0/1",
+    "omitted_mixing_divergence_witness": [
+      "261/770",
+      "243/70",
+      "-279/385",
+      "927/385"
+    ],
+    "opposite_coherent_sign_same_full_classical_tensor": true,
+    "component_absolute_bound_by_classical_energy_checked": true,
+    "flavor_source_offdiagonal_zero": true,
+    "continuous_identity_proved_analytically_not_by_jet_sampling": true
+  },
+  "comparison_role_reuse": {
+    "independent_bare_mass_squared": "1/1",
+    "positive_comparison_coefficient": "3/2",
+    "comparison_matrix": [
+      [
+        "3/2",
+        "-3/2"
+      ],
+      [
+        "-3/2",
+        "3/2"
+      ]
+    ],
+    "common_direction_kernel": true,
+    "old_PSD_calibration_reused_not_new_classification": true
+  },
+  "scope": {
+    "full_normal_unknown_Q_R_isometry": true,
+    "initial_specified_receiver_algebra_and_R_product": true,
+    "initial_all_fields_in_B_blind": false,
+    "same_coherent_covariance_from_coupled_vacuum": true,
+    "whole_receiver_Fock_tensor_factor_assumed": false,
+    "actual_autonomous_local_causal_field_evolution": true,
+    "finite_spatial_record_in_second_field": true,
+    "full_Hilbert_source_including_mixing_tag_reference": true,
+    "source_covers_unread_process": true,
+    "same_mean_source_for_every_unknown_code": true,
+    "same_noise_or_conditional_source_certified": false,
+    "external_switch_used": false,
+    "initial_preparation_factory_constructed": false,
+    "actual_terminal_instrument_constructed": false,
+    "global_quantum_information_cloned_to_receiver": false,
+    "background_with_nonzero_source_self_gravitating": false,
+    "new_Einstein_solution_or_response_error_claimed": false,
+    "deletion_is_same_state_mass_quench": false,
+    "new_axiom_or_stage_completion": false
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "round": 1283,
+  "verdict": "PASS_WITH_SCOPE",
+  "author_groups": 1,
+  "new_axioms": 0,
+  "method": "exact eight-coordinate Wick moments; fixed group-path second difference",
+  "parameters": {
+    "s": "2/1",
+    "t": "1/1",
+    "kappa": "4/5",
+    "a_kin": "1/2",
+    "b": "3/10",
+    "theta": "1/2"
+  },
+  "source_sha256": {
+    "archive_554_584/research_note_557.md": "9938dbc9d3dcac3373556fcdb55c648b0168bd5d00da1ea3fb5db69a24ef94f7",
+    "archive_1281_/1282/proof.md": "4c26761ed867a5387dba5b4865b0043e205c3f8beee4be65ea914e15cd0eab7e"
+  },
+  "exact_moments": {
+    "D": "24/1",
+    "D2": "1440/1",
+    "zeta2": "14/1",
+    "zeta_D": "72/1",
+    "L": "3/32",
+    "L2": "189/2048"
+  },
+  "L2_quadratic_coefficient": "117/25",
+  "C4": "4608/125",
+  "candidates": [
+    {
+      "c": "0/1",
+      "A2": "784/125",
+      "energies_minus_common_W": [
+        "1353/320",
+        "46369/8000",
+        "84001/8000"
+      ],
+      "doubling_residual": "0/1"
+    },
+    {
+      "c": "1/10",
+      "A2": "337/50",
+      "energies_minus_common_W": [
+        "86781/20480",
+        "15751049/2560000",
+        "37539209/2560000"
+      ],
+      "doubling_residual": "1728/625"
+    }
+  ],
+  "finite_error": {
+    "each_energy_error": "1/10000",
+    "residual_error": "1/1250",
+    "denominator": "3456/125",
+    "c_upper_if_observed_residual_zero": "1/34560"
+  },
+  "polynomial_example_highest_moment_n3": "2064384/3125",
+  "group_derivative_diagnostic": [
+    {
+      "theta": 0.0,
+      "second_difference_residual": 9.121677926882121e-10
+    },
+    {
+      "theta": 0.5,
+      "second_difference_residual": 2.997344035911539e-09
+    },
+    {
+      "theta": 1.0,
+      "second_difference_residual": 1.0517118525891604e-08
+    }
+  ],
+  "scope": {
+    "old_W_kept_as_common_finite_term": true,
+    "normal_Gauss_preparation": true,
+    "controller_energy_or_actual_energy_readout_certified": false,
+    "new_phase_permission_is_explicit_effective_input": true,
+    "leading_quadratic_Taylor_alone_selects_c_zero": false,
+    "exact_open_window_selects_finite_polynomial_degree_at_most_one": true,
+    "finite_error_classification_for_arbitrary_polynomial": false,
+    "condition_applies_to_all_physical_phase_operations": false,
+    "gauge_group_or_b_or_W_selected": false
+  }
+}
