@@ -1,0 +1,137 @@
+{
+  "schema": "round1280_natural_conformal_reference_v1",
+  "round": 1280,
+  "status": "PASS_WITH_SCOPE",
+  "author_check_groups": 1,
+  "new_adopted_axioms": 0,
+  "strict_certificate": {
+    "method": "Analytic continuum proof plus exact rational bounds; diagnostic samples do not prove the QFT identities",
+    "A_q_upper": "1/1000",
+    "r_pulse_lower": "499/500",
+    "delta_C": "375/498002",
+    "delta_eta": "999/250000",
+    "relative_total_bound": "591628623/124500500000",
+    "target": "1/200",
+    "strict_margin": "30873877/124500500000",
+    "clock_rate_excess_bound": "999/249001",
+    "null_tensor_checks": [
+      {
+        "r": "1",
+        "q": "1/36000",
+        "scalar_curvature": "0",
+        "ricci_square_tensor": "0",
+        "riemann_square": "0",
+        "ricci_reconstructed": true
+      },
+      {
+        "r": "499/500",
+        "q": "1/1000",
+        "scalar_curvature": "0",
+        "ricci_square_tensor": "0",
+        "riemann_square": "0",
+        "ricci_reconstructed": true
+      },
+      {
+        "r": "3/4",
+        "q": "2/7",
+        "scalar_curvature": "0",
+        "ricci_square_tensor": "0",
+        "riemann_square": "0",
+        "ricci_reconstructed": true
+      }
+    ]
+  },
+  "numerical_diagnostics": {
+    "scope": "Fixed RK4/Gauss only; grid differences are not certified numerical errors",
+    "gauss": [
+      {
+        "nodes": 128,
+        "E": 6.052923538596628
+      },
+      {
+        "nodes": 256,
+        "E": 6.052923538596659
+      },
+      {
+        "nodes": 512,
+        "E": 6.052923538596637
+      }
+    ],
+    "rk4": [
+      {
+        "steps": 4096,
+        "E": 6.052923538596676,
+        "B": 9.078700802079666,
+        "J": 9.078802726447961,
+        "M_eta": 9.078235145658036,
+        "C": 0.00010192436829032586,
+        "r_at_minus_2": 0.9999159326221755,
+        "rprime_at_minus_2": 0.0001681315089827937,
+        "eta_at_minus_2": -2.0000613483535674,
+        "past_caustic_coordinate": -5949.225113672805,
+        "area_density_change": 0.0001681276883249705,
+        "geometry_correction": -0.0003362445784503625,
+        "rescaling_identity_residual": 4.377669559317565e-15,
+        "geometry_identity_residual": -6.870643377149266e-15,
+        "relative_modular_source_difference": -5.129108578216746e-05,
+        "minimum_weight_ratio_diagnostic": 0.9998625413312803,
+        "maximum_clock_rate_diagnostic": 1.0001374775662029
+      },
+      {
+        "steps": 8192,
+        "E": 6.052923538596656,
+        "B": 9.078700802079652,
+        "J": 9.078802726447947,
+        "M_eta": 9.078235145658025,
+        "C": 0.00010192436829032518,
+        "r_at_minus_2": 0.9999159326221708,
+        "rprime_at_minus_2": 0.00016813150898279387,
+        "eta_at_minus_2": -2.0000613483535683,
+        "past_caustic_coordinate": -5949.225113672771,
+        "area_density_change": 0.00016812768833429637,
+        "geometry_correction": -0.000336244578450361,
+        "rescaling_identity_residual": 4.378347185675369e-15,
+        "geometry_identity_residual": 2.4544710881813092e-15,
+        "relative_modular_source_difference": -5.1291085781776214e-05,
+        "minimum_weight_ratio_diagnostic": 0.9998625413312714,
+        "maximum_clock_rate_diagnostic": 1.0001374775662117
+      }
+    ],
+    "RK_B_difference": 1.4210854715202004e-14,
+    "RK_M_difference": 1.0658141036401503e-14
+  },
+  "physical_scope": {
+    "reference": "Natural eta conformal Minkowski vacuum on noncompact transverse covering",
+    "bulk_Hadamard": true,
+    "absolute_minimal_reference_stress_zero_in_fixed_compatible_prescription": true,
+    "reference_is_1279_artanh_vacuum": false,
+    "torus_source_zero_certified": false,
+    "working_state_locally_normal": true,
+    "global_Fock_finite_energy_certified": false,
+    "response_unit": "per transverse coordinate area; finite lightfront subalgebra only as scoped in proof",
+    "mean_source_semiclassical_identity": true,
+    "fluctuation_or_stability_certificate": false,
+    "exact_proper_time_KMS_certified": false,
+    "actual_clock_instrument_certified": false,
+    "complete_global_finite_resources_certified": false,
+    "full_goal_completed": false
+  },
+  "primary_sources": [
+    "https://arxiv.org/html/0806.0803",
+    "https://doi.org/10.1103/PhysRevD.16.1712",
+    "https://arxiv.org/pdf/hep-th/0008211",
+    "https://arxiv.org/html/1502.04106"
+  ],
+  "bindings": {
+    "admission.md": "b4269abd82b794d5c02ea613f7d7259203441a4ce9a2eb640436962fab683754",
+    "fixed_spec.md": "8329836937b059188a61825a4bf9ff96c9e706c3addffc854f191122e7cffe7b",
+    "proof.md": "760534ff5559be3ab95dc121054b18e9272f534f7d6b393cd6a271b7d8b3e8ec",
+    "check.py": "ad2f58a9acbefc0f057c04ebeadcdf290730ff3df5d88e42043e8481d6e42cd4",
+    "NEXT.md": "84607b3787fcff5a0567435cff293266345ea2b2ba55548e90d44db9653a6fd2",
+    "../research_note_1280.md": "e827501aeb7bc990e1fbe1c5c4c80efe828b06239c90db890d27a89bf28b0e86",
+    "../1279/proof.md": "e19d39d32677f49bdd54121b4dbbc908ac5fe917de489918bc3722b918e00523",
+    "../1279/results.json": "21b80fbc89d1686427faa42bdec7d77020bb3e31203b2159fd451d37e71ff629",
+    "../_shared/ct_hg_adoption_after1278.md": "b3d92a66dba200c3e5ebad79f9805597a687b316b4b808d6bd166be9e7c33721",
+    "../_shared/jacobson_reconstruction_after1278.md": "eef8cb764a213407829ac686881a65babab035d0ed38bf64d9251fe6c14f38b2"
+  }
+}

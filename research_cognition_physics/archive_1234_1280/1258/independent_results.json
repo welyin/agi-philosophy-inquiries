@@ -1,0 +1,96 @@
+{
+  "status": "PASS",
+  "independent_groups": 2,
+  "independent_check_sha256": "6fe8d1a17174b425eb6a15e900f1e76b9e5e9f5d981d0adc15e78dc7db016128",
+  "group_energy_and_scaling": {
+    "energy_basis": [
+      "u_dot_squared",
+      "u_squared",
+      "k_squared_over_a_squared_times_u_squared"
+    ],
+    "energy_coefficients": [
+      "1",
+      "1",
+      "1"
+    ],
+    "rate_over_H_coefficients": [
+      "-3",
+      "3",
+      "1"
+    ],
+    "three_energy_plus_rate_coefficients": [
+      "0",
+      "6",
+      "4"
+    ],
+    "three_energy_minus_rate_coefficients": [
+      "6",
+      "0",
+      "2"
+    ],
+    "reference_time": "17/8",
+    "maximum_time_displacement": "1/8",
+    "gronwall_exponent_upper": "33/80",
+    "B_strict_rational_upper": "80/47",
+    "b1_second_derivative_L1_strict_upper": "1674",
+    "h_L1_strict_upper": "3348",
+    "quadratic_fourier_constant": "1",
+    "spectral_crossing_k_squared": "857088",
+    "smear_amplitude_scale_power": 1,
+    "extra_variance_scale_power": 4,
+    "variance_coefficient_strict_upper_B2": "1674/125",
+    "variance_coefficient_strict_upper_rational_B": "13392/1175",
+    "chosen_ell": "1/16",
+    "chosen_smear_time_support": [
+      "33/16",
+      "35/16"
+    ],
+    "additional_occupation_source_density_strict_upper": "1/500",
+    "scope": "All modes are covered by the analytic piecewise spectral bound; the script checks algebra and constants, not the Hadamard property or physical preparation."
+  },
+  "group_full_dyson_and_budget": {
+    "double_series_coefficients_checked_through": 20,
+    "coefficient_diagnostics": [
+      "0",
+      "1",
+      "4",
+      "6",
+      "16/3",
+      "10/3",
+      "8/5",
+      "28/45",
+      "64/315",
+      "2/35",
+      "8/567",
+      "44/14175",
+      "32/51975",
+      "52/467775",
+      "16/868725",
+      "8/2837835",
+      "256/638512875",
+      "34/638512875",
+      "8/1206079875",
+      "76/97692469875",
+      "32/371231385525"
+    ],
+    "full_series_identity": "sum r^2 z^r/r! = (z+z^2)exp(z), z=2L",
+    "integrated_interaction_norm_L": "1/8",
+    "all_order_factor_strict_upper": "5/24",
+    "variance_strict_upper_at_E1": "7/32768",
+    "probability_strict_upper": "35/786432",
+    "stronger_probability_strict_upper_B2": "279/6553600",
+    "advertised_probability_strict_upper": "3/65536",
+    "margin_to_advertised_upper": "1/786432",
+    "margin_advertised_to_one_ten_thousandth": "2221/40960000",
+    "scope": "Arbitrary probe plus spectator input and bounded joint final effect, provided the field is initially independent and the two Gaussian states share CCR and mean with positive additional covariance."
+  },
+  "not_certified": [
+    "Hadamard regularity from finite excitation energy alone",
+    "automatic thermality, KMS qualification, or an Unruh ratio for the baseline",
+    "implementation of spacetime-smear cosine as an instantaneous causal gate",
+    "reference-independent comparison for amplitude-renormalized menus",
+    "free preparation, readout, control, or vanishing device source",
+    "curvature transport error or self-consistent geometric backreaction",
+    "initial field correlations with the arbitrary probe or spectator"
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "status": "PASS_FINITE_SOURCE_TRANSPORT_DIAGNOSTIC_WITH_SCOPE",
+  "parameters": {
+    "H": 1.0,
+    "fixed_minimal_mass_squared": 2.0,
+    "xi": 0,
+    "pulse_support_x": [
+      1.0,
+      2.0
+    ],
+    "sphere_tortoise_radius": 3.0,
+    "sphere_areal_radius": 0.9950547536867305
+  },
+  "integrals": [
+    {
+      "nodes_per_integral": 96,
+      "initial_physical_energy_r_integral": 76.06328041733329,
+      "reduced_energy_x_integral": 76.06328048638589,
+      "finite_sphere_integrated_outward_energy": 76.06328048638588,
+      "finite_sphere_cross_term_integral": -2.710505431213761e-19,
+      "horizon_killing_energy_lambda_integral": 76.06328048714995,
+      "horizon_modular_flux": 477.9196863727403,
+      "relative_entropy_from_mature_theorem": 477.91968593406926,
+      "local_beta_times_local_integrated_energy": 477.91968636793945,
+      "max_energy_identity_residual": 6.981666444971779e-08,
+      "entropy_flux_identity_residual": 4.386710088510881e-07
+    },
+    {
+      "nodes_per_integral": 192,
+      "initial_physical_energy_r_integral": 76.06328048638349,
+      "reduced_energy_x_integral": 76.06328048638332,
+      "finite_sphere_integrated_outward_energy": 76.06328048638329,
+      "finite_sphere_cross_term_integral": -1.3552527156068805e-19,
+      "horizon_killing_energy_lambda_integral": 76.06328048638336,
+      "horizon_modular_flux": 477.9196863679237,
+      "relative_entropy_from_mature_theorem": 477.9196863679245,
+      "local_beta_times_local_integrated_energy": 477.9196863679232,
+      "max_energy_identity_residual": 1.9895196601282805e-13,
+      "entropy_flux_identity_residual": 7.958078640513122e-13
+    },
+    {
+      "nodes_per_integral": 384,
+      "initial_physical_energy_r_integral": 76.06328048638551,
+      "reduced_energy_x_integral": 76.06328048638495,
+      "finite_sphere_integrated_outward_energy": 76.06328048638494,
+      "finite_sphere_cross_term_integral": 3.2619238798763106e-18,
+      "horizon_killing_energy_lambda_integral": 76.06328048638511,
+      "horizon_modular_flux": 477.9196863679346,
+      "relative_entropy_from_mature_theorem": 477.9196863679372,
+      "local_beta_times_local_integrated_energy": 477.9196863679336,
+      "max_energy_identity_residual": 5.684341886080801e-13,
+      "entropy_flux_identity_residual": 2.5579538487363607e-12
+    }
+  ],
+  "analytic_energy_lower_bound": 1.6129474493800275,
+  "stronger_cauchy_schwarz_energy_lower_bound": 25.80715919008044,
+  "analytic_relative_entropy_lower_bound": 10.134447715197378,
+  "quadrature_refinement_differences": {
+    "initial_physical_energy_r_integral": 2.0179413695586845e-12,
+    "reduced_energy_x_integral": 1.6342482922482304e-12,
+    "finite_sphere_integrated_outward_energy": 1.6484591469634324e-12,
+    "horizon_killing_energy_lambda_integral": 1.7479351299698465e-12
+  },
+  "finite_sphere_static_time_window": [
+    1.0,
+    2.0
+  ],
+  "finite_sphere_proper_duration": 0.0993279274194332,
+  "horizon_future_affine_window": [
+    0.1353352832366127,
+    0.36787944117144233
+  ],
+  "new_numbered_rounds": 0,
+  "scope": [
+    "Normal compact initial-state input with all field energy and correlations retained.",
+    "A new minimal fixed-mass action, not the previous conformal Hilbert source.",
+    "Same-state source propagation to a finite sphere and finite affine horizon segment.",
+    "Coherent excitation energy is not a certified thermal-contact heat flow.",
+    "Finite affine horizon support is not finite central-clock arrival or readout.",
+    "Exact identities follow from proof.md; numerical quadrature is diagnostic only.",
+    "No coupled metric solution, independent area reading or backreaction remainder.",
+    "No new Einstein selection, adopted axiom, or repeated formal check count."
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "analytic_consequence": "For each finite E, probability of the infinite positive sum <= E is zero in this normal product-reference sector.",
+  "analytic_identity_used": "E[exp(-t*H_BE,N)]=(1+t/2)^(-N/2), t>0",
+  "cases": [
+    {
+      "complete_multiplets_through_ell": 11,
+      "energy_budget_dimensionless": 1,
+      "mean_binding_energy_dimensionless": {
+        "denominator": "4",
+        "numerator": "143"
+      },
+      "number_of_real_charge_modes": 143,
+      "requested_upper": {
+        "denominator": "18446744073709551616",
+        "numerator": "1"
+      },
+      "strict_probability_upper": {
+        "denominator": "2361183241434822606848",
+        "numerator": "9"
+      },
+      "strictly_below_requested_upper": true
+    },
+    {
+      "complete_multiplets_through_ell": 14,
+      "energy_budget_dimensionless": 10,
+      "mean_binding_energy_dimensionless": {
+        "denominator": "1",
+        "numerator": "56"
+      },
+      "number_of_real_charge_modes": 224,
+      "requested_upper": {
+        "denominator": "18446744073709551616",
+        "numerator": "1"
+      },
+      "strict_probability_upper": {
+        "denominator": "5192296858534827628530496329220096",
+        "numerator": "3486784401"
+      },
+      "strictly_below_requested_upper": true
+    },
+    {
+      "complete_multiplets_through_ell": 30,
+      "energy_budget_dimensionless": 100,
+      "mean_binding_energy_dimensionless": {
+        "denominator": "1",
+        "numerator": "240"
+      },
+      "number_of_real_charge_modes": 960,
+      "requested_upper": {
+        "denominator": "18446744073709551616",
+        "numerator": "1"
+      },
+      "strict_probability_upper": {
+        "denominator": "3121748550315992231381597229793166305748598142664971150859156959625371738819765620120306103063491971159826931121406622895447975679288285306290176",
+        "numerator": "265613988875874769338781322035779626829233452653394495974574961739092490901302182994384699044001"
+      },
+      "strictly_below_requested_upper": true
+    }
+  ],
+  "model_scope": {
+    "binding_energy": "H_BE,N=(1/2)*sum_j H_j in fixed dimensionless units",
+    "complete_source_certified": false,
+    "finite_effective_models_ruled_out": false,
+    "joint_reference": "independent Gaussian charge spectra from neutral Lebesgue spectral weights",
+    "mode_energy": "H_j=c_j*q_j^2, c_j>0; reference proportional to exp(-H_j)",
+    "multiplets": "all m for each ell=1,...,L; rotationally invariant coefficients",
+    "new_science_groups": 0,
+    "new_scientific_rounds": 0,
+    "paper_or_entire_programme_refuted": false,
+    "physical_cutoff_or_minimum_length_assumed": false
+  },
+  "source_bindings": {
+    "code": {
+      "path": "research_cognition_physics/archive_1234_/_admission/reference_query_qualification_after1270/observer_energy_budget_after1270.py",
+      "sha256": "5233493d4b347975f732356d0ea7d71104a61733a38fb1f48233a119858d9494"
+    },
+    "previous_reference_query": {
+      "path": "research_cognition_physics/archive_1234_/_admission/bounded_reference_query_after1270/observer_finite_query_gate_after1270.md",
+      "sha256": "da5e1176364a0c976c83460cef93a3c7f157e32833e67a60139707198b94db34"
+    },
+    "proof": {
+      "path": "research_cognition_physics/archive_1234_/_admission/reference_query_qualification_after1270/observer_physical_window_after1270.md",
+      "sha256": "6cd080fb5b9e83d386b8365b4eba3ca38b697e328cfefd2dbe4dead7a34985ed"
+    }
+  },
+  "status": "PASS_FINITE_PREFIX_BOUND_ONLY"
+}

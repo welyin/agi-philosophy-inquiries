@@ -1,0 +1,149 @@
+{
+  "round": 1250,
+  "status": "PASS",
+  "scientific_groups": 2,
+  "symbolic_group": {
+    "status": "PASS",
+    "method": "Exact Laurent-polynomial coefficient identities; geometric H equation and material source computed separately.",
+    "zero_identities": [
+      "full_source_continuity",
+      "canonical_constraint_transport",
+      "independent_curvature_source_difference",
+      "affine_area_velocity",
+      "Raychaudhuri_shear_free",
+      "area_derivative_integrated_kernel",
+      "memory_null_omission"
+    ],
+    "finite_area_identity": "DeltaA/Astar = ell*I0-I1-ell*Z0+Z1 (theta0=0)",
+    "raw_Clausius_geometric_remainder": "ell*I0-2*I1-ell*Z0+Z1",
+    "independent_positive_bounds": {
+      "Hstar_lower": "9/50",
+      "comoving_radius_upper": "3209/1536",
+      "T3_injectivity_radius_comoving": 5,
+      "affine_length_lower": "1/72",
+      "affine_length_upper": "1/64",
+      "area_ratio_lower": "64/81",
+      "normalized_memory_deletion_lower": "1/11809800",
+      "independent_corrected_read_margin_lower": "4586657/59049000000000"
+    },
+    "Wald_normalization": "8*pi*G=3, s*hbar=2*pi/3, T_U*s=kappa_B/3; temperature reference remains conditional."
+  },
+  "numeric_group": {
+    "status": "PASS",
+    "method": "48-digit Decimal RK4, a/H canonical geometric equation, 1024/2048 hold steps and separate null integration; exact rational error-contract checks.",
+    "scope": "The ODE calculation is a diagnostic, not a rigorous enclosure or an assertion that the midpoint is the original exact state. The rational budget comparisons are exact.",
+    "branches": {
+      "alpha0": {
+        "fine": {
+          "a_star": "2.84844951178461728404788027455988346980370654960",
+          "H_star": "0.246617118606395851709623272321700664722146553389",
+          "affine_length": "0.0155948811752028945069502909536228630279592300262",
+          "area_change": "0.000020336325484049549063522870041025987785993513",
+          "geometric_boost_integral": "0.0000204618414118401374761671311085933357430025492884",
+          "material_boost_integral": "0.0000204618414118401375019913963774078811705767145255",
+          "two_weight_geometric_correction": "-1.25515927790588364354262014728196706714374493512E-7",
+          "raw_material_balance": "-1.255159277905884384685263363818933845832015255E-7",
+          "omitted_memory_shift": "1.59929476726864412700421183127417683778370119773E-7",
+          "corrected_material_balance": "-7.4114264321653696677868827031988E-23",
+          "exact_area_identity_residual": "-4.82899990528391512502946617949E-23",
+          "terminal_constraint": "-2.66824697519962550875929229511E-20",
+          "past_constraint": "-2.69836598842806084357266115866E-20"
+        },
+        "coarse_fine_absolute_change": {
+          "a_star": "1.05443348933476708385152575324E-18",
+          "H_star": "5.9339568894948333787562749209E-20",
+          "affine_length": "3.638721043975711834459186297E-22",
+          "area_change": "1.886298305203091531626579409E-21",
+          "geometric_boost_integral": "1.3976848629839225512263559720269E-21",
+          "material_boost_integral": "1.6530388208824842950966538128693E-21",
+          "two_weight_geometric_correction": "2.559661609487100168639689701467710E-21",
+          "raw_material_balance": "3.5393371260855758267232332218693E-21",
+          "omitted_memory_shift": "1.5959292451122064773105930197462E-23",
+          "corrected_material_balance": "9.79675516598475658083543520401590E-22",
+          "exact_area_identity_residual": "7.243215586999139142132456795592E-22",
+          "terminal_constraint": "4.29041413094435735173784419543E-20",
+          "past_constraint": "4.32561577050771483324874152491E-20"
+        }
+      },
+      "alpha1": {
+        "fine": {
+          "a_star": "2.84841254244592350458252934421301597469182908025",
+          "H_star": "0.246674415521847924343493937249648908260623225563",
+          "affine_length": "0.0155948742275274357222766527176542193128211678115",
+          "area_change": "0.000020325278752335372281249385040599735485201588",
+          "geometric_boost_integral": "0.0000204506114659073966191521751496618282707320658478",
+          "material_boost_integral": "0.0000204506114659073966465500626981208268798215348681",
+          "two_weight_geometric_correction": "-1.25332713572024289846456233795134044212432884243E-7",
+          "raw_material_balance": "-1.253327135720243653006776575210913946199468681E-7",
+          "omitted_memory_shift": "1.59936035345326990386523856322893973519951789865E-7",
+          "corrected_material_balance": "-7.5454221423725957350407513983857E-23",
+          "exact_area_identity_residual": "-4.80563338752669587413180449636E-23",
+          "terminal_constraint": "-3.15451235245516516883409141238E-20",
+          "past_constraint": "-3.19030368233411242140755349228E-20"
+        },
+        "coarse_fine_absolute_change": {
+          "a_star": "1.05711404223384416550181647353E-18",
+          "H_star": "6.0802539749916324641035019962E-20",
+          "affine_length": "3.644965615094825367249638083E-22",
+          "area_change": "1.894008493067591890967000304E-21",
+          "geometric_boost_integral": "1.4082437379772458575983981730448E-21",
+          "material_boost_integral": "1.6602765201367445344313455910458E-21",
+          "two_weight_geometric_correction": "2.581435624545688332545453360754750E-21",
+          "raw_material_balance": "3.5542850132043364253983458950458E-21",
+          "omitted_memory_shift": "1.5954140422061829013550261862767E-23",
+          "corrected_material_balance": "9.72849388658648092852892534291050E-22",
+          "exact_area_identity_residual": "7.208166064991494160199451162900E-22",
+          "terminal_constraint": "4.29796905360623558816145575443E-20",
+          "past_constraint": "4.33319300036478731005574368318E-20"
+        }
+      }
+    },
+    "author_interval_and_budget_crosscheck": {
+      "alpha0": {
+        "RK_point_distance_to_author_interval": {
+          "affine_length": "0",
+          "area_change": "0",
+          "material_boost_integral": "0",
+          "two_weight_geometric_correction": "0",
+          "raw_material_balance": "0",
+          "omitted_memory_shift": "0"
+        },
+        "omitted_raw_entire_read_error_inside_acceptance": true,
+        "corrected_gap_exceeds_independent_lower": true,
+        "strict_author_gap": [
+          "159929476726864406412378282023/1000000000000000000000000000000000000",
+          "31985895345372883372336905217/200000000000000000000000000000000000"
+        ]
+      },
+      "alpha1": {
+        "RK_point_distance_to_author_interval": {
+          "affine_length": "0",
+          "area_change": "0",
+          "material_boost_integral": "0",
+          "two_weight_geometric_correction": "0",
+          "raw_material_balance": "0",
+          "omitted_memory_shift": "0"
+        },
+        "omitted_raw_entire_read_error_inside_acceptance": true,
+        "corrected_gap_exceeds_independent_lower": true,
+        "strict_author_gap": [
+          "19992004418165872544558029271/125000000000000000000000000000000000",
+          "79968017672663499145358202387/500000000000000000000000000000000000"
+        ]
+      }
+    }
+  },
+  "bindings": {
+    "independent_check.py": "4ca75b1991bcf558c5707437939f90507dfef7b55a943a2e4763c3e48fbe7da2",
+    "admission.md": "62396e1d250d2c2026ac20f578ae2e4f7af4ecc5216c7e3328ecf241d5bfcaeb",
+    "proof.md": "5e9f5e1495156f6bcd81c48a5046ac538ea72b2823a6cb7a9e3b7a59ff499d9f",
+    "check.py": "3374eafd42d678f5f86f338421080a839b2877aedefd8f3ef8cdc17b77162f22",
+    "results.json": "84fa683b1e343f94ba2f5a4f2e26653dfa49c7d6c04d3833a436daa8cb880284",
+    "NEXT.md": "645cbb1799ea30a5858ac3f569f66acad890b878a3cee4b6ae2992dd4e8f83b7",
+    "../research_note_1250.md": "ab5670421f0dec184975d3857452d11358a61047af3ccb646280947830c3be22",
+    "../1247/proof.md": "f3a79f8f43aa235d2fa13cc87a232e2b64643fc1bade375bfee96c204ab4bf3d",
+    "../1247/results.json": "dbcd590e7816bc423c49a4e1bf83bab6fa50a84dd5578249cc493a15cd72bf06",
+    "../1248/proof.md": "649561632e352c3aa07bf1e75f57edb754b06453e3c53a4b39c564cf5b51f559",
+    "../1242/check.py": "2a25be6a9b371c0689f03458c0151dcd534339d983989ca8c914056749aabc16"
+  }
+}

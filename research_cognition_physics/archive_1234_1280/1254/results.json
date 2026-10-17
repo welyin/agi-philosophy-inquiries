@@ -1,0 +1,180 @@
+{
+  "round": 1254,
+  "status": "PASS",
+  "scientific_groups": 3,
+  "exact_classical": {
+    "window_proper": [
+      0,
+      1
+    ],
+    "window_boundary": [
+      0,
+      1
+    ],
+    "minimum_N": 320,
+    "qmax": {
+      "numerator": 6607,
+      "denominator": 6600
+    },
+    "amax": {
+      "numerator": 1169,
+      "denominator": 108900
+    },
+    "low_drop": {
+      "numerator": 167,
+      "denominator": 59400
+    },
+    "clock2": {
+      "numerator": 600121,
+      "denominator": 360000
+    },
+    "radius_gap": {
+      "numerator": 1477,
+      "denominator": 10038600
+    },
+    "area_gap": {
+      "numerator": 1477,
+      "denominator": 507000
+    }
+  },
+  "exact_independent_geometry": {
+    "energy_gap": {
+      "numerator": 1521,
+      "denominator": 2000
+    },
+    "compactness_gap": {
+      "numerator": 1521,
+      "denominator": 20000
+    },
+    "scaled_K_gap": {
+      "numerator": 25913277,
+      "denominator": 16000000000000
+    }
+  },
+  "exact_preparation": {
+    "FK_weights": [
+      {
+        "numerator": 1,
+        "denominator": 8
+      },
+      {
+        "numerator": 3,
+        "denominator": 8
+      },
+      {
+        "numerator": 3,
+        "denominator": 8
+      },
+      {
+        "numerator": 1,
+        "denominator": 8
+      }
+    ],
+    "six_source_weights": [
+      {
+        "numerator": 1,
+        "denominator": 16
+      },
+      {
+        "numerator": 3,
+        "denominator": 16
+      },
+      {
+        "numerator": 1,
+        "denominator": 4
+      },
+      {
+        "numerator": 1,
+        "denominator": 4
+      },
+      {
+        "numerator": 3,
+        "denominator": 16
+      },
+      {
+        "numerator": 1,
+        "denominator": 16
+      }
+    ],
+    "uniform_R_leak_bounds": [
+      {
+        "b": 1,
+        "derivative_square_lower": {
+          "numerator": 19,
+          "denominator": 81
+        },
+        "uniform_probability_lower_hbar1": {
+          "numerator": 19,
+          "denominator": 200
+        }
+      },
+      {
+        "b": 2,
+        "derivative_square_lower": {
+          "numerator": 9,
+          "denominator": 16
+        },
+        "uniform_probability_lower_hbar1": {
+          "numerator": 9,
+          "denominator": 50
+        }
+      }
+    ]
+  },
+  "floating_diagnostics": [
+    {
+      "b": 1,
+      "N": 320,
+      "p_R_nonvac_initial": 0.114475683919,
+      "swap_formula_residual_below_1e_14": true
+    },
+    {
+      "b": 1,
+      "N": 1280,
+      "p_R_nonvac_initial": 0.107021891512,
+      "swap_formula_residual_below_1e_14": true
+    },
+    {
+      "b": 1,
+      "N": 5120,
+      "p_R_nonvac_initial": 0.105162965032,
+      "swap_formula_residual_below_1e_14": true
+    },
+    {
+      "b": 1,
+      "N": 81920,
+      "p_R_nonvac_initial": 0.104582431662,
+      "swap_formula_residual_below_1e_14": true
+    },
+    {
+      "b": 2,
+      "N": 320,
+      "p_R_nonvac_initial": 0.225260926065,
+      "swap_formula_residual_below_1e_14": true
+    },
+    {
+      "b": 2,
+      "N": 1280,
+      "p_R_nonvac_initial": 0.217648365131,
+      "swap_formula_residual_below_1e_14": true
+    },
+    {
+      "b": 2,
+      "N": 5120,
+      "p_R_nonvac_initial": 0.215743622122,
+      "swap_formula_residual_below_1e_14": true
+    },
+    {
+      "b": 2,
+      "N": 81920,
+      "p_R_nonvac_initial": 0.215148278958,
+      "swap_formula_residual_below_1e_14": true
+    }
+  ],
+  "limitations": [
+    "Classical branch histories, not a quantum propagator.",
+    "Coherent preparation test, not later R transfer.",
+    "No actual collective or local geometric readout contract.",
+    "EH model input; CT not adopted; no new axiom."
+  ]
+}

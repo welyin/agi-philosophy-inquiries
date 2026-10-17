@@ -1,0 +1,111 @@
+{
+  "round": 1272,
+  "part": "same_clock_complete_source_for_finite_thermal_task",
+  "status": "PASS_AUTHOR_WITH_SCOPE",
+  "author_groups": 1,
+  "resource": {
+    "dimensions": [
+      2,
+      2,
+      2,
+      2,
+      4,
+      5,
+      2,
+      3,
+      2,
+      2,
+      2
+    ],
+    "total_dimension": 15360,
+    "energy2_rank": 5760,
+    "baselines": 11,
+    "initial_excitations": 2,
+    "fixed_initial_clock_withdrawal": "13*epsilon",
+    "physical_gap": "hbar/s",
+    "physical_clock": "tau=s*theta",
+    "full_internal_norm_upper": "12500000011/100000000",
+    "support2_norm_upper": "12300000011/100000000",
+    "conservative_full_norm_bound": 126,
+    "conservative_support2_bound": 124,
+    "instant_internal_lower_bound": 11,
+    "support2_internal_lower_bound": 13,
+    "v_norm_upper": "11000000011/100000000",
+    "theta_work_norm_upper": "33000000033/1562500"
+  },
+  "pulse_time": {
+    "integral": "1",
+    "peak": "35",
+    "derivative_upper": "6720",
+    "earliest_start": "127/256",
+    "latest_end": "273/256",
+    "sampling_before": "199999999/100000000",
+    "output": "17/8",
+    "initial_causal_margin": "2839/6400",
+    "final_causal_margin": "6439/6400"
+  },
+  "saved_integer_budget": {
+    "M_exponent": 3059,
+    "EH": 3093,
+    "E0": 14008,
+    "N_decimal_digits": 923,
+    "N_bit_length": 3065,
+    "fourN_minus7_over100": true,
+    "fourN_minus15_over100": true,
+    "new_normalized_mass_bound": "<2^-100",
+    "new_normalized_work_bound": "<2^-100",
+    "saved_J_threshold_slack": "18222003681294006567387633748859471/1000000000000000000000000000000000000",
+    "same_1270_source_budget": "<2^-80"
+  },
+  "finite_matrix_diagnostics": {
+    "arithmetic": "NumPy finite witnesses; general proofs are analytic",
+    "thermal_energy_commutators": [
+      "0.000000000000e+00",
+      "0.000000000000e+00",
+      "0.000000000000e+00"
+    ],
+    "noncommuting_gate_commutator_norm": "1.732050807569e+00",
+    "energy_preservation_residual": "2.826578131459e-15",
+    "energy2_support_residual": "0.000000000000e+00",
+    "same_ordering_source_residual": "5.572715118633e-17",
+    "different_coefficient_source_residual": "1.468658447265e-05",
+    "positive_selected_generators": true,
+    "Heisenberg_work_identity": true,
+    "finite_spectral_inclusions_checked": true
+  },
+  "geometry_inheritance": {
+    "field_bound_exact": "68252953073237238129534258416719/922337203685477580800000000000000000",
+    "old_geometry_process_unchanged": true,
+    "same_coefficient_source_operator_identity": true,
+    "new_term_not_multiplied_by_old_chi": true,
+    "new_heat_conditioning_preserves_old_state_for_product_input": true,
+    "independent_new_input_required_for_old_error": true,
+    "old_normal_branch_probability_lower": "1/4",
+    "new_net_thermal_geometry_response": false
+  },
+  "scope": [
+    "Same finite effective block and declared new material/boundary inputs.",
+    "All new inventories, seeds, records and passive references retained.",
+    "Quantum clock positivity is a spectral shift, not full-space positive spectrum.",
+    "No K1219 moving capture or recoil permission inherited.",
+    "No Jacobson temperature, geometric entropy, area law or CT adoption."
+  ],
+  "source_bindings_sha256": {
+    "1249/canonical.md": "6f7e4417dc96ee8062111cb4778e8e093257c7248916fedbce5db39eeb3cd989",
+    "1249/quantum_bridge.md": "037e26ade64a67538b7a359fccb672ded5486795380cc3539a4db66e48a07d5f",
+    "1249/quantum_bounds_results.json": "77e125812877903dea9625a1fd0c0db571eb70829b28d6bcfa5a44e393ebcaa6",
+    "1266/proof.md": "b6419d56d13cc6395345165420c07d83ccb25eec82d63a280f006e090bd489a5",
+    "1267/geometry_proof.md": "69055382128e1667bb6cc5066a881d64e69b5a3fe3c2c5edfc31f773322c8c1f",
+    "1267/geometry_results.json": "f27156e495269e2ca5dc8495a6e78d405f34e3ae2c7e5ab028b6b9ca1d507572",
+    "1269/material_proof.md": "756c1661c657f435b7e0d06272f1e3fc57f8c79d199b904c16020494d7faa147",
+    "1270/output_proof.md": "aab3b19aaf5c84e5d39c4880586ef35711f6ba512061cbed783c1d0236d3f663",
+    "1270/continuation_proof.md": "71fcfdad7dbeb8b81ca775f69f061496f4d10a90b316e80e2dbca6265aa84f1b",
+    "1270/continuation_results.json": "ca3d243b8da6a777201f0126590f5e30997df32a9afefd14b05c676a3dfd4c51",
+    "1270/acceptance.json": "f35c8f9d7fffc99d4fd2dad345674b91c3b257e25d6aa559d99ea027004cd44b",
+    "admission.md": "461c92fd9f1eb287acc72541fe816cf45c80df038cf1debc695cd21bc6790ba6",
+    "candidate_spec.md": "4e32d1e87a691fdb39e9bdae72f6af654f205cfe6216da4e9a959e4c7397cccc",
+    "source_baseline.json": "56d1056065e67f307b6fa5c9ec434edff247ba804fdc1c9487e5cbbbd52d57fd",
+    "source_proof.md": "62ca94c43b8e6372c98b99bbf56b90064b6954b52c0ed8ae21583a58a62d9177",
+    "source_check.py": "01075bda3b5bf6fa1296e175115df1b39af657012b6d0db194095cb089e40372"
+  }
+}

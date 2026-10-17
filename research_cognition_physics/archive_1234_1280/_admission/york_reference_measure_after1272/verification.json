@@ -1,0 +1,81 @@
+{
+  "status": "PASS_WITH_SCOPE",
+  "scope": {
+    "id": "york_reference_measure_after1272",
+    "date": "2026-10-17",
+    "owner": "/root",
+    "reviewer": "/root/curved_contact_scope",
+    "path": "_admission/york_reference_measure_after1272/README.md",
+    "status": "completed_bounded_reference_selection_screen",
+    "new_scientific_rounds": 0,
+    "new_formal_check_groups": 0,
+    "new_adopted_axioms": 0,
+    "main_goal_completed": false
+  },
+  "counts": [
+    94,
+    74,
+    2
+  ],
+  "frozen": [
+    423,
+    428
+  ],
+  "goal_status": "active",
+  "goal_sha256": "29426b934e3ee81d75ef5831b396cd2af6f44eea96711563bb03a2e3796db214",
+  "sources_unchanged": true,
+  "replays": [
+    {
+      "path": "check.py",
+      "exit_code": 0,
+      "stdout": "READ_ONLY_MATCH_BOUNDED_REFERENCE_SCREEN\n{\"status\": \"PASS_BOUNDED_REFERENCE_MEASURE_SCREEN\", \"gap_lower\": \"420700/2603301\"}",
+      "sha256": "d12240f200752e347f6ea7cbc41dc79b39c752d28aa83693392e72489b232a44"
+    },
+    {
+      "path": "independent_check.py",
+      "exit_code": 0,
+      "stdout": "READ_ONLY_MATCH PASS_WITH_SCOPE\n{\"gap_lower\": \"21/130\", \"last_diagnostic\": {\"panels_per_half\": 256, \"p0\": \"0.49984939863339169490527168861064420\", \"p1\": \"0.66653278534343023364798954945339744\", \"gap\": \"0.16668338671003853874271786084275324\"}}",
+      "sha256": "6e856bdb314e6f23cb6ed4354359a4efb0e6daf63caf477e68809f17d0694c17"
+    }
+  ],
+  "navigation": [
+    {
+      "status": "APPLIED",
+      "files": 4,
+      "changed_files": 4,
+      "closed_boundary_unchanged": true,
+      "original_navigation_recoverable": true,
+      "scientific_files_modified": false
+    },
+    {
+      "status": "CHECKED",
+      "files": 4,
+      "changed_files": 0,
+      "closed_boundary_unchanged": true,
+      "original_navigation_recoverable": true,
+      "scientific_files_modified": false
+    }
+  ],
+  "files_sha256": {
+    "README.md": "b8ddfec441f5b75b22e25911eb6ce3d8ba1c1a2cd26a117c5d90a4a2d0609fa3",
+    "proof.md": "a0139025f216ef4586007efd3826963b96f23a1b92e8576a993b71620acc3485",
+    "check.py": "d12240f200752e347f6ea7cbc41dc79b39c752d28aa83693392e72489b232a44",
+    "results.json": "1cc66b1296552be13f23d6452a8c9919190b0cfff7f5217b38df89bcac4409be",
+    "source_baseline.json": "f9aa271bc488b5ab1bd64baebe7ab043ad2cd0c18adf8f593b1104e375b8f6e4",
+    "independent_check.py": "6e856bdb314e6f23cb6ed4354359a4efb0e6daf63caf477e68809f17d0694c17",
+    "independent_results.json": "abbb6d4311676308c33edc0ebd6e410162434d48dde4f4e444c5845a42fe9836",
+    "independent_review.md": "f83ec1f4a1aa6bfec887cd40b1feacea880c48059d146a6fdeb1e48aff943d3b"
+  },
+  "direction_scope_review": {
+    "reviewer": "/root/governance_use_audit",
+    "verdict": "PASS_SCOPE_NO_CHANGES",
+    "checks": [
+      "different explicit inputs, not ambiguity of one preparation",
+      "finite effective input allowed; no universal-measure prerequisite",
+      "fixed-effect governance screen only; full feedback mechanism not implemented"
+    ]
+  },
+  "actual_thermal_instrument_certified": false,
+  "GR_goal_complete": false,
+  "links_checked": 610
+}

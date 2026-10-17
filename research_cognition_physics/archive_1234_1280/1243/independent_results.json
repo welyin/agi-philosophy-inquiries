@@ -1,0 +1,536 @@
+{
+  "round": 1243,
+  "audit": "independent",
+  "scientific_groups": 2,
+  "status": "PASS",
+  "author_sha256": {
+    "admission.md": "7feb1ef59f1b8aae3bcfcdd4b0feb4436819225ef4ddd9aa48a9d6d3804a962c",
+    "proof.md": "80b3687ea336b0960a1d41388f3453c3d0c25eb86b9eab4d0db5c45feea69cf6",
+    "check.py": "b63889cf2273659dc5d0cb83360a70344b8236c57bdcc79e1fd3fe570bc07635",
+    "results.json": "8cc3fc3c86b55570f343dfdade4c4736d66c507317b130f3a14639c08c033114",
+    "NEXT.md": "8178292b277c84cc10a644d4471281d126b05ab3eb51c464aaf5c505d64e96bb"
+  },
+  "independent_code_sha256": "0e51e98783d015ea346ff65be8a1b6d8ad057194f0c43fe1f356dad4e2b17591",
+  "groups": {
+    "finite_windows": {
+      "status": "PASS",
+      "kernel_moments": {
+        "equal_mass": {
+          "rational": "1/200",
+          "decimal_diagnostic": 0.005
+        },
+        "area_mean_x": {
+          "rational": "1/30",
+          "decimal_diagnostic": 0.03333333333333333
+        },
+        "area_mean_x2": {
+          "rational": "1/600",
+          "decimal_diagnostic": 0.0016666666666666668
+        },
+        "heat_mean_x": {
+          "rational": "1/15",
+          "decimal_diagnostic": 0.06666666666666667
+        }
+      },
+      "independent_Rosen_polynomial_identity": {
+        "area_difference": {
+          "rational": "9999/25000000",
+          "decimal_diagnostic": 0.00039996
+        },
+        "terminal": {
+          "rational": "1/5000",
+          "decimal_diagnostic": 0.0002
+        },
+        "ricci_integral": {
+          "rational": "19999/100000000",
+          "decimal_diagnostic": 0.00019999
+        },
+        "expansion_integral": {
+          "rational": "-3/100000000",
+          "decimal_diagnostic": -3e-08
+        },
+        "wrong_heat_kernel_ricci": {
+          "rational": "59993/300000000",
+          "decimal_diagnostic": 0.00019997666666666668
+        },
+        "kernel_swap_error": {
+          "rational": "-1/75000000",
+          "decimal_diagnostic": -1.3333333333333334e-08
+        },
+        "exact_residual": {
+          "rational": "0",
+          "decimal_diagnostic": 0.0
+        }
+      },
+      "declared_budget": {
+        "ell": {
+          "rational": "1/10",
+          "decimal_diagnostic": 0.1
+        },
+        "exp_argument": {
+          "rational": "501/10000000",
+          "decimal_diagnostic": 5.01e-05
+        },
+        "exp_upper": {
+          "rational": "10000000/9999499",
+          "decimal_diagnostic": 1.0000501025101358
+        },
+        "parts": {
+          "fixed_readout_noise": {
+            "rational": "1/5000",
+            "decimal_diagnostic": 0.0002
+          },
+          "terminal_expansion": {
+            "rational": "1/50000",
+            "decimal_diagnostic": 2e-05
+          },
+          "transverse_transport": {
+            "rational": "1/50000",
+            "decimal_diagnostic": 2e-05
+          },
+          "area_kernel_derivative": {
+            "rational": "1/30000",
+            "decimal_diagnostic": 3.3333333333333335e-05
+          },
+          "heat_kernel_derivative": {
+            "rational": "1/15000",
+            "decimal_diagnostic": 6.666666666666667e-05
+          },
+          "area_jacobian": {
+            "rational": "501/499974950",
+            "decimal_diagnostic": 1.002050202715156e-06
+          },
+          "shear_expansion": {
+            "rational": "1502003/5999699400000",
+            "decimal_diagnostic": 2.5034637568675525e-07
+          },
+          "finite_cover": {
+            "rational": "1/100000",
+            "decimal_diagnostic": 1e-05
+          }
+        },
+        "zeta": {
+          "rational": "2107408793/5999699400000",
+          "decimal_diagnostic": 0.00035125239657840193
+        },
+        "epsilon_S": {
+          "rational": "6322226379/1999899800000",
+          "decimal_diagnostic": 0.0031612715692056173
+        },
+        "W1_upper": {
+          "rational": "53/4",
+          "decimal_diagnostic": 13.25
+        },
+        "trace_difference_bound": {
+          "rational": "335157994079/7999599200000",
+          "decimal_diagnostic": 0.04189684829197443
+        },
+        "full_equation_average_bound": {
+          "rational": "347802446837/3999799600000",
+          "decimal_diagnostic": 0.08695496815315447
+        },
+        "gap_to_conditional_lower_005": {
+          "rational": "64821965921/7999599200000",
+          "decimal_diagnostic": 0.008103151708025572
+        }
+      },
+      "ten_times_shorter_window": {
+        "ell": {
+          "rational": "1/100",
+          "decimal_diagnostic": 0.01
+        },
+        "exp_argument": {
+          "rational": "51/100000000",
+          "decimal_diagnostic": 5.1e-07
+        },
+        "exp_upper": {
+          "rational": "100000000/99999949",
+          "decimal_diagnostic": 1.00000051000026
+        },
+        "parts": {
+          "fixed_readout_noise": {
+            "rational": "1/50",
+            "decimal_diagnostic": 0.02
+          },
+          "terminal_expansion": {
+            "rational": "1/5000",
+            "decimal_diagnostic": 0.0002
+          },
+          "transverse_transport": {
+            "rational": "1/50000",
+            "decimal_diagnostic": 2e-05
+          },
+          "area_kernel_derivative": {
+            "rational": "1/300000",
+            "decimal_diagnostic": 3.3333333333333333e-06
+          },
+          "heat_kernel_derivative": {
+            "rational": "1/150000",
+            "decimal_diagnostic": 6.666666666666667e-06
+          },
+          "area_jacobian": {
+            "rational": "51/4999997450",
+            "decimal_diagnostic": 1.0200005202002653e-08
+          },
+          "shear_expansion": {
+            "rational": "15203/5999996940000",
+            "decimal_diagnostic": 2.5338346255889923e-09
+          },
+          "finite_cover": {
+            "rational": "1/100000",
+            "decimal_diagnostic": 1e-05
+          }
+        },
+        "zeta": {
+          "rational": "607200072343/29999984700000",
+          "decimal_diagnostic": 0.020240012733839827
+        },
+        "epsilon_S": {
+          "rational": "1821600217029/9999994900000",
+          "decimal_diagnostic": 0.18216011460455844
+        },
+        "W1_upper": {
+          "rational": "53/4",
+          "decimal_diagnostic": 13.25
+        },
+        "trace_difference_bound": {
+          "rational": "96545211502333/39999979600000",
+          "decimal_diagnostic": 2.4136315185103996
+        },
+        "full_equation_average_bound": {
+          "rational": "100188411936391/19999989800000",
+          "decimal_diagnostic": 5.009423151625358
+        },
+        "gap_to_conditional_lower_005": {
+          "rational": "-94545212522333/39999979600000",
+          "decimal_diagnostic": -2.3636315185103993
+        }
+      },
+      "scope": "Finite data and regularity inputs are conditional; no instrument realization is certified."
+    },
+    "weak_trace": {
+      "status": "PASS",
+      "compact_window": {
+        "normalization": {
+          "rational": "1",
+          "decimal_diagnostic": 1.0
+        },
+        "q_total_variation": {
+          "rational": "15/2",
+          "decimal_diagnostic": 7.5
+        },
+        "U_L1": {
+          "rational": "1/2",
+          "decimal_diagnostic": 0.5
+        },
+        "U_first_moment": {
+          "rational": "1/8",
+          "decimal_diagnostic": 0.125
+        },
+        "flat_derivative_sum_upper": {
+          "rational": "53/4",
+          "decimal_diagnostic": 13.25
+        }
+      },
+      "nonconstant_volume_calibration": {
+        "lapse_slope": {
+          "rational": "1/5",
+          "decimal_diagnostic": 0.2
+        },
+        "lapse_max": {
+          "rational": "23/20",
+          "decimal_diagnostic": 1.15
+        },
+        "Lambda_window_difference": {
+          "rational": "3/10",
+          "decimal_diagnostic": 0.3
+        },
+        "density_partial_derivative_contribution": {
+          "rational": "3/5",
+          "decimal_diagnostic": 0.6
+        },
+        "connection_contribution": {
+          "rational": "-3/10",
+          "decimal_diagnostic": -0.3
+        },
+        "full_weak_pairing": {
+          "rational": "3/10",
+          "decimal_diagnostic": 0.3
+        },
+        "omitted_connection_wrong_pairing": {
+          "rational": "3/5",
+          "decimal_diagnostic": 0.6
+        },
+        "W1_auxiliary_norm_upper": {
+          "rational": "239/16",
+          "decimal_diagnostic": 14.9375
+        },
+        "exact_identity_residual": {
+          "rational": "0",
+          "decimal_diagnostic": 0.0
+        },
+        "coordinate_tensor_diagnostics": [
+          {
+            "t": {
+              "rational": "-1/4",
+              "decimal_diagnostic": -0.25
+            },
+            "lapse": {
+              "rational": "19/20",
+              "decimal_diagnostic": 0.95
+            },
+            "divS": [
+              {
+                "rational": "-3/5",
+                "decimal_diagnostic": -0.6
+              },
+              {
+                "rational": "0",
+                "decimal_diagnostic": 0.0
+              },
+              {
+                "rational": "0",
+                "decimal_diagnostic": 0.0
+              },
+              {
+                "rational": "0",
+                "decimal_diagnostic": 0.0
+              }
+            ],
+            "divT": [
+              {
+                "rational": "0",
+                "decimal_diagnostic": 0.0
+              },
+              {
+                "rational": "0",
+                "decimal_diagnostic": 0.0
+              },
+              {
+                "rational": "0",
+                "decimal_diagnostic": 0.0
+              },
+              {
+                "rational": "0",
+                "decimal_diagnostic": 0.0
+              }
+            ],
+            "density_pairing_U_and_Uprime_coefficients": [
+              {
+                "rational": "0",
+                "decimal_diagnostic": 0.0
+              },
+              {
+                "rational": "-57/20",
+                "decimal_diagnostic": -2.85
+              }
+            ]
+          },
+          {
+            "t": {
+              "rational": "0",
+              "decimal_diagnostic": 0.0
+            },
+            "lapse": {
+              "rational": "1",
+              "decimal_diagnostic": 1.0
+            },
+            "divS": [
+              {
+                "rational": "-3/5",
+                "decimal_diagnostic": -0.6
+              },
+              {
+                "rational": "0",
+                "decimal_diagnostic": 0.0
+              },
+              {
+                "rational": "0",
+                "decimal_diagnostic": 0.0
+              },
+              {
+                "rational": "0",
+                "decimal_diagnostic": 0.0
+              }
+            ],
+            "divT": [
+              {
+                "rational": "0",
+                "decimal_diagnostic": 0.0
+              },
+              {
+                "rational": "0",
+                "decimal_diagnostic": 0.0
+              },
+              {
+                "rational": "0",
+                "decimal_diagnostic": 0.0
+              },
+              {
+                "rational": "0",
+                "decimal_diagnostic": 0.0
+              }
+            ],
+            "density_pairing_U_and_Uprime_coefficients": [
+              {
+                "rational": "0",
+                "decimal_diagnostic": 0.0
+              },
+              {
+                "rational": "-3",
+                "decimal_diagnostic": -3.0
+              }
+            ]
+          },
+          {
+            "t": {
+              "rational": "1/2",
+              "decimal_diagnostic": 0.5
+            },
+            "lapse": {
+              "rational": "11/10",
+              "decimal_diagnostic": 1.1
+            },
+            "divS": [
+              {
+                "rational": "-3/5",
+                "decimal_diagnostic": -0.6
+              },
+              {
+                "rational": "0",
+                "decimal_diagnostic": 0.0
+              },
+              {
+                "rational": "0",
+                "decimal_diagnostic": 0.0
+              },
+              {
+                "rational": "0",
+                "decimal_diagnostic": 0.0
+              }
+            ],
+            "divT": [
+              {
+                "rational": "0",
+                "decimal_diagnostic": 0.0
+              },
+              {
+                "rational": "0",
+                "decimal_diagnostic": 0.0
+              },
+              {
+                "rational": "0",
+                "decimal_diagnostic": 0.0
+              },
+              {
+                "rational": "0",
+                "decimal_diagnostic": 0.0
+              }
+            ],
+            "density_pairing_U_and_Uprime_coefficients": [
+              {
+                "rational": "0",
+                "decimal_diagnostic": 0.0
+              },
+              {
+                "rational": "-33/10",
+                "decimal_diagnostic": -3.3
+              }
+            ]
+          },
+          {
+            "t": {
+              "rational": "3/4",
+              "decimal_diagnostic": 0.75
+            },
+            "lapse": {
+              "rational": "23/20",
+              "decimal_diagnostic": 1.15
+            },
+            "divS": [
+              {
+                "rational": "-3/5",
+                "decimal_diagnostic": -0.6
+              },
+              {
+                "rational": "0",
+                "decimal_diagnostic": 0.0
+              },
+              {
+                "rational": "0",
+                "decimal_diagnostic": 0.0
+              },
+              {
+                "rational": "0",
+                "decimal_diagnostic": 0.0
+              }
+            ],
+            "divT": [
+              {
+                "rational": "0",
+                "decimal_diagnostic": 0.0
+              },
+              {
+                "rational": "0",
+                "decimal_diagnostic": 0.0
+              },
+              {
+                "rational": "0",
+                "decimal_diagnostic": 0.0
+              },
+              {
+                "rational": "0",
+                "decimal_diagnostic": 0.0
+              }
+            ],
+            "density_pairing_U_and_Uprime_coefficients": [
+              {
+                "rational": "0",
+                "decimal_diagnostic": 0.0
+              },
+              {
+                "rational": "-69/20",
+                "decimal_diagnostic": -3.45
+              }
+            ]
+          }
+        ]
+      },
+      "conservation_deletion": {
+        "all_null_residuals": {
+          "rational": "0",
+          "decimal_diagnostic": 0.0
+        },
+        "Lambda_window_difference": {
+          "rational": "-1/2",
+          "decimal_diagnostic": -0.5
+        },
+        "kappa_source_divergence_pairing": {
+          "rational": "1/2",
+          "decimal_diagnostic": 0.5
+        }
+      },
+      "no_point_gradient_bound": {
+        "fixed_S_sup_norm_squared": {
+          "rational": "3/250000",
+          "decimal_diagnostic": 1.2e-05
+        },
+        "Lambda_derivatives_at_zero": [
+          {
+            "rational": "-3/10",
+            "decimal_diagnostic": -0.3
+          },
+          {
+            "rational": "-30",
+            "decimal_diagnostic": -30.0
+          }
+        ],
+        "divergence_defect": {
+          "rational": "0",
+          "decimal_diagnostic": 0.0
+        }
+      },
+      "scope": "Tensor interface calibrations, not physical material realizations; no claim of pointwise Lambda constancy."
+    }
+  }
+}

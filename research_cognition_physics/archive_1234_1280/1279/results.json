@@ -1,0 +1,90 @@
+{
+  "schema": "round1279_null_reference_matching_v1",
+  "status": "PASS_WITH_SCOPE",
+  "round": 1279,
+  "author_check_groups": 1,
+  "new_adopted_axioms": 0,
+  "strict_certificate": {
+    "method": "Analytic inequalities plus exact Fraction arithmetic; not inferred from samples",
+    "E_lower": "4",
+    "E_strict_upper": "36",
+    "A_upper": "1/1000",
+    "U": "500",
+    "r_global_lower": "1/2",
+    "r_pulse_lower": "499/500",
+    "relative_rescaling_bound": "375/498002",
+    "relative_window_bound": "1/62500",
+    "relative_total_bound": "23935877/31125125000",
+    "target": "1/1250",
+    "strict_margin": "964223/31125125000",
+    "clock_rate_excess_bound": "1/62499"
+  },
+  "numerical_diagnostics": {
+    "scope": "Uncertified floating RK4/Gauss diagnostics only; differences are not rigorous numerical error bars",
+    "gauss": [
+      {
+        "nodes": 128,
+        "E": 6.052923538596628
+      },
+      {
+        "nodes": 256,
+        "E": 6.052923538596659
+      },
+      {
+        "nodes": 512,
+        "E": 6.052923538596637
+      }
+    ],
+    "rk4": [
+      {
+        "steps": 4096,
+        "E": 6.052923538596676,
+        "B": 9.078700802079666,
+        "J": 9.078802726447961,
+        "M": 9.078739913053342,
+        "C": 0.00010192436829032586,
+        "r_pulse_past": 0.9999159326221755,
+        "rprime_pulse_past": 0.0001681315089827937,
+        "r_at_minus_U": 0.9161864411487443,
+        "area_change": 0.0001681276883249705,
+        "geometry_correction": -0.0003362445784503625,
+        "rescaling_identity_residual": 4.377669559317565e-15,
+        "raychaudhuri_identity_residual": -6.870643377149266e-15,
+        "relative_modular_source_difference": 4.307992357975416e-06
+      },
+      {
+        "steps": 8192,
+        "E": 6.052923538596656,
+        "B": 9.078700802079652,
+        "J": 9.078802726447947,
+        "M": 9.078739913053283,
+        "C": 0.00010192436829032518,
+        "r_pulse_past": 0.9999159326221708,
+        "rprime_pulse_past": 0.00016813150898279387,
+        "r_at_minus_U": 0.9161864411487395,
+        "area_change": 0.00016812768833429637,
+        "geometry_correction": -0.000336244578450361,
+        "rescaling_identity_residual": 4.378347185675369e-15,
+        "raychaudhuri_identity_residual": 2.4544710881813092e-15,
+        "relative_modular_source_difference": 4.307992353083873e-06
+      }
+    ],
+    "RK_B_difference": 1.4210854715202004e-14
+  },
+  "physical_scope": {
+    "reference": "Specified w-null vacuum, coherent difference on one fixed geometry",
+    "bulk_Hadamard_proved": false,
+    "absolute_reference_source_proved": false,
+    "actual_clock_instrument_proved": false,
+    "full_goal_completed": false
+  },
+  "source_url": "https://arxiv.org/html/1502.04106",
+  "bindings": {
+    "admission.md": "ffa5c5374df39df8a0c78bc06d5238f523c9591be4f7379111132dde0b9bbd69",
+    "fixed_spec.md": "c69e5171068701c2889dc1afd5288a3b1e037c75218c9c5b0ef522143b799987",
+    "proof.md": "e19d39d32677f49bdd54121b4dbbc908ac5fe917de489918bc3722b918e00523",
+    "check.py": "f9b5768a62e1000f68d27ac1f53ddf70683e9e7eab96d1b4bf73b0e8c223b2fa",
+    "../_shared/ct_hg_adoption_after1278.md": "b3d92a66dba200c3e5ebad79f9805597a687b316b4b808d6bd166be9e7c33721",
+    "../_shared/jacobson_reconstruction_after1278.md": "eef8cb764a213407829ac686881a65babab035d0ed38bf64d9251fe6c14f38b2"
+  }
+}

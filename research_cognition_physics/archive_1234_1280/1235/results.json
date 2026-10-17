@@ -1,0 +1,142 @@
+{
+  "status": "PASS",
+  "science_groups": 3,
+  "group_1": {
+    "name": "independent matter and common curved effective geometry",
+    "max_KG": 1.1102230246251565e-16,
+    "max_source_conservation": 2.220446049250313e-16,
+    "max_invariant_difference": 1.1102230246251565e-15,
+    "max_complete_constraint": 3.3306690738754696e-16,
+    "max_independent_source_geometry_difference": 3.3306690738754696e-16,
+    "min_abs_four_curvature": 0.6666536798552058,
+    "physical_scalar_count": 3,
+    "physical_sum_q_squared": 0.6666666666666666,
+    "normalized_source_factor": 2
+  },
+  "group_2": {
+    "name": "finite positive thickness and source deletion",
+    "rows": {
+      "rank_one": {
+        "average": 5.555555571044234e-10,
+        "event_change": 1.2500000004166664e-18,
+        "normal_change": 5.555555558544236e-10,
+        "analytic_bounds": {
+          "lower": 5.555407410123413e-10,
+          "upper": 5.55570374091183e-10,
+          "min_t": 0.99998999875,
+          "max_z": 6.250041672222312e-10,
+          "mean_V": 3.3333333333333334e-09,
+          "mean_quad2": 2.0000000000000005e-17
+        },
+        "deleted_source_difference": -5.555557494139605e-10,
+        "two_quadrature_orders": [
+          6,
+          10
+        ],
+        "quadrature_difference": 4.1359030627651384e-25
+      },
+      "traceless": {
+        "average": 1.1111111130514394e-09,
+        "event_change": 1.111111111481481e-18,
+        "normal_change": 1.1111111119403288e-09,
+        "analytic_bounds": {
+          "lower": 1.1110814820246826e-09,
+          "upper": 1.1111407511917286e-09,
+          "min_t": 0.9999899975000001,
+          "max_z": 1.2500083354861463e-09,
+          "mean_V": 6.666666666666667e-09,
+          "mean_quad2": 1.7777777777777784e-17
+        },
+        "deleted_source_difference": -1.1111112017045027e-09,
+        "two_quadrature_orders": [
+          6,
+          10
+        ],
+        "quadrature_difference": 8.271806125530277e-25
+      }
+    }
+  },
+  "group_3": {
+    "name": "analytic derivative certificate and finite parameter selection",
+    "certificate": {
+      "I_component_upper": 5.984375,
+      "F_triangle_upper": 122,
+      "holomorphic_F_certificate": 128,
+      "derivative_diagonal": 524288.0,
+      "derivative_offdiagonal": 262144.0,
+      "M_x": 1572864.0,
+      "M_t": 2097152.0,
+      "moment_x": 1e-08,
+      "moment_t": 3.333333333333334e-11,
+      "E": 0.007899272533333335,
+      "central_difference_error_bound": 0.0004937045333333334,
+      "epsilon": 1e-08,
+      "L_distance_bound": 0.004344951893333334,
+      "ab_distance_bound": 0.002172475946666667,
+      "lambda_distance_bound": 0.0010933638936128165,
+      "parameters": {
+        "a": [
+          0.9,
+          1.1
+        ],
+        "b": [
+          0.9,
+          1.1
+        ],
+        "L": [
+          0.5,
+          2
+        ],
+        "cosmological": [
+          -1,
+          1
+        ]
+      },
+      "proof_not_sampling": true
+    },
+    "wrong_candidate": {
+      "rank_one": {
+        "a": 1,
+        "b": 0.95,
+        "L": 1.2,
+        "averaged_difference": -0.02499999985951395,
+        "point_difference": -0.024999999999999994,
+        "finite_window_error": 1.4048604293770417e-10,
+        "certified_error": 0.0004937045333333334,
+        "excluded": true
+      },
+      "traceless": {
+        "a": 1,
+        "b": 0.95,
+        "L": 1.2,
+        "averaged_difference": 0.012500000001805447,
+        "point_difference": 0.012500000000000011,
+        "finite_window_error": 1.8054360090280497e-12,
+        "certified_error": 0.0004937045333333334,
+        "excluded": true
+      }
+    }
+  },
+  "domain": {
+    "shape_s": 0.25,
+    "spatial_half_width": 0.0001,
+    "temporal_half_width": 1e-05,
+    "window": "normalized uniform product cube; common coordinate weights"
+  },
+  "scope": {
+    "CT_adopted": false,
+    "full_GR_proved": false,
+    "quantum_apparatus_built": false,
+    "complete_actual_cognitive_model": false,
+    "analytic_bounds_certified": true,
+    "quadrature_is_diagnostic": true,
+    "source_not_fitted_to_constraint_residual": true
+  },
+  "source_sha256": {
+    "archive_1234_/1235/proof.md": "9560bbf7361324e196c11d5abdad01a94285e21efc21a95b1b25e74ab728aa74",
+    "archive_1234_/1235/check.py": "db3e8258aa76a792a0c4344dce8804e9588b5fb73953c7274a334e78cd9449c6",
+    "archive_1234_/1235/admission.md": "d4ee716d31492d8beadc775467a845af6e0e593cb395ffd08c23c8266b7b6940",
+    "archive_1234_/1235/NEXT.md": "cf6cbc413e6ee7b7aefae30d44688fcdff6f339b06aa2b8c0946bf0cf4464fa1",
+    "archive_1161_1200/1188/proof.md": "6c2c22b858fb938ca6b1cf36747da2c40f5634af39568b7859e19c6024f604a3"
+  }
+}

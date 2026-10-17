@@ -1,0 +1,87 @@
+{
+  "schema": "gr_response_scale_screen_1241_v1",
+  "round": 1241,
+  "status": "PASS",
+  "science_groups": 3,
+  "group_1": {
+    "status": "PASS",
+    "spectral_moments": [
+      1.0000000000000036,
+      0.5000000000000018,
+      0.2826727415121655
+    ],
+    "time_variance": 9.869604401089322,
+    "Fourier_agreement": 2.229448362370068e-15,
+    "time_integral_U": 2048.0,
+    "integrated_probability": 0.9999999995121343,
+    "omitted_probability_bound": 1.733828834687004e-09,
+    "integrated_time_second": 9.863467527593908,
+    "omitted_second_moment_bound": 0.02181661564992912,
+    "mathematical_POVM_not_detector": true
+  },
+  "group_2": {
+    "status": "PASS",
+    "diagnostic_chi": 0.02,
+    "T": 0.82,
+    "eighth_moment": 2.0901449202533398e-05,
+    "free_relativistic_norm": 0.021990004246792975,
+    "analytic_norm_bound": 0.023430527666066157,
+    "maximum_axis_variance": 0.016399999999999998,
+    "positive_relativistic_mean_kinetic": 0.018024985480717525,
+    "nonrelativistic_kinetic_upper": 0.018292682926829267,
+    "fixed_time_marginals_only": true
+  },
+  "group_3": {
+    "status": "PASS",
+    "inputs": {
+      "r": 1e-08,
+      "T": 0.82,
+      "b": 0.001,
+      "zeta": 1e-08,
+      "delta_t": 1e-08,
+      "delta_x": 1e-09,
+      "p_t": 0.0001,
+      "p_x": 0.0001
+    },
+    "C_R": 1.1715263833033078,
+    "chi_time": 3.183098861837907e-19,
+    "chi_position": 4.065040650406504e-23,
+    "chi_star": 4.065040650406504e-23,
+    "mu_star": 5.0000000000000005e-12,
+    "certificate_L_over_lP_threshold": 7.014271166700073e+16,
+    "witness": {
+      "L_over_lP": 1e+35,
+      "M_over_mP": 100000.0,
+      "B": 1000000000000.0,
+      "chi": 1.0000000000000001e-40,
+      "mu": 1e-30,
+      "mass_interval": [
+        2.46e-13,
+        5.0000000000000006e+23
+      ],
+      "signal_energy_cap_ratio": 1.0000000000000001e-28,
+      "time_window_failure_bound": 9.869604401089358e-08,
+      "position_failure_bound": 2.4600000000000005e-22,
+      "free_relativistic_norm_bound": 1.171526383303308e-40,
+      "body_compactness": 2e-27,
+      "mean_COM_kinetic_ratio_upper": 9.146341463414636e-41
+    },
+    "deletions": {
+      "low_energy_ratio": 1e-36,
+      "low_energy_success_upper": 2.580122754655959e-05,
+      "heavy_body_compactness": 2.0000000000000002e-07,
+      "small_L_over_lP": 10000000000.0,
+      "small_L_certificate_mass_interval": [
+        2460000000000.0,
+        0.05
+      ]
+    },
+    "actual_instrument": false,
+    "metric_error_remainder_certified": false
+  },
+  "source_sha256": {
+    "archive_1234_/1241/proof.md": "d8f6bf93727303271ccc38e7264d707887993daac94d621919cd28c01663cd2c",
+    "archive_1234_/1241/admission.md": "71a4d3273ae86155f392880a3cc4b501c3be0b47376c0e3703e3a68e0369b192",
+    "archive_1234_/1241/check.py": "2e1a06c1584fcba3b59cc3fdd3f0743627658c9311a34a0fc80c49153b93a13c"
+  }
+}

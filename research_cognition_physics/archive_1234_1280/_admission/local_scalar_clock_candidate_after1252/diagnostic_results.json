@@ -1,0 +1,239 @@
+{
+  "status": "FLOAT_DIAGNOSTIC_ONLY_NOT_A_TIME_WINDOW_CERTIFICATE",
+  "dimension": 729,
+  "parameters": {
+    "w": 0.1,
+    "lambda": 0.25,
+    "t_star": 0.4,
+    "N": [
+      1,
+      1
+    ],
+    "v": [
+      1,
+      1
+    ],
+    "m": [
+      1,
+      1,
+      1
+    ]
+  },
+  "quantization": {
+    "quadratics": "compress infinite HO P^2,Q^2 separately",
+    "f": "sin of the finite Q matrix",
+    "link": "square of the finite two-cell Q difference",
+    "Q_norm": 1.2247448713915892,
+    "Q2_minus_Q_squared_diag": [
+      1.1102230246251565e-16,
+      0.0,
+      1.5
+    ]
+  },
+  "algebra_diagnostics": {
+    "H_sum_dNiH_max_error": 4.440892098500626e-16,
+    "clock_Qdot_equals_P_max_error": 1.7763568394002505e-15,
+    "joint_Phi_Psi_parity_max_error": 0.0,
+    "eigh_residual_max": 1.865174681370263e-14,
+    "H_min_eigenvalue_diagnostic": 3.1404819935034323,
+    "H_minus_three_quarters_H0_min_eigenvalue_diagnostic": 0.7736129491197763
+  },
+  "record": {
+    "probability_plus_minus": [
+      0.49959851227173707,
+      0.5004014877282634
+    ],
+    "minus_minus_plus": 0.0008029754565263558,
+    "effect_is_explicit_terminal_primitive": true
+  },
+  "complete_energy": {
+    "initial_plus_minus": [
+      5.199999999999997,
+      5.199999999999997
+    ],
+    "final_plus_minus": [
+      5.199999999999996,
+      5.199999999999999
+    ],
+    "sampled_max_conservation_error": 2.5757174171303632e-14,
+    "clock_initial_HO_energy_per_cell": 1.0,
+    "all_six_oscillators_and_interaction_retained": true
+  },
+  "sources": {
+    "dN1": {
+      "initial_mean": [
+        2.599999999999998,
+        2.599999999999998
+      ],
+      "final_mean": [
+        2.600000000000001,
+        2.6000000000000023
+      ],
+      "final_second_moment": [
+        7.310542611494951,
+        7.3105426114949585
+      ]
+    },
+    "dN2": {
+      "initial_mean": [
+        2.5999999999999988,
+        2.5999999999999988
+      ],
+      "final_mean": [
+        2.5999999999999934,
+        2.5999999999999956
+      ],
+      "final_second_moment": [
+        7.310542611494959,
+        7.310542611494962
+      ]
+    },
+    "dlogv1": {
+      "initial_mean": [
+        0.0,
+        0.0
+      ],
+      "final_mean": [
+        -0.01347325161968106,
+        -0.013473251619680495
+      ],
+      "final_second_moment": [
+        1.005254388077775,
+        1.0052543880777751
+      ]
+    },
+    "dlogv2": {
+      "initial_mean": [
+        0.0,
+        0.0
+      ],
+      "final_mean": [
+        -0.013473251619680937,
+        -0.01347325161968179
+      ],
+      "final_second_moment": [
+        1.0052543880777736,
+        1.0052543880777736
+      ]
+    },
+    "dlogw": {
+      "initial_mean": [
+        0.19999999999999984,
+        0.19999999999999984
+      ],
+      "final_mean": [
+        0.19624354081100226,
+        0.19624354081100245
+      ],
+      "final_second_moment": [
+        0.061232368451903794,
+        0.061232368451903926
+      ]
+    },
+    "dLambda": {
+      "initial_mean": [
+        0.0,
+        0.0
+      ],
+      "final_mean": [
+        -0.04223221609651572,
+        -0.0422322160965153
+      ],
+      "final_second_moment": [
+        0.5831967848117126,
+        0.5831967848117126
+      ]
+    }
+  },
+  "clock": {
+    "sampled_min_mean_derivative": 0.6509210145930289,
+    "sampled_max_variance": 1.0000000000000002,
+    "endpoint": [
+      {
+        "t": 0.0,
+        "cells": [
+          {
+            "mean": [
+              2.415732314213369e-16,
+              -5.0564190152021736e-17
+            ],
+            "mean_derivative": [
+              0.707106781186547,
+              0.7071067811865475
+            ],
+            "variance_of_actual_Q": [
+              0.9999999999999994,
+              1.0000000000000002
+            ]
+          },
+          {
+            "mean": [
+              1.342057317527442e-16,
+              -1.9422569039721324e-17
+            ],
+            "mean_derivative": [
+              0.707106781186547,
+              0.7071067811865476
+            ],
+            "variance_of_actual_Q": [
+              0.9999999999999997,
+              1.0000000000000002
+            ]
+          }
+        ]
+      },
+      {
+        "t": 0.4,
+        "cells": [
+          {
+            "mean": [
+              0.2753083377654186,
+              0.27530833776541935
+            ],
+            "mean_derivative": [
+              0.6509210145930289,
+              0.6509210145930295
+            ],
+            "variance_of_actual_Q": [
+              0.9208002094940729,
+              0.920800209494073
+            ]
+          },
+          {
+            "mean": [
+              0.27530833776541874,
+              0.27530833776541896
+            ],
+            "mean_derivative": [
+              0.6509210145930294,
+              0.6509210145930305
+            ],
+            "variance_of_actual_Q": [
+              0.9208002094940733,
+              0.920800209494073
+            ]
+          }
+        ]
+      }
+    ],
+    "interaction_force_at_final": [
+      [
+        0.0003106740621810001,
+        0.0003106740621809722
+      ],
+      [
+        0.0003106740621808103,
+        0.00031067406218091465
+      ]
+    ],
+    "not_a_sharp_monotone_clock_or_proper_time_certificate": true
+  },
+  "scope": [
+    "One explicit two-cell finite effective quantum rule.",
+    "No continuum Hilbert stress, Einstein response, full CC/SR or hardware claim.",
+    "dNi,dlogvi,dlogw are exact derivatives of the declared Hamiltonian family.",
+    "The two preparations have equal source expectations by parity; their local Psi effect differs.",
+    "Sampling and eigh residuals are diagnostics, not rigorous certificates."
+  ],
+  "code_sha256": "a7cbdd555aa4c183d442ee840b067d434dae54a1e0c4dda4148bd9cfcbc4363c"
+}

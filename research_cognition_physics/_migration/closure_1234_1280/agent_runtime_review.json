@@ -1,0 +1,67 @@
+{
+  "schema": "research_closure_agent_review_v1",
+  "date": "2026-10-17",
+  "reviewer": "/root/curved_contact_scope",
+  "provenance": "Agent-reported command receipts; not raw captured output",
+  "runner_sha256": "234152cfee80afe97c10df130a5c5578ad5df6d2710d293635c81d45638eaa6a",
+  "cases": [
+    {
+      "name": "closure",
+      "arguments": "--verify-closure",
+      "receipt": "0a8afc",
+      "exit_code": 0,
+      "summary": "PASS; 1314 entries, 1308 moved, 678 scientific files unchanged, 13 reversible Markdown, 141 supports"
+    },
+    {
+      "name": "navigation",
+      "arguments": "--verify-navigation",
+      "receipt": "43668b",
+      "exit_code": 0,
+      "summary": "PASS; 4 root documents recoverable"
+    },
+    {
+      "name": "new_script",
+      "arguments": "--script research_cognition_physics/archive_1234_1280/1280/check.py",
+      "receipt": "738efa",
+      "exit_code": 0,
+      "summary": "PASS_WITH_SCOPE READ_ONLY_MATCH"
+    },
+    {
+      "name": "old_script",
+      "arguments": "--script research_cognition_physics/archive_1234_/1280/check.py",
+      "receipt": "c375d6",
+      "exit_code": 0,
+      "summary": "PASS_WITH_SCOPE READ_ONLY_MATCH"
+    },
+    {
+      "name": "nested_reader",
+      "arguments": "--script research_cognition_physics/archive_1234_1280/1238/check.py",
+      "receipt": "f1f6a0 / 7d5f90",
+      "exit_code": 0,
+      "summary": "READ_ONLY_MATCH; two original groups PASS"
+    },
+    {
+      "name": "child_process",
+      "arguments": "--script research_cognition_physics/archive_1234_1280/1245/check.py",
+      "receipt": "024023 / b15a80",
+      "exit_code": 0,
+      "summary": "READ_ONLY_MATCH; inherited 1242 replay PASS"
+    },
+    {
+      "name": "root_relative_hashes",
+      "arguments": "--script research_cognition_physics/archive_1234_1280/_shared/jacobson_finite_prediction_after1278/replay_check.py",
+      "receipt": "9e284e",
+      "exit_code": 0,
+      "summary": "PASS_WITH_SCOPE READ_ONLY_MATCH; no new scientific groups"
+    },
+    {
+      "name": "prior_exception_preserved",
+      "arguments": "--verify-prior-closure",
+      "receipt": "adc6a5",
+      "exit_code": 1,
+      "summary": "Expected pre-existing paper08 relocated-file hash mismatch remains visible"
+    }
+  ],
+  "scientific_or_frozen_files_modified": false,
+  "known_prior_exception_hidden": false
+}

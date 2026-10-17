@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "date": "2026-10-16",
+  "accepted_through": 1263,
+  "science_rounds": 30,
+  "science_groups": [
+    78,
+    64,
+    2
+  ],
+  "frozen_bindings": 310,
+  "distinct_frozen_science_files": 315,
+  "local_links": 441,
+  "root_replays": [
+    {
+      "path": "1263/check.py",
+      "code_sha256": "520ac5729950241095a117569df8c6b0eb72eb4e9fa77b740d110249c569fa70",
+      "actual_command": "& 'C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe' -B -X utf8 'research_cognition_physics\\archive_1234_\\1263\\check.py'",
+      "exit_code": 0,
+      "chunk_id": "726d14",
+      "stdout": "READ_ONLY_MATCH_ROUND1263_FINITE_SCATTERING\r\n{\r\n  \"state_error_upper\": 3.1901586805218463e-17,\r\n  \"joint_probability_gap_lower\": 0.3124999999913877,\r\n  \"native_angle_joint_probability_gap_lower\": 0.3124999999913404,\r\n  \"native_signal_bad_momentum_tail_scientific\": \"4.722413706741E-779\",\r\n  \"p_bad_upper\": 7.213895789838336e-265,\r\n  \"A\": 80000000000.0,\r\n  \"B_V\": 1.024e-57,\r\n  \"terms\": {\r\n    \"massive_free\": 6.301554215394462e-18,\r\n    \"massless_free\": 3.27680819200512e-56,\r\n    \"photon_energy_spread\": 3.276804096e-56,\r\n    \"full_linear_velocity\": 2.5600032e-17,\r\n    \"TT_and_velocity_quadratic\": 2.5206216861577846e-76,\r\n    \"full_3D_position_Taylor\": 5.89824e-25,\r\n    \"bounded_bad_tail\": 1.84817811456e-89,\r\n    \"linear_comparator_bad_tail\": 2.8311552e-58\r\n  }\r\n}\r\n",
+      "mode": "read_only",
+      "performed_before_publication": true,
+      "repeated_by_publication": false
+    },
+    {
+      "path": "1263/source_check.py",
+      "code_sha256": "da5503deb4ab87f44012e9a08872cf51b3b8e3180cce502159ae245069b94802",
+      "actual_command": "& 'C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe' -B -X utf8 'research_cognition_physics\\archive_1234_\\1263\\source_check.py'",
+      "exit_code": 0,
+      "chunk_id": "fb9a63",
+      "stdout": "READ_ONLY_MATCH_1263_SOURCE: one author source group; no files changed\r\n{\r\n  \"state_error\": 3.1901586805218463e-17,\r\n  \"dynamic_trace_error\": 2.0417015555339817e-15,\r\n  \"reference_error\": 4.8e-69,\r\n  \"total_trace_error\": 2.0417015555339817e-15,\r\n  \"relative_to_mass26\": 7.852698290515314e-17,\r\n  \"conditional_R_error\": 5.1334210539140107e-14,\r\n  \"massless_kernel_samples\": 402,\r\n  \"max_ratio_bound_one\": 1.0\r\n}\r\n",
+      "mode": "read_only",
+      "performed_before_publication": true,
+      "repeated_by_publication": false
+    },
+    {
+      "path": "1263/independent_check.py",
+      "code_sha256": "681b5bb4b7c6f43bbd0145e7114f176bb46a046fbcf34be6f551cb33faa64065",
+      "actual_command": "& 'C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe' -B -X utf8 'research_cognition_physics\\archive_1234_\\1263\\independent_check.py'",
+      "exit_code": 0,
+      "chunk_id": "a59092",
+      "stdout": "READ_ONLY_MATCH_INDEPENDENT_1263: independent_groups=2\r\n",
+      "mode": "read_only",
+      "performed_before_publication": true,
+      "repeated_by_publication": false
+    }
+  ],
+  "previous_receipts_sha256": {
+    "round1262_publication_checks.json": "ec3cbf25a67ac24a9b3122376deec93ba434e64cf9a9246cd832dfea792b2eeb",
+    "native_geometry_insertion_after1261_checks.json": "befcc1ed19b8d1db481449518fb50b3ff56aba6eb92398960fec19dee02a521e",
+    "relational_geometry_screen_after1261_checks.json": "c826be5298041b38a435a4b4b069e3e96149944b2059d5f729295f58b2e1b431"
+  },
+  "original_candidate_sha256": {
+    "README.md": "dd88b2ba28b8e0970361a0f7caf8c5e73aec77cff101bf0453eeabf69c228af1",
+    "check.py": "2e7a778d149951f5f0df8ceec588715aa947d40835e765727581cb6d8050c68e",
+    "results.json": "86c4ea9bd21601b86953184691d85a4c3dc056405a77a8d22061e6cb8f04a0f5"
+  },
+  "goal_status": "active",
+  "goal_prompt_sha256": "29426b934e3ee81d75ef5831b396cd2af6f44eea96711563bb03a2e3796db214",
+  "navigation_layer_sha256": "3b0353c26a946db9ba9d38757cf53bfbc07a159cfb299c39009f4239c955e125"
+}

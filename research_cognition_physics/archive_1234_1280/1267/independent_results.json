@@ -1,0 +1,73 @@
+{
+  "round": 1267,
+  "status": "PASS_INDEPENDENT_WITH_SCOPE",
+  "independent_groups": 1,
+  "method": "exact Fraction arithmetic; independent reconstruction of old resource definitions; saved interval inputs; formal Fourier/Gaussian algebra; no author imports or new ODE run",
+  "geometry": {
+    "closed_parameter_cells": 1,
+    "initial_constraint_values": [
+      "-111/100",
+      "-111/100",
+      "-111/100"
+    ],
+    "wrong_fixed_initial_momentum_deletion": "-37/100000",
+    "uniform_h_upper": "79598612877987/4000",
+    "uniform_h_slack": "195279294066013/4000",
+    "source_complex_slack": "78774463429498191360375764992",
+    "piQ_bound": "297/5",
+    "pi_scalar_bound": "81/2",
+    "B_gap_exact_lower": "4787971979261154684110002586175500000000000000000000000000000000000/70098615748239071519790822646817273997801489811529446789504530553212753",
+    "B_gap_after_errors_gt": "68/1000000",
+    "a_kappa_derivative_exact_lower": "8422232391145053393386838924749129000000000000000000000000000000000000/35140653319020401747871682779077599806605942837259457121724425057661649",
+    "baseline_halfwidth": "290153722782344284437500000000000000000000000000000000/17525102131929513133163741463591261421795907480434004778138364481995749",
+    "parameter_error": "200000001/2000000000000000",
+    "orthonormal_classical_field_error": "22200000111/200000000000000000",
+    "endpoint_observed_gap_lower": "9999/50000000",
+    "four_mean_failure_upper": "1594323/68719476736",
+    "same_fixed_a_marginal": true,
+    "quantum_prefix_end": "2",
+    "classical_field_end": "9/4"
+  },
+  "instrument": {
+    "Fourier_coefficient_checks": 13,
+    "measure_reprepare_nonselective_Weyl_heat_time": "epsilon/2",
+    "measure_reprepare_post_AW_total_heat_time": "3*epsilon/4",
+    "measure_reprepare_weighted_record_Weyl_heat_time": "epsilon/4",
+    "measure_reprepare_seven_mode_coherent_survival": "1/128",
+    "measure_reprepare_half_trace_distance_lower": "127/128",
+    "old_source_exponent_below_minus82": true,
+    "instrument_exponent_below_minus82": true,
+    "post_source_error": "<2^-81<2^-80",
+    "finite_Lueders": {
+      "D_out_binary_upper_exponent": 1219,
+      "D_out_less_than_2power4096": true,
+      "nonselective_bound": "4 D epsilon^(1/4) 2^E0",
+      "weighted_bound": "8 D epsilon^(1/4) 2^E0",
+      "constant_plus_compact_operator_bound": "2^(E0+1)",
+      "weighted_Weyl_extra_bound": "sqrt(epsilon/2) F1",
+      "weighted_AW_additional_bound": "epsilon F2/4 when comparing to original AW(r*b)",
+      "all_four_post_source_terms_below_2power_minus84": true,
+      "rational_qubit_coherence_factor": "24/25",
+      "coarse_single_effect_coherence": "1",
+      "coarse_Lueders_not_fine_Lueders_then_discard_record": true,
+      "rational_qubit_source_loss": "1/25",
+      "passive_Bell_reference_preserved": true,
+      "system_reference_correlation_not_preserved": true,
+      "finite_environment_is_not_energy_or_CC_certificate": true
+    },
+    "one_independent_group_only": true
+  },
+  "scope": [
+    "Continuous parameter, CP and operator identities require the reviewed analytic proof; finite arithmetic does not independently reprove old ODE certificates.",
+    "Geometry classical approximation only for declared constrained Gaussian preparation family; other parameters and units fixed.",
+    "The uniform fixed a marginal is not a parameter-independent full source triple.",
+    "Instrument bounded-system-source estimates apply to arbitrary normal input and passive reference; they do not imply reduced input-state preservation.",
+    "No new environment energy, total covariant conservation, actual CC implementation, quantum Einstein identity, CT adoption, or completed stage goal."
+  ],
+  "inputs_sha256": {
+    "1247/results.json": "dbcd590e7816bc423c49a4e1bf83bab6fa50a84dd5578249cc493a15cd72bf06",
+    "1249/quantum_bounds_results.json": "77e125812877903dea9625a1fd0c0db571eb70829b28d6bcfa5a44e393ebcaa6",
+    "1252/results.json": "9e2976d7c60e89add2b3e0a7459bc4b5f80360357bfd5682edef2b0dc725969d"
+  },
+  "independent_code_sha256": "51911c9973ad7fc452c530321d02a506be1a2381fa26acc2aee054551a9e8add"
+}

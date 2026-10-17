@@ -1,0 +1,83 @@
+{
+  "round": 1259,
+  "status": "PASS_INDEPENDENT_1259",
+  "independent_groups": 2,
+  "groups": {
+    "finite_code_reference_and_source": {
+      "status": "PASS",
+      "dimensions_K_data_flag_reference": [
+        3,
+        2,
+        3,
+        6
+      ],
+      "unitary_error": 4.440892098501e-16,
+      "whole_ready_code_map_error": 2.22044604925e-16,
+      "isometry_error": 4.440892098501e-16,
+      "entangled_reference_map_error": 6.206335383118e-17,
+      "retained_data_reference_density_error": 8.326672684689e-17,
+      "decoded_B_operator_error": 8.881784197001e-16,
+      "bare_B_operator_change": 6.928203230276,
+      "bare_B_mean_shift": 2.034782608696,
+      "three_flag_probabilities": [
+        0.07826086956522,
+        0.2152173913043,
+        0.7065217391304
+      ],
+      "blank_deleted_result0_probability": 4.249867503421e-33,
+      "blank_deleted_failure_probability": 1.0,
+      "complete_mass_identity_error": 0.0,
+      "source_commutant_transport_error": 4.440892098501e-16,
+      "omit_J_compensation_mass_residual": 0.001484465170608,
+      "limitations": [
+        "Finite code algebra, not all normal L2(B) states or a spatial mother model.",
+        "The other-sector matrices illustrate commutant identities, not Einstein-source data.",
+        "Decoded original programme data are preserved; bare B is intentionally changed.",
+        "Nonselective source preservation does not imply every conditional source state is unchanged."
+      ]
+    },
+    "exact_pulse_resource_and_window": {
+      "status": "PASS",
+      "hbar_fixed": "1",
+      "physical_similarity_s": 200000,
+      "cell_volume": "1000/135005697",
+      "effective_epsilon": "135005697/40000000000000",
+      "pulse_integral": "1",
+      "pulse_zero_extension_derivatives_0_to_2": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "gate_time": "1/128",
+      "flag_access_time": "1/128",
+      "processing_time": "1/64",
+      "physical_gate_time": "3125/2",
+      "pulse_maximum_g": "280",
+      "interaction_strict_upper": "1485062667/1000000000000",
+      "declared_comparison_upper": "3/2000",
+      "J_input_lower": "1/100",
+      "J_remaining_strict_lower": "8514937333/1000000000000",
+      "J_remaining_comparison": "17/2000",
+      "allowed_action_upper_budget_over_epsilon": "3125000000/135005697",
+      "access_upper": "1291/10944",
+      "access_slack_to_one_eighth": "77/10944",
+      "latest_end_strict_upper": "24205/10944",
+      "limitations": [
+        "The original finite-terminal geometry/transport allowance is inherited conditionally.",
+        "No 513^3 grid, propagation channel, global clock or quantum geometry has been constructed.",
+        "J_input is a declared quantum baseline-window condition, not the old classical margin.",
+        "The held-block bound does not certify all local J_i under a sum of spatial roots.",
+        "The physical similarity changes the complete material/resource model; hbar is not tuned."
+      ]
+    }
+  }
+}

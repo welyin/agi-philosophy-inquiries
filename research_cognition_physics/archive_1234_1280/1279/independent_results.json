@@ -1,0 +1,111 @@
+{
+  "round": 1279,
+  "status": "PASS_WITH_SCOPE",
+  "independent_groups": 1,
+  "analytic_fraction_certificate": {
+    "method": "Continuous bounds are proved analytically; exact rational constants checked here.",
+    "E_lower": "4",
+    "E_upper_working": "36",
+    "independent_Gaussian_moment_polynomial": "55/64",
+    "independent_Gaussian_energy_upper": "165/16",
+    "Aq_upper": "1/1000",
+    "r_whole_domain_lower": "1/2",
+    "r_pulse_lower": "499/500",
+    "C_upper_over_Aq_E": "3/4",
+    "delta_C": "375/498002",
+    "delta_w": "1/62500",
+    "relative_bound": "23935877/31125125000",
+    "relative_bound_decimal": 0.0007690210722045293,
+    "strict_target": "1/1250",
+    "strict_margin": "964223/31125125000",
+    "clock_rate_upper": "62500/62499",
+    "B_positive_lower": "249001/62500",
+    "eight_pi_G": "1/18000",
+    "s_over_pi": "36000",
+    "new_independent_groups": 1
+  },
+  "diagnostic_only": {
+    "floating_error_certified": false,
+    "method": "Independent direct backward RK4 and Gauss-Legendre; no author import.",
+    "gauss": [
+      {
+        "order": 128,
+        "E": 6.0529235385966285
+      },
+      {
+        "order": 256,
+        "E": 6.052923538596659
+      },
+      {
+        "order": 512,
+        "E": 6.052923538596637
+      }
+    ],
+    "rk": [
+      {
+        "steps": 4096,
+        "E": 6.052923538596677,
+        "r_minus2": 0.9999159326221755,
+        "rprime_minus2": 0.0001681315089827937,
+        "r_at_minus500_by_exact_linear_extension": 0.9161864411487443,
+        "B": 9.078700802079668,
+        "J": 9.078802726447961,
+        "M": 9.078739913053344,
+        "C_independent_integral": 0.00010192436829032584,
+        "relative_actual_difference": 4.307992357975415e-06,
+        "area_delta": 0.0001681276883249705,
+        "Egeom_independent_integral": -0.0003362445784503625,
+        "identity_residuals": {
+          "J_minus_B_minus_C": 2.6013262724444708e-15,
+          "finite_Raychaudhuri_balance": -6.8707517973665144e-15
+        }
+      },
+      {
+        "steps": 8192,
+        "E": 6.052923538596655,
+        "r_minus2": 0.9999159326221708,
+        "rprime_minus2": 0.00016813150898279387,
+        "r_at_minus500_by_exact_linear_extension": 0.9161864411487395,
+        "B": 9.078700802079652,
+        "J": 9.078802726447947,
+        "M": 9.078739913053282,
+        "C_independent_integral": 0.00010192436829032519,
+        "relative_actual_difference": 4.307992352888211e-06,
+        "area_delta": 0.00016812768833429637,
+        "Egeom_independent_integral": -0.000336244578450361,
+        "identity_residuals": {
+          "J_minus_B_minus_C": 4.3783336331482126e-15,
+          "finite_Raychaudhuri_balance": 2.4544710881813092e-15
+        }
+      }
+    ],
+    "coarse_fine_absolute_changes": {
+      "E": 2.220446049250313e-14,
+      "r_minus2": 4.6629367034256575e-15,
+      "rprime_minus2": 1.6263032587282567e-19,
+      "B": 1.5987211554602254e-14,
+      "J": 1.4210854715202004e-14,
+      "M": 6.217248937900877e-14,
+      "C_independent_integral": 6.505213034913027e-19,
+      "area_delta": 9.325873406851315e-15,
+      "Egeom_independent_integral": 1.5178830414797062e-18
+    }
+  },
+  "source_bindings": {
+    "admission.md": "ffa5c5374df39df8a0c78bc06d5238f523c9591be4f7379111132dde0b9bbd69",
+    "fixed_spec.md": "c69e5171068701c2889dc1afd5288a3b1e037c75218c9c5b0ef522143b799987",
+    "proof.md": "e19d39d32677f49bdd54121b4dbbc908ac5fe917de489918bc3722b918e00523",
+    "check.py": "f9b5768a62e1000f68d27ac1f53ddf70683e9e7eab96d1b4bf73b0e8c223b2fa",
+    "results.json": "21b80fbc89d1686427faa42bdec7d77020bb3e31203b2159fd451d37e71ff629",
+    "independent_check.py": "2d60bad98a504233b71691634835476ff9bd3c6100352e4b140bcc0df509805a"
+  },
+  "scope": {
+    "same_fixed_background_reference_subtraction": true,
+    "normal_coherent_null_algebra": true,
+    "null_zero_modes_excluded": true,
+    "absolute_reference_source_certified": false,
+    "bulk_Hadamard_state_certified": false,
+    "actual_clock_instrument_certified": false,
+    "complete_goal_certified": false
+  }
+}

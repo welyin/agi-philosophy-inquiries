@@ -1,0 +1,147 @@
+{
+  "status": "PASS_WITH_SCOPE",
+  "source_hashes": {
+    "../1237/proof.md": "85c033045f66f9b907d5148b765f22463deae3bd70796ef69ac1904e830c82e8",
+    "../1274/proof.md": "48d0824aa7d81c9bcaf023e9aedbf158dce8dfaf2de355dc68919553b9f31d3a",
+    "independent_check.py": "6b836ac512adbaf5acfec16b2d6c9b42e2b12a37bae3c229310c5382860106fe"
+  },
+  "method": "independent S/T blocks and exact three-site spectral projectors",
+  "author_code_imported": false,
+  "exact_joint_table": [
+    [
+      {
+        "numerator": 3,
+        "denominator": 7
+      },
+      {
+        "numerator": 1,
+        "denominator": 14
+      }
+    ],
+    [
+      {
+        "numerator": 1,
+        "denominator": 14
+      },
+      {
+        "numerator": 3,
+        "denominator": 7
+      }
+    ]
+  ],
+  "exact_tv": {
+    "numerator": 1,
+    "denominator": 7
+  },
+  "each_joint_distribution_tv_error_if_supplied": {
+    "numerator": 1,
+    "denominator": 100
+  },
+  "remaining_tv_margin": {
+    "numerator": 43,
+    "denominator": 350
+  },
+  "cases": [
+    {
+      "e": 1.0,
+      "g": 0.25,
+      "beta_star": 0.45814536593707755,
+      "delay": 4.442882938158366,
+      "joint": [
+        [
+          0.4285714285714286,
+          0.07142857142857142
+        ],
+        [
+          0.07142857142857142,
+          0.42857142857142866
+        ]
+      ],
+      "correlation_real": 0.4285714285714285,
+      "correlation_imag": -0.0038398699981811897,
+      "tv": 0.1428571428571428,
+      "ideal_first_read_total_energy_change": 0.00543039622917739,
+      "residuals": {
+        "gibbs_stationarity": 3.474948304481946e-18,
+        "unitarity": 9.34526235093159e-16,
+        "joint_table": 1.1102230246251565e-16,
+        "correlation_real": 5.551115123125783e-17,
+        "correlation_imag": 4.336808689942018e-19,
+        "joint_first_marginal": 1.1102230246251565e-16,
+        "joint_second_marginal": 1.1102230246251565e-16,
+        "tv": 5.551115123125783e-17,
+        "measurement_energy": 0.0
+      }
+    },
+    {
+      "e": 1.0,
+      "g": 1.0,
+      "beta_star": 0.45814536593707755,
+      "delay": 1.1107207345395915,
+      "joint": [
+        [
+          0.4285714285714285,
+          0.07142857142857142
+        ],
+        [
+          0.07142857142857142,
+          0.42857142857142844
+        ]
+      ],
+      "correlation_real": 0.42857142857142844,
+      "correlation_imag": -0.014436922246373123,
+      "tv": 0.14285714285714296,
+      "ideal_first_read_total_energy_change": 0.08166756495898689,
+      "residuals": {
+        "gibbs_stationarity": 2.2215299868541707e-17,
+        "unitarity": 1.0396879415124589e-15,
+        "joint_table": 1.1102230246251565e-16,
+        "correlation_real": 1.1102230246251565e-16,
+        "correlation_imag": 0.0,
+        "joint_first_marginal": 1.1102230246251565e-16,
+        "joint_second_marginal": 1.1102230246251565e-16,
+        "tv": 1.1102230246251565e-16,
+        "measurement_energy": 0.0
+      }
+    },
+    {
+      "e": 1.0,
+      "g": 2.0,
+      "beta_star": 0.45814536593707755,
+      "delay": 0.5553603672697958,
+      "joint": [
+        [
+          0.42857142857142855,
+          0.0714285714285714
+        ],
+        [
+          0.0714285714285714,
+          0.42857142857142844
+        ]
+      ],
+      "correlation_real": 0.42857142857142855,
+      "correlation_imag": -0.024499690070948127,
+      "tv": 0.1428571428571429,
+      "ideal_first_read_total_energy_change": 0.2771823517781784,
+      "residuals": {
+        "gibbs_stationarity": 7.402616121945881e-17,
+        "unitarity": 1.4545324052864858e-15,
+        "joint_table": 1.1102230246251565e-16,
+        "correlation_real": 0.0,
+        "correlation_imag": 1.0408340855860843e-17,
+        "joint_first_marginal": 1.6653345369377348e-16,
+        "joint_second_marginal": 1.6653345369377348e-16,
+        "tv": 5.551115123125783e-17,
+        "measurement_energy": 1.1102230246251565e-16
+      }
+    }
+  ],
+  "scope": {
+    "mathematical_reference_and_readout_contract_only": true,
+    "actual_reference_preparation_certified": false,
+    "actual_two_time_instrument_certified": false,
+    "full_gibbs_kms_refuted": false,
+    "physical_clock_or_horizon_identity_certified": false,
+    "geometry_dynamics_selected": false
+  }
+}

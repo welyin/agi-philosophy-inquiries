@@ -1,0 +1,265 @@
+{
+  "round": 1258,
+  "status": "PASS",
+  "science_groups": 3,
+  "arithmetic": "Exact Python Fraction and integer identities only; finite algebra supports the analytic all-mode and all-Dyson-order arguments in proof.md.",
+  "source_sha256": {
+    "archive_1234_/1247/proof.md": "f3a79f8f43aa235d2fa13cc87a232e2b64643fc1bade375bfee96c204ab4bf3d",
+    "archive_1234_/1250/proof.md": "5e9f5e1495156f6bcd81c48a5046ac538ea72b2823a6cb7a9e3b7a59ff499d9f",
+    "archive_1234_/1257/proof.md": "bae5e521022c6cea650e91f9e5c9cf9fe789936fac2d84460f455722dc1163f6",
+    "archive_702_741/research_note_730.md": "e0ea20e66e44dfb0278efa85d1508435362cc21cd0baac3f4fbb092be1db4a83",
+    "archive_990_1008/research_note_1004.md": "ae717955f940e15ff1861e56c4c02e067564d15767abe713bf4cc5db1548c5fd",
+    "archive_1219_1233/1226/proof.md": "9d5558d399c0059d5f6d3ac8f0a077111f9702588edaadcfb0626458e1d42eb1"
+  },
+  "group_1_uniform_mode_energy_covariance_and_full_excitation_source": {
+    "status": "PASS",
+    "mode": "u_ddot+3H*u_dot+(1+k^2/a^2)*u=0; mass=1; V=1000",
+    "physical_mode_energy": "e_k=a^3*(|u_dot|^2+(1+k^2/a^2)*|u|^2)",
+    "energy_budget": "sum_k n_k*e_k(t_ref)<=E_star; n_k>=0 diagonal Gaussian, all modes retained",
+    "t_ref": "17/8",
+    "energy_derivative_basis": [
+      "|u_dot|^2",
+      "|u|^2",
+      "k^2*a^-2*|u|^2"
+    ],
+    "e_dot_over_H_a3": [
+      "-3",
+      "3",
+      "1"
+    ],
+    "three_e_minus_derivative_margin": [
+      "6",
+      "0",
+      "2"
+    ],
+    "three_e_plus_derivative_margin": [
+      "0",
+      "6",
+      "4"
+    ],
+    "transport": {
+      "statement": "|e_dot|<=3|H|e, hence e_k(t)<=B e_k(t_ref)",
+      "window": [
+        "2",
+        "9/4"
+      ],
+      "H_abs_upper": "11/10",
+      "max_time_separation_from_reference": "1/8",
+      "B_exponent_upper": "33/80",
+      "B_strict_geometric_upper": "80/47",
+      "B_coarse_strict_upper": 2
+    },
+    "all_mode_covariance": {
+      "z_k": "ell/sqrt(V) * exp(i k.x0) * h_hat(ell*k) * integral chi(s)u_k(tau+ell*s)ds",
+      "variance_increment": "Delta V=2 sum_k n_k |z_k|^2",
+      "Fourier_bound": "|h_hat(q)|<=min(C0,C2*|q|^2)",
+      "mixed_Fourier_bound": "|h_hat(ell*k)|^2<=C0*C2*ell^2*|k|^2",
+      "frequency_ratio": "|k|^2/(a^3*(1+|k|^2/a^2))<=1/a<=1/a_min",
+      "D": "2*B*||chi||_1^2*C0*C2*E_star*ell^4/(V*a_min)",
+      "cross_covariance": "|Delta W(F_i,F_j)|<=sqrt(Delta V_i Delta V_j)<=D for the common scale family",
+      "zero_mode": "h_hat(0)=0; no zero-mode removal from the field",
+      "finite_shell_upgrade": "fixed k shell gives O(E_star*ell^6), while all-mode uniform bound is O(E_star*ell^4)"
+    },
+    "complete_mean_excitation_source": {
+      "energy_density": "0<=Delta rho(t)=sum_k n_k e_k(t)/(V*a(t)^3)<=B*E_star/(V*a_min^3)",
+      "flux": "Euclidean norm of orthonormal-frame Delta T_0i <= Delta rho, including non-even occupation families",
+      "pressure": "every spatial unit-direction pressure obeys |Delta T_vv|<=Delta rho; hence all orthonormal spatial components bounded by Delta rho",
+      "pressure_margins": [
+        "rho-P_v=2[M+(1-r)Q]",
+        "rho+P_v=2[A+rQ], 0<=r<=1"
+      ],
+      "flux_square_margin": [
+        "1",
+        "-2",
+        "1"
+      ],
+      "null_square_margin": [
+        "2",
+        "-4",
+        "2"
+      ],
+      "null": "0<=Delta T_ab k^a k^b<=4*Delta rho*(k^hat0)^2 for null k",
+      "renormalization": "state difference at a common subtraction prescription; not the reference vacuum source",
+      "normality": "mass 1 and the Wronskian imply e_k>=omega_k>=1, so sum n_k<=E_star at t_ref",
+      "Hadamard_scope": "finite energy alone does not imply Hadamard; retain Hadamard-qualified members if that qualification is required"
+    }
+  },
+  "group_2_explicit_bump_and_constants": {
+    "status": "PASS",
+    "b1": "C*exp(-1/(1-s^2)) for |s|<1, zero otherwise, integral b1=1",
+    "normalization_strict_upper": "9",
+    "normalization_argument": "integral[-1/2,1/2] exp(-1/(1-s^2))ds>=exp(-4/3), and exp(4/3)<9",
+    "second_derivative": "b1''=C exp(-v)*(4s^2 v^4-8s^2 v^3-2v^2), v=(1-s^2)^-1",
+    "second_derivative_rational_identity_samples": [
+      {
+        "s": "0",
+        "v": "1",
+        "b_second_over_b": "-2"
+      },
+      {
+        "s": "1/4",
+        "v": "16/15",
+        "b_second_over_b": "-129536/50625"
+      },
+      {
+        "s": "1/2",
+        "v": "4/3",
+        "b_second_over_b": "-416/81"
+      },
+      {
+        "s": "3/4",
+        "v": "16/7",
+        "b_second_over_b": "-6656/2401"
+      }
+    ],
+    "sup_abs_second_derivative_over_C_strict_upper": "93",
+    "b1_second_derivative_L1_strict_upper": "1674",
+    "spatial_base": "b(x)=b1(x1)b1(x2)b1(x3), normalized and nonnegative",
+    "h": "partial_1^2 b - partial_2^2 b",
+    "moments": "integral h=0 and integral x_i h=0 by compact-support integration by parts",
+    "C0_L1_strict_upper": "3348",
+    "C2_Fourier_bound": "1",
+    "C2_qualification": "Fourier identity h_hat(q)=(q2^2-q1^2)b_hat(q), |b_hat|<=1; this is NOT a claim that the Taylor second-moment integral equals 1",
+    "chi": "b1, with L1 norm 1",
+    "D_strict_coefficient_over_E_star_ell4": "1674/125",
+    "D_coarse_strict_coefficient_over_E_star_ell4": 14,
+    "no_numerical_quadrature": true
+  },
+  "group_3_bounded_Dyson_and_nonempty_finite_budget": {
+    "status": "PASS",
+    "bounded_test_generator": "lambda*c(tau)*M(tau) tensor cos(Phi(F_tau,ell)), ||M(tau)||<=1",
+    "test_probe_scope": "norm-convergent bounded Dyson test; not an autonomous instantaneous implementation of time-smeared fields in the original mother action",
+    "common_CCR": "Weyl product phase is state-independent and equal for both compared states",
+    "single_word_difference": "at r field-cos letters, absolute expectation difference <=r^2 D/2",
+    "Dyson_integrated_strength": "L=integral |lambda*c(tau)|dtau, independent of smear-internal chi",
+    "all_order_identity": "sum_{n,m>=0} ((n+m)^2/2)*L^(n+m)/(n!m!) = L*(1+2L)*exp(2L)",
+    "exact_identity_coefficient_checks": [
+      {
+        "r": 0,
+        "combined_coefficient": "0"
+      },
+      {
+        "r": 1,
+        "combined_coefficient": "1"
+      },
+      {
+        "r": 2,
+        "combined_coefficient": "4"
+      },
+      {
+        "r": 3,
+        "combined_coefficient": "6"
+      },
+      {
+        "r": 4,
+        "combined_coefficient": "16/3"
+      },
+      {
+        "r": 5,
+        "combined_coefficient": "10/3"
+      },
+      {
+        "r": 6,
+        "combined_coefficient": "8/5"
+      },
+      {
+        "r": 7,
+        "combined_coefficient": "28/45"
+      },
+      {
+        "r": 8,
+        "combined_coefficient": "64/315"
+      },
+      {
+        "r": 9,
+        "combined_coefficient": "2/35"
+      },
+      {
+        "r": 10,
+        "combined_coefficient": "8/567"
+      },
+      {
+        "r": 11,
+        "combined_coefficient": "44/14175"
+      },
+      {
+        "r": 12,
+        "combined_coefficient": "32/51975"
+      },
+      {
+        "r": 13,
+        "combined_coefficient": "52/467775"
+      },
+      {
+        "r": 14,
+        "combined_coefficient": "16/868725"
+      },
+      {
+        "r": 15,
+        "combined_coefficient": "8/2837835"
+      },
+      {
+        "r": 16,
+        "combined_coefficient": "256/638512875"
+      },
+      {
+        "r": 17,
+        "combined_coefficient": "34/638512875"
+      },
+      {
+        "r": 18,
+        "combined_coefficient": "8/1206079875"
+      },
+      {
+        "r": 19,
+        "combined_coefficient": "76/97692469875"
+      },
+      {
+        "r": 20,
+        "combined_coefficient": "32/371231385525"
+      }
+    ],
+    "all_order_proof": "binomial factorial identity and r^2=r+r(r-1); differentiate exp(2L)",
+    "fixed_probe_envelope": "c(tau)=32*b1(32*(tau-17/8)), ||c||1=1",
+    "lambda_and_L": "1/8",
+    "exp_two_L_strict_upper": "4/3",
+    "Dyson_factor_strict_upper": "5/24",
+    "probability_strict_coefficient_over_E_star_ell4": "279/100",
+    "using_coarse_D_probability_coefficient": "35/12",
+    "reported_probability_strict_coefficient": 3,
+    "finite_nonempty_contract": {
+      "E_star": "1",
+      "ell": "1/16",
+      "tau_center": "17/8",
+      "tau_radius": "1/32",
+      "all_field_time_support_envelope": [
+        "65/32",
+        "71/32"
+      ],
+      "field_time_support_strictly_inside_hold": true,
+      "spatial_support": "translated cube of side 2 ell on the period-10 torus; fixed patch chosen without wrap",
+      "added_variance_strict_upper": "7/32768",
+      "probe_probability_error_strict_upper": "3/65536",
+      "requested_probability_budget": "1/10000",
+      "excitation_energy_density_strict_upper": "1/500",
+      "orthonormal_flux_and_each_pressure_component": "bounded by the same Delta rho",
+      "null_source_strict_upper_over_khat0_squared": "1/125",
+      "nonvacuum_members_exist": "any finite-mode Gaussian occupation with 0<n_k<E_star/e_k(t_ref); no infinite energy required"
+    },
+    "finite_shell_interpretation": "For fixed shell and fixed gain, nonzero fixed probability separation under this shrinking menu requires growing energy at least of order ell^-6; a baseline-normalized effect additionally needs a baseline-variance lower bound."
+  },
+  "new_adopted_axioms": 0,
+  "scope": {
+    "all_nonnegative_diagonal_occupation_modes_retained": true,
+    "finite_energy_alone_implies_Hadamard": false,
+    "all_TR_states_covered": false,
+    "reference_baseline_or_KMS_selected": false,
+    "reference_renormalized_source_included_in_excitation_bound": false,
+    "original_classical_geometry_automatically_self_consistent": false,
+    "actual_autonomous_probe_preparation_or_record_certified": false,
+    "microscopic_continuity_or_minimal_length_inferred": false,
+    "ODE_reintegrated": false,
+    "QFT_UV_truncated": false
+  },
+  "net_result": "A common finite energy bound uniformly controls local covariance, bounded finite-coupling test probabilities, and the complete mean excitation source in the declared Gaussian family, with an explicit nonempty finite menu; no unique physical reference or complete gravity claim."
+}

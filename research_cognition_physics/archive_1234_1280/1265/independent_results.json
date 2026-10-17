@@ -1,0 +1,84 @@
+{
+  "round": 1265,
+  "verdict": "PASS_INDEPENDENT_FINITE_PROFILE_CONSTRAINT_DELETION",
+  "independent_groups": 1,
+  "code_sha256": "cda60bb8d39b265ed709b225e1fb4d61fd321d569f156d2900fd608079d743c2",
+  "old_source_sha256": {
+    "../1253/proof.md": "422c736a1c3d65671fcef1795cc889e44514516344510048be7c8240acc29161",
+    "../1264/source_proof.md": "ae5f0e49a8d47adf1256d5d6ffa701a5e154da802e97bfb7ffb31535cc56f62d",
+    "../1264/source_results.json": "008252c273b1a5f02d62f7205abe27eeaf9707eb628e875e37e670541accdb1a"
+  },
+  "group": {
+    "exact_general_static_metric_jet_Einstein_tensor": {
+      "00": {
+        "a1*a1": "-1",
+        "a2*a2": "-1",
+        "a3*a3": "-1",
+        "h11": "-2",
+        "h22": "-2",
+        "h33": "-2"
+      },
+      "01": {},
+      "02": {},
+      "03": {},
+      "11": {
+        "a1*a1": "3",
+        "a2*a2": "1",
+        "a3*a3": "1",
+        "h22": "2",
+        "h33": "2"
+      },
+      "12": {
+        "a1*a2": "2",
+        "h12": "-2"
+      },
+      "13": {
+        "a1*a3": "2",
+        "h13": "-2"
+      },
+      "22": {
+        "a1*a1": "1",
+        "a2*a2": "3",
+        "a3*a3": "1",
+        "h11": "2",
+        "h33": "2"
+      },
+      "23": {
+        "a2*a3": "2",
+        "h23": "-2"
+      },
+      "33": {
+        "a1*a1": "1",
+        "a2*a2": "1",
+        "a3*a3": "3",
+        "h11": "2",
+        "h22": "2"
+      }
+    },
+    "same_positive_source_and_weight_bound": {
+      "source_quadratic_form": "|dt q|^2+sum_i |di q|^2+exp(2 omega)|M q|^2 >=0",
+      "source_range": "same static-vacuum normal ordering, one-particle density matrices and arbitrary passive reference; not general renormalized states",
+      "Einstein_component": "G00-kappa<T00>, kappa>0, Lambda=0, static metric",
+      "test_weight": "w=f_(2R)*(1-f_R), nonnegative compact support <=4R; not a certified instrument",
+      "int_w_Delta_f_coefficient": "1",
+      "capacity_I_over_pi_R_lower": "8",
+      "weight_volume_over_pi_R3_upper": "256/3",
+      "residual_linear_coefficient": "3/16",
+      "constant_weight_quadratic_coefficient": "3/32",
+      "L": 19100606975,
+      "R": 38201213950,
+      "r": "1/10000",
+      "lambda_strict_lower": "1/10001",
+      "normalized_negative_residual_magnitude_strict_lower": "3/233516588884543995193640000",
+      "bound_display_only": 1.284705302664073e-26,
+      "tolerance_examples": {
+        "strictly_rejected_example": "3/467033177769087990387280000",
+        "not_rejected_by_this_bound_alone_example": "3/116758294442271997596820000"
+      },
+      "metric_and_source_joint_error_deletion": "eta_geometry+kappa*eta_source < lower_bound excludes the nominated self-source matching only",
+      "large_R_gap_scales_as_R_minus_2": true,
+      "record_probability_budget_is_not_constraint_residual_budget": true
+    }
+  },
+  "scope": "excludes exact self-source completion of the inherited compact static conformal profile in the specified Einstein/KG class; no cognitive no-go or actual detector or complete GR claim"
+}

@@ -1,0 +1,168 @@
+{
+  "round": 1259,
+  "status": "PASS",
+  "author_groups": 3,
+  "source_sha256": {
+    "archive_1234_/1259/proof.md": "e02a7aee2983f8b1b5c06594a27a0d4fa2f0e13f7f6fdbb3a6150b06c4393ae0",
+    "archive_1234_/1247/proof.md": "f3a79f8f43aa235d2fa13cc87a232e2b64643fc1bade375bfee96c204ab4bf3d",
+    "archive_1234_/1249/canonical.md": "6f7e4417dc96ee8062111cb4778e8e093257c7248916fedbce5db39eeb3cd989",
+    "archive_1234_/1255/proof.md": "56f27597fcd425044bc1cfed968ace8566c6f7526451114e83909afc2f2a0952",
+    "archive_1234_/_admission/local_terminal_task_contract_after1256.md": "67b132f7df203702ffeb0ea0ec42510424bd7debcd6719f3ec6a32257b5ee487",
+    "archive_1234_/_admission/finite_terminal_geometry_gate_after1256.md": "a5c8bf8fc75faddf0cc7a65de9c709205cce3909a517c6103095910ff0dc2878",
+    "archive_1234_/_admission/local_collective_record_connection_after1251.md": "b04e98e68ab2c5093b6b102e5664b101b537120160f4879473dec73ce7c2d844"
+  },
+  "code_sha256": "b3e0cff89dba5f904b14e03a2af3ee8392911d7abec88200bc436b100eb12012",
+  "numeric_comparison": {
+    "absolute_tolerance": 5e-12,
+    "relative_tolerance": 1e-11
+  },
+  "gate_data_reference": {
+    "status": "PASS",
+    "intervals": [
+      [
+        "15/16",
+        "17/16"
+      ],
+      [
+        "31/16",
+        "33/16"
+      ],
+      [
+        "79/16",
+        "81/16"
+      ],
+      [
+        "95/16",
+        "97/16"
+      ],
+      [
+        "143/16",
+        "145/16"
+      ],
+      [
+        "159/16",
+        "161/16"
+      ]
+    ],
+    "represented_input_dimension": 16,
+    "output_dimension": 48,
+    "reference_dimension": 16,
+    "flag_columns": [
+      [
+        1.0,
+        0.0,
+        6.123233995736766e-17
+      ],
+      [
+        0.0,
+        1.0,
+        6.123233995736766e-17
+      ],
+      [
+        0.5877852522924731,
+        0.0,
+        0.8090169943749475
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "generator_norm": 1.5707963267948966,
+    "unitary_error": 4.888314961915773e-16,
+    "isometry_error": 4.440892098500626e-16,
+    "all_kraus_error": 2.220446049250313e-16,
+    "column_error": 2.231687133607212e-16,
+    "inverse_recovery_error": 4.463374267214424e-16,
+    "data_reference_marginal_error": 1.1102230246251565e-16,
+    "decoded_B_commutator": 0.0,
+    "bare_B_commutator": 12.566370614359174
+  },
+  "pulse_same_source": {
+    "status": "PASS",
+    "pulse_polynomial_u": [
+      "0",
+      "0",
+      "0",
+      "140",
+      "-420",
+      "420",
+      "-140"
+    ],
+    "pulse_area": "1",
+    "endpoint_C2_jets_zero": true,
+    "duration": "1/128",
+    "maximum_g": "280",
+    "interaction_mass_coefficients": [
+      "0",
+      "0",
+      "0",
+      "945039879/15625000000",
+      "-2835119637/15625000000",
+      "2835119637/15625000000",
+      "-945039879/15625000000"
+    ],
+    "J_compensation_coefficients": [
+      "0",
+      "0",
+      "0",
+      "-945039879/15625000000",
+      "2835119637/15625000000",
+      "-2835119637/15625000000",
+      "945039879/15625000000"
+    ],
+    "total_mass_change_polynomial": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "source_identity": "T_c=nu_c*M_total*U_c*U_c, from same worldline action",
+    "H0_G_commutator": 0.0,
+    "Jin_G_commutator": 0.0,
+    "finite_mass_identity_error": 0.0,
+    "clock_scope": "finite internal-time contract; no full quantum-clock preparation or constraint theorem"
+  },
+  "finite_resources_and_deletion": {
+    "status": "PASS",
+    "n": "1",
+    "hbar": "1",
+    "physical_scale": "200000",
+    "cell_volume": "1000/135005697",
+    "epsilon": "135005697/40000000000000",
+    "gate_time": "1/128",
+    "flag_time": "1/128",
+    "maximum_g": "280",
+    "generator_strict_upper": "11/7",
+    "interaction_strict_upper": "1485062667/1000000000000",
+    "interaction_upper_target": "3/2000",
+    "input_J_floor": "1/100",
+    "remaining_J_strict_lower": "8514937333/1000000000000",
+    "J_lower_target": "17/2000",
+    "processing_time": "1/64",
+    "travel_strict_upper": "35/342",
+    "access_strict_upper": "1291/10944",
+    "access_margin": "77/10944",
+    "latest_finish_strict_upper": "24205/10944",
+    "deletion_correct_probability": [
+      0.9999999999999996,
+      0.0,
+      4.249867503421168e-33
+    ],
+    "deletion_nonblank_probability": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "deletion_TV": 0.9999999999999998,
+    "comparator_delta": "1/10000",
+    "projection_trace_distance": 0.010000000000000002,
+    "measured_delta_TV": 9.999999999999449e-05,
+    "conservative_blank_error": "1/50",
+    "scope": "conditional finite block, no 513^3 grid or inherited local-K classification certificate"
+  }
+}

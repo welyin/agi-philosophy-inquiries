@@ -1,0 +1,170 @@
+{
+  "verdict": "PASS_AUTHOR_FINITE_COMMON_RESPONSE",
+  "author_groups": 1,
+  "parameters": {
+    "T": "1/8",
+    "couplings": "Delta=lambda=kappa=Omega=1",
+    "epsilon": "3/20",
+    "nu": "7/20",
+    "V": 274625,
+    "ell": "16/65",
+    "copies": "10^600000",
+    "order": 64
+  },
+  "exact_taylor": {
+    "coefficient_sha256": "0c8b4f2fa9e50f05640801306e45fa0203e54d21a8d017467cb0a52dbaa774c0",
+    "majorant_coefficient_bound": "abs(a_n)<=4^n",
+    "endpoint_tail_bound": "2^-64",
+    "integral_tail_bound": "2^-67",
+    "norm_and_energy_coefficients_through_order": 64,
+    "exchange_induced_gz_t4_coefficient": "-1/10",
+    "I_gz": [
+      {
+        "lower": "12168085267362784343/62500000000000000000000",
+        "upper": "194689364277804563041/1000000000000000000000000",
+        "decimal_midpoint": 0.00019468936427780457
+      },
+      {
+        "lower": "38816205796262501313/200000000000000000000000",
+        "upper": "97040514490656260059/500000000000000000000000",
+        "decimal_midpoint": 0.00019408102898131252
+      }
+    ],
+    "tau": [
+      {
+        "lower": "125029203404641670682423/1000000000000000000000000",
+        "upper": "125029203404641670684457/1000000000000000000000000",
+        "decimal_midpoint": 0.12502920340464166
+      },
+      {
+        "lower": "7814319509646699804749/62500000000000000000000",
+        "upper": "62514556077173598439009/500000000000000000000000",
+        "decimal_midpoint": 0.1250291121543472
+      }
+    ],
+    "xi": [
+      {
+        "lower": "195418970746089424363/1562500000000000000000",
+        "upper": "25013628255499446319413/200000000000000000000000",
+        "decimal_midpoint": 0.12506814127749724
+      },
+      {
+        "lower": "125067928360143459377297/1000000000000000000000000",
+        "upper": "62533964180071729691021/500000000000000000000000",
+        "decimal_midpoint": 0.12506792836014347
+      }
+    ],
+    "relative_transport_difference": {
+      "lower": "-3802095603075353/31250000000000000000000",
+      "upper": "-60833529649202937/500000000000000000000000",
+      "decimal_midpoint": -1.2166705929840857e-07
+    },
+    "ideal_relative_gap_strict_lower": "1/10000000",
+    "mean_field_energy_A_gain": {
+      "lower": "2331568343418244792243/1000000000000000000000000",
+      "upper": "18652546747345958403/8000000000000000000000",
+      "decimal_midpoint": 0.002331568343418245
+    },
+    "actual_energy_A_gain_strict_lower": "1/500"
+  },
+  "finite_resources": {
+    "w": 549250,
+    "L_probe": "227026995/32",
+    "six_w_T": "823875/2",
+    "sqrt_K_lower": "2^900000",
+    "eta_P_upper_power_of_two": -76102,
+    "used_eta_P": "1/1000000000000",
+    "new_uniform_preparation_instrument_contract": "1/10000000000",
+    "full_BG_kept": true,
+    "unknown_probe_R_uniform": true
+  },
+  "finite_ports": {
+    "k_lattice": {
+      "lower": "392087803715217659787139/1000000000000000000000000",
+      "upper": "19604390185760882989357/50000000000000000000000",
+      "decimal_midpoint": 0.3920878037152177
+    },
+    "p_clock": [
+      {
+        "lower": "256250808692524131919637/500000000000000000000000",
+        "upper": "256250808692524131919739/500000000000000000000000",
+        "decimal_midpoint": 0.5125016173850483
+      },
+      {
+        "lower": "512501608262871569989191/1000000000000000000000000",
+        "upper": "102500321652574313997879/200000000000000000000000",
+        "decimal_midpoint": 0.5125016082628716
+      }
+    ],
+    "p_position": [
+      {
+        "lower": "256127255217425884167453/500000000000000000000000",
+        "upper": "128063627608712942083843/250000000000000000000000",
+        "decimal_midpoint": 0.5122545104348518
+      },
+      {
+        "lower": "512254489589365980403551/1000000000000000000000000",
+        "upper": "32015905599335373775251/62500000000000000000000",
+        "decimal_midpoint": 0.512254489589366
+      }
+    ],
+    "inverse_Lipschitz_clock": 11,
+    "inverse_Lipschitz_position": 14,
+    "pair_transport_error": "101/20000000000",
+    "actual_relative_gap_lower_from_certificate": {
+      "lower": "58308529649202937/500000000000000000000000",
+      "upper": "932936474387247/8000000000000000000000",
+      "decimal_midpoint": 1.1661705929840588e-07
+    },
+    "published_actual_relative_gap_strict_lower": "9/100000000",
+    "continuum_lattice_error_used": false,
+    "baseline_dxi_dtau_upper": "27/17",
+    "same_clock_curve_gap_ideal_lower": {
+      "lower": "13598083098057127/200000000000000000000000",
+      "upper": "16997603872571409/250000000000000000000000",
+      "decimal_midpoint": 6.799041549028563e-08
+    },
+    "same_clock_curve_pair_error": "10807/1700000000000",
+    "same_clock_curve_gap_actual_lower": {
+      "lower": "61633356666756223/1000000000000000000000000",
+      "upper": "481510598959033/7812500000000000000000",
+      "decimal_midpoint": 6.163335666675623e-08
+    },
+    "published_same_clock_curve_gap_strict_lower": "1/25000000"
+  },
+  "matrix_diagnostic": {
+    "0": {
+      "hermitian_defect": 0.0,
+      "local_total_excitation_commutator": 0.0,
+      "initial_total_energy": -0.6999999999999998,
+      "initial_exchange_energy": 0.0,
+      "initial_reciprocal_energy": -3.469446951953614e-18,
+      "current_A_operator_nonzero": false
+    },
+    "1": {
+      "hermitian_defect": 0.0,
+      "local_total_excitation_commutator": 0.0,
+      "initial_total_energy": -0.6999999999999998,
+      "initial_exchange_energy": 0.0,
+      "initial_reciprocal_energy": -3.469446951953614e-18,
+      "current_A_operator_nonzero": true
+    }
+  },
+  "scope": {
+    "new_quantitative_material_input": true,
+    "different_registered_program_values": true,
+    "same_other_initial_resources": true,
+    "instrument_contract_constructed": false,
+    "full_Hilbert_GR_source_certified": false,
+    "Jacobian_or_horizon_thermal_identity": false,
+    "stable_reference_recovery_certified": false,
+    "old_1175_or_1272_numerical_certificate_reused": false
+  },
+  "source_bindings": {
+    "fixed_spec.md": "62c297155464fb9aaf714f6004fd767b4487c6a7ae61f7751d1140ce41b048d9",
+    "proof.md": "af075d52ac95cdd319536b9b46d900b2d74f014d563c2038fa9e06785cfe578e",
+    "admission.md": "07b87b9f06c82b33692b7da138306c3541ce032aa9eed2af2e2ff79ad7ced1a7",
+    "source_baseline.json": "46264b2d1b569fa5484893993e2c5194241195177fb27d4ed0f0244693787cde",
+    "check.py": "02faf48f559b715c7fdcdd0a4beac564b57c78cdd45b81fac85b7b80007bbad9"
+  }
+}

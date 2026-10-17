@@ -1,0 +1,174 @@
+{
+  "round": 1248,
+  "status": "PASS",
+  "scientific_groups": 2,
+  "group_1_exact_interpolation_and_noise": {
+    "status": "PASS",
+    "nodes": 129,
+    "mesh": {
+      "exact": "1/512",
+      "decimal": 0.001953125
+    },
+    "normalization": {
+      "exact": "1",
+      "decimal": 1.0
+    },
+    "derivative_hat_l1": {
+      "exact": "6052065/16384",
+      "decimal": 369.38873291015625
+    },
+    "continuous_derivative_l1_exact": "640*sqrt(3)/3",
+    "continuous_derivative_l1_strict_upper": {
+      "exact": "384",
+      "decimal": 384.0
+    },
+    "b_noise": {
+      "exact": "307500001/5000000000000000",
+      "decimal": 6.15000002e-08
+    },
+    "E_full": {
+      "exact": "15723496953141/80000000000000000",
+      "decimal": 0.0001965437119142625
+    },
+    "E_omitted": {
+      "exact": "63046607703189/320000000000000000",
+      "decimal": 0.00019702064907246562
+    },
+    "fixed_noise_floor": {
+      "exact": "19507500001/5000000000000000",
+      "decimal": 3.9015000002e-06
+    },
+    "weights_sha256": "18439a1fe212adfe0edd9b1c9bed9ee5e54dfea5e991841ad47334c64ac95c62",
+    "scope": "Exact finite-element integration weights and conditional error bounds; not sampled observations."
+  },
+  "group_2_inherited_domain_full_source_and_deletion": {
+    "status": "PASS",
+    "inherited_endpoint_checks": [
+      {
+        "alpha": "alpha0",
+        "rho_upper": {
+          "exact": "35420009305410314445232547139307/488281250000000000000000000000000",
+          "decimal": 0.07254017905748032
+        },
+        "u_lower": {
+          "exact": "374424419648637344850342255585602723/1000000000000000000000000000000000000",
+          "decimal": 0.3744244196486373
+        },
+        "K_absolute_upper": {
+          "exact": "1135163160216176741791591104097279/500000000000000000000000000000000000",
+          "decimal": 0.0022703263204323534
+        }
+      },
+      {
+        "alpha": "alpha1",
+        "rho_upper": {
+          "exact": "7256289896353884791307918305721551/100000000000000000000000000000000000",
+          "decimal": 0.07256289896353885
+        },
+        "u_lower": {
+          "exact": "374433995592595869902044260917623393/1000000000000000000000000000000000000",
+          "decimal": 0.3744339955925959
+        },
+        "K_absolute_upper": {
+          "exact": "35472832320341759234720922204987/15625000000000000000000000000000000",
+          "decimal": 0.0022702612685018726
+        }
+      }
+    ],
+    "hold_u_lower": {
+      "exact": "69751/200000",
+      "decimal": 0.348755
+    },
+    "chain_rule_upper_bounds_before_relaxation": {
+      "v_prime": {
+        "exact": "186559/256000",
+        "decimal": 0.72874609375
+      },
+      "V_prime": {
+        "exact": "181/250",
+        "decimal": 0.724
+      },
+      "v_second": {
+        "exact": "819481/640000",
+        "decimal": 1.2804390625
+      },
+      "V_second": {
+        "exact": "511/400",
+        "decimal": 1.2775
+      },
+      "rod_prime": {
+        "exact": "6021/400000",
+        "decimal": 0.0150525
+      },
+      "rod_second": {
+        "exact": "1891557/80000000",
+        "decimal": 0.0236444625
+      },
+      "pressure_prime": {
+        "exact": "347/375",
+        "decimal": 0.9253333333333333
+      },
+      "pressure_second": {
+        "exact": "619/200",
+        "decimal": 3.095
+      },
+      "rho_prime": {
+        "exact": "243/2000",
+        "decimal": 0.1215
+      },
+      "rho_second": {
+        "exact": "81/80",
+        "decimal": 1.0125
+      },
+      "a_second": {
+        "exact": "8937/10000",
+        "decimal": 0.8937
+      },
+      "b_second": {
+        "exact": "3069/160",
+        "decimal": 19.18125
+      },
+      "omitted_term_second": {
+        "exact": "6281/10000000",
+        "decimal": 0.0006281
+      }
+    },
+    "subtraction_readout_error_upper": {
+      "exact": "119232000005579999973/20479999769600000863999998920000",
+      "decimal": 5.821875065768555e-12
+    },
+    "subtraction_error_allowance": {
+      "exact": "1/10000000000",
+      "decimal": 1e-10
+    },
+    "source_gap_strict_lower": {
+      "exact": "1/1800",
+      "decimal": 0.0005555555555555556
+    },
+    "E_full_plus_E_omitted": {
+      "exact": "125940595515753/320000000000000000",
+      "decimal": 0.00039356436098672814
+    },
+    "separation_margin_strict_lower": {
+      "exact": "466534640358223/2880000000000000000",
+      "decimal": 0.00016199119456882744
+    },
+    "scope": "One weak acceleration test; omission changes the bookkeeping, not the solution. Initial constraints and full equations are not reconstructed from this test."
+  },
+  "author_result_crosscheck": "All 258 rational weights, both budgets and separation margin agree after independent derivation.",
+  "source_sha256": {
+    "admission.md": "48d650025adf9bb1374ea78eb1840395d4512d5627459e4ef68401c51fe4e1ee",
+    "proof.md": "649561632e352c3aa07bf1e75f57edb754b06453e3c53a4b39c564cf5b51f559",
+    "check.py": "69446a470fb0f426f8778bf6813121f936dcd51bdc5a3a6fc608cf88bca96a79",
+    "results.json": "cf61f5d9efc1208541dca163071b106489750fa7cb142ca165d81561f3ac3943",
+    "NEXT.md": "d887a7d84b0f5179ab2247ac2de60b49a9ff19db56b208c65fb28f40658f0da9",
+    "report": "8d72510a43b17c02cbc48bc9bb7fb0eca3df12433dd2e3c6d395238b010cc2f6",
+    "1247/proof.md": "f3a79f8f43aa235d2fa13cc87a232e2b64643fc1bade375bfee96c204ab4bf3d",
+    "1247/results.json": "dbcd590e7816bc423c49a4e1bf83bab6fa50a84dd5578249cc493a15cd72bf06",
+    "independent_check.py": "01a204afbb74759e779ec547e9b74f05dec1e3186a0757f36a19bce4ad06a9cf"
+  },
+  "CT_adopted": false,
+  "new_menu_implemented": false,
+  "whole_GR_completed": false,
+  "method": "Independent Fraction polynomial integration, chain-rule bounds and inherited endpoint checks; no author code import and no repeated 0--2 integration."
+}

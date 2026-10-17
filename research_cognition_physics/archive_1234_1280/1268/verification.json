@@ -1,0 +1,79 @@
+{
+  "schema": "gr_response_round_verification_v1",
+  "round": 1268,
+  "date": "2026-10-16",
+  "status": "PASS_WITH_SCOPE",
+  "actual_commands": [
+    {
+      "path": "1268/material_check.py",
+      "execution_chunk": "bef395",
+      "exit_code": 0,
+      "code_sha256": "d8bffd6946e8a4a591ed3e0082d19bd029f63f4174d661b31b845e0230f543b4",
+      "stdout": "PASS_AUTHOR_WITH_SCOPE READ_ONLY_MATCH\r\nauthor_groups=1\r\ndynamic mass-reader negative longitudinal branch: exact polynomial sign\r\nequal homogeneous h/rho/P, different density and shear response\r\nfinite frozen example growth<100/99; not an actual task certificate\r\n",
+      "read_only": true,
+      "arguments": [
+        "C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "D:\\workspace\\AGI的哲学思考\\research_cognition_physics\\archive_1234_\\1268\\material_check.py"
+      ],
+      "performed_before_publication": true,
+      "repeated_by_publication": false
+    },
+    {
+      "path": "1268/readout_check.py",
+      "execution_chunk": "90c776",
+      "exit_code": 0,
+      "code_sha256": "d22df0183703cc3610facc238b316ae05840ac598b548b03c3e9d708df0f1231",
+      "stdout": "READ_ONLY_MATCH PASS_AUTHOR_WITH_SCOPE; author_groups=1\r\n{\"B_probability_gap\": 1.729375e-06, \"kappa_probability_gap\": 5.845e-06, \"a_inverse_error\": 6.666666666666667e-06, \"field_prefix_bound\": 7.4000000000555e-05, \"four_task_failure\": 0.0004399493336677551}\r\n",
+      "read_only": true,
+      "arguments": [
+        "C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "D:\\workspace\\AGI的哲学思考\\research_cognition_physics\\archive_1234_\\1268\\readout_check.py"
+      ],
+      "performed_before_publication": true,
+      "repeated_by_publication": false
+    },
+    {
+      "path": "1268/independent_check.py",
+      "execution_chunk": "b0266e",
+      "exit_code": 0,
+      "code_sha256": "3a3257b02e24af48825b5291bf715bb1bda7e1fb7daf33a998bea61cca6a9ee6",
+      "stdout": "READ_ONLY_MATCH_1268 independent_groups=1\r\n",
+      "read_only": true,
+      "arguments": [
+        "C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "D:\\workspace\\AGI的哲学思考\\research_cognition_physics\\archive_1234_\\1268\\independent_check.py"
+      ],
+      "performed_before_publication": true,
+      "repeated_by_publication": false
+    }
+  ],
+  "root_read_proofs_code_results_and_review": true,
+  "science_sha256": {
+    "admission.md": "1e775bef5f87a93fec17e9f79119e793830e6f9e7fb1b1959b67e6c15b1c5d9c",
+    "material_proof.md": "35cfb407da2de28b2769544c7fa6ec62b17d038e95ca245354a0b974948dd1d7",
+    "material_check.py": "d8bffd6946e8a4a591ed3e0082d19bd029f63f4174d661b31b845e0230f543b4",
+    "material_results.json": "faa6132083b95040772cb1a8c541e6f3e992209cb4c469dede18caf32a737cf2",
+    "readout_proof.md": "d604c0ae4981e72b9a1102628a6bdc025ba6cc7df726729f3a072ef54a638f45",
+    "readout_check.py": "d22df0183703cc3610facc238b316ae05840ac598b548b03c3e9d708df0f1231",
+    "readout_results.json": "6b9fa0503c9db96bf8d41847dfd5d6847edaa153da22189b8609a29e2de380e3",
+    "NEXT.md": "f1e12266a08f73f9c1f20fd83247db5c9578f5d9db4c9d51eb34cc0bd40fb29f",
+    "independent_check.py": "3a3257b02e24af48825b5291bf715bb1bda7e1fb7daf33a998bea61cca6a9ee6",
+    "independent_results.json": "04416b0d3d6cd14bd0a421c0da3cd596152c4058f7c227ea866cae6ba896b7dc",
+    "independent_review.md": "24cf99d205d4dadc69a4f6e2f3823f4c2b813182c191f4003b3ab245dbb2ae90",
+    "../research_note_1268.md": "6410d338c26b4d0208c1e252304257e141e5d9b87e91f0be513d64eb4ce2c8a4"
+  },
+  "prior_acceptance_bindings": 359,
+  "prior_distinct_frozen_files": 364,
+  "numerical_scope": "Exact algebra, finite diagnostics and explicit transport of saved certificates; no new full-field simulation or apparatus test.",
+  "CT_user_decision": "unadopted_conjecture",
+  "GR_goal_completed": false
+}

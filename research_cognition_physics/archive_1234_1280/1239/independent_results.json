@@ -1,0 +1,185 @@
+{
+  "round": 1239,
+  "status": "PASS",
+  "independent_scientific_groups": 2,
+  "exact_finite_budget": {
+    "status": "PASS",
+    "fuel": {
+      "fraction": "1/100000",
+      "decimal": 1e-05
+    },
+    "return_h_derivative_bound": {
+      "fraction": "4823/156250",
+      "decimal": 0.0308672
+    },
+    "h_change_bound": {
+      "fraction": "1/160000",
+      "decimal": 6.25e-06
+    },
+    "geometry_error": {
+      "fraction": "4823/25000000000",
+      "decimal": 1.9292e-07
+    },
+    "remaining_contract_input": {
+      "fraction": "1/1250000",
+      "decimal": 8e-07
+    },
+    "total_contract": {
+      "fraction": "24823/25000000000",
+      "decimal": 9.9292e-07
+    },
+    "old_source_gap_lower": {
+      "fraction": "40383498710737/1194393600000000000",
+      "decimal": 3.3810880023751804e-05
+    },
+    "two_source_error": {
+      "fraction": "387859991181329/39062500000000000000",
+      "decimal": 9.929215774242023e-06
+    },
+    "source_margin": {
+      "fraction": "1392778659031410331757/58320000000000000000000000",
+      "decimal": 2.388166424950978e-05
+    },
+    "flat_two_box_error": {
+      "fraction": "167351076431329/19531250000000000000",
+      "decimal": 8.568375113284046e-06
+    },
+    "flat_margin": {
+      "fraction": "8471711423568671/19531250000000000000",
+      "decimal": 0.00043375162488671595
+    },
+    "double_count_initial_constraint_derivative": {
+      "fraction": "-1/225000",
+      "decimal": -4.444444444444444e-06
+    },
+    "missing_receiver_initial_constraint_derivative": {
+      "fraction": "1/225000",
+      "decimal": 4.444444444444444e-06
+    },
+    "instrument_budget_is_assumed_not_manufactured": true
+  },
+  "same_source_Volterra_check": {
+    "status": "PASS",
+    "method": "Volterra/Legendre; no author import",
+    "finite_conversion_rate": 1.0,
+    "finite_end_time": 1.0,
+    "branches": [
+      {
+        "status": "PASS",
+        "E0": 1.0,
+        "degree": 40,
+        "fixed_point_iterations": 3,
+        "fixed_point_residual": 0.0,
+        "pressure_work_residual": 2.2234614865425384e-21,
+        "differentiated_constraint_residual": 1.34781075189494e-13,
+        "receiving_source_residual": 1.5964453473375426e-18,
+        "final_node_fuel": 3.6820373921071185e-06,
+        "final_node_radiation_comoving": 5.002602235655192e-06,
+        "final_node_expansion_work": 1.3153603722376914e-06,
+        "energy_initial": 1.0,
+        "initial_H": 0.6666666666666666,
+        "minimum_E": 0.9999986846396278,
+        "maximum_E": 0.9999999999974147,
+        "ideal_emission_clock_readings": [
+          0.0,
+          0.331,
+          0.728
+        ],
+        "return_times": [
+          0.06120799999880491,
+          0.4049279992472963,
+          0.8158479951833695
+        ],
+        "original_dust_returns": [
+          0.061208,
+          0.404928,
+          0.815848
+        ],
+        "lower_envelope_returns": [
+          0.061207993919985,
+          0.4049279325908961,
+          0.8158478703751934
+        ],
+        "nonzero_geometry_shifts": [
+          1.195085697069942e-12,
+          7.527037326759967e-10,
+          4.8166305388619435e-09
+        ],
+        "D": -0.0004423210468108285,
+        "original_D": -0.0004423200000000238,
+        "nominal_phase_frequency": 1.0,
+        "actual_clock_instrument_certified": false
+      },
+      {
+        "status": "PASS",
+        "E0": 0.8,
+        "degree": 40,
+        "fixed_point_iterations": 3,
+        "fixed_point_residual": 0.0,
+        "pressure_work_residual": 2.964615315390051e-21,
+        "differentiated_constraint_residual": 5.630496069386481e-13,
+        "receiving_source_residual": 2.1785687403380605e-18,
+        "final_node_fuel": 3.6820373921071185e-06,
+        "final_node_radiation_comoving": 5.081834370316684e-06,
+        "final_node_expansion_work": 1.2361282375761998e-06,
+        "energy_initial": 0.8,
+        "initial_H": 0.5962847939999438,
+        "minimum_E": 0.7999987638717625,
+        "maximum_E": 0.7999999999976876,
+        "ideal_emission_clock_readings": [
+          0.0,
+          0.331,
+          0.728
+        ],
+        "return_times": [
+          0.061079712628005794,
+          0.40350028008174366,
+          0.8130937077921501
+        ],
+        "original_dust_returns": [
+          0.061079712629199895,
+          0.4035002808520712,
+          0.813093712826493
+        ],
+        "lower_envelope_returns": [
+          0.061079705840974996,
+          0.403500205016365,
+          0.813093566047289
+        ],
+        "nonzero_geometry_shifts": [
+          1.1941003741355871e-12,
+          7.703275239911989e-10,
+          5.034342942522585e-09
+        ],
+        "D": -0.00036554070698938124,
+        "original_D": -0.0003655396009462353,
+        "nominal_phase_frequency": 1.0,
+        "actual_clock_instrument_certified": false
+      }
+    ],
+    "refinement_errors": [
+      2.220446049250313e-16,
+      0.0
+    ],
+    "source_D_gap": 7.678033982144727e-05,
+    "analytic_certificate_from_energy_comparison_not_numerical_convergence": true,
+    "deleted_source_branch_is_not_a_second_solution_of_the_same_action": true
+  },
+  "CT_adopted": false,
+  "GR_goal_complete": false,
+  "homogeneous_effective_source_only": true,
+  "directional_signal_and_write_recoil_certified": false,
+  "quantum_input_reference_channel_certified": false,
+  "physical_approximation_error_derived": false,
+  "source_sha256": {
+    "archive_1234_/1236/results.json": "95d810e3d7598bfec2b84c9d6852f418bef56e19cbe6224483dbe7dac664ad68",
+    "archive_1234_/1236/proof.md": "b1895da16a8e66676703badf7c6530a7c93422e4445739d78eb301b8f20609bb",
+    "archive_956_989/research_note_964.md": "556c007be8a00aed4e3d393314ba87ed9b93dde073d94b82c9ea92c0071f3a37",
+    "archive_990_1008/research_note_998.md": "6ccae983cf569ebda60fcfe5ed8a6da082e242b5a0aa1645afae92fb551b904e",
+    "archive_1234_/1239/admission.md": "13de4e563f884a0ce91aca3937be665980450ec8b2a551764001a733ee02b820",
+    "archive_1234_/1239/proof.md": "af342a3bb0fcaef0b7d2f8c3c860330ed536a663db28864838ca052c670dcc0f",
+    "archive_1234_/1239/check.py": "df86f073f85f91b9081bc04a2357c17deb97412260803bb51f005e21a800329e",
+    "archive_1234_/1239/results.json": "3f3cd8f24bf1249a61b5969fef911b42f91ba3fa2196da8c761464716c6614fc",
+    "archive_1234_/1239/NEXT.md": "1f162e4ae718b8f81ee7b74c6c6ab011e10a8909c59f0b2040eb17d5d62268e1"
+  }
+}

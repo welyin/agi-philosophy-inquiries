@@ -1,0 +1,48 @@
+{
+  "round": 1269,
+  "verdict": "PASS_INDEPENDENT_WITH_SCOPE",
+  "independent_groups": 1,
+  "source_subcheck": {
+    "fixed_current_metric_diagnostics": 30,
+    "metric_variation": "nprime=n(g+UU):dg_inverse/2 at fixed densitized j",
+    "enthalpy_interaction_coefficient": "0",
+    "pressure_interaction_coefficient": "-1",
+    "cartan_coefficients_match": true,
+    "nonconstant_A_HDA_diagnostics": 2,
+    "lapse_cross_cancellation": true,
+    "omit_J_power_residual": "21/55",
+    "pulse_integral": "1",
+    "pulse_first_moment": "1/2",
+    "max_rod_coefficient_shift_at_eps_2powminus100": "68359375/950737950171172051122527404032",
+    "nonzero_J_end_diagnostic": "1/589824",
+    "scope": "Metric and canonical identities are analytic; finite rational frames only independently diagnose signs. No full PDE or material permission."
+  },
+  "code_subcheck": {
+    "rotor_modes_diagnostic": [
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3
+    ],
+    "code_modes": [
+      1,
+      -1
+    ],
+    "effective_action_parameter": "1/4096",
+    "exact_noncommuting_geometric_intertwining": true,
+    "extra_epsilon_deleted": true,
+    "entangled_reference_instrument_match": true,
+    "sin2phi_is_not_code_projective_readout": true,
+    "scope": "The full rotor has an exact invariant code for P-independent baseline; auxiliary truncation used only to diagnose. No finite CCR claim, no all-rotor positive domain, no local detector/source qualification."
+  },
+  "claims_not_certified": [
+    "full spatial quantum realization",
+    "complete CC",
+    "actual local output",
+    "post-read Einstein residual",
+    "stage closure"
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "status": "PASS_WITH_SCOPE",
+  "date": "2026-10-17",
+  "reviewer": "spatial_parent_next",
+  "formal_research_round_added": false,
+  "formal_scientific_groups_added": 0,
+  "files_sha256": {
+    "猜想/共同治理机制与温度—熵—几何统一猜想.md": "1896538ff61ab08b2ba7f3070c8db1a447967a272b7b520658f7467bd12ccbd8",
+    "research_cognition_physics/archive_1234_/_admission/stable_reference_generation_after1277.md": "919d8c71530a5a505e0dae7c025f2c9b33bedd12277c6a56529b6619a7c43985",
+    "research_cognition_physics/archive_1234_/_admission/stable_reference_generation_after1277_review.md": "229be97798a24b966a2fd1176c2c3009336ba6065b3bd5cbd7c4999cdc83fa3d",
+    "research_cognition_physics/archive_1234_/1272/protocol_proof.md": "d17c2fcdd9132ddda3543011d821b6eec0417b249a7994776cbda7f0de87b205",
+    "research_cognition_physics/archive_1234_/1272/source_proof.md": "62ca94c43b8e6372c98b99bbf56b90064b6954b52c0ed8ae21583a58a62d9177",
+    "research_cognition_physics/archive_1234_/1272/candidate_spec.md": "4e32d1e87a691fdb39e9bdae72f6af654f205cfe6216da4e9a959e4c7397cccc",
+    "research_cognition_physics/archive_1234_/_admission/thermal_reference_selection_after1276.md": "92e192ae96bcaa2bfa4070393d87804fd416015a1838e8ec4fc8a03637dd76b7"
+  },
+  "execution_receipts": [
+    {
+      "chunk_id": "835716",
+      "exit_code": 0,
+      "purpose": "author record and frozen 1272 sources"
+    },
+    {
+      "chunk_id": "43274e",
+      "exit_code": 0,
+      "purpose": "independent exact four-dimensional block and rational bounds"
+    },
+    {
+      "chunk_id": "339bce",
+      "exit_code": 0,
+      "purpose": "final scope corrections, original conjecture and source readback"
+    }
+  ],
+  "independent_verification": {
+    "status": "PASS_EXACT_OLD_RESULT_COROLLARY",
+    "calculation_scope": "4x4 exact Gaussian-rational blocks and rational temporal/error bounds; no 15360-state replay, no new research group",
+    "prepared_AB_diagonal": [
+      "9/20",
+      "3/10",
+      "3/20",
+      "1/10"
+    ],
+    "first_half_AB_diagonal": [
+      "9/20",
+      "9/40",
+      "9/40",
+      "1/10"
+    ],
+    "retained_record_AB_diagonal": [
+      "9/20",
+      "9/40",
+      "9/40",
+      "1/10"
+    ],
+    "retained_record_marginals": [
+      "27/40",
+      "13/40"
+    ],
+    "reversed_record_final_AB_diagonal": [
+      "9/20",
+      "3/20",
+      "3/10",
+      "1/10"
+    ],
+    "beta_c_times_gap": "log(27/13)",
+    "number_covariance": "-9/1600",
+    "nonproduct_thermal_ratio_defect": "9/1600",
+    "unitary_half_squared_is_swap": true,
+    "commutes_with_swap_and_free_energy": true,
+    "arbitrary_remaining_half_angle_invariance": "analytic consequence of the exact commutators, not angle sampling",
+    "local_modular_flow_not_full_swap_flow": "[n_A,I-S_AB] is nonzero, although local K_c is affine in n_A",
+    "common_theta_window": [
+      "209/256",
+      "17/8"
+    ],
+    "physical_time": "tau=s*theta",
+    "window_length": "335/256",
+    "uniform_prefix_error_using_pi_less_22_over_7": "41/1400000000",
+    "prefix_error_margin_below_3e_minus_8": "1/1400000000",
+    "two_program_output_gap_lower": "3749997/50000000",
+    "scope_checks": {
+      "nonselective_reduced_state_only": true,
+      "no_new_intermediate_readout": true,
+      "L2_is_separate_initial_program_not_late_reprogramming": true,
+      "all_records_inventory_and_partners_retained": true,
+      "local_free_modular_identity_not_AB_full_flow": true,
+      "no_attraction_recovery_or_infinite_reuse_claim": true,
+      "no_new_geometry_or_entropy_identity": true
+    }
+  },
+  "replay_source": "from fractions import Fraction as F\nimport json\n\n# Gaussian rational arithmetic; no historical implementation is imported.\ndef c(x=0,y=0): return (F(x),F(y))\ndef add(a,b): return (a[0]+b[0],a[1]+b[1])\ndef mul(a,b): return (a[0]*b[0]-a[1]*b[1],a[0]*b[1]+a[1]*b[0])\ndef conj(a): return (a[0],-a[1])\nzero=c()\ndef mat(fn): return [[fn(i,j) for j in range(4)] for i in range(4)]\ndef mm(A,B):\n    return mat(lambda i,j: sumc(mul(A[i][k],B[k][j]) for k in range(4)))\ndef sumc(xs):\n    z=zero\n    for x in xs: z=add(z,x)\n    return z\ndef dag(A): return mat(lambda i,j:conj(A[j][i]))\ndef sub(A,B): return mat(lambda i,j:add(A[i][j],(-B[i][j][0],-B[i][j][1])))\ndef com(A,B): return sub(mm(A,B),mm(B,A))\ndef iszero(A): return all(x==zero for row in A for x in row)\ndef evolve(V,r): return mm(mm(V,r),dag(V))\ndef dstr(r):\n    assert all(r[i][i][1]==0 for i in range(4))\n    return [str(r[i][i][0]) for i in range(4)]\ndef pop(r,site): return sum(r[i][i][0] for i in range(4) if ((i>>(1-site))&1))\n\nI=mat(lambda i,j:c(int(i==j)))\nperm=[0,2,1,3]\nS=mat(lambda i,j:c(int(i==perm[j])))\nV=mat(lambda i,j:add(mul(c(F(1,2),F(-1,2)),I[i][j]),\n                         mul(c(F(1,2),F(1,2)),S[i][j])))\nr0=mat(lambda i,j:c(F([18,12,6,4][i],40) if i==j else 0))\nrhalf=evolve(V,r0)\nrbar=mat(lambda i,j:rhalf[i][j] if i//2==j//2 else zero)\nexpected=mat(lambda i,j:c(F([18,9,9,4][i],40) if i==j else 0))\nassert iszero(sub(rbar,expected))\nassert iszero(sub(mm(V,V),S))\nassert iszero(sub(mm(V,dag(V)),I))\nnA=mat(lambda i,j:c(i//2 if i==j else 0))\nnB=mat(lambda i,j:c(i%2 if i==j else 0))\nN=mat(lambda i,j:add(nA[i][j],nB[i][j]))\nassert iszero(com(rbar,S)) and iszero(com(rbar,N))\nassert iszero(sub(evolve(V,rbar),rbar))\nrundo=evolve(V,rhalf)\nassert iszero(sub(rundo,evolve(S,r0)))\nassert pop(rbar,0)==pop(rbar,1)==F(13,40)\nassert pop(rundo,0)==F(2,5)\ncov=rbar[3][3][0]-pop(rbar,0)*pop(rbar,1)\nassert cov==F(-9,1600)\nHswap=sub(I,S)\nassert not iszero(com(Hswap,nA))\ngibbs_defect=F(9,40)**2-F(18,40)*F(4,40)\nassert gibbs_defect==F(9,1600)\nlatest5=F(1,2)+F(1,256)+5*F(1,16)\nend=F(17,8)\nassert latest5==F(209,256)\nprefix_bound=(1+9*F(22,7))*F(1,10**9)\npublished=F(3,10**8)\nassert prefix_bound < published\ngap=F(3,40)-2*published\nout={\n\"status\":\"PASS_EXACT_OLD_RESULT_COROLLARY\",\n\"calculation_scope\":\"4x4 exact Gaussian-rational blocks and rational temporal/error bounds; no 15360-state replay, no new research group\",\n\"prepared_AB_diagonal\":dstr(r0),\n\"first_half_AB_diagonal\":dstr(rhalf),\n\"retained_record_AB_diagonal\":dstr(rbar),\n\"retained_record_marginals\":[\"27/40\",\"13/40\"],\n\"reversed_record_final_AB_diagonal\":dstr(rundo),\n\"beta_c_times_gap\":\"log(27/13)\",\n\"number_covariance\":str(cov),\n\"nonproduct_thermal_ratio_defect\":str(gibbs_defect),\n\"unitary_half_squared_is_swap\":True,\n\"commutes_with_swap_and_free_energy\":True,\n\"arbitrary_remaining_half_angle_invariance\":\"analytic consequence of the exact commutators, not angle sampling\",\n\"local_modular_flow_not_full_swap_flow\":\"[n_A,I-S_AB] is nonzero, although local K_c is affine in n_A\",\n\"common_theta_window\":[str(latest5),str(end)],\n\"physical_time\":\"tau=s*theta\",\n\"window_length\":str(end-latest5),\n\"uniform_prefix_error_using_pi_less_22_over_7\":str(prefix_bound),\n\"prefix_error_margin_below_3e_minus_8\":str(published-prefix_bound),\n\"two_program_output_gap_lower\":str(gap),\n\"scope_checks\":{\n\"nonselective_reduced_state_only\":True,\n\"no_new_intermediate_readout\":True,\n\"L2_is_separate_initial_program_not_late_reprogramming\":True,\n\"all_records_inventory_and_partners_retained\":True,\n\"local_free_modular_identity_not_AB_full_flow\":True,\n\"no_attraction_recovery_or_infinite_reuse_claim\":True,\n\"no_new_geometry_or_entropy_identity\":True\n}}\nprint(json.dumps(out,ensure_ascii=False,indent=2))\n"
+}

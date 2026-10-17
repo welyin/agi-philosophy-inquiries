@@ -1,0 +1,66 @@
+{
+  "schema": "gr_response_round_verification_v1",
+  "round": 1265,
+  "date": "2026-10-16",
+  "status": "PASS_WITH_SCOPE",
+  "actual_commands": [
+    {
+      "path": "1265/check.py",
+      "execution_chunk": "1e7e8a",
+      "exit_code": 0,
+      "stdout": "{\r\n  \"status\": \"PASS_AUTHOR_WITH_SCOPE\",\r\n  \"author_groups\": 1,\r\n  \"mode\": \"readonly_match\",\r\n  \"exact_tensor_components\": 16,\r\n  \"strict_residual_lower\": \"3/233516588884543995193640000\",\r\n  \"display_only\": {\r\n    \"constraint_lower\": 1.284705302664073e-26\r\n  }\r\n}\r\n",
+      "code_sha256": "09d624da9e5895d754f663ff5db5f4a47b1c25fcbbb639396aef00fa0907d18d",
+      "arguments": [
+        "C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "D:\\workspace\\AGI的哲学思考\\research_cognition_physics\\archive_1234_\\1265\\check.py"
+      ],
+      "performed_before_publication": true,
+      "repeated_by_publication": false
+    },
+    {
+      "path": "1265/independent_check.py",
+      "execution_chunk": "46b998",
+      "exit_code": 0,
+      "stdout": "READ_ONLY_MATCH_1265_INDEPENDENT 1\r\n",
+      "code_sha256": "cda60bb8d39b265ed709b225e1fb4d61fd321d569f156d2900fd608079d743c2",
+      "arguments": [
+        "C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "D:\\workspace\\AGI的哲学思考\\research_cognition_physics\\archive_1234_\\1265\\independent_check.py"
+      ],
+      "performed_before_publication": true,
+      "repeated_by_publication": false
+    }
+  ],
+  "root_read_proof_code_results_and_independent_review": true,
+  "science_sha256": {
+    "admission.md": "6d32b9699fb230fc1391f8443e606bead4af38f6881b77858af65f1d8fa6fd59",
+    "proof.md": "a602b80abd244a9af5ce401d634ccf020449b0b5321843f70bbe1946bbbf16dc",
+    "check.py": "09d624da9e5895d754f663ff5db5f4a47b1c25fcbbb639396aef00fa0907d18d",
+    "results.json": "edd16786ad3a7c073473199d9e82acf276b3ac19d469a52933c1156db128eeb4",
+    "NEXT.md": "c5df6af0fa19d34611d28c8a5ff9f5a56f49cfbdf25e5b0c9c8caa36e9227410",
+    "independent_check.py": "cda60bb8d39b265ed709b225e1fb4d61fd321d569f156d2900fd608079d743c2",
+    "independent_results.json": "7192e7cd231b255a3de86001b69c70e8b08c47914a21fb224cc0f6c2bd7108b5",
+    "independent_review.md": "a263438580a413e2c8592b8670725df82d6d7513bf096c2989653a37e6547e15",
+    "../research_note_1265.md": "2b03977bc543ecfcb0735892c883c8c62d000f3ffd88acd8cd96978a4c1ec79b"
+  },
+  "prior_acceptance_bindings": 323,
+  "prior_distinct_frozen_files": 328,
+  "analytic_certificate": [
+    "Same static compact conformal metric has G00=-2Delta omega-|grad omega|^2.",
+    "The inherited minimal one-particle static-vacuum-relative source has nonnegative T00, retaining full M and arbitrary references.",
+    "The predeclared finite positive weight yields residual <=-3lambda/(16R^2), strictly below the rational negative bound.",
+    "Exact self-source completion fails in this class; approximate exclusion requires a matching weak residual tolerance below the bound."
+  ],
+  "independent_corrections": [
+    "Limit constraint-generated historical references to1245-1247/1252;1235-1244 include given-background interfaces."
+  ],
+  "numerical_scope": "Exact polynomial tensor identities and rational constants; integral and source positivity rely on the analytic proof, not a detector implementation or QFT simulation.",
+  "CT_user_decision": "unadopted_conjecture",
+  "GR_goal_completed": false
+}

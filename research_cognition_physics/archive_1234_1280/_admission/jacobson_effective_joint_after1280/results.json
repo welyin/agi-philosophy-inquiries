@@ -1,0 +1,48 @@
+{
+  "status": "PASS_EFFECTIVE_BUDGET_ONLY",
+  "bounds": {
+    "B_min": "249001/62500",
+    "B_max_strict": "72",
+    "relative_reference_bound": "591628623/124500500000",
+    "channel_radius": "61/20000",
+    "joint_failure_probability_upper": "3/10000",
+    "one_percent_margin": "462751377/31250000000",
+    "geometry_omission_gap": "1969133/2000000",
+    "thermal_omission_gap": "29584445879/31250000000"
+  },
+  "finite_record": {
+    "codes_per_channel": 2000002,
+    "bits_per_channel": 21,
+    "total_bits": 63
+  },
+  "energy_ledger": {
+    "initial": {
+      "clock_support": "2",
+      "control": "2",
+      "store": "4",
+      "pointer": "1",
+      "record": "1",
+      "outgoing": "0"
+    },
+    "final": {
+      "clock_support": "2",
+      "control": "19/10",
+      "store": "37/10",
+      "pointer": "11/10",
+      "record": "6/5",
+      "outgoing": "1/10"
+    },
+    "sum_each": "10"
+  },
+  "removal_check": {
+    "channel_radius_1_fails_one_percent_certificate": true
+  },
+  "scope": {
+    "new_science_round": false,
+    "new_axiom": false,
+    "microscopic_instrument_proved": false,
+    "source_and_backreaction_bounds_are_effective_inputs": true,
+    "whole_goal_completed": false
+  },
+  "fixed_spec_sha256": "1fbc2b69ff7fd9c1f8c0d35ac7d3c54d75701896070eb0a160f8484e5cce58b2"
+}

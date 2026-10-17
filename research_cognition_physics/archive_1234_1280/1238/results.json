@@ -1,0 +1,120 @@
+{
+  "round": 1238,
+  "status": "PASS",
+  "new_scientific_check_groups": 2,
+  "exact_saved_material_jet": {
+    "status": "PASS",
+    "old_grid_N": 24,
+    "old_time": 0,
+    "point": [
+      0.0,
+      1.5707963267948966,
+      0.7853981633974483
+    ],
+    "jacobian_rows": "h,s,(dh)^2,(ds)^2",
+    "jacobian_columns": "t,x,y,z",
+    "psi": 1.0282068432481242,
+    "inverse_z_X4": -6053.623847408376,
+    "B44": 81918656.15568015,
+    "d_dtX_d_dotgamma_yy": [
+      0.0,
+      0.0,
+      -8.99909610763759e-34,
+      -0.0008586713931688312
+    ],
+    "coefficient_C00_velocity_squared": 60.39998187502437,
+    "coefficient_is_exact_nonzero_rational": true,
+    "rational_check_rows": [
+      {
+        "velocity_label": "-1/50",
+        "C00": 0.02415999275000975,
+        "C0z": -0.2323937145114498,
+        "exact_identity": true
+      },
+      {
+        "velocity_label": "-1/100",
+        "C00": 0.006039998187502438,
+        "C0z": -0.1161968572557249,
+        "exact_identity": true
+      },
+      {
+        "velocity_label": "0",
+        "C00": 0.0,
+        "C0z": 0.0,
+        "exact_identity": true
+      },
+      {
+        "velocity_label": "1/100",
+        "C00": 0.006039998187502438,
+        "C0z": 0.1161968572557249,
+        "exact_identity": true
+      },
+      {
+        "velocity_label": "1/50",
+        "C00": 0.02415999275000975,
+        "C0z": 0.2323937145114498,
+        "exact_identity": true
+      }
+    ],
+    "fixed_B_not_recalibrated": true,
+    "all_saved_spatial_dh_roundoff_retained": true,
+    "continuum_background_error_certified": false
+  },
+  "full_original_Dirac_vertex": {
+    "status": "PASS",
+    "original_selfdual_dimension": 64,
+    "independent_CAR_modes": 32,
+    "nambu_half_weight": 0.5,
+    "all_original_mass_matrices_retained": true,
+    "full_density_tetrad_LC_internal_connection_retained": true,
+    "nonzero_background_connection_is_local_diagnostic": true,
+    "actual_background_LC_jet_claimed": false,
+    "k_is_off_shell_derivative_label_not_preparation": true,
+    "lambda_label": "2/7",
+    "q_label": "3/11",
+    "expected_velocity_squared_k_coefficient": -1.31510158793253,
+    "finite_difference_rows": [
+      {
+        "metric_variation_step": 4e-05,
+        "full_response_k_slopes": [
+          0.043020382662192366,
+          0.04354642329889197,
+          0.043020382662192366
+        ],
+        "velocity_squared_k_coefficient": -1.315101591749003,
+        "absolute_error": 3.816472915474378e-09
+      },
+      {
+        "metric_variation_step": 2e-05,
+        "full_response_k_slopes": [
+          0.04302038263699608,
+          0.04354642327228988,
+          0.04302038263699608
+        ],
+        "velocity_squared_k_coefficient": -1.3151015882345052,
+        "absolute_error": 3.0197511158291945e-10
+      }
+    ],
+    "spin_connection_variation_contraction_error": 5.551115123125783e-17,
+    "density_deleted_coefficient": 2.703466248608899e-10,
+    "nonzero_record_statistic_claimed": false
+  },
+  "historical_source_sha256": {
+    "archive_554_584/research_note_573.md": "b1ec512a8897201dc6c1aa4e1e87277325c141ab321bf65119141366f8bda6e3",
+    "archive_797_818/research_note_802.md": "84736cad5b11e2ea29d5a0adc1af32aae71993c998063ebc4c62fc80366cfe4f",
+    "archive_797_818/802/original_bff_vertex.py": "fc767f5fcb22ed7f14904b5b43680b444058372c95278aa2d320ebe197dcc3d8",
+    "archive_819_853/research_note_847.md": "1383e80835793b0368fad863f690fe5b2ec0cf21443721ad89aac8350fbd914f",
+    "archive_819_853/research_note_852.md": "05419fec194692c6bc4e3223f8d6d9f65416635b476cb520b47b30c34e1c0d3f",
+    "archive_854_872/research_note_860.md": "2680219c34d2bf1e8252415e42c4822d0d06c282b8314a22ff88da4c4ff1b4be",
+    "archive_854_872/research_note_861.md": "f2b5ecb550e2150a7b89b9845967255af2d8876ee88dfa3c360eb9ac56d61475",
+    "archive_894_922/research_note_920.md": "f30fa0ba790ca8c03c8f5f7b617a34ef144039b5d0811cff73a9cd403f85a6be",
+    "archive_894_922/907/material_reference_jets_results.json": "5f02a1f28d6175778f9f4a177a1ad6f8f61774ae0e4c058ab388476f773d2de0",
+    "archive_894_922/900/current_reference_initial_budget_results.json": "c050c8b23d1afded16b80736e79c03c985dab0a4eae97784053e3a8d77131593"
+  },
+  "analytic_scope": "Fixed old off-shell Lagrangian representative; direct CT Legendre inheritance fails.",
+  "canonical_or_integration_by_parts_no_go": false,
+  "finite_EFT_reorganization_excluded": false,
+  "CT_adopted": false,
+  "Einstein_equations_derived": false,
+  "actual_device_or_total_quantum_state_certified": false
+}

@@ -1,0 +1,72 @@
+{
+  "verdict": "PASS_WITH_SCOPE",
+  "independent_bounded_suites": 1,
+  "new_formal_rounds": 0,
+  "new_formal_scientific_groups": 0,
+  "new_adopted_axioms": 0,
+  "exact": {
+    "r_squared_lower": "256000000/1030301",
+    "r_squared_upper": "256000000/970299",
+    "r_upper": "33/2",
+    "f_second_derivative_strict_lower": "-27",
+    "f_second_derivative_strict_upper": "0",
+    "relative_exponent_strict_lower": "-27/200",
+    "g_strict_lower": "173/200",
+    "g_upper": "1",
+    "p0_strict_lower": "173/373",
+    "p0_strict_upper": "200/373",
+    "gap_strict_lower": "34600/213729",
+    "simpler_gap_strict_lower": "21/130",
+    "gap_after_two_1pct_errors_strict_lower": "46/325",
+    "midpoint_probability_error_times_N": "27/692",
+    "reweighted_probability_error_times_N": "27/346",
+    "finite_equal_count_half_grids_obey_same_bound": true
+  },
+  "diagnostics_not_proof": {
+    "method": "80-digit Decimal composite Simpson; Machin pi; double-rationalized exponent",
+    "not_used_as_continuous_proof": true,
+    "rows": [
+      {
+        "panels_per_half": 64,
+        "p0": "0.49984939863470370524816148525181704",
+        "p1": "0.66653278534459669928055668543819241",
+        "gap": "0.16668338670989299403239520018637537"
+      },
+      {
+        "panels_per_half": 128,
+        "p0": "0.49984939863346886775276671465164916",
+        "p1": "0.66653278534349884551134734314890099",
+        "gap": "0.16668338671002997775858062849725182"
+      },
+      {
+        "panels_per_half": 256,
+        "p0": "0.49984939863339169490527168861064420",
+        "p1": "0.66653278534343023364798954945339744",
+        "gap": "0.16668338671003853874271786084275324"
+      }
+    ],
+    "last_two_resolution_max_difference": "7.71728475E-14",
+    "vs_author_512_midpoints_p0_difference": "2.57810205E-10"
+  },
+  "baseline_hashes_matched": 10,
+  "source_sha256": {
+    "README.md": "b8ddfec441f5b75b22e25911eb6ce3d8ba1c1a2cd26a117c5d90a4a2d0609fa3",
+    "proof.md": "a0139025f216ef4586007efd3826963b96f23a1b92e8576a993b71620acc3485",
+    "check.py": "d12240f200752e347f6ea7cbc41dc79b39c752d28aa83693392e72489b232a44",
+    "results.json": "1cc66b1296552be13f23d6452a8c9919190b0cfff7f5217b38df89bcac4409be",
+    "source_baseline.json": "f9aa271bc488b5ab1bd64baebe7ab043ad2cd0c18adf8f593b1104e375b8f6e4"
+  },
+  "independent_code_sha256": "6e856bdb314e6f23cb6ed4354359a4efb0e6daf63caf477e68809f17d0694c17",
+  "scope": {
+    "fixed_mass_window_not_full_ensemble_support": true,
+    "two_explicit_reference_counting_inputs": true,
+    "passive_unitary_transport_not_compared_as_new_physics": true,
+    "area_factor_not_certified_microscopic_degeneracy": true,
+    "EB_only_Gibbs_identity_certified": false,
+    "actual_instrument_or_preparation_certified": false,
+    "non_trace_class_implies_finite_prediction_failure": false,
+    "original_fixed_measure_ambiguous": false,
+    "GR_generated_or_CT_adopted": false,
+    "full_goal_complete": false
+  }
+}

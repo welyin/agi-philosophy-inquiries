@@ -1,0 +1,80 @@
+{
+  "schema": "research_closure_runtime_verification_v1",
+  "date": "2026-10-17",
+  "runner_sha256": "234152cfee80afe97c10df130a5c5578ad5df6d2710d293635c81d45638eaa6a",
+  "cases": [
+    {
+      "name": "closure",
+      "args": [
+        "--verify-closure"
+      ],
+      "cwd": "D:\\workspace\\AGI的哲学思考",
+      "returncode": 0,
+      "elapsed_seconds": 5.109,
+      "stdout": "{\"status\": \"PASS\", \"scope\": \"1234--1280 directory closure only\", \"files\": 1314, \"moved_files\": 1308, \"scientific_python_json_byte_identical\": 678, \"reversible_markdown_files\": 13, \"frozen_support_files\": 141, \"manifest_sha256\": \"494c25aa92ac1aac4edff1b7de2f16dde1ebaf0d9596abea601e656ff1ee1a14\", \"old_directory_absent\": true, \"current_and_original_hashes_verified\": true, \"directory_copy_used\": false, \"zip_used\": false, \"prior_closure_external_edit_not_resolved\": true}\n",
+      "stderr": ""
+    },
+    {
+      "name": "navigation",
+      "args": [
+        "--verify-navigation"
+      ],
+      "cwd": "D:\\workspace\\AGI的哲学思考",
+      "returncode": 0,
+      "elapsed_seconds": 5.938,
+      "stdout": "{\"status\": \"PASS\", \"files\": 4, \"manifest_sha256\": \"5499e70a08f5affa52d722f6bfe82e7bc0a9dc5a565822d136c08fbf36068cd2\", \"closed_boundary_verified\": true, \"original_navigation_recoverable\": true, \"frozen_archives_modified\": false, \"stage_first_round\": 1234}\n",
+      "stderr": ""
+    },
+    {
+      "name": "1280_independent_old_path",
+      "args": [
+        "--script",
+        "research_cognition_physics/archive_1234_/1280/independent_check.py"
+      ],
+      "cwd": "D:\\workspace\\AGI的哲学思考",
+      "returncode": 0,
+      "elapsed_seconds": 8.468,
+      "stdout": "{\"status\": \"PASS_WITH_SCOPE\", \"mode\": \"READ_ONLY_MATCH\", \"groups\": 1, \"bound\": \"591628623/124500500000\", \"diagnostic\": {\"steps\": 8192, \"E\": 6.052923538596655, \"r_minus2\": 0.9999159326221708, \"rprime_minus2\": 0.00016813150898279387, \"eta_minus2\": -2.0000613483535683, \"past_Rosen_zero\": -5949.225113672771, \"B\": 9.078700802079652, \"J\": 9.078802726447947, \"M_eta\": 9.078235145658025, \"C_integral\": 0.00010192436829032519, \"relative_actual_difference\": -5.1291085781776214e-05, \"area_delta\": 0.00016812768833429637, \"Egeom\": -0.000336244578450361, \"sampled_weight_ratio_min\": 0.9998625739877408, \"sampled_weight_ratio_max\": 1.0, \"identity_residuals\": {\"J_minus_B_minus_C\": 4.3783336331482126e-15, \"Raychaudhuri_balance\": 2.4544710881813092e-15}}}\n",
+      "stderr": ""
+    },
+    {
+      "name": "joint_independent_new_path",
+      "args": [
+        "--script",
+        "research_cognition_physics/archive_1234_1280/_admission/jacobson_effective_joint_after1280/independent_check.py"
+      ],
+      "cwd": "D:\\workspace\\AGI的哲学思考",
+      "returncode": 0,
+      "elapsed_seconds": 6.422,
+      "stdout": "{\"status\": \"PASS_WITH_SCOPE\", \"mode\": \"READ_ONLY_MATCH\", \"corner_diagnostics\": 4096, \"geometry_gap\": \"1969133/2000000\", \"thermal_gap\": \"29584445879/31250000000\"}\n",
+      "stderr": ""
+    },
+    {
+      "name": "1234_nested_history",
+      "args": [
+        "--script",
+        "research_cognition_physics/archive_1234_1280/1234/check.py",
+        "--",
+        "--replay-history"
+      ],
+      "cwd": "D:\\workspace\\AGI的哲学思考",
+      "returncode": 0,
+      "elapsed_seconds": 31.781,
+      "stdout": "{\"history_replay\": \"PASS\", \"output\": \"{\\\"status\\\": \\\"PASS\\\", \\\"mode\\\": \\\"READ_ONLY_MATCH\\\", \\\"groups\\\": 4, \\\"source_files\\\": 17, \\\"old_entry_points_replayed\\\": 2, \\\"metric_rank\\\": 10, \\\"metric_reconstruction_error\\\": 6.921797777449666e-15, \\\"GR_hard_deliverables_completed\\\": 0}\"}\n{\"status\": \"PASS_IN_IDEAL_ROLE_EXTENSION_SCOPE\", \"mode\": \"READ_ONLY_MATCH\", \"groups\": 3, \"inherited_checks\": 1, \"sources\": 16, \"complete_dimension\": 288, \"actual_code_thermal_distance_lower_bound\": \"317/320\", \"GR_hard_deliverables_completed\": 0}\n",
+      "stderr": ""
+    },
+    {
+      "name": "1280_cross_cwd",
+      "args": [
+        "--script",
+        "D:\\workspace\\AGI的哲学思考\\research_cognition_physics\\archive_1234_1280\\1280\\check.py"
+      ],
+      "cwd": "D:\\workspace\\AGI的哲学思考\\scripts",
+      "returncode": 0,
+      "elapsed_seconds": 7.547,
+      "stdout": "{\"status\": \"PASS_WITH_SCOPE\", \"mode\": \"READ_ONLY_MATCH\", \"strict_relative_bound\": \"591628623/124500500000\", \"diagnostic_relative_difference\": -5.1291085781776214e-05, \"diagnostic_E\": 6.052923538596656, \"full_goal_completed\": false}\n",
+      "stderr": ""
+    }
+  ],
+  "all_passed": true
+}

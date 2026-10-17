@@ -1,0 +1,92 @@
+{
+  "round": 1269,
+  "part": "same_action_rotor_pointer_code",
+  "status": "PASS_AUTHOR_WITH_SCOPE",
+  "author_groups": 1,
+  "checks": {
+    "same_action_total_momentum_equals_hbar": true,
+    "normalization_is_not_instantaneous_a_cubed": true,
+    "isometry": true,
+    "exact_momentum_code": true,
+    "generator_eta_0.0": true,
+    "propagator_eta_0.0": true,
+    "generator_eta_0.17": true,
+    "propagator_eta_0.17": true,
+    "generator_eta_-0.29": true,
+    "propagator_eta_-0.29": true,
+    "passive_reference_full_state": true,
+    "linear_source_1/3": true,
+    "linear_source_-2/5": true,
+    "projection_plus": true,
+    "projection_minus": true,
+    "projection_outside": true,
+    "effects_complete": true,
+    "exact_code_has_no_outcome_failure": true,
+    "angle_multiplier_compresses_to_half_y": true,
+    "initial_pointer_mean_P_is_zero": true,
+    "inherited_1268_not_recomputed_or_rescaled": true
+  },
+  "numeric_tolerance": 1e-12,
+  "exact_dictionary": {
+    "action_prefactor": "A=V0*s^2",
+    "epsilon": "hbar/A",
+    "P_phys": "-i*epsilon*d/dphi",
+    "code": "m=+1,-1",
+    "total_canonical_momentum_on_code": "+/-hbar",
+    "d": "alpha*g(theta)*P_phys/(3*k^2)",
+    "homogeneous_coupling_on_code": "epsilon*alpha*g*F(Q)*sigma_z",
+    "additional_code_propagation_error": "0",
+    "P_mean_deletion_probability_gap_strict_lower": "1/3",
+    "sin2phi_code_compression": "sigma_y/2",
+    "sin2phi_out_of_code_amplitude": "1/2"
+  },
+  "inherited_not_new_scientific_group": {
+    "full_state_error": "2^-100",
+    "old_bounded_source_error": "2^-90",
+    "new_bounded_source_error": "epsilon*2^(E0+26) < 2^-100",
+    "finite_prediction": {
+      "new_actual_matching_input_per_task": "1/10000000",
+      "statistics_halfwidth": "1/10000000",
+      "independent_repeats_per_task": 500000000000000,
+      "at_most_four_tasks_failure_upper": "59049/134217728",
+      "time_averaging_probability_error": "1/400000000",
+      "probability_to_a2_total_error": "100273143182115802266829452769/495176015714152109959649689600000000",
+      "B_probability_gap_lower": "428172511087830902580734200351/247588007857076054979824844800000000",
+      "B_probability_gap_coarse_strict_lower": "17/10000000",
+      "kappa_endpoint_probability_gap_lower": "1447151905924609541357075827231/247588007857076054979824844800000000",
+      "kappa_endpoint_probability_gap_coarse_strict_lower": "58/10000000",
+      "fixed_inverse_a_error": "1/150000",
+      "parameter_acceptance_bound": "400000000003/6000000000000000",
+      "classical_common_pre_gate_field_residual_bound": "14800000000111/200000000000000000",
+      "field_time_domain": [
+        "0",
+        "199999999/100000000"
+      ]
+    }
+  },
+  "scope": [
+    "Exact intertwiner for arbitrary encoded system-pointer-reference states.",
+    "Old Gaussian approximation retains its own independent-material preparation scope.",
+    "The finite code is physical input; all integer rotor sectors are only a mathematical extension.",
+    "No whole rotor positivity, Gibbs reference, infinite free inventory, or finite-dimensional CCR claim.",
+    "Source variation is independent; its homogeneous linear-P compression preserves the chosen dictionary.",
+    "No local-field-to-collective-rotor quantization or actual local terminal instrument established.",
+    "Actual matching, terminal apparatus source, and post-read spacetime remain separate conditions.",
+    "No new axiom, CT adoption, complete GR, or stage closure."
+  ],
+  "display_only": {
+    "P_mean_deletion_probability_gap": 0.353553390593
+  },
+  "bindings_sha256": {
+    "1269/admission.md": "5eca8040276a275a9371e89e750db62175cfd1d3e113e8abeb1fdcd4873bd933",
+    "1269/pointer_proof.md": "f9f413070d0143c19d9017246627d76db7fccdce56b8329713586afdb0066a50",
+    "1269/pointer_check.py": "160ca289d72fa71922228858ea465646c84de89f648e715ad9a3a1c4c48037a3",
+    "1249/canonical.md": "6f7e4417dc96ee8062111cb4778e8e093257c7248916fedbce5db39eeb3cd989",
+    "1267/geometry_proof.md": "69055382128e1667bb6cc5066a881d64e69b5a3fe3c2c5edfc31f773322c8c1f",
+    "1268/readout_proof.md": "d604c0ae4981e72b9a1102628a6bdc025ba6cc7df726729f3a072ef54a638f45",
+    "1268/readout_check.py": "d22df0183703cc3610facc238b316ae05840ac598b548b03c3e9d708df0f1231",
+    "1268/readout_results.json": "6b9fa0503c9db96bf8d41847dfd5d6847edaa153da22189b8609a29e2de380e3",
+    "1268/acceptance.json": "63c640a8091b1821a7225fd20bc661aa4ca2d06c52101c904aff0c6e54c76fb5",
+    "_admission/causal_block_after1265/proof.md": "316bd0afb7e40fcc42095bfb39673206248a48a408a810c53fe682aa2904404c"
+  }
+}

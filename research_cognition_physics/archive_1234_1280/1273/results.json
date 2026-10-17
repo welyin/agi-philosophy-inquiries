@@ -1,0 +1,370 @@
+{
+  "round": 1273,
+  "status": "PASS",
+  "source_sha256": "d508690b2358ad78ca660b3874f22e163e13322d8d2e8e7c10cc9eed790c35b6",
+  "carrier_dimension": 15360,
+  "fixed_energy_sector_dimension": 5760,
+  "gate_checks": [
+    {
+      "name": "prepare_A",
+      "energy_invariant": true
+    },
+    {
+      "name": "prepare_B",
+      "energy_invariant": true
+    },
+    {
+      "name": "controlled_half_swap",
+      "energy_invariant": true
+    },
+    {
+      "name": "A_to_M",
+      "energy_invariant": true
+    },
+    {
+      "name": "M_to_E",
+      "energy_invariant": true
+    },
+    {
+      "name": "undo_M_to_E",
+      "energy_invariant": true
+    },
+    {
+      "name": "undo_A_to_M",
+      "energy_invariant": true
+    },
+    {
+      "name": "half_swap",
+      "energy_invariant": true
+    },
+    {
+      "name": "A_to_output",
+      "energy_invariant": true
+    }
+  ],
+  "exchange_incidence_rank": 3,
+  "linear_response_kernel_dimension": 1,
+  "permutation_response_rows": [
+    {
+      "gate": "prepare_A",
+      "nonzero_rows": [
+        [
+          -1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          -1,
+          0
+        ]
+      ]
+    },
+    {
+      "gate": "prepare_B",
+      "nonzero_rows": [
+        [
+          0,
+          -1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          -1
+        ]
+      ]
+    },
+    {
+      "gate": "controlled_half_swap",
+      "nonzero_rows": [
+        [
+          -1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          -1,
+          0,
+          0
+        ]
+      ]
+    }
+  ],
+  "old_protocol_diagnostics": [
+    {
+      "K": 0,
+      "L": 0,
+      "weights": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "exact_delta_C": "0"
+    },
+    {
+      "K": 0,
+      "L": 0,
+      "weights": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "exact_delta_C": "0"
+    },
+    {
+      "K": 0,
+      "L": 0,
+      "weights": [
+        1,
+        -1,
+        0,
+        0
+      ],
+      "exact_delta_C": "0"
+    },
+    {
+      "K": 0,
+      "L": 0,
+      "weights": [
+        2,
+        3,
+        5,
+        7
+      ],
+      "exact_delta_C": "0"
+    },
+    {
+      "K": 0,
+      "L": 1,
+      "weights": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "exact_delta_C": "0"
+    },
+    {
+      "K": 0,
+      "L": 1,
+      "weights": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "exact_delta_C": "0"
+    },
+    {
+      "K": 0,
+      "L": 1,
+      "weights": [
+        1,
+        -1,
+        0,
+        0
+      ],
+      "exact_delta_C": "0"
+    },
+    {
+      "K": 0,
+      "L": 1,
+      "weights": [
+        2,
+        3,
+        5,
+        7
+      ],
+      "exact_delta_C": "0"
+    },
+    {
+      "K": 0,
+      "L": 2,
+      "weights": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "exact_delta_C": "0"
+    },
+    {
+      "K": 0,
+      "L": 2,
+      "weights": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "exact_delta_C": "0"
+    },
+    {
+      "K": 0,
+      "L": 2,
+      "weights": [
+        1,
+        -1,
+        0,
+        0
+      ],
+      "exact_delta_C": "0"
+    },
+    {
+      "K": 0,
+      "L": 2,
+      "weights": [
+        2,
+        3,
+        5,
+        7
+      ],
+      "exact_delta_C": "0"
+    },
+    {
+      "K": 1,
+      "L": 0,
+      "weights": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "exact_delta_C": "0"
+    },
+    {
+      "K": 1,
+      "L": 0,
+      "weights": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "exact_delta_C": "3/40"
+    },
+    {
+      "K": 1,
+      "L": 0,
+      "weights": [
+        1,
+        -1,
+        0,
+        0
+      ],
+      "exact_delta_C": "3/20"
+    },
+    {
+      "K": 1,
+      "L": 0,
+      "weights": [
+        2,
+        3,
+        5,
+        7
+      ],
+      "exact_delta_C": "-3/40"
+    },
+    {
+      "K": 1,
+      "L": 1,
+      "weights": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "exact_delta_C": "0"
+    },
+    {
+      "K": 1,
+      "L": 1,
+      "weights": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "exact_delta_C": "3/40"
+    },
+    {
+      "K": 1,
+      "L": 1,
+      "weights": [
+        1,
+        -1,
+        0,
+        0
+      ],
+      "exact_delta_C": "3/20"
+    },
+    {
+      "K": 1,
+      "L": 1,
+      "weights": [
+        2,
+        3,
+        5,
+        7
+      ],
+      "exact_delta_C": "-3/40"
+    },
+    {
+      "K": 1,
+      "L": 2,
+      "weights": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "exact_delta_C": "0"
+    },
+    {
+      "K": 1,
+      "L": 2,
+      "weights": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "exact_delta_C": "3/40"
+    },
+    {
+      "K": 1,
+      "L": 2,
+      "weights": [
+        1,
+        -1,
+        0,
+        0
+      ],
+      "exact_delta_C": "3/20"
+    },
+    {
+      "K": 1,
+      "L": 2,
+      "weights": [
+        2,
+        3,
+        5,
+        7
+      ],
+      "exact_delta_C": "-3/40"
+    }
+  ],
+  "diagnostic_numerical_error_below": 5e-14,
+  "finite_bound_arithmetic_only": "75001/500000000",
+  "new_coupled_geometry_prediction_claimed": false,
+  "analytic_theorem_not_replaced_by_sampling": true
+}

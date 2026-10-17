@@ -1,0 +1,103 @@
+{
+  "schema": "jacobson_1250_frozen_replay_v1",
+  "status": "PASS_WITH_SCOPE",
+  "new_scientific_rounds": 0,
+  "new_scientific_groups": 0,
+  "inherited_round": 1250,
+  "method": "Exact Fraction reconstruction from frozen enclosures; original checker actually replayed read-only; no new model, ODE or instrument.",
+  "fixed": {
+    "tstar": "9/4",
+    "time_width": "1/64",
+    "error_per_menu": "1/1000000000",
+    "cap_solid_angle": "1",
+    "Wald_s_times_hbar": "2*pi/3",
+    "eight_pi_G": "3"
+  },
+  "branches": [
+    {
+      "alpha": 0,
+      "reconstructed_corrected_balance": [
+        "-144738835139520891/1000000000000000000000000000000000000",
+        "144738835139565227/1000000000000000000000000000000000000"
+      ],
+      "corrected_balance_absolute_upper": "144738835139565227/1000000000000000000000000000000000000",
+      "positive_memory_gap": [
+        "159929476726864406412378282023/1000000000000000000000000000000000000",
+        "31985895345372883372336905217/200000000000000000000000000000000000"
+      ],
+      "legacy_margin_after_7eta": [
+        "152929476726864406412378282023/1000000000000000000000000000000000000",
+        "30585895345372883372336905217/200000000000000000000000000000000000"
+      ],
+      "full_interval_with_original_contract": [
+        "-3000000000144738835139520891/1000000000000000000000000000000000000",
+        "3000000000144738835139565227/1000000000000000000000000000000000000"
+      ],
+      "omitted_interval_with_original_contract": [
+        "38982369181679916894309690283/250000000000000000000000000000000000",
+        "10245592295438072231051505707/62500000000000000000000000000000000"
+      ],
+      "strict_disjoint_interval_gap": "30585895345314985748419839181/200000000000000000000000000000000000",
+      "strict_disjoint_interval_gap_decimal": "1.52929476726574928742099195905E-7",
+      "additional_equal_error_threshold": "30585895345314985748419839181/400000000000000000000000000000000000",
+      "additional_equal_error_threshold_decimal": "7.64647383632874643710495979525E-8",
+      "uncorrected_omission_acceptance_slack": "22525594713543357247779211551/250000000000000000000000000000000000"
+    },
+    {
+      "alpha": 1,
+      "reconstructed_corrected_balance": [
+        "-11005139124650361/40000000000000000000000000000000000",
+        "55025695623261109/200000000000000000000000000000000000"
+      ],
+      "corrected_balance_absolute_upper": "55025695623261109/200000000000000000000000000000000000",
+      "positive_memory_gap": [
+        "19992004418165872544558029271/125000000000000000000000000000000000",
+        "79968017672663499145358202387/500000000000000000000000000000000000"
+      ],
+      "legacy_margin_after_7eta": [
+        "19117004418165872544558029271/125000000000000000000000000000000000",
+        "76468017672663499145358202387/500000000000000000000000000000000000"
+      ],
+      "full_interval_with_original_contract": [
+        "-120000000011005139124650361/40000000000000000000000000000000000",
+        "600000000055025695623261109/200000000000000000000000000000000000"
+      ],
+      "omitted_interval_with_original_contract": [
+        "155936035345051851878347975143/1000000000000000000000000000000000000",
+        "163936035345602126768832710319/1000000000000000000000000000000000000"
+      ],
+      "strict_disjoint_interval_gap": "76468017672388361700115834799/500000000000000000000000000000000000",
+      "strict_disjoint_interval_gap_decimal": "1.52936035344776723400231669598E-7",
+      "additional_equal_error_threshold": "76468017672388361700115834799/1000000000000000000000000000000000000",
+      "additional_equal_error_threshold_decimal": "7.6468017672388361700115834799E-8",
+      "uncorrected_omission_acceptance_slack": "89912606017019305356872763527/1000000000000000000000000000000000000"
+    }
+  ],
+  "all_branch_separation_gap": "30585895345314985748419839181/200000000000000000000000000000000000",
+  "additional_equal_error_threshold": "30585895345314985748419839181/400000000000000000000000000000000000",
+  "conservative_sufficient_equal_error_bound": "4779/62500000000",
+  "hg_matching_extra_error": {
+    "assigned": false,
+    "value": null,
+    "requirement": "e_full + e_omitted < all_branch_separation_gap; each e < threshold is sufficient.",
+    "scope": "All additional HG/reference/clock/source/endpoint/instrument errors in the same normalized residual; not assumed zero."
+  },
+  "old_independent_analytic_lower": "1/11809800",
+  "old_independent_analytic_margin": "4586657/59049000000000",
+  "raw_omitted_ledger_remains_accepted": true,
+  "effective_read_contract_realized_here": false,
+  "source_bindings": {
+    "research_cognition_physics/archive_1234_/1250/proof.md": "5e9f5e1495156f6bcd81c48a5046ac538ea72b2823a6cb7a9e3b7a59ff499d9f",
+    "research_cognition_physics/archive_1234_/1250/check.py": "3374eafd42d678f5f86f338421080a839b2877aedefd8f3ef8cdc17b77162f22",
+    "research_cognition_physics/archive_1234_/1250/results.json": "84fa683b1e343f94ba2f5a4f2e26653dfa49c7d6c04d3833a436daa8cb880284",
+    "research_cognition_physics/archive_1234_/1250/independent_review.md": "09700b069733895a506d25c25fe0dd29375a03f9d37c469be1bd099ead7049bb",
+    "research_cognition_physics/archive_1234_/1250/independent_check.py": "4ca75b1991bcf558c5707437939f90507dfef7b55a943a2e4763c3e48fbe7da2",
+    "research_cognition_physics/archive_1234_/1250/independent_results.json": "11f7e663bd561208f7125dbdcbfd2930d176056aa8b8d9ee731d0c6a28434277",
+    "research_cognition_physics/archive_1234_/1242/check.py": "2a25be6a9b371c0689f03458c0151dcd534339d983989ca8c914056749aabc16",
+    "research_cognition_physics/archive_1234_/1247/results.json": "dbcd590e7816bc423c49a4e1bf83bab6fa50a84dd5578249cc493a15cd72bf06",
+    "research_cognition_physics/archive_1234_/_admission/jacobson_common_realization_screen_after1278.md": "7d952c2fce154469d7fc55289c2e15b88ab4567eff4652712779598a63959c5f",
+    "research_cognition_physics/archive_1234_/_shared/ct_hg_adoption_after1278.md": "b3d92a66dba200c3e5ebad79f9805597a687b316b4b808d6bd166be9e7c33721",
+    "research_cognition_physics/archive_1234_/_shared/jacobson_finite_prediction_after1278/original_check_execution.json": "d28865dd224feab6d846c0c7faf1ffe812f48548d59d78cab6211c0d9412eebb",
+    "research_cognition_physics/archive_1234_/_shared/jacobson_finite_prediction_after1278/replay_check.py": "6a7977519b521e36ef46b9980a6d2044ef023661ea598114a18318725628459b"
+  }
+}

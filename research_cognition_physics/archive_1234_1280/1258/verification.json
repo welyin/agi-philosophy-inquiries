@@ -1,0 +1,65 @@
+{
+  "schema": "gr_response_round_verification_v1",
+  "round": 1258,
+  "date": "2026-10-16",
+  "status": "PASS_WITH_SCOPE",
+  "root_read_proof_code_results_and_independent_review": true,
+  "actual_commands": [
+    {
+      "path": "1258/check.py",
+      "execution_chunk": "da8904",
+      "exit_code": 0,
+      "action": "read_only_match",
+      "code_sha256": "0ee8174a577b0c00f154baf674f21941b8197352560925b43fa08b2bdd6fa5aa",
+      "stdout": "PASS: 1258 three exact author groups; read-only reconstruction matches saved results.",
+      "arguments": [
+        "C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "D:\\workspace\\AGI的哲学思考\\research_cognition_physics\\archive_1234_\\1258\\check.py"
+      ],
+      "performed_before_publication": true,
+      "repeated_by_publication": false
+    },
+    {
+      "path": "1258/independent_check.py",
+      "execution_chunk": "2cf782",
+      "exit_code": 0,
+      "action": "READ_ONLY_MATCH",
+      "code_sha256": "6fe8d1a17174b425eb6a15e900f1e76b9e5e9f5d981d0adc15e78dc7db016128",
+      "stdout": "PASS; independent_groups=2; probability_strict_upper=35/786432",
+      "arguments": [
+        "C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "D:\\workspace\\AGI的哲学思考\\research_cognition_physics\\archive_1234_\\1258\\independent_check.py"
+      ],
+      "performed_before_publication": true,
+      "repeated_by_publication": false
+    }
+  ],
+  "science_sha256": {
+    "admission.md": "d0f0eec72f72a013637af049ff25ad57be0b16da68e6f1edbe10cfdc8758d86f",
+    "proof.md": "0ab0acdb411a019d94b12d7689b94ad138562ed6d74782da1722605ce3b7a922",
+    "check.py": "0ee8174a577b0c00f154baf674f21941b8197352560925b43fa08b2bdd6fa5aa",
+    "results.json": "d11a1467ecfcd23853598de71eeabb295586349c970971e98963b3afb102e370",
+    "NEXT.md": "8bfcb954168e29bfe8d28156d3437437ab09d81435c329970b476f863966133c",
+    "independent_check.py": "6fe8d1a17174b425eb6a15e900f1e76b9e5e9f5d981d0adc15e78dc7db016128",
+    "independent_results.json": "fd4199c0a14b1267619922ba2ad6b3408495c9e1cec406555d12da16123085ad",
+    "independent_review.md": "848e16fb23a9796a3c943775fe155eae51e982c66935d60575c7e70888fdfde9",
+    "../research_note_1258.md": "2106522e96d5b0a3907c40991041af01c1227378c72e09f6b5f3c5d80ba6bc16"
+  },
+  "prior_acceptance_bindings": 244,
+  "prior_distinct_frozen_files": 249,
+  "analytic_certificate": [
+    "All nonnegative diagonal Gaussian occupations under a positive excitation-energy budget have a common O(E_star ell^4) local covariance bound.",
+    "Common CCR and positive added covariance control every ordered bounded Weyl/cosine product and the full double-Dyson series.",
+    "Finite comparison example: arbitrary probe/reference record probability error <3/65536<1e-4; added occupation density <1/500.",
+    "Source bounds retain non-even flux and anisotropic pressure; device/control and common vacuum sources remain separately required."
+  ],
+  "numerical_scope": "Exact rational finite identities and constants. Analytic proof carries universal modes, normality and all Dyson orders. No actual causal hardware, baseline KMS or self-consistent geometry is certified.",
+  "CT_user_decision": "unadopted_conjecture",
+  "GR_goal_completed": false
+}

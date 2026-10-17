@@ -1,0 +1,103 @@
+{
+  "action_scaling_exponents": {
+    "EH_fixed_kappa_Lambda_zero": 2,
+    "X_kinetic": 2,
+    "X_mass_potential": 2,
+    "all_three_rods_fixed_target_period": 2,
+    "clock_mass_fixed_label_measure": 2,
+    "p_kinetic": 2,
+    "p_mass_potential": 2,
+    "recorder_mass_fixed_label_measure": 2
+  },
+  "arithmetic": "fractions.Fraction; sparse Laurent polynomials; no ODE",
+  "bindings": {
+    "check_sha256": "0f63db1f113d4fef4cd0b4342fa0922134c8a7f6e2abcf55f405c224fc564e27",
+    "screen_sha256": "7e40a646ea9b738d409b8ffc3d019ff96952fc209bc1c2f5fede8e12e1ccfafc"
+  },
+  "deletion": {
+    "formula": "kappa/3 * 191/200 * (s^-2-s^-3)",
+    "initial_constraint_defect": "191/1600",
+    "kappa": "3",
+    "rule": "keep mapped geometry and density, omit each label mass scaling",
+    "s": "2"
+  },
+  "exact_identities": [
+    "full_clock_mass",
+    "full_recorder_mass",
+    "clock_p_force",
+    "clock_X_force",
+    "canonical_flow_J",
+    "canonical_flow_q",
+    "canonical_flow_r",
+    "canonical_flow_B",
+    "canonical_flow_Y",
+    "canonical_flow_K",
+    "clock_proper_speed",
+    "program_phase_no_extra_B_minus_one",
+    "recorder_phase",
+    "old_complete_internal_power_cancellation",
+    "scaled_complete_internal_power_cancellation",
+    "recorder_exchange",
+    "omitted_clock_work_defect",
+    "full_source_density",
+    "full_source_pressure",
+    "Friedmann_constraint_same_kappa",
+    "null_source_same_kappa",
+    "initial_full_inventory",
+    "deleted_mass_scaling_constraint"
+  ],
+  "formal_scientific_groups": 0,
+  "initial_data": {
+    "all_dust_density": "191/200",
+    "clock_mass": "187/200",
+    "field_and_rods_density": "31/200",
+    "full_density": "111/100",
+    "recorder_mass": "1/5",
+    "total_material_inventory": "1110*s",
+    "volume": "1000*s^3"
+  },
+  "limitations": [
+    "Exact algebra checks the proposed classical dictionary, not new dynamics.",
+    "Coordinate and label domains, Hilbert variation and finite phase lifts remain in the screen.",
+    "No local quantum model, actual terminal precision or finite-body realization is certified.",
+    "No numerical integration, parameter scan or new formal scientific group."
+  ],
+  "scope": "NON_NUMBERED_EXACT_ALGEBRA_SCREEN",
+  "source_scaling_exponents": {
+    "action_over_fixed_hbar": 2,
+    "clock_density_times_mass": -2,
+    "divergence_and_exchange": -3,
+    "recorder_density_times_mass": -2,
+    "rods": -2,
+    "scalar_kinetic": -2,
+    "scalar_mass": -2,
+    "total_material_inventory": 1
+  },
+  "status": "PASS",
+  "symplectic_pair_weights": {
+    "clock_J_dtheta": [
+      1,
+      1
+    ],
+    "memory_K_dY": [
+      2,
+      0
+    ],
+    "moving_worldline_P_dx": [
+      1,
+      1
+    ],
+    "oscillator_r_dq": [
+      2,
+      0
+    ],
+    "program_B_dpsi": [
+      2,
+      0
+    ],
+    "recorder_I_dvartheta": [
+      1,
+      1
+    ]
+  }
+}

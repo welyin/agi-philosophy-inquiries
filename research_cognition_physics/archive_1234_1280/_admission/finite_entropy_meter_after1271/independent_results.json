@@ -1,0 +1,255 @@
+{
+  "schema": "independent_finite_entropy_meter_v1",
+  "status": "PASS_CONDITIONAL_SCALAR_ENTROPY_METER_ONLY",
+  "independent_groups": 1,
+  "author_code_imported": false,
+  "exact_fraction_guardrails": {
+    "quintic_endpoint_orders": {
+      "q_zero": true,
+      "qdot_zero": true,
+      "maximum_fprime": {
+        "numerator": 15,
+        "denominator": 8
+      }
+    },
+    "nu": {
+      "numerator": 3,
+      "denominator": 16000
+    },
+    "temperature_lower": {
+      "numerator": 49,
+      "denominator": 500
+    },
+    "temperature_upper": {
+      "numerator": 51,
+      "denominator": 500
+    },
+    "proved_z_lower": {
+      "numerator": 20727425,
+      "denominator": 100969498
+    },
+    "proved_z_upper": {
+      "numerator": 173,
+      "denominator": 98
+    },
+    "declared_z_interval": [
+      {
+        "numerator": 1,
+        "denominator": 5
+      },
+      {
+        "numerator": 9,
+        "denominator": 5
+      }
+    ],
+    "equilibrium_Cgamma_upper": {
+      "numerator": 900000,
+      "denominator": 117649
+    },
+    "Cgamma_current_upper": {
+      "numerator": 36,
+      "denominator": 5
+    },
+    "abs_Cbh_lower": {
+      "numerator": 100,
+      "denominator": 1
+    },
+    "delta_wald": {
+      "numerator": 201,
+      "denominator": 200
+    },
+    "one_leg_entropy_error_upper": {
+      "numerator": 75,
+      "denominator": 38416
+    },
+    "two_leg_interval_width_upper": {
+      "numerator": 75,
+      "denominator": 19208
+    },
+    "temperature_total_variation_upper": {
+      "numerator": 1103,
+      "denominator": 808000
+    },
+    "controller_work_total_variation_upper": {
+      "numerator": 110927,
+      "denominator": 4040000
+    },
+    "initial_controller_balance": {
+      "numerator": 1,
+      "denominator": 1
+    },
+    "controller_balance_lower": {
+      "numerator": 3929073,
+      "denominator": 4040000
+    },
+    "energy_coefficient_cancellation": true,
+    "radiation_entropy_identity": true,
+    "fixed_energy_branch_examples": {
+      "left_unstable": {
+        "total_energy": {
+          "numerator": 5,
+          "denominator": 1
+        },
+        "mass": {
+          "numerator": 3,
+          "denominator": 1
+        },
+        "gas_energy": {
+          "numerator": 2,
+          "denominator": 1
+        },
+        "response_derivative": {
+          "numerator": 5,
+          "denominator": 72
+        },
+        "heat_capacity_gamma": {
+          "numerator": 24,
+          "denominator": 1
+        },
+        "heat_capacity_abs_bh": {
+          "numerator": 9,
+          "denominator": 1
+        },
+        "stable": false
+      },
+      "right_stable": {
+        "total_energy": {
+          "numerator": 5,
+          "denominator": 1
+        },
+        "mass": {
+          "numerator": 9,
+          "denominator": 2
+        },
+        "gas_energy": {
+          "numerator": 1,
+          "denominator": 2
+        },
+        "response_derivative": {
+          "numerator": -5,
+          "denominator": 81
+        },
+        "heat_capacity_gamma": {
+          "numerator": 9,
+          "denominator": 1
+        },
+        "heat_capacity_abs_bh": {
+          "numerator": 81,
+          "denominator": 4
+        },
+        "stable": true
+      }
+    },
+    "right_branch_threshold_mass_fraction": {
+      "numerator": 4,
+      "denominator": 5
+    }
+  },
+  "numerical_diagnostics": {
+    "forward": {
+      "diagnostic": {
+        "initial_mass": 10.0,
+        "final_mass": 10.1,
+        "panels": 256,
+        "q_over_T_integral": 1.0035593764874196,
+        "irreversibility_integral": 0.0014406235125769748,
+        "wald_minus_meter_signed": 0.0014406235125759004,
+        "radiation_entropy_change": -1.0035593764874196,
+        "Z_final": 0.24733046763443534,
+        "X_final": 254.82482813422635,
+        "gas_energy_change": -0.07551183488767968,
+        "controller_energy_change": -0.024488165112319982,
+        "controller_work_total_variation": 0.024488167101445718,
+        "temperature_total_variation": 0.0010349925740409688,
+        "temperature_min_sampled": 0.0990099009939903,
+        "temperature_max_sampled": 0.10002244668130326,
+        "Z_min_sampled": 0.24733046763443534,
+        "Z_max_sampled": 1.0,
+        "equilibrium_capacity_ratio_max_sampled": 0.03999999999531662,
+        "endpoint_total_energy_residual": -1.734723475976807e-17,
+        "max_energy_balance_residual": 5.421010862427522e-20,
+        "max_radiation_heat_residual": 7.453889935837843e-20,
+        "max_control_work_residual": 2.0328790734103208e-20,
+        "max_entropy_balance_residual": 6.505213034913027e-19
+      },
+      "refinement_differences": {
+        "q_over_T_integral": 0.0,
+        "irreversibility_integral": 0.0,
+        "controller_energy_change": 0.0,
+        "controller_work_total_variation": 6.53046262899526e-11
+      }
+    },
+    "reverse": {
+      "diagnostic": {
+        "initial_mass": 10.1,
+        "final_mass": 10.0,
+        "panels": 256,
+        "q_over_T_integral": -1.006445186863741,
+        "irreversibility_integral": 0.0014451868637445906,
+        "wald_minus_meter_signed": 0.0014451868637455068,
+        "radiation_entropy_change": 1.0064451868637407,
+        "Z_final": 1.7254240380754502,
+        "X_final": 1725.4240380754502,
+        "gas_energy_change": 0.07644436935926337,
+        "controller_energy_change": 0.023555630640736253,
+        "controller_work_total_variation": 0.023556356434026024,
+        "temperature_total_variation": 0.0010362596924873768,
+        "temperature_min_sampled": 0.09898682064851902,
+        "temperature_max_sampled": 0.0999999999961087,
+        "Z_min_sampled": 0.9705901479276445,
+        "Z_max_sampled": 1.7254240380754502,
+        "equilibrium_capacity_ratio_max_sampled": 0.0690173080760015,
+        "endpoint_total_energy_residual": -2.42861286636753e-17,
+        "max_energy_balance_residual": 6.098637220230962e-20,
+        "max_radiation_heat_residual": 8.131516293641283e-20,
+        "max_control_work_residual": 2.0328790734103208e-20,
+        "max_entropy_balance_residual": 6.505213034913027e-19
+      },
+      "refinement_differences": {
+        "q_over_T_integral": 0.0,
+        "irreversibility_integral": 2.168404344971009e-19,
+        "controller_energy_change": 0.0,
+        "controller_work_total_variation": 1.7123864132218003e-10
+      }
+    }
+  },
+  "numerical_finite_interval": {
+    "J_plus": 1.0035593764874196,
+    "J_minus": 1.006445186863741,
+    "delta_wald": 1.005,
+    "width": 0.002885810376321407,
+    "width_analytic_upper": 0.0039046230737192836
+  },
+  "scope": [
+    "Exact arithmetic certifies the stated scalar effective equations only.",
+    "Gauss refinement is a numerical diagnostic, not a rigorous quadrature tail bound.",
+    "No actual controller, finite POVM, wall stress, or covariant complete source is certified.",
+    "Forward and reverse use distinct gas preparations; no free resetting.",
+    "No claim that the off-equilibrium state itself is equilibrium.",
+    "Right stable branch is derived at fixed total energy and volume.",
+    "Operational target entropy squeeze is conditional on actual adiabatic admissibility and additive complete accounting.",
+    "No Einstein generation or rejection of the 1271 flat model."
+  ],
+  "source_bindings": {
+    "independent_code": {
+      "path": "research_cognition_physics/archive_1234_/_admission/finite_entropy_meter_after1271/independent_check.py",
+      "sha256": "cf2ec26e366d94e92aa3800215cb1936f79ae1d709f5a740c808a77c925e1902"
+    },
+    "author_proof_only": {
+      "path": "research_cognition_physics/archive_1234_/_admission/finite_entropy_meter_after1271/proof.md",
+      "sha256": "ea7d209f2b5f4b2d5a33d20164545063a74076139ccd0b0e20e9727ef42f34c2"
+    },
+    "old317": {
+      "path": "research_cognition_physics/archive_301_341/research_note_317.md",
+      "sha256": "775aba35c9872448159baf95fe6ea0e258fc7fec37311ec561e74b2e53b83ece"
+    },
+    "old1250": {
+      "path": "research_cognition_physics/archive_1234_/1250/proof.md",
+      "sha256": "5e9f5e1495156f6bcd81c48a5046ac538ea72b2823a6cb7a9e3b7a59ff499d9f"
+    },
+    "old1271": {
+      "path": "research_cognition_physics/archive_1234_/1271/proof.md",
+      "sha256": "53a55aa5cd4e7c2a22bcfa64b76d3d0aec31a88771f67e1f410184ddb5708fb2"
+    }
+  }
+}

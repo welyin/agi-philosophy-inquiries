@@ -1,0 +1,117 @@
+{
+  "status": "PASS_CONDITIONAL_MATRIX_LEMMA_ONLY",
+  "seed": 1271001,
+  "closed_unitary_identity_diagnostics": [
+    {
+      "dimensions": [
+        2,
+        2
+      ],
+      "sample": 0,
+      "three_values": [
+        0.6054231869613969,
+        0.6054231869613969,
+        0.6054231869613967
+      ],
+      "max_difference": 1.1102230246251565e-16
+    },
+    {
+      "dimensions": [
+        2,
+        2
+      ],
+      "sample": 1,
+      "three_values": [
+        0.5935227885834898,
+        0.5935227885834898,
+        0.5935227885834895
+      ],
+      "max_difference": 3.3306690738754696e-16
+    },
+    {
+      "dimensions": [
+        2,
+        3
+      ],
+      "sample": 0,
+      "three_values": [
+        0.6392629978185294,
+        0.6392629978185296,
+        0.6392629978185291
+      ],
+      "max_difference": 4.440892098500626e-16
+    },
+    {
+      "dimensions": [
+        2,
+        3
+      ],
+      "sample": 1,
+      "three_values": [
+        0.7048194513871845,
+        0.7048194513871843,
+        0.7048194513871837
+      ],
+      "max_difference": 7.771561172376096e-16
+    },
+    {
+      "dimensions": [
+        3,
+        2
+      ],
+      "sample": 0,
+      "three_values": [
+        0.6753253293478086,
+        0.6753253293478086,
+        0.6753253293478082
+      ],
+      "max_difference": 4.440892098500626e-16
+    },
+    {
+      "dimensions": [
+        3,
+        2
+      ],
+      "sample": 1,
+      "three_values": [
+        0.6868397842606287,
+        0.6868397842606289,
+        0.6868397842606279
+      ],
+      "max_difference": 9.992007221626409e-16
+    }
+  ],
+  "frame": {
+    "rows": 36,
+    "columns": 36,
+    "rank": 36,
+    "s_min": 0.32304191099769064,
+    "s_min_squared_exact": "(5-sqrt(21))/4"
+  },
+  "CNOT": {
+    "forward_gap": 1.0,
+    "forward_test_norm": 1.4142135623730951,
+    "backward_gap": 1.0,
+    "bound_constant": 0.038070854312321364,
+    "choi_impurity": 0.5
+  },
+  "rational_certificate": {
+    "sqrt21_upper": "23/5",
+    "s_min_squared_lower": "1/10",
+    "constant_squared_lower": "1/720",
+    "conservative_constant": "1/30",
+    "per_branch_error": "1/1000",
+    "observed_forward_gap": "1",
+    "robust_bound": "469/15000"
+  },
+  "deletion_checks": {
+    "Z_only_backward_gap": 0.0,
+    "diagonal_preparations_backward_gap": 0.0,
+    "Z_only_frame_rank": 12,
+    "one_way_reduced_channel_forward": 1.0,
+    "one_way_reduced_channel_backward": 0.0
+  },
+  "physical_geometry_frame_certified": false,
+  "new_adopted_axioms": 0,
+  "scope": "Finite algebra and error certificate. Random tests are diagnostics, not a proof. No apparatus, geometric identity, curvature, Einstein selection, or exclusion of 1271 is claimed."
+}

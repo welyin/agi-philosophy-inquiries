@@ -1,0 +1,102 @@
+{
+  "schema": "finite_grid_candidate_after1256.v1",
+  "status": "INITIAL_DEFECT_CERTIFIED_TASK_NOT_ADMITTED",
+  "code_sha256": "e9bbcda917d9b9cebcffbc7c474320c418f952e50fd2e48034c3da3f97a4a759",
+  "grid": [
+    5,
+    5,
+    5
+  ],
+  "period": 10,
+  "spacing": 2,
+  "cell_symplectic_weight": 8,
+  "canonical_pairs_per_cell": 18,
+  "real_phase_space_dimension": 4500,
+  "hamiltonian_support_radius_in_grid_edges": 2,
+  "vector_field_support_radius_upper_bound_in_grid_edges": 4,
+  "exact_initial_certificate": {
+    "status": "PASS",
+    "method": "Fraction exact algebra and 80-bit dyadic root enclosure",
+    "delta": "1/10",
+    "spacing": "2/1",
+    "A0": "187/200",
+    "A_delta": "177/200",
+    "root_squared": "30929/40000",
+    "root_interval": [
+      "1063047319513664645093843/1208925819614629174706176",
+      "265761829878416161273461/302231454903657293676544"
+    ],
+    "J_interval": [
+      "1339856503386232105354651/30223145490365729367654400",
+      "334964125846558026338669/7555786372591432341913600"
+    ],
+    "J_strict_bounds": [
+      "1/25",
+      "9/200"
+    ],
+    "Jdot_site_1_interval": [
+      "-75557863725914323419136/26576182987841616127346075",
+      "-18889465931478580854784/6644045746960404031836525"
+    ],
+    "Jdot_site_1_strict_upper": "-1/400",
+    "Jdot_sites_3_and_4_interval": [
+      "9444732965739290427392/6644045746960404031836525",
+      "37778931862957161709568/26576182987841616127346075"
+    ],
+    "source_Tnn": "111/100",
+    "momentum_constraint": "0",
+    "hamiltonian_constraint": "0 by positive-root identity",
+    "interpretation": "Exact initial algebra and explicit local-defect formula; not a future grid/PDE error bound."
+  },
+  "complex_step_diagnostics": [
+    {
+      "delta": 0.0,
+      "J_min": 0.1,
+      "Jdot_x1_line_at_x2_x3_0": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Jdot_integral": -1.23314264861e-12,
+      "max_analytic_defect_error_on_zero_d_sites": 0.0,
+      "max_initial_hamiltonian_constraint_abs": 0.0,
+      "max_initial_total_source_error": 0.0,
+      "Kdot_max_abs": 0.0,
+      "method": "4500 complex-step partial derivatives of full H, then full J directional derivative",
+      "step": "1e-28",
+      "assertion_tolerance": "5e-12 (integrated Jdot tolerance 5e-10)",
+      "status": "PASS_DIAGNOSTIC_NOT_INTERVAL_PROOF"
+    },
+    {
+      "delta": 0.1,
+      "J_min": 0.0443321329282,
+      "Jdot_x1_line_at_x2_x3_0": [
+        0.0,
+        -0.00284306680762,
+        0.0,
+        0.00142153340381,
+        0.00142153340381
+      ],
+      "Jdot_integral": -1.44776204913e-12,
+      "max_analytic_defect_error_on_zero_d_sites": 0.0,
+      "max_initial_hamiltonian_constraint_abs": 0.0,
+      "max_initial_total_source_error": 0.0,
+      "Kdot_max_abs": 0.0,
+      "method": "4500 complex-step partial derivatives of full H, then full J directional derivative",
+      "step": "1e-28",
+      "assertion_tolerance": "5e-12 (integrated Jdot tolerance 5e-10)",
+      "status": "PASS_DIAGNOSTIC_NOT_INTERVAL_PROOF"
+    }
+  ],
+  "not_certified": [
+    "finite-time nonhomogeneous prediction error",
+    "Einstein/Bianchi residual budget",
+    "finite-grid exact HDA",
+    "physical terminal cell-readout realization",
+    "quantum state or quantum error bound",
+    "strict light cone"
+  ],
+  "scope": "A chosen finite discretization has a local clock-source defect at nonuniform data. This does not reject smaller packets, another discretization, or the research route."
+}

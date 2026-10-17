@@ -1,0 +1,171 @@
+{
+  "round": 1241,
+  "status": "PASS",
+  "independent_scientific_groups": 2,
+  "positive_energy_time_preparation": {
+    "status": "PASS",
+    "independent_method": "composite Simpson plus algebraic Fourier formula",
+    "frequency_checks": [
+      {
+        "subintervals": 8192,
+        "energy_moments": [
+          1.0000000000000002,
+          0.5000000000000001,
+          0.2826727415121648
+        ],
+        "time_second_moment": 9.869604401089356,
+        "Fourier_error": 2.2121827749573257e-15
+      },
+      {
+        "subintervals": 16384,
+        "energy_moments": [
+          1.0000000000000002,
+          0.5000000000000001,
+          0.28267274151216454
+        ],
+        "time_second_moment": 9.869604401089358,
+        "Fourier_error": 1.3795415027957987e-16
+      }
+    ],
+    "direct_time_cutoff": 512.0,
+    "direct_time_probability": 0.9999999688056361,
+    "omitted_probability_upper": 1.1096504541996826e-07,
+    "direct_time_second": 9.845064091172917,
+    "omitted_second_upper": 0.08726646259971647,
+    "pi_enclosure": [
+      {
+        "fraction": "31415926535897932384626433832795028841971/10000000000000000000000000000000000000000",
+        "decimal": 3.141592653589793
+      },
+      {
+        "fraction": "7853981633974483096156608458198757210493/2500000000000000000000000000000000000000",
+        "decimal": 3.141592653589793
+      }
+    ],
+    "low_energy_success_upper": {
+      "fraction": "800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000/31006276680299820175476315067101395202223233732751175908242522028129270372880832094154247735621616029500791833641900341611",
+      "decimal": 2.580122754655959e-05
+    },
+    "canonical_time_POVM_is_not_a_built_arrival_detector": true
+  },
+  "endpoint_and_fixed_constant_window": {
+    "status": "PASS",
+    "independent_method": "radial Maxwell quadrature and rational interval arithmetic",
+    "Gaussian_radial_cases": [
+      {
+        "chi": 0.02,
+        "radial_subintervals": 16384,
+        "p8": 2.0901449202533415e-05,
+        "analytic_p8": 2.090144920253341e-05,
+        "norm": 0.021990004246792982,
+        "norm_upper": 0.023430527666066157,
+        "mean_kinetic": 0.018024985480717536,
+        "mean_kinetic_upper": 0.018292682926829267
+      },
+      {
+        "chi": 0.001,
+        "radial_subintervals": 16384,
+        "p8": 1.306340575158338e-10,
+        "analytic_p8": 1.3063405751583379e-10,
+        "norm": 0.0011676154686456031,
+        "norm_upper": 0.001171526383303308,
+        "mean_kinetic": 0.0009139384993544424,
+        "mean_kinetic_upper": 0.0009146341463414635
+      }
+    ],
+    "radial_norm_squared_omission_upper": 1.318619548537596e-54,
+    "C_R_interval": [
+      {
+        "fraction": "6148170459575759029932623208312631194441/5248000000000000000000000000000000000000",
+        "decimal": 1.1715263833033078
+      },
+      {
+        "fraction": "307408522978787951496631160415631559722051/262400000000000000000000000000000000000000",
+        "decimal": 1.1715263833033078
+      }
+    ],
+    "chi_position_interval": [
+      {
+        "fraction": "26240000000000000000000000000000000000/645504000000000000307408522978787951496631160415631559722051",
+        "decimal": 4.065040650406504e-23
+      },
+      {
+        "fraction": "524800000000000000000000000000000000/12910080000000000006148170459575759029932623208312631194441",
+        "decimal": 4.065040650406504e-23
+      }
+    ],
+    "conservative_length_threshold": {
+      "fraction": "701427116670007276839719100368002851493854984572972055481/10000000000000000000000000000000000000000",
+      "decimal": 7.014271166700073e+16
+    },
+    "chi_witness": {
+      "fraction": "1/10000000000000000000000000000000000000000",
+      "decimal": 1e-40
+    },
+    "mu_witness": {
+      "fraction": "1/1000000000000000000000000000000",
+      "decimal": 1e-30
+    },
+    "conservative_mass_interval": [
+      {
+        "fraction": "645504000000000000307408522978787951496631160415631559722051/2624000000000000000000000000000000000000000000000000000000000000000000000",
+        "decimal": 2.46e-13
+      },
+      {
+        "fraction": "500000000000000000000000",
+        "decimal": 5e+23
+      }
+    ],
+    "energy_cap_ratio": {
+      "fraction": "1/10000000000000000000000000000",
+      "decimal": 1e-28
+    },
+    "time_window_failure_upper": {
+      "fraction": "61685027506808491367715568749225944595711822978984476537198884728310958709303049/625000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "decimal": 9.869604401089358e-08
+    },
+    "single_time_position_failure_upper": {
+      "fraction": "645504000000000000307408522978787951496631160415631559722051/2624000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "decimal": 2.46e-22
+    },
+    "body_compactness": {
+      "fraction": "1/500000000000000000000000000",
+      "decimal": 2e-27
+    },
+    "free_relativistic_norm_upper": {
+      "fraction": "307408522978787951496631160415631559722051/2624000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "decimal": 1.1715263833033078e-40
+    },
+    "complete_mean_COM_kinetic_upper": {
+      "fraction": "3/32800000000000000000000000000000000000000",
+      "decimal": 9.146341463414634e-41
+    },
+    "heavy_body_screen_deletion": {
+      "fraction": "1/5000000",
+      "decimal": 2e-07
+    },
+    "small_L_sufficient_certificate_interval": [
+      {
+        "fraction": "12910080000000000006148170459575759029932623208312631194441/5248000000000000000000000000000000000000000000",
+        "decimal": 2460000000000.0
+      },
+      {
+        "fraction": "1/20",
+        "decimal": 0.05
+      }
+    ],
+    "neither_empty_certificate_nor_compactness_is_a_physical_no_go": true,
+    "no_joint_repeated_measurement_or_curved_source_response_certified": true
+  },
+  "source_sha256": {
+    "admission.md": "71a4d3273ae86155f392880a3cc4b501c3be0b47376c0e3703e3a68e0369b192",
+    "proof.md": "d8f6bf93727303271ccc38e7264d707887993daac94d621919cd28c01663cd2c",
+    "check.py": "2e1a06c1584fcba3b59cc3fdd3f0743627658c9311a34a0fc80c49153b93a13c",
+    "results.json": "f964be8d4931263de36106bf71f866ae67a6303794a88eea5b5b41e992fd742d",
+    "NEXT.md": "a925db54f54f8c10324b716c776675e723c943e2bc62f9f5cd4b98607b5845e8"
+  },
+  "actual_arrival_instrument": false,
+  "actual_multiple_measurement_history": false,
+  "gravitational_return_error_bound": false,
+  "CT": "candidate, not adopted"
+}

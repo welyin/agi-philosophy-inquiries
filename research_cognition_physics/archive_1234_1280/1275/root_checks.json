@@ -1,0 +1,20 @@
+{
+  "round": 1275,
+  "checks": [
+    {
+      "script": "independent_check.py",
+      "script_sha256": "6b836ac512adbaf5acfec16b2d6c9b42e2b12a37bae3c229310c5382860106fe",
+      "executed_by": "/root",
+      "execution_chunk": "40c2b4",
+      "exit_code": 0,
+      "stdout": "PASS_WITH_SCOPE; three independent cases; exact TV=1/7; actual_instrument_certified=false"
+    },
+    {
+      "script": "check.py",
+      "script_sha256": "1dedaf5e9a4d8d08c6d471f1b080108b13b342e2ee2863bb420b7d2e91dd70f4",
+      "executed_by": "/root",
+      "exit_code": 0,
+      "stdout": "{\"status\": \"PASS\", \"mode\": \"READ_ONLY_MATCH\", \"author_groups\": 1, \"total_variation\": 0.1428571428571442, \"first_measurement_energy\": 0.0816675649589858, \"maximum_residual\": 5.566789008044431e-14}"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "verdict": "PASS_CONDITIONAL_KINETIC_CLOCK_DIAGNOSTIC_ONLY",
+  "independent_groups": 1,
+  "numbered_rounds": 0,
+  "exact": {
+    "D_branch_old": "290/333",
+    "D_branch_changed": "580/623",
+    "branch_difference": "12470/207459",
+    "total_rate_ratio_at_same_state": "623/333",
+    "old_W_y_coefficient": "0",
+    "changed_W_y_coefficient": "12470/207459",
+    "exp7_positive_sum_through_degree_15": "1122910472627/1026432000",
+    "finite_W_strict_lower": "3741/62300",
+    "record_score_oscillation": "1",
+    "TV_per_history_contract": "1/1000",
+    "observed_W_difference_strict_lower": "9041/155750"
+  },
+  "algebra": {
+    "directed_channels_per_model": 12,
+    "equilibrium_symbol": "z=exp(J/kBT), weights=(1,z,z,1)",
+    "generator_times_Gibbs_numerator_zero_coefficientwise": true,
+    "finite_record_classifications": 12,
+    "old_W_identity_for_all_event_weights": true,
+    "L_R_labels_only_coarsened_for_W_not_for_heat": true,
+    "positive_common_speed_examples": [
+      "290/333",
+      "290/333",
+      "290/333",
+      "290/333"
+    ]
+  },
+  "scope": [
+    "Same marked state, fixed labels, same homogeneous rate model.",
+    "Equilibrium statement requires V=0 and common temperature.",
+    "Time changes multiply all outgoing channels together.",
+    "No-event is retained; no postselection of first-jump records.",
+    "Actual readout precision and effective-model error are inputs.",
+    "No whole-geometry, arbitrary quantum-input, or GR exclusion.",
+    "External resistance comparison is not an autonomous resistance update."
+  ],
+  "source_sha256": "4daa465deee8a2006b561c495c443e32b3eee29e02a2dddc535232fdec750920"
+}

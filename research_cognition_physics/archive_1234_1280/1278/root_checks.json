@@ -1,0 +1,29 @@
+{
+  "round": 1278,
+  "status": "PASS",
+  "checks": [
+    {
+      "script": "check.py",
+      "result_file": "results.json",
+      "script_sha256": "02faf48f559b715c7fdcdd0a4beac564b57c78cdd45b81fac85b7b80007bbad9",
+      "result_sha256": "49c4f2a7c8ae46a174e0ba7a96ebbdb900e1e42fd5c1b4901ae8d111788475db",
+      "exit_code": 0,
+      "stdout": "READ_ONLY_MATCH PASS_AUTHOR_FINITE_COMMON_RESPONSE\nrelative_geometry_gap_lower = 9/100000000\nactual_local_energy_gain_lower = 1/500\nauthor_groups = 1\n",
+      "stderr": "",
+      "read_only_match": true,
+      "cwd": ".tmp"
+    },
+    {
+      "script": "independent_check.py",
+      "result_file": "independent_results.json",
+      "script_sha256": "e0b69f7b70fedd4fc54f890801d2464264a1afd65ac6a13dc47b272d1b2616f9",
+      "result_sha256": "da1386a7423f7aebdb21f3aa36418bf5d7d9c411882259ef04f8c531176dfcc4",
+      "exit_code": 0,
+      "stdout": "{\"status\": \"PASS_INDEPENDENT_WITH_SCOPE\", \"mode\": \"READ_ONLY_MATCH\", \"xi_minus_tau_gap_strict_lower\": \"9e-8\", \"non_reparametrization_gap_strict_lower\": \"6e-8\", \"results_sha256\": \"da1386a7423f7aebdb21f3aa36418bf5d7d9c411882259ef04f8c531176dfcc4\"}\n",
+      "stderr": "",
+      "read_only_match": true,
+      "cwd": ".tmp"
+    }
+  ],
+  "image_checks": false
+}

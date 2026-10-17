@@ -1,0 +1,118 @@
+{
+  "round": 1271,
+  "status": "PASS_AUTHOR_WITH_SCOPE",
+  "author_groups": 1,
+  "tolerance": 3e-09,
+  "new_join": {
+    "same_FK_matrix": 0.0,
+    "same_Gamma": 0.0,
+    "full_physical_mass_shift": 0.0,
+    "direct_full_generator": 0.0,
+    "same_dressed_source_control": 0.0,
+    "proper_fourP_phase": 6.033569310423693e-14,
+    "mass_shell_after_shift": 3.864309262735825e-12
+  },
+  "physical_phase_checks": [
+    {
+      "proper_time": 0.125,
+      "full_unitary_residual": 6.385153927463775e-14,
+      "omitting_work_mass_amplitude_defect": 0.24934946677045539,
+      "exact_defect_formula": "2*abs(sin(proper_time))"
+    },
+    {
+      "proper_time": 0.2243994752564138,
+      "full_unitary_residual": 1.0897571526317822e-13,
+      "omitting_work_mass_amplitude_defect": 0.4450418679126288,
+      "exact_defect_formula": "2*abs(sin(proper_time))"
+    },
+    {
+      "proper_time": 1.5707963267948966,
+      "full_unitary_residual": 6.005798772888563e-13,
+      "omitting_work_mass_amplitude_defect": 2.0,
+      "exact_defect_formula": "2*abs(sin(proper_time))"
+    }
+  ],
+  "boosted_added_work_fourP": [
+    2.5,
+    1.5,
+    0.0,
+    0.0
+  ],
+  "full_single_task_energy_upper": 59.38446455374802,
+  "full_single_task_energy_upper_exact": "152/3 + 2*sqrt(19)",
+  "fresh_copy_inventory": [
+    {
+      "fresh_complete_copies": 1,
+      "energy_upper": 59.38446455374802,
+      "symbolic_upper": "1*(152/3 + 2*sqrt(19))"
+    },
+    {
+      "fresh_complete_copies": 2,
+      "energy_upper": 118.76892910749604,
+      "symbolic_upper": "2*(152/3 + 2*sqrt(19))"
+    },
+    {
+      "fresh_complete_copies": 3,
+      "energy_upper": 178.15339366124405,
+      "symbolic_upper": "3*(152/3 + 2*sqrt(19))"
+    },
+    {
+      "fresh_complete_copies": 8,
+      "energy_upper": 475.07571642998414,
+      "symbolic_upper": "8*(152/3 + 2*sqrt(19))"
+    }
+  ],
+  "ready_middle_energy_weight": "3/4",
+  "all_finite_beta_gibbs_middle_upper": "1/2",
+  "original_D_gibbs_distance_lower": "1/4",
+  "finite_beta_diagnostics": [
+    {
+      "exp_minus_beta": "1/5",
+      "gibbs_middle_weight": "5/26",
+      "gap_to_ready_middle_weight": "29/52"
+    },
+    {
+      "exp_minus_beta": "1/2",
+      "gibbs_middle_weight": "2/5",
+      "gap_to_ready_middle_weight": "7/20"
+    },
+    {
+      "exp_minus_beta": "1",
+      "gibbs_middle_weight": "1/2",
+      "gap_to_ready_middle_weight": "1/4"
+    },
+    {
+      "exp_minus_beta": "2",
+      "gibbs_middle_weight": "2/5",
+      "gap_to_ready_middle_weight": "7/20"
+    },
+    {
+      "exp_minus_beta": "7",
+      "gibbs_middle_weight": "7/50",
+      "gap_to_ready_middle_weight": "61/100"
+    }
+  ],
+  "inherited_thermal_result_status": "PASS",
+  "old_thermal_groups_recomputed": 0,
+  "source_sha256": {
+    "archive_1106_1119/1111/check.py": "704ae4ca016c77e0df83fc9c2d39e90d79e9fbf3d6469c8c5b9bf1dad8a5bd44",
+    "archive_1106_1119/1112/check.py": "6e49d71ec5535fd6999432481938663a5543e2704db993ec7a00b8f475b6cd9f",
+    "archive_1120_1158/1158/proof.md": "8d05617c800014afd8965eaf51874fa3235e16cf2e49a2918ad00ebe5a8e7608",
+    "archive_1161_1200/1166/proof.md": "02335c08c46865b438b075a0d8475e143fc113e01eb711f725b96e4290bb0812",
+    "archive_1201_1218/_shared/thermal_roles_adoption_after1218.md": "0bfd3f7494d731874ffbad260f83ba66885dbd0e4841efbc2a430b03c649553c",
+    "archive_1219_1233/1219/candidate_proof.md": "b9b3ed8f4e39ef90016faa5756622ae8562cb7d4532975d8f10f074577c56dee",
+    "archive_1219_1233/1219/results.json": "b7eb42ab4d1f92f26ef2f9d89fb5fedb1f79e6da265f4dc214a631740270cd3c",
+    "archive_1219_1233/1219/independent_review.md": "615ce0bb637e72a504346ead749f8daeaff7bb724f13a1f4cbe4054e275fe19b",
+    "archive_1234_/1234/proof.md": "bb9f678216ad3d03135a181cf3fd710868ffb95cd68eb7ce594023978dbda116",
+    "archive_1234_/1234/NEXT.md": "d0f20e525c73858da8b886c94acc25b4c7723bb2dc3ff6687c9e6ae79f19af22"
+  },
+  "scope": [
+    "One new complete-material join group; old heat exchange groups not repeated.",
+    "All-history closure is a typed analytic induction, not a random numerical test.",
+    "Two-dimensional fixed-motion internal thermal role; full four-dimensional carrier retained.",
+    "The work mass +2 changes full fourP and phases; it is not a removable physical zero.",
+    "Fresh complete copies include D, clock, stocks, seeds and records; no free reuse/reset.",
+    "Original D Gibbs preparation and arbitrary actual TR menus are not inferred.",
+    "No CT adoption, full-cognitive-programme refutation or GR goal completion."
+  ]
+}

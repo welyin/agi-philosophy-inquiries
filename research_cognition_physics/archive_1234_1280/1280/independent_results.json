@@ -1,0 +1,133 @@
+{
+  "round": 1280,
+  "status": "PASS_WITH_SCOPE",
+  "independent_groups": 1,
+  "strict_fraction_certificate": {
+    "r_pulse_lower": "499/500",
+    "delta_C": "375/498002",
+    "delta_eta": "999/250000",
+    "relative_bound": "591628623/124500500000",
+    "relative_bound_decimal": 0.004752018048120288,
+    "strict_target": "1/200",
+    "strict_margin": "30873877/124500500000",
+    "clock_ratio_upper": "250000/249001",
+    "clock_ratio_excess": "999/249001",
+    "B_positive_lower": "249001/62500",
+    "coherent_improvement_nonzero_jet_example": "-35999/108000"
+  },
+  "curvature_exact_jet_diagnostics": {
+    "continuous_identity_proved_in_review_not_from_samples": true,
+    "jets": [
+      {
+        "r": "1/2",
+        "rprime": "2/3",
+        "rsecond": "-3/5",
+        "Ricci_uu": "12/5",
+        "all_Weyl_components_zero": true,
+        "Ricci_square_zero": true,
+        "parallel_du": true
+      },
+      {
+        "r": "499/500",
+        "rprime": "1/1000",
+        "rsecond": "-1/36000",
+        "Ricci_uu": "1/17964",
+        "all_Weyl_components_zero": true,
+        "Ricci_square_zero": true,
+        "parallel_du": true
+      },
+      {
+        "r": "3/2",
+        "rprime": "-4/7",
+        "rsecond": "5/9",
+        "Ricci_uu": "-20/27",
+        "all_Weyl_components_zero": true,
+        "Ricci_square_zero": true,
+        "parallel_du": true
+      }
+    ]
+  },
+  "numerical_diagnostics": {
+    "rigorous_floating_error": false,
+    "author_implementation_imported": false,
+    "RK4": [
+      {
+        "steps": 4096,
+        "E": 6.052923538596677,
+        "r_minus2": 0.9999159326221755,
+        "rprime_minus2": 0.0001681315089827937,
+        "eta_minus2": -2.0000613483535674,
+        "past_Rosen_zero": -5949.225113672805,
+        "B": 9.078700802079666,
+        "J": 9.078802726447961,
+        "M_eta": 9.078235145658033,
+        "C_integral": 0.00010192436829032584,
+        "relative_actual_difference": -5.1291085782558785e-05,
+        "area_delta": 0.0001681276883249705,
+        "Egeom": -0.0003362445784503625,
+        "sampled_weight_ratio_min": 0.9998626066457008,
+        "sampled_weight_ratio_max": 1.0,
+        "identity_residuals": {
+          "J_minus_B_minus_C": 4.377683111844721e-15,
+          "Raychaudhuri_balance": -6.870643377149266e-15
+        }
+      },
+      {
+        "steps": 8192,
+        "E": 6.052923538596655,
+        "r_minus2": 0.9999159326221708,
+        "rprime_minus2": 0.00016813150898279387,
+        "eta_minus2": -2.0000613483535683,
+        "past_Rosen_zero": -5949.225113672771,
+        "B": 9.078700802079652,
+        "J": 9.078802726447947,
+        "M_eta": 9.078235145658025,
+        "C_integral": 0.00010192436829032519,
+        "relative_actual_difference": -5.1291085781776214e-05,
+        "area_delta": 0.00016812768833429637,
+        "Egeom": -0.000336244578450361,
+        "sampled_weight_ratio_min": 0.9998625739877408,
+        "sampled_weight_ratio_max": 1.0,
+        "identity_residuals": {
+          "J_minus_B_minus_C": 4.3783336331482126e-15,
+          "Raychaudhuri_balance": 2.4544710881813092e-15
+        }
+      }
+    ],
+    "Gauss": [
+      {
+        "order": 128,
+        "E": 6.0529235385966285
+      },
+      {
+        "order": 256,
+        "E": 6.052923538596659
+      },
+      {
+        "order": 512,
+        "E": 6.052923538596637
+      }
+    ]
+  },
+  "reviewed_scope": {
+    "natural_eta_reference_new": true,
+    "transverse_topology": "R^2, response densities or finite transverse null subalgebra",
+    "bulk_reference_Hadamard": true,
+    "absolute_minimal_reference_stress_zero_in_fixed_scheme": true,
+    "local_normal_coherent_state": true,
+    "global_finite_energy_Fock_state": false,
+    "actual_observer_KMS_certified": false,
+    "full_finite_resource_readout_certified": false,
+    "whole_goal_completed": false
+  },
+  "bindings": {
+    "admission.md": "b4269abd82b794d5c02ea613f7d7259203441a4ce9a2eb640436962fab683754",
+    "fixed_spec.md": "8329836937b059188a61825a4bf9ff96c9e706c3addffc854f191122e7cffe7b",
+    "proof.md": "760534ff5559be3ab95dc121054b18e9272f534f7d6b393cd6a271b7d8b3e8ec",
+    "check.py": "ad2f58a9acbefc0f057c04ebeadcdf290730ff3df5d88e42043e8481d6e42cd4",
+    "results.json": "69157a63c980f8ecdc430a3e4154e76a738939352602fe052ddccb5dabaf7f85",
+    "independent_check.py": "2b9c58473b7274d423d6ff354fe8b063f2966cefdf5bcea63e71e7991dc5616d",
+    "../1279/proof.md": "e19d39d32677f49bdd54121b4dbbc908ac5fe917de489918bc3722b918e00523",
+    "../1279/results.json": "21b80fbc89d1686427faa42bdec7d77020bb3e31203b2159fd451d37e71ff629"
+  }
+}

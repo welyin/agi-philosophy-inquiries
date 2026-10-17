@@ -1,0 +1,59 @@
+{
+  "status": "PASS_EXACT_NON_NUMBERED_ENERGY_DICTIONARY",
+  "new_science_groups": 0,
+  "fixed_certificate": {
+    "alpha": 1,
+    "kappa": "3",
+    "coordinate_volume": "1000",
+    "start": "2",
+    "end": "2001/1000",
+    "duration": "1/1000",
+    "window_and_coarsenings_are_fixed_certificate_choices": true
+  },
+  "frozen_endpoint": {
+    "u": [
+      "374433995592595869902044260917623393/1000000000000000000000000000000000000",
+      "46804249449074484318062978179391493/125000000000000000000000000000000000"
+    ],
+    "H": [
+      "269375015477565854832896419826754243/1000000000000000000000000000000000000",
+      "269375015477565861854692509148523581/1000000000000000000000000000000000000"
+    ],
+    "P": [
+      "-51271853082474788527068447005583/8000000000000000000000000000000000",
+      "-6408981635309346767863072628613439/1000000000000000000000000000000000000"
+    ]
+  },
+  "analytic_inputs_from_1248_section2": {
+    "abs_Hprime_lt": "9/40",
+    "abs_Pprime_lt": "1",
+    "u_equation": "u'=-H*u",
+    "energy_equation": "E_mat'=-3*V*a^3*H*P",
+    "these_bounds_are_inherited_proofs_not_numerical_sampling": true
+  },
+  "strict_window_bounds": {
+    "derived_H_lower": "269150015477565854832896419826754243/1000000000000000000000000000000000000",
+    "derived_P_upper": "-5408981635309346767863072628613439/1000000000000000000000000000000000000",
+    "coarsened_H_gt": "1/4",
+    "coarsened_u_lt": "3/8",
+    "coarsened_P_lt": "-27/5000",
+    "E_mat_prime_gt": "384/5",
+    "E_mat_increase_gt": "48/625"
+  },
+  "analytic_contrast": {
+    "hold_pulses": "w=f=0",
+    "J_prime": "0",
+    "H_red": "-V*J",
+    "H_red_change": "0",
+    "fixed_affine_function_of_H_red_change": "0",
+    "rules_out_only_fixed_affine_identification_with_material_energy": true,
+    "does_not_rule_out_relational_or_gravitational_parent": true
+  },
+  "source_sha256": {
+    "1247/results.json": "dbcd590e7816bc423c49a4e1bf83bab6fa50a84dd5578249cc493a15cd72bf06",
+    "1248/proof.md": "649561632e352c3aa07bf1e75f57edb754b06453e3c53a4b39c564cf5b51f559",
+    "1249/canonical.md": "6f7e4417dc96ee8062111cb4778e8e093257c7248916fedbce5db39eeb3cd989"
+  },
+  "code_sha256": "5a9fb80d8ec05ba3c873da4cffc1dd02f8b8f11858c1a5da039297f99cdec050",
+  "scope": "Frozen classical same-history identity check; no physical readout or TR realization certified."
+}

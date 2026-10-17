@@ -1,0 +1,119 @@
+{
+  "status": "PASS_BOUNDED_ROLE_SCREEN_ONLY",
+  "mean_energy": "11/10",
+  "same_entropy_exact_reason": "identical eigenvalue multisets",
+  "same_relative_entropy_exact_reason": "same H, mean energy, entropy and Gibbs reference",
+  "monotone_tests": [
+    {
+      "direction": "p_to_q",
+      "t": "3/4",
+      "source_M": "1/4",
+      "target_M": "7/20",
+      "exact_gap": "1/10",
+      "conditional_error_lower": "389/4000"
+    },
+    {
+      "direction": "q_to_p",
+      "t": "3/2",
+      "source_M": "0",
+      "target_M": "1/10",
+      "exact_gap": "1/10",
+      "conditional_error_lower": "193/2000"
+    }
+  ],
+  "energy_preserving_permutation": [
+    0,
+    3,
+    4,
+    1,
+    2,
+    5,
+    6,
+    9,
+    10,
+    7,
+    8,
+    11
+  ],
+  "assisted_conversions": [
+    {
+      "source": [
+        "2/5",
+        "3/10",
+        "1/10",
+        "1/5"
+      ],
+      "joint_final": [
+        "0",
+        "0",
+        "3/10",
+        "2/5",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/5",
+        "1/10",
+        "0",
+        "0"
+      ],
+      "material_final": [
+        "3/10",
+        "2/5",
+        "1/5",
+        "1/10"
+      ],
+      "auxiliary_final": [
+        "1/2",
+        "0",
+        "1/2"
+      ],
+      "auxiliary_mean": "1",
+      "auxiliary_variance": "1",
+      "auxiliary_return_probability": "0",
+      "auxiliary_entropy_increase": "log(2)",
+      "final_mutual_information": "log(2)"
+    },
+    {
+      "source": [
+        "3/10",
+        "2/5",
+        "1/5",
+        "1/10"
+      ],
+      "joint_final": [
+        "0",
+        "0",
+        "2/5",
+        "3/10",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/10",
+        "1/5",
+        "0",
+        "0"
+      ],
+      "material_final": [
+        "2/5",
+        "3/10",
+        "1/10",
+        "1/5"
+      ],
+      "auxiliary_final": [
+        "1/2",
+        "0",
+        "1/2"
+      ],
+      "auxiliary_mean": "1",
+      "auxiliary_variance": "1",
+      "auxiliary_return_probability": "0",
+      "auxiliary_entropy_increase": "log(2)",
+      "final_mutual_information": "log(2)"
+    }
+  ],
+  "geometry_claim": false,
+  "actual_device_permission_claim": false,
+  "new_axiom": false
+}

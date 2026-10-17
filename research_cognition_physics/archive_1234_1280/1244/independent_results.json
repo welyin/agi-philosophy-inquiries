@@ -1,0 +1,383 @@
+{
+  "round": 1244,
+  "audit": "independent",
+  "status": "PASS",
+  "science_groups": 2,
+  "author_sha256": {
+    "admission.md": "5ecaee30da6454cad3e6ed15a3595a91e1b5ee6d8a68fb04d763a6df21809851",
+    "proof.md": "335246cc4bdc901fed1db17a85bbc5de27f3b905e5a120836a3dea6d0de6da3d",
+    "check.py": "abd33d41f1e5d17b988357c0efef442ce6c2a0e649c265de0e6b5819a69f5cd9",
+    "results.json": "fd5c047892415e8fbfd8173b366ca2862b453d5d36a4abcf1cc96a993ec90f7c",
+    "NEXT.md": "894264e0e3ecf45004ccfe6a3824fb23e8387dc9863f2fa0d26fa05eec1f8691"
+  },
+  "independent_code_sha256": "2e1914e66e156e423d70d873a7f10a594f8f33fe6d76fa0f6064f6c890501a81",
+  "groups": {
+    "finite_radar_budget": {
+      "status": "PASS",
+      "cone_guards": [
+        {
+          "epsilon": {
+            "rational": "0",
+            "decimal_diagnostic": 0.0
+          },
+          "cplus_squared": {
+            "rational": "1",
+            "decimal_diagnostic": 1.0
+          }
+        },
+        {
+          "epsilon": {
+            "rational": "1/10000",
+            "decimal_diagnostic": 0.0001
+          },
+          "cplus_squared": {
+            "rational": "10001/9999",
+            "decimal_diagnostic": 1.0002000200020003
+          }
+        },
+        {
+          "epsilon": {
+            "rational": "1/4",
+            "decimal_diagnostic": 0.25
+          },
+          "cplus_squared": {
+            "rational": "5/3",
+            "decimal_diagnostic": 1.6666666666666667
+          }
+        }
+      ],
+      "acceleration_constant_safe_upper": {
+        "rational": "52",
+        "decimal_diagnostic": 52.0
+      },
+      "frame_exponential_independent_enclosure": {
+        "lower": {
+          "rational": "250500500333500066233237483993320966838542701/250000000000000000000000000000000000000000000",
+          "decimal_diagnostic": 1.0020020013340003
+        },
+        "upper": {
+          "rational": "125250250166750033572276497686232577757961387/125000000000000000000000000000000000000000000",
+          "decimal_diagnostic": 1.0020020013340003
+        },
+        "width": {
+          "rational": "911315511379144188677380073/250000000000000000000000000000000000000000000",
+          "decimal_diagnostic": 3.6452620455165765e-18
+        }
+      },
+      "frame_rational_bound": {
+        "rational": "1/249",
+        "decimal_diagnostic": 0.004016064257028112
+      },
+      "dmax": {
+        "rational": "5001/50000",
+        "decimal_diagnostic": 0.10002
+      },
+      "geometry_terms": [
+        {
+          "rational": "1/25000",
+          "decimal_diagnostic": 4e-05
+        },
+        {
+          "rational": "1667/4150000",
+          "decimal_diagnostic": 0.0004016867469879518
+        },
+        {
+          "rational": "175070007/625000000000",
+          "decimal_diagnostic": 0.0002801120112
+        }
+      ],
+      "geometric_error": {
+        "rational": "37443310581/51875000000000",
+        "decimal_diagnostic": 0.0007217987581879518
+      },
+      "instrument_error": {
+        "rational": "20001/500000000",
+        "decimal_diagnostic": 4.0002e-05
+      },
+      "two_observer_error": {
+        "rational": "118555242993/51875000000000",
+        "decimal_diagnostic": 0.0022854022745638553
+      },
+      "author_exact_budget_match": true,
+      "deletions": {
+        "flat_direction_identity_removed_error_squared": {
+          "rational": "1/25",
+          "decimal_diagnostic": 0.04
+        },
+        "flat_clock_calibration_removed_error": {
+          "rational": "1/5",
+          "decimal_diagnostic": 0.2
+        },
+        "unbounded_rapidity_amplification": [
+          {
+            "D": {
+              "rational": "2",
+              "decimal_diagnostic": 2.0
+            },
+            "squared_norm_ratio": {
+              "rational": "4",
+              "decimal_diagnostic": 4.0
+            }
+          },
+          {
+            "D": {
+              "rational": "4",
+              "decimal_diagnostic": 4.0
+            },
+            "squared_norm_ratio": {
+              "rational": "16",
+              "decimal_diagnostic": 16.0
+            }
+          },
+          {
+            "D": {
+              "rational": "8",
+              "decimal_diagnostic": 8.0
+            },
+            "squared_norm_ratio": {
+              "rational": "64",
+              "decimal_diagnostic": 64.0
+            }
+          }
+        ]
+      },
+      "scope": "Declared finite tube/readout contracts only, not an implemented two-observer apparatus."
+    },
+    "curved_calibrations": {
+      "status": "PASS",
+      "cases": [
+        {
+          "H": {
+            "rational": "1/10",
+            "decimal_diagnostic": 0.1
+          },
+          "emission": {
+            "rational": "1/10",
+            "decimal_diagnostic": 0.1
+          },
+          "D": {
+            "rational": "2",
+            "decimal_diagnostic": 2.0
+          },
+          "relative_velocity": {
+            "rational": "3/5",
+            "decimal_diagnostic": 0.6
+          },
+          "tanh_enclosure": {
+            "lower": {
+              "rational": "99999166674999460939475050679118011997249/20000000000000000000000000000000000000000000",
+              "decimal_diagnostic": 0.004999958333749973
+            },
+            "upper": {
+              "rational": "2499979166875009260285995875345131377720231/500000000000000000000000000000000000000000000",
+              "decimal_diagnostic": 0.004999958333750019
+            },
+            "width": {
+              "rational": "11368399559804183590538894503/250000000000000000000000000000000000000000000",
+              "decimal_diagnostic": 4.547359823921673e-17
+            }
+          },
+          "B_reception": {
+            "lower": {
+              "rational": "5000125006091373538027715717085863264967253/25000000000000000000000000000000000000000000",
+              "decimal_diagnostic": 0.20000500024365495
+            },
+            "upper": {
+              "rational": "10000250013136679262770416989822491073058257/50000000000000000000000000000000000000000000",
+              "decimal_diagnostic": 0.20000500026273357
+            },
+            "width": {
+              "rational": "953932186714985555650764543123751/50000000000000000000000000000000000000000000",
+              "decimal_diagnostic": 1.9078643734299712e-11
+            }
+          },
+          "A_return": {
+            "lower": {
+              "rational": "10001250286306124102453038126912158863370213/25000000000000000000000000000000000000000000",
+              "decimal_diagnostic": 0.40005001145224495
+            },
+            "upper": {
+              "rational": "5000625145061935223555112985306597620610763/12500000000000000000000000000000000000000000",
+              "decimal_diagnostic": 0.4000500116049548
+            },
+            "width": {
+              "rational": "3817746344657187843701036377851313/25000000000000000000000000000000000000000000",
+              "decimal_diagnostic": 1.527098537862875e-10
+            }
+          },
+          "transported_radar_minus_B": {
+            "time": {
+              "lower": {
+                "rational": "750260032765576912204147267176717253699/100000000000000000000000000000000000000000000",
+                "decimal_diagnostic": 7.5026003276557695e-06
+              },
+              "upper": {
+                "rational": "375132879188147499681551134871090676257/50000000000000000000000000000000000000000000",
+                "decimal_diagnostic": 7.50265758376295e-06
+              },
+              "width": {
+                "rational": "1145122143617431791000513092819763/20000000000000000000000000000000000000000000",
+                "decimal_diagnostic": 5.725610718087159e-11
+              }
+            },
+            "space": {
+              "lower": {
+                "rational": "1250286306124102453038126912158863370213/100000000000000000000000000000000000000000000",
+                "decimal_diagnostic": 1.2502863061241025e-05
+              },
+              "upper": {
+                "rational": "625145061935223555112985306597620610763/50000000000000000000000000000000000000000000",
+                "decimal_diagnostic": 1.250290123870447e-05
+              },
+              "width": {
+                "rational": "3817746344657187843701036377851313/100000000000000000000000000000000000000000000",
+                "decimal_diagnostic": 3.817746344657188e-11
+              }
+            }
+          },
+          "analytic_positive_spatial_lower": {
+            "rational": "999975000458312416454935198409326634533068122780237121912024963238298660911201726262118037274997247585738162949781216429249/80000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "decimal_diagnostic": 1.2499687505728905e-05
+          },
+          "exact_RNC_coefficients": [
+            {
+              "rational": "1",
+              "decimal_diagnostic": 1.0
+            },
+            {
+              "rational": "0",
+              "decimal_diagnostic": 0.0
+            }
+          ],
+          "flat_limit_discrepancy": {
+            "rational": "0",
+            "decimal_diagnostic": 0.0
+          },
+          "author_intervals_contained": {
+            "B_reception_proper_time": true,
+            "A_return_proper_time": true
+          }
+        },
+        {
+          "H": {
+            "rational": "1/5",
+            "decimal_diagnostic": 0.2
+          },
+          "emission": {
+            "rational": "1/10",
+            "decimal_diagnostic": 0.1
+          },
+          "D": {
+            "rational": "3/2",
+            "decimal_diagnostic": 1.5
+          },
+          "relative_velocity": {
+            "rational": "5/13",
+            "decimal_diagnostic": 0.38461538461538464
+          },
+          "tanh_enclosure": {
+            "lower": {
+              "rational": "399986667199974775958123325576118047691749/40000000000000000000000000000000000000000000",
+              "decimal_diagnostic": 0.00999966667999937
+            },
+            "upper": {
+              "rational": "9999666679999551279704756280481739486050227/1000000000000000000000000000000000000000000000",
+              "decimal_diagnostic": 0.00999966667999955
+            },
+            "width": {
+              "rational": "90940375836570539394146878251/500000000000000000000000000000000000000000000",
+              "decimal_diagnostic": 1.8188075167314107e-16
+            }
+          },
+          "B_reception": {
+            "lower": {
+              "rational": "15000625058308141597076974077296224005455893/100000000000000000000000000000000000000000000",
+              "decimal_diagnostic": 0.15000625058308142
+            },
+            "upper": {
+              "rational": "3750156265382048023914774471588741178230931/25000000000000000000000000000000000000000000",
+              "decimal_diagnostic": 0.15000625061528192
+            },
+            "width": {
+              "rational": "3220050498582123809058740707467831/100000000000000000000000000000000000000000000",
+              "decimal_diagnostic": 3.2200504985821236e-11
+            }
+          },
+          "A_return": {
+            "lower": {
+              "rational": "22503047675240328199207821109674433915211583/100000000000000000000000000000000000000000000",
+              "decimal_diagnostic": 0.22503047675240329
+            },
+            "upper": {
+              "rational": "1406440480382100199031026038271475752103987/6250000000000000000000000000000000000000000",
+              "decimal_diagnostic": 0.22503047686113603
+            },
+            "width": {
+              "rational": "10873274985288595502669178118452209/100000000000000000000000000000000000000000000",
+              "decimal_diagnostic": 1.0873274985288596e-10
+            }
+          },
+          "transported_radar_minus_B": {
+            "time": {
+              "lower": {
+                "rational": "390830218583970743509150203179925480137/100000000000000000000000000000000000000000000",
+                "decimal_diagnostic": 3.908302185839707e-06
+              },
+              "upper": {
+                "rational": "1172511189178393265494380454940017296113/300000000000000000000000000000000000000000000",
+                "decimal_diagnostic": 3.908370630594644e-06
+              },
+              "width": {
+                "rational": "10266713240517483464922700120427851/150000000000000000000000000000000000000000000",
+                "decimal_diagnostic": 6.844475493678322e-11
+              }
+            },
+            "space": {
+              "lower": {
+                "rational": "1015891746776066402607036558144638403861/100000000000000000000000000000000000000000000",
+                "decimal_diagnostic": 1.0158917467760664e-05
+              },
+              "upper": {
+                "rational": "190480382100199031026038271475752103987/18750000000000000000000000000000000000000000",
+                "decimal_diagnostic": 1.0158953712010615e-05
+              },
+              "width": {
+                "rational": "10873274985288595502669178118452209/300000000000000000000000000000000000000000000",
+                "decimal_diagnostic": 3.6244249950961987e-11
+              }
+            }
+          },
+          "analytic_positive_spatial_lower": {
+            "rational": "831916806100923272458111435284224420438770778593189816375175330583749866429429949117767277558559210461919785214572855202415737/81920000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "decimal_diagnostic": 1.0155234449474161e-05
+          },
+          "exact_RNC_coefficients": [
+            {
+              "rational": "1",
+              "decimal_diagnostic": 1.0
+            },
+            {
+              "rational": "0",
+              "decimal_diagnostic": 0.0
+            }
+          ],
+          "flat_limit_discrepancy": {
+            "rational": "0",
+            "decimal_diagnostic": 0.0
+          },
+          "author_intervals_contained": null
+        }
+      ],
+      "certification": {
+        "exp_method": "Bernoulli product enclosure with 40 repeated squarings",
+        "atanh_method": "convex-integrand midpoint lower / trapezoid upper; 512 cells",
+        "outward_grid": "1000000000000000000000000000000000000000000000"
+      },
+      "scope": "Specified curved geometry and ideal clock/null contracts; neither case certifies group 1 domain bounds or full source/feedback."
+    }
+  },
+  "CT_adopted": false,
+  "complete_apparatus_realization": false,
+  "full_active_SR_R_proved": false,
+  "GR_dynamics_derived": false
+}

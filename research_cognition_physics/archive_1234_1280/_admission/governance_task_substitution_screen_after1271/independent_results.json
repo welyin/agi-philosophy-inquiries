@@ -1,0 +1,321 @@
+{
+  "verdict": "PASS_WITH_SCOPE",
+  "independent_groups": 1,
+  "new_numbered_rounds": 0,
+  "new_formal_science_groups": 0,
+  "method": "16 diagonal effect vertices; exact total-energy blocks; all matrix units",
+  "scalar_identities": {
+    "mean_energy": "11/10",
+    "same_entropy": "equal eigenvalue multiset",
+    "same_free_energy": "same beta, energy, entropy",
+    "same_relative_entropy": "D=-S+beta E+log Z"
+  },
+  "monotone_tests": [
+    {
+      "direction": "p_to_q",
+      "t": "3/4",
+      "source_max": "1/4",
+      "target_max": "7/20",
+      "source_maximizers": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "target_maximizers": [
+        [
+          0,
+          1,
+          1,
+          1
+        ]
+      ],
+      "gap": "1/10",
+      "conditional_bound": "389/4000"
+    },
+    {
+      "direction": "q_to_p",
+      "t": "3/2",
+      "source_max": "0",
+      "target_max": "1/10",
+      "source_maximizers": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          1
+        ]
+      ],
+      "target_maximizers": [
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "gap": "1/10",
+      "conditional_bound": "193/2000"
+    }
+  ],
+  "energy_block_dimensions": [
+    1,
+    2,
+    3,
+    3,
+    2,
+    1
+  ],
+  "unitary_bijective_involution": true,
+  "commutes_with_total_H": true,
+  "assisted_conversions": [
+    {
+      "direction": "p_to_q",
+      "joint_nonzero": [
+        {
+          "state": [
+            0,
+            2
+          ],
+          "probability": "3/10"
+        },
+        {
+          "state": [
+            1,
+            0
+          ],
+          "probability": "2/5"
+        },
+        {
+          "state": [
+            2,
+            2
+          ],
+          "probability": "1/5"
+        },
+        {
+          "state": [
+            3,
+            0
+          ],
+          "probability": "1/10"
+        }
+      ],
+      "S_output": [
+        "3/10",
+        "2/5",
+        "1/5",
+        "1/10"
+      ],
+      "W_output": [
+        "1/2",
+        "0",
+        "1/2"
+      ],
+      "total_mean_energy": "21/10",
+      "W_mean": "1",
+      "W_variance": "1",
+      "W_return_probability": "0",
+      "W_trace_distance_from_blank": "1",
+      "W_entropy_increase": "log(2)",
+      "joint_entropy_equals_input_exact": true,
+      "conditional_W_entropy_given_S": "0",
+      "mutual_information": "log(2)"
+    },
+    {
+      "direction": "q_to_p",
+      "joint_nonzero": [
+        {
+          "state": [
+            0,
+            2
+          ],
+          "probability": "2/5"
+        },
+        {
+          "state": [
+            1,
+            0
+          ],
+          "probability": "3/10"
+        },
+        {
+          "state": [
+            2,
+            2
+          ],
+          "probability": "1/10"
+        },
+        {
+          "state": [
+            3,
+            0
+          ],
+          "probability": "1/5"
+        }
+      ],
+      "S_output": [
+        "2/5",
+        "3/10",
+        "1/10",
+        "1/5"
+      ],
+      "W_output": [
+        "1/2",
+        "0",
+        "1/2"
+      ],
+      "total_mean_energy": "21/10",
+      "W_mean": "1",
+      "W_variance": "1",
+      "W_return_probability": "0",
+      "W_trace_distance_from_blank": "1",
+      "W_entropy_increase": "log(2)",
+      "joint_entropy_equals_input_exact": true,
+      "conditional_W_entropy_given_S": "0",
+      "mutual_information": "log(2)"
+    }
+  ],
+  "general_reduced_channel": {
+    "formula": "Xpair*(Peven*rho*Peven+Podd*rho*Podd)*Xpair",
+    "preserved_matrix_units": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    "removed_matrix_units": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        2
+      ]
+    ],
+    "Gibbs_reference_drift": "1/3"
+  },
+  "scope": [
+    "Additional scalar simplification, not the user's full conjecture.",
+    "No geometry variable or actual new device permission.",
+    "Unknown spectator acts by U tensor I; correlations need not be preserved.",
+    "Reverse listed task uses a fresh pure W; not free reuse of output W.",
+    "No reopening instantaneous-Gibbs or arbitrary thermal-auxiliary routes."
+  ],
+  "independent_code_sha256": "44765191cf110d3883a7f32657aee2024fda74104d7a9c1ef506af1ee7c7b72d"
+}

@@ -1,0 +1,74 @@
+{
+  "status": "PASS",
+  "date": "2026-10-16",
+  "accepted_through": 1264,
+  "science_rounds": 31,
+  "science_groups": [
+    80,
+    66,
+    2
+  ],
+  "frozen_bindings": 323,
+  "distinct_frozen_science_files": 328,
+  "local_links": 435,
+  "root_replays": [
+    {
+      "path": "1264/source_check.py",
+      "exit_code": 0,
+      "stdout": "{\r\n  \"status\": \"PASS_AUTHOR_WITH_SCOPE\",\r\n  \"source_author_groups\": 1,\r\n  \"mode\": \"readonly_match\",\r\n  \"L\": \"19100606975\",\r\n  \"R\": \"38201213950\",\r\n  \"display_only\": {\r\n    \"D\": 0.0004999999999711219,\r\n    \"contrast\": 5.4730000000011546e-05,\r\n    \"Hsecond_upper\": 65.288\r\n  }\r\n}\r\n",
+      "execution_chunk": "084624",
+      "code_sha256": "0e06222f39cd01dd5bd20b52d7beef0f433c7231eb78a41c27ff8a0b8a83f262",
+      "command": [
+        "C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "D:\\workspace\\AGI的哲学思考\\research_cognition_physics\\archive_1234_\\1264\\source_check.py"
+      ],
+      "read_only": true,
+      "performed_before_publication": true,
+      "repeated_by_publication": false
+    },
+    {
+      "path": "1264/independent_check.py",
+      "exit_code": 0,
+      "stdout": "READ_ONLY_MATCH_1264_INDEPENDENT 2\r\n",
+      "execution_chunk": "dec64b",
+      "code_sha256": "fbcc4c34399ebc65bfc2f9b5e040153df1ec2d2ae2670cccf60850b9ce3f15e9",
+      "command": [
+        "C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "D:\\workspace\\AGI的哲学思考\\research_cognition_physics\\archive_1234_\\1264\\independent_check.py"
+      ],
+      "read_only": true,
+      "performed_before_publication": true,
+      "repeated_by_publication": false
+    },
+    {
+      "path": "1264/check.py",
+      "exit_code": 0,
+      "stdout": "{\"status\": \"PASS_AUTHOR_WITH_SCOPE\", \"mode\": \"READ_ONLY_MATCH\", \"author_groups\": 1, \"finite_L\": \"19100606975\", \"joint_contrast_lower\": \"70853/1300000000\", \"declared_contrast\": \"1/20000\"}\r\n",
+      "execution_chunk": "9cff0e",
+      "code_sha256": "d6b16682ca223a52b956f40a317d2861b02797dc82489004d11b28e934e5d23a",
+      "command": [
+        "C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "D:\\workspace\\AGI的哲学思考\\research_cognition_physics\\archive_1234_\\1264\\check.py"
+      ],
+      "read_only": true,
+      "performed_before_publication": true,
+      "repeated_by_publication": false
+    }
+  ],
+  "previous_receipts_sha256": {
+    "round1263_publication_checks.json": "690da1d971b79038641d5eebcc294a8a294ccef5a889233c5d636cdc5a2e8887",
+    "direction_after1263_checks.json": "51b54f838b67cc814bb5a0856c7b974786b1a75fc8c0770935dd4d73974ed0d0"
+  },
+  "goal_status": "active",
+  "goal_prompt_sha256": "29426b934e3ee81d75ef5831b396cd2af6f44eea96711563bb03a2e3796db214",
+  "navigation_layer_sha256": "daf84cf685b7730eac8b4540003581d9278b98042bc66d8cb3d5164d7d3f40e6"
+}

@@ -1,0 +1,41 @@
+{
+  "schema": "gr_response_round_verification_v1",
+  "round": 1235,
+  "date": "2026-10-15",
+  "status": "PASS_WITH_SCOPE",
+  "root_read_proof_code_results_and_independent_review": true,
+  "actual_commands": [
+    {
+      "command": "python -B -X utf8 archive_1234_/1235/check.py",
+      "exit_code": 0,
+      "status": "PASS",
+      "mode": "READ_ONLY_MATCH",
+      "science_groups": 3
+    },
+    {
+      "command": "python -B -X utf8 archive_1234_/1235/independent_check.py",
+      "exit_code": 0,
+      "status": "PASS_CONDITIONAL_FINITE_WINDOW_SCOPE",
+      "mode": "read_only_match",
+      "groups": 3
+    }
+  ],
+  "science_sha256": {
+    "proof.md": "9560bbf7361324e196c11d5abdad01a94285e21efc21a95b1b25e74ab728aa74",
+    "check.py": "db3e8258aa76a792a0c4344dce8804e9588b5fb73953c7274a334e78cd9449c6",
+    "results.json": "c81284677bb5f93d53f5204c2d998e9b6214f41c4d6e0d91d2f12466e9afd741",
+    "admission.md": "d4ee716d31492d8beadc775467a845af6e0e593cb395ffd08c23c8266b7b6940",
+    "NEXT.md": "cf6cbc413e6ee7b7aefae30d44688fcdff6f339b06aa2b8c0946bf0cf4464fa1",
+    "independent_check.py": "0102b206c9e64055a742e29ccdf04389ad7407a2ace435ba83f7e2a75853adf0",
+    "independent_results.json": "6a1e85df5f7fb505d04f548c9ad8ef07febac87486f077d1ad3db3b8a47c5092",
+    "independent_review.md": "716bc3fd49e4a8f3c23f5b31c2c01ccf13688354e29bd3002bc48df4448e87ec"
+  },
+  "report_scope_review": "Independent reviewer passed formulas, numerical bounds, complete-three-scalar versus complete-apparatus scope, and separated budgets. Root applied suggested wording allowing explicit new effective candidates.",
+  "analytic_not_numerical_certificate": [
+    "finite central-difference averaging bound",
+    "strict nonzero source lower bound",
+    "Cauchy mixed-derivative upper bounds"
+  ],
+  "no_new_adopted_axioms": true,
+  "GR_goal_completed": false
+}

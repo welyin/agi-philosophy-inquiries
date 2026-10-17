@@ -1,0 +1,55 @@
+{
+  "schema": "gr_response_round_verification_v1",
+  "round": 1272,
+  "date": "2026-10-17",
+  "status": "PASS_WITH_SCOPE",
+  "root_read_proofs_code_results_and_review": true,
+  "actual_commands": [
+    {
+      "path": "1272/source_check.py",
+      "exit_code": 0,
+      "stdout": "READ_ONLY_MATCH PASS_AUTHOR_WITH_SCOPE\n13 epsilon fixed withdrawal; total source identity exact; old field bound inherited",
+      "code_sha256": "01075bda3b5bf6fa1296e175115df1b39af657012b6d0db194095cb089e40372",
+      "readonly": true
+    },
+    {
+      "path": "1272/protocol_check.py",
+      "exit_code": 0,
+      "stdout": "{\"status\": \"PASS_AUTHOR_PROTOCOL_WITH_SCOPE\", \"dimension\": 15360, \"excitation_support_leak\": 0.0, \"isometry_gram_error\": 6.661368549054195e-16, \"reference_cases\": 3, \"mode\": \"read-only-replay\"}",
+      "code_sha256": "d508690b2358ad78ca660b3874f22e163e13322d8d2e8e7c10cc9eed790c35b6",
+      "readonly": true
+    },
+    {
+      "path": "1272/independent_check.py",
+      "exit_code": 0,
+      "stdout": "READ_ONLY_MATCH PASS_INDEPENDENT_WITH_SCOPE\ngroups=1; nine energy-preserving gates; ideal record difference=3/40",
+      "code_sha256": "44650ad39afddadb8210eef28eb3b853a171d10c04a763d2e90e1faeb086c86d",
+      "readonly": true
+    }
+  ],
+  "science_sha256": {
+    "admission.md": "461c92fd9f1eb287acc72541fe816cf45c80df038cf1debc695cd21bc6790ba6",
+    "candidate_spec.md": "4e32d1e87a691fdb39e9bdae72f6af654f205cfe6216da4e9a959e4c7397cccc",
+    "source_baseline.json": "56d1056065e67f307b6fa5c9ec434edff247ba804fdc1c9487e5cbbbd52d57fd",
+    "source_proof.md": "62ca94c43b8e6372c98b99bbf56b90064b6954b52c0ed8ae21583a58a62d9177",
+    "source_check.py": "01075bda3b5bf6fa1296e175115df1b39af657012b6d0db194095cb089e40372",
+    "source_results.json": "88b2176a2d0cd81342a076bd702f43665912a9e557258c0f93103e8386337aa5",
+    "protocol_proof.md": "d17c2fcdd9132ddda3543011d821b6eec0417b249a7994776cbda7f0de87b205",
+    "protocol_check.py": "d508690b2358ad78ca660b3874f22e163e13322d8d2e8e7c10cc9eed790c35b6",
+    "protocol_results.json": "4e21d3b28e3e0a53121faf2a1605c36d282e067c807a9401295e3d45441719a3",
+    "NEXT.md": "bcfed4a30995c44fdcd4c8c8d9439279fddff20fdfc2648afe9b5316153da85c",
+    "independent_check.py": "44650ad39afddadb8210eef28eb3b853a171d10c04a763d2e90e1faeb086c86d",
+    "independent_results.json": "25f0ff4be68e4962d45ed7ed75f4afa11290532c00afcc62e9cbe7bc98a0f01c",
+    "independent_review.md": "4ee0b019e7faa8e3f7ac2be85c98d63ffa9ad8acc4e5b02aff8b1c6f78d8d316",
+    "../research_note_1272.md": "8139da3bf6a213abcc14850603045ac1420c94c1d741db7372520e03786779cd"
+  },
+  "prior_frozen_bindings": 408,
+  "prior_distinct_frozen_files": 413,
+  "source_baseline_unchanged": true,
+  "new_author_groups": 2,
+  "new_independent_groups": 1,
+  "inherited_checks_recounted": 0,
+  "CT_adopted": false,
+  "GR_goal_completed": false,
+  "scope": "New actual finite co-moving thermal task and exact same-parent source identity; old geometry/source bounds inherited only in their declared preparation domain."
+}

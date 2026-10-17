@@ -1,0 +1,87 @@
+{
+  "status": "PASS_WITH_SCOPE",
+  "scope": {
+    "id": "causal_calibration_source_after1272",
+    "date": "2026-10-17",
+    "status": "reviewed_same_pulse_causal_source_transport",
+    "path": "_admission/causal_calibration_source_after1272/README.md",
+    "author": "/root",
+    "reviewer": "/root/curved_contact_scope",
+    "new_scientific_rounds": 0,
+    "new_formal_check_groups": 0,
+    "new_adopted_axioms": 0,
+    "main_goal_completed": false
+  },
+  "files_sha256": {
+    "README.md": "87caee4c775b58729c5f07e6cb38a410caf8827b30812554893ef950d378a026",
+    "check.py": "aedd7b86adab46130ab2cb9f8c060c381519924b5679872d2f832ba51fd79db2",
+    "results.json": "f204ec5e365b283907a9c819e1ff289dda7ce107842307b8bc2f864fd3019e93",
+    "source_baseline.json": "03ad27c77479cb0ddf01e4b38cd99d344a8777237263f100251cb23380c0dd3b",
+    "independent_review.md": "2192ef6dfb7cc223a6b0a6b42e787fd7e51f6430b5b35c0ae2fa7bc4a17873dd"
+  },
+  "goal_prompt_sha256": "29426b934e3ee81d75ef5831b396cd2af6f44eea96711563bb03a2e3796db214",
+  "goal": "active",
+  "counts": [
+    94,
+    74,
+    2
+  ],
+  "frozen": [
+    423,
+    428
+  ],
+  "links_checked": 651,
+  "navigation": [
+    {
+      "status": "APPLIED",
+      "files": 4,
+      "changed_files": 4,
+      "closed_boundary_unchanged": true,
+      "original_navigation_recoverable": true,
+      "scientific_files_modified": false
+    },
+    {
+      "status": "CHECKED",
+      "files": 4,
+      "changed_files": 0,
+      "closed_boundary_unchanged": true,
+      "original_navigation_recoverable": true,
+      "scientific_files_modified": false
+    }
+  ],
+  "root_readonly_replay": {
+    "mode": "read_only_match",
+    "status": "PASS_WITH_SCOPE",
+    "exact": {
+      "causal_margin": "1/2",
+      "minimum_checked_gap": "1/2",
+      "support_diagnostics": 135,
+      "stress_identity_cases": 3,
+      "commuting_shift_actual_increment": "3/2",
+      "commuting_shift_bare_increment": "1/2",
+      "commuting_shift_cross_increment": "1"
+    },
+    "diagnostics": {
+      "conditional_X_probability_and_mean": [
+        [
+          0.49999999999999994,
+          1.0
+        ],
+        [
+          0.49999999999999994,
+          -1.0
+        ]
+      ]
+    },
+    "interpretation": {
+      "general_causal_proof": "README equations (3)-(6)",
+      "new_QFT_device": false,
+      "finite_G_error_certificate": false,
+      "same_noise_or_branch_sources_claimed": false,
+      "new_formal_round": false
+    }
+  },
+  "same_material_actual_temperature_certified": false,
+  "nonzero_G_joint_remainder_certified": false,
+  "CT_adopted": false
+}

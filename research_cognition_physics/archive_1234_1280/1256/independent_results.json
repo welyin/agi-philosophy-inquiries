@@ -1,0 +1,147 @@
+{
+  "round": 1256,
+  "status": "PASS",
+  "independent_groups": 2,
+  "canonical_source_transport": {
+    "status": "PASS",
+    "DZ": [
+      [
+        "2",
+        "1/3",
+        "0"
+      ],
+      [
+        "0",
+        "3/2",
+        "1/5"
+      ],
+      [
+        "1/7",
+        "0",
+        "4/3"
+      ]
+    ],
+    "det_DZ": "421/105",
+    "label_density": "3/7",
+    "eta": "421/245",
+    "I": "5/4",
+    "p": "-1/3",
+    "mechanical_P": [
+      "2/9",
+      "-1/8",
+      "1/6"
+    ],
+    "phase_gradient": [
+      "1/5",
+      "-2/7",
+      "3/11"
+    ],
+    "Pi_phase": "421/196",
+    "Pi_Z": [
+      "-79741/226380",
+      "36709/58212",
+      "-72643/97020"
+    ],
+    "momentum_density_D": [
+      "-842/2205",
+      "421/1960",
+      "-421/1470"
+    ],
+    "one_form_value": "-19986037922/49191977835",
+    "one_form_residual": "0",
+    "mass": "11/60",
+    "mass_density_sigma": "4631/14700",
+    "energy_density_squared": "3846306941/7779240000",
+    "energy_identity_residual": "0",
+    "spatial_stress_density_times_E": [
+      [
+        "708964/4862025",
+        "-177241/2160900",
+        "177241/1620675"
+      ],
+      [
+        "-177241/2160900",
+        "177241/3841600",
+        "-177241/2881200"
+      ],
+      [
+        "177241/1620675",
+        "-177241/2881200",
+        "177241/2160900"
+      ]
+    ],
+    "matter_H_p_derivative_times_E_over_N": "1949651/28812000",
+    "physical_coordinate_velocity": [
+      "673/1440",
+      "799/19800",
+      "419/2600"
+    ],
+    "actual_phase_advective_rate": "77/4500",
+    "eta_continuity_residual": "0",
+    "I_advection_residual": "0",
+    "mechanical_force_residual": [
+      "0",
+      "0",
+      "0"
+    ],
+    "jet_scope": "Nonzero finite Z Hessians, density gradients and velocity gradients; not a PDE proof"
+  },
+  "deletion_periodicity": {
+    "status": "PASS",
+    "eta": "1/10",
+    "Pi_phase": "1/10",
+    "Pi_Z": [
+      "-1/10",
+      "0",
+      "0"
+    ],
+    "correct_D": [
+      "0",
+      "0",
+      "0"
+    ],
+    "bad_D": [
+      "-1/10",
+      "0",
+      "0"
+    ],
+    "bad_mechanical_P": [
+      "1",
+      "0",
+      "0"
+    ],
+    "bad_physical_momentum_density": [
+      "1/10",
+      "0",
+      "0"
+    ],
+    "correct_E": "1/50",
+    "bad_E_squared": "13/1250",
+    "strict_energy_gap_lower": "2/25",
+    "positive_squared_margin": "1/2500",
+    "periodic_realization": {
+      "coordinate_period": "L=10",
+      "phase": "theta(x)=(5/pi) sin(pi*x1/5)",
+      "phase_at_zero": "0",
+      "gradient_at_zero": [
+        "1",
+        "0",
+        "0"
+      ],
+      "periodicity_certificate": "theta(x1+10)=theta(x1); elementary sine period 2*pi",
+      "label_map": "Z=x on the same torus; identity winding, positive unit Jacobian",
+      "full_original_state": "I=1 and P=0 everywhere; Pi_Z1=-(1/10) cos(pi*x1/5)",
+      "scope": "Smooth periodic material phase; no extra spatial direction, energy, or measurement permission"
+    },
+    "scope": "Tests the same constitutive/source identity; it does not exclude different materials or geometries"
+  },
+  "input_sha256": {
+    "1256\\admission.md": "652dbb19874fb0859fe54f5f5ed102eec52f1bbfbd989366316f2785b2436282",
+    "1256\\proof.md": "2734b9171ce3e4ecebf830fc42574b5a1a3c99983ac4971a8410dbed3e6dad95",
+    "1256\\NEXT.md": "21a98ade4ddbf714261781244775c124d27a849e60ac6afa9a50531ff7d8e519",
+    "1256\\check.py": "b2bebd37b464730e87407ad0da6c86a2ce76087a6cedf856192f4550830ae817",
+    "1256\\results.json": "601ba0d58dd4a3bb07e6733140336334f3abfd1524775bdd2cf62e5621789cbc",
+    "research_note_1256.md": "37b804df1804bb18801522ff8711b53d83e20cfdf84a30f5f7a302e1d1dc6294",
+    "1256\\independent_check.py": "0414c39293baaaf53a72568941e58fcccfa4effed8050711590faf7b011fccb8"
+  }
+}

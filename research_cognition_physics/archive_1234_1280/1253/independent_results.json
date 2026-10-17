@@ -1,0 +1,101 @@
+{
+  "status": "PASS",
+  "independent_groups": 2,
+  "author_code_sha256": "ece2da365a3fa843a19cccb646fe245107528aed99e3b4f99e24ec1eda96fa38",
+  "independent_code_sha256": "64529c73894c7c6f71fa9a18aeeabe2057bd1adf16f889cce272e35651c3514b",
+  "group1_independent_original_gates_and_source": {
+    "prefix_unitarity_residual": 0.0,
+    "record_commutator_residuals": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mass_commutator_residuals": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "all_qutrit_endpoint_residual": 2.553985810731127e-14,
+    "spectral_weights": [
+      1,
+      3,
+      4,
+      4,
+      3,
+      1
+    ],
+    "spectral_denominator": 16,
+    "spectral_residuals": [
+      6.692505656061691e-16,
+      8.08913521243533e-16,
+      4.069177668454251e-15,
+      4.874473797371618e-15,
+      2.2910459335022375e-15,
+      6.799358081321552e-16
+    ],
+    "interaction_energy_residual": 9.423713307172589e-16,
+    "mass_min": 26.717797887081332,
+    "mass_max": 31.717797887081357,
+    "sample_rows": [
+      {
+        "s": 0.7853981633974483,
+        "clock_probability": 0.12500000000000006,
+        "clock_residual": 1.4270800178717628e-15,
+        "all_input_R_residual": 2.466751685589856e-15,
+        "reference_half_trace_distance": 0.5,
+        "complete_isometry_distance": 0.9406267864069006
+      },
+      {
+        "s": 1.5174629934615633,
+        "clock_probability": 0.5805183097086467,
+        "clock_residual": 3.300531314453533e-15,
+        "all_input_R_residual": 7.57173661874774e-15,
+        "reference_half_trace_distance": 0.0028417485123489947,
+        "complete_isometry_distance": 0.07052082494261688
+      },
+      {
+        "s": 1.5707963267948966,
+        "clock_probability": 0.6218592167691145,
+        "clock_residual": 3.617359504232652e-15,
+        "all_input_R_residual": 9.9848409565663e-15,
+        "reference_half_trace_distance": 5.04826644468386e-15,
+        "complete_isometry_distance": 2.217697608588346e-14
+      },
+      {
+        "s": 1.6241296601282298,
+        "clock_probability": 0.6628220179061778,
+        "clock_residual": 4.460725695729228e-15,
+        "all_input_R_residual": 9.78978871577052e-15,
+        "reference_half_trace_distance": 0.002841748512348888,
+        "complete_isometry_distance": 0.07052082494261434
+      },
+      {
+        "s": 1.832595714594046,
+        "clock_probability": 0.8121994080239552,
+        "clock_residual": 3.679967594921404e-15,
+        "all_input_R_residual": 8.80090625943589e-15,
+        "reference_half_trace_distance": 0.06698729810778042,
+        "complete_isometry_distance": 0.34250131995353883
+      }
+    ]
+  },
+  "group2_exact_error_and_joint_coverage": {
+    "derivative_lower": "3/8",
+    "right_endpoint_derivative_strict_lower": "41/64",
+    "p_prime_critical_sine_squared": "5/6",
+    "eta": "1/100",
+    "samples": 30000,
+    "probability_error": "1/50",
+    "time_error": "4/75",
+    "complete_output_bound": "2/15",
+    "receiver_bound": "16/5625",
+    "hoeffding_exponent": "6",
+    "failure_strict_upper": "1/200",
+    "failure_event": "acceptance AND time_error_exceeds_4/75",
+    "accepted_conditional_probability_claim": false,
+    "composite_inventory_strict_upper": 960032,
+    "external_facilities_included": false
+  },
+  "scope": "Given curved fixed-worldline composite; initial boundary and terminal effects are explicit inputs; no dynamic geometry."
+}

@@ -1,0 +1,71 @@
+{
+  "status": "PASS_CONDITIONAL_STATIC_WINDOW_ONLY",
+  "date": "2026-10-17",
+  "files_sha256": {
+    "README.md": "d4dd388b528de47d94f7daf33d6f33a74e56ca2d3722ac986341068082448d38",
+    "central_energy_window_after1270.md": "b4f087f79788e8cac3ef87305a547b3ccdf2b9d0e4209dbdd842b8480fbd383c",
+    "central_energy_window_after1270.py": "90b6013fda5a880a833c78c29b1fb89f14f6ed3bc6900a41c4d8576e55959c68",
+    "sds_geometry_scope_after1270.md": "9c552dd1a642607bf416db4b5d5fbbe5f085e609726215bd2273bb7fc31ddc84",
+    "static_shell_source_scope_after1270.md": "3409e7c5e6984d7173721d0817e14f1917e5e87343109d77d2d02e3fbb15aa60",
+    "static_window_budget_after1270.py": "31a356083e021867d95b60e21dd61230688ab735cee1d9093cbb6127c6d2d570",
+    "static_window_budget_after1270.json": "045b72be7565c2949f19385613e2268184aeaf9a145ab4c0cb7147cf403e7e86",
+    "central_energy_window_after1270.json": "8f087c2a0ed673cecd066f2ca1fbe21cba310f36fbbacab87933ab02768a106f",
+    "static_patch_window_review_after1270.md": "40f974096ce9e42aa7de41fc7640db5337d3b30b57458cc9ff3af77a34077bba",
+    "static_patch_geometry_review_after1270.md": "2901e8aad29f7e1500ce9822d0585048f97fc1d5298ca2ee8cc989504c8c951b"
+  },
+  "checks": [
+    {
+      "file": "central_energy_window_after1270.py",
+      "exit_code": 0,
+      "output": "READ_ONLY_MATCH 9 finite cases",
+      "mode": "read_only_relocated"
+    },
+    {
+      "file": "static_window_budget_after1270.py",
+      "exit_code": 0,
+      "output": "{\"action\": \"READ_ONLY_MATCH\", \"conditional_bound\": \"<0.003\", \"entropy_upper\": 0.0022004764761306126, \"area_upper\": 0.00040844063700918963, \"phase_upper\": 5.1681125e-05, \"same_quantum_static_source_implemented\": false}",
+      "mode": "read_only_relocated"
+    }
+  ],
+  "links_checked": 498,
+  "navigation": [
+    {
+      "flag": "--apply",
+      "result": {
+        "status": "APPLIED",
+        "files": 4,
+        "changed_files": 4,
+        "closed_boundary_unchanged": true,
+        "original_navigation_recoverable": true,
+        "scientific_files_modified": false
+      }
+    },
+    {
+      "flag": "--check",
+      "result": {
+        "status": "CHECKED",
+        "files": 4,
+        "changed_files": 0,
+        "closed_boundary_unchanged": true,
+        "original_navigation_recoverable": true,
+        "scientific_files_modified": false
+      }
+    }
+  ],
+  "frozen_bindings": 398,
+  "distinct_frozen_files": 403,
+  "accepted_rounds": 37,
+  "science_groups": [
+    91,
+    72,
+    2
+  ],
+  "new_scientific_rounds": 0,
+  "new_science_groups": 0,
+  "new_adopted_axioms": 0,
+  "goal_status": "active",
+  "goal_prompt_sha256": "29426b934e3ee81d75ef5831b396cd2af6f44eea96711563bb03a2e3796db214",
+  "GR_completed": false,
+  "common_quantum_realization_certified": false,
+  "scope": "Exact finite-reference window and conditional source/area/entropy budgets; no quantum shell or actual horizon thermal identity"
+}

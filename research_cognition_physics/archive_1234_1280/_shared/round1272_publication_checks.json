@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "accepted_through": 1272,
+  "science_rounds": 39,
+  "groups": [
+    94,
+    74,
+    2
+  ],
+  "frozen_bindings": 423,
+  "distinct_frozen_files": 428,
+  "links_checked": 635,
+  "navigation": [
+    {
+      "status": "APPLIED",
+      "files": 4,
+      "changed_files": 4,
+      "closed_boundary_unchanged": true,
+      "original_navigation_recoverable": true,
+      "scientific_files_modified": false
+    },
+    {
+      "status": "CHECKED",
+      "files": 4,
+      "changed_files": 0,
+      "closed_boundary_unchanged": true,
+      "original_navigation_recoverable": true,
+      "scientific_files_modified": false
+    }
+  ],
+  "root_replays": [
+    {
+      "path": "1272/source_check.py",
+      "exit_code": 0,
+      "stdout": "READ_ONLY_MATCH PASS_AUTHOR_WITH_SCOPE\n13 epsilon fixed withdrawal; total source identity exact; old field bound inherited",
+      "code_sha256": "01075bda3b5bf6fa1296e175115df1b39af657012b6d0db194095cb089e40372",
+      "readonly": true
+    },
+    {
+      "path": "1272/protocol_check.py",
+      "exit_code": 0,
+      "stdout": "{\"status\": \"PASS_AUTHOR_PROTOCOL_WITH_SCOPE\", \"dimension\": 15360, \"excitation_support_leak\": 0.0, \"isometry_gram_error\": 6.661368549054195e-16, \"reference_cases\": 3, \"mode\": \"read-only-replay\"}",
+      "code_sha256": "d508690b2358ad78ca660b3874f22e163e13322d8d2e8e7c10cc9eed790c35b6",
+      "readonly": true
+    },
+    {
+      "path": "1272/independent_check.py",
+      "exit_code": 0,
+      "stdout": "READ_ONLY_MATCH PASS_INDEPENDENT_WITH_SCOPE\ngroups=1; nine energy-preserving gates; ideal record difference=3/40",
+      "code_sha256": "44650ad39afddadb8210eef28eb3b853a171d10c04a763d2e90e1faeb086c86d",
+      "readonly": true
+    }
+  ],
+  "goal": "active",
+  "goal_prompt_sha256": "29426b934e3ee81d75ef5831b396cd2af6f44eea96711563bb03a2e3796db214",
+  "new_adopted_axioms": 0
+}

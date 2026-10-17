@@ -1,0 +1,136 @@
+{
+  "status": "PASS_WITH_SCOPE",
+  "kind": "unnumbered_frozen_gradient_subgate_screen",
+  "new_round": null,
+  "adopted_axioms": 0,
+  "check_groups": 3,
+  "scope": {
+    "exact_object": "two-mode frozen a=1 gradient subgate, density CCR",
+    "not_complete_square_root_parent": true,
+    "not_original_two_program_K_menu": true,
+    "actual_preparation_or_readout_not_certified": true,
+    "Gaussian_amplitude_tails_not_parent_positive_domain": true,
+    "finite_moments_not_full_apparatus_resource_closure": true,
+    "no_whole_Trotter_error_claim": true
+  },
+  "provenance": {
+    "check_sha256": "64db8985e246487a020ac4854d635563324e0460633edb7633b385b9904f409e",
+    "readme_sha256": "ef9a41e42a39460236b390b77bdfe6fe843f67d72bf6f3c614ca6367f3634c75",
+    "parent_diagnostic_sha256": "e9bbcda917d9b9cebcffbc7c474320c418f952e50fd2e48034c3da3f97a4a759",
+    "parent_diagnostic_not_executed": true
+  },
+  "parameters": {
+    "dx": "2",
+    "cell_weight": "8",
+    "scale_a": "1",
+    "simulation_parameter_delta": "1/16",
+    "epsilon": "1/1024",
+    "density_CCR_scale": "1/8192",
+    "sigma_Q": "1/16",
+    "sigma_P": "1/1024",
+    "source_displacement": "1/4",
+    "gradient_coefficient": "1/4",
+    "shear_g": "1/256",
+    "effect_frequency": "1024",
+    "effect_offset": "1/2"
+  },
+  "gaussian": {
+    "uncertainty_product": "1/16384",
+    "Heisenberg_lower_bound": "1/16384",
+    "exact_symplectic_identity": true,
+    "exact_pure_covariance_identity": true,
+    "output_covariance": [
+      [
+        "1/256",
+        "0",
+        "-1/65536",
+        "1/65536"
+      ],
+      [
+        "0",
+        "1/256",
+        "1/65536",
+        "-1/65536"
+      ],
+      [
+        "-1/65536",
+        "1/65536",
+        "9/8388608",
+        "-1/8388608"
+      ],
+      [
+        "1/65536",
+        "-1/65536",
+        "-1/8388608",
+        "9/8388608"
+      ]
+    ],
+    "receiver_P_variance": "9/8388608",
+    "float_symplectic_residual": 0.0,
+    "float_covariance_residual": 0.0
+  },
+  "probability_certificate": {
+    "attenuation_exponent": "9/16",
+    "phases": [
+      "-1/2",
+      "1/2"
+    ],
+    "exp_strict_lower": "4637/8192",
+    "sin_strict_lower": "23/48",
+    "probability_gap_strict_lower": "106651/393216",
+    "gap_margin_over_quarter": "8347/393216",
+    "one_input_error_strict_lower": "106651/786432",
+    "error_margin_over_eighth": "8347/786432",
+    "probability_gap_float": 0.27316843763404697,
+    "one_input_error_half_gap_float": 0.13658421881702348,
+    "no_communication_receiver_common_probability": "q",
+    "bound": "max(|q-p0|,|q-p1|)>=gap/2>1/8"
+  },
+  "branches": [
+    {
+      "input_bit": 0,
+      "source_Q_mean": "0",
+      "receiver_P_mean": "0",
+      "output_mean": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "receiver_effect_probability_float": 0.3634157811829765,
+      "gradient_energy_in": "1/512",
+      "gradient_energy_out": "1/512",
+      "aux_kinetic_in": "1/131072",
+      "aux_kinetic_out": "9/1048576",
+      "aux_kinetic_increase": "1/1048576"
+    },
+    {
+      "input_bit": 1,
+      "source_Q_mean": "1/4",
+      "receiver_P_mean": "1/1024",
+      "output_mean": [
+        "1/4",
+        "0",
+        "-1/1024",
+        "1/1024"
+      ],
+      "receiver_effect_probability_float": 0.6365842188170234,
+      "gradient_energy_in": "9/512",
+      "gradient_energy_out": "9/512",
+      "aux_kinetic_in": "1/131072",
+      "aux_kinetic_out": "17/1048576",
+      "aux_kinetic_increase": "9/1048576"
+    }
+  ],
+  "conditional_causal_interpretation": {
+    "frozen_metric_scale": "a=1, c=1",
+    "point_factor_shortest_separation": "4",
+    "no_communication_if_actual_duration": "tau < 4",
+    "simulation_delta_not_actual_tau": true,
+    "finite_mode_extent_and_source_backreaction_require_new_budget": true
+  },
+  "comparison_tolerance": {
+    "absolute": 1e-14,
+    "relative": 1e-12
+  }
+}

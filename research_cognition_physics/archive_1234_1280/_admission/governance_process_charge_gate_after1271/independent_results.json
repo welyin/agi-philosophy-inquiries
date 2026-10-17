@@ -1,0 +1,55 @@
+{
+  "schema": "governance_process_charge_independent_v1",
+  "status": "PASS_WITH_SCOPE",
+  "new_scientific_rounds": 0,
+  "matrix_diagnostic": {
+    "status": "PASS_EXACT_FRACTION",
+    "density_channel_unital": false,
+    "unital_defect_diagonal": [
+      "16/25",
+      "-16/25",
+      "16/25",
+      "-16/25"
+    ],
+    "branch_probabilities": [
+      "3/5",
+      "2/5"
+    ],
+    "branch_charge_means": [
+      "43/60",
+      "4/5"
+    ],
+    "unconditional_charge_mean": "3/4",
+    "all_charge_spectral_functions_fixed": true,
+    "feedback_and_arbitrary_reference_identity": true,
+    "q_change": "1",
+    "aux_energy_change": "-1",
+    "same_visible_state_commutant_charge_difference": "1"
+  },
+  "entropy_bounds": {
+    "status": "PASS_EXACT_FRACTION",
+    "xstar_strict_upper": "14/9",
+    "exp_14_9_strict_upper": "1168422057627266461843148138873451659428421700563161428957815831003136/237169123733456945151181211498724054090008972581810727489314923367681",
+    "exp_1_strict_upper": "46656/15625",
+    "exp_1_strict_lower": "8/3",
+    "exp_9_lower_via_cube": "720311051601721/89915392000",
+    "exp_07_strict_lower": "482921/240000",
+    "support_trace_strict_upper": "45/512",
+    "forward_half_L1_strict_lower": "31/256",
+    "entropy_eta_strict_upper_at_delta_001": "1/10",
+    "aux_entropy_cost_strict_lower_at_delta_001": "9/10",
+    "two_dimensional_auxiliary_entropy_upper": "7/10",
+    "finite_corner_product_invariant": "(t_B*C_0)*(tau(e_1)/t_B)=C_0*tau(e_1)"
+  },
+  "author_files_sha256": {
+    "README.md": "bcf75dd9fe435714b6e7c6549330d1e2e5b3f74be55b2efe58c8824f086524e3",
+    "proof.md": "1a22a1fba7a6db3df097f33f3ad2d6dadf9cd67e8d53ee4b43c64e5b29d81f6c",
+    "check.py": "7e9838cbe9825d82a13889689c2f643755bc873ec88dd874a72184de8852d4bb",
+    "results.json": "d858ba88894d81e11cc6290cc9fb83f0bc142f879a35c797326d75bb798dc93c",
+    "source_baseline.json": "82ea3c0eae261dede1d25bed106421967ec6c7db8af3bff67fe305dbfe4ff2c6"
+  },
+  "independent_diagnostic_groups": 2,
+  "new_formal_check_groups": 0,
+  "scope": "Finite rational matrices check algebra only; no Type-II realization, instruments, thermodynamic heat cost or new geometry certificate.",
+  "self_sha256": "2d3bb858f54e5559d46221eb284894f5f8850cca23b0973883be43dabeedd1e9"
+}

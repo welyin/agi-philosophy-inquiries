@@ -1,0 +1,68 @@
+{
+  "status": "PASS_WITH_SCOPE",
+  "date": "2026-10-16",
+  "accepted_through": 1256,
+  "science_rounds": 23,
+  "science_groups": [
+    59,
+    50,
+    2
+  ],
+  "frozen_acceptance_bindings": 234,
+  "distinct_frozen_science_files": 239,
+  "local_links_checked": 351,
+  "goal_status": "active",
+  "goal_prompt_sha256": "29426b934e3ee81d75ef5831b396cd2af6f44eea96711563bb03a2e3796db214",
+  "paths_sha256": {
+    "_admission/reference_direction_after1256.md": "57330577022127861051e6cbe7c1670298a7a28712e62e3637612a861df87c55",
+    "_admission/thermal_window_screen_after1256.md": "306db722bf1bc1f5ca64be402b02a897272c9b3a87ac0d430079728bc4918e8a",
+    "_admission/same_action_field_band_after1256/README.md": "f39a150c9c13d64a3fe68ce8bbfeb4f558d047bb287bbe0a0b1c30a6a505c692",
+    "_admission/same_action_field_band_after1256/check.py": "227c61ba9211d7237e22cfad452e304206f0934523cf3ab63887f536eff57dc1",
+    "_admission/same_action_field_band_after1256/results.json": "dd1ee37099581e54eb0071cf807b9b9c8282463bb4df0866823bcf26b374cb80",
+    "_admission/single_sector_heat_screen_after1256/README.md": "adf6615028e965b7ee9e66bb660ad90e35903b51337b812e94f899165c5d8ed0",
+    "_admission/single_sector_heat_screen_after1256/check.py": "f5b3a2614887d16eb35ca0ed91100645ef9c6e9856a53f28e2ab01758f217676",
+    "_admission/single_sector_heat_screen_after1256/results.json": "62dab375ee8901c275abe941f3faf5c080f749f049b67e5bb71505723eae40ff",
+    "_admission/reference_direction_review_after1256.md": "017edd52b78c072c7da402609d7fed6b66a23ac1a7b2de12e28d1155a934e0d4"
+  },
+  "root_replays": [
+    {
+      "path": "_admission/same_action_field_band_after1256/check.py",
+      "execution_chunk": "d6b251",
+      "exit_code": 0,
+      "action": "READ_ONLY_MATCH",
+      "status": "PASS_FINITE_FIXED_BACKGROUND_FIELD_BAND",
+      "code_sha256": "227c61ba9211d7237e22cfad452e304206f0934523cf3ab63887f536eff57dc1",
+      "performed_before_publication": true,
+      "repeated_by_publication": false
+    },
+    {
+      "path": "_admission/single_sector_heat_screen_after1256/check.py",
+      "execution_chunk": "88c7ac",
+      "exit_code": 0,
+      "action": "READ_ONLY_MATCH",
+      "status": "PASS_ABSOLUTE_SOURCE_SCOPE_ONLY",
+      "code_sha256": "f5b3a2614887d16eb35ca0ed91100645ef9c6e9856a53f28e2ab01758f217676",
+      "performed_before_publication": true,
+      "repeated_by_publication": false
+    }
+  ],
+  "navigation_checks": [
+    {
+      "status": "APPLIED",
+      "files": 4,
+      "changed_files": 4,
+      "closed_boundary_unchanged": true,
+      "original_navigation_recoverable": true,
+      "scientific_files_modified": false
+    },
+    {
+      "status": "CHECKED",
+      "files": 4,
+      "changed_files": 0,
+      "closed_boundary_unchanged": true,
+      "original_navigation_recoverable": true,
+      "scientific_files_modified": false
+    }
+  ],
+  "next": "1257 unreserved. Stop the duplicated same-label pointer branch. Screen one finite temperature-calibration task jointly with the original complete source and geometry: fixed reference, actual proper-time/observer contract, gap/window, positive response and relative error, plus added reference/probe/control/motion source and backreaction budget. X may calibrate temperature while the complete T supplies heat; do not substitute its absolute heat for the full source. The old 1232 sufficient error certificate cannot fit the original hold window at beta=log(2); extend a certified calibration window, change the temperature task, or use a sharper finite-response proof before investing in modes or hardware. The positive fixed-background field band is not a complete constrained thermal state. No mandatory full matter fieldization, PDE repair, new axiom or CT adoption. Require a nonempty common budget before reserving a new round."
+}

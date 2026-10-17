@@ -1,0 +1,194 @@
+{
+  "status": "PASS",
+  "science_groups": 3,
+  "group_1": {
+    "status": "PASS",
+    "certificate_type": "analytic inequalities with exact rational endpoints",
+    "fuel_per_cell": {
+      "fraction": "1/100000",
+      "decimal": 1e-05
+    },
+    "derivative_terms": [
+      {
+        "fraction": "91/3125",
+        "decimal": 0.02912
+      },
+      {
+        "fraction": "9/6250",
+        "decimal": 0.00144
+      },
+      {
+        "fraction": "91/312500",
+        "decimal": 0.0002912
+      },
+      {
+        "fraction": "1/62500",
+        "decimal": 1.6e-05
+      }
+    ],
+    "return_derivative_bound": {
+      "fraction": "4823/156250",
+      "decimal": 0.0308672
+    },
+    "h_change_bound": {
+      "fraction": "1/160000",
+      "decimal": 6.25e-06
+    },
+    "per_return_geometry_budget": {
+      "fraction": "4823/25000000000",
+      "decimal": 1.9292e-07
+    },
+    "per_branch_D_geometry_budget": {
+      "fraction": "438893/1562500000000",
+      "decimal": 2.8089152e-07
+    },
+    "ideal_source_gap_after_conversion": {
+      "fraction": "4964063580396557/149299200000000000000",
+      "decimal": 3.32490969837518e-05
+    },
+    "remaining_readout_contract": {
+      "fraction": "1/1250000",
+      "decimal": 8e-07
+    },
+    "total_six_record_budget": {
+      "fraction": "24823/25000000000",
+      "decimal": 9.9292e-07
+    },
+    "flat_two_box_error": {
+      "fraction": "167351076431329/19531250000000000000",
+      "decimal": 8.568375113284046e-06
+    },
+    "flat_certified_margin": {
+      "fraction": "8471711423568671/19531250000000000000",
+      "decimal": 0.00043375162488671595
+    },
+    "source_two_branch_error": {
+      "fraction": "387859991181329/39062500000000000000",
+      "decimal": 9.929215774242023e-06
+    },
+    "source_certified_margin": {
+      "fraction": "1392778659031410331757/58320000000000000000000000",
+      "decimal": 2.388166424950978e-05
+    },
+    "all_conversions_with_nonnegative_fuel_covered": true,
+    "actual_remaining_readout_accuracy_obtained": false
+  },
+  "group_2": {
+    "status": "PASS",
+    "interpretation": "diagnostic only; exact bounds proved independently",
+    "cases": [
+      {
+        "E0": 1.0,
+        "gamma": 1.0,
+        "steps": [
+          2048,
+          4096
+        ],
+        "final_fuel": 4.404316545059988e-06,
+        "final_comoving_radiation": 4.580641163305712e-06,
+        "final_pressure_work": 1.0150422916343002e-06,
+        "final_comoving_energy": 0.9999989849577083,
+        "source_account_max_error": 2.220446049250313e-16,
+        "fuel_split_max_error": 2.879912020664621e-20,
+        "exact_decay_max_error": 2.371692252312041e-20,
+        "constraint_max_error": 2.4424906541753444e-15,
+        "envelope_violation": 2.220446049250313e-16,
+        "returns": [
+          0.06120799999880488,
+          0.40492799924729606,
+          0.8158479951833673
+        ],
+        "original_dust_returns": [
+          0.061208,
+          0.404928,
+          0.815848
+        ],
+        "lower_envelope_returns": [
+          0.061207993919985,
+          0.4049279325908961,
+          0.8158478703751934
+        ],
+        "derived_geometry_shifts": [
+          1.1951203915394615e-12,
+          7.527039547206016e-10,
+          4.816632759307993e-09
+        ],
+        "return_grid_difference": 1.7763568394002505e-15,
+        "converted_D": -0.0004423210468113836,
+        "unconverted_D": -0.0004423200000000238
+      },
+      {
+        "E0": 0.8,
+        "gamma": 1.0,
+        "steps": [
+          2048,
+          4096
+        ],
+        "final_fuel": 4.404316545059988e-06,
+        "final_comoving_radiation": 4.646662844576201e-06,
+        "final_pressure_work": 9.490206103638319e-07,
+        "final_comoving_energy": 0.7999990509793897,
+        "source_account_max_error": 1.1102230246251565e-16,
+        "fuel_split_max_error": 2.710505431213761e-20,
+        "exact_decay_max_error": 2.371692252312041e-20,
+        "constraint_max_error": 3.247402347028583e-15,
+        "envelope_violation": 0.0,
+        "returns": [
+          0.061079712628005794,
+          0.4035002800817442,
+          0.813093707792151
+        ],
+        "original_dust_returns": [
+          0.061079712629199895,
+          0.4035002808520712,
+          0.813093712826493
+        ],
+        "lower_envelope_returns": [
+          0.061079705840974996,
+          0.403500205016365,
+          0.813093566047289
+        ],
+        "derived_geometry_shifts": [
+          1.1941003741355871e-12,
+          7.703269688796865e-10,
+          5.034342054344165e-09
+        ],
+        "return_grid_difference": 1.2212453270876722e-15,
+        "converted_D": -0.00036554070698949226,
+        "unconverted_D": -0.0003655396009462353
+      }
+    ]
+  },
+  "group_3": {
+    "status": "PASS",
+    "steps": 4096,
+    "final_constraint_residual": -2.002442481274791e-06,
+    "independently_integrated_residual": -2.002442481571568e-06,
+    "residual_identity_max_error": 2.3192371430149174e-15,
+    "spurious_comoving_energy_gain": 8.19999999990273e-06,
+    "source_double_counting_max_error": 2.1972881684723805e-16,
+    "refitting_constraint_would_move_failure_to_continuity": true
+  },
+  "scope": {
+    "CT": "candidate hypothesis, not adopted",
+    "effective_geometric_branch_and_initial_constraint_are_inputs": true,
+    "autonomous_covariant_transfer_is_new_effective_input": true,
+    "only_homogeneous_geometry_component_certified": true,
+    "actual_directed_signal_and_recoil": false,
+    "actual_trigger_record_and_quantum_code": false,
+    "remaining_readout_eta_is_conditional": true,
+    "independent_horizon_entropy_matching": false,
+    "full_GR_proved": false
+  },
+  "source_sha256": {
+    "archive_1234_/1239/admission.md": "13de4e563f884a0ce91aca3937be665980450ec8b2a551764001a733ee02b820",
+    "archive_1234_/1239/proof.md": "af342a3bb0fcaef0b7d2f8c3c860330ed536a663db28864838ca052c670dcc0f",
+    "archive_1234_/1239/check.py": "df86f073f85f91b9081bc04a2357c17deb97412260803bb51f005e21a800329e",
+    "archive_1234_/1239/NEXT.md": "1f162e4ae718b8f81ee7b74c6c6ab011e10a8909c59f0b2040eb17d5d62268e1",
+    "archive_1234_/1236/proof.md": "b1895da16a8e66676703badf7c6530a7c93422e4445739d78eb301b8f20609bb",
+    "archive_1234_/1236/results.json": "95d810e3d7598bfec2b84c9d6852f418bef56e19cbe6224483dbe7dac664ad68",
+    "archive_956_989/research_note_964.md": "556c007be8a00aed4e3d393314ba87ed9b93dde073d94b82c9ea92c0071f3a37",
+    "archive_1161_1200/1188/proof.md": "6c2c22b858fb938ca6b1cf36747da2c40f5634af39568b7859e19c6024f604a3",
+    "archive_1234_/1235/proof.md": "9560bbf7361324e196c11d5abdad01a94285e21efc21a95b1b25e74ab728aa74"
+  }
+}

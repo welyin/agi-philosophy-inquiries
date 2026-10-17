@@ -1,0 +1,35 @@
+{
+  "schema": "gr_response_round_execution_v1",
+  "round": 1234,
+  "date": "2026-10-15",
+  "status": "PASS_IN_DECLARED_SCOPE",
+  "root_executed": true,
+  "author_command": "python -B -X utf8 archive_1234_/1234/check.py --replay-history",
+  "author_result": {
+    "status": "PASS_IN_IDEAL_ROLE_EXTENSION_SCOPE",
+    "mode": "READ_ONLY_MATCH",
+    "groups": 3,
+    "inherited_checks": 1,
+    "sources": 16,
+    "complete_dimension": 288
+  },
+  "historical_replay": {
+    "status": "PASS",
+    "mode": "READ_ONLY_MATCH",
+    "groups": 4,
+    "source_files": 17,
+    "old_entry_points_replayed": 2,
+    "metric_rank": 10,
+    "metric_reconstruction_error": 6.921797777449666e-15
+  },
+  "independent_command": "python -B -X utf8 archive_1234_/1234/independent_check.py",
+  "independent_result": {
+    "status": "PASS_WITH_SCOPE",
+    "groups": 3,
+    "mode": "READ_ONLY_MATCH",
+    "same_H_dimension": 288
+  },
+  "new_actual_permissions": 0,
+  "GR_deliverables_completed": 0,
+  "old_global_closure_exception": "Earlier 08 paper external edit remains recorded; these checks do not certify the entire historical closure."
+}

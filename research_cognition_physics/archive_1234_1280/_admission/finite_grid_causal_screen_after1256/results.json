@@ -1,0 +1,104 @@
+{
+  "schema": "finite_grid_causal_screen_after1256.v1",
+  "status": "FIXED_GRID_CLASSICAL_RESPONSE_REMAINS_CC_TASK_NOT_CERTIFIED",
+  "check_sha256": "3d88e82e8b34f583cb754a5887a8f28712a692d06ee3d4ed9b6e36fce39552d3",
+  "parent_diagnostic_sha256": "e9bbcda917d9b9cebcffbc7c474320c418f952e50fd2e48034c3da3f97a4a759",
+  "exact_algebra": {
+    "status": "PASS_EXACT_INITIAL_ALGEBRA",
+    "alpha": "1/10",
+    "J_source_cell": "19/200",
+    "J_other_cells": "1/10",
+    "J_change_source": "-1/200",
+    "source_Tnn": "111/100",
+    "source_extra_spatial_pressure": "1/200",
+    "momentum_constraint": "0",
+    "hamiltonian_constraint": "0: positive R=A, Ec=A",
+    "cell_weight": "8/1",
+    "H_X_source_X_remote": "-1/2",
+    "H_PX_source_PX_source": "8/1",
+    "remote_PX_force_coefficient": "1/16",
+    "remote_X_t_cubed_coefficient": "1/96",
+    "physical_input_scope": "Finite local PX preparation also changes the same clock J; no new free source.",
+    "meaning": "Exact initial source and explicitly derived jet coefficients, not a finite-time remainder bound."
+  },
+  "full_tangent": {
+    "status": "PASS_FLOATING_DIAGNOSTIC_NOT_A_PROOF_OF_FUTURE_CC",
+    "state_dimension": 4500,
+    "source": [
+      0,
+      0,
+      0
+    ],
+    "remote": [
+      2,
+      0,
+      0
+    ],
+    "outer_central_difference_step": 1e-05,
+    "inner_complex_step": "1e-28",
+    "absolute_assertion_tolerance": 1e-08,
+    "method": "Four full-H vector fields, each with all 4500 canonical partial derivatives; no reduced-wave substitution.",
+    "columns": {
+      "A_e_PX": {
+        "full_vector_max_error": 0.0,
+        "X_source": 1.0,
+        "X_remote": 0.0,
+        "PX_remote": 0.0,
+        "metric_h_max": 0.0,
+        "geometry_pi_at_source": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "geometry_pi_at_remote": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "first_clock_internal_max": 0.0,
+        "second_flow_max": 0.0
+      },
+      "A_e_X": {
+        "full_vector_max_error": 7.067679774763747e-13,
+        "X_source": 0.0,
+        "X_remote": 0.0,
+        "PX_remote": 0.062499999999715554,
+        "metric_h_max": 0.0,
+        "geometry_pi_at_source": [
+          -0.05000000000005,
+          -0.05000000000005,
+          -0.05000000000005
+        ],
+        "geometry_pi_at_remote": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "first_clock_internal_max": 0.0,
+        "second_flow_max": 6.938893903907227e-13
+      }
+    },
+    "A_cubed_e_PX_remote_X_via_exact_initial_X_row": 0.062499999999715554,
+    "note": "At t=0 A_e_PX=e_X. A^2_e_PX is remote in PX, not X. The remote X entry occurs in A^3."
+  },
+  "local_hessian": {
+    "H_XX_remote": -0.4999999999999004,
+    "H_PX_PX_source": 7.999999999998407,
+    "finite_preparation_J_change": -0.0050000000000000044,
+    "step": 0.1,
+    "status": "PASS_FLOATING_DIAGNOSTIC"
+  },
+  "saved_float_comparison": {
+    "absolute_tolerance": 5e-10,
+    "relative_tolerance": 1e-09
+  },
+  "not_claimed": [
+    "actual local kick permission",
+    "actual early X readout permission",
+    "nonzero probability difference for the original K three-outcome task",
+    "fixed-time numerical remainder certificate",
+    "general HDA failure theorem",
+    "failure of all discretizations or of the research program"
+  ],
+  "decision": "Do not continue by shrinking epsilon alone. A finite control/effect menu and an independent spatial/bandwidth causality budget are required. No research number."
+}

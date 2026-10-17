@@ -1,0 +1,129 @@
+{
+  "status": "PASS_EXACT_INITIAL_CONSTRAINT_SCOPE",
+  "scope": "Same-material mathematical initial data only; no physical preparation, future record prediction, generic PDE existence, or EFT no-go certification.",
+  "lambda_H": "1/2",
+  "fixed_spatial_wave_number": 1,
+  "epsilon": "1/10",
+  "initial_data_shared_across_q": true,
+  "original_1242_initial_preparation": false,
+  "fixed_label_measure_reprepared": true,
+  "hamiltonian_polynomials": {
+    "gravity": [
+      "-9",
+      "-3",
+      "3/4"
+    ],
+    "fields": [
+      "131/200",
+      "3/100"
+    ],
+    "recorder": [
+      "1/50",
+      "1/100"
+    ],
+    "clock": [
+      "333/40",
+      "74/25",
+      "-3/4"
+    ],
+    "total": [
+      "0"
+    ]
+  },
+  "momentum_gradient_factors": {
+    "gravity": [
+      "-1"
+    ],
+    "matter": [
+      "1"
+    ],
+    "total": [
+      "0"
+    ]
+  },
+  "positivity": {
+    "clock_mass": "27/10",
+    "recorder_number_density": "1/10",
+    "clock_density": [
+      "16043/5400",
+      "17227/5400"
+    ],
+    "clock_density_derivative_lower": "281/270",
+    "F": [
+      "49/50",
+      "51/50"
+    ],
+    "recorder_mass": [
+      "19/100",
+      "21/100"
+    ],
+    "recorder_action_rate": [
+      "9/100",
+      "11/100"
+    ]
+  },
+  "fixed_low_wave_number_integrals": [
+    {
+      "name": "unit",
+      "lapse_poly": [
+        "1"
+      ],
+      "minimum_lapse": "1",
+      "weighted_gradient_norm": "1/200",
+      "analytic_positive_lower_bound": "1/200",
+      "integration_by_parts": "-1/200"
+    },
+    {
+      "name": "fixed_wave",
+      "lapse_poly": [
+        "1",
+        "5/2"
+      ],
+      "minimum_lapse": "3/4",
+      "weighted_gradient_norm": "13/2560",
+      "analytic_positive_lower_bound": "9/3200",
+      "integration_by_parts": "-13/2560"
+    }
+  ],
+  "coefficient_cases": [
+    {
+      "q": "1",
+      "a": "6",
+      "b": "1/6",
+      "same_initial_H": "0",
+      "same_initial_D": "0",
+      "W_gradient_factor": "0",
+      "unit_lapse_Hdot_poly": [
+        "0"
+      ],
+      "unit_lapse_H_p_derivative": "0",
+      "fixed_wave_H_Np_derivative": "0",
+      "passes_this_initial_preservation_condition": true
+    },
+    {
+      "q": "1001/1000",
+      "a": "6",
+      "b": "1001/6000",
+      "same_initial_H": "0",
+      "same_initial_D": "0",
+      "W_gradient_factor": "-1/1000",
+      "unit_lapse_Hdot_poly": [
+        "0",
+        "1/1000"
+      ],
+      "unit_lapse_H_p_derivative": "1/200000",
+      "fixed_wave_H_Np_derivative": "13/2560000",
+      "passes_this_initial_preservation_condition": false
+    }
+  ],
+  "zero_deviation_scope": "Necessary preservation obstruction vanishes; this script does not prove local existence.",
+  "nonzero_deviation_scope": "The analytic positive-lapse integral excludes this preparation for the exact parent constraints; it does not exclude all data or any consistent EFT completion.",
+  "new_numbered_rounds": 0,
+  "new_formal_scientific_groups": 0,
+  "source_sha256": {
+    "research_cognition_physics/archive_1234_/1245/proof.md": "d8335290167b3c5a170eb5c9556655547582542c39b4c6d893f66372dc4565b3",
+    "research_cognition_physics/archive_1234_/1235/proof.md": "9560bbf7361324e196c11d5abdad01a94285e21efc21a95b1b25e74ab728aa74",
+    "research_cognition_physics/archive_1161_1200/1183/proof.md": "3b36b25d9c679e4fae44910865315100123423a27f61dfcd13f5e237be16b456"
+  },
+  "code_sha256": "966e0789dcb243bb5e055bc44dba1a372d8f58934f30e526740491c97dbed43c"
+}

@@ -1,0 +1,190 @@
+{
+  "round": 1252,
+  "scientific_groups": 2,
+  "status": "PASS_WITH_SCOPE",
+  "exact_source_and_inverse": {
+    "status": "PASS",
+    "method": "exact rational independent chain rules",
+    "source_rows": [
+      {
+        "phase": 0,
+        "local_pulse_time": "1/4",
+        "complete_exchange": "0",
+        "continuity_and_tangent": "0",
+        "constraint_rate_and_tangent": "0",
+        "omitted_control_continuity": "-54/15625",
+        "omitted_memory_source": "16/3125",
+        "geometric_residual_if_memory_source_omitted": "6001/390625"
+      },
+      {
+        "phase": 1,
+        "local_pulse_time": "1/4",
+        "complete_exchange": "0",
+        "continuity_and_tangent": "0",
+        "constraint_rate_and_tangent": "0",
+        "omitted_control_continuity": "27/312500",
+        "omitted_memory_source": "16/3125",
+        "geometric_residual_if_memory_source_omitted": "6001/390625"
+      }
+    ],
+    "initial_constraint_tangent": "0",
+    "fixed_H0_deletion_tangent": "-37/100",
+    "inverse_budget": {
+      "required_sensitivity_lower": "1/20000",
+      "terminal_read_error": "1/10000000000",
+      "parameter_interval_width": "1/1000",
+      "predicted_endpoint_separation_lower": "1/20000000",
+      "endpoint_two_read_margin": "249/5000000000",
+      "single_inverse_error": "1/500000",
+      "feasible_parameter_set_diameter": "1/250000",
+      "orthonormal_T_component_bound": "111/100",
+      "single_inverse_residual_component_bound": "111/50000000",
+      "feasible_set_residual_component_diameter": "111/25000000",
+      "baseline_prediction_error": "1/10000000000000000000",
+      "old_K_interval": [
+        "-0.002270261268501872591022139021119168",
+        "-0.002270261268501872512567608323888243"
+      ],
+      "baseline_acceptance_rule": "abs(observed_K-old_K_midpoint)<=eta_K",
+      "accepted_baseline_parameter_bound": "2000000001/500000000000000",
+      "accepted_baseline_field_bound": "222000000111/50000000000000000"
+    },
+    "residual_scope": "Same actual Einstein-family solution; normalized L1 tensor tests or orthonormal components. Not arbitrary off-family equations.",
+    "assumptions": "Complete known preparation, fixed units and other parameters, Lambda=0, actual kappa in the declared interval, inherited terminal numeric read contract."
+  },
+  "independent_constraint_reduced_evolution": {
+    "status": "PASS",
+    "method": "45-digit Decimal dual-number RK4 in a, with H reconstructed from the constraint",
+    "rows": [
+      {
+        "coarse": {
+          "kappa": "3",
+          "steps_per_pulse": 256,
+          "K": "-0.00227026126818693407069519516168670000880756851",
+          "K_kappa": "-0.0000986995461289727430677473271837560677436001588",
+          "a": "2.67069767107342518817150543198995864466668779",
+          "rho": "0.0725628989635375878868186423691001917346745807",
+          "H": "0.269375015477563523585793068650820973808181912",
+          "minima": {
+            "J": "0.0994723447313900294138423809595942631450193339",
+            "mass": "0.934345253821180176341793443506800851318901537",
+            "F": "0.996797521104061934218762447353607221643785865",
+            "Mr": "0.198398760552030967109381223676803610821892932"
+          },
+          "max_sampled_rho": "1.110"
+        },
+        "fine": {
+          "kappa": "3",
+          "steps_per_pulse": 512,
+          "K": "-0.00227026126848219132222527329717765539464364911",
+          "K_kappa": "-0.0000986995461434088795741010495691344575824358321",
+          "a": "2.67069767107376840897707763700065601702686148",
+          "rho": "0.0725628989635387735895209160050076119876249719",
+          "H": "0.269375015477565724425949256761110352831774471",
+          "minima": {
+            "J": "0.0994723447212554092384758232147104739518675609",
+            "mass": "0.934345253821233261940046498332403099261956534",
+            "F": "0.996797520148238016240204407851325218146363979",
+            "Mr": "0.198398760074119008120102203925662609073181990"
+          },
+          "max_sampled_rho": "1.110"
+        },
+        "K_step_difference": "2.9525725153007813549095538583608060E-13",
+        "tangent_step_difference": "1.44361365063537223853783898388356733E-14"
+      },
+      {
+        "coarse": {
+          "kappa": "3.0005",
+          "steps_per_pulse": 256,
+          "K": "-0.00227031061310387996339651727460608658714075079",
+          "K_kappa": "-0.0000986801227918954957641580178796905270146600524",
+          "a": "2.67081863313171635222871080464474672126478876",
+          "rho": "0.0725541971800205363894384016822384015970622934",
+          "H": "0.269381308828614177254338646742645488291894549",
+          "minima": {
+            "J": "0.0994723831354431176439236263168427112796003419",
+            "mass": "0.934345299918072679753191593682686115225101292",
+            "F": "0.996797807821597026743383583135294360647000094",
+            "Mr": "0.198398903910798513371691791567647180323500047"
+          },
+          "max_sampled_rho": "1.110"
+        },
+        "fine": {
+          "kappa": "3.0005",
+          "steps_per_pulse": 512,
+          "K": "-0.00227031061339914443233877886468017295640562218",
+          "K_kappa": "-0.0000986801228063290081481232419128774681459687329",
+          "a": "2.67081863313205959876533120380830226843518144",
+          "rho": "0.0725541971800217242326549211881782127552125680",
+          "H": "0.269381308828616382383557810156774281019633443",
+          "minima": {
+            "J": "0.0994723831253077363629475698530419226949888640",
+            "mass": "0.934345299918125764689575086777867783493530336",
+            "F": "0.996797806935421648698020500855281165502213301",
+            "Mr": "0.198398903467710824349010250427640582751106651"
+          },
+          "max_sampled_rho": "1.110"
+        },
+        "K_step_difference": "2.9526446894226159007408636926487139E-13",
+        "tangent_step_difference": "1.44335123839652240331869411313086805E-14"
+      },
+      {
+        "coarse": {
+          "kappa": "3.001",
+          "steps_per_pulse": 256,
+          "K": "-0.00227035994831086297471293057172474067986648829",
+          "K_kappa": "-0.0000986607062768694573760186997562543534433538201",
+          "a": "2.67093958346174171313887488864659039688821074",
+          "rho": "0.0725454977339511915760255908773561758765169524",
+          "H": "0.269387600988852445934263070963190754521197227",
+          "minima": {
+            "J": "0.0994724215319503116249007011990082776391872469",
+            "mass": "0.934345346006021233480128302556116714228575294",
+            "F": "0.996798094473660199027524235733400202507091245",
+            "Mr": "0.198399047236830099513762117866700101253545623"
+          },
+          "max_sampled_rho": "1.110"
+        },
+        "fine": {
+          "kappa": "3.001",
+          "steps_per_pulse": 512,
+          "K": "-0.00227035994860613465975554913301759085411567406",
+          "K_kappa": "-0.0000986607062913003465763589033266034417605784446",
+          "a": "2.67093958346208498540439875527552817577681546",
+          "rho": "0.0725454977339523815596255892680278801928911863",
+          "H": "0.269387600988854655353436093043915803830106794",
+          "minima": {
+            "J": "0.0994724215218141693703193420515233724547949887",
+            "mass": "0.934345346006074317755477853034329101051333315",
+            "F": "0.996798093657107027852538417400729260208110972",
+            "Mr": "0.198399046828553513926269208700364630104055486"
+          },
+          "max_sampled_rho": "1.110"
+        },
+        "K_step_difference": "2.9527168504261856129285017424918577E-13",
+        "tangent_step_difference": "1.44308892003402035703490883172246245E-14"
+      }
+    ],
+    "endpoint_gap_diagnostic": "9.868012394333753027583583993545947202495E-8",
+    "scope": "Finite diagnostic points and step agreement only. Uniform parameter monotonicity and rigorous truncation bounds require the independently audited author interval proof."
+  },
+  "author_certificate": {
+    "status": "BOUND_AUTHOR_CERTIFICATE_METADATA_CHECKED",
+    "cells": 1,
+    "uniform_K_derivative": [
+      "-0.000099548169605607657824591624430161",
+      "-0.000097812189429167660793992067455174"
+    ],
+    "scope": "Exact stored-bound/coverage check; full interval-code correctness is separately reviewed and its default run replayed. This is not an independent second interval implementation."
+  },
+  "source_bindings": {
+    "1252\\admission.md": "767951856ae30be48d4e759f50ebc41b369b7df3491115feb2db4e22f80a43e5",
+    "1252\\proof.md": "fa17c02f2e74e51cc39bcd1e848ed3530701083a17af48cbbba6c08cb18d6bb9",
+    "1252\\check.py": "19aec3a470aad15fa98695cc0b2423eed524ce9d3ba78346fbf381d8643959e4",
+    "1252\\results.json": "9e2976d7c60e89add2b3e0a7459bc4b5f80360357bfd5682edef2b0dc725969d",
+    "1252\\NEXT.md": "290bd5f0c9baee61db527ae57f0345cbbe8b7320af9c062219d6614abf8c4f27",
+    "research_note_1252.md": "bca75e457f3a28c6723cbb7e0062fbc31e2166da7e5d95c7d10928c04ad04822",
+    "1247\\proof.md": "f3a79f8f43aa235d2fa13cc87a232e2b64643fc1bade375bfee96c204ab4bf3d",
+    "1247\\results.json": "dbcd590e7816bc423c49a4e1bf83bab6fa50a84dd5578249cc493a15cd72bf06"
+  }
+}

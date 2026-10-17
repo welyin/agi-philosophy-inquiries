@@ -1,0 +1,148 @@
+{
+  "status": "PASS_CONDITIONAL_FINITE_WINDOW_SCOPE",
+  "diagnostic_groups": 3,
+  "direct_intrinsic_curvature_and_independent_scalar_source": {
+    "gauss_max_error": 3.3306690738754696e-16,
+    "KG_max_error": 2.220446049250313e-16,
+    "physical_scalar_charge_norm_squared": 0.6666666666666666,
+    "constraint_source_equals": "2*T_phys(n,n)",
+    "geometry_field_equations_used_to_define_source": false
+  },
+  "curved_common_history_finite_windows": [
+    {
+      "radius": 0.16,
+      "thickness": 0.07,
+      "amplitude": 0.35,
+      "source_central": 0.0009390613433259976,
+      "source_lower": 0.0007757924278744899,
+      "source_upper": 0.001148410168058445,
+      "full_C_central": -3.0309923773882297e-17,
+      "frozen_source_C_central": -0.0009390613433266637,
+      "time_margin": 0.9255199999999999,
+      "tilt_bound": 0.003302064219564532,
+      "shape": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "quadrature_difference": 8.881784197001252e-16
+    },
+    {
+      "radius": 0.08,
+      "thickness": 0.04,
+      "amplitude": 0.35,
+      "source_central": 0.00023305201008527732,
+      "source_lower": 0.0002092281174125857,
+      "source_upper": 0.00026016055480103443,
+      "full_C_central": -3.4126790535678153e-18,
+      "frozen_source_C_central": -0.00023305201008615842,
+      "time_margin": 0.95888,
+      "tilt_bound": 0.0008062564879912886,
+      "shape": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "quadrature_difference": 6.661338147750939e-16
+    },
+    {
+      "radius": 0.00017320508075688773,
+      "thickness": 1e-05,
+      "amplitude": 0.25,
+      "source_central": 5.555558235670333e-10,
+      "source_lower": 5.555407410123412e-10,
+      "source_upper": 5.555703784894899e-10,
+      "full_C_central": -5.922435389000623e-18,
+      "frozen_source_C_central": -5.555555360740571e-10,
+      "time_margin": 0.9999899962500001,
+      "tilt_bound": 1.8750125047917457e-09,
+      "shape": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "quadrature_difference": 4.440892098500626e-16
+    },
+    {
+      "radius": 0.16,
+      "thickness": 0.07,
+      "amplitude": 0.35,
+      "source_central": 0.0018767600441147447,
+      "source_lower": 0.0015515848557489799,
+      "source_upper": 0.0022941187565441025,
+      "full_C_central": -2.7037532096591076e-17,
+      "frozen_source_C_central": -0.0018767600441152283,
+      "time_margin": 0.9255199999999999,
+      "tilt_bound": 0.003302064219564532,
+      "shape": [
+        1.0,
+        -1.0,
+        0.0
+      ],
+      "quadrature_difference": 2.220446049250313e-16
+    },
+    {
+      "radius": 0.08,
+      "thickness": 0.04,
+      "amplitude": 0.35,
+      "source_central": 0.00046602004867279945,
+      "source_lower": 0.0004184562348251714,
+      "source_upper": 0.0005201745602265852,
+      "full_C_central": -8.250126228863274e-19,
+      "frozen_source_C_central": -0.000466020048673177,
+      "time_margin": 0.95888,
+      "tilt_bound": 0.0008062564879912886,
+      "shape": [
+        1.0,
+        -1.0,
+        0.0
+      ],
+      "quadrature_difference": 2.220446049250313e-16
+    },
+    {
+      "radius": 0.00017320508075688773,
+      "thickness": 1e-05,
+      "amplitude": 0.25,
+      "source_central": 1.1111116471340665e-09,
+      "source_lower": 1.1110814820246826e-09,
+      "source_upper": 1.1111407555900355e-09,
+      "full_C_central": -9.897334022795457e-18,
+      "frozen_source_C_central": -1.111111095992491e-09,
+      "time_margin": 0.9999899962500001,
+      "tilt_bound": 1.8750125047917457e-09,
+      "shape": [
+        1.0,
+        -1.0,
+        0.0
+      ],
+      "quadrature_difference": 2.220446049250313e-16
+    }
+  ],
+  "mixed_derivative_bound_and_deletion": {
+    "sharp_polynomial_error": 0.010924620000000001,
+    "bound": 0.010924620000000001,
+    "noncentered_window_odd_leak": 0.007885439999999999,
+    "Cauchy_diagonal": 524288.0,
+    "Cauchy_mixed": 262144.0,
+    "Cauchy_temporal": 2097152.0,
+    "independent_complex_residual_bound": 117.70281827016522,
+    "certified_E": 0.007899272533333335,
+    "L_interval": 0.004344951893333334,
+    "ab_interval": 0.002172475946666667,
+    "lambda_interval": 0.0010933638936128165,
+    "wrong_member_exclusion_margin": 0.012006255466666664,
+    "sampled_maxima_certify_derivative_bounds": false
+  },
+  "limits": [
+    "No actual constraint-measurement instrument is certified.",
+    "The effective mixed-derivative bounds remain additional domain inputs.",
+    "The scalar FLRW example tests transport; it does not derive its background.",
+    "No new all-axiom quantum common implementation or GR completion is claimed."
+  ],
+  "author_binding": {
+    "proof.md": "9560bbf7361324e196c11d5abdad01a94285e21efc21a95b1b25e74ab728aa74",
+    "check.py": "db3e8258aa76a792a0c4344dce8804e9588b5fb73953c7274a334e78cd9449c6",
+    "results.json": "c81284677bb5f93d53f5204c2d998e9b6214f41c4d6e0d91d2f12466e9afd741",
+    "NEXT.md": "cf6cbc413e6ee7b7aefae30d44688fcdff6f339b06aa2b8c0946bf0cf4464fa1"
+  }
+}

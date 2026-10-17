@@ -1,0 +1,79 @@
+{
+  "schema": "reference_transport_non_numbered_diagnostic_v1",
+  "status": "PASS",
+  "source_sha256": "63c8c2235a361b9422523cc55476f53802ad83a5bbf54d52b005376f33a6a3a7",
+  "numbered_science_round": false,
+  "assumptions": [
+    "Fixed CAR pair model H(p)=3I+N_a+N_b-I+p(pair creation+annihilation)",
+    "Prescribed p=k/a history, not an autonomous sourced metric",
+    "Initial Gibbs reference and fixed endpoint energy effect",
+    "No extra restoring channel at the endpoint"
+  ],
+  "ideal": {
+    "p_initial": 0.04,
+    "p_final": 0.09999999999999984,
+    "probability_gap": 0.05999999999999984,
+    "endpoint_energy_gain": 0.16970562748477047,
+    "trace_distance": 0.18973665961010255,
+    "relative_entropy": 0.16635532333438632,
+    "entropy_change": 0.0
+  },
+  "exact_expected": {
+    "p_initial": 0.04,
+    "p_final": 0.1,
+    "probability_gap": 0.06,
+    "endpoint_energy_gain": 0.16970562748477142,
+    "trace_distance": 0.18973665961010275,
+    "relative_entropy": 0.16635532333438685
+  },
+  "smooth_diagnostics": [
+    {
+      "steps_per_ramp": 256,
+      "p_initial": 0.04,
+      "p_final": 0.09999968061820674,
+      "probability_gap": 0.05999968061820674,
+      "endpoint_energy_gain": 0.16970472413662874,
+      "trace_distance": 0.1897361546224796,
+      "relative_entropy": 0.16635443782001813,
+      "entropy_change": 9.103828801926284e-15,
+      "numerical_unitary_gap": 0.0008944272730895923
+    },
+    {
+      "steps_per_ramp": 512,
+      "p_initial": 0.04,
+      "p_final": 0.09999968061888896,
+      "probability_gap": 0.05999968061888896,
+      "endpoint_energy_gain": 0.16970472413837429,
+      "trace_distance": 0.18973615462357707,
+      "relative_entropy": 0.1663544378218348,
+      "entropy_change": -4.218847493575595e-15,
+      "numerical_unitary_gap": 0.0008944272730933881
+    },
+    {
+      "steps_per_ramp": 1024,
+      "p_initial": 0.04,
+      "p_final": 0.09999968061904513,
+      "probability_gap": 0.05999968061904513,
+      "endpoint_energy_gain": 0.16970472413857585,
+      "trace_distance": 0.1897361546238528,
+      "relative_entropy": 0.16635443782216736,
+      "entropy_change": -1.3322676295501878e-14,
+      "numerical_unitary_gap": 0.0008944272730916717
+    }
+  ],
+  "analytic_bounds": {
+    "ramp_width": "1/1000",
+    "integrated_operator_difference_le": "1/500",
+    "probability_gap_ge": "29/500",
+    "minimum_instantaneous_energy": "3-sqrt(5)>0",
+    "proof": "Duhamel norm bound plus trace-distance contraction"
+  },
+  "not_claimed": [
+    "Complete field state or all-mode stress",
+    "Actual preparation or detector",
+    "Internal pulse source, conservation and metric feedback",
+    "Einstein reconstruction",
+    "A counterexample to adopted TR or conjectured CT",
+    "Positive minimal reset work or dissipated heat"
+  ]
+}

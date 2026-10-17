@@ -1,0 +1,23 @@
+{
+  "mode": "root_read_only_replay",
+  "checks": [
+    {
+      "script": "check.py",
+      "chunk_id": "a217eb",
+      "wall_time_seconds": 0.4766689,
+      "exit_code": 0,
+      "original_token_count": 57,
+      "output": "{\"status\": \"PASS\", \"mode\": \"READ_ONLY_MATCH\", \"author_groups\": 1, \"entropy_drop\": 0.08216599661451895, \"structural_increase\": 0.22907268296853855, \"beta_star\": 0.45814536593707755, \"maximum_residual\": 5.692803207576465e-14}\r\n",
+      "script_sha256": "b77ed31a345be28bb3bd9f43c83378bbe6eb8cf71c6e855cb05c2fce61fd120f"
+    },
+    {
+      "script": "independent_check.py",
+      "chunk_id": "3faa62",
+      "wall_time_seconds": 0.4485771,
+      "exit_code": 0,
+      "original_token_count": 56,
+      "output": "{\"round\": 1274, \"verdict\": \"PASS_INDEPENDENT_SCOPED\", \"mode\": \"READ_ONLY_MATCH\", \"independent_groups\": 1, \"max_diagnostic_error\": 1.1535217225855376e-13, \"entropy_drop\": 0.08216599661452006, \"robust_entropy_gap\": \"7/150\"}\r\n",
+      "script_sha256": "2adf7f04b2278da59ee4aa7c91a2af8b8d88ae24097fc8832ac4b1a6dd7f0e2a"
+    }
+  ]
+}

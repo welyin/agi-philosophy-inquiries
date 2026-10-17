@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "date": "2026-10-16",
+  "accepted_through": 1257,
+  "science_rounds": 24,
+  "science_groups": [
+    62,
+    52,
+    2
+  ],
+  "frozen_bindings": 244,
+  "distinct_frozen_science_files": 249,
+  "local_links": 364,
+  "goal_status": "active",
+  "goal_prompt_sha256": "29426b934e3ee81d75ef5831b396cd2af6f44eea96711563bb03a2e3796db214",
+  "root_replays": [
+    {
+      "path": "1257/check.py",
+      "execution_chunk": "fecbef",
+      "exit_code": 0,
+      "action": "read_only_match",
+      "code_sha256": "c5eea688f592b9bf3406fdd2abeb0c9d9ddfb1dadb0d492e246edf79a38f0293",
+      "stdout": "PASS: 1257 three exact author groups; read-only reconstruction matches frozen results.",
+      "arguments": [
+        "C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "D:\\workspace\\AGI的哲学思考\\research_cognition_physics\\archive_1234_\\1257\\check.py"
+      ],
+      "performed_before_publication": true,
+      "repeated_by_publication": false
+    },
+    {
+      "path": "1257/independent_check.py",
+      "execution_chunk": "955faa",
+      "exit_code": 0,
+      "action": "READ_ONLY_MATCH",
+      "code_sha256": "95c28b2e0fe1c624e0f3a9da3ee784b16c291382918d6ed1dab5d0be18cb6da2",
+      "stdout": "PASS; independent_groups=2; gap_strict_lower=25/96; shell_counts=[6,24]",
+      "arguments": [
+        "C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "D:\\workspace\\AGI的哲学思考\\research_cognition_physics\\archive_1234_\\1257\\independent_check.py"
+      ],
+      "performed_before_publication": true,
+      "repeated_by_publication": false
+    }
+  ],
+  "navigation_layer_sha256": "4471ae9c33cf24da42cce655e0119bbd0a10fa9cc017834634ddf713c3d0ca6e"
+}

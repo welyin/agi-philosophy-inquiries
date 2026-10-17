@@ -1,0 +1,135 @@
+{
+  "status": "PASS_1260",
+  "author_code_sha256": "be89310d283987777820fd3d0a2568b903c7e6b59092587464f5c969a176c9d8",
+  "original_source_sha256": "6e49d71ec5535fd6999432481938663a5543e2704db993ec7a00b8f475b6cd9f",
+  "parameters": {
+    "hbar": 1,
+    "c": 1,
+    "G": 1,
+    "R": "1000000000000000000000000000000",
+    "mu": "1000000000000000000000000",
+    "a": "10000000000000000000000000000",
+    "sigma_per_axis": "1000000000",
+    "cutoff_velocity": "1/100",
+    "N": 80000000000,
+    "T": 502655327231.26495,
+    "Delta_age": 0.25132766361563247
+  },
+  "scope": {
+    "actual_two_body_motion_and_reaction": true,
+    "same_1253_mass": true,
+    "unknown_reference_preserved": true,
+    "all_EIH_velocity_cross_terms_retained": true,
+    "source_and_geometric_ruler_dictionary_proved": false,
+    "full_GR_remainder_certified": false,
+    "actual_preparation_or_reader_constructed": false,
+    "source_geometry_not_inferred_from_clock_readout": true
+  },
+  "proof_sha256": "48c2ea72568b8e96ef8b51c9bea0a80e945e11fe7a9324790e345ad2c210ad2a",
+  "inherited_source_hashes": {
+    "archive_1106_1119/1112/check.py": "6e49d71ec5535fd6999432481938663a5543e2704db993ec7a00b8f475b6cd9f",
+    "archive_1234_/1253/proof.md": "422c736a1c3d65671fcef1795cc889e44514516344510048be7c8240acc29161"
+  },
+  "scientific_groups": 3,
+  "groups": {
+    "1_original_material_actual_Mr": {
+      "dimension": 864,
+      "mass_range_display": [
+        26.717797887081275,
+        31.71779788708142
+      ],
+      "six_mass_weights_over_16": [
+        1,
+        3,
+        4,
+        4,
+        3,
+        1
+      ],
+      "spectral_residuals": [
+        1.057365980351993e-15,
+        4.745142154300084e-15,
+        2.663548046812493e-15,
+        2.085514787758117e-15,
+        4.296610735176721e-15,
+        1.107617715766254e-15
+      ],
+      "full_unknown_input_effects": [
+        {
+          "model": "delete_G2",
+          "Mr_probability": 0.6218592167691149,
+          "all_input_effect_scalar_residual": 1.9855058462207135e-15
+        },
+        {
+          "model": "complete_1PN_static_comparator",
+          "Mr_probability": 0.8053202189419469,
+          "all_input_effect_scalar_residual": 1.822688839838625e-15
+        }
+      ]
+    },
+    "2_rational_positivity_and_full_state_budget": {
+      "bounds": {
+        "exact_SR_kinetic": {
+          "rational": "1500000000000000000000039/130000000000000000000000000000000",
+          "display": 1.1538461538461538e-08
+        },
+        "Newton_spatial_variation": {
+          "rational": "9/15625000000",
+          "display": 5.76e-10
+        },
+        "G2_spatial_variation": {
+          "rational": "843750000000000000000027/9765625000000000000000000000000000000",
+          "display": 8.64e-14
+        },
+        "G2_finite_source_M_squared": {
+          "rational": "3/9765625000000000000000",
+          "display": 3.072e-22
+        },
+        "1PN_self_velocity_all_three_axes": {
+          "rational": "2109375000000000000421875000000000000000000001755000000000000000351/406250000000000000000000000000000000000000000000000000000000000000000000000000",
+          "display": 5.1923076923076925e-12
+        },
+        "1PN_scalar_cross_all_three_axes": {
+          "rational": "472500000000000000063/2000000000000000000000000000000000000000000000000000000",
+          "display": 2.3625e-34
+        },
+        "1PN_radial_cross_all_nine_indices": {
+          "rational": "27000000000000000027/400000000000000000000000000000000000000000000000000000",
+          "display": 6.75e-35
+        },
+        "total_static_comparator_norm": {
+          "rational": "4923644475000124800000543874521637500000000040220505000000000000000351/406250000000000000000000000000000000000000000000000000000000000000000000000000",
+          "display": 1.2119740246154154e-08
+        }
+      },
+      "positive_H_coefficient": {
+        "rational": "199969979/200000000",
+        "display": 0.999849895
+      },
+      "phase_derivative_lower": {
+        "rational": "177147/400000",
+        "display": 0.4428675
+      },
+      "certified_Mr_gap_with_mechanical_error": "468749/5000000"
+    },
+    "3_endpoint_deletion_and_SR_scope": {
+      "same_internal_age_reference_deletion": {
+        "T_minus": 502655327231.26495,
+        "T_plus": 502655327231.01355,
+        "reference_probability_plus": 0.6218592167691149,
+        "reference_probability_minus": 0.6218592167691149,
+        "actual_effect_gap_bound": "1/5000000",
+        "physical_stopping_instrument_constructed": false
+      },
+      "SR_completion_beyond_1PN_on_same_comparator": {
+        "rational": "281250000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003341637/14851720000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "display": 1.8937200539735464e-50
+      },
+      "known_2PN_static_piece_only": {
+        "rational": "2929687500000000000000468750000000000000000003/610351562500000000000000000000000000000000000000000",
+        "display": 4.8e-06
+      },
+      "conditional_gap_with_extra_instrument_error_001_each": "458749/5000000"
+    }
+  }
+}

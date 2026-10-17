@@ -1,0 +1,161 @@
+{
+  "round": 1270,
+  "part": "same_reading_source_and_geometry_continuation",
+  "status": "PASS_AUTHOR_WITH_SCOPE",
+  "author_groups": 1,
+  "arithmetic": "exact Fraction endpoint arithmetic and integer exponents; no ODE",
+  "task": {
+    "family": "B=2, kappa in [3,3001/1000]; plus kappa=3 B=1,2",
+    "old_comparison_and_new_read_window": [
+      "0",
+      "9/4"
+    ],
+    "sampling_gate": [
+      "199999999/100000000",
+      "2"
+    ],
+    "actual_conditional_output_window": [
+      "17/8",
+      "9/4"
+    ],
+    "epsilon_upper": "2^(-4N)",
+    "N_decimal_digits": 923
+  },
+  "full_parameter_core_extension": {
+    "u_after2_strict_lower": "174335787648239687547460263219525022748498058813548022069230517105428211/500000000000000000000000000000000000000000000000000000000000000000000000",
+    "u_lower_margin_over_one_third": "23007362944719062642380789658575068245494176440644066207691551316284633/1500000000000000000000000000000000000000000000000000000000000000000000000",
+    "J2_lower": "99472003655730492562565069801022583/1000000000000000000000000000000000000",
+    "Mc_hold_lower": "1868690476183737470334311058376839614824051690921269565269639998089248861/2000000000000000000000000000000000000000000000000000000000000000000000000",
+    "q_r_amplitude_squared_upper": "249742183812401746903675124400816893821541845678349295259654210853059057/1000000000000000000000000000000000000000000000000000000000000000000000000",
+    "Y_hold_abs_upper": "220597588897743630295770680183441/125000000000000000000000000000000000",
+    "theta_hold_abs_upper": "264425216131244906545885747148096607/1000000000000000000000000000000000000",
+    "piQ_abs_upper": "1822939272610154186086091682450774333/125000000000000000000000000000000000",
+    "pi_material_abs_upper": "81/2",
+    "F_strict_lower": "7/10",
+    "Mr_strict_lower": "1/20",
+    "all_core_checks": true
+  },
+  "old_two_program_endpoint_checks": {
+    "alpha0": {
+      "u_after2_strict_lower": "279370577207692145444175493389560825060945670108585669925203232561903311/800000000000000000000000000000000000000000000000000000000000000000000000",
+      "u_lower_margin_over_one_third": "38111731623076436332526480168682475182837010325757009775609697685709933/2400000000000000000000000000000000000000000000000000000000000000000000000",
+      "J2_lower": "99997960372937254649456395709179709/1000000000000000000000000000000000000",
+      "Mc_hold_lower": "1870001075127475757207983391929900251511673920439529190130666713091109339/2000000000000000000000000000000000000000000000000000000000000000000000000",
+      "q_r_amplitude_squared_upper": "250000000000000000000000027817343525568856080607436007985397011979407981/1000000000000000000000000000000000000000000000000000000000000000000000000",
+      "Y_hold_abs_upper": "3526451470732765623686792453128859/2000000000000000000000000000000000000",
+      "theta_hold_abs_upper": "263558868522459065939507354705048251/1000000000000000000000000000000000000",
+      "piQ_abs_upper": "1454397339558941248128747452912121561/100000000000000000000000000000000000",
+      "pi_material_abs_upper": "81/2",
+      "F_strict_lower": "7/10",
+      "Mr_strict_lower": "1/20",
+      "all_core_checks": true
+    },
+    "alpha1": {
+      "u_after2_strict_lower": "1396872819012301139451501639316788119877874289971817714067753190662269667/4000000000000000000000000000000000000000000000000000000000000000000000000",
+      "u_lower_margin_over_one_third": "190618457036903418354504917950364359633622869915453142203259571986809001/12000000000000000000000000000000000000000000000000000000000000000000000000",
+      "J2_lower": "99472344719788719418714189659954233/1000000000000000000000000000000000000",
+      "Mc_hold_lower": "1868691582780341761218816718727716342330690995037622544118443543954512963/2000000000000000000000000000000000000000000000000000000000000000000000000",
+      "q_r_amplitude_squared_upper": "31217717406817132965321991932593999851012282133018334117136758694183233/125000000000000000000000000000000000000000000000000000000000000000000000",
+      "Y_hold_abs_upper": "1763179320725192968798011081857181/1000000000000000000000000000000000000",
+      "theta_hold_abs_upper": "66105152367483229149500832178258823/250000000000000000000000000000000000",
+      "piQ_abs_upper": "7273125417894278270076697747010136687/500000000000000000000000000000000000",
+      "pi_material_abs_upper": "81/2",
+      "F_strict_lower": "7/10",
+      "Mr_strict_lower": "1/20",
+      "all_core_checks": true
+    }
+  },
+  "source_and_pulse_checks": {
+    "pulse_integral": "1",
+    "pulse_peak": "218750000",
+    "pulse_derivative_upper": "262500000000000000",
+    "uncompleted_work_coefficient_upper": "442968750000000000",
+    "work_power_bound": "epsilon*2^59",
+    "explicit_completed_work_bound": "epsilon*2^(E0+60)",
+    "density_pressure_work_deletion_checks": [
+      {
+        "a": "3/2",
+        "c": "1/7",
+        "kappa": "3",
+        "density_change": "0",
+        "pressure_vs_Hdot": "0",
+        "work_continuity_residual": "0"
+      },
+      {
+        "a": "8/3",
+        "c": "-1/11",
+        "kappa": "3001/1000",
+        "density_change": "0",
+        "pressure_vs_Hdot": "0",
+        "work_continuity_residual": "0"
+      },
+      {
+        "a": "5/2",
+        "c": "0",
+        "kappa": "37/12",
+        "density_change": "0",
+        "pressure_vs_Hdot": "0",
+        "work_continuity_residual": "0"
+      }
+    ],
+    "same_completion_internal_output_cancellation": true,
+    "different_completion_cancellation_rejected": true
+  },
+  "resource_checks": {
+    "M_exponent": 3059,
+    "EH": 3093,
+    "E0": 14008,
+    "all_margin_exponents_over_110": true,
+    "margin_bit_lengths": {
+      "classical_source_negative_exponent": 3067,
+      "quantum_source_negative_exponent": 3065,
+      "explicit_work_negative_exponent": 3067,
+      "read_norm_negative_exponent": 3065
+    },
+    "classical_new_source_difference": "<2^-100",
+    "real_quantum_completed_source_difference": "<2^-80",
+    "conditional_source_extra": "<=16||b||dR; p_a>=1/4 from output part",
+    "source_comparison_preserves_actual_output_noise_process": true
+  },
+  "field_tests": {
+    "parameter_acceptance": "400000000003/6000000000000000",
+    "new_classical_branch_bound": "14070921662638878269082405677358200541847627/190147590034234410224505480806400000000000000000",
+    "actual_bounded_quantum_source_comparison_bound": "68252953073237238129534258416719/922337203685477580800000000000000000",
+    "weight_normalization": "sum_ab integral |w_ab| <=1",
+    "actual_geometry_role": "g_kappa is a declared effective comparison metric",
+    "conditional_weights_supported_after_actual_output": true
+  },
+  "scope": [
+    "The old full-kappa classical existence theorem is reused, not new ODE integration.",
+    "New classical +/-epsilon branches are comparison tools, not quantum conditional geometries.",
+    "Actual quantum state is not reset at t=2; the post-gate unitary is the same Hc.",
+    "Known material Gaussian family; arbitrary pointer-reference handled as a full cq process.",
+    "Nonrare normalized branch estimates only for the specified calibration input.",
+    "Pure internal output cancellation uses identical completed source coefficients.",
+    "Only bounded completed sources, not uncompleted stress or an operator Einstein equation.",
+    "CT unadopted; no full nonuniform PDE, full GR, or empirical conclusion."
+  ],
+  "bindings_sha256": {
+    "1247/proof.md": "f3a79f8f43aa235d2fa13cc87a232e2b64643fc1bade375bfee96c204ab4bf3d",
+    "1247/results.json": "dbcd590e7816bc423c49a4e1bf83bab6fa50a84dd5578249cc493a15cd72bf06",
+    "1249/canonical.md": "6f7e4417dc96ee8062111cb4778e8e093257c7248916fedbce5db39eeb3cd989",
+    "1249/quantum_bridge.md": "037e26ade64a67538b7a359fccb672ded5486795380cc3539a4db66e48a07d5f",
+    "1249/quantum_bounds.py": "72db28046211fab6187078914c4034cf6afa70506f28e51312e5fcb01441acda",
+    "1249/quantum_bounds_results.json": "77e125812877903dea9625a1fd0c0db571eb70829b28d6bcfa5a44e393ebcaa6",
+    "1252/proof.md": "fa17c02f2e74e51cc39bcd1e848ed3530701083a17af48cbbba6c08cb18d6bb9",
+    "1252/results.json": "9e2976d7c60e89add2b3e0a7459bc4b5f80360357bfd5682edef2b0dc725969d",
+    "1267/geometry_proof.md": "69055382128e1667bb6cc5066a881d64e69b5a3fe3c2c5edfc31f773322c8c1f",
+    "1267/geometry_results.json": "f27156e495269e2ca5dc8495a6e78d405f34e3ae2c7e5ab028b6b9ca1d507572",
+    "1268/readout_proof.md": "d604c0ae4981e72b9a1102628a6bdc025ba6cc7df726729f3a072ef54a638f45",
+    "1268/readout_results.json": "6b9fa0503c9db96bf8d41847dfd5d6847edaa153da22189b8609a29e2de380e3",
+    "1269/material_proof.md": "756c1661c657f435b7e0d06272f1e3fc57f8c79d199b904c16020494d7faa147",
+    "1269/material_results.json": "40069ff2e17b54a145b3b8f2cf0a2776edef87f6e05af5b98d7c9bebcda9a81d",
+    "1269/pointer_proof.md": "f9f413070d0143c19d9017246627d76db7fccdce56b8329713586afdb0066a50",
+    "1269/pointer_results.json": "8184030cc8a51be11139d38be87d14e77e144820763472b08c438aa1af0d921f",
+    "1269/acceptance.json": "900bf2fcb607ee8f079d9209d45715540a551a2ac3edfd6996ff07dd397da5c2",
+    "_admission/finite_semiclassical_budget_gate_after1256.md": "c39fce7fee0e26d95a83dbd35c8fd3212c8021d6bac5af40d9260db5e8da3d74",
+    "admission.md": "0d5c3fef3f12ae17f5af09cf641deff607ee7326aa2d08fc6b01c77b07c12189",
+    "continuation_proof.md": "71fcfdad7dbeb8b81ca775f69f061496f4d10a90b316e80e2dbca6265aa84f1b",
+    "continuation_check.py": "d4ae3868c1e726b08f4688e5454aa4075e07fdd1537561c0212b3fda5a6e14ab"
+  }
+}

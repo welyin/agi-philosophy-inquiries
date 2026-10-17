@@ -1,0 +1,191 @@
+{
+  "round": 1243,
+  "status": "PASS",
+  "science_groups": 3,
+  "group_finite_window": {
+    "status": "PASS",
+    "arithmetic": "exact Fraction; exp bounded by 1/(1-z)",
+    "Rosen_area_identity": {
+      "exact": "999/250000",
+      "decimal": 0.003996
+    },
+    "normalized_moments": [
+      {
+        "exact": "1/30",
+        "decimal": 0.03333333333333333
+      },
+      {
+        "exact": "1/15",
+        "decimal": 0.06666666666666667
+      },
+      {
+        "exact": "1/600",
+        "decimal": 0.0016666666666666668
+      }
+    ],
+    "certificate": {
+      "z": {
+        "exact": "501/10000000",
+        "decimal": 5.01e-05
+      },
+      "exp_upper": {
+        "exact": "10000000/9999499",
+        "decimal": 1.0000501025101358
+      },
+      "terms": {
+        "noise": {
+          "exact": "1/5000",
+          "decimal": 0.0002
+        },
+        "endpoint": {
+          "exact": "1/50000",
+          "decimal": 2e-05
+        },
+        "transverse": {
+          "exact": "1/50000",
+          "decimal": 2e-05
+        },
+        "longitudinal": {
+          "exact": "1/10000",
+          "decimal": 0.0001
+        },
+        "area_weight": {
+          "exact": "501/499974950",
+          "decimal": 1.002050202715156e-06
+        },
+        "nonlinear": {
+          "exact": "1502003/5999699400000",
+          "decimal": 2.5034637568675525e-07
+        },
+        "finite_cover": {
+          "exact": "1/100000",
+          "decimal": 1e-05
+        }
+      },
+      "zeta": {
+        "exact": "2107408793/5999699400000",
+        "decimal": 0.00035125239657840193
+      },
+      "epsS": {
+        "exact": "6322226379/1999899800000",
+        "decimal": 0.0031612715692056173
+      },
+      "W1": {
+        "exact": "53/4",
+        "decimal": 13.25
+      },
+      "trace_bound": {
+        "exact": "335157994079/7999599200000",
+        "decimal": 0.04189684829197443
+      },
+      "full_window_equation_bound": {
+        "exact": "347802446837/3999799600000",
+        "decimal": 0.08695496815315447
+      },
+      "conditional_margin": {
+        "exact": "64821965921/7999599200000",
+        "decimal": 0.008103151708025572
+      }
+    },
+    "smaller_window": {
+      "z": {
+        "exact": "51/100000000",
+        "decimal": 5.1e-07
+      },
+      "exp_upper": {
+        "exact": "100000000/99999949",
+        "decimal": 1.00000051000026
+      },
+      "terms": {
+        "noise": {
+          "exact": "1/50",
+          "decimal": 0.02
+        },
+        "endpoint": {
+          "exact": "1/5000",
+          "decimal": 0.0002
+        },
+        "transverse": {
+          "exact": "1/50000",
+          "decimal": 2e-05
+        },
+        "longitudinal": {
+          "exact": "1/100000",
+          "decimal": 1e-05
+        },
+        "area_weight": {
+          "exact": "51/4999997450",
+          "decimal": 1.0200005202002653e-08
+        },
+        "nonlinear": {
+          "exact": "15203/5999996940000",
+          "decimal": 2.5338346255889923e-09
+        },
+        "finite_cover": {
+          "exact": "1/100000",
+          "decimal": 1e-05
+        }
+      },
+      "zeta": {
+        "exact": "607200072343/29999984700000",
+        "decimal": 0.020240012733839827
+      },
+      "epsS": {
+        "exact": "1821600217029/9999994900000",
+        "decimal": 0.18216011460455844
+      },
+      "W1": {
+        "exact": "53/4",
+        "decimal": 13.25
+      },
+      "trace_bound": {
+        "exact": "96545211502333/39999979600000",
+        "decimal": 2.4136315185103996
+      },
+      "full_window_equation_bound": {
+        "exact": "100188411936391/19999989800000",
+        "decimal": 5.009423151625358
+      },
+      "conditional_margin": {
+        "exact": "-94545212522333/39999979600000",
+        "decimal": -2.3636315185103993
+      }
+    }
+  },
+  "group_tensor_reuse": {
+    "status": "PASS",
+    "purpose": "old 304/1097 calibration, not new theorem",
+    "corner_cases": 512,
+    "max_reconstruction_error": 5.551115123125783e-16,
+    "max_frobenius": 6.039086251120871,
+    "exact_conservative_norm_squared": {
+      "exact": "321/4",
+      "decimal": 80.25
+    }
+  },
+  "group_weak_trace": {
+    "status": "PASS",
+    "compact_window_mass": "1",
+    "W1_bound": {
+      "exact": "53/4",
+      "decimal": 13.25
+    },
+    "conserved_polynomial_window_difference": {
+      "exact": "3/200",
+      "decimal": 0.015
+    },
+    "omitted_conservation_difference": {
+      "exact": "-1/200",
+      "decimal": -0.005
+    },
+    "point_gradient_inference": "invalid; frequency is not controlled"
+  },
+  "scope": {
+    "CT": "conjecture_not_used",
+    "new_adopted_axioms": 0,
+    "actual_horizon_instruments": "not implemented",
+    "finite_coverage_and_regularity": "explicit independent conditions",
+    "Einstein_generation": "not proved",
+    "cosmological_constant": "not selected"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "status": "PASS_EFFECTIVE_MODEL_SCREEN_ONLY",
+  "scope": "Same marked population model and local pure-clock hypothesis; not full metric equivalence.",
+  "parameters": {
+    "T_K": 0.07,
+    "J_over_kB_K": 0.35,
+    "V_V": 0.0,
+    "R_S_ohm": 580000
+  },
+  "exact": {
+    "q0": "290/333",
+    "q1": "580/623",
+    "difference": "12470/207459",
+    "exp7_Taylor_lower": "1361164565061879733/1241276534784000",
+    "finite_W_lower": "3741/62300",
+    "per_history_TV_contract": "1/1000",
+    "conditional_record_gap_lower": "9041/155750"
+  },
+  "diagnostic": {
+    "first_event_timeout_seconds": 1.3830999456236282e-09,
+    "lambda0_per_second": 5061094841.446009,
+    "lambda1_per_second": 9468654913.576166,
+    "changed_D_S_noevent": [
+      0.9309772217114671,
+      0.06902072505791916,
+      2.053230613752177e-06
+    ],
+    "finite_W": 0.06010813893932889
+  },
+  "material_checks": [
+    {
+      "R_D_ohm": 43000.0,
+      "D_first_probability_by_state": [
+        0.8708708708708708,
+        0.8708708708708709,
+        0.8708708708708709,
+        0.8708708708708708
+      ],
+      "Gibbs_probability": [
+        0.0033464254621424308,
+        0.4966535745378576,
+        0.4966535745378576,
+        0.0033464254621424308
+      ],
+      "stationary_residual_scaled": 3.680320578024931e-19,
+      "ldb_residual": 0.0
+    },
+    {
+      "R_D_ohm": 21500.0,
+      "D_first_probability_by_state": [
+        0.9309791332263242,
+        0.9309791332263242,
+        0.9309791332263242,
+        0.9309791332263242
+      ],
+      "Gibbs_probability": [
+        0.0033464254621424308,
+        0.4966535745378576,
+        0.4966535745378576,
+        0.0033464254621424308
+      ],
+      "stationary_residual_scaled": 1.180301848297562e-18,
+      "ldb_residual": 0.0
+    }
+  ],
+  "not_certified": [
+    "instrument error",
+    "finite reservoir realization",
+    "full stress source",
+    "unchanged physical geometry",
+    "quantum unknown-input parent",
+    "Einstein or Jacobson selection"
+  ],
+  "new_numbered_rounds": 0,
+  "new_adopted_axioms": 0
+}

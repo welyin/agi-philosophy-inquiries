@@ -1,0 +1,63 @@
+{
+  "status": "PASS_EXACT_DIAGNOSTICS_AND_CONDITIONAL_BUDGET",
+  "new_scientific_rounds": 0,
+  "sp4_complete_enumeration": {
+    "symplectic_bases": 720,
+    "nonzero_inputs": 15,
+    "each_image_count": 48,
+    "clifford_classes_mod_phase": 11520
+  },
+  "pauli_cases": [
+    {
+      "m": 1,
+      "n": 1,
+      "total": 15,
+      "reject": 8,
+      "benign_accept": 1,
+      "harmful_accept": 6,
+      "wrong_accept_weight": "2/5",
+      "conditional_wrong_given_accept_for_bell_input": "6/7"
+    },
+    {
+      "m": 1,
+      "n": 3,
+      "total": 255,
+      "reject": 224,
+      "benign_accept": 7,
+      "harmful_accept": 24,
+      "wrong_accept_weight": "8/85",
+      "conditional_wrong_given_accept_for_bell_input": "24/31"
+    },
+    {
+      "m": 2,
+      "n": 2,
+      "total": 255,
+      "reject": 192,
+      "benign_accept": 3,
+      "harmful_accept": 60,
+      "wrong_accept_weight": "4/17",
+      "conditional_wrong_given_accept_for_bell_input": "20/21"
+    }
+  ],
+  "joint_contract_budget": {
+    "message_qubits_per_slot": 2,
+    "tag_qubits_per_slot": 12,
+    "slots": 4,
+    "sent_code_qubits": 56,
+    "tag_preparations": 48,
+    "key_choices_per_slot": "8199466938067098636185727226635009235269279674958727273578345961263382512371844079929261981678349481731786246153965656571926229811200000000",
+    "capacity_bits_per_key_register": 462,
+    "three_retained_key_register_capacity_bits": 5544,
+    "composable_error_ideal_model": "1/1024",
+    "error_if_total_preparation_and_implementation_distance_le_1_over_4096": "5/4096"
+  },
+  "deleted_authentication": {
+    "bell_payload_pauli_attack_wrong_accept": "1/1"
+  },
+  "scope": [
+    "Pauli enumeration is not a coherent-attack security proof.",
+    "Full security uses Portmann Appendix D.1 in the declared attack/resource domain.",
+    "No key recycling, no empirical error, no physical energy ceiling.",
+    "Classical facts, source honesty, identity uniqueness and gravity are not proved."
+  ]
+}

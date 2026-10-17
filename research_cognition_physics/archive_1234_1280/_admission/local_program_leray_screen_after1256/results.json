@@ -1,0 +1,275 @@
+{
+  "status": "PASS_FINITE_ALGEBRA_AND_SYMBOL_ONLY",
+  "does_not_prove": [
+    "PDE existence",
+    "continuous dependence",
+    "geometric uniqueness",
+    "common writing window",
+    "quantum causality",
+    "actual menu admission"
+  ],
+  "algebra": {
+    "mass_derivative_residual_terms": 0,
+    "source_transport_residual_terms": 0,
+    "independent_formal_symbols": [
+      "alpha",
+      "eps",
+      "w",
+      "wp",
+      "f",
+      "fp",
+      "q",
+      "r",
+      "p",
+      "dp",
+      "X",
+      "dX",
+      "y",
+      "K",
+      "g",
+      "div",
+      "nu",
+      "A",
+      "TA"
+    ]
+  },
+  "pulse": {
+    "w_endpoint_derivatives_orders_0_to_3": [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ],
+      [
+        "384",
+        "-384"
+      ]
+    ],
+    "f_is_translation_of_w": true,
+    "zero_extension_is_C2_not_C3": true
+  },
+  "leray_ledger": {
+    "unknown_indices": {
+      "Y0": 3,
+      "Yc": 3,
+      "Yr": 3,
+      "Uc": 2,
+      "Ur": 2,
+      "zc": 2,
+      "zr": 2,
+      "nc": 1,
+      "nr": 1
+    },
+    "rows": {
+      "Y0": [
+        1,
+        {
+          "Y0": 2,
+          "Yc": 1,
+          "Yr": 1
+        }
+      ],
+      "Yc": [
+        0,
+        {
+          "Yc": 3,
+          "Y0": 1,
+          "Yr": 1,
+          "Uc": 1,
+          "zc": 0,
+          "nc": 0
+        }
+      ],
+      "Yr": [
+        0,
+        {
+          "Yr": 3,
+          "Y0": 1,
+          "Yc": 1,
+          "Ur": 1,
+          "zr": 0,
+          "nr": 0
+        }
+      ],
+      "Uc": [
+        1,
+        {
+          "Uc": 1,
+          "Y0": 1,
+          "Yc": 1,
+          "Yr": 1,
+          "zc": 0
+        }
+      ],
+      "Ur": [
+        1,
+        {
+          "Ur": 1,
+          "Y0": 1,
+          "Yc": 1,
+          "Yr": 1,
+          "zr": 0
+        }
+      ],
+      "zc": [
+        1,
+        {
+          "zc": 1,
+          "Y0": 1,
+          "Yc": 1,
+          "Yr": 1,
+          "Uc": 0
+        }
+      ],
+      "zr": [
+        1,
+        {
+          "zr": 1,
+          "Y0": 1,
+          "Yc": 1,
+          "Yr": 1,
+          "Ur": 0
+        }
+      ],
+      "nc": [
+        0,
+        {
+          "nc": 1,
+          "Uc": 1,
+          "Y0": 1,
+          "Yc": 1,
+          "Yr": 1
+        }
+      ],
+      "nr": [
+        0,
+        {
+          "nr": 1,
+          "Ur": 1,
+          "Y0": 1,
+          "Yc": 1,
+          "Yr": 1
+        }
+      ]
+    },
+    "derivative_entries_checked": 45,
+    "all_off_diagonal_strict": true,
+    "absent_entries_are_not_zero_order_dependencies": true
+  },
+  "symbol_samples": {
+    "frequency": [
+      "1",
+      "2",
+      "2"
+    ],
+    "cases": [
+      {
+        "case": "equal",
+        "independent_blocks": [
+          {
+            "v": [
+              "1/10",
+              "1/5",
+              "0"
+            ],
+            "roots": [
+              "-3",
+              "1/2",
+              "3"
+            ],
+            "vandermonde": "105/2",
+            "light_transport_gap": "5/2"
+          },
+          {
+            "v": [
+              "1/10",
+              "1/5",
+              "0"
+            ],
+            "roots": [
+              "-3",
+              "1/2",
+              "3"
+            ],
+            "vandermonde": "105/2",
+            "light_transport_gap": "5/2"
+          }
+        ]
+      },
+      {
+        "case": "opposed",
+        "independent_blocks": [
+          {
+            "v": [
+              "1/3",
+              "0",
+              "0"
+            ],
+            "roots": [
+              "-3",
+              "1/3",
+              "3"
+            ],
+            "vandermonde": "160/3",
+            "light_transport_gap": "8/3"
+          },
+          {
+            "v": [
+              "-1/3",
+              "0",
+              "0"
+            ],
+            "roots": [
+              "-3",
+              "-1/3",
+              "3"
+            ],
+            "vandermonde": "160/3",
+            "light_transport_gap": "8/3"
+          }
+        ]
+      },
+      {
+        "case": "distinct",
+        "independent_blocks": [
+          {
+            "v": [
+              "0",
+              "1/4",
+              "1/5"
+            ],
+            "roots": [
+              "-3",
+              "9/10",
+              "3"
+            ],
+            "vandermonde": "2457/50",
+            "light_transport_gap": "21/10"
+          },
+          {
+            "v": [
+              "1/5",
+              "-1/4",
+              "0"
+            ],
+            "roots": [
+              "-3",
+              "-3/10",
+              "3"
+            ],
+            "vandermonde": "2673/50",
+            "light_transport_gap": "27/10"
+          }
+        ]
+      }
+    ],
+    "no_cross_velocity_gap_assumed": true
+  }
+}

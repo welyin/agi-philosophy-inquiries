@@ -1,0 +1,55 @@
+{
+  "status": "PASS_DIRECTION_ARITHMETIC_ONLY",
+  "new_scientific_rounds": 0,
+  "near_field_diagnostic": {
+    "lower_strict": "26000000000000000000000000000000000/1",
+    "upper_strict": "27000000000000000000000000000000000/1",
+    "conditions": "Weak monopoles with sampling distance comparable to arm; not a vertex error lower bound.",
+    "nonhomothetic_ratio_upper_at_s_1e40": "27/10000000"
+  },
+  "regular_sector": {
+    "analytic_lower": "2x",
+    "analytic_upper": "3x",
+    "x_domain": "[0,1/8]",
+    "proof": "Positive square-root comparison and x^2(3-8x)>=0; matched full sector only.",
+    "sampled": [
+      {
+        "x": "0/1",
+        "full_sector_per_radian": "0"
+      },
+      {
+        "x": "1/1000000",
+        "full_sector_per_radian": "0.00000200000150000200000312500525000918751650003016411835947945722807849815403129"
+      },
+      {
+        "x": "1/100",
+        "full_sector_per_radian": "0.02015203178435557333025852679756633127672734348882883501330046724927821135125441"
+      },
+      {
+        "x": "1/8",
+        "full_sector_per_radian": "0.27831216351296779436356402437255318044049781091234140497674709189502790962133332"
+      }
+    ],
+    "interface_cancellation": "Exact algebra; no multiple-body geometry inferred."
+  },
+  "supplied_budget_example": {
+    "signal": "1/100",
+    "fixed_error": "1/1000",
+    "A": "2/1",
+    "B": "3/1",
+    "sufficient_threshold": "1000000/1",
+    "selected_s": "100000000/1",
+    "actual_bound": "120003/100000000"
+  },
+  "scope": {
+    "actual_null_triangle": false,
+    "source_or_instrument_qualified": false,
+    "full_quantum_process_certified": false,
+    "shared_finite_parameter_certificate": false,
+    "hbar_rescaled": false,
+    "CT_adopted": false,
+    "GR_completed": false
+  },
+  "check_sha256": "f809fa9b301262bdf72ba5d3e357b7fe2cc6c12c64f1ace138a64325f08fb91b",
+  "note_sha256": "d615c6b4ac7d2e515ed47df0fb0b69cc53f85c7153fc8dfd05aefa59d7c2755b"
+}

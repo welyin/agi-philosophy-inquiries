@@ -1,0 +1,97 @@
+{
+  "schema": "resource_role_exchange_non_numbered_v1",
+  "status": "PASS",
+  "source_sha256": "adfa89d5b87ff27077ab33c711b6b2934af0d690b02dc04ce42bb3d5f2ada716",
+  "numbered_science_round": false,
+  "model": {
+    "omega": "3/5",
+    "chi": "4/5",
+    "shift": 2,
+    "energies_ticks": [
+      7,
+      10,
+      10,
+      13,
+      17,
+      20,
+      20,
+      23
+    ],
+    "energy_tick": "1/5",
+    "source_defect_norm": "8/5",
+    "energy_diameter": "16/5",
+    "noncommuting_internal_generator": true
+  },
+  "analytic_contracts": {
+    "finite_arbitrary_H": "1215 lifting in complete energy basis; finite Z^r packet",
+    "approximate_full_input": "half diamond <= sqrt(2*d*r*M/N)",
+    "additive_energy_budget": "delta + epsilon*diam(H) >= norm(Vdag H V-H)",
+    "exact_full_input": "421: exact unitary and additive endpoint conservation force commutation",
+    "strong_budget_for_example": "delta + (16/5)*epsilon >= 8/5"
+  },
+  "cases": [
+    {
+      "packet_width": 65,
+      "battery_levels": 97,
+      "initial_battery_mean": 9.600000000000001,
+      "maximum_battery_energy": 19.2,
+      "full_shells": 81,
+      "boundary_shells": 32,
+      "all_reference_half_diamond_upper": 0.4437601569801833,
+      "analytic_coarse_upper": 1.9845557534273353,
+      "maximally_entangled_trace_error": 0.10048509542115644,
+      "energy_balance_gap": 8.924461852009845e-15,
+      "worst_absolute_battery_mean_change": 1.5159959719544955,
+      "material_energy_operator_error": 0.147692307692311,
+      "witness_material_gain": 1.5113846153846133,
+      "witness_battery_gain": -1.5113846153846178
+    },
+    {
+      "packet_width": 257,
+      "battery_levels": 289,
+      "initial_battery_mean": 28.799999999999997,
+      "maximum_battery_energy": 57.6,
+      "full_shells": 273,
+      "boundary_shells": 32,
+      "all_reference_half_diamond_upper": 0.22317134106066824,
+      "analytic_coarse_upper": 0.9980525784828885,
+      "maximally_entangled_trace_error": 0.025414518297180076,
+      "energy_balance_gap": 1.0685963402904764e-13,
+      "worst_absolute_battery_mean_change": 1.5778705534210578,
+      "material_energy_operator_error": 0.037354085603118925,
+      "witness_material_gain": 1.5775875486381299,
+      "witness_battery_gain": -1.5775875486381352
+    },
+    {
+      "packet_width": 1025,
+      "battery_levels": 1057,
+      "initial_battery_mean": 105.60000000000004,
+      "maximum_battery_energy": 211.2,
+      "full_shells": 1041,
+      "boundary_shells": 32,
+      "all_reference_half_diamond_upper": 0.1117488473231325,
+      "analytic_coarse_upper": 0.4997560380435394,
+      "maximally_entangled_trace_error": 0.00637222556329221,
+      "energy_balance_gap": 2.715178423053758e-13,
+      "worst_absolute_battery_mean_change": 1.5943980933852393,
+      "material_energy_operator_error": 0.009365853658516885,
+      "witness_material_gain": 1.5943804878049685,
+      "witness_battery_gain": -1.5943804878048653
+    }
+  ],
+  "autonomous_matrix": {
+    "tau": "10*pi",
+    "persistent_G": "(I-W)/20",
+    "G_norm_le": "1/10",
+    "G_energy_change": 0,
+    "status": "finite mathematical realization, not local apparatus"
+  },
+  "conclusion": "Growing finite work resources do not select chi=0 in this permission test.",
+  "not_claimed": [
+    "A full cognitive-axiom countermodel",
+    "A certified geometry response",
+    "Spatial locality, causal apparatus or actual preparation",
+    "Einstein dynamics",
+    "Uniform resource budget or exact finite implementation"
+  ]
+}

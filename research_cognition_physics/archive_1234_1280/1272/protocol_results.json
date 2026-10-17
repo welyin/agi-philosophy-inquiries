@@ -1,0 +1,242 @@
+{
+  "status": "PASS_AUTHOR_PROTOCOL_WITH_SCOPE",
+  "scope": "New finite comoving effective task; not a Jacobson identity or gravity-selection proof.",
+  "dimensions": [
+    2,
+    2,
+    2,
+    2,
+    4,
+    5,
+    2,
+    3,
+    2,
+    2,
+    2
+  ],
+  "labels": [
+    "A",
+    "B",
+    "S_A",
+    "S_B",
+    "Z_A",
+    "Z_B",
+    "K",
+    "L",
+    "M",
+    "E",
+    "J_out"
+  ],
+  "total_dimension": 15360,
+  "method": "state columns and permutation actions; no large dense matrix",
+  "gate_checks": [
+    {
+      "name": "prepare_A",
+      "involution_all_basis": true,
+      "energy_commutator_zero_all_basis": true,
+      "active_invariant_all_basis": true,
+      "generator_norm_upper_pi_units": 1.0
+    },
+    {
+      "name": "prepare_B",
+      "involution_all_basis": true,
+      "energy_commutator_zero_all_basis": true,
+      "active_invariant_all_basis": true,
+      "generator_norm_upper_pi_units": 1.0
+    },
+    {
+      "name": "controlled_half_swap",
+      "involution_all_basis": true,
+      "energy_commutator_zero_all_basis": true,
+      "active_invariant_all_basis": true,
+      "generator_norm_upper_pi_units": 0.5
+    },
+    {
+      "name": "A_to_M",
+      "involution_all_basis": true,
+      "energy_commutator_zero_all_basis": true,
+      "active_invariant_all_basis": true,
+      "generator_norm_upper_pi_units": 1.0
+    },
+    {
+      "name": "M_to_E",
+      "involution_all_basis": true,
+      "energy_commutator_zero_all_basis": true,
+      "active_invariant_all_basis": true,
+      "generator_norm_upper_pi_units": 1.0
+    },
+    {
+      "name": "undo_M_to_E",
+      "involution_all_basis": true,
+      "energy_commutator_zero_all_basis": true,
+      "active_invariant_all_basis": true,
+      "generator_norm_upper_pi_units": 1.0
+    },
+    {
+      "name": "undo_A_to_M",
+      "involution_all_basis": true,
+      "energy_commutator_zero_all_basis": true,
+      "active_invariant_all_basis": true,
+      "generator_norm_upper_pi_units": 1.0
+    },
+    {
+      "name": "half_swap",
+      "involution_all_basis": true,
+      "energy_commutator_zero_all_basis": true,
+      "active_invariant_all_basis": true,
+      "generator_norm_upper_pi_units": 0.5
+    },
+    {
+      "name": "A_to_output",
+      "involution_all_basis": true,
+      "energy_commutator_zero_all_basis": true,
+      "active_invariant_all_basis": true,
+      "generator_norm_upper_pi_units": 1.0
+    }
+  ],
+  "branches": [
+    {
+      "K": 0,
+      "L": 0,
+      "prepared_qA": 0.25,
+      "prepared_qB": 0.39999999999999997,
+      "first_exchange_delta_A": 0.0,
+      "first_exchange_delta_B": -5.551115123125783e-17,
+      "final_probability": 0.3250000000000001,
+      "exact_final_probability": "13/40",
+      "actual_amplitude_test_probability": 0.32499999988219036,
+      "M_plus_E_after_step7": 0.0,
+      "full_pure_norm": 1.0000000000000002
+    },
+    {
+      "K": 0,
+      "L": 1,
+      "prepared_qA": 0.25,
+      "prepared_qB": 0.39999999999999997,
+      "first_exchange_delta_A": 0.0,
+      "first_exchange_delta_B": -5.551115123125783e-17,
+      "final_probability": 0.32500000000000007,
+      "exact_final_probability": "13/40",
+      "actual_amplitude_test_probability": 0.3249999998821903,
+      "M_plus_E_after_step7": 0.5,
+      "full_pure_norm": 1.0000000000000002
+    },
+    {
+      "K": 0,
+      "L": 2,
+      "prepared_qA": 0.25,
+      "prepared_qB": 0.39999999999999997,
+      "first_exchange_delta_A": 0.0,
+      "first_exchange_delta_B": -5.551115123125783e-17,
+      "final_probability": 0.3250000000000001,
+      "exact_final_probability": "13/40",
+      "actual_amplitude_test_probability": 0.3249999998821903,
+      "M_plus_E_after_step7": 7.498798913309287e-33,
+      "full_pure_norm": 1.0000000000000002
+    },
+    {
+      "K": 1,
+      "L": 0,
+      "prepared_qA": 0.25,
+      "prepared_qB": 0.39999999999999997,
+      "first_exchange_delta_A": 0.07500000000000012,
+      "first_exchange_delta_B": -0.0749999999999999,
+      "final_probability": 0.40000000000000024,
+      "exact_final_probability": "2/5",
+      "actual_amplitude_test_probability": 0.4000000000000002,
+      "M_plus_E_after_step7": 0.0,
+      "full_pure_norm": 1.0000000000000004
+    },
+    {
+      "K": 1,
+      "L": 1,
+      "prepared_qA": 0.25,
+      "prepared_qB": 0.39999999999999997,
+      "first_exchange_delta_A": 0.07500000000000012,
+      "first_exchange_delta_B": -0.0749999999999999,
+      "final_probability": 0.3250000000000002,
+      "exact_final_probability": "13/40",
+      "actual_amplitude_test_probability": 0.32500000000000007,
+      "M_plus_E_after_step7": 0.6500000000000002,
+      "full_pure_norm": 1.0000000000000004
+    },
+    {
+      "K": 1,
+      "L": 2,
+      "prepared_qA": 0.25,
+      "prepared_qB": 0.39999999999999997,
+      "first_exchange_delta_A": 0.07500000000000012,
+      "first_exchange_delta_B": -0.0749999999999999,
+      "final_probability": 0.40000000000000024,
+      "exact_final_probability": "2/5",
+      "actual_amplitude_test_probability": 0.4000000000000001,
+      "M_plus_E_after_step7": 9.748438587302076e-33,
+      "full_pure_norm": 1.0000000000000004
+    }
+  ],
+  "isometry_gram_error": 6.663320509198126e-16,
+  "actual_isometry_gram_error": 4.440892098500626e-16,
+  "actual_test_operator_error": 2.508360646908289e-09,
+  "excitation_support_leak": 0.0,
+  "preparation": {
+    "target_AB_product_error": 1.1102230246251565e-16,
+    "beta_A_times_gap": 1.0986122886681098,
+    "beta_B_times_gap": 0.4054651081081644,
+    "target_entropy_A": 0.5623351446188083,
+    "target_entropy_B": 0.6730116670092565,
+    "full_preparation_is_pure_and_not_joint_Gibbs": true
+  },
+  "bell_reference_checks": [
+    {
+      "L": 0,
+      "reference_only_error": 3.3309289124091777e-16,
+      "KR_trace_distance_from_input": 0.15909902576697293,
+      "output_probabilities": [
+        0.6375000000000001,
+        0.36250000000000004
+      ],
+      "reference_after_complete_instrument_error": 2.2208357880501284e-16
+    },
+    {
+      "L": 1,
+      "reference_only_error": 3.3307005567347747e-16,
+      "KR_trace_distance_from_input": 0.15909902576697305,
+      "output_probabilities": [
+        0.6750000000000002,
+        0.32500000000000007
+      ],
+      "reference_after_complete_instrument_error": 2.2204932732602876e-16
+    },
+    {
+      "L": 2,
+      "reference_only_error": 3.3309591333774314e-16,
+      "KR_trace_distance_from_input": 0.15909902576697302,
+      "output_probabilities": [
+        0.6375000000000001,
+        0.3625000000000001
+      ],
+      "reference_after_complete_instrument_error": 2.2208811148261346e-16
+    }
+  ],
+  "exact_certificates": {
+    "pulse_integral": "1/1",
+    "pulse_peak": "35/1",
+    "earliest_start_minus_capacity": "2839/6400",
+    "latest_completion": "273/256",
+    "geometry_sample_gap": "46679687/50000000",
+    "output_gap_after_capacity": "6439/6400",
+    "total_half_channel_error_upper_using_pi_lt_22_over_7": "41/1400000000",
+    "coarse_half_channel_error": "3/100000000",
+    "record_effect_probability_gap_lower": "3749997/50000000",
+    "initial_excitation": "2/1",
+    "positive_baseline_units": "11/1"
+  },
+  "not_certified": [
+    "all ideal TR operations",
+    "intermediate external fine ports",
+    "unchanged KR marginal",
+    "external or irreversible record erasure",
+    "Unruh temperature or Wald thermal identity",
+    "new heat-driven geometry"
+  ]
+}

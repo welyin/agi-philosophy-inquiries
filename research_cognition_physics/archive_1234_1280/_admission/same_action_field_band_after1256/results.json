@@ -1,0 +1,82 @@
+{
+  "status": "PASS",
+  "kind": "unnumbered_bounded_direction_screen",
+  "source_sha256": {
+    "1247/proof.md": "f3a79f8f43aa235d2fa13cc87a232e2b64643fc1bade375bfee96c204ab4bf3d",
+    "1247/results.json": "dbcd590e7816bc423c49a4e1bf83bab6fa50a84dd5578249cc493a15cd72bf06",
+    "1250/proof.md": "5e9f5e1495156f6bcd81c48a5046ac538ea72b2823a6cb7a9e3b7a59ff499d9f",
+    "1250/results.json": "84fa683b1e343f94ba2f5a4f2e26653dfa49c7d6c04d3833a436daa8cb880284"
+  },
+  "scope": {
+    "fixed_original_metric_and_two_fluid_background": true,
+    "field_field_quadratic_block_only": true,
+    "full_constraint_perturbations_proved": false,
+    "actual_quantum_preparation_proved": false,
+    "KMS_Unruh_or_Jacobson_reference_proved": false,
+    "compact_rod_zero_mode_claim": false,
+    "ODE_reintegrated": false
+  },
+  "exact_coefficient_audit": {
+    "U_p_rho_coefficient": "0",
+    "U_p_pressure_coefficient": "-9/4",
+    "U_r_minus_U_p": {
+      "H_v_over_F": "0",
+      "p_over_F": "-1/10",
+      "u_squared_over_F": "-3/1000",
+      "u_cubed_over_F": "-1/1000",
+      "v_squared_over_F_squared": "-1/100"
+    },
+    "rod_eps_squared_product": "-201/1694",
+    "rod_eps_squared_expected": "-201/1694",
+    "rod_cross_coefficient": "-1/5",
+    "rod_F_pp": "0"
+  },
+  "uniform_bounds_both_original_branches": {
+    "interval": [
+      "2",
+      "9/4"
+    ],
+    "U_p_upper": "999/400",
+    "U_r_upper": "7593/2800",
+    "U_r_strict_simple_upper": "339/125",
+    "gamma_squared_upper": "1/175",
+    "gamma_strict_simple_upper": "2/25"
+  },
+  "fixed_q_two": {
+    "p_diagonal_lower": "1001/400",
+    "rod_diagonal_lower": "3607/2800",
+    "determinant_lower": "3585007/1120000",
+    "frozen_determinant_lower": "3496/175"
+  },
+  "all_q_at_least_two": {
+    "strict_eigenvalue_lower": "141/125",
+    "q_equals_two_plus_y_remainder_coefficients": {
+      "y": "98/25",
+      "y_squared": "1"
+    }
+  },
+  "fixed_finite_mode_witness": {
+    "real_sine_cosine_pair_n": [
+      13,
+      0,
+      0
+    ],
+    "torus_period": "10",
+    "u_two_saved_upper": {
+      "alpha0": "187212209824318673796338020456225521/500000000000000000000000000000000000",
+      "alpha1": "46804249449074484318062978179391493/125000000000000000000000000000000000"
+    },
+    "u_hold_lower": "10582954021/40000000000",
+    "pi_rational_bounds_used": [
+      "157/50",
+      "22/7"
+    ],
+    "physical_q_strict_lower": "21599809156861/10000000000000",
+    "physical_q_strict_upper": "429/140",
+    "included_in_fixed_band": [
+      "2",
+      "13/4"
+    ]
+  },
+  "limitation": "Positive field Hessian band is not a full constrained state, local apparatus, thermal reference, or independently closed quantum source certificate."
+}

@@ -1,0 +1,71 @@
+{
+  "schema": "gr_response_round_verification_v1",
+  "round": 1263,
+  "date": "2026-10-16",
+  "status": "PASS_WITH_SCOPE",
+  "actual_commands": [
+    {
+      "path": "1263/check.py",
+      "code_sha256": "520ac5729950241095a117569df8c6b0eb72eb4e9fa77b740d110249c569fa70",
+      "actual_command": "& 'C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe' -B -X utf8 'research_cognition_physics\\archive_1234_\\1263\\check.py'",
+      "exit_code": 0,
+      "chunk_id": "726d14",
+      "stdout": "READ_ONLY_MATCH_ROUND1263_FINITE_SCATTERING\r\n{\r\n  \"state_error_upper\": 3.1901586805218463e-17,\r\n  \"joint_probability_gap_lower\": 0.3124999999913877,\r\n  \"native_angle_joint_probability_gap_lower\": 0.3124999999913404,\r\n  \"native_signal_bad_momentum_tail_scientific\": \"4.722413706741E-779\",\r\n  \"p_bad_upper\": 7.213895789838336e-265,\r\n  \"A\": 80000000000.0,\r\n  \"B_V\": 1.024e-57,\r\n  \"terms\": {\r\n    \"massive_free\": 6.301554215394462e-18,\r\n    \"massless_free\": 3.27680819200512e-56,\r\n    \"photon_energy_spread\": 3.276804096e-56,\r\n    \"full_linear_velocity\": 2.5600032e-17,\r\n    \"TT_and_velocity_quadratic\": 2.5206216861577846e-76,\r\n    \"full_3D_position_Taylor\": 5.89824e-25,\r\n    \"bounded_bad_tail\": 1.84817811456e-89,\r\n    \"linear_comparator_bad_tail\": 2.8311552e-58\r\n  }\r\n}\r\n",
+      "mode": "read_only",
+      "performed_before_publication": true,
+      "repeated_by_publication": false
+    },
+    {
+      "path": "1263/source_check.py",
+      "code_sha256": "da5503deb4ab87f44012e9a08872cf51b3b8e3180cce502159ae245069b94802",
+      "actual_command": "& 'C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe' -B -X utf8 'research_cognition_physics\\archive_1234_\\1263\\source_check.py'",
+      "exit_code": 0,
+      "chunk_id": "fb9a63",
+      "stdout": "READ_ONLY_MATCH_1263_SOURCE: one author source group; no files changed\r\n{\r\n  \"state_error\": 3.1901586805218463e-17,\r\n  \"dynamic_trace_error\": 2.0417015555339817e-15,\r\n  \"reference_error\": 4.8e-69,\r\n  \"total_trace_error\": 2.0417015555339817e-15,\r\n  \"relative_to_mass26\": 7.852698290515314e-17,\r\n  \"conditional_R_error\": 5.1334210539140107e-14,\r\n  \"massless_kernel_samples\": 402,\r\n  \"max_ratio_bound_one\": 1.0\r\n}\r\n",
+      "mode": "read_only",
+      "performed_before_publication": true,
+      "repeated_by_publication": false
+    },
+    {
+      "path": "1263/independent_check.py",
+      "code_sha256": "681b5bb4b7c6f43bbd0145e7114f176bb46a046fbcf34be6f551cb33faa64065",
+      "actual_command": "& 'C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe' -B -X utf8 'research_cognition_physics\\archive_1234_\\1263\\independent_check.py'",
+      "exit_code": 0,
+      "chunk_id": "a59092",
+      "stdout": "READ_ONLY_MATCH_INDEPENDENT_1263: independent_groups=2\r\n",
+      "mode": "read_only",
+      "performed_before_publication": true,
+      "repeated_by_publication": false
+    }
+  ],
+  "root_read_proof_code_results_and_independent_review": true,
+  "science_sha256": {
+    "admission.md": "4dfa151e5edf9014eb61743b42073e0baed97881556a64f4920adc9952ec5edb",
+    "proof.md": "f875f63c1985f44d04a959803b2b990838b6821d2bca2e4c4588f776bff675ea",
+    "check.py": "520ac5729950241095a117569df8c6b0eb72eb4e9fa77b740d110249c569fa70",
+    "results.json": "b55b7e16874e724ff824a0335488b4d5b702f2e561bd4b26b5c9f001b72734e2",
+    "trace_source.md": "e8bcb86128e3256c264a3bd51ed77668d13f30c8034c08488f74b8687eac3c38",
+    "source_check.py": "da5503deb4ab87f44012e9a08872cf51b3b8e3180cce502159ae245069b94802",
+    "source_results.json": "c76a214a273b3410eb601e302699099b091239018a8f7d0fbf1faa8492a7415c",
+    "NEXT.md": "b0b65d54a37cc838456995984c47ba273fe24d0aa0450a259d50c4927de11c4f",
+    "independent_check.py": "681b5bb4b7c6f43bbd0145e7114f176bb46a046fbcf34be6f551cb33faa64065",
+    "independent_results.json": "d0d70506835259afca4c0862ad77b4cef70f12b1f53d8e50e6308f5c115c0ee1",
+    "independent_review.md": "498b6100218624dc66c698f97da85571b4b96e5cb57b9efb255a24556a4dff47",
+    "../research_note_1263.md": "06ed5b7c72d14ffc93dd52dd5c0f8fe82b30d7878eea394dac9cfc176430d566"
+  },
+  "prior_acceptance_bindings": 297,
+  "prior_distinct_frozen_files": 302,
+  "analytic_certificate": [
+    "Normal centered high-moment packets and all eight finite Duhamel terms retain original coherent mass, recoil and arbitrary reference.",
+    "Original record versus relative momentum and photon direction has a finite joint gap above .31 against any free retiming.",
+    "Gaussian Schur estimates bound the leading massive material trace by32+9/(26 L^2), and the massless trace by2/L without a positive energy band.",
+    "The same interacting state transports this bounded source test and calibrates it to the original mass within2.1e-15 for the full finite window."
+  ],
+  "independent_corrections": [
+    "Longitudinal eighth moment is centered at the moving reference packet center.",
+    "A unit L1 time norm alone does not normalize the Ricci comparison center; use a nonnegative unit-integral time weight or retain its signed integral."
+  ],
+  "numerical_scope": "Exact rational finite bounds and independent diagnostics accompany analytic model estimates. No actual geometry, full interacting source or empirical/UV validity certificate.",
+  "CT_user_decision": "unadopted_conjecture",
+  "GR_goal_completed": false
+}

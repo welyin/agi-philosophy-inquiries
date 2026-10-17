@@ -1,0 +1,159 @@
+{
+  "status": "PASS_FINITE_SCALAR_ENTROPY_METER_ONLY",
+  "exact": {
+    "nu": "3/16000",
+    "T_bounds": [
+      "49/500",
+      "51/500"
+    ],
+    "Z_bounds": [
+      "1/5",
+      "9/5"
+    ],
+    "stability_margin_bound": "900000/117649",
+    "entropy_width_bound": "75/19208",
+    "work_variation_bound": "110927/4040000",
+    "delta_SW": "201/200",
+    "stable_branch_examples": [
+      {
+        "M_over_E": "3/5",
+        "derivative": "125/72",
+        "stable": false
+      },
+      {
+        "M_over_E": "9/10",
+        "derivative": "-125/81",
+        "stable": true
+      }
+    ],
+    "radiation_equal_energy": [
+      "6",
+      "6"
+    ],
+    "radiation_Q_difference": "65/216"
+  },
+  "numerical_diagnostics": [
+    {
+      "forward": {
+        "steps": 512,
+        "start": 10.0,
+        "end": 10.1,
+        "signed_meter_integral": 1.0035593764910749,
+        "entropy_production": 0.0014406235125769755,
+        "entropy_identity_error": 3.656373381150102e-12,
+        "max_energy_balance_error": 3.623767952376511e-13,
+        "final_Z": 0.24733046763169383,
+        "final_work_balance": 0.9755118348875895,
+        "final_X": 254.82482813140177,
+        "ranges_T_Z_EC": [
+          [
+            0.09900990099009901,
+            0.1000224461008585
+          ],
+          [
+            0.24733046763169383,
+            1.0
+          ],
+          [
+            0.9755118339073435,
+            1.0
+          ]
+        ]
+      },
+      "reverse": {
+        "steps": 512,
+        "start": 10.1,
+        "end": 10.0,
+        "signed_meter_integral": -1.0064451868673931,
+        "entropy_production": 0.0014451868637445893,
+        "entropy_identity_error": 3.653107113685272e-12,
+        "max_energy_balance_error": 3.5704772471945034e-13,
+        "final_Z": 1.7254240380781893,
+        "final_work_balance": 1.02355563064082,
+        "final_X": 1725.424038078189,
+        "ranges_T_Z_EC": [
+          [
+            0.09898682069469027,
+            0.1
+          ],
+          [
+            0.9705901479276445,
+            1.7254240380781893
+          ],
+          [
+            1.0,
+            1.023555989248526
+          ]
+        ]
+      },
+      "J_plus": 1.0035593764910749,
+      "J_minus": 1.0064451868673931,
+      "width": 0.0028858103763182985
+    },
+    {
+      "forward": {
+        "steps": 1024,
+        "start": 10.0,
+        "end": 10.1,
+        "signed_meter_integral": 1.0035593764876503,
+        "entropy_production": 0.0014406235125769766,
+        "entropy_identity_error": 2.3178052359351664e-13,
+        "max_energy_balance_error": 2.4868995751603507e-14,
+        "final_Z": 0.24733046763426234,
+        "final_work_balance": 0.9755118348876726,
+        "final_X": 254.8248281340481,
+        "ranges_T_Z_EC": [
+          [
+            0.09900990099009901,
+            0.10002244633934479
+          ],
+          [
+            0.24733046763426234,
+            1.0
+          ],
+          [
+            0.9755118339074264,
+            1.0
+          ]
+        ]
+      },
+      "reverse": {
+        "steps": 1024,
+        "start": 10.1,
+        "end": 10.0,
+        "signed_meter_integral": -1.0064451868639694,
+        "entropy_production": 0.0014451868637445923,
+        "entropy_identity_error": 2.293983145801315e-13,
+        "max_energy_balance_error": 2.4868995751603507e-14,
+        "final_Z": 1.7254240380756216,
+        "final_work_balance": 1.0235556306407434,
+        "final_X": 1725.4240380756212,
+        "ranges_T_Z_EC": [
+          [
+            0.09898682069469027,
+            0.1
+          ],
+          [
+            0.9705901479276445,
+            1.7254240380756216
+          ],
+          [
+            1.0,
+            1.023555993450885
+          ]
+        ]
+      },
+      "J_plus": 1.0035593764876503,
+      "J_minus": 1.0064451868639694,
+      "width": 0.0028858103763191867
+    }
+  ],
+  "refinement_max_difference": 3.424593941758758e-12,
+  "scope": {
+    "actual_device_certified": false,
+    "covariant_source_certified": false,
+    "all_state_entropy_certified": false,
+    "GR_generated": false,
+    "new_numbered_round": false
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "verdict": "PASS_FINITE_QUERY_RECIPROCITY_MATHEMATICAL_ONLY",
+  "independent_groups": 1,
+  "independent_code_sha256": "abf63950fa215d1cbd154b0784ed84c2ec7e7476fe151833fe5409223904cfcd",
+  "normalized_choi_identity": "m*||Rb||_2^2 = g*||Rf||_2^2 = 1-Tr(X^2)",
+  "frame_characteristic_polynomial_ascending": [
+    "1/16",
+    "-7/8",
+    "3",
+    "-7/2",
+    "1"
+  ],
+  "frame_squares": {
+    "F": "1/2",
+    "P": "(5-sqrt(21))/4",
+    "D": "2"
+  },
+  "cnot": {
+    "operator_schmidt_purity": 0.5,
+    "identity_error": 0.0,
+    "forward_difference": 1.0,
+    "forward_norm_factor": 1.4142135623730951,
+    "cartesian_difference_queries": 36,
+    "underlying_probability_queries": 72,
+    "reverse_max_difference": 1.0,
+    "max_direct_vs_choi_error": 0.0,
+    "c_display": 0.03807085431232138,
+    "c_squared_exact": "(5-sqrt(21))/288",
+    "c_rational_lower": "1/30",
+    "per_probability_error": "1/1000",
+    "robust_reverse_lower": "469/15000"
+  },
+  "deletion_checks": {
+    "only_diagonal_G_preparation_reverse_max": 0.0,
+    "only_Z_readout_reverse_max": 0.0,
+    "diagonal_preparation_linear_rank": 2,
+    "required_preparation_rank": 4
+  },
+  "unequal_dimensions_diagnostics_only": [
+    {
+      "g": 2,
+      "m": 3,
+      "sample": 0,
+      "operator_schmidt_purity": 0.29008117741084893,
+      "identity_error": 8.881784197001252e-16
+    },
+    {
+      "g": 2,
+      "m": 3,
+      "sample": 1,
+      "operator_schmidt_purity": 0.36361400434711877,
+      "identity_error": 6.661338147750939e-16
+    },
+    {
+      "g": 2,
+      "m": 3,
+      "sample": 2,
+      "operator_schmidt_purity": 0.291059902906474,
+      "identity_error": 1.2212453270876722e-15
+    },
+    {
+      "g": 3,
+      "m": 2,
+      "sample": 0,
+      "operator_schmidt_purity": 0.29033898100254907,
+      "identity_error": 3.3306690738754696e-16
+    },
+    {
+      "g": 3,
+      "m": 2,
+      "sample": 1,
+      "operator_schmidt_purity": 0.31440965698742984,
+      "identity_error": 1.5543122344752192e-15
+    },
+    {
+      "g": 3,
+      "m": 2,
+      "sample": 2,
+      "operator_schmidt_purity": 0.31653685855715297,
+      "identity_error": 9.992007221626409e-16
+    },
+    {
+      "g": 2,
+      "m": 4,
+      "sample": 0,
+      "operator_schmidt_purity": 0.29100259151082186,
+      "identity_error": 3.3306690738754696e-16
+    },
+    {
+      "g": 2,
+      "m": 4,
+      "sample": 1,
+      "operator_schmidt_purity": 0.29488872239859876,
+      "identity_error": 5.551115123125783e-16
+    },
+    {
+      "g": 2,
+      "m": 4,
+      "sample": 2,
+      "operator_schmidt_purity": 0.2654221458256616,
+      "identity_error": 9.992007221626409e-16
+    }
+  ],
+  "scope": {
+    "closed_full_unitary_required": true,
+    "complete_actual_input_and_output_frames_certified": false,
+    "fixed_environment_may_be_discarded": false,
+    "choi_is_a_proof_device_not_a_free_preparation": true,
+    "new_physical_geometry_port": false,
+    "curvature_or_GR_claim": false,
+    "round_1271_flat_model_excluded": false,
+    "new_numbered_round": false
+  }
+}
