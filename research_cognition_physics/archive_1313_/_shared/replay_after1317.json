@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "date": "2026-10-19",
+  "checks": [
+    {
+      "script": "research_cognition_physics/archive_1313_/1317/check.py",
+      "script_sha256": "abbb59ad1e4797d6eefd7852cfe6ea3794f5929628a1e4d14025b5c074777670",
+      "exit_code": 0,
+      "status": "PASS",
+      "assertion_count": 105,
+      "receipt_chunk_id": "5792b5",
+      "mode": "read-only --check through run_research_interaction_generation_active.py"
+    },
+    {
+      "script": "research_cognition_physics/archive_1313_/1317/independent_check.py",
+      "script_sha256": "8cd087e5990f963535af3fef6fc6fd56094a0a267f8121b7009cec67d6b1c336",
+      "exit_code": 0,
+      "status": "PASS_WITH_SCOPE",
+      "assertion_count": 521,
+      "receipt_chunk_id": "7f7af5",
+      "mode": "read-only --check through run_research_interaction_generation_active.py"
+    }
+  ],
+  "scope": "Root replay of the author and independent frozen round 1317 results, not a repository-wide audit."
+}

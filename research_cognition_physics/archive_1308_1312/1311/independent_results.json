@@ -1,0 +1,315 @@
+{
+  "status": "PASS_WITH_SCOPE",
+  "bindings": {
+    "admission": {
+      "path": "archive_1308_\\_admission\\round1311_admission.md",
+      "sha256": "c3b229c09a80705ef3a4a65c2380a213872fb40a4b8e416077e0655eeb28b9bd"
+    },
+    "proof": {
+      "path": "archive_1308_\\1311\\proof.md",
+      "sha256": "de34c0911b53dc59101cd7525981bbfb978b6d6c4104581091742a855aa136f0"
+    },
+    "author_check": {
+      "path": "archive_1308_\\1311\\check.py",
+      "sha256": "17bf8fedf3a6c6c40816b0e34eef6761949473ac72e46b93382f38619c7cbea0"
+    },
+    "author_results": {
+      "path": "archive_1308_\\1311\\results.json",
+      "sha256": "992287cd98a5a10e05fe9f0b5e5010d8dee9b11d07cd7eef5dc1f4e1d8900c5e"
+    },
+    "note": {
+      "path": "archive_1308_\\research_note_1311.md",
+      "sha256": "8423884c24e563c23249a0e038e62db726ee4d55f2a9e436593bfda426d9e3c3"
+    },
+    "next": {
+      "path": "archive_1308_\\1311\\NEXT.md",
+      "sha256": "49f28cf8c1f002a20779c876f64fc3ea1cec30e9aaa391b533e811e17d8d02d6"
+    },
+    "1310_proof": {
+      "path": "archive_1308_\\1310\\proof.md",
+      "sha256": "9dcb14669e1824aec0dff7964dc1b3d1e5b1e94a5e6cf12e5c0a5bf10454f98f"
+    },
+    "1310_acceptance": {
+      "path": "archive_1308_\\1310\\acceptance.json",
+      "sha256": "44bb2d2de6c41b5f8e76b250db58ffd91d47ad62e91ea55b22a26209e0b7ff65"
+    },
+    "1310_independent_kernel": {
+      "path": "archive_1308_\\1310\\independent_check.py",
+      "sha256": "8c9444e9ea5d4ee38152ee2d6ce4067e4d0aed6bb63cb81a84379c56e3a58a04"
+    },
+    "1309_proof": {
+      "path": "archive_1308_\\1309\\proof.md",
+      "sha256": "801eabd9c874cd1da41ea81885c6242abd4a6717a07f458715ed75f063641bf4"
+    },
+    "self": {
+      "path": "archive_1308_\\1311\\independent_check.py",
+      "sha256": "00fd9b4e31640715d9b8547fd1354747dcf6e493a9042fdfbea18bacbb16221e"
+    }
+  },
+  "method": "Independent frozen 1310 Ward-null dOmega kernel; implicit Hessian and root checks; exact rational margins",
+  "kernel": {
+    "m": 0.000244140625,
+    "n": 0.00048828125,
+    "E": 0.1,
+    "z0": 0.00999985098878775,
+    "z1": 0.029999552964764503,
+    "K_integral": 1.395020675850521e-26,
+    "C2": 4.650207505415744e-23,
+    "sigma0": 1.7149364454264435e-26,
+    "relative_quadrature_change": 1.0040696012697754e-14,
+    "S_star": 8.574682227132218e-27,
+    "finite_exposure": 8.083648608769106e+25
+  },
+  "boundary": {
+    "x_c": 36.82113349105873,
+    "w_c": 0.637751236614823,
+    "derivative_checks": [
+      {
+        "x": 3.6821133491058733,
+        "w": 0.565172101423782,
+        "slope": -0.019423320147846382,
+        "positive_curvature": 0.00015601554990532347,
+        "finite_difference_curvature": 0.00015601553596550626
+      },
+      {
+        "x": 11.046340047317619,
+        "w": 0.4263233057111887,
+        "slope": -0.018293087035716377,
+        "positive_curvature": 0.00014999608037681892,
+        "finite_difference_curvature": 0.00014999607477128617
+      },
+      {
+        "x": 18.410566745529366,
+        "w": 0.2955866845557993,
+        "slope": -0.017226242324111136,
+        "positive_curvature": 0.00013905691430852858,
+        "finite_difference_curvature": 0.00013905690541762933
+      },
+      {
+        "x": 25.77479344374111,
+        "w": 0.1723771029401266,
+        "slope": -0.016252743718793167,
+        "positive_curvature": 0.00012496243785400154,
+        "finite_difference_curvature": 0.0001249624428132239
+      },
+      {
+        "x": 33.13902014195286,
+        "w": 0.055938616578541656,
+        "slope": -0.01538893100766916,
+        "positive_curvature": 0.00010955448611529,
+        "finite_difference_curvature": 0.0001095544893475305
+      }
+    ],
+    "subgraph_midpoint_infeasible": true
+  },
+  "domain": {
+    "finite_flow_checks": 5625,
+    "three_branch_equal_points": 1125,
+    "strict_positive_b_contractions": 200,
+    "closed_box": [
+      {
+        "target_factor": 0.5,
+        "X_minus": 15.986294676202554,
+        "B_minus": 384.92906536116,
+        "nonempty": true
+      },
+      {
+        "target_factor": 1.0,
+        "X_minus": 11.11111111111111,
+        "B_minus": -1.4025551424039915e-13,
+        "nonempty": true
+      },
+      {
+        "target_factor": 1.2,
+        "X_minus": 10.085784600831314,
+        "B_minus": -80.95653630728874,
+        "nonempty": false
+      }
+    ],
+    "integer_transport": [
+      {
+        "B": "0",
+        "count": 3,
+        "pairs": [
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ]
+        ]
+      },
+      {
+        "B": "5/6",
+        "count": 5,
+        "pairs": [
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            7,
+            3
+          ]
+        ]
+      },
+      {
+        "B": "2",
+        "count": 5,
+        "pairs": [
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            7,
+            3
+          ]
+        ]
+      },
+      {
+        "B": "10",
+        "count": 17,
+        "pairs": [
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            3,
+            9
+          ],
+          [
+            3,
+            10
+          ],
+          [
+            3,
+            11
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            7,
+            6
+          ],
+          [
+            11,
+            3
+          ],
+          [
+            11,
+            4
+          ],
+          [
+            15,
+            3
+          ]
+        ]
+      }
+    ]
+  },
+  "common_slice": {
+    "rectangle_exact_lower": "130321/160000",
+    "rectangle_sample_min_ratio": 0.816048168791789,
+    "probability_uniform_lower": 0.6766905683030267,
+    "mixing": [
+      {
+        "generations": 3,
+        "abs_mixing": 0.3333333333333334,
+        "first_two_columns_fixed": true,
+        "flavor_graph_connected": true
+      },
+      {
+        "generations": 4,
+        "abs_mixing": 0.3333333333333334,
+        "first_two_columns_fixed": true,
+        "flavor_graph_connected": true
+      },
+      {
+        "generations": 5,
+        "abs_mixing": 0.3333333333333334,
+        "first_two_columns_fixed": true,
+        "flavor_graph_connected": true
+      }
+    ],
+    "yukawa_upper": 0.021213203435596427,
+    "mass_W_upper": 0.045,
+    "mass_Z_upper": 0.04743416490252569,
+    "mass_H_upper": 0.0848528137423857,
+    "different_Higgs_masses_at_fixed_v": [
+      0.05,
+      0.07071067811865475
+    ]
+  },
+  "scope": [
+    "Analytic proof carries all-budget equality and strict curvature; finite tests do not.",
+    "Equality concerns this calibrated leading task and common effective box, not all predictions.",
+    "Fixed masses require changing Yukawas; each point retains its own complete action and source.",
+    "No computed actual-device or higher-order error; no finite-resource feasibility claim beyond the declared budget."
+  ]
+}

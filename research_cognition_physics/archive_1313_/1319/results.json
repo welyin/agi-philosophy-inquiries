@@ -1,0 +1,688 @@
+{
+  "round": 1319,
+  "status": "author_checks_passed_not_acceptance",
+  "new_axioms": 0,
+  "bindings": {
+    "proof_sha256": "bb69bd163085d1ac594668b4305b5db9bf9a08e3f8418fa790930ec2826a1736",
+    "check_sha256": "e4dd5650579e399a9a053d2accca05535614289aeba1ee648efbfbb2ed6b6cda",
+    "admission_sha256": "827dddf1b3bc9c9acfdc9b044d8b537623a96d03bbba9701966058166b93276f"
+  },
+  "scope": "Finite CAR parent and additional task contract only; no full-QFT device, actual full U3 group, spacetime dimension, family-number or empirical SM certification.",
+  "basis": {
+    "dimension": 70,
+    "fermion_modes": 12,
+    "two_fermion_states": 66,
+    "boson_states": 3,
+    "vacuum_states": 1,
+    "wedge_order": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ]
+    ]
+  },
+  "capacity_bounds": [
+    {
+      "d": 2,
+      "input_dimension": 1,
+      "receiver_dimension": 2,
+      "forward_lower_bound": 0,
+      "reverse_lower_bound": 0.5
+    },
+    {
+      "d": 3,
+      "input_dimension": 3,
+      "receiver_dimension": 3,
+      "forward_lower_bound": 0,
+      "reverse_lower_bound": 0
+    },
+    {
+      "d": 4,
+      "input_dimension": 6,
+      "receiver_dimension": 4,
+      "forward_lower_bound": 0.33333333333333337,
+      "reverse_lower_bound": 0
+    },
+    {
+      "d": 5,
+      "input_dimension": 10,
+      "receiver_dimension": 5,
+      "forward_lower_bound": 0.5,
+      "reverse_lower_bound": 0
+    },
+    {
+      "d": 6,
+      "input_dimension": 15,
+      "receiver_dimension": 6,
+      "forward_lower_bound": 0.6,
+      "reverse_lower_bound": 0
+    },
+    {
+      "d": 7,
+      "input_dimension": 21,
+      "receiver_dimension": 7,
+      "forward_lower_bound": 0.6666666666666667,
+      "reverse_lower_bound": 0
+    },
+    {
+      "d": 8,
+      "input_dimension": 28,
+      "receiver_dimension": 8,
+      "forward_lower_bound": 0.7142857142857143,
+      "reverse_lower_bound": 0
+    }
+  ],
+  "common_nonresonant_point": {
+    "Ea": 0.8,
+    "Eb": 0.9,
+    "Ec": 2.2,
+    "Re_g": 0.6,
+    "Im_g": 0.8,
+    "delta": 0.5,
+    "peak_time": 1.5238962756959047,
+    "one_pass_probability": 0.9411764705882353,
+    "two_pass_erasure": 0.11418685121107264,
+    "finite_relative_frequency_window": [
+      -0.125,
+      0.125
+    ],
+    "first_readout_work": 0.47058823529411764,
+    "two_readout_net_work": 0.027681660899653984,
+    "fresh_vacuum_and_switching": "additional registered protocol, not an autonomous free instrument"
+  },
+  "cyclic_rank": 8,
+  "SO3_SU3_father_defect": 0.2450544901308218,
+  "noncyclic_phase_gap": 2.0,
+  "checks": [
+    {
+      "name": "S_orthonormal",
+      "error": 2.220446049250313e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "Q_orthonormal",
+      "error": 4.440892098500626e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "C0_unitary",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "A_B_orthogonal",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "full_dimension_70",
+      "error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "Hermitian",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "K_conservation",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "Na_minus_Nb",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "vacuum_inert",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "old_r_compatibility",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "all_dark_states_retained",
+      "error": 2.2896247091220116e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "cyclic_constraint_rank_eight",
+      "error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "volume_cyclic",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "cofactor_U3_0",
+      "error": 5.551115123125783e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "full_father_U3_0",
+      "error": 2.9406505148178845e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "cofactor_U3_1",
+      "error": 2.8305244335018383e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "full_father_U3_1",
+      "error": 1.7554167342883506e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "cofactor_U3_2",
+      "error": 3.510833468576701e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "full_father_U3_2",
+      "error": 2.3714374201337736e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "D_internal_center_equals_K",
+      "error": 1.1102230246251565e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "spin_singlet_father",
+      "error": 5.551115123125783e-17,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "CAR_active_block",
+      "error": 8.881784197001252e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "full_forward_0",
+      "error": 4.335559509131367e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "full_reverse_0",
+      "error": 3.510833468576701e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "complete_Kraus_0",
+      "error": 3.9317559372195257e-20,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "full_forward_1",
+      "error": 6.497413668604471e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "full_reverse_1",
+      "error": 8.304167664289943e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "complete_Kraus_1",
+      "error": 3.747133354381755e-18,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "full_forward_2",
+      "error": 8.968100940422724e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "full_reverse_2",
+      "error": 1.4390302375050239e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "complete_Kraus_2",
+      "error": 2.2205552699611403e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "full_forward_3",
+      "error": 2.151750686972397e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "full_reverse_3",
+      "error": 1.9492241005813414e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "complete_Kraus_3",
+      "error": 1.1261911910360567e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "resonance_forward_full",
+      "error": 6.271994596715171e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "resonance_reverse_full",
+      "error": 9.749386226350404e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "resonance_vacuum",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "two_real_passes_scalar_identity",
+      "error": 1.2412670766236366e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "two_pass_success_probability",
+      "error": 8.882239970930564e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "one_pass_success_16_17",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "two_pass_erasure_33_289",
+      "error": 2.7755575615628914e-17,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "both_directions_below_capacity_margin",
+      "error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "partner_erasure_trace_witness",
+      "error": 6.938893903907228e-17,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "source_trace_flag_cross_0_0",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "source_trace_flag_cross_0_1",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "source_trace_flag_cross_0_2",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "source_trace_flag_cross_1_0",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "source_trace_flag_cross_1_1",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "source_trace_flag_cross_1_2",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "source_trace_flag_cross_2_0",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "source_trace_flag_cross_2_1",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "source_trace_flag_cross_2_2",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "full_resource_Na",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "full_resource_Nb",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "full_resource_Nc",
+      "error": 3.3306690738754696e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "full_energy_conservation",
+      "error": 6.661338147750939e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "free_energy_increase",
+      "error": 7.771561172376096e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "interaction_energy_compensation",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "first_occupation_readout_work",
+      "error": 1.1102230246251565e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "reverse_interaction_energy",
+      "error": 7.216449660063518e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "net_two_readout_work",
+      "error": 2.42861286636753e-17,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "full_parent_source_0",
+      "error": 5.3510973430093145e-11,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "fixed_physical_E_source_0",
+      "error": 0.0,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "frequency_chain_rule_0",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "fixed_relative_z_source_0",
+      "error": 1.2389200776397047e-11,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "full_parent_source_1",
+      "error": 5.3510973430093145e-11,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "fixed_physical_E_source_1",
+      "error": 0.0,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "frequency_chain_rule_1",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "fixed_relative_z_source_1",
+      "error": 1.2389200776397047e-11,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "full_parent_source_2",
+      "error": 8.22666379463044e-11,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "fixed_physical_E_source_2",
+      "error": 9.565592762328379e-11,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "frequency_chain_rule_2",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "fixed_relative_z_source_2",
+      "error": 9.565592762328379e-11,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "full_parent_source_3",
+      "error": 1.3377632335220824e-11,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "fixed_physical_E_source_3",
+      "error": 3.766131850824195e-11,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "frequency_chain_rule_3",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "fixed_relative_z_source_3",
+      "error": 3.766131850824195e-11,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "full_parent_source_4",
+      "error": 1.3377632335220824e-11,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "fixed_physical_E_source_4",
+      "error": 3.171152229697327e-11,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "frequency_chain_rule_4",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "fixed_relative_z_source_4",
+      "error": 3.171152229697327e-11,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "complete_66_Schur_0",
+      "error": 6.206335383118183e-17,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "finite_response_bound_0",
+      "error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "complete_66_Schur_1",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "finite_response_bound_1",
+      "error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "complete_66_Schur_2",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "finite_response_bound_2",
+      "error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "full_active_poles",
+      "error": 2.220446049250313e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "resonance_resolvent_sign",
+      "error": 4.442114520116415e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "handoff_response_identity_p",
+      "error": 4.440892098500626e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "handoff_response_identity_time",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "SO3_extra_dark",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "SO3_alternative_father_0",
+      "error": 2.837033404455719e-18,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "SO3_alternative_father_1",
+      "error": 1.1102230246251565e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "SO3_competitor_not_full_SU3",
+      "error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "SO3_same_actual_handoff",
+      "error": 2.056911009701168e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "SO3_same_reverse",
+      "error": 1.5353625799562712e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "unitary_noncyclic",
+      "error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "noncyclic_complete_transfer",
+      "error": 9.992008929423468e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "noncyclic_may_still_isotropic",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "noncyclic_no_common_delta_for_cycle",
+      "error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "odd_singular_values_complete_transfer",
+      "error": 1.2213450493860516e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "odd_singular_values_response_split",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "capacity_exclusion_d_2",
+      "error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "capacity_exclusion_d_3",
+      "error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "capacity_exclusion_d_4",
+      "error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "capacity_exclusion_d_5",
+      "error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "capacity_exclusion_d_6",
+      "error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "capacity_exclusion_d_7",
+      "error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "capacity_exclusion_d_8",
+      "error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "Schmidt_overlap_bound_saturation_6_4",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "Schmidt_overlap_bound_saturation_1_1",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "Schmidt_overlap_bound_saturation_10_5",
+      "error": 1.1102230246251565e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "family_replication_identity_3",
+      "error": 8.882239970930564e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "family_replication_identity_4",
+      "error": 8.881784197001252e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "family_replication_identity_5",
+      "error": 8.882239970930564e-16,
+      "tolerance": 2e-09
+    }
+  ],
+  "check_count": 116,
+  "maximum_error": 9.565592762328379e-11
+}

@@ -1,0 +1,316 @@
+{
+  "round": 1309,
+  "status": "PASS",
+  "new_axioms": 0,
+  "scope": "conditional finite-window leading running with a separately supplied error envelope",
+  "exact_budget_classification": [
+    {
+      "B": "1/100",
+      "candidates": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ]
+      ]
+    },
+    {
+      "B": "1/3",
+      "candidates": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ]
+      ]
+    },
+    {
+      "B": "5/6",
+      "candidates": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          7,
+          3
+        ]
+      ]
+    },
+    {
+      "B": "7/6",
+      "candidates": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          7,
+          3
+        ]
+      ]
+    },
+    {
+      "B": "3",
+      "candidates": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          7,
+          3
+        ]
+      ]
+    },
+    {
+      "B": "8",
+      "candidates": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          3,
+          10
+        ],
+        [
+          3,
+          11
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          11,
+          3
+        ]
+      ]
+    }
+  ],
+  "error_budget": {
+    "B": "1/3",
+    "eta": "1/4",
+    "robust": [
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        5
+      ]
+    ],
+    "possible": [
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        5
+      ]
+    ],
+    "rows": [
+      {
+        "Nc": 3,
+        "ng": 3,
+        "b": "-19/6",
+        "worst_endpoint_y": "13/4",
+        "best_endpoint_y": "15/4",
+        "robust": true,
+        "possible": true
+      },
+      {
+        "Nc": 3,
+        "ng": 4,
+        "b": "-11/6",
+        "worst_endpoint_y": "23/12",
+        "best_endpoint_y": "29/12",
+        "robust": true,
+        "possible": true
+      },
+      {
+        "Nc": 3,
+        "ng": 5,
+        "b": "-1/2",
+        "worst_endpoint_y": "7/12",
+        "best_endpoint_y": "13/12",
+        "robust": true,
+        "possible": true
+      },
+      {
+        "Nc": 3,
+        "ng": 6,
+        "b": "5/6",
+        "worst_endpoint_y": "-3/4",
+        "best_endpoint_y": "-1/4",
+        "robust": false,
+        "possible": false
+      },
+      {
+        "Nc": 7,
+        "ng": 3,
+        "b": "5/6",
+        "worst_endpoint_y": "-3/4",
+        "best_endpoint_y": "-1/4",
+        "robust": false,
+        "possible": false
+      }
+    ]
+  },
+  "tight_boundary_and_quantifier_checks": true,
+  "nonconstant_error_checks": [
+    {
+      "Nc": 3,
+      "ng": 3,
+      "minimum_y": "1/3",
+      "end_y": "7/2"
+    },
+    {
+      "Nc": 3,
+      "ng": 4,
+      "minimum_y": "1/3",
+      "end_y": "13/6"
+    },
+    {
+      "Nc": 3,
+      "ng": 5,
+      "minimum_y": "1/3",
+      "end_y": "5/6"
+    }
+  ],
+  "without_uniform_initial_floor": [
+    {
+      "Nc": 3,
+      "ng": 3,
+      "b": "-19/6",
+      "y0": "1",
+      "uniform_lower_y": "1"
+    },
+    {
+      "Nc": 7,
+      "ng": 3,
+      "b": "5/6",
+      "y0": "25/12",
+      "uniform_lower_y": "1"
+    },
+    {
+      "Nc": 11,
+      "ng": 17,
+      "b": "365/6",
+      "y0": "745/12",
+      "uniform_lower_y": "1"
+    },
+    {
+      "Nc": 99,
+      "ng": 1000,
+      "b": "199957/6",
+      "y0": "399929/12",
+      "uniform_lower_y": "1"
+    }
+  ],
+  "general_claim_source": "proof.md analytic inequalities, not finite samples",
+  "not_certified": [
+    "physical origin of coupling floor",
+    "actual higher-order rho",
+    "full interacting instrument",
+    "unique three generations",
+    "full SM generation"
+  ]
+}

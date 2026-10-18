@@ -1,0 +1,44 @@
+{
+  "round": 1316,
+  "status": "ACCEPTED_CONDITIONAL_SCOPE",
+  "date": "2026-10-18",
+  "new_axioms": 0,
+  "stage_complete": false,
+  "goal_status": "active",
+  "checks": "Author and independent programs were run read-only before publication; this publisher verifies their frozen outputs and review bindings.",
+  "executed_checks": [
+    {
+      "exit_code": 0,
+      "script": "check.py",
+      "status": "PASS",
+      "cases": 18,
+      "source_parameters": 5,
+      "multiport_deletions": 9
+    },
+    {
+      "exit_code": 0,
+      "script": "independent_check.py",
+      "status": "PASS_WITH_SCOPE",
+      "sample_count": 20,
+      "assertion_count": 1055,
+      "check_categories": 36
+    }
+  ],
+  "sha256": {
+    "research_cognition_physics/archive_1313_/1316/proof.md": "9fc31953079c7e15e1bf0785a834f74994e4c1e3079b31ad6dc92ed0ae132da3",
+    "research_cognition_physics/archive_1313_/1316/check.py": "e109f2b1ce69d260cedccace7abc0b45cf0096002ba829aadcee01ed3af6f80e",
+    "research_cognition_physics/archive_1313_/1316/results.json": "3711150372f04bca1c86338d0864d55af6a3c6764c0808706ff11ce87b734d62",
+    "research_cognition_physics/archive_1313_/1316/NEXT.md": "0beba458585faa07a55a819dadbbf517342a797ebfe3e6b015dd2825c2c91394",
+    "research_cognition_physics/archive_1313_/1316/independent_check.py": "ea4709165b58e30bc2b3cf95bf1f496fc1e179e21c605a78728d18a88313066a",
+    "research_cognition_physics/archive_1313_/1316/independent_results.json": "db8a12f489b620daca6373068fc1859fc82f65127246a4e454f486ac26997837",
+    "research_cognition_physics/archive_1313_/research_note_1316.md": "fec7eb677aa33182205509836acf18742bbf3bee06f52bf9f19b306e0d5f2053",
+    "research_cognition_physics/archive_1313_/_admission/round1316_admission.md": "e31e7dbfb294848c4fc248afe839dc2da3942a0bfdd8bcdcb7db49a31a781f3c",
+    "research_cognition_physics/archive_1313_/1316/independent_math_review.md": "44871d23e814f516662a5eef0ffd503528b225645292bbfee9df009587c806db"
+  },
+  "main_result": "Fixed finite Dirac chains give portal-independent light/heavy generalized spectrum and exact finite-window physical pole bounds.",
+  "scope_limits": [
+    "tree-level canonical finite-chain category",
+    "Y, n, scale and endpoint rules remain inputs",
+    "not an adopted cognition axiom or a full common A/B/C implementation"
+  ]
+}

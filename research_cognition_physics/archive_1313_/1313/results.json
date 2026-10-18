@@ -1,0 +1,234 @@
+{
+  "schema": "round1313_full_sector_v1",
+  "status": "PASS",
+  "seed": 1313,
+  "tolerance": 7e-11,
+  "full_sector_cases": [
+    {
+      "role": "A",
+      "d": 2,
+      "n": 3,
+      "full_dimension": 15,
+      "vertex_rank": 6,
+      "times": 4
+    },
+    {
+      "role": "A",
+      "d": 3,
+      "n": 4,
+      "full_dimension": 40,
+      "vertex_rank": 8,
+      "times": 4
+    },
+    {
+      "role": "A",
+      "d": 4,
+      "n": 5,
+      "full_dimension": 85,
+      "vertex_rank": 10,
+      "times": 4
+    },
+    {
+      "role": "B",
+      "d": 2,
+      "n": 3,
+      "full_dimension": 24,
+      "vertex_rank": 24,
+      "times": 4
+    },
+    {
+      "role": "B",
+      "d": 3,
+      "n": 4,
+      "full_dimension": 72,
+      "vertex_rank": 72,
+      "times": 4
+    },
+    {
+      "role": "B",
+      "d": 4,
+      "n": 5,
+      "full_dimension": 160,
+      "vertex_rank": 160,
+      "times": 4
+    },
+    {
+      "role": "C",
+      "d": 3,
+      "n": 2,
+      "full_dimension": 56,
+      "vertex_rank": 4,
+      "times": 4
+    },
+    {
+      "role": "C",
+      "d": 3,
+      "n": 3,
+      "full_dimension": 84,
+      "vertex_rank": 6,
+      "times": 4
+    },
+    {
+      "role": "C",
+      "d": 3,
+      "n": 4,
+      "full_dimension": 112,
+      "vertex_rank": 8,
+      "times": 4
+    },
+    {
+      "role": "C",
+      "d": 3,
+      "n": 5,
+      "full_dimension": 140,
+      "vertex_rank": 10,
+      "times": 4
+    }
+  ],
+  "source_cases": [
+    "A",
+    "B",
+    "C"
+  ],
+  "perfect_handoffs": [
+    {
+      "role": "A",
+      "n": 3,
+      "p_min": 1.0
+    },
+    {
+      "role": "B",
+      "n": 3,
+      "p_min": 1.0
+    },
+    {
+      "role": "C",
+      "n": 3,
+      "p_min": 1.0
+    },
+    {
+      "role": "A",
+      "n": 4,
+      "p_min": 1.0
+    },
+    {
+      "role": "B",
+      "n": 4,
+      "p_min": 1.0
+    },
+    {
+      "role": "C",
+      "n": 4,
+      "p_min": 1.0
+    },
+    {
+      "role": "A",
+      "n": 5,
+      "p_min": 1.0
+    },
+    {
+      "role": "B",
+      "n": 5,
+      "p_min": 1.0
+    },
+    {
+      "role": "C",
+      "n": 5,
+      "p_min": 1.0
+    }
+  ],
+  "spectral_contrasts": [
+    {
+      "singular_values": [
+        1.0,
+        2.0
+      ],
+      "rank": 2,
+      "p_min": 1.4997597826618576e-32
+    },
+    {
+      "singular_values": [
+        1.0,
+        3.0
+      ],
+      "rank": 2,
+      "p_min": 1.0
+    },
+    {
+      "singular_values": [
+        0.0,
+        1.0
+      ],
+      "rank": 1,
+      "p_min": 0.0
+    },
+    {
+      "singular_values": [
+        1.0,
+        1.0
+      ],
+      "rank": 2,
+      "p_min": 1.0
+    }
+  ],
+  "timing": [
+    {
+      "angle_error": 0.0,
+      "half_diamond": 1.8746997283273227e-33
+    },
+    {
+      "angle_error": 0.01,
+      "half_diamond": 9.999666671114355e-05
+    },
+    {
+      "angle_error": 0.1,
+      "half_diamond": 0.009966711079379274
+    },
+    {
+      "angle_error": 0.4,
+      "half_diamond": 0.15164664532641728
+    }
+  ],
+  "max_errors": {
+    "isometries": 2.220446049250313e-16,
+    "vertex_intertwining": 3.510833468576701e-16,
+    "hermitian": 0.0,
+    "free_energy_conservation": 0.0,
+    "fermion_number": 0.0,
+    "reference_number_constraint": 0.0,
+    "group_invariance": 3.4021815010030383e-16,
+    "invariant_encoding": 2.54294068089371e-16,
+    "full_unitarity": 3.9968028886505635e-15,
+    "full_evolution": 1.7764570506958505e-15,
+    "instrument_complete": 1.7763568394002505e-15,
+    "partner_failure": 9.66675337958245e-16,
+    "partner_success": 1.0605390551611693e-15,
+    "branches_sum": 2.6645352591003757e-15,
+    "failure_partner": 1.3322676295501878e-15,
+    "resource_L": 2.6645352591003757e-15,
+    "resource_R": 0.0,
+    "resource_b": 2.6645352591003757e-15,
+    "resource_b2": 1.609823385706477e-15,
+    "full_energy": 3.997670156294199e-15,
+    "interaction_energy": 9.03762628910173e-16,
+    "readout_mean_energy": 9.04301880706312e-16,
+    "receiver_single_particle": 1.0605390551611693e-15,
+    "worst_success": 3.885780586188048e-16,
+    "receiver_partial_trace": 1.249000902703301e-16,
+    "second_reference_constraint": 0.0,
+    "independent_energy_sources": 1.565336749109747e-11,
+    "real_coupling_source": 1.1102230246251565e-16,
+    "imag_coupling_source": 9.99866855977416e-13,
+    "perfect_all_input": 1.0796169701996884e-15,
+    "perfect_partner": 5.398084850998442e-16,
+    "spectrum_instrument": 1.1957467920563635e-15,
+    "timing_half_diamond_certificate": 8.847089727481716e-17
+  },
+  "new_axioms": 0,
+  "scope": "finite logical K handoff, not arbitrary bare activity nor complete SM",
+  "bindings": {
+    "check.py": "faac8ad33b7cb45bd3cb7d5fa4170eabcd687ff366da81e2471eb99c3a134555",
+    "proof.md": "17a394014a356e6db6228947dd02782e27fe9ade3972cd947c5c871f1c61af8d",
+    "../_admission/round1313_admission.md": "3bceacc88c5e2cc4bfc640dd688a417a09db944f237e07f46024c225162b5626"
+  }
+}

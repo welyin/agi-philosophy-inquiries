@@ -1,0 +1,214 @@
+{
+  "assertions": 105,
+  "code_sha256": "abbb59ad1e4797d6eefd7852cfe6ea3794f5929628a1e4d14025b5c074777670",
+  "deletions": {
+    "AND_changed_control_class": [
+      {
+        "refusal_amplitude": 0.0,
+        "response_norm": 0.05399999999999997,
+        "t": 0.0
+      },
+      {
+        "refusal_amplitude": 0.0,
+        "response_norm": 0.013499999999999993,
+        "t": 0.5
+      },
+      {
+        "refusal_amplitude": 0.0,
+        "response_norm": 2.9976021664879233e-19,
+        "t": 1.0
+      }
+    ],
+    "N1_without_fixed_Y": [
+      {
+        "K": 1.0,
+        "global_probability_max": 0.5,
+        "prefix": 1.0
+      },
+      {
+        "K": 10.0,
+        "global_probability_max": 0.009900990099009901,
+        "prefix": 1.0
+      },
+      {
+        "K": 100.0,
+        "global_probability_max": 9.999000099990002e-05,
+        "prefix": 1.0
+      }
+    ],
+    "N2_fixed_Y": [
+      {
+        "K": 4.0,
+        "Y": 0.5773502691896258,
+        "global_amplitude_bound": 0.17515994655187705,
+        "lambda_minus": 1.3242043381140796,
+        "prefix": 4.0,
+        "sample_max_diagnostic": 0.173933237702829
+      },
+      {
+        "K": 16.0,
+        "Y": 0.5773502691896258,
+        "global_amplitude_bound": 0.029043889934859,
+        "lambda_minus": 1.4661482207145018,
+        "prefix": 16.0,
+        "sample_max_diagnostic": 0.028860240403633466
+      },
+      {
+        "K": 64.0,
+        "Y": 0.5773502691896258,
+        "global_amplitude_bound": 0.006585769378467235,
+        "lambda_minus": 1.492032497951524,
+        "prefix": 64.0,
+        "sample_max_diagnostic": 0.006562258540789917
+      },
+      {
+        "K": 256.0,
+        "Y": 0.5773502691896258,
+        "global_amplitude_bound": 0.0016074486092258783,
+        "lambda_minus": 1.4980373008873484,
+        "prefix": 256.0,
+        "sample_max_diagnostic": 0.0016071061886629079
+      }
+    ]
+  },
+  "exact_gramian": {
+    "W_pm_entries": {
+      "++": [
+        "1333333333333/1000000000000",
+        "666666666667/500000000000"
+      ],
+      "+-": [
+        "33133841787/62500000000",
+        "530141468593/1000000000000"
+      ],
+      "--": [
+        "55181114513/200000000000",
+        "137952786283/500000000000"
+      ]
+    },
+    "determinant_lower": "8862174737/1000000000000",
+    "first_minor_lower": "1283333333333/1000000000000",
+    "lambda_certified": "1/20",
+    "method": "rational sqrt bracket, degree49 Taylor with exact Lagrange remainder"
+  },
+  "finite_CAR": {
+    "CAR_modes": 4,
+    "Fock_dimension": 16,
+    "fixed_full_Fock_offset": 10.0,
+    "minimum_energy": 9.03914808386086,
+    "scope": "Finite exact CAR parent; no spatial field-device or autonomous withdrawal claim.",
+    "with_permission_dimension": 32
+  },
+  "finite_positive_examples": {
+    "certified_bounds": {
+      "generalized": 0.0698934814006582,
+      "prefix": 0.0010878235150979226,
+      "relative_generalized": 0.04193608884039492,
+      "response": 0.0022645487973813254,
+      "same_Y_delta": 0.0018841655978177713
+    },
+    "examples": [
+      {
+        "commutator_norm": 6.666666666666667e-13,
+        "gap_squared": 1.0,
+        "generalized_spectrum": [
+          1.6666541843119096,
+          1.6666713287125414,
+          1.6666854708151404
+        ],
+        "n": 3,
+        "partner_error": 5.197943439452731e-16,
+        "portal_norm": 0.3429463486006346,
+        "prefix_norm": 1.4142135623730952e-06,
+        "probability_entire_window_bound": 8e-12,
+        "response_difference": 6.762489517510447e-07,
+        "same_Y_delta": 2.1619348544062446e-06,
+        "sample_max_amplitude_diagnostic": 1.5764368462321487e-06
+      },
+      {
+        "commutator_norm": 7.5e-13,
+        "gap_squared": 1.0,
+        "generalized_spectrum": [
+          1.666650980394108,
+          1.6666547222852262,
+          1.6666682354220876,
+          1.6666837623551054
+        ],
+        "n": 4,
+        "partner_error": 5.519664451072753e-16,
+        "portal_norm": 0.3585345171898319,
+        "prefix_norm": 1.4142135623730952e-06,
+        "probability_entire_window_bound": 8e-12,
+        "response_difference": 6.350543898255032e-07,
+        "same_Y_delta": 2.1839802800427195e-06,
+        "sample_max_amplitude_diagnostic": 1.6022879938571737e-06
+      },
+      {
+        "commutator_norm": 7.999999999999999e-13,
+        "gap_squared": 1.0,
+        "generalized_spectrum": [
+          1.6666488776308914,
+          1.6666547045604154,
+          1.6666605639197773,
+          1.6666671237573822,
+          1.6666827065636436
+        ],
+        "n": 5,
+        "partner_error": 3.1628771971867403e-16,
+        "portal_norm": 0.37412283625688186,
+        "prefix_norm": 1.4142135623730952e-06,
+        "probability_entire_window_bound": 8e-12,
+        "response_difference": 7.0806761298099e-07,
+        "same_Y_delta": 2.197969988827645e-06,
+        "sample_max_amplitude_diagnostic": 1.6121101315675697e-06
+      }
+    ],
+    "fixed_contract": {
+      "N": 2,
+      "alpha": 1e-06,
+      "m": 1,
+      "probability_tolerance": 1e-08,
+      "q": 1,
+      "rho": 1,
+      "tau": 2,
+      "zmax": 0.6
+    }
+  },
+  "new_axioms": 0,
+  "round": 1317,
+  "sources_sha256": {
+    "archive_1313_/1313/proof.md": "17a394014a356e6db6228947dd02782e27fe9ade3972cd947c5c871f1c61af8d",
+    "archive_1313_/1316/acceptance.json": "edf93f778f5690190c78ca8415bfd9286c110c256b211154e618c5c4a1d8ab66",
+    "archive_1313_/1316/proof.md": "9fc31953079c7e15e1bf0785a834f74994e4c1e3079b31ad6dc92ed0ae132da3",
+    "archive_1313_/1317/NEXT.md": "4c05fd9077b42a1e8b9985c76fc24acec51061be1a39d4f024f3288ce9c5b2df",
+    "archive_1313_/1317/proof.md": "f5ec76077acce2bf058e2b47265995a2fa5c1fea5af28fd2856023b42517d58c",
+    "archive_1313_/_admission/joint_consent_scope_screen_after1316.md": "17ca86630d82424369c7a66fcc2871d78b61996584fee5d3ee7728d1c2202db1",
+    "archive_1313_/_admission/joint_mechanism_screen_after1316.md": "1910eab1413f65ca4b06207ad809c9a973d25b0440d308ab93fb8aff59af12e8",
+    "archive_1313_/_admission/refusal_chain_screen_after1316.md": "5b2a825b0d7684c36e2fd5501040a99b5563cf223fc357f399b05971dd12e582",
+    "archive_1313_/_admission/round1317_admission.md": "be9d12e6557520d26bbdc00c55a389d9ea5d0317ee53de2531d04e8019847dfb",
+    "archive_1313_/research_note_1317.md": "a477baa87aeda0215517d69ab21853201427540d44c64bdd67f53c16c95fcfe1",
+    "archive_923_934/research_note_925.md": "6e667005d8239faaad50cd5a8b388dc22efc47d2f7e1854d59a60f510608c87c",
+    "archive_923_934/research_note_933.md": "26ef1506c8d1155245025a4df1b0a2fcecdad7951065910ad619c3c5d38e69d4",
+    "archive_935_955/research_note_954.md": "7c2bc9e0ce6b35e355cfc5db802a21e5da8cbc42b6bc03d2389c67cc51c7e7e5",
+    "archive_956_989/research_note_968.md": "ef9708e7501dda6ab5c3a68959269498471d46951b72cfbb771e1dbfc6e07e69",
+    "archive_956_989/research_note_988.md": "6aff98896af0190859fceeacf85e4e172bd5249ffba16ab3472dda1f3e18c582"
+  },
+  "status": "PASS",
+  "volterra": {
+    "dense_sample_max": 0.4411688963520291,
+    "grid_derivative_enclosure": 0.45015962718645103,
+    "identity_errors": [
+      4.853973589924856e-16,
+      3.262912512310282e-16,
+      6.098967335289406e-16
+    ],
+    "parameters": [
+      3,
+      2,
+      0.7,
+      1.3,
+      0.9
+    ],
+    "scope": "Quadrature and dense values are diagnostics; proof supplies all-time bounds."
+  }
+}

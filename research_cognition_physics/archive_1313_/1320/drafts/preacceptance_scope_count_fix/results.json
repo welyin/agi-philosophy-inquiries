@@ -1,0 +1,611 @@
+{
+  "round": 1320,
+  "status": "author_checks_passed_not_acceptance",
+  "new_axioms": 0,
+  "bindings": {
+    "proof_sha256": "098e19b2ee34de9bb4cd099376aedcd8a3d044f9f54891a4457cfffd701324cd",
+    "check_sha256": "b8d6d7df72940235979383391cca4015d85d06c5fe1e6231c23c07e3125303ad",
+    "admission_sha256": "593afcf25b357453b7f92117fe075addb7dd6541aef64d714a10c9b1b1f1d1ec"
+  },
+  "scope": "Finite CAR parent and conditional fixed-mode local-current bridge only. No complete QFT instrument, full S1 action, actual unique gauge group, family selection or observed parameters certified.",
+  "finite_parent": {
+    "dimension": 382,
+    "fermion_modes": 28,
+    "all_two_fermion_states": 378,
+    "scalar_states": 3,
+    "vacuum_states": 1,
+    "dark_two_fermion_dimension": 372
+  },
+  "capacity_bounds": [
+    {
+      "w": 1,
+      "C_dimension": 3,
+      "roundtrip_lower_bound": 0.0
+    },
+    {
+      "w": 2,
+      "C_dimension": 6,
+      "roundtrip_lower_bound": 0.5
+    },
+    {
+      "w": 3,
+      "C_dimension": 9,
+      "roundtrip_lower_bound": 0.6666666666666667
+    },
+    {
+      "w": 4,
+      "C_dimension": 12,
+      "roundtrip_lower_bound": 0.75
+    },
+    {
+      "w": 5,
+      "C_dimension": 15,
+      "roundtrip_lower_bound": 0.8
+    }
+  ],
+  "ratio_cases": [
+    {
+      "label": "balanced",
+      "u_over_v": 1.0,
+      "peak_probability": 1.0,
+      "transfer_erasure": 0.0,
+      "roundtrip_erasure": 0.0,
+      "within_half_contract": true
+    },
+    {
+      "label": "admissible_imbalance",
+      "u_over_v": 1.5624999999999998,
+      "peak_probability": 0.9518143961927424,
+      "transfer_erasure": 0.04818560380725756,
+      "roundtrip_erasure": 0.09404935520024515,
+      "within_half_contract": true
+    },
+    {
+      "label": "outside_contract",
+      "u_over_v": 24.999999999999996,
+      "peak_probability": 0.14792899408284024,
+      "transfer_erasure": 0.8520710059171598,
+      "roundtrip_erasure": 0.978117012709639,
+      "within_half_contract": false
+    }
+  ],
+  "balanced_point": {
+    "eq": 0.7,
+    "eqbar": 0.6,
+    "ellbar": 0.8,
+    "ES": 1.4,
+    "M": 1.4,
+    "gA": [
+      0.3,
+      0.4
+    ],
+    "gC": [
+      0.4,
+      -0.3
+    ],
+    "peak_time": 4.442882938158366,
+    "kappa": [
+      [
+        2.0,
+        0.0
+      ],
+      [
+        2.940199733523725,
+        0.5960079923851836
+      ]
+    ],
+    "lambda": [
+      [
+        0.15,
+        0.2
+      ],
+      [
+        0.11080861063265943,
+        -0.12449590189013232
+      ]
+    ]
+  },
+  "conditional_projection_example": {
+    "eta_assumed_not_proven": 0.0001,
+    "two_pass_bound": 0.0008885765876316732
+  },
+  "checks": [
+    {
+      "name": "CAR_QQ_orthonormal",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "CAR_antiQL_orthonormal",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "all_nine_codes_orthonormal",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "complete_382_dimension",
+      "error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "complete_dark_dimension_372",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "dark_not_discarded",
+      "error": 1.962615573354719e-17,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "K_conserved",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "Hamiltonian_Hermitian",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "vacuum_inert",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "QQ_combined_Yukawa_symmetric",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "QQ_full_CAR_coefficient_antisymmetric",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "same_flavor_QQ_nonzero",
+      "error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "QQ_role_intertwiner",
+      "error": 3.1031676915590914e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "antiQL_role_intertwiner",
+      "error": 1.1443916996305594e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "same_parent_internal_weak_spin",
+      "error": 1.3092278833360675e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "old_r_same_parent",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "Z3_full_rank_nontrivial_self_twist",
+      "error": 6.740105962128839e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "Z3_twist_full_rank",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "Z3_character_not_equal",
+      "error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "connected_rank_one_nontrivial_intertwiner",
+      "error": 1.1195942925137229e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "partial_intertwiner_not_full",
+      "error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "capacity_w_1",
+      "error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "capacity_w_2",
+      "error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "capacity_w_3",
+      "error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "capacity_w_4",
+      "error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "capacity_w_5",
+      "error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "w2_selected_subcode_only",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "w2_rest_not_delivered",
+      "error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "actual_three_channel_parent",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "balanced_S_returns_empty",
+      "error": 2.1149402582199232e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "balanced_actual_full_transfer",
+      "error": 1.9361876553551713e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "balanced_actual_reverse",
+      "error": 1.9884017659498684e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "balanced_complete_roundtrip",
+      "error": 1.332270639908327e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "actual_chain_dark_vector",
+      "error": 2.7755575615628914e-17,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "S_not_exclusive_archive",
+      "error": 3.885780586188048e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "endpoints_do_not_exit_midway",
+      "error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "all_finite_dark_evolution",
+      "error": 6.589012306738759e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "balanced_peak_probability",
+      "error": 8.881784197001252e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "balanced_S_empty",
+      "error": 3.925231146709438e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "balanced_two_pass_probability",
+      "error": 1.7763568394002505e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "balanced_rt_tr_dictionary",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "balanced_imbalance_exact",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "balanced_partner_complete_erasure",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "admissible_imbalance_peak_probability",
+      "error": 1.2212453270876722e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "admissible_imbalance_S_empty",
+      "error": 4.3960109279446086e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "admissible_imbalance_two_pass_probability",
+      "error": 2.3314683517128287e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "admissible_imbalance_rt_tr_dictionary",
+      "error": 2.7755575615628914e-17,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "admissible_imbalance_imbalance_exact",
+      "error": 1.3877787807814457e-17,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "admissible_imbalance_partner_complete_erasure",
+      "error": 1.3877787807814457e-17,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "outside_contract_peak_probability",
+      "error": 2.7755575615628914e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "outside_contract_S_empty",
+      "error": 3.756067568042397e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "outside_contract_two_pass_probability",
+      "error": 7.979727989493313e-17,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "outside_contract_rt_tr_dictionary",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "outside_contract_imbalance_exact",
+      "error": 1.1102230246251565e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "outside_contract_partner_complete_erasure",
+      "error": 3.3306690738754696e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "unbalanced_common_nonempty",
+      "error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "strong_imbalance_failure",
+      "error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "independent_portal_schedule_exact_transfer",
+      "error": 8.881784197001252e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "independent_schedule_S_empty",
+      "error": 6.519100784173508e-17,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "all_detuning_peak_upper_0",
+      "error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "all_detuning_peak_upper_1",
+      "error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "all_detuning_peak_upper_2",
+      "error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "all_detuning_peak_upper_3",
+      "error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "full_independent_parent_source_0",
+      "error": 8.22666379463044e-11,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "full_independent_parent_source_1",
+      "error": 5.3510973430093145e-11,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "full_independent_parent_source_2",
+      "error": 8.22666379463044e-11,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "full_independent_parent_source_3",
+      "error": 2.8755664516211255e-11,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "full_independent_parent_source_4",
+      "error": 5.000444502911705e-13,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "full_independent_parent_source_5",
+      "error": 5.000444502911705e-13,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "full_independent_parent_source_6",
+      "error": 5.000444502911705e-13,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "full_independent_parent_source_7",
+      "error": 5.000444502911705e-13,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "full_energy_conserved",
+      "error": 1.1102230246251565e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "resonant_free_interaction_commute",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "terminal_mean_readout_energy",
+      "error": 2.220446049250313e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "terminal_Nq",
+      "error": 7.55561051258983e-30,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "terminal_NantiQ",
+      "error": 8.881784197001252e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "terminal_NantiL",
+      "error": 8.881784197001252e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "terminal_NS",
+      "error": 3.147145343504582e-32,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "same_parent_energy_Schur",
+      "error": 3.1031676915590914e-17,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "fixed_overlap_dictionary",
+      "error": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "field_Gram_Hermitian",
+      "error": 1.6993209560589134e-18,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "field_Gram_positive",
+      "error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "field_Gram_rank_one",
+      "error": 6.018746630242526e-20,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "field_cross_modulus_identity",
+      "error": 5.55437437181331e-20,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "QQQL_conjugation_dictionary",
+      "error": 3.576224061345498e-18,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "task_field_ratio",
+      "error": 2.6519802201557085e-17,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "exact_task_balanced_Gram_weight",
+      "error": 3.3826278318312614e-18,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "mass_squared_finite_window_0",
+      "error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "mass_squared_finite_window_1",
+      "error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "mass_squared_finite_window_2",
+      "error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "field_complete_source",
+      "error": 1.0937862675875568e-12,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "variable_overlap_source_chain",
+      "error": 1.564448622493048e-11,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "rest_scalar_energy_mass_source",
+      "error": 1.5480811077495105e-11,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "two_mediators_strict_Gram_inequality",
+      "error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "free_contact_can_break_positivity",
+      "error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "conditional_projection_budget_finite",
+      "error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "one_public_bright_flavor_among_n_3",
+      "error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "one_public_bright_flavor_among_n_4",
+      "error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "one_public_bright_flavor_among_n_5",
+      "error": 0.0,
+      "tolerance": 0
+    }
+  ],
+  "check_count": 99,
+  "maximum_error": 8.22666379463044e-11
+}

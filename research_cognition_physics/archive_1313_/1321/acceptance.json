@@ -1,0 +1,57 @@
+{
+  "round": 1321,
+  "status": "ACCEPTED_CONDITIONAL_SCOPE",
+  "date": "2026-10-19",
+  "new_axioms": 0,
+  "stage_complete": false,
+  "goal_status": "active",
+  "executed_checks": [
+    {
+      "script": "research_cognition_physics/archive_1313_/1321/check.py",
+      "script_sha256": "126b4af829a875294cfb4b3cfc5b985ba9696513443c8cd831ba393d0252e3af",
+      "exit_code": 0,
+      "receipt_chunk_id": "d4d0e2",
+      "output": {
+        "round": 1321,
+        "mode": "read-only",
+        "check_count": 176,
+        "maximum_absolute_residual": 1.2740031252178596e-11,
+        "max_return_error_bound": 0.0011027723168139652,
+        "pass": true
+      },
+      "mode": "read-only --check through run_research_interaction_generation_active.py"
+    },
+    {
+      "script": "research_cognition_physics/archive_1313_/1321/independent_check.py",
+      "script_sha256": "c8bf272e771ea42ace22960bceaf854dfaf914af5b436c6a0673d81a1c05c232",
+      "exit_code": 0,
+      "receipt_chunk_id": "40b3d3",
+      "output": {
+        "status": "PASS_WITH_SCOPE",
+        "assertions": 310,
+        "categories": 43,
+        "max_normalized_error": 4.680159038095155e-12
+      },
+      "mode": "read-only --check through run_research_interaction_generation_active.py"
+    }
+  ],
+  "sha256": {
+    "research_cognition_physics/archive_1313_/1321/proof.md": "5fdf6c40524a83a3fd125fc0191cd98ba181bf93ac2020debb8dcc7000791a68",
+    "research_cognition_physics/archive_1313_/1321/check.py": "126b4af829a875294cfb4b3cfc5b985ba9696513443c8cd831ba393d0252e3af",
+    "research_cognition_physics/archive_1313_/1321/results.json": "dae8ee1828d6b74335943a9dce8364a2afcc9c45a1a85ecd4c81a20111accec1",
+    "research_cognition_physics/archive_1313_/1321/NEXT.md": "150950ad8e9e0b1fb744c93b2a5fdaefc7436ec04ec1775934c8e35536b31fd6",
+    "research_cognition_physics/archive_1313_/1321/independent_check.py": "c8bf272e771ea42ace22960bceaf854dfaf914af5b436c6a0673d81a1c05c232",
+    "research_cognition_physics/archive_1313_/1321/independent_results.json": "7bda12104540a9fb3f61e251ffbeaa30d8711b62b0ea3f5203db6f9fc8c02e07",
+    "research_cognition_physics/archive_1313_/research_note_1321.md": "80c9dcd505c15e03e4f99d33423c4b4c3823e51ac85a5fd286318a5e71cef8eb",
+    "research_cognition_physics/archive_1313_/_admission/round1321_admission.md": "9d474ec7647b5eb49b5cc45059752878160db8a373329ea0cf4df4a1d4b04938",
+    "research_cognition_physics/archive_1313_/1321/independent_review.md": "c060b0e847cf9b326a99d129cc774ebe516f26381a6cc6c96d0ca25f3e83e391"
+  },
+  "main_result": "A complete declared finite-mode parent retains counterrotating terms and admits three, four and five families with variable full-rank Yukawa data under one fixed transfer protocol and uniform error budget.",
+  "scope_limits": [
+    "The full Fock space is relative to the declared mode and scalar-occupation cutoff, not the full continuum field theory.",
+    "Group, matter table, Higgs background, mediator and portal flavor sequence remain declared inputs.",
+    "The task carries the complete internal code, not all unknown flavor data.",
+    "Finite-model probability differences and quadratic mass data do not certify empirical parameters, an interacting pole spectrum, or the previous long-window phase instrument.",
+    "Other weak-role branches and stronger physical realization claims require their own common-object qualification."
+  ]
+}

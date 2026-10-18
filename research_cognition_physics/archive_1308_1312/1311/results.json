@@ -1,0 +1,387 @@
+{
+  "schema": "round1311_joint_true_kernel_domain_v1",
+  "status": "PASS_CONDITIONAL_DOMAIN_AND_BRANCH_DEGENERACY",
+  "new_axioms": 0,
+  "actual_device_certified": false,
+  "all_parameters_classified": false,
+  "kernel": {
+    "from": "frozen round1310 module",
+    "m": 0.000244140625,
+    "n": 0.00048828125,
+    "E": 0.1,
+    "z0": 0.009999850988787749,
+    "z1": 0.029999552964764496,
+    "K_integral": 1.3950206758505128e-26,
+    "K_analytic_lower": 1.3950206757838078e-26,
+    "center_quadrature_relative_difference": 8.86928147788293e-15
+  },
+  "task": {
+    "g_center": 0.2,
+    "v_center": 0.25,
+    "sigma_center": 1.7149364454264602e-26,
+    "S_star": 8.574682227132301e-27,
+    "p_star": 0.5,
+    "exposure_max": 8.083648608769027e+25,
+    "center_P": 0.75,
+    "constructed_finite_witness_not_observed_budget": true,
+    "gmax": 0.3,
+    "Lrun": 1.0
+  },
+  "domain": {
+    "x_floor": 11.111111111111112,
+    "x_c": 36.82113349105874,
+    "w_c": 0.6377512366148181,
+    "x_at_v_lower": 36.15596569956706,
+    "B_at_v_lower": 1977.4624565669426,
+    "boundary_samples": [
+      {
+        "x": 1.1046340047317622,
+        "w": 0.6157545412388032,
+        "Wprime": -0.019826525451362664,
+        "Wsecond": 0.0001567257454846589,
+        "strict_positive_curvature": true
+      },
+      {
+        "x": 3.682113349105874,
+        "w": 0.5651721014237772,
+        "Wprime": -0.01942332014784627,
+        "Wsecond": 0.00015601554990532886,
+        "strict_positive_curvature": true
+      },
+      {
+        "x": 9.205283372764685,
+        "w": 0.46025731017109794,
+        "Wprime": -0.01857115183553656,
+        "Wsecond": 0.00015202096447190354,
+        "strict_positive_curvature": true
+      },
+      {
+        "x": 18.41056674552937,
+        "w": 0.2955866845557965,
+        "Wprime": -0.017226242324110984,
+        "Wsecond": 0.00013905691430852955,
+        "strict_positive_curvature": true
+      },
+      {
+        "x": 27.615850118294055,
+        "w": 0.1426645256786619,
+        "Wprime": -0.01602616411697227,
+        "Wsecond": 0.00012116726918161084,
+        "strict_positive_curvature": true
+      },
+      {
+        "x": 33.13902014195286,
+        "w": 0.05593861657854124,
+        "Wprime": -0.015388931007669008,
+        "Wsecond": 0.00010955448611528855,
+        "strict_positive_curvature": true
+      },
+      {
+        "x": 35.716499486326974,
+        "w": 0.01663186475425954,
+        "Wprime": -0.015113543425757558,
+        "Wsecond": 0.00010414166272688973,
+        "strict_positive_curvature": true
+      }
+    ],
+    "max_level_relative_residual": 4.440892098500626e-16,
+    "max_derivative_fd_relative_difference": 3.1254718103507697e-10,
+    "max_second_derivative_fd_relative_difference": 1.2059727332016338e-07,
+    "boundary_strictly_convex_not_claiming_convex_domain": true,
+    "positive_b_contraction": [
+      {
+        "b": "0",
+        "x_b": 11.111111111111112,
+        "positive_v_max_squared": 1.7005550303543724,
+        "closed_box_nonempty": true
+      },
+      {
+        "b": "5/6",
+        "x_b": 11.121665401073855,
+        "positive_v_max_squared": 1.699783191625344,
+        "closed_box_nonempty": true
+      },
+      {
+        "b": "10",
+        "x_b": 11.237762590664035,
+        "positive_v_max_squared": 1.6912973727816474,
+        "closed_box_nonempty": true
+      },
+      {
+        "b": "100",
+        "x_b": 12.377625906640334,
+        "positive_v_max_squared": 1.6084096793685534,
+        "closed_box_nonempty": true
+      },
+      {
+        "b": "5000",
+        "x_b": 74.43685088757222,
+        "positive_v_max_squared": null,
+        "closed_box_nonempty": false
+      }
+    ],
+    "closed_box_empty_singleton_interior_checked": true,
+    "infinite_g_and_vzero_excluded": true
+  },
+  "negative_b_degeneracy": {
+    "branches": [
+      {
+        "ng": 3,
+        "b_exact": "-19/6",
+        "x_b": 11.111111111111112,
+        "grid_feasible": 20,
+        "grid_cases": 49
+      },
+      {
+        "ng": 4,
+        "b_exact": "-11/6",
+        "x_b": 11.111111111111112,
+        "grid_feasible": 20,
+        "grid_cases": 49
+      },
+      {
+        "ng": 5,
+        "b_exact": "-1/2",
+        "x_b": 11.111111111111112,
+        "grid_feasible": 20,
+        "grid_cases": 49
+      }
+    ],
+    "grid_signatures_identical": true,
+    "universal_claim_supported_by_analytic_eq17_not_grid": true
+  },
+  "strict_rectangle": {
+    "exact_F_over_center_lower": "130321/160000",
+    "analytic_P_lower": 0.6766905683030267,
+    "samples": [
+      {
+        "g": 0.19,
+        "v": 0.24,
+        "P": 0.6815731429320271,
+        "sigma_over_center": 0.8254830363422042
+      },
+      {
+        "g": 0.19,
+        "v": 0.25,
+        "P": 0.6795160616314202,
+        "sigma_over_center": 0.8208380197496651
+      },
+      {
+        "g": 0.19,
+        "v": 0.26,
+        "P": 0.6773809213581004,
+        "sigma_over_center": 0.8160481687917887
+      },
+      {
+        "g": 0.2,
+        "v": 0.24,
+        "P": 0.7521543950301449,
+        "sigma_over_center": 1.006243209535252
+      },
+      {
+        "g": 0.2,
+        "v": 0.25,
+        "P": 0.75,
+        "sigma_over_center": 1.0
+      },
+      {
+        "g": 0.2,
+        "v": 0.26,
+        "P": 0.7477609560028218,
+        "sigma_over_center": 0.993568243826833
+      },
+      {
+        "g": 0.21,
+        "v": 0.24,
+        "P": 0.8141670155628123,
+        "sigma_over_center": 1.213960749595981
+      },
+      {
+        "g": 0.21,
+        "v": 0.25,
+        "P": 0.8120264267001471,
+        "sigma_over_center": 1.2056991216760453
+      },
+      {
+        "g": 0.21,
+        "v": 0.26,
+        "P": 0.8097976222267996,
+        "sigma_over_center": 1.1971964065206728
+      }
+    ]
+  },
+  "local_integer_sample": {
+    "total_count": 8882,
+    "first_color_blocks": [
+      {
+        "Nc": 3,
+        "ng_min": 3,
+        "ng_max": 1488
+      },
+      {
+        "Nc": 7,
+        "ng_min": 3,
+        "ng_max": 744
+      },
+      {
+        "Nc": 11,
+        "ng_min": 3,
+        "ng_max": 496
+      },
+      {
+        "Nc": 15,
+        "ng_min": 3,
+        "ng_max": 372
+      },
+      {
+        "Nc": 19,
+        "ng_min": 3,
+        "ng_max": 297
+      }
+    ],
+    "not_a_full_global_quantum_classification": true
+  },
+  "common_parameter_box": {
+    "mu": 0.000244140625,
+    "v_closed_box": [
+      0.2,
+      0.3
+    ],
+    "lambda_closed_box": [
+      0.02,
+      0.04
+    ],
+    "gY": 0.1,
+    "mu0": 0.1,
+    "mW_upper": 0.045,
+    "mZ_upper": 0.04743416490252569,
+    "mH_upper": 0.0848528137423857,
+    "branches": [
+      {
+        "ng": 3,
+        "max_registered_fermion_mass": 0.0017,
+        "max_Yukawa_singular_value_over_v_box": 0.012020815280171309,
+        "neutrino_masses": [
+          0.000244140625,
+          0.00048828125,
+          0.000732421875
+        ],
+        "charged_masses": [
+          0.000244140625,
+          0.00048828125,
+          0.0009765625
+        ]
+      },
+      {
+        "ng": 4,
+        "max_registered_fermion_mass": 0.0023,
+        "max_Yukawa_singular_value_over_v_box": 0.01626345596729059,
+        "neutrino_masses": [
+          0.000244140625,
+          0.00048828125,
+          0.000732421875,
+          0.0009765625
+        ],
+        "charged_masses": [
+          0.000244140625,
+          0.00048828125,
+          0.0009765625,
+          0.00146484375
+        ]
+      },
+      {
+        "ng": 5,
+        "max_registered_fermion_mass": 0.0029,
+        "max_Yukawa_singular_value_over_v_box": 0.02050609665440988,
+        "neutrino_masses": [
+          0.000244140625,
+          0.00048828125,
+          0.000732421875,
+          0.0009765625,
+          0.001220703125
+        ],
+        "charged_masses": [
+          0.000244140625,
+          0.00048828125,
+          0.0009765625,
+          0.00146484375,
+          0.001953125
+        ]
+      }
+    ],
+    "phase_structural_reuse": {
+      "mu": 0.000244140625,
+      "neutral_three_mode_mass_unchanged": true,
+      "charged_mass_choice": [
+        0.000244140625,
+        0.00048828125,
+        0.0009765625
+      ],
+      "branches": [
+        {
+          "ng": 3,
+          "neutral_mass_eigenvalues_positive_simple": true,
+          "all_flavor_connected": true,
+          "fixed_first_two_mass_columns": true,
+          "abs_charged_current_mixing": 0.3333333333333334,
+          "nonzero_H_triangle": true,
+          "old_full_source_numbers_inherited": false
+        },
+        {
+          "ng": 4,
+          "neutral_mass_eigenvalues_positive_simple": true,
+          "all_flavor_connected": true,
+          "fixed_first_two_mass_columns": true,
+          "abs_charged_current_mixing": 0.3333333333333334,
+          "nonzero_H_triangle": true,
+          "old_full_source_numbers_inherited": false
+        },
+        {
+          "ng": 5,
+          "neutral_mass_eigenvalues_positive_simple": true,
+          "all_flavor_connected": true,
+          "fixed_first_two_mass_columns": true,
+          "abs_charged_current_mixing": 0.3333333333333334,
+          "nonzero_H_triangle": true,
+          "old_full_source_numbers_inherited": false
+        }
+      ],
+      "old_phase_probability_formula_reused_only_in_unchanged_neutral_sector": true
+    },
+    "lambda_changes_physical_mass_at_fixed_task": [
+      {
+        "lambda": 0.02,
+        "v": 0.25,
+        "m_h_squared": 0.0025
+      },
+      {
+        "lambda": 0.03,
+        "v": 0.25,
+        "m_h_squared": 0.00375
+      },
+      {
+        "lambda": 0.04,
+        "v": 0.25,
+        "m_h_squared": 0.005
+      }
+    ],
+    "all_registered_masses_below_anchor": true,
+    "full_total_sources_equal_assumed": false,
+    "actual_error_or_device_certified": false
+  },
+  "source_sha256": {
+    "research_cognition_physics/archive_1308_/1311/proof.md": "de34c0911b53dc59101cd7525981bbfb978b6d6c4104581091742a855aa136f0",
+    "research_cognition_physics/archive_1308_/1311/check.py": "17bf8fedf3a6c6c40816b0e34eef6761949473ac72e46b93382f38619c7cbea0",
+    "research_cognition_physics/archive_1308_/1311/NEXT.md": "49f28cf8c1f002a20779c876f64fc3ea1cec30e9aaa391b533e811e17d8d02d6",
+    "research_cognition_physics/archive_1308_/research_note_1311.md": "8423884c24e563c23249a0e038e62db726ee4d55f2a9e436593bfda426d9e3c3",
+    "research_cognition_physics/archive_1308_/_admission/round1311_admission.md": "c3b229c09a80705ef3a4a65c2380a213872fb40a4b8e416077e0655eeb28b9bd",
+    "research_cognition_physics/archive_1308_/1308/proof.md": "f06177764b33db86ee7dd32122712198ee044a45b6675dcd24ef23c87f66c733",
+    "research_cognition_physics/archive_1308_/1309/proof.md": "801eabd9c874cd1da41ea81885c6242abd4a6717a07f458715ed75f063641bf4",
+    "research_cognition_physics/archive_1308_/1310/proof.md": "9dcb14669e1824aec0dff7964dc1b3d1e5b1e94a5e6cf12e5c0a5bf10454f98f",
+    "research_cognition_physics/archive_1308_/1310/check.py": "71076c2ccd9eb76735cf89f135bbbf95f025c998554888c33559b66bff6615ea",
+    "research_cognition_physics/archive_1308_/1310/results.json": "19a6ed75971df2b54331664ec3ae7fdf59a86f071baf490d304de02c20647773",
+    "research_cognition_physics/archive_1308_/1310/acceptance.json": "44bb2d2de6c41b5f8e76b250db58ffd91d47ad62e91ea55b22a26209e0b7ff65",
+    "research_cognition_physics/archive_1290_1307/1303/proof.md": "95bf8e4747945721c329f2600802923143e735a8f05cbf44d6f785c098a0cd30",
+    "research_cognition_physics/archive_1290_1307/1307/proof.md": "7a1a1df404192770bc82595cde567b5e0ff8b62034cc5f083079e8e61642b44f"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "round": 1312,
+  "status": "ACCEPTED_CONDITIONAL_SCOPE",
+  "date": "2026-10-18",
+  "new_axioms": 0,
+  "stage_complete": false,
+  "executed_checks": [
+    {
+      "script": "check.py",
+      "exit_code": 0,
+      "output": "{\"status\": \"PASS_CONDITIONAL_ACTIVITY_GROUP_SELECTION\", \"stabilizer_cases\": 30, \"smooth_mass_cases\": 24, \"common_branches\": [3, 4, 5], \"new_axioms\": 0, \"mode\": \"read-only\"}"
+    },
+    {
+      "script": "independent_check.py",
+      "exit_code": 0,
+      "output": "{\"status\": \"PASS_INDEPENDENT_MASS_STABILIZER_CHECKS\", \"cases\": 10}"
+    }
+  ],
+  "main_result": "single-reference full Dirac mass selects faithful SU(2) activity in the declared class",
+  "sha256": {
+    "research_cognition_physics/archive_1308_/1312/proof.md": "4c983437ce2c7f92c4792401e379de9d625ca4db0920c6228967fe9a83029ad2",
+    "research_cognition_physics/archive_1308_/1312/check.py": "feaa11849425a01ad3255c8a6569015428ac358c5a33c6aa8763f27037408d28",
+    "research_cognition_physics/archive_1308_/1312/results.json": "bac9e15f9cdf97f357a853271f9b382272759d3c3a5a319c5943af64a4b0412a",
+    "research_cognition_physics/archive_1308_/1312/independent_check.py": "f05d35b1e2f119cf84028cd3b76db7a58f19bf3cfba942d223b37d78ed9d6a26",
+    "research_cognition_physics/archive_1308_/1312/independent_results.json": "14fb7340f53095364e9a857d8322d82a6be2b2ecf83746d128433feae559ddd6",
+    "research_cognition_physics/archive_1308_/1312/NEXT.md": "7101d421ec365f522018f03cb88692135c5223df8c62ceca7e371f0c4d268403",
+    "research_cognition_physics/archive_1308_/1312/independent_review.md": "dc0b2fc7d7521e026109fa91acb9f2005a03affa9150aa6be1047ca878bae4a3",
+    "research_cognition_physics/archive_1308_/1312/independent_scope_review.md": "90ef75706db62d7a96168b74164089523478852fc70a35d9987707e5f74eb059",
+    "research_cognition_physics/archive_1308_/research_note_1312.md": "1bec7e7d75ee4eb12a97d15724bfd86a1875e49665373ccd02bfc553db7a2710",
+    "research_cognition_physics/archive_1308_/_admission/round1312_admission.md": "fabc6a1b5e781b5e6cb28e9f967da931cbd23126cb108e0607aa0dfd8032ae40"
+  },
+  "depends_on": {
+    "1308": "382e63db6cb0d120cab35699fb93868416e3d8c8674407131540222bcecdb132",
+    "1309": "96febf58559fb4ab781de255c1dfea1298eb6304eda0fb55c7c47028afda0c83",
+    "1310": "44bb2d2de6c41b5f8e76b250db58ffd91d47ad62e91ea55b22a26209e0b7ff65",
+    "1311": "3a1d4e5de7b7ac31948134961d9943bf89b949bf36c03280282e03ed83f0037d"
+  },
+  "scope_limits": [
+    "declared roles and finite effective class only",
+    "no new axioms and no unique empirical Standard Model claim",
+    "actual complete instruments and higher-order error certificates not added"
+  ]
+}

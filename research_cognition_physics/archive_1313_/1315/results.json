@@ -1,0 +1,159 @@
+{
+  "acceptance": "requires_independent_review_and_main_acceptance",
+  "author_dependencies_sha256": {
+    "../../archive_1290_1307/1303/proof.md": "95bf8e4747945721c329f2600802923143e735a8f05cbf44d6f785c098a0cd30",
+    "../../archive_1308_1312/1311/proof.md": "de34c0911b53dc59101cd7525981bbfb978b6d6c4104581091742a855aa136f0",
+    "../1314/proof.md": "c7fd3e23ecdbbcf16d36ca7918d8fdaf6cb98b75545dd11817a95220610e1c60",
+    "../_admission/round1315_admission.md": "62598bc7ecf8d3a7eb5a9a4a79cf2176edc42c423d3a871d15f30bc8e333ca6d",
+    "check.py": "c4b627fcac6f19b16db4e0a347feefc1935e837dc01e38b331771918a1ead3ed",
+    "proof.md": "66fde20cda665fc22add74146418daed7eb2ec2a34483db57e6e2cb654104698"
+  },
+  "checks": {
+    "common_symmetry_and_dimension": {
+      "bound_scope": "Only nonzero diagonal deltaB=deltaL in original local polynomial class",
+      "coefficients_are_flavor_scalars_not_generated": true,
+      "rows": [
+        {
+          "delta_B": 3,
+          "delta_L": 3,
+          "dimension": 18,
+          "full_flavor_embedding_determinant_one": true,
+          "n": 3,
+          "old_hypercharge_family_neutral": true,
+          "r_phase": 1
+        },
+        {
+          "delta_B": 4,
+          "delta_L": 4,
+          "dimension": 24,
+          "full_flavor_embedding_determinant_one": true,
+          "n": 4,
+          "old_hypercharge_family_neutral": true,
+          "r_phase": 1
+        },
+        {
+          "delta_B": 5,
+          "delta_L": 5,
+          "dimension": 30,
+          "full_flavor_embedding_determinant_one": true,
+          "n": 5,
+          "old_hypercharge_family_neutral": true,
+          "r_phase": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    "full_grassmann_small_case": {
+      "full_polynomial_nonzero_terms": 36,
+      "species_antisymmetric": true,
+      "status": "PASS",
+      "symmetric_internal_form": true,
+      "target_coefficient": 2
+    },
+    "pfaffian_covariance_and_exact_nonzero": {
+      "even_ring_covariance_exact": true,
+      "finite_coefficients": [
+        {
+          "n": 1,
+          "target_coefficient": 2
+        },
+        {
+          "n": 2,
+          "target_coefficient": 24
+        },
+        {
+          "n": 3,
+          "target_coefficient": 720
+        },
+        {
+          "n": 4,
+          "target_coefficient": 40320
+        },
+        {
+          "n": 5,
+          "target_coefficient": 3628800
+        },
+        {
+          "n": 6,
+          "target_coefficient": 479001600
+        },
+        {
+          "n": 7,
+          "target_coefficient": 87178291200
+        },
+        {
+          "n": 8,
+          "target_coefficient": 20922789888000
+        }
+      ],
+      "general_n": "Analytic Pfaffian and ordered Grassmann proof, not finite induction",
+      "status": "PASS"
+    },
+    "same_parent_positive_mass_and_phase_data": {
+      "event_rate_claimed": false,
+      "exact_interacting_P_instrument_claimed": false,
+      "mu": 0.000244140625,
+      "neutrinos_not_used_as_contact_external_legs": true,
+      "rows": [
+        {
+          "all_left_weyl_dictionary_conjugated": true,
+          "energy_momentum_conserved": true,
+          "full_dirac_equations_error_below": 1e-12,
+          "full_quadratic_phase_certificate": "Inherited analytic task plus sufficiently small extension; not recertified here",
+          "g2_one_loop_b": "-19/6",
+          "incoming_legs": 6,
+          "n": 3,
+          "outgoing_legs": 6,
+          "pair_energy": 1.0,
+          "phase_J_nonzero": true,
+          "positive_mass_contact_rounded": 719.998439,
+          "total_cm_energy": 3.0
+        },
+        {
+          "all_left_weyl_dictionary_conjugated": true,
+          "energy_momentum_conserved": true,
+          "full_dirac_equations_error_below": 1e-12,
+          "full_quadratic_phase_certificate": "Inherited analytic task plus sufficiently small extension; not recertified here",
+          "g2_one_loop_b": "-11/6",
+          "incoming_legs": 8,
+          "n": 4,
+          "outgoing_legs": 8,
+          "pair_energy": 1.0,
+          "phase_J_nonzero": true,
+          "positive_mass_contact_rounded": 40319.80413,
+          "total_cm_energy": 4.0
+        },
+        {
+          "all_left_weyl_dictionary_conjugated": true,
+          "energy_momentum_conserved": true,
+          "full_dirac_equations_error_below": 1e-12,
+          "full_quadratic_phase_certificate": "Inherited analytic task plus sufficiently small extension; not recertified here",
+          "g2_one_loop_b": "-1/2",
+          "incoming_legs": 10,
+          "n": 5,
+          "outgoing_legs": 10,
+          "pair_energy": 1.0,
+          "phase_J_nonzero": true,
+          "positive_mass_contact_rounded": 3628766.448,
+          "total_cm_energy": 5.0
+        }
+      ],
+      "status": "PASS",
+      "v": 0.25
+    },
+    "scope_boundaries": {
+      "no_minimum_generation_selection": true,
+      "no_topological_rate_inference": true,
+      "no_weak_instrument_certificate_transport": true,
+      "nonzero_kappa_is_input": true,
+      "status": "PASS",
+      "unit_E_still_forbidden": true,
+      "zero_kappa_obeys_M_Y": true
+    }
+  },
+  "new_axioms": 0,
+  "round": 1315,
+  "schema": "round1315_author_results_v1",
+  "status": "PASS",
+  "theorem": "Pfaffian provides M_Y-compatible diagonal batch at sharp dimension 6n; original E remains forbidden"
+}

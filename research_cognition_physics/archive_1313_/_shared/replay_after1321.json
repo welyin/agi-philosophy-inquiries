@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "date": "2026-10-19",
+  "round": 1321,
+  "scope": "Main-thread read-only replay of both independently implemented scripts; not full physical or stage acceptance",
+  "checks": [
+    {
+      "script": "research_cognition_physics/archive_1313_/1321/check.py",
+      "script_sha256": "126b4af829a875294cfb4b3cfc5b985ba9696513443c8cd831ba393d0252e3af",
+      "exit_code": 0,
+      "receipt_chunk_id": "d4d0e2",
+      "output": {
+        "round": 1321,
+        "mode": "read-only",
+        "check_count": 176,
+        "maximum_absolute_residual": 1.2740031252178596e-11,
+        "max_return_error_bound": 0.0011027723168139652,
+        "pass": true
+      },
+      "mode": "read-only --check through run_research_interaction_generation_active.py"
+    },
+    {
+      "script": "research_cognition_physics/archive_1313_/1321/independent_check.py",
+      "script_sha256": "c8bf272e771ea42ace22960bceaf854dfaf914af5b436c6a0673d81a1c05c232",
+      "exit_code": 0,
+      "receipt_chunk_id": "40b3d3",
+      "output": {
+        "status": "PASS_WITH_SCOPE",
+        "assertions": 310,
+        "categories": 43,
+        "max_normalized_error": 4.680159038095155e-12
+      },
+      "mode": "read-only --check through run_research_interaction_generation_active.py"
+    }
+  ]
+}

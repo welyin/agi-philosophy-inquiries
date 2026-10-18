@@ -1,0 +1,109 @@
+{
+  "schema": "conditional_selection_stage_acceptance_v1",
+  "date": "2026-10-18",
+  "status": "COMPLETE_CONDITIONAL_SCOPE",
+  "new_axioms": 0,
+  "scientific_rounds": [
+    1308,
+    1309,
+    1310,
+    1311,
+    1312
+  ],
+  "accepted_artifact_bindings": 48,
+  "completion_criteria": {
+    "declared_candidates_and_inputs": true,
+    "G_open_activity_class": true,
+    "N_integer_domain_and_degeneracy": true,
+    "P_true_kernel_domain_and_remaining_family": true,
+    "J_same_parent_effective_nonempty": true,
+    "new_cross_line_connection": true,
+    "paper_and_independent_review": true
+  },
+  "execution_receipts": [
+    {
+      "round": 1308,
+      "script": "check.py",
+      "exit_code": 0,
+      "output": "{\"status\": \"PASS_CONDITIONAL_LEADING_ORDER\", \"selected_Nc_ng\": [[3, 3], [3, 4], [3, 5]], \"exact_weak_trace_checks\": 232, \"exterior_coefficients\": [4, 48, 1152], \"source_bindings\": 8}"
+    },
+    {
+      "round": 1308,
+      "script": "independent_check.py",
+      "exit_code": 0,
+      "output": "{\"status\": \"PASS_SCOPED_CONDITIONAL_CHAIN\", \"survivors\": [[3, 3], [3, 4], [3, 5]], \"on_shell_checks\": 3, \"source_bindings\": 5}"
+    },
+    {
+      "round": 1309,
+      "script": "check.py",
+      "exit_code": 0,
+      "output": "{\"round\": 1309, \"status\": \"PASS\", \"cases\": [[3, 3], [3, 4], [3, 5]], \"critical_B\": \"5/6\", \"mode\": \"read-only\"}"
+    },
+    {
+      "round": 1309,
+      "script": "independent_check.py",
+      "exit_code": 0,
+      "output": "{\"status\": \"PASS_WITH_DECLARED_SCOPE\", \"control_sequences\": 720, \"mode\": \"read-only\"}"
+    },
+    {
+      "round": 1310,
+      "script": "check.py",
+      "exit_code": 0,
+      "output": "{\"status\": \"PASS_CONDITIONAL_FINITE_BORN_TASK\", \"massive_spinor_cases\": 27, \"positive_bin\": true, \"g_task\": 0.2, \"bindings\": 6}"
+    },
+    {
+      "round": 1310,
+      "script": "independent_check.py",
+      "exit_code": 0,
+      "output": "{\"status\": \"PASS_WITH_SCOPE\", \"transverse_samples\": 15, \"bound_sources\": 9, \"write_new\": false, \"K_integral\": 1.5716399407609438e-08, \"g_task\": 0.44999999999999996}"
+    },
+    {
+      "round": 1311,
+      "script": "check.py",
+      "exit_code": 0,
+      "output": "{\"status\": \"PASS_CONDITIONAL_DOMAIN_AND_BRANCH_DEGENERACY\", \"same_three_four_five_domain\": true, \"strict_rectangle_P_lower\": 0.6766905683030267, \"local_integer_candidates\": 8882, \"bindings\": 13}"
+    },
+    {
+      "round": 1311,
+      "script": "independent_check.py",
+      "exit_code": 0,
+      "output": "{\"status\": \"PASS_WITH_SCOPE\", \"bindings\": 11, \"flow_checks\": 5625, \"sigma0\": 1.7149364454264435e-26, \"write_new\": false}"
+    },
+    {
+      "round": 1312,
+      "script": "check.py",
+      "exit_code": 0,
+      "output": "{\"status\": \"PASS_CONDITIONAL_ACTIVITY_GROUP_SELECTION\", \"stabilizer_cases\": 30, \"smooth_mass_cases\": 24, \"common_branches\": [3, 4, 5], \"new_axioms\": 0, \"mode\": \"read-only\"}"
+    },
+    {
+      "round": 1312,
+      "script": "independent_check.py",
+      "exit_code": 0,
+      "output": "{\"status\": \"PASS_INDEPENDENT_MASS_STABILIZER_CHECKS\", \"cases\": 10}"
+    }
+  ],
+  "validation": {
+    "markdown_files": 32,
+    "local_links": 199,
+    "python_ast_files": 16,
+    "formula_delimiters": true
+  },
+  "scope_limits": [
+    "declared single-reference chiral mass and color/charge role classes",
+    "Born task, one-loop all-active finite window, declared error contracts",
+    "no unique generation number, full species table, global form or empirical numbers",
+    "no complete instrument or unlimited-energy construction claimed"
+  ],
+  "sha256": {
+    "research_cognition_physics/14_单参考质量与有限交换任务下的规范结构选择_阶段论文.md": "d033fe6edc0aa3b67a332258753def60344c24f547739e7e4487222df5fbb595",
+    "research_cognition_physics/archive_1308_/_shared/joint_selection_synthesis.md": "f20daace5cd62913f3d8c90d9dea1efc91bfbc9487fdb6f745ae9afd311d1f6a",
+    "research_cognition_physics/archive_1308_/_shared/goal.md": "6af69993753cf055c84cdad712d047ccfcd1ac225f147f001563e0acfdfb5155",
+    "research_cognition_physics/archive_1308_/_shared/stage_review.md": "441ab14439b1abdbece9759380d8a93cbf4bd75c032fc52a47cbc62c8dabfe83",
+    "research_cognition_physics/archive_1308_/1308/acceptance.json": "382e63db6cb0d120cab35699fb93868416e3d8c8674407131540222bcecdb132",
+    "research_cognition_physics/archive_1308_/1309/acceptance.json": "96febf58559fb4ab781de255c1dfea1298eb6304eda0fb55c7c47028afda0c83",
+    "research_cognition_physics/archive_1308_/1310/acceptance.json": "44bb2d2de6c41b5f8e76b250db58ffd91d47ad62e91ea55b22a26209e0b7ff65",
+    "research_cognition_physics/archive_1308_/1311/acceptance.json": "3a1d4e5de7b7ac31948134961d9943bf89b949bf36c03280282e03ed83f0037d",
+    "research_cognition_physics/archive_1308_/1312/acceptance.json": "7519d3cc640bd1dbb70daf746936d60293770e76545a72c5f79b77ce754957a7"
+  },
+  "unchanged_closure_manifest_sha256": "442d4ab70a385ff58171f98748449c42044787b56490d00943a8b64c1cf84860"
+}

@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "script": "research_cognition_physics/archive_1313_/1322/check.py",
+      "script_sha256": "21f183b9b8ffb17d6f0e177369b05e0f8d019456948b026b9ba9b1bb0279474d",
+      "exit_code": 0,
+      "receipt_chunk_id": "c39ce0",
+      "output": {
+        "round": 1322,
+        "mode": "read-only",
+        "checks": 155,
+        "max_error": 2.4943601426292515e-10,
+        "transported_max_return_bound": 0.0011027723168139652,
+        "pass": true
+      },
+      "mode": "read-only --check through run_research_interaction_generation_active.py"
+    },
+    {
+      "script": "research_cognition_physics/archive_1313_/1322/independent_check.py",
+      "script_sha256": "1fca16058fd0a7467e19d56fff9f84cc223f09450920f9ed5dcdf8ac6a1ffa46",
+      "exit_code": 0,
+      "receipt_chunk_id": "e823ca",
+      "output": {
+        "round": 1322,
+        "mode": "read-only",
+        "count": 216,
+        "max_residual": 9.370189365010648e-12,
+        "pass": true
+      },
+      "mode": "read-only --check through run_research_interaction_generation_active.py"
+    }
+  ]
+}

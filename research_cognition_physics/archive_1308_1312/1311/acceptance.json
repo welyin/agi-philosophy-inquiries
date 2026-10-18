@@ -1,0 +1,41 @@
+{
+  "round": 1311,
+  "status": "ACCEPTED_CONDITIONAL_SCOPE",
+  "date": "2026-10-18",
+  "new_axioms": 0,
+  "stage_complete": false,
+  "executed_checks": [
+    {
+      "script": "check.py",
+      "exit_code": 0,
+      "output": "{\"status\": \"PASS_CONDITIONAL_DOMAIN_AND_BRANCH_DEGENERACY\", \"same_three_four_five_domain\": true, \"strict_rectangle_P_lower\": 0.6766905683030267, \"local_integer_candidates\": 8882, \"bindings\": 13}"
+    },
+    {
+      "script": "independent_check.py",
+      "exit_code": 0,
+      "output": "{\"status\": \"PASS_WITH_SCOPE\", \"bindings\": 11, \"flow_checks\": 5625, \"sigma0\": 1.7149364454264435e-26, \"write_new\": false}"
+    }
+  ],
+  "main_result": "fixed true-task parameter domain and exact three/four/five-generation degeneracy",
+  "sha256": {
+    "research_cognition_physics/archive_1308_/1311/proof.md": "de34c0911b53dc59101cd7525981bbfb978b6d6c4104581091742a855aa136f0",
+    "research_cognition_physics/archive_1308_/1311/check.py": "17bf8fedf3a6c6c40816b0e34eef6761949473ac72e46b93382f38619c7cbea0",
+    "research_cognition_physics/archive_1308_/1311/results.json": "992287cd98a5a10e05fe9f0b5e5010d8dee9b11d07cd7eef5dc1f4e1d8900c5e",
+    "research_cognition_physics/archive_1308_/1311/independent_check.py": "00fd9b4e31640715d9b8547fd1354747dcf6e493a9042fdfbea18bacbb16221e",
+    "research_cognition_physics/archive_1308_/1311/independent_results.json": "0a1998cc3917c062783cf53cd1456081ead8c0c9fa31f5400a27c3729955d237",
+    "research_cognition_physics/archive_1308_/1311/NEXT.md": "49f28cf8c1f002a20779c876f64fc3ea1cec30e9aaa391b533e811e17d8d02d6",
+    "research_cognition_physics/archive_1308_/1311/independent_review.md": "5c954f9118f086ecea9b4cc26b2d7f695d2b79c9ab3eb8f845f825e8c42b825e",
+    "research_cognition_physics/archive_1308_/research_note_1311.md": "8423884c24e563c23249a0e038e62db726ee4d55f2a9e436593bfda426d9e3c3",
+    "research_cognition_physics/archive_1308_/_admission/round1311_admission.md": "c3b229c09a80705ef3a4a65c2380a213872fb40a4b8e416077e0655eeb28b9bd"
+  },
+  "depends_on": {
+    "1308": "382e63db6cb0d120cab35699fb93868416e3d8c8674407131540222bcecdb132",
+    "1309": "96febf58559fb4ab781de255c1dfea1298eb6304eda0fb55c7c47028afda0c83",
+    "1310": "44bb2d2de6c41b5f8e76b250db58ffd91d47ad62e91ea55b22a26209e0b7ff65"
+  },
+  "scope_limits": [
+    "declared roles and finite effective class only",
+    "no new axioms and no unique empirical Standard Model claim",
+    "actual complete instruments and higher-order error certificates not added"
+  ]
+}
