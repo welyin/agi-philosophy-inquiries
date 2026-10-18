@@ -1,0 +1,268 @@
+{
+  "candidate_check_groups": 1,
+  "diagnostic": {
+    "role": "Schwartz diagnostic only; not compact support or certified quadrature",
+    "rows": [
+      {
+        "fine_to_bound_ratio": 5.855796845329832e-06,
+        "gaussian_variance_coarse": 8.695278626913642e-08,
+        "gaussian_variance_fine": 8.695278618922499e-08,
+        "mass": 0.5,
+        "nodes_each_axis": [
+          32,
+          48
+        ],
+        "r6_analytic_bound_B6_squared_le_720": 0.014849010046954133,
+        "radial_cutoff": 8.0,
+        "relative_difference": 9.190209344823491e-10
+      },
+      {
+        "fine_to_bound_ratio": 2.4630765147807585e-06,
+        "gaussian_variance_coarse": 2.2858904946366833e-09,
+        "gaussian_variance_fine": 2.2858904946497656e-09,
+        "mass": 1.0,
+        "nodes_each_axis": [
+          32,
+          48
+        ],
+        "r6_analytic_bound_B6_squared_le_720": 0.0009280631279346333,
+        "radial_cutoff": 8.0,
+        "relative_difference": 5.723054104495421e-12
+      },
+      {
+        "fine_to_bound_ratio": 8.785535912931778e-11,
+        "gaussian_variance_coarse": 5.095957462442831e-15,
+        "gaussian_variance_fine": 5.09595746246095e-15,
+        "mass": 2.0,
+        "nodes_each_axis": [
+          32,
+          48
+        ],
+        "r6_analytic_bound_B6_squared_le_720": 5.800394549591458e-05,
+        "radial_cutoff": 8.0,
+        "relative_difference": 3.5554765526567698e-12
+      },
+      {
+        "fine_to_bound_ratio": 5.716525848223864e-31,
+        "gaussian_variance_coarse": 2.072381585761177e-36,
+        "gaussian_variance_fine": 2.072381585789774e-36,
+        "mass": 4.0,
+        "nodes_each_axis": [
+          32,
+          48
+        ],
+        "r6_analytic_bound_B6_squared_le_720": 3.6252465934946613e-06,
+        "radial_cutoff": 8.0,
+        "relative_difference": 1.3799218354245887e-11
+      }
+    ],
+    "spatial_L": 1.0,
+    "tau": 1.0,
+    "tensor_component": "T12"
+  },
+  "exact": {
+    "angular_tensor_invariant_checks": [
+      {
+        "cosine": "-1/1",
+        "factor": "1/15"
+      },
+      {
+        "cosine": "-1/2",
+        "factor": "13/240"
+      },
+      {
+        "cosine": "0/1",
+        "factor": "1/20"
+      },
+      {
+        "cosine": "1/2",
+        "factor": "13/240"
+      },
+      {
+        "cosine": "1/1",
+        "factor": "1/15"
+      }
+    ],
+    "beta_4_4": "1/140",
+    "compact_example": {
+      "convolution_count": 6,
+      "mass": 1048576,
+      "mollifier_support_radius": "1/8",
+      "signed_measure_moments_0_through_6": [
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "720/1"
+      ],
+      "sixth_derivative_L1_upper": "16777216/1",
+      "strict_margin": "10807918103/16911433728000000000000000",
+      "time_support": [
+        "-1/2",
+        "1/2"
+      ],
+      "uniform_kernel_full_width": "1/8",
+      "variance_target": "1/1000000000000000",
+      "variance_upper_using_pi_gt_3": "1/2770769301995520"
+    },
+    "mass_power_family": [
+      {
+        "coefficient_without_pi4": "9/2240",
+        "mass_power": -2,
+        "r": 5
+      },
+      {
+        "coefficient_without_pi4": "9/4480",
+        "mass_power": -4,
+        "r": 6
+      },
+      {
+        "coefficient_without_pi4": "9/8960",
+        "mass_power": -8,
+        "r": 8
+      },
+      {
+        "coefficient_without_pi4": "3/4480",
+        "mass_power": -12,
+        "r": 10
+      }
+    ],
+    "radial_coefficient_without_pi4": "9/1120",
+    "sample_bound_is_not_the_continuum_proof": true,
+    "sample_max_vertex_to_energy_product": "1/1",
+    "ward_exact_cases": [
+      {
+        "mass": "3/1",
+        "opposite_t00": "0/1",
+        "p": [
+          "4/1",
+          "0/1",
+          "0/1"
+        ],
+        "q": [
+          "0/1",
+          "4/1",
+          "0/1"
+        ],
+        "ward": [
+          "0/1",
+          "0/1",
+          "0/1",
+          "0/1"
+        ]
+      },
+      {
+        "mass": "1/1",
+        "opposite_t00": "0/1",
+        "p": [
+          "3/4",
+          "0/1",
+          "0/1"
+        ],
+        "q": [
+          "0/1",
+          "0/1",
+          "4/3"
+        ],
+        "ward": [
+          "0/1",
+          "0/1",
+          "0/1",
+          "0/1"
+        ]
+      },
+      {
+        "mass": "2/1",
+        "opposite_t00": "0/1",
+        "p": [
+          "0/1",
+          "0/1",
+          "3/2"
+        ],
+        "q": [
+          "0/1",
+          "0/1",
+          "0/1"
+        ],
+        "ward": [
+          "0/1",
+          "0/1",
+          "0/1",
+          "0/1"
+        ]
+      },
+      {
+        "mass": "1/1",
+        "opposite_t00": "0/1",
+        "p": [
+          "0/1",
+          "0/1",
+          "0/1"
+        ],
+        "q": [
+          "0/1",
+          "0/1",
+          "0/1"
+        ],
+        "ward": [
+          "0/1",
+          "0/1",
+          "0/1",
+          "0/1"
+        ]
+      },
+      {
+        "mass": "5/1",
+        "opposite_t00": "0/1",
+        "p": [
+          "12/1",
+          "0/1",
+          "0/1"
+        ],
+        "q": [
+          "0/1",
+          "0/1",
+          "-12/1"
+        ],
+        "ward": [
+          "0/1",
+          "0/1",
+          "0/1",
+          "0/1"
+        ]
+      }
+    ]
+  },
+  "formal_rounds_assigned_by_this_file": 0,
+  "primary_source": {
+    "noise_normalization_not_imported": true,
+    "read_scope": "II (7),(12)-(16); III.1 (21)-(29); (79)",
+    "url": "https://arxiv.org/abs/gr-qc/0001098"
+  },
+  "schema": "heavy-source-fixed-smearing-v1",
+  "scope": {
+    "Gaussian_is_a_strict_finite_window": false,
+    "actual_instrument_constructed": false,
+    "bare_counterterms_fixed_across_masses": false,
+    "curved_background_mean_source_or_geometry_proved": false,
+    "fixed_mass_independent_finite_spacetime_test_menu": true,
+    "joint_classical_distribution_for_noncommuting_tests_claimed": false,
+    "mass_family_normal_ordered_zero_mean_is_declared_renormalized_rule": true,
+    "minimal_free_scalar_Minkowski_vacuum": true,
+    "nonzero_portal_transport_proved": false
+  },
+  "source_bindings": {
+    "check.py": "a2da152f64795b0024a1153865eab327a0cf604ca9bbd251a574316a44effb12",
+    "proof.md": "d1e1f9cb024b45addf8dea6ceafde269150314d97e98eaf9c02b0d9d1dafeaf9",
+    "research_cognition_physics/archive_1234_1280/_admission/source_fluctuation_scope_after1272/README.md": "0cb9923ec4a1eb3384bf5975badf85893617f58ee916cccda002a741fa280021",
+    "research_cognition_physics/archive_629_652/research_note_630.md": "7c82c7d3b176fb4f7dac58950154e3806293a4425442e32bfb60e4540f2d8285",
+    "research_cognition_physics/archive_629_652/research_note_631.md": "f5ce209b28e0929ad9d792b543eae985e79f04fdcc4c6ff952289ca09934636d",
+    "research_cognition_physics/archive_894_922/research_note_899.md": "8ab67b501467c2fc25cdc141c760f6195c875053acebf66d9c07e02347252302",
+    "research_cognition_physics/archive_935_955/research_note_950.md": "599d1349637bd308be0ccc231542ded7e8f1c52dd58f07c1ad747271271242b3",
+    "research_cognition_physics/archive_956_989/research_note_984.md": "2aab62c79b0811d290e64d740ea511dcae9d5e065f2f489df5f83879054c2338",
+    "selection.md": "3c4f7b48b86366c283fa9bda5f048314c1b0a830d297cb4085c920a8687fb594"
+  },
+  "status": "PASS_CANDIDATE_SOURCE_BOUND_ONLY"
+}

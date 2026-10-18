@@ -1,0 +1,155 @@
+{
+  "verdict": "PASS_INDEPENDENT_SCOPED",
+  "group": "1299-exterior-spectral-independent",
+  "charge_checks": {
+    "contents_checked": 2173,
+    "with_r_BLV_contents": [
+      {
+        "k": 0,
+        "dimension": "6",
+        "BL": "4",
+        "fields": [
+          "N",
+          "N",
+          "N",
+          "N"
+        ]
+      },
+      {
+        "k": 0,
+        "dimension": "6",
+        "BL": "-4",
+        "fields": [
+          "Nbar",
+          "Nbar",
+          "Nbar",
+          "Nbar"
+        ]
+      }
+    ],
+    "without_r_minimum_dimension": 3,
+    "with_r_minimum_dimension": 6,
+    "nonzero_k_counterexamples": [],
+    "r_needed_for_k_selection": false,
+    "higher_dimension_witnesses": [
+      {
+        "k": -3,
+        "dimension": 114,
+        "BL": 4
+      },
+      {
+        "k": -2,
+        "dimension": 78,
+        "BL": 4
+      },
+      {
+        "k": -1,
+        "dimension": 42,
+        "BL": 4
+      },
+      {
+        "k": 1,
+        "dimension": 42,
+        "BL": 4
+      },
+      {
+        "k": 2,
+        "dimension": 78,
+        "BL": 4
+      },
+      {
+        "k": 3,
+        "dimension": 114,
+        "BL": 4
+      }
+    ],
+    "scope": "Charge-content overapproximation; infinite quantifiers require the analytic proof."
+  },
+  "exterior_Ward": {
+    "external_factor_before_quarter": 4,
+    "one_flavor_fourth_power_zero": true,
+    "two_flavor_nonzero": true,
+    "Grassmann_Schouten_identity": true,
+    "Ward": "dQ/dt=-4i(g O4-conjugate(g) O4dagger)",
+    "max_residual": 2.4492935982947064e-16
+  },
+  "massive_LSZ": {
+    "method": "4x4 energy spectral projectors and external Grassmann coefficient",
+    "norm": "u_dagger_u=v_dagger_v=2E",
+    "v_equation": "h(-p)v=-Ev",
+    "outgoing_direction": [
+      "3/5",
+      "0",
+      "4/5"
+    ],
+    "masses": [
+      3,
+      4,
+      5
+    ],
+    "E_window": [
+      "5",
+      "21/4"
+    ],
+    "coefficient_lower_bound": 72,
+    "Lambda": 100,
+    "E5_abs_M": "9/1250",
+    "E5_dPhi2_per_dOmega_times_pi_squared": "3/160",
+    "identical_final_state_symmetry_factor": "1/2",
+    "rows": [
+      {
+        "E": "5",
+        "coefficient_real": 72.0,
+        "coefficient_imag": 0.0
+      },
+      {
+        "E": "41/8",
+        "coefficient_real": 77.29473665506413,
+        "coefficient_imag": 0.0
+      },
+      {
+        "E": "21/4",
+        "coefficient_real": 82.68386410517196,
+        "coefficient_imag": 0.0
+      }
+    ],
+    "max_residual": 2.842170943040401e-14
+  },
+  "scope": {
+    "all_k_proof_analytic": true,
+    "finite_scans_diagnostic_only": true,
+    "tree_level_EFT_only": true,
+    "actual_record_or_full_O_certified": false,
+    "M4_certified": false
+  },
+  "sources": {
+    "author_proof": {
+      "path": "archive_1290_/1299/proof.md",
+      "sha256": "b644ea3fd834f2efd081c57b5c4d695fe9907074e1c99eba0fef2a4c00821581"
+    },
+    "author_check": {
+      "path": "archive_1290_/1299/check.py",
+      "sha256": "b515fefc7a2c51957752c9ece620982a87a8af6758f6cf51cc9c3d4d1c7530a2"
+    },
+    "author_results": {
+      "path": "archive_1290_/1299/results.json",
+      "sha256": "5d49802f7575d0ee119e091e881e7545f3c7e709b4c8e07e9b6b88fefdaa405f"
+    },
+    "admission": {
+      "path": "archive_1290_/_shared/round1299_admission.md",
+      "sha256": "34f5f01d92179d091f693da034cd2c4f073be2368e3c3c82ca238f4d5620e59e"
+    },
+    "1035": {
+      "path": "archive_1009_1043/research_note_1035.md",
+      "sha256": "761f1927518a7e872df003cc0b3c91c5663f928a101f8b4712b7701c7db28379"
+    },
+    "1060": {
+      "path": "archive_1046_1062/1060/proof.md",
+      "sha256": "a973063186de08b100e72c8a49a824854b0132ffa9d173ed0300865dd2911805"
+    },
+    "independent_check": {
+      "path": "archive_1290_/1299/independent_check.py",
+      "sha256": "a4dd5cf2708dbf5c408ed6e57593495c42c628aba2d800a2662c93888e2c849d"
+    }
+  }
+}

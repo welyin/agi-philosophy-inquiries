@@ -1,0 +1,234 @@
+{
+  "schema": "1294-independent-v1",
+  "scientific_payload": {
+    "status": "PASS_WITH_SCOPE",
+    "group_count": 1,
+    "exact_certificates": {
+      "record_time_interval": [
+        {
+          "fraction": "1/1024",
+          "decimal": 0.0009765625
+        },
+        {
+          "fraction": "1/512",
+          "decimal": 0.001953125
+        }
+      ],
+      "record_relative_tail": {
+        "fraction": "40/1917",
+        "decimal": 0.020865936358894107
+      },
+      "record_amplitude_coefficient_lower": {
+        "fraction": "17/120",
+        "decimal": 0.14166666666666666
+      },
+      "record_probability_coefficient_lower": {
+        "fraction": "289/14400",
+        "decimal": 0.020069444444444445
+      },
+      "uniform_record_gap_strict_lower": {
+        "fraction": "1/57646075230342348800",
+        "decimal": 1.734723475976807e-20
+      },
+      "endpoint_record_gap_strict_lower": {
+        "fraction": "1/900719925474099200",
+        "decimal": 1.1102230246251566e-18
+      },
+      "thermal_beta": {
+        "fraction": "1/1024",
+        "decimal": 0.0009765625
+      },
+      "thermal_difference_tail_over_beta4": {
+        "fraction": "1024/7675",
+        "decimal": 0.1334201954397394
+      },
+      "thermal_trace_moments": {
+        "2": {
+          "q0": [
+            8,
+            4,
+            22,
+            31,
+            138
+          ],
+          "q1": [
+            8,
+            4,
+            22,
+            31,
+            106
+          ],
+          "leading_trace_difference_coefficient": {
+            "fraction": "4/3",
+            "decimal": 1.3333333333333333
+          }
+        },
+        "3": {
+          "q0": [
+            8,
+            4,
+            22,
+            31,
+            138
+          ],
+          "q1": [
+            8,
+            4,
+            22,
+            31,
+            114
+          ],
+          "leading_trace_difference_coefficient": {
+            "fraction": "1",
+            "decimal": 1.0
+          }
+        }
+      },
+      "thermal_partition_sum_upper": {
+        "2": {
+          "fraction": "4096/255",
+          "decimal": 16.062745098039215
+        },
+        "3": {
+          "fraction": "2048/85",
+          "decimal": 24.094117647058823
+        }
+      },
+      "thermal_sector_bias_common_strict_lower": {
+        "fraction": "1/59373627899904",
+        "decimal": 1.6842494477276448e-14
+      },
+      "dark_subspace_exact_relation": "h^2 e0=2 e0; e0,h e0 have record zero",
+      "hamiltonian_lower_bound": 1,
+      "hamiltonian_upper_bound": 8,
+      "h_norm_upper_bound": 4
+    },
+    "CAR": {
+      "positive_charge_car_modes": 4,
+      "full_positive_car_dimension": 16,
+      "fixed_one_particle_dimension": 4,
+      "exact_car_and_hopping_residual": 0.0
+    },
+    "finite_diagnostics": [
+      {
+        "group_order": 2,
+        "physical_dimension": 16,
+        "kinematic_fixed_charge_dimension": 128,
+        "max_algebraic_residual": 1.421134195e-14,
+        "H_spectrum_extrema": [
+          1.876371737,
+          7.123628263
+        ],
+        "third_order_record_coefficients_abs": [
+          [
+            0.0,
+            0.0,
+            2.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            9.860761315e-32,
+            0.0
+          ]
+        ],
+        "endpoint_record_probabilities_q0_q1": [
+          6.167891281e-18,
+          2.394955018e-50
+        ],
+        "Gibbs_sector_weights_diagnostic_only": [
+          0.5000000000000375,
+          0.4999999999999621
+        ],
+        "Gibbs_q0_bias_diagnostic_only": 3.752553823e-14,
+        "source_parameters": [
+          "m_c",
+          "m_d",
+          "g",
+          "a_p",
+          "r"
+        ],
+        "initial_energy": 4,
+        "initial_second_energy_moment": 18,
+        "dephasing_work_t_one_third": 7.751916807e-05,
+        "minus_interaction_mean": 7.751916807e-05,
+        "arbitrary_reference_certificate": "Kraus completeness as operator equality; Bell is a diagnostic",
+        "deletions": [
+          "local record coupling zero: no record",
+          "return hopping disabled on retained ring: q0 and q1 blocks equal"
+        ]
+      },
+      {
+        "group_order": 3,
+        "physical_dimension": 24,
+        "kinematic_fixed_charge_dimension": 648,
+        "max_algebraic_residual": 7.119291619e-15,
+        "H_spectrum_extrema": [
+          1.876371737,
+          7.123628263
+        ],
+        "third_order_record_coefficients_abs": [
+          [
+            0.0,
+            0.0,
+            2.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ]
+        ],
+        "endpoint_record_probabilities_q0_q1": [
+          6.167891281e-18,
+          1.54197282e-18
+        ],
+        "Gibbs_sector_weights_diagnostic_only": [
+          0.3333333333333586,
+          0.3333333333333208,
+          0.3333333333333208
+        ],
+        "Gibbs_q0_bias_diagnostic_only": 2.525757381e-14,
+        "source_parameters": [
+          "m_c",
+          "m_d",
+          "g",
+          "a_p",
+          "r"
+        ],
+        "initial_energy": 4,
+        "initial_second_energy_moment": 18,
+        "dephasing_work_t_one_third": 0.0001105092673,
+        "minus_interaction_mean": 0.0001105092673,
+        "arbitrary_reference_certificate": "Kraus completeness as operator equality; Bell is a diagnostic",
+        "deletions": [
+          "local record coupling zero: no record",
+          "return hopping disabled on retained ring: q0 and q1 blocks equal"
+        ]
+      }
+    ],
+    "scope": [
+      "fixed one-positive/one-negative charge sector; negative position fixed at zero",
+      "finite graph sources are parameter derivatives, not continuum Hilbert stress",
+      "local record formed autonomously; final ideal readout is separately licensed",
+      "full H Gibbs on 8N physical dimensions, not a uniform topological code reference",
+      "no claim of all FUCP controls, four-dimensional covariance, or HG completion"
+    ]
+  },
+  "files_sha256": {
+    "research_cognition_physics/archive_1290_/1294/proof.md": "eb35e2d96bf28c4635da7b71065f126e01658efa8a69e0a32fa49aa5cce22ba8",
+    "research_cognition_physics/archive_1290_/1294/check.py": "eb1add2489e251461784808297bcb7eb5684dc320af7743c5b3e41b34ec5883e",
+    "research_cognition_physics/archive_1290_/1294/results.json": "337dfebaedc3c610d314e13d973bdb9f3ed8fe584b2670c415553658b5098153",
+    "research_cognition_physics/archive_1290_/1294/independent_check.py": "4356b9a5122cf0d3aab20cae25e58eac9c54e0ed3e5344d81c671c07d527527a",
+    "research_cognition_physics/archive_1290_/_shared/round1294_admission.md": "e08d761c9827d276d82217946048bd7144648675ccc0c66f403a49492ec989d7"
+  }
+}

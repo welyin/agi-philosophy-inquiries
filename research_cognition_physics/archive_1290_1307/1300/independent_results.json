@@ -1,0 +1,60 @@
+{
+  "status": "PASS_INDEPENDENT_FINITE_DIAGNOSTICS",
+  "car": {
+    "scope": "independent four-mode CAR diagnostic; not continuum field numerics",
+    "reference_rank": 2,
+    "record_probabilities": [
+      0.5916635529505,
+      0.179443971008
+    ],
+    "exact_transport_gap": 0.4122195819425,
+    "source_derivative": 0.7195644242817,
+    "omitted_insertion_contact_error": 0.0642103465069,
+    "frozen_reference_error": 0.4752762275967,
+    "initial_receiver_partner_factorization": true,
+    "nonselective_partner_marginal_preserved": true,
+    "full_field_partner_correlations_not_declared_unchanged": true,
+    "maximum_residual_below_1e_minus_9": true
+  },
+  "joint_budget": {
+    "scope": "rational nonempty template; not actual spectral/source calibration data",
+    "kappa": "1/65536",
+    "strict_kappa_upper_bound": "27/57344",
+    "positive_remaining_margins": [
+      "941/65536",
+      "1963/65536",
+      "425/65536"
+    ],
+    "fixed_source_deletion": [
+      {
+        "kappa": "1/4096",
+        "einstein_residual": "1/4194304",
+        "thermal_residual_without_common_2pi": "1/1024",
+        "omitted_source_error": "1/4096"
+      },
+      {
+        "kappa": "1/65536",
+        "einstein_residual": "19/4294967296",
+        "thermal_residual_without_common_2pi": "19/65536",
+        "omitted_source_error": "1/4096"
+      },
+      {
+        "kappa": "1/1048576",
+        "einstein_residual": "259/1099511627776",
+        "thermal_residual_without_common_2pi": "259/1048576",
+        "omitted_source_error": "1/4096"
+      }
+    ],
+    "gaussian_union_failure_bound": "3/65536",
+    "finite_complete_ordinary_energy": "10",
+    "energy_table_not_used_as_stress_projection": true
+  },
+  "continuum_Hadamard_PDE_proved_by_code": false,
+  "actual_instrument_or_UV_qualification_proved_by_code": false,
+  "source_bindings": {
+    "../_shared/round1300_admission.md": "83bf5b9dbd9dd309eff64019a8e63ee4d5f08b1b8a2a75d9c72e8e6427581560",
+    "../1298/proof.md": "6727d5a9ba141b8867fa4676b56062d4b64e822afa26e969ad63f8ea0f15c110",
+    "../../archive_1219_1233/1232/proof.md": "268d5d445d31ce151cb7a03570d097c252b717888db2b560ce70af4c5b25a071"
+  },
+  "independent_check_sha256": "88ad1714924c6968f287227728d29f2dc81488df42364bd9ab5e221b022a5d55"
+}

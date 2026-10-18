@@ -1,0 +1,91 @@
+{
+  "bindings": {
+    "1298/proof.md": "6727d5a9ba141b8867fa4676b56062d4b64e822afa26e969ad63f8ea0f15c110",
+    "1300/acceptance.json": "e881faf0256732d3598379359cd3ff25e9c1d23150a7039283a1c299bf20a36f",
+    "1300/proof.md": "c5ebaa35664a900ad66ca3cbdadceed3ec329aa86ba2d10daa4ac74de0b4f773",
+    "1303/acceptance.json": "4f50a9a000ccad26357848f177f51908140b1acc50f3141f055aa7a4dc009e61",
+    "1303/proof.md": "95bf8e4747945721c329f2600802923143e735a8f05cbf44d6f785c098a0cd30",
+    "1305/NEXT.md": "1341128eac66f7e9056b1a31e9e321d7147c7a308fe533f413bbbbdb47cacabc",
+    "1305/check.py": "12f7addf928a5aec212fc0d987e79bb4ae6070e0ded4d4e06a8b640205d8bbb9",
+    "1305/proof.md": "740a91bad63a7d2f5f4e549cc4846212114d2dd8b5b2eb9a4a8ad89432849184",
+    "1305/results.json": "b2551473505d70a5848b67f808e2115e82f5d01d3425cf4839fcad53a86f9ef5",
+    "_shared/nondegenerate_joint_corollary_after1300.md": "5c457cee617caf103f1f2b4a483456f3f9f1b35fd8af3fd6105565e733c9eee5",
+    "_shared/round1305_admission.md": "5d2e696ea77565b0084995ccdd207645d485e35e77f7c092fc59a2f354b46d40",
+    "research_note_1305.md": "0f5eba051d43551410a81cc828ea031026a39f1095f0ab9b888027dbebd93289"
+  },
+  "cyclic": {
+    "baseline": "Synthetic input-independent row offsets only.",
+    "cyclic_value": -0.043301270189222,
+    "formula_value": -0.04330127018922197
+  },
+  "diagnostic_relative_difference": 9.769962616701378e-14,
+  "exact": {
+    "endpoint_cstar_decimal": 5.400837831251899e-47,
+    "endpoint_cstar_exact": "37/685078892498860742907977265335757665463718379520",
+    "expected_mu_cubed": "1/68719476736",
+    "mass_second_order_determinant": "1/68719476736",
+    "parameter_order": [
+      "Fix the three-mode s=0 source, H0, Lambda0 and thermal/macroscopic positive margins.",
+      "Choose positive s inside source/thermal continuity margins with C0(s) nonzero.",
+      "Choose positive kappa below the phase transport bound and all fixed geometric bounds.",
+      "Set a separate positive finite phase readout and sampling error budget."
+    ],
+    "scope": "Order and algebra checks; no numerical value is assigned to the PDE constants.",
+    "three_mode_cross_coefficient": "3/2",
+    "three_mode_ff_coefficient": "-1/2"
+  },
+  "finite_car": {
+    "dimension_field": 64,
+    "dimension_partner": 3,
+    "max_covariance_partner_trace_error": 3.330670914317473e-16,
+    "max_source_partner_error": 2.77574682944311e-16,
+    "scope": "Finite CAR diagnostic of the analytic three-mode source identity.",
+    "trace_flavor_delta": [
+      [
+        -0.5,
+        1.5
+      ],
+      [
+        1.5,
+        0.0
+      ]
+    ]
+  },
+  "independent_code_sha256": "f74b9a96ab1438315ebdc0d9f116cf4dedbecdffb9b28cb0d73f583aeb5c4828",
+  "limits": [
+    "Finite matrices do not prove the continuous null source or PDE estimates.",
+    "The common-window proof uses real analyticity and the inherited positive endpoint.",
+    "No all-state norm continuity of different-mass vacua is claimed.",
+    "Thermal/macroscopic and phase-record errors are separate.",
+    "No autonomous device, full CC parent, nonzero four-fermion or full SM is certified."
+  ],
+  "small_s_diagnostics": [
+    {
+      "A_prime_at_1": 7.1361759267551245e-06,
+      "A_second_at_1": 1.3799577380380256e-05,
+      "B_prime_at_1": -1.645492574848658e-10,
+      "B_second_at_1": -6.521578505498894e-10,
+      "C_s4_coefficient": 4.004534133771401e-26,
+      "W0": 6.178266868700017e-05,
+      "bessel_last_index": 12,
+      "method": "Radial Fourier-square moments; no nearly degenerate amplitude subtraction.",
+      "radial_nodes": 64,
+      "scope": "Numerical derivative diagnostic, not the nonzero/common-window proof.",
+      "weighted_wronskian": 2.3832108940598594e-15
+    },
+    {
+      "A_prime_at_1": 7.136175926754889e-06,
+      "A_second_at_1": 1.3799577380379799e-05,
+      "B_prime_at_1": -1.645492574848552e-10,
+      "B_second_at_1": -6.521578505498476e-10,
+      "C_s4_coefficient": 4.0045341337710093e-26,
+      "W0": 6.178266868699812e-05,
+      "bessel_last_index": 16,
+      "method": "Radial Fourier-square moments; no nearly degenerate amplitude subtraction.",
+      "radial_nodes": 96,
+      "scope": "Numerical derivative diagnostic, not the nonzero/common-window proof.",
+      "weighted_wronskian": 2.3832108940596263e-15
+    }
+  ],
+  "status": "PASS"
+}
