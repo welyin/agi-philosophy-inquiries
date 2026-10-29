@@ -1,0 +1,54 @@
+{
+  "schema": "interim_reclassification_verification_v1",
+  "status": "PASS",
+  "reclassification": {
+    "status": "PASS",
+    "schema": "interim_reclassification_v1",
+    "manifest_sha256": "48b04216b66e1166c6f3aec1f80e8f2fb0c2f02669c02ee56a58f81dbddf7c89",
+    "markdown_files": 10,
+    "local_links": 5478,
+    "frozen_scientific_files": 40,
+    "current_and_original_hashes_verified": true,
+    "withdrawn_paper_absent": true,
+    "original_markdown_recovered_in_memory": true,
+    "files_written": 0,
+    "scientific_claims_revalidated": false
+  },
+  "adapter_sha256": "39e44e6560d53cbe2a1ca15d2ab54a86d54dc67cdec8adde5324edbe190b908f",
+  "overlay_checks": {
+    "restored_markdown_files": 10,
+    "path_and_builtin_reads": "PASS",
+    "writes_to_old_and_new_paper_rejected": true,
+    "methods_restored_on_normal_and_exception_exit": true,
+    "universal_newline_semantics_preserved": true
+  },
+  "commands": [
+    {
+      "arguments": "--verify-reclassification",
+      "exit_code": 0,
+      "execution_receipt": "a7c806"
+    },
+    {
+      "arguments": "--verify-navigation",
+      "exit_code": 0,
+      "execution_receipt": "26b7e1",
+      "status": "PASS",
+      "root_navigation_files": 4,
+      "frozen_support_files": 160,
+      "historical_navigation_manifest_sha256": "e8e24394ebfe33afaaa319c061adc9fa4d9557aa6ac72bc2598fb6b84f390155"
+    },
+    {
+      "arguments": "--script research_cognition_physics/archive_1323_/_shared/check_stage_joint.py -- --check",
+      "exit_code": 0,
+      "execution_receipt": "6f09e6",
+      "status": "PASS_STAGE_AUXILIARY_CHECKS_ONLY",
+      "scientific_files_verified": 40,
+      "paper_local_links": 12,
+      "analytic_arithmetic_checks": 20,
+      "max_transport_residual": 1.6008962290237398e-11,
+      "stage_completion_declared": false
+    }
+  ],
+  "scientific_matrix_experiments_repeated": false,
+  "interpretation": "Historical evidence remains reproducible; this migration receipt does not restore stage-paper or stage-completion status."
+}

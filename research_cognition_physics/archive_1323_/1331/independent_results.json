@@ -1,0 +1,934 @@
+{
+  "round": 1331,
+  "status": "PASS",
+  "new_axioms": 0,
+  "stage_complete": false,
+  "construction": "Complete independent tuple-CAR/reference parent; sparse full transitions; exact invariant support only for dynamics; full-parent SU2 readout.",
+  "extra_finite_instrument_input": "Calibrated joint reference/L rotations with fixed menu, direction-resolved occupation records and blank memory; finite preparation and statistics, no free resets.",
+  "checks": [
+    {
+      "name": "n1.q1.N(6, 7).Z_exact_transition",
+      "residual": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "n1.q1.N(6, 7).H_invariant_support",
+      "residual": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "n1.q1.N(6, 7).blue_on_actual_support",
+      "residual": 0.0,
+      "tolerance": 1e-09,
+      "value": 1.0,
+      "bound": 1.0
+    },
+    {
+      "name": "n1.q1.N(6, 7).red_lower_bound",
+      "residual": 0.0,
+      "tolerance": 1e-09,
+      "value": 3.0,
+      "bound": 4.0
+    },
+    {
+      "name": "n1.q1.N(6, 7).onsite_SU2",
+      "residual": 1.461140937748114e-17,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "n1.q1.N(6, 7).H0_SU2",
+      "residual": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "n1.q1.N(6, 7).full_parent_SU2",
+      "residual": 6.123520319305295e-15,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "n1.q1.N(6, 7).reference_source_bound",
+      "residual": 0.0,
+      "tolerance": 1e-09,
+      "value": 0.08050061151351898,
+      "bound": 2.3758787847868
+    },
+    {
+      "name": "n1.q1.N(6, 7).equal_L_sufficient",
+      "residual": 0.0,
+      "tolerance": 1e-09,
+      "value": 0.08050061151351898,
+      "bound": 3.0547012947258856
+    },
+    {
+      "name": "n1.q1.N(6, 7).actual_initial_source",
+      "residual": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "n1.q1.N(6, 7).actual_matrix_curvature",
+      "residual": 6.938893903907228e-18,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "n1.q1.N(6, 7).actual_initial_Jx",
+      "residual": 1.1102230246251565e-16,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "n1.q1.N(6, 7).compressed_source_singular_value",
+      "residual": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "n1.q1.N(6, 7).finite_matrix_Taylor_t0.05",
+      "residual": 0.0,
+      "tolerance": 1e-09,
+      "value": 4.375872442174966e-10,
+      "bound": 1.2055052604205347e-06
+    },
+    {
+      "name": "n1.q1.N(6, 7).finite_matrix_Taylor_t0.13",
+      "residual": 0.0,
+      "tolerance": 1e-09,
+      "value": 1.9996119149379155e-08,
+      "bound": 2.1187960457151317e-05
+    },
+    {
+      "name": "n1.q1.N(6, 7).finite_matrix_Taylor_t0.27",
+      "residual": 0.0,
+      "tolerance": 1e-09,
+      "value": 3.7203242914118917e-07,
+      "bound": 0.00018982368032685907
+    },
+    {
+      "name": "n2.q1.N(6, 6).Z_exact_transition",
+      "residual": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "n2.q1.N(6, 6).H_invariant_support",
+      "residual": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "n2.q1.N(6, 6).blue_on_actual_support",
+      "residual": 0.0,
+      "tolerance": 1e-09,
+      "value": 1.0,
+      "bound": 1.0
+    },
+    {
+      "name": "n2.q1.N(6, 6).red_lower_bound",
+      "residual": 0.0,
+      "tolerance": 1e-09,
+      "value": 3.0,
+      "bound": 4.0
+    },
+    {
+      "name": "n2.q1.N(6, 6).onsite_SU2",
+      "residual": 1.3925984992044943e-17,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "n2.q1.N(6, 6).H0_SU2",
+      "residual": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "n2.q1.N(6, 6).full_parent_SU2",
+      "residual": 5.49689844792165e-15,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "n2.q1.N(6, 6).reference_source_bound",
+      "residual": 0.0,
+      "tolerance": 1e-09,
+      "value": 0.08584146097286388,
+      "bound": 4.3471577693551255
+    },
+    {
+      "name": "n2.q1.N(6, 6).equal_L_sufficient",
+      "residual": 0.0,
+      "tolerance": 1e-09,
+      "value": 0.08584146097286388,
+      "bound": 5.3926460963190195
+    },
+    {
+      "name": "n2.q1.N(6, 6).actual_initial_source",
+      "residual": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "n2.q1.N(6, 6).actual_matrix_curvature",
+      "residual": 1.4318243398719878e-17,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "n2.q1.N(6, 6).actual_initial_Jx",
+      "residual": 1.5700924586837752e-16,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "n2.q1.N(6, 6).compressed_source_singular_value",
+      "residual": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "n2.q1.N(6, 6).finite_matrix_Taylor_t0.05",
+      "residual": 0.0,
+      "tolerance": 1e-09,
+      "value": 5.454787792417656e-10,
+      "bound": 1.2810214285253261e-06
+    },
+    {
+      "name": "n2.q1.N(6, 6).finite_matrix_Taylor_t0.13",
+      "residual": 0.0,
+      "tolerance": 1e-09,
+      "value": 2.4925799305948228e-08,
+      "bound": 2.251523262776113e-05
+    },
+    {
+      "name": "n2.q1.N(6, 6).finite_matrix_Taylor_t0.27",
+      "residual": 0.0,
+      "tolerance": 1e-09,
+      "value": 4.637096467644143e-07,
+      "bound": 0.00020171475822131194
+    },
+    {
+      "name": "n1.q2.N(9, 9).Z_exact_transition",
+      "residual": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "n1.q2.N(9, 9).H_invariant_support",
+      "residual": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "n1.q2.N(9, 9).blue_on_actual_support",
+      "residual": 0.0,
+      "tolerance": 1e-09,
+      "value": 2.0,
+      "bound": 2.0
+    },
+    {
+      "name": "n1.q2.N(9, 9).red_lower_bound",
+      "residual": 0.0,
+      "tolerance": 1e-09,
+      "value": 3.0,
+      "bound": 5.0
+    },
+    {
+      "name": "n1.q2.N(9, 9).onsite_SU2",
+      "residual": 3.4025815803127766e-17,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "n1.q2.N(9, 9).H0_SU2",
+      "residual": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "n1.q2.N(9, 9).full_parent_SU2",
+      "residual": 9.873309486074984e-15,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "n1.q2.N(9, 9).reference_source_bound",
+      "residual": 0.0,
+      "tolerance": 1e-09,
+      "value": 0.17769077634429292,
+      "bound": 2.909845356715714
+    },
+    {
+      "name": "n1.q2.N(9, 9).equal_L_sufficient",
+      "residual": 0.0,
+      "tolerance": 1e-09,
+      "value": 0.17769077634429292,
+      "bound": 3.741229744348775
+    },
+    {
+      "name": "readout.N(6, 7).full_rotation_dictionary",
+      "residual": 2.847451206420623e-13,
+      "tolerance": 4e-09
+    },
+    {
+      "name": "readout.N(6, 7).full_rotation_H0",
+      "residual": 1.0590405640859769e-15,
+      "tolerance": 4e-09
+    },
+    {
+      "name": "readout.N(6, 7).t0.8.actual_record_mean",
+      "residual": 2.220446049250313e-16,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "readout.N(6, 7).t0.8.all_records",
+      "residual": 2.220446049250313e-16,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "readout.N(6, 7).t0.8.rotation_orientation_source",
+      "residual": 1.0140484441337521e-15,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "readout.N(6, 7).t0.8.record_Jz_source",
+      "residual": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "readout.N(6, 7).t0.8.quench_rotate_record_energy",
+      "residual": 1.0842021724855044e-18,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "readout.N(6, 7).t0.8.unknown_partner_record_gram",
+      "residual": 9.370830733675583e-16,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "readout.N(6, 7).t0.8.unknown_record_source",
+      "residual": 1.429315298666822e-15,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "readout.N(6, 7).t0.8.full_nonzero_onsite_witness",
+      "residual": 0.0,
+      "tolerance": 1e-09,
+      "value": 3.654704556765864e-07,
+      "bound": 0.001151054714456641
+    },
+    {
+      "name": "readout.N(6, 7).t1.4.actual_record_mean",
+      "residual": 1.1102230246251565e-16,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "readout.N(6, 7).t1.4.all_records",
+      "residual": 2.220446049250313e-16,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "readout.N(6, 7).t1.4.rotation_orientation_source",
+      "residual": 1.005345978567146e-15,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "readout.N(6, 7).t1.4.record_Jz_source",
+      "residual": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "readout.N(6, 7).t1.4.quench_rotate_record_energy",
+      "residual": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "readout.N(6, 7).t1.4.unknown_partner_record_gram",
+      "residual": 9.293586304196525e-16,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "readout.N(6, 7).t1.4.unknown_record_source",
+      "residual": 1.362786749322356e-15,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "readout.N(6, 7).t1.4.full_nonzero_onsite_witness",
+      "residual": 0.0,
+      "tolerance": 1e-09,
+      "value": 3.407763368767913e-06,
+      "bound": 0.003525105063023463
+    },
+    {
+      "name": "readout.N(6, 7).t2.0.actual_record_mean",
+      "residual": 1.6653345369377348e-16,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "readout.N(6, 7).t2.0.all_records",
+      "residual": 2.220446049250313e-16,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "readout.N(6, 7).t2.0.rotation_orientation_source",
+      "residual": 2.7129405729601104e-15,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "readout.N(6, 7).t2.0.record_Jz_source",
+      "residual": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "readout.N(6, 7).t2.0.quench_rotate_record_energy",
+      "residual": 3.469446951953614e-18,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "readout.N(6, 7).t2.0.unknown_partner_record_gram",
+      "residual": 7.02425779180211e-16,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "readout.N(6, 7).t2.0.unknown_record_source",
+      "residual": 1.0094778770532884e-15,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "readout.N(6, 7).t2.0.full_nonzero_onsite_witness",
+      "residual": 0.0,
+      "tolerance": 1e-09,
+      "value": 1.4057807298906155e-05,
+      "bound": 0.0071940919653540065
+    },
+    {
+      "name": "readout.N(9, 9).full_rotation_dictionary",
+      "residual": 7.166145738107595e-13,
+      "tolerance": 4e-09
+    },
+    {
+      "name": "readout.N(9, 9).full_rotation_H0",
+      "residual": 1.6963351595716623e-15,
+      "tolerance": 4e-09
+    },
+    {
+      "name": "readout.N(9, 9).t0.8.actual_record_mean",
+      "residual": 3.3306690738754696e-16,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "readout.N(9, 9).t0.8.all_records",
+      "residual": 2.220446049250313e-15,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "readout.N(9, 9).t0.8.rotation_orientation_source",
+      "residual": 5.344606146084313e-15,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "readout.N(9, 9).t0.8.record_Jz_source",
+      "residual": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "readout.N(9, 9).t0.8.quench_rotate_record_energy",
+      "residual": 2.3852447794681098e-17,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "readout.N(9, 9).t0.8.unknown_partner_record_gram",
+      "residual": 2.5398655918122127e-15,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "readout.N(9, 9).t0.8.unknown_record_source",
+      "residual": 1.3678045926333528e-15,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "readout.N(9, 9).t0.8.full_nonzero_onsite_witness",
+      "residual": 0.0,
+      "tolerance": 1e-09,
+      "value": 3.6617282517248384e-07,
+      "bound": 0.001129640539977833
+    },
+    {
+      "name": "readout.N(9, 9).t1.4.actual_record_mean",
+      "residual": 1.1102230246251565e-16,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "readout.N(9, 9).t1.4.all_records",
+      "residual": 2.4424906541753444e-15,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "readout.N(9, 9).t1.4.rotation_orientation_source",
+      "residual": 7.11131914492758e-15,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "readout.N(9, 9).t1.4.record_Jz_source",
+      "residual": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "readout.N(9, 9).t1.4.quench_rotate_record_energy",
+      "residual": 1.5612511283791264e-17,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "readout.N(9, 9).t1.4.unknown_partner_record_gram",
+      "residual": 2.6329325497437187e-15,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "readout.N(9, 9).t1.4.unknown_record_source",
+      "residual": 1.7726687617605298e-15,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "readout.N(9, 9).t1.4.full_nonzero_onsite_witness",
+      "residual": 0.0,
+      "tolerance": 1e-09,
+      "value": 3.4129466643939566e-06,
+      "bound": 0.0034595241536821125
+    },
+    {
+      "name": "readout.N(9, 9).t2.0.actual_record_mean",
+      "residual": 3.3306690738754696e-16,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "readout.N(9, 9).t2.0.all_records",
+      "residual": 2.220446049250313e-15,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "readout.N(9, 9).t2.0.rotation_orientation_source",
+      "residual": 7.120300086047304e-15,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "readout.N(9, 9).t2.0.record_Jz_source",
+      "residual": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "readout.N(9, 9).t2.0.quench_rotate_record_energy",
+      "residual": 1.214306433183765e-17,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "readout.N(9, 9).t2.0.unknown_partner_record_gram",
+      "residual": 3.371882868480903e-15,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "readout.N(9, 9).t2.0.unknown_record_source",
+      "residual": 1.901704025826939e-15,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "readout.N(9, 9).t2.0.full_nonzero_onsite_witness",
+      "residual": 0.0,
+      "tolerance": 1e-09,
+      "value": 1.4070622782746955e-05,
+      "bound": 0.007060253374861454
+    }
+  ],
+  "check_count": 93,
+  "max_residual": 7.166145738107595e-13,
+  "cases": [
+    {
+      "n": 1,
+      "q": 1,
+      "N": [
+        6,
+        7
+      ],
+      "full_dimension": 388,
+      "actual_support_dimension": 16,
+      "source_norm": 0.1514755707415371,
+      "reference_source_norm": 0.08050061151351898,
+      "reference_bound": 2.3758787847868,
+      "equal_L_source_norm": 0.08050061151351898,
+      "equal_L_bound": 3.0547012947258856
+    },
+    {
+      "n": 2,
+      "q": 1,
+      "N": [
+        6,
+        6
+      ],
+      "full_dimension": 672,
+      "actual_support_dimension": 32,
+      "source_norm": 0.15601973941348257,
+      "reference_source_norm": 0.08584146097286388,
+      "reference_bound": 4.3471577693551255,
+      "equal_L_source_norm": 0.08584146097286388,
+      "equal_L_bound": 5.3926460963190195
+    },
+    {
+      "n": 1,
+      "q": 2,
+      "N": [
+        9,
+        9
+      ],
+      "full_dimension": 2256,
+      "actual_support_dimension": 90,
+      "source_norm": 0.2544085762653267,
+      "reference_source_norm": 0.17769077634429292,
+      "reference_bound": 2.909845356715714,
+      "equal_L_source_norm": 0.17769077634429292,
+      "equal_L_bound": 3.741229744348775
+    }
+  ],
+  "matrix_necessity": [
+    {
+      "n": 1,
+      "known_start_site": 1,
+      "flavor_dimension": 1,
+      "delta_singular_value": 0.24,
+      "curvature_matrix_real": [
+        [
+          -0.028799999999999992
+        ]
+      ],
+      "curvature_matrix_imag": [
+        [
+          0.0
+        ]
+      ],
+      "finite_Taylor_coefficient": 0.009644042083364276
+    },
+    {
+      "n": 2,
+      "known_start_site": 1,
+      "flavor_dimension": 2,
+      "delta_singular_value": 0.24380777823536354,
+      "curvature_matrix_real": [
+        [
+          -0.029224999999999987,
+          0.00022499999999999994
+        ],
+        [
+          0.00022499999999999994,
+          -0.009299999999999998
+        ]
+      ],
+      "curvature_matrix_imag": [
+        [
+          0.0,
+          -0.003175
+        ],
+        [
+          0.003175,
+          0.0
+        ]
+      ],
+      "finite_Taylor_coefficient": 0.010248171428202607
+    }
+  ],
+  "finite_readout": [
+    {
+      "N": [
+        6,
+        7
+      ],
+      "time": 0.8,
+      "mean": 0.49081264225611243,
+      "pure_edge_mean": 0.49081227678565675,
+      "discrepancy": 3.654704556765864e-07,
+      "onsite_perturbation_bound": 0.001151054714456641,
+      "finite_signal_drop": 0.00918735774388757,
+      "record_variance": 3.009102990657594,
+      "before_instrument_orientation": [
+        0.49081264225611243,
+        -4.8993143474465595e-09,
+        6.0
+      ],
+      "rotation_orientation_change": [
+        -6.490812642256113,
+        4.3603845616270856e-16,
+        -5.509187357743888
+      ],
+      "record_system_orientation_change": [
+        6.000000000000001,
+        4.899313911408103e-09,
+        0.0
+      ],
+      "total_instrument_orientation_change": [
+        -0.49081264225611243,
+        4.8993143474465595e-09,
+        -5.509187357743888
+      ],
+      "orientation_changes_are_registered_control_measurement_sources": true,
+      "rotated_probability_outside_dynamic_support": 0.9968530878633708,
+      "all_record_results": 388,
+      "quench_work": 5.293395797343866e-06,
+      "per_mean_accuracy": 0.002,
+      "total_failure_probability": 0.01,
+      "repetitions_per_mean": 126569689,
+      "initial_reference_quanta_per_trial": 12,
+      "reference_quanta_for_two_independent_means": 3037672536,
+      "local_record_outcomes": [
+        31,
+        36
+      ],
+      "blank_record_bits_per_trial": 11,
+      "blank_record_bits_for_two_means": 2784533158,
+      "angular_precision_per_local_pulse": 1e-05,
+      "systematic_mean_error_bound": 6.500000000000001e-05,
+      "two_mean_statistical_plus_angular_margin": 0.00505735774388757,
+      "communication_for_record_aggregation_is_not_free": true
+    },
+    {
+      "N": [
+        6,
+        7
+      ],
+      "time": 1.4,
+      "mean": 0.47204394191959304,
+      "pure_edge_mean": 0.47204053415622427,
+      "discrepancy": 3.407763368767913e-06,
+      "onsite_perturbation_bound": 0.003525105063023463,
+      "finite_signal_drop": 0.027956058080406965,
+      "record_variance": 3.027174898780364,
+      "before_instrument_orientation": [
+        0.47204394191959304,
+        -4.7274042024730845e-08,
+        6.000000000000001
+      ],
+      "rotation_orientation_change": [
+        -6.472043941919593,
+        4.577484896272651e-16,
+        -5.527956058080408
+      ],
+      "record_system_orientation_change": [
+        6.0,
+        4.7274041566982355e-08,
+        0.0
+      ],
+      "total_instrument_orientation_change": [
+        -0.47204394191959304,
+        4.7274042024730845e-08,
+        -5.527956058080408
+      ],
+      "orientation_changes_are_registered_control_measurement_sources": true,
+      "rotated_probability_outside_dynamic_support": 0.9969080734565751,
+      "all_record_results": 388,
+      "quench_work": 1.606872101332646e-05,
+      "per_mean_accuracy": 0.002,
+      "total_failure_probability": 0.01,
+      "repetitions_per_mean": 126569689,
+      "initial_reference_quanta_per_trial": 12,
+      "reference_quanta_for_two_independent_means": 3037672536,
+      "local_record_outcomes": [
+        31,
+        36
+      ],
+      "blank_record_bits_per_trial": 11,
+      "blank_record_bits_for_two_means": 2784533158,
+      "angular_precision_per_local_pulse": 1e-05,
+      "systematic_mean_error_bound": 6.500000000000001e-05,
+      "two_mean_statistical_plus_angular_margin": 0.023826058080406963,
+      "communication_for_record_aggregation_is_not_free": true
+    },
+    {
+      "N": [
+        6,
+        7
+      ],
+      "time": 2.0,
+      "mean": 0.443511519196941,
+      "pure_edge_mean": 0.4434974613896421,
+      "discrepancy": 1.4057807298906155e-05,
+      "onsite_perturbation_bound": 0.0071940919653540065,
+      "finite_signal_drop": 0.056488480803059016,
+      "record_variance": 3.053299131790196,
+      "before_instrument_orientation": [
+        0.443511519196941,
+        -2.0844925070415132e-07,
+        6.0
+      ],
+      "rotation_orientation_change": [
+        -6.443511519196944,
+        4.822499499480002e-16,
+        -5.5564884808030595
+      ],
+      "record_system_orientation_change": [
+        6.000000000000003,
+        2.0844925022190137e-07,
+        0.0
+      ],
+      "total_instrument_orientation_change": [
+        -0.443511519196941,
+        2.0844925070415132e-07,
+        -5.5564884808030595
+      ],
+      "orientation_changes_are_registered_control_measurement_sources": true,
+      "rotated_probability_outside_dynamic_support": 0.9969916615661941,
+      "all_record_results": 388,
+      "quench_work": 3.236360355804088e-05,
+      "per_mean_accuracy": 0.002,
+      "total_failure_probability": 0.01,
+      "repetitions_per_mean": 126569689,
+      "initial_reference_quanta_per_trial": 12,
+      "reference_quanta_for_two_independent_means": 3037672536,
+      "local_record_outcomes": [
+        31,
+        36
+      ],
+      "blank_record_bits_per_trial": 11,
+      "blank_record_bits_for_two_means": 2784533158,
+      "angular_precision_per_local_pulse": 1e-05,
+      "systematic_mean_error_bound": 6.500000000000001e-05,
+      "two_mean_statistical_plus_angular_margin": 0.052358480803059014,
+      "communication_for_record_aggregation_is_not_free": true
+    },
+    {
+      "N": [
+        9,
+        9
+      ],
+      "time": 0.8,
+      "mean": 0.4908126429584819,
+      "pure_edge_mean": 0.49081227678565675,
+      "discrepancy": 3.6617282517248384e-07,
+      "onsite_perturbation_bound": 0.001129640539977833,
+      "finite_signal_drop": 0.009187357041518074,
+      "record_variance": 4.259102992531994,
+      "before_instrument_orientation": [
+        0.4908126429584819,
+        -4.459568883107653e-09,
+        8.49999999999999
+      ],
+      "rotation_orientation_change": [
+        -8.990812642958465,
+        2.342833839799087e-16,
+        -8.009187357041508
+      ],
+      "record_system_orientation_change": [
+        8.499999999999984,
+        4.459568648824269e-09,
+        0.0
+      ],
+      "total_instrument_orientation_change": [
+        -0.4908126429584819,
+        4.459568883107653e-09,
+        -8.009187357041508
+      ],
+      "orientation_changes_are_registered_control_measurement_sources": true,
+      "rotated_probability_outside_dynamic_support": 0.9998638624910287,
+      "all_record_results": 720,
+      "quench_work": 5.2569275247539744e-06,
+      "per_mean_accuracy": 0.002,
+      "total_failure_probability": 0.01,
+      "repetitions_per_mean": 242654315,
+      "initial_reference_quanta_per_trial": 17,
+      "reference_quanta_for_two_independent_means": 8250246710,
+      "local_record_outcomes": [
+        46,
+        46
+      ],
+      "blank_record_bits_per_trial": 12,
+      "blank_record_bits_for_two_means": 5823703560,
+      "angular_precision_per_local_pulse": 1e-05,
+      "systematic_mean_error_bound": 9e-05,
+      "two_mean_statistical_plus_angular_margin": 0.005007357041518074,
+      "communication_for_record_aggregation_is_not_free": true
+    },
+    {
+      "N": [
+        9,
+        9
+      ],
+      "time": 1.4,
+      "mean": 0.47204394710288866,
+      "pure_edge_mean": 0.47204053415622427,
+      "discrepancy": 3.4129466643939566e-06,
+      "onsite_perturbation_bound": 0.0034595241536821125,
+      "finite_signal_drop": 0.02795605289711134,
+      "record_variance": 4.277174917770461,
+      "before_instrument_orientation": [
+        0.47204394710288866,
+        -4.336622098067034e-08,
+        8.499999999999988
+      ],
+      "rotation_orientation_change": [
+        -8.972043947102868,
+        2.672753172754637e-16,
+        -8.0279560528971
+      ],
+      "record_system_orientation_change": [
+        8.49999999999998,
+        4.336622071339502e-08,
+        0.0
+      ],
+      "total_instrument_orientation_change": [
+        -0.47204394710288866,
+        4.336622098067034e-08,
+        -8.0279560528971
+      ],
+      "orientation_changes_are_registered_control_measurement_sources": true,
+      "rotated_probability_outside_dynamic_support": 0.9998662967438694,
+      "all_record_results": 720,
+      "quench_work": 1.5957675738221058e-05,
+      "per_mean_accuracy": 0.002,
+      "total_failure_probability": 0.01,
+      "repetitions_per_mean": 242654315,
+      "initial_reference_quanta_per_trial": 17,
+      "reference_quanta_for_two_independent_means": 8250246710,
+      "local_record_outcomes": [
+        46,
+        46
+      ],
+      "blank_record_bits_per_trial": 12,
+      "blank_record_bits_for_two_means": 5823703560,
+      "angular_precision_per_local_pulse": 1e-05,
+      "systematic_mean_error_bound": 9e-05,
+      "two_mean_statistical_plus_angular_margin": 0.02377605289711134,
+      "communication_for_record_aggregation_is_not_free": true
+    },
+    {
+      "N": [
+        9,
+        9
+      ],
+      "time": 2.0,
+      "mean": 0.4435115320124248,
+      "pure_edge_mean": 0.4434974613896421,
+      "discrepancy": 1.4070622782746955e-05,
+      "onsite_perturbation_bound": 0.007060253374861454,
+      "finite_signal_drop": 0.056488467987575175,
+      "record_variance": 4.30329921874427,
+      "before_instrument_orientation": [
+        0.4435115320124248,
+        -1.932632576497356e-07,
+        8.49999999999999
+      ],
+      "rotation_orientation_change": [
+        -8.943511532012407,
+        3.172409438010476e-16,
+        -8.056488467987565
+      ],
+      "record_system_orientation_change": [
+        8.499999999999982,
+        1.9326325733249466e-07,
+        0.0
+      ],
+      "total_instrument_orientation_change": [
+        -0.4435115320124248,
+        1.932632576497356e-07,
+        -8.056488467987565
+      ],
+      "orientation_changes_are_registered_control_measurement_sources": true,
+      "rotated_probability_outside_dynamic_support": 0.9998699972418894,
+      "all_record_results": 720,
+      "quench_work": 3.2138947721490826e-05,
+      "per_mean_accuracy": 0.002,
+      "total_failure_probability": 0.01,
+      "repetitions_per_mean": 242654315,
+      "initial_reference_quanta_per_trial": 17,
+      "reference_quanta_for_two_independent_means": 8250246710,
+      "local_record_outcomes": [
+        46,
+        46
+      ],
+      "blank_record_bits_per_trial": 12,
+      "blank_record_bits_for_two_means": 5823703560,
+      "angular_precision_per_local_pulse": 1e-05,
+      "systematic_mean_error_bound": 9e-05,
+      "two_mean_statistical_plus_angular_margin": 0.05230846798757517,
+      "communication_for_record_aggregation_is_not_free": true
+    }
+  ],
+  "author_imports": false,
+  "field_or_generation_selection_proven": false
+}

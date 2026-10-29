@@ -1,0 +1,836 @@
+{
+  "round": 1328,
+  "status": "PASS",
+  "new_axioms": 0,
+  "physical_scope": "natural left plus actual equal-coupling prepared right; full-role code conditional",
+  "provenance": {
+    "1328/proof.md": "f9cd1af4f9f7d300d31abd7d5f57b72784d5b36e201e34764572d6a25942f8c5",
+    "1328/check.py": "f0f6a27d0c58b5ff3636539c12ed371a4cc914cdccc39b86f38ee2224e46b0ef",
+    "_admission/round1328_admission.md": "fb095eb2f754932cd3e80743f4d8a7311c8297a684a93118964ec5d59d655d06",
+    "1325/proof.md": "30e291fcd272c92b05cf8786175a1f60aa532485aa96b468c30d3cf22d00634a",
+    "1327/proof.md": "d6611972045fc8a49e87033184a990c2076aa68f4f9865130393661a4e8d73ce"
+  },
+  "spectral_cases": [
+    {
+      "N": 2,
+      "parent_dim": 8,
+      "best_arbitrary_h": 0.4500000000000001,
+      "expected_best": 0.45,
+      "best_fixed_spectrum": 0.9000000000000001,
+      "expected_fixed": 0.9,
+      "projector_residual": 2.6470882081092774e-16,
+      "passed": true
+    },
+    {
+      "N": 3,
+      "parent_dim": 12,
+      "best_arbitrary_h": 0.4500000000000002,
+      "expected_best": 0.45,
+      "best_fixed_spectrum": 0.8999999999999999,
+      "expected_fixed": 0.9,
+      "projector_residual": 1.1505182262113465e-16,
+      "passed": true
+    },
+    {
+      "N": 8,
+      "parent_dim": 32,
+      "best_arbitrary_h": 0.4500000000000011,
+      "expected_best": 0.45,
+      "best_fixed_spectrum": 0.9000000000000004,
+      "expected_fixed": 0.9,
+      "projector_residual": 2.6470882081092774e-16,
+      "passed": true
+    },
+    {
+      "N": 17,
+      "parent_dim": 68,
+      "best_arbitrary_h": 0.4500000000000011,
+      "expected_best": 0.45,
+      "best_fixed_spectrum": 0.9000000000000006,
+      "expected_fixed": 0.9,
+      "projector_residual": 2.245444292694073e-16,
+      "passed": true
+    }
+  ],
+  "scalar_cases": [
+    {
+      "N": 2,
+      "time": 0.7,
+      "complete_error": 0.43814665545664977,
+      "predicted_error": 0.4381466554566497,
+      "probability_D": 0.31165807749220836,
+      "probability_U": 0.03818622224664597,
+      "reference_transfer": 0.2734718552455617,
+      "source_d_bias": 0.26622439393025465,
+      "source_u_bias": -0.2662243939302547,
+      "max_formula_residual": 6.661338147750939e-16,
+      "passed": true
+    },
+    {
+      "N": 2,
+      "time": 2.4,
+      "complete_error": 1.2472766919375238,
+      "predicted_error": 1.2472766919375238,
+      "probability_D": 0.00023308511640242278,
+      "probability_U": 0.3355374127877246,
+      "reference_transfer": -0.33530432767132246,
+      "source_d_bias": 0.26622439393025465,
+      "source_u_bias": -0.26622439393025454,
+      "max_formula_residual": 2.7755575615628914e-16,
+      "passed": true
+    },
+    {
+      "N": 2,
+      "time": 6.7,
+      "complete_error": 0.17855125298088698,
+      "predicted_error": 0.17855125298088853,
+      "probability_D": 0.21480718097379548,
+      "probability_U": 0.09917928700039884,
+      "reference_transfer": 0.11562789397339657,
+      "source_d_bias": 0.2662243939302547,
+      "source_u_bias": -0.2662243939302545,
+      "max_formula_residual": 1.5543122344752192e-15,
+      "passed": true
+    },
+    {
+      "N": 3,
+      "time": 0.7,
+      "complete_error": 0.3577452461252729,
+      "predicted_error": 0.3577452461252729,
+      "probability_D": 0.20777205166147247,
+      "probability_U": 0.05091496299552796,
+      "reference_transfer": 0.1568570886659444,
+      "source_d_bias": 0.17748292928683668,
+      "source_u_bias": -0.1774829292868364,
+      "max_formula_residual": 1.942890293094024e-16,
+      "passed": true
+    },
+    {
+      "N": 3,
+      "time": 2.4,
+      "complete_error": 1.0183971544378325,
+      "predicted_error": 1.018397154437833,
+      "probability_D": 0.00015539007760162764,
+      "probability_U": 0.4473832170502996,
+      "reference_transfer": -0.4472278269726977,
+      "source_d_bias": 0.1774829292868367,
+      "source_u_bias": -0.17748292928683657,
+      "max_formula_residual": 4.440892098500626e-16,
+      "passed": true
+    },
+    {
+      "N": 3,
+      "time": 6.7,
+      "complete_error": 0.14578648757925775,
+      "predicted_error": 0.14578648757925694,
+      "probability_D": 0.14320478731586503,
+      "probability_U": 0.1322390493338651,
+      "reference_transfer": 0.010965737981999624,
+      "source_d_bias": 0.17748292928683668,
+      "source_u_bias": -0.17748292928683645,
+      "max_formula_residual": 8.049116928532385e-16,
+      "passed": true
+    },
+    {
+      "N": 8,
+      "time": 0.7,
+      "complete_error": 0.21907332772832483,
+      "predicted_error": 0.21907332772832486,
+      "probability_D": 0.07791451937305204,
+      "probability_U": 0.06682588893163043,
+      "reference_transfer": 0.011088630441419944,
+      "source_d_bias": 0.06655609848256355,
+      "source_u_bias": -0.06655609848256389,
+      "max_formula_residual": 1.6653345369377348e-15,
+      "passed": true
+    },
+    {
+      "N": 8,
+      "time": 2.4,
+      "complete_error": 0.6236383459687618,
+      "predicted_error": 0.6236383459687619,
+      "probability_D": 5.827127910060428e-05,
+      "probability_U": 0.5871904723785177,
+      "reference_transfer": -0.5871322010994184,
+      "source_d_bias": 0.06655609848256358,
+      "source_u_bias": -0.06655609848256372,
+      "max_formula_residual": 1.3322676295501878e-15,
+      "passed": true
+    },
+    {
+      "N": 8,
+      "time": 6.7,
+      "complete_error": 0.0892756264904447,
+      "predicted_error": 0.08927562649044427,
+      "probability_D": 0.05370179524344887,
+      "probability_U": 0.17356375225069917,
+      "reference_transfer": -0.11986195700725322,
+      "source_d_bias": 0.06655609848256361,
+      "source_u_bias": -0.06655609848256372,
+      "max_formula_residual": 2.914335439641036e-15,
+      "passed": true
+    },
+    {
+      "N": 17,
+      "time": 0.7,
+      "complete_error": 0.15028306299147554,
+      "predicted_error": 0.15028306299147545,
+      "probability_D": 0.03666565617555396,
+      "probability_U": 0.07187994775839246,
+      "reference_transfer": -0.03521429158284661,
+      "source_d_bias": 0.03132051693297111,
+      "source_u_bias": -0.03132051693297089,
+      "max_formula_residual": 8.104628079763643e-15,
+      "passed": true
+    },
+    {
+      "N": 17,
+      "time": 2.4,
+      "complete_error": 0.4278123758970283,
+      "predicted_error": 0.4278123758970284,
+      "probability_D": 2.7421778400287573e-05,
+      "probability_U": 0.631599835835717,
+      "reference_transfer": -0.6315724140573202,
+      "source_d_bias": 0.031320516932971026,
+      "source_u_bias": -0.03132051693297089,
+      "max_formula_residual": 3.552713678800501e-15,
+      "passed": true
+    },
+    {
+      "N": 17,
+      "time": 6.7,
+      "complete_error": 0.061242574523290474,
+      "predicted_error": 0.061242574523289094,
+      "probability_D": 0.02527143305574084,
+      "probability_U": 0.1866904225889859,
+      "reference_transfer": -0.1614189895332423,
+      "source_d_bias": 0.031320516932971054,
+      "source_u_bias": -0.03132051693297078,
+      "max_formula_residual": 2.7755575615628914e-15,
+      "passed": true
+    }
+  ],
+  "matrix_calibration_and_holdouts": {
+    "calibration_N": 3,
+    "calibration_error": 2.2362146272201894e-16,
+    "p_is_registered_level_dictionary": true,
+    "parameter_refits_after_calibration": 0,
+    "cases": [
+      {
+        "N": 3,
+        "p": 0.0,
+        "time": 0.7,
+        "complete_error": 0.21696451266208527,
+        "predicted_error": 0.21696451266208538,
+        "maximum_all_time_bound": 1.1547005383792517,
+        "source_intertwining_residual": 0.5773502691896257,
+        "equal_coupling_preparation_residual": 1.4967488050855977e-15,
+        "qualified_families": [
+          {
+            "family": "natural_left",
+            "probabilities_D_U_L": [
+              0.1336252235668256,
+              0.06610658691396708,
+              0.8002681895192076
+            ],
+            "reference_transfer": 0.06751863665285862,
+            "max_record_resource_residual": 6.7642329372374944e-15
+          },
+          {
+            "family": "prepared_right",
+            "probabilities_D_U_L": [
+              0.3236283150263238,
+              0.4694428657487495,
+              0.20692881922492723
+            ],
+            "reference_transfer": -0.05891987093531381,
+            "max_record_resource_residual": 4.581340854506296e-15
+          }
+        ],
+        "max_identity_residual": 6.7642329372374944e-15,
+        "passed": true
+      },
+      {
+        "N": 3,
+        "p": 0.0,
+        "time": 2.4,
+        "complete_error": 0.6720667347751638,
+        "predicted_error": 0.6720667347751641,
+        "maximum_all_time_bound": 1.1547005383792517,
+        "source_intertwining_residual": 0.5773502691896257,
+        "equal_coupling_preparation_residual": 1.4967488050855977e-15,
+        "qualified_families": [
+          {
+            "family": "natural_left",
+            "probabilities_D_U_L": [
+              0.32883401689162367,
+              0.4199327945903276,
+              0.25123318851804954
+            ],
+            "reference_transfer": -0.09109877769870289,
+            "max_record_resource_residual": 4.601422772664146e-15
+          },
+          {
+            "family": "prepared_right",
+            "probabilities_D_U_L": [
+              0.12685990944691333,
+              0.10258215138680765,
+              0.7705579391662798
+            ],
+            "reference_transfer": 0.11117243784721809,
+            "max_record_resource_residual": 3.7314939648773285e-15
+          }
+        ],
+        "max_identity_residual": 4.601422772664146e-15,
+        "passed": true
+      },
+      {
+        "N": 3,
+        "p": 0.0,
+        "time": 6.7,
+        "complete_error": 1.1524843422487547,
+        "predicted_error": 1.1524843422487556,
+        "maximum_all_time_bound": 1.1547005383792517,
+        "source_intertwining_residual": 0.5773502691896257,
+        "equal_coupling_preparation_residual": 1.4967488050855977e-15,
+        "qualified_families": [
+          {
+            "family": "natural_left",
+            "probabilities_D_U_L": [
+              0.026001587517271465,
+              0.2894622369563691,
+              0.6845361755263601
+            ],
+            "reference_transfer": -0.26346064943909653,
+            "max_record_resource_residual": 5.508266188836229e-15
+          },
+          {
+            "family": "prepared_right",
+            "probabilities_D_U_L": [
+              0.43005628465281653,
+              0.2140668447249409,
+              0.35587687062224344
+            ],
+            "reference_transfer": 0.3028841197149885,
+            "max_record_resource_residual": 4.741397631616571e-15
+          }
+        ],
+        "max_identity_residual": 5.508266188836229e-15,
+        "passed": true
+      },
+      {
+        "N": 3,
+        "p": 0.27,
+        "time": 0.7,
+        "complete_error": 0.21570390057825634,
+        "predicted_error": 0.2157039005782566,
+        "maximum_all_time_bound": 1.1547005383792517,
+        "source_intertwining_residual": 0.5773502691896257,
+        "equal_coupling_preparation_residual": 1.4967488050855977e-15,
+        "qualified_families": [
+          {
+            "family": "natural_left",
+            "probabilities_D_U_L": [
+              0.13200005681293728,
+              0.06531430607501797,
+              0.8026856371120437
+            ],
+            "reference_transfer": 0.06668575073791638,
+            "max_record_resource_residual": 7.353104475889367e-15
+          },
+          {
+            "family": "prepared_right",
+            "probabilities_D_U_L": [
+              0.32524484104158563,
+              0.470330657408662,
+              0.2044245015497519
+            ],
+            "reference_transfer": -0.05819113657996677,
+            "max_record_resource_residual": 5.596062187029821e-15
+          }
+        ],
+        "max_identity_residual": 7.353104475889367e-15,
+        "passed": true
+      },
+      {
+        "N": 3,
+        "p": 0.27,
+        "time": 2.4,
+        "complete_error": 0.638366583908027,
+        "predicted_error": 0.6383665839080283,
+        "maximum_all_time_bound": 1.1547005383792517,
+        "source_intertwining_residual": 0.5773502691896257,
+        "equal_coupling_preparation_residual": 1.4967488050855977e-15,
+        "qualified_families": [
+          {
+            "family": "natural_left",
+            "probabilities_D_U_L": [
+              0.2675310949209996,
+              0.3567252833172271,
+              0.37574362176177256
+            ],
+            "reference_transfer": -0.08919418839622928,
+            "max_record_resource_residual": 4.830437740597386e-15
+          },
+          {
+            "family": "prepared_right",
+            "probabilities_D_U_L": [
+              0.1881712267959061,
+              0.16997109066678018,
+              0.6418576825373126
+            ],
+            "reference_transfer": 0.10509481591623415,
+            "max_record_resource_residual": 7.859813484119895e-15
+          }
+        ],
+        "max_identity_residual": 7.859813484119895e-15,
+        "passed": true
+      },
+      {
+        "N": 3,
+        "p": 0.27,
+        "time": 6.7,
+        "complete_error": 1.150985904268903,
+        "predicted_error": 1.1509859042689041,
+        "maximum_all_time_bound": 1.1547005383792517,
+        "source_intertwining_residual": 0.5773502691896257,
+        "equal_coupling_preparation_residual": 1.4967488050855977e-15,
+        "qualified_families": [
+          {
+            "family": "natural_left",
+            "probabilities_D_U_L": [
+              0.07352710866899942,
+              0.1704208661887761,
+              0.7560520251422238
+            ],
+            "reference_transfer": -0.09689375751977836,
+            "max_record_resource_residual": 4.343391492106642e-15
+          },
+          {
+            "family": "prepared_right",
+            "probabilities_D_U_L": [
+              0.3817396060468882,
+              0.323898253862139,
+              0.29436214009097206
+            ],
+            "reference_transfer": 0.1447360319718587,
+            "max_record_resource_residual": 6.546600269338284e-15
+          }
+        ],
+        "max_identity_residual": 6.546600269338284e-15,
+        "passed": true
+      },
+      {
+        "N": 8,
+        "p": 0.0,
+        "time": 0.7,
+        "complete_error": 0.13286308707843217,
+        "predicted_error": 0.13286308707843225,
+        "maximum_all_time_bound": 0.7071067811865475,
+        "source_intertwining_residual": 0.3535533905932738,
+        "equal_coupling_preparation_residual": 9.933140656190728e-16,
+        "qualified_families": [
+          {
+            "family": "natural_left",
+            "probabilities_D_U_L": [
+              0.07799189349176851,
+              0.08676489532458109,
+              0.8352432111836475
+            ],
+            "reference_transfer": -0.008773001832834915,
+            "max_record_resource_residual": 2.7528890830109768e-14
+          },
+          {
+            "family": "prepared_right",
+            "probabilities_D_U_L": [
+              0.21134069325906457,
+              0.6161437612952327,
+              0.17251554544570097
+            ],
+            "reference_transfer": 0.021746199184405235,
+            "max_record_resource_residual": 2.3809758392217377e-14
+          }
+        ],
+        "max_identity_residual": 2.7528890830109768e-14,
+        "passed": true
+      },
+      {
+        "N": 8,
+        "p": 0.0,
+        "time": 2.4,
+        "complete_error": 0.4115551433243866,
+        "predicted_error": 0.41155514332438675,
+        "maximum_all_time_bound": 0.7071067811865475,
+        "source_intertwining_residual": 0.3535533905932738,
+        "equal_coupling_preparation_residual": 9.933140656190728e-16,
+        "qualified_families": [
+          {
+            "family": "natural_left",
+            "probabilities_D_U_L": [
+              0.21377801773701774,
+              0.5511617928998029,
+              0.23506018936317702
+            ],
+            "reference_transfer": -0.3373837751628024,
+            "max_record_resource_residual": 2.4293733869864828e-14
+          },
+          {
+            "family": "prepared_right",
+            "probabilities_D_U_L": [
+              0.06975291736831893,
+              0.13463907369518482,
+              0.7956080089364939
+            ],
+            "reference_transfer": 0.3616631108937032,
+            "max_record_resource_residual": 2.286339737308061e-14
+          }
+        ],
+        "max_identity_residual": 2.4293733869864828e-14,
+        "passed": true
+      },
+      {
+        "N": 8,
+        "p": 0.0,
+        "time": 6.7,
+        "complete_error": 0.7057496437641357,
+        "predicted_error": 0.7057496437641361,
+        "maximum_all_time_bound": 0.7071067811865475,
+        "source_intertwining_residual": 0.3535533905932738,
+        "equal_coupling_preparation_residual": 9.933140656190728e-16,
+        "qualified_families": [
+          {
+            "family": "natural_left",
+            "probabilities_D_U_L": [
+              0.020514309148760918,
+              0.3799191860052315,
+              0.5995665048460048
+            ],
+            "reference_transfer": -0.35940487685649014,
+            "max_record_resource_residual": 2.417717480152784e-14
+          },
+          {
+            "family": "prepared_right",
+            "probabilities_D_U_L": [
+              0.2643704797277572,
+              0.2809627337014854,
+              0.4546667865707553
+            ],
+            "reference_transfer": 0.4099570132468431,
+            "max_record_resource_residual": 2.0834749220099865e-14
+          }
+        ],
+        "max_identity_residual": 2.417717480152784e-14,
+        "passed": true
+      },
+      {
+        "N": 8,
+        "p": 0.27,
+        "time": 0.7,
+        "complete_error": 0.13209112298618989,
+        "predicted_error": 0.1320911229861905,
+        "maximum_all_time_bound": 0.7071067811865475,
+        "source_intertwining_residual": 0.3535533905932738,
+        "equal_coupling_preparation_residual": 9.933140656190728e-16,
+        "qualified_families": [
+          {
+            "family": "natural_left",
+            "probabilities_D_U_L": [
+              0.0770443321604386,
+              0.08572502672346106,
+              0.8372306411161006
+            ],
+            "reference_transfer": -0.008680694563022229,
+            "max_record_resource_residual": 5.800327919546537e-15
+          },
+          {
+            "family": "prepared_right",
+            "probabilities_D_U_L": [
+              0.212256111629654,
+              0.6173089878488686,
+              0.17043490052147622
+            ],
+            "reference_transfer": 0.02149639100136458,
+            "max_record_resource_residual": 1.860896247869188e-14
+          }
+        ],
+        "max_identity_residual": 1.860896247869188e-14,
+        "passed": true
+      },
+      {
+        "N": 8,
+        "p": 0.27,
+        "time": 2.4,
+        "complete_error": 0.3909180998545611,
+        "predicted_error": 0.390918099854563,
+        "maximum_all_time_bound": 0.7071067811865475,
+        "source_intertwining_residual": 0.3535533905932738,
+        "equal_coupling_preparation_residual": 9.933140656190728e-16,
+        "qualified_families": [
+          {
+            "family": "natural_left",
+            "probabilities_D_U_L": [
+              0.1752073954035303,
+              0.46820193435386137,
+              0.3565906702426084
+            ],
+            "reference_transfer": -0.2929945389503317,
+            "max_record_resource_residual": 7.140813307397376e-15
+          },
+          {
+            "family": "prepared_right",
+            "probabilities_D_U_L": [
+              0.10835476993905448,
+              0.2230870565001488,
+              0.6685581735607964
+            ],
+            "reference_transfer": 0.31181698065948815,
+            "max_record_resource_residual": 1.0437341808367788e-14
+          }
+        ],
+        "max_identity_residual": 1.0437341808367788e-14,
+        "passed": true
+      },
+      {
+        "N": 8,
+        "p": 0.27,
+        "time": 6.7,
+        "complete_error": 0.704832041648674,
+        "predicted_error": 0.7048320416486753,
+        "maximum_all_time_bound": 0.7071067811865475,
+        "source_intertwining_residual": 0.3535533905932738,
+        "equal_coupling_preparation_residual": 9.933140656190728e-16,
+        "qualified_families": [
+          {
+            "family": "natural_left",
+            "probabilities_D_U_L": [
+              0.0570527132597703,
+              0.22367738687276956,
+              0.71926989986746
+            ],
+            "reference_transfer": -0.1666246736130006,
+            "max_record_resource_residual": 8.785586535045874e-15
+          },
+          {
+            "family": "prepared_right",
+            "probabilities_D_U_L": [
+              0.22488902362902813,
+              0.4251164581940563,
+              0.3499945181769149
+            ],
+            "reference_transfer": 0.22632183265555383,
+            "max_record_resource_residual": 1.026192593582563e-14
+          }
+        ],
+        "max_identity_residual": 1.026192593582563e-14,
+        "passed": true
+      },
+      {
+        "N": 17,
+        "p": 0.0,
+        "time": 0.7,
+        "complete_error": 0.09114332580646839,
+        "predicted_error": 0.09114332580646832,
+        "maximum_all_time_bound": 0.48507125007266594,
+        "source_intertwining_residual": 0.24253562503633297,
+        "equal_coupling_preparation_residual": 1.940627383836423e-15,
+        "qualified_families": [
+          {
+            "family": "natural_left",
+            "probabilities_D_U_L": [
+              0.06032012982086819,
+              0.09332694623148248,
+              0.8463529239476486
+            ],
+            "reference_transfer": -0.033006816410628304,
+            "max_record_resource_residual": 4.033005979772099e-14
+          },
+          {
+            "family": "prepared_right",
+            "probabilities_D_U_L": [
+              0.1756728604624061,
+              0.6627428692923504,
+              0.16158427024524172
+            ],
+            "reference_transfer": 0.047369539104774816,
+            "max_record_resource_residual": 8.444476671301976e-14
+          }
+        ],
+        "max_identity_residual": 8.444476671301976e-14,
+        "passed": true
+      },
+      {
+        "N": 17,
+        "p": 0.0,
+        "time": 2.4,
+        "complete_error": 0.2823244991530189,
+        "predicted_error": 0.28232449915301905,
+        "maximum_all_time_bound": 0.48507125007266594,
+        "source_intertwining_residual": 0.24253562503633297,
+        "equal_coupling_preparation_residual": 1.940627383836423e-15,
+        "qualified_families": [
+          {
+            "family": "natural_left",
+            "probabilities_D_U_L": [
+              0.17723081800555476,
+              0.5928462982451668,
+              0.22992288374927736
+            ],
+            "reference_transfer": -0.4156154802396337,
+            "max_record_resource_residual": 4.778528820681499e-14
+          },
+          {
+            "family": "prepared_right",
+            "probabilities_D_U_L": [
+              0.051613049296294955,
+              0.14482186078137518,
+              0.8035650899223287
+            ],
+            "reference_transfer": 0.44123073644964883,
+            "max_record_resource_residual": 6.700030740521429e-14
+          }
+        ],
+        "max_identity_residual": 6.700030740521429e-14,
+        "passed": true
+      },
+      {
+        "N": 17,
+        "p": 0.0,
+        "time": 6.7,
+        "complete_error": 0.4841402614815158,
+        "predicted_error": 0.4841402614815159,
+        "maximum_all_time_bound": 0.48507125007266594,
+        "source_intertwining_residual": 0.24253562503633297,
+        "equal_coupling_preparation_residual": 1.940627383836423e-15,
+        "qualified_families": [
+          {
+            "family": "natural_left",
+            "probabilities_D_U_L": [
+              0.018771291314057772,
+              0.408652569820756,
+              0.5725761388651853
+            ],
+            "reference_transfer": -0.3898812785067154,
+            "max_record_resource_residual": 4.6995133058446516e-14
+          },
+          {
+            "family": "prepared_right",
+            "probabilities_D_U_L": [
+              0.21174087110450338,
+              0.3022120160822677,
+              0.4860471128132273
+            ],
+            "reference_transfer": 0.44396840295696194,
+            "max_record_resource_residual": 7.427793875138992e-14
+          }
+        ],
+        "max_identity_residual": 7.427793875138992e-14,
+        "passed": true
+      },
+      {
+        "N": 17,
+        "p": 0.27,
+        "time": 0.7,
+        "complete_error": 0.09061376280806699,
+        "predicted_error": 0.09061376280806718,
+        "maximum_all_time_bound": 0.48507125007266594,
+        "source_intertwining_residual": 0.24253562503633297,
+        "equal_coupling_preparation_residual": 1.940627383836423e-15,
+        "qualified_families": [
+          {
+            "family": "natural_left",
+            "probabilities_D_U_L": [
+              0.05958780785905672,
+              0.09220843210590786,
+              0.8482037600350363
+            ],
+            "reference_transfer": -0.03262062424684231,
+            "max_record_resource_residual": 2.2069572298148647e-14
+          },
+          {
+            "family": "prepared_right",
+            "probabilities_D_U_L": [
+              0.17636557405174674,
+              0.6639962222239945,
+              0.1596382037242594
+            ],
+            "reference_transfer": 0.04680889976251201,
+            "max_record_resource_residual": 2.277415330787643e-14
+          }
+        ],
+        "max_identity_residual": 2.277415330787643e-14,
+        "passed": true
+      },
+      {
+        "N": 17,
+        "p": 0.27,
+        "time": 2.4,
+        "complete_error": 0.2681676041266218,
+        "predicted_error": 0.26816760412662216,
+        "maximum_all_time_bound": 0.48507125007266594,
+        "source_intertwining_residual": 0.24253562503633297,
+        "equal_coupling_preparation_residual": 1.940627383836423e-15,
+        "qualified_families": [
+          {
+            "family": "natural_left",
+            "probabilities_D_U_L": [
+              0.14588104379209918,
+              0.5036121646831458,
+              0.3505067915247559
+            ],
+            "reference_transfer": -0.35773112089103876,
+            "max_record_resource_residual": 2.2989732468497663e-14
+          },
+          {
+            "family": "prepared_right",
+            "probabilities_D_U_L": [
+              0.08300130717276039,
+              0.23995918682368994,
+              0.6770395060035503
+            ],
+            "reference_transfer": 0.37748166828383134,
+            "max_record_resource_residual": 2.6670321061227496e-14
+          }
+        ],
+        "max_identity_residual": 2.6670321061227496e-14,
+        "passed": true
+      },
+      {
+        "N": 17,
+        "p": 0.27,
+        "time": 6.7,
+        "complete_error": 0.48351079162341437,
+        "predicted_error": 0.4835107916234147,
+        "maximum_all_time_bound": 0.48507125007266594,
+        "source_intertwining_residual": 0.24253562503633297,
+        "equal_coupling_preparation_residual": 1.940627383836423e-15,
+        "qualified_families": [
+          {
+            "family": "natural_left",
+            "probabilities_D_U_L": [
+              0.05181967001213292,
+              0.2405941640312142,
+              0.7075861659566534
+            ],
+            "reference_transfer": -0.18877449401907853,
+            "max_record_resource_residual": 2.3532545834375697e-14
+          },
+          {
+            "family": "prepared_right",
+            "probabilities_D_U_L": [
+              0.1750658974492374,
+              0.4572681230994907,
+              0.3676659794512728
+            ],
+            "reference_transfer": 0.25223732228450757,
+            "max_record_resource_residual": 2.4670082047538508e-14
+          }
+        ],
+        "max_identity_residual": 2.4670082047538508e-14,
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "formal_stage_complete": false,
+  "long_goal_complete": false
+}

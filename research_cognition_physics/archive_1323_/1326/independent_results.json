@@ -1,0 +1,1337 @@
+{
+  "schema": "round1326_independent_v1",
+  "status": "PASS_INDEPENDENT_CHECKS_ONLY",
+  "scientific_acceptance": false,
+  "author_code_imported": false,
+  "checks": 205,
+  "max_absolute_residual": 5.164579410137201e-08,
+  "finite_model": {
+    "B": 66,
+    "dimension": 400,
+    "p": 0.005,
+    "material_dimension": 4,
+    "normalized_coefficients": [
+      0.013,
+      0.011
+    ],
+    "linear_fixed_coefficients": [
+      0.010051504532930718,
+      0.006594939823760597
+    ]
+  },
+  "small_full_parent": {
+    "f": 0.8,
+    "dimension": 22,
+    "reference_gap": 1.0419657963733284,
+    "ground": -0.6283335506589409,
+    "actual_band_gap": 1.0246242156830483,
+    "delta": 1.0059657963733284,
+    "global_norm_bound": 0.013,
+    "offdiagonal_norm": 0.011313417663526016,
+    "epsilon": 0.00012723436491660027,
+    "conservative_epsilon": 0.00016799775957519896,
+    "exact_low": [
+      -0.0098927174021326,
+      -0.007435930245585309,
+      0.007231149526390923,
+      0.009806648357543857
+    ],
+    "first_block": [
+      -0.00983008908156513,
+      -0.007322068415043237,
+      0.007322068415042682,
+      0.009830089081564686
+    ],
+    "encoding_distance": 0.010676888552891402,
+    "actual_source": [
+      -1.5132371450393416,
+      -1.5112465523678469,
+      -1.505007993791654,
+      -1.5030603308065948
+    ],
+    "reference_source": -1.5082117967935604
+  },
+  "low_band_checks": [
+    {
+      "menu": "normalized",
+      "f": 1.0,
+      "dimension": 400,
+      "reference_gap": 0.9999999999999999,
+      "ground": -1.0000000000000002,
+      "actual_band_gap": 0.979312822483045,
+      "delta": 0.9639999999999999,
+      "global_norm_bound": 0.013,
+      "offdiagonal_norm": 0.010385015914515842,
+      "epsilon": 0.00011187609496343085,
+      "conservative_epsilon": 0.0001753112033195021,
+      "exact_low": [
+        -0.011273481833214305,
+        -0.008373540151780823,
+        0.00819274421935412,
+        0.011204507778090123
+      ],
+      "first_block": [
+        -0.0112264305714469,
+        -0.008276063755132457,
+        0.008276063755133345,
+        0.011226430571447454
+      ],
+      "encoding_distance": 0.010080525011883721,
+      "actual_source": [
+        -2.0048765223106146,
+        -2.0036121841882646,
+        -1.9962388098467962,
+        -1.9950271983646637
+      ],
+      "reference_source": -1.9999999999999991
+    },
+    {
+      "menu": "normalized",
+      "f": 2.0,
+      "dimension": 400,
+      "reference_gap": 0.9999999999999996,
+      "ground": -4.0,
+      "actual_band_gap": 0.9740644885608458,
+      "delta": 0.9639999999999995,
+      "global_norm_bound": 0.013,
+      "offdiagonal_norm": 0.006670020379503208,
+      "epsilon": 4.615059321886736e-05,
+      "conservative_epsilon": 0.00017531120331950215,
+      "exact_low": [
+        -0.013467815525957327,
+        -0.010683035142481145,
+        0.010608067585545111,
+        0.013446801306128187
+      ],
+      "first_block": [
+        -0.013456869915717817,
+        -0.01064382640173811,
+        0.01064382640174033,
+        0.013456869915719594
+      ],
+      "encoding_distance": 0.00645984624749209,
+      "actual_source": [
+        -4.000630320050526,
+        -4.001244345288548,
+        -3.9986932007580505,
+        -3.999349755144591
+      ],
+      "reference_source": -3.9999999999999982
+    },
+    {
+      "menu": "linear_once_calibrated",
+      "f": 1.0,
+      "dimension": 400,
+      "reference_gap": 0.9999999999999999,
+      "ground": -1.0000000000000002,
+      "actual_band_gap": 0.9774589433981242,
+      "delta": 0.8242263404574076,
+      "global_norm_bound": 0.08288682977129612,
+      "offdiagonal_norm": 0.010051504532930716,
+      "epsilon": 0.00012257888205739485,
+      "conservative_epsilon": 0.008335363979902852,
+      "exact_low": [
+        -0.011298370010225822,
+        -0.008372677968191855,
+        0.00818475598172863,
+        0.011198327482373371
+      ],
+      "first_block": [
+        -0.0112264305714469,
+        -0.008276063755132457,
+        0.008276063755133345,
+        0.011226430571447454
+      ],
+      "encoding_distance": 0.009984484008941273,
+      "actual_source": [
+        -2.0089811366337873,
+        -2.0052516152515363,
+        -1.9947484690827775,
+        -1.9910189034106285
+      ],
+      "reference_source": -1.9999999999999991
+    },
+    {
+      "menu": "linear_once_calibrated",
+      "f": 2.0,
+      "dimension": 400,
+      "reference_gap": 0.9999999999999996,
+      "ground": -4.0,
+      "actual_band_gap": 0.9585240707300513,
+      "delta": 0.8242263404574073,
+      "global_norm_bound": 0.08288682977129612,
+      "offdiagonal_norm": 0.010051504532930716,
+      "epsilon": 0.0001225788820573949,
+      "conservative_epsilon": 0.008335363979902855,
+      "exact_low": [
+        -0.020776688986329006,
+        -0.014199554261835168,
+        0.014011505672446134,
+        0.020676586318918666
+      ],
+      "first_block": [
+        -0.02071547666605955,
+        -0.01410577630320553,
+        0.014105776303207751,
+        0.020715476666061328
+      ],
+      "encoding_distance": 0.010070697807568885,
+      "actual_source": [
+        -4.0097481439242415,
+        -4.0061645121968885,
+        -3.993835656742397,
+        -3.9902519363592086
+      ],
+      "reference_source": -3.9999999999999982
+    }
+  ],
+  "heldout_comparison": {
+    "normalized": {
+      "response_interval": [
+        0.002184288751053272,
+        0.00234231543923557
+      ],
+      "exact_response": 0.002242293528038064,
+      "heldout_energy_interval": [
+        0.013410719322500726,
+        0.013456869915719594
+      ]
+    },
+    "linear_once_calibrated": {
+      "response_interval": [
+        0.00936646721255648,
+        0.009611624976671267
+      ],
+      "exact_response": 0.009478258836545295,
+      "heldout_energy_interval": [
+        0.020592897784003934,
+        0.020715476666061328
+      ]
+    }
+  },
+  "actual_source_instruments": [
+    {
+      "menu": "normalized",
+      "f": 2.0,
+      "finite_difference_step": 0.0002,
+      "source": -4.000568786721398,
+      "probabilities": [
+        0.3768910058192705,
+        0.6231089941807287
+      ],
+      "source_bound": 16.24807680927192,
+      "system_measurement_energy_change": 0.001013970955339616,
+      "required_apparatus_energy_change": -0.001013970955339616,
+      "readout_permission_and_apparatus_are_inputs": true
+    },
+    {
+      "menu": "linear_once_calibrated",
+      "f": 2.0,
+      "finite_difference_step": 0.0002,
+      "source": -4.004895802054787,
+      "probabilities": [
+        0.37675785112705146,
+        0.6232421488729487
+      ],
+      "source_bound": 16.24807680927192,
+      "system_measurement_energy_change": 0.0010134357502336044,
+      "required_apparatus_energy_change": -0.0010134357502336044,
+      "readout_permission_and_apparatus_are_inputs": true
+    }
+  ],
+  "evidence": [
+    {
+      "name": "small.C_conserved",
+      "residual": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "small.drive_breaks_old_K",
+      "passed": true
+    },
+    {
+      "name": "small.complete_C01_embedding",
+      "residual": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "small.source_embedding",
+      "residual": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "small.all_Jacobi_spectra",
+      "residual": 2.3603665272841412e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "small.complete_low_spectra",
+      "residual": 2.2121037052315357e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "small.complete_low_projector",
+      "residual": 3.267488057524201e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "small.complete_dressed_code",
+      "residual": 1.5891833847114985e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "small.complete_source_matrix",
+      "residual": 3.3158008933340506e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "small.complete_reduced_source_connection",
+      "residual": 7.4062932425524065e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "small.normalized_global_bound",
+      "value": 0.013000000000000006,
+      "upper": 0.013,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "small.old_resonant_K",
+      "residual": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "small.old_window_no_edge_leak",
+      "residual": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "small.reference_ground_sector",
+      "passed": true
+    },
+    {
+      "name": "small.E_isometry",
+      "residual": 8.881784197001252e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "small.J_isometry",
+      "residual": 1.048530329084805e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "small.Gram_strictly_positive",
+      "passed": true
+    },
+    {
+      "name": "small.exact_invariant_low_band",
+      "residual": 1.9687258577238956e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "small.cluster_projector_derivative",
+      "residual": 2.506016323978994e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "small.antihermitian_connection",
+      "residual": 9.213703560465444e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "small.actual_source_identity",
+      "residual": 4.83613148024899e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "small.ordered0.upper",
+      "value": -0.0098927174021326,
+      "upper": -0.00983008908156513,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "small.ordered0.lower",
+      "value": -0.00995732344648173,
+      "upper": -0.0098927174021326,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "small.ordered1.upper",
+      "value": -0.007435930245585309,
+      "upper": -0.007322068415043237,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "small.ordered1.lower",
+      "value": -0.007449302779959837,
+      "upper": -0.007435930245585309,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "small.ordered2.upper",
+      "value": 0.007231149526390923,
+      "upper": 0.007322068415042682,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "small.ordered2.lower",
+      "value": 0.007194834050126082,
+      "upper": 0.007231149526390923,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "small.ordered3.upper",
+      "value": 0.009806648357543857,
+      "upper": 0.009830089081564686,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "small.ordered3.lower",
+      "value": 0.009702854716648085,
+      "upper": 0.009806648357543857,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "small.actual_next_gap",
+      "value": 1.0059657963733284,
+      "upper": 1.0246242156830483,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "small.global_complement_lower",
+      "value": 0.3956322457143875,
+      "upper": 0.40609731338165117,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "small.angle_bound",
+      "value": 0.010676736411551827,
+      "upper": 0.01124632438231274,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "small.canonical_encoding_distance",
+      "value": 0.010676888552891402,
+      "upper": 0.0159047044683139,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "small.full_exact_encoded_dynamics",
+      "residual": 2.74832001952143e-15,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "small.unknown_partner_dynamics",
+      "residual": 1.0992693874452368e-15,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "small.partner_marginal",
+      "residual": 1.4948307407757028e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "small.product_preparation_error",
+      "value": 0.008040847606501544,
+      "upper": 0.021353777105782804,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "small.complete_source_energy",
+      "residual": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "small.K_exchange_entirely_in_control_source",
+      "residual": 1.1322097734007351e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "small.charge_operator_dictionary",
+      "residual": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "small.charge_exchange_source",
+      "residual": 9.930136612989092e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "small.conserved_total_energy",
+      "residual": 2.8534792052005467e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "small.all_energy_changes_close",
+      "residual": 2.793866924728765e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "small.source_covariant_chart",
+      "residual": 8.015413070832279e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "small.nonzero_chart_connection_term",
+      "passed": true
+    },
+    {
+      "name": "large.complete_C01_dimension",
+      "passed": true
+    },
+    {
+      "name": "large.includes_old_L64_window",
+      "passed": true
+    },
+    {
+      "name": "normalized.actual_global_norm",
+      "value": 0.013000000000000012,
+      "upper": 0.013,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f1.reference_ground_sector",
+      "passed": true
+    },
+    {
+      "name": "normalized.f1.E_isometry",
+      "residual": 4.440892098500626e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f1.J_isometry",
+      "residual": 1.7202058276216678e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f1.Gram_strictly_positive",
+      "passed": true
+    },
+    {
+      "name": "normalized.f1.exact_invariant_low_band",
+      "residual": 4.822276779418191e-14,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f1.cluster_projector_derivative",
+      "residual": 2.859884139830013e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f1.antihermitian_connection",
+      "residual": 7.534875925975379e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f1.actual_source_identity",
+      "residual": 1.8837158064239386e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f1.ordered0.upper",
+      "value": -0.011273481833214305,
+      "upper": -0.0112264305714469,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f1.ordered0.lower",
+      "value": -0.01133830666641033,
+      "upper": -0.011273481833214305,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f1.ordered1.upper",
+      "value": -0.008373540151780823,
+      "upper": -0.008276063755132457,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f1.ordered1.lower",
+      "value": -0.008387939850095888,
+      "upper": -0.008373540151780823,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f1.ordered2.upper",
+      "value": 0.00819274421935412,
+      "upper": 0.008276063755133345,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f1.ordered2.lower",
+      "value": 0.008164187660169913,
+      "upper": 0.00819274421935412,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f1.ordered3.upper",
+      "value": 0.011204507778090123,
+      "upper": 0.011226430571447454,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f1.ordered3.lower",
+      "value": 0.011114554476484023,
+      "upper": 0.011204507778090123,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f1.actual_next_gap",
+      "value": 0.9639999999999999,
+      "upper": 0.979312822483045,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f1.global_complement_lower",
+      "value": -0.01800000000000033,
+      "upper": -0.009482669738865104,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f1.angle_bound",
+      "value": 0.010080396967001238,
+      "upper": 0.010772838085597349,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f1.canonical_encoding_distance",
+      "value": 0.010080525011883721,
+      "upper": 0.015235093725901181,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f1.full_exact_encoded_dynamics",
+      "residual": 1.1284577954965712e-14,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "normalized.f1.unknown_partner_dynamics",
+      "residual": 5.7627007874333766e-15,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "normalized.f1.partner_marginal",
+      "residual": 1.2185237335442336e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f1.product_preparation_error",
+      "value": 0.0073797242742919145,
+      "upper": 0.020161050023767443,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "normalized.f1.complete_source_energy",
+      "residual": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f1.K_exchange_entirely_in_control_source",
+      "residual": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f1.charge_operator_dictionary",
+      "residual": 2.297276530139236e-14,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f1.charge_exchange_source",
+      "residual": 3.751148881127581e-13,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f1.conserved_total_energy",
+      "residual": 3.805034843136597e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f1.all_energy_changes_close",
+      "residual": 4.027926131724815e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f1.source_covariant_chart",
+      "residual": 1.9225528316277095e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f1.nonzero_chart_connection_term",
+      "passed": true
+    },
+    {
+      "name": "normalized.f2.reference_ground_sector",
+      "passed": true
+    },
+    {
+      "name": "normalized.f2.E_isometry",
+      "residual": 8.881784197001252e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f2.J_isometry",
+      "residual": 2.498459967913608e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f2.Gram_strictly_positive",
+      "passed": true
+    },
+    {
+      "name": "normalized.f2.exact_invariant_low_band",
+      "residual": 7.02088851116638e-14,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f2.cluster_projector_derivative",
+      "residual": 2.7989046534526802e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f2.antihermitian_connection",
+      "residual": 4.696569892173005e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f2.actual_source_identity",
+      "residual": 4.058655767830686e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f2.ordered0.upper",
+      "value": -0.013467815525957327,
+      "upper": -0.013456869915717817,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f2.ordered0.lower",
+      "value": -0.013503020508936685,
+      "upper": -0.013467815525957327,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f2.ordered1.upper",
+      "value": -0.010683035142481145,
+      "upper": -0.01064382640173811,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f2.ordered1.lower",
+      "value": -0.010689976994956978,
+      "upper": -0.010683035142481145,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f2.ordered2.upper",
+      "value": 0.010608067585545111,
+      "upper": 0.01064382640174033,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f2.ordered2.lower",
+      "value": 0.010597675808521462,
+      "upper": 0.010608067585545111,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f2.ordered3.upper",
+      "value": 0.013446801306128187,
+      "upper": 0.013456869915719594,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f2.ordered3.lower",
+      "value": 0.013410719322500726,
+      "upper": 0.013446801306128187,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f2.actual_next_gap",
+      "value": 0.9639999999999995,
+      "upper": 0.9740644885608458,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f2.global_complement_lower",
+      "value": -3.0180000000000002,
+      "upper": -3.012488710133026,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f2.angle_bound",
+      "value": 0.006459812551543282,
+      "upper": 0.006919108277492958,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f2.canonical_encoding_distance",
+      "value": 0.00645984624749209,
+      "upper": 0.009785096765558486,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f2.full_exact_encoded_dynamics",
+      "residual": 8.821939179703502e-15,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "normalized.f2.unknown_partner_dynamics",
+      "residual": 5.459899668746949e-15,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "normalized.f2.partner_marginal",
+      "residual": 1.2169412469200328e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f2.product_preparation_error",
+      "value": 0.004731639634855513,
+      "upper": 0.01291969249498418,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "normalized.f2.complete_source_energy",
+      "residual": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f2.K_exchange_entirely_in_control_source",
+      "residual": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f2.charge_operator_dictionary",
+      "residual": 2.297276530139236e-14,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f2.charge_exchange_source",
+      "residual": 7.502293549008213e-13,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f2.conserved_total_energy",
+      "residual": 1.336682746891149e-14,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f2.all_energy_changes_close",
+      "residual": 1.8424834180965253e-14,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f2.source_covariant_chart",
+      "residual": 3.3952934440339343e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f2.nonzero_chart_connection_term",
+      "passed": true
+    },
+    {
+      "name": "linear_once_calibrated.actual_global_norm",
+      "value": 0.0816588088499017,
+      "upper": 0.08288682977129612,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "linear_once_calibrated.f1.reference_ground_sector",
+      "passed": true
+    },
+    {
+      "name": "linear_once_calibrated.f1.E_isometry",
+      "residual": 4.440892098500626e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "linear_once_calibrated.f1.J_isometry",
+      "residual": 2.082297037957885e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "linear_once_calibrated.f1.Gram_strictly_positive",
+      "passed": true
+    },
+    {
+      "name": "linear_once_calibrated.f1.exact_invariant_low_band",
+      "residual": 4.86730064782608e-14,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "linear_once_calibrated.f1.cluster_projector_derivative",
+      "residual": 2.6327054601440825e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "linear_once_calibrated.f1.antihermitian_connection",
+      "residual": 6.386573637890029e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "linear_once_calibrated.f1.actual_source_identity",
+      "residual": 1.523445771423096e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "linear_once_calibrated.f1.ordered0.upper",
+      "value": -0.011298370010225822,
+      "upper": -0.0112264305714469,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "linear_once_calibrated.f1.ordered0.lower",
+      "value": -0.011349009453504293,
+      "upper": -0.011298370010225822,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "linear_once_calibrated.f1.ordered1.upper",
+      "value": -0.008372677968191855,
+      "upper": -0.008276063755132457,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "linear_once_calibrated.f1.ordered1.lower",
+      "value": -0.00839864263718985,
+      "upper": -0.008372677968191855,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "linear_once_calibrated.f1.ordered2.upper",
+      "value": 0.00818475598172863,
+      "upper": 0.008276063755133345,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "linear_once_calibrated.f1.ordered2.lower",
+      "value": 0.00815348487307595,
+      "upper": 0.00818475598172863,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "linear_once_calibrated.f1.ordered3.upper",
+      "value": 0.011198327482373371,
+      "upper": 0.011226430571447454,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "linear_once_calibrated.f1.ordered3.lower",
+      "value": 0.01110385168939006,
+      "upper": 0.011198327482373371,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "linear_once_calibrated.f1.actual_next_gap",
+      "value": 0.8242263404574076,
+      "upper": 0.9774589433981242,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "linear_once_calibrated.f1.global_complement_lower",
+      "value": -0.08788682977129646,
+      "upper": -0.011342729119502615,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "linear_once_calibrated.f1.angle_bound",
+      "value": 0.009984359589113392,
+      "upper": 0.012195078025961406,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "linear_once_calibrated.f1.canonical_encoding_distance",
+      "value": 0.009984484008941273,
+      "upper": 0.017246444738512733,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "linear_once_calibrated.f1.full_exact_encoded_dynamics",
+      "residual": 8.086127633068301e-15,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "linear_once_calibrated.f1.unknown_partner_dynamics",
+      "residual": 4.718787747437967e-15,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "linear_once_calibrated.f1.partner_marginal",
+      "residual": 8.557659433278562e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "linear_once_calibrated.f1.product_preparation_error",
+      "value": 0.00717281393341682,
+      "upper": 0.019968968017882546,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "linear_once_calibrated.f1.complete_source_energy",
+      "residual": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "linear_once_calibrated.f1.K_exchange_entirely_in_control_source",
+      "residual": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "linear_once_calibrated.f1.charge_operator_dictionary",
+      "residual": 2.297276530139236e-14,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "linear_once_calibrated.f1.charge_exchange_source",
+      "residual": 3.751198665839921e-13,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "linear_once_calibrated.f1.conserved_total_energy",
+      "residual": 3.5322792998946717e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "linear_once_calibrated.f1.all_energy_changes_close",
+      "residual": 4.037621809152768e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "linear_once_calibrated.f1.source_covariant_chart",
+      "residual": 1.4996182786288237e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "linear_once_calibrated.f1.nonzero_chart_connection_term",
+      "passed": true
+    },
+    {
+      "name": "linear_once_calibrated.f2.reference_ground_sector",
+      "passed": true
+    },
+    {
+      "name": "linear_once_calibrated.f2.E_isometry",
+      "residual": 8.881784197001252e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "linear_once_calibrated.f2.J_isometry",
+      "residual": 1.6672397384418462e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "linear_once_calibrated.f2.Gram_strictly_positive",
+      "passed": true
+    },
+    {
+      "name": "linear_once_calibrated.f2.exact_invariant_low_band",
+      "residual": 5.6393672292714306e-14,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "linear_once_calibrated.f2.cluster_projector_derivative",
+      "residual": 2.4595814861145443e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "linear_once_calibrated.f2.antihermitian_connection",
+      "residual": 1.7542891620270204e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "linear_once_calibrated.f2.actual_source_identity",
+      "residual": 4.917076752672023e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "linear_once_calibrated.f2.ordered0.upper",
+      "value": -0.020776688986329006,
+      "upper": -0.02071547666605955,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "linear_once_calibrated.f2.ordered0.lower",
+      "value": -0.020838055548116945,
+      "upper": -0.020776688986329006,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "linear_once_calibrated.f2.ordered1.upper",
+      "value": -0.014199554261835168,
+      "upper": -0.01410577630320553,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "linear_once_calibrated.f2.ordered1.lower",
+      "value": -0.014228355185262925,
+      "upper": -0.014199554261835168,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "linear_once_calibrated.f2.ordered2.upper",
+      "value": 0.014011505672446134,
+      "upper": 0.014105776303207751,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "linear_once_calibrated.f2.ordered2.lower",
+      "value": 0.013983197421150357,
+      "upper": 0.014011505672446134,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "linear_once_calibrated.f2.ordered3.upper",
+      "value": 0.020676586318918666,
+      "upper": 0.020715476666061328,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "linear_once_calibrated.f2.ordered3.lower",
+      "value": 0.020592897784003934,
+      "upper": 0.020676586318918666,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "linear_once_calibrated.f2.actual_next_gap",
+      "value": 0.8242263404574073,
+      "upper": 0.9585240707300513,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "linear_once_calibrated.f2.global_complement_lower",
+      "value": -3.0878868297712962,
+      "upper": -3.02079934295103,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "linear_once_calibrated.f2.angle_bound",
+      "value": 0.010070570136804473,
+      "upper": 0.012195078025961412,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "linear_once_calibrated.f2.canonical_encoding_distance",
+      "value": 0.010070697807568885,
+      "upper": 0.01724644473851274,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "linear_once_calibrated.f2.full_exact_encoded_dynamics",
+      "residual": 1.6636157917237223e-14,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "linear_once_calibrated.f2.unknown_partner_dynamics",
+      "residual": 9.64510300185377e-15,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "linear_once_calibrated.f2.partner_marginal",
+      "residual": 1.6699836028103806e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "linear_once_calibrated.f2.product_preparation_error",
+      "value": 0.00717281335687662,
+      "upper": 0.02014139561513777,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "linear_once_calibrated.f2.complete_source_energy",
+      "residual": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "linear_once_calibrated.f2.K_exchange_entirely_in_control_source",
+      "residual": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "linear_once_calibrated.f2.charge_operator_dictionary",
+      "residual": 2.297276530139236e-14,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "linear_once_calibrated.f2.charge_exchange_source",
+      "residual": 7.50231844150225e-13,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "linear_once_calibrated.f2.conserved_total_energy",
+      "residual": 1.1422775456860784e-14,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "linear_once_calibrated.f2.all_energy_changes_close",
+      "residual": 1.2767735475310589e-14,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "linear_once_calibrated.f2.source_covariant_chart",
+      "residual": 5.4002043505434996e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "linear_once_calibrated.f2.nonzero_chart_connection_term",
+      "passed": true
+    },
+    {
+      "name": "calibration.only_first_block_fixed",
+      "residual": 2.6020852139652106e-18,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "calibration.full_parent_spectra_not_claimed_equal",
+      "passed": true
+    },
+    {
+      "name": "normalized.finite_response_lower",
+      "value": 0.002184288751053272,
+      "upper": 0.002242293528038064,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.finite_response_upper",
+      "value": 0.002242293528038064,
+      "upper": 0.00234231543923557,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "linear_once_calibrated.finite_response_lower",
+      "value": 0.00936646721255648,
+      "upper": 0.009478258836545295,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "linear_once_calibrated.finite_response_upper",
+      "value": 0.009478258836545295,
+      "upper": 0.009611624976671267,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "heldout.energy_intervals_disjoint",
+      "passed": true
+    },
+    {
+      "name": "heldout.finite_source_response_intervals_disjoint",
+      "passed": true
+    },
+    {
+      "name": "normalized.source.Jprime_finite_difference",
+      "residual": 5.164579410137201e-08,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "normalized.source.hdprime_finite_difference",
+      "residual": 5.777766434278991e-11,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "normalized.source.full_Hellmann_Feynman",
+      "residual": 7.5963267666015e-11,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "normalized.source.excitation_Hellmann_Feynman",
+      "residual": 8.10790929029563e-11,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "normalized.source.source_operator_bound",
+      "value": 15.264624201947388,
+      "upper": 16.24807680927192,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.source.source_instrument_completeness",
+      "residual": 5.191414469811499e-14,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.source.source_probabilities",
+      "residual": 7.771561172376096e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.source.actual_source_readout",
+      "residual": 3.552713678800501e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.source.measurement_keeps_unknown_partner",
+      "residual": 2.7761124593202596e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.source.measurement_energy_not_free",
+      "passed": true
+    },
+    {
+      "name": "linear_once_calibrated.source.Jprime_finite_difference",
+      "residual": 5.164530445925455e-08,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "linear_once_calibrated.source.hdprime_finite_difference",
+      "residual": 1.9664588312629118e-11,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "linear_once_calibrated.source.full_Hellmann_Feynman",
+      "residual": 3.4848857897263316e-11,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "linear_once_calibrated.source.excitation_Hellmann_Feynman",
+      "residual": 3.9817405860707864e-11,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "linear_once_calibrated.source.source_operator_bound",
+      "value": 15.264624201947388,
+      "upper": 16.24807680927192,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "linear_once_calibrated.source.source_instrument_completeness",
+      "residual": 5.191414469811499e-14,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "linear_once_calibrated.source.source_probabilities",
+      "residual": 2.220446049250313e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "linear_once_calibrated.source.actual_source_readout",
+      "residual": 8.881784197001252e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "linear_once_calibrated.source.measurement_keeps_unknown_partner",
+      "residual": 2.1501792470961827e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "linear_once_calibrated.source.measurement_energy_not_free",
+      "passed": true
+    }
+  ],
+  "scope": {
+    "reference_cutoff_is_exact_model_not_continuum_limit": true,
+    "old_resonant_and_driven_low_band_settings_distinct": true,
+    "Dirac_free_kernel_is_inherited_input": true,
+    "dressed_preparation_permission_is_input": true,
+    "phase_and_source_control_not_free": true,
+    "Higgs_identity_not_certified": true,
+    "flavor_copies_not_scanned": true,
+    "new_axioms": 0
+  },
+  "source_bindings": {
+    "1326/independent_check.py": "e2d6ee26fbbe9081ea2e253be45ae494becee3e117f253ca5b9e9669be6490fc",
+    "1326/proof.md": "135283e3dd25d9f0dfb87d4f9e04f2e8c4c146634fd16c73085e05bacc1f3c03",
+    "_admission/round1326_admission.md": "18bb6035737f8e4b951f4156058b2fee407092cc044d48261c3de58572a4f5ae",
+    "1325/proof.md": "30e291fcd272c92b05cf8786175a1f60aa532485aa96b468c30d3cf22d00634a",
+    "_admission/driven_reference_math_screen_after1325.md": "869ea4f82839180fa02342e1f9d459f579c1f708168aa81ed81e9737dc82e49d"
+  }
+}

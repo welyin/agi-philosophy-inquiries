@@ -1,0 +1,1532 @@
+{
+  "round": 1327,
+  "status": "PASS",
+  "stage_complete": false,
+  "new_axioms": 0,
+  "construction": "Explicit binomial reference splitting with independent tuple-CAR signs; no author imports or highest-weight ladder in dressing.",
+  "residual_norm": "Frobenius",
+  "check_count": 276,
+  "max_residual": 5.255443868825175e-13,
+  "cases": [
+    {
+      "n": 2,
+      "q": 1,
+      "N": 1,
+      "physical_dimension": 8,
+      "dressed_dimension": 8,
+      "dark_dimension": 0,
+      "maximum_spin_multiplicity": 8,
+      "sample_record_work": 0.008507943615622349
+    },
+    {
+      "n": 2,
+      "q": 1,
+      "N": 3,
+      "physical_dimension": 20,
+      "dressed_dimension": 16,
+      "dark_dimension": 4,
+      "maximum_spin_multiplicity": 16,
+      "sample_record_work": 0.0029023456230046207
+    },
+    {
+      "n": 2,
+      "q": 2,
+      "N": 2,
+      "physical_dimension": 25,
+      "dressed_dimension": 18,
+      "dark_dimension": 7,
+      "maximum_spin_multiplicity": 18,
+      "sample_record_work": 0.012279643272130158
+    },
+    {
+      "n": 2,
+      "q": 2,
+      "N": 3,
+      "physical_dimension": 40,
+      "dressed_dimension": 24,
+      "dark_dimension": 16,
+      "maximum_spin_multiplicity": 24,
+      "sample_record_work": 0.009262619464061927
+    },
+    {
+      "n": 2,
+      "q": 3,
+      "N": 2,
+      "physical_dimension": 20,
+      "dressed_dimension": 12,
+      "dark_dimension": 8,
+      "maximum_spin_multiplicity": 12,
+      "sample_record_work": null
+    },
+    {
+      "n": 2,
+      "q": 4,
+      "N": 2,
+      "physical_dimension": 6,
+      "dressed_dimension": 3,
+      "dark_dimension": 3,
+      "maximum_spin_multiplicity": 3,
+      "sample_record_work": null
+    },
+    {
+      "n": 3,
+      "q": 2,
+      "N": 3,
+      "physical_dimension": 96,
+      "dressed_dimension": 60,
+      "dark_dimension": 36,
+      "maximum_spin_multiplicity": 60,
+      "sample_record_work": 0.029316340755102033
+    },
+    {
+      "n": 3,
+      "q": 3,
+      "N": 3,
+      "physical_dimension": 168,
+      "dressed_dimension": 80,
+      "dark_dimension": 88,
+      "maximum_spin_multiplicity": 80,
+      "sample_record_work": 0.03589851706858482
+    }
+  ],
+  "holdouts": [
+    {
+      "N": 2,
+      "predicted_old_cap": 0.8888888888888888,
+      "minimum_old_failure": 0.11111111111111116,
+      "observations": [
+        {
+          "rule": "balance",
+          "time": 1.5707963267948966,
+          "success": 0.9999999999999992,
+          "mean_left": 1.9999999999999984,
+          "reference_consumed": 1.9999999999999984
+        },
+        {
+          "rule": "total",
+          "time": 1.5707963267948966,
+          "success": 0.8130030795568045,
+          "mean_left": 1.7372958512461,
+          "reference_consumed": 1.7372958512461
+        },
+        {
+          "rule": "total",
+          "time": 1.8137993642342178,
+          "success": 0.8888888888888893,
+          "mean_left": 1.7777777777777786,
+          "reference_consumed": 1.7777777777777786
+        }
+      ]
+    },
+    {
+      "N": 3,
+      "predicted_old_cap": 0.96,
+      "minimum_old_failure": 0.040000000000000036,
+      "observations": [
+        {
+          "rule": "balance",
+          "time": 1.5707963267948966,
+          "success": 1.0,
+          "mean_left": 2.0,
+          "reference_consumed": 2.0
+        },
+        {
+          "rule": "total",
+          "time": 1.5707963267948966,
+          "success": 0.9245927004486636,
+          "mean_left": 1.8930287234527547,
+          "reference_consumed": 1.8930287234527547
+        },
+        {
+          "rule": "total",
+          "time": 1.7207211628636427,
+          "success": 0.9599999999999983,
+          "mean_left": 1.9199999999999966,
+          "reference_consumed": 1.9199999999999966
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "name": "n2.q1.N1.combinatorial_isometry",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N1.forward_full_map",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N1.backward_full_map",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N1.R_source",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N1.L_source",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N1.reference_source",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N1.whole_K",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N1.whole_Q",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N1.old_occupation_dependence",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N1.one_particle_full_parent_identity",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N1.maximum_spin",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N1.SU2_scalar_forward",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N1.source.M_00.real",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N1.source.M_00.imaginary",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N1.source.M_01.real",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N1.source.M_01.imaginary",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N1.source.M_10.real",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N1.source.M_10.imaginary",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N1.source.M_11.real",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N1.source.M_11.imaginary",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N1.complete_H",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N1.entire_code_time_evolution",
+      "residual": 5.1432414276695424e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N1.dark_code_no_leakage",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N1.full_parent_energy",
+      "residual": 2.298508885491729e-14,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N1.record_branch_0",
+      "residual": 3.6257550216933255e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N1.record_branch_1",
+      "residual": 3.647853191393791e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N1.record_complete_isometry",
+      "residual": 5.801008614172813e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N1.explicit_unknown_partner_branch_normalization",
+      "residual": 1.3322676295501878e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N1.explicit_partner_energy",
+      "residual": 5.329070518200751e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N1.record_work_not_deleted",
+      "residual": 3.2959746043559335e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N1.partner_reference_consumption",
+      "residual": 1.3253287356462806e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N3.combinatorial_isometry",
+      "residual": 1.5700924586837752e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N3.forward_full_map",
+      "residual": 6.761250262025392e-17,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N3.backward_full_map",
+      "residual": 6.269051597143864e-17,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N3.R_source",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N3.L_source",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N3.reference_source",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N3.whole_K",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N3.whole_Q",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N3.old_occupation_dependence",
+      "residual": 6.761250262025392e-17,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N3.one_particle_full_parent_identity",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N3.maximum_spin",
+      "residual": 1.2560739669470201e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N3.SU2_scalar_forward",
+      "residual": 8.710402251301241e-17,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N3.source.M_00.real",
+      "residual": 3.1401849173675503e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N3.source.M_00.imaginary",
+      "residual": 3.1401849173675503e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N3.source.M_01.real",
+      "residual": 3.1401849173675503e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N3.source.M_01.imaginary",
+      "residual": 3.1401849173675503e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N3.source.M_10.real",
+      "residual": 3.1401849173675503e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N3.source.M_10.imaginary",
+      "residual": 3.1401849173675503e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N3.source.M_11.real",
+      "residual": 3.1401849173675503e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N3.source.M_11.imaginary",
+      "residual": 3.1401849173675503e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N3.complete_H",
+      "residual": 9.22038573126908e-17,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N3.entire_code_time_evolution",
+      "residual": 1.1372950957606035e-14,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N3.dark_code_no_leakage",
+      "residual": 1.044541354741179e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N3.full_parent_energy",
+      "residual": 3.781864815312159e-14,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N3.record_branch_0",
+      "residual": 8.816366488137356e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N3.record_branch_1",
+      "residual": 7.184406407697202e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N3.record_complete_isometry",
+      "residual": 6.098456251330922e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N3.explicit_unknown_partner_branch_normalization",
+      "residual": 1.2212453270876722e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N3.explicit_partner_energy",
+      "residual": 5.329070518200751e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N3.record_work_not_deleted",
+      "residual": 1.6874522612564391e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q1.N3.partner_reference_consumption",
+      "residual": 3.3169074161501834e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N2.combinatorial_isometry",
+      "residual": 4.965068306494546e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N2.forward_full_map",
+      "residual": 5.1162272392247504e-17,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N2.backward_full_map",
+      "residual": 2.7755575615628914e-17,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N2.R_source",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N2.L_source",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N2.reference_source",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N2.whole_K",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N2.whole_Q",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N2.old_occupation_dependence",
+      "residual": 8.542877728641914e-17,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N2.maximum_spin",
+      "residual": 4.440892098500626e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N2.SU2_scalar_forward",
+      "residual": 8.15873481018251e-17,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N2.source.M_00.real",
+      "residual": 1.5700924586837752e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N2.source.M_00.imaginary",
+      "residual": 1.5700924586837752e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N2.source.M_01.real",
+      "residual": 1.5700924586837752e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N2.source.M_01.imaginary",
+      "residual": 1.5700924586837752e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N2.source.M_10.real",
+      "residual": 1.5700924586837752e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N2.source.M_10.imaginary",
+      "residual": 1.5700924586837752e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N2.source.M_11.real",
+      "residual": 1.5700924586837752e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N2.source.M_11.imaginary",
+      "residual": 1.5700924586837752e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N2.complete_H",
+      "residual": 3.5531904583951425e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N2.entire_code_time_evolution",
+      "residual": 2.5803791783386668e-14,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N2.dark_code_no_leakage",
+      "residual": 3.9738052134902384e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N2.full_parent_energy",
+      "residual": 7.933190809379317e-14,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N2.record_branch_0",
+      "residual": 5.501252886018756e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N2.record_branch_1",
+      "residual": 2.2311954324664487e-14,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N2.record_branch_2",
+      "residual": 1.1736634155435252e-14,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N2.record_complete_isometry",
+      "residual": 8.227604080959469e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N2.explicit_unknown_partner_branch_normalization",
+      "residual": 2.220446049250313e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N2.explicit_partner_energy",
+      "residual": 1.7798229048217483e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N2.record_work_not_deleted",
+      "residual": 1.0477729794899915e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N2.partner_reference_consumption",
+      "residual": 6.245004513516506e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N3.combinatorial_isometry",
+      "residual": 2.7194799110210365e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N3.forward_full_map",
+      "residual": 8.145305756061422e-17,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N3.backward_full_map",
+      "residual": 9.476100656760399e-17,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N3.R_source",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N3.L_source",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N3.reference_source",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N3.whole_K",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N3.whole_Q",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N3.old_occupation_dependence",
+      "residual": 1.166776895379709e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N3.maximum_spin",
+      "residual": 1.7763568394002505e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N3.SU2_scalar_forward",
+      "residual": 1.632246283703578e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N3.source.M_00.real",
+      "residual": 3.5147137125587117e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N3.source.M_00.imaginary",
+      "residual": 3.5147137125587117e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N3.source.M_01.real",
+      "residual": 3.5147137125587117e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N3.source.M_01.imaginary",
+      "residual": 3.5147137125587117e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N3.source.M_10.real",
+      "residual": 3.514713712558711e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N3.source.M_10.imaginary",
+      "residual": 3.514713712558711e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N3.source.M_11.real",
+      "residual": 3.514713712558711e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N3.source.M_11.imaginary",
+      "residual": 3.514713712558711e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N3.complete_H",
+      "residual": 7.537479646729703e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N3.entire_code_time_evolution",
+      "residual": 2.921666816669316e-14,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N3.dark_code_no_leakage",
+      "residual": 1.7569145561058857e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N3.full_parent_energy",
+      "residual": 1.2835811408102462e-13,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N3.record_branch_0",
+      "residual": 1.0218624139757213e-14,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N3.record_branch_1",
+      "residual": 2.559654887546264e-14,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N3.record_branch_2",
+      "residual": 9.695880832553837e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N3.record_complete_isometry",
+      "residual": 9.211218684394745e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N3.explicit_unknown_partner_branch_normalization",
+      "residual": 4.440892098500626e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N3.explicit_partner_energy",
+      "residual": 3.568292035180542e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N3.record_work_not_deleted",
+      "residual": 9.107298248878237e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q2.N3.partner_reference_consumption",
+      "residual": 5.785972455716595e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q3.N2.combinatorial_isometry",
+      "residual": 4.440892098500626e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q3.N2.forward_full_map",
+      "residual": 1.783811457476119e-17,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q3.N2.backward_full_map",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q3.N2.R_source",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q3.N2.L_source",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q3.N2.reference_source",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q3.N2.whole_K",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q3.N2.whole_Q",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q3.N2.old_occupation_dependence",
+      "residual": 8.291205168061015e-17,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q3.N2.maximum_spin",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q3.N2.SU2_scalar_forward",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q3.N2.source.M_00.real",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q3.N2.source.M_00.imaginary",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q3.N2.source.M_01.real",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q3.N2.source.M_01.imaginary",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q3.N2.source.M_10.real",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q3.N2.source.M_10.imaginary",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q3.N2.source.M_11.real",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q3.N2.source.M_11.imaginary",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q3.N2.complete_H",
+      "residual": 3.552758460952246e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q3.N2.entire_code_time_evolution",
+      "residual": 1.660981138168928e-14,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q3.N2.dark_code_no_leakage",
+      "residual": 3.626418260429555e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q3.N2.full_parent_energy",
+      "residual": 9.340166367456459e-14,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q3.N2.record_branch_0",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q3.N2.record_branch_1",
+      "residual": 1.1008907193249416e-14,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q3.N2.record_branch_2",
+      "residual": 1.2437435288101645e-14,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q3.N2.record_branch_3",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q3.N2.record_complete_isometry",
+      "residual": 6.103977937732276e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q4.N2.combinatorial_isometry",
+      "residual": 2.220446049250313e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q4.N2.forward_full_map",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q4.N2.backward_full_map",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q4.N2.R_source",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q4.N2.L_source",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q4.N2.reference_source",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q4.N2.whole_K",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q4.N2.whole_Q",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q4.N2.old_occupation_dependence",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q4.N2.maximum_spin",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q4.N2.SU2_scalar_forward",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q4.N2.source.M_00.real",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q4.N2.source.M_00.imaginary",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q4.N2.source.M_01.real",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q4.N2.source.M_01.imaginary",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q4.N2.source.M_10.real",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q4.N2.source.M_10.imaginary",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q4.N2.source.M_11.real",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q4.N2.source.M_11.imaginary",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q4.N2.complete_H",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q4.N2.entire_code_time_evolution",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q4.N2.dark_code_no_leakage",
+      "residual": 3.5561121113877425e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q4.N2.full_parent_energy",
+      "residual": 4.3518139581870305e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q4.N2.record_branch_0",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q4.N2.record_branch_1",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q4.N2.record_branch_2",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q4.N2.record_branch_3",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q4.N2.record_branch_4",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n2.q4.N2.record_complete_isometry",
+      "residual": 1.9239695004853253e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q2.N3.combinatorial_isometry",
+      "residual": 4.2998752849492583e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q2.N3.forward_full_map",
+      "residual": 2.566870896690761e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q2.N3.backward_full_map",
+      "residual": 2.8061799764294005e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q2.N3.R_source",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q2.N3.L_source",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q2.N3.reference_source",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q2.N3.whole_K",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q2.N3.whole_Q",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q2.N3.old_occupation_dependence",
+      "residual": 3.2148953222939804e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q2.N3.maximum_spin",
+      "residual": 2.6645352591003757e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q2.N3.SU2_scalar_forward",
+      "residual": 4.252836788131377e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q2.N3.source.M_00.real",
+      "residual": 4.967812811019206e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q2.N3.source.M_00.imaginary",
+      "residual": 4.967812811019206e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q2.N3.source.M_01.real",
+      "residual": 4.967812811019206e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q2.N3.source.M_01.imaginary",
+      "residual": 4.967812811019206e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q2.N3.source.M_02.real",
+      "residual": 4.967812811019207e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q2.N3.source.M_02.imaginary",
+      "residual": 4.967812811019207e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q2.N3.source.M_10.real",
+      "residual": 4.967812811019206e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q2.N3.source.M_10.imaginary",
+      "residual": 4.967812811019206e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q2.N3.source.M_11.real",
+      "residual": 4.967812811019206e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q2.N3.source.M_11.imaginary",
+      "residual": 4.967812811019206e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q2.N3.source.M_12.real",
+      "residual": 4.967812811019207e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q2.N3.source.M_12.imaginary",
+      "residual": 4.967812811019207e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q2.N3.source.M_20.real",
+      "residual": 4.967812811019206e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q2.N3.source.M_20.imaginary",
+      "residual": 4.967812811019206e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q2.N3.source.M_21.real",
+      "residual": 4.967812811019206e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q2.N3.source.M_21.imaginary",
+      "residual": 4.967812811019206e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q2.N3.source.M_22.real",
+      "residual": 4.967812811019207e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q2.N3.source.M_22.imaginary",
+      "residual": 4.967812811019207e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q2.N3.complete_H",
+      "residual": 1.1311061018684667e-14,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q2.N3.entire_code_time_evolution",
+      "residual": 7.301595114862808e-14,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q2.N3.dark_code_no_leakage",
+      "residual": 2.7927458696156435e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q2.N3.full_parent_energy",
+      "residual": 2.690452878071136e-13,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q2.N3.record_branch_0",
+      "residual": 2.677989229616699e-14,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q2.N3.record_branch_1",
+      "residual": 5.805178263456064e-14,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q2.N3.record_branch_2",
+      "residual": 3.5272610106062e-14,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q2.N3.record_complete_isometry",
+      "residual": 2.225035968993638e-14,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q2.N3.explicit_unknown_partner_branch_normalization",
+      "residual": 4.440892098500626e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q2.N3.explicit_partner_energy",
+      "residual": 3.5596458096434965e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q2.N3.record_work_not_deleted",
+      "residual": 4.996003610813204e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q2.N3.partner_reference_consumption",
+      "residual": 2.054662609310059e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q3.N3.combinatorial_isometry",
+      "residual": 5.874748045952207e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q3.N3.forward_full_map",
+      "residual": 2.1978685907338302e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q3.N3.backward_full_map",
+      "residual": 2.600971861550125e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q3.N3.R_source",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q3.N3.L_source",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q3.N3.reference_source",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q3.N3.whole_K",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q3.N3.whole_Q",
+      "residual": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q3.N3.old_occupation_dependence",
+      "residual": 3.5439812701638334e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q3.N3.maximum_spin",
+      "residual": 2.589462819655575e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q3.N3.SU2_scalar_forward",
+      "residual": 4.626893612498669e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q3.N3.source.M_00.real",
+      "residual": 4.447026456506095e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q3.N3.source.M_00.imaginary",
+      "residual": 4.447026456506095e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q3.N3.source.M_01.real",
+      "residual": 4.447026456506095e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q3.N3.source.M_01.imaginary",
+      "residual": 4.447026456506095e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q3.N3.source.M_02.real",
+      "residual": 4.447026456506095e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q3.N3.source.M_02.imaginary",
+      "residual": 4.447026456506095e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q3.N3.source.M_10.real",
+      "residual": 4.447026456506095e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q3.N3.source.M_10.imaginary",
+      "residual": 4.447026456506095e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q3.N3.source.M_11.real",
+      "residual": 4.447026456506095e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q3.N3.source.M_11.imaginary",
+      "residual": 4.447026456506095e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q3.N3.source.M_12.real",
+      "residual": 4.447026456506095e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q3.N3.source.M_12.imaginary",
+      "residual": 4.447026456506095e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q3.N3.source.M_20.real",
+      "residual": 3.853007091510971e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q3.N3.source.M_20.imaginary",
+      "residual": 3.853007091510971e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q3.N3.source.M_21.real",
+      "residual": 4.443960335972321e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q3.N3.source.M_21.imaginary",
+      "residual": 4.443960335972321e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q3.N3.source.M_22.real",
+      "residual": 4.443960335972321e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q3.N3.source.M_22.imaginary",
+      "residual": 4.443960335972321e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q3.N3.complete_H",
+      "residual": 2.4358558199036906e-14,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q3.N3.entire_code_time_evolution",
+      "residual": 1.1297668954230902e-13,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q3.N3.dark_code_no_leakage",
+      "residual": 7.288347537538311e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q3.N3.full_parent_energy",
+      "residual": 5.255443868825175e-13,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q3.N3.record_branch_0",
+      "residual": 1.5702100275831778e-14,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q3.N3.record_branch_1",
+      "residual": 6.701822354932093e-14,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q3.N3.record_branch_2",
+      "residual": 8.536628551531469e-14,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q3.N3.record_branch_3",
+      "residual": 2.7172254902345076e-14,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q3.N3.record_complete_isometry",
+      "residual": 2.3097598075252667e-14,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q3.N3.explicit_unknown_partner_branch_normalization",
+      "residual": 2.220446049250313e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q3.N3.explicit_partner_energy",
+      "residual": 2.665234839064175e-14,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q3.N3.record_work_not_deleted",
+      "residual": 8.81239525796218e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "n3.q3.N3.partner_reference_consumption",
+      "residual": 6.1618002989102115e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "holdout.N2.balance.t1.57079633.all_unknown_reference_success",
+      "residual": 2.128965487129847e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "holdout.N2.balance.t1.57079633.whole_reference",
+      "residual": 4.257930974259694e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "holdout.N2.total.t1.57079633.all_unknown_reference_success",
+      "residual": 6.209968000220047e-16,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "holdout.N2.total.t1.57079633.whole_reference",
+      "residual": 3.2708029549210083e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "holdout.N2.total.t1.81379936.all_unknown_reference_success",
+      "residual": 1.1863571124558208e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "holdout.N2.total.t1.81379936.whole_reference",
+      "residual": 3.66570649065093e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "holdout.N3.balance.t1.57079633.all_unknown_reference_success",
+      "residual": 1.36247929044704e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "holdout.N3.balance.t1.57079633.whole_reference",
+      "residual": 4.268868749949482e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "holdout.N3.total.t1.57079633.all_unknown_reference_success",
+      "residual": 3.0792572768105174e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "holdout.N3.total.t1.57079633.whole_reference",
+      "residual": 1.0271961254038558e-14,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "holdout.N3.total.t1.72072116.all_unknown_reference_success",
+      "residual": 3.553933377251767e-15,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "holdout.N3.total.t1.72072116.whole_reference",
+      "residual": 1.1210837166939899e-14,
+      "tolerance": 3e-10
+    }
+  ]
+}

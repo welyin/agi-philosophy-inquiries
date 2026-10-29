@@ -1,0 +1,1568 @@
+{
+  "round": 1330,
+  "status": "PASS",
+  "new_axioms": 0,
+  "provenance": {
+    "1330/proof.md": "9a28a2faacf8379fe6a14d28483b7e6e280c01de1b051507d990cbcff2ebfbcc",
+    "1330/check.py": "b260be8ab8446230a66666b4618a87cee9d07761937a7f9aad773183b7af9f64",
+    "_admission/round1330_admission.md": "ed92a21e66a29b8ab05fc696656f71f43be958a2a35e0e63143fcb4cbbd41be5",
+    "1329/proof.md": "d3b7a3faa66ba8b415a96417aaa9a0d4a289295bdde7fa007c720c8e881e7738"
+  },
+  "calibration": {
+    "q": 1,
+    "Ns": [
+      3,
+      3
+    ],
+    "recovery_error": 3.1186261841137197e-18,
+    "gamma": 0.15,
+    "edge_ratios_phases_are_registered_inputs": true,
+    "refits_after_calibration": 0
+  },
+  "cases": [
+    {
+      "q": 1,
+      "Ns": [
+        3,
+        3
+      ],
+      "parent_dimension": 96,
+      "logical_dimension": 8,
+      "actual_input_dimension": 2,
+      "initial_local_occupations": [
+        1,
+        0
+      ],
+      "observed_generator_residual": 0.09425739266914449,
+      "generator_bound": 0.5364365510586755,
+      "exact_residual_decomposition": 3.529906531158615e-18,
+      "orthogonal_gram_residual": 1.734723475976807e-18,
+      "occupation_continuity_residual": 0.0,
+      "edge_reference_current_residual": 0.0,
+      "energy_dictionary_residual": 4.440892098500626e-16,
+      "reference_source_identity_residual": 0.0,
+      "record_intertwiner_residual": 0.0,
+      "edge_sources": [
+        {
+          "sector": "D",
+          "weight": 0,
+          "max_source_intertwiner": 0.0,
+          "passed": true
+        },
+        {
+          "sector": "L",
+          "weight": 1,
+          "max_source_intertwiner": 0.0,
+          "passed": true
+        },
+        {
+          "sector": "U",
+          "weight": 2,
+          "max_source_intertwiner": 0.0,
+          "passed": true
+        }
+      ],
+      "local_sources": [
+        {
+          "site": 0,
+          "sector": "D",
+          "decomposition_residual": 0.0,
+          "passed": true
+        },
+        {
+          "site": 0,
+          "sector": "U",
+          "decomposition_residual": 0.0,
+          "passed": true
+        },
+        {
+          "site": 1,
+          "sector": "D",
+          "decomposition_residual": 0.0,
+          "passed": true
+        },
+        {
+          "site": 1,
+          "sector": "U",
+          "decomposition_residual": 0.0,
+          "passed": true
+        }
+      ],
+      "holdouts": [
+        {
+          "time": 0.7,
+          "full_code_error": 0.06585592359942877,
+          "natural_input_error": 0.06582835352219527,
+          "error_bound": 0.37550558574107284,
+          "receiver_occupation": 0.013259216035227277,
+          "target_receiver_occupation": 0.013263620145192794,
+          "reference_transfers": [
+            0.0208989385564613,
+            -0.013183715597001378
+          ],
+          "edge_currents": [
+            {
+              "sector": "D",
+              "actual": 0.0002153356126165098,
+              "target": 0.00019192279260175785
+            },
+            {
+              "sector": "L",
+              "actual": 0.03741588447460259,
+              "target": 0.03745360758698157
+            },
+            {
+              "sector": "U",
+              "actual": 2.1546741011492476e-05,
+              "target": 3.232460799619374e-05
+            }
+          ],
+          "transverse_reference_probability": 0.0018492194113267598,
+          "complete_record_error": 0.06582835352219525,
+          "records": [
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "probability": 0.013163943036030922
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              "probability": 9.886280485225405e-06
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "probability": 8.53867187111301e-05
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              "probability": 0.9767640925315942
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "probability": 0.0011684844559725807
+            },
+            {
+              "site_counts_D_U_L": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "probability": 0.008808206977206409
+            }
+          ],
+          "current_integral_identity_residual": 8.67819545809572e-18,
+          "max_resource_residual": 4.465598279277051e-16,
+          "passed": true
+        },
+        {
+          "time": 1.8,
+          "full_code_error": 0.16758637848120211,
+          "natural_input_error": 0.16710998699494867,
+          "error_bound": 0.9655857919056159,
+          "receiver_occupation": 0.08473533586627667,
+          "target_receiver_occupation": 0.08492128721001826,
+          "reference_transfers": [
+            0.1311071601278515,
+            -0.0815849713300496
+          ],
+          "edge_currents": [
+            {
+              "sector": "D",
+              "actual": 0.0034300359956054476,
+              "target": 0.003059791894409875
+            },
+            {
+              "sector": "L",
+              "actual": 0.086598369154709,
+              "target": 0.0871969590565267
+            },
+            {
+              "sector": "U",
+              "actual": 0.00035178155637033426,
+              "target": 0.0005281588911292423
+            }
+          ],
+          "transverse_reference_probability": 0.011878053854588198,
+          "complete_record_error": 0.1671099869949487,
+          "records": [
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "probability": 0.08074277626367797
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              "probability": 0.00042109753318595697
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "probability": 0.0035714620694127556
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              "probability": 0.8543054063543781
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "probability": 0.007293716758885512
+            },
+            {
+              "site_counts_D_U_L": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "probability": 0.05366554102045995
+            }
+          ],
+          "current_integral_identity_residual": 1.3997814438059583e-17,
+          "max_resource_residual": 4.494715271010383e-16,
+          "passed": true
+        },
+        {
+          "time": 3.4,
+          "full_code_error": 0.30716954570769694,
+          "natural_input_error": 0.3038238659538667,
+          "error_bound": 1.8238842735994967,
+          "receiver_occupation": 0.2730249924155025,
+          "target_receiver_occupation": 0.2751542771391239,
+          "reference_transfers": [
+            0.39971924729123653,
+            -0.2382923367465466
+          ],
+          "edge_currents": [
+            {
+              "sector": "D",
+              "actual": 0.018824462402993188,
+              "target": 0.016837019495623926
+            },
+            {
+              "sector": "L",
+              "actual": 0.11714706743898771,
+              "target": 0.12040391576836573
+            },
+            {
+              "sector": "U",
+              "actual": 0.0020812202817842513,
+              "target": 0.003132168248855321
+            }
+          ],
+          "transverse_reference_probability": 0.038875337220711265,
+          "complete_record_error": 0.30382386595386673,
+          "records": [
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "probability": 0.22840531334356415
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              "probability": 0.004943511701491128
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "probability": 0.03967616737044726
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              "probability": 0.5567783871219438
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "probability": 0.021751182793409766
+            },
+            {
+              "site_counts_D_U_L": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "probability": 0.14844543766914398
+            }
+          ],
+          "current_integral_identity_residual": 5.5771785987465e-17,
+          "max_resource_residual": 8.950787953684591e-16,
+          "passed": true
+        }
+      ],
+      "recorded_continuation": {
+        "first_time": 0.8,
+        "continuation_time": 1.1,
+        "complete_history_error": 0.12714347650973246,
+        "error_bound": 1.0192294470114835,
+        "receiver_occupation_first": 0.01728590904512846,
+        "receiver_occupation_after_record_and_continuation": 0.04846755158128696,
+        "reference_reset": false,
+        "record_reset": false,
+        "restart_work_operator_norm": 0.0,
+        "max_resource_residual": 2.222153083391462e-15,
+        "passed": true
+      },
+      "passed": true
+    },
+    {
+      "q": 1,
+      "Ns": [
+        5,
+        4
+      ],
+      "parent_dimension": 196,
+      "logical_dimension": 8,
+      "actual_input_dimension": 2,
+      "initial_local_occupations": [
+        1,
+        0
+      ],
+      "observed_generator_residual": 0.0812615122794008,
+      "generator_bound": 0.37633627390487023,
+      "exact_residual_decomposition": 5.222209201006512e-18,
+      "orthogonal_gram_residual": 8.673617379884035e-19,
+      "occupation_continuity_residual": 0.0,
+      "edge_reference_current_residual": 0.0,
+      "energy_dictionary_residual": 4.440892098500626e-16,
+      "reference_source_identity_residual": 0.0,
+      "record_intertwiner_residual": 0.0,
+      "edge_sources": [
+        {
+          "sector": "D",
+          "weight": 0,
+          "max_source_intertwiner": 0.0,
+          "passed": true
+        },
+        {
+          "sector": "L",
+          "weight": 1,
+          "max_source_intertwiner": 0.0,
+          "passed": true
+        },
+        {
+          "sector": "U",
+          "weight": 2,
+          "max_source_intertwiner": 0.0,
+          "passed": true
+        }
+      ],
+      "local_sources": [
+        {
+          "site": 0,
+          "sector": "D",
+          "decomposition_residual": 0.0,
+          "passed": true
+        },
+        {
+          "site": 0,
+          "sector": "U",
+          "decomposition_residual": 0.0,
+          "passed": true
+        },
+        {
+          "site": 1,
+          "sector": "D",
+          "decomposition_residual": 0.0,
+          "passed": true
+        },
+        {
+          "site": 1,
+          "sector": "U",
+          "decomposition_residual": 0.0,
+          "passed": true
+        }
+      ],
+      "holdouts": [
+        {
+          "time": 0.7,
+          "full_code_error": 0.056772244408344545,
+          "natural_input_error": 0.05065467148272426,
+          "error_bound": 0.26343539173340913,
+          "receiver_occupation": 0.01326071162634293,
+          "target_receiver_occupation": 0.013263620145192794,
+          "reference_transfers": [
+            0.019931775453410516,
+            -0.013189912012603777
+          ],
+          "edge_currents": [
+            {
+              "sector": "D",
+              "actual": 0.0002059617139649566,
+              "target": 0.00019192279260175785
+            },
+            {
+              "sector": "L",
+              "actual": 0.03742994169516259,
+              "target": 0.03745360758698157
+            },
+            {
+              "sector": "U",
+              "actual": 2.5382213782673156e-05,
+              "target": 3.232460799619374e-05
+            }
+          ],
+          "transverse_reference_probability": 0.001110674763640752,
+          "complete_record_error": 0.05065467148272424,
+          "records": [
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "probability": 0.0131671038093061
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              "probability": 1.1404101648469953e-05
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "probability": 8.220371538836165e-05
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              "probability": 0.9772636396011654
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "probability": 0.0014022924727111117
+            },
+            {
+              "site_counts_D_U_L": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "probability": 0.008073356299780614
+            }
+          ],
+          "current_integral_identity_residual": 1.0498189672629424e-17,
+          "max_resource_residual": 2.199345554019339e-15,
+          "passed": true
+        },
+        {
+          "time": 1.8,
+          "full_code_error": 0.14441611917248529,
+          "natural_input_error": 0.12888517613437225,
+          "error_bound": 0.6774052930287664,
+          "receiver_occupation": 0.08479840888165179,
+          "target_receiver_occupation": 0.08492128721001826,
+          "reference_transfers": [
+            0.12515910174982192,
+            -0.08184577246530989
+          ],
+          "edge_currents": [
+            {
+              "sector": "D",
+              "actual": 0.0032809864812689228,
+              "target": 0.003059791894409875
+            },
+            {
+              "sector": "L",
+              "actual": 0.08682174629918438,
+              "target": 0.0871969590565267
+            },
+            {
+              "sector": "U",
+              "actual": 0.000414634780283016,
+              "target": 0.0005281588911292423
+            }
+          ],
+          "transverse_reference_probability": 0.007175385919717661,
+          "complete_record_error": 0.12888517613437225,
+          "records": [
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "probability": 0.08087360783039833
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              "probability": 0.000486082317455512
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "probability": 0.0034387187337979563
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              "probability": 0.8573265419020996
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "probability": 0.008757178174038828
+            },
+            {
+              "site_counts_D_U_L": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "probability": 0.04911787104220981
+            }
+          ],
+          "current_integral_identity_residual": 7.027049557895782e-17,
+          "max_resource_residual": 1.7374282348810307e-15,
+          "passed": true
+        },
+        {
+          "time": 3.4,
+          "full_code_error": 0.2643665707677867,
+          "natural_input_error": 0.2359258201821571,
+          "error_bound": 1.2795433312765587,
+          "receiver_occupation": 0.2737446077349306,
+          "target_receiver_occupation": 0.2751542771391239,
+          "reference_transfers": [
+            0.3827914397201182,
+            -0.24124932319380132
+          ],
+          "edge_currents": [
+            {
+              "sector": "D",
+              "actual": 0.01800893108898446,
+              "target": 0.016837019495623926
+            },
+            {
+              "sector": "L",
+              "actual": 0.1183681737210821,
+              "target": 0.12040391576836573
+            },
+            {
+              "sector": "U",
+              "actual": 0.002457664993905914,
+              "target": 0.003132168248855321
+            }
+          ],
+          "transverse_reference_probability": 0.0238914787462483,
+          "complete_record_error": 0.23592582018215716,
+          "records": [
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "probability": 0.22981232047559774
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              "probability": 0.005718501359100844
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "probability": 0.03821378590023201
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              "probability": 0.5648961393499538
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "probability": 0.02615621046496303
+            },
+            {
+              "site_counts_D_U_L": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "probability": 0.1352030424501525
+            }
+          ],
+          "current_integral_identity_residual": 3.348751817930786e-16,
+          "max_resource_residual": 2.019273388557027e-15,
+          "passed": true
+        }
+      ],
+      "recorded_continuation": {
+        "first_time": 0.8,
+        "continuation_time": 1.1,
+        "complete_history_error": 0.09801891722940884,
+        "error_bound": 0.7150389204192535,
+        "receiver_occupation_first": 0.01728845544661575,
+        "receiver_occupation_after_record_and_continuation": 0.04848281439300195,
+        "reference_reset": false,
+        "record_reset": false,
+        "restart_work_operator_norm": 0.0,
+        "max_resource_residual": 3.2439355827050005e-15,
+        "passed": true
+      },
+      "passed": true
+    },
+    {
+      "q": 2,
+      "Ns": [
+        5,
+        5
+      ],
+      "parent_dimension": 688,
+      "logical_dimension": 28,
+      "actual_input_dimension": 4,
+      "initial_local_occupations": [
+        1,
+        1
+      ],
+      "observed_generator_residual": 0.10323920443965719,
+      "generator_bound": 0.5364365510586755,
+      "exact_residual_decomposition": 5.222209201006512e-18,
+      "orthogonal_gram_residual": 1.7385284475287424e-18,
+      "occupation_continuity_residual": 0.0,
+      "edge_reference_current_residual": 0.0,
+      "energy_dictionary_residual": 8.881784197001252e-16,
+      "reference_source_identity_residual": 0.0,
+      "record_intertwiner_residual": 0.0,
+      "edge_sources": [
+        {
+          "sector": "D",
+          "weight": 0,
+          "max_source_intertwiner": 0.0,
+          "passed": true
+        },
+        {
+          "sector": "L",
+          "weight": 1,
+          "max_source_intertwiner": 0.0,
+          "passed": true
+        },
+        {
+          "sector": "U",
+          "weight": 2,
+          "max_source_intertwiner": 0.0,
+          "passed": true
+        }
+      ],
+      "local_sources": [
+        {
+          "site": 0,
+          "sector": "D",
+          "decomposition_residual": 0.0,
+          "passed": true
+        },
+        {
+          "site": 0,
+          "sector": "U",
+          "decomposition_residual": 0.0,
+          "passed": true
+        },
+        {
+          "site": 1,
+          "sector": "D",
+          "decomposition_residual": 0.0,
+          "passed": true
+        },
+        {
+          "site": 1,
+          "sector": "U",
+          "decomposition_residual": 0.0,
+          "passed": true
+        }
+      ],
+      "holdouts": [
+        {
+          "time": 0.7,
+          "full_code_error": 0.0721204940993565,
+          "natural_input_error": 0.07158390234995918,
+          "error_bound": 0.37550558574107284,
+          "receiver_occupation": 1.0000001436534425,
+          "target_receiver_occupation": 1.0000006360465643,
+          "reference_transfers": [
+            0.006852182619740077,
+            0.007832849751628679
+          ],
+          "edge_currents": [
+            {
+              "sector": "D",
+              "actual": -2.3377151653826727e-05,
+              "target": -2.5791030708752873e-05
+            },
+            {
+              "sector": "L",
+              "actual": 1.9828683783412217e-05,
+              "target": 2.384982416889312e-05
+            },
+            {
+              "sector": "U",
+              "actual": 4.360330996588862e-06,
+              "target": 5.551699520970759e-06
+            }
+          ],
+          "transverse_reference_probability": 0.00199796607525298,
+          "complete_record_error": 0.07158390234995915,
+          "records": [
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "probability": 0.014623930729334152
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "probability": 3.2586258537105444e-05
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              "probability": 0.0002100105562448685
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                0,
+                1,
+                1,
+                0
+              ],
+              "probability": 4.7536587312934406e-07
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                1,
+                0,
+                0,
+                1
+              ],
+              "probability": 0.951083828167438
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                1,
+                0,
+                1,
+                0
+              ],
+              "probability": 0.0011033788692091796
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                1,
+                1,
+                0,
+                0
+              ],
+              "probability": 0.008695176600215926
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                2,
+                0,
+                0,
+                0
+              ],
+              "probability": 0.014623589449355923
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              "probability": 0.0013371691049586765
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                1,
+                0,
+                0,
+                1,
+                0
+              ],
+              "probability": 3.2376191412993776e-07
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              "probability": 1.6027468662499984e-05
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                1,
+                1,
+                0,
+                0,
+                0
+              ],
+              "probability": 3.3729673040324206e-05
+            },
+            {
+              "site_counts_D_U_L": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "probability": 0.00795608737716532
+            },
+            {
+              "site_counts_D_U_L": [
+                1,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              "probability": 1.3039407144675565e-05
+            },
+            {
+              "site_counts_D_U_L": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "probability": 6.11070767556399e-05
+            },
+            {
+              "site_counts_D_U_L": [
+                1,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              "probability": 0.00020905511380915693
+            },
+            {
+              "site_counts_D_U_L": [
+                1,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "probability": 4.850203410052822e-07
+            }
+          ],
+          "current_integral_identity_residual": 2.026826773122856e-15,
+          "max_resource_residual": 9.963301651348182e-15,
+          "passed": true
+        },
+        {
+          "time": 1.8,
+          "full_code_error": 0.18352415849388612,
+          "natural_input_error": 0.1813949366518923,
+          "error_bound": 0.9655857919056159,
+          "receiver_occupation": 1.000005534895962,
+          "target_receiver_occupation": 1.00002580642857,
+          "reference_transfers": [
+            0.044463889953849645,
+            0.050048774582457156
+          ],
+          "edge_currents": [
+            {
+              "sector": "D",
+              "actual": -0.00037026708828371007,
+              "target": -0.00040928326123981546
+            },
+            {
+              "sector": "L",
+              "actual": 0.00030987295827975166,
+              "target": 0.0003729504471591087
+            },
+            {
+              "sector": "U",
+              "actual": 7.175046786973014e-05,
+              "target": 9.113771601337715e-05
+            }
+          ],
+          "transverse_reference_probability": 0.012975573236051967,
+          "complete_record_error": 0.1813949366518924,
+          "records": [
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "probability": 0.07898005677728041
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "probability": 0.0012144041088320181
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              "probability": 0.007966456982707567
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                0,
+                1,
+                1,
+                0
+              ],
+              "probability": 0.00012350768909704952
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                1,
+                0,
+                0,
+                1
+              ],
+              "probability": 0.7181655532408316
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                1,
+                0,
+                1,
+                0
+              ],
+              "probability": 0.005766664265338743
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                1,
+                1,
+                0,
+                0
+              ],
+              "probability": 0.04650147784198019
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                2,
+                0,
+                0,
+                0
+              ],
+              "probability": 0.07897322312864379
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              "probability": 0.007016763150714927
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                1,
+                0,
+                0,
+                1,
+                0
+              ],
+              "probability": 1.3881666937476106e-05
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              "probability": 0.0005730596924488825
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                1,
+                1,
+                0,
+                0,
+                0
+              ],
+              "probability": 0.001258495535222242
+            },
+            {
+              "site_counts_D_U_L": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "probability": 0.042468719634802685
+            },
+            {
+              "site_counts_D_U_L": [
+                1,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              "probability": 0.00046114964233978645
+            },
+            {
+              "site_counts_D_U_L": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "probability": 0.0024694146447336966
+            },
+            {
+              "site_counts_D_U_L": [
+                1,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              "probability": 0.007921271181337178
+            },
+            {
+              "site_counts_D_U_L": [
+                1,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "probability": 0.00012590081675102117
+            }
+          ],
+          "current_integral_identity_residual": 2.756796925043386e-15,
+          "max_resource_residual": 1.4357789672820815e-14,
+          "passed": true
+        },
+        {
+          "time": 3.4,
+          "full_code_error": 0.33706960542668846,
+          "natural_input_error": 0.3281088605555691,
+          "error_bound": 1.8238842735994967,
+          "receiver_occupation": 1.0000451860461965,
+          "target_receiver_occupation": 1.0002600444789171,
+          "reference_transfers": [
+            0.1483281125341822,
+            0.16000111556793417
+          ],
+          "edge_currents": [
+            {
+              "sector": "D",
+              "actual": -0.0020184172082108073,
+              "target": -0.00224253745532796
+            },
+            {
+              "sector": "L",
+              "actual": 0.001621228838899176,
+              "target": 0.0019537691057000504
+            },
+            {
+              "sector": "U",
+              "actual": 0.0004315796283046757,
+              "target": 0.0005436240159161449
+            }
+          ],
+          "transverse_reference_probability": 0.04231347883206044,
+          "complete_record_error": 0.3281088605555691,
+          "records": [
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              "probability": 0.1477197082558097
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "probability": 0.009209647904705211
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              "probability": 0.06556248874858121
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                0,
+                1,
+                1,
+                0
+              ],
+              "probability": 0.004026563120861387
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                1,
+                0,
+                0,
+                1
+              ],
+              "probability": 0.3216740947622806
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                1,
+                0,
+                1,
+                0
+              ],
+              "probability": 0.010489435373214643
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                1,
+                1,
+                0,
+                0
+              ],
+              "probability": 0.0886127930286192
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                0,
+                2,
+                0,
+                0,
+                0
+              ],
+              "probability": 0.14777130060549237
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              "probability": 0.012597569715782153
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                1,
+                0,
+                0,
+                1,
+                0
+              ],
+              "probability": 0.00016639670998274276
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              "probability": 0.003911380233223949
+            },
+            {
+              "site_counts_D_U_L": [
+                0,
+                1,
+                1,
+                0,
+                0,
+                0
+              ],
+              "probability": 0.009599583983220755
+            },
+            {
+              "site_counts_D_U_L": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "probability": 0.08155415227956786
+            },
+            {
+              "site_counts_D_U_L": [
+                1,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              "probability": 0.0030887141459991947
+            },
+            {
+              "site_counts_D_U_L": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "probability": 0.024913833737611
+            },
+            {
+              "site_counts_D_U_L": [
+                1,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              "probability": 0.0650011569670192
+            },
+            {
+              "site_counts_D_U_L": [
+                1,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "probability": 0.00410118042802813
+            }
+          ],
+          "current_integral_identity_residual": 2.9537120652740125e-15,
+          "max_resource_residual": 1.6063997326346818e-14,
+          "passed": true
+        }
+      ],
+      "recorded_continuation": {
+        "first_time": 0.8,
+        "continuation_time": 1.1,
+        "complete_history_error": 0.1381401732661973,
+        "error_bound": 1.0192294470114835,
+        "receiver_occupation_first": 1.000000243422813,
+        "receiver_occupation_after_record_and_continuation": 1.0000052462297004,
+        "reference_reset": false,
+        "record_reset": false,
+        "restart_work_operator_norm": 0.0,
+        "max_resource_residual": 2.5108217249543597e-14,
+        "passed": true
+      },
+      "passed": true
+    }
+  ],
+  "full_reference_boundaries_retained": true,
+  "local_K_is_Gauss": false,
+  "local_SU2_certified": false,
+  "empirical_experiments": 0,
+  "actual_inputs": "known local left occupations, arbitrary internal state and partner",
+  "arbitrary_spatial_code_preparation_certified": false,
+  "stage_complete": false,
+  "long_goal_complete": false
+}

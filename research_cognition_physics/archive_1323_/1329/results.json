@@ -1,0 +1,1774 @@
+{
+  "round": 1329,
+  "status": "PASS",
+  "new_axioms": 0,
+  "provenance": {
+    "1329/proof.md": "d3b7a3faa66ba8b415a96417aaa9a0d4a289295bdde7fa007c720c8e881e7738",
+    "1329/check.py": "2658a7ce6dba9d0714892accd63c24d5614d25dd56ffd0e30d7e8396d14d5fa8",
+    "_admission/round1329_admission.md": "227f3424db589e039dbf6c76f725723496d71e9a5337eb626d8e34540e91bb4e",
+    "1327/proof.md": "d6611972045fc8a49e87033184a990c2076aa68f4f9865130393661a4e8d73ce",
+    "1328/proof.md": "f9cd1af4f9f7d300d31abd7d5f57b72784d5b36e201e34764572d6a25942f8c5"
+  },
+  "calibration": {
+    "q": 1,
+    "N": 3,
+    "recovery_error": 0.0,
+    "physical_input": "natural left; full outputs include transverse leakage",
+    "later_parameter_refits": 0
+  },
+  "cases": [
+    {
+      "n": 2,
+      "q": 1,
+      "N": 3,
+      "parent_dimension": 24,
+      "logical_dimension": 8,
+      "natural_left_dimension": 4,
+      "bmin": 1,
+      "p": 0.07,
+      "observed_generator_residual": 0.10819912924457671,
+      "generator_bound": 0.5681502590872705,
+      "exact_orthogonal_decomposition_residual": 7.056740966362122e-18,
+      "source_number_identity_residual": 0.0,
+      "energy_dictionary_residual": 0.0,
+      "record_intertwiner_residual": 0.0,
+      "coupling_sources": [
+        {
+          "sector": "D",
+          "observed_residual": 0.5773502691896257,
+          "bound": 0.7071067811865475,
+          "decomposition_error": 0.0,
+          "passed": true
+        },
+        {
+          "sector": "U",
+          "observed_residual": 0.6058108930553725,
+          "bound": 1.7071067811865475,
+          "decomposition_error": 0.0,
+          "passed": true
+        }
+      ],
+      "holdouts": [
+        {
+          "time": 0.5,
+          "full_conditional_code_error": 0.05405556227006584,
+          "natural_left_error": 0.054046427599291055,
+          "amplitude_bound": 0.28407512954363523,
+          "reference_change_error": 0.0036284046023677347,
+          "reference_change_bound": 0.5681502590872705,
+          "complete_record_error": 0.05404642759929107,
+          "record_results": [
+            {
+              "counts_D_U_L": [
+                0,
+                0,
+                1
+              ],
+              "probability": 0.9961766578374612
+            },
+            {
+              "counts_D_U_L": [
+                0,
+                1,
+                0
+              ],
+              "probability": 0.0018161175780401632
+            },
+            {
+              "counts_D_U_L": [
+                1,
+                0,
+                0
+              ],
+              "probability": 0.0020072245844983006
+            }
+          ],
+          "number_predictions": [
+            {
+              "name": "D",
+              "actual": 0.0020072245844983006,
+              "target": 0.0004738024643859496
+            },
+            {
+              "name": "U",
+              "actual": 0.0018161175780401634,
+              "target": 0.0027241763670602217
+            },
+            {
+              "name": "L",
+              "actual": 0.9961766578374612,
+              "target": 0.9968020211685525
+            }
+          ],
+          "reference_transfer": 0.00019110700645841305,
+          "transverse_reference_probability": 0.0015344530651873517,
+          "max_record_resource_residual": 2.182896550642272e-15,
+          "passed": true
+        },
+        {
+          "time": 1.3,
+          "full_conditional_code_error": 0.13988717022065197,
+          "natural_left_error": 0.13972706598044632,
+          "amplitude_bound": 0.7385953368134516,
+          "reference_change_error": 0.024134079043477818,
+          "reference_change_bound": 1.4771906736269032,
+          "complete_record_error": 0.1397270659804463,
+          "record_results": [
+            {
+              "counts_D_U_L": [
+                0,
+                0,
+                1
+              ],
+              "probability": 0.9744788665294543
+            },
+            {
+              "counts_D_U_L": [
+                0,
+                1,
+                0
+              ],
+              "probability": 0.012160769234640248
+            },
+            {
+              "counts_D_U_L": [
+                1,
+                0,
+                0
+              ],
+              "probability": 0.013360364235905356
+            }
+          ],
+          "number_predictions": [
+            {
+              "name": "D",
+              "actual": 0.013360364235905357,
+              "target": 0.00314724455051254
+            },
+            {
+              "name": "U",
+              "actual": 0.012160769234640247,
+              "target": 0.018241153851960294
+            },
+            {
+              "name": "L",
+              "actual": 0.9744788665294545,
+              "target": 0.9786116015975257
+            }
+          ],
+          "reference_transfer": 0.001199595001265763,
+          "transverse_reference_probability": 0.010259716603392009,
+          "max_record_resource_residual": 1.9186842702753403e-15,
+          "passed": true
+        },
+        {
+          "time": 3.1,
+          "full_conditional_code_error": 0.3250783532224323,
+          "natural_left_error": 0.3229408407163583,
+          "amplitude_bound": 1.7612658031705384,
+          "reference_change_error": 0.12548761651819204,
+          "reference_change_bound": 2.0,
+          "complete_record_error": 0.32294084071635853,
+          "record_results": [
+            {
+              "counts_D_U_L": [
+                0,
+                0,
+                1
+              ],
+              "probability": 0.8646513083885417
+            },
+            {
+              "counts_D_U_L": [
+                0,
+                1,
+                0
+              ],
+              "probability": 0.06561240561980076
+            },
+            {
+              "counts_D_U_L": [
+                1,
+                0,
+                0
+              ],
+              "probability": 0.06973628599165738
+            }
+          ],
+          "number_predictions": [
+            {
+              "name": "D",
+              "actual": 0.06973628599165739,
+              "target": 0.01623638278933238
+            },
+            {
+              "name": "U",
+              "actual": 0.06561240561980075,
+              "target": 0.09841860842970096
+            },
+            {
+              "name": "L",
+              "actual": 0.8646513083885414,
+              "target": 0.885345008780965
+            }
+          ],
+          "reference_transfer": 0.004123880371856625,
+          "transverse_reference_probability": 0.05491797757089642,
+          "max_record_resource_residual": 1.654829347005263e-15,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "n": 2,
+      "q": 2,
+      "N": 5,
+      "parent_dimension": 112,
+      "logical_dimension": 28,
+      "natural_left_dimension": 6,
+      "bmin": 1,
+      "p": 0.07,
+      "observed_generator_residual": 0.12825551237126467,
+      "generator_bound": 0.5681502590872705,
+      "exact_orthogonal_decomposition_residual": 9.977889759757445e-18,
+      "source_number_identity_residual": 0.0,
+      "energy_dictionary_residual": 4.440892098500626e-16,
+      "record_intertwiner_residual": 0.0,
+      "coupling_sources": [
+        {
+          "sector": "D",
+          "observed_residual": 0.5773502691896257,
+          "bound": 0.7071067811865475,
+          "decomposition_error": 0.0,
+          "passed": true
+        },
+        {
+          "sector": "U",
+          "observed_residual": 0.6058108930553725,
+          "bound": 1.7071067811865475,
+          "decomposition_error": 0.0,
+          "passed": true
+        }
+      ],
+      "holdouts": [
+        {
+          "time": 0.5,
+          "full_conditional_code_error": 0.06405713215718378,
+          "natural_left_error": 0.05435941504348875,
+          "amplitude_bound": 0.28407512954363523,
+          "reference_change_error": 0.004352001654865935,
+          "reference_change_bound": 1.136300518174541,
+          "complete_record_error": 0.054359415043488776,
+          "record_results": [
+            {
+              "counts_D_U_L": [
+                0,
+                0,
+                2
+              ],
+              "probability": 0.9898672930029263
+            },
+            {
+              "counts_D_U_L": [
+                0,
+                1,
+                1
+              ],
+              "probability": 0.0024522113689230975
+            },
+            {
+              "counts_D_U_L": [
+                0,
+                2,
+                0
+              ],
+              "probability": 2.8437657147071814e-07
+            },
+            {
+              "counts_D_U_L": [
+                1,
+                0,
+                1
+              ],
+              "probability": 0.0076566299099305405
+            },
+            {
+              "counts_D_U_L": [
+                1,
+                1,
+                0
+              ],
+              "probability": 1.943369994864984e-05
+            },
+            {
+              "counts_D_U_L": [
+                2,
+                0,
+                0
+              ],
+              "probability": 4.147641700952528e-06
+            }
+          ],
+          "number_predictions": [
+            {
+              "name": "D",
+              "actual": 0.0076843588932810954,
+              "target": 0.006375796749206053
+            },
+            {
+              "name": "U",
+              "actual": 0.002472213822014689,
+              "target": 0.003294225366040647
+            },
+            {
+              "name": "L",
+              "actual": 1.9898434272847063,
+              "target": 1.9903299778847532
+            }
+          ],
+          "reference_transfer": 0.00521214507126988,
+          "transverse_reference_probability": 0.0013091441253835193,
+          "max_record_resource_residual": 7.18088625586047e-15,
+          "passed": true
+        },
+        {
+          "time": 1.3,
+          "full_conditional_code_error": 0.1654965836451762,
+          "natural_left_error": 0.14060114262117213,
+          "amplitude_bound": 0.7385953368134516,
+          "reference_change_error": 0.029099545444523305,
+          "reference_change_bound": 2.9543813472538063,
+          "complete_record_error": 0.14060114262117224,
+          "record_results": [
+            {
+              "counts_D_U_L": [
+                0,
+                0,
+                2
+              ],
+              "probability": 0.9334620916012893
+            },
+            {
+              "counts_D_U_L": [
+                0,
+                1,
+                1
+              ],
+              "probability": 0.015713804301776987
+            },
+            {
+              "counts_D_U_L": [
+                0,
+                2,
+                0
+              ],
+              "probability": 1.2785122968493822e-05
+            },
+            {
+              "counts_D_U_L": [
+                1,
+                0,
+                1
+              ],
+              "probability": 0.0497641385347854
+            },
+            {
+              "counts_D_U_L": [
+                1,
+                1,
+                0
+              ],
+              "probability": 0.0008626301057096905
+            },
+            {
+              "counts_D_U_L": [
+                2,
+                0,
+                0
+              ],
+              "probability": 0.00018455033347207158
+            }
+          ],
+          "number_predictions": [
+            {
+              "name": "D",
+              "actual": 0.05099586930743924,
+              "target": 0.042379218195509265
+            },
+            {
+              "name": "U",
+              "actual": 0.016602004653423662,
+              "target": 0.022045843723035186
+            },
+            {
+              "name": "L",
+              "actual": 1.932402126039141,
+              "target": 1.9355749380814546
+            }
+          ],
+          "reference_transfer": 0.03439386465402183,
+          "transverse_reference_probability": 0.008644827110114038,
+          "max_record_resource_residual": 1.386483852762048e-14,
+          "passed": true
+        },
+        {
+          "time": 3.1,
+          "full_conditional_code_error": 0.3812496711016409,
+          "natural_left_error": 0.3258147595650264,
+          "amplitude_bound": 1.7612658031705384,
+          "reference_change_error": 0.15567369264632488,
+          "reference_change_bound": 4.0,
+          "complete_record_error": 0.3258147595650263,
+          "record_results": [
+            {
+              "counts_D_U_L": [
+                0,
+                0,
+                2
+              ],
+              "probability": 0.6765529164945958
+            },
+            {
+              "counts_D_U_L": [
+                0,
+                1,
+                1
+              ],
+              "probability": 0.06628136341277938
+            },
+            {
+              "counts_D_U_L": [
+                0,
+                2,
+                0
+              ],
+              "probability": 0.0003777369079920475
+            },
+            {
+              "counts_D_U_L": [
+                1,
+                0,
+                1
+              ],
+              "probability": 0.2279020434828124
+            },
+            {
+              "counts_D_U_L": [
+                1,
+                1,
+                0
+              ],
+              "probability": 0.02374031560457252
+            },
+            {
+              "counts_D_U_L": [
+                2,
+                0,
+                0
+              ],
+              "probability": 0.005145624097248704
+            }
+          ],
+          "number_predictions": [
+            {
+              "name": "D",
+              "actual": 0.2619336072818823,
+              "target": 0.21945724330643376
+            },
+            {
+              "name": "U",
+              "actual": 0.09077715283333598,
+              "target": 0.11857209858446865
+            },
+            {
+              "name": "L",
+              "actual": 1.6472892398847834,
+              "target": 1.6619706581090972
+            }
+          ],
+          "reference_transfer": 0.17115645444854888,
+          "transverse_reference_probability": 0.04348720784892809,
+          "max_record_resource_residual": 6.494848595202626e-15,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "n": 2,
+      "q": 2,
+      "N": 9,
+      "parent_dimension": 224,
+      "logical_dimension": 28,
+      "natural_left_dimension": 6,
+      "bmin": 5,
+      "p": 0.07,
+      "observed_generator_residual": 0.08522858591742119,
+      "generator_bound": 0.2762888636870278,
+      "exact_orthogonal_decomposition_residual": 1.4299862667122007e-17,
+      "source_number_identity_residual": 0.0,
+      "energy_dictionary_residual": 8.881784197001252e-16,
+      "record_intertwiner_residual": 0.0,
+      "coupling_sources": [
+        {
+          "sector": "D",
+          "observed_residual": 0.3779644730092272,
+          "bound": 0.4082482904638631,
+          "decomposition_error": 5.551115123125783e-17,
+          "passed": true
+        },
+        {
+          "sector": "U",
+          "observed_residual": 0.38517502574141155,
+          "bound": 0.7415816237971964,
+          "decomposition_error": 5.551115123125783e-17,
+          "passed": true
+        }
+      ],
+      "holdouts": [
+        {
+          "time": 0.5,
+          "full_conditional_code_error": 0.042573120589016765,
+          "natural_left_error": 0.03805972506764133,
+          "amplitude_bound": 0.1381444318435139,
+          "reference_change_error": 0.0021755274380441674,
+          "reference_change_bound": 0.5525777273740556,
+          "complete_record_error": 0.03805972506764135,
+          "record_results": [
+            {
+              "counts_D_U_L": [
+                0,
+                0,
+                2
+              ],
+              "probability": 0.990110721134164
+            },
+            {
+              "counts_D_U_L": [
+                0,
+                1,
+                1
+              ],
+              "probability": 0.0028620268187447093
+            },
+            {
+              "counts_D_U_L": [
+                0,
+                2,
+                0
+              ],
+              "probability": 4.265648572058981e-07
+            },
+            {
+              "counts_D_U_L": [
+                1,
+                0,
+                1
+              ],
+              "probability": 0.007003212606645057
+            },
+            {
+              "counts_D_U_L": [
+                1,
+                1,
+                0
+              ],
+              "probability": 2.0290442386836525e-05
+            },
+            {
+              "counts_D_U_L": [
+                2,
+                0,
+                0
+              ],
+              "probability": 3.322433202101624e-06
+            }
+          ],
+          "number_predictions": [
+            {
+              "name": "D",
+              "actual": 0.0070301479154360955,
+              "target": 0.006375796749206053
+            },
+            {
+              "name": "U",
+              "actual": 0.002883170390845958,
+              "target": 0.003294225366040647
+            },
+            {
+              "name": "L",
+              "actual": 1.9900866816937175,
+              "target": 1.9903299778847532
+            }
+          ],
+          "reference_transfer": 0.004146977524587925,
+          "transverse_reference_probability": 0.000654689033105206,
+          "max_record_resource_residual": 1.1466346185026976e-14,
+          "passed": true
+        },
+        {
+          "time": 1.3,
+          "full_conditional_code_error": 0.11007596952618078,
+          "natural_left_error": 0.09844096205073782,
+          "amplitude_bound": 0.3591755227931362,
+          "reference_change_error": 0.014528524998527194,
+          "reference_change_bound": 1.4367020911725448,
+          "complete_record_error": 0.09844096205073785,
+          "record_results": [
+            {
+              "counts_D_U_L": [
+                0,
+                0,
+                2
+              ],
+              "probability": 0.9350553275716855
+            },
+            {
+              "counts_D_U_L": [
+                0,
+                1,
+                1
+              ],
+              "probability": 0.018382538897808057
+            },
+            {
+              "counts_D_U_L": [
+                0,
+                2,
+                0
+              ],
+              "probability": 1.917768445273987e-05
+            },
+            {
+              "counts_D_U_L": [
+                1,
+                0,
+                1
+              ],
+              "probability": 0.0454943897105388
+            },
+            {
+              "counts_D_U_L": [
+                1,
+                1,
+                0
+              ],
+              "probability": 0.0009007336563389483
+            },
+            {
+              "counts_D_U_L": [
+                2,
+                0,
+                0
+              ],
+              "probability": 0.0001478324791762313
+            }
+          ],
+          "number_predictions": [
+            {
+              "name": "D",
+              "actual": 0.046690788325230215,
+              "target": 0.042379218195509265
+            },
+            {
+              "name": "U",
+              "actual": 0.01932162792305249,
+              "target": 0.022045843723035186
+            },
+            {
+              "name": "L",
+              "actual": 1.9339875837517182,
+              "target": 1.9355749380814546
+            }
+          ],
+          "reference_transfer": 0.027369160402180626,
+          "transverse_reference_probability": 0.004327883646369042,
+          "max_record_resource_residual": 2.6319949664524693e-14,
+          "passed": true
+        },
+        {
+          "time": 3.1,
+          "full_conditional_code_error": 0.2546086602524597,
+          "natural_left_error": 0.2281039205756448,
+          "amplitude_bound": 0.8564954774297863,
+          "reference_change_error": 0.07721468955549057,
+          "reference_change_bound": 3.425981909719145,
+          "complete_record_error": 0.2281039205756448,
+          "record_results": [
+            {
+              "counts_D_U_L": [
+                0,
+                0,
+                2
+              ],
+              "probability": 0.6840893834102137
+            },
+            {
+              "counts_D_U_L": [
+                0,
+                1,
+                1
+              ],
+              "probability": 0.07866968702037946
+            },
+            {
+              "counts_D_U_L": [
+                0,
+                2,
+                0
+              ],
+              "probability": 0.0005666053619880667
+            },
+            {
+              "counts_D_U_L": [
+                1,
+                0,
+                1
+              ],
+              "probability": 0.20775227334706975
+            },
+            {
+              "counts_D_U_L": [
+                1,
+                1,
+                0
+              ],
+              "probability": 0.024800192325097965
+            },
+            {
+              "counts_D_U_L": [
+                2,
+                0,
+                0
+              ],
+              "probability": 0.004121858535250735
+            }
+          ],
+          "number_predictions": [
+            {
+              "name": "D",
+              "actual": 0.24079618274266926,
+              "target": 0.21945724330643376
+            },
+            {
+              "name": "U",
+              "actual": 0.10460309006945359,
+              "target": 0.11857209858446865
+            },
+            {
+              "name": "L",
+              "actual": 1.6546007271878767,
+              "target": 1.6619706581090972
+            }
+          ],
+          "reference_transfer": 0.13619309267321356,
+          "transverse_reference_probability": 0.02192149303327362,
+          "max_record_resource_residual": 1.4788887659518445e-14,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "n": 2,
+      "q": 3,
+      "N": 7,
+      "parent_dimension": 280,
+      "logical_dimension": 56,
+      "natural_left_dimension": 4,
+      "bmin": 1,
+      "p": 0.07,
+      "observed_generator_residual": 0.13324691134550712,
+      "generator_bound": 0.5681502590872705,
+      "exact_orthogonal_decomposition_residual": 9.947562590124229e-18,
+      "source_number_identity_residual": 0.0,
+      "energy_dictionary_residual": 8.881784197001252e-16,
+      "record_intertwiner_residual": 0.0,
+      "coupling_sources": [
+        {
+          "sector": "D",
+          "observed_residual": 0.5773502691896257,
+          "bound": 0.7071067811865475,
+          "decomposition_error": 0.0,
+          "passed": true
+        },
+        {
+          "sector": "U",
+          "observed_residual": 0.5176380902050415,
+          "bound": 1.7071067811865475,
+          "decomposition_error": 5.551115123125783e-17,
+          "passed": true
+        }
+      ],
+      "holdouts": [
+        {
+          "time": 0.5,
+          "full_conditional_code_error": 0.06654614368612553,
+          "natural_left_error": 0.04839599668539057,
+          "amplitude_bound": 0.28407512954363523,
+          "reference_change_error": 0.0034775300551802865,
+          "reference_change_bound": 1.7044507772618114,
+          "complete_record_error": 0.04839599668539053,
+          "record_results": [
+            {
+              "counts_D_U_L": [
+                0,
+                0,
+                3
+              ],
+              "probability": 0.9852995450014556
+            },
+            {
+              "counts_D_U_L": [
+                0,
+                1,
+                2
+              ],
+              "probability": 0.0031990961493308014
+            },
+            {
+              "counts_D_U_L": [
+                0,
+                2,
+                1
+              ],
+              "probability": 1.7386053271900724e-06
+            },
+            {
+              "counts_D_U_L": [
+                1,
+                0,
+                2
+              ],
+              "probability": 0.011445252662685763
+            },
+            {
+              "counts_D_U_L": [
+                1,
+                1,
+                1
+              ],
+              "probability": 3.59227373210154e-05
+            },
+            {
+              "counts_D_U_L": [
+                1,
+                2,
+                0
+              ],
+              "probability": 1.902939704974424e-08
+            },
+            {
+              "counts_D_U_L": [
+                2,
+                0,
+                1
+              ],
+              "probability": 1.838716448423876e-05
+            },
+            {
+              "counts_D_U_L": [
+                2,
+                1,
+                0
+              ],
+              "probability": 3.864999937907778e-08
+            }
+          ],
+          "number_predictions": [
+            {
+              "name": "D",
+              "actual": 0.011518046058371065,
+              "target": 0.010047632401909487
+            },
+            {
+              "name": "U",
+              "actual": 0.003238572806099675,
+              "target": 0.004046393586992288
+            },
+            {
+              "name": "L",
+              "actual": 2.9852433811355326,
+              "target": 2.9859059740111
+            }
+          ],
+          "reference_transfer": 0.008279473252275515,
+          "transverse_reference_probability": 0.0014715614927094055,
+          "max_record_resource_residual": 9.535057144311823e-15,
+          "passed": true
+        },
+        {
+          "time": 1.3,
+          "full_conditional_code_error": 0.17186856428456718,
+          "natural_left_error": 0.12480646945335466,
+          "amplitude_bound": 0.7385953368134516,
+          "reference_change_error": 0.023096188459689495,
+          "reference_change_bound": 4.43157202088071,
+          "complete_record_error": 0.12480646945335469,
+          "record_results": [
+            {
+              "counts_D_U_L": [
+                0,
+                0,
+                3
+              ],
+              "probability": 0.904341178004692
+            },
+            {
+              "counts_D_U_L": [
+                0,
+                1,
+                2
+              ],
+              "probability": 0.02000678550307475
+            },
+            {
+              "counts_D_U_L": [
+                0,
+                2,
+                1
+              ],
+              "probability": 7.395085182667819e-05
+            },
+            {
+              "counts_D_U_L": [
+                1,
+                0,
+                2
+              ],
+              "probability": 0.07318709921658333
+            },
+            {
+              "counts_D_U_L": [
+                1,
+                1,
+                1
+              ],
+              "probability": 0.0015672835187389544
+            },
+            {
+              "counts_D_U_L": [
+                1,
+                2,
+                0
+              ],
+              "probability": 5.668881679718675e-06
+            },
+            {
+              "counts_D_U_L": [
+                2,
+                0,
+                1
+              ],
+              "probability": 0.0008065095874954648
+            },
+            {
+              "counts_D_U_L": [
+                2,
+                1,
+                0
+              ],
+              "probability": 1.1524435910349404e-05
+            }
+          ],
+          "number_predictions": [
+            {
+              "name": "D",
+              "actual": 0.07639611966381363,
+              "target": 0.06677486257379944
+            },
+            {
+              "name": "U",
+              "actual": 0.021744832924736848,
+              "target": 0.027099145909563714
+            },
+            {
+              "name": "L",
+              "actual": 2.9018590474114534,
+              "target": 2.906125991516638
+            }
+          ],
+          "reference_transfer": 0.05465128673908115,
+          "transverse_reference_probability": 0.00967347709938814,
+          "max_record_resource_residual": 1.0774174739665481e-14,
+          "passed": true
+        },
+        {
+          "time": 3.1,
+          "full_conditional_code_error": 0.39519273199468946,
+          "natural_left_error": 0.2847543191430805,
+          "amplitude_bound": 1.7612658031705384,
+          "reference_change_error": 0.11905119467332644,
+          "reference_change_bound": 6.0,
+          "complete_record_error": 0.2847543191430806,
+          "record_results": [
+            {
+              "counts_D_U_L": [
+                0,
+                0,
+                3
+              ],
+              "probability": 0.5567556979944421
+            },
+            {
+              "counts_D_U_L": [
+                0,
+                1,
+                2
+              ],
+              "probability": 0.0731618154159603
+            },
+            {
+              "counts_D_U_L": [
+                0,
+                2,
+                1
+              ],
+              "probability": 0.001588972333544314
+            },
+            {
+              "counts_D_U_L": [
+                1,
+                0,
+                2
+              ],
+              "probability": 0.3059005538732773
+            },
+            {
+              "counts_D_U_L": [
+                1,
+                1,
+                1
+              ],
+              "probability": 0.039208015615647955
+            },
+            {
+              "counts_D_U_L": [
+                1,
+                2,
+                0
+              ],
+              "probability": 0.0008519492826525492
+            },
+            {
+              "counts_D_U_L": [
+                2,
+                0,
+                1
+              ],
+              "probability": 0.020791870970466506
+            },
+            {
+              "counts_D_U_L": [
+                2,
+                1,
+                0
+              ],
+              "probability": 0.0017411245140103503
+            }
+          ],
+          "number_predictions": [
+            {
+              "name": "D",
+              "actual": 0.3910265097405315,
+              "target": 0.34547230578282656
+            },
+            {
+              "name": "U",
+              "actual": 0.11899279877801232,
+              "target": 0.14634406245066847
+            },
+            {
+              "name": "L",
+              "actual": 2.48998069148146,
+              "target": 2.5081836317665065
+            }
+          ],
+          "reference_transfer": 0.2720337109625248,
+          "transverse_reference_probability": 0.047203495035732686,
+          "max_record_resource_residual": 1.1187845111244261e-14,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "n": 2,
+      "q": 3,
+      "N": 11,
+      "parent_dimension": 504,
+      "logical_dimension": 56,
+      "natural_left_dimension": 4,
+      "bmin": 5,
+      "p": 0.07,
+      "observed_generator_residual": 0.0944660036957825,
+      "generator_bound": 0.2762888636870278,
+      "exact_orthogonal_decomposition_residual": 1.414085636874179e-17,
+      "source_number_identity_residual": 0.0,
+      "energy_dictionary_residual": 8.881784197001252e-16,
+      "record_intertwiner_residual": 0.0,
+      "coupling_sources": [
+        {
+          "sector": "D",
+          "observed_residual": 0.3779644730092272,
+          "bound": 0.4082482904638631,
+          "decomposition_error": 5.551115123125783e-17,
+          "passed": true
+        },
+        {
+          "sector": "U",
+          "observed_residual": 0.3594040993269684,
+          "bound": 0.7415816237971964,
+          "decomposition_error": 0.0,
+          "passed": true
+        }
+      ],
+      "holdouts": [
+        {
+          "time": 0.5,
+          "full_conditional_code_error": 0.04718694798201618,
+          "natural_left_error": 0.03582864517649952,
+          "amplitude_bound": 0.1381444318435139,
+          "reference_change_error": 0.0019318500840556508,
+          "reference_change_bound": 0.8288665910610835,
+          "complete_record_error": 0.03582864517649952,
+          "record_results": [
+            {
+              "counts_D_U_L": [
+                0,
+                0,
+                3
+              ],
+              "probability": 0.9855932903217566
+            },
+            {
+              "counts_D_U_L": [
+                0,
+                1,
+                2
+              ],
+              "probability": 0.003556117963643696
+            },
+            {
+              "counts_D_U_L": [
+                0,
+                2,
+                1
+              ],
+              "probability": 2.25510605929525e-06
+            },
+            {
+              "counts_D_U_L": [
+                1,
+                0,
+                2
+              ],
+              "probability": 0.010795110537025405
+            },
+            {
+              "counts_D_U_L": [
+                1,
+                1,
+                1
+              ],
+              "probability": 3.685355927288699e-05
+            },
+            {
+              "counts_D_U_L": [
+                1,
+                2,
+                0
+              ],
+              "probability": 2.148271844650373e-08
+            },
+            {
+              "counts_D_U_L": [
+                2,
+                0,
+                1
+              ],
+              "probability": 1.631398612571778e-05
+            },
+            {
+              "counts_D_U_L": [
+                2,
+                1,
+                0
+              ],
+              "probability": 3.704339798999129e-08
+            }
+          ],
+          "number_predictions": [
+            {
+              "name": "D",
+              "actual": 0.010864687638064155,
+              "target": 0.010047632401909487
+            },
+            {
+              "name": "U",
+              "actual": 0.003597561743870056,
+              "target": 0.004046393586992288
+            },
+            {
+              "name": "L",
+              "actual": 2.9855377506180654,
+              "target": 2.9859059740111
+            }
+          ],
+          "reference_transfer": 0.007267125894195203,
+          "transverse_reference_probability": 0.0008177745531955022,
+          "max_record_resource_residual": 1.3136790661318679e-14,
+          "passed": true
+        },
+        {
+          "time": 1.3,
+          "full_conditional_code_error": 0.12199956558239622,
+          "natural_left_error": 0.09240849269562694,
+          "amplitude_bound": 0.3591755227931362,
+          "reference_change_error": 0.012826272599992913,
+          "reference_change_bound": 2.1550531367588173,
+          "complete_record_error": 0.09240849269562693,
+          "record_results": [
+            {
+              "counts_D_U_L": [
+                0,
+                0,
+                3
+              ],
+              "probability": 0.9062059671396597
+            },
+            {
+              "counts_D_U_L": [
+                0,
+                1,
+                2
+              ],
+              "probability": 0.02229725488339685
+            },
+            {
+              "counts_D_U_L": [
+                0,
+                2,
+                1
+              ],
+              "probability": 9.626028314305039e-05
+            },
+            {
+              "counts_D_U_L": [
+                1,
+                0,
+                2
+              ],
+              "probability": 0.0690585144403466
+            },
+            {
+              "counts_D_U_L": [
+                1,
+                1,
+                1
+              ],
+              "probability": 0.0016090134425416544
+            },
+            {
+              "counts_D_U_L": [
+                1,
+                2,
+                0
+              ],
+              "probability": 6.4034899621590164e-06
+            },
+            {
+              "counts_D_U_L": [
+                2,
+                0,
+                1
+              ],
+              "probability": 0.0007155411135832176
+            },
+            {
+              "counts_D_U_L": [
+                2,
+                1,
+                0
+              ],
+              "probability": 1.1045207366893517e-05
+            }
+          ],
+          "number_predictions": [
+            {
+              "name": "D",
+              "actual": 0.0721271040147506,
+              "target": 0.06677486257379944
+            },
+            {
+              "name": "U",
+              "actual": 0.024122641079515818,
+              "target": 0.027099145909563714
+            },
+            {
+              "name": "L",
+              "actual": 2.9037502549057344,
+              "target": 2.906125991516638
+            }
+          ],
+          "reference_transfer": 0.04800446293523564,
+          "transverse_reference_probability": 0.005384812668563379,
+          "max_record_resource_residual": 1.3938006387490101e-14,
+          "passed": true
+        },
+        {
+          "time": 3.1,
+          "full_conditional_code_error": 0.28214421458621497,
+          "natural_left_error": 0.21093590756614217,
+          "amplitude_bound": 0.8564954774297863,
+          "reference_change_error": 0.0660015794358451,
+          "reference_change_bound": 5.138972864578718,
+          "complete_record_error": 0.21093590756614214,
+          "record_results": [
+            {
+              "counts_D_U_L": [
+                0,
+                0,
+                3
+              ],
+              "probability": 0.5641639935534681
+            },
+            {
+              "counts_D_U_L": [
+                0,
+                1,
+                2
+              ],
+              "probability": 0.08285275868444672
+            },
+            {
+              "counts_D_U_L": [
+                0,
+                2,
+                1
+              ],
+              "probability": 0.0021138739972119533
+            },
+            {
+              "counts_D_U_L": [
+                1,
+                0,
+                2
+              ],
+              "probability": 0.2893729617243756
+            },
+            {
+              "counts_D_U_L": [
+                1,
+                1,
+                1
+              ],
+              "probability": 0.04041628460677488
+            },
+            {
+              "counts_D_U_L": [
+                1,
+                2,
+                0
+              ],
+              "probability": 0.0009655580603206535
+            },
+            {
+              "counts_D_U_L": [
+                2,
+                0,
+                1
+              ],
+              "probability": 0.01844593794063098
+            },
+            {
+              "counts_D_U_L": [
+                2,
+                1,
+                0
+              ],
+              "probability": 0.0016686314327715624
+            }
+          ],
+          "number_predictions": [
+            {
+              "name": "D",
+              "actual": 0.3709839431382762,
+              "target": 0.34547230578282656
+            },
+            {
+              "name": "U",
+              "actual": 0.13109653883905836,
+              "target": 0.14634406245066847
+            },
+            {
+              "name": "L",
+              "actual": 2.497919518022666,
+              "target": 2.5081836317665065
+            }
+          ],
+          "reference_transfer": 0.23988740429922117,
+          "transverse_reference_probability": 0.026517704011991588,
+          "max_record_resource_residual": 1.4894424245181168e-14,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "n": 2,
+      "q": 4,
+      "N": 9,
+      "parent_dimension": 420,
+      "logical_dimension": 70,
+      "natural_left_dimension": 1,
+      "bmin": 1,
+      "p": 0.07,
+      "observed_generator_residual": 0.13601049769949822,
+      "generator_bound": 0.5681502590872705,
+      "exact_orthogonal_decomposition_residual": 1.605687796803747e-17,
+      "source_number_identity_residual": 0.0,
+      "energy_dictionary_residual": 8.881784197001252e-16,
+      "record_intertwiner_residual": 0.0,
+      "coupling_sources": [
+        {
+          "sector": "D",
+          "observed_residual": 0.5,
+          "bound": 0.7071067811865475,
+          "decomposition_error": 5.551115123125783e-17,
+          "passed": true
+        },
+        {
+          "sector": "U",
+          "observed_residual": 0.45950584109472237,
+          "bound": 1.7071067811865475,
+          "decomposition_error": 5.551115123125783e-17,
+          "passed": true
+        }
+      ],
+      "holdouts": [
+        {
+          "time": 0.5,
+          "full_conditional_code_error": 0.06792152713309008,
+          "natural_left_error": 0.044004889242948896,
+          "amplitude_bound": 0.28407512954363523,
+          "reference_change_error": 0.002890034712974998,
+          "reference_change_bound": 2.272601036349082,
+          "complete_record_error": 0.044004889242948896,
+          "record_results": [
+            {
+              "counts_D_U_L": [
+                0,
+                0,
+                4
+              ],
+              "probability": 0.9818170290422991
+            },
+            {
+              "counts_D_U_L": [
+                0,
+                1,
+                3
+              ],
+              "probability": 0.004945344733954985
+            },
+            {
+              "counts_D_U_L": [
+                0,
+                2,
+                2
+              ],
+              "probability": 4.44401032914965e-06
+            },
+            {
+              "counts_D_U_L": [
+                1,
+                0,
+                3
+              ],
+              "probability": 0.01313332935982627
+            },
+            {
+              "counts_D_U_L": [
+                1,
+                1,
+                2
+              ],
+              "probability": 6.756882413205675e-05
+            },
+            {
+              "counts_D_U_L": [
+                1,
+                2,
+                1
+              ],
+              "probability": 6.27917861264529e-08
+            },
+            {
+              "counts_D_U_L": [
+                2,
+                0,
+                2
+              ],
+              "probability": 3.205324470506438e-05
+            },
+            {
+              "counts_D_U_L": [
+                2,
+                1,
+                1
+              ],
+              "probability": 1.6783281307873066e-07
+            },
+            {
+              "counts_D_U_L": [
+                2,
+                2,
+                0
+              ],
+              "probability": 1.601538271364781e-10
+            }
+          ],
+          "number_predictions": [
+            {
+              "name": "D",
+              "actual": 0.013265403451088394,
+              "target": 0.011376197598017779
+            },
+            {
+              "name": "U",
+              "actual": 0.005022095315438327,
+              "target": 0.0060229241753419795
+            },
+            {
+              "name": "L",
+              "actual": 3.9817125012334715,
+              "target": 3.982600878226641
+            }
+          ],
+          "reference_transfer": 0.008243308135647887,
+          "transverse_reference_probability": 0.0018898636350328714,
+          "max_record_resource_residual": 5.333694441429199e-15,
+          "passed": true
+        },
+        {
+          "time": 1.3,
+          "full_conditional_code_error": 0.17535085559873242,
+          "natural_left_error": 0.11261345536988342,
+          "amplitude_bound": 0.7385953368134516,
+          "reference_change_error": 0.018893455075244425,
+          "reference_change_bound": 5.908762694507613,
+          "complete_record_error": 0.11261345536988342,
+          "record_results": [
+            {
+              "counts_D_U_L": [
+                0,
+                0,
+                4
+              ],
+              "probability": 0.8828713126466037
+            },
+            {
+              "counts_D_U_L": [
+                0,
+                1,
+                3
+              ],
+              "probability": 0.03038842829863834
+            },
+            {
+              "counts_D_U_L": [
+                0,
+                2,
+                2
+              ],
+              "probability": 0.00018579021332340703
+            },
+            {
+              "counts_D_U_L": [
+                1,
+                0,
+                3
+              ],
+              "probability": 0.08221770566465128
+            },
+            {
+              "counts_D_U_L": [
+                1,
+                1,
+                2
+              ],
+              "probability": 0.0028913004560515865
+            },
+            {
+              "counts_D_U_L": [
+                1,
+                2,
+                1
+              ],
+              "probability": 1.8277181777162646e-05
+            },
+            {
+              "counts_D_U_L": [
+                2,
+                0,
+                2
+              ],
+              "probability": 0.001377551451641077
+            },
+            {
+              "counts_D_U_L": [
+                2,
+                1,
+                1
+              ],
+              "probability": 4.9313973026758295e-05
+            },
+            {
+              "counts_D_U_L": [
+                2,
+                2,
+                0
+              ],
+              "probability": 3.20114286686974e-07
+            }
+          ],
+          "number_predictions": [
+            {
+              "name": "D",
+              "actual": 0.08798165438038907,
+              "target": 0.0756749113458847
+            },
+            {
+              "name": "U",
+              "actual": 0.03373781774649119,
+              "target": 0.040324529787231
+            },
+            {
+              "name": "L",
+              "actual": 3.8782805278731196,
+              "target": 3.884000558866884
+            }
+          ],
+          "reference_transfer": 0.05424383663389776,
+          "transverse_reference_probability": 0.012338944241368542,
+          "max_record_resource_residual": 1.7763568394002505e-15,
+          "passed": true
+        },
+        {
+          "time": 3.1,
+          "full_conditional_code_error": 0.40242404178760616,
+          "natural_left_error": 0.2462782466236337,
+          "amplitude_bound": 1.7612658031705384,
+          "reference_change_error": 0.08910391713022614,
+          "reference_change_bound": 8.0,
+          "complete_record_error": 0.2462782466236337,
+          "record_results": [
+            {
+              "counts_D_U_L": [
+                0,
+                0,
+                4
+              ],
+              "probability": 0.48418464466438943
+            },
+            {
+              "counts_D_U_L": [
+                0,
+                1,
+                3
+              ],
+              "probability": 0.10063707160031553
+            },
+            {
+              "counts_D_U_L": [
+                0,
+                2,
+                2
+              ],
+              "probability": 0.0036257210332449013
+            },
+            {
+              "counts_D_U_L": [
+                1,
+                0,
+                3
+              ],
+              "probability": 0.3053653417825938
+            },
+            {
+              "counts_D_U_L": [
+                1,
+                1,
+                2
+              ],
+              "probability": 0.06495117036803655
+            },
+            {
+              "counts_D_U_L": [
+                1,
+                2,
+                1
+              ],
+              "probability": 0.002415942541200004
+            },
+            {
+              "counts_D_U_L": [
+                2,
+                0,
+                2
+              ],
+              "probability": 0.0316869929620944
+            },
+            {
+              "counts_D_U_L": [
+                2,
+                1,
+                1
+              ],
+              "probability": 0.0068706429654958176
+            },
+            {
+              "counts_D_U_L": [
+                2,
+                2,
+                0
+              ],
+              "probability": 0.00026247208262941316
+            }
+          ],
+          "number_predictions": [
+            {
+              "name": "D",
+              "actual": 0.45037267071226955,
+              "target": 0.39361418430872996
+            },
+            {
+              "name": "U",
+              "actual": 0.1850671562479965,
+              "target": 0.2174125869746832
+            },
+            {
+              "name": "L",
+              "actual": 3.364560173039733,
+              "target": 3.388973228716586
+            }
+          ],
+          "reference_transfer": 0.26530551446427175,
+          "transverse_reference_probability": 0.05808807355391856,
+          "max_record_resource_residual": 2.220446049250313e-16,
+          "passed": true
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "exact_complete_parent": true,
+  "empirical_experiments": 0,
+  "actual_preparation": "all unknown left q-fermion states and fixed reference N-q,0",
+  "arbitrary_logical_code_preparation_certified": false,
+  "uniform_all_time_small_error_claim": false,
+  "stage_complete": false,
+  "long_goal_complete": false
+}

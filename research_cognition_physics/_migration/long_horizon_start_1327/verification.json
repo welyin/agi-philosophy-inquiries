@@ -1,0 +1,65 @@
+{
+  "status": "PASS",
+  "date": "2026-10-19",
+  "scope": "Goal-start navigation insertion and read-only historical replay. No new scientific round.",
+  "new_scientific_rounds": 0,
+  "new_axioms": 0,
+  "next_available_round": 1327,
+  "old_manifest_preserved": true,
+  "tests": [
+    {
+      "arguments": "--verify-reclassification",
+      "receipt": "cff218",
+      "exit_code": 0,
+      "result": {
+        "status": "PASS",
+        "schema": "interim_reclassification_v1",
+        "manifest_sha256": "48b04216b66e1166c6f3aec1f80e8f2fb0c2f02669c02ee56a58f81dbddf7c89",
+        "markdown_files": 10,
+        "local_links": 5488,
+        "frozen_scientific_files": 40,
+        "current_and_original_hashes_verified": true,
+        "withdrawn_paper_absent": true,
+        "original_markdown_recovered_in_memory": true,
+        "files_written": 0,
+        "navigation_start_files": 5,
+        "navigation_start_manifest_sha256": "9f32c154d3f77fd030bf6b8ac51d3ea49876b563c6d37c90b54b6f6719c20f6f",
+        "scientific_claims_revalidated": false
+      }
+    },
+    {
+      "arguments": "--verify-navigation",
+      "receipt": "7aa361",
+      "exit_code": 0,
+      "result": {
+        "status": "PASS",
+        "files": 4,
+        "manifest_sha256": "e8e24394ebfe33afaaa319c061adc9fa4d9557aa6ac72bc2598fb6b84f390155",
+        "closed_boundary_verified": true,
+        "original_navigation_recoverable": true,
+        "frozen_archives_modified": false,
+        "stage_first_round": 1323,
+        "entry_points": [
+          "research_cognition_physics/archive_1323_/README.md",
+          "research_cognition_physics/archive_1323_/_shared/goal.md"
+        ],
+        "frozen_support_files": 160,
+        "scientific_acceptance_checked": false
+      }
+    },
+    {
+      "arguments": "--script research_cognition_physics/archive_1323_/_shared/check_stage_joint.py -- --check",
+      "receipt": "a1b78a",
+      "exit_code": 0,
+      "result": {
+        "status": "PASS_STAGE_AUXILIARY_CHECKS_ONLY",
+        "mode": "read-only",
+        "scientific_files_verified": 40,
+        "paper_local_links": 12,
+        "analytic_arithmetic_checks": 20,
+        "max_transport_residual": 1.6008962290237398e-11,
+        "stage_completion_declared": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,2062 @@
+{
+  "round": 1326,
+  "status": "PASS",
+  "count": 166,
+  "checks": [
+    {
+      "name": "calibration.all_first_low_matrix",
+      "kind": "equality",
+      "residual": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "axis.dimension",
+      "kind": "equality",
+      "residual": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.V_Hermitian",
+      "kind": "equality",
+      "residual": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.C_V_invariant",
+      "kind": "equality",
+      "residual": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.C_drive_invariant",
+      "kind": "equality",
+      "residual": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.K_V_invariant",
+      "kind": "equality",
+      "residual": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.drive_breaks_old_K",
+      "kind": "upper_bound",
+      "value": 1.0,
+      "ceiling": 15.264624201947392,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.V_compression_bound",
+      "kind": "upper_bound",
+      "value": 0.01300000000000001,
+      "ceiling": 0.013,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.source_bound",
+      "kind": "upper_bound",
+      "value": 15.264624201947386,
+      "ceiling": 16.24807680927192,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.source_instrument_complete",
+      "kind": "equality",
+      "residual": 7.798496294268327e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.source_instrument_effect_difference",
+      "kind": "equality",
+      "residual": 8.431010937605394e-14,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f1.inherited_first_order_Dirac_dictionary",
+      "kind": "equality",
+      "residual": 9.065984207038054e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f1.ordered_upper_0",
+      "kind": "upper_bound",
+      "value": -1.0112734818332125,
+      "ceiling": -1.0112264305714471,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f1.ordered_lower_0",
+      "kind": "upper_bound",
+      "value": -1.0113383066664106,
+      "ceiling": -1.0112734818332125,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f1.ordered_upper_1",
+      "kind": "upper_bound",
+      "value": -1.0083735401517957,
+      "ceiling": -1.0082760637551325,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f1.ordered_lower_1",
+      "kind": "upper_bound",
+      "value": -1.008387939850096,
+      "ceiling": -1.0083735401517957,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f1.ordered_upper_2",
+      "kind": "upper_bound",
+      "value": -0.9918072557806377,
+      "ceiling": -0.991723936244867,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f1.ordered_lower_2",
+      "kind": "upper_bound",
+      "value": -0.9918358123398304,
+      "ceiling": -0.9918072557806377,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f1.ordered_upper_3",
+      "kind": "upper_bound",
+      "value": -0.9887954922219093,
+      "ceiling": -0.9887735694285525,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f1.ordered_lower_3",
+      "kind": "upper_bound",
+      "value": -0.988885445523516,
+      "ceiling": -0.9887954922219093,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f1.next_band_gap",
+      "kind": "upper_bound",
+      "value": 0.9639999999999999,
+      "ceiling": 0.979312822483032,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f1.global_other_C_threshold",
+      "kind": "upper_bound",
+      "value": -0.9887954922219093,
+      "ceiling": -0.01800000000000033,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f1.product_embedding",
+      "kind": "equality",
+      "residual": 2.220446049250313e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f1.dressed_isometry",
+      "kind": "equality",
+      "residual": 1.9313625274300677e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f1.exact_dressed_intertwining",
+      "kind": "equality",
+      "residual": 6.119866947963979e-14,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f1.whole_subspace_angle",
+      "kind": "upper_bound",
+      "value": 0.01008039696699932,
+      "ceiling": 0.01077283808559735,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f1.canonical_dressing",
+      "kind": "upper_bound",
+      "value": 0.010080525011881796,
+      "ceiling": 0.01077299437245764,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f1.all_input_product_to_dressed_dynamics",
+      "kind": "upper_bound",
+      "value": 0.013376975835237104,
+      "ceiling": 0.02154598874491528,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f1.dressed_source_connection",
+      "kind": "equality",
+      "residual": 1.3882491563243865e-11,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "normalized.f1.all_four_HF_finite_difference",
+      "kind": "equality",
+      "residual": 7.055683016168479e-11,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "normalized.f1.reference_HF_finite_difference",
+      "kind": "equality",
+      "residual": 1.3296030942910875e-12,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "normalized.f1.all_four_full_energy_ledger",
+      "kind": "equality",
+      "residual": 1.0631749826095186e-14,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f1.reference_excess_nonnegative",
+      "kind": "upper_bound",
+      "value": 0.0,
+      "ceiling": 2.214961301694185e-05,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f1.record_stinespring_isometry",
+      "kind": "equality",
+      "residual": 3.1244786074503437e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f1.source_readout_all_input",
+      "kind": "equality",
+      "residual": 3.99731118482316e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f1.record_partner_marginal",
+      "kind": "equality",
+      "residual": 2.4042457396743293e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f1.all_input_readout_work_ledger",
+      "kind": "equality",
+      "residual": 7.911467943082138e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f1.actual_record_source",
+      "kind": "equality",
+      "residual": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f1.fixed_state_drive_switch_work",
+      "kind": "equality",
+      "residual": 6.938893903907228e-18,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f1.complete_K_current_is_drive_current",
+      "kind": "equality",
+      "residual": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f1.complete_old_charge_current",
+      "kind": "equality",
+      "residual": 5.725855725256332e-14,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f1.actual_finite_K_Ehrenfest",
+      "kind": "equality",
+      "residual": 9.76385639006594e-13,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "normalized.f2.inherited_first_order_Dirac_dictionary",
+      "kind": "equality",
+      "residual": 2.690883239397587e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f2.ordered_upper_0",
+      "kind": "upper_bound",
+      "value": -4.013467815525968,
+      "ceiling": -4.013456869915717,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f2.ordered_lower_0",
+      "kind": "upper_bound",
+      "value": -4.013503020508936,
+      "ceiling": -4.013467815525968,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f2.ordered_upper_1",
+      "kind": "upper_bound",
+      "value": -4.010683035142503,
+      "ceiling": -4.010643826401737,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f2.ordered_lower_1",
+      "kind": "upper_bound",
+      "value": -4.010689976994956,
+      "ceiling": -4.010683035142503,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f2.ordered_upper_2",
+      "kind": "upper_bound",
+      "value": -3.989391932414459,
+      "ceiling": -3.98935617359826,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f2.ordered_lower_2",
+      "kind": "upper_bound",
+      "value": -3.989402324191479,
+      "ceiling": -3.989391932414459,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f2.ordered_upper_3",
+      "kind": "upper_bound",
+      "value": -3.986553198693877,
+      "ceiling": -3.9865431300842804,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f2.ordered_lower_3",
+      "kind": "upper_bound",
+      "value": -3.9865892806774994,
+      "ceiling": -3.986553198693877,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f2.next_band_gap",
+      "kind": "upper_bound",
+      "value": 0.9639999999999995,
+      "ceiling": 0.9740644885608525,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f2.global_other_C_threshold",
+      "kind": "upper_bound",
+      "value": -3.986553198693877,
+      "ceiling": -3.0180000000000002,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f2.product_embedding",
+      "kind": "equality",
+      "residual": 4.440892098500626e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f2.dressed_isometry",
+      "kind": "equality",
+      "residual": 2.2977350674682147e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f2.exact_dressed_intertwining",
+      "kind": "equality",
+      "residual": 5.952001688698293e-14,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f2.whole_subspace_angle",
+      "kind": "upper_bound",
+      "value": 0.006459812551528619,
+      "ceiling": 0.006919108277492956,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f2.canonical_dressing",
+      "kind": "upper_bound",
+      "value": 0.006459846247477428,
+      "ceiling": 0.006919149684093933,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f2.all_input_product_to_dressed_dynamics",
+      "kind": "upper_bound",
+      "value": 0.008885205973835306,
+      "ceiling": 0.013838299368187866,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f2.dressed_source_connection",
+      "kind": "equality",
+      "residual": 4.422233709769711e-11,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "normalized.f2.all_four_HF_finite_difference",
+      "kind": "equality",
+      "residual": 1.7839918516772564e-10,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "normalized.f2.reference_HF_finite_difference",
+      "kind": "equality",
+      "residual": 6.222578008419077e-12,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "normalized.f2.all_four_full_energy_ledger",
+      "kind": "equality",
+      "residual": 2.014758411837997e-14,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f2.reference_excess_nonnegative",
+      "kind": "upper_bound",
+      "value": 0.0,
+      "ceiling": 1.0322790489958322e-05,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.f2.record_stinespring_isometry",
+      "kind": "equality",
+      "residual": 3.1358727558252366e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f2.source_readout_all_input",
+      "kind": "equality",
+      "residual": 9.769967486658893e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f2.record_partner_marginal",
+      "kind": "equality",
+      "residual": 3.895341513066166e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f2.all_input_readout_work_ledger",
+      "kind": "equality",
+      "residual": 4.041257539183984e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f2.actual_record_source",
+      "kind": "equality",
+      "residual": 3.1086244689504383e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f2.fixed_state_drive_switch_work",
+      "kind": "equality",
+      "residual": 1.3877787807814457e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f2.complete_K_current_is_drive_current",
+      "kind": "equality",
+      "residual": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f2.complete_old_charge_current",
+      "kind": "equality",
+      "residual": 1.1451711450512665e-13,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "normalized.f2.actual_finite_K_Ehrenfest",
+      "kind": "equality",
+      "residual": 3.1495576546108905e-12,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "bare_linear.V_Hermitian",
+      "kind": "equality",
+      "residual": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "bare_linear.C_V_invariant",
+      "kind": "equality",
+      "residual": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "bare_linear.C_drive_invariant",
+      "kind": "equality",
+      "residual": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "bare_linear.K_V_invariant",
+      "kind": "equality",
+      "residual": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "bare_linear.drive_breaks_old_K",
+      "kind": "upper_bound",
+      "value": 1.0,
+      "ceiling": 15.264624201947392,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "bare_linear.V_compression_bound",
+      "kind": "upper_bound",
+      "value": 0.08165880884990159,
+      "ceiling": 0.0828868297712961,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "bare_linear.source_bound",
+      "kind": "upper_bound",
+      "value": 15.264624201947386,
+      "ceiling": 16.24807680927192,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "bare_linear.source_instrument_complete",
+      "kind": "equality",
+      "residual": 7.798496294268327e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "bare_linear.source_instrument_effect_difference",
+      "kind": "equality",
+      "residual": 8.431010937605394e-14,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "bare_linear.f1.inherited_first_order_Dirac_dictionary",
+      "kind": "equality",
+      "residual": 9.065984207038054e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "bare_linear.f1.ordered_upper_0",
+      "kind": "upper_bound",
+      "value": -1.0112983700102256,
+      "ceiling": -1.0112264305714471,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "bare_linear.f1.ordered_lower_0",
+      "kind": "upper_bound",
+      "value": -1.0113490094535045,
+      "ceiling": -1.0112983700102256,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "bare_linear.f1.ordered_upper_1",
+      "kind": "upper_bound",
+      "value": -1.0083726779681796,
+      "ceiling": -1.0082760637551325,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "bare_linear.f1.ordered_lower_1",
+      "kind": "upper_bound",
+      "value": -1.0083986426371898,
+      "ceiling": -1.0083726779681796,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "bare_linear.f1.ordered_upper_2",
+      "kind": "upper_bound",
+      "value": -0.9918152440182582,
+      "ceiling": -0.991723936244867,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "bare_linear.f1.ordered_lower_2",
+      "kind": "upper_bound",
+      "value": -0.9918465151269243,
+      "ceiling": -0.9918152440182582,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "bare_linear.f1.ordered_upper_3",
+      "kind": "upper_bound",
+      "value": -0.9888016725176257,
+      "ceiling": -0.9887735694285525,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "bare_linear.f1.ordered_lower_3",
+      "kind": "upper_bound",
+      "value": -0.9888961483106099,
+      "ceiling": -0.9888016725176257,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "bare_linear.f1.next_band_gap",
+      "kind": "upper_bound",
+      "value": 0.8242263404574077,
+      "ceiling": 0.9774589433981203,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "bare_linear.f1.global_other_C_threshold",
+      "kind": "upper_bound",
+      "value": -0.9888016725176257,
+      "ceiling": -0.08788682977129644,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "bare_linear.f1.product_embedding",
+      "kind": "equality",
+      "residual": 2.220446049250313e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "bare_linear.f1.dressed_isometry",
+      "kind": "equality",
+      "residual": 1.3369469632082416e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "bare_linear.f1.exact_dressed_intertwining",
+      "kind": "equality",
+      "residual": 5.332067300804287e-14,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "bare_linear.f1.whole_subspace_angle",
+      "kind": "upper_bound",
+      "value": 0.009984359589114422,
+      "ceiling": 0.012195078025961405,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "bare_linear.f1.canonical_dressing",
+      "kind": "upper_bound",
+      "value": 0.009984484008942295,
+      "ceiling": 0.01219530474710242,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "bare_linear.f1.all_input_product_to_dressed_dynamics",
+      "kind": "upper_bound",
+      "value": 0.013246371644070554,
+      "ceiling": 0.02439060949420484,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "bare_linear.f1.dressed_source_connection",
+      "kind": "equality",
+      "residual": 1.1615718571905023e-11,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "bare_linear.f1.all_four_HF_finite_difference",
+      "kind": "equality",
+      "residual": 3.046020550746292e-11,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "bare_linear.f1.reference_HF_finite_difference",
+      "kind": "equality",
+      "residual": 1.3296030942910875e-12,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "bare_linear.f1.all_four_full_energy_ledger",
+      "kind": "equality",
+      "residual": 7.416678102637414e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "bare_linear.f1.reference_excess_nonnegative",
+      "kind": "upper_bound",
+      "value": 0.0,
+      "ceiling": 2.819095837236496e-05,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "bare_linear.f1.record_stinespring_isometry",
+      "kind": "equality",
+      "residual": 2.891513130360851e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "bare_linear.f1.source_readout_all_input",
+      "kind": "equality",
+      "residual": 9.326026477925369e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "bare_linear.f1.record_partner_marginal",
+      "kind": "equality",
+      "residual": 2.982424969761835e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "bare_linear.f1.all_input_readout_work_ledger",
+      "kind": "equality",
+      "residual": 6.737779714054801e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "bare_linear.f1.actual_record_source",
+      "kind": "equality",
+      "residual": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "bare_linear.f1.fixed_state_drive_switch_work",
+      "kind": "equality",
+      "residual": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "bare_linear.f1.complete_K_current_is_drive_current",
+      "kind": "equality",
+      "residual": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "bare_linear.f1.complete_old_charge_current",
+      "kind": "equality",
+      "residual": 5.725855725256332e-14,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "bare_linear.f1.actual_finite_K_Ehrenfest",
+      "kind": "equality",
+      "residual": 3.869485027535591e-13,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "bare_linear.f2.inherited_first_order_Dirac_dictionary",
+      "kind": "equality",
+      "residual": 2.6931055396791187e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "bare_linear.f2.ordered_upper_0",
+      "kind": "upper_bound",
+      "value": -4.020776688986331,
+      "ceiling": -4.0207154766660596,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "bare_linear.f2.ordered_lower_0",
+      "kind": "upper_bound",
+      "value": -4.020838055548117,
+      "ceiling": -4.020776688986331,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "bare_linear.f2.ordered_upper_1",
+      "kind": "upper_bound",
+      "value": -4.014199554261817,
+      "ceiling": -4.014105776303205,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "bare_linear.f2.ordered_lower_1",
+      "kind": "upper_bound",
+      "value": -4.014228355185262,
+      "ceiling": -4.014199554261817,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "bare_linear.f2.ordered_upper_2",
+      "kind": "upper_bound",
+      "value": -3.9859884943275263,
+      "ceiling": -3.9858942236967927,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "bare_linear.f2.ordered_lower_2",
+      "kind": "upper_bound",
+      "value": -3.9860168025788503,
+      "ceiling": -3.9859884943275263,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "bare_linear.f2.ordered_upper_3",
+      "kind": "upper_bound",
+      "value": -3.979323413681083,
+      "ceiling": -3.979284523333938,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "bare_linear.f2.ordered_lower_3",
+      "kind": "upper_bound",
+      "value": -3.9794071022159954,
+      "ceiling": -3.979323413681083,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "bare_linear.f2.next_band_gap",
+      "kind": "upper_bound",
+      "value": 0.8242263404574073,
+      "ceiling": 0.9585240707300562,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "bare_linear.f2.global_other_C_threshold",
+      "kind": "upper_bound",
+      "value": -3.979323413681083,
+      "ceiling": -3.0878868297712962,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "bare_linear.f2.product_embedding",
+      "kind": "equality",
+      "residual": 4.440892098500626e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "bare_linear.f2.dressed_isometry",
+      "kind": "equality",
+      "residual": 1.560746823412222e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "bare_linear.f2.exact_dressed_intertwining",
+      "kind": "equality",
+      "residual": 6.399933778206027e-14,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "bare_linear.f2.whole_subspace_angle",
+      "kind": "upper_bound",
+      "value": 0.010070570136805365,
+      "ceiling": 0.012195078025961408,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "bare_linear.f2.canonical_dressing",
+      "kind": "upper_bound",
+      "value": 0.010070697807569756,
+      "ceiling": 0.01219530474710242,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "bare_linear.f2.all_input_product_to_dressed_dynamics",
+      "kind": "upper_bound",
+      "value": 0.014540917604532282,
+      "ceiling": 0.02439060949420484,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "bare_linear.f2.dressed_source_connection",
+      "kind": "equality",
+      "residual": 4.511269564308307e-11,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "bare_linear.f2.all_four_HF_finite_difference",
+      "kind": "equality",
+      "residual": 1.2965965785879434e-10,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "bare_linear.f2.reference_HF_finite_difference",
+      "kind": "equality",
+      "residual": 6.222578008419077e-12,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "bare_linear.f2.all_four_full_energy_ledger",
+      "kind": "equality",
+      "residual": 2.8120537080946178e-14,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "bare_linear.f2.reference_excess_nonnegative",
+      "kind": "upper_bound",
+      "value": 0.0,
+      "ceiling": 3.948080425519862e-05,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "bare_linear.f2.record_stinespring_isometry",
+      "kind": "equality",
+      "residual": 2.0559891379322475e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "bare_linear.f2.source_readout_all_input",
+      "kind": "equality",
+      "residual": 7.105629027381214e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "bare_linear.f2.record_partner_marginal",
+      "kind": "equality",
+      "residual": 2.532936406013052e-16,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "bare_linear.f2.all_input_readout_work_ledger",
+      "kind": "equality",
+      "residual": 1.786327104093151e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "bare_linear.f2.actual_record_source",
+      "kind": "equality",
+      "residual": 3.552713678800501e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "bare_linear.f2.fixed_state_drive_switch_work",
+      "kind": "equality",
+      "residual": 9.71445146547012e-17,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "bare_linear.f2.complete_K_current_is_drive_current",
+      "kind": "equality",
+      "residual": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "bare_linear.f2.complete_old_charge_current",
+      "kind": "equality",
+      "residual": 1.1451711450512665e-13,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "bare_linear.f2.actual_finite_K_Ehrenfest",
+      "kind": "equality",
+      "residual": 9.642447430791012e-13,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "full760.axis_isometry",
+      "kind": "equality",
+      "residual": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "full760.exact_invariant_subspace",
+      "kind": "equality",
+      "residual": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "full760.all_four_low_energies",
+      "kind": "equality",
+      "residual": 8.591146515148075e-15,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "full760.entire_C_selection",
+      "kind": "equality",
+      "residual": 0.0,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "full760.global_normalized_norm",
+      "kind": "upper_bound",
+      "value": 0.013000000000000015,
+      "ceiling": 0.013,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.finite_response_interval_lower_0",
+      "kind": "upper_bound",
+      "value": -0.002276589937488897,
+      "ceiling": -0.002194333692755679,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.finite_response_interval_upper_0",
+      "kind": "upper_bound",
+      "value": -0.002194333692755679,
+      "ceiling": -0.002118563249306599,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.finite_response_interval_lower_1",
+      "kind": "upper_bound",
+      "value": -0.0024139132398238545,
+      "ceiling": -0.002309494990707872,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.finite_response_interval_upper_1",
+      "kind": "upper_bound",
+      "value": -0.002309494990707872,
+      "ceiling": -0.0022558865516415566,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.finite_response_interval_lower_2",
+      "kind": "upper_bound",
+      "value": 0.0023216120533877853,
+      "ceiling": 0.0024153233661785567,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.finite_response_interval_upper_2",
+      "kind": "upper_bound",
+      "value": 0.0024153233661785567,
+      "ceiling": 0.0024796387415700833,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.finite_response_interval_lower_3",
+      "kind": "upper_bound",
+      "value": 0.00218428875105305,
+      "ceiling": 0.002242293528031958,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normalized.finite_response_interval_upper_3",
+      "kind": "upper_bound",
+      "value": 0.002242293528031958,
+      "ceiling": 0.002342315439235348,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "bare_linear.finite_response_interval_lower_0",
+      "kind": "upper_bound",
+      "value": -0.009611624976670046,
+      "ceiling": -0.009478318976105404,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "bare_linear.finite_response_interval_upper_0",
+      "kind": "upper_bound",
+      "value": -0.009478318976105404,
+      "ceiling": -0.009366467212555258,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "bare_linear.finite_response_interval_lower_1",
+      "kind": "upper_bound",
+      "value": -0.005952291430129803,
+      "ceiling": -0.005826876293637984,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "bare_linear.finite_response_interval_upper_1",
+      "kind": "upper_bound",
+      "value": -0.005826876293637984,
+      "ceiling": -0.005707133666015013,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "bare_linear.finite_response_interval_lower_2",
+      "kind": "upper_bound",
+      "value": 0.005707133666016678,
+      "ceiling": 0.005826749690731603,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "bare_linear.finite_response_interval_upper_2",
+      "kind": "upper_bound",
+      "value": 0.005826749690731603,
+      "ceiling": 0.005952291430131468,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "bare_linear.finite_response_interval_lower_3",
+      "kind": "upper_bound",
+      "value": 0.009366467212557145,
+      "ceiling": 0.009478258836542408,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "bare_linear.finite_response_interval_upper_3",
+      "kind": "upper_bound",
+      "value": 0.009478258836542408,
+      "ceiling": 0.009611624976671933,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "held_out_highest_low_level_intervals_disjoint",
+      "kind": "upper_bound",
+      "value": 0.0,
+      "ceiling": 0.007024151773321797,
+      "tolerance": 2e-10
+    }
+  ],
+  "max_equality_residual": 1.7839918516772564e-10,
+  "model": {
+    "boson_cutoff": 66,
+    "full_dimension": 9112,
+    "exact_axis_dimension": 400,
+    "p": 0.005,
+    "omega": 1.0,
+    "normalized_couplings": [
+      0.013,
+      0.011
+    ],
+    "once_calibrated_bare_couplings": [
+      0.010051504532930716,
+      0.0065949398237605955
+    ],
+    "calibration": "E(f=1)^dagger V E(f=1); all parent coefficients fixed thereafter",
+    "source": "dH/df = -(a0+a0^dagger); explicit finite drive, not Higgs identity"
+  },
+  "cases": [
+    {
+      "menu": "normalized",
+      "f": 1.0,
+      "reference_ground": -1.0000000000000002,
+      "reference_global_gap": 0.9999999999999999,
+      "reference_sector_bottoms": [
+        -1.0000000000000002,
+        -1.8185078333425339e-16,
+        0.9999999999999996,
+        1.9999999999999998,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        6.999999999999999,
+        7.999999999999999,
+        9.000000000000002,
+        10.000000000000002,
+        11.000000000000002,
+        12.000000000000002,
+        13.000000000000002,
+        14.0,
+        15.0,
+        15.999999999999998,
+        17.000000000000004,
+        18.000000000000004,
+        19.0,
+        20.0,
+        21.000000000000004,
+        22.000000000000004,
+        23.0,
+        24.0,
+        25.0,
+        26.0,
+        27.0,
+        28.0,
+        29.0,
+        30.0,
+        31.000000000000007,
+        32.0,
+        33.0,
+        34.0,
+        35.00000000000001,
+        36.00000000000001,
+        37.00000000000001,
+        38.0,
+        39.0,
+        40.0,
+        41.0,
+        42.0,
+        43.0,
+        44.0,
+        45.00000000000001,
+        45.99999999999999,
+        47.0,
+        48.00000000000001,
+        49.000000000000014,
+        50.00000000000026,
+        51.000000000003915,
+        52.0000000000545,
+        53.000000000703466,
+        54.00000000836951,
+        55.00000009110636,
+        56.000000899215635,
+        57.00000795732073,
+        58.000062229314295,
+        59.00042197861966,
+        60.00242111755251,
+        61.01144822114523,
+        62.04396726165908,
+        63.13919414688829,
+        64.3819660112501,
+        66.0
+      ],
+      "reference_mean_number": 0.9999999999999993,
+      "global_vertex_norm_bound": 0.013,
+      "actual_PQ_vertex_norm": 0.010385015914515844,
+      "separation_denominator": 0.9639999999999999,
+      "ordered_energy_error": 0.00011187609496343089,
+      "actual_next_band_gap": 0.979312822483032,
+      "low_excitation_energies": [
+        -0.011273481833212307,
+        -0.008373540151795478,
+        0.008192744219362558,
+        0.0112045077780909
+      ],
+      "first_order_low_excitation_energies": [
+        -0.0112264305714469,
+        -0.008276063755132235,
+        0.008276063755133234,
+        0.011226430571447676
+      ],
+      "first_order_conversion_magnitudes": [
+        0.010051504532930711,
+        0.006594939823760593
+      ],
+      "physical_source_excitation": [
+        -0.0048765223106155275,
+        -0.0036121841882676975,
+        0.003761190153198868,
+        0.004972801635336532
+      ],
+      "source_finite_difference": [
+        -0.004876522317065479,
+        -0.003612184198420465,
+        0.0037611902226064586,
+        0.004972801639357982
+      ],
+      "reference_excess_energy": [
+        4.6284004870278395e-05,
+        9.583075728780699e-05,
+        8.476349795183413e-05,
+        2.214961301694185e-05
+      ],
+      "reference_mean_number_in_each_low_state": [
+        1.0049228063154851,
+        1.0037080149455546,
+        0.9963235733447524,
+        0.9950493479776787
+      ],
+      "kinetic_energy": [
+        -0.002236875199884792,
+        -0.003025594636901747,
+        0.0030258361739197567,
+        0.002237432914031108
+      ],
+      "vertex_energy": [
+        -0.009082890638197363,
+        -0.005443776272170973,
+        0.005082144547490768,
+        0.008944925251043947
+      ],
+      "dressed_source": {
+        "real": [
+          [
+            -1.9998107663686566,
+            0.00543610283767423,
+            1.269489864510099e-17,
+            -2.7663463565292294e-17
+          ],
+          [
+            0.005436102837674229,
+            -2.000092954306619,
+            1.6568123438281605e-16,
+            -1.7136959273816502e-17
+          ],
+          [
+            1.269489864510099e-17,
+            1.6568123438281602e-16,
+            -1.9998256330619437,
+            -0.004707244545921432
+          ],
+          [
+            -2.766346356529228e-17,
+            -1.71369592738165e-17,
+            -0.004707244545921433,
+            -2.000025360973124
+          ]
+        ],
+        "imag": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "dressing_error": 0.010080525011881796,
+      "dressing_bound": 0.01077299437245764,
+      "all_input_dynamics_time": 20.0,
+      "all_input_dynamics_error": 0.013376975835237104,
+      "instrument": {
+        "scale": 16.24807680927192,
+        "probabilities": [
+          0.43845368693764153,
+          0.5615463130623581
+        ],
+        "source_mean": -2.000018443929387,
+        "mean_work": 0.0009655746287559561,
+        "component_work": [
+          0.0009655164346850821,
+          -4.641472516771757e-16,
+          2.555747062866204e-18,
+          5.81940714489632e-08
+        ],
+        "record_energy": 0.0,
+        "resets_performed": 0,
+        "old_K_change": 0.000965516434685787,
+        "old_charge_change": 0.0003572410808337412
+      },
+      "drive_account": {
+        "old_K_current": 0.0011094210873536237,
+        "old_charge_current": 0.00041048580232084077,
+        "switch_step": 0.03,
+        "instantaneous_switch_work": -0.0600005533178816
+      }
+    },
+    {
+      "menu": "normalized",
+      "f": 2.0,
+      "reference_ground": -4.0,
+      "reference_global_gap": 0.9999999999999996,
+      "reference_sector_bottoms": [
+        -4.0,
+        -3.0000000000000004,
+        -2.000000000000001,
+        -1.0000000000000007,
+        1.0040942999494823e-15,
+        1.000000000000001,
+        1.9999999999999987,
+        2.9999999999999982,
+        3.9999999999999996,
+        5.000000000000002,
+        6.0000000000000036,
+        7.0,
+        8.000000000000002,
+        9.000000000000004,
+        9.999999999999998,
+        11.0,
+        12.000000000000002,
+        13.000000000000004,
+        13.999999999999998,
+        14.999999999999995,
+        16.00000000000001,
+        16.999999999999996,
+        18.0,
+        19.000000000000004,
+        19.999999999999996,
+        21.000000000000004,
+        21.999999999999993,
+        23.000000000000004,
+        24.0,
+        25.000000000000004,
+        25.999999999999996,
+        26.999999999999996,
+        28.000000000000004,
+        28.999999999999993,
+        30.00000000000001,
+        31.0,
+        32.000000000000014,
+        33.0,
+        34.00000000000003,
+        35.00000000000011,
+        36.00000000000068,
+        37.00000000000445,
+        38.00000000002764,
+        39.000000000164384,
+        40.00000000093585,
+        41.000000005090364,
+        42.000000026394495,
+        43.000000130137295,
+        44.00000060838516,
+        45.00000268808547,
+        46.00001118371183,
+        47.00004362496533,
+        48.00015874213208,
+        49.00053566161672,
+        50.001665138722956,
+        51.00473661632526,
+        52.01226444826802,
+        53.028851105876036,
+        54.0618454567342,
+        55.121762883028346,
+        56.22270744852256,
+        57.383389789907845,
+        58.62962487824702,
+        59.99999999999999,
+        61.55944833698691,
+        63.43844718719117,
+        66.0
+      ],
+      "reference_mean_number": 3.9999999999999982,
+      "global_vertex_norm_bound": 0.013,
+      "actual_PQ_vertex_norm": 0.006670020379503206,
+      "separation_denominator": 0.9639999999999995,
+      "ordered_energy_error": 4.615059321886734e-05,
+      "actual_next_band_gap": 0.9740644885608525,
+      "low_excitation_energies": [
+        -0.013467815525967985,
+        -0.01068303514250335,
+        0.010608067585541114,
+        0.013446801306122858
+      ],
+      "first_order_low_excitation_energies": [
+        -0.01345686991571693,
+        -0.010643826401737222,
+        0.010643826401739886,
+        0.013456869915719594
+      ],
+      "first_order_conversion_magnitudes": [
+        0.012493492223096404,
+        0.009396331223959005
+      ],
+      "physical_source_excitation": [
+        -0.0006303200505390905,
+        -0.0012443452885477768,
+        0.0013067992419504293,
+        0.0006502448553962203
+      ],
+      "source_finite_difference": [
+        -0.0006303200250634688,
+        -0.001244345380069234,
+        0.0013067990933812723,
+        0.0006502448823830775
+      ],
+      "reference_excess_energy": [
+        1.067729785564353e-05,
+        3.836060086204185e-05,
+        3.6571345917835174e-05,
+        1.0322790489958322e-05
+      ],
+      "reference_mean_number_in_each_low_state": [
+        4.001271317398929,
+        4.002527051177956,
+        3.997422972862016,
+        3.9987098330796984
+      ],
+      "kinetic_energy": [
+        -0.0018583331830092267,
+        -0.0023505620839829855,
+        0.002350652316862616,
+        0.001858369837624488
+      ],
+      "vertex_energy": [
+        -0.011620159640814401,
+        -0.00837083365936343,
+        0.008220843922758323,
+        0.01157810867800206
+      ],
+      "dressed_source": {
+        "real": [
+          [
+            -3.999839731494933,
+            0.0006295142871798214,
+            -1.2238838169799824e-17,
+            -1.7402014495376742e-17
+          ],
+          [
+            0.0006295142871798214,
+            -4.000140343700209,
+            -3.3345557247197597e-16,
+            -4.6763437198193e-16
+          ],
+          [
+            -1.2238838169799824e-17,
+            -3.3345557247197567e-16,
+            -3.999875625847327,
+            -0.0014948912315905808
+          ],
+          [
+            -1.740201449537674e-17,
+            -4.676343719819299e-16,
+            -0.001494891231590581,
+            -4.0000619201992675
+          ]
+        ],
+        "imag": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "dressing_error": 0.006459846247477428,
+      "dressing_bound": 0.006919149684093933,
+      "all_input_dynamics_time": 20.0,
+      "all_input_dynamics_error": 0.008885205973835306,
+      "instrument": {
+        "scale": 16.24807680927192,
+        "probabilities": [
+          0.3769101786085899,
+          0.6230898213914122
+        ],
+        "source_mean": -3.9999457448144216,
+        "mean_work": 0.0010133074855757374,
+        "component_work": [
+          0.0010132700459867337,
+          -4.277893183344025e-15,
+          2.582794309623004e-18,
+          3.743959094749782e-08
+        ],
+        "record_energy": 0.0,
+        "resets_performed": 0,
+        "old_K_change": 0.001013270045986836,
+        "old_charge_change": 0.00037490991701512934
+      },
+      "drive_account": {
+        "old_K_current": 0.0014611279976629928,
+        "old_charge_current": 0.0005406173591353073,
+        "switch_step": 0.03,
+        "instantaneous_switch_work": -0.11999837234443264
+      }
+    },
+    {
+      "menu": "bare_linear",
+      "f": 1.0,
+      "reference_ground": -1.0000000000000002,
+      "reference_global_gap": 0.9999999999999999,
+      "reference_sector_bottoms": [
+        -1.0000000000000002,
+        -1.8185078333425339e-16,
+        0.9999999999999996,
+        1.9999999999999998,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        6.999999999999999,
+        7.999999999999999,
+        9.000000000000002,
+        10.000000000000002,
+        11.000000000000002,
+        12.000000000000002,
+        13.000000000000002,
+        14.0,
+        15.0,
+        15.999999999999998,
+        17.000000000000004,
+        18.000000000000004,
+        19.0,
+        20.0,
+        21.000000000000004,
+        22.000000000000004,
+        23.0,
+        24.0,
+        25.0,
+        26.0,
+        27.0,
+        28.0,
+        29.0,
+        30.0,
+        31.000000000000007,
+        32.0,
+        33.0,
+        34.0,
+        35.00000000000001,
+        36.00000000000001,
+        37.00000000000001,
+        38.0,
+        39.0,
+        40.0,
+        41.0,
+        42.0,
+        43.0,
+        44.0,
+        45.00000000000001,
+        45.99999999999999,
+        47.0,
+        48.00000000000001,
+        49.000000000000014,
+        50.00000000000026,
+        51.000000000003915,
+        52.0000000000545,
+        53.000000000703466,
+        54.00000000836951,
+        55.00000009110636,
+        56.000000899215635,
+        57.00000795732073,
+        58.000062229314295,
+        59.00042197861966,
+        60.00242111755251,
+        61.01144822114523,
+        62.04396726165908,
+        63.13919414688829,
+        64.3819660112501,
+        66.0
+      ],
+      "reference_mean_number": 0.9999999999999993,
+      "global_vertex_norm_bound": 0.0828868297712961,
+      "actual_PQ_vertex_norm": 0.010051504532930716,
+      "separation_denominator": 0.8242263404574077,
+      "ordered_energy_error": 0.00012257888205739482,
+      "actual_next_band_gap": 0.9774589433981203,
+      "low_excitation_energies": [
+        -0.011298370010225378,
+        -0.00837267796817942,
+        0.008184755981742065,
+        0.011198327482374482
+      ],
+      "first_order_low_excitation_energies": [
+        -0.0112264305714469,
+        -0.008276063755132235,
+        0.008276063755133234,
+        0.011226430571447676
+      ],
+      "first_order_conversion_magnitudes": [
+        0.010051504532930711,
+        0.006594939823760593
+      ],
+      "physical_source_excitation": [
+        -0.00898113663379263,
+        -0.005251615251531838,
+        0.005251530917218972,
+        0.008981096589368631
+      ],
+      "source_finite_difference": [
+        -0.008981136644381493,
+        -0.005251615257106934,
+        0.005251530895700185,
+        0.008981096571436531
+      ],
+      "reference_excess_energy": [
+        7.088127104393216e-05,
+        9.499850115024522e-05,
+        9.286946986186706e-05,
+        2.819095837236496e-05
+      ],
+      "reference_mean_number_in_each_low_state": [
+        1.009052017904835,
+        1.0053466137526814,
+        0.9948413385526418,
+        0.9910470943690022
+      ],
+      "kinetic_energy": [
+        -0.0022440702159331038,
+        -0.003022847389521739,
+        0.0030229502975123025,
+        0.0022450607379275686
+      ],
+      "vertex_energy": [
+        -0.0091251810653373,
+        -0.005444829079811397,
+        0.005068936214361528,
+        0.008925075786073433
+      ],
+      "dressed_source": {
+        "real": [
+          [
+            -1.999799904033073,
+            0.009950465134743954,
+            8.436990534730524e-20,
+            -5.164049509619294e-19
+          ],
+          [
+            0.009950465134743954,
+            -2.000200136011346,
+            5.492698901113809e-18,
+            -2.0697629892010086e-17
+          ],
+          [
+            8.436990534730601e-20,
+            5.4926989011138155e-18,
+            -1.9999121985495534,
+            -0.00666034957147879
+          ],
+          [
+            -5.164049509619296e-19,
+            -2.069762989201008e-17,
+            -0.0066603495714787925,
+            -2.000087885784759
+          ]
+        ],
+        "imag": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "dressing_error": 0.009984484008942295,
+      "dressing_bound": 0.01219530474710242,
+      "all_input_dynamics_time": 20.0,
+      "all_input_dynamics_error": 0.013246371644070554,
+      "instrument": {
+        "scale": 16.24807680927192,
+        "probabilities": [
+          0.43845103105594174,
+          0.5615489689440588
+        ],
+        "source_mean": -2.0001047498691102,
+        "mean_work": 0.000965517859166707,
+        "component_work": [
+          0.0009655178591671855,
+          -4.768748855332581e-16,
+          1.7779706220222095e-18,
+          -4.130037881353197e-19
+        ],
+        "record_energy": 0.0,
+        "resets_performed": 0,
+        "old_K_change": 0.0009655178591674307,
+        "old_charge_change": 0.00035724160789194935
+      },
+      "drive_account": {
+        "old_K_current": 0.0011077350840477476,
+        "old_charge_current": 0.0004098619810976666,
+        "switch_step": 0.03,
+        "instantaneous_switch_work": -0.0600031424960733
+      }
+    },
+    {
+      "menu": "bare_linear",
+      "f": 2.0,
+      "reference_ground": -4.0,
+      "reference_global_gap": 0.9999999999999996,
+      "reference_sector_bottoms": [
+        -4.0,
+        -3.0000000000000004,
+        -2.000000000000001,
+        -1.0000000000000007,
+        1.0040942999494823e-15,
+        1.000000000000001,
+        1.9999999999999987,
+        2.9999999999999982,
+        3.9999999999999996,
+        5.000000000000002,
+        6.0000000000000036,
+        7.0,
+        8.000000000000002,
+        9.000000000000004,
+        9.999999999999998,
+        11.0,
+        12.000000000000002,
+        13.000000000000004,
+        13.999999999999998,
+        14.999999999999995,
+        16.00000000000001,
+        16.999999999999996,
+        18.0,
+        19.000000000000004,
+        19.999999999999996,
+        21.000000000000004,
+        21.999999999999993,
+        23.000000000000004,
+        24.0,
+        25.000000000000004,
+        25.999999999999996,
+        26.999999999999996,
+        28.000000000000004,
+        28.999999999999993,
+        30.00000000000001,
+        31.0,
+        32.000000000000014,
+        33.0,
+        34.00000000000003,
+        35.00000000000011,
+        36.00000000000068,
+        37.00000000000445,
+        38.00000000002764,
+        39.000000000164384,
+        40.00000000093585,
+        41.000000005090364,
+        42.000000026394495,
+        43.000000130137295,
+        44.00000060838516,
+        45.00000268808547,
+        46.00001118371183,
+        47.00004362496533,
+        48.00015874213208,
+        49.00053566161672,
+        50.001665138722956,
+        51.00473661632526,
+        52.01226444826802,
+        53.028851105876036,
+        54.0618454567342,
+        55.121762883028346,
+        56.22270744852256,
+        57.383389789907845,
+        58.62962487824702,
+        59.99999999999999,
+        61.55944833698691,
+        63.43844718719117,
+        66.0
+      ],
+      "reference_mean_number": 3.9999999999999982,
+      "global_vertex_norm_bound": 0.0828868297712961,
+      "actual_PQ_vertex_norm": 0.010051504532930714,
+      "separation_denominator": 0.8242263404574073,
+      "ordered_energy_error": 0.00012257888205739485,
+      "actual_next_band_gap": 0.9585240707300562,
+      "low_excitation_energies": [
+        -0.020776688986330782,
+        -0.014199554261817404,
+        0.014011505672473668,
+        0.02067658631891689
+      ],
+      "first_order_low_excitation_energies": [
+        -0.02071547666605955,
+        -0.014105776303204642,
+        0.014105776303207307,
+        0.020715476666062216
+      ],
+      "first_order_conversion_magnitudes": [
+        0.020103009065861425,
+        0.01318987964752119
+      ],
+      "physical_source_excitation": [
+        -0.009748143924241504,
+        -0.00616451219689651,
+        0.006164343257595295,
+        0.009748063640795834
+      ],
+      "source_finite_difference": [
+        -0.009748143894316996,
+        -0.006164512142969869,
+        0.006164343371306558,
+        0.009748063649617222
+      ],
+      "reference_excess_energy": [
+        5.9770854996088474e-05,
+        9.11407961816657e-05,
+        9.71069729649443e-05,
+        3.948080425519862e-05
+      ],
+      "reference_mean_number_in_each_low_state": [
+        4.019556058703475,
+        4.012420165189969,
+        3.9877684204577717,
+        3.980543353522658
+      ],
+      "kinetic_energy": [
+        -0.00121764445864889,
+        -0.001774128830393117,
+        0.0017742319557164476,
+        0.0012186361711023182
+      ],
+      "vertex_energy": [
+        -0.019618815382674175,
+        -0.012516566227625363,
+        0.012140166743773106,
+        0.019418469343565038
+      ],
+      "dressed_source": {
+        "real": [
+          [
+            -3.9995993221857598,
+            0.009950340632173744,
+            -9.836112396489102e-18,
+            8.950203613323007e-18
+          ],
+          [
+            0.009950340632173742,
+            -4.000400758097693,
+            -5.36299163169246e-17,
+            3.705810827546156e-17
+          ],
+          [
+            -9.836112396489087e-18,
+            -5.3629916316924554e-17,
+            -3.999824305583391,
+            -0.00666038135955933
+          ],
+          [
+            8.950203613323002e-18,
+            3.7058108275461567e-17,
+            -0.006660381359559332,
+            -4.000175863355905
+          ]
+        ],
+        "imag": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "dressing_error": 0.010070697807569756,
+      "dressing_bound": 0.01219530474710242,
+      "all_input_dynamics_time": 20.0,
+      "all_input_dynamics_error": 0.014540917604532282,
+      "instrument": {
+        "scale": 16.24807680927192,
+        "probabilities": [
+          0.37690890264005517,
+          0.6230910973599458
+        ],
+        "source_mean": -3.99998720888392,
+        "mean_work": 0.0010132715140099132,
+        "component_work": [
+          0.0010132715140114207,
+          -2.2409584314113723e-16,
+          2.6265406889478748e-18,
+          1.0916342814513982e-19
+        ],
+        "record_energy": 0.0,
+        "resets_performed": 0,
+        "old_K_change": 0.0010132715140116488,
+        "old_charge_change": 0.00037491046018431004
+      },
+      "drive_account": {
+        "old_K_current": 0.002217545379399904,
+        "old_charge_current": 0.0008204917903779644,
+        "switch_step": 0.03,
+        "instantaneous_switch_work": -0.11999961626651759
+      }
+    }
+  ],
+  "finite_response": [
+    {
+      "menu": "normalized",
+      "first_order_difference": [
+        -0.00223043934427003,
+        -0.0023677626466049873,
+        0.0023677626466066526,
+        0.0022304393442719173
+      ],
+      "exact_difference": [
+        -0.002194333692755679,
+        -0.002309494990707872,
+        0.0024153233661785567,
+        0.002242293528031958
+      ],
+      "intervals": [
+        [
+          -0.002276589937488897,
+          -0.002118563249306599
+        ],
+        [
+          -0.0024139132398238545,
+          -0.0022558865516415566
+        ],
+        [
+          0.0023216120533877853,
+          0.0024796387415700833
+        ],
+        [
+          0.00218428875105305,
+          0.002342315439235348
+        ]
+      ]
+    },
+    {
+      "menu": "bare_linear",
+      "first_order_difference": [
+        -0.009489046094612652,
+        -0.005829712548072408,
+        0.005829712548074073,
+        0.00948904609461454
+      ],
+      "exact_difference": [
+        -0.009478318976105404,
+        -0.005826876293637984,
+        0.005826749690731603,
+        0.009478258836542408
+      ],
+      "intervals": [
+        [
+          -0.009611624976670046,
+          -0.009366467212555258
+        ],
+        [
+          -0.005952291430129803,
+          -0.005707133666015013
+        ],
+        [
+          0.005707133666016678,
+          0.005952291430131468
+        ],
+        [
+          0.009366467212557145,
+          0.009611624976671933
+        ]
+      ]
+    }
+  ],
+  "held_out_interval_gap": 0.007024151773321797,
+  "complete_small_kernel": {
+    "B": 18,
+    "f": 1.25,
+    "full_dimension": 760,
+    "axis_dimension": 112
+  },
+  "limitations": [
+    "exact finite boson cutoff is a model input, not a demonstrated physical minimum scale",
+    "one inherited helicity momentum kernel; no full Higgs, gauge field or QFT identity",
+    "driven low-band setting and old resonant handoff are different settings",
+    "dressed isometry is a dictionary, not a free preparation controller",
+    "source instrument, records, reference preparation and control are explicitly declared finite permissions",
+    "bare menu is a balance-contract deletion comparison, not a second model satisfying all old balance conditions",
+    "finite response intervals do not arise by differentiating an uncontrolled energy error",
+    "no new axioms adopted and no realistic mass, family count or UV prediction claimed"
+  ],
+  "source_sha256": {
+    "research_cognition_physics/archive_1323_/1326/proof.md": "135283e3dd25d9f0dfb87d4f9e04f2e8c4c146634fd16c73085e05bacc1f3c03",
+    "research_cognition_physics/archive_1323_/1326/check.py": "1c9dcbb8adfe622a93dde3c23a26661921456e5c3ab07868f23506ff0a9643eb",
+    "research_cognition_physics/archive_1323_/_admission/round1326_admission.md": "18bb6035737f8e4b951f4156058b2fee407092cc044d48261c3de58572a4f5ae",
+    "research_cognition_physics/archive_1323_/1325/proof.md": "30e291fcd272c92b05cf8786175a1f60aa532485aa96b468c30d3cf22d00634a",
+    "research_cognition_physics/archive_1323_/1325/check.py": "f3df09ca17378cd9c61719ff6ac04c6e595343acaa6fc4082eb27cd2ca58aaf3",
+    "research_cognition_physics/archive_1323_/1325/results.json": "ba2cc3f14d3ed704dd519888098ddd463617bad6786be8cda1ec43b30b5a0a7d",
+    "research_cognition_physics/archive_1313_1322/1316/proof.md": "9fc31953079c7e15e1bf0785a834f74994e4c1e3079b31ad6dc92ed0ae132da3",
+    "research_cognition_physics/archive_1313_1322/1322/proof.md": "2dcd3299d642a172f828466f0d161125fce45e69becf3c82591f9a0d0dc7db55"
+  }
+}
