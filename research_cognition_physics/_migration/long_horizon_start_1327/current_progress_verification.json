@@ -1,32 +1,41 @@
 {
   "status": "PASS",
-  "date": "2026-10-19",
-  "accepted_through": 1333,
+  "date": "2026-11-18",
+  "accepted_through": 1338,
   "research_in_progress": [],
-  "next_available_round": 1334,
+  "next_available_round": 1339,
   "next_round_admitted": false,
-  "goal_active": true,
+  "goal_active": false,
+  "goal_status_observed_by_parent": "paused",
+  "research_continues": true,
   "stage_complete": false,
-  "scientific_rounds_rerun": 0,
-  "stage_auxiliary_numerical_checks_rerun": 0,
-  "old_manifests_preserved": true,
-  "prior_evidence_files_preserved": 76,
-  "current_evidence_files": 89,
+  "prior_evidence_files_preserved": 127,
+  "prior_evidence_files_link_corrected": 1,
+  "amendments": [
+    {
+      "path": "research_cognition_physics/archive_1323_/_shared/progress_after1336.md",
+      "old_sha256": "5ce0116f74968aa10b55c739ce250c63a9d8c0d5b21b96cbe4b985c21a41f4d5",
+      "new_sha256": "1538c1fef5ff319b081a72b3dbb9c727da86bbcd9ffcea1518f6719aba901e00",
+      "reason": "Correct the two independent-check result links for the finite window and unrestricted central-mass comparison."
+    }
+  ],
+  "explicit_local_links_checked": 5668,
+  "explicit_markdown_files_checked": 45,
+  "current_evidence_files": 149,
+  "current_progress_manifest_sha256": "a8886d38df21f425f2b69f291d4424f0548184dd928a22e9240007d70e8e2971",
   "same_dynamic_block_updated": true,
-  "new_migration_layers": 0,
-  "publication_receipt": "fdf4b9",
-  "current_progress_manifest_sha256": "91d1a6aa6e0277f61213ec7c63cc0e26494f556426b3f05d692d7991fa4963af",
+  "old_manifests_preserved": true,
+  "scientific_rounds_rerun": 0,
   "tests": [
     {
       "arguments": "--verify-reclassification",
-      "receipt": "7f548e",
       "exit_code": 0,
       "result": {
         "status": "PASS",
         "schema": "interim_reclassification_v1",
         "manifest_sha256": "48b04216b66e1166c6f3aec1f80e8f2fb0c2f02669c02ee56a58f81dbddf7c89",
         "markdown_files": 10,
-        "local_links": 5513,
+        "local_links": 5518,
         "frozen_scientific_files": 40,
         "current_and_original_hashes_verified": true,
         "withdrawn_paper_absent": true,
@@ -35,14 +44,13 @@
         "navigation_start_files": 5,
         "navigation_start_manifest_sha256": "9f32c154d3f77fd030bf6b8ac51d3ea49876b563c6d37c90b54b6f6719c20f6f",
         "current_progress_files": 5,
-        "current_progress_evidence_files": 89,
-        "current_progress_manifest_sha256": "91d1a6aa6e0277f61213ec7c63cc0e26494f556426b3f05d692d7991fa4963af",
+        "current_progress_evidence_files": 149,
+        "current_progress_manifest_sha256": "a8886d38df21f425f2b69f291d4424f0548184dd928a22e9240007d70e8e2971",
         "scientific_claims_revalidated": false
       }
     },
     {
       "arguments": "--verify-navigation",
-      "receipt": "fcb559",
       "exit_code": 0,
       "result": {
         "status": "PASS",
@@ -61,47 +69,10 @@
       }
     }
   ],
-  "unchanged_parser_previous_guard_check": {
-    "receipt": "9ee459",
-    "exit_code": 0,
-    "result": {
-      "status": "PASS",
-      "negative_cases": [
-        "duplicate_marker",
-        "out_of_block_change"
-      ],
-      "disk_writes": 0
-    }
-  },
   "acceptance_hash_audit": {
-    "receipt": "fdf4b9",
-    "accepted_rounds": [
-      1327,
-      1328,
-      1329,
-      1330,
-      1331,
-      1332,
-      1333
-    ],
-    "acceptances": 7,
-    "bound_file_entries": 70,
-    "status": "PASS",
-    "scientific_rounds_rerun": 0
-  },
-  "parent_reported_acceptance_hash_audit": {
-    "reported_by": "/root",
-    "receipt": "ca5d4e",
-    "acceptances": 7,
-    "bound_file_entries": 70,
-    "status": "PASS",
-    "scientific_rounds_rerun": 0
-  },
-  "added_document_link_check": {
-    "receipt": "fdf4b9",
-    "documents": 2,
-    "local_links": 11,
+    "acceptances": 12,
+    "bound_file_entries": 119,
     "status": "PASS"
   },
-  "scope": "Navigation, links and frozen evidence hashes only. No scientific or stage auxiliary numerical checks were rerun; scientific conclusions rely on the separately bound acceptances."
+  "scope": "Checks navigation and report hashes. Separate scientific replays appear in the round acceptance."
 }
