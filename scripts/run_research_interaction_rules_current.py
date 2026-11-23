@@ -308,4 +308,5 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    from research_closure_1352 import run
+    run(main)

@@ -1,0 +1,125 @@
+{
+  "round": 1340,
+  "status": "PASS",
+  "shared": {
+    "tag": "common",
+    "N": [
+      1,
+      1,
+      1
+    ],
+    "exact_joint": 0.2538485972371691,
+    "effective_joint": 0.08869762209085663,
+    "sector_chain_norm_bound": 0.7151162377523428,
+    "probability_bound": 0.7151162377523428,
+    "up_effective_eigenvalues": [
+      1.0000000000000007,
+      1.7189750324093345,
+      3.2810249675906658
+    ],
+    "down_effective_eigenvalues": [
+      0.9999999999999997,
+      1.759032635400914,
+      4.240967364599086
+    ]
+  },
+  "rival": {
+    "tag": "independent",
+    "N": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "exact_joint": 0.3759422522314231,
+    "effective_joint": 0.37729516559077975,
+    "sector_chain_norm_bound": 0.7151162377523428,
+    "probability_bound": 0.7151162377523428,
+    "up_effective_eigenvalues": [
+      1.0000000000000007,
+      1.7189750324093345,
+      3.2810249675906658
+    ],
+    "down_effective_eigenvalues": [
+      0.9999999999999997,
+      1.759032635400914,
+      4.240967364599086
+    ]
+  },
+  "two_per_bank": {
+    "tag": "two_per_bank",
+    "N": [
+      2,
+      2,
+      2
+    ],
+    "exact_joint": 0.27447061052159266,
+    "effective_joint": 0.2331594710216759,
+    "sector_chain_norm_bound": 0.505663541051293,
+    "probability_bound": 0.505663541051293,
+    "up_effective_eigenvalues": [
+      1.381966011250105,
+      3.618033988749895
+    ],
+    "down_effective_eigenvalues": [
+      1.4188611699158102,
+      4.581138830084189
+    ]
+  },
+  "finite_budget": {
+    "shared": {
+      "copies_each": 76,
+      "live_bank_registers": 228,
+      "attempt_caps": [
+        82,
+        776
+      ],
+      "registered_seed_upper": 65284,
+      "registered_Choi_upper": 124184,
+      "formation_failure_upper": 0.009802481737183729
+    },
+    "rival": {
+      "copies_each": 76,
+      "live_bank_registers": 304,
+      "attempt_caps": [
+        86,
+        808
+      ],
+      "registered_seed_upper": 74556,
+      "registered_Choi_upper": 135888,
+      "formation_failure_upper": 0.009387291733757614
+    },
+    "uniform_state_bound": 0.09975298439012661,
+    "certified_joint_probability_gap": 0.06859754349992311
+  },
+  "checks": {
+    "field_source_compression": 6,
+    "retained_reference_variance": 6,
+    "uniform_joint_state": 12,
+    "single_bank_source_response": 12,
+    "whole_source_observable": 12,
+    "spectral_measure_variance": 16,
+    "spectral_window": 16,
+    "all_weak_records": 3,
+    "weak_joint_record_error": 3,
+    "equal_separate_spectra": 1,
+    "source_unitary": 1,
+    "weak_scalar_pulse": 3,
+    "selected_source_kraus": 1
+  },
+  "worst_errors": {
+    "field_source_compression": 8.881784197001252e-16,
+    "retained_reference_variance": 7.771562729779251e-16,
+    "uniform_joint_state": 0.0,
+    "single_bank_source_response": 0.0,
+    "whole_source_observable": 0.0,
+    "spectral_measure_variance": 3.3306690738754696e-16,
+    "spectral_window": 0.0,
+    "all_weak_records": 4.440892098500626e-16,
+    "weak_joint_record_error": 0.0,
+    "equal_separate_spectra": 0.0,
+    "source_unitary": 0.0,
+    "weak_scalar_pulse": 0.0,
+    "selected_source_kraus": 0.0
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "matching_scale_GeV": 10000000000000000,
+  "comparison_scale_GeV": 91.1876,
+  "quark_yukawas_and_three_angles": {
+    "path": "../1397/inputs.json",
+    "key": "high_scale",
+    "marginal_halfwidth_multiplier": 2
+  },
+  "gauge_couplings_at_MZ": {
+    "path": "../1369/inputs.json",
+    "keys": [
+      "g1_GUT",
+      "g2",
+      "g3"
+    ],
+    "marginal_halfwidth_multiplier": 2
+  },
+  "direct_gamma_mod_180_degrees": {
+    "central": 63.2,
+    "upper_error": 2.3,
+    "lower_error": 2.2,
+    "source": "https://arxiv.org/abs/2611.26449"
+  },
+  "input_gamma": {
+    "tested_range": "all physical phases",
+    "previous_excluded_closed_interval": [
+      60,
+      66.5
+    ],
+    "source": "../1675/phase_box_results.json"
+  },
+  "scheme": "One-loop three-family single-Higgs SM with no new thresholds; finite matching considered separately as a counterexample.",
+  "reference_running": "https://arxiv.org/abs/2510.01312"
+}

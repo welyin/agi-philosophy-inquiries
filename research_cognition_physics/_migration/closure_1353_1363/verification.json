@@ -1,0 +1,66 @@
+{
+  "scope": "Closed archive 1353-1363 and compatibility with stages 1323-1352, 1364-1815",
+  "checks": [
+    {
+      "command": [
+        "scripts/research_sm_1353_closure.py"
+      ],
+      "exit_code": 0,
+      "result": {
+        "status": "PASS",
+        "original_files": 119,
+        "reversible_files": 6,
+        "manifest_sha256": "b7c90a7b8f5c03a5fc8c819537b1239a206bad93ffadf1fe9db0809efeafda36"
+      }
+    },
+    {
+      "command": [
+        "research_cognition_physics/archive_1353_1363/_shared/verify_stage.py",
+        "--replay"
+      ],
+      "exit_code": 0,
+      "result": {
+        "verified_rounds": 11,
+        "bound_scientific_files": 101,
+        "recorded_checks": 23,
+        "replayed_checks": 23
+      }
+    },
+    {
+      "command": [
+        "scripts/research_navigation_1353.py"
+      ],
+      "exit_code": 0,
+      "result": {
+        "status": "PASS",
+        "accepted_through": 1363,
+        "root_navigation": 4,
+        "bound_evidence": 101,
+        "stage_files": 17,
+        "stage_manifest_sha256": "a3b3001442940a22b2e526aa0886802460e29392a785627c0ac622332d4909f5"
+      }
+    },
+    {
+      "command": [
+        "scripts/run_research_interaction_rules_current.py",
+        "--verify-stage-closure"
+      ],
+      "exit_code": 0,
+      "result": {
+        "status": "PASS",
+        "original_files": 414,
+        "modified_markdown_with_verified_preimages": 8,
+        "accepted_rounds": 30,
+        "accepted_evidence_bindings": 295,
+        "recorded_scientific_runs": 67,
+        "frozen_manifests": 7,
+        "checked_links": 5590,
+        "products": 5,
+        "closure_sha256": "888db06c70bdc3b7634c7ce909f43a32e8aae5db6554f919a7cb684772a011a5"
+      }
+    }
+  ],
+  "complete_archive_markdown_count": 58,
+  "all_local_markdown_links_in_archive_and_paper17": 277,
+  "paper17_local_links": 18
+}

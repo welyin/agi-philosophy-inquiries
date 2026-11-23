@@ -1,0 +1,84 @@
+{
+  "exact_task_quotient": {
+    "one_question_conflicts": [],
+    "identify_origin_conflicts": [
+      [
+        0,
+        1
+      ]
+    ]
+  },
+  "single_random_erasure": [
+    {
+      "history_bits": 1,
+      "record_symbols_including_erasure_index": 1,
+      "fixed_coordinate_error": "1/2",
+      "uniform_delayed_parity_error": "1/4",
+      "record_dependent_query_error": "1/2",
+      "whole_history_error": "1/2"
+    },
+    {
+      "history_bits": 2,
+      "record_symbols_including_erasure_index": 4,
+      "fixed_coordinate_error": "1/4",
+      "uniform_delayed_parity_error": "1/4",
+      "record_dependent_query_error": "1/2",
+      "whole_history_error": "1/2"
+    },
+    {
+      "history_bits": 3,
+      "record_symbols_including_erasure_index": 12,
+      "fixed_coordinate_error": "1/6",
+      "uniform_delayed_parity_error": "1/4",
+      "record_dependent_query_error": "1/2",
+      "whole_history_error": "1/2"
+    },
+    {
+      "history_bits": 4,
+      "record_symbols_including_erasure_index": 32,
+      "fixed_coordinate_error": "1/8",
+      "uniform_delayed_parity_error": "1/4",
+      "record_dependent_query_error": "1/2",
+      "whole_history_error": "1/2"
+    },
+    {
+      "history_bits": 6,
+      "record_symbols_including_erasure_index": 192,
+      "fixed_coordinate_error": "1/12",
+      "uniform_delayed_parity_error": "1/4",
+      "record_dependent_query_error": "1/2",
+      "whole_history_error": "1/2"
+    },
+    {
+      "history_bits": 8,
+      "record_symbols_including_erasure_index": 1024,
+      "fixed_coordinate_error": "1/16",
+      "uniform_delayed_parity_error": "1/4",
+      "record_dependent_query_error": "1/2",
+      "whole_history_error": "1/2"
+    }
+  ],
+  "whole_history_via_parity": [
+    {
+      "history_bits": 1,
+      "parity_questions_including_zero": 2,
+      "answer_words_exhausted": 4,
+      "minimum_code_distance": 1,
+      "minimum_bit_errors_on_wrong_decoding": 1
+    },
+    {
+      "history_bits": 2,
+      "parity_questions_including_zero": 4,
+      "answer_words_exhausted": 16,
+      "minimum_code_distance": 2,
+      "minimum_bit_errors_on_wrong_decoding": 1
+    },
+    {
+      "history_bits": 3,
+      "parity_questions_including_zero": 8,
+      "answer_words_exhausted": 256,
+      "minimum_code_distance": 4,
+      "minimum_bit_errors_on_wrong_decoding": 2
+    }
+  ]
+}

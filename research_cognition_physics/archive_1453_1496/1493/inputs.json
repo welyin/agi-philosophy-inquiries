@@ -1,0 +1,47 @@
+{
+  "oscillations": "../1484/inputs.json",
+  "electroweak": "../1372/inputs.json",
+  "rge_source": "../1396/check.py",
+  "vev_over_sqrt2_GeV": 174.1038,
+  "light_coefficient_transport": [
+    0.5,
+    2
+  ],
+  "quadratic_threshold_to_higgs_mass_squared_transport": [
+    0.5,
+    2
+  ],
+  "mass_ratio_split": [
+    1,
+    10
+  ],
+  "shape": {
+    "a": [
+      0,
+      1,
+      1
+    ],
+    "b": [
+      1,
+      3,
+      1
+    ],
+    "eta_degrees": [
+      -120,
+      120
+    ]
+  },
+  "examples": [
+    1,
+    3,
+    10
+  ],
+  "source": {
+    "matching": "https://doi.org/10.1007/JHEP02(2019)107",
+    "running": "https://arxiv.org/html/2510.01312v2",
+    "ATLAS": "https://arxiv.org/abs/2308.04775",
+    "v_normalisation": "https://arxiv.org/abs/1905.12642",
+    "doublet": "V=-m^2(HdagH)/2+lambda(HdagH)^2; dimensionless standard lambda=Antusch Eq4/4",
+    "phase": "use the real part of the squared contraction of Majorana columns, not the square of its real part; whole magnitude bound also independent of this distinction"
+  }
+}

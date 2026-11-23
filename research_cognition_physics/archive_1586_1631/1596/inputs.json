@@ -1,0 +1,40 @@
+{
+  "round": 1596,
+  "four_isotope_results": "../1510/results.json",
+  "neutrino": "../1370/inputs.json",
+  "direction": "../1580/inputs.json",
+  "electromagnetic": "../1591/inputs.json",
+  "recoil_results": "../1591/results.json",
+  "common": "../1594/inputs.json",
+  "muon": "../1590/inputs.json",
+  "tau_e_upper": 3.3e-8,
+  "comparison_mass_eV": 0.03,
+  "scenarios": [
+    {
+      "label": "unity",
+      "rate_floor": 1,
+      "cancel": 0,
+      "other_ae": 0,
+      "other_amu": 0,
+      "defect_per_m2_GeV_minus2": 0
+    },
+    {
+      "label": "finite_LFV",
+      "rate_floor": 0.8,
+      "cancel": 0.2,
+      "other_ae": 0,
+      "other_amu": 0,
+      "defect_per_m2_GeV_minus2": 0
+    },
+    {
+      "label": "independent_defects",
+      "rate_floor": 0.8,
+      "cancel": 0.2,
+      "other_ae": 2e-14,
+      "other_amu": 2e-10,
+      "defect_per_m2_GeV_minus2": 1e-8
+    }
+  ],
+  "source_xenon": "https://arxiv.org/abs/2406.11438",
+  "scope": "Inverted, m3=0, independent shared neutral/charged columns, standard unitary charged currents and three light Majorana exchange for half-life dictionary. Both gaps fitted and neither xenon nor a Majorana phase used as input."
+}

@@ -1,0 +1,15 @@
+{
+  "round": 1818,
+  "handover": "An arbitrary protected M2 evidence qubit from notes 43 and 45 is swapped into a successor with blank |0>. At completion that same qubit is switched into S with a fresh R=0 and an observer chooses one of the actual note-39 birth windows. Other unknown carriers are not probed.",
+  "frozen_programs": ["quantum_split_retry.py", "living_ledger_succession.py"],
+  "physical_inputs": {
+    "gap": 1.0,
+    "common_local_hamiltonian": "h=gap*(I-n.sigma)/2; |n|=1; calibrated independently of the birth ledger",
+    "exchange_path": "H(t)=hA+hB+g(t)*SWAP, theta=int(g(t)dt)/hbar, theta(T)=pi/2 and gap*T/hbar=2*pi; unitary endpoints implement the original SWAP up to global phase",
+    "score": "ensemble mean gain of the successor relative to the actual initial blank; no intermediate measurement",
+    "reference": "original real read windows with no extra imaginary state, phase action or intermediate access"
+  },
+  "probe_axes": [[1,0,0],[0,1,0],[0,0,1],[1,2,3],[-2,3,-1]],
+  "thermal_test": {"old_excitation": 0.25, "origin": "Round 1272 calibrated target A marginal, used once on a prepared evidence input, with its preparation source retained.", "axis": "Z", "receiver_initial": "ground", "beta_times_gap": "log(3)"},
+  "external_sources": ["https://arxiv.org/abs/quant-ph/0306025", "https://doi.org/10.1103/PhysRevA.65.042105"]
+}

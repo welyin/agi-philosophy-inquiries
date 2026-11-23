@@ -1,0 +1,22 @@
+{
+  "associated_VHbb": {
+    "WH": [0.95, 0.20, 0.21],
+    "ZH": [0.88, 0.20, 0.23],
+    "order": "central, down, up, separately fitted total uncertainties; Fig.12",
+    "source": "https://arxiv.org/pdf/2410.19611#page=32"
+  },
+  "VBF_WH_same_SRminus": {
+    "unit_same_signal": [2.93,0.35],
+    "unit_opposite_signal": [285.0,45.0],
+    "raw": 70,
+    "reported_total_same": [80.6,8.6],
+    "reported_total_opposite": [361,46],
+    "source": "https://arxiv.org/html/2402.00426v2",
+    "region": "SR-minus. Common W decay and H->bb, pT(bb)>250 GeV, delta y(jj)>4.4, mbb 105-145 GeV. Combine prefit signal prediction and SM signal in same SR, never use the positive-analysis SR."
+  },
+  "response_surpluses": {"WH":0.02,"ZH":0.10},
+  "surplus_definition": "Assume mu_WH <= p^2+delta_W, mu_ZH <= q^2+delta_Z in the associated fits; the positive deviations include accepted ggZH, loop, fermion-current changes, branching/efficiency and their relative template changes. Illustrative total transfer budgets, not measured errors. The DY fraction alone does not bound enhancement of ggZH or a varying top Yukawa.",
+  "confidence_raw_only": 0.95,
+  "other_sources":["https://arxiv.org/abs/2405.16566","https://arxiv.org/html/2404.10815v2","https://doi.org/10.1103/PhysRevD.102.033006"],
+  "scope": "One narrow CP-even h and two real SM-like tensor structures with common accepted production vectors, ordinary gauge and current inputs in the declared window. Any further coherent contribution is bounded separately; all remaining incoherent backgrounds nonnegative. No assumption of full polarization tagging or independent ATLAS samples."
+}

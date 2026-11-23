@@ -1,0 +1,18 @@
+{
+  "low_scale_yukawa_and_ckm": "../1386/inputs.json",
+  "low_scale_g2": "../1369/inputs.json",
+  "shared_old_light_quark_calibrations": ["../1367/inputs.json", "../1368/inputs.json"],
+  "source": "https://arxiv.org/html/2510.01312v2",
+  "high_scale": {
+    "scale_GeV": 1e16,
+    "source_row": "Table 2 last column: SM MSbar using the 2024 PDG inputs, angles in radians, generations ordered by masses",
+    "up": [[2.87e-6,7e-8],[0.00145,0.00003],[0.4454,0.0048]],
+    "down": [[6.5e-6,1e-7],[0.000129,0.000002],[0.00606,0.00006]],
+    "angles_theta12_theta13_theta23_delta": [[0.22708,0.00082],[0.00419,0.00009],[0.04743,0.00047],[1.139,0.023]],
+    "g2": [0.52296,0.00002]
+  },
+  "widths": [1, 2],
+  "fixed_strength": "ku=kd=g2; canonical kinetic terms, separately orthogonal packets, no generation-dependent singular gains",
+  "free_weight_example": "Equal positive gains set to sqrt(lambda_max(Hu+Hd)) separately at each scale, only an existence certificate.",
+  "physical_contract": "All probabilities are norms in one complete normalized preparation source. Only an instrument implementing the corresponding flags measures them. No claim of a new SM decay or of physically realized extra particles."
+}

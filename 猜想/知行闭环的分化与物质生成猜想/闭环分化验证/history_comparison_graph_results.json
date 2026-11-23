@@ -1,0 +1,34 @@
+{
+  "component_checks": {
+    "graphs": 1024,
+    "disconnected_examples": 296
+  },
+  "path_examples": [
+    {
+      "edges": 4,
+      "each_neighbor_success": 0.961939766256,
+      "endpoint_success": 0.5,
+      "global_uniform_success": 0.726576427067
+    },
+    {
+      "edges": 16,
+      "each_neighbor_success": 0.997592363336,
+      "endpoint_success": 0.5,
+      "global_uniform_success": 0.789024217097
+    },
+    {
+      "edges": 64,
+      "each_neighbor_success": 0.999849409348,
+      "endpoint_success": 0.5,
+      "global_uniform_success": 0.805146143784
+    }
+  ],
+  "random_partner_and_spectral_checks": 60,
+  "one_hidden_sign": {
+    "histories": 64,
+    "uniform_success": 0.9384765625,
+    "fixed_phase_pair_success": 0.0,
+    "optimal_pair_visibility": 1,
+    "worst_trace_error": 1
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "scale_source": "g2=g3 with common canonical generators; no matching thresholds; g1 is GUT normalized and is not required to match.",
+  "MZ": "../1369/inputs.json",
+  "quark_and_CKM": "../1397/check.py",
+  "MZ_charged_leptons": "../1386/inputs.json",
+  "high_charged_leptons": "../1402/inputs.json",
+  "high_gauge": [
+    [
+      0.57524,
+      5e-05
+    ],
+    [
+      0.52296,
+      2e-05
+    ],
+    [
+      0.531,
+      0.0004
+    ]
+  ],
+  "reference_GeV": [
+    91.1876,
+    10000000000000000
+  ],
+  "end_log": [
+    36,
+    4
+  ],
+  "widths": [
+    1,
+    2
+  ],
+  "traces": {
+    "Qcap": 1,
+    "Ecap": 0.001
+  },
+  "sources": {
+    "matched": "https://arxiv.org/html/2510.01312v2",
+    "SM_beta": "https://arxiv.org/abs/hep-ph/0501272",
+    "unification": "https://doi.org/10.1103/PhysRevLett.32.438"
+  },
+  "order": "MZ start: one-loop unbroken SM across the window. Table 2 start: SMDR matched couplings evolved by the authors with two-loop SM below 1e16; one-loop extension with the same particle spectrum above 1e16. Neither calculation supplies omitted-order/UV thresholds errors.",
+  "illustrative_inverse_gauge_threshold": 0.05
+}

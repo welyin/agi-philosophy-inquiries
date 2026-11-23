@@ -1,0 +1,31 @@
+{
+  "port_results": "../1703/results.json",
+  "angle_windows": "../1659/results.json",
+  "joint_2025": {
+    "source": "https://arxiv.org/pdf/2510.19888",
+    "journal": "https://doi.org/10.1038/s41586-025-09599-3",
+    "normal_ordering_reactor_constrained": true,
+    "hpd1_center_minus_plus_in_pi": [-0.87, 0.21, 0.35],
+    "hpd1_mass": 0.6827,
+    "hpd3_endpoints_in_pi": [-1.38, 0.30],
+    "note": "Bayesian 1D highest posterior density interval, NO conditional, marginal over atmospheric mixing and nuisance parameters. Default prior uniform in delta, PDG reactor and solar constraints."
+  },
+  "t2k_updated": {
+    "source": "https://arxiv.org/pdf/2506.05889",
+    "journal": "https://doi.org/10.1103/gh5j-5cwv",
+    "fc1_center_minus_plus_rad": [-2.18, 0.47, 1.22],
+    "zero_excluded_at_90": true,
+    "scope": "T2K only, NO row, with reactor constraint, one-dimensional FC-corrected frequentist result. Zenodo 17312780 releases Bayesian MCMC chains without the reactor prior, not these FC thresholds."
+  },
+  "t2k_2023": {
+    "source": "https://arxiv.org/pdf/2303.03222#page=35",
+    "fc90_rad": [-3.01, -0.52],
+    "fc2_near_zero_rad": [-3.141592653589793, -0.28],
+    "fc2_near_pi_rad": [3.10, 3.141592653589793],
+    "fc3_near_zero_rad": [-3.141592653589793, 0.33],
+    "fc3_near_pi_rad": [2.59, 3.141592653589793],
+    "printed_endpoint_half_unit_rad": 0.005,
+    "scope": "Normal-ordering row of Table 14, with reactor constraint. T2K alone; overlaps the joint experiment and the updated T2K analysis."
+  },
+  "witness_delta_rad": -0.55
+}

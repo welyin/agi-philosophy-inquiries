@@ -1,0 +1,131 @@
+{
+  "observables": "Inclusive jets, anti-kT R=0.7, |y|<0.5, pb/GeV. CMS HEPData transcription. Rectangles for specified marginal input widths only.",
+  "sources": {
+    "CMS13": "https://doi.org/10.1007/JHEP02(2022)142",
+    "CMS8": "https://arxiv.org/abs/1609.05331",
+    "yaml_base": "https://raw.githubusercontent.com/NNPDF/nnpdf/b16abc59408ff290e8aff65a3aa4d78d538d04d0/nnpdf_data/nnpdf_data/commondata/",
+    "table13": "CMS_1JET_13TEV_DIF/rawdata/ak7_xsec_ybin1.yaml",
+    "table8": "CMS_1JET_8TEV/rawdata/HEPData-ins1487277-v1-Table_1.yaml",
+    "kernel": "https://arxiv.org/abs/hep-ph/0011222",
+    "jet_alpha": "https://arxiv.org/abs/2412.16665"
+  },
+  "cms13": [
+    {
+      "bin": [
+        737,
+        846
+      ],
+      "value": 0.27377,
+      "errors": [
+        0.00090705,
+        0.0041948,
+        0.0025374,
+        2.5336e-7,
+        0.0014427,
+        -0.00088046,
+        -0.0010376,
+        0.0003273,
+        0.00034058,
+        -0.00010479,
+        -1.7069e-7,
+        -1.6157e-8,
+        -0.00017244,
+        -0.0010761,
+        0.00011803,
+        0.0031018,
+        0.0018661,
+        1.3346e-7,
+        -2.7034e-7,
+        0.0015245,
+        1.5248e-7,
+        -2.3319e-8,
+        0.000070329,
+        3.2671e-7,
+        0.00029801,
+        0.00094717,
+        0.00050305,
+        0.0076905,
+        0.0032852,
+        0.00079342
+      ]
+    },
+    {
+      "bin": [
+        1588,
+        1784
+      ],
+      "value": 0.0012515,
+      "errors": [
+        0.000024274,
+        0.000024465,
+        0.000015001,
+        -1.1151e-8,
+        -0.000010599,
+        -0.0000066991,
+        -0.0000052552,
+        0.0000022216,
+        4.344e-7,
+        -0.0000028333,
+        8.8224e-9,
+        1.8062e-10,
+        0.0000011427,
+        -0.00000304,
+        5.1263e-7,
+        0.000019695,
+        0.000027223,
+        3.0922e-8,
+        1.0338e-8,
+        0.000012022,
+        4.7922e-9,
+        -1.5522e-10,
+        -0.0000090765,
+        2.7969e-8,
+        0.0000017596,
+        0.0000074182,
+        0.0000048855,
+        0.000044665,
+        0.000015018,
+        0.0000039183
+      ]
+    }
+  ],
+  "cms8": [
+    {
+      "bin": [
+        737,
+        790
+      ],
+      "value": 0.0659701,
+      "stat": 0.0002567,
+      "sys_down": 0.00249017,
+      "sys_up": 0.00245152
+    },
+    {
+      "bin": [
+        790,
+        846
+      ],
+      "value": 0.0398936,
+      "stat": 0.0001939,
+      "sys_down": 0.00153886,
+      "sys_up": 0.00151361
+    },
+    {
+      "bin": [
+        1588,
+        1784
+      ],
+      "value": 0.0000720384,
+      "stat": 0.000004876,
+      "sys_down": 0.0000046437,
+      "sys_up": 0.0000048869
+    }
+  ],
+  "benchmark": "../1665/results.json",
+  "cmsalphas": "../1665/inputs.json",
+  "Q": [
+    753.66,
+    1600.5
+  ],
+  "note": "13 TeV error components listed in source order and used in quadrature for each isolated bin. The shape box deliberately grants simultaneous displacements in either direction, without treating errors as independent across bins or energies. Fixed representative factorization scales for the coefficient diagnostic; alpha_s values are SM benchmarks."
+}

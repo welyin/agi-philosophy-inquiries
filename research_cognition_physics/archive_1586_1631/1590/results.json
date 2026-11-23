@@ -1,0 +1,81 @@
+{
+  "benchmarks": [
+    {
+      "label": "positive-or-negative, common near-TeV spectrum",
+      "Q0_and_Q1_dipoles_1e11": [
+        -220.18465283081736,
+        222.28696209694826
+      ],
+      "absolute_Q0_times_Mmax_squared": 0.44377384736693626,
+      "absolute_Yukawa_product_needed": 0.278086962018906,
+      "mu_mix_GeV": 896.0170405742946,
+      "degenerate_positive_kernel_floor_GeVm2": 1.4814814814814815e-07
+    },
+    {
+      "label": "both signs in WP25 near-degenerate range",
+      "Q0_and_Q1_dipoles_1e11": [
+        -41.34679119975275,
+        41.51277044793
+      ],
+      "absolute_Q0_times_Mmax_squared": 0.40333121294369356,
+      "absolute_Yukawa_product_needed": 0.18538842023866778,
+      "mu_mix_GeV": 3101.597448141789,
+      "degenerate_positive_kernel_floor_GeVm2": 3.060912151821243e-08
+    },
+    {
+      "label": "small scalar/fermion mass ratios",
+      "Q0_and_Q1_dipoles_1e11": [
+        -6.024601883915545,
+        71.20091590363195
+      ],
+      "absolute_Q0_times_Mmax_squared": 0.13491508263665153,
+      "absolute_Yukawa_product_needed": 3.7753009701149334,
+      "mu_mix_GeV": 17.231096934121048,
+      "degenerate_positive_kernel_floor_GeVm2": 1.3333333333333334e-08
+    }
+  ],
+  "theory_branches": {
+    "WP25": {
+      "difference_and_error": [
+        38,
+        63
+      ],
+      "working_interval": [
+        -88,
+        164
+      ],
+      "mass_tests": {
+        "0": {
+          "positive_largest_mass_min_GeV": 1506.3343430691452,
+          "negative_largest_mass_min_if_compressed_GeV": 1028.1866721071465
+        },
+        "0.2": {
+          "positive_largest_mass_min_GeV": 1347.306395178039,
+          "negative_largest_mass_min_if_compressed_GeV": 919.6381169563467
+        }
+      }
+    },
+    "historical_WP20": {
+      "difference_and_error": [
+        261.5,
+        45.37895988230669
+      ],
+      "working_interval": [
+        170.74208023538662,
+        352.25791976461335
+      ],
+      "mass_tests": {
+        "0": {
+          "positive_largest_mass_min_GeV": 1027.8101891245676,
+          "positive_smallest_mass_max_GeV": 1476.294553741435,
+          "negative_possible_with_sign_preserved": false
+        },
+        "0.2": {
+          "positive_largest_mass_min_GeV": 919.3013803397795,
+          "positive_smallest_mass_max_GeV": 1617.1996572124133,
+          "negative_possible_with_sign_preserved": false
+        }
+      }
+    }
+  }
+}

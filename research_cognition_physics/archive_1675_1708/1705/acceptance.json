@@ -1,0 +1,48 @@
+{
+  "round": 1705,
+  "date": "2026-11-23",
+  "status": "ACCEPTED_CONDITIONAL_SCOPE",
+  "scope": "Normal ordering for six registered physical first-column ports. Joint NOvA+T2K posterior, T2K-only FC and independent SK+T2K joint 2D FC regions kept distinct. Negative phase kinematic completions, no phase calibration, no joint likelihood or overlap product.",
+  "new_axioms": 0,
+  "stage_complete": false,
+  "executed_checks": [
+    {
+      "script": "check.py",
+      "arguments": [
+        "--check"
+      ],
+      "receipt": "f94322",
+      "exit_code": 0
+    },
+    {
+      "script": "independent_check.py",
+      "arguments": [
+        "--check"
+      ],
+      "receipt": "828b1c",
+      "exit_code": 0
+    }
+  ],
+  "optional_original_release_check": {
+    "script": "independent_check.py",
+    "source": "https://zenodo.org/records/12702685",
+    "flags": [
+      "--check",
+      "--release"
+    ],
+    "receipt": "31bdc0",
+    "exit_code": 0
+  },
+  "sha256": {
+    "research_cognition_physics/archive_1364_/_admission/round1705_admission.md": "027cbf8854925eaa470af4d71a0a98a75e89830ebb567a2daf06ffd4c36bdf47",
+    "research_cognition_physics/archive_1364_/research_note_1705.md": "f36ed585052421f98d871f13823f27c85d1e9a3355cf301f64552a005de676e0",
+    "research_cognition_physics/archive_1364_/1705/inputs.json": "e56e961211a87e68668ab67e228e7379623c98a8e3d2de1b07a36b12751b5a58",
+    "research_cognition_physics/archive_1364_/1705/check.py": "47fff6baf6a81d44d49515219ea6bfc276ec7bb5c95b12bedaddaf817e133ba4",
+    "research_cognition_physics/archive_1364_/1705/results.json": "21b4fa75ee9e1be213e4774904c626d892fddb1fa30c9d1b25915e631f884790",
+    "research_cognition_physics/archive_1364_/1705/proof.md": "1564117532d93d834f7ee8c773a0ef8421e71573dfd6bb9823a6e0e2676b987a",
+    "research_cognition_physics/archive_1364_/1705/NEXT.md": "0727038b816f231c4b075e4a8d4d4c46ee9b227daeb1b8d836c3df75ef4c0a26",
+    "research_cognition_physics/archive_1364_/1705/independent_check.py": "3e952b9965cf5c539e5308b4e938cea1b72cd9d8c4cadb59f49ec947b0d14afb",
+    "research_cognition_physics/archive_1364_/1705/independent_results.json": "c91d1845108bd6fccd0ca5c295d308da07159d4a05bfae72fc4c962b5a5de2dd",
+    "research_cognition_physics/archive_1364_/1705/independent_review.md": "4be851fc85c7a92c120067853d36d66ba7e98007374ec5a2896490bc3483dd8c"
+  }
+}

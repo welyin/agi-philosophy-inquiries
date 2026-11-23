@@ -1,0 +1,83 @@
+{
+  "calibration_probability_error": 0.0025,
+  "extra_pulse_tau_error": 0.001,
+  "final_probability_error": 0.005,
+  "generators": {
+    "SU3": {
+      "pointer_matter_dimension": 81,
+      "conjugate_partner_dimension": 9,
+      "single_probability_pi_over_4": 0.4999999999999998,
+      "normalized_total_casimir_spectrum": [
+        0.9999999999999999,
+        1.0,
+        1.0000000000000002,
+        2.5,
+        2.5,
+        2.5,
+        2.5,
+        2.5,
+        2.5
+      ],
+      "fourth_coefficient": 1.5,
+      "correlated_source_quadratic": 2.5000000000000004,
+      "holdouts": {
+        "2": {
+          "tau_over_pi": 0.5,
+          "probability": 0.5826154576438658,
+          "bounded_readout": [
+            0.5691301468065132,
+            0.5961007684812184
+          ],
+          "nonadditive_probability": 0.6331276710207074
+        },
+        "4": {
+          "tau_over_pi": 1.0,
+          "probability": 0.6242790322374998,
+          "bounded_readout": [
+            0.6037226241251678,
+            0.6448354403498319
+          ],
+          "nonadditive_probability": 0.9291080928344083
+        }
+      }
+    },
+    "SO3": {
+      "pointer_matter_dimension": 36,
+      "conjugate_partner_dimension": 9,
+      "single_probability_pi_over_4": 0.4999999999999996,
+      "normalized_total_casimir_spectrum": [
+        -1.1102230246251565e-16,
+        1.0,
+        1.0,
+        1.0000000000000002,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0
+      ],
+      "fourth_coefficient": 1.7777777777777777,
+      "correlated_source_quadratic": 0.0,
+      "holdouts": {
+        "2": {
+          "tau_over_pi": 0.5,
+          "probability": 0.42607474344374263,
+          "bounded_readout": [
+            0.41258943260639,
+            0.43956005428109524
+          ],
+          "nonadditive_probability": 0.6331276710207077
+        },
+        "4": {
+          "tau_over_pi": 1.0,
+          "probability": 0.30903866256691337,
+          "bounded_readout": [
+            0.2884822544545813,
+            0.3295950706792454
+          ],
+          "nonadditive_probability": 0.929108092834408
+        }
+      }
+    }
+  }
+}

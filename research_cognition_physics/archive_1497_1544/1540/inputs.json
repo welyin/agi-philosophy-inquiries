@@ -1,0 +1,35 @@
+{
+  "round": 1540,
+  "oscillation_inputs": "../1537/inputs.json",
+  "IO_solar_angle": [
+    0.307,
+    0.013
+  ],
+  "leptonic_tau_over_e_HFLAV": [
+    1.0018,
+    0.0014
+  ],
+  "leptonic_mu_over_e_HFLAV": [
+    1.0002,
+    0.0011
+  ],
+  "muon_Fermi_constant_GeVm2": 0.000011663787,
+  "electron_pole_mass_GeV": 0.00051099895,
+  "widths": 2,
+  "lower_to_true_ratio_transfer_upper": 1.001,
+  "G0_over_Gmu_upper": 1.001,
+  "physical_mass_block_over_two_loop_bound_upper": 1.1,
+  "illustrative_max_f_norm": 1,
+  "illustrative_max_g_ee": 1,
+  "illustrative_mu_over_Meff": 12.566370614359172,
+  "sources": {
+    "HFLAV_eq7_8": "https://hflav-eos.web.cern.ch/hflav-eos/tau/end-2023/lepton-univ.html",
+    "two_loop_eq10": "https://arxiv.org/html/1402.4491v2",
+    "muon_lifetime": "https://arxiv.org/abs/1010.0991",
+    "reactor": "https://arxiv.org/abs/2211.14988",
+    "IO_atmospheric": "https://arxiv.org/abs/1502.01550",
+    "solar_angle_calibration": "https://arxiv.org/pdf/2211.14988",
+    "prior_proposal": "../1482/proof.md"
+  },
+  "notes": "Normalized Yukawas f=-f^T and g=g^T in the convention of Eq. (10). Positive weights on a common singly charged scalar field, unique mu h+h+k-- vertex, three active neutrinos, branch with electron being the only internal charged lepton for the mu,tau block. SM contact corrections extracted in charged-current ratios; individual upper transfer 0.1% is additional. High-scale, frame and loop-to-physical transport bounded by declared overall mass factor. No new joint confidence level."
+}

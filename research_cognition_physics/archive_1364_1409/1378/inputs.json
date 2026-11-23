@@ -1,0 +1,36 @@
+{
+  "timelike_design": {
+    "status": "synthetic engineering example; no measured pair of new-physics form factors",
+    "energies_GeV": [500.0, 1500.0],
+    "reference_mass_GeV": 1000.0,
+    "relative_error_each_extracted_extra_amplitude": 0.01,
+    "mass_mixture_comparison_GeV": [850.0, 1500.0],
+    "common_normalization": "positive and identical at the two energies; SM and contact terms independently calibrated"
+  },
+  "opal": {
+    "status": "published spacelike effective QED running from an angular log-slope fit; historical sensitivity comparison only",
+    "positive_minus_t_endpoints_GeV2": [1.81, 6.07],
+    "published_delta_alpha": 0.00440,
+    "uncertainties_stat_syst_theory": [0.00058, 0.00043, 0.00030],
+    "paper_SM_prediction": 0.00460,
+    "paper_SM_error": 0.00008,
+    "source": "https://arxiv.org/pdf/hep-ex/0505072#page=27",
+    "location": "OPAL, section 9, slope extraction in equations (7)-(8); common SM offset is not fitted to a hypothetical septet"
+  },
+  "electromagnetic_normalization": {
+    "inverse_alpha_Thomson": 137.035999178,
+    "source": "https://arxiv.org/html/2510.01312v2",
+    "location": "Antusch, Hinze and Saad, v2, equation (2); low-energy 2024 input, not their M_Z gauge coupling"
+  },
+  "threshold_comparison": {
+    "masses_GeV": [1000.0, 1000000000000.0, 20000000000000.0, 100000000000000.0],
+    "status": "four assumed benchmarks inherited from round 1376, not measured masses",
+    "source": "../_admission/round1376_admission.md"
+  },
+  "group_models": {
+    "hypercharge_convention": "Q=T3+Y",
+    "multiplets_copies_twiceT_twiceY": [[1, 6, 4], [56, 1, 1]],
+    "loop": "one complex scalar multiplet per copy, common mass, no resolvable splitting or mixing",
+    "source": "https://arxiv.org/pdf/1504.03402#page=5"
+  }
+}

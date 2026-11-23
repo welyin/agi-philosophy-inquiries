@@ -1,0 +1,12 @@
+{
+  "weak_masses": "../1386/inputs.json",
+  "weak_moduli": "../1702/inputs.json",
+  "quark_points": "../1712/inputs.json",
+  "vacuum": "../1685/inputs.json",
+  "flavor_graph": "../1709/check.py",
+  "direct_gamma": "../1707/inputs.json",
+  "log_step": 0.25,
+  "rule": "At 10 PeV the complex coefficient of the 23,32,33 edges is z=|Vud| exp(i arg S). A separate signed real x multiplies the other edges with the 1,1,3 Clebsches. Calibrate the real x and CKM angle with electron and muon Yukawas only, and solve for tau(MZ), the charged frame and neutral thresholds; compare the uncalibrated tau and independently measured gamma. The original pre-split R1702 one-loop contract is retained as a named conditional test.",
+  "blind_seeds": {"gamma_deg": 59.0, "tau_MZ": 0.008, "neutral_gain": 1.0},
+  "sources": ["https://arxiv.org/html/2510.01312v2", "https://arxiv.org/pdf/2611.26449#page=24"]
+}

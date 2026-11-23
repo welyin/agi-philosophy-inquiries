@@ -1,0 +1,63 @@
+{
+  "source_sha256": "8b54f7247018e0d020559cf9b7c1d749773a51dd6f3a3c3ec36bb8c4459a1057",
+  "beta_times_gap": 1.098612288668,
+  "initial_thermal_population": 0.25,
+  "conditional_maps_checked_on_four_matrix_units": 24,
+  "reservoir_and_buffer": {
+    "no_bath_swap": {
+      "0": {
+        "heat_into_bath_gap_units": 0.0,
+        "energy_into_buffer_gap_units": 0.0,
+        "bath_entropy_change_nats": 0.0,
+        "bath_relative_entropy_nats": 0.0,
+        "bath_buffer_mutual_information_nats": 0.0
+      },
+      "1": {
+        "heat_into_bath_gap_units": 0.0,
+        "energy_into_buffer_gap_units": 1.0,
+        "bath_entropy_change_nats": 0.0,
+        "bath_relative_entropy_nats": 0.0,
+        "bath_buffer_mutual_information_nats": 0.0
+      }
+    },
+    "half_probability": {
+      "0": {
+        "heat_into_bath_gap_units": -0.125,
+        "energy_into_buffer_gap_units": 0.125,
+        "bath_entropy_change_nats": -0.185564983362,
+        "bath_relative_entropy_nats": 0.048238447279,
+        "bath_buffer_mutual_information_nats": 0.191205177894
+      },
+      "1": {
+        "heat_into_bath_gap_units": 0.375,
+        "energy_into_buffer_gap_units": 0.625,
+        "bath_entropy_change_nats": 0.099228093539,
+        "bath_relative_entropy_nats": 0.312751514711,
+        "bath_buffer_mutual_information_nats": 0.760791331697
+      }
+    },
+    "full_bath_swap": {
+      "0": {
+        "heat_into_bath_gap_units": -0.25,
+        "energy_into_buffer_gap_units": 0.25,
+        "bath_entropy_change_nats": -0.562335144619,
+        "bath_relative_entropy_nats": 0.287682072452,
+        "bath_buffer_mutual_information_nats": 0.0
+      },
+      "1": {
+        "heat_into_bath_gap_units": 0.75,
+        "energy_into_buffer_gap_units": 0.25,
+        "bath_entropy_change_nats": -0.562335144619,
+        "bath_relative_entropy_nats": 1.38629436112,
+        "bath_buffer_mutual_information_nats": 0.0
+      }
+    }
+  },
+  "optimal_single_binary_readout_error_by_ladder_size": {
+    "1": 0.5,
+    "2": 0.25,
+    "4": 0.095491502813,
+    "8": 0.030153689607,
+    "16": 0.008513450158
+  }
+}

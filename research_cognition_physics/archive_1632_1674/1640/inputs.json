@@ -1,0 +1,54 @@
+{
+  "round": 1640,
+  "spectra_GeV": [
+    1600,
+    2100,
+    2600
+  ],
+  "range_M_GeV": [
+    1600,
+    2600
+  ],
+  "m5_slope_intercept": [
+    1.1,
+    340
+  ],
+  "ordinary_s12_s23_s13_delta_deg": [
+    0.223,
+    0.0372,
+    0.0030876,
+    68.65
+  ],
+  "F": [
+    0.00068,
+    -0.000125
+  ],
+  "k": 0.605,
+  "fBs_GeV": 0.229,
+  "etaB": 0.551,
+  "S0": 2.299,
+  "eta_Z": 0.547,
+  "f2B4": 0.0477,
+  "f2B5": 0.0428,
+  "control_decay_phase_rad": 0.013,
+  "working_widths": 2,
+  "exclusive_tree": "../1445/inputs.json",
+  "original_doublet": "../1635/inputs.json",
+  "operator_matching": "../1636/inputs.json",
+  "inclusive_holdout": {
+    "Vcb": [
+      0.04216,
+      0.00051
+    ],
+    "source": "https://arxiv.org/abs/2107.00604"
+  },
+  "gamma_Bpm": {
+    "deg": 68.7,
+    "down": 5.1,
+    "up": 5.2,
+    "transfer_cap_deg": 1,
+    "source": "https://arxiv.org/abs/2010.08483"
+  },
+  "nuclear_holdout": "../1381/inputs.json",
+  "scope": "Hnu and both lifetime acceptance weights central, tau_H central, residual dimuon transfer one. All listed weak/hadronic inputs common across sample predictions at a given M. The hypothesized true mixing bag Bhat is inferred separately within the same external lattice windows for each alternative mass spectrum; the frequency is an input, not a prediction. Comparisons are rectangular working windows, not likelihoods."
+}

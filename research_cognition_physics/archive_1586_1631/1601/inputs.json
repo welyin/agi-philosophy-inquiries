@@ -1,0 +1,28 @@
+{
+  "scale_GeV": 10000000000000000,
+  "down_and_leptons_file": "../1402/inputs.json",
+  "high_ckm_file": "../1397/inputs.json",
+  "source": "https://arxiv.org/html/2510.01312v2",
+  "scheme": "SM MS-bar no new thresholds; Table 2 with PDG 2024 input. Flavor basis with up rows, down columns. No fit to a SU(5) high-energy spectrum.",
+  "mass_order": [
+    "d",
+    "s",
+    "b",
+    "e",
+    "mu",
+    "tau"
+  ],
+  "margin_widths": 2,
+  "neutral_zero_column_maximum": {
+    "NO": 0.8428,
+    "IO": 0.7563
+  },
+  "column_source": "../1600/results.json",
+  "neutrino_transfer": "Only a conditional comparison at the same effective scale/with specified transfer of rays, including charged lepton and neutrino running and thresholds.",
+  "ckm_phase": "central witnesses use Table 2 CKM phase; uniform bounds admit all phases",
+  "references": {
+    "unification": "https://arxiv.org/abs/2308.13329",
+    "compression": "https://doi.org/10.4153/CJM-1957-036-1",
+    "oscillations": "https://arxiv.org/abs/2410.05380"
+  }
+}

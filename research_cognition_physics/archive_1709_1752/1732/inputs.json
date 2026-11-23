@@ -1,0 +1,26 @@
+{
+  "parent": "../1727/check.py",
+  "high_scale_GeV": 10000000,
+  "positive_x_and_positive_gamma_branch": true,
+  "log_step": 0.25,
+  "strange_absolute_bracket": [
+    0.000276,
+    0.000334
+  ],
+  "path_lengths": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "seed_gamma_deg": 59,
+  "neutral_transport": "../1731/check.py",
+  "exploratory_weak_offsets": {
+    "charged_interior": {"us": -0.9, "ub": -0.2, "cb": 0.95},
+    "registered_with_lower_us": {"us": -0.95, "ub": -0.93, "cb": 0.93}
+  },
+  "rule": "At the common matching scale require x=c^k and z=c exp(i phi), c=|Vud|. Keep the defined charged vertices, the real zero-return condition, the frozen neutral direction at its two thresholds and the three measured charged-lepton masses. Solve for all three down Yukawas and gamma; the weak CKM moduli are either at their direct centers or at their previously registered offsets. No new Lagrangian assumed to select k or suppress complementary paths."
+}

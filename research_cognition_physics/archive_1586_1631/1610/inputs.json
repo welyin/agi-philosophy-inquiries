@@ -1,0 +1,46 @@
+{
+  "baseline": "../1607/independent_results.json",
+  "angles_masses": "../1386/inputs.json",
+  "rg": "../1608/inputs.json",
+  "heavy_examples_GeV": [
+    [
+      1100,
+      2100
+    ],
+    [
+      1600,
+      2100
+    ]
+  ],
+  "v_GeV": 246.22,
+  "kinematic_GeV": {
+    "u": 0.0022,
+    "c": 1.3,
+    "t": 172.5,
+    "b": 4.8,
+    "Z": 91.1876,
+    "W": 80.38,
+    "H": 125.25
+  },
+  "hbarc_GeV_mm": 1.973269804e-13,
+  "mixing_s_window": [
+    0.00001,
+    0.0001
+  ],
+  "test_point_s": 0.00001,
+  "lab_radius_mm": 0.1,
+  "probability_decay_required": 0.99,
+  "beta_gamma_cap": 10,
+  "light_relative_probability_budget": 1e-8,
+  "low_yb_matching": 0.016,
+  "nominal_alpha_s_MZ": 0.1179,
+  "rate_transfer": "CMS singlet QCD color triplet one narrow B, branch 0.5 tW / 0.25 bZ / 0.25 bh. Treat light-W, cascades, finite helicity/bin response, hadronization and signal contributions from second pole separately.",
+  "sources": {
+    "CMS": "https://arxiv.org/abs/2209.07327",
+    "CMS_table11": "https://cms-results.web.cern.ch/cms-results/public-results/publications/B2G-20-011/CMS-B2G-20-011_Table_011.pdf",
+    "CMS_numeric_reference": {"observable": "observed 95% lower mass of one promptly decaying B", "observed_lower_TeV": 1.47, "expected_TeV": 1.37, "b_tW_bZ_bh": [0.5, 0.25, 0.25], "table": "11, B block, Singlet row"},
+    "ATLAS": "https://arxiv.org/abs/2212.05263",
+    "VLQ": "https://arxiv.org/abs/1306.0572",
+    "high_order": "https://arxiv.org/abs/2403.02461"
+  }
+}

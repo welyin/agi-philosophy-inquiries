@@ -1,0 +1,103 @@
+{
+  "isotopes": {
+    "Ge76": {
+      "T_year": 1.9e+26,
+      "G_per_1e15_year": 2.36,
+      "publication": "https://doi.org/10.1103/25tk-nctn",
+      "statistic": "90% CL; LEGEND-200 with GERDA and MAJORANA"
+    },
+    "Te130": {
+      "T_year": 3.5e+25,
+      "G_per_1e15_year": 14.2,
+      "publication": "https://doi.org/10.1126/science.adp6474",
+      "statistic": "90% Bayesian credibility; published CUORE"
+    },
+    "Xe136": {
+      "T_year": 3.8e+26,
+      "G_per_1e15_year": 14.6,
+      "publication": "https://doi.org/10.1103/jkf6-48j8",
+      "statistic": "90% CL; full KamLAND-Zen combined phases"
+    },
+    "Mo100": {
+      "T_year": 2.9e+24,
+      "G_per_1e15_year": 15.9,
+      "publication": "https://doi.org/10.1103/PhysRevLett.134.082501",
+      "statistic": "90% CL; published AMoRE-I; additional isotope"
+    }
+  },
+  "matrix_models": {
+    "IBM2": {
+      "source": "https://arxiv.org/pdf/1506.08530",
+      "setting": "Tables III,V; Argonne SRC, restored isospin, unquenched; errors in Table VI are marginal theory estimates, not a covariance",
+      "gA": 1.269,
+      "light": {
+        "Ge76": 4.68,
+        "Te130": 3.7,
+        "Xe136": 3.05,
+        "Mo100": 4.22
+      },
+      "heavy": {
+        "Ge76": 104,
+        "Te130": 91.8,
+        "Xe136": 72.6,
+        "Mo100": 164
+      },
+      "light_error_TableVI": {
+        "Ge76": 0.75,
+        "Te130": 0.59,
+        "Xe136": 0.59,
+        "Mo100": 0.68
+      },
+      "heavy_error_TableVI": {
+        "Ge76": 29,
+        "Te130": 26,
+        "Xe136": 20,
+        "Mo100": 46
+      }
+    },
+    "QRPA_AV18": {
+      "source": "https://arxiv.org/pdf/1803.09195",
+      "setting": "Tables II and IV, rows b with self-consistent SRC, unquenched AV18 column",
+      "gA": 1.27,
+      "light": {
+        "Ge76": 3.12,
+        "Te130": 2.9,
+        "Xe136": 1.11
+      },
+      "heavy": {
+        "Ge76": 187.3,
+        "Te130": 191.4,
+        "Xe136": 66.9
+      }
+    },
+    "QRPA_CDBonn": {
+      "source": "https://arxiv.org/pdf/1803.09195",
+      "setting": "Tables II and IV, rows b with self-consistent SRC, unquenched CD Bonn column",
+      "gA": 1.27,
+      "light": {
+        "Ge76": 3.4,
+        "Te130": 3.22,
+        "Xe136": 1.18
+      },
+      "heavy": {
+        "Ge76": 293.7,
+        "Te130": 303.5,
+        "Xe136": 90.5
+      }
+    }
+  },
+  "phase_space_source": "https://nucleartheory.yale.edu/double-beta-decay-phase-space-factors",
+  "m_e_eV": 510998.95,
+  "katrin_upper_eV": 0.45,
+  "katrin_source": "https://doi.org/10.1126/science.adq9592",
+  "rank2_reference": "../1370/results.json",
+  "differential_ratio_half_widths": [
+    0,
+    0.01,
+    0.03,
+    0.05,
+    0.1,
+    0.2,
+    0.3
+  ]
+}

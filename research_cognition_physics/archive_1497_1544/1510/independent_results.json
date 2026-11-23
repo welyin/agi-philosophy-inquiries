@@ -1,0 +1,65 @@
+{
+  "reduced_rate_definition": "1/(T_i G_i gA^4 H_i^2)",
+  "response_ratios": {
+    "Ge76": "9/200",
+    "Te130": "37/918",
+    "Xe136": "61/1452",
+    "Mo100": "211/8200"
+  },
+  "four_isotope_holdouts_at_fixed_NME": {
+    "Ge76": {
+      "input_order": [
+        "Te130",
+        "Xe136",
+        "Mo100"
+      ],
+      "weights_exact": [
+        "-1203901461/519713225",
+        "1495534227/459130075",
+        "157218887/2657914907"
+      ],
+      "max_absolute_noise_amplification": 5.632945259378381
+    },
+    "Te130": {
+      "input_order": [
+        "Ge76",
+        "Xe136",
+        "Mo100"
+      ],
+      "weights_exact": [
+        "-519713225/1203901461",
+        "346124674621/246149591121",
+        "6864741725/268836189381"
+      ],
+      "max_absolute_noise_amplification": 1.8633816667492191
+    },
+    "Xe136": {
+      "input_order": [
+        "Ge76",
+        "Te130",
+        "Mo100"
+      ],
+      "weights_exact": [
+        "459130075/1495534227",
+        "246149591121/346124674621",
+        "-3456262075/190328417367"
+      ],
+      "max_absolute_noise_amplification": 1.0363189283325513
+    },
+    "Mo100": {
+      "input_order": [
+        "Ge76",
+        "Te130",
+        "Xe136"
+      ],
+      "weights_exact": [
+        "2657914907/157218887",
+        "268836189381/6864741725",
+        "-190328417367/3456262075"
+      ],
+      "max_absolute_noise_amplification": 111.13540827455915
+    }
+  },
+  "third_response_at_Mo_toy_signed_contrast": "-4/76875",
+  "realistic_data_used_as_positive_rates": false
+}

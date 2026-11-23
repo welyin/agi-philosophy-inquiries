@@ -1,0 +1,25 @@
+{
+  "charged_roots": "../1702/results.json",
+  "shooting_program": "../1702/check.py",
+  "semileptonic_moduli": "../1702/inputs.json",
+  "S_d": [0.717, 0.013, 0.008],
+  "C_d": [0.008, 0.012, 0.003],
+  "S_d_source": "https://arxiv.org/abs/2309.09728",
+  "phi_s_rad": {"CMS_8plus13": [-0.075, 0.023], "LHCb": [-0.039, 0.022, 0.006]},
+  "phi_s_sources": {"CMS_8plus13": "https://doi.org/10.1103/ctqx-vxrj", "CMS_published_abstract": "https://pubmed.ncbi.nlm.nih.gov/42172397/", "LHCb": "https://arxiv.org/abs/2308.01468"},
+  "ratio_ports": {
+    "Bs_low_original": [0.0607, [0.0015, 0.0013, 0.0008, 0.0030], [0.0015, 0.0013, 0.0008, 0.0030]],
+    "Bs_high_original": [0.0946, [0.0030, 0.0025, 0.0013, 0.0068], [0.0030, 0.0024, 0.0013, 0.0068]],
+    "Lambda_b_original": [0.083, [0.004, 0.004], [0.004, 0.004]],
+    "Bs_high_FLAG": [0.0861, [0.0057, 0.0038], [0.0057, 0.0038]],
+    "Bs_low_FLAG": [0.0779, [0.0098, 0.0028], [0.0098, 0.0028]]
+  },
+  "ratio_sources": {
+    "Bs_low_high_original": "https://arxiv.org/pdf/2012.05143#page=8",
+    "Lambda_b_original": "https://arxiv.org/pdf/1504.01568#page=8",
+    "Bs_high_FLAG_same_LHCb_counts_eq278": "https://arxiv.org/pdf/2411.04268#page=180"
+  },
+  "time_integrated_gamma_deg": {"central": 62.5, "68": [60.1, 64.8], "95": [57.7, 67.1]},
+  "gamma_source_tables_2_4": "https://arxiv.org/pdf/2611.26449#page=24",
+  "input_convention": "Marginal quoted errors combined in quadrature per observable. Rectangular comparisons, no combined likelihood. Ratio ports separately replace the tree Vub measurement keeping the Belle II Vcb and K_l3 Vus. Same Bs counts and shared uncertainties are not multiplied. LHCb full gamma uses HFLAV beta and phi_s, hence only its time-integrated subcombination is used here."
+}

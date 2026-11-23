@@ -1,0 +1,19 @@
+{
+  "weak_matching_inputs": "../1386/inputs.json",
+  "neutron_EDM_input": "../1389/inputs.json",
+  "second_lattice": {
+    "slope_magnitude_e_fm": [0.0050, 0.0004, 0.0008],
+    "source": "https://arxiv.org/abs/2608.22587"
+  },
+  "channel_budgets_over_physical_yb": {"direct_max": 1.0, "rank_one_max": [1.0, 0.1]},
+  "inverse_direct_independent_fraction": 0.05,
+  "witness_in_units_of_yb": {
+    "direct": [0.00393405029870808, 0.004520001204862489, 0.9974439022102362],
+    "u": [0.05585334662563374, -0.6180721887829568, 0.7841346651715901],
+    "v_seed": [0.38839581638585896, 0.04561709607301105, 0.9203628471205408],
+    "A": 0.07364151790601385,
+    "phase_in_units_of_pi": -0.5,
+    "orthogonalize": "Project the real seed onto (D^-1 u)^perp, then normalize; this imposes the nominal strong angle exactly in the mathematical construction."
+  },
+  "scope": "Common MZ SM matching, no additional determinant thresholds, theta_QCD=0 in the physical CP basis, no axion response, independent scalar/direct channels. EDM comparison only under the theta-only neutron response. Hermitian example is another representation of physical interactions with its own constraints."
+}

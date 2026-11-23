@@ -1,0 +1,126 @@
+{
+  "physical_majorana_norm_keV": 6.30035477,
+  "checkpoints": [
+    {
+      "q_GeV": 500,
+      "full_ee_meV": 3.40175251,
+      "exact_ee_meV": 3.40175251,
+      "independent_half_step_ee_rate_shift": 4.63061225e-08,
+      "mu_linearization_relative_amp_upper": 3.12116231e-16,
+      "diagonal_10MeV_absolute_error_over_target": 1.24801941e-06,
+      "no_Dirac_dressing_relative_rate": 3.39749308e-05
+    },
+    {
+      "q_GeV": 2000,
+      "full_ee_meV": 2.93656055,
+      "exact_ee_meV": 2.93656055,
+      "independent_half_step_ee_rate_shift": 4.7288e-08,
+      "mu_linearization_relative_amp_upper": 1.96088937e-17,
+      "diagonal_10MeV_absolute_error_over_target": 7.84075852e-08,
+      "no_Dirac_dressing_relative_rate": 3.24383769e-05
+    },
+    {
+      "q_GeV": 4000,
+      "full_ee_meV": 1.95651668,
+      "exact_ee_meV": 1.95651668,
+      "independent_half_step_ee_rate_shift": 4.92475067e-08,
+      "mu_linearization_relative_amp_upper": 4.9560594e-18,
+      "diagonal_10MeV_absolute_error_over_target": 1.98171633e-08,
+      "no_Dirac_dressing_relative_rate": 2.79948706e-05
+    },
+    {
+      "q_GeV": 8000,
+      "full_ee_meV": 0.654888834,
+      "exact_ee_meV": 0.654888834,
+      "independent_half_step_ee_rate_shift": 5.18179848e-08,
+      "mu_linearization_relative_amp_upper": 1.25855748e-18,
+      "diagonal_10MeV_absolute_error_over_target": 5.03243343e-09,
+      "no_Dirac_dressing_relative_rate": 1.74828842e-05
+    }
+  ],
+  "conditional_all_order_diagonal_mu_budget_MeV": 10.0,
+  "conditional_all_order_fractional_rate_floor": 0.0001240842,
+  "large_80GeV_control_relative_cubic": 3.69528255e-08,
+  "electron_rate_ambiguity": {
+    "diagonal_mu_keV": {
+      "real": [
+        [
+          5.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.11194607
+        ]
+      ],
+      "imag": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.4040973
+        ]
+      ]
+    },
+    "reflected_mu_keV": {
+      "real": [
+        [
+          -3.72272351,
+          -2.9143711
+        ],
+        [
+          -2.9143711,
+          1.73481899
+        ]
+      ],
+      "imag": [
+        [
+          -3.33788166,
+          2.48685092
+        ],
+        [
+          2.48685092,
+          2.68893332
+        ]
+      ]
+    },
+    "roots_dimensionless": {
+      "real": [
+        -1.02631074,
+        -0.983634492
+      ],
+      "imag": [
+        -0.0687425309,
+        0.0752465796
+      ]
+    },
+    "checks": [
+      {
+        "q_GeV": 500,
+        "ee_rate_analytic_relative_upper": 1.60220162e-15,
+        "em_rate_ratio": 0.950635888,
+        "muon_rate_ratio": 0.234151458
+      },
+      {
+        "q_GeV": 2000,
+        "ee_rate_analytic_relative_upper": 1.00191495e-16,
+        "em_rate_ratio": 0.909936265,
+        "muon_rate_ratio": 0.248519838
+      },
+      {
+        "q_GeV": 4000,
+        "ee_rate_analytic_relative_upper": 2.50724336e-17,
+        "em_rate_ratio": 0.850049627,
+        "muon_rate_ratio": 0.286174805
+      },
+      {
+        "q_GeV": 8000,
+        "ee_rate_analytic_relative_upper": 6.27503193e-18,
+        "em_rate_ratio": 0.808757132,
+        "muon_rate_ratio": 0.358647691
+      }
+    ]
+  }
+}

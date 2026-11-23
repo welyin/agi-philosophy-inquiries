@@ -1,0 +1,41 @@
+{
+  "charged": "../1386/inputs.json",
+  "angles_gaps": "../1370/inputs.json",
+  "phase": "../1416/inputs.json",
+  "theta23_sin2": {
+    "NO": [
+      0.47,
+      0.435,
+      0.585
+    ],
+    "IO": [
+      0.55,
+      0.44,
+      0.584
+    ]
+  },
+  "order_example_delta_deg": {
+    "NO": -75,
+    "IO": -75
+  },
+  "charged_widths": 2,
+  "theta_max_under_neutron_dictionary": 3.1035e-10,
+  "typeII_example": {
+    "min_mass_eV": 0.02,
+    "vL_abs_eV": 0.2,
+    "vR_eff_GeV": 1000000000,
+    "kappa_GeV": 170,
+    "dirac_gain": 0.000001
+  },
+  "sources": {
+    "loop": "https://arxiv.org/abs/1408.6382",
+    "invariant": "https://doi.org/10.1103/PhysRevLett.55.1039",
+    "NuFIT": "https://arxiv.org/abs/2410.05380",
+    "fit_table": "https://www.nu-fit.org/sites/default/files/v60.tbl-parameters.pdf",
+    "phase": "https://www.nature.com/articles/s41586-025-09599-3",
+    "charged_yukawa": "https://arxiv.org/html/2510.01312v2",
+    "neutron": "https://arxiv.org/abs/2001.11966",
+    "neutron_matching": "https://arxiv.org/abs/2301.04331"
+  },
+  "convention": "Use positive charged signed eigenvalues, common parity basis, t real and t^2 != 1. E=(ell-ell_min I)/spread. F=(U m^2 U^dagger-m_min^2 I)/spread. Pure quantum operation rates do not establish the physical Dirac vertex. The rectangles combine marginal results, without assuming independent likelihoods."
+}

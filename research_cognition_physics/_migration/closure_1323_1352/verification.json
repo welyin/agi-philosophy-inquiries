@@ -1,0 +1,58 @@
+{
+  "schema": "closure_verification_1323_1352_v1",
+  "date": "2026-11-19",
+  "status": "PASS",
+  "manifest_sha256": "888db06c70bdc3b7634c7ce909f43a32e8aae5db6554f919a7cb684772a011a5",
+  "products_sha256": "898e877b12caaa7d9d034cfe1649d8368ef50ccf08d0da41bca87f63320c4954",
+  "preclosure_archive_files": 414,
+  "preclosure_markdown_recovered": 8,
+  "round_acceptances": 30,
+  "accepted_evidence_bindings": 295,
+  "frozen_manifests": 7,
+  "reexecuted_scientific_programs": 67,
+  "current_product_and_navigation_links_checked": 5542,
+  "commands": [
+    {
+      "mode": "--verify-stage-closure",
+      "exit_code": 0,
+      "receipt": "ec93a1",
+      "scope": "archive evidence, products and current links"
+    },
+    {
+      "mode": "--replay-stage-science",
+      "exit_code": 0,
+      "receipt": "a591d9",
+      "scope": "all 67 acceptance-listed scientific runs in isolated read-only processes"
+    },
+    {
+      "mode": "--verify-navigation",
+      "exit_code": 0,
+      "receipt": "46a780",
+      "scope": "historical navigation"
+    },
+    {
+      "mode": "--verify-reclassification",
+      "exit_code": 0,
+      "receipt": "b20258",
+      "scope": "historical interim-reclassification evidence"
+    },
+    {
+      "mode": "--verify-current-progress",
+      "exit_code": 0,
+      "receipt": "fee8b8",
+      "scope": "frozen 1352 evidence and navigation"
+    },
+    {
+      "mode": "--script research_cognition_physics/archive_1323_/1332/check.py -- --check",
+      "exit_code": 0,
+      "receipt": "5a2c66",
+      "scope": "original path, cross-round import"
+    },
+    {
+      "mode": "--script research_cognition_physics/archive_1323_1352/_shared/check_stage_joint.py -- --check",
+      "exit_code": 0,
+      "receipt": "d60e49",
+      "scope": "closed path, withdrawn interim-paper historical view"
+    }
+  ]
+}

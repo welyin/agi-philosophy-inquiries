@@ -1,0 +1,27 @@
+{
+  "weak_states":"../1467/results.json",
+  "mass_builder":"../1467/check.py",
+  "source_model":"../1465/inputs.json",
+  "absolute_calibrations":["../1404/inputs.json","../1407/inputs.json","../1464/results.json"],
+  "omega_ps_inverse":[17.7683,0.0051,0.0032],
+  "eta_Z_RGI_range":[0.54,0.60],
+  "alpha_s_ref":0.118,
+  "extra_decay_phase_cap_rad":0.020,
+  "phase_inputs_rad":{
+    "LHCb_KK_2015_18":[-0.039,0.022,0.006],
+    "CMS_KK_13TeV_final":[-0.073,0.022,0.010],
+    "LHCb_pipi_2015_18":[-0.077,0.034,0.007],
+    "LHCb_all_2026":[-0.041,0.017],
+    "CMS_8_13TeV_final":[-0.075,0.023]
+  },
+  "sources":{
+    "clock":"https://arxiv.org/abs/2104.04421",
+    "LHCb_KK":"https://doi.org/10.1103/PhysRevLett.132.051802",
+    "CMS_final":"https://doi.org/10.1103/ctqx-vxrj",
+    "LHCb_2026":"https://arxiv.org/abs/2608.14119",
+    "lattice":"https://arxiv.org/abs/1907.01025",
+    "matching":"https://arxiv.org/abs/1909.11087",
+    "Z_correlation":"https://arxiv.org/abs/1211.1896"
+  },
+  "scope":"Standard Gmu, QCD parity, common RGI bag, leading dispersive mixing, same light vector current for control tags, responsive acceptance, dominant common c cbar s tree. Eta_Z fixed matching window for V_RR; delta_mix from heavy, LR, nonlocal, electromagnetic effects not assigned an automatic cap. Different decay-phase and mass contributions have separate budgets. Combination rows overlap the individual datasets and are not independent evidence."
+}

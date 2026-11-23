@@ -1,0 +1,22 @@
+{
+  "charged_inputs": "../1381/inputs.json",
+  "charged_result": "../1383/results.json",
+  "charged_contract": "Use the observed historical first row with unchanged muon normalization, semileptonic amplitudes and source corrections. Keep all three light amplitudes; displayed central phases may be chosen real by rephasing this single row.",
+  "proton": {
+    "source": "https://arxiv.org/pdf/1905.08283#page=5",
+    "pv_electron_scattering_only": [0.0719, 0.0045],
+    "SM": [0.0708, 0.0003],
+    "asymmetry_ppb": [-226.5, 9.3],
+    "mean_Q2_GeV2": 0.0248,
+    "experiment": "2018 Qweak; PVES fit, not the fit including atomic parity violation"
+  },
+  "caesium": {
+    "Z": 55, "N": 78,
+    "source_experiment": "https://doi.org/10.1126/science.275.5307.1759",
+    "source_extraction": "https://arxiv.org/pdf/1207.5864#page=4",
+    "value_and_errors_experiment_atom": [-72.58, 0.29, 0.32],
+    "SM": [-73.23, 0.02],
+    "extractor": "Spin-independent amplitude, 2012 atomic PNC reduction; not claimed to be the only available atomic calculation."
+  },
+  "precision": "Quadrature of the separately quoted errors of each extraction and its historical SM baseline used only as a working width, not as a joint likelihood. The minimax criterion is for a forecast assuming zero central deviations, distinct from the historical observed offsets."
+}

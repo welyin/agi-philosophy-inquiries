@@ -1,0 +1,82 @@
+{
+  "texture": "../1655/results.json",
+  "texture_inputs": "../1655/inputs.json",
+  "portal": "../1653/inputs.json",
+  "muon": "../1488/inputs.json",
+  "target_order": [
+    "Au",
+    "Ti"
+  ],
+  "targets": {
+    "Au": {
+      "overlaps": [
+        0.0614,
+        0.0918
+      ],
+      "capture_per_s": 13070000,
+      "limit90": 7e-13
+    },
+    "Ti": {
+      "overlaps": [
+        0.03742,
+        0.04305
+      ],
+      "capture_per_s": 2590000,
+      "limit90": 6.1e-13,
+      "older_limit90": 4.3e-12,
+      "KKO_comparison": [
+        0.0368,
+        0.0435
+      ]
+    }
+  },
+  "nucleon_masses_GeV": [
+    0.9382721,
+    0.9395654
+  ],
+  "hbar_GeV_s": 6.582119569e-25,
+  "quark_fractions": {
+    "up_p": [
+      0.0139,
+      0.0013,
+      0.0012
+    ],
+    "down_p": [
+      0.0253,
+      0.0028,
+      0.0024
+    ],
+    "up_n": [
+      0.0116,
+      0.0013,
+      0.0011
+    ],
+    "down_n": [
+      0.0302,
+      0.0028,
+      0.0025
+    ],
+    "strange_common": [
+      0.043,
+      0.011
+    ]
+  },
+  "mH_tests_GeV": [
+    300,
+    500,
+    1000
+  ],
+  "extra_amplitude_relative_stress": 0.1,
+  "central_model": "Electroweak scalar h0 couples at m_q/v for all quarks; radial phi has exponents n_d,n_s from right d,s projector; extra n_u and sum n_c+n_b+n_t both zero in reference, promoted to free signed low-energy couplings in profile only. Same right-side real lepton transfer as 1655. Effective LO one-body scalar sector, other amplitudes separately budgeted. Ti48 response stands for Ti-accepted response under isotope transfer; cannot infer isotopic mixture weights from reported element limit.",
+  "sources": {
+    "gold": "https://doi.org/10.1140/epjc/s2006-02582-x",
+    "Ti_1993": "https://doi.org/10.1016/0370-2693(93)91383-X",
+    "Ti_final": "P. Wintz, Results of the SINDRUM II experiment, Lepton-Baryon 98, pp. 534–546; final limit confirmed in Eq. (1) of Heinz et al.",
+    "Ti_final_and_overlaps": "https://doi.org/10.1016/j.physletb.2025.139975",
+    "KKO_Eqs1_14_15_and_Tables1_8": "https://arxiv.org/abs/hep-ph/0203110",
+    "light_quark_lattice_Eq11": "https://arxiv.org/abs/1510.08013",
+    "strange_quark_lattice": "https://doi.org/10.1103/PhysRevD.87.114510",
+    "heavy_quark_matching_Eq10": "https://arxiv.org/abs/1404.7134",
+    "two_body_omissions": "https://arxiv.org/abs/2203.09547"
+  }
+}

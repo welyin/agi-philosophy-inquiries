@@ -1,0 +1,51 @@
+{
+  "matching": {
+    "source": "https://arxiv.org/html/2510.01312v2",
+    "location": "2024 PDG inputs in Eq.(2), SM MSbar estimates at MZ in Eq.(4); M_H fitted as input 125.20+/-0.11 GeV. Use dimensionless parameters and v only, exclude their lambda.",
+    "v_GeV": [
+      248.401,
+      0.032
+    ],
+    "couplings": [
+      "../1369/inputs.json",
+      "../1368/inputs.json",
+      "../1367/inputs.json"
+    ]
+  },
+  "neutrino": {
+    "source": "../1370/inputs.json",
+    "spectrum": "NO, solar and atmospheric central; masses in eV converted to GeV; m1=0."
+  },
+  "atlas": {
+    "mass_GeV": [
+      125.11,
+      0.11
+    ],
+    "source": "https://arxiv.org/abs/2308.04775",
+    "meaning": "Observed mass from diphoton and four-lepton channels at 7, 8, 13 TeV; 0.09 statistical, 0.06 systematic, total 0.11 GeV."
+  },
+  "historical_check": {
+    "lower_top_GeV": 140,
+    "upper_W_GeV": 82,
+    "upper_Z_GeV": 93,
+    "interpretation": "Chosen broad on-shell proxy bounds for sign check; not confidence limits or exact conversion between mass schemes.",
+    "sources": [
+      "https://arxiv.org/abs/hep-ex/9503002",
+      "https://arxiv.org/abs/hep-ex/0605011",
+      "https://arxiv.org/abs/hep-ex/0509008"
+    ]
+  },
+  "competition": {
+    "lambda": [
+      0.25,
+      0.5
+    ],
+    "heavy_over_v": 0.5,
+    "singlet_vev_over_v": 1
+  },
+  "mechanism_sources": [
+    "https://doi.org/10.1103/PhysRevD.13.3333",
+    "https://arxiv.org/abs/1909.02111",
+    "https://arxiv.org/abs/1408.0287"
+  ]
+}

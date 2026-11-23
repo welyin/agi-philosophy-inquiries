@@ -1,0 +1,68 @@
+{
+  "angles_masses": "../1386/inputs.json",
+  "atlas_et": "../1425/inputs.json",
+  "mh_GeV": 125,
+  "v_GeV": 246.22,
+  "MK_GeV": 0.493677,
+  "Mpi_GeV": 0.13957039,
+  "mu_pole_GeV": 0.10565838,
+  "e_pole_GeV": 0.000510999,
+  "tauK_s": 1.238e-8,
+  "hbar_GeV_s": 6.582119569e-25,
+  "shape_abs_upper": 1.2,
+  "ETMC_table_IV_s_f0": [
+    [
+      0,
+      0.9711
+    ],
+    [
+      0.0184,
+      0.984
+    ],
+    [
+      0.0369,
+      0.9976
+    ],
+    [
+      0.0553,
+      1.0117
+    ],
+    [
+      0.0737,
+      1.0264
+    ],
+    [
+      0.0922,
+      1.0419
+    ],
+    [
+      0.1106,
+      1.0581
+    ],
+    [
+      0.129,
+      1.0753
+    ]
+  ],
+  "hwidth_GeV": {
+    "direct": 0.33,
+    "matched_offshell": 0.0105,
+    "SM_sized_example": 0.0041
+  },
+  "NA62": {
+    "flat_upper90": 6.6e-11,
+    "ses": 1.44e-11,
+    "ses_error": 5e-13,
+    "flat_acceptance": 0.0621
+  },
+  "cells": 24000,
+  "sources": {
+    "NA62": "https://arxiv.org/abs/2105.06759",
+    "ETMC_shape": "https://arxiv.org/pdf/1602.04113#page=28",
+    "ATLAS_et": "https://arxiv.org/abs/2302.05225",
+    "CMS_width_direct": "https://arxiv.org/abs/2409.13663",
+    "ATLAS_width_transfer": "https://arxiv.org/abs/2304.01532",
+    "constants": "https://pdg.lbl.gov/2024/tables/contents_tables.html"
+  },
+  "contract": "Two marginal-width input boxes inherited from 1425, not a simultaneous statistical interval. The common scalar form-factor cap includes finite hadronic matching. ETMC data support the scale of this assumption; separate dominance of the shared Higgs pole and transfer of experimental responses are required."
+}

@@ -1,0 +1,37 @@
+{
+  "round": 1643,
+  "tree": "../1640/inputs.json",
+  "witness_common": {"fplus": 0.96400003, "etaB": 0.55088, "S0": 2.2971, "tau": 1.6329, "mu_transfer": 1.0199, "nu_transfer": 1.1199, "control_shift": 0.0197, "CMS_weight": 0.9999, "Run3_weight": 0.9900},
+  "witness_keys": ["M_GeV","s12","s23","s13","delta_rad","ReF","ImF","k","etaZ","U4","U5","fBs"],
+  "physical_witnesses": {
+    "positive_sine": [1606.4483160872132,0.22500181692984306,0.0434150733956813,0.004145112524378825,1.193088544443859,0.0001896021903071274,-0.00020385118324985497,0.6998030139851114,0.5553494691823223,0.047819204769119855,0.04210443466982149,0.23180260120119273],
+    "negative_sine": [1646.9680442157355,0.22500076331252422,0.04336141950238239,0.004270483065781495,4.388399421896927,0.00019962982853673122,-0.0003167147768932917,0.6920684525096622,0.5410748398364686,0.04725158607312199,0.04253243626408872,0.232295354]
+  },
+  "tree_N": "../1381/inputs.json",
+  "semileptonic": "../1445/inputs.json",
+  "fixed_bottom": "../1633/results.json",
+  "calibration": "../1639/independent_results.json",
+  "mixing": "../1636/inputs.json",
+  "nu": "../1464/inputs.json",
+  "rare": "../1406/inputs.json",
+  "weak": "../1404/inputs.json",
+  "lattice": "../1407/inputs.json",
+  "control": "../1468/inputs.json",
+  "domain": "2 quoted working widths; both charged gamma branches modulo pi; active left singlet aligned with b, one right exotic doublet and rank-one s,b direction; M_Y continuous 1600--2600 GeV, independently varying k, absolute rate and mixing error inputs of 1639. Bare kinetic-up transfer inherited from 1640.",
+  "bins": {
+    "mass": 12,
+    "lambda": 28,
+    "k": 10,
+    "x": 500
+  },
+  "one_sided_residual_ps_inverse": 0.0001,
+  "sources": {
+    "nuclear": "https://doi.org/10.1103/PhysRevC.102.045501",
+    "Kl3": "https://arxiv.org/abs/0802.3009",
+    "fplus": "https://arxiv.org/abs/1312.1228",
+    "Lambda_b": "https://arxiv.org/abs/1504.01568",
+    "exclusive": "https://arxiv.org/abs/2310.01170",
+    "inclusive": "https://arxiv.org/abs/2107.00604",
+    "gamma": "https://arxiv.org/abs/2010.08483"
+  }
+}

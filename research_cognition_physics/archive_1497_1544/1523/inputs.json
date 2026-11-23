@@ -1,0 +1,33 @@
+{
+  "gauge_base": "../1369/inputs.json",
+  "thresholds": "../1518/results.json",
+  "low_scale_GeV": 1000,
+  "tan_beta_at_low_scale": 1,
+  "experimental_half_widths": 2,
+  "sm_dr_at_one_TeV": {
+    "yt": [
+      0.8464,
+      0.0042
+    ],
+    "g1": [
+      0.468064,
+      0.000027
+    ],
+    "g2": [
+      0.63746,
+      0.00003
+    ],
+    "g3": [
+      1.0489,
+      0.003
+    ]
+  },
+  "published_table": "Table 4, DR-bar 2024 PDG input, SM quantities; the Yukawa finite SUSY conversion is separately declared.",
+  "matching": "yt_SM_DR = (1+delta_t)*sin(beta)*yt_MSSM_DR at 1 TeV, nominal delta_t=0",
+  "unitarity_marker": "yt^2=4*pi as a declared perturbative diagnostic",
+  "sources": [
+    "https://arxiv.org/html/2510.01312v2",
+    "https://arxiv.org/abs/hep-ph/9311340",
+    "https://arxiv.org/abs/hep-ph/9308222"
+  ]
+}

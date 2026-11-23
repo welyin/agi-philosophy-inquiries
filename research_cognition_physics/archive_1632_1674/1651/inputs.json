@@ -1,0 +1,41 @@
+{
+  "round": 1651,
+  "texture": "../1489/results.json",
+  "target": "../1648/results.json",
+  "ordinary_scale": "../1386/inputs.json",
+  "v_GeV": 246.22,
+  "mh_GeV": 125.1,
+  "ATLAS_mass_GeV": [
+    125.11,
+    0.11
+  ],
+  "reference_heavy_mass_GeV": 600,
+  "second_heavy_mass_GeV": 1000,
+  "reference_cosine": 0.05,
+  "Z2": 3,
+  "Z3": 2,
+  "Z7": 0,
+  "heavy_spectrum": "mH=mA=mHplus in GeV at each pole benchmark; second point holds signed Z6 fixed and uses the small-mixing branch.",
+  "example_targets": {
+    "phase_path_dim6": [
+      0,
+      2
+    ],
+    "real_path_dim6": [
+      2,
+      0
+    ]
+  },
+  "scale_budget": {
+    "Z6_abs_max": 1,
+    "rho_non_aligned_23_abs_max": 3.5449077018110318,
+    "hVV_squared_min": 0.95
+  },
+  "sources": {
+    "Higgs_basis": "https://doi.org/10.1103/PhysRevD.74.015018",
+    "EFT": "https://arxiv.org/abs/2205.01561",
+    "mass": "https://arxiv.org/abs/2308.04775",
+    "weak_inputs": "../1648/inputs.json"
+  },
+  "scope": "Real tree-level scalar potential, extra Yukawa in original texture basis at a common matching scale; ordinary mass and CKM are calibrated, not outputs. Heavy mass, orthogonal Yukawas and Z6 are independent choices. A pole means tree mass eigenstate; no loop pole or charged-scalar flavor fit."
+}

@@ -1,0 +1,105 @@
+{
+  "round": 1641,
+  "witnesses": "../1635/results.json",
+  "matrix_cfg": "../1635/inputs.json",
+  "poles": "../1633/results.json",
+  "mixing": "../1636/results.json",
+  "trajectory": "../1639/results.json",
+  "Bs_Run2": {
+    "order": [
+      "A_DG_f",
+      "A_DG_fbar",
+      "S_f",
+      "S_fbar"
+    ],
+    "central": [
+      -0.051,
+      -0.303,
+      -0.571,
+      -0.503
+    ],
+    "stat": [
+      0.134,
+      0.125,
+      0.084,
+      0.084
+    ],
+    "syst": [
+      0.058,
+      0.055,
+      0.023,
+      0.025
+    ],
+    "stat_corr": [
+      [
+        1,
+        0.501,
+        -0.108,
+        -0.036
+      ],
+      [
+        0.501,
+        1,
+        -0.056,
+        -0.067
+      ],
+      [
+        -0.108,
+        -0.056,
+        1,
+        0.006
+      ],
+      [
+        -0.036,
+        -0.067,
+        0.006,
+        1
+      ]
+    ],
+    "syst_corr": [
+      [
+        1,
+        0.878,
+        0.004,
+        -0.022
+      ],
+      [
+        0.878,
+        1,
+        -0.002,
+        -0.022
+      ],
+      [
+        0.004,
+        -0.002,
+        1,
+        0.085
+      ],
+      [
+        -0.022,
+        -0.022,
+        0.085,
+        1
+      ]
+    ]
+  },
+  "Bs_Run1plus2_Omega_deg": [
+    79,
+    11,
+    12
+  ],
+  "charged_Run3_gamma_deg": [
+    68.1,
+    6.7
+  ],
+  "mass_band_GeV": [
+    1600,
+    2600
+  ],
+  "primary": {
+    "neutral": "https://arxiv.org/html/2412.14074v4",
+    "charged": "https://arxiv.org/html/2605.03501",
+    "phase_control": "../1468/inputs.json"
+  },
+  "scope": "Flavor-specific single tree channels, |q/p|=1, measured mixing frequency, widths and timing templates, independent charged data conditional on transporting its charm and kaon calibration. The neutral signal reuses external lifetime, mixing frequency and the flavour-specific Ds-pi calibration. No multiplication of overlapping Run2 and combined data or proposals already rejected by the frequency."
+}

@@ -1,0 +1,18 @@
+{
+  "source_table": "https://arxiv.org/pdf/1802.04248#page=29",
+  "table_IV": {
+    "names": ["b/c","s/c","d/c","u/c"],
+    "means": [4.578,0.08487,0.004291,0.001955],
+    "sigmas": [0.008,0.00018,0.000039,0.000037],
+    "correlation": [[1,0.45502225,0.04855992,0.23627864],[0.45502225,1,0.43609054,0.47252309],[0.04855992,0.43609054,1,-0.32724921],[0.23627864,0.47252309,-0.32724921,1]]
+  },
+  "joint": "../1736/check.py",
+  "points": "../1736/results.json",
+  "matching": "../1734/results.json",
+  "source_weak": "../1702/inputs.json",
+  "quark_inputs": "../1386/inputs.json",
+  "reference_t_range": [-0.6931471805599453,0.6931471805599453],
+  "radii": [1,2,2.44774683068,3],
+  "B_K_CP_weak_offsets_from_independent_inverse": {"us":1.9976318359,"ub":-0.6063109364286521,"cb":1.7665216799547474},
+  "profile_rule": "Only the three negative-charge flavours, profiling out the common absolute factor and marginalizing u/c. Treat the rounded published covariance as a Gaussian working metric, without assuming an external full likelihood. Fixed central K_ds,K_bs are inherited; a single finite left-handed top-projector insertion changes all three singular values and no other freely fitted relative threshold is used."
+}

@@ -1,0 +1,43 @@
+{
+  "model": {
+    "matter": "One electromagnetically and color-vectorlike Dirac (3,1,Y=-1/3); chiral global PQ with S of charge 1, X_DL=1, X_DR=0. SM neutral under PQ.",
+    "interaction": "S Dbar_L (y D_R + b_j d_Rj), ordinary nondegenerate down Yukawa and nonzero heavy-light mixing; neutral singlet S supplies the whole anomalous row.",
+    "alternatives": "Charged colorless Dirac singlet Q=1 with PQ difference +1; renormalizable second VEV with charges S=2,T=1 and phase-lock S^dagger T^2. Ordinary electromagnetic charge conserved.",
+    "matching": "Only ordinary QCD generates the low-energy axion potential. No extra light colored degrees of freedom below matching, anomalous contact, explicit PQ breaking or independent electromagnetic axion coupling."
+  },
+  "qcd": {
+    "calibration": "Grilli di Cortona et al., arXiv:1511.02867, p.4 and eq.41",
+    "url": "https://doi.org/10.1007/JHEP01(2016)034",
+    "m_times_f_GeV2": 0.00570,
+    "m_times_f_errors_GeV2": [0.00006, 0.00004],
+    "photon_subtraction": 1.92,
+    "photon_subtraction_width": 0.04,
+    "enclosure": "Use one published width for the photon subtraction and add the two mass-parameter widths linearly. These independent endpoint choices are a sensitivity rectangle, not a joint confidence interval.",
+    "inverse_alpha_zero_rounded": 137.035999,
+    "alpha_source": "https://physics.nist.gov/cgi-bin/cuu/Value?alphinv",
+    "h_eV_second": 4.135667696923859e-15,
+    "h_source": "https://physics.nist.gov/cgi-bin/cuu/Value?hev"
+  },
+  "admx": {
+    "source": "https://doi.org/10.1103/PhysRevLett.120.151301",
+    "technical_definition": "https://doi.org/10.1103/PhysRevD.109.012009",
+    "published_frequency_MHz": [645.0, 676.0],
+    "veto_MHz": [660.16, 660.27],
+    "local_densities_GeV_cm3": {"boosted_maxwell": 0.45, "n_body": 0.63},
+    "dfs_g_gamma": 0.36,
+    "ksv_g_gamma": -0.97,
+    "confidence": 0.90,
+    "contract": "Original conclusion and Fig.4 caption. Limit in frequency bins attaining the published DFSZ line outside the RF veto. Reference g_gamma is in alpha*g_gamma/(pi*f). Numeric power ratio cited only at a common f. Tests at fixed mass use the absolute bin limit; no reconstructed per-bin likelihood."
+  },
+  "capp": {
+    "source": "https://doi.org/10.1103/PhysRevLett.130.071002",
+    "mass_window_microeV": [4.51, 4.59],
+    "example_mass_microeV": 4.55,
+    "mode_crossing_near_microeV": 4.527,
+    "excluded_step_span_kHz": 380,
+    "published_approx_limit_per_GeV": 6.2e-16,
+    "local_density_GeV_cm3": 0.45,
+    "confidence": 0.90,
+    "contract": "Boosted Maxwellian, Fig.4 and summary. The quoted coupling is approximate across the search, not a bin-specific calibration. Skip mode crossing and apply actual weaker bins pointwise."
+  }
+}

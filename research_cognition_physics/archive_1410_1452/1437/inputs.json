@@ -1,0 +1,20 @@
+{
+  "doublet_Z4_charges": [0, 1],
+  "required_H2_charges": {"mu": 2, "tau": 1},
+  "mu_mass_MeV": 105.6583755,
+  "tau_mass_MeV": 1776.91,
+  "design_A_mass_GeV": 30.0,
+  "bound_on_absolute_net_winding_fraction": 0.05,
+  "counterexample_tan_beta": 1.0,
+  "counterexample_mu_terms": [
+    {"degree": 3, "net_H2": 2, "mass_fraction": 1.0},
+    {"degree": 5, "net_H2": -2, "mass_fraction": 0.375},
+    {"degree": 5, "net_H2": 2, "mass_fraction": -0.375}
+  ],
+  "mass_sources": {
+    "mu": "https://physics.nist.gov/cgi-bin/cuu/Value?mmuc2mev",
+    "tau": "https://doi.org/10.1103/PhysRevD.90.012001"
+  },
+  "model_sources": ["https://arxiv.org/abs/0804.1753", "https://arxiv.org/abs/1506.01719"],
+  "input_scope": "Masses set a Born-level illustrative width ratio. The scalar mass and winding budgets are design inputs, not experimental measurements. The required flavor charges, CP conservation, flavor diagonality, canonical kinetic terms and matching to the on-shell vertices are additional hypotheses."
+}

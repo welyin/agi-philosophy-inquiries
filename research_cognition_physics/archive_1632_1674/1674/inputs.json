@@ -1,0 +1,24 @@
+{
+  "charged_model": "../1668/check.py",
+  "static_bridge": "../1673/results.json",
+  "charged_frame": "Frozen GJ left charged-lepton frame of 1659, assumed applicable to the low-energy weak-current frame; no running or charged-vectorlike mixing is added.",
+  "hflav": {
+    "url": "https://hflav-eos.web.cern.ch/hflav-eos/tau/end-2023/lepton-univ.html",
+    "which": "Pure leptonic Eqs. (6),(8) and Table 5, in the order g_tau/g_mu, g_mu/g_e.",
+    "ratios": [1.0016, 1.0002],
+    "uncertainties": [0.0014, 0.0011],
+    "correlation": -0.41
+  },
+  "pienu": {
+    "url": "https://doi.org/10.1103/PhysRevLett.115.071801",
+    "which": "Standalone PIENU charged-current coupling ratio g_e/g_mu.",
+    "ratio": 0.9996,
+    "uncertainty": 0.0012
+  },
+  "diagnostic": {
+    "hflav_delta_chi2": 4,
+    "pienu_marginal_widths": 2,
+    "illustrative_tL_over_g": [0, 0.025, 0.05, 0.1, 0.25]
+  },
+  "scope": "All extra neutral mass eigenstates kinematically inaccessible in pion, muon and tau decays. Tree-level Dirac active-singlet mixing after electroweak breaking, common left family couplings, massless light-limit residue. Other weak vertex operators and extra decay channels absent. Established radiative and phase-space corrections used in the published coupling ratios."
+}

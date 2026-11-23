@@ -1,0 +1,59 @@
+{
+  "previous": "../1586/results.json",
+  "gauge": "../1369/inputs.json",
+  "yukawa": "../1386/inputs.json",
+  "ATLAS": {
+    "source": "https://arxiv.org/html/2608.07332v1#S6.T8",
+    "fit": "Table 8 Scenario 2 (unified V; free invisible and undetected widths, free loop modifiers and charm)",
+    "vector": [
+      1,
+      0.05,
+      0
+    ],
+    "top": [
+      0.87,
+      0.08,
+      0.08
+    ]
+  },
+  "CMS": {
+    "source": "https://arxiv.org/html/2602.18611",
+    "fit": "section 9.3, effective ratios, independent laboratory, no invisible/off-shell data",
+    "tg": [
+      0.83,
+      0.09,
+      0.09
+    ],
+    "Zg": [
+      1.1,
+      0.08,
+      0.09
+    ]
+  },
+  "widths": 2,
+  "transfers": {
+    "z_ratio_floor": 0.98,
+    "absolute_light_vector": 0.02,
+    "absolute_light_top": 0.02,
+    "absolute_CMS_ratio": 0.02
+  },
+  "aligned_examples": {
+    "cutoffs_GeV": [
+      1000000,
+      10000000000000000
+    ],
+    "masses_GeV": [
+      400,
+      550
+    ],
+    "v_GeV": 246.22,
+    "mh_GeV": 125.2,
+    "inert_quartic": 0.3,
+    "top_effective_low": 0.967
+  },
+  "sources": {
+    "alignment": "https://doi.org/10.1103/PhysRevD.67.075019",
+    "atlas_heavy_independent": "https://arxiv.org/abs/2404.18986",
+    "input_matching": "https://arxiv.org/html/2510.01312v2"
+  }
+}

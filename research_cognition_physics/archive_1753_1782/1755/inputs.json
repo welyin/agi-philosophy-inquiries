@@ -1,0 +1,23 @@
+{
+  "color_scale_GeV": 7171.077576,
+  "MZ_GeV": 91.1876,
+  "inclusive_ub": [0.00410,0.00009,0.00022,0.00015],
+  "inclusive_cb": [0.04216,0.00051],
+  "QCDSF_s_d": [19.7,0.9],
+  "BMW_s_mud": [27.53,0.20,0.08],
+  "BMW_u_d": [0.485,0.011,0.008,0.014],
+  "strong_alternative_b_over_s_working_interval": [40,65],
+  "marginal_radii": [0,1,2],
+  "conditional_MILC_covariance": "../1738/inputs.json",
+  "inclusive_ckm_sources": ["https://arxiv.org/abs/2102.00020","https://arxiv.org/abs/2107.00604"],
+  "strong_sources": ["https://arxiv.org/abs/1508.06401","https://arxiv.org/abs/1011.2711","https://arxiv.org/abs/1604.07112","https://arxiv.org/abs/0907.2110"],
+  "conditional_MILC_scale": ["https://arxiv.org/abs/1802.04248","https://arxiv.org/pdf/1712.09262#page=17"],
+  "electroweak_matching": "../1737/results.json",
+  "matching_source": "https://arxiv.org/abs/1812.04100",
+  "holdout_Kl3": [0.22333,0.00044,0.00042],
+  "holdout_axial": [0.23135,0.00046],
+  "holdout_nuclear": [0.97359,0.00033],
+  "holdout_sources": ["https://arxiv.org/abs/1809.02827","https://arxiv.org/abs/1904.08731","https://doi.org/10.1103/pwl4-7y27"],
+  "common_model": "../1748/check.py",
+  "shooting": "Use the original signed two-row lepton matter, three-step GJ and positive CKM phase. Reset up, charm, top, g3 to their registered central values. Supply inclusive ub and cb, refit us to a single measured d/s with a residual in units of d/s, and report the other outputs. No direct kaon or nuclear measurement enters the equation."
+}

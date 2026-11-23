@@ -1,0 +1,72 @@
+{
+  "units": "GeV; ordinary electroweak hypercharge. V=−m²H†H+lambda(H†H)²; h in the one-loop proxy uses mu=h.",
+  "matching_scale": 200,
+  "reference": {
+    "gY": 0.358852,
+    "g2": 0.646832,
+    "g3": 1.15251,
+    "lambda": 0.123533,
+    "top_yukawa": 0.923777,
+    "mh": 125.25,
+    "alpha_s": 0.1179,
+    "top_mass": 172.5
+  },
+  "matching": {
+    "lambda_per_relative_GeV": 0.01682,
+    "g3_per_alpha": 3.78,
+    "top_per_relative_GeV": 0.006352
+  },
+  "marginal_width": {
+    "mh": 0.17,
+    "alpha_s": 0.0009
+  },
+  "window": [
+    10000000000,
+    12200000000000000000
+  ],
+  "terminal_mass_scales": [
+    10000000000,
+    10000000000000000,
+    2430000000000000000,
+    12200000000000000000
+  ],
+  "masina_quiros": {
+    "critical_top": 171.0588,
+    "critical_field": 3000000000000000000,
+    "barrier_field": 2000000000000000000,
+    "barrier_fourth_root": 60000000000000000,
+    "alternate_potential_mass": 171.0549
+  },
+  "iacobellis_masina_2016": {
+    "mass": 171.08,
+    "errors": [
+      0.37,
+      0.12,
+      0.32
+    ]
+  },
+  "hiller_cutoff": {
+    "quantum_boundary_top": 171.1,
+    "tree_boundary_top": 171.04
+  },
+  "cms_normalized_ttjet": {
+    "ABMP16NLO": [
+      172.93,
+      1.36
+    ],
+    "CT18NLO": [
+      172.13,
+      1.43
+    ]
+  },
+  "sources": {
+    "criticality": "https://arxiv.org/abs/hep-ph/9511371",
+    "matching": "https://arxiv.org/abs/2211.08576",
+    "double_minima": "https://arxiv.org/html/2403.02461v3",
+    "older_budget": "https://arxiv.org/pdf/1604.06046",
+    "stability_boundary": "https://arxiv.org/abs/2401.08811",
+    "mass_holdout": "https://arxiv.org/abs/2207.02270v2",
+    "gauge_invariance": "https://arxiv.org/abs/1408.0292",
+    "phase_weights": "https://doi.org/10.1103/PhysRevLett.68.1738"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "inherited": "../1381/inputs.json",
+  "KLOE": {
+    "paper": "https://arxiv.org/pdf/0802.3009#page=18",
+    "table": 7,
+    "mode": [
+      "KL_e",
+      "KL_mu",
+      "KS_e",
+      "Kcharged_e",
+      "Kcharged_mu"
+    ],
+    "product": [
+      0.2155,
+      0.2167,
+      0.2153,
+      0.2152,
+      0.2132
+    ],
+    "width": [
+      0.0007,
+      0.0009,
+      0.0014,
+      0.0013,
+      0.0015
+    ],
+    "correlation": [
+      [
+        1,
+        0.28,
+        0.16,
+        0.07,
+        0.01
+      ],
+      [
+        0.28,
+        1,
+        0.08,
+        0.01,
+        0.18
+      ],
+      [
+        0.16,
+        0.08,
+        1,
+        0.04,
+        0.01
+      ],
+      [
+        0.07,
+        0.01,
+        0.04,
+        1,
+        0.67
+      ],
+      [
+        0.01,
+        0.18,
+        0.01,
+        0.67,
+        1
+      ]
+    ],
+    "official_average": [
+      0.2157,
+      0.0006
+    ],
+    "historical_form_factor": [
+      0.9644,
+      0.0049
+    ],
+    "historical_Vud": [
+      0.97418,
+      0.00026
+    ]
+  },
+  "PIENU": {
+    "paper": "https://arxiv.org/abs/1506.05845",
+    "exp_in_units_1e_4": [
+      1.2344,
+      0.0023,
+      0.0019
+    ],
+    "same_paper_SM": [
+      1.2352,
+      0.0002
+    ]
+  },
+  "HFLAV_tau": {
+    "source": "https://hflav-eos.web.cern.ch/hflav-eos/tau/end-2023/lepton-univ.html",
+    "pure_leptonic_eq_6_effective_g_tau_over_g_mu": [
+      1.0016,
+      0.0014
+    ],
+    "identity": "tau to e width from tau lifetime and electronic branching fraction, relative to muon leptonic rate"
+  },
+  "interpretation": "Historical published corrected amplitudes, rounded KLOE covariance, separate rectangular sensitivity, no joint significance. Two benchmarks of global V-A changes are effective low-energy models."
+}

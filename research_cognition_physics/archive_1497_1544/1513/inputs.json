@@ -1,0 +1,27 @@
+{
+  "weak_scale": "../1386/inputs.json",
+  "high_scale": "../1397/inputs.json",
+  "semileptonic": "../1412/inputs.json",
+  "calibration": "Use only same-scale quark singular values, not CKM entries. Independent |Vcb| from Belle II BGL with published form factor input; linearly expanded marginal work boxes. The high table is an SM extrapolation correlated with low inputs.",
+  "widths": [
+    1,
+    2
+  ],
+  "angles": "Anchor and weak-current matching angles separately declared. Allow free positive, flavor-universal normalization in each mass sector.",
+  "finite_coefficients_squared_over_g_squared": {
+    "up": 1.2,
+    "down": 0.9,
+    "adjoint_cubic": 2.142857142857143
+  },
+  "rotation_parameters": {
+    "angle_in_transverse_plane": 0.47,
+    "relative_phase": 0.88
+  },
+  "sources": {
+    "finite": "https://arxiv.org/abs/0810.0727",
+    "finite_flavour": "https://arxiv.org/abs/2406.17702",
+    "frames": "https://arxiv.org/abs/1711.07081",
+    "yukawa": "https://arxiv.org/html/2510.01312v2",
+    "BelleII": "https://arxiv.org/abs/2310.01170"
+  }
+}

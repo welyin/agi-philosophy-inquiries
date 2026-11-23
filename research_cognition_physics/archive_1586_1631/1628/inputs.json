@@ -1,0 +1,56 @@
+{
+  "round": 1628,
+  "charged_calibration": "../1619/inputs.json",
+  "charged_prediction": "../1619/results.json",
+  "oscillation_windows": "../1625/inputs.json",
+  "source_moduli": "v_i proportional to the positive square root of charged pole masses. This uses a separately supplied equal-modulus partner direction in the right singular basis and common-scale transfer.",
+  "background": "Hermitian D, two positive outer products, at least one nonzero fixed direction. Universal and nonuniversal background tested separately.",
+  "sources": {
+    "family": "https://arxiv.org/abs/0812.2090",
+    "reactor": "https://arxiv.org/abs/2211.14988",
+    "solar": "https://doi.org/10.1038/s41586-026-10538-z",
+    "accelerator": "https://doi.org/10.1038/s41586-025-09599-3"
+  },
+  "contrast_witness": {
+    "sin2_12_13_23": [
+      0.3,
+      0.022,
+      0.5
+    ],
+    "Dirac_phase": 0,
+    "orderings": {
+      "normal": {
+        "relative_eigenvalues_eV2": [
+          0,
+          7.5e-05,
+          0.0025
+        ],
+        "relative_signs": [
+          1,
+          1,
+          1
+        ],
+        "bisection_eV2": [
+          -0.0006,
+          -0.0005
+        ]
+      },
+      "inverted": {
+        "relative_eigenvalues_eV2": [
+          0.0025,
+          0.002575,
+          0
+        ],
+        "relative_signs": [
+          1,
+          -1,
+          1
+        ],
+        "bisection_eV2": [
+          -0.0055,
+          -0.0054
+        ]
+      }
+    }
+  }
+}

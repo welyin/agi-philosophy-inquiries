@@ -1,0 +1,89 @@
+{
+  "global_forms": [
+    1,
+    2,
+    3,
+    6
+  ],
+  "weights": [
+    {
+      "label": "quark_L_up",
+      "triality": 1,
+      "k": 4
+    },
+    {
+      "label": "quark_L_down",
+      "triality": 1,
+      "k": -2
+    },
+    {
+      "label": "electron",
+      "triality": 0,
+      "k": -6
+    },
+    {
+      "label": "charged_Higgs_component",
+      "triality": 0,
+      "k": 6
+    }
+  ],
+  "positive_test": {
+    "electric_k": 4,
+    "magnetic_n": 3,
+    "worked_error_box": {
+      "q": "1/5",
+      "n": "9/10"
+    }
+  },
+  "experiments": {
+    "CMS": {
+      "doi": "https://doi.org/10.1103/PhysRevLett.134.131802",
+      "data": "https://cms-results.web.cern.ch/cms-results/public-results/publications/EXO-19-006/index.html",
+      "exposure_fb_inv": 138,
+      "sqrt_s_TeV": 13,
+      "spin": "Dirac",
+      "electric_mass_intervals_GeV": {
+        "2": [
+          50,
+          60
+        ],
+        "4": [
+          50,
+          640
+        ]
+      },
+      "interpretation": "published 95% CL, stable weak-singlet-like Dirac fermion with induced hypercharge, DY-like photon and Z exchange"
+    },
+    "MoEDAL": {
+      "doi": "https://doi.org/10.1103/PhysRevLett.134.071802",
+      "supplement": "https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.134.071802/Supplemental-material-final2.pdf",
+      "exposure_fb_inv": 6.46,
+      "sqrt_s_TeV": 13,
+      "magnetic_n": 3,
+      "spin": "1/2",
+      "table_I_mass_limits_GeV": {
+        "DY": 2370,
+        "photon_fusion": 3920
+      },
+      "interpretation": "published separate 95% CL lower mass limits in benchmark production, trapping and track acceptance; no reliable perturbative production theorem"
+    }
+  },
+  "benchmarks_GeV": {
+    "electric": 500,
+    "magnetic": 2500
+  },
+  "hidden_test": {
+    "charge": "2/3",
+    "visible_flux": 3,
+    "raw_hidden_fluxes": [
+      0,
+      2
+    ],
+    "g_hidden_over_e": "1/5"
+  },
+  "sources": {
+    "lines": "https://arxiv.org/abs/1705.01853",
+    "local_matching": "https://arxiv.org/abs/2404.04229",
+    "mixed_flux": "https://arxiv.org/abs/0902.3615"
+  }
+}

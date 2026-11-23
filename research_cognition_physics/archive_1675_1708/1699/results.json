@@ -1,0 +1,234 @@
+{
+  "soft_interface": {
+    "g1_GUT": 0.4803162184216167,
+    "g2": 0.632411617837069,
+    "gY": 0.3720513429720491,
+    "g3": 0.9248169095766278,
+    "yt": 0.7577712787486056,
+    "yb": 0.01185030643147152,
+    "lambda": 0.05448533153592359,
+    "D": 0.06729583202282555,
+    "stop_max": 0.018792101237039133,
+    "R": 63.945289780536825,
+    "tan_at_max_stop": [
+      0.39650898901325676,
+      2.522010919572283
+    ],
+    "tan_at_zero_stop": [
+      0.22965780587767634,
+      4.354304423393448
+    ],
+    "tan1_extra_beyond_max_stop": 0.03569323029888445,
+    "equal_at_soft_total_shift": -0.012744701585313344,
+    "equal_at_soft_Xt_over_M": null
+  },
+  "running_examples": {
+    "at_soft_equal_sources": {
+      "endpoint_GeV": 10000000,
+      "perturbative": true,
+      "Y": [
+        0.7015702073241353,
+        0.7167642680459105
+      ],
+      "tau_norm": 0.6971407041301939,
+      "ratio_top_bottom": 0.9788018719694298
+    },
+    "tan1": {
+      "endpoint_GeV": 10000000,
+      "perturbative": true,
+      "Y": [
+        1.1285937295848765,
+        0.014167652769411954
+      ],
+      "tau_norm": 0.013578848922570337,
+      "ratio_top_bottom": 79.65989482898092
+    },
+    "tan_at_max_stop0": {
+      "endpoint_GeV": 346795.56103053206,
+      "perturbative": false,
+      "Y": [
+        3.562262542062117,
+        0.012954454162302464
+      ]
+    },
+    "tan_at_max_stop1": {
+      "endpoint_GeV": 10000000,
+      "perturbative": true,
+      "Y": [
+        0.7534662908279124,
+        0.02660296964855901
+      ],
+      "tau_norm": 0.026047920359720693,
+      "ratio_top_bottom": 28.32263844155929
+    },
+    "tan_at_zero_stop0": {
+      "endpoint_GeV": 34064.933627163824,
+      "perturbative": false,
+      "Y": [
+        3.5732912693449403,
+        0.012219616890860988
+      ]
+    },
+    "tan_at_zero_stop1": {
+      "endpoint_GeV": 10000000,
+      "perturbative": true,
+      "Y": [
+        0.7086678960062353,
+        0.04372275503246597
+      ],
+      "tau_norm": 0.042907875852831824,
+      "ratio_top_bottom": 16.208216876544487
+    }
+  },
+  "ordinary_finite_matching": {
+    "minimum_at_equal": 0.0656078707324388,
+    "minimum_at_tan1": -0.0030568511402786695,
+    "minimum_root_low": 0.20751543773562636,
+    "minimum_root_high": 4.8189185870305895,
+    "maximum_at_equal": 0.07898891152128985,
+    "maximum_at_tan1": 0.015735250096760467,
+    "maximum_root_low": 0.39462311098212566,
+    "maximum_root_high": 2.9475584725822843
+  },
+  "residual_quartic_tests": {
+    "-0.003": [
+      0.17489722742831493,
+      5.717643525308981,
+      0.3699239506909331,
+      3.2002074979383384
+    ],
+    "0.003": [
+      0.23711547073140116,
+      4.217354510506722,
+      0.41958677176134473,
+      2.733115132496522
+    ]
+  },
+  "Descartes_root_bounds_minlow_minhigh_maxlow_maxhigh": {
+    "-0.003": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "0.0": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "0.003": [
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "GJ_common_down_projection_test": {
+    "old_input_scale_GeV": 1e+16,
+    "old_gamma_degrees": 60.19599045323669,
+    "common_Hd_projection": 0.20318666969503785,
+    "maximum_relative_change_in_normalized_charged_singular_values": 5.329070518200751e-15,
+    "new_running_Ytau_over_Yb_at_high_zero_stop": 0.9815595848735864
+  },
+  "independent_top_and_quartic_marginal_corners": [
+    {
+      "top_widths": -1.0,
+      "quartic_widths": -1.0,
+      "lambda_at_soft": 0.056171775622176734,
+      "equal_sources_extra_needed_at_zero_mixing": -0.00943527233281198
+    },
+    {
+      "top_widths": -1.0,
+      "quartic_widths": 1.0,
+      "lambda_at_soft": 0.05726351219329229,
+      "equal_sources_extra_needed_at_zero_mixing": -0.008343535761696427
+    },
+    {
+      "top_widths": 1.0,
+      "quartic_widths": -1.0,
+      "lambda_at_soft": 0.05166495915821522,
+      "equal_sources_extra_needed_at_zero_mixing": -0.013943725116940593
+    },
+    {
+      "top_widths": 1.0,
+      "quartic_widths": 1.0,
+      "lambda_at_soft": 0.052758614627052725,
+      "equal_sources_extra_needed_at_zero_mixing": -0.01285006964810309
+    }
+  ],
+  "analytic_branch_tests": {
+    "all_tan_below": 0.5,
+    "threshold_crossed_by_GeV": 2910427.443123693,
+    "max_gauge_drag": 6.138932774874899,
+    "all_high_tan_in": [
+      2.0,
+      6.0
+    ],
+    "positive_flow_max_top_bottom_tau_neutrino": [
+      1.1815861115300772,
+      0.07658185145731335,
+      0.06272504269312898,
+      0.21729378518825765
+    ],
+    "UV_top_over_bottom_lower": 10.562681676876993
+  },
+  "without_neutral": {
+    "g1_GUT": 0.4803162184216167,
+    "g2": 0.632411617837069,
+    "gY": 0.3720513429720491,
+    "g3": 0.9248169095766278,
+    "yt": 0.7575797525743635,
+    "yb": 0.011847361229045197,
+    "lambda": 0.054443198905614346,
+    "D": 0.06729583202282555,
+    "stop_max": 0.018773109675592807,
+    "R": 63.94502015495804,
+    "tan_at_max_stop": [
+      0.39670833402155753,
+      2.5207436149946347
+    ],
+    "tan_at_zero_stop": [
+      0.23007729919849415,
+      4.346365345401903
+    ],
+    "tan1_extra_beyond_max_stop": 0.03567008923002154,
+    "equal_at_soft_total_shift": -0.012786833661007732,
+    "equal_at_soft_Xt_over_M": null
+  },
+  "SM_only_below_soft": {
+    "g1_GUT": 0.47674239237559235,
+    "g2": 0.6210886023728335,
+    "gY": 0.3692830692203502,
+    "g3": 0.9150553204006028,
+    "yt": 0.7593277524009494,
+    "yb": 0.011873499888398625,
+    "lambda": 0.05418824898518702,
+    "D": 0.0652651296512802,
+    "stop_max": 0.018946974628695552,
+    "R": 63.95146835709953,
+    "tan_at_max_stop": [
+      0.39096368003934834,
+      2.557782349243683
+    ],
+    "tan_at_zero_stop": [
+      0.21555734998364692,
+      4.639136638467044
+    ],
+    "tan1_extra_beyond_max_stop": 0.035241274356491464,
+    "equal_at_soft_total_shift": -0.01101307961971889,
+    "equal_at_soft_Xt_over_M": null
+  },
+  "delayed_neutral_SUSY_at_equal": {
+    "endpoint_GeV": 10000000,
+    "perturbative": true,
+    "Y": [
+      0.7015662411175547,
+      0.7167640877902738
+    ],
+    "tau_norm": 0.69714001103344,
+    "ratio_top_bottom": 0.9787965846341816
+  },
+  "max_endpoint_quartic_change_under_two_tau_permutations": 5.2135830375110714e-11,
+  "RK4_halfstep_lambda_error": 8.438638676722121e-12
+}

@@ -1,0 +1,51 @@
+{
+  "baseline": "../1369/inputs.json",
+  "scope": "MS-bar SM one-loop with one light Higgs, ordinary Y, matching to PS with canonical generator normalization, no split thresholds unless registered",
+  "matching_window_GeV": [
+    1000,
+    1000000
+  ],
+  "matching_defect_abs": 0.1,
+  "pole_squared_rel_error": 0.01,
+  "independent_width_relative_error": 0.05,
+  "table2_comparison": {
+    "1000": {
+      "g1": [
+        0.467453,
+        0.000027
+      ],
+      "g3": [
+        1.0583,
+        0.003
+      ]
+    },
+    "10000": {
+      "g1": [
+        0.473681,
+        0.000028
+      ],
+      "g3": [
+        0.9547,
+        0.0022
+      ]
+    }
+  },
+  "benchmark": {
+    "matching_scale_GeV": 10000,
+    "rho": 0.36,
+    "f_GeV": 5000,
+    "v_EW_GeV": 246.22,
+    "y_singular": [
+      0.15,
+      0.3,
+      0.5
+    ]
+  },
+  "sources": {
+    "original_PS": "https://doi.org/10.1103/PhysRevD.10.275",
+    "fundamental": "https://doi.org/10.1103/PhysRevD.107.035019",
+    "tensor_adjoint": "https://doi.org/10.1103/PhysRevD.104.075008",
+    "electroweak_and_QCD": "https://arxiv.org/html/2510.01312v2",
+    "doubly_charged_conventions": "https://arxiv.org/abs/0805.3536"
+  }
+}

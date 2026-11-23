@@ -1,0 +1,27 @@
+{
+  "flavor_MZ": "../1386/inputs.json",
+  "flavor_1e16": "../1397/inputs.json",
+  "CMS_Bd_rate_upper_95": 1.9e-10,
+  "LHCb_FH_low_bin": {"stat_68_profile_other":[0.0,0.06], "systematic":0.02},
+  "LHCb_K_differential_per_GeV2": [2.42e-8,0.07e-8,0.12e-8],
+  "q2_bin_GeV2": [1.1,6.0],
+  "HPQCD_table_V": {"a0":[0.2545,0.0090], "a1":[0.210,0.076], "a2":[0.02,0.17], "L":[1.304,0.010], "pole_mass_GeV":[5.729495,0.000085], "B_average_GeV":5.2795, "K_average_GeV":0.4956},
+  "kinematics_GeV":{"Bplus":5.27934, "Bd":5.27965, "Kplus":0.493677, "mu":0.1056583755},
+  "common_low_scale_mass_work_GeV":{"mb":[4.05,4.35], "ms":[0.070,0.095], "md":[0.003,0.006]},
+  "work_fBd_floor_GeV":0.186,
+  "work_tau_Bd_floor_ps":1.51,
+  "work_tau_Bplus_ceiling_ps":1.66,
+  "hbar_GeV_ps":6.582119569e-13,
+  "work_CMS_efficiency_floor":0.90,
+  "work_cross_amplitude_transfer_upper":1.05,
+  "integration_cells":1024,
+  "sources":{
+    "CMS_Bd":"https://cms-results.web.cern.ch/cms-results/public-results/publications/BPH-21-006/index.html",
+    "LHCb_angular_table1":"https://arxiv.org/abs/1403.8045",
+    "LHCb_rate_table4":"https://arxiv.org/abs/1403.8044",
+    "HPQCD_eq25_tableV":"https://arxiv.org/abs/2207.12468",
+    "fBd":"https://arxiv.org/abs/1712.09262",
+    "later_Bd_evidence":"https://arxiv.org/abs/2611.00230",
+    "lifetimes":"https://arxiv.org/abs/1402.2554",
+    "quarks_and_matching":"https://arxiv.org/abs/2510.01312"}
+}

@@ -1,0 +1,50 @@
+{
+  "W_ratio": {
+    "muon_over_e": {
+      "value": 0.9995,
+      "work_halfwidth_per_unit": 0.0045,
+      "source": "https://arxiv.org/abs/2403.02133",
+      "shared_calibration": "uses the Z mu/e branching ratio from LEP/SLD"
+    },
+    "tau_over_e": {
+      "value": 0.975,
+      "stat": 0.012,
+      "syst": 0.02,
+      "source": "https://arxiv.org/abs/2412.11989"
+    },
+    "width_multiplicity": 2,
+    "relative_rate_to_gram": [
+      0.998,
+      1.002
+    ],
+    "charged_normalization": "set G_ee=1 by the measured electronic charged coupling; a common rank normalization remains a separate physical input"
+  },
+  "Z": {
+    "branch_limit_em": 2.62e-7,
+    "branch_limit_et": 0.0000045,
+    "branch_limit_mt": 0.0000056,
+    "sources": [
+      "https://arxiv.org/abs/2204.10783",
+      "https://arxiv.org/abs/2105.12491",
+      "https://arxiv.org/abs/hep-ex/0509008"
+    ],
+    "template": "e mu inclusive two charges; e tau/mu tau Table 3, Run 2 combined pure-left tau. Three separate 95% CL marginal bounds.",
+    "Gmu": 0.000011663787,
+    "min_mZ_GeV": 91.18,
+    "max_width_GeV": 2.51,
+    "min_rate_response": 0.98,
+    "matching": "off-diagonal physical left Z vertex is -mZ sqrt(sqrt(2) GF) Gij, no independent cancelling amplitude; known kinematics, radiative and efficiency corrections together retain registered rate fraction"
+  },
+  "test": {
+    "delta": 0.001,
+    "pulses_N": 500,
+    "hidden_loss": 0.01
+  },
+  "history": [
+    "1348",
+    "1381",
+    "1422",
+    "1466",
+    "1469"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "round": 1618,
+  "weak": "../1614/inputs.json",
+  "yukawa": "../1386/inputs.json",
+  "marginal_widths": 2,
+  "kinematics_GeV": {
+    "h_center": 125.04,
+    "h_sigma": 0.12,
+    "top": [
+      170,
+      175
+    ],
+    "charm_upper": 1.8,
+    "b_plus_s_upper": 5.5,
+    "W": [
+      80,
+      81
+    ]
+  },
+  "v_GeV": 246.22,
+  "GF_lower_GeV_inverse2": 0.0000116637,
+  "h_reference_width_GeV": 0.0041,
+  "ATLAS_VBF_WW_pb": {
+    "value": 0.75,
+    "lower_error": 0.16,
+    "upper_error": 0.19,
+    "SM": 0.81,
+    "SM_error": 0.02
+  },
+  "CMS_top_same_sign": {
+    "B_ch_upper": 0.00043,
+    "B_uh_upper": 0.00072,
+    "top_width_upper_GeV": 2.5
+  },
+  "direct_h_lineshape_GeV": 0.33,
+  "transfer": {
+    "tree_FCNC_width_min": 0.8,
+    "tree_Wb_width_min": 0.8,
+    "VBF_WW_numerator_and_acceptance_max": 1.25,
+    "top_search_response_min_excluding_h_dilution": 0.5
+  },
+  "sources": {
+    "ATLAS_VBF": "https://arxiv.org/abs/2207.00338",
+    "CMS_tHq": "https://arxiv.org/pdf/2407.15172#page=13",
+    "CMS_reference_width": "https://arxiv.org/abs/2409.13663",
+    "CMS_direct_top_width": "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/TOP-16-019/index.html",
+    "muon_lifetime": "https://arxiv.org/abs/1010.0991",
+    "M_W": "https://arxiv.org/abs/2403.15085",
+    "running_masses": "https://arxiv.org/html/2510.01312v2",
+    "higgs_dependent_yukawas": "https://arxiv.org/abs/0804.1753"
+  },
+  "scope": "Canonical single Higgs radial mode, analytic fixed-basis mass matrices, no independent derivative currents. Width transfer and equivalent signal response are conditional budgets rather than measurements; Wb/top-width identification throughout kinetic interval also requires transport. Use actual total Higgs width consistently in both collider processes. Separate published bounds and marginal rectangles, no joint CL."
+}

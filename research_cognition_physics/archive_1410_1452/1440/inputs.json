@@ -1,0 +1,29 @@
+{
+  "low": "../1386/inputs.json",
+  "high": "../1397/inputs.json",
+  "scales": [
+    "MZ",
+    "1e16"
+  ],
+  "eta_q": [
+    22.1,
+    0.7
+  ],
+  "ms_over_average": [
+    27.53,
+    0.2,
+    0.08
+  ],
+  "QCD_to_MZ_relative_matching": [
+    0.98,
+    1.02
+  ],
+  "quark_sign_branch": "positive masses and m_d>m_u selected for the eta isospin application",
+  "sources": {
+    "geometric_candidate": "https://arxiv.org/pdf/1007.3810#page=9",
+    "compiled_threshold_and_running": "https://arxiv.org/html/2510.01312v2",
+    "BMW_pure_isospin": "https://arxiv.org/pdf/1011.2711#page=36",
+    "eta_q_dispersive": "https://arxiv.org/pdf/1807.11937#page=44"
+  },
+  "inputs_role": "All CKM data enter. The u mass is excluded from the inverse. eta alternative discards both d and u table entries. Only the pure-QCD BMW m_s/mud result is used, not their individually split up/down masses. The eta extraction needs its dispersive and chiral normalization and electromagnetic subtraction. R and S matching budgets separately transfer both low-QCD ratios to MZ; no statistically independent high-scale point."
+}

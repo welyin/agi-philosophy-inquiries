@@ -1,0 +1,64 @@
+{
+  "muon_mass_GeV": 0.1056583755,
+  "v_GeV": 246.22,
+  "scale_in_a_mu": 1e-11,
+  "experiment_world": [
+    116592071.5,
+    14.5
+  ],
+  "WP25_theory": [
+    116592033,
+    62
+  ],
+  "WP25_difference_as_published": [
+    38,
+    63
+  ],
+  "WP20_theory": [
+    116591810,
+    43
+  ],
+  "widths": 2,
+  "relative_response_cases": [
+    0,
+    0.2
+  ],
+  "bounded_ratio_example": 2,
+  "benchmarks": [
+    {
+      "label": "positive-or-negative, common near-TeV spectrum",
+      "masses_GeV": [
+        1300,
+        1100,
+        1500
+      ],
+      "sin_2theta": 0.3
+    },
+    {
+      "label": "both signs in WP25 near-degenerate range",
+      "masses_GeV": [
+        3000,
+        2700,
+        3300
+      ],
+      "sin_2theta": 0.3
+    },
+    {
+      "label": "small scalar/fermion mass ratios",
+      "masses_GeV": [
+        5000,
+        50,
+        100
+      ],
+      "sin_2theta": 0.8
+    }
+  ],
+  "sources": {
+    "mass_and_dipole": "https://arxiv.org/pdf/2103.13401#page=4",
+    "experiment": "https://muon-g-2.fnal.gov/result2025.pdf",
+    "WP25": "https://muon-gm2-theory.illinois.edu/white-paper-25/",
+    "WP20": "https://arxiv.org/abs/2006.04822",
+    "muon_mass": "https://arxiv.org/html/2510.01312v2"
+  },
+  "scope": "one internal chirality flip, one mixed pair, real muon mass basis; all masses well above muon; ring minus theory in units 1e-11; alternative theories reported separately"
+}

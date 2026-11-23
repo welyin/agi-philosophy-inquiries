@@ -1,0 +1,76 @@
+{
+  "measurement": {
+    "publication": "https://arxiv.org/pdf/1304.7498#page=13",
+    "official": "https://cms-results.web.cern.ch/cms-results/public-results/publications/QCD-11-003/",
+    "luminosity_fb_inverse": 5,
+    "collision_TeV": 7,
+    "jet_algorithm": "anti-kt R=0.7, pT>150 GeV, abs(y)<2.5; Q=(pT1+pT2)/2",
+    "profile_table3": {
+      "Q_GeV": [
+        474,
+        664,
+        896
+      ],
+      "ranges_GeV": [
+        [
+          420,
+          600
+        ],
+        [
+          600,
+          800
+        ],
+        [
+          800,
+          1390
+        ]
+      ],
+      "alpha_s": [
+        0.0936,
+        0.0894,
+        0.0889
+      ],
+      "symmetric_total": [
+        0.0041,
+        0.0031,
+        0.0034
+      ],
+      "sample_count": [
+        6,
+        5,
+        10
+      ],
+      "interpretation": "Three separately fitted alpha_s(MZ) evolved back by three-loop NNPDF2.1. Experimental uncertainties correlated. Total marginal widths form no joint coverage statement."
+    },
+    "raw": {
+      "table": "https://doi.org/10.17182/hepdata.62093.v1/t1",
+      "statistical_correlation_for_unfolded_jet_bins": "https://doi.org/10.17182/hepdata.62093.v1/r2",
+      "JES_percent": 1.245,
+      "JES_table": "https://doi.org/10.17182/hepdata.62093.v1/t2",
+      "unfolding_percent": 0.641,
+      "unfolding_table": "https://doi.org/10.17182/hepdata.62093.v1/t3",
+      "trend": "First rises, plateau at Q 600--1000 GeV, then decreases (CMS Sec.4); no per-bin ordinates read from a graph."
+    }
+  },
+  "theory": {
+    "baseline_active_Dirac_triplets": 6,
+    "new_Dirac_triplets": 2,
+    "split_pair_GeV": [
+      500,
+      648
+    ],
+    "mass_cases_GeV": [
+      300,
+      600,
+      664,
+      1000
+    ],
+    "higgs_mass_GeV": 125.11
+  },
+  "sources": {
+    "historical_R32_reanalysis": "https://arxiv.org/abs/1403.7411",
+    "ATLAS_TEEC": "https://arxiv.org/abs/2301.09351",
+    "TEEC_model_reanalysis": "https://arxiv.org/abs/2408.15799",
+    "low_energy_theorem": "https://arxiv.org/abs/hep-ph/9505225"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "moments": {
+    "light_quark_masses_at_threshold_GeV": [
+      [
+        0.0009785688631,
+        0.4948446787,
+        138.7473749
+      ],
+      [
+        0.002168139243,
+        0.04271016467,
+        2.230387981
+      ]
+    ],
+    "floor_rows": {
+      "300": {
+        "T2_min": 19.72047434,
+        "T4_min": 54.10389049,
+        "abs_box_term_in_dlambda_dlogmu_min": 0.685233778
+      },
+      "1700": {
+        "T2_min": 573.955356,
+        "T4_min": 54541.32926,
+        "abs_box_term_in_dlambda_dlogmu_min": 690.7740047
+      },
+      "7171.077576": {
+        "T2_min": 10180.89526,
+        "T4_min": 17268639.0,
+        "abs_box_term_in_dlambda_dlogmu_min": 218709.868
+      }
+    }
+  },
+  "bounded_full_Y": [
+    {
+      "Q_GeV": 1500,
+      "E_GeV": 650,
+      "extra_singular_strength_GeV": 79.09242099,
+      "relative_rate_one_quark_sector": 0.07687477016,
+      "relative_rate_both_sectors": 0.1537495403
+    },
+    {
+      "Q_GeV": 3000,
+      "E_GeV": 900,
+      "extra_singular_strength_GeV": 153.9020727,
+      "relative_rate_one_quark_sector": 1.200230688,
+      "relative_rate_both_sectors": 2.400461376
+    },
+    {
+      "Q_GeV": 5000,
+      "E_GeV": 1300,
+      "extra_singular_strength_GeV": 203.1948853,
+      "relative_rate_one_quark_sector": 2.546587543,
+      "relative_rate_both_sectors": 5.093175087
+    },
+    {
+      "Q_GeV": 10000,
+      "E_GeV": 2000,
+      "extra_singular_strength_GeV": 238.4356321,
+      "relative_rate_one_quark_sector": 4.331786788,
+      "relative_rate_both_sectors": 8.663573577
+    }
+  ],
+  "unbounded_full_Y_counterexamples": [
+    {
+      "k": 0.02,
+      "bare_common_doublet_mass_GeV": 375300.0,
+      "masses_GeV": [
+        300.0,
+        3434.250393,
+        754068.7496
+      ],
+      "protected_budget_GeV": 332.72962,
+      "full_budget_GeV": 382500.0588,
+      "analytic_light_Higgs_coupling": 0,
+      "analytic_extra_tree_scalar_rate_at_Q": 0
+    },
+    {
+      "k": 0.008,
+      "bare_common_doublet_mass_GeV": 2344050.0,
+      "masses_GeV": [
+        300.0,
+        9057.45007,
+        4697193.75
+      ],
+      "protected_budget_GeV": 334.3373147,
+      "full_budget_GeV": 2362500.01,
+      "analytic_light_Higgs_coupling": 0,
+      "analytic_extra_tree_scalar_rate_at_Q": 0
+    },
+    {
+      "k": 0.002,
+      "bare_common_doublet_mass_GeV": 37500300.0,
+      "masses_GeV": [
+        300.0,
+        37181.55,
+        75037818.75
+      ],
+      "protected_budget_GeV": 335.1418953,
+      "full_budget_GeV": 37575000.0,
+      "analytic_light_Higgs_coupling": 0,
+      "analytic_extra_tree_scalar_rate_at_Q": 0
+    }
+  ],
+  "random_tests": {
+    "cases": 120,
+    "nonzero_bounds": 120,
+    "two_extra_directions_with_positive_bound": 60
+  }
+}

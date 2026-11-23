@@ -1,0 +1,87 @@
+{
+  "mass_and_charged_current": "../1386/inputs.json",
+  "epsilon": 0.016666666666666666,
+  "v_GeV": 246.22,
+  "left_exponents": [
+    1,
+    1,
+    0
+  ],
+  "right_up": [
+    2,
+    0,
+    0
+  ],
+  "right_down_and_example_leptons": [
+    2,
+    1,
+    1
+  ],
+  "mass_fit_basis_s12_s13_s23_phase": {
+    "up_left": [
+      0.7722320644308163,
+      0.027025476579818353,
+      -0.025648793474940066,
+      2.931246646464162
+    ],
+    "up_right": [
+      0.0003907214008177107,
+      0.0003063352523430223,
+      0.30166014874029967,
+      -1.7992227132831786
+    ],
+    "down_right": [
+      -0.047640543353943014,
+      -0.017971451963126918,
+      0.78272564773943,
+      1.162482140559555
+    ],
+    "leptons_left": [
+      0.65,
+      0.022,
+      -0.025,
+      1.1
+    ],
+    "leptons_right": [
+      -0.024,
+      -0.013,
+      0.65,
+      1.5
+    ]
+  },
+  "data": "ATLAS mH=125.09 GeV at 13 TeV, 36.1-79.8 fb^-1; simultaneous floating cross-section ratios and decay ratios, Table 7. Measured and SM marginal uncertainties in original printed units. Deliberately chosen fit with tabulated direct ratios.",
+  "atlas_table7": {
+    "bb_ZZ": {
+      "observed": [
+        20.5,
+        5.9,
+        8.4
+      ],
+      "SM": [
+        22,
+        0.51
+      ]
+    },
+    "tautau_ZZ": {
+      "observed": [
+        2.04,
+        0.52,
+        0.62
+      ],
+      "SM": [
+        2.369,
+        0.017
+      ]
+    }
+  },
+  "rate_transfer_window": [
+    0.9,
+    1.1
+  ],
+  "sources": {
+    "ATLAS": "https://arxiv.org/pdf/1909.02845#page=27",
+    "GL": "https://arxiv.org/abs/0804.1753",
+    "Yukawas": "https://arxiv.org/html/2510.01312v2"
+  },
+  "scope": "Single-insertion power for each matrix entry, additive row/column exponents, fixed coefficients, canonical kinetic terms, CP-even physical Higgs radial projection. Equality of the listed weak mass basis data is only an illustrative construction, not a prediction for their values. Model-dependent 10% rate-transfer budget for EW matching and experimental templates; not an experimental error."
+}

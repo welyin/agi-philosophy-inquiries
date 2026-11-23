@@ -1,0 +1,40 @@
+{
+  "mass_input": "../1373/inputs.json",
+  "on_shell_h_GeV": 125,
+  "atlas_four_leptons": {
+    "source": "https://arxiv.org/pdf/2004.03447#page=36",
+    "dataset": "13 TeV 139/fb, production mode stage, |y_H|<2.5, Table 8; errors [stat,experimental,theory]",
+    "gg_plus_bb": {
+      "mu": 0.96,
+      "width_plus": [
+        0.1,
+        0.03,
+        0.03
+      ]
+    },
+    "vbf": {
+      "mu": 1.21,
+      "width_minus": [
+        0.44,
+        0.08,
+        0.05
+      ]
+    },
+    "central_normalization": {
+      "inclusive_bbh_pb": 0.49,
+      "br_zz": 0.0262,
+      "stage_gg_plus_bb_times_br_pb": 1.17
+    }
+  },
+  "sequential_heavy_tests_GeV": [
+    100,
+    250,
+    500
+  ],
+  "synthetic_septet_fraction": 0.12,
+  "invisible_z_reference": {
+    "source": "https://arxiv.org/abs/1912.02067",
+    "effective_species": 2.9963,
+    "standard_error": 0.0074
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "primary": "https://arxiv.org/html/2510.01312v2",
+  "selection": "Eq. 4 and Table 2 of version 2, SM MS-bar using 2024 PDG inputs. Intermediate rows 100 TeV, 10^7 and 10^9 GeV; last row 10^16 GeV. Absolute dimensionless Yukawas and published marginal half widths. One- and two-width rectangles; no joint confidence assigned.",
+  "order": ["d", "s", "b", "e", "mu", "tau"],
+  "MZ": "Reuse ../1386/inputs.json, yukawa.down and yukawa.charged_leptons",
+  "high_down_check": "Reuse ../1397/inputs.json, high_scale.down",
+  "scales": {
+    "1e5": [[1.12e-5,0.02e-5],[2.22e-4,0.03e-4],[1.130e-2,0.008e-2],[2.8637e-6,0.0024e-6],[6.0327e-4,0.0050e-4],[1.0248e-2,0.0008e-2]],
+    "1e7": [[0.97e-5,0.01e-5],[1.93e-4,0.03e-4],[0.961e-2,0.008e-2],[2.8681e-6,0.0039e-6],[6.0421e-4,0.0083e-4],[1.0264e-2,0.0014e-2]],
+    "1e9": [[0.87e-5,0.01e-5],[1.72e-4,0.02e-4],[0.844e-2,0.007e-2],[2.8508e-6,0.0054e-6],[6.0056e-4,0.0113e-4],[1.0201e-2,0.0019e-2]],
+    "1e16": [[0.65e-5,0.01e-5],[1.29e-4,0.02e-4],[0.606e-2,0.006e-2],[2.6935e-6,0.0091e-6],[5.6745e-4,0.0192e-4],[0.9639e-2,0.0033e-2]]
+  },
+  "quantity": "R=prod(y_down)/prod(y_charged_lepton), so k_down/k_lepton=R^(1/3) for 3 generations. If equal couplings are independently imposed, leave out the tau Yukawa using only the d,s,b,e,mu box. High-scale entries are linked running outputs.",
+  "models": "Full nonsingular square matrices on common, calibrated input and output spaces; independent unitary cores and positive definite factors. In the spectra-only witness take k_e=1 and k_d=R^(1/3). Check actual contraction norms rather than assuming them. Competing fixed-contraction data D=d I3, E=diag(1,1,d^3) and unit-eigenvalue Jordan block illustrating the complete-matrix criterion.",
+  "count_new_axioms": 0
+}

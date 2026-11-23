@@ -1,0 +1,88 @@
+{
+  "charged_tau_control": {
+    "branch_tau_1e4": [
+      1.24,
+      0.41,
+      0.19
+    ],
+    "f_Bplus_GeV": [
+      0.1894,
+      0.0014
+    ],
+    "tau_Bplus_ps": [
+      1.639,
+      0.009,
+      0.009
+    ],
+    "mass_Bplus_GeV": [
+      5.27938,
+      0.00011,
+      0.00033
+    ],
+    "mass_tau_GeV_window": [
+      1.776,
+      1.778
+    ],
+    "lifetime_source": "https://arxiv.org/abs/1012.3138",
+    "f_source": "https://arxiv.org/abs/1712.09262",
+    "branch_source": "https://arxiv.org/abs/2502.04885",
+    "mass_source": "https://cds.cern.ch/record/1409179/files/plb.708.241.pdf",
+    "fermi_source": "../1423/inputs.json",
+    "hbar_source": "../1407/inputs.json"
+  },
+  "matching": "single left-handed U1 with coupling g X_mu (bar Q_L gamma^mu L_L); lambda=g^2 v^2/(2 M^2); three light neutrinos, common SM normalization from pure muon decay",
+  "down_b_tag": "../1433/independent_results.json",
+  "ckm_example": "../1386/inputs.json",
+  "v_GeV": 246.22,
+  "q2_cut_GeV2": 16,
+  "masses_GeV": [
+    0.000510999,
+    0.10565838,
+    1.77686
+  ],
+  "B0_lifetime_ps": [
+    1.499,
+    0.013,
+    0.008
+  ],
+  "HPQCD_partial_massless_per_ps": [
+    2.07,
+    0.57
+  ],
+  "branch_e_high_bins_1e4": [
+    [
+      0.18,
+      0.024,
+      0.022
+    ],
+    [
+      0.2,
+      0.024,
+      0.074
+    ]
+  ],
+  "branch_mu_high_bins_1e4": [
+    [
+      0.194,
+      0.021,
+      0.019
+    ],
+    [
+      0.22,
+      0.023,
+      0.045
+    ]
+  ],
+  "branch_tau_full_upper_90": 0.00025,
+  "min_relative_rate_response": 0.98,
+  "phase_example_lambda": 0.005,
+  "sources": {
+    "direct_separate_light_bins": "https://arxiv.org/pdf/2210.04224#page=14",
+    "tau_count": "https://arxiv.org/abs/1509.06521",
+    "lattice_erratum": "https://doi.org/10.1103/PhysRevD.75.119906",
+    "lattice_corrected_numbers": "https://arxiv.org/pdf/hep-lat/0601021#page=14",
+    "B_lifetime": "https://doi.org/10.1103/PhysRevD.107.L091102",
+    "U1_EFT": "https://doi.org/10.1103/PhysRevD.107.035019"
+  },
+  "scope": "Belle II light inputs individually from 2022 preliminary.Table III gives single-flavour marginal rates. Use model-conditional tau 90% upper, marginal working boxes, calibrated helicity and efficiency, overall relative rate lower response 98% in each channel. No combined confidence asserted. Quark and lepton mixing input only used in a counterexample, not to obtain bound."
+}

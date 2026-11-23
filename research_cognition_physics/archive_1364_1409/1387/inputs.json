@@ -1,0 +1,12 @@
+{
+  "charged": "../1381/inputs.json",
+  "row_and_projection": "../1385/independent_results.json",
+  "row_boxes": "../1383/results.json",
+  "prior_neutral_targets": "../1385/results.json",
+  "B_rare": {"central": 9.6e-11, "minus": 1.8e-11, "plus": 1.9e-11, "sample":"2016-2024 NA62 combined", "source":"https://arxiv.org/abs/2607.16413"},
+  "B_e3": {"central": 0.04965, "stat": 0.00038, "sys": 0.00037, "sample":"KLOE charge-averaged inclusive Ke3, matched to K+ assuming no relevant CP difference", "source":"https://arxiv.org/abs/0712.3841"},
+  "r_conversion": {"central": 0.901, "sensitivity": [0.8, 1.2], "source":"https://arxiv.org/pdf/hep-ph/9901288#page=7", "range_role":"Declared broad matching range, not measured uncertainty. Common charged and rare normalization for local left vector amplitudes."},
+  "other_amplitude": {"SM_rate_anchor": 8.4e-11, "SM_width": 1e-11, "source":"https://arxiv.org/pdf/1503.02693#page=9", "role":"Only an independent illustrative size cap on ALL contributions other than the tested tree source in a matched extension. Must rederive if CKM, loops or short-distance coefficients change."},
+  "working_ranges":"Use two quoted widths for the numerical rare-rate upper/lower edge. Add both KLOE quoted widths linearly before stretching and use earlier 1381 |Vus| product/form ranges. Conservative rectangles allow correlation; no likelihood or joint confidence label. Compare against historical 1383 one-width charged-current box for a positive deficit.",
+  "neutrinos":"Three active light neutrinos, universal left Z coupling, invisible final mass negligible, common vector distributions and corrected acceptances. Orthogonal species summed as probabilities."
+}

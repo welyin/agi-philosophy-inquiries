@@ -1,0 +1,23 @@
+{
+  "inherited": {
+    "rare": "../1406/inputs.json",
+    "masses": "../1404/inputs.json",
+    "kinematics": "../1407/inputs.json"
+  },
+  "HPQCD_tableI_eq15": {
+    "lambda_ref": 0.04185, "Xt_ref": 1.469, "alpha_inverse_ref": 127.952, "sine_squared_ref": 0.23121,
+    "hadronic_rate_width": 0.06,
+    "interpretation": "Remove the exact central reference Wilson coefficient. The 6% working width of the integrated hadronic rate includes the approximately 5% form-factor uncertainty and charged lifetime; the removed CKM and loop errors do not re-enter.",
+    "source": "https://arxiv.org/pdf/2207.13371"
+  },
+  "fBs_GeV": [0.2307,0.0008,0.0010,0.0002],
+  "f_source": "https://arxiv.org/abs/1712.09262",
+  "mu_rate_transfer_width": 0.02,
+  "run3_working_light_response": 0.78,
+  "run3_scope": "LHCb 2024-25 sample separately refitted at A_DG=+1,0,-1. The 0.78 minimum of the full prompt-to-selected light/heavy weight over the rate box is a transfer assumption, not an exact likelihood or a measurement for the Run 1-3 combination.",
+  "mu_rate_transfer_role": "Fixed multiplicative rate budget for residual local matching/photon convention, not a bound on arbitrary nonlocal amplitudes. Kept at 2% at both experimental widths.",
+  "applications": ["https://arxiv.org/abs/1409.4557","https://arxiv.org/abs/1211.1896","https://arxiv.org/abs/1708.09152"],
+  "experimental_units": "Absolute branching fractions, with fixed Belle II display conversion 4.97e-6 per unit signal strength.",
+  "experiment_links": ["https://arxiv.org/abs/2311.14647","https://arxiv.org/abs/2212.10311","https://arxiv.org/abs/2611.00230v2"],
+  "treatment": "Real positive ratio k required incl common phase; input widths are marginal working rectangles, without confidence interpretation. Positive scalar rate allowed, no unbounded coherent pseudoscalar or extra invisible source."
+}

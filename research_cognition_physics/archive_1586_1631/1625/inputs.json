@@ -1,0 +1,49 @@
+{
+  "round": 1625,
+  "weak_inputs": "../1386/inputs.json",
+  "reactor_inputs": "../1484/inputs.json",
+  "family_inputs": "../1619/inputs.json",
+  "family_output": "../1619/results.json",
+  "box": {
+    "sin2_theta12": [
+      0.25,
+      0.37
+    ],
+    "sin2_theta13": [
+      0.018,
+      0.026
+    ],
+    "sin2_theta23": [
+      0.36,
+      0.66
+    ],
+    "solar_over_abs31": [
+      0.024,
+      0.036
+    ],
+    "abs31_eV2": [
+      0.0022,
+      0.0029
+    ]
+  },
+  "T2K_NOvA_marginal": {
+    "sin2_theta23": 0.56,
+    "lower_error": 0.05,
+    "upper_error": 0.03,
+    "source": "https://doi.org/10.1038/s41586-025-09599-3"
+  },
+  "centers": {
+    "abs31_eV2": 0.0025,
+    "solar_gap_eV2": 0.000075,
+    "lightest_eV": 0.01
+  },
+  "sources": {
+    "daya_bay": "https://arxiv.org/abs/2211.14988",
+    "JUNO_NO": "https://arxiv.org/html/2609.37895v1",
+    "T2K_disappearance": "https://arxiv.org/pdf/1502.01550#page=80",
+    "family": "https://arxiv.org/abs/0812.2090",
+    "Jarlskog": "https://doi.org/10.1103/PhysRevLett.55.1039",
+    "more_spurions": "https://arxiv.org/abs/1510.05370"
+  },
+  "scope": "Matched vacuum oscillation tensor, three active states, ordinary unitary weak currents, shared charged-lepton basis; additive Hermitian rank-one term and any monotone diagonal. Free diagonal offsets are allowed. The broad comparison box is not a joint confidence set."
+}

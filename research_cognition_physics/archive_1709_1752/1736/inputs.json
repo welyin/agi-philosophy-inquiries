@@ -1,0 +1,30 @@
+{
+  "flavour": "../1727/check.py",
+  "three_pass": "../1732/check.py",
+  "neutral": "../1731/check.py",
+  "hadron": "../1734/check.py",
+  "kaon_inputs": "../1734/independent_results.json",
+  "reactor_and_solar": "../1484/inputs.json",
+  "atmospheric_angle": "../1659/inputs.json",
+  "direct_gamma": "../1707/inputs.json",
+  "step": 0.25,
+  "alternative_vector_Vus": [0.22309,0.00040,0.00039,0.00003],
+  "matching_ceiling": 0.02,
+  "candidates": {
+    "old_ub_cb_and_central_up": ["RM123_axial","original",-0.93,0.93,0],
+    "tight_RM": ["RM123_axial","original",0.15,1.965,-1.95],
+    "tight_RBC": ["RBC_axial","original",-0.17,1.42,-1.59],
+    "alternative_Kl3_RM": ["RM123_axial","alternative",-0.93,0.93,0],
+    "alternative_Kl3_RBC": ["RBC_axial","alternative",-0.17,1.42,-1.59]
+  },
+  "k": 3,
+  "calibration": "Common solar central value, first frozen R1718 gain, R1718 upper monomials (1,2,0), positive gamma and positive x at 10 PeV. Three charged lepton masses. No marginal width assigned to a published FC contour.",
+  "sources": {
+    "RM123": "https://arxiv.org/abs/1904.08731",
+    "RBC": "https://arxiv.org/abs/2211.12865",
+    "vector_ratio": "https://arxiv.org/abs/2107.14708",
+    "semileptonic": "../1702/inputs.json",
+    "gamma_and_clocks": "../1731/inputs.json",
+    "hadrons": "../1734/inputs.json"
+  }
+}

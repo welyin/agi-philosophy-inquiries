@@ -1,0 +1,44 @@
+{
+  "leaf_order": [
+    "A",
+    "C",
+    "B"
+  ],
+  "initial_history": "note 40 j=7 A admits blank C; old D is occupied",
+  "B_frame_alignment_after_j7": "one local V dagger",
+  "fresh_return_source": "physical R after the next local V; extract with controlled iY and two swaps",
+  "sample_bits": 3,
+  "zero_initialized_sample_qubits": 3,
+  "zero_initialized_courier_qubits": 2,
+  "communication_path": [
+    "A-C-B",
+    "B-C-A"
+  ],
+  "directed_single_qubit_transmissions": 4,
+  "parallel_edge_rounds": 2,
+  "local_V_ticks_per_communication_round": 6,
+  "birth_window_after_extract_local_V_tick": 13,
+  "candidate_spares": 2,
+  "blank_qubits_per_candidate_spare": 2,
+  "candidate_activity_flags": 2,
+  "checked_root_Z_and_evidence_configurations": 16,
+  "each_sample_triple_probability_for_any_root": 0.125,
+  "ancestor_and_evidence_rule": "g=x xor e_A xor e_C xor e_B",
+  "flags_A_B_at_g0_and_g1": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "marginal_gate_probabilities_for_any_root": [
+    0.5,
+    0.5
+  ],
+  "occupied_spare_basis_cases_checked": 3,
+  "both_root_columns_relayed_with_phases_verified": true,
+  "complete_output_isometry_and_inverse_on_code_with_partner_verified": true
+}
